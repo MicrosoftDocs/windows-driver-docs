@@ -1,0 +1,15 @@
+{
+    "build_entry_point": "",
+    "docsets_to_publish": [
+        {
+            "docset_name": "vsdriver",
+            "build_output_subfolder": "vsdriver",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false"
+        }
+    ],
+    "notification_subscribers": [
+        "tedhudek@microsoft.com"
+    ]
+}
