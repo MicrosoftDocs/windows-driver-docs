@@ -3,7 +3,7 @@ Creating a log file for the code analysis tool
 
 The Windows Server 2012 [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run the Code Analysis tool prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
 
-![](../common/wedge.gif)**To run code analysis on the driver**
+![](common/wedge.gif)**To run code analysis on the driver**
 
 1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then right-click to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
 2.  From the **Analyze** or **Build** menu, click **Run Code Analysis on Solution**.
