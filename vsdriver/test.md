@@ -1,1 +1,0 @@
-This is only a test file to ensure provisioning is working.
