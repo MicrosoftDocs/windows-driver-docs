@@ -34,7 +34,7 @@ For information about managing and editing build configurations, see [Building i
 
 The default Solution build configuration is **Debug** and **Win32**. In versions of the WDK prior to Windows 8, this build configuration would correspond to building a driver using an **x86 Checked Build Environment**.
 
-![](../common/wedge.gif)**To select a configuration and build a driver**
+![](common/wedge.gif)**To select a configuration and build a driver**
 
 1.  Ensure that you have the same version of SDK and WDK installed on your computer.
 2.  Open the driver project or solution in Visual Studio.
@@ -49,7 +49,7 @@ The default Solution build configuration is **Debug** and **Win32**. In versions
 
 You can build a driver from the command line using the **Visual Studio Command Prompt** window and the Microsoft Build Engine ([MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804))
 
-![](../common/wedge.gif)**To build a driver using the Visual Studio Command Prompt window**
+![](common/wedge.gif)**To build a driver using the Visual Studio Command Prompt window**
 
 1.  Open a **Developer Command Prompt for VS2015** window.
 
@@ -132,7 +132,7 @@ You can set properties for an individual driver or for an entire driver package.
 
 The following tip can help you to troubleshoot problems when you use the WDK and Visual Studio to build drivers.
 
-![](../common/wedge.gif)**To increase the verbosity of the build output using the options in Visual Studio**
+![](common/wedge.gif)**To increase the verbosity of the build output using the options in Visual Studio**
 
 1.  Click **Tools**&gt; **Options**.
 2.  Click the **Project and Solutions** folder and click **Build and Run**.

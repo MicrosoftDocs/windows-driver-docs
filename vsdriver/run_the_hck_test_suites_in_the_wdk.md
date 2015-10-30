@@ -15,7 +15,7 @@ If you have not already done so, follow the instructions in [Provision a compute
 
 Prepare the test computer as needed, by installing the device and driver and any additional requirements for test topology (see the HCK test prerequisites for the device you are testing). In place of the HCK Studio and HCK controller, you run the tests using Visual Studio and WDK 8.1.
 
-![](../common/wedge.gif)**To select an HCK Test Suite to run on a test computer**
+![](common/wedge.gif)**To select an HCK Test Suite to run on a test computer**
 
 1.  From the **Driver** menu, click **Test** and then select **Test Group Explorer**.
 2.  In the **Driver Test Group Explorer** window, click one of the [HCK Test Suites](#HCK_test_suites).
@@ -29,7 +29,7 @@ Prepare the test computer as needed, by installing the device and driver and any
 
 You can also copy one of the provided HCK Test Suites and export it, along with the necessary test support files so that you can run the test suite from a Command Prompt window.
 
-![](../common/wedge.gif)**To export a Test Suite**
+![](common/wedge.gif)**To export a Test Suite**
 
 1.  In the **Test Group Explorer**, right-click the HCK Test Suite you want to copy and click **Export Test Suite...** from the short-cut menu. (The command runs the **CopyMe.cmd** script).
 2.  Select a destination folder for the test suite. You can export the test suite to a network share or to a USB flash drive.
@@ -38,7 +38,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 <span id="run_hck_script"></span><span id="RUN_HCK_SCRIPT"></span>Running the HCK Test Suites from a Command Prompt window
 --------------------------------------------------------------------------------------------------------------------------
 
-![](../common/wedge.gif)**Copy the HCK Test Suite**
+![](common/wedge.gif)**Copy the HCK Test Suite**
 
 1.  Open a Visual Studio Command Prompt window. Navigate to the %WindowsSdkDir%\\Testing\\Tests\\HCK Tests\\Basic directory. For example, C:\\Program Files (x86)\\Windows Kits\\8.1\\Testing\\Tests\\HCK Tests\\Basic
 2.  Run the **CopyMe.cmd** script and specify the name of test suite and destination directory. The script has the following syntax:
@@ -85,7 +85,7 @@ You can also copy one of the provided HCK Test Suites and export it, along with 
 
  
 
-![](../common/wedge.gif)**To run the HCK Test Suite from a Command Prompt window**
+![](common/wedge.gif)**To run the HCK Test Suite from a Command Prompt window**
 
 1.  On the test computer that you have configured for testing, open a Command Prompt window with elevated privileges (**Run as administrator**) and navigate to the directory where you copied the HCK Test Suite.
 

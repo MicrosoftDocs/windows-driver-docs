@@ -38,7 +38,7 @@ In many cases, you can recompile an existing kernel-mode driver that runs on Win
 
 In contrast, existing user-mode drivers may require modification to compile as Universal Windows drivers. Specifically, your driver package must not have any dependencies outside of UWP. For example, only some of the Win32 APIs are part of UWP.
 
-![](../common/wedge.gif)**Converting an existing driver project to a Universal Windows driver project**
+![](common/wedge.gif)**Converting an existing driver project to a Universal Windows driver project**
 
 1.  In Visual Studio 2015, open the existing driver project.
 2.  In the Solution Explorer pane, right-click the solution and choose **Configuration Manager**. Set the target operating system to Windows 10.
@@ -46,7 +46,7 @@ In contrast, existing user-mode drivers may require modification to compile as U
 4.  Build the driver. You might see linker errors.
 5.  Fix the errors one by one by going through the error log. Refer to individual reference pages in the documentation for possible alternate APIs. If replacements are not available, you may need to redesign your driver.
 
-![](../common/wedge.gif)**Creating a New Universal Windows driver Project in Microsoft Visual Studio**
+![](common/wedge.gif)**Creating a New Universal Windows driver Project in Microsoft Visual Studio**
 
 1.  Create a new driver from a template (**File&gt;New Project-&gt;Templates-&gt;Visual C++-&gt;Windows Driver-&gt;WDF**) and choose either **User Mode Driver (UMDF V2)** or **Kernel Mode Driver (KMDF)**.
 2.  After you create the project, in the Solution Explorer pane, right-click the solution and choose **Configuration Manager**. Set **Active solution configuration** to the desired target Windows version, and set **Active solution platform** to **Win32** or **x64**. If **ARM** is not listed, choose **&lt;New...&gt;** to build for ARM.
@@ -86,7 +86,7 @@ If you want to install your Universal Windows driver on Windows 10 Mobile, you 
 
 WDK 10 includes PkgGen, a tool that generates package files. You run PkgGen in Visual Studio when you build your driver, using the following procedure.
 
-![](../common/wedge.gif)**Using PkgGen to generate a package file**
+![](common/wedge.gif)**Using PkgGen to generate a package file**
 
 1.  Right-click the driver project and choose **Add-&gt;New Item**. Next, under **Visual C++-&gt;Windows Driver**, choose **Package Manifest**. Click **Add**.
 2.  Visual Studio adds a file called Package.pkg.xml to your driver project. You can right-click the file and choose properties to verify that the item type is **PkgGen**. (On this same property page, you can set **Excluded from Build** to **Yes** if you decide later that you want to build this driver project and not generate a package file.) Click **OK**.
@@ -103,7 +103,7 @@ To install a mobile driver package (.spkg file), you have two options.
 -   If you are updating an existing package on a target system or adding a new package to the target, use IUTool.exe to install an .spkg driver package.
 -   If you are combining packages into a mobile OS image, use ImgGen to add the .spkg driver package to a full flash update (FFU) image that can then be flashed to a mobile device.
 
-![](../common/wedge.gif)**Using IUTool to add a mobile driver package (.spkg) to a running device**
+![](common/wedge.gif)**Using IUTool to add a mobile driver package (.spkg) to a running device**
 
 1.  [IUTool.exe](http://go.microsoft.com/fwlink/p/?linkid=617385) is in the \\tools\\bin\\*&lt;architecture&gt;* subdirectory of WDK 10.
 
@@ -123,7 +123,7 @@ To install a mobile driver package (.spkg file), you have two options.
 
 2.  For more information, see [IUTool.exe: Update packages on a phone](http://go.microsoft.com/fwlink/p/?linkid=617385) and [Adding a driver to a test image](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Mt131832).
 
-![](../common/wedge.gif)**Using ImgGen to add a driver package (.spkg) to a mobile OS image (.ffu)**
+![](common/wedge.gif)**Using ImgGen to add a driver package (.spkg) to a mobile OS image (.ffu)**
 
 1.  After you install Visual Studio, on the Start screen, click the Visual Studio 2015 folder. Right-click **Developer Command Prompt for VS2015**, and choose **Run as Administrator**.
 2.  For more information about ImgGen, see [Building a phone image using ImgGen.cmd](http://go.microsoft.com/fwlink/p/?linkid=617386).
