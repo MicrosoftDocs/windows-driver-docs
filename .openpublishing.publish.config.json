@@ -6,7 +6,7 @@
             "build_output_subfolder": "develop",
             "locale": "en-us",
             "version": 0,
-            "open_to_public_contributors": "false"
+            "open_to_public_contributors": "false",
         }
     ],
     "notification_subscribers": [
