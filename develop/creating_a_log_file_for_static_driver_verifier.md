@@ -8,7 +8,7 @@ For best results, run the Code Analysis tool before you run Static Driver Verifi
 ![](common/wedge.gif)**To create a log file for Static Driver Verifier**
 
 1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then right-click to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
-2.  If you have already run the Code Analysis tool, follow these instructions for [running Static Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281#running_static_driver_verifier#running_static_driver_verifier). For more information about using SDV, see Using Static Driver Verifier to Find Defects in Drivers
+2.  If you have already run the Code Analysis tool, follow these instructions for [running Static Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454281#running_static_driver_verifier). For more information about using SDV, see Using Static Driver Verifier to Find Defects in Drivers
 3.  If SDV finds defects in your driver, click the defect in the Results pane to view a trace of the code path that led to the rule violation. Fix any defects found in the driver and run SDV again.
 
 Static Driver Verifier writes the results to the file SDV.DVL.xml in the SDV sub-directory of your project, for example, \\myDriverProject\\SDV.

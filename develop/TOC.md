@@ -29,7 +29,6 @@
 ## [Signing a Driver](signing_a_driver.md)
 ### [Signing a Driver During Development and Testing](signing_a_driver_during_development_and_testing.md)
 ### [Signing a Driver for Public Release](signing_a_driver_for_public_release.md)
-### [Attestation Signing a Kernel Driver for Public Release](attestation_signing_a_kernel_driver_for_public_release.md)
 ### [Driver Signing Properties](driver_signing_properties.md)
 ## [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md)
 ### [Deployment Properties for Driver Package Projects](deployment_properties_for_driver_projects.md)
