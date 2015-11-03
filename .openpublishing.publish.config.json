@@ -2,8 +2,15 @@
     "build_entry_point": "",
     "docsets_to_publish": [
         {
-            "docset_name": "develop",
-            "build_output_subfolder": "develop",
+            "docset_name": "vsdriver/develop",
+            "build_output_subfolder": "vsdriver/develop",
+            "locale": "en-us",
+            "version": 0,
+            "open_to_public_contributors": "false"
+        }
+        {
+            "docset_name": "vsdriver/install",
+            "build_output_subfolder": "vsdriver/install",
             "locale": "en-us",
             "version": 0,
             "open_to_public_contributors": "false"

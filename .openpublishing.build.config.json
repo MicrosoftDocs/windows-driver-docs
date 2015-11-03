@@ -1,5 +1,6 @@
 {
     "docset_files": [
-            "develop/.openpublishing.build.docset.config.json"
+            "vsdriver/develop/.openpublishing.build.docset.config.json"
+            "vsdriver/install/.openpublishing.build.docset.config.json"
     ]
 }
