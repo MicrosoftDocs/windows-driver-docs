@@ -7,7 +7,7 @@
             "locale": "en-us",
             "version": 0,
             "open_to_public_contributors": "false"
-        }
+        },
         {
             "docset_name": "install",
             "build_output_subfolder": "vsdriver/install",
