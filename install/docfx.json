@@ -1,0 +1,21 @@
+﻿{
+  "build": {
+    "content":
+      [
+        {
+          "files": ["**/**.md"]
+        }
+      ],
+    "resource": [
+        {
+          "files": ["**/images/**", "**/**.gif"]
+        }
+    ],
+    "externalReference": [
+    ],
+    "globalMetadata": {
+    },
+    "dest": "install",
+    "template": "op.html"
+  }
+}
