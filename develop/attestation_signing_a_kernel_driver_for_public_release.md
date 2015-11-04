@@ -1,4 +1,4 @@
-Attestation Signing a Kernel Driver for Public Release
+﻿Attestation Signing a Kernel Driver for Public Release
 ========================================================================================================================================
 
 This topic describes how to sign a driver using attestation signing via the Windows Hardware Developer Center Dashboard web portal.
@@ -277,7 +277,7 @@ Use the following instructions to install the sample driver.
 
 To submit multiple drivers at the same time create a sub directory for each driver as shown below.
 
-![](images/B_WES_DriverSigning.png)
+![](images/b_wes_driversigning_v2.png)
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
