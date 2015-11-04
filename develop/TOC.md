@@ -27,6 +27,7 @@
 ## [Creating a Driver Package](creating_a_driver_package.md)
 ## [Creating a Device Metadata Package](creating_a_device_metadata_package.md)
 ## [Signing a Driver](signing_a_driver.md)
+### [Attestation Signing a Kernel Driver for Public Release](attestation_signing_a_kernel_driver_for_public_release.md)
 ### [Signing a Driver During Development and Testing](signing_a_driver_during_development_and_testing.md)
 ### [Signing a Driver for Public Release](signing_a_driver_for_public_release.md)
 ### [Driver Signing Properties](driver_signing_properties.md)
