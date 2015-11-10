@@ -109,17 +109,9 @@ To install a mobile driver package (.spkg file), you have two options.
 
     Attach your mobile device to the PC. Then, from an elevated command prompt, issue the following command:
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>IUTool -p MyKmdfDriver.spkg</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+       ``` syntax
+       IUTool -p MyKmdfDriver.spkg
+       ```
 
 2.  For more information, see [IUTool.exe: Update packages on a phone](http://go.microsoft.com/fwlink/p/?linkid=617385) and [Adding a driver to a test image](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Mt131832).
 
@@ -142,18 +134,10 @@ In addition, if you used the Visual Studio KMDF template, your driver uses Windo
 
 To send a trace message from your driver, use this code:
 
-<span codelanguage=""></span>
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><pre><code>TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, &quot;%!FUNC! Entry&quot;);</code></pre></td>
-</tr>
-</tbody>
-</table>
-
+   ``` syntax
+   TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, &quot;%!FUNC! Entry&quot;);
+   ```
+       
 You can access the ETW logs either using Tracelog via the [TShell tool](http://go.microsoft.com/fwlink/p/?linkid=617388) on a phone, or by using [!wmitrace](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff561362) in a debugger session.
 
 To use Tracelog on a phone:
@@ -161,18 +145,10 @@ To use Tracelog on a phone:
 1.  Establish a kernel-mode debugging session between a host computer and the phone.
 2.  On the host computer, in TShell, enter this command:
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>exec-device tracelog -addautologger MyLogger05 -guid c:\SteveGuid.txt -level 4 -flag 0xF –kd</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
-
+       ``` syntax
+       exec-device tracelog -addautologger MyLogger05 -guid c:\SteveGuid.txt -level 4 -flag 0xF –kd
+       ```
+       
 3.  Reboot the phone, and watch for trace messages in the debugger.
 
 All existing kernel mode debug transports continue to work on Windows 10 for desktop editions. However, for both user-mode and kernel-mode drivers, you must use a remote debugger session over KDNET to test Windows 10 Mobile. For more info, see [Setting Up Kernel-Mode Debugging over a Network Cable Manually](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439346) in Visual Studio.
