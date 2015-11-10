@@ -134,9 +134,9 @@ In addition, if you used the Visual Studio KMDF template, your driver uses Windo
 
 To send a trace message from your driver, use this code:
 
-       ``` syntax
-       TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, &quot;%!FUNC! Entry&quot;);
-       ```
+   ``` syntax
+   TraceEvents(TRACE_LEVEL_INFORMATION, TRACE_DRIVER, &quot;%!FUNC! Entry&quot;);
+   ```
        
 You can access the ETW logs either using Tracelog via the [TShell tool](http://go.microsoft.com/fwlink/p/?linkid=617388) on a phone, or by using [!wmitrace](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff561362) in a debugger session.
 
