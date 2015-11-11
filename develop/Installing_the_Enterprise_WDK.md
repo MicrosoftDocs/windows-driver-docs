@@ -1,45 +1,42 @@
 # Installing the Enterprise Windows Development Kit
-The Windows Driver Kit is designed to meet the needs of an individual developer. Organizations that need to install and deploy the WDK at scale can use the Enterprise Windows Development kit. 
+The current WDK is optimized for individual developers using a state-based installation. Organizations with more than just a few developers using the WDK assume a high cost of individual installations of Visual Studio 2015 and the WDK.  To address this, the Enterprise WDK is a command-line build environment that is file-based, rather than machine based.  Once you create the environment file structure, you can have it consumed by version control software or zip the files and xcopy as needed. A .zip file created with the EWDK contains all the necessary compilers, linkers, build tools, headers and libs to build Visual Studio-based driver projects.
 
-The Enterprise WDK is a command-line build environment that is file-based, rather than machine-based.  This means that once the environment file structure has been created, it can be consumed by version control software, or copied as needed.  The EWDK is available as a .zip file and contains all the necessary compilers, linkers, build tools, headers and libs to build Visual Studio–based driver projects.
-The EWDK contains all necessary elements to build drivers and basic win32 test applications.  See the Appendix for some basic commands and the output of building a driver project.
-The EWDK is based on Visual Studio 2015 Enterprise build 14.00.23026 and builds 10586 of the WDK and Standalone SDK.
+The EWDK contains the necessary elements to build drivers and basic win32 test applications and is based on Visual Studio 2015 Enterprise build 14.00.23026 and builds 10586 of the WDK and Standalone SDK. Use your favorite code editor to modify source code and project files. Because it is command-line, however, the EWDK does lack some of the features incorporated into Visual Studio, such as testing or driver deployment. 
 
-Because the EWDK is command-line based, it does not contain some of the features incorporated into Visual Studio, including testing or driver deployment. These scenarios require the standard single-user installation. You can use your choice of code editors to modify source code and project files.
 
-##This build of the enterprise WDK contains the following components
-1.	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.23026.0  
-  a.	It does NOT include the IDE, devenv.exe.
-2.	Windows Software Development Kit build 10586
-3.	.NET Framework 4.6 Software Development Kit build 10586
-4.	Windows Driver Development Kit build 10586
+##Enterprise WDK components
+*	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.23026.0  
+  *	Note that the EWDK does not include the IDE, devenv.exe.
+*	Windows Software Development Kit build 10586
+*	.NET Framework 4.6 Software Development Kit build 10586
+*	Windows Driver Development Kit build 10586
+
 
 ##Known Issues
-1.	SDVand Code Analysis does not work in this release.
-2.	The IDE is not included in the EWDK, therefore functionality tied to the IDE is not present.
+*	SDVand Code Analysis does not work in this release.
+*	The Visual Studio IDE is not included in the EWDK and any functionality that requires the IDE will not work.
 
 ## Installation Instructions
-------------------------------------
-3.	From an Administrative command prompt in the expanded folder, run LaunchBuildEnvcmd to create the build environment
-E.g. D:\EWDK\LaunchBuildEnv
+1.	Download the file EnterpriseWDK_full_10586.zip from MSDN
+2.	Expand the .zip file into an appropriately named directory, such as d:\ewdk.
+3.	From an Administrator command prompt, navigate to the expanded folder in step 2, and then run LaunchBuildEnvcmd to create the build environment. For example:
+  D:\EWDK\LaunchBuildEnv
+Once you create the build environment, you can use it to work on the files or build Visual Studio projects, for example.  
+•	Cd directory containing project files
+•	**Msbuild** *projectname.vsproj*
+•	Basic MSBuild commands for projects and solutions:
+Msbuild project.vcxproj /p:configuration=[release | debug] /p:platform=[arm | Win32 | x64]
 
-4.	This environment can now be used to build VS projects, e.g.
-a.	Cd directory containing project files
-b.	Msbuild projectname.vsproj
-
-## Appendix
-Basic MSBuild command line:
-Msbuild project.vcxproj /p:configuration=[release | debug] /p:platform=[arm | x86 | x64]
-
-For MSBuild Reference, see
-https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx
-
-## Create a desktop shortcut
-----------------------------------------------------------------------------------------------------------------------------
-Create a desktop shortcut to the EWDK as follows by the following:
-Create a desktop shortcut  with the following target:
+To create a desktop shortcut:
 %comspec% /k pushd "<drive\dir>" && LaunchBuildEnv.cmd
-Where drive\dir is the location that the files where extracted to.  In our example, using d:\ewdk,
+Where drive\dir is the location that the files were extracted to, for example, d:\ewdk
 %comspec% /k pushd "d:\ewdk" && LaunchBuildEnv.cmd
+
+
+See Also
+<a href="https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx"> https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx</a>
+
+
+
 
 
