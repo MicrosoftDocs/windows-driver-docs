@@ -1,4 +1,4 @@
-# Installing the Enterprise Windows Development Kit 
+# Installing the Enterprise Windows Development Kit
 ==============================================================================================================================================
 The Windows Driver Kit is designed to meet the needs of an individual developer. Organizations that need to install and deploy the WDK at scale can use the Enterprise Windows Development kit. 
 
@@ -6,20 +6,20 @@ The Enterprise WDK is a command-line build environment that is file-based, rathe
 The EWDK contains all necessary elements to build drivers and basic win32 test applications.  See the Appendix for some basic commands and the output of building a driver project.
 The EWDK is based on Visual Studio 2015 Enterprise build 14.00.23026 and builds 10586 of the WDK and Standalone SDK.
 
-Because the EWDK is command-line driven, it does not contain some of the features incorporated into Visual Studio, including testing or driver deployment. These scenarios require the standard single-user installation. You can use your choice of code editors to modify source code and project files.
+Because the EWDK is command-line based, it does not contain some of the features incorporated into Visual Studio, including testing or driver deployment. These scenarios require the standard single-user installation. You can use your choice of code editors to modify source code and project files.
 
-This build of the enterprise WDK contains the following components
+##This build of the enterprise WDK contains the following components
 1.	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.23026.0  
   a.	It does NOT include the IDE, devenv.exe.
 2.	Windows Software Development Kit build 10586
 3.	.NET Framework 4.6 Software Development Kit build 10586
 4.	Windows Driver Development Kit build 10586
-Known Issues
+##Known Issues
 ------------------------------------
 1.	SDVand Code Analysis does not work in this release.
 2.	The IDE is not included in the EWDK, therefore functionality tied to the IDE is not present.
 
-Installation Instructions
+##Installation Instructions
 ------------------------------------
 3.	From an Administrative command prompt in the expanded folder, run LaunchBuildEnvcmd to create the build environment
 E.g. D:\EWDK\LaunchBuildEnv
