@@ -1,5 +1,4 @@
 # Installing the Enterprise Windows Development Kit
-==============================================================================================================================================
 The Windows Driver Kit is designed to meet the needs of an individual developer. Organizations that need to install and deploy the WDK at scale can use the Enterprise Windows Development kit. 
 
 The Enterprise WDK is a command-line build environment that is file-based, rather than machine-based.  This means that once the environment file structure has been created, it can be consumed by version control software, or copied as needed.  The EWDK is available as a .zip file and contains all the necessary compilers, linkers, build tools, headers and libs to build Visual Studio–based driver projects.
@@ -14,12 +13,12 @@ Because the EWDK is command-line based, it does not contain some of the features
 2.	Windows Software Development Kit build 10586
 3.	.NET Framework 4.6 Software Development Kit build 10586
 4.	Windows Driver Development Kit build 10586
-##Known Issues
+## Known Issues
 ------------------------------------
 1.	SDVand Code Analysis does not work in this release.
 2.	The IDE is not included in the EWDK, therefore functionality tied to the IDE is not present.
 
-##Installation Instructions
+## Installation Instructions
 ------------------------------------
 3.	From an Administrative command prompt in the expanded folder, run LaunchBuildEnvcmd to create the build environment
 E.g. D:\EWDK\LaunchBuildEnv
@@ -28,14 +27,14 @@ E.g. D:\EWDK\LaunchBuildEnv
 a.	Cd directory containing project files
 b.	Msbuild projectname.vsproj
 
-Appendix
+## Appendix
 Basic MSBuild command line:
 Msbuild project.vcxproj /p:configuration=[release | debug] /p:platform=[arm | x86 | x64]
 
 For MSBuild Reference, see
 https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx
 
-Create a desktop shortcut
+## Create a desktop shortcut
 ----------------------------------------------------------------------------------------------------------------------------
 Create a desktop shortcut to the EWDK as follows by the following:
 Create a desktop shortcut  with the following target:
