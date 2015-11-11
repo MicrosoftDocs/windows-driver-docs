@@ -146,7 +146,7 @@ To use Tracelog on a phone:
 2.  On the host computer, in TShell, enter this command:
 
        ``` syntax
-       exec-device tracelog -addautologger MyLogger05 -guid c:\SteveGuid.txt -level 4 -flag 0xF –kd
+       exec-device tracelog -addautologger MyLogger05 -guid c:\MyGuid.txt -level 4 -flag 0xF –kd
        ```
        
 3.  Reboot the phone, and watch for trace messages in the debugger.
