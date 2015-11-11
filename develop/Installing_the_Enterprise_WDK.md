@@ -19,17 +19,22 @@ The EWDK contains the necessary elements to build drivers and basic win32 test a
 ## Installation Instructions
 1.	Download the file EnterpriseWDK_full_10586.zip from MSDN
 2.	Expand the .zip file into an appropriately named directory, such as d:\ewdk.
-3.	From an Administrator command prompt, navigate to the expanded folder in step 2, and then run LaunchBuildEnvcmd to create the build environment. For example:
-  D:\EWDK\LaunchBuildEnv
+3.	From an Administrator command prompt, navigate to the expanded folder in the previous step, and then run **LaunchBuildEnvcmd** to create the build environment. For example:
+  **D:\EWDK\LaunchBuildEnv**
+
 Once you create the build environment, you can use it to work on the files or build Visual Studio projects, for example.  
-•	Cd directory containing project files
-•	**Msbuild** *projectname.vsproj*
-•	Basic MSBuild commands for projects and solutions:
-Msbuild project.vcxproj /p:configuration=[release | debug] /p:platform=[arm | Win32 | x64]
+*	Cd *directory_containing_project_files*
+*	Msbuild *projectname*.vsproj
+
+Basic MSBuild commands for projects and solutions:
+* Msbuild project.vcxproj /p:configuration=[release | debug] /p:platform=[arm | Win32 | x64]
 
 To create a desktop shortcut:
+
 %comspec% /k pushd "<drive\dir>" && LaunchBuildEnv.cmd
+
 Where drive\dir is the location that the files were extracted to, for example, d:\ewdk
+
 %comspec% /k pushd "d:\ewdk" && LaunchBuildEnv.cmd
 
 
