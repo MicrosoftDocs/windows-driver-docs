@@ -39,5 +39,5 @@ Before pushing your changes to remote, you can build and preview your doc in loc
 1. To validate your changes, just run `msbuild` under the root of the repo.
 2. To preview your changes:
    * Run `msbuild /t:serve` under the root of the repo.
-   * Open `http://localhost:8000` in your browser.
+   * Open `http://localhost:8080` in your browser.
 
