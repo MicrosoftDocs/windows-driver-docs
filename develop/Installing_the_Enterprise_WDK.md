@@ -13,8 +13,8 @@ Because the EWDK is command-line based, it does not contain some of the features
 2.	Windows Software Development Kit build 10586
 3.	.NET Framework 4.6 Software Development Kit build 10586
 4.	Windows Driver Development Kit build 10586
-## Known Issues
-------------------------------------
+
+##Known Issues
 1.	SDVand Code Analysis does not work in this release.
 2.	The IDE is not included in the EWDK, therefore functionality tied to the IDE is not present.
 
