@@ -17,7 +17,7 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 *	The Visual Studio IDE is not included in the Enterprise WDK and any functionality that requires the IDE will not work.
 
 ## Installation Instructions
-1.	Download the file EnterpriseWDK_full_10586.zip from MSDN
+1.	Download the file [EnterpriseWDK_full_10586.zip](http://go.microsoft.com/fwlink/p/?LinkID=699461) from MSDN
 2.	Expand the .zip file into an appropriately named directory, such as d:\ewdk.
 3.	From an Administrator command prompt, navigate to the expanded folder in the previous step, and then run **LaunchBuildEnvcmd** to create the build environment. For example:
   **D:\EWDK\LaunchBuildEnv**
