@@ -38,8 +38,8 @@ Where drive\dir is the location that the files were extracted to, for example, d
 %comspec% /k pushd "d:\ewdk" && LaunchBuildEnv.cmd
 
 
-See Also
-<a href="https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx"> https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx</a>
+#See Also
+<a href="https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx"> MSBuild Reference</a>
 
 
 
