@@ -163,6 +163,7 @@ All existing kernel mode debug transports continue to work on Windows 10 for de
 * [Write a Universal Windows driver (KMDF) based on a template](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439654)
 * [Provision a computer for driver deployment and testing (WDK 10)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909)
 * [What's new in driver development](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn927349)
+* [Windows Hardware Developer Center](http://hardwaredev.windows.com)
  
 
  
