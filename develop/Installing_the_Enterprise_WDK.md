@@ -5,11 +5,11 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 
 
 ##Enterprise WDK components
-*	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.23026.0  
+*	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.24720.0 (VS 2015 Update 1)  
   *	Note that the Enterprise WDK does not include the IDE, devenv.exe.
-*	Windows SDK build 10586
-*	.NET Framework 4.6 SDK build 10586
-*	Windows Driver Development Kit build 10586
+*	Windows SDK build 10586.13
+*	.NET Framework 4.6 SDK build 10586.13
+*	Windows Driver Development Kit build 10586.0
 
 
 ##Known Issues
