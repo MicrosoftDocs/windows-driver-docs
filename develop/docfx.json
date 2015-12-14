@@ -5,7 +5,7 @@
                 "files": [
                     "**/**.md"
                 ],
-                "exclude": ["**/obj/**"]
+                "exclude": ["**/obj/**", "**/README.md"]
             }
         ],
         "globalMetadata": {
