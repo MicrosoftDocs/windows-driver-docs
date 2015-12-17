@@ -1,7 +1,8 @@
 {
   "locales": [ "zh-cn"],
   "files": [
- 	    "develop/**/*.md" 
+ 	    "develop/*.md",
+ 	    "develop/**/*.md"
   ],
   "includeDependencies": true,
   "autoPush": true
