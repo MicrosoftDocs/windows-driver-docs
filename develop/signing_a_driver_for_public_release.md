@@ -55,9 +55,11 @@ When you set the driver package properties for production signing, remember to a
 <span id="Signing_a_driver_package_with_two_signatures"></span><span id="signing_a_driver_package_with_two_signatures"></span><span id="SIGNING_A_DRIVER_PACKAGE_WITH_TWO_SIGNATURES"></span>Signing a driver package with two signatures
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-In some cases, you might want to sign a driver package with two different signatures. For example, suppose you want your driver to run on Windows 7 and Windows 8. Windows 8 supports signatures created with the SHA256 hashing algorithm, but Windows 7 does not. For Windows 7, you need a signature created with the SHA1 hashing algorithm.
+In some cases, you might want to sign a driver package with two different signatures. For example, suppose you want your driver to run on Windows Vista and Windows 7, 8, 8.1, and 10. Windows Vista supports only SHA1 signatures, but the later versions of Windows also support SHA2.
 
-Suppose you want to build and sign a driver package that will run on Windows 7 and Windows 8 on x64 hardware platforms. You can sign your driver package with a primary signature that uses SHA1. Then you can append a secondary signature that uses SHA256. You can use the same certificate for both signatures, or you can use separate certificates. Here are the steps to create the two signatures using Visual Studio.
+** Note **  For info about the end of SHA1 support in Windows, see [Windows Enforcement of Authenticode Code Signing and Timestamping](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx).
+
+You can sign your driver package with a primary signature that uses SHA1. Then you can append a secondary signature that uses SHA256. You can use the same certificate for both signatures, or you can use separate certificates. Here are the steps to create the two signatures using Visual Studio.
 
 -   In the Solution Explorer window, right-click **Solution** *SolutionName*, and choose **Configuration Manager**. For the driver project and the package project, set **Configuration** to **Win7 Release**, and set **Platform** to **x64**.
 -   Open the property pages for the driver package. Navigate to **Configuration Properties &gt; Driver Signing &gt; General**. In the **Sign Mode** drop-down list, select **Production Sign**. For **Production Certificate**, enter the path to your signing certificate.
@@ -74,6 +76,7 @@ Suppose you want to build and sign a driver package that will run on Windows 7 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
+* [Availability of SHA-2 Code Signing Support for Windows 7 and Windows Server 2008 R2](https://technet.microsoft.com/en-us/library/security/3033929)
 * [Signing a Driver](signing_a_driver.md)
 * [Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=248337)
 * [Hardware Dashboard Services](http://go.microsoft.com/fwlink/p/?LinkID=248336)
@@ -88,5 +91,3 @@ Suppose you want to build and sign a driver package that will run on Windows 7 
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Signing%20a%20Driver%20for%20Public%20Release%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
-
-

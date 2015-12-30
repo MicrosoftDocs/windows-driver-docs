@@ -28,7 +28,7 @@ Sandbox:
 
 Production:
 * Live branch: https://msdn.microsoft.com/en-us/windows-drivers/develop/visual_studio_driver_development_environment
-* Any other branch: https://int.msdn.microsoft.com/en-us/windows-drivers/develop/visual_studio_driver_development_environment
+* Any other branch: https://ppe.msdn.microsoft.com/en-us/windows-drivers/develop/visual_studio_driver_development_environment
 
 > If you don't have the permission to push to this repo, fork it to your own account and use pull request to submit your changes back.
 

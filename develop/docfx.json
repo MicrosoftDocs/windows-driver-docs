@@ -16,8 +16,8 @@
                 "files": [
                     "**/images/**", "**/**.gif"
                 ],
-                "exclude": ["**/obj/**"]
-            }
+                "exclude": ["**/obj/**", "**/README.md"] 
+}
         ],
         "template": "op.html",
         "dest": "develop"
