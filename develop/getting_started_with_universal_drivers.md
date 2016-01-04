@@ -6,7 +6,7 @@ Universal Windows drivers enable developers to create a single driver that runs 
 <span id="Introduction_to_Universal_Windows_drivers"></span><span id="introduction_to_universal_windows_drivers"></span><span id="INTRODUCTION_TO_UNIVERSAL_WINDOWS_DRIVERS"></span>Introduction to Universal Windows drivers
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Windows 10 provides a set of API and DDI interfaces that is common to multiple editions of Windows. This set of interfaces is called the Universal Windows Platform (UWP).
+Windows 10 provides a set of API and DDI interfaces that are common to multiple editions of Windows. This set of interfaces is called the Universal Windows Platform (UWP).
 
 A Universal Windows driver is a kernel-mode or user-mode driver binary that installs and runs on UWP-based editions of Windows 10.
 
