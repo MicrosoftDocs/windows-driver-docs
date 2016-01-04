@@ -1,12 +1,6 @@
 Validating Universal Windows drivers
 ============================================================================================
 
-<span class="sidebar_heading" style="font-weight: bold;">In this article</span>
-
--   [Running ApiValidator in Visual Studio](#running_apivalidator_in_visual_studio)
--   [Running ApiValidator from the Command Prompt](#running_apivalidator_from_the_command_prompt)
--   [Troubleshooting](#troubleshooting)
-
 You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver. The tool returns an error if your driver calls an API that is outside the set of valid APIs for Universal Windows drivers. This tool is part of the Windows Driver Kit (WDK) for Windows 10.
 
 <span id="Running_ApiValidator_in_Visual_Studio"></span><span id="running_apivalidator_in_visual_studio"></span><span id="RUNNING_APIVALIDATOR_IN_VISUAL_STUDIO"></span>Running ApiValidator in Visual Studio
