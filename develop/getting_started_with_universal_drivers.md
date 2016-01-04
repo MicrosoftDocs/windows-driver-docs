@@ -1,16 +1,7 @@
 Getting Started with Universal Windows drivers
 ================================================================================================================
 
-<span class="sidebar_heading" style="font-weight: bold;">In this article</span>
-
--   [Introduction to Universal Windows drivers](#introduction_to_universal_windows_drivers)
--   [Building a Universal Windows driver](#building_a_universal_windows_driver)
--   [Installing a Universal Windows driver](#installing_a_universal_windows_driver)
--   [Flashing a mobile OS image (.ffu)](#flashing_a_mobile_os_image__.ffu_)
--   [Debugging a Universal Windows driver](#debugging_a_universal_windows_driver)
--   [Related topics](#related_topics)
-
-Universal Windows drivers allow developers to create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs. Hardware developers can use their existing components and device drivers across different form factors. Universal Windows drivers run on Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
+Universal Windows drivers enable developers to create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs. Hardware developers can use their existing components and device drivers across different form factors. Universal Windows drivers run on Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
 
 <span id="Introduction_to_Universal_Windows_drivers"></span><span id="introduction_to_universal_windows_drivers"></span><span id="INTRODUCTION_TO_UNIVERSAL_WINDOWS_DRIVERS"></span>Introduction to Universal Windows drivers
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
