@@ -1,14 +1,6 @@
 Building a Driver with the WDK
 ===========================================================================
 
-<span class="sidebar_heading" style="font-weight: bold;">In this article</span>
-
--   [Building a Driver Using Visual Studio](#building_a_driver_using_visual_studio)
--   [Building a Driver Using the Command Line (MSBuild)](#building_a_driver_using_the_command_line__msbuild_)
--   [Configuring project properties for your driver and driver package](#configure_project_props)
--   [Troubleshooting tip for building a driver](#troubleshooting)
--   [Related topics](#related_topics)
-
 This topic describes how you can build a driver with the Windows Driver Kit (WDK). WDK 10 is fully integrated with Microsoft Visual Studio. You can build a driver using the Visual Studio development environment, or you can build a driver directly from the command line by using the Microsoft Build Engine ([MSBuild](http://go.microsoft.com/fwlink/p/?linkid=262804)).
 
 You can use any edition of Microsoft Visual Studio 2015, including Microsoft Visual Studio Community 2015, to build drivers for:
