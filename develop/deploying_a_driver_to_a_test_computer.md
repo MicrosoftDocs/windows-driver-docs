@@ -3,12 +3,6 @@ Deploying a Driver to a Test Computer
 
 Taking advantage of the Visual Studio development environment, the WDK provides a test feature that enables you to build, deploy, and debug a driver on a test computer. To successfully deploy a driver to a test system using the WDK, you must first set up and configure a test computer. You can set up and configure multiple computers if you want to test your driver under different testing scenarios.
 
--   [Setting up the test computer](#setting_up_the_test_computer)
--   [Setting deployment properties for your driver solution](#setting_deployment_properties_for_your_driver_solution)
--   [Building a driver and deploying the driver to test computer](#building_a_driver_and_deploying_the_driver_to__test_computer)
--   [Troubleshooting driver deployment](#troubleshooting_driver_deployment_)
--   [Related topics](#related_topics)
-
 <span id="Setting_up_the_test_computer"></span><span id="setting_up_the_test_computer"></span><span id="SETTING_UP_THE_TEST_COMPUTER"></span>Setting up the test computer
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
