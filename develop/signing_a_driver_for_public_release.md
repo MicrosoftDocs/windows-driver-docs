@@ -57,7 +57,7 @@ When you set the driver package properties for production signing, remember to a
 
 In some cases, you might want to sign a driver package with two different signatures. For example, suppose you want your driver to run on Windows Vista and Windows 7, 8, 8.1, and 10. Windows Vista supports only SHA1 signatures, but the later versions of Windows also support SHA2.
 
-** Note **  For info about the end of SHA1 support in Windows, see [Windows Enforcement of Authenticode Code Signing and Timestamping](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx).
+** Note **  SHA1 deprecation does not apply to drivers.  For info about the end of SHA1 support in Windows, see [Windows Enforcement of Authenticode Code Signing and Timestamping](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx).
 
 You can sign your driver package with a primary signature that uses SHA1. Then you can append a secondary signature that uses SHA256. You can use the same certificate for both signatures, or you can use separate certificates. Here are the steps to create the two signatures using Visual Studio.
 
