@@ -4,15 +4,6 @@ Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps
 
 This topic provides information about distributing the C Runtime Libraries with applications and drivers for Windows 8 and Windows 8.1. It provides guidelines for user-mode driver and desktop application writers to compile their code, and package it for redistribution with the necessary C Runtime libraries.
 
--   [The C runtime libraries (CRT) are no longer shipped as a Windows shared component](#the_c_runtime_libraries__crt__are_no_longer_shipped_as_a_windows_shared_component)
--   [Why did Microsoft make this change?](#why_did_microsoft_make_this_change_)
--   [Building your code with the C runtime](#building_your_code_with_the_c_runtime)
--   [Redistributing the C Runtime](#redistributing_the_c_runtime_)
--   [Recommended Strategies](#recommended_strategies)
--   [Linking your code with the C Runtime libraries](#linking_your_code_with_the_c_runtime_libraries)
--   [Summary - What you need to do](#summary_-_what_you_need_to_do)
--   [Related topics](#related_topics)
-
 <span id="The_C_runtime_libraries__CRT__are_no_longer_shipped_as_a_Windows_shared_component"></span><span id="the_c_runtime_libraries__crt__are_no_longer_shipped_as_a_windows_shared_component"></span><span id="THE_C_RUNTIME_LIBRARIES__CRT__ARE_NO_LONGER_SHIPPED_AS_A_WINDOWS_SHARED_COMPONENT"></span>The C runtime libraries (CRT) are no longer shipped as a Windows shared component
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
