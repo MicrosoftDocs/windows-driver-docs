@@ -176,7 +176,7 @@ To create a CAB files submission for the dashboard complete the following steps.
   </colgroup>
   <tbody>
   <tr class="odd">
-  <td align="left"><pre><code>C:\Echo&gt; SignTool sign /v /ac &quot;C:\MyEVCert.cer&quot; /s MY /n &quot;Company Name&quot; /t http://timestamp.verisign.com/scripts/timstamp.dll &quot;C:\Echo\Disk1\Echo.cab&quot;</code></pre></td>
+  <td align="left"><pre><code>C:\Echo&gt; SignTool sign /v /s MY /n &quot;Subject Name of the Signing Certificate&quot; /t http://timestamp.verisign.com/scripts/timstamp.dll &quot;C:\Echo\Disk1\Echo.cab&quot;</code></pre></td>
   </tr>
   </tbody>
   </table>
