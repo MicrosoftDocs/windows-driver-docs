@@ -1,4 +1,4 @@
-﻿{
+{
   "build": {
         "content": [
             {
@@ -20,6 +20,6 @@
 }
         ],
         "template": "op.html",
-        "dest": "windows-drivers"
+        "dest": "windows-driver-docs-pr"
   }
 }
