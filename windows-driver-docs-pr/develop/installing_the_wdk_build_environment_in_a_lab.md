@@ -1,4 +1,4 @@
-Installing the WDK Build Environment in a Lab
+Installing the WDK 8.1 Build Environment in a Lab
 ======================================================================================================================
 
 The Windows Driver Kit (WDK) 8.1 provides a feature that enables you to copy components of Visual Studio and the WDK to a new location and then launch the build environment from the command line. From here you can build Windows drivers without having to run the Visual Studio or WDK installation programs.

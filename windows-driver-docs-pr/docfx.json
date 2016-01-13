@@ -1,4 +1,4 @@
-﻿{
+{
   "build": {
         "content": [
             {
@@ -16,10 +16,10 @@
                 "files": [
                     "**/images/**", "**/**.gif"
                 ],
-                "exclude": ["**/obj/**"]
-            }
+                "exclude": ["**/obj/**", "**/README.md"] 
+}
         ],
         "template": "op.html",
-        "dest": "develop"
+        "dest": "windows-driver-docs-pr"
   }
 }
