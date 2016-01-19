@@ -2,7 +2,7 @@
 
 
 ## Standard process (working from master)
-Follow the steps in this article to create a local working branch on your computer so that you can create a new article for https://msdn.microsoft.com/windows-drivers/documentation or update an existing article.
+Follow the steps in this article to create a local working branch on your computer so that you can create a new article for https://msdn.microsoft.com/windows-drivers or update an existing article.
 
 1. Start Git Bash (or the command-line tool you use for Git).
 
