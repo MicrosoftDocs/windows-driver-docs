@@ -19,7 +19,6 @@ Follow the steps in this article to create a local working branch on your comput
 
         git pull upstream master:<working branch>
 
-
 5. Move into the new working branch:
 
         git checkout <working branch>

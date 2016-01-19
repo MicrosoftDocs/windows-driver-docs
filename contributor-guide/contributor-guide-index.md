@@ -11,15 +11,16 @@
 
 - [Git commands for creating a new article or updating an existing article](./git-commands-for-master.md)
 
-- [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
+- [Create tables in Markdown](./create-tables-Markdown.md)
 
+## Useful articles on the GitHub site
 
-## Authoring articles: Markdown
+All the articles in this repository use GitHub flavored Markdown.  Here's a list of resources.
 
-- [Markdown basics](https://help.github.com/articles/Markdown-basics/)
+- [Markdown Basics](https://help.github.com/articles/Markdown-basics/)
 
 - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
 - [GitHub-flavored Markdown](https://help.github.com/articles/github-flavored-Markdown/)
 
-- [Create tables in Markdown](./create-tables-Markdown.md)
+- [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)

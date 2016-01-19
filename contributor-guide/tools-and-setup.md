@@ -90,10 +90,6 @@ We author content using simple Markdown notation in the files, rather than compl
 
 - **Atom**: Most of us use GitHub's Atom Markdown editor: [http://atom.io](http://atom.io). It does not require a license for business use. It has spell check.
 
-- **Notepad**: You can use Notepad for a very lightweight option.
-
-- **Prose**: This is a lightweight, elegant, on-line, and open source Markdown editor that offers a preview. Visit [http://prose.io](http://prose.io) and authorize Prose in your repository.
-
 - **[Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)** - Microsoft's entry in this space.
 
 ## Configure Atom

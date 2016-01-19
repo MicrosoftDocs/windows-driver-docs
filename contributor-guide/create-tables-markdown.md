@@ -1,8 +1,8 @@
-#Create tables in Markdown
+# Create tables in Markdown
 
 The simplest way to create a table in Markdown is to use pipes and lines.
 
- ![][1]
+![1]
 
 You can justify the columns with colons:
 
@@ -19,11 +19,11 @@ For more information about how to create tables in Markdown, see:
 - https://github.com/adam-p/Markdown-here/wiki/Markdown-Cheatsheet#wiki-tables
 - http://michelf.ca/projects/php-Markdown/extra/#table
 
-###Contributors' Guide Links
+### Contributors' Guide Links
 
 - [Overview article](./../README.md)
 - [Index of guidance articles](./contributor-guide-index.md)
 
 <!--image references-->
-[1]: ./media/create-tables-Markdown/table-Markdown.png
+[1]: ./media/create-tables-Markdown/table-markdown.png
 [2]: ./media/create-tables-Markdown/break-tables.png
