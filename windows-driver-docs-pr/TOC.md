@@ -1,2 +1,2 @@
-# [Windows Driver Kit documentation](documentation.md)
+# [Windows Driver Kit documentation](index.md)
 # [Develop](develop/)
