@@ -1,6 +1,11 @@
 # Windows Driver Documentation Contributor Guide
 
-You've found the GitHub repository that houses the source for the technical documentation that is published to  [https://msdn.microsoft.com/windows-drivers](https://msdn.microsoft.com/windows-drivers).
+You've found the GitHub repository that houses the source for the technical documentation that is published to:
+
+* Live branch: https://msdn.microsoft.com/windows-drivers
+* Any other branch: https://msdnstage.redmond.corp.microsoft.com/windows-drivers
+
+If you don't have the permission to push to this repo, fork it to your own account and use pull request to submit your changes back.
 
 This repository also contains guidance to help you contribute to our technical documentation.  For a list of the articles in the contributors' guide, see [the index](contributor-guide/contributor-guide-index.md).
 
@@ -62,18 +67,10 @@ All the articles in this repository use GitHub flavored Markdown.  Here's a list
 
 See the [index of our contributor's guide](./contributor-guide/contributor-guide-index.md) for all our guidance topics.
 
-* Live branch: https://msdn.microsoft.com/windows-drivers
-* Any other branch: https://ppe.msdn.microsoft.com/windows-drivers/documentation
-
-If you don't have the permission to push to this repo, fork it to your own account and use pull request to submit your changes back.
-
 Validation and Preview
 ----------------------
 
-Before pushing your changes to the remote, you can build and preview your article  locally.  Here are your options:
+Before pushing your changes to the remote, you can build and preview your article locally:
 
-1. To validate your changes, run the command `.\.openpublishing.build.ps1` under the root of the repo.
-2. To preview your changes:
-   * From a command prompt, run `powershell .openpublishing.build.ps1 -parameters:targets=serve` under the root of the repo.
-   * From PowerShell, run '.\.openpublishing.build.ps1 -parameters:targets=serve'
-   * Open `http://localhost:8080` in your browser.
+1. Navigate to the root of the repository and run the command `.\.openpublishing.build.ps1`.
+2. Open `http://localhost:8080` in your browser.
