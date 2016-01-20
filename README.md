@@ -16,7 +16,7 @@ This repository also contains guidance to help you contribute to our technical d
 You can contribute to [Windows driver documentation](https://msdn.microsoft.com/windows-drivers) in a couple different ways:
 
 * You can easily contribute to technical articles in the GitHub user interface. Either find the article in this repository, or visit the article on [https://msdn.microsoft.com/windows-drivers](https://msdn.microsoft.com/windows-drivers) and click the Contribute to this topic button to go to the GitHub source for the article.
-* If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you need to fork this repository, install Git Bash, [a Markdown editor](./contributor-guide/tools-and-setup.md#install-a-Markdown-editor), and learn some Git commands.
+* If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you need to fork this repository, install [a Git command line shell](./contributor-guide/tools-and-setup.md#Select-a-Git-shell-environment), [a Markdown editor](./contributor-guide/tools-and-setup.md#install-a-Markdown-editor), and learn some Git commands.
 
 
 ## Repository organization
@@ -35,7 +35,7 @@ This folder contains articles that are part of our contributors' guide.
 
 For information about how to contribute, how to use the GitHub UI to contribute small changes, and how to fork and clone the repository for more significant contributions, see [Install and set up tools for authoring in GitHub](./contributor-guide/tools-and-setup.md).
 
-If you install GitBash and choose to work locally, the steps for creating a new local working branch, making changes, and submitting the changes back to the main branch are listed in [Git commands for creating a new article or updating an existing article](./contributor-guide/git-commands-for-master.md).
+If you install a Git shell and choose to work locally, the steps for creating a new local working branch, making changes, and submitting the changes back to the main branch are listed in [Git commands for creating a new article or updating an existing article](./contributor-guide/git-commands-for-master.md).
 
 ### Branches
 

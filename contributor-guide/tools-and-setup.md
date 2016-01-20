@@ -55,16 +55,25 @@ If you are a Microsoft FTE and are a member of the Microsoft organization on Git
 
 ## Install Git for Windows
 
-Install Git for Windows from [http://git-scm.com/download/win](http://git-scm.com/download/win). This download installs the Git version control system, and it installs Git Bash, the command-line app that you will use to interact with your local Git repository.
+Install Git for Windows from [http://git-scm.com/download/win](http://git-scm.com/download/win). This download installs the Git version control system, and it installs Git Bash, a command-line app that you can use to interact with your local Git repository.
 
 You can accept the default settings; if you want the commands to be available within the Windows command line, select the option that enables it.
 
 <p align="center">
  ![GitHub profile example](./media/tools-and-setup/gitbashinstall.png)
 
-(Note: This is not the same as "Github for Windows". "Github for Windows" is a different GUI-based tool that will also work if you want to read up on yourself. [https://windows.github.com/](https://windows.github.com/))
+(Note: Git for Windows is not the same as "Github for Windows". "Github for Windows" is a different GUI-based tool that will also work if you want to read up on yourself. [https://windows.github.com/](https://windows.github.com/))
 
-If you like PowerShell, try [PoshGit](http://dahlbyk.github.io/posh-git/).
+## Select a Git shell environment
+
+Here are a few options:
+
+* Git Bash -- included with Git for Windows
+* **[GitHub Desktop](https://git-for-windows.github.io/)** -- Allows you to manage different repos offline and handle merge conflicts.
+* **[PoshGit](https://github.com/dahlbyk/posh-git)** -- Integrates Git with PowerShell.
+* **[SourceTree](https://www.atlassian.com/software/sourcetree/overview)** -- A more feature-rich GUI than GitHub Desktop. You'll need to use a personal access token as your password; see instructions [here](https://confluence.atlassian.com/display/SOURCETREEKB/Two-Factor+Authentication+%282FA%29+with+GitHub+in+SourceTree).
+* **[Tortoise Git](https://tortoisegit.org/)** -- Once installed, you interact with Git by using contextual menu commands in your local repository.
+
 
 ## Enable two-factor authentication
 
@@ -110,7 +119,7 @@ If you use Atom, you'll need to set a few things up.
 
 2. Copy the Personal Access Token that you got from [https://github.com/settings/applications#personal-access-tokens](https://github.com/settings/applications#personal-access-tokens). You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
 
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open Git Bash and run it as an administrator. At the command prompt, enter the following command.  This command creates a windows-driver-docs-private directory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\windows-driver-docs-private.
+3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open your Git shell as administrator. At the command prompt, enter the following command.  This command creates a windows-driver-docs-private directory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\windows-driver-docs-private.
 
 <!-- Public repo:
 
@@ -147,7 +156,7 @@ This usually takes a while. After you do this, you won't have to fork again or e
 
 To ensure you are listed correctly as a contributor, you need to configure your user name and email locally in Git.
 
-1. Start Git Bash, and switch into <!--Windows driver-content or -->windows-driver-docs-private:
+1. Start your Git shell and switch into <!--Windows driver-content or -->windows-driver-docs-private:
 
    <!-- ````
    cd Windows driver-content

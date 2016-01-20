@@ -4,7 +4,7 @@
 ## Standard process (working from master)
 Follow the steps in this article to create a local working branch on your computer so that you can create a new article for https://msdn.microsoft.com/windows-drivers or update an existing article.
 
-1. Start Git Bash (or the command-line tool you use for Git).
+1. Start the command-line tool that you use for Git.
 
  <!-- **Note:** If you are working in the public repository, change Windows driver-content-pr to Windows driver-content in all the commands. -->
 
