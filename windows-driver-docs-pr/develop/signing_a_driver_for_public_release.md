@@ -41,6 +41,12 @@ After you build your solution, navigate in File Explorer to the folder that cont
 
 When your driver package passes the certification tests, it can be signed by Windows Hardware Quality Labs (WHQL). If your driver package is signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
 
+To install on Windows 10, 8.1, 8, and 7, your driver package can have a single SHA1 signature.
+
+Starting in Windows 10, you also need to submit any new Windows 10 kernel mode driver for digital signing on the [Windows Hardware Developer Center Dashboard portal](http://msdn.microsoft.com/en-us/windows/hardware/gg236587.aspx).  Both kernel and user mode driver submissions must have a valid [Extended Validation (“EV”) Code Signing Certificate](https://msdn.microsoft.com/en-us/library/windows/hardware/hh801887.aspx).
+
+** Note **  SHA1 deprecation does not apply to drivers.  For info about the end of SHA1 support in Windows, see [Windows Enforcement of Authenticode Code Signing and Timestamping](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx).
+
 <span id="Signing_a_package_compared_to_signing_an_individual_driver_file"></span><span id="signing_a_package_compared_to_signing_an_individual_driver_file"></span><span id="SIGNING_A_PACKAGE_COMPARED_TO_SIGNING_AN_INDIVIDUAL_DRIVER_FILE"></span>Signing a package compared to signing an individual driver file
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -52,30 +58,14 @@ Suppose you have a Visual Studio solution that contains a driver project named M
 
 When you set the driver package properties for production signing, remember to adjust the signing properties of the individual driver files accordingly. Either turn off signing for the individual driver files, or set the individual driver files to use the same certificate that you specified for the package.
 
-<span id="Signing_a_driver_package_with_two_signatures"></span><span id="signing_a_driver_package_with_two_signatures"></span><span id="SIGNING_A_DRIVER_PACKAGE_WITH_TWO_SIGNATURES"></span>Signing a driver package with two signatures
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-In some cases, you might want to sign a driver package with two different signatures. For example, suppose you want your driver to run on Windows Vista and Windows 7, 8, 8.1, and 10. Windows Vista supports only SHA1 signatures, but the later versions of Windows also support SHA2.
-
-** Note **  SHA1 deprecation does not apply to drivers.  For info about the end of SHA1 support in Windows, see [Windows Enforcement of Authenticode Code Signing and Timestamping](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx).
-
-You can sign your driver package with a primary signature that uses SHA1. Then you can append a secondary signature that uses SHA256. You can use the same certificate for both signatures, or you can use separate certificates. Here are the steps to create the two signatures using Visual Studio.
-
--   In the Solution Explorer window, right-click **Solution** *SolutionName*, and choose **Configuration Manager**. For the driver project and the package project, set **Configuration** to **Win7 Release**, and set **Platform** to **x64**.
--   Open the property pages for the driver package. Navigate to **Configuration Properties &gt; Driver Signing &gt; General**. In the **Sign Mode** drop-down list, select **Production Sign**. For **Production Certificate**, enter the path to your signing certificate.
--   In the property pages for the driver package, navigate to **Configuration Properties &gt; Custom Build Step &gt; General**. For **Description**, select **Performing Custom Build Step**. For **Execute After**, select **DriverProductionSign**. For **Command Line**, enter this command.
-
-    **Signtool sign /fd sha256 /ph /as /sha1** *XX...XX* **$(TargetPath)**
-
-    where *XX...XX* is the hash of the certificate you are using for the the secondary signature.
-
-    **Note**  To see the hash (also called the thumb print) of a certificate, open a Command Prompt window and navigate to the directory that contains your certificate. Enter the command **certutil -dump** *CertName.pfx*, where *CertName.pfx* is the name of your certificate.
+**Note**  To see the hash (also called the thumb print) of a certificate, open a Command Prompt window and navigate to the directory that contains your certificate. Enter the command **certutil -dump** *CertName.pfx*, where *CertName.pfx* is the name of your certificate.
 
      
 
 <span id="related_topics"></span>Related topics
 -----------------------------------------------
 
+* [Driver Signing changes in Windows 10](http://blogs.msdn.com/b/windows_hardware_certification/archive/2015/04/01/driver-signing-changes-in-windows-10.aspx)
 * [Availability of SHA-2 Code Signing Support for Windows 7 and Windows Server 2008 R2](https://technet.microsoft.com/en-us/library/security/3033929)
 * [Signing a Driver](signing_a_driver.md)
 * [Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=248337)
