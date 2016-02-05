@@ -12,7 +12,5 @@
                 }
         }
     ],
-    "notification_subscribers": [
-                "tedhudek@microsoft.com"
-    ]
+    "notification_subscribers": ["tedhudek@microsoft.com", "jasgro@microsoft.com"],
 }
