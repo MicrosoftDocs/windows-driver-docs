@@ -1,25 +1,25 @@
 {
   "build": {
-        "content": [
-            {
-                "files": [
-                    "**/**.md"
-                ],
-                "exclude": ["**/obj/**"]
-            }
-        ],
-        "globalMetadata": {
-            "ROBOTS": "INDEX, FOLLOW"
-        },
-        "resource": [
-            {
-                "files": [
-                    "**/images/**", "**/**.gif"
-                ],
-                "exclude": ["**/obj/**", "**/README.md"] 
-}
-        ],
-        "template": "op.html",
-        "dest": "windows-driver-docs-pr"
+    "content":
+      [
+        {
+          "files": ["**/**.md"],
+          "exclude": ["**/obj/**"]
+        }
+      ],
+    "resource": [
+        {
+          "files": ["**/images/**"],
+          "exclude": ["**/obj/**"]
+        }
+    ],
+    "globalMetadata": {
+        "ROBOTS": "INDEX, FOLLOW",
+        "TEST": "Some other string"
+    },
+    "externalReference": [
+    ],
+    "template": "op.html",
+    "dest": "windows-driver-docs-pr"
   }
 }
