@@ -202,7 +202,7 @@ You will also indicate if you are submitting universal drivers. For more informa
 
 The following screen shot shows the options for submitting the echo driver for signing.
 
-![](images/attestation_driver_signing_submission_dashboard.png)
+![Driver signing submittal options](images/attestation_driver_signing_submission_dashboard.png)
 2. When the signing process is complete, download your signed driver from the Hardware Dev Center Dashboard.
 <span id="Validate_that_the_driver_was_properly_signed"></span><span id="validate_that_the_driver_was_properly_signed"></span><span id="VALIDATE_THAT_THE_DRIVER_WAS_PROPERLY_SIGNED"></span>Validate that the driver was properly signed
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -283,7 +283,7 @@ Use the following instructions to install the sample driver.
 
 To submit multiple drivers at the same time, create a sub directory for each driver as shown below.
 
-![](images/b_wes_driversigning_v2.png)
+![Directory structure of CAB submission](images/b_wes_driversigning_v2.png)
 
 Submitting debug pdb symbol files for signing is optional.
 
