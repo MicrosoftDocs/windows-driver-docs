@@ -14,7 +14,8 @@
         }
     ],
     "globalMetadata": {
-        "ROBOTS": "INDEX, FOLLOW"
+        "ROBOTS": "INDEX, FOLLOW",
+        "product": "Windows"
     },
     "externalReference": [
     ],
