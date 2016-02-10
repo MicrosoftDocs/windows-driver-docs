@@ -10,7 +10,7 @@
     "resource": [
         {
           "files": ["**/images/**", "**/**.gif"],
-          "exclude": ["**/obj/**"]
+          "exclude": ["**/obj/**", "**/README.md"]
         }
     ],
     "globalMetadata": {
