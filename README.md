@@ -46,7 +46,7 @@ We recommend that you create local working branches that target a specific scope
 * Applying a single formatting change across a large set of articles (e.g. new copyright footer).
 
 Validation and Preview
-----------------------
+-----------------------
 
 If you have cloned the repository to your local machine, you can build and preview your article locally.  This is a good way to discover problems before pushing your changes to the remote.
 
