@@ -1,5 +1,5 @@
-Creating a New Filter Driver
-====================================================================================
+
+# Creating a New Filter Driver
 
 In this topic we explain how to use Visual Studio to start writing a new filter driver. Filter drivers are different from device function drivers, software drivers, and file system drivers, which we cover in other topics. To learn about filter drivers and how they differ from other types of drivers, see the following topics.
 

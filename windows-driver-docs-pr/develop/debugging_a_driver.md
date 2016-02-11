@@ -1,5 +1,5 @@
-Debugging a Driver
-================================================================
+
+# Debugging a Driver
 
 Typically, debugging a kernel-mode driver requires two computers. The debugger runs on the *host computer*, and the code being debugged runs on the *target computer*. The target computer is also called the *test computer*. You can debug a user-mode driver on the host computer or on a separate target computer. Before you can debug a driver running on a target computer, you must configure the target computer for debugging.
 

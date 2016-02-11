@@ -1,5 +1,5 @@
-Signing a Driver
-============================================================
+
+# Signing a Driver
 
 All drivers running on 64-bit versions of Windows must be signed before Windows will load them. However, driver signing is not required on 32-bit versions of Windows.
 

@@ -1,5 +1,5 @@
-Analyzing a Driver Using Code Analysis and Verification Tools
-==============================================================================================================================================
+
+# Analyzing a Driver Using Code Analysis and Verification Tools
 
 Code analysis and verification tools can help improve the stability and reliability of your driver by systematically analyzing the source code. The code analysis and verification tools can detect errors that are missed by the compiler and by conventional runtime testing. Additionally they can determine whether the driver correctly interacts with the Windows operating system kernel. Using Microsoft Visual Studio Ultimate 2012 and the Windows Driver Kit (WDK), you can configure the code analysis and verification tools to run as part of the build process, or you can schedule the tools to analyze your driver at a predetermined time.
 

@@ -1,5 +1,5 @@
-Message Compiler Properties for Driver Projects
-==========================================================================================================================
+
+# Message Compiler Properties for Driver Projects
 
 Sets the properties for the [**Message Compiler (MC.exe)**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa385638) tool. The compiler generates the message resource files that you can add to your project.
 

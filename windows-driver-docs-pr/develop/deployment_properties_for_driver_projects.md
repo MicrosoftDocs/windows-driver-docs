@@ -1,5 +1,5 @@
-Deployment Properties for Driver Package Projects
-======================================================================================================================
+
+# Deployment Properties for Driver Package Projects
 
 You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project. From the project property pages for your driver, you have additional control over how you want to deploy your driver for testing. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration. For more information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909) and [Deploying a Driver to a Test Computer](deploying_a_driver_to_a_test_computer.md).
 

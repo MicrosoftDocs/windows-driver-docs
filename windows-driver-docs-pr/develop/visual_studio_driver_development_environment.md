@@ -1,5 +1,5 @@
-Developing, Testing, and Deploying Drivers
-==================================================================================================================
+
+# Developing, Testing, and Deploying Drivers
 
 The Windows driver development environment and the Windows debuggers are integrated into Microsoft Visual Studio. In this integrated driver development environment, most of the tools you need for coding, building, packaging, deploying, debugging, and testing a driver are available in the Visual Studio user interface.
 

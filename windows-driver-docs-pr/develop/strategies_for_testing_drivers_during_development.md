@@ -1,5 +1,5 @@
-Tips for testing drivers during development
-========================================================================================================================
+
+# Tips for testing drivers during development
 
 **When should you start testing?** As soon as you have the requirements for your driver, you can begin to design test cases to test that the critical requirements have been implemented. Studies show that finding and fixing defects in code becomes more expensive the longer the defects remain in the code. Finding and fixing defects early in the development cycle is less costly and disruptive than finding defects after the code has been released and distributed. Creating your test cases early can also help you find problems in your design.
 

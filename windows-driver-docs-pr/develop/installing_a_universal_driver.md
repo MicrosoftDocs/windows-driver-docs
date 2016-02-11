@@ -1,5 +1,5 @@
-Installing a Universal Windows driver
-==============================================================================================
+
+# Installing a Universal Windows driver
 
 A driver for any OneCoreUAP-based edition of Windows 10 other than Windows 10 for desktop editions (Home, Pro, and Enterprise) must be a [Universal Windows driver](getting_started_with_universal_drivers.md), and it must be installed using a *universal INF file*.
 

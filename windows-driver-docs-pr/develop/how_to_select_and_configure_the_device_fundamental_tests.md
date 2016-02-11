@@ -1,5 +1,5 @@
-How to select and configure the Device Fundamentals tests
-=============================================================================================================================================
+
+# How to select and configure the Device Fundamentals tests
 
 The WDK for Windows 8 provides a driver testing framework that includes a set of tests called the Device Fundamentals tests. The Device Fundamentals tests are a collection of tests that are used both internally at Microsoft for testing the drivers and driver samples that ship with Windows and the WDK, and externally as part of the [Windows Certification Program for Hardware](http://go.microsoft.com/fwlink/p/?linkid=8705). You can run the tests from your development environment. When you run the tests, you can use the same parameters that are used for Windows Certification testing, or you can configure and customize the run-time parameters according to your testing and debugging needs.
 

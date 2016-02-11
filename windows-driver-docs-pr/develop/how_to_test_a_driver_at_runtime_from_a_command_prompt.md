@@ -1,5 +1,5 @@
-How to test a driver at runtime from a Command Prompt
-======================================================================================================================================
+
+# How to test a driver at runtime from a Command Prompt
 
 The WDK provides device testing components that enable you to test a driver on a test computer on your network. You can use these components outside of Visual Studio by copying and installing the necessary files. You can use these components to run the same collection of device driver tests that are available in Visual Studio to test the features and functions of your driver.
 
