@@ -1,5 +1,5 @@
-Signing a Driver During Development and Testing
-==========================================================================================================================
+
+# Signing a Driver During Development and Testing
 
 Before you install a driver on a computer running a 64-bit version of Windows, you must sign the driver package. For testing purposes, you can test sign the driver package, which is a more relaxed form of signing than signing for public release.
 

@@ -1,5 +1,5 @@
-Avoiding Floating Point Errors in Custom Build Environments
-==================================================================================================================================================
+
+# Avoiding Floating Point Errors in Custom Build Environments
 
 This information is intended for developers and build engineers who compile kernel-mode drivers for Windows. In Microsoft Visual Studio Professional 2012, the default architecture for the Visual C++ (VC++) compiler changed from IA32 to the Streaming SIMD Extensions 2 (SSE2) instruction set. As a result of this change, SSE2 floating point (FP) instructions injected into the binary at compile time can generate floating-point errors if not accounted for. The issue can be encountered by those who use the Microsoft VC++ compiler, or a custom build environment to develop Windows drivers. However, the issue does not affect developers who use the Microsoft Visual Studio development environment, or who use the MSbuild utility to build drivers with an unmodified toolset.
 

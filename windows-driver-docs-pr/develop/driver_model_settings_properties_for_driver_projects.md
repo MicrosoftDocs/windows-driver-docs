@@ -1,5 +1,5 @@
-Driver Model Settings Properties for Driver Projects
-====================================================================================================================================
+
+# Driver Model Settings Properties for Driver Projects
 
 Sets the basic properties for a kernel-mode or user-mode driver, including the WDF library version and preprocessor definitions.
 

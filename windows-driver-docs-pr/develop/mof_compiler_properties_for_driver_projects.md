@@ -1,5 +1,5 @@
-MOF Compiler Properties for Driver Projects
-==================================================================================================================
+
+# MOF Compiler Properties for Driver Projects
 
 The Managed Object Format (MOF) compiler (mofcomp.exe) parses MOF files and adds the classes and class instances defined in the files to the WMI repository. Use the Mofcomp property page to compile MOF files with your driver. For more information about Mofcomp.exe and WMI, see [**mofcomp**](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa392389), [Compiling MOF Files](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Aa389240), and [Compiling a Driver's MOF File](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff542012).
 

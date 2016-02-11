@@ -1,5 +1,5 @@
-Driver Signing Properties
-==============================================================================
+
+# Driver Signing Properties
 
 When a project is selected in Solution Explorer, the **Properties** dialog under the **Driver Signing** node, displays two sections of properties:
 

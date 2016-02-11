@@ -1,5 +1,5 @@
-Creating a New Software Driver
-========================================================================================
+
+# Creating a New Software Driver
 
 In this topic we explain how to use Visual Studio to start writing a new software driver. Software drivers are different from device function drivers, filter drivers, and file system drivers, which we cover in other topics. For more information about software drivers and how they differ from other types of drivers, see [What is a Driver?](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554678) and [Choosing a Driver Model](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554652).
 

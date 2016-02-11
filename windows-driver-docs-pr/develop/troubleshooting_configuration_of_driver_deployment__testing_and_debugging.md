@@ -1,5 +1,5 @@
-Troubleshooting Configuration of Driver Deployment, Testing and Debugging
-==============================================================================================================================================================================
+
+# Troubleshooting Configuration of Driver Deployment, Testing and Debugging
 
 Provisioning a target computer is described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Dn745909). Here we give some troubleshooting tips for the provisioning process.
 

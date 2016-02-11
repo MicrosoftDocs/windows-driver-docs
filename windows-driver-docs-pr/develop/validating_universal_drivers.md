@@ -1,5 +1,5 @@
-Validating Universal Windows drivers
-============================================================================================
+
+# Validating Universal Windows drivers
 
 You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver. The tool returns an error if your driver calls an API that is outside the set of valid APIs for Universal Windows drivers. This tool is part of the Windows Driver Kit (WDK) for Windows 10.
 

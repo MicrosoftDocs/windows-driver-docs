@@ -1,5 +1,5 @@
-How to run the HCK Test Suites in WDK 8.1
-=======================================================================================================
+
+# How to run the HCK Test Suites in WDK 8.1
 
 To make testing Windows drivers easier in the WDK, starting with WDK 8.1 you can now select HCK test suites to run on the test computers. The [HCK test suites](#HCK_test_suites) include the device fundamentals tests, and tests for graphics, imaging, wireless LAN, mobile broadband (CDMA and GSM), and WiFi Direct devices. These are the same tests that are used in the Windows Hardware Certification kit (Windows HCK). See [Windows Certification Program for Hardware](http://go.microsoft.com/fwlink/p/?linkid=8705) for information about the Windows HCK.
 

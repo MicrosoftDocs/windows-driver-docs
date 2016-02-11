@@ -1,5 +1,5 @@
-Creating a New Device Function Driver
-======================================================================================
+
+# Creating a New Device Function Driver
 
 In this topic we explain how to use Visual Studio to start writing a new device function driver. Device function drivers are different from filter drivers, software drivers, and file system drivers, which we cover in other topics. To learn about device function drivers and how they differ from other types of drivers, see [What is a Driver?](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554678), [Choosing a Driver Model](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554652), and [Device Nodes and Device Stacks](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554721).
 

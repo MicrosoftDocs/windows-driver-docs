@@ -1,5 +1,5 @@
-Signing a Driver for Public Release
-==================================================================================================
+
+# Signing a Driver for Public Release
 
 Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Windows Hardware Certification](http://go.microsoft.com/fwlink/p/?LinkID=248337) and [Hardware Dashboard Services](http://go.microsoft.com/fwlink/p/?LinkID=248336). To submit a driver package for certification, you must sign the package with a certificate that you obtain from a trusted certification authority like VeriSign. For more information, see [Get a VeriSign Certificate](http://go.microsoft.com/fwlink/p/?LinkID=248298). You will also need a cross certificate, which is provided by Microsoft.
 

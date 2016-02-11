@@ -1,5 +1,5 @@
-Driver convergence model for Windows 10
-===========================================================================================
+
+# Driver convergence model for Windows 10
 
 To make your device work on Windows and Windows Phone releases before Windows 10, you probably needed to write two separate drivers, for example one for Windows 8.1 and one for Windows Phone 8.1. In Windows 10, in most cases, you can write one driver that will run on any Windows 10 version. This topic describes convergence plans for device driver interfaces in Windows 10 and provides details when there are version-specific differences. It answers these questions:
 

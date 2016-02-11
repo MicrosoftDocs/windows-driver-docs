@@ -1,5 +1,5 @@
-UMDF Verifier Properties for Driver Package Projects
-====================================================================================================================================
+
+# UMDF Verifier Properties for Driver Package Projects
 
 Sets the properties for the UMDF Verifier on a test computer. You can use these settings when you build and deploy a driver to a test computer.
 
