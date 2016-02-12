@@ -8,7 +8,7 @@ description: 'The Windows Server 2012&\#32;Hardware Certification Program requi
 
 The Windows Server 2012 [Hardware Certification Program](http://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The DVL does not contain any source information. You must run the Code Analysis tool and Static Driver Verifier prior to creating a DVL for your driver.
 
-![](common/wedge.gif)**To create a driver verification log**
+**To create a driver verification log**
 
 1.  Before running the Code Analysis tools, be sure that you can build and link your driver using the Windows Driver Kit (WDK) for Windows 8.
 2.  For the Driver Solution, make sure that you have selected Windows 8 as the Solution Configuration and x64 as the Solution Platform.
