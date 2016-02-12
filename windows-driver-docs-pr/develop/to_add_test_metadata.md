@@ -1,5 +1,10 @@
-How to add test metadata
-========================================================================
+---
+ms.assetid: 8BADC31C-6446-41FA-82F3-F46D66954481
+title: 'How to add test metadata'
+description: 'For Windows 8, the Windows Driver Kit \(WDK\) uses the Test Authoring and Execution Framework \(TAEF\) for creating test content.'
+---
+
+# How to add test metadata
 
 For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh439725) for creating test content. A TAEF test is an object implemented as a dynamic-link library (DLL) that contains multiple methods, where each method maps to a specific test scenario. The TAEF object combines related methods into a group of tests. For each test, there is a set of metadata that describes the test. To improve test portability and encapsulation, TAEF stores test metadata within the test object itself. When you create your own driver tests using the Driver Test templates, you need to add this metadata so that your driver tests are available and can be deployed using Visual Studio.
 
@@ -374,5 +379,6 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20How%20to%20add%20test%20metadata%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
+
 
 

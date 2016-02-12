@@ -1,5 +1,10 @@
-Driver Model Settings Properties for Driver Projects
-====================================================================================================================================
+---
+ms.assetid: 3D0CB4E7-D1BC-44AA-93D9-5CCDE98C9691
+title: 'Driver Model Settings Properties for Driver Projects'
+description: 'Sets the basic properties for a kernel-mode or user-mode driver, including the WDF library version and preprocessor definitions.'
+---
+
+# Driver Model Settings Properties for Driver Projects
 
 Sets the basic properties for a kernel-mode or user-mode driver, including the WDF library version and preprocessor definitions.
 
@@ -60,5 +65,6 @@ Overrides the default values for preprocessing symbols: \_WIN32\_WINNT, WINVER, 
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20Driver%20Model%20Settings%20Properties%20for%20Driver%20Projects%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
+
 
 

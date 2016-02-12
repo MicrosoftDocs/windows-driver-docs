@@ -1,5 +1,10 @@
-What happens when you provision a computer (WDK 8.0)
-====================================================================================================================================
+---
+ms.assetid: A8888EF1-5A6F-4B08-8743-27EEECD4FF72
+title: 'What happens when you provision a computer \(WDK 8.0\)'
+description: 'Here we show what happens when you use version 8.0 of the Windows Driver Kit \(WDK\) to provision a target computer.'
+---
+
+# What happens when you provision a computer (WDK 8.0)
 
 Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
 
@@ -70,5 +75,6 @@ Removing provisioning does not change these items:
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[VsDriver\vsdriver]:%20What%20happens%20when%20you%20provision%20a%20computer%20%28WDK%208.0%29%20%20RELEASE:%20%289/30/2015%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default. "Send comments about this topic to Microsoft")
+
 
 
