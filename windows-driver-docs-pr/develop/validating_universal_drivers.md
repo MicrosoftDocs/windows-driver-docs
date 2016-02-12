@@ -30,7 +30,7 @@ Warning 9   warning : API QueryPerformanceCounter in kernel32.dll is not support
 Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\bin\x64\ApiValidator.exe" -DriverPackagePath:"C:\Program Files (x86)\Windows Kits\10\src\usb\umdf2_fx2\Debug\\" -SupportedApiXmlFiles:"C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\x86\UniversalDDIs.xml" -ApiExtractorExePath:"C:\Program Files (x86)\Windows Kits\10\bin\x64"" exited with code -1.    C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.common.targets   1531    5   osrusbfx2um
 ```
 
-![](common/wedge.gif)**Fixing validation errors**
+**Fixing validation errors**
 
 1.  If you switched a legacy desktop driver to universal, verify that you are including the correct libraries. Right click the project and choose properties. Navigate to **Linker-&gt;Input**. The **Additional Dependencies** should contain:
 

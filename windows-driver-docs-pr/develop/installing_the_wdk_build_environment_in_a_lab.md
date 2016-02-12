@@ -72,7 +72,7 @@ The build lab support files include the **setup.ps1** PowerShell command file, w
 <span id="build_step"></span><span id="BUILD_STEP"></span>4. Build Windows driver projects and solutions
 --------------------------------------------------------------------------------------------------------
 
-![](common/wedge.gif)**Using the build environment command script**
+**Using the build environment command script**
 
 1.  Open a Command Prompt window. Locate the LaunchBuildEnv.cmd file located in the target directory (for example, C:\\BuildLabInstall).
 2.  Launch the build environment by running **LaunchBuildEnv.cmd**.
