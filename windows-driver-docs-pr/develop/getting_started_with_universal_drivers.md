@@ -6,8 +6,6 @@ description: 'Universal Windows drivers allow developers to create a single driv
 
 # Getting Started with Universal Windows drivers
 
-Hello!
-
 Universal Windows drivers enable developers to create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs. Hardware developers can use their existing components and device drivers across different form factors. Universal Windows drivers run on Windows 10 for desktop editions (Home, Pro, and Enterprise), Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016 Technical Preview, as well as other Windows 10 editions that share a common set of interfaces.
 
 <span id="Introduction_to_Universal_Windows_drivers"></span><span id="introduction_to_universal_windows_drivers"></span><span id="INTRODUCTION_TO_UNIVERSAL_WINDOWS_DRIVERS"></span>Introduction to Universal Windows drivers
