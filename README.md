@@ -1,6 +1,6 @@
 # Windows Driver Documentation Contributor Guide
 
-Welcome to the windows-driver-docs-private repository, containing the source for the Windows Driver Kit documentation that is published to:
+Welcome to the windows-driver-docs repository, containing the source for the Windows Driver Kit documentation that is published to:
 
 * Live branch: https://msdn.microsoft.com/windows-drivers
 * Any other branch: https://msdnstage.redmond.corp.microsoft.com/windows-drivers
