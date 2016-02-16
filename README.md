@@ -1,15 +1,11 @@
 # Windows Driver Documentation Contributor Guide
 
-Welcome to the windows-driver-docs-private repository, housing the source for the Windows Driver Kit documentation that is published to:
+Welcome to the windows-driver-docs-private repository, containing the source for the Windows Driver Kit documentation that is published to:
 
 * Live branch: https://msdn.microsoft.com/windows-drivers
 * Any other branch: https://msdnstage.redmond.corp.microsoft.com/windows-drivers
 
-> **Note**: Currently, this repository contains only the driver development subset of the full WDK documentation. To find the rest of the driver kit docs, see the [Windows Driver Kit docs on MSDN](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557573).
-
 When you're viewing a topic in https://msdn.microsoft.com/windows-drivers, you can click the Contribute to this topic button to go to the corresponding Markdown source file in this repository.
-
-This repository also contains guidance to help you contribute to our technical documentation.  For a list of the articles in the contributors' guide, see [the index](contributor-guide/contributor-guide-index.md).
 
 ## Ways to contribute
 
