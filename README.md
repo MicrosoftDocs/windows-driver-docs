@@ -1,50 +1,22 @@
-# Windows Driver Documentation Contributor Guide
+# Windows Driver Documentation
 
-Welcome to the windows-driver-docs-private repository, containing the source for the Windows Driver Kit documentation that is published to:
+Welcome to the windows-driver-docs-private repository, containing the source for the Windows Driver Kit documentation.  This page describes how you can contribute to this documentation. 
 
-* Live branch: https://msdn.microsoft.com/windows-drivers
-* Any other branch: https://msdnstage.redmond.corp.microsoft.com/windows-drivers
+## Quick start guide
 
-When you're viewing a topic in https://msdn.microsoft.com/windows-drivers, you can click the Contribute to this topic button to go to the corresponding Markdown source file in this repository.
+1.  When you're viewing a topic in https://msdn.microsoft.com/windows-drivers, click the Contribute to this topic button to go to the corresponding Markdown source file in this repository.
+2.  If you haven't already, fork the repository into your own GitHub account.
+3.  For minor edits, make your changes right in the GitHub UI.  For larger changes, clone your fork to your local computer.
+    *  If you have cloned the repository to your local machine, you can build and preview your article locally.  This is a good way to discover problems before pushing your changes to the remote.
+        1. Navigate to the root of the repository and run the command `.\.openpublishing.build.ps1`.
+        2. Open `http://localhost:8080` in your browser.
 
-## Ways to contribute
+    *  When you're done writing, push the changes back to your fork on GitHub.
+4.  Open a pull request back to the official repository.
+5.  The documentation owner reviews your request and if needed iterates with you in the context of the pull request.
+6.  Your content is staged for review in a branch of: https://msdnstage.redmond.corp.microsoft.com/windows-drivers.
+7.  After contributor and content owner sign off, your updates are published to https://msdn.microsoft.com/windows-drivers.
 
-You can contribute to [Windows driver documentation](https://msdn.microsoft.com/windows-drivers) in a couple different ways:
+For more details about setup, see [Install and set up tools for authoring in GitHub](./contributor-guide/tools-and-setup.md).
 
-* You can easily contribute to technical articles in the GitHub user interface. Either find the article in this repository, or visit the article on [https://msdn.microsoft.com/windows-drivers](https://msdn.microsoft.com/windows-drivers) and click the Contribute to this topic button to go to the GitHub source for the article.
-* If you are making substantial changes to an existing article, adding or changing images, or contributing a new article, you need to fork this repository, install [a Git command line shell](./contributor-guide/tools-and-setup.md#Select-a-Git-shell-environment), [a Markdown editor](./contributor-guide/tools-and-setup.md#install-a-Markdown-editor), and learn some Git commands.
-
-
-## Repository organization
-
-The content in the Windows driver-content repository follows the organization of documentation on [https://msdn.microsoft.com/windows-drivers](https://msdn.microsoft.com/windows-drivers).
-
-The subfolders contain the documentation articles formatted as Markdown files with an *.md* extension.
-
-For example, articles in the develop directory are published to  *https://msdn.microsoft.com/en-us/windows-drivers/develop/{article-name-without-md}/*.
-
-### \contributor-guide
-
-This folder contains articles that are part of our contributors' guide.  
-
-## Use GitHub, Git, and this repository
-
-For information about how to contribute, how to use the GitHub UI to contribute small changes, and how to fork and clone the repository for more significant contributions, see [Install and set up tools for authoring in GitHub](./contributor-guide/tools-and-setup.md).
-
-If you install a Git shell and choose to work locally, the steps for creating a new local working branch, making changes, and submitting the changes back to the main branch are listed in [Git commands for creating a new article or updating an existing article](./contributor-guide/git-commands-for-master.md).
-
-### Branches
-
-We recommend that you create local working branches that target a specific scope of change. Each branch should be limited to a single concept/article both to streamline work flow and reduce the possibility of merge conflicts.  The following efforts are of the appropriate scope for a new branch:
-
-* A new article (and associated images)
-* Spelling and grammar edits on an article.
-* Applying a single formatting change across a large set of articles (e.g. new copyright footer).
-
-Validation and Preview
------------------------
-
-If you have cloned the repository to your local machine, you can build and preview your article locally.  This is a good way to discover problems before pushing your changes to the remote.
-
-1. Navigate to the root of the repository and run the command `.\.openpublishing.build.ps1`.
-2. Open `http://localhost:8080` in your browser.
+To learn the Git commands for working locally, see [Git commands for creating a new article or updating an existing article](./contributor-guide/git-commands-for-master.md).
