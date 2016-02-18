@@ -102,7 +102,7 @@ To create a CAB files submission for the dashboard complete the following steps.
   </colgroup>
   <tbody>
   <tr class="odd">
-  <td align="left"><pre><code>;*** Echo.ddf example
+  <td align="left"><pre><code>; *** Echo.ddf example ***
   ;
   .OPTION EXPLICIT     ; Generate errors
   .Set CabinetFileCountThreshold=0
@@ -114,9 +114,13 @@ To create a CAB files submission for the dashboard complete the following steps.
   .Set CompressionType=MSZIP
   .Set Cabinet=on
   .Set Compress=on
-  ;Specify file name for new cab file
+  ; Specify file name for new cab file
   .Set CabinetNameTemplate=Echo.cab
-  ;Specify files to be included in cab file
+  ; Specify the subdirectory for the files.  
+  ; Your cab file should not have files at the root level, 
+  ; and each driver package must be in a separate subfolder.
+  .Set DestinationDir=Echo
+  ; Specify files to be included in cab file
   C:\Echo\Echo.Inf
   C:\Echo\Echo.Sys</code></pre></td>
   </tr>
