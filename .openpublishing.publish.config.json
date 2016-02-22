@@ -1,5 +1,6 @@
 {
     "build_entry_point": "",
+    "report_severity_level": "Warning", 
     "docsets_to_publish": [
         {
             "docset_name": "windows-driver-docs-pr",
