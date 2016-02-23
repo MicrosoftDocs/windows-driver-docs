@@ -2,10 +2,7 @@
 ms.assetid: 6e8be17d-6e98-441e-9a2c-e62a007786ee
 title: 'Developing, Testing, and Deploying Drivers'
 description: 'Starting with Windows Driver Kit \(WDK\) 8, the Windows driver development environment and the Windows debuggers are integrated into Microsoft Visual Studio.'
-keywords: 'developing drivers'
-keywords: 'debugging drivers'
-keywords: 'testing drivers'
-keywords: 'deploying drivers'
+keywords: ["developing drivers", "debugging drivers", "testing drivers", "deploying drivers"]
 ---
 
 # Developing, Testing, and Deploying Drivers
