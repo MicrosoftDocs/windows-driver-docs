@@ -1,7 +1,7 @@
 ---
 ms.assetid: 3AF1C7EA-A7E0-47C4-A8D0-BB8D432F7EA0
-title: 'Tips for testing drivers during development'
-description: 'When should you start testing? As soon as you have the requirements for your driver, you can begin to design test cases to test that the critical requirements have been implemented.'
+title: Tips for testing drivers during development
+description: When should you start testing? As soon as you have the requirements for your driver, you can begin to design test cases to test that the critical requirements have been implemented.
 ---
 
 # Tips for testing drivers during development

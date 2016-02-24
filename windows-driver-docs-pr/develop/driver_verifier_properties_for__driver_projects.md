@@ -1,7 +1,7 @@
 ---
 ms.assetid: 960368D6-5E24-46B6-83DA-0525065E5FFB
-title: 'Driver Verifier Properties for  Driver Package Projects'
-description: 'Driver Verifier is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.'
+title: Driver Verifier Properties for  Driver Package Projects
+description: Driver Verifier is a run-time verification tool that increases the effectiveness of your driver testing. You can enable and configure Driver Verifier to run on all test computers when you deploy your driver for testing.
 ---
 
 # Driver Verifier Properties for Driver Package Projects

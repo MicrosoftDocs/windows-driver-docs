@@ -1,7 +1,7 @@
 ---
 ms.assetid: D4B35683-5BD1-40F8-9734-95DADF9E0F20
-title: 'Installing the WDK Build Environment in a Lab'
-description: 'The Windows Driver Kit \(WDK\) 8.1 provides a feature that enables you to copy components of Visual Studio and the WDK to a new location and then launch the build environment from the command line.'
+title: Installing the WDK Build Environment in a Lab
+description: The Windows Driver Kit \(WDK\) 8.1 provides a feature that enables you to copy components of Visual Studio and the WDK to a new location and then launch the build environment from the command line.
 ---
 
 # Installing the WDK 8.1 Build Environment in a Lab

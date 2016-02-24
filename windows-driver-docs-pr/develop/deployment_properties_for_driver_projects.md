@@ -1,7 +1,7 @@
 ---
 ms.assetid: 7193DA4B-2461-4E00-90B4-C31B93C8E9BD
-title: 'Deployment Properties for Driver Package Projects'
-description: 'You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project.'
+title: Deployment Properties for Driver Package Projects
+description: You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project.
 ---
 
 # Deployment Properties for Driver Package Projects

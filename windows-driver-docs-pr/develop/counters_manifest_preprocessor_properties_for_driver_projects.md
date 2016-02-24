@@ -1,7 +1,7 @@
 ---
 ms.assetid: 216E5337-0B05-4560-92AF-0D7AB90EAEEB
-title: 'Counters Manifest Preprocessor Properties for Driver Projects'
-description: 'Sets the properties for the CTRPP tool that parses and validates your counters manifest.'
+title: Counters Manifest Preprocessor Properties for Driver Projects
+description: Sets the properties for the CTRPP tool that parses and validates your counters manifest.
 ---
 
 # Counters Manifest Preprocessor Properties for Driver Projects
