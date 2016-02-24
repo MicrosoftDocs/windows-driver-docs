@@ -1,7 +1,7 @@
 ---
 ms.assetid: 79AB7242-72D6-4198-9AF0-482CBFB756C7
-title: 'How to write a driver test using a Driver Test template'
-description: 'You can use the Windows Driver Kit \(WDK\) for Windows 8 to create your own driver tests or to customize some of the tests that are provided.'
+title: How to write a driver test using a Driver Test template
+description: You can use the Windows Driver Kit \(WDK\) for Windows 8 to create your own driver tests or to customize some of the tests that are provided.
 ---
 
 # How to write a driver test using a Driver Test template

@@ -1,7 +1,7 @@
 ---
 ms.assetid: D4B7FC2A-259F-4B72-A52B-03CBF712D5C5
-title: 'Validating Universal Windows drivers'
-description: 'You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver.'
+title: Validating Universal Windows drivers
+description: You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver.
 ---
 
 # Validating Universal Windows drivers

@@ -1,7 +1,7 @@
 ---
 ms.assetid: 328404BD-E888-4AAA-AA24-B57FD01E9E54
-title: 'Deploying a Driver to a Test Computer'
-description: 'Taking advantage of the Visual Studio development environment, the WDK provides a test feature that enables you to build, deploy, and debug a driver on a test computer.'
+title: Deploying a Driver to a Test Computer
+description: Taking advantage of the Visual Studio development environment, the WDK provides a test feature that enables you to build, deploy, and debug a driver on a test computer.
 ---
 
 # Deploying a Driver to a Test Computer

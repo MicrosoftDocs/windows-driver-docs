@@ -1,7 +1,7 @@
 ---
 ms.assetid: 47AC8BD7-7098-43C3-A198-3622D465B142
-title: 'Avoiding Floating Point Errors in Custom Build Environments'
-description: 'This information is intended for developers and build engineers who compile kernel-mode drivers for Windows.'
+title: Avoiding Floating Point Errors in Custom Build Environments
+description: This information is intended for developers and build engineers who compile kernel-mode drivers for Windows.
 ---
 
 # Avoiding Floating Point Errors in Custom Build Environments

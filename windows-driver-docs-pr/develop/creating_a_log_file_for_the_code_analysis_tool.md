@@ -1,7 +1,7 @@
 ---
 ms.assetid: 4985B206-9E7F-45FE-9067-7CFD15A7AAAD
-title: 'Creating a log file for the code analysis tool'
-description: 'The Windows Server 2012&\#32;Hardware Certification Program requires a Driver Verification Log \(DVL\) for all applicable driver submissions.'
+title: Creating a log file for the code analysis tool
+description: The Windows Server 2012&\#32;Hardware Certification Program requires a Driver Verification Log \(DVL\) for all applicable driver submissions.
 ---
 
 # Creating a log file for the code analysis tool

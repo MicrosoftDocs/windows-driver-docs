@@ -1,7 +1,7 @@
 ---
 ms.assetid: 1D47B648-C652-4188-A406-AA5EB537138F
-title: 'Installing a Universal Windows driver'
-description: 'A driver for any OneCoreUAP-based edition of Windows 10 other than Windows 10 for desktop editions \(Home, Pro, Enterprise, and Education\) must be a Universal Windows driver, and it must be installed using a universal INF file.'
+title: Installing a Universal Windows driver
+description: A driver for any OneCoreUAP-based edition of Windows 10 other than Windows 10 for desktop editions \(Home, Pro, Enterprise, and Education\) must be a Universal Windows driver, and it must be installed using a universal INF file.
 ---
 
 # Installing a Universal Windows driver

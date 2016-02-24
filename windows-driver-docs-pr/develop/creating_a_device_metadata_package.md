@@ -1,6 +1,6 @@
 ---
 ms.assetid: 25C21110-8B26-4F2B-A125-CF827EC8CAB9
-title: 'Creating a Device Metadata Package'
+title: Creating a Device Metadata Package
 description: .
 ---
 

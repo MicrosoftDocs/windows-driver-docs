@@ -1,7 +1,7 @@
 ---
 ms.assetid: 18A9ACEF-51F8-4BC0-B305-F58287AD321C
-title: 'Stampinf Properties for Driver Projects'
-description: 'Sets the properties for the Stampinf tool. You can use Stampinf to update common INF and INX file directives when you build the driver.'
+title: Stampinf Properties for Driver Projects
+description: Sets the properties for the Stampinf tool. You can use Stampinf to update common INF and INX file directives when you build the driver.
 ---
 
 # Stampinf Properties for Driver Projects

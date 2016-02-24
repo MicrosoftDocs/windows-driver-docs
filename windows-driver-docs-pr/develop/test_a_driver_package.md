@@ -1,7 +1,7 @@
 ---
 ms.assetid: 5BA0A193-1147-4BAD-A6CA-453856E621A2
-title: 'How to test a driver package'
-description: 'You can use Visual Studio to deploy and install a driver package on a test computer, and then verify that the driver is installed and running.'
+title: How to test a driver package
+description: You can use Visual Studio to deploy and install a driver package on a test computer, and then verify that the driver is installed and running.
 ---
 
 # How to test a driver package

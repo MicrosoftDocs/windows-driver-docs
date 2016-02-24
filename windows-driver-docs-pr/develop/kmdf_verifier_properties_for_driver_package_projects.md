@@ -1,7 +1,7 @@
 ---
 ms.assetid: 40D39F8E-3CD3-434B-A161-45D5BD4FBA09
-title: 'KMDF Verifier Properties for Driver Package Projects'
-description: 'Sets the properties for the KMDF Verifier \(or framework verifier\) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer.'
+title: KMDF Verifier Properties for Driver Package Projects
+description: Sets the properties for the KMDF Verifier \(or framework verifier\) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer.
 ---
 
 # KMDF Verifier Properties for Driver Package Projects

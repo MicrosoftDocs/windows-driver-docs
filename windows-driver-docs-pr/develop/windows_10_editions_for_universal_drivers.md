@@ -1,7 +1,7 @@
 ---
 ms.assetid: EB2264A4-BAE8-446B-B9A5-19893936DDCA
-title: 'Target platform on MSDN driver reference pages'
-description: 'In the Requirements block at the bottom of MSDN driver reference pages, you''ll see an entry called Target Platform.'
+title: Target platform on MSDN driver reference pages
+description: In the Requirements block at the bottom of MSDN driver reference pages, you''ll see an entry called Target Platform.
 ---
 
 # Target platform on MSDN driver reference pages

@@ -1,7 +1,7 @@
 ---
 ms.assetid: 0877831F-2FBF-402E-A01B-B153F2A18AD4
-title: 'Inf2Cat Properties for Driver Package Projects'
-description: 'Sets the properties for the Inf2Cat tool. The Inf2Cat tool can be used to create catalog files for any driver package that has an INF file.'
+title: Inf2Cat Properties for Driver Package Projects
+description: Sets the properties for the Inf2Cat tool. The Inf2Cat tool can be used to create catalog files for any driver package that has an INF file.
 ---
 
 # Inf2Cat Properties for Driver Package Projects
