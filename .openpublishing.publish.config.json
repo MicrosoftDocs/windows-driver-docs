@@ -13,6 +13,5 @@
                 }
         }
     ],
-    "report_severity_level": "Error", 
     "notification_subscribers": [ "jasgro@microsoft.com"]
 }
