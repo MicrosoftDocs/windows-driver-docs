@@ -1,5 +1,9 @@
-Attestation Signing a Kernel Driver for Public Release
-========================================================================================================================================
+---
+title: Attestation Signing a Kernel Driver for Public Release
+author: DOMARS
+---
+
+# Attestation Signing a Kernel Driver for Public Release
 
 This topic describes how to sign a driver using attestation signing via the Windows Hardware Developer Center Dashboard web portal.
 
@@ -28,14 +32,14 @@ To attestation sign a kernel mode driver complete the following steps:
 <span id="Acquire_an__EV_Code_Signing_Certificate"></span><span id="acquire_an__ev_code_signing_certificate"></span><span id="ACQUIRE_AN__EV_CODE_SIGNING_CERTIFICATE"></span>Acquire an EV Code Signing Certificate
 
 
-Before you can submit binaries files using the dashboard to be signed, you need to acquire an extended validation (EV) code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your company’s ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
+Before you can submit binaries files using the dashboard to be signed, you need to acquire an extended validation (EV) code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your companyï¿½s ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
 
 Follow the process described in [Get a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx) to acquire the needed EV code signing certificate.
 
 <span id="Register_your_company_for_Windows_Hardware_Dashboard_Services"></span><span id="register_your_company_for_windows_hardware_dashboard_services"></span><span id="REGISTER_YOUR_COMPANY_FOR_WINDOWS_HARDWARE_DASHBOARD_SERVICES"></span>Register your company for Windows Hardware Dashboard Services
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-You can certify your devices and apps for hardware certification using the Hardware Dev Center Dashboard. To access the Hardware Dev Center Dashboard, you’ll need to register your company and get a code signing certificate.
+You can certify your devices and apps for hardware certification using the Hardware Dev Center Dashboard. To access the Hardware Dev Center Dashboard, youï¿½ll need to register your company and get a code signing certificate.
 
 Follow the process described in [Before You Sign In](https://msdn.microsoft.com/library/windows/hardware/br230782) to set up the account you will need on the dashboard.
 

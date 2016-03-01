@@ -1,3 +1,8 @@
+---
+title: Installing the Enterprise WDK 10
+author: Dansimp
+---
+
 # Installing the Enterprise WDK 10
 The current Windows Driver Kit (WDK) is optimized for individual developers using a state-based installation. Organizations with many developers using the WDK assume a high cost of individual installations of Visual Studio 2015 and the WDK.  To address this, the Enterprise Windows Driver Kit (Enterprise WDK) is a command-line build environment that is file-based, rather than machine based.  Once you create the environment file structure, you can have it consumed by version control software or you can zip the files and copy as needed. A .zip file created with the Enterprise WDK contains all the necessary compilers, linkers, build tools, headers and libs to build Visual Studio-based driver projects.
 
