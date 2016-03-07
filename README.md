@@ -12,7 +12,7 @@ Welcome to the windows-driver-docs-private repository, containing the source for
         2. Open `http://localhost:8080` in your browser.
 
     *  When you're done writing, push the changes back to your fork on GitHub.
-4. If you haven't already, log in the the [Open Publishing portal](https://op-portal-prod.azurewebsites.net/#/containers/repository/repositories/All).  
+4. If you haven't already, use your GitHub credentials to log in the the [Open Publishing portal](https://op-portal-prod.azurewebsites.net/#/containers/repository/repositories/All).  
 5. Open a pull request back to the official repository.
 6.  The documentation owner reviews your request and if needed iterates with you in the context of the pull request.
 7.  Your content is staged for review in a branch of: https://msdnstage.redmond.corp.microsoft.com/windows-drivers.
