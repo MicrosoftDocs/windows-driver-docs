@@ -1,0 +1,99 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="How to Enable Debugging of a UMDF Driver"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>How to Enable Debugging of a UMDF Driver</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_7041cfe5-bc95-4f7a-bf50-a3a43f63df59.xml"/>
+<meta name="MS-HAID" content="umdf.enabling_a_debugger"/>
+<meta name="MS-HAID" content="wdf.enabling_a_debugger"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.enabling_a_debugger"></a>How to Enable Debugging of a UMDF Driver</h1>
+</div>
+<p>You can use the following configurations to debug a User-Mode Driver Framework (UMDF) driver. All configurations involve two machines, a host and a target. You run Microsoft Visual Studio and the  Windows Driver Kit (WDK) to build the driver on the host computer, and then install and test your driver on the target machine.</p>
+<ul>
+<li>Use  Visual Studio to copy ("deploy") the driver to the target and start a user-mode debugging session within Visual Studio on the host.</li>
+<li>Manually copy the driver to the target. Perform user-mode debugging on the target. In this scenario, you attach manually to an instance of the driver host process running on the target.</li>
+<li>Manually copy the driver to the target and then perform kernel-mode debugging from the host.</li>
+</ul>
+<p>You can use the latter two configurations together, running both a user-mode debugger on the target and a kernel-mode debugger on the host.</p>
+<h2><a id="bp"></a><a id="BP"></a>Best Practices</h2>
+<p>We recommend doing all UMDF driver testing with a kernel debugger attached.</p>
+<p>The following are recommended settings. You can set these manually, or use the <a href="devtest.wdf_verifier_control_application">WDF Verifier Control Application</a> (WDFVerifier.exe) tool in the WDK to view or change these settings.</p>
+<ul>
+<li>
+<p> Enable Application Verifier on WUDFHost.exe:</p>
+<pre class="syntax" xml:space="preserve"><code>
+AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
+</code></pre>
+<p>If exceptions occur, Application Verifier sends diagnostic messages to the debugger and breaks in.</p>
+</li>
+<li>Enable <a href="devtest.driver_verifier">Driver Verifier</a>. Open a <b>Command Prompt</b> window (<b>Run as administrator</b>). 
+Type verifier to open the Driver Verifier Manager.</li>
+<li>
+<p>If you are using a kernel-mode debugging session, set <b>HostFailKdDebugBreak</b> so that the reflector breaks into the kernel-mode debugger before terminating the driver host process. This setting is enabled by default starting in UMDF version 1.11.</p>
+</li>
+<li>Disable pooling by setting <b>UmdfHostProcessSharing</b> to <b>ProcessSharingDisabled</b>. For info, see <a href="specifying_wdf_directives_in_inf_files.htm">Specifying WDF Directives in INF Files</a>. </li>
+<li>By default, when a UMDF device fails, the framework attempts to restart it up to five times. You can turn off automatic restart by setting <b>DebugModeFlags</b> to 0x01. For more info, see <a href="registry_values_for_debugging_kmdf_drivers.htm">Registry Values for Debugging WDF Drivers</a>.</li>
+<li>Reboot your computer.</li>
+</ul>
+<h2><a id="Using_Visual_Studio_with_F5_to_attach_automatically__user-mode_debugging_"></a><a id="using_visual_studio_with_f5_to_attach_automatically__user-mode_debugging_"></a><a id="USING_VISUAL_STUDIO_WITH_F5_TO_ATTACH_AUTOMATICALLY__USER-MODE_DEBUGGING_"></a>Using Visual Studio with F5 to attach automatically (user-mode debugging)</h2>
+<p>Before you can use Visual Studio with the WDK to debug a driver on a test computer, you must first set up and configure your test machine.   For information on how to do this, see <a href="https://msdn.microsoft.com/windows-drivers/develop/deploying_a_driver_to_a_test_computer">Deploying a Driver to a Test Computer</a>.</p>
+<p>After you have configured your test computer, use Visual Studio on the host computer to set breakpoints in your driver. When you press F5,  Visual Studio builds the driver, deploys it to the target computer, and starts a user-mode debugging session.</p>
+<p>When you deploy a UMDF driver using this technique, Visual Studio turns on <i>UMDF debug mode</i> for that driver. By default, debug mode means that:</p>
+<ul>
+<li>The driver starts in its own dedicated host process. <a href="using_device_pooling_in_umdf_drivers.htm">Device pooling</a> is turned off.</li>
+<li>Devices are not automatically restarted after a driver crash, and error reporting is disabled.</li>
+<li>The framework does not enforce the timeouts described in <a href="how_umdf_enforces_time_outs.htm">Host Process Timeouts in UMDF</a>.</li>
+<li>If the UMDF host process or the framework verifier detects an invalid operation, UMDF breaks into the user-mode debugger.</li>
+</ul>
+<p>You can use debug mode to debug a UMDF driver even if driver installation requires a reboot. You can also debug user-mode drivers that start before the user logs in, for example biometrics, smartcard, or input.</p>
+<h2><a id="Using_WinDbg_to_attach_manually__user-mode_debugging_"></a><a id="using_windbg_to_attach_manually__user-mode_debugging_"></a><a id="USING_WINDBG_TO_ATTACH_MANUALLY__USER-MODE_DEBUGGING_"></a>Using WinDbg to attach manually (user-mode debugging)</h2>
+<p>On the target machine, you can manually attach WinDbg  to the instance of WUDFHost that hosts the driver. When you attach, you break into the debugger and you can set breakpoints in your driver.</p>
+<p>Because driver initialization occurs shortly after WUDFHost loads, it is not feasible to attach manually in time to debug initialization code. Instead, you can set a registry value to cause the host process to wait some number of seconds at host initialization or driver load time. This delay gives you time to attach WinDbg to the correct instance of the WUDFHost process.</p>
+<p>Follow these steps:</p>
+<ol>
+<li>In the registry on the target computer, set <b>HostProcessDbgBreakOnStart</b> or <b>HostProcessDbgBreakOnDriverLoad</b> to  some number of seconds and reboot.</li>
+<li>On the target computer, open WinDbg as Administrator.</li>
+<li>On the <b>File</b> menu, choose <b>Attach to Process</b>. Select <b>By Executable</b>, and locate all processes that are named WUDFHost.exe (there might not be any). If there are any processes named WUDFHost.exe, write down their process identifiers for future reference.</li>
+<li>In Device Manager, enable the driver.</li>
+<li>Repeat step 2 and locate a new instance of WUDFHost.exe. If you don't see a new instance of WUDFHost.exe, click <b>Cancel</b>, and choose<b> Attach to Process</b> again. When you find the new instance of WUDFHost.exe, select it, and click <b>OK</b>. 
+</li>
+</ol>
+<p>If <a href="using_device_pooling_in_umdf_drivers.htm">device pooling</a> is in use and you set the <b>HostProcessDbgBreakOnDriverLoad</b> registry value, you may see debugger breaks due to other drivers loading. You can turn off device pooling by using UMDF debug mode.</p>
+<p>To use debug mode, either use the F5 option in Visual Studio, or set the <b>DebugModeFlags</b> and <b>DebugModeBinaries</b> values in the registry.</p>
+<p> For detailed information about UMDF registry values, see <a href="registry_values_for_debugging_kmdf_drivers.htm">Registry Values for Debugging WDF Drivers (KMDF and UMDF)</a>.</p>
+<h2><a id="kd"></a><a id="KD"></a>Using WinDbg to remotely debug from a host machine (kernel-mode debugging)</h2>
+<p>From a remote host, establish a kernel-mode debugging session and then set current process to the instance of Wudfhost that is hosting your driver. If you are debugging from a remote kernel debugger, you can set <b>HostProcessDbgBreakOnDriverStart</b> or <b>HostProcessDbgBreakOnDriverLoad</b> to 0x80000000 to specify no timeout, but break into the kernel debugger.</p>
+<p>In UMDF 1.11 or later, before breaking into the kernel debugger, the reflector automatically switches the process context to that of the host process. As a result, you can use UMDF debugger extension commands immediately, without first issuing the <a href="debugger._process__set_process_context_"><b>.process</b></a> command to change the process context.</p>
+<p>Use these steps:</p>
+<ol>
+<li>Disable pooling. turn on <b>DebugModeFlags</b> and list your driver in <b>DebugModeBinaries</b></li>
+<li>
+<p>If your driver uses UMDF 1.11 or later, <b>HostFailKdDebugBreak</b> is enabled by default. Skip this step.</p>
+<p>If your driver uses UMDF 1.9 or earlier, set <b>HostFailKdDebugBreak</b> to 1.</p>
+</li>
+<li>If you are debugging problems related to timeouts, turn off <b>HostProcessDbgBreakOnDriverStart</b> and <b>HostProcessDbgBreakOnDriverLoad</b>.  (When <b>HostProcessDbgBreakOnDriverStart</b> or <b>HostProcessDbgBreakOnDriverLoad</b> is non-zero, the framework disables timeouts so that the reflector does not terminate the host while a user-mode debugger is attached to the host process.)  If you need to debug driver initialization code, instead of using these two values, try issuing the following command in WinDbg before your driver loads: <b>sxe ld:</b><i>MyDriver.dll</i> (break on module load)</li>
+<li>Reboot if you made any registry changes.</li>
+<li>Depending on the selections you made above, your remote kernel debugger should break in when the driver loads or unloads on the target.</li>
+</ol>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20How to Enable Debugging of a UMDF Driver%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

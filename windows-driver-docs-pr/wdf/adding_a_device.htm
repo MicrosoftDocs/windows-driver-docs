@@ -1,0 +1,46 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Adding a Device"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Adding a Device</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_0b5338dd-0b1d-44a2-add7-6d36f1f5beb0.xml"/>
+<meta name="MS-HAID" content="umdf.adding_a_device"/>
+<meta name="MS-HAID" content="wdf.adding_a_device"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.adding_a_device"></a>Adding a Device</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>The framework adds a device object for each device loaded in the driver host process. To add the device, the framework calls the driver's <a href="wdf.idriverentry_ondeviceadd"><b>IDriverEntry::OnDeviceAdd</b></a> method and passes the <a href="wdf.iwdfdriver">IWDFDriver</a> and <a href="wdf.iwdfdeviceinitialize">IWDFDeviceInitialize</a> interfaces in the call. The supplied <b>IWDFDeviceInitialize</b> interface is only valid before the driver calls <a href="wdf.iwdfdriver_createdevice"><b>IWDFDriver::CreateDevice</b></a>. The driver can call the following methods of <b>IWDFDeviceInitialize</b> to perform the following operations: </p>
+<ul>
+<li>
+<p>The driver calls the <a href="wdf.iwdfdeviceinitialize_retrievedevicepropertystore"><b>IWDFDeviceInitialize::RetrieveDevicePropertyStore</b></a> method to retrieve the <a href="wdf.iwdfnamedpropertystore">IWDFNamedPropertyStore</a> interface for the device property store. The driver can use <b>IWDFNamedPropertyStore</b> to retrieve and set properties for the device.</p>
+</li>
+<li>
+<p>The driver calls the <a href="wdf.iwdfdeviceinitialize_setlockingconstraint"><b>IWDFDeviceInitialize::SetLockingConstraint</b></a> method to specify how its callback functions are called by the framework.</p>
+</li>
+<li>
+<p>The driver calls the <a href="wdf.iwdfdeviceinitialize_setfilter"><b>IWDFDeviceInitialize::SetFilter</b></a> method to enable the device as a filter device.</p>
+</li>
+</ul>
+<p>After the driver uses <a href="wdf.iwdfdeviceinitialize">IWDFDeviceInitialize</a> to initialize the device, the driver passes a pointer to <b>IWDFDeviceInitialize</b> in a call to the <a href="wdf.iwdfdriver_createdevice"><b>IWDFDriver::CreateDevice</b></a> method to create a <a href="framework_device_object.htm">UMDF device object</a> for the device. After the framework device object is created, the driver makes calls to the <a href="wdf.iwdfdevice_createioqueue"><b>IWDFDevice::CreateIoQueue</b></a> method to create read and write I/O queues. In these <b>IWDFDevice::CreateIoQueue</b> calls, the driver must identify how it receives requests from the I/O queue. For more information, see <a href="configuring_dispatch_mode_for_an_i_o_queue.htm">Configuring Dispatch Mode for an I/O Queue</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Adding a Device%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

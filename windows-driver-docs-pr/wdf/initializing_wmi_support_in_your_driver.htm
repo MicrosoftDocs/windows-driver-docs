@@ -1,0 +1,74 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Initializing WMI Support in Your Driver"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Initializing WMI Support in Your Driver</title>
+
+<meta name="MS-HAID" content="Ch7_DFWMIPackage_7af69fa1-39f6-4161-a3be-13e37c3300dd.xml"/>
+<meta name="MS-HAID" content="kmdf.initializing_wmi_support_in_your_driver"/>
+<meta name="MS-HAID" content="wdf.initializing_wmi_support_in_your_driver"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.initializing_wmi_support_in_your_driver"></a>Initializing WMI Support in Your Driver</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<p>To support WMI data blocks, a framework-based driver:</p>
+<ul>
+<li>
+<p>Registers the managed object format (MOF) resource names of any customized WMI data providers that are not defined in <i>Wmicore.mof</i>.</p>
+</li>
+<li>
+<p>Creates one or more WMI instance objects to represent the data blocks it can read or write.</p>
+</li>
+<li>
+<p>Optionally implements one or more event callback functions to supply the WMI data that the driver provides.</p>
+</li>
+<li>
+<p>Register each WMI instance object to make it available to WMI clients.</p>
+</li>
+</ul>
+<p>To initialize its WMI support, a KMDF driver follows these steps, typically within its <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> or <a href="wdf.evtdeviceselfmanagedioinit"><i>EvtDeviceSelfManagedIoInit</i></a> callback:</p>
+<ol>
+<li>
+<p>A driver that provides a MOF file to support customized WMI data providers must call the <a href="wdf.wdfdeviceassignmofresourcename"><b>WdfDeviceAssignMofResourceName</b></a> method to register a MOF resource name before the driver creates WMI provider objects that represent the data provider.</p>
+</li>
+<li>Initialize a WMI provider configuration structure and optionally create a WMI provider object (WDFWMIPROVIDER).</li>
+<li>Initialize a WMI instance configuration structure and create a WMI instance object (WDFWMIINSTANCE).</li>
+</ol>
+<p>The framework creates a WMI provider by default when a KMDF driver creates its first WMI instance. Therefore, if the driver requires only one WMI provider, it is not required to call the provider-creation method (<a href="wdf.wdfwmiprovidercreate"><b>WdfWmiProviderCreate</b></a>). However, the driver must fill in the provider configuration structure because this structure supplies information about the provider that the framework uses when it creates the instance.</p>
+<p>If your driver creates a single instance of each WMI data block that it supports, the driver calls <a href="wdf.wdfwmiinstancecreate"><b>WdfWmiInstanceCreate</b></a>, passing both a <a href="wdf.wdf_wmi_provider_config"><b>WDF_WMI_PROVIDER_CONFIG</b></a> structure and a <a href="wdf.wdf_wmi_instance_config"><b>WDF_WMI_INSTANCE_CONFIG</b></a> structure. This single call both configures the single framework-provided WMI provider object and creates a WMI instance object. </p>
+<p>If your driver creates multiple instances of its WMI data blocks, the driver must call both <a href="wdf.wdfwmiprovidercreate"><b>WdfWmiProviderCreate</b></a> and <a href="wdf.wdfwmiinstancecreate"><b>WdfWmiInstanceCreate</b></a></p>
+<h3><a id="registering_provider_instances"></a><a id="REGISTERING_PROVIDER_INSTANCES"></a>
+      Registering Provider Instances</h3>
+<p>Before WMI clients can access your driver's WMI data blocks, the driver must register its provider instances with the system's WMI service. The driver can use either of the following techniques to register a provider instance:</p>
+<ul>
+<li>
+<p>Set the <b>Register</b> member of the provider instance's <a href="wdf.wdf_wmi_instance_config"><b>WDF_WMI_INSTANCE_CONFIG</b></a> structure to <b>TRUE</b>.</p>
+<p>If your driver sets <b>Register</b> to <b>TRUE</b>, the framework automatically registers the instance the first time that the device enters its working (D0) state.</p>
+</li>
+<li>
+<p>Call the <a href="wdf.wdfwmiinstanceregister"><b>WdfWmiInstanceRegister</b></a> method.</p>
+<p>If your driver calls <a href="wdf.wdfwmiinstanceregister"><b>WdfWmiInstanceRegister</b></a> after calling <a href="wdf.wdfwmiinstancecreate"><b>WdfWmiInstanceCreate</b></a>, the framework registers the instance after the device is in its working (D0) state.</p>
+</li>
+</ul>
+<p>The framework automatically deregisters each provider instance when the instance's device is removed (and before it calls the <a href="wdf.evtdeviceselfmanagediocleanup"><i>EvtDeviceSelfManagedIoCleanup</i></a> event callback function). For information about the order in which the framework calls a driver's callback functions, see <a href="pnp_and_power_management_scenarios.htm">PnP and Power Management Scenarios</a>.</p>
+<p>Your driver can deregister an instance at any time by calling <a href="wdf.wdfwmiinstancederegister"><b>WdfWmiInstanceDeregister</b></a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Initializing WMI Support in Your Driver%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

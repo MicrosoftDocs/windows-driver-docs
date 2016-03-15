@@ -1,0 +1,140 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Troubleshooting KMDF and UMDF Driver Installation"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Troubleshooting KMDF and UMDF Driver Installation</title>
+
+<meta name="MS-HAID" content="Ch0_DFArchOverview_a862ac51-1579-4dbe-9115-5842088fcc6f.xml"/>
+<meta name="MS-HAID" content="kmdf.debugging_driver_installation"/>
+<meta name="MS-HAID" content="wdf.debugging_driver_installation"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.debugging_driver_installation"></a>Troubleshooting KMDF and UMDF Driver Installation</h1>
+</div>
+<p>The framework's co-installer creates debugging messages. You can see these messages in a debugger if you are running a checked build of Windows.</p>
+<p> Additionally, the co-installer writes its debugging messages to the <a href="devinst.setupapi_text_logs">Setup action log</a> (<i>%windir%\setupact.log</i>) file. The Setup action log contains the version of the co-installer and the driver specified in the driver's INF file. You should verify that these are as expected. </p>
+<h2><a id="Examining_KMDF_Installation"></a><a id="examining_kmdf_installation"></a><a id="EXAMINING_KMDF_INSTALLATION"></a>Examining KMDF Installation</h2>
+<p>The following output in the Setup action log is from the successful installation of a KMDF driver:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfCoInstaller: DIF_INSTALLDEVICE: Pre-Processing
+WdfCoInstaller: ReadComponents:  WdfSection for Driver Service ECHO using KMDF lib version Major 0x1, minor 0x9 
+WdfCoInstaller: DIF_INSTALLDEVICE: Coinstaller version: 1.9.7100
+WdfCoInstaller: DIF_INSTALLDEVICE: KMDF in-memory version: 1.9.7100
+WdfCoInstaller: DIF_INSTALLDEVICE: KMDF on-disk version: 1.9.7100
+WdfCoInstaller: Service Wdf01000 is running
+WdfCoInstaller: DIF_INSTALLDEVICE: Update is not required. The on-disk KMDF version is newer than or same as the version of the coinstaller
+WdfCoInstaller: DIF_INSTALLDEVICE: Post-Processing
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p>In the above scenario, no update was necessary because the on-disk version and in-memory framework version is KMDF 1.9,  which is the same version of the co-installer. </p>
+<p>Consider the following output, which details an unsuccessful installation:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfCoInstaller: ReadComponents:  WdfSection for Driver Service ECHO using KMDF lib version Major 0x1, minor 0x9  
+WdfCoInstaller: DIF_INSTALLDEVICE: Coinstaller version: 1.9.7100
+WdfCoInstaller: DIF_INSTALLDEVICE: KMDF in-memory version: 1.7.6000
+WdfCoInstaller: DIF_INSTALLDEVICE: KMDF on-disk version: 1.7.6000
+WdfCoInstaller: Service Wdf01000 is running
+WdfCoInstaller: DIF_INSTALLDEVICE: Reboot is required, because the in-memory KMDF version is older than the coinstaller's version.
+WdfCoInstaller: DIF_INSTALLDEVICE: Update is required, because the on-disk KMDF version is older than the coinstaller
+WdfCoInstaller: VerifyMSRoot: exit: error(0) The operation completed successfully.
+WdfCoInstaller: Invoking "D:\Windows\system32\wusa.exe "D:\Windows\Temp\WdfTemp\Microsoft Kernel-Mode Driver Framework Install-v1.9-Vista.msu" /quiet /norestart".
+WdfCoInstaller: The update process returned error code :error(265) &lt;no error text&gt;. 
+WdfCoInstaller: For additional information please look at the log files %windir%\windowsupdate.log and %windir%\Logs\CBS\CBS.log
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p>In this scenario, both an update and a reboot were necessary because the in-memory version and the on-disk version of the KMDF runtime were older than the version of the co-installer.  However, the update was unsuccessful.  The co-installer points to additional log files where you can find more information about the failure.</p>
+<p>You can also check the system event log for errors related to the dynamic binding of the KMDF driver to the runtime library. Such an error may generate an <b>Wdf</b>&lt;<i>MajorVersionNumber</i>&gt;&lt;<i>MinorVersionNumber</i>&gt; entry in the system event log. In this case, reboot the computer. You can also force a reinstallation of the KMDF runtime by deleting <b>Wdf</b>&lt;<i>MajorVersionNumber</i>&gt;&lt;<i>MinorVersionNumber</i>&gt;<b>.sys</b> from the <i>%windir%\system32\drivers</i> folder.</p>
+<h2><a id="Examining_UMDF_Installation"></a><a id="examining_umdf_installation"></a><a id="EXAMINING_UMDF_INSTALLATION"></a>Examining UMDF Installation</h2>
+<p>The following output in the Setup action log describes a successful UMDF driver installation.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WudfUpdate: installing version (1,9,0,7100).
+WudfUpdate: Checking for presence of previous UMDF installation.
+WudfUpdate: Found binary %WINDIR%\system32\drivers\wudfrd.sys version (1.9.0.7100)
+WudfUpdate: Found binary %WINDIR%\system32\drivers\wudfpf.sys version (1.9.0.7100)
+WudfUpdate: Found binary %WINDIR%\system32\wudfhost.exe version (1.9.0.7100)
+WudfUpdate: Found binary %WINDIR%\system32\wudfsvc.dll version (1.9.0.7100)
+WudfUpdate: Found binary %WINDIR%\system32\wudfx.dll version (1.9.0.7100)
+WudfUpdate: Found binary %WINDIR%\system32\wudfplatform.dll version (1.9.0.7100)
+WudfUpdate: Found binary %WINDIR%\system32\wudfcoinstaller.dll version (1.9.0.7100)
+WudfUpdate: UMDF installation is same as update. WudfUpdate: Loading configuration coinstaller from D:\Windows\system32\wudfcoinstaller.dll.
+WudfCoInstaller: ReadWdfSection: Checking WdfSection [Echo_Install.NT.Wdf]
+WudfCoInstaller: Configuring UMDF Service  WUDFEchoDriver.
+WudfCoInstaller: Service WudfSvc is already running.
+WudfCoInstaller: Final status: error(0) The operation completed successfully.
+
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p>In the above scenario, no update is necessary because the on-disk version of the runtime is UMDF 1.9, which is the same as the version of the co-installer. </p>
+<p>Consider the following output, which details an unsuccessful installation.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WudfUpdate: installing version (1,9,0,7100).
+WudfUpdate: Checking for presence of previous UMDF installation.
+WudfUpdate: Found binary %WINDIR%\system32\drivers\wudfrd.sys version (1.5.0.6000)
+WudfUpdate: Found binary %WINDIR%\system32\drivers\wudfpf.sys version (1.5.0.6000)
+WudfUpdate: Found binary %WINDIR%\system32\wudfhost.exe version (1.5.0.6000)
+WudfUpdate: Found binary %WINDIR%\system32\wudfsvc.dll version (1.5.0.6000)
+WudfUpdate: Found binary %WINDIR%\system32\wudfx.dll version (1.5.0.6000)
+WudfUpdate: Found binary %WINDIR%\system32\wudfplatform.dll version (1.5.0.6000)
+WudfUpdate: Found binary %WINDIR%\system32\wudfcoinstaller.dll version (1.5.0.6000)
+WudfUpdate: UMDF installation is older than current.
+WudfUpdate: Locating resource stream WUDF_UPDATE_VISTA-RTM.
+WudfUpdate: unpacking update from resource to Microsoft User-Mode Driver Framework Install-v1.9-Vista.msu.
+WudfUpdate: Temporary path is D:\Windows\Temp\WDF7625.tmp.
+WudfUpdate: Invoking update "%SYSTEMROOT%\system32\wusa.exe" with command line "D:\Windows\Temp\WDF7625.tmp\Microsoft User-Mode Driver Framework Install-v1.9-Vista.msu /quiet /norestart".
+WudfUpdate: Waiting for update to terminate.
+WudfUpdate: Update process returned 22.
+WudfUpdate: update returned error 0x16 - error(22) The device does not recognize the command.
+WudfUpdate: For additional information please look at the log files %windir%\windowsupdate.log and %windir%\Logs\CBS\CBS.log
+WudfUpdate: Cleaning up update.
+WudfUpdate: Error updating UMDF - error(22) The device does not recognize the command. Aborting installation.
+
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p>In this scenario, the on-disk version of the UMDF runtime was older than the version of the co-installer.  However, in this case the update was unsuccessful.  The co-installer points to additional log files where you can find more information regarding the reason for the failure.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Troubleshooting KMDF and UMDF Driver Installation%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

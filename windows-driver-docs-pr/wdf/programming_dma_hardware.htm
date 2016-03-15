@@ -1,0 +1,150 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its EvtProgramDma event callback function."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Programming DMA Hardware</title>
+
+<meta name="MS-HAID" content="DFDmaPackage_dbebdcb6-ac97-4b93-8e5b-55144c04b17d.xml"/>
+<meta name="MS-HAID" content="kmdf.programming_dma_hardware"/>
+<meta name="MS-HAID" content="wdf.programming_dma_hardware"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.programming_dma_hardware"></a>Programming DMA Hardware</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<p>This topic describes the functionality that a KMDF driver for a bus-master DMA device typically provides in its <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> event callback function. If your driver uses the framework's DMA support, the driver must provide this callback.  This information also applies to a KMDF driver for a <a href="supporting_system-mode_dma.htm">system-mode DMA device</a> that has a hardware interrupt.</p>
+<h2><a id="ddk_programming_dma_hardware_df"></a><a id="DDK_PROGRAMMING_DMA_HARDWARE_DF"></a></h2>
+<p>The <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> callback function, which is called at IRQL = DISPATCH_LEVEL, programs the device to start a <a href="dma_transactions_and_dma_transfers.htm">DMA transfer</a>. The input parameters for this callback function supply the transfer's direction (input or output) and a scatter/gather list. If the transfer consists of a single packet, the scatter/gather list contains a single element.</p>
+<p>The <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> callback function programs the device by using the hardware resources that the driver's <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback function received. If the <i>EvtProgramDma</i> callback function successfully programs the hardware, it returns <b>TRUE</b>. </p>
+<p>After the hardware has completed the DMA transfer, typically the hardware issues an interrupt and the system calls the driver's <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function. The driver's <i>EvtInterruptIsr</i> callback function usually:</p>
+<ul>
+<li>
+<p>Clears the hardware interrupt.</p>
+</li>
+<li>
+<p>Saves the interrupt's context information if it is needed.  This information might be lost after the callback function returns and the system lowers the IRQL (because lowering the IRQL allows additional interrupts to occur).</p>
+</li>
+<li>
+<p>Calls <a href="wdf.wdfinterruptqueuedpcforisr"><b>WdfInterruptQueueDpcForIsr</b></a> to schedule an <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function. </p>
+</li>
+</ul>
+<p>The <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function <a href="completing_a_dma_transfer.htm">completes the DMA transfer</a> by using context information that the <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function saved.</p>
+<p></p>
+<p>If the <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> callback function detects an error, the driver can stop the transaction.</p>
+<p>To stop a transaction when the driver detects an error, the <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> callback function must:</p>
+<ol>
+<li>
+<p>Call <a href="wdf.wdfdmatransactiondmacompletedfinal"><b>WdfDmaTransactionDmaCompletedFinal</b></a>.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to delete the DMA transaction object, or call <a href="wdf.wdfdmatransactionrelease"><b>WdfDmaTransactionRelease</b></a> to release and reuse the DMA transaction object.</p>
+</li>
+<li>
+<p><a href="requeuing_i_o_requests.htm">Requeue the I/O request</a> or <a href="completing_i_o_requests.htm">complete the I/O request</a>, if the transaction is associated with a framework request object.  To retrieve a handle to the request, the driver can call <a href="wdf.wdfdmatransactiongetrequest"><b>WdfDmaTransactionGetRequest</b></a>.</p>
+</li>
+<li>
+<p>Return <b>FALSE</b>.</p>
+</li>
+</ol>
+<p>Steps 1 and 4 are illustrated in the following code example, taken from the <a href="http://go.microsoft.com/fwlink/p/?linkid=256157">PLX9x5x</a> sample’s <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> callback function for read requests in the <i>Read.c</i> file.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    // If errors occur in the EvtProgramDma callback,
+    // release the DMA transaction object and complete the request.
+
+    if (errors) {
+        NTSTATUS status;
+
+        //
+        // Must abort the transaction before deleting.
+        //
+        (VOID) WdfDmaTransactionDmaCompletedFinal(Transaction, 0, &amp;status);
+        ASSERT(NT_SUCCESS(status));
+
+        PLxReadRequestComplete( Transaction, STATUS_INVALID_DEVICE_STATE );
+        TraceEvents(TRACE_LEVEL_ERROR, DBG_READ,
+                    "&lt;-- PLxEvtProgramReadDma: errors ****");
+        return FALSE;
+    }
+
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p>The example calls the  <b>PLxReadRequestComplete</b> function to perform steps 2 and 3:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+PLxReadRequestComplete(
+    IN WDFDMATRANSACTION  DmaTransaction,
+    IN NTSTATUS           Status
+    )
+/*++
+
+Routine Description:
+
+Arguments:
+
+Return Value:
+
+--*/
+{
+    WDFREQUEST         request;
+    size_t             bytesTransferred;
+
+    //
+    // Get the associated request from the transaction.
+    //
+    request = WdfDmaTransactionGetRequest(DmaTransaction);
+
+    ASSERT(request);
+
+    //
+    // Get the final bytes transferred count.
+    //
+    bytesTransferred =  WdfDmaTransactionGetBytesTransferred( DmaTransaction );
+
+    TraceEvents(TRACE_LEVEL_INFORMATION, DBG_DPC,
+                "PLxReadRequestComplete:  Request %p, Status %!STATUS!, "
+                "bytes transferred %d\n",
+                 request, Status, (int) bytesTransferred );
+
+    WdfDmaTransactionRelease(DmaTransaction);
+
+    //
+    // Complete this Request.
+    //
+    WdfRequestCompleteWithInformation( request, Status, bytesTransferred);
+
+}
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Programming DMA Hardware%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="A Device Enters a Low-Power State"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>A Device Enters a Low-Power State</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_12d6020e-0249-4c63-b376-1aa3e81b1334.xml"/>
+<meta name="MS-HAID" content="kmdf.a_device_enters_a_low_power_state"/>
+<meta name="MS-HAID" content="wdf.a_device_enters_a_low_power_state"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.a_device_enters_a_low_power_state"></a>A Device Enters a Low-Power State</h1>
+</div>
+<p>A device leaves its working (D0) state and enters a low-power state if one of the following occurs:</p>
+<ul>
+<li>
+<p>The device is idle (that is, not being accessed) and is capable of entering a low-power idle state while the system remains in its working (S0) state.</p>
+</li>
+<li>
+<p>The system's power state has changed from its working (S0) state to a low-power state. (Drivers can call <a href="wdf.wdfdevicegetsystempoweraction"><b>WdfDeviceGetSystemPowerAction</b></a> to determine the reason that a system's power state is changing.)</p>
+</li>
+</ul>
+<p>For each function and filter driver that supports the device, the framework does the following, in sequence, one driver at a time, starting with the driver that is highest in the driver stack:</p>
+<ol>
+<li>
+<p>If the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.evtdeviceselfmanagediosuspend"><i>EvtDeviceSelfManagedIoSuspend</i></a> callback function.</p>
+</li>
+<li>
+<p>The framework stops all of the driver's power-managed I/O queues and calls their <a href="wdf.evtiostop"><i>EvtIoStop</i></a> callback functions (if they exist).</p>
+</li>
+<li>
+<p>If the driver is the device's power policy owner, the framework calls its <a href="wdf.evtdevicearmwakefroms0"><i>EvtDeviceArmWakeFromS0</i></a>, <a href="wdf.evtdevicearmwakefromsx"><i>EvtDeviceArmWakeFromSx</i></a>, or <a href="wdf.evtdevicearmwakefromsxwithreason"><i>EvtDeviceArmWakeFromSxWithReason</i></a> callback function.</p>
+</li>
+<li>
+<p>If the hardware and driver support DMA, the framework calls the driver's <a href="wdf.evtdmaenablerselfmanagediostop"><i>EvtDmaEnablerSelfManagedIoStop</i></a>, <a href="wdf.evtdmaenablerflush"><i>EvtDmaEnablerFlush</i></a>, and <a href="wdf.evtdmaenablerdisable"><i>EvtDmaEnablerDisable</i></a> callback functions (if they exist) for each DMA channel created.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtdeviced0exitpreinterruptsdisabled"><i>EvtDeviceD0ExitPreInterruptsDisabled</i></a> callback function (if it exists), and then it calls the driver's <a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a> callback function (if it exists) for each interrupt, so that the driver can disable device interrupts.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a> callback function (if it exists).</p>
+</li>
+</ol>
+<p>The bus driver is the driver in the stack that is called last. When the framework calls the bus driver's <a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a> callback function, the callback function sets the power state of the device (a child device of the bus) to a low-power state. The framework specifies the D3 low-power state unless the power policy owner has specified a different low-power state.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20A Device Enters a Low-Power State%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

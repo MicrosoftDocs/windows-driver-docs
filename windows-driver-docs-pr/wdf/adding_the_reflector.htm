@@ -1,0 +1,126 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Specifying the Reflector in an INF File"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Specifying  the Reflector in an INF File</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_618cf069-c956-46f8-93fe-f5acd7153fee.xml"/>
+<meta name="MS-HAID" content="umdf.adding_the_reflector"/>
+<meta name="MS-HAID" content="wdf.adding_the_reflector"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.adding_the_reflector"></a>Specifying  the Reflector in an INF File</h1>
+</div>
+<p>To add the reflector (WUDFRd.sys) to the kernel-mode device stack, the INF file of a UMDF driver must include an <a href="devinst.inf_addservice_directive"><b>AddService directive</b></a> in an <a href="devinst.inf_ddinstall_services_section"><b>INF DDInstall.Services section</b></a>. The reflector can be an upper filter, a lower filter, or the service for the device, depending on the configuration of the user-mode stack.</p>
+<p>The following code example shows how the INF file for a UMDF function driver might add the reflector.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[Skeleton_Install.Services]
+AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall</pre>
+</td>
+</tr>
+</table></span></div>
+<p>In this example, the driver specifies the 0x2 (SPSVCINST_ASSOCSERVICE) flag (ORed into the <i>flags</i> parameter above) to assign the reflector as the function driver in the kernel-mode device stack.</p>
+<p>The <b>AddService</b> directive also sets the 0x000001f8 flags to prevent overwriting any preexisting configuration for the service. For more information about these flags, see the <i>flags</i> parameter of the <a href="devinst.inf_addservice_directive"><b>AddService directive</b></a>.</p>
+<p>The  following code example, taken from the WUDFVhidmini sample, shows an <b>AddService</b> directive for a UMDF filter driver.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[hidumdf.win8.NT.Services]
+AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall  
+AddService=mshidumdf, 0x000001fa, mshidumdf.AddService
+
+[WudfVhidmini_AddReg]
+HKR,,"LowerFilters",0x00010008,"WUDFRd" ; FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_APPEND</pre>
+</td>
+</tr>
+</table></span></div>
+<p>In this case, the mshidumdf service is associated with the FDO for the device stack, and the reflector is a lower filter.</p>
+<h2><a id="Providing_a_service-install-section"></a><a id="providing_a_service-install-section"></a><a id="PROVIDING_A_SERVICE-INSTALL-SECTION"></a>Providing a service-install-section</h2>
+<p>The <b>AddService</b> directive references an service-install-section similar to the following code example. The <b>ServiceType</b> entry specifies 1 or 0x00000001, which indicates that the INF installs support for one or more devices. The <b>StartType</b> entry specifies when to start the driver. The <b>ErrorControl</b> entry specifies the level of error control that the driver provides. The <b>ServiceBinary</b> entry specifies the path to the binary (the reflector) for the service. </p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[WUDFRD_ServiceInstall]
+DisplayName = "Windows Driver Frameworks - User-mode Driver Framework Reflector"
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\WUDFRd.sys</pre>
+</td>
+</tr>
+</table></span></div>
+<h2><a id="Specifying_a_unique_service_name"></a><a id="specifying_a_unique_service_name"></a><a id="SPECIFYING_A_UNIQUE_SERVICE_NAME"></a>Specifying a unique service name</h2>
+<p>Although it is not required to do so, a UMDF driver that runs only on Windows 8 and later operating systems can specify a unique service name for the WUDFRd (reflector) service.</p>
+<p>The following example shows how to specify a unique service name instead of WUDFRd.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[Echo_Install.NT.Services]
+AddService=WudfEchoDriver,0x00000002,WUDFEchoDriver_ServiceInstall
+
+[WUDFEchoDriver_ServiceInstall]
+DisplayName = %WudfEchoDriverDisplayName%
+ServiceType = 1
+StartType = 3
+ErrorControl = 1
+ServiceBinary = %12%\WUDFRd.sys
+StartName = \Driver\WudfRd
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p>In the above example, the driver specifies a unique value for the service name in the <b>AddService</b> directive. (In this case, it's WudfEchoDriver, which is the name of the driver.) Next, the driver specifies a unique <b>DisplayName</b> value for the service. Finally, the driver adds the <b>StartName</b> entry and sets it to \Driver\WudfRd.</p>
+<p>UMDF drivers cannot specify a unique service name for the reflector on operating systems earlier than Windows 8.  If your driver specifies a unique service name but must also work on operating systems earlier than Windows 8,  use operating system specific sections in the INF file, as shown in the following example.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[Manufacturer]
+%MSFT% = Microsoft,NTx86.6.0,NTx86.6.2
+[Microsoft.NTx86.6.0]
+%Sensors.DeviceDesc% = Sensors_Install_VistaWin7,HID_DEVICE_UP:0020_U:0001
+[Microsoft.NTx86.6.2]
+%Sensors.DeviceDesc% = Sensors_Install_Win8,HID_DEVICE_UP:0020_U:0001
+[Sensors_Install_VistaWin7]
+--- Install the device this way on Vista/Win7 ---
+[Sensors_Install_Win8]
+--- Install the device in a different way on Win8 ---</pre>
+</td>
+</tr>
+</table></span></div>
+<p>If the reflector is not added, UMDF is never loaded. The device might start, but the host process is not present and the device will not operate properly.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Specifying  the Reflector in an INF File%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

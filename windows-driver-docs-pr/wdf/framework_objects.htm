@@ -1,0 +1,308 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Framework Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Framework Objects</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_f4f6a76b-c814-4784-a0ed-eaaf4ab8bf75.xml"/>
+<meta name="MS-HAID" content="umdf.framework_objects"/>
+<meta name="MS-HAID" content="wdf.framework_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.framework_objects"></a>Framework Objects</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>The following table provides basic information about each framework object, links to the object's interface, and links to more information about the core framework objects.</p>
+<table>
+<tr>
+<th>Objectname</th>
+<th>ObjectInterface</th>
+<th>Purpose</th>
+<th>Defaultparent</th>
+<th>Can driver overridedefaultparent?</th>
+<th>Can driver own?</th>
+</tr>
+<tr>
+<td>
+<p><a href="framework_driver_object.htm">Driver object</a></p>
+</td>
+<td>
+<p><a href="wdf.iwdfdriver">IWDFDriver</a></p>
+</td>
+<td>
+<p>Represents a driver</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="framework_device_object.htm">Device object</a></p>
+</td>
+<td>
+<p><a href="wdf.iwdfdevice">IWDFDevice</a></p>
+</td>
+<td>
+<p>Represents a device</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="framework_file_object.htm">File object</a></p>
+</td>
+<td>
+<p><a href="wdf.iwdffile">IWDFFile</a></p>
+</td>
+<td>
+<p>Represents a file</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>
+<p>
+<dl>
+<dt>No, if created by framework;</dt>
+<dt>Yes, if created by driver</dt>
+</dl>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="framework_interrupt_object.htm"> Interrupt object</a></p>
+</td>
+<td><a href="wdf.iwdfinterrupt">IWDFInterrupt</a></td>
+<td>
+<p>Represents an interrupt</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="framework_i_o_queue_object.htm">Queue object</a></p>
+</td>
+<td>
+<p><a href="wdf.iwdfioqueue">IWDFIoQueue</a></p>
+</td>
+<td>
+<p>Represents an I/O queue that receives I/O requests</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="framework_i_o_request_object.htm">Request object</a></p>
+</td>
+<td>
+<p><a href="wdf.iwdfiorequest">IWDFIoRequest</a></p>
+</td>
+<td>
+<p>Represents an I/O request</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>
+<dl>
+<dt>No, if created by framework;</dt>
+<dt>Yes, if created by driver</dt>
+</dl>
+</p>
+</td>
+<td>
+<p>
+<dl>
+<dt>No, if created by framework (for example, redirected requests);</dt>
+<dt>Yes, if created by driver</dt>
+</dl>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="framework_i_o_target_object.htm">Target object</a></p>
+</td>
+<td>
+<p><a href="wdf.iwdfiotarget">IWDFIoTarget</a></p>
+</td>
+<td>
+<p>Represents a driver that another driver sends requests to</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>
+<p>
+<dl>
+<dt>No, for the default target;</dt>
+<dt>Yes, for all other targets</dt>
+</dl>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>USB device object</p>
+</td>
+<td>
+<p><a href="wdf.iwdfusbtargetdevice">IWDFUsbTargetDevice</a></p>
+</td>
+<td>
+<p>Represents a device that is connected to USB</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>
+<p>Yes (see target object)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>USB pipe object</p>
+</td>
+<td>
+<p><a href="wdf.iwdfusbtargetpipe">IWDFUsbTargetPipe</a></p>
+</td>
+<td>
+<p>Represents a USB device pipe</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>
+<p>Yes (see target object)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>USB interface object</p>
+</td>
+<td>
+<p><a href="wdf.iwdfusbinterface">IWDFUsbInterface</a></p>
+</td>
+<td>
+<p>Represents a USB device interface</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>
+<p>Yes (see target object)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="framework_base_object.htm">Base object</a></p>
+</td>
+<td>
+<p><a href="wdf.iwdfobject">IWDFObject</a></p>
+</td>
+<td>
+<p>Represents a general base object</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>
+<p>Yes, if created by driver</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="framework_memory_object.htm">Memory object</a></p>
+</td>
+<td>
+<p><a href="wdf.iwdfmemory">IWDFMemory</a></p>
+</td>
+<td>
+<p>Represents a memory object</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>
+<p>
+<dl>
+<dt>No, if created by framework;</dt>
+<dt>Yes, if created by driver</dt>
+</dl>
+</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Framework Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

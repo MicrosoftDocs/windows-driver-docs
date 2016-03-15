@@ -1,0 +1,42 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Initializing UMDF Drivers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Initializing UMDF Drivers</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_9f5a38d7-3b61-4d9c-9b2d-6d49f540e432.xml"/>
+<meta name="MS-HAID" content="umdf.initializing_umdf_drivers"/>
+<meta name="MS-HAID" content="wdf.initializing_umdf_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.initializing_umdf_drivers"></a>Initializing UMDF Drivers</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>Before a UMDF driver for a device is initialized, the driver manager and the reflector are loaded by the operating system and the driver host process is created. To ensure that a device starts successfully, the driver manager is loaded and fully initialized by the time the reflector initializes. </p>
+<p>When the device is installed, the Plug and Play (PnP) subsystem loads the reflector, if not already loaded. The reflector then contacts the driver manager to create the driver host process. The framework within the newly created driver host process then calls the <a href="wdf.idriverentry_oninitialize"><b>IDriverEntry::OnInitialize</b></a> method to initialize the UMDF driver, if not already initialized. </p>
+<p>The framework adds a new device object for each device loaded in the driver host process. The following sections show an overview and provide details on how the framework adds a new device:</p>
+<p>
+<ul>
+<li><a href="adding_a_device_overview.htm">Adding a Device Overview</a></li>
+<li><a href="adding_a_device.htm">Adding a Device</a></li>
+</ul>
+</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Initializing UMDF Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

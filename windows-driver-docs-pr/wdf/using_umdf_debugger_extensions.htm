@@ -1,0 +1,219 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="The Windows Driver Kit (WDK) includes a debugger extension library, named WudfExt.dll, which is located in the %DDKROOT%\bin subdirectory."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Summary of Debugger Extensions in Wudfext.dll</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_e278c2ff-31be-4648-83cf-5744825b8eaf.xml"/>
+<meta name="MS-HAID" content="umdf.using_umdf_debugger_extensions"/>
+<meta name="MS-HAID" content="wdf.using_umdf_debugger_extensions"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_umdf_debugger_extensions"></a>Summary of Debugger Extensions in Wudfext.dll</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>The Windows Driver Kit (WDK) includes a debugger extension library, named <i>WudfExt.dll</i>, which is located in the %DDKROOT%\bin subdirectory. This topic describes the debugger extension commands in <i>WudfExt.dll</i>, which you can use to debug User-Mode Driver Framework (UMDF) version 1.<i>x</i> drivers. </p>
+<p>To debug UMDF drivers starting in UMDF version 2.0, you must instead use the <i>Wdfkd.dll</i> debugger extension library. For more info, see <a href="debugger.kernel_mode_driver_framework_extensions__wdfkd_dll_"><b>Windows Driver Framework Extensions (Wdfkd.dll)</b></a>.</p>
+<p>For a complete description of each command in <i>WudfExt.dll</i>, see <a href="debugger.user_mode_driver_framework_extensions__wudfext_dll_">User-Mode Driver Framework Extensions (Wudfext.dll)</a>. For more information about all available debugger extension libraries, see the documentation that is supplied with the <a href="debugger.introduction6">Windows Debugging</a> package.</p>
+<p>To load the <i>WudfExt.dll</i> debugger extension library, enter the following command at the debugger's command prompt:</p>
+<p><b>!load WudfExt.dll</b></p>
+<p>The following table summarizes the extension commands that the WudfExt.dll extension library provides.</p>
+<table>
+<tr>
+<th>Extension</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+<p><b>
+        !help</b></p>
+</td>
+<td>
+<p>Shows all debugger extensions that WudfExt.dll supports</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>!umdevstacks</b></p>
+</td>
+<td>
+<p>Shows all the device stacks in the host process</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>!umdevstack</b></p>
+</td>
+<td>
+<p>Shows information about a device stack in the host process</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>!umirps</b></p>
+</td>
+<td>
+<p>Shows the list of pending I/O request packets in the host process</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>!umirp</b></p>
+</td>
+<td>
+<p>Shows information about a user-mode I/O request packet</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfdriverinfo</b></p>
+</td>
+<td>
+<p>Shows information about a UMDF driver</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>!wudfdevicequeues</b></p>
+</td>
+<td>
+<p>Shows all the I/O queues for a device</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfqueue</b></p>
+</td>
+<td>
+<p>Shows information about an I/O queue</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfrequest</b></p>
+</td>
+<td>
+<p>Shows information about an I/O request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfobject</b></p>
+</td>
+<td>
+<p>Shows information about a WDF object as well as its parent and child relationships</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfdevice</b></p>
+</td>
+<td>
+<p>Shows Plug and Play (PnP) and power-management state systems for a device</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfdumpobjects</b></p>
+</td>
+<td>
+<p>Shows the list of outstanding WDF objects; used to determine any leaked objects when the driver unloads</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfiotarget</b></p>
+</td>
+<td>
+<p>Shows information about an I/O target, including its state and list of sent requests</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudffile</b></p>
+</td>
+<td>
+<p>Shows information about a framework file</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !umfile</b></p>
+</td>
+<td>
+<p>Shows information about a UMDF <a href="creating_a_file_object_to_handle_i_o.htm">intra-stack file</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>!wudffilehandletarget</b></p>
+</td>
+<td>
+<p>Shows information about a file-handle-based I/O target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfusbtarget</b></p>
+</td>
+<td>
+<p>Shows information about a USB I/O target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfusbinterface</b></p>
+</td>
+<td>
+<p>Shows information about a USB interface object</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>
+        !wudfusbpipe</b></p>
+</td>
+<td>
+<p>Shows information about a USB pipe object</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>!wudfrefhist</b></p>
+</td>
+<td>
+<p>Shows reference count history for a framework object</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Summary of Debugger Extensions in Wudfext.dll%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

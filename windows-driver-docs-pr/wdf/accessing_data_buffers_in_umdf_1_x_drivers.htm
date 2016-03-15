@@ -1,0 +1,158 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Accessing Data Buffers in UMDF 1.x Drivers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Accessing Data Buffers in UMDF 1.x Drivers</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_75b48fc3-dc4a-4f2b-9040-b7bc95fb8f61.xml"/>
+<meta name="MS-HAID" content="umdf.accessing_data_buffers_in_umdf_based_drivers"/>
+<meta name="MS-HAID" content="umdf.accessing_data_buffers_in_umdf_drivers"/>
+<meta name="MS-HAID" content="wdf.accessing_data_buffers_in_umdf_drivers"/>
+<meta name="MS-HAID" content="wdf.accessing_data_buffers_in_umdf_1_x_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.accessing_data_buffers_in_umdf_1_x_drivers"></a>Accessing Data Buffers in UMDF 1.x Drivers</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>When a driver receives a read, write, or device I/O control request, the request object contains either an input buffer or an output buffer, or both. (A few device I/O control requests provide two input, two output, or two input/output buffers.)</p>
+<p>Input buffers contain information that the driver needs. For write requests, typically this information is data that a function driver must send to a device. For device I/O control requests, an input buffer might contain information that indicates the type of operation that the driver must perform.</p>
+<p>Output buffers receive information from the driver. For read requests, typically this information is data that a function driver receives from a device. For device I/O control requests, an output buffer might receive status or other information that the I/O control code of the request specified.</p>
+<p>The technique that your driver uses to access a request's data buffers can depend on the driver's method for accessing data buffers for a device. UMDF supports the following buffer access methods:</p>
+<ul>
+<li>
+<p>UMDF versions prior to version 1.9 support only the <a href="#using_buffered_i_o_in_umdf_drivers">buffered I/O</a> access method. UMDF-based drivers that run with those versions of UMDF can use only the buffered I/O method for all read, write, and device I/O control requests. To access an I/O request's data buffers, UMDF-based drivers must use the <a href="wdf.iwdfiorequest_getinputmemory"><b>IWDFIoRequest::GetInputMemory</b></a> and <a href="wdf.iwdfiorequest_getoutputmemory"><b>IWDFIoRequest::GetOutputMemory</b></a> object methods.</p>
+</li>
+<li>
+<p>Beginning with UMDF version 1.9, two access methods: <a href="#using_buffered_i_o_in_umdf_drivers">buffered I/O</a> and <a href="#using_direct_i_o_in_umdf_drivers">direct I/O</a>, are available to UMDF-based drivers. UMDF drivers that are written for UMDF versions 1.9 and later should use the <a href="wdf.iwdfiorequest2_retrieveinputbuffer"><b>IWDFIoRequest2::RetrieveInputBuffer</b></a>, <a href="wdf.iwdfiorequest2_retrieveinputmemory"><b>IWDFIoRequest2::RetrieveInputMemory</b></a>, <a href="wdf.iwdfiorequest2_retrieveoutputbuffer"><b>IWDFIoRequest2::RetrieveOutputBuffer</b></a>, or <a href="wdf.iwdfiorequest2_retrieveoutputmemory"><b>IWDFIoRequest2::RetrieveOutputMemory</b></a> object methods to access data buffers.</p>
+</li>
+</ul>
+<p>A third access method, which is called <a href="#using_neither_buffered_i_o_nor_direct_i_o_in_umdf_drivers">neither buffered nor direct I/O</a>, is not available to UMDF-based drivers, but UMDF can convert some I/O requests from the "neither" method to a method that the UMDF version supports. </p>
+<p>In most cases, UMDF-based drivers call the same UMDF object methods to access data buffers, whether UMDF and the driver are using buffered I/O or direct I/O. Direct I/O often provides better performance than buffer I/O provides. </p>
+<p>The following sections of this topic explain:</p>
+<ul>
+<li>
+<p>how to specify a <a href="#specifying_a_preferred_buffer_access_method">preferred buffer access method</a> and <a href="#specifying_a_buffer_retrieval_mode">preferred buffer retrieval mode</a></p>
+</li>
+<li>
+<p>how UMDF <a href="#how_umdf_chooses_a_buffer_access_method_for_an_i_o_request">chooses</a> which buffer method and retrieval mode to use</p>
+</li>
+<li>
+<p>how your driver can <a href="#how_a_driver_can_obtain_the_access_method_for_an_i_o_request">obtain</a> the buffer access method that UMDF is using</p>
+</li>
+<li>
+<p>guidelines for using the <a href="#using_buffered_i_o_in_umdf_drivers">buffered</a>, <a href="#using_direct_i_o_in_umdf_drivers">direct</a>, and <a href="#using_neither_buffered_i_o_nor_direct_i_o_in_umdf_drivers">neither buffered nor direct</a> buffer access methods</p>
+</li>
+</ul>
+<h3><a id="specifying_a_preferred_buffer_access_method"></a><a id="SPECIFYING_A_PREFERRED_BUFFER_ACCESS_METHOD"></a>
+      Specifying a Preferred Buffer Access Method</h3>
+<p>UMDF versions 1.9 and later support both the buffered and direct I/O access methods. Drivers can specify the access method that you prefer to use for all of a device's read, write, and device I/O control requests by calling <a href="wdf.iwdfdeviceinitialize2_setiotypepreference"><b>IWDFDeviceInitialize2::SetIoTypePreference</b></a> before calling <a href="wdf.iwdfdriver_createdevice"><b>IWDFDriver::CreateDevice</b></a> to create a device object. For example, if a driver specifies a preference for only the buffered I/O method for read and write requests for one of its devices, the <a href="umdf_driver_host_process.htm">UMDF driver host process</a> uses the buffered I/O method when it delivers read and write requests to the driver for that device. If a driver specifies a preference for direct I/O, UMDF can (but might not) use direct I/O. For more information about when UMDF uses direct I/O, see <a href="#how_umdf_chooses_a_buffer_access_method_for_an_i_o_request">How UMDF Chooses a Buffer Access Method for an I/O Request</a>.</p>
+<p>For each device that a driver supports, the driver can specify a preference for buffered I/O, for direct I/O, or for either buffered or direct I/O for the device. The driver can specify one type of access method for read and write requests and another type of access method for device I/O control requests. If the driver does not specify an access method preference, UMDF uses the buffered method.</p>
+<p>For device I/O control requests, the I/O control code (IOCTL) specifies the buffer access method. (For more information about how IOCTLs specify an access method, see <a href="kernel.defining_i_o_control_codes">Defining I/O Control Codes</a>.) However, the access method that UMDF uses might not match the access method that the IOCTL specifies. </p>
+<ul>
+<li>
+<p>In UMDF versions prior to version 1.9, UMDF always uses the buffered access method for all I/O control requests.</p>
+</li>
+<li>
+<p>UMDF versions 1.9 and later use the buffered I/O access method if the IOCTL specifies buffered I/O. If the IOCTL specifies direct I/O, and if the driver calls <a href="wdf.iwdfdeviceinitialize2_setiotypepreference"><b>IWDFDeviceInitialize2::SetIoTypePreference</b></a> to indicate that a preference for direct I/O, UMDF might use direct I/O or it might use buffered I/O, as described in <a href="#how_umdf_chooses_a_buffer_access_method_for_an_i_o_request">How UMDF Chooses a Buffer Access Method for an I/O Request</a>. For information about how UMDF supports IOCTLs that specify the "neither buffered I/O nor direct I/O" method, see <a href="#using_neither_buffered_i_o_nor_direct_i_o_in_umdf_drivers">Using Neither Buffered I/O nor Direct I/O in UMDF Drivers</a>.</p>
+</li>
+</ul>
+<h3><a id="specifying_a_buffer_retrieval_mode"></a><a id="SPECIFYING_A_BUFFER_RETRIEVAL_MODE"></a>
+      Specifying a Buffer Retrieval Mode</h3>
+<p>In UMDF versions prior to version 1.9, UMDF always makes an I/O request's buffers available to the driver (by copying the buffers into the <a href="umdf_driver_host_process.htm">UMDF driver host process</a>) as soon as UMDF receives the I/O request. This buffer retrieval mode is called <i>immediate retrieval</i>. If a failure occurs, UMDF completes the I/O request with a failure status value and does not deliver the I/O request to the driver.</p>
+<p>UMDF versions 1.9 and later support both immediate retrieval and <i>deferred retrieval</i> modes. The deferred retrieval mode postpones copying an I/O request's buffer into the driver host process until the driver attempts to access the buffer. If a failure occurs, the buffer access functions return an error status value to the driver.</p>
+<p>Your driver can specify a buffer retrieval mode when it calls <a href="wdf.iwdfdeviceinitialize2_setiotypepreference"><b>IWDFDeviceInitialize2::SetIoTypePreference</b></a> for each device. Use the following rules:</p>
+<ul>
+<li>
+<p>If your driver specifies the direct I/O access method it must also specify the deferred retrieval mode. Direct I/O only works with deferred retrieval.</p>
+</li>
+<li>
+<p>All drivers that are written to run with UMDF versions 1.9 and later should specify the deferred retrieval mode for all I/O requests, whether the driver chooses the buffered or direct I/O access method. Deferred retrieval provides better performance because it does not access buffers that the driver does not use.</p>
+</li>
+</ul>
+<p>If your driver does not specify a buffer retrieval mode, UMDF uses immediate retrieval.</p>
+<p>All UMDF-based drivers in a driver stack must use the same retrieval mode. If some drivers specify immediate retrieval and some specify deferred retrieval, UMDF uses immediate retrieval.</p>
+<h3><a id="how_umdf_chooses_a_buffer_access_method_for_an_i_o_request"></a><a id="HOW_UMDF_CHOOSES_A_BUFFER_ACCESS_METHOD_FOR_AN_I_O_REQUEST"></a>
+      How UMDF Chooses a Buffer Access Method for an I/O Request</h3>
+<p>The access method that a driver specifies when it calls <a href="wdf.iwdfdeviceinitialize2_setiotypepreference"><b>IWDFDeviceInitialize2::SetIoTypePreference</b></a>, might not be the one that UMDF uses. UMDF uses the following rules to determine which access method to use:</p>
+<ul>
+<li>
+<p>All UMDF-based drivers in a driver stack must use the same method for accessing a device's buffers. If UMDF determines that some drivers prefer either buffered I/O or direct I/O for a device while other drivers prefer only buffered I/O for the device, UMDF uses buffered I/O for all drivers. If one or more of a stack's drivers prefer only buffered I/O while others prefer only direct I/O, UMDF logs an event to the system event log and does not start the driver stack.</p>
+<p>Your driver can call <a href="wdf.iwdfdevice2_getdevicestackiotypepreference"><b>IWDFDevice2::GetDeviceStackIoTypePreference</b></a> to determine the buffer access methods that UMDF has assigned to a device's read/write requests and I/O control requests.</p>
+</li>
+<li>
+<p>In some cases, a driver specifies a preference for direct I/O when it calls <b>IWDFDeviceInitialize2::SetIoTypePreference</b>, but for best performance, UMDF uses buffered I/O for one or more of the device's requests. For example, UMDF uses buffered I/O for small buffers if it can copy the data to the driver's buffer faster than it can map the buffers for direct access.</p>
+<p>Optionally, you can set a REG_DWORD-typed <b>DirectTransferThreshold</b> registry value that the framework uses to determine the smallest buffer size for which the framework will use direct I/O.   Typically, you do not need to provide this registry value because the framework uses a value that provides the best performance. The <b>DirectTransferThreshold</b> value is located under the device's <b>Device Parameters\WUDF</b> subkey, which is under the device's <a href="devinst.overview_of_registry_trees_and_keys">hardware key</a>. </p>
+<p>The framework uses the following rules to determine the threshold based on the value you provide in <b>DirectTransferThreshold</b>. The numbers provided assume a <b>PAGE_SIZE</b> of 4096, which is valid except on Itanium-based systems.</p>
+<ul>
+<li>
+<p>If you set <b>DirectTransferThreshold</b>  to any value less than or equal to 8192 (or 2 * <b>PAGE_SIZE</b>), the framework sets the threshold  to 8192. The framework uses buffered I/O for buffers smaller than 8192 bytes, and direct I/O for buffers equal to or larger than 8192 bytes.</p>
+</li>
+<li>
+<p>If you set <b>DirectTransferThreshold</b>  to any value greater than 8192, the framework rounds up to the next exact multiple of <b>PAGE_SIZE</b>. Again, the framework uses buffered I/O for buffers smaller than the threshold, and direct I/O for buffers equal to or larger than the threshold.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>UMDF uses direct I/O only for buffer space that begins and ends on a memory page boundary. If either the beginning or the end of a buffer does not lie on a page boundary, UMDF uses buffered I/O for that part of the buffer. In other words, UMDF might use both buffered I/O and direct I/O for a large data transfer that consists of several I/O requests.</p>
+</li>
+<li>
+<p>For device I/O control requests, UMDF uses direct I/O only if the I/O control code (IOCTL) specifies direct I/O and only if all of the device's UMDF-based drivers have called <b>IWDFDeviceInitialize2::SetIoTypePreference</b> to specify the direct access method.</p>
+</li>
+</ul>
+<p>Drivers use the same set of request object methods to access data buffers, regardless of the buffer access method. Therefore, most drivers typically do not need to know whether UMDF is using buffered I/O or direct I/O for an I/O request. </p>
+<h3><a id="how_a_driver_can_obtain_the_access_method_for_an_i_o_request"></a><a id="HOW_A_DRIVER_CAN_OBTAIN_THE_ACCESS_METHOD_FOR_AN_I_O_REQUEST"></a>
+      How a Driver Can Obtain the Access Method for an I/O Request</h3>
+<p>In a few cases, you can improve the device and driver's performance if the access method is known. In such cases, your driver can call <a href="wdf.iwdfiorequest2_geteffectiveiotype"><b>IWDFIoRequest2::GetEffectiveIoType</b></a> to obtain an I/O request's buffer access method. </p>
+<p>For example, consider a high-throughput device that typically uses direct I/O. Because it is using direct I/O, the driver must copy application-specified parameters to local driver memory before it validates the parameters, to ensure that the application does not modify the parameters after validation. </p>
+<p>Because the driver might occasionally receive a buffer that uses buffered I/O, and because buffered I/O buffers have already been copied, the application cannot modify the data and the driver does not have to copy parameters before validating them. Therefore, the driver should check each request's buffer access method to determine if it must copy parameters before validating them.</p>
+<h3><a id="using_buffered_i_o_in_umdf_drivers"></a><a id="USING_BUFFERED_I_O_IN_UMDF_DRIVERS"></a>
+      Using Buffered I/O in UMDF Drivers</h3>
+<p>If your driver is using buffered I/O, UMDF behavior differs depending on the type of request. For read and write requests, the driver host process creates a single intermediate buffer that the driver can access.</p>
+<p> 
+
+For write requests, the driver host process transfers input information from the calling application's input buffer before calling the driver stack. Drivers typically read input information from the intermediate buffer and write it to the device.</p>
+<p>
+
+For read requests, drivers typically read information from a device and store it in the intermediate buffer. The driver host process copies the output data from the intermediate buffer to the application's output buffer.</p>
+<p>For device I/O control requests,  however, the driver host process creates two separate buffers that the driver can access.  Note that this differs from the behavior of WDM and KMDF drivers, for which read, write, and device I/O control requests sent using buffered I/O result in the driver accessing a single, intermediate buffer. In this case, the output buffer initially contains nothing, and the driver should not read from it. In addition, any data that the driver writes to the input buffer is discarded and not returned to the calling application.</p>
+<p>For guidelines about when to choose buffered I/O, see <a href="wdf.wdf_device_io_type__umdf_"><b>WDF_DEVICE_IO_TYPE</b></a>.</p>
+<p>UMDF versions 1.9 and later can support either immediate or deferred retrieval of request buffers. For more information, see <a href="wdf.wdf_device_io_buffer_retrieval"><b>WDF_DEVICE_IO_BUFFER_RETRIEVAL</b></a>.</p>
+<p>A driver that uses the immediate buffer retrieval mode must use <a href="wdf.iwdfiorequest_getinputmemory"><b>IWDFIoRequest::GetInputMemory</b></a> and <a href="wdf.iwdfiorequest_getoutputmemory"><b>IWDFIoRequest::GetOutputMemory</b></a> to access the buffers.</p>
+<p>A driver that uses the deferred buffer retrieval mode can access the buffers by calling <a href="wdf.iwdfiorequest2_retrieveinputbuffer"><b>IWDFIoRequest2::RetrieveInputBuffer</b></a>, <a href="wdf.iwdfiorequest2_retrieveinputmemory"><b>IWDFIoRequest2::RetrieveInputMemory</b></a>, <a href="wdf.iwdfiorequest2_retrieveoutputbuffer"><b>IWDFIoRequest2::RetrieveOutputBuffer</b></a>, or <a href="wdf.iwdfiorequest2_retrieveoutputmemory"><b>IWDFIoRequest2::RetrieveOutputMemory</b></a>.</p>
+<h3><a id="using_direct_i_o_in_umdf_drivers"></a><a id="USING_DIRECT_I_O_IN_UMDF_DRIVERS"></a>
+      Using Direct I/O in UMDF Drivers</h3>
+<p>If your driver is using direct I/O, the driver host process verifies the accessibility of the buffer space that the originator of the I/O request (typically a user-mode application) specified, locks the buffer space into physical memory, and then provides the driver with direct access to the buffer space. </p>
+<p>For guidelines about when to choose direct I/O, see <a href="wdf.wdf_device_io_type__umdf_"><b>WDF_DEVICE_IO_TYPE</b></a>.</p>
+<p>Your driver can access the buffers by calling <a href="wdf.iwdfiorequest2_retrieveinputbuffer"><b>IWDFIoRequest2::RetrieveInputBuffer</b></a>, <a href="wdf.iwdfiorequest2_retrieveinputmemory"><b>IWDFIoRequest2::RetrieveInputMemory</b></a>, <a href="wdf.iwdfiorequest2_retrieveoutputbuffer"><b>IWDFIoRequest2::RetrieveOutputBuffer</b></a>, or <a href="wdf.iwdfiorequest2_retrieveoutputmemory"><b>IWDFIoRequest2::RetrieveOutputMemory</b></a>.</p>
+<h3><a id="using_neither_buffered_i_o_nor_direct_i_o_in_umdf_drivers"></a><a id="USING_NEITHER_BUFFERED_I_O_NOR_DIRECT_I_O_IN_UMDF_DRIVERS"></a>
+      Using Neither Buffered I/O nor Direct I/O in UMDF Drivers</h3>
+<p>The buffer access method that is known as the <i>neither buffered I/O nor direct I/O method</i> (or, the "neither" method, for short) allows drivers to directly access an application's request buffer pointers. UMDF-based drivers cannot use this access method. </p>
+<p>However, the <a href="kernel.defining_i_o_control_codes">definitions</a> of some device I/O control codes (IOCTLs) specify that the requests use the "neither" method. Optionally, UMDF can convert the buffer access method of such device I/O control requests to buffered I/O or direct I/O. Use the following steps: </p>
+<ol>
+<li>
+<p>Include the <a href="specifying_wdf_directives_in_inf_files.htm">UmdfMethodNeitherAction</a> directive in an <a href="devinst.inf_ddinstall_section"><b>INF DDInstall section</b></a> of your driver's INF file. You can set the directive's value to indicate that UMDF should pass device I/O control requests that use the "neither" access method to the driver. (Otherwise, UMDF completes these I/O requests with an error status value.) </p>
+</li>
+<li>
+<p>Access the I/O request's buffers by using the object methods that UMDF provides for <a href="#using_buffered_i_o_in_umdf_drivers">buffered I/O</a> or <a href="#using_direct_i_o_in_umdf_drivers">direct I/O</a>.</p>
+</li>
+</ol>
+<p>You should enable support of IOCTL requests that use the "neither" method only if you are sure that UMDF can convert the access method to buffered I/O or direct I/O. For example, if the IOCTL specifies a customized request that does not follow the buffer specification rules that are described at <a href="kernel.buffer_descriptions_for_i_o_control_codes">Buffer Descriptions for I/O Control Codes</a>, UMDF cannot convert the buffers.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Accessing Data Buffers in UMDF 1.x Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

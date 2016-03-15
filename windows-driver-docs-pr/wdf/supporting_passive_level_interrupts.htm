@@ -1,0 +1,319 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Starting with framework version 1.11, Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers running on Windows 8 or later versions of the operating system can create interrupt objects that require passive-level handling."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Supporting Passive-Level Interrupts</title>
+
+<meta name="MS-HAID" content="kmdf.supporting_passive_level_interrupts"/>
+<meta name="MS-HAID" content="wdf.supporting_passive_level_interrupts"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.supporting_passive_level_interrupts"></a>Supporting Passive-Level Interrupts</h1>
+</div>
+<p>Starting with framework version 1.11, Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers running on Windows 8 or later versions of the operating system can  create interrupt objects that require passive-level handling. If the driver configures an interrupt object for passive-level interrupt handling, the framework calls the driver's interrupt service routine (ISR) and other <a href="wdf.wdf_interrupt_object_reference">interrupt object event callback functions</a> at IRQL = PASSIVE_LEVEL while holding a passive-level interrupt lock.</p>
+<p>If you are developing a framework-based driver for a System on a Chip (SoC)   platform, you can use passive-mode interrupts to communicate with an off-SoC device over a low-speed bus, such as I²C, SPI, or UART.</p>
+<p> Otherwise, you should use <a href="creating_an_interrupt_object.htm">interrupts that require handling at the device's IRQL</a> (DIRQL). If your driver supports message-signaled interrupts (MSIs), you must use DIRQL interrupt handling. In versions 1.9 and earlier, the framework always processes interrupts at IRQL = DIRQL.</p>
+<p>This topic describes how to <a href="#creating_a_passive_level_interrupt">create</a>, <a href="#servicing">service</a>, and <a href="#synchronizing">synchronize</a> passive-level interrupts.</p>
+<h2><a id="creating_a_passive_level_interrupt"></a><a id="CREATING_A_PASSIVE_LEVEL_INTERRUPT"></a>Creating a Passive-Level Interrupt</h2>
+<p>To create a passive-level interrupt object,  a driver must initialize a <a href="wdf.wdf_interrupt_config"><b>WDF_INTERRUPT_CONFIG</b></a> structure and pass it to the <a href="wdf.wdfinterruptcreate"><b>WdfInterruptCreate</b></a> method.  In the configuration structure, the driver should:</p>
+<p>
+<ul>
+<li>Set the <b>PassiveHandling</b> member to TRUE.</li>
+<li>Provide an <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function, to be called at passive level.</li>
+<li>Optionally set the <b>AutomaticSerialization</b> to TRUE. If the driver sets <b>AutomaticSerialization</b> to TRUE, then the framework synchronizes execution of the interrupt object's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> callback functions with callback functions from other objects that are underneath the interrupt's parent object.</li>
+<li> Optionally, the driver can provide either an <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> callback function, to be called at IRQL = PASSIVE_LEVEL, or an <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function, to be called at IRQL = DISPATCH_LEVEL.</li>
+</ul>For additional information on setting the above members of the configuration structure, see <a href="wdf.wdf_interrupt_config"><b>WDF_INTERRUPT_CONFIG</b></a>.</p>
+<p>For information about enabling and disabling passive-level interrupts, see <a href="enabling_and_disabling_interrupts.htm">Enabling and Disabling Interrupts</a>.</p>
+<h2><a id="servicing"></a><a id="SERVICING"></a>Servicing a Passive-Level Interrupt</h2>
+<p>The <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function, which runs at IRQL = PASSIVE_LEVEL with the passive-level interrupt lock held, typically schedules an interrupt work item or interrupt DPC to process interrupt-related information at a later time. Framework-based drivers implement work item or DPC routines as <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> or <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback functions. </p>
+<p> To schedule the execution of an <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> callback function, a driver calls <a href="wdf.wdfinterruptqueueworkitemforisr"><b>WdfInterruptQueueWorkItemForIsr</b></a>  from within the <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function.</p>
+<p> To schedule the execution of an <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function, a driver calls <a href="wdf.wdfinterruptqueuedpcforisr"><b>WdfInterruptQueueDpcForIsr</b></a>  from within the <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function. (Recall that a driver's <i>EvtInterruptIsr</i> callback function can call <a href="wdf.wdfinterruptqueueworkitemforisr"><b>WdfInterruptQueueWorkItemForIsr</b></a> or <b>WdfInterruptQueueDpcForIsr</b>, but not both.)</p>
+<p> Most drivers use a single <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> or <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function for each type of interrupt.  If your driver creates multiple framework interrupt objects for each device, consider using a separate <i>EvtInterruptWorkItem</i> or <i>EvtInterruptDpc</i> callback for each interrupt.</p>
+<p>
+Drivers typically complete I/O requests in their <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> or <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback functions.</p>
+<p> The following code example demonstrates how a driver using passive-level interrupts might schedule a <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> callback from within its <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> function.</p>
+<pre class="syntax" xml:space="preserve"><code>BOOLEAN
+
+EvtInterruptIsr(
+    _In_  WDFINTERRUPT Interrupt,
+    _In_  ULONG        MessageID
+    )
+/*++
+
+  Routine Description:
+
+    This routine responds to interrupts generated by the hardware.
+    It stops the interrupt and schedules a work item for 
+    additional processing.
+
+    This ISR is called at PASSIVE_LEVEL (passive-level interrupt handling).
+
+  Arguments:
+  
+    Interrupt - a handle to a framework interrupt object
+    MessageID - message number identifying the device's
+        hardware interrupt message (if using MSI)
+
+  Return Value:
+
+    TRUE if interrupt recognized.
+
+--*/
+{
+    
+    UNREFERENCED_PARAMETER(MessageID);
+
+    NTSTATUS                status;
+    PDEV_CONTEXT            devCtx;
+    WDFREQUEST              request;
+    WDF_MEMORY_DESCRIPTOR   memoryDescriptor;
+    INT_REPORT              intReport = {0};
+    BOOLEAN                 intRecognized;
+    WDFIOTARGET             ioTarget;
+    ULONG_PTR               bytes;
+    WDFMEMORY               reqMemory;
+
+    intRecognized = FALSE;
+
+    //         
+    // Typically the pattern in most ISRs (DIRQL or otherwise) is to:
+    // a) Check if the interrupt belongs to this device (shared interrupts).
+    // b) Stop the interrupt if the interrupt belongs to this device.
+    // c) Acknowledge the interrupt if the interrupt belongs to this device.
+    //
+   
+   
+    //
+    // Retrieve device context so that we can access our queues later.
+    //    
+    devCtx = GetDevContext(WdfInterruptGetDevice(Interrupt));
+
+     
+    //
+    // Init memory descriptor.
+    //    
+    WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(
+                         &amp;memoryDescriptor,
+                         &amp;intReport,
+                         sizeof(intReport);
+
+    //
+    // Send read registers/data IOCTL. 
+    // This call stops the interrupt and reads the data at the same time.
+    // The device will reinterrupt when a new read is sent.
+    //
+    bytes = 0;
+    status = WdfIoTargetSendIoctlSynchronously(
+                             ioTarget,
+                             NULL,
+                             IOCTL_READ_REPORT,
+                             &amp;memoryDescriptor,
+                             NULL,
+                             NULL,
+                             &amp;bytes);
+     
+    //
+    // Return from ISR if this is not our interrupt.
+    // 
+    if (intReport-&gt;Interrupt == FALSE) {
+        goto exit;
+    }
+
+    intRecognized = TRUE;
+
+    //
+    // Validate the data received.
+    //
+    ...
+
+    //
+    // Retrieve the next read request from the ReportQueue which
+    // stores all the incoming IOCTL_READ_REPORT requests
+    // 
+    request = NULL;
+    status = WdfIoQueueRetrieveNextRequest(
+                            devCtx-&gt;ReportQueue,
+                            &amp;request);
+
+    if (!NT_SUCCESS(status) || (request == NULL)) {
+        //
+        // No requests to process. 
+        //
+        goto exit;
+    }
+    
+    //
+    // Retrive the request buffer.
+    //
+    status = WdfRequestRetrieveOutputMemory(request, &amp;reqMemory);
+
+    //
+    // Copy the data read into the request buffer.
+    // The request will be completed in the work item.
+    //
+    bytes = intReport-&gt;Data-&gt;Length;
+    status = WdfMemoryCopyFromBuffer(
+                            reqMemory,
+                            0,
+                            intReport-&gt;Data,
+                            bytes);
+
+    //
+    // Report how many bytes were copied.
+    //
+    WdfRequestSetInformation(request, bytes);
+
+    //
+    // Forward the request to the completion queue.
+    //
+    status = WdfRequestForwardToIoQueue(request, devCtx-&gt;CompletionQueue);
+    
+    //
+    // Queue a work-item to complete the request.
+    //
+    WdfInterruptQueueWorkItemForIsr(FxInterrupt);
+
+exit:
+    return intRecognized;
+}
+
+VOID
+EvtInterruptWorkItem(
+    _In_ WDFINTERRUPT   Interrupt,
+    _In_ WDFOBJECT      Device
+    )
+/*++
+
+Routine Description:
+
+    This work item handler is triggered by the interrupt ISR.
+
+Arguments:
+
+    WorkItem - framework work item object
+
+Return Value:
+
+    None
+
+--*/
+{
+    UNREFERENCED_PARAMETER(Device);
+
+    WDFREQUEST              request;
+    NTSTATUS                status;
+    PDEV_CONTEXT            devCtx;
+    BOOLEAN                 run, rerun;
+    
+    devCtx = GetDevContext(WdfInterruptGetDevice(Interrupt));
+
+    WdfSpinLockAcquire(devCtx-&gt;WorkItemSpinLock);
+    if (devCtx-&gt;WorkItemInProgress) {
+        devCtx-&gt;WorkItemRerun = TRUE;
+        run = FALSE;
+    }
+    else {
+        devCtx-&gt;WorkItemInProgress = TRUE;
+        devCtx-&gt;WorkItemRerun = FALSE;
+        run = TRUE;
+    }
+    WdfSpinLockRelease(devCtx-&gt;WorkItemSpinLock);
+
+    if (run == FALSE) {
+        return;
+    }
+
+    do {  
+        for (;;) {
+            //
+            // Complete all report requests in the completion queue.
+            //
+            request = NULL;
+            status = WdfIoQueueRetrieveNextRequest(devCtx-&gt;CompletionQueue, 
+                                                   &amp;request);
+            if (!NT_SUCCESS(status) || (request == NULL)) {
+                break;
+            }
+            
+            WdfRequestComplete(request, STATUS_SUCCESS);
+        }
+        
+        WdfSpinLockAcquire(devCtx-&gt;WorkItemSpinLock);
+        if (devCtx-&gt;WorkItemRerun) {
+            rerun = TRUE;
+            devCtx-&gt;WorkItemRerun = FALSE;
+        }
+        else {
+            devCtx-&gt;WorkItemInProgress = FALSE;
+            rerun = FALSE;
+        }
+        WdfSpinLockRelease(devCtx-&gt;WorkItemSpinLock);
+    }
+    while (rerun);
+}
+
+VOID
+EvtIoInternalDeviceControl(
+    _In_  WDFQUEUE      Queue,
+    _In_  WDFREQUEST    Request,
+    _In_  size_t        OutputBufferLength,
+    _In_  size_t        InputBufferLength,
+    _In_  ULONG         IoControlCode
+    )
+{
+    NTSTATUS            status;
+    DEVICE_CONTEXT      devCtx;
+    devCtx = GetDeviceContext(WdfIoQueueGetDevice(Queue));
+    
+    switch (IoControlCode) 
+    {
+    ...
+    case IOCTL_READ_REPORT:
+
+        //
+        // Forward the request to the manual ReportQueue to be completed
+        // later by the interrupt work item.
+        //
+        status = WdfRequestForwardToIoQueue(Request, devCtx-&gt;ReportQueue);
+        break;
+   
+    ...
+    }
+
+    if (!NT_SUCCESS(status)) {
+        WdfRequestComplete(Request, status);
+    }
+}
+</code></pre>
+<h2><a id="synchronizing"></a><a id="SYNCHRONIZING"></a>Synchronizing a Passive-Level Interrupt</h2>
+<p>To prevent deadlock, follow these guidelines when writing a  driver that implements passive-level interrupt handling: <ul>
+<li>If <b>AutomaticSerialization</b> is set to TRUE, do not <a href="sending_i_o_requests_synchronously.htm">send synchronous requests</a> from within an <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> callback function.</li>
+<li>Release the passive-level interrupt lock before <a href="completing_i_o_requests.htm">completing I/O requests</a>.</li>
+<li>Provide <a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a>, <a href="wdf.evtinterruptenable"><i>EvtInterruptEnable</i></a>, and <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> as necessary.</li>
+<li>
+<p>If your driver must perform interrupt-related work in an arbitrary thread context, such as in a <a href="request_handlers.htm">request handler</a>, use <a href="wdf.wdfinterrupttrytoacquirelock"><b>WdfInterruptTryToAcquireLock</b></a> and <a href="wdf.wdfinterruptreleaselock"><b>WdfInterruptReleaseLock</b></a>. Do not call <a href="wdf.wdfinterruptacquirelock"><b>WdfInterruptAcquireLock</b></a>, <a href="wdf.wdfinterruptsynchronize"><b>WdfInterruptSynchronize</b></a>, <a href="wdf.wdfinterruptenable"><b>WdfInterruptEnable</b></a>, or <a href="wdf.wdfinterruptdisable"><b>WdfInterruptDisable</b></a> from an arbitrary thread context. For an example of a deadlock scenario that can be caused by calling <b>WdfInterruptAcquireLock</b> from an arbitrary thread context, see the Remarks section of <a href="wdf.wdfinterruptacquirelock"><b>WdfInterruptAcquireLock</b></a>.</p>
+<p>If the call to <a href="wdf.wdfinterrupttrytoacquirelock"><b>WdfInterruptTryToAcquireLock</b></a> fails, the driver can postpone its interrupt-related work to a work item. In that work item, the driver can safely acquire the interrupt lock by calling <a href="wdf.wdfinterruptacquirelock"><b>WdfInterruptAcquireLock</b></a>. For more information, see <a href="wdf.wdfinterrupttrytoacquirelock"><b>WdfInterruptTryToAcquireLock</b></a>.</p>
+<p> In a non-arbitrary thread context, such as a  work item, the driver can call <a href="wdf.wdfinterruptacquirelock"><b>WdfInterruptAcquireLock</b></a> or <a href="wdf.wdfinterruptsynchronize"><b>WdfInterruptSynchronize</b></a>.</p>
+</li>
+</ul>
+</p>
+<p>For more information about using interrupt locks, see <a href="synchronizing_interrupt_code.htm">Synchronizing Interrupt Code</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Supporting Passive-Level Interrupts%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Static Enumeration"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Static Enumeration</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_8b6f570f-27cf-46ab-90d9-f1200152ab7f.xml"/>
+<meta name="MS-HAID" content="kmdf.static_enumeration"/>
+<meta name="MS-HAID" content="wdf.static_enumeration"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.static_enumeration"></a>Static Enumeration</h1>
+</div>
+<p><i>Static enumeration</i> is a driver's ability to detect and report the existence of devices during system initialization, with a limited ability to report subsequent changes to the system's configuration. </p>
+<p>Bus drivers can use static enumeration if the number and type of devices or functional subunits is predetermined and permanent, and does not depend on the configuration of the system on which the driver is running.</p>
+<p>For example, a sound card's driver might act as a bus driver and create separate physical device objects (PDOs) for each of the card's capabilities, such as MIDI, audio, and joystick. </p>
+<h3><a id="static_child_lists"></a><a id="STATIC_CHILD_LISTS"></a>Static Child Lists</h3>
+<p>The framework enables drivers to support static enumeration by providing static child lists. Each static child list represents a list of child devices that are connected to a parent device. The bus driver for the parent device must identify the parent's child devices, add them to the parent device's static child list, and create a PDO for each child device.</p>
+<h3><a id="creating_a_static_child_list"></a><a id="CREATING_A_STATIC_CHILD_LIST"></a>Creating a Static Child List</h3>
+<p>Each time a driver creates a framework device object that represents a functional device object (FDO) for a device, the framework creates an empty, static child list for the device. </p>
+<p>When the framework calls a bus driver's <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function, the callback function must call <a href="wdf.wdfdevicecreate"><b>WdfDeviceCreate</b></a> to create an FDO for the parent device. For more information about creating an FDO, see <a href="creating_device_objects_in_a_function_driver.htm">Creating Device Objects in a Function Driver</a>.</p>
+<p>The driver must then enumerate the parent device's children, create PDOs for the children, and add the children to the child list.</p>
+<p> Optionally, the driver can call <a href="wdf.wdfdevicesetbusinformationforchildren"><b>WdfDeviceSetBusInformationForChildren</b></a> to provide the framework with information about the bus. Doing so is recommended because it makes it easier for child devices and apps to identify the bus.</p>
+<p>To create a PDO for a detected child device, the bus driver must:</p>
+<ol>
+<li>
+<p>Call <a href="wdf.wdfpdoinitallocate"><b>WdfPdoInitAllocate</b></a> to obtain a <a href="wdf.wdfdevice_init"><b>WDFDEVICE_INIT</b></a> structure.</p>
+</li>
+<li>
+<p>Initialize the WDFDEVICE_INIT structure.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfdevicecreate"><b>WdfDeviceCreate</b></a> to create a framework device object that represents a PDO.</p>
+</li>
+</ol>
+<p>For more information about creating a PDO, see <a href="creating_device_objects_in_a_bus_driver.htm">Creating Device Objects in a Bus Driver</a>.</p>
+<p>After calling <b>WdfDeviceCreate</b>, the driver must call <a href="wdf.wdffdoaddstaticchild"><b>WdfFdoAddStaticChild</b></a> to add the child device to the child list.</p>
+<h3><a id="modifying_a_static_child_list"></a><a id="MODIFYING_A_STATIC_CHILD_LIST"></a>Modifying a Static Child List</h3>
+<p>Because drivers should only use static child lists for device configurations that are predetermined and permanent, there is little need for a driver to modify a static child list after creating it. If the driver determines that a child device has become inaccessible, the driver can call <a href="wdf.wdfpdomarkmissing"><b>WdfPdoMarkMissing</b></a>. (If a child device remains accessible but becomes unresponsive and unusable, the driver should set the <b>Failed</b> member of the <a href="wdf.wdf_device_state"><b>WDF_DEVICE_STATE</b></a> structure to <b>WdfTrue</b> and then call <a href="wdf.wdfdevicesetdevicestate"><b>WdfDeviceSetDeviceState</b></a>.)</p>
+<h3><a id="traversing_a_static_child_list"></a><a id="TRAVERSING_A_STATIC_CHILD_LIST"></a>Traversing a Static Child List</h3>
+<p>If you need to retrieve the contents of a static child list, the driver can traverse the list by doing the following:</p>
+<ol>
+<li>
+<p>Calling <a href="wdf.wdffdolockstaticchildlistforiteration"><b>WdfFdoLockStaticChildListForIteration</b></a>.</p>
+</li>
+<li>
+<p>Calling <a href="wdf.wdffdoretrievenextstaticchild"><b>WdfFdoRetrieveNextStaticChild</b></a> as many times as necessary.</p>
+</li>
+<li>
+<p>Calling <a href="wdf.wdffdounlockstaticchildlistfromiteration"><b>WdfFdoUnlockStaticChildListFromIteration</b></a>.</p>
+</li>
+</ol>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Static Enumeration%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

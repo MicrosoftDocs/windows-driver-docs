@@ -1,0 +1,481 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="WDM IRPs and WDF Event Callback Functions"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>WDM IRPs and WDF Event Callback Functions</title>
+
+<meta name="MS-HAID" content="kmdf.wdm_irps_and_kmdf_event_callback_functions"/>
+<meta name="MS-HAID" content="wdf.wdm_irps_and_kmdf_event_callback_functions"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.wdm_irps_and_kmdf_event_callback_functions"></a>WDM IRPs and WDF Event Callback Functions</h1>
+</div>
+<p>Kernel-Mode Driver Framework (KMDF)  and User-Mode Driver Framework (UMDF) support a subset of Windows IRPs. The following table lists the major WDM IRP types and the corresponding framework event callback functions. Unless otherwise specified, the callbacks apply to both KMDF and UMDF.</p>
+<table>
+<tr>
+<th>Major IRP code</th>
+<th>WDF event callback function</th>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_cleanup"><b>IRP_MJ_CLEANUP</b></a></td>
+<td><a href="wdf.evtfilecleanup"><i>EvtFileCleanup</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_close"><b>IRP_MJ_CLOSE</b></a></td>
+<td><a href="wdf.evtfileclose"><i>EvtFileClose</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_create"><b>IRP_MJ_CREATE</b></a></td>
+<td><a href="wdf.evtdevicefilecreate"><i>EvtDeviceFileCreate</i></a> or <a href="wdf.evtiodefault"><i>EvtIoDefault</i></a></td>
+</tr>
+<tr>
+<td>
+       IRP_MJ_CREATE_MAILSLOT</td>
+<td>
+       
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td>
+       IRP_MJ_DEVICE_CHANGE</td>
+<td>
+       No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_device_control"><b>IRP_MJ_DEVICE_CONTROL</b></a></td>
+<td><a href="wdf.evtiodevicecontrol"><i>EvtIoDeviceControl</i></a> or <a href="wdf.evtiodefault"><i>EvtIoDefault</i></a></td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_directory_control"><b>IRP_MJ_DIRECTORY_CONTROL</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_file_system_control"><b>IRP_MJ_FILE_SYSTEM_CONTROL</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_flush_buffers"><b>IRP_MJ_FLUSH_BUFFERS</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_internal_device_control"><b>IRP_MJ_INTERNAL_DEVICE_CONTROL</b></a></td>
+<td><a href="wdf.evtiointernaldevicecontrol"><i>EvtIoInternalDeviceControl</i></a> or <a href="wdf.evtiodefault"><i>EvtIoDefault</i></a></td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_lock_control"><b>IRP_MJ_LOCK_CONTROL</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_pnp"><b>IRP_MJ_PNP</b></a></td>
+<td>Many; see <a href="#pnp">KMDF Callbacks for IRP_MJ_PNP</a>.</td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_power"><b>IRP_MJ_POWER</b></a></td>
+<td>Many; see <a href="#power">KMDF Callbacks for IRP_MJ_POWER</a>.</td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_query_ea"><b>IRP_MJ_QUERY_EA</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_query_information"><b>IRP_MJ_QUERY_INFORMATION</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_query_quota"><b>IRP_MJ_QUERY_QUOTA</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_query_security"><b>IRP_MJ_QUERY_SECURITY</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_query_volume_information"><b>IRP_MJ_QUERY_VOLUME_INFORMATION</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_read"><b>IRP_MJ_READ</b></a></td>
+<td><a href="wdf.evtioread"><i>EvtIoRead</i></a> or <a href="wdf.evtiodefault"><i>EvtIoDefault</i></a></td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_set_ea"><b>IRP_MJ_SET_EA</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_set_information"><b>IRP_MJ_SET_INFORMATION</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_set_quota"><b>IRP_MJ_SET_QUOTA</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_set_security"><b>IRP_MJ_SET_SECURITY</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="ifsk.irp_mj_set_volume_information"><b>IRP_MJ_SET_VOLUME_INFORMATION</b></a></td>
+<td>
+
+No direct support; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_shutdown"><b>IRP_MJ_SHUTDOWN</b></a></td>
+<td>
+<p>For control device objects, implement <a href="wdf.evtdeviceshutdownnotification"><i>EvtDeviceShutdownNotification (KMDF only)</i></a></p>
+<p>For all Plug and Play device objects: Not supported; implement <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess (KMDF only)</i></a>.</p>
+</td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_system_control"><b>IRP_MJ_SYSTEM_CONTROL</b></a></td>
+<td>
+
+Create WDFWMIPROVIDER and WDFWMIINSTANCE objects and implement <b>EvtWmiXxx (KMDF only)</b> callbacks.
+</td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mj_write"><b>IRP_MJ_WRITE</b></a></td>
+<td><a href="wdf.evtiowrite"><i>EvtIoWrite</i></a> or <a href="wdf.evtiodefault"><i>EvtIoDefault</i></a></td>
+</tr>
+</table>
+<p> </p>
+<h2><a id="pnp"></a><a id="PNP"></a>KMDF Callbacks for IRP_MJ_PNP</h2>
+<p>The following table lists, in order of execution, the KMDF callbacks that correspond to the minor IRP codes for <a href="kernel.irp_mj_pnp"><b>IRP_MJ_PNP</b></a>. The arrows indicate whether a WDM FDO handles the IRP as it travels up or down the stack.</p>
+<p>
+<div class="alert"><b>Note</b>   In a KMDF driver, Plug and Play and power management are integrated operations and the driver does not receive the individual minor <a href="kernel.irp_mj_pnp"><b>IRP_MJ_PNP</b></a> or <a href="kernel.irp_mj_power"><b>IRP_MJ_POWER</b></a> requests. Instead, the framework calls a core set of callbacks at power up and a corresponding set at power down, and calls additional callbacks before and after this core set as appropriate for each individual Plug and Play request. For comprehensive diagrams that show the power-up and power-down sequences, see <a href="porting_pnp_and_power_management_functionality.htm">Porting PnP and Power Management Functionality</a>.     </div>
+<div> </div>
+</p>
+<table>
+<tr>
+<th>IRP_MJ_PNP minor code </th>
+<th>KMDF callbacks</th>
+</tr>
+<tr>
+<td>
+       ↓<a href="kernel.irp_mn_cancel_remove_device"><b>IRP_MN_CANCEL_REMOVE_DEVICE</b></a></td>
+<td>
+       None</td>
+</tr>
+<tr>
+<td>
+       ↓<a href="kernel.irp_mn_cancel_stop_device"><b>IRP_MN_CANCEL_STOP_DEVICE</b></a></td>
+<td>
+       None</td>
+</tr>
+<tr>
+<td>
+       ↑<a href="kernel.irp_mn_device_usage_notification"><b>IRP_MN_DEVICE_USAGE_NOTIFICATION</b></a></td>
+<td><a href="wdf.evtdeviceusagenotification"><i>EvtDeviceUsageNotification</i></a></td>
+</tr>
+<tr>
+<td>
+       ↓<a href="kernel.irp_mn_eject"><b>IRP_MN_EJECT</b></a></td>
+<td><a href="wdf.evtdeviceeject"><i>EvtDeviceEject (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td>
+       ↓<a href="kernel.irp_mn_filter_resource_requirements"><b>IRP_MN_FILTER_RESOURCE_REQUIREMENTS</b></a></td>
+<td><a href="wdf.evtdevicefilterremoveresourcerequirements"><i>EvtDeviceFilterRemoveResourceRequirements (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td>
+       ↑<a href="kernel.irp_mn_filter_resource_requirements"><b>IRP_MN_FILTER_RESOURCE_REQUIREMENTS</b></a></td>
+<td><a href="wdf.evtdevicefilteraddresourcerequirements"><i>EvtDeviceFilterAddResourceRequirements (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mn_query_bus_information"><b>IRP_MN_QUERY_BUS_INFORMATION</b></a></td>
+<td>None. The KMDF driver calls <b>WdfDeviceInitXxx</b> methods to set device properties during initialization so that the framework can respond to this query on its own without notifying the driver.
+
+</td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mn_query_capabilities"><b>IRP_MN_QUERY_CAPABILITIES</b></a></td>
+<td>None. The KMDF driver calls <b>WdfDeviceInitXxx</b> methods to set device properties during initialization so that the framework can respond to this query on its own without notifying the driver.
+
+</td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_query_device_relations"><b>IRP_MN_QUERY_DEVICE_RELATIONS</b></a>
+(bus, removal, and ejection relations)
+</td>
+<td><a href="wdf.evtdevicerelationsquery"><i>EvtDeviceRelationsQuery</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mn_query_device_text"><b>IRP_MN_QUERY_DEVICE_TEXT</b></a></td>
+<td>None. The KMDF driver calls <b>WdfDeviceInitXxx</b> methods to set device properties during initialization so that the framework can respond to this query on its own without notifying the driver.
+
+</td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mn_query_id"><b>IRP_MN_QUERY_ID</b></a></td>
+<td>None. The KMDF driver calls <b>WdfDeviceInitXxx</b> methods to set device properties during initialization so that the framework can respond to this query on its own without notifying the driver.
+
+</td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_query_interface"><b>IRP_MN_QUERY_INTERFACE</b></a></td>
+<td><a href="wdf.evtdeviceprocessqueryinterfacerequest"><i>EvtDeviceProcessQueryInterfaceRequest (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mn_query_pnp_device_state"><b>IRP_MN_QUERY_PNP_DEVICE_STATE</b></a></td>
+<td>None. The KMDF driver calls <b>WdfDeviceInitXxx</b> methods to set device properties during initialization so that the framework can respond to this query on its own without notifying the driver.
+
+</td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_query_remove_device"><b>IRP_MN_QUERY_REMOVE_DEVICE</b></a></td>
+<td><a href="wdf.evtdevicequeryremove"><i>EvtDeviceQueryRemove</i></a></td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_query_resource_requirements"><b>IRP_MN_QUERY_RESOURCE_REQUIREMENTS</b></a></td>
+<td><a href="wdf.evtdeviceresourcerequirementsquery"><i>EvtDeviceResourceRequirementsQuery (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_query_resources"><b>IRP_MN_QUERY_RESOURCES</b></a></td>
+<td><a href="wdf.evtdeviceresourcesquery"><i>EvtDeviceResourcesQuery (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_query_stop_device"><b>IRP_MN_QUERY_STOP_DEVICE</b></a></td>
+<td><a href="wdf.evtdevicequerystop"><i>EvtDeviceQueryStop</i></a></td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mn_read_config"><b>IRP_MN_READ_CONFIG</b></a></td>
+<td>None. The KMDF driver calls <b>WdfDeviceInitXxx</b> methods to set device properties during initialization so that the framework can respond to this query on its own without notifying the driver.
+
+</td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_remove_device"><b>IRP_MN_REMOVE_DEVICE</b></a></td>
+<td>
+<p>After <a href="kernel.irp_mn_query_remove_device"><b>IRP_MN_QUERY_REMOVE_DEVICE</b></a>:
+</p>
+<dl>
+<dd><a href="wdf.evtdeviceselfmanagediosuspend"><i>EvtDeviceSelfManagedIoSuspend</i></a></dd>
+<dd><a href="wdf.evtiostop"><i>EvtIoStop</i></a> (<b>WdfRequestStopActionSuspend</b> flag)</dd>
+<dd><a href="wdf.evtdmaenablerselfmanagediostop"><i>EvtDmaEnablerSelfManagedIoStop (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerdisable"><i>EvtDmaEnablerDisable (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerflush"><i>EvtDmaEnablerFlush (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdeviced0exitpreinterruptsdisabled"><i>EvtDeviceD0ExitPreInterruptsDisabled</i></a></dd>
+<dd><a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a></dd>
+<dd><a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a> (<b>WdfPowerDeviceD3Final</b> state)</dd>
+<dd><a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a></dd>
+<dd><a href="wdf.evtiostop"><i>EvtIoStop</i></a> (<b>WdfRequestStopActionPurge</b> flag) for power-managed queues</dd>
+<dd><a href="wdf.evtdeviceselfmanagedioflush"><i>EvtDeviceSelfManagedIoFlush</i></a></dd>
+<dd><a href="wdf.evtiostop"><i>EvtIoStop</i></a> (<b>WdfRequestStopActionPurge</b> flag) for non-power-managed queues</dd>
+<dd><a href="wdf.evtdeviceselfmanagediocleanup"><i>EvtDeviceSelfManagedIoCleanup</i></a></dd>
+<dd><a href="wdf.evtcleanupcallback"><i>EvtCleanupCallback</i></a> for WDFDEVICE</dd>
+<dd><a href="wdf.evtdestroycallback"><i>EvtDestroyCallback</i></a> for WDFDEVICE</dd>
+</dl>
+<p>After <a href="kernel.irp_mn_surprise_removal"><b>IRP_MN_SURPRISE_REMOVAL</b></a>:</p>
+<dl>
+<dd><a href="wdf.evtiostop"><i>EvtIoStop</i></a> (<b>WdfRequestStopActionPurge</b> flag) for non-power-managed queues
+</dd>
+<dd><a href="wdf.evtdeviceselfmanagediocleanup"><i>EvtDeviceSelfManagedIoCleanup</i></a></dd>
+<dd><a href="wdf.evtcleanupcallback"><i>EvtCleanupCallback</i></a> for WDFDEVICE</dd>
+<dd><a href="wdf.evtdestroycallback"><i>EvtDestroyCallback</i></a> for WDFDEVICE
+</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_set_lock"><b>IRP_MN_SET_LOCK</b></a></td>
+<td><a href="wdf.evtdevicesetlock"><i>EvtDeviceSetLock (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td>↑<a href="kernel.irp_mn_start_device"><b>IRP_MN_START_DEVICE</b></a></td>
+<td>
+<p>After enumeration:</p>
+<dl>
+<dd><a href="wdf.evtdeviceremoveaddedresources"><i>EvtDeviceRemoveAddedResources (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a></dd>
+<dd><a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a></dd>
+<dd><a href="wdf.evtinterruptenable"><i>EvtInterruptEnable</i></a></dd>
+<dd><a href="wdf.evtdeviced0entrypostinterruptsenabled"><i>EvtDeviceD0EntryPostInterruptsEnabled</i></a></dd>
+<dd><a href="wdf.evtdmaenablerfill"><i>EvtDmaEnablerFill (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerenable"><i>EvtDmaEnablerEnable (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerselfmanagediostart"><i>EvtDmaEnablerSelfManagedIoStart (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdeviceselfmanagedioinit"><i>EvtDeviceSelfManagedIoInit</i></a></dd>
+</dl>
+<p>After <a href="kernel.irp_mn_stop_device"><b>IRP_MN_STOP_DEVICE</b></a>:</p>
+<dl>
+<dd><a href="wdf.evtdeviceremoveaddedresources"><i>EvtDeviceRemoveAddedResources (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a></dd>
+<dd><a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a></dd>
+<dd><a href="wdf.evtinterruptenable"><i>EvtInterruptEnable</i></a></dd>
+<dd><a href="wdf.evtdeviced0entrypostinterruptsenabled"><i>EvtDeviceD0EntryPostInterruptsEnabled</i></a></dd>
+<dd><a href="wdf.evtdmaenablerfill"><i>EvtDmaEnablerFill (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerenable"><i>EvtDmaEnablerEnable (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerselfmanagediostart"><i>EvtDmaEnablerSelfManagedIoStart (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtioresume"><i>EvtIoResume</i></a></dd>
+<dd><a href="wdf.evtdeviceselfmanagediorestart"><i>EvtDeviceSelfManagedIoRestart</i></a></dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_stop_device"><b>IRP_MN_STOP_DEVICE</b></a></td>
+<td>
+<dl>
+<dd><a href="wdf.evtdeviceselfmanagediosuspend"><i>EvtDeviceSelfManagedIoSuspend</i></a></dd>
+<dd><a href="wdf.evtiostop"><i>EvtIoStop</i></a> (<b>WdfRequestStopActionSuspend</b> flag)</dd>
+<dd><a href="wdf.evtdmaenablerselfmanagediostop"><i>EvtDmaEnablerSelfManagedIoStop (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerdisable"><i>EvtDmaEnablerDisable (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerflush"><i>EvtDmaEnablerFlush (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdeviced0exitpreinterruptsdisabled"><i>EvtDeviceD0ExitPreInterruptsDisabled</i></a></dd>
+<dd><a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a></dd>
+<dd><a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a> (<b>WdfPowerDeviceD3Final</b> state)</dd>
+<dd><a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a></dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td>↓<a href="kernel.irp_mn_surprise_removal"><b>IRP_MN_SURPRISE_REMOVAL</b></a></td>
+<td>
+<dl>
+<dd><a href="wdf.evtdevicesurpriseremoval"><i>EvtDeviceSurpriseRemoval</i></a></dd>
+<dd><a href="wdf.evtdeviceselfmanagediosuspend"><i>EvtDeviceSelfManagedIoSuspend</i></a></dd>
+<dd><a href="wdf.evtiostop"><i>EvtIoStop</i></a> (<b>WdfRequestStopActionSuspend</b> flag)</dd>
+<dd><a href="wdf.evtdmaenablerselfmanagediostop"><i>EvtDmaEnablerSelfManagedIoStop (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerdisable"><i>EvtDmaEnablerDisable (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerflush"><i>EvtDmaEnablerFlush (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdeviced0exitpreinterruptsdisabled"><i>EvtDeviceD0ExitPreInterruptsDisabled</i></a></dd>
+<dd><a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a></dd>
+<dd><a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a> (<b>WdfPowerDeviceD3Final</b> state)</dd>
+<dd><a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a></dd>
+<dd><a href="wdf.evtiostop"><i>EvtIoStop</i></a> (<b>WdfRequestStopActionPurge</b> flag) for power-managed queues</dd>
+<dd><a href="wdf.evtdeviceselfmanagedioflush"><i>EvtDeviceSelfManagedIoFlush</i></a></dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mn_write_config"><b>IRP_MN_WRITE_CONFIG</b></a></td>
+<td>None. The KMDF driver calls <b>WdfDeviceInitXxx</b> methods to set device properties during initialization so that the framework can respond to this query on its own without notifying the driver.
+
+</td>
+</tr>
+</table>
+<p> </p>
+<h2><a id="power"></a><a id="POWER"></a>KMDF Callbacks for IRP_MJ_POWER</h2>
+<p>The following table lists, in order of execution, the KMDF callbacks that correspond to the minor IRP codes for <a href="kernel.irp_mj_power"><b>IRP_MJ_POWER</b></a>. The arrows indicate whether a WDM FDO handles the IRP as it travels up or down the stack.</p>
+<p>
+<div class="alert"><b>Note</b>  
+Note: In a KMDF driver, Plug and Play and power management are integrated operations and the driver does not receive the individual minor <a href="kernel.irp_mj_pnp"><b>IRP_MJ_PNP</b></a> or <a href="kernel.irp_mj_power"><b>IRP_MJ_POWER</b></a> requests. Instead, the framework calls a core set of callbacks at power up and a corresponding set at power down, and calls additional callbacks before and after this core set as appropriate for each individual Plug and Play request. For comprehensive diagrams that show the power-up and power-down sequences, see <a href="porting_pnp_and_power_management_functionality.htm">Porting PnP and Power Management Functionality</a>.</div>
+<div> </div>
+</p>
+<table>
+<tr>
+<th>IRP_MJ_POWER minor code</th>
+<th>Framework callbacks</th>
+</tr>
+<tr>
+<td>
+       ↓<a href="kernel.irp_mn_set_power"><b>IRP_MN_SET_POWER</b></a> for D1, D2, or D3 (power down)</td>
+<td>
+<dl>
+<dd><a href="wdf.evtdeviceselfmanagediosuspend"><i>EvtDeviceSelfManagedIoSuspend</i></a></dd>
+<dd><a href="wdf.evtiostop"><i>EvtIoStop</i></a> (<b>WdfRequestStopActionSuspend</b> flag)
+</dd>
+<dd><a href="wdf.evtdevicearmwakefroms0"><i>EvtDeviceArmWakeFromS0</i></a> or <a href="wdf.evtdevicearmwakefromsx"><i>EvtDeviceArmWakeFromSx</i></a></dd>
+<dd><a href="wdf.evtdmaenablerselfmanagediostop"><i>EvtDmaEnablerSelfManagedIoStop (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerdisable"><i>EvtDmaEnablerDisable (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerflush"><i>EvtDmaEnablerFlush (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdeviced0exitpreinterruptsdisabled"><i>EvtDeviceD0ExitPreInterruptsDisabled</i></a></dd>
+<dd><a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a></dd>
+<dd><a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a></dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+       ↑<a href="kernel.irp_mn_set_power"><b>IRP_MN_SET_POWER</b></a> for D0 
+(power up)
+</td>
+<td>
+<dl>
+<dd><a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a></dd>
+<dd><a href="wdf.evtinterruptenable"><i>EvtInterruptEnable</i></a></dd>
+<dd><a href="wdf.evtdeviced0entrypostinterruptsenabled"><i>EvtDeviceD0EntryPostInterruptsEnabled</i></a></dd>
+<dd><a href="wdf.evtdmaenablerfill"><i>EvtDmaEnablerFill (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerenable"><i>EvtDmaEnablerEnable (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtdmaenablerselfmanagediostart"><i>EvtDmaEnablerSelfManagedIoStart (KMDF only)</i></a></dd>
+<dd><a href="wdf.evtioresume"><i>EvtIoResume</i></a></dd>
+<dd><a href="wdf.evtdeviceselfmanagediorestart"><i>EvtDeviceSelfManagedIoRestart</i></a></dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td>
+       ↓<a href="kernel.irp_mn_set_power"><b>IRP_MN_SET_POWER</b></a> for Sx</td>
+<td>
+       
+
+
+None</td>
+</tr>
+<tr>
+<td>
+       ↑<a href="kernel.irp_mn_set_power"><b>IRP_MN_SET_POWER</b></a> for Sx</td>
+<td>
+       
+None</td>
+</tr>
+<tr>
+<td><a href="kernel.irp_mn_power_sequence"><b>IRP_MN_POWER_SEQUENCE</b></a></td>
+<td>
+       None</td>
+</tr>
+<tr>
+<td>
+       ↓<a href="kernel.irp_mn_wait_wake"><b>IRP_MN_WAIT_WAKE</b></a></td>
+<td><a href="wdf.evtdeviceenablewakeatbus"><i>EvtDeviceEnableWakeAtBus (KMDF only)</i></a></td>
+</tr>
+<tr>
+<td>↑<a href="kernel.irp_mn_wait_wake"><b>IRP_MN_WAIT_WAKE</b></a></td>
+<td><a href="wdf.evtdevicedisablewakeatbus"><i>EvtDeviceDisableWakeAtBus (KMDF only)</i></a></td>
+</tr>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDM IRPs and WDF Event Callback Functions%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

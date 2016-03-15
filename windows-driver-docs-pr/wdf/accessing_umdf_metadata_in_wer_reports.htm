@@ -1,0 +1,374 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic describes the location and contents of the Windows Error Reporting (WER) reports that the operating system creates when a User-Mode Driver Framework (UMDF) crashes.The system generates WER reports for three different UMDF event types: WUDFHostProblem, WUDFUnhandledException, and WUDFVerifierFailure.When the reflector terminates the driver host process, sometimes due to the host timeout threshold being exceeded, the system generates a file called Report.wer, which contains the WER information. Specifically, Report.wer contains UMDF metadata that may be helpful if you are trying to debug a UMDF driver with no access to a live debugging target."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Accessing UMDF Metadata in WER Reports</title>
+
+<meta name="MS-HAID" content="wdf.accessing_umdf_metadata_in_wer_reports"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.accessing_umdf_metadata_in_wer_reports"></a>Accessing UMDF Metadata in WER Reports</h1>
+</div>
+<div class="nav_sidebar" style="background: #ebeff0; border: 1px #e3e3e3 solid; padding: 5px; float: right; margin-left: 10px; width: 290px;"><span class="sidebar_heading" style="font-weight: bold;">In this article</span><div class="sidebar_toc">
+<p>
+<ul>
+<li><a href="#wudfhostproblem_sample_report">WUDFHostProblem sample report</a></li>
+<li><a href="#wudfhostproblem_fields">WUDFHostProblem fields</a></li>
+<li><a href="#wudfunhandledexception_fields">WUDFUnhandledException fields</a></li>
+<li><a href="#wudfverifierfailure_fields">WUDFVerifierFailure fields</a></li>
+</ul>
+</p>
+</div>
+</div>
+<p>
+<p>This topic describes the location and contents of the Windows Error Reporting (WER) reports that the operating system creates when a User-Mode Driver Framework (UMDF) crashes.</p>
+<p>The system generates WER reports for three different UMDF event types: <b>WUDFHostProblem</b>, <b>WUDFUnhandledException</b>, and <b>WUDFVerifierFailure</b>.</p>
+<p>When the reflector terminates the driver host process, sometimes due to the <a href="how_umdf_enforces_time_outs.htm">host timeout</a> threshold being exceeded,  the system generates a file called Report.wer, which contains the WER information.  Specifically, Report.wer contains UMDF metadata that may be helpful if you are trying to debug a UMDF driver with no access to a live debugging target.</p>
+</p>
+<p></p>
+<p>In Windows 8.1, you can find the Report.wer file in the C:\ProgramData\Microsoft\Windows\WER\ReportQueue directory. In this directory, open the most recent NonCritical_HostProblem_* folder and locate Report.wer.</p>
+<p>You can also access WER reports for UMDF using the following PowerShell command:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>get-winevent -providername "Windows Error Reporting" | where-object {$_.Message -like "*wudf*"} | format-list | out-file UmdfReports.txt</pre>
+</td>
+</tr>
+</table></span></div>
+<h2><a id="WUDFHostProblem_sample_report"></a><a id="wudfhostproblem_sample_report"></a><a id="WUDFHOSTPROBLEM_SAMPLE_REPORT"></a>WUDFHostProblem sample report</h2>
+<p>The following is a sample UMDF WER report of type <b>WUDFHostProblem</b>. It was obtained from the ReportQueue directory described above. If you use PowerShell to retrieve the reports, the fields may be labeled P0, P1, P2 instead of Sig[0], Sig[1], Sig[2].  Otherwise, the fields are the same and contain the same possible values. This sample was generated from one of the WDK samples that use the OSR USB-FX2 hardware reference board.</p>
+<pre class="syntax" xml:space="preserve"><code>Sig[0].Name=EventClass
+Sig[0].Value=HostProblem
+Sig[1].Name=Problem
+Sig[1].Value=HostTimeout
+Sig[2].Name=DetectedBy
+Sig[2].Value=2
+Sig[3].Name=UMDFVersion
+Sig[3].Value=6.3.9600
+Sig[4].Name=ExitCode
+Sig[4].Value=103
+Sig[5].Name=Operation
+Sig[5].Value=3
+Sig[6].Name=Message
+Sig[6].Value=11b00
+Sig[7].Name=Status
+Sig[7].Value=ffffffff
+Sig[8].Name=HardwareId
+Sig[8].Value=USB\VID_0547&amp;PID_1002&amp;REV_0000</code></pre>
+<h2><a id="WUDFHostProblem_fields"></a><a id="wudfhostproblem_fields"></a><a id="WUDFHOSTPROBLEM_FIELDS"></a>WUDFHostProblem fields</h2>
+<p>The following table describes the possible values for the fields in a  report of type <b>WUDFHostProblem.</b></p>
+<table>
+<tr>
+<th> Index</th>
+<th> Name</th>
+<th>Values</th>
+</tr>
+<tr>
+<td>0</td>
+<td>EventClass</td>
+<td>
+<p>The framework sets this value to <b>HostProblem</b>.</p>
+</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Problem</td>
+<td>
+<p>This field contains one of the following values:</p>
+<ul>
+<li>HostFailure</li>
+<li>SendFailure</li>
+<li>HostTimeout</li>
+<li>BadRequest</li>
+<li>BadReply</li>
+<li>HostFailure</li>
+<li>Other</li>
+<li>HostDisconnect</li>
+<li>LeakedHandle</li>
+<li>InvalidInterruptState</li>
+<li>IsrTimedOut</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>DetectedBy</td>
+<td>
+<p>Contains one of the following enumeration values:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfComponentInvalid = 0,
+WdfComponentPlatform,
+WdfComponentReflector,
+WdfComponentDriverManager,
+WdfComponentHost,
+WdfComponentFramework,
+WdfComponentTest,
+WdfComponentMax</pre>
+</td>
+</tr>
+</table></span></div>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>UMDFVersion</td>
+<td>
+<p>Specifies the version of the UMDF libraries currently in use. Note that this may be a later version than came with the operating system if the user took action to update the framework libraries.</p>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ExitCode</td>
+<td>
+<p>Contains one of the following enumeration values:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    WdfHostExit_StillActive = 0x103,
+    WdfHostExit_CodeUnknown = 0x70000000,
+    WdfHostExit_InternalDriverStopReported,
+    WdfHostExit_InternalDriverStopReportFailed,
+    WdfHostExit_ExternalTermination
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p><b>WdfHostExit_StillActive</b>  indicates that the host process was running at the time the framework created the error report.</p>
+</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Operation</td>
+<td>
+<p>Contains one of the following enumeration values:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>    WudfOperation_Invalid,
+    WudfOperation_Init,
+    WudfOperation_HostShutdown,
+    WudfOperation_Pnp,
+    WudfOperation_Cleanup,
+    WudfOperation_Close,
+    WudfOperation_Cancel,
+    WudfOperation_IO,
+    WudfOperation_Interrupt,
+    WudfOperation_PoFx,
+    WudfOperation_Other,
+    WudfOperation_Max
+</pre>
+</td>
+</tr>
+</table></span></div>
+</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Message</td>
+<td>
+<p>The first digit is of this field is always 1, which indicates that an IRP is involved in the operation. Subsequent pairs of digits indicate the <b>MajorFunction</b> and <b>MinorFunction</b> of the IRP, respectively.</p>
+<p> In the sample report above, for example, this field contains the value 11b00.  This means that the operation was an IRP  that the reflector handled on behalf of the driver host process with a major function value of IRP_MJ_PNP and minor function value of IRP_MN_START_DEVICE (1 = IRP message, 1b = IRP_MJ_PNP, 00 = IRP_MN_START_DEVICE).</p>
+</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Status</td>
+<td>
+<p>The framework always sets to this value to 0xffffffff.</p>
+</td>
+</tr>
+<tr>
+<td>8</td>
+<td>HardwareId</td>
+<td>
+<p>This field contains the hardware ID of the device associated with the driver that had a problem.</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<h2><a id="WUDFUnhandledException_fields"></a><a id="wudfunhandledexception_fields"></a><a id="WUDFUNHANDLEDEXCEPTION_FIELDS"></a>WUDFUnhandledException fields</h2>
+<p>The following table describes the possible values for the fields in a  report of type <b>WUDFUnhandledException</b>.</p>
+<table>
+<tr>
+<th> Index</th>
+<th> Name</th>
+<th>Values</th>
+</tr>
+<tr>
+<td>0</td>
+<td>EventClass</td>
+<td>
+<p>The framework sets this value to <b>UnhandledException</b>.</p>
+</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Component</td>
+<td>
+<p>This field contains one of the following values:</p>
+<ul>
+<li>Invalid</li>
+<li>Platform</li>
+<li>Reflector</li>
+<li>DriverManager</li>
+<li>Host</li>
+<li>Framework</li>
+<li>Test</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ExceptionCode</td>
+<td>
+<p>The reason the exception occurred. For a list of  values, see <a href="base.exception_record_str"><b>EXCEPTION_RECORD</b></a>.</p>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>RelativeFaultingAddress</td>
+<td>
+<p>The address where the exception occurred.</p>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>CrashingModuleName</td>
+<td>Name of the driver that raised the exception.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>CrashingFileVersion</td>
+<td>Framework version of the driver.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>LastDriverName</td>
+<td>Name of the first non-UMDF driver component in the driver stack.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>LastDriverVersion</td>
+<td>Version number of the first non-UMDF driver component in the driver stack.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>UMDFVersion</td>
+<td>
+<p>Specifies the version of the UMDF libraries currently in use. Note that this may be a later version than came with the operating system if the user took action to update the framework libraries.</p>
+</td>
+</tr>
+<tr>
+<td>9</td>
+<td>HardwareId</td>
+<td>
+<p>Starting in Windows 8, the hardware ID is provided in a separate file.  In this case, the framework sets this value to <b>Dumped Separately</b>.</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<h2><a id="WUDFVerifierFailure_fields"></a><a id="wudfverifierfailure_fields"></a><a id="WUDFVERIFIERFAILURE_FIELDS"></a>WUDFVerifierFailure fields</h2>
+<p>The following table describes the possible values for the fields in a  report of type <b>WUDFVerifierFailure</b>.</p>
+<table>
+<tr>
+<th> Index</th>
+<th> Name</th>
+<th>Values</th>
+</tr>
+<tr>
+<td>0</td>
+<td>EventClass</td>
+<td>
+<p>The framework sets this value to <b>VerifierFailure</b>.</p>
+</td>
+</tr>
+<tr>
+<td>1</td>
+<td>FoundBy</td>
+<td>
+<p>The framework sets this value to <b>Framework</b>.</p>
+</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Category</td>
+<td>
+<p>This field contains one of the following values:</p>
+<ul>
+<li>Internal</li>
+<li>Driver</li>
+<li>Caller</li>
+<li>External</li>
+<li>UnhandledException</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ErrorNumber</td>
+<td>Internal use only.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Location</td>
+<td>Internal use only.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Driver</td>
+<td>The name of the driver module that failed.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CallerAddress</td>
+<td>The address of the routine that initiated generation of the report.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>UMDFVersion</td>
+<td>
+<p>Specifies the version of the UMDF libraries currently in use. Note that this may be a later version than came with the operating system if the user took action to update the framework libraries.</p>
+</td>
+</tr>
+<tr>
+<td>8</td>
+<td>HardwareId</td>
+<td>
+<p>Starting in Windows 8, the hardware ID is provided in a separate file.   In this case, the framework sets this value to <b>Dumped Separately</b>.</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Accessing UMDF Metadata in WER Reports%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

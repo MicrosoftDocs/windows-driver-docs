@@ -1,0 +1,79 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Introduction to Hardware Resources"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Introduction to Hardware Resources</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_751c2ffd-754d-4137-8ccc-7a082548984a.xml"/>
+<meta name="MS-HAID" content="kmdf.introduction_to_hardware_resources"/>
+<meta name="MS-HAID" content="wdf.introduction_to_hardware_resources"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.introduction_to_hardware_resources"></a>Introduction to Hardware Resources</h1>
+</div>
+<p>After a user plugs in a PnP device, the driver that <a href="enumerating_the_devices_on_a_bus.htm">enumerates the device</a> typically creates one or more <a href="kernel.hardware_resources#ddk_logical_configurations_kg#ddk_logical_configurations_kg">logical configurations</a>, which are combinations of hardware resources that the device can use. These configurations include the following:</p>
+<ul>
+<li>
+<p>A <i>boot configuration</i> that lists the hardware resources that the device requires when the system starts. (For PnP devices, this information is supplied by the BIOS.)</p>
+</li>
+<li>
+<p>Additional  configurations in which the device can operate. The driver groups these additional configurations in a <a href="kernel.hardware_resources">resource requirements list</a>. The PnP manager will eventually select resources from this list to assign to the device.</p>
+</li>
+</ul>
+<p>After the driver creates the logical configurations, it sends them  to the framework, and the framework sends them to the PnP manager.</p>
+<p>Next, the PnP manager determines which drivers the device requires and loads them if they are not already loaded. The PnP manager sends the device's hardware requirements list to the device's drivers for review. Function and filter drivers can modify this list and send it back to the PnP manager.</p>
+<p>The PnP manager examines the modified hardware requirements list and determines which of the specified resources are actually available on the system. If the device requires resources that the PnP manager had previously assigned to another device, the PnP manager might attempt to <a href="handling_requests_to_stop_a_device.htm#redistributing_resources">redistribute resources</a> among the system's devices. </p>
+<p>Next, the PnP manager creates a <a href="kernel.hardware_resources">resource list</a>, which is a list of resources that the PnP manager intends to assign to the device. The PnP manager sends this list to the device's drivers for review. At this point, the function and filter drivers can remove resources from the list but they cannot add resources to it. </p>
+<p>Finally, the PnP manager assigns resources to the device. The framework passes the resource list to the device's function and filter drivers, and the device's function driver performs any initialization that is necessary so that the device and driver can access the resources.</p>
+<p>The following steps describe the process in more detail:</p>
+<ol>
+<li>
+<p><a href="a_user_plugs_in_a_device.htm">A user plugs in a device</a>.</p>
+</li>
+<li>
+<p>A bus driver detects the device and <a href="enumerating_the_devices_on_a_bus.htm">enumerates</a> it.</p>
+</li>
+<li>
+<p>The framework calls the bus driver's <a href="wdf.evtdeviceresourcesquery"><i>EvtDeviceResourcesQuery</i></a> callback function, which  <a href="creating_a_resource_list_for_a_boot_configuration.htm">creates a resource list</a> that describes the device's boot configuration.</p>
+</li>
+<li>
+<p>The framework calls the bus driver's <a href="wdf.evtdeviceresourcerequirementsquery"><i>EvtDeviceResourceRequirementsQuery</i></a> callback function, which <a href="creating_a_resource_requirements_list.htm">creates a resource requirements list</a> for the device.</p>
+</li>
+<li>
+<p>The PnP manager determines which drivers the device requires and loads them, if they are not already loaded, to create a driver stack for the device.</p>
+</li>
+<li>
+<p>The PnP manager sends the device's resource requirements list to the driver stack for review. As the list travels down the driver stack, the framework calls each function and filter driver's <a href="wdf.evtdevicefilterremoveresourcerequirements"><i>EvtDeviceFilterRemoveResourceRequirements</i></a> callback function. As the list travels back up the stack, the framework calls each function and filter driver's <a href="wdf.evtdevicefilteraddresourcerequirements"><i>EvtDeviceFilterAddResourceRequirements</i></a> callback function. Both of these callback functions can <a href="modifying_a_resource_requirements_list.htm">modify the resource requirements list</a>.</p>
+</li>
+<li>
+<p>The PnP manager creates a resource list for the device and sends it to the driver stack for review. The framework calls each function and filter driver's <a href="wdf.evtdeviceremoveaddedresources"><i>EvtDeviceRemoveAddedResources</i></a> callback function, which <a href="modifying_a_resource_list.htm">removes resources</a> that the driver's <i>EvtDeviceFilterAddResourceRequirements </i>callback function added so the bus driver will not attempt to use them. </p>
+</li>
+<li>
+<p>The framework receives the final resource list from the PnP manager and stores it.</p>
+</li>
+<li>
+<p>If a driver calls <a href="wdf.wdfinterruptcreate"><b>WdfInterruptCreate</b></a> to create interrupt objects, the framework finds interrupt resources in the resource list and assigns them to the interrupt objects.</p>
+</li>
+<li>
+<p>After the device has entered an uninitialized D0 state, the framework calls each driver's <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback function, passing <a href="raw_and_translated_resources.htm">raw and translated</a> versions of the device's resource list as an input argument. The driver can save the resource list, which is valid until the framework calls the driver's <a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a> callback function.</p>
+</li>
+</ol>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Introduction to Hardware Resources%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

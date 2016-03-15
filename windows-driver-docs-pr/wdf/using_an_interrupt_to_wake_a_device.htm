@@ -1,0 +1,76 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="When a device transitions to a low-power state, the framework disconnects (or reports as inactive) interrupts that are used for I/O handling."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using an Interrupt to Wake a Device</title>
+
+<meta name="MS-HAID" content="wdf.using_an_interrupt_to_wake_a_device"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_an_interrupt_to_wake_a_device"></a>Using an Interrupt to Wake a Device</h1>
+</div>
+<p>When a device transitions to a low-power state, the framework disconnects (or reports as inactive) interrupts that are used for I/O handling. Starting with KMDF 1.13 and UMDF 2.0 running on Windows 8.1, a WDF driver can create a framework interrupt object that remains active when the device transitions to a low-power state, and can then be used to awaken the device and restore it to its fully on D0 state.</p>
+<p></p>
+<p>If you are developing a WDF driver for a System on a Chip (SoC)   platform, you can use such an interrupt to awaken a device that does not provide a traditional wake signaling mechanism. To use this functionality, the device must have hardware support for wake interrupts, as exposed through ACPI. The driver that creates the interrupt must be the device's power policy owner.</p>
+<p>When the device transitions to a low-power state, the framework does not disconnect an interrupt that has been identified as wake-capable. When the device interrupts, the framework calls the driver's <a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a> and <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback routines at IRQL = PASSIVE_LEVEL.</p>
+<p>If your driver already creates a <a href="supporting_passive_level_interrupts.htm">passive-level interrupt object</a> for I/O handling, we recommend sharing that same interrupt object for wake functionality.  In this scenario, the driver's <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback routine implements conditional logic to perform handling for I/O-related interrupts, as well as wake handling.</p>
+<p>However, if your driver uses an interrupt that requires handling at the device's IRQL (DIRQL), we recommend creating an additional framework interrupt object to provide wake functionality.</p>
+<p>Follow these steps to create a wake-capable interrupt object in your KMDF or UMDF driver:</p>
+<ol>
+<li>Call <a href="wdf.wdfdeviceassigns0idlesettings"><b>WdfDeviceAssignS0IdleSettings</b></a>, typically from <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a>, specifying <b>IdleCanWakeFromS0</b> in the <i>IdleCaps</i> parameter.</li>
+<li>Optionally, call <a href="wdf.wdfdeviceinitsetpowerpolicyeventcallbacks"><b>WdfDeviceInitSetPowerPolicyEventCallbacks</b></a> to register event callback functions described in <a href="supporting_system_wake_up.htm">Supporting System Wake-Up</a>.</li>
+<li>Call <a href="wdf.wdf_interrupt_config_init"><b>WDF_INTERRUPT_CONFIG_INIT</b></a>  to initialize a <a href="wdf.wdf_interrupt_config"><b>WDF_INTERRUPT_CONFIG</b></a> structure.  Provide an <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function, to be called at passive level.  In the configuration structure, set <b>PassiveHandling</b> and <b>CanWakeDevice</b> to <b>TRUE</b>. Then call <a href="wdf.wdfinterruptcreate"><b>WdfInterruptCreate</b></a> from  your driver's <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback function to create the framework interrupt object.</li>
+<li>Call <a href="wdf.wdfdeviceassignsxwakesettings"><b>WdfDeviceAssignSxWakeSettings</b></a> to configure the device to wake the system from a low-power state.<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&amp;wakeSettings);
+wakeSettings.DxState = PowerDeviceD3;
+wakeSettings.UserControlOfWakeSettings = WakeDoNotAllowUserControl;
+wakeSettings.Enabled = WdfTrue;
+
+status = WdfDeviceAssignSxWakeSettings(Device, &amp;wakeSettings);
+if (!NT_SUCCESS(status)) {
+    Trace(TRACE_LEVEL_ERROR,"WdfDeviceAssignSxWakeSettings failed %x\n", status);
+    return status;
+}
+</pre>
+</td>
+</tr>
+</table></span></div>
+</li>
+<li>When the device transitions to a low-power state, the framework does not call <a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a>   for the wake-capable interrupt. The framework does call <a href="wdf.evtdevicearmwakefroms0"><i>EvtDeviceArmWakeFromS0</i></a> if the driver has provided one.</li>
+<li>When the device signals the wake interrupt, the framework calls the driver's <a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a> callback routine.</li>
+<li>If the driver's <a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a> callback returns  success, the framework calls the driver's <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback at passive level.  Before the interrupt handler returns, it must silence the interrupt in the interrupt controller. If the driver returns a failure code from <i>EvtDeviceD0Entry</i>, the framework disconnects the interrupt and calls the driver's <a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a> callback, if the driver has provided one.</li>
+<li>The framework calls the following wake event callback routines, if the driver has provided any:<ul>
+<li><a href="wdf.evtdevicedisarmwakefroms0"><i>EvtDeviceDisarmWakeFromS0</i></a></li>
+<li><a href="wdf.evtdevicedisarmwakefromsx"><i>EvtDeviceDisarmWakeFromSx</i></a></li>
+<li><a href="wdf.evtdevicewakefroms0triggered"><i>EvtDeviceWakeFromS0Triggered</i></a></li>
+<li><a href="wdf.evtdevicewakefromsxtriggered"><i>EvtDeviceWakeFromSxTriggered</i></a></li>
+</ul>
+</li>
+<li>The framework continues with the normal power-up callback sequence, as described in <a href="power-up_sequence_for_a_function_or_filter_driver.htm">Power-Up Sequence for a Function or Filter Driver</a>.</li>
+</ol>
+<p>You can use the <a href="debugger._wdfkd_wdfinterrupt"><b>!wdfkd.wdfinterrupt</b></a> debugger extension to show whether a specific interrupt has been configured to be  wake-capable.</p>
+<p>Wake interrupt functionality cannot be used in conjunction with USB selective suspend.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using an Interrupt to Wake a Device%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

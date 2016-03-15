@@ -1,0 +1,46 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Supporting Multiple-Component Devices with Single or Multiple Functional Power States"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Supporting Multiple-Component Devices with Single or Multiple Functional Power States</title>
+
+<meta name="MS-HAID" content="kmdf.supporting_multiple_functional_power_states_for_multiple-component_devices"/>
+<meta name="MS-HAID" content="wdf.supporting_multiple_functional_power_states_for_multiple-component_devices"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.supporting_multiple_functional_power_states_for_multiple-component_devices"></a>Supporting Multiple-Component Devices with Single or Multiple Functional Power States</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<p>A KMDF driver for a multiple-component device can define one or more functional power  states for each component.</p>
+<p>In this case, the driver registers directly with the power management framework (PoFx). To specify that WDF should not register with PoFx, the driver calls <a href="wdf.wdfdeviceassigns0idlesettings"><b>WdfDeviceAssignS0IdleSettings</b></a> with the <b>IdleTimeoutType</b> member of the <a href="wdf.wdf_device_power_policy_idle_settings"><b>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b></a> structure set to <b>DriverManagedIdleTimeout</b>. Typically, the driver calls this method from its <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function.</p>
+<p>Next, the driver must register with PoFx. To do so, the driver calls <a href="kernel.pofxregisterdevice"><b>PoFxRegisterDevice</b></a> and then  <a href="kernel.pofxstartdevicepowermanagement"><b>PoFxStartDevicePowerManagement</b></a>. Your driver must register with PoFx only once, when the device is first started.  One way to do this is by calling these routines from a driver-supplied <a href="wdf.evtdeviceselfmanagedioinit"><i>EvtDeviceSelfManagedIoInit</i></a> function. <i>EvtDeviceSelfManagedIoInit</i> is called only the first time the device is started.</p>
+<p>When the device is removed, the driver must call <a href="kernel.pofxunregisterdevice"><b>PoFxUnregisterDevice</b></a> to unregister the device from PoFx. To unregister only once, we recommend the driver call this routine from a  driver-supplied <a href="wdf.evtdeviceselfmanagedioflush"><i>EvtDeviceSelfManagedIoFlush</i></a> function.  <i>EvtDeviceSelfManagedIoFlush</i>  is called only when the device is being removed. By unregistering in <i>EvtDeviceSelfManagedIoFlush</i>, the driver retains power registration during sleep and rebalance transitions and does not have to maintain power references for I/O requests that remain pending during these transitions.</p>
+<p>When the driver calls <a href="wdf.evtdevicewdmpostpofxregisterdevice"><i>PoFxRegisterDevice</i></a>, it receives a power registration handle (POHANDLE) that it can use to interact directly with PoFx, as described in the following topics:</p>
+<p>
+<ul>
+<li><a href="coordinating_i_o_requests_with_component_power_state.htm">Coordinating I/O Requests with Component Power State</a></li>
+<li><a href="reporting_device_powered_on.htm">Reporting Device Powered On When System Returns to S0</a></li>
+<li><a href="supporting_idle_power-down_on_multiple-component_devices.htm">Supporting Idle Power-Down on Multiple-Component Devices</a></li>
+</ul>
+</p>
+<p>In addition, the driver can call <a href="kernel.device_power_management_routines">power framework routines</a> directly to send power control requests and specify latency, residency, and wake requirements.</p>
+<p>For more information about PoFx, see <a href="kernel.overview_of_the_power_management_framework">Overview of the Power Management Framework</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Supporting Multiple-Component Devices with Single or Multiple Functional Power States%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

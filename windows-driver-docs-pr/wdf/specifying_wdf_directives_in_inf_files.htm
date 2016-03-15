@@ -1,0 +1,241 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Specifying WDF Directives in INF Files"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Specifying WDF Directives in INF Files</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_5fc6e0f3-3898-45ec-b17c-8cbe2a969fdd.xml"/>
+<meta name="MS-HAID" content="umdf.specifying_wdf_directives_in_inf_files"/>
+<meta name="MS-HAID" content="umdf.specifying_the_umdfdispatcher_inf_directive"/>
+<meta name="MS-HAID" content="wdf.specifying_wdf_directives_in_inf_files"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.specifying_wdf_directives_in_inf_files"></a>Specifying WDF Directives in INF Files</h1>
+</div>
+<p>This topic applies to both User-Mode Driver Framework (UMDF) versions 1 and 2.</p>
+<p>An INF file that installs a UMDF driver must contain a Microsoft Windows Driver Frameworks (WDF)-specific <i>DDInstall</i> section. The INF file can contain more than one WDF-specific <i>DDInstall</i> section if the INF file installs more than one WDF driver. Each WDF-specific <i>DDInstall</i> section:</p>
+<ul>
+<li>
+<p>Corresponds to the <a href="devinst.inf_ddinstall_section"><b>DDInstall</b></a> and <a href="devinst.inf_ddinstall_services_section"><b>DDInstall.Services</b></a> sections that are associated with a particular WDF driver.</p>
+</li>
+<li>
+<p>Is processed by all the loaded WDF co-installers, which run in arbitrary order.</p>
+</li>
+<li>
+<p>Contains WDF installation directives for a device. UMDF-specific directives begin with the UMDF prefix, and KMDF-specific directives begin with the KMDF prefix. </p>
+</li>
+</ul>
+<p>The following code example shows UMDF-specific directives in a WDF-specific <i>DDInstall</i> section.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[Skeleton_Install.Wdf]
+UmdfService=UMDFSkeleton,UMDFSkeleton_Install
+UmdfServiceOrder=UMDFSkeleton</pre>
+</td>
+</tr>
+</table></span></div>
+<p>Each UMDF-specific directive in the WDF-specific <i>DDInstall</i> section is described in the following list: </p>
+<p></p>
+<dl>
+<dt><a id="UmdfService____serviceName____sectionName_"></a><a id="umdfservice____servicename____sectionname_"></a><a id="UMDFSERVICE____SERVICENAME____SECTIONNAME_"></a><b>UmdfService</b> = &lt;<i>serviceName</i>&gt;, &lt;<i>sectionName</i>&gt;</dt>
+<dd>
+<p>Associates a UMDF driver with a <i>UMDF-service-install</i> section that contains information that is required to install the UMDF driver. The <i>serviceName</i> parameter specifies the UMDF driver. The <i>sectionName</i> parameter references the <i>UMDF-service-install</i> section. A valid INF file typically requires at least one <b>UmdfService</b> directive. However, if a UMDF driver is part of the operating system, a <b>UmdfService</b> directive for the UMDF driver is not required. Therefore, a valid INF file might not have any <b>UmdfService</b> directives, although most INF files have one <b>UmdfService</b> directive for each UMDF driver.</p>
+</dd>
+<dt><a id="UmdfHostProcessSharing_____________ProcessSharingDisabled___ProcessSharingEnabled_"></a><a id="umdfhostprocesssharing_____________processsharingdisabled___processsharingenabled_"></a><a id="UMDFHOSTPROCESSSHARING_____________PROCESSSHARINGDISABLED___PROCESSSHARINGENABLED_"></a><b>UmdfHostProcessSharing</b> 
+        = &lt;<b>ProcessSharingDisabled</b> | <b>ProcessSharingEnabled</b>&gt;</dt>
+<dd>
+<p>Determines whether a device stack is placed into a shared process pool (<b>ProcessSharingEnabled</b>) or its own individual process (<b>ProcessSharingDisabled</b>).  The default is <b>ProcessSharingEnabled</b>. This directive is device-specific rather than driver-specific.</p>
+<p>For more information about device pooling, see <a href="using_device_pooling_in_umdf_drivers.htm">Using Device Pooling in UMDF Drivers</a>.</p>
+<p>UMDF versions 1.11 and later support the <b>UmdfHostProcessSharing</b> directive.</p>
+</dd>
+<dt><a id="UmdfDirectHardwareAccess____AllowDirectHardwareAccess___RejectDirectHardwareAccess___"></a><a id="umdfdirecthardwareaccess____allowdirecthardwareaccess___rejectdirecthardwareaccess___"></a><a id="UMDFDIRECTHARDWAREACCESS____ALLOWDIRECTHARDWAREACCESS___REJECTDIRECTHARDWAREACCESS___"></a><b>UmdfDirectHardwareAccess</b> = &lt;<b>AllowDirectHardwareAccess</b> | <b>RejectDirectHardwareAccess</b>&gt;  </dt>
+<dd>
+<p>Indicates whether the framework should allow the driver to use any of the direct hardware access features, such as accessing device registers and ports, scanning hardware resources assigned to the device, handling hardware interrupts, or acquiring connection resources.</p>
+<p>If <b>UmdfDirectHardwareAccess</b> is set to <b>AllowDirectHardwareAccess</b>, the framework allows the driver to use UMDF interfaces that perform direct hardware access.</p>
+<p> You must specify <b>AllowDirectHardwareAccess</b> if your UMDF driver accesses hardware resources such as registers or ports, interrupts, <a href="parports.gpio_driver_support_overview">general-purpose I/O</a> (GPIO) pins, or serial bus connections such as I2C, SPI, and serial port. Your driver receives all of these resources through the <i>ResourcesRaw</i> and <i>ResourcesTranslated</i> parameters of its <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback function.</p>
+<div class="alert"><b>Note</b>  <p class="note">Starting with UMDF version 2.15, a UMDF driver does not need to specify <b>AllowDirectHardwareAccess</b> in order to receive hardware resource lists in its <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback routine. If you don't specify it, the driver does not have the access rights to use these resources, with one exception:</p>
+<p class="note">
+
+
+
+
+If the device is assigned one or more connection resources (<b>CmResourceTypeConnection</b>) and one or more interrupt resources (<b>CmResourceTypeInterrupt</b>), the driver can call <a href="wdf.wdfinterruptcreate"><b>WdfInterruptCreate</b></a> from its <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback routine (but not from <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a>).</p>
+</div>
+<div> </div>
+<p>For information about connecting a UMDF driver to particular types of resources, see:</p>
+<ul>
+<li><a href="parports.connecting_a_umdf_driver_to_gpio_i_o_pins">Connecting a UMDF Driver to GPIO I/O Pins</a></li>
+<li><a href="buses.hardware_resources_for_user_mode_spb_peripheral_drivers">Hardware Resources for User-Mode SPB Peripheral Drivers</a></li>
+<li><a href="buses.connection_ids_for_spb_connected_peripheral_devices">Connection IDs for SPB-Connected Peripheral Devices</a></li>
+<li><a href="serports.connecting_a_umdf_peripheral_device_driver_to_a_serial_port">Connecting a UMDF Peripheral Driver to a Serial Port</a></li>
+</ul>
+<p>If <b>UmdfDirectHardwareAccess</b> is set to <b>RejectDirectHardwareAccess</b>, the framework does not allow drivers to use any direct hardware access features. The default value is <b>RejectDirectHardwareAccess</b>.</p>
+<p>For information about how a UMDF driver accesses hardware resources, see <a href="finding_and_mapping_hardware_resources.htm">Finding and Mapping Hardware Resources</a>.</p>
+<p>UMDF versions 1.11 and later support the <b>UmdfDirectHardwareAccess</b> directive.</p>
+</dd>
+<dt><a id="UmdfHostPriority____PriorityHigh_"></a><a id="umdfhostpriority____priorityhigh_"></a><a id="UMDFHOSTPRIORITY____PRIORITYHIGH_"></a><b>UmdfHostPriority</b> = &lt;<b>PriorityHigh</b>&gt;</dt>
+<dd>
+<p>Starting in UMDF version 2.15, a UMDF HID client driver can set <b>UmdfHostPriority</b> to  
+<b>PriorityHigh</b> to increase its thread priority. This directive should only be used for touch or input drivers that are sensitive to user response time.  When a driver specifies <b>PriorityHigh</b>, the system puts it in a separate device pool along with other drivers of similar priority. Because the additional device pool uses more memory, you should use this setting with caution. For more information about device pooling, see <a href="using_device_pooling_in_umdf_drivers.htm">Using Device Pooling in UMDF Drivers</a>.</p>
+</dd>
+<dt><a id="UmdfRegisterAccessMode____RegisterAccessUsingSystemCall___RegisterAccessUsingUserModeMapping__"></a><a id="umdfregisteraccessmode____registeraccessusingsystemcall___registeraccessusingusermodemapping__"></a><a id="UMDFREGISTERACCESSMODE____REGISTERACCESSUSINGSYSTEMCALL___REGISTERACCESSUSINGUSERMODEMAPPING__"></a><b>UmdfRegisterAccessMode</b> = &lt;<b>RegisterAccessUsingSystemCall</b> | <b>RegisterAccessUsingUserModeMapping</b>&gt; </dt>
+<dd>
+<p>Indicates whether the framework should map the registers into user-mode address space (so that a system call is not involved in accessing registers), or use a system call to access registers.</p>
+<p>If <b>UmdfRegisterAccessMode</b> is set to <b>RegisterAccessUsingSystemCall</b>, the framework uses a system call to access registers.</p>
+<p>If <b>UmdfRegisterAccessMode</b> is set to <b>RegisterAccessUsingUserModeMapping</b>, the framework maps the registers into user-mode address space so that a system call is not needed to access registers. The default value is <b>RegisterAccessUsingSystemCall</b>.</p>
+<p>UMDF versions 1.11 and later support the <b>UmdfRegisterAccessMode</b> directive.</p>
+</dd>
+<dt><a id="________UmdfServiceOrder____serviceName1______serviceName2__..._"></a><a id="________umdfserviceorder____servicename1______servicename2__..._"></a><a id="________UMDFSERVICEORDER____SERVICENAME1______SERVICENAME2__..._"></a><b>
+       UmdfServiceOrder</b> = &lt;<i>serviceName1</i>&gt; [, &lt;<i>serviceName2</i>&gt; ...]</dt>
+<dd>
+<p>Lists the order that the co-installer installs the UMDF drivers on the device stack. Even if the co-installer installs only one UMDF driver on the device stack, the INF file must contain this directive. The <i>serviceNameXx</i> parameters correspond to the <i>serviceName</i> parameters for each <b>UmdfService</b> directive. Because the UMDF drivers are added to the device stack in the order that they are listed, the first parameter specifies the lowest UMDF driver in the device stack.</p>
+<p>To ensure that a UMDF co-installer installs the device, only one <b>UmdfServiceOrder</b> directive must be present in any given WDF-specific <i>DDInstall</i> section. That is, the <b>UmdfServiceOrder</b> directive cannot be imported by using the <b>Include</b> and <b>Needs</b> directives.</p>
+</dd>
+<dt><a id="UmdfImpersonationLevel____level_"></a><a id="umdfimpersonationlevel____level_"></a><a id="UMDFIMPERSONATIONLEVEL____LEVEL_"></a><b>UmdfImpersonationLevel</b> = &lt;<i>level</i>&gt;</dt>
+<dd>
+<p>Informs the framework about the maximum impersonation level that the UMDF driver can have. A <b>UmdfImpersonationLevel</b> directive is optional; if an impersonation level is not specified, the default is <b>Identification</b>. When an application opens a file handle, the application can grant a greater impersonation level to the driver. However, the driver cannot call the <a href="wdf.iwdfiorequest_impersonate"><b>IWDFIoRequest::Impersonate</b></a> method to request an impersonation level that is greater than the level that <b>UmdfImpersonationLevel</b> specifies. The possible values for this directive are: </p>
+<ul>
+<li>
+<p><b>Anonymous</b></p>
+</li>
+<li>
+<p><b>Identification</b></p>
+</li>
+<li>
+<p><b>Impersonation</b></p>
+</li>
+<li>
+<p><b>Delegation</b></p>
+</li>
+</ul>
+<p>These values correspond to the values that are specified in the <a href="wdf.security_impersonation_level"><b>SECURITY_IMPERSONATION_LEVEL</b></a> enumeration.</p>
+</dd>
+<dt><a id="UmdfMethodNeitherAction____________Copy___Reject_"></a><a id="umdfmethodneitheraction____________copy___reject_"></a><a id="UMDFMETHODNEITHERACTION____________COPY___REJECT_"></a><b>UmdfMethodNeitherAction</b>
+        = &lt;<b>Copy</b> | <b>Reject</b>&gt;</dt>
+<dd>
+<p>Indicates whether the framework will accept (<b>Copy</b>) or reject (<b>Reject</b>) a device's I/O requests, if the request objects contain I/O control codes that specify the <a href="kernel.buffer_descriptions_for_i_o_control_codes">METHOD_NEITHER</a> buffer access method. A <b>UmdfMethodNeitherAction</b> directive is optional. If the directive is not specified, the default value is <b>Reject</b>. </p>
+<p>For more information about supporting the METHOD_NEITHER buffer access method in UMDF-based drivers, see <a href="wdf.accessing_data_buffers_in_umdf_drivers#using_neither_buffered_i_o_nor_direct_i_o_in_umdf_drivers#using_neither_buffered_i_o_nor_direct_i_o_in_umdf_drivers">Using Neither Buffered I/O nor Direct I/O in UMDF Drivers</a>. </p>
+</dd>
+<dt><a id="UmdfDispatcher____FileHandle___WinUsb___NativeUSB_"></a><a id="umdfdispatcher____filehandle___winusb___nativeusb_"></a><a id="UMDFDISPATCHER____FILEHANDLE___WINUSB___NATIVEUSB_"></a><b>UmdfDispatcher</b> = &lt;<b>FileHandle</b> | <b>WinUsb</b> | <b>NativeUSB</b>&gt;</dt>
+<dd>
+<p>Informs the framework where to send I/O after the I/O goes through the user-mode portion of the device stack. By default, I/O is sent to the reflector (WUDFRd.sys). By setting <b>UmdfDispatcher</b> to <b>WinUsb</b>, the driver instructs UMDF to send I/O to the WinUsb architecture.  Starting in UMDF 2.15, specifying <b>NativeUSB</b> causes the reflector to handle USB I/O.</p>
+<ul>
+<li>If any driver in the stack uses a file-handle-based target, set this directive to <b>FileHandle</b>.</li>
+<li>If the driver uses UMDF 2.15 or later and uses USB I/O targets, set this  directive to <b>NativeUSB</b>.</li>
+<li>If the driver is pre-UMDF 2.15 and uses USB I/O targets, set this  directive to <b>WinUsb</b>.</li>
+</ul>
+<p> A <b>UmdfDispatcher</b> directive is optional. </p>
+<p>The following code example shows the <b>UmdfDispatcher</b> directive in a WDF-specific <b>DDInstall</b> section.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[Xxx_Install.Wdf]
+UmdfDispatcher=NativeUSB</pre>
+</td>
+</tr>
+</table></span></div>
+</dd>
+<dt><a id="UmdfKernelModeClientPolicy____________AllowKernelModeClients___RejectKernelModeClients_"></a><a id="umdfkernelmodeclientpolicy____________allowkernelmodeclients___rejectkernelmodeclients_"></a><a id="UMDFKERNELMODECLIENTPOLICY____________ALLOWKERNELMODECLIENTS___REJECTKERNELMODECLIENTS_"></a><b>UmdfKernelModeClientPolicy</b>
+        = &lt;<b>AllowKernelModeClients</b> | <b>RejectKernelModeClients</b>&gt;</dt>
+<dd>
+<p>Indicates whether the framework should allow the driver to receive I/O requests from kernel-mode drivers. </p>
+<p>If <b>UmdfKernelModeClientPolicy</b> is set to <b>AllowKernelModeClients</b>, the framework allows kernel-mode drivers to load above a user-mode driver, and it delivers I/O requests from kernel-mode drivers to the user-mode driver. </p>
+<p>If <b>UmdfKernelModeClientPolicy</b> is set to <b>RejectKernelModeClients</b>, the framework does not allow kernel-mode drivers to load above a user-mode driver, and it does not deliver I/O requests from any kernel-mode drivers to the user-mode driver. If a driver's INF file does not contain this directive, the default value is <b>RejectKernelModeClients</b>. For more information, see <a href="wdf.supporting_kernel_mode_clients">Supporting Kernel-mode Clients</a>.</p>
+<p>UMDF versions 1.9 and later support the <b>UmdfKernelModeClientPolicy</b> directive. To allow kernel-mode drivers to load above a user-mode driver in earlier UMDF versions, see <a href="wdf.supporting_kernel_mode_clients#kernel_mode_client_support_in_earlier_umdf_versions#kernel_mode_client_support_in_earlier_umdf_versions">Kernel-mode Client Support in Earlier UMDF Versions</a>.</p>
+</dd>
+<dt><a id="UmdfFileObjectPolicy____RejectNullAndUnknownFileObjects___AllowNullAndUnknownFileObjects__"></a><a id="umdffileobjectpolicy____rejectnullandunknownfileobjects___allownullandunknownfileobjects__"></a><a id="UMDFFILEOBJECTPOLICY____REJECTNULLANDUNKNOWNFILEOBJECTS___ALLOWNULLANDUNKNOWNFILEOBJECTS__"></a><b>UmdfFileObjectPolicy</b> = &lt;<b>RejectNullAndUnknownFileObjects</b> | <b>AllowNullAndUnknownFileObjects</b>&gt; </dt>
+<dd>
+<p>Indicates whether the framework should allow processing of I/O requests (<a href="wdf.iwdfiorequest">IWDFIoRequest</a>) that are either not associated with a file object (<a href="wdf.iwdffile">IWDFFile</a>) or are associated with  an unknown file object (a file object for which a driver has not previously seen a create request).</p>
+<p>If <b>UmdfFileObjectPolicy</b> is set to <b>RejectNullAndUnknownFileObjects</b>, the framework does not allow processing of requests that are associated with a NULL or unknown file object.</p>
+<p>If <b>UmdfFileObjectPolicy</b> is set to <b>AllowNullAndUnknownFileObjects</b>, the framework allows processing of requests that are associated with a NULL or unknown file object.</p>
+<p>The default value is <b>RejectNullAndUnknownFileObjects</b>.</p>
+<p>UMDF versions 1.11 and later support the <b>UmdfFileObjectPolicy</b> directive.</p>
+</dd>
+<dt><a id="UmdfFsContextUsePolicy____CanUseFsContext___CanUseFsContext2____CannotUseFsContexts_"></a><a id="umdffscontextusepolicy____canusefscontext___canusefscontext2____cannotusefscontexts_"></a><a id="UMDFFSCONTEXTUSEPOLICY____CANUSEFSCONTEXT___CANUSEFSCONTEXT2____CANNOTUSEFSCONTEXTS_"></a><b>UmdfFsContextUsePolicy</b> = &lt;<b>CanUseFsContext</b> | <b>CanUseFsContext2</b>  | <b>CannotUseFsContexts</b>&gt;</dt>
+<dd>
+<p>Indicates whether the framework can store internal information in specific context members of a WDM file object. If a kernel-mode driver in the same stack uses a particular  member of the file object, you can use this directive to request that the framework not use the same location.</p>
+<p>If <b>UmdfFsContextUsePolicy</b> is set to <b>CanUseFsContext</b>, the framework stores information in the <b>FsContext</b> member of the WDM file object.</p>
+<p>If <b>UmdfFsContextUsePolicy</b> is set to <b>CanUseFsContext2</b>, the framework stores information in the <b>FsContext2</b> member of the WDM file object.</p>
+<p>If <b>UmdfFsContextUsePolicy</b> is set to <b>CannotUseFsContexts</b>, the framework does not use either <b>FsContext</b> or <b>FsContext2</b>.</p>
+<p>The default value is <b>CanUseFsContext</b>.</p>
+<p>UMDF versions 1.11 and later support the <b>UmdfFsContextUsePolicy</b> directive.</p>
+</dd>
+</dl>
+<h2><a id="umdf-service-install"></a><a id="UMDF-SERVICE-INSTALL"></a></h2>
+<p>The following code example shows the required directives in a<i> UMDF-service-install</i> section.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[UMDFSkeleton_Install]
+UmdfLibraryVersion=1.0.0
+ServiceBinary=%12%\UMDF\UMDFSkeleton.dll
+DriverCLSID={d4112073-d09b-458f-a5aa-35ef21eef5de}</pre>
+</td>
+</tr>
+</table></span></div>
+<p>Each directive in the <i> UMDF-service-install</i> section is described in the following list: </p>
+<p></p>
+<dl>
+<dt><a id="UmdfLibraryVersion____________version_"></a><a id="umdflibraryversion____________version_"></a><a id="UMDFLIBRARYVERSION____________VERSION_"></a><b>UmdfLibraryVersion</b>
+        = &lt;<i>version</i>&gt;</dt>
+<dd>
+<p>Informs the co-installer about the version number of the framework that the UMDF driver will use. The format of the <i>version</i> string is &lt;<i>major</i>&gt;.&lt;<i>minor</i>&gt;.&lt;<i>service</i>&gt;. When drivers on the device stack use more than one version of the framework, the INF file copies multiple co-installers--one for each framework version--to the same location on the hard disk drive. However, the INF file adds only the highest version co-installer to the <b>CoInstallers32</b> registry value. For more information about copying co-installers, see <a href="using_the_umdf_co_installer.htm">Using the UMDF Co-installer</a>. </p>
+<p>The co-installer verifies the version string and uses it to locate the version-specific co-installer for the UMDF driver. The co-installer then extracts the framework from the version-specific co-installer.</p>
+</dd>
+<dt><a id="ServiceBinary____binarypath_"></a><a id="servicebinary____binarypath_"></a><a id="SERVICEBINARY____BINARYPATH_"></a><b>ServiceBinary</b> = &lt;<i>binarypath</i>&gt;</dt>
+<dd>
+<p>Informs UMDF about where to place the UMDF driver binary on the hard disk drive. </p>
+<p>UMDF drivers should be copied to, and run from, the \Windows\System32\Drivers\UMDF directory. </p>
+</dd>
+<dt><a id="DriverCLSID_____CLSID__"></a><a id="driverclsid_____clsid__"></a><a id="DRIVERCLSID_____CLSID__"></a><b>DriverCLSID</b> = &lt;{<i>CLSID</i>}&gt;</dt>
+<dd>
+<div class="alert"><b>Note</b>  This directive is available in  UMDF versions 1.11 and earlier.</div>
+<div> </div>
+<p>Informs UMDF about the class identifier (CLSID) of the UMDF driver. When UMDF loads the UMDF driver, the UMDF host uses the UMDF driver's CLSID to create an instance of the UMDF driver's <a href="wdf.idriverentry">IDriverEntry</a> interface.</p>
+</dd>
+</dl>
+<p>On Windows 8.1 and earlier, to avoid a required reboot when you update a UMDF driver, specify the <b>COPYFLG_IN_USE_RENAME</b> flag in  the <a href="devinst.inf_copyfiles_directive"><b>CopyFiles Directive</b></a> in your driver's INF file, as shown in this example:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[VirtualSerial_Install.NT]
+CopyFiles=UMDriverCopy
+ 
+[UMDriverCopy]
+Virtualserial.dll,,,0x00004000  ; COPYFLG_IN_USE_RENAME
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Specifying WDF Directives in INF Files%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

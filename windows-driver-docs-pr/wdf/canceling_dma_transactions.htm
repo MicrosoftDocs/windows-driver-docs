@@ -1,0 +1,48 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Canceling DMA Transactions"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Canceling DMA Transactions</title>
+
+<meta name="MS-HAID" content="kmdf.canceling_dma_transactions"/>
+<meta name="MS-HAID" content="wdf.canceling_dma_transactions"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.canceling_dma_transactions"></a>Canceling DMA Transactions</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<p>If your driver has been built with version 1.11 or a later version of KMDF and is running on Windows 8 or later using direct memory access (DMA) version 3, the driver can attempt to cancel a pending DMA transaction by calling the <a href="wdf.wdfdmatransactioncancel"><b>WdfDmaTransactionCancel</b></a> method.</p>
+<p>When calling <a href="wdf.wdfdmatransactioncancel"><b>WdfDmaTransactionCancel</b></a>, the driver must ensure that the specified DMA transaction is not completed during the call. The driver can use the following technique to safely cancel a transaction, either before DMA channel allocation or after some number of transfer operations have already completed:</p>
+<ol>
+<li>In one of the driver's <a href="request_handlers.htm">request handlers</a>, the driver calls <a href="wdf.wdfrequestmarkcancelableex"><b>WdfRequestMarkCancelableEx</b></a> and provides an <a href="wdf.evtrequestcancel"><i>EvtRequestCancel</i></a> callback function for the I/O request. The request handler then calls <a href="wdf.wdfdmatransactionexecute"><b>WdfDmaTransactionExecute</b></a>.</li>
+<li>The driver's <a href="wdf.evtrequestcancel"><i>EvtRequestCancel</i></a> callback function (which may begin running in a separate thread immediately after the call to <a href="wdf.wdfrequestmarkcancelableex"><b>WdfRequestMarkCancelableEx</b></a>) calls <a href="wdf.wdfdmatransactioncancel"><b>WdfDmaTransactionCancel</b></a>.</li>
+<li>If the call to <a href="wdf.wdfdmatransactioncancel"><b>WdfDmaTransactionCancel</b></a> occurs after the call to <a href="wdf.wdfdmatransactionexecute"><b>WdfDmaTransactionExecute</b></a>, but before the <b>WdfDmaTransactionExecute</b> method has started DMA allocation, transaction cancellation succeeds and <b>WdfDmaTransactionCancel</b> returns TRUE. In this case, the driver's <a href="wdf.evtrequestcancel"><i>EvtRequestCancel</i></a> callback function must <a href="completing_a_dma_transaction.htm">complete the DMA transaction</a>. <b>WdfDmaTransactionExecute</b> returns an error value.</li>
+<li>
+<p>If the driver calls <a href="wdf.wdfdmatransactioncancel"><b>WdfDmaTransactionCancel</b></a> after the <a href="wdf.wdfdmatransactionexecute"><b>WdfDmaTransactionExecute</b></a> method has started DMA allocation, the attempt to cancel the transaction fails and <b>WdfDmaTransactionCancel</b> returns FALSE. In this case, <b>WdfDmaTransactionExecute</b> returns STATUS_SUCCESS and the driver's request handler must <a href="completing_a_dma_transaction.htm">complete the DMA transaction</a>.</p>
+<p>At this point, if the driver is using system-mode DMA, the <a href="wdf.evtrequestcancel"><i>EvtRequestCancel</i></a> callback function might call <a href="wdf.wdfdmatransactionstopsystemtransfer"><b>WdfDmaTransactionStopSystemTransfer</b></a> to attempt to stop the in-progress system-mode DMA transfer. For a code example that shows how to do this, see <a href="wdf.wdfdmatransactionstopsystemtransfer"><b>WdfDmaTransactionStopSystemTransfer</b></a>.</p>
+</li>
+<li>
+<p>After the <a href="wdf.wdfdmatransactionexecute"><b>WdfDmaTransactionExecute</b></a> method finishes DMA allocation, the framework calls the driver's <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> callback function (which may begin running in a separate thread immediately after the call to <b>WdfDmaTransactionExecute</b>). At this point, a call to the <a href="wdf.wdfdmatransactioncancel"><b>WdfDmaTransactionCancel</b></a> method would return FALSE.</p>
+<p>In <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a>, the driver can call <a href="wdf.wdfrequestunmarkcancelable"><b>WdfRequestUnmarkCancelable</b></a> to end the possibility of request cancellation. If <b>WdfRequestUnmarkCancelable</b> returns STATUS_SUCCESS, the callback function must program the hardware to start the transfer. If <b>WdfRequestUnmarkCancelable</b> returns STATUS_CANCELLED, the request has been canceled. In this case, <i>EvtProgramDma</i> must call <a href="wdf.wdfdmatransactiondmacompletedfinal"><b>WdfDmaTransactionDmaCompletedFinal</b></a> to <a href="completing_a_dma_transaction.htm">complete the DMA transaction</a>.</p>
+<p>The driver can use the same technique to cancel a DMA transaction after some number of transfer operations have already completed. In this case, the driver calls <a href="wdf.wdfdmatransactioncancel"><b>WdfDmaTransactionCancel</b></a> after it calls <a href="wdf.wdfdmatransactiondmacompleted"><b>WdfDmaTransactionDmaCompleted</b></a>, but before the framework calls <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> to program the next transfer operation. If the driver happens to call <b>WdfDmaTransactionCancel</b> before it calls <b>WdfDmaTransactionDmaCompleted</b>, <b>WdfDmaTransactionDmaCompleted</b> returns <b>TRUE</b>, indicating that the DMA transaction has been completed.</p>
+</li>
+</ol>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Canceling DMA Transactions%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

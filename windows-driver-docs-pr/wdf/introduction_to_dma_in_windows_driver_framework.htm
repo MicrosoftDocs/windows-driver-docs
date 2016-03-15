@@ -1,0 +1,48 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Introduction to DMA in Windows Driver Framework"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Introduction to DMA in Windows Driver Framework</title>
+
+<meta name="MS-HAID" content="DFDmaPackage_3b67bc7c-59e1-440c-91c7-f4a69e0e5490.xml"/>
+<meta name="MS-HAID" content="kmdf.introduction_to_dma_in_windows_driver_framework"/>
+<meta name="MS-HAID" content="wdf.introduction_to_dma_in_windows_driver_framework"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.introduction_to_dma_in_windows_driver_framework"></a>Introduction to DMA in Windows Driver Framework</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<h2><a id="ddk_introduction_to_dma_in_windows_driver_framework_df"></a><a id="DDK_INTRODUCTION_TO_DMA_IN_WINDOWS_DRIVER_FRAMEWORK_DF"></a></h2>
+<p>On Windows 7 and earlier, Kernel-Mode Driver Framework (KMDF) supports only bus-master direct memory access (DMA) devices. Such devices contain their own DMA controllers.</p>
+<p> On System on a Chip (SoC)–based platforms running Windows 8 and later, the framework also supports system-mode DMA, in which multiple devices share a single multichannel DMA controller.</p>
+<p>The framework's DMA support consists of:</p>
+<ul>
+<li>
+<p>A set of framework DMA objects and methods that drivers use to convert I/O requests into DMA operations.</p>
+</li>
+<li>
+<p>A set of driver-supplied event callback functions that configure the device's DMA behavior as different events occur.</p>
+</li>
+</ul>
+<p>The framework supports both single  packet and scatter/gather DMA transfers. It also supports the use of common buffers.</p>
+<p> On SoC-based platforms running Windows 8 and later, the framework supports single-packet system-mode DMA transfers.  For more information, see <a href="supporting_system-mode_dma.htm">Supporting System-Mode DMA</a>.</p>
+<p>The framework does not support system-mode DMA transfers on PC-based platforms.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Introduction to DMA in Windows Driver Framework%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Sending I/O Requests Asynchronously"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Sending I/O Requests Asynchronously</title>
+
+<meta name="MS-HAID" content="Ch5_DFIoTargets_47f6fec8-c455-4f84-9e6b-50eff12777d1.xml"/>
+<meta name="MS-HAID" content="kmdf.sending_i_o_requests_asynchronously"/>
+<meta name="MS-HAID" content="wdf.sending_i_o_requests_asynchronously"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.sending_i_o_requests_asynchronously"></a>Sending I/O Requests Asynchronously</h1>
+</div>
+<h2><a id="ddk_sending_i_o_requests_asynchronously_df"></a><a id="DDK_SENDING_I_O_REQUESTS_ASYNCHRONOUSLY_DF"></a></h2>
+<p>Before you can send an I/O request asynchronously to an I/O target, you must format the request. The following table lists the I/O target object methods that your driver can call to format I/O requests.</p>
+<table>
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetformatrequestforread"><b>WdfIoTargetFormatRequestForRead</b></a></p>
+</td>
+<td>
+<p>Formats a read request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetformatrequestforwrite"><b>WdfIoTargetFormatRequestForWrite</b></a></p>
+</td>
+<td>
+<p>Formats a write request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetformatrequestforioctl"><b>WdfIoTargetFormatRequestForIoctl</b></a></p>
+</td>
+<td>
+<p>Formats a device control request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetformatrequestforinternalioctl"><b>WdfIoTargetFormatRequestForInternalIoctl</b></a></p>
+</td>
+<td>
+<p>Formats an internal device control request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetformatrequestforinternalioctlothers"><b>WdfIoTargetFormatRequestForInternalIoctlOthers</b></a></p>
+</td>
+<td>
+<p>Formats a non-standard internal device control request</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<p>To send an I/O request asynchronously, your driver must:</p>
+<ol>
+<li>
+<p>Format the request.</p>
+<p>Use one of the methods that are listed in the previous table to format your requests. For detailed information about how to use these methods, see the methods' reference pages.</p>
+</li>
+<li>
+<p>Register a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function.</p>
+<p>If you send requests asynchronously, you typically want the framework to notify your driver when another driver completes each request. Your driver should define a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function and register it by calling <a href="wdf.wdfrequestsetcompletionroutine"><b>WdfRequestSetCompletionRoutine</b></a>. For more information, see <a href="completing_i_o_requests.htm">Completing I/O Requests</a>.</p>
+</li>
+<li>
+<p>Send the request.</p>
+<p>After your driver formats the request and registers a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function, your driver must call <a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a>. This method enables you to send requests either synchronously or asynchronously, depending on the flags set in the <i>RequestOptions</i> parameter. For a simpler way to send I/O requests synchronously, see <a href="sending_i_o_requests_synchronously.htm">Sending I/O Requests Synchronously</a>. For information about how to get the completion status for an asynchronous request or for any request that is sent by calling <b>WdfRequestSend</b>, see <a href="completing_i_o_requests.htm">Completing I/O Requests</a>.</p>
+</li>
+</ol>
+<p>A driver that calls <a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a> to send an I/O request can attempt to cancel the request later. For more information, see <a href="canceling_i_o_requests.htm">Canceling I/O Requests</a>.</p>
+<p>Some drivers might send a single I/O request to multiple devices, and thus to multiple I/O targets, by calling <a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a> more than once for each request. These drivers must call <a href="wdf.wdfrequestchangetarget"><b>WdfRequestChangeTarget</b></a> before each call to <b>WdfRequestSend</b> after the first one to verify that the request can be sent to the next I/O target.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Sending I/O Requests Asynchronously%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

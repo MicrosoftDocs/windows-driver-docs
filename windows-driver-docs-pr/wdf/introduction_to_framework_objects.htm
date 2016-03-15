@@ -1,0 +1,56 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Introduction to Framework Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Introduction to Framework Objects</title>
+
+<meta name="MS-HAID" content="Ch1_DFPatterns_bedb1fed-5740-457e-95f7-8296ed13e094.xml"/>
+<meta name="MS-HAID" content="kmdf.introduction_to_framework_objects"/>
+<meta name="MS-HAID" content="wdf.introduction_to_framework_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.introduction_to_framework_objects"></a>Introduction to Framework Objects</h1>
+</div>
+<h2><a id="ddk_introduction_to_framework_objects_df"></a><a id="DDK_INTRODUCTION_TO_FRAMEWORK_OBJECTS_DF"></a></h2>
+<p>The interfaces that Windows Driver Frameworks (WDF) provides to drivers are object-based. The framework defines several objects. These objects export <a href="framework_object_methods.htm">methods</a> (functions) and <a href="framework_object_properties.htm">properties</a> (data) that drivers can access. Framework objects also initiate <a href="framework_object_events.htm">events</a>, which drivers can support by providing event callback functions.</p>
+<p>Framework-based drivers never directly access framework objects. Instead, drivers reference the objects by <i>handles</i>, which the driver passes as input to object methods.</p>
+<p>All framework objects have the following characteristics:</p>
+<p></p>
+<dl>
+<dt><a id="Reference_count"></a><a id="reference_count"></a><a id="REFERENCE_COUNT"></a><i>Reference count</i></dt>
+<dd>
+<p>The framework maintains a count of the number of references to each object. When the framework creates an object, it sets the object's reference count to one. When the framework has finished using an object, it decrements the reference count. The framework cannot delete the object until the reference count is decremented to zero, so drivers can prevent the deletion of an object by incrementing its reference count. </p>
+</dd>
+<dt><a id="Context_space"></a><a id="context_space"></a><a id="CONTEXT_SPACE"></a><i>Context space</i></dt>
+<dd>
+<p>Framework-based drivers can create object-specific context space for every framework object that the driver receives or creates. Drivers should store all object-specific data in an object's context space. For more information about context space, see <a href="framework_object_context_space.htm">Framework Object Context Space</a>.</p>
+</dd>
+<dt><a id="Deletion_callback_functions"></a><a id="deletion_callback_functions"></a><a id="DELETION_CALLBACK_FUNCTIONS"></a><i>Deletion callback functions</i></dt>
+<dd>
+<p>Drivers can register callback functions that the framework calls when it is deleting an object. The callback functions can remove driver-assigned resources, such as object-specific memory allocations. For more information about these callback functions, see <a href="framework_object_life_cycle.htm">Framework Object Life Cycle</a>.</p>
+</dd>
+<dt><a id="Parent_object"></a><a id="parent_object"></a><a id="PARENT_OBJECT"></a><i>Parent object</i></dt>
+<dd>
+<p>All framework objects can have a parent object. The framework designates a default parent object for most objects. When a driver creates an object, it can designate a parent object that overrides the object's default parent object. To designate an object's parent object, drivers set the <b>ParentObject</b> member of the object's <a href="wdf.wdf_object_attributes"><b>WDF_OBJECT_ATTRIBUTES</b></a> structure. (For a few object types, drivers cannot override the default parent object.) When the framework or a driver deletes a parent object, the framework also deletes the parent object's children.</p>
+</dd>
+</dl>
+<p>For an overview of all of the objects that are defined by WDF, see <a href="summary_of_framework_objects.htm">Summary of Framework Objects</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Introduction to Framework Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

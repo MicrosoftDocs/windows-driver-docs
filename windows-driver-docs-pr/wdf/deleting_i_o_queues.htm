@@ -1,0 +1,38 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Deleting I/O Queues"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Deleting I/O Queues</title>
+
+<meta name="MS-HAID" content="Ch3_DFIoPackage_29d58dd6-0aca-43e7-9463-3519aa12a0c7.xml"/>
+<meta name="MS-HAID" content="kmdf.deleting_i_o_queues"/>
+<meta name="MS-HAID" content="wdf.deleting_i_o_queues"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.deleting_i_o_queues"></a>Deleting I/O Queues</h1>
+</div>
+<p>Framework-based drivers must delete only some of the I/O queues that they create. If a driver creates a <a href="creating_i_o_queues.htm">default I/O queue</a> or an I/O queue that it configures by calling <a href="wdf.wdfdeviceconfigurerequestdispatching"><b>WdfDeviceConfigureRequestDispatching</b></a>, the framework deletes the queue object for the driver.</p>
+<p>For example, if you intend for each device's I/O queues to exist as long as each device remains plugged into the system, your driver will create its I/O queues in its <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function. Your driver might create a default queue that receives all requests except read requests and a separate queue that receives only read requests. </p>
+<p>The driver cannot delete these I/O queues. Instead, the framework deletes the queue objects when it deletes the device object to which the queue belongs. For information about why your driver cannot delete these I/O queues, see the following note.</p>
+<p>If, however, your driver creates temporary I/O queues outside of its <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function, it must call <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to delete these queues when it has finished using them. For example, a driver that provides an <a href="wdf.evtdevicefilecreate"><i>EvtDeviceFileCreate</i></a> callback function might create an I/O queue to handle I/O requests that are associated with a particular framework file object. In this case the driver's <a href="wdf.evtfilecleanup"><i>EvtFileCleanup</i></a> callback function must call <a href="wdf.wdfioqueuepurge"><b>WdfIoQueuePurge</b></a> to purge the queue and then call <b>WdfObjectDelete</b> to delete it. </p>
+<div class="alert"><b>Note</b>    The framework does not permit a driver to delete its default I/O queue, or any I/O queue that the driver configures to receive all I/O requests of a particular type (by calling <a href="wdf.wdfdeviceconfigurerequestdispatching"><b>WdfDeviceConfigureRequestDispatching</b></a>). If your driver calls <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to delete the queue object that represents one of these queues, <b>WdfObjectDelete</b> returns without deleting the object. <b>WdfObjectDelete</b> does not provide a return status, so the framework reports an error only if you are <a href="using_kmdf_verifier.htm">using the framework's verifier</a>.</div>
+<div> </div>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Deleting I/O Queues%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

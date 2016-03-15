@@ -1,0 +1,48 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="DMA Transactions and DMA Transfers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>DMA Transactions and DMA Transfers</title>
+
+<meta name="MS-HAID" content="DFDmaPackage_cc55afce-d58c-4698-b54e-70193420bdd0.xml"/>
+<meta name="MS-HAID" content="kmdf.dma_transactions_and_dma_transfers"/>
+<meta name="MS-HAID" content="wdf.dma_transactions_and_dma_transfers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.dma_transactions_and_dma_transfers"></a>DMA Transactions and DMA Transfers</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<h2><a id="ddk_dma_transactions_and_dma_transfers_df"></a><a id="DDK_DMA_TRANSACTIONS_AND_DMA_TRANSFERS_DF"></a></h2>
+<p>To understand how the framework handles bus-master and system-mode DMA operations, you must know the following two terms:</p>
+<p></p>
+<dl>
+<dt><a id="DMA_transaction"></a><a id="dma_transaction"></a><a id="DMA_TRANSACTION"></a><b>DMA transaction</b></dt>
+<dd>
+<p>A DMA transaction is a complete I/O operation, such as a single read or write request from an application. </p>
+</dd>
+<dt><a id="DMA_transfer"></a><a id="dma_transfer"></a><a id="DMA_TRANSFER"></a><b>DMA transfer</b></dt>
+<dd>
+<p>A DMA transfer is a single hardware operation that transfers data from computer memory to a device or from the device to computer memory.</p>
+</dd>
+</dl>
+<p>A single DMA transaction always consists of at least one DMA transfer, but a transaction can consist of many transfers. </p>
+<p>When a framework-based driver receives an I/O request, the driver typically creates a single DMA transaction object to represent the request. When the framework begins servicing the transaction, it determines if the device can handle the entire transaction in a single transfer. If the transaction is too large, the framework breaks the transaction into multiple transfers.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20DMA Transactions and DMA Transfers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

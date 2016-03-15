@@ -1,0 +1,45 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Framework Object Custom Types"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Framework Object Custom Types</title>
+
+<meta name="MS-HAID" content="kmdf.framework_object_driver_types"/>
+<meta name="MS-HAID" content="kmdf.framework_object_custom_types"/>
+<meta name="MS-HAID" content="wdf.framework_object_custom_types"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.framework_object_custom_types"></a>Framework Object Custom Types</h1>
+</div>
+<p>Starting in KMDF version 1.11, the framework supports custom type names. A custom type name is a string that driver can associate with a WDFOBJECT instance. Drivers define their own custom type names.   The driver specifies a custom type name for an object after the driver has called the object's creation method.</p>
+<p>Use these macros to manipulate custom type names:</p>
+<ul>
+<li>To define a custom type name, call <a href="wdf.wdf_declare_custom_type"><b>WDF_DECLARE_CUSTOM_TYPE</b></a> from an area of the driver that declares global data, such as a header file.</li>
+<li> Call <a href="wdf.wdfobjectaddcustomtype"><b>WdfObjectAddCustomType</b></a> or <a href="wdf.wdfobjectaddcustomtypewithdata"><b>WdfObjectAddCustomTypeWithData</b></a> to associate a custom type with a framework object.</li>
+<li>Call <a href="wdf.wdfobjectiscustomtype"><b>WdfObjectIsCustomType</b></a> to determine whether a specified object is of a specified custom type.</li>
+<li>After  calling <a href="wdf.wdfobjectaddcustomtypewithdata"><b>WdfObjectAddCustomTypeWithData</b></a>, the driver can later call <a href="wdf.wdfobjectgetcustomtypedata"><b>WdfObjectGetCustomTypeData</b></a> to retrieve the data.</li>
+</ul>
+<p>A driver can associate multiple custom types with a single framework object. A driver can also associate multiple framework objects with a single custom type.</p>
+<p>In output from KMDF debugger extensions, custom type names are displayed along with other WDF object information.</p>
+<p>
+<pre class="syntax" xml:space="preserve"><code>WDF_Object_Name, [custom_Type1_Name, custom_Type2_Name]</code></pre>
+</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Framework Object Custom Types%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

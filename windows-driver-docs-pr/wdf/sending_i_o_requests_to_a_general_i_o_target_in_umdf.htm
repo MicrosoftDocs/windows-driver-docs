@@ -1,0 +1,102 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Sending I/O Requests to a General I/O Target in UMDF"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Sending I/O Requests to a General I/O Target in UMDF</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_993c35f3-40e2-4f00-b782-50f17cad57bc.xml"/>
+<meta name="MS-HAID" content="umdf.sending_i_o_requests_to_a_general_i_o_target_in_umdf"/>
+<meta name="MS-HAID" content="wdf.sending_i_o_requests_to_a_general_i_o_target_in_umdf"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.sending_i_o_requests_to_a_general_i_o_target_in_umdf"></a>Sending I/O Requests to a General I/O Target in UMDF</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>A UMDF driver can send I/O requests to general I/O targets either synchronously or asynchronously.</p>
+<p>If a driver sends I/O requests synchronously, a driver thread sends the requests one at a time. The thread waits for each request to complete before it sends the next one. This process is simpler than sending the I/O requests asynchronously. The driver can send I/O requests synchronously if it does not send many requests and if system or device performance is not reduced while the driver waits for each I/O request.</p>
+<p>If a driver sends I/O requests asynchronously, a driver thread sends each request as soon as the request is ready to be sent, without waiting for previously sent requests to finish. If the driver must handle many I/O requests in short periods of time, the driver probably cannot wait for each request to complete before sending the next request. Otherwise, the driver might lose data or the performance of its devices and, possibly, of the entire system might be reduced. </p>
+<p>Before a UMDF driver can send an I/O request to an I/O target, the driver must format the request. The following table lists the methods that the driver can call to format I/O requests. The driver can use these methods to format a request that the driver received in one of its I/O queues or that the driver created.</p>
+<table>
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.iwdfiorequest_formatusingcurrenttype"><b>IWDFIoRequest::FormatUsingCurrentType</b></a></p>
+</td>
+<td>
+<p>Formats a request that the driver received from the framework so that the driver can send the request, unmodified, to the target</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.iwdfiotarget_formatrequestforioctl"><b>IWDFIoTarget::FormatRequestForIoctl</b></a></p>
+</td>
+<td>
+<p>Formats a device control request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.iwdfiotarget_formatrequestforread"><b>IWDFIoTarget::FormatRequestForRead</b></a></p>
+</td>
+<td>
+<p>Formats a read request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.iwdfiotarget_formatrequestforwrite"><b>IWDFIoTarget::FormatRequestForWrite</b></a></p>
+</td>
+<td>
+<p>Formats a write request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.iwdfiotarget2_formatrequestforflush"><b>IWDFIoTarget2::FormatRequestForFlush</b></a></p>
+</td>
+<td>
+<p>Formats a request to flush buffers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.iwdfiotarget2_formatrequestforqueryinformation"><b>IWDFIoTarget2::FormatRequestForQueryInformation</b></a></p>
+</td>
+<td>
+<p>Formats a request to obtain file information.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.iwdfiotarget2_formatrequestforsetinformation"><b>IWDFIoTarget2::FormatRequestForSetInformation</b></a></p>
+</td>
+<td>
+<p>Formats a request to set file information.</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<p>To send the I/O request to the I/O target, the driver calls the <a href="wdf.iwdfiorequest_send"><b>IWDFIoRequest::Send</b></a> method. To send the I/O request synchronously, the driver passes the WDF_REQUEST_SEND_OPTION_SYNCHRONOUS flag to the <i>Flags</i> parameter. Otherwise, the driver sends the I/O request asynchronously. If the driver sends the I/O request asynchronously, the driver typically requires notification when another driver completes the request. The driver should define a <a href="wdf.irequestcallbackrequestcompletion_oncompletion"><b>IRequestCallbackRequestCompletion::OnCompletion</b></a> callback function and register it by calling the <a href="wdf.iwdfiorequest_setcompletioncallback"><b>IWDFIoRequest::SetCompletionCallback</b></a> method. For more information, see <a href="completing_i_o_requests.htm">Completing I/O Requests</a>. </p>
+<p>A driver that calls <b>IWDFIoRequest::Send</b> to send an I/O request can attempt to cancel the request later by calling the <a href="wdf.iwdfiorequest_cancelsentrequest"><b>IWDFIoRequest::CancelSentRequest</b></a> method. If the driver cancels an I/O request that the driver received from the framework, the driver must always complete the request by calling the <a href="wdf.iwdfiorequest_complete"><b>IWDFIoRequest::Complete</b></a> or <a href="wdf.iwdfiorequest_completewithinformation"><b>IWDFIoRequest::CompleteWithInformation</b></a> method with the <i>CompletionStatus</i> parameter set to STATUS_CANCELLED. If the driver created the request object, the driver calls <a href="wdf.iwdfobject_deletewdfobject"><b>IWDFObject::DeleteWdfObject</b></a> instead of completing the request. </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Sending I/O Requests to a General I/O Target in UMDF%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

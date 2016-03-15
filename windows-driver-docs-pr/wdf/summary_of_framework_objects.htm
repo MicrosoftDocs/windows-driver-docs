@@ -1,0 +1,619 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Summary of Framework Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Summary of Framework Objects</title>
+
+<meta name="MS-HAID" content="Ch1_DFPatterns_8f464df3-ca5e-4395-ac0f-14f8df01ad78.xml"/>
+<meta name="MS-HAID" content="kmdf.summary_of_framework_objects"/>
+<meta name="MS-HAID" content="wdf.summary_of_framework_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.summary_of_framework_objects"></a>Summary of Framework Objects</h1>
+</div>
+<p>The following table lists all of the framework objects and provides some basic information about each object. The mode column indicates whether the object can be used in KMDF and UMDF drivers, or KMDF only.</p>
+<p>For a list of callbacks and methods and which frameworks are applicable, see <a href="wdf.summary_of_wdf_callbacks_and_methods">Summary of WDF Callbacks and Methods</a>.</p>
+<p></p>
+<table>
+<tr>
+<th>Name</th>
+<th>Handle</th>
+<th>Purpose</th>
+<th>Default parent</th>
+<th>Can driver override default parent?</th>
+<th>Mode</th>
+<th>Reference</th>
+</tr>
+<tr>
+<td>
+<p>Child-list object</p>
+</td>
+<td>
+<p>WDFCHILDLIST</p>
+</td>
+<td>
+<p>Represents a list of child devices that are connected to a parent device.</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_child-list_object_reference">WDF Child-List Object Reference
+</a></td>
+</tr>
+<tr>
+<td>
+<p>Collection object</p>
+</td>
+<td>
+<p>WDFCOLLECTION</p>
+</td>
+<td>
+<p>Represents an object collection.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_collection_object_reference">WDF Collection Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Common buffer object</p>
+</td>
+<td>
+<p>WDFCOMMONBUFFER</p>
+</td>
+<td>
+<p>Represents a common buffer.</p>
+</td>
+<td>
+<p>DMA enabler object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_common_buffer_object_reference">WDF Common Buffer Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>WDFDEVICE</p>
+</td>
+<td>
+<p>Represents a device.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_device_object_reference">WDF Device Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>DMA enabler object</p>
+</td>
+<td>
+<p>WDFDMAENABLER</p>
+</td>
+<td>
+<p>Enables a driver to use the framework's DMA capabilities.</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_dma_object_reference">WDF DMA Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>DMA transaction object</p>
+</td>
+<td>
+<p>WDFDMATRANSACTION</p>
+</td>
+<td>
+<p>Represents a DMA transaction.</p>
+</td>
+<td>
+<p>DMA enabler object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_dma_object_reference">WDF DMA Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>DPC object</p>
+</td>
+<td>
+<p>WDFDPC</p>
+</td>
+<td>
+<p>Represents a deferred procedure call.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_dpc_object_reference">WDF DPC Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>WDFDRIVER</p>
+</td>
+<td>
+<p>Represents a driver.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_driver_object_reference">WDF Driver Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>File object</p>
+</td>
+<td>
+<p>WDFFILEOBJECT</p>
+</td>
+<td>
+<p>Represents a file.</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_file_object_reference">WDF File Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>General object</p>
+</td>
+<td>
+<p>WDFOBJECT</p>
+</td>
+<td>
+<p>Represents a general object.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_general_object_reference">WDF General Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Interrupt object</p>
+</td>
+<td>
+<p>WDFINTERRUPT</p>
+</td>
+<td>
+<p>Represents a hardware interrupt resource.</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_interrupt_object_reference">WDF Interrupt Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>I/O target object</p>
+</td>
+<td>
+<p>WDFIOTARGET</p>
+</td>
+<td>
+<p>Represents a driver to which another driver sends I/O requests.</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_i_o_target_object_reference">WDF I/O Target Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Lookaside-list object</p>
+</td>
+<td>
+<p>WDFLOOKASIDE</p>
+</td>
+<td>
+<p>Represents a lookaside list.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_memory_object_reference">WDF Memory Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Memory object</p>
+</td>
+<td>
+<p>WDFMEMORY</p>
+</td>
+<td>
+<p>Represents a memory buffer.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_memory_object_reference">WDF Memory Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Queue object</p>
+</td>
+<td>
+<p>WDFQUEUE</p>
+</td>
+<td>
+<p>Represents an I/O queue that receives I/O requests.</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_queue_object_reference">WDF Queue Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Registry key object</p>
+</td>
+<td>
+<p>WDFKEY</p>
+</td>
+<td>
+<p>Represents a registry key.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_registry_key_object_reference">WDF Registry Key Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Request object</p>
+</td>
+<td>
+<p>WDFREQUEST</p>
+</td>
+<td>
+<p>Represents an I/O request.</p>
+</td>
+<td>
+<p>None, if created by framework. Driver object, if created by driver.</p>
+</td>
+<td>
+<p>Yes, if created by driver.</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_request_object_reference">WDF Request Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Resource list object</p>
+</td>
+<td>
+<p>WDFCMRESLIST</p>
+</td>
+<td>
+<p>Represents a resource list.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_resource_object_reference">WDF Resource Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Resource range list object</p>
+</td>
+<td>
+<p>WDFIORESLIST</p>
+</td>
+<td>
+<p>Represents a logical configuration.</p>
+</td>
+<td>
+<p>Resource requirements list object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_resource_object_reference">WDF Resource Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Resource requirements list object</p>
+</td>
+<td>
+<p>WDFIORESREQLIST</p>
+</td>
+<td>
+<p>Represents a resource requirements list.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_resource_object_reference">WDF Resource Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Spin-lock object</p>
+</td>
+<td>
+<p>WDFSPINLOCK</p>
+</td>
+<td>
+<p>Represents a spin lock.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_synchronization_methods">WDF Synchronization Methods</a></td>
+</tr>
+<tr>
+<td>
+<p>String object </p>
+</td>
+<td>
+<p>WDFSTRING</p>
+</td>
+<td>
+<p>Repesents a Unicode string.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_string_object_reference">WDF String Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Timer object</p>
+</td>
+<td>
+<p>WDFTIMER</p>
+</td>
+<td>
+<p>Represents a timer.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_timer_object_reference">WDF Timer Object Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>USB device object</p>
+</td>
+<td>
+<p>WDFUSBDEVICE</p>
+</td>
+<td>
+<p>Represents a device connected to a USB.</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_usb_reference">WDF USB Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>USB interface object</p>
+</td>
+<td>
+<p>WDFUSBINTERFACE</p>
+</td>
+<td>
+<p>Represents a USB device interface.</p>
+</td>
+<td>
+<p>USB device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_usb_reference">WDF USB Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>USB pipe object</p>
+</td>
+<td>
+<p>WDFUSBPIPE</p>
+</td>
+<td>
+<p>Represents a USB device pipe.</p>
+</td>
+<td>
+<p>USB interface object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_usb_reference">WDF USB Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Wait-lock object</p>
+</td>
+<td>
+<p>WDFWAITLOCK</p>
+</td>
+<td>
+<p>Represents a wait lock.</p>
+</td>
+<td>
+<p>Driver object</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_synchronization_methods">WDF Synchronization Methods</a></td>
+</tr>
+<tr>
+<td>
+<p>WMI instance object</p>
+</td>
+<td>
+<p>WDFWMIINSTANCE</p>
+</td>
+<td>
+<p>Represents an instance of a WMI data block.</p>
+</td>
+<td>
+<p>WMI provider object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_wmi_reference">WDF WMI Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>WMI provider object</p>
+</td>
+<td>
+<p>WDFWMIPROVIDER</p>
+</td>
+<td>
+<p>Represents a WMI data block.</p>
+</td>
+<td>
+<p>Device object</p>
+</td>
+<td>
+<p>No</p>
+</td>
+<td>KM</td>
+<td><a href="wdf.wdf_wmi_reference">WDF WMI Reference</a></td>
+</tr>
+<tr>
+<td>
+<p>Work-item object</p>
+</td>
+<td>
+<p>WDFWORKITEM</p>
+</td>
+<td>
+<p>Represents a work item.</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>KM/UM</td>
+<td><a href="wdf.wdf_work-item_object_reference">WDF Work-Item Object Reference
+</a></td>
+</tr>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Summary of Framework Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

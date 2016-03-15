@@ -1,0 +1,110 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="A User Unplugs a Device"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>A User Unplugs a Device</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_41654846-fa49-4f33-a16c-68b3d0badbbe.xml"/>
+<meta name="MS-HAID" content="kmdf.a_user_unplugs_a_device"/>
+<meta name="MS-HAID" content="wdf.a_user_unplugs_a_device"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.a_user_unplugs_a_device"></a>A User Unplugs a Device</h1>
+</div>
+<p>While a system is running, a user can remove a device in one of two ways: by <i>orderly removal</i>, which means that the user informs the system that the device is about to be removed (for example, by using the Unplug or Eject Hardware program); or by <i>surprise removal</i>, which means that the user unplugs the device without informing the system. If the bus supports surprise removal (for example, USB), the device's drivers must be able to handle the device's sudden disappearance.</p>
+<h3><a id="orderly_removal"></a><a id="ORDERLY_REMOVAL"></a>
+      Orderly Removal</h3>
+<p>The user requests removal by using the system's Unplug or Eject Hardware program, by disabling the device by using Device Manager, or by pushing an <a href="supporting_ejectable_devices.htm">ejectable</a> device's eject button. The framework allows the device to be removed or disabled, unless the driver has:</p>
+<ul>
+<li>
+<p>Called <a href="wdf.wdfdevicesetspecialfilesupport"><b>WdfDeviceSetSpecialFileSupport</b></a> and a special file is open on the device.</p>
+</li>
+<li>
+<p>Called <a href="wdf.wdfdevicesetstaticstopremove"><b>WdfDeviceSetStaticStopRemove</b></a>.</p>
+</li>
+<li>
+<p>Supplied an <a href="wdf.evtdevicequeryremove"><i>EvtDeviceQueryRemove</i></a> callback function, and the callback function has vetoed the removal.</p>
+</li>
+</ul>
+<p>For each function and filter driver that supports the device, the framework does the following, in sequence, one driver at a time, starting with the driver that is highest in the driver stack:</p>
+<ol>
+<li>
+<p>If the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.evtdeviceselfmanagediosuspend"><i>EvtDeviceSelfManagedIoSuspend</i></a> callback function.</p>
+</li>
+<li>
+<p>The framework stops all of the driver's power-managed I/O queues.</p>
+</li>
+<li>
+<p>If the hardware and driver support DMA, the framework calls the driver's <a href="wdf.evtdmaenablerselfmanagediostop"><i>EvtDmaEnablerSelfManagedIoStop</i></a>, <a href="wdf.evtdmaenablerflush"><i>EvtDmaEnablerFlush</i></a>, and <a href="wdf.evtdmaenablerdisable"><i>EvtDmaEnablerDisable</i></a> callback functions (if they exist) for each DMA channel that was created.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtdeviced0exitpreinterruptsdisabled"><i>EvtDeviceD0ExitPreInterruptsDisabled</i></a> callback function (if it exists), and then calls the driver's <a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a> callback function (if it exists) for each interrupt so that the driver can disable device interrupts.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a> callback function (if it exists).</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a> callback function (if it exists), passing it the list of hardware resources that the PnP manager has assigned to the device.</p>
+</li>
+<li>
+<p>If the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.evtdeviceselfmanagedioflush"><i>EvtDeviceSelfManagedIoFlush</i></a> callback function.</p>
+</li>
+<li>
+<p>If the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.evtdeviceselfmanagediocleanup"><i>EvtDeviceSelfManagedIoCleanup</i></a> callback function.</p>
+</li>
+</ol>
+<p>The bus driver is the driver in the stack that is called last. When the framework calls the bus driver's <a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a> callback function, the callback function sets the power state of the device (a child device of the bus) to D3. The bus driver can control when the framework calls its <a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a> callback function by calling <a href="wdf.wdfdeviceinitsetreleasehardwareorderonfailure"><b>WdfDeviceInitSetReleaseHardwareOrderOnFailure</b></a>.</p>
+<h3><a id="surprise_removal"></a><a id="SURPRISE_REMOVAL"></a>
+      Surprise Removal</h3>
+<p>A user unplugs a device unexpectedly. The bus driver for the device's bus discovers that the device is missing and calls <a href="wdf.wdfchildlistupdatechilddescriptionasmissing"><b>WdfChildListUpdateChildDescriptionAsMissing</b></a>. </p>
+<p>For each function and filter driver that supports the device, the framework does the following, in sequence, one driver at a time, starting with the driver that is highest in the driver stack:</p>
+<ol>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtdevicesurpriseremoval"><i>EvtDeviceSurpriseRemoval</i></a> callback function (if it exists).</p>
+</li>
+<li>
+<p>If the device was in its working (D0) state when it was unplugged, the framework stops all of the driver's power-managed I/O queues.</p>
+</li>
+<li>
+<p>If the device was in its working (D0) state when it was unplugged, and if the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.evtdeviceselfmanagediosuspend"><i>EvtDeviceSelfManagedIoSuspend</i></a> callback function.</p>
+</li>
+<li>
+<p>If the hardware and driver support DMA, the framework calls the driver's <a href="wdf.evtdmaenablerselfmanagediostop"><i>EvtDmaEnablerSelfManagedIoStop</i></a>, <a href="wdf.evtdmaenablerflush"><i>EvtDmaEnablerFlush</i></a>, and <a href="wdf.evtdmaenablerdisable"><i>EvtDmaEnablerDisable</i></a> callback functions (if they exist) for each DMA channel that was created.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtdeviced0exitpreinterruptsdisabled"><i>EvtDeviceD0ExitPreInterruptsDisabled</i></a> and <a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a> callback functions (if they exist) so that the driver can disable device interrupts.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a> callback function (if it exists).</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a> callback function (if it exists), passing the list of hardware resources that the PnP manager has assigned to the device.</p>
+</li>
+<li>
+<p>If the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.evtdeviceselfmanagedioflush"><i>EvtDeviceSelfManagedIoFlush</i></a> callback function.</p>
+</li>
+<li>
+<p>If the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.evtdeviceselfmanagediocleanup"><i>EvtDeviceSelfManagedIoCleanup</i></a> callback function.</p>
+</li>
+</ol>
+<p>Note that a device can be unexpectedly removed at any time. Therefore, the framework might call the driver's <a href="wdf.evtdevicesurpriseremoval"><i>EvtDeviceSurpriseRemoval</i></a> callback function at a time other than that shown in the previous steps. For example, if a user unexpectedly unplugs the device while it is <a href="a_device_enters_a_low_power_state.htm">entering a low-power state</a>, the framework might call the <a href="wdf.evtdevicesurpriseremoval"><i>EvtDeviceSurpriseRemoval</i></a> callback function after it calls the <a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a> callback function. You must not code an <a href="wdf.evtdevicesurpriseremoval"><i>EvtDeviceSurpriseRemoval</i></a> callback function in a manner that assumes that it and other callback functions are called in a particular sequence.  </p>
+<p>In addition, the framework does not synchronize a device's <a href="wdf.evtdevicesurpriseremoval"><i>EvtDeviceSurpriseRemoval</i></a> callback function with any of the callback functions listed in the previous steps for that device. Therefore, the <a href="wdf.evtdevicesurpriseremoval"><i>EvtDeviceSurpriseRemoval</i></a> callback function might run while another of the previously listed callback functions is also running.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20A User Unplugs a Device%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

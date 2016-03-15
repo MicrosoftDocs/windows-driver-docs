@@ -1,0 +1,85 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Dispatching IRPs to I/O Queues"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Dispatching IRPs to I/O Queues</title>
+
+<meta name="MS-HAID" content="kmdf.forwarding_irps_to_i_o_queues"/>
+<meta name="MS-HAID" content="kmdf.dispatching_irps_to_i_o_queues"/>
+<meta name="MS-HAID" content="wdf.dispatching_irps_to_i_o_queues"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.dispatching_irps_to_i_o_queues"></a>Dispatching IRPs to I/O Queues</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF and UMDF]</p>
+<p>A framework-based driver can dynamically specify a target queue for an incoming IRP. To dispatch an IRP to a specific queue, a driver must call the <a href="wdf.wdfdevicewdmdispatchirptoioqueue"><b>WdfDeviceWdmDispatchIrpToIoQueue</b></a> method.</p>
+<p> Typically, a driver calls <a href="wdf.wdfdevicewdmdispatchirptoioqueue"><b>WdfDeviceWdmDispatchIrpToIoQueue</b></a> from either its <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a> or <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a> callback function. For best performance, most drivers do not provide both callback functions.</p>
+<div class="alert"><b>Note</b>  A UMDF driver can supply a <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a> callback function, but only KMDF drivers can provide <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a>.</div>
+<div> </div>
+<p>If your driver already provides <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a>, you can use it to dynamically select a queue. If not, provide <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a> and call <a href="wdf.wdfdevicewdmdispatchirptoioqueue"><b>WdfDeviceWdmDispatchIrpToIoQueue</b></a> from within that callback function.</p>
+<p>In addition, you should be aware of the following:<ul>
+<li>
+<p>An alternate method for dispatching an IRP to an I/O queue is to <a href="creating_i_o_queues.htm">create a default queue</a> and then from within the queue's handler, call <a href="wdf.wdfrequestforwardtoioqueue"><b>WdfRequestForwardToIoQueue</b></a>. This technique is available starting in KMDF 1.0  but  does not work well with <a href="guaranteeing_forward_progress_of_i_o_operations.htm">forward progress queues</a> and is in general slower.   Consider using <a href="wdf.wdfdevicewdmdispatchirptoioqueue"><b>WdfDeviceWdmDispatchIrpToIoQueue</b></a> instead.</p>
+</li>
+<li>
+<p>When calling <a href="wdf.wdfdeviceconfigurewdmirpdispatchcallback"><b>WdfDeviceConfigureWdmIrpDispatchCallback</b></a> to register a <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a> callback function, the driver must set the <i>MajorFunction</i> parameter to one of the following: IRP_MJ_DEVICE_CONTROL, IRP_MJ_INTERNAL_DEVICE_CONTROL, IRP_MJ_READ, IRP_MJ_WRITE. While this requirement does not apply to  <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a>, only IRPs of these types can be dynamically dispatched to specified queues.</p>
+</li>
+<li>
+<p>IRPs that go to <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a> have an additional stack location.  IRPs that go to <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a> (without a previous
+invocation of <i>EvtDeviceWdmIrpPreprocess</i>) do not.  </p>
+</li>
+<li>
+<p><a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a> does not facilitate sending  driver-defined context information, whereas <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a> does.
+
+
+</p>
+</li>
+</ul>
+</p>
+<h2><a id="Dispatching_Non-Preprocessed_IRPs"></a><a id="dispatching_non-preprocessed_irps"></a><a id="DISPATCHING_NON-PREPROCESSED_IRPS"></a>Dispatching Non-Preprocessed IRPs</h2>
+<p>
+
+To dispatch IRPs from a driver's <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a> callback function, use the following procedure:</p>
+<ol>
+<li>
+<p>From its <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function, the driver calls <a href="wdf.wdfdeviceconfigurewdmirpdispatchcallback"><b>WdfDeviceConfigureWdmIrpDispatchCallback</b></a> to register a <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a> callback function.</p>
+<p> If the target is the parent device's I/O queue, a KMDF driver must call <a href="wdf.wdfpdoinitallowforwardingrequesttoparent"><b>WdfPdoInitAllowForwardingRequestToParent</b></a> before it calls <a href="wdf.wdfdevicecreate"><b>WdfDeviceCreate</b></a>. 
+If a KMDF driver has also provided a <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a> callback function, the framework calls that function first when an IRP arrives. After the callback function preprocesses the request, it calls <a href="wdf.wdfdevicewdmdispatchpreprocessedirp"><b>WdfDeviceWdmDispatchPreprocessedIrp</b></a> to return the IRP to the framework.</p>
+</li>
+<li>The framework calls the driver's <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a> callback function.</li>
+<li>From within <a href="wdf.evtdevicewdmirpdispatch"><i>EvtDeviceWdmIrpDispatch</i></a>, the driver can call either <a href="wdf.wdfdevicewdmdispatchirptoioqueue"><b>WdfDeviceWdmDispatchIrpToIoQueue</b></a> or <a href="wdf.wdfdevicewdmdispatchirp"><b>WdfDeviceWdmDispatchIrp</b></a>, but not both.  A KMDF driver has the additional option of calling neither of these methods, and instead completing the IRP or marking it pending.</li>
+<li>
+            
+If a KMDF driver has set the WDF_FORWARD_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK flag and has not enabled guaranteed forward progress for the target I/O queue, the framework then calls the driver's <a href="wdf.evtioincallercontext"><i>EvtIoInCallerContext</i></a>, if provided.  After  preprocessing the request, the callback function must either queue it by calling <a href="wdf.wdfdeviceenqueuerequest"><b>WdfDeviceEnqueueRequest</b></a> or complete it by calling <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a>.</li>
+</ol>
+<h2><a id="Dispatching_Preprocessed_IRPs"></a><a id="dispatching_preprocessed_irps"></a><a id="DISPATCHING_PREPROCESSED_IRPS"></a>Dispatching Preprocessed IRPs</h2>
+<p>
+
+To dispatch IRPs from a driver's <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a> callback function to a specific I/O queue, use the following procedure:</p>
+<ol>
+<li>The driver registers a <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a> callback function by calling <a href="wdf.wdfdeviceinitassignwdmirppreprocesscallback"><b>WdfDeviceInitAssignWdmIrpPreprocessCallback</b></a>.</li>
+<li>The driver calls <a href="wdf.wdfpdoinitallowforwardingrequesttoparent"><b>WdfPdoInitAllowForwardingRequestToParent</b></a> if the target is the parent device's I/O queue.</li>
+<li>
+From <a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a>, call <a href="wdf.wdfdevicewdmdispatchirptoioqueue"><b>WdfDeviceWdmDispatchIrpToIoQueue</b></a> with <i>Flags</i> set to WDF_FORWARD_IRP_TO_IO_QUEUE_PREPROCESSED_IRP.</li>
+<li>
+If the driver has set the WDF_FORWARD_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK flag and  has not enabled guaranteed forward progress for the target I/O queue, the framework then calls the driver's <a href="wdf.evtioincallercontext"><i>EvtIoInCallerContext</i></a>, if  provided.  After the callback function has finished preprocessing the request, it must either queue it by calling <a href="wdf.wdfdeviceenqueuerequest"><b>WdfDeviceEnqueueRequest</b></a> or complete it by calling <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a>.</li>
+</ol>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Dispatching IRPs to I/O Queues%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

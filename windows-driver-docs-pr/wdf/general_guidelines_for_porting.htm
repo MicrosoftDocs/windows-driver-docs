@@ -1,0 +1,59 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Preparing for Porting"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Preparing for Porting</title>
+
+<meta name="MS-HAID" content="kmdf.general_guidelines_for_porting"/>
+<meta name="MS-HAID" content="wdf.general_guidelines_for_porting"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.general_guidelines_for_porting"></a>Preparing for Porting</h1>
+</div>
+<p>In some ways, converting a driver from WDM to Windows Driver Frameworks (WDF) is more reimplementation than porting. This is neither as difficult nor as time-consuming as you might expect. Most of the WDM driver’s hardware-specific code can remain relatively intact, although it will use some different object types. WDF defaults replace much of the boilerplate code that a WDM driver requires—particularly for Plug and Play—and WDF provides built-in support for many tricky aspects of driver implementation, such as I/O cancellation (and the associated race conditions) and system power state transitions.</p>
+<p>The following general guidelines apply to porting a driver:</p>
+<ul>
+<li>Refer to the <a href="http://go.microsoft.com/fwlink/p/?linkid=256387">samples</a>. WDF ships with a rich set of samples, most of which are ports of the similarly named WDM drivers.</li>
+<li>Work incrementally. Because the framework implements default behavior for I/O, Plug and Play, power management, and WMI requests, you can code and debug one device or driver feature at a time.</li>
+<li>For Kernel-Mode Driver Framework (KMDF), implement WMI event tracing to provide detailed trace logs for use in debugging.</li>
+<li>In many situations, the WDF defaults provide greater functionality than the existing WDM driver might have implemented. Before trying to port complicated code—particularly for synchronization or queue management—be certain what WDF provides. It might save a considerable amount of time spent porting the driver.</li>
+<li>Use the WDF-specific <a href="debugger_extensions_for_kmdf_drivers.htm">debugger extensions</a> that are included in the Windows Driver Kit (WDK).</li>
+<li>Enable the <a href="using_kmdf_verifier.htm">KMDF verifier</a> or <a href="using_umdf_verifier.htm">UMDF verifier</a> while debugging.</li>
+</ul>
+<h2><a id="WDM_Driver_Analysis"></a><a id="wdm_driver_analysis"></a><a id="WDM_DRIVER_ANALYSIS"></a>WDM Driver Analysis</h2>
+<p>Regardless of the type of device and driver involved, the most important issue in porting a driver is to understand the I/O flow through the driver. Before you start writing code, carefully analyze the existing WDM driver. You should be able to answer these questions:</p>
+<ul>
+<li>How many device objects does the driver require, and what driver roles (FDO, PDO, filter DO) do they represent? In nearly all cases, the WDF driver will use the same type and number of device objects as the WDM driver.</li>
+<li>Which I/O requests must the driver support?</li>
+<li>How many queues does the driver require for those requests? What are the characteristics of those queues?</li>
+<li>Which aspects of I/O processing can take place concurrently, and which must be serialized?</li>
+<li>Which I/O requests does the driver complete, and which does it pass down the stack?</li>
+</ul>
+<p>
+The answers to these questions determine how the core of the WDF driver is structured, where and when the I/O processing takes place, what type of synchronization the driver requires, and which WDF objects the driver must create to perform I/O.
+If the driver supports hardware, you must also thoroughly understand the device:</p>
+<ul>
+<li>Does the device generate interrupts?</li>
+<li>Which DMA model (if any) does the hardware support? Note that if your driver requires DMA, you must write a KMDF driver.</li>
+<li>Does the driver manage power policy for the device stack?</li>
+</ul>
+<p>Finally, if the driver supports WMI (also KMDF only), you must understand how to gather the data it exports and which WMI callbacks the driver requires.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Preparing for Porting%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

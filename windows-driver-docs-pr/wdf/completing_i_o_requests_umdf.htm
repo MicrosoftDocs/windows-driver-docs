@@ -1,0 +1,119 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Completing I/O Requests"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Completing I/O Requests</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_c324598d-947a-454d-a790-726b88c35371.xml"/>
+<meta name="MS-HAID" content="umdf.completing_i_o_requests"/>
+<meta name="MS-HAID" content="wdf.completing_i_o_requests_umdf"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.completing_i_o_requests_umdf"></a>Completing I/O Requests</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>Every I/O request must eventually be completed by a UMDF driver. To complete a request, the driver must call either the <a href="wdf.iwdfiorequest_complete"><b>IWDFIoRequest::Complete</b></a> or <a href="wdf.iwdfiorequest_completewithinformation"><b>IWDFIoRequest::CompleteWithInformation</b></a> method. When the driver completes the request, it indicates one of the following scenarios:</p>
+<ul>
+<li>
+<p>The requested I/O operation finished successfully.</p>
+</li>
+<li>
+<p>The requested I/O operation started but failed before it finished.</p>
+</li>
+<li>
+<p>The requested I/O operation is not supported or is not valid at the time it was received and therefore cannot communicate with the device.</p>
+</li>
+<li>
+<p>The requested I/O operation was <a href="canceling_i_o_requests.htm">canceled</a>.</p>
+</li>
+</ul>
+<p>The driver calls the <a href="wdf.iwdfiorequest_completewithinformation"><b>IWDFIoRequest::CompleteWithInformation</b></a> method to pass additional information about the request operation. For example, for a read operation, the driver should provide the number of bytes read.</p>
+<p>To complete an I/O request, the driver must pass the appropriate completion status to the <i>CompletionStatus</i> parameter in the call to <a href="wdf.iwdfiorequest_complete"><b>IWDFIoRequest::Complete</b></a> or <a href="wdf.iwdfiorequest_completewithinformation"><b>IWDFIoRequest::CompleteWithInformation</b></a>. The driver uses an HRESULT code to communicate the status of the completed request. </p>
+<p>The <a href="umdf_driver_host_process.htm">UMDF driver host process</a> converts the HRESULT code to an NTSTATUS code before it passes the completed request to the reflector (Wudfrd.sys). The reflector passes the NTSTATUS code to the operating system. The operating system converts the NTSTATUS code to a Microsoft Win32 error code before it presents the result to the calling application. </p>
+<p>To ensure that your driver's error codes can be converted correctly, you should create error codes by either of the following techniques:</p>
+<ul>
+<li>
+<p>Use an error code from Winerror.h and apply the HRESULT_FROM_WIN32 macro.</p>
+</li>
+<li>
+<p>Use an error code from Ntstatus.h and apply the HRESULT_FROM_NT macro.</p>
+</li>
+</ul>
+<p>For more information about these macros, see the Microsoft Windows SDK documentation.</p>
+<p>The following example code shows how to complete a request with a suitable error code:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+STDMETHODCALLTYPE
+CMyQueue::OnWrite(
+    __in IWDFIoQueue *pWdfQueue,
+    __in IWDFIoRequest *pWdfRequest,
+    __in SIZE_T BytesToWrite
+    )
+{
+            -------------------- 
+    if( BytesToWrite &gt; MAX_WRITE_LENGTH ) {
+        pWdfRequest-&gt;CompleteWithInformation(HRESULT_FROM_WIN32(ERROR_MORE_DATA), 0);
+        return;
+    }
+            ---------------------
+}</pre>
+</td>
+</tr>
+</table></span></div>
+<p>When a driver completes a request successfully, it returns S_OK, which is an HRESULT value. Because S_OK is equivalent to NO_ERROR in Winerror.h and STATUS_SUCCESS in Ntstatus.h, the conversion macros are not needed. </p>
+<p>If <a href="devtest.driver_verifier">Driver Verifier</a> is enabled for the reflector, it identifies an invalid status code and causes a system bugcheck. </p>
+<div class="alert"><b>Note</b>    Driver Verifier for Windows XP incorrectly causes a system bugcheck for Win32 error codes whose values exceed decimal 1024 (1024L). If your driver runs on Windows XP, please be aware of this issue if you enable Driver Verifier for the reflector. </div>
+<div> </div>
+<p>If the driver previously sent a request to a lower-level driver, the driver requires notification when the lower-level driver completes the request. To register for notification, the driver calls the <a href="wdf.iwdfiorequest_setcompletioncallback"><b>IWDFIoRequest::SetCompletionCallback</b></a> method to register the interface for the method that the framework calls when the lower-level driver completes the request. The driver implements the <a href="wdf.irequestcallbackrequestcompletion_oncompletion"><b>IRequestCallbackRequestCompletion::OnCompletion</b></a> callback function to perform the operations required to complete the request.</p>
+<p>A driver does not complete an I/O request that it has created by calling <a href="wdf.iwdfdevice_createrequest"><b>IWDFDevice::CreateRequest</b></a>. Instead, the driver must call <a href="wdf.iwdfobject_deletewdfobject"><b>IWDFObject::DeleteWdfObject</b></a> to delete the request object, typically after an I/O target has completed the request.</p>
+<p>For example, a driver might receive a read or write request for an amount of data that is larger than the driver's I/O targets can handle at one time. The driver must divide the data into several smaller requests and send these smaller requests to one or more I/O targets. Techniques for handling this situation include:</p>
+<ul>
+<li>
+<p>Calling <a href="wdf.iwdfdevice_createrequest"><b>IWDFDevice::CreateRequest</b></a> to create a single additional request object that represents a smaller request. </p>
+<p>The driver can send this request synchronously to an I/O target. The smaller request's <a href="wdf.irequestcallbackrequestcompletion_oncompletion"><b>IRequestCallbackRequestCompletion::OnCompletion</b></a> callback function can call <a href="wdf.iwdfiorequest2_reuse"><b>IWDFIoRequest2::Reuse</b></a> so that the driver can reuse the request and send it to the I/O target again. After the I/O target completes the last of the smaller requests, the <b>OnCompletion</b> callback function can call <a href="wdf.iwdfobject_deletewdfobject"><b>IWDFObject::DeleteWdfObject</b></a> to delete the driver-created request object and the driver can call <a href="wdf.iwdfiorequest_complete"><b>IWDFIoRequest::Complete</b></a> to complete the original request.</p>
+</li>
+<li>
+<p>Calling <a href="wdf.iwdfdevice_createrequest"><b>IWDFDevice::CreateRequest</b></a> to create several additional request objects that represent the smaller requests.</p>
+<p>The driver's I/O targets can process these multiple smaller requests asynchronously. The driver can register a <a href="wdf.irequestcallbackrequestcompletion_oncompletion"><b>OnCompletion</b></a> callback function for each of the smaller requests. Each time that the <b>OnCompletion</b> callback function is called, it can call <a href="wdf.iwdfobject_deletewdfobject"><b>IWDFObject::DeleteWdfObject</b></a> to delete a driver-created request object. After the I/O target completes all of the smaller requests, the driver can call <a href="wdf.iwdfiorequest_complete"><b>IWDFIoRequest::Complete</b></a> to complete the original request.</p>
+</li>
+</ul>
+<h3><a id="obtaining_completion_information"></a><a id="OBTAINING_COMPLETION_INFORMATION"></a>Obtaining Completion Information</h3>
+<p>To obtain information about an I/O request that another driver has completed, a UMDF-based driver can:</p>
+<ul>
+<li>
+<p>Use the <a href="wdf.iwdfrequestcompletionparams"><b>IWDFRequestCompletionParams</b></a> interface to obtain an I/O request's completion status and other information.</p>
+</li>
+<li>
+<p>Use the <a href="wdf.iwdfiorequestcompletionparams"><b>IWDFIoRequestCompletionParams</b></a> interface to obtain an I/O request's memory buffers.</p>
+</li>
+<li>
+<p>Use the 
+<a href="wdf.iwdfusbrequestcompletionparams"><b>IWDFUsbRequestCompletionParams</b></a> 
+interface to obtain memory buffers and other information related to a request that was sent to a USB target pipe object.</p>
+</li>
+</ul>
+<p>In addition, a UMDF-based driver can use the <a href="wdf.iwdfiorequest2_getstatus"><b>IWDFIoRequest2::GetStatus</b></a> method to obtain an I/O request's current status, either before or after the request has been completed.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Completing I/O Requests%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

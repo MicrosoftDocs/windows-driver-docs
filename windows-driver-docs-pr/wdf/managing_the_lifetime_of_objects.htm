@@ -1,0 +1,60 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Managing the Lifetime of Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Managing the Lifetime of Objects</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_f19914c9-8548-4720-a3a4-94fae93f22bd.xml"/>
+<meta name="MS-HAID" content="umdf.managing_the_lifetime_of_objects"/>
+<meta name="MS-HAID" content="wdf.managing_the_lifetime_of_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.managing_the_lifetime_of_objects"></a>Managing the Lifetime of Objects</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>UMDF uses a reference-counting scheme to manage the lifetime of <a href="creating_callback_objects.htm">callback objects</a> and <a href="framework_objects.htm">framework objects</a>.</p>
+<h2><a id="Managing_References_to_Driver-Supplied_Callback_Objects"></a><a id="managing_references_to_driver-supplied_callback_objects"></a><a id="MANAGING_REFERENCES_TO_DRIVER-SUPPLIED_CALLBACK_OBJECTS"></a>Managing References to Driver-Supplied Callback Objects</h2>
+<p>In most cases, a driver is not required to keep a reference to a callback object. If methods of the callback object interface are called only by the framework and by objects whose lifetimes depend on the callback object and the callback object's paired framework object, the driver does not have to keep a reference. In other words, the driver or framework can safely call methods of object interfaces that are higher up in the object hierarchy.</p>
+<h2><a id="Managing_References_to_Framework_Objects"></a><a id="managing_references_to_framework_objects"></a><a id="MANAGING_REFERENCES_TO_FRAMEWORK_OBJECTS"></a>Managing References to Framework Objects</h2>
+<p>In UMDF, general COM lifetime principles and the WDF-specific lifetime model determine the lifetime of framework objects.   Your driver must satisfy criteria for both models so that framework objects are freed from memory at appropriate times.</p>
+<h3><a id="COM_Lifetime_Management"></a><a id="com_lifetime_management"></a><a id="COM_LIFETIME_MANAGEMENT"></a>COM Lifetime Management</h3>
+<p>In COM, a caller typically keeps a reference to the object while the object is in use, and then the caller releases the reference when it no longer requires the object.  However, a UMDF driver does not need to keep a reference to a framework object.  In fact, the driver can release a framework object reference immediately after the driver creates the framework object.</p>
+<p>
+
+For example, UMDF samples release the device object after they call <a href="wdf.iwdfdriver_createdevice"><b>IWDFDriver::CreateDevice</b></a>.  Although the reference is released early, the device object continues to exist until device is removed because the WDF object tree keeps a reference to it.</p>
+<p>Because UMDF tracks all framework objects in an object tree, the driver does not need to keep  a reference to 
+
+framework objects.  </p>
+<p>However, if your driver keeps a reference to a framework object, the driver must release the reference when it no longer needs the object.   A circular reference remains in place until the driver releases its reference. To avoid circular references, the driver typically should not keep an explicit reference to a framework object.</p>
+<p> If the driver must keep a reference to a framework object, the driver's callback object must also implement the <a href="wdf.iobjectcleanup">IObjectCleanup</a> interface. When the driver calls <a href="wdf.iwdfobject_deletewdfobject"><b>IWDFObject::DeleteWdfObject</b></a>  on the framework object, the framework object calls its corresponding callback object's <a href="wdf.iobjectcleanup_oncleanup"><b>IObjectCleanup::OnCleanup</b></a> method. The implementation of <b>IObjectCleanup::OnCleanup</b> must release the reference to the framework object to enable the framework  to complete tear down of the framework object.</p>
+<h3><a id="WDF_Lifetime_Management"></a><a id="wdf_lifetime_management"></a><a id="WDF_LIFETIME_MANAGEMENT"></a>WDF Lifetime Management</h3>
+<p>If you are creating an object of a type that allows you to override  the default parent, you should select a parent with a lifetime that matches the lifetime of your object.  For more information about default parent objects and if the driver can override the default parent, see the table in <a href="framework_objects.htm">Framework Objects</a>.</p>
+<p> If you match object lifetimes, the framework deletes your object when the parent object is deleted. If you do not match object lifetimes and you want 
+
+the object to be deleted  before the default parent is deleted, you can explicitly delete the object by calling <a href="wdf.iwdfobject_deletewdfobject"><b>DeleteWdfObject</b></a> when the object is no longer needed.</p>
+<p>For example, if you create a new request object and then call <a href="wdf.iwdfdriver_createwdfmemory"><b>IWDFDriver::CreateWdfMemory</b></a> to create a memory object for this request, you can specify the request object as the parent of the new memory object.  Because WDF deletes child objects when the parent object is deleted, the driver does not need to call <a href="wdf.iwdfobject_deletewdfobject"><b>DeleteWdfObject</b></a> to delete the memory object.</p>
+<p>However, if  there is no parent whose lifetime closely matches your object's lifetime,  and if you want 
+
+the object to be deleted  before the default parent is deleted, you must use explicit deletion. For example, a driver could create several request objects that are used for a short duration. In this case, the driver can conserve memory by explicitly deleting the requests when they are no longer needed.</p>
+<p>Similarly, if you are creating an object that does not allow you to override the default parent and if you want 
+
+the object to be deleted  before the default parent is deleted, the driver must explicitly delete the object.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Managing the Lifetime of Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="The PnP Manager Redistributes System Resources"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>The PnP Manager Redistributes System Resources</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_96e76aee-69c4-4b66-ab87-99f441e76973.xml"/>
+<meta name="MS-HAID" content="umdf.the_pnp_manager_redistributes_system_resources"/>
+<meta name="MS-HAID" content="wdf.the_pnp_manager_redistributes_system_resources_umdf"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.the_pnp_manager_redistributes_system_resources_umdf"></a>The PnP Manager Redistributes System Resources</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>If a user adds a device to a system, and if the device requires system resources that the PnP manager has already assigned to another device, the PnP manager attempts to reassign resources.</p>
+<p>During this process, the PnP manager stops devices and takes them out of their working (D0) states. It then delivers new resource lists to the devices so that they can restart, using the new resources.</p>
+<p>When redistributing resources, the PnP manager will not alter a device's resource assignment if one of the device's UMDF-based drivers has supplied an <a href="wdf.ipnpcallback_onquerystop"><b>IPnpCallback::OnQueryStop</b></a> callback function, and the callback function has vetoed the reassignment.</p>
+<p></p>
+<dl>
+<dt><a id="Power-Down_Sequence"></a><a id="power-down_sequence"></a><a id="POWER-DOWN_SEQUENCE"></a><b>Power-Down Sequence</b></dt>
+<dd>
+<p>For each UMDF-based function and filter driver that supports the device being stopped, the framework does the following, in sequence, one driver at a time, starting with the driver that is highest in the driver stack:</p>
+<ol>
+<li>
+<p>If the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend"><b>IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend</b></a> callback function.</p>
+</li>
+<li>
+<p>The framework stops all of the device's power-managed I/O queues.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.ipnpcallback_ond0exit"><b>IPnpCallback::OnD0Exit</b></a> callback function (if it exists).</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.ipnpcallbackhardware_onreleasehardware"><b>IPnpCallbackHardware::OnReleaseHardware</b></a> callback function (if it exists) passing the list of hardware resources that the PnP manager has assigned to the device.</p>
+</li>
+</ol>
+<p>To see a diagram that shows these steps, see the orderly removal figure in <a href="a_user_unplugs_a_device.htm">A User Unplugs a Device</a>.</p>
+</dd>
+<dt><a id="Power-Up_Sequence_______"></a><a id="power-up_sequence_______"></a><a id="POWER-UP_SEQUENCE_______"></a><b>Power-Up Sequence
+      </b></dt>
+<dd>
+<p>For each UMDF-based function and filter driver that supports the device, the framework does the following, in sequence, one driver at a time, starting with the driver that is lowest in the driver stack:</p>
+<ol>
+<li>
+<p>The framework calls the driver's <a href="wdf.ipnpcallbackhardware_onpreparehardware"><b>IPnpCallbackHardware::OnPrepareHardware</b></a> callback function (if it exists), passing the list of hardware resources that the PnP manager has assigned to the device.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.ipnpcallback_ond0entry"><b>IPnpCallback::OnD0Entry</b></a> callback function (if it exists).</p>
+</li>
+<li>
+<p>The framework restarts all of the device's power-managed I/O queues.</p>
+</li>
+<li>
+<p>If the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediorestart"><b>IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart</b></a> callback function.</p>
+</li>
+</ol>
+<p>To see a diagram that shows these steps, see <a href="a_user_plugs_in_a_device.htm">A User Plugs in a Device</a>.</p>
+</dd>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20The PnP Manager Redistributes System Resources%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

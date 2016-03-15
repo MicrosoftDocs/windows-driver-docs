@@ -1,0 +1,75 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Handling Requests to Stop a Device"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Handling Requests to Stop a Device</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_ca7d67fd-0654-43b8-a035-0f94083086a4.xml"/>
+<meta name="MS-HAID" content="kmdf.handling_requests_to_stop_a_device"/>
+<meta name="MS-HAID" content="wdf.handling_requests_to_stop_a_device"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.handling_requests_to_stop_a_device"></a>Handling Requests to Stop a Device</h1>
+</div>
+<p>There are two circumstances in which, before asking a device's drivers to stop a device, the PnP manager asks the drivers if stopping the device is a good idea:</p>
+<ul>
+<li>
+<p>A user has plugged in a new device, and the PnP manager must <a href="#redistributing_resources">redistribute the system's hardware resources</a> to accommodate the new device.</p>
+</li>
+<li>
+<p>A user has indicated that he or she would like to <a href="#a_user_removes_or_disables_a_device">remove the device</a>.</p>
+</li>
+</ul>
+<p>There are several ways in which a driver can handle these situations:</p>
+<ul>
+<li>
+<p>If your driver has called <a href="wdf.wdfdevicesetspecialfilesupport"><b>WdfDeviceSetSpecialFileSupport</b></a> because a device is supporting a special file, and if a special file is open on the device, the framework will not allow the device to be stopped. </p>
+</li>
+<li>
+<p>To temporarily prevent all stoppages for a relatively short period of time, the driver can call <a href="wdf.wdfdevicesetstaticstopremove"><b>WdfDeviceSetStaticStopRemove</b></a>.</p>
+</li>
+<li>
+<p>To evaluate and process each stop attempt individually, the driver can provide <a href="wdf.evtdevicequerystop"><i>EvtDeviceQueryStop</i></a> and <a href="wdf.evtdevicequeryremove"><i>EvtDeviceQueryRemove</i></a> callback functions.</p>
+</li>
+</ul>
+<p>If the device is not supporting special files, and if stopping or removing a device is never a problem for the driver or device, the driver doesn't provide <i>EvtDeviceQueryStop</i> and <i>EvtDeviceQueryRemove</i> callback functions and never calls <b>WdfDeviceSetStaticStopRemove</b>. In this case the PnP manager always stops the device without first checking to see if the driver allows it.</p>
+<h3><a id="redistributing_resources"></a><a id="REDISTRIBUTING_RESOURCES"></a>
+      Redistributing Resources</h3>
+<p>Sometimes the PnP manager must redistribute the system's hardware resources. Typically, this redistribution occurs because a bus driver has reported that a new device has been plugged in, and the new device requires already-assigned resources. Devices must be stopped before resources are reassigned. </p>
+<p>If it is necessary for your driver to sometimes prevent the PnP manager from stopping a busy device, the driver can provide an <a href="wdf.evtdevicequerystop"><i>EvtDeviceQueryStop</i></a> callback function. If your driver's <i>EvtDeviceQueryStop</i> callback function returns an error status value, the PnP manager will not stop the device. </p>
+<p>If the driver determines that it is safe to stop the device, the callback function returns STATUS_SUCCESS. If none of the device's other drivers prevent stoppage, the PnP manager temporarily stops the device. </p>
+<p>For information about the order in which the framework calls a driver's event callback functions when the PnP manager stops a device to redistribute resources, see <a href="the_pnp_manager_redistributes_system_resources.htm">The PnP Manager Redistributes System Resources</a>.</p>
+<h3><a id="a_user_removes_or_disables_a_device"></a><a id="A_USER_REMOVES_OR_DISABLES_A_DEVICE"></a>
+      A User Removes or Disables a Device</h3>
+<p>A user can remove or disable some devices. For example:</p>
+<ul>
+<li>
+<p>If your driver has set the <b>Removable</b> member (and not the <b>SurpriseRemovalOK</b> member) of the device's <a href="wdf.wdf_device_pnp_capabilities"><b>WDF_DEVICE_PNP_CAPABILITIES</b></a> structure, the user can run the Unplug or Eject Hardware program and then unplug or eject the device.</p>
+</li>
+<li>
+<p>If your driver has not set the <b>NotDisableable</b> member of the device's <a href="wdf.wdf_device_state"><b>WDF_DEVICE_STATE</b></a> structure, the user can use Device Manager to disable the device.</p>
+</li>
+</ul>
+<p>In such cases, the PnP manager attempts to stop the device before the user removes it. </p>
+<p>If it is necessary for your driver to sometimes prevent removal of a busy device, the driver can provide an <a href="wdf.evtdevicequeryremove"><i>EvtDeviceQueryRemove</i></a> callback function. If any driver's <i>EvtDeviceQueryRemove</i> callback function returns an error status value, the PnP manager will not stop the device. </p>
+<p>If the driver determines that it is safe for the user to remove the device, the callback function returns STATUS_SUCCESS. If none of the device's other drivers prevent removal, the PnP manager stops the device. </p>
+<p>For information about the order in which the framework calls a driver's event callback functions when stopping a device for removal, see <a href="a_user_unplugs_a_device.htm">A User Unplugs a Device</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Handling Requests to Stop a Device%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

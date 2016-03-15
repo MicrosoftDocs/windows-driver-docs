@@ -1,0 +1,61 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic describes the Microsoft-supplied redistributable framework updates that are included as part of the Windows Driver Kit (WDK) for Windows 8.1, and how to determine which ones to add to your driver package."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Redistributable Framework Components</title>
+
+<meta name="MS-HAID" content="Ch0_DFArchOverview_adad62a1-dc0a-4195-8f54-c7d96d2210dd.xml"/>
+<meta name="MS-HAID" content="kmdf.installation_components_for_framework_based_drivers"/>
+<meta name="MS-HAID" content="kmdf.installation_components_for_kmdf_drivers"/>
+<meta name="MS-HAID" content="wdf.installation_components_for_kmdf_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.installation_components_for_kmdf_drivers"></a>Redistributable Framework Components</h1>
+</div>
+<p>This topic describes the Microsoft-supplied redistributable framework updates that are included as part of the  Windows Driver Kit (WDK) for Windows 8.1, and how to determine which ones to add to your driver package.</p>
+<p>To determine if you need to include any framework updates at all in your driver package, see <a href="building_and_loading_a_kmdf_driver.htm">Building and Loading a WDF Driver</a>. If you don't, skip this topic.</p>
+<h2><a id="Should_I_include_the_co-installer_or_the_.msu_file_"></a><a id="should_i_include_the_co-installer_or_the_.msu_file_"></a><a id="SHOULD_I_INCLUDE_THE_CO-INSTALLER_OR_THE_.MSU_FILE_"></a>Should I include the co-installer or the .msu file?</h2>
+<p>If your driver installation is triggered by plugging in a new hardware device to a system and you are installing only the driver, include the co-installer in your driver package. Then reference the co-installer in your INF file, as described in <a href="installing_the_framework_s_co_installer.htm">Specifying the  KMDF Co-installer in an INF File</a>.</p>
+<p>If you need to install  an application in addition to your driver, you should instead redistribute the relevant MSU package (for example kmdf-1.11-Win.6.0.msu) along with a setup application that calls it.  You can find a sample of such an application in the WDK, in the src\general\installwdf directory.</p>
+<p>In the latter case, no INF entries are needed.</p>
+<h2><a id="Where_can_I_find_these_files__and_what_s_included_"></a><a id="where_can_i_find_these_files__and_what_s_included_"></a><a id="WHERE_CAN_I_FIND_THESE_FILES__AND_WHAT_S_INCLUDED_"></a>Where can I find these files, and what's included?</h2>
+<p>When you build your driver in Visual Studio, MSBuild places  the co-installer in the resulting Package directory, along with the driver's .<i>sys</i> and INF files.</p>
+<p>The full set of redistributable framework update files is located in <i>%programfiles%</i>\windows kits\<i>&lt;WDK version&gt;</i>\redist\wdf.</p>
+<p>This directory contains the following files, for x86 and x64:</p>
+<ul>
+<li><i>WdfCoinstaller01009.dll</i>, <i>wdfcoinstaller01011.dll</i> (co-installers for KMDF 1.9/1.11).</li>
+<li><i>WUDFUpdate_01009.dll</i>, <i>WUDFUpdate_01011.dll</i> (co-installers for UMDF).</li>
+<li><i>winusbcoinstaller.dll</i>, <i>winusbcoinstaller2.dll</i>  (co-installers for WinUSB 1.5/1.9).</li>
+<li><i>WinUSB_1.9.msu</i> – WinUSB version 1.9 update, also available as <a href="http://support.microsoft.com/kb/971286">KB971286</a>.</li>
+<li><i>kmdf-1.11-Win-6.0.msu</i>, <i>kmdf-1.11-Win-6.1.msu</i> - Windows Update package for KMDF 1.11 for Windows Vista (v6.0) / Windows 7 (v6.1).</li>
+<li><i>umdf-1.11-Win-6.0.msu</i>, <i>umdf-1.11-Win-6.1.msu</i> – Windows Update package for UMDF 1.11 for Windows Vista (v6.0) / Windows 7 (v6.1).</li>
+</ul>
+<h2><a id="Co-installer_Naming_and_Versioning"></a><a id="co-installer_naming_and_versioning"></a><a id="CO-INSTALLER_NAMING_AND_VERSIONING"></a>Co-installer Naming and Versioning</h2>
+<p>The co-installer is named 
+       <b>WdfCoInstaller</b><i>MMmmm</i><b>.dll</b>.</p>
+<ul>
+<li><i>MM</i> is the major version number.</li>
+<li><i>mmm</i> is the minor version number.</li>
+</ul>
+<p>For example, the filename for version 1.0 of the co-installer is <i>WdfCoInstaller01000.dll</i>, and the filename for version 1.11 is <i>WdfCoInstaller01011.dll</i>.</p>
+<p>The version of the co-installer that you include with your driver package must match the version of the framework library that you use to develop your driver.</p>
+<p>Note that the framework library's file name includes only the major version number. For more information about library file names, see <a href="framework_library_versioning.htm">Framework Library Versioning</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Redistributable Framework Components%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

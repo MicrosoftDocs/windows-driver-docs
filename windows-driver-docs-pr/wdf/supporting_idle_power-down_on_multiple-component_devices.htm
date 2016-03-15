@@ -1,0 +1,66 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Supporting Idle Power-Down on Multiple-Component Devices"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Supporting Idle Power-Down on Multiple-Component Devices</title>
+
+<meta name="MS-HAID" content="kmdf.supporting_idle_power-down_on_multiple-component_devices"/>
+<meta name="MS-HAID" content="wdf.supporting_idle_power-down_on_multiple-component_devices"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.supporting_idle_power-down_on_multiple-component_devices"></a>Supporting Idle Power-Down on Multiple-Component Devices</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<p>A KMDF driver for a multiple-component device can support <a href="supporting_idle_power_down.htm">idle power-down</a> and functional power states. Because in this case the driver registers directly with the power management framework (PoFx), the driver must coordinate the resulting Dx state changes with PoFx.</p>
+<h2><a id="Providing_Device_Power_Policy_Idle_Settings"></a><a id="providing_device_power_policy_idle_settings"></a><a id="PROVIDING_DEVICE_POWER_POLICY_IDLE_SETTINGS"></a>Providing Device Power Policy Idle Settings</h2>
+<p>When it calls <a href="wdf.wdfdeviceassigns0idlesettings"><b>WdfDeviceAssignS0IdleSettings</b></a>,  the driver must set <b>IdleTimeoutType</b> to <b>DriverManagedIdleTimeout</b> in the <a href="wdf.wdf_device_power_policy_idle_settings"><b>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b></a> structure. In addition, the driver must set <b>PowerUpIdleDeviceOnSystemWake</b> to <b>WdfTrue</b>, and <b>IdleCaps</b> to <a href="wdf.wdf_power_policy_s0_idle_capabilities"><b>IdleCannotWakeFromS0</b></a>, as shown in the following example.</p>
+<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
+<tr>
+<th>C++</th>
+</tr>
+<tr>
+<td>
+<pre>
+WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS s0IdleSettings;
+
+WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&amp;s0IdleSettings, 
+                                           IdleCannotWakeFromS0);
+s0IdleSettings.IdleTimeoutType = DriverManagedIdleTimeout;
+s0IdleSettings.PowerUpIdleDeviceOnSystemWake = WdfTrue;
+s0IdleSettings.IdleTimeout = 1;
+status = WdfDeviceAssignS0IdleSettings(device, &amp;s0IdleSettings);</pre>
+</td>
+</tr>
+</table></span></div>
+<h2><a id="Transitioning_from_Working__D0__to_Low-Power__Dx__State"></a><a id="transitioning_from_working__d0__to_low-power__dx__state"></a><a id="TRANSITIONING_FROM_WORKING__D0__TO_LOW-POWER__DX__STATE"></a>Transitioning from Working (D0) to Low-Power (Dx) State</h2>
+<p> In <a href="wdf.evtdeviceselfmanagedioinit"><i>EvtDeviceSelfManagedIoInit</i></a>, the driver calls <a href="wdf.wdfdevicestopidle"><b>WdfDeviceStopIdle</b></a> to take a power reference, which prevents WDF from putting the device in a low-power state.</p>
+<p>The driver releases the power reference by calling <a href="wdf.wdfdeviceresumeidle"><b>WdfDeviceResumeIdle</b></a> from its <a href="kernel.devicepowerrequiredcallback"><i>DevicePowerRequiredCallback</i></a> callback routine.</p>
+<p> The driver typically specifies a very short idle timeout so that WDF puts the device into a low-power state soon after all power references are released.</p>
+<h2><a id="Transitioning_from_Low-Power__Dx__to_Working__D0__State"></a><a id="transitioning_from_low-power__dx__to_working__d0__state"></a><a id="TRANSITIONING_FROM_LOW-POWER__DX__TO_WORKING__D0__STATE"></a>Transitioning from Low-Power (Dx) to Working (D0) State</h2>
+<p>In <a href="kernel.devicepowerrequiredcallback"><i>DevicePowerRequiredCallback</i></a>, the driver must bring the device to its working (D0) state. To do so, it must defer to a worker thread a call to <a href="wdf.wdfdevicestopidle"><b>WdfDeviceStopIdle</b></a> with the <i>WaitForD0</i> parameter set to TRUE. 
+
+This blocking call to <b>WdfDeviceStopIdle</b> must <i>not be made</i> from within <i>DevicePowerRequiredCallback</i>. </p>
+<p>Instead, the driver must defer the blocking call to a worker thread that is running at passive level and is guaranteed not to make the <a href="wdf.wdfdevicestopidle"><b>WdfDeviceStopIdle</b></a> call in the context of a power-managed queue’s I/O dispatch routine.</p>
+<p> If the driver has previously called <a href="wdf.wdfdeviceinitsetpowerpageable"><b>WdfDeviceInitSetPowerPageable</b></a> (meaning it can access pageable data during power transitions), the driver can call <a href="wdf.wdfworkitemcreate"><b>WdfWorkItemCreate</b></a> to create a framework work item. If the driver has not set power-pageable, the driver must create its own system thread. For more information, see <a href="kernel.pscreatesystemthread"><b>PsCreateSystemThread</b></a>.</p>
+<p>After <a href="wdf.wdfdevicestopidle"><b>WdfDeviceStopIdle</b></a> returns, even if 
+
+the method returns an error, the driver must call <a href="kernel.pofxreportdevicepoweredon"><b>PoFxReportDevicePoweredOn</b></a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Supporting Idle Power-Down on Multiple-Component Devices%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

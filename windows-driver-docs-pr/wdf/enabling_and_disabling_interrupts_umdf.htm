@@ -1,0 +1,44 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Enabling and Disabling Interrupts"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Enabling and Disabling Interrupts</title>
+
+<meta name="MS-HAID" content="umdf.enabling_and_disabling_interrupts"/>
+<meta name="MS-HAID" content="wdf.enabling_and_disabling_interrupts_umdf"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.enabling_and_disabling_interrupts_umdf"></a>Enabling and Disabling Interrupts</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>If your driver handles device interrupts, it must provide <a href="wdf.oninterruptenable"><i>OnInterruptEnable</i></a> and <a href="wdf.oninterruptdisable"><i>OnInterruptDisable</i></a> callback functions that enable and disable the interrupts. These callback functions must do whatever is necessary to enable and disable a device's interrupt mechanism.</p>
+<p> 
+If your driver must perform additional operations that are related to enabling or disabling interrupts, the driver can also provide <a href="wdf.ipnpcallbackhardwareinterrupt_ond0entrypostinterruptsenabled"><b>IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled</b></a> and <a href="wdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled"><b>IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled</b></a> callback functions. 
+</p>
+<p>The framework calls the driver's <a href="wdf.oninterruptenable"><i>OnInterruptEnable</i></a> and <a href="wdf.ipnpcallbackhardwareinterrupt_ond0entrypostinterruptsenabled"><b>IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled</b></a> callback functions each time the device enters its working (D0) state, after the framework has called the driver's <a href="wdf.ipnpcallback_ond0entry"><b>OnD0Entry</b></a> callback function. The framework calls the driver's <a href="wdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled"><b>IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled</b></a> and <a href="wdf.oninterruptdisable"><i>OnInterruptDisable</i></a> callback functions each time the device leaves its working state, before the framework calls the driver's <a href="wdf.ipnpcallback_ond0exit"><b>OnD0Exit</b></a> callback function. For more information about when the framework calls a driver's callback functions, see <a href="pnp_and_power_management_in_umdf_drivers.htm">PnP and Power Management in UMDF-based Drivers</a>.
+</p>
+<p>You must not assume that a device will use the same interrupt resources each time the framework calls your driver's <a href="wdf.oninterruptenable"><i>OnInterruptEnable</i></a> callback function. Sometimes the PnP manager redistributes system resources, and it might assign new interrupt resources to your device. 
+</p>
+<p>The driver can call <a href="wdf.iwdfinterrupt_getinfo"><b>IWDFInterrupt::GetInfo</b></a> to determine a device's interrupt resources. The driver can call <a href="wdf.iwdfinterrupt_getdevice"><b>IWDFInterrupt::GetDevice</b></a> to determine the device that an interrupt object belongs to.</p>
+<p> 
+To enable and disable interrupts directly, the driver can call the interrupt object's <a href="wdf.iwdfinterrupt_enable"><b>IWDFInterrupt::Enable</b></a> and <a href="wdf.iwdfinterrupt_disable"><b>IWDFInterrupt::Disable</b></a> methods, which call the driver's <a href="wdf.oninterruptenable"><i>OnInterruptEnable</i></a> and <a href="wdf.oninterruptdisable"><i>OnInterruptDisable</i></a> event callback functions. However, most drivers should just allow the framework to call the <i>OnInterruptEnable</i> and <i>OnInterruptDisable</i> callback functions at the proper times.
+</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Enabling and Disabling Interrupts%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

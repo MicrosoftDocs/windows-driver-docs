@@ -1,0 +1,68 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Framework Object Creation Errors"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Framework Object Creation Errors</title>
+
+<meta name="MS-HAID" content="Ch1_DFPatterns_1422c32f-9053-4703-86c5-c9eaf06fb570.xml"/>
+<meta name="MS-HAID" content="kmdf.framework_object_creation_errors"/>
+<meta name="MS-HAID" content="wdf.framework_object_creation_errors"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.framework_object_creation_errors"></a>Framework Object Creation Errors</h1>
+</div>
+<p>When a driver's attempt to create a framework object fails, the object creation method returns an NTSTATUS value that indicates the failure type.</p>
+<p>If the driver specifies invalid information in a <a href="wdf.wdf_object_attributes"><b>WDF_OBJECT_ATTRIBUTES</b></a> structure, the framework can return:</p>
+<p></p>
+<dl>
+<dt><a id="STATUS_WDF_OBJECT_ATTRIBUTES_INVALID"></a><a id="status_wdf_object_attributes_invalid"></a>STATUS_WDF_OBJECT_ATTRIBUTES_INVALID</dt>
+<dd>
+<p>The driver specified an object context name, but the context size is zero.</p>
+<p>The driver specified a context size override value, but it did not provide a <a href="wdf.wdf_object_context_type_info"><b>WDF_OBJECT_CONTEXT_TYPE_INFO</b></a> structure.</p>
+<p>The driver specified a <b>ContextSizeOverride</b> value in WDF_OBJECT_ATTRIBUTES that is less than the <b>ContextSize</b> member of the WDF_OBJECT_CONTEXT_TYPE_INFO structure.</p>
+<p>The driver specified an <b>ExecutionLevel</b> value in WDF_OBJECT_ATTRIBUTES that is not within the valid range of values.</p>
+<p>The driver specified an <b>SynchronizationScope</b> value in WDF_OBJECT_ATTRIBUTES that is not within the valid range of values.</p>
+</dd>
+<dt><a id="STATUS_WDF_PARENT_ASSIGNMENT_NOT_ALLOWED"></a><a id="status_wdf_parent_assignment_not_allowed"></a>STATUS_WDF_PARENT_ASSIGNMENT_NOT_ALLOWED</dt>
+<dd>
+<p>The driver attempted to assign a parent to the object, but the framework does not allow drivers to assign parents to the object type.  </p>
+</dd>
+<dt><a id="STATUS_WDF_PARENT_ALREADY_ASSIGNED"></a><a id="status_wdf_parent_already_assigned"></a>STATUS_WDF_PARENT_ALREADY_ASSIGNED</dt>
+<dd>
+<p>The driver attempted to assign a parent to an object, but a parent is already assigned to the object.</p>
+</dd>
+<dt><a id="STATUS_WDF_PARENT_IS_SELF"></a><a id="status_wdf_parent_is_self"></a>STATUS_WDF_PARENT_IS_SELF</dt>
+<dd>
+<p>The driver attempted to make an object its own parent.</p>
+</dd>
+<dt><a id="STATUS_WDF_SYNCHRONIZATION_SCOPE_INVALID"></a><a id="status_wdf_synchronization_scope_invalid"></a>STATUS_WDF_SYNCHRONIZATION_SCOPE_INVALID</dt>
+<dd>
+<p>The driver specified a <a href="wdf.wdf_synchronization_scope"><b>WDF_SYNCHRONIZATION_SCOPE</b></a>-typed value that is invalid for the object type.  </p>
+</dd>
+<dt><a id="STATUS_WDF_EXECUTION_LEVEL_INVALID"></a><a id="status_wdf_execution_level_invalid"></a>STATUS_WDF_EXECUTION_LEVEL_INVALID</dt>
+<dd>
+<p>The driver specified a <a href="wdf.wdf_execution_level"><b>WDF_EXECUTION_LEVEL</b></a>-typed value that is invalid for the object type.  </p>
+</dd>
+</dl>
+<p>If the <b>Size</b> member of any framework-defined structure does not match the structure's actual size, the framework can return STATUS_INFO_LENGTH_MISMATCH.</p>
+<p>If the framework cannot allocate memory for the new object, it can return STATUS_INSUFFICIENT_RESOURCES.</p>
+<p>Individual object creation methods might also return additional <a href="kernel.ntstatus_values">NTSTATUS values</a>. For more information about each creation method's additional return values, see the method's reference page.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Framework Object Creation Errors%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

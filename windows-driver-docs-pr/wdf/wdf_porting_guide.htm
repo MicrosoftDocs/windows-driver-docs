@@ -1,0 +1,45 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="The topics in this section describe how to convert an existing WDM driver to a Kernel-Mode Driver Framework (KMDF) driver or a User-Mode Driver Framework (UMDF) version 2 driver."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Porting a Driver from WDM to WDF</title>
+
+<meta name="MS-HAID" content="kmdf.wdf_porting_guide"/>
+<meta name="MS-HAID" content="wdf.wdf_porting_guide"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.wdf_porting_guide"></a>Porting a Driver from WDM to WDF</h1>
+</div>
+<p>The topics in this section describe how to convert an existing WDM driver to a Kernel-Mode Driver Framework (KMDF) driver or a User-Mode Driver Framework (UMDF) version 2 driver.</p>
+<p>
+Architecturally, Windows Driver Frameworks (WDF) drivers are similar to WDM drivers. A WDM driver consists of a <a href="kernel.driverentry"><i>DriverEntry</i></a> function, various dispatch routines that the operating system calls to service I/O requests, and additional driver-specific utility functions.  A WDF driver consists of a <a href="wdf.driverentry_for_kmdf_drivers"><b>DriverEntry</b></a> function, various event callback functions that the framework calls to service I/O requests, and additional driver-specific utility functions.  However, within this broad structure, the two models have important differences.</p>
+<p>
+<h2><a id="in_this_section"></a>In this section</h2>
+<ul>
+<li><a href="which_drivers_can_be_ported.htm">Which Drivers Can Be Ported and Where</a></li>
+<li><a href="wdm_concepts_for_kmdf_drivers.htm">WDM Concepts for WDF Drivers</a></li>
+<li><a href="differences_between_wdm_and_kmdf.htm">Differences Between WDM and WDF</a></li>
+<li><a href="general_guidelines_for_porting.htm">Preparing for Porting</a></li>
+<li><a href="how_to_port.htm">Steps in Porting</a></li>
+<li><a href="summary_of_kmdf_and_wdm_equivalents.htm">Summary of KMDF and WDM Equivalents</a></li>
+</ul>
+</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Porting a Driver from WDM to WDF%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

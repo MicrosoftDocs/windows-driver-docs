@@ -1,0 +1,331 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic lists versions of Kernel-Mode Driver Framework (KMDF), the corresponding versions of the Windows operating system, and the changes made in each release."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>KMDF Version History</title>
+
+<meta name="MS-HAID" content="Ch0_DFArchOverview_96c0a4e3-3e02-43cd-8303-6fe254694209.xml"/>
+<meta name="MS-HAID" content="kmdf.kmdf_revision_history"/>
+<meta name="MS-HAID" content="kmdf.kmdf_version_history"/>
+<meta name="MS-HAID" content="wdf.kmdf_version_history"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.kmdf_version_history"></a>KMDF Version History</h1>
+</div>
+<p>This topic lists versions of Kernel-Mode Driver Framework (KMDF), the corresponding versions of the Windows operating system, and the changes made in each release.</p>
+<p>  The following table shows the release history of the KMDF library:</p>
+<table>
+<tr>
+<th>KMDF  version</th>
+<th>Release method</th>
+<th>Included in this version of Windows</th>
+<th>Drivers using it run on <sup>&#x2020;</sup></th>
+</tr>
+<tr>
+<td>
+<p>1.17</p>
+</td>
+<td>
+<p>Windows 10, version 1511 WDK</p>
+</td>
+<td>
+<p>Windows 10, version 1511</p>
+</td>
+<td>
+<p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education),  Windows 10 Mobile, Windows 10 IoT Core (IoT Core), Windows Server 2016 Technical Preview</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1.15</p>
+</td>
+<td>
+<p>Windows 10 WDK</p>
+</td>
+<td>
+<p>Windows 10 WDK</p>
+</td>
+<td>
+<p>Windows 10 for desktop editions,  Windows 10 Mobile, IoT Core, Windows Server 2016 Technical Preview</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1.13</p>
+</td>
+<td>
+<p>Windows 8.1 WDK</p>
+</td>
+<td>
+<p>Windows 8.1</p>
+</td>
+<td>
+<p>Windows 8.1
+              and later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1.11</p>
+</td>
+<td>
+<p>Windows 8 WDK</p>
+</td>
+<td>
+<p>Windows 8</p>
+</td>
+<td>
+<p>Windows Vista and later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1.9</p>
+</td>
+<td>
+<p>Windows 7 WDK</p>
+</td>
+<td>
+<p>Windows 7</p>
+</td>
+<td>
+<p>Windows XP and later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1.7</p>
+</td>
+<td>
+<p>Windows Server 2008 WDK</p>
+</td>
+<td>
+<p>Windows Vista with Service Pack 1 (SP1), Windows Server 2008</p>
+</td>
+<td>
+<p>Windows 2000 and later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1.5</p>
+</td>
+<td>
+<p>Windows Vista WDK</p>
+</td>
+<td>
+<p>Windows Vista</p>
+</td>
+<td>
+<p>Windows 2000 and later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1.1</p>
+</td>
+<td>
+<p>Download only</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Windows 2000 and later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1.0</p>
+</td>
+<td>
+<p>Download only</p>
+</td>
+<td>
+<p>None</p>
+</td>
+<td>
+<p>Windows XP and later</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<p>You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.</p>
+<p>For a complete list of callbacks and methods, and which frameworks and versions they apply to, see <a href="wdf.summary_of_wdf_callbacks_and_methods">Summary of WDF Callbacks and Methods</a>.</p>
+<h2><a id="KMDF_Versions_1.15_and_1.17"></a><a id="kmdf_versions_1.15_and_1.17"></a><a id="KMDF_VERSIONS_1.15_AND_1.17"></a>KMDF Versions 1.15 and 1.17</h2>
+<p>For information about the new features for KMDF drivers in Windows 10, see <a href="what_s_new_for_wdf_drivers.htm">What's New for  WDF Drivers</a>.</p>
+<p>Here is the list of updated DDIs for version 1.15:</p>
+<ul>
+<li>
+<p>The new <a href="wdf.wdfdeviceopendevicemapkey"><b>WdfDeviceOpenDevicemapKey</b></a> method allows a driver to access subkeys and values under <b>HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP</b>. </p>
+</li>
+</ul>
+<h2><a id="KMDF_Version_1.13"></a><a id="kmdf_version_1.13"></a><a id="KMDF_VERSION_1.13"></a>KMDF Version 1.13</h2>
+<p>KMDF version 1.13 adds the following functionality:</p>
+<ul>
+<li>Added <b>CanWakeDevice</b> member to <a href="wdf.wdf_interrupt_config"><b>WDF_INTERRUPT_CONFIG</b></a> structure to support interrupts that can be used to bring a device from a low-power Dx state back to its fully on D0 state. For more information, see <a href="using_an_interrupt_to_wake_a_device.htm">Using an Interrupt to Wake a Device</a>.</li>
+<li>Support for high resolution timers.  For more information, see <a href="using_timers.htm">Using Timers</a>.</li>
+<li>Support for timers that do not wake the system if they expire when the system is in a low-power state. For more information, see <a href="using_timers.htm">Using Timers</a>.</li>
+<li>The following KMDF/UMDF methods described in <a href="accessing_the_unified_device_property_model.htm">Accessing the Unified Device Property Model</a>:<ul>
+<li><a href="wdf.wdfdeviceallocandquerypropertyex"><b>WdfDeviceAllocAndQueryPropertyEx</b></a></li>
+<li><a href="wdf.wdfdeviceassignproperty"><b>WdfDeviceAssignProperty</b></a></li>
+<li><a href="wdf.wdfdeviceinitsetiotypeex"><b>WdfDeviceInitSetIoTypeEx</b></a></li>
+<li><a href="wdf.wdfdevicequerypropertyex"><b>WdfDeviceQueryPropertyEx</b></a></li>
+<li><a href="wdf.wdffdoinitallocandquerypropertyex"><b>WdfFdoInitAllocAndQueryPropertyEx</b></a></li>
+<li><a href="wdf.wdffdoinitquerypropertyex"><b>WdfFdoInitQueryPropertyEx</b></a></li>
+</ul>
+</li>
+</ul>
+<p>For information about UMDF versions, see <a href="umdf_version_history.htm">UMDF Version History</a>.</p>
+<h2><a id="KMDF_Version_1.11"></a><a id="kmdf_version_1.11"></a><a id="KMDF_VERSION_1.11"></a>KMDF Version 1.11</h2>
+<p>Version 1.11 adds the following functionality:</p>
+<ul>
+<li>
+<p><a href="supporting_system-mode_dma.htm">System-mode DMA</a></p>
+</li>
+<li>
+<p>Support for <a href="supporting_passive_level_interrupts.htm">passive-level interrupts</a></p>
+</li>
+<li>
+<p><a href="supporting_functional_power_states.htm">Functional power states</a> for multiple components within a single device</p>
+</li>
+<li><a href="dispatching_irps_to_i_o_queues.htm">Dispatching IRPs to I/O Queues</a></li>
+<li>The following methods:<dl>
+<dd><a href="wdf.wdfdeviceconfigurewdmirpdispatchcallback"><b>WdfDeviceConfigureWdmIrpDispatchCallback</b></a></dd>
+<dd><a href="wdf.wdfdeviceinitsetreleasehardwareorderonfailure"><b>WdfDeviceInitSetReleaseHardwareOrderOnFailure</b></a></dd>
+<dd><a href="wdf.wdfdeviceinitsetremovelockoptions"><b>WdfDeviceInitSetRemoveLockOptions</b></a></dd>
+<dd><a href="wdf.wdfdevicewdmdispatchirp"><b>WdfDeviceWdmDispatchIrp</b></a></dd>
+<dd><a href="wdf.wdfdmaenablerconfiguresystemprofile"><b>WdfDmaEnablerConfigureSystemProfile</b></a></dd>
+<dd><a href="wdf.wdfdmatransactionallocateresources"><b>WdfDmaTransactionAllocateResources</b></a></dd>
+<dd><a href="wdf.wdfdmatransactioncancel"><b>WdfDmaTransactionCancel</b></a></dd>
+<dd><a href="wdf.wdfdmatransactionfreeresources"><b>WdfDmaTransactionFreeResources</b></a></dd>
+<dd><a href="wdf.wdfdmatransactiongettransferinfo"><b>WdfDmaTransactionGetTransferInfo</b></a></dd>
+<dd><a href="wdf.wdfdmatransactioninitializeusingoffset"><b>WdfDmaTransactionInitializeUsingOffset</b></a></dd>
+<dd><a href="wdf.wdfdmatransactionsetchannelconfigurationcallback"><b>WdfDmaTransactionSetChannelConfigurationCallback</b></a></dd>
+<dd><a href="wdf.wdfdmatransactionsetdeviceaddressoffset"><b>WdfDmaTransactionSetDeviceAddressOffset</b></a></dd>
+<dd><a href="wdf.wdfdmatransactionsetimmediateexecution"><b>WdfDmaTransactionSetImmediateExecution</b></a></dd>
+<dd><a href="wdf.wdfdmatransactionsettransfercompletecallback"><b>WdfDmaTransactionSetTransferCompleteCallback</b></a></dd>
+<dd><a href="wdf.wdfdmatransactionwdmgettransfercontext"><b>WdfDmaTransactionWdmGetTransferContext</b></a></dd>
+<dd><a href="wdf.wdfinterruptqueueworkitemforisr"><b>WdfInterruptQueueWorkItemForIsr</b></a></dd>
+<dd><a href="wdf.wdfinterruptreportactive"><b>WdfInterruptReportActive</b></a></dd>
+<dd><a href="wdf.wdfinterruptreportinactive"><b>WdfInterruptReportInactive</b></a></dd>
+<dd><a href="wdf.wdfinterrupttrytoacquirelock"><b>WdfInterruptTryToAcquireLock</b></a></dd>
+<dd><a href="wdf.wdfioqueuestopandpurge"><b>WdfIoQueueStopAndPurge</b></a></dd>
+<dd><a href="wdf.wdfioqueuestopandpurgesynchronously"><b>WdfIoQueueStopAndPurgeSynchronously</b></a></dd>
+<dd><a href="wdf.wdfiotargetpurge"><b>WdfIoTargetPurge</b></a></dd>
+<dd><a href="wdf.wdfusbtargetdevicecreateisochurb"><b>WdfUsbTargetDeviceCreateIsochUrb</b></a></dd>
+<dd><a href="wdf.wdfusbtargetdevicecreateurb"><b>WdfUsbTargetDeviceCreateUrb</b></a></dd>
+<dd><a href="wdf.wdfusbtargetdevicecreatewithparameters"><b>WdfUsbTargetDeviceCreateWithParameters</b></a></dd>
+<dd><a href="wdf.wdfusbtargetdevicequeryusbcapability"><b>WdfUsbTargetDeviceQueryUsbCapability</b></a></dd>
+</dl>
+</li>
+<li>
+<p>Added <a href="wdf.evtdeviceusagenotificationex"><i>EvtDeviceUsageNotificationEx</i></a>.</p>
+</li>
+<li>
+<p>Added <b>IdleTimeoutType</b> and <b>ExcludeD3Cold</b> members to <a href="wdf.wdf_device_power_policy_idle_settings"><b>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b></a>.</p>
+</li>
+<li>
+<p>Added <b>ReportInactiveOnPowerDown</b> member to <a href="wdf.wdf_interrupt_config"><b>WDF_INTERRUPT_CONFIG</b></a>.</p>
+</li>
+<li>
+<p>Added <b>WdfIoTargetPurged</b> value to <a href="wdf.wdf_io_target_state"><b>WDF_IO_TARGET_STATE</b></a>.</p>
+</li>
+<li>
+<p>Added <b>WdfSpecialFileBoot</b> value to <a href="wdf.wdf_special_file_type"><b>WDF_SPECIAL_FILE_TYPE</b></a>.</p>
+</li>
+<li>
+<p>Added <b>DbgWaitForSignalTimeoutInSec</b> to <a href="registry_values_for_debugging_kmdf_drivers.htm">Registry Values for Debugging Framework-based Drivers</a>.</p>
+</li>
+<li>
+<p>Added <a href="http://go.microsoft.com/fwlink/p/?linkid=256122">InstallWdf</a>, <a href="http://go.microsoft.com/fwlink/p/?linkid=256158">MultiComp</a>, and <a href="http://go.microsoft.com/fwlink/p/?linkid=256158">SingleComp</a> samples.</p>
+</li>
+</ul>
+<h2><a id="KMDF_Version_1.9"></a><a id="kmdf_version_1.9"></a><a id="KMDF_VERSION_1.9"></a>KMDF Version 1.9</h2>
+<p>Version 1.9 adds the following functionality:</p>
+<ul>
+<li>
+<p><a href="guaranteeing_forward_progress_of_i_o_operations.htm">Guaranteed forward progress</a> for I/O queues</p>
+</li>
+<li>
+<p>Support for <a href="requeuing_i_o_requests.htm">requeuing I/O requests</a> from a child device's I/O queue to a parent device's I/O queue</p>
+</li>
+<li>
+<p>Ability to specify <a href="wdf.wdf_synchronization_scope">queue-level synchronization</a> for individual queue objects.</p>
+</li>
+<li>The following methods:<dl>
+<dd><a href="wdf.wdfdevicegetsystempoweraction"><b>WdfDeviceGetSystemPowerAction</b></a></dd>
+<dd><a href="wdf.wdfdeviceremovedependentusagedeviceobject"><b>WdfDeviceRemoveDependentUsageDeviceObject</b></a></dd>
+<dd><a href="wdf.wdfinterruptsetextendedpolicy"><b>WdfInterruptSetExtendedPolicy</b></a></dd>
+<dd><a href="wdf.wdfpdoinitallowforwardingrequesttoparent"><b>WdfPdoInitAllowForwardingRequestToParent</b></a></dd>
+<dd><a href="wdf.wdfpdoinitassigncontainerid"><b>WdfPdoInitAssignContainerID</b></a></dd>
+<dd><a href="wdf.wdfpredeviceinstallex"><b>WdfPreDeviceInstallEx</b></a></dd>
+<dd><a href="wdf.wdfrequestforwardtoparentdeviceioqueue"><b>WdfRequestForwardToParentDeviceIoQueue</b></a></dd>
+<dd><a href="wdf.wdfrequestmarkcancelableex"><b>WdfRequestMarkCancelableEx</b></a></dd>
+</dl>
+</li>
+<li>
+<p>Added the <b>NumberOfPresentedRequests</b> member to the <a href="wdf.wdf_io_queue_config"><b>WDF_IO_QUEUE_CONFIG</b></a> structure so drivers can limit the number of I/O requests that the framework delivers to the driver from a parallel I/O queue.</p>
+</li>
+<li>
+<p>Added the <b>WdfFileObjectCanBeOptional</b> flag to the <a href="wdf.wdf_fileobject_class"><b>WDF_FILEOBJECT_CLASS</b></a> structure.</p>
+</li>
+<li>
+<p>Added the <b>TolerableDelay</b> member to the <a href="wdf.wdf_timer_config"><b>WDF_TIMER_CONFIG</b></a> structure.</p>
+</li>
+<li>
+<p>Added <a href="user_control_of_device_idle_and_wake_behavior.htm">WdfDefaultIdleInWorkingState and WdfDefaultWakeFromSleepState</a> registry values.</p>
+</li>
+</ul>
+<h2><a id="KMDF_Version_1.7"></a><a id="kmdf_version_1.7"></a><a id="KMDF_VERSION_1.7"></a>KMDF Version 1.7</h2>
+<ul>
+<li>
+<p>The <a href="wdf.wdfdeviceenqueuerequest"><b>WdfDeviceEnqueueRequest</b></a> method can be called at IRQL&lt;=DISPATCH_LEVEL.</p>
+</li>
+<li>
+<p>The <a href="wdf.wdfworkitemenqueue"><b>WdfWorkItemEnqueue</b></a> method can be called if the specified work item is already on the work-item queue.</p>
+</li>
+<li>
+<p>Added the <a href="wdf.evtdevicearmwakefromsxwithreason"><i>EvtDeviceArmWakeFromSxWithReason</i></a> event callback function.</p>
+</li>
+<li>
+<p>Added <b>ArmForWakeIfChildrenAreArmedForWake</b> and <b>IndicateChildWakeOnParentWake</b> members to the <a href="wdf.wdf_device_power_policy_wake_settings"><b>WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</b></a> structure.</p>
+</li>
+</ul>
+<h2><a id="KMDF_Version_1.5"></a><a id="kmdf_version_1.5"></a><a id="KMDF_VERSION_1.5"></a>KMDF Version 1.5</h2>
+<ul>
+<li>
+<p><a href="wdf.wdfusbinterfacegetnumsettings"><b>WdfUsbInterfaceGetNumSettings</b></a></p>
+</li>
+<li>Added the <b>DriverPoolTag</b> member to <a href="wdf.wdf_driver_config"><b>WDF_DRIVER_CONFIG</b></a>.</li>
+</ul>
+<h2><a id="KMDF_Version_1.1"></a><a id="kmdf_version_1.1"></a><a id="KMDF_VERSION_1.1"></a>KMDF Version 1.1</h2>
+<ul>
+<li>The following methods:<dl>
+<dd><a href="wdf.wdfcommonbuffercreatewithconfig"><b>WdfCommonBufferCreateWithConfig</b></a></dd>
+<dd><a href="wdf.wdfdmaenablergetfragmentlength"><b>WdfDmaEnablerGetFragmentLength</b></a></dd>
+<dd><a href="wdf.wdfdmaenablerwdmgetdmaadapter"><b>WdfDmaEnablerWdmGetDmaAdapter</b></a></dd>
+</dl>
+</li>
+</ul>
+<h2><a id="KMDF_Version_1.0"></a><a id="kmdf_version_1.0"></a><a id="KMDF_VERSION_1.0"></a>KMDF Version 1.0</h2>
+<p>Initial release.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20KMDF Version History%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

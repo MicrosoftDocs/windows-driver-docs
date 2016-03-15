@@ -1,0 +1,90 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Framework Object Collections"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Framework Object Collections</title>
+
+<meta name="MS-HAID" content="Ch1_DFPatterns_485ce5c7-7de5-4119-89ad-d3a67386cd70.xml"/>
+<meta name="MS-HAID" content="kmdf.framework_object_collections"/>
+<meta name="MS-HAID" content="wdf.framework_object_collections"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.framework_object_collections"></a>Framework Object Collections</h1>
+</div>
+<h2><a id="ddk_framework_object_collections_df"></a><a id="DDK_FRAMEWORK_OBJECT_COLLECTIONS_DF"></a></h2>
+<p>Drivers can group framework objects into collections that are represented by <i>framework collection objects</i>. </p>
+<p>For example, if a driver receives a framework request object that represents a large I/O request, the driver might have to break the large request into smaller requests that it can send to an <a href="using_i_o_targets.htm">I/O target</a>. To break a large request into smaller ones, the driver must create a set of request objects that represent the smaller requests. To keep track of these driver-created request objects, the driver might create a collection object and add them to the collection. </p>
+<p>Typically, the objects in an object collection consist of a single type of framework object, but a driver can create a collection that consists of different types of objects.</p>
+<p>Your driver can also create a collection of collections. That is, a collection can consist of a set of collection objects. </p>
+<p>Framework-based drivers can perform the following operations on object collections:</p>
+<ul>
+<li>
+<p>Create a collection object.</p>
+<p>To create a new collection, drivers can call <a href="wdf.wdfcollectioncreate"><b>WdfCollectionCreate</b></a>. </p>
+</li>
+<li>
+<p>Add an object to a collection.</p>
+<p>To add objects to a collection, drivers can call <a href="wdf.wdfcollectionadd"><b>WdfCollectionAdd</b></a>, one or more times. Each call to <b>WdfCollectionAdd</b> appends an object to the end of the collection and increments the appended object's reference count.</p>
+</li>
+<li>
+<p>Remove an object from a collection.</p>
+<p>To remove an object from a collection and decrement its reference count, drivers can call <a href="wdf.wdfcollectionremove"><b>WdfCollectionRemove</b></a> or <a href="wdf.wdfcollectionremoveitem"><b>WdfCollectionRemoveItem</b></a>.</p>
+</li>
+<li>
+<p>Obtain the number of objects in a collection.</p>
+<p>To determine the number of objects that a collection contains, drivers can call <a href="wdf.wdfcollectiongetcount"><b>WdfCollectionGetCount</b></a>.</p>
+</li>
+<li>
+<p>Obtain a handle to an object in the collection.</p>
+<p>If a driver calls <a href="wdf.wdfcollectiongetitem"><b>WdfCollectionGetItem</b></a>, supplying an index value as an input argument, the driver receives a handle to the object that is associated with the index value. (An index value of zero represents the first object in the collection, an index value of one represents the second object, and so on--like a linked list. When the driver removes item <i>i</i> from a collection, item <i>i</i>+1 becomes item <i>i</i>.)</p>
+<p>Drivers can also call <a href="wdf.wdfcollectiongetfirstitem"><b>WdfCollectionGetFirstItem</b></a> or <a href="wdf.wdfcollectiongetlastitem"><b>WdfCollectionGetLastItem</b></a> to obtain a handle to the first or last item that was added to the collection.</p>
+</li>
+<li>
+<p>Lock a collection.</p>
+<p>A driver can call <a href="wdf.wdfwaitlockacquire"><b>WdfWaitLockAcquire</b></a> to synchronize access to a collection at IRQL = PASSIVE_LEVEL, or it can call <a href="wdf.wdfspinlockacquire"><b>WdfSpinLockAcquire</b></a> synchronize access at IRQL = DISPATCH_LEVEL. After a driver acquires a lock, the collection cannot be accessed by other code in the driver that also calls <b>WdfWaitLockAcquire</b> or <b>WdfSpinLockAcquire</b>. After completing an operation on the collection, the driver must call <a href="wdf.wdfwaitlockrelease"><b>WdfWaitLockRelease</b></a>.</p>
+<p>Calling <a href="wdf.wdfwaitlockacquire"><b>WdfWaitLockAcquire</b></a> or <a href="wdf.wdfspinlockacquire"><b>WdfSpinLockAcquire</b></a> does not prevent other code in the driver from simultaneously accessing the collection, if that other code does not also call <b>WdfWaitLockAcquire</b> or <b>WdfSpinLockAcquire</b>.</p>
+</li>
+<li>
+<p>Delete a collection.</p>
+<p>To delete a collection object, drivers can call <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a>. More typically, however, drivers specify a parent object when they create a collection, and the framework deletes the collection object when it deletes the parent object. </p>
+<p>For example, if a driver creates a set of request objects so that it can break a large I/O request into smaller requests, it can make the large I/O request's request object the parent object of the collection object. Eventually the driver's I/O target will call <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a> to complete the smaller requests. At that point, the driver can call <b>WdfRequestComplete</b> for the large I/O request, causing the framework to delete the request object and its child object: the collection object.</p>
+<p>When the framework deletes a collection object that contains objects that have not been removed, the framework removes the objects from the collection and decrements their reference counts, but it deletes only the collection object.</p>
+</li>
+</ul>
+<p>Sometimes a driver must examine all of the objects within a collection. The following code example demonstrates this situation:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WdfWaitLockAcquire(CollectionLockHandle, NULL);
+ItemCount = WdfCollectionGetCount(CollectionHandle);
+for (i=0; i&lt;ItemCount; i++) {
+    ObjectHandle = WdfCollectionGetItem(CollectionHandle, i);
+    // 1. Call object-specific methods to obtain object properties.
+    // 2. Perform object-specific operations.
+    }
+WdfWaitLockRelease(CollectionLockHandle);</pre>
+</td>
+</tr>
+</table></span></div>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Framework Object Collections%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

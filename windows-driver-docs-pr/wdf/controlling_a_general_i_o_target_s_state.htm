@@ -1,0 +1,88 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Controlling a General I/O Target's State"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Controlling a General I/O Target's State</title>
+
+<meta name="MS-HAID" content="Ch5_DFIoTargets_8aea0773-2034-4ae2-a921-874c294fdb2d.xml"/>
+<meta name="MS-HAID" content="kmdf.controlling_a_general_i_o_target_s_state"/>
+<meta name="MS-HAID" content="wdf.controlling_a_general_i_o_target_s_state"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.controlling_a_general_i_o_target_s_state"></a>Controlling a General I/O Target's State</h1>
+</div>
+<p>You can visualize I/O target objects as having two gates: an in-gate and an out-gate.  The out-gate controls when the framework delivers a request to the target device object, while the in-gate controls when a request is allowed to enter the I/O target at all.</p>
+<p>The framework defines the following states for general I/O targets:</p>
+<p></p>
+<dl>
+<dt><a id="Started"></a><a id="started"></a><a id="STARTED"></a><i>Started</i></dt>
+<dd>
+<p>Both gates of the I/O target object are open. The driver can send I/O requests to the I/O target queue, and the framework delivers the requests to the appropriate driver.</p>
+</dd>
+<dt><a id="Stopped"></a><a id="stopped"></a><a id="STOPPED"></a><i>Stopped</i></dt>
+<dd>
+<p>The in-gate of the I/O target is open, but the out-gate is closed. The framework stops delivering requests to the appropriate driver. To send I/O requests to the I/O target, the driver must set either  <b>WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE</b> or  <b>WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET</b> in each request's <a href="wdf.wdf_request_send_options"><b>WDF_REQUEST_SEND_OPTIONS</b></a> structure. </p>
+</dd>
+<dt><a id="Purged"></a><a id="purged"></a><a id="PURGED"></a><i>Purged</i></dt>
+<dd>
+<p>Both gates of the I/O target object are closed. The driver cannot send I/O requests to the I/O target unless it sets <b>WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE</b> or <b>WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET</b>. In addition, the framework cancels unprocessed requests in the I/O target object's internal queue. This state is available beginning in KMDF version 1.11.</p>
+</dd>
+<dt><a id="Closed_for_Query-Remove"></a><a id="closed_for_query-remove"></a><a id="CLOSED_FOR_QUERY-REMOVE"></a><i>Closed for Query-Remove</i></dt>
+<dd>
+<p>A remote I/O target is temporarily closed because its device might soon be removed.</p>
+</dd>
+<dt><a id="Closed"></a><a id="closed"></a><a id="CLOSED"></a><i>Closed</i></dt>
+<dd>
+<p>The I/O target is closed and cannot be started or stopped.</p>
+</dd>
+<dt><a id="Deleted"></a><a id="deleted"></a><a id="DELETED"></a><i>Deleted</i></dt>
+<dd>
+<p>The I/O target's device has been removed.</p>
+</dd>
+</dl>
+<p>The <a href="wdf.wdf_io_target_state"><b>WDF_IO_TARGET_STATE</b></a> enumeration defines the values that represent these states. Your driver can call <a href="wdf.wdfiotargetgetstate"><b>WdfIoTargetGetState</b></a> to obtain an I/O target's state.</p>
+<h3><a id="local_i_o_target_states"></a><a id="LOCAL_I_O_TARGET_STATES"></a>Local I/O Target States</h3>
+<p>The framework automatically opens and starts local I/O targets. </p>
+<p>If necessary, the driver can call <a href="wdf.wdfiotargetstop"><b>WdfIoTargetStop</b></a> to temporarily stop a local I/O target and call <a href="wdf.wdfiotargetstart"><b>WdfIoTargetStart</b></a> to restart it. For example, the driver might stop a local I/O target if it detects a temporary error condition and then restart the I/O target if the error condition is corrected.</p>
+<p>In KMDF version 1.11 and later, the driver can call <a href="wdf.wdfiotargetpurge"><b>WdfIoTargetPurge</b></a> to temporarily prevent I/O requests from being sent to a local I/O target, and to cancel unprocessed requests in the target's queue. For example, as part of file handle cleanup, a driver might purge a local I/O target  to ensure that all requests sent to the driver are cancelled.</p>
+<p>If a local I/O target's device is removed, the framework automatically stops and closes the I/O target and <a href="canceling_i_o_requests.htm">cancels</a> all I/O requests that are in the target's queue. The framework notifies the driver that the device is no longer available by calling device object event callback functions. For more information about these callback functions, see <a href="pnp_and_power_management_scenarios.htm">PnP and Power Management Scenarios</a>.</p>
+<h3><a id="remote_i_o_target_states"></a><a id="REMOTE_I_O_TARGET_STATES"></a>Remote I/O Target States</h3>
+<p>Drivers must call <a href="wdf.wdfiotargetopen"><b>WdfIoTargetOpen</b></a> to open remote I/O targets. When a driver opens a remote I/O target, the framework automatically starts the I/O target. </p>
+<p>If necessary, the driver can call <a href="wdf.wdfiotargetstop"><b>WdfIoTargetStop</b></a> to temporarily stop a remote I/O target and call <a href="wdf.wdfiotargetstart"><b>WdfIoTargetStart</b></a> to restart it. </p>
+<p>In KMDF version 1.11 and later, the driver can call <a href="wdf.wdfiotargetpurge"><b>WdfIoTargetPurge</b></a> to temporarily prevent I/O requests from being sent to a remote I/O target, and to cancel unprocessed requests in the target's queue.</p>
+<p>If a remote I/O target's device is removed, the framework automatically stops and closes the I/O target and cancels all I/O requests that are in the target's queue, unless the driver registers the following event callback functions: </p>
+<p></p>
+<dl>
+<dt><a id="EvtIoTargetQueryRemove"></a><a id="evtiotargetqueryremove"></a><a id="EVTIOTARGETQUERYREMOVE"></a><a href="wdf.evtiotargetqueryremove"><i>EvtIoTargetQueryRemove</i></a></dt>
+<dd>
+<p>Informs the driver that a remote I/O target's device might be removed. Your driver must call <a href="wdf.wdfiotargetcloseforqueryremove"><b>WdfIoTargetCloseForQueryRemove</b></a> if you want the driver to allow removal of the device.</p>
+</dd>
+<dt><a id="EvtIoTargetRemoveComplete"></a><a id="evtiotargetremovecomplete"></a><a id="EVTIOTARGETREMOVECOMPLETE"></a><a href="wdf.evtiotargetremovecomplete"><i>EvtIoTargetRemoveComplete</i></a></dt>
+<dd>
+<p>Informs the driver that a remote I/O target's device has been removed. This callback function must call <a href="wdf.wdfiotargetclose"><b>WdfIoTargetClose</b></a>.</p>
+</dd>
+<dt><a id="EvtIoTargetRemoveCanceled"></a><a id="evtiotargetremovecanceled"></a><a id="EVTIOTARGETREMOVECANCELED"></a><a href="wdf.evtiotargetremovecanceled"><i>EvtIoTargetRemoveCanceled</i></a></dt>
+<dd>
+<p>Informs the driver that an attempt to remove a remote I/O target's device has been canceled. This callback function must call <a href="wdf.wdfiotargetopen"><b>WdfIoTargetOpen</b></a>, and the driver typically calls <a href="wdf.wdf_io_target_open_params_init_reopen"><b>WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN</b></a> to initialize its WDF_IO_TARGET_OPEN_PARAMS_INIT function.</p>
+</dd>
+</dl>
+<p>If a driver has finished using a remote I/O target and will not use the target again, and the target has no child request objects that are still pending, the driver can call <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> without first calling <a href="wdf.wdfiotargetclose"><b>WdfIoTargetClose</b></a>.  If the target has any child request objects that are still pending, the driver must call <b>WdfIoTargetClose</b> before it can safely call <b>WdfObjectDelete</b>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Controlling a General I/O Target's State%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

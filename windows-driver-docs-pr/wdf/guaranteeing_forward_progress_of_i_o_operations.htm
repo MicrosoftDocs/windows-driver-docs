@@ -1,0 +1,115 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Guaranteeing Forward Progress of I/O Operations"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Guaranteeing Forward Progress of I/O Operations</title>
+
+<meta name="MS-HAID" content="Ch3_DFIoPackage_f60a24ec-fb57-482b-8d86-b804e92ada76.xml"/>
+<meta name="MS-HAID" content="kmdf.guaranteeing_forward_progress_of_i_o_operations"/>
+<meta name="MS-HAID" content="wdf.guaranteeing_forward_progress_of_i_o_operations"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.guaranteeing_forward_progress_of_i_o_operations"></a>Guaranteeing Forward Progress of I/O Operations</h1>
+</div>
+<p>Some drivers, such as storage drivers for the system's paging device, must perform at least some of their supported I/O operations without failure, to avoid losing critical system data. One potential cause of a driver failure is a low-memory situation. If the framework or the driver cannot allocate enough memory to handle an I/O request, one or the other might have to fail the I/O request by <a href="completing_i_o_requests.htm">completing</a> it with an error status value. </p>
+<p>In versions of KMDF prior to version 1.9, the framework always fails an I/O request if it cannot allocate a framework request object for an I/O request packet (IRP) that the I/O manager has sent to the driver. To provide drivers the ability to process I/O requests during low-memory situations, versions 1.9 and later of the framework provide a <i>guaranteed forward progress</i> capability for I/O queues. </p>
+<p>This capability enables the framework and the driver to pre-allocate memory for sets of request objects and request-related driver context buffers, respectively. The framework and driver use this pre-allocated memory only when the amount of system memory is low. </p>
+<h3><a id="features_of_guaranteed_forward_progress"></a><a id="FEATURES_OF_GUARANTEED_FORWARD_PROGRESS"></a>Features of Guaranteed Forward Progress</h3>
+<p>By using the framework's guaranteed forward progress for I/O queues, a driver can:</p>
+<ul>
+<li>
+<p>Ask the framework to pre-allocate a set of request objects to use with a specific I/O queue during low-memory situations. </p>
+</li>
+<li>
+<p>Provide a callback function that pre-allocates request-specific resources that the driver can use when it receives pre-allocated request objects from the framework during low-memory situations.</p>
+</li>
+<li>
+<p>Provide another callback function that allocates driver-specific resources for an I/O request when a low-memory situation has <i>not</i> been detected. If this callback function's allocation fails because of a low-memory situation, it can indicate whether the framework should use one of its pre-allocated request objects.</p>
+</li>
+<li>
+<p>Specify which I/O requests require the use of pre-allocated request objects. Options include using pre-allocated objects for all IRPs, using them only if a paging I/O operation is in progress, or having an additional driver callback function examine each IRP to determine whether to use a pre-allocated object.</p>
+</li>
+</ul>
+<p>If your driver implements guaranteed forward progress for one or more of its I/O queues, the driver will be better able to successfully <a href="processing_i_o_requests.htm">process I/O requests</a> during low-memory situations. You can implement guaranteed forward progress for a device's default I/O queue, and for any I/O queue that your driver configures by calling <a href="wdf.wdfdeviceconfigurerequestdispatching"><b>WdfDeviceConfigureRequestDispatching</b></a>. </p>
+<p>The framework's guaranteed forward progress capability works for your driver only if both your driver and the driver's <a href="using_i_o_targets.htm">I/O targets</a> implement guaranteed forward progress. In other words, if a driver implements guaranteed forward progress for a device, all lower-level drivers in the device's driver stack must also implement guaranteed forward progress. </p>
+<h3><a id="enabling_guaranteed_forward_progress_for_an_i_o_queue"></a><a id="ENABLING_GUARANTEED_FORWARD_PROGRESS_FOR_AN_I_O_QUEUE"></a>Enabling Guaranteed Forward Progress for an I/O Queue</h3>
+<p>To enable guaranteed forward progress for an I/O queue, your driver initializes a <a href="wdf.wdf_io_queue_forward_progress_policy"><b>WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</b></a> structure and then calls the <a href="wdf.wdfioqueueassignforwardprogresspolicy"><b>WdfIoQueueAssignForwardProgressPolicy</b></a> method. If the driver calls <a href="wdf.wdfdeviceconfigurerequestdispatching"><b>WdfDeviceConfigureRequestDispatching</b></a> to configure an I/O queue, it must do so before it calls <b>WdfIoQueueAssignForwardProgressPolicy</b>.</p>
+<p>When the driver calls <a href="wdf.wdfioqueueassignforwardprogresspolicy"><b>WdfIoQueueAssignForwardProgressPolicy</b></a>, it can specify the following three event callback functions, all of which are optional:</p>
+<p></p>
+<dl>
+<dt><a id="EvtIoAllocateResourcesForReservedRequest"></a><a id="evtioallocateresourcesforreservedrequest"></a><a id="EVTIOALLOCATERESOURCESFORRESERVEDREQUEST"></a><a href="wdf.evtioallocateresourcesforreservedrequest"><i>EvtIoAllocateResourcesForReservedRequest</i></a></dt>
+<dd>
+<p>A driver's <a href="wdf.evtioallocateresourcesforreservedrequest"><i>EvtIoAllocateResourcesForReservedRequest</i></a> callback function allocates and stores request-specific resources for request objects that the framework is reserving for low-memory situations. </p>
+<p>The framework calls this callback function each time that it creates a reserved request object. The driver should allocate request-specific resources for one I/O request, typically by using the reserved request object's <a href="framework_object_context_space.htm">context space</a>. </p>
+</dd>
+<dt><a id="EvtIoAllocateRequestResources"></a><a id="evtioallocaterequestresources"></a><a id="EVTIOALLOCATEREQUESTRESOURCES"></a><a href="wdf.evtioallocaterequestresources"><i>EvtIoAllocateRequestResources</i></a></dt>
+<dd>
+<p> A driver's <a href="wdf.evtioallocaterequestresources"><i>EvtIoAllocateRequestResources</i></a> callback function allocates request-specific resources for immediate use. It is called immediately after the framework has received an IRP and created a request object for the IRP. </p>
+<p>If the callback function's attempt to allocate resources fails, the callback function returns an error status value. The framework then deletes the newly created request object and uses one of its reserved request objects. In turn, the driver's <a href="request_handlers.htm">request handler</a> uses request-specific resources that its <a href="wdf.evtioallocaterequestresources"><i>EvtIoAllocateRequestResources</i></a> callback function previously allocated.</p>
+</dd>
+<dt><a id="EvtIoWdmIrpForForwardProgress"></a><a id="evtiowdmirpforforwardprogress"></a><a id="EVTIOWDMIRPFORFORWARDPROGRESS"></a><a href="wdf.evtiowdmirpforforwardprogress"><i>EvtIoWdmIrpForForwardProgress</i></a></dt>
+<dd>
+<p>A driver's <a href="wdf.evtiowdmirpforforwardprogress"><i>EvtIoWdmIrpForForwardProgress</i></a> callback function examines an IRP and tells framework whether to use a reserved request object for the IRP or to fail the I/O request by completing it with an error status value. </p>
+<p>The framework calls this callback function only if the framework is unable to create a new request object and you have indicated (by setting a flag in the driver's <a href="wdf.wdf_io_queue_forward_progress_policy"><b>WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</b></a> structure) that you want the driver to examine IRPs during low-memory situations. In other words, your driver can assess each IRP and decide if it is one that must be processed even during low-memory situations.</p>
+</dd>
+</dl>
+<p>When your driver calls <a href="wdf.wdfioqueueassignforwardprogresspolicy"><b>WdfIoQueueAssignForwardProgressPolicy</b></a>, it also specifies the number of reserved request objects that you want the framework to pre-allocate for low-memory situations. You can choose the number of request objects that are appropriate for your device and driver. To prevent reduced performance, your driver should typically specify a number that approximates the number of I/O requests that the driver and device can handle in parallel. </p>
+<p>However, if your driver's call to <a href="wdf.wdfioqueueassignforwardprogresspolicy"><b>WdfIoQueueAssignForwardProgressPolicy</b></a> and its <a href="wdf.evtioallocateresourcesforreservedrequest"><i>EvtIoAllocateResourcesForReservedRequest</i></a> callback function pre-allocate too many reserved request objects or too much request-specific resource memory, your driver can actually contribute to the low-memory situations that you are attempting to handle. You should test the performance of your driver and device, and include low-memory simulations, to determine the best numbers to choose.</p>
+<p>Before <a href="wdf.wdfioqueueassignforwardprogresspolicy"><b>WdfIoQueueAssignForwardProgressPolicy</b></a> returns, the framework creates and reserves the number of request objects that the driver has specified. Each time that it reserves a request object, the framework immediately calls the driver's <a href="wdf.evtioallocateresourcesforreservedrequest"><i>EvtIoAllocateResourcesForReservedRequest</i></a> callback function so that the driver can allocate and save request-specific resources, in case the framework actually uses the reserved request objects.</p>
+<p>When one of the driver's <a href="request_handlers.htm">request handlers</a> receives an I/O request from the I/O queue, it can call the <a href="wdf.wdfrequestisreserved"><b>WdfRequestIsReserved</b></a> method to determine whether the request object is one that the framework pre-allocated for low-memory situations. If this method returns <b>TRUE</b>, the driver should use resources that its <a href="wdf.evtioallocateresourcesforreservedrequest"><i>EvtIoAllocateResourcesForReservedRequest</i></a> callback function reserved.</p>
+<p>If the framework uses one of its reserved request objects, it returns the object to its set of reserved objects after the driver completes the request. The framework saves the request object, and any context space that the driver created by calling <a href="wdf.wdfdeviceinitsetrequestattributes"><b>WdfDeviceInitSetRequestAttributes</b></a> or <a href="wdf.wdfobjectallocatecontext"><b>WdfObjectAllocateContext</b></a>, for reuse if another low-memory situation occurs. </p>
+<h3><a id="how_the_framework_and_driver_support_guaranteed_forward_progress"></a><a id="HOW_THE_FRAMEWORK_AND_DRIVER_SUPPORT_GUARANTEED_FORWARD_PROGRESS"></a>How the Framework and Driver Support Guaranteed Forward Progress</h3>
+<p>Following are the steps that the driver and framework perform to support guaranteed forward progress for an I/O queue:</p>
+<ol>
+<li>
+<p>The driver calls <a href="wdf.wdfioqueueassignforwardprogresspolicy"><b>WdfIoQueueAssignForwardProgressPolicy</b></a>.</p>
+<p>In response, the framework allocates and stores the number of request objects that the driver specifies. If the driver previously called <a href="wdf.wdfdeviceinitsetrequestattributes"><b>WdfDeviceInitSetRequestAttributes</b></a>, each allocation includes context space that <b>WdfDeviceInitSetRequestAttributes</b> specified. </p>
+<p>In addition, if the driver has provided an <a href="wdf.evtioallocateresourcesforreservedrequest"><i>EvtIoAllocateResourcesForReservedRequest</i></a> callback function, the framework calls the callback function each time that it allocates and stores a request object.</p>
+</li>
+<li>
+<p>The framework receives an I/O request packet (IRP) that the I/O manager is sending to the driver.</p>
+<p>The framework attempts to allocate a request object for the IRP. If the I/O queue that the driver created for the request type supports guaranteed forward progress, the next step depends on whether the allocation succeeds or fails:</p>
+<ul>
+<li>
+<p>The request object allocation succeeds.</p>
+<p>If the driver provided an <a href="wdf.evtioallocaterequestresources"><i>EvtIoAllocateRequestResources</i></a> callback function, the framework calls it. If the callback function returns STATUS_SUCCESS, the framework adds the request to the I/O queue. If the callback function returns an error status value, the framework deletes the request object that it just created and uses one of its pre-allocated request objects. When the driver's request handler receives the request object, it determines whether the request object was pre-allocated and therefore whether it should use the driver's pre-allocated resources.</p>
+<p>If the driver did <i>not</i> provide an <a href="wdf.evtioallocaterequestresources"><i>EvtIoAllocateRequestResources</i></a> callback function, the framework adds the request to the I/O queue, just as if the driver had not enabled guaranteed forward progress. </p>
+</li>
+<li>
+<p>The request object allocation fails.</p>
+<p>What the framework does next depends on the value that the driver provided for the <b>ForwardProgressReservedPolicy</b> member of the <a href="wdf.wdf_io_queue_forward_progress_policy"><b>WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</b></a> structure. This member informs the framework when to use a reserved request: always, only if the I/O request is a paging I/O operation, or only if the <a href="wdf.evtiowdmirpforforwardprogress"><i>EvtIoWdmIrpForForwardProgress</i></a> callback function indicates that a reserved request should be used.</p>
+</li>
+</ul>
+<p>In all cases, the driver's request handlers can call <a href="wdf.wdfrequestisreserved"><b>WdfRequestIsReserved</b></a> to determine whether the framework has used a reserved request object. If so, the driver should use the request resources that its <a href="wdf.evtioallocateresourcesforreservedrequest"><i>EvtIoAllocateResourcesForReservedRequest</i></a> callback function allocated.</p>
+</li>
+</ol>
+<h3><a id="guaranteed_forward_progress_scenario"></a><a id="GUARANTEED_FORWARD_PROGRESS_SCENARIO"></a>Guaranteed Forward Progress Scenario</h3>
+<p>You are writing a driver for a storage device that might contain the system's paging file. It is important that read operations from and write operations to the paging file succeed. </p>
+<p>You decide to create separate I/O queues for read and write operations, and to enable guaranteed forward progress for both of these I/O queues. You decide to create a third I/O queue for all other request types without enabling guaranteed forward progress.</p>
+<p>Your driver stack and device are capable of processing four write operations in parallel, so you set the <b>TotalForwardProgressRequests</b> member of the <a href="wdf.wdf_io_queue_forward_progress_policy"><b>WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</b></a> structure to 4 before calling <a href="wdf.wdfioqueueassignforwardprogresspolicy"><b>WdfIoQueueAssignForwardProgressPolicy</b></a>. </p>
+<p>You decide that guaranteeing forward progress is only important if your driver's device is the paging device, so your driver sets the <b>ForwardProgressReservedPolicy</b> member of the WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure to <a href="wdf.wdf_io_forward_progress_reserved_policy"><b>WdfIoForwardProgressReservedPolicyPagingIO</b></a>.</p>
+<p>Because your driver requires a framework memory object for each read request and each write request, you decide that your driver should pre-allocate some memory objects to use for its calls to <a href="wdf.wdfiotargetformatrequestforread"><b>WdfIoTargetFormatRequestForRead</b></a> and <a href="wdf.wdfiotargetformatrequestforwrite"><b>WdfIoTargetFormatRequestForWrite</b></a> in low-memory situations.</p>
+<p>Therefore, the driver provides an <a href="wdf.evtioallocateresourcesforreservedrequest"><i>EvtIoAllocateResourcesForReservedRequest</i></a> callback function for the read queue and another one for the write queue. Each time that the framework calls one of these callback functions, the callback function calls <a href="wdf.wdfmemorycreate"><b>WdfMemoryCreate</b></a> and saves the returned object handle for low-memory situations. Because the callback function receives a handle to a pre-allocated request object, it can parent the memory object to the request object. (A driver for a DMA device might also pre-allocate <a href="framework_dma_objects.htm">framework DMA objects</a>.)</p>
+<p>The <a href="request_handlers.htm">request handlers</a> for the read and write queues must determine whether each received request object is one that the framework reserved for low-memory situations. A request handler can call <a href="wdf.wdfrequestisreserved"><b>WdfRequestIsReserved</b></a>, or it can compare the request object handle with the ones that the <a href="wdf.evtioallocateresourcesforreservedrequest"><i>EvtIoAllocateResourcesForReservedRequest</i></a> callback function received previously.</p>
+<p>The driver also provides an <a href="wdf.evtioallocaterequestresources"><i>EvtIoAllocateRequestResources</i></a> callback function for the read queue and another one for the write queue. The framework calls one of these callback functions when it receives a read or write request from the I/O manager and successfully creates a request object. Each of these callback functions calls <a href="wdf.wdfmemorycreate"><b>WdfMemoryCreate</b></a> to allocate a memory object for a request. If the allocation fails, the callback function returns an error status value to notify the framework that a low-memory situation has just occurred. The framework, detecting the error return value, deletes the request object that it just created and uses one of its pre-allocated objects.</p>
+<p>This driver does not provide an <a href="wdf.evtiowdmirpforforwardprogress"><i>EvtIoWdmIrpForForwardProgress</i></a> callback function, because it does not need to examine individual read or write IRPs before the framework adds them to an I/O queue.</p>
+<p>Remember that when a driver implements guaranteed forward progress for a device, all lower-level drivers in the device's driver stack must also implement guaranteed forward progress.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Guaranteeing Forward Progress of I/O Operations%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

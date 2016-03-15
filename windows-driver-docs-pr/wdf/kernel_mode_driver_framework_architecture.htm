@@ -1,0 +1,69 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="WDF Architecture"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>WDF Architecture</title>
+
+<meta name="MS-HAID" content="Ch0_DFArchOverview_db04257a-5950-43d6-8bde-bc6176851092.xml"/>
+<meta name="MS-HAID" content="kmdf.kernel_mode_driver_framework_architecture"/>
+<meta name="MS-HAID" content="wdf.kernel_mode_driver_framework_architecture"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.kernel_mode_driver_framework_architecture"></a>WDF Architecture</h1>
+</div>
+<h2><a id="ddk_windows_driver_framework_architecture_df"></a><a id="DDK_WINDOWS_DRIVER_FRAMEWORK_ARCHITECTURE_DF"></a></h2>
+<p>WDF  provides object-based interfaces for drivers. Framework-defined object interfaces consist of:</p>
+<p></p>
+<dl>
+<dt><a id="Object_methods"></a><a id="object_methods"></a><a id="OBJECT_METHODS"></a><i>Object methods</i></dt>
+<dd>
+<p>Methods are functions that a driver can call to perform an operation on the object or to get or set an object property. Methods are named <b>Wdf</b><i>ObjectAction</i>, where <i>Object</i> describes the object and <i>Action</i> indicates what the function does. For example, <a href="wdf.wdfdevicecreate"><b>WdfDeviceCreate</b></a> creates a device object.</p>
+</dd>
+<dt><a id="Object_event_callback_functions"></a><a id="object_event_callback_functions"></a><a id="OBJECT_EVENT_CALLBACK_FUNCTIONS"></a><i>Object event callback functions</i></dt>
+<dd>
+<p>Event callback functions are functions that a driver provides. Each event callback function is associated with a specific event that can occur on an object. The framework calls the event callback function when the associated event occurs. By convention, the placeholders for event callback functions are called Evt<i>ObjectEvent</i>, although you can name these callbacks anything you choose in your driver. For example, a driver registers the <a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a> event callback to be notified when its device enters the working state.</p>
+</dd>
+<dt><a id="Object_properties"></a><a id="object_properties"></a><a id="OBJECT_PROPERTIES"></a><i>Object properties</i></dt>
+<dd>
+<p>Properties are values that are stored within an object and that a driver can <i>get</i> (that is, obtain) and <i>set</i> (that is, change). In many cases, properties map directly to the fields in the corresponding WDM objects. Properties that cannot fail are named <b>Wdf</b><i>Object</i><b>Get</b><i>Value</i> and <b>Wdf</b><i>Object</i><b>Set</b><i>Value</i>, and properties that can fail are named <b>Wdf</b><i>Object</i><b>Retrieve</b><i>Value</i> and <b>Wdf</b><i>Object</i><b>Assign</b><i>Value</i>. <i>Object</i> describes the object, and <i>Value</i> identifies the data that the function sets or returns. For example, <a href="wdf.wdfdevicegetdriver"><b>WdfDeviceGetDriver</b></a> returns a handle to the driver object that is associated with the device object.</p>
+</dd>
+<dt><a id="Object_handles"></a><a id="object_handles"></a><a id="OBJECT_HANDLES"></a><i>Object handles</i></dt>
+<dd>
+<p>A framework-based driver never directly accesses framework objects. Instead, the driver receives object handles, which it can pass to an object's methods. </p>
+</dd>
+</dl>
+<p>The framework defines several object types that framework-based drivers use:</p>
+<ul>
+<li>
+<p>A <i>framework driver object </i>represents each driver.</p>
+</li>
+<li>
+<p>A <i>framework device object</i> represents each device that a driver supports.</p>
+</li>
+<li>
+<p><i>Framework queue objects</i> represent I/O queues that receive a device's I/O requests.</p>
+</li>
+<li>
+<p><i>Framework request objects</i> represent I/O requests that each I/O queue receives.</p>
+</li>
+</ul>
+<p>For a list of all of the objects that the framework defines, see <a href="summary_of_framework_objects.htm">Summary of Framework Objects</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF Architecture%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

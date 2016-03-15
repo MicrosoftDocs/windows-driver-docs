@@ -1,0 +1,169 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="WDM Equivalents for WDF Buffer Pointers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>WDM Equivalents for WDF Buffer Pointers</title>
+
+<meta name="MS-HAID" content="kmdf.wdm_equivalents_for_kmdf_buffer_pointers"/>
+<meta name="MS-HAID" content="wdf.wdm_equivalents_for_kmdf_buffer_pointers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.wdm_equivalents_for_kmdf_buffer_pointers"></a>WDM Equivalents for WDF Buffer Pointers</h1>
+</div>
+<p>A Kernel-Mode Driver Framework (KMDF)  or User-Mode Driver Framework (UMDF) driver uses the following methods for retrieving I/O buffers for buffered and direct I/O. Unless otherwise specified, the methods apply to both KMDF and UMDF.</p>
+<ul>
+<li><a href="wdf.wdfrequestretrieveoutputbuffer"><b>WdfRequestRetrieveOutputBuffer</b></a></li>
+<li><a href="wdf.wdfrequestretrieveoutputwdmmdl"><b>WdfRequestRetrieveOutputWdmMdl (KMDF only)</b></a></li>
+<li><a href="wdf.wdfrequestretrieveoutputmemory"><b>WdfRequestRetrieveOutputMemory</b></a></li>
+<li><a href="wdf.wdfrequestretrieveinputbuffer"><b>WdfRequestRetrieveInputBuffer</b></a></li>
+<li><a href="wdf.wdfrequestretrieveinputwdmmdl"><b>WdfRequestRetrieveInputWdmMdl (KMDF only)</b></a></li>
+<li><a href="wdf.wdfrequestretrieveinputmemory"><b>WdfRequestRetrieveInputMemory</b></a></li>
+</ul>
+<p>The following tables describe what the retrieval methods return for IRP_MJ_READ, IRP_MJ_WRITE, and IRP_MJ_DEVICE_CONTROL requests for buffered and direct I/O. Requests for neither I/O require special handling because the driver must retrieve the buffers while running in the context of the requesting user-mode process.</p>
+<h2><a id="read"></a><a id="READ"></a>Buffers for IRP_MJ_READ Requests</h2>
+<p>To retrieve a buffer for a read request, a KMDF driver calls one of the <b>WdfRequestRetrieveOutput</b><i>Xxx</i> methods. The buffer that each of these methods returns varies, depending on whether the driver performs buffered or direct I/O. The following table describes the pointer that is returned by each method in WDM terms.</p>
+<table>
+<tr>
+<th>Function</th>
+<th>Buffered I/O</th>
+<th>Direct I/O</th>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveoutputbuffer"><b>WdfRequestRetrieveOutputBuffer</b></a></td>
+<td><b>Irp-&gt;AssociatedIrp.SystemBuffer</b></td>
+<td><a href="kernel.mmgetsystemaddressformdlsafe"><b>MmGetSystemAddressForMdlSafe</b></a> (<b>Irp-&gt;MdlAddress</b>)
+      </td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveoutputwdmmdl"><b>WdfRequestRetrieveOutputWdmMdl (KMDF only)</b></a></td>
+<td>
+       Builds a memory descriptor list (MDL) for <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> and returns the MDL.
+      </td>
+<td><b>Irp-&gt;MdlAddress</b></td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveoutputmemory"><b>WdfRequestRetrieveOutputMemory</b></a></td>
+<td>
+       Returns a WDFMEMORY object. Call <a href="wdf.wdfmemorygetbuffer"><b>WdfMemoryGetBuffer</b></a> on this object to get 
+<b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+
+      </td>
+<td>
+       Returns a WDFMEMORY object. Call <a href="wdf.wdfmemorygetbuffer"><b>WdfMemoryGetBuffer</b></a> on this object to get <a href="kernel.mmgetsystemaddressformdlsafe"><b>MmGetSystemAddressForMdlSafe</b></a> (<b>Irp-&gt;MdlAddress</b>).
+      </td>
+</tr>
+</table>
+<p> </p>
+<h2><a id="write"></a><a id="WRITE"></a>Buffers for IRP_MJ_WRITE Requests</h2>
+<p>To retrieve a buffer for a write request, a KMDF driver calls one of the <b>WdfRequestRetrieveInput</b><i>Xxx</i> methods. The buffer that each of these methods returns varies, depending on whether the driver performs buffered or direct I/O. The following table describes the pointer that is returned by each method in WDM terms.</p>
+<table>
+<tr>
+<th>Function</th>
+<th>Buffered I/O</th>
+<th>Direct I/O</th>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveinputbuffer"><b>WdfRequestRetrieveInputBuffer</b></a></td>
+<td><b>Irp-&gt;AssociatedIrp.SystemBuffer</b></td>
+<td><a href="kernel.mmgetsystemaddressformdlsafe"><b>MmGetSystemAddressForMdlSafe</b></a> (<b>Irp-&gt;MdlAddress</b>)
+      </td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveinputwdmmdl"><b>WdfRequestRetrieveInputWdmMdl (KMDF only)</b></a></td>
+<td>
+       Builds an MDL for <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> and returns the MDL.
+      </td>
+<td><b>Irp-&gt;MdlAddress</b></td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveinputmemory"><b>WdfRequestRetrieveInputMemory</b></a></td>
+<td>
+       Returns a WDFMEMORY object. Call <a href="wdf.wdfmemorygetbuffer"><b>WdfMemoryGetBuffer</b></a> on this object to get 
+<b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+
+      </td>
+<td>
+       Returns a WDFMEMORY object. Call <a href="wdf.wdfmemorygetbuffer"><b>WdfMemoryGetBuffer</b></a> on this object to get <a href="kernel.mmgetsystemaddressformdlsafe"><b>MmGetSystemAddressForMdlSafe</b></a> (<b>Irp-&gt;MdlAddress</b>).
+      </td>
+</tr>
+</table>
+<p> </p>
+<h2><a id="device_control"></a><a id="DEVICE_CONTROL"></a>Buffers for IRP_MJ_DEVICE_CONTROL Requests</h2>
+<p>To retrieve a buffer for a device I/O control request, a KMDF driver calls either <b>WdfRequestRetrieveInputXxx</b> or <b>WdfRequestRetrieveOutputXxx</b> methods. The buffer that each of these methods returns varies, depending on whether the driver performs <a href="wdf.accessing_data_buffers_in_kmdf_drivers">buffered or direct I/O</a>, as shown in the following table:</p>
+<table>
+<tr>
+<th>Function</th>
+<th>Buffered I/O</th>
+<th>Direct I/O</th>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveinputbuffer"><b>WdfRequestRetrieveInputBuffer</b></a></td>
+<td><b>Irp-&gt;AssociatedIrp.SystemBuffer</b></td>
+<td><a href="kernel.mmgetsystemaddressformdlsafe"><b>MmGetSystemAddressForMdlSafe</b></a> (<b>Irp-&gt;MdlAddress</b>)
+      </td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveinputwdmmdl"><b>WdfRequestRetrieveInputWdmMdl (KMDF only)</b></a></td>
+<td>
+       Builds an MDL for <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> and returns the MDL.
+      </td>
+<td>
+       Builds an MDL for <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> and returns the MDL.
+      </td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveinputmemory"><b>WdfRequestRetrieveInputMemory</b></a></td>
+<td>
+       Returns a WDFMEMORY object. Call <a href="wdf.wdfmemorygetbuffer"><b>WdfMemoryGetBuffer</b></a> on this object to get 
+<b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+
+      </td>
+<td>
+       Returns a WDFMEMORY object. Call <a href="wdf.wdfmemorygetbuffer"><b>WdfMemoryGetBuffer</b></a> on this object to get <a href="kernel.mmgetsystemaddressformdlsafe"><b>MmGetSystemAddressForMdlSafe</b></a> (<b>Irp-&gt;MdlAddress</b>).
+      </td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveoutputbuffer"><b>WdfRequestRetrieveOutputBuffer</b></a></td>
+<td><b>Irp-&gt;AssociatedIrp.SystemBuffer</b></td>
+<td><a href="kernel.mmgetsystemaddressformdlsafe"><b>MmGetSystemAddressForMdlSafe</b></a> (<b>Irp-&gt;MdlAddress</b>)
+      </td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveoutputwdmmdl"><b>WdfRequestRetrieveOutputWdmMdl (KMDF only)</b></a></td>
+<td>
+       Builds a memory descriptor list (MDL) for <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> and returns the MDL.
+      </td>
+<td><b>Irp-&gt;MdlAddress</b></td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestretrieveoutputmemory"><b>WdfRequestRetrieveOutputMemory</b></a></td>
+<td>
+       Returns a WDFMEMORY object. Call <a href="wdf.wdfmemorygetbuffer"><b>WdfMemoryGetBuffer</b></a> on this object to get 
+<b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+
+      </td>
+<td>
+       Returns a WDFMEMORY object. Call <a href="wdf.wdfmemorygetbuffer"><b>WdfMemoryGetBuffer</b></a> on this object to get <a href="kernel.mmgetsystemaddressformdlsafe"><b>MmGetSystemAddressForMdlSafe</b></a> (<b>Irp-&gt;MdlAddress</b>).
+      </td>
+</tr>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDM Equivalents for WDF Buffer Pointers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

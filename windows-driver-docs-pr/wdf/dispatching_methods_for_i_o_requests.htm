@@ -1,0 +1,53 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Dispatching Methods for I/O Requests"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Dispatching Methods for I/O Requests</title>
+
+<meta name="MS-HAID" content="Ch3_DFIoPackage_07f227e5-b518-4442-a1d7-fd79e5c8f0c8.xml"/>
+<meta name="MS-HAID" content="kmdf.dispatching_methods_for_i_o_requests"/>
+<meta name="MS-HAID" content="wdf.dispatching_methods_for_i_o_requests"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.dispatching_methods_for_i_o_requests"></a>Dispatching Methods for I/O Requests</h1>
+</div>
+<h2><a id="ddk_dispatching_methods_for_i_o_requests_df"></a><a id="DDK_DISPATCHING_METHODS_FOR_I_O_REQUESTS_DF"></a></h2>
+<p>When a driver calls <a href="wdf.wdfioqueuecreate"><b>WdfIoQueueCreate</b></a> to create an I/O queue, it specifies a dispatching method for the queue. The framework provides three dispatching methods: <a href="#sequential_dispatching">sequential</a>, <a href="#parallel_dispatching">parallel</a>, and <a href="#manual_dispatching">manual</a>. The driver can specify any of these dispatching methods for any I/O queue, including a device's <a href="creating_i_o_queues.htm">default I/O queue</a>.</p>
+<p>The driver sets a queue's dispatching method by specifying a <a href="wdf.wdf_io_queue_dispatch_type"><b>WDF_IO_QUEUE_DISPATCH_TYPE</b></a>-typed value in the queue's <a href="wdf.wdf_io_queue_config"><b>WDF_IO_QUEUE_CONFIG</b></a> structure.</p>
+<p>For example uses of each dispatching method, see <a href="example_uses_of_i_o_queues.htm">Example Uses of I/O Queues</a>.</p>
+<h3><a id="sequential_dispatching"></a><a id="SEQUENTIAL_DISPATCHING"></a>
+      Sequential Dispatching</h3>
+<p>If your driver or device can process only one I/O request from a queue at a time, you should set up the device's I/O queues to use <i>sequential dispatching</i>, which is also called <i>synchronous dispatching</i>. With this type of dispatching, the framework delivers requests to the driver one at a time. The framework does not deliver the next request until the driver <a href="completing_i_o_requests.htm">completes</a>, <a href="canceling_i_o_requests.htm">cancels</a>, or <a href="requeuing_i_o_requests.htm">requeues</a> the previous request.</p>
+<p>After the framework delivers a request to one of the driver's <a href="request_handlers.htm">request handlers</a>, the driver <a href="processing_i_o_requests.htm">processes the request</a>. If the driver forwards the request to a <a href="general_i_o_targets.htm">general I/O target</a>, it typically calls one of the I/O target object's synchronous methods. For more information about these methods, see <a href="sending_i_o_requests_synchronously.htm">Sending I/O Requests Synchronously</a>. The driver must eventually <a href="completing_i_o_requests.htm">complete</a> or <a href="canceling_i_o_requests.htm">cancel</a> every request that it receives from an I/O queue.</p>
+<p>A driver that has set up an I/O queue for sequential dispatching can call <a href="wdf.wdfioqueueretrievenextrequest"><b>WdfIoQueueRetrieveNextRequest</b></a> or <a href="wdf.wdfioqueueretrieverequestbyfileobject"><b>WdfIoQueueRetrieveRequestByFileObject</b></a> to obtain another request from the queue before the last received request has been completed or canceled. You might want to do this in a function driver, so that the driver can start the next hardware operation while the driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function is still processing data from the previous hardware operation.</p>
+<p>If you create several I/O queues and set them all up for sequential dispatching, the framework dispatches requests from each queue sequentially, but the queues run in parallel. If your driver or device can process only one request at a time of any type, you must use a single I/O queue with an <a href="wdf.evtiodefault"><i>EvtIoDefault</i></a> callback function.</p>
+<h3><a id="parallel_dispatching"></a><a id="PARALLEL_DISPATCHING"></a>
+      Parallel Dispatching</h3>
+<p>If your driver and device can process multiple I/O requests simultaneously, you can set up the device's I/O queues to use <i>parallel dispatching</i> so that the driver can process the requests asynchronously. This dispatching method is also called <i>asynchronous dispatching</i>.</p>
+<p>If a driver sets up an I/O queue to use parallel dispatching, the framework delivers I/O requests to the driver as soon as they are available in the queue. The result is that the driver might have to process several requests at once. </p>
+<p>Each time one of the driver's <a href="request_handlers.htm">request handlers</a> receives a request, the driver must <a href="processing_i_o_requests.htm">process the request</a> and then <a href="completing_i_o_requests.htm">complete</a> the request. If the driver forwards the request to a <a href="general_i_o_targets.htm">general I/O target</a>, it typically calls one of the I/O target object's asynchronous methods. For more information about these methods, see <a href="sending_i_o_requests_asynchronously.htm">Sending I/O Requests Asynchronously</a>. The driver must eventually <a href="completing_i_o_requests.htm">complete</a> or <a href="canceling_i_o_requests.htm">cancel</a> every request that it receives from an I/O queue.</p>
+<p>A driver that uses parallel dispatching can call <a href="wdf.wdfioqueuestop"><b>WdfIoQueueStop</b></a> or <a href="wdf.wdfioqueuestopsynchronously"><b>WdfIoQueueStopSynchronously</b></a> to temporarily stop a queue, and then call <a href="wdf.wdfioqueuestart"><b>WdfIoQueueStart</b></a> to restart the queue.</p>
+<h3><a id="manual_dispatching"></a><a id="MANUAL_DISPATCHING"></a>
+      Manual Dispatching</h3>
+<p>If you want your driver to have complete control over the delivery of I/O requests, you can set up a device's I/O queue to use <i>manual dispatching</i>, which means that the framework does not deliver requests to the driver unless the driver explicitly asks for one. </p>
+<p>To obtain a request from a manual queue, the driver can call <a href="wdf.wdfioqueueretrievenextrequest"><b>WdfIoQueueRetrieveNextRequest</b></a> or <a href="wdf.wdfioqueueretrieverequestbyfileobject"><b>WdfIoQueueRetrieveRequestByFileObject</b></a> in a loop that polls the queue. Alternatively, the driver can call <a href="wdf.wdfioqueuereadynotify"><b>WdfIoQueueReadyNotify</b></a> to register a callback function that the framework will call when one or more requests are available in the queue. After the framework calls the callback function, the driver can call <b>WdfIoQueueRetrieveNextRequest</b> or <b>WdfIoQueueRetrieveRequestByFileObject</b> in a loop to retrieve the requests.</p>
+<p>After the driver obtains a request from the queue, it must <a href="processing_i_o_requests.htm">process the request</a>. The driver must eventually <a href="completing_i_o_requests.htm">complete</a> or <a href="canceling_i_o_requests.htm">cancel</a> each request.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Dispatching Methods for I/O Requests%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

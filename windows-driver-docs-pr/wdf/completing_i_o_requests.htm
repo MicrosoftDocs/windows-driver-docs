@@ -1,0 +1,103 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Completing I/O Requests"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Completing I/O Requests</title>
+
+<meta name="MS-HAID" content="Ch3_DFIoPackage_d1dbd3f9-18a2-4948-a098-8ee72939d4b2.xml"/>
+<meta name="MS-HAID" content="kmdf.completing_i_o_requests"/>
+<meta name="MS-HAID" content="wdf.completing_i_o_requests"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.completing_i_o_requests"></a>Completing I/O Requests</h1>
+</div>
+<h2><a id="ddk_completing_i_o_requests_df"></a><a id="DDK_COMPLETING_I_O_REQUESTS_DF"></a></h2>
+<p>Every framework-based driver must eventually complete every I/O request that it receives from the framework. Drivers complete requests by calling the request object's <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a>, <a href="wdf.wdfrequestcompletewithinformation"><b>WdfRequestCompleteWithInformation</b></a>, or <a href="wdf.wdfrequestcompletewithpriorityboost"><b>WdfRequestCompleteWithPriorityBoost</b></a> method. </p>
+<h3><a id="when_to_complete_a_request"></a><a id="WHEN_TO_COMPLETE_A_REQUEST"></a>When to Complete a Request</h3>
+<p>A driver must complete a request when it determines that one of the following cases is true:</p>
+<ul>
+<li>
+<p>The requested I/O operation has finished successfully.</p>
+</li>
+<li>
+<p>The requested I/O operation was started but failed before it finished.</p>
+</li>
+<li>
+<p>The requested I/O operation is not supported, or was not valid at the time it was received, and could not be started.</p>
+</li>
+<li>
+<p>The requested I/O operation was canceled.</p>
+</li>
+</ul>
+<p>If the driver services the I/O request by creating I/O activity on the device, the driver typically calls <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a> from its <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtdpcfunc"><i>EvtDpcFunc</i></a> callback function.</p>
+<p>If the driver receives an unsupported or otherwise invalid request, it typically calls <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a> from the <a href="request_handlers.htm">request handler</a> that received the request.</p>
+<p>If the I/O operation was <a href="canceling_i_o_requests.htm">canceled</a>, the driver typically calls <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a> from its <a href="wdf.evtrequestcancel"><i>EvtRequestCancel</i></a> callback function.</p>
+<p>If the driver <a href="forwarding_i_o_requests.htm">forwards</a> the I/O request to an <a href="using_i_o_targets.htm">I/O target</a>, the driver completes the request after the I/O target completes the request, as follows:</p>
+<ul>
+<li>
+<p>If your driver forwards the I/O request <a href="sending_i_o_requests_synchronously.htm">synchronously</a> to the I/O target, the driver's call to the I/O target returns only after a lower-level driver has completed the request (unless an error occurs). After the I/O target returns, your driver must call <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a>.</p>
+</li>
+<li>
+<p>If your driver forwards the I/O request <a href="sending_i_o_requests_asynchronously.htm">asynchronously</a>, you will want your driver to be notified when a lower-level driver completes the request. If your driver registers a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function, the framework calls this callback function after the I/O target completes the request. The <i>CompletionRoutine</i> callback function typically calls <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a>.</p>
+</li>
+</ul>
+<p>To register a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function, the driver must call <a href="wdf.wdfrequestsetcompletionroutine"><b>WdfRequestSetCompletionRoutine</b></a> before it forwards the I/O request to an I/O target. </p>
+<p>If your driver does not need to be notified when an I/O target completes an asynchronously forwarded I/O request, the driver does not have to register a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function. Instead, the driver can set the <a href="wdf.wdf_request_send_options_flags"><b>WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET</b></a> flag when calling <a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a>. In this case the driver does not call <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a>.</p>
+<p>A driver does not complete an I/O request that it has created by calling <a href="wdf.wdfrequestcreate"><b>WdfRequestCreate</b></a> or <a href="wdf.wdfrequestcreatefromirp"><b>WdfRequestCreateFromIrp</b></a>. Instead, the driver must call <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to delete the request object, typically after an I/O target has completed the request.</p>
+<p>For example, a driver might receive a read or write request for an amount of data that is larger than the driver's I/O targets can handle at one time. The driver must divide the data into several smaller requests and send these smaller requests to one or more I/O targets. Techniques for handling this situation include:</p>
+<ul>
+<li>
+<p>Calling <a href="wdf.wdfrequestcreate"><b>WdfRequestCreate</b></a> to create a single additional request object that represents a smaller request. </p>
+<p>The driver can send this request synchronously to an I/O target. The smaller request's <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function can call <a href="wdf.wdfrequestreuse"><b>WdfRequestReuse</b></a> so that the driver can reuse the request and send it to the I/O target again. After the I/O target completes the last of the smaller requests, the <i>CompletionRoutine</i> callback function can call <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to delete the driver-created request object and the driver can call <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a> to complete the original request.</p>
+</li>
+<li>
+<p>Calling <a href="wdf.wdfrequestcreate"><b>WdfRequestCreate</b></a> to create several additional request objects that represent the smaller requests. </p>
+<p>The driver's I/O targets can process these multiple smaller requests asynchronously. The driver can register a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function for each of the smaller requests. Each time that the <i>CompletionRoutine</i> callback function is called, it can call  <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to delete a driver-created request object. After the I/O target completes all of the smaller requests, the driver can call <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a> to complete the original request.</p>
+</li>
+</ul>
+<h3><a id="providing_completion_information"></a><a id="PROVIDING_COMPLETION_INFORMATION"></a> Providing Completion Information</h3>
+<p>When a driver completes a request, it can optionally provide some additional information that other drivers can access. For example, a driver might provide the number of bytes that were transferred for a read or write request. To provide this information, the driver can do either of the following:</p>
+<ul>
+<li>
+<p>Call <a href="wdf.wdfrequestsetinformation"><b>WdfRequestSetInformation</b></a> before calling <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a>.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfrequestcompletewithinformation"><b>WdfRequestCompleteWithInformation</b></a>.</p>
+</li>
+</ul>
+<h3><a id="obtaining_completion_information"></a><a id="OBTAINING_COMPLETION_INFORMATION"></a>
+      Obtaining Completion Information</h3>
+<p>To obtain information about an I/O request that another driver has completed, a driver can:</p>
+<ul>
+<li>
+<p>Call <a href="wdf.wdfrequestgetstatus"><b>WdfRequestGetStatus</b></a> to obtain the completion status value that the lower-level driver specified when it called <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a>.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfrequestgetcompletionparams"><b>WdfRequestGetCompletionParams</b></a> to obtain a <a href="wdf.wdf_request_completion_params"><b>WDF_REQUEST_COMPLETION_PARAMS</b></a> structure that contains additional information about the completed request, such as handles to memory objects that represent the request's buffers, or bus-specific information.</p>
+<p>A driver can call <a href="wdf.wdfrequestgetcompletionparams"><b>WdfRequestGetCompletionParams</b></a> only after it calls <a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a> to send the I/O request synchronously or asynchronously to an I/O target. The driver must not call <b>WdfRequestGetCompletionParams</b> after it calls one of the methods that send I/O requests to I/O targets only synchronously (such as <a href="wdf.wdfiotargetsendreadsynchronously"><b>WdfIoTargetSendReadSynchronously</b></a>).</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfrequestgetinformation"><b>WdfRequestGetInformation</b></a> to obtain additional I/O completion information that the lower-level driver specified when it called <a href="wdf.wdfrequestsetinformation"><b>WdfRequestSetInformation</b></a> or <a href="wdf.wdfrequestcompletewithinformation"><b>WdfRequestCompleteWithInformation</b></a>, if drivers in the driver stack provide such information.</p>
+</li>
+</ul>
+<p>If a driver sends an I/O request synchronously, it typically calls <a href="wdf.wdfrequestgetstatus"><b>WdfRequestGetStatus</b></a>, <a href="wdf.wdfrequestgetcompletionparams"><b>WdfRequestGetCompletionParams</b></a>, and <a href="wdf.wdfrequestgetinformation"><b>WdfRequestGetInformation</b></a> after the synchronous call returns. If a driver sends an I/O request asynchronously, it typically calls these methods from within a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function.</p>
+<p>For more information about completing I/O requests, see <a href="synchronizing_cancel_and_completion_code.htm">Synchronizing Cancel and Completion Code</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Completing I/O Requests%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

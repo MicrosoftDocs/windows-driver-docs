@@ -1,0 +1,70 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Using Work Items"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using Work Items</title>
+
+<meta name="MS-HAID" content="umdf.using_workitems"/>
+<meta name="MS-HAID" content="wdf.using_workitems"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_workitems"></a>Using Work Items</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>A work item is a task that a driver performs in an <a href="wdf.onworkitem"><i>OnWorkItem</i></a> event callback function. These functions run asynchronously.</p>
+<p>UMDF drivers commonly use work items if an <a href="wdf.oninterruptisr"><i>OnInterruptIsr</i></a> must perform additional processing without delaying the execution of the interrupt service request (ISR) because the interrupt line may be shared by multiple devices. 
+</p>
+<p>Typically, a driver's <a href="wdf.oninterruptisr"><i>OnInterruptIsr</i></a> callback function creates a work-item object and adds it to the system's work-item queue. Subsequently, a threadpool thread dequeues the object and calls the work item's <a href="wdf.onworkitem"><i>OnWorkItem</i></a> callback function.
+</p>
+<h2><a id="Setting_Up_a_Work_Item"></a><a id="setting_up_a_work_item"></a><a id="SETTING_UP_A_WORK_ITEM"></a>Setting Up a Work Item</h2>
+<p>To set up a work item, your driver must:</p>
+<ol>
+<li>
+<p>Create the work item. 
+</p>
+<p>Your driver calls <a href="wdf.iwdfdevice3_createworkitem"><b>IWDFDevice3::CreateWorkItem</b></a> to create a work-item object and to identify an <a href="wdf.onworkitem"><i>OnWorkItem</i></a> callback function that will process the work item.</p>
+</li>
+<li>
+<p>Store information about the work item. 
+</p>
+<p>Typically, drivers use the context memory of the work-item object to store information about the task that the <a href="wdf.onworkitem"><i>OnWorkItem</i></a> callback function should perform. When the <i>OnWorkItem</i> callback function is called, it can retrieve the information by accessing this context memory. For information about how to allocate and access context memory, see<a href="wdf.iwdfobject_assigncontext"><b> IWDFObject::AssignContext</b></a>.</p>
+</li>
+<li>
+<p>Add the work item to the system's work-item queue.</p>
+<p>Your driver calls <a href="wdf.iwdfworkitem_enqueue"><b>IWDFWorkItem::Enqueue</b></a>, which adds the driver's work item to the work-item queue.</p>
+</li>
+</ol>
+<p>When your driver calls <a href="wdf.iwdfdevice3_createworkitem"><b>IWDFDevice3::CreateWorkItem</b></a>, it may optionally supply a parent object (for example a device object or a queue object). When the system deletes that object, it also deletes any existing work items that are associated with the object.
+</p>
+<h2><a id="Using_the_WorkItem_Callback_Function"></a><a id="using_the_workitem_callback_function"></a><a id="USING_THE_WORKITEM_CALLBACK_FUNCTION"></a>Using the WorkItem Callback Function</h2>
+<p>After the work item has been added to the work-item queue, it remains in the queue until a system worker thread becomes available. The system worker thread removes the work item from the queue and then calls the driver's OnWorkItem callback function, passing the work-item object as input.</p>
+<p> 
+Typically, the OnWorkItem callback function performs the following steps:</p>
+<ol>
+<li>Obtains driver-supplied information about the work item by accessing the context memory of the work-item object.</li>
+<li>Performs the task that you specified. If necessary, the callback function can call <a href="wdf.iwdfworkitem_getparentobject"><b>IWDFWorkItem::GetParentObject</b></a> to determine the work item's parent object. 
+</li>
+<li>If the driver will requeue the work item, indicates that the handle to the work item is now available for reuse.</li>
+</ol>
+<p> 
+A few drivers might need to call <a href="wdf.iwdfworkitem_flush"><b>IWDFWorkItem::Flush</b></a> to flush their work items from the work-item queue. If a driver calls the <b>Flush</b> method, the method does not return until a worker thread has removed the specified work item from the work-item queue and called the driver's <a href="wdf.onworkitem"><i>OnWorkItem</i></a> callback function, and the <i>OnWorkItem</i> callback function has subsequently returned after processing the work item. 
+</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using Work Items%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

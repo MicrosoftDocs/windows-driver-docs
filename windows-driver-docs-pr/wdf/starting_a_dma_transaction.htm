@@ -1,0 +1,95 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Starting a DMA Transaction"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Starting a DMA Transaction</title>
+
+<meta name="MS-HAID" content="DFDmaPackage_cfa07465-f3ca-44b0-b398-58c03b2cc3b8.xml"/>
+<meta name="MS-HAID" content="kmdf.starting_a_dma_transaction"/>
+<meta name="MS-HAID" content="wdf.starting_a_dma_transaction"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.starting_a_dma_transaction"></a>Starting a DMA Transaction</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<h2><a id="ddk_starting_a_dma_transaction_df"></a><a id="DDK_STARTING_A_DMA_TRANSACTION_DF"></a></h2>
+<p>After your driver has <a href="creating_and_initializing_a_dma_transaction.htm">created and initialized a DMA transaction</a>, the driver can call the <a href="wdf.wdfdmatransactionexecute"><b>WdfDmaTransactionExecute</b></a> method to start the transaction. This method builds a scatter/gather list for the first <a href="dma_transactions_and_dma_transfers.htm">DMA transfer</a> that is associated with the transaction. Next, the method calls the <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> callback function that the driver registered for the transaction. The callback function <a href="programming_dma_hardware.htm">programs the DMA hardware</a> to start the transfer.</p>
+<p>Before your driver calls <b>WdfDmaTransactionExecute</b>, the driver must store the DMA transaction handle so that it can be retrieved later when the driver completes each DMA transfer that is associated with the transaction. A good place to store the transaction handle is in the context memory of a framework object, typically the device's framework device object. For more information about using object context memory, see <a href="framework_object_context_space.htm">Framework Object Context Space</a>. </p>
+<p>The  following code example from the <a href="http://go.microsoft.com/fwlink/p/?linkid=256157">PLX9x5x</a> sample shows how to initialize and then execute a DMA transaction. This code appears in the <i>Read.c</i> file.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID PLxEvtIoRead(
+    IN WDFQUEUE         Queue,
+    IN WDFREQUEST       Request,
+    IN size_t           Length
+    )
+{
+    NTSTATUS            status = STATUS_UNSUCCESSFUL;
+    PDEVICE_EXTENSION   devExt;
+    // Get the DevExt from the queue handle
+    devExt = PLxGetDeviceContext(WdfIoQueueGetDevice(Queue));
+    do {
+        // Validate the Length parameter.
+        if (Length &gt; PCI9656_SRAM_SIZE)  {
+            status = STATUS_INVALID_BUFFER_SIZE;
+            break;
+        }
+        // Initialize the DmaTransaction.
+        status = 
+           WdfDmaTransactionInitializeUsingRequest(
+                 devExt-&gt;ReadDmaTransaction,
+                 Request, 
+                 PLxEvtProgramReadDma, 
+                 WdfDmaDirectionReadFromDevice 
+           );
+        if(!NT_SUCCESS(status)) {
+            . . . //Error-handling code omitted
+            break; 
+        }
+        // Execute this DmaTransaction.
+        status = WdfDmaTransactionExecute( devExt-&gt;ReadDmaTransaction, 
+                                           WDF_NO_CONTEXT);
+        if(!NT_SUCCESS(status)) {
+            . . . //Error-handling code omitted
+            break; 
+        }
+        // Indicate that the DMA transaction started successfully.
+        // The DPC routine will complete the request when the DMA
+        // transaction is complete.
+        status = STATUS_SUCCESS;
+    } while (0);
+    // If there are errors, clean up and complete the request.
+    if (!NT_SUCCESS(status )) {
+        WdfDmaTransactionRelease(devExt-&gt;ReadDmaTransaction); 
+        WdfRequestComplete(Request, status);
+    }
+    return;
+}
+
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Starting a DMA Transaction%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

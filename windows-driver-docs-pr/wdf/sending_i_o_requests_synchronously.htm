@@ -1,0 +1,147 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Sending I/O Requests Synchronously"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Sending I/O Requests Synchronously</title>
+
+<meta name="MS-HAID" content="Ch5_DFIoTargets_e2ffcdf3-a2a9-4f05-a0e1-823881f4888a.xml"/>
+<meta name="MS-HAID" content="kmdf.sending_i_o_requests_synchronously"/>
+<meta name="MS-HAID" content="wdf.sending_i_o_requests_synchronously"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.sending_i_o_requests_synchronously"></a>Sending I/O Requests Synchronously</h1>
+</div>
+<h2><a id="ddk_sending_i_o_requests_synchronously_df"></a><a id="DDK_SENDING_I_O_REQUESTS_SYNCHRONOUSLY_DF"></a></h2>
+<p>The following table lists the I/O target object methods that your driver can call to send I/O requests synchronously to an I/O target. For detailed information about how to use these methods, see the methods' reference pages.</p>
+<table>
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetsendreadsynchronously"><b>WdfIoTargetSendReadSynchronously</b></a></p>
+</td>
+<td>
+<p>Sends a read request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetsendwritesynchronously"><b>WdfIoTargetSendWriteSynchronously</b></a></p>
+</td>
+<td>
+<p>Sends a write request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetsendioctlsynchronously"><b>WdfIoTargetSendIoctlSynchronously</b></a></p>
+</td>
+<td>
+<p>Sends a device control request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetsendinternalioctlsynchronously"><b>WdfIoTargetSendInternalIoctlSynchronously</b></a></p>
+</td>
+<td>
+<p>Sends an internal device control request</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetsendinternalioctlotherssynchronously"><b>WdfIoTargetSendInternalIoctlOthersSynchronously</b></a></p>
+</td>
+<td>
+<p>Sends a non-standard internal device control request</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<p>You can also send requests synchronously by calling <a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a>, but you have to format the request first by following the rules that are described in <a href="sending_i_o_requests_asynchronously.htm">Sending I/O Requests Asynchronously</a>.</p>
+<p>Sending I/O requests to an I/O target synchronously is simpler to program than sending I/O requests <a href="sending_i_o_requests_asynchronously.htm">asynchronously</a>. However, you should use the following guidelines to help you decide if synchronous I/O is appropriate for your driver:</p>
+<ul>
+<li>
+<p>You can use synchronous I/O if your driver does not send many I/O requests and if system or device performance is not reduced because your driver waits for each I/O request to complete.</p>
+</li>
+<li>
+<p>If your driver must handle many I/O requests in short periods of time, you probably cannot allow your driver to wait for each request to complete before sending the next request. Otherwise, your driver might lose data or reduce the performance of its device (and, possibly, the entire system). In such cases, asynchronous I/O might be the better choice.</p>
+</li>
+<li>
+<p>Synchronous I/O is useful for handling operations that must start and finish without additional concurrent activity. Such operations might include resetting a USB pipe or reading device registers.</p>
+</li>
+<li>
+<p>Most times, your driver should specify a time-out value when it calls an object method that sends an I/O request synchronously. If your driver does not specify a time-out value, and if a device or a lower-level driver fails to respond, your driver can stall. As a result, the user can experience an unresponsive application. In addition, other drivers might not be able to obtain system resources, such as <a href="using_framework_work_items.htm">work items</a>, if your driver is not releasing them. </p>
+</li>
+<li>
+<p>If drivers above and below yours in the stack require operations to proceed synchronously, your driver should use synchronous I/O. Therefore, you should learn about the requirements of other drivers that might exist in the driver stack.</p>
+</li>
+</ul>
+<p>The following example shows how to send a synchronous I/O control (IOCTL) request:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>NTSTATUS                status;
+    WDF_MEMORY_DESCRIPTOR   inputDesc, outputDesc;
+    PWDF_MEMORY_DESCRIPTOR  pInputDesc = NULL, pOutputDesc = NULL;
+    ULONG_PTR               bytesReturned;
+
+    UNREFERENCED_PARAMETER(FileObject);
+
+    if (InputBuffer) {
+        WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&amp;inputDesc,
+                                    InputBuffer,
+                                    InputBufferLength);
+        pInputDesc = &amp;inputDesc;
+    }
+
+    if (OutputBuffer) {
+        WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&amp;outputDesc,
+                                    OutputBuffer,
+                                    OutputBufferLength);
+        pOutputDesc = &amp;outputDesc;
+    }
+
+    status = WdfIoTargetSendIoctlSynchronously(
+                        IoTarget,
+                        WDF_NO_HANDLE, // Request
+                        IoctlControlCode,
+                        pInputDesc,
+                        pOutputDesc,
+                        NULL, // PWDF_REQUEST_SEND_OPTIONS
+                        &amp;bytesReturned);
+    if (!NT_SUCCESS(status)) {
+         DEBUGP(MP_ERROR,
+        ("WdfIoTargetSendIoctlSynchronously failed 0x%x\n",
+          status));
+    }
+
+    *BytesReadOrWritten = (ULONG)bytesReturned;
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Sending I/O Requests Synchronously%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

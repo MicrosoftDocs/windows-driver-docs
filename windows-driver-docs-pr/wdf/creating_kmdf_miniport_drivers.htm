@@ -1,0 +1,52 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Creating KMDF Miniport Drivers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Creating KMDF Miniport Drivers</title>
+
+<meta name="MS-HAID" content="Ch8_DFTechniques_9af1406b-2188-47ac-bc5b-f03fbaa786be.xml"/>
+<meta name="MS-HAID" content="kmdf.creating_framework_based_miniport_drivers"/>
+<meta name="MS-HAID" content="kmdf.creating_kmdf_miniport_drivers"/>
+<meta name="MS-HAID" content="wdf.creating_kmdf_miniport_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.creating_kmdf_miniport_drivers"></a>Creating KMDF Miniport Drivers</h1>
+</div>
+<h2><a id="ddk_using_windows_driver_framework_with_miniport_drivers_df"></a><a id="DDK_USING_WINDOWS_DRIVER_FRAMEWORK_WITH_MINIPORT_DRIVERS_DF"></a></h2>
+<p>Some miniport drivers can use Kernel-Mode Driver Framework, if the port/miniport architecture allows the miniport driver to communicate with other drivers by using WDM or framework interfaces. For example, <a href="netvista.ndis_miniport_drivers_with_a_wdm_lower_edge">NDIS miniport drivers with a WDM lower edge</a> can use the framework to implement the lower edge. </p>
+<p>If you want your miniport driver to use the framework, the driver must:</p>
+<ul>
+<li>
+<p>Set the <a href="wdf.wdf_driver_init_flags"><b>WdfDriverInitNoDispatchOverride</b></a> flag in the <b>DriverInitFlags</b> member of the driver's <a href="wdf.wdf_driver_config"><b>WDF_DRIVER_CONFIG</b></a> structure before calling <a href="wdf.wdfdrivercreate"><b>WdfDriverCreate</b></a>. Setting this flag enables the port driver, instead of the framework, to intercept I/O request packets (IRPs) that the I/O manager has directed to the driver.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfdeviceminiportcreate"><b>WdfDeviceMiniportCreate</b></a> instead of <a href="wdf.wdfdevicecreate"><b>WdfDeviceCreate</b></a> to create framework device objects for the miniport driver's devices. The miniport driver should call <b>WdfDeviceMiniportCreate</b> when its port driver informs it that a device is available.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to delete the device object that <a href="wdf.wdfdeviceminiportcreate"><b>WdfDeviceMiniportCreate</b></a> creates, when the driver determines that the device has been removed. (Because the driver has set the <a href="wdf.wdf_driver_init_flags"><b>WdfDriverInitNoDispatchOverride</b></a> flag, the framework cannot determine when the device is removed and cannot delete the device object.)</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfdriverminiportunload"><b>WdfDriverMiniportUnload</b></a> when the port driver informs the miniport driver that it is about to be unloaded.</p>
+</li>
+</ul>
+<p>A miniport driver can use the framework only if the underlying device supports Plug and Play (PnP). Miniport drivers cannot use the framework's control device objects.</p>
+<p>Restrictions apply to the device objects that the <a href="wdf.wdfdeviceminiportcreate"><b>WdfDeviceMiniportCreate</b></a> method creates. For a list of these restrictions, see <a href="wdf.wdfdeviceminiportcreate"><b>WdfDeviceMiniportCreate</b></a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Creating KMDF Miniport Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

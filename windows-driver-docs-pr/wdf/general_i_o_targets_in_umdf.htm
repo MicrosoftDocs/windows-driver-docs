@@ -1,0 +1,59 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="General I/O Targets in UMDF"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>General I/O Targets in UMDF</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_cf441e82-e6e9-4a5b-be77-247a5e7f24e0.xml"/>
+<meta name="MS-HAID" content="umdf.general_i_o_targets_in_umdf"/>
+<meta name="MS-HAID" content="wdf.general_i_o_targets_in_umdf"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.general_i_o_targets_in_umdf"></a>General I/O Targets in UMDF</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>General I/O targets, which can be either <i>local</i> or <i>remote</i>, are I/O targets that do not support special, device-specific data formats, such as USB request blocks. Before drivers send data to a general I/O target, they must put data into a write buffer in a format that the I/O target and device can interpret. Likewise, when drivers read data from a general I/O target, the drivers must be able to interpret the contents of data buffers that they receive from the target.</p>
+<p></p>
+<dl>
+<dt><a id="Local_I_O_Targets_______"></a><a id="local_i_o_targets_______"></a><a id="LOCAL_I_O_TARGETS_______"></a><b>Local I/O Targets
+      </b></dt>
+<dd>
+<p>Drivers often send I/O requests to the next-lower driver in the driver stack. Therefore, each UMDF-based driver has a <i>default I/O target</i> for each device, which is the device's next-lower driver. The default I/O target for the lowest-level UMDF-based driver is the kernel-mode <a href="overview_of_the_umdf.htm">reflector</a>.</p>
+<p>Sometimes a UMDF-based driver must send I/O requests to a file-handle-based I/O target, such as a file or a network socket. Therefore, the framework also provides file-handle-based I/O target objects. </p>
+<p>Both the default I/O target and file-handle-based I/O targets are called <i>local I/O targets</i>, because UMDF-based drivers use these targets to send I/O requests to devices that the driver stack supports.</p>
+</dd>
+<dt><a id="Remote_I_O_Targets_______"></a><a id="remote_i_o_targets_______"></a><a id="REMOTE_I_O_TARGETS_______"></a><b>Remote I/O Targets
+      </b></dt>
+<dd>
+<p>Occasionally, a driver must send an I/O request to a different driver stack. Therefore, the framework also provides <i>remote I/O targets</i>, which consist of all of the I/O targets except local I/O targets. </p>
+<p>A remote I/O target might be a device that the driver stack does not support, a file on that device, or a <a href="using_device_interfaces_in_umdf_drivers.htm">device interface</a> for that device. </p>
+</dd>
+</dl>
+<p>The following sections describe how to initialize and use a general I/O target:</p>
+<p>
+<ul>
+<li><a href="initializing_a_general_i_o_target_in_umdf.htm">Initializing a General I/O Target in UMDF</a></li>
+<li><a href="sending_i_o_requests_to_a_general_i_o_target_in_umdf.htm">Sending I/O Requests to a General I/O Target in UMDF</a></li>
+<li><a href="controlling_a_general_i_o_target_s_state_in_umdf.htm">Controlling a General I/O Target's State in UMDF</a></li>
+<li><a href="obtaining_information_about_a_general_i_o_target_in_umdf.htm">Obtaining Information About a General I/O Target in UMDF</a></li>
+</ul>
+</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20General I/O Targets in UMDF%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

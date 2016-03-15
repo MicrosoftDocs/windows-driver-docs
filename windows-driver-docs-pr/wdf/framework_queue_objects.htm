@@ -1,0 +1,59 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Framework Queue Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Framework Queue Objects</title>
+
+<meta name="MS-HAID" content="Ch3_DFIoPackage_7c82fbf9-2779-4d85-b91f-9c450f4ae4d7.xml"/>
+<meta name="MS-HAID" content="kmdf.framework_queue_objects"/>
+<meta name="MS-HAID" content="wdf.framework_queue_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.framework_queue_objects"></a>Framework Queue Objects</h1>
+</div>
+<h2><a id="ddk_framework_queue_objects_df"></a><a id="DDK_FRAMEWORK_QUEUE_OBJECTS_DF"></a></h2>
+<p>Framework queue objects represent <i>I/O queues</i>, which are containers for the I/O requests that a driver receives. Each driver can create one or more I/O queues for each device. The framework queue object defines a set of <a href="wdf.wdf_queue_object_reference">event callback functions</a> that the driver can provide and a set of object methods that the driver can call.</p>
+<p>When the framework receives an I/O request that is directed to one of the driver's devices, the framework places the request in the appropriate I/O queue. If your driver registers one or more <a href="request_handlers.htm">request handlers</a>, the framework can notify your driver each time an I/O request is available. Alternatively, your driver can poll the I/O queue for requests.</p>
+<p>This section includes:</p>
+<dl>
+<dd>
+<p><a href="creating_i_o_queues.htm">Creating I/O Queues</a></p>
+</dd>
+<dd>
+<p><a href="deleting_i_o_queues.htm">Deleting I/O Queues</a></p>
+</dd>
+<dd>
+<p><a href="managing_i_o_queues.htm">Managing I/O Queues</a></p>
+</dd>
+<dd>
+<p><a href="using_power_managed_i_o_queues.htm">Using Power-Managed I/O Queues</a></p>
+</dd>
+<dd>
+<p><a href="guaranteeing_forward_progress_of_i_o_operations.htm">Guaranteeing Forward Progress of I/O Operations</a></p>
+</dd>
+<dd>
+<p><a href="i_o_queue_states.htm">I/O Queue States</a></p>
+</dd>
+<dd>
+<p><a href="example_uses_of_i_o_queues.htm">Example Uses of I/O Queues</a></p>
+</dd>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Framework Queue Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

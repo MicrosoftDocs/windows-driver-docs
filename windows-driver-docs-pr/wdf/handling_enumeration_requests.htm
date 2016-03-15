@@ -1,0 +1,35 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Handling Enumeration Requests"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Handling Enumeration Requests</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_8239be28-5399-4e06-a568-bd7d6743d168.xml"/>
+<meta name="MS-HAID" content="kmdf.handling_enumeration_requests"/>
+<meta name="MS-HAID" content="wdf.handling_enumeration_requests"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.handling_enumeration_requests"></a>Handling Enumeration Requests</h1>
+</div>
+<p>The PnP manager can request a bus driver to enumerate its children at any time. (If you are familiar with WDM interfaces, enumeration requests are <a href="kernel.irp_mn_query_device_relations"><b>IRP_MN_QUERY_DEVICE_RELATIONS</b></a> requests with a relation type of <b>BusRelations</b>.) Framework-based drivers do not see these requests. Instead, the framework handles the requests by using the information that is stored in a device's child list. The driver is responsible for keeping the child list up-to-date so that the framework can provide correct information when the PnP manager requests an enumeration.</p>
+<p>Framework-based bus drivers that support dynamic enumeration can receive a request to reenumerate a particular child device. Such a request might be sent by the child device's function driver after the driver detects a device failure. (The framework supports this type of request by implementing the <a href="kernel.reenumerate_self_interface_standard"><b>REENUMERATE_SELF_INTERFACE_STANDARD</b></a> interface, which is a standard <a href="using_driver_defined_interfaces.htm">driver-defined interface</a> that is defined in <i>wdm.h</i>.) </p>
+<p>Framework-based bus drivers that support dynamic enumeration can provide an <a href="wdf.evtchildlistdevicereenumerated"><i>EvtChildListDeviceReenumerated</i></a> callback function, which the framework calls when it receives a reenumeration request from a child device's driver. If this callback function returns <b>TRUE</b> or does not exist, the framework marks the child device as no longer being present and informs the PnP manager that the bus driver's child list has changed. As a result, the PnP manager requests a reenumeration and the framework calls the driver's <a href="wdf.evtchildlistcreatedevice"><i>EvtChildListCreateDevice</i></a> callback function, which creates a new PDO for the child device.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Handling Enumeration Requests%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="PnP and Power Management Interfaces"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>PnP and Power Management Interfaces</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_02e5f739-8c80-4fcd-81c0-3c429220b9f3.xml"/>
+<meta name="MS-HAID" content="umdf.pnp_and_power_management_interfaces"/>
+<meta name="MS-HAID" content="wdf.pnp_and_power_management_interfaces"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.pnp_and_power_management_interfaces"></a>PnP and Power Management Interfaces</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>When a new device arrives in the system, the framework calls the <a href="wdf.idriverentry_ondeviceadd"><b>IDriverEntry::OnDeviceAdd</b></a> method to notify the UMDF driver of the arrival and passes the <a href="wdf.iwdfdriver"><b>IWDFDriver</b></a> and <a href="wdf.iwdfdeviceinitialize"><b>IWDFDeviceInitialize</b></a> interfaces in the call. The driver calls the <a href="wdf.iwdfdriver_createdevice"><b>IWDFDriver::CreateDevice</b></a> method to create a framework device object for the device. </p>
+<p>When drivers create a framework device object, they can register the following interfaces so that the framework notifies the driver&#8212;by calling the methods associated with the interfaces&#8212;when Plug and Play (PnP) and power management (PM) events occur. </p>
+<dl>
+<dd>
+<p><a href="wdf.ipnpcallback"><b>IPnpCallback</b></a></p>
+</dd>
+<dd>
+<p><a href="wdf.ipnpcallbackselfmanagedio"><b>IPnpCallbackSelfManagedIo</b></a></p>
+</dd>
+<dd>
+<p><a href="wdf.ipnpcallbackhardware"><b>IPnpCallbackHardware</b></a></p>
+</dd>
+<dd>
+<p><a href="wdf.ipowerpolicycallbackwakefroms0"><b>IPowerPolicyCallbackWakeFromS0</b></a></p>
+</dd>
+<dd>
+<p><a href="wdf.ipowerpolicycallbackwakefromsx"><b>IPowerPolicyCallbackWakeFromSx</b></a></p>
+</dd>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20PnP and Power Management Interfaces%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

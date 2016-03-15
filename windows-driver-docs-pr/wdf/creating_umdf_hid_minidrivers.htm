@@ -1,0 +1,92 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic describes how to create a Human Interface Device (HID) minidriver using Windows Driver Frameworks (WDF)."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Creating WDF HID Minidrivers</title>
+
+<meta name="MS-HAID" content="umdf.creating_umdf-based_hid_minidrivers"/>
+<meta name="MS-HAID" content="umdf.creating_umdf_hid_minidrivers"/>
+<meta name="MS-HAID" content="wdf.creating_umdf_hid_minidrivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.creating_umdf_hid_minidrivers"></a>Creating WDF HID Minidrivers</h1>
+</div>
+<p>This topic describes how to create a Human Interface Device (HID) minidriver using Windows Driver Frameworks (WDF). </p>
+<p>You can write a HID minidriver using either KMDF or UMDF.  We recommend starting with the vhidmini2 minidriver sample. You can compile this sample driver using either KMDF or UMDF 2.x.</p>
+<p class="proch"><img src="../common/wedge.gif" alt=""/><b>What to provide</b></p>
+<ol>
+<li>You'll write a lower filter driver under <i>MsHidUmdf.sys</i> (for UMDF) or <i>MsHidKmdf.sys</i> (for KMDF), both of which are included as part of the operating system.</li>
+<li>
+<p>Download and review the <a href="https://github.com/Microsoft/Windows-driver-samples/tree/master/hid/vhidmini2">vhidmini2 sample</a>.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdffdoinitsetfilter"><b>WdfFdoInitSetFilter</b></a> from the driver's <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function.</p>
+</li>
+<li>
+<p>Create I/O queues to receive I/O requests that <i>MsHidUmdf.sys</i> or <i>MsHidKmdf.sys</i> pass from the class driver to your driver.
+</p>
+</li>
+<li>Provide an <a href="wdf.evtiodevicecontrol"><i>EvtIoDeviceControl</i></a>  callback function that branches to IOCTL-specific method handlers. Review the IOCTLs described in <a href="wdf.umdf_hid_minidriver_ioctls">WDF HID Minidriver IOCTLs</a> and ensure that your driver handles the relevant ones for your device.</li>
+<li>For UMDF, if your driver is enumerated by ACPI, optionally enable selective suspend.  In the device's hardware key,  add a <b>EnableDefaultIdleNotificationHandler</b> subkey and set it to 1.</li>
+<li>
+<p>For UMDF, set the following <a href="specifying_wdf_directives_in_inf_files.htm">INF directives</a> in a WDF-specific <i>DDInstall</i> section of your INF file:</p>
+<ul>
+<li><b>UmdfKernelModeClientPolicy</b> to <b>AllowKernelModeClients</b> so that the kernel-mode pass-through driver can be loaded in the stack.</li>
+<li><b>UmdfMethodNeitherAction</b> to <b>Copy</b> to allow UMDF to process IOCTLs of METHOD_NEITHER type. </li>
+<li><b>UmdfFileObjectPolicy</b> to <b>AllowNullAndUnknownFileObjects</b></li>
+<li><b>UmdfFsContextUsePolicy</b> to <b>CanUseFsContext2</b></li>
+</ul>
+<p>For example:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[hidumdf.NT.Wdf]
+UmdfKernelModeClientPolicy = AllowKernelModeClients
+UmdfMethodNeitherAction=Copy
+UmdfFileObjectPolicy=AllowNullAndUnknownFileObjects
+UmdfFsContextUsePolicy = CanUseFsContext2</pre>
+</td>
+</tr>
+</table></span></div>
+</li>
+</ol>
+<p>If you are writing a UMDF HID minidriver for Windows 7, download <a href="https://go.microsoft.com/fwlink/p/?LinkId=733614">Windows Driver Kit (WDK) 8.1</a> to obtain source code for <i>HidUmdf.sys</i>.   Then, write a UMDF 1.11 driver and include <i>HidUmdf.sys</i> and UMDF 1.11 in your driver package.</p>
+<h2><a id="Architecture"></a><a id="architecture"></a><a id="ARCHITECTURE"></a>Architecture</h2>
+<p>The HID class driver (<i>HidClass.sys</i>) and the framework provide conflicting WDM dispatch routines to handle some I/O requests (such as Plug and Play and power management requests) for minidrivers. As a result, a HID minidriver cannot link to both the class driver and the framework. Therefore, Microsoft provides <i>MsHidUmdf.sys</i> and <i>MsHidKmdf.sys</i>, which are WDM drivers that reside between the class driver and the minidriver.</p>
+<p>Both <i>MsHidUmdf.sys</i> and <i>MsHidKmdf.sys</i> call the HID class driver's <a href="hid.hidregisterminidriver"><b>HidRegisterMinidriver</b></a> routine to register as the actual HID minidriver. Although these drivers  act as the device's function driver, they just pass I/O requests from the class driver to your driver (and are thus sometimes called <i>pass-through drivers</i>).
+
+
+For both KMDF and UMDF, the only component that you supply is the HID minidriver, which is a lower filter driver that sits under the pass-through driver.</p>
+<table>
+<tr>
+<td>UMDF architecture</td>
+<td>KMDF architecture</td>
+</tr>
+<tr>
+<td><img src="images/UMDF-basedHIDMinidrivers.png" alt="Location of HidUmdf.sys in the driver stack"/></td>
+<td><img src="images/Framework-basedHIDMinidrivers.png" alt="Location of MsHidKmdf.sys in driver stack"/></td>
+</tr>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Creating WDF HID Minidrivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Reading and Writing to Device Registers in UMDF 1.x Drivers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Reading and Writing to Device Registers in UMDF 1.x Drivers</title>
+
+<meta name="MS-HAID" content="umdf.reading_and_writing_to_device_registers"/>
+<meta name="MS-HAID" content="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers"></a>Reading and Writing to Device Registers in UMDF 1.x Drivers</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>Starting in UMDF version 1.11, the framework provides a set of routines to access registers in memory space and I/O port space. The <a href="wdf.umdf_hal_library_routines">UMDF register/port access routines</a> are very similar to the HAL routines used by kernel-mode drivers.
+After a driver has mapped registers as described in <a href="wdf.finding_and_mapping_hardware_resources_in_a_umdf_driver">Finding and Mapping Hardware Resources in a UMDF Driver</a>, the driver uses the READ/WRITE_REGISTER_Xxx routines to read and write to individual registers. For I/O ports, the driver calls the READ/WRITE_PORT_Xxx routines.</p>
+<p>This example shows how to write to a memory-mapped register.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>VOID
+CMyQueue::WriteToDevice(
+    __in IWDFDevice3* pWdfDevice,
+    __in UCHAR Value
+    )
+{
+    //
+    // Write the UCHAR value at offset 2 from register base
+    //
+    WRITE_REGISTER_UCHAR(pWdfDevice, 
+                      (m_MyDevice-&gt;m_RegBase)+2, 
+                       Value);
+}
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p>By default, UMDF internally uses system calls to access the registers mapped either in memory space or in I/O port space. A register in I/O port space is always accessed through a system call. However, when accessing memory-mapped registers, a UMDF driver can cause the framework to map the memory-mapped registers into user-mode address space by setting the INF directive <b>UmdfRegisterAccessMode</b> to <b>RegisterAccessUsingUserModeMapping</b>. Some drivers may need to do this for performance reasons. See <a href="specifying_wdf_directives_in_inf_files.htm">Specifying WDF Directives in INF Files</a> for a complete list of UMDF INF directives. 
+</p>
+<p>The driver should use the READ/WRITE_REGISTER_Xxx routines even if it has mapped registers into user-mode. These routines validate driver input and ensure that the driver doesn't request access to invalid locations. Rarely, a driver may need to access user-mode mapped registers directly, without using these routines. To do so, a driver retrieves the user-mode mapped address by calling <a href="wdf.iwdfdevice3_gethardwareregistermappedaddress"><b>IWDFDevice3::GetHardwareRegisterMappedAddress</b></a> on the mapped base address. Because UMDF doesn't validate read and write accesses performed in this way, this technique is not recommended for register access.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Reading and Writing to Device Registers in UMDF 1.x Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

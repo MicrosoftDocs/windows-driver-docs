@@ -1,0 +1,49 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="UMDF DDI Programming Model"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>UMDF DDI Programming Model</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_6152f579-761a-4509-8de1-69f33c19ca51.xml"/>
+<meta name="MS-HAID" content="umdf.umdf_ddi_programming_model"/>
+<meta name="MS-HAID" content="wdf.umdf_ddi_programming_model"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.umdf_ddi_programming_model"></a>UMDF DDI Programming Model</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>The framework and the UMDF driver communicate through the UMDF DDI. The UMDF DDI is similar to the KMDF DDI except that the UMDF DDI is based on COM. Therefore, driver writers familiar with KMDF will understand UMDF.</p>
+<p>For each type of framework object, the UMDF defines an interface through which to manipulate instances of the object. Each interface supports methods and properties. Methods define actions that can be taken on behalf of the object and properties set and retrieve the characteristics of the object. Some interfaces are implemented by the framework and others are implemented by the driver. Interfaces that are exposed by a framework object are of the form IWDF&lt;object&gt;, while the event callback interfaces exposed by a driver are of the form I&lt;object&gt;&lt;action&gt;, where &lt;object&gt; represents a queue, request, and so on, and &lt;action&gt; indicates what the interface does. Methods of the callback interfaces begin with "On".</p>
+<p>The UMDF driver communicates with the framework's objects through their methods and properties. The framework communicates with the driver through event notifications, which are callback functions that the framework can call to notify the driver about specific events. To register callback functions, the driver can call, for example, the following framework object methods and can pass a pointer to the <b>IUnknown</b> interface associated with all the interfaces for the callback functions that the driver supports.</p>
+<ul>
+<li>
+<p><a href="wdf.iwdfdevice_createioqueue"><b>IWDFDevice::CreateIoQueue</b></a></p>
+</li>
+<li>
+<p><a href="wdf.iwdfdriver_createdevice"><b>IWDFDriver::CreateDevice</b></a></p>
+</li>
+<li>
+<p><a href="wdf.iwdfdriver_createwdfobject"><b>IWDFDriver::CreateWdfObject</b></a></p>
+</li>
+</ul>
+<p>As an example of driver to framework communication, consider a device's default I/O queue object. A driver can call methods, such as <a href="wdf.iwdfioqueue_getstate"><b>IWDFIoQueue::GetState</b></a>, to retrieve status information about the I/O queue, or <a href="wdf.iwdfioqueue_retrievenextrequest"><b>IWDFIoQueue::RetrieveNextRequest</b></a> to retrieve a request from the I/O queue. A driver can also request for notifications on the I/O queue by calling the <a href="wdf.iwdfdevice_createioqueue"><b>IWDFDevice::CreateIoQueue</b></a> method to register callback interfaces, such as <a href="wdf.iqueuecallbackread">IQueueCallbackRead</a> and <a href="wdf.iqueuecallbackwrite">IQueueCallbackWrite</a>. The methods of these interfaces are subsequently called by the framework when an application sends read and write requests. </p>
+<p>The framework provides any synchronization required across driver callback methods. By default, the framework synchronizes at device object level; that is, the framework does not concurrently call the event callback methods at or below the device object level. A driver can override this default by requesting no synchronization. For more information, see <a href="specifying_a_callback_synchronization_mode.htm">Specifying a Callback Synchronization Mode</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20UMDF DDI Programming Model%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Canceling I/O Requests"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Canceling I/O Requests</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_297af457-ce04-4b3b-aefa-44e0ee71f8d4.xml"/>
+<meta name="MS-HAID" content="umdf.canceling_i_o_requests"/>
+<meta name="MS-HAID" content="wdf.canceling_i_o_requests_umdf"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.canceling_i_o_requests_umdf"></a>Canceling I/O Requests</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>A device's in-progress I/O operation (such as a request to read several blocks from a disk) can be canceled by an application, the system, or a driver. If a device's I/O operation is canceled, the I/O Manager attempts to cancel all unprocessed I/O requests that are associated with the I/O operation. The device's drivers can register to be notified when the I/O Manager attempts to cancel I/O requests, and the drivers can cancel the requests that they own by <a href="completing_i_o_requests.htm">completing</a> them with a completion status of HRESULT_FROM_WIN32(ERROR_OPERATION_ABORTED).</p>
+<p>The framework handles some of the cancellation work for framework-based drivers. If a device's I/O operation is canceled, the framework completes--with a completion status of HRESULT_FROM_WIN32(ERROR_OPERATION_ABORTED)--the following I/O requests that are associated with the canceled operation:</p>
+<ul>
+<li>
+<p>Undelivered I/O requests that the framework has placed in the driver's default I/O queue.</p>
+</li>
+<li>
+<p>Undelivered I/O requests that the framework has forwarded to another queue because the driver called <a href="wdf.iwdfioqueue_configurerequestdispatching"><b>IWDFIoQueue::ConfigureRequestDispatching</b></a>.</p>
+</li>
+</ul>
+<p>Because the framework cancels these requests, it does not deliver them to the driver.</p>
+<p>After the framework has delivered an I/O request to the driver, the driver owns the request and the framework cannot cancel it. At this point, only the driver can cancel the I/O request, but the framework must notify the driver that a request should be canceled. Drivers receive this notification by providing an <a href="wdf.irequestcallbackcancel_oncancel"><b>IRequestCallbackCancel::OnCancel</b></a> callback function.</p>
+<p>Sometimes a driver receives an I/O request from an I/O queue but, instead of processing the request, the driver requeues the request to the same or another I/O queue for later processing. For example, the framework might deliver an I/O request to one of the driver's request handlers, and the driver might subsequently call either <a href="wdf.iwdfiorequest_forwardtoioqueue"><b>IWDFIoRequest::ForwardToIoQueue</b></a> to place the request in a different queue or <a href="wdf.iwdfiorequest2_requeue"><b>IWDFIoRequest2::Requeue</b></a> to place the request back into the same queue. </p>
+<p>In these cases, the framework can cancel the I/O request because the request is in an I/O queue. However, if the driver has registered an   callback function for the I/O queue in which the request resides, the framework calls the callback function, instead of canceling the request, when the associated I/O operation is being canceled. If the framework calls the driver's   callback function, the driver must cancel the request.</p>
+<p>In summary, when an I/O operation is canceled, the framework always cancels all associated I/O requests that were never delivered to the driver. If the driver receives a request and then requeues it, the framework will cancel the request (if the request is in the queue) unless the driver provides an   callback function for the I/O queue.</p>
+<h3><a id="calling_markcancelable"></a><a id="CALLING_MARKCANCELABLE"></a>Calling MarkCancelable</h3>
+<p>A driver can call <a href="wdf.iwdfiorequest_markcancelable"><b>IWDFIoRequest::MarkCancelable</b></a> to register an <a href="wdf.irequestcallbackcancel_oncancel"><b>IRequestCallbackCancel::OnCancel</b></a> callback function. If the driver has called <b>MarkCancelable</b>, and if the I/O operation associated with the request is canceled, the framework calls the driver's <b>OnCancel</b> callback function so that the driver can cancel the I/O request.</p>
+<p>A driver should call <b>MarkCancelable</b> if it will own a request for a relatively long time. For example, a driver might have to wait for a device to respond, or it might have to wait for lower drivers to complete a set of requests that the driver created when it received a single request.</p>
+<p>If a driver does not call <b>MarkCancelable</b>, or if a driver calls <a href="wdf.iwdfiorequest_unmarkcancelable"><b>IWDFIoRequest::UnmarkCancelable</b></a> after calling <b>MarkCancelable</b>, the driver is not aware of the cancellation and therefore handles the request as it typically would.</p>
+<h3><a id="calling_iscanceled"></a><a id="CALLING_ISCANCELED"></a>Calling IsCanceled</h3>
+<p>If a driver has not called <b>MarkCancelable</b> to register an <b>OnCancel</b> callback function, it can call <a href="wdf.iwdfiorequest2_iscanceled"><b>IWDFIoRequest2::IsCanceled</b></a> to determine if the I/O Manager has attempted to cancel an I/O request. If <b>IsCanceled</b> returns <b>TRUE</b>, the driver should cancel the request.</p>
+<p>For example, a driver that receives a large read or write request that it breaks into several smaller requests might call <b>IsCanceled</b> after the driver's I/O target completes each of the smaller requests, if the driver has not called <b>MarkCancelable</b> for the received request.</p>
+<h3><a id="canceling_the_request"></a><a id="CANCELING_THE_REQUEST"></a>Canceling the Request</h3>
+<p>Canceling an I/O request might involve any of the following:</p>
+<ul>
+<li>
+<p>Stopping an in-progress I/O operation.</p>
+</li>
+<li>
+<p>Not forwarding the request to an I/O target.</p>
+</li>
+<li>
+<p>Calling <a href="wdf.iwdfiorequest_cancelsentrequest"><b>IWDFIoRequest::CancelSentRequest</b></a> to attempt to cancel a request that the driver had previously submitted to an I/O target. </p>
+</li>
+</ul>
+<p>If a driver is canceling an I/O request for a request object that the driver received from the framework, the driver must always complete the request by calling <a href="wdf.iwdfiorequest_complete"><b>IWDFIoRequest::Complete</b></a> or <a href="wdf.iwdfiorequest_completewithinformation"><b>IWDFIoRequest::CompleteWithInformation</b></a>, with a <i>CompletionStatus</i> parameter of HRESULT_FROM_WIN32(ERROR_OPERATION_ABORTED). (If the driver called <a href="wdf.iwdfdevice_createrequest"><b>IWDFDevice::CreateRequest</b></a> to create a request object, the driver calls <a href="wdf.iwdfobject_deletewdfobject"><b>IWDFObject::DeleteWdfObject</b></a> instead of completing the request.)</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Canceling I/O Requests%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

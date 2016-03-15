@@ -1,0 +1,38 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Supporting Ejectable Devices"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Supporting Ejectable Devices</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_1604f767-5ec3-4761-8f34-331d68a836a0.xml"/>
+<meta name="MS-HAID" content="kmdf.supporting_ejectable_devices"/>
+<meta name="MS-HAID" content="wdf.supporting_ejectable_devices"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.supporting_ejectable_devices"></a>Supporting Ejectable Devices</h1>
+</div>
+<p><i>Ejectable devices</i> are devices that can be inserted into a docking station and ejected from the docking station. Typically, an ejectable device's bus power must be disabled before the device can be removed.</p>
+<p>If a device is ejectable, the bus driver for the device's bus must set the <b>EjectSupported</b> member in the device's <a href="wdf.wdf_device_pnp_capabilities"><b>WDF_DEVICE_PNP_CAPABILITIES</b></a> structure. </p>
+<p>When a bus driver determines that one of its enumerated child devices is about to be ejected, it calls either <a href="wdf.wdfpdorequesteject"><b>WdfPdoRequestEject</b></a> or <a href="wdf.wdfchildlistrequestchildeject"><b>WdfChildListRequestChildEject</b></a>. For example, the bus driver might detect that a user has pressed an eject button.</p>
+<p>When a driver calls <a href="wdf.wdfchildlistrequestchildeject"><b>WdfChildListRequestChildEject</b></a> or <a href="wdf.wdfpdorequesteject"><b>WdfPdoRequestEject</b></a>, the PnP manager uses the <a href="a_user_unplugs_a_device.htm#orderly_removal">orderly removal</a> scenario to inform the device's drivers that the device is being removed. After the framework has called the <a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a> callback function in the bus driver for the device's bus, the framework calls the bus driver's <a href="wdf.evtdeviceeject"><i>EvtDeviceEject</i></a> callback function, which performs any operations that are necessary to physically eject the device.</p>
+<p>If ejecting your device causes additional devices to also be ejected, your bus driver can maintain a list of <i>ejection relations</i>. When a user removes your device, the PnP manager informs the drivers of devices in the list that their devices are also being removed. To maintain a list of ejection relations, a bus driver can use the <a href="wdf.wdfpdoaddejectionrelationsphysicaldevice"><b>WdfPdoAddEjectionRelationsPhysicalDevice</b></a>, <a href="wdf.wdfpdoremoveejectionrelationsphysicaldevice"><b>WdfPdoRemoveEjectionRelationsPhysicalDevice</b></a>, and <a href="wdf.wdfpdoclearejectionrelationsdevices"><b>WdfPdoClearEjectionRelationsDevices</b></a> methods.</p>
+<p>If a device can be locked in its docking station, the bus driver must set the <b>LockSupported</b> member in the device's <a href="wdf.wdf_device_pnp_capabilities"><b>WDF_DEVICE_PNP_CAPABILITIES</b></a> structure. The bus driver must also provide an <a href="wdf.evtdevicesetlock"><i>EvtDeviceSetLock</i></a> callback function, which locks the device to disable ejection or unlocks the device to enable ejection. </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Supporting Ejectable Devices%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

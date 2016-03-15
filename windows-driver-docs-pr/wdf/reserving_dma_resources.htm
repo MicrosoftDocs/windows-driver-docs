@@ -1,0 +1,68 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Reserving DMA Resources"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Reserving DMA Resources</title>
+
+<meta name="MS-HAID" content="kmdf.reserving_dma_resources"/>
+<meta name="MS-HAID" content="wdf.reserving_dma_resources"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.reserving_dma_resources"></a>Reserving DMA Resources</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<p>Typically, framework-based drivers do not reserve map registers ahead of time.  However, in certain circumstances, drivers may need to reserve these resources in advance.</p>
+<p>Framework-based drivers running on Windows 8 or later can reserve a specified number of map registers for a DMA enabler that specifies a packet or system profile. To do so, the driver calls <a href="wdf.wdfdmatransactionallocateresources"><b>WdfDmaTransactionAllocateResources</b></a> and registers an  <a href="wdf.evtreservedma"><i>EvtReserveDma</i></a> callback function.</p>
+<p>The framework calls the driver's <a href="wdf.evtreservedma"><i>EvtReserveDma</i></a> function when it has reserved the map registers and the WDM DMA adapter's lock. The driver can then initialize and initiate the transaction multiple times using the same transaction object before finally releasing the transaction object. To release the DMA resources back to the system, the driver calls <a href="wdf.wdfdmatransactionfreeresources"><b>WdfDmaTransactionFreeResources</b></a>.</p>
+<p>To determine the number of map registers required for a transaction, the driver can call <a href="wdf.wdfdmatransactiongettransferinfo"><b>WdfDmaTransactionGetTransferInfo</b></a> before calling <a href="wdf.wdfdmatransactionallocateresources"><b>WdfDmaTransactionAllocateResources</b></a>. The driver must initialize the transaction before calling <b>WdfDmaTransactionGetTransferInfo</b>.</p>
+<p>The following steps demonstrate how a driver can reserve and release a DMA enabler for exclusive use with a specified transaction:</p>
+<ol>
+<li>
+<p>The driver receives an I/O request.</p>
+</li>
+<li>
+<p>The driver's <a href="request_handlers.htm">request handler</a> calls <a href="wdf.wdfdmatransactioncreate"><b>WdfDmaTransactionCreate</b></a> to create a DMA transaction object for the request.</p>
+</li>
+<li>
+<p>The driver's <a href="request_handlers.htm">request handler</a> calls <a href="wdf.wdfdmatransactionallocateresources"><b>WdfDmaTransactionAllocateResources</b></a> to reserve resources.</p>
+</li>
+<li>
+<p>The framework calls <a href="wdf.evtreservedma"><i>EvtReserveDma</i></a> when it has reserved the requested resources.</p>
+</li>
+<li>
+<p>In <a href="wdf.evtreservedma"><i>EvtReserveDma</i></a>, the driver calls <a href="wdf.wdfdmatransactioninitializeusingrequest"><b>WdfDmaTransactionInitializeUsingRequest</b></a> or <a href="wdf.wdfdmatransactioninitialize"><b>WdfDmaTransactionInitialize</b></a> to initialize the transaction object.</p>
+</li>
+<li>
+<p>In <a href="wdf.evtreservedma"><i>EvtReserveDma</i></a>, the driver calls the <a href="wdf.wdfdmatransactionexecute"><b>WdfDmaTransactionExecute</b></a> method to start the transaction. 
+
+Because the transaction has reserved resources, the framework immediately calls the driver's <a href="wdf.evtprogramdma"><i>EvtProgramDma</i></a> callback function.
+
+</p>
+</li>
+<li>
+<p>From <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtdmatransactiondmatransfercomplete"><i>EvtDmaTransactionDmaTransferComplete</i></a>, the driver calls <a href="wdf.wdfdmatransactiondmacompleted"><b>WdfDmaTransactionDmaCompleted</b></a>,  <a href="wdf.wdfdmatransactiondmacompletedwithlength"><b>WdfDmaTransactionDmaCompletedWithLength</b></a>, or <a href="wdf.wdfdmatransactiondmacompletedfinal"><b>WdfDmaTransactionDmaCompletedFinal</b></a>, followed by <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> or  <a href="wdf.wdfdmatransactionrelease"><b>WdfDmaTransactionRelease</b></a>. The driver must not delete or release the transaction until the transaction has been completed or canceled. After the completion of this step, the map registers remain reserved.</p>
+</li>
+<li>
+<p>The driver can repeat steps 5–7 as many times as necessary.</p>
+<p>When the driver no longer needs the reservation, the driver calls <a href="wdf.wdfdmatransactionfreeresources"><b>WdfDmaTransactionFreeResources</b></a> from <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtdmatransactiondmatransfercomplete"><i>EvtDmaTransactionDmaTransferComplete</i></a>. Alternatively, the driver can call <b>WdfDmaTransactionFreeResources</b> from its <a href="wdf.evtreservedma"><i>EvtReserveDma</i></a> event callback function.</p>
+</li>
+</ol>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Reserving DMA Resources%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

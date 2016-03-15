@@ -1,0 +1,36 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Reusing Framework Request Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Reusing Framework Request Objects</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_735aaddc-7ed2-4921-b874-36c3c1128c63.xml"/>
+<meta name="MS-HAID" content="umdf.reusing_framework_request_objects"/>
+<meta name="MS-HAID" content="wdf.reusing_framework_request_objects_umdf"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.reusing_framework_request_objects_umdf"></a>Reusing Framework Request Objects</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>To improve driver performance, framework-based drivers that create and send many nearly identical asynchronous requests to an I/O target can reuse request objects instead of creating a new request object for each request. A driver can reuse a request object after the request has been completed. </p>
+<p>If a driver has created a request object by calling <a href="wdf.iwdfdevice_createrequest"><b>IWDFDevice::CreateRequest</b></a>, it can reuse the request by calling <a href="wdf.iwdfiorequest2_reuse"><b>IWDFIoRequest2::Reuse</b></a>. A driver can also reuse request objects that it has received from the framework in its I/O queues. </p>
+<p>If your driver provides an <a href="wdf.irequestcallbackrequestcompletion_oncompletion"><b>IRequestCallbackRequestCompletion::OnCompletion</b></a> callback function for a request object that it reuses, the driver must call <a href="wdf.iwdfiorequest_setcompletioncallback"><b>IWDFIoRequest::SetCompletionCallback</b></a> after it calls <a href="wdf.iwdfiorequest2_reuse"><b>Reuse</b></a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Reusing Framework Request Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

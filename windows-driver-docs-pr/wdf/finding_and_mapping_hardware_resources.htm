@@ -1,0 +1,43 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic describes how a Kernel-Mode Driver Framework (KMDF) driver or User-Mode Driver Framework (UMDF) driver starting in version 2 maps a translated memory resource (CmResourceTypeMemory) that it receives in its EvtDevicePrepareHardware callback function."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Finding and Mapping Hardware Resources</title>
+
+<meta name="MS-HAID" content="wdf.handling_hardware_resources_in_a_umdf_driver"/>
+<meta name="MS-HAID" content="wdf.finding_and_mapping_hardware_resources_in_umdf_drivers"/>
+<meta name="MS-HAID" content="wdf.finding_and_mapping_hardware_resources"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.finding_and_mapping_hardware_resources"></a>Finding and Mapping Hardware Resources</h1>
+</div>
+<p>This topic describes how a Kernel-Mode Driver Framework (KMDF) driver or User-Mode Driver Framework (UMDF) driver starting in version 2 maps a translated memory resource (<b>CmResourceTypeMemory</b>) that it receives in its <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback function.</p>
+<p>A UMDF 1.x driver can also receive this type of resource in its <a href="wdf.ipnpcallbackhardware2_onpreparehardware"><b>IPnpCallbackHardware2::OnPrepareHardware</b></a> method. For more info, see <a href="finding_and_mapping_hardware_resources_in_umdf_1_x_drivers.htm">Finding and Mapping Hardware Resources in UMDF 1.x Drivers</a>.</p>
+<p>Your driver receives <a href="raw_and_translated_resources.htm">raw and translated</a> versions of hardware resources in the device's resource list in its <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback function.  The driver can save the resource list, which is valid until the framework calls the driver's <a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a> callback function.</p>
+<p>Typically, the driver calls <a href="wdf.wdfcmresourcelistgetcount"><b>WdfCmResourceListGetCount</b></a> from  its <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback function to determine the number of resource descriptors in the translated resource list, and then calls <a href="wdf.wdfcmresourcelistgetdescriptor"><b>WdfCmResourceListGetDescriptor</b></a> in a loop to identify  memory-mapped registers, I/O ports, and interrupts.</p>
+<p>If a driver is assigned a translated memory resource (<b>CmResourceTypeMemory</b>), it must map the physical address into an address through which it can access device registers.</p>
+<p> A KMDF driver calls <a href="kernel.mmmapiospace"><b>MmMapIoSpace</b></a> to map the given physical address range to nonpaged system space.  Then it uses the <a href="kernel.hal_library_routines"><b>HAL Library Routines</b></a> to read and write to registers.</p>
+<p> A UMDF driver calls <a href="wdf.wdfdevicemapiospace"><b>WdfDeviceMapIoSpace</b></a> to map the physical address to a pseudo base address that it can use in conjunction with <a href="wdf.wdf_register_port_access_functions">WDF Register/Port Access Functions</a> to read and write to registers and ports.</p>
+<p>The driver unmaps the resources by calling <a href="kernel.mmunmapiospace"><b>MmUnmapIoSpace</b></a> or <a href="wdf.wdfdeviceunmapiospace"><b>WdfDeviceUnmapIoSpace</b></a> from its <a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a> callback function.</p>
+<p> You do not need to map resources in I/O space (<b>CmResourceTypePort</b>, <b>CmResourceTypeInterrupt</b>, <b>CmResourceTypeDma</b>).</p>
+<p>If your UMDF driver calls <a href="wdf.wdfdevicemapiospace"><b>WdfDeviceMapIoSpace</b></a>, you must set the <b>UmdfDirectHardwareAccess</b> INF directive to <b>AllowDirectHardwareAccess</b>.</p>
+<p>For an example that shows how a driver finds and maps memory-mapped register resources, see <a href="reading_and_writing_to_device_registers.htm">Reading and Writing to Device Registers</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Finding and Mapping Hardware Resources%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

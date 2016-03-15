@@ -1,0 +1,128 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Using INX Files to Create INF Files"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using INX Files to Create INF Files</title>
+
+<meta name="MS-HAID" content="Ch0_DFArchOverview_ab7e823b-f621-4a9f-8759-4c2e23f518b5.xml"/>
+<meta name="MS-HAID" content="kmdf.using_inx_files_to_create_inf_files"/>
+<meta name="MS-HAID" content="wdf.using_inx_files_to_create_inf_files"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_inx_files_to_create_inf_files"></a>Using INX Files to Create INF Files</h1>
+</div>
+<p>An <i>INX file</i> is an INF file that contains string variables that represent version information. When you build your driver using Microsoft Visual Studio, the build process runs the <a href="devtest.stampinf">Stampinf</a> tool to replace the string variables in INX files with text strings that represent a specific hardware architecture or a framework version.  You can also manually run the Stampinf tool, which is located in the <i>bin</i> subdirectory of the WDK.</p>
+<p>If you create INX files for your drivers, you do not have to maintain multiple version-specific INF files. Instead, you can create a single INX file and use Visual Studio or Stampinf to generate version-specific INF files when you need them.</p>
+<p>To modify Stampinf properties within Visual Studio, open the Property Pages for your driver package project. Right-click the package project in Solution Explorer and select <b>Properties</b>.
+In the Property Pages for the package, click <b>Configuration Properties</b>, and then <b>StampInf</b>. </p>
+<p>You can also manually run the Stampinf tool, which is located in the <i>bin</i> subdirectory of the WDK.</p>
+<p>The WDK includes INX files for all the KMDF and UMDF sample drivers.</p>
+<p>INX files can contain the following string variables:</p>
+<p></p>
+<dl>
+<dt><a id="_ARCH_"></a><a id="_arch_"></a>$ARCH$</dt>
+<dd>
+<p>Stampinf replaces this variable with an architecture-specific string. For example, if you are using an x86 build environment, the  tool replaces $ARCH$ with "x86". You can use the $ARCH$ string wherever you need to specify a specific architecture within an INF file, such as within an <a href="devinst.inf_manufacturer_section"><b>INF Manufacturer section</b></a>, as follows:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[Manufacturer]
+%StdMfg%=Standard,NT$ARCH$</pre>
+</td>
+</tr>
+</table></span></div>
+</dd>
+<dt><a id="_KMDFCOINSTALLERVERSION_"></a><a id="_kmdfcoinstallerversion_"></a>$KMDFCOINSTALLERVERSION$</dt>
+<dd>
+<p>If you use the <a href="devtest.stampinf">Stampinf</a> tool's -<i>k</i> option, Stampinf replaces this variable with a string that represents a specific version of the KMDF co-installer. You can use the $KMDFCOINSTALLERVERSION$ variable when you specify the framework's co-installer within an INF file, such as within an <a href="devinst.inf_ddinstall_coinstallers_section"><b>INF DDInstall.CoInstallers section</b></a>, as follows:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[ECHO_Device.NT.CoInstallers]
+AddReg=ECHO_Device_CoInstaller_AddReg
+CopyFiles=ECHO_Device_CoInstaller_CopyFiles
+
+[ECHO_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[ECHO_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll</pre>
+</td>
+</tr>
+</table></span></div>
+</dd>
+<dt><a id="_KMDFVERSION_"></a><a id="_kmdfversion_"></a>$KMDFVERSION$</dt>
+<dd>
+<p>If you set the <b>KMDF Version Number</b> property in Visual Studio (or use the <a href="devtest.stampinf">Stampinf</a> tool's -<i>k</i> option), Stampinf replaces this variable with a string that represents a specific version of KMDF.  You can use the $KMDFVERSION$ variable when you specify the framework's version within an INF file, such as when you specify the <a href="installing_the_framework_s_co_installer.htm">KmdfLibraryVersion</a> directive, as follows:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>KmdfLibraryVersion = $KMDFVERSION$</pre>
+</td>
+</tr>
+</table></span></div>
+</dd>
+<dt><a id="_UMDFCOINSTALLERVERSION_"></a><a id="_umdfcoinstallerversion_"></a>$UMDFCOINSTALLERVERSION$</dt>
+<dd>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[SourceDisksFiles]
+WudfUpdate_$UMDFCOINSTALLERVERSION$.dll=1
+
+[CoInstallers_CopyFiles]
+WudfUpdate_$UMDFCOINSTALLERVERSION$.dll
+
+[CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WUDFUpdate_$UMDFCOINSTALLERVERSION$.dll"</pre>
+</td>
+</tr>
+</table></span></div>
+</dd>
+<dt><a id="_UMDFVERSION_"></a><a id="_umdfversion_"></a>$UMDFVERSION$</dt>
+<dd>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[UMDFYourDriver_Install]
+UmdfLibraryVersion=$UMDFVERSION$</pre>
+</td>
+</tr>
+</table></span></div>
+</dd>
+</dl>
+<p><a href="devtest.stampinf">Stampinf</a> also supports a -<i>u</i> option to replace UMDF string variables in an INX file. If your driver package includes both UMDF-based drivers and KMDF-based drivers, you can use the -<i>k</i> and -<i>u</i> options with a single Stampinf command and a single INX file.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using INX Files to Create INF Files%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

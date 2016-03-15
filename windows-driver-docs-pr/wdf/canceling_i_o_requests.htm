@@ -1,0 +1,101 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Canceling I/O Requests"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Canceling I/O Requests</title>
+
+<meta name="MS-HAID" content="Ch3_DFIoPackage_c3a5c2ba-d8c5-4b84-b365-eeee0ed1bf1b.xml"/>
+<meta name="MS-HAID" content="kmdf.canceling_i_o_requests"/>
+<meta name="MS-HAID" content="wdf.canceling_i_o_requests"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.canceling_i_o_requests"></a>Canceling I/O Requests</h1>
+</div>
+<h2><a id="ddk_canceling_i_o_requests_df"></a><a id="DDK_CANCELING_I_O_REQUESTS_DF"></a></h2>
+<p>A device's in-progress I/O operation (such as a request to read several blocks from a disk) can be canceled by an application, the system, or a driver. If a device's I/O operation is canceled, the I/O manager attempts to cancel all unprocessed I/O requests that are associated with the I/O operation. The device's drivers can register to be notified when the I/O manager attempts to cancel I/O requests, and the drivers can cancel the requests that they own by <a href="completing_i_o_requests.htm">completing</a> them with a completion status of STATUS_CANCELLED.</p>
+<p>The framework handles some of the cancellation work for framework-based drivers. If a device's I/O operation is canceled, the framework completes the following I/O requests (with a completion status of STATUS_CANCELLED) that are associated with the canceled operation:</p>
+<ul>
+<li>
+<p>Undelivered I/O requests that the framework has placed in the driver's default I/O queue.</p>
+</li>
+<li>
+<p>Undelivered I/O requests that the framework has forwarded to another queue because the driver called <a href="wdf.wdfdeviceconfigurerequestdispatching"><b>WdfDeviceConfigureRequestDispatching</b></a>.</p>
+</li>
+</ul>
+<p>Because the framework cancels these requests, it does not deliver them to the driver. </p>
+<p>After the framework has delivered an I/O request to the driver, the driver <a href="request_ownership.htm">owns</a> the request and the framework cannot cancel it. At this point, only the driver can cancel the I/O request, but the framework must notify the driver that a request should be canceled. Drivers receive this notification by providing an <a href="wdf.evtrequestcancel"><i>EvtRequestCancel</i></a> callback function.</p>
+<p>Sometimes a driver receives an I/O request from an I/O queue but, instead of processing the request, the driver requeues the request to the same or another I/O queue for later processing. Examples of this situation include the following:</p>
+<ul>
+<li>
+<p>The framework delivers an I/O request to one of the driver's <a href="request_handlers.htm">request handlers</a>, and the driver subsequently calls either <a href="wdf.wdfrequestforwardtoioqueue"><b>WdfRequestForwardToIoQueue</b></a> (or <a href="wdf.wdfrequestforwardtoparentdeviceioqueue"><b>WdfRequestForwardToParentDeviceIoQueue</b></a>) to place the request in a different queue or <a href="wdf.wdfrequestrequeue"><b>WdfRequestRequeue</b></a> to place the request back into the same queue. </p>
+</li>
+<li>
+<p>The framework delivers an I/O request to the driver's <a href="wdf.evtioincallercontext"><i>EvtIoInCallerContext</i></a> callback function, the driver calls <a href="wdf.wdfdeviceenqueuerequest"><b>WdfDeviceEnqueueRequest</b></a> to pass the request back to the framework, and the framework subsequently places the request in one of the driver's I/O queues.</p>
+</li>
+</ul>
+<p>In these cases, the framework can cancel the I/O request because the request is in an I/O queue. However, if the driver has registered an <a href="wdf.evtiocanceledonqueue"><i>EvtIoCanceledOnQueue</i></a> callback function for the I/O queue in which the request resides, the framework calls the callback function, instead of canceling the request, when the associated I/O operation is being canceled. If the framework calls the driver's <i>EvtIoCanceledOnQueue</i> callback function, the driver must <a href="completing_i_o_requests.htm">complete</a> the request.</p>
+<p>In summary, when an I/O operation is canceled, the framework always cancels all associated I/O requests that were never delivered to the driver. If the driver receives a request and then requeues it, the framework will cancel the request (if the request is in the queue) unless the driver provides an <a href="wdf.evtiocanceledonqueue"><i>EvtIoCanceledOnQueue</i></a> callback function for the I/O queue.</p>
+<h3><a id="calling_wdfrequestmarkcancelable_or_wdfrequestmarkcancelableex"></a><a id="CALLING_WDFREQUESTMARKCANCELABLE_OR_WDFREQUESTMARKCANCELABLEEX"></a>Calling WdfRequestMarkCancelable or WdfRequestMarkCancelableEx</h3>
+<p>A driver can call <a href="wdf.wdfrequestmarkcancelable"><b>WdfRequestMarkCancelable</b></a> or <a href="wdf.wdfrequestmarkcancelableex"><b>WdfRequestMarkCancelableEx</b></a> to register an <a href="wdf.evtrequestcancel"><i>EvtRequestCancel</i></a> callback function. If the driver has called <b>WdfRequestMarkCancelable</b> or <b>WdfRequestMarkCancelableEx</b>, and if the I/O operation associated with the request is canceled, the framework calls the driver's <i>EvtRequestCancel</i> callback function so the driver can cancel the I/O request.</p>
+<p>A driver should call <a href="wdf.wdfrequestmarkcancelable"><b>WdfRequestMarkCancelable</b></a> or <a href="wdf.wdfrequestmarkcancelableex"><b>WdfRequestMarkCancelableEx</b></a> if it will own a request for a relatively long time. For example, a driver might have to wait for a device to respond, or it might wait for lower drivers to complete a set of requests that the driver created when it received a single request.</p>
+<p>If a driver does not call <a href="wdf.wdfrequestmarkcancelable"><b>WdfRequestMarkCancelable</b></a> or <a href="wdf.wdfrequestmarkcancelableex"><b>WdfRequestMarkCancelableEx</b></a>, or if a driver calls <a href="wdf.wdfrequestunmarkcancelable"><b>WdfRequestUnmarkCancelable</b></a> after calling <b>WdfRequestMarkCancelable</b> or <b>WdfRequestMarkCancelableEx</b>, the driver is not aware of the cancellation and therefore handles the request as it normally would.</p>
+<h3><a id="calling_wdfrequestiscanceled"></a><a id="CALLING_WDFREQUESTISCANCELED"></a>Calling WdfRequestIsCanceled</h3>
+<p>If a driver has not called <a href="wdf.wdfrequestmarkcancelable"><b>WdfRequestMarkCancelable</b></a> or <a href="wdf.wdfrequestmarkcancelableex"><b>WdfRequestMarkCancelableEx</b></a> to register an <a href="wdf.evtrequestcancel"><i>EvtRequestCancel</i></a> callback function, it can call <a href="wdf.wdfrequestiscanceled"><b>WdfRequestIsCanceled</b></a> to determine if the I/O manager has attempted to cancel an I/O request. If <b>WdfRequestIsCanceled</b> returns <b>TRUE</b> and the driver owns the request, the driver should cancel the request. If the driver does not own the request, it should not call <b>WdfRequestIsCanceled</b>.</p>
+<p>A driver that has not called <a href="wdf.wdfrequestmarkcancelable"><b>WdfRequestMarkCancelable</b></a> or <a href="wdf.wdfrequestmarkcancelableex"><b>WdfRequestMarkCancelableEx</b></a> might call <a href="wdf.wdfrequestiscanceled"><b>WdfRequestIsCanceled</b></a> in the following circumstances:</p>
+<ul>
+<li>
+<p>A driver that waits for device interrupts might call <a href="wdf.wdfrequestiscanceled"><b>WdfRequestIsCanceled</b></a> from its <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function.</p>
+</li>
+<li>
+<p>A driver that polls its device might call <a href="wdf.wdfrequestiscanceled"><b>WdfRequestIsCanceled</b></a> from it polling thread. </p>
+</li>
+<li>
+<p>A driver that breaks a <a href="dma_transactions_and_dma_transfers.htm">DMA transaction</a> into several smaller transfers might call <a href="wdf.wdfrequestiscanceled"><b>WdfRequestIsCanceled</b></a> after each transfer is finished.</p>
+</li>
+<li>
+<p>A driver that receives a large read or write request that it breaks into several smaller requests might call <a href="wdf.wdfrequestiscanceled"><b>WdfRequestIsCanceled</b></a> after the driver's I/O target completes each of the smaller requests, if the driver has not called <a href="wdf.wdfrequestmarkcancelable"><b>WdfRequestMarkCancelable</b></a> or <a href="wdf.wdfrequestmarkcancelableex"><b>WdfRequestMarkCancelableEx</b></a> for the received request.</p>
+</li>
+</ul>
+<h3><a id="canceling_the_request"></a><a id="CANCELING_THE_REQUEST"></a>Canceling the Request</h3>
+<p>Canceling an I/O request might involve any of the following:</p>
+<ul>
+<li>
+<p>Stopping an in-progress I/O operation.</p>
+</li>
+<li>
+<p>Not forwarding the request to an I/O target.</p>
+</li>
+<li>
+<p>Calling <a href="wdf.wdfrequestcancelsentrequest"><b>WdfRequestCancelSentRequest</b></a> to attempt to cancel a request that the driver had previously submitted to an I/O target. </p>
+</li>
+</ul>
+<p>If a driver is canceling an I/O request for a request object that the driver received from the framework, the driver must always complete the request by calling <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a>, <a href="wdf.wdfrequestcompletewithinformation"><b>WdfRequestCompleteWithInformation</b></a>, or <a href="wdf.wdfrequestcompletewithpriorityboost"><b>WdfRequestCompleteWithPriorityBoost</b></a>, with a <i>Status</i> parameter of STATUS_CANCELLED. (If the driver called <a href="wdf.wdfrequestcreate"><b>WdfRequestCreate</b></a> to create a request object, the driver calls <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> instead of completing the request.)</p>
+<h3><a id="synchronizing_cancellation"></a><a id="SYNCHRONIZING_CANCELLATION"></a>Synchronizing Cancellation</h3>
+<p>For information about synchronizing code that cancels I/O requests, see:</p>
+<dl>
+<dd>
+<p><a href="synchronizing_cancel_and_completion_code.htm">Synchronizing Cancel and Completion Code</a></p>
+</dd>
+<dd>
+<p><a href="synchronizing_cancellation_of_sent_requests.htm">Synchronizing Cancellation of Sent Requests</a></p>
+</dd>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Canceling I/O Requests%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

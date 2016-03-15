@@ -1,0 +1,96 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Working with USB Devices in UMDF 1.x Drivers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Working with USB Devices in UMDF 1.x Drivers</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_69c64053-c197-4ed4-b792-429e6b4d33f7.xml"/>
+<meta name="MS-HAID" content="umdf.working_with_usb_devices_in_umdf"/>
+<meta name="MS-HAID" content="wdf.working_with_usb_devices_in_umdf"/>
+<meta name="MS-HAID" content="wdf.working_with_usb_devices_in_umdf_1_x_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.working_with_usb_devices_in_umdf_1_x_drivers"></a>Working with USB Devices in UMDF 1.x Drivers</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>The framework represents each USB device as a framework USB device object. A UMDF driver must create a framework USB device object before the driver can access the framework's support for USB I/O targets. UMDF provides USB device object methods that enable a UMDF driver to:</p>
+<ul>
+<li>
+<p><a href="#creating_a_umdf-usb_device_object">Create a UMDF-USB device object</a></p>
+</li>
+<li>
+<p><a href="#obtaining_umdf-usb_device_information">Obtain device information</a></p>
+</li>
+<li>
+<p><a href="#send_a_control_transfer_to_a_umdf-usb_device_object">Send a control transfer</a></p>
+</li>
+<li>
+<p><a href="#set_power_policy_for_a_umdf-usb_device_object">Set power policy</a></p>
+</li>
+</ul>
+<h3><a id="creating_a_umdf-usb_device_object"></a><a id="CREATING_A_UMDF-USB_DEVICE_OBJECT"></a>Creating a UMDF-USB Device Object</h3>
+<p>To use the framework's USB I/O target capabilities, a UMDF driver must first obtain a pointer to the <a href="wdf.iwdfusbtargetfactory">IWDFUsbTargetFactory</a> interface. To obtain the pointer, the driver must call the <b>QueryInterface</b> method of the device's <a href="wdf.iwdfdevice">IWDFDevice</a> interface. The following code example shows how to call <b>QueryInterface</b> to obtain the pointer:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>hr = pdevice-&gt;QueryInterface(IID_IWDFUsbTargetFactory, (LPVOID*)&amp;ppUsbTargetFactory);</pre>
+</td>
+</tr>
+</table></span></div>
+<p>The driver must next call the <a href="wdf.iwdfusbtargetfactory_createusbtargetdevice"><b>IWDFUsbTargetFactory::CreateUsbTargetDevice</b></a> method to create a USB I/O target object for the device. After the driver creates the USB I/O target, the driver can send requests to the I/O target. Typically, drivers call <b>IWDFUsbTargetFactory::CreateUsbTargetDevice</b> from within an <a href="wdf.ipnpcallbackhardware_onpreparehardware"><b>IPnpCallbackHardware::OnPrepareHardware</b></a> callback function. </p>
+<p>After the driver calls <b>IWDFUsbTargetFactory::CreateUsbTargetDevice</b>, the driver can <a href="wdf.working_with_usb_devices_in_umdf#obtaining_umdf-usb_device_information#obtaining_umdf-usb_device_information">obtain USB device information</a> (for example, USB descriptors for the device, USB interfaces, and interface endpoints). The USB descriptors are described in the USB specification.</p>
+<h3><a id="obtaining_umdf-usb_device_information"></a><a id="OBTAINING_UMDF-USB_DEVICE_INFORMATION"></a>Obtaining UMDF-USB Device Information</h3>
+<p>After a UMDF driver calls the <a href="wdf.iwdfusbtargetfactory_createusbtargetdevice"><b>IWDFUsbTargetFactory::CreateUsbTargetDevice</b></a> method to create a UMDF-USB target device object, the driver can call the following methods that the USB target device object defines for obtaining information about a USB device: </p>
+<p></p>
+<dl>
+<dt><a id="IWDFUsbTargetDevice__RetrieveDescriptor"></a><a id="iwdfusbtargetdevice__retrievedescriptor"></a><a id="IWDFUSBTARGETDEVICE__RETRIEVEDESCRIPTOR"></a><a href="wdf.iwdfusbtargetdevice_retrievedescriptor"><b>IWDFUsbTargetDevice::RetrieveDescriptor</b></a></dt>
+<dd>
+<p>Obtains a device's USB device descriptor. </p>
+</dd>
+<dt><a id="IWDFUsbTargetDevice__GetNumInterfaces"></a><a id="iwdfusbtargetdevice__getnuminterfaces"></a><a id="IWDFUSBTARGETDEVICE__GETNUMINTERFACES"></a><a href="wdf.iwdfusbtargetdevice_getnuminterfaces"><b>IWDFUsbTargetDevice::GetNumInterfaces</b></a></dt>
+<dd>
+<p>Obtains the number of USB interfaces that the device supports. </p>
+</dd>
+<dt><a id="IWDFUsbTargetDevice__RetrieveUsbInterface"></a><a id="iwdfusbtargetdevice__retrieveusbinterface"></a><a id="IWDFUSBTARGETDEVICE__RETRIEVEUSBINTERFACE"></a><a href="wdf.iwdfusbtargetdevice_retrieveusbinterface"><b>IWDFUsbTargetDevice::RetrieveUsbInterface</b></a></dt>
+<dd>
+<p>Obtains a pointer to a <a href="wdf.iwdfusbinterface">IWDFUsbInterface</a> interface that exposes one of the USB interfaces that the device supports. </p>
+</dd>
+<dt><a id="IWDFUsbTargetDevice__RetrieveDeviceInformation"></a><a id="iwdfusbtargetdevice__retrievedeviceinformation"></a><a id="IWDFUSBTARGETDEVICE__RETRIEVEDEVICEINFORMATION"></a><a href="wdf.iwdfusbtargetdevice_retrievedeviceinformation"><b>IWDFUsbTargetDevice::RetrieveDeviceInformation</b></a></dt>
+<dd>
+<p>Retrieves capability information that is associated with a USB device. </p>
+</dd>
+<dt><a id="IWDFUsbTargetDevice__RetrievePowerPolicy"></a><a id="iwdfusbtargetdevice__retrievepowerpolicy"></a><a id="IWDFUSBTARGETDEVICE__RETRIEVEPOWERPOLICY"></a><a href="wdf.iwdfusbtargetdevice_retrievepowerpolicy"><b>IWDFUsbTargetDevice::RetrievePowerPolicy</b></a></dt>
+<dd>
+<p>Retrieves a WinUsb power policy. </p>
+</dd>
+<dt><a id="IWDFUsbTargetDevice__GetWinUsbHandle"></a><a id="iwdfusbtargetdevice__getwinusbhandle"></a><a id="IWDFUSBTARGETDEVICE__GETWINUSBHANDLE"></a><a href="wdf.iwdfusbtargetdevice_getwinusbhandle"><b>IWDFUsbTargetDevice::GetWinUsbHandle</b></a></dt>
+<dd>
+<p>Obtains the WinUsb interface handle that is associated with the I/O target device object. </p>
+</dd>
+</dl>
+<h3><a id="send_a_control_transfer_to_a_umdf-usb_device_object"></a><a id="SEND_A_CONTROL_TRANSFER_TO_A_UMDF-USB_DEVICE_OBJECT"></a>Sending a Control Transfer to a UMDF-USB Device Object</h3>
+<p>A UMDF driver can call the <a href="wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer"><b>IWDFUsbTargetDevice::FormatRequestForControlTransfer</b></a> method to format an I/O request that describes a standard, device-class-specific, or vendor-specific USB control transfer. The driver can then call the <a href="wdf.iwdfiorequest_send"><b>IWDFIoRequest::Send</b></a> method to send the request synchronously or asynchronously. </p>
+<h3><a id="set_power_policy_for_a_umdf-usb_device_object"></a><a id="SET_POWER_POLICY_FOR_A_UMDF-USB_DEVICE_OBJECT"></a>Setting Power Policy for a UMDF-USB Device</h3>
+<p>A UMDF driver can call the <a href="wdf.iwdfusbtargetdevice_setpowerpolicy"><b>IWDFUsbTargetDevice::SetPowerPolicy</b></a> method to set the power policy that is used by WinUsb for a USB device. The power policy for a USB device effects changes to power management states for the device.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Working with USB Devices in UMDF 1.x Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

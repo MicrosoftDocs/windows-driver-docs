@@ -1,0 +1,57 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Framework Object Life Cycle"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Framework Object Life Cycle</title>
+
+<meta name="MS-HAID" content="Ch1_DFPatterns_34dfe2de-7e79-403c-a873-796766ffb016.xml"/>
+<meta name="MS-HAID" content="kmdf.framework_object_life_cycle"/>
+<meta name="MS-HAID" content="wdf.framework_object_life_cycle"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.framework_object_life_cycle"></a>Framework Object Life Cycle</h1>
+</div>
+<h2><a id="ddk_framework_object_instance_life_span_df"></a><a id="DDK_FRAMEWORK_OBJECT_INSTANCE_LIFE_SPAN_DF"></a></h2>
+<p>A framework object's "life cycle" spans the time from when an object is created to when it is deleted. An object's reference count controls when it will be deleted.</p>
+<h3><a id="creating_a_framework_object"></a><a id="CREATING_A_FRAMEWORK_OBJECT"></a>Creating a Framework Object</h3>
+<p>Most framework objects are created by a driver's call to the object's creation method. For example, each framework driver must call <a href="wdf.wdfdrivercreate"><b>WdfDriverCreate</b></a> to create a framework driver object.</p>
+<p>Other framework objects are created by the framework. For example, when a user application opens a device for read or write operations, the framework creates a framework file object and passes it to the driver's <a href="wdf.evtdevicefilecreate"><i>EvtDeviceFileCreate</i></a> callback function. </p>
+<p>A few framework objects can be created by either the framework or by a driver. For example, when the I/O manager delivers an I/O request to a driver, the framework creates a framework request object and delivers it to the driver, typically by calling one of the driver's request handlers. A driver can also create framework request objects and deliver them to other drivers.</p>
+<h3><a id="using_reference_counts"></a><a id="USING_REFERENCE_COUNTS"></a>Using Reference Counts</h3>
+<p>The framework maintains a reference count for each object. When an object is created, the framework sets its reference count to one. If the reference count becomes zero, the framework deletes the object. </p>
+<p>Drivers can modify an object's reference count by calling <a href="wdf.wdfobjectreference"><b>WdfObjectReference</b></a> to increment the reference count or <a href="wdf.wdfobjectdereference"><b>WdfObjectDereference</b></a> to decrement the reference count. (A driver can call <b>WdfObjectDereference</b> only if it has previously called <b>WdfObjectReference</b>.)</p>
+<p>In most cases, drivers do not have to increment or decrement an object's reference count. The framework increments the count before it passes the object's handle to the driver, and it decrements the count when the driver no longer needs the object. </p>
+<p>Drivers call <a href="wdf.wdfobjectreference"><b>WdfObjectReference</b></a> to ensure that an object will not be deleted (by the framework or by a driver thread) before the driver has finished using it. For an example situation in which a driver should call <b>WdfObjectReference</b> and <a href="wdf.wdfobjectdereference"><b>WdfObjectDereference</b></a>, see <a href="synchronizing_cancellation_of_sent_requests.htm">Synchronizing Cancellation of Sent Requests</a>.</p>
+<h3><a id="deleting_a_framework_object"></a><a id="DELETING_A_FRAMEWORK_OBJECT"></a>Deleting a Framework Object</h3>
+<p>Objects are deleted either because a driver calls <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> or because the framework calls an internal deletion routine, but an object is deleted only if its reference count is zero. After the driver or the framework has attempted to delete an object, the object's handle remains valid until after the reference count becomes zero. A driver <i>cannot</i> delete an object by simply calling <a href="wdf.wdfobjectdereference"><b>WdfObjectDereference</b></a> to decrement the object's reference count to zero--the driver must also call <b>WdfObjectDelete</b>.</p>
+<p>If a framework object is the child object of a parent and the parent is being deleted, the framework attempts to delete the child object before it deletes the parent. Object deletion starts from the object farthest from the parent and works up the object hierarchy toward the root. </p>
+<p>Drivers can register the following two callback functions that the framework calls when the driver or the framework is deleting an object:</p>
+<ul>
+<li>
+<p>An <a href="wdf.evtcleanupcallback"><i>EvtCleanupCallback</i></a> callback function, which the framework calls so that the driver can call <a href="wdf.wdfobjectdereference"><b>WdfObjectDereference</b></a> if it had previously called <a href="wdf.wdfobjectreference"><b>WdfObjectReference</b></a> for the object that is being deleted.</p>
+</li>
+<li>
+<p>An <a href="wdf.evtdestroycallback"><i>EvtDestroyCallback</i></a> callback function, which the framework calls after the object's reference count has been decremented to zero.</p>
+</li>
+</ul>
+<p>One of these callback functions must deallocate any object-specific resources that the driver allocated when the object was created.</p>
+<p>The framework always handles the deletion of some framework objects, and drivers must not attempt to delete these objects. For a list of framework objects that drivers cannot delete, see <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Framework Object Life Cycle%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

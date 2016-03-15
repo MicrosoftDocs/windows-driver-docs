@@ -1,0 +1,155 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Obtaining WDM Information"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Obtaining WDM Information</title>
+
+<meta name="MS-HAID" content="Ch8_DFTechniques_f2b9a216-a758-4f59-8382-594e321936ea.xml"/>
+<meta name="MS-HAID" content="kmdf.obtaining_wdm_information"/>
+<meta name="MS-HAID" content="wdf.obtaining_wdm_information"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.obtaining_wdm_information"></a>Obtaining WDM Information</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<p>The framework provides several object methods that enable your driver to obtain WDM-defined information.</p>
+<h3><a id="obtaining_wdm_information_about_the_driver_and_its_devices"></a><a id="OBTAINING_WDM_INFORMATION_ABOUT_THE_DRIVER_AND_ITS_DEVICES"></a>Obtaining WDM Information About the Driver and its Devices </h3>
+<p>To obtain WDM information about a driver and its devices, the driver can call the following methods:</p>
+<p></p>
+<dl>
+<dt><a id="WdfFdoInitWdmGetPhysicalDevice"></a><a id="wdffdoinitwdmgetphysicaldevice"></a><a id="WDFFDOINITWDMGETPHYSICALDEVICE"></a><a href="wdf.wdffdoinitwdmgetphysicaldevice"><b>WdfFdoInitWdmGetPhysicalDevice</b></a></dt>
+<dd>
+<p>Retrieves the physical device object (PDO). A driver can call this method before the driver has created a framework device object for the device.  </p>
+</dd>
+<dt><a id="WdfDeviceWdmGetPhysicalDevice"></a><a id="wdfdevicewdmgetphysicaldevice"></a><a id="WDFDEVICEWDMGETPHYSICALDEVICE"></a><a href="wdf.wdfdevicewdmgetphysicaldevice"><b>WdfDeviceWdmGetPhysicalDevice</b></a></dt>
+<dd>
+<p>Retrieves the WDM DEVICE_OBJECT structure that represents a device's PDO. A driver can call this method after it has created a framework device object for the device.  </p>
+</dd>
+<dt><a id="WdfDeviceWdmGetDeviceObject"></a><a id="wdfdevicewdmgetdeviceobject"></a><a id="WDFDEVICEWDMGETDEVICEOBJECT"></a><a href="wdf.wdfdevicewdmgetdeviceobject"><b>WdfDeviceWdmGetDeviceObject</b></a></dt>
+<dd>
+<p>Returns the WDM device object that is associated with a specified framework device object.</p>
+</dd>
+<dt><a id="WdfDeviceWdmGetAttachedDevice"></a><a id="wdfdevicewdmgetattacheddevice"></a><a id="WDFDEVICEWDMGETATTACHEDDEVICE"></a><a href="wdf.wdfdevicewdmgetattacheddevice"><b>WdfDeviceWdmGetAttachedDevice</b></a></dt>
+<dd>
+<p>Returns the next-lower WDM device object in the <a href="wdm_concepts_for_kmdf_drivers.htm#device_stacks">device stack</a>.</p>
+</dd>
+<dt><a id="WdfWdmDeviceGetWdfDeviceHandle"></a><a id="wdfwdmdevicegetwdfdevicehandle"></a><a id="WDFWDMDEVICEGETWDFDEVICEHANDLE"></a><a href="wdf.wdfwdmdevicegetwdfdevicehandle"><b>WdfWdmDeviceGetWdfDeviceHandle</b></a></dt>
+<dd>
+<p>Returns a handle to the framework device object that is associated with a specified WDM device object.</p>
+</dd>
+<dt><a id="WdfWdmDriverGetWdfDriverHandle"></a><a id="wdfwdmdrivergetwdfdriverhandle"></a><a id="WDFWDMDRIVERGETWDFDRIVERHANDLE"></a><a href="wdf.wdfwdmdrivergetwdfdriverhandle"><b>WdfWdmDriverGetWdfDriverHandle</b></a></dt>
+<dd>
+<p>Returns a handle to the framework driver object that is associated with a specified WDM driver object.</p>
+</dd>
+</dl>
+<h3><a id="obtaining_wdm_information_about_i_o_requests"></a><a id="OBTAINING_WDM_INFORMATION_ABOUT_I_O_REQUESTS"></a>Obtaining WDM Information About I/O Requests</h3>
+<p>To obtain WDM information about I/O requests, a driver can call the following methods:</p>
+<p></p>
+<dl>
+<dt><a id="WdfRequestWdmGetIrp"></a><a id="wdfrequestwdmgetirp"></a><a id="WDFREQUESTWDMGETIRP"></a><a href="wdf.wdfrequestwdmgetirp"><b>WdfRequestWdmGetIrp</b></a></dt>
+<dd>
+<p>Returns the WDM <a href="kernel.irp"><b>IRP</b></a> structure that is associated with a specified framework request object. (On the other hand, a driver that receives a WDM IRP outside of the framework can create a framework request object for the IRP by calling <a href="wdf.wdfrequestcreatefromirp"><b>WdfRequestCreateFromIrp</b></a>.)</p>
+</dd>
+<dt><a id="WdfRequestGetParameters"></a><a id="wdfrequestgetparameters"></a><a id="WDFREQUESTGETPARAMETERS"></a><a href="wdf.wdfrequestgetparameters"><b>WdfRequestGetParameters</b></a></dt>
+<dd>
+<p>Retrieves the parameters that are associated with a specified framework request object. Most of these parameters come from the request's WDM <a href="kernel.i_o_stack_locations">I/O stack location</a>.)</p>
+</dd>
+<dt><a id="WdfRequestRetrieveOutputWdmMdl"></a><a id="wdfrequestretrieveoutputwdmmdl"></a><a id="WDFREQUESTRETRIEVEOUTPUTWDMMDL"></a><a href="wdf.wdfrequestretrieveoutputwdmmdl"><b>WdfRequestRetrieveOutputWdmMdl</b></a></dt>
+<dd>
+<p>Retrieves a memory descriptor list (MDL) that represents an I/O request's output buffer.</p>
+</dd>
+<dt><a id="WdfRequestRetrieveInputWdmMdl"></a><a id="wdfrequestretrieveinputwdmmdl"></a><a id="WDFREQUESTRETRIEVEINPUTWDMMDL"></a><a href="wdf.wdfrequestretrieveinputwdmmdl"><b>WdfRequestRetrieveInputWdmMdl</b></a></dt>
+<dd>
+<p>Retrieves an MDL that represents an I/O request's input buffer.</p>
+</dd>
+<dt><a id="WdfRequestFormatRequestUsingCurrentType"></a><a id="wdfrequestformatrequestusingcurrenttype"></a><a id="WDFREQUESTFORMATREQUESTUSINGCURRENTTYPE"></a><a href="wdf.wdfrequestformatrequestusingcurrenttype"><b>WdfRequestFormatRequestUsingCurrentType</b></a></dt>
+<dd>
+<p>Copies the contents of the calling driver's I/O stack location to the I/O stack location of the driver's local I/O target.</p>
+</dd>
+<dt><a id="WdfRequestWdmFormatUsingStackLocation"></a><a id="wdfrequestwdmformatusingstacklocation"></a><a id="WDFREQUESTWDMFORMATUSINGSTACKLOCATION"></a><a href="wdf.wdfrequestwdmformatusingstacklocation"><b>WdfRequestWdmFormatUsingStackLocation</b></a></dt>
+<dd>
+<p>Sets the contents of the I/O stack location for the driver's local I/O target.</p>
+</dd>
+</dl>
+<h3><a id="obtaining_wdm_information_about_i_o_targets"></a><a id="OBTAINING_WDM_INFORMATION_ABOUT_I_O_TARGETS"></a>Obtaining WDM Information About I/O Targets</h3>
+<p>To obtain WDM information about I/O targets, a driver can call the following methods:</p>
+<p></p>
+<dl>
+<dt><a id="WdfIoTargetWdmGetTargetDeviceObject"></a><a id="wdfiotargetwdmgettargetdeviceobject"></a><a id="WDFIOTARGETWDMGETTARGETDEVICEOBJECT"></a><a href="wdf.wdfiotargetwdmgettargetdeviceobject"><b>WdfIoTargetWdmGetTargetDeviceObject</b></a></dt>
+<dd>
+<p>Returns a pointer to the WDM device object that is associated with a local or remote I/O target.</p>
+</dd>
+<dt><a id="WdfIoTargetWdmGetTargetFileObject"></a><a id="wdfiotargetwdmgettargetfileobject"></a><a id="WDFIOTARGETWDMGETTARGETFILEOBJECT"></a><a href="wdf.wdfiotargetwdmgettargetfileobject"><b>WdfIoTargetWdmGetTargetFileObject</b></a></dt>
+<dd>
+<p>Returns a pointer to the WDM <a href="kernel.file_object"><b>FILE_OBJECT</b></a> structure that is associated with a remote I/O target.</p>
+</dd>
+<dt><a id="WdfIoTargetWdmGetTargetFileHandle"></a><a id="wdfiotargetwdmgettargetfilehandle"></a><a id="WDFIOTARGETWDMGETTARGETFILEHANDLE"></a><a href="wdf.wdfiotargetwdmgettargetfilehandle"><b>WdfIoTargetWdmGetTargetFileHandle</b></a></dt>
+<dd>
+<p>Returns a handle to the file that is associated with a remote I/O target.</p>
+</dd>
+<dt><a id="WdfIoTargetWdmGetTargetPhysicalDevice"></a><a id="wdfiotargetwdmgettargetphysicaldevice"></a><a id="WDFIOTARGETWDMGETTARGETPHYSICALDEVICE"></a><a href="wdf.wdfiotargetwdmgettargetphysicaldevice"><b>WdfIoTargetWdmGetTargetPhysicalDevice</b></a></dt>
+<dd>
+<p>Returns a pointer to the WDM physical device object (PDO) that represents a remote I/O target's device.</p>
+</dd>
+</dl>
+<h3><a id="obtaining_wdm_information_about_interrupts_and_dpcs"></a><a id="OBTAINING_WDM_INFORMATION_ABOUT_INTERRUPTS_AND_DPCS"></a>Obtaining WDM Information About Interrupts and DPCs</h3>
+<p>To obtain WDM information about interrupts and deferred procedure calls (DPCs), a driver can call the following methods:</p>
+<p></p>
+<dl>
+<dt><a id="WdfInterruptWdmGetInterrupt"></a><a id="wdfinterruptwdmgetinterrupt"></a><a id="WDFINTERRUPTWDMGETINTERRUPT"></a><a href="wdf.wdfinterruptwdmgetinterrupt"><b>WdfInterruptWdmGetInterrupt</b></a></dt>
+<dd>
+<p>Returns a pointer to the WDM <a href="kernel.kinterrupt"><b>KINTERRUPT</b></a> structure that is associated with a specified framework interrupt object.</p>
+</dd>
+<dt><a id="WdfDpcWdmGetDpc"></a><a id="wdfdpcwdmgetdpc"></a><a id="WDFDPCWDMGETDPC"></a><a href="wdf.wdfdpcwdmgetdpc"><b>WdfDpcWdmGetDpc</b></a></dt>
+<dd>
+<p>Returns a pointer to the WDM <a href="kernel.kdpc"><b>KDPC</b></a> structure that is associated with a specified framework DPC object.</p>
+</dd>
+</dl>
+<h3><a id="obtaining_wdm_information_about_usb_i_o_targets"></a><a id="OBTAINING_WDM_INFORMATION_ABOUT_USB_I_O_TARGETS"></a>
+      Obtaining WDM Information About USB I/O Targets
+     </h3>
+<p>To obtain WDM information about USB I/O targets, a driver can call the following method:</p>
+<p></p>
+<dl>
+<dt><a id="WdfUsbTargetPipeWdmGetPipeHandle"></a><a id="wdfusbtargetpipewdmgetpipehandle"></a><a id="WDFUSBTARGETPIPEWDMGETPIPEHANDLE"></a><a href="wdf.wdfusbtargetpipewdmgetpipehandle"><b>WdfUsbTargetPipeWdmGetPipeHandle</b></a></dt>
+<dd>
+<p>Returns the USBD_PIPE_HANDLE-typed handle that is associated with a specified framework pipe object. </p>
+</dd>
+</dl>
+<h3><a id="obtaining_wdm_information_about_the_registry"></a><a id="OBTAINING_WDM_INFORMATION_ABOUT_THE_REGISTRY"></a>Obtaining WDM Information About the Registry</h3>
+<p>To obtain WDM information about the registry, a driver can call the following method:</p>
+<p></p>
+<dl>
+<dt><a id="WdfRegistryWdmGetHandle"></a><a id="wdfregistrywdmgethandle"></a><a id="WDFREGISTRYWDMGETHANDLE"></a><a href="wdf.wdfregistrywdmgethandle"><b>WdfRegistryWdmGetHandle</b></a></dt>
+<dd>
+<p>Returns a WDM handle to the registry key that a framework registry-key object represents.</p>
+</dd>
+</dl>
+<h3><a id="obtaining_wdm_information_about_file_objects"></a><a id="OBTAINING_WDM_INFORMATION_ABOUT_FILE_OBJECTS"></a>Obtaining WDM Information About File Objects</h3>
+<p>To obtain WDM information about file objects, a driver can call the following method:</p>
+<p></p>
+<dl>
+<dt><a id="WdfFileObjectWdmGetFileObject"></a><a id="wdffileobjectwdmgetfileobject"></a><a id="WDFFILEOBJECTWDMGETFILEOBJECT"></a><a href="wdf.wdffileobjectwdmgetfileobject"><b>WdfFileObjectWdmGetFileObject</b></a></dt>
+<dd>
+<p>Returns the WDM <a href="kernel.file_object"><b>FILE_OBJECT</b></a> structure that is associated with a specified framework file object.</p>
+</dd>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Obtaining WDM Information%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

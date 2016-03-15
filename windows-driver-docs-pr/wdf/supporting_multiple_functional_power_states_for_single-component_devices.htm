@@ -1,0 +1,94 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="A KMDF driver for a single-component device can define one or more functional power states for the component and register callback functions that the power management framework (PoFx) calls when the Fx state of the component changes or its active/idle condition changes. Starting in UMDF version 2.0, a UMDF driver for a single-component device can define a single functional power state (F0)."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Supporting Single-Component Devices with Single or Multiple Functional Power States</title>
+
+<meta name="MS-HAID" content="kmdf.supporting_multiple_functional_power_states_for_single-component_devices"/>
+<meta name="MS-HAID" content="wdf.supporting_multiple_functional_power_states_for_single-component_devices"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.supporting_multiple_functional_power_states_for_single-component_devices"></a>Supporting Single-Component Devices with Single or Multiple Functional Power States</h1>
+</div>
+<p>A KMDF driver for a single-component device can define one or more functional power states for the component and register callback functions that the power management framework (PoFx) calls when the Fx state of the component changes or its active/idle condition changes.  Starting in UMDF version 2.0, a UMDF driver for a single-component device can define a single functional power state (F0).</p>
+<p>For more information about PoFx, see <a href="kernel.overview_of_the_power_management_framework">Overview of the Power Management Framework</a>.</p>
+<p> To implement Fx state support for a single-component device, you must do the following in order before or during the first time a device starts.</p>
+<p>
+<ol>
+<li>This step is for KMDF drivers only. Call <a href="wdf.wdfdevicewdmassignpowerframeworksettings"><b>WdfDeviceWdmAssignPowerFrameworkSettings</b></a> to specify the power framework settings that WDF uses when registering with PoFx.  
+In the <a href="wdf.wdf_power_framework_settings"><b>WDF_POWER_FRAMEWORK_SETTINGS</b></a> structure that the driver provides when it calls <b>WdfDeviceWdmAssignPowerFrameworkSettings</b>, the driver can provide pointers to several callback functions. If the driver supports only a single functional power state (F0), this step is optional.</li>
+<li>
+<p>This step applies to KMDF drivers and UMDF drivers. Call  <a href="wdf.wdfdeviceassigns0idlesettings"><b>WdfDeviceAssignS0IdleSettings</b></a> and set the <b>IdleTimeoutType</b> field of the <a href="wdf.wdf_device_power_policy_idle_settings"><b>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b></a> structure to <b>SystemManagedIdleTimeout</b> or <b>SystemManagedIdleTimeoutWithHint</b>. Doing so causes WDF to register  with PoFx.</p>
+<p>For KMDF drivers,  when registering with PoFx, the framework uses the information that the driver provided  in <a href="wdf.wdf_power_framework_settings"><b>WDF_POWER_FRAMEWORK_SETTINGS</b></a> when it called <a href="wdf.wdfdevicewdmassignpowerframeworksettings"><b>WdfDeviceWdmAssignPowerFrameworkSettings</b></a>.</p>
+</li>
+</ol>
+</p>
+<p>Because a device can start more than once, for example in the event of resource rebalancing, a driver might perform the previous steps within the <a href="wdf.evtdeviceselfmanagedioinit"><i>EvtDeviceSelfManagedIoInit</i></a> callback function. If the driver has registered an <i>EvtDeviceSelfManagedIoInit</i> callback function, the framework calls it once for each device, after the framework has called the driver's <a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a> callback function for the first time.</p>
+<p>The remainder of the information in this topic applies only to KMDF drivers.</p>
+<h2><a id="Powering_Up"></a><a id="powering_up"></a><a id="POWERING_UP"></a>Powering Up</h2>
+<p>When the driver calls <a href="wdf.wdfdevicewdmassignpowerframeworksettings"><b>WdfDeviceWdmAssignPowerFrameworkSettings</b></a>, it can provide a pointer to a <a href="wdf.evtdevicewdmpostpofxregisterdevice"><i>EvtDeviceWdmPostPoFxRegisterDevice</i></a> callback function.</p>
+<p>The framework calls the  driver's <a href="wdf.evtdevicewdmpostpofxregisterdevice"><i>EvtDeviceWdmPostPoFxRegisterDevice</i></a> callback function after the framework has registered with PoFx.  Here is an example of a typical power up sequence:</p>
+<dl>
+<dd><a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a></dd>
+<dd>...</dd>
+<dd><a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a> (<i>PrevState</i> = <b>WdfPowerDeviceD3Final</b>)</dd>
+<dd>...</dd>
+<dd><a href="wdf.evtinterruptenable"><i>EvtInterruptEnable</i></a></dd>
+<dd>...</dd>
+<dd><a href="wdf.evtdevicewdmpostpofxregisterdevice"><i>EvtDeviceWdmPostPoFxRegisterDevice</i></a> // PoFx  handle is available</dd>
+</dl>
+<p>The driver provides the <a href="wdf.evtdevicewdmpostpofxregisterdevice"><i>EvtDeviceWdmPostPoFxRegisterDevice</i></a> callback if it must perform any additional operations using the POHANDLE for the power framework registration. For example, it could specify latency, residency, and wake requirements.  For more information about routines that use the POHANDLE, see <a href="kernel.device_power_management_routines">Device Power Management Routines</a>.</p>
+<p>Your driver can also use the POHANDLE to exchange power control requests with PoFx:<ul>
+<li>To send a power control request to PoFx, the driver provides a <a href="wdf.evtdevicewdmpostpofxregisterdevice"><i>EvtDeviceWdmPostPoFxRegisterDevice</i></a> callback function, and then uses the resulting POHANDLE to call <a href="kernel.pofxpowercontrol"><b>PoFxPowerControl</b></a>.</li>
+<li>To perform power control operations requested by PoFx, the driver provides a <a href="kernel.powercontrolcallback"><i>PowerControlCallback</i></a> callback routine in its <a href="wdf.wdf_power_framework_settings"><b>WDF_POWER_FRAMEWORK_SETTINGS</b></a> structure.</li>
+</ul>
+</p>
+<h2><a id="Powering_Down"></a><a id="powering_down"></a><a id="POWERING_DOWN"></a>Powering Down</h2>
+<p>WDF calls the <a href="wdf.evtdevicewdmprepofxunregisterdevice"><i>EvtDeviceWdmPrePoFxUnregisterDevice</i></a> callback function before deleting a specified registration with PoFx. </p>
+<p>The driver can provide a pointer to a <a href="kernel.componentidlestatecallback"><i>ComponentIdleStateCallback</i></a> routine in the <a href="wdf.wdf_power_framework_settings"><b>WDF_POWER_FRAMEWORK_SETTINGS</b></a> structure that it provides to <a href="wdf.wdfdevicewdmassignpowerframeworksettings"><b>WdfDeviceWdmAssignPowerFrameworkSettings</b></a>.  PoFx calls this routine to notify the driver of a pending change to the Fx power state of the specified component. In  this callback routine, the driver can perform hardware-specific operations related to the functional state change.</p>
+<p> For example, before transitioning a component into a low-power Fx state, a driver might save hardware state and disable interrupts and DMA. The driver calls <a href="wdf.wdfinterruptreportinactive"><b>WdfInterruptReportInactive</b></a>  to inform the system that the interrupt is no longer active. Turning off interrupts during F-state transitions may reduce overall system power consumption.</p>
+<p>The driver can also provide a pointer to a <a href="kernel.componentidleconditioncallback"><i>ComponentIdleConditionCallback</i></a> routine in its <a href="wdf.wdf_power_framework_settings"><b>WDF_POWER_FRAMEWORK_SETTINGS</b></a> structure.  PoFx calls this routine to notify the driver that a component has become idle. In this routine, the driver begins the process of stopping its power-managed queues and self-managed I/O operations:</p>
+<ol>
+<li>Call <a href="wdf.wdfioqueuestop"><b>WdfIoQueueStop</b></a> once for each of the device’s power-managed queues. In each call to <b>WdfIoQueueStop</b>, supply a <a href="wdf.evtioqueuestate"><i>EvtIoQueueState</i></a> callback. Typically, the driver calls <b>WdfIoQueueStop</b> from within <a href="kernel.componentidleconditioncallback"><i>ComponentIdleConditionCallback</i></a>.</li>
+<li>Ensure that requests that are dispatched to the driver from each of the power-managed queues are completed quickly. Depending on the driver, this may involve some or all of the following:<ul>
+<li>If the driver does not hold requests for an extended time and does not forward them to an I/O target that does so, continue to step 3.</li>
+<li>If the driver holds certain requests for an extended time, requeue these requests to a manual queue. In its <a href="kernel.componentactiveconditioncallback"><i>ComponentActiveConditionCallback</i></a> routine, the driver can then retrieve the requests.</li>
+<li>If the driver forwards certain requests to an I/O target that holds them for an extended time, cancel these requests. Resubmit the requests in <a href="kernel.componentactiveconditioncallback"><i>ComponentActiveConditionCallback</i></a>.</li>
+</ul>
+</li>
+<li>
+<p>When each queue has been stopped, the framework calls <a href="wdf.evtioqueuestate"><i>EvtIoQueueState</i></a>.   If the driver is stopping multiple power-managed queues, the framework calls <i>EvtIoQueueState</i> multiple times, once for each queue.</p>
+<p>  The driver must call <a href="kernel.pofxcompleteidlecondition"><b>PoFxCompleteIdleCondition</b></a> after the last <a href="wdf.evtioqueuestate"><i>EvtIoQueueState</i></a> function has been called.  For example, the driver could make this call from within the last <i>EvtIoQueueState</i>.</p>
+<p> In order to determine which call is last, the driver might use a counter to track the number of times that the framework has called <a href="wdf.evtioqueuestate"><i>EvtIoQueueState</i></a>.  The Singlecomp sample illustrates this technique. This sample is available beginning in the Windows 8 WDK.</p>
+</li>
+</ol>
+<p>Here is an example of a typical power down sequence:</p>
+<dl>
+<dd><a href="kernel.componentidleconditioncallback"><i>ComponentIdleConditionCallback</i></a></dd>
+<dd><a href="kernel.componentidlestatecallback"><i>ComponentIdleStateCallback</i></a></dd>
+<dd>...</dd>
+<dd><a href="wdf.evtinterruptdisable"><i>EvtInterruptDisable</i></a></dd>
+<dd>...</dd>
+<dd><a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a></dd>
+</dl>
+<p>  Restart power-managed queues and self-managed I/O operations in  <a href="kernel.componentactiveconditioncallback"><i>ComponentActiveConditionCallback</i></a>.</p>
+<p>If the driver previously called <a href="wdf.wdfinterruptreportinactive"><b>WdfInterruptReportInactive</b></a>, re-enable inactive interrupts by calling <a href="wdf.wdfinterruptreportactive"><b>WdfInterruptReportActive</b></a> from either <a href="kernel.componentactiveconditioncallback"><i>ComponentActiveConditionCallback</i></a> or <a href="kernel.componentidlestatecallback"><i>ComponentIdleStateCallback</i></a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Supporting Single-Component Devices with Single or Multiple Functional Power States%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

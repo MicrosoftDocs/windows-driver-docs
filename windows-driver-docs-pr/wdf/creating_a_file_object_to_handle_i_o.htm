@@ -1,0 +1,42 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Creating a File Object to Handle I/O"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Creating a File Object to Handle I/O</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_2e6e5319-978d-4b70-bec0-99aab296a02e.xml"/>
+<meta name="MS-HAID" content="umdf.creating_a_file_object_to_handle_i_o"/>
+<meta name="MS-HAID" content="wdf.creating_a_file_object_to_handle_i_o"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.creating_a_file_object_to_handle_i_o"></a>Creating a File Object to Handle I/O</h1>
+</div>
+<p>When an application opens a file handle, the I/O manager creates a file object. The framework in turn creates a framework file object to represent the I/O manager's file object.</p>
+<p>Unless the driver sets the <b>UmdfFileObjectPolicy</b> directive to <b>AllowNullAndUnknownFileObjects</b>, UMDF requires each I/O request to be associated with a file object. For more information about this directive, see <a href="specifying_wdf_directives_in_inf_files.htm">Specifying WDF Directives in INF Files</a>.</p>
+<p>If your UMDF driver sends I/O that is independent of the application to the next driver in the stack (for example, during device initialization or to get notification of device events), the driver must create its own file object to associate with the request.</p>
+<p> The following sections describe the differences between driver-created file objects and application-created file objects, and how the driver creates and uses a file object.</p>
+<p>
+<ul>
+<li><a href="driver_created_versus_application_created_file_objects.htm">Driver-Created Versus Application-Created File Objects</a></li>
+<li><a href="creating_and_using_driver_created_file_objects.htm">Creating and Using Driver-Created File Objects</a></li>
+</ul>
+</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Creating a File Object to Handle I/O%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

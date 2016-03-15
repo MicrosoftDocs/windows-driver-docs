@@ -1,0 +1,85 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Using Driver-Defined Interfaces"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using Driver-Defined Interfaces</title>
+
+<meta name="MS-HAID" content="Ch8_DFTechniques_c009776d-4c25-4293-84da-77266d6ae738.xml"/>
+<meta name="MS-HAID" content="kmdf.using_driver_defined_interfaces"/>
+<meta name="MS-HAID" content="wdf.using_driver_defined_interfaces"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_driver_defined_interfaces"></a>Using Driver-Defined Interfaces</h1>
+</div>
+<p>Drivers can define device-specific interfaces that other drivers can access. These <i>driver-defined interfaces</i> can consist of a set of callable routines, a set of data structures, or both. The driver typically provides pointers to these routines and structures in a driver-defined interface structure, which the driver makes available to other drivers. </p>
+<p>For example, a bus driver might provide one or more routines that higher-level drivers can call to obtain information about a child device, if that information is not available in the child device's resource list.</p>
+<p>For an example of a set of driver-defined interfaces that are documented in the WDK, see <a href="buses.usb_interfaces">USB Routines</a>. Also, see the framework-based version of the <a href="sample_kmdf_drivers.htm">toaster</a> sample.</p>
+<h3><a id="creating_an_interface"></a><a id="CREATING_AN_INTERFACE"></a>Creating an Interface</h3>
+<p>Each driver-defined interface is specified by:</p>
+<ul>
+<li>
+<p>A GUID</p>
+</li>
+<li>
+<p>A version number</p>
+</li>
+<li>
+<p>A driver-defined interface structure </p>
+</li>
+<li>
+<p>Reference and dereference routines</p>
+</li>
+</ul>
+<p>To create an interface and make it available to other drivers, framework-based drivers can use the following steps:</p>
+<ol>
+<li>
+<p>Define an interface structure.</p>
+<p>The first member of this driver-defined structure must be an <a href="kernel.interface"><b>INTERFACE</b></a> header structure. Additional members might include interface data and pointers to additional structures or routines that anther driver can call.</p>
+<p>Your driver must provide a <a href="wdf.wdf_query_interface_config"><b>WDF_QUERY_INTERFACE_CONFIG</b></a> structure, which describes the interface that you have defined.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfdeviceaddqueryinterface"><b>WdfDeviceAddQueryInterface</b></a>.</p>
+<p>The <a href="wdf.wdfdeviceaddqueryinterface"><b>WdfDeviceAddQueryInterface</b></a> method does the following:</p>
+<ul>
+<li>Stores information about the interface, such as its GUID, version number, and structure size, so the framework can recognize another driver's request for the interface.</li>
+<li>Registers an optional <a href="wdf.evtdeviceprocessqueryinterfacerequest"><i>EvtDeviceProcessQueryInterfaceRequest</i></a> event callback function, which the framework calls when another driver asks for the interface.</li>
+</ul>
+</li>
+</ol>
+<p>Each instance of a driver-defined interface is associated with an individual device, so drivers typically call <a href="wdf.wdfdeviceaddqueryinterface"><b>WdfDeviceAddQueryInterface</b></a> from within an <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> or <a href="wdf.evtchildlistcreatedevice"><i>EvtChildListCreateDevice</i></a> callback function. </p>
+<h3><a id="accessing_an_interface"></a><a id="ACCESSING_AN_INTERFACE"></a>Accessing an Interface</h3>
+<p>If your driver has defined an interface, another framework-based driver can request access to the interface by calling <a href="wdf.wdffdoqueryforinterface"><b>WdfFdoQueryForInterface</b></a> and passing a GUID, version number, pointer to a structure, and the structure size. The framework creates an I/O request and sends it to the top of the driver stack.</p>
+<p>A driver typically calls <a href="wdf.wdffdoqueryforinterface"><b>WdfFdoQueryForInterface</b></a> from within an <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function. Alternatively, if the driver must release the interface when the device is not in its working state, the driver can call <b>WdfFdoQueryForInterface</b> from within an <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback function and call the interface's dereference routine from within an <a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a> callback function.</p>
+<p>If driver A asks driver B for an interface that driver B has defined, the framework handles the request for driver B. The framework verifies that the GUID and version represent a supported interface, and that the structure size that driver A supplied is large enough to hold the interface. </p>
+<p>When a driver calls <a href="wdf.wdffdoqueryforinterface"><b>WdfFdoQueryForInterface</b></a>, the I/O request that the framework creates travels all the way to the bottom of the driver stack. If a simple driver stack consists of three drivers - A, B, and C - and if driver A asks for an interface, both driver B and driver C can support the interface. For example, driver B might fill in driver A's interface structure before passing the request down to driver C. Driver C can provide an <a href="wdf.evtdeviceprocessqueryinterfacerequest"><i>EvtDeviceProcessQueryInterfaceRequest</i></a> callback function that examines the interface structure's contents and possibly modifies them. </p>
+<p>If driver A needs to access driver B's interface, and driver B is a remote I/O target (that is, a driver that is in a different driver stack), driver A must call <a href="wdf.wdfiotargetqueryforinterface"><b>WdfIoTargetQueryForInterface</b></a> instead of <a href="wdf.wdffdoqueryforinterface"><b>WdfFdoQueryForInterface</b></a>.</p>
+<h3><a id="using_one_way_or_two_way_communication"></a><a id="USING_ONE_WAY_OR_TWO_WAY_COMMUNICATION"></a>Using One-Way or Two-Way Communication</h3>
+<p>You can define an interface that provides one-way communication, or one that provides two-way communication. To specify two-way communication, your driver sets the <b>ImportInterface</b> member of its <a href="wdf.wdf_query_interface_config"><b>WDF_QUERY_INTERFACE_CONFIG</b></a> structure to <b>TRUE</b>.</p>
+<p>If the interface provides one-way communication, and if driver A asks for driver B's interface, interface data flows only from driver B to driver A. When the framework receives driver A's request for an interface that supports one-way communication, the framework copies the driver-defined interface values into the driver A's interface structure. It then calls driver B's <a href="wdf.evtdeviceprocessqueryinterfacerequest"><i>EvtDeviceProcessQueryInterfaceRequest</i></a> callback function, if it exists, so it can examine and possibly modify the interface values.</p>
+<p>If the interface provides two-way communication, the interface structure contains some members that driver A fills in before sending the request to driver B. Driver B can read the parameter values that driver A provided and make choices, based on those values, about which information to supply to driver A. When the framework receives driver A's request for an interface that supports two-way communication, the framework calls driver B's <a href="wdf.evtdeviceprocessqueryinterfacerequest"><i>EvtDeviceProcessQueryInterfaceRequest</i></a> callback function so that it can examine received values and supply output values. For two-way communication, the callback function is required because the framework does not copy any interface values to driver A's interface structure.</p>
+<h3><a id="maintaining_a_reference_count"></a><a id="MAINTAINING_A_REFERENCE_COUNT"></a>Maintaining a Reference Count</h3>
+<p>Each interface must include a reference function and a dereference function, which increment and decrement a reference count for the interface. The driver that defines the interface specifies the addresses of these functions in its <a href="kernel.interface"><b>INTERFACE</b></a> structure. </p>
+<p>When driver A asks driver B for an interface, the framework calls the interface's reference function before making the interface available to driver A. When driver A has finished using the interface, it must call the interface's dereference function. </p>
+<p>The reference and dereference functions for most interfaces can be no-op functions that do nothing. The framework provides no-op reference count functions, <a href="wdf.wdfdeviceinterfacereferencenoop"><b>WdfDeviceInterfaceReferenceNoOp</b></a> and <a href="wdf.wdfdeviceinterfacedereferencenoop"><b>WdfDeviceInterfaceDereferenceNoOp</b></a>, that most drivers can use.</p>
+<p>The only time that drivers must keep track of an interface's reference count, and provide real reference and dereference functions, is when driver A requests an interface from a remote I/O target (that is, a driver that is in a different driver stack). In this case, driver B (in a different stack) must implement a reference count so that it can prevent its device from being removed while driver A is using driver B's interface. </p>
+<p>If you are designing driver B, which defines an interface, you must decide whether your driver's interface will be accessed from a different driver stack. (Driver B cannot determine if a request for its interface is from the local driver stack or from a remote stack.) If your driver will support interface requests from a remote stack, the driver must implement a reference count. </p>
+<p>If you are designing driver A, which accesses the interface on the remote I/O target, the driver must provide an <a href="wdf.evtiotargetqueryremove"><i>EvtIoTargetQueryRemove</i></a> callback function that releases the interface when driver B's device is about to be removed, an <a href="wdf.evtiotargetremovecomplete"><i>EvtIoTargetRemoveComplete</i></a> callback function that releases the interface when driver B's device is surprise-removed, and an <a href="wdf.evtiotargetremovecanceled"><i>EvtIoTargetRemoveCanceled</i></a> callback function that reacquires the interface if an attempt to remove the device was canceled. </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using Driver-Defined Interfaces%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

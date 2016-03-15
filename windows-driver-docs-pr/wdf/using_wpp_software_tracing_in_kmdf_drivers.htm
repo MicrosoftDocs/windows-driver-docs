@@ -1,0 +1,67 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Using WPP Software Tracing in KMDF Drivers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using WPP Software Tracing in KMDF Drivers</title>
+
+<meta name="MS-HAID" content="Ch0_DFArchOverview_927c92fb-9d0b-44c7-9afc-f6d2730087dd.xml"/>
+<meta name="MS-HAID" content="kmdf.using_wpp_software_tracing_in_framework_based_drivers"/>
+<meta name="MS-HAID" content="kmdf.using_wpp_software_tracing_in_kmdf_drivers"/>
+<meta name="MS-HAID" content="wdf.using_wpp_software_tracing_in_kmdf_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_wpp_software_tracing_in_kmdf_drivers"></a>Using WPP Software Tracing in KMDF Drivers</h1>
+</div>
+<p><a href="devtest.wpp_software_tracing">WPP software tracing</a> enables you to add tracing messages that help you debug your driver. Additionally, the framework's <a href="using_the_framework_s_event_logger.htm">event logger</a> provides hundreds of tracing messages that you can view.</p>
+<p>You can view tracing messages by using <a href="devtest.traceview">TraceView</a> or <a href="devtest.tracelog">Tracelog</a>. You can also <a href="devtest.how_do_i_send_trace_messages_to_a_kernel_debugger_">send trace messages to a kernel debugger</a>.</p>
+<h3><a id="adding_tracing_messages_to_your_driver"></a><a id="ADDING_TRACING_MESSAGES_TO_YOUR_DRIVER"></a>Adding Tracing Messages to Your Driver</h3>
+<p>To add tracing messages to your framework-based driver, you must:</p>
+<ul>
+<li>
+<p>Add an <b>#include</b> directive to each of your driver's source files that contains any of the WPP macros. This directive must identify a <a href="devtest.trace_message_header_file">trace message header (TMH) file</a>. The file name must have a format of &lt;<i>driver-source-file-name</i>&gt;<b>.tmh</b>.</p>
+<p>For example, if your driver consists of two source files, called <i>MyDriver1.c</i> and <i>MyDriver2.c</i>, then <i>MyDriver1.c</i> must contain:</p>
+<p><b>#include "MyDriver1.tmh"</b></p>
+<p>and <i>MyDriver2.c</i> must contain:</p>
+<p><b>#include "MyDriver2.tmh"</b></p>
+<p>When you build your driver in Microsoft Visual Studio, the WPP preprocessor generates the .<i>tmh</i> files.</p>
+</li>
+<li>
+<p>Define a <a href="devtest.wpp_control_guids">WPP_CONTROL_GUIDS</a> macro in a header file. This macro defines a GUID and <a href="devtest.trace_flags">trace flags</a> for your driver's tracing messages.</p>
+</li>
+<li>
+<p>Include a <a href="devtest.wpp_init_tracing">WPP_INIT_TRACING</a> macro in your driver's <a href="wdf.driverentry_for_kmdf_drivers"><b>DriverEntry routine</b></a>. This macro activates software tracing in your driver.</p>
+</li>
+<li>
+<p>Include a <a href="devtest.wpp_cleanup">WPP_CLEANUP</a> macro in your driver's <a href="wdf.evtdriverunload"><i>EvtDriverUnload</i></a> callback function. This macro deactivates software tracing in your driver.</p>
+</li>
+<li>
+<p>Use the <a href="devtest.dotracemessage"><b>DoTraceMessage</b></a> macro, or a <a href="devtest.can_i_customize_dotracemessage_">customized version</a> of the macro, in your driver to create trace messages.</p>
+</li>
+<li>
+<p>Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select <b>Properties</b>.
+In the Property Pages for the driver, click <b>Configuration Properties</b>, and then <b>Wpp</b>. Under the <b>General</b> menu, set <b>Run WPP Tracing</b> to Yes.  Under the <b>File Options</b> menu, you should  also specify the framework's WPP template file, for example:<pre class="syntax" xml:space="preserve"><code>{km-WdfDefault.tpl}*.tmh</code></pre>
+</p>
+</li>
+</ul>
+<p>For more information about adding tracing messages to your driver, see <a href="devtest.adding_wpp_macros_to_a_trace_provider">Adding WPP Macros to a Driver</a>.</p>
+<h3><a id="sample_drivers_that_use_wpp_software_tracing"></a><a id="SAMPLE_DRIVERS_THAT_USE_WPP_SOFTWARE_TRACING"></a>Sample Drivers That Use WPP Software Tracing</h3>
+<p>The AMCC5933, NONPNP, KMDF_FX2, PCIDRV, PLX9x5x, and Serial <a href="sample_kmdf_drivers.htm">sample drivers</a> use WPP software tracing. </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using WPP Software Tracing in KMDF Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

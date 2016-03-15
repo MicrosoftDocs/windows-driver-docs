@@ -1,0 +1,61 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Creating Callback Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Creating Callback Objects</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_c4938472-fb74-48e2-a008-d5429af69f78.xml"/>
+<meta name="MS-HAID" content="umdf.creating_callback_objects"/>
+<meta name="MS-HAID" content="wdf.creating_callback_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.creating_callback_objects"></a>Creating Callback Objects</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>A UMDF driver can create <i>callback objects</i>, which consist of context data and interface methods. The framework accesses the driver's callback objects through the driver's callback interface methods. </p>
+<p>The following figure shows how driver-implemented callback objects correspond to <a href="framework_objects.htm">framework objects</a>.</p><img src="images/correspond.gif" alt="Framework objects and vendor-supplied callback objects"/><p>A UMDF driver can create several types of callback objects, including the following: </p>
+<ul>
+<li>
+<p>Driver callback object</p>
+<p>The framework uses the driver callback object to initialize the driver and notify the driver of the arrival of a new device. </p>
+</li>
+<li>
+<p>Device callback object</p>
+<p>The driver uses the device callback object to store device context and to handle the cleanup and closing of file objects and Plug and Play (PnP) and power management (PM) events. </p>
+</li>
+<li>
+<p>Queue callback object</p>
+<p>The driver uses the queue callback object to process I/O.</p>
+</li>
+</ul>
+<p>The following figure shows how a UMDF driver creates a device callback object.</p><img src="images/callback.gif" alt="Call sequence for creating a UMDF device callback object"/><p>The following topics contain code examples that show how to create a callback object:</p>
+<dl>
+<dd>
+<p><a href="creating_callback_objects_example.htm">Creating Callback Objects Example</a></p>
+</dd>
+<dd>
+<p><a href="defining_callback_objects_example.htm">Defining Callback Objects Example</a></p>
+</dd>
+<dd>
+<p><a href="associating_callback_interfaces_example.htm">Associating Callback Interfaces Example</a></p>
+</dd>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Creating Callback Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

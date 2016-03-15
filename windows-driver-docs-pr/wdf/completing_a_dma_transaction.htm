@@ -1,0 +1,80 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Completing a DMA Transaction"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Completing a DMA Transaction</title>
+
+<meta name="MS-HAID" content="DFDmaPackage_2e6aaf87-c9b6-4455-8ef1-e7df9e7ddb58.xml"/>
+<meta name="MS-HAID" content="kmdf.completing_a_dma_transaction"/>
+<meta name="MS-HAID" content="wdf.completing_a_dma_transaction"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.completing_a_dma_transaction"></a>Completing a DMA Transaction</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<h2><a id="ddk_completing_a_dma_transaction_df"></a><a id="DDK_COMPLETING_A_DMA_TRANSACTION_DF"></a></h2>
+<p>Each time that a driver's device <a href="completing_a_dma_transfer.htm">completes a DMA transfer</a>, the driver must call <a href="wdf.wdfdmatransactiondmacompleted"><b>WdfDmaTransactionDmaCompleted</b></a>, <a href="wdf.wdfdmatransactiondmacompletedwithlength"><b>WdfDmaTransactionDmaCompletedWithLength</b></a>, or <a href="wdf.wdfdmatransactiondmacompletedfinal"><b>WdfDmaTransactionDmaCompletedFinal</b></a> and then check the return value. </p>
+<p>When the return value is <b>TRUE</b>, no more transfers are needed for the DMA transaction and the driver must complete the DMA transaction. Typically, the driver has not yet returned from its <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function. Therefore, this callback function completes the DMA transaction by:</p>
+<ol>
+<li>
+<p>Calling <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to delete the transaction object, or calling <a href="wdf.wdfdmatransactionrelease"><b>WdfDmaTransactionRelease</b></a> if the driver <a href="reusing_dma_transaction_objects.htm">reuses DMA transaction objects</a>.</p>
+</li>
+<li>
+<p>Calling <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a> or <a href="wdf.wdfrequestcompletewithinformation"><b>WdfRequestCompleteWithInformation</b></a>, if the transaction is associated with a framework request object.</p>
+</li>
+</ol>
+<p>If the driver calls <a href="wdf.wdfrequestcompletewithinformation"><b>WdfRequestCompleteWithInformation</b></a>, it typically first calls <a href="wdf.wdfdmatransactiongetbytestransferred"><b>WdfDmaTransactionGetBytesTransferred</b></a> to obtain the total length (number of bytes) of all of the transaction's transfers. </p>
+<p>These steps are illustrated in the following code example, taken from the <a href="http://go.microsoft.com/fwlink/p/?linkid=256157">PLX9x5x</a> sample’s  <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function in the <i>Isrdpc.c</i> file:</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>if (readComplete) {
+    BOOLEAN              transactionComplete;
+    WDFDMATRANSACTION    dmaTransaction;
+    size_t               bytesTransferred;
+
+    // Get the current Read DmaTransaction.
+    dmaTransaction = devExt-&gt;CurrentReadDmaTransaction;
+
+    // Indicate that this DMA operation has completed:
+    // This may start the transfer on the next packet if 
+    // there is still data to be transferred.
+    transactionComplete = 
+          WdfDmaTransactionDmaCompleted( dmaTransaction, &amp;status ); 
+    if (transactionComplete) {
+        // Complete the DmaTransaction and the request.
+        devExt-&gt;CurrentReadDmaTransaction = NULL;
+        bytesTransferred =  
+               ((NT_SUCCESS(status)) ? 
+               WdfDmaTransactionGetBytesTransferred(dmaTransaction): 0 );
+        WdfDmaTransactionRelease(dmaTransaction);
+        WdfRequestCompleteWithInformation(request, status, bytesTransferred);
+    }
+}
+
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Completing a DMA Transaction%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

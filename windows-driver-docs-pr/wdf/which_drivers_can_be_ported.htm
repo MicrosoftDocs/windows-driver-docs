@@ -1,0 +1,61 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic describes which WDM drivers can be ported to Windows Driver Frameworks (WDF), and how to decide whether to port to Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF)."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Which Drivers Can Be Ported and Where</title>
+
+<meta name="MS-HAID" content="kmdf.which_drivers_can_be_ported"/>
+<meta name="MS-HAID" content="wdf.which_drivers_can_be_ported"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.which_drivers_can_be_ported"></a>Which Drivers Can Be Ported and Where</h1>
+</div>
+<p>This topic describes which WDM drivers can be ported to Windows Driver Frameworks (WDF), and how to decide whether to port to Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF).</p>
+<h2><a id="Which_WDM_drivers_can_I_port_to_WDF_"></a><a id="which_wdm_drivers_can_i_port_to_wdf_"></a><a id="WHICH_WDM_DRIVERS_CAN_I_PORT_TO_WDF_"></a>Which WDM drivers can I port to WDF?</h2>
+<p>Whether a particular driver can be ported to WDF depends on the following criteria:</p>
+<ul>
+<li>The operating system versions on which the driver runs</li>
+<li>The type of device that the driver supports</li>
+<li>The driver model that the driver uses</li>
+</ul>
+<p>In general, you can use KMDF or UMDF to write drivers that conform to WDM, supply entry points for the major I/O dispatch routines, and handle IRPs.</p>
+<p> For some device types, system-supplied device class and port drivers provide driver dispatch functions and call a vendor-supplied miniport driver to handle specific I/O details. These  miniport drivers are essentially callback libraries and are not supported by WDF. In addition, WDF does not support device types that use Windows Image Acquisition (WIA).</p>
+<p>You can use KMDF to create drivers that run on Windows 2000 and later. You can use UMDF version 1 to write drivers that run on Windows XP and later, and UMDF version 2 to target Windows 8.1 and later.</p>
+<p>
+For information about device and driver types that UMDF and KMDF support, see <a href="wdkgetstart.choosing_a_driver_model">Choosing a Driver Model</a>.</p>
+<h2><a id="Which_framework_should_I_port_my_WDM_driver_to__KMDF_or_UMDF_2_"></a><a id="which_framework_should_i_port_my_wdm_driver_to__kmdf_or_umdf_2_"></a><a id="WHICH_FRAMEWORK_SHOULD_I_PORT_MY_WDM_DRIVER_TO__KMDF_OR_UMDF_2_"></a>Which framework should I port my WDM driver to, KMDF or UMDF 2?</h2>
+<ol>
+<li>
+<p>Review the list of KMDF-only functionality in <a href="comparing_umdf_2_0_functionality_to_kmdf.htm">Comparing UMDF 2.0 Functionality to KMDF</a>. If your driver does not require any of these features, and you are targeting Windows 8.1 or later, open a new UMDF 2 driver template in Visual Studio.</p>
+<p>If you realize later that you need a KMDF-only feature, it's straightforward to convert your UMDF 2 driver to KMDF, as described in <a href="how_to_generate_a_umdf_driver_from_a_kmdf_driver.htm">How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)</a>.</p>
+</li>
+<li>
+<p>You can also write a <i>mode-agnostic</i> driver, meaning one that can be compiled using either KMDF or UMDF.  To write a mode-agnostic driver, start with a UMDF 2 template.  Use the DDI versioning info listed in  <a href="wdf.summary_of_wdf_callbacks_and_methods">Summary of WDF Callbacks and Methods</a> to ensure that you only call methods that are available in both KMDF and UMDF 2.  Conditionally tag any header references with the preprocessor macros described in <a href="how_to_generate_a_umdf_driver_from_a_kmdf_driver.htm">How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)</a>.  To switch your driver, you would create an empty  driver project using a Visual Studio template for the target framework, and copy your source code over.</p>
+</li>
+</ol>
+<h2><a id="related_topics"></a>Related topics</h2>
+<dl>
+<dt><a href="wdf.introduction_to_umdf">Getting Started with UMDF</a></dt>
+<dt><a href="kmdf_version_history.htm">KMDF Version History</a></dt>
+<dt><a href="umdf_version_history.htm">UMDF Version History</a></dt>
+<dt><a href="user-mode_driver_framework_frequently_asked_questions.htm">User-Mode Driver Framework Frequently Asked Questions</a></dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Which Drivers Can Be Ported and Where%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

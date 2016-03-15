@@ -1,0 +1,39 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Creating I/O Queues"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Creating I/O Queues</title>
+
+<meta name="MS-HAID" content="Ch3_DFIoPackage_aaf4e445-60d1-4e6c-a5a8-eae70ff081b2.xml"/>
+<meta name="MS-HAID" content="kmdf.creating_i_o_queues"/>
+<meta name="MS-HAID" content="wdf.creating_i_o_queues"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.creating_i_o_queues"></a>Creating I/O Queues</h1>
+</div>
+<h2><a id="ddk_creating_an_i_o_queue_df"></a><a id="DDK_CREATING_AN_I_O_QUEUE_DF"></a></h2>
+<p>Most drivers create I/O queues in their <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function. To create an I/O queue for a device, the driver calls the framework queue object's <a href="wdf.wdfioqueuecreate"><b>WdfIoQueueCreate</b></a> method (which creates a framework queue object). The driver supplies a <a href="wdf.wdf_io_queue_config"><b>WDF_IO_QUEUE_CONFIG</b></a> structure to the method. This structure contains configuration information about the queue, such as the queue's <a href="dispatching_methods_for_i_o_requests.htm">dispatching method</a> and pointers to <a href="request_handlers.htm">request handlers</a> that the framework calls when requests are available in the queue. The structure also indicates whether the queue will be <a href="using_power_managed_i_o_queues.htm">power-managed</a> and whether the driver supports zero-length buffers for the queue's I/O requests.</p>
+<p>If the driver sets the <b>DefaultQueue</b> member of the <a href="wdf.wdf_io_queue_config"><b>WDF_IO_QUEUE_CONFIG</b></a> structure to <b>TRUE</b>, the queue becomes the device's <i>default I/O queue</i>. If your driver creates a default I/O queue, the framework places all of the device's I/O requests in this queue, unless you create additional queues to receive some of the requests. A driver can obtain a handle to a device's default I/O queue by calling the <a href="wdf.wdfdevicegetdefaultqueue"><b>WdfDeviceGetDefaultQueue</b></a> method.</p>
+<p>If you want to use more than one I/O queue for a device, the driver can call <a href="wdf.wdfioqueuecreate"><b>WdfIoQueueCreate</b></a> to create as many queue objects as you need. If a driver creates multiple queues, it can call <a href="wdf.wdfdeviceconfigurerequestdispatching"><b>WdfDeviceConfigureRequestDispatching</b></a>, which instructs the framework to direct different types of requests to different queues. For example, you can specify that all read requests will be delivered to one queue and all write requests will be delivered to another queue.</p>
+<p>If your driver creates a set of I/O queues and calls <a href="wdf.wdfdeviceconfigurerequestdispatching"><b>WdfDeviceConfigureRequestDispatching</b></a> to direct each type of request that your driver can receive to a specific queue, the driver does not need a default queue.</p>
+<p>If a driver does not provide an I/O queue for requests of a particular type, and if your driver is a function driver, the framework completes requests of that type with a completion status value of STATUS_INVALID_DEVICE_REQUEST. If your driver is a filter driver and has called <a href="wdf.wdffdoinitsetfilter"><b>WdfFdoInitSetFilter</b></a>, the framework automatically forwards these requests to the next-lower driver in the driver stack. Thus, for example, a filter driver that does not process read requests does not have to provide an I/O queue that receives read requests.</p>
+<p>For examples of how drivers can use I/O queues, see <a href="example_uses_of_i_o_queues.htm">Example Uses of I/O Queues</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Creating I/O Queues%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

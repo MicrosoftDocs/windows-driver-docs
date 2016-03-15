@@ -1,0 +1,49 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This section describes how Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers starting in version 2 interact with universal serial bus (USB) devices."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>USB I/O Targets</title>
+
+<meta name="MS-HAID" content="Ch6_DFUSBPackage_d9db9ea0-124c-440c-ac2b-da5ac1da9742.xml"/>
+<meta name="MS-HAID" content="kmdf.usb_i_o_targets"/>
+<meta name="MS-HAID" content="wdf.usb_i_o_targets"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.usb_i_o_targets"></a>USB I/O Targets</h1>
+</div>
+<p>This section describes how Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers starting in version 2 interact with universal serial bus (USB) devices.</p>
+<h2><a id="ddk_using_usb_i_o_targets_df"></a><a id="DDK_USING_USB_I_O_TARGETS_DF"></a></h2>
+<p>Each USB device, and each pipe that a USB device interface supports, has a separate I/O target. Control transfers that the USB device handles are sent to the device's I/O target. I/O transfers that a specific pipe handles are sent to that pipe's I/O target.</p>
+<p>The framework communicates with a USB device's I/O target by sending USB request blocks (<a href="buses.urb"><b>URBs</b></a>). The framework provides object methods that hide the URBs from your driver so that the driver does not have to build and send them itself. If you would prefer that your driver build URBs, a KMDF driver can use an additional set of object methods that build and send URBs.</p>
+<p>For information about how to determine what type of driver you need for your USB device, see <a href="buses.winusb_considerations">Choosing a driver model for developing a USB client driver</a>.</p>
+<p>This section includes:</p>
+<dl>
+<dd>
+<p><a href="working_with_usb_devices.htm">Working with USB Devices</a></p>
+</dd>
+<dd>
+<p><a href="working_with_usb_interfaces.htm">Working with USB Interfaces</a></p>
+</dd>
+<dd>
+<p><a href="working_with_usb_pipes.htm">Working with USB Pipes</a></p>
+</dd>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20USB I/O Targets%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

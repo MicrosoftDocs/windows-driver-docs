@@ -1,0 +1,80 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Synchronizing Interrupt Code"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Synchronizing Interrupt Code</title>
+
+<meta name="MS-HAID" content="Ch8_DFTechniques_ca7c30e1-ab1c-4a24-87ff-30ab680215a7.xml"/>
+<meta name="MS-HAID" content="kmdf.synchronizing_interrupt_code"/>
+<meta name="MS-HAID" content="wdf.synchronizing_interrupt_code"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.synchronizing_interrupt_code"></a>Synchronizing Interrupt Code</h1>
+</div>
+<p>The following factors complicate driver code that handles hardware interrupts on multiprocessor systems:</p>
+<ul>
+<li>
+<p>Each time a device interrupts, it provides interrupt-specific information that is volatile because it can be overwritten the next time that the device interrupts.</p>
+</li>
+<li>
+<p>Devices interrupt at relatively high IRQLs and their interrupt service routines (ISRs) can interrupt the execution of other driver code.</p>
+</li>
+<li>
+<p>For DIRQL interrupts, the ISR must run at DIRQL while holding a driver-supplied spin lock, so that the ISR can prevent additional interrupts while it saves volatile information. The DIRQL prevents interruption by the current processor, and the spin lock prevents interruption by another processor.</p>
+</li>
+<li>
+<p>The ISR must run quickly because the device cannot interrupt while the ISR is executing. Long ISR execution times can slow the system or possibly cause data loss.</p>
+</li>
+<li>
+<p>Both the ISR and the deferred procedure call (DPC) routine must typically access a storage area in which the ISR stores the device's volatile data. These routines must synchronize with each other so that they do not access the storage area at the same time.</p>
+</li>
+</ul>
+<p>Because of all of these factors, you must use the following rules when writing driver code that handles interrupts:</p>
+<ul>
+<li>
+<p>Only the <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function accesses volatile interrupt data, such as device registers that contain interrupt information.</p>
+<p>The <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function should move the volatile data to a driver-defined interrupt data buffer that the driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function, <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> callback function, or multiple <a href="wdf.evtdpcfunc"><i>EvtDpcFunc</i></a> callback functions can access.</p>
+<p>If your driver provides <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> callback functions for its interrupt objects, the best place to store interrupt data is the interrupt object's <a href="framework_object_context_space.htm">context space</a>. The interrupt object's callback functions can access the object's context space by using the object handle that they receive.</p>
+<p>If your driver provides multiple <a href="wdf.evtdpcfunc"><i>EvtDpcFunc</i></a> callback functions for each <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function, you might store interrupt data in each DPC object's context space.</p>
+</li>
+<li>
+<p>All driver code that accesses the interrupt data buffer must be synchronized so that only one routine accesses the data at a time.</p>
+<p>For DIRQL interrupt objects, the <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function accesses this data buffer at IRQL = DIRQL  while holding the interrupt object's driver-supplied spin lock.  Therefore, all routines that access the buffer must also run at DIRQL while holding the spin lock. (Typically, the interrupt's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtdpcfunc"><i>EvtDpcFunc </i></a> callback function is the only other routine that must access the buffer.) </p>
+<p>All routines that access an interrupt data buffer, except for the <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function, must do one of the following:</p>
+<ul>
+<li>Call <a href="wdf.wdfinterruptsynchronize"><b>WdfInterruptSynchronize</b></a> to schedule an <a href="wdf.evtinterruptsynchronize"><i>EvtInterruptSynchronize</i></a> callback function that accesses the interrupt data buffer.</li>
+<li>Place code that accesses the interrupt data buffer between calls to <a href="wdf.wdfinterruptacquirelock"><b>WdfInterruptAcquireLock</b></a>  and <a href="wdf.wdfinterruptreleaselock"><b>WdfInterruptReleaseLock</b></a>.</li>
+</ul>
+<p>Both of these techniques allow the <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtdpcfunc"><i>EvtDpcFunc</i></a> function to access interrupt data at DIRQL while holding the interrupt's spin lock. The DIRQL prevents interruption by the current processor, and the spin lock prevents interruption by another processor.</p>
+<p>If your device supports multiple interrupt vectors or messages, and if you want to synchronize your driver's handling of these interrupts, you can assign a single spin lock to multiple DIRQL interrupt objects. The framework determines the highest DIRQL of the set of interrupts, and it always acquires the spin lock at that DIRQL so that the synchronized code cannot be interrupted by any interrupt vectors or messages in the set.</p>
+<p>For <a href="supporting_passive_level_interrupts.htm">passive-level interrupt objects</a>, the  framework acquires the passive-level interrupt lock before calling the driver's <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function at IRQL =  PASSIVE_LEVEL. As a result, all routines that access the buffer must either acquire the interrupt lock or internally synchronize buffer access. Typically, the interrupt's <a href="wdf.evtinterruptworkitem"><i>EvtInterruptWorkItem</i></a> callback function is the only other routine that accesses the buffer. For information about acquiring the interrupt lock from an <i>EvtInterruptWorkItem</i> callback function, see  the Remarks section of that page.</p>
+<p>You can also synchronize your driver's handling of multiple interrupt vectors by assigning a single wait lock to multiple passive-level interrupt objects.</p>
+</li>
+<li>
+<p>If some of your code that handles DIRQL interrupts must run at IRQL = PASSIVE_LEVEL, your <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtdpcfunc"><i>EvtDpcFunc</i></a> callback function can create one or more <a href="using_framework_work_items.htm">work items</a> so that the code will run as <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback functions.</p>
+<p>Alternatively, in KMDF versions 1.11 and later, the driver can request an interrupt work item by calling  <a href="wdf.wdfinterruptqueueworkitemforisr"><b>WdfInterruptQueueWorkItemForIsr</b></a>. (Recall that a driver's <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function can call <b>WdfInterruptQueueWorkItemForIsr</b> or <a href="wdf.wdfinterruptqueuedpcforisr"><b>WdfInterruptQueueDpcForIsr</b></a>, but not both.)</p>
+</li>
+<li>
+<p>If it is important to synchronize a driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> and <a href="wdf.evtdpcfunc"><i>EvtDpcFunc</i></a> callback functions with each other and with other callback functions that are associated with a device, your driver can set the <b>AutomaticSerialization</b> member to <b>TRUE</b> in the interrupt's <a href="wdf.wdf_interrupt_config"><b>WDF_INTERRUPT_CONFIG</b></a> structure and the DPC object's <a href="wdf.wdf_dpc_config"><b>WDF_DPC_CONFIG</b></a> structure. Alternatively, the driver can use <a href="using_framework_locks.htm#framework_spin_locks">framework spin locks</a>. (Setting the <b>AutomaticSerialization</b> member to <b>TRUE</b> does not synchronize an <a href="wdf.evtinterruptisr"><i>EvtInterruptIsr</i></a> callback function with other callback functions. Use <a href="wdf.wdfinterruptsynchronize"><b>WdfInterruptSynchronize</b></a> or <a href="wdf.wdfinterruptacquirelock"><b>WdfInterruptAcquireLock</b></a> to synchronize an <i>EvtInterruptIsr</i> callback function, as described previously in this topic.)</p>
+</li>
+</ul>
+<p>For more information about synchronizing driver routines, see <a href="synchronization_techniques_for_wdf_drivers.htm">Synchronization Techniques for Framework-Based Drivers</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Synchronizing Interrupt Code%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

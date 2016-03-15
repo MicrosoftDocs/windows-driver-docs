@@ -1,0 +1,109 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Using the UMDF Co-installer"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using the UMDF Co-installer</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_0f5e1d92-977e-44f0-a54c-a9a7090fcbfd.xml"/>
+<meta name="MS-HAID" content="umdf.using_the_umdf_co_installer"/>
+<meta name="MS-HAID" content="wdf.using_the_umdf_co_installer"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_the_umdf_co_installer"></a>Using the UMDF Co-installer</h1>
+</div>
+<p>A co-installer updates the framework version stored on the machine and processes framework-specific INF file sections. This topic describes the two UMDF co-installers and when you need to include one with your <a href="https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_package">driver installation package</a> or reference a co-installer in your INF file.</p>
+<h2><a id="Getting_the_Co-installer_Package"></a><a id="getting_the_co-installer_package"></a><a id="GETTING_THE_CO-INSTALLER_PACKAGE"></a>Getting the Co-installer Package</h2>
+<p>In Windows 8.1, the Microsoft-supplied redistributable framework updates are included as part of the  Windows Driver Kit (WDK). </p>
+<p>For a complete list of the contents of the co-installer directory, see <a href="installation_components_for_kmdf_drivers.htm">Installation Components for KMDF Drivers</a>.</p>
+<p>  Among other components, the co-installer directory contains an <i>update co-installer</i>, called WUDFUpdate_<i>MMmmm</i>.dll, where <i>MM</i> is the major version number, and <i>mmm</i> is the minor version number.</p>
+<p> The update co-installer updates the UMDF framework version that is on the computer.    For example, if the computer has UMDF version 1.9 and the co-installer contains version 1.11, the co-installer updates the computer's framework version to 1.11. </p>
+<p>The operating system includes another co-installer, called the <i>configuration co-installer</i>, or WudfCoinstaller.dll. The configuration co-installer processes the UMDF-specific sections of the driver's INF file and makes any necessary updates to the registry. </p>
+<h2><a id="Referencing_Co-installers_from_your_INF_File"></a><a id="referencing_co-installers_from_your_inf_file"></a><a id="REFERENCING_CO-INSTALLERS_FROM_YOUR_INF_FILE"></a>Referencing Co-installers from your INF File</h2>
+<p>If you are writing a UMDF 2.0 driver for Windows 8.1, your INF file must reference the configuration co-installer. Because the configuration co-installer is included in the operating system, you do not need to redistribute it.</p>
+<p>If you are writing a UMDF 1.11 driver that targets operating systems prior to Windows 8.1, you must ensure that version 1.11 of the framework is installed on machines that use your driver. Here are three ways to do this:</p>
+<ul>
+<li>
+<p>Reference the update co-installer in your INF file, and include the update co-installer in your <a href="https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_package">driver installation package</a>. When the operating system installs your driver, it runs the co-installer. If your driver will be distributed via Windows Update, you must choose this option.</p>
+</li>
+<li>
+<p>Redistribute the relevant MSU package (for example umdf-1.11-Win-6.0.msu) along with a setup application that calls it.  You can find a sample of such an application in the  src\general\wdkinstall subdirectory of your WDK installation. You might choose this option if you are writing a setup program that ships with the device and must be run before the device can be used. If you choose this option, your INF file must reference the configuration co-installer.</p>
+</li>
+<li>
+<p>Rely on Windows Update to install the required framework version on machines that use your driver. Starting with version 1.11 of the framework, new versions of UMDF are distributed via Windows Update.  If you choose this option, your INF file must reference the configuration co-installer.</p>
+</li>
+</ul>
+<p>In your INF file, you must always reference  either the update co-installer or the configuration co-installer. However, referencing both co-installers in the INF will lead to installation errors. </p>
+<h2><a id="INF_File_Sections_for_the_Co-installer"></a><a id="inf_file_sections_for_the_co-installer"></a><a id="INF_FILE_SECTIONS_FOR_THE_CO-INSTALLER"></a>INF File Sections for the Co-installer</h2>
+<p>Your driver's INF file must include an <a href="devinst.inf_ddinstall_coinstallers_section"><b>INF DDInstall.CoInstallers section</b></a>. If you redistribute the update co-installer, your  <b>DDInstall.CoInstallers</b> section must include both an <a href="devinst.inf_addreg_directive"><b>INF AddReg directive</b></a> and an <a href="devinst.inf_copyfiles_directive"><b>INF CopyFiles directive</b></a>, as the following example shows. </p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[MyDriver_Install.CoInstallers]
+AddReg = MyDriver_Install.CoInstallers_AddReg
+CopyFiles = MyDriver_CoInstallers_CopyFiles</pre>
+</td>
+</tr>
+</table></span></div>
+<p>The INF <b>AddReg</b> directive  identifies an INF section that creates a <b>CoInstallers32</b> registry entry.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[MyDriver_Install.CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WudfUpdate_01011.dll"</pre>
+</td>
+</tr>
+</table></span></div>
+<p></p>
+<p>The INF <b>CopyFiles</b> directive identifies an INF section that copies the co-installer from the installation device to the system device.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[MyDriver_CoInstallers_CopyFiles]
+WudfUpdate_01011.dll</pre>
+</td>
+</tr>
+</table></span></div>
+<p>If you redistribute an MSU package, your <b>DDInstall.CoInstallers</b> section must  specify an <b>AddReg</b> directive  that references the configuration co-installer.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>[Echo_Install.NT.CoInstallers]
+AddReg=CoInstallers_AddReg
+[CoInstaller.AddReg]
+HKR,,CoInstallers32,0x00010000,WudfCoinstaller.dll</pre>
+</td>
+</tr>
+</table></span></div>
+<p>Your driver's INF file must always contain a <b>DDInstall.Wdf</b> section that the co-installer reads after it has been installed.  For information about directives that your driver can specify in <b>DDInstall.Wdf</b>, see <a href="specifying_wdf_directives_in_inf_files.htm">Specifying WDF Directives in INF Files</a>.</p>
+<p>You can avoid creating multiple INF files for multiple versions of the framework by using INX files and the <a href="devtest.stampinf">Stampinf</a> tool. For more information about INX files, see <a href="using_inx_files_to_create_inf_files.htm">Using INX Files to Create INF Files</a>. </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using the UMDF Co-installer%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

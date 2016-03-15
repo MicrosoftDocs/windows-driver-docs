@@ -1,0 +1,304 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Driver Access to Hardware"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Driver Access to Hardware</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_69f4ad8b-d518-4c60-823b-2bc12e979360.xml"/>
+<meta name="MS-HAID" content="kmdf.driver_access_to_hardware"/>
+<meta name="MS-HAID" content="wdf.driver_access_to_hardware"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.driver_access_to_hardware"></a>Driver Access to Hardware</h1>
+</div>
+<p>The following table lists all of the event callback functions that the framework device object defines, in alphabetical order. The table shows you the callback functions in which your driver can access the hardware that the callback function's WDFDEVICE handle represents. You can access the hardware because the device is in its working (D0) state.</p>
+<table>
+<tr>
+<th>Event callbacks functionsfor framework device objects</th>
+<th>Is hardware accessible?</th>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicearmwakefroms0"><i>EvtDeviceArmWakeFromS0</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicearmwakefromsx"><i>EvtDeviceArmWakeFromSx</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicearmwakefromsxwithreason"><i>EvtDeviceArmWakeFromSxWithReason</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicedisablewakeatbus"><i>EvtDeviceDisableWakeAtBus</i></a></p>
+</td>
+<td>
+<p>Parent bus might be at D0. The device might be at D0.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicedisarmwakefroms0"><i>EvtDeviceDisarmWakeFromS0</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicedisarmwakefromsx"><i>EvtDeviceDisarmWakeFromSx</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceeject"><i>EvtDeviceEject</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceenablewakeatbus"><i>EvtDeviceEnableWakeAtBus</i></a></p>
+</td>
+<td>
+<p>Parent bus is at D0, but the device might not be.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicefilecreate"><i>EvtDeviceFileCreate</i></a></p>
+</td>
+<td>
+<p>Maybe</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicefilteraddresourcerequirements"><i>EvtDeviceFilterAddResourceRequirements</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicefilterremoveresourcerequirements"><i>EvtDeviceFilterRemoveResourceRequirements</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicerelationsquery"><i>EvtDeviceRelationsQuery</i></a></p>
+</td>
+<td>
+<p>Yes, but the device might be in a sleeping state.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceremoveaddedresources"><i>EvtDeviceRemoveAddedResources</i></a></p>
+</td>
+<td>
+<p>Yes, but resources have not been assigned to the device.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceresourcerequirementsquery"><i>EvtDeviceResourceRequirementsQuery</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceresourcesquery"><i>EvtDeviceResourcesQuery</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceselfmanagediocleanup"><i>EvtDeviceSelfManagedIoCleanup</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceselfmanagedioflush"><i>EvtDeviceSelfManagedIoFlush</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceselfmanagedioinit"><i>EvtDeviceSelfManagedIoInit</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceselfmanagediorestart"><i>EvtDeviceSelfManagedIoRestart</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceselfmanagediosuspend"><i>EvtDeviceSelfManagedIoSuspend</i></a></p>
+</td>
+<td>
+<p>No, if device has been surprise-removed; otherwise, yes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicesetlock"><i>EvtDeviceSetLock</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicesurpriseremoval"><i>EvtDeviceSurpriseRemoval</i></a></p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdeviceusagenotification"><i>EvtDeviceUsageNotification</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicewakefroms0triggered"><i>EvtDeviceWakeFromS0Triggered</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicewakefromsxtriggered"><i>EvtDeviceWakeFromSxTriggered</i></a></p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicewdmirppreprocess"><i>EvtDeviceWdmIrpPreprocess</i></a></p>
+</td>
+<td>
+<p>Depends on the IRP.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicepnpstatechange"><i>EvtDevicePnpStateChange</i></a></p>
+</td>
+<td>
+<p>Depends on the state.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicepowerpolicystatechange"><i>EvtDevicePowerPolicyStateChange</i></a></p>
+</td>
+<td>
+<p>Depends on the state.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.evtdevicepowerstatechange"><i>EvtDevicePowerStateChange</i></a></p>
+</td>
+<td>
+<p>Depends on the state.</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Driver Access to Hardware%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

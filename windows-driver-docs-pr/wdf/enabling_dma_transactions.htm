@@ -1,0 +1,70 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Enabling DMA Transactions"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Enabling DMA Transactions</title>
+
+<meta name="MS-HAID" content="DFDmaPackage_97e07000-acf7-4f76-b11d-8f1f78bdd015.xml"/>
+<meta name="MS-HAID" content="kmdf.enabling_dma_transactions"/>
+<meta name="MS-HAID" content="wdf.enabling_dma_transactions"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.enabling_dma_transactions"></a>Enabling DMA Transactions</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<h2><a id="ddk_enabling_dma_transactions_df"></a><a id="DDK_ENABLING_DMA_TRANSACTIONS_DF"></a></h2>
+<p>If your framework-based driver handles I/O operations for DMA devices, your driver must enable the framework's DMA features for each DMA device. To enable these features, your driver's <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> or <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback function must:</p>
+<ol>
+<li>
+<p>Call <a href="wdf.wdfdevicesetalignmentrequirement"><b>WdfDeviceSetAlignmentRequirement</b></a> to specify the device's requirement for buffer alignment.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfdmaenablercreate"><b>WdfDmaEnablerCreate</b></a> to specify the type of DMA operations (single  packet or scatter/gather) and the maximum transfer size that the device supports. Starting in KMDF version 1.11, the framework supports <a href="supporting_system-mode_dma.htm">system-mode DMA</a> on System on a Chip (SoC)–based systems running on Windows 8 or later versions of the operating system.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfdmaenablersetmaximumscattergatherelements"><b>WdfDmaEnablerSetMaximumScatterGatherElements</b></a> to specify the maximum number of elements that the device can support in a scatter/gather list, if the device supports scatter/gather operations.</p>
+</li>
+</ol>
+<p>The  following code example from the <a href="http://go.microsoft.com/fwlink/p/?linkid=256157">PLX9x5x</a> sample illustrates how to enable the framework's DMA features. This code appears in the <i>Init.c file</i>.</p>
+<div class="code"><span codelanguage=""><table>
+<tr>
+<th></th>
+</tr>
+<tr>
+<td>
+<pre>WDF_DMA_ENABLER_CONFIG   dmaConfig;
+
+WdfDeviceSetAlignmentRequirement( DevExt-&gt;Device, PCI9656_DTE_ALIGNMENT_16 );
+WDF_DMA_ENABLER_CONFIG_INIT( &amp;dmaConfig,
+                             WdfDmaProfileScatterGather64Duplex,
+                             DevExt-&gt;MaximumTransferLength );
+status = WdfDmaEnablerCreate( DevExt-&gt;Device,
+                              &amp;dmaConfig, 
+                              WDF_NO_OBJECT_ATTRIBUTES,
+                              &amp;DevExt-&gt;DmaEnabler );
+
+</pre>
+</td>
+</tr>
+</table></span></div>
+<p>If your driver requires common buffers, the driver's <i>EvtDriverDeviceAdd </i>callback function typically sets them up. For more information about these buffers, see <a href="using_common_buffers.htm">Using Common Buffers</a>.</p>
+<p>After a driver has called <b>WdfDmaEnablerCreate</b>, it can call <a href="wdf.wdfdmaenablerwdmgetdmaadapter"><b>WdfDmaEnablerWdmGetDmaAdapter</b></a> to obtain pointers to WDM <a href="kernel.dma_adapter"><b>DMA_ADAPTER</b></a> structures that the framework creates for the device's input and output directions. However, most framework-based drivers do not need to access these structures.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Enabling DMA Transactions%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

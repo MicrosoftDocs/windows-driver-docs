@@ -1,0 +1,58 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="A Device Enters a Low-Power State"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>A Device Enters a Low-Power State</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_c6169f53-e3d1-4ff7-97e5-7bb092c0aa82.xml"/>
+<meta name="MS-HAID" content="umdf.a_device_enters_a_low_power_state"/>
+<meta name="MS-HAID" content="wdf.a_device_enters_a_low_power_state_umdf"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.a_device_enters_a_low_power_state_umdf"></a>A Device Enters a Low-Power State</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>A device leaves its working (D0) state and enters a low-power state if one of the following occurs:</p>
+<ul>
+<li>
+<p>The device is idle (that is, not being accessed) and is capable of entering a low-power idle state while the system remains in its working (S0) state.</p>
+</li>
+<li>
+<p>The system's power state has changed from its working (S0) state to a low-power state. (Drivers can call <a href="wdf.iwdfdevice2_getsystempoweraction"><b>IWDFDevice2::GetSystemPowerAction</b></a> to determine the reason for the change in the system's power state.)</p>
+</li>
+</ul>
+<p>For each UMDF-based function and filter driver that supports the device, the framework does the following, in sequence, one driver at a time, starting with the driver that is highest in the driver stack:</p>
+<ol>
+<li>
+<p>If the driver is using self-managed I/O, the framework calls the driver's <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend"><b>IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend</b></a> callback function.</p>
+</li>
+<li>
+<p>The framework stops all of the device's power-managed I/O queues and calls their <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediostop"><b>IPnpCallbackSelfManagedIo::OnSelfManagedIoStop</b></a> callback functions (if they exist).</p>
+</li>
+<li>
+<p>If the driver is the device's power policy owner, the framework calls its <a href="wdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0"><b>IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0</b></a> or <a href="wdf.ipowerpolicycallbackwakefromsx_onarmwakefromsx"><b>IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx</b></a> callback function.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.ipnpcallback_ond0exit"><b>IPnpCallback::OnD0Exit</b></a> callback function (if it exists).</p>
+</li>
+</ol>
+<p>To see a diagram that shows these steps, see the orderly removal figure in <a href="a_user_unplugs_a_device.htm">A User Unplugs a Device</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20A Device Enters a Low-Power State%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

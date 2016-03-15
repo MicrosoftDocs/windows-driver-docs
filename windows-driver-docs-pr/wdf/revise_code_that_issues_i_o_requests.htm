@@ -1,0 +1,94 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Revise Code That Issues I/O Requests"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Revise Code That Issues I/O Requests</title>
+
+<meta name="MS-HAID" content="kmdf.revise_code_that_issues_i_o_requests"/>
+<meta name="MS-HAID" content="wdf.revise_code_that_issues_i_o_requests"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.revise_code_that_issues_i_o_requests"></a>Revise Code That Issues I/O Requests</h1>
+</div>
+<p>WDF defines several methods that a driver can use to create and format I/O requests. The following table summarizes these methods:</p>
+<table>
+<tr>
+<th>KMDF method</th>
+<th>Action</th>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetformatrequestforioctl"><b>WdfIoTargetFormatRequestForIoctl</b></a></p>
+<p><a href="wdf.wdfiotargetformatrequestforinternalioctl"><b>WdfIoTargetFormatRequestForInternalIoctl</b></a></p>
+<p><a href="wdf.wdfiotargetformatrequestforinternalioctlothers"><b>WdfIoTargetFormatRequestForInternalIoctlOthers</b></a></p>
+</td>
+<td>
+       Similar to manually formatting the next I/O stack location.</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetformatrequestforread"><b>WdfIoTargetFormatRequestForRead</b></a></p>
+<p><a href="wdf.wdfiotargetformatrequestforwrite"><b>WdfIoTargetFormatRequestForWrite</b></a></p>
+</td>
+<td>
+       Similar to <a href="kernel.iobuildasynchronousfsdrequest"><b>IoBuildAsynchronousFsdRequest</b></a>. </td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetsendioctlsynchronously"><b>WdfIoTargetSendIoctlSynchronously</b></a></p>
+<p><a href="wdf.wdfiotargetsendinternalioctlsynchronously"><b>WdfIoTargetSendInternalIoctlSynchronously</b></a></p>
+<p><a href="wdf.wdfiotargetsendinternalioctlotherssynchronously"><b>WdfIoTargetSendInternalIoctlOthersSynchronously</b></a></p>
+</td>
+<td>
+       Similar to <a href="kernel.iobuilddeviceiocontrolrequest"><b>IoBuildDeviceIoControlRequest</b></a>, followed by <a href="kernel.iocalldriver"><b>IoCallDriver</b></a>.
+
+      </td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfiotargetsendreadsynchronously"><b>WdfIoTargetSendReadSynchronously</b></a></p>
+<p><a href="wdf.wdfiotargetsendwritesynchronously"><b>WdfIoTargetSendWriteSynchronously</b></a></p>
+</td>
+<td>Similar to <a href="kernel.iobuildsynchronousfsdrequest"><b>IoBuildSynchronousFsdRequest</b></a>, followed by <a href="kernel.iocalldriver"><b>IoCallDriver</b></a>.</td>
+</tr>
+<tr>
+<td>
+<p><a href="wdf.wdfrequestcancelsentrequest"><b>WdfRequestCancelSentRequest</b></a></p>
+</td>
+<td>Similar to <a href="kernel.iocancelirp"><b>IoCancelIrp</b></a> for a PIRP that was sent with <a href="kernel.iocalldriver"><b>IoCallDriver</b></a>. The framework provides locks to ensure that the PIRP is not completed or freed between the calls to <b>IoCallDriver</b> and <b>IoCancelIrp</b>. </td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestcreate"><b>WdfRequestCreate</b></a></td>
+<td>Similar to <a href="kernel.ioallocateirp"><b>IoAllocateIrp</b></a>. Creates a new WDFREQUEST object, sets attributes, and returns handle to caller. </td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestformatrequestusingcurrenttype"><b>WdfRequestFormatRequestUsingCurrentType</b></a></td>
+<td>Similar to <a href="kernel.ioforwardirpsynchronously"><b>IoForwardIrpSynchronously</b></a> but does not call <a href="kernel.iocalldriver"><b>IoCallDriver</b></a>; driver must call <a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a>. </td>
+</tr>
+<tr>
+<td><a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a></td>
+<td>Similar to <a href="kernel.ioforwardirpsynchronously"><b>IoForwardIrpSynchronously</b></a> but does not call <a href="kernel.iocalldriver"><b>IoCallDriver</b></a>; driver must call <a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a>. </td>
+</tr>
+</table>
+<p> </p>
+<p>To send a request to another device stack, a WDF driver uses a remote I/O target.  For  information about how to initialize a remote I/O target, see <a href="initializing_a_general_i_o_target.htm">Initializing a General I/O Target</a>.</p>
+<p>To get the completion status for an asynchronous request or for any request that is sent by calling <a href="wdf.wdfrequestsend"><b>WdfRequestSend</b></a>, the driver calls <a href="wdf.wdfrequestgetstatus"><b>WdfRequestGetStatus</b></a>.  For a synchronous request, it can retrieve status immediately. For an asynchronous request, the driver’s I/O completion callback typically retrieves status. For more information about sending requests synchronously or asynchronously, see <a href="sending_i_o_requests_to_general_i_o_targets.htm">Sending I/O Requests to General I/O Targets</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Revise Code That Issues I/O Requests%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

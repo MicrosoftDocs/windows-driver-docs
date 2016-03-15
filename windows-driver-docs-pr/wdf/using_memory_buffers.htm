@@ -1,0 +1,71 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Using Memory Buffers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using Memory Buffers</title>
+
+<meta name="MS-HAID" content="Ch8_DFTechniques_442748e8-e49e-4408-976a-6ed1ae19b8d2.xml"/>
+<meta name="MS-HAID" content="kmdf.using_memory_buffers"/>
+<meta name="MS-HAID" content="wdf.using_memory_buffers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_memory_buffers"></a>Using Memory Buffers</h1>
+</div>
+<h2><a id="ddk_referencing_memory_df"></a><a id="DDK_REFERENCING_MEMORY_DF"></a></h2>
+<p>Drivers typically use memory buffers to pass data to and from the framework and other drivers or to store information locally. This topic describes <a href="#using_framework_memory_objects">framework memory objects</a>, <a href="#using_lookaside_lists">lookaside lists</a>, <a href="#using_mdls">MDLs</a>, and <a href="#allocating_local_buffers">local buffers</a>.</p>
+<h3><a id="using_framework_memory_objects"></a><a id="USING_FRAMEWORK_MEMORY_OBJECTS"></a>
+      Using Framework Memory Objects </h3>
+<p>The framework uses <i>memory objects</i> to describe the memory buffers that a driver receives from and passes to the framework. Each framework memory object represents one buffer.</p>
+<p>To create a memory object, your driver calls one of the following object methods:</p>
+<ul>
+<li>
+<p><a href="wdf.wdfmemorycreate"><b>WdfMemoryCreate</b></a>, which creates a memory object and allocates a memory buffer of a specified size.</p>
+</li>
+<li>
+<p><a href="wdf.wdfmemorycreatepreallocated"><b>WdfMemoryCreatePreallocated</b></a>, which creates a memory object for a preallocated buffer. </p>
+</li>
+<li>
+<p><a href="wdf.wdfmemorycreatefromlookaside"><b>WdfMemoryCreateFromLookaside</b></a>, which creates a memory buffer from a <a href="#using_lookaside_lists">lookaside list</a>.</p>
+</li>
+</ul>
+<p>To obtain a memory object that represents a received I/O request's buffers, your driver calls  <a href="wdf.wdfrequestretrieveinputmemory"><b>WdfRequestRetrieveInputMemory</b></a> and <a href="wdf.wdfrequestretrieveoutputmemory"><b>WdfRequestRetrieveOutputMemory</b></a>. For more information about retrieving an I/O request's buffers, see <a href="wdf.accessing_data_buffers_in_kmdf_drivers">Accessing Data Buffers in Framework-Based Drivers</a>.</p>
+<p>To obtain the address and size of a memory object's buffer, your driver calls <a href="wdf.wdfmemorygetbuffer"><b>WdfMemoryGetBuffer</b></a>.</p>
+<p>To move data into or out of a memory object's buffer, your driver  calls either  <a href="wdf.wdfmemorycopyfrombuffer"><b>WdfMemoryCopyFromBuffer</b></a> or <a href="wdf.wdfmemorycopytobuffer"><b>WdfMemoryCopyToBuffer</b></a>. These object methods check the source and destination sizes and prevent buffer overrun errors.</p>
+<p>If your driver creates a memory object by calling <a href="wdf.wdfmemorycreatepreallocated"><b>WdfMemoryCreatePreallocated</b></a>, it can subsequently assign a different buffer to the memory object by calling <a href="wdf.wdfmemoryassignbuffer"><b>WdfMemoryAssignBuffer</b></a>.</p>
+<p>When a driver sends an I/O request to an <a href="using_i_o_targets.htm">I/O target</a>, it typically passes an input or output buffer to a <a href="wdf.wdf_i_o_target_object_reference">framework I/O target object method</a>. The driver specifies the buffer by either passing a <a href="wdf.wdf_memory_descriptor"><b>WDF_MEMORY_DESCRIPTOR</b></a> structure that describes the buffer or by passing a memory object handle. (I/O target object methods that send I/O requests synchronously require a <b>WDF_MEMORY_DESCRIPTOR</b> structure, and methods that send I/O requests asynchronously require a memory object handle.)</p>
+<p>For information about when a memory buffer is valid, see <a href="memory_buffer_life_cycle.htm">Memory Buffer Life Cycle</a>.</p>
+<h3><a id="using_lookaside_lists"></a><a id="USING_LOOKASIDE_LISTS"></a>
+      Using Lookaside Lists</h3>
+<p>If your driver will require many buffers of approximately the same size, it should allocate them from a <i>lookaside list</i>. The driver creates a lookaside list by calling <a href="wdf.wdflookasidelistcreate"><b>WdfLookasideListCreate</b></a>. Subsequently, the driver can obtain buffers from the lookaside list by calling <a href="wdf.wdfmemorycreatefromlookaside"><b>WdfMemoryCreateFromLookaside</b></a>. </p>
+<p>Each time the driver calls <a href="wdf.wdfmemorycreatefromlookaside"><b>WdfMemoryCreateFromLookaside</b></a>, the framework creates a memory object, obtains a buffer from the lookaside list, and assigns the buffer to the object. When the driver has finished using one of these memory objects it calls <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a>, which deletes the memory object and returns the buffer space to the lookaside list.</p>
+<p>The operating system manages the memory resources that are assigned to the lookaside list. If the driver requests a buffer from the lookaside list when none are available, such as the first time that the driver calls <a href="wdf.wdfmemorycreatefromlookaside"><b>WdfMemoryCreateFromLookaside</b></a>, the system allocates a buffer and assigns it to the list. When the driver calls <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> (and the buffer space is returned to the lookaside list), the system keeps the now unassigned buffer in the list until the driver needs it again. The system increases the list's size as necessary; for example, drivers that more frequently request buffers receive larger lookaside lists. On the other hand, the system might reduce the number of buffers in the list if the driver is not using them all.</p>
+<h3><a id="using_mdls"></a><a id="USING_MDLS"></a>
+      Using MDLs</h3>
+<p>Some drivers use memory descriptor lists (MDLs) to describe buffers. For example, a driver for a direct memory access (DMA) device must pass a MDL to the <a href="wdf.wdfdmatransactioninitialize"><b>WdfDmaTransactionInitialize</b></a> method, if it calls that method.</p>
+<p>A driver that uses MDLs can obtain an MDL that represents a received I/O request's buffers by calling <a href="wdf.wdfrequestretrieveinputwdmmdl"><b>WdfRequestRetrieveInputWdmMdl</b></a> and <a href="wdf.wdfrequestretrieveoutputwdmmdl"><b>WdfRequestRetrieveOutputWdmMdl</b></a>.</p>
+<p>Most framework-based drivers do not use MDLs.</p>
+<h3><a id="allocating_local_buffers"></a><a id="ALLOCATING_LOCAL_BUFFERS"></a>
+      Allocating Local Buffers</h3>
+<p>A driver that requires local, internal buffer space that it will not pass to the framework does not have to create memory objects to represent the buffers. The driver can call <a href="kernel.exallocatepoolwithtag"><b>ExAllocatePoolWithTag</b></a> to allocate internal buffers. When the driver has finished using the buffer, it must call <a href="kernel.exfreepoolwithtag"><b>ExFreePoolWithTag</b></a>.</p>
+<p>However, drivers can also use memory objects for local buffers. An advantage to using memory buffers, instead of calling <a href="kernel.exallocatepoolwithtag"><b>ExAllocatePoolWithTag</b></a>, is that the framework automatically deletes memory objects and their buffers when each object's parent object is deleted. </p>
+<h3><a id="aligning_buffers"></a><a id="ALIGNING_BUFFERS"></a>Aligning Buffers</h3>
+<p>Your driver can use the <a href="wdf.wdf_align_size_up"><b>WDF_ALIGN_SIZE_UP</b></a> or <a href="wdf.wdf_align_size_down"><b>WDF_ALIGN_SIZE_DOWN</b></a> function to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using Memory Buffers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

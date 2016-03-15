@@ -1,0 +1,52 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="In this topic, you'll learn about the naming conventions for the file names of the Kernel-Mode Driver Framework (KMDF) library and the User-Mode Driver Framework (UMDF) library."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Framework Library Versioning</title>
+
+<meta name="MS-HAID" content="Ch0_DFArchOverview_7682c339-92b6-4b94-9fc5-3226e4318a65.xml"/>
+<meta name="MS-HAID" content="kmdf.framework_library_versions"/>
+<meta name="MS-HAID" content="kmdf.framework_library_versioning"/>
+<meta name="MS-HAID" content="wdf.framework_library_versioning"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.framework_library_versioning"></a>Framework Library Versioning</h1>
+</div>
+<p>In this topic, you'll learn about the naming conventions for the file names of the Kernel-Mode Driver Framework (KMDF) library and the User-Mode Driver Framework (UMDF) library.</p>
+<h2><a id="KMDF"></a><a id="kmdf"></a>KMDF</h2>
+<p>A major version number and a minor version number are assigned to each version of the KMDF library. The library's file name contains the major version number. The file name's format is:</p>
+<dl>
+<dd>
+<p><b>Wdf</b>&lt;<i>MajorVersionNumber</i>&gt;<b>000.sys</b></p>
+</dd>
+</dl>
+<p>The major version number uses two characters. For example, the file name for version 1.0 of the library is <i>Wdf01000.sys</i>. Versions 1.9, 1.11, and so on are also named <i>Wdf01000.sys</i>, and each new minor version of the library file overwrites the previous version of the file.</p>
+<p>If you built your driver using a version of the KMDF library that is more recent than the version of the framework that is on the system, then the latter must be updated. For  information about updating the framework library, see <a href="installation_components_for_kmdf_drivers.htm">Redistributable Framework Components</a>.</p>
+<p>(Note that the framework co-installer's file name includes both the major and minor version numbers. For more information about co-installer file names, see <a href="installing_the_framework_s_co_installer.htm">Using the KMDF Co-installer</a>.) </p>
+<p>When you build your driver, the MSBuild utility links the driver with a stub file that contains the version number of the library that the MSBuild utility used. When the operating system loads your driver, the framework's loader checks the version information in your driver's stub to determine if the driver will run with the version of the framework library that is on the system. </p>
+<p>To determine the version of the library that your driver is running with, the driver can call <a href="wdf.wdfdriverisversionavailable"><b>WdfDriverIsVersionAvailable</b></a> or <a href="wdf.wdfdriverretrieveversionstring"><b>WdfDriverRetrieveVersionString</b></a>.</p>
+<p>For information about the release history of the KMDF library, see <a href="kmdf_version_history.htm">KMDF Version History</a>.</p>
+<h2><a id="UMDF"></a><a id="umdf"></a>UMDF</h2>
+<p>As with KMDF,  the major version number of the UMDF library uses  two characters. However, the major version number only appears in the UMDF library file name starting with UMDF version 2.0.</p>
+<p>For UMDF version 2.0, the file name of the UMDF library is <i>Wudfx02000.dll</i>.</p>
+<p></p>
+<p>For UMDF version 1.<i>x</i>, the file name of the UMDF library is <i>Wudfx.dll</i>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Framework Library Versioning%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

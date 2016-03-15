@@ -1,0 +1,79 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Working with USB Interfaces in UMDF 1.x Drivers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Working with USB Interfaces in UMDF 1.x Drivers</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_694f2585-3310-438c-a4ba-dc3736a46f8f.xml"/>
+<meta name="MS-HAID" content="umdf.working_with_usb_interfaces_in_umdf"/>
+<meta name="MS-HAID" content="wdf.working_with_usb_interfaces_in_umdf"/>
+<meta name="MS-HAID" content="wdf.working_with_usb_interfaces_in_umdf_1_x_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.working_with_usb_interfaces_in_umdf_1_x_drivers"></a>Working with USB Interfaces in UMDF 1.x Drivers</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>The framework represents each USB interface as a framework USB interface object. When a UMDF driver creates a framework USB device object, the framework creates a framework USB interface object for each USB interface that the device supports. </p>
+<p>Most USB devices have only one interface, and the interface has only one alternative setting. Drivers for such devices typically do not need to use the object methods that the framework's USB interface object defines.</p>
+<p>If a UMDF driver supports USB devices that provide multiple interfaces or alternate settings, interface object methods enable the driver to:</p>
+<ul>
+<li>
+<p><a href="wdf.working_with_usb_interfaces_in_umdf#obtaining_umdf-usb_interface_information#obtaining_umdf-usb_interface_information">Obtain interface information</a>. </p>
+</li>
+<li>
+<p><a href="wdf.working_with_usb_interfaces_in_umdf#selecting_an_alternate_setting_for_a_umdf-usb_interface#selecting_an_alternate_setting_for_a_umdf-usb_interface">Select an alternate setting for a USB interface</a>. </p>
+</li>
+</ul>
+<h3><a id="Obtaining_UMDF-USB_Interface_Information"></a><a id="obtaining_umdf-usb_interface_information"></a><a id="OBTAINING_UMDF-USB_INTERFACE_INFORMATION"></a>Obtaining UMDF-USB Interface Information</h3>
+<p>After a UMDF driver has called the <a href="wdf.iwdfusbtargetfactory_createusbtargetdevice"><b>IWDFUsbTargetFactory::CreateUsbTargetDevice</b></a> method to create a UMDF-USB target device object, the driver can call the <a href="wdf.iwdfusbtargetdevice_getnuminterfaces"><b>IWDFUsbTargetDevice::GetNumInterfaces</b></a> method to obtain the number of USB interfaces that the device supports. Next, the driver can make calls to the <a href="wdf.iwdfusbtargetdevice_retrieveusbinterface"><b>IWDFUsbTargetDevice::RetrieveUsbInterface</b></a> method to obtain pointers to the <a href="wdf.iwdfusbinterface">IWDFUsbInterface</a> interfaces that expose the USB interfaces that the device supports. Then the driver can call the following methods that each USB interface object defines for obtaining information about the USB interface: </p>
+<p></p>
+<dl>
+<dt><a id="IWDFUsbInterface__GetInterfaceNumber"></a><a id="iwdfusbinterface__getinterfacenumber"></a><a id="IWDFUSBINTERFACE__GETINTERFACENUMBER"></a><a href="wdf.iwdfusbinterface_getinterfacenumber"><b>IWDFUsbInterface::GetInterfaceNumber</b></a></dt>
+<dd>
+<p>Obtains the USB interface number that is associated with a USB interface object. </p>
+</dd>
+<dt><a id="IWDFUsbInterface__GetInterfaceDescriptor"></a><a id="iwdfusbinterface__getinterfacedescriptor"></a><a id="IWDFUSBINTERFACE__GETINTERFACEDESCRIPTOR"></a><a href="wdf.iwdfusbinterface_getinterfacedescriptor"><b>IWDFUsbInterface::GetInterfaceDescriptor</b></a></dt>
+<dd>
+<p>Obtains that USB interface descriptor that is associated with one of the alternate settings of a USB interface.</p>
+</dd>
+<dt><a id="IWDFUsbInterface__GetNumEndPoints"></a><a id="iwdfusbinterface__getnumendpoints"></a><a id="IWDFUSBINTERFACE__GETNUMENDPOINTS"></a><a href="wdf.iwdfusbinterface_getnumendpoints"><b>IWDFUsbInterface::GetNumEndPoints</b></a></dt>
+<dd>
+<p>Obtains the number of endpoints (also known as pipes) that are associated with one of the alternate settings of a USB interface. </p>
+</dd>
+<dt><a id="IWDFUsbInterface__GetConfiguredSettingIndex"></a><a id="iwdfusbinterface__getconfiguredsettingindex"></a><a id="IWDFUSBINTERFACE__GETCONFIGUREDSETTINGINDEX"></a><a href="wdf.iwdfusbinterface_getconfiguredsettingindex"><b>IWDFUsbInterface::GetConfiguredSettingIndex</b></a></dt>
+<dd>
+<p>Obtains an index value that identifies the alternate setting that is currently selected for a USB interface.</p>
+</dd>
+<dt><a id="IWDFUsbInterface__RetrieveUsbPipeObject"></a><a id="iwdfusbinterface__retrieveusbpipeobject"></a><a id="IWDFUSBINTERFACE__RETRIEVEUSBPIPEOBJECT"></a><a href="wdf.iwdfusbinterface_retrieveusbpipeobject"><b>IWDFUsbInterface::RetrieveUsbPipeObject</b></a></dt>
+<dd>
+<p>Retrieves a pointer to the <a href="wdf.iwdfusbtargetpipe">IWDFUsbTargetPipe</a> interface that exposes the framework pipe object that is associated with a specified USB device interface and pipe index.</p>
+</dd>
+<dt><a id="IWDFUsbInterface__GetWinUsbHandle"></a><a id="iwdfusbinterface__getwinusbhandle"></a><a id="IWDFUSBINTERFACE__GETWINUSBHANDLE"></a><a href="wdf.iwdfusbinterface_getwinusbhandle"><b>IWDFUsbInterface::GetWinUsbHandle</b></a></dt>
+<dd>
+<p>Obtains the WinUsb interface handle that is associated with a USB interface.</p>
+</dd>
+</dl>
+<h3><a id="Selecting_an_Alternate_Setting_for_a_UMDF-USB_Interface"></a><a id="selecting_an_alternate_setting_for_a_umdf-usb_interface"></a><a id="SELECTING_AN_ALTERNATE_SETTING_FOR_A_UMDF-USB_INTERFACE"></a>Selecting an Alternate Setting for a UMDF-USB Interface</h3>
+<p>The UMDF driver can call the <a href="wdf.iwdfusbinterface_selectsetting"><b>IWDFUsbInterface::SelectSetting</b></a> method to select an alternate setting for one of the USB interfaces that the device supports.</p>
+<p>The device's alternate settings must be numbered contiguously, starting with zero.</p>
+<div class="alert"><b>Important</b>     Selecting a setting invalidates any information about the interface and endpoints. Therefore, the driver should obtain this information again. The driver must also discard any USB pipe objects that it previously retrieved and recreate them.</div>
+<div> </div>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Working with USB Interfaces in UMDF 1.x Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

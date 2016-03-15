@@ -1,0 +1,77 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic describes troubleshooting steps you can use when a UMDF driver fails to load or an associated device fails to start."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_40435976-3348-494f-bc6e-5687661107b0.xml"/>
+<meta name="MS-HAID" content="umdf.determining_why_the_umdf_driver_fails_to_load_or_the_umdf_device_fails"/>
+<meta name="MS-HAID" content="wdf.determining_why_the_umdf_driver_fails_to_load_or_the_umdf_device_fails"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.determining_why_the_umdf_driver_fails_to_load_or_the_umdf_device_fails"></a>Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start</h1>
+</div>
+<p>This topic describes troubleshooting steps you can use when a UMDF driver fails to load or an associated device fails to start.</p>
+<p> You can use the following technique with both UMDF version 1 and 2 drivers.</p>
+<ol>
+<li>Check setup by ensuring that the following files are correct:<ul>
+<li>
+<p>Driver's INF file. </p>
+<p>Use the <a href="devtest.chkinf">ChkINF</a> tool to validate the driver's INF file. </p>
+</li>
+<li>%windir%\inf\setupapi.dev.log (setupapi.log on Windows XP), %windir%\setupact.log, and %windir%\temp\wudf_update.log files.</li>
+</ul>
+</li>
+<li>
+<p>If you did not find any setup issues, enable the <b>HostProcessDbgBreakOnStart</b> registry entry by using the <a href="devtest.wdf_verifier_control_application">WDF Verifier control application</a> (WdfVerifier.exe). By enabling <b>HostProcessDbgBreakOnStart</b>, you will make the driver host process for the device (WUDFHost.exe) break into the debugger shortly after WUDFHost.exe starts but before your driver DLL loads.</p>
+<p>You should enable <b>HostProcessDbgBreakOnStart</b> with a user-mode debugger and not a kernel-mode debugger. A kernel-mode debugger, by default, does not receive user-mode module load and unload notifications. Therefore, you will not be able to set deferred breakpoints. </p>
+</li>
+<li>If you do not see a host start, perform the following steps to correctly configure the device:<ol>
+<li>Ensure that all the drivers that you install through your INF exist and are copied to the operating system. </li>
+<li>If the reflector (also known as WUDFRd.sys) is not the service on the device, ensure that the driver, which would then be the service, has a service entry (for example, 'sc qc foo') and is set to start automatically. </li>
+</ol>
+</li>
+<li>
+<p>Ensure that your driver's symbols are in the symbol path (that is, .sympath). </p>
+</li>
+<li>Verify the following items one at a time. In the following steps, assume that your driver is foo.dll:<ol>
+<li>Verify that your driver's <b>DllMain</b> routine is called (for example, bu Foo!DllMain). </li>
+<li>If your driver DLL does load, for subsequent steps, you can also use the <b>HostProcessDbgBreakOnDriverLoad</b> registry entry. Having <b>HostProcessDbgBreakOnDriverLoad</b> set causes WUDFHost.exe to break into the debugger after your driver DLL is loaded. <b>HostProcessDbgBreakOnDriverLoad</b> can also be used with the kernel-mode debugger because at this point in the driver loading and device starting process you can set breakpoints in your driver code. </li>
+<li>
+<p>This step applies to UMDF version 1 drivers only. Verify that your driver's <b>DllGetClassObject</b> routine is called.  Verify that the class identifier (ID) for your driver is correct. Verify that <b>DllGetClassObject</b> runs successfully and returns a driver object (for example, bu Foo!DllGetClassObject). </p>
+</li>
+<li>
+<p>For UMDF version 1, verify that your driver's <a href="wdf.idriverentry_ondeviceadd"><b>IDriverEntry::OnDeviceAdd</b></a> method is called.  Verify that the method creates a device and returns successfully (for example, bu Foo!CMyDriver::OnDeviceAdd).</p>
+<p>For UMDF version 2, verify that your driver's <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> function is called.  Verify that the function creates a device and returns successfully (for example, bu Foo!MyDriverDeviceAdd).</p>
+</li>
+<li>
+<p>For UMDF version 1, verify that your driver's <a href="wdf.ipnpcallbackhardware_onpreparehardware"><b>IPnpCallbackHardware::OnPrepareHardware</b></a> or <a href="wdf.ipnpcallback_ond0entry"><b>IPnpCallback::OnD0Entry</b></a> method is called.  Verify that the method returns successfully (for example, bu Foo!CMyDevice::OnPrepareHardware or Foo!CMyDevice::OnD0Entry).</p>
+<p>For UMDF version 2, verify that your driver's <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> or <a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a> function is called.  Verify that the function returns successfully (for example, bu Foo!MyDevicePrepareHardware or Foo!MyDeviceD0Entry). </p>
+</li>
+<li>If each of the previous operations run successfully but the operation that follows does not run, you should check the following items:<ol>
+<li>Verify that every driver above and below your driver in the user-mode stack also successfully performs these operations. </li>
+<li>Verify that the kernel stack below your driver successfully completes the <a href="kernel.irp_mj_pnp"><b>IRP_MJ_PNP</b></a> and <a href="kernel.irp_mn_start_device"><b>IRP_MN_START_DEVICE</b></a> IRPs. </li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a given Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) 2 driver."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<meta name="Search.SourceType" content="Video"/>
+<title>Using the Windows Performance Toolkit (WPT) with WDF</title>
+
+<meta name="MS-HAID" content="wdf.using_the_windows_performance_toolkit__wpt__with_wdf"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_the_windows_performance_toolkit__wpt__with_wdf"></a>Using the Windows Performance Toolkit (WPT) with WDF</h1>
+</div>
+<div class="nav_sidebar" style="background: #ebeff0; border: 1px #e3e3e3 solid; padding: 5px; float: right; margin-left: 10px; width: 290px;"><span class="sidebar_heading" style="font-weight: bold;">In this article</span><div class="sidebar_toc">
+<p>
+<ul>
+<li><a href="#how_can_the_windows_driver_frameworks__wdf__extensions_for_wpt_help_">How can the Windows Driver Frameworks (WDF) extensions for WPT help?</a></li>
+<li><a href="#getting_started">Getting started</a></li>
+<li><a href="#analyzing_the_trace">Analyzing the trace</a></li>
+<li><a href="#umdf_i_o_request_graph_and_summary_table">UMDF I/O Request Graph and summary table</a></li>
+<li><a href="#kmdf_i_o_request_graph_and_summary_table">KMDF I/O Request Graph and summary table</a></li>
+<li><a href="#pnp_power_callback_graph_and_summary_table">PnP Power callback graph and summary table</a></li>
+<li><a href="#which_calls_are_instrumented_">Which calls are instrumented?</a></li>
+<li><a href="#resources_and_troubleshooting">Resources and Troubleshooting</a></li>
+<li><a href="#related_topics">Related topics</a></li>
+</ul>
+</p>
+</div>
+</div>
+<p>
+<p>Starting in Windows 10, you can use the Windows Performance Toolkit (WPT) to view performance data for a given Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) 2 driver.</p>
+</p>
+<h2><a id="How_can_the_Windows_Driver_Frameworks__WDF__extensions_for_WPT_help_"></a><a id="how_can_the_windows_driver_frameworks__wdf__extensions_for_wpt_help_"></a><a id="HOW_CAN_THE_WINDOWS_DRIVER_FRAMEWORKS__WDF__EXTENSIONS_FOR_WPT_HELP_"></a>How can the Windows Driver Frameworks (WDF) extensions for WPT help?</h2>
+<p>You can use WPT to obtain performance insights or troubleshoot performance issues. For example:</p>
+<ul>
+<li>Examine the driver’s WDF I/O request completion rate, CPU utilization, and time spent in PnP and power callbacks.</li>
+<li>Compare a UMDF 2 driver against a similar KMDF driver and determine if UMDF meets your performance requirements.</li>
+<li>Identify performance glitches in the WDF I/O path.</li>
+<li>Determine which instance of a given callback is taking a long time.  Then examine sampled CPU usage to understand why.</li>
+<li>Check if the device is making power transitions in and out of the D0 power state too frequently.</li>
+</ul>
+<h2><a id="Getting_started"></a><a id="getting_started"></a><a id="GETTING_STARTED"></a>Getting started</h2>
+<p>The WPT is part of the Windows Assessment and Deployment Kit (ADK).  You can install the ADK from the <a href="http://dev.windows.com/en-US/featured/hardware/windows-10-hardware-preview-tools">Windows hardware tools</a> site.</p>
+<p>The WPT consists of two separate tools:  Windows Performance Recorder and Windows Performance Analyzer (WPA). In this topic, we use WPR to record a trace, and then WPA to view the trace in a configurable GUI format.</p>
+<p>To learn how to use the Windows Performance Toolkit to measure the performance of a WDF driver, either watch the following video, or read the steps below the video.  The video and the steps cover the same procedure.</p>
+<p><span type="video" uuid="fc37f465-9456-45d7-bbe9-6f7d44342563" alt="Using Windows Performance Toolkit to measuring performance of a WDF driver"></span></p>
+<p class="proch"><img src="../common/wedge.gif" alt=""/><b>Recording and viewing an event log for a WDF driver</b></p>
+<ol>
+<li>
+<p>Install your driver, if it's not already installed.</p>
+</li>
+<li>
+<p>In an elevated command prompt, enter the following command.</p>
+<p><b>WdfPerfEnhancedVerifier.cmd </b><i>&lt;ServiceName&gt;</i><i>&lt;UMDF or KMDF&gt;</i></p>
+<div class="alert"><b>Note</b>  WdfPerfEnhancedVerifier.cmd should be copied from the location you installed WPT. If you installed WPT on a development machine, you'll need to copy the script from the WPT installation directory to the target machine.</div>
+<div> </div>
+<p>This script sets registry entries for the specified driver so that the framework logs the events required to enable performance analysis when  the ETW provider is enabled in step 4.</p>
+</li>
+<li>Reboot the computer.</li>
+<li>
+<p>In an elevated command prompt, enter the following command.</p>
+<p><b>Wpr.exe </b><b>-Start WdfPerfTraceProviders.wprp</b></p>
+<p>This command enables the ETW provider for WDF.  The computer starts recording a trace.</p>
+<div class="alert"><b>Note</b>  As in step 2, Wpr.exe and  WdfPerfTraceProviders.wprp should be copied from the location you installed WPT. If you installed WPT on a development machine, copy these files from the WPT installation directory to the target machine.</div>
+<div> </div>
+<p>On Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), you can also start the trace with Wprui.exe, which provides a GUI for recording traces.</p>
+</li>
+<li>Exercise your scenario of interest.</li>
+<li>Stop the ETW trace session: <b>Wpr.exe -Stop MyPerfTrace.etl</b></li>
+<li>
+<p>Open the event trace log in the Windows Performance Analyzer viewer:</p>
+<p><b>Wpa.exe MyPerfTrace.etl</b></p>
+</li>
+</ol>
+<p>To capture another trace for the same driver, use Wpr.exe to start and stop a new trace. To capture a trace for a different driver, first rerun WdfPerfEnhancedVerifier.cmd for the new driver.</p>
+<h2><a id="Analyzing_the_trace"></a><a id="analyzing_the_trace"></a><a id="ANALYZING_THE_TRACE"></a>Analyzing the trace</h2>
+<p>To start analyzing the driver's performance, find the <b>Graph Explorer</b> on the left, open the <b>Computation</b> category, and then drag the UMDF or KMDF graph to the main work area, under the <b>Analysis</b> tab.  This screenshot shows the <b>Graph Explorer</b> pane:</p><img src="images/WpaUMDFIoCapture-LeftPane.png" alt="Graph Explorer in WPA"/><p>  There is a dedicated table for UMDF and another for KMDF drivers.</p>
+<h2><a id="UMDF_I_O_Request_Graph_and_summary_table"></a><a id="umdf_i_o_request_graph_and_summary_table"></a><a id="UMDF_I_O_REQUEST_GRAPH_AND_SUMMARY_TABLE"></a>UMDF I/O Request Graph and summary table</h2>
+<p>WPT can display WDF I/O request completion throughput in two ways:</p>
+<ul>
+<li>Number of I/O requests completing per second</li>
+<li>Time duration of each I/O request (formatted as  a Gantt chart)</li>
+</ul>
+<p>The following screenshot shows sample summary graphs and tables for CPU and UMDF I/O request performance. In the UMDF I/O Request Completion Rate graph, the number of requests per second is shown on the y axis.</p><img src="images/WpaUMDFIoCapture-Narrow.PNG" alt="Graph for UMDF I/O Request Performance"/><p> In the  <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/hh448109.aspx">summary table</a>, most columns are self-explanatory, but there are a couple things to note.  The WdfDevice column contains the  WDFDEVICE handle associated with the I/O request. The ActivityID contains a unique identifier for the I/O request. The framework creates this identifier when it delivers an I/O request to the driver. If an activity identifier is already associated with the corresponding IRP, the framework uses that identifier.   For more information, see <a href="using_activity_identifiers.htm">Using Activity Identifiers</a>.</p>
+<p>Entry time is the trace timestamp when the framework delivered the request to the driver, and exit time is the timestamp when the driver called <a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a> or a related method to complete the request.</p>
+<h2><a id="KMDF_I_O_Request_Graph_and_summary_table"></a><a id="kmdf_i_o_request_graph_and_summary_table"></a><a id="KMDF_I_O_REQUEST_GRAPH_AND_SUMMARY_TABLE"></a>KMDF I/O Request Graph and summary table</h2>
+<p>Here's a similar screenshot showing I/O request info for a KMDF driver.</p><img src="images/WpaKMDFIoCapture-Narrow.PNG" alt="Graph for UMDF I/O Request Performance"/><h2><a id="PnP_Power_callback_graph_and_summary_table"></a><a id="pnp_power_callback_graph_and_summary_table"></a><a id="PNP_POWER_CALLBACK_GRAPH_AND_SUMMARY_TABLE"></a>PnP Power callback graph and summary table</h2>
+<p>WPT can also display the processing time of each PnP and power callback.  The following screenshot shows <a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a>, <a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a> and <a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a> callback duration for a sample KMDF driver and a sample UMDF driver.</p>
+<p>The WdfDevice column contains the  WDFDEVICE handle associated with the callback. The ActivityID contains a unique identifier for the callback instance.</p><img src="images/wpa-fx2-pnppwr.PNG" alt="PnP Power Callback Graph"/><h2><a id="Which_calls_are_instrumented_"></a><a id="which_calls_are_instrumented_"></a><a id="WHICH_CALLS_ARE_INSTRUMENTED_"></a>Which calls are instrumented?</h2>
+<p>This section describes which events are used to build the graphs and tables shown above.</p>
+<p>
+After you run WdfPerfEnhancedVerifier.cmd for a specific driver, the framework records events in the ETL trace log when the system calls some of the specified driver's callbacks, and also when the specified driver calls some framework methods.</p>
+<p>To determine when I/O requests start, the framework records events when it calls the following callbacks:</p>
+<ul>
+<li><a href="wdf.evtiodefault"><i>EvtIoDefault</i></a></li>
+<li><a href="wdf.evtioread"><i>EvtIoRead</i></a></li>
+<li><a href="wdf.evtiowrite"><i>EvtIoWrite</i></a></li>
+<li><a href="wdf.evtiodevicecontrol"><i>EvtIoDeviceControl</i></a></li>
+<li><a href="wdf.evtiointernaldevicecontrol"><i>EvtIoInternalDeviceControl</i></a></li>
+</ul>
+<p>The framework also records I/O request start events when the driver calls the following methods:</p>
+<ul>
+<li><a href="wdf.wdfioqueueretrievenextrequest"><b>WdfIoQueueRetrieveNextRequest</b></a></li>
+<li><a href="wdf.wdfioqueueretrieverequestbyfileobject"><b>WdfIoQueueRetrieveRequestByFileObject</b></a></li>
+<li><a href="wdf.wdfioqueueretrievefoundrequest"><b>WdfIoQueueRetrieveFoundRequest</b></a></li>
+</ul>
+<p>To determine when I/O requests complete, the framework tracks when the driver calls:</p>
+<ul>
+<li><a href="wdf.wdfrequestcomplete"><b>WdfRequestComplete</b></a></li>
+<li><a href="wdf.wdfrequestcompletewithinformation"><b>WdfRequestCompleteWithInformation</b></a></li>
+<li><a href="wdf.wdfrequestcompletewithpriorityboost"><b>WdfRequestCompleteWithPriorityBoost</b></a></li>
+</ul>
+<p>Finally, to determine callback duration for PnP/Power callbacks, the framework records when  it calls the following driver-supplied callback routines, and when they finish:</p>
+<ul>
+<li><a href="wdf.evtdeviced0entry"><i>EvtDeviceD0Entry</i></a></li>
+<li><a href="wdf.evtdeviced0exit"><i>EvtDeviceD0Exit</i></a></li>
+<li><a href="wdf.evtdevicepreparehardware"><i>EvtDevicePrepareHardware</i></a></li>
+<li><a href="wdf.evtdevicereleasehardware"><i>EvtDeviceReleaseHardware</i></a></li>
+<li><a href="wdf.evtiostop"><i>EvtIoStop</i></a></li>
+</ul>
+<h2><a id="Resources_and_Troubleshooting"></a><a id="resources_and_troubleshooting"></a><a id="RESOURCES_AND_TROUBLESHOOTING"></a>Resources and Troubleshooting</h2>
+<ul>
+<li>Be sure to reboot after you run the WdfPerfEnhancedVerifier.cmd script.</li>
+<li>To determine if your driver is configured to record an event log, use the <b>!WdfKd.wdfdriverinfo</b> kernel debugger command.  If the driver is configured for performance tracing, you will see output like this:<pre class="syntax" xml:space="preserve"><code>!WdfKd.WdfDriverInfo Echo.sys
+…
+…
+----------------------------------
+
+WDF Verifier settings for echo.sys is ON
+  Enhanced verifier: performance analysis hooking ON
+----------------------------------
+</code></pre>
+</li>
+<li>For development and testing purposes only, enforcement of the driver code signing policy can be temporarily disabled. For more information, see <a href="devinst.installing_an_unsigned_driver_during_development_and_test">Installing an Unsigned Driver Package during Development and Test</a>.</li>
+<li>If you captured a trace on Windows 10 Mobile, you'll need to copy MyPerfTrace.etl from the target device to a computer that has Wpa.exe.  You can use the <a href="https://dev.windowsphone.com/en-us/OEM/docs/Phone_Testing/TShell">TShell tool</a> to do this.</li>
+</ul>
+<h2><a id="related_topics"></a>Related topics</h2>
+<dl>
+<dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/hh448170.aspx">Windows Performance Analyzer</a></dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using the Windows Performance Toolkit (WPT) with WDF%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

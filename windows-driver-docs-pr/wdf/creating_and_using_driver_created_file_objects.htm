@@ -1,0 +1,58 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Creating and Using Driver-Created File Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Creating and Using Driver-Created File Objects</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_d6237c6a-c2ca-4785-ba43-69027733ea94.xml"/>
+<meta name="MS-HAID" content="umdf.creating_and_using_driver_created_file_objects"/>
+<meta name="MS-HAID" content="wdf.creating_and_using_driver_created_file_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.creating_and_using_driver_created_file_objects"></a>Creating and Using Driver-Created File Objects</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>If your driver needs to create and send an  I/O request that is independent of the application to the next driver in the stack (the default I/O target), the driver must create and close its own  file objects.</p>
+<h3><a id="creating_a_file_object"></a><a id="CREATING_A_FILE_OBJECT"></a>Creating a File Object</h3>
+<p>Your driver must call the <a href="wdf.iwdfdevice_createwdffile"><b>IWDFDevice::CreateWdfFile</b></a> method to create a file object for the driver's use. When the driver calls <b>IWDFDevice::CreateWdfFile</b>, the framework sends a create request to the next driver  in the stack. The next driver in the stack could be in kernel mode or in user mode.</p>
+<p>This create-file request processing is different in the Windows Driver Model (WDM). In WDM, a call to the <a href="kernel.zwcreatefile"><b>ZwCreateFile</b></a> function causes a create IRP to go to the top of the kernel-mode stack. The following figure shows create-file request processing in UMDF versus WDM: </p><img src="images/drvrcrtfile.gif" alt="Create-file request handling in UMDF versus WDM"/><p>By calling <a href="wdf.iwdfdevice_createwdffile"><b>IWDFDevice::CreateWdfFile</b></a>, the driver can create a file object and then send I/O requests during device start, before the whole stack has started.</p>
+<p>The next driver in the stack must determine if it can handle the create-file request or if it must forward the request further down the stack.</p>
+<p>After calling <a href="wdf.iwdfdevice_createwdffile"><b>IWDFDevice::CreateWdfFile</b></a>, a driver cannot cancel the create operation.</p>
+<h2><a id="using_the_file_object"></a><a id="USING_THE_FILE_OBJECT"></a>Using the File Object</h2>
+<p>To send an asynchronous read request to the next driver stacked below it, your driver can use the following pattern.</p>
+<ol>
+<li>Call <a href="wdf.iwdfdevice_createwdffile"><b>IWDFDevice::CreateWdfFile</b></a> to create the file object.</li>
+<li>Call <a href="wdf.iwdfdevice_getdefaultiotarget"><b>IWDFDevice::GetDefaultIoTarget</b></a> to retrieve the interface  representing the lower level driver.</li>
+<li>Call <a href="wdf.iwdfdevice_createrequest"><b>IWDFDevice::CreateRequest</b></a> to create an unformatted <a href="wdf.iwdfiorequest"><b>IWDFIoRequest</b></a> object.</li>
+<li>Call <a href="wdf.iwdfiorequest_setcompletioncallback"><b>IWDFIoRequest::SetCompletionCallback</b></a> to register a <a href="wdf.irequestcallbackrequestcompletion"><b>IRequestCallbackRequestCompletion</b></a> interface for the <a href="wdf.irequestcallbackrequestcompletion_oncompletion"><b>OnCompletion</b></a> method that the framework calls when an I/O request completes.</li>
+<li>Call <a href="wdf.iwdfiotarget_formatrequestforread"><b>IWDFIoTarget::FormatRequestForRead</b></a>, providing a pointer to the <a href="wdf.iwdfdrivercreatedfile"><b>IWDFDriverCreatedFile</b></a> interface in the <i>pFile</i> parameter.</li>
+<li>Call <a href="wdf.iwdfiorequest_send"><b>IWDFIoRequest::Send</b></a> to send the request.</li>
+</ol>
+<h2><a id="closing_the_file_object"></a><a id="CLOSING_THE_FILE_OBJECT"></a>Closing the File Object</h2>
+<p>The driver that called <a href="wdf.iwdfdevice_createwdffile"><b>IWDFDevice::CreateWdfFile</b></a> must later call <a href="wdf.iwdfdrivercreatedfile_close"><b>IWDFDriverCreatedFile::Close</b></a>.</p>
+<p>Typically, your driver calls <a href="wdf.iwdfdrivercreatedfile_close"><b>IWDFDriverCreatedFile::Close</b></a> either from its <a href="wdf.ipnpcallbackhardware_onreleasehardware"><b>IPnpCallbackHardware::OnReleaseHardware</b></a> or <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup"><b>IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup</b></a> callback method. </p>
+<p>When the driver calls <a href="wdf.iwdfdrivercreatedfile_close"><b>IWDFDriverCreatedFile::Close</b></a>, the framework calls the next driver's <a href="wdf.ifilecallbackcleanup_oncleanupfile"><b>IFileCallbackCleanup::OnCleanupFile</b></a> method. 
+
+In this method, the next driver must cancel or complete all pending I/O requests that are associated with the file object. The framework then cancels any I/O requests created by the driver that called <a href="wdf.iwdfdevice_createwdffile"><b>IWDFDevice::CreateWdfFile</b></a>. The framework does not cancel any I/O requests that lower drivers in the stack may have associated with the file object. It is the driver's responsibility to cancel any such requests. The file object only closes after all I/O requests associated with it have completed.</p>
+<p>Next, the framework calls the next driver's <a href="wdf.ifilecallbackclose_onclosefile"><b>IFileCallbackClose::OnCloseFile</b></a> method. At this point, the framework guarantees that the next driver will not receive additional I/O requests for this file object.</p>
+<p>After the framework calls <a href="wdf.ifilecallbackclose_onclosefile"><b>OnCloseFile</b></a>, it destroys the <a href="wdf.iwdffile">IWDFFile</a> interface that represents the file object.</p>
+<p> If driver-created file objects remain after the driver's  device-removal methods (for example <a href="wdf.ipnpcallbackhardware_onreleasehardware"><b>IPnpCallbackHardware::OnReleaseHardware</b></a> and <a href="wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup"><b>IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup</b></a>) return, the framework generates a driver stop. For information about troubleshooting this problem, see <a href="determining_why_umdf_indicates_outstanding_files_at_device_removal_tim.htm">Determining Why UMDF Indicates Outstanding Files at Device Removal Time</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Creating and Using Driver-Created File Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

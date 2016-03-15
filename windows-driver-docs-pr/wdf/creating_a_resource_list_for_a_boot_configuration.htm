@@ -1,0 +1,43 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Creating a Resource List for a Boot Configuration"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Creating a Resource List for a Boot Configuration</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_b1d9149e-7aa2-43cb-8c9a-5821b0839884.xml"/>
+<meta name="MS-HAID" content="kmdf.creating_a_resource_list_for_a_boot_configuration"/>
+<meta name="MS-HAID" content="wdf.creating_a_resource_list_for_a_boot_configuration"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.creating_a_resource_list_for_a_boot_configuration"></a>Creating a Resource List for a Boot Configuration</h1>
+</div>
+<p>After a bus driver enumerates a device, the framework calls the driver's <a href="wdf.evtdeviceresourcesquery"><i>EvtDeviceResourcesQuery</i></a> callback function. This callback function receives a handle to a resource-list object, which represents an empty resource list. The driver must then do the following to add information to the list, for each type of hardware resource that the device's boot configuration requires:</p>
+<ol>
+<li>
+<p>Fill in a driver-supplied <a href="kernel.cm_partial_resource_descriptor"><b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b></a> structure, which specifies a valid value for a particular resource.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfcmresourcelistappenddescriptor"><b>WdfCmResourceListAppendDescriptor</b></a> or <a href="wdf.wdfcmresourcelistinsertdescriptor"><b>WdfCmResourceListInsertDescriptor</b></a> to add the contents of the CM_PARTIAL_RESOURCE_DESCRIPTOR structure to the resource list. </p>
+</li>
+</ol>
+<p>After the driver's <i>EvtDeviceResourcesQuery</i> callback function returns, the framework passes the resource list to the PnP manager.</p>
+<p>Device installers can specify additional resource lists. For more information about additional resource lists, see <a href="kernel.hardware_resources">Hardware Resources</a>. </p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Creating a Resource List for a Boot Configuration%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

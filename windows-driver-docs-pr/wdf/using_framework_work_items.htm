@@ -1,0 +1,95 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Using Framework Work Items"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using Framework Work Items</title>
+
+<meta name="MS-HAID" content="Ch8_DFTechniques_ee22b33f-6cf3-49d0-98db-d55c0a01f781.xml"/>
+<meta name="MS-HAID" content="kmdf.using_framework_work_items"/>
+<meta name="MS-HAID" content="wdf.using_framework_work_items"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_framework_work_items"></a>Using Framework Work Items</h1>
+</div>
+<h2><a id="ddk_using_framework_work_items_df"></a><a id="DDK_USING_FRAMEWORK_WORK_ITEMS_DF"></a></h2>
+<p>A <i>work item</i> is a task that a driver performs in an <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> event callback function. These functions run asynchronously, at IRQL = PASSIVE_LEVEL, in the context of a system worker thread.</p>
+<p>Framework-based drivers commonly use work items if an <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtdpcfunc"><i>EvtDpcFunc</i></a> function, which runs at IRQL = DISPATCH_LEVEL, must perform additional processing at IRQL = PASSIVE_LEVEL. </p>
+<p>In other words, a driver can use work items if a function that runs at IRQL = DISPATCH_LEVEL must call a function that can be called only at IRQL = PASSIVE_LEVEL.</p>
+<p>Typically, a driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> or <a href="wdf.evtdpcfunc"><i>EvtDpcFunc</i></a> callback function creates a work-item object and adds it to the system's work-item queue. Subsequently, a system worker thread dequeues the object and calls the work item's <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback function.</p>
+<h3><a id="Sample_Drivers_That_Use_Work_Items"></a><a id="sample_drivers_that_use_work_items"></a><a id="SAMPLE_DRIVERS_THAT_USE_WORK_ITEMS"></a>Sample Drivers That Use Work Items</h3>
+<p><a href="sample_kmdf_drivers.htm">Sample framework-based drivers</a> that use work items include 1394, AMCC5933, PCIDRV, and Toaster.</p>
+<h3><a id="ddk_setting_up_a_work_item_df"></a><a id="DDK_SETTING_UP_A_WORK_ITEM_DF"></a>Setting Up a Work Item</h3>
+<p>To set up a work item, your driver must:</p>
+<ol>
+<li>
+<p>Create the work item.</p>
+<p>Your driver calls <a href="wdf.wdfworkitemcreate"><b>WdfWorkItemCreate</b></a> to create a work-item object and to identify an <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback function that will process the work item.</p>
+</li>
+<li>
+<p>Store information about the work item.</p>
+<p>Typically, drivers use the context memory of the work-item object to store information about the task that the <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback function should perform. When the <i>EvtWorkItem</i> callback function is called, it can retrieve the information by accessing this context memory. For information about how to allocate and access context memory, see <a href="framework_object_context_space.htm">Framework Object Context Space</a>.</p>
+</li>
+<li>
+<p>Add the work item to the system's work-item queue.</p>
+<p>Your driver calls <a href="wdf.wdfworkitemenqueue"><b>WdfWorkItemEnqueue</b></a>, which adds the driver's work item to the work-item queue.</p>
+</li>
+</ol>
+<p>When your driver calls <a href="wdf.wdfworkitemcreate"><b>WdfWorkItemCreate</b></a>, it must supply a handle to either a framework device object or a framework queue object. When the system deletes that object, it also deletes any existing work items that are associated with the object.</p>
+<h3><a id="ddk_using_the_work_item_callback_function_df"></a><a id="DDK_USING_THE_WORK_ITEM_CALLBACK_FUNCTION_DF"></a>Using the Work-Item Callback Function</h3>
+<p>After the work item has been added to the work-item queue, it remains in the queue until a system worker thread becomes available. The system worker thread removes the work item from the queue and then calls the driver's <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback function, passing the work-item object as input. </p>
+<p>Typically, the <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback function performs the following steps: </p>
+<ol>
+<li>
+<p>Obtains driver-supplied information about the work item by accessing the context memory of the work-item object.</p>
+</li>
+<li>
+<p>Performs the task that you specified. If necessary, the callback function can call <a href="wdf.wdfworkitemgetparentobject"><b>WdfWorkItemGetParentObject</b></a> to determine the work item's parent object.</p>
+</li>
+<li>
+<p>Calls <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to delete the work-item object or, if the driver will requeue the work item, indicates that the handle to the work item is now available for reuse.</p>
+</li>
+</ol>
+<p>The task that each work item's callback function performs must be relatively short. The operating system provides a limited number of system worker threads, so your driver can impede system performance if it uses work-item callback functions to perform time-consuming tasks.</p>
+<h3><a id="ddk_creating_and_deleting_work_items_df"></a><a id="DDK_CREATING_AND_DELETING_WORK_ITEMS_DF"></a>Creating and Deleting Work Items</h3>
+<p>Drivers can use one of the following two techniques to create and delete work items:</p>
+<ul>
+<li>
+<p>Use each work item once: create the work item when you need it and delete it immediately after it is used.</p>
+<p>This technique is useful for drivers that require infrequent use (less often than once per minute) of a small number of work items.</p>
+<p>For example, a driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function can call <a href="wdf.wdfworkitemcreate"><b>WdfWorkItemCreate</b></a> and then <a href="wdf.wdfworkitemenqueue"><b>WdfWorkItemEnqueue</b></a>, and the work item's <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback function can call <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a>.</p>
+<p>If your driver follows this scenario, and if its <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function receives a STATUS_INSUFFICIENT_RESOURCES return value from <a href="wdf.wdfworkitemcreate"><b>WdfWorkItemCreate</b></a>, the driver must be able to postpone the required work until system resources (typically memory) become available.</p>
+</li>
+<li>
+<p>Create one or more work items that your driver requeues as necessary.</p>
+<p>This technique is useful for drivers that use work items frequently (more often than once per minute), or if your driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function cannot easily handle a STATUS_INSUFFICIENT_RESOURCES return value from <a href="wdf.wdfworkitemcreate"><b>WdfWorkItemCreate</b></a>. </p>
+<p>The system does not allocate a worker thread to a work item until the driver calls <a href="wdf.wdfworkitemenqueue"><b>WdfWorkItemEnqueue</b></a>. Therefore, even though system worker threads are a limited resource, creating work items while initializing a device consumes a small amount of memory but does not otherwise affect system performance.</p>
+<p>The following steps describe a possible scenario:</p>
+<ol>
+<li>A driver's <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function calls <a href="wdf.wdfworkitemcreate"><b>WdfWorkItemCreate</b></a> to obtain a work item handle. </li>
+<li>The driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function creates a list of actions that the <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback function must perform and then calls <a href="wdf.wdfworkitemenqueue"><b>WdfWorkItemEnqueue</b></a>, using the handle from step 1. </li>
+<li>The driver's <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback function performs the list of actions and sets a flag to indicate that the callback function has run. </li>
+</ol>
+<p>Subsequently, each time that the driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function is called it must determine if the <a href="wdf.evtworkitem"><i>EvtWorkItem</i></a> callback function has run. If the <i>EvtWorkItem</i> callback function has not run, the <i>EvtInterruptDpc</i> callback function does not call <a href="wdf.wdfworkitemenqueue"><b>WdfWorkItemEnqueue</b></a>, because the work item is still queued. In this case, the <i>EvtInterruptDpc</i> callback function only updates the list of actions for the <i>EvtWorkItem</i> callback function. </p>
+<p>Each work item is associated with a device or a queue. When the associated device or queue is removed, the framework deletes all of the associated work items, so if you are using this technique, the driver does not have to call <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a>.</p>
+</li>
+</ul>
+<p>A few drivers might need to call <a href="wdf.wdfworkitemflush"><b>WdfWorkItemFlush</b></a> to flush their work items from the work-item queue. For an example use of <b>WdfWorkItemFlush</b>, see the method's reference page.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using Framework Work Items%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

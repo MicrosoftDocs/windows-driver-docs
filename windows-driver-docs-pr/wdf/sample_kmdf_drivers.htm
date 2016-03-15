@@ -1,0 +1,135 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic lists the Kernel-Mode Driver Framework (KMDF) sample drivers that you can download from the Windows Dev Center - Hardware."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Sample KMDF Drivers</title>
+
+<meta name="MS-HAID" content="DFSamples_26de264b-f92a-4dc8-85b2-d7157c9c8d74.xml"/>
+<meta name="MS-HAID" content="kmdf.sample_framework_based_drivers"/>
+<meta name="MS-HAID" content="kmdf.sample_kmdf_drivers"/>
+<meta name="MS-HAID" content="wdf.sample_kmdf_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.sample_kmdf_drivers"></a>Sample KMDF Drivers</h1>
+</div>
+<p>This topic lists the Kernel-Mode Driver Framework (KMDF) sample drivers that you can download from  the <a href="http://go.microsoft.com/fwlink/p/?linkid=256387">Windows Dev Center - Hardware</a>.</p>
+<h2><a id="ddk_sample_framework_based_drivers_df"></a><a id="DDK_SAMPLE_FRAMEWORK_BASED_DRIVERS_DF"></a></h2>
+<p>For information on building the samples, see <a href="https://msdn.microsoft.com/windows-drivers/develop/building_a_driver">Building a Driver</a>.</p>
+<p></p>
+<dl>
+<dt><a id="1394"></a>1394</dt>
+<dd>
+<p>Demonstrates how to interact with the 1394 driver stack.</p>
+<p>For more information about this sample, see <a href="http://go.microsoft.com/fwlink/p/?linkid=256208">1394VDEV and 1394DIAG - WDF Version</a>.</p>
+</dd>
+<dt><a id="AMCC5933"></a><a id="amcc5933"></a>AMCC5933</dt>
+<dd>
+<p>Demonstrates how to write driver for a PCI device that supports direct memory access (DMA) and uses the AMCC PCI Matchmaker Developer's kit (S5935DK1) board.</p>
+<p>For more information about this sample, see <a href="http://go.microsoft.com/fwlink/p/?linkid=256077">AMCC5933 - PCI Device Driver Using WDF</a>.</p>
+</dd>
+<dt><a id="ECHO"></a><a id="echo"></a>ECHO</dt>
+<dd>
+<p>Demonstrates how to use the framework's queue and request objects and automatic synchronization.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256129">KMDF Echo Sample</a>.</p>
+</dd>
+<dt><a id="FakeModem"></a><a id="fakemodem"></a><a id="FAKEMODEM"></a>FakeModem</dt>
+<dd>
+<p>Demonstrates a simple controllerless modem driver that sends and receives AT commands.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256110">Fakemodem Driver</a>.</p>
+</dd>
+<dt><a id="FIREFLY"></a><a id="firefly"></a>FIREFLY</dt>
+<dd>
+<p>Demonstrates programming a human input device (HID) device by using I/O control codes (IOCTLs), and provides a Windows Management Instrumentation (WMI) interface.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256113">FIREFLY - WDF filter driver for HID device</a>.</p>
+<p>This sample is installed in the <i>\src\hid</i> subdirectory.</p>
+</dd>
+<dt><a id="HIDUSBFX2"></a><a id="hidusbfx2"></a>HIDUSBFX2</dt>
+<dd>
+<p>Demonstrates how to write a minidriver for a HID device and how to map a non-HID USB device to a HID device. The device is contained in the OSR USB-FX2 Learning Kit. </p>
+<p>For more information about this sample, see <a href="http://go.microsoft.com/fwlink/p/?linkid=256121">HIDUSBFX2</a>.</p>
+</dd>
+<dt><a id="KbFiltr"></a><a id="kbfiltr"></a><a id="KBFILTR"></a>KbFiltr</dt>
+<dd>
+<p>Demonstrates an upper device filter driver for a PS/2 keyboard.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256125">Keyboard Input WDF Filter Driver (Kbfiltr)</a>.</p>
+</dd>
+<dt><a id="NDISProt"></a><a id="ndisprot"></a><a id="NDISPROT"></a>NDISProt</dt>
+<dd>
+<p>Demonstrates a connection-less NDIS 5.0/5.1 and NDIS 6.0 protocol driver.</p>
+<p>For more information about this sample, see <a href="http://go.microsoft.com/fwlink/p/?linkid=256145">NDISProt Connection-less WDF Protocol </a>.</p>
+</dd>
+<dt><a id="NONPNP"></a><a id="nonpnp"></a>NONPNP</dt>
+<dd>
+<p>Demonstrates a non-Plug and Play (PnP) driver that uses the framework.</p>
+<p>For more information about this sample, see <a href="http://go.microsoft.com/fwlink/p/?linkid=256148">NONPNP</a>.</p>
+</dd>
+<dt><a id="KMDF_FX2"></a><a id="kmdf_fx2"></a>KMDF_FX2</dt>
+<dd>
+<p>Demonstrates how to perform bulk and interrupt data transfers to the USB device that is contained in the OSR USB-FX2 Learning Kit.</p>
+<p>For more information about this sample, see <a href="http://go.microsoft.com/fwlink/p/?linkid=256131">kmdf_fx2</a>.</p>
+</dd>
+<dt><a id="PCIDRV"></a><a id="pcidrv"></a>PCIDRV</dt>
+<dd>
+<p>A fully functional framework-based driver for Intel 82557/82558-based PCI Ethernet adapters (10/100) and Intel compatibles.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256154">PCIDRV - WDF Driver for PCI Device</a>.</p>
+</dd>
+<dt><a id="PCMCIA"></a><a id="pcmcia"></a>PCMCIA</dt>
+<dd>
+<p>The PCMCIA Smart Card Driver is used for the SCM PCMCIA smart card reader.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256155">PCMCIA Smart Card Driver</a>.</p>
+</dd>
+<dt><a id="PLX9x5x"></a><a id="plx9x5x"></a><a id="PLX9X5X"></a>PLX9x5x</dt>
+<dd>
+<p>Demonstrates how to write a driver for a generic PCI device that supports DMA and uses the PLX9656/9653RDK-LITE board.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256157">PLX9x5x PCI Driver</a>.</p>
+</dd>
+<dt><a id="RAMDISK"></a><a id="ramdisk"></a>RAMDISK</dt>
+<dd>
+<p>Demonstrates a software-only driver.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256171">RAMDisk Storage Driver</a>.</p>
+</dd>
+<dt><a id="Serial"></a><a id="serial"></a><a id="SERIAL"></a>Serial</dt>
+<dd>
+<p>A framework-based serial driver that is based on the WDM serial sample driver.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256183">Serial sample</a>.</p>
+</dd>
+<dt><a id="Storage_SDIO"></a><a id="storage_sdio"></a><a id="STORAGE_SDIO"></a>Storage SDIO</dt>
+<dd>
+<p>A framework-based driver for an SDIO development board (Mars board). The board implements the SDIO protocol without additional functionality.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256105">Storage SDIO Driver</a>.</p>
+</dd>
+<dt><a id="Toaster"></a><a id="toaster"></a><a id="TOASTER"></a>Toaster</dt>
+<dd>
+<p>Framework-based versions of the WDM toaster sample drivers. The toaster sample includes a filter driver, a function driver, and a bus driver that create a single driver stack. The sample also includes an additional kernel-mode driver that uses a remote I/O target to communicate with the driver stack.</p>
+<p>For more information about this sample, see <a href="http://go.microsoft.com/fwlink/p/?linkid=256195">Toaster</a>.</p>
+</dd>
+<dt><a id="UsbSamp"></a><a id="usbsamp"></a><a id="USBSAMP"></a>UsbSamp</dt>
+<dd>
+<p>Demonstrates how to use the framework to perform bulk and isochronous data transfers to a USB device.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256204">Usbsamp Sample</a>.</p>
+</dd>
+<dt><a id="WmiSamp"></a><a id="wmisamp"></a><a id="WMISAMP"></a>WmiSamp</dt>
+<dd>
+<p>Demonstrates how to register WMI providers and create provider instances for framework device objects and how to handle WMI queries that applications send to the device.</p>
+<p>For more information about this sample, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=256220">WmiSamp WMI Provider</a>.</p>
+</dd>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Sample KMDF Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

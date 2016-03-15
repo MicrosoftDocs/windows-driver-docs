@@ -1,0 +1,49 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Reusing DMA Transaction Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Reusing DMA Transaction Objects</title>
+
+<meta name="MS-HAID" content="DFDmaPackage_e2fc0521-e2c4-49e8-9fc0-ab4809d8a396.xml"/>
+<meta name="MS-HAID" content="kmdf.reusing_dma_transaction_objects"/>
+<meta name="MS-HAID" content="wdf.reusing_dma_transaction_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.reusing_dma_transaction_objects"></a>Reusing DMA Transaction Objects</h1>
+</div>
+<p class="CCE_Message">[Applies to KMDF only]</p>
+<h2><a id="ddk_reusing_dma_transaction_objects_df"></a><a id="DDK_REUSING_DMA_TRANSACTION_OBJECTS_DF"></a></h2>
+<p>After a driver processes all of the DMA transfers that are associated with a DMA transaction, the driver can delete or reuse the transaction object. Typically, the driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function deletes the transaction object (by calling <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a>). Subsequently, when the driver creates a new DMA transaction, it calls <a href="wdf.wdfdmatransactioncreate"><b>WdfDmaTransactionCreate</b></a> to create a new transaction object.</p>
+<p>However, sometimes it is beneficial for the driver to reuse transaction objects. In such cases, the driver calls <a href="wdf.wdfdmatransactionrelease"><b>WdfDmaTransactionRelease</b></a> instead of <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a>.</p>
+<p>For example, suppose your driver and device must operate when computer memory resources are low. To handle this memory issue, your driver can use the following procedure:</p>
+<ol>
+<li>
+<p>The driver's <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function can call <a href="wdf.wdfdmatransactioncreate"><b>WdfDmaTransactionCreate</b></a> to create one or more transaction objects. The driver saves the handles to these transaction objects.</p>
+</li>
+<li>
+<p>Each time the driver is ready to create and initialize a new transaction, it calls <a href="wdf.wdfdmatransactioncreate"><b>WdfDmaTransactionCreate</b></a>. If this method returns STATUS_INSUFFICIENT_RESOURCES, the driver can use one of the stored transaction objects.</p>
+</li>
+<li>
+<p>If the driver uses one of its stored transaction objects, it should reuse the transaction object, instead of deleting it, when the transaction is completed. The driver sets up the transaction object for re-use by calling <a href="wdf.wdfdmatransactionrelease"><b>WdfDmaTransactionRelease</b></a> instead of <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a>.</p>
+</li>
+</ol>
+<p>The <a href="sample_kmdf_drivers.htm">PLX9x5x</a> sample reuses DMA transaction objects.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Reusing DMA Transaction Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

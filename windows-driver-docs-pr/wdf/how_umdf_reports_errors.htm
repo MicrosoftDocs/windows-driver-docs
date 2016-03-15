@@ -1,0 +1,64 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic describes how User-Mode Driver Framework (UMDF) reports errors. It applies to both UMDF versions 1 and 2."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>How UMDF Reports Errors</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_d55bbb16-9780-451c-91c8-082046511185.xml"/>
+<meta name="MS-HAID" content="umdf.how_umdf_reports_errors"/>
+<meta name="MS-HAID" content="wdf.how_umdf_reports_errors"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.how_umdf_reports_errors"></a>How UMDF Reports Errors</h1>
+</div>
+<p>This topic describes how User-Mode Driver Framework (UMDF) reports errors. It applies to both UMDF versions 1 and 2.</p>
+<p>When a UMDF driver crashes, the framework creates a Windows Error Reporting (WER) report.</p>
+<p> UMDF reports the following types of errors:</p>
+<ul>
+<li>
+<p><a href="using_umdf_verifier.htm">UMDF Verifier</a> failures.</p>
+</li>
+<li>
+<p>Unhandled exceptions in the host process.</p>
+</li>
+<li>
+<p>Unexpected termination of the host process.</p>
+</li>
+<li>
+<p>Failure or time-out of critical operations. For more information about timeouts, see <a href="how_umdf_enforces_time_outs.htm">Host Process Timeouts in UMDF</a>.</p>
+</li>
+</ul>
+<p>A UMDF error report can contain the following information. The contents of the report depend on the problem that is detected.</p>
+<ul>
+<li>
+<p>A memory dump of the host process</p>
+</li>
+<li>
+<p>A copy of the UMDF trace log</p>
+</li>
+<li>
+<p>Configuration information about the device, which can include the device name, manufacturer, drivers that are installed, and driver binary versions</p>
+</li>
+<li>
+<p>Analysis of the problem, which can include the address of the last driver-to-framework call (or vice versa), problem code, exception information, and so on</p>
+</li>
+</ul>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20How UMDF Reports Errors%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

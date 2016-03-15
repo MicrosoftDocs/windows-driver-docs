@@ -1,0 +1,64 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Power Management for I/O Queues"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Power Management for I/O Queues</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_e9d11478-5b1d-4f4c-bb40-fd2a1e3ee471.xml"/>
+<meta name="MS-HAID" content="kmdf.power_management_for_i_o_queues"/>
+<meta name="MS-HAID" content="wdf.power_management_for_i_o_queues"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.power_management_for_i_o_queues"></a>Power Management for I/O Queues</h1>
+</div>
+<p>When the framework receives an I/O request that is directed to one of your driver's devices, the framework puts the request in an I/O queue. The driver can obtain I/O requests from the I/O queue by providing request handlers or by polling the queue. For more information about I/O queues, see <a href="handling_i_o_requests_in_wdf_drivers.htm">Handling I/O Requests in Framework-Based Drivers</a>.</p>
+<p>As you are designing your driver, you should group the I/O requests that your driver will receive into two categories:</p>
+<ol>
+<li>Requests that require a device to be in its working (D0) state, including:<ul>
+<li>Read or write requests that require the device's function driver to read data from, or write data to, the device.</li>
+<li>Device control requests that a function or bus driver cannot service without accessing the device.</li>
+</ul>
+</li>
+<li>Requests that do not require a device to be in its working (D0) state, including:<ul>
+<li>Device control requests that a function or bus driver can service without accessing the device.</li>
+<li>Possibly all the requests that a filter driver receives.</li>
+<li>All the requests that all drivers in a driver stack receive, if the stack supports a software-only device that does not communicate with any hardware.</li>
+</ul>
+</li>
+</ol>
+<p>Unless you are writing a filter driver, or a driver for a stack that does not communicate with hardware, it is likely that your driver will receive some requests that require the device to be in its working state, together with some that do not.</p>
+<p>To support these two types of requests, the framework provides two types of I/O queues: those that are <i>power-managed</i> and those that are not. When your driver creates each of its I/O queues, it sets the <b>PowerManaged</b> member in the queue's <a href="wdf.wdf_io_queue_config"><b>WDF_IO_QUEUE_CONFIG</b></a> structure to either <b>WdfTrue</b> or <b>WdfFalse</b> to indicate one of the following:</p>
+<ul>
+<li>
+<p>If your driver sets <b>PowerManaged</b> to <b>WdfTrue</b>, the queue is power-managed. </p>
+<p>When I/O requests are available in a power-managed queue, the framework delivers the requests to the driver only if the device is in its working (D0) state. Therefore, whenever your driver receives a request from a power-managed queue, the framework guarantees that the device is available. If the device is not in its working state, the framework stores requests in the queue until the device becomes available. </p>
+<p>If the device is in a low-power state because it is idle, and if the framework puts an I/O request in one of your driver's power-managed queues, the framework asks the driver stack to restore the device to its working state before it delivers the request to your driver.</p>
+<p>If the device is in a low-power state because the system is not in its working (S0) state, and if the framework puts an I/O request in one of your driver's power-managed queues, the framework waits until the device returns to its working (D0) state and then delivers the request to your driver.</p>
+<p>Because the framework does not deliver I/O requests from a power-managed queue to the  driver if the device is not in its working state, <i>drivers that are located above the </i><a href="power_policy_ownership.htm">power policy owner</a><i> in the driver stack must not use power-managed I/O queues</i>. If a driver that is located above the power policy owner uses a power-managed queue, and if the device is in a low-power state, the driver does not receive the request and cannot pass it to the power policy owner. Therefore the power policy owner, which controls the device's power state, does not wake the device.</p>
+</li>
+<li>
+<p>If your driver sets <b>PowerManaged</b> to <b>WdfFalse</b>, the queue is not power-managed.</p>
+<p>When I/O requests are available in a queue that is not power-managed, the framework delivers the requests to the driver regardless of whether the device is in its working (D0) state. If you have set up your queue so that it only receives requests that do not require accessing the device, your driver can service each request, even if the device is not available.</p>
+</li>
+</ul>
+<p>For more information about power-managed I/O queues, see <a href="using_power_managed_i_o_queues.htm">Using Power-Managed I/O Queues</a>.</p>
+<p>A few drivers require some direct control over Plug and Play (PnP) and power management operations. These drivers can use <i>self-managed I/O</i>. For more information, see <a href="using_self_managed_i_o.htm">Using Self-Managed I/O</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Power Management for I/O Queues%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

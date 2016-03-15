@@ -1,0 +1,118 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Using Framework Registry-Key Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using Framework Registry-Key Objects</title>
+
+<meta name="MS-HAID" content="Ch8_DFTechniques_6a87f021-00bf-488f-98cf-388e889aef54.xml"/>
+<meta name="MS-HAID" content="kmdf.using_framework_registry_key_objects"/>
+<meta name="MS-HAID" content="wdf.using_framework_registry_key_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_framework_registry_key_objects"></a>Using Framework Registry-Key Objects</h1>
+</div>
+<p>Framework-based drivers access the registry by using <i>framework registry-key objects</i>. The registry-key object defines methods that enable your driver to create, open, and close registry keys; add and remove registry values; and read or write the data that is assigned to a registry value.</p>
+<p>To open a registry key, your driver must call <a href="wdf.wdfregistryopenkey"><b>WdfRegistryOpenKey</b></a>. If the key does not exist, the driver must call <a href="wdf.wdfregistrycreatekey"><b>WdfRegistryCreateKey</b></a>, which creates a new key and opens it. </p>
+<p>When your driver opens a registry key, the framework creates a registry-key object that represents the opened key and returns an object handle to the driver. The driver must use the object handle to access the key, any subkeys that exist under the key, and any values that exist under the key or its subkeys.</p>
+<p>To read the data that is currently assigned to a registry value name, the driver can call one of the following object methods:</p>
+<p></p>
+<dl>
+<dt><a id="_________WdfRegistryQueryMemory________"></a><a id="_________wdfregistryquerymemory________"></a><a id="_________WDFREGISTRYQUERYMEMORY________"></a><a href="wdf.wdfregistryquerymemory"><b>
+        WdfRegistryQueryMemory
+       </b></a></dt>
+<dd>
+<p>Retrieves the data that is currently assigned to a value name, stores the data in a framework-allocated buffer, and creates a framework memory object to represent the buffer.</p>
+</dd>
+<dt><a id="_________WdfRegistryQueryMultiString________"></a><a id="_________wdfregistryquerymultistring________"></a><a id="_________WDFREGISTRYQUERYMULTISTRING________"></a><a href="wdf.wdfregistryquerymultistring"><b>
+        WdfRegistryQueryMultiString
+       </b></a></dt>
+<dd>
+<p>Retrieves the string data that is currently assigned to a multi-string-typed value name, creates a framework string object for each string, and adds each string object to an object collection.</p>
+</dd>
+<dt><a id="_________WdfRegistryQueryString________"></a><a id="_________wdfregistryquerystring________"></a><a id="_________WDFREGISTRYQUERYSTRING________"></a><a href="wdf.wdfregistryquerystring"><b>
+        WdfRegistryQueryString
+       </b></a></dt>
+<dd>
+<p>Retrieves the string data that is currently assigned to a string-typed value name and assigns the string to a specified framework string object.</p>
+</dd>
+<dt><a id="_________WdfRegistryQueryUnicodeString________"></a><a id="_________wdfregistryqueryunicodestring________"></a><a id="_________WDFREGISTRYQUERYUNICODESTRING________"></a><a href="wdf.wdfregistryqueryunicodestring"><b>
+        WdfRegistryQueryUnicodeString
+       </b></a></dt>
+<dd>
+<p>Retrieves the string data that is currently assigned to a string-typed value name and copies the string to a specified <a href="kernel.unicode_string"><b>UNICODE_STRING</b></a> structure.</p>
+</dd>
+<dt><a id="_________WdfRegistryQueryULong________"></a><a id="_________wdfregistryqueryulong________"></a><a id="_________WDFREGISTRYQUERYULONG________"></a><a href="wdf.wdfregistryqueryulong"><b>
+        WdfRegistryQueryULong
+       </b></a></dt>
+<dd>
+<p>Retrieves the unsigned long word (REG_DWORD) data that is currently assigned to a value name and copies the data to a specified location.</p>
+</dd>
+<dt><a id="_________WdfRegistryQueryValue________"></a><a id="_________wdfregistryqueryvalue________"></a><a id="_________WDFREGISTRYQUERYVALUE________"></a><a href="wdf.wdfregistryqueryvalue"><b>
+        WdfRegistryQueryValue
+       </b></a></dt>
+<dd>
+<p>Retrieves the data that is currently assigned to a value name and copies the data to a driver-supplied buffer.</p>
+</dd>
+</dl>
+<p>To write data to a registry value, the driver can call one of the following methods. If the value name already exists, the operating system updates the value's data.</p>
+<p></p>
+<dl>
+<dt><a id="_________WdfRegistryAssignMemory________"></a><a id="_________wdfregistryassignmemory________"></a><a id="_________WDFREGISTRYASSIGNMEMORY________"></a><a href="wdf.wdfregistryassignmemory"><b>
+        WdfRegistryAssignMemory
+       </b></a></dt>
+<dd>
+<p>Assigns data that is contained in a memory buffer to a specified value name in the registry.</p>
+</dd>
+<dt><a id="_________WdfRegistryAssignMultiString________"></a><a id="_________wdfregistryassignmultistring________"></a><a id="_________WDFREGISTRYASSIGNMULTISTRING________"></a><a href="wdf.wdfregistryassignmultistring"><b>
+        WdfRegistryAssignMultiString
+       </b></a></dt>
+<dd>
+<p>Assigns a set of strings to a specified value name in the registry. The strings are contained in a driver-supplied collection of framework string objects.</p>
+</dd>
+<dt><a id="_________WdfRegistryAssignString________"></a><a id="_________wdfregistryassignstring________"></a><a id="_________WDFREGISTRYASSIGNSTRING________"></a><a href="wdf.wdfregistryassignstring"><b>
+        WdfRegistryAssignString
+       </b></a></dt>
+<dd>
+<p>Assigns a string to a specified value name in the registry. The string is contained in a framework string object.</p>
+</dd>
+<dt><a id="_________WdfRegistryAssignUnicodeString________"></a><a id="_________wdfregistryassignunicodestring________"></a><a id="_________WDFREGISTRYASSIGNUNICODESTRING________"></a><a href="wdf.wdfregistryassignunicodestring"><b>
+        WdfRegistryAssignUnicodeString
+       </b></a></dt>
+<dd>
+<p>Assigns a specified Unicode string to a specified value name in the registry.</p>
+</dd>
+<dt><a id="_________WdfRegistryAssignULong________"></a><a id="_________wdfregistryassignulong________"></a><a id="_________WDFREGISTRYASSIGNULONG________"></a><a href="wdf.wdfregistryassignulong"><b>
+        WdfRegistryAssignULong
+       </b></a></dt>
+<dd>
+<p>Assigns a specified unsigned long word value to a specified value name in the registry.</p>
+</dd>
+<dt><a id="_________WdfRegistryAssignValue________"></a><a id="_________wdfregistryassignvalue________"></a><a id="_________WDFREGISTRYASSIGNVALUE________"></a><a href="wdf.wdfregistryassignvalue"><b>
+        WdfRegistryAssignValue
+       </b></a></dt>
+<dd>
+<p>Assigns the contents of a driver-supplied data buffer to a specified value name in the registry.</p>
+</dd>
+</dl>
+<p>To remove a registry value, the driver must call <a href="wdf.wdfregistryremovevalue"><b>WdfRegistryRemoveValue</b></a>. To remove a key, the driver must call <a href="wdf.wdfregistryremovekey"><b>WdfRegistryRemoveKey</b></a>.</p>
+<p>To obtain WDM information about the registry, a driver can call <a href="wdf.wdfregistrywdmgethandle"><b>WdfRegistryWdmGetHandle</b></a>, which returns a WDM handle to the registry key that a framework registry-key object represents.</p>
+<p>After your driver has finished accessing a registry key, it must call <a href="wdf.wdfregistryclose"><b>WdfRegistryClose</b></a> or <a href="wdf.wdfobjectdelete"><b>WdfObjectDelete</b></a> to close the key and delete the registry-key object.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using Framework Registry-Key Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

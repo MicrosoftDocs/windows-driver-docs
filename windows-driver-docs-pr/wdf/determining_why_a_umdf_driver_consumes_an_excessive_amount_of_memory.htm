@@ -1,0 +1,51 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 driver to determine why a UMDF driver consumes an excessive amount of memory."/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Determining Why a UMDF Driver Consumes an Excessive Amount of Memory</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_8110cb59-bcbf-4cb9-a165-46f41b75f8d5.xml"/>
+<meta name="MS-HAID" content="umdf.determining_why_a_umdf_driver_consumes_an_excessive_amount_of_memory"/>
+<meta name="MS-HAID" content="wdf.determining_why_a_umdf_driver_consumes_an_excessive_amount_of_memory"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.determining_why_a_umdf_driver_consumes_an_excessive_amount_of_memory"></a>Determining Why a UMDF Driver Consumes an Excessive Amount of Memory</h1>
+</div>
+<p>This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 driver to determine why a UMDF driver consumes an excessive amount of memory.</p>
+<p>Starting with UMDF version 2, you should instead use the Wdfkd.dll debugger extensions. For more info, see <a href="debugger.kernel_mode_driver_framework_extensions__wdfkd_dll_">Windows Driver Framework Extensions (Wdfkd.dll)</a>.</p>
+<p>To investigate memory usage, use the following steps:</p>
+<ol>
+<li>
+<p>View the outstanding object in the object tree by using the <b>!wudfext.wudfobject</b> UMDF debugger extension. </p>
+<p>The <b>!wudfext.wudfobject</b> extension displays information about a WDF object, which includes its parent and child relationships. If you set bit 0 of the <i>Flags</i> parameter to 1 (0x01), <b>!wudfext.wudfobject</b> performs a recursive dump of the object tree that is rooted at the object that you passed. To view the complete object tree, use the following example command:</p>
+<p><b>!wudfext.wudfobject &lt;IWDFDriver*&gt; 1</b></p>
+</li>
+<li>
+<p>Determine if you see more outstanding objects than you expect.</p>
+<p>Your driver might eventually leak these objects (for more information about leaking WDF objects, see <a href="determining_if_a_driver_leaks_framework_objects.htm">Determining If a Driver Leaks Framework Objects</a>).</p>
+<p>These objects might be in the object tree and would therefore eventually be freed. However, they are being accumulated unnecessarily. These objects might require:</p>
+<ul>
+<li>Corrections to their parent objects. </li>
+<li>Explicit deletion by using the <a href="wdf.iwdfobject_deletewdfobject"><b>IWDFObject::DeleteWdfObject</b></a> method. </li>
+</ul>
+</li>
+</ol>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Determining Why a UMDF Driver Consumes an Excessive Amount of Memory%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

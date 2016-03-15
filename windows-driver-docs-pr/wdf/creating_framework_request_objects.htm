@@ -1,0 +1,61 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Creating Framework Request Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Creating Framework Request Objects</title>
+
+<meta name="MS-HAID" content="Ch3_DFIoPackage_3451b536-04f7-476a-934f-abfccccec8af.xml"/>
+<meta name="MS-HAID" content="kmdf.creating_framework_request_objects"/>
+<meta name="MS-HAID" content="wdf.creating_framework_request_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.creating_framework_request_objects"></a>Creating Framework Request Objects</h1>
+</div>
+<h2><a id="ddk_creating_framework_request_objects_df"></a><a id="DDK_CREATING_FRAMEWORK_REQUEST_OBJECTS_DF"></a></h2>
+<p>Most framework request objects are created by the framework, but your driver can also create request objects.</p>
+<h3><a id="request_objects_created_by_the_framework"></a><a id="REQUEST_OBJECTS_CREATED_BY_THE_FRAMEWORK"></a>Request Objects Created by the Framework</h3>
+<p>When a framework-based driver receives an I/O request packet (IRP) from the I/O manager, the framework intercepts the IRP and creates a framework request object. The framework places the request object into an I/O queue and, if the driver has registered <a href="request_handlers.htm">request handlers</a> for the queue, calls the appropriate handler. </p>
+<p>The following diagram illustrates the steps that occur when the framework creates a request object for a read operation.</p><img src="images/KMDF_Creating_Request_Objects.png" alt="Steps to create a request object for a read operation"/><p>The following steps correspond to the numbers in the preceding diagram:</p>
+<ol>
+<li>
+<p>A user-mode application reads a file by calling the Microsoft Win32 <b>ReadFile</b> function.</p>
+</li>
+<li>
+<p>The <b>ReadFile</b> function calls the I/O manager, which runs in kernel mode.</p>
+</li>
+<li>
+<p>The I/O manager allocates an IRP structure and stores an <a href="kernel.irp_mj_read"><b>IRP_MJ_READ</b></a> function code in the structure.</p>
+</li>
+<li>
+<p>The I/O manager calls the <a href="kernel.dispatchread"><b>DispatchRead</b></a> standard driver routine for driver <i>x</i>, passing a pointer to the IRP structure. Because driver <i>x</i> is a framework-based driver, the framework provides the driver's <i>DispatchRead</i> routine.</p>
+</li>
+<li>
+<p>The framework creates a request object that represents the IRP structure. The framework adds the request object to one of the driver's queue objects.</p>
+</li>
+<li>
+<p>The framework calls the driver's <a href="wdf.evtioread"><i>EvtIoRead</i></a> request handler, passing a queue object handle and a request object handle.</p>
+</li>
+</ol>
+<h3><a id="request_objects_created_by_a_driver"></a><a id="REQUEST_OBJECTS_CREATED_BY_A_DRIVER"></a>Request Objects Created by a Driver</h3>
+<p>Framework-based drivers can also create request objects. For example, a driver might create request objects if it receives a read or write request for an amount of data that is larger than the driver's <a href="using_i_o_targets.htm">I/O targets</a> can handle at one time. In such a situation, the driver can divide the data into several smaller requests and use additional request objects to send these smaller requests to one or more I/O targets.</p>
+<p>To create a request object, your driver should call <a href="wdf.wdfrequestcreate"><b>WdfRequestCreate</b></a> followed by framework object methods that initialize the request, such as <a href="wdf.wdfusbtargetpipeformatrequestforread"><b>WdfUsbTargetPipeFormatRequestForRead</b></a>.  </p>
+<p>If a driver receives WDM IRPs in a WDM dispatch routine and then services or forwards them by using the framework, the driver can call <a href="wdf.wdfrequestcreatefromirp"><b>WdfRequestCreateFromIrp</b></a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Creating Framework Request Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

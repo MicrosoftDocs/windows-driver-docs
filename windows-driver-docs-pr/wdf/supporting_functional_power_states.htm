@@ -1,0 +1,103 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Supporting Functional Power States"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Supporting Functional Power States</title>
+
+<meta name="MS-HAID" content="kmdf.supporting_functional_power_states"/>
+<meta name="MS-HAID" content="wdf.supporting_functional_power_states"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.supporting_functional_power_states"></a>Supporting Functional Power States</h1>
+</div>
+<p>Starting in Windows 8, the power manager includes the run-time power management framework (PoFx). PoFx supports power and clock management at the component (or subdevice) level.</p>
+<p>Starting in KMDF version 1.11, KMDF drivers can take advantage of the fine-grained power control that PoFx offers. In particular, a KMDF driver can define multiple logical components within a single device, each of which can be independently power managed.</p>
+<p>For example, a function driver might define a unique set of functional power states for each logical component of a device. Similar to device and system power states, F0 indicates that the component is fully on, while optional states F1, F2, and so on indicate progressively lower power states. To support Fx states, a driver must be the power policy owner for the device.</p>
+<p>The following table summarizes framework support for different functional power state scenarios.</p>
+<table>
+<tr>
+<th>Type</th>
+<th>KMDF Support</th>
+<th>UMDF Support</th>
+<th>When to use/how to Implement</th>
+</tr>
+<tr>
+<td>
+<p><a href="supporting_multiple_functional_power_states_for_single-component_devices.htm">Single component, single state (F0)</a></p>
+</td>
+<td>
+<p>
+                Supported</p>
+</td>
+<td>
+<p>
+                Supported</p>
+</td>
+<td>
+<p>When you want the power engine plug-in (PEP) to determine the  idle timeout value, and your driver has only one F-state.</p>
+<p>
+
+Call <a href="wdf.wdfdeviceassigns0idlesettings"><b>WdfDeviceAssignS0IdleSettings</b></a> with <i>IdleTimeoutType</i> = <b>SystemManagedIdleTimout</b> or <b>SystemManagedIdleTimoutWithHint</b>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="supporting_multiple_functional_power_states_for_single-component_devices.htm">Single component, multiple states (F0, F1, F2…)</a></p>
+</td>
+<td>
+<p>
+                Supported</p>
+</td>
+<td>
+<p>
+                Not supported</p>
+</td>
+<td>
+<p>When your driver has more than one F-state.</p>
+<ul>
+<li>Call <a href="wdf.wdfdevicewdmassignpowerframeworksettings"><b>WdfDeviceWdmAssignPowerFrameworkSettings</b></a> to register WDM PoFx callbacks.</li>
+<li>Call <a href="wdf.wdfdeviceassigns0idlesettings"><b>WdfDeviceAssignS0IdleSettings</b></a> with <i>IdleTimeoutType</i> = <b>SystemManagedIdleTimout</b>.</li>
+</ul>
+<p>In this case, KMDF handles most interactions with the PoFx.</p>
+<p>For sample code, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=617937">PoFx sample drivers</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="supporting_multiple_functional_power_states_for_multiple-component_devices.htm">Multiple components, single or multiple states</a></p>
+</td>
+<td>
+<p>
+                 Supported using WDM interfaces</p>
+</td>
+<td>
+<p>
+                Not supported</p>
+</td>
+<td>
+<p>When your driver has multiple components. In this case, you must use the PoFx interfaces directly.</p>
+<p>For sample code, see <a href="http://go.microsoft.com/fwlink/p/?LinkId=617937">PoFx sample drivers</a>.</p>
+</td>
+</tr>
+</table>
+<p> </p>
+<p>Because KMDF adds minimal abstraction on top of PoFx, it is helpful to have a basic understanding of PoFx before writing your driver. Accordingly, we recommend that you read <a href="kernel.overview_of_the_power_management_framework">Overview of the Power Management Framework</a> before reading these topics.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Supporting Functional Power States%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

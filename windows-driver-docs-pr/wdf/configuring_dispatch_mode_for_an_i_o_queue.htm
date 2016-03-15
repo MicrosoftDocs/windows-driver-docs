@@ -1,0 +1,57 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Configuring Dispatch Mode for an I/O Queue"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Configuring Dispatch Mode for an I/O Queue</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_761bd67c-7542-41c4-970c-668d3affb7dd.xml"/>
+<meta name="MS-HAID" content="umdf.configuring_dispatch_mode_for_an_i_o_queue"/>
+<meta name="MS-HAID" content="wdf.configuring_dispatch_mode_for_an_i_o_queue"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.configuring_dispatch_mode_for_an_i_o_queue"></a>Configuring Dispatch Mode for an I/O Queue</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>When I/O requests from applications arrive, the framework places each request in the appropriate I/O queue. How and when the requests are delivered to the driver depend on how the driver configures dispatching for the I/O queue and on how the driver <a href="specifying_a_callback_synchronization_mode.htm">specifies callback-function synchronization</a>. The I/O queue also interacts with the PnP and power management subsystem of UMDF to hold I/O requests in the queue until the device reaches the proper state. </p>
+<div class="alert"><b>Note</b>    The dispatch mode for the I/O queue is not related to the <a href="specifying_a_callback_synchronization_mode.htm">synchronization mode</a>. The I/O queue's dispatch configuration controls the number of requests that the driver can accept for processing at any given time, while synchronization controls the simultaneous execution of event callback functions that are presenting or canceling requests. However, several modes of operation are created by <a href="combining_dispatch_and_synchronization_modes.htm">combining dispatch and synchronization modes</a>.</div>
+<div> </div>
+<p>The driver configures dispatching for an I/O queue when the driver calls the <a href="wdf.iwdfdevice_createioqueue"><b>IWDFDevice::CreateIoQueue</b></a> method to configure the default queue or to create a secondary queue. The driver can specify one of the values from the <a href="wdf.wdf_io_queue_dispatch_type"><b>WDF_IO_QUEUE_DISPATCH_TYPE</b></a> enumeration type in the <i>DispatchType</i> parameter of <b>IWDFDevice::CreateIoQueue</b> to identify the dispatch mode. An <a href="framework_i_o_queue_object.htm">I/O queue object</a> can support the following dispatch modes:</p>
+<ul>
+<li>
+<p>Sequential</p>
+<p>The sequential dispatch mode is specified using the <b>WdfIoQueueDispatchSequential</b> value. In this dispatch mode, a queue in the processing state raises events so that a driver only processes one request at a time. The queue defers any additional requests until the driver finishes processing its current request or calls the <a href="wdf.iwdfiorequest_forwardtoioqueue"><b>IWDFIoRequest::ForwardToIoQueue</b></a> method to requeue the request. When the current request completes or is forwarded, the queue raises an event to provide the next request. </p>
+</li>
+<li>
+<p>Parallel</p>
+<p>The parallel dispatch mode is specified using the <b>WdfIoQueueDispatchParallel</b> value. In this dispatch mode, a queue in the processing state raises events as soon as I/O requests are ready for the driver. When the driver receives an I/O request, the driver can process the I/O request in one of the following ways:</p>
+<ul>
+<li>The driver calls either the <a href="wdf.iwdfiorequest_complete"><b>IWDFIoRequest::Complete</b></a> or <a href="wdf.iwdfiorequest_completewithinformation"><b>IWDFIoRequest::CompleteWithInformation</b></a> method to complete the I/O request immediately. A driver completes the I/O request immediately if the I/O request is invalid, cannot ever be serviced, or can be completed by copying data from a buffer or cache that has the data.</li>
+<li>The driver calls the <a href="wdf.iwdfiorequest_forwardtoioqueue"><b>IWDFIoRequest::ForwardToIoQueue</b></a> method to requeue the I/O request.</li>
+<li>The driver calls the <a href="wdf.iwdfiorequest_send"><b>IWDFIoRequest::Send</b></a> method to pass the I/O request to a lower-level driver.</li>
+</ul>
+</li>
+<li>
+<p>Manual</p>
+<p>The manual dispatch mode is specified using the <b>WdfIoQueueDispatchManual</b> value. In this dispatch mode, the I/O queue does not automatically notify the driver when requests arrive at the queue. The driver must call the <a href="wdf.iwdfioqueue_retrievenextrequest"><b>IWDFIoQueue::RetrieveNextRequest</b></a> method to retrieve requests manually from the queue. This is a polling model. </p>In UMDF versions 1.9 and later, if your driver is using the manual dispatch mode, it can call <a href="wdf.iwdfiorequest2_requeue"><b>IWDFIoRequest2::Requeue</b></a> to return an I/O request to the head of the I/O queue from which the driver obtained it. After calling <b>IWDFIoRequest2::Requeue</b>, the driver's next call to <a href="wdf.iwdfioqueue_retrievenextrequest"><b>IWDFIoQueue::RetrieveNextRequest</b></a> retrieves the requeued request.</li>
+</ul>
+<p>For all dispatch modes, the <a href="framework_i_o_queue_object.htm">I/O queue object</a> receives and tracks the request until the driver handles the request or the request is canceled. </p>
+<p>If the driver configures the queue for serial or parallel dispatching, the framework notifies the driver of a request through the callback functions that are registered by the driver when the driver creates the queue or configures the default queue. For more information, see <a href="i_o_queue_event_callback_functions.htm">I/O Queue Event Callback Functions</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Configuring Dispatch Mode for an I/O Queue%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

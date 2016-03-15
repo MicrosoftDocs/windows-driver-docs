@@ -1,0 +1,38 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Sending I/O Requests to General I/O Targets"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Sending I/O Requests to General I/O Targets</title>
+
+<meta name="MS-HAID" content="Ch5_DFIoTargets_881980e2-258c-49c5-b6db-4adf88786449.xml"/>
+<meta name="MS-HAID" content="kmdf.sending_i_o_requests_to_general_i_o_targets"/>
+<meta name="MS-HAID" content="wdf.sending_i_o_requests_to_general_i_o_targets"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.sending_i_o_requests_to_general_i_o_targets"></a>Sending I/O Requests to General I/O Targets</h1>
+</div>
+<h2><a id="ddk_sending_i_o_requests_to_general_i_o_targets_df"></a><a id="DDK_SENDING_I_O_REQUESTS_TO_GENERAL_I_O_TARGETS_DF"></a></h2>
+<p>Your driver can send I/O requests to general I/O targets either synchronously or asynchronously.</p>
+<p>If a driver sends I/O requests synchronously, a driver thread sends the requests one at a time. The thread waits for each request to complete before it sends the next one. This process is simpler than sending the I/O requests asynchronously. Your driver can send I/O requests synchronously if it does not send many requests and if system or device performance is not reduced while your driver waits for each I/O request.</p>
+<p>If a driver sends I/O requests asynchronously, a driver thread sends each request as soon as the request is ready to be sent, without waiting for previously sent requests to finish. If your driver must handle many I/O requests in short periods of time, you probably cannot allow your driver to wait for each request to complete before sending the next request. Otherwise, you might lose data or reduce the performance of your driver's devices and, possibly, of the entire system. </p>
+<p>The framework's I/O target object provides two sets of methods that your driver can call: one set to <a href="sending_i_o_requests_synchronously.htm">send I/O requests synchronously</a> and the other set to <a href="sending_i_o_requests_asynchronously.htm">send I/O requests asynchronously</a>.</p>
+<p>For each of these methods, you must supply a request object and some buffer space. You can use these methods to forward a request that your driver received in one of its I/O queues or to create and send a new request.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Sending I/O Requests to General I/O Targets%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

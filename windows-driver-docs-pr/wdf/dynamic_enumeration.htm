@@ -1,0 +1,146 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Dynamic Enumeration"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Dynamic Enumeration</title>
+
+<meta name="MS-HAID" content="Ch4_DFPnPPackage_42245df6-f928-4261-b482-cf0e73fb274a.xml"/>
+<meta name="MS-HAID" content="kmdf.dynamic_enumeration"/>
+<meta name="MS-HAID" content="wdf.dynamic_enumeration"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.dynamic_enumeration"></a>Dynamic Enumeration</h1>
+</div>
+<p><i>Dynamic enumeration</i> is a driver's ability to detect and report changes to the number and type of devices that are connected to the system while the system is running.</p>
+<p>Bus drivers must use dynamic enumeration if the number or types of devices that are connected to the parent device depend on a system's configuration. Some of these devices might be always connected to the system, and some might be plugged in and unplugged while the system is running.</p>
+<p>For example, the number and type of devices that are plugged into a system's PCI bus are system-dependent, but they are permanent unless a user turns off power, opens the case, and adds or removes a device by using a screwdriver. On the other hand, a user can add or remove USB devices by plugging in or unplugging a cable while the system is running.</p>
+<h3><a id="dynamic_child_lists"></a><a id="DYNAMIC_CHILD_LISTS"></a>Dynamic Child Lists</h3>
+<p>The framework enables drivers to support dynamic enumeration by providing framework child-list objects. Each child-list object represents a list of child devices that are connected to a parent device. The bus driver for the parent device must identify the parent's child devices, add them to the parent device's child list, and create a physical device object (PDO) for each child.</p>
+<p>Each time a driver creates a framework device object that represents an FDO for a device, the framework creates an empty, default child list for the device. Your driver can obtain a handle to a device's default child list by calling <a href="wdf.wdffdogetdefaultchildlist"><b>WdfFdoGetDefaultChildList</b></a>. Typically, if you are writing a bus driver that enumerates a device's children, your driver can add children to the default child list. If you need to create additional child lists, your driver can call <a href="wdf.wdfchildlistcreate"><b>WdfChildListCreate</b></a>.</p>
+<p>Before a driver can use a child list, it must configure the child-list object by initializing a <a href="wdf.wdf_child_list_config"><b>WDF_CHILD_LIST_CONFIG</b></a> structure and passing the structure to either <a href="wdf.wdffdoinitsetdefaultchildlistconfig"><b>WdfFdoInitSetDefaultChildListConfig</b></a>, for the default child list, or to <a href="wdf.wdfchildlistcreate"><b>WdfChildListCreate</b></a>, for additional child lists.</p>
+<h3><a id="dynamic_child_descriptions"></a><a id="DYNAMIC_CHILD_DESCRIPTIONS"></a>Dynamic Child Descriptions</h3>
+<p>Each time a bus driver identifies a child device, it must add the child device's description to a child list. A <i>child description</i> consists of a required <i>identification description</i> and an optional <i>address description</i>. <p></p>
+<dl>
+<dt><a id="Identification_Description"></a><a id="identification_description"></a><a id="IDENTIFICATION_DESCRIPTION"></a><i>Identification Description</i></dt>
+<dd>
+<p>An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a <a href="wdf.wdf_child_identification_description_header"><b>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</b></a> structure. </p>
+<p>Typically, an identification description contains a device's <a href="devinst.device_identification_strings">device identification strings</a>, possibly a serial number, and information about the device's location on the bus, such as a slot number. </p>
+<p>The driver can provide the following set of callback functions, which allow the framework to manipulate the information in an identification description: </p>
+<ul>
+<li>
+<p><a href="wdf.evtchildlistidentificationdescriptioncompare"><i>EvtChildListIdentificationDescriptionCompare</i></a>, which compares the contents of two identification description structures.</p>
+</li>
+<li>
+<p><a href="wdf.evtchildlistidentificationdescriptioncopy"><i>EvtChildListIdentificationDescriptionCopy</i></a>, which copies the contents of one identification description structure to another.</p>
+</li>
+<li>
+<p><a href="wdf.evtchildlistidentificationdescriptionduplicate"><i>EvtChildListIdentificationDescriptionDuplicate</i></a>, which creates a new identification description by duplicating an existing identification description structure and, if necessary, allocating additional buffers.</p>
+</li>
+<li>
+<p><a href="wdf.evtchildlistidentificationdescriptioncleanup"><i>EvtChildListIdentificationDescriptionCleanup</i></a>, which deallocates buffers that were allocated by the <a href="wdf.evtchildlistidentificationdescriptionduplicate"><i>EvtChildListIdentificationDescriptionDuplicate</i></a> callback function.</p>
+</li>
+</ul>
+<p>Typically, you will need to provide these callback functions if your driver's identification description structures contain pointers to dynamically allocated buffers. For more information about the purpose of these callback functions, see their reference pages.</p>
+</dd>
+<dt><a id="Address_Description"></a><a id="address_description"></a><a id="ADDRESS_DESCRIPTION"></a><i>Address Description</i></dt>
+<dd>
+<p>An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a <a href="wdf.wdf_child_address_description_header"><b>WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</b></a> structure. </p>
+<p>Address descriptions are optional. If a device's address information cannot change between the time the device is plugged in and the time it is unplugged, all of the device's address information can be stored in an identification description. For example, USB controllers assign addresses to devices when the devices are plugged in, and these addresses do not change.</p>
+<p>On the other hand, some buses use addressing information that can change. For example, the IEEE 1394 bus uses a "generation count," which is the number of bus resets that have occurred. Each asynchronous I/O request to an IEEE 1394 device must include the generation count. Because this address information can change, your driver must store it in an address description. </p>
+<p>The driver can provide the following set of callback functions to manipulate the information in an address description: </p>
+<ul>
+<li>
+<p><a href="wdf.evtchildlistaddressdescriptioncopy"><i>EvtChildListAddressDescriptionCopy</i></a>, which copies the contents of one address description structure to another.</p>
+</li>
+<li>
+<p><a href="wdf.evtchildlistaddressdescriptionduplicate"><i>EvtChildListAddressDescriptionDuplicate</i></a>, which creates a new address description by duplicating an existing address description structure and, if necessary, allocating additional buffers.</p>
+</li>
+<li>
+<p><a href="wdf.evtchildlistaddressdescriptioncleanup"><i>EvtChildListAddressDescriptionCleanup</i></a>, which deallocates buffers that were allocated by the <a href="wdf.evtchildlistaddressdescriptionduplicate"><i>EvtChildListAddressDescriptionDuplicate</i></a> callback function.</p>
+</li>
+</ul>
+<p>Typically, you will need to provide these callback functions if your driver's address description structures contain pointers to dynamically allocated buffers. For more information about the purpose of these callback functions, see their reference pages.</p>
+</dd>
+</dl>
+</p>
+<h3><a id="adding_devices_to_a_dynamic_child_list"></a><a id="ADDING_DEVICES_TO_A_DYNAMIC_CHILD_LIST"></a>Adding Devices to a Dynamic Child List</h3>
+<p>When the framework calls a bus driver's <a href="wdf.evtdriverdeviceadd"><i>EvtDriverDeviceAdd</i></a> callback function, the callback function must call <a href="wdf.wdfdevicecreate"><b>WdfDeviceCreate</b></a> to create an FDO for the parent device, which is typically a bus adapter. For more information about creating an FDO, see <a href="creating_device_objects_in_a_function_driver.htm">Creating Device Objects in a Function Driver</a>. The driver must then enumerate the parent device's children and add the children to a child list.</p>
+<p> Optionally, the driver can call <a href="wdf.wdfdevicesetbusinformationforchildren"><b>WdfDeviceSetBusInformationForChildren</b></a> to provide the framework with information about the bus. Doing so is recommended because it makes it easier for child devices and apps to identify the bus.</p>
+<p>To add children to a child list, the driver must call <a href="wdf.wdfchildlistaddorupdatechilddescriptionaspresent"><b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b></a> for each child device that it finds. This call informs the framework that a driver has discovered a child device that is connected to a parent device. When your driver calls <b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b>, it supplies an identification description and, optionally, an address description.</p>
+<p>After the driver calls <a href="wdf.wdfchildlistaddorupdatechilddescriptionaspresent"><b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b></a> to report a new device, the framework informs the PnP manager that the new device exists. The PnP manager then builds a device stack and driver stack for the new device. As part of this process, the framework calls the bus driver's <a href="wdf.evtchildlistcreatedevice"><i>EvtChildListCreateDevice</i></a> callback function. This callback function must call <a href="wdf.wdfdevicecreate"><b>WdfDeviceCreate</b></a> to create a PDO for the new device.</p>
+<p>Typically, several child devices are connected to a parent, so the bus driver will need to call <a href="wdf.wdfchildlistaddorupdatechilddescriptionaspresent"><b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b></a> several times. The most efficient way to do this is the following:</p>
+<ol>
+<li>
+<p>Call <a href="wdf.wdfchildlistbeginscan"><b>WdfChildListBeginScan</b></a>.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfchildlistaddorupdatechilddescriptionaspresent"><b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b></a> for each child device.</p>
+</li>
+<li>
+<p>Call <a href="wdf.wdfchildlistendscan"><b>WdfChildListEndScan</b></a>.</p>
+</li>
+</ol>
+<p>If you surround your driver's dynamic enumeration with calls to <a href="wdf.wdfchildlistbeginscan"><b>WdfChildListBeginScan</b></a> and <a href="wdf.wdfchildlistendscan"><b>WdfChildListEndScan</b></a>, the framework stores all of the changes to the child list, and notifies the PnP manager of the changes when the driver calls <b>WdfChildListEndScan</b>. At some later time, the framework calls the bus driver's <a href="wdf.evtchildlistcreatedevice"><i>EvtChildListCreateDevice</i></a> callback function for each device in the child list. This callback function calls <a href="wdf.wdfdevicecreate"><b>WdfDeviceCreate</b></a> to create a PDO for each new device.</p>
+<p>When your driver calls <a href="wdf.wdfchildlistbeginscan"><b>WdfChildListBeginScan</b></a>, the framework marks all previously reported devices as no longer being present. Therefore, the driver must call <a href="wdf.wdfchildlistaddorupdatechilddescriptionaspresent"><b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b></a> for all children that the driver can detect, not just newly discovered children. To add a single child to a child list, the driver can make a single call to <a href="wdf.wdfchildlistupdateallchilddescriptionsaspresent"><b>WdfChildListUpdateAllChildDescriptionsAsPresent</b></a> without first calling <b>WdfChildListBeginScan</b>.</p>
+<h3><a id="updating_a_dynamic_child_list"></a><a id="UPDATING_A_DYNAMIC_CHILD_LIST"></a>Updating a Dynamic Child List</h3>
+<p>There are two common ways to update the information in a dynamic child list:</p>
+<ol>
+<li>
+<p>When a parent device receives an interrupt that indicates the arrival or removal of a child, the driver's <a href="wdf.evtinterruptdpc"><i>EvtInterruptDpc</i></a> callback function calls <a href="wdf.wdfchildlistaddorupdatechilddescriptionaspresent"><b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b></a> if a device has been plugged in or <a href="wdf.wdfchildlistupdatechilddescriptionasmissing"><b>WdfChildListUpdateChildDescriptionAsMissing</b></a> if a device has been unplugged.</p>
+</li>
+<li>
+<p>The driver can provide an <a href="wdf.evtchildlistscanforchildren"><i>EvtChildListScanForChildren</i></a> callback function, which the framework calls each time the parent device enters its working (D0) state. This callback function should enumerate all child devices by calling <a href="wdf.wdfchildlistbeginscan"><b>WdfChildListBeginScan</b></a>, <a href="wdf.wdfchildlistaddorupdatechilddescriptionaspresent"><b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b></a> (or <a href="wdf.wdfchildlistupdateallchilddescriptionsaspresent"><b>WdfChildListUpdateAllChildDescriptionsAsPresent</b></a>), and <a href="wdf.wdfchildlistendscan"><b>WdfChildListEndScan</b></a>.</p>
+</li>
+</ol>
+<p>You can use one or both of these techniques in your driver. </p>
+<h3><a id="traversing_a_dynamic_child_list"></a><a id="TRAVERSING_A_DYNAMIC_CHILD_LIST"></a>Traversing a Dynamic Child List</h3>
+<p>If you want your driver to examine the contents of a child list, it can traverse the list by using one of the following techniques: </p>
+<ul>
+<li>
+<p>To obtain the contents of each child device description, one at a time, the driver can:<ol>
+<li>Call <a href="wdf.wdfchildlistbeginiteration"><b>WdfChildListBeginIteration</b></a>.</li>
+<li>Call <a href="wdf.wdfchildlistretrievenextdevice"><b>WdfChildListRetrieveNextDevice</b></a>, as many times as necessary.</li>
+<li>Call <a href="wdf.wdfchildlistenditeration"><b>WdfChildListEndIteration</b></a>.</li>
+</ol>
+</p>
+<p>When calling <a href="wdf.wdfchildlistbeginiteration"><b>WdfChildListBeginIteration</b></a>, the driver specifies a <a href="wdf.wdf_retrieve_child_flags"><b>WDF_RETRIEVE_CHILD_FLAGS</b></a>-typed flag that indicates whether the framework should retrieve all device descriptions or only a subset. When <a href="wdf.wdfchildlistretrievenextdevice"><b>WdfChildListRetrieveNextDevice</b></a> finds a match, it retrieves the child device's identification and address descriptions, plus a handle to its device object.</p>
+</li>
+<li>
+<p>If you need to obtain the address description that is currently contained in a child device description, your driver can call <a href="wdf.wdfchildlistretrieveaddressdescription"><b>WdfChildListRetrieveAddressDescription</b></a>, specifying an identification description. The framework traverses the child list until it finds a child device with a matching identification description, and then it retrieves the address description.</p>
+</li>
+<li>
+<p>If you need to obtain a handle to the framework device object that is associated with a particular child device, your driver can call <a href="wdf.wdfchildlistretrievepdo"><b>WdfChildListRetrievePdo</b></a>. The framework traverses the child list until it finds a child device with a matching identification description, and then it returns a device object handle.</p>
+</li>
+</ul>
+<h3><a id="accessing_a_pdo_s_identification_and_address_descriptions"></a><a id="ACCESSING_A_PDO_S_IDENTIFICATION_AND_ADDRESS_DESCRIPTIONS"></a>Accessing a PDO's Identification and Address Descriptions</h3>
+<p>Your driver can call the following methods to access a PDO's identification description or address description:</p>
+<ul>
+<li>
+<p><a href="wdf.wdfpdoretrieveidentificationdescription"><b>WdfPdoRetrieveIdentificationDescription</b></a>, which retrieves the identification description that is associated with a PDO.</p>
+</li>
+<li>
+<p><a href="wdf.wdfpdoretrieveaddressdescription"><b>WdfPdoRetrieveAddressDescription</b></a>, which retrieves the address description that is associated with a PDO.</p>
+</li>
+<li>
+<p><a href="wdf.wdfpdoupdateaddressdescription"><b>WdfPdoUpdateAddressDescription</b></a>, which updates the address description that is associated with a PDO.</p>
+</li>
+</ul>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Dynamic Enumeration%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

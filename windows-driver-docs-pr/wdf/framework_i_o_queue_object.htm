@@ -1,0 +1,36 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Framework I/O Queue Object"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Framework I/O Queue Object</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_43ee3ba7-4d20-4842-a99b-f4b732eeadf6.xml"/>
+<meta name="MS-HAID" content="umdf.framework_i_o_queue_object"/>
+<meta name="MS-HAID" content="wdf.framework_i_o_queue_object"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.framework_i_o_queue_object"></a>Framework I/O Queue Object</h1>
+</div>
+<p class="CCE_Message">[This topic applies to UMDF 1.<i>x</i>.]</p>
+<p>The framework I/O queue object is exposed to drivers by the <a href="wdf.iwdfioqueue">IWDFIoQueue</a> interface. It represents an I/O queue, which is a container for I/O requests. An I/O queue controls the flow of requests into the driver. When an I/O request arrives, it is placed in the appropriate queue. I/O queue objects are children of <a href="framework_device_object.htm">UMDF device objects</a>. A driver can call the <a href="wdf.iwdfdevice_createioqueue"><b>IWDFDevice::CreateIoQueue</b></a> method to create I/O queue objects. In the call to <b>IWDFDevice::CreateIoQueue</b>, the driver can specify whether the queue is the default queue.</p>
+<p>When the driver creates an I/O queue, it specifies a dispatch model that controls the delivery of requests to the driver. For more information, see <a href="configuring_dispatch_mode_for_an_i_o_queue.htm">Configuring Dispatch Mode for an I/O Queue</a>.</p>
+<p>When drivers create I/O queues, they can provide interfaces for callback functions that the framework calls to notify the driver when events related to the interfaces occur. For more information, see <a href="i_o_queue_event_callback_functions.htm">I/O Queue Event Callback Functions</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Framework I/O Queue Object%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

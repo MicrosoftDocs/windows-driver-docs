@@ -1,0 +1,39 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Reusing Framework Request Objects"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Reusing Framework Request Objects</title>
+
+<meta name="MS-HAID" content="Ch3_DFIoPackage_316a4f11-ab69-4994-8265-e41501ab24e2.xml"/>
+<meta name="MS-HAID" content="kmdf.reusing_framework_request_objects"/>
+<meta name="MS-HAID" content="wdf.reusing_framework_request_objects"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.reusing_framework_request_objects"></a>Reusing Framework Request Objects</h1>
+</div>
+<h2><a id="ddk_reusing_framework_request_objects_df"></a><a id="DDK_REUSING_FRAMEWORK_REQUEST_OBJECTS_DF"></a></h2>
+<p>To improve performance, framework-based drivers that create and send lots of nearly identical asynchronous requests to an I/O target can reuse request objects instead of creating a new request object for each request. A driver can reuse a request object after the request has been completed. </p>
+<p>If a driver has created a request object by calling <a href="wdf.wdfrequestcreate"><b>WdfRequestCreate</b></a> or <a href="wdf.wdfrequestcreatefromirp"><b>WdfRequestCreateFromIrp</b></a>, it can reuse the request by calling <a href="wdf.wdfrequestreuse"><b>WdfRequestReuse</b></a>. A driver can also reuse request objects that it has received from the framework in its I/O queues, but it cannot change the IRP that the received request object contains.</p>
+<p>If you are careful to 
+avoid situations that cause the unsuccessful return values described in <a href="wdf.wdfrequestreuse"><b>WdfRequestReuse</b></a>, your driver can call <b>WdfRequestReuse</b> from within a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function. (The <i>CompletionRoutine</i> callback function has a VOID return value and therefore cannot report errors.)
+</p>
+<p>If your driver provides a <a href="wdf.completionroutine"><i>CompletionRoutine</i></a> callback function for a request object that it reuses, the driver must call <a href="wdf.wdfrequestsetcompletionroutine"><b>WdfRequestSetCompletionRoutine</b></a> after calling <a href="wdf.wdfrequestreuse"><b>WdfRequestReuse</b></a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Reusing Framework Request Objects%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Using WPP Software Tracing in UMDF Drivers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Using WPP Software Tracing in UMDF Drivers</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_f16ca469-c17e-4f7a-a71d-6f200ec38ac9.xml"/>
+<meta name="MS-HAID" content="umdf.using_wpp_software_tracing_in_umdf_based_drivers"/>
+<meta name="MS-HAID" content="umdf.using_wpp_software_tracing_in_umdf_drivers"/>
+<meta name="MS-HAID" content="wdf.using_wpp_software_tracing_in_umdf_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.using_wpp_software_tracing_in_umdf_drivers"></a>Using WPP Software Tracing in UMDF Drivers</h1>
+</div>
+<p><a href="devtest.wpp_software_tracing">WPP software tracing</a> enables you to add tracing messages that help you debug your driver. Additionally, the framework's <a href="using_the_framework_s_event_logger.htm">event logger</a> provides hundreds of tracing messages that you can view.</p>
+<p>You can view tracing messages by using <a href="devtest.traceview">TraceView</a> or <a href="devtest.tracelog">Tracelog</a>. You can also <a href="devtest.how_do_i_send_trace_messages_to_a_kernel_debugger_">send trace messages to a kernel debugger</a>.</p>
+<h3><a id="adding_tracing_messages_to_your_driver"></a><a id="ADDING_TRACING_MESSAGES_TO_YOUR_DRIVER"></a>Adding Tracing Messages to Your Driver</h3>
+<p>To add tracing messages to your framework-based driver, you must:</p>
+<ul>
+<li>
+<p>Add an <b>#include</b> directive to each of your driver's source files that contains any of the WPP macros. This directive must identify a <a href="devtest.trace_message_header_file">trace message header (TMH) file</a>. The file name must have a format of &lt;<i>driver-source-file-name</i>&gt;.tmh.</p>
+<p>For example, if your driver consists of two source files, called <i>MyDriver1.c</i> and <i>MyDriver2.c</i>, then <i>MyDriver1.c</i> must contain:</p>
+<p><code>#include "MyDriver1.tmh"</code></p>
+<p>and <i>MyDriver2.c</i> must contain:</p>
+<p><code>#include "MyDriver2.tmh"</code></p>
+<p>When you build your driver in Microsoft Visual Studio, the WPP preprocessor generates the .tmh files.</p>
+</li>
+<li>
+<p>Define a <a href="devtest.wpp_control_guids">WPP_CONTROL_GUIDS</a> macro in a header file. This macro defines a GUID and <a href="devtest.trace_flags">trace flags</a> for your driver's tracing messages. (For each of the WDK's UMDF-based sample drivers, the Internal.h header file includes this macro.)</p>
+</li>
+<li>
+<p>Include a <a href="devtest.wpp_init_tracing">WPP_INIT_TRACING</a> macro in your driver's DllMain routine. This macro activates software tracing in your driver. (For each of the WDK's UMDF-based sample drivers, the DllSup.h header file includes this macro.)</p>
+</li>
+<li>
+<p>Include a <a href="devtest.wpp_cleanup">WPP_CLEANUP</a> macro in your driver's DllMain routine. This macro deactivates software tracing in your driver. (For each of the WDK's UMDF-based sample drivers, the DllSup.h header file includes this macro.)</p>
+</li>
+<li>
+<p>Use the <a href="devtest.dotracemessage"><b>DoTraceMessage</b></a> macro, or a <a href="devtest.can_i_customize_dotracemessage_">customized version</a> of the macro, in your driver to create trace messages. (For each of the WDK's UMDF-based sample drivers, the Internal.h header file includes a customized macro.)</p>
+</li>
+<li>
+<p>Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select <b>Properties</b>.
+In the Property Pages for the driver, click <b>Configuration Properties</b>, and then <b>Wpp</b>. Under the <b>General</b> menu, set <b>Run WPP Tracing</b> to Yes.  Under the <b>File Options</b> menu, you should  also specify the framework's WPP template file, for example:<pre class="syntax" xml:space="preserve"><code>{km-WdfDefault.tpl}*.tmh</code></pre>
+</p>
+</li>
+</ul>
+<p>For more information about adding tracing messages to your driver, see <a href="devtest.adding_wpp_macros_to_a_trace_provider">Adding WPP Macros to a Driver</a>.</p>
+<h3><a id="sample_drivers_that_use_wpp_software_tracing"></a><a id="SAMPLE_DRIVERS_THAT_USE_WPP_SOFTWARE_TRACING"></a>Sample Drivers That Use WPP Software Tracing</h3>
+<p>All of the UMDF-based sample drivers in the WDK provide DllSup.h, Internal.h, and Sources files that enable WPP software tracing. Most of these sample drivers also use a customized macro to create trace messages. </p>
+<h3><a id="viewing_your_driver_s_trace_messages"></a><a id="VIEWING_YOUR_DRIVER_S_TRACE_MESSAGES"></a>Viewing Your Driver's Trace Messages</h3>
+<p>If you have added trace messages to your driver, the driver is a <a href="devtest.trace_provider">trace provider</a>. You can use a <a href="devtest.trace_controller">trace controller</a>, such as <a href="devtest.tracelog">Tracelog</a>, to control a <a href="devtest.trace_session">trace session</a> and create a <a href="devtest.trace_log">trace log</a>. You can use a <a href="devtest.trace_consumer">trace consumer</a>, such as <a href="devtest.tracefmt">Tracefmt</a>, to view the messages.</p>
+<p>For more information about how to use the software tracing tools, see <a href="devtest.survey_of_software_tracing_tools">Survey of Software Tracing Tools</a>.</p>
+<h3><a id="viewing_the_umdf_trace_log"></a><a id="VIEWING_THE_UMDF_TRACE_LOG"></a>Viewing the UMDF Trace Log</h3>
+<p>The UMDF log file is %windir%\system32\LogFiles\WUDF\WUDFTrace.etl.</p>
+<div class="alert"><b>Note</b>  Starting in UMDF 2.15, the log directory is <i>%ProgramData%</i>\Microsoft\WDF.</div>
+<div> </div>
+<p> You can view the UMDF log file by using either <a href="devtest.traceview">TraceView</a> or <a href="devtest.tracelog">Tracelog</a>. Both tools require trace message format (TMF) files that format the trace log's messages. The TMF files are available in the WDK, under the \tools\tracing subdirectory.   (In TraceView, UMDF appears as a named provider with the name of "UMDF-Framework Trace" or "Framework Trace", depending on the UMDF version.)</p>
+<p><a href="devtest.wdf_verifier_control_application">WDF Verifier</a> enables you to send trace messages to both the UMDF trace log and your kernel debugger. (You should not send trace messages to your kernel debugger by using the <b>-kd</b> option in <a href="devtest.tracelog">Tracelog</a>, because <b>Tracelog</b> can disrupt trace logging within UMDF.)</p>
+<p>You can also use the <a href="debugger.wmi_tracing_extensions__wmitrace_dll_"><b>!wmitrace</b></a> debugger extension to <a href="devtest.how_do_i_send_trace_messages_to_a_kernel_debugger_">view the trace messages</a> in the debugger:</p>
+<ol>
+<li>In WinDbg, attach to the instance of WUDFHost that hosts the driver. For more information, see <a href="enabling_a_debugger.htm">How to Enable Debugging of a UMDF Driver</a>.</li>
+<li>
+<p>If your driver uses version 1.11 or later, and you are using the kernel debugger from Windows 8 or later, you can skip this step. If your driver uses a version of UMDF earlier than 1.11, use  <a href="debugger._wmitrace_tmffile"><b>!wmitrace.tmffile</b></a> or <a href="debugger._wmitrace_searchpath"><b>!wmitrace.searchpath</b></a> to specify a platform-specific trace message format (.tmf) file, or a path to a .tmf file.  The .tmf files are located in platform-specific subdirectories in the WDK.</p>
+</li>
+<li>Use the  <a href="debugger._wmitrace_logdump"><b>!wmitrace.logdump</b></a> command to display the contents of the trace buffers: <pre class="syntax" xml:space="preserve"><code>!wmitrace.logdump WudfTrace</code></pre>
+</li>
+</ol>
+<h3><a id="controlling_trace_messages"></a><a id="CONTROLLING_TRACE_MESSAGES"></a>Controlling Trace Messages</h3>
+<p>You can control UMDF trace messages with the user interface that <a href="devtest.wdf_verifier_control_application">WDF Verifier</a> provides, or by modifying registry values. You should use the <b>WDF Verifier</b> interface when possible, because the registry values might change in future versions of UMDF. In addition, you should not access these values within INF files or your driver's code.</p>
+<p>Currently, you can modify the following registry values, which are located under the <b>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF</b> registry key:</p>
+<ul>
+<li>
+<p>The <b>LogEnable</b> value controls whether UMDF creates a trace log for your driver. If this value is set to 1, UMDF creates a trace log.</p>
+</li>
+<li>
+<p>The <b>LogLevel</b> value controls the amount of information that UMDF trace messages contain. The default value for <b>LogLevel</b> is 3, which causes UMDF trace messages to contain error and warning messages. Set this value to 7 to include error and warning messages, plus non-error informational messages. Set it to 15 to include all of the trace information that UMDF is capable of providing.</p>
+</li>
+<li>
+<p>The <b>LogKd</b> value controls whether UMDF sends trace messages to your kernel debugger. If <b>LogKd</b> is set to 1, UMDF sends its trace messages to your kernel debugger.</p>
+</li>
+<li>
+<p>The <b>LogFlushPeriodSeconds</b> value specifies how often, in seconds, trace messages are written to the trace log.</p>
+</li>
+<li>
+<p>The <b>LogMinidumpType</b> value contains flags that specify the type of information that a mini-dump file, if produced, will contain. For more information about these flags, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=160310">MINIDUMP_TYPE</a>  enumeration.</p>
+</li>
+</ul>
+<p>You might find additional registry values under the <b>HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF</b> registry key. You should not modify those values.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Using WPP Software Tracing in UMDF Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

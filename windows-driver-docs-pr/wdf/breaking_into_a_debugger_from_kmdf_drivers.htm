@@ -1,0 +1,56 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Breaking into a Debugger from KMDF Drivers"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Breaking into a Debugger from KMDF Drivers</title>
+
+<meta name="MS-HAID" content="Ch0_DFArchOverview_cc2d266d-6f99-4763-a0c7-a8c3fa6b0717.xml"/>
+<meta name="MS-HAID" content="kmdf.breaking_into_a_debugger_from_framework_based_drivers"/>
+<meta name="MS-HAID" content="kmdf.breaking_into_a_debugger_from_kmdf_drivers"/>
+<meta name="MS-HAID" content="wdf.breaking_into_a_debugger_from_kmdf_drivers"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.breaking_into_a_debugger_from_kmdf_drivers"></a>Breaking into a Debugger from KMDF Drivers</h1>
+</div>
+<p>If you want your framework-based driver to break into a kernel-mode debugger, you can use the following:</p>
+<ul>
+<li>
+<p>The <a href="wdf.wdfverifierdbgbreakpoint"><b>WdfVerifierDbgBreakPoint</b></a> function breaks into the debugger if the <a href="registry_values_for_debugging_kmdf_drivers.htm">DbgBreakOnError</a> value is set in the registry.</p>
+</li>
+<li>
+<p>The <a href="wdf.wdfverify"><b>WDFVERIFY</b></a> macro tests a logical expression and breaks into the kernel debugger if the expression evaluates to <b>FALSE</b> and if the <a href="registry_values_for_debugging_kmdf_drivers.htm">VerifyOn</a> value is set in the registry.</p>
+</li>
+<li>
+<p>The <a href="wdf.verify_is_irql_passive_level"><b>VERIFY_IS_IRQL_PASSIVE_LEVEL</b></a> macro breaks into the kernel debugger if the driver is not executing at IRQL = PASSIVE_LEVEL and if the <b>VerifyOn</b> value is set in the registry.</p>
+</li>
+<li>
+<p>The <a href="devtest.assert"><b>ASSERT</b></a> macro tests a logical expression and breaks into the kernel debugger if the expression evaluates to <b>FALSE</b>.</p>
+</li>
+<li>
+<p>The <a href="devtest.assertmsg"><b>ASSERTMSG</b></a> macro tests an expression and, if the expression evaluates to <b>FALSE</b>, breaks into the kernel debugger and supplies a displayable text message to the debugger.</p>
+</li>
+<li>
+<p>The <a href="devtest.dbgprintex"><b>DbgPrintEx</b></a> and <a href="devtest.kdprintex"><b>KdPrintEx</b></a> functions supply a displayable text message to the debugger.</p>
+</li>
+</ul>
+<p>The code for the WDFVERIFY and VERIFY_IS_IRQL_PASSIVE_LEVEL macros is included in your driver when you build your driver in a release or debug configuration (referred to as a free build environment or a checked build environment in Windows 7 and earlier). The code for the ASSERT and ASSERTMSG macros is included in your driver only when you build your driver in a debug configuration.</p>
+<p>For more information about project configurations, see <a href="https://msdn.microsoft.com/windows-drivers/develop/building_a_driver">Building a Driver</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Breaking into a Debugger from KMDF Drivers%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>

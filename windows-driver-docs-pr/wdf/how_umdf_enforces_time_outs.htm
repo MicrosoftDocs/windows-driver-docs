@@ -1,0 +1,38 @@
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:mssdk="winsdk" xmlns:script="urn:script" xmlns:build="urn:build" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Description" content="Host Process Timeouts in UMDF"/>
+<meta name="MSHAttr" content="PreferredSiteName:MSDN"/>
+<meta name="MSHAttr" content="PreferredLib:/library/windows/hardware"/>
+<title>Host Process Timeouts in UMDF</title>
+
+<meta name="MS-HAID" content="umdfobjectdg_6c3cdf7a-e917-4842-9bdd-c3e5ef5530fa.xml"/>
+<meta name="MS-HAID" content="umdf.how_umdf_enforces_time_outs"/>
+<meta name="MS-HAID" content="wdf.how_umdf_enforces_time_outs"/>
+
+
+<link rel="STYLESHEET" type="text/css" HREF="../common/backsdk4.css"/>
+
+
+</head>
+<body>
+
+<div id="mainSection">
+<div class="clsServerSDKContent">
+<h1><a id="wdf.how_umdf_enforces_time_outs"></a>Host Process Timeouts in UMDF</h1>
+</div>
+<p>When the reflector sends a critical request to the driver host process, the host starts an internal timer. The default timeout interval is 60 seconds. Critical requests include Plug and Play, power, and I/O cancellation.</p>
+<p>  As long as the User-Mode Driver Framework (UMDF) driver performs operations on a regular basis toward completing the request, the reflector extends the timeout period. For example, for a remove request, the driver needs to return from the remove callbacks at regular intervals.</p>
+<p>If the timeout period expires, the reflector generates a WER error report, terminates the host process, and attempts to restart the device. For info about automatic restart, see <a href="using_device_pooling_in_umdf_drivers.htm">Using Device Pooling in UMDF Drivers</a>.</p>
+<p> For info about the fields in this report, see <a href="accessing_umdf_metadata_in_wer_reports.htm">Accessing UMDF Metadata in WER Reports</a>.</p>
+<p>Timeout expiration is the most common reason for the reflector to terminate the host process.</p>
+<p>You can extend the timeout period by using the <a href="devtest.wdf_verifier_control_application">WDF Verifier Control Application</a>.</p>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20Host Process Timeouts in UMDF%20 RELEASE:%20(3/15/2016)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>
+</div>
+<p style="text-align:left;font-family:Arial,sanserif;font-size:100%;color:black">
+&#x00a9;&#x00a0;2016 Microsoft. All rights reserved.</p>
+
+</body>
+</html>
