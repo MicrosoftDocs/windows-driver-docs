@@ -1,7 +1,6 @@
 ---
 title: WDM Concepts for WDF Drivers
 description: WDM Concepts for WDF Drivers
-MSHAttr: PreferredLib /library/windows/hardware
 ms.assetid: 164b4882-a5a3-45d3-a2f5-53367b396439
 keywords: ["kernel mode drivers WDK KMDF WDM", "KMDF WDK WDM", "Kernel Mode Driver Framework WDK WDM", "framework based drivers WDK KMDF WDM", "WDM drivers WDK KMDF", "bus enumeration WDK KMDF", "bus drivers WDK KMDF", "function drivers WDK KMDF", "filter drivers WDK KMDF", "driver stacks WDK KMDF", "stacks WDK KMDF", "device stacks WDK KMDF", "IRPs WDK KMDF", "I/O request packets WDK KMDF", "I/O requests WDK KMDF IRPs"]
 ---
@@ -51,7 +50,7 @@ WDF drivers typically do not directly access IRPs. The framework converts the WD
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20WDM%20Concepts%20for%20WDF%20Drivers%20%20RELEASE:%20%283/15/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20WDM%20Concepts%20for%20WDF%20Drivers%20%20RELEASE:%20%283/16/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

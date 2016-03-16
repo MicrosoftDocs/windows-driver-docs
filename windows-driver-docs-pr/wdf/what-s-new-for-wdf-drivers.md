@@ -1,7 +1,6 @@
 ---
 title: What's New for WDF Drivers in Windows 10
 description: This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.Windows 10 includes Kernel Mode Driver Framework (KMDF) version 1.15 and User Mode Driver Framework (UMDF) version 2.15.
-MSHAttr: PreferredLib /library/windows/hardware
 ms.assetid: 61fd9916-38e7-47d0-aec7-d5a489eb21eb
 keywords: ["kernel mode drivers WDK KMDF about KMDF", "KMDF WDK about KMDF", "Kernel Mode Driver Framework WDK about KMDF", "framework based drivers WDK KMDF", "framework based drivers WDK KMDF about framework based drivers", "objects WDK KMDF", "framework objects WDK KMDF"]
 ---
@@ -131,7 +130,7 @@ For information about new and updated DDIs, please see [UMDF Version History](um
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20What's%20New%20for%20%20WDF%20Drivers%20in%20Windows%C2%A010%20%20RELEASE:%20%283/15/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20What's%20New%20for%20%20WDF%20Drivers%20in%20Windows%C2%A010%20%20RELEASE:%20%283/16/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
