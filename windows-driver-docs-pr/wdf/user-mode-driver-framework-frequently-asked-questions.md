@@ -1,0 +1,122 @@
+---
+title: User Mode Driver Framework Frequently Asked Questions
+description: Windows Driver Frameworks (WDF) is a set of libraries that you can use to write device drivers that run on the Windows operating system.
+MSHAttr: PreferredLib /library/windows/hardware
+ms.assetid: 0c07e514-73f9-4d24-86ad-8ac036fdbcf4
+---
+
+# User-Mode Driver Framework Frequently Asked Questions
+
+
+**In this article**
+
+-   [Which operating systems can run UMDF drivers?](#which-operating-systems-can-run-umdf-drivers-)
+-   [What is the most recent version of UMDF?](#what-is-the-most-recent-version-of-umdf-)
+-   [What is the difference between UMDF version 2.0 and the previous version, 1.11 (one dot eleven)?](#what-is-the-difference-between-umdf-version-2-0-and-the-previous-version--1-11--one-dot-eleven--)
+-   [Which operating systems support UMDF 2.0?](#which-operating-systems-support-umdf-2-0-)
+-   [Which UMDF versions can I build against in Windows Driver Kit (WDK) 8.1?](#which-umdf-versions-can-i-build-against-in-windows-driver-kit--wdk--8-1-)
+-   [Can I write part of my driver to run in user mode and part in kernel mode?](#can-i-write-part-of-my-driver-to-run-in-user-mode-and-part-in-kernel-mode-)
+-   [Which framework should I start with?](#---which-framework-should-i-start-with-)
+-   [How do user-mode drivers handle security?](#how-do-user-mode-drivers-handle-security-)
+-   [Will a user-mode driver be fast enough?](#will-a-user-mode-driver-be-fast-enough---)
+-   [What is the difference between a user-mode driver and an application?](#what-is-the-difference-between-a-user-mode-driver-and-an-application----)
+-   [How do I debug a UMDF driver?](#how-do-i-debug-a-umdf-driver---)
+-   [Is there a newsgroup for UMDF?](#is-there-a-newsgroup-for-umdf-)
+
+Windows Driver Frameworks (WDF) is a set of libraries that you can use to write device drivers that run on the Windows operating system. WDF defines a single driver model that is supported by two frameworks: Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF). This topic provides answers to frequently asked questions about UMDF.
+
+## Which operating systems can run UMDF drivers?
+
+
+You can run UMDF drivers on the following operating systems:
+
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Vista
+-   Windows XP
+
+## What is the most recent version of UMDF?
+
+
+Windows 8.1 includes UMDF version 2.0.
+
+## What is the difference between UMDF version 2.0 and the previous version, 1.11 (one dot eleven)?
+
+
+You write a UMDF 2.0 driver in the C programming language, and you can easily compile the same driver for KMDF. To write a UMDF version 1 driver, you must use the COM programming model.
+
+For more info, see [Getting Started with UMDF](getting-started-with-umdf-version-2.md).
+
+## Which operating systems support UMDF 2.0?
+
+
+As of Windows 8.1, UMDF 2.0 drivers run on Windows 8.1 only.
+
+## Which UMDF versions can I build against in Windows Driver Kit (WDK) 8.1?
+
+
+You can build UMDF 2.0, 1.11, and 1.9 drivers using Windows Driver Kit (WDK) 8.1 and Microsoft Visual Studio. For information about which versions of Windows can run drivers built using these UMDF versions, see [UMDF Version History](umdf-version-history.md).
+
+## Can I write part of my driver to run in user mode and part in kernel mode?
+
+
+Yes. Even if your driver requires access to some kernel-mode resources or features, you might be able to split your driver into two parts. This approach enables you to benefit from some of the advantages of developing and running drivers in user mode.
+
+A UMDF driver can receive I/O requests from a kernel-mode driver. For more info about *kernel-mode clients*, see [Supporting Kernel-Mode Clients in UMDF 2.0 Drivers](supporting-kernel-mode-clients-in-umdf-drivers.md).
+
+As a result of increased parity between KMDF and UMDF, however, you will rarely need to split a driver.
+
+## <a href="" id="---which-framework-should-i-start-with-"></a> Which framework should I start with?
+
+
+If your driver requires any of the less common features listed in [Comparing UMDF 2.0 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md), you must use KMDF. For all other drivers, your first choice should be UMDF.
+
+If you start with UMDF and decide later to transition to KMDF, you can do so with minimal effort, as described in [How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md).
+
+## How do user-mode drivers handle security?
+
+
+UMDF drivers run in a driver host process, which runs in the security credentials of a LocalService account, although the host process itself is not a Windows service. Thus, user-mode drivers are as secure as any other user-mode service. When a UMDF driver issues I/O requests, it can optionally impersonate its client process. Impersonation enables the driver thread to run in the security context of the client so that the system performs access checks against the client's identity rather than that of the driver host process.
+
+A user-mode driver can impersonate its client process only for I/O requests, and not for Plug and Play or other system messages.
+
+At driver installation, the INF file sets a maximum impersonation level for the driver. Impersonation should be set at the lowest level possible to prevent "elevation-of-privilege" attacks. When a client application calls the **CreateFile** function, it specifies an impersonation level. The driver then requests this level of impersonation for each individual I/O request.
+
+## <a href="" id="will-a-user-mode-driver-be-fast-enough---"></a>Will a user-mode driver be fast enough?
+
+
+Performance is a high priority in developing UMDF. Although latency and CPU usage both increase somewhat, bus capacity is the primary gating factor for the types of devices that UMDF supports.
+
+## <a href="" id="what-is-the-difference-between-a-user-mode-driver-and-an-application----"></a>What is the difference between a user-mode driver and an application?
+
+
+A user-mode driver is started by the Driver Manager and runs in a driver host process. A single instance of the driver can service simultaneous requests from multiple applications. To communicate with the driver, applications issue I/O requests to the driver's device through the Win32 API. The primary entry point in a user-mode driver is the [**IDriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff554885) interface (UMDF 1.11 and earlier) or the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807) routine (starting in UMDF 2.0), rather than a **main()** function.
+
+A driver also includes additional interfaces or callbacks that are invoked in response to I/O requests and Plug and Play and power notifications. A device that is managed by a UMDF driver is integrated into the system and participates in Plug and Play and power management.
+
+## <a href="" id="how-do-i-debug-a-umdf-driver---"></a>How do I debug a UMDF driver?
+
+
+You can debug a UMDF driver by using user-mode debuggers or kernel-mode debuggers. For more info, see [Debugging WDF Drivers](debugging-a-wdf-driver.md).
+
+Starting in UMDF version 2.0, you can use many of the commands in the *Wdfkd.dll* debugger extension library to debug your UMDF driver. For a list of commands, see [Debugger Extensions](debugger-extensions-for-kmdf-drivers.md). In addition, UMDF stores the UMDF trace log (or UMDF *IFR*) in kernel non-paged memory. For info about the IFR, see [Using the Framework's Event Logger](using-the-framework-s-event-logger.md).
+
+## Is there a newsgroup for UMDF?
+
+
+You can find discussion of all aspects of Windows drivers on the following forums:
+
+-   Microsoft maintains the [Windows Hardware WDK and Driver Development](http://social.msdn.microsoft.com/Forums/windowsdesktop/en-US/home?forum=wdk) forum.
+
+-   Open Systems Resources (OSR) moderates the [OSR Online NTDEV List](http://www.osronline.com/showlists.cfm?list=ntdev) forum.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20User-Mode%20Driver%20Framework%20Frequently%20Asked%20Questions%20%20RELEASE:%20%283/15/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

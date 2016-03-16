@@ -1,0 +1,55 @@
+---
+title: Power Management for I/O Queues
+description: Power Management for I/O Queues
+MSHAttr: PreferredLib /library/windows/hardware
+ms.assetid: 2e1bf9d2-615b-49b0-b677-f41b23c42eda
+keywords: ["power management WDK KMDF I/O queues", "I/O queues WDK KMDF power management", "I/O requests WDK KMDF power management", "power managed I/O queues WDK KMDF", "working states WDK KMDF", "PowerManaged settings WDK KMDF", "low power states WDK KMDF", "sleep power management WDK KMDF", "power states WDK KMDF", "device power states WDK KMDF"]
+---
+
+# Power Management for I/O Queues
+
+
+When the framework receives an I/O request that is directed to one of your driver's devices, the framework puts the request in an I/O queue. The driver can obtain I/O requests from the I/O queue by providing request handlers or by polling the queue. For more information about I/O queues, see [Handling I/O Requests in Framework-Based Drivers](handling-i-o-requests-in-wdf-drivers.md).
+
+As you are designing your driver, you should group the I/O requests that your driver will receive into two categories:
+
+1.  Requests that require a device to be in its working (D0) state, including:
+    -   Read or write requests that require the device's function driver to read data from, or write data to, the device.
+    -   Device control requests that a function or bus driver cannot service without accessing the device.
+
+2.  Requests that do not require a device to be in its working (D0) state, including:
+    -   Device control requests that a function or bus driver can service without accessing the device.
+    -   Possibly all the requests that a filter driver receives.
+    -   All the requests that all drivers in a driver stack receive, if the stack supports a software-only device that does not communicate with any hardware.
+
+Unless you are writing a filter driver, or a driver for a stack that does not communicate with hardware, it is likely that your driver will receive some requests that require the device to be in its working state, together with some that do not.
+
+To support these two types of requests, the framework provides two types of I/O queues: those that are *power-managed* and those that are not. When your driver creates each of its I/O queues, it sets the **PowerManaged** member in the queue's [**WDF\_IO\_QUEUE\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552359) structure to either **WdfTrue** or **WdfFalse** to indicate one of the following:
+
+-   If your driver sets **PowerManaged** to **WdfTrue**, the queue is power-managed.
+
+    When I/O requests are available in a power-managed queue, the framework delivers the requests to the driver only if the device is in its working (D0) state. Therefore, whenever your driver receives a request from a power-managed queue, the framework guarantees that the device is available. If the device is not in its working state, the framework stores requests in the queue until the device becomes available.
+
+    If the device is in a low-power state because it is idle, and if the framework puts an I/O request in one of your driver's power-managed queues, the framework asks the driver stack to restore the device to its working state before it delivers the request to your driver.
+
+    If the device is in a low-power state because the system is not in its working (S0) state, and if the framework puts an I/O request in one of your driver's power-managed queues, the framework waits until the device returns to its working (D0) state and then delivers the request to your driver.
+
+    Because the framework does not deliver I/O requests from a power-managed queue to the driver if the device is not in its working state, *drivers that are located above the* [power policy owner](power-policy-ownership.md) *in the driver stack must not use power-managed I/O queues*. If a driver that is located above the power policy owner uses a power-managed queue, and if the device is in a low-power state, the driver does not receive the request and cannot pass it to the power policy owner. Therefore the power policy owner, which controls the device's power state, does not wake the device.
+
+-   If your driver sets **PowerManaged** to **WdfFalse**, the queue is not power-managed.
+
+    When I/O requests are available in a queue that is not power-managed, the framework delivers the requests to the driver regardless of whether the device is in its working (D0) state. If you have set up your queue so that it only receives requests that do not require accessing the device, your driver can service each request, even if the device is not available.
+
+For more information about power-managed I/O queues, see [Using Power-Managed I/O Queues](using-power-managed-i-o-queues.md).
+
+A few drivers require some direct control over Plug and Play (PnP) and power management operations. These drivers can use *self-managed I/O*. For more information, see [Using Self-Managed I/O](using-self-managed-i-o.md).
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Power%20Management%20for%20I/O%20Queues%20%20RELEASE:%20%283/15/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
