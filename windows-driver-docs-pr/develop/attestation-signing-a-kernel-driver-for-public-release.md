@@ -294,8 +294,6 @@ To submit multiple drivers at the same time, create a sub directory for each dri
 
 ![directory structure of cab submission](images/b-wes-driversigning-v2.png)
 
-Submitting debug pdb symbol files for signing is optional.
-
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
 ```
