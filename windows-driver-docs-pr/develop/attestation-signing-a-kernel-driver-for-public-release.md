@@ -292,7 +292,7 @@ Use the following instructions to install the sample driver.
 
 To submit multiple drivers at the same time, create a sub directory for each driver as shown below.
 
-![directory structure of cab submission](images/b-wes-driversigning-v2.png)
+![directory structure of cab submission](images/b-wes-driversigning-v3.png)
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
