@@ -320,9 +320,6 @@ C:\DriverFiles\DriverPackage1\Driver1.inf
 ; Second driver
 C:\DriverFiles\DriverPackage2\Driver2.sys
 C:\DriverFiles\DriverPackage2\Driver2.inf
-; Optional Symbols
-C:\DriverFiles\Symbols\Driver1.pdb
-C:\DriverFiles\Symbols\Driver2.pdb
 ```
 
 Follow the steps previously described to sign, submit and test the driver files.
