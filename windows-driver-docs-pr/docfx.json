@@ -15,6 +15,9 @@
     ],
     "globalMetadata": {
         "ROBOTS": "INDEX, FOLLOW",
+        "layout": "Conceptual",
+        "breadcrumb_path": "/windows/hardware/drivers/toc.json",
+        "ms.locale": "en-us",
         "product": "Windows"
     },
     "externalReference": [
