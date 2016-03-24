@@ -8,7 +8,7 @@ description: Here we show what happens when you use version 8.0 of the Windows D
 
 Using Microsoft Visual Studio to configure and set up driver deployment and driver testing is called *provisioning a target computer* or *provisioning a test computer*. For information about provisioning with Windows Driver Kit (WDK) 8 , see [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272). Here we show what happens when you use version 8.0 of the Windows Driver Kit (WDK) to provision a target computer.
 
-**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272_1).
+**Note**  WDK 8 is not the most current version of the WDK. We recommend that you get the current version of the WDK and provision your target computer according to the [provisioning instructions here](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh698272).
 
  
 

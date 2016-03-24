@@ -15,7 +15,7 @@ Sets the properties for the [Stampinf](https://msdn.microsoft.com/en-us/Library/
 2.  In the property pages for the driver project, click **Configuration Properties** and then click **Stampinf**.
 3.  Set the properties for the project.
 
-If you want to add this property page to your project, so that you can run the Stampinf during the build process, see the [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286) and the [Stampinf task](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552786_task).
+If you want to add this property page to your project, so that you can run the Stampinf during the build process, see the [WDK and Visual Studio build environment](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Hh454286) and the [Stampinf task](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff552786).
 
 <table>
 <colgroup>
