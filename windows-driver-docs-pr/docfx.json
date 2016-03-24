@@ -16,7 +16,8 @@
     "globalMetadata": {
         "ROBOTS": "INDEX, FOLLOW",
         "breadcrumb_path": "/windows/hardware/drivers/toc.json",
-        "product": "Windows"
+        "product": "Windows",
+        "Search.Product": "eADQiWindows 10XVcnh"
     },
     "externalReference": [
     ],

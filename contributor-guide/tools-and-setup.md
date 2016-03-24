@@ -97,17 +97,9 @@ After you enable 2FA, you have to enter the access token instead of your GitHub 
 
 We author content using simple Markdown notation in the files, rather than complex "markup" (HTML, XML, etc.). So, you'll need to install a Markdown editor.
 
-- **Atom**: Most of us use GitHub's Atom Markdown editor: [http://atom.io](http://atom.io). It does not require a license for business use. It has spell check.
+- **[Visual Studio Code](https://code.visualstudio.com/)** - Most of us use VS Code.
 
-- **[Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx)** - Microsoft's entry in this space.
-
-## Configure Atom
-
-If you use Atom, you'll need to set a few things up.
-
-- Atom defaults to using 2 spaces for tabs, but Markdown expects 4 spaces. If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into our rendering environment. So, configure Atom to use 4 spaces - you can find this setting under File>Settings>Editor Settings>Tab Length.
-- You will probably also want to turn on Soft Wrap in this section too, which does the same as "word wrap" in Notepad.
-- To turn on the Markdown preview, click Packages>Markdown Preview>Toggle Preview. You can use Ctrl-Shift-M to toggle the preview HTML view.
+- **Atom**: GitHub's Atom Markdown editor: [http://atom.io](http://atom.io). It does not require a license for business use. It has spell check.
 
 ## Fork the repository and copy it to your computer
 
