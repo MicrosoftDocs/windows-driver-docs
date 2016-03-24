@@ -2,23 +2,11 @@
 title: Managing I/O Queues
 description: Managing I/O Queues
 ms.assetid: 83cc87c8-7e2d-4f79-a580-0519d327e7ba
-keywords: ["I/O queues WDK KMDF starting", "I/O queues WDK KMDF stopping", "I/O queues WDK KMDF restarting", "I/O queues WDK KMDF adding requests", "I/O queues WDK KMDF obtaining requests", "I/O queues WDK KMDF searching requests", "I/O queues WDK KMDF purging", "I/O queues WDK KMDF draining", "I/O queues WDK KMDF moving requests", "I/O queues WDK KMDF intercepting requests", "I/O queues WDK KMDF properties", "intercepting I/O requests WDK KMDF", "moving I/O requests WDK KMDF", "relocating I/O requests WDK KMDF", "searching I/O requests WDK KMDF", "requeuing I/O requests WDK KMDF", "stopping I/O queues WDK KMDF", "restarting I/O queues WDK KMDF", "starting I/O queues WDK KMDF", "dispatching methods WDK KMDF"]
+keywords: ["I/O queues WDK KMDF , starting", "I/O queues WDK KMDF , stopping", "I/O queues WDK KMDF , restarting", "I/O queues WDK KMDF , adding requests", "I/O queues WDK KMDF , obtaining requests", "I/O queues WDK KMDF , searching requests", "I/O queues WDK KMDF , purging", "I/O queues WDK KMDF , draining", "I/O queues WDK KMDF , moving requests", "I/O queues WDK KMDF , intercepting requests", "I/O queues WDK KMDF , properties", "intercepting I/O requests WDK KMDF", "moving I/O requests WDK KMDF", "relocating I/O requests WDK KMDF", "searching I/O requests WDK KMDF", "requeuing I/O requests WDK KMDF", "stopping I/O queues WDK KMDF", "restarting I/O queues WDK KMDF", "starting I/O queues WDK KMDF", "dispatching methods WDK KMDF"]
 ---
 
 # Managing I/O Queues
 
-
-**In this article**
-
--   [Starting an I/O Queue](#starting-an-i-o-queue)
--   [Stopping and Restarting an I/O Queue](#stopping-and-restarting-an-i-o-queue)
--   [Adding Requests to an I/O Queue](#adding-requests-to-an-i-o-queue)
--   [Obtaining Requests from an I/O Queue](#obtaining-requests-from-an-i-o-queue)
--   [Searching for an I/O Request](#searching-for-an-i-o-request)
--   [Purging or Draining an I/O Queue](#purging-or-draining-an-i-o-queue)
--   [Moving Requests from One I/O Queue to Another](#moving-requests-from-one-i-o-queue-to-another)
--   [Intercepting an I/O Request before it is Queued](#intercepting-an-i-o-request-before-it-is-queued)
--   [Obtaining I/O Queue Properties](#obtaining-i-o-queue-properties)
 
 ## <a href="" id="starting-an-i-o-queue"></a> Starting an I/O Queue
 
@@ -107,7 +95,7 @@ To obtain properties of a framework queue object, the driver can call the follow
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Managing%20I/O%20Queues%20%20RELEASE:%20%283/16/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Managing%20I/O%20Queues%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

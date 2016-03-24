@@ -1,21 +1,11 @@
 ---
 title: Porting a Driver from UMDF 1 to UMDF 2
-description: This topic describes how to port a User Mode Driver Framework (UMDF) 1 driver to UMDF 2.
+description: This topic describes how to port a User-Mode Driver Framework (UMDF) 1 driver to UMDF 2.
 ms.assetid: 99D20B4C-17C4-42AC-B4D9-F5FD64E10723
 ---
 
 # Porting a Driver from UMDF 1 to UMDF 2
 
-
-**In this article**
-
--   [Getting Started](#getting-started)
--   [Managing Object Lifetime](#managing-object-lifetime)
--   [Driver Initialization](#driver-initialization)
--   [Installing your driver](#installing-your-driver)
--   [Storing Device Context](#storing-device-context)
--   [Debugging your driver](#debugging-your-driver)
--   [Related topics](#related-topics)
 
 This topic describes how to port a User-Mode Driver Framework (UMDF) 1 driver to UMDF 2. You can start with a UMDF 1 driver that uses Sources/Dirs files (not a Visual Studio project), or you can convert a UMDF 1 driver that is contained in a Visual Studio project. The result will be a UMDF 2 driver project in Visual Studio. UMDF 2 drivers run on both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
 
@@ -105,7 +95,7 @@ In UMDF 2, you can also get additional driver debugging information through the 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Porting%20a%20Driver%20from%20UMDF%201%20to%20UMDF%202%20%20RELEASE:%20%283/16/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Porting%20a%20Driver%20from%20UMDF%201%20to%20UMDF%202%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

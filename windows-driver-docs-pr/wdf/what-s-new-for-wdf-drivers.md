@@ -1,25 +1,12 @@
 ---
 title: What's New for WDF Drivers in Windows 10
-description: This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.Windows 10 includes Kernel Mode Driver Framework (KMDF) version 1.15 and User Mode Driver Framework (UMDF) version 2.15.
+description: This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.Windows 10 includes Kernel-Mode Driver Framework (KMDF) version 1.15 and User-Mode Driver Framework (UMDF) version 2.15.
 ms.assetid: 61fd9916-38e7-47d0-aec7-d5a489eb21eb
-keywords: ["kernel mode drivers WDK KMDF about KMDF", "KMDF WDK about KMDF", "Kernel Mode Driver Framework WDK about KMDF", "framework based drivers WDK KMDF", "framework based drivers WDK KMDF about framework based drivers", "objects WDK KMDF", "framework objects WDK KMDF"]
+keywords: ["kernel-mode drivers WDK KMDF , about KMDF", "KMDF WDK , about KMDF", "Kernel-Mode Driver Framework WDK , about KMDF", "framework-based drivers WDK KMDF", "framework-based drivers WDK KMDF , about framework-based drivers", "objects WDK KMDF", "framework objects WDK KMDF"]
 ---
 
 # What's New for WDF Drivers in Windows 10
 
-
-**In this article**
-
--   [WDF source code is now publicly available](#wdf-source-code-is-now-publicly-available)
--   [Automatic Source Level Debugging of Framework Code](#automatic-source-level-debugging-of-framework-code)
--   [Universal Driver Compliance](#universal-driver-compliance)
--   [Debugging and Diagnosability](#debugging-and-diagnosability)
--   [New Performance Tracing tool for WDF drivers](#new-performance-tracing-tool-for-wdf-drivers)
--   [Additional support for HID drivers in UMDF](#additional-support-for-hid-drivers-in-umdf)
--   [Support for interrupts for GPIO-backed devices](#support-for-interrupts-for-gpio-backed-devices)
--   [UMDF no longer requires WinUSB](#umdf-no-longer-requires-winusb)
--   [DDI Updates](#ddi-updates)
--   [Improved Performance](#improved-performance)
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
@@ -46,7 +33,7 @@ For version history, see [KMDF Version History](kmdf-version-history.md) and [UM
 ## Automatic Source Level Debugging of Framework Code
 
 
-When you use WinDbg to debug a WDF driver on Windows 10, WinDbg automatically retrieves the framework source code from Microsoft's public GitHub repository. You can use this feature to step through the WDF source code while debugging, and to learn about framework internals without downloading the source code to a local machine. For more information, see [New support for source-level debugging of WDF code in Windows 10](http://go.microsoft.com/fwlink/?LinkId=618534), [Debugging with WDF Source](http://go.microsoft.com/fwlink/?LinkId=618535), and [Video: Debugging your driver with WDF source code](video--debugging-your-driver-with-wdf-source-code.md).
+When you use WinDbg to debug a WDF driver on Windows 10, WinDbg automatically retrieves the framework source code from Microsoft's public GitHub repository. You can use this feature to step through the WDF source code while debugging, and to learn about framework internals without downloading the source code to a local machine. For more information, see [New support for source-level debugging of WDF code in Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=618534), [Debugging with WDF Source](http://go.microsoft.com/fwlink/p/?LinkId=618535), and [Video: Debugging your driver with WDF source code](video--debugging-your-driver-with-wdf-source-code.md).
 
 ## Universal Driver Compliance
 
@@ -89,7 +76,7 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 
 You can use the Windows Performance Toolkit (WPT) to view performance data for a given KMDF or UMDF 2 driver. When tracing is enabled, the framework generates ETW events for I/O, PnP, and Power callback paths. You can then view graphs in the Windows Performance Analyzer (WPA) that show I/O throughput rates, CPU utilization, and callback performance. The WPT is included in the Windows Assessment and Deployment Kit (ADK).
 
-For more information, see [New Performance Tools for WDF Drivers in Windows 10]( http://go.microsoft.com/fwlink/?LinkId=618537) and [Using the Windows Performance Toolkit (WPT) with WDF](using-the-windows-performance-toolkit--wpt--with-wdf.md).
+For more information, see [New Performance Tools for WDF Drivers in Windows 10]( http://go.microsoft.com/fwlink/p/?LinkId=618537) and [Using the Windows Performance Toolkit (WPT) with WDF](using-the-windows-performance-toolkit--wpt--with-wdf.md).
 
 ## Additional support for HID drivers in UMDF
 
@@ -130,7 +117,7 @@ For information about new and updated DDIs, please see [UMDF Version History](um
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20What's%20New%20for%20%20WDF%20Drivers%20in%20Windows%C2%A010%20%20RELEASE:%20%283/16/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20What's%20New%20for%20%20WDF%20Drivers%20in%20Windows%C2%A010%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

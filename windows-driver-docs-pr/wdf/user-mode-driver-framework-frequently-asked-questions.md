@@ -1,26 +1,11 @@
 ---
-title: User Mode Driver Framework Frequently Asked Questions
+title: User-Mode Driver Framework Frequently Asked Questions
 description: Windows Driver Frameworks (WDF) is a set of libraries that you can use to write device drivers that run on the Windows operating system.
 ms.assetid: 0c07e514-73f9-4d24-86ad-8ac036fdbcf4
 ---
 
 # User-Mode Driver Framework Frequently Asked Questions
 
-
-**In this article**
-
--   [Which operating systems can run UMDF drivers?](#which-operating-systems-can-run-umdf-drivers-)
--   [What is the most recent version of UMDF?](#what-is-the-most-recent-version-of-umdf-)
--   [What is the difference between UMDF version 2.0 and the previous version, 1.11 (one dot eleven)?](#what-is-the-difference-between-umdf-version-2-0-and-the-previous-version--1-11--one-dot-eleven--)
--   [Which operating systems support UMDF 2.0?](#which-operating-systems-support-umdf-2-0-)
--   [Which UMDF versions can I build against in Windows Driver Kit (WDK) 8.1?](#which-umdf-versions-can-i-build-against-in-windows-driver-kit--wdk--8-1-)
--   [Can I write part of my driver to run in user mode and part in kernel mode?](#can-i-write-part-of-my-driver-to-run-in-user-mode-and-part-in-kernel-mode-)
--   [Which framework should I start with?](#---which-framework-should-i-start-with-)
--   [How do user-mode drivers handle security?](#how-do-user-mode-drivers-handle-security-)
--   [Will a user-mode driver be fast enough?](#will-a-user-mode-driver-be-fast-enough---)
--   [What is the difference between a user-mode driver and an application?](#what-is-the-difference-between-a-user-mode-driver-and-an-application----)
--   [How do I debug a UMDF driver?](#how-do-i-debug-a-umdf-driver---)
--   [Is there a newsgroup for UMDF?](#is-there-a-newsgroup-for-umdf-)
 
 Windows Driver Frameworks (WDF) is a set of libraries that you can use to write device drivers that run on the Windows operating system. WDF defines a single driver model that is supported by two frameworks: Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF). This topic provides answers to frequently asked questions about UMDF.
 
@@ -114,7 +99,7 @@ You can find discussion of all aspects of Windows drivers on the following forum
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20User-Mode%20Driver%20Framework%20Frequently%20Asked%20Questions%20%20RELEASE:%20%283/16/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20User-Mode%20Driver%20Framework%20Frequently%20Asked%20Questions%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

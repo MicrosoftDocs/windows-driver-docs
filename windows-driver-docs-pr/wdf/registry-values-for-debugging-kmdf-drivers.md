@@ -1,8 +1,8 @@
 ---
 title: Registry Values for Debugging WDF Drivers (KMDF and UMDF)
-description: This topic describes the registry values that a Windows Driver Frameworks (WDF) driver can set. It applies to Kernel Mode Driver Framework (KMDF) drivers and User Mode Driver Framework (UMDF) drivers starting with UMDF version 2.
+description: This topic describes the registry values that a Windows Driver Frameworks (WDF) driver can set. It applies to Kernel-Mode Driver Framework (KMDF) drivers and User-Mode Driver Framework (UMDF) drivers starting with UMDF version 2.
 ms.assetid: d54bdc6c-b409-4973-9b29-16967a4d83fb
-keywords: ["debugging drivers WDK KMDF registry values", "registry values for debugging drivers WDK KMDF"]
+keywords: ["debugging drivers WDK KMDF , registry values", "registry values for debugging drivers WDK KMDF"]
 ---
 
 # Registry Values for Debugging WDF Drivers (KMDF and UMDF)
@@ -152,7 +152,7 @@ For changes to UMDF registry values to take effect, you must reboot the computer
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Registry%20Values%20for%20Debugging%20WDF%20Drivers%20%28KMDF%20and%20UMDF%29%20%20RELEASE:%20%283/16/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Registry%20Values%20for%20Debugging%20WDF%20Drivers%20%28KMDF%20and%20UMDF%29%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
