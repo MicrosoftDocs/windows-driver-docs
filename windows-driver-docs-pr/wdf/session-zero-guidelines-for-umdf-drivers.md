@@ -18,8 +18,8 @@ Starting in Windows Vista, the operating system isolates services and system pr
 
     A UMDF driver might call Windows functions to perform the following tasks:
 
-    -   A driver might call **SetupDi***Xxx* functions to retrieve a Plug and Play device property. For example, the [UMDF Sample Driver for OSR USB Fx2 Learning Kit](http://go.microsoft.com/fwlink/p/?linkid=256202) calls [**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967) to retrieve the GUID for the device's bus type.
-        **Note**  A UMDF driver cannot safely call many of the **SetupDi***Xxx* functions, but it is safe to call functions that retrieve device node properties.
+    -   A driver might call **SetupDi**_Xxx_ functions to retrieve a Plug and Play device property. For example, the [UMDF Sample Driver for OSR USB Fx2 Learning Kit](http://go.microsoft.com/fwlink/p/?linkid=256202) calls [**SetupDiGetDeviceRegistryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551967) to retrieve the GUID for the device's bus type.
+        **Note**  A UMDF driver cannot safely call many of the **SetupDi**_Xxx_ functions, but it is safe to call functions that retrieve device node properties.
 
          
 
@@ -36,7 +36,7 @@ For additional information about session zero isolation, see [Impact of Session 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Session%20Zero%20Guidelines%20for%20UMDF%20Drivers%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Session%20Zero%20Guidelines%20for%20UMDF%20Drivers%20%20RELEASE:%20%283/25/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

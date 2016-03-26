@@ -13,13 +13,13 @@ If you include a co-installer in your [driver package](https://msdn.microsoft.co
 ## <a href="" id="-------------inf-file-sections-for-the-co-installer"></a> INF File Sections for the Co-installer
 
 
-Your driver's INF file must contain an INF *DDInstall***.CoInstallers** section that installs the co-installer. For example this section might be named **MyDevice.ntx86.CoInstallers**. For more information about specifying a co-installer in an INF file, see [**INF DDInstall.CoInstallers Section**](https://msdn.microsoft.com/library/windows/hardware/ff547321).
+Your driver's INF file must contain an INF *DDInstall**_.CoInstallers*_ section that installs the co-installer. For example this section might be named **MyDevice.ntx86.CoInstallers**. For more information about specifying a co-installer in an INF file, see [**INF DDInstall.CoInstallers Section**](https://msdn.microsoft.com/library/windows/hardware/ff547321).
 
-In addition, your driver's INF file must contain an INF *DDInstall***.Wdf** section that the co-installer reads after it has been installed. For example, this section might be named **MyDevice.ntx86.Wdf**. After the framework's co-installer has been installed, it reads this section while it is installing your driver.
+In addition, your driver's INF file must contain an INF *DDInstall**_.Wdf*_ section that the co-installer reads after it has been installed. For example, this section might be named **MyDevice.ntx86.Wdf**. After the framework's co-installer has been installed, it reads this section while it is installing your driver.
 
-The INF *DDInstall***.Wdf** section contains the following directive:
+The INF *DDInstall**_.Wdf*_ section contains the following directive:
 
-**KmdfService =** *DriverService***,***Wdf-install-section*
+**KmdfService =** *DriverService**_,**_Wdf-install-section*
 
 *DriverService* represents the name that the operating system will assign to your driver's kernel-mode service, and *Wdf-install-section* represents the name of an INF section that the co-installer reads to obtain information about your driver.
 
@@ -29,7 +29,7 @@ The INF section that *Wdf-install-section* identifies must contain the following
 
 *WdfLibraryVersion* represents a library version number, such as "1.0" or "1.11".
 
-For example, the following INF *DDInstall***.Wdf** section specifies **Echo\_wdfsect** as the *Wdf-install-section* name.
+For example, the following INF *DDInstall**_.Wdf*_ section specifies **Echo\_wdfsect** as the *Wdf-install-section* name.
 
 ```
 [ECHO_Device.NT.Wdf]
@@ -40,9 +40,9 @@ KmdfLibraryVersion = 1.0
 
 You can avoid creating multiple INF files for multiple versions of the framework by using INX files and the [Stampinf](https://msdn.microsoft.com/library/windows/hardware/ff552786) tool. For more information about INX files, see [Using INX Files to Create INF Files](using-inx-files-to-create-inf-files.md).
 
-### <a href="" id="sample-inf-ddinstall-coinstallers-and-ddinstall-wdf-sections"></a>**Sample INF** ***DDInstall*.CoInstallers and** ***DDInstall*.Wdf Sections**
+### <a href="" id="sample-inf-ddinstall-coinstallers-and-ddinstall-wdf-sections"></a>**Sample INF** **_DDInstall_.CoInstallers and** **_DDInstall_.Wdf Sections**
 
-The following code example shows how to create the INF *DDInstall***.CoInstallers** section and INF *DDInstall***.Wdf** section of an INF file for a PnP driver. The example shows how to create an INF file that is called *MyDevice.inf* and is based on the [ECHO](http://go.microsoft.com/fwlink/p/?linkid=256129) sample driver's *Echo.inf* file. The Echo sample driver is located in the samples directory of the WDK.
+The following code example shows how to create the INF *DDInstall**_.CoInstallers*_ section and INF *DDInstall**_.Wdf*_ section of an INF file for a PnP driver. The example shows how to create an INF file that is called *MyDevice.inf* and is based on the [ECHO](http://go.microsoft.com/fwlink/p/?linkid=256129) sample driver's *Echo.inf* file. The Echo sample driver is located in the samples directory of the WDK.
 
 To create *MyDevice.inf*, you must change all **ECHO\_Device** substrings in *Echo.inf* to a name that is appropriate for your product. The following code example uses **MyDevice**.
 
@@ -117,7 +117,7 @@ KmdfLibraryVersion = 1.0
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Specifying%20the%20%20KMDF%20Co-installer%20in%20an%20INF%20File%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Specifying%20the%20%20KMDF%20Co-installer%20in%20an%20INF%20File%20%20RELEASE:%20%283/25/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
