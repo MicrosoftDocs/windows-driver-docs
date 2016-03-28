@@ -292,9 +292,7 @@ Use the following instructions to install the sample driver.
 
 To submit multiple drivers at the same time, create a sub directory for each driver as shown below.
 
-![directory structure of cab submission](images/b-wes-driversigning-v2.png)
-
-Submitting debug pdb symbol files for signing is optional.
+![directory structure of cab submission](images/b-wes-driversigning-v3.png)
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
@@ -320,9 +318,6 @@ C:\DriverFiles\DriverPackage1\Driver1.inf
 ; Second driver
 C:\DriverFiles\DriverPackage2\Driver2.sys
 C:\DriverFiles\DriverPackage2\Driver2.inf
-; Optional Symbols
-C:\DriverFiles\Symbols\Driver1.pdb
-C:\DriverFiles\Symbols\Driver2.pdb
 ```
 
 Follow the steps previously described to sign, submit and test the driver files.
