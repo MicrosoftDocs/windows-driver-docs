@@ -1,0 +1,36 @@
+---
+title: Using EnumFeatures
+description: Using EnumFeatures
+ms.assetid: 4a87cedf-066a-445b-ad3e-71699c9d3e07
+keywords: ["EnumFeatures"]
+---
+
+# Using EnumFeatures
+
+
+## <a href="" id="ddk-using-enumfeatures-gg"></a>
+
+
+A caller can use **EnumFeatures** to retrieve a keyword list that contains currently supported driver features and all PPD features, in addition to the following, which Pscript treats as if they were features defined within PPD \*OpenUI/\*CloseUI structure keywords:
+
+\*LeadingEdge
+
+\*UseHWMargins
+
+Pscript handles certain features in a special way. If more than one of \*Resolution, \*SetResolution, and \*JCLResolution keyword appear in a PPD, they are merged into one standard feature. After merging, the feature's keyword name will be "JCLResolution" if \*JCLResolution appears first; otherwise it will be "Resolution".
+
+**Note**   Some driver features (such as %Mirroring) are always supported, while other driver features are supported only under certain conditions. For example, when spooler EMF spooling is disabled on Windows 2000 and later operating system releases, the %PageOrder feature will not be supported. These unsupported driver features will not appear in the output keyword list of **EnumFeatures**.
+
+ 
+
+For driver features, the keyword prefix "%" is included in the output. For PPD features, the keyword prefix "\*" is not included in the output.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Using%20EnumFeatures%20%20RELEASE:%20%283/29/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
