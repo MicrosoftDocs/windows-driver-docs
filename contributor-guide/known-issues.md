@@ -5,5 +5,7 @@ When converting from WDCML to MD, we are tracking the following known issues:
 * Bugs:
     * [OP render: no whitespace between end of table and subsequent text](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems?_a=edit&id=557103)
     * [OP render: long lines have no horizontal scroll](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems?_a=edit&id=557096)
+    * [OP render: some code is colored blue within a code block](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems/edit/556873?fullScreen=false)
+    * [OP render: notes get rendered as code blocks rather than notes](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems/edit/556860?fullScreen=false)
 
 
