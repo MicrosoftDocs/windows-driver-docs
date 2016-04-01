@@ -5,5 +5,7 @@ When converting from WDCML to MD, we are tracking the following known issues:
 * Bugs:
     * [OP render: no whitespace between end of table and subsequent text](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems?_a=edit&id=557103)
     * [OP render: long lines have no horizontal scroll](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems?_a=edit&id=557096)
+    * [Nested numbered lists should use numbers and then letters](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems#_a=edit&id=554422)
+    * [Images within bulleted lists don't render unless you remove the tab before the image](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems?_a=edit&id=553605)
 
 
