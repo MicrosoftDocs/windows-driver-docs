@@ -8,3 +8,5 @@ When converting from WDCML to MD, we are tracking the following known issues:
     * [Fixmd: span codelanguage prefaced with whitespace is not matched](https://microsoft.visualstudio.com/DefaultCollection/OS/_workitems?_a=edit&id=7091522) -- affects snippets inside a list or proch item in WDCML
     * [OP render : some code is colored blue within a code block](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems/edit/556873?fullScreen=false)
     * [OP render : notes get rendered as code blocks rather than notes](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems/edit/556860?fullScreen=false)
+    * [Nested numbered lists should use numbers and then letters](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems#_a=edit&id=554422)
+    * [Images within bulleted lists don't render unless you remove the tab before the image](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems?_a=edit&id=553605)
