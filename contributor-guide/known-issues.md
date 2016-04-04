@@ -1,6 +1,6 @@
 When converting from WDCML to MD, we are tracking the following known issues:
 
-* WDCML elements that render as adjacent lines in HTML produce adjacent lines in MD, which are rendered without line breaks.  This is by design in MD and can be changed by adding two spaces to the end of the line in MD.  The known list of WDCML elements that cause this behavior is : no bullet lists (```<list nobullets="1">```), const lists (```<constants layout="termdef">```).  This requires manual fixing.  You could try searching your WDCML project for these elements to help you find affected topics. Quick fix:
+* WDCML elements that render as adjacent lines in HTML produce adjacent lines in MD, which are rendered without line breaks.  This is by design in MD and can be changed by adding two spaces to the end of the line in MD.  The known list of WDCML elements that cause this behavior is : no bullet lists (```<list nobullets="1">```), const lists -- which should be rare in conceptual content (```<constants layout="termdef">```).  This requires manual fixing.  You could try searching your WDCML project for these elements to help you find affected topics. Quick fix:
 
          findstr /m "nobullets" *.xml > nobull.txt
          sd edit *
