@@ -1,10 +1,10 @@
 ---
-title: Publishing Messages
-description: Publishing Messages
+title: Publishing NFP messages
+description: Publishing NFP messages
 ms.assetid: 45BE3620-ADF4-413D-90B3-586FCEB5F606
 ---
 
-# Publishing Messages
+# Publishing NFP messages
 
 
 A publication is represented as a unique open handle within the driver. Active publications must have both a type and a data buffer. The type is set by opening a file name in the “Pubs” namespace. The data buffer is set by sending [**IOCTL\_NFP\_SET\_PAYLOAD**](https://msdn.microsoft.com/library/windows/hardware/jj853321).
@@ -54,18 +54,18 @@ In a driver’s *CreateFile* handler, the Device Interface *SymbolicLink* will b
 -   If the protocol should only be recognized for publications, and the IOCTL specifies “Subs\\”, the driver MUST complete the IOCTL with STATUS\_OBJECT\_PATH\_NOT\_FOUND.
 -   Two open handles to the same type MUST represent two distinct entities.
 -   Some protocols (namespaces) are reserved. Unless explicitly specified in this document, the driver MUST NOT recognize any protocols that begin with:
-    "Windows”
-    "Device”
-    "Pairing”
-    "NDEF”
-    "NFC”
-    "Iso14443Dep”
-    "Iso14443TypeA”
-    "Iso14443TypeB”
-    "Iso15693Vicinity”
-    "MifareClassic”
-    "MifareUltralight”
-    "FeliCa”
+    -   "Windows”
+    -   "Device”
+    -   "Pairing”
+    -   "NDEF”
+    -   "NFC”
+    -   "Iso14443Dep”
+    -   "Iso14443TypeA”
+    -   "Iso14443TypeB”
+    -   "Iso15693Vicinity”
+    -   "MifareClassic”
+    -   "MifareUltralight”
+    -   "FeliCa”
 
 ## Unpublish
 
@@ -75,9 +75,9 @@ When a client no longer wants a message published, it will close the publication
 ### Required Actions
 
 -   When the handle is closed (IRP\_MJ\_CLOSE), the driver:
-    MUST reclaim all memory used by the publication (both type and message data) except for buffers for ongoing transmissions of this publication.
-    MUST NOT transmit the message if a device becomes proximate in the future.
-    MUST NOT interrupt any in-progress transmission of the publication.
+    -   MUST reclaim all memory used by the publication (both type and message data) except for buffers for ongoing transmissions of this publication.
+    -   MUST NOT transmit the message if a device becomes proximate in the future.
+    -   MUST NOT interrupt any in-progress transmission of the publication.
 -   The driver MAY ignore IRP\_MJ\_CLEANUP.
 
 The driver should assume that if the client publishes a message twice, it is because the client wants the message transmitted twice when a device is in proximity.
@@ -104,7 +104,7 @@ The driver must set the “CompleteEventImmediately” counter to zero and must 
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnfpdrivers\nfpdrivers%5D:%20Publishing%20Messages%20%20RELEASE:%20%283/30/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnfpdrivers\nfpdrivers%5D:%20Publishing%20NFP%20messages%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

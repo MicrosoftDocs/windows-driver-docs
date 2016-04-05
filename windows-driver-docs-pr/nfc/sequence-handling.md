@@ -1,10 +1,10 @@
 ---
-title: Sequence Handling
+title: Sequence handling
 description: Most non-standard NCI features and extensions implemented by the NFCC firmware from different vendors relate to chipset configuration, firmware download, and hardware tuning.
 ms.assetid: D0BE9827-2A15-4AA5-ADB9-80071ED37583
 ---
 
-# Sequence Handling
+# Sequence handling
 
 
 Most non-standard NCI features and extensions implemented by the NFCC firmware from different vendors relate to chipset configuration, firmware download, and hardware tuning. These non-standard extensions can be supported by the NFC client driver by registering for specific driver sequences exposed by the NFC CX. The client driver registers for specific sequence handlers through the [**NfcCxRegisterSequenceHandler**](https://msdn.microsoft.com/library/windows/hardware/dn905614) function. It is typically done during initialization and should be invoked after [**NfcCxDeviceInitialize**](https://msdn.microsoft.com/library/windows/hardware/dn905611). These handlers are unregistered by calling [**NfcCxUnRegisterSequenceHandler**](https://msdn.microsoft.com/library/windows/hardware/dn905617) during device shutdown. After the client driver’s sequence handler callback is invoked, the NFC CX driver will not issue any NCI commands until the NFC client driver finishes its handling. These sequence handler callbacks are designed to be asynchronous, thereby allowing the client to issue any number of I/O requests to the controller before notifying the NFC CX of its completion. NFC CX uses a watchdog timer mechanism to determine hung states. If the watchdog timer expires before the completion of sequence handler by the client, a bug check is triggered and the UMDF host process is terminated by the UMDF framework.
@@ -18,19 +18,19 @@ The following are the requirements for the NFC client driver in implementing any
 
 
 -   [Sequences](sequences.md)
--   [**Sequence Flags**](sequence-flags.md)
--   [Initialization Sequence](initialization-sequence.md)
--   [NFCEE Discovery Sequence](nfcee-discovery-sequence.md)
--   [RF Discovery Sequence](rf-discovery-sequence.md)
--   [Tag RF Data Exchange Sequence](tag-rf-data-exchagne-sequence.md)
--   [P2P RF Data Exchange Sequence](p2p-rf-data-exchagne-sequence.md)
--   [Card Emulation RF Sequence](card-emulation-rf-sequence.md)
+-   [**Sequence flags**](sequence-flags.md)
+-   [Initialization sequence](initialization-sequence.md)
+-   [NFCEE discovery sequence](nfcee-discovery-sequence.md)
+-   [RF discovery sequence](rf-discovery-sequence.md)
+-   [Tag RF data exchange sequence](tag-rf-data-exchagne-sequence.md)
+-   [P2P RF data exchange sequence](p2p-rf-data-exchagne-sequence.md)
+-   [Card emulation RF sequence](card-emulation-rf-sequence.md)
 
  
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnfpdrivers\nfpdrivers%5D:%20Sequence%20Handling%20%20RELEASE:%20%283/30/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnfpdrivers\nfpdrivers%5D:%20Sequence%20handling%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

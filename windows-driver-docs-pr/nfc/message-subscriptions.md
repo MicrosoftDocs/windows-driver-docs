@@ -1,10 +1,10 @@
 ---
-title: Message Subscriptions
-description: Message Subscriptions
+title: NFP message subscriptions
+description: NFP message subscriptions
 ms.assetid: ECE9C495-978F-4BD7-95BC-B68432F9B81E
 ---
 
-# Message Subscriptions
+# NFP message subscriptions
 
 
 A subscription is represented as a unique open handle within the driver. A subscription is made active by opening a handle into the “Subs\\” device namespace. The type of the subscription is defined to be everything following the “Subs\\” prefix.
@@ -40,10 +40,10 @@ There is no facility to read back the type.
 -   If the protocol should only be recognized for subscriptions, and the IOCTL specifies “Pubs\\”, the driver MUST complete the IOCTL with STATUS\_OBJECT\_PATH\_NOT\_FOUND.
 -   If the protocol should only be recognized for publications, and the IOCTL specifies “Subs\\”, the driver MUST complete the IOCTL with STATUS\_OBJECT\_PATH\_NOT\_FOUND.
 -   Some protocols (namespaces) are reserved. Unless explicitly specified in this document, the driver MUST NOT recognize any protocols that begin with:
-    "Windows”
-    "Device”
-    "Pairing”
-    "NDEF”
+    -   "Windows”
+    -   "Device”
+    -   "Pairing”
+    -   "NDEF”
 -   Two open handles to the same type MUST represent two distinct entities.
 -   If *CreateFile* succeeds, the handle is now a “subscription handle”, and MUST NOT be changed into any other type of handle.
 -   After this IOCTL succeeds, and before the handle is closed, every time a message is received via the proximity technology that matches the type of this subscription then that message’s data MUST be attached to the file handle for delivery to the client.
@@ -114,7 +114,7 @@ The driver MUST accept and report duplicate subscriptions, even if subscribed by
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnfpdrivers\nfpdrivers%5D:%20Message%20Subscriptions%20%20RELEASE:%20%283/30/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnfpdrivers\nfpdrivers%5D:%20NFP%20message%20subscriptions%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

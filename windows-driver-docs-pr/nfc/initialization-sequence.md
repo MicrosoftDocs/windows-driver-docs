@@ -1,10 +1,10 @@
 ---
-title: Initialization Sequence
+title: Initialization sequence
 description: The figure below illustrates a high-level set of NCI packets that are exchanged by the NFC CX and the NFCC during initialization.
 ms.assetid: 4977E1D4-2546-4573-B555-FA87DB8A2168
 ---
 
-# Initialization Sequence
+# Initialization sequence
 
 
 The figure below illustrates a high-level set of NCI packets that are exchanged by the NFC CX and the NFCC during initialization. Prior to start of the initialization, the NFC CX driver invokes the client driver’s Pre-Init sequence handler if one is registered. StateInit comprises the following high-level sequences: NCI reset, NCI initialization, standard NCI configuration of parameters, and RF Interface and RF Protocol mapping. Note, the NFC client driver can set the defaults of some of the NCI configuration parameters used during initialization through NFC CX interface functions such as [**NfcCxSetRfDiscoveryConfig**](https://msdn.microsoft.com/library/windows/hardware/dn905616) and [**NfcCxSetLlcpConfig**](https://msdn.microsoft.com/library/windows/hardware/dn905615). Following the completion of initialization, the initialize complete sequence handler is invoked. The next state after initialization is completed is StateRfIdle.
@@ -25,7 +25,7 @@ Some NFCC firmware implementations have an out of band mechanism, i.e. outside t
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnfpdrivers\nfpdrivers%5D:%20Initialization%20Sequence%20%20RELEASE:%20%283/30/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnfpdrivers\nfpdrivers%5D:%20Initialization%20sequence%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
