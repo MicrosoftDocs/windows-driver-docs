@@ -44,14 +44,8 @@ To register for notification of device interface events, a KMDF driver calls [**
 The following code example shows how a local UMDF 2 driver registers for notifications and then opens the remote I/O target.
 
 1.  The remote driver registers for a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) from [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693).
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>    UNICODE_STRING ref;
+    ```
+        UNICODE_STRING ref;
         RtlInitUnicodeString(&amp;ref, MY_HID_FILTER_REFERENCE_STRING);
         status = WdfDeviceCreateDeviceInterface(
                      hDevice,
@@ -60,23 +54,15 @@ The following code example shows how a local UMDF 2 driver registers for notific
                  );
 
         if (!NT_SUCCESS (status)) {
-            MyKdPrint( (&quot;WdfDeviceCreateDeviceInterface failed 0x%x\n&quot;, status));
+            MyKdPrint( ("WdfDeviceCreateDeviceInterface failed 0x%x\n", status));
             return status;
         }
-    </code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    
+    ```
 
 2.  The local driver calls [**CM\_Register\_Notification**](https://msdn.microsoft.com/library/windows/hardware/hh780224) from [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) to register for notification when a device interface is available. Provide a pointer to a notification callback routine that the framework calls when device interfaces are available.
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>DWORD cmRet;
+    ```
+    DWORD cmRet;
         CM_NOTIFY_FILTER cmFilter;
        
         ZeroMemory(&amp;cmFilter, sizeof(cmFilter));
@@ -88,26 +74,18 @@ The following code example shows how a local UMDF 2 driver registers for notific
                     &amp;cmFilter,                     // PCM_NOTIFY_FILTER pFilter,
                     (PVOID) hDevice,               // PVOID pContext,
                     MyCmInterfaceNotification,    // PCM_NOTIFY_CALLBACK pCallback,
-                    &amp;fdoData-&gt;CmNotificationHandle // PHCMNOTIFICATION pNotifyContext
+                    &amp;fdoData->CmNotificationHandle // PHCMNOTIFICATION pNotifyContext
                     );
         if (cmRet != CR_SUCCESS) {
-            MyKdPrint( (&quot;CM_Register_Notification failed, error %d\n&quot;, cmRet));
+            MyKdPrint( ("CM_Register_Notification failed, error %d\n", cmRet));
             status = STATUS_UNSUCCESSFUL;
             return status;
-        }   </code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+        }   
+    ```
 
 3.  The system calls the local driver's notification callback routine each time that the specified device interface arrives or is removed. The callback routine can examine the *EventData* parameter to determine which device interface has arrived. It might then queue a work item to open the device interface.
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>DWORD 
+    ```
+    DWORD 
     MyCmInterfaceNotification(
         _In_ HCMNOTIFICATION       hNotify,
         _In_opt_ PVOID             Context,
@@ -130,8 +108,8 @@ The following code example shows how a local UMDF 2 driver registers for notific
      
         switch(Action) {
         case CM_NOTIFY_ACTION_DEVICEINTERFACEARRIVAL: 
-            MyKdPrint( (&quot;MyCmInterfaceNotification: Arrival of %S\n&quot;,
-                EventData-&gt;u.DeviceInterface.SymbolicLink));
+            MyKdPrint( ("MyCmInterfaceNotification: Arrival of %S\n",
+                EventData->u.DeviceInterface.SymbolicLink));
             
             //
             // Enqueue a work item to open target
@@ -139,21 +117,19 @@ The following code example shows how a local UMDF 2 driver registers for notific
                            
             break;
         case CM_NOTIFY_ACTION_DEVICEINTERFACEREMOVAL: 
-            MyKdPrint( (&quot;MyCmInterfaceNotification: removal of %S\n&quot;,
-                EventData-&gt;u.DeviceInterface.SymbolicLink));
+            MyKdPrint( ("MyCmInterfaceNotification: removal of %S\n",
+                EventData->u.DeviceInterface.SymbolicLink));
             break;
         default:
-            MyKdPrint( (&quot;MyCmInterfaceNotification: Arrival unknown action\n&quot;));
+            MyKdPrint( ("MyCmInterfaceNotification: Arrival unknown action\n"));
             break;
         }
        
         return 0;
     }
 
-    </code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    
+    ```
 
 4.  From the work item callback function, the local driver calls [**WdfIoTargetCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548591) to create the remote target, and [**WdfIoTargetOpen**](https://msdn.microsoft.com/library/windows/hardware/ff548634) to open a remote I/O target.
 
@@ -161,14 +137,8 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
     In rare cases, a UMDF 2 driver can call [**CM\_Register\_Notification**](https://msdn.microsoft.com/library/windows/hardware/hh780224) a second time, to register for notification of device removal. For example, if the driver calls [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) to get a HANDLE to the device interface, it should register for notification of device removal so that it can properly respond to query remove attempts. In most cases, the UMDF 2 driver calls **CM\_Register\_Notification** only once, and relies on WDF support for device removal.
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>VOID 
+    ```
+    VOID 
     EvtWorkItem(
         _In_ WDFWORKITEM WorkItem
     )
@@ -181,10 +151,8 @@ The following code example shows how a local UMDF 2 driver registers for notific
     }
 
 
-    </code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    
+    ```
 
 ## Related topics
 
@@ -195,7 +163,7 @@ The following code example shows how a local UMDF 2 driver registers for notific
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Using%20Device%20Interfaces%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Using%20Device%20Interfaces%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

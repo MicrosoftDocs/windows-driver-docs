@@ -58,19 +58,11 @@ Passing return status values from user-mode to kernel-mode requires special atte
 
 -   UMDF version 1 drivers typically receive HRESULT-typed return values, while KMDF and WDM-based kernel-mode drivers typically receive NTSTATUS-typed values. If a UMDF 1.*x* driver completes an I/O request, and if the driver has a kernel-mode client, the driver's call to [**IWDFIoRequest::Complete**](https://msdn.microsoft.com/library/windows/hardware/ff559070) or [**IWDFIoRequest::CompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff559074) should specify an HRESULT value that the driver generates from an NTSTATUS value. In general, UMDF 1.*x* drivers should use the HRESULT\_FROM\_NT macro (defined in *Winerror.h*) to return status to a kernel-mode client. The following example shows how to use this macro when completing a request.
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>hr = HRESULT_FROM_NT(STATUS_BUFFER_OVERFLOW)
-    request-&gt;Complete(HRESULT_FROM_NT(STATUS_BUFFER_OVERFLOW);
-    return hr;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```
+    hr = HRESULT_FROM_NT(STATUS_BUFFER_OVERFLOW)
+    request->Complete(HRESULT_FROM_NT(STATUS_BUFFER_OVERFLOW);
+    return hr;
+    ```
 
     To return a specific HRESULT value to a kernel-mode client, the following callbacks must use the HRESULT\_FROM\_NT macro:
 
@@ -81,32 +73,16 @@ Passing return status values from user-mode to kernel-mode requires special atte
 
     To use the NTSTATUS values that are defined in *ntstatus.h*, a UMDF 1.*x* driver must include these two lines before including any additional headers.
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>#define UMDF_USING_NTSTATUS
-#include &lt;ntstatus.h&gt;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```
+    #define UMDF_USING_NTSTATUS
+    #include <ntstatus.h>
+    ```
 
     Do not use the HRESULT\_FROM\_NT macro to convert STATUS\_SUCCESS from an NTSTATUS value to an HRESULT value. Just return S\_OK, as shown in the following example.
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>request-&gt;Complete(S_OK);</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```
+    request->Complete(S_OK);
+    ```
 
 -   The framework completes some I/O requests on behalf of UMDF drivers. Sometimes the framework does not convert HRESULT-typed return values into equivalent NTSTATUS values, so the framework might pass an HRESULT-typed completion status to a kernel-mode client.
 
@@ -124,7 +100,7 @@ For UMDF versions 1.9 and later, the **UpperDriverOk** registry value is obsolet
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Supporting%20Kernel-Mode%20Clients%20in%20UMDF%201.x%20Drivers%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Supporting%20Kernel-Mode%20Clients%20in%20UMDF%201.x%20Drivers%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

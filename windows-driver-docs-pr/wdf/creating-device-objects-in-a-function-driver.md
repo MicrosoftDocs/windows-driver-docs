@@ -38,24 +38,15 @@ Creating a framework device object in a function driver typically includes the f
 
     Typically, a function driver calls some of the following methods to specify a device's characteristics:
 
-    [**WdfDeviceInitSetDeviceType**](https://msdn.microsoft.com/library/windows/hardware/ff546090), to identify the type of hardware that the driver supports.
-
-    [**WdfDeviceInitSetIoType**](https://msdn.microsoft.com/library/windows/hardware/ff546128), to identify a method for accessing data buffers, if the driver handles I/O requests from applications.
-
-    [**WdfDeviceInitSetCharacteristics**](https://msdn.microsoft.com/library/windows/hardware/ff546074), to set device characteristics, such as whether the device is read-only or supports removable media.
-
-    [**WdfDeviceInitSetExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff546097), if the device requires exclusive access by one application at a time.
-
-    [**WdfDeviceInitSetPowerInrush**](https://msdn.microsoft.com/library/windows/hardware/ff546142), if the device requires an inrush of current when it transitions from a low-power state to its working (D0) state.
-
-    [**WdfDeviceInitSetPowerPageable**](https://msdn.microsoft.com/library/windows/hardware/ff546766) or [**WdfDeviceInitSetPowerNotPageable**](https://msdn.microsoft.com/library/windows/hardware/ff546147), to indicate whether the driver must access pageable data while the system is transitioning between a sleeping state and the working (S0) state.
-
-    [**WdfDeviceInitAssignName**](https://msdn.microsoft.com/library/windows/hardware/ff546029), to assign a name to the device object.
-
-    [**WdfDeviceInitAssignSDDLString**](https://msdn.microsoft.com/library/windows/hardware/ff546035), to assign a security descriptor to the device object.
-
-    [**WdfDeviceInitSetDeviceClass**](https://msdn.microsoft.com/library/windows/hardware/ff546084), to identify the device's setup class.
-
+    -   [**WdfDeviceInitSetDeviceType**](https://msdn.microsoft.com/library/windows/hardware/ff546090), to identify the type of hardware that the driver supports.
+    -   [**WdfDeviceInitSetIoType**](https://msdn.microsoft.com/library/windows/hardware/ff546128), to identify a method for accessing data buffers, if the driver handles I/O requests from applications.
+    -   [**WdfDeviceInitSetCharacteristics**](https://msdn.microsoft.com/library/windows/hardware/ff546074), to set device characteristics, such as whether the device is read-only or supports removable media.
+    -   [**WdfDeviceInitSetExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff546097), if the device requires exclusive access by one application at a time.
+    -   [**WdfDeviceInitSetPowerInrush**](https://msdn.microsoft.com/library/windows/hardware/ff546142), if the device requires an inrush of current when it transitions from a low-power state to its working (D0) state.
+    -   [**WdfDeviceInitSetPowerPageable**](https://msdn.microsoft.com/library/windows/hardware/ff546766) or [**WdfDeviceInitSetPowerNotPageable**](https://msdn.microsoft.com/library/windows/hardware/ff546147), to indicate whether the driver must access pageable data while the system is transitioning between a sleeping state and the working (S0) state.
+    -   [**WdfDeviceInitAssignName**](https://msdn.microsoft.com/library/windows/hardware/ff546029), to assign a name to the device object.
+    -   [**WdfDeviceInitAssignSDDLString**](https://msdn.microsoft.com/library/windows/hardware/ff546035), to assign a security descriptor to the device object.
+    -   [**WdfDeviceInitSetDeviceClass**](https://msdn.microsoft.com/library/windows/hardware/ff546084), to identify the device's setup class.
 -   Obtaining device properties.
 
     Sometimes function drivers must obtain information about the device properties that the driver for the device's bus, or other lower-level driver, has set. The driver can call [**WdfFdoInitQueryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff547254) or [**WdfFdoInitAllocAndQueryProperty**](https://msdn.microsoft.com/library/windows/hardware/ff547239) to obtain this information. New drivers targeting Windows 8.1 and later can call [**WdfFdoInitQueryPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/dn265613) and [**WdfFdoInitAllocAndQueryPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/dn265612).
@@ -76,7 +67,7 @@ Creating a framework device object in a function driver typically includes the f
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Creating%20Device%20Objects%20in%20a%20Function%20Driver%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Creating%20Device%20Objects%20in%20a%20Function%20Driver%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

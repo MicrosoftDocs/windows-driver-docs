@@ -29,13 +29,11 @@ When the driver calls [**WdfDeviceWdmAssignPowerFrameworkSettings**](https://msd
 
 The framework calls the driver's [*EvtDeviceWdmPostPoFxRegisterDevice*](https://msdn.microsoft.com/library/windows/hardware/hh406408) callback function after the framework has registered with PoFx. Here is an example of a typical power up sequence:
 
-[*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880)
-...
-[*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848) (*PrevState* = **WdfPowerDeviceD3Final**)
-...
-[*EvtInterruptEnable*](https://msdn.microsoft.com/library/windows/hardware/ff541730)
-...
-[*EvtDeviceWdmPostPoFxRegisterDevice*](https://msdn.microsoft.com/library/windows/hardware/hh406408) // PoFx handle is available
+1.  [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880)
+2.  [*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848) (*PrevState* = **WdfPowerDeviceD3Final**)
+3.  [*EvtInterruptEnable*](https://msdn.microsoft.com/library/windows/hardware/ff541730)
+4.  [*EvtDeviceWdmPostPoFxRegisterDevice*](https://msdn.microsoft.com/library/windows/hardware/hh406408) // PoFx handle is available
+
 The driver provides the [*EvtDeviceWdmPostPoFxRegisterDevice*](https://msdn.microsoft.com/library/windows/hardware/hh406408) callback if it must perform any additional operations using the POHANDLE for the power framework registration. For example, it could specify latency, residency, and wake requirements. For more information about routines that use the POHANDLE, see [Device Power Management Routines](https://msdn.microsoft.com/library/windows/hardware/hh450961).
 
 Your driver can also use the POHANDLE to exchange power control requests with PoFx:
@@ -68,12 +66,11 @@ The driver can also provide a pointer to a [*ComponentIdleConditionCallback*](ht
 
 Here is an example of a typical power down sequence:
 
-[*ComponentIdleConditionCallback*](https://msdn.microsoft.com/library/windows/hardware/hh406420)
-[*ComponentIdleStateCallback*](https://msdn.microsoft.com/library/windows/hardware/hh450931)
-...
-[*EvtInterruptDisable*](https://msdn.microsoft.com/library/windows/hardware/ff541714)
-...
-[*EvtDeviceD0Exit*](https://msdn.microsoft.com/library/windows/hardware/ff540855)
+1.  [*ComponentIdleConditionCallback*](https://msdn.microsoft.com/library/windows/hardware/hh406420)
+2.  [*ComponentIdleStateCallback*](https://msdn.microsoft.com/library/windows/hardware/hh450931)
+3.  [*EvtInterruptDisable*](https://msdn.microsoft.com/library/windows/hardware/ff541714)
+4.  [*EvtDeviceD0Exit*](https://msdn.microsoft.com/library/windows/hardware/ff540855)
+
 Restart power-managed queues and self-managed I/O operations in [*ComponentActiveConditionCallback*](https://msdn.microsoft.com/library/windows/hardware/hh406416).
 
 If the driver previously called [**WdfInterruptReportInactive**](https://msdn.microsoft.com/library/windows/hardware/hh439277), re-enable inactive interrupts by calling [**WdfInterruptReportActive**](https://msdn.microsoft.com/library/windows/hardware/hh439273) from either [*ComponentActiveConditionCallback*](https://msdn.microsoft.com/library/windows/hardware/hh406416) or [*ComponentIdleStateCallback*](https://msdn.microsoft.com/library/windows/hardware/hh450931).
@@ -82,7 +79,7 @@ If the driver previously called [**WdfInterruptReportInactive**](https://msdn.mi
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Supporting%20Single-Component%20Devices%20with%20Single%20or%20Multiple%20Functional%20Power%20States%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Supporting%20Single-Component%20Devices%20with%20Single%20or%20Multiple%20Functional%20Power%20States%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

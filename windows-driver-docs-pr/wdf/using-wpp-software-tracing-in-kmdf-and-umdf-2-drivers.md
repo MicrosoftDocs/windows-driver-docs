@@ -39,14 +39,8 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
     The Osrusbfx2 driver sample defines a single control GUID and seven trace flags in the Trace.h header file, as shown in the following example:
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>#define WPP_CONTROL_GUIDS \
+    ```
+    #define WPP_CONTROL_GUIDS \
     WPP_DEFINE_CONTROL_GUID(OsrUsbFxTraceGuid, \
       (d23a0c5a,d307,4f0e,ae8e,E2A355AD5DAB), \
       WPP_DEFINE_BIT(DBG_INIT)          /* bit  0 = 0x00000001 */ \
@@ -57,10 +51,8 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
       WPP_DEFINE_BIT(DBG_IOCTL)         /* bit  5 = 0x00000020 */ \
       WPP_DEFINE_BIT(DBG_WRITE)         /* bit  6 = 0x00000040 */ \
       WPP_DEFINE_BIT(DBG_READ)          /* bit  7 = 0x00000080 */ \
-    )</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    )
+    ```
 
     In this example:
 
@@ -69,31 +61,15 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
 4.  Your driver (both KMDF and UMDF 2) must call [**WPP\_INIT\_TRACING for Kernel-Mode Drivers**](https://msdn.microsoft.com/library/windows/hardware/ff556193) with the driver object and a registry path, typically from [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807):
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>WPP_INIT_TRACING( DriverObject, RegistryPath );</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```
+    WPP_INIT_TRACING( DriverObject, RegistryPath );
+    ```
 
     To deactivate tracing, both KMDF and UMDF 2 drivers call [**WPP\_CLEANUP for Kernel-Mode Drivers**](https://msdn.microsoft.com/library/windows/hardware/ff556183) from [*EvtCleanupCallback*](https://msdn.microsoft.com/library/windows/hardware/ff540840) or [*EvtDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff541694):
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>WPP_CLEANUP( WdfDriverWdmGetDriverObject( Driver ));</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```
+    WPP_CLEANUP( WdfDriverWdmGetDriverObject( Driver ));
+    ```
 
     The [**WPP\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff556183) macro takes a parameter of type PDRIVER\_OBJECT, so if your driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807) fails, you can skip calling [**WdfDriverWdmGetDriverObject**](https://msdn.microsoft.com/library/windows/hardware/ff547218) and instead call **WPP\_CLEANUP** with a pointer to the WDM driver object.
 
@@ -103,24 +79,16 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
 
     The following example shows how the Osrusbfx2 driver uses its **TraceEvents** function in a portion of the code devoted to handling read requests:
 
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>if (Length &gt; TEST_BOARD_TRANSFER_BUFFER_SIZE) {
+    ```
+    if (Length > TEST_BOARD_TRANSFER_BUFFER_SIZE) {
         TraceEvents(TRACE_LEVEL_ERROR,
                     DBG_READ,
-                    &quot;Transfer exceeds %d\n&quot;,
+                    "Transfer exceeds %d\n",
                     TEST_BOARD_TRANSFER_BUFFER_SIZE);
      
         status = STATUS_INVALID_PARAMETER;
-    }</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    }
+    ```
 
     The call to **TraceEvents** generates a trace message if the trace controller enables the **TRACE\_LEVEL\_ERROR** level and the **DBG\_READ** trace flag. The message includes the value of the driver-defined constant **TEST\_BOARD\_TRANSFER\_BUFFER\_SIZE**.
 
@@ -184,7 +152,7 @@ For more information about adding tracing messages to your driver, see [Adding W
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Using%20Inflight%20Trace%20Recorder%20%28IFR%29%20in%20KMDF%20and%20UMDF%202%20Drivers%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Using%20Inflight%20Trace%20Recorder%20%28IFR%29%20in%20KMDF%20and%20UMDF%202%20Drivers%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

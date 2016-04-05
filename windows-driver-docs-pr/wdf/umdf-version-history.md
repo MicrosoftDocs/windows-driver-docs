@@ -178,27 +178,27 @@ In addition to the shared functionality described in [Getting Started with UMDF]
 
 Version 1.11 adds the following driver-supplied callback interfaces and event callback functions:
 
-[**IPnpCallbackHardware2**](https://msdn.microsoft.com/library/windows/hardware/hh439727)
+-   [**IPnpCallbackHardware2**](https://msdn.microsoft.com/library/windows/hardware/hh439727)
 
-[**IPnpCallbackHardwareInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh439744)
+-   [**IPnpCallbackHardwareInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh439744)
 
 Version 1.11 adds the following framework-supplied interfaces:
 
-[**IWDFCmResourceList**](https://msdn.microsoft.com/library/windows/hardware/hh439762)
+-   [**IWDFCmResourceList**](https://msdn.microsoft.com/library/windows/hardware/hh439762)
 
-[**IWDFDevice3**](https://msdn.microsoft.com/library/windows/hardware/hh451197)
+-   [**IWDFDevice3**](https://msdn.microsoft.com/library/windows/hardware/hh451197)
 
-[**IWDFFile3**](https://msdn.microsoft.com/library/windows/hardware/hh451275)
+-   [**IWDFFile3**](https://msdn.microsoft.com/library/windows/hardware/hh451275)
 
-[**IWDFInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh451283)
+-   [**IWDFInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh451283)
 
-[**IWDFIoRequest3**](https://msdn.microsoft.com/library/windows/hardware/hh451337)
+-   [**IWDFIoRequest3**](https://msdn.microsoft.com/library/windows/hardware/hh451337)
 
-[**IWDFUnifiedPropertyStore**](https://msdn.microsoft.com/library/windows/hardware/hh451399)
+-   [**IWDFUnifiedPropertyStore**](https://msdn.microsoft.com/library/windows/hardware/hh451399)
 
-[**IWDFUnifiedPropertyStoreFactory**](https://msdn.microsoft.com/library/windows/hardware/hh451403)
+-   [**IWDFUnifiedPropertyStoreFactory**](https://msdn.microsoft.com/library/windows/hardware/hh451403)
 
-[**IWDFWorkItem**](https://msdn.microsoft.com/library/windows/hardware/hh406734)
+-   [**IWDFWorkItem**](https://msdn.microsoft.com/library/windows/hardware/hh406734)
 
 Version 1.11 adds the following capabilities to UMDF-based drivers:
 
@@ -225,41 +225,41 @@ Version 1.11 adds the following capabilities to UMDF-based drivers:
 
 Version 1.9 adds the following driver-supplied callback interfaces:
 
-[IPnpCallbackRemoteInterfaceNotification](https://msdn.microsoft.com/library/windows/hardware/ff556772)
+-   [IPnpCallbackRemoteInterfaceNotification](https://msdn.microsoft.com/library/windows/hardware/ff556772)
 
-[IPowerPolicyCallbackWakeFromS0](https://msdn.microsoft.com/library/windows/hardware/ff556815)
+-   [IPowerPolicyCallbackWakeFromS0](https://msdn.microsoft.com/library/windows/hardware/ff556815)
 
-[IPowerPolicyCallbackWakeFromSx](https://msdn.microsoft.com/library/windows/hardware/ff556825)
+-   [IPowerPolicyCallbackWakeFromSx](https://msdn.microsoft.com/library/windows/hardware/ff556825)
 
-[IQueueCallbackIoCanceledOnQueue](https://msdn.microsoft.com/library/windows/hardware/ff556857)
+-   [IQueueCallbackIoCanceledOnQueue](https://msdn.microsoft.com/library/windows/hardware/ff556857)
 
-[IRemoteInterfaceCallbackEvent](https://msdn.microsoft.com/library/windows/hardware/ff556887)
+-   [IRemoteInterfaceCallbackEvent](https://msdn.microsoft.com/library/windows/hardware/ff556887)
 
-[IRemoteInterfaceCallbackRemoval](https://msdn.microsoft.com/library/windows/hardware/ff556891)
+-   [IRemoteInterfaceCallbackRemoval](https://msdn.microsoft.com/library/windows/hardware/ff556891)
 
-[IRemoteTargetCallbackRemoval](https://msdn.microsoft.com/library/windows/hardware/ff556894)
+-   [IRemoteTargetCallbackRemoval](https://msdn.microsoft.com/library/windows/hardware/ff556894)
 
-[IWDFRemoteInterfaceInitialize](https://msdn.microsoft.com/library/windows/hardware/ff560232)
+-   [IWDFRemoteInterfaceInitialize](https://msdn.microsoft.com/library/windows/hardware/ff560232)
 
 Version 1.9 adds the following framework-supplied interfaces:
 
-[IWDFDevice2](https://msdn.microsoft.com/library/windows/hardware/ff556918)
+-   [IWDFDevice2](https://msdn.microsoft.com/library/windows/hardware/ff556918)
 
-[IWDFDeviceInitialize2](https://msdn.microsoft.com/library/windows/hardware/ff556967)
+-   [IWDFDeviceInitialize2](https://msdn.microsoft.com/library/windows/hardware/ff556967)
 
-[IWDFFile2](https://msdn.microsoft.com/library/windows/hardware/ff558915)
+-   [IWDFFile2](https://msdn.microsoft.com/library/windows/hardware/ff558915)
 
-[IWDFIoRequest2](https://msdn.microsoft.com/library/windows/hardware/ff558988)
+-   [IWDFIoRequest2](https://msdn.microsoft.com/library/windows/hardware/ff558988)
 
-[IWDFIoTarget2](https://msdn.microsoft.com/library/windows/hardware/ff559175)
+-   [IWDFIoTarget2](https://msdn.microsoft.com/library/windows/hardware/ff559175)
 
-[IWDFNamedPropertyStore2](https://msdn.microsoft.com/library/windows/hardware/ff560168)
+-   [IWDFNamedPropertyStore2](https://msdn.microsoft.com/library/windows/hardware/ff560168)
 
-[IWDFPropertyStoreFactory](https://msdn.microsoft.com/library/windows/hardware/ff560223)
+-   [IWDFPropertyStoreFactory](https://msdn.microsoft.com/library/windows/hardware/ff560223)
 
-[IWDFRemoteTarget](https://msdn.microsoft.com/library/windows/hardware/ff560247)
+-   [IWDFRemoteTarget](https://msdn.microsoft.com/library/windows/hardware/ff560247)
 
-[IWDFUsbTargetPipe2](https://msdn.microsoft.com/library/windows/hardware/ff560394)
+-   [IWDFUsbTargetPipe2](https://msdn.microsoft.com/library/windows/hardware/ff560394)
 
 These interfaces add the following capabilities to UMDF-based drivers:
 
@@ -281,7 +281,7 @@ These interfaces add the following capabilities to UMDF-based drivers:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20UMDF%20Version%20History%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20UMDF%20Version%20History%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

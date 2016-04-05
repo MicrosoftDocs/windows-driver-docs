@@ -23,26 +23,18 @@ Follow these steps to create a wake-capable interrupt object in your KMDF or UMD
 2.  Optionally, call [**WdfDeviceInitSetPowerPolicyEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff546774) to register event callback functions described in [Supporting System Wake-Up](supporting-system-wake-up.md).
 3.  Call [**WDF\_INTERRUPT\_CONFIG\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff552348) to initialize a [**WDF\_INTERRUPT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552347) structure. Provide an [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) callback function, to be called at passive level. In the configuration structure, set **PassiveHandling** and **CanWakeDevice** to **TRUE**. Then call [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) from your driver's [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback function to create the framework interrupt object.
 4.  Call [**WdfDeviceAssignSxWakeSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545909) to configure the device to wake the system from a low-power state.
-    <span codelanguage=""></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&amp;wakeSettings);
+    ```
+    WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&amp;wakeSettings);
     wakeSettings.DxState = PowerDeviceD3;
     wakeSettings.UserControlOfWakeSettings = WakeDoNotAllowUserControl;
     wakeSettings.Enabled = WdfTrue;
 
     status = WdfDeviceAssignSxWakeSettings(Device, &amp;wakeSettings);
     if (!NT_SUCCESS(status)) {
-        Trace(TRACE_LEVEL_ERROR,&quot;WdfDeviceAssignSxWakeSettings failed %x\n&quot;, status);
+        Trace(TRACE_LEVEL_ERROR,"WdfDeviceAssignSxWakeSettings failed %x\n", status);
         return status;
-    }</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    }
+    ```
 
 5.  When the device transitions to a low-power state, the framework does not call [*EvtInterruptDisable*](https://msdn.microsoft.com/library/windows/hardware/ff541714) for the wake-capable interrupt. The framework does call [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) if the driver has provided one.
 6.  When the device signals the wake interrupt, the framework calls the driver's [*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848) callback routine.
@@ -63,7 +55,7 @@ Wake interrupt functionality cannot be used in conjunction with USB selective su
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Using%20an%20Interrupt%20to%20Wake%20a%20Device%20%20RELEASE:%20%283/24/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Using%20an%20Interrupt%20to%20Wake%20a%20Device%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
