@@ -31,7 +31,7 @@ This section describes Windows Driver Frameworks (WDF) driver development concep
 </tr>
 <tr class="even">
 <td align="left"><p>[WDF Architecture](kernel-mode-driver-framework-architecture.md)</p></td>
-<td align="left"></td>
+<td align="left"><p>This topic describes the object-based interfaces that WDF provides for drivers. </p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Getting Started with UMDF](getting-started-with-umdf-version-2.md)</p></td>
@@ -80,7 +80,7 @@ This section describes Windows Driver Frameworks (WDF) driver development concep
 </tr>
 <tr class="even">
 <td align="left"><p>[PnP and Power Management](pnp-and-power-management.md)</p></td>
-<td align="left"><p>The topics in this section describe the default PnP and power management support that the framework provides, and how a</p></td>
+<td align="left"><p>The topics in this section describe the default PnP and power management support that the framework provides.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[Handling I/O Requests](handling-i-o-requests-in-wdf-drivers.md)</p></td>
