@@ -18,7 +18,7 @@ The following are the requirements for the NFC client driver in implementing any
 
 
 -   [Sequences](sequences.md)
--   [**Sequence flags**](sequence-flags.md)
+-   [Sequence flags](sequence-flags.md)
 -   [Initialization sequence](initialization-sequence.md)
 -   [NFCEE discovery sequence](nfcee-discovery-sequence.md)
 -   [RF discovery sequence](rf-discovery-sequence.md)

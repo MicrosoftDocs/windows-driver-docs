@@ -35,7 +35,7 @@ The driver MUST accept and report duplicate subscriptions, even if subscribed by
 
      
 
-    **Note**  If the first device to become proximate is merely a tag-type device (for example, an NFC Forum Tag), then the driver MUST clear the least-significant bit in the payload of the DeviceArrived message.
+-   If the first device to become proximate is merely a tag-type device (for example, an NFC Forum Tag), then the driver MUST clear the least-significant bit in the payload of the DeviceArrived message.
 
      
 
