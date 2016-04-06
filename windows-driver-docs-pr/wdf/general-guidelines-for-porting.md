@@ -1,0 +1,48 @@
+---
+title: Preparing for Porting
+description: Preparing for Porting
+ms.assetid: 355CD834-6B64-4E6F-AA17-AE1145F269CA
+---
+
+# Preparing for Porting
+
+
+In some ways, converting a driver from WDM to Windows Driver Frameworks (WDF) is more reimplementation than porting. This is neither as difficult nor as time-consuming as you might expect. Most of the WDM driver’s hardware-specific code can remain relatively intact, although it will use some different object types. WDF defaults replace much of the boilerplate code that a WDM driver requires—particularly for Plug and Play—and WDF provides built-in support for many tricky aspects of driver implementation, such as I/O cancellation (and the associated race conditions) and system power state transitions.
+
+The following general guidelines apply to porting a driver:
+
+-   Refer to the [samples](http://go.microsoft.com/fwlink/p/?linkid=256387). WDF ships with a rich set of samples, most of which are ports of the similarly named WDM drivers.
+-   Work incrementally. Because the framework implements default behavior for I/O, Plug and Play, power management, and WMI requests, you can code and debug one device or driver feature at a time.
+-   For Kernel-Mode Driver Framework (KMDF), implement WMI event tracing to provide detailed trace logs for use in debugging.
+-   In many situations, the WDF defaults provide greater functionality than the existing WDM driver might have implemented. Before trying to port complicated code—particularly for synchronization or queue management—be certain what WDF provides. It might save a considerable amount of time spent porting the driver.
+-   Use the WDF-specific [debugger extensions](debugger-extensions-for-kmdf-drivers.md) that are included in the Windows Driver Kit (WDK).
+-   Enable the [KMDF verifier](using-kmdf-verifier.md) or [UMDF verifier](using-umdf-verifier.md) while debugging.
+
+## WDM Driver Analysis
+
+
+Regardless of the type of device and driver involved, the most important issue in porting a driver is to understand the I/O flow through the driver. Before you start writing code, carefully analyze the existing WDM driver. You should be able to answer these questions:
+
+-   How many device objects does the driver require, and what driver roles (FDO, PDO, filter DO) do they represent? In nearly all cases, the WDF driver will use the same type and number of device objects as the WDM driver.
+-   Which I/O requests must the driver support?
+-   How many queues does the driver require for those requests? What are the characteristics of those queues?
+-   Which aspects of I/O processing can take place concurrently, and which must be serialized?
+-   Which I/O requests does the driver complete, and which does it pass down the stack?
+
+The answers to these questions determine how the core of the WDF driver is structured, where and when the I/O processing takes place, what type of synchronization the driver requires, and which WDF objects the driver must create to perform I/O. If the driver supports hardware, you must also thoroughly understand the device:
+
+-   Does the device generate interrupts?
+-   Which DMA model (if any) does the hardware support? Note that if your driver requires DMA, you must write a KMDF driver.
+-   Does the driver manage power policy for the device stack?
+
+Finally, if the driver supports WMI (also KMDF only), you must understand how to gather the data it exports and which WMI callbacks the driver requires.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Preparing%20for%20Porting%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
