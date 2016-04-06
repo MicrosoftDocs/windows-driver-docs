@@ -18,7 +18,7 @@ The message type must always begin with a protocol component and can be followed
 ## Protocol Component
 
 
-The protocol component of the message type is defined as everything before the first dot in the message type, or the entire string if it contains no dots. As an example, the highlighted portion of **Windows**`.contoso.com:t` shows the protocol component.
+The protocol component of the message type is defined as everything before the first dot in the message type, or the entire string if it contains no dots. As an example, the highlighted portion of **Windows**.contoso.com:t shows the protocol component.
 
 The protocol component is a standardized unique string that defines the primary level of branching for provider message handling. The string is case-sensitive. The parameter indicates to the NFP provider what the contents of *messageData* are as well as what protocol to use when transmitting the message.
 
@@ -33,7 +33,7 @@ The maximum length of the Protocol component is 250 characters (not including th
 ## Subtype Component
 
 
-The subtype component of *messageType* is defined as everything after the first dot. As an example, the highlighted portion of `Windows`**.contoso.com:t** shows the subtype component.
+The subtype component of *messageType* is defined as everything after the first dot. As an example, the highlighted portion of Windows**.contoso.com:t** shows the subtype component.
 
 The subtype component may be defined by Windows or by apps. The NFP provider should use it to deliver messages only to subscribers of the specified *messageType*.
 

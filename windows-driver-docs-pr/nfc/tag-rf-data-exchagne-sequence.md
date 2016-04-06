@@ -11,21 +11,26 @@ The following figures illustrate the state sequences for StateRfDiscovered and S
 
 ![t1t rf data exchange sequence](images/rfdataexchangesequence.png)
 
-The following illustrates the T2T RF data exchange sequence:![t2t rf data exchange sequence](images/t2trfdataexchangesequence.png)
+The following illustrates the T2T RF data exchange sequence:
+
+![t2t rf data exchange sequence](images/t2trfdataexchangesequence.png)
 
 The following illustrates the T3T RF data exchange sequence:
 
 ![t3t rf data exchange sequence](images/t3trfdataexchangesequence.png)
 
-The following illustrates the ISO-DEP RF Data Exchange Sequence
+The following illustrates the ISO-DEP RF Data Exchange Sequence:
 
 ![iso-dep rf data exchange sequence](images/iso-dep-rfdataexchangesequence.png)
 
 The NFC CX performs a presence check in StateRfDataXchg when there is no data to exchange with the remote RF endpoint. This is used to determine if the remote RF endpoint has moved out of range from the DH. As noted in the sequence diagram, the following commands are used for presence check for various tag types:
 
 -   For NFC Forum Type 1 Tags, the NFC CX uses the Read Identification (RID) command, which returns the UID, to perform the presence check detection.
+
 -   For NFC Forum Type 2 Tags, the NFC CX uses the READ block command, which returns the 16-byte block data, to perform the presence check detection.
+
 -   For NFC Forum Type 3 Tags, the NFC CX uses the RF\_T3T\_POLLING\_CMD NCI command (SENSF) to perform the presence check detection.
+
 -   For NFC Forum Type 4 Tags, the NFC CX uses an empty I-block exchange to perform the presence check detection.
 
  

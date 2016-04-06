@@ -7,7 +7,7 @@ ms.assetid: 61C3C55C-00DC-4A8C-B235-7C0391FB5119
 # Persisted data
 
 
-Data persistence is
+Data persistence for the registry location is described as follows.
 
 <table>
 <colgroup>
@@ -33,15 +33,6 @@ Data persistence is
 <p>TRUE: NFC RM is off</p>
 <p>FALSE: NFC RM is on and subject to idle power management</p></td>
 <td align="left">Inherit from the device enum tree, no special ACL set</td>
-<td align="left">N/A</td>
-<td align="left">No</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">NfcSERadioTurnedOff, DWORD:
-<p>TRUE: NFC SERM is off</p>
-<p>FALSE: NFC SERM is on and subject to idle power management</p></td>
-<td align="left">Inherit from the device enumeration tree, no special ACL set</td>
 <td align="left">N/A</td>
 <td align="left">No</td>
 </tr>

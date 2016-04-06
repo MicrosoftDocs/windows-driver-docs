@@ -86,7 +86,7 @@ The driver should assume that if the client publishes a message twice, it is bec
 
 The driver MUST accept and transmit duplicate published messages, even if published by the same client.
 
-## Required Actions
+### Required Actions
 
 
 The driver MUST remove all messages (and reclaim those resources) from the “Received” queue if the client has not sent a replacement [**IOCTL\_NFP\_GET\_NEXT\_SUBSCRIBED\_MESSAGE**](https://msdn.microsoft.com/library/windows/hardware/jj853319) within 10 - 20 seconds of the prior IOCTL completion.
