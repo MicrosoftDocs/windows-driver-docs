@@ -1,5 +1,6 @@
 ---
 title: Wi-Fi direct pairing implementation
+author: windows-driver-content
 description: This section provides design guidelines and requirements for a peripheral device to participate in the Tap and Setup and Tap and Reconnect use cases.
 ms.assetid: 1B729E9F-DF9F-4263-9F0B-5EDCF817D2C3
 ---

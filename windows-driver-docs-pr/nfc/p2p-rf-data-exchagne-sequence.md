@@ -1,5 +1,6 @@
 ---
 title: P2P RF data exchange sequence
+author: windows-driver-content
 description: The following figure illustrates the state sequences for StateRfDiscovered and StateRfDataXchg for the NFC-DEP protocol.
 ms.assetid: FF77D322-47AE-412C-9924-110FB9E8F9F5
 ---

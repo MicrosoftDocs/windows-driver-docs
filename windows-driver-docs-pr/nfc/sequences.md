@@ -1,5 +1,6 @@
 ---
 title: Sequences
+author: windows-driver-content
 description: This topic describes NFC CX driver sequences.
 ms.assetid: 92FDF18F-B42B-43F2-914A-CA7E986EE0DF
 ---

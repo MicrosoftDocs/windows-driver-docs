@@ -1,5 +1,6 @@
 ---
 title: NFC class extension architecture
+author: windows-driver-content
 description: The NFC driver is implemented as a class extension and the underlying transport driver is implemented as the client driver.
 ms.assetid: 9C68B3F7-CD83-4BDB-A4DD-11B7C1448301
 ---

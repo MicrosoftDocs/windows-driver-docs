@@ -1,5 +1,6 @@
 ---
 title: Example sequence
+author: windows-driver-content
 ms.assetid: 2B15570A-A220-4BF7-B595-D9CF66E02673
 description: 
 ---

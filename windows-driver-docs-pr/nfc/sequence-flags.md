@@ -1,5 +1,6 @@
 ---
 title: Sequence flags
+author: windows-driver-content
 description: The NFC CX defines the following constants for sequence events.
 ms.assetid: AC6CE286-52F7-4FC9-9F38-CD10C1413A90
 topic_type:

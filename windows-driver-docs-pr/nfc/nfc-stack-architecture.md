@@ -1,5 +1,6 @@
 ---
 title: NFC stack architecture
+author: windows-driver-content
 ms.assetid: 04800C37-99EA-431A-98C5-24984030CEA9
 description: 
 ---

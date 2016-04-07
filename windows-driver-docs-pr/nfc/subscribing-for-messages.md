@@ -1,5 +1,6 @@
 ---
 title: Subscribing for messages
+author: windows-driver-content
 description: Subscribing for messages
 ms.assetid: CF0D5CE0-A0E0-47D4-88E6-FBE186F78626
 ---

@@ -1,5 +1,6 @@
 ---
 title: NFC class extension
+author: windows-driver-content
 description: This section describes the interface between the NFC class extension (CX) and the NFC client driver.
 ms.assetid: 64599C5E-7E72-4712-B733-24C078919B84
 ---

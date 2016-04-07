@@ -1,5 +1,6 @@
 ---
 title: Tap and Do
+author: windows-driver-content
 description: Tap and Do is a gesture that is a natural interaction between people in close proximity used to trigger doing something together between the devices they are holding.
 ms.assetid: 0A00A00B-E136-4755-8FEE-03018491D0AF
 ---

@@ -1,5 +1,6 @@
 ---
 title: NFP power management
+author: windows-driver-content
 description: NFP power management
 ms.assetid: A47F4B01-A912-410A-8CF8-656D2C125148
 ---

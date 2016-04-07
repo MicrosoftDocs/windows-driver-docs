@@ -1,5 +1,6 @@
 ---
 title: NFC glossary
+author: windows-driver-content
 description: This topic provides a glossary of NFC class extension (CX) terms.
 Robots: noindex, nofollow
 ms.assetid: F8674D9B-AD43-452A-A146-473ABE65A298

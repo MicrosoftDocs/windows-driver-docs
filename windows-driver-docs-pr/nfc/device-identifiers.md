@@ -1,5 +1,6 @@
 ---
 title: NFP device identifiers
+author: windows-driver-content
 description: NFP device identifiers
 ms.assetid: B387D3F8-A9A7-47F0-B5E3-8437581947E4
 ---

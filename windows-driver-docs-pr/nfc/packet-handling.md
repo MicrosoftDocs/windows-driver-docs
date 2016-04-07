@@ -1,5 +1,6 @@
 ---
 title: NCI packet handling
+author: windows-driver-content
 description: In some cases, the sequences defined by the NFC CX might not be sufficient for NFC client driver to add its custom logic.
 ms.assetid: 48BD5100-A1D4-4844-B53A-DAC73FDBB089
 ---

@@ -1,5 +1,6 @@
 ---
 title: NDEF protocol
+author: windows-driver-content
 description: NDEF protocol
 ms.assetid: 5AF082EC-70D6-4117-BFCE-B28A8DBAC210
 ---
