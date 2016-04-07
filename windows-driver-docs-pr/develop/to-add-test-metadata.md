@@ -61,11 +61,11 @@ For Windows 8, the Windows Driver Kit (WDK) uses the [Test Authoring and Execut
     </thead>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>//*************************************************
+    <td align="left"><pre><code>//
         // DoSurpriseRemove is a test method as identified by the [TestMethod] tag. 
         // More methods can be added by following this basic pattern.
         // The name of the function defines the name of the test.
-        //*************************************************
+        //
         [TestMethod]
         // Required properties (see Windows Driver Kit documentation for more information):
         [TestProperty(&quot;Kits.Drivers&quot;, &quot;TRUE&quot;)]

@@ -1,0 +1,288 @@
+---
+title: UMDF Version History
+description: This topic lists versions of User-Mode Driver Framework (UMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
+ms.assetid: f3e895c6-6801-4033-adaa-d7d04a46db0a
+keywords: ["UMDF WDK , revision history", "UMDF WDK , version information", "revision history WDK UMDF", "version information WDK UMDF"]
+---
+
+# UMDF Version History
+
+
+This topic lists versions of User-Mode Driver Framework (UMDF), the corresponding versions of the Windows operating system, and the changes made in each release.
+
+## UMDF Versions and Operating Systems
+
+
+The following table shows the release history of the UMDF library:
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">UMDF version</th>
+<th align="left">Release method</th>
+<th align="left">Included in this version of Windows</th>
+<th align="left">Drivers using it can run on <sup>†</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>2.17</p></td>
+<td align="left"><p>Windows 10, version 1511 WDK</p></td>
+<td align="left"><p>Windows 10, version 1511</p></td>
+<td align="left"><p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, Windows 10 IoT Core (IoT Core), Windows Server 2016 Technical Preview</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>2.15</p></td>
+<td align="left"><p>Windows 10 WDK</p></td>
+<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Windows 10 for desktop editions, Windows 10 Mobile, IoT Core, Windows Server 2016 Technical Preview</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>2.0</p></td>
+<td align="left"><p>Windows Driver Kit (WDK) 8.1</p></td>
+<td align="left"><p>Windows 8.1</p></td>
+<td align="left"><p>Windows 8.1 and later</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>1.11</p></td>
+<td align="left"><p>Windows Driver Kit (WDK) 8</p></td>
+<td align="left"><p>Windows 8</p></td>
+<td align="left"><p>Windows Vista and later</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>1.9</p></td>
+<td align="left"><p>Windows 7 WDK</p></td>
+<td align="left"><p>Windows 7</p></td>
+<td align="left"><p>Windows XP and later</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>1.7</p></td>
+<td align="left"><p>Windows Server 2008 WDK</p></td>
+<td align="left"><p>Windows Vista with Service Pack 1 (SP1), Windows Server 2008</p></td>
+<td align="left"><p>Windows XP and later</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>1.5</p></td>
+<td align="left"><p>Windows Vista WDK</p></td>
+<td align="left"><p>Windows Vista</p></td>
+<td align="left"><p>Windows XP and later</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
+
+## UMDF Version 2.17
+
+
+This version adds UMDF support for the following existing interfaces:
+
+-   [**WdfDeviceConfigureWdmIrpDispatchCallback**](https://msdn.microsoft.com/library/windows/hardware/hh451093)
+-   [*EvtDeviceWdmIrpDispatch*](https://msdn.microsoft.com/library/windows/hardware/hh406404)
+-   [**WdfDeviceWdmDispatchIrp**](https://msdn.microsoft.com/library/windows/hardware/hh451100)
+-   [**WdfDeviceWdmDispatchIrpToIoQueue**](https://msdn.microsoft.com/library/windows/hardware/hh451105)
+
+For more information, see [Dispatching IRPs to I/O Queues](dispatching-irps-to-i-o-queues.md).
+
+## UMDF Version 2.15
+
+
+For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
+
+Here is the list of updated DDIs for version 2.15:
+
+-   The new [**WdfDeviceOpenDevicemapKey**](https://msdn.microsoft.com/library/windows/hardware/dn932458) method allows a driver to access subkeys and values under **HKEY\_LOCAL\_MACHINE\\HARDWARE\\DEVICEMAP**.
+
+-   A UMDF driver can call [**WdfIoTargetWdmGetTargetFileHandle**](https://msdn.microsoft.com/library/windows/hardware/ff548683) to obtain a file handle to the next-lower kernel-mode driver in its stack. The driver can write data to that handle, bypassing the framework's abstractions for sending I/O to the local I/O target.
+
+-   A UMDF driver can request that the underlying bus driver re-enumerate it. See [**WdfDeviceSetFailed**](https://msdn.microsoft.com/library/windows/hardware/ff546890).
+
+-   Setting the **UmdfDirectHardwareAccess** directive is no longer always necessary for devices that have connection resources. See [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
+
+## UMDF Version 2.0
+
+
+In addition to the shared functionality described in [Getting Started with UMDF](getting-started-with-umdf-version-2.md), UMDF version 2.0 adds:
+
+-   Support for timers that do not wake the system if they expire when the system is in a low-power state. For more information, see [Using Timers](using-timers.md).
+-   Added **CanWakeDevice** member to [**WDF\_INTERRUPT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552347) structure to support interrupts that can be used to bring a device from a low-power Dx state back to its fully on D0 state. For more information, see [Using an Interrupt to Wake a Device](using-an-interrupt-to-wake-a-device.md).
+-   Single-component, single-state (F0) power management for UMDF drivers. For more information, see [**WdfDeviceAssignS0IdleSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545903).
+
+-   Several debugger extension commands in Wdfkd.dll can now be used for UMDF 2.0 drivers as well. The extension library also contains the following new extension commands designed specifically for debugging UMDF 2.0 drivers:
+
+    -   [**!wdfkd.wdfumdevstack**](https://msdn.microsoft.com/library/windows/hardware/dn265379)
+    -   [**!wdfkd.wdfumdevstacks**](https://msdn.microsoft.com/library/windows/hardware/dn265380)
+    -   [**!wdfkd.wdfumdownirp**](https://msdn.microsoft.com/library/windows/hardware/dn265381)
+    -   [**!wdfkd.wdfumfile**](https://msdn.microsoft.com/library/windows/hardware/dn265382)
+    -   [**!wdfkd.wdfumirp**](https://msdn.microsoft.com/library/windows/hardware/dn265383)
+    -   [**!wdfkd.wdfumirps**](https://msdn.microsoft.com/library/windows/hardware/dn265384)
+    -   [**!wdfkd.wdfdeviceinterrupts**](https://msdn.microsoft.com/library/windows/hardware/dn265378)
+
+    For a list of extension commands and framework applicability, see [Debugger Extensions](debugger-extensions-for-kmdf-drivers.md).
+
+-   The [framework's event logger](using-the-framework-s-event-logger.md), or *In-flight Recorder* (IFR) has been updated to work for UMDF 2.0 drivers.
+-   Other WDF debugger extensions have been updated to work with UMDF 2.0 drivers. For a full list of extension commands, including information about which ones apply to which framework, see [Debugger Extensions for WDF Drivers](debugger-extensions-for-kmdf-drivers.md).
+-   Added **WdfIoTargetOpenLocalTargetByFile** to [**WDF\_IO\_TARGET\_OPEN\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff552386) to allow UMDF drivers to send driver-created requests to lower targets that require an associated file object. For more information, see the Remarks of **WDF\_IO\_TARGET\_OPEN\_TYPE**.
+-   The following UMDF-only routines:
+
+    -   [*EvtRequestImpersonate*](https://msdn.microsoft.com/library/windows/hardware/dn265581)
+    -   [**WDF\_IO\_TARGET\_OPEN\_PARAMS\_INIT\_OPEN\_BY\_FILE**](https://msdn.microsoft.com/library/windows/hardware/dn265641)
+    -   [**WdfDeviceAllocAndQueryInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/dn265598)
+    -   [**WdfDeviceAssignInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/dn265600)
+    -   [**WdfDeviceGetDeviceStackIoType**](https://msdn.microsoft.com/library/windows/hardware/dn265602)
+    -   [**WdfDeviceGetHardwareRegisterMappedAddress**](https://msdn.microsoft.com/library/windows/hardware/dn265603)
+    -   [**WdfDeviceMapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/dn265605)
+    -   [**WdfDevicePostEvent**](https://msdn.microsoft.com/library/windows/hardware/dn265606)
+    -   [**WdfDeviceQueryInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/dn265607)
+    -   [**WdfDeviceUnmapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/dn265610)
+    -   [**WdfFileObjectGetInitiatorProcessId**](https://msdn.microsoft.com/library/windows/hardware/dn265614)
+    -   [**WdfFileObjectGetRelatedFileObject**](https://msdn.microsoft.com/library/windows/hardware/dn265615)
+    -   [**WdfRequestGetEffectiveIoType**](https://msdn.microsoft.com/library/windows/hardware/dn265616)
+    -   [**WdfRequestGetRequestorProcessId**](https://msdn.microsoft.com/library/windows/hardware/dn265617)
+    -   [**WdfRequestGetUserModeInitiatedIo**](https://msdn.microsoft.com/library/windows/hardware/dn265618)
+    -   [**WdfRequestImpersonate**](https://msdn.microsoft.com/library/windows/hardware/dn265619)
+    -   [**WdfRequestIsFromUserModeDriver**](https://msdn.microsoft.com/library/windows/hardware/dn265620)
+    -   [**WdfRequestRetrieveActivityId**](https://msdn.microsoft.com/library/windows/hardware/dn265621)
+    -   [**WdfRequestSetActivityId**](https://msdn.microsoft.com/library/windows/hardware/dn265622)
+    -   [**WdfRequestSetUserModeDriverInitiatedIo**](https://msdn.microsoft.com/library/windows/hardware/dn265623)
+-   The following KMDF/UMDF methods described in [Accessing the Unified Device Property Model](accessing-the-unified-device-property-model.md):
+
+    -   [**WdfDeviceAllocAndQueryPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/dn265599)
+    -   [**WdfDeviceAssignProperty**](https://msdn.microsoft.com/library/windows/hardware/dn265601)
+    -   [**WdfDeviceInitSetIoTypeEx**](https://msdn.microsoft.com/library/windows/hardware/dn265604)
+    -   [**WdfDeviceQueryPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/dn265608)
+    -   [**WdfFdoInitAllocAndQueryPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/dn265612)
+    -   [**WdfFdoInitQueryPropertyEx**](https://msdn.microsoft.com/library/windows/hardware/dn265613)
+
+    For more information, see [Accessing the Unified Device Property Model](accessing-the-unified-device-property-model.md).
+
+-   Support for the following USB configuration types in [**WdfUsbTargetDeviceSelectConfigType**](https://msdn.microsoft.com/library/windows/hardware/ff550102):
+    -   **WdfUsbTargetDeviceSelectConfigTypeSingleInterface**
+    -   **WdfUsbTargetDeviceSelectConfigTypeMultiInterface**
+    -   **WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs**
+-   Support for querying the following capability types in [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434):
+    -   **GUID\_USB\_CAPABILITY\_DEVICE\_CONNECTION\_HIGH\_SPEED\_COMPATIBLE**
+    -   **GUID\_USB\_CAPABILITY\_DEVICE\_CONNECTION\_SUPER\_SPEED\_COMPATIBLE**
+-   Added [WDF Register/Port Access Functions](https://msdn.microsoft.com/library/windows/hardware/dn265662)
+
+## UMDF Version 1.11
+
+
+Version 1.11 adds the following driver-supplied callback interfaces and event callback functions:
+
+-   [**IPnpCallbackHardware2**](https://msdn.microsoft.com/library/windows/hardware/hh439727)
+
+-   [**IPnpCallbackHardwareInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh439744)
+
+Version 1.11 adds the following framework-supplied interfaces:
+
+-   [**IWDFCmResourceList**](https://msdn.microsoft.com/library/windows/hardware/hh439762)
+
+-   [**IWDFDevice3**](https://msdn.microsoft.com/library/windows/hardware/hh451197)
+
+-   [**IWDFFile3**](https://msdn.microsoft.com/library/windows/hardware/hh451275)
+
+-   [**IWDFInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh451283)
+
+-   [**IWDFIoRequest3**](https://msdn.microsoft.com/library/windows/hardware/hh451337)
+
+-   [**IWDFUnifiedPropertyStore**](https://msdn.microsoft.com/library/windows/hardware/hh451399)
+
+-   [**IWDFUnifiedPropertyStoreFactory**](https://msdn.microsoft.com/library/windows/hardware/hh451403)
+
+-   [**IWDFWorkItem**](https://msdn.microsoft.com/library/windows/hardware/hh406734)
+
+Version 1.11 adds the following capabilities to UMDF-based drivers:
+
+-   [Accessing Hardware and Handling Interrupts](accessing-hardware-and-handling-interrupts.md)
+
+-   [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md)
+
+-   Added **UmdfHostProcessSharing**, **UmdfDirectHardwareAccess**, **UmdfRegisterAccessMode**, **UmdfFileObjectPolicy**, and **UmdfFsContextUsePolicy** directives, described in [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md)
+
+-   [Well-known security identifiers (SID) for UMDF drivers](controlling-device-access.md)
+
+-   Unified property store support, described in [Using the Registry in UMDF-based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff561381)
+
+-   [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) is integrated to work with UMDF. In prior versions, this routine closes the handle to the device object after taking a reference on the device’s handle. This behavior was incompatible with UMDF’s expectation that the cleanup request on the device object won’t occur until after all the I/O is complete.
+
+-   [Creating UMDF-based HID Minidrivers](creating-umdf-hid-minidrivers.md)
+
+-   Enhanced support for [Supporting Idle Power-Down in UMDF-based Drivers](supporting-idle-power-down-in-umdf-drivers.md). The framework can now put the device in the D3cold power state when the idle timeout period expires. The framework can also cause the device to return to its working (D0) state when the system returns to its working (S0) state.
+
+-   The following samples are new in UMDF 1.11: [WudfVhidmini](http://go.microsoft.com/fwlink/p/?linkid=256226), [NetNfpProvider](http://go.microsoft.com/fwlink/p/?linkid=256147).
+
+## UMDF Version 1.9
+
+
+Version 1.9 adds the following driver-supplied callback interfaces:
+
+-   [IPnpCallbackRemoteInterfaceNotification](https://msdn.microsoft.com/library/windows/hardware/ff556772)
+
+-   [IPowerPolicyCallbackWakeFromS0](https://msdn.microsoft.com/library/windows/hardware/ff556815)
+
+-   [IPowerPolicyCallbackWakeFromSx](https://msdn.microsoft.com/library/windows/hardware/ff556825)
+
+-   [IQueueCallbackIoCanceledOnQueue](https://msdn.microsoft.com/library/windows/hardware/ff556857)
+
+-   [IRemoteInterfaceCallbackEvent](https://msdn.microsoft.com/library/windows/hardware/ff556887)
+
+-   [IRemoteInterfaceCallbackRemoval](https://msdn.microsoft.com/library/windows/hardware/ff556891)
+
+-   [IRemoteTargetCallbackRemoval](https://msdn.microsoft.com/library/windows/hardware/ff556894)
+
+-   [IWDFRemoteInterfaceInitialize](https://msdn.microsoft.com/library/windows/hardware/ff560232)
+
+Version 1.9 adds the following framework-supplied interfaces:
+
+-   [IWDFDevice2](https://msdn.microsoft.com/library/windows/hardware/ff556918)
+
+-   [IWDFDeviceInitialize2](https://msdn.microsoft.com/library/windows/hardware/ff556967)
+
+-   [IWDFFile2](https://msdn.microsoft.com/library/windows/hardware/ff558915)
+
+-   [IWDFIoRequest2](https://msdn.microsoft.com/library/windows/hardware/ff558988)
+
+-   [IWDFIoTarget2](https://msdn.microsoft.com/library/windows/hardware/ff559175)
+
+-   [IWDFNamedPropertyStore2](https://msdn.microsoft.com/library/windows/hardware/ff560168)
+
+-   [IWDFPropertyStoreFactory](https://msdn.microsoft.com/library/windows/hardware/ff560223)
+
+-   [IWDFRemoteTarget](https://msdn.microsoft.com/library/windows/hardware/ff560247)
+
+-   [IWDFUsbTargetPipe2](https://msdn.microsoft.com/library/windows/hardware/ff560394)
+
+These interfaces add the following capabilities to UMDF-based drivers:
+
+-   [Remote I/O targets](general-i-o-targets-in-umdf.md)
+
+-   [Power policy ownership](power-policy-ownership-in-umdf.md)
+
+-   The [direct I/O](https://msdn.microsoft.com/library/windows/hardware/ff554413) buffer access method
+
+-   [Continuous readers](https://msdn.microsoft.com/library/windows/hardware/ff561479) for USB devices
+
+-   Enhanced support for [device interfaces](using-device-interfaces-in-umdf-drivers.md)
+
+-   Enhanced ability to [cancel I/O requests](canceling-i-o-requests.md)
+
+-   Enhanced access to the [registry](https://msdn.microsoft.com/library/windows/hardware/ff561381)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20UMDF%20Version%20History%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
