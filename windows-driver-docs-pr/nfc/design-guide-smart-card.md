@@ -3,6 +3,7 @@ title: Smart card design guide
 author: windows-driver-content
 description: Smart card design guide
 ms.assetid: 721A1530-B7B4-4373-9006-356A0A601349
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # Smart card design guide
