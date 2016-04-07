@@ -3,6 +3,7 @@ title: Sequence handling
 author: windows-driver-content
 description: Most non-standard NCI features and extensions implemented by the NFCC firmware from different vendors relate to chipset configuration, firmware download, and hardware tuning.
 ms.assetid: D0BE9827-2A15-4AA5-ADB9-80071ED37583
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # Sequence handling

@@ -3,6 +3,7 @@ title: Pairing Bluetooth protocol
 author: windows-driver-content
 description: Pairing Bluetooth protocol
 ms.assetid: 6C95CA57-A226-4252-91E2-FAD8F1A0432B
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # Pairing:Bluetooth protocol
