@@ -3,6 +3,7 @@ title: What's new in NFC device drivers
 author: windows-driver-content
 description: This topic summarizes the new features and improvements for NFC device drivers in Windows 10.
 ms.assetid: 07E0E7F4-9D2B-423F-925C-D6923D8D9A4A
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # What's new in NFC device drivers

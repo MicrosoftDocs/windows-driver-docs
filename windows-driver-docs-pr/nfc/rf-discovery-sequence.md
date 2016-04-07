@@ -3,6 +3,7 @@ title: RF discovery sequence
 author: windows-driver-content
 description: The following figure illustrates the sequence of NCI operations executed by NFC CX for starting discovery.
 ms.assetid: 392F8A06-262D-4CF9-B510-C3FE86291026
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # RF discovery sequence

@@ -3,6 +3,7 @@ title: Sequence flags
 author: windows-driver-content
 description: The NFC CX defines the following constants for sequence events.
 ms.assetid: AC6CE286-52F7-4FC9-9F38-CD10C1413A90
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 topic_type:
 - apiref
 api_name:
@@ -20,24 +21,35 @@ api_type:
 
 The NFC CX defines the following constants for sequence events.
 
-<a href="" id="nfc-cx-sequence-pre-init-flag-skip-config"></a>**NFC\_CX\_SEQUENCE\_PRE\_INIT\_FLAG\_SKIP\_CONFIG**
+
+### NFC\_CX\_SEQUENCE\_PRE\_INIT\_FLAG\_SKIP\_CONFIG
+
 0x00000001
+
 This flag is used in the pre-init sequence to skip configuration updates after NCI initialization. Note this flag cannot be used with force configuration option.
 
-<a href="" id="nfc-cx-sequence-pre-init-flag-force-config"></a>**NFC\_CX\_SEQUENCE\_PRE\_INIT\_FLAG\_FORCE\_CONFIG**
+### NFC\_CX\_SEQUENCE\_PRE\_INIT\_FLAG\_FORCE\_CONFIG
+
 0x00000002
+
 This flag is used to force update configuration after NCI initialization. Typically, NFC CX only updates the configuration either if the controller doesn’t support KEEP CONFIG or if the configuration has changed after a driver update. The driver persists the current configuration using a session ID.
 
-<a href="" id="nfc-cx-sequence-init-complete-flag-redo"></a>**NFC\_CX\_SEQUENCE\_INIT\_COMPLETE\_FLAG\_REDO**
+### NFC\_CX\_SEQUENCE\_INIT\_COMPLETE\_FLAG\_REDO
+
 0x00000001
+
 This flag is used in init complete sequence to redo the initialization sequence. This is typically used if the client driver has performed a firmware download or updated hardware settings that require a reboot.
 
-<a href="" id="nfc-cx-sequence-pre-nfcee-disc-flag-skip"></a>**NFC\_CX\_SEQUENCE\_PRE\_NFCEE\_DISC\_FLAG\_SKIP**
+### NFC\_CX\_SEQUENCE\_PRE\_NFCEE\_DISC\_FLAG\_SKIP
+
 0x00000001
+
 This flag is used during NFCEE pre-discovery sequence to skip performing the NFCEE discovery.
 
-<a href="" id="nfc-cx-sequence-pre-shutdown-flag-skip-reset"></a>**NFC\_CX\_SEQUENCE\_PRE\_SHUTDOWN\_FLAG\_SKIP\_RESET**
+### NFC\_CX\_SEQUENCE\_PRE\_SHUTDOWN\_FLAG\_SKIP\_RESET
+
 0x00000001
+
 This flag forces the NFC CX to not send an NCI reset during shutdown.
 
  

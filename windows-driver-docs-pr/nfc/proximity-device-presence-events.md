@@ -3,6 +3,7 @@ title: Proximity device presence events
 author: windows-driver-content
 description: Proximity device presence events
 ms.assetid: 8E0E44D5-E6DD-4385-988E-EFDAA75C6D59
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # Proximity device presence events
