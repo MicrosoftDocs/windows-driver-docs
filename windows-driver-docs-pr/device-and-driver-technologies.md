@@ -19,7 +19,7 @@ For information about the tools used to develop desktop drivers, see [Device and
 
 **Device drivers and Windows 10 Mobile**
 
-Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead of copying the driver to the desktop or installing it using device manager, you add a driver to the OS on a mobile device by using a package. For more information about working with packages see [Creating mobile packages](https://msdn.microsoft.com/library/dn756642). Also, a driver on a mobile device needs to be signed using a specific process to maintain integrity of the OS, as explained in [Mobile code signing](https://msdn.microsoft.com/library/windows/hardware/dn756634). For a walkthrough of adding a device driver to a mobile device such as a phone, see [Adding a driver to a test image](https://msdn.microsoft.com/library/windows/hardware/mt131832).
+Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead of copying the driver to the desktop or installing it using Device Manager, you add a driver to the OS on a mobile device by using a package. For more information about working with packages see [Creating mobile packages](https://msdn.microsoft.com/library/dn756642). Also, a driver on a mobile device needs to be signed using a specific process to maintain integrity of the OS, as explained in [Mobile code signing](https://msdn.microsoft.com/library/windows/hardware/dn756634). For a walkthrough of adding a device driver to a mobile device such as a phone, see [Adding a driver to a test image](https://msdn.microsoft.com/library/windows/hardware/mt131832).
 
 ## In this section
 
