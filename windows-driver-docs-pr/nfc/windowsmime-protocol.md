@@ -3,6 +3,7 @@ title: WindowsMime protocol
 author: windows-driver-content
 description: WindowsMime protocol
 ms.assetid: 03C5A31F-269A-45B3-9359-B6FFF4823190
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # WindowsMime protocol

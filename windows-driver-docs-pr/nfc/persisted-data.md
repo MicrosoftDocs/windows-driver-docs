@@ -3,6 +3,7 @@ title: Persisted data
 author: windows-driver-content
 description: Data persistence is.
 ms.assetid: 61C3C55C-00DC-4A8C-B235-7C0391FB5119
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # Persisted data

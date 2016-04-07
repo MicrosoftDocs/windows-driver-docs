@@ -3,6 +3,7 @@ title: Functional flow
 author: windows-driver-content
 description: Because the Smart Card is sharing the driver with NFP, when a smart card approaches, NDEF processing take priority so that we give a chance for the higher level services can work on the NDEF message type before an application can communicate with the card.
 ms.assetid: 7B4B4902-FD16-4C9B-BB54-A1D6EFCAE9DB
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # Functional flow

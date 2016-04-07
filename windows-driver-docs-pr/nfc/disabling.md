@@ -3,6 +3,7 @@ title: Disabling NFP
 author: windows-driver-content
 description: A client can temporarily disable subscriptions, publications, and presence.
 ms.assetid: 94BE6D24-60AD-45BD-AF2D-388022114975
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # Disabling NFP

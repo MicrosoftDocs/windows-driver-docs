@@ -3,6 +3,7 @@ title: NFP-facilitated peripheral wireless device pairing
 author: windows-driver-content
 description: NFP-facilitated peripheral wireless device pairing
 ms.assetid: 7B57019F-C80A-4E74-BBC2-A26BEDEB20DD
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # NFP-facilitated peripheral wireless device pairing

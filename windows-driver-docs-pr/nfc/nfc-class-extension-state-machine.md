@@ -3,6 +3,7 @@ title: NFC class extension state machine
 author: windows-driver-content
 description: The internal design of the NFC CX state machine is shown below.
 ms.assetid: A131F881-C05A-44FF-A7A6-FD40BA344BD0
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # NFC class extension state machine

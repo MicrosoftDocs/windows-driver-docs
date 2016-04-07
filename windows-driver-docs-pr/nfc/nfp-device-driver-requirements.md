@@ -3,6 +3,7 @@ title: NFP device driver requirements
 author: windows-driver-content
 description: Provides information about NFP device driver requirements.
 ms.assetid: 48EB0861-7BC5-4CA2-9AE5-DD3BA17AC39A
+keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
 # NFP device driver requirements
