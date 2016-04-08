@@ -15,7 +15,7 @@ A driver *package* is the collection of files used to install a driver. The pack
 
 A driver package is a separate project which collects output from one or more projects, such as driver projects. The driver package's project, when built, then produces the driver package which Visual Studio uses to deploy the driver.
 
-![visual studio solution explorer driver package project](images/vsslnexplorer.png)
+![visual studio solution explorer driver package project](images/VsSlnExplorer.png)
 
 **Note**  
 
@@ -40,7 +40,7 @@ You can add a reference to other projects in the solution by clicking **Add New 
 
 To remove a reference to an existing project, first highlight the existing project you no longer want to reference, then click **Remove Reference**.
 
-![driver package properties](images/vsdrvrpkgprops.png)
+![driver package properties](images/VsDrvrPkgProps.png)
 
 ## <span id="Multiple_drivers_in_a_solution"></span><span id="multiple_drivers_in_a_solution"></span><span id="MULTIPLE_DRIVERS_IN_A_SOLUTION"></span>Multiple drivers in a solution
 
@@ -53,7 +53,7 @@ You can add a reference to other projects in the solution by clicking **Add New 
 
 To remove a reference to an existing project, first highlight the existing project you no longer want to reference, then click **Remove Reference**.
 
-See the "Toaster Sample Driver" sample for an example of a single solution that contains multiple drivers:![multiple drivers in a single solution](images/multipledriverssinglesolution.png)
+See the "Toaster Sample Driver" sample for an example of a single solution that contains multiple drivers:![multiple drivers in a single solution](images/MultipleDriversSingleSolution.png)
 
 ## <span id="related_topics"></span>Related topics
 

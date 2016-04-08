@@ -10,7 +10,7 @@ In the Requirements block at the bottom of MSDN driver reference pages, you'll s
 
 Here's an example of such an entry:
 
-![target platform set to universal in requirements block](images/targetplatform.png)
+![target platform set to universal in requirements block](images/TargetPlatform.png)
 
 The values specified in **Target Platform** map to the values you can use in Visual Studio, in the **Target Platform** property under **Configuration Properties-&gt;Driver** .
 
