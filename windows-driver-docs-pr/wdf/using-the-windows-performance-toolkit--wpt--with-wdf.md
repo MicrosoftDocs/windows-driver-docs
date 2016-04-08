@@ -72,7 +72,7 @@ To capture another trace for the same driver, use Wpr.exe to start and stop a ne
 
 To start analyzing the driver's performance, find the **Graph Explorer** on the left, open the **Computation** category, and then drag the UMDF or KMDF graph to the main work area, under the **Analysis** tab. This screenshot shows the **Graph Explorer** pane:
 
-![graph explorer in wpa](images/wpaumdfiocapture-leftpane.png)
+![graph explorer in wpa](images/WpaUMDFIoCapture-LeftPane.png)
 
 There is a dedicated table for UMDF and another for KMDF drivers.
 
@@ -86,7 +86,7 @@ WPT can display WDF I/O request completion throughput in two ways:
 
 The following screenshot shows sample summary graphs and tables for CPU and UMDF I/O request performance. In the UMDF I/O Request Completion Rate graph, the number of requests per second is shown on the y axis.
 
-![graph for umdf i/o request performance](images/wpaumdfiocapture-narrow.png)
+![graph for umdf i/o request performance](images/WpaUMDFIoCapture-Narrow.PNG)
 
 In the [summary table](https://msdn.microsoft.com/library/windows/hardware/hh448109.aspx), most columns are self-explanatory, but there are a couple things to note. The WdfDevice column contains the WDFDEVICE handle associated with the I/O request. The ActivityID contains a unique identifier for the I/O request. The framework creates this identifier when it delivers an I/O request to the driver. If an activity identifier is already associated with the corresponding IRP, the framework uses that identifier. For more information, see [Using Activity Identifiers](using-activity-identifiers.md).
 
@@ -97,7 +97,7 @@ Entry time is the trace timestamp when the framework delivered the request to th
 
 Here's a similar screenshot showing I/O request info for a KMDF driver.
 
-![graph for umdf i/o request performance](images/wpakmdfiocapture-narrow.png)
+![graph for umdf i/o request performance](images/WpaKMDFIoCapture-Narrow.PNG)
 
 ## PnP Power callback graph and summary table
 
@@ -106,7 +106,7 @@ WPT can also display the processing time of each PnP and power callback. The fol
 
 The WdfDevice column contains the WDFDEVICE handle associated with the callback. The ActivityID contains a unique identifier for the callback instance.
 
-![pnp power callback graph](images/wpa-fx2-pnppwr.png)
+![pnp power callback graph](images/wpa-fx2-pnppwr.PNG)
 
 ## Which calls are instrumented?
 
