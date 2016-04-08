@@ -1,4 +1,4 @@
-# [WDF Driver Development Guide](design-guide.md)
+# [WDF Driver Development Guide](index.md)
 ## [What's New for  WDF Drivers](what-s-new-for-wdf-drivers.md)
 ## [WDF Architecture](kernel-mode-driver-framework-architecture.md)
 ## [Getting Started with UMDF](getting-started-with-umdf-version-2.md)
