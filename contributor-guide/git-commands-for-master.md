@@ -40,7 +40,7 @@ Follow the steps in this article to create a local working branch on your comput
 <!--will OP build untracked files? -->
 
 8. Optionally, build and preview your article locally.
-    * Navigate to the root of the repository and run the command `.\.openpublishing.build.ps1 -parameters:target=serve`.
+    * Navigate to the root of the repository and run the command `.\.openpublishing.build.ps1 -parameters:targets=serve`.
     * Open `http://localhost:8080` in your browser.
     
 9. Update your local working branch with changes from upstream:
