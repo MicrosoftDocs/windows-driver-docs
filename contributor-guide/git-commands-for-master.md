@@ -18,7 +18,7 @@ Follow the steps in this article to create a local working branch on your comput
 
         git checkout master
 
-5. Create a fresh local working branch derived from the master branch and moved to that branch:
+5. Create a fresh local working branch derived from the master branch and move to that branch:
 
         git checkout -b <working branch>
 
