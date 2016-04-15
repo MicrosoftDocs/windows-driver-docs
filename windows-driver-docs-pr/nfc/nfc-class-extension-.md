@@ -6,10 +6,10 @@ ms.assetid: 64599C5E-7E72-4712-B733-24C078919B84
 keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
 ---
 
-# NFC class extension
+# NFC class extension (CX) design guide
 
 
-This section describes the interface between the NFC class extension (CX) and the NFC client driver. The NFC CX driver implements all NFC device driver interfaces and standard NFC protocols and formats based on the *NFC Forum NFC Controller Interface (NCI) Technical Specification*.
+This section describes the interface between the NFC class extension (CX) and the NFC client driver. The NFC CX driver implements all NFC device driver interfaces and standard NFC protocols and formats based on the *NFC Forum NFC Controller Interface (NCI) Technical Specification*. 
 
 The NFC client driver is responsible for transport layer interfacing as well as support for any non-standard vendor-defined extensions for the optimized functioning of the NFC controller.
 
