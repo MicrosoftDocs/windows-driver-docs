@@ -9,18 +9,17 @@ Follow the steps in this article to create a local working branch on your comput
 2. Change to windows-driver-docs-pr:
 
         cd windows-driver-docs-pr
-        
-3. Pull down the latest changes:
-
-        git pull origin
-        
-4. Check out the master branch:
+3. Check out the master branch:
 
         git checkout master
 
-5. Create a fresh local working branch derived from the master branch and move to that branch:
+4. Create a fresh local working branch derived from the master branch:
 
-        git checkout -b <working branch>
+        git pull upstream master:<working branch>
+
+5. Move into the new working branch:
+
+        git checkout <working branch>
 
 6. Let your fork know you created the local working branch:
 
