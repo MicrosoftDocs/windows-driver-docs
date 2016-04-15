@@ -60,8 +60,7 @@
 #### [NCI packet handling](packet-handling.md)
 ### [Configurability](configurability.md)
 ### [Error handling](error-handling.md)
-### [Power sates](power-states.md)
+### [Power states](power-states.md)
 ### [NFC client driver power management requirements](nfc-client-driver-power-management-requirements.md)
 ### [Logging](logging.md)
 ### [Persisted data](persisted-data.md)
-
