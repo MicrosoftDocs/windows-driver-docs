@@ -20,4 +20,5 @@ When converting from WDCML to MD, we are tracking the following known issues:
     * [Need to be able to support Partner Center theme](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems?id=518336&fullScreen=false&_a=edit)
     * [Need to suppress contributor info](https://mseng.visualstudio.com/web/wi.aspx?pcguid=0efb4611-d565-4cd1-9a64-7d6cb6d7d5f0&id=519371)
     * [Support Branch Deletion](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems?_a=edit&id=467921&triage=true)
-    
+    * [No contribute button on msdnstage](https://mseng.visualstudio.com/DefaultCollection/VSChina/_workitems#_a=edit&id=563096)
+    * Posting confidential info on GitHub
