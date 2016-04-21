@@ -33,8 +33,6 @@ This topic lists available User-Mode Driver Framework (UMDF) sample drivers that
 -   [UMDF Echo Sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/umdf)
 -   [UMDF SocketEcho Sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/umdfSocketEcho)
 -   [Virtual serial driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/VirtualSerial)
--   [WDF Hybrid 1394 Virtual Device Sample Driver](http://go.microsoft.com/fwlink/p/?LinkId=618052)
--   [WDF Sample Driver Learning Lab for OSR USB-FX2](http://go.microsoft.com/fwlink/p/?LinkId=618936)
 -   [Windows Biometric Driver Samples](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics)
 -   [WPD basic-hardware sample driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/wpd/WpdBasicHardwareDriver)
 -   [WPD multi-transport sample driver](https://github.com/Microsoft/Windows-driver-samples/tree/master/wpd/WpdMultiTransportDriver)
