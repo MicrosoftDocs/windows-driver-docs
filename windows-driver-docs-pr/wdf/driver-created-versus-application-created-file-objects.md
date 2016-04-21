@@ -1,5 +1,6 @@
 ---
 title: Driver-Created Versus Application-Created File Objects
+author: windows-driver-content
 description: Driver-Created Versus Application-Created File Objects
 ms.assetid: f81ae0ed-a29c-476e-9b16-ff554eef1de9
 keywords: ["file object to handle I/O WDK UMDF , driver-created", "file object to handle I/O WDK UMDF , application-created", "I/O requests WDK UMDF , file object, driver-created versus application-created", "User-Mode Driver Framework WDK , file object to handle I/O, driver-created versus application-created", "UMDF WDK , file object to handle I/O, driver-created versus application-created", "user-mode drivers WDK UMDF , file object to handle I/O, driver-created versus application-created"]

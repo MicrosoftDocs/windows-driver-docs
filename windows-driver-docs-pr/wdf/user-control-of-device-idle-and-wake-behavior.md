@@ -1,5 +1,6 @@
 ---
 title: User Control of Device Idle and Wake Behavior
+author: windows-driver-content
 description: User Control of Device Idle and Wake Behavior
 ms.assetid: 776fcf82-2235-489a-8d46-3ad230da3402
 keywords: ["system wake-up WDK KMDF", "power management WDK KMDF , wake-up capabilities", "wake-up capabilities WDK KMDF", "sleep power management WDK KMDF", "low-power states WDK KMDF", "power management WDK KMDF , idle power-down", "idle power-down WDK KMDF"]

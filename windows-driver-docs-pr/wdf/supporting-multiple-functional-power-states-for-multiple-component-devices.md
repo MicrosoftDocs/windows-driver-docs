@@ -1,5 +1,6 @@
 ---
 title: Supporting Multiple-Component Devices with Single or Multiple Functional Power States
+author: windows-driver-content
 description: Supporting Multiple-Component Devices with Single or Multiple Functional Power States
 ms.assetid: D601A0F6-A035-4161-879A-D495518E7EC6
 ---

@@ -1,5 +1,6 @@
 ---
 title: Using UMDF Verifier
+author: windows-driver-content
 description: Using UMDF Verifier
 ms.assetid: 95D85894-86AF-4312-B5BD-F1C9E8F8B2E5
 ---

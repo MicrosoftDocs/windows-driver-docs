@@ -1,5 +1,6 @@
 ---
 title: Reusing Framework Request Objects
+author: windows-driver-content
 description: Reusing Framework Request Objects
 ms.assetid: 804efc94-a7df-4ebd-a42e-82d1c5376e19
 keywords: ["I/O requests WDK UMDF , reusing objects", "request processing WDK UMDF , reusing I/O request objects", "User-Mode Driver Framework WDK , reusing I/O request objects", "UMDF WDK , reusing I/O request objects", "user-mode drivers WDK UMDF , reusing I/O request objects", "reusing I/O request objects WDK UMDF"]

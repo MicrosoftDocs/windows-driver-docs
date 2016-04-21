@@ -1,5 +1,6 @@
 ---
 title: Framework Library Versioning
+author: windows-driver-content
 description: In this topic, you'll learn about the naming conventions for the file names of the Kernel-Mode Driver Framework (KMDF) library and the User-Mode Driver Framework (UMDF) library.
 ms.assetid: 51db6f3c-45cb-46a7-9dd4-2bab67893fea
 keywords: ["kernel-mode drivers WDK KMDF , library versions", "KMDF WDK , library versions", "Kernel-Mode Driver Framework WDK , library versions", "library WDK KMDF", "version numbers WDK KMDF", "major version numbers WDK KMDF", "minor version numbers WDK KMDF"]

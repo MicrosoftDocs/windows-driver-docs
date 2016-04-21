@@ -1,5 +1,6 @@
 ---
 title: Creating an Interrupt Object
+author: windows-driver-content
 description: Creating an Interrupt Object
 ms.assetid: D281F2E8-3ADA-4F4E-B345-CE72FA3C69EC
 ---

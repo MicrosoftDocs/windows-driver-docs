@@ -1,5 +1,6 @@
 ---
 title: Introduction to Registry Keys for Drivers
+author: windows-driver-content
 description: Introduction to Registry Keys for Drivers
 ms.assetid: ec1a21db-1a31-4041-941d-31156884ffae
 keywords: ["registry WDK KMDF", "registry-key objects WDK KMDF", "framework-based drivers WDK KMDF , registry", "kernel-mode drivers WDK KMDF , registry", "KMDF WDK , registry", "Kernel-Mode Driver Framework WDK , registry", "Parameters key WDK KMDF", "software keys WDK KMDF", "driver keys WDK KMDF", "hardware keys WDK KMDF", "keys WDK KMDF"]

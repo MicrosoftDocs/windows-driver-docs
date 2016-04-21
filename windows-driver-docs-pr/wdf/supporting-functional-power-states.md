@@ -1,5 +1,6 @@
 ---
 title: Supporting Functional Power States
+author: windows-driver-content
 description: Supporting Functional Power States
 ms.assetid: F96214C9-702D-402E-B873-5DF57C521B34
 ---

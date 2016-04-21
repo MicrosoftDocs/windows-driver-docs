@@ -1,5 +1,6 @@
 ---
 title: Associating Callback Interfaces Example
+author: windows-driver-content
 description: Associating Callback Interfaces Example
 ms.assetid: 6156730b-394c-451c-beea-1b25ba5a1fe3
 keywords: ["callback objects WDK UMDF", "callback interfaces WDK UMDF", "associating callback interfaces WDK UMDF"]

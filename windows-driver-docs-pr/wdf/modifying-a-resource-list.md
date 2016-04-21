@@ -1,5 +1,6 @@
 ---
 title: Modifying a Resource List
+author: windows-driver-content
 description: Modifying a Resource List
 ms.assetid: 571b2990-5627-434e-b8fc-d2564188f544
 keywords: ["boot configuration resource lists WDK KMDF , modifying", "hardware resources WDK KMDF , resource lists", "resource lists WDK KMDF , modifying"]

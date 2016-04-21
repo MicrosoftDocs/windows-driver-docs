@@ -1,5 +1,6 @@
 ---
 title: How to Enable Debugging of a UMDF Driver
+author: windows-driver-content
 description: How to Enable Debugging of a UMDF Driver
 ms.assetid: ea37eb7b-09fa-4c8d-aff7-273b07bc0007
 keywords: ["debuggers WDK UMDF", "debuggers WDK UMDF , enabling", "User-Mode Driver Framework WDK , enabling a debugger", "UMDF WDK , enabling a debugger", "user-mode drivers WDK UMDF , enabling a debugger", "debugging drivers WDK UMDF , enabling a debugger", "driver debugging WDK UMDF , enabling a debugger"]

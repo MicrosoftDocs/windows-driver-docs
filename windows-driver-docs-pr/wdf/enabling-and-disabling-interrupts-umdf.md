@@ -1,5 +1,6 @@
 ---
 title: Enabling and Disabling Interrupts
+author: windows-driver-content
 description: Enabling and Disabling Interrupts
 ms.assetid: 52846461-4F08-4546-93F5-F2469C6E3AD8
 ---

@@ -1,5 +1,6 @@
 ---
 title: Framework I/O Target Object
+author: windows-driver-content
 description: Framework I/O Target Object
 ms.assetid: 355a1818-88c9-4989-9141-8445f511f501
 keywords: ["UMDF objects WDK , I/O target objects", "framework objects WDK UMDF , I/O target objects", "I/O target objects WDK UMDF", "IWDFIoTarget", "targets WDK UMDF"]

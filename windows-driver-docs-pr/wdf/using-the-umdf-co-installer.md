@@ -1,5 +1,6 @@
 ---
 title: Using the UMDF Co-installer
+author: windows-driver-content
 description: Using the UMDF Co-installer
 ms.assetid: e5ec2122-1602-487b-baad-4a3d9e47cf58
 keywords: ["UMDF coinstallers WDK", "coinstallers WDK UMDF", "CoInstallers section WDK UMDF", "configurable coinstallers WDK UMDF", "system-supplied UMDF coinstallers WDK UMDF", "redistributable coinstallers WDK UMDF", "update coinstallers WDK UMDF", "INF files WDK UMDF"]

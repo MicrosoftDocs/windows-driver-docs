@@ -1,5 +1,6 @@
 ---
 title: Comparing UMDF 2.0 Functionality to KMDF
+author: windows-driver-content
 description: This topic compares the functionality available to a Kernel-Mode Driver Framework (KMDF) driver with that available to a User-Mode Driver Framework (UMDF) 2.0 driver.
 ms.assetid: 9D4DD1A9-DA49-4132-B98F-AFEC8B427272
 ---

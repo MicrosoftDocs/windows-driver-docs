@@ -1,5 +1,6 @@
 ---
 title: Handling I/O Requests
+author: windows-driver-content
 description: This section describes how a Windows Driver Frameworks (WDF) driver can use I/O queues to manage the I/O requests that the driver receives.
 ms.assetid: 557EF30E-3B85-49BE-BA0B-97734EA2E677
 ---

@@ -1,5 +1,6 @@
 ---
 title: Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start
+author: windows-driver-content
 description: This topic describes troubleshooting steps you can use when a UMDF driver fails to load or an associated device fails to start.
 ms.assetid: 366c0ab4-8d06-4dac-a301-f433cf7978bd
 keywords: ["debugging scenarios WDK UMDF , UMDF driver fails to load", "debugging scenarios WDK UMDF , UMDF device fails to start", "UMDF WDK , debugging scenarios, UMDF driver fails to load", "UMDF WDK , debugging scenarios, UMDF device fails to start", "UMDF WDK , driver not loading scenario", "UMDF WDK , device not starting scenario"]

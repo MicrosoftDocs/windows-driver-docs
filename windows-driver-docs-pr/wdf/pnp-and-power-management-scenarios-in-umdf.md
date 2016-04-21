@@ -1,5 +1,6 @@
 ---
 title: PnP and Power Management Scenarios in UMDF
+author: windows-driver-content
 description: PnP and Power Management Scenarios in UMDF
 ms.assetid: ca36eee5-482c-4cfe-a515-be9d3743e241
 keywords: ["Plug and Play WDK UMDF , power management scenarios in UMDF", "PnP WDK UMDF , power management scenarios in UMDF", "power management scenarios WDK UMDF", "power management scenarios WDK UMDF , PnP", "power management scenarios WDK UMDF , Plug and Play"]

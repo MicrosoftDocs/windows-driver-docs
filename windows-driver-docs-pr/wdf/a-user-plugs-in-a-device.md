@@ -1,5 +1,6 @@
 ---
 title: A User Plugs in a Device
+author: windows-driver-content
 description: A User Plugs in a Device
 ms.assetid: cc047c05-f3aa-4423-98fc-cafd7777e104
 keywords: ["PnP WDK KMDF , plugging in devices", "Plug and Play WDK KMDF , plugging in devices", "plugging in devices WDK KMDF", "adding devices WDK KMDF"]

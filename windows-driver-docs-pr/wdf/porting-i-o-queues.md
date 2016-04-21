@@ -1,5 +1,6 @@
 ---
 title: Porting I/O Queues
+author: windows-driver-content
 description: Porting I/O Queues
 ms.assetid: 90319342-5FAB-451B-BCA1-B273B81418DB
 ---

@@ -1,5 +1,6 @@
 ---
 title: Framework Request Objects
+author: windows-driver-content
 description: Framework Request Objects
 ms.assetid: 564f3600-4784-4a37-ac13-38338c38a9d2
 keywords: ["I/O requests WDK KMDF , request objects", "request objects WDK KMDF", "request processing WDK KMDF , request objects", "framework objects WDK KMDF , I/O request objects", "request objects WDK KMDF , about request objects"]

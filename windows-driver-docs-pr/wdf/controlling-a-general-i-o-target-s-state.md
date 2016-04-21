@@ -1,5 +1,6 @@
 ---
 title: Controlling a General I/O Target's State
+author: windows-driver-content
 description: Controlling a General I/O Target's State
 ms.assetid: 37f756bf-b655-428e-b72c-f86c71f1a2db
 keywords: ["general I/O targets WDK KMDF , states", "started I/O target state WDK KMDF", "stopped I/O target state WDK KMDF", "closed for query-remove state WDK KMDF", "closed I/O target state WDK KMDF", "deleted I/O target state WDK KMDF", "local I/O targets WDK KMDF", "remote I/O targets WDK KMDF", "stopping I/O targets WDK KMDF", "restarting I/O targets WDK KMDF"]

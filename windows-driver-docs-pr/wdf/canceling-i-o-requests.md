@@ -1,5 +1,6 @@
 ---
 title: Canceling I/O Requests
+author: windows-driver-content
 description: Canceling I/O Requests
 ms.assetid: 9a486fa4-7fd3-4433-88aa-34a54d9b1e16
 keywords: ["request processing WDK KMDF , canceling requests", "I/O requests WDK KMDF , canceling", "canceling I/O requests WDK KMDF", "undelivered I/O requests WDK KMDF", "forwarding I/O requests WDK KMDF"]

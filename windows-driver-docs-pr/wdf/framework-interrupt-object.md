@@ -1,5 +1,6 @@
 ---
 title: Framework Interrupt Object
+author: windows-driver-content
 description: Framework Interrupt Object
 ms.assetid: FA2B8C11-69D2-4A9E-8F57-C7295DA4EE44
 ---

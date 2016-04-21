@@ -1,5 +1,6 @@
 ---
 title: How UMDF Reports Errors
+author: windows-driver-content
 description: This topic describes how User-Mode Driver Framework (UMDF) reports errors. It applies to both UMDF versions 1 and 2.
 ms.assetid: 44e4e5df-d968-4973-8a36-e93c75320ff6
 keywords: ["User-Mode Driver Framework WDK , errors", "UMDF WDK , errors", "user-mode drivers WDK UMDF , errors", "errors WDK UMDF", "Windows Error Reporting WDK UMDF", "WER WDK UMDF", "error reporting WDK UMDF"]
