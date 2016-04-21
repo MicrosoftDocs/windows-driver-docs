@@ -1,5 +1,6 @@
 ---
 title: Driver Access to Hardware
+author: windows-driver-content
 description: Driver Access to Hardware
 ms.assetid: 66743284-6cdd-467e-b3b4-3d588cd296a5
 keywords: ["PnP WDK KMDF , hardware access", "Plug and Play WDK KMDF , hardware access", "power management WDK KMDF , hardware access", "hardware access WDK KMDF", "framework objects WDK KMDF , device objects", "framework objects WDK KMDF , hardware access", "device objects WDK KMDF", "event callback functions WDK KMDF", "callback functions WDK KMDF"]

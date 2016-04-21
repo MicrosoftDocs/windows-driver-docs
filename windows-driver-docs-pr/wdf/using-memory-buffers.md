@@ -1,5 +1,6 @@
 ---
 title: Using Memory Buffers
+author: windows-driver-content
 description: Using Memory Buffers
 ms.assetid: f5699837-f1ba-4088-82b3-d7e27341fb46
 keywords: ["memory buffers WDK KMDF", "buffers WDK KMDF", "memory objects WDK KMDF", "framework objects WDK KMDF , memory objects", "lookaside lists WDK KMDF", "memory descriptor lists WDK KMDF", "MDLs WDK KMDF", "local buffers WDK KMDF"]

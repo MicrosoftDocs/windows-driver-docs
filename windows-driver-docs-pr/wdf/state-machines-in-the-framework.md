@@ -1,5 +1,6 @@
 ---
 title: State Machines in the Framework
+author: windows-driver-content
 description: State Machines in the Framework
 ms.assetid: 5ef307c6-0310-4a83-a63f-3a6d96782013
 keywords: ["PnP WDK KMDF , state machines", "Plug and Play WDK KMDF , state machines", "power management WDK KMDF , state machines", "state machines WDK KMDF", "states WDK KMDF", "PnP state machines WDK KMDF", "power states WDK KMDF", "current state machine state WDK KMDF", "status information WDK KMDF , state machines", "power policy WDK KMDF"]

@@ -1,5 +1,6 @@
 ---
 title: Servicing an Interrupt
+author: windows-driver-content
 description: Servicing an Interrupt
 ms.assetid: b6306d2c-a7be-4fc3-8123-4d2b5c60c988
 keywords: ["hardware interrupts WDK KMDF , servicing", "interrupts WDK KMDF , servicing", "servicing interrupts WDK KMDF", "interrupt service routines WDK KMDF", "ISRs WDK KMDF", "deferred procedure calls WDK KMDF"]

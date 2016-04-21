@@ -1,5 +1,6 @@
 ---
 title: Using Driver-Defined Interfaces
+author: windows-driver-content
 description: Using Driver-Defined Interfaces
 ms.assetid: ad96add6-c982-429b-b815-d7adf6fed8cc
 keywords: ["driver-defined interfaces WDK KMDF", "interfaces WDK KMDF", "one-way communication WDK KMDF", "two-way communication WDK KMDF", "reference counts WDK KMDF", "reference functions WDK KMDF", "dereference functions WDK KMDF", "no-op functions WDK KMDF"]

@@ -1,5 +1,6 @@
 ---
 title: Enabling and Disabling Interrupts
+author: windows-driver-content
 description: Enabling and Disabling Interrupts
 ms.assetid: 432907e7-05a3-4a99-a291-33bd1eefa94c
 keywords: ["hardware interrupts WDK KMDF , enabling", "interrupts WDK KMDF , enabling", "hardware interrupts WDK KMDF , disabling", "interrupts WDK KMDF , disabling", "status information WDK KMDF , enabling interrupts", "status information WDK KMDF , disabling interrupts"]

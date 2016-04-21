@@ -1,5 +1,6 @@
 ---
 title: Memory Buffer Life Cycle
+author: windows-driver-content
 description: Memory Buffer Life Cycle
 ms.assetid: abf43bf5-a4a3-4aeb-9ec5-3458252933d5
 ---

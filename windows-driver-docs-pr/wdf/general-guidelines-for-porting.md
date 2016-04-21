@@ -1,5 +1,6 @@
 ---
 title: Preparing for Porting
+author: windows-driver-content
 description: Preparing for Porting
 ms.assetid: 355CD834-6B64-4E6F-AA17-AE1145F269CA
 ---

@@ -1,5 +1,6 @@
 ---
 title: Framework DMA Objects
+author: windows-driver-content
 description: Framework DMA Objects
 ms.assetid: a5073bb0-a8c9-49fc-b280-e781f9f9c256
 keywords: ["DMA operations WDK KMDF , objects", "bus-master DMA WDK KMDF , objects", "DMA enabler objects WDK KMDF", "DMA transaction objects WDK KMDF", "common buffer objects WDK KMDF", "framework objects WDK KMDF , DMA objects", "enabler objects WDK KMDF", "transaction objects WDK KMDF"]

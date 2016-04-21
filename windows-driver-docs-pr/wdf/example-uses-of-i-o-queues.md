@@ -1,5 +1,6 @@
 ---
 title: Example Uses of I/O Queues
+author: windows-driver-content
 description: Example Uses of I/O Queues
 ms.assetid: 13b09254-ce0a-4c7d-bdb1-d28ec094a266
 keywords: ["I/O queues WDK KMDF , examples", "request handlers WDK KMDF", "default I/O queues WDK KMDF", "single I/O queues WDK KMDF", "multiple I/O queues WDK KMDF", "parallel I/O queues WDK KMDF", "sequential I/O queues WDK KMDF", "manual I/O queues WDK KMDF", "I/O queues WDK KMDF , dispatching methods", "dispatching methods WDK KMDF", "sequential dispatching WDK KMDF", "synchronous dispatching WDK KMDF", "parallel dispatching WDK KMDF", "asynchronous dispatching WDK KMDF", "manual dispatching WDK KMDF", "WdfIoQueueDispatchParallel", "WdfIoQueueDispatchSequential", "WdfIoQueueDispatchManual"]

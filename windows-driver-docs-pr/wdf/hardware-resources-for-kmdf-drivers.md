@@ -1,5 +1,6 @@
 ---
 title: Handling Hardware Resources
+author: windows-driver-content
 description: A system's hardware resources are the I/O ports, interrupt vectors, direct memory access (DMA) channels, and other communication paths that must be assigned to each device that is connected to the system.
 ms.assetid: 30ceb7db-f11e-498c-a0c0-a63218627c6e
 keywords: ["PnP WDK KMDF , hardware resources", "Plug and Play WDK KMDF , hardware resources", "hardware resources WDK KMDF"]

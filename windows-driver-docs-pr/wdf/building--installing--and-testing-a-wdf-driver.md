@@ -1,5 +1,6 @@
 ---
 title: Building, Installing, and Testing
+author: windows-driver-content
 description: This section describes how you build a Windows Driver Frameworks (WDF) driver in Microsoft Visual Studio, whether you need to provide a co-installer, and how you test your driver using the WDF Verifier and built-in event logging.
 ms.assetid: 178E51A0-A6FA-42A7-958C-6D2A5F195B58
 ---

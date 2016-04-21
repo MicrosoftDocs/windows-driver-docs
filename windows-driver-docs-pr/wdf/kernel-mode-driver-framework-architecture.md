@@ -1,5 +1,6 @@
 ---
 title: WDF Architecture
+author: windows-driver-content
 description: WDF Architecture
 ms.assetid: e5e2ed4a-5faf-4879-965f-7316fe64edf9
 keywords: ["kernel-mode drivers WDK KMDF , architecture", "KMDF WDK , architecture", "Kernel-Mode Driver Framework WDK , architecture", "object methods WDK KMDF", "architecture WDK KMDF", "object event callback functions WDK KMDF", "event callback functions WDK KMDF", "object properties WDK KMDF", "object handles WDK KMDF", "interfaces WDK KMDF", "objects WDK KMDF", "framework objects WDK KMDF , architecture", "framework-based drivers WDK KMDF , architecture"]

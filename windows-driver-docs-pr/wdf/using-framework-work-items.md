@@ -1,5 +1,6 @@
 ---
 title: Using Framework Work Items
+author: windows-driver-content
 description: Using Framework Work Items
 ms.assetid: d7e6d187-bed4-4071-a50b-90f32c4f0d5a
 keywords: ["work items WDK KMDF", "queues WDK KMDF , framework work items"]

@@ -1,5 +1,6 @@
 ---
 title: Creating a Resource List for a Boot Configuration
+author: windows-driver-content
 description: Creating a Resource List for a Boot Configuration
 ms.assetid: 8b78cbac-b547-45a1-a49c-f5543bf5ffed
 keywords: ["hardware resources WDK KMDF , boot configuration resource lists", "boot configuration resource lists WDK KMDF", "boot configuration resource lists WDK KMDF , creating", "resource lists WDK KMDF", "resource lists WDK KMDF , creating"]

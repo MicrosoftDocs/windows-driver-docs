@@ -1,5 +1,6 @@
 ---
 title: Testing DMA in KMDF Drivers
+author: windows-driver-content
 description: Testing DMA in KMDF Drivers
 ms.assetid: 1D37F8B3-EAFC-4BB0-988D-64ADF30DBC40
 ---

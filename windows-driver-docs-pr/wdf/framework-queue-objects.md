@@ -1,5 +1,6 @@
 ---
 title: Framework Queue Objects
+author: windows-driver-content
 description: Framework Queue Objects
 ms.assetid: 42736e2d-2482-46b4-bf52-4efe369db40b
 keywords: ["I/O requests WDK KMDF , queue objects", "I/O queues WDK KMDF", "queue objects WDK KMDF", "I/O queue objects WDK KMDF", "request processing WDK KMDF , queue objects", "queues WDK KMDF", "queues WDK KMDF , framework objects", "I/O queues WDK KMDF , about I/O queues", "callback functions WDK KMDF", "event callback functions WDK KMDF", "framework objects WDK KMDF , I/O queue objects"]

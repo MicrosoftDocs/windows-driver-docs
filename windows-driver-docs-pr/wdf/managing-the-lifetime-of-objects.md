@@ -1,5 +1,6 @@
 ---
 title: Managing the Lifetime of Objects
+author: windows-driver-content
 description: Managing the Lifetime of Objects
 ms.assetid: 55ad8133-a70a-462f-87cd-6aeaffb0aec8
 keywords: ["UMDF objects WDK , lifetimes", "framework objects WDK UMDF , lifetimes", "lifetimes WDK UMDF", "callback objects WDK UMDF"]

@@ -1,5 +1,6 @@
 ---
 title: Supporting Ejectable Devices
+author: windows-driver-content
 description: Supporting Ejectable Devices
 ms.assetid: 7820bb71-7218-4c5f-af2b-f41e1b5f696d
 keywords: ["PnP WDK KMDF , ejectable devices", "Plug and Play WDK KMDF , ejectable devices", "power management WDK KMDF , ejectable devices", "docking stations WDK KMDF", "bus drivers WDK KMDF", "ejecting devices WDK KMDF", "ejection relations WDK KMDF", "removing ejectable devices", "listing ejectable devices WDK KMDF", "locking ejectable devices WDK KMDF", "portable devices WDK KMDF", "mobile devices WDK , KMDF", "removable devices WDK KMDF", "mobile devices WDK"]

@@ -1,5 +1,6 @@
 ---
 title: Using Framework Registry-Key Objects
+author: windows-driver-content
 description: Using Framework Registry-Key Objects
 ms.assetid: 2236b4e1-2e17-4e59-b12e-70fff5fd7513
 keywords: ["registry WDK KMDF", "registry-key objects WDK KMDF", "framework-based drivers WDK KMDF , registry", "kernel-mode drivers WDK KMDF , registry", "KMDF WDK , registry", "Kernel-Mode Driver Framework WDK , registry", "keys WDK KMDF", "opening registry keys WDK KMDF", "removing registry keys WDK KMDF"]

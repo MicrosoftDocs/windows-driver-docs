@@ -1,5 +1,6 @@
 ---
 title: Accessing Hardware and Handling Interrupts
+author: windows-driver-content
 description: Accessing Hardware and Handling Interrupts
 ms.assetid: 25D526CF-7C37-4D10-B099-352933F92F98
 ---

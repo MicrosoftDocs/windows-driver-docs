@@ -1,5 +1,6 @@
 ---
 title: Supporting WMI Data Blocks and Events in Your Driver
+author: windows-driver-content
 description: Supporting WMI Data Blocks and Events in Your Driver
 ms.assetid: a5138413-3ec4-4c61-9f00-6604759532e9
 keywords: ["WMI WDK KMDF , data blocks", "WMI WDK KMDF , events", "read/write WMI data blocks WDK KMDF", "read-only WMI data blocks WDK KMDF", "events WDK KMDF , WMI", "tracing WDK KMDF"]

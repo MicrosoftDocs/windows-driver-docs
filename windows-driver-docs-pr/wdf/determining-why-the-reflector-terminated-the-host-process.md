@@ -1,5 +1,6 @@
 ---
 title: Determining Why the Reflector Terminated the Host Process
+author: windows-driver-content
 description: This topic describes how you can analyze why the reflector terminated the driver host process (WUDFHost.exe).
 ms.assetid: c80b117b-597a-494a-bc28-5a918d2a9279
 keywords: ["debugging scenarios WDK UMDF , reflector terminates the host process", "UMDF WDK , debugging scenarios, reflector terminates the host process", "UMDF WDK , reflector terminates the host process"]

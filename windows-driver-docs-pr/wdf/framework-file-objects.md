@@ -1,5 +1,6 @@
 ---
 title: Framework File Objects
+author: windows-driver-content
 description: Framework File Objects
 ms.assetid: 93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8
 keywords: ["I/O requests WDK KMDF , file objects", "file objects WDK KMDF", "request processing WDK KMDF , file objects", "framework objects WDK KMDF , file objects"]

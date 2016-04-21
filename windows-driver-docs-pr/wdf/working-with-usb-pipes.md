@@ -1,5 +1,6 @@
 ---
 title: Working with USB Pipes
+author: windows-driver-content
 description: Working with USB Pipes
 ms.assetid: d5422ff2-de1e-4a77-8b3c-0b2917b1d9ca
 keywords: ["framework objects WDK KMDF , USB pipe objects", "USB pipes WDK KMDF", "pipe objects WDK KMDF", "USB I/O targets WDK KMDF , USB pipes", "continuous readers WDK USB", "resetting pipes WDK KMDF", "sending URBs WDK KMDF", "USB request blocks WDK KMDF", "URBs WDK KMDF", "stopping pipes WDK KMDF", "writing to pipes WDK KMDF", "reading from pipes WDK KMDF", "input pipes WDK KMDF", "output pipes WDK KMDF"]

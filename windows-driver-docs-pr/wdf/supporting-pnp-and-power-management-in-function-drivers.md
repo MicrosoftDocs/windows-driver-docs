@@ -1,5 +1,6 @@
 ---
 title: Supporting PnP and Power Management in Function Drivers
+author: windows-driver-content
 description: Supporting PnP and Power Management in Function Drivers
 ms.assetid: 487d4a69-a8a8-406c-8572-688388deabe3
 keywords: ["PnP WDK KMDF , function drivers", "Plug and Play WDK KMDF , function drivers", "power management WDK KMDF , function drivers", "function drivers WDK KMDF", "power policy WDK KMDF"]

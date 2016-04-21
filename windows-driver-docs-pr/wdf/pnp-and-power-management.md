@@ -1,5 +1,6 @@
 ---
 title: PnP and Power Management
+author: windows-driver-content
 description: The topics in this section describe the default PnP and power management support that the framework provides, and how a.
 ms.assetid: 13E8423B-2967-4F95-8EC1-591CAA212187
 ---

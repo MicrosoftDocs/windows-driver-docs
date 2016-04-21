@@ -1,5 +1,6 @@
 ---
 title: DMA Transactions and DMA Transfers
+author: windows-driver-content
 description: DMA Transactions and DMA Transfers
 ms.assetid: afcbe756-1a45-410b-8260-2c2c611e6a70
 keywords: ["DMA transactions WDK KMDF", "DMA operations WDK KMDF , transactions", "bus-master DMA WDK KMDF , transactions", "DMA operations WDK KMDF , transfers", "bus-master DMA WDK KMDF , transfers", "DMA transfers WDK KMDF", "DMA transactions WDK KMDF , about DMA transactions", "DMA transfers WDK KMDF , about DMA transfers"]

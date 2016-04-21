@@ -1,5 +1,6 @@
 ---
 title: Deleting I/O Queues
+author: windows-driver-content
 description: Deleting I/O Queues
 ms.assetid: 7eb7a24d-de39-4e3d-865c-ebfb49d43519
 keywords: ["I/O queues WDK KMDF , deleting", "temporary I/O queues WDK KMDF", "deleting I/O queues WDK KMDF"]

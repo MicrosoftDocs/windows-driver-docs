@@ -1,5 +1,6 @@
 ---
 title: Finding and Mapping Hardware Resources in UMDF 1.x Drivers
+author: windows-driver-content
 description: Finding and Mapping Hardware Resources in UMDF 1.x Drivers
 ms.assetid: 51CB254D-1B2C-43F5-925A-209810E2F5FC
 ---

@@ -1,5 +1,6 @@
 ---
 title: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
+author: windows-driver-content
 description: Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 ms.assetid: 933dc761-2616-4bee-8357-dbb6644596c2
 keywords: ["kernel-mode clients WDK UMDF", "UMDF drivers WDK UMDF , kernel-mode clients", "user-mode drivers WDK UMDF , kernel-mode clients", "UMDF WDK , kernel-mode clients", "User-Mode Driver Framework WDK , kernel-mode clients"]

@@ -1,5 +1,6 @@
 ---
 title: Calling WinUSB from UMDF
+author: windows-driver-content
 description: Calling WinUSB from UMDF
 ms.assetid: 33455d61-0eb3-47ef-998a-6e1b5d7db24e
 keywords: ["WinUSB WDK UMDF", "WinUSB WDK UMDF , escaping to WinUSB", "user-mode drivers WDK UMDF , escaping to WinUSB"]
