@@ -145,6 +145,8 @@ But after removing the folder from the file path, it now looks like:
     ## [Near Field Proximity design guide](nfp-design-guide.md)
     ### [Tap and Do](tap-and-do.md)
 
+**TIP:** The other nice thing about removing the folder name from the path is that you are **free to rename the project folder!** For example, we renamed *nfpdrivers* to be simply *nfc* in the repo.
+
 ## <h2 id="s35"> Cloning windows-driver-docs-pr & other set up</a>
 
 ## <h2 id="s5"> Create working branch in windows-driver-docs-pr</a>
