@@ -6,8 +6,8 @@ This content is to help writers migrate the driver documentation (the conceptual
 2. [Refactor the WDCML TOC (create OP and REF XTOC files)](#s2)
 3. [Convert the conceptual topics to OP](#s3)
 4. [Cloning windows-driver-docs-pr & other set up](#s35)
-5. [Do a local build of the OP content](#s4)
-6. [Create working branch in windows-driver-docs-pr](#s5)
+5. [Create working branch in windows-driver-docs-pr](#s5)
+6. [Do a local build of the OP content](#s4)
 7. [Add OP content to the working branch](#s6)
 8. [Build a .CSV file for redirecting old topics to OP ](#s7)
 9. [Create new WDCML parent topic in HW_NODES](#s8)
@@ -16,6 +16,10 @@ This content is to help writers migrate the driver documentation (the conceptual
 12. [Test and clean up content experience](#s11)
 13. [Prepare for deployment (timing!)](#s12)
 14. [Submit redirect request to MSDN team](#s13)
+15. [Cross-linking](#s15)
+
+**APPENDIX:**  
+     [How to update OP content](#updateOP)
 
 
 ## <h2 id="s1"> Get your Git account and tools set up</a>
@@ -143,9 +147,9 @@ But after removing the folder from the file path, it now looks like:
 
 ## <h2 id="s35"> Cloning windows-driver-docs-pr & other set up</a>
 
-## <h2 id="s4"> Do a local build of the OP content</a>
-
 ## <h2 id="s5"> Create working branch in windows-driver-docs-pr</a>
+
+## <h2 id="s4"> Do a local build of the OP content</a>
 
 ## <h2 id="s6"> Add OP content to the working branch</a>
 
@@ -162,3 +166,7 @@ But after removing the folder from the file path, it now looks like:
 ## <h2 id="s12"> Prepare for deployment (timing!)</a>
 
 ## <h2 id="s13"/> Submit redirect request to MSDN team</a>
+
+## <h2 id="s15"/> Cross-linking</a>
+
+## <h2 id="updateOP"/> How to update OP content</a>
