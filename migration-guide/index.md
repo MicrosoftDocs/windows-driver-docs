@@ -107,7 +107,11 @@ Finally, to run the conversion, execute con2md as follows:
 
     X:\SD\nfpdrivers>con2md nfpdrivers
     
-**WHEN IT FAILS**, try running it a couple times. If it still doesn't work, make sure you have **MSDN Reporting** permissions on IDWEB.
+**WHEN IT FAILS**, try running it a couple times. If it still doesn't work, make sure you have **MSDN Reporting** permissions on IDWEB. You'll also need [Pandoc](https://github.com/jgm/pandoc/releases/tag/1.14.0.1) installed and your machine configured to run builds locally. 
+
+Once it runs successfully, don't forget to go back and reload the projectname.xtoc file from SD using a forced resync:
+
+    X:\SD\nfpdrivers>sd sync -f ... 
 
 ## <h2 id="s4"> Do a local build of the OP content</a>
 
