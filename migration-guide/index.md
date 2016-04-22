@@ -77,11 +77,11 @@ Once the content is split up into those three new XTOC files, the can be used to
 * **Use this opportunity to clean up your content architecture.**  This example is in the reference, but the same applies to conceptual content you migrate to OP. Here, a reference section was broken up into several small TOC nodes. Most of them lacked even an intro sentence. The only value they provided is that the TOC provided some notion of what the DDIs were for. You can see here that even the top-most parent, **Secure Element DDI** didn't have all that much content (and manually-created  inaccurate "In this section" list).
 
 #### BEFORE : Ref topics were grandchildren, children were "useless"
-![TOC pre consolidation](images/TOCPreconsolidation.png)
+![TOC pre consolidation](images/TOCPreConsolidation.png)
 
 #### AFTER : grandchildren became alphabetized children
 The direct children were removed and the reference organization was performed using tables in the parent topic. Then, all references topics were brought up a level and alphabetized to be direct children of the parent topic.
-![TOC post consolidation](images/TOCPostconsolidation.png)
+![TOC post consolidation](images/TOCPostConsolidation.png)
 
 
 ### XTOC quality check
