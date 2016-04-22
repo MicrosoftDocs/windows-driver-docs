@@ -5,16 +5,17 @@ This content is to help writers migrate the driver documentation (the conceptual
 1. [Get your Git account and tools set up](#s1)
 2. [Refactor the WDCML TOC (create OP and REF XTOC files)](#s2)
 3. [Convert the conceptual topics to OP](#s3)
-4. [Do a local build of the OP content](#s4)
-5. [Create working branch in windows-driver-docs-pr](#s5)
-6. [Add OP content to the working branch](#s6)
-7. [Build a .CSV file for redirecting old topics to OP ](#s7)
-8. [Create new WDCML parent topic in HW_NODES](#s8)
-9. [Update WDCML TOC to show only reference topics](#s9)
-10. [Update Dev Center HXT file for new OP and REF](#s10)  
-11. [Test and clean up content experience](#s11)
-12. [Prepare for deployment (timing!)](#s12)
-13. [Submit redirect request to MSDN team](#s13)
+4. [Cloning windows-driver-docs-pr & other set up](#s35)
+5. [Do a local build of the OP content](#s4)
+6. [Create working branch in windows-driver-docs-pr](#s5)
+7. [Add OP content to the working branch](#s6)
+8. [Build a .CSV file for redirecting old topics to OP ](#s7)
+9. [Create new WDCML parent topic in HW_NODES](#s8)
+10. [Update WDCML TOC to show only reference topics](#s9)
+11. [Update Dev Center HXT file for new OP and REF](#s10)  
+12. [Test and clean up content experience](#s11)
+13. [Prepare for deployment (timing!)](#s12)
+14. [Submit redirect request to MSDN team](#s13)
 
 
 ## <h2 id="s1"> Get your Git account and tools set up</a>
@@ -112,6 +113,35 @@ Finally, to run the conversion, execute con2md as follows:
 Once it runs successfully, don't forget to go back and reload the projectname.xtoc file from SD using a forced resync:
 
     X:\SD\nfpdrivers>sd sync -f ... 
+    
+When it finishes, con2md will create a new TOC file and a folder for your MD files and art:
+
+* **TOC file** will be located at --> `projectfolder\build\markdown\TOC.md`
+* **MD files** will be located in --> `projectfolder\build\markdown\projectname\`
+* **Art files** will be located in --> `projectfolder\build\markdown\projectname\images`
+
+### Moving the TOC.md file
+The folder structure we use is to have the TOC.md file reside in the **same folder** as the rest of the markdown files. Thus you need to copy the TOC.md down a level into the folder named after the project.
+
+However, the TOC.md file uses relative links and if you don't revise those links (after having moved the file) then the OP build will fail - because it can't locate the topics. Thus, you will need to go in and remove the name of the project folder from the file path. For example, the NFC TOC.md file originally look like this:
+
+    # [NFC design guide](nfpdrivers/nfc-design-guide.md)
+    ## [What's new in NFC device drivers](nfpdrivers/what-s-new-in-nfc-device-drivers.md)  
+    ## [NFC architecture](nfpdrivers/nfc-architecture.md)
+    ## [Wi-Fi direct pairing implementation](nfpdrivers/wi-fi-direct-paring-implementation.md) 
+    ## [Near Field Proximity design guide](nfpdrivers/nfp-design-guide.md)
+    ### [Tap and Do](nfpdrivers/tap-and-do.md)
+
+But after removing the folder from the file path, it now looks like:
+
+    # [NFC design guide](nfc-design-guide.md)
+    ## [What's new in NFC device drivers](what-s-new-in-nfc-device-drivers.md)  
+    ## [NFC architecture](nfc-architecture.md)
+    ## [Wi-Fi direct pairing implementation](wi-fi-direct-paring-implementation.md) 
+    ## [Near Field Proximity design guide](nfp-design-guide.md)
+    ### [Tap and Do](tap-and-do.md)
+
+## <h2 id="s35"> Cloning windows-driver-docs-pr & other set up</a>
 
 ## <h2 id="s4"> Do a local build of the OP content</a>
 
