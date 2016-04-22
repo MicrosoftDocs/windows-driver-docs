@@ -22,9 +22,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 You'll want to make sure you have **GitHub set up**, install **Visual Studio Code**, and get **PowerShell** working with Git too. The last two are options, but those tools will be used throughout this topic in examples. 
 
 * Set up GitHub: [Install and set up tools for authoring in GitHub](https://github.com/Microsoft/windows-driver-docs-pr/blob/master/contributor-guide/tools-and-setup.md)    
-* Make sure you've been granted writer permissions on [Open Source Hub](https://opensourcehub.microsoft.com) (*ask Ted*)
 * Install Visual Studio Code: [Setting up Visual Studio Code](https://code.visualstudio.com/docs/editor/setup)  
-* Got to IDWEB and become a member of the **MSDN Reporting** security group
 * Install PSGET: [http://psget.net/](http://psget.net/)
 * Install GIT (the local tool): [https://git-scm.com/](https://git-scm.com/)
 * Install POSH GIT: [https://github.com/dahlbyk/posh-git](https://github.com/dahlbyk/posh-git)
@@ -34,6 +32,10 @@ You'll want to make sure you have **GitHub set up**, install **Visual Studio Cod
 Set up your local environment variables. Add paths for:  
 * Pandoc.exe (it's probably at C:\Users\yourUserName\AppData\Local\Pandoc)
 * The con2md conversion tool (it's under BuildX\Cmd)
+
+So that you can run the tools as intended:
+* Got to IDWEB and become a member of the **MSDN Reporting** security group
+* Make sure you've been granted writer permissions on [Open Source Hub](https://opensourcehub.microsoft.com) (*ask Ted*)
 
 
 ## <h2 id="s2"> Refactor the WDCML TOC (create OP and REF XTOC files)</a>
@@ -74,7 +76,7 @@ Once the content is split up into those three new XTOC files, they can be used t
 
 * The other nice thing about VS code is that you can **open multiple tabs** (one for each of the XTOC files) and copy/paste XML nodes between the XTOC files. Even if you only use one tab, VS Code has a **Working files list** in the top left that lets you jump back and forth. As soon as you save a change, XMetal reloads the tree view UI.
 
-* **Use this opportunity to clean up your content architecture.** Remove those useless topics that only provide content organization, such as "Design Guide" and "Reference". This example is in the reference, but the same applies to conceptual content you migrate to OP. Here, a reference section was broken up into several small TOC nodes. Most of them lacked even an intro sentence. The only value they provided is that the TOC provided some notion of what the DDIs were for. You can see here that even the top-most parent, **Secure Element DDI** didn't have all that much content (and manually-created  inaccurate "In this section" list).
+* **Use this opportunity to clean up your content architecture.** Remove those useless topics that only provide content organization, such as "Design Guide" and "Reference". This example is in the reference, but the same applies to conceptual content you migrate to OP. Here, a reference section was broken up into several small TOC nodes. Most of them lacked even an intro sentence. The only value they provided is that the TOC provided some notion of what the DDIs were for. You can see here that even the top-most parent, **Secure Element DDI** didn't have all that much content (and a manually-created  inaccurate "In this section" list).
 
 #### BEFORE : Ref topics were grandchildren, children were "useless"
 ![TOC pre consolidation](images/TOCPreConsolidation.png)
@@ -91,6 +93,21 @@ When you're all finsished (or you think you are), do a local CHM build of **proj
 
 
 ## <h2 id="s3"> Convert the conceptual topics to OP</a>
+The conversion of WDCML topics to MD is performed by the **con2md.exe** tool in your SD folder for the respective project. This tool resides in the BuildX\Cmd folder. Depending on how you set up XMetaL initially, you may need to add this path to your environment variables or you'll need to type the full path to the EXE when you execute it.
+
+Con2md requires that it be **run at the root of the project folder** and that the content to be converted is in an XTOC by **the same name as the project folder**. Thus, you'll **TEMPORARILY** overwrite your projectname.xtoc file with your projectname-OP.xtoc file. A quick way to do that is run the following at the command line:
+
+    x:\SD\nfpdrivers>attrib -r nfpdrivers.xtoc
+    
+Then, overwrite your regular TOC with your OP toc:
+
+    x:\SD\nfpdrivers>copy nfpdrivers-OP.xtoc nfpdrivers.xtoc
+    
+Finally, to run the conversion, execute con2md as follows:
+
+    X:\SD\nfpdrivers>con2md nfpdrivers
+    
+**WHEN IT FAILS**, try running it a couple times. If it still doesn't work, make sure you have **MSDN Reporting** permissions on IDWEB.
 
 ## <h2 id="s4"> Do a local build of the OP content</a>
 
