@@ -16,6 +16,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 12. [Prepare for deployment (timing!)](#s12)
 13. [Submit redirect request to MSDN team](#s13)
 
+
 ## <h2 id="s1"> Get your Git account and tools set up</a>
 
 You'll want to make sure you have **GitHub set up**, install **Visual Studio Code**, and get **PowerShell** working with Git too. The last two are options, but those tools will be used throughout this topic in examples. 
@@ -36,6 +37,12 @@ Set up your local environment variables. Add paths for:
 
 
 ## <h2 id="s2"> Refactor the WDCML TOC (create OP and REF XTOC files)</a>
+The WDCML TOC files serve to 
+
+
+![Migration components](images/MigrationComponents.png)
+
+
 
 ## <h2 id="s3"> Convert the conceptual topics to OP</a>
 
