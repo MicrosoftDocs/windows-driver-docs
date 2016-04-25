@@ -57,27 +57,14 @@ In some cases it may be necessary to rollback a firmware update for example duri
 The entry is a key with the Name equal to the GUID used to report the resource in the ESRT. To allow a firmware rollback, create a REG\_DWORD value called Policy and set the value to 1. A given firmware resource can only be rolled back to its respective Lowest Supported Firmware Version, as specified in the ESRT. This is to prevent firmware rollbacks beyond the point at which a critical security fix has been made to the firmware. If the firmware version you are rolling back to meets these conditions the OS loader will update to an older version.
 
 ## Related topics
+[ESRT table definition](esrt-table-definition.md)  
+[Plug and play device](plug-and-play-device.md)  
+[Authoring an update driver package](authoring-an-update-driver-package.md)  
+[Processing updates](processing-updates.md)  
+[Device I/O from the UEFI environment](device-i-o-from-the-uefi-environment.md)  
+[Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 
-
-[ESRT table definition](esrt-table-definition.md)
-
-[Plug and play device](plug-and-play-device.md)
-
-[Authoring an update driver package](authoring-an-update-driver-package.md)
-
-[Processing updates](processing-updates.md)
-
-[Device I/O from the UEFI environment](device-i-o-from-the-uefi-environment.md)
-
-[Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_OEMBringUp\p_oembringup%5D:%20Firmware%20update%20status%20%20RELEASE:%20%284/22/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 
