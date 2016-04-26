@@ -1,5 +1,6 @@
 ---
 title: EFI\_USB\_BOS\_DESCRIPTOR
+author: windows-driver-content
 description: EFI\_USB\_BOS\_DESCRIPTOR
 MSHAttr:
 - 'PreferredSiteName:MSDN'

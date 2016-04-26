@@ -1,5 +1,6 @@
 ---
 title: Generate ACPI tables by using AcpiGenFx
+author: windows-driver-content
 description: Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

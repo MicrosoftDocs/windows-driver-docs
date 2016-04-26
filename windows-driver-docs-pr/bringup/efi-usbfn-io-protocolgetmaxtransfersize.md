@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_IO\_PROTOCOL.GetMaxTransferSize
+author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.GetMaxTransferSize
 MSHAttr:
 - 'PreferredSiteName:MSDN'

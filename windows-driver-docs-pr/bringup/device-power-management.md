@@ -1,5 +1,6 @@
 ---
 title: Device power management
+author: windows-driver-content
 description: The ACPI 5.0 specification defines a set of namespace objects to specify device power information for a device.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

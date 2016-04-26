@@ -1,5 +1,6 @@
 ---
 title: Secure boot and device encryption overview
+author: windows-driver-content
 description: Secure boot and device encryption overview
 MSHAttr:
 - 'PreferredSiteName:MSDN'

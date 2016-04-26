@@ -1,5 +1,6 @@
 ---
 title: UEFI simple I/O protocol
+author: windows-driver-content
 description: UEFI simple I/O protocol
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,5 +1,6 @@
 ---
 title: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.GetMaxPacketSize
+author: windows-driver-content
 description: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.GetMaxPacketSize
 MSHAttr:
 - 'PreferredSiteName:MSDN'

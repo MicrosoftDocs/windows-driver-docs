@@ -1,5 +1,6 @@
 ---
 title: Battery charging in the boot environment for Windows 10 Mobile
+author: windows-driver-content
 description: Battery charging in the boot environment for Windows 10 Mobile
 MSHAttr:
 - 'PreferredSiteName:MSDN'

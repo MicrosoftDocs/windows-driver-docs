@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_POLICY\_TYPE
+author: windows-driver-content
 description: EFI\_USBFN\_POLICY\_TYPE
 MSHAttr:
 - 'PreferredSiteName:MSDN'

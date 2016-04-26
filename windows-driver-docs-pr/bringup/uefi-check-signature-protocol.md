@@ -1,5 +1,6 @@
 ---
 title: UEFI check signature protocol
+author: windows-driver-content
 description: UEFI check signature protocol
 MSHAttr:
 - 'PreferredSiteName:MSDN'

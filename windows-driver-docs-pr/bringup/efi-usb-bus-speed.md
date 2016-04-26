@@ -1,5 +1,6 @@
 ---
 title: EFI\_USB\_BUS\_SPEED
+author: windows-driver-content
 description: EFI\_USB\_BUS\_SPEED
 MSHAttr:
 - 'PreferredSiteName:MSDN'

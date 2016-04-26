@@ -1,5 +1,6 @@
 ---
 title: Boot and UEFI
+author: windows-driver-content
 description: Provides guidance about the boot process and UEFI implementation requirements for devices that run Windows 10.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

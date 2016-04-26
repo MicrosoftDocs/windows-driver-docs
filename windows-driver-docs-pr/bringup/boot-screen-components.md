@@ -1,5 +1,6 @@
 ---
 title: Boot screen components
+author: windows-driver-content
 description: There are two components to the firmware update boot screen the OEM logo and the update text.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

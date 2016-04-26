@@ -1,5 +1,6 @@
 ---
 title: GPIO controller requirements checklist
+author: windows-driver-content
 description: This topic summarizes the hardware, firmware, and software requirements for General Purpose IO (GPIO) controller devices that are exposed to Windows.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

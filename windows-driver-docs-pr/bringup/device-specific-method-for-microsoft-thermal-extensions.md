@@ -1,5 +1,6 @@
 ---
 title: Device-Specific Method for Microsoft thermal extensions
+author: windows-driver-content
 description: To support more flexible design of thermal zones and thermal sensors, Windows supports extensions to the ACPI thermal zone model.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

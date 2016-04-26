@@ -1,5 +1,6 @@
 ---
 title: EFI\_DISPLAY\_POWER\_STATE
+author: windows-driver-content
 description: EFI\_DISPLAY\_POWER\_STATE
 MSHAttr:
 - 'PreferredSiteName:MSDN'

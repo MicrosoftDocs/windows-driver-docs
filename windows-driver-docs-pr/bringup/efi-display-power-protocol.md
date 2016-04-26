@@ -1,5 +1,6 @@
 ---
 title: EFI\_DISPLAY\_POWER\_PROTOCOL
+author: windows-driver-content
 description: EFI\_DISPLAY\_POWER\_PROTOCOL
 MSHAttr:
 - 'PreferredSiteName:MSDN'

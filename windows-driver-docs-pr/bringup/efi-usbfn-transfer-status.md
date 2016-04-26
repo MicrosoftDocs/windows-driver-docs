@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_TRANSFER\_STATUS
+author: windows-driver-content
 description: EFI\_USBFN\_TRANSFER\_STATUS
 MSHAttr:
 - 'PreferredSiteName:MSDN'

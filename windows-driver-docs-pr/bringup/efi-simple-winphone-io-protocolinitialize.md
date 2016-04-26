@@ -1,5 +1,6 @@
 ---
 title: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Initialize
+author: windows-driver-content
 description: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Initialize
 MSHAttr:
 - 'PreferredSiteName:MSDN'

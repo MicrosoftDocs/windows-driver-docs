@@ -1,5 +1,6 @@
 ---
 title: Architecture of the UEFI battery charging application provided by Microsoft
+author: windows-driver-content
 description: Architecture of the UEFI battery charging application provided by Microsoft
 MSHAttr:
 - 'PreferredSiteName:MSDN'

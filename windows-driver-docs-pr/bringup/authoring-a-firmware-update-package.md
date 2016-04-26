@@ -1,5 +1,6 @@
 ---
 title: Authoring a firmware update package
+author: windows-driver-content
 description: Each firmware update package includes a single binary file that contains the entire firmware payload (for example firmware.bin) and a security catalog that Windows uses to validate firmware.bin.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

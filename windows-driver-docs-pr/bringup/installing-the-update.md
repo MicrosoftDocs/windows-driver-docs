@@ -1,5 +1,6 @@
 ---
 title: Installing the update
+author: windows-driver-content
 description: Firmware update packages can be installed using any tool that installs Windows drivers.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

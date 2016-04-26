@@ -1,5 +1,6 @@
 ---
 title: EFI\_RNG\_PROTOCOL.GetInfo
+author: windows-driver-content
 description: EFI\_RNG\_PROTOCOL.GetInfo
 MSHAttr:
 - 'PreferredSiteName:MSDN'

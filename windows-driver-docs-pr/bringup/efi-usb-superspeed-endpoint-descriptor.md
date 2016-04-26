@@ -1,5 +1,6 @@
 ---
 title: EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR
+author: windows-driver-content
 description: EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR
 MSHAttr:
 - 'PreferredSiteName:MSDN'

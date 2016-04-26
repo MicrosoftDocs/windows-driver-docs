@@ -1,5 +1,6 @@
 ---
 title: Seamless crisis prevention and recovery
+author: windows-driver-content
 description: If a firmware update fails, the results can be devastating.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

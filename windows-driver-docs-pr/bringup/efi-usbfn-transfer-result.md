@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_TRANSFER\_RESULT
+author: windows-driver-content
 description: EFI\_USBFN\_TRANSFER\_RESULT
 MSHAttr:
 - 'PreferredSiteName:MSDN'

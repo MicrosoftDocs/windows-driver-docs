@@ -1,5 +1,6 @@
 ---
 title: EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery
+author: windows-driver-content
 description: EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery
 MSHAttr:
 - 'PreferredSiteName:MSDN'

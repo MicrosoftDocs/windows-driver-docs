@@ -1,5 +1,6 @@
 ---
 title: Bring up
+author: windows-driver-content
 description: This section of the partner documentation is designed for hardware engineers and developers who need to understand how to get started with bringing up hardware on Windows 10.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

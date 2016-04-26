@@ -1,5 +1,6 @@
 ---
 title: Implementing support for UEFI firmware updates
+author: windows-driver-content
 description: This section describes the steps necessary for a firmware vendor to implement support for update capsule firmware updates.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

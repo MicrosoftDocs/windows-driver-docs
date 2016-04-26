@@ -1,5 +1,6 @@
 ---
 title: EFI\_RNG\_ALGORITHM\_LIST structure
+author: windows-driver-content
 description: This data structure contains a list of the supported Random Number Generation (RNG) algorithms.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

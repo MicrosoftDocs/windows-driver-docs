@@ -1,5 +1,6 @@
 ---
 title: UEFI display power state protocol
+author: windows-driver-content
 description: UEFI display power state protocol
 MSHAttr:
 - 'PreferredSiteName:MSDN'

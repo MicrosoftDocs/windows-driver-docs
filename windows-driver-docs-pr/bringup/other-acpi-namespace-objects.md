@@ -1,5 +1,6 @@
 ---
 title: Other ACPI namespace objects
+author: windows-driver-content
 description: For some specific classes of device, there are requirements for additional Advanced Configuration and Power Interface (ACPI) namespace objects to appear under those devices in the namespace.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

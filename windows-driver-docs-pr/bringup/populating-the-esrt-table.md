@@ -1,5 +1,6 @@
 ---
 title: Populating the ESRT table
+author: windows-driver-content
 description: The EFI System Resource Table (ESRT) provides a mechanism for identifying integrated device and system firmware resources for the purposes of targeting firmware updates to those resources.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

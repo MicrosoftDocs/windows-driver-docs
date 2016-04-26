@@ -1,5 +1,6 @@
 ---
 title: ESRT table definition
+author: windows-driver-content
 description: The pointer to the ESRT table is identified via its corresponding GUID in the EFI\_CONFIGURATION\_TABLE.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

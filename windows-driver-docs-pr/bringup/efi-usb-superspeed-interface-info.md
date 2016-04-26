@@ -1,5 +1,6 @@
 ---
 title: EFI\_USB\_SUPERSPEED\_INTERFACE\_INFO
+author: windows-driver-content
 description: EFI\_USB\_SUPERSPEED\_INTERFACE\_INFO
 MSHAttr:
 - 'PreferredSiteName:MSDN'

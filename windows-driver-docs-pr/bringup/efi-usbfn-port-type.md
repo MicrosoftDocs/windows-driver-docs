@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_PORT\_TYPE
+author: windows-driver-content
 description: EFI\_USBFN\_PORT\_TYPE
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,5 +1,6 @@
 ---
 title: EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryStatus
+author: windows-driver-content
 description: EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryStatus
 MSHAttr:
 - 'PreferredSiteName:MSDN'

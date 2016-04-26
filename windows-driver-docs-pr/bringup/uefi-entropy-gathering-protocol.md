@@ -1,5 +1,6 @@
 ---
 title: UEFI entropy gathering protocol
+author: windows-driver-content
 description: The UEFI entropy gathering protocol is used to produce Random Number Generation (RNG) values in a well-known manner.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

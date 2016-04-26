@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_IO\_PROTOCOL.FreeTransferBuffer
+author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.FreeTransferBuffer
 MSHAttr:
 - 'PreferredSiteName:MSDN'

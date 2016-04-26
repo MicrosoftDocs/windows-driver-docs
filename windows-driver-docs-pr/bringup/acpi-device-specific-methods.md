@@ -1,5 +1,6 @@
 ---
 title: Device-specific methods (\_DSM)
+author: windows-driver-content
 description: To support increased functionality and extension to select technology stacks, Windows define Device-Specific Methods (\_DSM) for the device.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

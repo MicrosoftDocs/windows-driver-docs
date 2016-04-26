@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_IO\_PROTOCOL.GetEndpointStallState
+author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.GetEndpointStallState
 MSHAttr:
 - 'PreferredSiteName:MSDN'

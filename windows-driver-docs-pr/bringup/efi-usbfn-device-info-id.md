@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_DEVICE\_INFO\_ID
+author: windows-driver-content
 description: EFI\_USBFN\_DEVICE\_INFO\_ID
 MSHAttr:
 - 'PreferredSiteName:MSDN'

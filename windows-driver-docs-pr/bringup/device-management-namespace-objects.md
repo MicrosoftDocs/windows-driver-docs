@@ -1,5 +1,6 @@
 ---
 title: Device management namespace objects
+author: windows-driver-content
 description: The ACPI 5.0 specification defines several types of namespace objects that can be used to manage devices.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

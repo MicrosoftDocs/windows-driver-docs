@@ -1,5 +1,6 @@
 ---
 title: UEFI battery charging protocol
+author: windows-driver-content
 description: UEFI battery charging protocol
 MSHAttr:
 - 'PreferredSiteName:MSDN'

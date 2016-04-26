@@ -1,5 +1,6 @@
 ---
 title: Device I/O from the UEFI environment
+author: windows-driver-content
 description: When the Windows OS loader calls the UpdateCapsule function, each capsule contained in the CapsuleHeaderArray is executed.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

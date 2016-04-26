@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_MESSAGE\_PAYLOAD
+author: windows-driver-content
 description: EFI\_USBFN\_MESSAGE\_PAYLOAD
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,5 +1,6 @@
 ---
 title: EFI\_CHECKSIG\_PROTOCOL.EfiCheckSignatureAndHash
+author: windows-driver-content
 description: EFI\_CHECKSIG\_PROTOCOL.EfiCheckSignatureAndHash
 MSHAttr:
 - 'PreferredSiteName:MSDN'

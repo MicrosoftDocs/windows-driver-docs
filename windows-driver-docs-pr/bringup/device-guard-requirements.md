@@ -1,5 +1,6 @@
 ---
 title: Secure MOR implementation
+author: windows-driver-content
 description: Describes the behavior and usage for the MemoryOverwriteRequestControlLock UEFI variable, revision 2.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

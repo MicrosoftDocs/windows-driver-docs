@@ -1,5 +1,6 @@
 ---
 title: UEFI Sequence Diagram
+author: windows-driver-content
 description: UEFI Sequence Diagram
 MSHAttr:
 - 'PreferredSiteName:MSDN'

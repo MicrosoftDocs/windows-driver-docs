@@ -1,5 +1,6 @@
 ---
 title: EFI\_BATTERY\_CHARGING\_STATUS
+author: windows-driver-content
 description: EFI\_BATTERY\_CHARGING\_STATUS
 MSHAttr:
 - 'PreferredSiteName:MSDN'

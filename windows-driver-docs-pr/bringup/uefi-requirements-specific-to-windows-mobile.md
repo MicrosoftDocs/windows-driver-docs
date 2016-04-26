@@ -1,5 +1,6 @@
 ---
 title: UEFI requirements for Windows 10 Mobile
+author: windows-driver-content
 description: In addition to the UEFI requirements listed in UEFI requirements that apply to all Windows editions, devices that run Windows 10 Mobile must also meet the additional requirements described in this topic.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

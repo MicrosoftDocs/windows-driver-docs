@@ -1,5 +1,6 @@
 ---
 title: UEFI USB function protocol
+author: windows-driver-content
 description: UEFI USB function protocol
 MSHAttr:
 - 'PreferredSiteName:MSDN'

@@ -1,5 +1,6 @@
 ---
 title: Firmware update status
+author: windows-driver-content
 description: At this point it is expected that all firmware updates will be applied, and the results of all updates reflected in the ESRT on the subsequent invocation of the Windows OS loader.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

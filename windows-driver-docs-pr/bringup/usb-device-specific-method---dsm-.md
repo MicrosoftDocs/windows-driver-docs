@@ -1,5 +1,6 @@
 ---
 title: USB Device-Specific Method (\_DSM)
+author: windows-driver-content
 description: To support device-class-specific configuration of the USB subsystem, Windows defines a Device-Specific Method (\_DSM) that has the functions that are described in this article.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

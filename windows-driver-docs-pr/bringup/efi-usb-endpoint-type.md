@@ -1,5 +1,6 @@
 ---
 title: EFI\_USB\_ENDPOINT\_TYPE
+author: windows-driver-content
 description: EFI\_USB\_ENDPOINT\_TYPE
 MSHAttr:
 - 'PreferredSiteName:MSDN'

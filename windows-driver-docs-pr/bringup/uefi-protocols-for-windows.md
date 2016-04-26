@@ -1,5 +1,6 @@
 ---
 title: UEFI protocols for Windows
+author: windows-driver-content
 description: This section describes UEFI protocols that are defined by Windows. These protocols expand up on the protocols defined by the UEFI specification, and they are used by Windows to accomplish specific functions during the boot process.
 MSHAttr:
 - 'PreferredSiteName:MSDN'

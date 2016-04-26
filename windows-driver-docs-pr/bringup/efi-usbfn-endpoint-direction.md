@@ -1,5 +1,6 @@
 ---
 title: EFI\_USBFN\_ENDPOINT\_DIRECTION
+author: windows-driver-content
 description: EFI\_USBFN\_ENDPOINT\_DIRECTION
 MSHAttr:
 - 'PreferredSiteName:MSDN'
