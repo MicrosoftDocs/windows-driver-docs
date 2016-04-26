@@ -10,7 +10,7 @@ ms.assetid: 59ac7ec7-1b96-4fe1-a221-d8422e60072d
 
 In Windows 10 Mobile, Microsoft and the silicon vendor (SV) configure the storage partitions and partition sizes. Partitions must be designed so that they are large enough for all current components and to accept updates over the lifetime of the phone. After the partition sizes have been set on a phone, the only way to change the size is by reflashing the device with a clean full flash update, which will wipe all data on the phone.
 
-The storage subsystem for a phone must conform to the requirements specified in [section 2.2: Memory, of the Windows Phone 8.1 GDR1 Chassis Requirements Specification]( http://go.microsoft.com/fwlink/p/?linkid=530204).
+The storage subsystem for a phone must conform to the requirements specified in [section 2.2: Memory, of the Windows 10 Mobile minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx#section_2.0_-_minimum_hardware_requirements_for_windows_10_mobile).
 
 **Note**   OEMs may not add, remove, or modify partitions in the layout designed by Microsoft and the SV. This helps to ensure that all the software and configuration data on the phone can be serviced by phone updates. OEM components typically are built into the main OS partition (for preloaded applications and native services), the data partition (for data such as preloaded maps), or the device provisioning partition (for device-specific read-only configuration data).
 
@@ -63,16 +63,26 @@ The following table summarizes the requirements for each partition. All sizes ar
 <td align="left"><p>Microsoft</p></td>
 </tr>
 <tr class="even">
+<td align="left"><p>SV partitions</p></td>
+<td align="left"><p>UEFI firmware and other SV-specific partitions</p></td>
+<td align="left"><p>N/A</p></td>
+<td align="left"><p>No mount point</p></td>
+<td align="left"><p>Maybe</p></td>
+<td align="left"><p>Variable</p></td>
+<td align="left"><p>N/A</p></td>
+<td align="left"><p>SV/OEM</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>EFI system partition</p></td>
 <td align="left"><p>Boot manager, boot configuration database, UEFI applications</p></td>
 <td align="left"><p>FAT</p></td>
 <td align="left"><p>C:\ESP</p></td>
 <td align="left"><p>No</p></td>
-<td align="left"><p>64 MB</p></td>
+<td align="left"><p>32 MB (minimum)</p></td>
 <td align="left"><p>N/A</p></td>
 <td align="left"><p>Microsoft</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Crash dump partition (exists on non-retail images only)</p></td>
 <td align="left"><p>Data from crash dumps</p></td>
 <td align="left"><p>NTFS</p></td>
@@ -82,33 +92,19 @@ The following table summarizes the requirements for each partition. All sizes ar
 <td align="left"><p>N/A</p></td>
 <td align="left"><p>Microsoft</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Main OS (boot partition)</p></td>
 <td align="left"><p>OS, update OS, system registry hives, OEM preloaded applications</p></td>
 <td align="left"><p>NTFS</p></td>
 <td align="left"><p>C:\</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p>Approximately 1.5 GB, as shown in detail below:</p>
-<ul>
-<li><p>OS: The baseline OS size is ~870 MB, although in reality the size of the OS depends on a number of variables, such as the number of languages that are included in the image. On 4 GB phones with a compressed main OS partition, the OS is approximately 20%-25% smaller than the uncompressed OS.</p></li>
-<li><p>Update OS: ~50 MB</p></li>
-<li><p>OEM preloaded applications: up to 100 MB for applications that install during the first boot experience, up 5% of the remaining user storage for applications that install after the first boot experience</p></li>
-<li><p>Reserved for future updates: Variable, depending on the amount of storage on the phone. See the next column for more information.</p></li>
-</ul></td>
-<td align="left"><p>One of the following:</p>
-<ul>
-<li><p>~350 MB on phones with only 4 GB of storage and a compressed Main OS partition.</p></li>
-<li><p>~450 MB on phones with more than 4 GB of storage and an uncompressed Main OS partition.</p></li>
-</ul>
-<div class="alert">
-<strong>Note</strong>   OEMs can add additional free space for future updates by using the <strong>AdditionalMainOSFreeSectorsRequest</strong> element in the device platform XML file.
-</div>
-<div>
- 
-</div></td>
+<td align="left"><p>Approximately 1.5 GB</p>
+</td>
+<td align="left"><p>250 MB</p>
+</td>
 <td align="left"><p>Microsoft</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Data partition</p></td>
 <td align="left"><p>User data, user registry hives, applications, application data, page file.</p></td>
 <td align="left"><p>NTFS</p></td>
@@ -118,7 +114,7 @@ The following table summarizes the requirements for each partition. All sizes ar
 <td align="left"><p>N/A</p></td>
 <td align="left"><p>Microsoft</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>SD card</p></td>
 <td align="left"><p>User data (music, pictures, etc.)</p></td>
 <td align="left"><p>FAT/exFAT</p></td>
@@ -143,13 +139,14 @@ This partition shall be 8 MB in size.
 
 ### <span id="Silicon_vendor_partitions"></span><span id="silicon_vendor_partitions"></span><span id="SILICON_VENDOR_PARTITIONS"></span>Silicon vendor partitions
 
-The SV partitions are not applicable to Windows 10 Mobile. 
+The SV can define partitions for their own components. One of these partitions is the UEFI (Unified Extensible Firmware Interface) partition, which contains a standard interface to a primitive set of system operations that UEFI applications can use. The modem data also requires an SV partition.
+
 
 ### <span id="EFI_system_partition"></span><span id="efi_system_partition"></span><span id="EFI_SYSTEM_PARTITION"></span>EFI system partition
 
 The EFI system partition contains the Windows boot manager (BootMgr) and the boot configuration database (BCD). The BootMgr is responsible for loading higher-level operating systems, such as the main OS or update OS. In addition, the EFI system partition contains a number of UEFI applications, such as the FFU application and battery charging application.
 
-This partition shall be 32 MB in size.
+This partition shall be a minimum of 32 MB in size.
 
 ### <span id="Crash_dump_partition"></span><span id="crash_dump_partition"></span><span id="CRASH_DUMP_PARTITION"></span>Crash dump partition
 
@@ -161,13 +158,23 @@ The size of this partition depends on the value of the **SOC** element in the OE
 
 The main OS partition, also known as the boot partition, contains all of the components that make up the operating system image. This includes OEM customizations and preloaded applications.
 
-This size of this partition depends on the amount of space used by OEM customizations and preloaded applications. For more details, see the preceding table.
+This size of this partition depends on the amount of space used by OEM customizations and preloaded applications. 
+
+* **Baseline OS**: ~870 MB, although in reality the size of the OS depends on a number of variables, such as the number of languages that are included in the image. On 4 GB phones with a compressed main OS partition, the OS is approximately 20%-25% smaller than the uncompressed OS.
+* **Update OS**: ~50 MB
+* **OEM preloaded applications**: up to 100 MB for applications that install during the first boot experience, up 5% of the remaining user storage for applications that install after the first boot experience
+* **Reserved for future updates**: Variable, depending on the amount of storage on the phone. See the next column for more information.
 
 In general, the number of writable files in this partition should be limited to the minimum possible to allow sufficient space for updates. This partition includes reserved space to allow for growth due to updates:
 
 -   On phones with only 4 GB of storage, this partition has approximately 250 MB of reserved space after the Main OS partition is compressed.
 
 -   On phones with more than 4 GB of storage and an uncompressed Main OS partition, this partition has approximately 250 MB of reserved space.
+
+<div class="alert">
+<strong>Note</strong>   OEMs can add additional free space for future updates by using the <strong>AdditionalMainOSFreeSectorsRequest</strong> element in the device platform XML file.
+</div>
+
 
 ### <span id="Data_partition"></span><span id="data_partition"></span><span id="DATA_PARTITION"></span>Data partition
 
