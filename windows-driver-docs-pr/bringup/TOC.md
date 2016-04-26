@@ -115,4 +115,4 @@
 ## [Security](security-overview.md)
 ### [Secure boot and device encryption overview](secure-boot-and-device-encryption-overview.md)
 ### [Secure MOR implementation](device-guard-requirements.md)
-
+## [Partition layout](partition-layout.md)
