@@ -43,6 +43,9 @@ This section of the partner documentation is designed for hardware engineers and
 <tr class="odd">
 <td><p>[Security](security-overview.md)</p></td>
 <td><p>Use the topics in this section to learn more about security in Windows 10 Mobile.</p></td>
+</tr><tr class="even">
+<td><p>[Windows 10 Mobile partition layout](partition-layout.md)</p></td>
+<td><p>Learn how to configure storage partitions and partitions sizes on Windows 10 Mobile devices.</p></td>
 </tr>
 </tbody>
 </table>
