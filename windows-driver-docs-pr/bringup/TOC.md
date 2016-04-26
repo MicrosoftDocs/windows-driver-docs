@@ -1,4 +1,4 @@
-# [Bring up](bring-up.md)
+# [Bring up](index.md)
 ## [Boot and UEFI](boot-and-uefi.md)
 ### [UEFI in Windows](uefi-in-windows.md)
 #### [Minimum UEFI requirements for Windows on SoC platforms](minimum-uefi-requirements-for-windows-on-soc-platforms.md)
