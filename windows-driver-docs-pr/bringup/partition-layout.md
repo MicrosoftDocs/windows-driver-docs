@@ -12,8 +12,9 @@ In Windows 10 Mobile, Microsoft and the silicon vendor (SV) configure the stora
 
 The storage subsystem for a phone must conform to the requirements specified in [section 2.2: Memory, of the Windows 10 Mobile minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx#section_2.0_-_minimum_hardware_requirements_for_windows_10_mobile).
 
-**Note**   OEMs may not add, remove, or modify partitions in the layout designed by Microsoft and the SV. This helps to ensure that all the software and configuration data on the phone can be serviced by phone updates. OEM components typically are built into the main OS partition (for preloaded applications and native services), the data partition (for data such as preloaded maps), or the device provisioning partition (for device-specific read-only configuration data).
-
+<div class="alert">
+<strong>Note:</strong>   OEMs may not add, remove, or modify partitions in the layout designed by Microsoft and the SV. This helps to ensure that all the software and configuration data on the phone can be serviced by phone updates. OEM components typically are built into the main OS partition (for preloaded applications and native services), the data partition (for data such as preloaded maps), or the device provisioning partition (for device-specific read-only configuration data).
+</div>
  
 
 ## <span id="Partition_list"></span><span id="partition_list"></span><span id="PARTITION_LIST"></span>Partition list
@@ -135,7 +136,9 @@ The device provisioning partition (DPP) contains provisioning data for a specifi
 
 This partition shall be 8 MB in size.
 
-**Important**: The DPP partition must be the first partition in the layout so as to safe guard the provisioning information from being overwritten should the sizes of any other partitions subsequently change.
+<div class="alert">
+<strong>Important:</strong>   The DPP partition must be the first partition in the layout so as to safe guard the provisioning information from being overwritten should the sizes of any other partitions subsequently change.
+</div>
 
 ### <span id="Silicon_vendor_partitions"></span><span id="silicon_vendor_partitions"></span><span id="SILICON_VENDOR_PARTITIONS"></span>Silicon vendor partitions
 
@@ -172,7 +175,7 @@ In general, the number of writable files in this partition should be limited to 
 -   On phones with more than 4 GB of storage and an uncompressed Main OS partition, this partition has approximately 250 MB of reserved space.
 
 <div class="alert">
-<strong>Note</strong>   OEMs can add additional free space for future updates by using the <strong>AdditionalMainOSFreeSectorsRequest</strong> element in the device platform XML file.
+<strong>Note:</strong>   OEMs can add additional free space for future updates by using the <strong>AdditionalMainOSFreeSectorsRequest</strong> element in the device platform XML file.
 </div>
 
 
@@ -180,7 +183,9 @@ In general, the number of writable files in this partition should be limited to 
 
 This partition in internal storage stores the user data, applications, and application state. The size of the partition automatically adjusts to consume the rest of the space on the eMMC.
 
-**Important**: The data partition must be the last partition in the layout.
+<div class="alert">
+<strong>Important:</strong>   The data partition must be the last partition in the layout.
+</div>
 
 ### <span id="SD_card"></span><span id="sd_card"></span><span id="SD_CARD"></span>SD card
 
