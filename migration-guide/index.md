@@ -6,17 +6,19 @@ This content is to help writers migrate the driver documentation (the conceptual
 2. [Refactor the WDCML TOC (create OP and REF XTOC files)](#s2)
 3. [Convert the conceptual topics to OP](#s3)
 4. [Cloning windows-driver-docs-pr & other set up](#s35)
-5. [Create working branch in windows-driver-docs-pr](#s5)
-6. [Do a local build of the OP content](#s4)
+5. [Do a local build of the OP content](#s4)
+6. [Create working branch in windows-driver-docs-pr](#s5)
 7. [Add OP content to the working branch](#s6)
-8. [Build a .CSV file for redirecting old topics to OP ](#s7)
-9. [Create new WDCML parent topic in HW_NODES](#s8)
-10. [Update WDCML TOC to show only reference topics](#s9)
-11. [Update Dev Center HXT file for new OP and REF](#s10)  
-12. [Test and clean up content experience](#s11)
-13. [Prepare for deployment (timing!)](#s12)
-14. [Submit redirect request to MSDN team](#s13)
-15. [Cross-linking](#s15)
+8. [Review your branch on MSDNStage](#s61)
+9. [Merge your content into MASTER](#s65)
+10. [Build a .CSV file for redirecting old topics to OP ](#s7)
+11. [Create new WDCML parent topic in HW_NODES](#s8)
+12. [Update WDCML TOC to show only reference topics](#s9)
+13. [Update Dev Center HXT file for new OP and REF](#s10)  
+14. [Test and clean up content experience](#s11)
+15. [Prepare for deployment (timing!)](#s12)
+16. [Submit redirect request to MSDN team](#s13)
+17. [Cross-linking and additional cleanup](#s15)
 
 **APPENDIX:**  
      [How to update OP content](#updateOP)
@@ -147,13 +149,159 @@ But after removing the folder from the file path, it now looks like:
 
 **TIP:** The other nice thing about removing the folder name from the path is that you are **free to rename the project folder!** For example, we renamed *nfpdrivers* to be simply *nfc* in the repo.
 
-## <h2 id="s35"> Cloning windows-driver-docs-pr & other set up</a>
+### Rename your TOP-most parent topic
+If you don't specify the file name in an OP URL, MSDN will serve up the index.md file if it exists. For this reason, it's a best practice to rename your top parent.
+ 
+1. Find your top-most parent topic and rename it to be **index.md**
+2. In TOC.md, change the name of the source file to be index.md
+3. Finally, do a search of the MD files for any links to the previous file name. You can use the findstr utility with CMD.exe to find any occurances of that file name. For example, if the old topic was named introduction.md, the findstr command would be:
 
-## <h2 id="s5"> Create working branch in windows-driver-docs-pr</a>
+        c:\SD\storage\build\markdown\mdout>findstr /S /I /M /C:"introduction.md" *.md
+          
+
+
+## <h2 id="s35"> Cloning windows-driver-docs-pr & other set up</a>
+Before you can start working on OP content, you need to clone the driver docs to your local machine. In this topic, we'll create a folder on the **C:** drive named **MyRepo**, to save the local copies of the driver repository. 
+
+**TIP**: All of the changes you make to your local files are persisted within your local repository file system. This means that you can clone the same repository locally more than once - as long as the two folders never "touch". This lets you use regular file comparison tools if you want to compare the same files on different branches.
+
+To clone the driver docs repo to your local computer, open Powershell, navigate to the folder you want your the repo to live, and execute..
+
+    C:\myrepo> git clone https://github.com/Microsoft/windows-driver-docs-pr.git
+
+..as illustrated here:
+
+![Step 1](images/s1.png)
 
 ## <h2 id="s4"> Do a local build of the OP content</a>
+You want to make sure your local repository builds fine before you make any changes. 
+
+1. Navigate to your local repo folder and run the following to start a build:
+
+        C:\myrepo\windows-driver-docs-pr [master]> .\.openpublishing.build.ps1 -parameters:targets=serve
+
+2. When the build "completes", it pauses and opens a CMD.exe window. That's your cue to view your local web server.. 
+        
+    Open your browser to -->  [http://localhost:8080](http://localhost:8080) 
+
+3. Finally, when you're finish viewing the content, **close the CMD.exe window**. That will complete the build.
+
+If the build doesn't run successfully, make sure you have the necessary permissions discussed at the beginning of this topic.
+
+## <h2 id="s5"> Create working branch in windows-driver-docs-pr</a>
+Now that you know your local repo builds successfully, you can begin preparing to migrate content. The first step is to create a working branch. In these examples, the working branch will be called **working-branch**, but you should call your branch something that makes sense for your technology. For example, **printmigration** for migrating the print content.
+
+Working branches are temporary. We're going to remove it after the migration is complete. It will eventually be pushed up to the team's repo on GitHub, referred to as "origin", so it's a good idea to see what other branches are called. 
+
+To do that, navigate to your repo folder and use **git remote show origin**:
+
+```
+X:\myrepo\windows-driver-docs-pr [master ≡]> git remote show origin
+* remote origin
+  Fetch URL: https://github.com/Microsoft/windows-driver-docs-pr.git
+  Push  URL: https://github.com/Microsoft/windows-driver-docs-pr.git
+  HEAD branch: master
+  Remote branches:
+    bringupmigration     tracked
+    contributing         tracked
+    crumbs               tracked
+    horizontal-scroll    tracked
+    imagemigration       tracked
+    live                 tracked
+    master               tracked
+    migration-help       tracked
+    multifuncmigration   tracked
+    printmigration       tracked
+    sandbox_build        tracked
+    streammigration      tracked
+    wdf                  tracked
+    wdkappendixmigration tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (up to date)
+```
+
+Once you've decided on a name, use this command to create your local working branch:
+
+    C:\myrepo\windows-driver-docs-pr [master]> git checkout -b working-branch
+    
+...as illustrated here:
+
+![Step 2](images/s2.png)
+
+In Git, you use **checkout** to changes branches. When you do this, whole folders can appear and disappear in your local Windows Explorer - depending on which files are associated with which branches.
+
 
 ## <h2 id="s6"> Add OP content to the working branch</a>
+Once you create a working branch, all changes you make to the respositry will be captured in your branch - any files in any folders, not just the ones in your project folder. 
+
+### Create a project folder and copy over your MD files
+In your repo, navigate to the driver documentation folder windows-driver-docs-pr. 
+    
+    c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr
+    
+There you'll see other project folders. You can name your OP project the same thing or change it to be more meaningful. Keep in mind, that folder name **will appear in the OP URL**. For example, *nfpdrivers* became simply *nfc*.
+
+After your project folder is created, copy the images folder and MD files from `projectfolder\build\markdown\projectname\*` and paste them into the new repo project folder.
+
+### Do another local build to make sure things still build okay
+You want to make sure your local repository still builds successfully now that you've made changes: 
+
+1. Navigate to your local repo and run the following to start a build:
+
+        C:\myrepo\windows-driver-docs-pr [working-branch]> .\.openpublishing.build.ps1 -parameters:targets=serve
+
+2. When the build "completes", it pauses and opens a CMD.exe window. That's your cue to view your local web server.. 
+        
+    Open your browser to -->  [http://localhost:8080](http://localhost:8080) 
+
+3. Finally, when you're finish viewing the content, **close the CMD.exe window**. That will complete the build.
+
+If the build doesn't run successfully, make sure you have the necessary permissions discussed at the beginning of this topic.
+
+### Push your local working repo to the team repo 
+Once you know that content builds successfully, you can push it up to origin (on GitHub), so that you can view it on Staging. Before you do that, it's a good practice to make sure your branch has the latest changes from the master branch. To that, refresh your local master...
+
+    C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
+    C:\myrepo\windows-driver-docs-pr [master]>git pull origin
+    
+...as illustrated here:
+ 
+![Step 3: Refresh your local master](images/s3.png)
+
+Then you need to switch back to your working branch so you can merge-in the latest changes from master...
+
+    C:\myrepo\windows-driver-docs-pr [master]>git checkout working-branch
+    C:\myrepo\windows-driver-docs-pr [working-branch]>git merge master
+
+...as illustrated here:
+
+![Step 4: Merge the latest changes into your local working branch](images/s4.png)
+
+Finally, push your working branch up to the team's repository, origin...
+
+
+    C:\myrepo\windows-driver-docs-pr [working-branch]>git push -u origin working-branch
+
+...as illustrated here:
+
+![Step 5: Push your working branch up to the team's repository](images/s5.png)
+
+## <h2 id="s61"> Review your branch on MSDN stage</a>
+
+### Monitoring your build progress
+
+### Finding your content on MSDNStage
+
+### Making updates to your working branch
+
+
+
+## <h2 id="s65"> Merge your content into MASTER</a>
+
+
+
 
 ## <h2 id="s7"> Build a .CSV file for redirecting old topics to OP</a>
 
@@ -169,6 +317,6 @@ But after removing the folder from the file path, it now looks like:
 
 ## <h2 id="s13"/> Submit redirect request to MSDN team</a>
 
-## <h2 id="s15"/> Cross-linking</a>
+## <h2 id="s15"/> Cross-linking and additional cleanup</a>
 
 ## <h2 id="updateOP"/> How to update OP content</a>
