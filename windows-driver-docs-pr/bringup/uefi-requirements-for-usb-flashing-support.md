@@ -55,16 +55,16 @@ UEFI components that attempt to read or write to disk during flashing must imple
 <td><p>Identify all UEFI firmware components that require refreshing or syncing their state back to storage on a regular basis. In each of these components, create an event associated with the EFI_EVENT_GROUP_FIRMWARE_DESYNC and a NotifyFunction() that causes the component to stop refreshing/syncing back to storage.</p>
 <p>The following code example demonstrates how firmware could create this event.</p>
 <div class="code">
-```
-gBS->CreateEventEx (
-    EVT_NOTIFY_SIGNAL,
-    TPL_CALLBACK,
-    FIRMWARE_NOTIFICATION_FUNCTION,          // To be defined by SoC Vendor
-    &amp;FIRMWARE_NOTIFICATION_FUNCTION_CONTEXT, // To be defined by SoC Vendor
-    &amp;EFI_EVENT_GROUP_FIRMWARE_DESYNC,
-    &amp;Event                                   // Event returned by CreateEventEx
-);
-```
+
+    `gBS->CreateEventEx (`  
+        `EVT_NOTIFY_SIGNAL,`  
+        `TPL_CALLBACK,`  
+        `FIRMWARE_NOTIFICATION_FUNCTION,          // To be defined by SoC Vendor`  
+        `&FIRMWARE_NOTIFICATION_FUNCTION_CONTEXT, // To be defined by SoC Vendor`  
+        `&EFI_EVENT_GROUP_FIRMWARE_DESYNC,`  
+        `&Event                                   // Event returned by CreateEventEx`  
+    `);`  
+
 </div>
 <p>The event’s NotifyFunction() should perform any cleanup operations necessary for the component to transition to the desynchronized mode. After this cleanup, the component must not refresh or sync its storage back with flash until the next device reboot. If the event’s NotifyFunction fails(), the NotifyFunction() should not return EFI_SUCCESS.</p></td>
 </tr>

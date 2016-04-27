@@ -62,20 +62,15 @@ The following diagram shows the default boot battery charging process. In this p
 The following steps illustrate the corresponding UI flow for this charging process:
 
 1.  If the battery does not have sufficient charge to meet the *Boot to Main OS* threshold, the device alternates between the following low battery UI screens for 10 seconds. If the user presses the Power button within this 10 second interval, the device continues to alternate between the following low battery UI screens for an additional 10 seconds.
-
-         
-
-    ![low battery screen before boot threshold](images/oem-battery-charge-ui-empty-red.png)     ![low battery screen before boot threshold](images/oem-battery-charge-ui-plug-red.png)
+       
+    ![low battery screen before boot threshold](images/oem-battery-charge-ui-empty-red.png)     
+    ![low battery screen before boot threshold](images/oem-battery-charge-ui-plug-red.png)
 
 2.  If the device is idle for 10 seconds, the device turns off the display.
 
-         
-
     ![low battery screen black](images/oem-battery-charge-ui-black.png)
 
-3.  After the device reaches the *Boot to Main OS* threshold, the device displays the OEM boot logo and boots to the main OS. The following screenshot demonstrates an example OEM boot logo.
-
-         
+3.  After the device reaches the *Boot to Main OS* threshold, the device displays the OEM boot logo and boots to the main OS. The following screenshot demonstrates an example OEM boot logo.    
 
     ![low battery screen oem logo](images/oem-battery-charge-ui-oem-logo.png)
 
@@ -99,31 +94,23 @@ The following steps illustrate the corresponding UI flow while power-off chargin
 
 1.  If the battery does not have sufficient charge to meet the *Boot to Main OS* threshold, the device alternates between the following red low battery UI screens for 10 seconds. If the user presses the Power button within this 10 second interval, the device continues to alternate between the following low battery UI screens for an additional 10 seconds.
 
-         
-
-    ![low battery screen before boot threshold](images/oem-battery-charge-ui-empty-red.png)     ![low battery screen before boot threshold](images/oem-battery-charge-ui-plug-red.png)
+    ![low battery screen before boot threshold](images/oem-battery-charge-ui-empty-red.png)     
+    ![low battery screen before boot threshold](images/oem-battery-charge-ui-plug-red.png)
 
 2.  If the device is idle for 10 seconds, the device turns off the display.
-
-         
 
     ![low battery screen black](images/oem-battery-charge-ui-black.png)
 
 3.  After the device reaches the *Boot to Main OS* threshold, the device alternates between the following white low battery UI screens for 10 seconds rather than booting directly to the main OS. If the user presses the Power button for a short duraction (less than 2 seconds) within this 10 second interval, the device continues to alternate between the following low battery UI screens for an additional 10 seconds.
 
-         
-
-    ![low battery screen after boot threshold](images/oem-battery-charge-ui-empty-white.png)     ![low battery screen after boot threshold](images/oem-battery-charge-ui-plug-white.png)
+    ![low battery screen after boot threshold](images/oem-battery-charge-ui-empty-white.png)     
+    ![low battery screen after boot threshold](images/oem-battery-charge-ui-plug-white.png)
 
 4.  If the device is idle for 10 seconds, the device turns off the display.
-
-         
 
     ![low battery screen black](images/oem-battery-charge-ui-black.png)
 
 5.  If the user presses the Power button for 2 seconds or longer, the device displays the OEM boot logo and boots to the main OS. The following screenshot demonstrates an example OEM boot logo.
-
-         
 
     ![low battery screen oem logo](images/oem-battery-charge-ui-oem-logo.png)
 
