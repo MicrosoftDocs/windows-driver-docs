@@ -10,15 +10,16 @@ This content is to help writers migrate the driver documentation (the conceptual
 6. [Create working branch in windows-driver-docs-pr](#s5)
 7. [Add OP content to the working branch](#s6)
 8. [Review your branch on MSDNStage](#s61)
-9. [Merge your content into MASTER](#s65)
+9. [Make revisions to your working branch](#s66)
 10. [Build a .CSV file for redirecting old topics to OP ](#s7)
 11. [Create new WDCML parent topic in HW_NODES](#s8)
 12. [Update WDCML TOC to show only reference topics](#s9)
 13. [Update Dev Center HXT file for new OP and REF](#s10)  
 14. [Test and clean up content experience](#s11)
-15. [Prepare for deployment (timing!)](#s12)
-16. [Submit redirect request to MSDN team](#s13)
-17. [Cross-linking and additional cleanup](#s15)
+15. [Ready. Set. Go. Merge your content into MASTER!](#s65)
+16. [Prepare for deployment (timing!)](#s12)
+17. [Submit redirect request to MSDN team](#s13)
+18. [Cross-linking and additional cleanup](#s15)
 
 **APPENDIX:**  
      [How to update OP content](#updateOP)
@@ -289,29 +290,174 @@ Finally, push your working branch up to the team's repository, origin...
 ![Step 5: Push your working branch up to the team's repository](images/s5.png)
 
 ## <h2 id="s61"> Review your branch on MSDN stage</a>
+As soon as your branch gets pushed to origin, it will kick off an automated build. Look for emails from the **Open Publishing Build Service** (vscopbld@microsoft.com). Don't be alarmed if it says it succeeded with Warnings - we've been working for weeks to get those issues resolved. 
+
+![Build mail example](images/BuildMailExample.png)
 
 ### Monitoring your build progress
+To see what's going on while it's building (before you get that email), you can visit the **Open Publishing Service portal**:
 
-### Finding your content on MSDNStage
+[https://op-portal-prod.azurewebsites.net/#/containers/history/repositories/All](https://op-portal-prod.azurewebsites.net/#/containers/history/repositories/All)
 
-### Making updates to your working branch
+There you will find the status of the ongoing builds. If it fails through no fault of your content (that happens sometime), you can kick off the build again without having to make another commit.
+
+![Portal example](images/PortalExample.png)
+
+### Kicking off the build again (if you must)
+To manually kick off the build again..
+
+1. Go to [Repository Management](https://op-portal-prod.azurewebsites.net/#/containers/repository/repositories/All).
+2. Select the row that contains **windows-driver-docs-pr** - *without clicking the link to the repo.*
+3. Then at the top of the page, click **Publish** - *you can later select which branch.*
+4. A pop-up will appear. Then select the branch you want to publish.
+
+![Restart build](images/RestartBuild.png)
+
+### Finding your content in the Hardware Dev Center (MSDNStage & LIVE)
+In general, to find your content on the internal staging server, the URL format goes like this:
+
+    https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/<projectname>/<topic name>?branch=<branch name>
+    
+If your top-most parent topic is named index.md, this should work too (omitting the topic):  
+    
+    https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/<projectname>?branch=<branch name>
+
+**IMPORTANT**: Once you start navigating around your content, you'll notice that "`?branch=<branchname>`" has disappered from the URL. YOU will be able to continue navigating around your branch because the browser remembers for you. But, if you send those links to other people **without the branch specified in the URL, they will not be able to access the topic.**
+
+After you [merge your project to the master branch](#s65), you no longer need to specify the branch in the URL. All MSDNSTAGE requests go to the master branch by default. This is why your content won't appear when you don't specify the branch (it's not in master yet). Once there, you can simply type:
+    
+    https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/<projectname>
 
 
+Like with WDCML, you can predict the **LIVE URL** by removing `stage.redmond.corp.`:
+    
+    https://msdn.microsoft.com/en-us/windows/hardware/drivers/<projectname>
 
-## <h2 id="s65"> Merge your content into MASTER</a>
+
+### Compare content against WDCML
+Click through your OP topics and see that the render well. The conversion process does amazing work, but it still makes mistakes. You'll likely find things that need to be revised in the MD files in order for them to appear as desired. 
+
+I recommend doing a local CHM build of your projectname-OP.xtoc file. That way you can quickly click through the "good example" of each topic as you compare it with the OP versions. 
+
+### Finding bugs
+Technically, MSDN is supposed to as good a job rendering markdown as GitHub does. When you find weird behavior, click on the *Contribute* button in the top-right corner to quickly jump to the GitHub version of the topic.
+
+If GitHub displays the same weirdness, your only choice is to revise the MD file. If on the other hand you don't see the weirdness, **you found a bug!** In that case, email [eliotdirs@microsoft.com](mailto:eliotdirs@microsoft.com) for instructions on how to sumbit the issue. But of course, you're always free to bypass the bug by revising the MD file. 
 
 
+## <h2 id="s66"> Make revisions to your working branch
+Once the content starts appearing on MSDNStage, you'll likely find lots of revisions you want to make. 
+
+### Working with VS Code
+To quickly go from your branch to Visual Studio Code, you can simply type the following from your working branch:
+
+    C:\myrepo\windows-driver-docs-pr [working-branch]>code .
+    
+That will open up VS Code to your repositry. Once there, select the files and start making changes as desired. As with Office products you can save by using **Ctrl+S** or the **Alt-F,S** keystrokes. Once you start making changes, you'll see numbers appear in the top left that indicate the number of files affected by changes. 
+
+![VS Code change list](images/VSCodeChanges.png)
+
+That's VS Code keeping track of your change list. 
+
+### Commiting changes to GIT
+Commits are the units of change you can push up to origin. Once you're done making revisions or otherwise want to put closure on that unit of change, you can do a ***commit***. You can do this in one of two ways:
+
+* **Use VS Code** : Type the description of the change in the Message window and then press **Ctrl+Enter**. 
+
+* **Use Git** : Use the **add** and **commit** commands to create the commit.
+
+        C:\myrepo\windows-driver-docs-pr [working-branch]>git add .
+        C:\myrepo\windows-driver-docs-pr [working-branch]>git commit -m 'Your commit description here'
+
+
+### Pushing changes back up to origin
+To push changes back up to origin, follow the steps described earlier. 
+
+**Note** : Depending on the extent of the changes, you may choose *not* do a local build beforehand. 
+
+1. Switch to the **master** branch
+        C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
+
+2. Pull down the latest changes from **master**
+        C:\myrepo\windows-driver-docs-pr [master]>git pull origin
+        
+3. Switch to your **working branch**
+        C:\myrepo\windows-driver-docs-pr [master]>git checkout working-branch
+
+4. Merge changes from **master** into your **working branch**
+        C:\myrepo\windows-driver-docs-pr [working-branch]>git merge master
+
+5. Push your **working branch** changes up to origin
+        C:\myrepo\windows-driver-docs-pr [working-branch]>git push -u origin working-branch
 
 
 ## <h2 id="s7"> Build a .CSV file for redirecting old topics to OP</a>
+Currently Ted is handling this. He'll soon add instructions here that describe how you can do it yourself. Until then, send Ted your XTOC file for the OP conversion and any files you want to be removed (the XTOC files we discussed earlier: **projectname-OP.xtoc** and **XX-ToBeRemoved.xtoc**).
 
-## <h2 id="s8"> Create new WDCML parent topic in HW_NODES</a>
+
+## <h2 id="s8"> Create a new WDCML parent topic in HW_NODES</a>
+**\[Note that this only applies to projects that are being split up - seperating conceptual from reference.\] **  
+
+To minimize the complextity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simlifying the site-wide HXT and making the ref project easier to maintain.
+
 
 ## <h2 id="s9"> Update WDCML TOC to show only reference topics</a>
 
 ## <h2 id="s10"> Update Dev Center HXT file for new OP and REF</a>
 
 ## <h2 id="s11"> Test and clean up content experience</a>
+
+## <h2 id="s65"> Ready. Set. Go. Merge your content into MASTER!</a>
+The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
+
+**IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
+
+### First-timers: Consider working with another OP writer on your first merge into master
+If you follow the guidance in this section, you should be fine. But it does involve pushing to the ***same branch that everyone else depends on to get content out to LIVE.*** No pressure(!) I know I felt a lot better working someone who had experience on my first big merge to master, and I highly recommend doing the same thing.
+
+### How to merge your working branch into master
+The goal is to get all of the latest changes from master into your working branch before you turn around and merge your working branch back into master.
+
+**Complete the following steps in the same block of time. If you have to step away for a while before completing them, start over.**
+
+The first step is to make sure you get the latest-and-greatest changes from origin. You want to do this all in one go to minimize the number of changes on master between this step and the last step - when you push your changes up to origin...
+
+    C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
+    C:\myrepo\windows-driver-docs-pr [master]>git pull origin
+
+...as illustrated here:
+
+![Step 1: Refresh your local master (again)](images/s6.png)  
+
+Next, get your working branch to match what's in origin/master (with the exception of the differences in your branch).
+
+    C:\myrepo\windows-driver-docs-pr [master]>git checkout working-branch
+    C:\myrepo\windows-driver-docs-pr [working-branch]>git merge master
+        
+...as illustrated here:
+     
+![Step 2: Merge the latest changes into your  local working branch](images/s7.png)  
+
+
+Then merge the differences from your branch into your local master branch. 
+
+    C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
+    C:\myrepo\windows-driver-docs-pr [master]>git merge working-branch
+
+...as illustrated here: 
+
+![Step 3: Merge YOUR latest changes into your local MASTER](images/s8.png)  
+
+Finally, push your local master up to the master on origin. 
+
+    C:\myrepo\windows-driver-docs-pr [master]>git push -u origin master
+    
+
+...as illustrated here:
+
+![Step 9: ](images/s9.png)  
+
+
 
 ## <h2 id="s12"> Prepare for deployment (timing!)</a>
 
@@ -320,3 +466,4 @@ Finally, push your working branch up to the team's repository, origin...
 ## <h2 id="s15"/> Cross-linking and additional cleanup</a>
 
 ## <h2 id="updateOP"/> How to update OP content</a>
+See [Make revisions to your working branch](#s66)
