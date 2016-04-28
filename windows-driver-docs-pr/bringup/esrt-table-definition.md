@@ -23,10 +23,10 @@ The following table describes the format of the ESRT table and the firmware reso
 <table>
 <colgroup>
 <col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
+<col width="10%" />
+<col width="10%" />
+<col width="10%" />
+<col width="50%" />
 </colgroup>
 <thead>
 <tr class="header">

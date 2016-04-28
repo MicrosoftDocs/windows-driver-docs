@@ -24,8 +24,8 @@ When the system firmware is performing the actual update there are a series of p
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="20%" />
+<col width="80%" />
 </colgroup>
 <thead>
 <tr class="header">
