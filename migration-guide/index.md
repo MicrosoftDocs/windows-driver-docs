@@ -164,7 +164,10 @@ If you don't specify the file name in an OP URL, MSDN will serve up the index.md
 ## <h2 id="s35"> Cloning windows-driver-docs-pr & other set up</a>
 Before you can start working on OP content, you need to clone the driver docs to your local machine. In this topic, we'll create a folder on the **C:** drive named **MyRepo**, to save the local copies of the driver repository. 
 
-**TIP**: All of the changes you make to your local files are persisted within your local repository file system. This means that you can clone the same repository locally more than once - as long as the two folders never "touch". This lets you use regular file comparison tools if you want to compare the same files on different branches.
+**TIP** : All of the changes you make to your local files are persisted within your local repository file system. This means that you can clone the same repository locally more than once - as long as the two folders never "touch". This lets you use regular file comparison tools if you want to compare the same files on different branches.
+
+
+**TIP2** : If you use a Shortcut to open PowerShell, in the ShortCut properties, specify your local windows-driver-docs-pr folder as the **Start in** location. Then you'll automatically open to your repo each time you open PowerShell. 
 
 To clone the driver docs repo to your local computer, open Powershell, navigate to the folder you want your the repo to live, and execute..
 
@@ -359,7 +362,7 @@ That will open up VS Code to your repositry. Once there, select the files and st
 
 That's VS Code keeping track of your change list. 
 
-### Commiting changes to GIT
+### Committing changes to GIT
 Commits are the units of change you can push up to origin. Once you're done making revisions or otherwise want to put closure on that unit of change, you can do a ***commit***. You can do this in one of two ways:
 
 * **Use VS Code** : Type the description of the change in the Message window and then press **Ctrl+Enter**. 
@@ -375,19 +378,19 @@ To push changes back up to origin, follow the steps described earlier.
 
 **Note** : Depending on the extent of the changes, you may choose *not* do a local build beforehand. 
 
-1. Switch to the **master** branch
+1. Switch to the **master** branch  
         C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
 
-2. Pull down the latest changes from **master**
+2. Pull down the latest changes from **master**  
         C:\myrepo\windows-driver-docs-pr [master]>git pull origin
         
-3. Switch to your **working branch**
+3. Switch to your **working branch**  
         C:\myrepo\windows-driver-docs-pr [master]>git checkout working-branch
 
-4. Merge changes from **master** into your **working branch**
+4. Merge changes from **master** into your **working branch**  
         C:\myrepo\windows-driver-docs-pr [working-branch]>git merge master
 
-5. Push your **working branch** changes up to origin
+5. Push your **working branch** changes up to origin  
         C:\myrepo\windows-driver-docs-pr [working-branch]>git push -u origin working-branch
 
 
