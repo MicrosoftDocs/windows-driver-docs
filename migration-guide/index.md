@@ -73,6 +73,17 @@ Once the content is split up into those three new XTOC files, they can be used t
 
 3. As many low-value "orientation" (list of links) topics are removed.  See the next section for tips on cleaning up your IA.
 
+### Content architecture
+While refactoring your project, it's helpful to consider the finished architecture. Because we're splitting conceptual and reference across two different platforms, you'll need to [edit the site-wide Dev Center HXT](#s9) and [create a new WDCML parent topic](#s8) (described later). With those chanages, you'll want to make sure the new topic titles mention the technology, rather than simply say "Design guide" or "Reference".
+
+![TOC relationship to HXT](images/HXTTOC.png)
+
+This graphic is described in more detail when you go to [edit the site-wide Dev Center HXT](#s9). For now, note that three different XTOC files play a part:
+
+* **hw_nodes.xtoc** : Provides single-topic references to the new parent topics.
+* **projectname-OP.xtoc** : The old WDCML topic GUID will guide people to OP via the MSDN redirects.
+* **projectname.xtoc** : The end product (containing reference only) will supply the WDCML TOC.
+
 
 ### Tips for editing your XTOC files
 
@@ -105,21 +116,21 @@ The conversion of WDCML topics to MD is performed by the **con2md.exe** tool in 
 
 Con2md requires that it be **run at the root of the project folder** and that the content to be converted is in an XTOC by **the same name as the project folder**. Thus, you'll **TEMPORARILY** overwrite your projectname.xtoc file with your projectname-OP.xtoc file. A quick way to do that is run the following at the command line:
 
-    x:\SD\nfpdrivers>attrib -r nfpdrivers.xtoc
+    C:\SD\projectname>attrib -r projectname.xtoc
     
 Then, overwrite your regular TOC with your OP toc:
 
-    x:\SD\nfpdrivers>copy nfpdrivers-OP.xtoc nfpdrivers.xtoc
+    C:\SD\projectname>copy projectname-OP.xtoc projectname.xtoc
     
 Finally, to run the conversion, execute con2md as follows:
 
-    X:\SD\nfpdrivers>con2md nfpdrivers
+    C:\SD\projectname>con2md projectname
     
 **WHEN IT FAILS**, try running it a couple times. If it still doesn't work, make sure you have **MSDN Reporting** permissions on IDWEB. You'll also need [Pandoc](https://github.com/jgm/pandoc/releases/tag/1.14.0.1) installed and your machine configured to run builds locally. 
 
 Once it runs successfully, don't forget to go back and reload the projectname.xtoc file from SD using a forced resync:
 
-    X:\SD\nfpdrivers>sd sync -f ... 
+    C:\SD\projectname>sd sync -f ... 
     
 When it finishes, con2md will create a new TOC file and a folder for your MD files and art:
 
@@ -157,7 +168,7 @@ If you don't specify the file name in an OP URL, MSDN will serve up the index.md
 2. In TOC.md, change the name of the source file to be index.md
 3. Finally, do a search of the MD files for any links to the previous file name. You can use the findstr utility with CMD.exe to find any occurances of that file name. For example, if the old topic was named introduction.md, the findstr command would be:
 
-        c:\SD\storage\build\markdown\mdout>findstr /S /I /M /C:"introduction.md" *.md
+        c:\SD\projectname\build\markdown\mdout>findstr /S /I /M /C:"introduction.md" *.md
           
 
 
@@ -402,18 +413,105 @@ To push changes back up to origin, follow the steps described earlier.
 ## <h2 id="s7"> Build a .CSV file for redirecting old topics to OP</a>
 Currently Ted is handling this. He'll soon add instructions here that describe how you can do it yourself. Until then, send Ted your XTOC file for the OP conversion and any files you want to be removed (the XTOC files we discussed earlier: **projectname-OP.xtoc** and **XX-ToBeRemoved.xtoc**).
 
+Don't forget to change the target URL of the top topic to point to index.md. Any script output will likely include the original MD file name.
+
+Wait until you go to publish all the changes to LIVE before you (submit the redirect request to MSDN (step 17 below)](#s13).
+
 
 ## <h2 id="s8"> Create a new WDCML parent topic in HW_NODES</a>
 **\[Note that this only applies to projects that are being split up - seperating conceptual from reference.\] **  
 
 To minimize the complextity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simlifying the site-wide HXT and making the ref project easier to maintain.
 
+### Create an FWLinks for testing on MSDNStage
+In the Dev Center TOC, the link to the OP content depends on the MSDN redirects. But we don't want to submit those redirects until the very end of this process ([Step #17, Submit redirect request to MSDN team](#s13)). Thus, in order to test the user experience, you'll need to use an FWLink to link to the OP content from the body of your new parent topic.
+
+### Build a new "In this section" table
+Because we can't use auto_keylinks, you may want to simply copy the contents from the NFC topic shown below. This image is to show how simple the new parent can be and point out the FWLink.
+
+![New parent topic](images/NewParentTopic.png)
+
 
 ## <h2 id="s9"> Update WDCML TOC to show only reference topics</a>
+Now that you have OP content and a new WDCML parent topic, the next step is to make your WDCML project **reference only**. If you've already created your projectname-REF.xtoc file, all you need to do is:
+
+1. **Check out** your projectname.xtoc file
+
+2. **Overwrite** your project TOC with the new REF TOC  
+
+        C:\SD\projectname>copy projectname-REF.xtoc projectname.xtoc
+
+3. **Check in** your projectname.xtoc file
+
 
 ## <h2 id="s10"> Update Dev Center HXT file for new OP and REF</a>
+As mentioned earlier, your project's TOC is no longer defined exclusively by the WDCML XTOC file - after the migration, that only defines the TOC for the reference content. To get the Dev Center TOC to include the OP node, you'll need to update the site-wide HXT file for the Hardware Dev Center. 
+
+**NOTE** : You won't actually update the site-wide HXT file. Instead, you'll issue a prod request to have it updated. That's discussed later, when you [prepare for deployment](#s12). 
+
+The site-wide HXT is saved in SD here (assuming your enlistment folder is on C:\SD):
+
+    C:\SD\BuildX\MTPS\en-us\hardware_dev_center.hxt
+    
+For your technology, the new HXT elements will include three parts:
+
+* **A new parent topic** : This is a single-topic reference to the WDCML topic in hw_nodes.xtoc
+* **The OP content** : This is a single-topic reference to the old conceptual topic that will be redirected to OP (index.md)
+* **The Reference content** : This is a TOC reference to the WDCML project defined by projectname.xtoc
+
+    
+![TOC relationship to HXT](images/HXTTOC.png)
+
+To prepare a new Dev Center HXT file:
+
+1. Re-sync the BuildX folder to make sure you have the latest-and-greatest HXT file.  
+
+        c:\SD\BuildX>sd sync ...
+        
+2. Copy the HXT file somewhere other than BuildX where you can edit the file. **Maintain the same file name so you can easily attach it to your prod request.** Again, that's located here:  
+    
+        C:\SD\BuildX\MTPS\en-us\hardware_dev_center.hxt
+        
+3. Search for the current reference to your project in the TOC (projectname**.hxt**). *Note that it's an HXT rather than an XTOC extension. The daily build creates the HXT form your project's XTOC.*
+
+4. Keep that old HXT reference around a moment, you'll need it to edit the new one...      
+
+5. Paste the following template below that reference:  
+
+    ```
+    <!-- TECHNOLOGYNAME Devices -->
+    <!-- Parent topic from HW_NODES WDCML project -->
+    <HelpTOCNode NodeType="Regular" Title="TECHNOLOGYNAME Devices" Url="AssetID:PARENTGUID ^VS.85">
+
+        <!-- TECHNOLOGYNAME design guide from Open Publishing platform -->
+        <HelpTOCNode NodeType="Regular" Title="TECHNOLOGYNAME design guide" Url="AssetID:CONCEPTUALGUID ^VS.85"/>
+
+        <!--TECHNOLOGYNAME DDI reference content from WDCML platform -->
+        <HelpTOCNode NodeType="TOC" Url="VS|PROJECTNAME|$\PROJECTNAME.hxt@0 ^VS.85" />
+
+    </HelpTOCNode>
+    ```
+    
+    A few notes about this XML:  
+    * The **NodeType** indicates the kind of reference. **Regular** means it's a single-topic reference. *TOC* means the entire child hierarchy is defined by the referenced HXT (your projectname.xtoc).
+    * The **Title** element specifies the text **in the TOC nav** and overrides whatever is written in the contents of the specified file. In other words, the title at the top of the page has no bearing on what appears in the TOC nav. The Title is needed when NodeType is TOC - the title is inferred from the contents of the project HXT.
+    * The **AssetID** values are the GUIDs specified in the WDCML topic metadata, the msdnID attribute.
+    
+6. Replace the placeholder values with those from your project. Of course, feel free to change the text in the comments and titles where it makes. But if possible, try to make them consistent with what it was before.   
+
+    * **TECHNOLOGYNAME** : This is the name of your technology / feature area
+    * **PARENTGUID** : This is the MSDN ID (the GUID) from the WDCML parent topic in HW_NODES
+    * **CONCEPTUALGUID** : This is the MSDN ID (the GUID) of the WDCML topic that was converted to be the new OP parent topic (renamed to be index.md)
+    * **PROJECTNAME** : This is the name of the WDCML project now holding only reference topics. You can simply copy/paste to replace the PROJECTNAME line with the old HXT reference to your project.
+    
+7. Once you're finished revising that TOC node, delete the old HXT reference above the new one. 
+
+8. Then save the changes. Again, keep the site-wide HXT file named the same, **hardware_dev_center.hxt**, so that it can easily be saved to the BuildX folder. 
+
 
 ## <h2 id="s11"> Test and clean up content experience</a>
+This is the best time to take one more look at your branch on MSDNStage and make sure it's ready to go out. Once you feel it's ready, continue on to the next step - ***merging your migrated project into the MASTER branch!***
+
 
 ## <h2 id="s65"> Ready. Set. Go. Merge your content into MASTER!</a>
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
