@@ -10,7 +10,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 6. [Create working branch in windows-driver-docs-pr](#s5)
 7. [Add OP content to the working branch](#s6)
 8. [Review your branch on MSDNStage](#s61)
-9. [Make revisions to your working branch](#s66)
+9. [Make revisions to your working branch](#s66) <-- How to update OP content
 10. [Build a .CSV file for redirecting old topics to OP ](#s7)
 11. [Create new WDCML parent topic in HW_NODES](#s8)
 12. [Update WDCML TOC to show only reference topics](#s9)
@@ -19,13 +19,10 @@ This content is to help writers migrate the driver documentation (the conceptual
 15. [Ready. Set. Go. Merge your content into MASTER!](#s65)
 16. [Prepare for deployment (timing!)](#s12)
 17. [Submit redirect request to MSDN team](#s13)
-18. [Cross-linking and additional cleanup](#s15)
-
-**APPENDIX:**  
-     [How to update OP content](#updateOP)
+18. [Archiving SD topics and additional cleanup](#s15)
 
 
-## <h2 id="s1"> Get your Git account and tools set up</a>
+## <h2 id="s1"> 1. Get your Git account and tools set up</a>
 
 You'll want to make sure you have **GitHub set up**, install **Visual Studio Code**, and get **PowerShell** working with Git too. The last two are options, but those tools will be used throughout this topic in examples. 
 
@@ -46,7 +43,7 @@ So that you can run the tools as intended:
 * Make sure you've been granted writer permissions on [Open Source Hub](https://opensourcehub.microsoft.com) (*ask Ted*)
 
 
-## <h2 id="s2"> Refactor the WDCML TOC (create OP and REF XTOC files)</a>
+## <h2 id="s2"> 2. Refactor the WDCML TOC (create OP and REF XTOC files)</a>
 The WDCML XTOC file is key to refactoring the content. In this process, we'll create three seperate files to make it easier for people to understand which topics are going where. These XTOC files will also be used by tools to convert the OP content, the TOC file, and a redirects CSV file for the MSDN team to remove the old topics. By doing this refactoring in WDCML, we can take advantage of the autokeylinks elements for generating new "In this Section" lists.
 
 ### XTOC overview
@@ -111,7 +108,7 @@ You can also see how a new topic was created to be a single root at the top of t
 When you're all finsished (or you think you are), do a local CHM build of **projectname-OP.xtoc** and **projectname-REF.xtoc** and compare it to the original CHM. Make sure you have the all of the topics from the original CHM accounted for somewhere in the new XTOCs. 
 
 
-## <h2 id="s3"> Convert the conceptual topics to OP</a>
+## <h2 id="s3"> 3. Convert the conceptual topics to OP</a>
 The conversion of WDCML topics to MD is performed by the **con2md.exe** tool in your SD folder for the respective project. This tool resides in the BuildX\Cmd folder. Depending on how you set up XMetaL initially, you may need to add this path to your environment variables or you'll need to type the full path to the EXE when you execute it.
 
 Con2md requires that it be **run at the root of the project folder** and that the content to be converted is in an XTOC by **the same name as the project folder**. Thus, you'll **TEMPORARILY** overwrite your projectname.xtoc file with your projectname-OP.xtoc file. A quick way to do that is run the following at the command line:
@@ -172,7 +169,7 @@ If you don't specify the file name in an OP URL, MSDN will serve up the index.md
           
 
 
-## <h2 id="s35"> Cloning windows-driver-docs-pr & other set up</a>
+## <h2 id="s35"> 4. Cloning windows-driver-docs-pr & other set up</a>
 Before you can start working on OP content, you need to clone the driver docs to your local machine. In this topic, we'll create a folder on the **C:** drive named **MyRepo**, to save the local copies of the driver repository. 
 
 **TIP** : All of the changes you make to your local files are persisted within your local repository file system. This means that you can clone the same repository locally more than once - as long as the two folders never "touch". This lets you use regular file comparison tools if you want to compare the same files on different branches.
@@ -188,7 +185,7 @@ To clone the driver docs repo to your local computer, open Powershell, navigate 
 
 ![Step 1](images/s1.png)
 
-## <h2 id="s4"> Do a local build of the OP content</a>
+## <h2 id="s4"> 5. Do a local build of the OP content</a>
 You want to make sure your local repository builds fine before you make any changes. 
 
 1. Navigate to your local repo folder and run the following to start a build:
@@ -203,7 +200,7 @@ You want to make sure your local repository builds fine before you make any chan
 
 If the build doesn't run successfully, make sure you have the necessary permissions discussed at the beginning of this topic.
 
-## <h2 id="s5"> Create working branch in windows-driver-docs-pr</a>
+## <h2 id="s5"> 6. Create working branch in windows-driver-docs-pr</a>
 Now that you know your local repo builds successfully, you can begin preparing to migrate content. The first step is to create a working branch. In these examples, the working branch will be called **working-branch**, but you should call your branch something that makes sense for your technology. For example, **printmigration** for migrating the print content.
 
 Working branches are temporary. We're going to remove it after the migration is complete. It will eventually be pushed up to the team's repo on GitHub, referred to as "origin", so it's a good idea to see what other branches are called. 
@@ -248,7 +245,7 @@ Once you've decided on a name, use this command to create your local working bra
 In Git, you use **checkout** to changes branches. When you do this, whole folders can appear and disappear in your local Windows Explorer - depending on which files are associated with which branches.
 
 
-## <h2 id="s6"> Add OP content to the working branch</a>
+## <h2 id="s6"> 7. Add OP content to the working branch</a>
 Once you create a working branch, all changes you make to the respositry will be captured in your branch - any files in any folders, not just the ones in your project folder. 
 
 ### Create a project folder and copy over your MD files
@@ -303,7 +300,7 @@ Finally, push your working branch up to the team's repository, origin...
 
 ![Step 5: Push your working branch up to the team's repository](images/s5.png)
 
-## <h2 id="s61"> Review your branch on MSDN stage</a>
+## <h2 id="s61"> 8. Review your branch on MSDN stage</a>
 As soon as your branch gets pushed to origin, it will kick off an automated build. Look for emails from the **Open Publishing Build Service** (vscopbld@microsoft.com). Don't be alarmed if it says it succeeded with Warnings - we've been working for weeks to get those issues resolved. 
 
 ![Build mail example](images/BuildMailExample.png)
@@ -359,7 +356,7 @@ Technically, MSDN is supposed to as good a job rendering markdown as GitHub does
 If GitHub displays the same weirdness, your only choice is to revise the MD file. If on the other hand you don't see the weirdness, **you found a bug!** In that case, email [eliotdirs@microsoft.com](mailto:eliotdirs@microsoft.com) for instructions on how to sumbit the issue. But of course, you're always free to bypass the bug by revising the MD file. 
 
 
-## <h2 id="s66"> Make revisions to your working branch
+## <h2 id="s66"> 9. Make revisions to your working branch
 Once the content starts appearing on MSDNStage, you'll likely find lots of revisions you want to make. 
 
 ### Working with VS Code
@@ -410,7 +407,7 @@ To push changes back up to origin, follow the steps described earlier.
         C:\myrepo\windows-driver-docs-pr [working-branch]>git push -u origin working-branch
 
 
-## <h2 id="s7"> Build a .CSV file for redirecting old topics to OP</a>
+## <h2 id="s7"> 10. Build a .CSV file for redirecting old topics to OP</a>
 Currently Ted is handling this. He'll soon add instructions here that describe how you can do it yourself. Until then, send Ted your XTOC file for the OP conversion and any files you want to be removed (the XTOC files we discussed earlier: **projectname-OP.xtoc** and **XX-ToBeRemoved.xtoc**).
 
 Don't forget to change the target URL of the top topic to point to index.md. Any script output will likely include the original MD file name.
@@ -418,13 +415,13 @@ Don't forget to change the target URL of the top topic to point to index.md. Any
 Wait until you go to publish all the changes to LIVE before you (submit the redirect request to MSDN (step 17 below)](#s13).
 
 
-## <h2 id="s8"> Create a new WDCML parent topic in HW_NODES</a>
+## <h2 id="s8"> 11. Create a new WDCML parent topic in HW_NODES</a>
 **\[Note that this only applies to projects that are being split up - seperating conceptual from reference.\] **  
 
 To minimize the complextity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simlifying the site-wide HXT and making the ref project easier to maintain.
 
-### Create an FWLinks for testing on MSDNStage
-In the Dev Center TOC, the link to the OP content depends on the MSDN redirects. But we don't want to submit those redirects until the very end of this process ([Step #17, Submit redirect request to MSDN team](#s13)). Thus, in order to test the user experience, you'll need to use an FWLink to link to the OP content from the body of your new parent topic.
+### Create an FWLink for testing on MSDNStage
+In the Dev Center TOC, the link to the OP content depends on the MSDN redirects. But we don't want to submit those redirects until the very end of this process [(Step #17, Submit redirect request to MSDN team](#s13)). Thus, in order to test the user experience, you'll need to use an FWLink to link to the OP content from the body of your new parent topic.
 
 ### Build a new "In this section" table
 Because we can't use auto_keylinks, you may want to simply copy the contents from the NFC topic shown below. This image is to show how simple the new parent can be and point out the FWLink.
@@ -432,7 +429,7 @@ Because we can't use auto_keylinks, you may want to simply copy the contents fro
 ![New parent topic](images/NewParentTopic.png)
 
 
-## <h2 id="s9"> Update WDCML TOC to show only reference topics</a>
+## <h2 id="s9"> 12. Update WDCML TOC to show only reference topics</a>
 Now that you have OP content and a new WDCML parent topic, the next step is to make your WDCML project **reference only**. If you've already created your projectname-REF.xtoc file, all you need to do is:
 
 1. **Check out** your projectname.xtoc file
@@ -444,7 +441,7 @@ Now that you have OP content and a new WDCML parent topic, the next step is to m
 3. **Check in** your projectname.xtoc file
 
 
-## <h2 id="s10"> Update Dev Center HXT file for new OP and REF</a>
+## <h2 id="s10"> 13. Update Dev Center HXT file for new OP and REF</a>
 As mentioned earlier, your project's TOC is no longer defined exclusively by the WDCML XTOC file - after the migration, that only defines the TOC for the reference content. To get the Dev Center TOC to include the OP node, you'll need to update the site-wide HXT file for the Hardware Dev Center. 
 
 **NOTE** : You won't actually update the site-wide HXT file. Instead, you'll issue a prod request to have it updated. That's discussed later, when you [prepare for deployment](#s12). 
@@ -509,11 +506,11 @@ To prepare a new Dev Center HXT file:
 8. Then save the changes. Again, keep the site-wide HXT file named the same, **hardware_dev_center.hxt**, so that it can easily be saved to the BuildX folder. 
 
 
-## <h2 id="s11"> Test and clean up content experience</a>
+## <h2 id="s11"> 14. Test and clean up content experience</a>
 This is the best time to take one more look at your branch on MSDNStage and make sure it's ready to go out. Once you feel it's ready, continue on to the next step - ***merging your migrated project into the MASTER branch!***
 
 
-## <h2 id="s65"> Ready. Set. Go. Merge your content into MASTER!</a>
+## <h2 id="s65"> 15. Ready. Set. Go. Merge your content into MASTER!</a>
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
 
 **IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
@@ -565,11 +562,9 @@ Finally, push your local master up to the master on origin.
 
 
 
-## <h2 id="s12"> Prepare for deployment (timing!)</a>
+## <h2 id="s12"> 16. Prepare for deployment (timing!)</a>
 
-## <h2 id="s13"/> Submit redirect request to MSDN team</a>
+## <h2 id="s13"/> 17. Submit redirect request to MSDN team</a>
 
-## <h2 id="s15"/> Cross-linking and additional cleanup</a>
+## <h2 id="s15"/> 18. Archiving SD topics and additional cleanup</a>
 
-## <h2 id="updateOP"/> How to update OP content</a>
-See [Make revisions to your working branch](#s66)
