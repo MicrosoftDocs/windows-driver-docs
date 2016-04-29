@@ -379,18 +379,23 @@ To push changes back up to origin, follow the steps described earlier.
 **Note** : Depending on the extent of the changes, you may choose *not* do a local build beforehand. 
 
 1. Switch to the **master** branch  
+
         C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
 
 2. Pull down the latest changes from **master**  
+        
         C:\myrepo\windows-driver-docs-pr [master]>git pull origin
         
 3. Switch to your **working branch**  
+        
         C:\myrepo\windows-driver-docs-pr [master]>git checkout working-branch
 
 4. Merge changes from **master** into your **working branch**  
+        
         C:\myrepo\windows-driver-docs-pr [working-branch]>git merge master
 
 5. Push your **working branch** changes up to origin  
+        
         C:\myrepo\windows-driver-docs-pr [working-branch]>git push -u origin working-branch
 
 
