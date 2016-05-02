@@ -16,10 +16,13 @@ This content is to help writers migrate the driver documentation (the conceptual
 12. [Update WDCML TOC to show only reference topics](#s9)
 13. [Update Dev Center HXT file for new OP and REF](#s10)  
 14. [Test and clean up content experience](#s11)
-15. [Ready. Set. Go. Merge your content into MASTER!](#s65)
-16. [Prepare for deployment (timing!)](#s12)
-17. [Submit redirect request to MSDN team](#s13)
-18. [Archiving SD topics and additional cleanup](#s15)
+15. [Prepare for deployment (timing!)](#s12)
+16. [Submit ProdRequest to MSDNSTAGE & review](#s16)
+17. [Ready. Set. Go. Merge your content into MASTER & LIVE!](#s65)
+18. [Push ProdRequest to LIVE](#s17)
+19. [Submit redirect request to MSDN team](#s13)
+20. [Review changes on LIVE environment](#s20)
+21. [Move old WDCML content to Source Depot Archive folder](#s15)
 
 
 ## <h2 id="s1"> 1. Get your Git account and tools set up</a>
@@ -509,8 +512,46 @@ To prepare a new Dev Center HXT file:
 ## <h2 id="s11"> 14. Test and clean up content experience</a>
 This is the best time to take one more look at your branch on MSDNStage and make sure it's ready to go out. Once you feel it's ready, continue on to the next step - ***merging your migrated project into the MASTER branch!***
 
+## <h2 id="s12"> 15. Prepare for deployment (timing!)</a>
+Before you continue, make sure you have the following items compeleted and ready to go...
 
-## <h2 id="s65"> 15. Ready. Set. Go. Merge your content into MASTER!</a>
+###Pre-deployment checklist:
+* OP content in working branch is looking good on MSDNStage
+* WDCML redirects CSV file is complete and ready to go (including index rename for parent topic)
+* Dev Center HXT file revisions are ready to go
+* WDCML project projectname.hxt has been updated to show reference only (if applicable)
+* You've reviewed SD history to make sure no WDCML change were made after the conversion 
+* You've reveiwed the new WDCML parent topic in HW_NODES (use the GUID to view on Stage)
+* FWlink to OP content is pointing to OP working branch on Stage
+
+###Timing
+The process from this point on looks like this:  
+
+1. **Submit Prodreqest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
+
+2. **Make sure TOC works correctly**:  
+    * Technology link in the TOC points to new parent in HW_NODES  
+    * Design guide link points to single-topic target (the top conceptual topic that will redirect to OP)  
+    
+3.  **Publish OP content to the world!**  
+    1. First merge your *working-branch* to *MASTER*  
+    2. Review your content on MSDN Stage (no branch specifier needed in the URL)
+    3. Merge your changes in *MASTER* to *LIVE*!
+    
+4. **Update your Prodrequest - ask to push the changes to LIVE**
+
+5. **Submit redirects CSV to the MSDN team**
+
+6. **Review the changes on the LIVE environment**
+
+7. **Move old WDCML to the Archive folder in Source Depot**
+
+
+## <h2 id="s65"> 16. Submit ProdRequest to MSDNSTAGE & review</a>
+
+
+
+## <h2 id="s65"> 17. Ready. Set. Go. Merge your content into MASTER & LIVE!</a>
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
 
 **IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
@@ -560,11 +601,15 @@ Finally, push your local master up to the master on origin.
 
 ![Step 9: ](images/s9.png)  
 
+###Review your content on MSDNSTAGE (without the branch in the URL)
 
+###Merging into the LIVE branch
 
-## <h2 id="s12"> 16. Prepare for deployment (timing!)</a>
+## <h2 id="s17"/> 18. Push ProdRequest to LIVE</a>
 
-## <h2 id="s13"/> 17. Submit redirect request to MSDN team</a>
+## <h2 id="s13"/> 19. Submit redirect request to MSDN team</a>
 
-## <h2 id="s15"/> 18. Archiving SD topics and additional cleanup</a>
+## <h2 id="s20"/> 20. Review changes on LIVE environment</a>
+
+## <h2 id="s15"/> 21. Move old WDCML content to Source Depot Archive folder</a>
 
