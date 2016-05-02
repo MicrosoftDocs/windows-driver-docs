@@ -15,14 +15,13 @@ This content is to help writers migrate the driver documentation (the conceptual
 11. [Create new WDCML parent topic in HW_NODES](#s8)
 12. [Update WDCML TOC to show only reference topics](#s9)
 13. [Update Dev Center HXT file for new OP and REF](#s10)  
-14. [Test and clean up content experience](#s11)
-15. [Prepare for deployment (timing!)](#s12)
-16. [Submit ProdRequest to MSDNSTAGE & review](#s16)
-17. [Ready. Set. Go. Merge your content into MASTER & LIVE!](#s65)
-18. [Push ProdRequest to LIVE](#s17)
-19. [Submit redirect request to MSDN team](#s13)
-20. [Review changes on LIVE environment](#s20)
-21. [Move old WDCML content to Source Depot Archive folder](#s15)
+14. [Prepare for deployment (timing!)](#s12)
+15. [Submit ProdRequest to MSDNSTAGE & review](#s16)
+16. [Ready. Set. Go. Merge your content into MASTER & LIVE!](#s65)
+17. [Push ProdRequest to LIVE](#s17)
+18. [Submit redirect request to MSDN team](#s13)
+19. [Review changes on LIVE environment](#s20)
+20. [Move old WDCML content to Source Depot Archive folder](#s15)
 
 
 ## <h2 id="s1"> 1. Get your Git account and tools set up</a>
@@ -472,11 +471,15 @@ To prepare a new Dev Center HXT file:
     
         C:\SD\BuildX\MTPS\en-us\hardware_dev_center.hxt
         
-3. Search for the current reference to your project in the TOC (projectname**.hxt**). *Note that it's an HXT rather than an XTOC extension. The daily build creates the HXT form your project's XTOC.*
+3. The read-only attribute will be set on the HXT file so run attrib to make it editable:
 
-4. Keep that old HXT reference around a moment, you'll need it to edit the new one...      
+        C:\your-file-editing-folder>attrib -r hardware_dev_center.hxt
+        
+4. Search for the current reference to your project in the TOC (projectname**.hxt**). *Note that it's an HXT rather than an XTOC extension. The daily build creates the HXT form your project's XTOC.*
 
-5. Paste the following template below that reference:  
+5. Keep that old HXT reference around a moment, you'll need it to edit the new one...      
+
+6. Paste the following template below that reference:  
 
     ```
     <!-- TECHNOLOGYNAME Devices -->
@@ -497,22 +500,20 @@ To prepare a new Dev Center HXT file:
     * The **Title** element specifies the text **in the TOC nav** and overrides whatever is written in the contents of the specified file. In other words, the title at the top of the page has no bearing on what appears in the TOC nav. The Title is needed when NodeType is TOC - the title is inferred from the contents of the project HXT.
     * The **AssetID** values are the GUIDs specified in the WDCML topic metadata, the msdnID attribute.
     
-6. Replace the placeholder values with those from your project. Of course, feel free to change the text in the comments and titles where it makes. But if possible, try to make them consistent with what it was before.   
+7. Replace the placeholder values with those from your project. Of course, feel free to change the text in the comments and titles where it makes. But if possible, try to make them consistent with what it was before.   
 
     * **TECHNOLOGYNAME** : This is the name of your technology / feature area
     * **PARENTGUID** : This is the MSDN ID (the GUID) from the WDCML parent topic in HW_NODES
     * **CONCEPTUALGUID** : This is the MSDN ID (the GUID) of the WDCML topic that was converted to be the new OP parent topic (renamed to be index.md)
     * **PROJECTNAME** : This is the name of the WDCML project now holding only reference topics. You can simply copy/paste to replace the PROJECTNAME line with the old HXT reference to your project.
     
-7. Once you're finished revising that TOC node, delete the old HXT reference above the new one. 
+8. Once you're finished revising that TOC node, delete the old HXT reference above the new one. 
 
-8. Then save the changes. Again, keep the site-wide HXT file named the same, **hardware_dev_center.hxt**, so that it can easily be saved to the BuildX folder. 
+9. Then save the changes. Again, keep the site-wide HXT file named the same, **hardware_dev_center.hxt**, so that it can easily be saved to the BuildX folder. 
 
+10. **Compare your revised HXT with the original in BuildX**. It's a good idea to confirm that they only changes are the ones you ***intended*** to make. 
 
-## <h2 id="s11"> 14. Test and clean up content experience</a>
-This is the best time to take one more look at your branch on MSDNStage and make sure it's ready to go out. Once you feel it's ready, continue on to the next step - ***merging your migrated project into the MASTER branch!***
-
-## <h2 id="s12"> 15. Prepare for deployment (timing!)</a>
+## <h2 id="s12"> 14. Prepare for deployment (timing!)</a>
 Before you continue, make sure you have the following items compeleted and ready to go...
 
 ###Pre-deployment checklist:
@@ -547,11 +548,39 @@ The process from this point on looks like this:
 7. **Move old WDCML to the Archive folder in Source Depot**
 
 
-## <h2 id="s65"> 16. Submit ProdRequest to MSDNSTAGE & review</a>
+## <h2 id="s65"> 15. Submit ProdRequest to MSDNSTAGE & review</a>
+The first order of business is testing the new TOC changes on MSDNStage. We don't want to move the OP content in the MASTER branch just yet because we don't know how long it will take to get assistance from the production team.
 
+###How to submit a ProdRequest for MSDNSTAGE:
+1. Open your browser to [http://prodrequest](http://prodrequest)
+2. Fill out the web form as follows:
+    * Click **New request**
+    * What type of request? = **Production services**
+    * Area = **WDCML/Library**
+    * Request = **Other**
+    * For Title consistency, try to use **HXT update for WDCML to OP migration (projectname)**
+    * For Additional information, use this template (keep hw_nodes in there if applicable):  
+    
+        ```
+        Please update the Staging environment with the following changes:
 
+        1. Replace hardware_dev_center.hxt with the attached HXT file. This HXT file should be saved to //depot/DevDoc/Main/BuildX/mtps/en-us/hardware_dev_center.hxt
 
-## <h2 id="s65"> 17. Ready. Set. Go. Merge your content into MASTER & LIVE!</a>
+        2. Re-build these projects: projectname, hw_nodes
+
+        3. Push to Stage: projectname, hw_nodes, hardware_dev_center.hxt
+
+        Please wait and do not push these changes to LIVE until the changes can be verified in the staging environment.
+
+        Thanks!
+        ```
+        
+3. Then click **Submit** and wait for the email to arrive.
+4. Once the email arrives, navigate to the VSO work item and add your modified HXT file to the task.
+5. Don't forget to click **Save** after you attach your HXT file.    
+     
+
+## <h2 id="s65"> 16. Ready. Set. Go. Merge your content into MASTER & LIVE!</a>
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
 
 **IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
@@ -605,11 +634,11 @@ Finally, push your local master up to the master on origin.
 
 ###Merging into the LIVE branch
 
-## <h2 id="s17"/> 18. Push ProdRequest to LIVE</a>
+## <h2 id="s17"/> 17. Push ProdRequest to LIVE</a>
 
-## <h2 id="s13"/> 19. Submit redirect request to MSDN team</a>
+## <h2 id="s13"/> 18. Submit redirect request to MSDN team</a>
 
-## <h2 id="s20"/> 20. Review changes on LIVE environment</a>
+## <h2 id="s20"/> 19. Review changes on LIVE environment</a>
 
-## <h2 id="s15"/> 21. Move old WDCML content to Source Depot Archive folder</a>
+## <h2 id="s15"/> 20. Move old WDCML content to Source Depot Archive folder</a>
 
