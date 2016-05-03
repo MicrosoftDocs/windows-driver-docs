@@ -10,18 +10,22 @@ This content is to help writers migrate the driver documentation (the conceptual
 6. [Create working branch in windows-driver-docs-pr](#s5)
 7. [Add OP content to the working branch](#s6)
 8. [Review your branch on MSDNStage](#s61)
-9. [Make revisions to your working branch](#s66) <-- How to update OP content
-10. [Build a .CSV file for redirecting old topics to OP ](#s7)
-11. [Create new WDCML parent topic in HW_NODES](#s8)
-12. [Update WDCML TOC to show only reference topics](#s9)
-13. [Update Dev Center HXT file for new OP and REF](#s10)  
-14. [Prepare for deployment (timing!)](#s12)
-15. [Submit ProdRequest to MSDNSTAGE & review](#s16)
-16. [Ready. Set. Go. Merge your content into MASTER & LIVE!](#s65)
-17. [Push ProdRequest to LIVE](#s17)
-18. [Submit redirect request to MSDN team](#s13)
-19. [Review changes on LIVE environment](#s20)
-20. [Move old WDCML content to Source Depot Archive folder](#s15)
+9. [Make revisions to your working branch](#s66) 
+10. [Finishing touches: Run clean-up script and set author](#clean)
+11. [Finishing touches: Add project to WDK TOC \(in OP\)](#toc)
+12. [Push changes back up to ORIGIN](#pushing)
+13. [Build a .CSV file for redirecting old topics to OP ](#s7)
+14. [Create new WDCML parent topic in HW_NODES](#s8)
+15. [Update WDCML TOC to show only reference topics](#s9)
+16. [Update Dev Center HXT file for new OP and REF](#s10)  
+17. [**Pause and prepare for deployment (timing!)**](#s12)  
+18. [Submit ProdRequest to MSDNSTAGE & review](#s16)  
+19. [Ready. Set. Go. Merge your content into MASTER & LIVE!](#s65)  
+20. [Push ProdRequest to LIVE](#s17)  
+21. [Submit redirect request to MSDN team](#s13)  
+22. [Review changes on LIVE environment](#s20)  
+23. [Move old WDCML content to Source Depot Archive folder](#s15)  
+24. [Remove working branch from local and origin](#removeworking)  
 
 
 ## <h2 id="s1"> 1. Get your Git account and tools set up</a>
@@ -382,8 +386,74 @@ Commits are the units of change you can push up to origin. Once you're done maki
         C:\myrepo\windows-driver-docs-pr [working-branch]>git add .
         C:\myrepo\windows-driver-docs-pr [working-branch]>git commit -m 'Your commit description here'
 
+###  <h2 id="clean"> 10. Finishing touches: Run clean-up script and set author</a>
+Now is a great time to perform a few additional clean up steps...
 
-### Pushing changes back up to origin
+The WDCML conversion does not convert the SeeAlso section (named Related links in OP) as you might expect. There is paragraph spacing between the links and no differentation between those links and the "Send feedback to Microsoft..." link. The **mdRelatedLinksProjectCleaner.ps1** script cleans that up and adds a horizontal rule before the Send Feedback link.
+
+If you don't want to be specified as the original author of the topics, you can run **mdAuthorProjectSetter.ps1** to automatically add *windows-driver-content* (the team GitHub account) as the author of all topics in the folder.
+
+I'll write more documentation about these scripts later. But for now, follow these steps to run them on your project folder:
+
+1. Create a folder dedicated to your PowerShell scripts. For now, we’ll call that the PS folder.  
+
+2.	Make a copy of your project folder to somewhere **outside** your repository (then you can compare changes later)  
+
+3.	Copy all four PowerShell scripts there:  
+
+        * **mdRelatedLinksProjectCleaner.ps1** : Cleans up the SeeAlsos for **all** topics in a folder
+        * **mdRelatedLinksCleaner.ps1** : Cleans up the SeeAlsos in only **one** topic (called by the other)
+        * **mdAuthorProjectSetter.ps1** : Sets the author for **all** topics in a folder
+        * **mdAuthorSetter.ps1** : Sets the author in only **one** topic (called by the other)
+
+4.	Run `get-executionpolicy`  
+
+5.	If it returns `unrestricted`, skip to step 6.  
+
+6.	Re-open Powershell as an Administrator and run `set-executionpolicy unrestricted`  
+
+7.	Open Windows explorer and navigate to your local OP project folder in your repository (for example c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi)  
+
+8.	Copy the path from the address bar  
+
+9.	In PowerShell, navigate to your PS folder  
+
+        **Tip** : In Windows Explorer, if you have the PS folder open there, you can select **File > Open Windows PowerShell**  
+
+10.	At the prompt, run the following (examples include prompt, put your path in quotes):  
+
+        **Important : Make sure your project folder is in the path. If it’s higher, you may end up running it on all MD files in the repository.**
+
+            x:\ps>.\mdRelatedLinksProjectCleaner.ps1 "c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi"
+            x:\ps>.\mdAuthorProjectSetter.ps1 "c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi" 
+
+11.	(optional) compare file changes with the folder you created in Step #2.  
+
+12. Add and commit your changes and described in the previous step. Indicate that you ran the cleanup and author scripts.
+
+13.	Finally, do a local build and make sure it looks as desired.  
+ 
+###  <h2 id="toc"> 11. Finishing touches: Add project to WDK TOC (in OP)</a>
+The OP driver documentation, the Windows Driver Kit (WDK) topic, resides here:
+
+[https://msdn.microsoft.com/en-us/windows/hardware/drivers](https://msdn.microsoft.com/en-us/windows/hardware/drivers)
+
+To make your project appear in the TOC, you need to add it to the TOC.md file located at the root of your directory:
+
+        C:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\TOC.md
+        
+The following shows the TOC after adding the bringup and ACPI projects. This TOC will  evolve over time as we add projects - it doesn't need to match the [WDCML TOC](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767).
+
+    # [Windows Driver Kit documentation](index.md)
+    # [Bring up guide](bringup/)
+    # [Developing, Testing, and Deploying Drivers](develop/)
+    # [Windows Driver Frameworks](wdf/)
+    # [Device and Driver Technologies](device-and-driver-technologies.md)
+    ## [ACPI](acpi/)
+    ## [NFC devices](nfc/)
+
+
+### <h2 id="pushing"> 12. Pushing changes back up to ORIGIN</a>
 To push changes back up to origin, follow the steps described earlier. 
 
 **Note** : Depending on the extent of the changes, you may choose *not* do a local build beforehand. 
@@ -409,7 +479,7 @@ To push changes back up to origin, follow the steps described earlier.
         C:\myrepo\windows-driver-docs-pr [working-branch]>git push -u origin working-branch
 
 
-## <h2 id="s7"> 10. Build a .CSV file for redirecting old topics to OP</a>
+## <h2 id="s7"> 13. Build a .CSV file for redirecting old topics to OP</a>
 Currently Ted is handling this. He'll soon add instructions here that describe how you can do it yourself. Until then, send Ted your XTOC file for the OP conversion and any files you want to be removed (the XTOC files we discussed earlier: **projectname-OP.xtoc** and **XX-ToBeRemoved.xtoc**).
 
 Don't forget to change the target URL of the top topic to point to index.md. Any script output will likely include the original MD file name.
@@ -417,7 +487,7 @@ Don't forget to change the target URL of the top topic to point to index.md. Any
 Wait until you go to publish all the changes to LIVE before you (submit the redirect request to MSDN (step 17 below)](#s13).
 
 
-## <h2 id="s8"> 11. Create a new WDCML parent topic in HW_NODES</a>
+## <h2 id="s8"> 14. Create a new WDCML parent topic in HW_NODES</a>
 **\[Note that this only applies to projects that are being split up - seperating conceptual from reference.\] **  
 
 To minimize the complextity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simlifying the site-wide HXT and making the ref project easier to maintain.
@@ -431,7 +501,7 @@ Because we can't use auto_keylinks, you may want to simply copy the contents fro
 ![New parent topic](images/NewParentTopic.png)
 
 
-## <h2 id="s9"> 12. Update WDCML TOC to show only reference topics</a>
+## <h2 id="s9"> 15. Update WDCML TOC to show only reference topics</a>
 Now that you have OP content and a new WDCML parent topic, the next step is to make your WDCML project **reference only**. If you've already created your projectname-REF.xtoc file, all you need to do is:
 
 1. **Check out** your projectname.xtoc file
@@ -443,7 +513,7 @@ Now that you have OP content and a new WDCML parent topic, the next step is to m
 3. **Check in** your projectname.xtoc file
 
 
-## <h2 id="s10"> 13. Update Dev Center HXT file for new OP and REF</a>
+## <h2 id="s10"> 16. Update Dev Center HXT file for new OP and REF</a>
 As mentioned earlier, your project's TOC is no longer defined exclusively by the WDCML XTOC file - after the migration, that only defines the TOC for the reference content. To get the Dev Center TOC to include the OP node, you'll need to update the site-wide HXT file for the Hardware Dev Center. 
 
 **NOTE** : You won't actually update the site-wide HXT file. Instead, you'll issue a prod request to have it updated. That's discussed later, when you [prepare for deployment](#s12). 
@@ -513,7 +583,7 @@ To prepare a new Dev Center HXT file:
 
 10. **Compare your revised HXT with the original in BuildX**. It's a good idea to confirm that they only changes are the ones you ***intended*** to make. 
 
-## <h2 id="s12"> 14. Prepare for deployment (timing!)</a>
+## <h2 id="s12"> 17. Prepare for deployment (timing!)</a>
 Before you continue, make sure you have the following items compeleted and ready to go...
 
 ###Pre-deployment checklist:
@@ -548,7 +618,7 @@ The process from this point on looks like this:
 7. **Move old WDCML to the Archive folder in Source Depot**
 
 
-## <h2 id="s65"> 15. Submit ProdRequest to MSDNSTAGE & review</a>
+## <h2 id="s65"> 18. Submit ProdRequest to MSDNSTAGE & review</a>
 The first order of business is testing the new TOC changes on MSDNStage. We don't want to move the OP content in the MASTER branch just yet because we don't know how long it will take to get assistance from the production team.
 
 ###How to submit a ProdRequest for MSDNSTAGE:
@@ -580,7 +650,7 @@ The first order of business is testing the new TOC changes on MSDNStage. We don'
 5. Don't forget to click **Save** after you attach your HXT file.    
      
 
-## <h2 id="s65"> 16. Ready. Set. Go. Merge your content into MASTER & LIVE!</a>
+## <h2 id="s65"> 19. Ready. Set. Go. Merge your content into MASTER & LIVE!</a>
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
 
 **IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
@@ -632,13 +702,15 @@ Finally, push your local master up to the master on origin.
 
 ###Review your content on MSDNSTAGE (without the branch in the URL)
 
+
 ###Merging into the LIVE branch
 
-## <h2 id="s17"/> 17. Push ProdRequest to LIVE</a>
+## <h2 id="s17"/> 20. Push ProdRequest to LIVE</a>
 
-## <h2 id="s13"/> 18. Submit redirect request to MSDN team</a>
+## <h2 id="s13"/> 21. Submit redirect request to MSDN team</a>
 
-## <h2 id="s20"/> 19. Review changes on LIVE environment</a>
+## <h2 id="s20"/> 22. Review changes on LIVE environment</a>
 
-## <h2 id="s15"/> 20. Move old WDCML content to Source Depot Archive folder</a>
+## <h2 id="s15"/> 23. Move old WDCML content to Source Depot Archive folder</a>
 
+## <h2 id="s15"/> 24. Remove working branch from local and origin</a>
