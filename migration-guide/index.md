@@ -401,10 +401,10 @@ I'll write more documentation about these scripts later. But for now, follow the
 
 3.	Copy all four PowerShell scripts there:  
 
-        * **mdRelatedLinksProjectCleaner.ps1** : Cleans up the SeeAlsos for **all** topics in a folder
-        * **mdRelatedLinksCleaner.ps1** : Cleans up the SeeAlsos in only **one** topic (called by the other)
-        * **mdAuthorProjectSetter.ps1** : Sets the author for **all** topics in a folder
-        * **mdAuthorSetter.ps1** : Sets the author in only **one** topic (called by the other)
+    * **mdRelatedLinksProjectCleaner.ps1** : Cleans up the SeeAlsos for **all** topics in a folder
+    * **mdRelatedLinksCleaner.ps1** : Cleans up the SeeAlsos in only **one** topic (called by the other)
+    * **mdAuthorProjectSetter.ps1** : Sets the author for **all** topics in a folder
+    * **mdAuthorSetter.ps1** : Sets the author in only **one** topic (called by the other)
 
 4.	Run `get-executionpolicy`  
 
@@ -418,11 +418,11 @@ I'll write more documentation about these scripts later. But for now, follow the
 
 9.	In PowerShell, navigate to your PS folder  
 
-        **Tip** : In Windows Explorer, if you have the PS folder open there, you can select **File > Open Windows PowerShell**  
+    **Tip** : In Windows Explorer, if you have the PS folder open there, you can select **File > Open Windows PowerShell**  
 
 10.	At the prompt, run the following (examples include prompt, put your path in quotes):  
 
-        **Important : Make sure your project folder is in the path. If it’s higher, you may end up running it on all MD files in the repository.**
+    **Important : Make sure your project folder is in the path. If it’s higher, you may end up running it on all MD files in the repository.**
 
             x:\ps>.\mdRelatedLinksProjectCleaner.ps1 "c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi"
             x:\ps>.\mdAuthorProjectSetter.ps1 "c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi" 
@@ -452,6 +452,7 @@ The following shows the TOC after adding the bringup and ACPI projects. This TOC
     ## [ACPI](acpi/)
     ## [NFC devices](nfc/)
 
+When that's finished, don't forget to commit the changes.
 
 ### <h2 id="pushing"> 12. Pushing changes back up to ORIGIN</a>
 To push changes back up to origin, follow the steps described earlier. 
