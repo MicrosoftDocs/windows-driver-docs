@@ -1,5 +1,6 @@
 ---
 title: ACPI design guide
+author: windows-driver-content
 description: This section describes how device drivers can interface an Advanced Configuration and Power Interface (ACPI) device. ACPI devices are defined by the Advanced Configuration and Power Interface (ACPI) Specification.
 MS-HAID:
 - 'acpidg\_14207b7e-5e6a-4e42-ae79-a3b78643eb1e.xml'
