@@ -48,9 +48,13 @@ You'll want to make sure you have **GitHub set up**, install **Visual Studio Cod
 
 6. Install GIT credential manager: [Download/run the EXE file here](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.2.2)
 
-Set up your local environment variables. Add paths for:  
-* Pandoc.exe (it's probably at C:\Users\yourUserName\AppData\Local\Pandoc)
-* The con2md conversion tool (it's under BuildX\Cmd)
+7. Set up your local environment variables. Add paths for:  
+    * Pandoc.exe (it's probably at C:\Users\yourUserName\AppData\Local\Pandoc)
+    * The con2md conversion tool (it's under BuildX\Cmd)
+    
+   Here's an example of what I set up. Note that my drives are different; I don't have a C drive.
+    
+   ![Paths example](images/PathsExample.png)
 
 So that you can run the tools as intended:
 * Got to IDWEB and become a member of the **MSDN Reporting** security group
