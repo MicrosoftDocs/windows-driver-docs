@@ -34,12 +34,19 @@ This content is to help writers migrate the driver documentation (the conceptual
 
 You'll want to make sure you have **GitHub set up**, install **Visual Studio Code**, and get **PowerShell** working with Git too. The last two are options, but those tools will be used throughout this topic in examples. 
 
-* Install Visual Studio Code: [Setting up Visual Studio Code](https://code.visualstudio.com/docs/editor/setup)  
-* Install PSGET: [http://psget.net/](http://psget.net/)
-* Install GIT (the local tool): [https://git-scm.com/](https://git-scm.com/)
-* Install POSH GIT: [https://github.com/dahlbyk/posh-git](https://github.com/dahlbyk/posh-git)
-* Install PANDOC.exe: [https://github.com/jgm/pandoc/releases/tag/1.14.0.1](https://github.com/jgm/pandoc/releases/tag/1.14.0.1)
-* Install GIT credential manager: [https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.2.2](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.2.2)
+1. Install Visual Studio Code: [Download Visual Studio Code](https://go.microsoft.com/fwlink/?LinkID=534107)  
+  
+2. Install PSGET: Open PowerShell and execute the following...  
+
+        (new-object Net.WebClient).DownloadString("http://psget.net/GetPsGet.ps1") | iex
+3. Install GIT (the local tool): [https://git-scm.com/downloads](https://git-scm.com/downloads)
+
+4. Install POSH GIT: Open PowerShell and execute the following...  
+
+        Install-Module posh-git        
+5. Install PANDOC.exe: [Download/run the MSI file here](https://github.com/jgm/pandoc/releases/tag/1.14.0.1)
+
+6. Install GIT credential manager: [Download/run the EXE file here](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.2.2)
 
 Set up your local environment variables. Add paths for:  
 * Pandoc.exe (it's probably at C:\Users\yourUserName\AppData\Local\Pandoc)
