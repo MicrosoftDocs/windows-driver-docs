@@ -633,7 +633,7 @@ The process from this point on looks like this:
 8. **Move old WDCML to the Archive folder in Source Depot**
 
 
-## <h2 id="s65"> 18. Submit ProdRequest to MSDNSTAGE & review</a>
+## <h2 id="s16"> 18. Submit ProdRequest to MSDNSTAGE & review</a>
 The first order of business is testing the new TOC changes on MSDNStage. We don't want to move the OP content in the MASTER branch just yet because we don't know how long it will take to get assistance from the production team.
 
 **BEFORE YOU PROCEED** : Double check if anyone else on the team is about to publish their WDCML-to-OP migration. Group projects into the same ProdRequest if possible (instructions below). 
