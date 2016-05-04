@@ -1,4 +1,4 @@
-# WDCML migration guide for driver documentation
+# For Writers: WDCML to OP migration guide for driver documentation
 
 This content is to help writers migrate the driver documentation (the conceptual portion) over to the open publishing platform. At a high level, migration consists of these steps:
 
@@ -12,7 +12,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 8. [Review your branch on MSDNStage](#s61)
 9. [Make revisions to your working branch](#s66) 
 10. [Finishing touches: Run clean-up script and set author](#clean)
-11. [Finishing touches: Add project to WDK TOC \(in OP\)](#toc)
+11. [Finishing touches: Add your project to the WDK TOC \(in OP\)](#toc)
 12. [Push changes back up to ORIGIN](#pushing)
 13. [Build a .CSV file for redirecting old topics to OP ](#s7)
 14. [Create new WDCML parent topic in HW_NODES](#s8)
@@ -20,19 +20,20 @@ This content is to help writers migrate the driver documentation (the conceptual
 16. [Update Dev Center HXT file for new OP and REF](#s10)  
 17. [**Pause and prepare for deployment (timing!)**](#s12)  
 18. [Submit ProdRequest to MSDNSTAGE & review](#s16)  
-19. [Ready. Set. Go. Merge your content into MASTER & LIVE!](#s65)  
-20. [Push ProdRequest to LIVE](#s17)  
-21. [Submit redirect request to MSDN team](#s13)  
-22. [Review changes on LIVE environment](#s20)  
-23. [Move old WDCML content to Source Depot Archive folder](#s15)  
-24. [Remove working branch from local and origin](#removeworking)  
+19. [Ready. Set. Go. Merge your content into the MASTER branch!](#s65)  
+20. [Create a pull request to the LIVE branch](#pull)
+21. [Have another writer review & approve the pull to LIVE](#reviewpull)
+22. [Update your ProdRequest, push to LIVE](#s17)  
+23. [Submit redirect request to MSDN team](#s13)  
+24. [Review changes on LIVE environment](#s20)  
+25. [Move old WDCML content to Source Depot Archive folder](#s15)  
+26. [Remove working branch from local and origin](#removeworking)  
 
 
 ## <h2 id="s1"> 1. Get your Git account and tools set up</a>
 
 You'll want to make sure you have **GitHub set up**, install **Visual Studio Code**, and get **PowerShell** working with Git too. The last two are options, but those tools will be used throughout this topic in examples. 
 
-* Set up GitHub: [Install and set up tools for authoring in GitHub](https://github.com/Microsoft/windows-driver-docs-pr/blob/master/contributor-guide/tools-and-setup.md)    
 * Install Visual Studio Code: [Setting up Visual Studio Code](https://code.visualstudio.com/docs/editor/setup)  
 * Install PSGET: [http://psget.net/](http://psget.net/)
 * Install GIT (the local tool): [https://git-scm.com/](https://git-scm.com/)
@@ -74,7 +75,7 @@ Once the content is split up into those three new XTOC files, they can be used t
 
 2. No DDI reference content is migrated to OP. 
 
-3. As many low-value "orientation" (list of links) topics are removed.  See the next section for tips on cleaning up your IA.
+3. As many low-value "orientation" (list of links) topics are removed.  In a couple of sections, see the for tips on cleaning up your IA.
 
 ### Content architecture
 While refactoring your project, it's helpful to consider the finished architecture. Because we're splitting conceptual and reference across two different platforms, you'll need to [edit the site-wide Dev Center HXT](#s9) and [create a new WDCML parent topic](#s8) (described later). With those chanages, you'll want to make sure the new topic titles mention the technology, rather than simply say "Design guide" or "Reference".
@@ -412,7 +413,7 @@ I'll write more documentation about these scripts later. But for now, follow the
 
 6.	Re-open Powershell as an Administrator and run `set-executionpolicy unrestricted`  
 
-7.	Open Windows explorer and navigate to your local OP project folder in your repository (for example c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi)  
+7.	Open Windows explorer and navigate to your local OP **project folder** in your repository (for example c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\**acpi**)  
 
 8.	Copy the path from the address bar  
 
@@ -433,7 +434,7 @@ I'll write more documentation about these scripts later. But for now, follow the
 
 13.	Finally, do a local build and make sure it looks as desired.  
  
-###  <h2 id="toc"> 11. Finishing touches: Add project to WDK TOC (in OP)</a>
+###  <h2 id="toc"> 11. Finishing touches: Add your project to the WDK TOC (in OP)</a>
 The OP driver documentation, the Windows Driver Kit (WDK) topic, resides here:
 
 [https://msdn.microsoft.com/en-us/windows/hardware/drivers](https://msdn.microsoft.com/en-us/windows/hardware/drivers)
@@ -489,7 +490,7 @@ Wait until you go to publish all the changes to LIVE before you (submit the redi
 
 
 ## <h2 id="s8"> 14. Create a new WDCML parent topic in HW_NODES</a>
-**\[Note that this only applies to projects that are being split up - seperating conceptual from reference.\] **  
+***Note that this only applies to projects that are being split up - seperating conceptual from reference.***  
 
 To minimize the complextity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simlifying the site-wide HXT and making the ref project easier to maintain.
 
@@ -610,7 +611,7 @@ The process from this point on looks like this:
     2. Review your content on MSDN Stage (no branch specifier needed in the URL)
     3. Merge your changes in *MASTER* to *LIVE*!
     
-4. **Update your Prodrequest - ask to push the changes to LIVE**
+4. **Update your Prodrequest - ask them to push the changes to LIVE**
 
 5. **Submit redirects CSV to the MSDN team**
 
@@ -651,7 +652,7 @@ The first order of business is testing the new TOC changes on MSDNStage. We don'
 5. Don't forget to click **Save** after you attach your HXT file.    
      
 
-## <h2 id="s65"> 19. Ready. Set. Go. Merge your content into MASTER & LIVE!</a>
+## <h2 id="s65"> 19. Ready. Set. Go. Merge your content into MASTER branch!</a>
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
 
 **IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
@@ -701,17 +702,44 @@ Finally, push your local master up to the master on origin.
 
 ![Step 9: ](images/s9.png)  
 
-###Review your content on MSDNSTAGE (without the branch in the URL)
+###Review your content on MSDNSTAGE (the MASTER branch)
+You can find your content here (I've added the branch qualifier in case your browser is still trying to send you to your working branch).
+
+[https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/index?branch=master](https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/index?branch=master)
+
+If you forgot to add your project to the TOC, see [Add your project to the WDK TOC \(in OP\)](#toc).
 
 
-###Merging into the LIVE branch
+## <h2 id="pull"/> 20. Create a pull request to the LIVE branch</a>
+Due to the significance of the LIVE branch, we use a different process to move changes into it. Rather than merge locally, we're going to do a pull request.
 
-## <h2 id="s17"/> 20. Push ProdRequest to LIVE</a>
+1. Go to GitHub and **compare the LIVE branch to the MASTER branch**:  
 
-## <h2 id="s13"/> 21. Submit redirect request to MSDN team</a>
+    [https://github.com/Microsoft/windows-driver-docs-pr/compare/live...master?expand=1](https://github.com/Microsoft/windows-driver-docs-pr/compare/live...master?expand=1)
 
-## <h2 id="s20"/> 22. Review changes on LIVE environment</a>
+    You should see the **Open a pull request** page, and a list of all the commits corresponding to the unmerged changes. If not, your changes may not have been sent to origin/master.
 
-## <h2 id="s15"/> 23. Move old WDCML content to Source Depot Archive folder</a>
+2. Add a title such as:  
 
-## <h2 id="s15"/> 24. Remove working branch from local and origin</a>
+        Publishing projectname to OP
+
+3. Add a message that includes our secret team alias, add the ProdRequest link if that handy too:
+
+        Hi @Microsoft/wdg-driver-docs, We're publishing the new projectname folder to LIVE today via this Pull Request. We're also publishing the corresponding WDCML projects later this afternoon too (projectname, hw_nodes, and the hardware_dev_center.hxt file). That is being tracked by this ProdRequest: https://microsoft.visualstudio.com/DefaultCollection/OS/_workitems?_a=edit&id=TBD
+    
+  Here's an example:  
+  
+  ![Pull request example](images/PullRequestExample.png)
+
+
+## <h2 id="reviewpull"/> 21. Have another writer review & approve the pull to LIVE</a>
+
+## <h2 id="s17"/> 22. Update your ProdRequest, push to LIVE</a>
+
+## <h2 id="s13"/> 23. Submit redirect request to MSDN team</a>
+
+## <h2 id="s20"/> 24. Review changes on LIVE environment</a>
+
+## <h2 id="s15"/> 25. Move old WDCML content to Source Depot Archive folder</a>
+
+## <h2 id="s15"/> 26. Remove working branch from local and origin</a>
