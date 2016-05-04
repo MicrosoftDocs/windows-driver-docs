@@ -734,16 +734,34 @@ Due to the significance of the LIVE branch, we use a different process to move c
 
         Publishing projectname to OP
 
-3. Add a message that includes our secret team alias, add the ProdRequest link if that handy too:
+3. Add a message that includes our secret team alias, **@Microsoft/wdg-driver-docs**, and add the ProdRequest link if that handy too:
 
         Hi @Microsoft/wdg-driver-docs, We're publishing the new projectname folder to LIVE today via this Pull Request. We're also publishing the corresponding WDCML projects later this afternoon too (projectname, hw_nodes, and the hardware_dev_center.hxt file). That is being tracked by this ProdRequest: https://microsoft.visualstudio.com/DefaultCollection/OS/_workitems?_a=edit&id=TBD
-    
+  **Important** : The goal of this step is to let others know that content in the MASTER branch is about to be published LIVE. Using **@Microsoft/wdg-driver-docs** in the message triggers an email to everyone on the team. It's possible that someone accidently put changes in MASTER that they **don't** want to go out - they may be in the process of trying to revert the changes. This warms them and gives them a chance to stop the Pull from happening. 
+      
   Here's an example:  
   
   ![Pull request example](images/PullRequestExample.png)
+  
 
 
 ## <h2 id="reviewpull"/> 21. Have another writer review & approve the pull to LIVE</a>
+The aim of this step is to get another set of eyes on what's being published. 
+
+1. Navigate to this page to see all open pull requests in the repo:
+
+    [https://github.com/Microsoft/windows-driver-docs-pr/pulls](https://github.com/Microsoft/windows-driver-docs-pr/pulls)
+
+2. Review the pull request and take a look at the specified commits (to make sure they make sense)
+
+3. Double check email to see if anyone on the team has objected to completing the pull request
+
+4. Once it looks ready, click the **Merge** button
+
+5. Once the build completes, review the LIVE Dev Center and make sure the content published successfully:
+
+    [https://msdn.microsoft.com/en-us/windows/hardware/drivers/index](https://msdn.microsoft.com/en-us/windows/hardware/drivers/index)
+
 
 ## <h2 id="s17"/> 22. Update your ProdRequest, push to LIVE</a>
 
