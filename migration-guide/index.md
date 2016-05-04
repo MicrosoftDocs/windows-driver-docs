@@ -776,11 +776,43 @@ Then go to the Dev Center and make sure your WDCML & HXT changes appear:
 **Develop node** --> [https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767)
 
 ## <h2 id="s13"/> 23. Submit redirect request to MSDN team</a>
+Use MSDN Help to submit the redirect request.
+
+1. Go to [http://msdnhelp](http://msdnhelp)  
+
+2. Click **Library Support**
+
+3. In the form, fill out these values:  
+
+   * Set **Work request title** something to the effect of..  
+    
+            WDCML redirect request for projectname OP migration 
+   * **Request Type** = Redirect  
+   
+   * **Priority** = 1  
+   
+   * Set **Description** to something like..  
+   
+        	Three projects were recently migrated to OP and published live. Please remove the WDCML topics at the specified GUIDs and redirect requests to the specified URLs. 
+	
+	        Please expedite these redirects. Until these redirects are performed, our site-wide TOC will not be working as intended. 
+	
+            Thank you! 
+
+4. Then click **Submit**  
+
+5. On the following page, drag your CSV file (created earlier) from Windows Explorer onto the web page where you can add the attacment.  
+
+    ![Attach CSV](images/AttachCSV.png)
+    
+6. Click **Done** to add the CSV attachment
+
 
 
 ## <h2 id="s20"/> 24. Review changes on LIVE environment</a>
 
 
 ## <h2 id="s15"/> 25. Move old WDCML content to Source Depot Archive folder</a>
+
 
 ## <h2 id="s15"/> 26. Remove working branch from local and origin</a>
