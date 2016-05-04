@@ -611,31 +611,36 @@ Before you continue, make sure you have the following items compeleted and ready
 ###Timing
 The process from this point on looks like this:  
 
-1. **Submit Prodreqest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
+1. **BEFORE YOU PROCEED** : See if anyone else on the team is about ready to publish their WDCML-to-OP migration. Ideally, we should bundle our production requests so we don't have conflicting edits to the Dev Center HXT file. 
 
-2. **Make sure TOC works correctly**:  
+2. **Submit Prodreqest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
+
+3. **Make sure TOC works correctly**   
     * Technology link in the TOC points to new parent in HW_NODES  
     * Design guide link points to single-topic target (the top conceptual topic that will redirect to OP)  
     
-3.  **Publish OP content to the world!**  
+4.  **Publish OP content to the world!**  
     1. First merge your *working-branch* to *MASTER*  
     2. Review your content on MSDN Stage (no branch specifier needed in the URL)
     3. Merge your changes in *MASTER* to *LIVE*!
     
-4. **Update your Prodrequest - ask them to push the changes to LIVE**
+5. **Update your Prodrequest - ask them to push the changes to LIVE**
 
-5. **Submit redirects CSV to the MSDN team**
+6. **Submit redirects CSV to the MSDN team**
 
-6. **Review the changes on the LIVE environment**
+7. **Review the changes on the LIVE environment**
 
-7. **Move old WDCML to the Archive folder in Source Depot**
+8. **Move old WDCML to the Archive folder in Source Depot**
 
 
 ## <h2 id="s65"> 18. Submit ProdRequest to MSDNSTAGE & review</a>
 The first order of business is testing the new TOC changes on MSDNStage. We don't want to move the OP content in the MASTER branch just yet because we don't know how long it will take to get assistance from the production team.
 
+**BEFORE YOU PROCEED** : Double check if anyone else on the team is about to publish their WDCML-to-OP migration. Group projects into the same ProdRequest if possible (instructions below). 
+
 ###How to submit a ProdRequest for MSDNSTAGE:
 1. Open your browser to [http://prodrequest](http://prodrequest)
+
 2. Fill out the web form as follows:
     * Click **New request**
     * What type of request? = **Production services**
@@ -713,7 +718,7 @@ Finally, push your local master up to the master on origin.
 
 ![Step 9: ](images/s9.png)  
 
-###Review your content on MSDNSTAGE (the MASTER branch)
+###Review your OP content on MSDNSTAGE (the MASTER branch)
 You can find your content here (I've added the branch qualifier in case your browser is still trying to send you to your working branch).
 
 [https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/index?branch=master](https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/index?branch=master)
@@ -764,10 +769,17 @@ The aim of this step is to get another set of eyes on what's being published.
 
 
 ## <h2 id="s17"/> 22. Update your ProdRequest, push to LIVE</a>
+As soon as you see OP content appear on the LIVE Dev Center, you can proceed with pushing your WDCML changes to LIVE. Reply to the email thread and the WDG FE Publishing team know they can promote the changes to LIVE. 
+
+Then go to the Dev Center and make sure your WDCML & HXT changes appear:
+
+**Develop node** --> [https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767)
 
 ## <h2 id="s13"/> 23. Submit redirect request to MSDN team</a>
 
+
 ## <h2 id="s20"/> 24. Review changes on LIVE environment</a>
+
 
 ## <h2 id="s15"/> 25. Move old WDCML content to Source Depot Archive folder</a>
 
