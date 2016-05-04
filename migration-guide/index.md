@@ -26,8 +26,8 @@ This content is to help writers migrate the driver documentation (the conceptual
 22. [Update your ProdRequest, push to LIVE](#s17)  
 23. [Submit redirect request to MSDN team](#s13)  
 24. [Review changes on LIVE environment](#s20)  
-25. [Move old WDCML content to Source Depot Archive folder](#s15)  
-26. [Remove working branch from local and origin](#removeworking)  
+25. [Clean up: Move old WDCML content to Source Depot Archive folder](#s15)  
+26. [Clean up: Remove working branch from local and origin](#removeworking)  
 
 
 ## <h2 id="s1"> 1. Get your Git account and tools set up</a>
@@ -790,7 +790,7 @@ Next, immediately submit the redirect request to MSDN using MSDN Help:
    
    * Set **Description** to something like..  
    
-        	Three projects were recently migrated to OP and published live. Please remove the WDCML topics at the specified GUIDs and redirect requests to the specified URLs. 
+        	A project was recently migrated to OP and published live. Please remove the WDCML topics at the specified GUIDs and redirect requests to the specified URLs. 
 	
 	        Please expedite these redirects. Until these redirects are performed, our site-wide TOC will not be working as intended. 
 	
@@ -812,7 +812,39 @@ Finally, go to the Dev Center and make sure your WDCML & HXT changes appear:
 
 Note that it may take some time for the redirects to take effect across the various web servers. 
 
-## <h2 id="s15"/> 25. Move old WDCML content to Source Depot Archive folder</a>
+## <h2 id="s15"/> 25. Clean up: Move old WDCML content to Source Depot Archive folder</a>
 
 
-## <h2 id="s15"/> 26. Remove working branch from local and origin</a>
+## <h2 id="s15"/> 26. Clean up: Remove working branch from local and origin</a>
+Once all your changes have been merged into MASTER and LIVE, and you're finished with your working branch, please remove your working branch. You will remove it in two places, local and origin.
+
+Clean up the repository as follows...
+
+1. Navigate to a branch that is **NOT** your working branch.
+
+        C:\myrepo\windows-driver-docs-pr [working-branch]> git checkout master
+
+1. Confirm **working-branch** still exists on local and origin.   
+
+        C:\myrepo\windows-driver-docs-pr [master]> git remote show origin
+        
+1. To **remove your local branch**, use the **branch** command with the **-d** switch as follows (where *working-branch* is the name of your working branch):
+
+        C:\myrepo\windows-driver-docs-pr [master]> git branch -d working-branch
+
+1. Look again to make sure the **local working-branch** was removed. 
+
+        C:\myrepo\windows-driver-docs-pr [master]> git remote show origin
+        
+1. **BE VERY CAREFUL HERE** : Next delete your **remote working-branch** using the **push origin :** command. Make absolutely certain that you specify your working branch.  
+
+        C:\myrepo\windows-driver-docs-pr [master]> git push origin :working-branch
+
+1. Confirm **working-branch** was removed from origin.   
+
+        C:\myrepo\windows-driver-docs-pr [master]> git remote show origin
+        
+   **Note** : If others remove a branch, you will see that origin branch marked as stale. To clean up the results of your query, run: `git remote prune origin`
+   
+----------------
+##THE END
