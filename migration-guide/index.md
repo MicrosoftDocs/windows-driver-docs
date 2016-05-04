@@ -79,7 +79,7 @@ Once the content is split up into those three new XTOC files, they can be used t
 
 ![Migration components](images/MigrationComponents.png)
 
-...When all is done, the **projectname-REF.xtoc** file can be copied over top of the original **projectname.xtoc** file. You'll use the **projectname-OP.xtoc** file with **con2md.exe**, the OP conversion tool, to convert your content from WDCML to MD format. It will also create a new **TOC.md** file for you. Finally, you can use **XX-ToBeRemoved.xtoc** and **projectname-OP.xtoc** to create a redirects CSV file so that MSDN can remove those WDCML topics and redirect requests to the specified topics.
+...When all is done, the contents of the **projectname-REF.xtoc** file will replace the contents of the original **projectname.xtoc** file. You'll use the **projectname-OP.xtoc** file with **con2md.exe**, the OP conversion tool, to convert your content from WDCML to MD format. It will also create a new **TOC.md** file for you. Finally, you can use **XX-ToBeRemoved.xtoc** and **projectname-OP.xtoc** to create a redirects CSV file so that MSDN can remove those WDCML topics and redirect requests to the specified topics.
 
 ### Refactoring goals
 1. Both the OP and REF XTOCs can have **only a single topic at the root of the TOC**. Create a new WDCML topic if you need to. Note that there will be a new WDCML topic that's parent to the future OP and REF content.  
@@ -769,14 +769,11 @@ The aim of this step is to get another set of eyes on what's being published.
 
 
 ## <h2 id="s17"/> 22. Update your ProdRequest, push to LIVE</a>
-As soon as you see OP content appear on the LIVE Dev Center, you can proceed with pushing your WDCML changes to LIVE. Reply to the email thread and the WDG FE Publishing team know they can promote the changes to LIVE. 
+As soon as you see OP content appear on the LIVE Dev Center, you can proceed with pushing your WDCML changes to LIVE. Reply to the email thread and let the WDG FE Publishing team know they can promote the changes to LIVE. 
 
-Then go to the Dev Center and make sure your WDCML & HXT changes appear:
-
-**Develop node** --> [https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767)
 
 ## <h2 id="s13"/> 23. Submit redirect request to MSDN team</a>
-Use MSDN Help to submit the redirect request.
+Next, immediately submit the redirect request to MSDN using MSDN Help:
 
 1. Go to [http://msdnhelp](http://msdnhelp)  
 
@@ -808,9 +805,12 @@ Use MSDN Help to submit the redirect request.
 6. Click **Done** to add the CSV attachment
 
 
-
 ## <h2 id="s20"/> 24. Review changes on LIVE environment</a>
+Finally, go to the Dev Center and make sure your WDCML & HXT changes appear:
 
+**Develop node** --> [https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767)
+
+Note that it may take some time for the redirects to take effect across the various web servers. 
 
 ## <h2 id="s15"/> 25. Move old WDCML content to Source Depot Archive folder</a>
 
