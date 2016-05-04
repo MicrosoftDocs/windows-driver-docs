@@ -57,7 +57,7 @@ You'll want to make sure you have **GitHub set up**, install **Visual Studio Cod
    ![Paths example](images/PathsExample.png)
 
 So that you can run the tools as intended:
-* Got to IDWEB and become a member of the **MSDN Reporting** security group
+* Got to IDWEB and become a member of the **MSDN Reporting** security group (choose the **domain** that corresponds to your corporate credentials)
 * Make sure you've been granted writer permissions on [Open Source Hub](https://opensourcehub.microsoft.com) (*ask Ted*)
 
 
