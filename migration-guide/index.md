@@ -748,7 +748,7 @@ Due to the significance of the LIVE branch, we use a different process to move c
   
   ![Pull request example](images/PullRequestExample.png)
   
-
+4. Once the pull request is ready, click **Create pull request**
 
 ## <h2 id="reviewpull"/> 21. Have another writer review & approve the pull to LIVE</a>
 The aim of this step is to get another set of eyes on what's being published. 
