@@ -814,8 +814,13 @@ Note that it may take some time for the redirects to take effect across the vari
 
 ## <h2 id="s15"/> 25. Clean up: Move old WDCML content to Source Depot Archive folder</a>
 
+Now you need to use `sd integrate` and `sd delete` to move the WDCML files that you migrated to the SD archive:
 
-## <h2 id="s15"/> 26. Clean up: Remove working branch from local and origin</a>
+`//depot/DevDoc/archive/`
+
+If you'd prefer, please provide a pointer to your **projectname-OP.xtoc** to <tedhudek@microsoft.com>, who will be happy to do the archival operation on your behalf.
+
+## <h2 id="removeworking"/> 26. Clean up: Remove working branch from local and origin</a>
 Once all your changes have been merged into MASTER and LIVE, and you're finished with your working branch, please remove your working branch. You will remove it in two places, local and origin.
 
 Clean up the repository as follows...
