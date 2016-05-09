@@ -1,5 +1,6 @@
 ---
 title: Name Cache Management
+author: windows-driver-content
 description: Name Cache Management
 ms.assetid: 3e1b1419-320e-44e0-a6c2-823517cf07c7
 keywords: ["RDBSS WDK file systems , name cache", "Redirected Drive Buffering Subsystem WDK file systems , name cache", "NAME_CACHE structure", "names WDK RDBSS", "cache WDK RDBSS", "file not found messages WDK RDBSS", "name cache WDK RDBSS", "NAME_CACHE_CONTROL structure"]
@@ -84,8 +85,8 @@ The RDBSS name cache management routines include the following:
 
  
 
+
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[ifsk\ifsk]:%20Name%20Cache%20Management%20%20RELEASE:%20%285/9/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

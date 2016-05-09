@@ -1,5 +1,6 @@
 ---
 title: Network Redirector Design in Windows 2000
+author: windows-driver-content
 description: Network Redirector Design in Windows 2000
 ms.assetid: d5a78712-02ee-48f4-86b9-c294b41245a6
 keywords: ["network redirectors WDK , Windows 2000", "redirector drivers WDK , Windows 2000", "Redirected Drive Buffering Subsystem WDK file systems , Windows 2000", "RDBSS WDK file systems , Windows 2000", "buffering code WDK network redirectors", "kernel network redirectors WDK , Windows 2000"]
@@ -37,8 +38,8 @@ The RDBSS model was introduced with Windows 2000. This same model is also used 
 
  
 
+
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[ifsk\ifsk]:%20Network%20Redirector%20Design%20in%20Windows%202000%20%20RELEASE:%20%285/9/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

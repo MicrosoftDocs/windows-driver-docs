@@ -1,5 +1,6 @@
 ---
 title: Storage Volumes
+author: windows-driver-content
 description: Storage Volumes
 ms.assetid: 37b65bb6-7c62-47be-a16d-3813dc4c1259
 keywords: ["filter drivers WDK file system , storage volumes", "file system filter drivers WDK , storage volumes", "storage volumes WDK file system", "Mount Manager WDK file system", "storage device objects WDK file system", "volumes WDK file system , parameter blocks", "VPBs WDK file system", "volumes WDK file system , about storage volumes", "logical volumes WDK file system", "partitions WDK file system", "unique volume names WDK file system", "GUIDs WDK file system", "names WDK file systems", "Unique Volume Name", "Volume GUID"]
@@ -41,8 +42,8 @@ For more information about the interaction between storage drivers and the Mount
 
  
 
+
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[ifsk\ifsk]:%20Storage%20Volumes%20%20RELEASE:%20%285/9/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

@@ -1,5 +1,6 @@
 ---
 title: The RDBSS Driver and Library
+author: windows-driver-content
 description: The RDBSS Driver and Library
 ms.assetid: fb2d1939-7af5-474c-8247-e5d48b4bbed6
 keywords: ["network redirectors WDK , RDBSS", "redirector drivers WDK , RDBSS", "kernel network redirectors WDK , RDBSS", "RDBSS WDK file systems", "file system drivers WDK , RDBSS", "static libraries WDK file systems", "RDBSS WDK file systems , about RDBSS", "Redirected Drive Buffering Subsystem WDK file systems , about RDBSS", "mini-redirectors WDK , RDBSS", "structures WDK RDBSS", "data structures WDK RDBSS"]
@@ -75,8 +76,8 @@ The routines exported by RDBSS and the RDBSS macros defined to call these routin
 
  
 
+
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[ifsk\ifsk]:%20The%20RDBSS%20Driver%20and%20Library%20%20RELEASE:%20%285/9/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 
