@@ -1,0 +1,167 @@
+---
+title: Designing a Miniport Driver Callback Routine that Handles WMI Classes with Methods
+description: Designing a Miniport Driver Callback Routine that Handles WMI Classes with Methods
+ms.assetid: f5a0331a-1daa-4ef5-bf99-14b3a3393956
+keywords: ["WMI SRBs WDK storage , designing callback routines", "callback routines WDK WMI SRBs"]
+---
+
+# Designing a Miniport Driver Callback Routine that Handles WMI Classes with Methods
+
+
+## <span id="ddk_designing_a_miniport_driver_callback_routine_that_handles_wmi_clas"></span><span id="DDK_DESIGNING_A_MINIPORT_DRIVER_CALLBACK_ROUTINE_THAT_HANDLES_WMI_CLAS"></span>
+
+
+This section uses example WMI classes that contain WMI methods and describes what the corresponding miniport driver callback routine should look like. For more information about the miniport driver callback routine that executes WMI methods, see [**HwScsiWmiExecuteMethod**](https://msdn.microsoft.com/library/windows/hardware/ff557332).
+
+The following example WMI classes contain WMI methods:
+
+```
+class MSFC_HBAAdapterMethods
+{
+    [key] 
+    string InstanceName;
+    boolean Active;
+    [
+     Implemented,
+     WmiMethodId(1)
+    ]
+    void GetDiscoveredPortAttributes(
+            [in ] uint32 PortIndex,
+            [in ] uint32 DiscoveredPortIndex,
+            [out, HBA_STATUS_QUALIFIERS ] HBA_STATUS HBAStatus,
+            [out, HBAType("HBA_PORTATTRIBUTES") ] 
+                MSFC_HBAPortAttributesResults PortAttributes
+            );
+    [
+     Implemented,
+     WmiMethodId(2)
+    ]
+    void GetPortAttributesByWWN(
+            [in, HBAType("HBA_WWN")] uint8 wwn[8],
+            [out, HBA_STATUS_QUALIFIERS ] HBA_STATUS HBAStatus,
+          [out, HBAType("HBA_PORTATTRIBUTES") ] 
+                MSFC_HBAPortAttributesResults PortAttributes
+            );
+};
+class MSFC_HBAFCPInfo
+{
+    [key] 
+    string InstanceName;
+    boolean Active;
+    [
+     Implemented,
+     WmiMethodId(1)
+    ]
+    void GetFcpTargetMapping(
+            [in, HBAType("HBA_WWN")] uint8 HbaPortWWN[8],
+            [in ] uint32 InEntryCount,
+            [out, HBA_STATUS_QUALIFIERS ] HBA_STATUS HBAStatus,
+            [out] uint32 TotalEntryCount,
+            [out] uint32 OutEntryCount,
+            [out, WmiSizeIs("OutEntryCount")] HBAFCPScsiEntry  
+                 Entry[]
+            );
+};
+```
+
+The **MSFC\_HBAAdapterMethods** class contains two methods, **GetDiscoveredPortAttributes** and **GetPortAttributesByWWN**. The MSFC\_HBAFCPInfo class contains one method, **GetFcpTargetMapping**.
+
+When the SCSI Port WMI library dispatch routine calls your miniport driver's execute method callback routine, it passes in a *GuidIndex* value that identifies the WMI class, a *MethodId* value that identifies the method within the class, and an *InstanceIndex* value that identifies which of the potential multiple instances of the class to process. The callback routine should take the appropriate action for any given combination of class, method, and class instance.
+
+The following example shows how the execute method callback routine might handle the methods in the previous example.
+
+```
+HwScsiWmiExecuteMethod (
+    IN PVOID Context,
+    IN PSCSIWMI_REQUEST_CONTEXT DispatchContext,
+    IN ULONG GuidIndex,
+    IN ULONG InstanceIndex,
+    IN ULONG MethodId,
+    IN ULONG InBufferSize,
+    IN ULONG OutBufferSize,
+    IN OUT PUCHAR Buffer
+    )
+
+  switch(GuidIndex) { 
+    case MSFC_HBAAdapterMethodsGuidIndex:
+    {
+      switch(MethodId) {
+      case GetDiscoveredPortAttributes:
+        // handle method here 
+        Switch(InstanceIndex) {
+        case 1:
+          // handle instance 1
+          PGetDiscoveredPortAttributes_IN In;
+          PGetDiscoveredPortAttributes_OUT Out;
+          // note: input and output parameters use the same buffer
+          In = (PGetDiscoveredPortAttributes_IN)Buffer;
+          Out = (PGetDiscoveredPortAttributes_OUT)Buffer;
+          // put code for method here
+          break;
+        case 2:
+       // handle instance 2
+        default:
+          break;
+        }
+      case GetPortAttributesByWWN:
+        // handle method here 
+      default:
+        break;
+    }
+    case MSFC_HBAFCPInfoGuidIndex:
+    {
+      switch(MethodId) {
+      case GetFcpTargetMapping:
+        // handle method here 
+      default:
+        break;
+      }
+    }
+```
+
+The WMI tool suite (**mofcomp** and **wmimofck**) simplifies the task of writing this routine by automatically generating a binary type library and a header file that defines a symbolic constant for each WMI class GUID index and each method identifier. For more information about how to use these tools, see [Compiling a Driver's MOF File](https://msdn.microsoft.com/library/windows/hardware/ff542012) and [Using wmimofck.exe](https://msdn.microsoft.com/library/windows/hardware/ff565588).
+
+The **wmimofck** tool generates a .h file from the .bmf binary file generated by **mofcomp**. It forms the name of the symbolic constant for the class index by concatenating a suffix of "GuidIndex" to the name of the WMI class. For instance, with the **MSFC\_FibrePortHBAMethods** class, the tool will create a symbolic constant called **MSFC\_FibrePortHBAMethodsGuidIndex** that represents the GUID index for that class. In a similar manner, the tool will use the method name to form a symbolic constant that represents the method, but without adding any suffixes. The name of the symbolic constant for the method is simply the name of the method. In the example, the switch statement tests the value of the method identifier. Each case in the switch statement corresponds to a method name.
+
+The MOF syntax used to define a WMI class method resembles a routine; however, a WMI method is not a routine. When the **mofcomp** and **wmimofck** tools process a method definition in the MOF file, they generate two separate C language structure declarations for the method. One structure is for the parameters that are identified in the MOF file as input parameters by an "\[in\]" prefix, and another structure for the parameters that are identified as output parameters by an "\[out\]" prefix.
+
+The **wmimofck** tool forms the name of the structure that contains the method's input parameters by concatenating a suffix of "\_IN" to the name of the method. For instance, if the name of the method is **GetDiscoveredPortAttributes**, **wmimofck** will automatically generate a declaration for a structure named GetDiscoveredPortAttributes\_IN. Likewise, **wmimofck** generates a declaration for a structure named GetDiscoveredPortAttributes\_OUT that holds the output parameters of the method.
+
+The following code snippet shows how an execute method callback routine could validate the size of the input and output buffers for a method called **GetDiscoveredPortAttributes** in a class called **MSFC\_HBAPortMethods**:
+
+```
+case MSFC_HBAPortMethodsGuidIndex:
+  switch(MethodId) {
+    case GetDiscoveredPortAttributes:
+  {
+      BOOLEAN bInputBigEnough = (InBufferSize >= 
+              sizeof(GetDiscoveredPortAttributes_IN))
+      BOOLEAN bOutputBigEnough = (OutBufferSize >= 
+              sizeof(GetDiscoveredPortAttributes_OUT))
+      if (bInputBigEnough &amp;&amp; bOutputBigEngough) {
+        PGetDiscoveredPortAttributes_IN In;
+        PGetDiscoveredPortAttributes_OUT Out;
+
+        In = (PGetDiscoveredPortAttributes_IN)Buffer;
+         Out = (PGetDiscoveredPortAttributes_OUT)Buffer;
+        // 
+        // process method here
+      //
+        status = SRB_STATUS_SUCCESS;
+      } else {
+        status = SRB_STATUS_DATA_OVERRUN;
+      }
+    }
+```
+
+Before returning, your callback routine should call [**ScsiPortWmiPostProcess**](https://msdn.microsoft.com/library/windows/hardware/ff564796). This SCSI Port WMI library routine updates the request context with information, such as the status of the request and the size of the return data. For more information about the information that is stored in the request context, see [**SCSIWMI\_REQUEST\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff564946).
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[storage\storage]:%20Designing%20a%20Miniport%20Driver%20Callback%20Routine%20that%20Handles%20WMI%20Classes%20with%20Methods%20%20RELEASE:%20%285/9/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
