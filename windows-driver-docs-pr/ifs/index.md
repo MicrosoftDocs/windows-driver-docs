@@ -5,7 +5,7 @@ description: The file systems in Windows are implemented as file system drivers 
 ms.assetid: 62DE75F7-0211-4173-AF45-84B2DDFDC95C
 ---
 
-# Introduction to File System Filters
+# Installable file system driver design guide
 
 
 The file systems in Windows are implemented as file system drivers working above the storage system. Each of the file systems in Windows are designed to provide reliable data storage with varying features to meet the user’s requirements. A comparison of features for each of the standard file systems in Windows is shown in [File System Functionality Comparison](https://msdn.microsoft.com/library/windows/desktop/ee681827). New for Windows Server 2012 is ReFS. ReFS is a file system with scalable large volume support and the ability detect and correct data corruption on disk.
@@ -35,50 +35,15 @@ You can subscribe to the NTFSD newsgroup for details about developing file syste
 
 OSR's "Developing File Systems for Windows" seminar explores developing file systems and File Systems and File System Filter Drivers. See [Training for IFS Developers](http://go.microsoft.com/fwlink/p/?linkid=50692).
 
-## <span id="IFS_Plugfest_28"></span><span id="ifs_plugfest_28"></span><span id="IFS_PLUGFEST_28"></span>**IFS Plugfest 28**
+## In this section
+This design gude includes the following sections:  
 
-
-We are pleased to inform you that Installable File Systems (IFS) Plugfest 28 has been scheduled. Here are some preliminary event details:
-
-### <span id="When"></span><span id="when"></span><span id="WHEN"></span>When
-
-Monday, April 25<sup>th</sup> to Friday, April 29<sup>th</sup>, 2015.
-
-The event begins at 9am and ends at 6pm each day, except for Friday, when it ends at 3pm.
-
-### <span id="Where"></span><span id="where"></span><span id="WHERE"></span>Where
-
-Building 37, rooms 1717-1727, Microsoft Campus, Redmond, Washington ([map](http://go.microsoft.com/fwlink/p/?LinkId=620764)).
-
-### <span id="Audience"></span><span id="audience"></span><span id="AUDIENCE"></span>Audience
-
-Independent Software Vendors (ISVs) and developers writing file system filter drivers and/or network filter drivers for Windows.
-
-### <span id="Cost"></span><span id="cost"></span><span id="COST"></span>Cost
-
-**Free** – There is no cost for this event. Attendees are responsible for their own travel and lodging.
-
-### <span id="Goals"></span><span id="goals"></span><span id="GOALS"></span>Goals
-
--   Compatibility testing filters for Windows vNext with other file system filters and network filter drivers.
--   To ensure end users have a smooth upgrade to Windows vNext from Windows 7 or later.
-
-### <span id="Benefits"></span><span id="benefits"></span><span id="BENEFITS"></span>Benefits
-
--   The opportunity to test products extensively for interoperability with other vendors' products and with Microsoft products. This is a great way to understand interoperability scenarios and flush out any interoperability-related bugs.
--   Talks and informative sessions by Microsoft product teams about topics that affect the filter driver community.
-
-### <span id="Registration"></span><span id="registration"></span><span id="REGISTRATION"></span>Registration
-
-To register, please fill in the [Registration Form](https://centerstage.research.microsoft.com/registration?rc=AIB5-BHWU-QOXC-ZK5S) before February 19th 2016. We will follow up through email to confirm your registration. Due to constraints in space and resources at this Plugfest, ISVs are required to limit their participation to a **maximum of two persons representing a product** to be tested for interoperability issues. There will be no exceptions to this rule, so please plan for the event accordingly. Please look for messages from <fsfcomm@microsoft.com> for registration confirmation.
-
-Regards,
-
-The Microsoft file systems team
-
- 
-
- 
+* [File System Drivers](file-system-drivers.md)  
+* [File System Filter Drivers](file-system-filter-drivers.md)  
+* [File System Minifilter Drivers](file-system-minifilter-drivers.md)  
+* [Network Redirector Drivers](network-redirector-drivers.md)  
+* [Security Considerations for File Systems](security-considerations-for-file-systems.md)  
+* [Miscellaneous Information](miscellaneous-information.md)
 
 
 --------------------
