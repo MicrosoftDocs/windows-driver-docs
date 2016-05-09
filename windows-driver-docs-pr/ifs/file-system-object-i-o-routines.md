@@ -1,0 +1,88 @@
+---
+title: File System Object I/O Routines
+description: File System Object I/O Routines
+ms.assetid: 0514e396-76b9-458b-9a98-e539d7e90274
+keywords: ["mini-redirectors WDK , object I/O routines", "I/O WDK network redirectors", "low-I/O routines WDK network redirectors", "file system object I/O WDK", "file objects WDK mini-redirectors", "objects WDK mini-redirectors"]
+---
+
+# File System Object I/O Routines
+
+
+The file system object I/O routines represent the traditional file I/O calls for read, write, and other file operations. These routines are often called "low I/O routines" in the network mini-redirector. RDBSS calls these routines in response to receiving a specific IRP
+
+The low I/O routines are passed in as an array of routine pointers as part of the MINIRDR\_DISPATCH structure passed to the [**RxRegisterMinirdr**](https://msdn.microsoft.com/library/windows/hardware/ff554693) routine that is used to register the network mini-redirector at startup (in the **DriverEntry** routine). The value of the array entry is the low I/O operation to perform.
+
+These low I/O or file system object I/O routines are normally called asynchronously by RDBSS. So a network mini-redirector must make certain that any low I/O routines that are implemented can be safely called asynchronously. It is also possible for a network mini-redirector to ignore the request for an asynchronous call and implement a routine to only operate synchronously. However, for certain calls that may take time to complete (read and write, for example), implementing these as synchronous operations can significantly reduce I/O performance for the entire operating system.
+
+All the file system object I/O routines expect a pointer to an RX\_CONTEXT structure to be passed in as a parameter. Before calling these routines, RDBSS sets the value of a number of members in the **LowIoContext** structure of the RX\_CONTEXT. Some of the members in the **LowIoContext** structure are set for all routines, while some members are only set for specific routines. The RX\_CONTEXT data structure contains the IRP that is being processed and has a **LowIoContext.Operation** member that specifies the low I/O operation to perform. It is possible for several of the low I/O routines to point to the same routine in a network mini-redirector because this **LowIoContext.Operation** member can be used to differentiate the low I/O operation requested. For example, all the I/O calls related to file locks could call the same low I/O routine in the network mini-redirector which uses the **LowIoContext.Operation** member to differentiate the lock or unlock operation requested.
+
+Other file I/O routines other than the low I/O routines are based on synchronous calls, although this is subject to change in future releases of the Windows operating system.
+
+While in the LowIo path, the **LowIoContext.ResourceThreadId** member of the RX\_CONTEXT is guaranteed to indicate the owning thread that initiated the operation in RDBSS. The **LowIoContext.ResourceThreadId** member can be used to release the FCB resource on behalf of another thread. When an asynchronous routine completes, the FCB resource that was acquired from the initial thread can be released.
+
+If an **MrxLowIoSubmit\[LOWIO\_OP\_XXX\]** routine is likely to take a long time to complete, the network mini-redirector driver should release the FCB resource before initiating the network communication. The FCB resource can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](https://msdn.microsoft.com/library/windows/hardware/ff554694).
+
+The following table lists the routines that can be implemented by a network mini-redirector for file system object I/O (low I/O) operations.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Routine</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">[<strong>MRxLowIOSubmit[LOWIO_OP_EXCLUSIVELOCK]</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550703)</td>
+<td align="left"><p>RDBSS calls this routine to request that a network mini-redirector open an exclusive lock on a file object. RDBSS issues this call in response to receiving an IRP_MJ_LOCK_CONTROL with a minor code of IRP_MN_LOCK and IrpSp-&gt;Flags has the SL_EXCLUSIVE_LOCK bit set.</p></td>
+</tr>
+<tr class="even">
+<td align="left">[<strong>MRxLowIOSubmit[LOWIO_OP_FSCTL]</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550709)</td>
+<td align="left"><p>RDBSS calls this routine to pass a file system control request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_FILE_SYSTEM_CONTROL.</p></td>
+</tr>
+<tr class="odd">
+<td align="left">[<strong>MRxLowIOSubmit[LOWIO_OP_IOCTL]</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550715)</td>
+<td align="left"><p>RDBSS calls this routine to pass an I/O system control request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_DEVICE_CONTROL or IRP_MJ_INTERNAL_DEVICE_CONTROL..</p></td>
+</tr>
+<tr class="even">
+<td align="left">[<strong>MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY]</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550721)</td>
+<td align="left"><p>RDBSS calls this routine to issue a request to the network mini-redirector for a directory change notification operation. RDBSS issues this call in response to receiving an IRP_MJ_DIRECTORY_CONTROL.</p></td>
+</tr>
+<tr class="odd">
+<td align="left">[<strong>MRxLowIOSubmit[LOWIO_OP_READ]</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550724)</td>
+<td align="left"><p>RDBSS calls this routine to issue a read request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_READ.</p></td>
+</tr>
+<tr class="even">
+<td align="left">[<strong>MRxLowIOSubmit[LOWIO_OP_SHAREDLOCK]</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550734)</td>
+<td align="left"><p>RDBSS calls this routine to request that a network redirector open a shared lock on a file object. RDBSS issues this call in response to receiving an IRP_MJ_LOCK_CONTROL with a minor code of IRP_MN_LOCK and IrpSp-&gt;Flags does not have the SL_EXCLUSIVE_LOCK bit set.</p></td>
+</tr>
+<tr class="odd">
+<td align="left">[<strong>MRxLowIOSubmit[LOWIO_OP_UNLOCK]</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550740)</td>
+<td align="left"><p>RDBSS calls this routine to request that a network mini-redirector remove a single lock on a file object. RDBSS issues this call in response to receiving an IRP_MJ_LOCK_CONTROL with a minor code of IRP_MN_UNLOCK_SINGLE.</p></td>
+</tr>
+<tr class="even">
+<td align="left">[<strong>MRxLowIOSubmit[LOWIO_OP_UNLOCK_MULTIPLE]</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550745)</td>
+<td align="left"><p>RDBSS calls this routine to request that the network mini-redirector remove multiple locks held on a file object. RDBSS issues this call in response to receiving an IRP_MJ_LOCK_CONTROL with a minor code of IRP_MN_UNLOCK_ALL or IRP_MN_UNLOCK_ALL_BY_KEY. The byte ranges to be unlocked are specified in the <strong>LowIoContext.ParamsFor.Locks.LockList</strong> member of the RX_CONTEXT.</p></td>
+</tr>
+<tr class="odd">
+<td align="left">[<strong>MRxLowIOSubmit[LOWIO_OP_WRITE]</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550746)</td>
+<td align="left"><p>RDBSS calls this routine to issue a write request to the network mini-redirector. RDBSS issues this call in response to receiving an IRP_MJ_WRITE.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[ifsk\ifsk]:%20File%20System%20Object%20I/O%20Routines%20%20RELEASE:%20%285/9/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
