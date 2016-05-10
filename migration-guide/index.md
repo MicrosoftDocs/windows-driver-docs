@@ -129,6 +129,11 @@ When you're all finsished (or you think you are), do a local CHM build of **proj
 ## <h2 id="s3"> 3. Convert the conceptual topics to OP</a>
 The conversion of WDCML topics to MD is performed by the **con2md.exe** tool in your SD folder for the respective project. This tool resides in the BuildX\Cmd folder. Depending on how you set up XMetaL initially, you may need to add this path to your environment variables or you'll need to type the full path to the EXE when you execute it.
 
+###Preparing to convert
+Con2md could be enhanced over time. Before you run the conversion, make sure to do an SD sync on the BuildX folder:  
+
+    C:\SD\BuildX>sd sync ...
+        
 Con2md requires that it be **run at the root of the project folder** and that the content to be converted is in an XTOC by **the same name as the project folder**. Thus, you'll **TEMPORARILY** overwrite your projectname.xtoc file with your projectname-OP.xtoc file. A quick way to do that is run the following at the command line:
 
     C:\SD\projectname>attrib -r projectname.xtoc
@@ -136,7 +141,8 @@ Con2md requires that it be **run at the root of the project folder** and that th
 Then, overwrite your regular TOC with your OP toc:
 
     C:\SD\projectname>copy projectname-OP.xtoc projectname.xtoc
-    
+
+###Running the conversion    
 Finally, to run the conversion, execute con2md as follows:
 
     C:\SD\projectname>con2md projectname
