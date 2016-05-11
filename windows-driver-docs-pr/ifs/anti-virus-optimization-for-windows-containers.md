@@ -13,7 +13,7 @@ ms.assetid: 101BC08B-EE63-4468-8B12-C8C8B0E99FC5
 -   Windows Server 2016 Technical Preview
 -   AV products running on the Host
 
-This topic describes optimizations that anti-virus products can utilize when running within Windows Containers. These optimizations can help prevent redundant scanning and improve application performance.
+This topic describes optimizations that anti-virus products can utilize to avoid redundant scanning of Windows Container files and help improve Container start up time.
 
 ## <span id="Container_overview"></span><span id="container_overview"></span><span id="CONTAINER_OVERVIEW"></span>Container overview
 
@@ -47,7 +47,7 @@ To avoid redundant scanning on containers it is suggested that an AV product mod
 
 During package installation, the management tools will lay out files in the package under the layer root. The AV Filter should continue to scan the files as they are being placed in the package root and it normally would. This ensures that all the files in the layers are initially clean with respect to malware.
 
-### <span id="2._Contain_start_and_execution"></span><span id="2._contain_start_and_execution"></span><span id="2._CONTAIN_START_AND_EXECUTION"></span>2. Contain start and execution
+### <span id="2._Contain_start_and_execution"></span><span id="2._contain_start_and_execution"></span><span id="2._CONTAIN_START_AND_EXECUTION"></span>2. Container start and execution
 
 For real-time scanning of a container volume, AVs should scan in a way that avoids redundancy. Placeholder files need special consideration. Files modified by the container or new files created in the container are not redirected so redundant scanning is not a concern.
 
