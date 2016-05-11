@@ -129,6 +129,11 @@ When you're all finsished (or you think you are), do a local CHM build of **proj
 ## <h2 id="s3"> 3. Convert the conceptual topics to OP</a>
 The conversion of WDCML topics to MD is performed by the **con2md.exe** tool in your SD folder for the respective project. This tool resides in the BuildX\Cmd folder. Depending on how you set up XMetaL initially, you may need to add this path to your environment variables or you'll need to type the full path to the EXE when you execute it.
 
+###Preparing to convert
+Con2md could be enhanced over time. Before you run the conversion, make sure to do an SD sync on the BuildX folder:  
+
+    C:\SD\BuildX>sd sync ...
+        
 Con2md requires that it be **run at the root of the project folder** and that the content to be converted is in an XTOC by **the same name as the project folder**. Thus, you'll **TEMPORARILY** overwrite your projectname.xtoc file with your projectname-OP.xtoc file. A quick way to do that is run the following at the command line:
 
     C:\SD\projectname>attrib -r projectname.xtoc
@@ -136,7 +141,8 @@ Con2md requires that it be **run at the root of the project folder** and that th
 Then, overwrite your regular TOC with your OP toc:
 
     C:\SD\projectname>copy projectname-OP.xtoc projectname.xtoc
-    
+
+###Running the conversion    
 Finally, to run the conversion, execute con2md as follows:
 
     C:\SD\projectname>con2md projectname
@@ -275,6 +281,17 @@ There you'll see other project folders. You can name your OP project the same th
 
 After your project folder is created, copy the images folder and MD files from `projectfolder\build\markdown\projectname\*` and paste them into the new repo project folder.
 
+
+### Committing changes (new files) to GIT
+Commits are the units of change you can track in your repository. Once you're done making revisions or otherwise want to put closure on that unit of change, you can do a git **commit**. 
+
+Now that your new project folder has been added to the repository, you need to capture that change. To do that, use the **add** and **commit** commands to create the commit:
+
+        C:\myrepo\windows-driver-docs-pr [working-branch]>git add .
+        C:\myrepo\windows-driver-docs-pr [working-branch]>git commit -m "New projectname topics from con2md conversion."
+
+**Note** You can also use Visual Studio Code to commit changes. That will be discussed [later](#vscodecommit) along with the intro to VS Code.
+
 ### Do another local build to make sure things still build okay
 You want to make sure your local repository still builds successfully now that you've made changes: 
 
@@ -326,7 +343,7 @@ As soon as your branch gets pushed to origin, it will kick off an automated buil
 ### Monitoring your build progress
 To see what's going on while it's building (before you get that email), you can visit the **Open Publishing Service portal**:
 
-[https://op-portal-prod.azurewebsites.net/#/containers/history/repositories/All](https://op-portal-prod.azurewebsites.net/#/containers/history/repositories/All)
+[https://op-portal-prod.azurewebsites.net/#/containers/history/repositories/All](https://op-portal-prod.azurewebsites.net/#/containers/history/repositories/All)     (click **Publishing History**)
 
 There you will find the status of the ongoing builds. If it fails through no fault of your content (that happens sometime), you can kick off the build again without having to make another commit.
 
@@ -388,7 +405,7 @@ That will open up VS Code to your repositry. Once there, select the files and st
 
 That's VS Code keeping track of your change list. 
 
-### Committing changes to GIT
+###   <h2 id="vscodecommit"> Committing changes to GIT</a>
 Commits are the units of change you can push up to origin. Once you're done making revisions or otherwise want to put closure on that unit of change, you can do a ***commit***. You can do this in one of two ways:
 
 * **Use VS Code** : Type the description of the change in the Message window and then press **Ctrl+Enter**. 
