@@ -5,18 +5,31 @@ description: Introduction
 ms.assetid: 0AEFA19D-C270-4777-8C08-E6056FBB6BC5
 ---
 
-# Introduction
+# Storage driver design guide
 
 
 Storage drivers include [class](storage-class-drivers.md), [port](storage-port-drivers.md), [miniport](storage-miniport-drivers.md), and [filter](storage-filter-drivers.md) drivers. Typically, a device vendor will implement a miniport driver for a specific adapter or adapter type. Although not common, a new storage class can be defined and a new class driver developed for it. Storage classes in Windows include the Disk, CDROM, USB storage, and encrypted drive classes. Storage driver development is usually limited to writing a miniport driver to work with the [StorPort](storport-driver.md) port driver.
 
 Other types of storage drivers are secure [silo](storage-silo-drivers.md) drivers and Device Specific Modules (DSM) for multipath I/O. For storage management, [WMI](https://msdn.microsoft.com/library/windows/hardware/ff567016) providers are developed as a control interface to a driver.
 
-## <span id="Storage_Driver_WDK_Resources"></span><span id="storage_driver_wdk_resources"></span><span id="STORAGE_DRIVER_WDK_RESOURCES"></span>Storage Driver WDK Resources
+## <span id="Storage_Driver_WDK_Resources"></span><span id="storage_driver_wdk_resources"></span><span id="STORAGE_DRIVER_WDK_RESOURCES"></span>Overview
+This design guide includes the following sections:
+* [Roadmap for Developing Windows Storage Drivers](roadmap-for-developing-storage-drivers.md)  
+* [Roadmap for Developing Storport Miniport Drivers](roadmap-for-developing-storport-miniport-drivers.md)  
+* [Storage Drivers](storage-drivers.md)  
+* [Storage Class Drivers](storage-class-drivers.md)  
+* [Storage Port Drivers](storage-port-drivers.md)  
+* [Storage Miniport Drivers](storage-miniport-drivers.md)  
+* [Storage Virtual Miniport Drivers](storage-virtual-miniport-drivers.md)  
+* [Storage Filter Drivers](storage-filter-drivers.md)  
+* [Crash Dump Filter Drivers](crash-dump-filter-drivers.md)  
+* [Storage Silo Drivers](storage-silo-drivers.md)  
+* [CD-ROM Drivers](cd-rom-drivers.md)  
+* [Tape Drivers](tape-drivers.md)  
+* [Changer Drivers](changer-drivers.md)  
+* [Storage Scenarios](storage-scenarios.md)  
 
-
-Getting started information is found in the [Storage Devices Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff566969) section.
-
+##Samples
 Studying samples is a practical way to see how working storage drivers are developed. [Sample storage drivers](http://go.microsoft.com/fwlink/p/?LinkId=616047) are available on GitHub.
 
 ## <span id="Driver_Verification_for_StorPort"></span><span id="driver_verification_for_storport"></span><span id="DRIVER_VERIFICATION_FOR_STORPORT"></span>Driver Verification for StorPort
