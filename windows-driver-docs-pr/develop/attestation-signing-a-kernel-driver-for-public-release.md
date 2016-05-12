@@ -292,7 +292,7 @@ Use the following instructions to install the sample driver.
 
 To submit multiple drivers at the same time, create a sub directory for each driver as shown below.
 
-![directory structure of cab submission](images/b-wes-driversigning-v3.png)
+![directory structure of cab submission](images/b-wes-driversigning-v4.png)
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
@@ -313,9 +313,11 @@ Prepare a cab file DDF input file that references the subdirectories. It might l
 .Set CabinetNameTemplate=Echo.cab
 ;Specify files to be included in cab file
 ; First Driver
+.Set DestinationDir=DriverPackage1
 C:\DriverFiles\DriverPackage1\Driver1.sys
 C:\DriverFiles\DriverPackage1\Driver1.inf
 ; Second driver
+.Set DestinationDir=DriverPackage2
 C:\DriverFiles\DriverPackage2\Driver2.sys
 C:\DriverFiles\DriverPackage2\Driver2.inf
 ```
