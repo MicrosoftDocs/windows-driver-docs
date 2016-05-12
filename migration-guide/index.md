@@ -514,7 +514,9 @@ Currently Ted is handling this. He'll soon add instructions here that describe h
 
 Don't forget to change the target URL of the top topic to point to index.md. Any script output will likely include the original MD file name.
 
-Wait until you go to publish all the changes to LIVE before you (submit the redirect request to MSDN (step 17 below)](#s13).
+Wait until you go to publish all the changes to LIVE before you [submit the redirect request to MSDN (step 17 below)](#s13).
+
+**Note** : For more info about the CSV format, see the MSDN [Redirect template](https://microsoft.sharepoint.com/teams/Visual_Studio_China/MSDN/msdnpartner/_layouts/15/WopiFrame.aspx?sourcedoc=%7bCDDAB058-5F12-4C24-B931-E13A62FFDAF4%7d&file=Redirection%20Template.docx&action=default).
 
 
 ## <h2 id="s8"> 14. Create a new WDCML parent topic in HW_NODES</a>
