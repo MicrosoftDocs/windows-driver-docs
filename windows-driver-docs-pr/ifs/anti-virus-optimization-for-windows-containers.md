@@ -107,7 +107,7 @@ Consider the following benefits and risks to using these new optimizations for A
 
 -   No impact to container start or execution time (even for the first container).
 -   Avoids scanning of the same content in multiple containers.
--   Works for Argon and Xenon. For Xenon, there is an assumption that the (same) anti-malware is also running on the host.
+-   Works for Windows Server Containers and Hyper-V Containers. For Hyper-V Containers, there is an assumption that the (same) anti-malware is also running on the host.
 
 ### <span id="Risks"></span><span id="risks"></span><span id="RISKS"></span>Risks
 
