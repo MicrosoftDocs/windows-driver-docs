@@ -584,12 +584,12 @@ To prepare a new Dev Center HXT file:
 6. Paste the following template below that reference:  
 
     ```
-    <!-- TECHNOLOGYNAME Devices -->
+    <!-- TECHNOLOGYNAME device drivers -->
     <!-- Parent topic from HW_NODES WDCML project -->
-    <HelpTOCNode NodeType="Regular" Title="TECHNOLOGYNAME Devices" Url="AssetID:PARENTGUID ^VS.85">
+    <HelpTOCNode NodeType="Regular" Title="TECHNOLOGYNAME device drivers" Url="AssetID:PARENTGUID ^VS.85">
 
-        <!-- TECHNOLOGYNAME design guide from Open Publishing platform -->
-        <HelpTOCNode NodeType="Regular" Title="TECHNOLOGYNAME design guide" Url="AssetID:CONCEPTUALGUID ^VS.85"/>
+        <!-- TECHNOLOGYNAME driver design guide from Open Publishing platform -->
+        <HelpTOCNode NodeType="Regular" Title="TECHNOLOGYNAME driver design guide" Url="AssetID:CONCEPTUALGUID ^VS.85"/>
 
         <!--TECHNOLOGYNAME DDI reference content from WDCML platform -->
         <HelpTOCNode NodeType="TOC" Url="VS|PROJECTNAME|$\PROJECTNAME.hxt@0 ^VS.85" />
@@ -666,9 +666,11 @@ The first order of business is testing the new TOC changes on MSDNStage. We don'
     * Area = **WDCML/Library**
     * Request = **Other**
     * For Title consistency, try to use **HXT update for WDCML to OP migration (projectname)**
-    * For Additional information, use this template (keep hw_nodes in there if applicable):  
+    * For Additional information, use this template (keep hw_nodes in there if applicable). You may or may not want to put a time limit on the request before proceeding, as shown:  
     
         ```
+        [Note: If this can't be completed today, please do not proceed with this request]
+        
         Please update the Staging environment with the following changes:
 
         1. Replace hardware_dev_center.hxt with the attached HXT file. This HXT file should be saved to //depot/DevDoc/Main/BuildX/mtps/en-us/hardware_dev_center.hxt
@@ -759,8 +761,11 @@ Due to the significance of the LIVE branch, we use a different process to move c
         Publishing projectname to OP
 
 3. Add a message that includes our secret team alias, **@Microsoft/wdg-driver-docs**, and add the ProdRequest link if that handy too:
-
-        Hi @Microsoft/wdg-driver-docs, We're publishing the new projectname folder to LIVE today via this Pull Request. We're also publishing the corresponding WDCML projects later this afternoon too (projectname, hw_nodes, and the hardware_dev_center.hxt file). That is being tracked by this ProdRequest: https://microsoft.visualstudio.com/DefaultCollection/OS/_workitems?_a=edit&id=TBD
+    
+    ```
+    Hi @Microsoft/wdg-driver-docs, We're publishing the new projectname folder to LIVE today via this Pull Request. We're also publishing the corresponding WDCML projects later this afternoon too (projectname, hw_nodes, and the hardware_dev_center.hxt file). That is being tracked by this ProdRequest: https://microsoft.visualstudio.com/DefaultCollection/OS/_workitems?_a=edit&id=TBD
+    ```  
+    
   **Important** : The goal of this step is to let others know that content in the MASTER branch is about to be published LIVE. Using **@Microsoft/wdg-driver-docs** in the message triggers an email to everyone on the team. It's possible that someone accidently put changes in MASTER that they **don't** want to go out - they may be in the process of trying to revert the changes. This warms them and gives them a chance to stop the Pull from happening. 
       
   Here's an example:  
