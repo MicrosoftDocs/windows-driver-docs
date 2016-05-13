@@ -5,7 +5,7 @@ description: The file systems in Windows are implemented as file system drivers 
 ms.assetid: 62DE75F7-0211-4173-AF45-84B2DDFDC95C
 ---
 
-# Installable file system driver design guide
+# Installable file systems driver design guide
 
 
 The file systems in Windows are implemented as file system drivers working above the storage system. Each of the file systems in Windows are designed to provide reliable data storage with varying features to meet the user’s requirements. A comparison of features for each of the standard file systems in Windows is shown in [File System Functionality Comparison](https://msdn.microsoft.com/library/windows/desktop/ee681827). New for Windows Server 2012 is ReFS. ReFS is a file system with scalable large volume support and the ability detect and correct data corruption on disk.
