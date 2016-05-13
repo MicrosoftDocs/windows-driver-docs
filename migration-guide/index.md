@@ -844,6 +844,16 @@ Now you need to use `sd integrate` and `sd delete` to move the WDCML files that 
 
 If you'd prefer, please provide a pointer to your **projectname-OP.xtoc** to <tedhudek@microsoft.com>, who will be happy to do the archival operation on your behalf.
 
+If you are archiving an entire WDCML project, you should also search for the project name and remove it if it appears in any of the following files:
+
+```
+SDROOT\buildx\schema\xsd\validtechvalues.xsd
+SDROOT\buildx\script2\config\adjustments_projectlevel.xml
+SDROOT\buildx\script2\config\*tech*.xml
+SDROOT\buildx\script2\templates\indexing_boilerplates.xslt
+SDROOT\*.txt
+```
+
 ## <h2 id="removeworking"/> 26. Clean up: Remove working branch from local and origin</a>
 Once all your changes have been merged into MASTER and LIVE, and you're finished with your working branch, please remove your working branch. You will remove it in two places, local and origin.
 
