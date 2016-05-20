@@ -1,4 +1,4 @@
-# [PCI driver programming guide](pci-bus-design-guide.md)
+# [PCI driver programming guide](index.md)
 ## [PCI Power Management and Device Drivers](pci-power-management-and-device-drivers.md)
 ## [Accessing PCI Device Configuration Space](accessing-pci-device-configuration-space.md)
 ## [I/O Resource Usage Reduction](i-o-resource-usage-reduction.md)
