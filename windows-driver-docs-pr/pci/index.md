@@ -53,26 +53,7 @@ The following table summarizes the PCIe features that are supported by different
 <li>[Errata for the PCI Express® Base Specification Revision 3.1, Single Root I/O Virtualization and Sharing Revision 1.1, Address Translation and Sharing Revision 1.1, and M.2 Specification Revision 1.0](http://go.microsoft.com/fwlink/p/?LinkId=787060)</li>
 </ul></td>
 <td><p>Windows 10</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>Minimum Windows version</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Optimized Buffer Flush/Fill (OBFF)</p>
+</tr><td><p>Optimized Buffer Flush/Fill (OBFF)</p>
 <p>See section 6.19.</p></td>
 <td><p>Windows 8</p>
 <p>Windows Server 2012</p></td>
@@ -110,7 +91,6 @@ The following table summarizes the PCIe features that are supported by different
 </tbody>
 </table>
 
- 
 
 ## <a href="" id="ddk-pci-design-guide-kg"></a>
 
