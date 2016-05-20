@@ -125,6 +125,10 @@ The following table summarizes the PCIe features that are supported by different
 -   [PCI Express FAQ for Graphics](https://msdn.microsoft.com/library/windows/hardware/dn653979)
 -   [PCI Sample](https://msdn.microsoft.com/library/windows/hardware/hh450892)
 
+
+## See Also
+-   [Official PCIe specification](http://www.pcisig.com/specifications/pciexpress/review_zone/)
+
  
 
  
