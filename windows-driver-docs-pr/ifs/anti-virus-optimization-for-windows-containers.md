@@ -9,7 +9,7 @@ ms.assetid: 101BC08B-EE63-4468-8B12-C8C8B0E99FC5
 
 
 **Applies to:**
-
+-   Windows 10, version 1607
 -   Windows Server 2016 Technical Preview
 -   AV products running on the Host
 
