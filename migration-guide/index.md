@@ -13,7 +13,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 9. [Make revisions to your working branch](#s66) 
 10. [Finishing touches: Run clean-up script and set author](#clean)
 11. [Finishing touches: Add your project to the WDK TOC \(in OP\)](#toc)
-12. [Push changes back up to ORIGIN](#pushing)
+12. [Push changes back up to ORIGIN  **<------------------------- Update working branch on MSDNSTAGE**](#pushing)
 13. [Build a .CSV file for redirecting old topics to OP ](#s7)
 14. [Create new WDCML parent topic in HW_NODES](#s8)
 15. [Update WDCML TOC to show only reference topics](#s9)
@@ -156,8 +156,8 @@ Once it runs successfully, don't forget to go back and reload the projectname.xt
 When it finishes, con2md will create a new TOC file and a folder for your MD files and art:
 
 * **TOC file** will be located at --> `projectfolder\build\markdown\TOC.md`
-* **MD files** will be located in --> `projectfolder\build\markdown\projectname\`
-* **Art files** will be located in --> `projectfolder\build\markdown\projectname\images`
+* **MD files** will be located in --> `projectfolder\build\markdown\mdout\`
+* **Art files** will be located in --> `projectfolder\build\markdown\mdout\images`
 
 ### Moving the TOC.md file
 The folder structure we use is to have the TOC.md file reside in the **same folder** as the rest of the markdown files. Thus you need to copy the TOC.md down a level into the folder named after the project.
@@ -445,13 +445,19 @@ I'll write more documentation about these scripts later. But for now, follow the
 
 8.	Copy the path from the address bar  
 
-9.	In PowerShell, navigate to your PS folder  
+9.	In PowerShell, navigate to your PS folder. The scripts are designed to be run from the folder they reside. 
 
     **Tip** : In Windows Explorer, if you have the PS folder open there, you can select **File > Open Windows PowerShell**  
 
 10.	At the prompt, run the following (examples include prompt, put your path in quotes):  
 
-    **Important : Make sure your project folder is in the path. If it’s higher, you may end up running it on all MD files in the repository.**
+    **IMPORTANT: Did you do step #9?**
+    
+    **IMPORTANT: Make sure you call the Project version of the scripts, with "Project" in the name.** For example, call mdRelatedLinks**Project**Cleaner.ps1 rather than mdRelatedLinksCleaner.ps1.
+    
+    **IMPORTANT: Pass the MD folder path as an absolute path, don't use dot notation "." etc.**
+    
+    **IMPORTANT : Make sure your MD project folder is in the path. If it’s higher, you may end up running it on all MD files in the repository.**
 
             x:\ps>.\mdRelatedLinksProjectCleaner.ps1 "c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi"
             x:\ps>.\mdAuthorProjectSetter.ps1 "c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi" 
@@ -483,7 +489,7 @@ The following shows the TOC after adding the bringup and ACPI projects. This TOC
 
 When that's finished, don't forget to commit the changes.
 
-### <h2 id="pushing"> 12. Pushing changes back up to ORIGIN</a>
+### <h2 id="pushing"> 12. Push changes back up to ORIGIN (update working branch on MSDNSTAGE)</a>
 To push changes back up to origin, follow the steps described earlier. 
 
 **Note** : Depending on the extent of the changes, you may choose *not* do a local build beforehand. 
