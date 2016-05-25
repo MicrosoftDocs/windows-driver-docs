@@ -4,6 +4,5 @@
 # [Windows Driver Frameworks](wdf/)
 # [Device and Driver Technologies](device-and-driver-technologies.md)
 ## [ACPI drivers](acpi/)
-## [Installable file system drivers](ifs/)
 ## [NFC device drivers](nfc/)
 ## [Storage device drivers](storage/)
