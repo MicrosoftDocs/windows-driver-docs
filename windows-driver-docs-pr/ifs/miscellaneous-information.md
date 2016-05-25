@@ -12,11 +12,10 @@ This section contains additional information relevant to minifilter development.
 
 This section includes:
 
-[Offloaded Data Transfers](offloaded-data-transfers.md)
-
-[Locating Disk Images Correctly](locating-disk-images-correctly.md)
-
-[Understanding Volume Enumerations with Duplicate Volume Names](understanding-volume-enumerations-with-duplicate-volume-names.md)
+* [Anti-virus optimization for Windows Containers](anti-virus-optimization-for-windows-containers.md)  
+* [Offloaded Data Transfers](offloaded-data-transfers.md)  
+* [Locating Disk Images Correctly](locating-disk-images-correctly.md)  
+* [Understanding Volume Enumerations with Duplicate Volume Names](understanding-volume-enumerations-with-duplicate-volume-names.md)
 
  
 
