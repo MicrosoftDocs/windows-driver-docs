@@ -6,4 +6,5 @@
 ## [ACPI](acpi/)
 ## [NFC devices](nfc/)
 ## [PCI](pci/)
+## [Storage device drivers](storage/)
 
