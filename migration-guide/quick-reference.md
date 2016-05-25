@@ -14,7 +14,7 @@ This is a quick reference for the Git commands and links used in WDCML to OP mig
 | Git command | Description |
 |-------------|-------------|
 |`C:\myrepo\windows-driver-docs-pr [working-branch]>git add .`|Capture differences to a unit of change|
-|`C:\myrepo\windows-driver-docs-pr [working-branch]>git commit -m "New projectname topics from con2md conversion."`|Commit the changes to your **local** repo|
+|`C:\myrepo\windows-driver-docs-pr [working-branch]>git commit -m "Description of changes made in working branch."`|Commit the changes to your **local** repo|
 |`C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master`| Move to the master branch|
 |`C:\myrepo\windows-driver-docs-pr [master]>git pull origin`|Pull down the latest master changes|
 |`C:\myrepo\windows-driver-docs-pr [master]>git checkout working-branch`|Go back over to the working branch|
@@ -48,5 +48,5 @@ This is a quick reference for the Git commands and links used in WDCML to OP mig
 |`C:\myrepo\windows-driver-docs-pr [temp-branch]> code .`|Open Visual Studio Code|
 |***Make your change*** --> such as [running scripts](https://github.com/Microsoft/windows-driver-docs-pr/blob/master/migration-guide/index.md#clean) or [editing the TOC.md](https://github.com/Microsoft/windows-driver-docs-pr/blob/master/migration-guide/index.md#toc)|Make changes to your local repo| 
 |`C:\myrepo\windows-driver-docs-pr [temp-branch]>git add .`|Capture differences to a unit of change|
-|`C:\myrepo\windows-driver-docs-pr [temp-branch]>git commit -m "New projectname topics from con2md conversion."`|Commit the changes to your **local** repo|
+|`C:\myrepo\windows-driver-docs-pr [temp-branch]>git commit -m "Description of changes made in temp branch."`|Commit the changes to your **local** repo|
 |[**Update the MASTER BRANCH**](#update-master)|Use instructions from previous section to update the master branch with changes from the temp branch|
