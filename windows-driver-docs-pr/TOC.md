@@ -6,4 +6,4 @@
 ## [ACPI drivers](acpi/)
 ## [Installable file system drivers](ifs/)
 ## [NFC device drivers](nfc/)
-
+## [Storage device drivers](storage/)
