@@ -1,0 +1,56 @@
+---
+title: Initialization of Storage Virtual Miniport Drivers
+author: windows-driver-content
+description: Initialization of Storage Virtual Miniport Drivers
+ms.assetid: 35f7bb00-56e0-4535-9f13-9fd33afaa0b5
+keywords: ["storage virtual miniport drivers WDK , initialization", "miniport drivers WDK storage", "initializing WDK storage , virtual miniport drivers"]
+---
+
+# Initialization of Storage Virtual Miniport Drivers
+
+
+The Storport virtual miniport (VMiniport) driver has three stages of initialization. In the first, the VMiniport (typically in its [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine) calls [**StorPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff567108), which points to a [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) structure.
+
+In this structure, the VMiniport sets the following fields to point to callback routines:
+
+**HwFindAdapter**. This routine is required for the second stage of initialization.
+
+**HwInitialize**. This routine is required for the third stage of initialization.
+
+**HwInitializeTracing**. This routine is optional, and is unique to a Storport virtual miniport driver.
+
+**HwStartIo**. This routine is required. In a virtual miniport driver, the **HwStorBuildIo** interface is not called prior to calling. [**HwStorStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557423). No locks are held prior to calling. **HwStorStartIo**. The default queue depth for each logical unit that is exposed through the virtual miniport interface is 250.
+
+**HwAdapterControl**. This routine is required.
+
+**HwResetBus**. This routine is required. The meaning of "bus" can be defined by the virtual miniport driver developer.
+
+**HwProcessServiceRequest**. This routine is optional, and is unique to a Storport virtual miniport driver. This routine receives a "reverse-callback" IRP, which will be completed when the VMiniport updates the caller (such as a user-mode application or kernel-mode driver) or requires the caller to do something on the VMiniport's behalf.
+
+**HwCompleteServiceIrp**. This routine is optional, and is unique to a Storport virtual miniport driver. However, this routine is required when **HwProcessServiceRequest** points to a callback routine. **HwCompleteServiceIrp** is called when the virtual adapter is being removed so that the VMiniport can complete any reverse-callback IRPs that might be pending.
+
+**HwFreeAdapterResources**. This routine is required, and is unique to a Storport virtual miniport driver. This routine is called when the virtual adapter is being removed so that the VMiniport can free any resources that are allocated during initialization.
+
+**HwCleanupTracing**. This routine is optional, and is unique to a Storport virtual miniport driver. However, this routine is required when **HwInitializeTracing** points to a callback routine.
+
+The virtual miniport driver must also set the following in the same structure:
+
+**HwInitializationDataSize** = **sizeof**(VIRTUAL\_HW\_INITIALIZATION\_DATA).
+
+**AdapterInterfaceType** = **Internal**.
+
+The Storport virtual miniport driver sets other fields as needed. Unused fields must be set to zero.
+
+Without holding any locks and at PASSIVE\_LEVEL, the virtual miniport driver calls [**StorPortInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff567108) with a pointer to the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) structure and then checks the status that is returned. The Storport driver retains its own copy of the information in this structure and the miniport driver need not retain this structure after **StorPortInitialize** returns.
+
+[**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) appears in Storport.h.
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[storage\storage]:%20Initialization%20of%20Storage%20Virtual%20Miniport%20Drivers%20%20RELEASE:%20%285/9/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
