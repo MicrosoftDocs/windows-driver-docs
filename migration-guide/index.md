@@ -679,7 +679,8 @@ The first order of business is testing the new TOC changes on MSDNStage. We don'
         
         Please update the Staging environment with the following changes:
 
-        1. Replace hardware_dev_center.hxt with the attached HXT file. This HXT file should be saved to //depot/DevDoc/Main/BuildX/mtps/en-us/hardware_dev_center.hxt
+        1. Update the master hardware_dev_center.hxt with the changes specified in the attached HXT file. The master hardware_dev_center.hxt file is located in Source Depot here:                  
+            //depot/DevDoc/Main/BuildX/mtps/en-us/hardware_dev_center.hxt
 
         2. Re-build these projects: projectname, hw_nodes
 
@@ -820,7 +821,7 @@ Next, immediately submit the redirect request to MSDN using MSDN Help:
    
    * Set **Description** to something like..  
    
-        	A project was recently migrated to OP and published live. Please remove the WDCML topics at the specified GUIDs and redirect requests to the specified URLs. 
+        	One or more WDCML projects was recently migrated to OP and published live. Please remove the WDCML topics at the specified GUIDs and redirect requests to the specified URLs/GUIDs. 
 	
 	        Please expedite these redirects. Until these redirects are performed, our site-wide TOC will not be working as intended. 
 	
