@@ -34,6 +34,18 @@ The following are the NFC Forum specifications implemented by the NFC CX driver:
 -   Simple NDEF Exchange Protocol, SNEP 1.0 Specification
 -   ISO/IEC 15693
 
+ 
+## Supported NFC smart cards and tags
+ 
+-   MIFARE Classic family
+-   MIFARE Ultralight family
+-   MIFARE DESFire family
+-   FeliCa family
+-   Jewel/Topaz family
+-   Generic ISO 15693 tags
+
+
+
 ## In this section
 
 
