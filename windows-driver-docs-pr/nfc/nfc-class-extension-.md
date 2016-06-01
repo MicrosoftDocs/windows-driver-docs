@@ -17,15 +17,17 @@ The NFC class extension driver implements all standard NFC Forum Tag (T1T, T2T, 
 
 These topics describe the architecture and public interface between the NFC class extension driver supplied by Microsoft and the NFC client driver supplied by the corresponding chipset manufacturers. The NFC CX driver is designed to support NFC chipsets from various manufacturers, and enables manufacturers to implement non-NCI standard functionality in their NFC client driver for differentiation purposes.
 
+##NFC driver DDI
 The following are the Windows-defined NFC driver DDI that are implemented by the NFC CX driver:
 
--   Near Field Proximity DDI
--   NFC Secure Element Management DDI
--   Smart Card DDI for contactless smart card access
--   NFC Radio Management DDI
+-   [Near Field Proximity DDI](https://msdn.microsoft.com/library/windows/hardware/jj866056)
+-   [NFC Secure Element Management DDI](https://msdn.microsoft.com/library/windows/hardware/dn905485)
+-   [Smart Card DDI for contactless smart card access](https://msdn.microsoft.com/library/windows/hardware/dn905601)
+-   [NFC Radio Management DDI](https://msdn.microsoft.com/library/windows/hardware/dn905577)
 -   DTA DDI for NFC Forum certification
 
-The following are the NFC Forum specifications implemented by the NFC CX driver:
+##NFC forum specifications
+The following are the NFC Forum specifications implemented by the NFC CX driver:  
 
 -   NFC Controller Interface, NCI 1.0 Specification
 -   NFC Data Exchange Format, NDEF
@@ -33,10 +35,10 @@ The following are the NFC Forum specifications implemented by the NFC CX driver:
 -   Logical Link Control Protocol, LLCP 1.1 Specification
 -   Simple NDEF Exchange Protocol, SNEP 1.0 Specification
 -   ISO/IEC 15693
-
  
 ## Supported NFC smart cards and tags
- 
+The following are the NFC smart cards and tags supported by the NFC CX driver:  
+
 -   MIFARE Classic family
 -   MIFARE Ultralight family
 -   MIFARE DESFire family
