@@ -1,11 +1,11 @@
 ---
-Description: 'To run MITT tests, you must install the MITT firmware on a new MITT board. These steps describe how to update the MITT firmware and prepare the host machine for running MITT tests.'
-MS-HAID: 'SPB.get\_started\_with\_mitt\_\_\_'
+title: Get started with MITT
+author: windows-driver-content
+description: To run MITT tests, you must install the MITT firmware on a new MITT board. These steps describe how to update the MITT firmware and prepare the host machine for running MITT tests.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: Get started with MITT
-author: windows-driver-content
+ms.assetid: 4467B82F-7B06-430B-A0CB-A6825045E5F4
 ---
 
 # Get started with MITT
@@ -24,8 +24,8 @@ To run MITT tests, you must install the MITT firmware on a new MITT board. These
 ## Before you begin...
 
 
--   [Download the MITT software package](buses.mitt_software_package).
--   [Buy hardware for using MITT](buses.multi_interface_test_tool__mitt__)
+-   [Download the MITT software package](https://msdn.microsoft.com/library/windows/hardware/dn919810).
+-   [Buy hardware for using MITT](https://msdn.microsoft.com/library/windows/hardware/dn919811)
 -   Know how to run Windows command shell with elevated privilege. Installation of the test tools requires an elevated command window. For that window, you can open a Command Prompt window by using the **Run as administrator** option.
 
 ## Computer setup for running MITT tests
@@ -49,13 +49,13 @@ To run MITT tests, you need a computer that will run as the host and system unde
 ## Install WDTF Runtime Library
 
 
-To run the MITT tests, you need Windows Driver Test Framework (WDTF). When you install the Windows Driver Kit (WDK), the runtime is installed automatically. For complete installation instructions, follow the steps described in [WDTF Runtime Library](dtf.runtime_library).
+To run the MITT tests, you need Windows Driver Test Framework (WDTF). When you install the Windows Driver Kit (WDK), the runtime is installed automatically. For complete installation instructions, follow the steps described in [WDTF Runtime Library](https://msdn.microsoft.com/library/windows/hardware/hh831856).
 
 **Download location**: [WDK and WinDbg downloads](https://go.microsoft.com/fwlink/p/?LinkId=733614)
 
 The runtime is installed here %ProgramFiles(x86)%\\Windows Kits\\8.1\\Testing\\Runtimes\\TAEF
 
-The system under test must be connected to a kernel debugger. Debugging tools are installed with the WDK. For more information, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](debugger.introduction6) and [Windows Debugging](debugger.symbols).
+The system under test must be connected to a kernel debugger. Debugging tools are installed with the WDK. For more information, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://msdn.microsoft.com/library/windows/hardware/ff551063) and [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff558823).
 
 ## Install MITT firmware
 
@@ -82,7 +82,7 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 
     The preceding output shows that the WinUSB loaded as the device driver for the board.
 
-13. There are two separate chips that require firmware on the MITT board. For this task, use [MuttUtil](buses.muttutil). Run this command:
+13. There are two separate chips that require firmware on the MITT board. For this task, use [MuttUtil](https://msdn.microsoft.com/library/windows/hardware/dn376874). Run this command:
 
     **MuttUtil.exe –UpdateFirmware**
 
@@ -113,9 +113,9 @@ If MuttUtil returns an error while updating or installing the firmware,
 -   Connecting MITT directly to xHCI root hub on host computer is not recommended. Test may hang randomly with that setup. As a workaround, add a powered USB 2.0 hub between the xHCI port and MITT board.
 
 ## Related topics
-[Testing with Multi Interface Test Tool (MITT)](buses.testing_with_multi_interface_test_tool__mitt_)  
+[Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20Get%20started%20with%20MITT%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20Get%20started%20with%20MITT%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

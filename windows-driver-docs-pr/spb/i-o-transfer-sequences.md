@@ -1,11 +1,11 @@
 ---
-Description: 'The SPB framework extension (SpbCx) supports I/O transfer sequences.'
-MS-HAID: 'SPB.i\_o\_transfer\_sequences'
+title: I/O Transfer Sequences
+author: windows-driver-content
+description: The SPB framework extension (SpbCx) supports I/O transfer sequences.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'I/O Transfer Sequences'
-author: windows-driver-content
+ms.assetid: 7415DB28-5E93-4F47-B169-7C652969D4C7
 ---
 
 # I/O Transfer Sequences
@@ -20,22 +20,22 @@ An example of an I/O transfer sequence is a write-read operation, which is a bus
 
 A client can initiate an I/O transfer sequence in one of these two ways:
 
--   The client can specify the entire sequence in an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](buses.ioctl_spb_execute_sequence) I/O control request. This request enables the SPB controller driver to use whatever hardware-specific performance optimizations are available to perform the transfer sequence. For more information, see [Single-Request Sequences](#buses-single-request-sequences).
+-   The client can specify the entire sequence in an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) I/O control request. This request enables the SPB controller driver to use whatever hardware-specific performance optimizations are available to perform the transfer sequence. For more information, see [Single-Request Sequences](#buses-single-request-sequences).
 
--   The client can send an [**IOCTL\_SPB\_LOCK\_CONTROLLER**](buses.ioctl_spb_lock_controller) I/O control request to lock the controller at the start of a sequence, and send an [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](buses.ioctl_spb_unlock_controller) when the sequence is complete. While the controller is locked, the client sends a separate I/O request ([**IRP\_MJ\_READ**](kernel.irp_mj_read) or [**IRP\_MJ\_WRITE**](kernel.irp_mj_write)) for each read or write operation in the sequence. For more information, see [Client-Implemented Sequences](#buses-client-implemented-sequences).
+-   The client can send an [**IOCTL\_SPB\_LOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450858) I/O control request to lock the controller at the start of a sequence, and send an [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450859) when the sequence is complete. While the controller is locked, the client sends a separate I/O request ([**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) or [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819)) for each read or write operation in the sequence. For more information, see [Client-Implemented Sequences](#buses-client-implemented-sequences).
 
 Whenever possible, a client should use the **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request, which is faster, is less prone to errors, and significantly decreases the time during which other clients are locked out of the bus. However, a client can use the **IOCTL\_SPB\_LOCK\_CONTROLLER** and **IOCTL\_SPB\_UNLOCK\_CONTROLLER** requests if it must look at the value that is read during one of the transfers in the sequence before it can initiate a later transfer in the sequence. In this case, careful design is required to avoid locking other clients out of the bus for longer than is necessary, and a badly designed peripheral driver can degrade overall system performance.
 
 ## <a href="" id="buses-single-request-sequences"></a>Single-Request Sequences
 
 
-To improve performance, your SPB controller driver should implement an [*EvtSpbControllerIoSequence*](buses.evtspbcontrolleriosequence) callback function to handle [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](buses.ioctl_spb_execute_sequence) requests. This approach adds some complexity to the SPB controller driver but avoids requiring the client to perform an I/O transfer sequence as a series of individual read and write operations while other clients are locked out of the bus.
+To improve performance, your SPB controller driver should implement an [*EvtSpbControllerIoSequence*](https://msdn.microsoft.com/library/windows/hardware/hh450810) callback function to handle [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) requests. This approach adds some complexity to the SPB controller driver but avoids requiring the client to perform an I/O transfer sequence as a series of individual read and write operations while other clients are locked out of the bus.
 
 **Note**  Implementation of an *EvtSpbControllerIoSequence* function is strongly recommended, and might become a requirement for Windows 8.
 
  
 
-The implementation of a transfer sequence is similar to that of a simple read or write operation, but additionally requires updates to the stored state of the sequence operation between the individual transfers in the sequence. After the first transfer completes, the SPB controller driver updates the sequence state to select the next transfer in the sequence. The sequence state is stored in the device context and includes the [**SPBREQUEST**](buses.spbrequest_object_handle) handle that is passed to the *EvtSpbControllerIoSequence* callback. The SPB controller driver uses this handle to obtain the buffer, length, direction, and position parameters for the individual transfers in the sequence. For more information about obtaining these parameters, see [**SpbRequestGetTransferParameters**](buses.spbrequestgettransferparameters).
+The implementation of a transfer sequence is similar to that of a simple read or write operation, but additionally requires updates to the stored state of the sequence operation between the individual transfers in the sequence. After the first transfer completes, the SPB controller driver updates the sequence state to select the next transfer in the sequence. The sequence state is stored in the device context and includes the [**SPBREQUEST**](https://msdn.microsoft.com/library/windows/hardware/hh450925) handle that is passed to the *EvtSpbControllerIoSequence* callback. The SPB controller driver uses this handle to obtain the buffer, length, direction, and position parameters for the individual transfers in the sequence. For more information about obtaining these parameters, see [**SpbRequestGetTransferParameters**](https://msdn.microsoft.com/library/windows/hardware/hh450924).
 
 If the SPB controller driver is unable to perform the requested **IOCTL\_SPB\_EXECUTE\_SEQUENCE** operation, it completes the request with a failure code. If such a failure occurs, the client can, as an option, lock the bus, explicitly perform the I/O transfer sequence as a series of simple I/O requests, and then unlock the bus. For more information, see [Client-Implemented Sequences](#buses-client-implemented-sequences).
 
@@ -43,20 +43,20 @@ SpbCx does parameter checking on **IOCTL\_SPB\_*XXX*** requests that it receives
 
 The SPB controller driver should verify that the length of each transfer in a sequence does not exceed the driver-specified limit. For example, the SkeletonI2C sample driver in the Windows Driver Kit (WDK) fails a **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request that specifies a transfer exceeding 4K bytes and sets the status code for this request to STATUS\_INVALID\_PARAMETER. Before initiating a sequence operation for a **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request, the driver should validate the parameters for all transfers in the sequence to verify that the operation can be successfully completed.
 
-SpbCx never precedes an *EvtSpbControllerIoSequence* callback with an [*EvtSpbControllerLock*](buses.evtspbcontrollerlock) callback, and it never follows an *EvtSpbControllerIoSequence* callback with an [*EvtSpbControllerUnlock*](buses.evtspbcontrollerlock) callback.
+SpbCx never precedes an *EvtSpbControllerIoSequence* callback with an [*EvtSpbControllerLock*](https://msdn.microsoft.com/library/windows/hardware/hh450814) callback, and it never follows an *EvtSpbControllerIoSequence* callback with an [*EvtSpbControllerUnlock*](https://msdn.microsoft.com/library/windows/hardware/hh450814) callback.
 
 ## <a href="" id="buses-client-implemented-sequences"></a>Client-Implemented Sequences
 
 
-A client of an SPB controller driver can explicitly perform an I/O transfer sequence as a series of simple reads and writes. The client can be either a kernel-mode driver or a user-mode driver that controls a peripheral device that is attached to the bus. Before the first transfer in the sequence, the client sends an [**IOCTL\_SPB\_LOCK\_CONTROLLER**](buses.ioctl_spb_lock_controller) request to the target device to prevent other, unrelated bus accesses from occurring between the transfers in the sequence. Next, the client sends [**IRP\_MJ\_READ**](kernel.irp_mj_read) and [**IRP\_MJ\_WRITE**](kernel.irp_mj_write) requests to perform the transfers in the sequence. Finally, the client sends an [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](buses.ioctl_spb_unlock_controller) request to release the lock.
+A client of an SPB controller driver can explicitly perform an I/O transfer sequence as a series of simple reads and writes. The client can be either a kernel-mode driver or a user-mode driver that controls a peripheral device that is attached to the bus. Before the first transfer in the sequence, the client sends an [**IOCTL\_SPB\_LOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450858) request to the target device to prevent other, unrelated bus accesses from occurring between the transfers in the sequence. Next, the client sends [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) and [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819) requests to perform the transfers in the sequence. Finally, the client sends an [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450859) request to release the lock.
 
-A client might need to implement this type of I/O transfer sequence if a later transfer in the sequence has a dependency on an earlier transfer. For example, the first read might indicate how many more bytes to subsequently read or write. If no such dependency exists, however, the client should send an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](buses.ioctl_spb_execute_sequence) request to the SPB controller driver, which can perform the sequence more efficiently.
+A client might need to implement this type of I/O transfer sequence if a later transfer in the sequence has a dependency on an earlier transfer. For example, the first read might indicate how many more bytes to subsequently read or write. If no such dependency exists, however, the client should send an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) request to the SPB controller driver, which can perform the sequence more efficiently.
 
 Between the **IOCTL\_SPB\_LOCK\_CONTROLLER** request that starts a client-implemented sequence, and the **IOCTL\_SPB\_UNLOCK\_CONTROLLER** request that ends the sequence, the only I/O requests that the client can send to the target device are **IRP\_MJ\_READ** and **IRP\_MJ\_WRITE** requests. Any violation of this rule is an error.
 
 SPB locks are used only to guarantee that a sequence of reads and writes is performed as an atomic bus operation, and should be used exclusively for that purpose.
 
-For more information, see [Handling Client-Implemented Sequences](buses.handling_client_implemented_sequences).
+For more information, see [Handling Client-Implemented Sequences](https://msdn.microsoft.com/library/windows/hardware/jj191736).
 
  
 
@@ -64,6 +64,6 @@ For more information, see [Handling Client-Implemented Sequences](buses.handling
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20I/O%20Transfer%20Sequences%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20I/O%20Transfer%20Sequences%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

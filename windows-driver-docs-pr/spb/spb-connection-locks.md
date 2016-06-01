@@ -1,25 +1,25 @@
 ---
-Description: 'Connection locks are useful for enabling two clients to share access to a target peripheral device on a simple peripheral bus (SPB).'
-MS-HAID: 'SPB.spb\_connection\_locks'
+title: SPB Connection Locks
+author: windows-driver-content
+description: Connection locks are useful for enabling two clients to share access to a target peripheral device on a simple peripheral bus (SPB).
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: SPB Connection Locks
-author: windows-driver-content
+ms.assetid: 073D9854-0F51-4518-A22B-0A0546694E30
 ---
 
 # SPB Connection Locks
 
 
-Connection locks are useful for enabling two clients to share access to a target peripheral device on a [simple peripheral bus](buses.simple_peripheral_buses) (SPB). Both clients can open logical connections to the same target device and use the connection lock when either client requires exclusive access to the device to perform a series of I/O operations. When one client holds the connection lock, requests by the second client to access the device are automatically deferred until the first client releases the lock.
+Connection locks are useful for enabling two clients to share access to a target peripheral device on a [simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPB). Both clients can open logical connections to the same target device and use the connection lock when either client requires exclusive access to the device to perform a series of I/O operations. When one client holds the connection lock, requests by the second client to access the device are automatically deferred until the first client releases the lock.
 
-A client uses the [**IOCTL\_SPB\_LOCK\_CONNECTION**](buses.ioctl_spb_lock_connection) and [**IOCTL\_SPB\_UNLOCK\_CONNECTION**](buses.ioctl_spb_unlock_connection) requests to acquire and release the connection lock on a target device on an SPB. A client sends these I/O control (IOCTL) requests to the file object for the device.
+A client uses the [**IOCTL\_SPB\_LOCK\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/jj819324) and [**IOCTL\_SPB\_UNLOCK\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/jj819325) requests to acquire and release the connection lock on a target device on an SPB. A client sends these I/O control (IOCTL) requests to the file object for the device.
 
-The driver for an SPB-connected peripheral device is typically either a User-Mode Driver Framework (UMDF) driver or Kernel-Mode Driver Framework (KMDF) driver. To send an IOCTL request to an SPB-connected peripheral device, a UMDF driver calls a method such as [**IWDFIoRequest::Send**](umdf.iwdfiorequest_send). A KMDF driver calls a method such as [**WdfIoTargetSendIoctlSynchronously**](kmdf.wdfiotargetsendioctlsynchronously).
+The driver for an SPB-connected peripheral device is typically either a User-Mode Driver Framework (UMDF) driver or Kernel-Mode Driver Framework (KMDF) driver. To send an IOCTL request to an SPB-connected peripheral device, a UMDF driver calls a method such as [**IWDFIoRequest::Send**](https://msdn.microsoft.com/library/windows/hardware/ff559149). A KMDF driver calls a method such as [**WdfIoTargetSendIoctlSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff548660).
 
 Typically, connection locks are unnecessary. Most client drivers always have exclusive access to a target device on an SPB. A connection lock is needed only in the relatively rare case in which two clients must share access to the same target device, and one or both clients must sometimes have exclusive access to the device for a series of I/O operations.
 
-By default, if two clients share a target device, the [SPB framework extension](buses.spb_framework_extension) (SpbCx) serializes I/O requests for the device according to the order in which they arrive in the SpbCx request queue. The connection lock overrides the default ordering of requests. After one client acquires the connection lock, SpbCx holds back I/O requests that it receives from the second client until the first client releases the lock.
+By default, if two clients share a target device, the [SPB framework extension](https://msdn.microsoft.com/library/windows/hardware/hh406203) (SpbCx) serializes I/O requests for the device according to the order in which they arrive in the SpbCx request queue. The connection lock overrides the default ordering of requests. After one client acquires the connection lock, SpbCx holds back I/O requests that it receives from the second client until the first client releases the lock.
 
 In the current implementation of SpbCx, the primary use of connection locks is to enable the client driver for a target device to share access to the device with the ACPI driver, Acpi.sys. Acpi.sys is a system-supplied driver that manages certain core-resource devices on behalf of the ACPI firmware for the hardware platform. For example, a platform that uses a System on a Chip (SoC) might also contain a power management integrated circuit (PMIC) that is accessed by both Acpi.sys and a client driver.
 
@@ -32,23 +32,23 @@ A typical use of a connection lock is to implement an atomic read-modify-write o
 
 The following list describes the series of I/O requests that a client might send to an SPB-connected target device to perform a read-modify-write operation on the device:
 
-1.  [**IOCTL\_SPB\_LOCK\_CONNECTION**](buses.ioctl_spb_lock_connection) – Acquire the connection lock on the target device.
-2.  [**IRP\_MJ\_READ**](kernel.irp_mj_read) – Read a block of data from the device address so that the client can interpret and modify the data.
-3.  [**IRP\_MJ\_WRITE**](kernel.irp_mj_write) – Write the modified block of data to the device address.
-4.  [**IOCTL\_SPB\_UNLOCK\_CONNECTION**](buses.ioctl_spb_unlock_connection) – Release the connection lock on the target device.
+1.  [**IOCTL\_SPB\_LOCK\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/jj819324) – Acquire the connection lock on the target device.
+2.  [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) – Read a block of data from the device address so that the client can interpret and modify the data.
+3.  [**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff550819) – Write the modified block of data to the device address.
+4.  [**IOCTL\_SPB\_UNLOCK\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/jj819325) – Release the connection lock on the target device.
 
 The preceding list might be appropriate for a simple device that implements a single device function.
 
-However, a more complex device might implement several device functions. This device might contain a function-address register that the client loads at the start of a data transfer. For this device, an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](buses.ioctl_spb_execute_sequence) request can combine the loading of the function-address register and the data transfer that follows into a single atomic bus operation. For more information, see the description of the example I²C device in [Atomic Bus Operations](buses.atomic_bus_operations).
+However, a more complex device might implement several device functions. This device might contain a function-address register that the client loads at the start of a data transfer. For this device, an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) request can combine the loading of the function-address register and the data transfer that follows into a single atomic bus operation. For more information, see the description of the example I²C device in [Atomic Bus Operations](https://msdn.microsoft.com/library/windows/hardware/jj850339).
 
 ## Comparison with controller locks
 
 
 A client uses a connection lock to obtain exclusive access to a target device, but the connection lock does not prevent data transfers to or from other devices on the bus.
 
-To perform a series of data transfers as an atomic bus operation, clients typically use an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](buses.ioctl_spb_execute_sequence) request. A less common way to perform an atomic bus operation is to use a controller lock. A client sends [**IOCTL\_SPB\_LOCK\_CONTROLLER**](buses.ioctl_spb_lock_controller) and [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](buses.ioctl_spb_unlock_controller) requests to a acquire and release a controller lock.
+To perform a series of data transfers as an atomic bus operation, clients typically use an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) request. A less common way to perform an atomic bus operation is to use a controller lock. A client sends [**IOCTL\_SPB\_LOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450858) and [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450859) requests to a acquire and release a controller lock.
 
-Controller locks are distinct from connection locks. A controller lock enables a sequence of I/O transfers to and from a target device on the bus to be performed as a single, atomic bus operation. While the controller lock is in effect, transfers to or from other devices on the bus are deferred until the controller lock is released. For more information, see [Atomic Bus Operations](buses.atomic_bus_operations).
+Controller locks are distinct from connection locks. A controller lock enables a sequence of I/O transfers to and from a target device on the bus to be performed as a single, atomic bus operation. While the controller lock is in effect, transfers to or from other devices on the bus are deferred until the controller lock is released. For more information, see [Atomic Bus Operations](https://msdn.microsoft.com/library/windows/hardware/jj850339).
 
 **Note**  In some implementations, a connection lock might, as a side effect, prevent transfers to other devices on the bus. However, this behavior is implementation-dependent and client drivers should not rely on it. In contrast, a controller lock reliably prevents another client from accessing the same target device as the client that holds the controller lock, and clients can safely depend on this behavior.
 
@@ -66,6 +66,6 @@ Nested acquisitions of a connection lock are illegal. After a client has acquire
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20SPB%20Connection%20Locks%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20SPB%20Connection%20Locks%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

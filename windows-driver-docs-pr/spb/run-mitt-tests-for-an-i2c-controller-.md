@@ -1,11 +1,11 @@
 ---
-Description: 'I²C test modules that are included in the MITT software package can be used to test data transfers for an I²C controller and its driver. The MITT board acts as a client device connected to the I²C bus.'
-MS-HAID: 'SPB.run\_mitt\_tests\_for\_an\_i2c\_controller\_'
+title: I2C controller tests in MITT
+author: windows-driver-content
+description: I²C test modules that are included in the MITT software package can be used to test data transfers for an I²C controller and its driver. The MITT board acts as a client device connected to the I²C bus.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: I2C controller tests in MITT
-author: windows-driver-content
+ms.assetid: E40B9ABB-B119-4EC1-A383-EB96CC350A25
 ---
 
 # I2C controller tests in MITT
@@ -24,9 +24,9 @@ I²C test modules that are included in the MITT software package can be used to 
 ## Before you begin...
 
 
--   Get a MITT board and an I²C adapter board. See [Buy hardware for using MITT](buses.multi_interface_test_tool__mitt__).
--   [Download the MITT software package](buses.mitt_software_package). Install it on the system under test.
--   Install MITT firmware on the MITT board. See [Get started with MITT](buses.get_started_with_mitt___).
+-   Get a MITT board and an I²C adapter board. See [Buy hardware for using MITT](https://msdn.microsoft.com/library/windows/hardware/dn919811).
+-   [Download the MITT software package](https://msdn.microsoft.com/library/windows/hardware/dn919810). Install it on the system under test.
+-   Install MITT firmware on the MITT board. See [Get started with MITT](https://msdn.microsoft.com/library/windows/hardware/dn919779).
 
 ## Hardware setup
 
@@ -70,7 +70,7 @@ Perform these steps on the system under test that has the I²C controller:
 
      
 
-2.  Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](p_oembringup.microsoft_asl_compiler).
+2.  Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](https://msdn.microsoft.com/library/windows/hardware/dn551195).
 
     **Note**  Change "\\\\\_SB\_.I2C2" to ACPI entry name for the I²C controller to test.
 
@@ -181,9 +181,9 @@ You are now ready to run I²C tests. You can run a single test, all tests at onc
 ![i2c schematic](images/i2c-schematic.png)
 
 ## Related topics
-[Testing with Multi Interface Test Tool (MITT)](buses.testing_with_multi_interface_test_tool__mitt_)  
+[Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20I2C%20controller%20tests%20in%20MITT%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20I2C%20controller%20tests%20in%20MITT%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

@@ -1,21 +1,21 @@
 ---
-Description: 'An SPB controller is a device that controls a simple peripheral bus (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB.'
-MS-HAID: 'SPB.spb\_controller\_drivers'
+title: SPB controller drivers
+author: windows-driver-content
+description: An SPB controller is a device that controls a simple peripheral bus (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: SPB controller drivers
-author: windows-driver-content
+ms.assetid: 046353F9-315F-4328-8ECA-1C23AF87B4B4
 ---
 
 # SPB controller drivers
 
 
-An SPB controller is a device that controls a [simple peripheral bus](buses.simple_peripheral_buses) (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB. The hardware vendor for an SPB controller provides an SPB controller driver to manage the hardware functions in the controller.
+An SPB controller is a device that controls a [simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB. The hardware vendor for an SPB controller provides an SPB controller driver to manage the hardware functions in the controller.
 
-Starting with Windows 8, the SPB framework extension (SpbCx) simplifies the development of controller drivers for [simple peripheral buses](buses.simple_peripheral_buses) (SPBs). SpbCx is a system-supplied extension to the [Kernel-Mode Driver Framework](kmdf.kernel_mode_driver_framework_overview) (KMDF). The hardware vendor for the SPB controller device supplies a controller driver to perform all hardware-specific driver operations. This driver communicates with SpbCx to perform operations that are specific to SPB controllers, and communicates directly with KMDF to perform generic driver operations.
+Starting with Windows 8, the SPB framework extension (SpbCx) simplifies the development of controller drivers for [simple peripheral buses](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPBs). SpbCx is a system-supplied extension to the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff544296) (KMDF). The hardware vendor for the SPB controller device supplies a controller driver to perform all hardware-specific driver operations. This driver communicates with SpbCx to perform operations that are specific to SPB controllers, and communicates directly with KMDF to perform generic driver operations.
 
-For example, an SPB controller driver typically calls the [**WdfDeviceInitSetPnpPowerEventCallbacks**](kmdf.wdfdeviceinitsetpnppowereventcallbacks) method in KMDF to register to receive power event callbacks, and calls the [**WdfInterruptCreate**](kmdf.wdfinterruptcreate) method to connect the driver's interrupt service routine (ISR) to the interrupt from the SPB controller. To perform SPB-specific operations, the SPB controller communicates with SpbCx through the [SpbCx device driver interface](buses.spbcx_device_driver_interface) (DDI).
+For example, an SPB controller driver typically calls the [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff546135) method in KMDF to register to receive power event callbacks, and calls the [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) method to connect the driver's interrupt service routine (ISR) to the interrupt from the SPB controller. To perform SPB-specific operations, the SPB controller communicates with SpbCx through the [SpbCx device driver interface](https://msdn.microsoft.com/library/windows/hardware/hh698219) (DDI).
 
 SpbCx cooperates with the SBP controller driver to handle I/O requests for peripheral devices that are connected to the SPB. SpbCx performs processing tasks that are common to SPB controller drivers. These tasks include managing the I/O request queues for the SPB controller. These queues contain I/O requests from the drivers that manage the peripheral devices that are connected to the bus. The SPB controller driver performs all hardware-specific operations that are required to handle these requests.
 
@@ -25,7 +25,7 @@ The following diagram shows the SPB controller driver and SpbCx.
 
 The SPB controller driver and SpbCx both run in kernel mode, and communicate with each other through the SpbCx DDI. The SPB controller driver calls driver support methods that are implemented by SpbCx. SpbCx calls event callback functions that are implemented by the SPB controller driver.
 
-The drivers that send I/O requests to the SPB controller are either kernel-mode drivers that use the [Kernel-Mode Driver Framework](kmdf.kernel_mode_driver_framework_overview) (KMDF), or user-mode drivers that use the [User-Mode Driver Framework](umdf.introduction_to_umdf) (UMDF). These drivers can send read and write requests to transfer data to and from SPB-connected peripheral devices. In addition, the drivers can send I/O control (IOCTL) requests to perform SPB-specific operations.
+The drivers that send I/O requests to the SPB controller are either kernel-mode drivers that use the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff544296) (KMDF), or user-mode drivers that use the [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff554928) (UMDF). These drivers can send read and write requests to transfer data to and from SPB-connected peripheral devices. In addition, the drivers can send I/O control (IOCTL) requests to perform SPB-specific operations.
 
 The SPB controller driver directly accesses the hardware registers of the SPB controller device to initiate data transfers to and from peripheral devices that are connected to the SPB. For an SPB such as I²C, these data transfers occur at relatively slow speeds. Although the hardware registers of the SPB controller are likely to be memory mapped, the registers of the peripheral devices must be accessed serially through the SPB.
 
@@ -49,36 +49,32 @@ Only drivers can send I/O requests directly to an SPB controller. When a user-mo
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>[SPB Framework Extension (SpbCx)](buses.spb_framework_extension)</p></td>
-<td><p>Starting with Windows 8, the SPB framework extension (SpbCx) is a system-supplied extension to the [Kernel-Mode Driver Framework](kmdf.kernel_mode_driver_framework_overview) (KMDF). SpbCx works together with an [SPB controller driver](buses.spb_controller_driver_overview) to perform I/O operations on peripheral devices that are connected to a [simple peripheral bus](buses.simple_peripheral_buses) (SPB), such as I²C or SPI.</p></td>
+<td><p>[SPB Framework Extension (SpbCx)](https://msdn.microsoft.com/library/windows/hardware/hh406203)</p></td>
+<td><p>Starting with Windows 8, the SPB framework extension (SpbCx) is a system-supplied extension to the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff544296) (KMDF). SpbCx works together with an [SPB controller driver](https://msdn.microsoft.com/library/windows/hardware/hh698221) to perform I/O operations on peripheral devices that are connected to a [simple peripheral bus](https://msdn.microsoft.com/library/windows/hardware/hh450903) (SPB), such as I²C or SPI.</p></td>
 </tr>
 <tr class="even">
-<td><p>[SpbCx Interfaces](buses.spbcx_interfaces)</p></td>
+<td><p>[SpbCx Interfaces](https://msdn.microsoft.com/library/windows/hardware/hh450913)</p></td>
 <td><p>The SPB framework extension (SpbCx) has two interfaces. The first is an I/O request interface through which SpbCx accepts I/O requests that clients (peripheral drivers) of the SPB controller send to peripheral devices that are attached to the bus. The second interface is a device driver interface (DDI) through which SpbCx communicates with the SPB controller driver.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[I/O Transfer Sequences](buses.i_o_transfer_sequences)</p></td>
+<td><p>[I/O Transfer Sequences](https://msdn.microsoft.com/library/windows/hardware/hh450890)</p></td>
 <td><p>The SPB framework extension (SpbCx) supports I/O transfer sequences. An I/O transfer sequence is an ordered set of bus transfers (read and write operations) that is performed as a single, atomic bus operation. All of the transfers in an I/O transfer sequence access the same target device on the bus.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Handling Client-Implemented Sequences](buses.handling_client_implemented_sequences)</p></td>
-<td><p>The optional [<em>EvtSpbControllerLock</em>](buses.evtspbcontrollerlock) and [<em>EvtSpbControllerUnlock</em>](buses.evtspbcontrollerunlock) event callback functions perform complementary operations. The <em>EvtSpbControllerLock</em> function is a handler for [<strong>IOCTL_SPB_LOCK_CONTROLLER</strong>](buses.ioctl_spb_lock_controller) requests. The <em>EvtSpbControllerUnlock</em> function is a handler for [<strong>IOCTL_SPB_UNLOCK_CONTROLLER</strong>](buses.ioctl_spb_unlock_controller) requests. A client (that is, the driver for a peripheral device on the bus) sends these requests to start and end [I/O transfer sequences](buses.i_o_transfer_sequences). Most SPB controller drivers do not support <strong>IOCTL_SPB_LOCK_CONTROLLER</strong> and <strong>IOCTL_SPB_UNLOCK_CONTROLLER</strong> requests and, therefore, do not implement <em>EvtSpbControllerLock</em> and <em>EvtSpbControllerUnlock</em> functions.</p></td>
+<td><p>[Handling Client-Implemented Sequences](https://msdn.microsoft.com/library/windows/hardware/jj191736)</p></td>
+<td><p>The optional [<em>EvtSpbControllerLock</em>](https://msdn.microsoft.com/library/windows/hardware/hh450814) and [<em>EvtSpbControllerUnlock</em>](https://msdn.microsoft.com/library/windows/hardware/hh450816) event callback functions perform complementary operations. The <em>EvtSpbControllerLock</em> function is a handler for [<strong>IOCTL_SPB_LOCK_CONTROLLER</strong>](https://msdn.microsoft.com/library/windows/hardware/hh450858) requests. The <em>EvtSpbControllerUnlock</em> function is a handler for [<strong>IOCTL_SPB_UNLOCK_CONTROLLER</strong>](https://msdn.microsoft.com/library/windows/hardware/hh450859) requests. A client (that is, the driver for a peripheral device on the bus) sends these requests to start and end [I/O transfer sequences](https://msdn.microsoft.com/library/windows/hardware/hh450890). Most SPB controller drivers do not support <strong>IOCTL_SPB_LOCK_CONTROLLER</strong> and <strong>IOCTL_SPB_UNLOCK_CONTROLLER</strong> requests and, therefore, do not implement <em>EvtSpbControllerLock</em> and <em>EvtSpbControllerUnlock</em> functions.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs](buses.using_the_spb_transfer_list_structure)</p></td>
-<td><p>If your simple peripheral bus (SPB) controller driver supports one or more custom I/O control (IOCTL) requests, use the [<strong>SPB_TRANSFER_LIST</strong>](buses.spb_transfer_list) structure to describe the read and write buffers in these requests. This structure provides a uniform way to describe the buffers in a request, and avoids the buffer-copying overhead associated with METHOD_BUFFERED I/O operations.</p></td>
+<td><p>[Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs](https://msdn.microsoft.com/library/windows/hardware/hh974776)</p></td>
+<td><p>If your simple peripheral bus (SPB) controller driver supports one or more custom I/O control (IOCTL) requests, use the [<strong>SPB_TRANSFER_LIST</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406221) structure to describe the read and write buffers in these requests. This structure provides a uniform way to describe the buffers in a request, and avoids the buffer-copying overhead associated with METHOD_BUFFERED I/O operations.</p></td>
 </tr>
 <tr class="even">
-<td><p>[Handling IOCTL_SPB_FULL_DUPLEX Requests](buses.handling_ioctl_spb_full_duplex_requests)</p></td>
-<td><p>Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus. To support these full-duplex transfers, the definition of the simple peripheral bus (SPB) I/O request interface includes, as an option, the [<strong>IOCTL_SPB_FULL_DUPLEX</strong>](buses.ioctl_spb_full_duplex) I/O control code (IOCTL). Only SPB controller drivers for bus controllers that implement full-duplex transfers in hardware should support the <strong>IOCTL_SPB_FULL_DUPLEX</strong> IOCTL.</p></td>
+<td><p>[Handling IOCTL_SPB_FULL_DUPLEX Requests](https://msdn.microsoft.com/library/windows/hardware/hh974773)</p></td>
+<td><p>Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus. To support these full-duplex transfers, the definition of the simple peripheral bus (SPB) I/O request interface includes, as an option, the [<strong>IOCTL_SPB_FULL_DUPLEX</strong>](https://msdn.microsoft.com/library/windows/hardware/hh974774) I/O control code (IOCTL). Only SPB controller drivers for bus controllers that implement full-duplex transfers in hardware should support the <strong>IOCTL_SPB_FULL_DUPLEX</strong> IOCTL.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[How to Get the Connection Settings for a Device](buses.how_to_get_the_connection_settings_for_a_device)</p></td>
-<td><p>If your SPB controller driver registers an [<em>EvtSpbTargetConnect</em>](buses.evtspbtargetconnect) callback function, the [SPB framework extension](buses.spb_framework_extension) (SpbCx) calls this function when a client (peripheral driver) of the controller sends an [<strong>IRP_MJ_CREATE</strong>](kernel.irp_mj_create) request to open a logical connection to a target device on the bus. In response to the <em>EvtSpbTargetConnect</em> callback, the SPB controller driver should call the [<strong>SpbTargetGetConnectionParameters</strong>](buses.spbtargetgetconnectionparameters) method to get the connection settings for the target device. The SPB controller driver stores these settings and uses them later to access the device in response to I/O requests from the client.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[SPB controller driver reference](buses.simple_peripheral_bus_driver_reference)</p></td>
-<td><p>Programming reference for writing an SPB controller driver.</p></td>
+<td><p>[How to Get the Connection Settings for a Device](https://msdn.microsoft.com/library/windows/hardware/jj938061)</p></td>
+<td><p>If your SPB controller driver registers an [<em>EvtSpbTargetConnect</em>](https://msdn.microsoft.com/library/windows/hardware/hh450818) callback function, the [SPB framework extension](https://msdn.microsoft.com/library/windows/hardware/hh406203) (SpbCx) calls this function when a client (peripheral driver) of the controller sends an [<strong>IRP_MJ_CREATE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550729) request to open a logical connection to a target device on the bus. In response to the <em>EvtSpbTargetConnect</em> callback, the SPB controller driver should call the [<strong>SpbTargetGetConnectionParameters</strong>](https://msdn.microsoft.com/library/windows/hardware/hh450926) method to get the connection settings for the target device. The SPB controller driver stores these settings and uses them later to access the device in response to I/O requests from the client.</p></td>
 </tr>
 </tbody>
 </table>
@@ -91,6 +87,6 @@ Only drivers can send I/O requests directly to an SPB controller. When a user-mo
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20SPB%20controller%20drivers%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20SPB%20controller%20drivers%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

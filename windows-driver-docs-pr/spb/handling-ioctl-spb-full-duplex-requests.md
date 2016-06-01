@@ -1,27 +1,27 @@
 ---
-Description: 'Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus.'
-MS-HAID: 'SPB.handling\_ioctl\_spb\_full\_duplex\_requests'
+title: Handling IOCTL\_SPB\_FULL\_DUPLEX Requests
+author: windows-driver-content
+description: Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'Handling IOCTL\_SPB\_FULL\_DUPLEX Requests'
-author: windows-driver-content
+ms.assetid: B200461F-9F9C-43A7-BA78-0864FD58C64E
 ---
 
 # Handling IOCTL\_SPB\_FULL\_DUPLEX Requests
 
 
-Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus. To support these full-duplex transfers, the definition of the simple peripheral bus (SPB) I/O request interface includes, as an option, the [**IOCTL\_SPB\_FULL\_DUPLEX**](buses.ioctl_spb_full_duplex) I/O control code (IOCTL). Only SPB controller drivers for bus controllers that implement full-duplex transfers in hardware should support the **IOCTL\_SPB\_FULL\_DUPLEX** IOCTL.
+Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus. To support these full-duplex transfers, the definition of the simple peripheral bus (SPB) I/O request interface includes, as an option, the [**IOCTL\_SPB\_FULL\_DUPLEX**](https://msdn.microsoft.com/library/windows/hardware/hh974774) I/O control code (IOCTL). Only SPB controller drivers for bus controllers that implement full-duplex transfers in hardware should support the **IOCTL\_SPB\_FULL\_DUPLEX** IOCTL.
 
 If an SPB controller driver supports I/O requests for full-duplex transfers, the driver should use the **IOCTL\_SPB\_FULL\_DUPLEX** IOCTL for these requests, and should follow the implementation guidelines that are presented in this topic. The purpose of these guidelines is to encourage uniform behavior across all hardware platforms that support **IOCTL\_SPB\_FULL\_DUPLEX** requests. Drivers for SPB-connected peripheral devices can then rely on these requests to produce similar results regardless of what platform that they run on.
 
 ## Buffer Requirements
 
 
-An [**IOCTL\_SPB\_FULL\_DUPLEX**](buses.ioctl_spb_full_duplex) request is formatted the same as an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](buses.ioctl_spb_execute_sequence) request, but with these constraints:
+An [**IOCTL\_SPB\_FULL\_DUPLEX**](https://msdn.microsoft.com/library/windows/hardware/hh974774) request is formatted the same as an [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) request, but with these constraints:
 
--   The [**SPB\_TRANSFER\_LIST**](buses.spb_transfer_list) structure in the request must contain exactly two entries. The first entry describes a buffer that contains data to write to the device. The second entry describes a buffer used to hold data read from the device.
--   Each [**SPB\_TRANSFER\_LIST\_ENTRY**](buses.spb_transfer_list_entry) structure in the transfer list must specify a **DelayInUs** value of zero.
+-   The [**SPB\_TRANSFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/hh406221) structure in the request must contain exactly two entries. The first entry describes a buffer that contains data to write to the device. The second entry describes a buffer used to hold data read from the device.
+-   Each [**SPB\_TRANSFER\_LIST\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/hh406223) structure in the transfer list must specify a **DelayInUs** value of zero.
 
 During a full-duplex transfer, the read and write transfers start in unison. The first byte of write data is transmitted over the bus at the same time as the first byte of read data.
 
@@ -38,9 +38,9 @@ If the read buffer is shorter than the write buffer, the count value in the **In
 ## Parameter Checking
 
 
-Although the [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](buses.ioctl_spb_execute_sequence) and **IOCTL\_SPB\_FULL\_DUPLEX** requests have similar formats, they are handled differently by the SPB framework extension (SpbCx). For the **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request, SpbCx validates the parameter values in the request, and captures the request's buffers in the process context of the request originator. SpbCx passes **IOCTL\_SPB\_EXECUTE\_SEQUENCE** requests to the SPB controller driver through the driver's [*EvtSpbControllerIoSequence*](buses.evtspbcontrolleriosequence) callback function, which is dedicated to these requests.
+Although the [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) and **IOCTL\_SPB\_FULL\_DUPLEX** requests have similar formats, they are handled differently by the SPB framework extension (SpbCx). For the **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request, SpbCx validates the parameter values in the request, and captures the request's buffers in the process context of the request originator. SpbCx passes **IOCTL\_SPB\_EXECUTE\_SEQUENCE** requests to the SPB controller driver through the driver's [*EvtSpbControllerIoSequence*](https://msdn.microsoft.com/library/windows/hardware/hh450810) callback function, which is dedicated to these requests.
 
-In contrast, SpbCx treats the **IOCTL\_SPB\_FULL\_DUPLEX** request as a custom, driver-defined IOCTL request. SpbCx passes **IOCTL\_SPB\_FULL\_DUPLEX** requests to the SPB controller driver through the driver's [*EvtSpbControllerIoOther*](buses.evtspbcontrollerioother) callback function, which also handles any custom IOCTL requests that the driver supports. SpbCx does no parameter checking or buffer capture for these requests. The driver is responsible for any parameter checking or buffer capture that might be required for the IOCTL requests that the driver receives through its *EvtSpbControllerIoOther* function. To enable buffer capture, the driver must supply an [*EvtIoInCallerContext*](kmdf.evtioincallercontext) callback function when the driver registers its *EvtSpbControllerIoOther* function. For more information, see [Using the **SPB\_TRANSFER\_LIST** Structure for Custom IOCTLs](buses.using_the_spb_transfer_list_structure).
+In contrast, SpbCx treats the **IOCTL\_SPB\_FULL\_DUPLEX** request as a custom, driver-defined IOCTL request. SpbCx passes **IOCTL\_SPB\_FULL\_DUPLEX** requests to the SPB controller driver through the driver's [*EvtSpbControllerIoOther*](https://msdn.microsoft.com/library/windows/hardware/hh450805) callback function, which also handles any custom IOCTL requests that the driver supports. SpbCx does no parameter checking or buffer capture for these requests. The driver is responsible for any parameter checking or buffer capture that might be required for the IOCTL requests that the driver receives through its *EvtSpbControllerIoOther* function. To enable buffer capture, the driver must supply an [*EvtIoInCallerContext*](https://msdn.microsoft.com/library/windows/hardware/ff541764) callback function when the driver registers its *EvtSpbControllerIoOther* function. For more information, see [Using the **SPB\_TRANSFER\_LIST** Structure for Custom IOCTLs](https://msdn.microsoft.com/library/windows/hardware/hh974776).
 
 ## <a href="" id="code-example"></a>
 
@@ -148,6 +148,6 @@ After checking the parameter values, the preceding code example calls a driver-i
 
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20Handling%20IOCTL_SPB_FULL_DUPLEX%20Requests%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20Handling%20IOCTL_SPB_FULL_DUPLEX%20Requests%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
