@@ -1,0 +1,60 @@
+---
+Description: 'Starting with Windows 8, the SPB framework extension (SpbCx) is a system-supplied component that supports the SPB I/O request interface.'
+MS-HAID: 'SPB.using\_the\_spb\_i\_o\_request\_interface'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+title: 'Using the SPB I/O Request Interface'
+---
+
+# Using the SPB I/O Request Interface
+
+
+Starting with Windows 8, the [SPB framework extension](buses.spb_framework_extension) (SpbCx) is a system-supplied component that supports the [SPB I/O request interface](buses.spb_i_o_request_interface). SPB peripheral device drivers use this interface to send I/O requests to devices that are connected to I²C, SPI, and other [simple peripheral buses](buses.simple_peripheral_buses) (SPBs). By making a standardized I/O request interface available across a variety of bus types, SpbCx simplifies the task of providing driver support for a family of peripheral devices across a variety of hardware platforms and SPB controllers from different hardware vendors.
+
+## <a href="" id="using-spb-io-request-interface"></a>
+
+
+If the following conditions are met, the hardware vendor for an SPB-connected peripheral device can develop one device driver that can work across multiple bus types:
+
+-   The peripheral device must be hardware-compatible with these buses.
+-   The driver can use the same device-control protocols across all of these bus types.
+
+By eliminating bus-specific code from peripheral drivers, the SPB framework extension shortens development time for these drivers and ensures more consistent behavior across the supported bus types.
+
+Peripheral devices that are connected to SPBs are not memory-mapped, and the drivers for these devices cannot directly access the hardware registers of these devices. Instead, an SPB peripheral device driver must rely on an SPB controller to serially transfer data to and from the device. To request such a transfer, the driver must send an I/O request to the device. This I/O request is sent to a queue that is managed by SpbCx.
+
+SpbCx cooperates with an SPB controller driver to handle I/O requests from drivers. The hardware vendor for the SPB controller supplies the SPB controller driver to perform tasks that are specific to the controller hardware.
+
+Only drivers can send I/O requests to the I/O request interface of an SPB controller. Applications cannot directly send I/O requests to an SPB controller. Instead, an application can send I/O requests to the driver for an SPB-connected peripheral device, and then rely on the driver to send the SPB controller any I/O requests that might be required to transfer data to or from the device.
+
+Before a driver can send I/O requests to an SPB-connected peripheral device, the driver must open a open a logical connection to the device. To open this connection, the driver uses the connection ID that it received as a hardware resource from the Plug and Play manager. For more information, see [Connection IDs for SPB Peripheral Devices](buses.connection_ids_for_spb_connected_peripheral_devices).
+
+SpbCx and the SPB controller driver jointly handle read and write requests for SPB-connected peripheral devices. In response to an [**IRP\_MJ\_READ**](serports.irp_mj_read__serial_) request, the SPB controller transfers the specified number of bytes from a peripheral device to a driver-supplied buffer. In response to an [**IRP\_MJ\_WRITE**](serports.irp_mj_write__serial_) request, the SPB controller transfers the specified number of bytes from a driver-supplied buffer to a peripheral device.
+
+For an **IRP\_MJ\_READ** or **IRP\_MJ\_WRITE** request to transfer zero bytes, SpbCx completes the request with a STATUS\_SUCCESS status code, but performs no operation.
+
+SpbCx and the SPB controller driver also handle these SPB-specific I/O control codes (IOCTLs):
+
+-   [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](buses.ioctl_spb_execute_sequence)
+-   [**IOCTL\_SPB\_LOCK\_CONTROLLER**](buses.ioctl_spb_lock_controller)
+-   [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](buses.ioctl_spb_unlock_controller)
+
+An SPB peripheral driver uses these IOCTLs to perform *I/O transfer sequences*. An I/O transfer sequence is an ordered set of bus transfers (read and write operations) that is performed as a single, atomic bus operation. For more information about these IOCTLs, see [I/O Transfer Sequences](buses.i_o_transfer_sequences).
+
+The SPB controller driver for a particular SPB controller might support custom IOCTLs that perform hardware-specific functions. These are IOCTLs that SpbCx does not handle and that the hardware vendor for the SPB controller supports for the benefit of SPB peripheral device drivers that need to perform hardware-specific operations. If an SPB peripheral device driver sends an IOCTL that neither SpbCx nor the SPB controller driver recognizes, no operation is performed and the I/O request is completed with an error status value of STATUS\_NOT\_SUPPORTED.
+
+The driver for an SPB-connected peripheral device is typically either a [User-Mode Driver Framework](umdf.overview_of_the_umdf) (UMDF) driver or [Kernel-Mode Driver Framework](kmdf.kernel_mode_driver_framework_overview) (KMDF) driver. To send a read, write, or IOCTL request to an SPB-connected peripheral device, a UMDF driver calls a method such as [**IWDFIoRequest::Send**](umdf.iwdfiorequest_send). A KMDF driver calls a method such as [**WdfIoTargetSendReadSynchronously**](kmdf.wdfiotargetsendreadsynchronously), [**WdfIoTargetSendWriteSynchronously**](kmdf.wdfiotargetsendwritesynchronously), or [**WdfIoTargetSendIoctlSynchronously**](kmdf.wdfiotargetsendioctlsynchronously).
+
+For code examples that show how to send I/O requests to SPB-connected peripheral devices, see these topics:
+
+[Hardware Resources for User-Mode SPB Peripheral Drivers](buses.hardware_resources_for_user_mode_spb_peripheral_drivers)
+[Hardware Resources for Kernel-Mode SPB Peripheral Drivers](buses.hardware_resources_for_kernel_mode_spb_peripheral_drivers)
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20Using%20the%20SPB%20I/O%20Request%20Interface%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
