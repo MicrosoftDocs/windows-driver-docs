@@ -5,6 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 title: SPB controller drivers
+author: windows-driver-content
 ---
 
 # SPB controller drivers
@@ -75,6 +76,10 @@ Only drivers can send I/O requests directly to an SPB controller. When a user-mo
 <td><p>[How to Get the Connection Settings for a Device](buses.how_to_get_the_connection_settings_for_a_device)</p></td>
 <td><p>If your SPB controller driver registers an [<em>EvtSpbTargetConnect</em>](buses.evtspbtargetconnect) callback function, the [SPB framework extension](buses.spb_framework_extension) (SpbCx) calls this function when a client (peripheral driver) of the controller sends an [<strong>IRP_MJ_CREATE</strong>](kernel.irp_mj_create) request to open a logical connection to a target device on the bus. In response to the <em>EvtSpbTargetConnect</em> callback, the SPB controller driver should call the [<strong>SpbTargetGetConnectionParameters</strong>](buses.spbtargetgetconnectionparameters) method to get the connection settings for the target device. The SPB controller driver stores these settings and uses them later to access the device in response to I/O requests from the client.</p></td>
 </tr>
+<tr class="odd">
+<td><p>[SPB controller driver reference](buses.simple_peripheral_bus_driver_reference)</p></td>
+<td><p>Programming reference for writing an SPB controller driver.</p></td>
+</tr>
 </tbody>
 </table>
 
@@ -84,7 +89,8 @@ Only drivers can send I/O requests directly to an SPB controller. When a user-mo
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20SPB%20controller%20drivers%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSPB\buses%5D:%20SPB%20controller%20drivers%20%20RELEASE:%20%286/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
 
