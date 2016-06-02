@@ -16,39 +16,13 @@ keywords: ["SD WDK buses", "buses WDK , SD", "Secure Digital WDK buses", "memory
 
 
 ## In this section
+[SD Card Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff537964)
 
+[Opening, Initializing and Closing an SD Card Bus Interface](https://msdn.microsoft.com/library/windows/hardware/ff537442)
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[SD Card Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff537964)</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>[Opening, Initializing and Closing an SD Card Bus Interface](https://msdn.microsoft.com/library/windows/hardware/ff537442)</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>[Handling SD Card Interrupts](https://msdn.microsoft.com/library/windows/hardware/ff537177)</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>[SD Card Requests](https://msdn.microsoft.com/library/windows/hardware/ff537983)</p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+[Handling SD Card Interrupts](https://msdn.microsoft.com/library/windows/hardware/ff537177)
 
+[SD Card Requests](https://msdn.microsoft.com/library/windows/hardware/ff537983)
  
 
 ## SD Card Hardware Identifiers
