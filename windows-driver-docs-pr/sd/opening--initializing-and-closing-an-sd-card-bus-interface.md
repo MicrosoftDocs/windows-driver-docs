@@ -1,18 +1,21 @@
 ---
-Description: 'Opening, Initializing and Closing an SD Card Bus Interface'
+title: Opening, Initializing and Closing an SD Card Bus Interface
+author: windows-driver-content
+description: Opening, Initializing and Closing an SD Card Bus Interface
 MS-HAID:
 - 'securedigital\_dg\_e7ed351c-2854-46d5-95c7-a87479b72ee9.xml'
 - 'SD.opening\_\_initializing\_and\_closing\_an\_sd\_card\_bus\_interface'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'Opening, Initializing and Closing an SD Card Bus Interface'
+ms.assetid: 986a352e-c479-444d-9c65-7958dd638bbb
+keywords: ["SD WDK buses , opening interfaces", "SD WDK buses , initializing interfaces", "SD WDK buses , closing interfaces", "initializing SD bus interfaces", "SdBusOpenInterface", "SDBUS_INTERFACE_STANDARD", "interfaces WDK SD bus"]
 ---
 
 # Opening, Initializing and Closing an SD Card Bus Interface
 
 
-Secure Digital (SD) device drivers must open and initialize an SD bus interface to interact with the devices they manage or the host controller. This requires two calls to the SD bus library: a call to [**SdBusOpenInterface**](buses.sdbusopeninterface) followed by a call to a routine supplied by the bus driver that initializes the interface. **SdBusOpenInterface** returns a pointer to the routine that initializes the interface in the **InterfaceReference** member of the [**SDBUS\_INTERFACE\_STANDARD**](buses.sdbus_interface_standard) structure. The device driver must call this initialization routine to supply the bus driver with a pointer to an interrupt notification callback routine. The bus driver uses this callback to notify the device driver of a hardware interrupt. For more information about the routine that initializes an SD bus interface, see [**PSDBUS\_INITIALIZE\_INTERFACE\_ROUTINE**](buses.psdbus_initialize_interface_routine). The device driver normally opens and initializes an SD bus interface from within its [**AddDevice**](kernel.adddevice) routine.
+Secure Digital (SD) device drivers must open and initialize an SD bus interface to interact with the devices they manage or the host controller. This requires two calls to the SD bus library: a call to [**SdBusOpenInterface**](https://msdn.microsoft.com/library/windows/hardware/ff537906) followed by a call to a routine supplied by the bus driver that initializes the interface. **SdBusOpenInterface** returns a pointer to the routine that initializes the interface in the **InterfaceReference** member of the [**SDBUS\_INTERFACE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff537923) structure. The device driver must call this initialization routine to supply the bus driver with a pointer to an interrupt notification callback routine. The bus driver uses this callback to notify the device driver of a hardware interrupt. For more information about the routine that initializes an SD bus interface, see [**PSDBUS\_INITIALIZE\_INTERFACE\_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/ff537618). The device driver normally opens and initializes an SD bus interface from within its [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine.
 
 The following code example illustrates the sequence of calls that open and initialize an SD bus interface:
 
@@ -38,7 +41,7 @@ The following code example illustrates the sequence of calls that open and initi
       }
 ```
 
-In this code example, the device driver calls **SdBusOpenInterface** to open the interface, and the bus driver stores a pointer to the initialization routine in the device extension (**DeviceExtension-&gt;BusInterface.InitializeInterface**). After **SdBusOpenInterface** returns, the driver retrieves this pointer from the device extension. Next, the driver puts a pointer to its own interrupt callback routine, **pMyDriverCallback,** in the [**SDBUS\_INTERFACE\_PARAMETERS**](buses.sdbus_interface_parameters) structure and passes this structure to the initialization routine.
+In this code example, the device driver calls **SdBusOpenInterface** to open the interface, and the bus driver stores a pointer to the initialization routine in the device extension (**DeviceExtension-&gt;BusInterface.InitializeInterface**). After **SdBusOpenInterface** returns, the driver retrieves this pointer from the device extension. Next, the driver puts a pointer to its own interrupt callback routine, **pMyDriverCallback,** in the [**SDBUS\_INTERFACE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff537919) structure and passes this structure to the initialization routine.
 
 The device driver must also retrieve the context information that **SdBusOpenInterface** returns in the **Context** member of the SDBUS\_INTERFACE\_STANDARD structure. Whenever the driver calls an SD bus interface routine, it must pass in this context data.
 
@@ -46,11 +49,11 @@ The device driver must also retrieve the context information that **SdBusOpenInt
 
 To close an SD interface, drivers must dereference the interface by calling the routine in the **InterfaceDereference** member of the SDBUS\_INTERFACE\_STANDARD structure, which frees all resources allocated by the **SdBusOpenInterface** routine. SD device drivers should close all open SD interfaces when receiving any of the following IRPs:
 
-[**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](kernel.irp_mn_query_remove_device)
+[**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551705)
 
-[**IRP\_MN\_REMOVE\_DEVICE**](kernel.irp_mn_remove_device)
+[**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738)
 
-[**IRP\_MN\_SURPRISE\_REMOVAL**](kernel.irp_mn_surprise_removal)
+[**IRP\_MN\_SURPRISE\_REMOVAL**](https://msdn.microsoft.com/library/windows/hardware/ff551760)
 
 The following code example illustrates how a driver can dereference an SD card bus interface:
 
@@ -67,7 +70,8 @@ The **SdBusOpenInterface** call stores a pointer to the interface dereference ro
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSD\buses%5D:%20Opening,%20Initializing%20and%20Closing%20an%20SD%20Card%20Bus%20Interface%20%20RELEASE:%20%285/27/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
 
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BSD\buses%5D:%20Opening,%20Initializing%20and%20Closing%20an%20SD%20Card%20Bus%20Interface%20%20RELEASE:%20%286/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
