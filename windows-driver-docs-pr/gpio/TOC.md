@@ -1,4 +1,4 @@
-# [General-Purpose I/O (GPIO) Driver Design Guide](general-purpose-i-o--gpio--driver-design-guide.md)
+# [General-Purpose I/O (GPIO) Driver Design Guide](index.md)
 ## [GPIO Driver Support Overview](gpio-driver-support-overview.md)
 ## [GpioClx I/O and Interrupt Interfaces](gpioclx-i-o-and-interrupt-interfaces.md)
 ## [GPIO-Based Hardware Resources](gpio-based-hardware-resources.md)
