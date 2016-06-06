@@ -1,0 +1,39 @@
+---
+title: Passive-Level ISRs
+author: windows-driver-content
+description: Starting with Windows 8, kernel-mode driver framework (KMDF) and user-mode driver framework (UMDF) drivers can, as an option, register their interrupt service routines (ISRs) to run at passive level.
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: E7556046-D85C-4CD1-8C27-578BF5CAFF2B
+---
+
+# Passive-Level ISRs
+
+
+Starting with Windows 8, kernel-mode driver framework (KMDF) and user-mode driver framework (UMDF) drivers can, as an option, register their interrupt service routines (ISRs) to run at passive level.
+
+For more information about passive-level ISRs for KMDF and UMDF drivers, see the following topics:
+
+-   [Supporting Passive-Level Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh451035)
+-   [Accessing Hardware and Handling Interrupts](https://msdn.microsoft.com/library/windows/hardware/hh439560)
+
+If a peripheral device uses a general-purpose I/O (GPIO) pin to relay an interrupt request to the processor, the Windows interrupt abstraction conveniently enables the driver for this device to ignore the hardware-specific details of the GPIO controller to which this pin belongs. When the kernel trap handler runs in response to a GPIO-relayed interrupt request from the device, this handler automatically clears or masks, as required, the interrupt in the GPIO hardware registers. Additionally, the kernel trap handler either directly calls the device's ISR, or schedules this ISR to run in another thread.
+
+Frequently, GPIO hardware registers are memory-mapped, in which case the kernel trap handler can directly access them at DIRQL. However, the hardware registers of the peripheral device might not be memory-mapped, in which case, the peripheral device driver must use I/O requests to access them. If so, the ISR for the peripheral device driver must run at IRQL = PASSIVE\_LEVEL so that it can use I/O requests to silence the interrupt or to perform the initial servicing of the interrupt. A passive-level ISR can send an I/O request synchronously and, if necessary, block until the request is completed.
+
+To support a passive-level ISR for a peripheral device that generates an edge-triggered interrupt request signal, the kernel trap handler clears the pending interrupt at the GPIO pin, and then schedules the ISR to run in a passive-level kernel thread.
+
+To support a passive-level ISR for a peripheral device that generates a level-triggered interrupt request signal, the kernel trap handler masks the pending interrupt at the GPIO pin, and then schedules the ISR to run in a passive-level kernel thread. The ISR is responsible for clearing the interrupt request in the peripheral device. After the ISR returns, the kernel thread unmasks the interrupt at the GPIO pin.
+
+Because the interrupt remains masked until the ISR returns, the device's passive-level ISR should perform only the initial servicing of the interrupt, and then return to avoid delaying passive-level ISRs for other devices. Typically, the driver should defer additional interrupt-related processing to the interrupt worker thread, which runs at a lower priority than the ISR.
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bgpio\parports%5D:%20Passive-Level%20ISRs%20%20RELEASE:%20%286/3/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
