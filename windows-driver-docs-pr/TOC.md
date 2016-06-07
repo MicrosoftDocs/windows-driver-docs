@@ -5,9 +5,13 @@
 # [Device and Driver Technologies](device-and-driver-technologies.md)
 ## [ACPI](acpi/)
 ## [Installable file system drivers](ifs/)
-## [NFC devices](nfc/)
+## [GPIO drivers](gpio/)
+## [NFC device drivers](nfc/)
+## [PCI drivers](pci/)
 ## [PCMCIA drivers](pcmcia/)
-## [PCI](pci/)
+## [SD card bus drivers](sd/)
+## [SPB drivers](spb/)
 ## [Storage device drivers](storage/)
+
 
 
