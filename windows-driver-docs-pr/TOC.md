@@ -5,6 +5,7 @@
 # [Device and Driver Technologies](device-and-driver-technologies.md)
 ## [ACPI](acpi/)
 ## [Installable file system drivers](ifs/)
+## [GPIO drivers](gpio/)
 ## [NFC device drivers](nfc/)
 ## [PCI drivers](pci/)
 ## [PCMCIA drivers](pcmcia/)
