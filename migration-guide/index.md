@@ -9,7 +9,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 5. [Do a local build of the OP content](#s4)
 6. [Create working branch in windows-driver-docs-pr](#s5)
 7. [Add OP content to the working branch](#s6)
-8. [Review your branch on MSDNStage](#s61)
+8. [Review your branch on MSDNStage](#Review)
 9. [Make revisions to your working branch](#s66) 
 10. [Finishing touches: Run clean-up script and set author](#clean)
 11. [Finishing touches: Add your project to the WDK TOC \(in OP\)](#toc)
@@ -335,7 +335,7 @@ Finally, push your working branch up to the team's repository, origin...
 
 ![Step 5: Push your working branch up to the team's repository](images/s5.png)
 
-## <h2 id="s61"> 8. Review your branch on MSDN stage</a>
+## <h2 id="Review"> 8. Review your branch on MSDN stage</a>
 As soon as your branch gets pushed to origin, it will kick off an automated build. Look for emails from the **Open Publishing Build Service** (vscopbld@microsoft.com). Don't be alarmed if it says it succeeded with Warnings - we've been working for weeks to get those issues resolved. 
 
 ![Build mail example](images/BuildMailExample.png)
