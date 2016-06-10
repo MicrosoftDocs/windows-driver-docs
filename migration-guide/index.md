@@ -8,7 +8,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 4. [Cloning windows-driver-docs-pr & other set up](#s35)
 5. [Do a local build of the OP content](#s4)
 6. [Create working branch in windows-driver-docs-pr](#s5)
-7. [Add OP content to the working branch](#s6)
+7. [Add OP content to the working branch](#ADD-OP)
 8. [Review your branch on MSDNStage](#Review)
 9. [Make revisions to your working branch](#s66) 
 10. [Finishing touches: Run clean-up script and set author](#clean)
@@ -19,7 +19,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 15. [Update WDCML TOC to show only reference topics](#s9)
 16. [Update Dev Center HXT file for new OP and REF](#s10)  
 17. [**Pause and prepare for deployment (timing!)**](#s12)  
-18. [Submit ProdRequest to MSDNSTAGE & review](#s16)  
+18. [Submit ProdRequest to MSDNSTAGE & review](#PROD)  
 19. [Ready. Set. Go. Merge your content into the MASTER branch!](#s65)  
 20. [Create a pull request to the LIVE branch](#pull)
 21. [Have another writer review & approve the pull to LIVE](#reviewpull)
@@ -41,12 +41,12 @@ You'll want to make sure you have **GitHub set up**, install **Visual Studio Cod
         (new-object Net.WebClient).DownloadString("http://psget.net/GetPsGet.ps1") | iex
 3. Install GIT (the local tool): [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
-4. Install POSH GIT: Open PowerShell and execute the following...  
+4. Install POSH GIT: Open a new PowerShell Window and execute the following...  
 
         Install-Module posh-git        
 5. Install PANDOC.exe: [Download/run the MSI file here](https://github.com/jgm/pandoc/releases/tag/1.14.0.1)
 
-6. Install GIT credential manager: [Download/run the EXE file here](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.2.2)
+6. Install Microsoft Git Credential Manager for Windows: [Download/run the EXE file here](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.2.2)
 
 7. Set up your local environment variables. Add paths for:  
     * Pandoc.exe (it's probably at C:\Users\yourUserName\AppData\Local\Pandoc)
@@ -57,7 +57,7 @@ You'll want to make sure you have **GitHub set up**, install **Visual Studio Cod
    ![Paths example](images/PathsExample.png)
 
 So that you can run the tools as intended:
-* Got to IDWEB and become a member of the **MSDN Reporting** security group (choose the **domain** that corresponds to your corporate credentials)
+* Got to IDWEB and become a member of the **MSDN Reporting** security group (choose the **domain** that corresponds to your corporate credentials, such as REDMOND)
 * Make sure you've been granted writer permissions on [Open Source Hub](https://opensourcehub.microsoft.com) (*ask Ted*)
 
 
@@ -104,6 +104,8 @@ This graphic is described in more detail when you go to [edit the site-wide Dev 
 
 * **Build a local CHM of the original XTOC**, projectname.xtoc. This way you can quickly click through topics to see what they look like (if you're trying to distinguish Ref from Conceptual or weed-out the useless orientation topics).
 
+* Although, your original XTOC is in Source Depot, some might want to make a local backup copy of the projectname.xtoc and name it projectname-BACKUP-ORIGINAL.xtoc.
+
 * I recommend **editing using XMetal in tandem with VS Code** to build your new XTOC files. The nice thing about Code is that it makes it easy to collapse and copy whole TOC nodes. 
 
 ![Collapsable XML nodes in VS Code](images/collapsableNodesVSCode.png)
@@ -123,7 +125,11 @@ You can also see how a new topic was created to be a single root at the top of t
 
 
 ### XTOC quality check
-When you're all finsished (or you think you are), do a local CHM build of **projectname-OP.xtoc** and **projectname-REF.xtoc** and compare it to the original CHM. Make sure you have the all of the topics from the original CHM accounted for somewhere in the new XTOCs. 
+When you're all finsished (or you think you are), do a local CHM build of **projectname-OP.xtoc** and **projectname-REF.xtoc** and compare it to the original CHM. 
+
+    CBX ProjectName.xtoc MSDN
+
+Make sure you have the all of the topics from the original CHM accounted for somewhere in the new XTOCs. 
 
 
 ## <h2 id="s3"> 3. Convert the conceptual topics to OP</a>
@@ -269,11 +275,11 @@ Once you've decided on a name, use this command to create your local working bra
 In Git, you use **checkout** to changes branches. When you do this, whole folders can appear and disappear in your local Windows Explorer - depending on which files are associated with which branches.
 
 
-## <h2 id="s6"> 7. Add OP content to the working branch</a>
+## <h2 id="ADD-OP"> 7. Add OP content to the working branch</a>
 Once you create a working branch, all changes you make to the respositry will be captured in your branch - any files in any folders, not just the ones in your project folder. 
 
 ### Create a project folder and copy over your MD files
-In your repo, navigate to the driver documentation folder windows-driver-docs-pr. 
+In your repo, navigate to the driver documentation folder windows-driver-docs-pr\windows-driver-docs-pr. 
     
     c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr
     
@@ -517,7 +523,7 @@ To push changes back up to origin, follow the steps described earlier.
 
 ## <h2 id="CSV"> 13. Build a .CSV file for redirecting old topics to OP</a>
 This step will create a list of links in CSV format that will be used to pave over the 
-Converting the CSV is done useing the redirectCsvBuilder script. 
+Converting the CSV is done using the redirectCsvBuilder script. 
 First locate the XTOC files that contain the links you want to be removed (the XTOC files we discussed earlier: **projectname-OP.xtoc** and **XX-ToBeRemoved.xtoc**).
 
 #Running the redirectCsvBuilder script
@@ -542,11 +548,11 @@ Because we rename the top-most topic to index, it can’t find that file by the 
 
 #Examples
 
-x:\PS> .\redirectCsvBuilder.ps1 "X:\SD\storage\storage-OP.xtoc" "X:\SD\storage\storage" "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\storage" storage-redirects.csv “https://msdn.microsoft.com/windows/hardware/drivers/storage/”
+x:\PS> .\redirectCsvBuilder.ps1 "X:\SD\storage\storage-OP.xtoc" "X:\SD\storage\storage" "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\storage" storage-redirects.csv "https://msdn.microsoft.com/windows/hardware/drivers/storage/"
 
 In this next example, I had copied a folder named SPB to my powershell script folder. Hence, the relative links. 
 
-x:\PS> .\redirectCsvBuilder.ps1 .\spb\SPB-OP.xtoc .\spb\spb "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\spb" spb-redirects.csv “https://msdn.microsoft.com/windows/hardware/drivers/spb/”
+x:\PS> .\redirectCsvBuilder.ps1 .\spb\SPB-OP.xtoc .\spb\spb "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\spb" spb-redirects.csv "https://msdn.microsoft.com/windows/hardware/drivers/spb/"
 
 #Testing
 Don’t forget to spot-test your CSV file. Open some WDCML topics by GUID on MSDN and make sure the topic matches the URL targets. Then open some OP redirect links (with some tweaks for staging) to make sure there were no typos in the URL parameter. The script does a lot of checking too, but it’s good to double check things. 
@@ -561,19 +567,19 @@ A couple notes that apply to all of the scripts:
      It reads the specified XTOC file and creates a MSDN redirect CSV file.
 
      It checks your input parameters to make sure the XTOC, WDCML folder, and Repo folder exist.
-        If the XTOC file or WDCML folder are missing, it warns you and quits.
-        If the Repo folder is missing, it warns you and sets those CSV targets as "TBD".
-        TROUBLESHOOTING: Make sure your working branch is checked out if that's where it is.
+        - If the XTOC file or WDCML folder are missing, it warns you and quits.
+        - If the Repo folder is missing, it warns you and sets those CSV targets as "TBD".
+        - TROUBLESHOOTING: Make sure your working branch is checked out if that's where it is.
 
      It ignores XTOC entries that have been excluded from MSDN or the SDK.
-        If excluded topics are found, it warns you and skips them in the CSV.
+        - If excluded topics are found, it warns you and skips them in the CSV.
 
      It checks each WDCML topic mentioned in the XTOC to get the GUID and make sure it exists.
-        If the specified WDCML topic is missing, it warns you and skips that file in the CSV.
-        If it finds the WDCML file, but can't find the GUID, it warns you and skips that file in the CSV.
+        - If the specified WDCML topic is missing, it warns you and skips that file in the CSV.
+        - If it finds the WDCML file, but can't find the GUID, it warns you and skips that file in the CSV.
 
      It checks your repo to make sure each target MD file actually exists.
-        If the target MD file is missing, it warns you but puts the target as "TBD".
+        - If the target MD file is missing, it warns you but puts the target as "TBD".
 
 
 
@@ -720,7 +726,7 @@ The process from this point on looks like this:
 8. **Move old WDCML to the Archive folder in Source Depot**
 
 
-## <h2 id="s16"> 18. Submit ProdRequest to MSDNSTAGE & review</a>
+## <h2 id="PROD"> 18. Submit ProdRequest to MSDNSTAGE & review</a>
 The first order of business is testing the new TOC changes on MSDNStage. We don't want to move the OP content in the MASTER branch just yet because we don't know how long it will take to get assistance from the production team.
 
 **BEFORE YOU PROCEED** : Double check if anyone else on the team is about to publish their WDCML-to-OP migration. Group projects into the same ProdRequest if possible (instructions below). 
