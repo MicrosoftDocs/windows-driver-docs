@@ -14,7 +14,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 10. [Finishing touches: Run clean-up script and set author](#clean)
 11. [Finishing touches: Add your project to the WDK TOC \(in OP\)](#toc)
 12. [Push changes back up to ORIGIN  **<------------------------- Update working branch on MSDNSTAGE**](#pushing)
-13. [Build a .CSV file for redirecting old topics to OP ](#s7)
+13. [Build a .CSV file for redirecting old topics to OP ](#CSV)
 14. [Create new WDCML parent topic in HW_NODES](#s8)
 15. [Update WDCML TOC to show only reference topics](#s9)
 16. [Update Dev Center HXT file for new OP and REF](#s10)  
@@ -515,10 +515,72 @@ To push changes back up to origin, follow the steps described earlier.
         C:\myrepo\windows-driver-docs-pr [working-branch]>git push -u origin working-branch
 
 
-## <h2 id="s7"> 13. Build a .CSV file for redirecting old topics to OP</a>
-Currently Ted is handling this. He'll soon add instructions here that describe how you can do it yourself. Until then, send Ted your XTOC file for the OP conversion and any files you want to be removed (the XTOC files we discussed earlier: **projectname-OP.xtoc** and **XX-ToBeRemoved.xtoc**).
+## <h2 id="CSV"> 13. Build a .CSV file for redirecting old topics to OP</a>
+This step will create a list of links in CSV format that will be used to pave over the 
+Converting the CSV is done useing the redirectCsvBuilder script. 
+First locate the XTOC files that contain the links you want to be removed (the XTOC files we discussed earlier: **projectname-OP.xtoc** and **XX-ToBeRemoved.xtoc**).
 
-Don't forget to change the target URL of the top topic to point to index.md. Any script output will likely include the original MD file name.
+#Running the redirectCsvBuilder script
+To run the CSV builder, these are the parameters:
+
+1. xtocPath – The path to the XTOC file. 
+
+2. wdcmlFolder – The folder where the WDCML files live (it pulls the topic GUIDs from each file).
+
+3. repoFolder – The folder where the new OP files live. Make sure you have the right branch checked out. It makes sure that the file names exist. 
+
+4. csvFile – The name of the CSV file. 
+
+5. urlPrefix – This is the prefix to the URL for the new OP topic. Include everything you want to precede the OP file name.
+
+Tip: You may want to use notepad to edit the command line that will be used to call the redirectCsvBuilder script
+
+#Warning Messages
+Because we rename the top-most topic to index, it can’t find that file by the original file name in the OP folder. It will give you a message like this as a reminder to update your CSV file after it’s been created.
+
+!!! Markdown target is missing for XTOC entry --> Simple Peripheral Bus (SPB) Driver Design Guide (TBD added to CSV for 7E9F688B-F473-4343-A1E0-525273391935)
+
+#Examples
+
+x:\PS> .\redirectCsvBuilder.ps1 "X:\SD\storage\storage-OP.xtoc" "X:\SD\storage\storage" "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\storage" storage-redirects.csv “https://msdn.microsoft.com/windows/hardware/drivers/storage/”
+
+In this next example, I had copied a folder named SPB to my powershell script folder. Hence, the relative links. 
+
+x:\PS> .\redirectCsvBuilder.ps1 .\spb\SPB-OP.xtoc .\spb\spb "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\spb" spb-redirects.csv “https://msdn.microsoft.com/windows/hardware/drivers/spb/”
+
+#Testing
+Don’t forget to spot-test your CSV file. Open some WDCML topics by GUID on MSDN and make sure the topic matches the URL targets. Then open some OP redirect links (with some tweaks for staging) to make sure there were no typos in the URL parameter. The script does a lot of checking too, but it’s good to double check things. 
+
+A couple notes that apply to all of the scripts:
+
+ • Make sure you run the scripts from the folder that the scripts are in
+
+ • If any of the paths have spaces, put those parameter values in double quotes
+
+# Behind the scenes - What it does (from the script comments)
+     It reads the specified XTOC file and creates a MSDN redirect CSV file.
+
+     It checks your input parameters to make sure the XTOC, WDCML folder, and Repo folder exist.
+        If the XTOC file or WDCML folder are missing, it warns you and quits.
+        If the Repo folder is missing, it warns you and sets those CSV targets as "TBD".
+        TROUBLESHOOTING: Make sure your working branch is checked out if that's where it is.
+
+     It ignores XTOC entries that have been excluded from MSDN or the SDK.
+        If excluded topics are found, it warns you and skips them in the CSV.
+
+     It checks each WDCML topic mentioned in the XTOC to get the GUID and make sure it exists.
+        If the specified WDCML topic is missing, it warns you and skips that file in the CSV.
+        If it finds the WDCML file, but can't find the GUID, it warns you and skips that file in the CSV.
+
+     It checks your repo to make sure each target MD file actually exists.
+        If the target MD file is missing, it warns you but puts the target as "TBD".
+
+
+
+
+TBD: Don't forget to change the target URL of the top topic to point to index.md. Any script output will likely include the original MD file name.
+
+TBD: Check with Nathan to see how to submit the CSV list to prod in our consolidated publishing process.
 
 Wait until you go to publish all the changes to LIVE before you [submit the redirect request to MSDN (step 17 below)](#s13).
 
