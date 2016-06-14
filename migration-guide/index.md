@@ -548,11 +548,15 @@ Because we rename the top-most topic to index, it can’t find that file by the 
 
 ###Examples
 
-    x:\PS> .\redirectCsvBuilder.ps1 "X:\SD\storage\storage-OP.xtoc" "X:\SD\storage\storage" "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\storage" storage-redirects.csv "https://msdn.microsoft.com/windows/hardware/drivers/storage/"
+```ps
+x:\PS> .\redirectCsvBuilder.ps1 "X:\SD\storage\storage-OP.xtoc" "X:\SD\storage\storage" "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\storage" storage-redirects.csv "https://msdn.microsoft.com/windows/hardware/drivers/storage/"
+```
 
 In this next example, I had copied a folder named SPB to my powershell script folder. Hence, the relative links. 
 
-    x:\PS> .\redirectCsvBuilder.ps1 .\spb\SPB-OP.xtoc .\spb\spb "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\spb" spb-redirects.csv "https://msdn.microsoft.com/windows/hardware/drivers/spb/"
+```ps
+x:\PS> .\redirectCsvBuilder.ps1 .\spb\SPB-OP.xtoc .\spb\spb "X:\GIT-PS-REPO\windows-driver-docs-pr\windows-driver-docs-pr\spb" spb-redirects.csv "https://msdn.microsoft.com/windows/hardware/drivers/spb/"
+```
 
 ###Testing
 Don’t forget to spot-test your CSV file. Open some WDCML topics by GUID on MSDN and make sure the topic matches the URL targets. Then open some OP redirect links (with some tweaks for staging) to make sure there were no typos in the URL parameter. The script does a lot of checking too, but it’s good to double check things. 
