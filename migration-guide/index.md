@@ -30,7 +30,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 26. [Clean up: Remove working branch from local and origin](#removeworking)  
 
 
-## <a id="s1"> 1. Get your Git account and tools set up</a>
+## <span id="s1"> 1. Get your Git account and tools set up</span>
 
 You'll want to make sure you have **GitHub set up**, install **Visual Studio Code**, and get **PowerShell** working with Git too. The last two are options, but those tools will be used throughout this topic in examples. 
 
@@ -61,7 +61,7 @@ So that you can run the tools as intended:
 * Make sure you've been granted writer permissions on [Open Source Hub](https://opensourcehub.microsoft.com) (*ask Ted*)
 
 
-## <a id="s2"> 2. Refactor the WDCML TOC (create OP and REF XTOC files)</a>
+## <span id="s2"> 2. Refactor the WDCML TOC (create OP and REF XTOC files)</span>
 The WDCML XTOC file is key to refactoring the content. In this process, we'll create three seperate files to make it easier for people to understand which topics are going where. These XTOC files will also be used by tools to convert the OP content, the TOC file, and a redirects CSV file for the MSDN team to remove the old topics. By doing this refactoring in WDCML, we can take advantage of the autokeylinks elements for generating new "In this Section" lists.
 
 ### XTOC overview
@@ -132,7 +132,7 @@ When you're all finsished (or you think you are), do a local CHM build of **proj
 Make sure you have the all of the topics from the original CHM accounted for somewhere in the new XTOCs. 
 
 
-## <a id="s3"> 3. Convert the conceptual topics to OP</a>
+## <span id="s3"> 3. Convert the conceptual topics to OP</span>
 The conversion of WDCML topics to MD is performed by the **con2md.exe** tool in your SD folder for the respective project. This tool resides in the BuildX\Cmd folder. Depending on how you set up XMetaL initially, you may need to add this path to your environment variables or you'll need to type the full path to the EXE when you execute it.
 
 ###Preparing to convert
@@ -199,7 +199,7 @@ If you don't specify the file name in an OP URL, MSDN will serve up the index.md
           
 
 
-## <a id="s35"> 4. Cloning windows-driver-docs-pr & other set up</a>
+## <span id="s35"> 4. Cloning windows-driver-docs-pr & other set up</span>
 Before you can start working on OP content, you need to clone the driver docs to your local machine. In this topic, we'll create a folder on the **C:** drive named **MyRepo**, to save the local copies of the driver repository. 
 
 **TIP** : All of the changes you make to your local files are persisted within your local repository file system. This means that you can clone the same repository locally more than once - as long as the two folders never "touch". This lets you use regular file comparison tools if you want to compare the same files on different branches.
@@ -215,7 +215,7 @@ To clone the driver docs repo to your local computer, open Powershell, navigate 
 
 ![Step 1](images/s1.png)
 
-## <a id="s4"> 5. Do a local build of the OP content</a>
+## <span id="s4"> 5. Do a local build of the OP content</span>
 You want to make sure your local repository builds fine before you make any changes. 
 
 1. Navigate to your local repo folder and run the following to start a build:
@@ -230,7 +230,7 @@ You want to make sure your local repository builds fine before you make any chan
 
 If the build doesn't run successfully, make sure you have the necessary permissions discussed at the beginning of this topic.
 
-## <a id="s5"> 6. Create working branch in windows-driver-docs-pr</a>
+## <span id="s5"> 6. Create working branch in windows-driver-docs-pr</span>
 Now that you know your local repo builds successfully, you can begin preparing to migrate content. The first step is to create a working branch. In these examples, the working branch will be called **working-branch**, but you should call your branch something that makes sense for your technology. For example, **printmigration** for migrating the print content.
 
 Working branches are temporary. We're going to remove it after the migration is complete. It will eventually be pushed up to the team's repo on GitHub, referred to as "origin", so it's a good idea to see what other branches are called. 
@@ -275,7 +275,7 @@ Once you've decided on a name, use this command to create your local working bra
 In Git, you use **checkout** to changes branches. When you do this, whole folders can appear and disappear in your local Windows Explorer - depending on which files are associated with which branches.
 
 
-## <a id="ADD-OP"> 7. Add OP content to the working branch</a>
+## <span id="ADD-OP"> 7. Add OP content to the working branch</span>
 Once you create a working branch, all changes you make to the respositry will be captured in your branch - any files in any folders, not just the ones in your project folder. 
 
 ### Create a project folder and copy over your MD files
@@ -341,7 +341,7 @@ Finally, push your working branch up to the team's repository, origin...
 
 ![Step 5: Push your working branch up to the team's repository](images/s5.png)
 
-## <a id="Review"> 8. Review your branch on MSDN stage</a>
+## <span id="Review"> 8. Review your branch on MSDN stage</span>
 As soon as your branch gets pushed to origin, it will kick off an automated build. Look for emails from the **Open Publishing Build Service** (vscopbld@microsoft.com). Don't be alarmed if it says it succeeded with Warnings - we've been working for weeks to get those issues resolved. 
 
 ![Build mail example](images/BuildMailExample.png)
@@ -397,7 +397,7 @@ Technically, MSDN is supposed to as good a job rendering markdown as GitHub does
 If GitHub displays the same weirdness, your only choice is to revise the MD file. If on the other hand you don't see the weirdness, **you found a bug!** In that case, email [eliotdirs@microsoft.com](mailto:eliotdirs@microsoft.com) for instructions on how to sumbit the issue. But of course, you're always free to bypass the bug by revising the MD file. 
 
 
-## <a id="s66"> 9. Make revisions to your working branch
+## <span id="s66"> 9. Make revisions to your working branch </span>
 Once the content starts appearing on MSDNStage, you'll likely find lots of revisions you want to make. 
 
 ### Working with VS Code
@@ -411,7 +411,7 @@ That will open up VS Code to your repositry. Once there, select the files and st
 
 That's VS Code keeping track of your change list. 
 
-###   <a id="vscodecommit"> Committing changes to GIT</a>
+###   <span id="vscodecommit"> Committing changes to GIT</span>
 Commits are the units of change you can push up to origin. Once you're done making revisions or otherwise want to put closure on that unit of change, you can do a ***commit***. You can do this in one of two ways:
 
 * **Use VS Code** : Type the description of the change in the Message window and then press **Ctrl+Enter**. 
@@ -421,7 +421,7 @@ Commits are the units of change you can push up to origin. Once you're done maki
         C:\myrepo\drivers [working-branch]>git add .
         C:\myrepo\drivers [working-branch]>git commit -m 'Your commit description here'
 
-###  <a id="clean"> 10. Finishing touches: Run clean-up script and set author</a>
+###  <span id="clean"> 10. Finishing touches: Run clean-up script and set author</span>
 Now is a great time to perform a few additional clean up steps...
 
 The WDCML conversion does not convert the SeeAlso section (named Related links in OP) as you might expect. There is paragraph spacing between the links and no differentation between those links and the "Send feedback to Microsoft..." link. The **mdRelatedLinksProjectCleaner.ps1** script cleans that up and adds a horizontal rule before the Send Feedback link.
@@ -474,7 +474,7 @@ I'll write more documentation about these scripts later. But for now, follow the
 
 13.	Finally, do a local build and make sure it looks as desired.  
  
-###  <a id="toc"> 11. Finishing touches: Add your project to the WDK TOC (in OP)</a>
+###  <span id="toc"> 11. Finishing touches: Add your project to the WDK TOC (in OP)</span>
 The OP driver documentation, the Windows Driver Kit (WDK) topic, resides here:
 
 [https://msdn.microsoft.com/en-us/windows/hardware/drivers](https://msdn.microsoft.com/en-us/windows/hardware/drivers)
@@ -495,7 +495,7 @@ The following shows the TOC after adding the bringup and ACPI projects. This TOC
 
 When that's finished, don't forget to commit the changes.
 
-### <a id="pushing"> 12. Push changes back up to ORIGIN (update working branch on MSDNSTAGE)</a>
+### <span id="pushing"> 12. Push changes back up to ORIGIN (update working branch on MSDNSTAGE)</span>
 To push changes back up to origin, follow the steps described earlier. 
 
 **Note** : Depending on the extent of the changes, you may choose *not* do a local build beforehand. 
@@ -521,7 +521,7 @@ To push changes back up to origin, follow the steps described earlier.
         C:\myrepo\drivers [working-branch]>git push -u origin working-branch
 
 
-## <a id="CSV"> 13. Build a .CSV file for redirecting old topics to OP</a>
+## <span id="CSV"> 13. Build a .CSV file for redirecting old topics to OP</span>
 This step will create a list of links in CSV format that will be used to pave over the 
 Converting the CSV is done using the redirectCsvBuilder script. 
 First locate the XTOC files that contain the links you want to be removed (the XTOC files we discussed earlier: **projectname-OP.xtoc** and **XX-ToBeRemoved.xtoc**).
@@ -595,7 +595,7 @@ Wait until you go to publish all the changes to LIVE before you [submit the redi
 **Note** : For more info about the CSV format, see the MSDN [Redirect template](https://microsoft.sharepoint.com/teams/Visual_Studio_China/MSDN/msdnpartner/_layouts/15/WopiFrame.aspx?sourcedoc=%7bCDDAB058-5F12-4C24-B931-E13A62FFDAF4%7d&file=Redirection%20Template.docx&action=default).
 
 
-## <a id="s8"> 14. Create a new WDCML parent topic in HW_NODES</a>
+## <span id="s8"> 14. Create a new WDCML parent topic in HW_NODES</span>
 ***Note that this only applies to projects that are being split up - seperating conceptual from reference.***  
 
 To minimize the complextity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simlifying the site-wide HXT and making the ref project easier to maintain.
@@ -609,7 +609,7 @@ Because we can't use auto_keylinks, you may want to simply copy the contents fro
 ![New parent topic](images/NewParentTopic.png)
 
 
-## <a id="s9"> 15. Update WDCML TOC to show only reference topics</a>
+## <span id="s9"> 15. Update WDCML TOC to show only reference topics</span>
 Now that you have OP content and a new WDCML parent topic, the next step is to make your WDCML project **reference only**. If you've already created your projectname-REF.xtoc file, all you need to do is:
 
 1. **Check out** your projectname.xtoc file
@@ -621,7 +621,7 @@ Now that you have OP content and a new WDCML parent topic, the next step is to m
 3. **Check in** your projectname.xtoc file
 
 
-## <a id="s10"> 16. Update Dev Center HXT file for new OP and REF</a>
+## <span id="s10"> 16. Update Dev Center HXT file for new OP and REF</span>
 As mentioned earlier, your project's TOC is no longer defined exclusively by the WDCML XTOC file - after the migration, that only defines the TOC for the reference content. To get the Dev Center TOC to include the OP node, you'll need to update the site-wide HXT file for the Hardware Dev Center. 
 
 **NOTE** : You won't actually update the site-wide HXT file. Instead, you'll issue a prod request to have it updated. That's discussed later, when you [prepare for deployment](#s12). 
@@ -691,7 +691,7 @@ To prepare a new Dev Center HXT file:
 
 10. **Compare your revised HXT with the original in BuildX**. It's a good idea to confirm that they only changes are the ones you ***intended*** to make. 
 
-## <a id="s12"> 17. Prepare for deployment (timing!)</a>
+## <span id="s12"> 17. Prepare for deployment (timing!)</span>
 Before you continue, make sure you have the following items compeleted and ready to go...
 
 ###Pre-deployment checklist:
@@ -728,7 +728,7 @@ The process from this point on looks like this:
 8. **Move old WDCML to the Archive folder in Source Depot**
 
 
-## <a id="PROD"> 18. Submit ProdRequest to MSDNSTAGE & review</a>
+## <span id="PROD"> 18. Submit ProdRequest to MSDNSTAGE & review</span>
 The first order of business is testing the new TOC changes on MSDNStage. We don't want to move the OP content in the MASTER branch just yet because we don't know how long it will take to get assistance from the production team.
 
 **BEFORE YOU PROCEED** : Double check if anyone else on the team is about to publish their WDCML-to-OP migration. Group projects into the same ProdRequest if possible (instructions below). 
@@ -766,7 +766,7 @@ The first order of business is testing the new TOC changes on MSDNStage. We don'
 5. Don't forget to click **Save** after you attach your HXT file.    
      
 
-## <a id="s65"> 19. Ready. Set. Go. Merge your content into MASTER branch!</a>
+## <span id="s65"> 19. Ready. Set. Go. Merge your content into MASTER branch!</span>
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
 
 **IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
@@ -824,7 +824,7 @@ You can find your content here (I've added the branch qualifier in case your bro
 If you forgot to add your project to the TOC, see [Add your project to the WDK TOC \(in OP\)](#toc).
 
 
-## <a id="pull"/> 20. Create a pull request to the LIVE branch</a>
+## <span id="pull"/> 20. Create a pull request to the LIVE branch</span>
 Due to the significance of the LIVE branch, we use a different process to move changes into it. Rather than merge locally, we're going to do a pull request.
 
 1. Go to GitHub and **compare the LIVE branch to the MASTER branch**:  
@@ -851,7 +851,7 @@ Due to the significance of the LIVE branch, we use a different process to move c
   
 4. Once the pull request is ready, click **Create pull request**
 
-## <a id="reviewpull"/> 21. Have another writer review & approve the pull to LIVE</a>
+## <span id="reviewpull"/> 21. Have another writer review & approve the pull to LIVE</span>
 The aim of this step is to get another set of eyes on what's being published. 
 
 1. Navigate to this page to see all open pull requests in the repo:
@@ -869,11 +869,11 @@ The aim of this step is to get another set of eyes on what's being published.
     [https://msdn.microsoft.com/en-us/windows/hardware/drivers/index](https://msdn.microsoft.com/en-us/windows/hardware/drivers/index)
 
 
-## <a id="s17"/> 22. Update your ProdRequest, push to LIVE</a>
+## <span id="s17"/> 22. Update your ProdRequest, push to LIVE</span>
 As soon as you see OP content appear on the LIVE Dev Center, you can proceed with pushing your WDCML changes to LIVE. Reply to the email thread and let the WDG FE Publishing team know they can promote the changes to LIVE. 
 
 
-## <a id="s13"/> 23. Submit redirect request to MSDN team</a>
+## <span id="s13"/> 23. Submit redirect request to MSDN team</span>
 Next, immediately submit the redirect request to MSDN using MSDN Help:
 
 1. Go to [http://msdnhelp](http://msdnhelp)  
@@ -906,14 +906,14 @@ Next, immediately submit the redirect request to MSDN using MSDN Help:
 6. Click **Done** to add the CSV attachment
 
 
-## <a id="s20"/> 24. Review changes on LIVE environment</a>
+## <span id="s20"/> 24. Review changes on LIVE environment</span>
 Finally, go to the Dev Center and make sure your WDCML & HXT changes appear:
 
 **Develop node** --> [https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767)
 
 Note that it may take some time for the redirects to take effect across the various web servers. 
 
-## <a id="s15"/> 25. Clean up: Move old WDCML content to Source Depot Archive folder</a>
+## <span id="s15"/> 25. Clean up: Move old WDCML content to Source Depot Archive folder</span>
 
 Now you need to use `sd integrate` and `sd delete` to move the WDCML files that you migrated to the SD archive:
 
@@ -931,7 +931,7 @@ SDROOT\buildx\script2\templates\indexing_boilerplates.xslt
 SDROOT\*.txt
 ```
 
-## <a id="removeworking"/> 26. Clean up: Remove working branch from local and origin</a>
+## <span id="removeworking"/> 26. Clean up: Remove working branch from local and origin</span>
 Once all your changes have been merged into MASTER and LIVE, and you're finished with your working branch, please remove your working branch. You will remove it in two places, local and origin.
 
 Clean up the repository as follows...
