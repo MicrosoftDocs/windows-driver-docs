@@ -30,7 +30,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 26. [Clean up: Remove working branch from local and origin](#removeworking)  
 
 
-## <h2 id="s1"> 1. Get your Git account and tools set up</a>
+## <a id="s1"> 1. Get your Git account and tools set up</a>
 
 You'll want to make sure you have **GitHub set up**, install **Visual Studio Code**, and get **PowerShell** working with Git too. The last two are options, but those tools will be used throughout this topic in examples. 
 
@@ -61,7 +61,7 @@ So that you can run the tools as intended:
 * Make sure you've been granted writer permissions on [Open Source Hub](https://opensourcehub.microsoft.com) (*ask Ted*)
 
 
-## <h2 id="s2"> 2. Refactor the WDCML TOC (create OP and REF XTOC files)</a>
+## <a id="s2"> 2. Refactor the WDCML TOC (create OP and REF XTOC files)</a>
 The WDCML XTOC file is key to refactoring the content. In this process, we'll create three seperate files to make it easier for people to understand which topics are going where. These XTOC files will also be used by tools to convert the OP content, the TOC file, and a redirects CSV file for the MSDN team to remove the old topics. By doing this refactoring in WDCML, we can take advantage of the autokeylinks elements for generating new "In this Section" lists.
 
 ### XTOC overview
@@ -132,7 +132,7 @@ When you're all finsished (or you think you are), do a local CHM build of **proj
 Make sure you have the all of the topics from the original CHM accounted for somewhere in the new XTOCs. 
 
 
-## <h2 id="s3"> 3. Convert the conceptual topics to OP</a>
+## <a id="s3"> 3. Convert the conceptual topics to OP</a>
 The conversion of WDCML topics to MD is performed by the **con2md.exe** tool in your SD folder for the respective project. This tool resides in the BuildX\Cmd folder. Depending on how you set up XMetaL initially, you may need to add this path to your environment variables or you'll need to type the full path to the EXE when you execute it.
 
 ###Preparing to convert
@@ -199,7 +199,7 @@ If you don't specify the file name in an OP URL, MSDN will serve up the index.md
           
 
 
-## <h2 id="s35"> 4. Cloning windows-driver-docs-pr & other set up</a>
+## <a id="s35"> 4. Cloning windows-driver-docs-pr & other set up</a>
 Before you can start working on OP content, you need to clone the driver docs to your local machine. In this topic, we'll create a folder on the **C:** drive named **MyRepo**, to save the local copies of the driver repository. 
 
 **TIP** : All of the changes you make to your local files are persisted within your local repository file system. This means that you can clone the same repository locally more than once - as long as the two folders never "touch". This lets you use regular file comparison tools if you want to compare the same files on different branches.
@@ -209,18 +209,18 @@ Before you can start working on OP content, you need to clone the driver docs to
 
 To clone the driver docs repo to your local computer, open Powershell, navigate to the folder you want your the repo to live, and execute..
 
-    C:\myrepo> git clone https://github.com/Microsoft/windows-driver-docs-pr.git
+    C:\myrepo> git clone https://cpubwin.visualstudio.com/_git/drivers
 
 ..as illustrated here:
 
 ![Step 1](images/s1.png)
 
-## <h2 id="s4"> 5. Do a local build of the OP content</a>
+## <a id="s4"> 5. Do a local build of the OP content</a>
 You want to make sure your local repository builds fine before you make any changes. 
 
 1. Navigate to your local repo folder and run the following to start a build:
 
-        C:\myrepo\windows-driver-docs-pr [master]> .\.openpublishing.build.ps1 -parameters:targets=serve
+        C:\myrepo\drivers [master]> .\.openpublishing.build.ps1 -parameters:targets=serve
 
 2. When the build "completes", it pauses and opens a CMD.exe window. That's your cue to view your local web server.. 
         
@@ -230,7 +230,7 @@ You want to make sure your local repository builds fine before you make any chan
 
 If the build doesn't run successfully, make sure you have the necessary permissions discussed at the beginning of this topic.
 
-## <h2 id="s5"> 6. Create working branch in windows-driver-docs-pr</a>
+## <a id="s5"> 6. Create working branch in windows-driver-docs-pr</a>
 Now that you know your local repo builds successfully, you can begin preparing to migrate content. The first step is to create a working branch. In these examples, the working branch will be called **working-branch**, but you should call your branch something that makes sense for your technology. For example, **printmigration** for migrating the print content.
 
 Working branches are temporary. We're going to remove it after the migration is complete. It will eventually be pushed up to the team's repo on GitHub, referred to as "origin", so it's a good idea to see what other branches are called. 
@@ -238,7 +238,7 @@ Working branches are temporary. We're going to remove it after the migration is 
 To do that, navigate to your repo folder and use **git remote show origin**:
 
 ```
-X:\myrepo\windows-driver-docs-pr [master ≡]> git remote show origin
+X:\myrepo\drivers [master ≡]> git remote show origin
 * remote origin
   Fetch URL: https://github.com/Microsoft/windows-driver-docs-pr.git
   Push  URL: https://github.com/Microsoft/windows-driver-docs-pr.git
@@ -266,7 +266,7 @@ X:\myrepo\windows-driver-docs-pr [master ≡]> git remote show origin
 
 Once you've decided on a name, use this command to create your local working branch:
 
-    C:\myrepo\windows-driver-docs-pr [master]> git checkout -b working-branch
+    C:\myrepo\drivers [master]> git checkout -b working-branch
     
 ...as illustrated here:
 
@@ -275,13 +275,13 @@ Once you've decided on a name, use this command to create your local working bra
 In Git, you use **checkout** to changes branches. When you do this, whole folders can appear and disappear in your local Windows Explorer - depending on which files are associated with which branches.
 
 
-## <h2 id="ADD-OP"> 7. Add OP content to the working branch</a>
+## <a id="ADD-OP"> 7. Add OP content to the working branch</a>
 Once you create a working branch, all changes you make to the respositry will be captured in your branch - any files in any folders, not just the ones in your project folder. 
 
 ### Create a project folder and copy over your MD files
 In your repo, navigate to the driver documentation folder windows-driver-docs-pr\windows-driver-docs-pr. 
     
-    c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr
+    c:\myrepo\drivers\windows-driver-docs-pr
     
 There you'll see other project folders. You can name your OP project the same thing or change it to be more meaningful. Keep in mind, that folder name **will appear in the OP URL**. For example, *nfpdrivers* became simply *nfc*.
 
@@ -293,8 +293,8 @@ Commits are the units of change you can track in your repository. Once you're do
 
 Now that your new project folder has been added to the repository, you need to capture that change. To do that, use the **add** and **commit** commands to create the commit:
 
-        C:\myrepo\windows-driver-docs-pr [working-branch]>git add .
-        C:\myrepo\windows-driver-docs-pr [working-branch]>git commit -m "New projectname topics from con2md conversion."
+        C:\myrepo\drivers [working-branch]>git add .
+        C:\myrepo\drivers [working-branch]>git commit -m "New projectname topics from con2md conversion."
 
 **Note** You can also use Visual Studio Code to commit changes. That will be discussed [later](#vscodecommit) along with the intro to VS Code.
 
@@ -303,7 +303,7 @@ You want to make sure your local repository still builds successfully now that y
 
 1. Navigate to your local repo and run the following to start a build:
 
-        C:\myrepo\windows-driver-docs-pr [working-branch]> .\.openpublishing.build.ps1 -parameters:targets=serve
+        C:\myrepo\drivers [working-branch]> .\.openpublishing.build.ps1 -parameters:targets=serve
 
 2. When the build "completes", it pauses and opens a CMD.exe window. That's your cue to view your local web server.. 
         
@@ -316,8 +316,8 @@ If the build doesn't run successfully, make sure you have the necessary permissi
 ### Push your local working repo to the team repo 
 Once you know that content builds successfully, you can push it up to origin (on GitHub), so that you can view it on Staging. Before you do that, it's a good practice to make sure your branch has the latest changes from the master branch. To that, refresh your local master...
 
-    C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
-    C:\myrepo\windows-driver-docs-pr [master]>git pull origin
+    C:\myrepo\drivers [working-branch]>git checkout master
+    C:\myrepo\drivers [master]>git pull origin
     
 ...as illustrated here:
  
@@ -325,8 +325,8 @@ Once you know that content builds successfully, you can push it up to origin (on
 
 Then you need to switch back to your working branch so you can merge-in the latest changes from master...
 
-    C:\myrepo\windows-driver-docs-pr [master]>git checkout working-branch
-    C:\myrepo\windows-driver-docs-pr [working-branch]>git merge master
+    C:\myrepo\drivers [master]>git checkout working-branch
+    C:\myrepo\drivers [working-branch]>git merge master
 
 ...as illustrated here:
 
@@ -335,13 +335,13 @@ Then you need to switch back to your working branch so you can merge-in the late
 Finally, push your working branch up to the team's repository, origin...
 
 
-    C:\myrepo\windows-driver-docs-pr [working-branch]>git push -u origin working-branch
+    C:\myrepo\drivers [working-branch]>git push -u origin working-branch
 
 ...as illustrated here:
 
 ![Step 5: Push your working branch up to the team's repository](images/s5.png)
 
-## <h2 id="Review"> 8. Review your branch on MSDN stage</a>
+## <a id="Review"> 8. Review your branch on MSDN stage</a>
 As soon as your branch gets pushed to origin, it will kick off an automated build. Look for emails from the **Open Publishing Build Service** (vscopbld@microsoft.com). Don't be alarmed if it says it succeeded with Warnings - we've been working for weeks to get those issues resolved. 
 
 ![Build mail example](images/BuildMailExample.png)
@@ -397,13 +397,13 @@ Technically, MSDN is supposed to as good a job rendering markdown as GitHub does
 If GitHub displays the same weirdness, your only choice is to revise the MD file. If on the other hand you don't see the weirdness, **you found a bug!** In that case, email [eliotdirs@microsoft.com](mailto:eliotdirs@microsoft.com) for instructions on how to sumbit the issue. But of course, you're always free to bypass the bug by revising the MD file. 
 
 
-## <h2 id="s66"> 9. Make revisions to your working branch
+## <a id="s66"> 9. Make revisions to your working branch
 Once the content starts appearing on MSDNStage, you'll likely find lots of revisions you want to make. 
 
 ### Working with VS Code
 To quickly go from your branch to Visual Studio Code, you can simply type the following from your working branch:
 
-    C:\myrepo\windows-driver-docs-pr [working-branch]>code .
+    C:\myrepo\drivers [working-branch]>code .
     
 That will open up VS Code to your repositry. Once there, select the files and start making changes as desired. As with Office products you can save by using **Ctrl+S** or the **Alt-F,S** keystrokes. Once you start making changes, you'll see numbers appear in the top left that indicate the number of files affected by changes. 
 
@@ -411,17 +411,17 @@ That will open up VS Code to your repositry. Once there, select the files and st
 
 That's VS Code keeping track of your change list. 
 
-###   <h2 id="vscodecommit"> Committing changes to GIT</a>
+###   <a id="vscodecommit"> Committing changes to GIT</a>
 Commits are the units of change you can push up to origin. Once you're done making revisions or otherwise want to put closure on that unit of change, you can do a ***commit***. You can do this in one of two ways:
 
 * **Use VS Code** : Type the description of the change in the Message window and then press **Ctrl+Enter**. 
 
 * **Use Git** : Use the **add** and **commit** commands to create the commit.
 
-        C:\myrepo\windows-driver-docs-pr [working-branch]>git add .
-        C:\myrepo\windows-driver-docs-pr [working-branch]>git commit -m 'Your commit description here'
+        C:\myrepo\drivers [working-branch]>git add .
+        C:\myrepo\drivers [working-branch]>git commit -m 'Your commit description here'
 
-###  <h2 id="clean"> 10. Finishing touches: Run clean-up script and set author</a>
+###  <a id="clean"> 10. Finishing touches: Run clean-up script and set author</a>
 Now is a great time to perform a few additional clean up steps...
 
 The WDCML conversion does not convert the SeeAlso section (named Related links in OP) as you might expect. There is paragraph spacing between the links and no differentation between those links and the "Send feedback to Microsoft..." link. The **mdRelatedLinksProjectCleaner.ps1** script cleans that up and adds a horizontal rule before the Send Feedback link.
@@ -447,7 +447,7 @@ I'll write more documentation about these scripts later. But for now, follow the
 
 6.	Re-open Powershell as an Administrator and run `set-executionpolicy unrestricted`  
 
-7.	Open Windows explorer and navigate to your local OP **project folder** in your repository (for example c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\**acpi**)  
+7.	Open Windows explorer and navigate to your local OP **project folder** in your repository (for example C:\myrepo\drivers\windows-driver-docs-pr\**acpi**)  
 
 8.	Copy the path from the address bar  
 
@@ -465,8 +465,8 @@ I'll write more documentation about these scripts later. But for now, follow the
     
     **IMPORTANT : Make sure your MD project folder is in the path. If it’s higher, you may end up running it on all MD files in the repository.**
 
-            x:\ps>.\mdRelatedLinksProjectCleaner.ps1 "c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi"
-            x:\ps>.\mdAuthorProjectSetter.ps1 "c:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\acpi" 
+            x:\ps>.\mdRelatedLinksProjectCleaner.ps1 "C:\myrepo\drivers\windows-driver-docs-pr\acpi"
+            x:\ps>.\mdAuthorProjectSetter.ps1 "C:\myrepo\drivers\windows-driver-docs-pr\acpi" 
 
 11.	(optional) compare file changes with the folder you created in Step #2.  
 
@@ -474,14 +474,14 @@ I'll write more documentation about these scripts later. But for now, follow the
 
 13.	Finally, do a local build and make sure it looks as desired.  
  
-###  <h2 id="toc"> 11. Finishing touches: Add your project to the WDK TOC (in OP)</a>
+###  <a id="toc"> 11. Finishing touches: Add your project to the WDK TOC (in OP)</a>
 The OP driver documentation, the Windows Driver Kit (WDK) topic, resides here:
 
 [https://msdn.microsoft.com/en-us/windows/hardware/drivers](https://msdn.microsoft.com/en-us/windows/hardware/drivers)
 
 To make your project appear in the TOC, you need to add it to the TOC.md file located at the root of your directory:
 
-        C:\myrepo\windows-driver-docs-pr\windows-driver-docs-pr\TOC.md
+        C:\myrepo\drivers\windows-driver-docs-pr\TOC.md
         
 The following shows the TOC after adding the bringup and ACPI projects. This TOC will  evolve over time as we add projects - it doesn't need to match the [WDCML TOC](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767).
 
@@ -495,33 +495,33 @@ The following shows the TOC after adding the bringup and ACPI projects. This TOC
 
 When that's finished, don't forget to commit the changes.
 
-### <h2 id="pushing"> 12. Push changes back up to ORIGIN (update working branch on MSDNSTAGE)</a>
+### <a id="pushing"> 12. Push changes back up to ORIGIN (update working branch on MSDNSTAGE)</a>
 To push changes back up to origin, follow the steps described earlier. 
 
 **Note** : Depending on the extent of the changes, you may choose *not* do a local build beforehand. 
 
 1. Switch to the **master** branch  
 
-        C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
+        C:\myrepo\drivers [working-branch]>git checkout master
 
 2. Pull down the latest changes from **master**  
         
-        C:\myrepo\windows-driver-docs-pr [master]>git pull origin
+        C:\myrepo\drivers [master]>git pull origin
         
 3. Switch to your **working branch**  
         
-        C:\myrepo\windows-driver-docs-pr [master]>git checkout working-branch
+        C:\myrepo\drivers [master]>git checkout working-branch
 
 4. Merge changes from **master** into your **working branch**  
         
-        C:\myrepo\windows-driver-docs-pr [working-branch]>git merge master
+        C:\myrepo\drivers [working-branch]>git merge master
 
 5. Push your **working branch** changes up to origin  
         
-        C:\myrepo\windows-driver-docs-pr [working-branch]>git push -u origin working-branch
+        C:\myrepo\drivers [working-branch]>git push -u origin working-branch
 
 
-## <h2 id="CSV"> 13. Build a .CSV file for redirecting old topics to OP</a>
+## <a id="CSV"> 13. Build a .CSV file for redirecting old topics to OP</a>
 This step will create a list of links in CSV format that will be used to pave over the 
 Converting the CSV is done using the redirectCsvBuilder script. 
 First locate the XTOC files that contain the links you want to be removed (the XTOC files we discussed earlier: **projectname-OP.xtoc** and **XX-ToBeRemoved.xtoc**).
@@ -595,7 +595,7 @@ Wait until you go to publish all the changes to LIVE before you [submit the redi
 **Note** : For more info about the CSV format, see the MSDN [Redirect template](https://microsoft.sharepoint.com/teams/Visual_Studio_China/MSDN/msdnpartner/_layouts/15/WopiFrame.aspx?sourcedoc=%7bCDDAB058-5F12-4C24-B931-E13A62FFDAF4%7d&file=Redirection%20Template.docx&action=default).
 
 
-## <h2 id="s8"> 14. Create a new WDCML parent topic in HW_NODES</a>
+## <a id="s8"> 14. Create a new WDCML parent topic in HW_NODES</a>
 ***Note that this only applies to projects that are being split up - seperating conceptual from reference.***  
 
 To minimize the complextity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simlifying the site-wide HXT and making the ref project easier to maintain.
@@ -609,7 +609,7 @@ Because we can't use auto_keylinks, you may want to simply copy the contents fro
 ![New parent topic](images/NewParentTopic.png)
 
 
-## <h2 id="s9"> 15. Update WDCML TOC to show only reference topics</a>
+## <a id="s9"> 15. Update WDCML TOC to show only reference topics</a>
 Now that you have OP content and a new WDCML parent topic, the next step is to make your WDCML project **reference only**. If you've already created your projectname-REF.xtoc file, all you need to do is:
 
 1. **Check out** your projectname.xtoc file
@@ -621,7 +621,7 @@ Now that you have OP content and a new WDCML parent topic, the next step is to m
 3. **Check in** your projectname.xtoc file
 
 
-## <h2 id="s10"> 16. Update Dev Center HXT file for new OP and REF</a>
+## <a id="s10"> 16. Update Dev Center HXT file for new OP and REF</a>
 As mentioned earlier, your project's TOC is no longer defined exclusively by the WDCML XTOC file - after the migration, that only defines the TOC for the reference content. To get the Dev Center TOC to include the OP node, you'll need to update the site-wide HXT file for the Hardware Dev Center. 
 
 **NOTE** : You won't actually update the site-wide HXT file. Instead, you'll issue a prod request to have it updated. That's discussed later, when you [prepare for deployment](#s12). 
@@ -691,7 +691,7 @@ To prepare a new Dev Center HXT file:
 
 10. **Compare your revised HXT with the original in BuildX**. It's a good idea to confirm that they only changes are the ones you ***intended*** to make. 
 
-## <h2 id="s12"> 17. Prepare for deployment (timing!)</a>
+## <a id="s12"> 17. Prepare for deployment (timing!)</a>
 Before you continue, make sure you have the following items compeleted and ready to go...
 
 ###Pre-deployment checklist:
@@ -728,7 +728,7 @@ The process from this point on looks like this:
 8. **Move old WDCML to the Archive folder in Source Depot**
 
 
-## <h2 id="PROD"> 18. Submit ProdRequest to MSDNSTAGE & review</a>
+## <a id="PROD"> 18. Submit ProdRequest to MSDNSTAGE & review</a>
 The first order of business is testing the new TOC changes on MSDNStage. We don't want to move the OP content in the MASTER branch just yet because we don't know how long it will take to get assistance from the production team.
 
 **BEFORE YOU PROCEED** : Double check if anyone else on the team is about to publish their WDCML-to-OP migration. Group projects into the same ProdRequest if possible (instructions below). 
@@ -766,7 +766,7 @@ The first order of business is testing the new TOC changes on MSDNStage. We don'
 5. Don't forget to click **Save** after you attach your HXT file.    
      
 
-## <h2 id="s65"> 19. Ready. Set. Go. Merge your content into MASTER branch!</a>
+## <a id="s65"> 19. Ready. Set. Go. Merge your content into MASTER branch!</a>
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
 
 **IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
@@ -781,8 +781,8 @@ The goal is to get all of the latest changes from master into your working branc
 
 The first step is to make sure you get the latest-and-greatest changes from origin. You want to do this all in one go to minimize the number of changes on master between this step and the last step - when you push your changes up to origin...
 
-    C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
-    C:\myrepo\windows-driver-docs-pr [master]>git pull origin
+    C:\myrepo\drivers [working-branch]>git checkout master
+    C:\myrepo\drivers [master]>git pull origin
 
 ...as illustrated here:
 
@@ -790,8 +790,8 @@ The first step is to make sure you get the latest-and-greatest changes from orig
 
 Next, get your working branch to match what's in origin/master (with the exception of the differences in your branch).
 
-    C:\myrepo\windows-driver-docs-pr [master]>git checkout working-branch
-    C:\myrepo\windows-driver-docs-pr [working-branch]>git merge master
+    C:\myrepo\drivers [master]>git checkout working-branch
+    C:\myrepo\drivers [working-branch]>git merge master
         
 ...as illustrated here:
      
@@ -800,8 +800,8 @@ Next, get your working branch to match what's in origin/master (with the excepti
 
 Then merge the differences from your branch into your local master branch. 
 
-    C:\myrepo\windows-driver-docs-pr [working-branch]>git checkout master
-    C:\myrepo\windows-driver-docs-pr [master]>git merge working-branch
+    C:\myrepo\drivers [working-branch]>git checkout master
+    C:\myrepo\drivers [master]>git merge working-branch
 
 ...as illustrated here: 
 
@@ -809,7 +809,7 @@ Then merge the differences from your branch into your local master branch.
 
 Finally, push your local master up to the master on origin. 
 
-    C:\myrepo\windows-driver-docs-pr [master]>git push -u origin master
+    C:\myrepo\drivers [master]>git push -u origin master
     
 
 ...as illustrated here:
@@ -824,7 +824,7 @@ You can find your content here (I've added the branch qualifier in case your bro
 If you forgot to add your project to the TOC, see [Add your project to the WDK TOC \(in OP\)](#toc).
 
 
-## <h2 id="pull"/> 20. Create a pull request to the LIVE branch</a>
+## <a id="pull"/> 20. Create a pull request to the LIVE branch</a>
 Due to the significance of the LIVE branch, we use a different process to move changes into it. Rather than merge locally, we're going to do a pull request.
 
 1. Go to GitHub and **compare the LIVE branch to the MASTER branch**:  
@@ -851,7 +851,7 @@ Due to the significance of the LIVE branch, we use a different process to move c
   
 4. Once the pull request is ready, click **Create pull request**
 
-## <h2 id="reviewpull"/> 21. Have another writer review & approve the pull to LIVE</a>
+## <a id="reviewpull"/> 21. Have another writer review & approve the pull to LIVE</a>
 The aim of this step is to get another set of eyes on what's being published. 
 
 1. Navigate to this page to see all open pull requests in the repo:
@@ -869,11 +869,11 @@ The aim of this step is to get another set of eyes on what's being published.
     [https://msdn.microsoft.com/en-us/windows/hardware/drivers/index](https://msdn.microsoft.com/en-us/windows/hardware/drivers/index)
 
 
-## <h2 id="s17"/> 22. Update your ProdRequest, push to LIVE</a>
+## <a id="s17"/> 22. Update your ProdRequest, push to LIVE</a>
 As soon as you see OP content appear on the LIVE Dev Center, you can proceed with pushing your WDCML changes to LIVE. Reply to the email thread and let the WDG FE Publishing team know they can promote the changes to LIVE. 
 
 
-## <h2 id="s13"/> 23. Submit redirect request to MSDN team</a>
+## <a id="s13"/> 23. Submit redirect request to MSDN team</a>
 Next, immediately submit the redirect request to MSDN using MSDN Help:
 
 1. Go to [http://msdnhelp](http://msdnhelp)  
@@ -906,14 +906,14 @@ Next, immediately submit the redirect request to MSDN using MSDN Help:
 6. Click **Done** to add the CSV attachment
 
 
-## <h2 id="s20"/> 24. Review changes on LIVE environment</a>
+## <a id="s20"/> 24. Review changes on LIVE environment</a>
 Finally, go to the Dev Center and make sure your WDCML & HXT changes appear:
 
 **Develop node** --> [https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767)
 
 Note that it may take some time for the redirects to take effect across the various web servers. 
 
-## <h2 id="s15"/> 25. Clean up: Move old WDCML content to Source Depot Archive folder</a>
+## <a id="s15"/> 25. Clean up: Move old WDCML content to Source Depot Archive folder</a>
 
 Now you need to use `sd integrate` and `sd delete` to move the WDCML files that you migrated to the SD archive:
 
@@ -931,34 +931,34 @@ SDROOT\buildx\script2\templates\indexing_boilerplates.xslt
 SDROOT\*.txt
 ```
 
-## <h2 id="removeworking"/> 26. Clean up: Remove working branch from local and origin</a>
+## <a id="removeworking"/> 26. Clean up: Remove working branch from local and origin</a>
 Once all your changes have been merged into MASTER and LIVE, and you're finished with your working branch, please remove your working branch. You will remove it in two places, local and origin.
 
 Clean up the repository as follows...
 
 1. Navigate to a branch that is **NOT** your working branch.
 
-        C:\myrepo\windows-driver-docs-pr [working-branch]> git checkout master
+        C:\myrepo\drivers [working-branch]> git checkout master
 
 1. Confirm **working-branch** still exists on local and origin.   
 
-        C:\myrepo\windows-driver-docs-pr [master]> git remote show origin
+        C:\myrepo\drivers [master]> git remote show origin
         
 1. To **remove your local branch**, use the **branch** command with the **-d** switch as follows (where *working-branch* is the name of your working branch):
 
-        C:\myrepo\windows-driver-docs-pr [master]> git branch -d working-branch
+        C:\myrepo\drivers [master]> git branch -d working-branch
 
 1. Look again to make sure the **local working-branch** was removed. 
 
-        C:\myrepo\windows-driver-docs-pr [master]> git remote show origin
+        C:\myrepo\drivers [master]> git remote show origin
         
 1. **BE VERY CAREFUL HERE** : Next delete your **remote working-branch** using the **push origin :** command. Make absolutely certain that you specify your working branch.  
 
-        C:\myrepo\windows-driver-docs-pr [master]> git push origin :working-branch
+        C:\myrepo\drivers [master]> git push origin :working-branch
 
 1. Confirm **working-branch** was removed from origin.   
 
-        C:\myrepo\windows-driver-docs-pr [master]> git remote show origin
+        C:\myrepo\drivers [master]> git remote show origin
         
    **Note** : If others remove a branch, you will see that origin branch marked as stale. To clean up the results of your query, run: `git remote prune origin`
    
