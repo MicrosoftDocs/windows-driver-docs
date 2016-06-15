@@ -2,8 +2,8 @@
 
 This content is to help writers migrate the driver documentation (the conceptual portion) over to the open publishing platform. At a high level, migration consists of these steps:
 
-1. [Get your Git account and tools set up](#s1)
-2. [Refactor the WDCML TOC (create OP and REF XTOC files)](#s2)
+1. [Get your Git account and tools set up](#1.-Get-your-Git-account-and-tools-set-up)
+2. [Refactor the WDCML TOC (create OP and REF XTOC files)](#2.-Refactor-the-WDCML-TOC-(create-OP-and-REF-XTOC-files))
 3. [Convert the conceptual topics to OP](#s3)
 4. [Cloning windows-driver-docs-pr & other set up](#s35)
 5. [Do a local build of the OP content](#s4)
@@ -30,7 +30,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 26. [Clean up: Remove working branch from local and origin](#removeworking)  
 
 
-## <span id="s1"> 1. Get your Git account and tools set up</span>
+##1. Get your Git account and tools set up
 
 You'll want to make sure you have **GitHub set up**, install **Visual Studio Code**, and get **PowerShell** working with Git too. The last two are options, but those tools will be used throughout this topic in examples. 
 
@@ -61,7 +61,7 @@ So that you can run the tools as intended:
 * Make sure you've been granted writer permissions on [Open Source Hub](https://opensourcehub.microsoft.com) (*ask Ted*)
 
 
-## <span id="s2"> 2. Refactor the WDCML TOC (create OP and REF XTOC files)</span>
+##2. Refactor the WDCML TOC (create OP and REF XTOC files)
 The WDCML XTOC file is key to refactoring the content. In this process, we'll create three seperate files to make it easier for people to understand which topics are going where. These XTOC files will also be used by tools to convert the OP content, the TOC file, and a redirects CSV file for the MSDN team to remove the old topics. By doing this refactoring in WDCML, we can take advantage of the autokeylinks elements for generating new "In this Section" lists.
 
 ### XTOC overview
