@@ -3,7 +3,7 @@
     "report_severity_level": "Warning", 
     "docsets_to_publish": [
         {
-            "docset_name": "wdkdocs-pr",
+            "docset_name": "wdkdocs",
             "build_output_subfolder": "windows-driver-docs-pr",
             "locale": "en-us",
             "version": 0,
