@@ -1,7 +1,7 @@
-# For Writers: WDCML-to-OP migration quick reference
+#For Writers: WDCML-to-OP migration quick reference
 This is a quick reference for the Git commands and links used in WDCML to OP migration.
 
-## Cloning the repo and creating a working branch
+##Cloning the repo and creating a working branch
 | Git command | Description |
 |-------------|-------------|
 |   `C:\myrepo> git clone https://github.com/Microsoft/windows-driver-docs-pr.git`| Clone the driver docs repo|
@@ -10,7 +10,7 @@ This is a quick reference for the Git commands and links used in WDCML to OP mig
 |`C:\myrepo\drivers [master]> git remote show origin`|See the branches on origin and local|
 |`C:\myrepo\drivers [master]> git checkout -b working-branch`|Create a **local** working branch|
 
-## **WORKING BRANCH**: Commit changes locally and push them to origin
+##**WORKING BRANCH**: Commit changes locally and push them to origin
 | Git command | Description |
 |-------------|-------------|
 |`C:\myrepo\drivers [working-branch]>git add .`|Capture differences to a unit of change|
@@ -25,7 +25,7 @@ This is a quick reference for the Git commands and links used in WDCML to OP mig
 |[https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/foldername?branch=working-branch](https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/foldername?branch=working-branch)|View your working branch on MSDNStage|
 
 
-## <h2 id="update-master"> **Update MASTER BRANCH**: Merge changes from working branch into master</a>
+##**Update MASTER BRANCH**: Merge changes from working branch into master
 | Git command | Description |
 |-------------|-------------|
 |`C:\myrepo\drivers [anywhere]> git remote show origin`|See the branches on origin and local|
@@ -40,7 +40,7 @@ This is a quick reference for the Git commands and links used in WDCML to OP mig
 |[https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/foldername?branch=master](https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/foldername?branch=master)|View your master branch on MSDNStage (you may need to explictly specify the master branch - it may think you still want to view working branch content)|
 
 
-## <h2 id="use-temp">**Use TEMP BRANCH**: Use a temp local branch to make a small change</a>
+##**Use TEMP BRANCH**: Use a temp local branch to make a small change
 | Git command | Description |
 |-------------|-------------|
 |`C:\myrepo\drivers [master]> git remote show origin`|See the branches on origin and local|
