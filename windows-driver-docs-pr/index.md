@@ -4,7 +4,7 @@ Windows Driver Kit (WDK) 10 is integrated with Microsoft Visual Studio 2015 and 
 
 ## Get started
 
-For fundamental driver concepts and an introduction to driver development tools, see [Getting started with Windows drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/ff554690).
+For fundamental driver concepts and an introduction to driver development tools, please see [Getting started with Windows drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/ff554690).
 
 ## Universal Windows driver samples
 
