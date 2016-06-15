@@ -2,32 +2,32 @@
 
 This content is to help writers migrate the driver documentation (the conceptual portion) over to the open publishing platform. At a high level, migration consists of these steps:
 
-1. [Get your Git account and tools set up](#s1)
-2. [Refactor the WDCML TOC (create OP and REF XTOC files)](#s2)
-3. [Convert the conceptual topics to OP](#s3)
-4. [Cloning windows-driver-docs-pr & other set up](#s35)
-5. [Do a local build of the OP content](#s4)
-6. [Create working branch in windows-driver-docs-pr](#s5)
-7. [Add OP content to the working branch](#ADD-OP)
-8. [Review your branch on MSDNStage](#Review)
-9. [Make revisions to your working branch](#s66) 
-10. [Finishing touches: Run clean-up script and set author](#clean)
-11. [Finishing touches: Add your project to the WDK TOC \(in OP\)](#toc)
-12. [Push changes back up to ORIGIN  **<------------------------- Update working branch on MSDNSTAGE**](#pushing)
-13. [Build a .CSV file for redirecting old topics to OP ](#CSV)
-14. [Create new WDCML parent topic in HW_NODES](#s8)
-15. [Update WDCML TOC to show only reference topics](#s9)
-16. [Update Dev Center HXT file for new OP and REF](#s10)  
-17. [**Pause and prepare for deployment (timing!)**](#s12)  
-18. [Submit ProdRequest to MSDNSTAGE & review](#PROD)  
-19. [Ready. Set. Go. Merge your content into the MASTER branch!](#s65)  
-20. [Create a pull request to the LIVE branch](#pull)
-21. [Have another writer review & approve the pull to LIVE](#reviewpull)
-22. [Update your ProdRequest, push to LIVE](#s17)  
-23. [Submit redirect request to MSDN team](#s13)  
-24. [Review changes on LIVE environment](#s20)  
-25. [Clean up: Move old WDCML content to Source Depot Archive folder](#s15)  
-26. [Clean up: Remove working branch from local and origin](#removeworking)  
+1. [Get your Git account and tools set up](#1-get-your-git-account-and-tools-set-up)
+2. [Refactor the WDCML TOC (create OP and REF XTOC files)](#2-refactor-the-wdcml-toc-create-op-and-ref-xtoc-files-)
+3. [Convert the conceptual topics to OP](#3-convert-the-conceptual-topics-to-op)
+4. [Cloning windows-driver-docs-pr & other set up](#4-cloning-windows-driver-docs-pr-other-set-up)
+5. [Do a local build of the OP content](#5-do-a-local-build-of-the-op-content)
+6. [Create working branch in windows-driver-docs-pr](#6-create-working-branch-in-windows-driver-docs-pr)
+7. [Add OP content to the working branch](#7-add-op-content-to-the-working-branch)
+8. [Review your branch on MSDNStage](#8-review-your-branch-on-msdn-stage)
+9. [Make revisions to your working branch](#9-make-revisions-to-your-working-branch) 
+10. [Finishing touches: Run clean-up script and set author](#10-finishing-touches-run-clean-up-script-and-set-author)
+11. [Finishing touches: Add your project to the WDK TOC \(in OP\)](#11-finishing-touches-add-your-project-to-the-wdk-toc-in-op-)
+12. [Push changes back up to ORIGIN  **<------------------------- Update working branch on MSDNSTAGE**](#12-push-changes-back-up-to-origin-update-working-branch-on-msdnstage-)
+13. [Build a .CSV file for redirecting old topics to OP ](#13-build-a-csv-file-for-redirecting-old-topics-to-op)
+14. [Create new WDCML parent topic in HW_NODES](#14-create-a-new-wdcml-parent-topic-in-hw_nodes)
+15. [Update WDCML TOC to show only reference topics](#15-update-wdcml-toc-to-show-only-reference-topics)
+16. [Update Dev Center HXT file for new OP and REF](#16-update-dev-center-hxt-file-for-new-op-and-ref)  
+17. [**Pause and prepare for deployment (timing!)**](#17-prepare-for-deployment-timing-)  
+18. [Submit ProdRequest to MSDNSTAGE & review](#18-submit-prodrequest-to-msdnstage-review)  
+19. [Ready. Set. Go. Merge your content into the MASTER branch!](#19-ready-set-go-merge-your-content-into-master-branch-)  
+20. [Create a pull request to the LIVE branch](#20-create-a-pull-request-to-the-live-branch)
+21. [Have another writer review & approve the pull to LIVE](#21-have-another-writer-review-approve-the-pull-to-live)
+22. [Update your ProdRequest, push to LIVE](#22-update-your-prodrequest-push-to-live)  
+23. [Submit redirect request to MSDN team](#23-submit-redirect-request-to-msdn-team)  
+24. [Review changes on LIVE environment](#24-review-changes-on-live-environment)  
+25. [Clean up: Move old WDCML content to Source Depot Archive folder](#25-clean-up-move-old-wdcml-content-to-source-depot-archive-folder)  
+26. [Clean up: Remove working branch from local and origin](#26-clean-up-remove-working-branch-from-local-and-origin)  
 
 
 ##1. Get your Git account and tools set up
@@ -89,11 +89,11 @@ Once the content is split up into those three new XTOC files, they can be used t
 3. As many low-value "orientation" (list of links) topics are removed.  In a couple of sections, see the for tips on cleaning up your IA.
 
 ### Content architecture
-While refactoring your project, it's helpful to consider the finished architecture. Because we're splitting conceptual and reference across two different platforms, you'll need to [edit the site-wide Dev Center HXT](#s9) and [create a new WDCML parent topic](#s8) (described later). With those chanages, you'll want to make sure the new topic titles mention the technology, rather than simply say "Design guide" or "Reference".
+While refactoring your project, it's helpful to consider the finished architecture. Because we're splitting conceptual and reference across two different platforms, you'll need to [edit the site-wide Dev Center HXT](#16-update-dev-center-hxt-file-for-new-op-and-ref) and [create a new WDCML parent topic](#14-create-a-new-wdcml-parent-topic-in-hw_nodes) (described later). With those chanages, you'll want to make sure the new topic titles mention the technology, rather than simply say "Design guide" or "Reference".
 
 ![TOC relationship to HXT](images/HXTTOC.png)
 
-This graphic is described in more detail when you go to [edit the site-wide Dev Center HXT](#s9). For now, note that three different XTOC files play a part:
+This graphic is described in more detail when you go to [edit the site-wide Dev Center HXT](#16-update-dev-center-hxt-file-for-new-op-and-ref). For now, note that three different XTOC files play a part:
 
 * **hw_nodes.xtoc** : Provides single-topic references to the new parent topics.
 * **projectname-OP.xtoc** : The old WDCML topic GUID will guide people to OP via the MSDN redirects.
@@ -296,7 +296,7 @@ Now that your new project folder has been added to the repository, you need to c
         C:\myrepo\drivers [working-branch]>git add .
         C:\myrepo\drivers [working-branch]>git commit -m "New projectname topics from con2md conversion."
 
-**Note** You can also use Visual Studio Code to commit changes. That will be discussed [later](#vscodecommit) along with the intro to VS Code.
+**Note** You can also use Visual Studio Code to commit changes. That will be discussed [later](#committing-changes-new-files-to-git) along with the intro to VS Code.
 
 ### Do another local build to make sure things still build okay
 You want to make sure your local repository still builds successfully now that you've made changes: 
@@ -376,7 +376,7 @@ If your top-most parent topic is named index.md, this should work too (omitting 
 
 **IMPORTANT**: Once you start navigating around your content, you'll notice that "`?branch=<branchname>`" has disappered from the URL. YOU will be able to continue navigating around your branch because the browser remembers for you. But, if you send those links to other people **without the branch specified in the URL, they will not be able to access the topic.**
 
-After you [merge your project to the master branch](#s65), you no longer need to specify the branch in the URL. All MSDNSTAGE requests go to the master branch by default. This is why your content won't appear when you don't specify the branch (it's not in master yet). Once there, you can simply type:
+After you [merge your project to the master branch](#19-ready-set-go-merge-your-content-into-master-branch-), you no longer need to specify the branch in the URL. All MSDNSTAGE requests go to the master branch by default. This is why your content won't appear when you don't specify the branch (it's not in master yet). Once there, you can simply type:
     
     https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/<projectname>
 
@@ -590,7 +590,7 @@ TBD: Don't forget to change the target URL of the top topic to point to index.md
 
 TBD: Check with Nathan to see how to submit the CSV list to prod in our consolidated publishing process.
 
-Wait until you go to publish all the changes to LIVE before you [submit the redirect request to MSDN (step 17 below)](#s13).
+Wait until you go to publish all the changes to LIVE before you [submit the redirect request to MSDN (step 23 below)](#23-submit-redirect-request-to-msdn-team).
 
 **Note** : For more info about the CSV format, see the MSDN [Redirect template](https://microsoft.sharepoint.com/teams/Visual_Studio_China/MSDN/msdnpartner/_layouts/15/WopiFrame.aspx?sourcedoc=%7bCDDAB058-5F12-4C24-B931-E13A62FFDAF4%7d&file=Redirection%20Template.docx&action=default).
 
@@ -601,7 +601,7 @@ Wait until you go to publish all the changes to LIVE before you [submit the redi
 To minimize the complextity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simlifying the site-wide HXT and making the ref project easier to maintain.
 
 ### Create an FWLink for testing on MSDNStage
-In the Dev Center TOC, the link to the OP content depends on the MSDN redirects. But we don't want to submit those redirects until the very end of this process [(Step #17, Submit redirect request to MSDN team](#s13)). Thus, in order to test the user experience, you'll need to use an FWLink to link to the OP content from the body of your new parent topic.
+In the Dev Center TOC, the link to the OP content depends on the MSDN redirects. But we don't want to submit those redirects until the very end of this process [(Step #23, Submit redirect request to MSDN team](#23-submit-redirect-request-to-msdn-team)). Thus, in order to test the user experience, you'll need to use an FWLink to link to the OP content from the body of your new parent topic.
 
 ### Build a new "In this section" table
 Because we can't use auto_keylinks, you may want to simply copy the contents from the NFC topic shown below. This image is to show how simple the new parent can be and point out the FWLink.
@@ -624,7 +624,7 @@ Now that you have OP content and a new WDCML parent topic, the next step is to m
 ##16. Update Dev Center HXT file for new OP and REF
 As mentioned earlier, your project's TOC is no longer defined exclusively by the WDCML XTOC file - after the migration, that only defines the TOC for the reference content. To get the Dev Center TOC to include the OP node, you'll need to update the site-wide HXT file for the Hardware Dev Center. 
 
-**NOTE** : You won't actually update the site-wide HXT file. Instead, you'll issue a prod request to have it updated. That's discussed later, when you [prepare for deployment](#s12). 
+**NOTE** : You won't actually update the site-wide HXT file. Instead, you'll issue a prod request to have it updated. That's discussed later, when you [prepare for deployment](#17-prepare-for-deployment-timing-). 
 
 The site-wide HXT is saved in SD here (assuming your enlistment folder is on C:\SD):
 
@@ -821,7 +821,7 @@ You can find your content here (I've added the branch qualifier in case your bro
 
 [https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/index?branch=master](https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/index?branch=master)
 
-If you forgot to add your project to the TOC, see [Add your project to the WDK TOC \(in OP\)](#toc).
+If you forgot to add your project to the TOC, see [Add your project to the WDK TOC \(in OP\)](#11-finishing-touches-add-your-project-to-the-wdk-toc-in-op-).
 
 
 ##20. Create a pull request to the LIVE branch
