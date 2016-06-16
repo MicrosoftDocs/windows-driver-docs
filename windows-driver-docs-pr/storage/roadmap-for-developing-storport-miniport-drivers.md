@@ -12,7 +12,7 @@ ms.assetid: 43a8f1ee-b2d3-4f97-b7e5-d59790ca6754
 
 1.  **Learn about Windows architecture and drivers.**
 
-    You must understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help you make appropriate design decisions and allow you to streamline your development process. See [Concepts for all driver developers](https://msdn.microsoft.com/library/windows/hardware/ff554731).
+    It's important that you understand the fundamentals of how drivers work in Windows. Knowing the fundamentals will help you make appropriate design decisions and allow you to streamline your development process. See [Concepts for all driver developers](https://msdn.microsoft.com/library/windows/hardware/ff554731).
 
 2.  **Learn the fundamentals of storport miniport drivers.**
 
@@ -44,7 +44,7 @@ ms.assetid: 43a8f1ee-b2d3-4f97-b7e5-d59790ca6754
 
 9.  **Sign and distribute your storport miniport** **driver.**
 
-    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for Windows Hardware Certification, you can distribute it through the Microsoft Windows Update program. For more information, see [Distributing a Driver Package](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8).
+    The final step is to (optionally) sign and distribute the driver. If your driver meets the quality standards that are defined for Windows Hardware Certification, you can distribute it through the Microsoft Windows Update program. For more information, see [Distributing a Driver Package](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
