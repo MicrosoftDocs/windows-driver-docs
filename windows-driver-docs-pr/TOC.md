@@ -4,6 +4,7 @@
 # [Windows Driver Frameworks](wdf/)
 # [Device and Driver Technologies](device-and-driver-technologies.md)
 ## [ACPI](acpi/)
+## [Battery Drivers](battery/)
 ## [Installable file system drivers](ifs/)
 ## [GPIO drivers](gpio/)
 ## [NFC device drivers](nfc/)
