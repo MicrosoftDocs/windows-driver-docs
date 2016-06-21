@@ -8,7 +8,7 @@ ms.assetid: 9D4DD1A9-DA49-4132-B98F-AFEC8B427272
 # Comparing UMDF 2 Functionality to KMDF
 
 
-This topic compares the functionality available to a Kernel-Mode Driver Framework (KMDF) driver with that available to a User-Mode Driver Framework (UMDF) 2.x driver. It is designed to help you decide whether you should write a UMDF 2 driver or a KMDF driver.
+This topic compares the functionality available to a Kernel-Mode Driver Framework (KMDF) driver with that available to a User-Mode Driver Framework (UMDF) 2 driver. It is designed to help you decide whether you should write a UMDF 2 driver or a KMDF driver.
 
 While UMDF version 2 offers a significant subset of functionality that was previously available only to KMDF drivers, the following features are available only to KMDF drivers. If your driver requires one of these features, you must write a KMDF driver.
 

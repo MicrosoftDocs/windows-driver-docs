@@ -34,7 +34,7 @@ A driver written in UMDF version 2 is written in the C programming language. Thi
 
 For more info, see [Getting Started with UMDF](getting-started-with-umdf-version-2.md).
 
-## Which operating systems support UMDF 2.0?
+## Which operating systems support UMDF 2?
 
 
 UMDF version 2 drivers run on Windows 8.1 and later.
@@ -49,7 +49,7 @@ You can build UMDF 2.1, 2.0, 1.11, and 1.9 drivers using Windows Driver Kit (WDK
 
 Yes. Even if your driver requires access to some kernel-mode resources or features, you might be able to split your driver into two parts. This approach enables you to benefit from some of the advantages of developing and running drivers in user mode.
 
-A UMDF driver can receive I/O requests from a kernel-mode driver. For more info about *kernel-mode clients*, see [Supporting Kernel-Mode Clients in UMDF 2.0 Drivers](supporting-kernel-mode-clients-in-umdf-drivers.md).
+A UMDF driver can receive I/O requests from a kernel-mode driver. For more info about *kernel-mode clients*, see [Supporting Kernel-Mode Clients in UMDF 2 Drivers](supporting-kernel-mode-clients-in-umdf-drivers.md).
 
 As a result of increased parity between KMDF and UMDF, however, you will rarely need to split a driver.
 
