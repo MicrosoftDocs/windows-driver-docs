@@ -25,24 +25,24 @@ You can run UMDF drivers on the following operating systems:
 ## What is the most recent version of UMDF?
 
 
-UMDF version 2.0 is included in Windows 8.1 and later.
+UMDF version 2 (both 2.0 and 2.1) is included in Windows 10 and later.
 
-## What is the difference between UMDF version 2.0 and the previous version, 1.11 (one dot eleven)?
+## What is the difference between UMDF version 2 and the previous version, 1.11 (one dot eleven)?
 
 
-You write a UMDF 2.0 driver in the C programming language, and you can easily compile the same driver for KMDF. To write a UMDF version 1 driver, you must use the COM programming model.
+A driver written in UMDF version 2 is written in the C programming language. This same driver can then be easly compiled for KMDF. Additionally, a UMDF version 1 driver must be written according to the COM programming model. 
 
 For more info, see [Getting Started with UMDF](getting-started-with-umdf-version-2.md).
 
 ## Which operating systems support UMDF 2.0?
 
 
-As of Windows 8.1, UMDF 2.0 drivers run on Windows 8.1 only.
+UMDF version 2 drivers run on Windows 8.1 and later.
 
-## Which UMDF versions can I build against in Windows Driver Kit (WDK) 8.1?
+## Which UMDF versions can I build against in Windows Driver Kit (WDK) 10?
 
 
-You can build UMDF 2.0, 1.11, and 1.9 drivers using Windows Driver Kit (WDK) 8.1 and Microsoft Visual Studio. For information about which versions of Windows can run drivers built using these UMDF versions, see [UMDF Version History](umdf-version-history.md).
+You can build UMDF 2.1, 2.0, 1.11, and 1.9 drivers using Windows Driver Kit (WDK) 10 and Microsoft Visual Studio. For information about which versions of Windows can run drivers built using these UMDF versions, see [UMDF Version History](umdf-version-history.md).
 
 ## Can I write part of my driver to run in user mode and part in kernel mode?
 
@@ -56,9 +56,9 @@ As a result of increased parity between KMDF and UMDF, however, you will rarely 
 ## <a href="" id="---which-framework-should-i-start-with-"></a> Which framework should I start with?
 
 
-If your driver requires any of the less common features listed in [Comparing UMDF 2.0 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md), you must use KMDF. For all other drivers, your first choice should be UMDF.
+If your driver requires any of the less common features listed in [Comparing UMDF 2 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md), you must use KMDF. For all other drivers, your first choice should be UMDF.
 
-If you start with UMDF and decide later to transition to KMDF, you can do so with minimal effort, as described in [How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md).
+If you start with UMDF and decide later to transition to KMDF, you can do so with minimal effort, as described in [How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md).
 
 ## How do user-mode drivers handle security?
 

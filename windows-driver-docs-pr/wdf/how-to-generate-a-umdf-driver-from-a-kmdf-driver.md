@@ -1,19 +1,19 @@
 ---
-title: How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)
+title: How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)
 author: windows-driver-content
-description: This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver into a User-Mode Driver Framework (UMDF) version 2.0 driver, and vice-versa.
+description: This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver into a User-Mode Driver Framework (UMDF) version 2 driver, and vice-versa.
 ms.assetid: 69B865CF-65D0-4211-951B-6574E27F10BD
 ---
 
-# How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)
+# How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)
 
 
-This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver into a User-Mode Driver Framework (UMDF) version 2.0 driver, and vice-versa.
+This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver into a User-Mode Driver Framework (UMDF) version 2 driver, and vice-versa.
 
 ## <a href="" id="use-vs"></a>Driver Conversion using Visual Studio
 
 
-1.  When switching from KMDF to UMDF, create an empty UMDF project in Visual Studio using the **User Mode Driver, Empty (UMDF 2.0)** project template. When switching from UMDF to KMDF, create an empty KMDF project in Visual Studio using the **Kernel Mode Driver, Empty (KMDF)** project template.
+1.  When switching from KMDF to UMDF, create an empty UMDF project in Visual Studio using the **User Mode Driver, Empty (UMDF V2)** project template. When switching from UMDF to KMDF, create an empty KMDF project in Visual Studio using the **Kernel Mode Driver, Empty (KMDF)** project template.
 
     Visual Studio creates an empty driver project with the appropriate settings, along with an INF file targeted to the specified framework.
 
