@@ -6,8 +6,9 @@ Follow the steps in this article to set up tools for contributing to the Windows
 
 - [Determine whether you really need to follow the rest of these steps](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
 - [Install Git for Windows](#install-git-for-windows)
+- [Select a Git shell environment](#select-a-git-shell-environment)
 - [Install a Markdown editor](#install-a-Markdown-editor)
-- [Fork the repository and copy it to your computer](#fork-the-repository-and-copy-it-to-your-computer)
+- [Make updates](#make-updates)
 - [Configure your user name and email locally](#configure-your-user-name-and-email-locally)
 - [Next steps](#next-steps)
 
@@ -17,9 +18,7 @@ You might not need to follow all the steps in this article. It depends on the so
 
 ### Submit a text-only change to an existing article
 
-If you only need or want to make textual updates to an existing article, you probably don't need to follow the rest of the steps. You can use VSO's web-based Markdown editor to submit your changes. Just click the Contribute link in the article you want to modify.  Then, click the edit icon in the VSO version of the article.
-
-That opens the easy-to-use web editor that makes it easy to submit changes. You don't need to follow the other steps in this article.
+If you only need or want to make textual updates to an existing article, you probably don't need to follow the rest of the steps. You can use VSO's web-based Markdown editor to submit your changes. Just click the Contribute link in the article you want to modify.  Then click the edit icon in the VSO version of the article.
 
 ### All other changes
 You need to install the tools if you want to make any of the following sorts of changes:
@@ -59,50 +58,45 @@ We author content using simple Markdown notation in the files, rather than compl
 
 - **Atom**: GitHub's Atom Markdown editor: [http://atom.io](http://atom.io). It does not require a license for business use. It has spell check.
 
-## Clone the repository to your computer
+## Make updates
 
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open your Git shell as administrator. At the command prompt, enter the following command.  This command creates a windows-driver-docs-private directory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\windows-driver-docs-private.
+1.  The first time you want to make changes in the repo locally, you need to clone it.
 
         git clone https://cpubwin.visualstudio.com/_git/drivers
+        
+    If you already have a clone, update it using these commands:
+    
+        git checkout master
+        git pull origin master
 
-## Set remote repository connection and configure credentials
-
-Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
-
-        cd Windows driver-content-pr
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Microsoft/windows-driver-docs-private.git
-        git fetch upstream
-
-This usually takes a while. After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.
-
+1. Create a new branch, make changes, and push the branch to the server.
+```    
+git checkout -b my-new-feature
+###
+git push -u origin my-new-feature
+```
+2. In your browser, navigate to https://cpubwin.visualstudio.com/_git/drivers and open a pull request from my-new-feature back into master.
 
 ## Configure your user name and email locally
 
 To ensure you are listed correctly as a contributor, you need to configure your user name and email locally in Git.
 
-1. Start your Git shell and switch into <!--Windows driver-content or -->windows-driver-docs-private:
+1. Start your Git shell and switch into drivers:
 
-   <!-- ````
-   cd Windows driver-content
-   ````
-
- or
--->
-   ````
-
-   cd windows-driver-docs-private
-   ````
+   ```
+   cd drivers
+   ```
 
 2. Configure your user name so it matches your name as you set it up in your GitHub profile:
 
-    ````
+    ```
     git config --global user.name "John Doe"
-    ````
+    ```
 3. Configure your email so it matches the primary email designated in your GitHub profile; if you're a MSFT employee, it should be your MSFT email address:
 
-    ````
+    ```
     git config --global user.email "alias@example.com"
-    ````
+    ```
 4. Type `git config -l` and review your local settings to ensure the user name and email in the configuration are correct.
 
 ## Next steps
