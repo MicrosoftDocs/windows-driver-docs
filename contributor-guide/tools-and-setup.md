@@ -59,41 +59,15 @@ We author content using simple Markdown notation in the files, rather than compl
 
 - **Atom**: GitHub's Atom Markdown editor: [http://atom.io](http://atom.io). It does not require a license for business use. It has spell check.
 
-## Fork the repository and copy it to your computer
-
-1. Create a fork of the repository in GitHub - go to the top-right of the page and click the Fork button. If prompted, select your account as the location where the fork should be created.
-
- This creates a copy of the repository within your Git Hub account. Generally speaking, technical writers and program managers need to fork windows-driver-docs-private, the private repo. <!--Community contributors need to fork Windows driver-content, the public repo.-->
-
-  You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer.  If you choose to create forks of both repositories, you will need to create a fork for each repository.
-
-2. Copy the Personal Access Token that you got from [https://github.com/settings/applications#personal-access-tokens](https://github.com/settings/applications#personal-access-tokens). You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
+## Clone the repository to your computer
 
 3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open your Git shell as administrator. At the command prompt, enter the following command.  This command creates a windows-driver-docs-private directory on your computer.  If you're using the default location, it will be at c:\users<your Windows user name>\windows-driver-docs-private.
 
-<!-- Public repo:
-
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/Windows driver-content.git
- -->
-Private repo:
-
-        git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/windows-driver-docs-private.git
-
-For example, this clone command could look something like this:
-
-        git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/windows-driver-docs-private.git  
+        git clone https://cpubwin.visualstudio.com/_git/drivers
 
 ## Set remote repository connection and configure credentials
 
 Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
-
-<!-- Public repo:
-
-        cd windows-driver-docs-private
-        git remote add upstream https://[your GitHub user name]:[token]@github.com/Microsoft/windows-driver-docs.git
-        git fetch upstream -->
-
-Private repo:
 
         cd Windows driver-content-pr
         git remote add upstream https://[your GitHub user name]:[token]@github.com/Microsoft/windows-driver-docs-private.git
