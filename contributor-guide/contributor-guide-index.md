@@ -17,10 +17,14 @@
 
 All the articles in this repository use GitHub flavored Markdown.  Here's a list of resources.
 
-- [Markdown Basics](https://help.github.com/articles/Markdown-basics/)
+- [Basic writing and formatting syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/) 
 
 - [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
-- [GitHub-flavored Markdown](https://help.github.com/articles/github-flavored-Markdown/)
+- [Working with advanced formatting](https://help.github.com/articles/working-with-advanced-formatting/)
+
+  - [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/)
+
+  - [Creating and highlighting code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/)
 
 - [How to undo almost anything with Git (GitHub blog)](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
