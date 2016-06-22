@@ -1,8 +1,6 @@
 # Install and set up tools for authoring in GitHub
 
-Follow the steps in this article to set up tools for contributing to the Windows driver documentation. Casual and occasional contributors can probably use the GitHub UI described in step 2.
-
-If you're unfamiliar with Git, you might want to review some Git terminology: [https://help.github.com/articles/github-glossary](https://help.github.com/articles/github-glossary). In addition, this StackOverflow thread contains a glossary of Git terms you'll encounter in this set of steps: [http://stackoverflow.com/questions/7076164/terminology-used-by-git](http://stackoverflow.com/questions/7076164/terminology-used-by-git)
+Follow the steps in this article to set up tools for contributing to the Windows driver documentation.
 
 ## Contents
 
