@@ -1,31 +1,15 @@
-# Install and set up tools for authoring in GitHub
+# Install and set up tools for authoring in VSO
 
 Follow the steps in this article to set up tools for contributing to the Windows driver documentation.
 
 ## Contents
 
-- [Create a GitHub account and set up your profile](#create-a-github-account-and-set-up-your-profile)
 - [Determine whether you really need to follow the rest of these steps](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
-- [Permissions in GitHub](#permissions-in-github)
 - [Install Git for Windows](#install-git-for-windows)
-- [Enable two-factor authentication](#enable-two-factor-authentication)
 - [Install a Markdown editor](#install-a-Markdown-editor)
-- [Configure Atom](#configure-atom)
 - [Fork the repository and copy it to your computer](#fork-the-repository-and-copy-it-to-your-computer)
 - [Configure your user name and email locally](#configure-your-user-name-and-email-locally)
 - [Next steps](#next-steps)
-
-## Create a GitHub account and set up your profile
-
-To contribute to the Windows driver content, you'll need a [GitHub](http://www.github.com) account.
-
-If you are a Microsoft contributor, you need to set up your GitHub account so that you're a member of the Microsoft organization on GitHub. Set up your profile as follows:
-
-- **Profile picture**: a picture of you (required)
-- **Name**: your first and last name (required)
-- **Email**: your Microsoft email address (required)
-- **Company**: Microsoft Corporation (required)
-- **Location**: list your location (required)
 
 ## Determine whether you really need to follow the rest of these steps
 
@@ -33,7 +17,7 @@ You might not need to follow all the steps in this article. It depends on the so
 
 ### Submit a text-only change to an existing article
 
-If you only need or want to make textual updates to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's web-based Markdown editor to submit your changes. Just click the Contribute link in the article you want to modify.  Then, click the edit icon in the GitHub version of the article.
+If you only need or want to make textual updates to an existing article, you probably don't need to follow the rest of the steps. You can use VSO's web-based Markdown editor to submit your changes. Just click the Contribute link in the article you want to modify.  Then, click the edit icon in the VSO version of the article.
 
 That opens the easy-to-use web editor that makes it easy to submit changes. You don't need to follow the other steps in this article.
 
@@ -44,12 +28,6 @@ You need to install the tools if you want to make any of the following sorts of 
  - Create and publish a new article
  - Add new images or update images
  - Update an article over a period of days without publishing changes each of those days
-
-## Permissions in GitHub
-
-<!--Anybody with a GitHub account can contribute to Windows driver technical content through our public repository at [https://github.com/Windows driver/Windows driver-content](https://github.com/Windows driver/Windows driver-content). No special permissions are required.-->
-
-If you are a Microsoft FTE and are a member of the Microsoft organization on GitHub, you have read-only permissions on our private content repository:  [Microsoft/windows-driver-docs-private ](https://github.com/Microsoft/windows-driver-docs-private).
 
 ## Install Git for Windows
 
@@ -72,24 +50,6 @@ Here are a few options:
 * **[SourceTree](https://www.atlassian.com/software/sourcetree/overview)** -- A more feature-rich GUI than GitHub Desktop. You'll need to use a personal access token as your password; see instructions [here](https://confluence.atlassian.com/display/SOURCETREEKB/Two-Factor+Authentication+%282FA%29+with+GitHub+in+SourceTree).
 * **[Tortoise Git](https://tortoisegit.org/)** -- Once installed, you interact with Git by using contextual menu commands in your local repository.
 
-
-## Enable two-factor authentication
-
-You have to enable two factor authentication (2FA) on your GitHub account if you are working in the private content repository. It's required in the private repository.
-
-To enable this, follow the instructions in both the following GitHub help topics:
-
-- [About Two-Factor Authentication](https://help.github.com/articles/about-two-factor-authentication/)
-- [Creating an access token for command-line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
-
-After you enable 2FA, you have to enter the access token instead of your GitHub password at the command prompt when you try to access a GitHub repository from the command line. The access token is not the authentication code that you get in a text message when you set up 2FA. It's a long string that looks something like this:  fdd3b7d3d4f0d2bb2cd3d58dba54bd6bafcd8dee. A few notes about this:
-
-- When you create your access token, save it in a text file to make it readily accessible when you need it.
-
-- Later, when you need to paste the token, you have two ways to paste in the command line:
-
- - Click the icon in the upper left corner of the command line window>Edit>Paste.
- - Right-click the icon in the upper left corner of the window and click Properties>Options>QuickEdit Mode. This configures the command line so you can paste by right-clicking in the command line window.
 
 ## Install a Markdown editor
 
