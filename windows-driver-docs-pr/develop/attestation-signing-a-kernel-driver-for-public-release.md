@@ -53,7 +53,7 @@ Follow the process described in [Download kits and tools for Windows 10](https:/
 ## <span id="Create_a_CAB_Files_Submission"></span><span id="create_a_cab_files_submission"></span><span id="CREATE_A_CAB_FILES_SUBMISSION"></span>Create a CAB Files Submission
 
 
-To create a CAB files submission for the dashboard complete the following steps.
+To create a CAB file submission for the dashboard complete the following steps.
 
 1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here, will reference the echo driver available in GitHub at this location.
 

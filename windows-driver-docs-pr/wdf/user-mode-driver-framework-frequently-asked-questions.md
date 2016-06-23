@@ -15,6 +15,7 @@ Windows Driver Frameworks (WDF) is a set of libraries that you can use to write 
 
 You can run UMDF drivers on the following operating systems:
 
+-   Windows 10
 -   Windows 8.1
 -   Windows 8
 -   Windows 7
@@ -24,7 +25,7 @@ You can run UMDF drivers on the following operating systems:
 ## What is the most recent version of UMDF?
 
 
-Windows 8.1 includes UMDF version 2.0.
+UMDF version 2.0 is included in Windows 8.1 and later.
 
 ## What is the difference between UMDF version 2.0 and the previous version, 1.11 (one dot eleven)?
 
