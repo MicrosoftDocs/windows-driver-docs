@@ -1,27 +1,30 @@
 # Using Single Transfer DMA
 
-By default, WDF frequently splits a single DMA transaction into multiple DMA transfers. However, some devices cannot handle a fragmented transaction and must instead receive all data in a single DMA operation.  For example, some PCI network controllers require one network packet at a time because they do not have the hardware to cache and reassemble partial data.
+By default, WDF sometimes splits a single DMA transaction into multiple DMA transfers. However, some devices cannot handle a fragmented transaction and must instead receive all data in a single DMA operation.  For example, some PCI network controllers require one network packet at a time because they do not have the hardware to cache and reassemble partial data.
 
-Starting with KMDF version 1.19, a KMDF driver using DMA v3 can request that WDF send each individual DMA transaction as a single transfer.  There are two ways that a driver can request single transfer DMA: 
+Starting in KMDF version 1.19, a KMDF driver using DMA v3 can request that WDF send each individual DMA transaction as a single transfer.  There are two ways that a driver can request single transfer DMA: 
 
-* The driver can call WdfDmaTransactionSetSingleTransferRequirement.
-* To set the single-transfer requirement for all DMA transactions created with a particular DMA enabler, specify the WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER flag when calling WdfDmaEnablerCreate. This is equivalent to calling WdfDmaTransactionSetSingleTransferRequirement for each transaction object created with the enabler. Using this flag instead of calling WdfDmaTransactionSetSingleTransferRequirement also makes this setting persist when the transaction object is [recycled](https://msdn.microsoft.com/en-us/library/windows/hardware/ff547114) and reinitialized. Otherwise, it would be reset similarly to other transaction-level properties, like immediate execution and maximum transfer length. (links? md comments. code themes. shortcut for link)
+## Setting the single transfer requirement for a specific DMA transaction
 
+Use these steps:
 
 1. Call WdfDmaTransactionCreate.
-2. Call WdfDmaTransactionSetSingleTransferRequirement.
-3. Call WdfDmaTransactionInitialize.  If initialization fails due to transaction fragmentation, a driver has the option of failing the I/O request or rearranging the transaction�s memory buffers in a supported manner, and reinitializing the transaction.
+2. Call [**WdfDmaTransactionSetSingleTransferRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/988c7e70-3b2a-4a0f-91cf-dfab3ea07f05).
+3. Call WdfDmaTransactionInitialize.  If initialization fails due to transaction fragmentation, a driver has the option of failing the I/O request or rearranging the transaction's memory buffers in a supported manner, and reinitializing the transaction.
 4. Call WdfDmaTransactionExecute.  The transaction should complete in a single DMA transfer.
 
-(copy red from xml)
+## Setting the single-transfer requirement for all DMA transactions created with a particular DMA enabler
+
+In this case, the driver specifies the **WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER** flag in [**WDF_DMA_ENABLER_CONFIG_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/guid) when calling [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/guid).  
+
+This flag is intended for drivers that want all DMA transactions to be single-transfer, so they don't have to call [**WdfDmaTransactionSetSingleTransferRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/988c7e70-3b2a-4a0f-91cf-dfab3ea07f05) each time they create or reuse a transaction object. Since transactions inherit this value from the enabler, it also means that it persists when a transaction is [reused](https://msdn.microsoft.com/en-us/library/windows/hardware/ff547114).
+
+<!-- (links? md comments.) -->
+
+<!--copy red from xml
 (add new versions in histories, add new for 1.19, including wdf too many transfers error code)
 
-link to old DMA pcage with classic diagram
-
-This flag is intended for drivers that want all DMA transactions to be single-transfer, so they don�t have to call WdfDmaTransactionSetSingleTransferRequirement each time they create or reuse a transaction object. Since transactions inherit this value from the enabler, it also means that it persists when a transaction is reused.
-
-
-This is consistent with other per-transaction properties a driver may set, like immediate execution and overriding the transaction�s maximum transfer length. (link?)
+link to old DMA page with classic diagram-->
 
 
 The requirements are:
