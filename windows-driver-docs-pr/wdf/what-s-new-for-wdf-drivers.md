@@ -58,7 +58,7 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 
     -   If you have a debugger connected, you can access both the driver and framework IFR logs by issuing [**!wdfkd.wdflogdump**](https://msdn.microsoft.com/library/windows/hardware/ff565805).
 
-    -   If you do not have a debugger connected, you can still access both logs.  To learn how, see [**LINKTOVIDEO**](hostfile.md).
+    -   If you do not have a debugger connected, you can still access both logs.  To learn how, see [Video: Accessing driver IFR logs without a debugger](video--accessing-driver-ifr-logs-without-a-debugger.md).
 
     -   When debugging a UMDF driver, you can merge framework logs with driver logs by issuing: **!wdfkd.wdflogdump** *&lt;drivername.dll&gt;* **-m**
 
