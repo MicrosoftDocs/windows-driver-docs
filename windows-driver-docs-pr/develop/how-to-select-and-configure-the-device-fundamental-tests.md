@@ -263,7 +263,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <tr class="even">
 <td align="left"><p><span id="Enable_Driver_Verifier"></span><span id="enable_driver_verifier"></span><span id="ENABLE_DRIVER_VERIFIER"></span>Enable Driver Verifier</p></td>
 <td align="left"><p>You can use this test to enable [Driver Verifier](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448) for all drivers of a device (or devices) on the test computer.</p>
-<p><strong>Parameters:</strong> - See [Driver Verifier Options](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff545448_options).</p></td>
+<p><strong>Parameters:</strong> - See [Driver Verifier Options](https://msdn.microsoft.com/en-us/library/windows/hardware/ff545470).</p></td>
 </tr>
 </tbody>
 </table>
