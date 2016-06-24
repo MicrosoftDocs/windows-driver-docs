@@ -31,7 +31,12 @@ The following table shows the release history of the UMDF library:
 <th align="left">Drivers using it can run on <sup>†</sup></th>
 </tr>
 </thead>
-<tbody>
+<tbody><tr class="odd">
+<td align="left"><p>2.19</p></td>
+<td align="left"><p>Windows 10 Anniversary Update WDK</p></td>
+<td align="left"><p>Windows 10 Anniversary Update</p></td>
+<td align="left"><p>Windows 10 Anniversary Update (all SKUs), Windows Server 2016 Technical Preview</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>2.17</p></td>
 <td align="left"><p>Windows 10, version 1511 WDK</p></td>
@@ -81,8 +86,9 @@ The following table shows the release history of the UMDF library:
 
 You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
 
-## UMDF Version 2.17
+For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
 
+## UMDF Version 2.17
 
 This version adds UMDF support for the following existing interfaces:
 
@@ -94,9 +100,6 @@ This version adds UMDF support for the following existing interfaces:
 For more information, see [Dispatching IRPs to I/O Queues](dispatching-irps-to-i-o-queues.md).
 
 ## UMDF Version 2.15
-
-
-For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
 
 Here is the list of updated DDIs for version 2.15:
 
