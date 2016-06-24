@@ -153,6 +153,7 @@
 #### [Using Common Buffers](using-common-buffers.md)
 ### [Supporting System-Mode DMA](supporting-system-mode-dma.md)
 ### [Canceling DMA Transactions](canceling-dma-transactions.md)
+### [Using Single Transfer DMA](using-single-transfer-dma.md)
 ### [Reserving DMA Resources](reserving-dma-resources.md)
 ### [Testing DMA in KMDF Drivers](testing-dma-in-kmdf-drivers.md)
 ## [Supporting WMI in KMDF Drivers](supporting-wmi-in-kmdf-drivers.md)
