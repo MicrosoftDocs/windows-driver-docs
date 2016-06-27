@@ -40,7 +40,7 @@ To run MITT tests, you need a computer that will run as the host and system unde
 
      
 
--   ![applies to windows phone](../common/phone.png)
+-   ![applies to windows phone](images/Phone.png)
 
 **Note**  If your SUT is a phone, then the host computer, SUT, and MITT board must be configured as shown in this image.
 

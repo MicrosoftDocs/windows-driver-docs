@@ -1,4 +1,4 @@
-# [Simple Peripheral Bus (SPB) Driver Design Guide](simple-peripheral-bus-driver-design-guide.md)
+# [Simple Peripheral Bus (SPB) Driver Design Guide](index.md)
 ## [SPB controller drivers](spb-controller-drivers.md)
 ### [SPB Framework Extension (SpbCx)](spb-framework-extension.md)
 ### [SpbCx Interfaces](spbcx-interfaces.md)
