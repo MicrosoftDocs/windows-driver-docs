@@ -21,7 +21,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 
 (The next steps are being updated to reflect the new CP Process. Check with the OP CP Cordinator for current information)
 
-[Writer Tasks](writer-tasks)
+[Writer Tasks](#writer-tasks)
 
 W1. [**Pause and prepare for deployment (timing!)**](#w1-prepare-for-deployment-timing)  
 
@@ -35,17 +35,17 @@ W5. [Clean up: Move old WDCML content to Source Depot Archive folder](#w5-clean-
 
 W6. [Clean up: Remove working branch from local and origin](#w6-clean-up-remove-working-branch-from-local-and-origin)  
 
-[OP Cordinator Tasks](op-cordinator-tasks)
+[OP Cordinator Tasks](#op-cordinator-tasks)
 
 C1. [Submit ProdRequest to MSDNSTAGE & review](#c1-submit-prodrequest-to-msdnstage-review)  
 
-C2. [Ready. Set. Go. Merge your content into the MASTER branch](#19-ready-set-go-merge-your-content-into-master-branch)  
+C2. [Ready. Set. Go. Merge your content into the MASTER branch](#c2-ready-set-go-merge-your-content-into-master-branch)  
 
-C3. [Create a pull request to the LIVE branch](#20-create-a-pull-request-to-the-live-branch)
+C3. [Create a pull request to the LIVE branch](#c3-create-a-pull-request-to-the-live-branch)
 
-C4. [Update your MSDN ProdRequest, push to LIVE](#22-update-your-prodrequest-push-to-live)  
+C4. [Update your MSDN ProdRequest, push to LIVE](#c4-update-your-prodrequest-push-to-live)  
 
-C5. [Submit redirect request to MSDN team](#23-submit-redirect-request-to-msdn-team)  
+C5. [Submit redirect request to MSDN team](#c5-submit-redirect-request-to-msdn-team)  
 
 
 ##1. Get your Git account and tools set up
@@ -845,7 +845,7 @@ Clean up the repository as follows...
  
 
 
-### OP Cordinator Tasks
+## OP Cordinator Tasks
 
 
 ##C1. Submit ProdRequest to MSDNSTAGE & review
@@ -886,7 +886,7 @@ The first order of business is testing the new TOC changes on MSDNStage. We don'
 5. Don't forget to click **Save** after you attach your HXT file.    
      
 
-##19. Ready. Set. Go. Merge your content into MASTER branch!
+##C2. Ready. Set. Go. Merge your content into MASTER branch
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
 
 **IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
@@ -944,7 +944,7 @@ You can find your content here (I've added the branch qualifier in case your bro
 If you forgot to add your project to the TOC, see [Add your project to the WDK TOC \(in OP\)](#11-finishing-touches-add-your-project-to-the-wdk-toc-in-op-).
 
 
-##20. ** CP Cordintator -- Create a pull request to the LIVE branch
+##C3. Create a pull request to the LIVE branch
 Due to the significance of the LIVE branch, we use a different process to move changes into it. Rather than merge locally, we're going to do a pull request.
 
 1. Go to GitHub and **compare the LIVE branch to the MASTER branch**:  
@@ -972,11 +972,11 @@ Due to the significance of the LIVE branch, we use a different process to move c
 4. Once the pull request is ready, click **Create pull request**
 
 
-##22. Update your ProdRequest, push to LIVE
+##C4. Update your ProdRequest, push to LIVE
 As soon as you see OP content appear on the LIVE Dev Center, you can proceed with pushing your WDCML changes to LIVE. Reply to the email thread and let the WDG FE Publishing team know they can promote the changes to LIVE. 
 
 
-##23. Submit redirect request to MSDN team
+##C5. Submit redirect request to MSDN team
 Next, immediately submit the redirect request to MSDN using MSDN Help:
 
 1. Go to [http://msdnhelp](http://msdnhelp)  
