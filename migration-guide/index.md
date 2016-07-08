@@ -24,7 +24,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 Writer Tasks:
 
 W1. [**Pause and prepare for deployment (timing!)**](#17-prepare-for-deployment-timing-)  
-W2. [Prepare you CP Request.] (#prepare-cp-request) 
+W2. [Prepare you CP Request.](#prepare-cp-request) 
 W3. [Optionaly have another writer review & approve the pull to Master](#21-have-another-writer-review-approve-the-pull-to-live)
 W4. [Review changes on LIVE environment](#24-review-changes-on-live-environment)  
 W5. [Clean up: Move old WDCML content to Source Depot Archive folder](#25-clean-up-move-old-wdcml-content-to-source-depot-archive-folder)  
@@ -723,7 +723,7 @@ Before you continue, make sure you have the following items compeleted and ready
 ###Timing
 The process from this point on looks like this:  
 
-1. **BEFORE YOU PROCEED** : See if anyone else on the team is about ready to publish their WDCML-to-OP migration. Ideally, we should bundle our production requests so we don't have conflicting edits to the Dev Center HXT file. 
+1. **BEFORE YOU PROCEED** : Work with CP Coordinator to publish to LIVE. It is a good idea to bundle our production requests so we don't have conflicting edits to the Dev Center HXT file. 
 
 2. **Submit Prodreqest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
 
@@ -731,20 +731,20 @@ The process from this point on looks like this:
     * Technology link in the TOC points to new parent in HW_NODES  
     * Design guide link points to single-topic target (the top conceptual topic that will redirect to OP)  
     
-4.  **Publish OP content to the world!**  
+4.  ** CP Cordintator -- Publish OP content to the world**  
     1. First merge your *working-branch* to *MASTER*  
     2. Review your content on MSDN Stage (no branch specifier needed in the URL)
     3. Merge your changes in *MASTER* to *LIVE*!
     
-5. **Update your Prodrequest - ask them to push the changes to LIVE**
+5. ** CP Cordintator -- Update your Prodrequest - ask them to push the changes to LIVE**
 
-6. **Submit redirects CSV to the MSDN team**
+6. ** CP Cordintator -- Submit redirects CSV to the MSDN team**
 
 7. **Review the changes on the LIVE environment**
 
 8. **Move old WDCML to the Archive folder in Source Depot**
 
-##prepare-cp-request
+##prepare-cp-request.
 
 
 
@@ -847,7 +847,7 @@ You can find your content here (I've added the branch qualifier in case your bro
 If you forgot to add your project to the TOC, see [Add your project to the WDK TOC \(in OP\)](#11-finishing-touches-add-your-project-to-the-wdk-toc-in-op-).
 
 
-##20. Create a pull request to the LIVE branch
+##20. ** CP Cordintator -- Create a pull request to the LIVE branch
 Due to the significance of the LIVE branch, we use a different process to move changes into it. Rather than merge locally, we're going to do a pull request.
 
 1. Go to GitHub and **compare the LIVE branch to the MASTER branch**:  
