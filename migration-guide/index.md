@@ -18,16 +18,25 @@ This content is to help writers migrate the driver documentation (the conceptual
 14. [Create new WDCML parent topic in HW_NODES](#14-create-a-new-wdcml-parent-topic-in-hw_nodes)
 15. [Update WDCML TOC to show only reference topics](#15-update-wdcml-toc-to-show-only-reference-topics)
 16. [Update Dev Center HXT file for new OP and REF](#16-update-dev-center-hxt-file-for-new-op-and-ref)  
-17. [**Pause and prepare for deployment (timing!)**](#17-prepare-for-deployment-timing-)  
-18. [Submit ProdRequest to MSDNSTAGE & review](#18-submit-prodrequest-to-msdnstage-review)  
-19. [Ready. Set. Go. Merge your content into the MASTER branch!](#19-ready-set-go-merge-your-content-into-master-branch-)  
-20. [Create a pull request to the LIVE branch](#20-create-a-pull-request-to-the-live-branch)
-21. [Have another writer review & approve the pull to LIVE](#21-have-another-writer-review-approve-the-pull-to-live)
-22. [Update your ProdRequest, push to LIVE](#22-update-your-prodrequest-push-to-live)  
-23. [Submit redirect request to MSDN team](#23-submit-redirect-request-to-msdn-team)  
-24. [Review changes on LIVE environment](#24-review-changes-on-live-environment)  
-25. [Clean up: Move old WDCML content to Source Depot Archive folder](#25-clean-up-move-old-wdcml-content-to-source-depot-archive-folder)  
-26. [Clean up: Remove working branch from local and origin](#26-clean-up-remove-working-branch-from-local-and-origin)  
+
+(The next steps are being updated to reflect the new CP Process. Check with the OP CP Cordinator for current information)
+
+Writer Tasks:
+
+W1. [**Pause and prepare for deployment (timing!)**](#17-prepare-for-deployment-timing-)  
+W2. [Prepare you CP Request.] (#prepare-cp-request) 
+W3. [Optionaly have another writer review & approve the pull to Master](#21-have-another-writer-review-approve-the-pull-to-live)
+W4. [Review changes on LIVE environment](#24-review-changes-on-live-environment)  
+W5. [Clean up: Move old WDCML content to Source Depot Archive folder](#25-clean-up-move-old-wdcml-content-to-source-depot-archive-folder)  
+W6. [Clean up: Remove working branch from local and origin](#26-clean-up-remove-working-branch-from-local-and-origin)  
+
+OP Cordinator Tasks:
+
+C1. [Submit ProdRequest to MSDNSTAGE & review](#C1-submit-prodrequest-to-msdnstage-review)  
+C2. [Ready. Set. Go. Merge your content into the MASTER branch](#19-ready-set-go-merge-your-content-into-master-branch-)  
+C3. [Create a pull request to the LIVE branch](#20-create-a-pull-request-to-the-live-branch)
+C4. [Update your MSDN ProdRequest, push to LIVE](#22-update-your-prodrequest-push-to-live)  
+C5. [Submit redirect request to MSDN team](#23-submit-redirect-request-to-msdn-team)  
 
 
 ##1. Get your Git account and tools set up
@@ -691,7 +700,15 @@ To prepare a new Dev Center HXT file:
 
 10. **Compare your revised HXT with the original in BuildX**. It's a good idea to confirm that they only changes are the ones you ***intended*** to make. 
 
-##17. Prepare for deployment (timing!)
+
+### Writer and OP Cordinator Tasks
+
+To publish your content to MSDN, you will work with the OP Coordinator. In the following sections, the tasks that the OP coordinator and the writer completes are both described.
+
+
+### Writer Tasks
+
+##W1. Prepare for deployment (timing!)
 Before you continue, make sure you have the following items compeleted and ready to go...
 
 ###Pre-deployment checklist:
@@ -727,8 +744,14 @@ The process from this point on looks like this:
 
 8. **Move old WDCML to the Archive folder in Source Depot**
 
+##prepare-cp-request
 
-##18. Submit ProdRequest to MSDNSTAGE & review
+
+
+### OP Cordinator Tasks
+
+
+##C1. Submit ProdRequest to MSDNSTAGE & review
 The first order of business is testing the new TOC changes on MSDNStage. We don't want to move the OP content in the MASTER branch just yet because we don't know how long it will take to get assistance from the production team.
 
 **BEFORE YOU PROCEED** : Double check if anyone else on the team is about to publish their WDCML-to-OP migration. Group projects into the same ProdRequest if possible (instructions below). 
