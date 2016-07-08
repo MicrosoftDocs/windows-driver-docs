@@ -23,9 +23,9 @@ This content is to help writers migrate the driver documentation (the conceptual
 
 [Writer Tasks](#writer-tasks)
 
-W1. [**Pause and prepare for deployment (timing!)**](#w1-prepare-for-deployment-timing)  
+W1. [**Pause and prepare for deployment (timing!)**](#w1-prepare-for-deployment)
 
-W2. [Prepare you CP Request.](#w2-prepare-cp-request) 
+W2. [Prepare you CP Request](#w2-prepare-cp-request) 
 
 W3. [Optionaly have another writer review & approve the pull to Master](#w3-have-another-writer-review-approve-the-pull-to-live)
 
@@ -715,8 +715,9 @@ To prepare a new Dev Center HXT file:
 To publish your content to MSDN, you will work with the OP Coordinator. In the following sections, the tasks that the OP coordinator and the writer completes are both described.
 
 
+*************************************************************
 ##Writer Tasks
-
+*************************************************************
 
 ##W1. Prepare for deployment
 Before you continue, make sure you have the following items compeleted and ready to go...
@@ -752,7 +753,7 @@ The process from this point on looks like this:
 
 7. **Writer -- Review the changes on the LIVE environment**
 
-8. **Move old WDCML to the Archive folder in Source Depot**
+8. **Writer -- Move old WDCML to the Archive folder in Source Depot**
 
 ##W2. Prepare CP Request
 
@@ -760,7 +761,7 @@ Pre-migration checklist:
 
 1.	Confirm OP content in working branch is looking good on MSDN stage: https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/<projectfolder>?branch=<branchname>
 2.	Create WDCML redirects CSV file (If applicable, include index rename for parent topic). For more guidance see:  Migration Guide-Build a .CSV file for redirecting old topics to OP 
-3.	Prepare HXT snippet for your project to send to Nathan
+3.	Prepare HXT snippet for your project to send to OP Cordinator via CP Bug
 4.	Update WDCML project projectname.hxt to show reference only (if applicable)
 5.	Review WDCML SD history to make sure no changes were made (missed) after the con2md conversion 
 6.	Review the new WDCML parent topic in HW_NODES (use the WDCML GUID to view on Stage) 
@@ -772,6 +773,8 @@ Pre-migration checklist:
 The aim of this step is to get another set of eyes on what's being published. 
 
 1. Navigate to this page to see all open pull requests in the repo:
+
+ToDo: Update link to https://cpubwin.visualstudio.com/_git/drivers
 
     [https://github.com/Microsoft/windows-driver-docs-pr/pulls](https://github.com/Microsoft/windows-driver-docs-pr/pulls)
 
@@ -844,8 +847,9 @@ Clean up the repository as follows...
    **Note** : If others remove a branch, you will see that origin branch marked as stale. To clean up the results of your query, run: `git remote prune origin`
  
 
-
+*************************************************************
 ## OP Cordinator Tasks
+*************************************************************
 
 
 ##C1. Submit ProdRequest to MSDNSTAGE & review
@@ -948,6 +952,8 @@ If you forgot to add your project to the TOC, see [Add your project to the WDK T
 Due to the significance of the LIVE branch, we use a different process to move changes into it. Rather than merge locally, we're going to do a pull request.
 
 1. Go to GitHub and **compare the LIVE branch to the MASTER branch**:  
+
+ToDo: Update link to https://cpubwin.visualstudio.com/_git/drivers
 
     [https://github.com/Microsoft/windows-driver-docs-pr/compare/live...master?expand=1](https://github.com/Microsoft/windows-driver-docs-pr/compare/live...master?expand=1)
 
