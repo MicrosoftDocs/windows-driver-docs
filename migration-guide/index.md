@@ -125,7 +125,7 @@ You can also see how a new topic was created to be a single root at the top of t
 
 
 ### XTOC quality check
-When you're all finsished (or you think you are), do a local CHM build of **projectname-OP.xtoc** and **projectname-REF.xtoc** and compare it to the original CHM. 
+When you're all finished (or you think you are), do a local CHM build of **projectname-OP.xtoc** and **projectname-REF.xtoc** and compare it to the original CHM. 
 
     CBX ProjectName.xtoc MSDN
 
@@ -240,8 +240,8 @@ To do that, navigate to your repo folder and use **git remote show origin**:
 ```
 X:\myrepo\drivers [master ≡]> git remote show origin
 * remote origin
-  Fetch URL: https://github.com/Microsoft/windows-driver-docs-pr.git
-  Push  URL: https://github.com/Microsoft/windows-driver-docs-pr.git
+  Fetch URL: https://cpubwin.visualstudio.com/_git/drivers/
+  Push  URL: https://cpubwin.visualstudio.com/_git/drivers/
   HEAD branch: master
   Remote branches:
     bringupmigration     tracked
@@ -624,7 +624,7 @@ Now that you have OP content and a new WDCML parent topic, the next step is to m
 ##16. Update Dev Center HXT file for new OP and REF
 As mentioned earlier, your project's TOC is no longer defined exclusively by the WDCML XTOC file - after the migration, that only defines the TOC for the reference content. To get the Dev Center TOC to include the OP node, you'll need to update the site-wide HXT file for the Hardware Dev Center. 
 
-**NOTE** : You won't actually update the site-wide HXT file. Instead, you'll issue a prod request to have it updated. That's discussed later, when you [prepare for deployment](#17-prepare-for-deployment-timing-). 
+**NOTE** : You won't actually update the site-wide HXT file. Instead, you'll provide it as part of your CP request. That's discussed later, when you [prepare for deployment](#17-prepare-for-deployment-timing-). 
 
 The site-wide HXT is saved in SD here (assuming your enlistment folder is on C:\SD):
 
