@@ -11,12 +11,12 @@ keywords: ["kernel-mode drivers WDK KMDF , about KMDF", "KMDF WDK , about KMDF",
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-Windows 10 Anniversary Update includes Kernel-Mode Driver Framework (KMDF) version 1.19 and User-Mode Driver Framework (UMDF) version 2.19.
+Windows 10, version 1607 includes Kernel-Mode Driver Framework (KMDF) version 1.19 and User-Mode Driver Framework (UMDF) version 2.19.
 
 You can use these framework versions to build drivers for:
 
 -   Windows 10 (all SKUs)
--   Windows Server 2016 Technical Preview
+-   Windows Server 2016
 
 For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
 
