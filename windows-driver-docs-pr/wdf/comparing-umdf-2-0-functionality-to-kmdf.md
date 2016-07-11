@@ -1,16 +1,16 @@
 ---
-title: Comparing UMDF 2.0 Functionality to KMDF
+title: Comparing UMDF 2 Functionality to KMDF
 author: windows-driver-content
-description: This topic compares the functionality available to a Kernel-Mode Driver Framework (KMDF) driver with that available to a User-Mode Driver Framework (UMDF) 2.0 driver.
+description: This topic compares the functionality available to a Kernel-Mode Driver Framework (KMDF) driver with that available to a User-Mode Driver Framework (UMDF) 2 driver.
 ms.assetid: 9D4DD1A9-DA49-4132-B98F-AFEC8B427272
 ---
 
-# Comparing UMDF 2.0 Functionality to KMDF
+# Comparing UMDF 2 Functionality to KMDF
 
 
-This topic compares the functionality available to a Kernel-Mode Driver Framework (KMDF) driver with that available to a User-Mode Driver Framework (UMDF) 2.0 driver. It is designed to help you decide whether you should write a UMDF 2.0 driver or a KMDF driver.
+This topic compares the functionality available to a Kernel-Mode Driver Framework (KMDF) driver with that available to a User-Mode Driver Framework (UMDF) 2 driver. It is designed to help you decide whether you should write a UMDF 2 driver or a KMDF driver.
 
-While UMDF version 2.0 offers a significant subset of functionality that was previously available only to KMDF drivers, the following features are available only to KMDF drivers. If your driver requires one of these features, you must write a KMDF driver.
+While UMDF version 2 offers a significant subset of functionality that was previously available only to KMDF drivers, the following features are available only to KMDF drivers. If your driver requires one of these features, you must write a KMDF driver.
 
 <table>
 <colgroup>
@@ -70,7 +70,7 @@ While UMDF version 2.0 offers a significant subset of functionality that was pre
 
  
 
-If your driver does not require any of the above, you can write a UMDF 2.0 driver instead of using KMDF. Because the two frameworks share many interfaces, you can convert your driver to KMDF later if the need arises. For information about why you might want to choose UMDF, see [Advantages of Writing UMDF Drivers](advantages-of-writing-umdf-drivers.md).
+If your driver does not require any of the above, you can write a UMDF 2 driver instead of using KMDF. Because the two frameworks share many interfaces, you can convert your driver to KMDF later if the need arises. For information about why you might want to choose UMDF, see [Advantages of Writing UMDF Drivers](advantages-of-writing-umdf-drivers.md).
 
 For more information about the framework objects and which are supported by KMDF and UMDF, see [Summary of Framework Objects](summary-of-framework-objects.md).
 

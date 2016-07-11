@@ -18,16 +18,34 @@ This content is to help writers migrate the driver documentation (the conceptual
 14. [Create new WDCML parent topic in HW_NODES](#14-create-a-new-wdcml-parent-topic-in-hw_nodes)
 15. [Update WDCML TOC to show only reference topics](#15-update-wdcml-toc-to-show-only-reference-topics)
 16. [Update Dev Center HXT file for new OP and REF](#16-update-dev-center-hxt-file-for-new-op-and-ref)  
-17. [**Pause and prepare for deployment (timing!)**](#17-prepare-for-deployment-timing-)  
-18. [Submit ProdRequest to MSDNSTAGE & review](#18-submit-prodrequest-to-msdnstage-review)  
-19. [Ready. Set. Go. Merge your content into the MASTER branch!](#19-ready-set-go-merge-your-content-into-master-branch-)  
-20. [Create a pull request to the LIVE branch](#20-create-a-pull-request-to-the-live-branch)
-21. [Have another writer review & approve the pull to LIVE](#21-have-another-writer-review-approve-the-pull-to-live)
-22. [Update your ProdRequest, push to LIVE](#22-update-your-prodrequest-push-to-live)  
-23. [Submit redirect request to MSDN team](#23-submit-redirect-request-to-msdn-team)  
-24. [Review changes on LIVE environment](#24-review-changes-on-live-environment)  
-25. [Clean up: Move old WDCML content to Source Depot Archive folder](#25-clean-up-move-old-wdcml-content-to-source-depot-archive-folder)  
-26. [Clean up: Remove working branch from local and origin](#26-clean-up-remove-working-branch-from-local-and-origin)  
+
+(The next steps are being updated to reflect the new CP Process. Check with the OP CP Cordinator for current information)
+
+[Writer Tasks](#writer-tasks)
+
+W1. [**Pause and prepare for deployment (timing!)**](#w1-prepare-for-deployment)
+
+W2. [Prepare you CP Request](#w2-prepare-cp-request) 
+
+W3. [Optionaly have another writer review & approve the pull to Master](#w3-have-another-writer-review-approve-the-pull-to-live)
+
+W4. [Review changes on LIVE environment](#w4-review-changes-on-live-environment)  
+
+W5. [Clean up: Move old WDCML content to Source Depot Archive folder](#w5-clean-up-move-old-wdcml-content-to-source-depot-archive-folder)  
+
+W6. [Clean up: Remove working branch from local and origin](#w6-clean-up-remove-working-branch-from-local-and-origin)  
+
+[OP Cordinator Tasks](#op-cordinator-tasks)
+
+C1. [Submit ProdRequest to MSDNSTAGE & review](#c1-submit-prodrequest-to-msdnstage-review)  
+
+C2. [Ready. Set. Go. Merge your content into the MASTER branch](#c2-ready-set-go-merge-your-content-into-master-branch)  
+
+C3. [Create a pull request to the LIVE branch](#c3-create-a-pull-request-to-the-live-branch)
+
+C4. [Update your MSDN ProdRequest, push to LIVE](#c4-update-your-prodrequest-push-to-live)  
+
+C5. [Submit redirect request to MSDN team](#c5-submit-redirect-request-to-msdn-team)  
 
 
 ##1. Get your Git account and tools set up
@@ -125,7 +143,7 @@ You can also see how a new topic was created to be a single root at the top of t
 
 
 ### XTOC quality check
-When you're all finsished (or you think you are), do a local CHM build of **projectname-OP.xtoc** and **projectname-REF.xtoc** and compare it to the original CHM. 
+When you're all finished (or you think you are), do a local CHM build of **projectname-OP.xtoc** and **projectname-REF.xtoc** and compare it to the original CHM. 
 
     CBX ProjectName.xtoc MSDN
 
@@ -240,8 +258,8 @@ To do that, navigate to your repo folder and use **git remote show origin**:
 ```
 X:\myrepo\drivers [master ≡]> git remote show origin
 * remote origin
-  Fetch URL: https://github.com/Microsoft/windows-driver-docs-pr.git
-  Push  URL: https://github.com/Microsoft/windows-driver-docs-pr.git
+  Fetch URL: https://cpubwin.visualstudio.com/_git/drivers/
+  Push  URL: https://cpubwin.visualstudio.com/_git/drivers/
   HEAD branch: master
   Remote branches:
     bringupmigration     tracked
@@ -624,7 +642,7 @@ Now that you have OP content and a new WDCML parent topic, the next step is to m
 ##16. Update Dev Center HXT file for new OP and REF
 As mentioned earlier, your project's TOC is no longer defined exclusively by the WDCML XTOC file - after the migration, that only defines the TOC for the reference content. To get the Dev Center TOC to include the OP node, you'll need to update the site-wide HXT file for the Hardware Dev Center. 
 
-**NOTE** : You won't actually update the site-wide HXT file. Instead, you'll issue a prod request to have it updated. That's discussed later, when you [prepare for deployment](#17-prepare-for-deployment-timing-). 
+**NOTE** : You won't actually update the site-wide HXT file. Instead, you'll provide it as part of your CP request. That's discussed later, when you [prepare for deployment](#17-prepare-for-deployment-timing-). 
 
 The site-wide HXT is saved in SD here (assuming your enlistment folder is on C:\SD):
 
@@ -691,7 +709,17 @@ To prepare a new Dev Center HXT file:
 
 10. **Compare your revised HXT with the original in BuildX**. It's a good idea to confirm that they only changes are the ones you ***intended*** to make. 
 
-##17. Prepare for deployment (timing!)
+
+##Writer and OP Cordinator Tasks
+
+To publish your content to MSDN, you will work with the OP Coordinator. In the following sections, the tasks that the OP coordinator and the writer completes are both described.
+
+
+*************************************************************
+##Writer Tasks
+*************************************************************
+
+##W1. Prepare for deployment
 Before you continue, make sure you have the following items compeleted and ready to go...
 
 ###Pre-deployment checklist:
@@ -706,29 +734,125 @@ Before you continue, make sure you have the following items compeleted and ready
 ###Timing
 The process from this point on looks like this:  
 
-1. **BEFORE YOU PROCEED** : See if anyone else on the team is about ready to publish their WDCML-to-OP migration. Ideally, we should bundle our production requests so we don't have conflicting edits to the Dev Center HXT file. 
+1. **BEFORE YOU PROCEED** : Work with CP Coordinator to publish to LIVE. It is a good idea to bundle our production requests so we don't have conflicting edits to the Dev Center HXT file. 
 
-2. **Submit Prodreqest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
+2. ** CP Cordintator -- Submit Prodreqest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
 
 3. **Make sure TOC works correctly**   
     * Technology link in the TOC points to new parent in HW_NODES  
     * Design guide link points to single-topic target (the top conceptual topic that will redirect to OP)  
     
-4.  **Publish OP content to the world!**  
+4.  ** CP Cordintator -- Publish OP content to the world**  
     1. First merge your *working-branch* to *MASTER*  
     2. Review your content on MSDN Stage (no branch specifier needed in the URL)
     3. Merge your changes in *MASTER* to *LIVE*!
     
-5. **Update your Prodrequest - ask them to push the changes to LIVE**
+5. ** CP Cordintator -- Update your Prodrequest - ask them to push the changes to LIVE**
 
-6. **Submit redirects CSV to the MSDN team**
+6. ** CP Cordintator -- Submit redirects CSV to the MSDN team**
 
-7. **Review the changes on the LIVE environment**
+7. **Writer -- Review the changes on the LIVE environment**
 
-8. **Move old WDCML to the Archive folder in Source Depot**
+8. **Writer -- Move old WDCML to the Archive folder in Source Depot**
+
+##W2. Prepare CP Request
+
+Pre-migration checklist:
+
+1.	Confirm OP content in working branch is looking good on MSDN stage: https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/<projectfolder>?branch=<branchname>
+2.	Create WDCML redirects CSV file (If applicable, include index rename for parent topic). For more guidance see:  Migration Guide-Build a .CSV file for redirecting old topics to OP 
+3.	Prepare HXT snippet for your project to send to OP Cordinator via CP Bug
+4.	Update WDCML project projectname.hxt to show reference only (if applicable)
+5.	Review WDCML SD history to make sure no changes were made (missed) after the con2md conversion 
+6.	Review the new WDCML parent topic in HW_NODES (use the WDCML GUID to view on Stage) 
+7.	Confirm your FWlink to OP content is pointing to the OP working branch on Stage
+8.	Make sure you’ll be present on migration day to sign-off on your WDCML and OP MSDNStage content.
 
 
-##18. Submit ProdRequest to MSDNSTAGE & review
+##W3. Have another writer review & approve the pull to LIVE
+The aim of this step is to get another set of eyes on what's being published. 
+
+1. Navigate to this page to see all open pull requests in the repo:
+
+ToDo: Update link to https://cpubwin.visualstudio.com/_git/drivers
+
+    [https://github.com/Microsoft/windows-driver-docs-pr/pulls](https://github.com/Microsoft/windows-driver-docs-pr/pulls)
+
+2. Review the pull request and take a look at the specified commits (to make sure they make sense)
+
+3. Double check email to see if anyone on the team has objected to completing the pull request
+
+4. Once it looks ready, click the **Merge** button
+
+5. Once the build completes, review the LIVE Dev Center and make sure the content published successfully:
+
+    [https://msdn.microsoft.com/en-us/windows/hardware/drivers/index](https://msdn.microsoft.com/en-us/windows/hardware/drivers/index)
+
+
+
+##W4. Review changes on LIVE environment
+Finally, go to the Dev Center and make sure your WDCML & HXT changes appear:
+
+**Develop node** --> [https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767)
+
+Note that it may take some time for the redirects to take effect across the various web servers. 
+
+##W5. Clean up: Move old WDCML content to Source Depot Archive folder
+
+Now you need to use `sd integrate` and `sd delete` to move the WDCML files that you migrated to the SD archive:
+
+`//depot/DevDoc/archive/`
+
+If you'd prefer, please provide a pointer to your **projectname-OP.xtoc** to <tedhudek@microsoft.com>, who will be happy to do the archival operation on your behalf.
+
+If you are archiving an entire WDCML project, you should also search for the project name and remove it if it appears in any of the following files:
+
+```
+SDROOT\buildx\schema\xsd\validtechvalues.xsd
+SDROOT\buildx\script2\config\adjustments_projectlevel.xml
+SDROOT\buildx\script2\config\*tech*.xml
+SDROOT\buildx\script2\templates\indexing_boilerplates.xslt
+SDROOT\*.txt
+```
+
+##W6. Clean up: Remove working branch from local and origin
+Once all your changes have been merged into MASTER and LIVE, and you're finished with your working branch, please remove your working branch. You will remove it in two places, local and origin.
+
+Clean up the repository as follows...
+
+1. Navigate to a branch that is **NOT** your working branch.
+
+        C:\myrepo\drivers [working-branch]> git checkout master
+
+1. Confirm **working-branch** still exists on local and origin.   
+
+        C:\myrepo\drivers [master]> git remote show origin
+        
+1. To **remove your local branch**, use the **branch** command with the **-d** switch as follows (where *working-branch* is the name of your working branch):
+
+        C:\myrepo\drivers [master]> git branch -d working-branch
+
+1. Look again to make sure the **local working-branch** was removed. 
+
+        C:\myrepo\drivers [master]> git remote show origin
+        
+1. **BE VERY CAREFUL HERE** : Next delete your **remote working-branch** using the **push origin :** command. Make absolutely certain that you specify your working branch.  
+
+        C:\myrepo\drivers [master]> git push origin :working-branch
+
+1. Confirm **working-branch** was removed from origin.   
+
+        C:\myrepo\drivers [master]> git remote show origin
+        
+   **Note** : If others remove a branch, you will see that origin branch marked as stale. To clean up the results of your query, run: `git remote prune origin`
+ 
+
+*************************************************************
+## OP Cordinator Tasks
+*************************************************************
+
+
+##C1. Submit ProdRequest to MSDNSTAGE & review
 The first order of business is testing the new TOC changes on MSDNStage. We don't want to move the OP content in the MASTER branch just yet because we don't know how long it will take to get assistance from the production team.
 
 **BEFORE YOU PROCEED** : Double check if anyone else on the team is about to publish their WDCML-to-OP migration. Group projects into the same ProdRequest if possible (instructions below). 
@@ -766,7 +890,7 @@ The first order of business is testing the new TOC changes on MSDNStage. We don'
 5. Don't forget to click **Save** after you attach your HXT file.    
      
 
-##19. Ready. Set. Go. Merge your content into MASTER branch!
+##C2. Ready. Set. Go. Merge your content into MASTER branch
 The **master** branch, for all intents and purposes, is the MSDNStage staging server. But unlike WDCML content, **it could be pushed to LIVE by any of the writers on the team at any time.**
 
 **IMPORTANT** : Don't merge anything to **master** that can't be pushed to LIVE. But at the same token, it's polite to give your team advanced notice when you intend to push content from master over to LIVE. 
@@ -824,10 +948,12 @@ You can find your content here (I've added the branch qualifier in case your bro
 If you forgot to add your project to the TOC, see [Add your project to the WDK TOC \(in OP\)](#11-finishing-touches-add-your-project-to-the-wdk-toc-in-op-).
 
 
-##20. Create a pull request to the LIVE branch
+##C3. Create a pull request to the LIVE branch
 Due to the significance of the LIVE branch, we use a different process to move changes into it. Rather than merge locally, we're going to do a pull request.
 
 1. Go to GitHub and **compare the LIVE branch to the MASTER branch**:  
+
+ToDo: Update link to https://cpubwin.visualstudio.com/_git/drivers
 
     [https://github.com/Microsoft/windows-driver-docs-pr/compare/live...master?expand=1](https://github.com/Microsoft/windows-driver-docs-pr/compare/live...master?expand=1)
 
@@ -851,29 +977,12 @@ Due to the significance of the LIVE branch, we use a different process to move c
   
 4. Once the pull request is ready, click **Create pull request**
 
-##21. Have another writer review & approve the pull to LIVE
-The aim of this step is to get another set of eyes on what's being published. 
 
-1. Navigate to this page to see all open pull requests in the repo:
-
-    [https://github.com/Microsoft/windows-driver-docs-pr/pulls](https://github.com/Microsoft/windows-driver-docs-pr/pulls)
-
-2. Review the pull request and take a look at the specified commits (to make sure they make sense)
-
-3. Double check email to see if anyone on the team has objected to completing the pull request
-
-4. Once it looks ready, click the **Merge** button
-
-5. Once the build completes, review the LIVE Dev Center and make sure the content published successfully:
-
-    [https://msdn.microsoft.com/en-us/windows/hardware/drivers/index](https://msdn.microsoft.com/en-us/windows/hardware/drivers/index)
-
-
-##22. Update your ProdRequest, push to LIVE
+##C4. Update your ProdRequest, push to LIVE
 As soon as you see OP content appear on the LIVE Dev Center, you can proceed with pushing your WDCML changes to LIVE. Reply to the email thread and let the WDG FE Publishing team know they can promote the changes to LIVE. 
 
 
-##23. Submit redirect request to MSDN team
+##C5. Submit redirect request to MSDN team
 Next, immediately submit the redirect request to MSDN using MSDN Help:
 
 1. Go to [http://msdnhelp](http://msdnhelp)  
@@ -905,62 +1014,6 @@ Next, immediately submit the redirect request to MSDN using MSDN Help:
     
 6. Click **Done** to add the CSV attachment
 
-
-##24. Review changes on LIVE environment
-Finally, go to the Dev Center and make sure your WDCML & HXT changes appear:
-
-**Develop node** --> [https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767](https://msdn.microsoft.com/en-us/library/windows/hardware/mt269767)
-
-Note that it may take some time for the redirects to take effect across the various web servers. 
-
-##25. Clean up: Move old WDCML content to Source Depot Archive folder
-
-Now you need to use `sd integrate` and `sd delete` to move the WDCML files that you migrated to the SD archive:
-
-`//depot/DevDoc/archive/`
-
-If you'd prefer, please provide a pointer to your **projectname-OP.xtoc** to <tedhudek@microsoft.com>, who will be happy to do the archival operation on your behalf.
-
-If you are archiving an entire WDCML project, you should also search for the project name and remove it if it appears in any of the following files:
-
-```
-SDROOT\buildx\schema\xsd\validtechvalues.xsd
-SDROOT\buildx\script2\config\adjustments_projectlevel.xml
-SDROOT\buildx\script2\config\*tech*.xml
-SDROOT\buildx\script2\templates\indexing_boilerplates.xslt
-SDROOT\*.txt
-```
-
-##26. Clean up: Remove working branch from local and origin
-Once all your changes have been merged into MASTER and LIVE, and you're finished with your working branch, please remove your working branch. You will remove it in two places, local and origin.
-
-Clean up the repository as follows...
-
-1. Navigate to a branch that is **NOT** your working branch.
-
-        C:\myrepo\drivers [working-branch]> git checkout master
-
-1. Confirm **working-branch** still exists on local and origin.   
-
-        C:\myrepo\drivers [master]> git remote show origin
-        
-1. To **remove your local branch**, use the **branch** command with the **-d** switch as follows (where *working-branch* is the name of your working branch):
-
-        C:\myrepo\drivers [master]> git branch -d working-branch
-
-1. Look again to make sure the **local working-branch** was removed. 
-
-        C:\myrepo\drivers [master]> git remote show origin
-        
-1. **BE VERY CAREFUL HERE** : Next delete your **remote working-branch** using the **push origin :** command. Make absolutely certain that you specify your working branch.  
-
-        C:\myrepo\drivers [master]> git push origin :working-branch
-
-1. Confirm **working-branch** was removed from origin.   
-
-        C:\myrepo\drivers [master]> git remote show origin
-        
-   **Note** : If others remove a branch, you will see that origin branch marked as stale. To clean up the results of your query, run: `git remote prune origin`
-   
+  
 ----------------
 ##THE END

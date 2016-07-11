@@ -10,6 +10,7 @@
 ## [NFC device drivers](nfc/)
 ## [PCI drivers](pci/)
 ## [PCMCIA drivers](pcmcia/)
+## [Power management technologies](powermeter/)
 ## [SD card bus drivers](sd/)
 ## [SPB drivers](spb/)
 ## [Storage device drivers](storage/)

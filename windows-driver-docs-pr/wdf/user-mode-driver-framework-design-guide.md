@@ -10,7 +10,7 @@ ms.assetid: 4e56b62a-640d-4a9d-bf38-118b211d41f6
 
 This section contains information that applies only to User-Mode Driver Framework (UMDF) versions 1.11 and earlier.
 
-Windows 8.1 introduces UMDF version 2.0. For more information, see [Getting Started with UMDF](getting-started-with-umdf-version-2.md).
+Windows 8.1 introduces UMDF version 2. For more information, see [Getting Started with UMDF](getting-started-with-umdf-version-2.md).
 
 For more information about which versions of UMDF are available in specific versions of Windows, see [UMDF Version History](umdf-version-history.md).
 
