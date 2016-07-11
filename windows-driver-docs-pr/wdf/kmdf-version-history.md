@@ -33,7 +33,7 @@ The following table shows the release history of the KMDF library:
 <td align="left"><p>1.19</p></td>
 <td align="left"><p>Windows 10, version 1607 WDK</p></td>
 <td align="left"><p>Windows 10, version 1607</p></td>
-<td align="left"><p>Windows 10, version 1607 (all SKUs), Windows Server 2016</p></td>
+<td align="left"><p>Windows 10, version 1607, Windows Server 2016</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>1.17</p></td>
