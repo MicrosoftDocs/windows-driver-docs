@@ -28,7 +28,7 @@ The following table shows the release history of the UMDF library:
 <th align="left">UMDF version</th>
 <th align="left">Release method</th>
 <th align="left">Included in this version of Windows</th>
-<th align="left">Drivers using it can run on <sup>†</sup></th>
+<th align="left">Drivers using it can run on</th>
 </tr>
 </thead>
 <tbody><tr class="odd">
