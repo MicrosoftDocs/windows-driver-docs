@@ -742,7 +742,7 @@ The process from this point on looks like this:
     * Technology link in the TOC points to new parent in HW_NODES  
     * Design guide link points to single-topic target (the top conceptual topic that will redirect to OP)  
     
-4.  ** CP Cordintator -- Publish OP content to the world**  
+4.  ** CP Coordintator -- Publish OP content to the world**  
     1. First merge your *working-branch* to *MASTER*  
     2. Review your content on MSDN Stage (no branch specifier needed in the URL)
     3. Merge your changes in *MASTER* to *LIVE*!
