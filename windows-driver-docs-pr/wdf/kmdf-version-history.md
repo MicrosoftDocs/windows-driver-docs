@@ -25,7 +25,7 @@ The following table shows the release history of the KMDF library:
 <th align="left">KMDF version</th>
 <th align="left">Release method</th>
 <th align="left">Included in this version of Windows</th>
-<th align="left">Drivers using it run on <sup>†</sup></th>
+<th align="left">Drivers using it run on <sup></sup></th>
 </tr>
 </thead>
 <tbody>
