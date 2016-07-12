@@ -19,15 +19,15 @@ This content is to help writers migrate the driver documentation (the conceptual
 15. [Update WDCML TOC to show only reference topics](#15-update-wdcml-toc-to-show-only-reference-topics)
 16. [Update Dev Center HXT file for new OP and REF](#16-update-dev-center-hxt-file-for-new-op-and-ref)  
 
-(The next steps are being updated to reflect the new CP Process. Check with the OP CP Cordinator for current information)
+(The next steps are being updated to reflect the new CP Process. Check with the OP CP Coordinator for current information)
 
 [Writer Tasks](#writer-tasks)
 
 W1. [**Pause and prepare for deployment (timing!)**](#w1-prepare-for-deployment)
 
-W2. [Prepare you CP Request](#w2-prepare-cp-request) 
+W2. [Preparing you CP Request](#w2-prepare-cp-request) 
 
-W3. [Optionaly have another writer review & approve the pull to Master](#w3-have-another-writer-review-approve-the-pull-to-live)
+W3. [Optionally have another writer review & approve the pull to Master](#w3-have-another-writer-review-approve-the-pull-to-live)
 
 W4. [Review changes on LIVE environment](#w4-review-changes-on-live-environment)  
 
@@ -736,7 +736,7 @@ The process from this point on looks like this:
 
 1. **BEFORE YOU PROCEED** : Work with CP Coordinator to publish to LIVE. It is a good idea to bundle our production requests so we don't have conflicting edits to the Dev Center HXT file. 
 
-2. ** CP Cordintator -- Submit Prodreqest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
+2. ** CP Cordintator -- Submit Prodrequest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
 
 3. **Make sure TOC works correctly**   
     * Technology link in the TOC points to new parent in HW_NODES  
