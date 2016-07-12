@@ -5,10 +5,10 @@ description: This section describes User-Mode Driver Framework (UMDF) and detail
 ms.assetid: 2C4DAFA4-783C-4739-8D27-A417AC63B447
 ---
 
-# Getting Started with User-Mode Driver Framework
+# Getting Started with UMDF
 
 
-This section describes User-Mode Driver Framework (UMDF) and explains the differences between UMDF versions 1 and 2. It also provides high-level architectural information about UMDF. Use this section to determine if a UMDF driver is the right choice for your needs, and to decide which UMDF version to use.
+This section describes User-Mode Driver Framework (UMDF) and details the differences between UMDF versions 1 and 2. It also provides high-level architectural information about UMDF. Use this section to determine if a UMDF driver is the right choice for your needs, and to decide which UMDF version to use.
 
 Windows Driver Frameworks (WDF) contains UMDF, a framework for the creation of user-mode drivers. Like Kernel-Mode Driver Framework (KMDF), UMDF provides an abstraction layer from WDM, handling much of the Plug and Play (PnP) and power management functionality, and allowing the driver to opt in for specific functionality and event handling.
 
