@@ -710,9 +710,9 @@ To prepare a new Dev Center HXT file:
 10. **Compare your revised HXT with the original in BuildX**. It's a good idea to confirm that they only changes are the ones you ***intended*** to make. 
 
 
-##Writer and OP Cordinator Tasks
+##Writer and OP Coordinator Tasks
 
-To publish your content to MSDN, you will work with the OP Coordinator. In the following sections, the tasks that the OP coordinator and the writer completes are both described.
+To publish your content to MSDN, you will work with the OP Coordinator. The tasks that the OP coordinator and the writer complete are both described in the following sections.
 
 
 *************************************************************
@@ -736,7 +736,7 @@ The process from this point on looks like this:
 
 1. **BEFORE YOU PROCEED** : Work with CP Coordinator to publish to LIVE. It is a good idea to bundle our production requests so we don't have conflicting edits to the Dev Center HXT file. 
 
-2. ** CP Cordintator -- Submit Prodrequest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
+2. ** CP Coordintator -- Submit Prodrequest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
 
 3. **Make sure TOC works correctly**   
     * Technology link in the TOC points to new parent in HW_NODES  
@@ -747,9 +747,9 @@ The process from this point on looks like this:
     2. Review your content on MSDN Stage (no branch specifier needed in the URL)
     3. Merge your changes in *MASTER* to *LIVE*!
     
-5. ** CP Cordintator -- Update your Prodrequest - ask them to push the changes to LIVE**
+5. ** CP Coordintator -- Update your Prodrequest - ask them to push the changes to LIVE**
 
-6. ** CP Cordintator -- Submit redirects CSV to the MSDN team**
+6. ** CP Coordintator -- Submit redirects CSV to the MSDN team**
 
 7. **Writer -- Review the changes on the LIVE environment**
 
@@ -761,7 +761,7 @@ Pre-migration checklist:
 
 1.	Confirm OP content in working branch is looking good on MSDN stage: https://msdnstage.redmond.corp.microsoft.com/en-us/windows/hardware/drivers/<projectfolder>?branch=<branchname>
 2.	Create WDCML redirects CSV file (If applicable, include index rename for parent topic). For more guidance see:  Migration Guide-Build a .CSV file for redirecting old topics to OP 
-3.	Prepare HXT snippet for your project to send to OP Cordinator via CP Bug
+3.	Prepare HXT snippet for your project to send to OP Coordinator via CP Bug
 4.	Update WDCML project projectname.hxt to show reference only (if applicable)
 5.	Review WDCML SD history to make sure no changes were made (missed) after the con2md conversion 
 6.	Review the new WDCML parent topic in HW_NODES (use the WDCML GUID to view on Stage) 
@@ -816,7 +816,7 @@ SDROOT\*.txt
 ```
 
 ##W6. Clean up: Remove working branch from local and origin
-Once all your changes have been merged into MASTER and LIVE, and you're finished with your working branch, please remove your working branch. You will remove it in two places, local and origin.
+Once all your changes have been merged into MASTER and LIVE, and you're finished with your working branch, please remove your working branch. You will remove it in two places: local and origin.
 
 Clean up the repository as follows...
 
