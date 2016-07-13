@@ -25,7 +25,7 @@ This content is to help writers migrate the driver documentation (the conceptual
 
 W1. [**Pause and prepare for deployment (timing!)**](#w1-prepare-for-deployment)
 
-W2. [Preparing you CP Request](#w2-prepare-cp-request) 
+W2. [Preparing your CP Request](#w2-prepare-cp-request) 
 
 W3. [Optionally have another writer review & approve the pull to Master](#w3-have-another-writer-review-approve-the-pull-to-live)
 
