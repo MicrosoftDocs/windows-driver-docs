@@ -35,7 +35,7 @@ W5. [Clean up: Move old WDCML content to Source Depot Archive folder](#w5-clean-
 
 W6. [Clean up: Remove working branch from local and origin](#w6-clean-up-remove-working-branch-from-local-and-origin)  
 
-[OP Cordinator Tasks](#op-cordinator-tasks)
+[OP Coordinator Tasks](#op-coordinator-tasks)
 
 C1. [Submit ProdRequest to MSDNSTAGE & review](#c1-submit-prodrequest-to-msdnstage-review)  
 
@@ -80,12 +80,12 @@ So that you can run the tools as intended:
 
 
 ##2. Refactor the WDCML TOC (create OP and REF XTOC files)
-The WDCML XTOC file is key to refactoring the content. In this process, we'll create three seperate files to make it easier for people to understand which topics are going where. These XTOC files will also be used by tools to convert the OP content, the TOC file, and a redirects CSV file for the MSDN team to remove the old topics. By doing this refactoring in WDCML, we can take advantage of the autokeylinks elements for generating new "In this Section" lists.
+The WDCML XTOC file is key to refactoring the content. In this process, we'll create three separate files to make it easier for people to understand which topics are going where. These XTOC files will also be used by tools to convert the OP content, the TOC file, and a redirects CSV file for the MSDN team to remove the old topics. By doing this refactoring in WDCML, we can take advantage of the autokeylinks elements for generating new "In this Section" lists.
 
 ### XTOC overview
 To start, create three new XTOC files in your WDCML project:
 
-* **projectname-OP.xtoc** This holds the conceputal content that will be migrated to OP. Create it by copying your projectname.xtoc file. 
+* **projectname-OP.xtoc** This holds the conceptual content that will be migrated to OP. Create it by copying your projectname.xtoc file. 
 
 * **projectname-REF.xtoc** This holds the reference content that will continue being published in WDCML.
 
@@ -107,7 +107,7 @@ Once the content is split up into those three new XTOC files, they can be used t
 3. As many low-value "orientation" (list of links) topics are removed.  In a couple of sections, see the for tips on cleaning up your IA.
 
 ### Content architecture
-While refactoring your project, it's helpful to consider the finished architecture. Because we're splitting conceptual and reference across two different platforms, you'll need to [edit the site-wide Dev Center HXT](#16-update-dev-center-hxt-file-for-new-op-and-ref) and [create a new WDCML parent topic](#14-create-a-new-wdcml-parent-topic-in-hw_nodes) (described later). With those chanages, you'll want to make sure the new topic titles mention the technology, rather than simply say "Design guide" or "Reference".
+While refactoring your project, it's helpful to consider the finished architecture. Because we're splitting conceptual and reference across two different platforms, you'll need to [edit the site-wide Dev Center HXT](#16-update-dev-center-hxt-file-for-new-op-and-ref) and [create a new WDCML parent topic](#14-create-a-new-wdcml-parent-topic-in-hw_nodes) (described later). With those changes, you'll want to make sure the new topic titles mention the technology, rather than simply say "Design guide" or "Reference".
 
 ![TOC relationship to HXT](images/HXTTOC.png)
 
@@ -211,7 +211,7 @@ If you don't specify the file name in an OP URL, MSDN will serve up the index.md
  
 1. Find your top-most parent topic and rename it to be **index.md**
 2. In TOC.md, change the name of the source file to be index.md
-3. Finally, do a search of the MD files for any links to the previous file name. You can use the findstr utility with CMD.exe to find any occurances of that file name. For example, if the old topic was named introduction.md, the findstr command would be:
+3. Finally, do a search of the MD files for any links to the previous file name. You can use the findstr utility with CMD.exe to find any occurrences of that file name. For example, if the old topic was named introduction.md, the findstr command would be:
 
         c:\SD\projectname\build\markdown\mdout>findstr /S /I /M /C:"introduction.md" *.md
           
@@ -294,7 +294,7 @@ In Git, you use **checkout** to changes branches. When you do this, whole folder
 
 
 ##7. Add OP content to the working branch
-Once you create a working branch, all changes you make to the respositry will be captured in your branch - any files in any folders, not just the ones in your project folder. 
+Once you create a working branch, all changes you make to the repository will be captured in your branch - any files in any folders, not just the ones in your project folder. 
 
 ### Create a project folder and copy over your MD files
 In your repo, navigate to the driver documentation folder windows-driver-docs-pr\windows-driver-docs-pr. 
@@ -327,7 +327,7 @@ You want to make sure your local repository still builds successfully now that y
         
     Open your browser to -->  [http://localhost:8080](http://localhost:8080) 
 
-3. Finally, when you're finish viewing the content, **close the CMD.exe window**. That will complete the build.
+3. Finally, when you are finished viewing the content, **close the CMD.exe window**. That will complete the build.
 
 If the build doesn't run successfully, make sure you have the necessary permissions discussed at the beginning of this topic.
 
@@ -374,7 +374,7 @@ There you will find the status of the ongoing builds. If it fails through no fau
 ![Portal example](images/PortalExample.png)
 
 ### Kicking off the build again (if you must)
-To manually kick off the build again..
+To manually kick off the build again...
 
 1. Go to [Repository Management](https://op-portal-prod.azurewebsites.net/#/containers/repository/repositories/All).
 2. Select the row that contains **windows-driver-docs-pr** - *without clicking the link to the repo.*
@@ -412,7 +412,7 @@ I recommend doing a local CHM build of your projectname-OP.xtoc file. That way y
 ### Finding bugs
 Technically, MSDN is supposed to as good a job rendering markdown as GitHub does. When you find weird behavior, click on the *Contribute* button in the top-right corner to quickly jump to the GitHub version of the topic.
 
-If GitHub displays the same weirdness, your only choice is to revise the MD file. If on the other hand you don't see the weirdness, **you found a bug!** In that case, email [eliotdirs@microsoft.com](mailto:eliotdirs@microsoft.com) for instructions on how to sumbit the issue. But of course, you're always free to bypass the bug by revising the MD file. 
+If GitHub displays the same weirdness, your only choice is to revise the MD file. If on the other hand you don't see the weirdness, **you found a bug!** In that case, email [eliotdirs@microsoft.com](mailto:eliotdirs@microsoft.com) for instructions on how to submbit the issue. But of course, you're always free to bypass the bug by revising the MD file. 
 
 
 ##9. Make revisions to your working branch 
@@ -423,7 +423,7 @@ To quickly go from your branch to Visual Studio Code, you can simply type the fo
 
     C:\myrepo\drivers [working-branch]>code .
     
-That will open up VS Code to your repositry. Once there, select the files and start making changes as desired. As with Office products you can save by using **Ctrl+S** or the **Alt-F,S** keystrokes. Once you start making changes, you'll see numbers appear in the top left that indicate the number of files affected by changes. 
+That will open up VS Code to your repository. Once there, select the files and start making changes as desired. As with Office products you can save by using **Ctrl+S** or the **Alt-F,S** keystrokes. Once you start making changes, you'll see numbers appear in the top left that indicate the number of files affected by changes. 
 
 ![VS Code change list](images/VSCodeChanges.png)
 
@@ -442,7 +442,7 @@ Commits are the units of change you can push up to origin. Once you're done maki
 ###10. Finishing touches: Run clean-up script and set author
 Now is a great time to perform a few additional clean up steps...
 
-The WDCML conversion does not convert the SeeAlso section (named Related links in OP) as you might expect. There is paragraph spacing between the links and no differentation between those links and the "Send feedback to Microsoft..." link. The **mdRelatedLinksProjectCleaner.ps1** script cleans that up and adds a horizontal rule before the Send Feedback link.
+The WDCML conversion does not convert the SeeAlso section (named Related links in OP) as you might expect. There is paragraph spacing between the links and no differentitation between those links and the "Send feedback to Microsoft..." link. The **mdRelatedLinksProjectCleaner.ps1** script cleans that up and adds a horizontal rule before the Send Feedback link.
 
 If you don't want to be specified as the original author of the topics, you can run **mdAuthorProjectSetter.ps1** to automatically add *windows-driver-content* (the team GitHub account) as the author of all topics in the folder.
 
@@ -486,7 +486,7 @@ I'll write more documentation about these scripts later. But for now, follow the
             x:\ps>.\mdRelatedLinksProjectCleaner.ps1 "C:\myrepo\drivers\windows-driver-docs-pr\acpi"
             x:\ps>.\mdAuthorProjectSetter.ps1 "C:\myrepo\drivers\windows-driver-docs-pr\acpi" 
 
-11.	(optional) compare file changes with the folder you created in Step #2.  
+11.	(optional) Compare file changes with the folder you created in Step #2.  
 
 12. Add and commit your changes and described in the previous step. Indicate that you ran the cleanup and author scripts.
 
@@ -614,9 +614,9 @@ Wait until you go to publish all the changes to LIVE before you [submit the redi
 
 
 ##14. Create a new WDCML parent topic in HW_NODES
-***Note that this only applies to projects that are being split up - seperating conceptual from reference.***  
+***Note that this only applies to projects that are being split up - separating conceptual from reference.***  
 
-To minimize the complextity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simlifying the site-wide HXT and making the ref project easier to maintain.
+To minimize the complexity of the Hardware Dev Center HXT file, we've decided to host the new WDCML parent topic in the **HW_NODES** project. By being in a different WDCML project than the reference topics, we can reference projectname.hxt wholesale, simplifying the site-wide HXT and making the ref project easier to maintain.
 
 ### Create an FWLink for testing on MSDNStage
 In the Dev Center TOC, the link to the OP content depends on the MSDN redirects. But we don't want to submit those redirects until the very end of this process [(Step #23, Submit redirect request to MSDN team](#23-submit-redirect-request-to-msdn-team)). Thus, in order to test the user experience, you'll need to use an FWLink to link to the OP content from the body of your new parent topic.
@@ -720,7 +720,7 @@ To publish your content to MSDN, you will work with the OP Coordinator. The task
 *************************************************************
 
 ##W1. Prepare for deployment
-Before you continue, make sure you have the following items compeleted and ready to go...
+Before you continue, make sure you have the following items completed and ready to go...
 
 ###Pre-deployment checklist:
 * OP content in working branch is looking good on MSDNStage
@@ -728,7 +728,7 @@ Before you continue, make sure you have the following items compeleted and ready
 * Dev Center HXT file revisions are ready to go
 * WDCML project projectname.hxt has been updated to show reference only (if applicable)
 * You've reviewed SD history to make sure no WDCML change were made after the conversion 
-* You've reveiwed the new WDCML parent topic in HW_NODES (use the GUID to view on Stage)
+* You've reviewed the new WDCML parent topic in HW_NODES (use the GUID to view on Stage)
 * FWlink to OP content is pointing to OP working branch on Stage
 
 ###Timing
@@ -736,20 +736,20 @@ The process from this point on looks like this:
 
 1. **BEFORE YOU PROCEED** : Work with CP Coordinator to publish to LIVE. It is a good idea to bundle our production requests so we don't have conflicting edits to the Dev Center HXT file. 
 
-2. ** CP Coordintator -- Submit Prodrequest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
+2. ** CP Coordinator -- Submit Prodrequest to update STAGE** with revised hardware_dev_center.hxt, hw_nodes, and your WDCML project  
 
 3. **Make sure TOC works correctly**   
     * Technology link in the TOC points to new parent in HW_NODES  
     * Design guide link points to single-topic target (the top conceptual topic that will redirect to OP)  
     
-4.  ** CP Coordintator -- Publish OP content to the world**  
+4.  ** CP Coordinator -- Publish OP content to the world**  
     1. First merge your *working-branch* to *MASTER*  
     2. Review your content on MSDN Stage (no branch specifier needed in the URL)
     3. Merge your changes in *MASTER* to *LIVE*!
     
-5. ** CP Coordintator -- Update your Prodrequest - ask them to push the changes to LIVE**
+5. ** CP Coordinator -- Update your Prodrequest - ask them to push the changes to LIVE**
 
-6. ** CP Coordintator -- Submit redirects CSV to the MSDN team**
+6. ** CP Coordinator -- Submit redirects CSV to the MSDN team**
 
 7. **Writer -- Review the changes on the LIVE environment**
 
@@ -848,7 +848,7 @@ Clean up the repository as follows...
  
 
 *************************************************************
-## OP Cordinator Tasks
+## OP Coordinator Tasks
 *************************************************************
 
 
@@ -1008,7 +1008,7 @@ Next, immediately submit the redirect request to MSDN using MSDN Help:
 
 4. Then click **Submit**  
 
-5. On the following page, drag your CSV file (created earlier) from Windows Explorer onto the web page where you can add the attacment.  
+5. On the following page, drag your CSV file (created earlier) from Windows Explorer onto the web page where you can add the attachment.  
 
     ![Attach CSV](images/AttachCSV.png)
     
