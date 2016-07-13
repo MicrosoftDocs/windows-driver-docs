@@ -11,7 +11,7 @@ keywords: ["NFC", "near field communications", "proximity", "near field proximit
 
 Because the Smart Card is sharing the driver with NFP, when a smart card approaches, NDEF processing takes priority so that we give a chance for the higher level services to work on the NDEF message type before an application can communicate with the card.
 
-![](images/smartcardfunctionalflow.png "A flowchart describing the hierarchical reading and writing of NDEF messages upon smart card discovery.")
+![A flowchart describing the hierarchical reading and writing of NDEF messages upon smart card discovery.](images/smartcardfunctionalflow.png)
 
  
 
