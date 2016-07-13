@@ -14,7 +14,7 @@ keywords: ["storage drivers WDK , device objects", "device objects WDK storage",
 
 The following figure shows the device objects that are created for a composite USB mass storage device containing both a Smart Media slot and a Compact Flash slot.
 
-![](images/usbstor.png)
+![device objects that are created for a composite USB mass storage device containing both a Smart Media slot and a Compact Flash slot](images/usbstor.png)
 
 Device Object Tree for a Composite USB Mass Storage Device
 
