@@ -17,8 +17,8 @@ When you write a UMDF driver, you benefit from the following:
 -   Because UMDF drivers run under the **LocalService** account, they have limited access to a user's data or to system files.
 -   User-mode drivers operate in a much simpler environment than kernel-mode drivers. For example, kernel-mode drivers must take into account IRQL, page faults, and thread context. In user mode, however, these issues do not exist. User-mode drivers always run in a different thread from the requesting process and can always take page faults.
 
--   UMDF version 2 offers feature parity with KMDF in most areas. For a full comparison, see [Comparing UMDF 2.0 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md).
--   UMDF version 2 facilitates converting between KMDF and UMDF. See [How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md).
+-   UMDF version 2 offers feature parity with KMDF in most areas. For a full comparison, see [Comparing UMDF 2 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md).
+-   UMDF version 2 facilitates converting between KMDF and UMDF. See [How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md).
 -   You can debug UMDF drivers by using either a user-mode debugger or, starting with UMDF version 2, a kernel-mode debugger.
 
 -   You can use the Wdfkd.dll debugger extension commands with KMDF and starting with UMDF version 2. For more info, see [Debugger Extensions](debugger-extensions-for-kmdf-drivers.md).

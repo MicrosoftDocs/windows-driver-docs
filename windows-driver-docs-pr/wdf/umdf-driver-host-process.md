@@ -15,9 +15,9 @@ The driver host process (Wudfhost.exe) is a child process of the driver manager 
 
 The driver manager can create multiple concurrent instances of Wudfhost.exe, as follows:
 
--   If your UMDF driver was built with version 1.11 and is running on Windows 8 or later, by default the driver manager creates a single instance of Wudfhost that can host multiple device stacks. This technique is called *device pooling*.
+-   If your UMDF driver was built with version 1.11 and is running on Windows 8, by default the driver manager creates a single instance of Wudfhost that can host multiple device stacks. This technique is called *device pooling*.
 
-    If your UMDF driver was built with version 2.0 and is running on Windows 8.1, pooling is also on by default.
+    If your UMDF driver was built with version 2 and is running on Windows 8.1 or Windows 10, pooling is also on by default.
 
 -   If your driver was built with UMDF version 1.9 or earlier, the framework creates a separate instance of the host process (Wudfhost) for each device stack.
 
@@ -25,7 +25,7 @@ For more about device pooling, see [Using Device Pooling in UMDF Drivers](using-
 
 Within Wudfhost.exe, each UMDF driver runs in its own address space, and is therefore isolated from the application process and other instances of the driver host.
 
-You can load drivers built with UMDF versions 1 and 2 concurrently, either in the same host process or in different host processes. For example, by default, the driver manager would load a UMDF 1.11 driver and a UMDF 2.0 driver in the same host process on a computer running Windows 8.1.
+You can load drivers built with UMDF versions 1 and 2 concurrently, either in the same host process or in different host processes. For example, by default, the driver manager would load a UMDF 1.11 driver and a UMDF 2 driver in the same host process on a computer running Windows 8.1 or later.
 
 However, you cannot load UMDF version 1 and 2 drivers in the same device stack. For example, you cannot load a UMDF version 1 filter driver above a UMDF version 2 function driver.
 
