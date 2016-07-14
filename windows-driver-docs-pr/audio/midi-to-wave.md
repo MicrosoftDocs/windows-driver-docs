@@ -1,0 +1,37 @@
+---
+Description: MIDI to Wave
+MS-HAID: 'audio.midi\_to\_wave'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: MIDI to Wave
+---
+
+# MIDI to Wave
+
+
+## <span id="midi_to_wave"></span><span id="MIDI_TO_WAVE"></span>
+
+
+The main work of the synthesizer is done in two steps:
+
+-   Getting MIDI messages
+
+-   Mixing the rendered notes into the wave audio stream
+
+This section details generally how this is done in user mode, although the concepts are essentially the same in kernel mode. See [Kernel Mode Hardware Acceleration DDI](kernel-mode-hardware-acceleration-ddi.md) for specifics on how to do the same with a kernel-mode miniport driver.
+
+In user mode, the application calls [**IDirectMusicSynth::PlayBuffer**](audio.idirectmusicsynth_playbuffer) when it has MIDI messages ready to play. The application is responsible for calling **PlayBuffer** in a timely fashion and for time-stamping the buffer correctly, taking the [synthesizer latency](synthesizer-latency.md) into account. Your implementation of this method retrieves the waiting messages and stores them in an internal format, which is stamped with a time that is based on the reference time that is passed in with the buffer.
+
+The wave sink calls [**IDirectMusicSynth::Render**](audio.idirectmusicsynth_render) whenever it is ready to receive data. For example, if the destination for the rendered data is a DirectSound secondary buffer, your implementation of [**IDirectMusicSynthSink::Activate**](audio.idirectmusicsynthsink_activate) might set up a thread that waits for a DirectSound **PlayBuffer** notification. When the DirectSound buffer requires data, DirectSound notifies the thread, which in turn calls **Render**, passing in a pointer to the **IDirectSoundBuffer** object (described in the Microsoft Windows SDK documentation) and the number and position of the samples that are to be rendered.
+
+The DirectSound buffer is circular. Because wraparound occurs at the end of the buffer, the possibility of a virtually contiguous region being split into two pieces must be taken into account. The wave sink typically handles the split by calling **Render** twice, once for each part of the locked portion of the DirectSound buffer, so that the **Render** method only has to deal with contiguous blocks of memory. The wave sink calls **IDirectSoundBuffer::Lock** on a DirectSound buffer to ask for write permission to a region within the buffer. For example, if the wave sink calls **Lock** on 2 kilobytes of data starting 1 kilobyte from the end of the buffer, then the call locks the last 1 kilobyte up to the end of the buffer and another 1 kilobyte starting at the beginning of the buffer. In this case, **Lock** actually returns two pointers and corresponding lengths, which together describe the region of the buffer that is locked. Each pointer is guaranteed to point to a contiguous block of memory.
+
+Your implementation of the **Render** method is responsible for determining what must be done in response to the MIDI messages that are retrieved in **PlayBuffer**. From the *dwLength* parameter values of successive calls to **Render**, the method can keep track of the sample time and act on messages that are valid for the current rendering period. When a note-on message is processed, the note can be stored internally and rendered again on each pass through the method until a corresponding note-off message is received.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20MIDI%20to%20Wave%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
+
+

@@ -1,0 +1,94 @@
+---
+Description: 'Wrapping System-supplied sAPOs'
+MS-HAID: 'audio.wrapping\_system\_supplied\_sapos'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: 'Wrapping System-supplied sAPOs'
+---
+
+# Wrapping System-supplied sAPOs
+
+
+## <span id="Implementing_your_own_sAPO"></span><span id="implementing_your_own_sapo"></span><span id="IMPLEMENTING_YOUR_OWN_SAPO"></span>Implementing your own sAPO
+
+
+You can wrap a system-supplied sAPO by basing your custom class on the **CBaseAudioProcessingObject** base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves introducing new functionality into the **CBaseAudioProcessingObject** base class to create a customized sAPO. The **CBaseAudioProcessingObject** base class implements much of the functionality that an sAPO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](audio.iaudioprocessingobjectrt_apoprocess) method.
+
+By using **CBaseAudioProcessingObject**, you can more easily implement an sAPO. If an sAPO has no special format requirements and operates on the default float32 format, the default implementations of the interface methods that are included in **CBaseAudioProcessingObject** should be sufficient. Given the default implementations, only three main methods must be implemented: [**IAudioProcessingObject::IsInputFormatSupported**](audio.iaudioprocessingobject_isinputformatsupported), [**IAudioProcessingObjectRT::APOProcess**](audio.iaudioprocessingobjectrt_apoprocess), and **ValidateAndCacheConnectionInfo**.
+
+To develop your sAPOs based on the **CBaseAudioProcessingObject** class, perform the following steps:
+
+1.  Create a class that inherits from **CBaseAudioProcessingObject**.
+
+    The following C++ code example shows the creation of a class that inherits from **CBaseAudioProcessingObject**. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapo.h* file.
+
+    ```
+    // Custom APO class - LFX
+    Class MyCustomSAPOLFX: public CBaseAudioProcessingObject
+    {
+     public:
+    //Code for class goes here
+    ...
+    };
+    ```
+
+    **Note**   Because the signal processing that is performed by an LFX sAPO is different from the signal processing that is performed by a GFX sAPO, you must create separate classes for your LFX and GFX sAPOs.
+
+     
+
+2.  Implement the following three methods:
+
+    -   [**IAudioProcessingObject::IsInputFormatSupported**](audio.iaudioprocessingobject_isinputformatsupported). This method handles format negotiation with the audio engine.
+
+    -   [**IAudioProcessingObjectRT::APOProcess**](audio.iaudioprocessingobjectrt_apoprocess). This method uses your custom algorithm to perform signal processing.
+
+    -   **ValidateAndCacheConnectionInfo**. This method allocates memory to store format details, for example, channel count, sampling rate, sample depth, and channel mask.
+
+The following C++ code example shows an implementation of the [**APOProcess**](audio.iaudioprocessingobjectrt_apoprocess) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
+
+```
+// Custom implementation of APOProcess method
+STDMETHODIMP_ (Void) MyCustomSAPOLFX::APOProcess (...)
+{
+// Code for method goes here. This code is the algorithm that actually
+// processes the digital audio signal.
+...
+}
+```
+
+The following code example shows an implementation of the **ValidateAndCacheConnectionInfo** method. For an actual implementation of this method, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapogfx.cpp* file.
+
+```
+// Custom implementation of the ValidateAndCacheConnectionInfo method.
+HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
+{
+// Code for method goes here.
+// The code should validate the input/output format pair.
+...
+}
+```
+
+**Note**  The remaining interfaces and methods that your class inherits from **CBaseAudioProcessingObject** are described in detail in the Audioenginebaseapo.idl file.
+
+ 
+
+You must provide a user interface to configure the features that you added to the custom sAPO. For more information about this, see the [Implementing a UI for Configuring sAPOs](implementing-a-ui-for-configuring-sapos.md) topic.
+
+## <span id="Audio_Processing_Objects_Driver_Sample"></span><span id="audio_processing_objects_driver_sample"></span><span id="AUDIO_PROCESSING_OBJECTS_DRIVER_SAMPLE"></span>Audio Processing Objects Driver Sample
+
+
+The Swap sample is the sample that was developed to illustrate some features of audio processing objects. To access this sample and browse the code files, perform the following steps:
+
+1. Follow this link: [Windows Driver Kit (WDK) 8.1 Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052)
+2. Download the samples and unzip them to a hard drive.
+3. Locate this directory: *..\\Windows Driver Kit (WDK) 8.1 Samples\\Microsoft slate system virtual audio device driver sample\\C++\\SwapAPO*
+4. Open the SwapAPO project in Visual Studio.
+5. In the left navigation pane, expand the APO item.
+6. Click the file that you would like to browse, to see its contents.
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Wrapping%20System-supplied%20sAPOs%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
+
+

@@ -1,0 +1,64 @@
+---
+Description: Roadmap for Developing WDM Audio Drivers
+MS-HAID: 'audio.roadmap\_for\_developing\_wdm\_audio\_drivers'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Roadmap for Developing WDM Audio Drivers
+---
+
+# Roadmap for Developing WDM Audio Drivers
+
+
+![figure of a roadmap with the text "wdk" superimposed on a highway](images/wdkroadmap-th.png)Audio drivers are based on the Windows driver model (WDM).
+
+To create a WDM audio driver, perform the following steps:
+
+1.  **Learn about Windows architecture and drivers.**
+
+    You must understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help you make appropriate design decisions and allow you to streamline your development process. See [Concepts for all driver developers](wdkgetstart.concepts_and_knowledge_for_all_driver_developers).
+
+2.  **Learn the fundamentals of WDM audio drivers.**
+
+    Audio drivers in the Windows operating system versions from Windows XP to Windows Vista conform to WDM and use the kernel streaming components. To understand the driver design decisions that you must make, see [Kernel Streaming](stream.kernel_streaming), [WDM Audio Drivers Overview](getting-started-with-wdm-audio-drivers.md) and [Introduction to WDM Audio Drivers](introduction-to-wdm-audio-drivers.md).
+
+3.  **Determine additional WDM audio driver design decisions.**
+
+    For information about how to make design decisions, see [Custom Audio Drivers](custom-audio-drivers.md), [Audio Data Formats and Data Ranges](audio-data-formats-and-data-ranges.md). If you need help to decide the type of audio driver to learn about, see [Custom Audio Driver Type Decision Tree](custom-audio-driver-type-decision-tree.md).
+
+4.  **Learn about Audio Processing Objects.**
+
+    Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams. To learn more, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
+
+5.  **Learn about the Windows driver build, test, and debug processes and tools.**
+
+    Building a driver is not the same as building a user-mode application. See [Developing, Testing, and Deploying Drivers](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment) for information about Windows driver build, debug, and test processes, and driver signing. See [Driver Development Tools](devtest.driver_development_tools) for information about building, testing, verifying, and debugging tools.
+
+6.  **Review audio driver samples in the WDK.**
+
+    To access and review the audio driver samples in the WDK, see [Sample Audio Drivers](sample-audio-drivers.md).
+
+7.  **Make design decisions about your WDM audio driver.**
+
+    See [Audio Miniport Drivers](audio-miniport-drivers.md) and [COM in the Kernel](com-in-the-kernel.md).
+
+8.  **Develop, build, test, and debug your WDM audio driver.**
+
+    For information about how to develop an audio driver for your specific audio adapter, see [Adapter Driver Construction](adapter-driver-construction.md). See [Developing, Testing, and Deploying Drivers](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment) for information about iterative building, testing, and debugging. This process will help ensure that you build a driver that works.
+
+9.  **Create a driver package for your WDM audio driver.**
+
+    For more information, see [Creating a Driver Package](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_package). For information about how to install an audio adapter, see [Installing a Port Class Audio Adapter](installing-a-port-class-audio-adapter.md).
+
+10. **Sign and distribute your WDM audio driver.**
+
+    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the Windows Certification Program, you can distribute it through the Microsoft Windows Update program. For more information, see [Distributing a driver package](https://msdn.microsoft.com/windows-drivers/develop/distributing_a_driver_package_win8).
+
+These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Roadmap%20for%20Developing%20WDM%20Audio%20Drivers%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
+
+

@@ -1,0 +1,57 @@
+---
+Description: 'DirectSound Node-Ordering Requirements'
+MS-HAID: 'audio.directsound\_node\_ordering\_requirements'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: 'DirectSound Node-Ordering Requirements'
+---
+
+# DirectSound Node-Ordering Requirements
+
+
+## <span id="directsound_node_ordering_requirements"></span><span id="DIRECTSOUND_NODE_ORDERING_REQUIREMENTS"></span>
+
+
+A DirectSound 2D or 3D mixer pin should have a node chain that contains the following sequence of nodes:
+
+-   Volume node (See [**KSNODETYPE\_VOLUME**](audio.ksnodetype_volume).)
+
+-   3D node (This node is optional. See [**KSNODETYPE\_3D\_EFFECTS**](audio.ksnodetype_3d_effects).)
+
+-   Supermixer node (See [**KSNODETYPE\_SUPERMIX**](audio.ksnodetype_supermix).)
+
+-   Volume node (for panning effects)
+
+-   SRC node (See [**KSNODETYPE\_SRC**](audio.ksnodetype_src).)
+
+-   SUM node (See [**KSNODETYPE\_SUM**](audio.ksnodetype_sum).)
+
+The nodes in this list appear in the order in which they are encountered by data streaming into the pin. Other nodes can be interleaved between these nodes without causing problems, provided that the above ordering is preserved.
+
+A 2D pin requires all the nodes in the previous list, except for the 3D node, which is optional. A 3D pin requires all the nodes in the list, including the 3D node.
+
+The SRC (sample-rate conversion) node should precede the SUM node. The SRC and SUM nodes are typically adjacent, although this is not a requirement. The **IDirectSoundBuffer::SetFrequency** method (see Microsoft Windows SDK documentation) perturbs the SRC node's resampling rate.
+
+A mixer that contains only SRC and SUM nodes is sufficient for mixing streams that are managed by system drivers such as SWMidi and Redbook (see [SWMidi System Driver](kernel-mode-wdm-audio-components.md#swmidi-system-driver) and [Redbook System Driver](kernel-mode-wdm-audio-components.md#redbook-system-driver)), but DirectSound additionally requires that two volume nodes and a supermixer node precede the SUM node. DirectSound sends volume changes resulting from **IDirectSoundBuffer::SetVolume** calls to the first volume node and sends panning effects from **IDirectSoundBuffer::SetPan** calls to the second volume node.
+
+DirectSound can produce 3D effects on a 2D pin by using the **SetVolume**, **SetPan**, and **SetFrequency** calls to control the volume and SRC nodes:
+
+-   **SetVolume** calls can simulate changes in the distance of a sound source from the listener.
+
+-   **SetPan** calls can simulate changes in orientation of a sound source relative to the listener.
+
+-   **SetFrequency** calls can simulate Doppler effects and HRTFs (head-related transfer functions).
+
+The supermixer node is a crossbar matrix that connects M input channels to N output channels, where N should be equal to the number of channels in your device's final output stream.
+
+The optional 3D node is required to manage hardware-accelerated 3D effects (see [Supporting 3D DirectSound Acceleration in WDM Audio](supporting-3d-directsound-acceleration-in-wdm-audio.md)), but is not needed for software-emulated 3D processing. Most existing implementations place the 3D node before the SRC node and between the first volume node and the supermixer node, but other configurations are possible.
+
+The input stream to the 3D node typically contains a single channel. In DirectSound 8.0 and later, only mono PCM buffers can be created with 3D effects. Earlier versions of DirectSound, however, support 3D nodes with both mono and stereo input streams, and drivers should support both to ensure compatibility with older applications.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DirectSound%20Node-Ordering%20Requirements%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
+
+

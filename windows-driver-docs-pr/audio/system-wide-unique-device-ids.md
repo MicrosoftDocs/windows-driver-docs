@@ -1,0 +1,51 @@
+---
+Description: 'System-Wide Unique Device IDs'
+MS-HAID: 'audio.system\_wide\_unique\_device\_ids'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: 'System-Wide Unique Device IDs'
+---
+
+# System-Wide Unique Device IDs
+
+
+## <span id="system_wide_unique_device_ids"></span><span id="SYSTEM_WIDE_UNIQUE_DEVICE_IDS"></span>
+
+
+A driver for a typical audio adapter should easily be able to support several instances of the same audio adapter card in a system. Nearly all the data structures that a driver maintains are stored in the device-extension buffer (see the description of the [**DEVICE\_OBJECT**](kernel.device_object) structure's **DeviceExtension** field). If several instances of a driver share any global data, however, those instances should synchronize their access to this data.
+
+One additional requirement is that each subdevice on a particular instance of an adapter card should have a [device-ID string](devinst.device_identification_strings) that uniquely identifies the subdevice across all instances of the same adapter card in the system.
+
+The most straightforward way to accomplish this is to expose each subdevice on the adapter card as a logically distinct device to the Plug and Play manager. This is presented as option (1) in [Multifunction Audio Devices](multifunction-audio-devices.md).
+
+A second approach is to use the system-supplied multifunction bus driver to manage the subdevices on the adapter card. The MF bus driver assigns to each subdevice a device ID that is guaranteed to be unique across the system, even if the system contains several instances of the same adapter card. The MF bus driver accommodates designs in which the subdevices share a common set of configuration registers but each subdevice has its own set of PCI base-address registers. The subdevices should have no hidden dependencies on each other and should be able to operate concurrently without interfering with each other or with other devices in the system. This is option (2) in [Multifunction Audio Devices](multifunction-audio-devices.md).
+
+A third approach is to use a proprietary bus driver to manage the subdevices on an adapter card. This is frequently necessary if the subdevices have mutual dependencies that must be managed centrally. Such dependencies can occur in a couple of ways:
+
+-   The subdevices might share some on-card resource. For example, if the subdevices share a digital signal processor (DSP), the bus driver might need to download the proprietary operating system that runs on the DSP before starting up the first subdevice.
+
+-   A design flaw might cause a dependency among subdevices. For example, a design flaw might require the subdevices to be powered up or down in a particular sequence.
+
+When either type of dependency exists, a proprietary bus driver is nearly always a better solution than presenting the subdevices directly to the Plug and Play manager and attempting to hide the dependency.
+
+If you provide your own bus driver for an adapter card, you should ensure that the device IDs that your bus driver assigns are unique across the system.
+
+A bus driver provides a device ID for one of its children in response to an [**IRP\_MN\_QUERY\_ID**](kernel.irp_mn_query_id) query from the Plug and Play manager. The ID can be specified in one of two ways, which the bus driver indicates in its response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](kernel.irp_mn_query_capabilities) query by setting the [**DEVICE\_CAPABILITIES**](kernel.device_capabilities) structure's **UniqueID** field to **TRUE** or **FALSE**:
+
+-   **UniqueID** = **TRUE**
+
+    This means that the name of the child is guaranteed to be unique throughout the system. The device ID string contains a device ID plus an instance ID, which is a serial number that uniquely identifies the hardware instance.
+
+-   **UniqueID** = **FALSE**
+
+    This means that the name of the child is unique only with respect to the parent. Most devices use this means of identification. In this case, the Plug and Play manager extends the device-ID string that it receives to make it unique through the system. The extended string is a function of the parent device's unique ID.
+
+All audio bus drivers should set **UniqueID** = **FALSE** for their children. This causes the Plug and Play manager to extend the child's device ID string by adding information about the device's parent to make the ID unique on the machine.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20System-Wide%20Unique%20Device%20IDs%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
