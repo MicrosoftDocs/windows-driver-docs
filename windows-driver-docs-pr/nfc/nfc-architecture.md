@@ -16,7 +16,7 @@ The high-level architecture diagram of the NFC stack on Windows is shown further
 -   [Smart Card DDI](https://msdn.microsoft.com/library/windows/hardware/dn905601) – Provides low level access for interacting with smart cards like ability to listen for card arrival/departure, allows requests to be transmitted to the smart card, and allows smart card information to be retrieved.
 -   [Radio Management DDI](https://msdn.microsoft.com/library/windows/hardware/dn905577) – Provides access for the Control Panel (CPL) application to set radio states of proximity (P2P and reader/writer modes) and secure element (card emulation mode).
 
-![](images/nfcarchitecture.png "A flowchart describing the NFC stack starting from Applications at the top, User mode services, UMDF Drivers, Kernel Mode, then Hardware at the bottom. ")
+![A flowchart describing the NFC stack starting from Applications at the top, User mode services, UMDF Drivers, Kernel Mode, then Hardware at the bottom.](images/nfcarchitecture.png)
 
  
 
