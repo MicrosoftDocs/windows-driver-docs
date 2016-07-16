@@ -41,13 +41,13 @@ The following table shows the release history of the UMDF library:
 <td align="left"><p>2.17</p></td>
 <td align="left"><p>Windows 10, version 1511 WDK</p></td>
 <td align="left"><p>Windows 10, version 1511</p></td>
-<td align="left"><p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, Windows 10 IoT Core (IoT Core), Windows Server 2016 Technical Preview</p></td>
+<td align="left"><p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, Windows 10 IoT Core (IoT Core), Windows Server 2016</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2.15</p></td>
 <td align="left"><p>Windows 10 WDK</p></td>
 <td align="left"><p>Windows 10</p></td>
-<td align="left"><p>Windows 10 for desktop editions, Windows 10 Mobile, IoT Core, Windows Server 2016 Technical Preview</p></td>
+<td align="left"><p>Windows 10 for desktop editions, Windows 10 Mobile, IoT Core, Windows Server 2016</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2.0</p></td>
