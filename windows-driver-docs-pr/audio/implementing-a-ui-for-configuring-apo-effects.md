@@ -175,21 +175,11 @@ The following header files are used in the property page extensions sample.
 To become familiar with the PropPageExtensions sample, you might want to review the headers and then examine the source code related to defining the text on the properties page. If your requirements are similar to what the sample code provides, you may be able to reuse much of the code that creates and updates the custom UI page.
 
 ## <span id="related_topics"></span>Related topics
+[Audio Processing Object Architecture](audio-processing-object-architecture.md)  
+[Windows Audio Processing Objects](windows-audio-processing-objects.md)  
+[Implementing Audio Processing Objects](implementing-audio-processing-objects.md)  
 
-
-[Audio Processing Object Architecture](audio-processing-object-architecture.md)
-
-[Windows Audio Processing Objects](windows-audio-processing-objects.md)
-
-[Implementing Audio Processing Objects](implementing-audio-processing-objects.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Implementing%20a%20UI%20for%20Configuring%20APO%20Effects%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 

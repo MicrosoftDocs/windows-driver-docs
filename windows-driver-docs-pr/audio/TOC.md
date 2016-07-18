@@ -1,5 +1,5 @@
 # Table of Contents
-# [Design Guide](audio-devices-design-guide.md)
+# [Design Guide](index.md)
 ## [Windows 10: What's New for Audio](windows-threshold--what-s-new-for-audio.md)
 ## [Windows Audio Architecture](windows-audio-architecture.md)
 ## [Roadmap for Developing WDM Audio Drivers](roadmap-for-developing-wdm-audio-drivers.md)
