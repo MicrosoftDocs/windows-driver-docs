@@ -1,8 +1,8 @@
 ---
-Description: Overview of DirectSound Hardware Acceleration
-MS-HAID: 'audio.overview\_of\_directsound\_hardware\_acceleration'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Overview of DirectSound Hardware Acceleration
+description: Overview of DirectSound Hardware Acceleration
+ms.assetid: 1f18f88a-2dd6-4b7a-b083-f43ab58571b3
+keywords: ["hardware acceleration WDK DirectSound , about DirectSound hardware acceleration"]
 ---
 
 # Overview of DirectSound Hardware Acceleration
@@ -29,7 +29,7 @@ If an audio device provides a sufficient number of hardware mixing pins, all of 
 
 For more information, see the discussion of voice management in the Microsoft Windows SDK documentation.
 
-DirectSound can use two types of hardware mixer pins: 2D and 3D. A 2D pin performs SRC, attenuation, and mixing, but not 3D positioning. DirectSound can use a 2D pin to do 3D positioning by performing the necessary attenuation and frequency calculations in software and applying the results to the appropriate nodes on the 2D pin. In contrast, a 3D pin contains a 3D node that is able to calculate its own 3D effects directly from the 3D-buffer and 3D-listener properties instead of relying on DirectSound to do this. For a list of the properties of a 3D node, see [**KSNODETYPE\_3D\_EFFECTS**](audio.ksnodetype_3d_effects). For more information about 2D and 3D pins, see [Supporting 2D DirectSound Acceleration in WDM Audio](supporting-2d-directsound-acceleration-in-wdm-audio.md) and [Supporting 3D DirectSound Acceleration in WDM Audio](supporting-3d-directsound-acceleration-in-wdm-audio.md).
+DirectSound can use two types of hardware mixer pins: 2D and 3D. A 2D pin performs SRC, attenuation, and mixing, but not 3D positioning. DirectSound can use a 2D pin to do 3D positioning by performing the necessary attenuation and frequency calculations in software and applying the results to the appropriate nodes on the 2D pin. In contrast, a 3D pin contains a 3D node that is able to calculate its own 3D effects directly from the 3D-buffer and 3D-listener properties instead of relying on DirectSound to do this. For a list of the properties of a 3D node, see [**KSNODETYPE\_3D\_EFFECTS**](https://msdn.microsoft.com/library/windows/hardware/ff537148). For more information about 2D and 3D pins, see [Supporting 2D DirectSound Acceleration in WDM Audio](supporting-2d-directsound-acceleration-in-wdm-audio.md) and [Supporting 3D DirectSound Acceleration in WDM Audio](supporting-3d-directsound-acceleration-in-wdm-audio.md).
 
 The 32-bit versions of Windows 2000, Windows XP, and Windows Server 2003 support DirectSound hardware acceleration.
 
@@ -41,8 +41,8 @@ However, 64-bit versions of Windows 2000 do not support DirectSound hardware acc
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Overview%20of%20DirectSound%20Hardware%20Acceleration%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Overview%20of%20DirectSound%20Hardware%20Acceleration%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

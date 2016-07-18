@@ -1,8 +1,8 @@
 ---
-Description: Topology Filters
-MS-HAID: 'audio.topology\_filters'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Topology Filters
+description: Topology Filters
+ms.assetid: 1b3d35e9-5858-407c-9cd0-06307d82ce58
+keywords: ["audio filters WDK audio , topology filters", "topology filters WDK audio", "filters WDK audio , topology", "mixing rendering streams WDK audio", "multiplexing capture streams WDK audio", "bridge pins WDK audio", "connections WDK audio", "filter factories WDK audio", "pins WDK audio , topology filters", "nodes WDK audio", "input pins WDK audio", "output pins WDK audio", "PCCONNECTION_DESCRIPTOR array", "audio jacks WDK", "digital connectors WDK audio"]
 ---
 
 # Topology Filters
@@ -21,23 +21,23 @@ A topology filter is implemented as a port/miniport pair. A topology filter fact
 
 -   It instantiates a Topology miniport driver object.
 
--   It instantiates a Topology port driver object by calling [**PcNewPort**](audio.pcnewport) with GUID value **CLSID\_PortTopology**.
+-   It instantiates a Topology port driver object by calling [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) with GUID value **CLSID\_PortTopology**.
 
--   It calls the port driver's [**IPort::Init**](audio.iport_init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536943) method to bind the miniport driver to the port driver.
 
 The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process.
 
-The Topology port and miniport drivers communicate with each other through their respective [IPortTopology](audio.iporttopology) and [IMiniportTopology](audio.iminiporttopology) interfaces. These interfaces are relatively simple compared to those for wave and MIDI port and miniport drivers because topology filters do not need to explicitly manage the streams that pass through their pins. A topology filter's pins represent hardwired connections in the adapter hardware. The physical connection underlying a topology filter pin typically carries an analog audio signal, but might carry a digital audio stream instead, depending on the hardware implementation.
+The Topology port and miniport drivers communicate with each other through their respective [IPortTopology](https://msdn.microsoft.com/library/windows/hardware/ff536896) and [IMiniportTopology](https://msdn.microsoft.com/library/windows/hardware/ff536712) interfaces. These interfaces are relatively simple compared to those for wave and MIDI port and miniport drivers because topology filters do not need to explicitly manage the streams that pass through their pins. A topology filter's pins represent hardwired connections in the adapter hardware. The physical connection underlying a topology filter pin typically carries an analog audio signal, but might carry a digital audio stream instead, depending on the hardware implementation.
 
-In contrast to the [IMiniportWaveCyclic](audio.iminiportwavecyclic), [IMiniportWavePci](audio.iminiportwavepci), [IMiniportMidi](audio.iminiportmidi), and [IMiniportDMus](audio.iminiportdmus) interfaces, the [IMiniportTopology](audio.iminiporttopology) interface has no **NewStream** method.
+In contrast to the [IMiniportWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536714), [IMiniportWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536724), [IMiniportMidi](https://msdn.microsoft.com/library/windows/hardware/ff536703), and [IMiniportDMus](https://msdn.microsoft.com/library/windows/hardware/ff536699) interfaces, the [IMiniportTopology](https://msdn.microsoft.com/library/windows/hardware/ff536712) interface has no **NewStream** method.
 
 Most of the functionality of a topology filter is provided by its property handlers. The topology filter exists primarily to provide topology information to the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver) and to applications that use the Microsoft Windows Multimedia mixer API. The property handlers in the topology filter provide access to the various controls (such as volume, equalization, and reverb) that audio adapters typically offer. Through property requests, the mixer API can enumerate the control nodes in the adapter hardware, discover connections between nodes, and both query and set the nodes' control parameters. The SndVol32 application (see [SysTray and SndVol32](systray-and-sndvol32.md)) uses the mixer API to discover the adapter's per-stream volume and mute controls.
 
-When building a filter graph, SysAudio queries the topology filter for the [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](stream.ksproperty_pin_physicalconnection) properties at its pins to determine which wave, MIDI, or DirectMusic filter pin is connected to which topology filter pin.
+When building a filter graph, SysAudio queries the topology filter for the [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff565205) properties at its pins to determine which wave, MIDI, or DirectMusic filter pin is connected to which topology filter pin.
 
-Unlike a wave, MIDI, or DirectMusic filter, a topology filter does not instantiate pins. Thus, no pin objects are available to handle queries for a topology filter's pin properties. The topology filter itself handles all queries regarding the physical connections at its pins. For more information, see [KSPROPSETID\_Pin](stream.kspropsetid_pin).
+Unlike a wave, MIDI, or DirectMusic filter, a topology filter does not instantiate pins. Thus, no pin objects are available to handle queries for a topology filter's pin properties. The topology filter itself handles all queries regarding the physical connections at its pins. For more information, see [KSPROPSETID\_Pin](https://msdn.microsoft.com/library/windows/hardware/ff566584).
 
-Similar to other types of audio filters, a topology filter uses an array of [**PCCONNECTION\_DESCRIPTOR**](audio.pcconnection_descriptor) structures to describe its internal topology. The miniport driver exposes this array in the [**PCFILTER\_DESCRIPTOR**](audio.pcfilter_descriptor) structure that it outputs from the [**IMiniport::GetDescription**](audio.iminiport_getdescription) method. The array specifies the topology as a list of connections between the topology filter's nodes and pins (see [Nodes and Connections](nodes-and-connections.md)). The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud-system-driver) translates these connections and nodes into the mixer lines and controls that the mixer API exposes to applications. As discussed in [Audio Filters](audio-filters.md), an input pin on a KS filter maps to a SRC mixer line, and an output pin on a filter maps to a DST mixer line.
+Similar to other types of audio filters, a topology filter uses an array of [**PCCONNECTION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537688) structures to describe its internal topology. The miniport driver exposes this array in the [**PCFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537694) structure that it outputs from the [**IMiniport::GetDescription**](https://msdn.microsoft.com/library/windows/hardware/ff536765) method. The array specifies the topology as a list of connections between the topology filter's nodes and pins (see [Nodes and Connections](nodes-and-connections.md)). The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud-system-driver) translates these connections and nodes into the mixer lines and controls that the mixer API exposes to applications. As discussed in [Audio Filters](audio-filters.md), an input pin on a KS filter maps to a SRC mixer line, and an output pin on a filter maps to a DST mixer line.
 
 A typical audio adapter can play wave and MIDI files through a speaker, and can capture audio signals from a microphone and a MIDI synthesizer. The code example below contains the PCCONNECTION\_DESCRIPTOR array for a topology filter that exposes these capabilities:
 
@@ -92,7 +92,7 @@ A typical audio adapter can play wave and MIDI files through a speaker, and can 
     };
 ```
 
-Constant [**PCFILTER\_NODE**](audio.pcfilter_node) in the preceding code example is the null node ID and is defined in header file Portcls.h. For a description of how this constant is used to distinguish external pins on a filter from logical pins on a node, see [**PCCONNECTION\_DESCRIPTOR**](audio.pcconnection_descriptor).
+Constant [**PCFILTER\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff537695) in the preceding code example is the null node ID and is defined in header file Portcls.h. For a description of how this constant is used to distinguish external pins on a filter from logical pins on a node, see [**PCCONNECTION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537688).
 
 Each pin name in the preceding code example ends with either "SRC" or "DST" depending on whether the mixer API maps the pin to a source or destination mixer line. To avoid confusion, remember that source and destination mixer lines map to sink (input) and source (output) KS filter pins, respectively. For more information, see [Audio Filters](audio-filters.md).
 
@@ -118,24 +118,24 @@ The two output pins operate as follows:
 
 -   The KSPIN\_TOPO\_WAVEIN\_DST pin is physically connected to the input pin of a wave filter, which converts the analog signal to a wave stream and writes it to a destination such as a .wav file.
 
-The volume and mute nodes (see [**KSNODETYPE\_VOLUME**](audio.ksnodetype_volume) and [**KSNODETYPE\_MUTE**](audio.ksnodetype_mute)) are used to control the volume levels of the various streams. The SUM node (see [**KSNODETYPE\_SUM**](audio.ksnodetype_sum)) mixes the audio streams from the wave and MIDI inputs. The MUX node (see [**KSNODETYPE\_MUX**](audio.ksnodetype_mux)) selects between the two input streams.
+The volume and mute nodes (see [**KSNODETYPE\_VOLUME**](https://msdn.microsoft.com/library/windows/hardware/ff537208) and [**KSNODETYPE\_MUTE**](https://msdn.microsoft.com/library/windows/hardware/ff537178)) are used to control the volume levels of the various streams. The SUM node (see [**KSNODETYPE\_SUM**](https://msdn.microsoft.com/library/windows/hardware/ff537196)) mixes the audio streams from the wave and MIDI inputs. The MUX node (see [**KSNODETYPE\_MUX**](https://msdn.microsoft.com/library/windows/hardware/ff537180)) selects between the two input streams.
 
 The figure uses a dashed arrow to indicate a connection between two nodes or between a pin and a node. The arrow points in the direction of data flow. The diagram shows a total of 13 connections, each of which corresponds to one of the 13 elements in the PCCONNECTION\_DESCRIPTOR array in the preceding code example.
 
 In addition to the topology filter, the adapter driver creates other filters--wave, FM synth, wave table, and so on--that connect to the pins on the topology filter.
 
-For example, the wave filter that is physically connected to the topology filter's KSPIN\_TOPO\_WAVEOUT\_SRC pin contains a DAC (represented by a [**KSNODETYPE\_DAC**](audio.ksnodetype_dac) node) that converts PCM data to the analog signal that it outputs to the topology filter's pin. The FM-synth or a wavetable synth filter that is physically connected to the topology filter's KSPIN\_TOPO\_SYNTHOUT\_SRC pin similarly converts MIDI data to an analog signal that it outputs to the topology filter's pin. The topology filter mixes the analog signals from these two pins and outputs the mixed signal to the speakers.
+For example, the wave filter that is physically connected to the topology filter's KSPIN\_TOPO\_WAVEOUT\_SRC pin contains a DAC (represented by a [**KSNODETYPE\_DAC**](https://msdn.microsoft.com/library/windows/hardware/ff537158) node) that converts PCM data to the analog signal that it outputs to the topology filter's pin. The FM-synth or a wavetable synth filter that is physically connected to the topology filter's KSPIN\_TOPO\_SYNTHOUT\_SRC pin similarly converts MIDI data to an analog signal that it outputs to the topology filter's pin. The topology filter mixes the analog signals from these two pins and outputs the mixed signal to the speakers.
 
 The topology filter's physical connections to other filters that represent other hardware devices on the same adapter card need to be distinguished from other types of connections to filters. For example, certain pins on wave, MIDI, and DirectMusic filters can be connected or disconnected under software control.
 
-During device startup, the adapter driver registers the topology filter's physical connections by calling [**PcRegisterPhysicalConnection**](audio.pcregisterphysicalconnection) once per connection. The port driver needs this information in order to respond to [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](stream.ksproperty_pin_physicalconnection) get-property requests.
+During device startup, the adapter driver registers the topology filter's physical connections by calling [**PcRegisterPhysicalConnection**](https://msdn.microsoft.com/library/windows/hardware/ff537726) once per connection. The port driver needs this information in order to respond to [**KSPROPERTY\_PIN\_PHYSICALCONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff565205) get-property requests.
 
  
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Topology%20Filters%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Topology%20Filters%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

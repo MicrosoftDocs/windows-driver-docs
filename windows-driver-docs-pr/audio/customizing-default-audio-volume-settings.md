@@ -1,8 +1,8 @@
 ---
-Description: 'The ability to customize the in box HD audio default audio volume and microphone boost levels to suit a specific PC, provides OEMs with some flexibility in their audio adapter installation parameters.'
-MS-HAID: 'audio.customizing\_default\_audio\_volume\_settings'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Customizing HD Audio Driver Volume Settings
+description: The ability to customize the in box HD audio default audio volume and microphone boost levels to suit a specific PC, provides OEMs with some flexibility in their audio adapter installation parameters.
+ms.assetid: 0C86C869-447E-4A77-A723-5D9A17D95C7C
+keywords: ["audio volume settings", "audio adapters WDK , volume settings", "adapter drivers WDK audio , volume settings", "customize audio volume settings", "Port Class audio adapters WDK , volume settings"]
 ---
 
 # Customizing HD Audio Driver Volume Settings
@@ -57,7 +57,7 @@ The KS DB stepping values are defined as follows:
 
 +2147483647 is +32767.99998474 decibels (gain)
 
-For more information on the unit of measurement that is used (1/65536 dB), see [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](audio.ksproperty_audio_volumelevel).
+For more information on the unit of measurement that is used (1/65536 dB), see [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309).
 
 To override the wdmudio.inf file, use the Include and Needs directives as shown in this code segment from the *Microsoft Virtual Audio Device Driver Sample* available as part of the [Windows Driver Kit (WDK) 8.1 Samples](http://go.microsoft.com/fwlink/p/?LinkId=618052).
 
@@ -71,7 +71,7 @@ Needs=KS.Registration, WDMAUDIO.Registration
 ...
 ```
 
-For more information about the Include and Needs directives, see [**INF DDInstall Section**](devinst.inf_ddinstall_section) and [Source Media for INF Files](devinst.source_media_for_inf_files).
+For more information about the Include and Needs directives, see [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) and [Source Media for INF Files](https://msdn.microsoft.com/library/windows/hardware/ff552302).
 
 The following is a sample INF wrapper that wraps the INF file for the Audio Class driver.
 
@@ -142,7 +142,7 @@ HKR,DefaultVolumeLevels\18,Boost,1,00,00,0A,00 ; Set to 0x000A0000 to set to 10d
 HdAudModel_DefaultVolume_DeviceDesc = "High Definition Audio Device"
 ```
 
-Because an HKR relative path is specified, the exact driver registry path will be determined based on the specific INF file section that is used. For more information about HKR relative paths, see [**INF AddReg Directive (Windows Drivers)**](devinst.inf_addreg_directive). The following two registry paths are examples, your registry path will likely be different.
+Because an HKR relative path is specified, the exact driver registry path will be determined based on the specific INF file section that is used. For more information about HKR relative paths, see [**INF AddReg Directive (Windows Drivers)**](https://msdn.microsoft.com/library/windows/hardware/ff546320). The following two registry paths are examples, your registry path will likely be different.
 
 HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e96c-e325-11ce-bfc1-08002be10318}\\0002
 
@@ -151,10 +151,19 @@ HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e96c-e325-
 HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e96c-e325-11ce-bfc1-08002be10318}\\0002\\DeviceInterfaces\\eAuxIn
 
 ## <span id="related_topics"></span>Related topics
-[Default Audio Volume Settings](default-audio-volume-settings.md)  
-[**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](audio.ksproperty_audio_volumelevel)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Customizing%20HD%20Audio%20Driver%20Volume%20Settings%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
+[Default Audio Volume Settings](default-audio-volume-settings.md)
+
+[**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Customizing%20HD%20Audio%20Driver%20Volume%20Settings%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 

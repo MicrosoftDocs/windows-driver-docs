@@ -1,8 +1,8 @@
 ---
-Description: Troubleshooting sAPO Load Failures
-MS-HAID: 'audio.troubleshooting\_sapo\_load\_failures'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Troubleshooting sAPO Load Failures
+description: Troubleshooting sAPO Load Failures
+ms.assetid: 245ff082-7cdc-4ecf-aee6-57fd7c418523
+keywords: ["audio graph WDK", "sAPO WDK", "IsInputFormatSupported WDK", "LockForProcess WDK", "DisableProtectedAudioDG WDK"]
 ---
 
 # Troubleshooting sAPO Load Failures
@@ -22,9 +22,9 @@ The audio system monitors the returned HRESULT values form the following four me
 
 -   LockForProcess
 
-The failure count value is incremented for an sAPO every time one of these methods returns a failure code. The failure count is reset to zero when an sAPO returns a code that indicates that it was successfully incorporated into the audio graph. A successful call to the [**LockForProcess**](audio.iaudioprocessingobjectconfiguration_lockforprocess) method is a good indication that the sAPO was successfully incorporated.
+The failure count value is incremented for an sAPO every time one of these methods returns a failure code. The failure count is reset to zero when an sAPO returns a code that indicates that it was successfully incorporated into the audio graph. A successful call to the [**LockForProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536503) method is a good indication that the sAPO was successfully incorporated.
 
-For [**CoCreateInstance**](com.cocreateinstance) in particular, there are a number of reasons why the returned HRESULT code could indicate a failure. The three primary reasons are as follows:
+For [**CoCreateInstance**](https://msdn.microsoft.com/library/windows/desktop/ms686615) in particular, there are a number of reasons why the returned HRESULT code could indicate a failure. The three primary reasons are as follows:
 
 -   The graph is running protected content, and the sAPO is not properly signed.
 
@@ -47,8 +47,8 @@ Also, if the failure count value for an LFX or a GFX sAPO reaches a system-speci
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Troubleshooting%20sAPO%20Load%20Failures%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Troubleshooting%20sAPO%20Load%20Failures%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

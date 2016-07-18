@@ -1,8 +1,7 @@
 ---
-Description: 'This topic discusses the ImmediateIdle registry value that a Windows 8 driver can use to opt-in to an immediate power down state, when power is no longer needed.'
-MS-HAID: 'audio.immediate\_idle\_timeout\_opt-in'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Immediate Idle Timeout Opt-in'
+title: Immediate Idle Timeout Opt-in
+description: This topic discusses the ImmediateIdle registry value that a Windows 8 driver can use to opt-in to an immediate power down state, when power is no longer needed.
+ms.assetid: 43721EC9-4901-4C68-9CCC-E0A71BF2200E
 ---
 
 # <span id="audio.immediate_idle_timeout_opt-in"></span>Immediate Idle Timeout Opt-in
@@ -34,14 +33,14 @@ When the runtime power management framework invokes a callback for the **DeviceP
 
 If a driver opts-in to immediate idle power management, it must ensure that the Power Engine Plug-in (PEP) for the system contains the logic needed to prevent unnecessarily and continuously powering the adapter up and down for IRPs received in immediate succession. Some residency rules should be applied in order to keep the device powered up for batches of I/O requests.
 
-In addition, the new interface introduced in Windows 7 that allows drivers to programmatically enable or disable idle power management, continues to be honored when the driver has not opted-in to immediate idle power management. This is done via the [**IPortClsPower::SetIdlePowerManagement**](audio.iportclspower_setidlepowermanagement) method and would override the settings in the registry, except for the case in which *ImmediateIdle* is set to 1 (TRUE).
+In addition, the new interface introduced in Windows 7 that allows drivers to programmatically enable or disable idle power management, continues to be honored when the driver has not opted-in to immediate idle power management. This is done via the [**IPortClsPower::SetIdlePowerManagement**](https://msdn.microsoft.com/library/windows/hardware/ff536875) method and would override the settings in the registry, except for the case in which *ImmediateIdle* is set to 1 (TRUE).
 
  
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Immediate%20Idle%20Timeout%20Opt-in%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Immediate%20Idle%20Timeout%20Opt-in%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

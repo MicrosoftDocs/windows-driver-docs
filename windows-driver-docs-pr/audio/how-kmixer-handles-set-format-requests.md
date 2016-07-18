@@ -1,8 +1,8 @@
 ---
-Description: 'How KMixer Handles Set-Format Requests'
-MS-HAID: 'audio.how\_kmixer\_handles\_set\_format\_requests'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'How KMixer Handles Set-Format Requests'
+title: How KMixer Handles Set-Format Requests
+description: How KMixer Handles Set-Format Requests
+ms.assetid: cf1c5434-db0d-48c6-9bcb-b242e68fab86
+keywords: ["KMixer system driver WDK audio , set-format requests", "format negotiations WDK audio", "set-format requests WDK audio", "SRC WDK audio , set-format requests", "sample-rate conversion WDK audio , set-format requests", "sample-rate changes WDK audio", "requesting sample-rate changes WDK audio", "downstream filter format negotiations WDK audio"]
 ---
 
 # How KMixer Handles Set-Format Requests
@@ -15,7 +15,7 @@ The [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-dri
 
 Of course, KMixer can change the sample rate of the mixed stream only if the downstream filter (whose sink pin connects to KMixer's source pin) is able to handle the new sample rate. The mixed stream from KMixer might feed directly into the sink pin of an audio wave-rendering device, or a [GFX filter](gfx-filters.md) might be inserted into the stream's data path between KMixer's source pin and the audio device's sink pin.
 
-To request the sample-rate change, KMixer sends a set-format ([**KSPROPERTY\_CONNECTION\_DATAFORMAT**](stream.ksproperty_connection_dataformat) set-property) request packet to the downstream filter's sink pin. Before reconfiguring its source pin to run at the new sample rate, KMixer waits until the downstream filter returns the request packet to KMixer with a completion code indicating that the request succeeded. The downstream filter might need to reject the original request, forcing KMixer to back off to a less demanding sample rate that the downstream filter can handle. Meanwhile, KMixer holds off mixing of any new playback data until the process of negotiating the new stream format completes and the downstream filter has been reconfigured.
+To request the sample-rate change, KMixer sends a set-format ([**KSPROPERTY\_CONNECTION\_DATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff565103) set-property) request packet to the downstream filter's sink pin. Before reconfiguring its source pin to run at the new sample rate, KMixer waits until the downstream filter returns the request packet to KMixer with a completion code indicating that the request succeeded. The downstream filter might need to reject the original request, forcing KMixer to back off to a less demanding sample rate that the downstream filter can handle. Meanwhile, KMixer holds off mixing of any new playback data until the process of negotiating the new stream format completes and the downstream filter has been reconfigured.
 
 The following figure shows a portion of an audio filter graph containing the KMixer system driver, a GFX filter, and the [USBAudio class system driver](kernel-mode-wdm-audio-components.md#usbaudio-class-system-driver).
 
@@ -69,14 +69,14 @@ A typical GFX filter processes each buffer of audio data as follows:
 
 Because the sample rates at the GFX filter's input and output pins are the same, the GFX filter simply acts as go-between for KMixer and USBAudio during the process of negotiating a format change. The GFX filter usually accepts whatever sample rate KMixer and USBAudio find mutually acceptable.
 
-Although a vendor has the option of designing a GFX filter to support different sample rates at its input and output pins, this capability can be expensive in terms of both processing time and the complexity of the GFX implementation. In this case, the GFX filter contains an SRC node ([**KSNODETYPE\_SRC**](audio.ksnodetype_src)) and uses separate buffers for the input and output streams. In addition, the GFX filter must play a more active role in the format negotiation with KMixer to ensure that it can support the requested sample rate.
+Although a vendor has the option of designing a GFX filter to support different sample rates at its input and output pins, this capability can be expensive in terms of both processing time and the complexity of the GFX implementation. In this case, the GFX filter contains an SRC node ([**KSNODETYPE\_SRC**](https://msdn.microsoft.com/library/windows/hardware/ff537190)) and uses separate buffers for the input and output streams. In addition, the GFX filter must play a more active role in the format negotiation with KMixer to ensure that it can support the requested sample rate.
 
  
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20How%20KMixer%20Handles%20Set-Format%20Requests%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20How%20KMixer%20Handles%20Set-Format%20Requests%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

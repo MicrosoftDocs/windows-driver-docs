@@ -1,8 +1,7 @@
 ---
-Description: 'In Windows 10 you can write a universal audio driver that will work across many types of hardware.'
-MS-HAID: 'audio.audio\_universal\_drivers'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Universal Windows Drivers for Audio
+description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
+ms.assetid: F4B56B3F-792F-4887-AF0F-FFC1F000CB8F
 ---
 
 # Universal Windows Drivers for Audio
@@ -21,7 +20,7 @@ These tools are available to develop Universal Windows driver support:
 
 -   APIValidator Tool: You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver. This tool is part of the Windows Driver Kit (WDK) for Windows 10, and runs automatically if you are using Visual Studio 2015 . For more information, see [Validating Universal Windows Drivers](https://msdn.microsoft.com/windows-drivers/develop/validating_universal_drivers).
 
--   Updated DDI reference documentation: The DDI reference documentation is being updated to indicate which DDIs are supported by Universal Windows drivers. For more information, see [Audio Devices Reference](audio.audio_devices_reference).
+-   Updated DDI reference documentation: The DDI reference documentation is being updated to indicate which DDIs are supported by Universal Windows drivers. For more information, see [Audio Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff536192).
 
 ## <span id="Create_a_Universal_Audio_Driver"></span><span id="create_a_universal_audio_driver"></span><span id="CREATE_A_UNIVERSAL_AUDIO_DRIVER"></span>Create a Universal Audio Driver
 
@@ -48,26 +47,26 @@ Starting with Windows 10, the driver programming interfaces are part of OneCore
 
 The following DDIs to are available when working with universal audio drivers.
 
--   [Audio Drivers Event Sets](audio.audio_drivers_event_sets)
+-   [Audio Drivers Event Sets](https://msdn.microsoft.com/library/windows/hardware/ff536195)
 
--   [Audio Drivers Interfaces](audio.audio_drivers_interfaces)
+-   [Audio Drivers Interfaces](https://msdn.microsoft.com/library/windows/hardware/ff536196)
 
--   [Audio Drivers Property Sets](audio.audio_drivers_property_sets)
+-   [Audio Drivers Property Sets](https://msdn.microsoft.com/library/windows/hardware/ff536197)
 
--   [Audio Drivers Structures](audio.audio_drivers_structures)
+-   [Audio Drivers Structures](https://msdn.microsoft.com/library/windows/hardware/ff536198)
 
--   [Audio Topology Nodes](audio.audio_topology_nodes)
+-   [Audio Topology Nodes](https://msdn.microsoft.com/library/windows/hardware/ff536219)
 
--   [High Definition Audio DDI Reference](audio.high_definition_audio_ddi_reference)
+-   [High Definition Audio DDI Reference](https://msdn.microsoft.com/library/windows/hardware/ff536445)
 
--   [Port Class Audio Driver Reference](audio.port_class_audio_driver_reference)
+-   [Port Class Audio Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff537764)
 
 ## <span id="_Convert_an_Existing_Audio_Driver_to_a_Universal_Windows_driver"></span><span id="_convert_an_existing_audio_driver_to_a_universal_windows_driver"></span><span id="_CONVERT_AN_EXISTING_AUDIO_DRIVER_TO_A_UNIVERSAL_WINDOWS_DRIVER"></span> Convert an Existing Audio Driver to a Universal Windows driver
 
 
 Follow this process to convert an existing audio driver to a Universal Windows driver.
 
-1. Determine whether your existing driver calls will run on OneCoreUAP Windows. Check the requirements section of the reference pages. For more information see [Audio Devices Reference](audio.audio_devices_reference).
+1. Determine whether your existing driver calls will run on OneCoreUAP Windows. Check the requirements section of the reference pages. For more information see [Audio Devices Reference](https://msdn.microsoft.com/library/windows/hardware/ff536192).
 
 2. Recompile your driver as a Universal Windows driver. In the project properties, set Target Platform to "Universal".
 
@@ -139,7 +138,7 @@ Complete the following steps to build the sysvad sample for Windows 10 Mobile.
 3. Locate the output directory for the build from the . For example with a default location of Visual Studio in could be located in a directory like this:
 
 ` C:\Program Files (x86)\Windows Kits\10\src\audio\sysvad\x64\Debug\package`
-4. Follow the guidance in [Creating packages](p_phPackaging.creating_packages) to create a package that contains the driver files for a mobile image.
+4. Follow the guidance in [Creating packages](https://msdn.microsoft.com/library/dn756642) to create a package that contains the driver files for a mobile image.
 
 5. To install a mobile driver package (.spkg file), you will need to combine packages into a mobile OS image. Use ImgGen to add the .spkg driver package to a full flash update (FFU) image that can then be flashed to a mobile device. It may be necessary to remove other audio drivers that exist in the mobile image to allow for testing of the sysvad virtual audio driver.
 
@@ -149,8 +148,8 @@ Complete the following steps to build the sysvad sample for Windows 10 Mobile.
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Universal%20Windows%20Drivers%20for%20Audio%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Universal%20Windows%20Drivers%20for%20Audio%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

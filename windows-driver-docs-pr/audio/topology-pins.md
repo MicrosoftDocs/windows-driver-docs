@@ -1,8 +1,8 @@
 ---
-Description: Topology Pins
-MS-HAID: 'audio.topology\_pins'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Topology Pins
+description: Topology Pins
+ms.assetid: b434e2a7-4acc-4ef1-9db9-8f1b82f68de3
+keywords: ["topology pins WDK audio", "pins WDK audio , topology", "S/PDIF pin translations WDK audio", "pins WDK audio , translating", "KS pins WDK audio , translating", "pins WDK audio , descriptors", "mixer-line descriptors WDK audio", "source mixer lines WDK audio", "destination mixer lines WDK audio", "translating pins WDK audio", "pin factories WDK audio", "PCPIN_DESCRIPTOR structure"]
 ---
 
 # Topology Pins
@@ -13,7 +13,7 @@ title: Topology Pins
 
 The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud-system-driver) translates topology pins on KS filters into the source and destination mixer lines that the mixer API exposes to applications. Input (sink) pins become source mixer lines, and output (source) pins become destination mixer lines.
 
-As described in [Pin Factories](pin-factories.md), a miniport driver provides an array of pin descriptors, each of which is a structure of type [**PCPIN\_DESCRIPTOR**](audio.pcpin_descriptor) that describes a pin factory belonging to a filter. Each pin descriptor includes the following information:
+As described in [Pin Factories](pin-factories.md), a miniport driver provides an array of pin descriptors, each of which is a structure of type [**PCPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537721) that describes a pin factory belonging to a filter. Each pin descriptor includes the following information:
 
 -   **Dataflow direction specifier**
 
@@ -25,7 +25,7 @@ As described in [Pin Factories](pin-factories.md), a miniport driver provides an
 
 -   **Communications type specifier**
 
-    Indicates the type of IRP communications that the pin supports. A pin that supports IRP communications can be an IRP sink (KSPIN\_COMMUNICATION\_SINK), IRP source (KSPIN\_COMMUNICATION\_SOURCE), or both (KSPIN\_COMMUNICATION\_BOTH). A pin that does not support IRP communications can either lie inside a KS filter graph (KSPIN\_COMMUNICATION\_NONE) or be a [*bridge pin*](wdkgloss.b#wdkgloss-bridge-pin) at the endpoint of a graph (KSPIN\_COMMUNICATION\_BRIDGE).
+    Indicates the type of IRP communications that the pin supports. A pin that supports IRP communications can be an IRP sink (KSPIN\_COMMUNICATION\_SINK), IRP source (KSPIN\_COMMUNICATION\_SOURCE), or both (KSPIN\_COMMUNICATION\_BOTH). A pin that does not support IRP communications can either lie inside a KS filter graph (KSPIN\_COMMUNICATION\_NONE) or be a [*bridge pin*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-bridge-pin) at the endpoint of a graph (KSPIN\_COMMUNICATION\_BRIDGE).
 
 For more information about bridge pins, see [Audio Filter Graphs](audio-filter-graphs.md).
 
@@ -329,7 +329,7 @@ The following table shows how the output pin **KS pin category GUID**s map to th
 
 For all pin categories that do not appear in the preceding tables, WDMAud translates the output pins to destination mixer lines with target types of MIXERLINE\_TARGETTYPE\_UNDEFINED and component types of MIXERLINE\_COMPONENTTYPE\_DST\_UNDEFINED.
 
-In the preceding tables, most of the KS pin category GUIDs have KSNODETYPE\_*Xxx* names. These names are defined in header files Ksmedia.h and Dmusprop.h. (Two departures from this naming convention are GUIDs KSCATEGORY\_AUDIO and PINNAME\_CAPTURE, which are also defined in Ksmedia.h.) As described in [Topology Nodes](topology-nodes.md), KSNODETYPE\_*Xxx* GUIDs can also be used to designate KS node types. Most KSNODETYPE\_*Xxx* GUIDs specify either pin categories or node types, but not both. The exception is [**KSNODETYPE\_SYNTHESIZER**](audio.ksnodetype_synthesizer), which can specify either a pin category or a node type, depending on the context in which is used. For a list of KSNODETYPE\_*Xxx* GUIDs representing pin categories, see [Pin Category Property](pin-category-property.md). For a list of KSNODETYPE\_*Xxx* GUIDs representing node types, see [Audio Topology Nodes](audio.audio_topology_nodes).
+In the preceding tables, most of the KS pin category GUIDs have KSNODETYPE\_*Xxx* names. These names are defined in header files Ksmedia.h and Dmusprop.h. (Two departures from this naming convention are GUIDs KSCATEGORY\_AUDIO and PINNAME\_CAPTURE, which are also defined in Ksmedia.h.) As described in [Topology Nodes](topology-nodes.md), KSNODETYPE\_*Xxx* GUIDs can also be used to designate KS node types. Most KSNODETYPE\_*Xxx* GUIDs specify either pin categories or node types, but not both. The exception is [**KSNODETYPE\_SYNTHESIZER**](https://msdn.microsoft.com/library/windows/hardware/ff537203), which can specify either a pin category or a node type, depending on the context in which is used. For a list of KSNODETYPE\_*Xxx* GUIDs representing pin categories, see [Pin Category Property](pin-category-property.md). For a list of KSNODETYPE\_*Xxx* GUIDs representing node types, see [Audio Topology Nodes](https://msdn.microsoft.com/library/windows/hardware/ff536219).
 
 KSCATEGORY\_AUDIO is another dual-usage GUID. It can be used as either a **KS pin category GUID** or a **KS filter category GUID**, depending on the context. During device installation, an audio driver registers its device interface under the filter category KSCATEGORY\_AUDIO. For more information, see [Installing Device Interfaces for an Audio Adapter](installing-device-interfaces-for-an-audio-adapter.md).
 
@@ -345,8 +345,8 @@ The SndVol32 application is a client of the mixer API. The mixer API converts ea
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Topology%20Pins%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Topology%20Pins%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

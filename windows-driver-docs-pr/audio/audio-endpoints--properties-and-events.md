@@ -1,8 +1,8 @@
 ---
-Description: 'Audio Endpoints, Properties and Events'
-MS-HAID: 'audio.audio\_endpoints\_\_properties\_and\_events'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Audio Endpoints, Properties and Events'
+title: Audio Endpoints, Properties and Events
+description: Audio Endpoints, Properties and Events
+ms.assetid: ffc5834f-30c8-40b5-b57b-fe784331690c
+keywords: ["audio events WDK", "audio properties WDK", "port drivers WDK audio , properties", "port drivers WDK audio , events", "adapter drivers WDK audio , events", "adapter drivers WDK audio , properties", "audio properties WDK , about audio properties", "audio events WDK , about audio events", "WDM audio properties WDK", "WDM audio events WDK", "WDM audio properties WDK , about audio properties", "KS properties WDK audio", "KS events WDK audio", "properties WDK audio", "pins WDK audio"]
 ---
 
 # Audio Endpoints, Properties and Events
@@ -11,7 +11,7 @@ title: 'Audio Endpoints, Properties and Events'
 ## <span id="audio_properties_and_events"></span><span id="AUDIO_PROPERTIES_AND_EVENTS"></span>
 
 
-The PortCls system driver supports a subset of the intrinsic operations that are described in [KS Properties, Events, and Methods](stream.ks_properties__events__and_methods).
+The PortCls system driver supports a subset of the intrinsic operations that are described in [KS Properties, Events, and Methods](https://msdn.microsoft.com/library/windows/hardware/ff567673).
 
 The port drivers in Portcls.sys support properties and events by providing handlers for some property and event requests and by forwarding other requests to the miniport drivers' handlers.
 
@@ -35,37 +35,37 @@ None of the port drivers provide support for methods on either the filter or its
 
 Audio adapter drivers support some or all of the following standard property sets:
 
-[KSPROPSETID\_AC3](audio.kspropsetid_ac3)
+[KSPROPSETID\_AC3](https://msdn.microsoft.com/library/windows/hardware/ff537436)
 
-[KSPROPSETID\_Acoustic\_Echo\_Cancel](audio.kspropsetid_acoustic_echo_cancel)
+[KSPROPSETID\_Acoustic\_Echo\_Cancel](https://msdn.microsoft.com/library/windows/hardware/ff537438)
 
-[KSPROPSETID\_Audio](audio.kspropsetid_audio)
+[KSPROPSETID\_Audio](https://msdn.microsoft.com/library/windows/hardware/ff537440)
 
-[KSPROPSETID\_DirectSound3DBuffer](audio.kspropsetid_directsound3dbuffer)
+[KSPROPSETID\_DirectSound3DBuffer](https://msdn.microsoft.com/library/windows/hardware/ff537447)
 
-[KSPROPSETID\_DirectSound3DListener](audio.kspropsetid_directsound3dlistener)
+[KSPROPSETID\_DirectSound3DListener](https://msdn.microsoft.com/library/windows/hardware/ff537449)
 
-[KSPROPSETID\_DrmAudioStream](audio.kspropsetid_drmaudiostream)
+[KSPROPSETID\_DrmAudioStream](https://msdn.microsoft.com/library/windows/hardware/ff537481)
 
-[KSPROPSETID\_General](stream.kspropsetid_general)
+[KSPROPSETID\_General](https://msdn.microsoft.com/library/windows/hardware/ff566576)
 
-[KSPROPSETID\_Hrtf3d](audio.kspropsetid_hrtf3d)
+[KSPROPSETID\_Hrtf3d](https://msdn.microsoft.com/library/windows/hardware/ff537482)
 
-[KSPROPSETID\_Jack](audio.kspropsetid_jack)
+[KSPROPSETID\_Jack](https://msdn.microsoft.com/library/windows/hardware/ff537484)
 
-[KSPROPSETID\_Pin](stream.kspropsetid_pin)
+[KSPROPSETID\_Pin](https://msdn.microsoft.com/library/windows/hardware/ff566584)
 
-[KSPROPSETID\_Synth](audio.kspropsetid_synth)
+[KSPROPSETID\_Synth](https://msdn.microsoft.com/library/windows/hardware/ff537486)
 
-[KSPROPSETID\_Synth\_Dls](audio.kspropsetid_synth_dls)
+[KSPROPSETID\_Synth\_Dls](https://msdn.microsoft.com/library/windows/hardware/ff537488)
 
-[KSPROPSETID\_TopologyNode](audio.kspropsetid_topologynode)
+[KSPROPSETID\_TopologyNode](https://msdn.microsoft.com/library/windows/hardware/ff537491)
 
 All audio drivers support the **KSPROPSETID\_Audio** property set.
 
 Some audio adapter drivers support the following event set:
 
-[KSEVENTSETID\_AudioControlChange](audio.kseventsetid_audiocontrolchange)
+[KSEVENTSETID\_AudioControlChange](https://msdn.microsoft.com/library/windows/hardware/ff537122)
 
 In addition, audio adapter drivers are free to provide property handlers for other property sets that are defined in header file Ksmedia.h. Drivers can also define and support their own custom property and event sets, but only an application that knows about a custom property or event will be able to use it.
 
@@ -103,8 +103,8 @@ This section discusses audio-specific properties and events. It contains the fol
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Endpoints,%20Properties%20and%20Events%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Endpoints,%20Properties%20and%20Events%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

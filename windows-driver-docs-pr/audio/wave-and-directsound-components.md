@@ -1,8 +1,8 @@
 ---
-Description: Wave and DirectSound Components
-MS-HAID: 'audio.wave\_and\_directsound\_components'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Wave and DirectSound Components
+description: Wave and DirectSound Components
+ms.assetid: df00fcaf-49b0-4af1-a12f-bd3fcb9e025d
+keywords: ["wave components WDK audio", "wave streams WDK audio", "DirectSound WDK audio , components", "user-mode components WDK audio", "kernel-mode components WDK audio", "wave rendering WDK audio", "wave capturing WDK audio", "render components WDK audio", "capture components WDK audio", "wave-rendering applications WDK audio", "wave-capturing applications WDK audio", "wave-out applications WDK audio", "wave-in applications WDK audio"]
 ---
 
 # Wave and DirectSound Components
@@ -11,7 +11,7 @@ title: Wave and DirectSound Components
 ## <span id="wave_and_directsound_components"></span><span id="WAVE_AND_DIRECTSOUND_COMPONENTS"></span>
 
 
-Application programs rely on a combination of user-mode and kernel-mode components to capture (input) and render (output) wave streams. A wave stream is a digital-audio stream whose data format is described by a [**WAVEFORMATEX**](audio.waveformatex) or [**WAVEFORMATEXTENSIBLE**](audio.waveformatextensible) structure.
+Application programs rely on a combination of user-mode and kernel-mode components to capture (input) and render (output) wave streams. A wave stream is a digital-audio stream whose data format is described by a [**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799) or [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802) structure.
 
 An application can use either of the following software interfaces for wave rendering and capture:
 
@@ -31,9 +31,9 @@ The following figure shows the user-mode and kernel-mode components that a wave 
 
 The rendering components appear on the left side of the preceding figure, and the capture components appear on the right. The boxes representing the wave miniport driver are darkened to indicate that these are vendor-supplied components. The other components in the figure are system-supplied.
 
-At the top left of the figure, the wave-rendering (or "wave-out") application interfaces to the WDM audio drivers through the waveOut*Xxx* functions, which are implemented in the user-mode [WinMM system component](user-mode-wdm-audio-components.md#winmm-system-component), Winmm.dll. The application reads blocks of wave audio samples from a file and calls the [**waveOutWrite**](multimedia.waveoutwrite) function to render them.
+At the top left of the figure, the wave-rendering (or "wave-out") application interfaces to the WDM audio drivers through the waveOut*Xxx* functions, which are implemented in the user-mode [WinMM system component](user-mode-wdm-audio-components.md#winmm-system-component), Winmm.dll. The application reads blocks of wave audio samples from a file and calls the [**waveOutWrite**](https://msdn.microsoft.com/library/windows/desktop/dd743876) function to render them.
 
-WDMAud, which consists of both user-mode and kernel-mode components (Wdmaud.drv and Wdmaud.sys), buffers the wave data from the [**waveOutWrite**](multimedia.waveoutwrite) call and outputs the wave stream to the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver), which appears below WDMAud in the figure.
+WDMAud, which consists of both user-mode and kernel-mode components (Wdmaud.drv and Wdmaud.sys), buffers the wave data from the [**waveOutWrite**](https://msdn.microsoft.com/library/windows/desktop/dd743876) call and outputs the wave stream to the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver), which appears below WDMAud in the figure.
 
 KMixer is a system component that receives wave PCM streams from one or more sources and mixes them together to form a single output stream, which is also in wave PCM format.
 
@@ -41,7 +41,7 @@ KMixer outputs a wave stream to a WaveCyclic or WavePci device, whose port and m
 
 Alternatively, KMixer can pass its output stream to a USB audio device, which is controlled by the [USBAudio class system driver](kernel-mode-wdm-audio-components.md#usbaudio-class-system-driver) (not shown in figure), instead of a WaveCyclic or WavePci device.
 
-An adapter driver creates an instance of a WaveCyclic or WavePci port driver by calling [**PcNewPort**](audio.pcnewport) with a GUID value of **CLSID\_PortWaveCyclic** or **CLSID\_PortWavePci**, respectively.
+An adapter driver creates an instance of a WaveCyclic or WavePci port driver by calling [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) with a GUID value of **CLSID\_PortWaveCyclic** or **CLSID\_PortWavePci**, respectively.
 
 The right side of the preceding figure shows the components that are needed to support an application that captures wave data to a file. The wave-capture (or "wave-in") application communicates with the WDM audio drivers through the waveIn*Xxx* functions, which are implemented in the WinMM system component.
 
@@ -53,7 +53,7 @@ Alternatively, the source of the captured wave stream can be a USB audio device 
 
 Regardless of whether the wave stream is captured by a USB device or by a WaveCyclic or WavePci device, KMixer performs sample-rate conversion on the stream, if needed, but does no mixing with other streams. KMixer outputs the resulting stream to Wdmaud.sys, the kernel-mode half of the WDMAud system driver. The user-mode half, Wdmaud.drv, outputs the wave stream to the application program through the waveIn*Xxx* functions, which are implemented in Winmm.dll. Finally, at the top of the figure, the wave-capture application writes the wave data to a file.
 
-At the time that the wave-capture application calls the [**waveInOpen**](multimedia.waveinopen) function to open the capture stream, it passes in a pointer to its callback routine. When a wave-capture event occurs, the operating system calls the callback routine with a buffer containing the next block of wave samples from the capture device. In response to the callback, the application writes the next block of wave data to the file.
+At the time that the wave-capture application calls the [**waveInOpen**](https://msdn.microsoft.com/library/windows/desktop/dd743847) function to open the capture stream, it passes in a pointer to its callback routine. When a wave-capture event occurs, the operating system calls the callback routine with a buffer containing the next block of wave samples from the capture device. In response to the callback, the application writes the next block of wave data to the file.
 
 ### <span id="DirectSound_Components"></span><span id="directsound_components"></span><span id="DIRECTSOUND_COMPONENTS"></span>DirectSound Components
 
@@ -81,8 +81,8 @@ At the top-right corner of the preceding figure, the application reads the wave 
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Wave%20and%20DirectSound%20Components%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Wave%20and%20DirectSound%20Components%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

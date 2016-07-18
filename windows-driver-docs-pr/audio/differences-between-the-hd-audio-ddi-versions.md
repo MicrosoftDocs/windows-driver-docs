@@ -1,8 +1,8 @@
 ---
-Description: Differences Between the HD Audio DDI Versions
-MS-HAID: 'audio.differences\_between\_the\_hd\_audio\_ddi\_versions'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Differences Between the HD Audio DDI Versions
+description: Differences Between the HD Audio DDI Versions
+ms.assetid: e24071d3-9021-40c0-907a-91ada8a1306b
+keywords: ["HD Audio, DDI version differences", "High Definition Audio (HD Audio), DDI version differences", "HDAUDIO_BUS_INTERFACE structure", "HDAUDIO_BUS_INTERFACE_BDL structure"]
 ---
 
 # Differences Between the HD Audio DDI Versions
@@ -10,13 +10,13 @@ title: Differences Between the HD Audio DDI Versions
 
 The HD Audio DDI is available in three slightly different versions that are defined as follows:
 
--   A baseline version of the HD Audio DDI, which is defined by the [**HDAUDIO\_BUS\_INTERFACE**](audio.hdaudio_bus_interface) structure. Most function drivers for audio and modem codecs require only the capabilities that this DDI version provides. This version is available through the HD Audio bus drivers that are provided with Windows XP and Windows Vista.
+-   A baseline version of the HD Audio DDI, which is defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536413) structure. Most function drivers for audio and modem codecs require only the capabilities that this DDI version provides. This version is available through the HD Audio bus drivers that are provided with Windows XP and Windows Vista.
 
--   An enhanced version of the HD Audio DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](audio.hdaudio_bus_interface_v2) structure. This version of the DDI provides the additional capability that is required to support DMA-driven event notification with flexibility. It is available in Windows Vista and later versions of Windows.
+-   An enhanced version of the HD Audio DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff536418) structure. This version of the DDI provides the additional capability that is required to support DMA-driven event notification with flexibility. It is available in Windows Vista and later versions of Windows.
 
--   A modified version of the HD Audio DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](audio.hdaudio_bus_interface_bdl) structure. This version accommodates the requirements of a relatively few audio and modem drivers that must have additional control over the setup of buffer descriptor lists (BDLs) for DMA operations. This version of the DDI is available for Windows XP and later versions of Windows. However, use either the HDAUDIO\_BUS\_INTERFACE or the HDAUDIO\_BUS\_INTERFACE\_V2 DDI version instead. .
+-   A modified version of the HD Audio DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://msdn.microsoft.com/library/windows/hardware/ff536416) structure. This version accommodates the requirements of a relatively few audio and modem drivers that must have additional control over the setup of buffer descriptor lists (BDLs) for DMA operations. This version of the DDI is available for Windows XP and later versions of Windows. However, use either the HDAUDIO\_BUS\_INTERFACE or the HDAUDIO\_BUS\_INTERFACE\_V2 DDI version instead. .
 
-In all three structures, the names and types of the first five members match those of the five members of the [**INTERFACE**](kernel.interface) structure. For information about the values of these members, see [Obtaining an HDAUDIO\_BUS\_INTERFACE DDI Object](obtaining-an-hdaudio-bus-interface-ddi-object.md), [Obtaining an HDAUDIO\_BUS\_INTERFACE\_V2 DDI Object](obtaining-an-hdaudio-bus-interface-v2-ddi-object.md) or [Obtaining an HDAUDIO\_BUS\_INTERFACE\_BDL DDI Object](obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md).
+In all three structures, the names and types of the first five members match those of the five members of the [**INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff547825) structure. For information about the values of these members, see [Obtaining an HDAUDIO\_BUS\_INTERFACE DDI Object](obtaining-an-hdaudio-bus-interface-ddi-object.md), [Obtaining an HDAUDIO\_BUS\_INTERFACE\_V2 DDI Object](obtaining-an-hdaudio-bus-interface-v2-ddi-object.md) or [Obtaining an HDAUDIO\_BUS\_INTERFACE\_BDL DDI Object](obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md).
 
 The routines in the three versions of the HD Audio DDI perform the following tasks:
 
@@ -36,9 +36,9 @@ The routines in the three versions of the HD Audio DDI perform the following tas
 
 The HDAUDIO\_BUS\_INTERFACE and HDAUDIO\_BUS\_INTERFACE\_BDL versions of the DDI have the following differences:
 
--   The HDAUDIO\_BUS\_INTERFACE structure defines two routines, [**AllocateDmaBuffer**](audio.allocatedmabuffer) and [**FreeDmaBuffer**](audio.freedmabuffer), that are not present in HDAUDIO\_BUS\_INTERFACE\_BDL.
+-   The HDAUDIO\_BUS\_INTERFACE structure defines two routines, [**AllocateDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536179) and [**FreeDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536391), that are not present in HDAUDIO\_BUS\_INTERFACE\_BDL.
 
--   The HDAUDIO\_BUS\_INTERFACE\_BDL structure defines three routines, [**SetupDmaEngineWithBdl**](audio.setupdmaenginewithbdl), [**AllocateContiguousDmaBuffer**](audio.allocatecontiguousdmabuffer), and [**FreeContiguousDmaBuffer**](audio.freecontiguousdmabuffer), that are not present in HDAUDIO\_BUS\_INTERFACE.
+-   The HDAUDIO\_BUS\_INTERFACE\_BDL structure defines three routines, [**SetupDmaEngineWithBdl**](https://msdn.microsoft.com/library/windows/hardware/ff537894), [**AllocateContiguousDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536178), and [**FreeContiguousDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536390), that are not present in HDAUDIO\_BUS\_INTERFACE.
 
 When a client calls the **AllocateDmaBuffer** routine in the first DDI version, the HD Audio bus driver:
 
@@ -60,8 +60,8 @@ However, nearly all clients will use the HDAUDIO\_BUS\_INTERFACE version of the 
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Differences%20Between%20the%20HD%20Audio%20DDI%20Versions%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Differences%20Between%20the%20HD%20Audio%20DDI%20Versions%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

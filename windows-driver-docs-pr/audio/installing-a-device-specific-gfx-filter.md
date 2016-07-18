@@ -1,8 +1,8 @@
 ---
-Description: 'Installing a Device-Specific GFX Filter'
-MS-HAID: 'audio.installing\_a\_device\_specific\_gfx\_filter'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Installing a Device-Specific GFX Filter'
+title: Installing a Device-Specific GFX Filter
+description: Installing a Device-Specific GFX Filter
+ms.assetid: f917bb0d-eff8-4f1f-b7ad-3d135495e6e8
+keywords: ["GFX filters WDK audio , installing"]
 ---
 
 # Installing a Device-Specific GFX Filter
@@ -33,7 +33,7 @@ When the driver is installed, the installation process loads information about t
 
 In this path, *DIRegKey* represents the subpath for the filter's KSCATEGORY\_AUDIO device-interface registry key, **Gfx** and **AutoLoad** are both literal subkey names, and *GfxAutoLoadInst* represents the subkey that contains the information that the operating system needs to automatically load the GFX filter factory.
 
-The vendor supplies an INF file that installs the GFX filter factory. This file uses an [**INF AddReg directive**](devinst.inf_addreg_directive) to add the registry subkey **AutoLoad** to the device's **Gfx** key. Under the **AutoLoad** key, the INF file adds one or more *GfxAutoLoadInst* subkeys and assigns arbitrary names to these subkeys. Typically these subkeys are named "0," "1," "2," and so on. Most GFX drivers require only one subkey and assign the name "0" to that subkey. The *GfxAutoLoadInst* subkey contains the values that are shown in the following table.
+The vendor supplies an INF file that installs the GFX filter factory. This file uses an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) to add the registry subkey **AutoLoad** to the device's **Gfx** key. Under the **AutoLoad** key, the INF file adds one or more *GfxAutoLoadInst* subkeys and assigns arbitrary names to these subkeys. Typically these subkeys are named "0," "1," "2," and so on. Most GFX drivers require only one subkey and assign the name "0" to that subkey. The *GfxAutoLoadInst* subkey contains the values that are shown in the following table.
 
 Value name
 Description
@@ -60,7 +60,7 @@ The Plug and Play (PnP) device IDs of the hardware devices that expose the rende
 
 **ReferenceString**
 \[REG\_SZ\]
-The reference string that is used by the hardware device to call [**IoRegisterDeviceInterface**](kernel.ioregisterdeviceinterface) when registering the rendering or capture device interface through which this GFX filter is managed.
+The reference string that is used by the hardware device to call [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) when registering the rendering or capture device interface through which this GFX filter is managed.
 
  
 
@@ -82,8 +82,8 @@ Given the registry information that is described in the previous tables, the ope
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Installing%20a%20Device-Specific%20GFX%20Filter%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Installing%20a%20Device-Specific%20GFX%20Filter%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

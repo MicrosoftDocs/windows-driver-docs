@@ -1,8 +1,8 @@
 ---
-Description: Audio Device Class Inactivity Timer Implementation
-MS-HAID: 'audio.audio\_device\_class\_inactivity\_timer\_implementation'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Audio Device Class Inactivity Timer Implementation
+description: Audio Device Class Inactivity Timer Implementation
+ms.assetid: e7e431ec-626d-4fdb-8705-fc5420c43f17
+keywords: ["inactivity timers WDK audio", "timers WDK audio", "power-idle detection WDK audio", "idle power states WDK audio", "idle time-outs WDK audio", "time-out intervals WDK audio", "power-conservation mode WDK audio", "conservation power mode WDK audio", "performance power mode WDK audio"]
 ---
 
 # Audio Device Class Inactivity Timer Implementation
@@ -25,7 +25,7 @@ Vendors can override the default values of the following power-idle parameters:
     \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\xxxx\yyyy\PowerSettings\ConservationIdleTime
     ```
 
-    Note that *xxxx* represents the Media class GUID (see [System-Supplied Device Setup Classes](devinst.system_defined_device_setup_classes)) and *yyyy* represents the name of the driver's subkey under the Media class GUID. The value of the key specifies the time-out interval in seconds.
+    Note that *xxxx* represents the Media class GUID (see [System-Supplied Device Setup Classes](https://msdn.microsoft.com/library/windows/hardware/ff553419)) and *yyyy* represents the name of the driver's subkey under the Media class GUID. The value of the key specifies the time-out interval in seconds.
 
 -   *PerformanceIdleTime*
 
@@ -49,11 +49,11 @@ Vendors can override the default values of the following power-idle parameters:
 
 The three power-idle registry keys exist only if the device-installation INF file creates them. Before configuring the power-idle timer, PortCls attempts to retrieve the driver-specific power-idle parameters from the registry. PortCls uses the default values in place of any power-idle parameters it does not find in the registry. As explained previously, the default power-idle parameter values disable the idle timer.
 
-For more information about specifying the *ConservationIdleTime*, *PerformanceIdleTime*, and *IdlePowerState* parameters, see the definitions of the last three call parameters in [**PoRegisterDeviceForIdleDetection**](kernel.poregisterdeviceforidledetection).
+For more information about specifying the *ConservationIdleTime*, *PerformanceIdleTime*, and *IdlePowerState* parameters, see the definitions of the last three call parameters in [**PoRegisterDeviceForIdleDetection**](https://msdn.microsoft.com/library/windows/hardware/ff559721).
 
 ### <span id="example"></span><span id="EXAMPLE"></span> Example
 
-For example, a hardware vendor might want to specify the following power-idle parameters for an audio device: *ConservationIdleTime* = 0x0000001e (30 seconds), *PerformanceIdleTime* = 0x0000012c (300 seconds), and *IdlePowerState* = 0x00000003 (device power state D3). To enable these settings, the device-installation file can include an [**INF AddReg section**](devinst.inf_addreg_directive) containing the following directives:
+For example, a hardware vendor might want to specify the following power-idle parameters for an audio device: *ConservationIdleTime* = 0x0000001e (30 seconds), *PerformanceIdleTime* = 0x0000012c (300 seconds), and *IdlePowerState* = 0x00000003 (device power state D3). To enable these settings, the device-installation file can include an [**INF AddReg section**](https://msdn.microsoft.com/library/windows/hardware/ff546320) containing the following directives:
 
 ```
 [MyAudioDevice.AddReg]
@@ -74,8 +74,8 @@ Again, *xxxx* represents the Media class GUID and *yyyy* represents the name of 
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Device%20Class%20Inactivity%20Timer%20Implementation%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Device%20Class%20Inactivity%20Timer%20Implementation%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

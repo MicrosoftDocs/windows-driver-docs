@@ -1,8 +1,7 @@
 ---
-Description: Friendly Names for Audio Endpoint Devices
-MS-HAID: 'audio.friendly\_names\_for\_audio\_endpoint\_devices'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Friendly Names for Audio Endpoint Devices
+description: Friendly Names for Audio Endpoint Devices
+ms.assetid: e0937d20-dd5b-453f-99f6-4e501f0f0e5b
 ---
 
 # Friendly Names for Audio Endpoint Devices
@@ -12,7 +11,7 @@ In Windows Vista, Windows Server 2008, and later versions of Windows, the audio 
 
 The audio subsystem models a Plug and Play (PnP) device on an audio adapter as a KS filter. Data streams enter and exit the filter through KS pins. A bridge pin is a KS pin through which an audio endpoint device connects to a KS filter. For more information about bridge pins, see [Audio Filter Graphs](audio-filter-graphs.md).
 
-The audio subsystem obtains information about an audio endpoint device by examining the properties of the bridge pin that the endpoint device connects to. One such property is the [pin category property](pin-category-property.md) ([**KSPROPERTY\_PIN\_CATEGORY**](stream.ksproperty_pin_category)). For each KS filter, the adapter driver supplies a table of [**PCPIN\_DESCRIPTOR**](audio.pcpin_descriptor) structures that describe the properties of the KS pins on the filter. The pin category property is stored in the **KsPinDescriptor.Name** member of the PCPIN\_DESCRIPTOR structure. For a bridge pin, the value of the pin category property is a GUID that indicates the "category" of the endpoint device that connects to the bridge pin. For example, the pin-category GUID KSNODETYPE\_MICROPHONE indicates that the bridge pin connects to a microphone, the GUID KSNODETYPE\_SPEAKER indicates that the bridge pin connects to speakers, and so on. The KSNODETYPE\_*XXX* GUIDs are defined in the Ksmedia.h header file.
+The audio subsystem obtains information about an audio endpoint device by examining the properties of the bridge pin that the endpoint device connects to. One such property is the [pin category property](pin-category-property.md) ([**KSPROPERTY\_PIN\_CATEGORY**](https://msdn.microsoft.com/library/windows/hardware/ff565192)). For each KS filter, the adapter driver supplies a table of [**PCPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537721) structures that describe the properties of the KS pins on the filter. The pin category property is stored in the **KsPinDescriptor.Name** member of the PCPIN\_DESCRIPTOR structure. For a bridge pin, the value of the pin category property is a GUID that indicates the "category" of the endpoint device that connects to the bridge pin. For example, the pin-category GUID KSNODETYPE\_MICROPHONE indicates that the bridge pin connects to a microphone, the GUID KSNODETYPE\_SPEAKER indicates that the bridge pin connects to speakers, and so on. The KSNODETYPE\_*XXX* GUIDs are defined in the Ksmedia.h header file.
 
 The audio subsystem associates a friendly name with the audio endpoint device that connects to a bridge pin. The friendly name is based on the pin category property of the bridge pin. For example, the property value KSNODETYPE\_MICROPHONE has the associated friendly name "microphone," the value KSNODETYPE\_SPEAKER has the associated friendly name "speakers," and so on.
 
@@ -65,8 +64,8 @@ The preceding steps change the friendly name that is stored in the property stor
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Friendly%20Names%20for%20Audio%20Endpoint%20Devices%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Friendly%20Names%20for%20Audio%20Endpoint%20Devices%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

@@ -1,8 +1,8 @@
 ---
-Description: Installing Device Interfaces for an Audio Adapter
-MS-HAID: 'audio.installing\_device\_interfaces\_for\_an\_audio\_adapter'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Installing Device Interfaces for an Audio Adapter
+description: Installing Device Interfaces for an Audio Adapter
+ms.assetid: 824cc6a2-702a-4e51-91b1-ab776b1babf1
+keywords: ["audio adapters WDK , device interfaces", "adapter drivers WDK audio , device interfaces", "Port Class audio adapters WDK , device interfaces", "device interfaces WDK audio", "subdevices WDK audio", "audio device interfaces WDK"]
 ---
 
 # Installing Device Interfaces for an Audio Adapter
@@ -11,9 +11,9 @@ title: Installing Device Interfaces for an Audio Adapter
 ## <span id="installing_device_interfaces_for_an_audio_adapter"></span><span id="INSTALLING_DEVICE_INTERFACES_FOR_AN_AUDIO_ADAPTER"></span>
 
 
-A client accesses an audio device through a set of [*device interfaces*](wdkgloss.d#wdkgloss-device-interface) that a vendor specifies in the adapter's INF file. The device interfaces specified in the INF file have a one-to-one correspondence with the subdevices that the adapter driver creates when it initializes the device (see [Subdevice Creation](subdevice-creation.md)). For each device interface, the INF file specifies a **FriendlyName** entry value, which is accessible in user mode, under the interface's registry key.
+A client accesses an audio device through a set of [*device interfaces*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-interface) that a vendor specifies in the adapter's INF file. The device interfaces specified in the INF file have a one-to-one correspondence with the subdevices that the adapter driver creates when it initializes the device (see [Subdevice Creation](subdevice-creation.md)). For each device interface, the INF file specifies a **FriendlyName** entry value, which is accessible in user mode, under the interface's registry key.
 
-In the kernel-streaming architecture, topology categories (see [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](stream.ksproperty_topology_categories)) represent device interface classes.
+In the kernel-streaming architecture, topology categories (see [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)) represent device interface classes.
 
 The following table lists the topology categories that audio adapters are most likely to use to describe the capabilities of their subdevices.
 
@@ -88,7 +88,7 @@ The following example installs four common system-defined device interfaces that
 
 ### <span id="example__installing_audio_device_interfaces"></span><span id="EXAMPLE__INSTALLING_AUDIO_DEVICE_INTERFACES"></span>Example: Installing Audio Device Interfaces
 
-In this example, the device-install section for the XYZ Audio Device uses the [**INF AddInterface directive**](devinst.inf_addinterface_directive) to install four audio adapter interfaces. In the following, each of the four directives assigns a unique reference string to an interface, which the adapter driver can use to distinguish between instances of each interface class.
+In this example, the device-install section for the XYZ Audio Device uses the [**INF AddInterface directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310) to install four audio adapter interfaces. In the following, each of the four directives assigns a unique reference string to an interface, which the adapter driver can use to distinguish between instances of each interface class.
 
 ```
   [XYZ-Audio-Device.Interfaces]
@@ -120,7 +120,7 @@ The two add-interface sections appear in the following example, which contains I
   HKR,,CLSID,,%Proxy.CLSID%
 ```
 
-The keyword HKR in this example denotes the system-supplied registry path for the device. For more information, see [**INF AddReg Directive**](devinst.inf_addreg_directive).
+The keyword HKR in this example denotes the system-supplied registry path for the device. For more information, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
 
 The following is the Strings section for this example.
 
@@ -152,8 +152,8 @@ For the sake of uniformity, your proprietary driver should assign these same nam
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Installing%20Device%20Interfaces%20for%20an%20Audio%20Adapter%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Installing%20Device%20Interfaces%20for%20an%20Audio%20Adapter%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

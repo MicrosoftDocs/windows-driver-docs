@@ -1,8 +1,7 @@
 ---
-Description: 'The USB Audio class system driver (Usbaudio.sys) is an AVStream minidriver that provides driver support for audio devices that comply with the Universal Serial Bus (USB) Device Class Definition for Audio Devices.'
-MS-HAID: 'audio.usb\_audio\_class\_system\_driver\_\_usbaudio\_sys\_'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'USB Audio Class System Driver (Usbaudio.sys)'
+title: USB Audio Class System Driver (Usbaudio.sys)
+description: The USB Audio class system driver (Usbaudio.sys) is an AVStream minidriver that provides driver support for audio devices that comply with the Universal Serial Bus (USB) Device Class Definition for Audio Devices.
+ms.assetid: 7ECE8006-3181-451C-B047-A3D767A7B98A
 ---
 
 # USB Audio Class System Driver (Usbaudio.sys)
@@ -41,7 +40,7 @@ However, USBAudio in Windows 98 does not support:
 
 -   USB MIDI
 
--   [**WAVEFORMATEXTENSIBLE**](audio.waveformatextensible) wave format (USBAudio uses packed WAVE\_FORMAT\_PCM for 24-bit data instead.)
+-   [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802) wave format (USBAudio uses packed WAVE\_FORMAT\_PCM for 24-bit data instead.)
 
 In Windows 98 Second Edition (SE), Windows Me, and Windows 2000 and later, USBAudio supports all the same features as Windows 98, with one exception: USBAudio supports WAVEFORMATEXTENSIBLE but does not support packed WAVE\_FORMAT\_PCM for 24-bit data.
 
@@ -53,16 +52,16 @@ The following figure shows the driver hierarchy for a USB audio device. All of t
 
 For more information about the driver components in the figure, see the following sections:
 
-[AVStream Overview](stream.avstream_overview)
+[AVStream Overview](https://msdn.microsoft.com/library/windows/hardware/ff554240)
 
-[System-Supplied USB Drivers](buses.system_supplied_usb_drivers)
-
- 
+[System-Supplied USB Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538853)
 
  
 
+ 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20USB%20Audio%20Class%20System%20Driver%20%28Usbaudio.sys%29%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20USB%20Audio%20Class%20System%20Driver%20%28Usbaudio.sys%29%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 

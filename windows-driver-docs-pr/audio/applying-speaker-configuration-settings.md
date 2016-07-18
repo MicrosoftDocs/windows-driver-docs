@@ -1,8 +1,8 @@
 ---
-Description: 'Applying Speaker-Configuration Settings'
-MS-HAID: 'audio.applying\_speaker\_configuration\_settings'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Applying Speaker-Configuration Settings'
+title: Applying Speaker-Configuration Settings
+description: Applying Speaker-Configuration Settings
+ms.assetid: 98fe96cc-8436-4400-9b39-86d188e085c9
+keywords: ["failed speaker-configuration requests WDK audio"]
 ---
 
 # Applying Speaker-Configuration Settings
@@ -31,7 +31,7 @@ A user can change the configuration through the speaker-configuration dialog in 
 
 At this point, you should see the label **Speaker Setup** next to a list of the speaker configurations that you can select from.
 
-DirectSound uses a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](audio.ksproperty_audio_channel_config) set-property request to send the speaker-configuration information to a 3D node or DAC node ([**KSNODETYPE\_3D\_EFFECTS**](audio.ksnodetype_3d_effects) or [**KSNODETYPE\_DAC**](audio.ksnodetype_dac)) in an audio filter graph. For a 3D node, the target for the property request is actually the pin (3D-stream object) that feeds the node. For a DAC node, the target is the filter object that contains the DAC node. In either case, the speaker-configuration setting is global and affects the audio device as a whole. All audio applications that subsequently run are subject to the new setting until DirectSound changes the setting again.
+DirectSound uses a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff537250) set-property request to send the speaker-configuration information to a 3D node or DAC node ([**KSNODETYPE\_3D\_EFFECTS**](https://msdn.microsoft.com/library/windows/hardware/ff537148) or [**KSNODETYPE\_DAC**](https://msdn.microsoft.com/library/windows/hardware/ff537158)) in an audio filter graph. For a 3D node, the target for the property request is actually the pin (3D-stream object) that feeds the node. For a DAC node, the target is the filter object that contains the DAC node. In either case, the speaker-configuration setting is global and affects the audio device as a whole. All audio applications that subsequently run are subject to the new setting until DirectSound changes the setting again.
 
 Note that only versions of DirectSound that ship with Windows Me, and with Windows XP and later, send speaker-configuration property requests to DAC nodes--earlier versions of DirectSound do not support this feature. However, all versions of DirectSound send these requests to 3D nodes.
 
@@ -61,8 +61,8 @@ Immediately after installing an audio device or when a speaker-configuration err
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Applying%20Speaker-Configuration%20Settings%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Applying%20Speaker-Configuration%20Settings%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

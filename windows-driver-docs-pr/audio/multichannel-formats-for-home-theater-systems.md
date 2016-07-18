@@ -1,8 +1,8 @@
 ---
-Description: 'Multichannel Formats for Home-Theater Systems'
-MS-HAID: 'audio.multichannel\_formats\_for\_home\_theater\_systems'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Multichannel Formats for Home-Theater Systems'
+title: Multichannel Formats for Home-Theater Systems
+description: Multichannel Formats for Home-Theater Systems
+ms.assetid: b8bd1dc7-c9a8-4f4f-8014-d31f1ae5361a
+keywords: ["data formats WDK audio", "formats WDK audio , data", "audio data formats WDK", "formats WDK audio , multichannel", "multichannel formats WDK audio", "home-theater systems WDK audio", "speakers WDK audio , home-threater systems", "audio drivers WDK , home-theater systems", "WDM audio drivers WDK , home-theater systems", "7.1 home theater speakers WDK audio", "7.1 wide configuration speakers WDK audio", "wide configuration speakers WDK audio", "5.1 surround sound speakers WDK audio", "surround sound speakers", "Sony Dynamic Digital Sound", "SDDS configuration WDK audio", "stream formats WDK audio , multichannel", "positions WDK audio", "WDM audio data formats WDK", "data formats WDK audio , multichannel"]
 ---
 
 # Multichannel Formats for Home-Theater Systems
@@ -10,7 +10,7 @@ title: 'Multichannel Formats for Home-Theater Systems'
 
 A relatively inexpensive solution for a home-theater system is to connect a set of surround-sound speakers to an audio adapter on a computer that is running the Windows operating system. Alternately, the user can connect an external audio/video (A/V) receiver between the adapter outputs and the speakers. In response to the popularity of home-theater systems, 5.1- and 7.1-channel audio content that has been authored for these systems is becoming increasingly available.
 
-To accurately render multichannel audio content on a home-theater system requires an audio-format descriptor that can assign speaker positions to audio channels in multichannel streams. As discussed previously, the [**WAVEFORMATEXTENSIBLE**](audio.waveformatextensible) structure can specify such speaker assignments.
+To accurately render multichannel audio content on a home-theater system requires an audio-format descriptor that can assign speaker positions to audio channels in multichannel streams. As discussed previously, the [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802) structure can specify such speaker assignments.
 
 To help provide audio driver support for home-theater systems, Microsoft has defined a new 7.1-channel speaker configuration for Microsoft Windows XP and later. This configuration is supported in Windows Vista, Windows XP with Service Pack 2 (SP2), and Windows Server 2003 with Service Pack 1 (SP1). It is not supported in Windows Server 2003 with no service packs installed, Windows XP with Service Pack 1, or Windows XP with no service packs installed.
 
@@ -62,8 +62,8 @@ This section includes:
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Multichannel%20Formats%20for%20Home-Theater%20Systems%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Multichannel%20Formats%20for%20Home-Theater%20Systems%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

@@ -1,8 +1,8 @@
 ---
-Description: 'Data-Intersection Handlers'
-MS-HAID: 'audio.data\_intersection\_handlers'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Data-Intersection Handlers'
+title: Data-Intersection Handlers
+description: Data-Intersection Handlers
+ms.assetid: 7206afdb-8a34-4b5a-8cea-87119f426161
+keywords: ["WDM audio drivers WDK , data-intersection handlers", "audio drivers WDK , data-intersection handlers", "data-intersection handlers WDK audio", "handlers WDK audio", "virtual audio devices WDK", "audio filters WDK audio , data-intersection handlers", "filters WDK audio , data-intersection handlers", "formats WDK audio , data-intersection handlers", "pins WDK audio , data-intersection handlers", "graphs WDK audio", "range intersections WDK audio", "data ranges WDK audio , intersections", "audio data formats WDK", "audio data ranges WDK", "port drivers WDK audio , data-intersection handlers"]
 ---
 
 # Data-Intersection Handlers
@@ -11,7 +11,7 @@ title: 'Data-Intersection Handlers'
 ## <span id="data_intersection_handlers"></span><span id="DATA_INTERSECTION_HANDLERS"></span>
 
 
-This section discusses data-intersection handlers in Microsoft Windows Driver Model (WDM) audio drivers. For a broader discussion of data-intersection handling for KS filters in general, see [DataRange Intersections in AVStream](stream.data_range_intersections_in_avstream).
+This section discusses data-intersection handlers in Microsoft Windows Driver Model (WDM) audio drivers. For a broader discussion of data-intersection handling for KS filters in general, see [DataRange Intersections in AVStream](https://msdn.microsoft.com/library/windows/hardware/ff558680).
 
 In older versions of Windows such as Windows XP, the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver) constructs a [virtual audio device](virtual-audio-devices.md) by connecting together pairs of audio-filter pins to form an [audio filter graph](audio-filter-graphs.md). Before a source pin on one filter can be connected to a sink pin of another, SysAudio must negotiate a common format that the two pins can use to exchange data. The details of this negotiation are largely delegated to the data-intersection handlers that are implemented in the individual filters.
 
@@ -45,8 +45,8 @@ The remainder of this section describes some of the limitations of the port driv
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Data-Intersection%20Handlers%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Data-Intersection%20Handlers%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

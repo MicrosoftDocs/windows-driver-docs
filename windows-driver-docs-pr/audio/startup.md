@@ -1,8 +1,7 @@
 ---
-Description: 'The HFP Device startup topic discusses what happens when a Bluetooth hands-free profile (HFP) device arrives in the audio system.'
-MS-HAID: 'audio.startup'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: HFP Device Startup
+description: The HFP Device startup topic discusses what happens when a Bluetooth hands-free profile (HFP) device arrives in the audio system.
+ms.assetid: C478BCBA-2A17-4604-AE2B-99B3445C741B
 ---
 
 # HFP Device Startup
@@ -40,7 +39,7 @@ When the audio driver sends IOCTLs to the HFP driver, the driver uses the HFP Fi
 ## <span id="Retrieving_static_information"></span><span id="retrieving_static_information"></span><span id="RETRIEVING_STATIC_INFORMATION"></span>Retrieving static information
 
 
-The audio driver can retrieve static information from the HFP driver. For example, the HFP driver can provide the ksnodetype, the container id and the friendly name of the paired HFP device. The audio driver can use this information to create and initialize a KS filter or filters representing the paired HFP device. The audio driver uses [**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](audio.ioctl_bthhfp_device_get_descriptor) to get this information.
+The audio driver can retrieve static information from the HFP driver. For example, the HFP driver can provide the ksnodetype, the container id and the friendly name of the paired HFP device. The audio driver can use this information to create and initialize a KS filter or filters representing the paired HFP device. The audio driver uses [**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/dn265108) to get this information.
 
 The audio driver can also retrieve the Bluetooth address of the paired HFP device. Each paired HFP device has a unique Bluetooth address, and this can be useful as a unique identifier string. For more information, see [Obtaining Bluetooth Address of HF Device](obtaining-bluetooth-address-of-hf-device.md).
 
@@ -75,11 +74,21 @@ The audio driver sends the get connection status IOCTL to get information about 
 The audio driver sends the get volume status IOCTL to get information about any changes in volume level that have occurred in the volume status of the headset.
 
 ## <span id="related_topics"></span>Related topics
-[**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](audio.ioctl_bthhfp_device_get_descriptor)  
-[Theory of Operation](theory-of-operation.md)  
-[Obtaining Bluetooth Address of HF Device](obtaining-bluetooth-address-of-hf-device.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20HFP%20Device%20Startup%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
+[**IOCTL\_BTHHFP\_DEVICE\_GET\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/dn265108)
+
+[Theory of Operation](theory-of-operation.md)
+
+[Obtaining Bluetooth Address of HF Device](obtaining-bluetooth-address-of-hf-device.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20HFP%20Device%20Startup%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 

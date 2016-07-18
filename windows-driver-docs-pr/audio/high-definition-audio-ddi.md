@@ -1,8 +1,8 @@
 ---
-Description: High Definition Audio DDI
-MS-HAID: 'audio.high\_definition\_audio\_ddi'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: High Definition Audio DDI
+description: High Definition Audio DDI
+ms.assetid: d471777c-0002-4caa-a06e-c58e449b7678
+keywords: ["HD Audio", "High Definition Audio (HD Audio)", "WDM audio drivers WDK , HD Audio", "audio drivers WDK , HD Audio", "Intel High Definition Audio Specification"]
 ---
 
 # High Definition Audio DDI
@@ -20,11 +20,11 @@ The HD Audio bus driver implements the HD Audio device driver interface (DDI), w
 
 The version of the HD Audio bus driver that runs on Windows Server 2003 and Windows XP supports three variants of the HD Audio DDI:
 
--   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE**](audio.hdaudio_bus_interface) structure. This DDI is identical to the HD Audio DDI in Windows Vista.
+-   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536413) structure. This DDI is identical to the HD Audio DDI in Windows Vista.
 
--   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](audio.hdaudio_bus_interface_v2) structure. This DDI is available in Windows Vista and later versions of Windows.
+-   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff536418) structure. This DDI is available in Windows Vista and later versions of Windows.
 
--   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](audio.hdaudio_bus_interface_bdl) structure. This DDI is available in Windows XP and later versions of Windows.
+-   A DDI that is defined by the [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://msdn.microsoft.com/library/windows/hardware/ff536416) structure. This DDI is available in Windows XP and later versions of Windows.
 
 The differences between the three DDIs are minor and are discussed in [Differences Between the HD Audio DDI Versions](differences-between-the-hd-audio-ddi-versions.md).
 
@@ -50,8 +50,8 @@ This section includes:
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20High%20Definition%20Audio%20DDI%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20High%20Definition%20Audio%20DDI%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

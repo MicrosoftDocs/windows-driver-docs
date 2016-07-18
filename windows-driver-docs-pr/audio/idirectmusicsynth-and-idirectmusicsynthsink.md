@@ -1,8 +1,8 @@
 ---
-Description: IDirectMusicSynth and IDirectMusicSynthSink
-MS-HAID: 'audio.idirectmusicsynth\_and\_idirectmusicsynthsink'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: IDirectMusicSynth and IDirectMusicSynthSink
+description: IDirectMusicSynth and IDirectMusicSynthSink
+ms.assetid: ce9a353b-9e4b-402b-92bb-948200e3c2ef
+keywords: ["IDirectMusicSynth interface", "IDirectMusicSynthSink interface", "custom rendering in user mode WDK audio , interfaces", "user-mode synths WDK audio , interfaces", "custom wave sinks WDK audio", "wave sinks WDK audio , user-mode", "latency WDK audio , synthesizers", "master clocks WDK audio , synthesizers", "clocks WDK audio , synthesizers", "synthesizers WDK audio , interfaces", "custom synths WDK audio , interfaces", "DirectMusic custom rendering WDK audio , synthesizers"]
 ---
 
 # IDirectMusicSynth and IDirectMusicSynthSink
@@ -11,7 +11,7 @@ title: IDirectMusicSynth and IDirectMusicSynthSink
 ## <span id="idirectmusicsynth_and_idirectmusicsynthsink"></span><span id="IDIRECTMUSICSYNTH_AND_IDIRECTMUSICSYNTHSINK"></span>
 
 
-As described in [Synthesizers and Wave Sinks](synthesizers-and-wave-sinks.md), you can implement a custom software synthesizer or wave sink that runs in user mode and communicates with DirectMusic. The synthesizer object must have an [IDirectMusicSynth](audio.idirectmusicsynth) interface. The wave sink object must have an [IDirectMusicSynthSink](audio.idirectmusicsynthsink) interface.
+As described in [Synthesizers and Wave Sinks](synthesizers-and-wave-sinks.md), you can implement a custom software synthesizer or wave sink that runs in user mode and communicates with DirectMusic. The synthesizer object must have an [IDirectMusicSynth](https://msdn.microsoft.com/library/windows/hardware/ff536519) interface. The wave sink object must have an [IDirectMusicSynthSink](https://msdn.microsoft.com/library/windows/hardware/ff536520) interface.
 
 DirectMusic communicates with a software synthesizer through its **IDirectMusicSynth** interface. DirectMusic supports this interface in DirectX 6.1 and later. **IDirectMusicSynth** supports the methods shown in the following table, which organizes the methods into functional groups.
 
@@ -29,41 +29,41 @@ DirectMusic communicates with a software synthesizer through its **IDirectMusicS
 <tbody>
 <tr class="odd">
 <td align="left"><p>Activation</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::Activate</strong>](audio.idirectmusicsynth_activate)</p></td>
+<td align="left"><p>[<strong>IDirectMusicSynth::Activate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536529)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Channels</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::GetChannelPriority</strong>](audio.idirectmusicsynth_getchannelpriority)</p>
-<p>[<strong>IDirectMusicSynth::SetChannelPriority</strong>](audio.idirectmusicsynth_setchannelpriority)</p></td>
+<td align="left"><p>[<strong>IDirectMusicSynth::GetChannelPriority</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536534)</p>
+<p>[<strong>IDirectMusicSynth::SetChannelPriority</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536542)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Instruments</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::Download</strong>](audio.idirectmusicsynth_download)</p>
-<p>[<strong>IDirectMusicSynth::Unload</strong>](audio.idirectmusicsynth_unload)</p></td>
+<td align="left"><p>[<strong>IDirectMusicSynth::Download</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536532)</p>
+<p>[<strong>IDirectMusicSynth::Unload</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536546)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Information</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::GetAppend</strong>](audio.idirectmusicsynth_getappend)</p>
-<p>[<strong>IDirectMusicSynth::GetFormat</strong>](audio.idirectmusicsynth_getformat)</p>
-<p>[<strong>IDirectMusicSynth::GetLatencyClock</strong>](audio.idirectmusicsynth_getlatencyclock)</p>
-<p>[<strong>IDirectMusicSynth::GetPortCaps</strong>](audio.idirectmusicsynth_getportcaps)</p>
-<p>[<strong>IDirectMusicSynth::GetRunningStats</strong>](audio.idirectmusicsynth_getrunningstats)</p></td>
+<td align="left"><p>[<strong>IDirectMusicSynth::GetAppend</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536533)</p>
+<p>[<strong>IDirectMusicSynth::GetFormat</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536535)</p>
+<p>[<strong>IDirectMusicSynth::GetLatencyClock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536536)</p>
+<p>[<strong>IDirectMusicSynth::GetPortCaps</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536537)</p>
+<p>[<strong>IDirectMusicSynth::GetRunningStats</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536538)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Playback</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::PlayBuffer</strong>](audio.idirectmusicsynth_playbuffer)</p>
-<p>[<strong>IDirectMusicSynth::Render</strong>](audio.idirectmusicsynth_render)</p></td>
+<td align="left"><p>[<strong>IDirectMusicSynth::PlayBuffer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536540)</p>
+<p>[<strong>IDirectMusicSynth::Render</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536541)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Ports</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::Open</strong>](audio.idirectmusicsynth_open)</p>
-<p>[<strong>IDirectMusicSynth::Close</strong>](audio.idirectmusicsynth_close)</p>
-<p>[<strong>IDirectMusicSynth::SetNumChannelGroups</strong>](audio.idirectmusicsynth_setnumchannelgroups)</p></td>
+<td align="left"><p>[<strong>IDirectMusicSynth::Open</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536539)</p>
+<p>[<strong>IDirectMusicSynth::Close</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536531)</p>
+<p>[<strong>IDirectMusicSynth::SetNumChannelGroups</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536544)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Miscellaneous parameters</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynth::SetMasterClock</strong>](audio.idirectmusicsynth_setmasterclock)</p>
-<p>[<strong>IDirectMusicSynth::SetSynthSink</strong>](audio.idirectmusicsynth_setsynthsink)</p></td>
+<td align="left"><p>[<strong>IDirectMusicSynth::SetMasterClock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536543)</p>
+<p>[<strong>IDirectMusicSynth::SetSynthSink</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536545)</p></td>
 </tr>
 </tbody>
 </table>
@@ -94,17 +94,17 @@ Only DirectX 6.1 and DirectX 7 support the implementation of a custom user-mode 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Initialization</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynthSink::Activate</strong>](audio.idirectmusicsynthsink_activate)</p>
-<p>[<strong>IDirectMusicSynthSink::GetDesiredBufferSize</strong>](audio.idirectmusicsynthsink_getdesiredbuffersize)</p>
-<p>[<strong>IDirectMusicSynthSink::Init</strong>](audio.idirectmusicsynthsink_init)</p>
-<p>[<strong>IDirectMusicSynthSink::SetDirectSound</strong>](audio.idirectmusicsynthsink_setdirectsound)</p></td>
+<td align="left"><p>[<strong>IDirectMusicSynthSink::Activate</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536521)</p>
+<p>[<strong>IDirectMusicSynthSink::GetDesiredBufferSize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536522)</p>
+<p>[<strong>IDirectMusicSynthSink::Init</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536524)</p>
+<p>[<strong>IDirectMusicSynthSink::SetDirectSound</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536527)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Timing</p></td>
-<td align="left"><p>[<strong>IDirectMusicSynthSink::GetLatencyClock</strong>](audio.idirectmusicsynthsink_getlatencyclock)</p>
-<p>[<strong>IDirectMusicSynthSink::RefTimeToSample</strong>](audio.idirectmusicsynthsink_reftimetosample)</p>
-<p>[<strong>IDirectMusicSynthSink::SampleToRefTime</strong>](audio.idirectmusicsynthsink_sampletoreftime)</p>
-<p>[<strong>IDirectMusicSynthSink::SetMasterClock</strong>](audio.idirectmusicsynthsink_setmasterclock)</p></td>
+<td align="left"><p>[<strong>IDirectMusicSynthSink::GetLatencyClock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536523)</p>
+<p>[<strong>IDirectMusicSynthSink::RefTimeToSample</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536525)</p>
+<p>[<strong>IDirectMusicSynthSink::SampleToRefTime</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536526)</p>
+<p>[<strong>IDirectMusicSynthSink::SetMasterClock</strong>](https://msdn.microsoft.com/library/windows/hardware/ff536528)</p></td>
 </tr>
 </tbody>
 </table>
@@ -125,7 +125,7 @@ Additionally, so that the synthesizer can keep track of time appropriately, it p
 
 The wave sink generates the latency clock because it actually manages the times at which samples get written by calls to **IDirectMusicSynth::Render**. When DirectMusic calls **IDirectMusicSynth::GetLatencyClock** on the DirectMusic port, it simply turns around and calls **IDirectMusicSynthSink::GetLatencyClock**.
 
-When a software synthesizer is first opened, DirectMusic gives the synthesizer a DMUS\_PORTPARAMS structure (described in the Microsoft Windows SDK documentation) that specifies the sample rate and number of channels for the audio output stream. The synthesizer then converts these into a standard [**WAVEFORMATEX**](audio.waveformatex) structure that it passes to the wave sink when the wave sink calls the **IDirectMusicSynth::GetFormat** method.
+When a software synthesizer is first opened, DirectMusic gives the synthesizer a DMUS\_PORTPARAMS structure (described in the Microsoft Windows SDK documentation) that specifies the sample rate and number of channels for the audio output stream. The synthesizer then converts these into a standard [**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799) structure that it passes to the wave sink when the wave sink calls the **IDirectMusicSynth::GetFormat** method.
 
 For additional information, see the descriptions of the **IDirectMusic** and **IDirectMusicPort** interfaces in the Windows SDK documentation.
 
@@ -133,8 +133,8 @@ For additional information, see the descriptions of the **IDirectMusic** and **I
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20IDirectMusicSynth%20and%20IDirectMusicSynthSink%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20IDirectMusicSynth%20and%20IDirectMusicSynthSink%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

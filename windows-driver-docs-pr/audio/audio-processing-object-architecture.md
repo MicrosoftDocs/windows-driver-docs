@@ -1,8 +1,7 @@
 ---
-Description: 'Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams.'
-MS-HAID: 'audio.audio\_processing\_object\_architecture'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Audio Processing Object Architecture
+description: Audio processing objects (APOs), provide customizable software based digital signal processing for Windows audio streams.
+ms.assetid: 2F57B4C7-8C83-4DDF-BFAF-B9308752E91D
 ---
 
 # Audio Processing Object Architecture
@@ -33,8 +32,8 @@ Software based effects are inserted in the software device pipe on stream initia
 
 Any effects applied in hardware DSP need to be advertised via a proxy APO. Microsoft provides a default proxy APO (MsApoFxProxy.dll). To use the Microsoft provided APO, this property set and property must be supported.
 
--   [KSPROPSETID\_AudioEffectsDiscovery](audio.kspropsetid_audioeffectsdiscovery)
--   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](audio.ksproperty_audioeffectsdiscovery_effectslist)
+-   [KSPROPSETID\_AudioEffectsDiscovery](https://msdn.microsoft.com/library/windows/hardware/dn457709)
+-   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](https://msdn.microsoft.com/library/windows/hardware/dn457706)
 
 Optionally, you can implement your own proxy APO.
 
@@ -66,15 +65,15 @@ For more information on adding APO dialog panels see, [Implementing a UI for Con
 
 **Custom APO Tests and Requirements**
 
-The Microsoft HLK provides tests that can be used with APOs. For more information about audio tests see, [Device.Audio Testing](https://msdn.microsoft.com/en-us/library/windows/hardware/jj123955.aspx) and [Device.Audio Tests](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124726.aspx).
+The Microsoft HLK provides tests that can be used with APOs. For more information about audio tests see, [Device.Audio Testing](https://msdn.microsoft.com/library/windows/hardware/jj123955.aspx) and [Device.Audio Tests](https://msdn.microsoft.com/library/windows/hardware/jj124726.aspx).
 
 These two tests can be particularly useful when working with APOs.
 
-[Verify Audio EffectsDiscovery (Manual) - Certification](https://msdn.microsoft.com/en-us/library/windows/hardware/dn456312.aspx)
+[Verify Audio EffectsDiscovery (Manual) - Certification](https://msdn.microsoft.com/library/windows/hardware/dn456312.aspx)
 
-[SysFX Test](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124017.aspx)
+[SysFX Test](https://msdn.microsoft.com/library/windows/hardware/jj124017.aspx)
 
-For information on audio requirements to support APOs, see [Device.Audio Requirements](https://msdn.microsoft.com/en-us/library/windows/hardware/jj134354.aspx).
+For information on audio requirements to support APOs, see [Device.Audio Requirements](https://msdn.microsoft.com/library/windows/hardware/jj134354.aspx).
 
 **Custom APO Tools and Utilities**
 
@@ -84,7 +83,7 @@ You can use the "Audio Effects Discovery Sample" to explore the available audio 
 
 **Application Audio Effect Awareness**
 
-Applications have the ability to call APIs to determine which audio effects are currently active on the system. For more information on the audio effects awareness APIs, see [AudioRenderEffectsManager class](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.effects.audiorendereffectsmanager.aspx).
+Applications have the ability to call APIs to determine which audio effects are currently active on the system. For more information on the audio effects awareness APIs, see [AudioRenderEffectsManager class](https://msdn.microsoft.com/library/windows/apps/windows.media.effects.audiorendereffectsmanager.aspx).
 
 ## <span id="Audio_Processing_Objects_Architecture"></span><span id="audio_processing_objects_architecture"></span><span id="AUDIO_PROCESSING_OBJECTS_ARCHITECTURE"></span>Audio Processing Objects Architecture
 
@@ -141,10 +140,19 @@ This diagram illustrates a DSP equipped system that implements effects in hardwa
 ![diagram that shows a dsp equipped system that implements effects in hardware.](images/audio-apo-dsp-equipped-system-with-hardware-effects-3.png)
 
 ## <span id="related_topics"></span>Related topics
-[Windows Audio Processing Objects](windows-audio-processing-objects.md)  
-[Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md)  
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Processing%20Object%20Architecture%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
+[Windows Audio Processing Objects](windows-audio-processing-objects.md)
+
+[Implementing a UI for Configuring APO Effects](implementing-a-ui-for-configuring-apo-effects.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Processing%20Object%20Architecture%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
 
 

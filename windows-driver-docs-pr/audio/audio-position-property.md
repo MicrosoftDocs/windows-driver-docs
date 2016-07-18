@@ -1,20 +1,20 @@
 ---
-Description: Audio Position Property
-MS-HAID: 'audio.audio\_position\_property'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Audio Position Property
+description: Audio Position Property
+ms.assetid: 893fea84-9136-4107-96d2-8a4e2ab7bd2a
+keywords: ["play position WDK audio", "record position WDK audio", "audio properties WDK , position in stream", "WDM audio properties WDK , position in stream", "read position WDK audio", "write position WDK audio", "looped client buffers WDK audio", "nonlooped client buffers WDK audio", "client buffers WDK audio", "stream positions WDK audio", "position properties WDK audio", "capture stream position WDK audio", "port drivers WDK audio , position properties"]
 ---
 
 # Audio Position Property
 
 
-The client of an audio driver uses the [**KSPROPERTY\_AUDIO\_POSITION**](audio.ksproperty_audio_position) property to get and set the current position in an audio stream. The property uses a [**KSAUDIO\_POSITION**](audio.ksaudio_position) structure to describe the current position. The structure contains two members: **PlayOffset** and **WriteOffset**.
+The client of an audio driver uses the [**KSPROPERTY\_AUDIO\_POSITION**](https://msdn.microsoft.com/library/windows/hardware/ff537297) property to get and set the current position in an audio stream. The property uses a [**KSAUDIO\_POSITION**](https://msdn.microsoft.com/library/windows/hardware/ff537091) structure to describe the current position. The structure contains two members: **PlayOffset** and **WriteOffset**.
 
 The **PlayOffset** and **WriteOffset** members define the boundaries of the region of the client buffer that is currently reserved for the exclusive use of the audio device. The client must assume that the device might currently be accessing any of the data contained in this region. Hence, the client must access only the portions of the buffer that lie outside this region. The boundaries of the region move as the stream advances.
 
-If the client buffer is looped (that is, the stream type is [**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](stream.ksinterface_standard_looped_streaming)), **PlayOffset** and **WriteOffset** are buffer-relative offsets. That is, they are specified as byte offsets from the start of the looped client buffer. When either offset increments to the end of the buffer, it wraps around to the start of the buffer. (The offset at the start of the buffer is zero.) Thus, neither offset ever exceeds the buffer size.
+If the client buffer is looped (that is, the stream type is [**KSINTERFACE\_STANDARD\_LOOPED\_STREAMING**](https://msdn.microsoft.com/library/windows/hardware/ff563381)), **PlayOffset** and **WriteOffset** are buffer-relative offsets. That is, they are specified as byte offsets from the start of the looped client buffer. When either offset increments to the end of the buffer, it wraps around to the start of the buffer. (The offset at the start of the buffer is zero.) Thus, neither offset ever exceeds the buffer size.
 
-If the client buffer is nonlooped (that is, the stream type is [**KSINTERFACE\_STANDARD\_STREAMING**](stream.ksinterface_standard_streaming)), **PlayOffset** and **WriteOffset** are stream-relative offsets. That is, they are specified as byte offsets from the start of the stream. These offsets can be thought of as offsets into an idealized buffer that contains the entire stream and is contiguous from beginning to end.
+If the client buffer is nonlooped (that is, the stream type is [**KSINTERFACE\_STANDARD\_STREAMING**](https://msdn.microsoft.com/library/windows/hardware/ff563384)), **PlayOffset** and **WriteOffset** are stream-relative offsets. That is, they are specified as byte offsets from the start of the stream. These offsets can be thought of as offsets into an idealized buffer that contains the entire stream and is contiguous from beginning to end.
 
 In the case of a render stream, the **PlayOffset** member specifies the play position of the stream, and the **WriteOffset** member specifies the write position of the stream. The following figure shows the play and write positions in a client buffer.
 
@@ -26,11 +26,11 @@ Although the WaveCyclic or WavePci port driver relies on the miniport driver to 
 
 -   **WaveCyclic**
 
-    Each time the WaveCyclic port driver calls [**IDmaChannel::CopyTo**](audio.idmachannel_copyto) to copy a new block of data to the cyclic buffer (from the client buffer), the write position advances to the location (in the client buffer) of the last byte in the data block.
+    Each time the WaveCyclic port driver calls [**IDmaChannel::CopyTo**](https://msdn.microsoft.com/library/windows/hardware/ff536558) to copy a new block of data to the cyclic buffer (from the client buffer), the write position advances to the location (in the client buffer) of the last byte in the data block.
 
 -   **WavePci**
 
-    By default, each time the WavePci miniport driver calls [**IPortWavePciStream::GetMapping**](audio.iportwavepcistream_getmapping) to acquire a new mapping (of a portion of the client buffer) and the call succeeds, the write position advances to the location (in the client buffer) of the last byte in the new mapping.
+    By default, each time the WavePci miniport driver calls [**IPortWavePciStream::GetMapping**](https://msdn.microsoft.com/library/windows/hardware/ff536909) to acquire a new mapping (of a portion of the client buffer) and the call succeeds, the write position advances to the location (in the client buffer) of the last byte in the new mapping.
 
     If the WavePci miniport driver overrides the default behavior by specifying a prefetch offset to the port driver, the current write position is always equal to the sum of the current play position and the prefetch offset. For more information, see [Prefetch Offsets](prefetch-offsets.md).
 
@@ -44,13 +44,13 @@ Although the WaveCyclic or WavePci port driver relies on the miniport driver to 
 
 -   **WaveCyclic**
 
-    Each time the WaveCyclic port driver calls [**IDmaChannel::CopyFrom**](audio.idmachannel_copyfrom) to copy a new block of data from the cyclic buffer (to the client buffer), the read position advances to the location (in the client buffer) of the last byte in the data block.
+    Each time the WaveCyclic port driver calls [**IDmaChannel::CopyFrom**](https://msdn.microsoft.com/library/windows/hardware/ff536557) to copy a new block of data from the cyclic buffer (to the client buffer), the read position advances to the location (in the client buffer) of the last byte in the data block.
 
 -   **WavePci**
 
-    Each time the WavePci miniport driver calls [**IPortWavePciStream::ReleaseMapping**](audio.iportwavepcistream_releasemapping) to release a previously acquired mapping (of a portion of the client buffer), the read position advances to the location (in the client buffer) of the last byte in the released mapping.
+    Each time the WavePci miniport driver calls [**IPortWavePciStream::ReleaseMapping**](https://msdn.microsoft.com/library/windows/hardware/ff536911) to release a previously acquired mapping (of a portion of the client buffer), the read position advances to the location (in the client buffer) of the last byte in the released mapping.
 
-Miniport drivers do not need to implement handler routines for KSPROPERTY\_AUDIO\_POSITION property requests. Instead, the WaveCyclic and WavePci port drivers handle these requests on behalf of miniport drivers. When handling a get-property request, a WaveCyclic or WavePci port driver already has all the information it needs to calculate the **WriteOffset** value, but it still needs information from the miniport driver to calculate the **PlayOffset** value. To obtain this information, the port driver calls the miniport driver's [**IMiniportWaveCyclicStream::GetPosition**](audio.iminiportwavecyclicstream_getposition) or [**IMiniportWavePciStream::GetPosition**](audio.iminiportwavepcistream_getposition) method.
+Miniport drivers do not need to implement handler routines for KSPROPERTY\_AUDIO\_POSITION property requests. Instead, the WaveCyclic and WavePci port drivers handle these requests on behalf of miniport drivers. When handling a get-property request, a WaveCyclic or WavePci port driver already has all the information it needs to calculate the **WriteOffset** value, but it still needs information from the miniport driver to calculate the **PlayOffset** value. To obtain this information, the port driver calls the miniport driver's [**IMiniportWaveCyclicStream::GetPosition**](https://msdn.microsoft.com/library/windows/hardware/ff536716) or [**IMiniportWavePciStream::GetPosition**](https://msdn.microsoft.com/library/windows/hardware/ff536727) method.
 
 For a render stream, the **GetPosition** method retrieves the play position - the byte offset of the sample that is currently being played through the DAC. For a capture stream, the **GetPosition** method retrieves the record position - the byte offset of the latest sample to be captured by the ADC.
 
@@ -64,7 +64,7 @@ The **IMiniportWaveCyclicStream::GetPosition** method always reports a buffer-re
 
 The **IMiniportWavePciStream::GetPosition** method always reports a stream-relative play or record position regardless of whether the client buffer is looped or nonlooped. If the client buffer is looped, the property handler converts the stream-relative play position to a buffer-relative play position (expressed as an offset into the client buffer) before writing it to the **PlayOffset** member in the KSAUDIO\_POSITION structure in the property request. If the client buffer is nonlooped, the property handler writes the stream-relative position to the **PlayOffset** member.
 
-The play or record position is zero immediately following initialization of the stream. A transition to the KSSTATE\_STOP state (see [**KSSTATE**](stream.ksstate)) resets the position to zero. When the stream is halted by a transition from KSSTATE\_RUN to KSSTATE\_PAUSE or KSSTATE\_ACQUIRE, the position freezes. It unfreezes when the stream transitions from KSSTATE\_PAUSE or KSSTATE\_ACQUIRE back to KSSTATE\_RUN.
+The play or record position is zero immediately following initialization of the stream. A transition to the KSSTATE\_STOP state (see [**KSSTATE**](https://msdn.microsoft.com/library/windows/hardware/ff566856)) resets the position to zero. When the stream is halted by a transition from KSSTATE\_RUN to KSSTATE\_PAUSE or KSSTATE\_ACQUIRE, the position freezes. It unfreezes when the stream transitions from KSSTATE\_PAUSE or KSSTATE\_ACQUIRE back to KSSTATE\_RUN.
 
 For example implementations of **GetPosition** methods for WaveCyclic and WavePci miniport drivers, see the sample audio drivers in the Windows Driver Kit (WDK).
 
@@ -72,8 +72,8 @@ For example implementations of **GetPosition** methods for WaveCyclic and WavePc
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Position%20Property%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Position%20Property%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

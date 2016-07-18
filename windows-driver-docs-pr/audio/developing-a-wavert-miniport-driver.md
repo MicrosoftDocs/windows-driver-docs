@@ -1,8 +1,7 @@
 ---
-Description: Developing a WaveRT Miniport Driver
-MS-HAID: 'audio.developing\_a\_wavert\_miniport\_driver'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Developing a WaveRT Miniport Driver
+description: Developing a WaveRT Miniport Driver
+ms.assetid: d2d37c9e-fbfb-4bf3-bd7d-c8e19070a3f1
 ---
 
 # Developing a WaveRT Miniport Driver
@@ -24,7 +23,7 @@ For information on the sample driver, see [Sample Audio Drivers](sample-audio-dr
 
 After you review the sample adapter driver and start to design your WaveRT miniport driver, you must verify that it supports the following software and hardware features. As a result, the miniport driver that you build then becomes compatible with the system-supplied WaveRT port driver and with the mode of operation of the Windows Vista [audio engine](exploring-the-windows-vista-audio-engine.md).
 
--   **Low hardware latency.** A WaveRT miniport driver must provide a fully functioning implementation of the [**IMiniportWaveRTStream::GetHWLatency**](audio.iminiportwavertstream_gethwlatency) method. This method is necessary to support the [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](audio.ksproperty_rtaudio_hwlatency) property.
+-   **Low hardware latency.** A WaveRT miniport driver must provide a fully functioning implementation of the [**IMiniportWaveRTStream::GetHWLatency**](https://msdn.microsoft.com/library/windows/hardware/ff536747) method. This method is necessary to support the [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](https://msdn.microsoft.com/library/windows/hardware/ff537378) property.
 
 -   **FIFO interrupts.** A WaveRT miniport driver must automatically generate interrupts when FIFO overruns and underruns occur. This feature allows the detection of glitches in the audio stream when you run tests on the audio device and driver software. Without hardware support (in other words, FIFO interrupts), no convenient and reliable method exists for obtaining glitch information.
 
@@ -48,7 +47,7 @@ After you review the sample adapter driver and start to design your WaveRT minip
 
     After obtaining a reading from this type of position register, the client can estimate the current position of the samples that are moving through the DACs or ADCs by adding or subtracting the delay through the codec. The client obtains the codec delay from the **KSPROPERTY\_RTAUDIO\_HWLATENCY** property request. For this reason, a WaveRT miniport driver must accurately report the codec delay when the port driver calls the **IMiniportWaveRTStream::GetHardwareLatency** method in response to this type of property request.
 
-    Note that the WaveRT port driver supports existing hardware designs that lack position registers. For a device with this limitation, the WaveRT miniport driver must fail calls to the [**IMiniportWaveRTStream::GetPositionRegister**](audio.iminiportwavertstream_getpositionregister) method by returning the **STATUS\_NOT\_SUPPORTED** error code, which forces the port driver to fail [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](audio.ksproperty_rtaudio_positionregister) property requests. In this case, clients must obtain the current position through the [**KSPROPERTY\_AUDIO\_POSITION**](audio.ksproperty_audio_position) property, which incurs the overhead of a transition between user mode and kernel mode for each position reading.
+    Note that the WaveRT port driver supports existing hardware designs that lack position registers. For a device with this limitation, the WaveRT miniport driver must fail calls to the [**IMiniportWaveRTStream::GetPositionRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536752) method by returning the **STATUS\_NOT\_SUPPORTED** error code, which forces the port driver to fail [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](https://msdn.microsoft.com/library/windows/hardware/ff537381) property requests. In this case, clients must obtain the current position through the [**KSPROPERTY\_AUDIO\_POSITION**](https://msdn.microsoft.com/library/windows/hardware/ff537297) property, which incurs the overhead of a transition between user mode and kernel mode for each position reading.
 
 -   **Clock Register.** A clock register is an optional but useful hardware feature for a WaveRT-compatible audio device. Audio application programs can use clock registers to synchronize audio streams in two or more independent audio devices that have separate and unsynchronized hardware clocks. Without clock registers, an application is unable to detect and compensate for the drift between the hardware clocks.
 
@@ -80,8 +79,8 @@ After you review the sample adapter driver and start to design your WaveRT minip
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Developing%20a%20WaveRT%20Miniport%20Driver%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Developing%20a%20WaveRT%20Miniport%20Driver%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

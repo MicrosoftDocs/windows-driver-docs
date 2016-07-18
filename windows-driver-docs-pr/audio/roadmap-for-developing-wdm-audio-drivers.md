@@ -1,8 +1,7 @@
 ---
-Description: Roadmap for Developing WDM Audio Drivers
-MS-HAID: 'audio.roadmap\_for\_developing\_wdm\_audio\_drivers'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Roadmap for Developing WDM Audio Drivers
+description: Roadmap for Developing WDM Audio Drivers
+ms.assetid: fa75ff65-32fe-4002-89fd-bf345502a9ac
 ---
 
 # Roadmap for Developing WDM Audio Drivers
@@ -14,11 +13,11 @@ To create a WDM audio driver, perform the following steps:
 
 1.  **Learn about Windows architecture and drivers.**
 
-    You must understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help you make appropriate design decisions and allow you to streamline your development process. See [Concepts for all driver developers](wdkgetstart.concepts_and_knowledge_for_all_driver_developers).
+    You must understand the fundamentals of how drivers work in Windows operating systems. Knowing the fundamentals will help you make appropriate design decisions and allow you to streamline your development process. See [Concepts for all driver developers](https://msdn.microsoft.com/library/windows/hardware/ff554731).
 
 2.  **Learn the fundamentals of WDM audio drivers.**
 
-    Audio drivers in the Windows operating system versions from Windows XP to Windows Vista conform to WDM and use the kernel streaming components. To understand the driver design decisions that you must make, see [Kernel Streaming](stream.kernel_streaming), [WDM Audio Drivers Overview](getting-started-with-wdm-audio-drivers.md) and [Introduction to WDM Audio Drivers](introduction-to-wdm-audio-drivers.md).
+    Audio drivers in the Windows operating system versions from Windows XP to Windows Vista conform to WDM and use the kernel streaming components. To understand the driver design decisions that you must make, see [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842), [WDM Audio Drivers Overview](getting-started-with-wdm-audio-drivers.md) and [Introduction to WDM Audio Drivers](introduction-to-wdm-audio-drivers.md).
 
 3.  **Determine additional WDM audio driver design decisions.**
 
@@ -30,7 +29,7 @@ To create a WDM audio driver, perform the following steps:
 
 5.  **Learn about the Windows driver build, test, and debug processes and tools.**
 
-    Building a driver is not the same as building a user-mode application. See [Developing, Testing, and Deploying Drivers](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment) for information about Windows driver build, debug, and test processes, and driver signing. See [Driver Development Tools](devtest.driver_development_tools) for information about building, testing, verifying, and debugging tools.
+    Building a driver is not the same as building a user-mode application. See [Developing, Testing, and Deploying Drivers](https://msdn.microsoft.com/windows-drivers/develop/visual_studio_driver_development_environment) for information about Windows driver build, debug, and test processes, and driver signing. See [Driver Development Tools](https://msdn.microsoft.com/library/windows/hardware/ff545440) for information about building, testing, verifying, and debugging tools.
 
 6.  **Review audio driver samples in the WDK.**
 
@@ -58,8 +57,8 @@ These are the basic steps. Additional steps might be necessary based on the need
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Roadmap%20for%20Developing%20WDM%20Audio%20Drivers%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Roadmap%20for%20Developing%20WDM%20Audio%20Drivers%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

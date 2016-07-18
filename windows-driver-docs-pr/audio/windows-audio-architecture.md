@@ -1,8 +1,7 @@
 ---
-Description: 'This topic provided a high level summary of the Windows 10 audio architecture.'
-MS-HAID: 'audio.windows\_audio\_architecture'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Windows Audio Architecture
+description: This topic provided a high level summary of the Windows 10 audio architecture.
+ms.assetid: 1FC95504-18AA-4F3B-8E96-005276699694
 ---
 
 # Windows Audio Architecture
@@ -24,35 +23,35 @@ This diagram provides a summary of the major elements of the Windows 10 audio st
 
 The top level APIs are used for application development. These APIs are in currently in use and supported.
 
--   XAML [MediaElement class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.mediaelement)(C\#, VB, C++)
--   HTML [Audio object](wwa.mdlaudioobject) and [Video object](wwa.mdlvideoobject)&lt;tags&gt; (used by websites and Windows Web Apps)
--   [Windows.Media.Capture namespace](https://msdn.microsoft.com/library/windows/apps/xaml/windows.media.capture) (C\#, VB, C++)
--   [Microsoft Media Foundation](mf.microsoft_media_foundation_sdk) (C++)
+-   XAML [MediaElement class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.mediaelement)(C#, VB, C++)
+-   HTML [Audio object](https://msdn.microsoft.com/library/windows/apps/hh767373.aspx) and [Video object](https://msdn.microsoft.com/library/windows/apps/hh767390.aspx)&lt;tags&gt; (used by websites and Windows Web Apps)
+-   [Windows.Media.Capture namespace](https://msdn.microsoft.com/library/windows/apps/xaml/windows.media.capture) (C#, VB, C++)
+-   [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) (C++)
 
 These older APIs are deprecated.
 
--   [DirectShow](dshow.directshow)
+-   [DirectShow](https://msdn.microsoft.com/library/windows/desktop/dd375454)
 -   [DirectSound](dx_playing_sounds_entry)
--   [PlaySound](multimedia.playsound)
--   [Windows.Media.MediaControlContract](m_dvcfamref.windows_media_mediacontrolcontract)
+-   [PlaySound](https://msdn.microsoft.com/library/windows/desktop/dd743680)
+-   [Windows.Media.MediaControlContract](https://msdn.microsoft.com/library/windows/apps/dn706169)
 
 **Low level APIs**
 
 These lower level APIs are recommended for audio streaming.
 
--   [WASAPI](coreaudio.wasapi) (High performance, but more complicated)
--   [IXAudio2](xaudio2.ixaudio2) (Typically used for games)
--   [MIDI](multimedia.about_midi)
+-   [WASAPI](https://msdn.microsoft.com/library/windows/desktop/dd371455) (High performance, but more complicated)
+-   [IXAudio2](https://msdn.microsoft.com/library/windows/desktop/ee415908) (Typically used for games)
+-   [MIDI](https://msdn.microsoft.com/library/windows/desktop/dd742875)
 
 This lower level API is recommended for enumeration.
 
--   [Windows.Devices.Enumeration](w_dvc_enum.windows_devices_enumeration)
+-   [Windows.Devices.Enumeration](https://msdn.microsoft.com/library/windows/apps/br225459)
 
 These APIs are not recommended for Windows applications.
 
--   [About MMDevice API](coreaudio.mmdevice_api) (replaced by Windows.Devices.Enumeration)
--   [DeviceTopology API](coreaudio.devicetopology_api)
--   [EndpointVolume API](coreaudio.endpointvolume_api)
+-   [About MMDevice API](https://msdn.microsoft.com/library/windows/desktop/dd316556) (replaced by Windows.Devices.Enumeration)
+-   [DeviceTopology API](https://msdn.microsoft.com/library/windows/desktop/dd370809)
+-   [EndpointVolume API](https://msdn.microsoft.com/library/windows/desktop/dd370832)
 
 ## <span id="Audio_Engine"></span><span id="audio_engine"></span><span id="AUDIO_ENGINE"></span>Audio Engine
 
@@ -104,8 +103,8 @@ The audio hardware that is present on any give device varies but can include:
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Windows%20Audio%20Architecture%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Windows%20Audio%20Architecture%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

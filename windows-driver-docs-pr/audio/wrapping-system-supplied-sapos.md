@@ -1,8 +1,7 @@
 ---
-Description: 'Wrapping System-supplied sAPOs'
-MS-HAID: 'audio.wrapping\_system\_supplied\_sapos'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Wrapping System-supplied sAPOs'
+title: Wrapping System-supplied sAPOs
+description: Wrapping System-supplied sAPOs
+ms.assetid: fcde6de0-921c-4c73-8e4d-941a447d35af
 ---
 
 # Wrapping System-supplied sAPOs
@@ -11,9 +10,9 @@ title: 'Wrapping System-supplied sAPOs'
 ## <span id="Implementing_your_own_sAPO"></span><span id="implementing_your_own_sapo"></span><span id="IMPLEMENTING_YOUR_OWN_SAPO"></span>Implementing your own sAPO
 
 
-You can wrap a system-supplied sAPO by basing your custom class on the **CBaseAudioProcessingObject** base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves introducing new functionality into the **CBaseAudioProcessingObject** base class to create a customized sAPO. The **CBaseAudioProcessingObject** base class implements much of the functionality that an sAPO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](audio.iaudioprocessingobjectrt_apoprocess) method.
+You can wrap a system-supplied sAPO by basing your custom class on the **CBaseAudioProcessingObject** base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves introducing new functionality into the **CBaseAudioProcessingObject** base class to create a customized sAPO. The **CBaseAudioProcessingObject** base class implements much of the functionality that an sAPO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506) method.
 
-By using **CBaseAudioProcessingObject**, you can more easily implement an sAPO. If an sAPO has no special format requirements and operates on the default float32 format, the default implementations of the interface methods that are included in **CBaseAudioProcessingObject** should be sufficient. Given the default implementations, only three main methods must be implemented: [**IAudioProcessingObject::IsInputFormatSupported**](audio.iaudioprocessingobject_isinputformatsupported), [**IAudioProcessingObjectRT::APOProcess**](audio.iaudioprocessingobjectrt_apoprocess), and **ValidateAndCacheConnectionInfo**.
+By using **CBaseAudioProcessingObject**, you can more easily implement an sAPO. If an sAPO has no special format requirements and operates on the default float32 format, the default implementations of the interface methods that are included in **CBaseAudioProcessingObject** should be sufficient. Given the default implementations, only three main methods must be implemented: [**IAudioProcessingObject::IsInputFormatSupported**](https://msdn.microsoft.com/library/windows/hardware/ff536511), [**IAudioProcessingObjectRT::APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506), and **ValidateAndCacheConnectionInfo**.
 
 To develop your sAPOs based on the **CBaseAudioProcessingObject** class, perform the following steps:
 
@@ -37,13 +36,13 @@ To develop your sAPOs based on the **CBaseAudioProcessingObject** class, perform
 
 2.  Implement the following three methods:
 
-    -   [**IAudioProcessingObject::IsInputFormatSupported**](audio.iaudioprocessingobject_isinputformatsupported). This method handles format negotiation with the audio engine.
+    -   [**IAudioProcessingObject::IsInputFormatSupported**](https://msdn.microsoft.com/library/windows/hardware/ff536511). This method handles format negotiation with the audio engine.
 
-    -   [**IAudioProcessingObjectRT::APOProcess**](audio.iaudioprocessingobjectrt_apoprocess). This method uses your custom algorithm to perform signal processing.
+    -   [**IAudioProcessingObjectRT::APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506). This method uses your custom algorithm to perform signal processing.
 
     -   **ValidateAndCacheConnectionInfo**. This method allocates memory to store format details, for example, channel count, sampling rate, sample depth, and channel mask.
 
-The following C++ code example shows an implementation of the [**APOProcess**](audio.iaudioprocessingobjectrt_apoprocess) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
+The following C++ code example shows an implementation of the [**APOProcess**](https://msdn.microsoft.com/library/windows/hardware/ff536506) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
 
 ```
 // Custom implementation of APOProcess method
@@ -88,8 +87,8 @@ The Swap sample is the sample that was developed to illustrate some features of 
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Wrapping%20System-supplied%20sAPOs%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Wrapping%20System-supplied%20sAPOs%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

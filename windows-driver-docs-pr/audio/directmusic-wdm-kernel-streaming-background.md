@@ -1,8 +1,8 @@
 ---
-Description: DirectMusic WDM Kernel Streaming Background
-MS-HAID: 'audio.directmusic\_wdm\_kernel\_streaming\_background'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: DirectMusic WDM Kernel Streaming Background
+description: DirectMusic WDM Kernel Streaming Background
+ms.assetid: 851fa156-590a-43fb-9c49-df528f0ea608
+keywords: ["DirectMusic kernel-mode WDK audio , WDM kernel streaming", "kernel-mode synths WDK audio , WDM kernel streaming", "WDM kernel streaming WDK audio", "kernel streaming WDK audio", "port drivers WDK audio , synthesizers", "hardware acceleration WDK audio", "miniport drivers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , kernel-mode hardware acceleration"]
 ---
 
 # DirectMusic WDM Kernel Streaming Background
@@ -11,7 +11,7 @@ title: DirectMusic WDM Kernel Streaming Background
 ## <span id="directmusic_wdm_kernel_streaming_background"></span><span id="DIRECTMUSIC_WDM_KERNEL_STREAMING_BACKGROUND"></span>
 
 
-This section may be useful for driver writers who are new to DirectMusic and WDM kernel streaming, or to anyone who wants a brief overview of kernel-mode architecture. Experienced WDM audio driver writers might want to skip to [Synthesizer Miniport Driver Overview](synthesizer-miniport-driver-overview.md). For a more general introduction to kernel streaming, see [Kernel Streaming](stream.kernel_streaming).
+This section may be useful for driver writers who are new to DirectMusic and WDM kernel streaming, or to anyone who wants a brief overview of kernel-mode architecture. Experienced WDM audio driver writers might want to skip to [Synthesizer Miniport Driver Overview](synthesizer-miniport-driver-overview.md). For a more general introduction to kernel streaming, see [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842).
 
 Historically, there were two types of drivers for Windows:
 
@@ -21,7 +21,7 @@ Historically, there were two types of drivers for Windows:
 
 Windows 98/Me contains ntkern.vxd, which has all the NT kernel services and allows most NT drivers to run on Windows 98/Me. WDM drivers use the NT driver environment for cross-platform compatibility. They also implement power management and Plug and Play.
 
-WDM kernel streaming architecture had its roots in ActiveMovie (which became DirectShow), where the concept of filter chains was used for streaming media. Each filter in the chain could be a user-mode filter, a piece of user-mode code that served as a proxy for a kernel-mode filter, or even a piece of user-mode code that was marshaling a piece of hardware (see [Using AVStream with the Kernel Streaming Proxy Module](stream.using_avstream_with_the_kernel_streaming_proxy_module)). This architecture was brought into the Windows 2000 kernel to create kernel streaming.
+WDM kernel streaming architecture had its roots in ActiveMovie (which became DirectShow), where the concept of filter chains was used for streaming media. Each filter in the chain could be a user-mode filter, a piece of user-mode code that served as a proxy for a kernel-mode filter, or even a piece of user-mode code that was marshaling a piece of hardware (see [Using AVStream with the Kernel Streaming Proxy Module](https://msdn.microsoft.com/library/windows/hardware/ff568671)). This architecture was brought into the Windows 2000 kernel to create kernel streaming.
 
 The "pin" terminology comes originally from Microsoft DirectAnimation and DirectShow. A pin is now a kernel-streaming term for a target that can be used to connect one filter with another. For example, when there are two filters--the first with an "out" pin and the second with an "in" pin--the pins can be connected so that the first filter can pass a stream of data to the second filter. For more information, see [Audio Filter Graphs](audio-filter-graphs.md).
 
@@ -43,18 +43,18 @@ Microsoft provides standard miniport driver functionality for all MPUs. Because 
 
 The built-in miniport drivers in PortCls only attached to the MIDI port driver, so DirectMusic introduced the DMus port driver to attach to a DMus miniport driver. The DMus port driver handles MIDI sequencing and other functions for DirectMusic and manages MIDI, wave, and downloadable sounds (DLS) data. The sample MPU-401 adapter driver in the Windows Driver Kit (WDK) uses the DMus port driver and one of the DMus miniport drivers that are built into PortCls.
 
-If all you need is MPU-401 functionality, use the built-in mpu401.sys miniport driver, which ships with the WDK. Just bind it to the DMus port driver and set an IRQ. Previously, this driver referenced the built-in interfaces that were identified by the **IID\_IPortMidi** (the MIDI port driver in PortCls) and **IID\_IMiniportDriverUart** (the MPU-401 miniport driver that is built into PortCls) class GUIDs (see [**PcNewPort**](audio.pcnewport) and [**PcNewMiniport**](audio.pcnewminiport)). Now, the mpu401.sys driver references the **CLSID\_PortDMus** and **CLSID\_MiniportDriverDMusUART** GUIDs so that it can support DirectMusic.
+If all you need is MPU-401 functionality, use the built-in mpu401.sys miniport driver, which ships with the WDK. Just bind it to the DMus port driver and set an IRQ. Previously, this driver referenced the built-in interfaces that were identified by the **IID\_IPortMidi** (the MIDI port driver in PortCls) and **IID\_IMiniportDriverUart** (the MPU-401 miniport driver that is built into PortCls) class GUIDs (see [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) and [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714)). Now, the mpu401.sys driver references the **CLSID\_PortDMus** and **CLSID\_MiniportDriverDMusUART** GUIDs so that it can support DirectMusic.
 
 When the DMus port driver receives MIDI data, it routes the data to the sequencer, which sorts each note on the basis of its time stamp. When the note is due, the sequencer passes it down to the miniport driver. The miniport driver implementation can specify how far in advance it wants to prefetch these notes.
 
-When the DMus port driver receives a property-request containing DLS data (see [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](audio.ksproperty_synth_dls_download)), it routes the request directly to the miniport driver. Because these are just sounds that can be played, there is no need to involve the sequencer or wave sink when they are downloaded.
+When the DMus port driver receives a property-request containing DLS data (see [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff537396)), it routes the request directly to the miniport driver. Because these are just sounds that can be played, there is no need to involve the sequencer or wave sink when they are downloaded.
 
  
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DirectMusic%20WDM%20Kernel%20Streaming%20Background%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DirectMusic%20WDM%20Kernel%20Streaming%20Background%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

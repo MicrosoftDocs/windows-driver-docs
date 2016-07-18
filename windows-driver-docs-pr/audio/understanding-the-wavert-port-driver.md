@@ -1,8 +1,7 @@
 ---
-Description: Understanding the WaveRT Port Driver
-MS-HAID: 'audio.understanding\_the\_wavert\_port\_driver'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Understanding the WaveRT Port Driver
+description: Understanding the WaveRT Port Driver
+ms.assetid: 2627615a-3fde-4ed6-9f7f-f6d7e5d82b3b
 ---
 
 # Understanding the WaveRT Port Driver
@@ -12,7 +11,7 @@ The WaveRT port driver combines the simplicity of the previous WaveCyclic port d
 
 The WaveRT port driver eliminates the need to continually map and copy audio data by providing its main client (typically, the audio engine) with direct access to the data buffer. This direct access also eliminates the need for the driver to manipulate the data in the audio stream. The WaveRT port driver thus accommodates the needs of the direct memory access (DMA) controllers that some audio devices have.
 
-To distinguish itself from other wave-render and wave-capture devices, the WaveRT port driver registers itself under [**KSCATEGORY\_REALTIME**](devinst.kscategory_realtime) in addition to [**KSCATEGORY\_AUDIO**](devinst.kscategory_audio), [**KSCATEGORY\_RENDER**](devinst.kscategory_render) and [**KSCATEGORY\_CAPTURE**](devinst.kscategory_capture). This self-registration occurs during the installation of the adapter driver.
+To distinguish itself from other wave-render and wave-capture devices, the WaveRT port driver registers itself under [**KSCATEGORY\_REALTIME**](https://msdn.microsoft.com/library/windows/hardware/ff548485) in addition to [**KSCATEGORY\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff548261), [**KSCATEGORY\_RENDER**](https://msdn.microsoft.com/library/windows/hardware/ff548493) and [**KSCATEGORY\_CAPTURE**](https://msdn.microsoft.com/library/windows/hardware/ff548325). This self-registration occurs during the installation of the adapter driver.
 
 In Windows Vista and later operating systems, when the operating system starts and the audio engine is initialized, the audio engine enumerates the KS filters that represent the audio devices. During the enumeration, the audio engine instantiates the drivers for the audio devices that it finds. This process results in the creation of filter objects for these devices. For WaveRT audio devices, the resulting filter object has the following components:
 
@@ -24,7 +23,7 @@ After the filter object is created, the audio engine and the WaveRT miniport dri
 
 1.  The audio engine opens a pin on the KS filter, and the WaveRT miniport driver creates an instance of the pin. When the audio engine opens the pin, it also passes the wave format of the stream to the driver. The driver uses the wave format information to select the proper buffer size in the next step.
 
-2.  The audio engine sends a request to the miniport driver for a cyclic buffer of a particular size to be created. The term *cyclic buffer* refers to the fact that when the buffer position register reaches the end of the buffer in a playback or record operation, the position register can automatically wrap around to the beginning of the buffer. Unlike the WaveCyclic miniport driver that sets up a contiguous block of physical memory, the WaveRT miniport driver does not need a buffer that is contiguous in physical memory. The driver uses the [**KSPROPERTY\_RTAUDIO\_BUFFER**](audio.ksproperty_rtaudio_buffer) property to allocate space for the buffer. If the hardware of the audio device cannot stream from a buffer of the requested size, the driver works within the resource limitations of the audio device to create a buffer that is the closest in size to the originally requested size. The driver then maps the buffer into the DMA engine of the audio device and makes the buffer accessible to the audio engine in user-mode.
+2.  The audio engine sends a request to the miniport driver for a cyclic buffer of a particular size to be created. The term *cyclic buffer* refers to the fact that when the buffer position register reaches the end of the buffer in a playback or record operation, the position register can automatically wrap around to the beginning of the buffer. Unlike the WaveCyclic miniport driver that sets up a contiguous block of physical memory, the WaveRT miniport driver does not need a buffer that is contiguous in physical memory. The driver uses the [**KSPROPERTY\_RTAUDIO\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff537370) property to allocate space for the buffer. If the hardware of the audio device cannot stream from a buffer of the requested size, the driver works within the resource limitations of the audio device to create a buffer that is the closest in size to the originally requested size. The driver then maps the buffer into the DMA engine of the audio device and makes the buffer accessible to the audio engine in user-mode.
 
 3.  The audio engine schedules a thread to periodically write audio data to the cyclic buffer.
 
@@ -48,8 +47,8 @@ For information about how to develop a WaveRT miniport driver that complements t
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Understanding%20the%20WaveRT%20Port%20Driver%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Understanding%20the%20WaveRT%20Port%20Driver%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

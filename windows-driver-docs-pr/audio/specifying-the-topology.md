@@ -1,8 +1,8 @@
 ---
-Description: Specifying the Topology
-MS-HAID: 'audio.specifying\_the\_topology'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Specifying the Topology
+description: Specifying the Topology
+ms.assetid: 265cbd87-d40f-4ead-ba6e-a1cef51baf95
+keywords: ["WDM audio drivers WDK , topology", "audio drivers WDK , topology", "topology WDK audio", "KS topology WDK audio", "kernel streaming topology WDK audio", "PortCls WDK audio , topology", "port drivers WDK audio , topology", "Topology port driver WDK audio", "audio mixing topology WDK audio", "KS pins WDK audio , topology", "KS filters WDK audio , topology", "filters WDK audio , KS", "pins WDK audio , KS", "audio adapters WDK , topology", "bridge pins WDK audio", "KS properties WDK audio", "property requests WDK audio", "PCM wave output WDK audio", "S/PDIF pass-through WDK audio", "mixing audio WDK"]
 ---
 
 # Specifying the Topology
@@ -12,7 +12,7 @@ After a hardware vendor decides which miniport drivers to write for the wave and
 
 PortCls provides six port drivers: WavePci, WaveCyclic, WaveRT, MIDI, DMus, and Topology. (WaveRT has been available since Windows Vista and is the recommended approach.) The Topology port driver controls the portion of the audio adapter circuitry that mixes together the rendering streams from the wave and MIDI devices. It also controls the selection of capture streams from input jacks. In spite of its somewhat misleading name, the Topology port driver does not embody all of an audio adapter's topology, although typically it does contain a large portion of it. The other port drivers contribute the remaining portions of the adapter's topology.
 
-Each port driver is paired with a corresponding miniport driver to form a [KS filter](stream.ks_filters) that represents a particular device (wave, MIDI, or mixer) on the audio adapter, as shown in the following table.
+Each port driver is paired with a corresponding miniport driver to form a [KS filter](https://msdn.microsoft.com/library/windows/hardware/ff567644) that represents a particular device (wave, MIDI, or mixer) on the audio adapter, as shown in the following table.
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ Each port driver is paired with a corresponding miniport driver to form a [KS fi
 
 The miniport driver implements the filter's device-specific functions, including the definition of the portion of the adapter topology that the device encompasses. The port driver takes care of the generic filter operations, including communication with the operating system, for each type of filter.
 
-Each filter has one or more [KS pins](stream.ks_pins) that serve as pathways for streams of audio data to enter and leave the filter. Typically, the pins on the Topology filter are tied to the pins on the wave, MIDI, and DMus filters through hardwired connections in the adapter circuitry. These filters and their interconnections together form a KS filter graph that embodies the adapter's topology.
+Each filter has one or more [KS pins](https://msdn.microsoft.com/library/windows/hardware/ff567669) that serve as pathways for streams of audio data to enter and leave the filter. Typically, the pins on the Topology filter are tied to the pins on the wave, MIDI, and DMus filters through hardwired connections in the adapter circuitry. These filters and their interconnections together form a KS filter graph that embodies the adapter's topology.
 
 The following figure shows the topology of an example audio adapter.
 
@@ -70,37 +70,37 @@ In the preceding figure, the topology at the top level consists of the connectio
 <tr class="odd">
 <td align="left"><p>Synth</p></td>
 <td align="left"><p>Synthesizer node</p></td>
-<td align="left">[<strong>KSNODETYPE_SYNTHESIZER</strong>](audio.ksnodetype_synthesizer)</td>
+<td align="left">[<strong>KSNODETYPE_SYNTHESIZER</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537203)</td>
 </tr>
 <tr class="even">
 <td align="left"><p>DAC</p></td>
 <td align="left"><p>Digital-to-audio converter node</p></td>
-<td align="left">[<strong>KSNODETYPE_DAC</strong>](audio.ksnodetype_dac)</td>
+<td align="left">[<strong>KSNODETYPE_DAC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537158)</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ADC</p></td>
 <td align="left"><p>Analog-to-digital converter node</p></td>
-<td align="left">[<strong>KSNODETYPE_ADC</strong>](audio.ksnodetype_adc)</td>
+<td align="left">[<strong>KSNODETYPE_ADC</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537153)</td>
 </tr>
 <tr class="even">
 <td align="left"><p>Volume</p></td>
 <td align="left"><p>Volume-level control node</p></td>
-<td align="left">[<strong>KSNODETYPE_VOLUME</strong>](audio.ksnodetype_volume)</td>
+<td align="left">[<strong>KSNODETYPE_VOLUME</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537208)</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Mute</p></td>
 <td align="left"><p>Mute control node</p></td>
-<td align="left">[<strong>KSNODETYPE_MUTE</strong>](audio.ksnodetype_mute)</td>
+<td align="left">[<strong>KSNODETYPE_MUTE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537178)</td>
 </tr>
 <tr class="even">
 <td align="left"><p>Sum</p></td>
 <td align="left"><p>Summation node</p></td>
-<td align="left">[<strong>KSNODETYPE_SUM</strong>](audio.ksnodetype_sum)</td>
+<td align="left">[<strong>KSNODETYPE_SUM</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537196)</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MUX</p></td>
 <td align="left"><p>Multiplexer node</p></td>
-<td align="left">[<strong>KSNODETYPE_MUX</strong>](audio.ksnodetype_mux)</td>
+<td align="left">[<strong>KSNODETYPE_MUX</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537180)</td>
 </tr>
 </tbody>
 </table>
@@ -113,7 +113,7 @@ In contrast, the pins on the left edge of the topology filter are physically con
 
 The bridge pins on the right side of the audio adapter represent audio jacks on the system chassis. These pins are referred to as *bridge pins* because they bridge the boundary between the KS filter graph and the external world.
 
-Filters, pins, and nodes typically have properties that are accessible to clients (kernel-mode components or user-mode applications) of the audio driver. A client can send a [KS property request](stream.ks_properties) to a filter, pin, or node either to query for the current value of a property or to change the property value. For example, a volume-level control node has a [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](audio.ksproperty_audio_volumelevel) property, which a client can change through a KS property request. A summation node is an example of a node type that typically has no properties.
+Filters, pins, and nodes typically have properties that are accessible to clients (kernel-mode components or user-mode applications) of the audio driver. A client can send a [KS property request](https://msdn.microsoft.com/library/windows/hardware/ff567671) to a filter, pin, or node either to query for the current value of a property or to change the property value. For example, a volume-level control node has a [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309) property, which a client can change through a KS property request. A summation node is an example of a node type that typically has no properties.
 
 For simplicity, the Wave*Xxx* filter in the preceding figure provides only a single pin for accepting a PCM wave output stream from the system bus. In contrast, some wave devices provide multiple pins for PCM wave output and contain hardware for internally mixing the streams that enter the pins. These devices provide hardware acceleration for applications that use DirectSound by accepting PCM streams that play from the applications' sound buffers. For DirectSound to use these pins, they must provide additional nodes for two-dimensional (2-D) and three-dimensional (3-D) processing, as described in [DirectSound Hardware Acceleration in WDM Audio](directsound-hardware-acceleration-in-wdm-audio.md).
 
@@ -123,7 +123,7 @@ In the preceding figure, the physical connections between the MIDI, Wave*Xxx*, a
 
 The "Non-PCM Wave Out" pin at the lower-left corner of the preceding figure accepts a non-PCM output stream in an S/PDIF pass-through format, such as AC-3-over-S/PDIF or WMA Pro-over-S/PDIF. Using one of these formats, the device simply transmits the compressed data over the S/PDIF link without decoding the data. For this reason, the data path to the "S/PDIF Out" pin on the lower-right corner of the preceding figure contains no volume or mute nodes. For more information about non-PCM audio formats and S/PDIF pass-through transmission, see [Supporting Non-PCM Wave Formats](supporting-non-pcm-wave-formats.md). Additional information is available in the white paper titled *Audio Driver Support for the WMA Pro-over-S/PDIF Format* at the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) website.
 
-The miniport driver presents its topology to the port driver in the form of a [**PCFILTER\_DESCRIPTOR**](audio.pcfilter_descriptor) structure. This structure describes all of the filter's pins and nodes, and it specifies how the pins and nodes connect to each other.
+The miniport driver presents its topology to the port driver in the form of a [**PCFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537694) structure. This structure describes all of the filter's pins and nodes, and it specifies how the pins and nodes connect to each other.
 
 Instead of designing a monolithic topology filter, as shown in the preceding figure, the mixer circuitry in the audio adapter can be partitioned into several topology filters. For example, in the preceding figure, the data paths that drive the speakers might be implemented as one topology filter, and the data paths that capture audio data from input devices can be implemented as a separate topology filter. When the data paths in a particular topology filter are not in use, that portion of the adapter can be powered down without disabling the entire adapter. For more information, see [Dynamic Audio Subdevices](dynamic-audio-subdevices.md).
 
@@ -131,8 +131,8 @@ Instead of designing a monolithic topology filter, as shown in the preceding fig
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Specifying%20the%20Topology%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Specifying%20the%20Topology%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

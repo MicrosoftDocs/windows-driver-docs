@@ -1,8 +1,8 @@
 ---
-Description: Subdevice Creation
-MS-HAID: 'audio.subdevice\_creation'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Subdevice Creation
+description: Subdevice Creation
+ms.assetid: e4ba1209-adc6-48c3-9633-247e9e3849bc
+keywords: ["audio adapters WDK , subdevices", "adapter drivers WDK audio , subdevices", "subdevices WDK audio"]
 ---
 
 # Subdevice Creation
@@ -46,7 +46,7 @@ The term *subdevice* is used to describe the binding of the four components that
 
  
 
-A subdevice's IMiniport*Xxx* and IPort*Xxx* interfaces inherit from base interfaces [IMiniport](audio.iminiport) and [IPort](audio.iport), respectively.
+A subdevice's IMiniport*Xxx* and IPort*Xxx* interfaces inherit from base interfaces [IMiniport](https://msdn.microsoft.com/library/windows/hardware/ff536698) and [IPort](https://msdn.microsoft.com/library/windows/hardware/ff536842), respectively.
 
 The PortCls system driver does not distinguish between the port driver and the miniport driver. It simply requires an object, such as the port object, with an interface that can handle system-generated requests.
 
@@ -113,14 +113,14 @@ The following code example shows how the adapter driver performs these actions:
   }
 ```
 
-For information about the PortCls function calls in the preceding code example, see [**PcNewPort**](audio.pcnewport), [**PcNewMiniport**](audio.pcnewminiport), and [**PcRegisterSubdevice**](audio.pcregistersubdevice).
+For information about the PortCls function calls in the preceding code example, see [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715), [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714), and [**PcRegisterSubdevice**](https://msdn.microsoft.com/library/windows/hardware/ff537731).
 
  
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Subdevice%20Creation%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Subdevice%20Creation%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

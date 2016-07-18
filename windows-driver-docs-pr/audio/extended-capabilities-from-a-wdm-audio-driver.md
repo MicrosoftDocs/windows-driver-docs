@@ -1,8 +1,8 @@
 ---
-Description: Extended Capabilities from a WDM Audio Driver
-MS-HAID: 'audio.extended\_capabilities\_from\_a\_wdm\_audio\_driver'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Extended Capabilities from a WDM Audio Driver
+description: Extended Capabilities from a WDM Audio Driver
+ms.assetid: 8ee081ee-623d-4eaf-953f-20ccfbbe9800
+keywords: ["WDM audio extensions WDK , about legacy support extensions", "WDM audio extensions WDK , device IDs", "device IDs WDK audio", "unique device IDs WDK audio", "identifying audio devices", "hardware-specific information WDK audio"]
 ---
 
 # Extended Capabilities from a WDM Audio Driver
@@ -11,9 +11,9 @@ title: Extended Capabilities from a WDM Audio Driver
 ## <span id="extended_capabilities_from_a_wdm_audio_driver"></span><span id="EXTENDED_CAPABILITIES_FROM_A_WDM_AUDIO_DRIVER"></span>
 
 
-By handling the [**KSPROPERTY\_GENERAL\_COMPONENTID**](stream.ksproperty_general_componentid) property, an audio filter can provide hardware-specific information that applications can use to uniquely identify the underlying device. Microsoft Windows XP is the first version of Windows to support this feature; this feature is not available in earlier versions.
+By handling the [**KSPROPERTY\_GENERAL\_COMPONENTID**](https://msdn.microsoft.com/library/windows/hardware/ff565171) property, an audio filter can provide hardware-specific information that applications can use to uniquely identify the underlying device. Microsoft Windows XP is the first version of Windows to support this feature; this feature is not available in earlier versions.
 
-The filter provides the hardware-specific information in the form of a [**KSCOMPONENTID**](stream.kscomponentid) structure that contains the following:
+The filter provides the hardware-specific information in the form of a [**KSCOMPONENTID**](https://msdn.microsoft.com/library/windows/hardware/ff561027) structure that contains the following:
 
 -   Manufacturer GUID
 
@@ -123,8 +123,8 @@ The INIT\_MMREG\_MID and INIT\_MMREG\_PID macros above are defined in Ksmedia.h.
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Extended%20Capabilities%20from%20a%20WDM%20Audio%20Driver%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Extended%20Capabilities%20from%20a%20WDM%20Audio%20Driver%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

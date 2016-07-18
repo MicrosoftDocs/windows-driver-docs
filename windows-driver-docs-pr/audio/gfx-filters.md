@@ -1,8 +1,8 @@
 ---
-Description: GFX Filters
-MS-HAID: 'audio.gfx\_filters'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: GFX Filters
+description: GFX Filters
+ms.assetid: e1b5cb04-7793-4423-8162-3f70e3b9ac42
+keywords: ["GFX filters WDK audio", "global effects WDK audio", "audio filters WDK audio , GPX", "filters WDK audio , GPX", "WDM audio drivers WDK , GPX filters", "audio drivers WDK , GPX filters", "GFX filters WDK audio , about GFX filters", "USB WDK audio", "audio proces"]
 ---
 
 # GFX Filters
@@ -17,9 +17,9 @@ A GFX filter can apply an audio-signal transform to the final audio mix that is 
 
 A GFX filter can also process the signal that is captured by an audio device. The GFX filter is inserted into the capture stream before any other processing of the audio signal.
 
-A GFX filter is packaged as an [AVStream](stream.avstream_overview) minidriver with an associated INF file. This type of GFX filter must not be confused with the COM-based audio processing objects that were developed for Windows Vista, called GFX sAPOs. For more information about GFX sAPOs, see [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md).
+A GFX filter is packaged as an [AVStream](https://msdn.microsoft.com/library/windows/hardware/ff554240) minidriver with an associated INF file. This type of GFX filter must not be confused with the COM-based audio processing objects that were developed for Windows Vista, called GFX sAPOs. For more information about GFX sAPOs, see [Exploring the Windows Vista Audio Engine](exploring-the-windows-vista-audio-engine.md).
 
-For more information about INF files, see [Device Installation Files](devinst.device_installation_files).
+For more information about INF files, see [Device Installation Files](https://msdn.microsoft.com/library/windows/hardware/ff541295).
 
 A typical GFX filter implements a digital signal transformation that is designed for a specific audio hardware device (for example, to compensate for the response characteristics of a particular set of speakers). The manufacturer of the audio hardware typically provides the GFX driver. When you install a GFX driver, Windows enables the GFX filter and automatically configures it to begin processing the audio signal that is sent to the specified hardware.
 
@@ -63,8 +63,8 @@ This section includes the following topics:
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20GFX%20Filters%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20GFX%20Filters%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

@@ -1,8 +1,8 @@
 ---
-Description: Miscellaneous Installation Issues for an Audio Adapter
-MS-HAID: 'audio.miscellaneous\_installation\_issues\_for\_an\_audio\_adapter'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Miscellaneous Installation Issues for an Audio Adapter
+description: Miscellaneous Installation Issues for an Audio Adapter
+ms.assetid: fcfa9c41-7fad-4b22-9054-a1debb972580
+keywords: ["audio adapters WDK , installing", "adapter drivers WDK audio , installing", "Port Class audio adapters WDK , installing"]
 ---
 
 # Miscellaneous Installation Issues for an Audio Adapter
@@ -23,18 +23,18 @@ Listed are the most common installation issues for an audio adapter:
 
 -   An audio driver is easily designed to allow multiple identical instances of an audio adapter card to be plugged into the same system. For more information, see [System-Wide Unique Device IDs](system-wide-unique-device-ids.md).
 
--   For a list of INF file keywords that are common to all device classes, see [INF File Sections and Directives](devinst.inf_file_sections_and_directives). However, this list does not contain several media-specific keywords. For more information, see [Media-Specific INF File Keywords](media-specific-inf-file-keywords.md).
+-   For a list of INF file keywords that are common to all device classes, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433). However, this list does not contain several media-specific keywords. For more information, see [Media-Specific INF File Keywords](media-specific-inf-file-keywords.md).
 
 -   For information about how an adapter driver or miniport driver can obtain setup information from the registry, see [Retrieving Device Setup Information](retrieving-device-setup-information.md).
 
--   For information about Windows Vista support for an audio adapter which does not have a physical volume control knob, see the [Windows Vista Software Volume Control Support](audio.windows_vista_software_volume_control_support) topic.
+-   For information about Windows Vista support for an audio adapter which does not have a physical volume control knob, see the [Windows Vista Software Volume Control Support](https://msdn.microsoft.com/library/windows/hardware/ff539263) topic.
 
  
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Miscellaneous%20Installation%20Issues%20for%20an%20Audio%20Adapter%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Miscellaneous%20Installation%20Issues%20for%20an%20Audio%20Adapter%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

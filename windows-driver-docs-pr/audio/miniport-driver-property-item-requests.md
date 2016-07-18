@@ -1,8 +1,8 @@
 ---
-Description: Miniport Driver Property Item Requests
-MS-HAID: 'audio.miniport\_driver\_property\_item\_requests'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Miniport Driver Property Item Requests
+description: Miniport Driver Property Item Requests
+ms.assetid: 37baad27-539b-46ab-b300-175bc0c2b992
+keywords: ["property item requests WDK DirectMusic", "miniport drivers WDK audio , property item requests"]
 ---
 
 # Miniport Driver Property Item Requests
@@ -11,15 +11,15 @@ title: Miniport Driver Property Item Requests
 ## <span id="miniport_driver_property_item_requests"></span><span id="MINIPORT_DRIVER_PROPERTY_ITEM_REQUESTS"></span>
 
 
-This section is a brief introduction to DirectMusic property item requests. A complete overview of this and other kernel-streaming concepts can be found in [Kernel Streaming](stream.kernel_streaming).
+This section is a brief introduction to DirectMusic property item requests. A complete overview of this and other kernel-streaming concepts can be found in [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842).
 
-DirectMusic miniport drivers must handle [audio drivers property sets](audio.audio_drivers_property_sets). A property request comes in two parts. The first part is the property set that is defined by the [**KSPROPERTY**](stream.ksproperty) structure. The second is a data buffer that contains instance data that is specific to the property item.
+DirectMusic miniport drivers must handle [audio drivers property sets](https://msdn.microsoft.com/library/windows/hardware/ff536197). A property request comes in two parts. The first part is the property set that is defined by the [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. The second is a data buffer that contains instance data that is specific to the property item.
 
 The KSPROPERTY structure contains the following:
 
--   A predefined GUID specifying the set (such as [KSPROPSETID\_Synth\_Dls](audio.kspropsetid_synth_dls)).
+-   A predefined GUID specifying the set (such as [KSPROPSETID\_Synth\_Dls](https://msdn.microsoft.com/library/windows/hardware/ff537488)).
 
--   An item ID specifying the property item within the set (such as [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](audio.ksproperty_synth_dls_download)).
+-   An item ID specifying the property item within the set (such as [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff537396)).
 
 -   Flags specifying the requested operation.
 
@@ -42,7 +42,7 @@ The second part of the property item request is the instance data, which is a bu
 
 A property item request can be directed to a particular node in the miniport driver topology. The miniport driver topology describes the layout of the driver and the underlying hardware. Within the topology can be nodes where property items can be sent, whether there are pin instances available at the time of the request.
 
-A pin instance must be created for DirectMusic playback. DirectMusic data is sent to the node of type [**KSNODETYPE\_DMSYNTH**](audio.ksnodetype_dmsynth). The following is an example of a miniport driver connection:
+A pin instance must be created for DirectMusic playback. DirectMusic data is sent to the node of type [**KSNODETYPE\_DMSYNTH**](https://msdn.microsoft.com/library/windows/hardware/ff537167). The following is an example of a miniport driver connection:
 
 -   Connect stream in to synth:
 
@@ -60,8 +60,8 @@ The DirectMusic format (STATIC\_KSDATAFORMAT\_SUBTYPE\_DIRECTMUSIC) must be defi
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Miniport%20Driver%20Property%20Item%20Requests%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Miniport%20Driver%20Property%20Item%20Requests%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

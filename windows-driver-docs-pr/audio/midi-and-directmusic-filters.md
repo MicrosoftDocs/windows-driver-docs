@@ -1,8 +1,8 @@
 ---
-Description: MIDI and DirectMusic Filters
-MS-HAID: 'audio.midi\_and\_directmusic\_filters'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: MIDI and DirectMusic Filters
+description: MIDI and DirectMusic Filters
+ms.assetid: 622aa4ae-c855-4088-bc1a-30dff7a24d23
+keywords: ["audio filters WDK audio , MIDI", "audio filters WDK audio , DirectMusic", "DirectMusic WDK audio , filters", "MIDI filters WDK audio", "enumerating audio devices WDK", "system-supplied miniport drivers WDK audio", "system-supplied port drivers WDK audio", "synthesizers WDK audio , filters", "filters WDK audio , MIDI", "filters WDK audio , DirectMusic"]
 ---
 
 # MIDI and DirectMusic Filters
@@ -31,11 +31,11 @@ A MIDI filter is implemented as a port/miniport driver pair. A MIDI filter facto
 
 -   It instantiates a MIDI miniport driver object.
 
--   It instantiates a MIDI port driver object by calling [**PcNewPort**](audio.pcnewport) with GUID value **CLSID\_PortMidi**.
+-   It instantiates a MIDI port driver object by calling [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) with GUID value **CLSID\_PortMidi**.
 
--   It calls the port driver's [**IPort::Init**](audio.iport_init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536943) method to bind the miniport driver to the port driver.
 
-The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortMidi](audio.iportmidi) and [IMiniportMidi](audio.iminiportmidi) interfaces.
+The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortMidi](https://msdn.microsoft.com/library/windows/hardware/ff536891) and [IMiniportMidi](https://msdn.microsoft.com/library/windows/hardware/ff536703) interfaces.
 
 To support MIDI output and synthesizer devices, the MIDI port driver contains a software sequencer that outputs raw MIDI messages to the miniport driver with a timer resolution of one millisecond.
 
@@ -43,9 +43,9 @@ To support MIDI output and synthesizer devices, the MIDI port driver contains a 
 
 A DirectMusic filter provides a superset of the functionality of a MIDI filter. The superset includes these additional capabilities:
 
--   DLS (downloadable sound) resources that contain waveform and articulation data describing MIDI instruments. A [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](audio.ksproperty_synth_dls_download) set-property request downloads a DLS resource to a filter.
+-   DLS (downloadable sound) resources that contain waveform and articulation data describing MIDI instruments. A [**KSPROPERTY\_SYNTH\_DLS\_DOWNLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff537396) set-property request downloads a DLS resource to a filter.
 
--   Channel groups for expanding the number of selectable instruments. The [**DMUS\_KERNEL\_EVENT**](audio.dmus_kernel_event) structure, which is used to package each time-stamped MIDI message in a MIDI stream, specifies which channel group to use for that message.
+-   Channel groups for expanding the number of selectable instruments. The [**DMUS\_KERNEL\_EVENT**](https://msdn.microsoft.com/library/windows/hardware/ff536340) structure, which is used to package each time-stamped MIDI message in a MIDI stream, specifies which channel group to use for that message.
 
 -   64-bit time stamps with 100-nanosecond resolution in support of hardware MIDI sequencing. The DMUS\_KERNEL\_EVENT structure specifies the high-resolution time stamp for a MIDI message.
 
@@ -55,11 +55,11 @@ A DirectMusic filter is implemented as a port/miniport driver pair. A DirectMusi
 
 -   It instantiates a DMus (DirectMusic) miniport driver object.
 
--   It instantiates a DMus port driver object by calling [**PcNewPort**](audio.pcnewport) with GUID value **CLSID\_PortDMus**.
+-   It instantiates a DMus port driver object by calling [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) with GUID value **CLSID\_PortDMus**.
 
--   It calls the port driver's [**IPort::Init**](audio.iport_init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536943) method to bind the miniport driver to the port driver.
 
-The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortDMus](audio.iportdmus) and [IMiniportDMus](audio.iminiportdmus) interfaces.
+The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879) and [IMiniportDMus](https://msdn.microsoft.com/library/windows/hardware/ff536699) interfaces.
 
 To support DirectMusic synthesizer devices, the DMus port driver contains a low-resolution (one millisecond) software sequencer that can output time-stamped MIDI events to the hardware sequencer's buffer in advance of when they are scheduled to be played. To support DirectMusic output devices, the port driver's software sequencer can also be configured to output raw MIDI messages at the times they are to be played.
 
@@ -71,7 +71,7 @@ When implementing a custom miniport driver, a hardware vendor typically writes e
 
 When specifying a data range for a MIDI or DirectMusic pin, a MIDI or DMus miniport driver specifies a major format of type KSDATAFORMAT\_TYPE\_MUSIC and a subformat of type KSDATARANGE\_SUBTYPE\_MIDI for a MIDI pin or KSDATARANGE\_SUBTYPE\_DIRECTMUSIC for a DirectMusic pin. Examples of data range descriptors for MIDI and DirectMusic pins appear in [MIDI Stream Data Range](midi-stream-data-range.md) and [DirectMusic Stream Data Range](directmusic-stream-data-range.md), respectively.
 
-A MIDI pin instance on a MIDI filter exposes an [IMiniportMidiStream](audio.iminiportmidistream) interface. A MIDI or DirectMusic pin instance on a DirectMusic filter exposes an [IMXF](audio.imxf) interface.
+A MIDI pin instance on a MIDI filter exposes an [IMiniportMidiStream](https://msdn.microsoft.com/library/windows/hardware/ff536704) interface. A MIDI or DirectMusic pin instance on a DirectMusic filter exposes an [IMXF](https://msdn.microsoft.com/library/windows/hardware/ff536782) interface.
 
 In Windows Me/98, DirectMusic sometimes enumerates the same MPU-401 device twice. The reason is that some hardware vendors expose their MPU-401 devices both as legacy, pre-WDM MIDI devices and as WDM devices. For the legacy device, DirectMusic enumerates an MPU-401 device that represents the direct path from DMusic.dll to Ihvaudio.dll. For the WDM device, DirectMusic enumerates the same MPU-401 device through a circuitous path consisting of the following sequence of components:
 
@@ -97,9 +97,9 @@ Several system-supplied MIDI and DMus miniport drivers are built into the PortCl
 
 -   The UART miniport driver supports a MIDI device with an MPU-401 hardware interface, but this driver is now obsolete (after Windows 98 Gold) and is supported only for existing adapter drivers. New adapter driver code should instead use the DMusUART miniport driver (in Windows 98 SE and Windows Me, and in Windows 2000 and later), which supersedes UART and implements a superset of its functionality.
 
-Adapter drivers can access the system-supplied miniport drivers by calling the [**PcNewMiniport**](audio.pcnewminiport) function. The FMSynth and DMusUART miniport drivers are also included as sample audio drivers in the Windows Driver Kit (WDK). By modifying the source code in these samples, hardware vendors can extend the drivers to manage their devices' proprietary features.
+Adapter drivers can access the system-supplied miniport drivers by calling the [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714) function. The FMSynth and DMusUART miniport drivers are also included as sample audio drivers in the Windows Driver Kit (WDK). By modifying the source code in these samples, hardware vendors can extend the drivers to manage their devices' proprietary features.
 
-DMusUART is an example of a DMus miniport driver that exposes both MIDI and DirectMusic pins, but does not support either DLS downloads or hardware sequencing. The miniport driver's DirectMusic rendering pin has a synth node ([**KSNODETYPE\_SYNTHESIZER**](audio.ksnodetype_synthesizer)) that supports several [KSPROPSETID\_Synth](audio.kspropsetid_synth) properties. The miniport driver includes itself in categories KSCATEGORY\_RENDER and KSCATEGORY\_CAPTURE, but not in KSCATEGORY\_SYNTHESIZER (because it does not contain an internal synthesizer). For details, see the DMusUART sample audio driver in the WDK.
+DMusUART is an example of a DMus miniport driver that exposes both MIDI and DirectMusic pins, but does not support either DLS downloads or hardware sequencing. The miniport driver's DirectMusic rendering pin has a synth node ([**KSNODETYPE\_SYNTHESIZER**](https://msdn.microsoft.com/library/windows/hardware/ff537203)) that supports several [KSPROPSETID\_Synth](https://msdn.microsoft.com/library/windows/hardware/ff537486) properties. The miniport driver includes itself in categories KSCATEGORY\_RENDER and KSCATEGORY\_CAPTURE, but not in KSCATEGORY\_SYNTHESIZER (because it does not contain an internal synthesizer). For details, see the DMusUART sample audio driver in the WDK.
 
 Note that in Windows XP and later, the MIDI and DMus port drivers use the same internal software implementation. This means that the **CLSID\_PortMidi** and **CLSID\_PortDMus** GUIDs are equivalent when calling **PcNewPort**. Applications written for previous versions of Windows should see no change in behavior resulting from consolidation of the MIDI and DMus port drivers.
 
@@ -107,8 +107,8 @@ Note that in Windows XP and later, the MIDI and DMus port drivers use the same i
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20MIDI%20and%20DirectMusic%20Filters%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20MIDI%20and%20DirectMusic%20Filters%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

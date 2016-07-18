@@ -1,8 +1,8 @@
 ---
-Description: Wave Filters
-MS-HAID: 'audio.wave\_filters'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Wave Filters
+description: Wave Filters
+ms.assetid: 9e364c8f-55c3-4ec9-a9ce-9ee0f6a0746b
+keywords: ["audio filters WDK audio , wave", "wave filters WDK audio", "filters WDK audio , wave", "wave-rendering filters WDK audio", "wave-capture filters WDK audio", "rendering wave audio WDK audio", "capturing wave audio WDK audio", "WaveRT filters WDK audio", "WavePci filters WDK audio", "WaveCyclic filters WDK audio", "WaveRT, filter", "WavePci, filter", "audio devices, WaveCyclic", "WaveCyclic, filter"]
 ---
 
 # Wave Filters
@@ -11,7 +11,7 @@ title: Wave Filters
 ## <span id="wave_filters"></span><span id="WAVE_FILTERS"></span>
 
 
-Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](audio.waveformatex) and [**WAVEFORMATEXTENSIBLE**](audio.waveformatextensible).
+Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799) and [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802).
 
 A *wave-rendering* filter receives as input a wave digital audio stream and outputs either an analog audio signal (to a set of speakers or external mixer) or a digital audio stream (to an S/PDIF connector, for example).
 
@@ -41,11 +41,11 @@ A WaveRT filter is implemented as a port/miniport driver pair. In Windows Vista 
 
 -   It instantiates a WaveRT miniport driver object.
 
--   It instantiates a WaveRT port driver object by calling [**PcNewPort**](audio.pcnewport) with GUID value **CLSID\_PortWaveRT**.
+-   It instantiates a WaveRT port driver object by calling [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) with GUID value **CLSID\_PortWaveRT**.
 
--   It calls the port driver's [**IPort::Init**](audio.iport_init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536943) method to bind the miniport driver to the port driver.
 
-The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWaveRT](audio.iportwavert) and [IMiniportWaveRT](audio.iminiportwavert) interfaces.
+The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536920) and [IMiniportWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536737) interfaces.
 
 For more information, see the white paper titled *A Wave Port Driver for Real-Time Audio Streaming* on the [audio technology](http://go.microsoft.com/fwlink/p/?linkid=8751) page on the WHDC website.
 
@@ -75,11 +75,11 @@ A WavePci filter is implemented as a port/miniport driver pair. A WavePci filter
 
 -   It instantiates a WavePci miniport driver object.
 
--   It instantiates a WavePci port driver object by calling [**PcNewPort**](audio.pcnewport) with GUID value **CLSID\_PortWavePci**.
+-   It instantiates a WavePci port driver object by calling [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) with GUID value **CLSID\_PortWavePci**.
 
--   It calls the port driver's [**IPort::Init**](audio.iport_init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536943) method to bind the miniport driver to the port driver.
 
-The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWavePci](audio.iportwavepci) and [IMiniportWavePci](audio.iminiportwavepci) interfaces.
+The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536905) and [IMiniportWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536724) interfaces.
 
 For more information, see [Implementation Issues for WavePci Devices](implementation-issues-for-wavepci-devices.md).
 
@@ -91,34 +91,34 @@ A WaveCyclic filter is implemented as a port/miniport driver pair. A WaveCyclic 
 
 -   It instantiates a WaveCyclic miniport driver object.
 
--   It instantiates a WaveCyclic port driver object by calling [**PcNewPort**](audio.pcnewport) with GUID value **CLSID\_PortWaveCyclic**.
+-   It instantiates a WaveCyclic port driver object by calling [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) with GUID value **CLSID\_PortWaveCyclic**.
 
--   It calls the port driver's [**IPort::Init**](audio.iport_init) method to bind the miniport driver to the port driver.
+-   It calls the port driver's [**IPort::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536943) method to bind the miniport driver to the port driver.
 
-The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWaveCyclic](audio.iportwavecyclic) and [IMiniportWaveCyclic](audio.iminiportwavecyclic) interfaces.
+The code example in [Subdevice Creation](subdevice-creation.md) illustrates this process. The port and miniport drivers communicate with each other through their [IPortWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536899) and [IMiniportWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536714) interfaces.
 
-The WaveCyclic filter's cyclic buffer always consists of a contiguous block of virtual memory. The port driver's implementation of the [**IDmaChannel::AllocateBuffer**](audio.idmachannel_allocatebuffer) method always allocates a buffer that is contiguous in both physical and virtual memory address space. If, as mentioned previously, the WaveCyclic device's DMA engine imposes additional constraints on the buffer memory, the miniport driver is free to implement its own buffer-allocation method to meet these constraints.
+The WaveCyclic filter's cyclic buffer always consists of a contiguous block of virtual memory. The port driver's implementation of the [**IDmaChannel::AllocateBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536553) method always allocates a buffer that is contiguous in both physical and virtual memory address space. If, as mentioned previously, the WaveCyclic device's DMA engine imposes additional constraints on the buffer memory, the miniport driver is free to implement its own buffer-allocation method to meet these constraints.
 
-A WaveCyclic miniport driver that asks for a large buffer (for example, eight physically contiguous memory pages) should be prepared to settle for a smaller buffer size if the operating system denies the original request. An audio device might occasionally be unloaded and reloaded to rebalance system resources (see [Stopping a Device to Rebalance Resources](kernel.stopping_a_device_to_rebalance_resources)).
+A WaveCyclic miniport driver that asks for a large buffer (for example, eight physically contiguous memory pages) should be prepared to settle for a smaller buffer size if the operating system denies the original request. An audio device might occasionally be unloaded and reloaded to rebalance system resources (see [Stopping a Device to Rebalance Resources](https://msdn.microsoft.com/library/windows/hardware/ff563877)).
 
-A WaveCyclic device with built-in, bus-mastering DMA hardware is called a *master device*. Alternatively, a WaveCyclic device can be a *subordinate device* with no built-in DMA-hardware capabilities. A subordinate device has to rely on the system DMA controller to perform any data transfers that it requires. For more information about master and subordinate devices, see [IDmaChannel](audio.idmachannel) and [IDmaChannelSlave](audio.idmachannelslave).
+A WaveCyclic device with built-in, bus-mastering DMA hardware is called a *master device*. Alternatively, a WaveCyclic device can be a *subordinate device* with no built-in DMA-hardware capabilities. A subordinate device has to rely on the system DMA controller to perform any data transfers that it requires. For more information about master and subordinate devices, see [IDmaChannel](https://msdn.microsoft.com/library/windows/hardware/ff536547) and [IDmaChannelSlave](https://msdn.microsoft.com/library/windows/hardware/ff536548).
 
 A WaveCyclic miniport driver can implement its own DMA-channel object instead of using the default DMA-channel object, which is created by one of the port driver's New*Xxx*DmaChannel methods:
 
-[**IPortWaveCyclic::NewMasterDmaChannel**](audio.iportwavecyclic_newmasterdmachannel)
+[**IPortWaveCyclic::NewMasterDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff536900)
 
-[**IPortWaveCyclic::NewSlaveDmaChannel**](audio.iportwavecyclic_newslavedmachannel)
+[**IPortWaveCyclic::NewSlaveDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff536902)
 
-The adapter driver's custom [IDmaChannel](audio.idmachannel) implementation can perform custom handling of data to meet special hardware constraints. For example, the Windows Multimedia functions use wave formats in which 16-bit samples are always signed values, but the audio-rendering hardware might be designed to use unsigned 16-bit values instead. In this case, the driver's custom [**IDmaChannel::CopyTo**](audio.idmachannel_copyto) method can be written to convert the signed source values to the unsigned destination values that the hardware requires. Although this technique can be useful for working around hardware-design flaws, it can also incur a significant cost in software overhead.
+The adapter driver's custom [IDmaChannel](https://msdn.microsoft.com/library/windows/hardware/ff536547) implementation can perform custom handling of data to meet special hardware constraints. For example, the Windows Multimedia functions use wave formats in which 16-bit samples are always signed values, but the audio-rendering hardware might be designed to use unsigned 16-bit values instead. In this case, the driver's custom [**IDmaChannel::CopyTo**](https://msdn.microsoft.com/library/windows/hardware/ff536558) method can be written to convert the signed source values to the unsigned destination values that the hardware requires. Although this technique can be useful for working around hardware-design flaws, it can also incur a significant cost in software overhead.
 
-For an example of a driver that implements its own DMA-channel object, see the Sb16 sample audio adapter in the WDK. If the constant OVERRIDE\_DMA\_CHANNEL is defined to be **TRUE**, the conditional compilation statements in the source code enable the implementation of a proprietary [IDmaChannel](audio.idmachannel) object, which the driver uses in place of the default IDmaChannel object from the IPortWaveCyclic::New*Xxx*DmaChannel call.
-
- 
+For an example of a driver that implements its own DMA-channel object, see the Sb16 sample audio adapter in the WDK. If the constant OVERRIDE\_DMA\_CHANNEL is defined to be **TRUE**, the conditional compilation statements in the source code enable the implementation of a proprietary [IDmaChannel](https://msdn.microsoft.com/library/windows/hardware/ff536547) object, which the driver uses in place of the default IDmaChannel object from the IPortWaveCyclic::New*Xxx*DmaChannel call.
 
  
 
+ 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Wave%20Filters%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Wave%20Filters%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 

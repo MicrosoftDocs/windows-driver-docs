@@ -1,8 +1,8 @@
 ---
-Description: Introduction to WDM Audio Drivers
-MS-HAID: 'audio.introduction\_to\_wdm\_audio\_drivers'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Introduction to WDM Audio Drivers
+description: Introduction to WDM Audio Drivers
+ms.assetid: 376392a8-b3ae-40c3-8bfa-55df6165cefb
+keywords: ["audio filters WDK audio , subset of KS filters", "WDM audio drivers WDK , about WDM audio drivers", "audio drivers WDK , about audio drivers", "KS filters WDK audio , about KS filters", "filters WDK audio , KS", "KS pins WDK audio", "KS pins WDK audio , about KS pins", "pins WDK audio , KS", "audio jacks WDK", "output pins WDK audio", "input pins WDK audio", "filter factories WDK audio", "pin factories WDK audio", "kernel streaming WDK audio", "filter graphs WDK audio", "speakers WDK audio"]
 ---
 
 # Introduction to WDM Audio Drivers
@@ -29,7 +29,7 @@ An adapter driver exposes a collection of *filter factories* to the audio system
 
 A KS filter exposes a collection of *pin factories* to the audio system. Each pin factory is capable of instantiating pins of a particular type. If the filter can provide one or more pins that are similar or identical in function, the filter groups those pins together into the same pin factory. For example, a filter that performs audio mixing might have one pin factory that can instantiate a single output pin and a second pin factory that can instantiate several input pins.
 
-KS services are built upon the Windows Driver Model. Note that the term *KS filter* must be distinguished from the term *filter driver*, which is another WDM concept. A filter driver resides in a WDM driver stack and can intercept and modify the I/O request packets (IRPs) that propagate through the stack. Upper- and lower-level filter drivers reside above and below the function driver, respectively. In this section, the term *filter* refers to a KS filter rather than a filter driver unless noted otherwise. For more information about filter drivers, see [Types of WDM Drivers](kernel.types_of_wdm_drivers).
+KS services are built upon the Windows Driver Model. Note that the term *KS filter* must be distinguished from the term *filter driver*, which is another WDM concept. A filter driver resides in a WDM driver stack and can intercept and modify the I/O request packets (IRPs) that propagate through the stack. Upper- and lower-level filter drivers reside above and below the function driver, respectively. In this section, the term *filter* refers to a KS filter rather than a filter driver unless noted otherwise. For more information about filter drivers, see [Types of WDM Drivers](https://msdn.microsoft.com/library/windows/hardware/ff564862).
 
 This section contains the following topics:
 
@@ -49,8 +49,8 @@ For updates and information about new features of the WDM audio architecture, se
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Introduction%20to%20WDM%20Audio%20Drivers%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Introduction%20to%20WDM%20Audio%20Drivers%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

@@ -1,8 +1,7 @@
 ---
-Description: 'Cortana, the personal assistant technology introduced on Windows Phone 8.1, is now supported on Windows 10 devices.'
-MS-HAID: 'audio.voice\_activation'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Voice Activation
+description: Cortana, the personal assistant technology introduced on Windows Phone 8.1, is now supported on Windows 10 devices.
+ms.assetid: 0684EF32-AA76-418B-9027-1C067A8140E3
 ---
 
 # Voice Activation
@@ -23,8 +22,8 @@ To understand the voice interaction experience available in Windows, review thes
 |                                                                                                   |                                                                       |
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | **Topic**                                                                                         | **Description**                                                       |
-| [What is Cortana?](http://windows.microsoft.com/en-us/windows-10/getstarted-what-is-cortana)      | Provides and overview and usage direction for Cortana                 |
-| [Make Cortana yours](http://windows.microsoft.com/en-us/windows-10/getstarted-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
+| [What is Cortana?](http://windows.microsoft.com/windows-10/getstarted-what-is-cortana)      | Provides and overview and usage direction for Cortana                 |
+| [Make Cortana yours](http://windows.microsoft.com/windows-10/getstarted-make-cortana-yours) | Describes customization available through Cortana's Settings screens. |
 
  
 
@@ -65,14 +64,14 @@ To implement voice activation SoC vendors must complete the following tasks.
 -   For optimal performance implement WAVE RT enhancements described in [WAVERT Enhancements](#wavert-enhancements).
 -   Optionally design any custom APOs to enhance the audio capture process. For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
 -   Provide INF file entries to describe any custom APOs used for keyword detection.
-    -   [PKEY\_FX\_KeywordDetector\_StreamEffectClsid](audio.pkey_fx_keyworddetector_streameffectclsid)
-    -   [PKEY\_FX\_KeywordDetector\_ModeEffectClsid](audio.pkey_fx_keyworddetector_modeeffectclsid)
-    -   [PKEY\_FX\_KeywordDetector\_EndpointEffectClsid](audio.pkey_fx_keyworddetector_endpointeffectclsid)
-    -   [PKEY\_SFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](audio.pkey_sfx_keyworddetector_processingmodes_supported_for_streaming)
-    -   [PKEY\_MFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](audio.pkey_mfx_keyworddetector_processingmodes_supported_for_streaming)
-    -   [PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](audio.pkey_efx_keyworddetector_processingmodes_supported_for_streaming)
--   Review the hardware recommendations in [Cortana Device Recommendation](p_weg_hardware.speechplatformdevicesrecommendations_103). This topic provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft’s Speech Platform.
--   Review the hardware recommendation [Cortana Device Test Setup](p_weg_hardware.speechplatformdevicestestsetup_003). This topic provides test guidance of audio input devices intended for use with Microsoft’s Speech Platform.
+    -   [PKEY\_FX\_KeywordDetector\_StreamEffectClsid](https://msdn.microsoft.com/library/windows/hardware/mt244268)
+    -   [PKEY\_FX\_KeywordDetector\_ModeEffectClsid](https://msdn.microsoft.com/library/windows/hardware/mt244267)
+    -   [PKEY\_FX\_KeywordDetector\_EndpointEffectClsid](https://msdn.microsoft.com/library/windows/hardware/mt244266)
+    -   [PKEY\_SFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt244270)
+    -   [PKEY\_MFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt244269)
+    -   [PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming](https://msdn.microsoft.com/library/windows/hardware/mt244264)
+-   Review the hardware recommendations in [Cortana Device Recommendation](https://msdn.microsoft.com/library/windows/hardware/dn957008). This topic provides guidance and recommendations for the design and development of audio input devices intended for use with Microsoft’s Speech Platform.
+-   Review the hardware recommendation [Cortana Device Test Setup](https://msdn.microsoft.com/library/windows/hardware/dn957009). This topic provides test guidance of audio input devices intended for use with Microsoft’s Speech Platform.
 
 ## <span id="Sample_Code_Overview"></span><span id="sample_code_overview"></span><span id="SAMPLE_CODE_OVERVIEW"></span>Sample Code Overview
 
@@ -104,12 +103,12 @@ The driver exposes a KS filter for its capture device as usual. This filter supp
 
 The properties are:
 
--   Supported keyword types - [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](audio.ksproperty_sounddetector_patterns). This property is set by the operating system to configure the keywords to be detected.
--   Current set of keyword patterns - [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](audio.ksproperty_sounddetector_supportedpatterns). This read/write property is an array of keyword patterns. The OS sets this to download keywords.
--   Armed - [**KSPROPERTY\_SOUNDDETECTOR\_ARMED**](audio.ksproperty_sounddetector_armed). This read/write property is a simply Boolean status indicating whether the detector is armed. The OS sets this engage the keyword detector. The OS can clear this to disengage. The driver automatically clears this when keyword patterns are set and also after a keyword is detected. (The OS must rearm.)
--   Match result - [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](audio.ksproperty_sounddetector_matchresult). This read property indicates matched audio data with a header after detection.
+-   Supported keyword types - [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](https://msdn.microsoft.com/library/windows/hardware/dn932151). This property is set by the operating system to configure the keywords to be detected.
+-   Current set of keyword patterns - [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](https://msdn.microsoft.com/library/windows/hardware/dn932152). This read/write property is an array of keyword patterns. The OS sets this to download keywords.
+-   Armed - [**KSPROPERTY\_SOUNDDETECTOR\_ARMED**](https://msdn.microsoft.com/library/windows/hardware/dn932149). This read/write property is a simply Boolean status indicating whether the detector is armed. The OS sets this engage the keyword detector. The OS can clear this to disengage. The driver automatically clears this when keyword patterns are set and also after a keyword is detected. (The OS must rearm.)
+-   Match result - [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](https://msdn.microsoft.com/library/windows/hardware/dn932150). This read property indicates matched audio data with a header after detection.
 
-The event that is fired when a keyword is detected is a [**KSEVENT\_SOUNDDETECTOR\_MATCHDETECTED**](audio.ksevent_sounddetector_matchdetected) event.
+The event that is fired when a keyword is detected is a [**KSEVENT\_SOUNDDETECTOR\_MATCHDETECTED**](https://msdn.microsoft.com/library/windows/hardware/dn932148) event.
 
 **Sequence of Operation**
 
@@ -139,13 +138,13 @@ In order to support the keyword start/end timestamps, DSP software may need to i
 ## <span id="OEM_COM_DLL_Interface"></span><span id="oem_com_dll_interface"></span><span id="OEM_COM_DLL_INTERFACE"></span>OEM COM DLL Interface
 
 
-The OEM supplies a COM object implementation that acts as an intermediary between the OS and the driver, helping to compute or parse the opaque data that is written and read to the audio driver through [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](audio.ksproperty_sounddetector_patterns) and [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](audio.ksproperty_sounddetector_matchresult).
+The OEM supplies a COM object implementation that acts as an intermediary between the OS and the driver, helping to compute or parse the opaque data that is written and read to the audio driver through [**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](https://msdn.microsoft.com/library/windows/hardware/dn932151) and [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](https://msdn.microsoft.com/library/windows/hardware/dn932150).
 
-The CLSID of the COM object is a detector pattern type GUID returned by the [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](audio.ksproperty_sounddetector_supportedpatterns). The OS calls CoCreateInstance passing the pattern type GUID to instantiate the appropriate COM object that is compatible with keyword pattern type and calls methods on the object’s IKeywordDetectorOemAdapter interface.
+The CLSID of the COM object is a detector pattern type GUID returned by the [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](https://msdn.microsoft.com/library/windows/hardware/dn932152). The OS calls CoCreateInstance passing the pattern type GUID to instantiate the appropriate COM object that is compatible with keyword pattern type and calls methods on the object’s IKeywordDetectorOemAdapter interface.
 
 **COM Threading Model requirements**
 
-The OS supplies a proxy-stub for [IKeywordDetectorOemAdapter](audio.ikeyworddetectoroemadapter). The OEM’s implementation may choose any of the COM threading models.
+The OS supplies a proxy-stub for [IKeywordDetectorOemAdapter](https://msdn.microsoft.com/library/windows/hardware/dn957504). The OEM’s implementation may choose any of the COM threading models.
 
 **IKeywordDetectorOemAdapter**
 
@@ -155,15 +154,15 @@ The interface design attempts to keep the object implementation stateless. In ot
 
 Implement the following methods.
 
--   [**IKeywordDetectorOemAdapter::BuildArmingPatternData**](audio.ikeyworddetectoroemadapter_buildarmingpatterndata)
--   [**IKeywordDetectorOemAdapter::ComputeAndAddUserModelData**](audio.ikeyworddetectoroemadapter_computeandaddusermodeldata)
--   [**IKeywordDetectorOemAdapter::GetCapabilities**](audio.ikeyworddetectoroemadapter_getcapabilities)
--   [**IKeywordDetectorOemAdapter::ParseDetectionResultData**](audio.ikeyworddetectoroemadapter_parsedetectionresultdata)
--   [**IKeywordDetectorOemAdapter::VerifyUserKeyword**](audio.ikeyworddetectoroemadapter_verifyuserkeyword)
+-   [**IKeywordDetectorOemAdapter::BuildArmingPatternData**](https://msdn.microsoft.com/library/windows/hardware/dn957505)
+-   [**IKeywordDetectorOemAdapter::ComputeAndAddUserModelData**](https://msdn.microsoft.com/library/windows/hardware/dn957506)
+-   [**IKeywordDetectorOemAdapter::GetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/dn957507)
+-   [**IKeywordDetectorOemAdapter::ParseDetectionResultData**](https://msdn.microsoft.com/library/windows/hardware/dn957508)
+-   [**IKeywordDetectorOemAdapter::VerifyUserKeyword**](https://msdn.microsoft.com/library/windows/hardware/dn957509)
 
 **KEYWORDID**
 
-The [**KEYWORDID**](audio.keywordid) enumeration identifies the phrase text/function of a keyword and is also used in the Windows Biometric Service adapters. For more information, see [Biometric Framework Overview - Core Platform Components](https://msdn.microsoft.com/library/windows/desktop/dd560897.aspx)
+The [**KEYWORDID**](https://msdn.microsoft.com/library/windows/hardware/dn957510) enumeration identifies the phrase text/function of a keyword and is also used in the Windows Biometric Service adapters. For more information, see [Biometric Framework Overview - Core Platform Components](https://msdn.microsoft.com/library/windows/desktop/dd560897.aspx)
 
 ```
 typedef enum  { 
@@ -175,7 +174,7 @@ typedef enum  {
 
 **KEYWORDSELECTOR**
 
-The [**KEYWORDSELECTOR**](audio.keywordselector) struct is a set of IDs that uniquely select a particular keyword and language.
+The [**KEYWORDSELECTOR**](https://msdn.microsoft.com/library/windows/hardware/dn957511) struct is a set of IDs that uniquely select a particular keyword and language.
 
 ```
 typedef struct
@@ -200,7 +199,7 @@ The OEM DLL developer decides how to manage the user independent and user depend
 ## <span id="Training_and_Operation_Audio_Processing"></span><span id="training_and_operation_audio_processing"></span><span id="TRAINING_AND_OPERATION_AUDIO_PROCESSING"></span>Training and Operation Audio Processing
 
 
-As described previously, the training UI flow results in full phonetically rich sentences being available in the audio stream. Each sentence is individually passed to [**IKeywordDetectorOemAdapter::VerifyUserKeyword**](audio.ikeyworddetectoroemadapter_verifyuserkeyword) to verify it contains the expected keyword and has acceptable quality. After all sentences are gathered and verified by the UI, they are all passed in one call to [**IKeywordDetectorOemAdapter::ComputeAndAddUserModelData**](audio.ikeyworddetectoroemadapter_computeandaddusermodeldata).
+As described previously, the training UI flow results in full phonetically rich sentences being available in the audio stream. Each sentence is individually passed to [**IKeywordDetectorOemAdapter::VerifyUserKeyword**](https://msdn.microsoft.com/library/windows/hardware/dn957509) to verify it contains the expected keyword and has acceptable quality. After all sentences are gathered and verified by the UI, they are all passed in one call to [**IKeywordDetectorOemAdapter::ComputeAndAddUserModelData**](https://msdn.microsoft.com/library/windows/hardware/dn957506).
 
 Audio is processed in a unique way for voice activation training. The following table summarizes the differences between voice activation training and the regular voice recognition usage.
 
@@ -253,7 +252,7 @@ This diagram provides an overview of the keyword recognition system.
 
 In these diagrams, the speech runtime module is shown as the “speech platform”. As mentioned previously, the Windows speech platform is used to power all of the speech experiences in Windows 10 such as Cortana and dictation.
 
-During startup, capabilities are gathered using [**IKeywordDetectorOemAdapter::GetCapabilities**](audio.ikeyworddetectoroemadapter_getcapabilities).
+During startup, capabilities are gathered using [**IKeywordDetectorOemAdapter::GetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/dn957507).
 
 ![keyword recognition sequence showing training ux speech platform and the oem keyword detector during startup](images/audio-voice-activation-startup.png)
 
@@ -278,15 +277,15 @@ The driver expresses the buffer size constraints by setting the DEVPKEY\_KsAudio
 
 **DEVPKEY\_KsAudio\_PacketSize\_Constraints**
 
-The DEVPKEY\_KsAudio\_PacketSize\_Constraints property value contains a [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS**](audio.ksaudio_packetsize_constraints) structure describing the physical hardware constraints (i.e. due to the mechanics of transferring data from the WaveRT buffer to the audio hardware). The structure includes an array of 0 or more [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT**](audio.ksaudio_packetsize_processingmode_constraint) structures describing constraints specific to any signal processing modes. The driver sets this property before calling [**PcRegisterSubdevice**](audio.pcregistersubdevice) or otherwise enabling its KS filter interface for its streaming pins.
+The DEVPKEY\_KsAudio\_PacketSize\_Constraints property value contains a [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS**](https://msdn.microsoft.com/library/windows/hardware/dn965561) structure describing the physical hardware constraints (i.e. due to the mechanics of transferring data from the WaveRT buffer to the audio hardware). The structure includes an array of 0 or more [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT**](https://msdn.microsoft.com/library/windows/hardware/dn965562) structures describing constraints specific to any signal processing modes. The driver sets this property before calling [**PcRegisterSubdevice**](https://msdn.microsoft.com/library/windows/hardware/ff537731) or otherwise enabling its KS filter interface for its streaming pins.
 
 **IMiniportWaveRTInputStream**
 
-A driver implements this interface for better coordination of audio dataflow from the driver to OS. If this interface is available on a capture stream, the OS uses methods on this interface to access data in the WaveRT buffer. For more information see, [**IMiniportWaveRTInputStream::GetReadPacket**](audio.iminiportwavertinputstream_getreadpacket)
+A driver implements this interface for better coordination of audio dataflow from the driver to OS. If this interface is available on a capture stream, the OS uses methods on this interface to access data in the WaveRT buffer. For more information see, [**IMiniportWaveRTInputStream::GetReadPacket**](https://msdn.microsoft.com/library/windows/hardware/dn946533)
 
 **IMiniportWaveRTOutputStream**
 
-A WaveRT miniport optionally implements this interface to be advised of write progress from the OS and to return precise stream position. For more information see [**IMiniportWaveRTOutputStream::SetWritePacket**](audio.iminiportwavertoutputstream_setwritepacket), [**IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition**](audio.iminiportwavertoutputstream_getoutputstreampresentationposition) and [**IMiniportWaveRTOutputStream::GetPacketCount**](audio.iminiportwavertoutputstream_getpacketcount).
+A WaveRT miniport optionally implements this interface to be advised of write progress from the OS and to return precise stream position. For more information see [**IMiniportWaveRTOutputStream::SetWritePacket**](https://msdn.microsoft.com/library/windows/hardware/dn946537), [**IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition**](https://msdn.microsoft.com/library/windows/hardware/dn946535) and [**IMiniportWaveRTOutputStream::GetPacketCount**](https://msdn.microsoft.com/library/windows/hardware/dn946536).
 
 **Performance counter timestamps**
 
@@ -300,9 +299,9 @@ In devices that have complex DSP pipelines and signal processing, calculating an
 
 **Burst Read Operation**
 
-This section describes the OS and driver interaction for burst reads. Burst read can happen outside of the voice activation scenario as long as the driver supports the packet based streaming WaveRT model, including the [**IMiniportWaveRTInputStream::GetReadPacket**](audio.iminiportwavertinputstream_getreadpacket) function.
+This section describes the OS and driver interaction for burst reads. Burst read can happen outside of the voice activation scenario as long as the driver supports the packet based streaming WaveRT model, including the [**IMiniportWaveRTInputStream::GetReadPacket**](https://msdn.microsoft.com/library/windows/hardware/dn946533) function.
 
-Two burst example read scenarios are discussed. In one scenario, if the miniport supports a pin having pin category [**KSNODETYPE\_AUDIO\_KEYWORDDETECTOR**](audio.ksnodetype_audio_keyworddetector) then the driver will begin capturing and internally buffering data when a keyword is detected. In another scenario, the driver can optionally internally buffer data outside of the WaveRT buffer if the OS is not reading data quickly enough by calling [**IMiniportWaveRTInputStream::GetReadPacket**](audio.iminiportwavertinputstream_getreadpacket).
+Two burst example read scenarios are discussed. In one scenario, if the miniport supports a pin having pin category [**KSNODETYPE\_AUDIO\_KEYWORDDETECTOR**](https://msdn.microsoft.com/library/windows/hardware/dn965563) then the driver will begin capturing and internally buffering data when a keyword is detected. In another scenario, the driver can optionally internally buffer data outside of the WaveRT buffer if the OS is not reading data quickly enough by calling [**IMiniportWaveRTInputStream::GetReadPacket**](https://msdn.microsoft.com/library/windows/hardware/dn946533).
 
 To burst data that has been captured prior to transition to KSSTATE\_RUN, the driver must retain accurate sample timestamp information along with the buffered capture data. The timestamps identify the sampling instant of the captured samples.
 
@@ -317,7 +316,7 @@ ii. Programs hardware to burst the next packet into the available space of the W
 4. The OS waits for the next buffer notification event. The wait might terminate immediately if the driver set the buffer notification in step (2c).
 5. If the driver did not immediately set the event in step (2c), the driver sets the event after it transfers more captured data into the WaveRT buffer and makes it available for the OS to read
 6. Go to (2).
-For [**KSNODETYPE\_AUDIO\_KEYWORDDETECTOR**](audio.ksnodetype_audio_keyworddetector) keyword detector pins, drivers should allocate enough internal burst buffering for at least 5000ms of audio data. If the OS fails to create a stream on the pin before the buffer overflows then the driver may end the internal buffering activity and free associated resources.
+For [**KSNODETYPE\_AUDIO\_KEYWORDDETECTOR**](https://msdn.microsoft.com/library/windows/hardware/dn965563) keyword detector pins, drivers should allocate enough internal burst buffering for at least 5000ms of audio data. If the OS fails to create a stream on the pin before the buffer overflows then the driver may end the internal buffering activity and free associated resources.
 
 ## <span id="AUDIO_STREAMING_RESOURCE_DDI"></span><span id="audio_streaming_resource_ddi"></span>Audio Streaming Resource DDI
 
@@ -340,17 +339,17 @@ This requirement to register stream resources implies that all drivers that are 
 
 **Related Code Elements**
 
-[**PcAddStreamResource**](audio.pcaddstreamresource) - Adds a stream resource.
+[**PcAddStreamResource**](https://msdn.microsoft.com/library/windows/hardware/mt298188) - Adds a stream resource.
 
-[**PcStreamResourceType**](audio.pcstreamresourcetype) - Describes a PcStreamResource.
+[**PcStreamResourceType**](https://msdn.microsoft.com/library/windows/hardware/mt298190) - Describes a PcStreamResource.
 
-[**IPortClsStreamResourceManager**](audio.iportclsstreamresourcemanager) - A WaveRT miniport optionally can use this interface instead of hard-linking with [**PcAddStreamResource**](audio.pcaddstreamresource) and [**PcRemoveStreamResource**](audio.pcremovestreamresource).
+[**IPortClsStreamResourceManager**](https://msdn.microsoft.com/library/windows/hardware/mt270106) - A WaveRT miniport optionally can use this interface instead of hard-linking with [**PcAddStreamResource**](https://msdn.microsoft.com/library/windows/hardware/mt298188) and [**PcRemoveStreamResource**](https://msdn.microsoft.com/library/windows/hardware/mt298189).
 
-[**IPortClsStreamResourceManager::AddStreamResource**](audio.iportclsstreamresourcemanager_addstreamresource) - Adds a stream resource.
+[**IPortClsStreamResourceManager::AddStreamResource**](https://msdn.microsoft.com/library/windows/hardware/mt270107) - Adds a stream resource.
 
-[**IPortClsStreamResourceManager::RemoveStreamResource**](audio.iportclsstreamresourcemanager_removestreamresource)- Removes a stream resource.
+[**IPortClsStreamResourceManager::RemoveStreamResource**](https://msdn.microsoft.com/library/windows/hardware/mt270108)- Removes a stream resource.
 
-[**IPortClsStreamResourceManager2::AddStreamResource2**](audio.iportclsstreamresourcemanager2_addstreamresource2) - Adds a stream resource. Takes a PDO and can be used when portcls is linked with non-audio miniports.
+[**IPortClsStreamResourceManager2::AddStreamResource2**](https://msdn.microsoft.com/library/windows/hardware/mt604863) - Adds a stream resource. Takes a PDO and can be used when portcls is linked with non-audio miniports.
 
 **wdmaudio.inf**
 
@@ -383,8 +382,8 @@ The audio stack is responsible for communicating the wake data (speaker ID, keyw
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Voice%20Activation%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Voice%20Activation%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

@@ -1,8 +1,8 @@
 ---
-Description: Header File Changes
-MS-HAID: 'audio.header\_file\_changes'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Header File Changes
+description: Header File Changes
+ms.assetid: 9212aa8d-bb11-4ade-a70c-274a7ffe83ef
+keywords: ["data formats WDK audio", "formats WDK audio , data", "audio data formats WDK", "formats WDK audio , multichannel", "multichannel formats WDK audio", "home-theater systems WDK audio", "speakers WDK audio , home-threater systems", "audio drivers WDK , home-theater systems", "WDM audio drivers WDK , home-theater systems", "7.1 home theater speakers WDK audio", "7.1 wide configuration speakers WDK audio", "wide configuration speakers WDK audio", "5.1 surround sound speakers WDK audio", "surround sound speakers WDK audio", "header files WDK audio", "Ksmedia.h", "Dsound.h", "channel masks WDK audio", "positions WDK audio", "WDM audio data formats WDK", "data formats WDK audio , header files"]
 ---
 
 # Header File Changes
@@ -10,7 +10,7 @@ title: Header File Changes
 
 The Windows Driver Kit (WDK) contains two header files that define the speaker configurations that are supported by the Windows multimedia control panel:
 
--   Ksmedia.h defines the channel masks for the [**KSAUDIO\_CHANNEL\_CONFIG**](audio.ksaudio_channel_config) structure that is used by the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](audio.ksproperty_audio_channel_config) property request.
+-   Ksmedia.h defines the channel masks for the [**KSAUDIO\_CHANNEL\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff537083) structure that is used by the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff537250) property request.
 
 -   Dsound.h defines a list of speaker-configuration identifiers that can be submitted to the **IDirectSound::SetSpeakerConfig** method. For more information about this method, see the Windows SDK documentation.
 
@@ -110,8 +110,8 @@ For more information about speaker configuration for DirectSound, see [DirectSou
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Header%20File%20Changes%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Header%20File%20Changes%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

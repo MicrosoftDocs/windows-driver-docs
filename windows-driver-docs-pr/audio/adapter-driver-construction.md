@@ -1,8 +1,8 @@
 ---
-Description: Adapter Driver Construction
-MS-HAID: 'audio.adapter\_driver\_construction'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Adapter Driver Construction
+description: Adapter Driver Construction
+ms.assetid: e4a151b9-57aa-402f-8a0d-70547eb67917
+keywords: ["audio miniport drivers WDK , adapter drivers", "miniport drivers WDK audio , adapter drivers", "adapter drivers WDK audio , miniport drivers", "kernel-mode driver services WDK audio", "port class drivers WDK audio", "PortCls WDK audio , adapter drivers", "audio adapters WDK", "audio adapters WDK , constructing", "adapter drivers WDK audio , constructing"]
 ---
 
 # Adapter Driver Construction
@@ -21,7 +21,7 @@ The hardware vendor supplies both the general adapter code and the code for any 
 
 For an example of the general adapter code, see the implementation of the **CAdapterCommon** interface in the Sb16, Msvad, and Ac97 sample audio drivers in the Microsoft Windows Driver Kit (WDK).
 
-By using a layered approach, the vendor can write an adapter driver that operates on one of several levels, depending on the adapter's hardware functionality. When determining the level of support that a given hardware function requires, the vendor should first determine whether a system-supplied miniport driver already exists that supports the function (see the [**PcNewMiniport**](audio.pcnewminiport) function's list of system-supplied miniport drivers). If not, the vendor must implement a proprietary miniport driver but might still be able to use one of the system-supplied port drivers (see the [**PcNewPort**](audio.pcnewport) function's list of system-supplied port drivers).
+By using a layered approach, the vendor can write an adapter driver that operates on one of several levels, depending on the adapter's hardware functionality. When determining the level of support that a given hardware function requires, the vendor should first determine whether a system-supplied miniport driver already exists that supports the function (see the [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714) function's list of system-supplied miniport drivers). If not, the vendor must implement a proprietary miniport driver but might still be able to use one of the system-supplied port drivers (see the [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) function's list of system-supplied port drivers).
 
 To implement WDM support for a device, follow these steps:
 
@@ -41,8 +41,8 @@ This section discusses the following topics:
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Adapter%20Driver%20Construction%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Adapter%20Driver%20Construction%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

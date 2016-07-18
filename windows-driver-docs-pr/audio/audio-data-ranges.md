@@ -1,8 +1,8 @@
 ---
-Description: Audio Data Ranges
-MS-HAID: 'audio.audio\_data\_ranges'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Audio Data Ranges
+description: Audio Data Ranges
+ms.assetid: 690fafda-fb35-43da-9de1-6cbc3bf8eb6c
+keywords: ["data ranges WDK audio", "range values WDK audio", "KS data ranges WDK audio", "audio data ranges WDK", "KSDATARANGE structure", "WDM audio data ranges WDK", "data ranges WDK audio , about audio data ranges"]
 ---
 
 # Audio Data Ranges
@@ -17,9 +17,9 @@ When the miniport driver instantiates a pin, it configures the pin to handle a s
 
 For information about using property requests to query audio pins for their data ranges and select data intersections, see [Pin Data-Range and Intersection Properties](pin-data-range-and-intersection-properties.md).
 
-To specify a data range for a wave pin, the [**KSDATARANGE**](stream.ksdatarange) structure is followed by information describing the range of sample sizes, frequencies, and channels that the pin supports. This information, including the KSDATARANGE structure itself, is encapsulated in the [**KSDATARANGE\_AUDIO**](audio.ksdatarange_audio) structure.
+To specify a data range for a wave pin, the [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) structure is followed by information describing the range of sample sizes, frequencies, and channels that the pin supports. This information, including the KSDATARANGE structure itself, is encapsulated in the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure.
 
-To specify a data range for a MIDI or DirectMusic pin, the KSDATARANGE structure is followed by additional information, including the maximum number of channels and notes that can be played at the same time. This information, along with the KSDATARANGE structure itself, is encapsulated in the [**KSDATARANGE\_MUSIC**](audio.ksdatarange_music) structure.
+To specify a data range for a MIDI or DirectMusic pin, the KSDATARANGE structure is followed by additional information, including the maximum number of channels and notes that can be played at the same time. This information, along with the KSDATARANGE structure itself, is encapsulated in the [**KSDATARANGE\_MUSIC**](https://msdn.microsoft.com/library/windows/hardware/ff537097) structure.
 
 This document presents several examples of data ranges that use the KSDATARANGE\_AUDIO and KSDATARANGE\_MUSIC structures:
 
@@ -33,8 +33,8 @@ This document presents several examples of data ranges that use the KSDATARANGE\
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Data%20Ranges%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Data%20Ranges%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

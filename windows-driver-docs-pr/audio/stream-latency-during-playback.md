@@ -1,8 +1,7 @@
 ---
-Description: Stream Latency During Playback
-MS-HAID: 'audio.stream\_latency\_during\_playback'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Stream Latency During Playback
+description: Stream Latency During Playback
+ms.assetid: 70b41245-f463-4225-b79c-0ee65d8a0132
 ---
 
 # Stream Latency During Playback
@@ -30,9 +29,9 @@ Although the client can set up a timer to periodically activate its buffer-writi
 
 By having the audio device notify the client each time it finishes reading a block of data from the buffer, the client can make the latency smaller than would otherwise be practical.
 
-The client can obtain a summary of the delays that contribute to stream latency by sending a [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](audio.ksproperty_rtaudio_hwlatency) request to the WaveRT port driver.
+The client can obtain a summary of the delays that contribute to stream latency by sending a [**KSPROPERTY\_RTAUDIO\_HWLATENCY**](https://msdn.microsoft.com/library/windows/hardware/ff537378) request to the WaveRT port driver.
 
-After the client determines the amount of separation to maintain between the write and play positions, the client monitors changes in the play position to determine how far to advance the write position. In Windows Server 2008 and later operating systems, the client sends out a [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](audio.ksproperty_rtaudio_positionregister) property request to determine the play position. Support for this feature is provided by improvements in the PortCls system driver.
+After the client determines the amount of separation to maintain between the write and play positions, the client monitors changes in the play position to determine how far to advance the write position. In Windows Server 2008 and later operating systems, the client sends out a [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](https://msdn.microsoft.com/library/windows/hardware/ff537381) property request to determine the play position. Support for this feature is provided by improvements in the PortCls system driver.
 
 If the audio device has a position register as shown in the preceding diagram, the property request maps the register to a virtual memory address that is accessible to the user-mode client. After the position register is mapped, the client can read the contents of the memory address to determine the current play position.
 
@@ -40,8 +39,8 @@ If the audio device has a position register as shown in the preceding diagram, t
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Stream%20Latency%20During%20Playback%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Stream%20Latency%20During%20Playback%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

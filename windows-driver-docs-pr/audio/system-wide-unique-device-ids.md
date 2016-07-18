@@ -1,8 +1,8 @@
 ---
-Description: 'System-Wide Unique Device IDs'
-MS-HAID: 'audio.system\_wide\_unique\_device\_ids'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'System-Wide Unique Device IDs'
+title: System-Wide Unique Device IDs
+description: System-Wide Unique Device IDs
+ms.assetid: 628577b6-05fe-4b63-929f-6d63e93c9266
+keywords: ["audio adapters WDK , unique device IDs", "adapter drivers WDK audio , unique device IDs", "Port Class audio adapters WDK , unique device IDs", "MF bus drivers WDK audio", "system-supplied multifunction devices WDK audio", "multifunction audio devices WDK , audio adapters", "unique device IDs WDK audio", "device IDs WDK audio", "identifying device IDs", "subdevices WDK audio", "proprietary bus drivers WDK audio", "device-ID strings WDK audio"]
 ---
 
 # System-Wide Unique Device IDs
@@ -11,9 +11,9 @@ title: 'System-Wide Unique Device IDs'
 ## <span id="system_wide_unique_device_ids"></span><span id="SYSTEM_WIDE_UNIQUE_DEVICE_IDS"></span>
 
 
-A driver for a typical audio adapter should easily be able to support several instances of the same audio adapter card in a system. Nearly all the data structures that a driver maintains are stored in the device-extension buffer (see the description of the [**DEVICE\_OBJECT**](kernel.device_object) structure's **DeviceExtension** field). If several instances of a driver share any global data, however, those instances should synchronize their access to this data.
+A driver for a typical audio adapter should easily be able to support several instances of the same audio adapter card in a system. Nearly all the data structures that a driver maintains are stored in the device-extension buffer (see the description of the [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure's **DeviceExtension** field). If several instances of a driver share any global data, however, those instances should synchronize their access to this data.
 
-One additional requirement is that each subdevice on a particular instance of an adapter card should have a [device-ID string](devinst.device_identification_strings) that uniquely identifies the subdevice across all instances of the same adapter card in the system.
+One additional requirement is that each subdevice on a particular instance of an adapter card should have a [device-ID string](https://msdn.microsoft.com/library/windows/hardware/ff541224) that uniquely identifies the subdevice across all instances of the same adapter card in the system.
 
 The most straightforward way to accomplish this is to expose each subdevice on the adapter card as a logically distinct device to the Plug and Play manager. This is presented as option (1) in [Multifunction Audio Devices](multifunction-audio-devices.md).
 
@@ -29,7 +29,7 @@ When either type of dependency exists, a proprietary bus driver is nearly always
 
 If you provide your own bus driver for an adapter card, you should ensure that the device IDs that your bus driver assigns are unique across the system.
 
-A bus driver provides a device ID for one of its children in response to an [**IRP\_MN\_QUERY\_ID**](kernel.irp_mn_query_id) query from the Plug and Play manager. The ID can be specified in one of two ways, which the bus driver indicates in its response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](kernel.irp_mn_query_capabilities) query by setting the [**DEVICE\_CAPABILITIES**](kernel.device_capabilities) structure's **UniqueID** field to **TRUE** or **FALSE**:
+A bus driver provides a device ID for one of its children in response to an [**IRP\_MN\_QUERY\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) query from the Plug and Play manager. The ID can be specified in one of two ways, which the bus driver indicates in its response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664) query by setting the [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure's **UniqueID** field to **TRUE** or **FALSE**:
 
 -   **UniqueID** = **TRUE**
 
@@ -45,8 +45,8 @@ All audio bus drivers should set **UniqueID** = **FALSE** for their children. Th
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20System-Wide%20Unique%20Device%20IDs%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20System-Wide%20Unique%20Device%20IDs%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

@@ -1,8 +1,8 @@
 ---
-Description: PortCls Support by Operating System
-MS-HAID: 'audio.portcls\_support\_by\_operating\_system'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: PortCls Support by Operating System
+description: PortCls Support by Operating System
+ms.assetid: 87291410-41fa-49d2-a1e2-6d5d9b90deaf
+keywords: ["audio miniport drivers WDK , Port Class", "miniport drivers WDK audio , Port Class", "Port Class library WDK audio", "PortCls WDK audio , support per operating system", "audio power management interfaces WDK", "audio stream object interfaces WDK", "audio miniport auxillary interfaces WDK", "audio miniport object interfaces WDK", "audio port object interfaces WDK", "audio helper object interfaces WDK", "audio port class interfaces WDK", "interfaces WDK Port Class", "prefetch offset"]
 ---
 
 # PortCls Support by Operating System
@@ -15,172 +15,172 @@ The following lists contain all the functions and interfaces that the PortCls sy
 
 ### <span id="Audio_Port_Class_Functions"></span><span id="audio_port_class_functions"></span><span id="AUDIO_PORT_CLASS_FUNCTIONS"></span>Audio Port Class Functions
 
-[**PcAddAdapterDevice**](audio.pcaddadapterdevice)
+[**PcAddAdapterDevice**](https://msdn.microsoft.com/library/windows/hardware/ff537683)
 
-\* [**PcAddContentHandlers**](audio.pcaddcontenthandlers)
+\* [**PcAddContentHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff537684)
 
-[**PcCompleteIrp**](audio.pccompleteirp)
+[**PcCompleteIrp**](https://msdn.microsoft.com/library/windows/hardware/ff537686)
 
-[**PcCompletePendingPropertyRequest**](audio.pccompletependingpropertyrequest)
+[**PcCompletePendingPropertyRequest**](https://msdn.microsoft.com/library/windows/hardware/ff537687)
 
-\* [**PcCreateContentMixed**](audio.pccreatecontentmixed)
+\* [**PcCreateContentMixed**](https://msdn.microsoft.com/library/windows/hardware/ff537689)
 
-\* [**PcDestroyContent**](audio.pcdestroycontent)
+\* [**PcDestroyContent**](https://msdn.microsoft.com/library/windows/hardware/ff537690)
 
-[**PcDispatchIrp**](audio.pcdispatchirp)
+[**PcDispatchIrp**](https://msdn.microsoft.com/library/windows/hardware/ff537691)
 
-\* [**PcForwardContentToDeviceObject**](audio.pcforwardcontenttodeviceobject)
+\* [**PcForwardContentToDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff537696)
 
-\* [**PcForwardContentToFileObject**](audio.pcforwardcontenttofileobject)
+\* [**PcForwardContentToFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff537697)
 
-\* [**PcForwardContentToInterface**](audio.pcforwardcontenttointerface)
+\* [**PcForwardContentToInterface**](https://msdn.microsoft.com/library/windows/hardware/ff537698)
 
-[**PcForwardIrpSynchronous**](audio.pcforwardirpsynchronous)
+[**PcForwardIrpSynchronous**](https://msdn.microsoft.com/library/windows/hardware/ff537699)
 
-\* [**PcGetContentRights**](audio.pcgetcontentrights)
+\* [**PcGetContentRights**](https://msdn.microsoft.com/library/windows/hardware/ff537700)
 
-[**PcGetDeviceProperty**](audio.pcgetdeviceproperty)
+[**PcGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff537701)
 
-[**PcGetTimeInterval**](audio.pcgettimeinterval)
+[**PcGetTimeInterval**](https://msdn.microsoft.com/library/windows/hardware/ff537702)
 
-[**PcInitializeAdapterDriver**](audio.pcinitializeadapterdriver)
+[**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff537703)
 
-[**PcNewDmaChannel**](audio.pcnewdmachannel)
+[**PcNewDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff537712)
 
-[**PcNewInterruptSync**](audio.pcnewinterruptsync)
+[**PcNewInterruptSync**](https://msdn.microsoft.com/library/windows/hardware/ff537713)
 
-[**PcNewMiniport**](audio.pcnewminiport)
+[**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714)
 
-[**PcNewPort**](audio.pcnewport)
+[**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715)
 
-[**PcNewRegistryKey**](audio.pcnewregistrykey)
+[**PcNewRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff537716)
 
-[**PcNewResourceList**](audio.pcnewresourcelist)
+[**PcNewResourceList**](https://msdn.microsoft.com/library/windows/hardware/ff537717)
 
-[**PcNewResourceSublist**](audio.pcnewresourcesublist)
+[**PcNewResourceSublist**](https://msdn.microsoft.com/library/windows/hardware/ff537718)
 
-[**PcNewServiceGroup**](audio.pcnewservicegroup)
+[**PcNewServiceGroup**](https://msdn.microsoft.com/library/windows/hardware/ff537719)
 
-[**PcRegisterAdapterPowerManagement**](audio.pcregisteradapterpowermanagement)
+[**PcRegisterAdapterPowerManagement**](https://msdn.microsoft.com/library/windows/hardware/ff537724)
 
-[**PcRegisterIoTimeout**](audio.pcregisteriotimeout)
+[**PcRegisterIoTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff537725)
 
-[**PcRegisterPhysicalConnection**](audio.pcregisterphysicalconnection)
+[**PcRegisterPhysicalConnection**](https://msdn.microsoft.com/library/windows/hardware/ff537726)
 
-[**PcRegisterPhysicalConnectionFromExternal**](audio.pcregisterphysicalconnectionfromexternal)
+[**PcRegisterPhysicalConnectionFromExternal**](https://msdn.microsoft.com/library/windows/hardware/ff537728)
 
-[**PcRegisterPhysicalConnectionToExternal**](audio.pcregisterphysicalconnectiontoexternal)
+[**PcRegisterPhysicalConnectionToExternal**](https://msdn.microsoft.com/library/windows/hardware/ff537729)
 
-[**PcRegisterSubdevice**](audio.pcregistersubdevice)
+[**PcRegisterSubdevice**](https://msdn.microsoft.com/library/windows/hardware/ff537731)
 
-[**PcRequestNewPowerState**](audio.pcrequestnewpowerstate)
+[**PcRequestNewPowerState**](https://msdn.microsoft.com/library/windows/hardware/ff537733)
 
-[**PcUnregisterIoTimeout**](audio.pcunregisteriotimeout)
+[**PcUnregisterIoTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff537736)
 
 ### <span id="Audio_Helper_Object_Interfaces"></span><span id="audio_helper_object_interfaces"></span><span id="AUDIO_HELPER_OBJECT_INTERFACES"></span>Audio Helper Object Interfaces
 
-[IDmaChannel](audio.idmachannel)
+[IDmaChannel](https://msdn.microsoft.com/library/windows/hardware/ff536547)
 
-[IDmaChannelSlave](audio.idmachannelslave)
+[IDmaChannelSlave](https://msdn.microsoft.com/library/windows/hardware/ff536548)
 
-\* [IDrmPort](audio.idrmport)
+\* [IDrmPort](https://msdn.microsoft.com/library/windows/hardware/ff536571)
 
-\* [IDrmPort2](audio.idrmport2)
+\* [IDrmPort2](https://msdn.microsoft.com/library/windows/hardware/ff536573)
 
-[IInterruptSync](audio.iinterruptsync)
+[IInterruptSync](https://msdn.microsoft.com/library/windows/hardware/ff536590)
 
-[IMasterClock](audio.imasterclock)
+[IMasterClock](https://msdn.microsoft.com/library/windows/hardware/ff536696)
 
-\* [IPortClsVersion](audio.iportclsversion)
+\* [IPortClsVersion](https://msdn.microsoft.com/library/windows/hardware/ff536877)
 
-[IPortEvents](audio.iportevents)
+[IPortEvents](https://msdn.microsoft.com/library/windows/hardware/ff536884)
 
-\* [IPreFetchOffset](audio.iprefetchoffset)
+\* [IPreFetchOffset](https://msdn.microsoft.com/library/windows/hardware/ff536951)
 
-[IRegistryKey](audio.iregistrykey)
+[IRegistryKey](https://msdn.microsoft.com/library/windows/hardware/ff536965)
 
-[IResourceList](audio.iresourcelist)
+[IResourceList](https://msdn.microsoft.com/library/windows/hardware/ff536976)
 
-[IServiceGroup](audio.iservicegroup)
+[IServiceGroup](https://msdn.microsoft.com/library/windows/hardware/ff536994)
 
-[IServiceSink](audio.iservicesink)
+[IServiceSink](https://msdn.microsoft.com/library/windows/hardware/ff537006)
 
-\*\* [IUnregisterPhysicalConnection](audio.iunregisterphysicalconnection)
+\*\* [IUnregisterPhysicalConnection](https://msdn.microsoft.com/library/windows/hardware/ff537022)
 
-\*\* [IUnregisterSubdevice](audio.iunregistersubdevice)
+\*\* [IUnregisterSubdevice](https://msdn.microsoft.com/library/windows/hardware/ff537030)
 
 ### <span id="Audio_Port_Object_Interfaces"></span><span id="audio_port_object_interfaces"></span><span id="AUDIO_PORT_OBJECT_INTERFACES"></span>Audio Port Object Interfaces
 
-[IPort](audio.iport)
+[IPort](https://msdn.microsoft.com/library/windows/hardware/ff536842)
 
-[IPortDMus](audio.iportdmus)
+[IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879)
 
-[IPortMidi](audio.iportmidi)
+[IPortMidi](https://msdn.microsoft.com/library/windows/hardware/ff536891)
 
-[IPortTopology](audio.iporttopology)
+[IPortTopology](https://msdn.microsoft.com/library/windows/hardware/ff536896)
 
-[IPortWaveCyclic](audio.iportwavecyclic)
+[IPortWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536899)
 
-[IPortWavePci](audio.iportwavepci)
+[IPortWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536905)
 
-\*\* [IPortWaveRT](audio.iportwavert)
+\*\* [IPortWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536920)
 
 ### <span id="Audio_Miniport_Object_Interfaces"></span><span id="audio_miniport_object_interfaces"></span><span id="AUDIO_MINIPORT_OBJECT_INTERFACES"></span>Audio Miniport Object Interfaces
 
-[IMiniport](audio.iminiport)
+[IMiniport](https://msdn.microsoft.com/library/windows/hardware/ff536698)
 
-[IMiniportDMus](audio.iminiportdmus)
+[IMiniportDMus](https://msdn.microsoft.com/library/windows/hardware/ff536699)
 
-[IMiniportMidi](audio.iminiportmidi)
+[IMiniportMidi](https://msdn.microsoft.com/library/windows/hardware/ff536703)
 
-[IMiniportTopology](audio.iminiporttopology)
+[IMiniportTopology](https://msdn.microsoft.com/library/windows/hardware/ff536712)
 
-[IMiniportWaveCyclic](audio.iminiportwavecyclic)
+[IMiniportWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536714)
 
-[IMiniportWavePci](audio.iminiportwavepci)
+[IMiniportWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536724)
 
-\*\* [IMiniportWaveRT](audio.iminiportwavert)
+\*\* [IMiniportWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536737)
 
 ### <span id="Audio_Miniport_Auxiliary_Interfaces"></span><span id="audio_miniport_auxiliary_interfaces"></span><span id="AUDIO_MINIPORT_AUXILIARY_INTERFACES"></span>Audio Miniport Auxiliary Interfaces
 
-\* [IMusicTechnology](audio.imusictechnology)
+\* [IMusicTechnology](https://msdn.microsoft.com/library/windows/hardware/ff536778)
 
-\* [IPinCount](audio.ipincount)
+\* [IPinCount](https://msdn.microsoft.com/library/windows/hardware/ff536832)
 
 ### <span id="Audio_Stream_Object_Interfaces"></span><span id="audio_stream_object_interfaces"></span><span id="AUDIO_STREAM_OBJECT_INTERFACES"></span>Audio Stream Object Interfaces
 
-[IAllocatorMXF](audio.iallocatormxf)
+[IAllocatorMXF](https://msdn.microsoft.com/library/windows/hardware/ff536491)
 
-\* [IDrmAudioStream](audio.idrmaudiostream)
+\* [IDrmAudioStream](https://msdn.microsoft.com/library/windows/hardware/ff536568)
 
-[IMiniportMidiStream](audio.iminiportmidistream)
+[IMiniportMidiStream](https://msdn.microsoft.com/library/windows/hardware/ff536704)
 
-[IMiniportWaveCyclicStream](audio.iminiportwavecyclicstream)
+[IMiniportWaveCyclicStream](https://msdn.microsoft.com/library/windows/hardware/ff536715)
 
-[IMiniportWavePciStream](audio.iminiportwavepcistream)
+[IMiniportWavePciStream](https://msdn.microsoft.com/library/windows/hardware/ff536725)
 
-\*\* [IMiniportWaveRTStream](audio.iminiportwavertstream)
+\*\* [IMiniportWaveRTStream](https://msdn.microsoft.com/library/windows/hardware/ff536738)
 
-[IMXF](audio.imxf)
+[IMXF](https://msdn.microsoft.com/library/windows/hardware/ff536782)
 
-[IPortWavePciStream](audio.iportwavepcistream)
+[IPortWavePciStream](https://msdn.microsoft.com/library/windows/hardware/ff536907)
 
-\*\* [IPortWaveRTStream](audio.iportwavertstream)
+\*\* [IPortWaveRTStream](https://msdn.microsoft.com/library/windows/hardware/ff536922)
 
-[ISynthSinkDMus](audio.isynthsinkdmus)
+[ISynthSinkDMus](https://msdn.microsoft.com/library/windows/hardware/ff537011)
 
 ### <span id="Audio_Power_Management_Interfaces"></span><span id="audio_power_management_interfaces"></span><span id="AUDIO_POWER_MANAGEMENT_INTERFACES"></span>Audio Power Management Interfaces
 
-[IAdapterPowerManagement](audio.iadapterpowermanagement)
+[IAdapterPowerManagement](https://msdn.microsoft.com/library/windows/hardware/ff536485)
 
-[IPowerNotify](audio.ipowernotify)
-
- 
+[IPowerNotify](https://msdn.microsoft.com/library/windows/hardware/ff536947)
 
  
 
+ 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20PortCls%20Support%20by%20Operating%20System%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20PortCls%20Support%20by%20Operating%20System%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 

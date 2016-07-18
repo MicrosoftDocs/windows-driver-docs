@@ -1,8 +1,8 @@
 ---
-Description: Synthesizer Miniport Driver Overview
-MS-HAID: 'audio.synthesizer\_miniport\_driver\_overview'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Synthesizer Miniport Driver Overview
+description: Synthesizer Miniport Driver Overview
+ms.assetid: dbd6b95e-f8c8-49f1-ad90-b34821772391
+keywords: ["miniport drivers WDK audio , synthesizers", "synthesizers WDK audio , miniport drivers", "wave sinks WDK audio , miniport drivers", "DirectMusic kernel-mode WDK audio , miniport drivers", "kernel-mode synths WDK audio , miniport drivers", "port drivers WDK audio , synthesizers", "hardware acceleration WDK audio", "miniport drivers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , kernel-mode hardware acceleration"]
 ---
 
 # Synthesizer Miniport Driver Overview
@@ -17,17 +17,17 @@ If you are implementing support for hardware, the only choice is to write a kern
 
 For kernel-mode DirectMusic drivers, the most important header file is dmusicks.h. It contains the main kernel-mode interfaces you need to implement your miniport driver. These interfaces are:
 
-[IMiniportDMus](audio.iminiportdmus)
+[IMiniportDMus](https://msdn.microsoft.com/library/windows/hardware/ff536699)
 
-[ISynthSinkDMus](audio.isynthsinkdmus)
+[ISynthSinkDMus](https://msdn.microsoft.com/library/windows/hardware/ff537011)
 
-[IMXF](audio.imxf)
+[IMXF](https://msdn.microsoft.com/library/windows/hardware/ff536782)
 
-[IAllocatorMXF](audio.iallocatormxf)
+[IAllocatorMXF](https://msdn.microsoft.com/library/windows/hardware/ff536491)
 
-[IMasterClock](audio.imasterclock)
+[IMasterClock](https://msdn.microsoft.com/library/windows/hardware/ff536696)
 
-[IPortDMus](audio.iportdmus)
+[IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879)
 
 The last three of these interfaces are implemented in PortCls.sys.
 
@@ -37,7 +37,7 @@ The following diagram shows the relationship between the IHV adapter driver and 
 
 ![diagram illustrating the relationship of the adapter driver to the directmusic system](images/dmkmbig.png)
 
-At the topmost level, the driver is exposed via a DirectMusic port driver (an **IDirectMusicPort** interface instance). This is how an application talks to DirectMusic. This port driver communicates downward to a pin instance via standard kernel streaming calls through the [**DeviceIoControl**](base.deviceiocontrol) function (described in the Microsoft Windows SDK documentation).
+At the topmost level, the driver is exposed via a DirectMusic port driver (an **IDirectMusicPort** interface instance). This is how an application talks to DirectMusic. This port driver communicates downward to a pin instance via standard kernel streaming calls through the [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) function (described in the Microsoft Windows SDK documentation).
 
 Note that the term "port" has two conflicting meanings in the figure above. Avoid confusing the usage of the term port by the DirectMusic API, in user mode above, with the kernel-mode DMus port driver. The terms have similar but slightly different meanings in the two contexts. In particular, note that the **IDirectMusicPort** interface at the top of the figure presents an abstraction of a single pin instance that the DMus port driver implements in the lower half of the figure.
 
@@ -51,8 +51,8 @@ The section [DirectMusic Miniport Driver Interface](directmusic-miniport-driver-
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Synthesizer%20Miniport%20Driver%20Overview%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Synthesizer%20Miniport%20Driver%20Overview%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

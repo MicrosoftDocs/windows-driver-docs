@@ -1,8 +1,8 @@
 ---
-Description: WDM Audio Terminology
-MS-HAID: 'audio.wdm\_audio\_terminology'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WDM Audio Terminology
+description: WDM Audio Terminology
+ms.assetid: bb36a66a-84dc-46c2-adcb-761d0acec3a1
+keywords: ["WDM audio drivers WDK , about WDM audio drivers", "audio drivers WDK , about audio drivers", "generic driver architecture WDK audio", "miniport drivers WDK audio , generic vs. WDM audio", "port drivers WDK audio , generic vs. WDM audio", "minidrivers WDK audio", "bus drivers WDK audio", "adapter drivers WDK audio", "class drivers WDK audio", "upper-edge interfaces WDK audio", "lower-edge interfaces WDK audio", "stacks WDK audio", "driver stacks WDK audio", "system bus drivers WDK audio", "subdevices WDK audio"]
 ---
 
 # WDM Audio Terminology
@@ -11,13 +11,13 @@ title: WDM Audio Terminology
 ## <span id="wdm_audio_terminology"></span><span id="WDM_AUDIO_TERMINOLOGY"></span>
 
 
-This section describes the differences in terminology between the Microsoft Windows Driver Model (WDM) audio driver architecture and the generic Windows layered driver architecture. The generic driver architecture is exemplified by SCSI port/miniport drivers (see [Storage Driver Architecture](storage.storage_driver_architecture)).
+This section describes the differences in terminology between the Microsoft Windows Driver Model (WDM) audio driver architecture and the generic Windows layered driver architecture. The generic driver architecture is exemplified by SCSI port/miniport drivers (see [Storage Driver Architecture](https://msdn.microsoft.com/library/windows/hardware/ff566978)).
 
 The terms defined by the generic and WDM audio driver architectures are similar, but they do have some important differences, as described below.
 
 ### <span id="Miniport_Driver__Generic_"></span><span id="miniport_driver__generic_"></span><span id="MINIPORT_DRIVER__GENERIC_"></span>Miniport Driver (Generic)
 
-The miniport driver (generic) is the hardware-specific driver for an adapter that resides on a system bus (for example, PCI or ISA). This driver has a single entry point, [*DriverEntry*](kernel.driverentry), and registers a table of functions with a port driver. This table of functions serves as the miniport driver's upper-edge interface.
+The miniport driver (generic) is the hardware-specific driver for an adapter that resides on a system bus (for example, PCI or ISA). This driver has a single entry point, [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113), and registers a table of functions with a port driver. This table of functions serves as the miniport driver's upper-edge interface.
 
 The miniport driver sits below the port driver in the driver stack. That is, all calls to the miniport driver are made from the port driver and all calls out of the miniport driver are to the port driver's lower-edge interface.
 
@@ -53,7 +53,7 @@ A minidriver might also have to communicate with several class drivers. An examp
 
 ### <span id="Bus_Driver__Generic_"></span><span id="bus_driver__generic_"></span><span id="BUS_DRIVER__GENERIC_"></span>Bus Driver (Generic)
 
-The bus driver (generic) gives minidrivers access to a physical bus. The Microsoft Windows [*hardware abstraction layer (HAL)*](wdkgloss.h#wdkgloss-hardware-abstraction-layer--hal-) is sometimes referred to as the *system bus driver* because it provides access to the system bus. For more information, see [Bus Drivers](kernel.bus_drivers).
+The bus driver (generic) gives minidrivers access to a physical bus. The Microsoft Windows [*hardware abstraction layer (HAL)*](https://msdn.microsoft.com/library/windows/hardware/ff556288#wdkgloss-hardware-abstraction-layer--hal-) is sometimes referred to as the *system bus driver* because it provides access to the system bus. For more information, see [Bus Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540704).
 
 ### <span id="Class_Driver__Generic_"></span><span id="class_driver__generic_"></span><span id="CLASS_DRIVER__GENERIC_"></span>Class Driver (Generic)
 
@@ -71,13 +71,13 @@ The class driver:
 
 The miniport driver (WDM audio) implements a function-specific interface for a function on an audio adapter card that resides on a system bus. A miniport driver is a component of an adapter driver. It is not recognized as a driver by the operating system. In this regard, an audio miniport driver differs from a generic miniport driver.
 
-Unlike generic miniport drivers, audio miniport drivers do not implement [*DriverEntry*](kernel.driverentry), are not registered, and do not rely entirely on their respective port drivers for support. Multiple audio miniport drivers that address multiple functions can be linked into a single adapter driver (and associated with a single device object).
+Unlike generic miniport drivers, audio miniport drivers do not implement [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113), are not registered, and do not rely entirely on their respective port drivers for support. Multiple audio miniport drivers that address multiple functions can be linked into a single adapter driver (and associated with a single device object).
 
 ### <span id="Adapter_Driver__WDM_Audio_"></span><span id="adapter_driver__wdm_audio_"></span><span id="ADAPTER_DRIVER__WDM_AUDIO_"></span>Adapter Driver (WDM Audio)
 
 The adapter driver (WDM audio) serves as a container for all miniport drivers associated with a given adapter. This adapter driver is recognized as a driver by the operating system and is contained in its own .sys file.
 
-The audio adapter driver consists of a set of miniport drivers and additional code that addresses initialization issues. For example, an adapter driver implements a [*DriverEntry*](kernel.driverentry) entry point.
+The audio adapter driver consists of a set of miniport drivers and additional code that addresses initialization issues. For example, an adapter driver implements a [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) entry point.
 
 ### <span id="Port_Driver__WDM_Audio_"></span><span id="port_driver__wdm_audio_"></span><span id="PORT_DRIVER__WDM_AUDIO_"></span>Port Driver (WDM Audio)
 
@@ -93,7 +93,7 @@ The port class driver (WDM audio) serves as a container for a collection of port
 
 An adapter driver manages an adapter card that might contain several different hardware functions. As shown in the preceding figure, the adapter driver contains a miniport driver to manage each type of hardware function. Similarly, the port class driver is designed to provide support to adapter cards with multiple hardware functions. The port class driver provides a port driver for each of the well defined function types that it supports. The adapter driver binds its miniport driver for a particular function to the corresponding port driver for that function type. The port driver for each function handles communication with the WDM audio clients that use the function. The miniport driver contains all of the hardware-specific code for managing that function.
 
-The port class driver (WDM audio) primarily functions as a container for multiple subdevices that are associated with a single device object. Bus drivers create a single [*physical device object (PDO)*](wdkgloss.p#wdkgloss-physical-device-object--pdo-) for each Plug and Play (PnP) node they enumerate.
+The port class driver (WDM audio) primarily functions as a container for multiple subdevices that are associated with a single device object. Bus drivers create a single [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-physical-device-object--pdo-) for each Plug and Play (PnP) node they enumerate.
 
 In the case of an audio adapter, a single PnP node frequently contains multiple audio functions. To expose the various functions associated with a node as distinct devices typically requires writing a bus driver for the adapter. The bus driver enumerates the hardware functions and creates corresponding PDOs. In this scenario, one or more function-specific drivers need to bind to the PDOs and negotiate with the bus driver for access to shared resources on the adapter.
 
@@ -103,7 +103,7 @@ A reference string is appended to the device name to specify the desired subdevi
 
 An adapter driver instantiates a port driver and a miniport driver and binds them together by passing a pointer to the miniport driver as a parameter to the port driver's initialization function (see the code example in [Subdevice Creation](subdevice-creation.md)). The resulting port/miniport driver stack constitutes a KS filter that represents one of the subdevice types that the port class driver supports.
 
-The port class driver's [**PcRegisterSubdevice**](audio.pcregistersubdevice) function registers the subdevice, which is perceived as a device by the rest of the system. The port driver receives creation IRPs targeted at the device object, but for only those IRPs that are specified by the reference string under which the subdevice is registered. The port driver also receives the IRPs targeted at the file objects that are associated with the subdevice. The port driver is responsible for the subdevice's behavior as a KS filter and for communicating appropriately with the miniport driver.
+The port class driver's [**PcRegisterSubdevice**](https://msdn.microsoft.com/library/windows/hardware/ff537731) function registers the subdevice, which is perceived as a device by the rest of the system. The port driver receives creation IRPs targeted at the device object, but for only those IRPs that are specified by the reference string under which the subdevice is registered. The port driver also receives the IRPs targeted at the file objects that are associated with the subdevice. The port driver is responsible for the subdevice's behavior as a KS filter and for communicating appropriately with the miniport driver.
 
 For more information about designing drivers for multifunction audio cards, see [Multifunction Audio Devices](multifunction-audio-devices.md).
 
@@ -111,8 +111,8 @@ For more information about designing drivers for multifunction audio cards, see 
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20WDM%20Audio%20Terminology%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20WDM%20Audio%20Terminology%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

@@ -1,8 +1,8 @@
 ---
-Description: DirectSound Capture Effects
-MS-HAID: 'audio.directsound\_capture\_effects'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: DirectSound Capture Effects
+description: DirectSound Capture Effects
+ms.assetid: 5dcadcea-0b6a-447d-828d-a7f256f97088
+keywords: ["DirectSound WDK audio , capture effects", "acoustic echo cancellation WDK audio", "noise suppression WDK audio", "AEC WDK audio", "capture effects WDK audio", "full-duplex applications WDK audio"]
 ---
 
 # DirectSound Capture Effects
@@ -35,11 +35,11 @@ A full-duplex DirectSound application can use the **IDirectSoundCaptureFXAec** a
 <tbody>
 <tr class="odd">
 <td align="left"><p>GUID_DSCFX_CLASS_AEC</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_ACOUSTIC_ECHO_CANCEL</strong>](audio.ksnodetype_acoustic_echo_cancel)</p></td>
+<td align="left"><p>[<strong>KSNODETYPE_ACOUSTIC_ECHO_CANCEL</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537150)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GUID_DSCFX_CLASS_NS</p></td>
-<td align="left"><p>[<strong>KSNODETYPE_NOISE_SUPPRESS</strong>](audio.ksnodetype_noise_suppress)</p></td>
+<td align="left"><p>[<strong>KSNODETYPE_NOISE_SUPPRESS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff537182)</p></td>
 </tr>
 </tbody>
 </table>
@@ -58,8 +58,8 @@ These topics are discussed in the remainder of this section:
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DirectSound%20Capture%20Effects%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DirectSound%20Capture%20Effects%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

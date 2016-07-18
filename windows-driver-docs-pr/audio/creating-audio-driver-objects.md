@@ -1,8 +1,8 @@
 ---
-Description: Creating Audio Driver Objects
-MS-HAID: 'audio.creating\_audio\_driver\_objects'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Creating Audio Driver Objects
+description: Creating Audio Driver Objects
+ms.assetid: c5d1b1b6-fc47-4227-bcca-1119488dce3b
+keywords: ["audio driver objects WDK", "COM object creation WDK audio", "objects WDK audio"]
 ---
 
 # Creating Audio Driver Objects
@@ -38,7 +38,7 @@ Specifies the class GUID, which is passed by reference. This parameter is used o
 Specifies the **IUnknown** interface for aggregating the new object. This parameter can be set to **NULL** to indicate that no aggregation is required.
 
 <span id="PoolType"></span><span id="pooltype"></span><span id="POOLTYPE"></span>*PoolType*  
-Specifies the type of memory pool from which the object is to be allocated (see [**POOL\_TYPE**](kernel.pool_type)).
+Specifies the type of memory pool from which the object is to be allocated (see [**POOL\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559707)).
 
 The first three parameters are identical to the parameters of the COM **CoCreateInstance** function. For an example of a creation function of this type, see the **CreateMiniportMidiFM** function in the Fmsynth sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
@@ -55,14 +55,14 @@ NTSTATUS NewMyObject(
 
 The NewMyObject function creates and initializes an object, and then passes a pointer back to the interface. Because the initialization parameters are class-specific, so is the prototype of a New*Xxx* function. The New*Xxx* function provides convenient access to the constructor for the object.
 
-For an example of a New*Xxx* function of this type, see [**PcNewDmaChannel**](audio.pcnewdmachannel).
+For an example of a New*Xxx* function of this type, see [**PcNewDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff537712).
 
  
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Creating%20Audio%20Driver%20Objects%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Creating%20Audio%20Driver%20Objects%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

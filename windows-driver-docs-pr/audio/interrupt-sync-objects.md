@@ -1,8 +1,8 @@
 ---
-Description: Interrupt Sync Objects
-MS-HAID: 'audio.interrupt\_sync\_objects'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Interrupt Sync Objects
+description: Interrupt Sync Objects
+ms.assetid: c9e228e0-6178-442d-a82a-6b14ed67c9d2
+keywords: ["helper objects WDK audio , interrupt sync objects", "interrupt sync objects WDK audio", "IInterruptSync interface", "synchronization WDK audio", "interrupt service routines WDK audio", "ISRs WDK audio", "non-interrupt routines WDK audio"]
 ---
 
 # Interrupt Sync Objects
@@ -11,7 +11,7 @@ title: Interrupt Sync Objects
 ## <span id="interrupt_sync_objects"></span><span id="INTERRUPT_SYNC_OBJECTS"></span>
 
 
-The PortCls system driver implements the [IInterruptSync](audio.iinterruptsync) interface for the benefit of miniport drivers. **IInterruptSync** represents an interrupt sync object that synchronizes the execution of a list of interrupt service routines (ISRs) with non-interrupt routines.
+The PortCls system driver implements the [IInterruptSync](https://msdn.microsoft.com/library/windows/hardware/ff536590) interface for the benefit of miniport drivers. **IInterruptSync** represents an interrupt sync object that synchronizes the execution of a list of interrupt service routines (ISRs) with non-interrupt routines.
 
 Interrupt sync objects provide two key capabilities:
 
@@ -21,7 +21,7 @@ Interrupt sync objects provide two key capabilities:
 
 An interrupt sync object is flexible in dealing with multiple ISRs. The ISRs reside in a linked list that the sync object traverses at interrupt time. When a miniport driver registers an ISR with a sync object, it specifies whether the ISR should be added to the beginning or end of this list.
 
-A miniport driver calls the [**PcNewInterruptSync**](audio.pcnewinterruptsync) function to create an interrupt sync object. During this call, the driver specifies the manner in which the object is to traverse its list of ISRs at interrupt time. The call supports the three options that are specified by the INTERRUPTSYNCMODE enumeration constants in the following table.
+A miniport driver calls the [**PcNewInterruptSync**](https://msdn.microsoft.com/library/windows/hardware/ff537713) function to create an interrupt sync object. During this call, the driver specifies the manner in which the object is to traverse its list of ISRs at interrupt time. The call supports the three options that are specified by the INTERRUPTSYNCMODE enumeration constants in the following table.
 
 <table>
 <colgroup>
@@ -62,22 +62,22 @@ In any of these modes, the sync object will acknowledge the interrupt to the ope
 
 The **IInterruptSync** interface supports the following methods:
 
-[**IInterruptSync::CallSynchronizedRoutine**](audio.iinterruptsync_callsynchronizedroutine)
+[**IInterruptSync::CallSynchronizedRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff536592)
 
-[**IInterruptSync::Connect**](audio.iinterruptsync_connect)
+[**IInterruptSync::Connect**](https://msdn.microsoft.com/library/windows/hardware/ff536594)
 
-[**IInterruptSync::Disconnect**](audio.iinterruptsync_disconnect)
+[**IInterruptSync::Disconnect**](https://msdn.microsoft.com/library/windows/hardware/ff536597)
 
-[**IInterruptSync::GetKInterrupt**](audio.iinterruptsync_getkinterrupt)
+[**IInterruptSync::GetKInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff536599)
 
-[**IInterruptSync::RegisterServiceRoutine**](audio.iinterruptsync_registerserviceroutine)
-
- 
+[**IInterruptSync::RegisterServiceRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff536600)
 
  
 
+ 
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Interrupt%20Sync%20Objects%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Interrupt%20Sync%20Objects%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
 
 

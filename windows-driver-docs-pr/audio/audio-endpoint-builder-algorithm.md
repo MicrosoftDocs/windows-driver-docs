@@ -1,8 +1,7 @@
 ---
-Description: Audio Endpoint Builder Algorithm
-MS-HAID: 'audio.audio\_endpoint\_builder\_algorithm'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Audio Endpoint Builder Algorithm
+description: Audio Endpoint Builder Algorithm
+ms.assetid: 2338bca7-5743-42c3-9baf-ac4a54cf0393
 ---
 
 # Audio Endpoint Builder Algorithm
@@ -16,7 +15,7 @@ In Windows XP, the audio model used the term audio device to refer to a conceptu
 
 With two new APIs in Windows Vista, [MMDevice API](http://go.microsoft.com/fwlink/p/?linkid=130863) and [WASAPI](http://go.microsoft.com/fwlink/p/?linkid=130864), you can access and manipulate these new audio devices. The MMDevice API refers to the new audio devices as endpoints.
 
-The AudioEndpointBuilder service monitors the [**KSCATEGORY\_AUDIO**](devinst.kscategory_audio) class for device interface arrivals and removals. When an audio device driver registers a new instance of the KSCATEGORY\_AUDIO device interface class, the AudioEndpointBuilder service detects the device interface notification and uses an algorithm to examine the topology of the audio devices in the system and take appropriate action.
+The AudioEndpointBuilder service monitors the [**KSCATEGORY\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff548261) class for device interface arrivals and removals. When an audio device driver registers a new instance of the KSCATEGORY\_AUDIO device interface class, the AudioEndpointBuilder service detects the device interface notification and uses an algorithm to examine the topology of the audio devices in the system and take appropriate action.
 
 The following list summarizes how the algorithm that is used by AudioEndpointBuilder works:
 
@@ -26,7 +25,7 @@ The following list summarizes how the algorithm that is used by AudioEndpointBui
 
 3.  Sets the default properties for the endpoint. For example, AudioEndpointBuilder sets the name, icon, and the form factor.
 
-4.  Determines whether there is a path from the endpoint to a host pin that supports pulse code modulation (PCM), audio codec-3 (AC3), or Windows media video (WMV). A host pin is a KSPIN structure with its Communication member set to KSPIN\_COMMUNICATION\_SINK or KSPIN\_COMMUNICATION\_BOTH. For more information about the KSPIN structure, see [**KSPIN**](stream.kspin).
+4.  Determines whether there is a path from the endpoint to a host pin that supports pulse code modulation (PCM), audio codec-3 (AC3), or Windows media video (WMV). A host pin is a KSPIN structure with its Communication member set to KSPIN\_COMMUNICATION\_SINK or KSPIN\_COMMUNICATION\_BOTH. For more information about the KSPIN structure, see [**KSPIN**](https://msdn.microsoft.com/library/windows/hardware/ff563483).
 
 5.  Populates the endpoint PropertyStore with property information from the registry keys of the audio device interface.
 
@@ -122,8 +121,8 @@ If you use the MMDevice API to select a default endpoint and the available endpo
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Endpoint%20Builder%20Algorithm%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Audio%20Endpoint%20Builder%20Algorithm%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

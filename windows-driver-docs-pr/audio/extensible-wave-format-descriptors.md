@@ -1,8 +1,8 @@
 ---
-Description: 'Extensible Wave-Format Descriptors'
-MS-HAID: 'audio.extensible\_wave\_format\_descriptors'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Extensible Wave-Format Descriptors'
+title: Extensible Wave-Format Descriptors
+description: Extensible Wave-Format Descriptors
+ms.assetid: b80e651b-fb97-4502-8526-e844425805dc
+keywords: ["wave-format descriptors WDK audio", "PCM formats WDK audio", "wave-format tags WDK audio", "wave streams WDK audio", "audio data formats WDK", "data formats WDK audio , wave-format descriptors", "formats WDK audio , wave-format descriptors", "KSDATAFORMAT structure", "KMixer system driver WDK audio , wave-format descriptors", "WAVEFORMATEXTENSIBLE", "WAVEFORMATEX structure", "WDM audio data formats WDK"]
 ---
 
 # Extensible Wave-Format Descriptors
@@ -15,21 +15,21 @@ The following figure shows the data-format descriptor for a wave audio stream.
 
 ![diagram illustrating a wave-format descriptor](images/wavefmt.png)
 
-As indicated in the figure, the amount of additional format information following the [**KSDATAFORMAT**](stream.ksdataformat) structure varies depending on the data format.
+As indicated in the figure, the amount of additional format information following the [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) structure varies depending on the data format.
 
 Audio systems use this type of format descriptor in several ways:
 
--   A format descriptor like the one shown in the preceding figure is passed as a call parameter to a miniport driver's **NewStream** method (for example, see [**IMiniportWaveCyclic::NewStream**](audio.iminiportwavecyclic_newstream)).
+-   A format descriptor like the one shown in the preceding figure is passed as a call parameter to a miniport driver's **NewStream** method (for example, see [**IMiniportWaveCyclic::NewStream**](https://msdn.microsoft.com/library/windows/hardware/ff536723)).
 
--   The *ResultantFormat* parameter of the [**IMiniport::DataRangeIntersection**](audio.iminiport_datarangeintersection) method points to a buffer into which the method writes a format descriptor like the one shown in the preceding figure.
+-   The *ResultantFormat* parameter of the [**IMiniport::DataRangeIntersection**](https://msdn.microsoft.com/library/windows/hardware/ff536764) method points to a buffer into which the method writes a format descriptor like the one shown in the preceding figure.
 
--   The [**KSPROPERTY\_PIN\_DATAINTERSECTION**](stream.ksproperty_pin_dataintersection) get-property request retrieves a format descriptor like the one shown in the preceding figure.
+-   The [**KSPROPERTY\_PIN\_DATAINTERSECTION**](https://msdn.microsoft.com/library/windows/hardware/ff565198) get-property request retrieves a format descriptor like the one shown in the preceding figure.
 
--   The [**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT**](stream.ksproperty_pin_proposedataformat) set-property request accepts a format descriptor like the one shown in the preceding figure.
+-   The [**KSPROPERTY\_PIN\_PROPOSEDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff565206) set-property request accepts a format descriptor like the one shown in the preceding figure.
 
--   A similar format is used for the [**KsCreatePin**](stream.kscreatepin) function's *Connect* call parameter. This parameter points to the [**KSPIN\_CONNECT**](stream.kspin_connect) structure at the beginning of a buffer that also contains a format descriptor. The format descriptor, which immediately follows the KSPIN\_CONNECT structure, begins with a KSDATAFORMAT structure like the one shown in the preceding figure.
+-   A similar format is used for the [**KsCreatePin**](https://msdn.microsoft.com/library/windows/hardware/ff561652) function's *Connect* call parameter. This parameter points to the [**KSPIN\_CONNECT**](https://msdn.microsoft.com/library/windows/hardware/ff563531) structure at the beginning of a buffer that also contains a format descriptor. The format descriptor, which immediately follows the KSPIN\_CONNECT structure, begins with a KSDATAFORMAT structure like the one shown in the preceding figure.
 
-The format information that follows the KSDATAFORMAT structure should be either a [**WAVEFORMATEXTENSIBLE**](audio.waveformatextensible) structure or a [**WAVEFORMATEX**](audio.waveformatex) structure. WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX that can describe a broader range of formats than WAVEFORMATEX. WAVEFORMATEX is an extended version of the pre-WDM WAVEFORMAT structure. WAVEFORMAT is obsolete and is not supported by the WDM audio subsystem in any version of Microsoft Windows.
+The format information that follows the KSDATAFORMAT structure should be either a [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802) structure or a [**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799) structure. WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX that can describe a broader range of formats than WAVEFORMATEX. WAVEFORMATEX is an extended version of the pre-WDM WAVEFORMAT structure. WAVEFORMAT is obsolete and is not supported by the WDM audio subsystem in any version of Microsoft Windows.
 
 Similarly, the PCMWAVEFORMAT structure is an extended version of WAVEFORMAT that is obsolete, but for which the WDM audio subsystem provides limited support.
 
@@ -161,8 +161,8 @@ When using WAVEFORMATEXTENSIBLE, set **wFormatTag** to WAVE\_FORMAT\_EXTENSIBLE 
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Extensible%20Wave-Format%20Descriptors%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Extensible%20Wave-Format%20Descriptors%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

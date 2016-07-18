@@ -1,8 +1,8 @@
 ---
-Description: Hardware Requirements for WavePci Devices
-MS-HAID: 'audio.hardware\_requirements\_for\_wavepci\_devices'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Hardware Requirements for WavePci Devices
+description: Hardware Requirements for WavePci Devices
+ms.assetid: 58a73ac1-baba-42df-a590-e7282f902157
+keywords: ["WavePci hardware requirements WDK audio", "bus master WDK audio", "arbitrary alignment WDK audio", "memory WDK audio", "cache WDK audio", "data copying WDK audio", "copying audio data", "buffers WDK audio", "plit buffer frames WDK audio"]
 ---
 
 # Hardware Requirements for WavePci Devices
@@ -35,11 +35,11 @@ A WavePci device requires a bus-master DMA controller supporting scatter/gather 
 
 -   **The device must be able to handle data transfers of arbitrary length.**
 
-    It should handle mappings (see [**IPortWavePciStream::GetMapping**](audio.iportwavepcistream_getmapping)) larger than a memory page. A device with a transfer limitation of 4 kilobytes, for example, does not fit the full requirements for WavePci. On 64-bit CPUs that support Microsoft Windows, the page size is 8 kilobytes, which makes it likely that some mappings will be larger than 4 kilobytes in size. Data transfers that exceed 32 kilobytes in a single mapping are theoretically possible, depending on physical memory fragmentation. At the other extreme, a mapping size of one byte is possible.
+    It should handle mappings (see [**IPortWavePciStream::GetMapping**](https://msdn.microsoft.com/library/windows/hardware/ff536909)) larger than a memory page. A device with a transfer limitation of 4 kilobytes, for example, does not fit the full requirements for WavePci. On 64-bit CPUs that support Microsoft Windows, the page size is 8 kilobytes, which makes it likely that some mappings will be larger than 4 kilobytes in size. Data transfers that exceed 32 kilobytes in a single mapping are theoretically possible, depending on physical memory fragmentation. At the other extreme, a mapping size of one byte is possible.
 
 -   **The device should handle data transfers to or from any location in system memory.**
 
-    Data transfers that straddle 32-kilobyte or larger power-of-two boundaries are quite likely. A computer can now contain more than 4 gigabytes of RAM, and in those systems, mappings can be located higher than 4 gigabytes in physical memory in the case of either a 64-bit CPU or the x86 physical address extension (PAE). To achieve the best performance on these machines, vendors should create devices that support 64-bit addressing. Otherwise, data copying in software is required. Data copying has historically been required for devices with 24-bit addressing on systems with more than 16 megabytes of RAM. Devices should use WaveCyclic instead of WavePci if they cannot read from or write to anywhere in physical memory. A driver can make this decision at device startup time (see [**IRP\_MN\_START\_DEVICE**](kernel.irp_mn_start_device)) after it has had a chance to determine whether its address reach is sufficient to access the full address range of the system memory bus.
+    Data transfers that straddle 32-kilobyte or larger power-of-two boundaries are quite likely. A computer can now contain more than 4 gigabytes of RAM, and in those systems, mappings can be located higher than 4 gigabytes in physical memory in the case of either a 64-bit CPU or the x86 physical address extension (PAE). To achieve the best performance on these machines, vendors should create devices that support 64-bit addressing. Otherwise, data copying in software is required. Data copying has historically been required for devices with 24-bit addressing on systems with more than 16 megabytes of RAM. Devices should use WaveCyclic instead of WavePci if they cannot read from or write to anywhere in physical memory. A driver can make this decision at device startup time (see [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749)) after it has had a chance to determine whether its address reach is sufficient to access the full address range of the system memory bus.
 
 -   **The device should handle data transfers with arbitrary alignment.**
 
@@ -71,8 +71,8 @@ A WavePci device whose scatter/gather DMA controller does not properly handle sp
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Hardware%20Requirements%20for%20WavePci%20Devices%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Hardware%20Requirements%20for%20WavePci%20Devices%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

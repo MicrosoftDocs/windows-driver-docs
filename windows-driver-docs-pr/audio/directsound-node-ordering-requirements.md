@@ -1,8 +1,8 @@
 ---
-Description: 'DirectSound Node-Ordering Requirements'
-MS-HAID: 'audio.directsound\_node\_ordering\_requirements'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'DirectSound Node-Ordering Requirements'
+title: DirectSound Node-Ordering Requirements
+description: DirectSound Node-Ordering Requirements
+ms.assetid: baca55f5-c669-4bd2-82b5-3985030864f2
+keywords: ["hardware acceleration WDK DirectSound , node-ordering requirements", "node-ordering requirements WDK DirectSound", "node chains WDK DirectSound", "SUM nodes WDK DirectSound", "3D mixing WDK audio", "2D mixing WDK audio", "software-emulated 3D processing WDK audio", "supermixer nodes WDK audio"]
 ---
 
 # DirectSound Node-Ordering Requirements
@@ -13,17 +13,17 @@ title: 'DirectSound Node-Ordering Requirements'
 
 A DirectSound 2D or 3D mixer pin should have a node chain that contains the following sequence of nodes:
 
--   Volume node (See [**KSNODETYPE\_VOLUME**](audio.ksnodetype_volume).)
+-   Volume node (See [**KSNODETYPE\_VOLUME**](https://msdn.microsoft.com/library/windows/hardware/ff537208).)
 
--   3D node (This node is optional. See [**KSNODETYPE\_3D\_EFFECTS**](audio.ksnodetype_3d_effects).)
+-   3D node (This node is optional. See [**KSNODETYPE\_3D\_EFFECTS**](https://msdn.microsoft.com/library/windows/hardware/ff537148).)
 
--   Supermixer node (See [**KSNODETYPE\_SUPERMIX**](audio.ksnodetype_supermix).)
+-   Supermixer node (See [**KSNODETYPE\_SUPERMIX**](https://msdn.microsoft.com/library/windows/hardware/ff537198).)
 
 -   Volume node (for panning effects)
 
--   SRC node (See [**KSNODETYPE\_SRC**](audio.ksnodetype_src).)
+-   SRC node (See [**KSNODETYPE\_SRC**](https://msdn.microsoft.com/library/windows/hardware/ff537190).)
 
--   SUM node (See [**KSNODETYPE\_SUM**](audio.ksnodetype_sum).)
+-   SUM node (See [**KSNODETYPE\_SUM**](https://msdn.microsoft.com/library/windows/hardware/ff537196).)
 
 The nodes in this list appear in the order in which they are encountered by data streaming into the pin. Other nodes can be interleaved between these nodes without causing problems, provided that the above ordering is preserved.
 
@@ -51,8 +51,8 @@ The input stream to the 3D node typically contains a single channel. In DirectSo
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DirectSound%20Node-Ordering%20Requirements%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DirectSound%20Node-Ordering%20Requirements%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

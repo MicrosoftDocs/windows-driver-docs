@@ -1,8 +1,8 @@
 ---
-Description: 'Specifying AC-3 Data Ranges'
-MS-HAID: 'audio.specifying\_ac\_3\_data\_ranges'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Specifying AC-3 Data Ranges'
+title: Specifying AC-3 Data Ranges
+description: Specifying AC-3 Data Ranges
+ms.assetid: 87d59554-43fa-4d61-9829-c38691d0a525
+keywords: ["S/PDIF pass-through WDK audio", "AC-3-over-S/PDIF format WDK audio", "audio non-PCM formats WDK", "non-PCM audio formats WDK , S/PDIF", "WMA Pro WDK audio", "AC-3 WDK audio", "Sony/Philips digital interface", "data ranges WDK audio , AC-3", "non-PCM audio formats WDK , AC-3"]
 ---
 
 # Specifying AC-3 Data Ranges
@@ -26,7 +26,7 @@ The corresponding format-subtype GUID can be specified in terms of the wave-form
                       DEFINE_WAVEFORMATEX_GUID(WAVE_FORMAT_DOLBY_AC3_SPDIF)
 ```
 
-The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](audio.ksdatarange_audio) table entries for a pin that supports the AC-3-over-S/PDIF format:
+The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) table entries for a pin that supports the AC-3-over-S/PDIF format:
 
 ```
 static KSDATARANGE_AUDIO PinDataRangesAC3Stream[] =
@@ -83,8 +83,8 @@ As explained in [S/PDIF Pass-Through Transmission of Non-PCM Streams](s-pdif-pas
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Specifying%20AC-3%20Data%20Ranges%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Specifying%20AC-3%20Data%20Ranges%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

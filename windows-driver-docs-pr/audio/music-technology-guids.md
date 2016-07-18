@@ -1,8 +1,8 @@
 ---
-Description: Music Technology GUIDs
-MS-HAID: 'audio.music\_technology\_guids'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Music Technology GUIDs
+description: Music Technology GUIDs
+ms.assetid: 3b7c2907-e67f-458e-809d-080dcc30be1a
+keywords: ["WDM audio extensions WDK , music technology GUIDs", "music technology GUIDs WDK audio", "KSDATARANGE_MUSIC structure", "synthesizers WDK audio , technology GUIDs", "MIDI stream data formats WDK audio", "DirectMusic WDK audio , stream data formats", "DMus stream data formats WDK"]
 ---
 
 # Music Technology GUIDs
@@ -11,7 +11,7 @@ title: Music Technology GUIDs
 ## <span id="music_technology_guids"></span><span id="MUSIC_TECHNOLOGY_GUIDS"></span>
 
 
-A MIDI or DMus miniport driver must specify the range of stream formats that each of its pins is capable of handling. As described in [Pin Factories](pin-factories.md), the driver specifies this information as an array of one or more data range descriptors, each of which is a structure of type [**KSDATARANGE\_MUSIC**](audio.ksdatarange_music). This structure's **Technology** member indicates what type of synthesizer technology the MIDI or DirectMusic device uses. A miniport driver can set the **Technology** member to one of the GUID values shown in the following table (left column).
+A MIDI or DMus miniport driver must specify the range of stream formats that each of its pins is capable of handling. As described in [Pin Factories](pin-factories.md), the driver specifies this information as an array of one or more data range descriptors, each of which is a structure of type [**KSDATARANGE\_MUSIC**](https://msdn.microsoft.com/library/windows/hardware/ff537097). This structure's **Technology** member indicates what type of synthesizer technology the MIDI or DirectMusic device uses. A miniport driver can set the **Technology** member to one of the GUID values shown in the following table (left column).
 
 <table>
 <colgroup>
@@ -71,7 +71,7 @@ The **midiOutGetDevCaps** function translates the technology GUID that it receiv
 
 When enumerating devices, a MIDI application that uses the Windows multimedia midiOut or midiIn API can see MIDI pins, but not DirectMusic pins. A DirectMusic application can see both MIDI and DirectMusic pins. A MIDI or DMus miniport driver identifies a MIDI pin by setting the subtype GUID in the pin's data ranges to KSDATAFORMAT\_SUBTYPE\_MIDI. A DMus miniport driver identifies a DirectMusic pin by setting the subtype GUID to KSDATAFORMAT\_SUBTYPE\_DIRECTMUSIC. For examples of data ranges for MIDI and DirectMusic pins, see [MIDI Stream Data Range](midi-stream-data-range.md) and [DirectMusic Stream Data Range](directmusic-stream-data-range.md).
 
-As explained in [MIDI and DirectMusic Filters](midi-and-directmusic-filters.md), an adapter driver calls the [**PcNewMiniport**](audio.pcnewminiport) function to create an instance of one of the system-supplied miniport drivers in Portcls.sys. The caller specifies one of the driver GUIDs in the following table to specify which miniport driver to instantiate.
+As explained in [MIDI and DirectMusic Filters](midi-and-directmusic-filters.md), an adapter driver calls the [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714) function to create an instance of one of the system-supplied miniport drivers in Portcls.sys. The caller specifies one of the driver GUIDs in the following table to specify which miniport driver to instantiate.
 
 <table>
 <colgroup>
@@ -118,7 +118,7 @@ However, the midiOut API prefers wavetable synthesizer devices (with technology 
 
 To make itself eligible to be the default device, a wavetable device that can play raw MIDI should expose itself as a wavetable device, not an MPU-401 device. However, if an adapter driver is using the system-supplied MPU-401 miniport driver, DMusUART, to manage its wavetable synthesizer device, that miniport driver statically assigns the technology GUID KSMUSIC\_TECHNOLOGY\_PORT to its pins.
 
-By calling the [**IMusicTechnology::SetTechnology**](audio.imusictechnology_settechnology) method, an adapter driver can overwrite the technology GUIDs in a miniport driver's data ranges. In the following code example, an adapter driver changes the technology GUID in the DMusUART miniport driver's data ranges from its default value, KSMUSIC\_TECHNOLOGY\_PORT, to the value KSMUSIC\_TECHNOLOGY\_WAVETABLE. With this new setting, the MPU-like wavetable device is eligible to be selected by the midiOut API as the default MIDI device.
+By calling the [**IMusicTechnology::SetTechnology**](https://msdn.microsoft.com/library/windows/hardware/ff536780) method, an adapter driver can overwrite the technology GUIDs in a miniport driver's data ranges. In the following code example, an adapter driver changes the technology GUID in the DMusUART miniport driver's data ranges from its default value, KSMUSIC\_TECHNOLOGY\_PORT, to the value KSMUSIC\_TECHNOLOGY\_WAVETABLE. With this new setting, the MPU-like wavetable device is eligible to be selected by the midiOut API as the default MIDI device.
 
 ```
   // Create the miniport object.
@@ -143,14 +143,14 @@ By calling the [**IMusicTechnology::SetTechnology**](audio.imusictechnology_sett
   }
 ```
 
-As indicated in the comment in the preceding code example, the adapter driver should call [**SetTechnology**](audio.imusictechnology_settechnology) before calling the port driver's `Init` method (which, in turn, calls the miniport driver's `Init` method). The system-supplied DMusUART and UART miniport drivers both support the [IMusicTechnology](audio.imusictechnology) interface. For other miniport drivers, support for IMusicTechnology is optional. For more information, see the implementation of the **SetTechnology** method in the DMusUART sample audio driver in the Microsoft Windows Driver Kit (WDK).
+As indicated in the comment in the preceding code example, the adapter driver should call [**SetTechnology**](https://msdn.microsoft.com/library/windows/hardware/ff536780) before calling the port driver's `Init` method (which, in turn, calls the miniport driver's `Init` method). The system-supplied DMusUART and UART miniport drivers both support the [IMusicTechnology](https://msdn.microsoft.com/library/windows/hardware/ff536778) interface. For other miniport drivers, support for IMusicTechnology is optional. For more information, see the implementation of the **SetTechnology** method in the DMusUART sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
  
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Music%20Technology%20GUIDs%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20Music%20Technology%20GUIDs%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 

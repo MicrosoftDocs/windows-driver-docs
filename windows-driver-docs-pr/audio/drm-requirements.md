@@ -1,8 +1,8 @@
 ---
-Description: DRM Requirements
-MS-HAID: 'audio.drm\_requirements'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: DRM Requirements
+description: DRM Requirements
+ms.assetid: 312b943b-f280-4b29-a5d4-e78c7088bb22
+keywords: ["WHQL testing WDK audio", "Digital Rights Management WDK audio , compliance testing", "DRM WDK audio , compliance testing", "compliance testing WDK audio", "testing DRM compliance WDK audio", "Designed for Windows XP logo test WDK audio", "logo tests WDK audio"]
 ---
 
 # DRM Requirements
@@ -21,9 +21,9 @@ For Windows XP and later, however, the DRM-compliance test is a required part of
 
 The DRM-compliance test requires a trusted audio driver to do the following:
 
--   The audio miniport driver must implement the [IDrmAudioStream](audio.idrmaudiostream) interface in its stream objects, which must return an object of type IDrmAudioStream if queried for IID\_IDrmAudioStream.
+-   The audio miniport driver must implement the [IDrmAudioStream](https://msdn.microsoft.com/library/windows/hardware/ff536568) interface in its stream objects, which must return an object of type IDrmAudioStream if queried for IID\_IDrmAudioStream.
 
--   When copy protection is requested ([**DRMRIGHTS**](audio.drmrights).**CopyProtect** = **TRUE**), the audio driver must disable the ability to capture the stream currently being played back. This means that the driver must not save the unprotected digital content to any form of nonvolatile storage, which includes hard disk, EEPROM, memory card, and memory stick. Also, the driver must disable the capture multiplexer on an output D/A converter and otherwise prevent the loopback of digital content.
+-   When copy protection is requested ([**DRMRIGHTS**](https://msdn.microsoft.com/library/windows/hardware/ff536355).**CopyProtect** = **TRUE**), the audio driver must disable the ability to capture the stream currently being played back. This means that the driver must not save the unprotected digital content to any form of nonvolatile storage, which includes hard disk, EEPROM, memory card, and memory stick. Also, the driver must disable the capture multiplexer on an output D/A converter and otherwise prevent the loopback of digital content.
 
 -   When an audio driver is asked to disable the digital audio output on the device (DRMRIGHTS.**DigitalOutputDisable** = **TRUE**), it must disable all digital audio outputs that are capable of transmitting content over a standard interface through a standard interconnection scheme. Digital outputs include--but are not strictly limited to--S/PDIF, IEEE 1394, parallel, serial, modem, and network ports. (This requirement does not currently apply to USB.)
 
@@ -35,8 +35,8 @@ In addition to passing the DRM-compliance test, the audio device and driver must
 
  
 
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DRM%20Requirements%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
---------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20DRM%20Requirements%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/en-us/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
