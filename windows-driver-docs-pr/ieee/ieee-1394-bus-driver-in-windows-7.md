@@ -1,5 +1,6 @@
 ---
 title: IEEE 1394 Bus Driver in Windows 7
+author: windows-driver-content
 description: Windows 7 includes 1394ohci.sys, a new IEEE 1394 bus driver that supports faster speeds and alternative media as defined in the IEEE-1394b specification.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -63,19 +64,10 @@ The 1394ohci.sys bus driver determines whether a device complies with IEEE-1394a
 In Windows 7, the 1394 DDIs were changed to support faster speeds as defined by the 1394b specification and improved to simplify the development of 1394 client drivers. For more information about the general DDI changes that the new 1394 bus driver supports, see [Device Driver Interface (DDI) Changes in Windows 7](https://msdn.microsoft.com/library/windows/hardware/gg266400).
 
 ## Related topics
+[The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)  
+[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/gg266408)  
 
-
-[The IEEE 1394 Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff538867)
-
-[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/gg266408)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BIEEE\buses%5D:%20IEEE%201394%20Bus%20Driver%20in%20Windows%207%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 

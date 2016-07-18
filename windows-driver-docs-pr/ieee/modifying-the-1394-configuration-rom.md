@@ -1,5 +1,6 @@
 ---
 title: Modifying the 1394 Configuration ROM
+author: windows-driver-content
 description: Modifying the 1394 Configuration ROM
 MS-HAID:
 - '1394-configrom\_80b59cac-0599-4d82-b46b-94e6fcde850a.xml'
@@ -28,17 +29,9 @@ A Microsoft Windows system connected to the 1394 bus exposes a Configuration ROM
     Device emulation allows developers to test drivers for devices that they have not yet received. Hardware emulation drivers can expose a virtual 1394 device on the 1394 bus. Developers can then debug a driver for the new hardware on another system. For more information about device emulations, see [IEEE 1394 Hardware Emulation Drivers](https://msdn.microsoft.com/library/windows/hardware/ff537214).
 
 ## Related topics
+[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/gg266408)  
 
-
-[Retrieving the Contents of a IEEE 1394 Node's Configuration ROM](https://msdn.microsoft.com/library/windows/hardware/gg266408)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5BIEEE\buses%5D:%20Modifying%20the%201394%20Configuration%20ROM%20%20RELEASE:%20%287/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 
