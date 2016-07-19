@@ -41,11 +41,7 @@ Every named device object must have a security descriptor. The operating system 
 
 By default, the operating system also uses the device PDO's security descriptor to determine access rights to the device interfaces that a driver provides.
 
-A driver package can provide an INF file that specifies a device's security descriptors, as follows:
-
--   To specify security descriptors for a type of device, the INF file can contain an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) within an [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330).
-
--   To specify security descriptors for all types of devices within a device setup class, the INF file can contain an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) within an [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335).
+A driver package can provide an INF file that specifies a device's security descriptors with an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) within an [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330).
 
 For more information about specifying security descriptors in INF files, see [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212).
 
