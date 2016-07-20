@@ -1,12 +1,40 @@
 # Contributing to Windows Driver Documentation
-The following is a short introduction for contributing to Windows Driver Documentation. For more in depth guidance about setup and contributing, see the [Install and set up tools for authoring in VSO] (./contributor-guide/tools-and-setup.md).
-## Quick Start
 
-3. Edits can be made within the VSO UI or through a clone on your local computer. The VSO UI is easy to use for minor edits, but we recommend using a local clone for large changes. To learn the Git commands for working locally, see [Git commands for creating a new article or updating an existing article](./contributor-guide/git-commands-for-master.md).
-4. When you've finished making your changes, submit them for approval by opening a pull request back to the official repository. 
-5. The documentation owner will review your request and follow up with changes if necessary. 
-6. Once your request is accepted into the `drivers` repo, you'll be able to view your staged content by selecting the appropriate branch in the upper right of the corresponding page on  https://msdnstage.redmond.corp.microsoft.com/windows/hardware/drivers.
-7. After contributor and content owner sign off, updates will be published to https://msdn.microsoft.com/windows/hardware/drivers.
+Thank you for your interest in the Windows driver documentation! 
+See below for details on how you can contribute to our technical documentation.
+
+## Sign a CLA
+
+If you are not a Microsoft employee, you must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before you can contribute to any Microsoft repositories. 
+If you've already contributed to Microsoft repositories in the past, congratulations! 
+You've already completed this step.
+
+## Public and private repos
+
+The driver docs are hosted on two different sites.
+
+If you are not a Microsoft employee, please use the [public content repository](https://github.com/Microsoft/windows-driver-docs).
+
+If you are a Microsoft employee, we recommend that you work in our [private content repository](https://cpubwin.visualstudio.com/drivers/_git/drivers).  
+
+## Providing feedback on Windows driver documentation
+
+You can point out errors, suggest changes, or request new topics by [creating an issue](https://help.github.com/articles/creating-an-issue/) on the 
+[windows-driver-docs repository issues page](https://github.com/Microsoft/windows-driver-docs/issues).
+
+Issues are reviewed regularly by members of the Windows driver documentation team, and are triaged, assigned, and addressed accordingly.
+
+All of the documentation hosted in this repo is written using [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
+
+## Editing topics
+
+To edit an existing file, simply navigate to it and click the "Edit" button. 
+If you're using the GitHub-based public repo, GitHub will automatically create your own fork of our repository where you can make your changes. 
+If you're using the VSO-based private repo, use the drop-down arrow next to the Commit button and select **Commit to new branch**.
+Once you're finished, submit a pull request to the *master* branch of the repository. 
+After your pull request is created, someone on the Windows driver documentation team reviews your changes.
+
+If your request is accepted, updates are published to https://msdn.microsoft.com/windows/hardware/drivers.
 
 
 
