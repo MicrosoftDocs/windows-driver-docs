@@ -13,9 +13,9 @@ You've already completed this step.
 
 The driver docs are hosted on two different sites.
 
-If you are not a Microsoft employee, please use the [public content repository](https://github.com/Microsoft/windows-driver-docs).
+If you are not a Microsoft employee, work in the [public content repository](https://github.com/Microsoft/windows-driver-docs).
 
-If you are a Microsoft employee, we recommend that you work in our [private content repository](https://cpubwin.visualstudio.com/drivers/_git/drivers).  
+If you are a Microsoft employee, work in the [private content repository](https://cpubwin.visualstudio.com/drivers/_git/drivers).  
 
 ## Providing feedback on Windows driver documentation
 
@@ -36,5 +36,10 @@ After your pull request is created, someone on the Windows driver documentation 
 
 If your request is accepted, updates are published to https://msdn.microsoft.com/windows/hardware/drivers.
 
+## Making more substantial changes
 
+To make substantial changes to an existing article, add or change images, or contribute a new article, you will need to create a local clone of the content.
 
+If you are using the public repo, you'll manually create your GitHub fork and then clone the fork down to your local computer.  Work locally, then push your changes back into your fork.  Then open a pull request back into the public repo.
+
+If you are using the private repo, you'll clone the private repo to your local computer.  Create a new branch from master, make your changes, and then push your new branch back into the VSO private repo.  Then open a pull request back to the master branch.

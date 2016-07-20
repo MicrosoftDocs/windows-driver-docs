@@ -1,10 +1,6 @@
 # Windows Driver Documentation
 
-Welcome to the drivers repository, housing the source for the official Windows Driver Kit documentation available on [MSDN](https://msdn.microsoft.com/windows/hardware/drivers). 
-
-## Requirements
-
-For info about setup, see [Install and set up tools for authoring in GitHub](./contributor-guide/tools-and-setup.md).
+Welcome to the Windows driver docs repository, housing the source for the official Windows Driver Kit documentation available on [MSDN](https://msdn.microsoft.com/windows/hardware/drivers). 
 
 ## Contributing
 
