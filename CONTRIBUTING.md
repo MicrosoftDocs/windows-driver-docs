@@ -19,8 +19,7 @@ If you are a Microsoft employee, work in the [private content repository](https:
 
 ## Providing feedback on Windows driver documentation
 
-You can point out errors, suggest changes, or request new topics by [creating an issue](https://help.github.com/articles/creating-an-issue/) on the 
-[windows-driver-docs repository issues page](https://github.com/Microsoft/windows-driver-docs/issues).
+You can point out errors, suggest changes, or request new topics by creating an issue in the issues page of the appropriate repository.
 
 Issues are reviewed regularly by members of the Windows driver documentation team, and are triaged, assigned, and addressed accordingly.
 
