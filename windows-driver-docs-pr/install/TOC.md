@@ -1,5 +1,5 @@
- [Device and Driver Installation](index.md)
-# [Roadmap for Device and Driver Installation](roadmap-for-device-and-driver-installation--windows-vista-and-later-.md)
+# [Device and Driver Installation](index.md)
+## [Roadmap for Device and Driver Installation](roadmap-for-device-and-driver-installation--windows-vista-and-later-.md)
 ## [Overview of Device and Driver Installation](overview-of-device-and-driver-installation.md)
 ### [How Windows Installs Devices](how-windows-installs-devices.md)
 #### [Step 1: The New Device is Identified](step-1--the-new-device-is-identified.md)
