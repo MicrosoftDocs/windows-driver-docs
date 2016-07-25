@@ -1,0 +1,52 @@
+---
+title: Format of a Text Log Section
+description: Format of a Text Log Section
+ms.assetid: e0f7227c-6cd8-4c66-a38b-104f222847bc
+keywords: ["sections WDK SetupAPI logging", "formats WDK SetupAPI logging", "text logs WDK SetupAPI , sections", "SetupAPI logging WDK Windows Vista , text log sections"]
+---
+
+# Format of a Text Log Section
+
+
+A *text log section* includes a section header that opens the section, a section body that includes a sequence of log entries that apply to the section operation, and a section footer that closes the section. Section entries appear in a section in the same order in which they are written to the section.
+
+The following example of a text log section shows the general format of a typical section, where the fields in italic font style are placeholders for section-specific text, and the remaining text in bold font style is generic text supplied by SetupAPI. The first two log entries comprise the section header and the last two log entries comprise the section footer.
+
+```
+>>>  [section_title - instance_identifer]
+>>> time_stamp Section start
+ section body log entry
+ section body log entry
+ section body log entry
+<<<  [time_stamp: Section end]
+<<<  [Exit Status(status_value)]
+```
+
+The section body entries that are logged depend on the event level that is set for the log and the category levels that are enabled for the log. For more information about these settings, see [SetupAPI Logging Registry Settings](setupapi-logging-registry-settings.md).
+
+The following is a typical example of a text log section that the Plug and Play (PnP) manager created to log entries that pertained to the installation of a PCI device. In the section header, the *section\_title* field is "Device Install," the *instance\_identifier* field is the device instance identifier "PCI\\VEN\_104C&DEV\_8019&SUBSYS\_8010104C&REV\_00\\3&61aaa01&0&38," and the *time\_stamp* field is "2005/02/13 22:06:28.109:." In the section footer, the *status\_value* field is "0x00000000" and the *time\_stamp* field is "2005/02/13 22:06:20.000:." Only the first three section body log entries are included in this example. The event level for this example was set to TXTLOG\_DETAILS and all category levels were enabled for this example.
+
+```
+>>>  [Device Install - PCI\VEN_104C&amp;DEV_8019&amp;SUBSYS_8010104C&amp;REV_00\3&amp;61aaa01&amp;0&amp;38]
+>>>  2005/02/13 22:06:20.000: Section start
+     ndv: Retrieving device info...
+     ndv: Setting device parameters...
+     ndv: Building driver list...
+...  
+...  additional section body log entries, which are not shown
+...  
+<<<  [2005/02/13 22:06:28.109: Section end]
+<<<  [Exit Status(0x00000000)]
+```
+
+For detailed information about the content and format of a text log section, see [Format of a Text Log Section Header](format-of-a-text-log-section-header.md), [Format of a Text Log Section Body](format-of-a-text-log-section-body.md), and [Format of a Text Log Section Footer](format-of-a-text-log-section-footer.md).
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdevinst\devinst%5D:%20Format%20of%20a%20Text%20Log%20Section%20%20RELEASE:%20%287/22/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
