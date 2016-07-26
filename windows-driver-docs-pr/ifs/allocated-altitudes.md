@@ -977,6 +977,7 @@ The current altitude allocations are listed for each of the following load order
 | dfmflt.sys                    | 180611   | Microsoft                       |
 | hsmflt.sys                    | 180600   | Microsoft                       |
 | dfsrflt.sys                   | 180500   | Microsoft                       |
+| dedup.sys                     | 180450   | Microsoft                       |
 | sis.sys                       | 180400   | Microsoft                       |
 | rbt\_wfd.sys                  | 180300   | Riverbed Technology,Inc         |
 

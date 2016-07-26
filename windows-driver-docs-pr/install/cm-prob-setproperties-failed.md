@@ -1,0 +1,38 @@
+---
+title: CM\_PROB\_SETPROPERTIES\_FAILED
+description: CM\_PROB\_SETPROPERTIES\_FAILED
+ms.assetid: fbbff0ed-ffe0-4166-b2e2-76d857cf06cb
+keywords: ["CM_PROB_SETPROPERTIES_FAILED"]
+---
+
+# CM\_PROB\_SETPROPERTIES\_FAILED
+
+
+## <a href="" id="ddk-cm-prob-setproperties-failed-dg"></a>
+
+
+Device properties cannot be set.
+
+### Error Code
+
+50
+
+### Display Message (Windows Server 2003 and later versions of Windows)
+
+"Windows cannot apply all of the properties for this device. Device properties may include information that describes the device's capabilities and settings (such as security settings for example). (Code 50)"
+
+"To fix this problem, you can try reinstalling this device. However, we recommend that you contact the hardware manufacturer for a new driver."
+
+### Recommended Resolution (Windows Server 2003 and later versions of Windows)
+
+Try reinstalling the device. If that does not work, obtain a new driver from the hardware vendor.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bdevinst\devinst%5D:%20CM_PROB_SETPROPERTIES_FAILED%20%20RELEASE:%20%287/22/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
