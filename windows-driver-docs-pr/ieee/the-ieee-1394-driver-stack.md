@@ -26,7 +26,7 @@ A client driver for a device that connects to the IEEE 1394 bus driver sits on t
 
 The following illustration shows the relationship between the legacy and the new 1394 bus drivers.
 
-![](images/1394busdriver.png)
+![Diagram showing the relationship between the legacy and the new 1394 bus drivers.](images/1394busdriver.png)
 
 To issue commands to devices connected to the bus, drivers issue the [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) IRP, with control code [**IOCTL\_1394\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff537232). The driver packages the parameters in an IEEE 1394 I/O request block ([**IRB**](https://msdn.microsoft.com/library/windows/hardware/ff537350)), and passes a pointer to it in the **Parameters.Others.Argument1** member of the IRP. The **FunctionNumber** member of the IRB determines the type of operation, and the **u** member describes the operation. The bus driver uses the IOCTL\_1394\_CLASS IRP to present an interface to both the bus and the host controller.
 
