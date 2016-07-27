@@ -19,7 +19,7 @@ If you are a Microsoft employee, work in the [private content repository](https:
 
 ## Editing topics
 
-To edit an existing file, simply navigate to it and click the "Edit" button. 
+To edit an existing file, if you're already in the repo, simply navigate to the file and click the "Edit" button.  Alternatively, from an MSDN page, click the **Contribute** button and you will be taken directly to the relevant Markdown source file in the repo.  
 
 If you're using the GitHub-based public repo, GitHub automatically forks the official repo into your personal GitHub account, where you can make your changes. 
 
