@@ -25,7 +25,7 @@ If you're using the GitHub-based public repo, GitHub automatically forks the off
 
 If you're using the VSO-based private repo, use the drop-down arrow next to the Commit button and select **Commit to new branch**.
 
-Either way, when you're done, submit a pull request back to the *master* branch of the official repository. 
+Either way, when you're done, submit a pull request back to the master branch of the official repository. 
 After your pull request is created, someone on the Windows driver documentation team reviews your changes.
 
 If your request is accepted, updates are published to https://msdn.microsoft.com/windows/hardware/drivers.
@@ -34,7 +34,7 @@ If your request is accepted, updates are published to https://msdn.microsoft.com
 
 To make substantial changes to an existing article, add or change images, or contribute a new article, you will need to create a local clone of the content.
 
-If you are using the public repo, fork the official repo into your personal GitHub account, and then clone the fork down to your local computer.  Work locally, then push your changes back into your fork.  Then open a pull request back into the public repo.
+If you are using the public repo, fork the official repo into your personal GitHub account, and then clone the fork down to your local computer.  Work locally, then push your changes back into your fork.  Then open a pull request back to the master branch of the official public repo.
 
 If you are using the private repo, clone the private repo to your local computer.  Create a new branch from master, make your changes, and then push your new branch back into the VSO private repo.  Then open a pull request back to the master branch.
 
