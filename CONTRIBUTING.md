@@ -25,7 +25,7 @@ If you're using the GitHub-based public repo, GitHub automatically forks the off
 
 If you're using the VSO-based private repo, use the drop-down arrow next to the Commit button and select **Commit to new branch**.
 
-Once you're finished, submit a pull request back to the *master* branch of the official repository. 
+Either way, when you're done, submit a pull request back to the *master* branch of the official repository. 
 After your pull request is created, someone on the Windows driver documentation team reviews your changes.
 
 If your request is accepted, updates are published to https://msdn.microsoft.com/windows/hardware/drivers.
