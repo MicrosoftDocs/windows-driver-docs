@@ -38,6 +38,12 @@ If you are using the public repo, fork the official repo into your personal GitH
 
 If you are using the private repo, clone the private repo to your local computer.  Create a new branch from master, make your changes, and then push your new branch back into the VSO private repo.  Then open a pull request back to the master branch.
 
+## Resources
+
+For editing Markdown on your local computer, we recommend [Visual Studio Code](https://code.visualstudio.com/).
+
+You can learn the basics of Markdown in just a few minutes.  To get started, check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+
 ## Providing feedback on Windows driver documentation
 
 If you just want to provide feedback, rather than modify actual documentation pages, you can create an issue in the appropriate (public or private) repository.
