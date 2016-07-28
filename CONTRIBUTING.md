@@ -33,11 +33,6 @@ Either way, when you're done, submit a pull request back to the master branch of
 After you create the pull request, a member of the Windows Driver Documentation team will review your changes. 
 If your request is accepted, updates are published to https://msdn.microsoft.com/windows/hardware/drivers.
 
-**Note**: Although we have plans to make every topic available in GitHub, it is a massive process for us to convert the tens of thousands of topics we curate. 
-Some of the driver documentation has yet to be migrated into GitHub. If you do not see the **Contribute** or **Edit** button on the top right of a page, that topic may not be available for public editing, yet. 
-For pages not yet migrated, you can, however, open an issue (instructions below) and submit that to our team. Please be sure to include the URL and title of the topic, along with your request for change. 
-In addition, our team is responsible for the Windows driver documentation **only**. If you provide feedback about the .NET Framework or Windows Azure, say, we do not have the resources to cover those requests.  
-
 ## Making more substantial changes
 
 To make substantial changes to an existing article, add or change images, or contribute a new article, you will need to create a local clone of the content. 
