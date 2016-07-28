@@ -17,20 +17,15 @@ If you are not a Microsoft employee, work in the [public content repository](htt
 
 If you are a Microsoft employee, work in the [private content repository](https://cpubwin.visualstudio.com/drivers/_git/drivers).  
 
-## Providing feedback on Windows driver documentation
-
-You can point out errors, suggest changes, or request new topics by creating an issue in the issues page of the appropriate repository.
-
-Issues are reviewed regularly by members of the Windows driver documentation team, and are triaged, assigned, and addressed accordingly.
-
-All of the documentation hosted in this repo is written using [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/).
-
 ## Editing topics
 
-To edit an existing file, simply navigate to it and click the "Edit" button. 
-If you're using the GitHub-based public repo, GitHub will automatically create your own fork of our repository where you can make your changes. 
+To edit an existing file, if you're already in the repo, simply navigate to the file and click the "Edit" button.  Alternatively, from an MSDN page, click the **Contribute** button and you will be taken directly to the relevant Markdown source file in the repo.  
+
+If you're using the GitHub-based public repo, GitHub automatically forks the official repo into your personal GitHub account, where you can make your changes. 
+
 If you're using the VSO-based private repo, use the drop-down arrow next to the Commit button and select **Commit to new branch**.
-Once you're finished, submit a pull request to the *master* branch of the repository. 
+
+Either way, when you're done, submit a pull request back to the master branch of the official repository. 
 After your pull request is created, someone on the Windows driver documentation team reviews your changes.
 
 If your request is accepted, updates are published to https://msdn.microsoft.com/windows/hardware/drivers.
@@ -39,6 +34,18 @@ If your request is accepted, updates are published to https://msdn.microsoft.com
 
 To make substantial changes to an existing article, add or change images, or contribute a new article, you will need to create a local clone of the content.
 
-If you are using the public repo, you'll manually create your GitHub fork and then clone the fork down to your local computer.  Work locally, then push your changes back into your fork.  Then open a pull request back into the public repo.
+If you are using the public repo, fork the official repo into your personal GitHub account, and then clone the fork down to your local computer.  Work locally, then push your changes back into your fork.  Then open a pull request back to the master branch of the official public repo.
 
-If you are using the private repo, you'll clone the private repo to your local computer.  Create a new branch from master, make your changes, and then push your new branch back into the VSO private repo.  Then open a pull request back to the master branch.
+If you are using the private repo, clone the private repo to your local computer.  Create a new branch from master, make your changes, and then push your new branch back into the VSO private repo.  Then open a pull request back to the master branch.
+
+## Resources
+
+For editing Markdown on your local computer, we recommend [Visual Studio Code](https://code.visualstudio.com/).
+
+You can learn the basics of Markdown in just a few minutes.  To get started, check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+
+## Providing feedback on Windows driver documentation
+
+If you just want to provide feedback, rather than modify actual documentation pages, you can create an issue in the appropriate (public or private) repository.
+
+Issues are reviewed regularly by members of the Windows driver documentation team, and are triaged, assigned, and addressed accordingly.
