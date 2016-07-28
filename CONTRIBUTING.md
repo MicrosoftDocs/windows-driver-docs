@@ -21,6 +21,7 @@ If you are a Microsoft employee, work in the [private content repository](https:
 
 To edit an existing file, if you're already in the repo, simply navigate to the file and click the "Edit" button.  Alternatively, from an MSDN page, click the **Contribute** button and you will be taken directly to the relevant Markdown source file in the repo.  
 
+We're actively moving docs into the repo, but they're not all there yet.  If you don't see a **Contribute** button for a page you'd like to change, please open an issue in the repo and be sure to provide the URL of the page in question. 
 If you're using the GitHub-based public repo, GitHub automatically forks the official repo into your personal GitHub account, where you can make your changes. 
 
 If you're using the VSO-based private repo, use the drop-down arrow next to the Commit button and select **Commit to new branch**.
@@ -44,8 +45,3 @@ For editing Markdown on your local computer, we recommend [Visual Studio Code](h
 
 You can learn the basics of Markdown in just a few minutes.  To get started, check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 
-## Providing feedback on Windows driver documentation
-
-If you just want to provide feedback, rather than modify actual documentation pages, you can create an issue in the appropriate (public or private) repository.
-
-Issues are reviewed regularly by members of the Windows driver documentation team, and are triaged, assigned, and addressed accordingly.
