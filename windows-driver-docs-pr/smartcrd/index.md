@@ -7,6 +7,9 @@ keywords: ["smart card drivers WDK"]
 
 # Smart Card Reader Devices Design Guide
 
+
+Design guide for developing drivers for smart card reader devices.
+
 ## <span id="in_this_section"></span>In this section
 
 
@@ -17,6 +20,8 @@ keywords: ["smart card drivers WDK"]
 </colgroup>
 <thead>
 <tr class="header">
+<th align="left">Topic</th>
+<th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
@@ -62,7 +67,7 @@ keywords: ["smart card drivers WDK"]
 </tr>
 <tr class="odd">
 <td align="left"><p>[Specifications and Resources](specifications-and-resources.md)</p></td>
-<td align="left"></td>
+<td align="left"><p>To work with the smart card support in Microsoft Windows operating systems, smart card readers and cards should be compatible with Interoperability Specification for ICCs and Personal Computer Systems. Smart card readers and device drivers should also be Plug and Play compliant.</p></td>
 </tr>
 </tbody>
 </table>
