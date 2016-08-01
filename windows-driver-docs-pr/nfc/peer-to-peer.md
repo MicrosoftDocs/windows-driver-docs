@@ -31,4 +31,3 @@ The Driver MUST support the default SNEP server running over LLCP to exchange ND
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
 
-------------------

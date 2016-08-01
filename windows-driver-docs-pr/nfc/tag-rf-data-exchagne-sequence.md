@@ -42,4 +42,3 @@ The NFC CX performs a presence check in StateRfDataXchg when there is no data to
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
 
-------------------

@@ -20,4 +20,3 @@ Because the Smart Card is sharing the driver with NFP, when a smart card approac
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Smart card DDI and command reference](https://msdn.microsoft.com/library/windows/hardware/dn905601)  
 
-------------------

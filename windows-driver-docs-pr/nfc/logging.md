@@ -38,4 +38,3 @@ The NFC CX does not include any debugging extensions.
 [Event Tracing for Windows (Windows Drivers)](https://msdn.microsoft.com/library/windows/hardware/ff552961)  
 [Tools for Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204)  
 
-------------------

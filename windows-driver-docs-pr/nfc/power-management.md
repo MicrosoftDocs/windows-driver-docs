@@ -20,4 +20,3 @@ The NFP driver will receive an [**IOCTL\_NFP\_ENABLE**](https://msdn.microsoft.c
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
 
-------------------

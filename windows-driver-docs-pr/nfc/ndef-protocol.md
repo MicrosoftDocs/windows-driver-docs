@@ -131,4 +131,3 @@ The driver MUST match subscriptions for “NDEF:Unknown” ONLY with NDEF messag
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
 
-------------------

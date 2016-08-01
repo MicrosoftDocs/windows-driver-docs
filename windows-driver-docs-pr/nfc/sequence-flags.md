@@ -59,4 +59,3 @@ This flag forces the NFC CX to not send an NCI reset during shutdown.
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
 
-------------------
