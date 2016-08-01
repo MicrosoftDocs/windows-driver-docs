@@ -41,11 +41,7 @@ Every named device object must have a security descriptor. The operating system 
 
 By default, the operating system also uses the device PDO's security descriptor to determine access rights to the device interfaces that a driver provides.
 
-A driver package can provide an INF file that specifies a device's security descriptors, as follows:
-
--   To specify security descriptors for a type of device, the INF file can contain an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) within an [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330).
-
--   To specify security descriptors for all types of devices within a device setup class, the INF file can contain an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) within an [**INF ClassInstall32 section**](https://msdn.microsoft.com/library/windows/hardware/ff546335).
+A driver package can provide an INF file that specifies a device's security descriptors with an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) within an [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330).
 
 For more information about specifying security descriptors in INF files, see [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212).
 
@@ -59,7 +55,6 @@ When the framework creates a device object, it always sets the FILE\_DEVICE\_SEC
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20Controlling%20Device%20Access%20in%20KMDF%20Drivers%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
