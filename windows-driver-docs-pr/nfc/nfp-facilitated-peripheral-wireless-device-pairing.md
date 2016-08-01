@@ -22,4 +22,3 @@ The NFP provider must understand and handle Bluetooth pairing type messages. The
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
 
-------------------

@@ -848,4 +848,3 @@ Any attempt to tap the device on a system running an operating system that doesn
 ## Related topics
  [NFC device driver interface (DDI) reference](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
  
-------------------

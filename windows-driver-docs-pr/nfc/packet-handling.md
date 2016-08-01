@@ -22,4 +22,3 @@ In some cases, the sequences defined by the NFC CX might not be sufficient for N
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
 
-------------------

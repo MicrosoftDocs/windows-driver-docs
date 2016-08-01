@@ -31,4 +31,3 @@ The model does not provide for knowledge of the receiving side actually processi
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
 
-------------------

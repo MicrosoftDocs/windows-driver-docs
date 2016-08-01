@@ -26,4 +26,3 @@ Most implementations of NFCCs in this configuration report only the HCI network 
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
 
-------------------

@@ -24,4 +24,3 @@ The high-level architecture diagram of the NFC stack on Windows is shown further
 ## Related topics
  [NFC device driver interface (DDI) reference](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
  
-------------------

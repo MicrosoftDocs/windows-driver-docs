@@ -29,4 +29,3 @@ There is no ordering or priority defined in the model. It is acceptable for the 
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
 
-------------------

@@ -38,4 +38,3 @@ The following IOCTLs are not supported for NFC smart card operation because they
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Smart card DDI and command reference](https://msdn.microsoft.com/library/windows/hardware/dn905601)  
 
-------------------

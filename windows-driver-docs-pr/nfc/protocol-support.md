@@ -27,4 +27,3 @@ keywords: ["NFC", "near field communications", "proximity", "near field proximit
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
 
-------------------
