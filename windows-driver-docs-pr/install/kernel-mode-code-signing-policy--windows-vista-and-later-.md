@@ -30,113 +30,120 @@ The driver code signing policy starting with Windows Vista and later versions o
 
 Starting with Windows 8 UEFI Secure Boot-enabled platforms have additional signing requirements, including requirements for ARM platforms. The driver code signing policy for 32-bit versions of Windows 8 UEFI Secure Boot-enabled platforms also requires drivers have a digital signature.
 
-The following table lists the signature requirements for different types of drivers based on processor architecture and Secure Boot state.
+<p>The following table lists the signature requirements for different types of drivers based on processor architecture and Secure Boot state.</p>
+<p>
+<table>
+<tr>
+<th></th>
+<th></th>
+<th colspan="3">Secure Boot Enabled </th>
+<th colspan="3">Secure Boot Disabled </th>
+</tr>
+<tr>
+<th></th>
+<th></th>
+<th>x86</th>
+<th>x64</th>
+<th>ARM</th>
+<th>x86</th>
+<th>x64</th>
+<th>ARM</th>
+</tr>
+<tr>
+<td>
+<p>Kernel Mode Drivers</p>
+</td>
+<td>
+<p>3rd party boot drivers</p>
+</td>
+<td colspan="2">
+<p><b>Signature Algo</b></p>
+<p>SHA1 or above</p>
+<p><b>Signature type</b></p>
+<p>Embedded</p>
+<p><b>Signature requirement</b></p>
+<p>Microsoft Root Authority 2010</p>
+<p>WHQL signature required</p>
+</td>
+<td>
+<p><b>Signature Algo</b></p>
+<p>SHA256</p>
+<p><b>Signature type</b></p>
+<p>Embedded</p>
+<p><b>Signature requirement</b></p>
+<p>Microsoft Root Authority 2010</p>
+<p>WHQL Signature Required</p>
+</td>
+<td>
+<p>Unsigned drivers allowed</p>
+</td>
+<td>
+<p><b>Signature Algo</b></p>
+<p>SHA1 or above</p>
+<p><b>Signature type</b></p>
+<p>Embedded or catalog signed</p>
+<p><b>Signature requirement</b></p>
+<p>Standard roots trusted by CI 
+</p>
+</td>
+<td>
+<p>N/A (Secure Boot cannot be disabled)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p></p>
+</td>
+<td>
+<p>ELAM</p>
+</td>
+<td colspan="6">
+<p>ELAM drivers must be signed by the process described <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/hh848061(v=vs.85).aspx">here</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p></p>
+</td>
+<td>
+<p>Drivers</p>
+</td>
+<td colspan="2">
+<p><b>Signature Algo</b></p>
+<p>SHA1 or above</p>
+<p><b>Signature type</b></p>
+<p>Embedded</p>
+<p><b>Signature requirement</b></p>
+<p>Microsoft Root Authority 2010</p>
+<p>WHQL signature required</p>
+</td>
+<td>
+<p><b>Signature Algo</b></p>
+<p>SHA256</p>
+<p><b>Signature type</b></p>
+<p>Embedded</p>
+<p><b>Signature requirement</b></p>
+<p>Microsoft Root Authority 2010</p>
+<p>WHQL Signature Required</p>
+</td>
+<td>
+<p>Unsigned drivers allowed</p>
+</td>
+<td>
+<p><b>Signature Algo</b></p>
+<p>SHA1 or above</p>
+<p><b>Signature type</b></p>
+<p>Embedded or catalog signed</p>
+<p><b>Signature requirement</b></p>
+<p>Standard roots trusted by CI 
+</p>
+</td>
+<td>
+<p>N/A (Secure Boot cannot be disabled)</p>
+</td>
+</tr>
+</table>
 
-Secure Boot Enabled
-Secure Boot Disabled
-x86
-x64
-ARM
-x86
-x64
-ARM
-Kernel Mode Drivers
-
-3rd party boot drivers
-
-**Signature Algo**
-
-SHA1 or above
-
-**Signature type**
-
-Embedded
-
-**Signature requirement**
-
-Microsoft Root Authority 2010
-
-WHQL signature required
-
-**Signature Algo**
-
-SHA256
-
-**Signature type**
-
-Embedded
-
-**Signature requirement**
-
-Microsoft Root Authority 2010
-
-WHQL Signature Required
-
-Unsigned drivers allowed
-
-**Signature Algo**
-
-SHA1 or above
-
-**Signature type**
-
-Embedded or catalog signed
-
-**Signature requirement**
-
-Standard roots trusted by CI
-
-N/A (Secure Boot cannot be disabled)
-
-ELAM
-
-ELAM drivers must be signed by the process described [here](http://msdn.microsoft.com/library/windows/desktop/hh848061.aspx).
-
-Drivers
-
-**Signature Algo**
-
-SHA1 or above
-
-**Signature type**
-
-Embedded
-
-**Signature requirement**
-
-Microsoft Root Authority 2010
-
-WHQL signature required
-
-**Signature Algo**
-
-SHA256
-
-**Signature type**
-
-Embedded
-
-**Signature requirement**
-
-Microsoft Root Authority 2010
-
-WHQL Signature Required
-
-Unsigned drivers allowed
-
-**Signature Algo**
-
-SHA1 or above
-
-**Signature type**
-
-Embedded or catalog signed
-
-**Signature requirement**
-
-Standard roots trusted by CI
-
-N/A (Secure Boot cannot be disabled)
 
  
 
