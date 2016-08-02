@@ -28,21 +28,26 @@ The following table shows the release history of the UMDF library:
 <th align="left">UMDF version</th>
 <th align="left">Release method</th>
 <th align="left">Included in this version of Windows</th>
-<th align="left">Drivers using it can run on <sup>†</sup></th>
+<th align="left">Drivers using it can run on</th>
 </tr>
 </thead>
-<tbody>
+<tbody><tr class="odd">
+<td align="left"><p>2.19</p></td>
+<td align="left"><p>Windows 10, version 1607 WDK</p></td>
+<td align="left"><p>Windows 10, version 1607 </p></td>
+<td align="left"><p>Windows 10, version 1607 (all SKUs), Windows Server 2016</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>2.17</p></td>
 <td align="left"><p>Windows 10, version 1511 WDK</p></td>
 <td align="left"><p>Windows 10, version 1511</p></td>
-<td align="left"><p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, Windows 10 IoT Core (IoT Core), Windows Server 2016 Technical Preview</p></td>
+<td align="left"><p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, Windows 10 IoT Core (IoT Core), Windows Server 2016</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2.15</p></td>
 <td align="left"><p>Windows 10 WDK</p></td>
 <td align="left"><p>Windows 10</p></td>
-<td align="left"><p>Windows 10 for desktop editions, Windows 10 Mobile, IoT Core, Windows Server 2016 Technical Preview</p></td>
+<td align="left"><p>Windows 10 for desktop editions, Windows 10 Mobile, IoT Core, Windows Server 2016</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2.0</p></td>
@@ -81,8 +86,9 @@ The following table shows the release history of the UMDF library:
 
 You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
 
-## UMDF Version 2.17
+For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
 
+## UMDF Version 2.17
 
 This version adds UMDF support for the following existing interfaces:
 
@@ -94,9 +100,6 @@ This version adds UMDF support for the following existing interfaces:
 For more information, see [Dispatching IRPs to I/O Queues](dispatching-irps-to-i-o-queues.md).
 
 ## UMDF Version 2.15
-
-
-For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
 
 Here is the list of updated DDIs for version 2.15:
 
