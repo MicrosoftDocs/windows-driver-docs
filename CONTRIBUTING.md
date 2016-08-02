@@ -52,7 +52,7 @@ Members of the Windows driver documentation team review issues regularly, and we
 
 ## Resources
 
-For editing Markdown on your local computer, we recommend [Visual Studio Code](https://code.visualstudio.com/).
+You can use your favorite text editor to edit Markdown.  We recommend [Visual Studio Code](https://code.visualstudio.com/), a free lightweight open source editor from Microsoft.
 
 You can learn the basics of Markdown in just a few minutes.  To get started, check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 
