@@ -25,21 +25,27 @@ The following table shows the release history of the KMDF library:
 <th align="left">KMDF version</th>
 <th align="left">Release method</th>
 <th align="left">Included in this version of Windows</th>
-<th align="left">Drivers using it run on <sup>†</sup></th>
+<th align="left">Drivers using it run on</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><p>1.19</p></td>
+<td align="left"><p>Windows 10, version 1607 WDK</p></td>
+<td align="left"><p>Windows 10, version 1607</p></td>
+<td align="left"><p>Windows 10 version 1607 and later, Windows Server 2016</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>1.17</p></td>
 <td align="left"><p>Windows 10, version 1511 WDK</p></td>
 <td align="left"><p>Windows 10, version 1511</p></td>
-<td align="left"><p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, Windows 10 IoT Core (IoT Core), Windows Server 2016 Technical Preview</p></td>
+<td align="left"><p>Windows 10 version 1511 and later, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>1.15</p></td>
 <td align="left"><p>Windows 10 WDK</p></td>
-<td align="left"><p>Windows 10 WDK</p></td>
-<td align="left"><p>Windows 10 for desktop editions, Windows 10 Mobile, IoT Core, Windows Server 2016 Technical Preview</p></td>
+<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Windows 10 for desktop editions, Windows 10 Mobile, IoT Core, Windows Server 2016</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>1.13</p></td>
@@ -86,18 +92,22 @@ The following table shows the release history of the KMDF library:
 </tbody>
 </table>
 
- 
 
 You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
 
 For a complete list of callbacks and methods, and which frameworks and versions they apply to, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
 
-## KMDF Versions 1.15 and 1.17
-
-
 For information about the new features for KMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
 
-Here is the list of updated DDIs for version 1.15:
+## KMDF Version 1.19
+
+* Added [**WdfDmaTransactionSetSingleTransferRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/988c7e70-3b2a-4a0f-91cf-dfab3ea07f05)
+* Added **WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER** flag in [**WDF_DMA_ENABLER_CONFIG_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/hh439491)
+* Added **STATUS_WDF_TOO_MANY_TRANSFERS** return value for [**WdfDmaTransactionInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff547099) and [**WdfDmaTransactionDmaCompleted**](https://msdn.microsoft.com/library/windows/hardware/ff547039)
+* Added output messages for single transfer output to [**!wdfkd.wdfdmatransaction**](https://msdn.microsoft.com/library/windows/hardware/ff565721) and [**!wdfkd.wdfdmaenabler**](https://msdn.microsoft.com/library/windows/hardware/ff565717)
+* For more info about single transfer DMA, see [Using Single Transfer DMA](using-single-transfer-dma.md).
+
+## KMDF Version 1.15
 
 -   The new [**WdfDeviceOpenDevicemapKey**](https://msdn.microsoft.com/library/windows/hardware/dn932458) method allows a driver to access subkeys and values under **HKEY\_LOCAL\_MACHINE\\HARDWARE\\DEVICEMAP**.
 
@@ -235,7 +245,6 @@ Initial release.
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20KMDF%20Version%20History%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
