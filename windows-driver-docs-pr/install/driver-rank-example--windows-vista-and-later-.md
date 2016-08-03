@@ -36,53 +36,81 @@ FeatureScore=0xGG
 
 The following table lists the rank of each possible match between the identifiers that are reported by the device and the identifiers that are listed in the INF *Models* section entry. The rank is the sum of the [signature score](signature-score--windows-vista-and-later-.md), which is represented by 0x*SS*000000, the [feature score](feature-score--windows-vista-and-later-.md), which is represented by 0x00*GG*0000, and the [identifier score](identifier-score--windows-vista-and-later-.md), which depends, in each case, on the two identifiers that matched.
 
-Device identifiers
-Identifiers in the INF *Models* section entry
-**INF\_HwID\_1**
-
-**INF\_CID\_1**
-
-**INF\_CID\_2**
-
-**HwID\_1**
-
-Rank 0x*SSGG*0000
-
-Rank 0x*SSGG*1000
-
-Rank 0x*SSGG*1000
-
-**HwID\_2**
-
-Rank 0x*SSGG*0001
-
-Rank 0x*SSGG*1001
-
-Rank 0x*SSGG*1001
-
-**CID\_1**
-
-Rank 0x*SSGG*2000
-
-Rank 0x*SSGG*3000
-
-Rank 0x*SSGG*3100
-
-**CID\_2**
-
-Rank 0x*SSGG*2001
-
-Rank 0x*SSGG*3001
-
-Rank 0x*SSGG*3101
+<table>
+<tr>
+<th>Device identifiers</th>
+<th colspan="3">Identifiers in the INF <i>Models</i> section entry</th>
+</tr>
+<tr>
+<td></td>
+<td>
+<p><b>INF_HwID_1</b></p>
+</td>
+<td>
+<p><b>INF_CID_1</b></p>
+</td>
+<td>
+<p><b>INF_CID_2</b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>HwID_1</b></p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>0000</p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>1000</p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>1000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>HwID_2</b></p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>0001</p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>1001</p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>1001</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>CID_1</b></p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>2000</p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>3000</p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>3100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><b>CID_2</b></p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>2001</p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>3001</p>
+</td>
+<td>
+<p>Rank 0x<i>SSGG</i>3101</p>
+</td>
+</tr>
+</table>
 
  
-
- 
-
- 
-
-
-
 
 
