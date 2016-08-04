@@ -7,7 +7,7 @@ ms.assetid: ef3b7138-b68a-4dba-b011-fcb93e3072a3
 # Combining Platform Extensions with Operating System Versions
 
 
-In Windows XP and later versions of Windows, within the [**INF Manufacturer section**](inf-manufacturer-section.md) of an INF file, you can supply [**INF *Models* sections**](inf-models-section.md) that are specific to various versions of the Windows operating system. These version-specific *Models* sections are identified by using the *TargetOSVersion* decoration.
+Within the [**INF Manufacturer section**](inf-manufacturer-section.md) of an INF file, you can supply [**INF *Models* sections**](inf-models-section.md) that are specific to various versions of the Windows operating system. These version-specific *Models* sections are identified by using the *TargetOSVersion* decoration.
 
 Within the same INF file, different [**INF *Models* sections**](inf-models-section.md) can be specified for different versions of the operating system. The specified versions indicate target operating system versions with which the INF *Models* sections will be used. If no versions are specified, Windows uses a *Models* section without the *TargetOSVersion* decoration for all versions of all operating systems.
 
