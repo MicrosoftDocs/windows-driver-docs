@@ -7,15 +7,19 @@ ms.assetid: ef3b7138-b68a-4dba-b011-fcb93e3072a3
 # Combining Platform Extensions with Operating System Versions
 
 
-In Windows XP and later versions of Windows, within the [**INF Manufacturer section**](inf-manufacturer-section.md) of an INF file, you can supply [**INF *Models* sections**](inf-models-section.md) that are specific to various versions of the Windows operating system. These version-specific *Models* sections are identified by using the *TargetOSVersion* decoration.
+Within the [**INF Manufacturer section**](inf-manufacturer-section.md) of an INF file, you can supply [**INF *Models* sections**](inf-models-section.md) that are specific to various versions of the Windows operating system. These version-specific *Models* sections are identified by using the *TargetOSVersion* decoration.
 
 Within the same INF file, different [**INF *Models* sections**](inf-models-section.md) can be specified for different versions of the operating system. The specified versions indicate target operating system versions with which the INF *Models* sections will be used. If no versions are specified, Windows uses a *Models* section without the *TargetOSVersion* decoration for all versions of all operating systems.
 
 ### *TargetOSVersion* decoration format
 
-The following example shows the correct format of the *TargetOSVersion* decoration:
+The following example shows the correct format of the *TargetOSVersion* decoration for Windows XP through Windows 10, version 1511:
 
-**nt**\[*Architecture*\]\[**.**\[*OSMajorVersion*\]\[**.**\[*OSMinorVersion*\]\[**.**\[*ProductType*\]\[**.***SuiteMask*\]\]\]\]
+**nt**\[*Architecture*\]\[**.**\[*OSMajorVersion*\]\[**.**\[*OSMinorVersion*\]\[**.**\[*ProductType*\]\[**.**\[*SuiteMask*\]\]\]\]\]
+
+Starting with Windows 10, version 1607 (Build 14310 and later), the correct format of the *TargetOSVersion* decoration includes *BuildNumber*:
+
+**nt**\[*Architecture*\]\[**.**\[*OSMajorVersion*\]\[**.**\[*OSMinorVersion*\]\[**.**\[*ProductType*\]\[**.**\[*SuiteMask*\]\]\[**.**\[*BuildNumber*\]\]\]\]\]
 
 Each field is defined as follows:
 
@@ -40,6 +44,26 @@ A number that represents the major version number for the operating system. The 
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>10</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Windows Server 2012 R2</p></td>
+<td align="left"><p>6</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Windows 8.1</p></td>
+<td align="left"><p>6</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Windows Server 2012</p></td>
+<td align="left"><p>6</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Windows 8</p></td>
+<td align="left"><p>6</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>Windows Server 2008 R2</p></td>
 <td align="left"><p>6</p></td>
@@ -84,6 +108,26 @@ A number that represents the minor version number for the operating system. The 
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>0</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Windows Server 2012 R2</p></td>
+<td align="left"><p>3</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Windows 8.1</p></td>
+<td align="left"><p>3</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Windows Server 2012</p></td>
+<td align="left"><p>2</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Windows 8</p></td>
+<td align="left"><p>2</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>Windows Server 2008 R2</p></td>
 <td align="left"><p>1</p></td>
@@ -113,7 +157,8 @@ A number that represents the minor version number for the operating system. The 
 
  
 
-<a href="" id="producttype"></a>*ProductType*  
+<a href="" id="producttype"></a>*ProductType*
+
 A number that represents *one* of the VER\_NT\_*xxxx* flags defined in *Winnt.h*, such as the following:
 
 **0x0000001** (VER\_NT\_WORKSTATION)
@@ -125,20 +170,32 @@ A number that represents *one* of the VER\_NT\_*xxxx* flags defined in *Winnt.h*
 If a product type is specified, the INF file will be used only if the operating system matches the specified product type. If the INF file supports multiple product types for a single operating system version, multiple *TargetOSVersion* entries are required.
 
 *SuiteMask*
+
 A number that represents *a combination of* one or more of the VER\_SUITE\_*xxxx* flags defined in *Winnt.h*. These flags include the following:
 
-**0x00000001** (VER\_SUITE\_SMALLBUSINESS)
-**0x00000002** (VER\_SUITE\_ENTERPRISE)
-**0x00000004** (VER\_SUITE\_BACKOFFICE)
-**0x00000008** (VER\_SUITE\_COMMUNICATIONS)
-**0x00000010** (VER\_SUITE\_TERMINAL)
-**0x00000020** (VER\_SUITE\_SMALLBUSINESS\_RESTRICTED)
-**0x00000040** (VER\_SUITE\_EMBEDDEDNT)
-**0x00000080** (VER\_SUITE\_DATACENTER)
-**0x00000100** (VER\_SUITE\_SINGLEUSERTS)
-**0x00000200** (VER\_SUITE\_PERSONAL)
-**0x00000400** (VER\_SUITE\_SERVERAPPLIANCE)
+**0x00000001** (VER\_SUITE\_SMALLBUSINESS)  
+**0x00000002** (VER\_SUITE\_ENTERPRISE)  
+**0x00000004** (VER\_SUITE\_BACKOFFICE)  
+**0x00000008** (VER\_SUITE\_COMMUNICATIONS)  
+**0x00000010** (VER\_SUITE\_TERMINAL)  
+**0x00000020** (VER\_SUITE\_SMALLBUSINESS\_RESTRICTED)  
+**0x00000040** (VER\_SUITE\_EMBEDDEDNT)  
+**0x00000080** (VER\_SUITE\_DATACENTER)  
+**0x00000100** (VER\_SUITE\_SINGLEUSERTS)  
+**0x00000200** (VER\_SUITE\_PERSONAL)  
+**0x00000400** (VER\_SUITE\_SERVERAPPLIANCE)  
+
 If one or more suite mask values are specified, the INF file will be used only if the operating system matches all the specified product suites. If the INF file supports multiple product suite combinations for a single operating system version, multiple *TargetOSVersion* entries are required.
+
+*BuildNumber*
+
+Specifies the minimum OS build number of the Windows 10 release to which the section applies, starting with build 14310 or later.
+
+The build number is assumed to be relative to some specific OS major/minor version only, and may be reset for some future OS major/minor version.
+
+Any build number specified by the *TargetOSVersion* decoration is evaluated only when the OS major/minor version of the *TargetOSVersion* matches the current OS (or AltPlatformInfo) version exactly.  If the current OS version is greater than the OS version specified by the *TargetOSVersion* decoration (OSMajorVersion,OSMinorVersion), the section is considered applicable regardless of the build number specified. Likewise, if the current OS version is less than the OS version specified by the TargetOSVersion decoration, the section is not applicable.
+
+If build number is supplied, the OS version and BuildNumber of the *TargetOSVersion* decoration must both be greater than the OS version and build number of the Windows 10 build 14310 where this decoration was first introduced.  Earlier versions of the operating system without these changes (for example, Windows 10 build 10240) will not parse unknown decorations, so an attempt to target these earlier builds will actually prevent that OS from considering the decoration valid at all.
 
 ### <a href="" id="how-setup-processes-targetosversion-decorations"></a>How Windows processes *TargetOSVersion* decorations
 
@@ -149,6 +206,8 @@ When you install a device or driver on a host operating system, Windows follows 
     For example, if an INF *Models* section has a *TargetOS* decoration of **ntx86.5.1**, Windows selects that section if the host operating system is running Windows XP or later version of Windows on an x86-based system.
 
     Similarly, if an [**INF *Models* section**](inf-models-section.md) has a *TargetOS* decoration of **nt.6.0**, Windows selects that section if the host operating system is Windows Vista or later version of Windows on any supported hardware platform.
+
+    If an INF *Models* section has a *TargetOS* decoration of **nt.10.0...14393**, Windows selects that section if the host operating system is running a Windows 10 build equal to or greater than 14393 on any supported hardware platform.
 
 2.  If none of the [**INF *Models* sections**](inf-models-section.md) have a *TargetOS* decoration that matches the host operating system, Windows selects the *Models* section that has either a matching platform extension or no platform extension.
 

@@ -6,6 +6,8 @@
 # [Device and Driver Technologies](device-and-driver-technologies.md)
 ## [ACPI](acpi/)
 ## [Battery Drivers](battery/)
+## [HID Drivers](hid/)
+## [IEEE Drivers](ieee/)
 ## [Installable file system drivers](ifs/)
 ## [GPIO drivers](gpio/)
 ## [NFC device drivers](nfc/)
