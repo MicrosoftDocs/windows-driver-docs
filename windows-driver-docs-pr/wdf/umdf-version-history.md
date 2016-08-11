@@ -88,6 +88,10 @@ You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 
 
 For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
 
+## UMDF Version 2.19
+
+There are no changes or additions for UMDF Version 2.19.
+
 ## UMDF Version 2.17
 
 This version adds UMDF support for the following existing interfaces:
