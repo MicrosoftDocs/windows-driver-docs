@@ -7,7 +7,6 @@ keywords: ["NFC", "near field communications", "proximity", "near field proximit
 ---
 
 # NFC class extension architecture
-[note]: <> (This is a note1, it will not be included)
 
 
 The NFC driver is implemented as a class extension and the underlying transport driver is implemented as the client driver. The main advantage over a monolithic driver is that the client transport driver can be replaced in the future to support additional transports or to support specific needs of chip manufacturers for functionality that has not yet been standardized through the NFC Forum.
@@ -25,7 +24,7 @@ The NFC class extension driver is not expected to run in Update OS context. Howe
 
  
 
-[note]: <> (This is a note2, it will not be included) 
+ 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
