@@ -70,10 +70,14 @@ You can think of each system-supplied INF file's **Manufacturer** section as a t
 
 For Windows XP and later versions of Windows, *models-section-name* entries in the **Manufacturer** section can be decorated to specify target operating system versions. Different [**INF *Models* sections**](inf-models-section.md) can be specified for different versions of the operating system. The specified versions indicate operating system versions with which the INF ***Models*** sections is used. If no versions are specified, Windows uses a specified ***Models*** section for all versions of all operating systems.
 
-The format of *TargetOSVersion* decoration is as follows:
+For Windows XP to Windows 10, version 1511, the format of *TargetOSVersion* decoration is as follows:
 
 ``` syntax
 nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]]]
+```
+Starting with Windows 10, version 1607 (Build 14310 and later), the format of the *TargetOSVersion* decoration is as follows:
+``` syntax
+nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask][.[BuildNumber]]]]]
 ```
 
 Each field is defined as follows:
@@ -93,6 +97,11 @@ A number that represents the operating system's major version number. The follow
 
 | Windows version        | Major version |
 |------------------------|---------------|
+| Windows 10             | 10            |
+| Windows Server 2012 R2 | 6             |
+| Windows 8.1            | 6             |
+| Windows Server 2012    | 6             |
+| Windows 8              | 6             |
 | Windows Server 2008 R2 | 6             |
 | Windows 7              | 6             |
 | Windows Server 2008    | 6             |
@@ -109,6 +118,11 @@ A number that represents the operating system's minor version number. The follow
 
 | Windows version        | Minor version |
 |------------------------|---------------|
+| Windows 10             | 0             |
+| Windows Server 2012 R2 | 3             |
+| Windows 8.1            | 3             |
+| Windows Server 2012    | 2             |
+| Windows 8              | 2             |
 | Windows Server 2008 R2 | 1             |
 | Windows 7              | 1             |
 | Windows Server 2008    | 0             |
@@ -131,7 +145,7 @@ A number that represents one of the VER\_NT\_xxxx flags defined in *Winnt.h*, su
 
 If a product type is specified, the INF file is used only if the operating system matches the specified product type. If the INF supports multiple product types for a single operating system version, multiple *TargetOSVersion* entries are required.
 
-<a href="" id="suitemask--"></a>*SuiteMask*
+<a href="" id="suitemask"></a>*SuiteMask*
 A number representing a combination of one or more of the VER\_SUITE\_xxxx flags defined in *Winnt.h*. These flags include the following:
 
 **0x00000001** (VER\_SUITE\_SMALLBUSINESS)
@@ -146,6 +160,13 @@ A number representing a combination of one or more of the VER\_SUITE\_xxxx flags
 **0x00000200** (VER\_SUITE\_PERSONAL)
 **0x00000400** (VER\_SUITE\_SERVERAPPLIANCE)
 If one or more suite mask values are specified, the INF is used only if the operating system matches all the specified product suites. If the INF supports multiple product suite combinations for a single operating system version, multiple *TargetOSVersion* entries are required.
+
+<a href="" id="buildnumber"></a>*BuildNumber*  
+A number that represents the minimum OS build number of the Windows 10 release to which the section is applicable, starting with build 14310 or later.
+
+The build number is assumed to be relative to some specific OS major/minor version only, and may be reset for some future OS major/minor version.  Any build number specified by the *TargetOSVersion* decoration is evaluated only when the OS major/minor version of the *TargetOSVersion* matches the current OS (or AltPlatformInfo) version exactly.  If the current OS version is greater than the OS version specified by the *TargetOSVersion* decoration (OSMajorVersion,OSMinorVersion), the section is considered applicable regardless of the build number specified. Likewise, if the current OS version is less than the OS version specified by *TargetOSVersion* decoration, the section is not applicable.
+
+If build number is supplied, the OS version and BuildNumber of the *TargetOSVersion* decoration must both be greater than the OS version and build number of the Windows 10 build 14310 where this decoration was first introduced.  Earlier versions of the operating system without these changes (for example, Windows 10 build 10240) will not parse unknown decorations, so an attempt to target these earlier builds will actually prevent that OS from considering the decoration valid at all.
 
 For more information about the *TargetOSVersion* decoration, see [Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md).
 
@@ -229,6 +250,14 @@ The following example shows a **Manufacturer** section that is specific to x86 p
 [foosec.NTx86.5.1]
 ```
 
+The following example shows a **Manufacturer** section that is specific to x64 platforms, Windows 10 build 14393 and later:
+
+```
+[Manufacturer]
+%foo%=foosec,NTamd64.10.0...14393
+[foosec.NTamd64.10.0...14393]
+```
+
 The following two examples show skeletal INF files with a variety of OS-specific INF *Models* sections:
 
 Example 1:
@@ -260,7 +289,7 @@ Example 2:
 
 ```
 [Manufacturer]
-%MyName% = MyName,NT.6.0,NTx86.5.1
+%MyName% = MyName,NT.6.0,NTx86.5.1,
 .
 .
 [MyName.NT.6.0]    ; Empty section, so this INF does not support
@@ -278,6 +307,23 @@ Example 2:
 .
 ```
 
+Example 3:
+
+```
+[Manufacturer]
+%MyMfg% = MyMfg, NTamd64.6.1, NTamd64.10.0, NTamd64.10.0...14310
+.
+.
+[MyMfg.NTamd64.6.1]          ; Used for Windows 7 and later
+.                            ; (but not for Windows 10 and later due to the NT.10.0 entry)
+. 
+[MyMfg.NTamd64.10.0]         ; Used for Windows 10
+.                            ; (but not for Windows 10 build 14393 and later due to the NT.10.0...14393 entry)
+.
+[MyMfg.NTamd64.10.0...14393] ; Used for Windows 10 build 14393 and later
+.
+.
+```
 ## See also
 
 

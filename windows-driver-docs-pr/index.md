@@ -8,7 +8,7 @@ For fundamental driver concepts and an introduction to driver development tools,
 
 ## Universal Windows driver samples
 
-Universal Windows driver samples are available on GitHub. See [Microsoft/Windows-driver-samples](http://go.microsoft.com/fwlink/p/?LinkId=534087).
+Universal Windows driver samples are available on GitHub. For more info, see [Microsoft/Windows-driver-samples](http://go.microsoft.com/fwlink/p/?LinkId=534087).
 
 ## How to get WDK 10
 
