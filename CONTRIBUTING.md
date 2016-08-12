@@ -21,7 +21,7 @@ If you ***are*** a Microsoft employee, work in the [private content repository](
 
 We've tried to make editing an existing file as simple as possible. 
 - If you're already in the repo, just navigate to the file you want to make the edits to and click the **Edit** button.  
-- Alternatively, if you're viewing an MSDN page in your browser, click the **Contribute** button on the top right of the page. You will be redirected to the relevant Markdown source file in the repo, where you can click the **Edit** button. 
+- Alternatively, if you're viewing an MSDN page in your browser, click the **Contribute** button on the top right of the page. You will be redirected to the correct Markdown source file in the repo, where you can click the **Edit** button. 
 
 > **Note** We're actively moving docs into the repo, so the one you want might not be there yet.  If you don't see a **Contribute** button for a page you'd like to change, please open an issue in the repo and be sure to provide the URL of the page in question.
  
