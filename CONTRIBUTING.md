@@ -11,7 +11,7 @@ You've already completed this step.
 
 ## Public and private repos
 
-The driver docs are hosted on two different repos which are then merged and updated to a single site: one repo is for contributions from the general public and one for contributions from Microsoft employees.
+The driver docs are hosted in two different repos which are then merged and updated to a single site: one repo is for contributions from anyone and the other is only for Microsoft employees.
 
 If you are ***not*** a Microsoft employee, work in the [public content repository](https://github.com/Microsoft/windows-driver-docs).
 
