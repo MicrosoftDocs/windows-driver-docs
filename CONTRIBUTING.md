@@ -15,7 +15,7 @@ The driver docs are hosted on two different repos which are then merged and upda
 
 If you are ***not*** a Microsoft employee, work in the [public content repository](https://github.com/Microsoft/windows-driver-docs).
 
-If you ***are*** a Microsoft employee, work in the [private content repository](https://cpubwin.visualstudio.com/drivers/_git/drivers).  
+If you ***are*** a Microsoft employee, you can work in either the public repo or the [private content repository](https://cpubwin.visualstudio.com/drivers/_git/drivers).  
 
 ## Editing topics
 
