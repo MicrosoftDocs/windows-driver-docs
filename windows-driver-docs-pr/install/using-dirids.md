@@ -89,64 +89,69 @@ The following table shows several commonly used *dirids*, and the directories th
 <p>This is equivalent to <em>%SystemRoot%</em><strong>\\</strong><em>system32</em><strong>\\</strong><em>drivers</em> for Windows 2000 and later versions of Windows.</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p><strong>13</strong></p></td>
+<td align="left"><p>Driver package's <a href=https://msdn.microsoft.com/en-us/windows/hardware/drivers/install/driver-store>Driver Store</a> directory.</p>
+<p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p><strong>17</strong></p></td>
 <td align="left"><p>INF file directory</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>18</strong></p></td>
 <td align="left"><p>Help directory</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>20</strong></p></td>
 <td align="left"><p>Fonts directory</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>21</strong></p></td>
 <td align="left"><p>Viewers directory</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>23</strong></p></td>
 <td align="left"><p>Color directory (ICM) (<em>not</em> used for installing printer drivers)</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>24</strong></p></td>
 <td align="left"><p>Root directory of the system disk.</p>
 <p>This is the root directory of the disk on which Windows files are installed. For example, if <em>dirid</em> 10 is &quot;<em>C:\winnt</em>&quot;, then <em>dirid</em> 24 is &quot;<em>C:\\</em>&quot;.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>25</strong></p></td>
 <td align="left"><p>Shared directory</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>30</strong></p></td>
 <td align="left"><p>Root directory of the boot disk, also known as &quot;ARC system partition&quot;. (This might or might not be the same directory as the one represented by <em>dirid</em> 24.)</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>50</strong></p></td>
 <td align="left"><p>System directory</p>
 <p>This is equivalent to <em>%SystemRoot%</em><strong>\\</strong><em>system</em>.</p></td>
 </tr>
-<tr class="even">
-<td align="left"><p><strong>51</strong></p></td>
-<td align="left"><p>Spool directory (<em>not</em> used for installing printer drivers − see [Printer Dirids](https://msdn.microsoft.com/library/windows/hardware/ff560821))</p></td>
-</tr>
 <tr class="odd">
+<td align="left"><p><strong>51</strong></p></td>
+<td align="left"><p>Spool directory (<em>not</em> used for installing printer drivers − see <a href=https://msdn.microsoft.com/library/windows/hardware/ff560821>Printer Dirids</a>)</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p><strong>52</strong></p></td>
 <td align="left"><p>Spool drivers directory (<em>not</em> used for installing printer drivers)</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>53</strong></p></td>
 <td align="left"><p>User profile directory</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>54</strong></p></td>
 <td align="left"><p>Directory where <em>Ntldr.exe</em> and <em>Osloader.exe</em> are located</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><strong>55</strong></p></td>
 <td align="left"><p>Print processors directory (<em>not</em> used for installing printer drivers)</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p><strong>-1</strong></p></td>
 <td align="left"><p>Absolute path</p></td>
 </tr>
