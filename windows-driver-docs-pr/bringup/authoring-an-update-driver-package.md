@@ -208,7 +208,7 @@ The following table describes the various driver package INF sections and fields
 </tr>
 <tr class="odd">
 <td>FirmwareFilename</td>
-<td>{RESOURCE_GUID}\<em>firmware.bin</em></td>
+<td>{RESOURCE_GUID}\\<em>firmware.bin</em></td>
 <td>The firmware filename of the firmware resource update’s Update Capsule image filename. This path is relative to the %SystemRoot%\Firmware directory such that {RESOURCE_GUID} represents a subdirectory used to organize all firmware image files targeted for specific firmware resource.</td>
 </tr>
 <tr class="even">
@@ -239,7 +239,7 @@ The following table describes the various driver package INF sections and fields
 </tr>
 <tr class="odd">
 <td>DefaultDestDir</td>
-<td><p>%DIRID_WINDOWS%,Firmware\</p>
+<td><p>%DIRID_WINDOWS%,Firmware\\</p>
 <p>{RESOURCE_GUID}</p></td>
 <td>Specifies the default destination directory of all driver files copied by this driver package to be %SystemRoot%\Firmware, where DIRID_WINDOWS (10) represents the base %SystemRoot% directory and {RESOURCE_GUID} represents a subdirectory names after the firmware resource GUID.</td>
 </tr>

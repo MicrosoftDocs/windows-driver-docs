@@ -97,7 +97,7 @@ The following table summarizes the requirements for each partition. All sizes ar
 <td align="left"><p>Main OS (boot partition)</p></td>
 <td align="left"><p>OS, update OS, system registry hives, OEM preloaded applications</p></td>
 <td align="left"><p>NTFS</p></td>
-<td align="left"><p>C:\</p></td>
+<td align="left"><p>C:\\</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Approximately 1.5 GB</p>
 </td>
