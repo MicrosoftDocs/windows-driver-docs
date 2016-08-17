@@ -15,6 +15,7 @@
 ## [PCMCIA drivers](pcmcia/)
 ## [Power management technologies](powermeter/)
 ## [SD card bus drivers](sd/)
+## [Smartcard device drivers](smartcard/)
 ## [SPB drivers](spb/)
 ## [Storage device drivers](storage/)
 
