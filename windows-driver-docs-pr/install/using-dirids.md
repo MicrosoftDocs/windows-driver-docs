@@ -91,7 +91,7 @@ The following table shows several commonly used *dirids*, and the directories th
 <tr class="even">
 <td align="left"><p><strong>13</strong></p></td>
 <td align="left"><p>Driver package's <a href=https://msdn.microsoft.com/en-us/windows/hardware/drivers/install/driver-store>Driver Store</a> directory.</p>
-<p>This is equivalent to the path to the Driver Store directory that the driver package has been imported to for Windows 8.1 and later versions of Windows.</p></td>
+<p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>17</strong></p></td>
