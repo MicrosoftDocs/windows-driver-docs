@@ -8,6 +8,7 @@
 ## [Battery Drivers](battery/)
 ## [HID Drivers](hid/)
 ## [IEEE Drivers](ieee/)
+## [Imaging device drivers](image/)
 ## [Installable file system drivers](ifs/)
 ## [GPIO drivers](gpio/)
 ## [NFC device drivers](nfc/)
