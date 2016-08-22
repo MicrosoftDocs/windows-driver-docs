@@ -107,7 +107,7 @@ Consider the following benefits and risks to using these new optimizations for A
 
 -   No impact to container start or execution time (even for the first container).
 -   Avoids scanning of the same content in multiple containers.
--   Works for Windows Server Containers and Hyper-V Containers. For Hyper-V Containers, there is an assumption that the (same) anti-malware is also running on the host.
+-   Works for Windows Server Containers. For Hyper-V Container, this works for the packages but requires additional work for running Container. This is work in progress and will be updated. 
 
 ### <span id="Risks"></span><span id="risks"></span><span id="RISKS"></span>Risks
 
