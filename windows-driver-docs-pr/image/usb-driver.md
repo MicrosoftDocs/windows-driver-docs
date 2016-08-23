@@ -1,0 +1,101 @@
+---
+title: USB Driver
+author: windows-driver-content
+description: USB Driver
+MS-HAID:
+- 'WIA\_drv\_basic\_a4e56387-cf63-4e78-9099-da798c10bc73.xml'
+- 'image.usb\_driver'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: c20bd393-98d0-498e-a3e8-bbd1958ed774
+---
+
+# USB Driver
+
+
+## <a href="" id="ddk-usb-driver-si"></a>
+
+
+The kernel-mode still image driver for USB buses supports a single control endpoint, along with multiple interrupt, bulk IN, and bulk OUT endpoints. The control and interrupt endpoints are accessible using I/O control codes and [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216). The bulk endpoints are accessible using **ReadFile** and **WriteFile**.
+
+Before calling [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216), **ReadFile**, or **WriteFile**, you must call [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) (all described in the Microsoft Windows SDK documentation) to obtain a device handle. For devices that support no more than one of each endpoint type (control, interrupt, bulk IN, bulk OUT), a single call to **CreateFile** opens transfer pipes to each endpoint.
+
+For devices that support multiple interrupt or bulk endpoints, a single call to [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) opens transfer pipes to the highest-numbered endpoint of each type. If you want to use a different endpoint, you must do the following:
+
+1.  Call [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216), specifying an I/O control code of [**IOCTL\_GET\_PIPE\_CONFIGURATION**](https://msdn.microsoft.com/library/windows/hardware/ff542859), to determine a port's endpoint index numbers (that is, indexes into the returned [**USBSCAN\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff548547) structure array). Note that these index numbers are *not* the endpoint numbers described in the *Universal Serial Bus Specification*.
+
+2.  Append a backslash and the endpoint's index number to the port name returned by [**IStiDeviceControl::GetMyDevicePortName**](https://msdn.microsoft.com/library/windows/hardware/ff542944) when calling CreateFile.
+
+For example, suppose a device (with a port name of "usbscan0") has two endpoints of each type (interrupt, bulk IN, bulk OUT), with index numbers as follows:
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Index</th>
+<th>Type</th>
+<th>Endpoint#</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>0</p></td>
+<td><p>Interrupt</p></td>
+<td><p>0x01</p></td>
+</tr>
+<tr class="even">
+<td><p>1</p></td>
+<td><p>Bulk IN</p></td>
+<td><p>0x82</p></td>
+</tr>
+<tr class="odd">
+<td><p>2</p></td>
+<td><p>Bulk IN</p></td>
+<td><p>0x83</p></td>
+</tr>
+<tr class="even">
+<td><p>3</p></td>
+<td><p>Bulk OUT</p></td>
+<td><p>0x04</p></td>
+</tr>
+<tr class="odd">
+<td><p>4</p></td>
+<td><p>Bulk OUT</p></td>
+<td><p>0x05</p></td>
+</tr>
+<tr class="even">
+<td><p>5</p></td>
+<td><p>Interrupt</p></td>
+<td><p>0x06</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+If you call [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) with a port name of "usbscan0", the function opens transfer pipes to endpoints with index values of 2, 4, and 5, as well as the control endpoint.
+
+If you call [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) with a port name of "usbscan0\\1", the function opens transfer pipes to endpoints with index values of 1, 4, and 5, as well as the control endpoint.
+
+For this device, if you want to use interrupt endpoint 0, bulk IN endpoint 1, and bulk OUT endpoint 3, call [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) three times, specifying port names of "usbscan0\\0", "usbscan0\\1", and "usbscan0\\3". This creates three device handles. Whenever a subsequent call to [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216), **ReadFile**, or **WriteFile** is made, the device handle associated with the desired pipe should be specified.
+
+Because only one control endpoint is supported, specifying any I/O control code that uses the control pipe causes the driver to use the proper endpoint, regardless of which endpoint (if any) was specified to [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858).
+
+For descriptions of all I/O control codes, see [USB Still Image I/O Control Codes](https://msdn.microsoft.com/library/windows/hardware/ff548569).
+
+The kernel-mode USB driver does not implement a package or message protocol. Read operations do not require any particular packet alignment, but better performance can be achieved if read requests are aligned to maximum packet size boundaries. The maximum packet size can be obtained using the [**IOCTL\_GET\_CHANNEL\_ALIGN\_RQST**](https://msdn.microsoft.com/library/windows/hardware/ff542849) I/O control code.
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20USB%20Driver%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+

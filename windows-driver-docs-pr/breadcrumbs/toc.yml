@@ -1,5 +1,5 @@
 - name: Windows Drivers
-  tocHref: /windows/hardware/drivers/
+  tocHref: /windows/hardware/
   topicHref: /windows/hardware/drivers/index/
   items:
   - name: Bring up guide
@@ -14,3 +14,49 @@
   - name: Windows Driver Frameworks
     tocHref: /windows/hardware/drivers/wdf/
     topicHref: /windows/hardware/drivers/wdf/index
+  - name: Device and Driver Technologies
+    tocHref: /windows/hardware/drivers/device-and-driver-technologies/
+    topicHref: /windows/hardware/drivers/device-and-driver-technologies
+    items:
+      - name: ACPI
+        tocHref: /windows/hardware/drivers/acpi/
+        topicHref: /windows/hardware/drivers/acpi/index
+      - name: Battery
+        tocHref: /windows/hardware/drivers/battery/
+        topicHref: /windows/hardware/drivers/battery/index
+      - name: HID
+        tocHref: /windows/hardware/drivers/hid/
+        topicHref: /windows/hardware/drivers/hid/index
+      - name: IEEE
+        tocHref: /windows/hardware/drivers/ieee/
+        topicHref: /windows/hardware/drivers/ieee/index
+      - name: Image
+        tocHref: /windows/hardware/drivers/image/
+        topicHref: /windows/hardware/drivers/image/index        
+      - name: Installable File Systems
+        tocHref: /windows/hardware/drivers/ifs/
+        topicHref: /windows/hardware/drivers/ifs/index
+      - name: GPIO
+        tocHref: /windows/hardware/drivers/gpio/
+        topicHref: /windows/hardware/drivers/gpio/index
+      - name: NFC
+        tocHref: /windows/hardware/drivers/nfc/
+        topicHref: /windows/hardware/drivers/nfc/index
+      - name: PCI
+        tocHref: /windows/hardware/drivers/pci/
+        topicHref: /windows/hardware/drivers/pci/index
+      - name: PCMCIA
+        tocHref: /windows/hardware/drivers/pcmcia/
+        topicHref: /windows/hardware/drivers/pcmcia/index
+      - name: Powermeter
+        tocHref: /windows/hardware/drivers/powermeter/
+        topicHref: /windows/hardware/drivers/powermeter/index
+      - name: SD
+        tocHref: /windows/hardware/drivers/sd/
+        topicHref: /windows/hardware/drivers/sd/index
+      - name: SPB
+        tocHref: /windows/hardware/drivers/spb/
+        topicHref: /windows/hardware/drivers/spb/index
+      - name: Storage
+        tocHref: /windows/hardware/drivers/storage/
+        topicHref: /windows/hardware/drivers/storage/index

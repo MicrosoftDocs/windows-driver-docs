@@ -22,7 +22,7 @@ You can use WDF debugger extensions to view and save the WDF log during interact
 2.  Load the [Wdfkd.dll extension library](debugger-extensions-for-kmdf-drivers.md) into your debugger. If you are using the kernel debugger, you can do this by using the [**.load**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command. To load the correct version of Wdfkd.dll you need to specify the fully qualified path to the DLL. For example, you would use the following path on an x86-based debugger host machine:
 
     ```
-    .load c:\WinDDK\<version>\bin\x86\wdfkd.dll
+    .load c:\WinDDK\\<version>\bin\x86\wdfkd.dll
     ```
 
     You can then confirm that the extension is loaded by using the [**!chain**](https://msdn.microsoft.com/library/windows/hardware/ff562212) command to display all loaded extensions.
@@ -36,7 +36,7 @@ You can use WDF debugger extensions to view and save the WDF log during interact
     Because .tmf files are version specific, you must specify a .tmf file that corresponds to the version of the framework's runtime library that is currently running. For example, if KMDF version 1.9 is running on the host machine:
 
     ```
-    !wdftmffile c:\WinDDK\<version>\tools\tracing\x86\wdf01009.tmf
+    !wdftmffile c:\WinDDK\\<version>\tools\tracing\x86\wdf01009.tmf
     ```
 
     You can also set the search path by setting the TRACE\_FORMAT\_SEARCH\_PATH environment variable. The [**!wdftmffile**](https://msdn.microsoft.com/library/windows/hardware/ff566128) command takes precedence over the search path that is set by the environment variable.

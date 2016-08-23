@@ -35,14 +35,14 @@ The following syntax rules govern the required and optional contents of INF file
 
 -   Within syntax definitions, optional entries are delimited by *unbolded* brackets (\[,\]). On the other hand, *bold* brackets (**\[**, **\]**) are required elements of the entry in which they are contained. In the following example, the brackets around **Version** are required, while the brackets around **Class**=*class-name* indicate this entry is optional.
 
-    ``` syntax
-    [Version]
-
+   <pre>
+   <b>[</b>Version<b>]</b>
+   
     Signature="signature-name"
     [Class=class-name]
     ...
-    ```
-
+   </pre>
+   
 ### <a href="" id="section-names"></a> Section Names
 
 -   Sections can be specified in any order. Most INF files list sections in a particular order, by convention, but Windows finds sections by name, not by location within the INF file.
