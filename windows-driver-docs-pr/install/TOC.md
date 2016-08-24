@@ -219,6 +219,7 @@
 ######## [Determining the Parent of a Nonpresent Device](determining-the-parent-of-a-nonpresent-device.md)
 ####### [Obtaining the Original Source Path of an Installed INF File](obtaining-the-original-source-path-of-an-installed-inf-file.md)
 ###### [Guidelines for Using SetupAPI](guidelines-for-using-setupapi.md)
+##### [DIFx Guidelines](difx-guidelines.md)
 #### [Device and Driver Installation Software Components](device-and-driver-installation-software-components.md)
 ##### [Writing a Co-installer](writing-a-co-installer.md)
 ###### [Co-installer Operation](co-installer-operation.md)

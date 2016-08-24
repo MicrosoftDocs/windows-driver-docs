@@ -30,6 +30,9 @@
       - name: IEEE
         tocHref: /windows/hardware/drivers/ieee/
         topicHref: /windows/hardware/drivers/ieee/index
+      - name: Image
+        tocHref: /windows/hardware/drivers/image/
+        topicHref: /windows/hardware/drivers/image/index        
       - name: Installable File Systems
         tocHref: /windows/hardware/drivers/ifs/
         topicHref: /windows/hardware/drivers/ifs/index
