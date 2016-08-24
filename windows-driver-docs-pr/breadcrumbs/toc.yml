@@ -60,3 +60,6 @@
       - name: Storage
         tocHref: /windows/hardware/drivers/storage/
         topicHref: /windows/hardware/drivers/storage/index
+      - name: Stream
+        tocHref: /windows/hardware/drivers/stream/
+        topicHref: /windows/hardware/drivers/stream/index
