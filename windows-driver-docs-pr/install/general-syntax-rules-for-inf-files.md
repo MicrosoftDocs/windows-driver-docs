@@ -109,6 +109,24 @@ The following syntax rules govern the required and optional contents of INF file
     An entry in an INF file that omits the two optional values can have this format:
 
     *filename***=***diskid*
+-   In order to include a percent (%) character in values supplied in section entries and directives, escape the percent character with another percent character.
+
+    For example, consider this statement in an *[add-registry-section]* section:
+
+    *HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll"*
+
+    The registry value will be set with the following value:
+
+    *%SystemRoot%\System32\IoLogMsg.dll*
+-   In order to include a double quote (") character in values supplied in section entries and directives, escape the double quote character with another double quote character.  Note that the string must be within a **"***quoted string***"**.  
+
+    For example, consider this statement in an *[add-registry-section]* section:
+
+    *HKR,,Example,,"Display an ""example"" string"*
+
+    The registry value will be set with the following value:
+
+    *Display an "example" string*
 
 ### <a href="" id="inf-size-limits"></a> INF Size Limits
 
