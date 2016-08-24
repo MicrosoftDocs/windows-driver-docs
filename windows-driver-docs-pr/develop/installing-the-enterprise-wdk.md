@@ -17,9 +17,6 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 *	Windows Driver Development Kit build 10586.0
 
 
-##Known Issues
-*	The Visual Studio IDE is not included in the Enterprise WDK and any functionality that requires the IDE will not work.
-
 ## Installation Instructions
 1.	Download the [Enterprise WDK](https://msdn.microsoft.com/en-us/windows/hardware/mt612818.aspx).
 2.	Expand the .zip file into an appropriately named directory, such as d:\ewdk.
