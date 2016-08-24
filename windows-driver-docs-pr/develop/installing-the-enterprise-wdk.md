@@ -18,7 +18,6 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 
 
 ##Known Issues
-*	SDVand Code Analysis does not work in this release.
 *	The Visual Studio IDE is not included in the Enterprise WDK and any functionality that requires the IDE will not work.
 
 ## Installation Instructions
