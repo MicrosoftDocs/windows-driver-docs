@@ -238,21 +238,23 @@ This example shows a **Manufacturer** section typical to an INF for a single IHV
 
 ```
 [Manufacturer]
-%LogiMfg%=LogiMfg        ; Models section == LogiMfg
+%Mfg%=Contoso        ; Models section == Contoso
+
+[Contoso]
 
 ; ...
 [Strings]
-LogiMfg = "Logitech"
+Mfg = "Contoso, Ltd."
 ```
 
 The next example shows part of a **Manufacturer** section typical to an INF for a device-class-specific installer:
 
 ```
 [Manufacturer]
-%ADP%=ADAPTEC
+%CONTOSO%=Contoso_Section
 ; several entries omitted here for brevity
-%SONY%=SONY
-%ULTRASTOR%=ULTRASTORE
+%FABRIKAM%=Fabrikam_Section
+%ADATUM%=Adatum_Section
 ```
 
 The following example shows a **Manufacturer** section that is specific to x86 platforms, Windows XP and later:
@@ -260,6 +262,7 @@ The following example shows a **Manufacturer** section that is specific to x86 p
 ```
 [Manufacturer]
 %foo%=foosec,NTx86.5.1
+
 [foosec.NTx86.5.1]
 ```
 
@@ -268,6 +271,7 @@ The following example shows a **Manufacturer** section that is specific to x64 p
 ```
 [Manufacturer]
 %foo%=foosec,NTamd64.10.0...14393
+
 [foosec.NTamd64.10.0...14393]
 ```
 
@@ -279,22 +283,16 @@ Example 1:
 [Manufacturer]
 %MyName% = MyName,NTx86.5.1
 .
-.
 [MyName]
 %MyDev% = InstallA,hwid
-.
 .
 [MyName.NTx86.5.1]
 %MyDev% = InstallB,hwid
 .
+[InstallA]   ; Windows 2000 
 .
 .
-[InstallA.NTx86]   ; Windows 2000 
-.
-.
-
-[InstallB.NTx86]   ; Windows XP and later, x86 only
-.
+[InstallB]   ; Windows XP and later, x86 only
 .
 ```
 
@@ -302,21 +300,17 @@ Example 2:
 
 ```
 [Manufacturer]
-%MyName% = MyName,NT.6.0,NTx86.5.1,
+%MyName% = MyName,NTx86.6.0,NTx86.5.1,
 .
-.
-[MyName.NT.6.0]    ; Empty section, so this INF does not support
+[MyName.NTx86.6.0] ; Empty section, so this INF does not support
 .                  ; NT 6.0 and later.
 .
-.
 [MyName.NTx86.5.1] ; Used for NT 5.1 and later
-.                  ; (but not NT 6.0 due to the NT.6.0 entry)
+.                  ; (but not NT 6.0 and later due to the NTx86.6.0 entry)
 %MyDev% = InstallB,hwid
-.
 .
 [MyName]           ; Empty section, so this INF does not support
 .                  ; Win2000
-.
 .
 ```
 
@@ -326,10 +320,9 @@ Example 3:
 [Manufacturer]
 %MyMfg% = MyMfg, NTamd64.6.1, NTamd64.10.0, NTamd64.10.0...14310
 .
-.
 [MyMfg.NTamd64.6.1]          ; Used for Windows 7 and later
 .                            ; (but not for Windows 10 and later due to the NT.10.0 entry)
-. 
+.
 [MyMfg.NTamd64.10.0]         ; Used for Windows 10
 .                            ; (but not for Windows 10 build 14393 and later due to the NT.10.0...14393 entry)
 .
