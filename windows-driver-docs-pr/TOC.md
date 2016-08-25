@@ -6,6 +6,7 @@
 # [Device and Driver Technologies](device-and-driver-technologies.md)
 ## [ACPI](acpi/)
 ## [Battery Drivers](battery/)
+## [Biometric Drivers](biometric/)
 ## [HID Drivers](hid/)
 ## [IEEE Drivers](ieee/)
 ## [Imaging device drivers](image/)
