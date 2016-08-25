@@ -86,7 +86,7 @@ Each field is defined as follows:
 Specifies the target operating system is NT-based. Windows 2000 and later versions of Windows are all NT-based.
 
 <a href="" id="architecture"></a>*Architecture*  
-Identifies the hardware platform. If specified, this must be **x86**, **ia64**, or **amd64**.
+Identifies the hardware platform. If specified, this must be **x86**, **ia64**, **amd64**, or **arm**.
 
 Prior to Windows Server 2003 SP1, if *Architecture* is not specified, the associated INF ***Models*** section can be used with any hardware platform.
 
@@ -145,20 +145,31 @@ A number that represents one of the VER\_NT\_xxxx flags defined in *Winnt.h*, su
 
 If a product type is specified, the INF file is used only if the operating system matches the specified product type. If the INF supports multiple product types for a single operating system version, multiple *TargetOSVersion* entries are required.
 
-<a href="" id="suitemask"></a>*SuiteMask*
+<a href="" id="suitemask"></a>*SuiteMask*  
 A number representing a combination of one or more of the VER\_SUITE\_xxxx flags defined in *Winnt.h*. These flags include the following:
 
 **0x00000001** (VER\_SUITE\_SMALLBUSINESS)
+
 **0x00000002** (VER\_SUITE\_ENTERPRISE)
+
 **0x00000004** (VER\_SUITE\_BACKOFFICE)
+
 **0x00000008** (VER\_SUITE\_COMMUNICATIONS)
+
 **0x00000010** (VER\_SUITE\_TERMINAL)
+
 **0x00000020** (VER\_SUITE\_SMALLBUSINESS\_RESTRICTED)
+
 **0x00000040** (VER\_SUITE\_EMBEDDEDNT)
+
 **0x00000080** (VER\_SUITE\_DATACENTER)
+
 **0x00000100** (VER\_SUITE\_SINGLEUSERTS)
+
 **0x00000200** (VER\_SUITE\_PERSONAL)
+
 **0x00000400** (VER\_SUITE\_SERVERAPPLIANCE)
+
 If one or more suite mask values are specified, the INF is used only if the operating system matches all the specified product suites. If the INF supports multiple product suite combinations for a single operating system version, multiple *TargetOSVersion* entries are required.
 
 <a href="" id="buildnumber"></a>*BuildNumber*  
@@ -177,6 +188,7 @@ For more information about the *TargetOSVersion* decoration, see [Combining Plat
 If your INF contains **Manufacturer** section entries with decorations, it must also include [**INF *Models* sections**](inf-models-section.md) with names that match the operating system decorations. For example, if an INF contains the following **Manufacturer** section:
 
 **%FooCorp%=FooMfg, NTx86....0x80, NTamd64**
+
 Then the INF must also contain [**INF *Models* sections**](inf-models-section.md) with the following names:
 
 -   **\[FooMfg.NTx86....0x80\]**
@@ -189,10 +201,10 @@ Then the INF must also contain [**INF *Models* sections**](inf-models-section.md
 
 During installation, Windows selects an [**INF *Models* section**](inf-models-section.md) in the following way:
 
-1.  If Windows is running in an x86-based version of the operating system (Windows XP or later versions) that includes the Data Center product suite, Windows selects the **\[FooMfg.NTx86....0x80\]***Models* section.
-2.  If Windows is running in an x64-based version of the operating system (Windows XP or later versions) for any product suite, Windows selects the **\[FooMfg.NTamd64\]***Models* section.
+1.  If Windows is running in an x86-based version of the operating system (Windows XP or later versions) that includes the Data Center product suite, Windows selects the **\[FooMfg.NTx86....0x80\]** ***Models*** section.
+2.  If Windows is running in an x64-based version of the operating system (Windows XP or later versions) for any product suite, Windows selects the **\[FooMfg.NTamd64\]** ***Models*** section.
 
-If the INF is intended for use with operating system versions earlier than Windows XP, it must also contain an undecorated models section named **\[FooMfg\]**.
+If the INF is intended for use with operating system versions earlier than Windows XP, it must also contain an undecorated ***Models*** section named **\[FooMfg\]**.
 
 If an INF supports multiple manufacturers, these rules must be followed for each manufacturer.
 
@@ -204,7 +216,7 @@ The following are additional examples of *TargetOSVersion* decorations:
 
 -   **%FooCorp% = FooMfg, NT.7.8**
 
-    In this example, for version 7.8 and later of the operating system, the resultant INF ***Models*** section name is **\[FooMfg.NT.7.8\]**. For earlier versions of the operating system such as Windows XP, \[FooMfg.NT\]\[FooMfg.NT\] is used.
+    In this example, for version 7.8 and later of the operating system, the resultant INF ***Models*** section name is **\[FooMfg.NT.7.8\]**. For earlier versions of the operating system such as Windows XP, **\[FooMfg.NT\]** is used.
 
 Setup's selection of which INF ***Models*** section to use is based on the following rules:
 
@@ -214,6 +226,7 @@ Setup's selection of which INF ***Models*** section to use is based on the follo
 Suppose, for example, Windows is executing on Windows XP (version 5.1), without the Data Center product suite, and it finds the following entry in a **Manufacturer** section:
 
 **%FooCorp%=FooMfg, NT, NT.5, NT.5.5, NT....0x80**
+
 In this case, Windows looks for an [**INF *Models* section**](inf-models-section.md) named **\[FooMfg.NT.5\]**. Windows also uses the **\[FooMfg.NT.5\]** section if it is executing on a Datacenter version of Windows XP, because a specific version number takes precedence over the product type and suite mask.
 
 If you want an INF to explicitly exclude a specific operating system version, product type, or suite, create an empty [**INF *Models* section**](inf-models-section.md). For example, an empty section named **\[FooMfg.NTx86.6.0\]** prohibits installation on x86-based operating system versions 6.0 and higher.
