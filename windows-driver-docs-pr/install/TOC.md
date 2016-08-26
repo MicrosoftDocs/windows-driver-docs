@@ -451,6 +451,8 @@
 ###### [CM_PROB_SETPROPERTIES_FAILED](cm-prob-setproperties-failed.md)
 ###### [CM_PROB_WAITING_ON_DEPENDENCY](cm-prob-waiting-on-dependency.md)
 ###### [CM_PROB_UNSIGNED_DRIVER](cm-prob-unsigned-driver.md)
+###### [CM_PROB_USED_BY_DEBUGGER](cm-prob-used-by-debugger.md)
+###### [CM_PROB_DEVICE_RESET](cm-prob-device-reset.md)
 ##### [Device Manager Details Tab](device-manager-details-tab.md)
 ##### [Viewing Hidden Devices](viewing-hidden-devices.md)
 #### [SetupAPI Logging](setupapi-logging--windows-vista-and-later-.md)
