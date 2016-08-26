@@ -50,7 +50,7 @@ To enable Windows Hello for an infrared camera on your device, you must provide 
 
 As a starting point for building a DeviceMFT component that supports Windows Hello on your device, you can use the [sampledevicemft](https://github.com/Microsoft/Windows-driver-samples/tree/master/avstream/sampledevicemft) sample located in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
-To modify the **** driver sample, download and extract the [Windows-driver-samples-master.zip](https://github.com/Microsoft/Windows-driver-samples/archive/master.zip) or alternatively, clone the Windows driver sample repo to your development computer. Navigate to the **sampledevicemft** sample located in the **avstream** folder and make the following changes to the sample source code:
+To modify the driver sample, download and extract the [Windows-driver-samples-master.zip](https://github.com/Microsoft/Windows-driver-samples/archive/master.zip) or alternatively, clone the Windows driver sample repo to your development computer. Navigate to the **sampledevicemft** sample located in the **avstream** folder and make the following changes to the sample source code:
 
 1.  Add Source type information in the DeviceMFT component
 
