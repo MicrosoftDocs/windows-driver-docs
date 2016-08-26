@@ -24,6 +24,9 @@
       - name: Battery
         tocHref: /windows/hardware/drivers/battery/
         topicHref: /windows/hardware/drivers/battery/index
+      - name: Biometric
+        tocHref: /windows/hardware/drivers/biometric/
+        topicHref: /windows/hardware/drivers/biometric/index
       - name: HID
         tocHref: /windows/hardware/drivers/hid/
         topicHref: /windows/hardware/drivers/hid/index
@@ -60,3 +63,6 @@
       - name: Storage
         tocHref: /windows/hardware/drivers/storage/
         topicHref: /windows/hardware/drivers/storage/index
+      - name: Stream
+        tocHref: /windows/hardware/drivers/stream/
+        topicHref: /windows/hardware/drivers/stream/index
