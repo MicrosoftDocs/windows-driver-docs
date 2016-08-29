@@ -11,11 +11,6 @@ This section provides an overview of what you need to do to uninstall a device a
 
 -   [Device Manager](using-device-manager.md).
 
--   The Driver Install Frameworks (DIFx) tools.
-    **Note**  The DIFx tools do not support uninstalling a device, but can be used to uninstall the [driver package](driver-packages.md) that was installed on the device.
-
-     
-
 -   A device installation application that calls the [SetupAPI](setupapi.md) and [device installation](https://msdn.microsoft.com/library/windows/hardware/ff541299) functions.
 
 These actions include the following:
@@ -54,21 +49,19 @@ This uninstall action deletes the files that are associated with the [driver pac
 
 After the driver package has been removed from the driver store, it is no longer available to be installed on a device. The driver package must be restaged and installed to the [driver store](driver-store.md) from the original source, such as optical media, a network share, or Windows Update.
 
+You should uninstall all devices using a particular driver package before you delete that driver package from the driver store.
+
 **Important**  You must not manually delete the [driver package](driver-packages.md) from the [driver store](driver-store.md). Doing so can cause an inconsistency between the INF fie, the driver store catalog, and the driver in the driver store. You might also be unable to stage the same driver package to the driver store.
 
  
 
 ### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
 
-This uninstall action deletes the driver's binary files from the target system directory. This directory is typically *%SystemRoot%\\System32\\Drivers*.
-
-[Device Manager](using-device-manager.md) and the PnP manager do not support this uninstall action. You must complete this action by using the DIFx tools. These tools verify the consistency between the binary file on the target destination and the file in the [driver store](driver-store.md). These tools do not rely on the file path and file name. Therefore, we strongly recommend that you implement your uninstaller based only on the DIF*x* tools. These tools are designed to support robust uninstall procedures.
+[Device Manager](using-device-manager.md) and the PnP manager do not support deleting the binary files of the installed driver from the destination locations those files were copied out to during device installation. 
 
 When you uninstall a driver package, the associated driver binaries might still be used by devices or applications. Removing the binaries can lead to system failures. Before you remove any driver binaries, make sure that the binaries are not still being used by any other component on the system and can be safely removed.
 
-**Note**   Starting with Windows 7, the binary files, which were copied to a system when a driver package was installed, can no longer be deleted by using the DIFx tools.
 
- 
 
  
 
