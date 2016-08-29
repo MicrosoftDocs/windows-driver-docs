@@ -49,7 +49,7 @@ This uninstall action deletes the files that are associated with the [driver pac
 
 After the driver package has been removed from the driver store, it is no longer available to be installed on a device. The driver package must be restaged and installed to the [driver store](driver-store.md) from the original source, such as optical media, a network share, or Windows Update.
 
-You should uninstall all devices using a particular driver package before you delete that driver package from the driver store.
+Before deleting a driver package from the driver store, be sure to uninstall all devices that are using it.
 
 **Important**  You must not manually delete the [driver package](driver-packages.md) from the [driver store](driver-store.md). Doing so can cause an inconsistency between the INF fie, the driver store catalog, and the driver in the driver store. You might also be unable to stage the same driver package to the driver store.
 
