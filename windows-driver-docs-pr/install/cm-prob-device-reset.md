@@ -1,10 +1,10 @@
 ---
-title: CM\_PROB\_PROB\_RESET
-description: CM\_PROB\_PROB\_RESET
+title: CM_PROB_DEVICE_RESET
+description: CM_PROB_DEVICE_RESET
 ms.assetid: 6d536e79-66fa-495b-ad0b-1714a56450b2
 ---
 
-# CM\_PROB\_PROB\_RESET
+# CM_PROB_DEVICE_RESET
 
 ### Error
 
