@@ -11,7 +11,11 @@ keywords: ["nonpresent devices WDK", "Device Manager WDK , hidden devices", "hid
 ## <a href="" id="ddk-viewing-hidden-devices-dg"></a>
 
 
-Device Manager lists the devices that are installed in the computer. By default, certain devices are not shown in the list. These *hidden devices* include devices that have the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) status bit DN\_NO\_SHOW\_IN\_DM set, devices that are part of a setup class that is marked as a **NoDisplayClass** in the registry (for example, printers and non-PnP drivers), and devices that were physically removed from the computer but whose registry entries were not deleted (also known as [*nonpresent devices*](https://msdn.microsoft.com/library/windows/hardware/ff556313#wdkgloss-nonpresent-device)).
+Device Manager lists the devices that are installed in the computer. By default, certain devices are not shown in the list. These *hidden devices* include:
+
+* Devices that have the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) status bit DN\_NO\_SHOW\_IN\_DM set
+* Devices that are part of a setup class that is marked as a **NoDisplayClass** in the registry (for example, printers and non-PnP drivers)
+* Devices that were physically removed from the computer but whose registry entries were not deleted (also known as [*nonpresent devices*](https://msdn.microsoft.com/library/windows/hardware/ff556313#wdkgloss-nonpresent-device)).
 
 **Note**  Starting with Windows 8 and Windows Server 2012, the Plug-and-Play Manager no longer creates device representations for non-PnP (legacy) devices. Thus there are no such devices to view in the Device Manager.
 
