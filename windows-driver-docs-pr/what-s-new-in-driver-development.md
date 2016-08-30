@@ -18,7 +18,7 @@ This section describes new features for driver development in Windows 10, versi
 
 We're making the docs more community-driven. On many pages of the Windows driver documentation, you can suggest changes directly. Look for the **Contribute** button in the upper right corner of a page. It looks like this:
 
-![screenshot of contribute button](images/contribute-button.png)
+![screenshot of contribute button](contribute-button.png)
 
 When you click **Contribute**, you'll arrive at the Markdown source file for that topic in a [GitHub repository](https://github.com/Microsoft/windows-driver-docs). You can click **Edit** and suggest changes right here.
 
@@ -101,7 +101,7 @@ You can also find information about which APIs you can call from a Universal Win
 
 For example, you'll see a listing similar to this one that tells you if a given DDI is **Universal.**
 
-![target platform set to universal in requirements block](images/targetplatform.png)
+![target platform set to universal in requirements block](targetplatform.png)
 
 For more info, see [Target platform on MSDN driver reference pages](https://msdn.microsoft.com/windows-drivers/develop/windows_10_editions_for_universal_drivers).
 
