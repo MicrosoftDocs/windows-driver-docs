@@ -9,7 +9,7 @@
       ],
     "resource": [
         {
-          "files": ["**/images/**", "**/*.json", "**/windows-driver-docs-pr/**.png"],
+          "files": ["**/images/**", "**/*.json", "*/*.png"],
           "exclude": ["**/obj/**", "**/README.md"]
         }
     ],
