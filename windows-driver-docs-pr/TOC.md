@@ -1,4 +1,5 @@
 # [Windows Driver Kit documentation](index.md)
+# [What's new in driver development](what-s-new-in-driver-development.md)
 # [Bring up guide](bringup/)
 # [Developing, Testing, and Deploying Drivers](develop/)
 # [Device and Driver Installation](install/)
