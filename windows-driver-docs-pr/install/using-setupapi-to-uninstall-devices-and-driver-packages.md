@@ -23,13 +23,11 @@ For more information about uninstalling driver and driver packages, see [How Dev
 
 [SetupAPI](setupapi.md) allows you to uninstall a device and remove the device node ([*devnode*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-devnode)) from the system by using the following methods:
 
--   A device installation application can request that a device be uninstalled by calling the [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) function. When the application calls this function to uninstall a device, it must set the *InstallFunction* parameter to the [**DIF\_REMOVE**](https://msdn.microsoft.com/library/windows/hardware/ff543717)[device installation function (DIF)](https://msdn.microsoft.com/library/windows/hardware/ff541299) code.
+-   A device installation application can request that a device be uninstalled by calling the [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) function. When the application calls this function to uninstall a device, it must set the *InstallFunction* parameter to the [**DIF\_REMOVE**](https://msdn.microsoft.com/library/windows/hardware/ff543717) [device installation function (DIF)](https://msdn.microsoft.com/library/windows/hardware/ff541299) code.
 
     If [**SetupDiRemoveDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552097) is called during the processing of the DIF\_REMOVE request, the function removes the device's devnode from the system. It also deletes the device's hardware and software registry keys, together with any hardware-profile-specific registry keys (configuration-specific registry keys).
 
     **Note**  **SetupDiRemoveDevice** must only be called by a class installer and not by a device installation application.
-
-     
 
     For more information about DIF codes, see [Handling DIF Codes](handling-dif-codes.md).
 
