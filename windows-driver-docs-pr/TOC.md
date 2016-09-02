@@ -13,6 +13,7 @@
 ## [Imaging device drivers](image/)
 ## [Installable file system drivers](ifs/)
 ## [GPIO drivers](gpio/)
+## [Multifunction device drivers](multifunc/)
 ## [NFC device drivers](nfc/)
 ## [PCI drivers](pci/)
 ## [PCMCIA drivers](pcmcia/)
