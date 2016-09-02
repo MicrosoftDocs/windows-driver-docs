@@ -42,6 +42,9 @@
       - name: GPIO
         tocHref: /windows/hardware/drivers/gpio/
         topicHref: /windows/hardware/drivers/gpio/index
+      - name: Network
+        tocHref: /windows/hardware/drivers/network/
+        topicHref: /windows/hardware/drivers/network/index
       - name: NFC
         tocHref: /windows/hardware/drivers/nfc/
         topicHref: /windows/hardware/drivers/nfc/index
