@@ -45,6 +45,9 @@
       - name: Multifunction
         tocHref: /windows/hardware/drivers/multifunction/
         topicHref: /windows/hardware/drivers/multifunction/index   
+      - name: Network
+        tocHref: /windows/hardware/drivers/network/
+        topicHref: /windows/hardware/drivers/network/index
       - name: NFC
         tocHref: /windows/hardware/drivers/nfc/
         topicHref: /windows/hardware/drivers/nfc/index
