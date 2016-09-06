@@ -1,0 +1,41 @@
+---
+title: Adding Constructs to Your GDL File for GPD
+author: windows-driver-content
+description: Adding Constructs to Your GDL File for GPD
+MS-HAID:
+- 'autocfg\_b3604545-97c2-40f0-b2fa-83d1f437ed50.xml'
+- 'print.adding\_constructs\_to\_your\_gdl\_file\_for\_gpd'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: a0ce5a46-152f-47f3-9246-c272224d4be9
+---
+
+# Adding Constructs to Your GDL File for GPD
+
+
+To support autoconfiguration, you must add constructs to a GDL file by using the following new keywords: \***BidiQuery**, \***QueryString**, \***BidiResponse**, \***ResponseType**, \***ResponseData**, and \***BidiValue**. You can use these keywords to specify a bidi schema request that is associated with one option of a feature and the possible responses to that option.
+
+A \***Feature** construct can contain a single \***BidiQuery** construct, which serves as a container for a \***QueryString** instance. The query string in a \***Feature** construct instance is a Unicode string that consists of the bidi communications schema path to the feature that is being queried appended with the name of the particular property of the feature.
+
+A \***Feature** construct can also contain a single \***BidiResponse** construct, which serves as a container for one \***ResponseType** instance and an optional \***ResponseData** instance.
+
+Each \***Option** construct that is associated with the \***Feature** construct must contain a \***BidiValue** instance that includes a string representation of the response that is appropriate to that \***Option**.
+
+The following examples show how to add the appropriate constructs to your GDL file, based on the features listed in your GPD file. The first two examples consists of a GPD sample and a GDL sample with the constructs necessary to support autodetection or autoconfiguration of a particular installable feature. The third example provides a GDL sample for autodetection of the hard drive, and assumes the existence of a GPD feature definition for the hard drive.
+
+[Autodetecting the Duplex Unit for GPD](autodetecting-the-duplex-unit-for-gpd.md)
+
+[Autoconfiguring the Printer's Memory for GPD](autoconfiguring-the-printer-s-memory-for-gpd.md)
+
+[Autodetecting the Printer's Hard Drive for GPD](autodetecting-the-printer-s-hard-drive-for-gpd.md)
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Adding%20Constructs%20to%20Your%20GDL%20File%20for%20GPD%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+

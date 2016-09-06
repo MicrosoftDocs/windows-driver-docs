@@ -1,0 +1,60 @@
+---
+title: IPrintOemDriverPS COM Interface
+author: windows-driver-content
+description: IPrintOemDriverPS COM Interface
+MS-HAID:
+- 'custdrvr\_e9a1e19f-6ff6-4ae6-84ed-307f7eb67eab.xml'
+- 'print.iprintoemdriverps\_com\_interface'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 32975728-501f-45ac-a53d-34cf286bc433
+keywords: ["IPrintOemDriverPS"]
+---
+
+# IPrintOemDriverPS COM Interface
+
+
+## <a href="" id="ddk-iprintoemdriverps-com-interface-gg"></a>
+
+
+The `IPrintOemDriverPS` COM interface provides a rendering plug-in with access to utility operations supplied by the printer graphics DLL for Pscript5. These operations send a data stream to the print spooler and obtain driver-managed information.
+
+The following table lists and describes all of the methods defined by the `IPrintOemDriverPS` interface.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>[<strong>IPrintOemDriverPS::DrvGetDriverSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553102)</p></td>
+<td><p>Returns the current status of printer features and other internal information.</p></td>
+</tr>
+<tr class="even">
+<td><p>[<strong>IPrintOemDriverPS::DrvWriteSpoolBuf</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553103)</p></td>
+<td><p>Sends printer data to the spooler.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20IPrintOemDriverPS%20COM%20Interface%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
