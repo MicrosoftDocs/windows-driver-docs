@@ -45,8 +45,6 @@ Download the [Windows 3D Printing SDK](http://go.microsoft.com/fwlink/p/?LinkId=
 ## Related sections
 
 
-[Printer driver design guide](print\index.md)  (Paper printers and plotters)
-
 [Print DDI reference](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/ff561038)
  
 

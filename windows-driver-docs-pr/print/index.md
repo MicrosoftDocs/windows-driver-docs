@@ -17,7 +17,7 @@ keywords: ["print devices WDK", "print WDK See printer driver", "print WDK See p
 
 This section provides information on designing, testing, and debugging printer drivers and print spoolers.
 
-## <a href="" id="ddk-printer-drivers-and-spooler-components-gg"></a>In this section
+## In this section
 
 
 [V4 Printer Drivers](v4-printer-driver.md)
@@ -31,8 +31,6 @@ This section provides information on designing, testing, and debugging printer d
  
 ## Related sections
 
-
-[3D printer driver design guide](3dprint\index.md)  
 
 [Print DDI reference](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/ff561038)
  
