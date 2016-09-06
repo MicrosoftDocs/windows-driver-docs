@@ -29,7 +29,12 @@ This section provides information on designing, testing, and debugging printer d
 [Printer Driver Testing and Debugging](printer-driver-testing-and-debugging.md)
 
  
+## Related sections
 
+
+[3D printer driver design guide](3dprint\index.md)  
+
+[Print DDI reference](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/ff561038)
  
 
 

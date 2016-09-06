@@ -17,13 +17,15 @@ This section contains information about Microsoft 3D printer drivers.
 
 
 [Microsoft Standard Driver for 3D Printers](microsoft-standard-driver-for-3d-printers-.md)
-[MS3DPrint Standard G-Code driver](ms3dprint-standard-g-code-driver.md)
-[3D printing sample WSD app](3d-printing-sample-wsd-app.md)
-[Print schema keywords for 3D manufacturing](print-schema-keywords-for-3d-manufacturing.md)
-[3D hardware partners](3d-printing-partners.md)
- 
 
- 
+[MS3DPrint Standard G-Code driver](ms3dprint-standard-g-code-driver.md)
+
+[3D printing sample WSD app](3d-printing-sample-wsd-app.md)
+
+[Print schema keywords for 3D manufacturing](print-schema-keywords-for-3d-manufacturing.md)
+
+[3D hardware partners](3d-printing-partners.md)
+  
 
 
 --------------------
