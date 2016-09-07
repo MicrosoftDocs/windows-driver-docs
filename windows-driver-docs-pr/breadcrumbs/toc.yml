@@ -18,7 +18,7 @@
     tocHref: /windows/hardware/drivers/device-and-driver-technologies/
     topicHref: /windows/hardware/drivers/device-and-driver-technologies
     items:
-      - name: 3D Print
+      - name: 3D print
         tocHref: /windows/hardware/drivers/3dprint/
         topicHref: /windows/hardware/drivers/3dprint/index
       - name: ACPI
