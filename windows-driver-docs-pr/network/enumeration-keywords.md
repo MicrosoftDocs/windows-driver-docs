@@ -32,8 +32,9 @@ The general enumeration keywords are:
 Speed and duplex settings that a device supports. The device INF file should list only the settings that the associated device supports. That is, for an Ethernet 10/100 device that can support only full-duplex mode, settings for Gigabit or higher speeds or half duplex should not be listed in the associated INF file.
 
 Speed values that are not specifically defined already with enumerated values of 0 through 10, may be set as a number that is the value directly in Mbps.  Direct values must be at least 1,000 and above; i.e., start at 1 Gbps.  Here are a few examples for specifying the speed directly:
-| *SpeedDuplex = | is a speed of |
-| ---:| ---:|
+
+| SpeedDuplex value | Resulting speed |
+| ---| ---|
 | 1,000 | 1 Gbps |
 | 10,000 | 10 Gbps |
 | 25,000 | 25 Gbps |
