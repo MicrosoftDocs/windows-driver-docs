@@ -1,11 +1,11 @@
 ---
-title: CM\_PROB\_IRQ\_TRANSLATION\_FAILED
-description: CM\_PROB\_IRQ\_TRANSLATION\_FAILED
+title: CM_PROB_IRQ_TRANSLATION_FAILED
+description: CM_PROB_IRQ_TRANSLATION_FAILED
 ms.assetid: fafd40d5-43bf-4243-907a-df523e1b501e
 keywords: ["CM_PROB_IRQ_TRANSLATION_FAILED"]
 ---
 
-# CM\_PROB\_IRQ\_TRANSLATION\_FAILED
+# CM_PROB_IRQ_TRANSLATION_FAILED
 
 
 ## <a href="" id="ddk-cm-prob-irq-translation-failed-dg"></a>

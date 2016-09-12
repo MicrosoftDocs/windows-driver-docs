@@ -1,0 +1,12 @@
+# [Multifunction device driver design guide](index.md)
+## [Supporting Multifunction PC Card Devices](supporting-multifunction-pc-card-devices.md)
+### [Supporting PC Cards That Conform to the Multifunction Standard](supporting-pc-cards-that-conform-to-the-multifunction-standard.md)
+### [Supporting PC Cards That Have Incomplete Configuration Register Addresses](supporting-pc-cards-that-have-incomplete-configuration-register-addres.md)
+### [Supporting PC Cards That Have Incomplete Configuration Registers](supporting-pc-cards-that-have-incomplete-configuration-registers.md)
+## [Supporting Multifunction PCI Devices](supporting-multifunction-pci-devices.md)
+## [Supporting Multifunction Devices On Other Buses](supporting-multifunction-devices-on-other-buses.md)
+## [Using the System-Supplied Multifunction Bus Driver](using-the-system-supplied-multifunction-bus-driver.md)
+## [Creating Resource Maps for a Multifunction Device](creating-resource-maps-for-a-multifunction-device.md)
+### [Creating Standard Resource Maps](creating-standard-resource-maps.md)
+### [Creating Varying Resource Maps](creating-varying-resource-maps.md)
+

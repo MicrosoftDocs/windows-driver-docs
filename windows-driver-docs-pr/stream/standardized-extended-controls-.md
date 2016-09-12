@@ -228,7 +228,6 @@ The MFT0 parses the metadata buffer provided by the driver and attaches the requ
 <td><strong>MF_CAPTURE_METADATA_FRAME_ILLUMINATION</strong></td>
 <td><strong>UINT64</strong></td>
 <td><p>The <strong>MF_CAPTURE_METADATA_FRAME_ILLUMINATION</strong> attribute for IR cameras specifies whether the frames are using active IR illumination and should be used in conjunction with <strong>FACEAUTH_MODE_ALTERNATIVE_FRAME_ILLUMINATION</strong>. It is only used for IR samples and should not be present on RGB frames if the camera supports both IR and color samples.</p>
-<p>The <strong>MF_CAPTURE_METADATA_FRAME_ILLUMINATION</strong> pin is <strong>PINNAME_VIDEO_INFRARED</strong>.</p>
 <p>The value should be set to 0xXXXXXXXXXXXXXXX1 if the frame was captured when active illumination was on and set to 0xXXXXXXXXXXXXXXX0 if no illumination was present when capturing the frame.</p></td>
 </tr>
 <tr class="even">
