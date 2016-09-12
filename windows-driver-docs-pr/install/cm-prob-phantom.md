@@ -1,11 +1,11 @@
 ---
-title: CM\_PROB\_PHANTOM
-description: CM\_PROB\_PHANTOM
+title: CM_PROB_PHANTOM
+description: CM_PROB_PHANTOM
 ms.assetid: ec95671b-24f6-479b-abf1-4fa4bd619b73
 keywords: ["CM_PROB_PHANTOM"]
 ---
 
-# CM\_PROB\_PHANTOM
+# CM_PROB_PHANTOM
 
 
 ## <a href="" id="ddk-cm-prob-phantom-dg"></a>
@@ -25,7 +25,7 @@ The device is not present.
 
 ### Recommended Resolution (Windows XP and later versions of Windows)
 
-None. This problem code should only appear when the DEVMGR\_SHOW\_NONPRESENT\_DEVICES environment variable is set.
+None. This problem code should only appear when the DEVMGR_SHOW_NONPRESENT_DEVICES environment variable is set.
 
  
 

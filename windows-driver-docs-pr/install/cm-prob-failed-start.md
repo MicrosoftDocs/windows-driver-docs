@@ -1,11 +1,11 @@
 ---
-title: CM\_PROB\_FAILED\_START
-description: CM\_PROB\_FAILED\_START
+title: CM_PROB_FAILED_START
+description: CM_PROB_FAILED_START
 ms.assetid: a7759bcd-1806-4d7a-8ff0-3b03abcae08b
 keywords: ["CM_PROB_FAILED_START"]
 ---
 
-# CM\_PROB\_FAILED\_START
+# CM_PROB_FAILED_START
 
 
 ## <a href="" id="ddk-cm-prob-failed-start-dg"></a>
@@ -29,7 +29,7 @@ If the device's hardware key contains a "FailReasonString" value, the value stri
 
 Select **Update Driver**, which starts the Hardware Update wizard.
 
-This error code is set when one of the drivers in the device's driver stack fails IRP\_MN\_START\_DEVICE. If there are many drivers in the stack, it can be difficult to determine the one that failed.
+This error code is set when one of the drivers in the device's driver stack fails IRP_MN_START_DEVICE. If there are many drivers in the stack, it can be difficult to determine the one that failed.
 
  
 
