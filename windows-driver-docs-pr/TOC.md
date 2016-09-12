@@ -24,6 +24,7 @@
 ## [SPB drivers](spb/)
 ## [Storage device drivers](storage/)
 ## [Streaming media device drivers](stream/)
+## [Test Authoring and Execution Framework (TAEF)](taef/)
 
 
 

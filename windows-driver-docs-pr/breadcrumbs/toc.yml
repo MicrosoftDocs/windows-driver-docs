@@ -72,3 +72,6 @@
       - name: Stream
         tocHref: /windows/hardware/drivers/stream/
         topicHref: /windows/hardware/drivers/stream/index
+      - name: TAEF
+        tocHref: /windows/hardware/drivers/taef
+        topicHref:/windows/hardware/drivers/taef/index
