@@ -1,11 +1,11 @@
 ---
-title: CM\_PROB\_NOT\_CONFIGURED
-description: CM\_PROB\_NOT\_CONFIGURED
+title: CM_PROB_NOT_CONFIGURED
+description: CM_PROB_NOT_CONFIGURED
 ms.assetid: 8bdc741c-6e1e-46ab-ab2d-fafe87bbd99f
 keywords: ["CM_PROB_NOT_CONFIGURED"]
 ---
 
-# CM\_PROB\_NOT\_CONFIGURED
+# CM_PROB_NOT_CONFIGURED
 
 
 ## <a href="" id="ddk-cm-prob-not-configured-dg"></a>
