@@ -72,3 +72,6 @@
       - name: Stream
         tocHref: /windows/hardware/drivers/stream/
         topicHref: /windows/hardware/drivers/stream/index
+  - name: Windows driver samples
+    tocHref: /windows/hardware/drivers/samples/
+    topicHref: /windows/hardware/drivers/samples/index
