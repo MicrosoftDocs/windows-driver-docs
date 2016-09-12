@@ -74,4 +74,4 @@
         topicHref: /windows/hardware/drivers/stream/index
       - name: TAEF
         tocHref: /windows/hardware/drivers/taef
-        topicHref:/windows/hardware/drivers/taef/index
+        topicHref: /windows/hardware/drivers/taef/index
