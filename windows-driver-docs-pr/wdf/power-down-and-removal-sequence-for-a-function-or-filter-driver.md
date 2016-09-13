@@ -24,7 +24,7 @@ The following tables show the order in which the framework calls a KMDF function
 
 | Framework Action | Callback Invoked |
 |---|---|
-| Release hardware. (not called during system shutdown if target device state is **WdfPowerDeviceD3Final** )|[EVT_WDF_DEVICE_RELEASE_HARDWARE](http://msdn.microsoft.com/library/windows/hardware/ff540890)|
+| Release hardware. (not called during system shutdown if target device state is **WdfPowerDeviceD3Final**)|[EVT_WDF_DEVICE_RELEASE_HARDWARE](http://msdn.microsoft.com/library/windows/hardware/ff540890)|
 
 **Stop here if rebalancing resources.**
 
