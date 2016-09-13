@@ -244,7 +244,7 @@ WDI (WLAN Device Driver Interface) is a new [WLAN Universal Windows driver model
 
 ### WPP Software Tracing
 
-[WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204) introduces a new feature: Inflight Trace Recorder. If the driver enables WPP tracing and WPP Recorder, trace logging is turned on automatically and you can view easily messages without starting or stopping trace sessions. To get better control over the log bugger, WPP Recorder allows a KMDF driver to create and manage custom buffers.
+[WPP Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204) introduces a new feature: Inflight Trace Recorder. If the driver enables WPP tracing and WPP Recorder, trace logging is turned on automatically and you can easily view messages without starting or stopping trace sessions. For more fine tuned control over the log, WPP Recorder allows a KMDF driver to create and manage custom buffers.
 
 -   [WPP Recorder for logging traces](https://msdn.microsoft.com/library/windows/hardware/dn914610)
 -   [**WppRecorderLogGetDefault**](https://msdn.microsoft.com/library/windows/hardware/dn895240)
