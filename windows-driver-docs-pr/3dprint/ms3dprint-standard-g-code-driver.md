@@ -22,7 +22,7 @@ This driver receives 3MF data from the Windows spooler and outputs G-Code over a
 ## <a href="" id="3d-printing-sdk--driver-folder-contents"></a>3D printing SDK driver folder contents
 
 
-The following table provides information about the location of the drivers, slicers and render filters in the 3D printing SDK .
+The following table provides information about the location of the drivers, slicers and render filters in the 3D printing SDK.
 
 | Folder                    | Contents                                 |
 |---------------------------|------------------------------------------|
