@@ -27,7 +27,7 @@ The following sections within this topic describe how you can use SDEL.
 
 SDEL uses attribute tokens to perform matches and retrieve data. All SDEL tokens can contain only alphanumeric characters and hyphen (-).
 
-An *attribute* refers to a piece a data that is attached to a target. Actual values in the attribute are stored as a **VARIANT**. For more information about this data type, see [**Variant Data Type**](98348284-4055-40e2-9bc0-808e95289626). If you place a comparison operator followed by a *test* value after the attribute, SDEL will perform a comparison match. You should place test values in single or double quotation marks--this notation enables you to use actual single or double quotation marks in your test value, but not both. If the test value consists of only alphanumeric characters and hyphens (-), you can omit the quotation marks.
+An *attribute* refers to a piece a data that is attached to a target. Actual values in the attribute are stored as a **VARIANT**. If you place a comparison operator followed by a *test* value after the attribute, SDEL will perform a comparison match. You should place test values in single or double quotation marks--this notation enables you to use actual single or double quotation marks in your test value, but not both. If the test value consists of only alphanumeric characters and hyphens (-), you can omit the quotation marks.
 
 ### Comparison Operations
 

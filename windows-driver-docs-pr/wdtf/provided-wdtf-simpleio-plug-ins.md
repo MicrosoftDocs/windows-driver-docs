@@ -292,7 +292,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 **Type of I/O plug-in performs:**
 
--   Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](2219acbe-bd18-4196-b6f6-3b2e5382a9b2) APIs to this file.
+-   Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](https://msdn.microsoft.com/en-us/library/aa365747) APIs to this file.
 
 **How to triage test failures:**
 
