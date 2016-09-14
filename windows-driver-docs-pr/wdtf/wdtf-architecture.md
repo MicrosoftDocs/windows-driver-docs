@@ -15,7 +15,7 @@ keywords: ["Windows Device Testing Framework WDK , architecture", "WDTF WDK , ar
 # WDTF Architecture
 
 
-To understand the architecture of WDTF, you should first read [Windows Device Testing Framework Design Guide](windows-device-testing-framework-design-guide.md). The most important concept is that WDTF uses devices and the system by abstracting each of them into a *target* (an [**IWDTFTarget2**](https://msdn.microsoft.com/library/windows/hardware/hh439367) interface). The following illustration shows the core object model that WDTF provides.
+To understand the architecture of WDTF, you should first read [Windows Device Testing Framework Design Guide](wdtf-overview.md). The most important concept is that WDTF uses devices and the system by abstracting each of them into a *target* (an [**IWDTFTarget2**](https://msdn.microsoft.com/library/windows/hardware/hh439367) interface). The following illustration shows the core object model that WDTF provides.
 
 ![diagram illustrating the wdtf core object model](images/wdtf-objectmodel.gif)
 

@@ -14,7 +14,7 @@
 #### [WDTF Object Name tags](wdtf-object-name-tags.md)
 ### [Enabling and Viewing WDTF Traces](viewing-wdtf-traces.md)
 ### [Diagnosing problems running WDTF-based tests](diagnosing-problems-running-wdtf-based-tests.md)
-## [WDTF Architecture and Overview](windows-device-testing-framework-design-guide.md)
+## [WDTF Architecture and Overview](wdtf-overview.md)
 ### [WDTF Architecture](wdtf-architecture.md)
 ### [Extending the Framework](extending-the-framework.md)
 #### [COM Interface Design Skills](com-interface-design-skills.md)
