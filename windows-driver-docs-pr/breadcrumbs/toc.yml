@@ -72,3 +72,6 @@
       - name: Stream
         tocHref: /windows/hardware/drivers/stream/
         topicHref: /windows/hardware/drivers/stream/index
+  - name: Windows Device Testing Framework (WDTF) 
+    tocHref: /windows/hardware/drivers/wdtf/
+    topicHref: /windows/hardware/drivers/wdtf/index
