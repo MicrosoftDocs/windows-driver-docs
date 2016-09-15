@@ -37,7 +37,7 @@ When creating the BSS network candidate list, the 802.11 station must follow the
     -   The Extensible Station (ExtSTA) **msDot11DesiredCountryorRegionString** management information base (MIB) object is set to a country or region string of all zeros. For more information about the **msDot11DesiredCountryorRegionString** MIB object, see [OID\_DOT11\_DESIRED\_COUNTRY\_OR\_REGION\_STRING](https://msdn.microsoft.com/library/windows/hardware/ff569143).
     -   The candidate access point (AP) or peer station is operating on a channel that is valid for the regulatory domain that is specified by the **msDot11DesiredCountryorRegionString** MIB object.
     -   The 802.11 Beacon or Probe Response frames sent by the candidate AP or peer station include a Country information element (IE) and the value of the Country or Region String subfield equals the **msDot11DesiredCountryorRegionString** MIB object.
-    -   The 802.11 Beacon or Probe Response frames sent by the candidate AP or peer station do not contain a Country IE.
+    -   The 802.11 Beacon or Probe Response frames sent by the candidate AP or peer station do not contain a Country ID.
 
     The miniport driver specifies whether the 802.11 station supports multiple regulatory domains through a query request of [OID\_DOT11\_MULTI\_DOMAIN\_CAPABILITY\_IMPLEMENTED](https://msdn.microsoft.com/library/windows/hardware/ff569391).
 
