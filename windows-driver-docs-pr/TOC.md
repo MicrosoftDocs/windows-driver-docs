@@ -5,6 +5,7 @@
 # [Device and Driver Installation](install/)
 # [Windows Driver Frameworks](wdf/)
 # [Device and Driver Technologies](device-and-driver-technologies.md)
+## [3D print devices](3dprint/)
 ## [ACPI](acpi/)
 ## [Battery Drivers](battery/)
 ## [Biometric Drivers](biometric/)
@@ -19,11 +20,13 @@
 ## [PCI drivers](pci/)
 ## [PCMCIA drivers](pcmcia/)
 ## [Power management technologies](powermeter/)
+## [Print device drivers](print/)
 ## [SD card bus drivers](sd/)
 ## [Smartcard device drivers](smartcard/)
 ## [SPB drivers](spb/)
 ## [Storage device drivers](storage/)
 ## [Streaming media device drivers](stream/)
-
-
-
+## [Test Authoring and Execution Framework (TAEF)](taef/)
+## [Windows Device Testing Framework (WDTF)](wdtf/)
+## [Windows driver samples](samples/)
+## [Windows Hardware Error Architecture (WHEA)](whea/)
