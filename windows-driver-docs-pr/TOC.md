@@ -20,7 +20,6 @@
 ## [PCI drivers](pci/)
 ## [PCMCIA drivers](pcmcia/)
 ## [Power management technologies](powermeter/)
-## [3D printer device drivers](3dprint/)
 ## [Print device drivers](print/)
 ## [SD card bus drivers](sd/)
 ## [Smartcard device drivers](smartcard/)
