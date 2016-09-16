@@ -1,7 +1,7 @@
 ---
 title: Video stabilization registry settings
 author: windows-driver-content
-description: The OEM-set MaxPixelsPerSecond registry key pertains only to applying video stabilization to a video at capture-time.
+description: The OEM-set VideoStabilization registry key MaxPixelsPerSecond value pertains only to applying video stabilization to a video at capture-time.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -11,14 +11,14 @@ ms.assetid: F0F7A705-0F39-4A62-A110-A2E47DFB7B42
 # Video stabilization registry settings
 
 
-The OEM-set **MaxPixelsPerSecond** registry key pertains only to applying video stabilization to a video at capture-time. It allows OEMs to configure video stabilization settings on a device. The configuration takes into account the device’s recording resolution, along with its hardware and software capabilities.
+The OEM-set **VideoStabilization** registry key **MaxPixelsPerSecond** value pertains only to applying video stabilization to a video at capture-time. It allows OEMs to configure video stabilization settings on a device. The configuration takes into account the device’s recording resolution, along with its hardware and software capabilities.
 
 ## Overview
 
 
-Video stabilization registry key values are used to specify the maximum capabilities of video stabilization on a device, under optimal circumstances. All apps can read the registry key and avoid attempting unreasonable usage of video stabilization.
+The **VideoStabilization** registry key **MaxPixelsPerSecond** value is used to specify the maximum capabilities of video stabilization on a device, under optimal circumstances. All apps can read the registry key and avoid attempting unreasonable usage of video stabilization.
 
-The value entered in the **MaxPixelsPerSecond** registry key sets the limit beyond which the MFT will not try to turn on video stabilization, even if an app enables it. The registry key needs to indicate the greatest resolution and frame rate at which a device can run video stabilization. If the **MaxPixelsPerSecond** registry key is not set, the video stabilization MFT will use a fallback value. Finally, if that fails as well, video stabilization will use its internal logic to switch off in order to prevent a sub-optimal user experience.
+The value entered in the **MaxPixelsPerSecond** value sets the limit beyond which the MFT will not try to turn on video stabilization, even if an app enables it. The registry key needs to indicate the greatest resolution and frame rate at which a device can run video stabilization. If the **MaxPixelsPerSecond** value is not set, the video stabilization MFT will use a fallback value. Finally, if that fails as well, video stabilization will use its internal logic to switch off in order to prevent a sub-optimal user experience.
 
 ## Video stabilization requirements
 
@@ -38,9 +38,9 @@ A device is considered capable of running video stabilization when all of the fo
 ## Set the video stabilization registry key
 
 
-**Registry key format:**
+**VideoStabilization registry key format:**
 
--   OEMs should set a QWORD registry key that defines the cutoff value for number of pixels per second (PPS) beyond which video stabilization will be forced to run in pass-through mode, even if it is enabled by an app.
+-   OEMs should set a **MaxPixelsPerSecond** QWORD value that defines the cutoff value for number of pixels per second (PPS) beyond which video stabilization will be forced to run in pass-through mode, even if it is enabled by an app.
 
 -   PPS is defined as follows:
 
@@ -50,21 +50,21 @@ A device is considered capable of running video stabilization when all of the fo
 
     For example, for 1080p resolution at 30 fps, PPS would be defined as 1920 \* 1080 \* 30 = 62208000
 
-**Registry key location:**
+**VideoStabilization registry key location:**
 
--   OEMs should set registry keys for video stabilization in the following location:
+-   OEMs should create and set the **VideoStabilization** registry key for video stabilization in the following location:
 
-    **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization\\MaxPixelsPerSecond**
+    **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization**
 
--   On 64-bit machines, OEMs should also set the same key on the Wow6432Node path:
+-   On 64-bit machines, OEMs should also create and set the same key on the Wow6432Node path:
 
-    **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization\\MaxPixelsPerSecond**
+    **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization**
 
-When set, the video stabilization registry key will be visible to the video stabilization MFT and first and third party apps.
+When set, the **VideoStabilization** registry key will be visible to the video stabilization MFT and first and third party apps.
 
-If the **MaxPixelsPerSecond** registry key is set, the video stabilization MFT will never try to stabilize frame rates or resolutions above the limit. Instead, it will go into pass-through mode even if the app requests video stabilization. The video stabilization MFT has a mechanism to recommend frame rate and resolution to the app for a given device. Apps can choose the recommendation to avoid such a pass-through on those devices that have the registry key populated.
+If the **MaxPixelsPerSecond** value is set, the video stabilization MFT will never try to stabilize frame rates or resolutions above the limit. Instead, it will go into pass-through mode even if the app requests video stabilization. The video stabilization MFT has a mechanism to recommend frame rate and resolution to the app for a given device. Apps can choose the recommendation to avoid such a pass-through on those devices that have the registry key populated.
 
-If the **MaxPixelsPerSecond** registry key is not set, the video stabilization MFT will attempt to stabilize up to the default value but no higher.
+If the **MaxPixelsPerSecond** value is not set, the video stabilization MFT will attempt to stabilize up to the default value but no higher.
 
 The default value is 62208000 PPS, which is 1920 pixels x 1080 pixels x 30 fps. When video stabilization attempts to stabilize but cannot maintain real time stabilization of the video frames, the internal logic will switch video stabilization to pass-through mode (turning off video stabilization) without dropping any frames.
 
@@ -89,11 +89,11 @@ OEMs must verify the following:
 
 -   No overheating
 
-**Note**  Retail systems should not have the registry key to disable the video stabilization internal logic described in this section. However, retail systems should have the **MaxPixelsPerSecond** registry key with a value determined through this test process.
+**Note**  Retail systems should not have the registry key to disable the video stabilization internal logic described in this section. However, retail systems should have the **VideoStabilization** registry key with a **MaxPixelsPerSecond** value determined through this test process.
 
  
 
-**Note**  The **MaxPixelsPerSecond** registry key functions only when attribute [MF\_LOW\_LATENCY](https://msdn.microsoft.com/library/windows/desktop/hh162832) is set on the effect. When the provided video stabilization effect is added to the MediaCapture pipeline, the attribute is automatically set. However, if the video stabilization effect is inserted into a custom pipeline or a pipeline that doesn’t set the **MF\_LOW\_LATENCY** attribute, the registry key has no effect.
+**Note**  The **VideoStabilization** registry key **MaxPixelsPerSecond** value functions only when attribute [MF\_LOW\_LATENCY](https://msdn.microsoft.com/library/windows/desktop/hh162832) is set on the effect. When the provided video stabilization effect is added to the MediaCapture pipeline, the attribute is automatically set. However, if the video stabilization effect is inserted into a custom pipeline or a pipeline that does not set the **MF\_LOW\_LATENCY** attribute, the registry key has no effect.
 
  
 
