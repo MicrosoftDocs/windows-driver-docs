@@ -18,6 +18,9 @@
     tocHref: /windows/hardware/drivers/device-and-driver-technologies/
     topicHref: /windows/hardware/drivers/device-and-driver-technologies
     items:
+      - name: 3D print
+        tocHref: /windows/hardware/drivers/3dprint/
+        topicHref: /windows/hardware/drivers/3dprint/index
       - name: ACPI
         tocHref: /windows/hardware/drivers/acpi/
         topicHref: /windows/hardware/drivers/acpi/index
@@ -60,6 +63,9 @@
       - name: Powermeter
         tocHref: /windows/hardware/drivers/powermeter/
         topicHref: /windows/hardware/drivers/powermeter/index
+      - name: Print
+        tocHref: /windows/hardware/drivers/print/
+        topicHref: /windows/hardware/drivers/print/index        
       - name: SD
         tocHref: /windows/hardware/drivers/sd/
         topicHref: /windows/hardware/drivers/sd/index
@@ -72,6 +78,12 @@
       - name: Stream
         tocHref: /windows/hardware/drivers/stream/
         topicHref: /windows/hardware/drivers/stream/index
+      - name: Windows driver samples
+        tocHref: /windows/hardware/drivers/samples/
+        topicHref: /windows/hardware/drivers/samples/index
+      - name: TAEF
+        tocHref: /windows/hardware/drivers/taef
+        topicHref: /windows/hardware/drivers/taef/index
       - name: WDTF
         tocHref: /windows/hardware/drivers/wdtf/
         topicHref: /windows/hardware/drivers/wdtf/index
