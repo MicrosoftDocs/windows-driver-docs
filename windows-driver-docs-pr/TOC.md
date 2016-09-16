@@ -24,8 +24,5 @@
 ## [SPB drivers](spb/)
 ## [Storage device drivers](storage/)
 ## [Streaming media device drivers](stream/)
-# [Windows Device Testing Framework (WDTF)](wdtf/)
-
-
-
+## [Windows Device Testing Framework (WDTF)](wdtf/)
 
