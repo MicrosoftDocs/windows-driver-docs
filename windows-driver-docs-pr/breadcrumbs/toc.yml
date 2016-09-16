@@ -72,6 +72,6 @@
       - name: Stream
         tocHref: /windows/hardware/drivers/stream/
         topicHref: /windows/hardware/drivers/stream/index
-      - name: Windows Hardware Error Architecture (WHEA)
+      - name: WHEA
         tocHref: /windows/hardware/drivers/whea/
         topicHref: /windows/hardware/drivers/whea/index
