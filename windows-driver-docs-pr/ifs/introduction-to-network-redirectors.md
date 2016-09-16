@@ -13,17 +13,17 @@ ms.assetid: 6eef8dfa-8ae9-48ef-adf9-8f6d5cd37d00
 
 This section introduces fundamental concepts that are important to developers implementing network redirector software for the client of a remote file system. This section includes:
 
-[What is a Network Redirector?](what-is-a-network-redirector-.md)
-[Basic Architecture of a Network Redirector](basic-architecture-of-a-network-redirector.md)
-[The Kernel-Mode Network Redirector Driver](the-kernel-mode-network-redirector-driver.md)
-[Network Redirector Design and Performance](network-redirector-design-and-performance.md)
-[Network Redirector Design in Windows NT](network-redirector-design-in-windows-nt.md)
-[Network Redirector Design in Windows 2000](network-redirector-design-in-windows-2000.md)
-[The Redirected Drive Buffering SubSystem](the-redirected-drive-buffering-subsystem.md)
-[Oplock Semantics](oplock-semantics.md)
-[Overview](overview.md)
-[Granting Oplocks](granting-oplocks.md)
-[Breaking Oplocks](breaking-oplocks.md)
+[What is a Network Redirector?](what-is-a-network-redirector-.md)  
+[Basic Architecture of a Network Redirector](basic-architecture-of-a-network-redirector.md)  
+[The Kernel-Mode Network Redirector Driver](the-kernel-mode-network-redirector-driver.md)  
+[Network Redirector Design and Performance](network-redirector-design-and-performance.md)  
+[Network Redirector Design in Windows NT](network-redirector-design-in-windows-nt.md)  
+[Network Redirector Design in Windows 2000](network-redirector-design-in-windows-2000.md)  
+[The Redirected Drive Buffering SubSystem](the-redirected-drive-buffering-subsystem.md)  
+[Oplock Semantics](oplock-semantics.md)  
+[Overview](overview.md)  
+[Granting Oplocks](granting-oplocks.md)  
+[Breaking Oplocks](breaking-oplocks.md)  
 [Acknowledging Oplock Breaks](acknowledging-oplock-breaks.md)
  
 

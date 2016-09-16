@@ -1,11 +1,11 @@
 ---
-title: CM\_PROB\_TRANSLATION\_FAILED
-description: CM\_PROB\_TRANSLATION\_FAILED
+title: CM_PROB_TRANSLATION_FAILED
+description: CM_PROB_TRANSLATION_FAILED
 ms.assetid: b131327a-93ff-476b-8257-09a3dfc424be
 keywords: ["CM_PROB_TRANSLATION_FAILED"]
 ---
 
-# CM\_PROB\_TRANSLATION\_FAILED
+# CM_PROB_TRANSLATION_FAILED
 
 
 ## <a href="" id="ddk-cm-prob-translation-failed-dg"></a>
