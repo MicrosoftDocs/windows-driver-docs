@@ -56,20 +56,20 @@ A device is considered capable of running video stabilization when all of the fo
 
     **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization**
 
-    To set the **VideoStabilization** registry key **MaxPixelsPerSecond** value on a 32-bit machine, use the following command at a command prompt:
+    To set the **VideoStabilization** registry key **MaxPixelsPerSecond** value on a 32-bit machine, use the following command at an elevated command prompt:
 
     ```
-    regd add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f # Allow upto 1080p 30fps = 1920 * 1080 * 30 
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f 
     ```
 
 -   On 64-bit machines, OEMs should also create and set the same key on the Wow6432Node path:
 
     **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization**
 
-    To set the **VideoStabilization** registry key **MaxPixelsPerSecond** value on a 64-bit machine, use the following command at a command prompt:
+    To set the **VideoStabilization** registry key **MaxPixelsPerSecond** value on a 64-bit machine, use the following command at an elevated command prompt:
 
     ```
-    regd add "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f # Allow upto 1080p 30fps = 1920 * 1080 * 30 
+    reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f 
     ```
 
 When set, the **VideoStabilization** registry key will be visible to the video stabilization MFT and first and third party apps.
