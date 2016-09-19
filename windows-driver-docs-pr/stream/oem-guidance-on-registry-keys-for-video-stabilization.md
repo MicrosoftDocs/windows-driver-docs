@@ -11,7 +11,7 @@ ms.assetid: F0F7A705-0F39-4A62-A110-A2E47DFB7B42
 # Video stabilization registry settings
 
 
-The OEM-set **VideoStabilization** registry key **MaxPixelsPerSecond** value pertains only to applying video stabilization to a video at capture-time. It allows OEMs to configure video stabilization settings on a device. The configuration takes into account the device’s recording resolution, along with its hardware and software capabilities.
+The OEM-set **MaxPixelsPerSecond** value in the **VideoStabilization** registry key enables OEMs to configure video stabilization settings on a device and apply video stabilization to a video at capture-time. The configuration takes into account the device’s recording resolution, along with its hardware and software capabilities.
 
 ## Overview
 
@@ -56,7 +56,7 @@ A device is considered capable of running video stabilization when all of the fo
 
     **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization**
 
-    To set the **VideoStabilization** registry key on a 32-bit machine, use the following command at a command prompt:
+    To set the **VideoStabilization** registry key **MaxPixelsPerSecond** value on a 32-bit machine, use the following command at a command prompt:
 
     ```
     regd add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f # Allow upto 1080p 30fps = 1920 * 1080 * 30 
@@ -66,7 +66,7 @@ A device is considered capable of running video stabilization when all of the fo
 
     **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization**
 
-    To set the **VideoStabilization** registry key on a 64-bit machine, use the following command at a command prompt:
+    To set the **VideoStabilization** registry key **MaxPixelsPerSecond** value on a 64-bit machine, use the following command at a command prompt:
 
     ```
     regd add "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f # Allow upto 1080p 30fps = 1920 * 1080 * 30 
