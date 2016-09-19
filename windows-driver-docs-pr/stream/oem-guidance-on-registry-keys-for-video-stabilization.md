@@ -40,15 +40,15 @@ A device is considered capable of running video stabilization when all of the fo
 
 **VideoStabilization registry key format:**
 
--   OEMs should set a **MaxPixelsPerSecond** QWORD value that defines the cutoff value for number of pixels per second (PPS) beyond which video stabilization will be forced to run in pass-through mode, even if it is enabled by an app.
+-   OEMs should set a **MaxPixelsPerSecond** QWORD value that defines the cutoff value for number of pixels per second, beyond which video stabilization will be forced to run in pass-through mode, even if it is enabled by an app.
 
--   PPS is defined as follows:
+-   **MaxPixelsPerSecond** is defined as follows:
 
     ```
-    PPS = width * height * frame-rate
+    MaxPixelsPerSecond = width * height * frame-rate
     ```
 
-    For example, for 1080p resolution at 30 fps, PPS would be defined as 1920 \* 1080 \* 30 = 62208000
+    For example, for 1080p resolution at 30 fps, **MaxPixelsPerSecond** would be defined as 1920 \* 1080 \* 30 = 62208000.
 
 **VideoStabilization registry key location:**
 
@@ -56,9 +56,21 @@ A device is considered capable of running video stabilization when all of the fo
 
     **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization**
 
+    To set the **VideoStabilization** registry key on a 32-bit machine, use the following command at a command prompt:
+
+    ```
+    regd add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f # Allow upto 1080p 30fps = 1920 * 1080 * 30 
+    ```
+
 -   On 64-bit machines, OEMs should also create and set the same key on the Wow6432Node path:
 
     **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows Media Foundation\\Platform\\VideoStabilization**
+
+    To set the **VideoStabilization** registry key on a 64-bit machine, use the following command at a command prompt:
+
+    ```
+    regd add "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Windows Media Foundation\Platform\VideoStabilization" /v "MaxPixelsPerSecond" /t REG_QWORD /d 62208000 /f # Allow upto 1080p 30fps = 1920 * 1080 * 30 
+    ```
 
 When set, the **VideoStabilization** registry key will be visible to the video stabilization MFT and first and third party apps.
 
@@ -66,14 +78,14 @@ If the **MaxPixelsPerSecond** value is set, the video stabilization MFT will nev
 
 If the **MaxPixelsPerSecond** value is not set, the video stabilization MFT will attempt to stabilize up to the default value but no higher.
 
-The default value is 62208000 PPS, which is 1920 pixels x 1080 pixels x 30 fps. When video stabilization attempts to stabilize but cannot maintain real time stabilization of the video frames, the internal logic will switch video stabilization to pass-through mode (turning off video stabilization) without dropping any frames.
+The default value is 62208000 pixels per second, which is 1920 pixels x 1080 pixels x 30 fps. When video stabilization attempts to stabilize but cannot maintain real time stabilization of the video frames, the internal logic will switch video stabilization to pass-through mode (turning off video stabilization) without dropping any frames.
 
 If video stabilization switched off in the previous session, the MFT will attempt to start video stabilization in regular mode for every new session, before deciding to switch to pass-through mode. This is because it can not rely on the previous mode to make future decisions, since the device may have been under stress when it was last operated.
 
 ## Video stabilization test requirements
 
 
-OEMs need to verify end-to-end capabilities of their devices with video stabilization working. They need to verify an acceptable experience at the given largest PPS resolution.
+OEMs need to verify end-to-end capabilities of their devices with video stabilization working. They need to verify an acceptable experience at the given largest pixels per second resolution.
 
 OEMs must verify the following:
 
@@ -85,21 +97,15 @@ OEMs must verify the following:
 
 -   Smooth video recording with video stabilization enabled and the internal logic disabled
 
--   Desired PPS count achieved in stabilized recording
+-   Desired pixels per second count achieved in stabilized recording
 
 -   No overheating
 
-**Note**  Retail systems should not have the registry key to disable the video stabilization internal logic described in this section. However, retail systems should have the **VideoStabilization** registry key with a **MaxPixelsPerSecond** value determined through this test process.
+**Note** Retail systems should not have the registry key to disable the video stabilization internal logic described in this section. However, retail systems should have the **VideoStabilization** registry key with a **MaxPixelsPerSecond** value determined through this test process.
 
- 
 
-**Note**  The **VideoStabilization** registry key **MaxPixelsPerSecond** value functions only when attribute [MF\_LOW\_LATENCY](https://msdn.microsoft.com/library/windows/desktop/hh162832) is set on the effect. When the provided video stabilization effect is added to the MediaCapture pipeline, the attribute is automatically set. However, if the video stabilization effect is inserted into a custom pipeline or a pipeline that does not set the **MF\_LOW\_LATENCY** attribute, the registry key has no effect.
+**Note** The **VideoStabilization** registry key **MaxPixelsPerSecond** value functions only when attribute [MF\_LOW\_LATENCY](https://msdn.microsoft.com/library/windows/desktop/hh162832) is set on the effect. When the provided video stabilization effect is added to the MediaCapture pipeline, the attribute is automatically set. However, if the video stabilization effect is inserted into a custom pipeline or a pipeline that does not set the **MF\_LOW\_LATENCY** attribute, the registry key has no effect.
 
- 
-
- 
-
- 
 
 
 --------------------
