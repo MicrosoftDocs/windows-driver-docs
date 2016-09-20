@@ -31,11 +31,11 @@ The configuration file contains a number of settings that may need to be adjuste
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>psk3d:Job3DOutputArea\</p>
+<td><p>psk3d:Job3DOutputArea\ </p>
 <p>psk3d:Job3DOutputAreaWidth</p>
-<p>psk3d:Job3DOutputArea\</p>
+<p>psk3d:Job3DOutputArea\ </p>
 <p>psk3d:Job3DOutputAreaDepth</p>
-<p>psk3d:Job3DOutputArea\</p>
+<p>psk3d:Job3DOutputArea\ </p>
 <p>psk3d:Job3DOutputAreaHeight</p></td>
 <td><p>Yes</p></td>
 <td><p>Print volume in microns, defined by width (x max), depth (y max), and height (z max).</p></td>
