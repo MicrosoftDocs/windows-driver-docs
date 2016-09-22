@@ -105,7 +105,6 @@ In addition to the previous LSO requirements, LSOV2-capable miniport drivers mus
 
 -   Support TCP options, IP options, and IP extension headers.
 
--   Not set the **UserData** member of the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567882) structure when a send operation is complete. Instead, the miniport driver must set the **LsoV2TransmitComplete.Reserved** member to zero and the **LsoV2TransmitComplete.Type** member to NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_V2\_TYPE.
 
  
 
