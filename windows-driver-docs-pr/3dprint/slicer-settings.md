@@ -43,8 +43,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <p>psk3d:Job3DOutputAreaHeight</p></td>
 <td><p>Yes</p></td>
 <td><p>Print volume in microns, defined by width (x max), depth (y max), and height (z max).</p>
-<p>The volume should represent the capabilities of the physical device, as one of the tests in the certification phase when publishing the driver ensures the printer can use the declared volume.</p>
-<p>The volume should represent the capabilities of the physical device, as one of the tests in certification phase when publishing the driver ensures the printer can use the declared volume.</p></td>
+<p>The volume should represent the capabilities of the physical device, as one of the tests in the certification phase when publishing the driver ensures the printer can use the declared volume.</p></td>
 </tr>
 
 
