@@ -64,7 +64,7 @@ TAEF runs the fixture in an 'Immersive Broker' process.
  
 
 <span id="UIAccess"></span><span id="uiaccess"></span><span id="UIACCESS"></span>**UIAccess**  
-TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](bc42695d-2bd3-4a7f-ac8f-bd3dac86e399).
+TAEF runs the fixture in a process marked-up with the UIAccess execution level. For information on UIAccess for UI automation applications, see the [Windows Integrity Mechanism Design](https://msdn.microsoft.com/en-us/library/bb625963).
 
 **Note**  
 -   UIAccess is only supported on Vista and higher operating systems.
