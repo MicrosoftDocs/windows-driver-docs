@@ -48,12 +48,12 @@ The configuration file XML contains a number of settings that need to be adjuste
 
 
 <tr>
-<td><p>psk3d:Job3DOutputArea\ psk3d: </p>
-<p>Job3DOutputAreaOffsetX </p>
-<p>psk3d:Job3DOutputArea\ psk3d: </p>
-<p>Job3DOutputAreaOffsetX </p></td>
+<td><p>psk3d:Job3DOutputArea\ </p>
+<p>psk3d:Job3DOutputAreaOffsetX</p>
+<p>psk3d:Job3DOutputArea\ </p>
+<p>psk3d:Job3DOutputAreaOffsetX</p></td>
 <td><p>Optional</p></td>
-<td><p>X and Y offset of the print volume relative to (0, 0). This allows support for 3D printer where (0, 0) is in the center of the bed (typical for Delta printers) or printers where (0, 0) is not in the front left corner of the print bed.</p></td>
+<td><p>X and Y offset of the print volume relative to (0, 0). This allows support for 3D printers where (0, 0) is in the center of the bed (typical for Delta printers) or printers where (0, 0) is not in the front left corner of the print bed.</p></td>
 </tr>
 
 <tr>
@@ -65,44 +65,48 @@ The configuration file XML contains a number of settings that need to be adjuste
 
 <tr>
 <td><p>psk3d:Job3DMaterials\ </p>
-<p>psk3d:Material<Material>\ psk:DisplayName</p></td>
+<p>psk3d:Material&lt;Material&gt;\ </p>
+<p>psk:DisplayName</p></td>
 <td><p>Yes</p></td>
 <td><p>The display name of the material. This can be any string that shows up in the 3D Print Dialog for user assignment.</p></td>
 </tr>
 
 <tr>
 <td><p>psk3d:Job3DMaterials\ </p>
-<p>psk3d:Material<Material>\ psk:MaterialColor</p></td>
+<p>psk3d:Material&lt;Material&gt;\ </p>
+<p>psk:MaterialColor</p></td>
 <td><p>Yes</p></td>
 <td><p>RGB or RGBA color for the material rendering in the 3D Print Dialog.</p></td>
 </tr>
 
 <tr>
 <td><p>psk3d:Job3DMaterials\ </p>
-<p>psk3d:Material<Material>\ psk:MaterialType</p></td>
+<p>psk3d:Material&lt;Material&gt;\ </p>
+<p>psk:MaterialType</p></td>
 <td><p>Reserved</p></td>
 <td><p>Type of material, as defined in Print Schema Keywords for 3D Printing (for example, "psk3d:PLA"). This setting is being deprecated in favor of generic materials specified by name and color.</p></td>
 </tr>
 
 <tr>
 <td><p>psk3d:Job3DMaterials\ </p>
-<p>psk3d:[Material]\ </p>
+<p>psk3d:Material&lt;Material&gt;\ </p>
 <p>psk3dx:platformtemperature</p></td>
 <td><p>Yes</p></td>
 <td><p>The temperature (degrees Celsius) the print bed should be heated to during printing. A value of 0 means the bed should not be heated.</p>
-<p>This value can be referenced via the <em>$platformtemperature$</em> template in the pre-commands.</p></td>
+<p>This value can be later referenced via the <em>$platformtemperature$</em> template in the pre-commands.</p></td>
 </tr>
 
 <tr>
 <td><p>psk3d:Job3DMaterials\ </p>
-<p>psk3d:[Material]\psk3dx:filamentdiameter</p></td>
+<p>psk3d:Material&lt;Material&gt;\ </p>
+<p>psk3dx:filamentdiameter</p></td>
 <td><p>Yes</p></td>
 <td><p>The diameter in microns of the filament loaded in the 3D printer. For example, 1750 is standard 1.75mm filament.</p></td>
 </tr>
 
 <tr>
 <td><p>psk3d:Job3DMaterials\ </p>
-<p>psk3d:[Material]\ </p>
+<p>psk3d:Material&lt;Material&gt;\ </p>
 <p>psk3dx:filamentcalibrationoverride</p></td>
 <td><p>Optional</p></td>
 <td><p>A factor that adjusts the flow of filament. It is applied as a ratio of the incoming filament cross-section (based on filamentdiameter) to adjust the speed of extrusion. If this factor is greater than 1.0, less plastic will be extruded. This is a tuning parameter and should always be near 1.0.</p></td>
@@ -110,7 +114,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 
 <tr>
 <td><p>psk3d:Job3DMaterials\ </p>
-<p>psk3d:[Material]\ </p>
+<p>psk3d:Material&lt;Material&gt;\ </p>
 <p>psk3dx:extrudertemperature</p></td>
 <td><p>Yes</p></td>
 <td><p>The temperature in degrees Celsius the extruder/hot end should heat to when extruding. This value can be referenced via the <em>$extrudertemperature$</em> template in the pre-commands.</p></td>
@@ -118,7 +122,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 
 <tr>
 <td><p>psk3d:Job3DMaterials\ </p>
-<p>psk3d:[Material]\ </p>
+<p>psk3d:Material&lt;Material&gt;\ </p>
 <p>psk3dx:autocenter</p></td>
 <td><p>Optional</p></td>
 <td><p>A Boolean value (0 or 1) indicating whether the model should be centered on the print bed (on the XY plane). The model is also auto-centered if it does not fit in the print volume.</p></td>
@@ -126,24 +130,27 @@ The configuration file XML contains a number of settings that need to be adjuste
 
 <tr>
 <td><p>psk3d:Job3DMaterials\  </p>
-<p>psk3d:Material<Material>\  </p>
-<p>psk3dx:SetupCommands\psk3dx:command</p></td>
+<p>psk3d:Material&lt;Material&gt;\  </p>
+<p>psk3dx:SetupCommands\ </p>
+<p>psk3dx:command</p></td>
 <td><p>Yes</p></td>
 <td><p>A list of commands to use as material set-up. This is typically G-Code executed during pre-commands to control nozzle pre-heating, priming, and so on.</p></td>
 </tr>
 
 <tr>
 <td><p>psk3d:Job3DMaterials\  </p>
-<p>psk3d:Material<Material>\  </p>
-<p>psk3dx:SelectCommands\psk3dx:command</p></td>
+<p>psk3d:Material&lt;Material&gt;\  </p>
+<p>psk3dx:SelectCommands\ </p>
+<p>psk3dx:command</p></td>
 <td><p>Yes</p></td>
 <td><p>A list of commands to issue when the material needs to be used while printing. This is typically G-Code executed for: T0/T1 extruder selection, nozzle wiping sequence, turn fan on/off/gradual, retract the material, temperature, and so on.</p></td>
 </tr>
 
 <tr>
 <td><p>psk3d:Job3DMaterials\  </p>
-<p>psk3d:Material<Material>\  </p>
-<p>psk3dx:DeselectCommands\psk3dx:command</p></td>
+<p>psk3d:Material&lt;Material&gt;\  </p>
+<p>psk3dx:DeselectCommands\ </p>
+<p>psk3dx:command</p></td>
 <td><p>Yes</p></td>
 <td><p>A list of commands to issue when the material is being released during printing. This is typically G-Code executed for: retract the material, park the nozzle, reduce temperature, and so on.</p></td>
 </tr>
@@ -151,13 +158,13 @@ The configuration file XML contains a number of settings that need to be adjuste
 <tr>
 <td><p>psk3dx:customStatus</p></td>
 <td><p>Optional</p></td>
-<td><p>A string representing the initial print job status, typically the slicing phase. If missing, the job status will be set to "Printing". Typically this value should be set to "Slicing" when the slicing happens in the render filter, for example when using the Microsoft Slicer.</p></td>
+<td><p>A string representing the initial print job status, typically the slicing phase. If missing, the job status will be set to "Printing". Typically this value should be set to "Slicing" when the slicing happens in the render filter, for example, when using the Microsoft Slicer.</p></td>
 </tr>
 
 <tr>
 <td><p>psk3dx:userprompt</p></td>
 <td><p>Yes</p></td>
-<td><p>A message displayed as the user prompt before a print begins. This prompt is used to prevent the extruder crashing into an existing print on devices that require manual removal of prints.</p>
+<td><p>A message displayed as the user prompt before a print begins. This prompt is used to prevent the extruder from crashing into an existing print on devices that require manual removal of prints.</p>
 <p>For devices that can display the prompt on the device itself at the beginning or end of print, this setting is not required.</p></td>
 </tr>
 
@@ -166,9 +173,9 @@ The configuration file XML contains a number of settings that need to be adjuste
 <p>psk3dx:debug\ </p>
 <p>psk3dx:log</p></td>
 <td><p>Optional</p></td>
-<td><p>When present, this setting enables driver debug logging to a file.</p>
+<td><p>When present, this setting enables driver debug logging to a file, allowing a developer to inspect the G-Code and firmware responses.</p>
 <p>This setting can also be turned on globally via registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print</p>
-<p>StandardGCodeDebugLog=&quot;c:\Path\To\LogFile&quot;, allowing a developer to inspect the G-Code and firmware responses</p></td>
+<p>StandardGCodeDebugLog=&quot;c:\Path\To\LogFile&quot;</p></td>
 </tr>
 
 <tr>
@@ -200,7 +207,8 @@ The configuration file XML contains a number of settings that need to be adjuste
 
 <tr>
 <td><p>psk3dx:MS3DPrinter\ </p>
-<p>psk3dx:communication\ psk3dx:connection\ </p>
+<p>psk3dx:communication\  </p>
+<p>psk3dx:connection\ </p>
 <p>psk3dx:protocol</p></td>
 <td><p>Reserved</p></td>
 <td><p>This setting is highly experimental and controls the communication protocol with the firmware. When not specified, the driver defaults to ASCII G-Code with RepRap/Marlin checksums. When set to 2, the driver can send binary G-Code.</p></td>
