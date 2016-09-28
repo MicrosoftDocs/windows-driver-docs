@@ -47,7 +47,7 @@ To share the signing certificate, follow these steps.
 
 * [Writing Your First Driver](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff554811)
 * [Building a Driver](building-a-driver.md)
-* [Developing, Testing, and Deploying Drivers](visual-studio-driver-development-environment.md)
+* [Developing, Testing, and Deploying Drivers](index.md)
  
 
  
