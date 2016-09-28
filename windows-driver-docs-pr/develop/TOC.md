@@ -1,4 +1,4 @@
-# [Developing, Testing, and Deploying Drivers](visual-studio-driver-development-environment.md)
+# [Developing, Testing, and Deploying Drivers](index.md)
 # [Getting Started with Universal Drivers](getting-started-with-universal-drivers.md)
 # [Validating Universal Drivers](validating-universal-drivers.md)
 # [Installing a Universal Driver](installing-a-universal-driver.md)
