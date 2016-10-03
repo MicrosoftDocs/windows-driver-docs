@@ -1,0 +1,39 @@
+---
+title: Locating ICC Profiles
+author: windows-driver-content
+description: Locating ICC Profiles
+MS-HAID:
+- 'printicm\_54bf89c4-59de-4368-b56d-312bc21cf1ba.xml'
+- 'print.locating\_icc\_profiles'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 828b53cd-452a-4c4d-bfbb-45ea674ef49a
+keywords: ["color management WDK print , locating ICC profiles", "ICC profiles WDK print"]
+---
+
+# Locating ICC Profiles
+
+
+## <a href="" id="ddk-locating-icc-profiles-gg"></a>
+
+
+When color management is enabled, GDI searches for an appropriate ICC profile, using the following steps:
+
+1.  If the driver's [printer interface DLL](printer-interface-dll.md) provides a [**DrvQueryColorProfile**](https://msdn.microsoft.com/library/windows/hardware/ff548573) function, the GDI client calls the function to give the driver an opportunity to specify a profile. If the function returns a profile, it is used.
+
+2.  If **DrvQueryColorProfile** does not exist or does not return a profile, GDI searches the color directory for profiles that have been installed for the specified printer type. GDI uses the first profile it finds that matches resolution, media type, and dithering settings in the DEVMODE structure.
+
+3.  If the color directory does not contain any profiles for the specified printer type that match the specified DEVMODE contents, GDI uses the system's default sRGB profile.
+
+For more information, see [Installing ICC Profiles](installing-icc-profiles.md). Additional information about ICC profiles can be found in the Microsoft Windows SDK documentation.
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Locating%20ICC%20Profiles%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+

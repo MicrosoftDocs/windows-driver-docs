@@ -11,17 +11,17 @@ You've already completed this step.
 
 ## Public and private repos
 
-The driver docs are hosted on two different repos which are then merged and updated to a single site: one repo is for contributions from the general public and one for contributions from Microsoft employees.
+The driver docs are hosted in two different repos which are then merged and updated to a single site: one repo is for contributions from anyone and the other is only for Microsoft employees.
 
 If you are ***not*** a Microsoft employee, work in the [public content repository](https://github.com/Microsoft/windows-driver-docs).
 
-If you ***are*** a Microsoft employee, work in the [private content repository](https://cpubwin.visualstudio.com/drivers/_git/drivers).  
+If you ***are*** a Microsoft employee, you can work in either the public repo or the [private content repository](https://cpubwin.visualstudio.com/drivers/_git/drivers).  Typically, employees use the public repo for changes that can go live in the near term, and the private repo for changes that need to stay under wraps until some future date.
 
 ## Editing topics
 
 We've tried to make editing an existing file as simple as possible. 
-- If you're already in the repo, just navigate to the file you want to make the edits to and click the **Edit** button.  
-- Alternatively, if you're viewing an MSDN page in your browser, click the **Contribute** button on the top right of the page. You will be redirected to the relevant Markdown source file in the repo, where you can click the **Edit** button. 
+- If you're already in the repo, just navigate to the file and click the **Edit** button.  
+- Alternatively, if you're viewing an MSDN page in your browser, click the **Contribute** button on the top right of the page. You will be redirected to the correct Markdown source file in the repo, where you can click the **Edit** button. 
 
 > **Note** We're actively moving docs into the repo, so the one you want might not be there yet.  If you don't see a **Contribute** button for a page you'd like to change, please open an issue in the repo and be sure to provide the URL of the page in question.
  
@@ -46,7 +46,7 @@ If you are using the private repo, clone the private repo to your local computer
 
 If you just want to provide feedback rather than directly modifying actual documentation pages, you can create an issue in the appropriate (public or private) repository.
 At the top of a topic page you'll see an **Issues** tab. Click the tab and then click the **New issue** button. 
-Be sure to include the topic title and the URL for the page you're submitting the issue for, if that page is different from the page you launched the New issue dialog from.  
+Be sure to include the topic title and the URL for the page, if it's different from the page you launched the New issue dialog from.  
 
 Members of the Windows driver documentation team review issues regularly, and we triage, assign, and address them accordingly.
 

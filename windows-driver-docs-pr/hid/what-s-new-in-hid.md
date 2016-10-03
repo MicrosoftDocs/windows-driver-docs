@@ -26,7 +26,7 @@ The following short video describes an end-to-end sample solution for HID that's
 ## Design Guide
 
 
-The [Design Guide](human-input-devices-design-guide.md) has been updated to include some new topics. And also, existing content has been revised where relevant, to show improved HID support in Windows 10. Here are some of the new, and updated topics:
+The [Design Guide](index.md) has been updated to include some new topics. And also, existing content has been revised where relevant, to show improved HID support in Windows 10. Here are some of the new, and updated topics:
 
 **New topic**
 
@@ -46,7 +46,7 @@ The [Design Guide](human-input-devices-design-guide.md) has been updated to incl
 The HID protocol originally targeted human interface devices like: keyboards, mice, and joysticks. It was originally developed to run over USB. For Windows 8, Microsoft created a new HID miniport driver that allows devices to communicate over an Inter-Integrated Circuit (I²C) bus.
 
 ## Related topics
-[Design Guide](human-input-devices-design-guide.md)  
+[Design Guide](index.md)  
 [HID Over I2C](hid-over-i2c-guide.md)  
 
 --------------------

@@ -35,14 +35,14 @@ The following syntax rules govern the required and optional contents of INF file
 
 -   Within syntax definitions, optional entries are delimited by *unbolded* brackets (\[,\]). On the other hand, *bold* brackets (**\[**, **\]**) are required elements of the entry in which they are contained. In the following example, the brackets around **Version** are required, while the brackets around **Class**=*class-name* indicate this entry is optional.
 
-    ``` syntax
-    [Version]
-
+   <pre>
+   <b>[</b>Version<b>]</b>
+   
     Signature="signature-name"
     [Class=class-name]
     ...
-    ```
-
+   </pre>
+   
 ### <a href="" id="section-names"></a> Section Names
 
 -   Sections can be specified in any order. Most INF files list sections in a particular order, by convention, but Windows finds sections by name, not by location within the INF file.
@@ -109,6 +109,24 @@ The following syntax rules govern the required and optional contents of INF file
     An entry in an INF file that omits the two optional values can have this format:
 
     *filename***=***diskid*
+-   In order to include a percent (%) character in values supplied in section entries and directives, escape the percent character with another percent character.
+
+    For example, consider this statement in an *[add-registry-section]* section:
+
+    *HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll"*
+
+    The registry value will be set with the following value:
+
+    *%SystemRoot%\System32\IoLogMsg.dll*
+-   In order to include a double quote (") character in values supplied in section entries and directives, escape the double quote character with another double quote character.  Note that the string must be within a **"***quoted string***"**.  
+
+    For example, consider this statement in an *[add-registry-section]* section:
+
+    *HKR,,Example,,"Display an ""example"" string"*
+
+    The registry value will be set with the following value:
+
+    *Display an "example" string*
 
 ### <a href="" id="inf-size-limits"></a> INF Size Limits
 

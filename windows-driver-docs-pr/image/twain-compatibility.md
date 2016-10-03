@@ -1,0 +1,36 @@
+---
+title: TWAIN Compatibility
+author: windows-driver-content
+description: TWAIN Compatibility
+MS-HAID:
+- 'WIA\_drv\_scan\_703dd7e2-5a3f-41cb-bfa5-2f4eed5a074a.xml'
+- 'image.twain\_compatibility'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 270e62dd-590c-4495-be22-002957932031
+---
+
+# TWAIN Compatibility
+
+
+## <a href="" id="ddk-twain-compatibility-si"></a>
+
+
+WIA minidrivers can support other imaging architectures, such as TWAIN. Beginning with Windows Me, Microsoft no longer ships TWAIN data sources with Windows. For scanner and digital camera in-box drivers, Microsoft accepts only WIA drivers.
+
+This section discusses TWAIN compatibility and covers the following topics:
+
+[WIA-TWAIN Driver Design Considerations](wia-twain-driver-design-considerations.md)
+
+[Support for TWAIN-Compatible Applications](support-for-twain-compatible-applications.md)
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bimage\image%5D:%20TWAIN%20Compatibility%20%20RELEASE:%20%288/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+

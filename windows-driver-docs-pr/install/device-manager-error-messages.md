@@ -171,6 +171,14 @@ The following table lists the errors reported by Device Manager on Windows 2000 
 <td align="left"><p>Code 52</p></td>
 <td align="left"><p>[CM_PROB_UNSIGNED_DRIVER](cm-prob-unsigned-driver.md)</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p>Code 53</p></td>
+<td align="left"><p>[CM_PROB_USED_BY_DEBUGGER](cm-prob-used-by-debugger.md)</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Code 54</p></td>
+<td align="left"><p>[CM_PROB_DEVICE_RESET](cm-prob-device-reset.md)</p></td>
+</tr>
 </tbody>
 </table>
 

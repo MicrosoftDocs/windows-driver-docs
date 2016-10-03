@@ -1,11 +1,11 @@
 ---
-title: CM\_PROB\_REGISTRY
-description: CM\_PROB\_REGISTRY
+title: CM_PROB_REGISTRY
+description: CM_PROB_REGISTRY
 ms.assetid: 162586c4-f67f-40e8-bbbb-2b5c574732f4
 keywords: ["CM_PROB_REGISTRY"]
 ---
 
-# CM\_PROB\_REGISTRY
+# CM_PROB_REGISTRY
 
 
 ## <a href="" id="ddk-cm-prob-registry-dg"></a>
