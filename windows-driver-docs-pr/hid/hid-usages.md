@@ -52,7 +52,7 @@ HID usages are organized into *usage pages* of related controls. A specific cont
 
 ### Usage ID
 
-In the context of a usage page, a valid usage identifier, or *usage ID*, is a positive integer greater than zero that indicates a usage in a usage page. A usage ID of zero is reserved. A usage ID value is an unsigned 16-bit value.
+In the context of a usage page, a valid usage identifier, or *usage ID*, indicates a usage in a usage page. A usage ID of zero is reserved. A usage ID value is an unsigned 16-bit value.
 
 ### Extended Usage
 

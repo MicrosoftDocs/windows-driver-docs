@@ -41,10 +41,6 @@ The following table shows the recommended transports for keyboards, mice, and to
 
  
 
-The previous table contains guidance as opposed to requirements. There are currently no Windows Hardware Certification Kit (HCK) requirements for these but this could change in a future release.
-
- 
-
  
 
 
