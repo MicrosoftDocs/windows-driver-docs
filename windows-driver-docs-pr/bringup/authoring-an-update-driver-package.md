@@ -208,7 +208,7 @@ The following table describes the various driver package INF sections and fields
 </tr>
 <tr class="odd">
 <td>FirmwareFilename</td>
-<td>{RESOURCE_GUID}\<em>firmware.bin</em></td>
+<td>{RESOURCE_GUID}\\<em>firmware.bin</em></td>
 <td>The firmware filename of the firmware resource update’s Update Capsule image filename. This path is relative to the %SystemRoot%\Firmware directory such that {RESOURCE_GUID} represents a subdirectory used to organize all firmware image files targeted for specific firmware resource.</td>
 </tr>
 <tr class="even">
@@ -239,7 +239,7 @@ The following table describes the various driver package INF sections and fields
 </tr>
 <tr class="odd">
 <td>DefaultDestDir</td>
-<td><p>%DIRID_WINDOWS%,Firmware\</p>
+<td><p>%DIRID_WINDOWS%,Firmware\\</p>
 <p>{RESOURCE_GUID}</p></td>
 <td>Specifies the default destination directory of all driver files copied by this driver package to be %SystemRoot%\Firmware, where DIRID_WINDOWS (10) represents the base %SystemRoot% directory and {RESOURCE_GUID} represents a subdirectory names after the firmware resource GUID.</td>
 </tr>
@@ -371,6 +371,5 @@ After the next reboot, the OS Loader will call into UpdateCapsule() with the pay
 [Firmware update status](firmware-update-status.md)  
 
 --------------------
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_OEMBringUp\p_oembringup%5D:%20Authoring%20an%20update%20driver%20package%20%20RELEASE:%20%284/22/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 

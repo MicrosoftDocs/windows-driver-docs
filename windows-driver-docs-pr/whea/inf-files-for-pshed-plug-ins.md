@@ -1,0 +1,113 @@
+---
+title: INF Files for PSHED Plug-Ins
+author: windows-driver-content
+description: INF Files for PSHED Plug-Ins
+MS-HAID:
+- 'whea\_5fe317d6-e176-4d5f-b821-ca740d66780b.xml'
+- 'whea.inf\_files\_for\_pshed\_plug\_ins'
+MSHAttr:
+- 'PreferredSiteName:MSDN'
+- 'PreferredLib:/library/windows/hardware'
+ms.assetid: 60bb9902-c558-4ee1-9b33-1a08885e7c06
+keywords: ["PSHED plug-ins WDK WHEA , INF files", "platform-specific hardware error driver plug-ins WDK WHEA , INF files", "INF files WDK WHEA"]
+---
+
+# INF Files for PSHED Plug-Ins
+
+
+A PSHED plug-in is installed by an [information (INF) file](https://msdn.microsoft.com/library/windows/hardware/ff547402). INF files for PSHED plug-ins contain the following standard INF file sections:
+
+[**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502)
+
+[**INF SourceDisksNames Section**](https://msdn.microsoft.com/library/windows/hardware/ff547478)
+
+[**INF SourceDisksFiles Section**](https://msdn.microsoft.com/library/windows/hardware/ff547472)
+
+[**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383)
+
+[**INF Manufacturer Section**](https://msdn.microsoft.com/library/windows/hardware/ff547454)
+
+[**INF *Models* Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456)
+
+[**INF *DDInstall* Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344)
+
+[**INF *DDInstall*.Services Section**](https://msdn.microsoft.com/library/windows/hardware/ff547349)
+
+[**INF Strings Section**](https://msdn.microsoft.com/library/windows/hardware/ff547485)
+
+Within the [**INF *Models* section**](https://msdn.microsoft.com/library/windows/hardware/ff547456), the platform vendor can use any [hardware identifier (ID)](https://msdn.microsoft.com/library/windows/hardware/ff546152) for the PSHED plug-in. The hardware ID is specified by using the *hw-id* entry in the *Models* section, and can be a hardware ID in the ACPI namespace or another device namespace. The vendor can also specify a [compatible ID](https://msdn.microsoft.com/library/windows/hardware/ff539950) with a value of *PNP0C33*. This compatible ID is used to define to a Microsoft-compatible hardware error device. The vendor specifies the compatible ID by using the *compatible-id* entry in the *Models* section.
+
+A PSHED plug-in's INF file must also include an [**AddReg**](https://msdn.microsoft.com/library/windows/hardware/ff546320) directive that references a section in the file that adds an entry to the **System**\\**CurrentControlSet**\\**Control**\\**PSHED**\\**Plugins** key in the registry. This entry informs the PSHED that the PSHED plug-in is installed in the system. This allows the PSHED to verify that all the installed PSHED plug-ins are successfully loaded every time that the system is started.
+
+For example:
+
+```
+;
+; Example PSHED plug-in INF file
+;
+
+[Version]
+Signature = "$Windows NT$"
+Provider = %Msft%
+CatalogFile = "ExamplePSHEDPlugin.cat"
+DriverVer = 01/01/06,1.0
+
+[SourceDiskNames]
+1 = %DiskName%
+
+[SourceDiskFiles]
+%FileName% = 1
+
+[DestinationDirs]
+DefaultDestDir = 12 ; %SystemRoot%\system32\drivers
+ExamplePSHEDPlugin.DriverFiles = 12 ; %SystemRoot%\system32\drivers
+
+[Manufacturer]
+%Msft% = Microsoft
+
+[Microsoft]
+%DeviceDesc% = ExamplePSHEDPluginInstall,%DeviceId%
+
+[ExamplePSHEDPluginInstall]
+OptionDesc = %Description%
+CopyFiles = ExamplePSHEDPlugin.DriverFiles
+AddReg = ExamaplePSHEDPlugin.AddReg
+
+[ExamplePSHEDPluginInstall.Services]
+AddService = %ServiceName%,,ExamplePSHEDPlugin.Service
+
+[ExamplePSHEDPlugin.DriverFiles]
+%FileName%,,,0x00000040 ; COPYFLG_OVERWRITE_OLDER_ONLY
+
+[ExamplePSHEDPlugin.AddReg]
+HKLM,%PSHEDControlPath%,%ServiceName%,0x00000000,%FileName%
+
+[ExamplePSHEDPlugin.Service]
+DisplayName = %ServiceName%
+Description = %ServiceDesc%
+ServiceType = 1  ; SERVICE_KERNEL_DRIVER
+StartType = 3    ; SERVICE_DEMAND_START
+ErrorControl = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary = %12%\%FileName%
+
+[Strings]
+%Msft% = "Microsoft Corporation"
+%DiskName% = "Example PSHED Plug-In Installation Disk"
+%FileName% = "ExamplePSHEDPlugin.sys"
+%DeviceDesc% = "Example PSHED Plug-In Device"
+%DeviceId% = "ACPI\PSHEDPI"
+%Description% = "Example PSHED Plug-In"
+%ServiceName% = "ExamplePSHEDPlugin"
+%ServiceDesc% = "Example PSHED Plug-In"
+%PSHEDControlPath% = "System\CurrentControlSet\Control\PSHED\Plugins"
+```
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwhea\whea%5D:%20INF%20Files%20for%20PSHED%20Plug-Ins%20%20RELEASE:%20%289/14/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+

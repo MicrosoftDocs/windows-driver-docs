@@ -3,19 +3,20 @@
     "content":
       [
         {
-          "files": ["**/**.md"],
+          "files": ["**/**.md", "**/**.yml"],
           "exclude": ["**/obj/**"]
         }
       ],
     "resource": [
         {
-          "files": ["**/images/**"],
+          "files": ["**/images/**", "**/*.json", "**/*.png"],
           "exclude": ["**/obj/**", "**/README.md"]
         }
     ],
     "globalMetadata": {
         "ROBOTS": "INDEX, FOLLOW",
-        "Search.Product": "eADQiWindows 10XVcnh"
+        "Search.Product": "eADQiWindows 10XVcnh",
+        "breadcrumb_path": "/windows/hardware/drivers/breadcrumbs/toc.json"
     },
     "externalReference": [
     ],

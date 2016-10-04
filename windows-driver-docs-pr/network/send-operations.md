@@ -1,0 +1,172 @@
+---
+title: Send Operations
+description: Send Operations
+ms.assetid: 84af0abc-c8f2-47d4-b368-7b0216600c95
+keywords: ["send operations WDK Native 802.11 IHV Extensions DLL"]
+---
+
+# Send Operations
+
+
+**Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).
+
+ 
+
+When performing a post-association operation, initiated through a call to [*Dot11ExtIhvPerformPostAssociate*](https://msdn.microsoft.com/library/windows/hardware/ff547492), the IHV Extensions DLL can send packets through the wireless LAN (WLAN) adapter. For more information about the post-association operation, see [Post-Association Operations](post-association-operations.md).
+
+Typically, the DLL sends security packets to an access point (AP) for data port authentication by using the algorithm enabled through [**Dot11ExtSetAuthAlgorithm**](https://msdn.microsoft.com/library/windows/hardware/ff547571). The IHV Extensions DLL calls **Dot11ExtSetAuthAlgorithm** during the pre-association operation. For more information about this operation, see [Pre-Association Operations](pre-association-operations.md).
+
+**Note**  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic service set (BSS) networks.
+
+ 
+
+When sending packets, the IHV Extensions DLL must follow these guidelines.
+
+-   The IHV Extensions DLL must allocate the memory for a complete 802.11 data packet, including 802.11 media access control (MAC) header, LLC encapsulation (if necessary), and payload data.
+
+    The following table describes which fields and subfields within the 802.11 MAC header are set by the IHV Extensions DLL or WLAN adapter.
+
+    <table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th align="left">Field name</th>
+    <th align="left">Subfield name</th>
+    <th align="left">Set by IHV Extension DLL</th>
+    <th align="left">Set by WLAN adapter</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>Protocol Version</p></td>
+    <td align="left"><p>X</p></td>
+    <td align="left"></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>Type</p></td>
+    <td align="left"><p>X</p></td>
+    <td align="left"></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>Subtype</p></td>
+    <td align="left"><p>X</p></td>
+    <td align="left"></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>To DS</p></td>
+    <td align="left"><p>X</p></td>
+    <td align="left"></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>From DS</p></td>
+    <td align="left"><p>X</p></td>
+    <td align="left"></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>More Fragments</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>Retry</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>Pwr Mgt</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>More Data</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>Protected Frame</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Frame Control</p></td>
+    <td align="left"><p>Order</p></td>
+    <td align="left"><p>X</p></td>
+    <td align="left"></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Duration/ID</p></td>
+    <td align="left"></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Address 1</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    <td align="left"></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Address 2</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    <td align="left"></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Address 3</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    <td align="left"></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>Sequence Control</p></td>
+    <td align="left"><p>Fragment Number</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>Sequence Control</p></td>
+    <td align="left"><p>Sequence Number</p></td>
+    <td align="left"></td>
+    <td align="left"><p>X</p></td>
+    </tr>
+    </tbody>
+    </table>
+
+     
+
+-   The IHV Extensions DLL calls the [**Dot11ExtSendPacket**](https://msdn.microsoft.com/library/windows/hardware/ff547563) function to send the packet through the wireless LAN (WLAN) adapter. The DLL passes a unique handle value, which identifies the packet, to the function's *hSendCompletion* parameter. Typically, the DLL passes the address of the allocated buffer that contains the packet to the *hSendCompletion* parameter.
+    **Note**  Only unicast packets can be sent through calls to the [**Dot11ExtSendPacket**](https://msdn.microsoft.com/library/windows/hardware/ff547563) function.
+
+     
+
+-   When the WLAN adapter has sent the packet, the operating system calls the [*Dot11ExtIhvSendPacketCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff547516) function. The operating system passes the packet's handle value to the *hSendCompletion* parameter of the function. This handle value will be the same value used by the IHV Extensions DLL in its call to [**Dot11ExtSendPacket**](https://msdn.microsoft.com/library/windows/hardware/ff547563).
+
+    When [*Dot11ExtIhvSendPacketCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff547516) is called, the IHV Extensions DLL must release the memory it allocated for the packet.
+
+    **Note**  The IHV Extensions DLL must not free the resources allocated for a packet sent through [**Dot11ExtSendPacket**](https://msdn.microsoft.com/library/windows/hardware/ff547563) until the corresponding call to [*Dot11ExtIhvSendPacketCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff547516) is made.
+
+     
+
+ 
+
+ 
+
+
+
+
+

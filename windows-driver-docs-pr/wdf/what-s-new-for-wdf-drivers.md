@@ -11,18 +11,16 @@ keywords: ["kernel-mode drivers WDK KMDF , about KMDF", "KMDF WDK , about KMDF",
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-Windows 10 includes Kernel-Mode Driver Framework (KMDF) version 1.17 and User-Mode Driver Framework (UMDF) version 2.17.
+Windows 10, version 1607 includes Kernel-Mode Driver Framework (KMDF) version 1.19 and User-Mode Driver Framework (UMDF) version 2.19.
 
 You can use these framework versions to build drivers for:
 
--   Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
--   Windows 10 Mobile
--   Windows 10 IoT Core (IoT Core)
--   Windows Server 2016 Technical Preview
+-   Windows 10 (all SKUs)
+-   Windows Server 2016
 
 For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
 
-## WDF source code is now publicly available
+## WDF source code is publicly available
 
 
 -   The WDF source code is now available as open source on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from <http://github.com/Microsoft/Windows-Driver-Frameworks>.
@@ -58,7 +56,9 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 
     -   IFR logs are included in minidump files except when the responsible driver is undetermined or if the crash was a host timeout.
 
-    -   You can access both the driver and framework IFR logs by issuing [**!wdfkd.wdflogdump**](https://msdn.microsoft.com/library/windows/hardware/ff565805). (Note that [**!rcdrkd.rcdrlogdump**](https://msdn.microsoft.com/library/windows/hardware/hh920382) is no longer needed for this.)
+    -   If you have a debugger connected, you can access both the driver and framework IFR logs by issuing [**!wdfkd.wdflogdump**](https://msdn.microsoft.com/library/windows/hardware/ff565805).
+
+    -   If you do not have a debugger connected, you can still access both logs.  To learn how, see [Video: Accessing driver IFR logs without a debugger](video--accessing-driver-ifr-logs-without-a-debugger.md).
 
     -   When debugging a UMDF driver, you can merge framework logs with driver logs by issuing: **!wdfkd.wdflogdump** *&lt;drivername.dll&gt;* **-m**
 
@@ -118,7 +118,6 @@ For information about new and updated DDIs, please see [UMDF Version History](um
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bwdf\wdf%5D:%20What's%20New%20for%20%20WDF%20Drivers%20in%20Windows%C2%A010%20%20RELEASE:%20%284/5/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
