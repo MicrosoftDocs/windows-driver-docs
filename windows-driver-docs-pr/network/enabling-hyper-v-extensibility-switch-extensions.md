@@ -12,12 +12,12 @@ When Hyper-V extensible switch extensions are installed, they are bound to each 
 The [Enable-VMSwitchExtension](http://technet.microsoft.com/library/hh848541.aspx) PowerShell cmdlet enables an extension on a specific instance of an extensible switch. This cmdlet uses the following syntax:
 
 ``` syntax
-Enable-VMSwitchExtension [-VMSwitchExtensionName] <string[]> [-ComputerName <string[]>] [<CommonParameters>]
+Enable-VMSwitchExtension [-Name] <string[]> [-ComputerName <string[]>] [<CommonParameters>]
 
-Enable-VMSwitchExtension [-VMSwitchExtensionName] <string[]> [-VMSwitchName] <string[]> [-ComputerName <string[]>]
+Enable-VMSwitchExtension [-Name] <string[]> [-VMSwitchName] <string[]> [-ComputerName <string[]>]
     [<CommonParameters>]
 
-Enable-VMSwitchExtension [-VMSwitchExtensionName] <string[]> [-VMSwitch] <VMSwitch[]> [-ComputerName <string[]>]
+Enable-VMSwitchExtension [-Name] <string[]> [-VMSwitch] <VMSwitch[]> [-ComputerName <string[]>]
     [<CommonParameters>]
 
 Enable-VMSwitchExtension [-VMSwitchExtension] <VMSwitchExtension[]> [-ComputerName <string[]>] [<CommonParameters>]
