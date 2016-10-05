@@ -18,15 +18,17 @@ The print driver provided in this SDK is an experimental 3D printer device drive
 
 To install the printer, use the following installation instructions:
 
-If the 3D print device implements a Microsoft OS descriptor 3DPRINT (“MS\_COMP\_3DPRINT”) or is one of the supported Vendor ID (VID)/Product ID (PID) combinations in the MS3DPrintUSB.inf file, follow the steps in *Automatic installation of the driver via PnP* section below.
+- If the 3D printer implements a Microsoft OS descriptor 3DPRINT (“MS\_COMP\_3DPRINT”) or is one of the supported Vendor ID (VID)/Product ID (PID) combinations in the MS3DPrintUSB.inf file, follow the steps in *Automatic installation of the driver via PnP* section below.
 
-If the 3D print device is currently in development, follow the steps in *Install the driver manually* section below to print to an existing COM port or print to file.
+- If the 3D printer is experimental or in development, follow the steps in *Install the driver manually* section below to print to an existing COM port or print G-Code to file.
 
-For more information, see [Microsoft OS Descriptors for USB Devices](http://msdn.microsoft.com/library/windows/hardware/ff537430.aspx).
+For information on MS_COMP_3DPRINT, see [Getting started guide - Microsoft Standard Driver for 3D Printers](https://msdn.microsoft.com/windows/hardware/drivers/3dprint/microsoft-standard-driver-for-3d-printers-).
+
+For more information on OS descriptors, see [Microsoft OS Descriptors for USB Devices](http://msdn.microsoft.com/library/windows/hardware/ff537430.aspx).
 
 ### Automatic installation of the driver via PnP
 
-1.  If the device does not have a MSO descriptor or a supported VID/PID, add the VID/PID combination to the MS3DPrintUSB\_{architecture}\\MS3DPrintUSB.inf file and restart Windows with advanced settings and driver signing disabled. This option should only be used temporarily and for development purposes.
+1.  If the device does not have a MSO descriptor or a supported hardware ID (VID/PID), add the new VID/PID combination to the MS3DPrintUSB\_{architecture}\\MS3DPrintUSB.inf file and restart Windows with advanced settings and driver signing disabled. This option should only be used temporarily and for development purposes.
 
 2.  Execute these two commands from an elevated command prompt:
 
@@ -49,7 +51,7 @@ For more information, see [Microsoft OS Descriptors for USB Devices](http://msdn
 
 3.  Click **Next**, select **(x64)**, click **Next**, then click **Have Disk**.
 
-4.  Navigate to the RenderFilters\_x64 folder, select MS3DPrinter.inf, then click **OK**.
+4.  Navigate to the RenderFiltersV4\_x64 folder, select MS3DPrinter.inf, then click **OK**.
 
 5.  Click **OK**, click **Next**, then click **Finish**.
 
