@@ -15,22 +15,23 @@ To configure the device, you should have a 3D printer device in the **Devices an
 
 Next you will need to change the Slicer and advanced settings in the configuration file.
 
-## Configuring the device
+There are two configuration files that control the printer properties and the slicer settings.
 
+When printing to a hardware device: 
 
-There are two configuration files:
+- **C:\\Windows\\System32\\MS3DPrint\\StandardGCode\*.XML** – this is used by StandardGCode.DLL and can change from device to device, depending on the registry mapping defined in the **ConfigurationXML** key under:
 
-**C:\\Windows\\System32\\StandardGCode.XML** – this is used by StandardGCode.DLL and can change from device to device, depending on the registry mapping defined in the **ConfigurationXML** key under:
+    - Per printer queue: HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\3DPRINTER\\{PrinterName}\\{node}
 
-Per printer queue: HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\3DPRINTER\\{PrinterName}\\{node}
+    - Per hardware ID: HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB\\{VID&PID}\\{DeviceSerial}\\Device Parameters\\
 
-Per hardware ID: HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB\\{VID&PID}\\{DeviceSerial}\\Device Parameters\\
+When printing to a file (no USB driver present):
 
-**C:\\Windows\\System32\\Spool\\Drivers\\x64\\3\\MS3DPrinterDeviceConfig.xml** – this is global and used by the slicer.
+- **C:\\Windows\\System32\\Spool\\Drivers\\x64\\3\\MS3DPrinterDeviceConfig.xml** – this is global and used by the slicer.
 
-For simplicity, edit MS3DPrinterDeviceConfig.xml file as an Administrator if you are using the Print to File function (G-Code file) with no physical device and edit StandardGCode.XML when printing an actual physical device.
+For simplicity, edit the **MS3DPrinterDeviceConfig.xml** file as an **Administrator** if you are using the **Print to File** function (G-Code file) with no physical device attached and edit **StandardGCode.XML** when printing to a physical device.
 
-Now you are ready to 3D print from an app like 3D Builder app in the Windows Store or the desktop 3DViewer.exe application in the 3D Printing SDK.
+Now you are ready to 3D print from an application like the 3D Builder app in Windows, or any store or desktop application that implements Windows native 3D printing.
 
  
 
