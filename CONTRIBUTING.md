@@ -3,6 +3,8 @@
 Thank you for your interest in the Windows driver documentation! We appreciate your feedback, edits, and additions to our docs.
 This page covers the basic steps for contributing to our technical documentation.
 
+There's also an [introductory video](https://channel9.msdn.com/Blogs/WinHEC/Contributing-to-MSDN-and-TechNet-Documentation) that shows you how to propose changes.
+
 ## Sign a CLA
 
 All contributors who are ***not*** a Microsoft employee must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before contributing to any Microsoft repositories. 
