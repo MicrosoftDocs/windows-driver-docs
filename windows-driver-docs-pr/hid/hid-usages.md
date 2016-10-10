@@ -44,7 +44,7 @@ For more information about how to determine the usages that a HIDClass device su
 
 [Interpreting HID Reports](interpreting-hid-reports.md)
 
-For detailed information about industry standard HID usage, see the Universal Serial Bus (USB) specification *HID Usage Tables* that is located at the [USB Implementers Forum](http://go.microsoft.com/fwlink/p/?linkid=8780) website. (This resource may not be available in some languages and countries.)
+For detailed information about industry standard HID usage, see the Universal Serial Bus (USB) specification *HID Usage Tables* that is located at the [USB Implementers Forum](https://go.microsoft.com/fwlink/?linkid=830142) website. (This resource may not be available in some languages and countries.)
 
 ### Usage Page
 
@@ -64,7 +64,7 @@ A *usage range* is an inclusive, consecutive range of [usage IDs](#usage-id), al
 
 ### Aliased Usages
 
-More than one usage can be specified for a link collection or a HID control. For a given collection or control, a group of such usages are aliases of one another, and are referred to as *aliased usages*. Delimiter items are used to specify aliased usages. [Usage ranges](#usage-range) cannot be aliased.
+More than one usage can be specified for a [**link collection**](link-collections.md) or a HID control. For a given collection or control, a group of such usages are aliases of one another, and are referred to as *aliased usages*. Delimiter items are used to specify aliased usages. [Usage ranges](#usage-range) cannot be aliased.
 
 For information about how aliased usages are specified in a top-level collection's capability arrays, see [Button Capability Arrays](button-capability-arrays.md) and [Value Capability Arrays](value-capability-arrays.md).
 
