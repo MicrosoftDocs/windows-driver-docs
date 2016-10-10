@@ -31,7 +31,7 @@ The preceding diagram includes the following:
 
 Here is the device stack diagram of a generic HID client and transport.
 
-![HID device stack for a generic HID client and transport.](images/hid-device-stacks-generic.png =800x600)
+![HID device stack for a generic HID client and transport.](images/hid-device-stacks-generic.png){:height="600px" width="400px"}
 
 Here is another device stack diagram showing HID keyboard and mouse collections over USB.
 
