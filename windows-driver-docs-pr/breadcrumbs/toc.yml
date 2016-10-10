@@ -63,6 +63,9 @@
       - name: Powermeter
         tocHref: /windows/hardware/drivers/powermeter/
         topicHref: /windows/hardware/drivers/powermeter/index
+      - name: Point-of-service
+        tocHref: /windows/hardware/drivers/pos/
+        topicHref: /windows/hardware/drivers/pos/index
       - name: Print
         tocHref: /windows/hardware/drivers/print/
         topicHref: /windows/hardware/drivers/print/index        
