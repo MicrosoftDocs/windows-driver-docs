@@ -1,0 +1,52 @@
+---
+title: SysTray and SndVol32
+description: SysTray and SndVol32
+ms.assetid: 53f8c5be-d0a5-4364-8fac-813cf9f8318c
+keywords: ["SysTray WDK audio", "SndVol32 WDK audio", "master volume settings WDK audio", "speakers WDK audio , icon display", "volume settings WDK audio", "icons WDK audio", "displaying speaker icons", "volume sliders WDK audio", "hidden speaker icons WDK audio", "mute control WDK audio"]
+---
+
+# SysTray and SndVol32
+
+
+## <span id="systray_and_sndvol32"></span><span id="SYSTRAY_AND_SNDVOL32"></span>
+
+
+The SndVol32 program (Sndvol32.exe) controls both the volume settings for various sound sources (such as wave, CD, and synthesizer) and the master volume setting. The SndVol32 program is represented as a speaker icon that appears in the system-tray notification area the taskbar, which appears in the lower-right corner of the Windows screen by default.
+
+The SysTray program (Systray.exe) is responsible for displaying the speaker icon when it is turned on and for hiding the speaker icon when it is turned off. In Windows XP, the speaker icon is hidden by default. In all other Windows versions, including Windows XP SP1, the speaker icon is visible by default.
+
+In Windows XP, follow these steps to display the speaker icon on the taskbar:
+
+1.  In Control Panel, click the **Sounds and Audio Devices** icon (or simply run mmsys.cpl).
+
+2.  On the **Volume** tab, select the **Place volume icon in the taskbar** check box.
+
+If your sound card's volume level can be changed under software control, a speaker icon appears on the taskbar. You can change the master-volume setting by single-clicking on that icon and adjusting the volume slider.
+
+At logon time, SysTray queries the audio driver for a mixer line with a MIXERLINE\_COMPONENTTYPE\_DST\_SPEAKERS (speaker destination) or MIXERLINE\_COMPONENTTYPE\_DST\_HEADPHONES (headphone destination) component type to determine whether the speaker icon should be displayed. If neither of these component types is found, SysTray does not display the speaker icon. If it does find the line, it queries the line to determine whether it contains a mute control. SysTray completes its logon-time mixer-line processing by internally storing the **line ID** and **mute control ID** for future reference.
+
+The SndVol32 program also provides a user interface for controlling all volume controls in the system. When a user double-clicks the speaker icon in the system tray (or simply runs Sndvol32.exe), SndVol32 displays a "Master Volume" window, which contains sliders for controlling both the master volume level and the volume levels on the various sound sources. In this case, SndVol32 uses a different algorithm to determine what it displays. For the **master volume slider**, it looks for the first volume control on the "master" destination (for example, the destination that is numbered zero). This is typically the speaker destination.
+
+When SndVol32 runs, it queries the mixer-line driver looking for a set of controls that it knows about. To display a slider panel, the SOURCE line should have at least one of the following controls:
+
+-   Volume control
+
+-   Mute control
+
+-   Advanced control (AGC, bass, or treble)
+
+If none of these controls is found, SndVol32 does not display the panel. A source line simply being part of a MUX with no controls is not sufficient for display. This restriction is easily circumvented by inserting a fake MUTE control into the topology to get the panels to display. When the line simply feeds into a MUX, the **Select** box displayed for MUXes hides the MUTE control.
+
+WDM Audio topology nodes that do not map well into a mixer line control are not displayed by SndVol32. Refer to [Topology Nodes](topology-nodes.md) for details on which nodes are translated into mixer-line controls. The WDM mixer-line driver translates some nodes into controls, but SndVol32 displays only the set of controls that it knows about.
+
+For information about the volume ranges and the default volume levels in the various versions of Windows, see [Default Audio Volume Settings](default-audio-volume-settings.md).
+
+ 
+
+ 
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[audio\audio]:%20SysTray%20and%20SndVol32%20%20RELEASE:%20%287/18/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+

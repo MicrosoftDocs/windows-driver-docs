@@ -5,6 +5,7 @@
 #### [Driver installation](driver-installation.md)
 #### [Configuring the device](configuring-the-device.md)
 #### [Slicer settings](slicer-settings.md)
+#### [Sample configuration XML](sample-configuration-xml.md)
 ### [3D printing sample WSD app](3d-printing-sample-wsd-app.md)
 #### [Install the driver and sample app](install-the-driver-and-sample-app.md)
 #### [Print files to the WSD sample](print-files-to-the-wsd-sample.md)
