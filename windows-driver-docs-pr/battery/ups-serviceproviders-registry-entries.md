@@ -1,8 +1,7 @@
 ---
-title: UPS\\ServiceProviders Registry Entries
-description: UPS\\ServiceProviders Registry Entries
+title: UPS\ServiceProviders Registry Entries
+description: UPS\ServiceProviders Registry Entries
 ms.assetid: fa206f16-e136-4bfe-9823-7c324d62e1fb
-keywords: ["UPS\ServiceProviders registry key", "vendor-specific registry entries WDK UPS", "UPS minidrivers WDK , registry entries", "UPS registry entries WDK", "registry WDK UPS", "service provider registry entries WDK UPS"]
 ---
 
 # UPS\\ServiceProviders Registry Entries
