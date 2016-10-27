@@ -38,7 +38,7 @@ Specifies the name of the file on the source disk.
 Specifies the integer identifying the source disk that contains the file. This value, along with the initial *subdir*(ectory) path (if any) that contains the named file, must be defined in a [**SourceDisksNames**](inf-sourcedisksnames-section.md) section of the same INF.
 
 <a href="" id="subdir"></a>*subdir*  
-This optional value specifies the subdirectory (relative to the **SourceDisksNames**  *path* specification, if any) on the source disk where the named file resides.
+This optional value specifies the subdirectory (relative to the *path* value of the **SourceDisksNames** section, if any) on the source disk where the named file resides.
 
 If this value is omitted from an entry, the named source file is assumed to be in the *path* directory that was specified in the **SourceDisksFiles** section for the given disk or, if no *path* directory was specified, in the [*installation root*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-installation-root).
 
