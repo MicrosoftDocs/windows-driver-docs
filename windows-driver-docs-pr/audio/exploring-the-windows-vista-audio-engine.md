@@ -84,7 +84,7 @@ The following table shows the sAPOs that are available in the Windows Vista audi
 
 When an audio application initiates audio processing, the audio engine configures the system-supplied APOs and the sAPOs into an audio graph to process the digital audio data. The mechanism the audio engine uses for building the audio graph is a system detail and will not be discussed.
 
-The audio application can initiate the connection in shared mode ore exclusive mode. Although a default set of sAPOs is installed with Windows Vista, sAPOs are not considered to be system components and are therefore customizable.
+The audio application can initiate the connection in shared mode or exclusive mode. Although a default set of sAPOs is installed with Windows Vista, sAPOs are not considered to be system components and are therefore customizable.
 
 ### <span id="shared_mode"></span><span id="SHARED_MODE"></span>Shared mode
 
