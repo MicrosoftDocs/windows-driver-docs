@@ -132,15 +132,12 @@ Remarks
 
 Windows only copies a [driver package](driver-packages.md) to its destination location as part of a driver installation if the file has an INF **CopyFiles** directive. When it copies files, the operating system automatically generates temporary file names, when necessary, and renames the copied source files the next time that the operating system is started.
 
+The INF file writer must also supply path specifications for files that are copied from source media by using the INF [**SourceDisksNames**](inf-sourcedisksnames-section.md) section and the INF [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) section to explicitly specify the path of each source file relative to the INF file in the source media.
+
 The destination of copy operations is controlled by the [**INF DestinationDirs section**](inf-destinationdirs-section.md). This section controls the destination for all file-copy operations, as follows:
 
 -   If a named section referenced by a **CopyFiles** directive has a corresponding entry in the [**DestinationDirs**](inf-destinationdirs-section.md) section of the same INF, that entry explicitly specifies the target destination directory into which all files that are listed in the named section are copied. If the named section is not listed in the **DestinationDirs** section, Windows uses the **DefaultDestDir** entry in the **DestinationDirs** section of the INF file.
 -   If a **CopyFiles** directive uses the **@***filename* syntax, Windows uses the **DefaultDestDir** entry in the **DestinationDirs** section of the INF file.
-
-The INF file writer also supplies path specifications to files that are copied from source media in either of the following ways:
-
--   In vendor-supplied INF files, by using the INF [**SourceDisksNames**](inf-sourcedisksnames-section.md) section and, possibly, the INF [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) section to explicitly specify the full path of each named source file that is not in the installation root on the distribution media.
--   In system-supplied INF files, by supplying one or more additional INF files, identified by name in the **LayoutFile** entry of the INF [**Version**](inf-version-section.md) section.
 
 The following points apply to the INF **CopyFiles** directive:
 
