@@ -7,7 +7,7 @@ description: Use these settings to enable WSPrint 2.0 on a device
 # Enabling WSPrint 2.0 on a Device
 
 
-TBD
+This topc describes the required settings to enable WSPrint 2.0 on a device.
 
 ## Broadcast a Mdns printer service
 
@@ -33,38 +33,59 @@ WSDPRINT\MS3DCompatE2D2
 ## WSPrint interactions
 
 
-The following TBD
+The following diagram shows WSPrint 2.0 interactions:
 
-    ![wsprint interactions](images/interactions.png)
+![wsprint interactions](images/interactions.png)
 
+```
 1.  Probe – Network Discovery bootstrap
+
 2.  Resolve – Network Discovery bootstrap
+
 3.  Get – Printer MetaData Query
+
 4.  GetPrinterElements – Printer MetaData Query
+
 5.  Subscribe – Event model registration
+
 6.  Unsubscribe – Event unregistration
+
 7.  SetEventRate – Event rate
+
 8.  Renew – Renew 
+
 9.  PrepareToPrint – Print initialization
+
 10. CreatePrintJob – Print submission
+
 11. CreatePrintJob2 – Print submission
+
 12. GetPrintDeviceResources – Allows retrieval of localized resources in ResX (Multi Part Outgoing Response)
+
 13. GetPrintDeviceCapabilities  - Allows retrieval of Print Device Capabilities (Multi Part Outgoing Response)
+
 14. GetBidiSchemaExtensions - Allows retrieval of Bidi Schema extensions (Multi Part Outgoing Response)
+
 15. CancelJob – Job Cancellation
+
 16. GetActiveJobs – Job Progress 
+
 17. GetJobHistory – Job History
+
 18. AddDocument – Add document to current print
+
 19. GetJobElements – Get job statuses
+
 20. SendDocument – Actual print data (Multi Part Incoming Request)
+```
 
 
 ## See Also 
 
 
-[WSPrint 2.0 public documentation](https://msdn.microsoft.com/en-us/library/windows/hardware/dn641604(v=vs.85).aspx)
+[Implementing Web Services on Devices for Printing](https://msdn.microsoft.com/en-us/library/windows/hardware/dn641604(v=vs.85).aspx)
 
-[WSPrint 2.0 Specification](http://go.microsoft.com/fwlink/p/?LinkId=534008) 
+[WSPrint 2.0 specification](http://go.microsoft.com/fwlink/p/?LinkId=534008) 
 
 
 --------------------
