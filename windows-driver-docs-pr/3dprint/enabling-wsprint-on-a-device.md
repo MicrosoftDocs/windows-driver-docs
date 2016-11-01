@@ -7,7 +7,7 @@ description: Use these settings to enable WSPrint 2.0 on a device
 # Enable WSPrint 2.0 on a device
 
 
-This topc describes the required settings to enable WSPrint 2.0 on a device.
+This topic describes the setting required to enable WSPrint 2.0 on a device.
 
 ## Broadcast a Mdns printer service
 
