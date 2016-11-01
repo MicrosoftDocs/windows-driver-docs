@@ -12,7 +12,7 @@ This topc describes the required settings to enable WSPrint 2.0 on a device.
 ## Broadcast a Mdns printer service
 
 
-This must be done using the service type of PrintService.\_printer.\_tcp.local on port 80 
+This must be done using the service type of PrintService.\_printer.\_tcp.local on port 80.
 
 ## Implement a HTTP endpoint 
 
@@ -35,7 +35,7 @@ WSDPRINT\MS3DCompatE2D2
 
 The following diagram shows WSPrint 2.0 interactions:
 
-![wsprint interactions](images/interactions.png)
+![wsprint interactions](images/wsprint-interactions.png)
 
 The following steps are a more detailed description of WSPrint 2.0 interactions:
 
