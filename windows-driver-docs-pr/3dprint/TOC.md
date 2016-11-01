@@ -10,6 +10,7 @@
 #### [Install the driver and sample app](install-the-driver-and-sample-app.md)
 #### [Print files to the WSD sample](print-files-to-the-wsd-sample.md)
 #### [Test-sign a driver package](test-sign-a-driver-package.md)
+### [Enable WSPrint 2.0 on a device](enabling-wsprint-on-a-device.md)
 ### [Print Schema keywords for 3D manufacturing](print-schema-keywords-for-3d-manufacturing.md)
 #### [3D manufacturing keywords overview](3d-manufacturing-keywords-overview.md)
 #### [Device control keywords](device-control-keywords.md)
@@ -20,4 +21,3 @@
 #### [PrintTicket document example](example-printticket-document.md)
 #### [Print schema references](print-schema-references.md)
 ### [3D hardware partners](3d-printing-partners.md)
-
