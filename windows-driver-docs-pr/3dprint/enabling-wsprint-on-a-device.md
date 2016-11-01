@@ -7,7 +7,7 @@ description: Use these settings to enable WSPrint 2.0 on a device
 # Enable WSPrint 2.0 on a device
 
 
-This topic describes the setting required to enable WSPrint 2.0 on a device.
+This topic describes the settings required to enable WSPrint 2.0 on a device.
 
 ## Broadcast a Mdns printer service
 
@@ -17,9 +17,9 @@ This must be done using the service type of PrintService.\_printer.\_tcp.local o
 ## Implement a HTTP endpoint 
 
 
-The endpoint needs to be able to respond to WSPrint 2.0 operations. You do not need to perform SOAP validation and processing. We just do string detection and replacement in our version.
+The endpoint needs to be able to respond to WSPrint 2.0 operations. You do not need to perform SOAP validation and processing. You can instead use string detection and replacement.
 
-Once the WSPrint endpoint is functioning, you will need to customize the XML returned from the GetPrinterElements call with a custom device id:
+Once the WSPrint endpoint is functioning, you need to customize the XML returned from the GetPrinterElements call with a custom device id:
 
 ```
 <wprt:DeviceId>MFG:MS3D; CMD:XPS; MDL:Compat; CLS:Printer; DES:Compat; CID:MS3DWSD</wprt:DeviceId>
@@ -81,9 +81,7 @@ The following steps are a more detailed description of WSPrint 2.0 interactions:
 20. SendDocument – Actual print data (Multi Part Incoming Request)
 ```
 
-
-## See Also 
-
+For more information on WSPrint 2.0, see the following resources:
 
 [Implementing Web Services on Devices for Printing](https://msdn.microsoft.com/en-us/library/windows/hardware/dn641604(v=vs.85).aspx)
 
