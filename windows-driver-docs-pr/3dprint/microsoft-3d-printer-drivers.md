@@ -22,7 +22,7 @@ This section contains information about Microsoft 3D printer drivers.
 
 [3D printing sample WSD app](3d-printing-sample-wsd-app.md)
 
-[Enabling WSPrint 2.0 on a Device](enabling-wsprint-on-a-device.md)
+[Enable WSPrint 2.0 on a device](enabling-wsprint-on-a-device.md)
 
 [Print schema keywords for 3D manufacturing](print-schema-keywords-for-3d-manufacturing.md)
 

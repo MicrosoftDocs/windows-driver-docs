@@ -1,10 +1,10 @@
 ---
-title: Enabling WSPrint 2.0 on a Device
+title: Enable WSPrint 2.0 on a device
 author: windows-driver-content
 description: Use these settings to enable WSPrint 2.0 on a device
 ---
 
-# Enabling WSPrint 2.0 on a Device
+# Enable WSPrint 2.0 on a device
 
 
 This topc describes the required settings to enable WSPrint 2.0 on a device.
@@ -19,12 +19,12 @@ This must be done using the service type of PrintService.\_printer.\_tcp.local o
 
 The endpoint needs to be able to respond to WSPrint 2.0 operations. You do not need to perform SOAP validation and processing. We just do string detection and replacement in our version.
 
-Once the WSPrint endpoint is functioning, you will need to customize the XML returned from the GetPrinterElements call with a "custom" device id:
+Once the WSPrint endpoint is functioning, you will need to customize the XML returned from the GetPrinterElements call with a custom device id:
 
 ```
 <wprt:DeviceId>MFG:MS3D; CMD:XPS; MDL:Compat; CLS:Printer; DES:Compat; CID:MS3DWSD</wprt:DeviceId>
 ```
-This matches with the Compatible ID in our published INF:
+This matches with the Compatible ID in the published INF:
 
 ```
 WSDPRINT\MS3DCompatE2D2
@@ -36,6 +36,8 @@ WSDPRINT\MS3DCompatE2D2
 The following diagram shows WSPrint 2.0 interactions:
 
 ![wsprint interactions](images/interactions.png)
+
+The following steps are a more detailed description of WSPrint 2.0 interactions:
 
 ```
 1.  Probe – Network Discovery bootstrap
