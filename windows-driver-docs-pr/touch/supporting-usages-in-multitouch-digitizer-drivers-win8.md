@@ -1,4 +1,4 @@
----
+﻿---
 title: Supporting Usages in Multi-touch Digitizers
 description: Supporting Usages in Multi-touch Digitizers
 ms.assetid: C139C81E-78D2-4CB6-A532-748613B1F068
@@ -13,7 +13,7 @@ In the context of a Windows Pointer Device, multi-touch refers to support for tw
 
 The report descriptor for a multi-touch digitizer must specify that the device is a HID touch screen (page = 0x0D and usage = 0x04).
 
-In addition to the existing HID touch usages, multi-touch digitizers must implement the following [usages](supporting-usages-in-digitizer-report-descriptors.md#required-hid-usages).
+In addition to the existing HID touch usages, multi-touch digitizers must implement the following [usages](supporting-usages-in-digitizer-report-descriptors.md#required_hid_usages).
 
 -   Contact identifier
 -   Contact count maximum
@@ -21,7 +21,7 @@ In addition to the existing HID touch usages, multi-touch digitizers must implem
 
 ### <span id="optional_hid_usages"></span><span id="OPTIONAL_HID_USAGES"></span>Optional HID Usages
 
-The following [usages](supporting-usages-in-digitizer-report-descriptors.md#optional-hid-usages) are optional, but multi-touch digitizers should repoirt them if the digitizer hardware supports them.
+The following [usages](supporting-usages-in-digitizer-report-descriptors.md#optional_hid_usages) are optional, but multi-touch digitizers should repoirt them if the digitizer hardware supports them.
 
 -   Confidence
 -   Pressure

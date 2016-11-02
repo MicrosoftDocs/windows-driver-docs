@@ -1,4 +1,4 @@
----
+﻿---
 title: Windows Pointer Device Overview
 description: In Windows 8, a Windows pointer device refers to devices that support the pen, or touch, functionality.
 ms.assetid: EC4BA3B0-F9B0-497C-9B71-97E415DFB45D
@@ -27,7 +27,7 @@ To report data for any type of integrated stylus, the input must be reported by 
 ## <span id="windows_hardware_certification"></span><span id="WINDOWS_HARDWARE_CERTIFICATION"></span>Windows Hardware Certification
 
 
-As part of Windows 8 touch hardware certification, digitizers are required to appear to the Windows operating system as human interface device (HID) devices and follow the rules described in [Required HID Descriptors](required-descriptors.md#required-hid-descriptors).
+As part of Windows 8 touch hardware certification, digitizers are required to appear to the Windows operating system as human interface device (HID) devices and follow the rules described in [Required HID Descriptors](required-descriptors.md#required_hid_descriptors).
 
  
 
