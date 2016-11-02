@@ -35,10 +35,6 @@ Vendor specific transports are also allowed via 3rd party vendor-specific transp
 
 HID is built on a couple of fundamental concepts, a Report Descriptor, and reports. Reports are the actual data blobs that are exchanged between a device and a software client. The Report Descriptor describes the format and meaning of each data blob that it supports.
 
-### Top Level Collections
-
-A *Top Level Collection* is a grouping of functionality that is targeting a particular software consumer (or type of consumer) of the functionality. The Report Descriptor describes one or more Top Level Collections. For example, a Top Level Collection may be described as Keyboard, Mouse, Consumer Control, Sensor, Display, etc. In the HID spec, these Top Level Collections are also referred to as *Application Collections*. The HID device describes the purpose of each Top Level Collection, in order to allow the consumers of HID functionality to identify Top Level Collections in which they might be interested. In Windows, the HID device setup class (HIDClass) generates a unique physical device object (PDO) for each Top Level Collection described by the Report Descriptor.
-
 ### Reports
 
 When applications and HID devices exchange data, this is done through Reports. There are three report types: Input Reports, Output Reports, and Feature Reports.

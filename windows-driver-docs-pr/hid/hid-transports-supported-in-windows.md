@@ -25,7 +25,7 @@ Windows supports the following transports.
 Previous versions of Windows (prior to Windows 7) also included support for the following.
 
 -   HidGame.sys - HID minidriver for game port (I/O port 201) devices. The HID class driver creates a functional device object (FDO) for a game port device, and creates a physical device object (PDO) for each HID collection that the game port device supports.
--   • Gameenum.sys – The gameport bus driver. The game port bus driver creates a PDO for each game port device that is daisy-chained to a game port.
+-   Gameenum.sys – The gameport bus driver. The game port bus driver creates a PDO for each game port device that is daisy-chained to a game port.
 
 They are now considered legacy as the hardware is not found on modern machines (replaced by USB and other modern transports).
 
@@ -41,10 +41,7 @@ The following table shows the recommended transports for keyboards, mice, and to
 
  
 
-The previous table contains guidance as opposed to requirements. There are currently no Windows Hardware Certification Kit (HCK) requirements for these but this could change in a future release.
-
- 
-
+[**USB Generic HID Test**](https://msdn.microsoft.com/library/windows/hardware/dn942240) in the Windows Hardware Lab Kit (HLK) covers HidUsb and HidClass drivers. There is no HLK test for third-party HID mini drivers. 
  
 
 

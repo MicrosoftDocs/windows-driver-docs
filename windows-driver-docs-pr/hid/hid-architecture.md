@@ -19,7 +19,7 @@ The architecture of the HID driver stack in Windows is built on the class driver
 
 The system-supplied HID class driver is the WDM function driver and bus driver for the HID device setup class (HIDClass). The executable component of the HID class driver is *hidclass.sys*. The HID Class driver is the glue between HID clients and various transports. This allows a HID Client to be written in an independent way from transports. This level of abstraction allows clients to continue to work (with little to no modifications) when a new standard, or a 3rd party transport is introduced.
 
-The following is a simplified stack diagram of a generic HID client and transport.
+The following is an architectural representation. 
 
 ![simplified hid driver stack, showing hid clients, the hid class driver and the hid transport components.](images/hid-intro-simple.png)
 
@@ -28,6 +28,15 @@ The preceding diagram includes the following:
 -   HID Clients – Identifies the Windows and 3rd party clients and their interfaces.
 -   HID Class driver - The *hidclass.sys* executable.
 -   HID Transport Minidriver - Identifies the Windows and 3rd party transports and their interfaces.
+
+Here is the device stack diagram of a generic HID client and transport.
+
+
+![HID device stack for a generic HID client and transport.](images/hid-device-stacks-generic.png)
+
+Here is another device stack diagram showing HID keyboard and mouse collections over USB.
+
+![HID device stack for a keyboard and mouse over USB.](images/hid-device-stacks.png)
 
 ## HID Clients
 

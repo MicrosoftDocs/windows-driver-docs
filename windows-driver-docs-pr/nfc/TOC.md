@@ -1,4 +1,4 @@
-# [NFC design guide](nfc-design-guide.md)
+# [NFC design guide](index.md)
 ## [What's new in NFC device drivers](what-s-new-in-nfc-device-drivers.md)
 ## [NFC architecture](nfc-architecture.md)
 ## [Wi-Fi direct pairing implementation](wi-fi-direct-paring-implementation.md)
