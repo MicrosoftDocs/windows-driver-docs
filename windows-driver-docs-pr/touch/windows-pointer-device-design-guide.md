@@ -1,13 +1,11 @@
 ---
-title: Windows Pointer Device Data Delivery
-description: Windows Pointer Device Data Delivery
-ms.assetid: AF254892-F3C0-46E9-B07E-9C81FF500072
+title: Windows Pointer Device Design Guide
+description: Windows Pointer Device Design Guide
+ms.assetid: 0E960F55-B1EA-4B9A-870D-DEB183AEBB08
 ---
 
-# Windows Pointer Device Data Delivery
+# Windows Pointer Device Design Guide
 
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 This section includes the following topics:
 

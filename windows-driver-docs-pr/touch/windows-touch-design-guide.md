@@ -1,13 +1,11 @@
 ---
-title: Legacy Windows Touch Drivers
-description: Legacy Windows Touch Drivers
-ms.assetid: AC3438F0-7AF1-450D-9714-73AA8F0732FD
+title: Windows Touch Design Guide
+description: Windows Touch Design Guide
+ms.assetid: bb13d259-22b7-4982-8cbb-8f92eab3d526
 ---
 
-# Legacy Windows Touch Drivers
+# Windows Touch Design Guide
 
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 This section includes the following topics:
 
@@ -22,8 +20,6 @@ This section includes the following topics:
 [Implementing Top-Level Collections in Multi-touch Drivers](implementing-top-level-collections-in-multitouch-drivers.md)
 
 [Using Report Descriptors to Support Capability Discovery](using-report-descriptors-to-support-capability-discovery.md)
-
-[Windows Touch Samples](windows-touch-samples.md)
 
 [Additional Resources](additional-resources.md)
 
