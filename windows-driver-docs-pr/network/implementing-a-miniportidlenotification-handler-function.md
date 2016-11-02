@@ -51,7 +51,7 @@ NDIS_STATUS MiniportIdleNotification(
     IoSp->Parameters.DeviceIoControl.InputBufferLength 
             = sizeof(Adapter->UsbSsCallback);
     IoSp->Parameters.DeviceIoControl.Type3InputBuffer 
-            = &amp;Adapter->UsbSsCallback;
+            = Adapter->UsbSsCallback;
 
     IoSetCompletionRoutine(
             Adapter->UsbSsIrp,
