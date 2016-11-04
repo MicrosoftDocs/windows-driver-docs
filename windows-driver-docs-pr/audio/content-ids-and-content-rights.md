@@ -11,7 +11,7 @@ keywords: ["content rights WDK audio", "content IDs WDK audio", "Digital Rights 
 ## <span id="content_ids_and_content_rights"></span><span id="CONTENT_IDS_AND_CONTENT_RIGHTS"></span>
 
 
-A content ID (identifier) is a ULONG value that the [DRMK system driver](kernel-mode-wdm-audio-components.md#drmk-system-driver) generates at runtime to identify DRM-protected content in the audio-data stream that feeds into a particular pin.
+A content ID (identifier) is a ULONG value that the [DRMK system driver](kernel-mode-wdm-audio-components.md#drmk_system_driver) generates at runtime to identify DRM-protected content in the audio-data stream that feeds into a particular pin.
 
 Content rights are a digital representation of the rights granted by the content provider to the user for playing and copying DRM-protected content. Content rights are specified in the form of a [**DRMRIGHTS**](https://msdn.microsoft.com/library/windows/hardware/ff536355) structure that DRMK passes to the audio driver.
 

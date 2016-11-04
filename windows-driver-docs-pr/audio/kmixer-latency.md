@@ -11,7 +11,7 @@ keywords: ["KMixer system driver WDK audio , latency", "waveOut latency WDK audi
 ## <span id="kmixer_latency"></span><span id="KMIXER_LATENCY"></span>
 
 
-The [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver) is the kernel-mode software component that mixes the output streams from the various audio sources in the system. Inserting KMixer into a wave audio stream adds KMixer's inherent latency to the total latency of that stream. KMixer introduces a latency of 30 milliseconds into an audio stream. This is usually sufficient to absorb jitter resulting from competition for CPU time with ISRs (interrupt service routines) and other high-priority operations. In contrast, hardware mixers are largely immune to these sources of delay.
+The [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver) is the kernel-mode software component that mixes the output streams from the various audio sources in the system. Inserting KMixer into a wave audio stream adds KMixer's inherent latency to the total latency of that stream. KMixer introduces a latency of 30 milliseconds into an audio stream. This is usually sufficient to absorb jitter resulting from competition for CPU time with ISRs (interrupt service routines) and other high-priority operations. In contrast, hardware mixers are largely immune to these sources of delay.
 
 DirectSound streams that feed into hardware mixer pins bypass KMixer and avoid the latency of software mixing in KMixer. DirectSound makes use of all of an audio device's available hardware-accelerated mixer pins as long as those pins have a topology that conforms to the [DirectSound node-ordering requirements](directsound-node-ordering-requirements.md).
 
@@ -19,13 +19,13 @@ In all current versions of Microsoft Windows, including Windows Me and Windows X
 
 Other non-DirectSound stream sources have limitations similar to those of **waveOut** that prevent them from using hardware-accelerated mixing. These sources include:
 
--   Redbook CD digital audio (See [Redbook System Driver](kernel-mode-wdm-audio-components.md#redbook-system-driver).)
+-   Redbook CD digital audio (See [Redbook System Driver](kernel-mode-wdm-audio-components.md#redbook_system_driver).)
 
--   Sound Blaster emulator (See [SBEmul System Driver](kernel-mode-wdm-audio-components.md#sbemul-system-driver).)
+-   Sound Blaster emulator (See [SBEmul System Driver](kernel-mode-wdm-audio-components.md#sbemul_system_driver).)
 
--   Kernel-mode software synthesizers (See [SWMidi System Driver](kernel-mode-wdm-audio-components.md#swmidi-system-driver) and [DMusic System Driver](kernel-mode-wdm-audio-components.md#dmusic-system-driver).)
+-   Kernel-mode software synthesizers (See [SWMidi System Driver](kernel-mode-wdm-audio-components.md#swmidi_system_driver) and [DMusic System Driver](kernel-mode-wdm-audio-components.md#dmusic_system_driver).)
 
--   DRMK, the kernel-mode DRM-decryption module (See [DRMK System Driver](kernel-mode-wdm-audio-components.md#drmk-system-driver).)
+-   DRMK, the kernel-mode DRM-decryption module (See [DRMK System Driver](kernel-mode-wdm-audio-components.md#drmk_system_driver).)
 
 Similar to **waveOut** streams, streams from these four sources always pass through KMixer but can play concurrently with hardware-accelerated DirectSound streams.
 

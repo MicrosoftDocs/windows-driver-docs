@@ -10,12 +10,12 @@ keywords: ["virtual audio devices WDK", "SysAudio", "system audio devices WDK", 
 
 Virtual audio devices represent the filter graphs that render and capture audio content. The system audio driver (SysAudio) uses the available hardware and software components to determine the filter graphs to build.
 
-For more information about the system audio driver, see [SysAudio System Driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver).
+For more information about the system audio driver, see [SysAudio System Driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver).
 
 ## <span id="virtual_audio_devices"></span><span id="VIRTUAL_AUDIO_DEVICES"></span>
 
 
-SysAudio's clients include DirectSound and the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud-system-driver), which serves as the interface between WDM audio drivers and the audio-specific Microsoft Windows Multimedia APIs waveIn, waveOut, midiIn, midiOut, mixer, and aux (described in Microsoft Windows SDK documentation).
+SysAudio's clients include DirectSound and the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver), which serves as the interface between WDM audio drivers and the audio-specific Microsoft Windows Multimedia APIs waveIn, waveOut, midiIn, midiOut, mixer, and aux (described in Microsoft Windows SDK documentation).
 
 The [KsStudio utility](ksstudio-utility.md) in the Windows Driver Kit (WDK) is an example of an application that bypasses SysAudio and allows users to construct filter graphs manually.
 

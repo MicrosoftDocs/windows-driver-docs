@@ -38,7 +38,7 @@ When an application or kernel-mode component requests access to a driver's devic
 
 This section shows how a Kernel-Mode Driver Framework (KMDF) driver or a User-Mode Driver Framework (UMDF) version 2 driver registers for notification of arrival or removal of a device interface provided by another driver, and then creates a [remote I/O target](general-i-o-targets-in-umdf.md) to communicate with the device represented by the device interface.
 
-For information on how to do this in a UMDF version 1 driver, see [Using Device Interfaces in UMDF Drivers](using-device-interfaces-in-umdf-drivers.md#accessing-another-driver-s-device-interface).
+For information on how to do this in a UMDF version 1 driver, see [Using Device Interfaces in UMDF Drivers](using-device-interfaces-in-umdf-drivers.md#accessing-another-drivers-device-interface).
 
 To register for notification of device interface events, a KMDF driver calls [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526), while a UMDF 2 driver calls [**CM\_Register\_Notification**](https://msdn.microsoft.com/library/windows/hardware/hh780224). In both cases, the driver calls the appropriate routine from its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
