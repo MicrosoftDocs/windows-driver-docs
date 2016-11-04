@@ -30,4 +30,4 @@
 ## [Windows Device Testing Framework (WDTF)](wdtf/index.md)
 ## [Windows driver samples](samples/index.md)
 ## [Windows Hardware Error Architecture (WHEA)](whea/index.md)
-## [Windows Touch drivers](touch/)
+## [Windows Touch drivers](touch/index.md)
