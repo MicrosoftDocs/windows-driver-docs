@@ -31,7 +31,7 @@ To request an altitude allocation from Microsoft, send an e-mail asking for an a
 
 To obtain an ID for a filter driver that uses reparse points follow the steps in [Reparse Point Request](reparse-point-tag-request.md).
 
-You can subscribe to the NTFSD newsgroup for details about developing file systems and filter drivers. The group is found at [NT File System Drivers Newsgroup](http://go.microsoft.com/fwlink/p/?LinkId=6208
+You can subscribe to the NTFSD newsgroup for details about developing file systems and filter drivers. The group is found at [NT File System Drivers Newsgroup](http://go.microsoft.com/fwlink/p/?LinkId=620898).
 
 OSR's "Developing File Systems for Windows" seminar explores developing file systems and File Systems and File System Filter Drivers. See [Training for IFS Developers](http://go.microsoft.com/fwlink/p/?linkid=50692).
 
