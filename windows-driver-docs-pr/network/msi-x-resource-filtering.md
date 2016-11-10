@@ -15,7 +15,7 @@ Miniport drivers must register a resource-requirements filter function if they s
 
 NDIS calls the [*MiniportFilterResourceRequirements*](https://msdn.microsoft.com/library/windows/hardware/ff559384) function after NDIS receives the [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550874) I/O request packet (IRP) for a network interface card (NIC). NDIS calls *MiniportFilterResourceRequirements* after the underlying function drivers in the device stack have completed the IRP.
 
-The miniport driver must be prepared to handle IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS from *MiniportFilterResourceRequirements* immediately after the [*MiniportAddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559332) function returns NDIS\_STATUS\_SUCCESS.
+NDIS will call *MiniportFilterResourceRequirements* after the [*MiniportAddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559332) function returns NDIS\_STATUS\_SUCCESS. NDIS may call *MiniportFilterResourceRequirements* again at any time before calling [*MiniportRemoveDevice*](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559427). NDIS may call *MiniportFilterResourceRequirements* while the miniport is running. While the miniport may modify the resource list as described below, the miniport should not immediately attempt to use the new resources. NDIS will eventually halt and re-initialize the miniport with the new resources; only then should the miniport attempt to use the new resources.
 
 [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550874) provides a resource list as an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff550609) structure at **Irp-&gt;IoStatus.Information**. The resources in the list are described by [**IO\_RESOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff550598) structures.
 
@@ -34,14 +34,4 @@ To allocate memory for a new resource-requirements list, use the [**NdisAllocate
 Miniport drivers should not modify other resources, such as **CmResourceTypeMemory** and **CmResourceTypePort** resources. Miniport drivers should avoid adding a new resource to the resource list. However, NDIS 6.1 and later miniport drivers can add more message interrupt resources. If the miniport driver adds more message interrupt resources, it must not remove them from the [*MiniportStartDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559452) function.
 
 For more information about adding and removing resources, see [**IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS**](https://msdn.microsoft.com/library/windows/hardware/ff550874).
-
-NDIS can call *MiniportFilterResourceRequirements* several times before NDIS calls the [*MiniportRemoveDevice*](https://msdn.microsoft.com/library/windows/hardware/ff559427) function. But NDIS calls *MiniportFilterResourceRequirements* only when a device is in the halted state.
-
- 
-
- 
-
-
-
-
 
