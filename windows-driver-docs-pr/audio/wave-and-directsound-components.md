@@ -19,9 +19,9 @@ An application can use either of the following software interfaces for wave rend
 
 -   DirectSound and DirectSoundCapture APIs
 
-The behavior of the waveOut*Xxx* and waveIn*Xxx* functions is based on the capabilities of legacy wave drivers and devices. Beginning with Windows 98, the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud-system-driver) translates calls to these functions into commands to WDM audio drivers. However, by emulating the behavior of older software and hardware, the waveOut*Xxx* functions sacrifice the 3-D sound effects and hardware acceleration that are now available through the DirectSound API. For more information about DirectSound and the Windows Multimedia wave functions, see the Microsoft Windows SDK documentation.
+The behavior of the waveOut*Xxx* and waveIn*Xxx* functions is based on the capabilities of legacy wave drivers and devices. Beginning with Windows 98, the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) translates calls to these functions into commands to WDM audio drivers. However, by emulating the behavior of older software and hardware, the waveOut*Xxx* functions sacrifice the 3-D sound effects and hardware acceleration that are now available through the DirectSound API. For more information about DirectSound and the Windows Multimedia wave functions, see the Microsoft Windows SDK documentation.
 
-DirectSound and the Windows Multimedia wave functions are clients of the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver), which builds the audio filter graphs that process the wave and DirectSound streams. Graph building is transparent to the applications that use these software interfaces.
+DirectSound and the Windows Multimedia wave functions are clients of the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver), which builds the audio filter graphs that process the wave and DirectSound streams. Graph building is transparent to the applications that use these software interfaces.
 
 ### <span id="Wave_Components"></span><span id="wave_components"></span><span id="WAVE_COMPONENTS"></span>Wave Components
 
@@ -31,15 +31,15 @@ The following figure shows the user-mode and kernel-mode components that a wave 
 
 The rendering components appear on the left side of the preceding figure, and the capture components appear on the right. The boxes representing the wave miniport driver are darkened to indicate that these are vendor-supplied components. The other components in the figure are system-supplied.
 
-At the top left of the figure, the wave-rendering (or "wave-out") application interfaces to the WDM audio drivers through the waveOut*Xxx* functions, which are implemented in the user-mode [WinMM system component](user-mode-wdm-audio-components.md#winmm-system-component), Winmm.dll. The application reads blocks of wave audio samples from a file and calls the [**waveOutWrite**](https://msdn.microsoft.com/library/windows/desktop/dd743876) function to render them.
+At the top left of the figure, the wave-rendering (or "wave-out") application interfaces to the WDM audio drivers through the waveOut*Xxx* functions, which are implemented in the user-mode [WinMM system component](user-mode-wdm-audio-components.md#winmm_system_component), Winmm.dll. The application reads blocks of wave audio samples from a file and calls the [**waveOutWrite**](https://msdn.microsoft.com/library/windows/desktop/dd743876) function to render them.
 
-WDMAud, which consists of both user-mode and kernel-mode components (Wdmaud.drv and Wdmaud.sys), buffers the wave data from the [**waveOutWrite**](https://msdn.microsoft.com/library/windows/desktop/dd743876) call and outputs the wave stream to the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver), which appears below WDMAud in the figure.
+WDMAud, which consists of both user-mode and kernel-mode components (Wdmaud.drv and Wdmaud.sys), buffers the wave data from the [**waveOutWrite**](https://msdn.microsoft.com/library/windows/desktop/dd743876) call and outputs the wave stream to the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver), which appears below WDMAud in the figure.
 
 KMixer is a system component that receives wave PCM streams from one or more sources and mixes them together to form a single output stream, which is also in wave PCM format.
 
 KMixer outputs a wave stream to a WaveCyclic or WavePci device, whose port and miniport drivers appear below KMixer on the left side of the preceding figure. The miniport driver binds itself to the port driver to form the wave filter that represents the underlying audio rendering device. A typical rendering device outputs an analog signal that drives a set of speakers or an external audio unit. A rendering device might also output digital audio through an S/PDIF connector. For more information about WaveCyclic and WavePci, see [Wave Filters](wave-filters.md).
 
-Alternatively, KMixer can pass its output stream to a USB audio device, which is controlled by the [USBAudio class system driver](kernel-mode-wdm-audio-components.md#usbaudio-class-system-driver) (not shown in figure), instead of a WaveCyclic or WavePci device.
+Alternatively, KMixer can pass its output stream to a USB audio device, which is controlled by the [USBAudio class system driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver) (not shown in figure), instead of a WaveCyclic or WavePci device.
 
 An adapter driver creates an instance of a WaveCyclic or WavePci port driver by calling [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) with a GUID value of **CLSID\_PortWaveCyclic** or **CLSID\_PortWavePci**, respectively.
 
@@ -63,7 +63,7 @@ The following figure shows the user-mode and kernel-mode components that are use
 
 The rendering components are shown in the left half of the preceding figure, and the capture components appear on the right. The wave miniport drivers are shown as darkened boxes to indicate that they are vendor-supplied components. The other components in the figure are system-supplied.
 
-At the top left of the figure, a DirectSound application loads wave data from a file to a sound buffer that the user-mode [DirectSound system component](user-mode-wdm-audio-components.md#directsound-system-component) (Dsound.dll) manages. This component sends a wave stream to a WaveCyclic or WavePci device, whose port and miniport drivers appear at the lower left in the figure. If a hardware mixer pin is available on the device, the stream passes directly to the wave port driver, bypassing KMixer. Otherwise, the stream first passes through KMixer, which mixes it with any other simultaneously playing streams. KMixer outputs the mixed stream to the port driver.
+At the top left of the figure, a DirectSound application loads wave data from a file to a sound buffer that the user-mode [DirectSound system component](user-mode-wdm-audio-components.md#directsound_system_component) (Dsound.dll) manages. This component sends a wave stream to a WaveCyclic or WavePci device, whose port and miniport drivers appear at the lower left in the figure. If a hardware mixer pin is available on the device, the stream passes directly to the wave port driver, bypassing KMixer. Otherwise, the stream first passes through KMixer, which mixes it with any other simultaneously playing streams. KMixer outputs the mixed stream to the port driver.
 
 As before, the miniport driver binds itself to the port driver to form the wave filter that represents the underlying audio rendering device. This device might play the stream through a set of speakers, for example.
 

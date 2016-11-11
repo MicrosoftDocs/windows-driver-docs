@@ -11,7 +11,7 @@ keywords: ["topology pins WDK audio", "pins WDK audio , topology", "S/PDIF pin t
 ## <span id="topology_pins"></span><span id="TOPOLOGY_PINS"></span>
 
 
-The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud-system-driver) translates topology pins on KS filters into the source and destination mixer lines that the mixer API exposes to applications. Input (sink) pins become source mixer lines, and output (source) pins become destination mixer lines.
+The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) translates topology pins on KS filters into the source and destination mixer lines that the mixer API exposes to applications. Input (sink) pins become source mixer lines, and output (source) pins become destination mixer lines.
 
 As described in [Pin Factories](pin-factories.md), a miniport driver provides an array of pin descriptors, each of which is a structure of type [**PCPIN\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537721) that describes a pin factory belonging to a filter. Each pin descriptor includes the following information:
 
@@ -25,7 +25,7 @@ As described in [Pin Factories](pin-factories.md), a miniport driver provides an
 
 -   **Communications type specifier**
 
-    Indicates the type of IRP communications that the pin supports. A pin that supports IRP communications can be an IRP sink (KSPIN\_COMMUNICATION\_SINK), IRP source (KSPIN\_COMMUNICATION\_SOURCE), or both (KSPIN\_COMMUNICATION\_BOTH). A pin that does not support IRP communications can either lie inside a KS filter graph (KSPIN\_COMMUNICATION\_NONE) or be a [*bridge pin*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-bridge-pin) at the endpoint of a graph (KSPIN\_COMMUNICATION\_BRIDGE).
+    Indicates the type of IRP communications that the pin supports. A pin that supports IRP communications can be an IRP sink (KSPIN\_COMMUNICATION\_SINK), IRP source (KSPIN\_COMMUNICATION\_SOURCE), or both (KSPIN\_COMMUNICATION\_BOTH). A pin that does not support IRP communications can either lie inside a KS filter graph (KSPIN\_COMMUNICATION\_NONE) or be a [*bridge pin*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss_bridge_pin) at the endpoint of a graph (KSPIN\_COMMUNICATION\_BRIDGE).
 
 For more information about bridge pins, see [Audio Filter Graphs](audio-filter-graphs.md).
 

@@ -130,7 +130,7 @@ The following table summarizes the default settings for the hardware-acceleratio
 
 If the user adjusts either the hardware-acceleration or SRC setting to a value other than the default, DirectSound uses the new setting instead of the default.
 
-In Windows XP, the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver) uses an SRC algorithm that provides a signal-to-noise ratio of up to 85 decibels when the SRC slider is set to **Best**. For more information about KMixer's SRC algorithms, see [KMixer Driver Sample Rate Conversion and Mixing Policy](kmixer-driver-sample-rate-conversion-and-mixing-policy.md).
+In Windows XP, the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver) uses an SRC algorithm that provides a signal-to-noise ratio of up to 85 decibels when the SRC slider is set to **Best**. For more information about KMixer's SRC algorithms, see [KMixer Driver Sample Rate Conversion and Mixing Policy](kmixer-driver-sample-rate-conversion-and-mixing-policy.md).
 
  
 

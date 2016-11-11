@@ -11,7 +11,7 @@ keywords: ["audio adapters WDK , device interfaces", "adapter drivers WDK audio 
 ## <span id="installing_device_interfaces_for_an_audio_adapter"></span><span id="INSTALLING_DEVICE_INTERFACES_FOR_AN_AUDIO_ADAPTER"></span>
 
 
-A client accesses an audio device through a set of [*device interfaces*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-interface) that a vendor specifies in the adapter's INF file. The device interfaces specified in the INF file have a one-to-one correspondence with the subdevices that the adapter driver creates when it initializes the device (see [Subdevice Creation](subdevice-creation.md)). For each device interface, the INF file specifies a **FriendlyName** entry value, which is accessible in user mode, under the interface's registry key.
+A client accesses an audio device through a set of [*device interfaces*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss_device_interface) that a vendor specifies in the adapter's INF file. The device interfaces specified in the INF file have a one-to-one correspondence with the subdevices that the adapter driver creates when it initializes the device (see [Subdevice Creation](subdevice-creation.md)). For each device interface, the INF file specifies a **FriendlyName** entry value, which is accessible in user mode, under the interface's registry key.
 
 In the kernel-streaming architecture, topology categories (see [**KSPROPERTY\_TOPOLOGY\_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)) represent device interface classes.
 
@@ -82,7 +82,7 @@ Only a device that contains a built-in synthesizer should register itself under 
 
 -   KSCATEGORY\_CAPTURE
 
-Note that the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver) reserves the registry category KSCATEGORY\_AUDIO\_DEVICE exclusively for its [virtual audio devices](virtual-audio-devices.md). Adapter drivers should not register themselves in this category.
+Note that the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver) reserves the registry category KSCATEGORY\_AUDIO\_DEVICE exclusively for its [virtual audio devices](virtual-audio-devices.md). Adapter drivers should not register themselves in this category.
 
 The following example installs four common system-defined device interfaces that an adapter typically supports for an audio device.
 

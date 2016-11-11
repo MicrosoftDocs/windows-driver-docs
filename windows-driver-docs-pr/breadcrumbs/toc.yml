@@ -87,6 +87,9 @@
       - name: TAEF
         tocHref: /windows/hardware/drivers/taef
         topicHref: /windows/hardware/drivers/taef/index
+      - name: Touch
+        tocHref: /windows/hardware/drivers/touch
+        topicHref: /windows/hardware/drivers/touch/index
       - name: WDTF
         tocHref: /windows/hardware/drivers/wdtf/
         topicHref: /windows/hardware/drivers/wdtf/index

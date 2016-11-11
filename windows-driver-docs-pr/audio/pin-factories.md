@@ -39,7 +39,7 @@ A pin factory specifies the range of data formats that it supports as an array o
 
 KSDATARANGE\_AUDIO and KSDATARANGE\_MUSIC are extended versions of KSDATARANGE. For examples of both types of data ranges, see [Audio Data Formats and Data Ranges](audio-data-formats-and-data-ranges.md).
 
-Before connecting a sink pin on one filter to a source pin on another filter, a graph builder (for example, the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver)) can search the data ranges for a compatible format. The graph builder typically calls the filter's [data-intersection handler](data-intersection-handlers.md), which allows the filter itself to choose a compatible format.
+Before connecting a sink pin on one filter to a source pin on another filter, a graph builder (for example, the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver)) can search the data ranges for a compatible format. The graph builder typically calls the filter's [data-intersection handler](data-intersection-handlers.md), which allows the filter itself to choose a compatible format.
 
 A filter can have multiple pin factories, and a pin factory can support multiple pin instances.
 

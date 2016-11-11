@@ -13,13 +13,13 @@ This topic contains the following sections.
 
 -   [Overview](#overview)
 -   [Definitions](#definitions)
--   [Windows Audio Stack](#windows-audio-stack)
--   [Audio Stack Improvements in Windows 10](#audio-stack-improvements-in-windows-10)
--   [API Improvements](#api-improvements)
+-   [Windows Audio Stack](#windows_audio_stack)
+-   [Audio Stack Improvements in Windows 10](#audio_stack_improvements_in_windows_10)
+-   [API Improvements](#api_improvements)
 -   [AudioGraph](#audiograph)
--   [Windows Audio Session API (WASAPI)](#windows-audio-session-api-wasapi)
--   [Driver Improvements](#driver-improvements)
--   [Measurement Tools](#measurement-tools)
+-   [Windows Audio Session API (WASAPI)](#windows_audio_session_api_wasapi)
+-   [Driver Improvements](#driver_improvements)
+-   [Measurement Tools](#measurement_tools)
 -   [Samples](#samples)
 -   [FAQ](#faq)
 
@@ -157,7 +157,7 @@ This is how an application developer can determine which of the two APIs to use:
     -   You need additional control than that provided by AudioGraph.
     -   You need lower latency than that provided by AudioGraph.
 
-The [measurement tools](#measurement-tools) section of this topic, shows specific measurements from a Haswell system using the inbox HDAudio driver.
+The [measurement tools](#measurement_tools) section of this topic, shows specific measurements from a Haswell system using the inbox HDAudio driver.
 
 The following sections will explain the low latency capabilities in each API. As it was noted in the previous section, in order for the system to achieve the minimum latency, it needs to have updated drivers that support small buffer sizes.
 

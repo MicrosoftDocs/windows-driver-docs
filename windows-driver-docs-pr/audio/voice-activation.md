@@ -52,16 +52,16 @@ The "Learn my voice" feature allows the user to train Cortana to recognize their
 
 When voice activation is paired with "Learn my voice", where the two algorithms will work together to reduce false activations. This is especially valuable for the meeting room scenario, where one person says "Hey Cortana" in a room full of devices.
 
-Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. If the KWS is to wake the device from a low powered state, the hardware offloaded solution is known as Wake on Voice (WoV). For more information, see [Wake on Voice](#wake-on-voice).
+Voice activation is powered by a keyword spotter (KWS) which reacts if the key phrase is detected. If the KWS is to wake the device from a low powered state, the hardware offloaded solution is known as Wake on Voice (WoV). For more information, see [Wake on Voice](#wake_on_voice).
 
 ## <span id="Implementing_Voice_Activation"></span><span id="implementing_voice_activation"></span><span id="IMPLEMENTING_VOICE_ACTIVATION"></span>Implementing Voice Activation
 
 
 To implement voice activation SoC vendors must complete the following tasks.
 
--   Create a custom keyword detector based on the SYSVAD sample described later in this topic. You will implement these methods in a COM DLL, described in [OEM COM DLL Interface](#oem-com-dll-interface).
--   To help ensure glitch-free operation, audio drivers should register their streaming resources with portcls. This allows the OS to manage resources to avoid interference between audio streaming and other subystems. For more information, see [Audio Streaming Resource DDI](#audio-streaming-resource-ddi).
--   For optimal performance implement WAVE RT enhancements described in [WAVERT Enhancements](#wavert-enhancements).
+-   Create a custom keyword detector based on the SYSVAD sample described later in this topic. You will implement these methods in a COM DLL, described in [OEM COM DLL Interface](#oem_com_dll_interface).
+-   To help ensure glitch-free operation, audio drivers should register their streaming resources with portcls. This allows the OS to manage resources to avoid interference between audio streaming and other subystems. For more information, see [Audio Streaming Resource DDI](#audio_streaming_resource_ddi).
+-   For optimal performance implement WAVE RT enhancements described in [WAVERT Enhancements](#wavert_enhancements).
 -   Optionally design any custom APOs to enhance the audio capture process. For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
 -   Provide INF file entries to describe any custom APOs used for keyword detection.
     -   [PKEY\_FX\_KeywordDetector\_StreamEffectClsid](https://msdn.microsoft.com/library/windows/hardware/mt244268)

@@ -36,7 +36,7 @@ Authenticates a driver object and sends it the DRM content ID and content rights
 [**DrmGetContentRights**](https://msdn.microsoft.com/library/windows/hardware/ff536354)
 
 Retrieves the DRM content rights that the system has assigned to a DRM content ID.
-The functions in this list are declared in header file Drmk.h. The kernel-mode [DRMK system driver](kernel-mode-wdm-audio-components.md#drmk-system-driver), Drmk.sys, exports the entry points for these functions.
+The functions in this list are declared in header file Drmk.h. The kernel-mode [DRMK system driver](kernel-mode-wdm-audio-components.md#drmk_system_driver), Drmk.sys, exports the entry points for these functions.
 
 In Windows XP and later, the PortCls system driver, Portcls.sys, exports a different set of entry points for the same set of DRM functions. The names of the PortCls functions are similar to those in the previous list, except that they use the prefix Pc instead of Drm:
 
