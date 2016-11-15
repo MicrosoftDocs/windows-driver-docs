@@ -56,13 +56,13 @@ Partnerimp.dll is partner's implementation of the published Microsoft interface.
 
 - The spooler communicates with 3dmon.dll which sends commands to the 3DPrintService windows service
 
-- 3DPrintService.exe runs with the account credentials of NetworkService
+- The 3DPrintService.exe runs with the account credentials of NetworkService
 
 - The spooler, via 3dmon.dll, sends commands to 3DPrintService anytime the 3D printer is used
 
-- 3DPrintService processes commands and invokes APIs at runtime on partner-provided implementation DLLs
+- The 3DPrintService processes commands and invokes APIs at runtime on partner-provided implementation DLLs
 
-- 33DPrintService hands off the responses from partner-provided DLLss back to the spooler
+- The 3DPrintService hands off the responses from partner-provided DLLs back to the spooler
 
 ## Interfaces and Interactions
 
@@ -101,7 +101,7 @@ This API is used by third-party manufacturers to print the document on their pri
 > **pathToRenderedFile** - UNC path to the location of the spooled file after rendering has been performed. The third-party manufacturer processes the file from this location and print the document on their device
 >
 > **ppPartnerData** - pointer to pointer that isused to store partner specific data setup during the InitializePrint API call.
-
+>
 > **printerName** can be obtained from the registry using the port name. Third-party manufacturers maynot be able to use the port name to communicate with their device. The printer name is unique on a Windows machine and their software will be capable of identifying which printer to print the job on. All printers active on a machine can be found at the following  registry key:
 
 ```
@@ -133,13 +133,12 @@ This API is used to communicate with the printer to obtain information on the de
 The commands below must be supported by the manufacturer:
 
 | Command | CommandData | Output | Comments |
-
-|---------|-------------|--------|--------- |
-| \\\\Printer.3DPrint:JobCancel| Job Commenced = {"Status": "ok"}       Status to be used on Completion  {"Status": "Completed"} | The spooler will display any returned value in the print queue UI. This lets the device display relevant information during a print on the print queue UI. The device can return an arbitrary string here (for example "Busy" or "33% complete") and this will be displayed verbatim in the print queue job status. |
-| \\\\Printer.3DPrint:JobCancel|             | {"Status": "Completed"}                                           | The spooler will invoke this command when a user cancels a print. The partner DLL returns this value when the cancellation was successful and the handles and threads have been closed.                                                                                                                             |
-| \\\\Printer.Capabilities:Data                                     |             | XML string conforming to the PrintDeviceCapabilites (PDC) schema. | The PDC query is invoked by apps that wish to obtain more information about the printer. The data is used to describe the capabilities of the device and can include the slicer settings if the driver relies on the Microsoft slicer. See below for a sample PDC.                                                  |
-| \\\\Printer.3DPrint:Disconnect                                    |             | {"Status": "OK"}                                                  | This query is triggered whenever there is a PnP disconnection of the printer device. Partners can undertake any required actions, for example close any open handles to allow proper reconnect.                                                                                                                     |
-| \\\\Printer.3DPrint:Connect                                       |             | {"Status":"OK"}                                                   | This query is triggered whenever there is a PnP connection of the printer device. Partners can undertake any required actions.                                                                                                                                                                                      |
+|---------|-------------|--------|----------|
+| \\\\Printer.3DPrint:JobStatus | | Job Commenced = {"Status": "ok"} <br> Status to be used on Completion  {"Status": "Completed"} | The spooler will display any returned value in the print queue UI. This lets the device display relevant information during a print on the print queue UI. The device can return an arbitrary string here (for example "Busy" or "33% complete") and this will be displayed verbatim in the print queue job status. |
+| \\\\Printer.3DPrint:JobCancel | | {"Status": "Completed"} | The spooler will invoke this command when a user cancels a print. The partner DLL returns this value when the cancellation was successful and the handles and threads have been closed. |
+| \\\\Printer.Capabilities:Data | | XML string conforming to the PrintDeviceCapabilites (PDC) schema. | The PDC query is invoked by apps that wish to obtain more information about the printer. The data is used to describe the capabilities of the device and can include the slicer settings if the driver relies on the Microsoft slicer. See below for a sample PDC. |
+| \\\\Printer.3DPrint:Disconnect | | {"Status": "OK"} | This query is triggered whenever there is a PnP disconnection of the printer device. Partners can undertake any required actions, for example close any open handles to allow proper reconnect. |
+| \\\\Printer.3DPrint:Connect | | {"Status":"OK"} | This query is triggered whenever there is a PnP connection of the printer device. Partners can undertake any required actions. |
 
 #### Print Device Capabilities XML
 
