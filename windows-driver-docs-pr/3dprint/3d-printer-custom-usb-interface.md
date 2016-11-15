@@ -12,17 +12,20 @@ The architecture described in this topic enables support for custom USB interfac
 
 ## Architecture Decisions
 
-The **3DPrintService** windows service is used to load and invoke specific defined APIs in partner-provided DLLs during a print workflow. These APIs will allow for communication with the printer. We will be creating the following KMDF USB Filter driver packages on Windows Update which will be available for install via PnP for a supported 3D printer:
+The **3DPrintService** windows service is used to load and invoke specific defined APIs in partner-provided DLLs during a print workflow. These APIs will allow for communication with the printer. 
 
-    - KMDF USB Filter driver: the KMDF driver will be responsible for installing partner software and creating a a 3D printer device node. The KMDF driver will be published by partners on Windows Update. The 3D printer device node is installed using a partner-published v4 print driver from Windows Update.
+The KMDF USB Filter driver packages are published on Windows Update for installing via PnP for a supported 3D printer. The KMDF driver installs partner software and creates a 3D printer device node. The 3D printer device node is installed using a partner-published v4 print driver from Windows Update.
 
 ## Packaging Decisions
 
 ### Binaries and Binary Dependencies
 
 The architectue uses a driver published by the hardware manufacturer on Windows Update. This driver includes the following Microsoft-provided redistributable binaries and their dependencies:
+
     - 3dmon.dll
+
     - 3dprintservice.exe
+
     - ms3dprintusb.sys
 
 #### Kernel mode USB filter driver
@@ -51,15 +54,15 @@ Partnerimp.dll is partner's implementation of the published Microsoft interface.
 
 ### Printer usage sequence
 
-    1.  The spooler communicates with 3dmon.dll which sends commands to the 3DPrintService windows service
+- The spooler communicates with 3dmon.dll which sends commands to the 3DPrintService windows service
 
-    2.  3DPrintService.exe runs with the account credentials of NetworkService
+- 3DPrintService.exe runs with the account credentials of NetworkService
 
-    3.  The spooler, via 3dmon.dll, sends commands to 3DPrintService anytime the 3D printer is used
+- The spooler, via 3dmon.dll, sends commands to 3DPrintService anytime the 3D printer is used
 
-    4.  3DPrintService processes commands and invokes APIs at runtime on partner-provided implementation DLLs
+- 3DPrintService processes commands and invokes APIs at runtime on partner-provided implementation DLLs
 
-    5.  3DPrintService hands off the responses from partner-provided DLLss back to the spooler
+- 33DPrintService hands off the responses from partner-provided DLLss back to the spooler
 
 ## Interfaces and Interactions
 
@@ -71,11 +74,11 @@ This API is optional and can be used by the manufacturer to install custom softw
 
 ### DWORD PrintApiSupported();
 
-The API used by the third-party manufacturers to indicate the version of the 3D print service API supported. The APIs below are compatible with version 1 of the 3DPrintService.
+This API is used by the third-party manufacturers to indicate the version of the 3D print service API supported. The APIs below are compatible with version 1 of the 3DPrintService.
 
 ### HRESULT InitializePrint(LPCWSTR pPrinterName, LPCWSTR pPortName, DWORD dwJobId, LPVOID\* ppPartnerData)
 
-The API invoked prior to a print event starting to initialize the printer. The printer can save job specific state in the ppPartnerData parameter. This call is analogous to a StartDocPort invocation.
+This API is invoked prior to a print event starting to initialize the printer. The printer can save job specific state in the ppPartnerData parameter. This call is analogous to a StartDocPort invocation.
 
 > **jobId** - job id used to track the job
 >
@@ -87,7 +90,7 @@ The API invoked prior to a print event starting to initialize the printer. The p
 
 ### HRESULT PrintFile(\[in\] DWORD jobId, \[in\] LPWSTR portName, \[in\] LPWSTR printerName, \[in\] LPWSTR pathToRenderedFile,\[in\]LPVOID\* ppPartnerData);
 
-The API used by third-party manufacturers to print the document on their printer.
+This API is used by third-party manufacturers to print the document on their printer.
 
 > **jobId** - job id used to track the job
 >
@@ -99,18 +102,24 @@ The API used by third-party manufacturers to print the document on their printer
 >
 > **ppPartnerData** - pointer to pointer that isused to store partner specific data setup during the InitializePrint API call.
 
-**printerName** can be obtained from the registry using the port name. Third-party manufacturers maynot be able to use the port name to communicate with their device. The printer name is unique on a Windows machine and their software will be capable of identifying which printer to print the job on. All printers active on a machine can be found at
+> **printerName** can be obtained from the registry using the port name. Third-party manufacturers maynot be able to use the port name to communicate with their device. The printer name is unique on a Windows machine and their software will be capable of identifying which printer to print the job on. All printers active on a machine can be found at
 
-    **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers**
+```
+    HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Print\\Printers
+```
 
 ![3d printer registry](images/3d-printer-registry.png)
 
 ### HRESULT Query(\_In\_ LPCWSTR command, \_In\_ LPCWSTR commandData, \_Out\_ LPWSTR resultBuffer, \_Out\_ resultBufferSize, , \_In\_ LPVOID\* ppPartnerData)
 
-> **command** - string command sent as a query                    
-> **commandData** -  command arguments (optional)
-> **resultBuffer** - result of invocation of query argument
+> **command** - string command sent as a query
+>
+> **commandData** - command arguments (optional)
+>
+> **resultBuffer** - result of invocation of query arguments>
+>
 > **resultBufferSize** - size of the result buffer string
+>
 > **ppPartnerData** - pointer to pointer for the current partner DLL instance
 
 The 3Dprint service invokes the partner DLL to get the size of the buffer to allocate for the command. 
@@ -124,15 +133,15 @@ This API is used to communicate with the printer to obtain information on the de
 The commands below must be supported by the manufacturer:
 
 | Command | CommandData | Output | Comments |
+
 |---------|-------------|--------|--------- |
-| Job Commenced = {"Status": "ok"} | Status to be used on Completion  {"Status": "Completed"} | The spooler will display any returned value in the print queue UI. This lets the device display relevant information during a print on the print queue UI. The device can return an arbitrary string here (for example "Busy" or "33% complete") and this will be displayed verbatim in the print queue job status. |
+| Job Commenced = {"Status": "ok"} |    | Status to be used on Completion  {"Status": "Completed"} | The spooler will display any returned value in the print queue UI. This lets the device display relevant information during a print on the print queue UI. The device can return an arbitrary string here (for example "Busy" or "33% complete") and this will be displayed verbatim in the print queue job status. |
 | [\\\\Printer.3DPrint:JobCancel|             | {"Status": "Completed"}                                           | The spooler will invoke this command when a user cancels a print. The partner DLL returns this value when the cancellation was successful and the handles and threads have been closed.                                                                                                                             |
 | \\\\Printer.Capabilities:Data                                     |             | XML string conforming to the PrintDeviceCapabilites (PDC) schema. | The PDC query is invoked by apps that wish to obtain more information about the printer. The data is used to describe the capabilities of the device and can include the slicer settings if the driver relies on the Microsoft slicer. See below for a sample PDC.                                                  |
 | \\\\Printer.3DPrint:Disconnect                                    |             | {"Status": "OK"}                                                  | This query is triggered whenever there is a PnP disconnection of the printer device. Partners can undertake any required actions, for example close any open handles to allow proper reconnect.                                                                                                                     |
 | \\\\Printer.3DPrint:Connect                                       |             | {"Status":"OK"}                                                   | This query is triggered whenever there is a PnP connection of the printer device. Partners can undertake any required actions.                                                                                                                                                                                      |
 
 #### Print Device Capabilities XML
-
 
 The following print device capabilities XML can be used as an example:
 
@@ -201,13 +210,16 @@ The following print device capabilities XML can be used as an example:
 </PrintDeviceCapabilities>
 ```
 
-For 3D printers that do not have on-board display and buttons to allow the user to interact with the device at the beginning of the print, we advocate returning a PDC xml with a suitable user prompt message set as shown above in "psdk3dx:userPrompt". This is to prevent starting a new print on top of an existing one. The custom status message *&lt;psk3dx:customStatus&gt;* is used to display any message during slicing.
+For 3D printers that do not have on-board display and buttons to allow the user to interact with the device at the beginning of the print, we advocate returning a PDC xml with a suitable user prompt message set as shown above in **psdk3dx:userPrompt**. This is to prevent starting a new print on top of an existing one. The custom status message *&lt;psk3dx:customStatus&gt;* is used to display any message during slicing.
 
 ### HRESULT Cleanup(LPCWSTR pPrinterName, LPCWSTR pPortName, DWORD dwJobId, LPVOID\* ppPartnerData)
 
 > **dwJobId** - job id used to track the job in the spooler
+>
 > **pPortName** - portname for the 3D printer
+>
 > **pPrinterName** - name of the printer this print job is being sent to
+>
 > **ppPartnerData** - pointer to pointer that holds the job specific data setup during an InitializePrint API invocation
 
 Cleanup is invoked on successful completion of a print job, or on completion of a cancel query on a print job. It provides an opportunity for the partner DLL to cleanup resources that were initialized for this print.
