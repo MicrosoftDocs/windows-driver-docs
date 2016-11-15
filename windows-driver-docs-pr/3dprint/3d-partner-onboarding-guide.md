@@ -1,22 +1,22 @@
 ---
 title: 3D print partner onboarding guide
 author: windows-driver-content
-description: TBD
+description: Describes how to implement 3D printer drivers that are then published on Windows Update.
 ---
 
 # 3D print partner onboarding guide
 
-Joining the Microsoft 3D print ecosystem enables 3D printer manufacturers to offer a great Plug-and-Play experience on Windows 10. This strategy removes the potential for problems encountered by users when locating and manually installing drivers. Additionally, Windows Update ensures that the users are always using the latest driver for their device and are getting the best experience available.
+Joining the Microsoft 3D print ecosystem enables 3D printer manufacturers to offer a great plug-and-play experience on Windows 10. This strategy removes the potential for problems encountered by users when locating and manually installing drivers. Additionally, Windows Update ensures that the users are always using the latest driver for their device and are getting the best experience available.
 
 ## 3D print driver overview
 
-A Plug-and-Play 3D printer on Windows 10 is implemented through a pair of drivers published on Windows Update:
+A plug-and-play 3D printer on Windows 10 is implemented through a pair of drivers published on Windows Update:
 
 **Upper driver (Render filter)**
 
--   Implements the **slicer**: The driver takes [3MF](http://www.3mf.io) as input and produces G-Code or other similar machine level data
+-   Implements the slicer. The driver takes [3MF](http://www.3mf.io) as input and produces G-Code or other similar machine level data
 
--   Creates the **print queue**: The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/en-us/windows/hardware/3d-software-partners)
+-   Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/en-us/windows/hardware/3d-software-partners).
 
 **Lower driver (USB driver)**
 
@@ -53,9 +53,9 @@ A Plug-and-Play 3D printer on Windows 10 is implemented through a pair of driver
 
 3. Implement the USB driver
 
-    - A manufacturer can use the Microsoft USB driver for its 3D printer by creating a partner DLL. For more information, see [3D printer custom USB interface support](3d-printer-custom-usb-interface.md).
+    - A manufacturer can use the Microsoft USB driver for their 3D printer by creating a partner DLL. For more information, see [3D printer custom USB interface support](3d-printer-custom-usb-interface.md).
 
-    - If the printer is using the Microsoft Slicer, the Hardware ID that it creates has to be Enum\\3DPrint\\MS3DPrint
+    - If the printer is using the Microsoft Slicer, the Hardware ID that it creates must be **Enum\\3DPrint\\MS3DPrint**
 
 **Note** If the the printer is using a custom slicer, continue with steps 4-7
 
@@ -67,15 +67,15 @@ A Plug-and-Play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Modify the cpp file to include:
 
-        -   3MF Parser (use the Windows 10, version 1607 3MF API)
+        -   3MF Parser (use the Windows 10 version 1607 3MF API)
 
         -   Write GCode
 
 6. Adding the printer node
 
-    - Open the inf in Fabrikam Print driver.
+    - Open the inf in Fabrikam Print driver
 
-    - Replace the entries hardware IDs with the CONTOSO ones.
+    - Replace the entries hardware IDs with the CONTOSO entries
 
         ```
         %DeviceName%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam1
@@ -84,12 +84,12 @@ A Plug-and-Play 3D printer on Windows 10 is implemented through a pair of driver
 
         DeviceName="CONTOSO FABRIKAM 1"
 
-        DeviceNamePlus=”CONTOSO FABRIKAM 2”
+        DeviceNamePlus="CONTOSO FABRIKAM 2"
         ```
 
 7. Publish and distribute the driver
 
-    - Follow the steps to publish your driver
+    - Follow the steps in these topics to publish your driver:
         
         - [Purchase an extended validation (EV) code signing certificate](https://msdn.microsoft.com/en-us/library/windows/hardware/hh801887(v=vs.85).aspx)
 
