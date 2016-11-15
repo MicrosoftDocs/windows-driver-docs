@@ -14,7 +14,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 **Upper driver (Render filter)**
 
--   Implements the slicer. The driver takes [3MF](http://www.3mf.io) as input and produces G-Code or other similar machine level data
+-   Implements the slicer. The driver takes [3MF](http://www.3mf.io) as input and produces G-Code or other similar machine level data.
 
 -   Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/en-us/windows/hardware/3d-software-partners).
 
@@ -67,15 +67,15 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Modify the cpp file to include:
 
-        -   3MF Parser (use the Windows 10 version 1607 3MF API)
+        -   3MF parser (use the Windows 10 version 1607 3MF API)
 
-        -   Write GCode
+        -   Write G-Code
 
 6. Adding the printer node
 
     - Open the inf in Fabrikam Print driver
 
-    - Replace the entries hardware IDs with the CONTOSO entries
+    - Replace the entries hardware IDs:
 
         ```
         %DeviceName%=FabrikamPrintDriverV4\_Install,3DPRINTER\\Fabrikam1
