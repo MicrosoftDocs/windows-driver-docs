@@ -15,10 +15,13 @@ This section contains information about Microsoft 3D printer drivers.
 
 ## In this section
 
+[3D print partner onboarding guide](3d-partner-onboarding-guide.md)
 
 [Microsoft Standard Driver for 3D Printers](microsoft-standard-driver-for-3d-printers-.md)
 
 [MS3DPrint Standard G-Code driver](ms3dprint-standard-g-code-driver.md)
+
+[3D printer custom USB interface support](3d-printer-custom-usb-interface.md)
 
 [3D printing sample WSD app](3d-printing-sample-wsd-app.md)
 
