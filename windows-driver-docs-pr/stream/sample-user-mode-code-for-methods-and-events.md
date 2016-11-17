@@ -34,11 +34,11 @@ Method.Flags = KSMETHOD_TYPE_SEND;
 
 HRESULT hr = 
 pIKsControl -> KsMethod (
-    &amp;Method,
+    &Method,
         sizeof (Method),
     MethodBuffer,
-    &amp;MethodBufferSize,
-    &amp;BytesReturned);
+    &MethodBufferSize,
+    &BytesReturned);
 ```
 
 In the automation tables you provide in kernel mode, you can use the **Flags** member of [**KSMETHOD\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff563420) to specify whether the buffer is read/write and whether it should be mapped or copied.
@@ -64,11 +64,11 @@ ULONG BytesReturned;
 
 HRESULT hr =
 pIKsControl -> KsEvent (
-    &amp;Event,
+    &Event,
         sizeof (Event),
-    &amp;EventData,
+    &EventData,
         sizeof (EventData),
-    &amp;BytesReturned);
+    &BytesReturned);
 ```
 
 In the above example, notification continues until the minidriver disables the event. To disable the event. call [**IKsControl::KsEvent**](https://msdn.microsoft.com/library/windows/hardware/ff559772). If you want to be notified only the first time this event happens, set KSEVENT\_TYPE\_ONESHOT in **Event.Flags**.

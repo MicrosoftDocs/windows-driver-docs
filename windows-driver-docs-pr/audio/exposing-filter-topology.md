@@ -44,7 +44,7 @@ MiniportPins[] =
             PinDataRangePointersBridge,                 // DataRanges
             KSPIN_DATAFLOW_IN,                          // DataFlow
             KSPIN_COMMUNICATION_NONE,                   // Communication
-            &amp;KSNODETYPE_LEGACY_AUDIO_CONNECTOR,         // Category
+            &KSNODETYPE_LEGACY_AUDIO_CONNECTOR,         // Category
             NULL,                                       // Name
             0                                           // Reserved
         }
@@ -61,8 +61,8 @@ MiniportPins[] =
             PinDataRangePointersBridge,                 // DataRanges
             KSPIN_DATAFLOW_OUT,                         // DataFlow
             KSPIN_COMMUNICATION_NONE,                   // Communication
-            &amp;KSNODETYPE_SPEAKER,                        // Category
-            &amp;KSAUDFNAME_VOLUME_CONTROL,                 // Name (This name shows up as the 
+            &KSNODETYPE_SPEAKER,                        // Category
+            &KSAUDFNAME_VOLUME_CONTROL,                 // Name (This name shows up as the 
                                                         // playback panel name in SndVol32)
             0                                           // Reserved
         }
@@ -75,9 +75,9 @@ PCNODE_DESCRIPTOR TopologyNodes[] =
 {
     {   // KSNODE_WAVEOUT_VOLUME
         0,                      // Flags
-        &amp;AutomationVolume,      // AutomationTable
-        &amp;KSNODETYPE_VOLUME,     // Type
-        &amp;KSAUDFNAME_WAVE_VOLUME // Name
+        &AutomationVolume,      // AutomationTable
+        &KSNODETYPE_VOLUME,     // Type
+        &KSAUDFNAME_WAVE_VOLUME // Name
     }
 };
 
@@ -149,7 +149,7 @@ static KSDATARANGE PinDataRangesBridge[] =
 
 static PKSDATARANGE PinDataRangePointersBridge[] =
 {
-    &amp;PinDataRangesBridge[0]
+    &PinDataRangesBridge[0]
 };
 ```
 

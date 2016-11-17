@@ -64,10 +64,10 @@ For example, imagine a joystick device designed for use on a platform with a com
 Because these scenarios are not directly recognized by DirectInput (or JoyHID) they are not very useful to games. To get them recognized as the X and Y axes by DirectInput, the following registry entries could be added:
 
 ```
-[DIRECT_INPUT_TYPES\ VID_vvvv&amp;PID_pppp)\Axes\0]
+[DIRECT_INPUT_TYPES\ VID_vvvv&PID_pppp)\Axes\0]
      Binary Attributes = 00 00 00 00 05 00 24 00
 
-[DIRECT_INPUT_TYPES\ VID_vvvv&amp;PID_pppp)\Axes\1]
+[DIRECT_INPUT_TYPES\ VID_vvvv&PID_pppp)\Axes\1]
      Binary Attributes = 00 00 00 00 05 00 25 00
 
 Where "DIRECT_INPUT_TYPES" is a token for the following root key:

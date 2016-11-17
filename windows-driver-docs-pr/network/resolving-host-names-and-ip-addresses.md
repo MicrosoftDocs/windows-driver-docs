@@ -66,14 +66,14 @@ KernelNameResolutionSample(
     // Initialize UNICODE_STRING structures for NodeName and ServiceName 
     //
  
-    RtlInitUnicodeString(&amp;uniNodeName, NodeName);
+    RtlInitUnicodeString(&uniNodeName, NodeName);
 
     if(ServiceName == NULL) {
         uniServiceNamePtr = NULL;
     }
     else {
-        RtlInitUnicodeString(&amp;uniServiceName, ServiceName);
-        uniServiceNamePtr = &amp;uniServiceName;
+        RtlInitUnicodeString(&uniServiceName, ServiceName);
+        uniServiceNamePtr = &uniServiceName;
     }
 
     //
@@ -81,7 +81,7 @@ KernelNameResolutionSample(
     // WskGetAddressInfo request to be completed. 
     //
  
-    KeInitializeEvent(&amp;completionEvent, SynchronizationEvent, FALSE);
+    KeInitializeEvent(&completionEvent, SynchronizationEvent, FALSE);
 
     //
     // Allocate an IRP for the WskGetAddressInfo request, and set the 
@@ -95,7 +95,7 @@ KernelNameResolutionSample(
     }        
 
     IoSetCompletionRoutine(irp, SyncIrpCompletionRoutine, 
-  &amp;completionEvent, TRUE, TRUE, TRUE);
+  &completionEvent, TRUE, TRUE, TRUE);
 
     //
     // Make the WskGetAddressInfo request.
@@ -103,12 +103,12 @@ KernelNameResolutionSample(
  
     WskProviderNpi->Dispatch->WskGetAddressInfo (
         WskProviderNpi->Client,
-        &amp;uniNodeName,
+        &uniNodeName,
         uniServiceNamePtr,
         NS_ALL,
         NULL, // Provider
         Hints,
-        &amp;results, 
+        &results, 
         NULL, // OwningProcess
         NULL, // OwningThread
         irp);
@@ -120,7 +120,7 @@ KernelNameResolutionSample(
     // completion.
     //
  
-    KeWaitForSingleObject(&amp;completionEvent, Executive, 
+    KeWaitForSingleObject(&completionEvent, Executive, 
                         KernelMode, FALSE, NULL);
 
     status = irp->IoStatus.Status;

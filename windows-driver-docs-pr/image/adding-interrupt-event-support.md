@@ -107,21 +107,21 @@ HRESULT _stdcall CWIADevice::drvGetCapabilities(
   // Command #1
   m_Capabilities[0].wszDescription =   L"Synchronize Command";
   m_Capabilities[0].wszName = L"Synchronize";
-  m_Capabilities[0].guid    = (GUID*)&amp;WIA_CMD_SYNCHRONIZE;
+  m_Capabilities[0].guid    = (GUID*)&WIA_CMD_SYNCHRONIZE;
   m_Capabilities[0].lFlags = 0;
   m_Capabilities[0].wszIcon = WIA_ICON_SYNCHRONIZE;
 
   // Event #1
   m_Capabilities[1].wszDescription = L"Scan Button";
   m_Capabilities[1].wszName = L"Scan";
-  m_Capabilities[1].guid    = (GUID*)&amp;WIA_EVENT_SCAN_IMAGE;
+  m_Capabilities[1].guid    = (GUID*)&WIA_EVENT_SCAN_IMAGE;
   m_Capabilities[1].lFlags = WIA_NOTIFICATION_EVENT | WIA_ACTION_EVENT;
   m_Capabilities[1].wszIcon = WIA_ICON_SCAN_BUTTON_PRESS;
 
   // Event #2
   m_Capabilities[2].wszDescription = L"Copy Button";
   m_Capabilities[2].wszName = L"Copy";
-  m_Capabilities[2].guid    = (GUID*)&amp;WIA_EVENT_SCAN_PRINT_IMAGE;
+  m_Capabilities[2].guid    = (GUID*)&WIA_EVENT_SCAN_PRINT_IMAGE;
   m_Capabilities[2].lFlags = WIA_NOTIFICATION_EVENT | WIA_ACTION_EVENT;
   m_Capabilities[2].wszIcon = WIA_ICON_SCAN_BUTTON_PRESS;
 
@@ -140,7 +140,7 @@ HRESULT _stdcall CWIADevice::drvGetCapabilities(
     //
 
     *pcelt          = lNumberOfCommands;
-    *ppCapabilities = &amp;m_Capabilities[0];
+    *ppCapabilities = &m_Capabilities[0];
     break;
   case WIA_DEVICE_EVENTS:
 
@@ -149,7 +149,7 @@ HRESULT _stdcall CWIADevice::drvGetCapabilities(
     //
 
     *pcelt          = lNumberOfEvents;
-    *ppCapabilities = &amp;m_Capabilities[1]; // start at the first event in the ARRAY
+    *ppCapabilities = &m_Capabilities[1]; // start at the first event in the ARRAY
     break;
   case (WIA_DEVICE_COMMANDS | WIA_DEVICE_EVENTS):
 
@@ -158,7 +158,7 @@ HRESULT _stdcall CWIADevice::drvGetCapabilities(
     //
 
      *pcelt          = (lNumberOfCommands + lNumberOfEvents);
-     *ppCapabilities = &amp;m_Capabilities[0];
+     *ppCapabilities = &m_Capabilities[0];
      break;
   default:
 
@@ -184,7 +184,7 @@ STDMETHODIMP CWIADevice::SetNotificationHandle(HANDLE hEvent)
 {
   HRESULT hr = S_OK;
 
-  if (hEvent &amp;&amp; (hEvent != INVALID_HANDLE_VALUE)) {
+  if (hEvent && (hEvent != INVALID_HANDLE_VALUE)) {
 
     //
     // A valid handle indicates that we are asked to start our "wait"
@@ -201,7 +201,7 @@ STDMETHODIMP CWIADevice::SetNotificationHandle(HANDLE hEvent)
     // clear EventOverlapped structure
     //
 
-    memset(&amp;m_EventOverlapped,0,sizeof(m_EventOverlapped));
+    memset(&m_EventOverlapped,0,sizeof(m_EventOverlapped));
 
     //
     // fill overlapped hEvent member with the event passed in by 
@@ -227,10 +227,10 @@ STDMETHODIMP CWIADevice::SetNotificationHandle(HANDLE hEvent)
                                     IOCTL_WAIT_ON_DEVICE_EVENT,
                                     NULL,
                                     0,
-                                    &amp;m_EventData,
+                                    &m_EventData,
                                     sizeof(m_EventData),
-                                    &amp;dwError,
-                                    &amp;m_EventOverlapped );
+                                    &dwError,
+                                    &m_EventOverlapped );
 
     if (bResult) {
         hr = S_OK;
@@ -295,7 +295,7 @@ STDMETHODIMP CWIADevice::GetNotificationData( LPSTINOTIFY pBuffer )
  
   GUID guidEvent = GUID_NULL;
   DWORD dwBytesRet = 0;
-  BOOL bResult = GetOverlappedResult(m_hDeviceDataHandle, &amp;m_EventOverlapped, &amp;dwBytesRet, FALSE );
+  BOOL bResult = GetOverlappedResult(m_hDeviceDataHandle, &m_EventOverlapped, &dwBytesRet, FALSE );
   if (bResult) {
     //
     // read the m_EventData buffer to determine the proper event.

@@ -32,9 +32,9 @@ The following are examples of valid comments:
 *Macros: HP4L
 {
     *% These macros define command prefixes for the paper size feature.
-    LetterCmdPrefix: "<1B>&amp;l2a8c1E<1B>*p0x0Y"  *% Prefix for letter option.
-    A4CmdPrefix: "<1B>&amp;l26a8c1E<1B>*p0x0Y"     *% Prefix for A4 option.
-    Env10CmdPrefix: "<1B>&amp;l81a8c1E<1B>*p0x0Y"  *% Prefix for Env10 option.
+    LetterCmdPrefix: "<1B>&l2a8c1E<1B>*p0x0Y"  *% Prefix for letter option.
+    A4CmdPrefix: "<1B>&l26a8c1E<1B>*p0x0Y"     *% Prefix for A4 option.
+    Env10CmdPrefix: "<1B>&l81a8c1E<1B>*p0x0Y"  *% Prefix for Env10 option.
 }
 ```
 
@@ -68,7 +68,7 @@ In the following example, the GPD parser ignores the GPD entries describing the 
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.7
-            *Cmd: "<1B>&amp;l0O"
+            *Cmd: "<1B>&l0O"
         }
     }
 *IgnoreBlock
@@ -79,7 +79,7 @@ In the following example, the GPD parser ignores the GPD entries describing the 
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.7
-            *Cmd: "<1B>&amp;l1O"
+            *Cmd: "<1B>&l1O"
         }
     }
 }

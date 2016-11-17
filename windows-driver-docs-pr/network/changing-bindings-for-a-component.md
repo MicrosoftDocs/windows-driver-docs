@@ -28,32 +28,32 @@ HRESULT CSample::NotifyBindingPath(DWORD dwChangeFlag,
     HRESULT hr = S_OK;
     // Retrieve bindings for the notify object&#39;s component (m_pncc)
     hr = m_pncc->QueryInterface(IID_INetCfgComponentBindings, 
-                                (LPVOID*)&amp;pncbind);
+                                (LPVOID*)&pncbind);
     // Determine if notification is about disabling a binding path.
-    if (SUCCEEDED(hr) &amp;&amp; (NCN_DISABLE &amp; dwChangeFlag)) {
+    if (SUCCEEDED(hr) && (NCN_DISABLE & dwChangeFlag)) {
         // Retrieve enumerator for binding paths for the component.
-        hr = pncbind->EnumBindingPaths(dwFlags, &amp;penumncbp);
+        hr = pncbind->EnumBindingPaths(dwFlags, &penumncbp);
         // Reset the sequence and retrieve a binding path.
         hr = penumncbp->Reset();
-        hr = penumncbp->Next(celt, &amp;pncbp2, NULL);
+        hr = penumncbp->Next(celt, &pncbp2, NULL);
         // Ensure the binding path is different.
         do {
             if (pncbp1 != pncbp2) break;
    hr = penumncbp->Skip(celt); // skip one element
-            hr = penumncbp->Next(celt, &amp;pncbp2, NULL);
+            hr = penumncbp->Next(celt, &pncbp2, NULL);
         } while (SUCCEEDED(hr));
         if (SUCCEEDED(hr) {
             // Retrieve enumerator for interfaces of the binding path.
-            hr = pncbp2->EnumBindingInterfaces(&amp;penumncbi);
+            hr = pncbp2->EnumBindingInterfaces(&penumncbi);
             // Retrieve a binding interface for the binding path.
-            hr = penumncbi->Next(celt, &amp;pncbi, NULL);
+            hr = penumncbi->Next(celt, &pncbi, NULL);
             // Retrieve the lower network component.
-            hr = pncbi->GetLowerComponent(&amp;pnccLow);
+            hr = pncbi->GetLowerComponent(&pnccLow);
             // If the component is a physical network card and binding 
             // is currently disabled, enable binding.
             DWORD dwcc;
-            hr = pnccLow->GetCharacteristics(&amp;dwcc);
-            if (SUCCEEDED(hr) &amp;&amp; (dwcc &amp; NCF_PHYSICAL)) {
+            hr = pnccLow->GetCharacteristics(&dwcc);
+            if (SUCCEEDED(hr) && (dwcc & NCF_PHYSICAL)) {
                 hr = pncbp2->IsEnabled(); // S_FALSE for disabled
                 if (hr == S_FALSE)  hr = pncbp2->Enable(TRUE);
             }

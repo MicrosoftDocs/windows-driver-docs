@@ -35,19 +35,19 @@ The following code example demonstrates the special case handling for FILE\_SUPE
 ULONG NewAccess = Supersede ? DELETE : FILE_WRITE_DATA;
 ACCESS_MASK AddedAccess = 0;
 PACCESS_MASK DesiredAccess = 
-    &amp;IrpSp->Paramters.Create.SecurityContext->DesiredAccess;
+    &IrpSp->Paramters.Create.SecurityContext->DesiredAccess;
 
 //
 // If the caller does not have restore privilege, they must have write
 // access to the EA and attributes for overwrite or supersede.
 //
-if (0 == (AccessState->Flags &amp; TOKEN_HAS_RESTORE_PRIVILEGE)) {
+if (0 == (AccessState->Flags & TOKEN_HAS_RESTORE_PRIVILEGE)) {
     *DesiredAccess |= FILE_WRITE_EA | FILE_WRITE_ATTRIBUTES;
 
     //
     // Does the caller already have this access?
     //
-    if (AccessState->PreviouslyGrantedAccess &amp; NewAccess) {
+    if (AccessState->PreviouslyGrantedAccess & NewAccess) {
 
         //
         // No - they need this as well

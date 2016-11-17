@@ -139,7 +139,7 @@ case MSFC_HBAPortMethodsGuidIndex:
               sizeof(GetDiscoveredPortAttributes_IN))
       BOOLEAN bOutputBigEnough = (OutBufferSize >= 
               sizeof(GetDiscoveredPortAttributes_OUT))
-      if (bInputBigEnough &amp;&amp; bOutputBigEngough) {
+      if (bInputBigEnough && bOutputBigEngough) {
         PGetDiscoveredPortAttributes_IN In;
         PGetDiscoveredPortAttributes_OUT Out;
 

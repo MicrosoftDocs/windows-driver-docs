@@ -30,7 +30,7 @@ CFactoryTemplate g_Templates[] =
 {
     {
         L"My Property Page",
-        &amp;CLSID_MyPropPage),
+        &CLSID_MyPropPage),
         CMyPropPage::CreateInstance,
         NULL,
         NULL

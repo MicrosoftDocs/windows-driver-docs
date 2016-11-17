@@ -46,7 +46,7 @@ NTSTATUS
           BindingContext->WskClient,
           WSK_TDI_DEVICENAME_MAPPING,
           sizeof(WSK_TDI_MAP_INFO),
-          &amp;TdiMapInfo,
+          &TdiMapInfo,
           0,
           NULL,
           NULL,

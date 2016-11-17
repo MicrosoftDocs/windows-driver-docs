@@ -119,7 +119,7 @@ The following table summarizes the relationship between the **\*QOS** and **\*Pr
 <tr class="odd">
 <td align="left">0 or not present</td>
 <td align="left"><p>0</p></td>
-<td align="left"><p>Packet priority &amp; VLAN disabled</p></td>
+<td align="left"><p>Packet priority & VLAN disabled</p></td>
 </tr>
 <tr class="even">
 <td align="left">0 or not present</td>

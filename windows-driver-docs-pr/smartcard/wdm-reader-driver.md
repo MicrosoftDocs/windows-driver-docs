@@ -72,7 +72,7 @@ DriverDeviceControl(
     PDEVICE_EXTENSION deviceExtension = DeviceObject -&gt; DeviceExtension;
 
     return SmartcardDeviceControl(
-        &amp;(deviceExtension-&gt;SmartcardExtension),
+        &(deviceExtension-&gt;SmartcardExtension),
         Irp
         );
 }</code></pre>

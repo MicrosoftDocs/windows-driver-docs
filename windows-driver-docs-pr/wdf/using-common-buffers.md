@@ -35,7 +35,7 @@ DevExt->WriteCommonBufferSize =
 status = WdfCommonBufferCreate( DevExt->DmaEnabler,
                                 DevExt->WriteCommonBufferSize,
                                 WDF_NO_OBJECT_ATTRIBUTES, 
-                                &amp;DevExt->WriteCommonBuffer );
+                                &DevExt->WriteCommonBuffer );
 if (!NT_SUCCESS(status)) {
     . . . //Error-handling code omitted 
     }

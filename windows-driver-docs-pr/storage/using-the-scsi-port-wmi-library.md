@@ -36,12 +36,12 @@ The **GuidList** member of the SCSI\_WMILIB\_CONTEXT structure must point to an 
 SCSIWMIGUIDREGINFO GuidList[] = 
 {
   {
-    &amp;HBAStatisticsGUID,  // Guid
+    &HBAStatisticsGUID,  // Guid
     3,  // number of instances of this class
     0  // flags
   },
   {
-    &amp;HBAAttributesGUID, // guid
+    &HBAAttributesGUID, // guid
     1,  // number of instances of this class
     0  // flags
   }

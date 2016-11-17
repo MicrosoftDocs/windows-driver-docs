@@ -94,7 +94,7 @@ EvtDriverDeviceAdd(
 
                DeviceContext->Interrupt = NULL;
                DeviceContext->PhysicalDeviceObject = WdfDeviceWdmGetPhysicalDevice(Device);
-               KeInitializeSpinLock(&amp;DeviceContext->SpinLock);
+               KeInitializeSpinLock(&DeviceContext->SpinLock);
 
                IoInitializeDpcRequest(DeviceContext->PhysicalDeviceObject, YourInterruptDpc);
 }
@@ -115,18 +115,18 @@ EvtDevicePrepareHardware(
                               if (descriptor->Type == CmResourceTypeInterrupt)
                               {
                                              IO_CONNECT_INTERRUPT_PARAMETERS params;
-                                             RtlZeroMemory(&amp;params, sizeof(params));
+                                             RtlZeroMemory(&params, sizeof(params));
 
                                              params.Version = CONNECT_FULLY_SPECIFIED;
                                              params.FullySpecified.PhysicalDeviceObject = DeviceContext->PhysicalDeviceObject;
-                                             params.FullySpecified.InterruptObject = &amp;DeviceContext->Interrupt;
+                                             params.FullySpecified.InterruptObject = &DeviceContext->Interrupt;
                                              params.FullySpecified.ServiceRoutine = YourInterruptIsr;
-                                             params.FullySpecified.ServiceContext = (PVOID)&amp;DeviceContext->InterruptContext;
-                                             params.FullySpecified.SpinLock = &amp;DeviceContext->SpinLock;
+                                             params.FullySpecified.ServiceContext = (PVOID)&DeviceContext->InterruptContext;
+                                             params.FullySpecified.SpinLock = &DeviceContext->SpinLock;
                                              params.FullySpecified.Vector = descriptor->u.Interrupt.Vector;
                                              params.FullySpecified.Irql = (KIRQL)descriptor->u.Interrupt.Level;
                                              params.FullySpecified.SynchronizeIrql = (KIRQL)descriptor->u.Interrupt.Level;
-                                             params.FullySpecified.InterruptMode = (descriptor->Flags &amp; CM_RESOURCE_INTERRUPT_LATCHED) ? Latched : LevelSensitive;
+                                             params.FullySpecified.InterruptMode = (descriptor->Flags & CM_RESOURCE_INTERRUPT_LATCHED) ? Latched : LevelSensitive;
                                              params.FullySpecified.ProcessorEnableMask = descriptor->u.Interrupt.Affinity;
                                              params.FullySpecified.ShareVector = descriptor->ShareDisposition;
 
@@ -136,7 +136,7 @@ EvtDevicePrepareHardware(
                                              DeviceContext->InterruptContext.State = 0;
                                              DeviceContext->InterruptContext.DeviceContext = DeviceContext;
 
-                                             return IoConnectInterruptEx(&amp;params);
+                                             return IoConnectInterruptEx(&params);
                               }
                }
 
@@ -158,7 +158,7 @@ EvtDeviceReleaseHardware(
                               params.Version = CONNECT_FULLY_SPECIFIED;
                               params.ConnectionContext.InterruptObject = DeviceContext->Interrupt;
 
-                              IoDisconnectInterruptEx(&amp;params);
+                              IoDisconnectInterruptEx(&params);
                }
 
                return STATUS_SUCCESS;

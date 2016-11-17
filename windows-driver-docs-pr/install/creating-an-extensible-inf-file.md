@@ -60,7 +60,7 @@ Here are the entries you need to define an INF as an extension INF.
 
     ```
     [DeviceExtensions.NTamd64]
-    %Device.ExtensionDesc% = DeviceExtension_Install, USB\VID_XXXX&amp;PID_XXXX&amp;REV_XXXX
+    %Device.ExtensionDesc% = DeviceExtension_Install, USB\VID_XXXX&PID_XXXX&REV_XXXX
     ```
 
 5.  Optionally, provide a **\[TargetComputers\]** section if you want to constrain which computers this INF can be installed on. You might do this if you are using extension INFs with less specific hardware IDs or compatible IDs that are applicable to a large number of devices.
@@ -85,7 +85,7 @@ CatalogFile = delta.cat
 %CONTOSO% = DeviceExtensions,NTamd64
 
 [DeviceExtensions.NTamd64]
-%Device.ExtensionDesc% = DeviceExtension_Install, USB\VID_XXXX&amp;PID_XXXX&amp;REV_XXXX
+%Device.ExtensionDesc% = DeviceExtension_Install, USB\VID_XXXX&PID_XXXX&REV_XXXX
 
 [DeviceExtension_Install]
 ; No changes
@@ -122,7 +122,7 @@ CatalogFile = delta.cat
 %CONTOSO% = DeviceExtensions,NTx86
 
 [DeviceExtensions.NTx86]
-%Device.ExtensionDesc% = DeviceExtension_Install,USB\VID_XXXX&amp;PID_XXXX&amp;REV_XXXX
+%Device.ExtensionDesc% = DeviceExtension_Install,USB\VID_XXXX&PID_XXXX&REV_XXXX
 
 [DeviceExtension_Install]
 CopyFiles = Filter_CopyFiles

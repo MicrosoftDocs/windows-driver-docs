@@ -54,7 +54,7 @@ MSMfg    = "Microsoft"
 *pnp0f0c.DeviceDesc   = "Standard Serial Mouse"
 *pnp0f0d.DeviceDesc   = "InPort Adapter Mouse"
 ; ... 
-HID\Vid_045E&amp;Pid_0009.DeviceDesc = "Microsoft USB Intellimouse"
+HID\Vid_045E&Pid_0009.DeviceDesc = "Microsoft USB Intellimouse"
 ; ... 
 ```
 

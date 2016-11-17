@@ -55,10 +55,10 @@ After opening the installed INF file, call **SetupFindFirstLine** to retrieve th
 // If we retrieve the value (i.e., field 1) of this line, we&#39;ll get the
 // full path where the INF originally came from.
 //
-if(!SetupFindFirstLine(hInf, L"ToastCoInfo", L"OriginalInfSourcePath", &amp;InfContext)) {
+if(!SetupFindFirstLine(hInf, L"ToastCoInfo", L"OriginalInfSourcePath", &InfContext)) {
    goto clean0;
 }
-if(!SetupGetStringField(&amp;InfContext, 1, *MediaRootDirectory, MAX_PATH, &amp;PathLength) ||
+if(!SetupGetStringField(&InfContext, 1, *MediaRootDirectory, MAX_PATH, &PathLength) ||
   (PathLength <= 1)) {
   goto clean0;
 ```

@@ -50,9 +50,9 @@ DrvPrinterEvent(
   switch (Event)
   {
     case PRINTER_EVENT_INITIALIZE:
-      if (OpenPrinter(pPrinterName, &amp;hPrinter, &amp;PrinterDef))
+      if (OpenPrinter(pPrinterName, &hPrinter, &PrinterDef))
       {
-        if ( !GetPrinter( hPrinter, 2, (LPBYTE) pInfo, 0, &amp;cbNeeded ) &amp;&amp;
+        if ( !GetPrinter( hPrinter, 2, (LPBYTE) pInfo, 0, &cbNeeded ) &&
            (GetLastError() != ERROR_INSUFFICIENT_BUFFER) )
         {
           bRet = FALSE;
@@ -64,7 +64,7 @@ DrvPrinterEvent(
         }
         if (bRet == TRUE)
         {
-          if (GetPrinter(hPrinter, 2, (LPBYTE) pInfo, cbNeeded, &amp;cbNeeded))
+          if (GetPrinter(hPrinter, 2, (LPBYTE) pInfo, cbNeeded, &cbNeeded))
           {
             pInfo->pPrintProcessor = gszPrintProc;
             SetPrinter(hPrinter, 2, (LPBYTE) pInfo, 0);
@@ -114,11 +114,11 @@ DrvUpgradePrinter(
   TCHAR                   gszPrintDriver[] = TEXT("<Printer driver name>");
   BOOL                    bRet = TRUE;
 
-  if ((Level == 2)                                            &amp;&amp;
-      (pDUI2 = (PDRIVER_UPGRADE_INFO_2)pDriverUpgradeInfo)    &amp;&amp;
-      (OpenPrinter(pDUI2->pPrinterName, &amp;hPrinter, &amp;PrinterDef)))
+  if ((Level == 2)                                            &&
+      (pDUI2 = (PDRIVER_UPGRADE_INFO_2)pDriverUpgradeInfo)    &&
+      (OpenPrinter(pDUI2->pPrinterName, &hPrinter, &PrinterDef)))
   {
-    if ( !GetPrinter( hPrinter, 2, (LPBYTE) pInfo, 0, &amp;cbNeeded )  &amp;&amp;
+    if ( !GetPrinter( hPrinter, 2, (LPBYTE) pInfo, 0, &cbNeeded )  &&
          (GetLastError() != ERROR_INSUFFICIENT_BUFFER) )
     {
        bRet = FALSE;
@@ -130,7 +130,7 @@ DrvUpgradePrinter(
     }
     if (bRet == TRUE)
     {
-      if (GetPrinter(hPrinter, 2, (LPBYTE) pInfo, cbNeeded, &amp;cbNeeded))
+      if (GetPrinter(hPrinter, 2, (LPBYTE) pInfo, cbNeeded, &cbNeeded))
       {
       //
       // This function is called for every printer queue that uses a driver

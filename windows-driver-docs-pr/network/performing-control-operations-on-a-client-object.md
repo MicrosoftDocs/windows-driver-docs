@@ -37,7 +37,7 @@ NTSTATUS
           NULL,
           MaxTransports * sizeof(WSK_TRANSPORT),
           TransportList,
-          &amp;BytesRetrieved,
+          &BytesRetrieved,
           NULL  // No IRP for this control operation
           );
 

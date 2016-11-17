@@ -103,7 +103,7 @@ HRESULT hres;
 // Create the device path using the well-known resource hub
 // path name and the connection ID.
 //
-hres = StringCbPrintfW(&amp;szTargetPath[0],
+hres = StringCbPrintfW(&szTargetPath[0],
                        sizeof(DevicePath),
                        L"\\\\.\\RESOURCE_HUB\\%0*I64x",
                        (size_t)(sizeof(LARGE_INTEGER) * 2),
@@ -123,9 +123,9 @@ UMDF_IO_TARGET_OPEN_PARAMS openParams;
 openParams.dwShareMode = 0;
 openParams.dwCreationDisposition = OPEN_EXISTING;
 openParams.dwFlagsAndAttributes = FILE_FLAG_OVERLAPPED;
-hres = pRemoteTarget->OpenFileByName(&amp;szTargetPath[0],
+hres = pRemoteTarget->OpenFileByName(&szTargetPath[0],
                                      (GENERIC_READ | GENERIC_WRITE),
-                                     &amp;openParams);
+                                     &openParams);
 if (FAILED(hres))
 {
     // Error handling
@@ -150,7 +150,7 @@ if (SUCCEEDED(hres))
 {
     hres = pWdfDevice->CreateRequest(NULL, 
                                      pWdfDevice, 
-                                     &amp;pWdfIoRequest);
+                                     &pWdfIoRequest);
     if (FAILED(hres))
     {
         // Error handling
@@ -165,7 +165,7 @@ if (SUCCEEDED(hres))
                                                    inBufferSize, 
                                                    NULL,
                                                    pWdfIoRequest,
-                                                   &amp;pInputMemory);
+                                                   &pInputMemory);
     if (FAILED(hres))
     {
         // Error handling

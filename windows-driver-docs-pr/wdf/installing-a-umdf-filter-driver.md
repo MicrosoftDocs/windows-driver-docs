@@ -49,7 +49,7 @@ As you structure your device stack, keep in mind that the framework currently su
     ```
     IWDFIoTarget * kmdfIoTarget = NULL;
         
-        this->GetFxDevice()->GetDefaultIoTarget (&amp;kmdfIoTarget);
+        this->GetFxDevice()->GetDefaultIoTarget (&kmdfIoTarget);
 
         Request->FormatUsingCurrentType();
 

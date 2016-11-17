@@ -161,7 +161,7 @@ Return Value:
                               BufferLength,
                               Buffer,
                               BufferLength,
-                              &amp;returnedLength,
+                              &returnedLength,
                               NULL
                               );
 
@@ -189,7 +189,7 @@ Return Value:
             }
 
             for (i = 0; i < firmwareInfo->SlotCount; i++) {
-                RtlCopyMemory(revision, &amp;firmwareInfo->Slot[i].Revision.AsUlonglong, 8);
+                RtlCopyMemory(revision, &firmwareInfo->Slot[i].Revision.AsUlonglong, 8);
 
                 _tprintf(_T("\t\t Slot Number: %d\n"), firmwareInfo->Slot[i].SlotNumber);
                 _tprintf(_T("\t\t Slot Read Only: %s\n"), firmwareInfo->Slot[i].ReadOnly ? _T("Yes") : _T("No"));
@@ -412,7 +412,7 @@ Return Value:
         //
         firmwareDownload = (PSTORAGE_FIRMWARE_DOWNLOAD)((PUCHAR)srbControl + firmwareRequest->DataBufferOffset);
 
-        if (ReadFile(fileHandle, firmwareDownload->ImageBuffer, imageBufferLength, &amp;readLength, NULL) == FALSE) {
+        if (ReadFile(fileHandle, firmwareDownload->ImageBuffer, imageBufferLength, &readLength, NULL) == FALSE) {
             _tprintf(_T("\t FirmwareUpgrade - Read firmware file failed.\n"));
             goto Exit;
         }
@@ -443,7 +443,7 @@ Return Value:
                                  bufferSize,
                                  buffer,
                                  bufferSize,
-                                 &amp;returnedLength,
+                                 &returnedLength,
                                  NULL
                                  );
 
@@ -513,7 +513,7 @@ Return Value:
                                 bufferSize,
                                 buffer,
                                 bufferSize,
-                                &amp;returnedLength,
+                                &returnedLength,
                                 NULL
                                 );
 

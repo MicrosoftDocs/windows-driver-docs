@@ -44,8 +44,8 @@ NTSTATUS
     WDF_DEVICE_IO_TYPE stackReadWriteIotype = WdfDeviceIoUndefined; 
     WDF_DEVICE_IO_TYPE stackIoctlIotype = WdfDeviceIoUndefined;
     WdfDeviceGetDeviceStackIoType(Device,
-                                  &amp;stackReadWriteIotype,
-                                  &amp;stackIoctlIotype);
+                                  &stackReadWriteIotype,
+                                  &stackIoctlIotype);
     MyKdPrint(("Device 0x%p stackReadWriteIoType %S stackIoctlIoType %S\n",
         Device,
         GetIoTypeName(stackReadWriteIotype),
@@ -103,7 +103,7 @@ NTSTATUS
                                             descTranslated->u.Memory.Start,
                                             descTranslated->u.Memory.Length,
                                             MmNonCached,
-                                            &amp;deviceContext->PortBase
+                                            &deviceContext->PortBase
                                             );
 
                     if (!NT_SUCCESS(status)) {
@@ -153,7 +153,7 @@ NTSTATUS
 // Next, the driver uses register/port access macros to access the port.
 //
 
-    if ((PUCHAR)&amp;deviceContext->PortBase != NULL) {
+    if ((PUCHAR)&deviceContext->PortBase != NULL) {
         UCHAR data;
         
 #ifndef _KERNEL_MODE

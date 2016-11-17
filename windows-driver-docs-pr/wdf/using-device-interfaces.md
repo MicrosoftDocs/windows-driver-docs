@@ -47,11 +47,11 @@ The following code example shows how a local UMDF 2 driver registers for notific
 1.  The remote driver registers for a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) from [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693).
     ```
         UNICODE_STRING ref;
-        RtlInitUnicodeString(&amp;ref, MY_HID_FILTER_REFERENCE_STRING);
+        RtlInitUnicodeString(&ref, MY_HID_FILTER_REFERENCE_STRING);
         status = WdfDeviceCreateDeviceInterface(
                      hDevice,
-                     (LPGUID) &amp;GUID_DEVINTERFACE_MY_HIDFILTER_DRIVER,
-                     &amp;ref // ReferenceString
+                     (LPGUID) &GUID_DEVINTERFACE_MY_HIDFILTER_DRIVER,
+                     &ref // ReferenceString
                  );
 
         if (!NT_SUCCESS (status)) {
@@ -66,16 +66,16 @@ The following code example shows how a local UMDF 2 driver registers for notific
     DWORD cmRet;
         CM_NOTIFY_FILTER cmFilter;
        
-        ZeroMemory(&amp;cmFilter, sizeof(cmFilter));
+        ZeroMemory(&cmFilter, sizeof(cmFilter));
         cmFilter.cbSize = sizeof(cmFilter);
         cmFilter.FilterType = CM_NOTIFY_FILTER_TYPE_DEVICEINTERFACE;
         cmFilter.u.DeviceInterface.ClassGuid = GUID_DEVINTERFACE_MY_HIDFILTER_DRIVER;
         
         cmRet = CM_Register_Notification(
-                    &amp;cmFilter,                     // PCM_NOTIFY_FILTER pFilter,
+                    &cmFilter,                     // PCM_NOTIFY_FILTER pFilter,
                     (PVOID) hDevice,               // PVOID pContext,
                     MyCmInterfaceNotification,    // PCM_NOTIFY_CALLBACK pCallback,
-                    &amp;fdoData->CmNotificationHandle // PHCMNOTIFICATION pNotifyContext
+                    &fdoData->CmNotificationHandle // PHCMNOTIFICATION pNotifyContext
                     );
         if (cmRet != CR_SUCCESS) {
             MyKdPrint( ("CM_Register_Notification failed, error %d\n", cmRet));

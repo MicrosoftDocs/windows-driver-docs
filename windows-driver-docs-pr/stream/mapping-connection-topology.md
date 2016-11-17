@@ -42,14 +42,14 @@ KSNODE_DESCRIPTOR
 NodeDescriptors[] =
 {
     {   // 0 node type
-        &amp;RFTunerNodeAutomation,// PKSAUTOMATION_TABLE AutomationTable;
-        &amp;KSNODE_BDA_RF_TUNER,  // Type
+        &RFTunerNodeAutomation,// PKSAUTOMATION_TABLE AutomationTable;
+        &KSNODE_BDA_RF_TUNER,  // Type
         NULL                   // Name
     },
     {   // 1 node type
-        &amp;VSB8DemodulatorNodeAutomation, // PKSAUTOMATION_TABLE 
+        &VSB8DemodulatorNodeAutomation, // PKSAUTOMATION_TABLE 
                                         // AutomationTable;
-        &amp;KSNODE_BDA_8VSB_DEMODULATOR,   // Type
+        &KSNODE_BDA_8VSB_DEMODULATOR,   // Type
         NULL                            // Name
     }
 };
@@ -67,8 +67,8 @@ TemplatePinDescriptors[] =
     //  Antenna Pin
     //  0 pin type
     {
-        &amp;AntennaPinDispatch,
-        &amp;AntennaAutomation,   // AntennaPinAutomation
+        &AntennaPinDispatch,
+        &AntennaAutomation,   // AntennaPinAutomation
         {
             0,  // Interfaces
             NULL,
@@ -94,19 +94,19 @@ TemplatePinDescriptors[] =
     //  Transport Pin
     //  1 pin type
     {
-        &amp;TransportPinDispatch,
-        &amp;TransportAutomation,   // TransportPinAutomation
+        &TransportPinDispatch,
+        &TransportAutomation,   // TransportPinAutomation
         {
             0,  // Interfaces
             NULL,
             1,  // Mediums
-            &amp;TransportPinMedium,
+            &TransportPinMedium,
             SIZEOF_ARRAY(TransportPinRanges),
             TransportPinRanges,
             KSPIN_DATAFLOW_OUT,
             KSPIN_COMMUNICATION_BOTH,
-            (GUID *) &amp;PINNAME_BDA_TRANSPORT,   // Name
-            (GUID *) &amp;PINNAME_BDA_TRANSPORT,   // Category
+            (GUID *) &PINNAME_BDA_TRANSPORT,   // Name
+            (GUID *) &PINNAME_BDA_TRANSPORT,   // Category
             0
         },
         KSPIN_FLAG_DO_NOT_USE_STANDARD_TRANSPORT | 

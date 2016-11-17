@@ -31,7 +31,7 @@ NTSTATUS
     (PWSK_PROVIDER_CONNECTION_DISPATCH)(Socket->Dispatch);
 
   // Specify the WSK NPI identifier
-  EventCallbackControl.NpiId = &amp;NPI_WSK_INTERFACE_ID;
+  EventCallbackControl.NpiId = &NPI_WSK_INTERFACE_ID;
 
   // Set the event flags for the event callback functions that
   // are to be enabled on the socket
@@ -46,7 +46,7 @@ NTSTATUS
       SO_WSK_EVENT_CALLBACK,
       SOL_SOCKET,
       sizeof(WSK_EVENT_CALLBACK_CONTROL),
-      &amp;EventCallbackControl,
+      &EventCallbackControl,
       0,
       NULL,
       NULL,
@@ -110,7 +110,7 @@ NTSTATUS
     );
 
   // Specify the WSK NPI identifier
-  EventCallbackControl.NpiId = &amp;NPI_WSK_INTERFACE_ID;
+  EventCallbackControl.NpiId = &NPI_WSK_INTERFACE_ID;
 
   // Set the event flag for the event callback function that
   // is to be disabled on the socket along with the disable flag
@@ -125,7 +125,7 @@ NTSTATUS
       SO_WSK_EVENT_CALLBACK,
       SOL_SOCKET,
       sizeof(WSK_EVENT_CALLBACK_CONTROL),
-      &amp;EventCallbackControl,
+      &EventCallbackControl,
       0,
       NULL,
       NULL,
@@ -198,7 +198,7 @@ NTSTATUS
   NTSTATUS Status;
 
   // Specify the WSK NPI identifier
-  EventCallbackControl.NpiId = &amp;NPI_WSK_INTERFACE_ID;
+  EventCallbackControl.NpiId = &NPI_WSK_INTERFACE_ID;
 
   // Set the event flags for the event callback functions that
   // are to be automatically enabled on every new socket
@@ -213,7 +213,7 @@ NTSTATUS
           BindingContext->WskClient,
           WSK_SET_STATIC_EVENT_CALLBACKS,
           sizeof(WSK_EVENT_CALLBACK_CONTROL),
-          &amp;EventCallbackControl,
+          &EventCallbackControl,
           0,
           NULL,
           NULL,

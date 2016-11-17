@@ -21,7 +21,7 @@ VOID
 {
   // Unregister the WSK application
   WskDeregister(
-    &amp;WskRegistration
+    &WskRegistration
     );
 
 }

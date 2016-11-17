@@ -19,18 +19,18 @@ Note that file systems also create control device objects. When a file system fi
 The following example creates a control device object:
 
 ```
-RtlInitUnicodeString(&amp;nameString, MYLEGACYFILTER_FULLDEVICE_NAME);
+RtlInitUnicodeString(&nameString, MYLEGACYFILTER_FULLDEVICE_NAME);
 status = IoCreateDevice(
         DriverObject,                  //DriverObject
         0,                             //DeviceExtensionSize
-        &amp;nameString,                   //DeviceName
+        &nameString,                   //DeviceName
         FILE_DEVICE_DISK_FILE_SYSTEM,  //DeviceType
         FILE_DEVICE_SECURE_OPEN,       //DeviceCharacteristics
         FALSE,                         //Exclusive
-        &amp;gControlDeviceObject);        //DeviceObject
+        &gControlDeviceObject);        //DeviceObject
 
-RtlInitUnicodeString(&amp;linkString, MYLEGACYFILTER_DOSDEVICE_NAME);
-status = IoCreateSymbolicLink(&amp;linkString, &amp;nameString);
+RtlInitUnicodeString(&linkString, MYLEGACYFILTER_DOSDEVICE_NAME);
+status = IoCreateSymbolicLink(&linkString, &nameString);
 ```
 
 Unlike file systems, file system filter drivers are not required to name their control device objects. A user mode application can not access the filter driver with out a device name since a call to [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) is not valid for control device objects. If a non-**NULL** value is passed in the *DeviceName* parameter, this value becomes the name of the control device object. The [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine can then call the [**IoCreateSymbolicLink**](https://msdn.microsoft.com/library/windows/hardware/ff549043) routine, as shown in the preceding code example, to link the object's kernel-mode name to a user-mode name that is visible to applications.

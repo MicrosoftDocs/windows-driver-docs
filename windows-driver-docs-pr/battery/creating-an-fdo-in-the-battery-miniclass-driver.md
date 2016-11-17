@@ -23,7 +23,7 @@ The miniclass driver should create an FDO and attach it to the device stack for 
              FILE_DEVICE_BATTERY,
              0,
              FALSE,
-             &amp;Fdo
+             &Fdo
              );
     ```
 
@@ -64,7 +64,7 @@ The miniclass driver should create an FDO and attach it to the device stack for 
 5.  Clear the DO\_DEVICE\_INITIALIZING flag in the FDO, as follows:
 
     ```
-    Fdo->Flags &amp;= ~DO_DEVICE_INITIALIZING;
+    Fdo->Flags &= ~DO_DEVICE_INITIALIZING;
     ```
 
     Clearing the DO\_DEVICE\_INITIALIZING flag allows the device object to be opened subsequently by components higher in the device stack.

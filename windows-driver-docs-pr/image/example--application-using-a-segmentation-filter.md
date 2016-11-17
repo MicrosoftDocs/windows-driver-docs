@@ -26,7 +26,7 @@ IWiaTransfer  *pWiaTransfer = NULL;
 
 ...
 
-pWiaItem2->QueryInterface(IID_IWiaTransfer, (void**)&amp;pWiaTransfer);
+pWiaItem2->QueryInterface(IID_IWiaTransfer, (void**)&pWiaTransfer);
 
 pMyWiaTransferCallback = new MyWiaTransferCallback();
 
@@ -43,14 +43,14 @@ pWiaTransfer->Download(lFlags, pMyWiaTransferCallback);
 // restored) before calling IWiaSegmentationFilter::DetectRegions.
 //
 
-if (ReadPropertyLong(WIA_IPS_SEGMENTATION_FILTER, &amp;lUseSegFilter) &amp;&amp;
+if (ReadPropertyLong(WIA_IPS_SEGMENTATION_FILTER, &lUseSegFilter) &&
     (lUseSegFilter == WIA_USE_SEGMENTATION_FILTER)
 {
     bstrSegmentation = SysAllocStr(WIA_SEGMENTATION_FILTER_STR);
 
     pWiaItem2->GetExtension(bstrSegmentation,
                             IID_IWiaSegmentationFilter,
-                           (void**)&amp; pWiaSegmentationFilter);
+                           (void**)& pWiaSegmentationFilter);
 
 //
 // m_pInputStream is a pointer to the IStream that the application&#39;s
@@ -88,7 +88,7 @@ if (ReadPropertyLong(WIA_IPS_SEGMENTATION_FILTER, &amp;lUseSegFilter) &amp;&amp;
 IWiaTransfer  *pWiaTransferChild= NULL;
 
 pChildItem->QueryInterface(IID_IWiaTransfer,
-                           (void**)&amp; pWiaTransferChild);
+                           (void**)& pWiaTransferChild);
 
 pWiaTransferChild->Download(lFlags, pMyWiaTransferCallback); 
 ```

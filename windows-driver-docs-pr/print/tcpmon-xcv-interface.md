@@ -27,13 +27,13 @@ HANDLE hXcv = INVALID_HANDLE_VALUE;
 PRINTER_DEFAULTS Defaults = { NULL, NULL, <Required Access> };
 
 // Handle to a local machine
-if (OpenPrinter(",XcvPort <PortName>", &amp;hXcv, &amp;Defaults )
+if (OpenPrinter(",XcvPort <PortName>", &hXcv, &Defaults )
 {
  // hXvc contains an Xcv data handle to a local TCPMON port
 }
 
 // Handle to a remote machine
-if (OpenPrinter("<ServerName>\\,XcvPort <PortName>", &amp;hXcv, &amp;Defaults )
+if (OpenPrinter("<ServerName>\\,XcvPort <PortName>", &hXcv, &Defaults )
 {
  // hXvc contains an Xcv data handle to a TCPMON port on <ServerName>
 }
@@ -48,13 +48,13 @@ HANDLE hXcv = INVALID_HANDLE_VALUE;
 PRINTER_DEFAULTS Defaults = { NULL, NULL, <Required Access> };
 
 // Handle to a local machine
-if (OpenPrinter(",XcvMonitor <MonitorName>", &amp;hXcv, &amp;Defaults )
+if (OpenPrinter(",XcvMonitor <MonitorName>", &hXcv, &Defaults )
 {
  // hXcv contains an Xcv data handle to the monitor <MonitorName>
 }
 
 // Handle to a remote machine
-if (OpenPrinter("<ServerName>\\,XcvMonitor <MonitorName>", &amp;hXcv, &amp;Defaults )
+if (OpenPrinter("<ServerName>\\,XcvMonitor <MonitorName>", &hXcv, &Defaults )
 {
  // hXcv contains an Xcv data handle to the monitor 
  // <MonitorName> on the server <ServerName>

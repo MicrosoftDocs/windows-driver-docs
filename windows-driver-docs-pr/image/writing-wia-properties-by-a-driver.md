@@ -103,16 +103,16 @@ HRESULT _stdcall CWIADevice::drvValidateItemProperties(
                              (PROPSPEC*)pPropSpec,
                              0,
                              NULL,
-                             &amp;Context);
+                             &Context);
   if(S_OK == hr) {
 
     //
     // get the current item type to help determine what property set to validate
     //
 
-      hr = wiasGetItemType(pWiasContext, &amp;lItemType);
+      hr = wiasGetItemType(pWiasContext, &lItemType);
       if (S_OK == hr) {
-          if (lItemType &amp; WiaItemTypeRoot) {
+          if (lItemType & WiaItemTypeRoot) {
 
             //
             //  validate root item properties here
@@ -125,14 +125,14 @@ HRESULT _stdcall CWIADevice::drvValidateItemProperties(
             //
 
               WIAS_CHANGED_VALUE_INFO cviDataType;
-              memset(&amp;cviDataType,0,sizeof(cviDataType));
+              memset(&cviDataType,0,sizeof(cviDataType));
 
             //
             // check to see if the application was updating
             // the WIA_IPA_DATATYPE property
    //
 
-              hr = wiasGetChangedValueLong(pWiasContext,pContext,FALSE,WIA_IPA_DATATYPE,&amp;cviDataType);
+              hr = wiasGetChangedValueLong(pWiasContext,pContext,FALSE,WIA_IPA_DATATYPE,&cviDataType);
               if(S_OK == hr) {
                   if (cviDataType.bChanged) {
 
@@ -158,7 +158,7 @@ HRESULT _stdcall CWIADevice::drvValidateItemProperties(
         // free the property context
         //
 
-          wiasFreePropContext(&amp;Context);
+          wiasFreePropContext(&Context);
       }
 
     //

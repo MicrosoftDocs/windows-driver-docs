@@ -46,7 +46,7 @@ SegFilter::DetectRegions(IN IStream  *pInputStream,
 
     LONG  lCreationFlags = COPY_PARENTS_PROPERTY_VALUES;
 
-    ReadPropertyGUID(pWiaItem2, WIA_IPA_FORMAT, &amp;formatGUID);
+    ReadPropertyGUID(pWiaItem2, WIA_IPA_FORMAT, &formatGUID);
 
     //
     // The algorithm that performs the actual region
@@ -54,11 +54,11 @@ SegFilter::DetectRegions(IN IStream  *pInputStream,
     //
     FindSubRegions(pInputStream,
                    formatGUID,
-                   &amp;pSubRegions,
-                   &amp;cRegionsFound);
+                   &pSubRegions,
+                   &cRegionsFound);
 
-    ReadPropertyLong(pWiaItem2, WIA_IPS_XPOS, &amp;parent_xpos);
-    ReadPropertyLong(pWiaItem2, WIA_IPS_YPOS, &amp;parent_ypos);
+    ReadPropertyLong(pWiaItem2, WIA_IPS_XPOS, &parent_xpos);
+    ReadPropertyLong(pWiaItem2, WIA_IPS_YPOS, &parent_ypos);
 
     //
     // For each subimage that was found, create
@@ -72,13 +72,13 @@ SegFilter::DetectRegions(IN IStream  *pInputStream,
         IWiaItem2  *pChildIWiaItem = NULL;
 
         GetNamesForChild(i,
-                         &amp;bstrChildName,
-                         &amp;bstrFullChildName);
+                         &bstrChildName,
+                         &bstrFullChildName);
 
         pWiaItem2->CreateChildItem(lItemFlags,
                                    lCreationFlags,
                                    bstrChildName,
-                                   &amp;pChildIWiaItem);
+                                   &pChildIWiaItem);
 
         WritePropertyLong(pChildWiaItem,
                           WIA_IPS_XPOS,

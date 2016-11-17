@@ -154,7 +154,7 @@ WDTF_SYSTEM               : INFO  : Returning from Hibernate. Elapsed time (hh:m
 <td><p>WDTF_DRIVER_SETUP_DEVICE</p></td>
 <td><p>[<strong>IWDTFDriverSetupAction2</strong>](https://msdn.microsoft.com/library/windows/hardware/hh450938)</p></td>
 <td><pre class="syntax" space="preserve"><code>WDTF_DRIVER_SETUP_DEVICE  : INFO  :  - UpdateDriver()
-WDTF_DRIVER_SETUP_DEVICE  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&amp;DABA3FF&amp;2
+WDTF_DRIVER_SETUP_DEVICE  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&DABA3FF&2
 </code></pre></td>
 </tr>
 <tr class="odd">
@@ -171,7 +171,7 @@ WDTF_DRIVER_SETUP_DEVICE  : INFO  :          Target: TI EHCI controller ACPI\TXI
 <td><p>WDTF_EDT</p></td>
 <td><p>[<strong>IWDTFEnhancedDeviceTestSupportAction2</strong>](https://msdn.microsoft.com/library/windows/hardware/hh450969)</p></td>
 <td><pre class="syntax" space="preserve"><code>WDTF_EDT                  : INFO  :  - Enable()   
-WDTF_EDT                  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&amp;DABA3FF&amp;2 
+WDTF_EDT                  : INFO  :          Target: TI EHCI controller ACPI\TXI_USBEHCI\2&DABA3FF&2 
 WDTF_EDT                  : INFO  :          Result: System reboot required as device is not disableable  ( 80004005 ).
  
 WDTF_EDT                  : INFO  :  - Disable()   

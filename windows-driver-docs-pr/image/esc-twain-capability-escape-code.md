@@ -119,7 +119,7 @@ STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
            pInHeader  = (TWAIN_CAPABILITY*)lpInData;
            pOutHeader = (TWAIN_CAPABILITY*)pOutData;
 
-           if(pInHeader &amp;&amp; pOutHeader) {
+           if(pInHeader && pOutHeader) {
          // Check the headers to determine the operation to perform.
 
                switch(pInHeader->lCapID) {
@@ -273,7 +273,7 @@ STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
                      break;
                  }
                } // End switch(pInHeader->lCapID)
-           } // End if (pInHeader &amp;&amp; pOutHeader)
+           } // End if (pInHeader && pOutHeader)
        }
     }
   }

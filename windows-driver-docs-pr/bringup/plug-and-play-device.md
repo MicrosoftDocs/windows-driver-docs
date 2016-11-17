@@ -27,12 +27,12 @@ The presence of an ESRT configuration table will direct Windows to enumerate a s
 <tbody>
 <tr class="odd">
 <td>UEFI\RES_{SYSTEM_FIRMWARE}\0</td>
-<td><p>UEFI\RES_{SYSTEM_FIRMWARE}&amp;REV_1</p>
+<td><p>UEFI\RES_{SYSTEM_FIRMWARE}&REV_1</p>
 <p>UEFI\RES_{SYSTEM_FIRMWARE}</p></td>
 </tr>
 <tr class="even">
 <td>UEFI\RES_{DEVICE_FIRMWARE}\0</td>
-<td><p>UEFI\RES_{DEVICE_FIRMWARE}&amp;REV_1</p>
+<td><p>UEFI\RES_{DEVICE_FIRMWARE}&REV_1</p>
 <p>UEFI\RES_{DEVICE_FIRMWARE}</p></td>
 </tr>
 </tbody>

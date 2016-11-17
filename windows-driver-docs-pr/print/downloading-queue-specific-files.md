@@ -62,12 +62,12 @@ On the server, the spooler loads Mscms.dll and calls [**GenerateCopyFilePaths**]
 GenerateCopyFilePaths(
     "HpColor",
     "Color",
-    &amp;SplclientInfo1,
+    &SplclientInfo1,
     1,
     \\NTPRINT\PRINT$\Color,
-    &amp;dwSourceDirSize,
+    &dwSourceDirSize,
     "Color",
-    &amp;dwDestDirSize,
+    &dwDestDirSize,
     COPYFILE_FLAG_SERVER_SPOOLER)
 ```
 
@@ -90,12 +90,12 @@ The spooler on MyClient performs the following operations:
     GenerateCopyFilePaths(
         "\\NTPRINT\HpColor",
         "Color",
-        &amp;SplclientInfo1,
+        &SplclientInfo1,
         1,
         \\NTPRINT\PRINT$\Color,
-        &amp;dwSourceDirSize,
+        &dwSourceDirSize,
         "C:\Winnt\System32\Spool\Drivers\Color",
-        &amp;dwDestDirSize,
+        &dwDestDirSize,
         COPYFILE_FLAG_CLIENT_SPOOLER)
     ```
 

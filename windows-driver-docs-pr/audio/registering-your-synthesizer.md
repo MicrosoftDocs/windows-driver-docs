@@ -27,7 +27,7 @@ The following example code shows a function, `RegisterSynth`, that can be called
   const char cszSynthRegRoot[] = REGSTR_PATH_SOFTWARESYNTHS "\\";
   const char cszDescriptionKey[] = "Description";
   const int CLSID_STRING_SIZE = 39;
-  HRESULT CLSIDToStr(const CLSID &amp;clsid, char *szStr, int cbStr);
+  HRESULT CLSIDToStr(const CLSID &clsid, char *szStr, int cbStr);
  
   HRESULT RegisterSynth(REFGUID guid,
                         const char szDescription[])
@@ -47,7 +47,7 @@ The following example code shows a function, `RegisterSynth`, that can be called
  
       if (RegCreateKey(HKEY_LOCAL_MACHINE,
                        szRegKey,
-                       &amp;hk))
+                       &hk))
       {
           return E_FAIL;
       }

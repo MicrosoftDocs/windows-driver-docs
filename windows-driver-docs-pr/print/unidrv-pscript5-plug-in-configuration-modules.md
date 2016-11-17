@@ -89,7 +89,7 @@ CBookletDMPTConv::GetDrvSettingsFromDM(
 
   for (GPD::Binding::EGPDSettings setting = 
         GPD::Binding::EGPDSettingsMin;
-      setting < GPD::Binding::EGPDSettingsMax &amp;&amp; SUCCEEDED(hr);
+      setting < GPD::Binding::EGPDSettingsMax && SUCCEEDED(hr);
       setting++)
   {
     PCSTR pszOption;
@@ -97,7 +97,7 @@ CBookletDMPTConv::GetDrvSettingsFromDM(
       pDevmode,
       cbDevmode, 
       m_featureNames[setting], 
-      &amp;pszOption)
+      &pszOption)
     if (SUCCEEDED(hr))
     {
       hr = GPDSettingFromOptionString(

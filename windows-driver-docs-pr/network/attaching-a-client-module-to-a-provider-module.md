@@ -137,9 +137,9 @@ NTSTATUS
   Status = NmrClientAttachProvider(
     NmrBindingHandle,
     BindingContext,
-    &amp;Dispatch,
-    &amp;ProviderBindingContext,
-    &amp;ProviderDispatch
+    &Dispatch,
+    &ProviderBindingContext,
+    &ProviderDispatch
     );
 
   // Check result of attachment

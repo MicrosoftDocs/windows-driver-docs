@@ -31,8 +31,8 @@ NTSTATUS MyDeviceStart (...) {
 // Get the DMA adapter object and store it in the Context member of the I/O stack location.
 Context -> AdapterObject = IoGetDmaAdapter (
 Device -> PhysicalDeviceObject,
-&amp;DeviceDesc,
-&amp;Context -> NumberOfMapRegisters
+&DeviceDesc,
+&Context -> NumberOfMapRegisters
 );
 
 PUNKNOWN DeviceUnk =
@@ -44,7 +44,7 @@ Device
 IKsDeviceFunctions *DeviceFunctions;
 NTSTATUS Status = DeviceUnk -> QueryInterface (
 __uuidof (IKsDeviceFunctions),
-(PVOID *)&amp;DeviceFunctions
+(PVOID *)&DeviceFunctions
 );
 
 // Conditionally, call IksDeviceFunctions::RegisterAdapterObjectEx, 
@@ -53,7 +53,7 @@ __uuidof (IKsDeviceFunctions),
 if (NT_SUCCESS (Status)) {
 DeviceFunctions -> RegisterAdapterObjectEx (
 Context -> AdapterObject,
-&amp;DeviceDesc,
+&DeviceDesc,
 Context -> NumMapRegisters,
 MAX_MAPPING,
 sizeof (KSMAPPING)

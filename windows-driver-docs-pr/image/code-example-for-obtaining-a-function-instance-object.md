@@ -115,7 +115,7 @@ HRESULT InitializeConnection(
 
     if (SUCCEEDED(hr))
     {
-        PropVariantInit(&amp;PropVar);
+        PropVariantInit(&PropVar);
         PropVar.vt = VT_LPWSTR;
         PropVar.pwszVal = (LPWSTR)wszDevicePath;
     }
@@ -129,9 +129,9 @@ HRESULT InitializeConnection(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               __uuidof(IFunctionDiscovery),
-                              (void**)&amp;m_pFunctionDiscovery);
+                              (void**)&m_pFunctionDiscovery);
 
-        if ((SUCCEEDED(hr)) &amp;&amp; (!m_pFunctionDiscovery))
+        if ((SUCCEEDED(hr)) && (!m_pFunctionDiscovery))
         {
             hr = E_POINTER;
             WIAS_ERROR((g_hInst, "CoCreateInstance(IFunctionDiscovery) returned a NULL m_pFunctionDiscovery, hr = 0x%08X", hr));
@@ -153,8 +153,8 @@ HRESULT InitializeConnection(
                                                                  NULL,
                                                                  FALSE,
                                                                  NULL, 
-                                                                 &amp;pfiCollectionQuery);
-        if ((SUCCEEDED(hr)) &amp;&amp; (!pfiCollectionQuery))
+                                                                 &pfiCollectionQuery);
+        if ((SUCCEEDED(hr)) && (!pfiCollectionQuery))
         {
             WIAS_ERROR((g_hInst, 
                 "IFunctionDiscovery::CreateInstanceCollectionQuery(%ws) returned a NULL IFunctionInstanceCollectionQuery* with hr = 0x%08X", 
@@ -172,7 +172,7 @@ HRESULT InitializeConnection(
         //
         // Pass in the device path (which contains a PnP-X ID) as a query constraint to the new collection query
         //
-        hr = pfiCollectionQuery->AddPropertyConstraint(PKEY_PNPX_ID, &amp;PropVar, QC_EQUALS);
+        hr = pfiCollectionQuery->AddPropertyConstraint(PKEY_PNPX_ID, &PropVar, QC_EQUALS);
 
         if (FAILED(hr))
         {
@@ -186,9 +186,9 @@ HRESULT InitializeConnection(
         //
         // Execute the query to obtain the unique Function Instance object that identifies our device that is described by wszDevicePath
         //
-        hr = pfiCollectionQuery->Execute(&amp;pfiCollection);
+        hr = pfiCollectionQuery->Execute(&pfiCollection);
 
-        if ((SUCCEEDED(hr)) &amp;&amp; (!pfiCollection))
+        if ((SUCCEEDED(hr)) && (!pfiCollection))
         {
             hr = E_POINTER;
             WIAS_ERROR((g_hInst, 
@@ -228,9 +228,9 @@ HRESULT InitializeConnection(
         //
         //
 
-        hr = pfiCollection->Item(0, &amp;m_pFunctionInstance);
+        hr = pfiCollection->Item(0, &m_pFunctionInstance);
 
-        if ((SUCCEEDED(hr)) &amp;&amp; (!m_pFunctionInstance))
+        if ((SUCCEEDED(hr)) && (!m_pFunctionInstance))
         {
             WIAS_ERROR((g_hInst, "IFunctionInstanceCollection.Item(0) returned a NULL IFunctionInstance* for %ws with hr = 0x%08X", 
                 wszDevicePath, hr));

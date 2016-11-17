@@ -67,7 +67,7 @@ protected:
         ,m_StatusSequenceNumber(0)
         ,m_CommandSequenceNumber(0)
     {
-        RtlZeroMemory(&amp;m_RandomNumber, sizeof(m_RandomNumber));
+        RtlZeroMemory(&m_RandomNumber, sizeof(m_RandomNumber));
         RtlZeroMemory(m_AESKey, sizeof(m_AESKey));
     }
  
@@ -155,7 +155,7 @@ CBaseKsFilter::OPMVideoOutputStartInitialization(
  
             if (STATUS_SUCCESS == Status) {
                 RtlCopyMemory(pData, 
-                              &amp;pFilter->m_RandomNumber, 
+                              &pFilter->m_RandomNumber, 
                               sizeof (OPM_RANDOM_NUMBER));
  
                 RtlCopyMemory(((PBYTE)pData + sizeof (OPM_RANDOM_NUMBER)), 
@@ -199,7 +199,7 @@ ConvertLegacyRsaPrivateKeyToBCryptBlob(
     const UCHAR *pbSource;
     PUCHAR pbDest;
  
-    RtlCopyMemory(&amp;RsaPubKey, pbLegacyBlob, sizeof(RSAPUBKEY));
+    RtlCopyMemory(&RsaPubKey, pbLegacyBlob, sizeof(RSAPUBKEY));
  
     //
     // Compute size of RSA blob.
@@ -215,9 +215,9 @@ ConvertLegacyRsaPrivateKeyToBCryptBlob(
  
     // Count number of bytes in the public exponent.
 
-    cbPublicExp = ((RsaPubKey.pubexp &amp; PUBEXP_FOUR_MASK) ? 4 :
-                  ((RsaPubKey.pubexp &amp; PUBEXP_THREE_MASK) ? 3 :
-                  ((RsaPubKey.pubexp &amp; PUBEXP_TWO_MASK) ? 2 : 1)));
+    cbPublicExp = ((RsaPubKey.pubexp & PUBEXP_FOUR_MASK) ? 4 :
+                  ((RsaPubKey.pubexp & PUBEXP_THREE_MASK) ? 3 :
+                  ((RsaPubKey.pubexp & PUBEXP_TWO_MASK) ? 2 : 1)));
  
     cbRsaBlob = sizeof(BCRYPT_RSAKEY_BLOB) +
                 cbPublicExp +
@@ -251,7 +251,7 @@ ConvertLegacyRsaPrivateKeyToBCryptBlob(
     pbSource = pbLegacyBlob + sizeof(RSAPUBKEY);
     pbDest = (PBYTE)(pRsaBlob + 1);
  
-    ReverseMemCopy(pbDest, (PBYTE)&amp;RsaPubKey.pubexp, cbPublicExp);
+    ReverseMemCopy(pbDest, (PBYTE)&RsaPubKey.pubexp, cbPublicExp);
     pbDest += cbPublicExp;
  
     ReverseMemCopy(pbDest, pbSource, cbModulus);
@@ -312,7 +312,7 @@ CBaseKsFilter::OPMVideoOutputFinishInitialization(
     //
     if (Status == STATUS_SUCCESS)
     {
-        Status = BCryptOpenAlgorithmProvider(&amp;hAlg,
+        Status = BCryptOpenAlgorithmProvider(&hAlg,
                                              BCRYPT_RSA_ALGORITHM,
                                              MS_PRIMITIVE_PROVIDER,
                                              0);
@@ -326,13 +326,13 @@ CBaseKsFilter::OPMVideoOutputFinishInitialization(
         //  Our key is in the legacy format - need to append a BLOBHEADER
         PUCHAR pbData = NULL;
         DWORD cbData = 0;
-        Status = ConvertLegacyRsaPrivateKeyToBCryptBlob(PrivateKey, sizeof(PrivateKey), &amp;pbData, &amp;cbData);
+        Status = ConvertLegacyRsaPrivateKeyToBCryptBlob(PrivateKey, sizeof(PrivateKey), &pbData, &cbData);
         if (STATUS_SUCCESS == Status)
         {
             Status = BCryptImportKeyPair(hAlg,
                                          NULL,
                                          BCRYPT_RSAPRIVATE_BLOB,
-                                         &amp;hKey,
+                                         &hKey,
                                          pbData,
                                          cbData,
                                          0);
@@ -349,12 +349,12 @@ CBaseKsFilter::OPMVideoOutputFinishInitialization(
         Status = BCryptDecrypt(hKey,
                                (PUCHAR)pData,
                                OPM_ENCRYPTED_INITIALIZATION_PARAMETERS_SIZE,
-                               &amp;paddingInfo,
+                               &paddingInfo,
                                NULL,
                                0,
                                NULL,
                                0,
-                               &amp;DecryptedLength,
+                               &DecryptedLength,
                                BCRYPT_PAD_OAEP);
     }
  
@@ -371,12 +371,12 @@ CBaseKsFilter::OPMVideoOutputFinishInitialization(
          Status = BCryptDecrypt(hKey,
                                (PUCHAR)pData,
                                OPM_ENCRYPTED_INITIALIZATION_PARAMETERS_SIZE,
-                               &amp;paddingInfo,
+                               &paddingInfo,
                                NULL,
                                0,
                                DecryptedParams,
                                DecryptedLength,
-                               &amp;DecryptedLength,
+                               &DecryptedLength,
                                BCRYPT_PAD_OAEP);
     }
  
@@ -384,11 +384,11 @@ CBaseKsFilter::OPMVideoOutputFinishInitialization(
     if (Status == STATUS_SUCCESS)
     {
         InitParams *Params = (InitParams *)DecryptedParams;
-        if (!RtlEqualMemory(&amp;pFilter->m_RandomNumber, &amp;Params->guidCOPPRandom, sizeof(pFilter->m_RandomNumber)))
+        if (!RtlEqualMemory(&pFilter->m_RandomNumber, &Params->guidCOPPRandom, sizeof(pFilter->m_RandomNumber)))
         {
             Status = STATUS_ACCESS_DENIED;
         } else {
-            RtlCopyMemory(pFilter->m_AESKey, &amp;Params->guidKDI, sizeof(pFilter->m_AESKey));
+            RtlCopyMemory(pFilter->m_AESKey, &Params->guidKDI, sizeof(pFilter->m_AESKey));
             pFilter->m_StatusSequenceNumber = Params->StatusSeqStart;
             pFilter->m_CommandSequenceNumber = Params->CommandSeqStart;
         }
@@ -472,13 +472,13 @@ NTSTATUS GenerateSignData(__in_bcount(AES_KEYSIZE_128) PUCHAR Key,
     BYTE rBuffer[OPM_OMAC_SIZE];
  
     if (STATUS_SUCCESS == Status) {
-        Status = BCryptOpenAlgorithmProvider(&amp;hAlg, BCRYPT_AES_ALGORITHM, MS_PRIMITIVE_PROVIDER, 0);
+        Status = BCryptOpenAlgorithmProvider(&hAlg, BCRYPT_AES_ALGORITHM, MS_PRIMITIVE_PROVIDER, 0);
     }
     //
     //  Get the size needed for the key data
     //
     if (STATUS_SUCCESS == Status) {
-        Status = BCryptGetProperty(hAlg, BCRYPT_OBJECT_LENGTH, (PBYTE)&amp;cbKeyObject, sizeof(ULONG), &amp;cbData, 0);
+        Status = BCryptGetProperty(hAlg, BCRYPT_OBJECT_LENGTH, (PBYTE)&cbKeyObject, sizeof(ULONG), &cbData, 0);
     }
     //
     //  Allocate the key data object
@@ -504,10 +504,10 @@ NTSTATUS GenerateSignData(__in_bcount(AES_KEYSIZE_128) PUCHAR Key,
         Status = BCryptImportKey(hAlg, 
                                  NULL, 
                                  BCRYPT_KEY_DATA_BLOB, 
-                                 &amp;hKey,
+                                 &hKey,
                                  pbKeyObject,
                                  cbKeyObject,
-                                 (PUCHAR)&amp;KeyBlob,
+                                 (PUCHAR)&KeyBlob,
                                  sizeof(KeyBlob),
                                  0);
     }
@@ -519,7 +519,7 @@ NTSTATUS GenerateSignData(__in_bcount(AES_KEYSIZE_128) PUCHAR Key,
         ULONG cbBuffer = sizeof(rBuffer);
         RtlZeroMemory(rBuffer, sizeof(rBuffer));
         Status = BCryptEncrypt(hKey, rBuffer, cbBuffer, NULL, NULL, 0, 
-                      rBuffer, sizeof(rBuffer), &amp;cbBuffer, 0);
+                      rBuffer, sizeof(rBuffer), &cbBuffer, 0);
     }
  
     //
@@ -531,12 +531,12 @@ NTSTATUS GenerateSignData(__in_bcount(AES_KEYSIZE_128) PUCHAR Key,
         LPBYTE pbL = rBuffer;
  
         LShift( pbL, rgbLU );
-        if( pbL[0] &amp; 0x80 )
+        if( pbL[0] & 0x80 )
         {
             rgbLU[OPM_OMAC_SIZE - 1] ^= bLU_ComputationConstant;
         }
         LShift( rgbLU, rgbLU_1 );
-        if( rgbLU[0] &amp; FIRST_BIT_MASK )
+        if( rgbLU[0] & FIRST_BIT_MASK )
         {
             rgbLU_1[OPM_OMAC_SIZE - 1] ^= bLU_ComputationConstant;
         }
@@ -551,10 +551,10 @@ NTSTATUS GenerateSignData(__in_bcount(AES_KEYSIZE_128) PUCHAR Key,
         Status = BCryptImportKey(hAlg, 
                                  NULL, 
                                  BCRYPT_KEY_DATA_BLOB, 
-                                 &amp;hKey,
+                                 &hKey,
                                  pbKeyObject,
                                  cbKeyObject,
-                                 (PUCHAR)&amp;KeyBlob,
+                                 (PUCHAR)&KeyBlob,
                                  sizeof(KeyBlob),
                                  0);
     }
@@ -570,7 +570,7 @@ NTSTATUS GenerateSignData(__in_bcount(AES_KEYSIZE_128) PUCHAR Key,
                 RtlCopyMemory( rBuffer, pbDataInCur, OPM_OMAC_SIZE );
  
                 Status = BCryptEncrypt(hKey, rBuffer, sizeof(rBuffer), NULL, NULL, 0, 
-                                       rBuffer, sizeof(rBuffer), &amp;cbBuffer, 0);
+                                       rBuffer, sizeof(rBuffer), &cbBuffer, 0);
  
  
                 pbDataInCur += OPM_OMAC_SIZE;
@@ -593,12 +593,12 @@ NTSTATUS GenerateSignData(__in_bcount(AES_KEYSIZE_128) PUCHAR Key,
                 }
  
                 Status = BCryptEncrypt(hKey, rBuffer, sizeof(rBuffer), NULL, NULL, 0, 
-                                       Tag, OPM_OMAC_SIZE, &amp;cbBuffer, 0);
+                                       Tag, OPM_OMAC_SIZE, &cbBuffer, 0);
  
                 cbData = 0;
             }
  
-        } while( STATUS_SUCCESS == Status &amp;&amp; cbData > 0 );
+        } while( STATUS_SUCCESS == Status && cbData > 0 );
     }
  
     //  Clean up
@@ -656,7 +656,7 @@ CBaseKsFilter::OPMVideoOutputGetInformation(
                                   Tag);
         if (Status == STATUS_SUCCESS)
         {
-            if (!RtlEqualMemory(Tag, &amp;Parameters->omac, OPM_OMAC_SIZE))
+            if (!RtlEqualMemory(Tag, &Parameters->omac, OPM_OMAC_SIZE))
             {
                 Status = STATUS_INVALID_SIGNATURE;
             }
@@ -711,7 +711,7 @@ CBaseKsFilter::OPMVideoOutputGetInformation(
  IoGetDeviceInterfaces( pInterfaceClassGuid,
  pPhysicalDeviceObject,
   0,
-      &amp;pSymbolicLinkList
+      &pSymbolicLinkList
      );
  //   Loop through the pSymbolicLinkList and see if we have a match between any symbolic link name
         // and the caller-supplied path in CodecInfoParameters
@@ -720,7 +720,7 @@ CBaseKsFilter::OPMVideoOutputGetInformation(
             for(; pSymbolicLinkList;) {
                 PUNICODE_STRING pSymbolicLinkName = pSymbolicLinkList;
  // Skip the first two characters that distinguish user and kernel mode names
-      if (CodecInfoParameters->cbVerifier == pSymbolicLinkName->Length  &amp;&amp; RtlEqualMemory(pSymbolicLinkName->Buffer + TWOCHAR_OFFSET, 
+      if (CodecInfoParameters->cbVerifier == pSymbolicLinkName->Length  && RtlEqualMemory(pSymbolicLinkName->Buffer + TWOCHAR_OFFSET, 
    CodecInfoParameters->Verifier + TWOCHAR_OFFSET,
   CodecInfoParameters->cbVerifier - TWOCHAR_OFFSET)) {
   Status = STATUS_SUCCESS;
@@ -796,7 +796,7 @@ DEFINE_KSMETHOD_SET_TABLE(SHEDFilterMethodSets)
 {
     DEFINE_KSMETHOD_SET
     ( 
-        &amp;KSPROPSETID_OPMVideoOutput,                    // MethodSetGUID
+        &KSPROPSETID_OPMVideoOutput,                    // MethodSetGUID
         SIZEOF_ARRAY(SHEDFilterMethodTable),            // MethodCount
         SHEDFilterMethodTable,                          // MethodItem
         0,                                              // FastIoCount

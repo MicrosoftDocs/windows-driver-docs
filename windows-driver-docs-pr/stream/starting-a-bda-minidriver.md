@@ -43,11 +43,11 @@ const KSFILTER_DESCRIPTOR    InitialTunerFilterDescriptor;
 //
 DEFINE_KSFILTER_DESCRIPTOR(InitialTunerFilterDescriptor)
 {
-    &amp;FilterDispatch,             // Table of dispatch routines
-    &amp;FilterAutomation,           // Table of properties and methods
+    &FilterDispatch,             // Table of dispatch routines
+    &FilterAutomation,           // Table of properties and methods
     KSFILTER_DESCRIPTOR_VERSION, // Version
     0,                           // Flags
-    &amp;KSNAME_Filter,              // Reference Guid
+    &KSNAME_Filter,              // Reference Guid
     DEFINE_KSFILTER_PIN_DESCRIPTORS(InitialPinDescriptors),
                                    // PinDescriptorsCount
                                    // PinDescriptorSize
@@ -81,8 +81,8 @@ InitialPinDescriptors[] =
     //  Antenna Pin
     //
     {
-        &amp;AntennaPinDispatch,
-        &amp;AntennaAutomation,   // AntennaPinAutomation
+        &AntennaPinDispatch,
+        &AntennaAutomation,   // AntennaPinAutomation
         {
             0,  // Interfaces
             NULL,
@@ -124,7 +124,7 @@ const
 BDA_FILTER_TEMPLATE
 TunerBdaFilterTemplate =
 {
-    &amp;TemplateTunerFilterDescriptor,
+    &TemplateTunerFilterDescriptor,
     SIZEOF_ARRAY(TemplateTunerPinPairings),
     TemplateTunerPinPairings
 };
@@ -137,11 +137,11 @@ TunerBdaFilterTemplate =
 //
 DEFINE_KSFILTER_DESCRIPTOR(TemplateTunerFilterDescriptor)
 {
-    &amp;FilterDispatch,             // Table of dispatch routines
-    &amp;FilterAutomation,           // Table of properties and methods
+    &FilterDispatch,             // Table of dispatch routines
+    &FilterAutomation,           // Table of properties and methods
     KSFILTER_DESCRIPTOR_VERSION, // Version
     0,                           // Flags
-    &amp;KSNAME_Filter,              // Reference Guid
+    &KSNAME_Filter,              // Reference Guid
     DEFINE_KSFILTER_PIN_DESCRIPTORS(TemplatePinDescriptors),
                                    // PinDescriptorsCount
                                    // PinDescriptorSize

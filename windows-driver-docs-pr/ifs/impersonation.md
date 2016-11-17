@@ -56,9 +56,9 @@ NTSTATUS PerformSpecialTask(IN PFSD_CONTEXT Context)
   // Save the existing token, if any (otherwise NULL)
   //
   oldToken = PsReferenceImpersonationToken(PsGetCurrentThread(),
-                                           &amp;CopyOnOpen,
-                                           &amp;EffectiveOnly,
-                                           &amp;ImpersonationLevel);
+                                           &CopyOnOpen,
+                                           &EffectiveOnly,
+                                           &ImpersonationLevel);
 
   Status = PsImpersonateClient( PsGetCurrentThread(),
                                 Context->SystemProcess,

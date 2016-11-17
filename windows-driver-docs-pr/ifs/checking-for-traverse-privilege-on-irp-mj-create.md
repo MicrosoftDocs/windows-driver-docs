@@ -17,7 +17,7 @@ One of the primary concerns [**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/lib
 ```
     BOOLEAN traverseCheck = 
         !(IrpContext->IrpSp->Parameters.Create.SecurityContext->AccessState->Flags
-            &amp; TOKEN_HAS_TRAVERSE_PRIVILEGE);
+            & TOKEN_HAS_TRAVERSE_PRIVILEGE);
 ```
 
 Note that the traverse privilege check relies upon the state information passed to the file system from the I/O manager. This information is based upon whether the caller holds SeChangeNotifyPrivilege. If the caller does not hold this privilege, a traverse check must be done on each directory. In the example below, the traverse check is done using a generic routine, typically used for most security checks:
@@ -26,22 +26,22 @@ Note that the traverse privilege check relies upon the state information passed 
 
 ```
     SeLockSubjectContext(
-        &amp;accessParams.AccessState->SubjectSecurityContext);
+        &accessParams.AccessState->SubjectSecurityContext);
 //
 // Note: AccessParams is passed to us and is normally based on
 //       the fields of the same name from the IRP
 //
 
     granted = SeAccessCheck( Fcb->SecurityDescriptor,
-        &amp;AccessParams.AccessState->SubjectSecurityContext,
+        &AccessParams.AccessState->SubjectSecurityContext,
         TRUE,
         AccessParams.desiredAccess,
         0,
-        &amp;Privileges,
+        &Privileges,
         IoGetFileObjectGenericMapping(),
         AccessParams.AccessMode,
-        &amp;AccessParams.GrantedAccess,
-        &amp;AccessParams.status );
+        &AccessParams.GrantedAccess,
+        &AccessParams.status );
 
     if (Privileges != NULL) {
         //
@@ -56,7 +56,7 @@ Note that the traverse privilege check relies upon the state information passed 
         //
         // delete granted bits from desired bits
         //
-        AccessParams.desiredAccess &amp;= 
+        AccessParams.desiredAccess &= 
             ~(AccessParams.GrantedAccess | MAXIMUM_ALLOWED);
  
         if (!checkOnly) {
@@ -70,16 +70,16 @@ Note that the traverse privilege check relies upon the state information passed 
         if (maxDesired) {
 
             maxDelete = 
-                (BOOLEAN)(AccessParams.AccessState->PreviouslyGrantedAccess &amp; 
+                (BOOLEAN)(AccessParams.AccessState->PreviouslyGrantedAccess & 
                     DELETE);
             maxReadAttr = 
-                (BOOLEAN)(AccessParams.AccessState->PreviouslyGrantedAccess &amp; 
+                (BOOLEAN)(AccessParams.AccessState->PreviouslyGrantedAccess & 
                     FILE_READ_ATTRIBUTES);
         }
-        AccessParams.AccessState->RemainingDesiredAccess &amp;= 
+        AccessParams.AccessState->RemainingDesiredAccess &= 
             ~(AaccessParams.GrantedAccess | MAXIMUM_ALLOWED);
     }
-    SeUnlockSubjectContext(&amp;accessParams.AccessState->SubjectSecurityContext);  
+    SeUnlockSubjectContext(&accessParams.AccessState->SubjectSecurityContext);  
 }
 ```
 

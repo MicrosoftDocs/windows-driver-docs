@@ -24,7 +24,7 @@ Reading
                            Adapter->AdapterHandle,
                            0,
                            FIELD_OFFSET(PCI_COMMON_CONFIG, Command),
-                           &amp;usPciCommand,
+                           &usPciCommand,
                            sizeof(USHORT));
 ```
 
@@ -35,7 +35,7 @@ Writing
                            Adapter->AdapterHandle,
                            0,
                            FIELD_OFFSET(PCI_COMMON_CONFIG, Command),
-                           &amp;usPciCommand,
+                           &usPciCommand,
                            sizeof(USHORT));
 ```
 
@@ -48,7 +48,7 @@ Reading
                            Adapter->AdapterHandle,
                            PCI_WHICHSPACE_CONFIG,
                            FIELD_OFFSET(PCI_COMMON_CONFIG, Command),
-                           &amp;usPciCommand,
+                           &usPciCommand,
                            sizeof(USHORT) );
 ```
 
@@ -59,7 +59,7 @@ Writing
                            Adapter->AdapterHandle,
                            PCI_WHICHSPACE_CONFIG,
                            FIELD_OFFSET(PCI_COMMON_CONFIG, Command),
-                           &amp;usPciCommand,
+                           &usPciCommand,
                            sizeof(USHORT) );
 ```
 

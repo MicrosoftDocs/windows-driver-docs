@@ -74,10 +74,10 @@ In the header file that is included in the 3D printer firmware, the IHV must spe
 #define MS3DPRINT_XPROP_SIZE (4+2+2+2+MS3DPRINT_OSP_SIZE)
 
 #define SIZE_TO_DW(__size)                \
-        ((uint32_t)__size) &amp; 0xFF,        \
-        (((uint32_t)__size)>>8) &amp; 0xFF,   \
-        (((uint32_t)__size)>>16) &amp; 0xFF,  \
-        (((uint32_t)__size)>>24) &amp; 0xFF 
+        ((uint32_t)__size) & 0xFF,        \
+        (((uint32_t)__size)>>8) & 0xFF,   \
+        (((uint32_t)__size)>>16) & 0xFF,  \
+        (((uint32_t)__size)>>24) & 0xFF 
 
 // CompatibleID and SubCompatibleID
 static const uint8_t PROGMEM ms3dprint_descriptor[40] = {

@@ -20,7 +20,7 @@ A printer minidriver communicates information about the bidi extension file to t
 The following sample shows the `BidiFiles` section of the INI file. The `BidiSPMFile` entry would be used for a standard TCP/IP port monitor, and the `BidiWSDFile` entry would be used for a Web Services for Devices (WSD) port monitor.
 
 ```
-# OEM Mapping &amp; Extension GDL files 
+# OEM Mapping & Extension GDL files 
 # 
 [BidiFiles]
 BidiSPMFile = BidiSPM_AcmeXXX.XML

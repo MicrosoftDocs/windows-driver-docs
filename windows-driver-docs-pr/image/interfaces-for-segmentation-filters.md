@@ -48,7 +48,7 @@ lCreationFlags = COPY_PARENT_PROPERTY_VALUES;
 pWiaItem2->CreateChildItem(lItemFlags,
                            lCreationFlags,
                            bstrItemName,
-                           &amp;pChildItem);
+                           &pChildItem);
 ```
 
 **IWiaItem2::CreateChildItem** differs slightly from **IWiaItem::CreateChildItem**. The **IWiaItem2::CreateChildItem** method has a new parameter, *lCreationFlags*; The **IWiaItem2::CreateChildItem** method's *lItemFlags* parameter corresponds to the *lFlags* parameter of **IWiaItem::CreateChildItem**. Passing COPY\_PARENT\_PROPERTY\_VALUES with the *lCreationFlags* parameter to the WIA service, as shown in the preceding code snippet, tells the WIA service to set all readable/writeable WIA properties of the child item to the same values as its parent's. The reason a segmentation filter should pass this flag is to ensure that properties, such as image format and resolution in the newly created child item, are the as the parent item. It is important that the resolution is the same because the extent properties that the segmentation filter will set into the child item are dependent on the resolution of the image. It is also important that the image format and resolution are the same in the child item if an application wants to use the preview component (described in the Microsoft Windows SDK documentation). Before acquiring the final image, an application can modify the resolution to acquire a higher quality image from the scanner.

@@ -136,7 +136,7 @@ NTSTATUS
   // Register the PSHED plug-in
   Status =
     PshedRegisterPlugin(
-      &amp;RegPacket
+      &RegPacket
       );
 
   // Check status

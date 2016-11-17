@@ -23,7 +23,7 @@ When GDI-supported halftone methods are being used, GDI allows specification of 
 -   The \*rcHTPatternID, \*HTPatternSize and \*HTNumPatterns attributes allow you to describe halftone patterns that are stored in a resource DLL. Halftone pattern resources are three-dimensional arrays of binary data, starting on a DWORD address boundary. They can be specified using the following format, which calculates the correct size and provides the required address alignment:
 
     ```
-    BYTE HTPatternResource [HTNumPatterns][(HTPatternSize.y*HTPatternSize.x+3) &amp; ~3];
+    BYTE HTPatternResource [HTNumPatterns][(HTPatternSize.y*HTPatternSize.x+3) & ~3];
     ```
 
     Within an .rc file used to create a resource DLL, the pattern might be specified as follows:

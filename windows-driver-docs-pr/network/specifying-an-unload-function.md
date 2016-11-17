@@ -60,7 +60,7 @@ NTSTATUS
   ...
 
   // Initialize the driver config structure
-  WDF_DRIVER_CONFIG_INIT(&amp;config, NULL);
+  WDF_DRIVER_CONFIG_INIT(&config, NULL);
 
   // Indicate that this is a non-PNP driver
  config.DriverInitFlags = WdfDriverInitNonPnpDriver;
@@ -74,8 +74,8 @@ NTSTATUS
  DriverObject,
  RegistryPath,
       NULL,
-      &amp;config,
-      &amp;driver
+      &config,
+      &driver
       );
 
   ...

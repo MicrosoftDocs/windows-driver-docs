@@ -204,7 +204,7 @@ CMyDevice::OnPrepareHardware(IWDFDevice* pDevice)
         //
         // If firmware update is in progress, check if its done. For
         // this it may be necessary to access the MB device. Note that 
-        // if the MB device (&amp; hence the Firmware update device) needs
+        // if the MB device (& hence the Firmware update device) needs
         // multiple stop/starts to do the firmware update. In that case
         // it will be marked as done at the end of the process
         //
@@ -289,7 +289,7 @@ CMyDevice::SignalFirmwareUpdateInProgress(
     do
     {
        
-        hr = pDevice->QueryInterface(IID_PPV_ARGS(&amp;spPropertyStoreFactory));
+        hr = pDevice->QueryInterface(IID_PPV_ARGS(&spPropertyStoreFactory));
         if (FAILED(hr))
         {
             Trace(TRACE_LEVEL_ERROR, "Failed to query for property store factory. Error = 0x%x", hr);
@@ -298,8 +298,8 @@ CMyDevice::SignalFirmwareUpdateInProgress(
         }
         
         hr = spPropertyStoreFactory->RetrieveUnifiedDevicePropertyStore(
-            &amp;wdfPropRoot,
-            &amp;spPropStore
+            &wdfPropRoot,
+            &spPropStore
             );
         if (FAILED(hr))
         {
@@ -309,12 +309,12 @@ CMyDevice::SignalFirmwareUpdateInProgress(
 
         // Set the OS flag
         hr = spPropStore->SetPropertyData(
-            reinterpret_cast<const DEVPROPKEY*>(&amp;DEVPKEY_Device_PostInstallInProgress),
+            reinterpret_cast<const DEVPROPKEY*>(&DEVPKEY_Device_PostInstallInProgress),
             0, // this property is language neutral
             0,
             DEVPROP_TYPE_BOOLEAN,
             sizeof(DEVPROP_BOOLEAN),
-            &amp;boolValue
+            &boolValue
             );
         if (FAILED(hr))
         {
@@ -359,7 +359,7 @@ CMyDevice::SignalFirmwareUpdateComplete(
     
     do
     {
-        hr = pDevice->QueryInterface(IID_PPV_ARGS(&amp;spPropertyStoreFactory));
+        hr = pDevice->QueryInterface(IID_PPV_ARGS(&spPropertyStoreFactory));
         if (FAILED(hr))
         {
             Trace(TRACE_LEVEL_ERROR, "Failed to query for property store factory. Error = 0x%x", hr);
@@ -368,8 +368,8 @@ CMyDevice::SignalFirmwareUpdateComplete(
         }
 
         hr = spPropertyStoreFactory->RetrieveUnifiedDevicePropertyStore(
-            &amp;wdfPropRoot,
-            &amp;spPropStore
+            &wdfPropRoot,
+            &spPropStore
             );
         if (FAILED(hr))
         {
@@ -378,7 +378,7 @@ CMyDevice::SignalFirmwareUpdateComplete(
         }
 
         hr = spPropStore->SetPropertyData(
-            reinterpret_cast<const DEVPROPKEY*>(&amp;DEVPKEY_Device_PostInstallInProgress),
+            reinterpret_cast<const DEVPROPKEY*>(&DEVPKEY_Device_PostInstallInProgress),
             0, // this property is language neutral
             0,
             DEVPROP_TYPE_BOOLEAN,

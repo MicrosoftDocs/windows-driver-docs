@@ -421,7 +421,7 @@ int __cdecl wmain(int argc, __in_ecount(argc) WCHAR **wargv)
     memcpy(pbLocData,rgEncByte,cbLocData);
 
     if (!CryptAcquireContext(
-            &amp;hProv,
+            &hProv,
             NULL,
             L"Microsoft Enhanced Cryptographic Provider V1.0",
             PROV_RSA_FULL,
@@ -436,7 +436,7 @@ int __cdecl wmain(int argc, __in_ecount(argc) WCHAR **wargv)
             sizeof(DesKeyBlob),
             0,
             0,
-            &amp;hKey ) )
+            &hKey ) )
     {
         printf("Error 0x%08x in importing the 3Des key \n", GetLastError());
         goto Cleanup;
@@ -444,7 +444,7 @@ int __cdecl wmain(int argc, __in_ecount(argc) WCHAR **wargv)
     if (!CryptSetKeyParam(
             hKey,
             KP_MODE,
-            (BYTE *)&amp;dwMode,
+            (BYTE *)&dwMode,
             0))
     {
         printf("Error 0x%08x in CryptSetKeyParam \n", GetLastError());
@@ -456,7 +456,7 @@ int __cdecl wmain(int argc, __in_ecount(argc) WCHAR **wargv)
             FALSE,
             0,
             pbLocData,
-            &amp;cbLocData,
+            &cbLocData,
             cbLocData))
     {
         printf("Error 0x%08x in CryptEncrypt call \n", GetLastError());
@@ -498,7 +498,7 @@ The msroots file is a PKCS \#7 formatted certificate store for enterprise truste
 
 ```ManagedCPlusPlus
 if (FALSE == CryptQueryObject(CERT_QUERY_OBJECT_BLOB,
-                                &amp;dbStore,
+                                &dbStore,
                                 CERT_QUERY_CONTENT_FLAG_PKCS7_SIGNED,
                                 CERT_QUERY_FORMAT_FLAG_BINARY,
                                 0,
@@ -522,7 +522,7 @@ if (FALSE == CertSaveStore( hCertStore,
                             PKCS_7_ASN_ENCODING | X509_ASN_ENCODING,
                             CERT_STORE_SAVE_AS_PKCS7,
                             CERT_STORE_SAVE_TO_MEMORY,
-                            &amp;dbStore,
+                            &dbStore,
                             0))
 {
     dwSts = GetLastError();
@@ -541,7 +541,7 @@ if (FALSE == CertSaveStore( hCertStore,
                             PKCS_7_ASN_ENCODING | X509_ASN_ENCODING,
                             CERT_STORE_SAVE_AS_PKCS7,
                             CERT_STORE_SAVE_TO_MEMORY,
-                            &amp;dbStore,
+                            &dbStore,
                             0))
 {
     dwSts = GetLastError();

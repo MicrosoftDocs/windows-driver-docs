@@ -22,7 +22,7 @@ status = FltAllocateContext(
            FLT_INSTANCE_CONTEXT,         //ContextType
            CTX_INSTANCE_CONTEXT_SIZE,    //ContextSize
  NonPagedPool,                 //PoolType
-           &amp;instanceContext);            //ReturnedContext
+           &instanceContext);            //ReturnedContext
 ```
 
 In the CTX sample, the following context definition is registered for instance contexts:

@@ -54,26 +54,26 @@ STDMETHODIMP CWIADevice::Initialize(
   //
 
   DWORD dwMode = 0;
-  hr = pIStiDeviceControl->GetMyDeviceOpenMode(&amp;dwMode);
+  hr = pIStiDeviceControl->GetMyDeviceOpenMode(&dwMode);
   if(FAILED(hr)){
       return hr;
   }
 
-  if(dwMode &amp; STI_DEVICE_CREATE_DATA)
+  if(dwMode & STI_DEVICE_CREATE_DATA)
   {
       //
       // device is being opened for data
       //
   }
 
-  if(dwMode &amp; STI_DEVICE_CREATE_STATUS)
+  if(dwMode & STI_DEVICE_CREATE_STATUS)
   {
       //
       // device is being opened for status
       //
   }
 
-  if(dwMode &amp; STI_DEVICE_CREATE_BOTH)
+  if(dwMode & STI_DEVICE_CREATE_BOTH)
   {
       //
       // device is being opened for both data and status
@@ -128,7 +128,7 @@ STDMETHODIMP CWIADevice::Initialize(
                    TEXT("DeviceData"),       // address of name of subkey to open
                    0,                        // options (must be NULL)
                    KEY_QUERY_VALUE|KEY_READ, // just want to QUERY a value
-                   &amp;hOpenKey                 // address of handle to open key
+                   &hOpenKey                 // address of handle to open key
      ) == ERROR_SUCCESS) {
 
       //

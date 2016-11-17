@@ -46,8 +46,8 @@ NTSTATUS
 
   // Register the WSK application
   wskClientNpi.ClientContext = NULL;
-  wskClientNpi.Dispatch = &amp;WskAppDispatch;
-  Status = WskRegister(&amp;wskClientNpi, &amp;WskRegistration);
+  wskClientNpi.Dispatch = &WskAppDispatch;
+  Status = WskRegister(&wskClientNpi, &WskRegistration);
 
   if(!NT_SUCCESS(Status)) {
       .
@@ -101,9 +101,9 @@ NTSTATUS
   // Capture the WSK Provider NPI. If WSK subsystem is not ready yet,
   // wait until it becomes ready.
   Status = WskCaptureProviderNPI(
-    &amp;WskRegistration, // must have been initialized with WskRegister
+    &WskRegistration, // must have been initialized with WskRegister
     WSK_INFINITE_WAIT,
-    &amp;wskProviderNpi
+    &wskProviderNpi
     );
 
   if(!NT_SUCCESS(Status))
@@ -126,11 +126,11 @@ NTSTATUS
   // The WSK Provider NPI has been captured.
   // Create and set up a listening socket that accepts
    // incoming connections.
-  Status = CreateListeningSocket(&amp;wskProviderNpi, ...);
+  Status = CreateListeningSocket(&wskProviderNpi, ...);
 
   // The WSK Provider NPI will not be used any more.
   // So, release it here immediately.
-  WskReleaseProviderNPI(&amp;WskRegistration);
+  WskReleaseProviderNPI(&WskRegistration);
 
   // Return result of socket creation routine
   return Status;

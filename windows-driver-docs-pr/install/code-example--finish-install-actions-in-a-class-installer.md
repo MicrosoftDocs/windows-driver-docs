@@ -61,10 +61,10 @@ SampleClassInstaller(
         // Obtain the device install parameters for the device
         // and set the DI_FLAGSEX_FINISHINSTALL_ACTION flag
         DeviceInstallParams.cbSize = sizeof(DeviceInstallParams);
-        if (SetupDiGetDeviceInstallParams(DeviceInfoSet, DeviceInfoData, &amp;DeviceInstallParams))
+        if (SetupDiGetDeviceInstallParams(DeviceInfoSet, DeviceInfoData, &DeviceInstallParams))
         {
           DeviceInstallParams.FlagsEx |= DI_FLAGSEX_FINISHINSTALL_ACTION;
-          SetupDiSetDeviceInstallParams(DeviceInfoSet, DeviceInfoData, &amp;DeviceInstallParams);
+          SetupDiSetDeviceInstallParams(DeviceInfoSet, DeviceInfoData, &DeviceInstallParams);
         }
       }
       break;

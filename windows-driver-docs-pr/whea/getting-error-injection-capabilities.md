@@ -48,7 +48,7 @@ Result =
     0,
     NULL,
     NULL,
-    &amp;pOutParameters,
+    &pOutParameters,
     NULL
     );
 
@@ -57,7 +57,7 @@ Result =
   pOutParameters->Get(
     L"Status",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
@@ -69,7 +69,7 @@ Result =
   pOutParameters->Get(
     L"Capabilities",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );

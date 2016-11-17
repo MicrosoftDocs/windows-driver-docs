@@ -45,7 +45,7 @@ NTSTATUS
             // Check against expected connection type.
             //
 
-            if ((Descriptor->u.Connection.Class == CM_RESOURCE_CONNECTION_CLASS_GPIO) &amp;&amp;
+            if ((Descriptor->u.Connection.Class == CM_RESOURCE_CONNECTION_CLASS_GPIO) &&
                 (Descriptor->u.Connection.Type == CM_RESOURCE_CONNECTION_TYPE_GPIO_IO)) {
 
                 DeviceExtension->ConnectionId.LowPart = Descriptor->u.Connection.IdLowPart;
@@ -73,20 +73,20 @@ NTSTATUS IoRoutine(WDFDEVICE Device, BOOLEAN ReadOperation)
     WDF_IO_TARGET_OPEN_PARAMS OpenParams
 
     DeviceExtension = XyzDrvGetDeviceExtension(Device);
-    RtlInitEmptyUnicodeString(&amp;ReadString,
+    RtlInitEmptyUnicodeString(&ReadString,
                               ReadStringBuffer,
                               sizeof(ReadStringBuffer));
 
-    Status = RESOURCE_HUB_CREATE_PATH_FROM_ID(&amp;ReadString,
+    Status = RESOURCE_HUB_CREATE_PATH_FROM_ID(&ReadString,
                                               DeviceExtension->ConnectionId.LowPart,
                                               DeviceExtension->ConnectionId.HighPart);
 
     NT_ASSERT(NT_SUCCESS(Status));
 
-    WDF_OBJECT_ATTRIBUTES_INIT(&amp;ObjectAttributes);
+    WDF_OBJECT_ATTRIBUTES_INIT(&ObjectAttributes);
     ObjectAttributes.ParentObject = Device;
 
-    Status = WdfIoTargetCreate(Device, &amp;ObjectAttributes, &amp;IoTarget);
+    Status = WdfIoTargetCreate(Device, &ObjectAttributes, &IoTarget);
     if (!NT_SUCCESS(Status)) {
         goto IoErrorEnd;
     }   
@@ -97,9 +97,9 @@ NTSTATUS IoRoutine(WDFDEVICE Device, BOOLEAN ReadOperation)
         DesiredAccess = GENERIC_WRITE;
     }
 
-    WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME(&amp;OpenParams, ReadString, DesiredAccess);
+    WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME(&OpenParams, ReadString, DesiredAccess);
 
-    Status = WdfIoTargetOpen(IoTarget, &amp;OpenParams);
+    Status = WdfIoTargetOpen(IoTarget, &OpenParams);
     if (!NT_SUCCESS(Status)) {
         goto IoErrorEnd;
     }
@@ -119,8 +119,8 @@ After the peripheral device driver has obtained a handle to a GPIO I/O resource,
     WDFMEMORY WdfMemory;
     NTSTATUS Status;
 
-    WDF_OBJECT_ATTRIBUTES_INIT(&amp;RequestAttributes);
-    Status = WdfRequestCreate(&amp;RequestAttributes, IoTarget, &amp;IoctlRequest);
+    WDF_OBJECT_ATTRIBUTES_INIT(&RequestAttributes);
+    Status = WdfRequestCreate(&RequestAttributes, IoTarget, &IoctlRequest);
     if (!NT_SUCCESS(Status)) {
         goto RwErrorExit;
     }
@@ -129,9 +129,9 @@ After the peripheral device driver has obtained a handle to a GPIO I/O resource,
     // Set up a WDF memory object for the IOCTL request.
     //
 
-    WDF_OBJECT_ATTRIBUTES_INIT(&amp;Attributes);
+    WDF_OBJECT_ATTRIBUTES_INIT(&Attributes);
     Attributes.ParentObject = IoctlRequest;
-    Status = WdfMemoryCreatePreallocated(&amp;Attributes, Data, Size, &amp;WdfMemory);
+    Status = WdfMemoryCreatePreallocated(&Attributes, Data, Size, &WdfMemory);
     if (!NT_SUCCESS(Status)) {
         goto RwErrorExit;
     }
@@ -167,9 +167,9 @@ After the peripheral device driver has obtained a handle to a GPIO I/O resource,
     // Send the request synchronously (with a 60-second time-out).
     //
 
-    WDF_REQUEST_SEND_OPTIONS_INIT(&amp;SendOptions,
+    WDF_REQUEST_SEND_OPTIONS_INIT(&SendOptions,
                                   WDF_REQUEST_SEND_OPTION_SYNCHRONOUS);
-    WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT(&amp;SendOptions,
+    WDF_REQUEST_SEND_OPTIONS_SET_TIMEOUT(&SendOptions,
                                          WDF_REL_TIMEOUT_IN_SEC(60));
 
     Status = WdfRequestAllocateTimer(IoctlRequest);
@@ -177,7 +177,7 @@ After the peripheral device driver has obtained a handle to a GPIO I/O resource,
         goto RwErrorExit;
     }
 
-    if (!WdfRequestSend(IoctlRequest, IoTarget, &amp;SendOptions)) {
+    if (!WdfRequestSend(IoctlRequest, IoTarget, &SendOptions)) {
         Status = WdfRequestGetStatus(IoctlRequest);
     }
 

@@ -84,10 +84,10 @@ const NPI_PROVIDER_CHARACTERISTICS ProviderCharacteristics =
   {
     0,
     sizeof(NPI_REGISTRATION_INSTANCE),
-    &amp;EXNPI_NPIID,
-    &amp;ProviderModuleId,
+    &EXNPI_NPIID,
+    &ProviderModuleId,
     0,
-    &amp;NpiSpecificCharacteristics
+    &NpiSpecificCharacteristics
   }
 };
 
@@ -143,9 +143,9 @@ NTSTATUS
 
   // Register the provider module with the NMR
   Status = NmrRegisterProvider(
-    &amp;ProviderCharacteristics,
-    &amp;ProviderRegistrationContext,
-    &amp;ProviderHandle
+    &ProviderCharacteristics,
+    &ProviderRegistrationContext,
+    &ProviderHandle
     );
 
   // Return the result of the registration

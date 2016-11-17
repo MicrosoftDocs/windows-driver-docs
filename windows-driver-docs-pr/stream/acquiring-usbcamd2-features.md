@@ -20,15 +20,15 @@ You must acquire a pointer to the [**USBCAMD\_INTERFACE**](https://msdn.microsof
 The following code demonstrates how to build and send the IRP\_MN\_QUERY\_INTERFACE request from the camera minidriver:
 
 ```
-KeInitializeEvent(&amp;Event, NotificationEvent, FALSE);
+KeInitializeEvent(&Event, NotificationEvent, FALSE);
 Irp = IoBuildSynchronousFsdRequest(
     IRP_MJ_PNP,
     pDeviceObject,
     NULL,
     0,
     NULL,
-    &amp;Event,
-    &amp;IoStatusBlock);
+    &Event,
+    &IoStatusBlock);
 
 if (NULL != Irp)
 {
@@ -38,7 +38,7 @@ if (NULL != Irp)
     // Create an interface query out of the Irp.
     //
     IrpStackNext->MinorFunction = IRP_MN_QUERY_INTERFACE;
-    IrpStackNext->Parameters.QueryInterface.InterfaceType = (GUID*)&amp;GUID_USBCAMD_INTERFACE;
+    IrpStackNext->Parameters.QueryInterface.InterfaceType = (GUID*)&GUID_USBCAMD_INTERFACE;
     IrpStackNext->Parameters.QueryInterface.Size = sizeof(*pUsbcamdInterface);
     IrpStackNext->Parameters.QueryInterface.Version = USBCAMD_VERSION_200;
     IrpStackNext->Parameters.QueryInterface.Interface = (PINTERFACE)pUsbcamdInterface;
@@ -50,7 +50,7 @@ if (NULL != Irp)
         // This  waits using KernelMode so that the stack, and therefore the
         // event on that stack, is not paged out.
         //
-        KeWaitForSingleObject(&amp;Event, Executive, KernelMode, FALSE, NULL);
+        KeWaitForSingleObject(&Event, Executive, KernelMode, FALSE, NULL);
         Status = IoStatusBlock.Status;
     }
 
