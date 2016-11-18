@@ -50,8 +50,8 @@ The code to pend a read request should be a loop of the following steps:
     IWDFIoTargetStateManagement * pStateMgmt = NULL;
     WDF_IO_TARGET_STATE state;
 
-    HRESULT hrQI = pTarget->QueryInterface(IID_PPV_ARGS(&amp;pStateMgmt));
-    WUDF_TEST_DRIVER_ASSERT((SUCCEEDED(hrQI) &amp;&amp; pStateMgmt));
+    HRESULT hrQI = pTarget->QueryInterface(IID_PPV_ARGS(&pStateMgmt));
+    WUDF_TEST_DRIVER_ASSERT((SUCCEEDED(hrQI) && pStateMgmt));
 
     state = pStateMgmt->GetState();
     ```

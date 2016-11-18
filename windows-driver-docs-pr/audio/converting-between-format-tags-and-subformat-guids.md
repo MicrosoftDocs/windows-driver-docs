@@ -39,7 +39,7 @@ These macros from Ksmedia.h convert between wave-format tags and their associate
 }
 
 #define IS_VALID_WAVEFORMATEX_GUID(Guid) \
-    (!memcmp(((PUSHORT)&amp;KSDATAFORMAT_SUBTYPE_WAVEFORMATEX) + 1, \
+    (!memcmp(((PUSHORT)&KSDATAFORMAT_SUBTYPE_WAVEFORMATEX) + 1, \
     ((PUSHORT)(Guid)) + 1, sizeof(GUID) - sizeof(USHORT)))
 
 #define EXTRACT_WAVEFORMATEX_ID(Guid)(USHORT)((Guid)->Data1)

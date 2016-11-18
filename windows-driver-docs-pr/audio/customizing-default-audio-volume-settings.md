@@ -104,13 +104,13 @@ ExcludeFromSelect = *
 ;;====================================================================================
 
 [Microsoft]
-%HdAudModel_DefaultVolume_DeviceDesc% = HdAudModel_DefaultVolume, HDAUDIO\FUNC_01&amp;VEN_10EC&amp;DEV_0889&amp;SUBSYS_00000000&amp;REV_1000
+%HdAudModel_DefaultVolume_DeviceDesc% = HdAudModel_DefaultVolume, HDAUDIO\FUNC_01&VEN_10EC&DEV_0889&SUBSYS_00000000&REV_1000
 
 [Microsoft.ntamd64]
-%HdAudModel_DefaultVolume_DeviceDesc% = HdAudModel_DefaultVolume, HDAUDIO\FUNC_01&amp;VEN_10EC&amp;DEV_0889&amp;SUBSYS_00000000&amp;REV_1000
+%HdAudModel_DefaultVolume_DeviceDesc% = HdAudModel_DefaultVolume, HDAUDIO\FUNC_01&VEN_10EC&DEV_0889&SUBSYS_00000000&REV_1000
 
 [Microsoft.ntarm]
-%HdAudModel_DefaultVolume_DeviceDesc% = HdAudModel_DefaultVolume, HDAUDIO\FUNC_01&amp;VEN_10EC&amp;DEV_0889&amp;SUBSYS_00000000&amp;REV_1000
+%HdAudModel_DefaultVolume_DeviceDesc% = HdAudModel_DefaultVolume, HDAUDIO\FUNC_01&VEN_10EC&DEV_0889&SUBSYS_00000000&REV_1000
 
 ;;===================== HdAudModel_DefaultVolume ==============================
 

@@ -24,12 +24,12 @@ PMINIDRV_TRANSFER_CONTEXT pmdtc,
 LONG                      *plDevErrVal)
 {
    // Check what kind of data transfer is requested.
-   if (lFlags &amp; WIA_MINIDRV_TRANSFER_DOWNLOAD)
+   if (lFlags & WIA_MINIDRV_TRANSFER_DOWNLOAD)
    {
       // This transfer is a stream-based download.
       IWiaMiniDrvTransferCallback *pTransferCallback = NULL;
       hr = pmdtc->pIWiaMiniDrvCallBack->QueryInterface(IID_IWiaMiniDrvTransferCallback,
-             (void**) &amp;pIWiaMiniDrvTransferCallback);
+             (void**) &pIWiaMiniDrvTransferCallback);
       if (SUCCEEDED(hr))
       {
          IStream *pDestination = NULL;
@@ -37,13 +37,13 @@ LONG                      *plDevErrVal)
          hr = pTransferCallback->GetNextStream(0, 
                                                bstrItemName,
                                                bstrFullItemName,
-                                               &amp;pDestination);
+                                               &pDestination);
          if (hr == S_OK)
          {
             BYTE    *pBuffer = ...
             ULONG   ulBytesRead = 0;
             // Read the next chunk of data into the buffer.
-            while(GetNextDataBand(pBuffer, &amp;ulBytesRead))
+            while(GetNextDataBand(pBuffer, &ulBytesRead))
             {
                // Write the data to the destination stream.
                // The driver does not need to know what the

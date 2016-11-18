@@ -13,7 +13,7 @@ keywords: ["WDM audio drivers WDK , miniport drivers", "audio drivers WDK , mini
 
 This section describes audio miniport driver interfaces and explains how to develop adapter drivers for audio hardware whose registers are directly accessible to the system processor over a system bus. This class of hardware includes all ISA/DMA, PCMCIA, and PCI audio adapters.
 
-This documentation does not discuss how to support audio devices that reside on an external bus. For information about supporting audio devices on external buses, see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio-class-system-driver) and [AVCAudio Class System Driver](kernel-mode-wdm-audio-components.md#avcaudio-class-system-driver).
+This documentation does not discuss how to support audio devices that reside on an external bus. For information about supporting audio devices on external buses, see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver) and [AVCAudio Class System Driver](kernel-mode-wdm-audio-components.md#avcaudio_class_system_driver).
 
 The following discussion assumes that the reader is familiar with kernel streaming (KS) concepts. For background information, see [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842).
 

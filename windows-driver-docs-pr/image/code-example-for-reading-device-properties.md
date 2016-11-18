@@ -68,8 +68,8 @@ CWSDDevice::ReadDeviceProperty(
  
         if (!pThisPropertyStore)
         {
-            hr = m_pFunctionInstance->OpenPropertyStore(STGM_READ, &amp;pThisPropertyStore);
-            if ((SUCCEEDED(hr)) &amp;&amp; (!pThisPropertyStore))
+            hr = m_pFunctionInstance->OpenPropertyStore(STGM_READ, &pThisPropertyStore);
+            if ((SUCCEEDED(hr)) && (!pThisPropertyStore))
             {
                 hr = E_POINTER;
                 WIAS_ERROR((g_hInst, 
@@ -87,24 +87,24 @@ CWSDDevice::ReadDeviceProperty(
         }    
     }
  
-    PropVariantInit(&amp;propvar);
+    PropVariantInit(&propvar);
 
     if (SUCCEEDED (hr))
     {
-        hr = pThisPropertyStore->GetValue(*pPropertyKey, &amp;propvar);
+        hr = pThisPropertyStore->GetValue(*pPropertyKey, &propvar);
         if (FAILED(hr))
         {
             WIAS_ERROR((g_hInst, "IPropertyStore::GetValue failed, hr = 0x%08X", hr));
         }
     }
 
-    if ((SUCCEEDED(hr)) &amp;&amp; (VT_EMPTY == propvar.vt))
+    if ((SUCCEEDED(hr)) && (VT_EMPTY == propvar.vt))
     {
         hr = E_FAIL;
         WIAS_ERROR((g_hInst, "IPropertyStore::GetValue returned no value (VT_EMPTY), hr = 0x%08X", hr));
     }
 
-    if ((SUCCEEDED(hr)) &amp;&amp; (VT_LPWSTR != propvar.vt))
+    if ((SUCCEEDED(hr)) && (VT_LPWSTR != propvar.vt))
     {
         hr = E_UNEXPECTED;
         WIAS_ERROR((g_hInst, "IPropertyStore::GetValue returned an unexpected PROPVARIANT type, hr = 0x%08X", hr));
@@ -121,9 +121,9 @@ CWSDDevice::ReadDeviceProperty(
         }
     }
 
-    PropVariantClear(&amp;propvar);
+    PropVariantClear(&propvar);
 
-    if ((bClosePropertyStore) &amp;&amp; (pThisPropertyStore))
+    if ((bClosePropertyStore) && (pThisPropertyStore))
     {
         pThisPropertyStore->Release();
         pThisPropertyStore = NULL;

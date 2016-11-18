@@ -35,7 +35,7 @@ DetectSubregions(
 
    if (SUCCEEDED(hr))
    {
-      hr = CreateSegmentationFilter(pWiaItem2, &amp;pSegmentationFilter);
+      hr = CreateSegmentationFilter(pWiaItem2, &pSegmentationFilter);
    }
 
    if (SUCCEEDED(hr))

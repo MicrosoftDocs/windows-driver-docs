@@ -25,12 +25,12 @@ Follow these steps to create a wake-capable interrupt object in your KMDF or UMD
 3.  Call [**WDF\_INTERRUPT\_CONFIG\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff552348) to initialize a [**WDF\_INTERRUPT\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff552347) structure. Provide an [*EvtInterruptIsr*](https://msdn.microsoft.com/library/windows/hardware/ff541735) callback function, to be called at passive level. In the configuration structure, set **PassiveHandling** and **CanWakeDevice** to **TRUE**. Then call [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345) from your driver's [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback function to create the framework interrupt object.
 4.  Call [**WdfDeviceAssignSxWakeSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545909) to configure the device to wake the system from a low-power state.
     ```
-    WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&amp;wakeSettings);
+    WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS_INIT(&wakeSettings);
     wakeSettings.DxState = PowerDeviceD3;
     wakeSettings.UserControlOfWakeSettings = WakeDoNotAllowUserControl;
     wakeSettings.Enabled = WdfTrue;
 
-    status = WdfDeviceAssignSxWakeSettings(Device, &amp;wakeSettings);
+    status = WdfDeviceAssignSxWakeSettings(Device, &wakeSettings);
     if (!NT_SUCCESS(status)) {
         Trace(TRACE_LEVEL_ERROR,"WdfDeviceAssignSxWakeSettings failed %x\n", status);
         return status;

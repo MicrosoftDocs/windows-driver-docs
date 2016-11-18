@@ -17,23 +17,23 @@ The following figure shows the configuration of Microsoft Windows Driver Model (
 
 See the following for a description of the WDM audio components:
 
-[DirectSound System Component](user-mode-wdm-audio-components.md#directsound-system-component)
+[DirectSound System Component](user-mode-wdm-audio-components.md#directsound_system_component)
 
-[WDMAud System Driver](user-mode-wdm-audio-components.md#wdmaud-system-driver)
+[WDMAud System Driver](user-mode-wdm-audio-components.md#wdmaud_system_driver)
 
-[SBEmul System Driver](kernel-mode-wdm-audio-components.md#sbemul-system-driver)
+[SBEmul System Driver](kernel-mode-wdm-audio-components.md#sbemul_system_driver)
 
-[SysAudio System Driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver)
+[SysAudio System Driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver)
 
-[KMixer System Driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver)
+[KMixer System Driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver)
 
-[Redbook System Driver](kernel-mode-wdm-audio-components.md#redbook-system-driver)
+[Redbook System Driver](kernel-mode-wdm-audio-components.md#redbook_system_driver)
 
-[Splitter System Driver](kernel-mode-wdm-audio-components.md#splitter-system-driver)
+[Splitter System Driver](kernel-mode-wdm-audio-components.md#splitter_system_driver)
 
-[Port Class Adapter Driver and PortCls System Driver](kernel-mode-wdm-audio-components.md#port-class-adapter-driver-and-portcls-system-driver)
+[Port Class Adapter Driver and PortCls System Driver](kernel-mode-wdm-audio-components.md#port_class_adapter_driver_and_portcls_system_driver)
 
-[USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio-class-system-driver)
+[USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver)
 
 See the following for more information about the configuration of the port class adapter driver and the USBAudio driver:
 

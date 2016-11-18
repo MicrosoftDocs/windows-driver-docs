@@ -45,8 +45,8 @@ HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;S-1-5-84-0-0-0-0-0)"
 To specify security requirements in the driver, you must use the abbreviated form, which is only available starting in Windows 8. For example, a KMDF driver could enable access to its device from UMDF drivers by using the following:
 
 ```
-RtlInitUnicodeString(&amp;sddlString, L"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;UD)");
-status = WdfDeviceInitAssignSDDLString(DeviceInit, &amp;sddlString);
+RtlInitUnicodeString(&sddlString, L"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;UD)");
+status = WdfDeviceInitAssignSDDLString(DeviceInit, &sddlString);
 ```
 
  

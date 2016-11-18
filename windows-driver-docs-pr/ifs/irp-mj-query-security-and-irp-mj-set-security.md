@@ -31,10 +31,10 @@ NTSTATUS FsdCommonQuerySecurity( PIRP_CONTEXT IrpContext)
         LocalPointer = IrpContext->Fcb->SecurityDescriptor;
 
         status = SeQuerySecurityDescriptorInfo(
-     &amp;IrpContext->IrpSp->Parameters.QuerySecurity.SecurityInformation,
+     &IrpContext->IrpSp->Parameters.QuerySecurity.SecurityInformation,
             (PSECURITY_DESCRIPTOR)IrpContext->Irp->UserBuffer,
-            &amp;IrpContext->IrpSp->Parameters.QuerySecurity.Length,
-            &amp;LocalPointer );
+            &IrpContext->IrpSp->Parameters.QuerySecurity.Length,
+            &LocalPointer );
  
         //
         // CACLS utility expects OVERFLOW
@@ -88,9 +88,9 @@ NTSTATUS FsdCommonSetSecurity(PIRP_CONTEXT IrpContext)
  
     status = SeSetSecurityDescriptorInfo(
        NULL,
-       &amp;IrpContext->IrpSp->Parameters.SetSecurity.SecurityInformation,
+       &IrpContext->IrpSp->Parameters.SetSecurity.SecurityInformation,
        IrpContext->IrpSp->Parameters.SetSecurity.SecurityDescriptor,
-       &amp;Fcb->SecurityDescriptor,
+       &Fcb->SecurityDescriptor,
        PagedPool,
        IoGetFileObjectGenericMapping()
        );
@@ -126,7 +126,7 @@ NTSTATUS FsdCommonSetSecurity(PIRP_CONTEXT IrpContext)
       //
       // paged pool is empty
       //
-      SeDeassignSecurity(&amp;Fcb->SecurityDescriptor);
+      SeDeassignSecurity(&Fcb->SecurityDescriptor);
       status = STATUS_NO_MEMORY;
       Fcb->SecurityDescriptorLength = SavedDescriptorLength;
       Fcb->SecurityDescriptor = SavedDescriptorPtr;
@@ -152,7 +152,7 @@ NTSTATUS FsdCommonSetSecurity(PIRP_CONTEXT IrpContext)
       // to disk. undo everything. 
       //
       ExFreePool(newSD);
-      SeDeassignSecurity(&amp;Fcb->SecurityDescriptor);
+      SeDeassignSecurity(&Fcb->SecurityDescriptor);
       status = STATUS_NO_MEMORY;
       Fcb->SecurityDescriptorLength = SavedDescriptorLength;
       Fcb->SecurityDescriptor = SavedDescriptorPtr;
@@ -171,7 +171,7 @@ NTSTATUS FsdCommonSetSecurity(PIRP_CONTEXT IrpContext)
     //
     // deallocate the security descriptor
     //
-    SeDeassignSecurity(&amp;Fcb->SecurityDescriptor);
+    SeDeassignSecurity(&Fcb->SecurityDescriptor);
  
     //
     // this either is the new private SD or NULL if 

@@ -95,7 +95,7 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRate) {
         sizeof (KSPROPERTY),
         sizeof (ULONG),
         SetBitRateHandler, //Set-property handler supported
-        &amp;BitRateValuesSet,
+        &BitRateValuesSet,
         0,
         NULL,
         NULL,
@@ -174,7 +174,7 @@ DEFINE_KSPROPERTY_TABLE(ENCAPI_BitRateMode) {
         sizeof (KSPROPERTY),
         sizeof (VIDEOENCODER_BITRATE_MODE),
         SetBitRateModeHandler, //Set-property handler supported
-        &amp;BitRateModeValuesSet,
+        &BitRateModeValuesSet,
         0,
         NULL,
         NULL,
@@ -192,14 +192,14 @@ The property sets are then specified as the [**KSFILTER\_DESCRIPTOR**](https://m
 ```
 DEFINE_KSPROPERTY_SET_TABLE(PropertyTable) {
     DEFINE_KSPROPERTY_SET(
-        &amp;ENCAPIPARAM_BITRATE_MODE,
+        &ENCAPIPARAM_BITRATE_MODE,
         SIZEOF_ARRAY (ENCAPI_BitRateMode),
         ENCAPI_BitRateMode,
         0,
         NULL
         ),
     DEFINE_KSPROPERTY_SET(
-        &amp;ENCAPIPARAM_BITRATE,
+        &ENCAPIPARAM_BITRATE,
         SIZEOF_ARRAY (ENCAPI_BitRate),
         ENCAPI_BitRate,
         0,
@@ -217,7 +217,7 @@ const
 KSFILTER_DESCRIPTOR 
 FilterDescriptor = {
     ...,
-    &amp;FilterTestTable, // Automation Table
+    &FilterTestTable, // Automation Table
     ...,
     ...
 };
@@ -255,40 +255,40 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
     PWSTR  pSymbolicNameList = NULL;
 
     NTSTATUS ntStatus = IoGetDeviceInterfaces(
-        &amp;categoryGUID,
+        &categoryGUID,
         pdo,
         DEVICE_INTERFACE_INCLUDE_NONACTIVE,
-        &amp;pSymbolicNameList);
-    if (NT_SUCCESS(ntStatus) &amp;&amp; (NULL != pSymbolicNameList))
+        &pSymbolicNameList);
+    if (NT_SUCCESS(ntStatus) && (NULL != pSymbolicNameList))
     {
         HANDLE hDeviceParametersKey = NULL;
         UNICODE_STRING symbolicName;
 
         // 2. Open registry key for storing information about a 
         // particular device interface instance
-        RtlInitUnicodeString(&amp;symbolicName, pSymbolicNameList);
+        RtlInitUnicodeString(&symbolicName, pSymbolicNameList);
         ntStatus = IoOpenDeviceInterfaceRegistryKey(
-            &amp;symbolicName,
+            &symbolicName,
             KEY_READ|KEY_WRITE,
-            &amp;hDeviceParametersKey);
+            &hDeviceParametersKey);
         if (NT_SUCCESS(ntStatus))
         {
             OBJECT_ATTRIBUTES objAttribSubKey;
             UNICODE_STRING subKey;
  
             // 3. Create Capabilities key under "Device Parameters" key
-            RtlInitUnicodeString(&amp;subKey,L"Capabilities");
-            InitializeObjectAttributes(&amp;objAttribSubKey,
-                &amp;subKey,
+            RtlInitUnicodeString(&subKey,L"Capabilities");
+            InitializeObjectAttributes(&objAttribSubKey,
+                &subKey,
                 OBJ_KERNEL_HANDLE,
                 hDeviceParametersKey,
                 NULL);
  
             HANDLE hCapabilityKeyHandle = NULL;
  
-            ntStatus = ZwCreateKey(&amp;hCapabilityKeyHandle,
+            ntStatus = ZwCreateKey(&hCapabilityKeyHandle,
                     KEY_READ|KEY_WRITE|KEY_SET_VALUE,
-                    &amp;objAttribSubKey,
+                    &objAttribSubKey,
                     0,
                     NULL,
                     REG_OPTION_NON_VOLATILE,
@@ -299,11 +299,11 @@ NTSTATUS CreateDwordValueInCapabilityRegistry(IN PDEVICE_OBJECT pdo, IN GUID cat
                 UNICODE_STRING subValDword;
  
                 // 4. Create a DWORD value "TestCapValueDWORD" under Capabilities 
-                RtlInitUnicodeString(&amp;subValDword,L"TestCapValueDWORD");
+                RtlInitUnicodeString(&subValDword,L"TestCapValueDWORD");
  
                 ULONG data = 0xaaaaaaaa;
  
-                ntStatus = ZwSetValueKey(hCapabilityKeyHandle,&amp;subValDword,0,REG_DWORD,&amp;data,sizeof(ULONG));
+                ntStatus = ZwSetValueKey(hCapabilityKeyHandle,&subValDword,0,REG_DWORD,&data,sizeof(ULONG));
                 ZwClose(hCapabilityKeyHandle);
             }
         }

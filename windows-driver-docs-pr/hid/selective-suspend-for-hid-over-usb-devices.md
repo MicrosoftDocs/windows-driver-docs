@@ -66,13 +66,13 @@ ExcludeFromSelect=*
 %VendorName% = VendorXYZDevice,NTx86,NTamd64,NTarm
 
 [VendorXYZDevice.NTx86]
-%VendorXYZ.DeviceDesc% = VendorXYZDevice_Install, USB\VID_045E&amp;PID_00B4
+%VendorXYZ.DeviceDesc% = VendorXYZDevice_Install, USB\VID_045E&PID_00B4
 
 [VendorXYZDevice.NTamd64]
-%VendorXYZ.DeviceDesc% = VendorXYZDevice_Install, USB\VID_045E&amp;PID_00B4
+%VendorXYZ.DeviceDesc% = VendorXYZDevice_Install, USB\VID_045E&PID_00B4
 
 [VendorXYZDevice.NTarm]
-%VendorXYZ.DeviceDesc% = VendorXYZDevice_Install, USB\VID_045E&amp;PID_00B4
+%VendorXYZ.DeviceDesc% = VendorXYZDevice_Install, USB\VID_045E&PID_00B4
 
 
 [VendorXYZDevice_Install.NT] 

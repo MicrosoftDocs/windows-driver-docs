@@ -67,7 +67,7 @@ WfpTransportSendClassify(
  goto Exit;
    }
 
- if (!(classifyOut->rights &amp; FWPS_RIGHT_ACTION_WRITE))
+ if (!(classifyOut->rights & FWPS_RIGHT_ACTION_WRITE))
    {
       //
       // Cannot alter the action.
@@ -90,12 +90,12 @@ WfpTransportSendClassify(
                NULL,
                NULL,
                0,
-               &amp;clonedNetBufferList);
+               &clonedNetBufferList);
 
  if (!NT_SUCCESS(status))
    {
  classifyOut->actionType = FWP_ACTION_BLOCK;
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
  
  goto Exit;
    }
@@ -129,13 +129,13 @@ WfpTransportSendClassify(
  if (!NT_SUCCESS(status))
    {
  classifyOut->actionType = FWP_ACTION_BLOCK;
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
 
  goto Exit;
    }
 
  classifyOut->actionType = FWP_ACTION_BLOCK;
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
  classifyOut->flags |= FWPS_CLASSIFY_OUT_FLAG_ABSORB;
 
    //
@@ -245,7 +245,7 @@ DatagramDataReceiveWorker(
                NULL,
                NULL,
                0,
-               &amp;clonedNetBufferList);
+               &clonedNetBufferList);
 
  if (!NT_SUCCESS(status))
    {
@@ -350,7 +350,7 @@ WfpDatagramDataReceiveClassify(
  goto Exit;
    }
 
- if (!(classifyOut->rights &amp; FWPS_RIGHT_ACTION_WRITE))
+ if (!(classifyOut->rights & FWPS_RIGHT_ACTION_WRITE))
    {
       //
       // Cannot alter the action.
@@ -381,7 +381,7 @@ WfpDatagramDataReceiveClassify(
  classifyInfo = NULL; // Ownership transferred on success.
 
  classifyOut->actionType = FWP_ACTION_BLOCK;
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
  classifyOut->flags |= FWPS_CLASSIFY_OUT_FLAG_ABSORB;
 
 Exit:
@@ -517,7 +517,7 @@ WfpAleReceiveClassify(
  goto Exit;
    }
 
- if (!(classifyOut->rights &amp; FWPS_RIGHT_ACTION_WRITE))
+ if (!(classifyOut->rights & FWPS_RIGHT_ACTION_WRITE))
    {
       //
       // Cannot alter the action.
@@ -539,12 +539,12 @@ WfpAleReceiveClassify(
                NULL,
                NULL,
                0,
-               &amp;clonedNetBufferList);
+               &clonedNetBufferList);
 
  if (!NT_SUCCESS(status))
    {
  classifyOut->actionType = FWP_ACTION_BLOCK;
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
 
  goto Exit;
    }
@@ -579,12 +579,12 @@ WfpAleReceiveClassify(
 
  status = FwpsPendOperation0(
  inMetaValues->completionHandle,
-               &amp;classifyInfo->aleCompletionCtx);
+               &classifyInfo->aleCompletionCtx);
 
  if (!NT_SUCCESS(status))
    {
  classifyOut->actionType = FWP_ACTION_BLOCK;
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
 
  goto Exit;
    }
@@ -596,7 +596,7 @@ WfpAleReceiveClassify(
  classifyInfo = NULL; // Ownership transferred on success.
 
  classifyOut->actionType = FWP_ACTION_BLOCK;
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
  classifyOut->flags |= FWPS_CLASSIFY_OUT_FLAG_ABSORB;
 
 Exit:
@@ -646,7 +646,7 @@ WfpTransportReceiveClassify(
  goto Exit;
    }
 
- if (!(classifyOut->rights &amp; FWPS_RIGHT_ACTION_WRITE))
+ if (!(classifyOut->rights & FWPS_RIGHT_ACTION_WRITE))
    {
       //
       // Cannot alter the action.
@@ -671,11 +671,11 @@ WfpTransportReceiveClassify(
  if (FWPS_IS_METADATA_FIELD_PRESENT(inMetaValues,
                                       FWPS_METADATA_FIELD_ALE_CLASSIFY_REQUIRED))
 #else
- if ((inFixedValues->layerId == FWPS_LAYER_INBOUND_TRANSPORT_V4 &amp;&amp;
-         (inFixedValues->incomingValue[FWPS_FIELD_INBOUND_TRANSPORT_V4_FLAGS].value.uint32 &amp; 
+ if ((inFixedValues->layerId == FWPS_LAYER_INBOUND_TRANSPORT_V4 &&
+         (inFixedValues->incomingValue[FWPS_FIELD_INBOUND_TRANSPORT_V4_FLAGS].value.uint32 & 
           FWP_CONDITION_FLAG_REQUIRES_ALE_CLASSIFY)) ||
-        (inFixedValues->layerId == FWPS_LAYER_INBOUND_TRANSPORT_V6 &amp;&amp;
-         (inFixedValues->incomingValue[FWPS_FIELD_INBOUND_TRANSPORT_V6_FLAGS].value.uint32 &amp; 
+        (inFixedValues->layerId == FWPS_LAYER_INBOUND_TRANSPORT_V6 &&
+         (inFixedValues->incomingValue[FWPS_FIELD_INBOUND_TRANSPORT_V6_FLAGS].value.uint32 & 
           FWP_CONDITION_FLAG_REQUIRES_ALE_CLASSIFY)))
 #endif
    {
@@ -697,12 +697,12 @@ WfpTransportReceiveClassify(
                NULL,
                NULL,
                0,
-               &amp;clonedNetBufferList);
+               &clonedNetBufferList);
 
  if (!NT_SUCCESS(status))
    {
  classifyOut->actionType = FWP_ACTION_BLOCK;
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
 
  goto Exit;
    }
@@ -742,7 +742,7 @@ WfpTransportReceiveClassify(
  classifyInfo = NULL; // Ownership transferred on success.
 
  classifyOut->actionType = FWP_ACTION_BLOCK;
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
  classifyOut->flags |= FWPS_CLASSIFY_OUT_FLAG_ABSORB;
 
 Exit:

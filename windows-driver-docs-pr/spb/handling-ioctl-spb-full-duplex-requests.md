@@ -57,8 +57,8 @@ Typically, the SPB controller driver validates the parameter values in an **IOCT
 //
 
 SPB_REQUEST_PARAMETERS params;
-SPB_REQUEST_PARAMETERS_INIT(&amp;params);
-SpbRequestGetParameters(SpbRequest, &amp;params);
+SPB_REQUEST_PARAMETERS_INIT(&params);
+SpbRequestGetParameters(SpbRequest, &params);
 
 if (params.SequenceTransferCount != 2)
 {
@@ -83,20 +83,20 @@ SPB_TRANSFER_DESCRIPTOR readDescriptor;
 PMDL pWriteMdl;
 PMDL pReadMdl;
 
-SPB_TRANSFER_DESCRIPTOR_INIT(&amp;writeDescriptor);
-SPB_TRANSFER_DESCRIPTOR_INIT(&amp;readDescriptor);
+SPB_TRANSFER_DESCRIPTOR_INIT(&writeDescriptor);
+SPB_TRANSFER_DESCRIPTOR_INIT(&readDescriptor);
 
 SpbRequestGetTransferParameters(
     SpbRequest, 
     fullDuplexWriteIndex, 
-    &amp;writeDescriptor,
-    &amp;pWriteMdl);
+    &writeDescriptor,
+    &pWriteMdl);
 
 SpbRequestGetTransferParameters(
     SpbRequest, 
     fullDuplexReadIndex, 
-    &amp;readDescriptor,
-    &amp;pReadMdl);
+    &readDescriptor,
+    &pReadMdl);
     
 //
 // Validate the transfer direction of each descriptor.

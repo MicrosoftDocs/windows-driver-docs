@@ -42,7 +42,7 @@ HRESULT _stdcall CWIADevice::drvUnInitializeWia(BYTE *pWiasContext)
       return E_INVALIDARG;
   }
 
-  InterlockedDecrement(&amp;m_lClientsConnected);
+  InterlockedDecrement(&m_lClientsConnected);
 
   //
   // make sure we never decrement below zero (0)

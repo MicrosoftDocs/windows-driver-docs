@@ -68,8 +68,8 @@ GetTargetSettings(_In_ SPBTARGET Target, _Out_ PI2C_TARGET_SETTINGS Settings)
     PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER Connection = NULL;
     SPB_CONNECTION_PARAMETERS Params;
 
-    SPB_CONNECTION_PARAMETERS_INIT(&amp;Params);
-    SpbTargetGetConnectionParameters(Target, &amp;Params);
+    SPB_CONNECTION_PARAMETERS_INIT(&Params);
+    SpbTargetGetConnectionParameters(Target, &Params);
     Connection = (PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER)Params.ConnectionParameters;
     if (Connection->PropertiesLength < sizeof(PNP_SERIAL_BUS_DESCRIPTOR))
     {
@@ -92,7 +92,7 @@ GetTargetSettings(_In_ SPBTARGET Target, _Out_ PI2C_TARGET_SETTINGS Settings)
     Settings->Address = (ULONG)I2CDescriptor->SlaveAddress;
     I2CFlags = I2CDescriptor->SerialBusDescriptor.TypeSpecificFlags;
     Settings->AddressMode = 
-                ((I2CFlags &amp; I2C_SERIAL_BUS_SPECIFIC_FLAG_10BIT_ADDRESS) == 0) ? AddressMode7Bit : AddressMode10Bit;
+                ((I2CFlags & I2C_SERIAL_BUS_SPECIFIC_FLAG_10BIT_ADDRESS) == 0) ? AddressMode7Bit : AddressMode10Bit;
 
     Settings->ClockFrequency = I2CDescriptor->ConnectionSpeed;
 

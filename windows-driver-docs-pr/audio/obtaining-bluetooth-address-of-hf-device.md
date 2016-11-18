@@ -73,15 +73,15 @@ Requirements:
     ioStack->MinorFunction = IRP_MN_QUERY_DEVICE_RELATIONS;
     ioStack->Parameters.QueryDeviceRelations.Type = TargetDeviceRelation;
 
-    KeInitializeEvent(&amp;completionEvent, SynchronizationEvent, FALSE);
+    KeInitializeEvent(&completionEvent, SynchronizationEvent, FALSE);
 
-    IoSetCompletionRoutine(irp, OnRequestComplete, &amp;completionEvent, TRUE, TRUE, TRUE);
+    IoSetCompletionRoutine(irp, OnRequestComplete, &completionEvent, TRUE, TRUE, TRUE);
 
     status = IoCallDriver(DeviceObject, irp);
     if (status == STATUS_PENDING) {
         // wait for irp to complete
         KeWaitForSingleObject(
-            &amp;completionEvent,
+            &completionEvent,
             Suspended,
             KernelMode,
             FALSE,
@@ -152,13 +152,13 @@ Requirements:
 
     PAGED_CODE();
 
-    status = IoHelperGetDevicePdo(DeviceObject, &amp;physicalDeviceObject);
+    status = IoHelperGetDevicePdo(DeviceObject, &physicalDeviceObject);
     if (!NT_SUCCESS(status))
     {
         goto Exit;
     }
 
-    status = IoGetDevicePropertyData(physicalDeviceObject, &amp;DEVPKEY_Bluetooth_DeviceAddress, LOCALE_NEUTRAL, 0, 0, NULL, &amp;requiredSize, &amp;devPropType);
+    status = IoGetDevicePropertyData(physicalDeviceObject, &DEVPKEY_Bluetooth_DeviceAddress, LOCALE_NEUTRAL, 0, 0, NULL, &requiredSize, &devPropType);
     if (NT_SUCCESS(status) || devPropType != DEVPROP_TYPE_STRING)
     {
         status = STATUS_UNSUCCESSFUL;
@@ -176,7 +176,7 @@ Requirements:
         goto Exit;
     }
 
-    status = IoGetDevicePropertyData(physicalDeviceObject, &amp;DEVPKEY_Bluetooth_DeviceAddress, LOCALE_NEUTRAL, 0, requiredSize, bluetoothAddress, &amp;requiredSize, &amp;devPropType);
+    status = IoGetDevicePropertyData(physicalDeviceObject, &DEVPKEY_Bluetooth_DeviceAddress, LOCALE_NEUTRAL, 0, requiredSize, bluetoothAddress, &requiredSize, &devPropType);
     if (!NT_SUCCESS(status))
     {
         goto Exit;

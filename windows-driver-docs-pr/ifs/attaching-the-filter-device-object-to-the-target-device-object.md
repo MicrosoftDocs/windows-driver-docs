@@ -20,7 +20,7 @@ devExt = myLegacyFilterDeviceObject->DeviceExtension;
 status = IoAttachDeviceToDeviceStackSafe(
            myLegacyFilterDeviceObject,        //SourceDevice
            DeviceObject,                      //TargetDevice
-           &amp;devext->AttachedToDeviceObject);  //AttachedToDeviceObject
+           &devext->AttachedToDeviceObject);  //AttachedToDeviceObject
 ```
 
 Note that the device object pointer received by the *AttachedToDeviceObject* output parameter can differ from *TargetDevice* if any other filters were already chained above the device object that is pointed to by *TargetDevice*.
@@ -30,13 +30,13 @@ Note that the device object pointer received by the *AttachedToDeviceObject* out
 Every file system is required to create one or more named control device objects. To attach to a particular file system directly, a file system filter driver passes the name of the appropriate file system control device object to [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198) to get a device object pointer. The following code snippet shows how to get such a pointer to one of the two control device objects for the RAW file system:
 
 ```
-RtlInitUnicodeString(&amp;nameString, L"\\Device\\RawDisk");
+RtlInitUnicodeString(&nameString, L"\\Device\\RawDisk");
 
 status = IoGetDeviceObjectPointer(
-            &amp;nameString,                    //ObjectName
+            &nameString,                    //ObjectName
             FILE_READ_ATTRIBUTES,           //DesiredAccess
-            &amp;fileObject,                    //FileObject
-            &amp;rawDeviceObject);              //DeviceObject
+            &fileObject,                    //FileObject
+            &rawDeviceObject);              //DeviceObject
 
 if (NT_SUCCESS(status)) {
             ObDereferenceObject(fileObject);

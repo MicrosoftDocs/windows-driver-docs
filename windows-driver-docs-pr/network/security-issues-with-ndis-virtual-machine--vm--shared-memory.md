@@ -39,7 +39,7 @@ However, when VMQ is configured to use shared memory, the network adapter uses D
 In Windows Server 2008 R2, before the VSP configures a VM queue to use shared memory that is allocated from the VM address space, it uses the following filtering test for the queue.
 
 ```
-(MAC address == x) &amp;&amp; (VLAN identifier == n)
+(MAC address == x) && (VLAN identifier == n)
 ```
 
 If the network adapter hardware can support this test before the DMA transfer to the receive buffers, the network adapter can either drop frames with invalid VLAN identifiers or send them to the default queue so that they can be filtered out by the extensible switch. If the miniport driver succeeds in a request to set a filter with this test on a queue, the extensible switch can use VM shared memory for that queue. However, if the network adapter hardware is not capable of filtering the frames based on both destination MAC address and VLAN identifier, the extensible switch uses host shared memory for that queue.

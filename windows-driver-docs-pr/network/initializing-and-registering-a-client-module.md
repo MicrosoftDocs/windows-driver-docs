@@ -80,10 +80,10 @@ const NPI_CLIENT_CHARACTERISTICS ClientCharacteristics =
   {
     0,
     sizeof(NPI_REGISTRATION_INSTANCE),
-    &amp;EXNPI_NPIID,
-    &amp;ClientModuleId,
+    &EXNPI_NPIID,
+    &ClientModuleId,
     0,
-    &amp;NpiSpecificCharacteristics
+    &NpiSpecificCharacteristics
   }
 };
 
@@ -139,9 +139,9 @@ NTSTATUS
 
   // Register the client module with the NMR
   Status = NmrRegisterClient(
-    &amp;ClientCharacteristics,
-    &amp;ClientRegistrationContext,
-    &amp;ClientHandle
+    &ClientCharacteristics,
+    &ClientRegistrationContext,
+    &ClientHandle
     );
 
   // Return the result of the registration

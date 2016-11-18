@@ -57,7 +57,7 @@ HRESULT hr =
                       (IWiaMiniDrv *)this, // this WIA driver object
                        sizeof(MINIDRIVERITEMCONTEXT), // size of context
                        NULL, // context
-                       &amp;pIWiaDrvRootItem // created ROOT item
+                       &pIWiaDrvRootItem // created ROOT item
                       );                 // (IWiaDrvItem interface)
 
 if(S_OK == hr){
@@ -86,8 +86,8 @@ HRESULT hr =
                        bstrFullItemName,  // item full name ("0000\Root\Flatbed")
                       (IWiaMiniDrv *)this,  // this WIA driver object
      sizeof(MINIDRIVERITEMCONTEXT), // size of context
-                      (PBYTE)&amp;pItemContext, // context
-                      &amp;pIWiaDrvNewItem // created child item
+                      (PBYTE)&pItemContext, // context
+                      &pIWiaDrvNewItem // created child item
                      );                // (IWiaDrvItem interface)  
 
 if(S_OK == hr){
@@ -176,7 +176,7 @@ HRESULT _stdcall CWIADevice::drvInitializeWia(
                 (IWiaMiniDrv *)this,  // this WIA driver object
       sizeof(MINIDRIVERITEMCONTEXT),  // size of context
                                NULL,  // context
-                 &amp;pIWiaDrvRootItem);  // created ROOT item
+                 &pIWiaDrvRootItem);  // created ROOT item
                                       // (IWiaDrvItem interface)
   if (S_OK == hr) {
 
@@ -216,8 +216,8 @@ HRESULT _stdcall CWIADevice::drvInitializeWia(
                              trFullItemName,  // item full name ("0000\Root\Flatbed")
                         (IWiaMiniDrv *)this,  // this WIA driver object
                sizeof(MINIDRIVERITEMCONTEXT), // size of context
-                       (BYTE**)&amp;pItemContext, // context
-                        &amp;pIWiaDrvNewItem);    // created child item
+                       (BYTE**)&pItemContext, // context
+                        &pIWiaDrvNewItem);    // created child item
                                               // (IWiaDrvItem interface)
 
             if (S_OK == hr) {
@@ -261,7 +261,7 @@ HRESULT _stdcall CWIADevice::drvInitializeWia(
   //
 
   if(S_OK == hr){
-    InterlockedIncrement(&amp;m_lClientsConnected);
+    InterlockedIncrement(&m_lClientsConnected);
   }
 
   return hr;

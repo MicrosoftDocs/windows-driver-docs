@@ -20,12 +20,12 @@ When it calls [**WdfDeviceAssignS0IdleSettings**](https://msdn.microsoft.com/lib
 ```ManagedCPlusPlus
 WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS s0IdleSettings;
 
-WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&amp;s0IdleSettings, 
+WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&s0IdleSettings, 
                                            IdleCannotWakeFromS0);
 s0IdleSettings.IdleTimeoutType = DriverManagedIdleTimeout;
 s0IdleSettings.PowerUpIdleDeviceOnSystemWake = WdfTrue;
 s0IdleSettings.IdleTimeout = 1;
-status = WdfDeviceAssignS0IdleSettings(device, &amp;s0IdleSettings);
+status = WdfDeviceAssignS0IdleSettings(device, &s0IdleSettings);
 ```
 
 ## Transitioning from Working (D0) to Low-Power (Dx) State

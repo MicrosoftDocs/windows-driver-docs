@@ -45,7 +45,7 @@ The following directives are used to completely define the FILTER\_TYPE data typ
 
 The value to be parsed must conform to the syntax that is defined for the specific filter type that the \*FilterTypeName directive specifies. The parser filter will convert and output this value into one or more XML data types, as specified earlier. If the conversion results in more than one XML element, each element will be tagged by using the names that are specified in the \*ElementTags directive.
 
-When emitting the XML snapshot, the parser will automatically represent special characters with the appropriate XML entity if they are present in the values of string filter types. For example, the ampersand character (&) is represented by t&amp; in the snapshot. You do not need to follow XML syntax rules when using parser filter defined data types.
+When emitting the XML snapshot, the parser will automatically represent special characters with the appropriate XML entity if they are present in the values of string filter types. For example, the ampersand character (&) is represented by t& in the snapshot. You do not need to follow XML syntax rules when using parser filter defined data types.
 
 Consider the following template.
 

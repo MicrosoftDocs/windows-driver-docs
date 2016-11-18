@@ -57,7 +57,7 @@ struct {
     } jrvRanges;
  
     /* area around center to be considered as "dead". specified as */
-    /* a percentage (0-100). Only X &amp; Y handled by system driver */
+    /* a percentage (0-100). Only X & Y handled by system driver */
     struct {
         DWORD    dwX;
         DWORD    dwY;

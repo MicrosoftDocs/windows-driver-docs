@@ -83,7 +83,7 @@ HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
     }
 
     *plDevErrVal = 0;
-    *ppwfi = &amp;m_WIAFormatInfo[0];
+    *ppwfi = &m_WIAFormatInfo[0];
     *pcelt = 2; // number of formats in returned array
 
     return S_OK;

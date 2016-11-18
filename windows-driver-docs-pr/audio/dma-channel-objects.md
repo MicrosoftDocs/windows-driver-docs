@@ -39,7 +39,7 @@ The DMA channel object for a master or subordinate device exposes the following:
 
 -   A buffer-size value that can be queried and changed
 
-The [*adapter object*](https://msdn.microsoft.com/library/windows/hardware/ff556270#wdkgloss-adapter-object) is a DMA-adapter structure for a [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss-physical-device-object--pdo-). The adapter object is automatically created when the miniport driver creates the DMA channel object by calling one of the following methods:
+The [*adapter object*](https://msdn.microsoft.com/library/windows/hardware/ff556270#wdkgloss_adapter_object) is a DMA-adapter structure for a [*physical device object (PDO)*](https://msdn.microsoft.com/library/windows/hardware/ff556325#wdkgloss_physical_device_object__pdo_). The adapter object is automatically created when the miniport driver creates the DMA channel object by calling one of the following methods:
 
 [**IPortWavePci::NewMasterDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff536916)
 

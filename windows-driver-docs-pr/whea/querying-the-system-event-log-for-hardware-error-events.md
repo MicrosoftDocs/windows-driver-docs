@@ -49,10 +49,10 @@ VOID QueryHwErrorEvents(VOID) {
     while (EvtNext(
              QueryHandle,
              1,
-             &amp;EventHandle,
+             &EventHandle,
              -1,
              0,
-             &amp;Returned
+             &Returned
              )) {
 
       // Process the hardware error event
@@ -96,10 +96,10 @@ VOID QueryHwErrorEvents(VOID) {
     while (EvtNext(
              QueryHandle,
              1,
-             &amp;EventHandle,
+             &EventHandle,
              -1,
              0,
-             &amp;Returned
+             &Returned
              )) {
 
       // Process the hardware error event

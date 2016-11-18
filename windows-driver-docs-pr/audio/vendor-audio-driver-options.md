@@ -15,9 +15,9 @@ To take advantage of the built-in system support for audio devices, Microsoft re
 
 -   A port class adapter driver (see [Audio Miniport Drivers](audio-miniport-drivers.md)) for an ISA or PCI adapter card
 
--   The USB Audio class driver (see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio-class-system-driver)) for a USB Audio device
+-   The USB Audio class driver (see [USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver)) for a USB Audio device
 
--   A custom IEEE 1394 device driver (see [AVCAudio Class System Driver](kernel-mode-wdm-audio-components.md#avcaudio-class-system-driver)) for an IEEE 1394 audio device
+-   A custom IEEE 1394 device driver (see [AVCAudio Class System Driver](kernel-mode-wdm-audio-components.md#avcaudio_class_system_driver)) for an IEEE 1394 audio device
 
 However, if these options are not sufficient, a vendor can implement one of the following:
 

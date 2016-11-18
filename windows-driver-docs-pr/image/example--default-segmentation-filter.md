@@ -35,7 +35,7 @@ SegFilter::DetectRegions(
     {
         ReadPropertyLong(pWiaItem2,
                          WIA_IPA_ITEM_CATEGORY,
-                         &amp;categoryGUID);
+                         &categoryGUID);
  
         if (categoryGUID == WIA_CATEGORY_FILM)
         {
@@ -56,7 +56,7 @@ SegFilter::DetectRegions(
  
     ...
  
-    if (SUCCEEDED(hr) &amp;&amp; bUseDefaultFilter)
+    if (SUCCEEDED(hr) && bUseDefaultFilter)
     {
         //
         // This must be on the flatbed item - use the Microsoft Default WIA Segmentation Filter.
@@ -68,7 +68,7 @@ SegFilter::DetectRegions(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IWiaSegmentationFilter,
-                              reinterpret_cast<void **>(&amp;pDefaultSegFilter));
+                              reinterpret_cast<void **>(&pDefaultSegFilter));
         if (SUCCEEDED(hr))
         {
             hr = pDefaultSegFilter->DetectRegions(lFlags, pInputStream, pWiaItem2);

@@ -91,7 +91,7 @@ Array elements can be retrieved in native code, by using the **WEX::TestExecutio
 8          TestDataArray();
 9          ~TestDataArray();
 10         const size_t GetSize() const;
-11         T&amp; operator[](size_t index);
+11         T& operator[](size_t index);
 12
 13     private:
 14        ...

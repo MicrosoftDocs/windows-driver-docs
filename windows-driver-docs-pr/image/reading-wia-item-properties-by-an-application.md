@@ -64,14 +64,14 @@ HRESULT _stdcall CWIADevice::drvReadItemProperties(
   *plDevErrVal = 0;
 
   LONG lWIAItemType = 0;
-  HRESULT hr = wiasGetItemType(pWiasContext,&amp;lWIAItemType);
+  HRESULT hr = wiasGetItemType(pWiasContext,&lWIAItemType);
   if(S_OK == hr) {
     //
     // perform custom operations depending on the type of
     // WIA item that was passed to drvReadItemProperties
     //
 
-      if(lWIAItemType &amp; WiaItemTypeRoot) {
+      if(lWIAItemType & WiaItemTypeRoot) {
       //
       // If the WIA_DPA_CONNECT_STATUS property ID is in the PROPSPEC
       // array, then read the latest "Connect Status".

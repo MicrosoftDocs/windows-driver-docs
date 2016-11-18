@@ -47,7 +47,7 @@ Instructions
        
         ////
         // TODO: 1)  Perform your checks to see if your implementation is compatible with the target.
-        //       Use the ITarget::GetValue() &amp; ITarget::Eval() method to get the necessary data , info 
+        //       Use the ITarget::GetValue() & ITarget::Eval() method to get the necessary data , info 
         //       to determine that. 
         //       2)  Also get the necessary info and save it in a member variable 
         //       to accomplish the later Open() method call.

@@ -53,7 +53,7 @@ CWSDDevice::OpenPropertyStore(
     if (SUCCEEDED(hr))
     {
         hr = m_pFunctionInstance->OpenPropertyStore(STGM_READ, ppPropertyStore);
-        if ((SUCCEEDED(hr)) &amp;&amp; (!(*ppPropertyStore)))
+        if ((SUCCEEDED(hr)) && (!(*ppPropertyStore)))
         {
             hr = E_POINTER;
             WIAS_ERROR((g_hInst, 

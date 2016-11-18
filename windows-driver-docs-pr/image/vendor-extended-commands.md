@@ -100,7 +100,7 @@ HRESULT hr = S_OK;
 IWiaItemExtras *pIWiaItemExtras = NULL;
 
 hr = pIWiaRootItem->QueryInterface(IID_IWiaItemExtras,
-                                   (VOID **) &amp;pIWiaItemExtras);
+                                   (VOID **) &pIWiaItemExtras);
 if (FAILED(hr)) {
     MessageBox("QueryInterface for IWiaItemExtras failed");
     return;
@@ -143,7 +143,7 @@ pDataIn->NextPhase = PTP_NEXTPHASE_READ_DATA;
 hr = pIWiaItemExtras->Escape(ESCAPE_PTP_VENDOR_COMMAND,
                              (BYTE *) pDataIn, dwDataInSize,
                              (BYTE *) pDataOut, dwDataOutSize,
-                             &amp;dwActualDataOutSize);
+                             &dwActualDataOutSize);
 
 if (FAILED(hr)) {
     MessageBox("Escape failed");

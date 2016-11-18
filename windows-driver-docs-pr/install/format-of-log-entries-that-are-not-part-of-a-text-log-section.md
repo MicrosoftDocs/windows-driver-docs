@@ -68,10 +68,10 @@ The following example of text log entries is taken from a device installation te
 Be aware that the *event\_category* field for the first two log entries indicates that the user-mode PnP manager wrote these log entries.
 
 ```
-   . ump: Start service install for: PCI\VEN_104C&amp;DEV_8019&amp;SUBSYS_8010104C&amp;REV_00\3&amp;61aaa01&amp;0&amp;38
+   . ump: Start service install for: PCI\VEN_104C&DEV_8019&SUBSYS_8010104C&REV_00\3&61aaa01&0&38
    . ump: Creating Install Process: rundll32.exe
 
->>>  [Device Install - PCI\VEN_104C&amp;DEV_8019&amp;SUBSYS_8010104C&amp;REV_00\3&amp;61aaa01&amp;0&amp;38]
+>>>  [Device Install - PCI\VEN_104C&DEV_8019&SUBSYS_8010104C&REV_00\3&61aaa01&0&38]
 >>>  2005/02/13 22:06:28.109: Section start
 ```
 

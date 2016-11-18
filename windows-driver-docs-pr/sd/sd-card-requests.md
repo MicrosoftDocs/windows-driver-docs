@@ -66,7 +66,7 @@ The following code example illustrates how a driver for a function on a multifun
  sdrp->Parameters.GetSetProperty.Property = 
  SDP_FUNCTION_NUMBER;
  sdrp->Parameters.GetSetProperty.Buffer = 
- &amp;pDevExt->FunctionNumber;
+ &pDevExt->FunctionNumber;
  sdrp->Parameters.GetSetProperty.Length = 
  sizeof(pDevExt->FunctionNumber);
  status = SdBusSubmitRequest (pDevExt->BusInterface.Context,sdrp);

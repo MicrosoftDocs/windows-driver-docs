@@ -51,7 +51,7 @@ Result =
     0,
     NULL,
     NULL,
-    &amp;pOutParameters,
+    &pOutParameters,
     NULL
     );
 
@@ -60,43 +60,43 @@ Result =
   pOutParameters->Get(
     L"Status",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
 Status = Parameter.ulval;
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Get the count from the output parameters object
 Result =
   pOutParameters->Get(
     L"Count",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
 Count = Parameter.ulval;
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Get the length from the output parameters object
 Result =
   pOutParameters->Get(
     L"Length",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
 Length = Parameter.ulval;
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Get the data buffer from the output parameters object
 Result =
   pOutParameters->Get(
     L"ErrorSourceArray",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
@@ -106,7 +106,7 @@ Array = Parameter.parray;
 Result =
   SafeArrayAccessData(
     Array,
-    &amp;ErrorSourceList
+    &ErrorSourceList
     );
 
 // Process the error source information.
@@ -121,7 +121,7 @@ Result =
 
 // Free the array containing the error source information
 SafeArrayUnaccessData(Array);
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Free up resources
 SysFreeString(ClassName);

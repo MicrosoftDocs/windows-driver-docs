@@ -203,7 +203,7 @@ CMiniportTopology::PropertyHandlerJackDescription(
         {
             ntStatus = STATUS_INVALID_PARAMETER;
         }
-        else if (PropertyRequest->Verb &amp; KSPROPERTY_TYPE_BASICSUPPORT)
+        else if (PropertyRequest->Verb & KSPROPERTY_TYPE_BASICSUPPORT)
         {
             ntStatus = PropertyHandler_BasicSupport(
                             PropertyRequest,
@@ -245,7 +245,7 @@ CMiniportTopology::PropertyHandlerJackDescription(
             {
                 ntStatus = STATUS_BUFFER_TOO_SMALL;
             }
-            else if (PropertyRequest->Verb &amp; KSPROPERTY_TYPE_GET)
+            else if (PropertyRequest->Verb & KSPROPERTY_TYPE_GET)
             {
                 PKSMULTIPLE_ITEM pMI = (PKSMULTIPLE_ITEM)PropertyRequest->Value;
 
@@ -281,7 +281,7 @@ PropertyHandler_TopoFilter(IN PPCPROPERTY_REQUEST PropertyRequest)
     NTSTATUS ntStatus = STATUS_INVALID_DEVICE_REQUEST;
     PCMiniportTopology pMiniport = (PCMiniportTopology)PropertyRequest->MajorTarget;
 
-    if (IsEqualGUIDAligned(*PropertyRequest->PropertyItem->Set, KSPROPSETID_Jack) &amp;&amp;
+    if (IsEqualGUIDAligned(*PropertyRequest->PropertyItem->Set, KSPROPSETID_Jack) &&
         (PropertyRequest->PropertyItem->Id == KSPROPERTY_JACK_DESCRIPTION))
     {
         ntStatus = pMiniport->PropertyHandlerJackDescription(PropertyRequest);
@@ -305,7 +305,7 @@ To implement the automation table for the filter, insert the following code into
 static PCPROPERTY_ITEM PropertiesTopoFilter[] =
 {
     {
-        &amp;KSPROPSETID_Jack,
+        &KSPROPSETID_Jack,
         KSPROPERTY_JACK_DESCRIPTION,
         KSPROPERTY_TYPE_GET | KSPROPERTY_TYPE_BASICSUPPORT,
         PropertyHandler_TopoFilter

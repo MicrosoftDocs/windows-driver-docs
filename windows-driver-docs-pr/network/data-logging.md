@@ -28,7 +28,7 @@ VOID NTAPI
     )
 {
   // Increment the total count of discarded packets
- InterlockedIncrement(&amp;TotalDiscardCount);
+ InterlockedIncrement(&TotalDiscardCount);
 
 
   // Check whether a discard reason metadata field is present
@@ -45,7 +45,7 @@ VOID NTAPI
           FWPS_DISCARD_FIREWALL_POLICY)
       {
         // Increment the count of packets discarded by a filter
- InterlockedIncrement(&amp;FilterDiscardCount);
+ InterlockedIncrement(&FilterDiscardCount);
       }
     }
   }

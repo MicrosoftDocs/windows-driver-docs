@@ -46,6 +46,7 @@ Windows does not disconnect from a network once it is connected if the signal fr
 
 
 -   [Fast Roaming with 802.11k, 802.11v, and 802.11r](fast-roaming-with-802-11k--802-11v--and-802-11r.md)
+- For information on developing Miracast displays with a WLAN connection, refer to the [Building best-in-class Miracast solutions with Windows 10](http://download.microsoft.com/download/3/F/9/3F9F0453-04AE-4E4B-87EF-729FF931C1F9/Building best-in-class Miracast solutions with Windows 10.docx) guide
 
  
 

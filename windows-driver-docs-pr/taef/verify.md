@@ -146,7 +146,7 @@ The **WEX::TestExecution::VerifyOutputTraits** class template specialization mus
         class VerifyOutputTraits<MyClass>
         {
         public:
-            static WEX::Common::NoThrowString ToString(const MyClass&amp; myClass)
+            static WEX::Common::NoThrowString ToString(const MyClass& myClass)
             {
                 return WEX::Common::NoThrowString().Format(L"%d", myClass.GetValue());
             }
@@ -184,27 +184,27 @@ The **WEX::TestExecution::VerifyCompareTraits** class template specialization mu
         class VerifyCompareTraits<MyClass, MyClass>
         {
         public:
-            static bool AreEqual(const MyClass&amp; expected, const MyClass&amp; actual)
+            static bool AreEqual(const MyClass& expected, const MyClass& actual)
             {
                 return expected.GetValue() == actual.GetValue();
             }
 
-            static bool AreSame(const MyClass&amp; expected, const MyClass&amp; actual)
+            static bool AreSame(const MyClass& expected, const MyClass& actual)
             {
-                return &amp;expected == &amp;actual;
+                return &expected == &actual;
             }
 
-            static bool IsLessThan(const MyClass&amp; expectedLess, const MyClass&amp; expectedGreater)
+            static bool IsLessThan(const MyClass& expectedLess, const MyClass& expectedGreater)
             {
                 return (expectedLess.GetValue() < expectedGreater.GetValue());
             }
 
-            static bool IsGreaterThan(const MyClass&amp; expectedGreater, const MyClass&amp; expectedLess)
+            static bool IsGreaterThan(const MyClass& expectedGreater, const MyClass& expectedLess)
             {
                 return (expectedGreater.GetValue() > expectedLess.GetValue());
             }
 
-            static bool IsNull(const MyClass&amp; object)
+            static bool IsNull(const MyClass& object)
             {
                 return object.GetValue() == 0;
             }

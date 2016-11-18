@@ -43,7 +43,7 @@ where the *time\_stamp* subfields are as follows:
 The following is an example of a typical section header that the user-mode Plug and Play (PnP) manager would create to group installation operations for a PCI device. The *section\_title* field is "Device Install," the *instance\_identifier* field is the device instance identifier "PCI\\VEN\_104C&DEV\_8019&SUBSYS\_8010104C&REV\_00\\3&61aaa01&0&38," and the *time\_stamp* field is "2005/02/13 22:06:28.109:."
 
 ```
->>>  [Device Install - PCI\VEN_104C&amp;DEV_8019&amp;SUBSYS_8010104C&amp;REV_00\3&amp;61aaa01&amp;0&amp;38]
+>>>  [Device Install - PCI\VEN_104C&DEV_8019&SUBSYS_8010104C&REV_00\3&61aaa01&0&38]
 >>>  2005/02/13 22:06:28.109: Section start
 ```
 

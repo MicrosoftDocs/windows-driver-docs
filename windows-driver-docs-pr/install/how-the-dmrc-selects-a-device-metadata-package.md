@@ -40,8 +40,8 @@ The following points are relevant to the selection algorithm that is used by the
 -   If the DMRC selects a metadata package that is based on hardware IDs, it uses the same ranking of hardware IDs that the operating system uses during driver installation. The DMRC ranks more-specific hardware IDs larger than less-specific hardware IDs. For example, the following hardware IDs are listed in ranking order:
 
     ```
-    <HardwareID>DOID:USB\VID_XXXX&amp;PID_YYYY&amp;REV_0000</HardwareID>
-    <HardwareID>DOID:USB\VID_XXXX&amp;PID_YYYY</HardwareID>
+    <HardwareID>DOID:USB\VID_XXXX&PID_YYYY&REV_0000</HardwareID>
+    <HardwareID>DOID:USB\VID_XXXX&PID_YYYY</HardwareID>
     ```
 
     For the information about hardware IDs, see [Hardware IDs](hardware-ids.md).

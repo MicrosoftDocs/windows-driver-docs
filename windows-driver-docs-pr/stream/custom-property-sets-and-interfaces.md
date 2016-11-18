@@ -107,7 +107,7 @@ CCameraControlInterfaceHandler::CCameraControlInterfaceHandler(
     if (SUCCEEDED(*hr)) {
         if (UnkOuter) {
             IKsObject*  Object;
-            *hr =  UnkOuter->QueryInterface(uuidof(IKsObject), reinterpret_cast<PVOID*>(&amp;Object));
+            *hr =  UnkOuter->QueryInterface(uuidof(IKsObject), reinterpret_cast<PVOID*>(&Object));
             if (SUCCEEDED(*hr)) {
                 m_ObjectHandle = Object->KsGetObjectHandle();
                 // m_Object handle is file handle of the driver
@@ -142,11 +142,11 @@ CCameraControlInterfaceHandler::Set(
  return ::KsSynchronousDeviceControl(
                 m_ObjectHandle,
                 IOCTL_KS_PROPERTY,
-                &amp;CameraControl,
+                &CameraControl,
                 sizeof(CameraControl),
-                &amp;CameraControl,
+                &CameraControl,
                 sizeof(CameraControl),
-                &amp;BytesReturned);
+                &BytesReturned);
 }
 
 STDMETHODIMP

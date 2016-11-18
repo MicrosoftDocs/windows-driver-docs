@@ -127,7 +127,7 @@ With the mapping of our data source to the test method complete, you can now mod
 2    {
 3    public:
 4        template <typename T>
-5        static HRESULT __stdcall TryGetValue(_In_z_ const wchar_t* pszString, T&amp; result)
+5        static HRESULT __stdcall TryGetValue(_In_z_ const wchar_t* pszString, T& result)
 6        {
 7            return Private::TestData<T>::TryGetValue(pszString, result);
 8        }

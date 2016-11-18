@@ -148,7 +148,7 @@ UCHAR ReportDescriptor[] = {
     06, 01,         // USAGE_PAGE (Generic Desktop)
     0A, 0D,         // USAGE (Portable Device Control)
     A1, 01,         // COLLECTION (Application)
-    85, 01,         //   REPORT_ID (1) (For Input Report &amp; Feature Report)
+    85, 01,         //   REPORT_ID (1) (For Input Report & Feature Report)
     
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)
@@ -390,7 +390,7 @@ UCHAR ReportDescriptor[] = {
     06, 01,         // USAGE_PAGE (Generic Desktop)
     0A, 0D,         // USAGE (Portable Device Control)
     A1, 01,         // COLLECTION (Application)
-    85, 01,         //   REPORT_ID (1) (For Input Report &amp; Feature Report)
+    85, 01,         //   REPORT_ID (1) (For Input Report & Feature Report)
     
     06, 01,         //   USAGE_PAGE (Generic Desktop)
     0A, 0D,         //   USAGE (Portable Device Control)

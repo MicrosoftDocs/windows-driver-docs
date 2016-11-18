@@ -21,7 +21,7 @@ Several file system operations specify FILE\_SPECIAL\_ACCESS. The FSCTL\_MOVE\_F
     //  extract and decode the file object and check for type of open
     //
 
-    if (FatDecodeFileObject( IrpSp->FileObject, &amp;Vcb, &amp;FcbOrDcb, &amp;Ccb ) != UserVolumeOpen) {
+    if (FatDecodeFileObject( IrpSp->FileObject, &Vcb, &FcbOrDcb, &Ccb ) != UserVolumeOpen) {
 
         FatCompleteRequest( IrpContext, Irp, STATUS_INVALID_PARAMETER );
 
@@ -52,7 +52,7 @@ As previously noted, the handle used to issue the FSCTL\_MOVE\_FILE is an "open"
                                         0,
                                         *IoFileObjectType,
                                         Irp->RequestorMode,
-                                        &amp;FileObject,
+                                        &FileObject,
                                         NULL );
 
     if (!NT_SUCCESS(Status)) {

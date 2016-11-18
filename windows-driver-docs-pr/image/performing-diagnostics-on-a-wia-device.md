@@ -37,7 +37,7 @@ STDMETHODIMP CWIADevice::Diagnostic(LPSTI_DIAG pBuffer)
   // initialize response buffer
   //
 
-  memset(&amp;pBuffer->sErrorInfo,0,sizeof(pBuffer->sErrorInfo));
+  memset(&pBuffer->sErrorInfo,0,sizeof(pBuffer->sErrorInfo));
 
   pBuffer->sErrorInfo.dwGenericError = NOERROR;
   pBuffer->sErrorInfo.dwVendorError  = 0;

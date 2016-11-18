@@ -33,7 +33,7 @@ fsFilterCallbacks.PostAcquireForModifiedPageWriter = MyLegacyFilterPostFsFilterO
 fsFilterCallbacks.PreReleaseForModifiedPageWriter = MyLegacyFilterPreFsFilterOperation;
 fsFilterCallbacks.PostReleaseForModifiedPageWriter = MyLegacyFilterPostFsFilterOperation;
 
-status = FsRtlRegisterFileSystemFilterCallbacks(DriverObject, &amp;fsFilterCallbacks);
+status = FsRtlRegisterFileSystemFilterCallbacks(DriverObject, &fsFilterCallbacks);
 ```
 
  

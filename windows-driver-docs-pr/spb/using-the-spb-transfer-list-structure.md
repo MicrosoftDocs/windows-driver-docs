@@ -44,10 +44,10 @@ EvtIoInCallerContext(
     NTSTATUS status = STATUS_SUCCESS;
     WDF_REQUEST_PARAMETERS fxParams;
   
-    WDF_REQUEST_PARAMETERS_INIT(&amp;fxParams);
-    WdfRequestGetParameters(FxRequest, &amp;fxParams);
+    WDF_REQUEST_PARAMETERS_INIT(&fxParams);
+    WdfRequestGetParameters(FxRequest, &fxParams);
 
-    if ((fxParams.Type != WdfRequestTypeDeviceControl) &amp;&amp;
+    if ((fxParams.Type != WdfRequestTypeDeviceControl) &&
         (fxParams.Type != WdfRequestTypeDeviceControlInternal))
     {
         status = STATUS_NOT_SUPPORTED;

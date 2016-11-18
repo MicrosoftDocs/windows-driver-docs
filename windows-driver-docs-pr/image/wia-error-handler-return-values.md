@@ -50,7 +50,7 @@ CErrHandler::ReportStatus(
     IN  LONG        lPercentComplete)
 {
     HRESULT hr = WIA_STATUS_NOT_HANDLED;
-    if ((hrStatus == WIA_ERROR_PAPER_JAM) &amp;&amp; HandleMessageNow())
+    if ((hrStatus == WIA_ERROR_PAPER_JAM) && HandleMessageNow())
     {
         ...
     }
