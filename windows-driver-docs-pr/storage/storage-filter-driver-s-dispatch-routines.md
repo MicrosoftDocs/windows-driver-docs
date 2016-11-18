@@ -70,7 +70,7 @@ NTSTATUS FilterScsiIrp(
     // processing this irp.
     //
 
-    status = IoAcquireRemoveLock(&amp;deviceExtension->RemoveLock, Irp);
+    status = IoAcquireRemoveLock(&deviceExtension->RemoveLock, Irp);
 
     if (!NT_SUCCESS(status)) {
         Irp->IoStatus.Status = status;
@@ -89,7 +89,7 @@ NTSTATUS FilterScsiIrp(
     }
 
     if (srbFunction == SRB_FUNCTION_EXECUTE_SCSI) {
-        if (srbFlags &amp; SRB_FLAGS_UNSPECIFIED_DIRECTION) {
+        if (srbFlags & SRB_FLAGS_UNSPECIFIED_DIRECTION) {
             // ...
 
             // filter processing for SRB_FUNCTION_EXECUTE_SCSI

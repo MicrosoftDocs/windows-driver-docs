@@ -24,7 +24,7 @@ int StreamNumber = pSrb->StreamObject->StreamNumber;
 PKS_DATAFORMAT_VIDEOINFOHEADER  pKSDataFormat = 
     (PKS_DATAFORMAT_VIDEOINFOHEADER) pSrb->CommandData.OpenFormat;
 PKS_VIDEOINFOHEADER pVideoInfoHdrRequested = 
-    &amp;pKSDataFormat->VideoInfoHeader;
+    &pKSDataFormat->VideoInfoHeader;
 ```
 
 Minidrivers should verify that they can support the requested stream format. In particular, the contents of the [**KS\_BITMAPINFOHEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567305) structure should be verified, along with cropping and scaling information specified by the **rcSource** and **rcTarget** members.
@@ -38,7 +38,7 @@ Special rules apply when the output buffer is a DirectDraw surface. In this case
 To determine the requested image width, use the following code example:
 
 ```
-if (IsRectEmpty(&amp;pVideoInfoHdrRequested->rcTarget) {
+if (IsRectEmpty(&pVideoInfoHdrRequested->rcTarget) {
     Width =  pVideoInfoHdrRequested->bmiHeader.biWidth;
     Height = pVideoInfoHdrRequested->bmiHeader.biHeight;
 } 

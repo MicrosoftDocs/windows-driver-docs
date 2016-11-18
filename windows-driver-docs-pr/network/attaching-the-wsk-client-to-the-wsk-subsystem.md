@@ -107,9 +107,9 @@ NTSTATUS
   Status = NmrClientAttachProvider(
     NmrBindingHandle,
     BindingContext,
-    &amp;WskAppDispatch,
-    &amp;WskClient,
-    &amp;WskProviderDispatch
+    &WskAppDispatch,
+    &WskClient,
+    &WskProviderDispatch
     );
 
   // Check result of attachment

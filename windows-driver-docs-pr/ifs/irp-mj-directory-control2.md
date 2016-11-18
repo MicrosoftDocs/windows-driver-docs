@@ -84,11 +84,11 @@ FsdNotifyTraverseCheck (
             TRUE,
             FILE_TRAVERSE,
             0,
-            &amp;Privileges,
+            &Privileges,
             IoGetFileObjectGenericMapping(),
             UserMode,
-            &amp;GrantedAccess,
-            &amp;Status);
+            &GrantedAccess,
+            &Status);
  
     //
     // At this point, exit the loop if access was not granted, 

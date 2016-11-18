@@ -17,23 +17,23 @@ The following diagram shows the relationship between the system-supplied Microso
 
 See the following for a description of the Microsoft Windows Driver Model (WDM) audio components:
 
-[DirectMusic System Component](user-mode-wdm-audio-components.md#directmusic-system-component)
+[DirectMusic System Component](user-mode-wdm-audio-components.md#directmusic_system_component)
 
-[WDMAud System Driver](user-mode-wdm-audio-components.md#wdmaud-system-driver)
+[WDMAud System Driver](user-mode-wdm-audio-components.md#wdmaud_system_driver)
 
-[SBEmul System Driver](kernel-mode-wdm-audio-components.md#sbemul-system-driver)
+[SBEmul System Driver](kernel-mode-wdm-audio-components.md#sbemul_system_driver)
 
-[SysAudio System Driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver)
+[SysAudio System Driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver)
 
-[KMixer System Driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver)
+[KMixer System Driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver)
 
-[SWMidi System Driver](kernel-mode-wdm-audio-components.md#swmidi-system-driver)
+[SWMidi System Driver](kernel-mode-wdm-audio-components.md#swmidi_system_driver)
 
-[DMusic System Driver](kernel-mode-wdm-audio-components.md#dmusic-system-driver)
+[DMusic System Driver](kernel-mode-wdm-audio-components.md#dmusic_system_driver)
 
-[Port Class Adapter Driver and PortCls System Driver](kernel-mode-wdm-audio-components.md#port-class-adapter-driver-and-portcls-system-driver)
+[Port Class Adapter Driver and PortCls System Driver](kernel-mode-wdm-audio-components.md#port_class_adapter_driver_and_portcls_system_driver)
 
-[USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio-class-system-driver)
+[USBAudio Class System Driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver)
 
 See the following for more information about the configuration of the port class adapter driver and the USBAudio driver:
 

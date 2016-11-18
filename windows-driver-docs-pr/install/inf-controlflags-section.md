@@ -133,13 +133,13 @@ The following INF file fragment shows two devices: one that is fully PnP-capable
 [ModelsSection]
 ; Models section, with two entries
 %Device1.DeviceDesc% = Device1.Install, \
-    PCI\VEN_1000&amp;DEV_0001&amp;SUBSYS_00000000&amp;REV_01
+    PCI\VEN_1000&DEV_0001&SUBSYS_00000000&REV_01
 %Device2.Device.Desc%= Device2.Install, \
-    PCI\VEN_1000&amp;DEV_0001&amp;SUBSYS_00000000&amp;REV_02
+    PCI\VEN_1000&DEV_0001&SUBSYS_00000000&REV_02
 
 [ControlFlags]
 InteractiveInstall = \
-  PCI\VEN_1000&amp;DEV_0001&amp;SUBSYS_00000000&amp;REV_02
+  PCI\VEN_1000&DEV_0001&SUBSYS_00000000&REV_02
 ; ...
 ```
 

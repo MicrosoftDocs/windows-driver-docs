@@ -25,20 +25,20 @@ NTSTATUS FsdCheckDeleteFileAccess(POW_IRP_CONTEXT IrpContext,
     //
     // See if the user has DELETE access to the target.
     //
-    SeCaptureSubjectContext( &amp;SubjectContext );
+    SeCaptureSubjectContext( &SubjectContext );
 
-    SeLockSubjectContext( &amp;SubjectContext );
+    SeLockSubjectContext( &SubjectContext );
 
     Granted = SeAccessCheck(targetSD,           // Target&#39;s SD.
-                            &amp;SubjectContext,    // Captured security context.
+                            &SubjectContext,    // Captured security context.
                             TRUE,               // Tokens are locked.
                             DELETE,             // we only care about delete 
                             0,                  // previously granted access.
-                            &amp;Privileges,        // privilege_set
+                            &Privileges,        // privilege_set
                             IoGetFileObjectGenericMapping(), // Generic mappings.
                             UserMode,           // Mode
-                            &amp;GrantedAccess,     // Granted access mask
-                            &amp;status );          // Error code
+                            &GrantedAccess,     // Granted access mask
+                            &status );          // Error code
 
     //
     // Do not need privilege set, so release it.
@@ -62,22 +62,22 @@ NTSTATUS FsdCheckDeleteFileAccess(POW_IRP_CONTEXT IrpContext,
             //
             // fine - no security is fine - he gets to do what he wants 
             //
-            SeUnlockSubjectContext( &amp;SubjectContext );
-            SeReleaseSubjectContext( &amp;SubjectContext );
+            SeUnlockSubjectContext( &SubjectContext );
+            SeReleaseSubjectContext( &SubjectContext );
             return STATUS_SUCCESS;
         }
 
  
-        Granted = SeAccessCheck(&amp;ParentFcb->SecurityDescriptor,
-                                &amp;SubjectContext,   // Captured security context.
+        Granted = SeAccessCheck(&ParentFcb->SecurityDescriptor,
+                                &SubjectContext,   // Captured security context.
                                 TRUE,              // Tokens are locked.
                                 FILE_DELETE_CHILD, // we only care about delete 
                                 0,                 // Previously granted access.
-                                &amp;Privileges,       // privilege_set
+                                &Privileges,       // privilege_set
                                 IoGetFileObjectGenericMapping(), // Generic mappings
                                 UserMode,          // mode
-                                &amp;GrantedAccess,    // Granted access mask
-                                &amp;status );         // Error code
+                                &GrantedAccess,    // Granted access mask
+                                &status );         // Error code
         //
         // Release privileges
         //
@@ -86,8 +86,8 @@ NTSTATUS FsdCheckDeleteFileAccess(POW_IRP_CONTEXT IrpContext,
             Privileges = NULL;
         }
     }
-    SeUnlockSubjectContext( &amp;SubjectContext );
-    SeReleaseSubjectContext( &amp;SubjectContext );
+    SeUnlockSubjectContext( &SubjectContext );
+    SeReleaseSubjectContext( &SubjectContext );
     return status;
 }
 ```

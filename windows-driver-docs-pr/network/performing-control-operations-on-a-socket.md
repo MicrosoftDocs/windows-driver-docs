@@ -74,7 +74,7 @@ NTSTATUS
       SO_EXCLUSIVEADDRUSE,
       SOL_SOCKET,
       sizeof(ULONG),
-      &amp;SocketOptionState,
+      &SocketOptionState,
       0,
       NULL,
       NULL,

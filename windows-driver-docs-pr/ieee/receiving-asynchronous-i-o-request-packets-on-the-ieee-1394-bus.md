@@ -223,7 +223,7 @@ kmdf1394_NotifyRoutineWorkItem (
     ASSERT(notifyContext);
 
     ntStatus = KeWaitForSingleObject(
-                                     &amp;notifyContext->responseEvent,
+                                     &notifyContext->responseEvent,
                                      Executive,
                                      KernelMode,
                                      FALSE,
@@ -355,17 +355,17 @@ kmdf1394_NotificationCallback (
                         // only implementing Quadlet Read for now
 
                         // Create a WdfWorkItem, with notifyResponse as its context, 
-                        // to handle waiting for the Response Event &amp; cleaning up all the response stuff
+                        // to handle waiting for the Response Event & cleaning up all the response stuff
 
-                        WDF_WORKITEM_CONFIG_INIT (&amp;workItemConfig, kmdf1394_NotifyRoutineWorkItem);
+                        WDF_WORKITEM_CONFIG_INIT (&workItemConfig, kmdf1394_NotifyRoutineWorkItem);
 
-                        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;attributes, NOTIFY_WORKITEM_CONTEXT);
+                        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attributes, NOTIFY_WORKITEM_CONTEXT);
 
                         attributes.ParentObject = WdfObjectContextGetObject(asyncAddressData->DeviceExtension);
 
-                        ntStatus = WdfWorkItemCreate( &amp;workItemConfig,
-                            &amp;attributes,
-                            &amp;workItem);
+                        ntStatus = WdfWorkItemCreate( &workItemConfig,
+                            &attributes,
+                            &workItem);
 
                         if (!NT_SUCCESS (ntStatus)) 
                         {
@@ -387,16 +387,16 @@ kmdf1394_NotificationCallback (
                         // a pointer to the beginning of its response packet
 
                         // parent this memory object to the workitem so both can be cleaned up together
-                        WDF_OBJECT_ATTRIBUTES_INIT (&amp;attributes);
+                        WDF_OBJECT_ATTRIBUTES_INIT (&attributes);
                         attributes.ParentObject = workItem;
 
                         ntStatus = WdfMemoryCreate(
-                                                   &amp;attributes,
+                                                   &attributes,
                                                    NonPagedPool,
                                                    POOLTAG_KMDF_VDEV,
                                                    sizeof(ULONG),
-                                                   &amp;notifyContext->responseMemory,
-                                                   &amp;responseQuadlet);
+                                                   &notifyContext->responseMemory,
+                                                   &responseQuadlet);
 
                         if (!NT_SUCCESS(ntStatus) || !responseQuadlet)
                         {
@@ -424,15 +424,15 @@ kmdf1394_NotificationCallback (
                         // do what it looks like the New (KMDF) stack expects,
                         // which is that NotifyInfo->ResponsePacket points to the
                         // data following the Async Packet header
-                        *NotifyInfo->ResponsePacket = (PVOID)&amp;responseQuadlet;
+                        *NotifyInfo->ResponsePacket = (PVOID)&responseQuadlet;
 
                         // NotifyInfo->ResponseEvent
                         // memory location that the driver fills in with
                         // the kernel event the bus driver should use to signal
                         // that it has completed sending the response packet
-                        KeInitializeEvent(&amp;notifyContext->responseEvent, NotificationEvent, FALSE);
+                        KeInitializeEvent(&notifyContext->responseEvent, NotificationEvent, FALSE);
 
-                        *NotifyInfo->ResponseEvent = &amp;notifyContext->responseEvent;
+                        *NotifyInfo->ResponseEvent = &notifyContext->responseEvent;
 
                         // NotifyInfo->ResponseLength
                         // memory location that the driver fills in with
@@ -451,7 +451,7 @@ kmdf1394_NotificationCallback (
                                             "Pre-Notification: Read Quadlet: Notify Response Handle %!HANDLE! Data %08x Event %p\n", 
                                             notifyContext->responseMemory, 
                                             *responseQuadlet, 
-                                            &amp;notifyContext->responseEvent);
+                                            &notifyContext->responseEvent);
 
                         break;
 

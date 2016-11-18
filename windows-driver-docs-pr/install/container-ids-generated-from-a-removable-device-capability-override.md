@@ -94,7 +94,7 @@ The following is an example of the registry table format for this override.
 
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
-    USB\VID_1234&amp;PID_5678
+    USB\VID_1234&PID_5678
         LocationPaths
             PCIROOT(0)#PCI(102)#USBROOT(0)#USB(1)
                 Removable=0
@@ -122,7 +122,7 @@ The following is a high-level description of the registry table format for this 
 
 ```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceOverrides
-    USB\VID_062A&amp;PID_00001
+    USB\VID_062A&PID_00001
         LocationPaths
             *
                 Removable=1

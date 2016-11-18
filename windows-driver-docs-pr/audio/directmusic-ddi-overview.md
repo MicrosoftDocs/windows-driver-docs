@@ -13,7 +13,7 @@ keywords: ["DirectMusic WDK audio , about DirectMusic DDI", "user-mode synths WD
 
 The design principles that are needed to implement user-mode synths generally apply to kernel-mode synths as well. For this reason, this guide begins with a discussion of user-mode implementations and progresses to specific kernel-mode topics.
 
-Typically, the best design strategy is to first write a software implementation of the DirectMusic [*device driver interface (DDI)*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss-device-driver-interface--ddi-) that runs in user mode. This approach is beneficial even if the final product is a kernel-mode implementation that uses hardware components. After the user-mode version is completed, the software can be converted to kernel mode and connections established with the hardware, one feature at a time. For more information, see [User Mode Versus Kernel Mode](user-mode-versus-kernel-mode.md).
+Typically, the best design strategy is to first write a software implementation of the DirectMusic [*device driver interface (DDI)*](https://msdn.microsoft.com/library/windows/hardware/ff556277#wdkgloss_device_driver_interface__ddi_) that runs in user mode. This approach is beneficial even if the final product is a kernel-mode implementation that uses hardware components. After the user-mode version is completed, the software can be converted to kernel mode and connections established with the hardware, one feature at a time. For more information, see [User Mode Versus Kernel Mode](user-mode-versus-kernel-mode.md).
 
 DirectMusic uses the following user-mode interfaces to control user-mode synthesizers and communicate with kernel-streaming drivers:
 

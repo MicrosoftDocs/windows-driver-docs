@@ -124,14 +124,14 @@ By calling the [**IMusicTechnology::SetTechnology**](https://msdn.microsoft.com/
   // Create the miniport object.
   PUNKNOWN miniport;
 
-  ntStatus = PcNewMiniport((PMINIPORT*)&amp;miniport, CLSID_MiniportDriverDMusUART);
+  ntStatus = PcNewMiniport((PMINIPORT*)&miniport, CLSID_MiniportDriverDMusUART);
 
   // Query the miniport driver for the IMusicTechnology interface.
   IMusicTechnology* pMusicTechnology;
 
   if (NT_SUCCESS(ntStatus))
   {
-      ntStatus = miniport->QueryInterface(IID_IMusicTechnology, (PVOID*)&amp;pMusicTechnology);
+      ntStatus = miniport->QueryInterface(IID_IMusicTechnology, (PVOID*)&pMusicTechnology);
   }
 
   // Set the Technology members in the DirectMusic data-range entries
@@ -139,7 +139,7 @@ By calling the [**IMusicTechnology::SetTechnology**](https://msdn.microsoft.com/
   // SetTechnology should be called before initializing the miniport.
   if (NT_SUCCESS(ntStatus))
   {
-      ntStatus = pMusicTechnology->SetTechnology(&amp;KSMUSIC_TECHNOLOGY_WAVETABLE);
+      ntStatus = pMusicTechnology->SetTechnology(&KSMUSIC_TECHNOLOGY_WAVETABLE);
   }
 ```
 

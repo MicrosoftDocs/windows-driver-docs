@@ -70,7 +70,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 </dd>
 <dt><span id="To_test_a_device_with_a_specific_Device_Id__"></span><span id="to_test_a_device_with_a_specific_device_id__"></span><span id="TO_TEST_A_DEVICE_WITH_A_SPECIFIC_DEVICE_ID__"></span>To test a device with a specific Device Id: </dt>
 <dd><p><strong>DeviceId=’</strong><em>DeviceId</em><strong>’</strong></p>
-<p>For example, <strong>DeviceID=’USB\ROOT_HUB\4&amp;1CD5D022&amp;0’</strong></p>
+<p>For example, <strong>DeviceID=’USB\ROOT_HUB\4&1CD5D022&0’</strong></p>
 </dd>
 <dt><span id="_To_test_a_device_with_a_specific_interface_"></span><span id="_to_test_a_device_with_a_specific_interface_"></span><span id="_TO_TEST_A_DEVICE_WITH_A_SPECIFIC_INTERFACE_"></span> To test a device with a specific interface:</dt>
 <dd><p><strong>Interfaces::</strong><em>InterfaceGUID</em></p>

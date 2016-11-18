@@ -25,7 +25,7 @@ The following code examples illustrate the format and requirements for supplying
 
 -   (Windows XP and later) An optional *machine-name-parameter* field is not supplied, which indicates, by default, that the computer is the local computer. A required *device-instance-ID-parameter* field supplies the device instance identifier "PCI\\VEN\_8086&DEV\_2445 &SUBSYS\_010E1028&REV\_12\\3&172E68DD&0&FD". Because the device instance identifier includes an ampersand (&), the *device-instance-ID* subfield is enclosed in quotation marks (").
     ```
-    rundll32.exe devmgr.dll,DeviceProperties_RunDLL /DeviceID "PCI\VEN_8086&amp;DEV_2445&amp;SUBSYS_010E1028&amp;REV_12\3&amp;172E68DD&amp;0&amp;FD" 
+    rundll32.exe devmgr.dll,DeviceProperties_RunDLL /DeviceID "PCI\VEN_8086&DEV_2445&SUBSYS_010E1028&REV_12\3&172E68DD&0&FD" 
     ```
 
 -   (Windows 2000 and later) A required *machine-name-parameter* field supplies a pair of quotation marks ("") as *machine-name*, which indicates that the computer is the local computer. A required *device-instance-ID-parameter* field supplies the device instance identifier "root\\system\\0000".

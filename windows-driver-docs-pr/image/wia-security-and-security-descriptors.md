@@ -43,9 +43,9 @@ SECURITY_ATTRIBUTES sa = { sizeof(sa), FALSE, NULL };
 if(ConvertStringSecurityDescriptorToSecurityDescriptor(
               MY_EVENT_DACL,
               SDDL_REVISION_1, 
-              &amp;(sa.lpSecurityDescriptor), NULL))
+              &(sa.lpSecurityDescriptor), NULL))
 {
-  h_MyEvent = CreateEvent(&amp;sa,           // Our security descriptor 
+  h_MyEvent = CreateEvent(&sa,           // Our security descriptor 
                                          //  allowing access to 
                                          //  Admins, LocalService
                                          //  and the Interactive

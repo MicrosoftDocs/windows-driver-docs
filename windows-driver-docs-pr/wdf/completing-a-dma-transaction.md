@@ -39,7 +39,7 @@ if (readComplete) {
     // This may start the transfer on the next packet if 
     // there is still data to be transferred.
     transactionComplete = 
-          WdfDmaTransactionDmaCompleted( dmaTransaction, &amp;status ); 
+          WdfDmaTransactionDmaCompleted( dmaTransaction, &status ); 
     if (transactionComplete) {
         // Complete the DmaTransaction and the request.
         devExt->CurrentReadDmaTransaction = NULL;

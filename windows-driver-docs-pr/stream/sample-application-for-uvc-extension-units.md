@@ -26,7 +26,7 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
 ```
   // pUnkOuter is the unknown associated with the base filter
   hr = pUnkOuter->QueryInterface(__uuidof(IKsTopologyInfo), 
-                               (void **) &amp;pKsTopologyInfo);
+                               (void **) &pKsTopologyInfo);
   if (!SUCCEEDED(hr))
   {
         printf("Unable to obtain IKsTopologyInfo %x\n", hr);
@@ -35,7 +35,7 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
 
   hr = FindExtensionNode(pKsTopologyInfo,                                                                                                   
      GUID_EXTENSION_UNIT_DESCRIPTOR,
-     &amp;dwExtensionNode);
+     &dwExtensionNode);
   if (FAILED(hr))
   {
         printf("Unable to find extension node : %x\n", hr);
@@ -45,14 +45,14 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
   hr = pKsTopologyInfo->CreateNodeInstance(
         dwExtensionNode, 
    __uuidof(IExtensionUnit), 
- (void **) &amp;pExtensionUnit);
+ (void **) &pExtensionUnit);
  if (FAILED(hr))
   {
         printf("Unable to create extension node instance : %x\n", hr);
  goto errExit;
   }
 
-  hr = pExtensionUnit->get_PropertySize(1, &amp;ulSize);
+  hr = pExtensionUnit->get_PropertySize(1, &ulSize);
   if (FAILED(hr))
   {
         printf("Unable to find property size : %x\n", hr);

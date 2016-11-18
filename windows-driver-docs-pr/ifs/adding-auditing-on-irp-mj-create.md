@@ -18,22 +18,22 @@ Another important aspect of the security checks within a file system is to add a
 {
 UNICODE_STRING FileAuditObjectName;
 
-RtlInitUnicodeString(&amp;FileAuditObjectName, L"File");
+RtlInitUnicodeString(&FileAuditObjectName, L"File");
 
 if ( SeAuditingFileOrGlobalEvents (AccessGranted, 
-        &amp;Fcb->SecurityDescriptor, 
-        &amp;AccessState->SubjectSecurityContext)) {
+        &Fcb->SecurityDescriptor, 
+        &AccessState->SubjectSecurityContext)) {
     //
     // Must pass complete Windows path name, including device name.
     //
-    ConstructAuditFileName(Irp, Fcb, &amp;AuditName);
+    ConstructAuditFileName(Irp, Fcb, &AuditName);
 
     if (IrpSp->Parameters.Create.SecurityContext->FullCreateOptions 
-            &amp; FILE_DELETE_ON_CLOSE) {
-        SeOpenObjectForDeleteAuditAlarm(&amp;FileAuditObjectName,
+            & FILE_DELETE_ON_CLOSE) {
+        SeOpenObjectForDeleteAuditAlarm(&FileAuditObjectName,
                                         NULL,
-                                        &amp;AuditName,
-                                        &amp;Fcb->SecurityDescriptor,
+                                        &AuditName,
+                                        &Fcb->SecurityDescriptor,
                                         AccessState,
                                         FALSE, // Object not created.
                                         // Was it  successful?  
@@ -41,13 +41,13 @@ if ( SeAuditingFileOrGlobalEvents (AccessGranted,
                                         SeAccessCheckAccessGranted, 
                                         // UserMode or KernelMode
                                         EffectiveMode, 
-                                        &amp;AccessState->GenerateOnClose
+                                        &AccessState->GenerateOnClose
                                         );
     } else {
-        SeOpenObjectAuditAlarm(&amp;FileAuditObjectName,
+        SeOpenObjectAuditAlarm(&FileAuditObjectName,
                                NULL,
-                               &amp;AuditName,
-                               &amp;Fcb->SecurityDescriptor,
+                               &AuditName,
+                               &Fcb->SecurityDescriptor,
                                AccessState,
                                FALSE, // object not created
                                // Was it successful?  
@@ -55,7 +55,7 @@ if ( SeAuditingFileOrGlobalEvents (AccessGranted,
                                AccessGranted, 
                                // UserMode or KernelMode
                                EffectiveMode, 
-                               &amp;AccessState->GenerateOnClose
+                               &AccessState->GenerateOnClose
                                );
     }
 

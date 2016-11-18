@@ -55,18 +55,18 @@ NTSTATUS status;
 WDF_REQUEST_PARAMETERS params;
 ULONG sendFlags;  
  
-WDF_REQUEST_PARAMETERS_INIT(&amp;params);
-WdfRequestGetParameters(Request, &amp;params);
+WDF_REQUEST_PARAMETERS_INIT(&params);
+WdfRequestGetParameters(Request, &params);
    
 sendFlags = WDF_REQUEST_SEND_OPTION_SYNCHRONOUS;
 if (params.Type == WdfRequestTypeCreate) {
     sendFlags |= WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT;
 }
    
-WDF_REQUEST_SEND_OPTIONS_INIT(&amp;options, sendFlags);
+WDF_REQUEST_SEND_OPTIONS_INIT(&options, sendFlags);
 if (WdfRequestSend(Request,
                    iotarget,
-                   &amp;options
+                   &options
                    ) == FALSE) {
     status = WdfRequestGetStatus(Request);
 }

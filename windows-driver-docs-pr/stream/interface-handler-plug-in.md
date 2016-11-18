@@ -40,7 +40,7 @@ You can then query this outer object for a pointer to the MS-provided [IKsProper
 ```
 hResult = piOuterUnknown->QueryInterface(
                 __uuidof( piKsPropertySet ),
-                 &amp;piKsPropertySet );
+                 &piKsPropertySet );
 ```
 
 Then, from **CreateInstance**, invoke the constructor of your interface to create an instance of your interface handler object.

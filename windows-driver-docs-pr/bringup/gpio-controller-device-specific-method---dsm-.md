@@ -102,7 +102,7 @@ Function(_DSM,{BuffObj, PkgObj, IntObj},{BuffObj, IntObj, IntObj, PkgObj})
 
             case(0)
             {
-                // Revision 0+: Functions 0 &amp; 1 are supported
+                // Revision 0+: Functions 0 & 1 are supported
                 return (Buffer() {0x3})
             }
 

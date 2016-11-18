@@ -21,7 +21,7 @@ The following code example illustrates the sequence of calls that open and initi
 
 ```
   status = SdBusOpenInterface (pDevExt->UnderlyingPDO,
-    &amp;pDevExt->BusInterface,
+    &pDevExt->BusInterface,
     sizeof(SDBUS_INTERFACE_STANDARD),
     SDBUS_INTERFACE_VERSION);
 
@@ -36,7 +36,7 @@ The following code example illustrates the sequence of calls that open and initi
     status = STATUS_UNSUCCESSFUL;
     if (DeviceExtension->BusInterface.InitializeInterface) {
       status = (pDevExt->BusInterface.InitializeInterface)
-        (pDevExt->BusInterface.Context, &amp;interfaceParameters);
+        (pDevExt->BusInterface.Context, &interfaceParameters);
     }
       }
 ```
@@ -60,7 +60,7 @@ The following code example illustrates how a driver can dereference an SD card b
 ```
 if (pDevExt->BusInterface.InterfaceDereference) {
     (pDevExt->BusInterface.InterfaceDereference) (pDevExt->BusInterface.Context);
-    RtlZeroMemory(&amp;pDevExt->BusInterface, sizeof(SDBUS_INTERFACE_STANDARD));
+    RtlZeroMemory(&pDevExt->BusInterface, sizeof(SDBUS_INTERFACE_STANDARD));
 }
 ```
 

@@ -47,7 +47,7 @@ In addition to a **WanEndpoints** value, an INF file for an ISDN adapter must ad
     </tr>
     <tr class="even">
     <td align="left"><p>ISDN_SWITCH_ATT</p></td>
-    <td align="left"><p>ESS5 (AT&amp;T, North America)</p></td>
+    <td align="left"><p>ESS5 (AT&T, North America)</p></td>
     </tr>
     <tr class="odd">
     <td align="left"><p>ISDN_SWITCH_NI1</p></td>

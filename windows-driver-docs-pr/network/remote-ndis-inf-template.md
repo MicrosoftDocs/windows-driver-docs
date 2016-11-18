@@ -45,15 +45,15 @@ DriverVer           =06/21/2006,6.0.6000.16384
 
 ; Decoration for x86 architecture
 [RndisDevices.NTx86]
-%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&PID_yyyy
 
 ; Decoration for x64 architecture
 [RndisDevices.NTamd64]
-%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&PID_yyyy
 
 ; Decoration for ia64 architecture
 [RndisDevices.NTia64]
-%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&PID_yyyy
 
 ;@@@ This is the common setting for setup
 [ControlFlags]
@@ -117,15 +117,15 @@ DriverVer           = 07/21/2008,6.0.6000.16384
 
 ; Decoration for x86 architecture
 [RndisDevices.NTx86]
-%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&PID_yyyy
 
 ; Decoration for x64 architecture
 [RndisDevices.NTamd64]
-%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&PID_yyyy
 
 ; Decoration for ia64 architecture
 [RndisDevices.NTia64]
-%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&PID_yyyy
 
 ;@@@ This is the common setting for setup
 [ControlFlags]

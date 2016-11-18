@@ -74,7 +74,7 @@ A GPD file for a color printer should also define a ColorMode feature, as shown 
      *Command: CmdSelect
       {
         *Order: PAGE_SETUP.16 
-        *Cmd: "<1B>&amp;b1M"
+        *Cmd: "<1B>&b1M"
       }
    }
   *Option: 24bpp

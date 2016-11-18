@@ -25,7 +25,7 @@ A minifilter driver's [**preoperation callback routine**](https://msdn.microsoft
 
     if (FlagOn(CallbackData->Iopb->MinorFunction, IRP_MN_MDL))
     {
-        ReadMdl = &amp;CallbackData->Iopb->Parameters.Read.MdlAddress;
+        ReadMdl = &CallbackData->Iopb->Parameters.Read.MdlAddress;
     }
     ```
 
@@ -36,7 +36,7 @@ A minifilter driver's [**preoperation callback routine**](https://msdn.microsoft
     PMDL *ReadMdl = NULL;
     PVOID ReadAddress = NULL;
 
-    status = FltDecodeParameters(CallbackData, &amp;ReadMdl, NULL, NULL, NULL);
+    status = FltDecodeParameters(CallbackData, &ReadMdl, NULL, NULL, NULL);
     ```
 
 -   If an MDL exists for the buffer, call [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559) to obtain the system address for the buffer and then use this address to access the buffer.

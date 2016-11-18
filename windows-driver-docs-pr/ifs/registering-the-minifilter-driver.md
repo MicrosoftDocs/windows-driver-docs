@@ -20,8 +20,8 @@ In the MiniSpy sample, the minifilter driver is registered as shown in the follo
 NTSTATUS status;
 status = FltRegisterFilter(
            DriverObject,                  //Driver
-           &amp;FilterRegistration,           //Registration
-           &amp;MiniSpyData.FilterHandle);    //RetFilter
+           &FilterRegistration,           //Registration
+           &MiniSpyData.FilterHandle);    //RetFilter
 ```
 
 **FltRegisterFilter** has two input parameters. The first, *Driver*, is the driver object pointer that the minifilter driver received as the *DriverObject* input parameter to its **DriverEntry** routine. The second, *Registration*, is a pointer to an [**FLT\_REGISTRATION**](https://msdn.microsoft.com/library/windows/hardware/ff544811) structure that contains entry points to the minifilter driver's callback routines.

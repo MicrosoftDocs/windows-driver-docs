@@ -27,7 +27,7 @@ You may want to write a single device driver that exposes your synth hardware as
 
     Exposing your DLS device through the legacy APIs requires some extra work. When a legacy pin is opened on a device that requires DLS instruments, the driver should locate and open a file containing the DLS collection to be used. The driver should then intercept update and bank changes, retrieve the appropriate data from the DLS file, and perform the necessary DLS downloads to the device.
 
-    This case is problematic because the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud-system-driver) and other clients are not aware that they need to download a collection. They just start sending MIDI update changes and notes.
+    This case is problematic because the [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) and other clients are not aware that they need to download a collection. They just start sending MIDI update changes and notes.
 
  
 

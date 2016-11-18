@@ -32,7 +32,7 @@ VOID NTAPI
   // a callout can still return a BLOCK action in order to VETO a
   // PERMIT action that was returned by a previous filter. In this
   // example the function just exits if the flag is not set.
- if (!(classifyOut->rights &amp; FWPS_RIGHT_ACTION_WRITE))
+ if (!(classifyOut->rights & FWPS_RIGHT_ACTION_WRITE))
   {
     // Return without specifying an action
  return;
@@ -64,10 +64,10 @@ VOID NTAPI
  classifyOut->actionType = FWP_ACTION_PERMIT;
 
     // Check whether the FWPS_RIGHT_ACTION_WRITE flag should be cleared
- if (filter->flags &amp; FWPS_FILTER_FLAG_CLEAR_ACTION_RIGHT)
+ if (filter->flags & FWPS_FILTER_FLAG_CLEAR_ACTION_RIGHT)
     {
        // Clear the FWPS_RIGHT_ACTION_WRITE flag
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
     }
 
  return;
@@ -82,7 +82,7 @@ VOID NTAPI
  classifyOut->actionType = FWP_ACTION_BLOCK;
 
     // Clear the FWPS_RIGHT_ACTION_WRITE flag
- classifyOut->rights &amp;= ~FWPS_RIGHT_ACTION_WRITE;
+ classifyOut->rights &= ~FWPS_RIGHT_ACTION_WRITE;
 
  return;
   }

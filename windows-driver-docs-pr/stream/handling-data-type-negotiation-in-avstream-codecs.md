@@ -37,14 +37,14 @@ To enable successful data type negotiation, the minidriver must follow these ste
 
     ```
     const PKSDATARANGE VideoDecoderInputPinDataRanges[8] = {
-        (PKSDATARANGE)&amp;H264DataFormat,
-        (PKSDATARANGE)&amp;VC_1DataFormat,
-        (PKSDATARANGE)&amp;VC_1DataFormatVIH2,
-        (PKSDATARANGE)&amp;WMV9DataFormat,
-        (PKSDATARANGE)&amp;WMV9DataFormatVIH2,
-        (PKSDATARANGE)&amp;DX50DataFormat,
-        (PKSDATARANGE)&amp;DX50DataFormatVIH2,
-        (PKSDATARANGE)&amp;MPEG2DataFormat
+        (PKSDATARANGE)&H264DataFormat,
+        (PKSDATARANGE)&VC_1DataFormat,
+        (PKSDATARANGE)&VC_1DataFormatVIH2,
+        (PKSDATARANGE)&WMV9DataFormat,
+        (PKSDATARANGE)&WMV9DataFormatVIH2,
+        (PKSDATARANGE)&DX50DataFormat,
+        (PKSDATARANGE)&DX50DataFormatVIH2,
+        (PKSDATARANGE)&MPEG2DataFormat
     };
     ```
 

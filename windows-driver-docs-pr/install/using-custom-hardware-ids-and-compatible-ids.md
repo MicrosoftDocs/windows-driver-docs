@@ -36,21 +36,21 @@ The PnP manager sends [**IRP\_MN\_QUERY\_ID**](https://msdn.microsoft.com/librar
 A device ID is the hardware ID that is the most specific description of a device. In the following example, the device ID specifies the vendor, the device, the subsystem, and the revision.
 
 ```
-{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&amp;dev_2&amp;subsys_3&amp;rev_4 
+{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&subsys_3&rev_4 
 ```
 
 A hardware ID list specifies IDs in order, from the most specific to the least specific. In the following list, a device identification string is reported as hardware ID if it specifies at least the vendor, the device, and the subsystem. The hardware ID that includes the most information is listed first.
 
 ```
-{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&amp;dev_2&amp;subsys_3&amp;rev_4 
-{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&amp;dev_2&amp;subsys_3 
+{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&subsys_3&rev_4 
+{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&subsys_3 
 ```
 
 In the following list, a device identification string is reported as compatible ID if it specifies at least the vendor and device, but does not specify the subsystem. The compatible ID that includes the most information is listed first.
 
 ```
-{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&amp;dev_2&amp;rev_4 
-{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&amp;dev_2
+{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2&rev_4 
+{17ed6609-9bc8-44ca-8548-abb79b13781b}\ven_1&dev_2
 ```
 
  

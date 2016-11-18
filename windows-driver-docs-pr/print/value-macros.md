@@ -62,9 +62,9 @@ As an example, you might define value macros for a set of frequently used comman
 ```
 *Macros: HP4L
 {
-    LetterCmdPrefix: "<1B>&amp;l2a8c1E<1B>*p0x0Y"
-    A4CmdPrefix: "<1B>&amp;l26a8c1E<1B>*p0x0Y"
-    Env10CmdPrefix: "<1B>&amp;l81a8c1E<1B>*p0x0Y"
+    LetterCmdPrefix: "<1B>&l2a8c1E<1B>*p0x0Y"
+    A4CmdPrefix: "<1B>&l26a8c1E<1B>*p0x0Y"
+    Env10CmdPrefix: "<1B>&l81a8c1E<1B>*p0x0Y"
 }
 ```
 

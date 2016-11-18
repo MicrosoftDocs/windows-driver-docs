@@ -61,9 +61,9 @@ After the example code obtains the required size of the output buffer, it perfor
     status = SendDownStreamIrp(
        Pdo,
  IOCTL_ACPI_ENUM_CHILDREN,
-       &amp;inputBuffer,
+       &inputBuffer,
        sizeof(inputBuffer),
-       &amp;outputSizeBuffer,
+       &outputSizeBuffer,
        sizeof(outputSizeBuffer)
        );
 
@@ -100,9 +100,9 @@ After the example code obtains the required size of the output buffer, it perfor
     status = SendDownStreamIrp(
        Pdo,
  IOCTL_ACPI_ENUM_CHILDREN,
-       &amp;inputBuffer,
+       &inputBuffer,
        sizeof(inputBuffer),
-       &amp;outputBuffer,
+       &outputBuffer,
        bufferSize
        );
 
@@ -115,7 +115,7 @@ After the example code obtains the required size of the output buffer, it perfor
 
     // Skip the first child device because ACPI returns the device itself 
  // as the first child device
-    childObject = &amp;(outputBuffer->Children[0]);
+    childObject = &(outputBuffer->Children[0]);
 
     for (index = 1; index < outputBuffer->NumberOfChildren; ++index) {
 

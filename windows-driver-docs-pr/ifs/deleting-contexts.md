@@ -26,7 +26,7 @@ The following code example shows how to delete a stream context:
 status = FltDeleteStreamContext(
  FltObjects->Instance,      //Instance
  FltObjects->FileObject,    //FileObject
-           &amp;oldContext);              //OldContext
+           &oldContext);              //OldContext
 ...
 if (oldContext != NULL) {
  FltReleaseContext(oldContext);

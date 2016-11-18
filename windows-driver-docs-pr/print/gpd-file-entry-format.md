@@ -53,7 +53,7 @@ Following is a more complex example, describing a printer that can print pages i
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.7
-            *Cmd: "<1B>&amp;l0O"
+            *Cmd: "<1B>&l0O"
         }
     }
     *Option: LANDSCAPE_CC90
@@ -62,7 +62,7 @@ Following is a more complex example, describing a printer that can print pages i
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.7
-            *Cmd: "<1B>&amp;l1O"
+            *Cmd: "<1B>&l1O"
         }
     }
 }

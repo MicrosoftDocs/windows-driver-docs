@@ -210,12 +210,12 @@ public:
 
     STDMETHODIMP_(ULONG) AddRef()
     {
-        return InterlockedIncrement(&amp;m_cRef);
+        return InterlockedIncrement(&m_cRef);
     }
 
     STDMETHODIMP_(ULONG) Release()
     {
-        if(InterlockedDecrement(&amp;m_cRef) == 0) {
+        if(InterlockedDecrement(&m_cRef) == 0) {
         delete this;
             return 0;
         }
@@ -287,11 +287,11 @@ public:
     }
     STDMETHODIMP_(ULONG) AddRef()
     {
-        return InterlockedIncrement(&amp;m_cRef);
+        return InterlockedIncrement(&m_cRef);
     }
     STDMETHODIMP_(ULONG) Release()
     {
-  if(InterlockedDecrement(&amp;m_cRef) == 0) {
+  if(InterlockedDecrement(&m_cRef) == 0) {
             delete this;
             return 0;
         }
@@ -299,7 +299,7 @@ public:
     }
     STDMETHODIMP CreateInstance(IUnknown __RPC_FAR *pUnkOuter,REFIID riid,void __RPC_FAR *__RPC_FAR *ppvObject)
     {
-        if ((pUnkOuter)&amp;&amp;(!IsEqualIID(riid,IID_IUnknown))) {
+        if ((pUnkOuter)&&(!IsEqualIID(riid,IID_IUnknown))) {
             return CLASS_E_NOAGGREGATION;
         }
 

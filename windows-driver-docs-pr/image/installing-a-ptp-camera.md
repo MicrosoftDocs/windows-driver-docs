@@ -44,7 +44,7 @@ CatalogFile=wia.cat
 %Mfg%=Models
 
 [Models]
-%PTPCamera100.DeviceDesc%=PTP100, USB\VID_000&amp;PID_0100
+%PTPCamera100.DeviceDesc%=PTP100, USB\VID_000&PID_0100
 
 [PTP100]
 Include=sti.inf

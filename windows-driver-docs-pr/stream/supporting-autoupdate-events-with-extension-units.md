@@ -37,11 +37,11 @@ EventData.EventHandle.Reserved[1] = 0;
 
 // register for autoupdate events
 hr = m_pKsControl->KsEvent(
-    &amp;Event, 
+    &Event, 
  sizeof(KSEVENT), 
-    &amp;EventData, 
+    &EventData, 
  sizeof(KSEVENTDATA), 
-    &amp;ulBytesReturned);
+    &ulBytesReturned);
 if (FAILED(hr))
 {
     printf("Failed to register for auto-update event : %x\n", hr);
@@ -55,9 +55,9 @@ dwError = WaitForSingleObject(hEvent, 5000);
 hr = m_pKsControl->KsEvent(
     NULL, 
     0, 
-    &amp;EventData, 
+    &EventData, 
  sizeof(KSEVENTDATA), 
-    &amp;ulBytesReturned);
+    &ulBytesReturned);
 if (FAILED(hr))  printf("Cancel event returns : %x\n", hr);
 
 if ((dwError == WAIT_FAILED) || 

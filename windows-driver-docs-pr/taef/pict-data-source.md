@@ -114,7 +114,7 @@ te.exe <test dll> /Pict:Order=3 /Pict:SeedingFile=test.seed
 To set metadata in the DataSource property, append the model file name with a question mark character (?) then a set of ampersand-separated metadata name = metadata value pairs. When using this method, the "Pict:" prefix for metadata names is optional. Here is an example:
 
 ```
-TEST_METHOD_PROPERTY(L"DataSource", L"Pict:model.txt?Order=3&amp;CaseSensitive=true&amp;Random=true")
+TEST_METHOD_PROPERTY(L"DataSource", L"Pict:model.txt?Order=3&CaseSensitive=true&Random=true")
 ```
 
 Behind the scenes, TAEF will supply your input model file and command options to PICT and get the results. If PICT produces any errors or warnings, you will see these logged as warnings by TAEF. For each resultant output row that PICT produces, TAEF will re-invoke the test in concern.

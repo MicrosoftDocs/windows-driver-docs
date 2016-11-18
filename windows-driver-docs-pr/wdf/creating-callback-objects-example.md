@@ -22,14 +22,14 @@ The following code example shows how a driver creates a device callback object i
       ...
       HRESULT hr;
       // Create callback object
-      hr = CMyDevice::CreateInstance( &amp;pDeviceCallback,
+      hr = CMyDevice::CreateInstance( &pDeviceCallback,
                                       pDeviceInit,
                                       completionPort );
       ...
       // Create WDF device
       hr = pDriver->CreateDevice( pDeviceInit, 
                                   pDeviceCallback,
-                                  &amp;pIWDFDevice );
+                                  &pIWDFDevice );
       ...
    }
 ```

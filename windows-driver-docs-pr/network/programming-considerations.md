@@ -67,12 +67,12 @@ NTSTATUS
 
   // Initialize the binding context list spin lock
   KeInitializeSpinLock(
-    &amp;BindingContextListLock
+    &BindingContextListLock
     );
 
   // Initialize the binding context list head
   InitializeListHead(
-    &amp;BindingContextList
+    &BindingContextList
     );
 
   .
@@ -81,9 +81,9 @@ NTSTATUS
 
   // Register the client module with the NMR
   Status = NmrRegisterClient(
-    &amp;ClientCharacteristics,
-    &amp;ClientRegistrationContext,
-    &amp;ClientHandle,
+    &ClientCharacteristics,
+    &ClientRegistrationContext,
+    &ClientHandle,
     );
 
   // Return the result of the registration
@@ -147,7 +147,7 @@ NTSTATUS
 
   // Initialize the client binding context structure
   KeInitializeSpinLock(
-    &amp;BindingContext->DetachLock
+    &BindingContext->DetachLock
    );
   BindingContext->InProgressCallCount = 0;
   BindingContext->Detaching = 0;
@@ -157,9 +157,9 @@ NTSTATUS
   Status = NmrClientAttachProvider(
     NmrBindingHandle,
     BindingContext,
-    &amp;Dispatch,
-    &amp;ProviderBindingContext,
-    &amp;ProviderDispatch
+    &Dispatch,
+    &ProviderBindingContext,
+    &ProviderDispatch
     );
 
   // Check result of attachment
@@ -176,20 +176,20 @@ NTSTATUS
 
     // Acquire the binding context list spin lock
     KeAcquireInStackQueuedSpinLock(
-      &amp;BindingContextListLock,
-      &amp;BindingContextListLockHandle
+      &BindingContextListLock,
+      &BindingContextListLockHandle
       );
 
     // Add this binding context to the list of valid
     // binding contexts
     InsertTailList(
-      &amp;BindingContextList,
-      &amp;BindingContext->Link
+      &BindingContextList,
+      &BindingContext->Link
       );
  
     // Release the binding context list spin lock
     KeReleaseInStackQueuedSpinLock(
-      &amp;BindingContextListLockHandle
+      &BindingContextListLockHandle
       );
   }
 
@@ -227,14 +227,14 @@ NTSTATUS
 
   // Acquire the binding context list spin lock
   KeAcquireInStackQueuedSpinLock(
-    &amp;BindingContextListLock,
-    &amp;BindingContextListLockHandle
+    &BindingContextListLock,
+    &BindingContextListLockHandle
     );
 
   // Search for the binding context in the list of valid
   // binding contexts
   for (Entry = BindingContextList.Flink;
-       Entry != &amp;BindingContextList;
+       Entry != &BindingContextList;
        Entry = Entry->Flink)
   {
     // Get the next binding context from the list
@@ -254,11 +254,11 @@ NTSTATUS
   }
 
   // Check if the binding context was not found
-  if (Entry == &amp;BindingContextList)
+  if (Entry == &BindingContextList)
   {
     // Release the binding context list spin lock
     KeReleaseInStackQueuedSpinLock(
-      &amp;BindingContextListLockHandle
+      &BindingContextListLockHandle
       );
 
     // Return status indicating that the interface is not available
@@ -267,8 +267,8 @@ NTSTATUS
 
   // Acquire the detach spin lock at DPC level
   KeAcquireInStackQueuedSpinLockAtDpcLevel(
-    &amp;ClientBindingContext->DetachLock,
-    &amp;DetachLockHandle
+    &ClientBindingContext->DetachLock,
+    &DetachLockHandle
     );
 
   // The modules should not be detaching
@@ -279,12 +279,12 @@ NTSTATUS
 
   // Release the detach spin lock from DPC level
   KeReleaseInStackQueuedSpinLockFromDpcLevel(
-    &amp;DetachLockHandle
+    &DetachLockHandle
     );
 
   // Release the binding context list spin lock
   KeReleaseInStackQueuedSpinLock(
-    &amp;BindingContextListLockHandle
+    &BindingContextListLockHandle
     );
 
   // Call the provider NPI function
@@ -310,8 +310,8 @@ NTSTATUS
 
   // Acquire the detach spin lock
   KeAcquireInStackQueuedSpinLock(
-    &amp;ClientBindingContext->DetachLock,
-    &amp;DetachLockHandle
+    &ClientBindingContext->DetachLock,
+    &DetachLockHandle
     );
 
   // Decrement the in-progress call count
@@ -326,7 +326,7 @@ NTSTATUS
     {
       // Release the detach spin lock
       KeReleaseInStackQueuedSpinLock(
-        &amp;DetachLockHandle
+        &DetachLockHandle
         );
 
       // Inform the NMR that detachment is complete
@@ -338,7 +338,7 @@ NTSTATUS
     {
       // Release the detach spin lock
       KeReleaseInStackQueuedSpinLock(
-        &amp;DetachLockHandle
+        &DetachLockHandle
         );
     }
   }
@@ -346,7 +346,7 @@ NTSTATUS
   {
     // Release the detach spin lock
     KeReleaseInStackQueuedSpinLock(
-      &amp;DetachLockHandle
+      &DetachLockHandle
       );
   }
 
@@ -370,17 +370,17 @@ NTSTATUS
 
   // Acquire the binding context list spin lock
   KeAcquireInStackQueuedSpinLock(
-    &amp;BindingContextListLock,
-    &amp;BindingContextListLockHandle
+    &BindingContextListLock,
+    &BindingContextListLockHandle
     );
 
   // Remove the binding context from the binding context list
-  RemoveEntryList(&amp;BindingContext->Link);
+  RemoveEntryList(&BindingContext->Link);
 
   // Acquire the detach spin lock at DPC level
   KeAcquireInStackQueuedSpinLockAtDpcLevel(
-    &amp;BindingContext->DetachLock,
-    &amp;DetachLockHandle
+    &BindingContext->DetachLock,
+    &DetachLockHandle
     );
 
   // Set the flag indicating that the client module is detaching
@@ -407,12 +407,12 @@ NTSTATUS
 
   // Release the detach spin lock from DPC level
   KeReleaseInStackQueuedSpinLockFromDpcLevel(
-    &amp;DetachLockHandle
+    &DetachLockHandle
     );
 
   // Release the binding context list spin lock
   KeReleaseInStackQueuedSpinLock(
-    &amp;BindingContextListLockHandle
+    &BindingContextListLockHandle
     );
 
   // Return the status of the detachment

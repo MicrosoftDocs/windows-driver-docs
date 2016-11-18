@@ -78,9 +78,9 @@ NTSTATUS
     (PWSK_PROVIDER_CONNECTION_DISPATCH)(Socket->Dispatch);
 
   // Fill in the WSK_EXTENSION_CONTROL_IN structure
-  ExtensionControlIn.NpiId = &amp;EXAMPLE_EXTIF_NPIID;
+  ExtensionControlIn.NpiId = &EXAMPLE_EXTIF_NPIID;
   ExtensionControlIn.ClientContext = ExtIfClientContext;
-  ExtensionControlIn.ClientDispatch = &amp;ExtIfClientDispatch;
+  ExtensionControlIn.ClientDispatch = &ExtIfClientDispatch;
 
   // Initiate the IOCTL operation on the socket
   Status =
@@ -90,9 +90,9 @@ NTSTATUS
       SIO_WSK_REGISTER_EXTENSION,
       0,
       sizeof(WSK_EXTENSION_CONTROL_IN),
-      &amp;ExtensionControlIn,
+      &ExtensionControlIn,
       sizeof(WSK_EXTENSION_CONTROL_OUT),
-      &amp;ExtensionControlOut,
+      &ExtensionControlOut,
       NULL,
       NULL  // No IRP used for this IOCTL operation
       );

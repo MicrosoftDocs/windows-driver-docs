@@ -43,7 +43,7 @@ STDMETHODIMP CWIADevice::Initialize(
                  TEXT("DeviceData"), // subkey to open
                  0,                  // options (must be NULL)
                  KEY_READ|KEY_WRITE, // requesting read/write access
-                 &amp;m_hMyWritableRegistryKey);
+                 &m_hMyWritableRegistryKey);
   if (dwError == ERROR_SUCCESS)
   {
       //
@@ -79,7 +79,7 @@ STDMETHODIMP CWIADevice::SomeDriverMethod()
                      TEXT("MyDriverValueName"),
                      0,
                      REG_DWORD,
-                     (BYTE*)&amp;dwValue,
+                     (BYTE*)&dwValue,
                      sizeof(dwValue));
   if (dwError == ERROR_SUCCESS)
   {

@@ -11,7 +11,7 @@ keywords: ["SRC WDK audio", "sample-rate conversion WDK audio", "WDM audio drive
 ## <span id="kmixer_driver_sample_rate_conversion_and_mixing_policy"></span><span id="KMIXER_DRIVER_SAMPLE_RATE_CONVERSION_AND_MIXING_POLICY"></span>
 
 
-This section describes the sample-rate conversion and mixing policy of the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver). KMixer is the kernel-mode system component that performs mixing of kernel-streaming (KS) audio streams.
+This section describes the sample-rate conversion and mixing policy of the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver). KMixer is the kernel-mode system component that performs mixing of kernel-streaming (KS) audio streams.
 
 KMixer can mix playback audio streams from clients such as DirectSound or **waveOut** application programs. The streams can be in different wave PCM formats with a variety of sample rates, sample sizes, and channel counts. Samples can be expressed as integer or floating-point values. KMixer generates a mixed stream in a format that the downstream filter, which is typically an audio rendering device, can handle.
 

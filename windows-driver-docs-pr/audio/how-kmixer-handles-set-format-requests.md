@@ -11,13 +11,13 @@ keywords: ["KMixer system driver WDK audio , set-format requests", "format negot
 ## <span id="how_kmixer_handles_set_format_requests"></span><span id="HOW_KMIXER_HANDLES_SET_FORMAT_REQUESTS"></span>
 
 
-The [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver) is designed to preserve the quality of the playback streams that it mixes together. If possible, KMixer automatically adjusts the sample rate of the mixed stream that it outputs through its source (output) pin to match that of the playback stream with the highest sample rate. As playback streams are dynamically connected to and disconnected from KMixer's sink (input) pins, KMixer tries to adjust the sample rate at its source pin accordingly. For more information, see [KMixer Behavior](kmixer-behavior.md).
+The [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver) is designed to preserve the quality of the playback streams that it mixes together. If possible, KMixer automatically adjusts the sample rate of the mixed stream that it outputs through its source (output) pin to match that of the playback stream with the highest sample rate. As playback streams are dynamically connected to and disconnected from KMixer's sink (input) pins, KMixer tries to adjust the sample rate at its source pin accordingly. For more information, see [KMixer Behavior](kmixer-behavior.md).
 
 Of course, KMixer can change the sample rate of the mixed stream only if the downstream filter (whose sink pin connects to KMixer's source pin) is able to handle the new sample rate. The mixed stream from KMixer might feed directly into the sink pin of an audio wave-rendering device, or a [GFX filter](gfx-filters.md) might be inserted into the stream's data path between KMixer's source pin and the audio device's sink pin.
 
 To request the sample-rate change, KMixer sends a set-format ([**KSPROPERTY\_CONNECTION\_DATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff565103) set-property) request packet to the downstream filter's sink pin. Before reconfiguring its source pin to run at the new sample rate, KMixer waits until the downstream filter returns the request packet to KMixer with a completion code indicating that the request succeeded. The downstream filter might need to reject the original request, forcing KMixer to back off to a less demanding sample rate that the downstream filter can handle. Meanwhile, KMixer holds off mixing of any new playback data until the process of negotiating the new stream format completes and the downstream filter has been reconfigured.
 
-The following figure shows a portion of an audio filter graph containing the KMixer system driver, a GFX filter, and the [USBAudio class system driver](kernel-mode-wdm-audio-components.md#usbaudio-class-system-driver).
+The following figure shows a portion of an audio filter graph containing the KMixer system driver, a GFX filter, and the [USBAudio class system driver](kernel-mode-wdm-audio-components.md#usbaudio_class_system_driver).
 
 ![diagram illustrating a mixed stream with a 22.05-kilohertz sample rate](images/setfmt1.png)
 
@@ -31,7 +31,7 @@ KMixer outputs its mixed data to a set of buffers. Each buffer is attached to an
 
 (The size cannot be exactly 882 bytes because the buffer contains an integral number of four-byte audio frames.) If the GFX filter performs in-place processing of the data in these buffers, it passes these same IRPs to USBAudio as it finishes processing them.
 
-In the following figure, a client (typically the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver)) has instantiated a second KMixer sink pin and connected a new playback stream to this pin.
+In the following figure, a client (typically the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver)) has instantiated a second KMixer sink pin and connected a new playback stream to this pin.
 
 ![diagram illustrating kmixer format negotiation with downstream filters](images/setfmt2.png)
 

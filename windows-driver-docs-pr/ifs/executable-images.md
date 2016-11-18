@@ -29,7 +29,7 @@ Executable files are loaded into the address space of a process using a memory m
         Fcb->OpenCount += 1;
         DecrementFcbOpenCount = TRUE;
 
-        if (!MmFlushImageSection( &amp;Fcb->NonPaged->SectionObjectPointers,
+        if (!MmFlushImageSection( &Fcb->NonPaged->SectionObjectPointers,
                                   MmFlushForWrite )) {
 
             Iosb.Status = DeleteOnClose ? STATUS_CANNOT_DELETE :STATUS_SHARING_VIOLATION;

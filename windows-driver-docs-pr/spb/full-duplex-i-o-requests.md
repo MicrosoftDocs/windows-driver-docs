@@ -28,7 +28,7 @@ The following code example shows how the driver for an SPB peripheral device bui
 const ULONG transfers = 2;
 
 SPB_TRANSFER_LIST_AND_ENTRIES(transfers) seq;
-SPB_TRANSFER_LIST_INIT(&amp;(seq.List), transfers);
+SPB_TRANSFER_LIST_INIT(&(seq.List), transfers);
 
 {
     ULONG index = 0;
@@ -68,18 +68,18 @@ NTSTATUS Status;
   
 WDF_MEMORY_DESCRIPTOR MemoryDescriptor;
 WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(
-                            &amp;MemoryDescriptor,  
-                            &amp;seq,  
+                            &MemoryDescriptor,  
+                            &seq,  
                             sizeof(seq));
 
 Status = WdfIoTargetSendIoctlSynchronously(
                             SpbIoTarget,
                             NULL,
                             IOCTL_SPB_FULL_DUPLEX,
-                            &amp;MemoryDescriptor,  // InputBuffer
+                            &MemoryDescriptor,  // InputBuffer
                             NULL,               // OutputBuffer
                             NULL,
-                            &amp;BytesTransferred);
+                            &BytesTransferred);
 ```
 
 In the preceding code example, the `MemoryDescriptor` variable is a framework memory descriptor. The [**WDF\_MEMORY\_DESCRIPTOR\_INIT\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552393) macro initializes this descriptor to serve as a container for the structure contained in the `seq` variable. In the call to the **WdfIoTargetSendIoctlSynchronously** method, the `SpbIoTarget` variable is a previously opened handle to the target peripheral device on the bus. The *InputBuffer* parameter to this method is a pointer to the memory descriptor. The *OutputBuffer* parameter is NULL.
@@ -125,7 +125,7 @@ if (FAILED(hr))
 {
     IWDFRequestCompletionParams* pWdfParams = 0;
 
-    pWdfIoRequest->GetCompletionParams(&amp;pWdfParams);
+    pWdfIoRequest->GetCompletionParams(&pWdfParams);
     hr = pWdfParams->GetCompletionStatus();
     if (SUCCEEDED(hr))
     {

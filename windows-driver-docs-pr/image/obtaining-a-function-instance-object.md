@@ -38,7 +38,7 @@ CoCreateInstance(__uuidof(FunctionDiscovery),
                  NULL,
                  CLSCTX_INPROC_SERVER,
                  __uuidof(IFunctionDiscovery),
-  (void**)&amp;pFunctionDiscovery);
+  (void**)&pFunctionDiscovery);
 ```
 
 ### Step 2: Create an Instance Collection Query object
@@ -50,7 +50,7 @@ pFunctionDiscovery->CreateInstanceCollectionQuery(FCTN_CATEGORY_PNP,
    FALSE,
    NULL,
    NULL,
-   &amp;pfiCollectionQuery);
+   &pfiCollectionQuery);
 ```
 
 ### <a href="" id="step-3--add-a-constraint-to-the-instance-collection-query-object-to-sp"></a>Step 3: Add a constraint to the Instance Collection Query object to specify the PNPX ID (its value is retrieved with IStiDeviceControl::GetMyDevicePortName) as the query constraint
@@ -61,17 +61,17 @@ PROPVARIANT PropVar = {0};
 // Note that the wszDevicePath value is obtained by the WIA minidriver 
 // calling IStiDeviceControl::GetMyDevicePortName during IStiUSD::Initialize
 //
-PropVariantInit(&amp;PropVar);
+PropVariantInit(&PropVar);
 PropVar.vt = VT_LPWSTR;
 PropVar.pwszVal = (LPWSTR)wszDevicePath; 
-pfiCollectionQuery->AddPropertyConstraint(PKEY_PNPX_ID, &amp;PropVar, QC_EQUALS);
+pfiCollectionQuery->AddPropertyConstraint(PKEY_PNPX_ID, &PropVar, QC_EQUALS);
 ```
 
 ### Step 4: Execute the query
 
 ```
 IFunctionInstanceCollection *pfiCollection = NULL;
-pfiCollectionQuery->Execute(&amp;pfiCollection);
+pfiCollectionQuery->Execute(&pfiCollection);
 ```
 
 ### Step 5: Retrieve the Function Instance object that is returned
@@ -82,7 +82,7 @@ pfiCollectionQuery->Execute(&amp;pfiCollection);
 //
 IFunctionInstance *pFunctionInstance;
 
-pfiCollection->Item(0, &amp;m_pFunctionInstance);
+pfiCollection->Item(0, &m_pFunctionInstance);
 ```
 
 For a code example that contains the declaration of a sample class (CWSDDevice), see [Code Sample for Obtaining a Function Instance Object](code-example-for-obtaining-a-function-instance-object.md).

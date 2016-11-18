@@ -69,23 +69,23 @@ case DeviceUsageTypePaging: {
                           Parameters.UsageNotification.InPath; 
  
  // A 
-    if((addPageFile) &amp;&amp; 
+    if((addPageFile) && 
         (extension -> CurrentPnpState != 
         IRP_MN_START_DEVICE)) { 
             status = STATUS_DEVICE_NOT_READY; 
             break; 
         } 
  // B 
-    KeWaitForSingleObject(&amp;commonExtension -> PagingCountEvent, 
+    KeWaitForSingleObject(&commonExtension -> PagingCountEvent, 
                                     Executive, KernelMode, 
                                     FALSE, NULL); 
  // C 
-    if (!addPageFile &amp;&amp; commonExtension -> PagingCount == 1 ) { 
+    if (!addPageFile && commonExtension -> PagingCount == 1 ) { 
         // The last paging file is no longer active.
         // Set the DO_POWER_PAGABLE bit before 
         // forwarding the paging request down the 
         // stack.
-        if (!(DeviceObject->Flags &amp; DO_POWER_INRUSH)) { 
+        if (!(DeviceObject->Flags & DO_POWER_INRUSH)) { 
             DeviceObject->Flags |=             DO_POWER_PAGABLE; 
             setPageable = TRUE; 
         ) 
@@ -94,9 +94,9 @@ case DeviceUsageTypePaging: {
         status = ForwardIrpSynchronous(commonExtension, Irp); 
  // E
         if (NT_SUCCESS(status)) { 
-            IoAdjustPagingPathCount(&amp;commonExtension -> PagingCount, 
+            IoAdjustPagingPathCount(&commonExtension -> PagingCount, 
                                     addPageFile); 
-        if (addPageFile &amp;&amp; commonExtension -> PagingCount == 1) { 
+        if (addPageFile && commonExtension -> PagingCount == 1) { 
             // Once the lower device objects have 
             // succeeded the addition of the paging 
             // file, it is illegal to fail the 
@@ -104,17 +104,17 @@ case DeviceUsageTypePaging: {
             // clear the Filter DO&#39;s 
             //DO_POWER_PAGABLE flag.
  
-            DeviceObject->Flags &amp;= ~DO_POWER_PAGABLE; 
+            DeviceObject->Flags &= ~DO_POWER_PAGABLE; 
             } 
         } else { 
  // F 
         if (setPageable == TRUE) { 
-            DeviceObject->Flags &amp;= ~DO_POWER_PAGABLE; 
+            DeviceObject->Flags &= ~DO_POWER_PAGABLE; 
             setPageable = FALSE; 
         } 
     } 
  // G 
-        KeSetEvent(&amp;commonExtension->PagingCountEvent, 
+        KeSetEvent(&commonExtension->PagingCountEvent, 
                                     IO_NO_INCREMENT, FALSE); 
                                     break;
     } *Do not use or delete the last paragraph mark. It maintains the template setup and formats.

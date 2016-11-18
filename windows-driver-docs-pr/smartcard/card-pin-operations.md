@@ -33,8 +33,8 @@ typedef     DWORD                      PIN_SET, *PPIN_SET;
 #define     PIN_SET_ALL_ROLES          0xFF
 #define     CREATE_PIN_SET(PinId)      (1 << PinId)
 #define     SET_PIN(PinSet, PinId)     PinSet |= CREATE_PIN_SET(PinId)
-#define     IS_PIN_SET(PinSet, PinId)  (0 != (PinSet &amp; CREATE_PIN_SET(PinId)))
-#define     CLEAR_PIN(PinSet, PinId)   PinSet &amp;= ~CREATE_PIN_SET(PinId)
+#define     IS_PIN_SET(PinSet, PinId)  (0 != (PinSet & CREATE_PIN_SET(PinId)))
+#define     CLEAR_PIN(PinSet, PinId)   PinSet &= ~CREATE_PIN_SET(PinId)
 
 #define     PIN_CHANGE_FLAG_UNBLOCK    0x01
 #define     PIN_CHANGE_FLAG_CHANGEPIN  0x02

@@ -48,7 +48,7 @@ For example, a GPD file might contain the following specification of the standar
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.10
-            *Cmd: "<1B>&amp;l1H"
+            *Cmd: "<1B>&l1H"
         }
         *Constraints: PaperSize.Env10
     }
@@ -58,7 +58,7 @@ For example, a GPD file might contain the following specification of the standar
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.10
-            *Cmd: "<1B>&amp;l2H"
+            *Cmd: "<1B>&l2H"
         }
         *Installable?: TRUE
     }

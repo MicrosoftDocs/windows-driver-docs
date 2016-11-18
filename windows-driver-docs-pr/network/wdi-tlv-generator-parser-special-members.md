@@ -21,7 +21,7 @@ status = ParseWdiSetAdapterConfiguration(
     (PUINT8)pNdisRequest->DATA.METHOD_INFORMATION.InformationBuffer + 
         sizeof(WDI_MESSAGE_HEADER),
     0,
-    &amp;fwConfig);
+    &fwConfig);
 
 if (status == NDIS_STATUS_SUCCESS)
 {

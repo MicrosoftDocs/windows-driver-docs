@@ -13,8 +13,8 @@ For example, consider a single-function USB printer from the company Contoso, Lt
 
 ```
 <HardwareIDList>
-  <HardwareID>DOID:USB\VID_1234&amp;PID_1234&amp;REV_0000</HardwareID>
-  <HardwareID>DOID:USB\VID_1234&amp;PID_1234</HardwareID>
+  <HardwareID>DOID:USB\VID_1234&PID_1234&REV_0000</HardwareID>
+  <HardwareID>DOID:USB\VID_1234&PID_1234</HardwareID>
   <HardwareID>DOID:USBPRINT\Contoso_Ltd_Co9999/HardwareID>
 </HardwareIDList>
 ```

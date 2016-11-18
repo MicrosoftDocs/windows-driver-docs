@@ -55,7 +55,7 @@ The device-specific INF file is matched with the device based on the VID/PID ide
 
 ```
 [CompanyName]
-%MyDevice.DeviceDesc%=MyDevice,USB\Vid_XXXX&amp;Pid_XXXX&amp;MI_XX
+%MyDevice.DeviceDesc%=MyDevice,USB\Vid_XXXX&Pid_XXXX&MI_XX
 
 [MyDevice.NT]
 Include=usbvideo.inf, ks.inf, kscaptur.inf, dshowext.inf

@@ -68,7 +68,7 @@ SDEL uses namespace tokens to group attributes. For a complete list of all names
 To use any attribute that is outside the root namespace, you must prefix the attribute with the namespace name and then two colons (::). The following VBScript code example displays the value of the Disk::IsRemovable attribute.
 
 ```
-WScript.Echo "Is Removable?: " &amp; DeviceObj.GetValue("Disk::IsRemovable")
+WScript.Echo "Is Removable?: " & DeviceObj.GetValue("Disk::IsRemovable")
 ```
 
 ### Examining a Target by Using GetValue and Eval
@@ -76,7 +76,7 @@ WScript.Echo "Is Removable?: " &amp; DeviceObj.GetValue("Disk::IsRemovable")
 The [**IWDTFTarget2::GetValue**](https://msdn.microsoft.com/library/windows/hardware/hh439403) method lets you ask a target about its attributes. The following VBScript code example prints the value of the [FriendlyName](https://msdn.microsoft.com/library/windows/hardware/ff539571) attribute for a target.
 
 ```
-WScript.Echo "FriendlyName: " &amp; Device.GetValue("FriendlyName")
+WScript.Echo "FriendlyName: " & Device.GetValue("FriendlyName")
 ```
 
 For a full list of attribute tokens, see [SDEL Tokens](https://msdn.microsoft.com/library/windows/hardware/ff539571).
@@ -104,13 +104,13 @@ Additionally, attributes that are missing a comparison operator but contain a **
 Testing often involves examining what happens when related devices change state. For example, when a USB hub is disabled, do the devices that are attached to it handle the state change properly? Additionally, you might want to locate a device based on information in related devices. To support this functionality, SDEL includes a way to specify one or more logical relationships before any attribute or namespace (but not after either of them). Relation tokens are separated from the attribute or namespace by a forward-slash (/). The following VBScript code example prints the value of the [FriendlyName](https://msdn.microsoft.com/library/windows/hardware/ff539571) attribute for the parent device of a target.
 
 ```
-WScript.Echo "FriendlyName: " &amp; Device.GetValue("parent/FriendlyName")
+WScript.Echo "FriendlyName: " & Device.GetValue("parent/FriendlyName")
 ```
 
 You can also combine relation modifiers. The following VBScript code example prints the value of the [FriendlyName](https://msdn.microsoft.com/library/windows/hardware/ff539571) attribute of the grandparent device of the target object.
 
 ```
-WScript.Echo "FriendlyName: " &amp; Device.GetValue("parent/parent/FriendlyName")
+WScript.Echo "FriendlyName: " & Device.GetValue("parent/parent/FriendlyName")
 ```
 
 Sometimes, devices have many-to-many relationships. For example, a logical storage volume might reside on many physical disks, and those individual disks might contribute space to many volumes.

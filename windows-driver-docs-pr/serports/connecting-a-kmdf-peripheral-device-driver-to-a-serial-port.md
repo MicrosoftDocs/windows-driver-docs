@@ -97,7 +97,7 @@ The following code example shows how to incorporate this connection ID into a de
  
 DECLARE_UNICODE_STRING_SIZE(szDeviceName, RESOURCE_HUB_PATH_SIZE);
 
-status = RESOURCE_HUB_CREATE_PATH_FROM_ID(&amp;szDeviceName,
+status = RESOURCE_HUB_CREATE_PATH_FROM_ID(&szDeviceName,
                                           connectionId.LowPart,
                                           connectionId.HighPart);
 
@@ -116,15 +116,15 @@ The following code example uses the device path name to open a file handle (name
 // Open the peripheral device on the serial port as a remote I/O target.
  
 WDF_IO_TARGET_OPEN_PARAMS openParams;
-WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME(&amp;openParams,
-                                            &amp;szDeviceName,
+WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_NAME(&openParams,
+                                            &szDeviceName,
                                             (GENERIC_READ | GENERIC_WRITE));
 
 openParams.ShareAccess = 0;
 openParams.CreateDisposition = FILE_OPEN;
 openParams.FileAttributes = FILE_ATTRIBUTE_NORMAL;
 
-status = WdfIoTargetOpen(SerialIoTarget, &amp;openParams);
+status = WdfIoTargetOpen(SerialIoTarget, &openParams);
 
 if (!NT_SUCCESS(status))
 {
@@ -146,22 +146,22 @@ NTSTATUS status;
 // Describe the input buffer.
 
 WDF_MEMORY_DESCRIPTOR memoryDescriptor;
-WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&amp;memoryDescriptor, pBuffer, dataSize);
+WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&memoryDescriptor, pBuffer, dataSize);
 
 // Configure the write request to time out after 2 seconds.
 
 WDF_REQUEST_SEND_OPTIONS requestOptions;
-WDF_REQUEST_SEND_OPTIONS_INIT(&amp;requestOptions, WDF_REQUEST_SEND_OPTION_TIMEOUT);
+WDF_REQUEST_SEND_OPTIONS_INIT(&requestOptions, WDF_REQUEST_SEND_OPTION_TIMEOUT);
 requestOptions.Timeout = WDF_REL_TIMEOUT_IN_SEC(2);
 
 // Send the write request synchronously.
 
 status = WdfIoTargetSendWriteSynchronously(SerialIoTarget,
                                            SerialRequest,
-                                           &amp;memoryDescriptor,
+                                           &memoryDescriptor,
                                            NULL,
-                                           &amp;requestOptions,
-                                           &amp;bytesWritten);
+                                           &requestOptions,
+                                           &bytesWritten);
 if (!NT_SUCCESS(status))
 {
     // Error handling

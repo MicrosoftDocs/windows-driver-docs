@@ -71,7 +71,7 @@ KSEVENT_SET PinEventTable[] =
 {
     DEFINE_KSEVENT_SET
     (
-        &amp;KSEVENTSETID_DynamicFormatChange,
+        &KSEVENTSETID_DynamicFormatChange,
         SIZEOF_ARRAY(DynamicFormatChangeEventTable),
         DynamicFormatChangeEventTable
     )

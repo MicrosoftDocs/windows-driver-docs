@@ -22,7 +22,7 @@ status = IoCreateDevice(
           DeviceObject->DeviceType,                 //DeviceType
           0,                                        //DeviceCharacteristics
           FALSE,                                    //Exclusive
-          &amp;newDeviceObject);                        //DeviceObject
+          &newDeviceObject);                        //DeviceObject
 ```
 
 In the above code snippet, *DeviceObject* is a pointer to the target device object to which the filter device object will be attached; *newDeviceObject* is a pointer to the filter device object itself.

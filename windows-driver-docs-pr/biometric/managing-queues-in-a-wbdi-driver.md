@@ -17,7 +17,7 @@ In the method `CBiometricIoQueue::Initialize`, specifically, the driver queries 
 ```
 if (SUCCEEDED(hr)) 
 {
-hr = this->QueryInterface(__uuidof(IUnknown), (void **)&amp;unknown);
+hr = this->QueryInterface(__uuidof(IUnknown), (void **)&unknown);
 }
 ```
 
@@ -29,7 +29,7 @@ FALSE,
 WdfIoQueueDispatchParallel,
 FALSE,
 FALSE,
-&amp;fxQueue);
+&fxQueue);
 BiometricSafeRelease(unknown);
 ```
 
@@ -62,7 +62,7 @@ FxRequest->Complete(WINBIO_E_DATA_COLLECTION_IN_PROGRESS);
 When a capture request is completed or canceled, this value is set to **NULL**:
 
 ```
-IWDFIoRequest *FxRequest = (IWDFIoRequest *)InterlockedExchangePointer((PVOID *)&amp;m_PendingRequest, NULL);
+IWDFIoRequest *FxRequest = (IWDFIoRequest *)InterlockedExchangePointer((PVOID *)&m_PendingRequest, NULL);
 ```
 
  

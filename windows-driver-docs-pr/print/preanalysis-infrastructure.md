@@ -42,11 +42,11 @@ For each physical page
       else 
          pbi.sizlBand = {normal band}
       Carry out rendering operations
-      if ( ( preanalysis pass &amp;&amp; OEM preanalysis enabled ) || !preanalysis_pass ) {
+      if ( ( preanalysis pass && OEM preanalysis enabled ) || !preanalysis_pass ) {
          Call OEM hooks
          DrvNextBand
       }
-      if ( ( preanalysis pass &amp;&amp; OEM preanalysis enabled ) || !preanalysis_pass )
+      if ( ( preanalysis pass && OEM preanalysis enabled ) || !preanalysis_pass )
          Call OEMNextBand
       if( preanalysis pass ) {
          Disable preanalysis

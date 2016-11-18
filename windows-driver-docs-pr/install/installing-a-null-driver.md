@@ -18,7 +18,7 @@ To specify a null driver in an INF file, use entries like the following:
 ```
 :
 [MyModels]
-%MyDeviceDescription% = MyNullInstallSection, &amp;BadDeviceHardwareID%
+%MyDeviceDescription% = MyNullInstallSection, &BadDeviceHardwareID%
 :
 
 [MyNullInstallSection]

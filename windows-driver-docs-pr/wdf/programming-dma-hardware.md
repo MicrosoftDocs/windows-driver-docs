@@ -54,7 +54,7 @@ Steps 1 and 4 are illustrated in the following code example, taken from the [PLX
         //
         // Must abort the transaction before deleting.
         //
-        (VOID) WdfDmaTransactionDmaCompletedFinal(Transaction, 0, &amp;status);
+        (VOID) WdfDmaTransactionDmaCompletedFinal(Transaction, 0, &status);
         ASSERT(NT_SUCCESS(status));
 
         PLxReadRequestComplete( Transaction, STATUS_INVALID_DEVICE_STATE );
