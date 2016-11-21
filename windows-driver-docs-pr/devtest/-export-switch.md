@@ -112,7 +112,7 @@ If the **-Certificate** parameter is specified, the tool will automatically appe
 For example, the following command, which exports the PCp certificate from the target device, produces a file that is named c:\\MyCertificates\\myCertPCp.cer:
 
 ```
-EhStorCertMgrCmd /export -Certificate -Volume:"\\?\usbstor#ieee1667control&amp;ven_&amp;prod_&amp;rev_#123456789&amp;0&amp;control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:1 -Path:c:\MyCertificates\myCert.cer
+EhStorCertMgrCmd /export -Certificate -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:1 -Path:c:\MyCertificates\myCert.cer
 ```
 
 If you specify the **-NoType** parameter with the **-Certificate** parameter, the tool does not append a string for the certificate type to the file name that is specified through the **-Path** parameter.
@@ -122,7 +122,7 @@ If you specify the **-NoType** parameter with the **-Certificate** parameter, th
 The following example shows how to export the certificate at index 1 from the ASC store in the target device:
 
 ```
-EhStorCertMgrCmd /export -Certificate -Volume:"\\?\usbstor#ieee1667control&amp;ven_&amp;prod_&amp;rev_#123456789&amp;0&amp;control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:1 -Path:c:\MyCertificates\myCert.cer
+EhStorCertMgrCmd /export -Certificate -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:1 -Path:c:\MyCertificates\myCert.cer
 ```
 
  

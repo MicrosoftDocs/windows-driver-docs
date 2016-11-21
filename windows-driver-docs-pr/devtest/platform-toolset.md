@@ -99,7 +99,7 @@ The following table summarizes the places where the WDK installs files to enable
 <tbody>
 <tr class="odd">
 <td align="left"><p>$(VCTargetsPath)</p></td>
-<td align="left"><p>By default, $(VCTargetsPath) is defined in the registry as $(MSBuildExtensionsPath)\<em>&lt;FOLDER&gt;</em>\&lt;MSBUILDSYNTAXVERSION&gt;)</p>
+<td align="left"><p>By default, $(VCTargetsPath) is defined in the registry as $(MSBuildExtensionsPath)\\<em>&lt;FOLDER&gt;</em>\&lt;MSBUILDSYNTAXVERSION&gt;)</p>
 <p>The version number is included in case a new build process is used for the same platform, which has new syntax and requires a later MSBuild.</p>
 <p>The <em>&lt;FOLDER&gt;</em> is the <strong>Microsoft.Cpp</strong> folder - $(MSBuildExtensionsPath)\Microsoft.Cpp\4.0\v120\.</p>
 <p>This is called <em>syntax version</em> rather than <em>tools version</em>. It is the assembly version of the first <strong>Microsoft.Build.Engine</strong> that supports all of the necessary syntax. <strong>Microsoft.Cpp</strong> indicates the only folder where Visual Studio will look for platforms.</p></td>
@@ -109,7 +109,7 @@ The following table summarizes the places where the WDK installs files to enable
 <td align="left"><p>Optional folder that does not normally contain files. You can customize the platform by saving MSBuild format files in this folder. They will be imported at the bottom of the platform settings file, as indicated by the folder that they are currently in. The order in which files are imported from this location is undefined. The files that MSBuild creates are $(VCTargetsPath)\Platforms\$(Platform)\ImportAfter\Microsoft.Cpp.<em>&lt;Platform&gt;</em>.WindowsKernelModeDriver8.1.props and Microsoft.Cpp.<em>&lt;Platform&gt;</em>.WindowsUserModeDriver8.1.props, which import several WDK-specific props files.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\$(PlatformToolset)\</p></td>
+<td align="left"><p>$(VCTargetsPath)\Platforms\$(Platform)\PlatformToolsets\$(PlatformToolset)\\</p></td>
 <td align="left"><p>For the WDK:</p>
 <p>The <strong>$(PlatformToolset)</strong> must be set to <strong>WindowsKernelModeDriver8.1</strong> for building kernel mode drivers, set to <strong>WindowsUserModeDriver8.1</strong> for building user mode drivers, and set to <strong>WindowsApplicationForDrivers8.1</strong> for compatibility with the build options used in the Windows 7 WDK (WDK 7).</p>
 <p><strong>PlatformToolset Directory</strong></p>

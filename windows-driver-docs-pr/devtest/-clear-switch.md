@@ -55,7 +55,7 @@ In order to clear a certificate from the target device, the device must have bee
 The following example shows how to clear certificates from a target device:
 
 ```
-EhStorCertMgrCmd /Clear -Volume:"\\?\usbstor#ieee1667control&amp;ven_&amp;prod_&amp;rev_#123456789&amp;0&amp;control#{4f40006f-b933-4550-b532-2b58cee614d3}"
+EhStorCertMgrCmd /Clear -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}"
 ```
 
  

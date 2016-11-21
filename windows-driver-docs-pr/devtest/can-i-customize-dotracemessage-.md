@@ -25,7 +25,7 @@ The DoTraceMessage macro is expanded, logically, into the following:
 
 ```
 PRE macro // If defined
-If (WPP_CHECK_INIT &amp;&amp; Flag is enabled) {
+If (WPP_CHECK_INIT && Flag is enabled) {
  ....Call WmiTraceMessage;
 }
 POST macro // If defined
@@ -102,7 +102,7 @@ To create a custom tracing function that changes the conditions for a trace mess
 For example, if you want to include the trace level, in addition to flags, as a condition, define a new WPP\_LEVEL\_ENABLED macro that includes the trace level. You can base the definition of the new macro on the default macro, as the following code example shows.
 
 ```
-#define WPP_LEVEL_FLAGS_ENABLED(lvl, flags) (WPP_LEVEL_ENABLED(flags) &amp;&amp; WPP_CONTROL(WPP_BIT_ ## flags).Level >=lvl
+#define WPP_LEVEL_FLAGS_ENABLED(lvl, flags) (WPP_LEVEL_ENABLED(flags) && WPP_CONTROL(WPP_BIT_ ## flags).Level >=lvl
 ```
 
 Typically, the WPP\_LEVEL\_LOGGER macro is not affected. In these cases, you can define the new macro to be default macro. For example:

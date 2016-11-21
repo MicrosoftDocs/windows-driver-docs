@@ -13,7 +13,7 @@ By default they are set to do nothing. However, you can define them to add some 
 
 ```
 PRE macro // If defined
-If (WPP_CHECK_INIT &amp;&amp; (Level,Flag) is enabled) {
+If (WPP_CHECK_INIT && (Level,Flag) is enabled) {
 ....Call TraceMessage;
 }
 POST macro // If defined

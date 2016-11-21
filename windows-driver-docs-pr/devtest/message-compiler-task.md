@@ -17,7 +17,7 @@ The following example shows how to edit the metadata in the .vcxproj file.
 <ItemGroup>
     <MessageCompile Include="a.mc">
       <GenerateBaselineResource>true</GenerateBaselineResource>
-      <BaselineResourcePath>c:\test\</BaselineResourcePath>
+      <BaselineResourcePath>c:\test\\</BaselineResourcePath>
     </MessageCompile>
 </ItemGroup>
 ```

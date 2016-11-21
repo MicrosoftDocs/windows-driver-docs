@@ -24,7 +24,7 @@ The following code example generates this warning.
 {
  IAccessible *pacc = NULL;
  // Get new interface (from same object)
- QueryInterface( &amp; pacc );
+ QueryInterface( & pacc );
 
  // Lresult will internally bump up the refcount
  // to hold onto the object.

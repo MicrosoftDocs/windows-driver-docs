@@ -38,11 +38,11 @@ void driver_utility()
 {
     // running at APC level
     KFLOATING_SAVE FloatBuf;
-    if (KeSaveFloatingPointState(&amp;FloatBuf))
+    if (KeSaveFloatingPointState(&FloatBuf))
     {
         KeLowerIrql(PASSIVE_LEVEL);
         ...
-        KeRestoreFloatingPointState(&amp;FloatBuf);
+        KeRestoreFloatingPointState(&FloatBuf);
     }
 }
 ```
@@ -54,12 +54,12 @@ void driver_utility()
 {
     // running at APC level
     KFLOATING_SAVE FloatBuf;
-    if (KeSaveFloatingPointState(&amp;FloatBuf))
+    if (KeSaveFloatingPointState(&FloatBuf))
     {
         KeLowerIrql(PASSIVE_LEVEL);
         ...
-        KeRaiseIrql(APC_LEVEL, &amp;old);
-        KeRestoreFloatingPointState(&amp;FloatBuf);
+        KeRaiseIrql(APC_LEVEL, &old);
+        KeRestoreFloatingPointState(&FloatBuf);
     }
 }
 ```

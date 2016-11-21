@@ -168,7 +168,7 @@ The following guidelines apply when you add certificates to the target device:
 The following example shows how to add a certificate from the certificate store on the host to a target device:
 
 ```
-EhStorCertMgrCmd /Add -Volume:"\\?\usbstor#ieee1667control&amp;ven_&amp;prod_&amp;rev_#123456789&amp;0&amp;control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:1 -Store:TestCert -Type:PCp -Validation:None
+EhStorCertMgrCmd /Add -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:1 -Store:TestCert -Type:PCp -Validation:None
 ```
 
  

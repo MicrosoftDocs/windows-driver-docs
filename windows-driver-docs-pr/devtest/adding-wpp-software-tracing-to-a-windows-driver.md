@@ -140,7 +140,7 @@ For example, you can add the following code snippet to the header file that you 
            WPP_LEVEL_LOGGER(flags)
                
 #define WPP_LEVEL_FLAGS_ENABLED(lvl, flags) \
-           (WPP_LEVEL_ENABLED(flags) &amp;&amp; WPP_CONTROL(WPP_BIT_ ## flags).Level >= lvl)
+           (WPP_LEVEL_ENABLED(flags) && WPP_CONTROL(WPP_BIT_ ## flags).Level >= lvl)
 ```
 
 Next, you need to specify the custom trace functions in the WPP configuration block (**begin\_wpp config** and **end\_wpp**) For example, if you use the template for UMDF or KMDF Driver projects in Visual Studio, the template defines the WPP macros for a custom trace message function called **TraceEvents**. The **TraceEvents** macro function uses [Trace Level](trace-level.md) and Trace Flag as conditions for generating messages. If you have defined the **WPP\_LEVEL\_FLAGS\_ENABLED** macro in your Trace.h header file, you can add the following macro definition.
@@ -190,7 +190,7 @@ You can also convert existing debug print statements to trace messages statement
     WPP_LEVEL_LOGGER(Flags)
 
 #define WPP_Flags_LEVEL_ENABLED(Flags, level)                                 \
-    (WPP_LEVEL_ENABLED(Flags) &amp;&amp; \
+    (WPP_LEVEL_ENABLED(Flags) && \
     WPP_CONTROL(WPP_BIT_ ## Flags).Level >= level)
 
 
@@ -261,8 +261,8 @@ DriverEntry(
     status = WdfDriverCreate(
         DriverObject,
         RegistryPath,
-        &amp;attributes, // Driver Object Attributes
-        &amp;config,          // Driver Config Info
+        &attributes, // Driver Object Attributes
+        &config,          // Driver Config Info
         WDF_NO_HANDLE // hDriver
         );
 

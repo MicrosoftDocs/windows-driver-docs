@@ -80,7 +80,7 @@ The system might need to be rebooted to make this change effective. To have DevC
 ```
 devcon restart *
 devcon restart pci*
-devcon restart "PCI\VEN_115D&amp;DEV_0003&amp;SUBSYS_0181115D"
+devcon restart "PCI\VEN_115D&DEV_0003&SUBSYS_0181115D"
 devcon restart =printer
 devcon restart =printer *desk*
 ```

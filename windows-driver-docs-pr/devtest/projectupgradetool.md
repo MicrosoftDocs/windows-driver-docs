@@ -155,7 +155,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
     Change the not equals (!=) to less than ("&lt;").
 
     ```XML
-        <When  Condition="&#39;$(VisualStudioVersion)&#39; &amp;lt;&#39;11.0&#39;">
+        <When  Condition="&#39;$(VisualStudioVersion)&#39; &lt;&#39;11.0&#39;">
     ```
 
     Locate the next instance of the expression where `('$(VisualStudioVersion)' != '11.0')`
@@ -167,7 +167,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
     And change the not equals (!=) to less than ("&lt;").
 
     ```XML
-        <When Condition="(&#39;$(PlatformToolset)&#39; == &#39;WindowsApplicationForDrivers8.0&#39;) and (&#39;$(VisualStudioVersion)&#39; &amp;lt;&#39;11.0&#39;)">
+        <When Condition="(&#39;$(PlatformToolset)&#39; == &#39;WindowsApplicationForDrivers8.0&#39;) and (&#39;$(VisualStudioVersion)&#39; &lt;&#39;11.0&#39;)">
     ```
 
     After you make the changes, save both \*.props files.

@@ -64,7 +64,7 @@ If you remove a SCh certificate from an ASCh certificate chain, the tool removes
 The following example shows how to remove the certificate at index two within the ASC store of a target device:
 
 ```
-EhStorCertMgrCmd /Remove -Volume:"\\?\usbstor#ieee1667control&amp;ven_&amp;prod_&amp;rev_#123456789&amp;0&amp;control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:2
+EhStorCertMgrCmd /Remove -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:2
 ```
 
  

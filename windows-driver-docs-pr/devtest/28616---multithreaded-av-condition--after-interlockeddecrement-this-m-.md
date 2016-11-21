@@ -24,7 +24,7 @@ When T1 is rescheduled, it will reference **m\_cref** on line 9. Thus it will ac
 ```
   1 ULONG CObject::Release()
   2 {
-  3     if ( 0 == InterlockedDecrement(&amp;m_cRef) )
+  3     if ( 0 == InterlockedDecrement(&m_cRef) )
   4     {
   5         delete this;
   6         return NULL;
@@ -40,7 +40,7 @@ The corrected example does not reference any heap memory after the object is del
 ULONG CObject::Release()
 {
  ASSERT( 0 != m_cRef );
- ULONG cRef = InterlockedDecrement(&amp;m_cRef);
+ ULONG cRef = InterlockedDecrement(&m_cRef);
  if ( 0 == cRef )
  {
  delete this;

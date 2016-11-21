@@ -61,7 +61,7 @@ The following sample source code shows how your [trace provider](trace-provider.
 
 ```
 struct in6_addr IPAddressV6 = {0};
-DoTraceMessage(Noise, "IN6_ADDR  = %!IPV6ADDR!", &amp;IPAddressV6);
+DoTraceMessage(Noise, "IN6_ADDR  = %!IPV6ADDR!", &IPAddressV6);
 ```
 
 **Note**  You can create a complex type (MACADDR) for tracing fixed-length media access control (MAC) addresses. This complex type can be specified by following the procedure that was used for the IPV6ADDDR complex type.
@@ -83,7 +83,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>DEFINE_CPLX_TYPE(HEXDUMP, WPP_LOGHEXDUMP, const xstr_t&amp;, ItemHEXDump,&quot;s&quot;, _HEX_, 0, 2);</code></pre></td>
+    <td align="left"><pre><code>DEFINE_CPLX_TYPE(HEXDUMP, WPP_LOGHEXDUMP, const xstr_t&, ItemHEXDump,&quot;s&quot;, _HEX_, 0, 2);</code></pre></td>
     </tr>
     </tbody>
     </table>
@@ -131,7 +131,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>WPP_FLAGS(-DWPP_LOGHEXDUMP(x) WPP_LOGPAIR(2,&amp;(x)._len) WPP_LOGPAIR((x)._len, (x)._buf));</code></pre></td>
+    <td align="left"><pre><code>WPP_FLAGS(-DWPP_LOGHEXDUMP(x) WPP_LOGPAIR(2,&(x)._len) WPP_LOGPAIR((x)._len, (x)._buf));</code></pre></td>
     </tr>
     </tbody>
     </table>

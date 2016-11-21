@@ -18,7 +18,7 @@ DEFINE_CPLX_TYPE(TypeName, HelperMacroName, ArgumentType, WppMofType,"WppMofForm
 For example:
 
 ```
-DEFINE_CPLX_TYPE(.*ls, WPP_LOGXWCS, const xwcs_t&amp;, ItemPWString,"s", _xwcs_t_, 0, 2);
+DEFINE_CPLX_TYPE(.*ls, WPP_LOGXWCS, const xwcs_t&, ItemPWString,"s", _xwcs_t_, 0, 2);
 ```
 
 ### <span id="format_elements"></span><span id="FORMAT_ELEMENTS"></span>Format Elements
@@ -68,7 +68,7 @@ To define a complex type, do the following:
 For example, you can create a local configuration file (Localwpp.ini) that defines a complex type named **.\*ls**. You define the complex type in the following way:
 
 ```
-DEFINE_CPLX_TYPE(.*ls, WPP_LOGXWCS, const xwcs_t&amp;, ItemPWString,"s", _xwcs_t_, 0, 2);
+DEFINE_CPLX_TYPE(.*ls, WPP_LOGXWCS, const xwcs_t&, ItemPWString,"s", _xwcs_t_, 0, 2);
 ```
 
 Then, when WPP sees a type **.\*ls**, such as in:
@@ -80,7 +80,7 @@ printf("my string is %.*ls", value);
 WPP generates the following staging function (where **SF** represents "staging function"):
 
 ```
-WPP_SF__xwcs_t_(..., const xwcs_t&amp; a1) {
+WPP_SF__xwcs_t_(..., const xwcs_t& a1) {
     TraceMessage(..., WPP_LOGXWCS(a1) 0);
 }
 ```
@@ -107,7 +107,7 @@ struct xwcs_t {
 Now, add a macro to combine the data types into a string of type **xwstr\_t**, as follows:
 
 ```
-#define WPP_LOGXWCS(x) WPP_LOGPAIR(2, &amp;(x)._len) WPP_LOGPAIR((x)._len, (x)._buf)
+#define WPP_LOGXWCS(x) WPP_LOGPAIR(2, &(x)._len) WPP_LOGPAIR((x)._len, (x)._buf)
 ```
 
 where **ItemPWString** is a counted Unicode string type recognized by WPP. The length is specified as 2 bytes.

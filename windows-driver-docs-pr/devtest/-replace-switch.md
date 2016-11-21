@@ -157,7 +157,7 @@ Only one of the **-Store**, **-File** or **-New** parameters must be specified.
 The following example shows how to replace the certificate at index two within the ASC store of an IEEE 1667-compliant USB storage device.
 
 ```
-EhStorCertMgrCmd /Replace -Volume:"\\?\usbstor#ieee1667control&amp;ven_&amp;prod_&amp;rev_#123456789&amp;0&amp;control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:2 -Store:TestCert -Type:SCh -Validation:None
+EhStorCertMgrCmd /Replace -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}" -Index:2 -Store:TestCert -Type:SCh -Validation:None
 ```
 
  

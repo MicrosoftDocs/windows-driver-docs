@@ -28,7 +28,7 @@ keywords: ["verifying drivers WDK , Static Driver Verifier", "driver verificatio
 <p>2. Replace the following line:</p>
 <p><strong>&lt;Exec Command=&quot;staticdv.exe $(Inputs)&quot;</strong></p>
 <p>With this text:</p>
-<p><strong>&lt;Exec Command=&quot;chcp 437 &amp;amp;&amp;amp; staticdv.exe $(Inputs)&quot;</strong></p>
+<p><strong>&lt;Exec Command=&quot;chcp 437 &amp;&amp; staticdv.exe $(Inputs)&quot;</strong></p>
 <p>Information on the root cause of this issue is available here: [https://github.com/Microsoft/msbuild/issues/397](https://github.com/Microsoft/msbuild/issues/397)</p>
 </div>
 <div>

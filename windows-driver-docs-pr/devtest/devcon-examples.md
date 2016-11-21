@@ -188,7 +188,7 @@ devcon hwids *floppy*
 In response, DevCon displays the device instance ID, hardware ID, and compatible ID of the floppy disk drive on the computer. You can use these IDs in subsequent DevCon commands.
 
 ```
-FDC\GENERIC_FLOPPY_DRIVE\5&amp;39194F6D&amp;0&amp;0
+FDC\GENERIC_FLOPPY_DRIVE\5&39194F6D&0&0
     Name: Floppy disk drive
     Hardware ID&#39;s:
         FDC\GENERIC_FLOPPY_DRIVE
@@ -210,7 +210,7 @@ devcon hwids =ports
 In response, DevCon displays the hardware IDs and compatible IDs of the three devices in the Ports setup class.
 
 ```
-ACPI\PNP0401\4&amp;B4063F4&amp;0
+ACPI\PNP0401\4&B4063F4&0
     Name: ECP Printer Port (LPT1)
     Hardware ID&#39;s:
         ACPI\PNP0401
@@ -274,7 +274,7 @@ In response, DevCon displays the device instance ID and description of each devi
 
 ```
 Listing 6 device(s) for setup class "Net" (Network adapters).
-PCI\VEN_10B7&amp;DEV_9200&amp;SUBSYS_00BE1028&amp;REV_78\4&amp;BB7B4AE&amp;0&amp;60F0: 3Com 3C920 Integrated Fast Ethernet Controller (3C905C-TX Compatible)
+PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78\4&BB7B4AE&0&60F0: 3Com 3C920 Integrated Fast Ethernet Controller (3C905C-TX Compatible)
 ROOT\MS_L2TPMINIPORT\0000                                   : WAN Miniport (L2TP)
 ROOT\MS_NDISWANIP\0000                                      : WAN Miniport (IP)
 ROOT\MS_PPPOEMINIPORT\0000                                  : WAN Miniport (PPPOE)
@@ -291,18 +291,18 @@ devcon hwids =net
 The resulting display lists the devices in the Net class and includes the device instance ID, hardware IDs, and compatible IDs of devices in the class.
 
 ```
-PCI\VEN_10B7&amp;DEV_9200&amp;SUBSYS_00BE1028&amp;REV_78\4&amp;BB7B4AE&amp;0&amp;60F0
+PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78\4&BB7B4AE&0&60F0
     Name: 3Com 3C920 Integrated Fast Ethernet Controller (3C905C-TX Compatible)
     Hardware ID&#39;s:
-        PCI\VEN_10B7&amp;DEV_9200&amp;SUBSYS_00BE1028&amp;REV_78
-        PCI\VEN_10B7&amp;DEV_9200&amp;SUBSYS_00BE1028
-        PCI\VEN_10B7&amp;DEV_9200&amp;CC_020000
-        PCI\VEN_10B7&amp;DEV_9200&amp;CC_0200
+        PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78
+        PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028
+        PCI\VEN_10B7&DEV_9200&CC_020000
+        PCI\VEN_10B7&DEV_9200&CC_0200
     Compatible ID&#39;s:
-        PCI\VEN_10B7&amp;DEV_9200&amp;REV_78
-        PCI\VEN_10B7&amp;DEV_9200
-        PCI\VEN_10B7&amp;CC_020000
-        PCI\VEN_10B7&amp;CC_0200
+        PCI\VEN_10B7&DEV_9200&REV_78
+        PCI\VEN_10B7&DEV_9200
+        PCI\VEN_10B7&CC_020000
+        PCI\VEN_10B7&CC_0200
  PCI\VEN_10B7
         PCI\CC_020000
  PCI\CC_0200
@@ -343,7 +343,7 @@ In response, DevCon displays the devices in those classes on the remote computer
 Listing 1 device(s) for setup class "DiskDrive" (Disk drives) on \\server01.
 IDE\DISKWDC_WD204BA_____________________________16.13M16\4457572D414D3730323136333938203120202020: WDC WD204BA
 Listing 1 device(s) for setup class "CDROM" (DVD/CD-ROM drives) on \\server01.
-IDE\CDROMSAMSUNG_DVD-ROM_SD-608__________________2.2_____\4&amp;13B4AFD&amp;0&amp;0.0.0: SAMSUNG DVD-ROM SD-608
+IDE\CDROMSAMSUNG_DVD-ROM_SD-608__________________2.2_____\4&13B4AFD&0&0.0.0: SAMSUNG DVD-ROM SD-608
 No devices for setup class "TapeDrive" (Tape drives) on \\server01.
 ```
 
@@ -360,13 +360,13 @@ devcon driverfiles * > driverfiles.txt
 The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) operation to search for the device driver that the mouse device on the local computer uses. It identifies the device by one of its hardware IDs, HID\\Vid\_045e&Pid\_0039&Rev\_0121. The hardware ID is enclosed in quotation marks because it includes the ampersand character (**&**).
 
 ```
-devcon driverfiles "HID\Vid_045e&amp;Pid_0039&amp;Rev_0121"
+devcon driverfiles "HID\Vid_045e&Pid_0039&Rev_0121"
 ```
 
 In response, DevCon displays the two device drivers that support the mouse device.
 
 ```
-HID\VID_045E&amp;PID_0039\6&amp;DC36FDE&amp;0&amp;0000
+HID\VID_045E&PID_0039\6&DC36FDE&0&0000
     Name: Microsoft USB IntelliMouse Optical
     Driver installed from c:\windows\inf\msmouse.inf [HID_Mouse_Inst]. 2 file(s)
  used by driver:
@@ -523,17 +523,17 @@ devcon resources =hdc
 In response, DevCon lists the resources allocated to IDE controllers on the local computer.
 
 ```
-PCI\VEN_8086&amp;DEV_244B&amp;SUBSYS_00000000&amp;REV_02\3&amp;29E81982&amp;0&amp;F9
+PCI\VEN_8086&DEV_244B&SUBSYS_00000000&REV_02\3&29E81982&0&F9
     Name: Intel(r) 82801BA Bus Master IDE Controller
     Device is currently using the following resources:
         IO  : ffa0-ffaf
-PCIIDE\IDECHANNEL\4&amp;37E53584&amp;0&amp;0
+PCIIDE\IDECHANNEL\4&37E53584&0&0
     Name: Primary IDE Channel
     Device is currently using the following resources:
         IO  : 01f0-01f7
         IO  : 03f6-03f6
         IRQ : 14
-PCIIDE\IDECHANNEL\4&amp;37E53584&amp;0&amp;1
+PCIIDE\IDECHANNEL\4&37E53584&0&1
     Name: Secondary IDE Channel
     Device is currently using the following resources:
         IO  : 0170-0177
@@ -564,7 +564,7 @@ ROOT\*PNP0100\PNPBIOS_8
 The following command uses the device instance ID of the remote system timer in the DevCon resources command. The at character (**@**) indicates that the string is a device instance ID, not a hardware ID or compatible ID.
 
 ```
-devcon /m:\\Server01 resources @ACPI\PNP0100\4&amp;b4063f4&amp;0
+devcon /m:\\Server01 resources @ACPI\PNP0100\4&b4063f4&0
 ```
 
 ### <span id="ddk_example_14_display_the_driver_stack_for_storage_devices_tools"></span><span id="DDK_EXAMPLE_14_DISPLAY_THE_DRIVER_STACK_FOR_STORAGE_DEVICES_TOOLS"></span>Example 14: Display the driver stack for storage devices
@@ -578,14 +578,14 @@ devcon stack =Volume
 In response, DevCon displays the expected stack for the devices in the Volume class. The returned data includes the device instance ID and description of each device, the GUID and name of the device setup class, the names of upper and lower filter drivers, and controlling services (if any).
 
 ```
-STORAGE\VOLUME\1&amp;30A96598&amp;0&amp;SIGNATURE32323533OFFSET271167600LENGTH6E00D0C00
+STORAGE\VOLUME\1&30A96598&0&SIGNATURE32323533OFFSET271167600LENGTH6E00D0C00
     Name: Generic volume
     Setup Class: {71A27CDD-812A-11D0-BEC7-08002BE2092F} Volume
     Class upper filters:
         VolSnap
     Controlling service:
         (none)
-STORAGE\VOLUME\1&amp;30A96598&amp;0&amp;SIGNATURE32323533OFFSET7E00LENGTH27115F800
+STORAGE\VOLUME\1&30A96598&0&SIGNATURE32323533OFFSET7E00LENGTH27115F800
     Name: Generic volume
     Setup Class: {71A27CDD-812A-11D0-BEC7-08002BE2092F} Volume
     Class upper filters:
@@ -608,7 +608,7 @@ devcon hwids *lpt*
 In response, DevCon returns the device instance ID (displayed in bold text) and the hardware ID of the printer port interface.
 
 ```
-LPTENUM\MICROSOFTRAWPORT\5&amp;CA97D7E&amp;0&amp;LPT1
+LPTENUM\MICROSOFTRAWPORT\5&CA97D7E&0&LPT1
     Name: Printer Port Logical Interface
     Hardware ID&#39;s:
         LPTENUM\MicrosoftRawPort958A
@@ -619,13 +619,13 @@ LPTENUM\MICROSOFTRAWPORT\5&amp;CA97D7E&amp;0&amp;LPT1
 The next command uses the [**DevCon Stack**](devcon-stack.md) operation to find the device setup class of the device represented by the device instance ID. An at character (**@**) identifies the ID as a device instance ID. The ID is enclosed in quotation marks because it includes ampersand characters.
 
 ```
-devcon stack "@LPTENUM\MICROSOFTRAWPORT\5&amp;CA97D7E&amp;0&amp;LPT1"
+devcon stack "@LPTENUM\MICROSOFTRAWPORT\5&CA97D7E&0&LPT1"
 ```
 
 In response, DevCon displays the driver stack for the printer port interface, including the class. The display reveals that the printer port is in the System class.
 
 ```
-LPTENUM\MICROSOFTRAWPORT\5&amp;CA97D7E&amp;0&amp;LPT1
+LPTENUM\MICROSOFTRAWPORT\5&CA97D7E&0&LPT1
     Name: Printer Port Logical Interface
     Setup Class: {4D36E97D-E325-11CE-BFC1-08002BE10318} System
     Controlling service:
@@ -690,13 +690,13 @@ The most reliable way to find the status of a particular device is to use the de
 The following command uses the device instance ID of the I/O controller on the local computer in a [**DevCon Status**](devcon-status.md) command. The command includes the device instance ID of the device, PCI\\VEN\_8086&DEV\_1130&SUBSYS\_00000000&REV\_02\\3&29E81982&0&00. The at character (**@**) prefixed to the ID identifies the string as a device instance ID. The ID must be enclosed in quotation marks because it includes ampersand characters.
 
 ```
-devcon status "@PCI\VEN_8086&amp;DEV_1130&amp;SUBSYS_00000000&amp;REV_02\3&amp;29E81982&amp;0&amp;00"
+devcon status "@PCI\VEN_8086&DEV_1130&SUBSYS_00000000&REV_02\3&29E81982&0&00"
 ```
 
 In response, DevCon displays the status of the I/O controller.
 
 ```
-PCI\VEN_8086&amp;DEV_1130&amp;SUBSYS_00000000&amp;REV_02\3&amp;29E81982&amp;0&amp;00
+PCI\VEN_8086&DEV_1130&SUBSYS_00000000&REV_02\3&29E81982&0&00
     Name: Intel(R) 82815 Processor to I/O Controller - 1130
     Driver is running.
 1 matching device(s) found.
@@ -729,10 +729,10 @@ devcon /m:\\server01 status GenDisk GenCdRom FDC\GENERIC_FLOPPY_DRIVE STORAGE\Vo
 In response, DevCon displays the status of each device.
 
 ```
-FDC\GENERIC_FLOPPY_DRIVE\1&amp;3A2146F1&amp;0&amp;0
+FDC\GENERIC_FLOPPY_DRIVE\1&3A2146F1&0&0
     Name: Floppy disk drive
     Driver is running.
-IDE\CDROMSAMSUNG_DVD-ROM_SD-608__________________2.2_____\4&amp;13B4AFD&amp;0&amp;0.0.0
+IDE\CDROMSAMSUNG_DVD-ROM_SD-608__________________2.2_____\4&13B4AFD&0&0.0.0
     Name: SAMSUNG DVD-ROM SD-608
     Driver is running.
 IDE\DISKWDC_WD204BA_____________________________16.13M16\4457572D414D373032313633393820312
@@ -753,10 +753,10 @@ ROOT\FLOPPYDISK\0004
 ROOT\FTDISK\0000
     Name: Volume Manager
     Driver is running.
-STORAGE\VOLUME\1&amp;30A96598&amp;0&amp;SIGNATUREEA1AA9C7OFFSET1770DF800LENGTH3494AEA00
+STORAGE\VOLUME\1&30A96598&0&SIGNATUREEA1AA9C7OFFSET1770DF800LENGTH3494AEA00
     Name: Generic volume
     Driver is running.
-STORAGE\VOLUME\1&amp;30A96598&amp;0&amp;SIGNATUREEA1AA9C7OFFSET7E00LENGTH1770CFC00
+STORAGE\VOLUME\1&30A96598&0&SIGNATUREEA1AA9C7OFFSET7E00LENGTH1770CFC00
     Name: Generic volume
     Driver is running.
 11 matching device(s) found on \\Server01.
@@ -786,7 +786,7 @@ devcon driverfiles *mou*
 In response, DevCon finds the devices and lists their drivers.
 
 ```
-HID\VID_045E&amp;PID_0039\6&amp;DC36FDE&amp;0&amp;0000
+HID\VID_045E&PID_0039\6&DC36FDE&0&0000
     Name: Microsoft USB IntelliMouse Optical
     Driver installed from c:\windows\inf\msmouse.inf [HID_Mouse_Inst]. 2 file(s) used by d
 river:
@@ -860,7 +860,7 @@ devcon findall =net
 In response, DevCon lists the following seven devices in the Net setup class. The first six are standard miniport driver devices. The seventh device, the RAS async adapter, is a software-enumerated device (SW\\\*) that is not installed until it is needed.
 
 ```
-PCI\VEN_10B7&amp;DEV_9200&amp;SUBSYS_00BE1028&amp;REV_78\4&amp;BB7B4AE&amp;0&amp;60F0: 3Com 3C920 Integrated Fast
+PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78\4&BB7B4AE&0&60F0: 3Com 3C920 Integrated Fast
 Ethernet Controller (3C905C-TX Compatible)
 ROOT\MS_L2TPMINIPORT\0000                                   : WAN Miniport (L2TP)
 ROOT\MS_NDISWANIP\0000                                      : WAN Miniport (IP)
@@ -880,7 +880,7 @@ devcon find =net
 In response, DevCon lists the following six devices in the Net setup class.
 
 ```
-PCI\VEN_10B7&amp;DEV_9200&amp;SUBSYS_00BE1028&amp;REV_78\4&amp;BB7B4AE&amp;0&amp;60F0: 3Com 3C920 Integrated Fast
+PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78\4&BB7B4AE&0&60F0: 3Com 3C920 Integrated Fast
 Ethernet Controller (3C905C-TX Compatible)
 ROOT\MS_L2TPMINIPORT\0000                                   : WAN Miniport (L2TP)
 ROOT\MS_NDISWANIP\0000                                      : WAN Miniport (IP)
@@ -1066,7 +1066,7 @@ devcon enable &#39;*PNP0000
 In response, DevCon displays the device instance ID of the device and explains that you must reboot the system to enable the device.
 
 ```
-ACPI\PNP0000\4&amp;B4063F4&amp;0                                    : Enabled on reboot
+ACPI\PNP0000\4&B4063F4&0                                    : Enabled on reboot
 Not all of 1 device(s) enabled, at least one requires reboot to complete the operation.
 ```
 
@@ -1085,7 +1085,7 @@ When the system starts, use a DevCon status command to confirm that the device i
 ```
 devcon status &#39;*PNP0000
 
-ACPI\PNP0000\4&amp;B4063F4&amp;0
+ACPI\PNP0000\4&B4063F4&0
     Name: Programmable interrupt controller
     Driver is running.
 ```
@@ -1101,7 +1101,7 @@ devcon /r enable =Printer
 In response, DevCon displays the device instance ID of the printer that it found in the Printer class and reports that it is enabled. Although the command included the **/r** parameter, the system did not reboot because a reboot was not required to enable the printer.
 
 ```
-LPTENUM\HEWLETT-PACKARDDESKJET_1120C\1&amp;7530F08&amp;0&amp;LPT1.4        : Enabled
+LPTENUM\HEWLETT-PACKARDDESKJET_1120C\1&7530F08&0&LPT1.4        : Enabled
 1 device(s) enabled.
 ```
 
@@ -1120,11 +1120,11 @@ devcon /r disable USB*
 In response, DevCon displays the device instance IDs of the USB devices and reports that they are disabled. Although the command included the **/r** parameter, the system did not reboot because a reboot was not required to disable the devices.
 
 ```
-USB\ROOT_HUB\4&amp;2A40B465&amp;0
+USB\ROOT_HUB\4&2A40B465&0
 : Disabled
-USB\ROOT_HUB\4&amp;7EFA360&amp;0
+USB\ROOT_HUB\4&7EFA360&0
 : Disabled
-USB\VID_045E&amp;PID_0039\5&amp;29F428A4&amp;0&amp;2
+USB\VID_045E&PID_0039\5&29F428A4&0&2
 : Disabled
 3 device(s) disabled.
 ```
@@ -1136,17 +1136,17 @@ The following command uses the [**DevCon Disable**](devcon-disable.md) operation
 Also, because the device instance IDs include the ampersand character (**&**), they are enclosed in quotation marks. The command includes the **/r** parameter, which reboots the system if it is necessary to make the disabling effective.
 
 ```
-devcon /r disable "@USB\ROOT_HUB\4&amp;2A40B465&amp;0" "@USB\ROOT_HUB\4&amp;7EFA360&amp;0" "@USB\VID_045E&amp;PID_0039\5&amp;29F428A4&amp;0&amp;2"
+devcon /r disable "@USB\ROOT_HUB\4&2A40B465&0" "@USB\ROOT_HUB\4&7EFA360&0" "@USB\VID_045E&PID_0039\5&29F428A4&0&2"
 ```
 
 In response, DevCon displays the device instance IDs of the USB devices and reports that they are disabled. Although the command included the **/r** parameter, the system did not reboot because a reboot was not required to disable the devices.
 
 ```
-USB\ROOT_HUB\4&amp;2A40B465&amp;0
+USB\ROOT_HUB\4&2A40B465&0
 : Disabled
-USB\ROOT_HUB\4&amp;7EFA360&amp;0
+USB\ROOT_HUB\4&7EFA360&0
 : Disabled
-USB\VID_045E&amp;PID_0039\5&amp;29F428A4&amp;0&amp;2
+USB\VID_045E&PID_0039\5&29F428A4&0&2
 : Disabled
 3 device(s) disabled.
 ```
@@ -1234,9 +1234,9 @@ devcon /r remove @usb\*
 In response, DevCon displays the device instance ID of the devices that it removed.
 
 ```
-USB\ROOT_HUB\4&amp;2A40B465&amp;0                             : Removed
-USB\ROOT_HUB\4&amp;7EFA360&amp;0                              : Removed
-USB\VID_045E&amp;PID_0039\5&amp;29F428A4&amp;0&amp;2                  : Removed
+USB\ROOT_HUB\4&2A40B465&0                             : Removed
+USB\ROOT_HUB\4&7EFA360&0                              : Removed
+USB\VID_045E&PID_0039\5&29F428A4&0&2                  : Removed
 3 device(s) removed.
 ```
 

@@ -18,7 +18,7 @@ PREfast reports the warning for the following example.
 ```
 extern bool SomeMemAllocFunction(void **);
 
-return SomeMemAllocFunction(&amp;MyPtr);
+return SomeMemAllocFunction(&MyPtr);
 ```
 
 The following example avoids the error.
@@ -26,7 +26,7 @@ The following example avoids the error.
 ```
 extern bool SomeMemAllocFunction(void **);
 
-if (SomeMemAllocFunction(&amp;MyPtr) == true) {
+if (SomeMemAllocFunction(&MyPtr) == true) {
  return STATUS_SUCCESS;
 } else {
  return STATUS_NO_MEMORY;

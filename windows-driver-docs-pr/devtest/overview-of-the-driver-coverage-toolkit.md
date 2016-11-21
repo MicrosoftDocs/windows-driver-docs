@@ -63,12 +63,12 @@ Getting coverage data
  Device
    Friendly Name : USB Mass Storage Device 
    Class Name    : USB 
-   Device ID     : USB\VID_04E8&amp;PID_0100\2151151132436 
+   Device ID     : USB\VID_04E8&PID_0100\2151151132436 
    Device #      : 1 
  Devnode #     : 5088 
 
 |--------------------------------------------------------|
-| MJ &amp; MN Device irp coverage                            |
+| MJ & MN Device irp coverage                            |
 |--------------------------------------------------------|
 | IRPS covered     19                      |  # of times |
 |--------------------------------------------------------|
@@ -170,7 +170,7 @@ Getting coverage data
 
 
 |--------------------------------------------------------|
-| MJ &amp; MN Device IRP Concurrency pairs.                  |
+| MJ & MN Device IRP Concurrency pairs.                  |
 |--------------------------------------------------------|
 | IRP Pairs covered                     25 |  # of times |
 |--------------------------------------------------------|

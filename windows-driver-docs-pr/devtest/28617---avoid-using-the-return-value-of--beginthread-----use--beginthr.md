@@ -16,7 +16,7 @@ It is safer to use **\_beginthreadex** than **\_beginthread**. If the thread spa
 The following code example generates this warning.
 
 ```
-hThread = (HANDLE)_beginthread (&amp;SecondThreadFunc, 0, &amp;args);
+hThread = (HANDLE)_beginthread (&SecondThreadFunc, 0, &args);
 WaitForSingleObject (hThread, INFINITE);
 ```
 
@@ -24,8 +24,8 @@ The following code example avoids the warning.
 
 ```
 hThread = (HANDLE)_beginthreadex ( NULL, 0,
-                                   &amp;SecondThreadFunc,
-                                   &amp;args, 0, &amp;threadID);
+                                   &SecondThreadFunc,
+                                   &args, 0, &threadID);
 WaitForSingleObject (hThread, INFINITE);
 CloseHandle(hThread);
 ```

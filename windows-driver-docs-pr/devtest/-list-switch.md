@@ -49,13 +49,13 @@ EhStorCertMgrCmd /List
 
 ```
 Executing list switch...
-Volume Name : \\?\usbstor#ieee1667control&amp;ven_msft&amp;prod_disk_sim_v0.01&amp;rev_0.01#123456789&amp;0&amp;control#{4f40006f-b933-4550-b532-2b58cee614d3}
+Volume Name : \\?\usbstor#ieee1667control&ven_msft&prod_disk_sim_v0.01&rev_0.01#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}
 ```
 
 This example shows how to list the details about the certificates within the ASC store of an IEEE 1667-compliant USB storage device.
 
 ```
-EhStorCertMgrCmd.exe /List -Volume:"\\?\usbstor#ieee1667control&amp;ven_msft&amp;prod_disk_sim_v0.01&amp;rev_0.01#123456789&amp;0&amp;control#{4f40006f-b933-4550-b532-2b58cee614d3}"
+EhStorCertMgrCmd.exe /List -Volume:"\\?\usbstor#ieee1667control&ven_msft&prod_disk_sim_v0.01&rev_0.01#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}"
 ```
 
 ```

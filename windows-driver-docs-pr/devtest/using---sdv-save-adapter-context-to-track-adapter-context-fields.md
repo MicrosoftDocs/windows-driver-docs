@@ -16,7 +16,7 @@ Because the miniport adapter context maintains the state of the miniport driver 
 The **\_\_sdv\_save\_adapter\_context** function has the following syntax:
 
 ```
-__sdv_save_adapter_context( &amp;adapter_context ) 
+__sdv_save_adapter_context( &adapter_context ) 
 ```
 
 Where adapter\_context is the handle to the miniport adapter context that is defined by the miniport driver. This function should be called only one time in the context of a miniport driver.
@@ -68,7 +68,7 @@ MPInitialize(
             );
 
    // save the adapter context, even before we check whether it is NULL or not 
- __sdv_save_adapter_context(&amp;pAdapter);
+ __sdv_save_adapter_context(&pAdapter);
 
         if (pAdapter == NULL)
         {

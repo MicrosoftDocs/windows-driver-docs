@@ -14,7 +14,7 @@ When you use [WPP software tracing](wpp-software-tracing.md) macros to add softw
 The WPP macros amounts to three conditional checks within an If statement to the software tracing code. These checks prevent any trace messages from being generated unless the provider is enabled. The WPP macros generate code in the following form:
 
 ```
-If (WPP_CHECK_INIT &amp;&amp; WPP_LEVEL_FLAGS_ENABLED) {
+If (WPP_CHECK_INIT && WPP_LEVEL_FLAGS_ENABLED) {
     Call trace_message_routine
 }
 ```

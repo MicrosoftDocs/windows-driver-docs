@@ -25,7 +25,7 @@ WM_NULL,
 0, 
 SMTO_ABORTIFHUNG,
 0,
-&amp;dwResult)); 
+&dwResult)); 
 ```
 
 The following function call does not have this problem.
@@ -38,7 +38,7 @@ WM_NULL,
 0,
 SMTO_ABORTIFHUNG,
 1000,  
-&amp;dwResult)); 
+&dwResult)); 
 ```
 
  

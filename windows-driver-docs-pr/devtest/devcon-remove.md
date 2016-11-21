@@ -82,7 +82,7 @@ The system might need to be rebooted to make this change effective. To have DevC
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
-devcon /r remove "PCI\VEN_8086&amp;DEV_7110" 
+devcon /r remove "PCI\VEN_8086&DEV_7110" 
 devcon /r remove =printer
 devcon /r remove =printer *deskj*
 ```

@@ -17,13 +17,13 @@ The driver is waiting in user mode. As such, the kernel stack can be swapped out
 The following code example elicits this warning.
 
 ```
-KeWaitForSingleObject(&amp;MyMutex, UserRequest, UserMode, false, NULL);
+KeWaitForSingleObject(&MyMutex, UserRequest, UserMode, false, NULL);
 ```
 
 The following code example avoids this warning.
 
 ```
-KeWaitForSingleObject(&amp;MyMutex, UserRequest, KernelMode, false, NULL);
+KeWaitForSingleObject(&MyMutex, UserRequest, KernelMode, false, NULL);
 ```
 
  

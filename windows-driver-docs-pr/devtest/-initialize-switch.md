@@ -51,7 +51,7 @@ If the target device was provisioned with a provisioning certificate (PCp), the 
 The following example shows how to initialize a target device:
 
 ```
-EhStorCertMgrCmd /Initialize -Volume:"\\?\usbstor#ieee1667control&amp;ven_&amp;prod_&amp;rev_#123456789&amp;0&amp;control#{4f40006f-b933-4550-b532-2b58cee614d3}"
+EhStorCertMgrCmd /Initialize -Volume:"\\?\usbstor#ieee1667control&ven_&prod_&rev_#123456789&0&control#{4f40006f-b933-4550-b532-2b58cee614d3}"
 ```
 
  

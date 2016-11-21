@@ -15,7 +15,7 @@ The driver has returned from its **AddDevice** routine, or a similar utility rou
 The **AddDevice** routine must contain code similar to the following to clear the **DO\_DEVICE\_INITIALIZING** flag.
 
 ```
-FunctionalDeviceObject->Flags &amp;= ~DO_DEVICE_INITIALIZING;
+FunctionalDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
 ```
 
 For more information about **AddDevice** routines, see [AddDevice Routines in Function or Filter Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540529)

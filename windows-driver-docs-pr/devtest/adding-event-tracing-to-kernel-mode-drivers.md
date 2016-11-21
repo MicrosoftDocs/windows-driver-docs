@@ -233,7 +233,7 @@ In the instrumentation manifest, you defined the names of the event provider and
     // Register with ETW Vista +
     //
     #ifndef EventRegisterSample_Driver
-    #define EventRegisterSample_Driver() McGenEventRegister(&amp;DriverControlGuid, McGenControlCallbackV2, &amp;DriverControlGuid_Context, &amp;Sample_DriverHandle) 
+    #define EventRegisterSample_Driver() McGenEventRegister(&DriverControlGuid, McGenControlCallbackV2, &DriverControlGuid_Context, &Sample_DriverHandle) 
     #endif
        
     ```
@@ -265,42 +265,42 @@ In the instrumentation manifest, you defined the names of the event provider and
     // Enablement check macro for StartEvent
     //
 
-    #define EventEnabledStartEvent() ((Sample_DriverEnableBits[0] &amp; 0x00000001) != 0)
+    #define EventEnabledStartEvent() ((Sample_DriverEnableBits[0] & 0x00000001) != 0)
 
     //
     // Event Macro for StartEvent
     //
     #define EventWriteStartEvent(Activity, DeviceNameLength, name, Status)\
             EventEnabledStartEvent() ?\
-            Template_hzq(Sample_DriverHandle, &amp;StartEvent, Activity, DeviceNameLength, name, Status)\
+            Template_hzq(Sample_DriverHandle, &StartEvent, Activity, DeviceNameLength, name, Status)\
             : STATUS_SUCCESS\
 
     //
     // Enablement check macro for SampleEventA
     //
 
-    #define EventEnabledSampleEventA() ((Sample_DriverEnableBits[0] &amp; 0x00000001) != 0)
+    #define EventEnabledSampleEventA() ((Sample_DriverEnableBits[0] & 0x00000001) != 0)
 
     //
     // Event Macro for SampleEventA
     //
     #define EventWriteSampleEventA(Activity)\
             EventEnabledSampleEventA() ?\
-            TemplateEventDescriptor(Sample_DriverHandle, &amp;SampleEventA, Activity)\
+            TemplateEventDescriptor(Sample_DriverHandle, &SampleEventA, Activity)\
             : STATUS_SUCCESS\
 
     //
     // Enablement check macro for UnloadEvent
     //
 
-    #define EventEnabledUnloadEvent() ((Sample_DriverEnableBits[0] &amp; 0x00000001) != 0)
+    #define EventEnabledUnloadEvent() ((Sample_DriverEnableBits[0] & 0x00000001) != 0)
 
     //
     // Event Macro for UnloadEvent
     //
     #define EventWriteUnloadEvent(Activity, DeviceObjPtr)\
             EventEnabledUnloadEvent() ?\
-            Template_p(Sample_DriverHandle, &amp;UnloadEvent, Activity, DeviceObjPtr)\
+            Template_p(Sample_DriverHandle, &UnloadEvent, Activity, DeviceObjPtr)\
             : STATUS_SUCCESS\
     ```
 
@@ -351,7 +351,7 @@ In the instrumentation manifest, you defined the names of the event provider and
         DriverObject->MajorFunction[ IRP_MJ_CLOSE ] = EventDrvDispatchOpenClose;
         DriverObject->MajorFunction[ IRP_MJ_DEVICE_CONTROL ] = EventDrvDispatchDeviceControl;    
 
-        RtlInitUnicodeString( &amp;DeviceName, EventDrv_NT_DEVICE_NAME );
+        RtlInitUnicodeString( &DeviceName, EventDrv_NT_DEVICE_NAME );
 
         //
         // Create the Device object
@@ -359,18 +359,18 @@ In the instrumentation manifest, you defined the names of the event provider and
         Status = IoCreateDevice(
                                DriverObject,
                                0,
-                               &amp;DeviceName,
+                               &DeviceName,
                                FILE_DEVICE_UNKNOWN,
                                0,
                                FALSE,
-                               &amp;EventDrvDeviceObject);
+                               &EventDrvDeviceObject);
 
         if (!NT_SUCCESS(Status)) {
             return Status;
         }
 
-        RtlInitUnicodeString( &amp;LinkName, EventDrv_WIN32_DEVICE_NAME );
-        Status = IoCreateSymbolicLink( &amp;LinkName, &amp;DeviceName );
+        RtlInitUnicodeString( &LinkName, EventDrv_WIN32_DEVICE_NAME );
+        Status = IoCreateSymbolicLink( &LinkName, &DeviceName );
 
         if ( !NT_SUCCESS( Status )) {
             IoDeleteDevice( EventDrvDeviceObject );

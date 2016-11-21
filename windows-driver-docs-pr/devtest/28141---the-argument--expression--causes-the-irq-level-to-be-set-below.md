@@ -32,14 +32,14 @@ A function call that lowers the IRQL at which a caller is executing is being use
 The following code example elicits this warning.
 
 ```
-KeRaiseIrql(DISPATCH_LEVEL, &amp;OldIrql);
-KeRaiseIrql(PASSIVE_LEVEL, &amp;OldIrql);
+KeRaiseIrql(DISPATCH_LEVEL, &OldIrql);
+KeRaiseIrql(PASSIVE_LEVEL, &OldIrql);
 ```
 
 The following code example avoids this warning.
 
 ```
-KeRaiseIrql(DISPATCH_LEVEL, &amp;OldIrql);
+KeRaiseIrql(DISPATCH_LEVEL, &OldIrql);
 KeLowerIrql(OldIrql);
 ```
 

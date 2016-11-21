@@ -97,7 +97,7 @@ AddReg = AddRegB
 </tr>
 <tr class="even">
 <td align="left"><p><span id="1221__Cannot_modify_services_regkey__must_use_HKR"></span><span id="1221__cannot_modify_services_regkey__must_use_hkr"></span><span id="1221__CANNOT_MODIFY_SERVICES_REGKEY__MUST_USE_HKR"></span><strong>1221: Cannot modify services regkey, must use HKR</strong></p></td>
-<td align="left"><p>This error indicates that the INF file references a location in the services registry key, for example <strong>HKLM\SYSTEM\CurrentControlSet\Services\<em>Service Name</em></strong>. When accessing the services key, you should instead use the relative root (<strong>HKR</strong>) to associate the registry value with the device or driver instance.</p>
+<td align="left"><p>This error indicates that the INF file references a location in the services registry key, for example <strong>HKLM\SYSTEM\CurrentControlSet\Services\\<em>Service Name</em></strong>. When accessing the services key, you should instead use the relative root (<strong>HKR</strong>) to associate the registry value with the device or driver instance.</p>
 <p>When you use <strong>HKR</strong>, the registry value will not be present until the device is installed.</p></td>
 </tr>
 <tr class="odd">

@@ -78,7 +78,7 @@ The routine listed in the "Routine Called" column is the most common routine tha
 </tr>
 <tr class="even">
 <td align="left"><p>[<strong>IoCreateDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548397)</p></td>
-<td align="left"><p>ASSERT((DriverObject-&gt;Flags &amp; DRVO_UNLOAD_INVOKED) == 0)</p></td>
+<td align="left"><p>ASSERT((DriverObject-&gt;Flags & DRVO_UNLOAD_INVOKED) == 0)</p></td>
 <td align="left"><p>A device object has been created, but the driver creating it is marked for unload.</p></td>
 </tr>
 <tr class="odd">
@@ -88,7 +88,7 @@ The routine listed in the "Routine Called" column is the most common routine tha
 </tr>
 <tr class="even">
 <td align="left"><p><strong>IoFreeIrp</strong></p></td>
-<td align="left"><p>ASSERT(IsListEmpty(&amp;(Irp)-&gt;ThreadListEntry))</p></td>
+<td align="left"><p>ASSERT(IsListEmpty(&(Irp)-&gt;ThreadListEntry))</p></td>
 <td align="left"><p>The IRP being freed is still on a thread's IRP list, and therefore still in use.</p></td>
 </tr>
 <tr class="odd">
@@ -103,7 +103,7 @@ The routine listed in the "Routine Called" column is the most common routine tha
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>IoReuseIrp</strong></p></td>
-<td align="left"><p>ASSERT(IsListEmpty(&amp;Irp-&gt;ThreadListEntry))</p></td>
+<td align="left"><p>ASSERT(IsListEmpty(&Irp-&gt;ThreadListEntry))</p></td>
 <td align="left"><p>The IRP being reused is still on a thread's IRP list, and therefore still in use.</p></td>
 </tr>
 <tr class="even">
@@ -148,17 +148,17 @@ The routine listed in the "Routine Called" column is the most common routine tha
 </tr>
 <tr class="even">
 <td align="left"><p><strong>MmProbeAndLockPages</strong></p></td>
-<td align="left"><p>ASSERT (((ULONG)MemoryDescriptorList-&gt;ByteOffset &amp; ~(PAGE_SIZE - 1)) == 0)</p></td>
+<td align="left"><p>ASSERT (((ULONG)MemoryDescriptorList-&gt;ByteOffset & ~(PAGE_SIZE - 1)) == 0)</p></td>
 <td align="left"><p>The offset into the first page in the MDL is &gt;= PAGE_SIZE; the MDL is incorrectly formed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>MmProbeAndLockPages</strong></p></td>
-<td align="left"><p>ASSERT (((ULONG_PTR)MemoryDescriptorList-&gt;StartVa &amp; (PAGE_SIZE - 1)) == 0)</p></td>
+<td align="left"><p>ASSERT (((ULONG_PTR)MemoryDescriptorList-&gt;StartVa & (PAGE_SIZE - 1)) == 0)</p></td>
 <td align="left"><p>The starting VA in the MDL is not page aligned; the MDL is incorrectly formed.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>MmProbeAndLockPages</strong></p></td>
-<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags &amp; ( MDL_PAGES_LOCKED | MDL_MAPPED_TO_SYSTEM_VA | MDL_SOURCE_IS_NONPAGED_POOL | MDL_PARTIAL | MDL_IO_SPACE)) == 0)</p></td>
+<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags & ( MDL_PAGES_LOCKED | MDL_MAPPED_TO_SYSTEM_VA | MDL_SOURCE_IS_NONPAGED_POOL | MDL_PARTIAL | MDL_IO_SPACE)) == 0)</p></td>
 <td align="left"><p>The MDL is not in proper state for this function call.</p></td>
 </tr>
 <tr class="odd">
@@ -173,17 +173,17 @@ The routine listed in the "Routine Called" column is the most common routine tha
 </tr>
 <tr class="odd">
 <td align="left"><p>[<strong>MmUnlockPages</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556381)</p></td>
-<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags &amp; MDL_PAGES_LOCKED) != 0)</p></td>
+<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags & MDL_PAGES_LOCKED) != 0)</p></td>
 <td align="left"><p>The pages that comprise the buffer described by this MDL have not been locked.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>MmUnlockPages</strong></p></td>
-<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags &amp; MDL_SOURCE_IS_NONPAGED_POOL) == 0)</p></td>
+<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags & MDL_SOURCE_IS_NONPAGED_POOL) == 0)</p></td>
 <td align="left"><p>The MDL describes a buffer from nonpaged pool.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>MmUnlockPages</strong></p></td>
-<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags &amp; MDL_PARTIAL) == 0)</p></td>
+<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags & MDL_PARTIAL) == 0)</p></td>
 <td align="left"><p>The MDL was built by calling <strong>IoBuildPartialMdl</strong>.</p></td>
 </tr>
 <tr class="even">
@@ -213,7 +213,7 @@ The routine listed in the "Routine Called" column is the most common routine tha
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>MmBuildMdlForNonPagedPool</strong></p></td>
-<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags &amp; (MDL_PAGES_LOCKED | MDL_MAPPED_TO_SYSTEM_VA | MDL_SOURCE_IS_NONPAGED_POOL | MDL_PARTIAL)) == 0)</p></td>
+<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags & (MDL_PAGES_LOCKED | MDL_MAPPED_TO_SYSTEM_VA | MDL_SOURCE_IS_NONPAGED_POOL | MDL_PARTIAL)) == 0)</p></td>
 <td align="left"><p>The MDL is not in a proper state for this function call</p></td>
 </tr>
 <tr class="even">
@@ -228,17 +228,17 @@ The routine listed in the "Routine Called" column is the most common routine tha
 </tr>
 <tr class="even">
 <td align="left"><p><strong>MmMapLockedPagesSpecifyCache</strong></p></td>
-<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags &amp; MDL_MAPPED_TO_SYSTEM_VA) == 0)</p></td>
+<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags & MDL_MAPPED_TO_SYSTEM_VA) == 0)</p></td>
 <td align="left"><p>The buffer described by this MDL is already mapped into kernel virtual address space.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>MmMapLockedPagesSpecifyCache</strong></p></td>
-<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags &amp; ( MDL_MAPPED_TO_SYSTEM_VA | MDL_SOURCE_IS_NONPAGED_POOL | MDL_PARTIAL_HAS_BEEN_MAPPED)) == 0)</p></td>
+<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags & ( MDL_MAPPED_TO_SYSTEM_VA | MDL_SOURCE_IS_NONPAGED_POOL | MDL_PARTIAL_HAS_BEEN_MAPPED)) == 0)</p></td>
 <td align="left"><p>The MDL is not in a proper state for this function call.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>MmMapLockedPagesSpecifyCache</strong></p></td>
-<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags &amp; ( MDL_PAGES_LOCKED | MDL_PARTIAL)) != 0)</p></td>
+<td align="left"><p>ASSERT ((MemoryDescriptorList-&gt;MdlFlags & ( MDL_PAGES_LOCKED | MDL_PARTIAL)) != 0)</p></td>
 <td align="left"><p>The MDL is not in a proper state for this operation.</p></td>
 </tr>
 <tr class="odd">
@@ -258,7 +258,7 @@ The routine listed in the "Routine Called" column is the most common routine tha
 </tr>
 <tr class="even">
 <td align="left"><p><strong>MmUnmapLockedPages</strong></p></td>
-<td align="left"><p>ASSERT (MemoryDescriptorList-&gt;MdlFlags &amp; MDL_MAPPED_TO_SYSTEM_VA)</p></td>
+<td align="left"><p>ASSERT (MemoryDescriptorList-&gt;MdlFlags & MDL_MAPPED_TO_SYSTEM_VA)</p></td>
 <td align="left"><p>The parameter passed to this function to specify the base address indicated an address in kernel virtual address space, but this does not agree with the buffer description in the MDL.</p></td>
 </tr>
 <tr class="odd">

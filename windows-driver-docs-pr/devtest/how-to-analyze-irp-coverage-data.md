@@ -41,7 +41,7 @@ Data source
  Device
    Friendly Name : Disk drive 
    Class Name    : DiskDrive 
-   Device ID     : IDE\DISKST9320421AS_____________________________SD13____\5&amp;37E07111&amp;0&amp;0.0.0 
+   Device ID     : IDE\DISKST9320421AS_____________________________SD13____\5&37E07111&0&0.0.0 
    Device #      : 1 
  Devnode #     : 9740
 ```
@@ -63,7 +63,7 @@ The IRP MJ and MN coverage data for devnode 9740 is shown in the following examp
 
 ```
 |--------------------------------------------------------|
-| MJ &amp; MN Device irp coverage                            |
+| MJ & MN Device irp coverage                            |
 |--------------------------------------------------------|
 | IRPS covered     19                      |  # of times |
 |--------------------------------------------------------|
@@ -190,7 +190,7 @@ The IRP pair coverage data for devnode 9740 is shown in the following example:
 
 ```
 |--------------------------------------------------------|
-| MJ &amp; MN Device IRP Concurrency pairs.                  |
+| MJ & MN Device IRP Concurrency pairs.                  |
 |--------------------------------------------------------|
 | IRP Pairs covered                     25 |  # of times |
 |--------------------------------------------------------|

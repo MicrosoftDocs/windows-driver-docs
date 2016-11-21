@@ -191,9 +191,9 @@ _In_ PUNICODE_STRING RegistryPath
 
     if (WppRecorderIsDefaultLogAvailable())
     {
-        RECORDER_CONFIGURE_PARAMS_INIT(&amp;recorderConfig);
+        RECORDER_CONFIGURE_PARAMS_INIT(&recorderConfig);
 
-        WppRecorderConfigure(&amp;recorderConfig);
+        WppRecorderConfigure(&recorderConfig);
 
         logHandle = WppRecorderLogGetDefault();
 
@@ -205,17 +205,17 @@ _In_ PUNICODE_STRING RegistryPath
     // Register a cleanup callback so that we can call WPP_CLEANUP when
     // the framework driver object is deleted during driver unload.
     //
-    WDF_OBJECT_ATTRIBUTES_INIT(&amp;attributes);
+    WDF_OBJECT_ATTRIBUTES_INIT(&attributes);
     attributes.EvtCleanupCallback = KMDFWPPEvtDriverContextCleanup;
 
-    WDF_DRIVER_CONFIG_INIT(&amp;config,
+    WDF_DRIVER_CONFIG_INIT(&config,
         KMDFWPPEvtDeviceAdd
         );
 
     status = WdfDriverCreate(DriverObject,
         RegistryPath,
-        &amp;attributes,
-        &amp;config,
+        &attributes,
+        &config,
         WDF_NO_HANDLE
         );
 
@@ -254,7 +254,7 @@ In another example, you have two devices, and one device sends more trace messag
 The system defines maximum and minimum buffer sizes in the registry. You can set these values appropriately to conserve memory and configure logging capabilities.
 
 ```
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\<serviceName>\Parameters
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\<serviceName>\Parameters
    WppRecorder_PerBufferMinBytes
    Data type
    REG_DWORD
@@ -311,17 +311,17 @@ _In_ PUNICODE_STRING RegistryPath
     // If a default log is available, then configure the size of the buffer.
     // Store the handle to the default log and use it to set the identifier name.
 
-    RECORDER_CONFIGURE_PARAMS_INIT(&amp;recorderConfig);
+    RECORDER_CONFIGURE_PARAMS_INIT(&recorderConfig);
 
     recorderConfig.CreateDefaultLog = FALSE;
 
-    RECORDER_LOG_CREATE_PARAMS_INIT(&amp;recorderCreate, NULL);
+    RECORDER_LOG_CREATE_PARAMS_INIT(&recorderCreate, NULL);
     recorderCreate.TotalBufferSize = MyDriverLogSize;
     RtlStringCbPrintfA(recorderCreate.LogIdentifier,
         RECORDER_LOG_IDENTIFIER_MAX_CHARS,
         "KMDFWpp_Log");
 
-    status = WppRecorderLogCreate(&amp;recorderCreate, &amp;logHandle);
+    status = WppRecorderLogCreate(&recorderCreate, &logHandle);
     if (!NT_SUCCESS(status))
     {
         TraceEvents(TRACE_LEVEL_ERROR, TRACE_DRIVER, "WppRecorderLogCreate failed %!STATUS!", status);
@@ -333,17 +333,17 @@ _In_ PUNICODE_STRING RegistryPath
     // Register a cleanup callback so that we can call WPP_CLEANUP when
     // the framework driver object is deleted during driver unload.
     //
-    WDF_OBJECT_ATTRIBUTES_INIT(&amp;attributes);
+    WDF_OBJECT_ATTRIBUTES_INIT(&attributes);
     attributes.EvtCleanupCallback = KMDFWPPEvtDriverContextCleanup;
 
-    WDF_DRIVER_CONFIG_INIT(&amp;config,
+    WDF_DRIVER_CONFIG_INIT(&config,
         KMDFWPPEvtDeviceAdd
         );
 
     status = WdfDriverCreate(DriverObject,
         RegistryPath,
-        &amp;attributes,
-        &amp;config,
+        &attributes,
+        &config,
         WDF_NO_HANDLE
         );
 

@@ -16,9 +16,9 @@ The code that handles a KMDF function call typically has the pattern shown in th
 // Create the device object.
 //
 status = WdfDeviceCreate(
-                         &amp;DeviceInit,
-                         &amp;attributes,
-                         &amp;device
+                         &DeviceInit,
+                         &attributes,
+                         &device
                          );
 if (!NT_SUCCESS(status)) {
  return status;

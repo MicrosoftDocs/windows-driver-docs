@@ -34,13 +34,13 @@ If the Code Analysis tool reports this error, consult the documentation of the f
 The following code example elicits this warning.
 
 ```
-....KeWaitForSingleObject(&amp;MyMutex, UserRequest, UserRequest, false, NULL);
+....KeWaitForSingleObject(&MyMutex, UserRequest, UserRequest, false, NULL);
 ```
 
 The following code example avoids this warning.
 
 ```
-....KeWaitForSingleObject(&amp;MyMutex, UserRequest, UserMode, false, NULL);
+....KeWaitForSingleObject(&MyMutex, UserRequest, UserMode, false, NULL);
 ```
 
  

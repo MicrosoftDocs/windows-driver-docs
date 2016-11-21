@@ -84,7 +84,7 @@ If DevCon cannot determine the status of the device, such as when the device is 
 The following example shows a successful status command. The text describing the device status appears in bold type.
 
 ```
-STORAGE\VOLUME\1&amp;30A96598&amp;0&amp;SIGNATURE80OFFSET7E0000LENGTH270987600
+STORAGE\VOLUME\1&30A96598&0&SIGNATURE80OFFSET7E0000LENGTH270987600
     Name: Generic volume
     Driver is running.
 1 matching device(s) found.
@@ -93,7 +93,7 @@ STORAGE\VOLUME\1&amp;30A96598&amp;0&amp;SIGNATURE80OFFSET7E0000LENGTH270987600
 In contrast, the following example shows how DevCon displays the status of a device that it cannot find. The status description is missing from the display.
 
 ```
-STORAGE\VOLUME\1&amp;30A96598&amp;0&amp;SIGNATURE80OFFSET7E0000LENGTH270987600
+STORAGE\VOLUME\1&30A96598&0&SIGNATURE80OFFSET7E0000LENGTH270987600
     Name: Generic volume
 1 matching device(s) found.
 ```
@@ -103,7 +103,7 @@ STORAGE\VOLUME\1&amp;30A96598&amp;0&amp;SIGNATURE80OFFSET7E0000LENGTH270987600
 ```
 devcon /m:\\Server01 status *
 devcon status pci*
-devcon status "PCI\VEN_115D&amp;DEV_0003&amp;SUBSYS_0181115D"
+devcon status "PCI\VEN_115D&DEV_0003&SUBSYS_0181115D"
 devcon status =printer
 ```
 

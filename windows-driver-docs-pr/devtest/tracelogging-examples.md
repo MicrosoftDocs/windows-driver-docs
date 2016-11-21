@@ -54,7 +54,7 @@ bool TraceLoggingSample::Setup()
     fails, TraceLoggingWrite and TraceLoggingUnregister will be no-ops.
     */
     ULONG RegisterResult = TraceLoggingRegisterByGuid(g_hProvider, 
-        &amp;s_TraceLoggingSampleProviderId);
+        &s_TraceLoggingSampleProviderId);
     
     VERIFY_WIN32_SUCCEEDED(RegisterResult, L"Failed to register TraceLogging");
 
@@ -188,8 +188,8 @@ void TraceLoggingSample::BasicDataTypes()
     SYSTEMTIME st;
     SID const sid1 = { SID_REVISION, 1, 5, { 6 } };
 
-    GetSystemTime(&amp;st);
-    GetSystemTimeAsFileTime(&amp;ft);
+    GetSystemTime(&st);
+    GetSystemTimeAsFileTime(&ft);
 
     TraceLoggingWrite(
         g_hProvider,
@@ -379,7 +379,7 @@ void TraceLoggingSample::Arrays()
 void TraceLoggingSample::Structs()
 {
     WIN32_FIND_DATA FindData;
-    HANDLE hFind = FindFirstFile(L".", &amp;FindData);
+    HANDLE hFind = FindFirstFile(L".", &FindData);
 
     VERIFY_IS_TRUE(hFind != INVALID_HANDLE_VALUE);
 
@@ -427,7 +427,7 @@ void TraceLoggingSample::Structs()
 void TraceLoggingSample::PartB()
 {
     SYSTEMTIME st;
-    GetSystemTime(&amp;st);
+    GetSystemTime(&st);
 
     TraceLoggingWrite(
         g_hProvider,

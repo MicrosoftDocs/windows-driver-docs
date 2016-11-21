@@ -150,16 +150,16 @@ NTSTATUS SystemControlIrpWorker(_In_ PIRP Irp)
 
     // <<Various lines of code not shown>>
     
-    KeAcquireSpinLock (&amp;AlphaLock, &amp;IrqlAlpha);
+    KeAcquireSpinLock (&AlphaLock, &IrqlAlpha);
     
     // <<Various lines of code not shown>>
     
-    KeAcquireSpinLock (&amp;BravoLock, &amp;IrqlBravo);
+    KeAcquireSpinLock (&BravoLock, &IrqlBravo);
     
     // <<Various lines of code not shown>>
     
-    KeReleaseSpinLock (&amp;BravoLock, IrqlBravo);
-    KeReleaseSpinLock (&amp;AlphaLock, IrqlAlpha);
+    KeReleaseSpinLock (&BravoLock, IrqlBravo);
+    KeReleaseSpinLock (&AlphaLock, IrqlAlpha);
     
     // <<Various lines of code not shown>>
 }
@@ -181,12 +181,12 @@ NTSTATUS DeviceControlIrpWorker(_In_ PIRP Irp,
         // Note that if bSomeCondition is FALSE, then AlphaLock is acquired here
         // If bSomeCondition is TRUE, it is not needed to be acquired right now
         //
-        KeAcquireSpinLock (&amp;AlphaLock, &amp;IrqlAlpha);
+        KeAcquireSpinLock (&AlphaLock, &IrqlAlpha);
     }
     
     // <<Various lines of code not shown>>
     
-    KeAcquireSpinLock (&amp;BravoLock, &amp;IrqlBravo);
+    KeAcquireSpinLock (&BravoLock, &IrqlBravo);
 
     // <<Various lines of code not shown>>
     
@@ -195,23 +195,23 @@ NTSTATUS DeviceControlIrpWorker(_In_ PIRP Irp,
         //
         // Need to acquire AlphaLock here for upcoming code logic
         //
-        KeAcquireSpinLock (&amp;AlphaLock, &amp;IrqlAlpha);
+        KeAcquireSpinLock (&AlphaLock, &IrqlAlpha);
 
         // <<Various lines of code not shown>>
         
-        KeReleaseSpinLock (&amp;AlphaLock, IrqlAlpha);
+        KeReleaseSpinLock (&AlphaLock, IrqlAlpha);
     }
     
     // <<Various lines of code not shown>>
     
-    KeReleaseSpinLock (&amp;BravoLock, IrqlBravo);
+    KeReleaseSpinLock (&BravoLock, IrqlBravo);
 
     if (bSomeCondition == FALSE)
     {
         //
         // Release the AlphaLock, which was acquired much earlier
         //
-        KeReleaseSpinLock (&amp;AlphaLock, IrqlAlpha);
+        KeReleaseSpinLock (&AlphaLock, IrqlAlpha);
     }
     
     // <<Various lines of code not shown>>

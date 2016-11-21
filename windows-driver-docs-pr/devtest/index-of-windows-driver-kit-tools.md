@@ -364,8 +364,8 @@ The information in the following tables describes the tools that are useful for 
 <tr class="odd">
 <td align="left"><p>Sensor Diagnostic Tool (sensordiagnostictool.exe)</p>
 <p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\</p>
-<p>%WindowsSdkDir%\tools\x86\</p></td>
+<td align="left"><p>%WindowsSdkDir%\tools\x64\\</p>
+<p>%WindowsSdkDir%\tools\x86\\</p></td>
 <td align="left"><p>Tests the driver, firmware, and hardware for sensor and location functionality. The tool invokes the sensor and location API to test data retrieval, event handling, report intervals, change sensitivity, property retrieval.</p>
 <p>WDK Documentation:</p>
 <p>[Testing sensor functionality with the Sensor Diagnostic Tool](https://msdn.microsoft.com/library/windows/hardware/hh780319)</p></td>
@@ -697,8 +697,8 @@ The information in the following tables describes the tools that are useful for 
 <tr class="odd">
 <td align="left"><p>WDF Tester</p>
 <p><strong>WDK tool:</strong> Yes</p></td>
-<td align="left"><p>%WindowsSdkDir%\tools\x64\</p>
-<p>%WindowsSdkDir%\tools\x86\</p></td>
+<td align="left"><p>%WindowsSdkDir%\tools\x64\\</p>
+<p>%WindowsSdkDir%\tools\x86\\</p></td>
 <td align="left"><p>A set of tools that can be used to test, verify, and debug WDF drivers. The toolset provides a WMI programming interface that can be used in a script or a compiled application.</p>
 <p>WDK Documentation:</p>
 <p>[WdfTester: WDF Driver Testing Toolset](wdftester--wdf-driver-testing-toolset.md)</p></td>
