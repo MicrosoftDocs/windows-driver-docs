@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Update
 description: Forcibly replaces the current device drivers for a specified device with drivers listed in the specified INF file. Valid only on the local computer.
 ms.assetid: c07d7abe-31d8-4a8d-87da-8db649710c15
@@ -55,9 +55,9 @@ devcon /r update c:\windows\inf\newdvc.inf *PNP030b
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 32: Update the driver for communication ports](devcon-examples.md#ddk-example-32-update-the-driver-for-communication-ports-tools)
+[Example 32: Update the driver for communication ports](devcon-examples.md#ddk_example_32_update_the_driver_for_communication_ports_tools)
 
-[Example 44: Forcibly update the HAL](devcon-examples.md#ddk-example-44-forcibly-update-the-hal-tools)
+[Example 44: Forcibly update the HAL](devcon-examples.md#ddk_example_44_forcibly_update_the_hal_tools)
 
  
 

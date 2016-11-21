@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon DriverNodes
 description: Lists all driver packages that are compatible with the device, along with their version and ranking. Valid only on the local computer.
 ms.assetid: 891aa022-44f5-4920-ab57-a0573deb94de
@@ -84,9 +84,9 @@ devcon drivernodes =usb pci* usb*
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 10: List driver packages by hardware ID pattern](devcon-examples.md#ddk-example-10-list-driver-packages-by-hardware-id-pattern-tools)
+[Example 10: List driver packages by hardware ID pattern](devcon-examples.md#ddk_example_10_list_driver_packages_by_hardware_id_pattern_tools)
 
-[Example 11: List driver packages by device instance ID pattern](devcon-examples.md#ddk-example-11-list-driver-packages-by-device-instance-id-pattern-tool)
+[Example 11: List driver packages by device instance ID pattern](devcon-examples.md#ddk_example_11_list_driver_packages_by_device_instance_id_pattern_tool)
 
  
 

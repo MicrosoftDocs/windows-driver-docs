@@ -1,4 +1,4 @@
----
+﻿---
 title: Static Driver Verifier commands (MSBuild)
 description: You can run Static Driver Verifier (SDV) in a Visual Studio Command Prompt window. Navigate to the directory where the driver's project file or the library's project file is stored. The parameters can appear in any order on the command line.
 ms.assetid: F0663631-AD7B-4BFE-8E07-7BB2FFC72911
@@ -31,7 +31,7 @@ You must select a Release configuration (for example, **/p:Configuration="Window
 <span id="_scan"></span><span id="_SCAN"></span>/**scan**  
 Scans the driver's source code for function role type declarations. For information about how to declare the driver supplied callback functions and dispatch routines, see [Using Function Role Type Declarations](using-function-role-type-declarations.md). During this scan, SDV tries to detect the driver entry points that it needs to verify the driver. It records the results of the scan in [Sdv-map.h](sdv-map-h.md), a file that it creates in the driver's project directory.
 
-For more information, see [Preparing your source code](using-static-driver-verifier-to-find-defects-in-drivers.md#preparing-your-source-code).
+For more information, see [Preparing your source code](using-static-driver-verifier-to-find-defects-in-drivers.md#preparing_your_source_code).
 
 <span id="________check_Rule____Rule_..._"></span><span id="________check_rule____rule_..._"></span><span id="________CHECK_RULE____RULE_..._"></span> **/check:***Rule* | \[*Rule*,...\]  
 Starts a verification with the specified rule(s). You can specify more than one rule by enclosing the list of rules in square brackets and separating each rule with a comma. Run the **/check:** command and specify the driver's Visual Studio project file (\*.vcxproj).

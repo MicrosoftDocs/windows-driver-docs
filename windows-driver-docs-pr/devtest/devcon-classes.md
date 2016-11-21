@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Classes
 description: Lists all device setup classes, including classes that devices on the system do not use. Valid on local and remote computers.
 ms.assetid: 05b9339c-30d1-45df-8f43-20a07e520a42
@@ -50,9 +50,9 @@ devcon /m:\\Server01 classes
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 4: List classes on the local computer](devcon-examples.md#ddk-example-4-list-classes-on-the-local-computer-tools)
+[Example 4: List classes on the local computer](devcon-examples.md#ddk_example_4_list_classes_on_the_local_computer_tools)
 
-[Example 5: List classes on the remote computer](devcon-examples.md#ddk-example-5-list-classes-on-the-remote-computer-tools)
+[Example 5: List classes on the remote computer](devcon-examples.md#ddk_example_5_list_classes_on_the_remote_computer_tools)
 
  
 

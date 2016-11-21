@@ -1,4 +1,4 @@
----
+﻿---
 title: Basic Trace Session Options
 description: Basic Trace Session Options
 ms.assetid: c997310f-79dc-4c94-945e-13a0a7786928
@@ -11,7 +11,7 @@ keywords: ["trace sessions WDK , basic options", "tracing WDK , basic options", 
 The following list describes the basic trace session options that you can change on the **Log Session Options** page.
 
 <span id="Real_Time_Display"></span><span id="real_time_display"></span><span id="REAL_TIME_DISPLAY"></span>**Real Time Display**  
-Creates a [real-time trace session](trace-session.md#ddk-real-time-trace-sessions-tools).This option is selected by default.
+Creates a [real-time trace session](trace-session.md#ddk_real_time_trace_sessions_tools).This option is selected by default.
 
 You must select **Log Trace Event Data To File,Real Time Display**, or both.
 
@@ -21,7 +21,7 @@ Specifies a name for the trace session. Select any name that meets the Windows n
 After a trace session is named, you can refer to the session by its name (for example, when you are using the [TraceView command-line interface](traceview-command-line-interface.md)).
 
 <span id="Log_Trace_Event_Data_To_File__"></span><span id="log_trace_event_data_to_file__"></span><span id="LOG_TRACE_EVENT_DATA_TO_FILE__"></span>**Log Trace Event Data To File**   
-Creates a [trace log session](trace-session.md#ddk-trace-log-sessions-tools).
+Creates a [trace log session](trace-session.md#ddk_trace_log_sessions_tools).
 
 You must select **Log Trace Event Data To File**, **Real Time Display**, or both.
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Stack
 description: Displays the expected driver stack for the specified devices, and the GUID and the name of the device setup class for each device. Valid on local and remote computers.
 ms.assetid: c06436d2-da66-4eb2-89ed-a1832967cdbb
@@ -92,11 +92,11 @@ devcon stack =multifunction
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 14: Display the driver stack for storage devices](devcon-examples.md#ddk-example-14-display-the-driver-stack-for-storage-devices-tools)
+[Example 14: Display the driver stack for storage devices](devcon-examples.md#ddk_example_14_display_the_driver_stack_for_storage_devices_tools)
 
-[Example 15: Find the setup class of a device](devcon-examples.md#ddk-example-15-find-the-setup-class-of-a-device-tools)
+[Example 15: Find the setup class of a device](devcon-examples.md#ddk_example_15_find_the_setup_class_of_a_device_tools)
 
-[Example 16: Display the stack for related devices on a remote computer](devcon-examples.md#ddk-example-16-display-the-stack-for-related-devices-on-a-remote-compu)
+[Example 16: Display the stack for related devices on a remote computer](devcon-examples.md#ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu)
 
  
 

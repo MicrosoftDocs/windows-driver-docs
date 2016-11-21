@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon UpdateNI
 description: Forcibly replaces the current device drivers with drivers listed in the specified INF file without prompting the user for information or confirmation. Valid only on the local computer.
 ms.assetid: 436a9731-1c61-4b38-b145-7012da55b699
@@ -55,7 +55,7 @@ devcon /r updateni c:\windows\inf\newdvc.inf *PNP030b
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 32: Update the driver for communication ports](devcon-examples.md#ddk-example-32-update-the-driver-for-communication-ports-tools)
+[Example 32: Update the driver for communication ports](devcon-examples.md#ddk_example_32_update_the_driver_for_communication_ports_tools)
 
  
 

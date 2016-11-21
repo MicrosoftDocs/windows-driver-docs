@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Reboot
 description: Stops and then starts the operating system. Valid only on the local computer.
 ms.assetid: 4e27c35c-8b98-4edc-98d7-8ba0f96d7a78
@@ -39,7 +39,7 @@ devcon reboot
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 39: Reboot the local computer](devcon-examples.md#ddk-example-39-reboot-the-local-computer-tools)
+[Example 39: Reboot the local computer](devcon-examples.md#ddk_example_39_reboot_the_local_computer_tools)
 
  
 

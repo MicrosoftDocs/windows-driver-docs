@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Resources
 description: Lists the resources allocated to the specified devices. Resources are assignable and addressable bus paths, such as DMA channels, I/O ports, IRQ, and memory addresses. Valid on local and remote computers.
 ms.assetid: 06bf2a5a-07a1-42b4-90db-ed74ce84d075
@@ -91,9 +91,9 @@ devcon resources =class @port*(by class and device instance ID)
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 12: List resources of a class of devices](devcon-examples.md#ddk-example-12-list-resources-of-a-class-of-devices-tools)
+[Example 12: List resources of a class of devices](devcon-examples.md#ddk_example_12_list_resources_of_a_class_of_devices_tools)
 
-[Example 13: List resources of device on a remote computer by ID](devcon-examples.md#ddk-example-13-list-resources-of-device-on-a-remote-computer-by-id-too)
+[Example 13: List resources of device on a remote computer by ID](devcon-examples.md#ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too)
 
  
 

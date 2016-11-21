@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Restart
 description: Stops and restarts the specified devices. Valid only on the local computer.
 ms.assetid: 3d16435d-e80d-408c-8e61-fad4a5aa7b9b
@@ -87,7 +87,7 @@ devcon restart =printer *desk*
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 38: Restart a device](devcon-examples.md#ddk-example-38-restart-a-device-tools)
+[Example 38: Restart a device](devcon-examples.md#ddk_example_38_restart_a_device_tools)
 
  
 

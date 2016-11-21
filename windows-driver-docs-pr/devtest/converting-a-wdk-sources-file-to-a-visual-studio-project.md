@@ -1,4 +1,4 @@
----
+﻿---
 title: Converting a WDK sources file to a Visual Studio project
 description: For most Windows 7 WDK projects that were built using Build.exe, you can use the Nmake2MsBuild utility, or the automatic conversion process within Visual Studio, to generate a project file (.VcxProj).
 ms.assetid: 6030317B-5068-40FD-8C9A-0B7A48C82B31
@@ -81,9 +81,9 @@ The NMake2MsBuild utility does not support conversion of custom targets or the c
 
 -   NMAKE inline files and macro substitutions are not supported.
 
-    NMAKE inline files: See [**Creating Inline File Text**](b8a332ed-8244-4ff8-89e6-029d7f659725)
+    NMAKE inline files: See **Creating Inline File Text**
 
-    Macro substitutions: See [**Macro Substitution**](47465cfe-fd92-49db-aebe-7c2d7ecceb73)
+    Macro substitutions: See **Macro Substitution**
 
     Because inline files and macro substitutions are not supported the following target won’t be converted correctly:
 
@@ -113,7 +113,7 @@ The NMake2MsBuild utility does not support conversion of custom targets or the c
 
 -   Both the target’s definition and NTTARGETFILES must match; they both should use $(OBJ\_NAME).obj or *Somename*.obj. $? And $&lt; tokens in Targets are always expanded for all dependents.
 
-    See [**Filename Macros**](20afd6b3-5b6c-4e33-9d01-309ce98ef9db) for more information.
+    See **Filename Macros** for more information.
 
 -   $? Expands to “All dependents with a later timestamp than the current target.” For converted projects the timestamp is ignored and this evaluates to all dependents. The same holds true for $&lt;
 

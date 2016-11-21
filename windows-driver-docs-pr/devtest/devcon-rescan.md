@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Rescan
 description: Uses Windows Plug and Play features to update the device list for the computer. Valid on local and remote computers.
 ms.assetid: 08762f30-a276-4ef4-8936-dfb1e1f692ca
@@ -52,7 +52,7 @@ devcon /m:\\Server01 rescan
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 37: Scan the computer for new devices](devcon-examples.md#ddk-example-37-scan-the-computer-for-new-devices-tools)
+[Example 37: Scan the computer for new devices](devcon-examples.md#ddk_example_37_scan_the_computer_for_new_devices_tools)
 
  
 

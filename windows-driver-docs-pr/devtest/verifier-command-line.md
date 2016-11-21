@@ -1,4 +1,4 @@
----
+﻿---
 title: Driver Verifier Command Syntax
 description: The following syntax is used when running the Verifier utility in a Command Prompt window.You can type several options on the same single line.
 ms.assetid: 7cdf5277-7187-4e90-b22a-6f828f06e2fb
@@ -393,7 +393,7 @@ Activates the specified options after the next reboot. In Windows 2000, this num
 <td align="left"><p>524288</p></td>
 <td align="left"><p>0x80000 (bit 19)</p></td>
 <td align="left"></td>
-<td align="left"><p>[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi-compliance-checking-additional) (Starting with Windows 8.1)</p></td>
+<td align="left"><p>[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi_compliance_checking_additional) (Starting with Windows 8.1)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2097152</p></td>

@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Status
 description: Displays the status (running, stopped, or disabled) of the driver for devices on the computer. Valid on local and remote computers.
 ms.assetid: 97da6df4-ad93-440a-9136-13f2b79cbe9c
@@ -109,11 +109,11 @@ devcon status =printer
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 17: Display the status of all devices on the local computer](devcon-examples.md#ddk-example-17-display-the-status-of-all-devices-on-the-local-computer)
+[Example 17: Display the status of all devices on the local computer](devcon-examples.md#ddk_example_17_display_the_status_of_all_devices_on_the_local_computer)
 
-[Example 18: Display the status of a device by device instance ID](devcon-examples.md#ddk-example-18-display-the-status-of-a-device-by-device-instance-id-to)
+[Example 18: Display the status of a device by device instance ID](devcon-examples.md#ddk_example_18_display_the_status_of_a_device_by_device_instance_id_to)
 
-[Example 19: Display the status of related devices on a remote computer](devcon-examples.md#ddk-example-19-display-the-status-of-related-devices-on-a-remote-compu)
+[Example 19: Display the status of related devices on a remote computer](devcon-examples.md#ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu)
 
  
 

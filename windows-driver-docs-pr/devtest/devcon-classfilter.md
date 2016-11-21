@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon ClassFilter
 description: Adds, deletes, displays, and changes the order of filter drivers for a device setup class. Valid only on the local computer.
 ms.assetid: c04200c7-2897-46bd-ac5f-f838efef79d9
@@ -78,15 +78,15 @@ devcon /r classfilter volume upper !volsnap =!volsnap2
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 23: Display the filter drivers for a setup class](devcon-examples.md#ddk-example-23-display-the-filter-drivers-for-a-setup-class-tools)
+[Example 23: Display the filter drivers for a setup class](devcon-examples.md#ddk_example_23_display_the_filter_drivers_for_a_setup_class_tools)
 
-[Example 24: Add a filter driver to a setup class](devcon-examples.md#ddk-example-24-add-a-filter-driver-to-a-setup-class-tools)
+[Example 24: Add a filter driver to a setup class](devcon-examples.md#ddk_example_24_add_a_filter_driver_to_a_setup_class_tools)
 
-[Example 25: Insert a filter driver in the class list](devcon-examples.md#ddk-example-25-insert-a-filter-driver-in-the-class-list-tools)
+[Example 25: Insert a filter driver in the class list](devcon-examples.md#ddk_example_25_insert_a_filter_driver_in_the_class_list_tools)
 
-[Example 26: Replace a filter driver](devcon-examples.md#ddk-example-26-replace-a-filter-driver-tools)
+[Example 26: Replace a filter driver](devcon-examples.md#ddk_example_26_replace_a_filter_driver_tools)
 
-[Example 27: Change the order of filter drivers](devcon-examples.md#ddk-example-27-change-the-order-of-filter-drivers-tools)
+[Example 27: Change the order of filter drivers](devcon-examples.md#ddk_example_27_change_the_order_of_filter_drivers_tools)
 
  
 

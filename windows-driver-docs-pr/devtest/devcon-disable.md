@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Disable
 description: Disables devices on the computer.
 ms.assetid: 544b219c-30dd-41d1-ac47-9760c772b07e
@@ -91,9 +91,9 @@ devcon /r disable =printer
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 30: Disable devices by an ID pattern](devcon-examples.md#ddk-example-30-disable-devices-by-an-id-pattern-tools)
+[Example 30: Disable devices by an ID pattern](devcon-examples.md#ddk_example_30_disable_devices_by_an_id_pattern_tools)
 
-[Example 31: Disable devices by device instance ID](devcon-examples.md#ddk-example-31-disable-devices-by-device-instance-id-tools)
+[Example 31: Disable devices by device instance ID](devcon-examples.md#ddk_example_31_disable_devices_by_device_instance_id_tools)
 
  
 

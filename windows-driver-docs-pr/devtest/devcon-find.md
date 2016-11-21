@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Find
 description: Finds all devices that are currently attached to the computer. Displays the device instance ID and device description. Valid on local and remote computers.
 ms.assetid: ecd72b34-4117-4360-95d2-e87702f025a1
@@ -96,9 +96,9 @@ devcon find @*hub*
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 20: Find devices by hardware ID pattern](devcon-examples.md#ddk-example-20-find-devices-by-hardware-id-pattern-tools)
+[Example 20: Find devices by hardware ID pattern](devcon-examples.md#ddk_example_20_find_devices_by_hardware_id_pattern_tools)
 
-[Example 21: Find devices by device instance ID or class](devcon-examples.md#ddk-example-21-find-devices-by-device-instance-id-or-class-tools)
+[Example 21: Find devices by device instance ID or class](devcon-examples.md#ddk_example_21_find_devices_by_device_instance_id_or_class_tools)
 
  
 

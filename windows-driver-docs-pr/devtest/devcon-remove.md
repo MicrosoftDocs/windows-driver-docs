@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Remove
 description: Removes the device from the device tree and deletes the device stack for the device.
 ms.assetid: 02236d0d-4628-4b5b-9a15-331905f07358
@@ -89,9 +89,9 @@ devcon /r remove =printer *deskj*
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 35: Remove devices by device instance ID pattern](devcon-examples.md#ddk-example-35-remove-devices-by-device-instance-id-pattern-tools)
+[Example 35: Remove devices by device instance ID pattern](devcon-examples.md#ddk_example_35_remove_devices_by_device_instance_id_pattern_tools)
 
-[Example 36: Remove a particular network device](devcon-examples.md#ddk-example-36-remove-a-particular-network-device-tools)
+[Example 36: Remove a particular network device](devcon-examples.md#ddk_example_36_remove_a_particular_network_device_tools)
 
  
 

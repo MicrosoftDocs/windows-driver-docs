@@ -1,4 +1,4 @@
-# [Driver Development Tools](driver-development-tools.md)
+# [Driver Development Tools](index.md)
 ## [Index of Windows Driver Kit Tools](index-of-windows-driver-kit-tools.md)
 ## [Tools for INF Files](tools-for-inf-files.md)
 ### [ChkINF](chkinf.md)

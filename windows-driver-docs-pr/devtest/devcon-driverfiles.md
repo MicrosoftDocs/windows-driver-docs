@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon DriverFiles
 description: Displays the full path and file name of installed INF files and device driver files for the specified devices. Valid only on the local computer.
 ms.assetid: 8f8394e4-1ee4-4356-9f4d-ecc70deeaab1
@@ -83,9 +83,9 @@ devcon driverfiles =media isapnp*
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 8: List all driver files](devcon-examples.md#ddk-example-8-list-all-driver-files-tools)
+[Example 8: List all driver files](devcon-examples.md#ddk_example_8_list_all_driver_files_tools)
 
-[Example 9: List the driver files of a particular device](devcon-examples.md#ddk-example-9-list-the-driver-files-of-a-particular-device-tools)
+[Example 9: List the driver files of a particular device](devcon-examples.md#ddk_example_9_list_the_driver_files_of_a_particular_device_tools)
 
  
 

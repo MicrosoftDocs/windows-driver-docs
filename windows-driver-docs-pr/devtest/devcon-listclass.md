@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon ListClass
 description: Lists all devices in the specified device setup classes. Valid on local and remote computers.
 ms.assetid: b642ca5e-5ef1-499f-b8c5-96583a4bd411
@@ -52,9 +52,9 @@ devcon /m:\\Server01 listclass SmartCardReader
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 6: List the devices in a device setup class](devcon-examples.md#ddk-example-6-list-the-devices-in-a-device-setup-class-tools)
+[Example 6: List the devices in a device setup class](devcon-examples.md#ddk_example_6_list_the_devices_in_a_device_setup_class_tools)
 
-[Example 7: List the devices in multiple classes on a remote computer](devcon-examples.md#ddk-example-7-list-the-devices-in-multiple-classes-on-a-remote-compute)
+[Example 7: List the devices in multiple classes on a remote computer](devcon-examples.md#ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute)
 
  
 

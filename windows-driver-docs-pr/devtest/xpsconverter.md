@@ -1,4 +1,4 @@
----
+﻿---
 title: XpsConverter
 description: XPS Converter (XpsConverter.exe) is a command-line tool for converting XML Paper Specification (XPS) documents from Microsoft XPS (MSXPS) to standardized OpenXPS, and from OpenXPS to Microsoft XPS (MSXPS).
 ms.assetid: A51F818E-AECD-4EBD-99AC-F3BD026C19D6
@@ -109,7 +109,7 @@ The XpsConverter is not intended to be used in any other capacity than as a stan
 ## <span id="Remarks"></span><span id="remarks"></span><span id="REMARKS"></span>Remarks
 
 
-You can use the [**isXPS.exe (isXPS Conformance Tool)**](bfbb433f-7ab6-417a-90f0-71443d76bcb3) to tests a file's conformity to the XPS and the Open Packaging Conventions (OPC) specifications.
+You can use the **isXPS.exe (isXPS Conformance Tool)** to tests a file's conformity to the XPS and the Open Packaging Conventions (OPC) specifications.
 
 ## <span id="Examples"></span><span id="examples"></span><span id="EXAMPLES"></span>Examples
 
@@ -123,7 +123,7 @@ XpsConverter /OpenXPS /InputFile=MyDoc.xps /OutputFile=ConvertedMyDoc.oxps –lo
 ## <span id="related_topics"></span>Related topics
 
 
-[**isXPS.exe (isXPS Conformance Tool)**](bfbb433f-7ab6-417a-90f0-71443d76bcb3)
+**isXPS.exe (isXPS Conformance Tool)**
 
  
 

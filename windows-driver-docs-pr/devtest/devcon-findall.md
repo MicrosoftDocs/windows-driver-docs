@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon FindAll
 description: Finds all devices on the computer, including devices that were once attached to the computer but have been detached or moved.
 ms.assetid: 63148bb4-dc54-4b82-9e8f-d6967ad86d74
@@ -91,7 +91,7 @@ devcon resources @pci*
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 22: Find (and find all) devices in a setup class](devcon-examples.md#ddk-example-22-find-and-find-all-devices-in-a-setup-class-tools)
+[Example 22: Find (and find all) devices in a setup class](devcon-examples.md#ddk_example_22_find_and_find_all_devices_in_a_setup_class_tools)
 
  
 

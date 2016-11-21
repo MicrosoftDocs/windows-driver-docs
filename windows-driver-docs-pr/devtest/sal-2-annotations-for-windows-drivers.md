@@ -1,4 +1,4 @@
----
+﻿---
 title: SAL 2.0 Annotations for Windows Drivers
 description: The Microsoft Source Code Annotation Language (SAL) includes annotations that are specific to the analysis of Windows drivers and the related kernel code.
 ms.assetid: 2CD181B8-4E1D-457A-9FF9-DAB3AB932730
@@ -72,8 +72,8 @@ The Microsoft Source Code Annotation Language (SAL) includes annotations that ar
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>_Dispatch_type_</strong></p></td>
-<td align="left">[Annotations for Driver Dispatch Routines](declaring-functions-using-function-role-types-for-wdm-drivers.md#annotating-driver-dispatch-routines).</td>
-<td align="left"><p>Use the _Dispatch_type_ annotation used when you declare WDM driver dispatch routines. See [Declaring Functions Using Function Role Types for WDM Drivers](declaring-functions-using-function-role-types-for-wdm-drivers.md) and [Annotating Driver Dispatch Routines](declaring-functions-using-function-role-types-for-wdm-drivers.md#annotating-driver-dispatch-routines)</p></td>
+<td align="left">[Annotations for Driver Dispatch Routines](declaring-functions-using-function-role-types-for-wdm-drivers.md#annotating_driver_dispatch_routines).</td>
+<td align="left"><p>Use the _Dispatch_type_ annotation used when you declare WDM driver dispatch routines. See [Declaring Functions Using Function Role Types for WDM Drivers](declaring-functions-using-function-role-types-for-wdm-drivers.md) and [Annotating Driver Dispatch Routines](declaring-functions-using-function-role-types-for-wdm-drivers.md#annotating_driver_dispatch_routines)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>_Flt_CompletionContext_Outptr_</strong></p></td>

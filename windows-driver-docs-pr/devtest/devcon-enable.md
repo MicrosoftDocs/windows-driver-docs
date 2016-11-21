@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Enable
 description: Enables devices on the computer. Valid only on the local computer.To enable a device means that the device driver is loaded into memory and the device is ready for use.
 ms.assetid: 2fb2cb9b-ba37-4946-b78b-0cd2aaaadcb4
@@ -89,9 +89,9 @@ devcon /r enable =printer
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 28: Enable a particular device](devcon-examples.md#ddk-example-28-enable-a-particular-device-tools)
+[Example 28: Enable a particular device](devcon-examples.md#ddk_example_28_enable_a_particular_device_tools)
 
-[Example 29: Enable devices by class](devcon-examples.md#ddk-example-29-enable-devices-by-class-tools)
+[Example 29: Enable devices by class](devcon-examples.md#ddk_example_29_enable_devices_by_class_tools)
 
  
 

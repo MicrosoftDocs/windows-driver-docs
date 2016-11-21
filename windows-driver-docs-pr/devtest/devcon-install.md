@@ -1,4 +1,4 @@
----
+﻿---
 title: DevCon Install
 description: Creates a new, root-enumerated devnode for a non-Plug and Play device and installs its supporting software. Valid only on the local computer.
 ms.assetid: d31007dd-6f20-460d-8561-d1639c69aa09
@@ -57,9 +57,9 @@ devcon /r install c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 33: Install a device](devcon-examples.md#ddk-example-33-install-a-device-tools)
+[Example 33: Install a device](devcon-examples.md#ddk_example_33_install_a_device_tools)
 
-[Example 34: Install a device using unattended setup](devcon-examples.md#ddk-example-34-install-a-device-using-unattended-setup-tools)
+[Example 34: Install a device using unattended setup](devcon-examples.md#ddk_example_34_install_a_device_using_unattended_setup_tools)
 
 ## <span id="see_also"></span>See also
 
