@@ -23,6 +23,9 @@ Windows does this by detecting when the underlying modem device exits the D3 col
 
 If a cellular modem device does not support D3 cold, Windows does not automatically unlock the modem’s SIM PIN.  Instead, the user must manually enter the PIN to restore the mobile broadband connection.
 
-For information on how to enable D3 cold in your USB modem device, please see [Supporting D3Cold for USB Devices](https://blogs.msdn.microsoft.com/usbcoreblog/2013/02/18/supporting-d3cold-for-usb-devices).
+For information on how to enable D3 cold in your USB modem device, please see:
+
+* [Supporting D3Cold for USB Devices](https://blogs.msdn.microsoft.com/usbcoreblog/2013/02/18/supporting-d3cold-for-usb-devices).
+* [Supporting D3cold in a Driver](https://msdn.microsoft.com/library/windows/hardware/hh967717)
 
 For additional information about PIN operations, see [OID\_WWAN\_PIN](https://msdn.microsoft.com/library/windows/hardware/ff569828).
