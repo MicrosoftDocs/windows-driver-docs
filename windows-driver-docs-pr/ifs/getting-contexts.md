@@ -20,7 +20,7 @@ In the following code example, taken from the SwapBuffers sample minifilter driv
 status = FltGetVolumeContext(
  FltObjects->Filter,    //Filter
  FltObjects->Volume,    //Volume
-                &amp;volCtx);              //Context
+                &volCtx);              //Context
 ...
 if (volCtx != NULL) {
  FltReleaseContext(volCtx);

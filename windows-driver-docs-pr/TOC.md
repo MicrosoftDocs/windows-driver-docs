@@ -9,6 +9,7 @@
 ## [ACPI](acpi/index.md)
 ## [Battery Drivers](battery/index.md)
 ## [Biometric Drivers](biometric/index.md)
+## [Driver Development Tools](devtest/index.md)
 ## [HID Drivers](hid/index.md)
 ## [IEEE Drivers](ieee/index.md)
 ## [Imaging device drivers](image/index.md)
@@ -30,4 +31,3 @@
 ## [Windows Device Testing Framework (WDTF)](wdtf/index.md)
 ## [Windows driver samples](samples/index.md)
 ## [Windows Hardware Error Architecture (WHEA)](whea/index.md)
-## [Windows Touch drivers](touch/index.md)

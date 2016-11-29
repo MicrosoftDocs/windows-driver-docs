@@ -183,7 +183,7 @@ CWSDDevice::UnInitializeChallengeInterface()
 {
     HRESULT hr = S_OK;
 
-    if ((m_hChallengeDll) &amp;&amp; (m_pfnShutdownChallenge))
+    if ((m_hChallengeDll) && (m_pfnShutdownChallenge))
     {
         hr = (*m_pfnShutdownChallenge)();
         if (FAILED(hr))

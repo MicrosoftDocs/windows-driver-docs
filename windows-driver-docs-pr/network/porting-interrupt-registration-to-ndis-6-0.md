@@ -29,7 +29,7 @@ The following code example shows how a miniport driver can initialize this struc
 
 ```
         NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS Interrupt;
-        RtlZeroMemory(&amp;Interrupt, sizeof(Interrupt));
+        RtlZeroMemory(&Interrupt, sizeof(Interrupt));
 
         Interrupt.Header.Type = NDIS_OBJECT_TYPE_MINIPORT_INTERRUPT;
         Interrupt.Header.Revision = NDIS_MINIPORT_INTERRUPT_REVISION_1;
@@ -42,8 +42,8 @@ The following code example shows how a miniport driver can initialize this struc
         
         Status = NdisMRegisterInterruptEx(Adapter->AdapterHandle,
                                           Adapter,
-                                          &amp;Interrupt,
-                                          &amp;Adapter->NdisInterruptHandle );
+                                          &Interrupt,
+                                          &Adapter->NdisInterruptHandle );
 ```
 
 The miniport driver passes a handle to [**NdisMRegisterInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff563649) in the **MiniportInterruptContext** member of the [**NDIS\_MINIPORT\_INTERRUPT\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566465) structure. NDIS passes this handle to the driver's interrupt-related functions.

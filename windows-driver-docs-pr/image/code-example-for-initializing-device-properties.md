@@ -36,7 +36,7 @@ BSTR bstrPropertyValue = NULL;
 //
 if (SUCCEEDED(hr))
 {
-    hr = OpenPropertyStore(&amp;pPropertyStore);
+    hr = OpenPropertyStore(&pPropertyStore);
     if (FAILED(hr))
     {
         WIAS_ERROR((g_hInst, "Failed to open the Property Store for the current Function Instance, hr = 0x%08X", hr));
@@ -48,13 +48,13 @@ if (SUCCEEDED(hr))
 //
 if (SUCCEEDED(hr))
 {
-    hr = ReadDeviceProperty(pPropertyStore, &amp;PKEY_PNPX_ServiceId, &amp;bstrPropertyValue);
+    hr = ReadDeviceProperty(pPropertyStore, &PKEY_PNPX_ServiceId, &bstrPropertyValue);
     if (FAILED(hr))
     {
         WIAS_ERROR((g_hInst, "Failed to read the PKEY_PNPX_ServiceId device property, hr = 0x%08X", hr));
     }
 
-    if ((SUCCEEDED(hr)) &amp;&amp; (bstrPropertyValue)) 
+    if ((SUCCEEDED(hr)) && (bstrPropertyValue)) 
     {
         WIAS_TRACE((g_hInst, "Service id: %ws", (LPWSTR)bstrPropertyValue));
  

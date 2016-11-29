@@ -41,7 +41,7 @@ HRESULT
 
     ...
 
-    hr = pWdfDevice->RetrieveContext((void**)&amp;DeviceExtension);
+    hr = pWdfDevice->RetrieveContext((void**)&DeviceExtension);
     ResourceCount = pWdfResourcesTranslated->GetCount();
     for (Index = 0; Index < ResourceCount; Index += 1) {
         Descriptor = pWdfResourcesTranslated->GetDescriptor(Index);
@@ -57,7 +57,7 @@ HRESULT
             // Check against expected connection type.
             //
 
-            if ((Descriptor->u.Connection.Class == CM_RESOURCE_CONNECTION_CLASS_GPIO) &amp;&amp;
+            if ((Descriptor->u.Connection.Class == CM_RESOURCE_CONNECTION_CLASS_GPIO) &&
                 (Descriptor->u.Connection.Type == CM_RESOURCE_CONNECTION_TYPE_GPIO_IO)) {
 
                 DeviceExtension->ConnectionId.LowPart = Descriptor->u.Connection.IdLowPart;
@@ -81,14 +81,14 @@ HRESULT IoRoutine(IWDFDevice3 *pWdfDevice, BOOLEAN ReadOperation)
     BOOL DesiredAccess;
     HRESULT hr;
 
-    hr = pWdfDevice->RetrieveContext((void**)&amp;DeviceExtension);
+    hr = pWdfDevice->RetrieveContext((void**)&DeviceExtension);
 
     // Create the device path using the well-known resource hub
     // path name and the connection ID.
     //
     // TODO: Replace this hardcoded string with the appropriate
     //       helper method from Reshub.h when available.
-    hr = StringCbPrintfW(&amp;ReadStringBuffer[0],
+    hr = StringCbPrintfW(&ReadStringBuffer[0],
                          sizeof(ReadStringBuffer),
                          L"\\\\.\\RESOURCE_HUB\\%0*I64x",
                          (size_t)(sizeof(LARGE_INTEGER) * 2),
@@ -99,7 +99,7 @@ HRESULT IoRoutine(IWDFDevice3 *pWdfDevice, BOOLEAN ReadOperation)
      
     hr = pWdfDevice->CreateRemoteTarget(NULL,
                                        pWdfDevice,
-                                       &amp;pWdfTarget);
+                                       &pWdfTarget);
     if (FAILED(hr)) {
         goto IoErrorEnd;
     }   
@@ -115,9 +115,9 @@ HRESULT IoRoutine(IWDFDevice3 *pWdfDevice, BOOLEAN ReadOperation)
     openParams.dwShareMode = 0;
     openParams.dwCreationDisposition = OPEN_EXISTING;
     openParams.dwFlagsAndAttributes = FILE_FLAG_OVERLAPPED;
-    hr = pWdfTarget->OpenFileByName(&amp;ReadStringBuffer[0],
+    hr = pWdfTarget->OpenFileByName(&ReadStringBuffer[0],
                                     DesiredAccess,
-                                    &amp;openParams);
+                                    &openParams);
     if (FAILED(hr)) {
         goto IoErrorEnd;
     }
@@ -143,7 +143,7 @@ IWDFRequestCompletionParams *pWdfParams = NULL;
 
 hr = pWdfDevice->CreateRequest(NULL, 
                                NULL, 
-                               &amp;pWdfIoRequest);
+                               &pWdfIoRequest);
 if (FAILED(hr)) {
     goto RwErrorExit;
 }
@@ -156,7 +156,7 @@ hr = pWdfDriver->CreatePreallocatedWdfMemory(Data,
                                              Size, 
                                              NULL,
                                              pWdfIoRequest,
-                                             &amp;pWdfMemory);
+                                             &pWdfMemory);
 if (FAILED(hr)) {
     goto RwErrorExit;
 }
@@ -199,7 +199,7 @@ if (FAILED(hr)) {
     goto RwErrorExit;
 }
 
-pWdfIoRequest->GetCompletionParams(&amp;pWdfParams);
+pWdfIoRequest->GetCompletionParams(&pWdfParams);
 hr = pWdfParams->GetCompletionStatus();
 
 SAFE_RELEASE(pWdfParams);

@@ -22,7 +22,7 @@ You can use WDF debugger extensions to view and save the WDF log during interact
 2.  Load the [Wdfkd.dll extension library](debugger-extensions-for-kmdf-drivers.md) into your debugger. If you are using the kernel debugger, you can do this by using the [**.load**](https://msdn.microsoft.com/library/windows/hardware/ff563964) command. To load the correct version of Wdfkd.dll you need to specify the fully qualified path to the DLL. For example, you would use the following path on an x86-based debugger host machine:
 
     ```
-    .load c:\WinDDK\\<version>\bin\x86\wdfkd.dll
+    .load "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext\wdfkd.dll"
     ```
 
     You can then confirm that the extension is loaded by using the [**!chain**](https://msdn.microsoft.com/library/windows/hardware/ff562212) command to display all loaded extensions.

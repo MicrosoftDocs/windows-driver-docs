@@ -55,7 +55,7 @@ Result =
     ClassName,
     0,
     NULL,
-    &amp;pClass,
+    &pClass,
     NULL
     );
 
@@ -64,7 +64,7 @@ Result =
   pClass->GetMethod(
     MethodName,
     0,
-    &amp;pInParametersClass,
+    &pInParametersClass,
     NULL
     );
 
@@ -72,7 +72,7 @@ Result =
 Result =
   pInParametersClass->SpawnInstance(
     0,
-    &amp;pInParameters
+    &pInParameters
     );
 
 // Set the ErrorSourceId parameter
@@ -82,10 +82,10 @@ Result =
   pInParameters->Put(
     L"ErrorSourceId",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Call the GetErrorSourceInfoRtn method indirectly
 // by calling the IWbemServices::ExecMethod method.
@@ -95,8 +95,8 @@ Result =
     MethodName,
     0,
     NULL,
-    &amp;pInParameters,
-    &amp;pOutParameters,
+    &pInParameters,
+    &pOutParameters,
     NULL
     );
 
@@ -105,31 +105,31 @@ Result =
   pOutParameters->Get(
     L"Status",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
 Status = Parameter.ulval;
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Get the length from the output parameters object
 Result =
   pOutParameters->Get(
     L"Length",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
 Length = Parameter.ulval;
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Get the data buffer from the output parameters object
 Result =
   pOutParameters->Get(
     L"ErrorSourceInfo",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
@@ -139,7 +139,7 @@ Array = Parameter.parray;
 Result =
   SafeArrayAccessData(
     Array,
-    &amp;ErrorSourceInfo
+    &ErrorSourceInfo
     );
 
 // Process the error source information.
@@ -154,7 +154,7 @@ Result =
 
 // Free the array containing the error source information
 SafeArrayUnaccessData(Array);
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Free up resources
 SysFreeString(ClassName);

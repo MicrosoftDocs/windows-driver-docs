@@ -49,7 +49,7 @@ Before the host stack sends an IP datagram on an offloaded connection, it checks
 Before an offload target sends an IP datagram on an offloaded connection, it performs the following test:
 
 ```
-If ((NCT - NRT) > NCEStaleTicks &amp; (NCT - HRT) > NCEStaleTicks) 
+If ((NCT - NRT) > NCEStaleTicks & (NCT - HRT) > NCEStaleTicks) 
 ```
 
 Note that the host stack supplies the NceStaleTicks value when setting [OID\_TCP\_TASK\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569815).

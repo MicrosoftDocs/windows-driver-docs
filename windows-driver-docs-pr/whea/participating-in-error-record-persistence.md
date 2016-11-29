@@ -38,7 +38,7 @@ NTSTATUS
     )
 {
   // Check if dummy write operation
-  if (Flags &amp; WHEA_WRITE_FLAG_DUMMY)
+  if (Flags & WHEA_WRITE_FLAG_DUMMY)
   {
     return STATUS_SUCCESS;
   }

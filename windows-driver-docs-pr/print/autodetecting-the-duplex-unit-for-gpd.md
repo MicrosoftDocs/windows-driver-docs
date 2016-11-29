@@ -28,7 +28,7 @@ Suppose that your GPD file has a Duplex feature that is defined like the followi
     *Command: CmdSelect
     {
       *Order: DOC_SETUP.9
-      *Cmd: "<1B>&amp;l0S"
+      *Cmd: "<1B>&l0S"
     }
   }
   *Option: VERTICAL
@@ -37,7 +37,7 @@ Suppose that your GPD file has a Duplex feature that is defined like the followi
     *Command: CmdSelect
     {
       *Order: DOC_SETUP.10
-      *Cmd: "<1B>&amp;l1S"
+      *Cmd: "<1B>&l1S"
     }
   }
   *Option: HORIZONTAL
@@ -46,7 +46,7 @@ Suppose that your GPD file has a Duplex feature that is defined like the followi
     *Command: CmdSelect
     {
       *Order: DOC_SETUP.10
-      *Cmd: "<1B>&amp;l2S"
+      *Cmd: "<1B>&l2S"
     }
   }
 }

@@ -21,7 +21,7 @@ StatusIndication.Header.Revision = NDIS_STATUS_INDICATION_REVISION_1;
 StatusIndication.Header.Size = sizeof(NDIS_STATUS_INDICATION);
 StatusIndication.SourceHandle = Adapter->AdapterHandle;
 StatusIndication.StatusCode = NDIS_STATUS_LINK_STATE;
-StatusIndication.StatusBuffer = (PVOID)&amp;LinkState;
+StatusIndication.StatusBuffer = (PVOID)&LinkState;
 StatusIndication.StatusBufferSize = sizeof(LinkState);
 ```
 

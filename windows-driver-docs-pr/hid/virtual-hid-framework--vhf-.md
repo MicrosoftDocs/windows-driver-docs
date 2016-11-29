@@ -160,21 +160,21 @@ _Inout_ PWDFDEVICE_INIT DeviceInit
 
     PAGED_CODE();
 
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;deviceAttributes, DEVICE_CONTEXT);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&deviceAttributes, DEVICE_CONTEXT);
     deviceAttributes.EvtCleanupCallback = VhfSourceDeviceCleanup;
 
-    status = WdfDeviceCreate(&amp;DeviceInit, &amp;deviceAttributes, &amp;device);
+    status = WdfDeviceCreate(&DeviceInit, &deviceAttributes, &device);
 
     if (NT_SUCCESS(status)) 
     {
         deviceContext = DeviceGetContext(device);
 
-        VHF_CONFIG_INIT(&amp;vhfConfig,
+        VHF_CONFIG_INIT(&vhfConfig,
             WdfDeviceWdmGetDeviceObject(device),
             sizeof(VhfHeadSetReportDescriptor),
             VhfHeadSetReportDescriptor);
 
-        status = VhfCreate(&amp;vhfConfig, &amp;deviceContext->VhfHandle);
+        status = VhfCreate(&vhfConfig, &deviceContext->VhfHandle);
 
         if (!NT_SUCCESS(status)) {
             TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, "VhfCreate failed %!STATUS!", status);
@@ -213,12 +213,12 @@ The HID source driver can submit input reports by implementing the buffering pol
         PDEVICE_CONTEXT deviceContext = (PDEVICE_CONTEXT)(Context);
 
         if (ButtonState == ButtonStateUp) {
-            deviceContext->VhfHidReport.ReportBuffer[0] &amp;= ~(0x01 << ButtonType);
+            deviceContext->VhfHidReport.ReportBuffer[0] &= ~(0x01 << ButtonType);
         } else {
             deviceContext->VhfHidReport.ReportBuffer[0] |=  (0x01 << ButtonType);
         }
 
-        status = VhfSubmitReadReport(deviceContext->VhfHandle, &amp;deviceContext->VhfHidReport);
+        status = VhfSubmitReadReport(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
 
         if (!NT_SUCCESS(status)) {
             TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfSubmitReadReport failed %!STATUS!", status);

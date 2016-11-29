@@ -18,7 +18,7 @@ After you [configure Windows to rank driver signatures equally](configuring-wind
 2.  Use the DevCon Remove command to remove the device or device class that is installed by the updated driver package. The device or device class is specified through all or part of a [hardware ID](hardware-ids.md), [compatible ID](compatible-ids.md), or device instance ID of a device. For example:
 
     ```
-    devcon remove "PCI\VEN_8086&amp;DEV_7110"
+    devcon remove "PCI\VEN_8086&DEV_7110"
     ```
 
     The new driver is automatically loaded when the device is reinstalled after the system is restarted. To have DevCon automatically restart the system, add the conditional reboot parameter (**/r**) to the remove command.

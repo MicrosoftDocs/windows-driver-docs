@@ -49,7 +49,7 @@ PCNODE_DESCRIPTOR MiniportNodes[] =
     {
         0,                          // Flags
         NULL,                       // AutomationTable
-        &amp;KSNODETYPE_AUDIO_ENGINE,   // Type  KSNODETYPE_AUDIO_ENGINE
+        &KSNODETYPE_AUDIO_ENGINE,   // Type  KSNODETYPE_AUDIO_ENGINE
         NULL                        // Name
     }
 };

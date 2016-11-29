@@ -49,7 +49,7 @@ public:
 class CExtension :
    public IExtensionUnit,
    public CComObjectRootEx<CComObjectThreadModel>,
-   public CComCoClass<CExtension, &amp;CLSID_ExtensionUnit>,
+   public CComCoClass<CExtension, &CLSID_ExtensionUnit>,
    public CNodeControl
 {
    public:
@@ -126,7 +126,7 @@ CNodeControl::put_KsControl(
 
     if (m_pKsControl) m_pKsControl.Release();
  hr = pIKsControl->QueryInterface(__uuidof(IKsControl),
-       (void **) &amp;m_pKsControl);        
+       (void **) &m_pKsControl);        
 
     return hr;
 }
@@ -164,11 +164,11 @@ CExtension::get_InfoSize(
     ExtensionProp.NodeId = m_dwNodeId;
 
  hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
         sizeof(ExtensionProp),
         NULL,
         0,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
     if (hr == HRESULT_FROM_WIN32(ERROR_MORE_DATA)) 
     {
@@ -196,11 +196,11 @@ CExtension::get_Info(
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
  sizeof(ExtensionProp),
         (PVOID) pInfo,
         ulSize,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
  return hr;
 }
@@ -224,11 +224,11 @@ CExtension::get_PropertySize(
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
  sizeof(ExtensionProp),
         NULL,
         0,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
  if (hr == HRESULT_FROM_WIN32(ERROR_MORE_DATA)) 
     {
@@ -256,11 +256,11 @@ CExtension::get_Property(
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
  sizeof(ExtensionProp),
         (PVOID) pValue,
         ulSize,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
     return hr;
 }
@@ -282,11 +282,11 @@ CExtension::put_Property(
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
  sizeof(ExtensionProp),
         (PVOID) pValue,
         ulSize,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
     return hr;
 }

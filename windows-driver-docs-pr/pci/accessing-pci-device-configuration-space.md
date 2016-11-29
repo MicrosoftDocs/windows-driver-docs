@@ -48,10 +48,10 @@ typedef struct {
 } PCI_COMMON_HEADER, *PPCI_COMMON_HEADER;
 
 PCI_COMMON_HEADER Header;
-PCI_COMMON_CONFIG *pPciConfig = (PCI_COMMON_CONFIG *)&amp;Header;
+PCI_COMMON_CONFIG *pPciConfig = (PCI_COMMON_CONFIG *)&Header;
 // declare power management capabilities header
  PCI_PM_CAPABILITY  PowerMgmtCapability;
-PCI_PM_CAPABILITY  *pPowerMgmtCapability = &amp;Capability; 
+PCI_PM_CAPABILITY  *pPowerMgmtCapability = &Capability; 
 UCHAR CapabilityOffset;
 
 // Read the first part of the header
@@ -70,7 +70,7 @@ BusInterface.GetBusData(Context,
 // Check the Status register to see if 
 // this device supports capability lists.
  
-if ((pPciConfig->Status &amp;
+if ((pPciConfig->Status &
    PCI_STATUS_CAPABILITIES_LIST) == 0) {
    // does not support capabilities list
    return(STATUS_NOT_IMPLEMENTED);
@@ -83,11 +83,11 @@ if ((pPciConfig->Status &amp;
 // in the header depends on whether this is 
 // a bridge type device. Check the type.
 
-if ((pPciConfig->HeaderType &amp; 
+if ((pPciConfig->HeaderType & 
    (~PCI_MULTIFUNCTION)) == PCI_BRIDGE_TYPE) {
    CapabilityOffset = 
        pPciConfig->u.type1.CapabilitiesPtr;
-} else if ((pPciConfig->HeaderType &amp; 
+} else if ((pPciConfig->HeaderType & 
    (~PCI_MULTIFUNCTION)) == PCI_CARDBUS_TYPE) {
    CapabilityOffset = 
        pPciConfig->u.type2.CapabilitiesPtr;
@@ -142,7 +142,7 @@ if (CapabilityOffset == 0) {
 BusInterface.GetBusData(Context,
    PCI_WHICHSPACE_CONFIG,
    // write to location immediately following header
-   &amp; (pPowerMgmtCapability->Header) + 1, 
+   & (pPowerMgmtCapability->Header) + 1, 
    CapabilityOffset + 
        sizeof(PCI_CAPABILITIES_HEADER),
    sizeof(PCI_PM_CAPABILITY) - 

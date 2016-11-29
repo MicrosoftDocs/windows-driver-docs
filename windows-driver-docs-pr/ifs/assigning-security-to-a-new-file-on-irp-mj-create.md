@@ -20,7 +20,7 @@ NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext,
 {
     NTSTATUS status = STATUS_SUCCESS;
     BOOLEAN CreateDir = ((IrpContext->IrpSp->Parameters.Create.Options
-        &amp; FILE_DIRECTORY_FILE)==FILE_DIRECTORY_FILE);
+        & FILE_DIRECTORY_FILE)==FILE_DIRECTORY_FILE);
     PACCESS_STATE AccessState = 
     IrpContext->IrpSp->Parameters.Create.SecurityContext->AccessState;
     PSECURITY_DESCRIPTOR SecurityDescriptor = NULL;
@@ -54,9 +54,9 @@ NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext,
     //
     status = SeAssignSecurity(Directory->SecurityDescriptor, 
                               AccessState->SecurityDescriptor,
-                              &amp;SecurityDescriptor, 
+                              &SecurityDescriptor, 
                               CreateDir, 
-                              &amp;AccessState->SubjectSecurityContext,
+                              &AccessState->SubjectSecurityContext,
                               IoGetFileObjectGenericMapping(),
                               PagedPool);
 
@@ -80,7 +80,7 @@ NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext,
         //
         // There is no paged pool.
         //
-        SeDeassignSecurity(&amp;SecurityDescriptor);
+        SeDeassignSecurity(&SecurityDescriptor);
         Fcb->SecurityDescriptorLength = 0;
         return STATUS_NO_MEMORY;
     }
@@ -88,7 +88,7 @@ NTSTATUS FsdAssignInitialSecurity( PIRP_CONTEXT IrpContext,
     RtlCopyMemory(Fcb->SecurityDescriptor, SecurityDescriptor, 
         Fcb->SecurityDescriptorLength);
  
-    SeDeassignSecurity(&amp;SecurityDescriptor);
+    SeDeassignSecurity(&SecurityDescriptor);
  
     //
     // Store the SD persistently (this is file system specific).

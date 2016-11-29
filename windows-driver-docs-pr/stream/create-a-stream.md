@@ -26,7 +26,7 @@ This is a synchronous operation. The operation first creates a stream request st
 #include <avcstrm.h>
 
 INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_OPEN);
-pAVCStrmReq->CommandData.OpenStruct.AVCFormatInfo =            &amp;AVCStrmFormatInfoTable[pDevExt->VideoFormatIndex]; 
+pAVCStrmReq->CommandData.OpenStruct.AVCFormatInfo =            &AVCStrmFormatInfoTable[pDevExt->VideoFormatIndex]; 
 pAVCStrmReq->CommandData.OpenStruct.AVCStreamContext = NULL;
 pAVCStrmReq->CommandData.OpenStruct.DataFlow         = DataFlow;
 

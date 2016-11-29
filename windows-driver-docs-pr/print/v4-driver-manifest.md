@@ -180,8 +180,8 @@ PrintFax.Printer.Virtual</td>
 <p>Specifies a list of hardware IDs that match one or more device interfaces to be used for USB Bidi communications.</p></td>
 <td><p>None, but should only be supported if status is done over a USB interface that is not the print interface.</p></td>
 <td><p>BidiUSBStatusInterface=</p>
-<p>”USB\vid_1234&amp;pid_1234”,</p>
-<p>”USB\vid_1234&amp;pid_4567”</p></td>
+<p>”USB\vid_1234&pid_1234”,</p>
+<p>”USB\vid_1234&pid_4567”</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>UserPropertyBagScope</strong></p>

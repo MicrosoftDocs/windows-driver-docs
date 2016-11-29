@@ -37,7 +37,7 @@ The following code snippet shows examples of an array of filter descriptors, a d
 //
 DEFINE_KSFILTER_DESCRIPTOR_TABLE(FilterDescriptors)
 {
-    &amp;TemplateTunerFilterDescriptor
+    &TemplateTunerFilterDescriptor
 };
 //
 //  Device Dispatch Table
@@ -80,7 +80,7 @@ const
 KSDEVICE_DESCRIPTOR
 DeviceDescriptor =
 {
-    &amp;DeviceDispatch,    // Dispatch
+    &DeviceDispatch,    // Dispatch
 #ifdef DYNAMIC_TOPOLOGY // network provider is present
     0,    // FilterDescriptorsCount
     NULL, // FilterDescriptors

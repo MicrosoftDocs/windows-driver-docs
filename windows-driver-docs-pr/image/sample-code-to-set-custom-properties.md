@@ -25,7 +25,7 @@ To set a custom property, your application or custom UI might have code that loo
     //
     //  Get the item&#39;s Property Storage
     //
-    hr = pMyItem->QueryInterface(IID_IWiaPropertyStorage, (void**)&amp;pItemPropertyStorage);
+    hr = pMyItem->QueryInterface(IID_IWiaPropertyStorage, (void**)&pItemPropertyStorage);
     if (SUCCEEDED(hr)) {
 
  
@@ -48,7 +48,7 @@ To set a custom property, your application or custom UI might have code that loo
   //
   //  Initialize the PropVariant.
   //
-  PropVariantInit(&amp;pvMyProperty);
+  PropVariantInit(&pvMyProperty);
  
   //
   //  Fill in the property value.
@@ -61,8 +61,8 @@ To set a custom property, your application or custom UI might have code that loo
   //  Write the property value.
   //
   hr = pItemPropertyStorage->WriteMultiple(1,
-                               &amp;psMyProperty,
-                               &amp;pvMyProperty,
+                               &psMyProperty,
+                               &pvMyProperty,
                                           0);
   //
   //  Etc.  

@@ -86,8 +86,8 @@ STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
   // a pending event.
   //
 
-  pDevStatus->dwEventHandlingState &amp;= ~STI_EVENTHANDLING_PENDING;
-  if (pDevStatus->StatusMask &amp; STI_DEVSTATUS_EVENTS_STATE) {
+  pDevStatus->dwEventHandlingState &= ~STI_EVENTHANDLING_PENDING;
+  if (pDevStatus->StatusMask & STI_DEVSTATUS_EVENTS_STATE) {
 
     //
     // set the polled event result here, for the GetNotificationData()
@@ -96,7 +96,7 @@ STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
     //
 
     LONG lEventResult = 0;
-    PollMyDeviceForEvents(&amp;lEventResult)
+    PollMyDeviceForEvents(&lEventResult)
 
     if(lEventResult == DEVICE_SCAN_BUTTON_PRESSED) {
 

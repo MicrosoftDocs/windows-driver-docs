@@ -64,7 +64,7 @@ Return Value:
     PIRP                irp;
 
     // Initialize an event to wait on
-    KeInitializeEvent(&amp;myIoctlEvent, SynchronizationEvent, FALSE);
+    KeInitializeEvent(&myIoctlEvent, SynchronizationEvent, FALSE);
 
     // Build the request
     irp = IoBuildDeviceIoControlRequest(
@@ -75,8 +75,8 @@ Return Value:
         OutputBuffer,
         OutputSize,
         FALSE,
-        &amp;myIoctlEvent,
-        &amp;ioBlock);
+        &myIoctlEvent,
+        &ioBlock);
 
     if (!irp) {
         return STATUS_INSUFFICIENT_RESOURCES;
@@ -88,7 +88,7 @@ Return Value:
     if (status == STATUS_PENDING) {
         // Wait for the IRP to be completed, and then return the status code
         KeWaitForSingleObject(
-            &amp;myIoctlEvent,
+            &myIoctlEvent,
             Executive,
             KernelMode,
             FALSE,

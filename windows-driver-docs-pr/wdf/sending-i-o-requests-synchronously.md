@@ -76,17 +76,17 @@ NTSTATUS                status;
     UNREFERENCED_PARAMETER(FileObject);
 
     if (InputBuffer) {
-        WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&amp;inputDesc,
+        WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&inputDesc,
                                     InputBuffer,
                                     InputBufferLength);
-        pInputDesc = &amp;inputDesc;
+        pInputDesc = &inputDesc;
     }
 
     if (OutputBuffer) {
-        WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&amp;outputDesc,
+        WDF_MEMORY_DESCRIPTOR_INIT_BUFFER(&outputDesc,
                                     OutputBuffer,
                                     OutputBufferLength);
-        pOutputDesc = &amp;outputDesc;
+        pOutputDesc = &outputDesc;
     }
 
     status = WdfIoTargetSendIoctlSynchronously(
@@ -96,7 +96,7 @@ NTSTATUS                status;
                         pInputDesc,
                         pOutputDesc,
                         NULL, // PWDF_REQUEST_SEND_OPTIONS
-                        &amp;bytesReturned);
+                        &bytesReturned);
     if (!NT_SUCCESS(status)) {
          DEBUGP(MP_ERROR,
         ("WdfIoTargetSendIoctlSynchronously failed 0x%x\n",

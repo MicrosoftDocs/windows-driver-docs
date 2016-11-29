@@ -33,6 +33,9 @@
       - name: Biometric
         tocHref: /windows/hardware/drivers/biometric/
         topicHref: /windows/hardware/drivers/biometric/index
+      - name: Devtest
+        tocHref: /windows/hardware/drivers/devtest/
+        topicHref: /windows/hardware/drivers/devtest/index
       - name: HID
         tocHref: /windows/hardware/drivers/hid/
         topicHref: /windows/hardware/drivers/hid/index
@@ -87,9 +90,6 @@
       - name: TAEF
         tocHref: /windows/hardware/drivers/taef
         topicHref: /windows/hardware/drivers/taef/index
-      - name: Touch
-        tocHref: /windows/hardware/drivers/touch
-        topicHref: /windows/hardware/drivers/touch/index
       - name: WDTF
         tocHref: /windows/hardware/drivers/wdtf/
         topicHref: /windows/hardware/drivers/wdtf/index

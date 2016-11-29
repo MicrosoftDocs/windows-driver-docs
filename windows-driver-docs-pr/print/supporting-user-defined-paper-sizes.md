@@ -182,7 +182,7 @@ The following example GPD file segment describes acceptable customized paper siz
        *Command: CmdSelect
        {
          *Order: DOC_SETUP.13
- *Cmd: "<1B>&amp;l101a8c1e99F<1B>*p0x0Y<1B>*c0t8064x12528Y"
+ *Cmd: "<1B>&l101a8c1e99F<1B>*p0x0Y<1B>*c0t8064x12528Y"
  }
     }
     *case: LANDSCAPE_CC90
@@ -204,7 +204,7 @@ The following example GPD file segment describes acceptable customized paper siz
           *Command: CmdSelect
           {
             *Order: DOC_SETUP.13
-            *Cmd: "<1B>&amp;l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
+            *Cmd: "<1B>&l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
           }
         }
         *case: MBM5S
@@ -218,7 +218,7 @@ The following example GPD file segment describes acceptable customized paper siz
           *Command: CmdSelect
           {
             *Order: DOC_SETUP.13
-            *Cmd: "<1B>&amp;l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
+            *Cmd: "<1B>&l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
           }
         }
         *default
@@ -232,7 +232,7 @@ The following example GPD file segment describes acceptable customized paper siz
           *Command: CmdSelect
           {
             *Order: DOC_SETUP.13
- *Cmd: "<1B>&amp;l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
+ *Cmd: "<1B>&l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
  }
         }
       } *% switch Option20

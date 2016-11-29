@@ -50,7 +50,7 @@ AzRirbEntry SendVerb(HANDLE handle, AzCorbEntry verb)
   DWORD BytesReturned;
 
 //A nonzero value is returned for a successful call and it is interpreted as TRUE  
-BOOL rc = DeviceIoControl(handle, IOCTL_AZALIABUS_SENDVERBS, &amp;c, sizeof(c), &amp;r, sizeof(r), &amp;BytesReturned, 0);
+BOOL rc = DeviceIoControl(handle, IOCTL_AZALIABUS_SENDVERBS, &c, sizeof(c), &r, sizeof(r), &BytesReturned, 0);
 
   if(!rc)
   {
@@ -117,7 +117,7 @@ struct AzRirbEntry
                           // got into memory assures that it is valid
   AzRirbEntry (ULONGLONG x = 0)
   {
-    Response = x &amp; 0xffffffff;
+    Response = x & 0xffffffff;
     Sdi = x >> 32;
     Unsolicited = x >> 36;
     Reserved0 = x >> 37;

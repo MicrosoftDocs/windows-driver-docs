@@ -52,7 +52,7 @@ Result =
     ClassName,
     0,
     NULL,
-    &amp;pClass,
+    &pClass,
     NULL
     );
 
@@ -61,7 +61,7 @@ Result =
   pClass->GetMethod(
     MethodName,
     0,
-    &amp;pInParametersClass,
+    &pInParametersClass,
     NULL
     );
 
@@ -69,7 +69,7 @@ Result =
 Result =
   pInParametersClass->SpawnInstance(
     0,
-    &amp;pInParameters
+    &pInParameters
     );
 
 // Set the ErrorType parameter
@@ -79,10 +79,10 @@ Result =
   pInParameters->Put(
     L"ErrorType",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Set the additional parameters - in this case
 // they are all set to zero. If additional data
@@ -95,31 +95,31 @@ Result =
   pInParameters->Put(
     L"Parameter1",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
 Result =
   pInParameters->Put(
     L"Parameter2",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
 Result =
   pInParameters->Put(
     L"Parameter3",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
 Result =
   pInParameters->Put(
     L"Parameter4",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Call the InjectErrorRtn method indirectly by
 // calling the IWbemServices::ExecMethod method.
@@ -129,8 +129,8 @@ Result =
     MethodName,
     0,
     NULL,
-    &amp;pInParameters,
- &amp;pOutParameters,
+    &pInParameters,
+ &pOutParameters,
     NULL
     );
 
@@ -144,7 +144,7 @@ Result =
   pOutParameters->Get(
     L"Status",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );

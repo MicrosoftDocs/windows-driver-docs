@@ -1,0 +1,42 @@
+---
+title: What the Checked Build Checks
+description: What the Checked Build Checks
+ms.assetid: c60e3957-fe95-4c47-a674-1ca6ad7d26ac
+keywords: ["checked builds WDK , checks performed", "parameter validation checks WDK", "internal checks WDK", "correctness checks WDK", "consistency checks WDK", "informational checks WDK", "tracing output checks WDK"]
+---
+
+# What the Checked Build Checks
+
+
+## <span id="ddk_what_the_checked_build_checks_tools"></span><span id="DDK_WHAT_THE_CHECKED_BUILD_CHECKS_TOOLS"></span>
+
+
+The checked build includes a significant number of debugging checks that are normally not present in the system. These checks include:
+
+-   **Parameter validation checks**
+
+    These checks ensure that the Windows operating system code ordinarily runs with as little overhead as possible. As a result, the NT-based operating systems implement the policy that all components running in kernel-mode, including drivers, implicitly "trust" each other. Thus, parameters that are passed from one kernel-mode component to another (such as parameters passed on function calls) are typically subject to minimal validation. The checked build of the operating system enables many additional parameter validation checks.
+
+-   **Internal checks for operating system correctness and consistency**
+
+    These checks typically verify the correctness of key algorithms and data structures in the operating system. Checks of this type can also be inserted by one of the Windows developers during the operating system debugging process to help isolate difficult problems.
+
+-   **Informational checks and tracing output**
+
+    These checks, and the resulting output that is displayed in the debugger, are designed to assist debugging of drivers or other system-level components. Often, these types of checks must be individually enabled by setting debug flags--typically using the debugger--internally in the component of interest. The existence of such checks and their debug output may vary from release to release of the operating system. When such checks exist, they are often documented in Microsoft Knowledge Base articles.
+
+Most of the checks that appear in the checked build determine if the values in parameters or data structures are within anticipated typical ranges. During operation of the system, it might be possible, under certain rare circumstances, for a particular parameter or value to fall outside the typically anticipated range.
+
+Thus, even when one of the checks in the checked build fails, it does not necessarily mean that a catastrophic failure has occurred. In fact, a failing check in the checked build does not necessarily mean that something has gone wrong. It merely means that a particular check has failed. You must be able to *explain* the reason for the failure.
+
+Do not ignore problems that are identified by the checked build. The key to successfully debug drivers with the checked build is to be sure that you can explain the reason for each failure that the checked build finds.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20What%20the%20Checked%20Build%20Checks%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

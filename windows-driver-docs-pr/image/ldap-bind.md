@@ -19,7 +19,7 @@ The LDAP Bind should use either NTLM/Kerberos authentication to bind with the su
 A typical example would look like this:
 
 ```
-ldap_bind_s(ld, NULL, &amp;NtAuthIdentity, 4230);
+ldap_bind_s(ld, NULL, &NtAuthIdentity, 4230);
 ```
 
 The above example assumes that NTAuthIdentity has the user credentials.
@@ -31,7 +31,7 @@ For example, to search for the SID of user "Joe" in the directory the search que
 ```
 scope: SubTree
 baseObject: [defaultNamingContext of the domain]
-filter: (&amp;(objectclass=*)(sAMAccountName=Joe))
+filter: (&(objectclass=*)(sAMAccountName=Joe))
 attributes: 
      Item: cn
      Item: objectSid

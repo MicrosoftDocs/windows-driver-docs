@@ -169,7 +169,7 @@ NTSTATUS
 
   // Return a pointer to the provider dispatch structure
   // in the ProviderDispatch parameter
-  *ProviderDispatch = &amp;Dispatch;
+  *ProviderDispatch = &Dispatch;
 
   // Return success status
   return STATUS_SUCCESS;

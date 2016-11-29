@@ -29,23 +29,23 @@ ULONG celt, celtFetched; // Number of requested and returned elements
 // Retrieve a pointer to INetCfgComponentBindings to control and 
 // retrieve information about bindings for the component.
 hr = pncfgcompThis->QueryInterface(IID_INetCfgComponentBindings, 
-                                  (LPVOID*)&amp;pncfgcompbind);
+                                  (LPVOID*)&pncfgcompbind);
 // Retrieve a pointer to IEnumNetCfgBindingPath to enumerate binding 
 // paths for the component.
-hr = pncfgcompbind->EnumBindingPaths(dwFlags, &amp;penumncfgbindpath);
+hr = pncfgcompbind->EnumBindingPaths(dwFlags, &penumncfgbindpath);
 // Retrieve a pointer to INetCfgBindingPath that points to one or more 
 // binding paths for the component.
-hr = penumncfgbindpath->Next(celt, &amp;pncfgbindpath, &amp;celtFetched);
+hr = penumncfgbindpath->Next(celt, &pncfgbindpath, &celtFetched);
 // Retrieve a pointer to IEnumNetCfgBindingInterface to enumerate 
 // the collection of binding interfaces for the binding path.
-hr = pncfgbindpath->EnumBindingInterfaces(&amp;penumncfgbindintrfc);
+hr = pncfgbindpath->EnumBindingInterfaces(&penumncfgbindintrfc);
 // Retrieve a pointer to INetCfgBindingInterface that points to one or 
 // more binding interfaces for the binding path.
-hr = penumncfgbindintrfc->Next(celt, &amp;pncfgbindintrfc, &amp;celtFetched);
+hr = penumncfgbindintrfc->Next(celt, &pncfgbindintrfc, &celtFetched);
 // Retrieve pointers to INetCfgComponent for network components 
 // above and below the binding interface.
-hr = pcfgbindintrfc->GetUpperComponent(&amp;pncfgcompUp);
-hr = pcfgbindintrfc->GetLowerComponent(&amp;pncfgcompLow);
+hr = pcfgbindintrfc->GetUpperComponent(&pncfgcompUp);
+hr = pcfgbindintrfc->GetLowerComponent(&pncfgcompLow);
 
 // Using the root network configuration interface that the notify 
 // object received:
@@ -62,35 +62,35 @@ DWORD dwSetupFlags, dwUpgradeFromBuildNo;
  
 // Retrieve a pointer to INetCfgLock to obtain a lock on network 
 // configuration.
-hr = pnetcfg->QueryInterface(IID_INetCfgLock, (LPVOID*)&amp;pncfglock);
+hr = pnetcfg->QueryInterface(IID_INetCfgLock, (LPVOID*)&pncfglock);
 // Retrieve a pointer to INetCfgComponent for a specific component.
-hr = pnetcfg->FindComponent(TEXT("MS_TCPIP"), &amp;pncfgcompOther);
+hr = pnetcfg->FindComponent(TEXT("MS_TCPIP"), &pncfgcompOther);
 // Retrieve a pointer to IEnumNetCfgComponent to enumerate 
 // the collection of a particular type of component.
-hr = pnetcfg->EnumComponents(pguidClass, &amp;penumncfgcomp);
+hr = pnetcfg->EnumComponents(pguidClass, &penumncfgcomp);
 // Retrieve a pointer to INetCfgClass for a specific class of 
 // component.
 hr = pnetcfg->QueryNetCfgClass(pguidClass, IID_INetCfgClass, 
-                              (LPVOID*)&amp;pncfgclass);
+                              (LPVOID*)&pncfgclass);
 // Retrieve a pointer to INetCfgComponent for a specific component.
-hr = pncfgclass->FindComponent(TEXT("MS_TCPIP"), &amp;pncfgcompOther);
+hr = pncfgclass->FindComponent(TEXT("MS_TCPIP"), &pncfgcompOther);
 // Retrieve a pointer to IEnumNetCfgComponent to enumerate 
 // the collection of a particular type of component.
-hr = pncfgclass->EnumComponents(&amp;penumncfgcomp);
+hr = pncfgclass->EnumComponents(&penumncfgcomp);
 // Retrieve a pointer to INetCfgComponent that points to one or 
 // more components for the particular type of component.
-hr = penumncfgcomp->Next(celt, &amp;pncfgcompOther, &amp;celtFetched);
+hr = penumncfgcomp->Next(celt, &pncfgcompOther, &celtFetched);
 // Retrieve a pointer to INetCfgClassSetup that enables installation 
 // or removal of a particular type of component.
 hr = pncfgclass->QueryInterface(IID_INetCfgClassSetup, 
-                               (LPVOID*)&amp;pncfgclsSetup);
+                               (LPVOID*)&pncfgclsSetup);
 // Retrieve a pointer to INetCfgComponent for an installed component.
 hr = pncfgclsSetup->SelectAndInstall(hwndParent, pOboToken,
-                                     &amp;pncfgcompInstall);
+                                     &pncfgcompInstall);
 // Retrieve a pointer to INetCfgComponent for an installed component.
 hr = pncfgclsSetup->Install(TEXT("MS_TCPIP"), pOboToken, dwSetupFlags, 
                            dwUpgradeFromBuildNo, TEXT("AnswerFile"), 
-                    TEXT("AnswerFileSections"), &amp;pncfgcompInstall);
+                    TEXT("AnswerFileSections"), &pncfgcompInstall);
 ```
 
  

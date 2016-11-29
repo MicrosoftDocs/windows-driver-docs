@@ -105,9 +105,9 @@ Return Value:
     status = SendDownStreamIrp(
        Pdo,
        IOCTL_ACPI_EVAL_METHOD,
-       &amp;inputBuffer,
+       &inputBuffer,
        sizeof(ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER),
-       &amp;outputBuffer,
+       &outputBuffer,
        sizeof(ACPI_EVAL_OUTPUT_BUFFER)
        );
 

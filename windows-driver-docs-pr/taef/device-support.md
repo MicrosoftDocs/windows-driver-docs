@@ -97,12 +97,12 @@ As soon as TAEF encounters a TestResourceDependent test module, it will look for
 
 ```
 using namespace WEX::TestExecution;
-HRESULT __cdecl BuildResourceList(ResourceList&amp; resourceList)
+HRESULT __cdecl BuildResourceList(ResourceList& resourceList)
 {
     Log::Comment(L"In BuildResourceList");
 
     GUID myGuid;
-    VERIFY_SUCCEEDED(::CoCreateGuid(&amp;myGuid));
+    VERIFY_SUCCEEDED(::CoCreateGuid(&myGuid));
 
     CComPtr<ITestResource> spTestResource;
     spTestResource.Attach(new MyTestResource(L"HDAudio1", L"HDAudio-deviceid-1", myGuid, L"HD"));
@@ -148,11 +148,11 @@ Previous sections looked at how to add the necessary metadata at module, class a
 6       VERIFY_ARE_EQUAL(count, (index + 1));
 7
 8       CComPtr<ITestResource> spTestResource;
-9       VERIFY_SUCCEEDED(Resources::Item(index, &amp;spTestResource));
+9       VERIFY_SUCCEEDED(Resources::Item(index, &spTestResource));
 10
 11      // Get Resource Id
 12      CComBSTR value;
-13      VERIFY_SUCCEEDED(spTestResource->GetValue(CComBSTR(TestResourceProperty::c_szId), &amp;value));
+13      VERIFY_SUCCEEDED(spTestResource->GetValue(CComBSTR(TestResourceProperty::c_szId), &value));
 14      Log::Comment(L"Resource Id is " + String(value));
 15  }
 ```

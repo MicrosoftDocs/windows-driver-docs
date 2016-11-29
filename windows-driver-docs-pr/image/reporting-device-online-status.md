@@ -70,7 +70,7 @@ STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
   // If we are asked, verify the device is online.
   //
 
-  if (pDevStatus->StatusMask &amp; STI_DEVSTATUS_ONLINE_STATE) {
+  if (pDevStatus->StatusMask & STI_DEVSTATUS_ONLINE_STATE) {
 
     //
     // assume the device is OFF-LINE before continuing. This will

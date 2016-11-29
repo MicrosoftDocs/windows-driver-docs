@@ -28,13 +28,13 @@ The following code example from the [PLX9x5x](http://go.microsoft.com/fwlink/p/?
 WDF_DMA_ENABLER_CONFIG   dmaConfig;
 
 WdfDeviceSetAlignmentRequirement( DevExt->Device, PCI9656_DTE_ALIGNMENT_16 );
-WDF_DMA_ENABLER_CONFIG_INIT( &amp;dmaConfig,
+WDF_DMA_ENABLER_CONFIG_INIT( &dmaConfig,
                              WdfDmaProfileScatterGather64Duplex,
                              DevExt->MaximumTransferLength );
 status = WdfDmaEnablerCreate( DevExt->Device,
-                              &amp;dmaConfig, 
+                              &dmaConfig, 
                               WDF_NO_OBJECT_ATTRIBUTES,
-                              &amp;DevExt->DmaEnabler );
+                              &DevExt->DmaEnabler );
 
 ```
 
