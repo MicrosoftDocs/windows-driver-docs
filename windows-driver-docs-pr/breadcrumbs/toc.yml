@@ -33,7 +33,7 @@
       - name: Biometric
         tocHref: /windows/hardware/drivers/biometric/
         topicHref: /windows/hardware/drivers/biometric/index
-      - name: Devtest
+      - name: Tools for Testing Drivers
         tocHref: /windows/hardware/drivers/devtest/
         topicHref: /windows/hardware/drivers/devtest/index
       - name: HID
