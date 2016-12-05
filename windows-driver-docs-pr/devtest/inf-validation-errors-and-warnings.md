@@ -18,7 +18,7 @@ Starting in Visual Studio 2015 with WDK 10, when you build your driver, the foll
 ## <span id="err_12xx"></span><span id="ERR_12XX"></span>Syntax errors in the INF file (1200-1299)
 
 
-When you install a driver, Windows skips lines in the INF file that contain errors, but does not fail on errors in this range. If the driver installs successfully, you might not notice that some lines were skipped.
+When you install a driver, Windows skips lines in the INF file that contain errors, but does not fail driver installation due to errors in this range. If the driver installs successfully, you might not notice that some lines were skipped.
 
 Errors in the 1200-1299 range correspond to lines in the INF file that would be ignored at driver installation. As such, they do not prevent the installation of your driver. But because they are skipped, your INF file may not be doing all the things that you expected.
 
