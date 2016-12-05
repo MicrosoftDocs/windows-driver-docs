@@ -109,7 +109,7 @@ AddReg = AddRegB<br/><br/>
 filename=disk id
 ```
 </div>
-<p>Note that this error frequently occurs if architecture-decorated versiosn of [SourceDisksFiles] are specified (such as [SourceDisksFiles.amd64], but not all architectures supported by the INF have a [SourceDisksFiles] section.</p></td>
+<p>Note that this error frequently occurs if architecture-decorated versions of [SourceDisksFiles] are specified (such as [SourceDisksFiles.amd64], but not all architectures supported by the INF have a [SourceDisksFiles] section.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="1233__Missing_directive_required_for_signature"></span><span id="1233__missing_directive_required_for_signature"></span><span id="1233__MISSING_DIRECTIVE_REQUIRED_FOR_SIGNATURE"></span><strong>1233: Missing directive required for signature</strong></p></td>
