@@ -15,10 +15,10 @@ Starting in Visual Studio 2015 with WDK 10, when you build your driver, the foll
 -   [Universal INF errors (1300-1309)](#err-130x)
 -   [Installation warnings (2000-2999)](#warning-2xxx)
 
-## <span id="err_12xx"></span><span id="ERR_12XX"></span>Ignored lines in the INF file (1200-1299)
+## <span id="err_12xx"></span><span id="ERR_12XX"></span>Syntax errors in the INF file (1200-1299)
 
 
-When you install a driver, Windows skips lines in the INF file that contain errors, but does not report these errors. If the driver installs successfully, you might not notice that some lines were skipped.
+When you install a driver, Windows skips lines in the INF file that contain errors, but does not fail driver installation due to errors in this range. If the driver installs successfully, you might not notice that some lines were skipped.
 
 Errors in the 1200-1299 range correspond to lines in the INF file that would be ignored at driver installation. As such, they do not prevent the installation of your driver. But because they are skipped, your INF file may not be doing all the things that you expected.
 
@@ -39,14 +39,14 @@ Errors in the 1200-1299 range correspond to lines in the INF file that would be 
 <td align="left"><p>For example, the following INF syntax causes error 1203:</p>
 <div class="code">
 ```
-[MyInstallSection]
+[MyInstallSection]<br/>
 CopyFiles=driverFile.sys
 ```
 </div>
-<p>This error is reported because the <strong>CopyFiles</strong> directive expects a section name (that specifies the list of files to copy). However, in some cases, <strong>CopyFiles</strong> can specify a file name. To differentiate between a section name and a file name, preface a file name with the @ token as shown here:</p>
+<p>This error is reported because the <strong>CopyFiles</strong> directive expects a section name (that specifies the list of files to copy). However, the <strong>CopyFiles</strong> directive can specify a file name. To differentiate between a section name and a file name, preface a file name with the @ token as shown here:</p>
 <div class="code">
 ```
-[MyInstallSection]
+[MyInstallSection]<br/>
 CopyFiles=@driverFile.sys
 ```
 </div></td>
@@ -56,11 +56,11 @@ CopyFiles=@driverFile.sys
 <td align="left"><p>The Provider field in the [Version] section cannot specify Microsoft.</p>
 <div class="code">
 ```
-[Version]
-Signature="$Windows NT$"
-Class=Sample
-ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171}
-Provider="Microsoft"
+[Version]<br/>
+Signature="$Windows NT$"<br/>
+Class=Sample<br/>
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171}<br/>
+Provider="Microsoft"<br/>
 ```
 </div></td>
 </tr>
@@ -71,25 +71,25 @@ Provider="Microsoft"
 <p>A.INF contains:</p>
 <div class="code">
 ```
-A.INF
-[InstallSectionA]
-Include = B.INF
-Needs = InstallSectionB
-AddReg = AddRegB ; WARNING 1220
-[InstallSectionA.Services]
-Include = B.INF
-Needs = InstallSectionB.Services
+A.INF<br/>
+[InstallSectionA]<br/>
+Include = B.INF<br/>
+Needs = InstallSectionB<br/>
+AddReg = AddRegB ; WARNING 1220<br/><br/>
+[InstallSectionA.Services]<br/>
+Include = B.INF<br/>
+Needs = InstallSectionB.Services<br/>
 ```
 </div>
 <p>B.INF contains:</p>
 <div class="code">
 ```
-B.INF
-[InstallSectionB]
-AddReg = AddRegB
-[InstallSectionB.Services]
-...
-[AddRegB]
+B.INF<br/>
+[InstallSectionB]<br/>
+AddReg = AddRegB<br/><br/>
+[InstallSectionB.Services]<br/>
+...<br/><br/>
+[AddRegB]<br/>
 ...
 ```
 </div>
@@ -101,6 +101,17 @@ AddReg = AddRegB
 <p>When you use <strong>HKR</strong>, the registry value will not be present until the device is installed.</p></td>
 </tr>
 <tr class="odd">
+<td align="left"><p><span id="1230__missing_file_under_sourcedisksfiles_section_"></span><span id="1230__missing_file_under_sourcedisksfiles_section_"></span><span id="1230__MISSING_FILE_UNDER_SOURCEDISKSFILES_SECTION_"></span><strong>1230: Missing file 'xxxx' under [SourceDisksFiles] section.</strong></p></td>
+<td align="left"><p>This indicates that a file was specified as part of the driver package, but the source location of the file relative to the INF was not specified in a [SourceDisksFiles] section.</p>
+<div class="code">
+```
+[SourceDisksFiles]<br/>
+filename=disk id
+```
+</div>
+<p>Note that this error frequently occurs if architecture-decorated versions of [SourceDisksFiles] are specified (such as [SourceDisksFiles.amd64], but not all architectures supported by the INF have a [SourceDisksFiles] section.</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p><span id="1233__Missing_directive_required_for_signature"></span><span id="1233__missing_directive_required_for_signature"></span><span id="1233__MISSING_DIRECTIVE_REQUIRED_FOR_SIGNATURE"></span><strong>1233: Missing directive required for signature</strong></p></td>
 <td align="left"><p>In the [Version] section, you must specify a CatalogFile directive (and associated catalog file) to receive a signature on a driver package.</p>
 <div class="code">
@@ -109,20 +120,20 @@ CatalogFile=wudf.cat
 ```
 </div></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><span id="1235__String_token_not_defined_in__Strings_"></span><span id="1235__string_token_not_defined_in__strings_"></span><span id="1235__STRING_TOKEN_NOT_DEFINED_IN__STRINGS_"></span><strong>1235: String token not defined in [Strings]</strong></p></td>
 <td align="left"><p>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an [<strong>AddReg</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546320) directive, but there is no corresponding REG_DWORD = 0x00010001 in the [[Strings]](https://msdn.microsoft.com/library/windows/hardware/ff547485) section.</p>
-<p>This error also occurs if your INF file specifies a registry value that contains an environment variable. For example:</p>
+<p>This error frequently occurs if your INF file specifies a registry value that contains an environment variable. For example:</p>
 <div class="code">
 ```
-[MyAddReg]
+[MyAddReg]<br/>
 HKR,,DllPath,”%SystemRoot%\System32\myDll.sys”
 ```
 </div>
-<p>To reference the literal value “%SystemRoot%” rather than a string replacement, use the escape sequence ‘%%’.</p>
+<p>This line causes the INF parser to attempt to locate the token "SystemRoot" from the [Strings] section, rather than the intended behavior of storing the literal "%SystemRoot%" in the registry.  To use the literal value “%SystemRoot%” rather than perform a string replacement, use the escape sequence ‘%%’.</p>
 <div class="code">
 ```
-[MyAddReg]
+[MyAddReg]<br/>
 HKR,,DllPath,”%%SystemRoot%%\System32\myDll.sys”
 ```
 </div></td>
@@ -239,9 +250,9 @@ LogConfig=LogConfigSection
 <td align="left"><p>This warning indicates that the INF file contains an [<strong>INF Manufacturer Section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547454) that specifies a [<strong>model section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547456) with no architecture decoration. For example, the following INF syntax would result in warning 2223:</p>
 <div class="code">
 ```
-[Manufacturer]
-%MfgName% = InstallSection
-[InstallSection]
+[Manufacturer]<br/>
+%MfgName% = InstallSection<br/><br/>
+[InstallSection]<br/>
 ...
 ```
 </div>
@@ -249,11 +260,11 @@ LogConfig=LogConfigSection
 <p>Instead, declare all supported architectures and provide a corresponding install section for each:</p>
 <div class="code">
 ```
-[Manufacturer]
-%MfgName% = InstallSection, NTX86, NTAMD64
-[InstallSection.NTAMD64]
-...
-[InstallSection.NTX86]
+[Manufacturer]<br/>
+%MfgName% = InstallSection, NTX86, NTAMD64<br/><br/>
+[InstallSection.NTAMD64]<br/>
+...<br/><br/>
+[InstallSection.NTX86]<br/>
 ...
 ```
 </div>
