@@ -20,6 +20,7 @@
 ## [NFC device drivers](nfc/index.md)
 ## [PCI drivers](pci/index.md)
 ## [PCMCIA drivers](pcmcia/index.md)
+## [Point of Service device drivers](pos/index.md)
 ## [Power management technologies](powermeter/index.md)
 ## [Print device drivers](print/index.md)
 ## [SD card bus drivers](sd/index.md)
