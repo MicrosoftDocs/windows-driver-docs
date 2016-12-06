@@ -38,30 +38,30 @@ Errors in the 1200-1299 range correspond to lines in the INF file that would be 
 <td align="left"><p><span id="_1203__Section_not_found"></span><span id="_1203__section_not_found"></span><span id="_1203__SECTION_NOT_FOUND"></span> <strong>1203: Section not found</strong></p></td>
 <td align="left"><p>For example, the following INF syntax causes error 1203:</p>
 <div class="code">
-```
-[MyInstallSection]<br/>
+<pre>
+[MyInstallSection]
 CopyFiles=driverFile.sys
-```
+</pre>
 </div>
 <p>This error is reported because the <strong>CopyFiles</strong> directive expects a section name (that specifies the list of files to copy). However, the <strong>CopyFiles</strong> directive can specify a file name. To differentiate between a section name and a file name, preface a file name with the @ token as shown here:</p>
 <div class="code">
-```
-[MyInstallSection]<br/>
+<pre>
+[MyInstallSection]
 CopyFiles=@driverFile.sys
-```
+</pre>
 </div></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="1204__Provider_cannot_be_Microsoft"></span><span id="1204__provider_cannot_be_microsoft"></span><span id="1204__PROVIDER_CANNOT_BE_MICROSOFT"></span><strong>1204: Provider cannot be Microsoft</strong></p></td>
 <td align="left"><p>The Provider field in the [Version] section cannot specify Microsoft.</p>
 <div class="code">
-```
-[Version]<br/>
-Signature="$Windows NT$"<br/>
-Class=Sample<br/>
-ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171}<br/>
-Provider="Microsoft"<br/>
-```
+<pre>
+[Version]
+Signature="$Windows NT$"
+Class=Sample
+ClassGuid={78A1C341-4539-11d3-B88D-00C04FAD5171}
+Provider="Microsoft"
+</pre>
 </div></td>
 </tr>
 <tr class="odd">
@@ -70,28 +70,30 @@ Provider="Microsoft"<br/>
 <p>In this example, the install section of A.INF references an equivalent install section in B.INF.</p>
 <p>A.INF contains:</p>
 <div class="code">
-```
-A.INF<br/>
-[InstallSectionA]<br/>
-Include = B.INF<br/>
-Needs = InstallSectionB<br/>
-AddReg = AddRegB ; WARNING 1220<br/><br/>
-[InstallSectionA.Services]<br/>
-Include = B.INF<br/>
-Needs = InstallSectionB.Services<br/>
-```
+<pre>
+A.INF
+[InstallSectionA]
+Include = B.INF
+Needs = InstallSectionB
+AddReg = AddRegB ; WARNING 1220
+
+[InstallSectionA.Services]
+Include = B.INF
+Needs = InstallSectionB.Services
+</pre>
 </div>
 <p>B.INF contains:</p>
 <div class="code">
-```
-B.INF<br/>
-[InstallSectionB]<br/>
-AddReg = AddRegB<br/><br/>
-[InstallSectionB.Services]<br/>
-...<br/><br/>
-[AddRegB]<br/>
+<pre>
+B.INF
+[InstallSectionB]
+AddReg = AddRegB
+[InstallSectionB.Services]
 ...
-```
+
+[AddRegB]
+...
+</pre>
 </div>
 <p>The <strong>Needs</strong> directive must reference an equivalent install section to process in the current install section. For example, a Needs directive in [InstallSectionA.Services] should point to the .Services of another install section. The <strong>Needs</strong> directive may also be used to include the behavior of another DDInstall section of the same INF. Using the <strong>Needs</strong> directive on other types of sections may result in undesired behavior.</p></td>
 </tr>
@@ -104,10 +106,10 @@ AddReg = AddRegB<br/><br/>
 <td align="left"><p><span id="1230__missing_file_under_sourcedisksfiles_section_"></span><span id="1230__missing_file_under_sourcedisksfiles_section_"></span><span id="1230__MISSING_FILE_UNDER_SOURCEDISKSFILES_SECTION_"></span><strong>1230: Missing file 'xxxx' under [SourceDisksFiles] section.</strong></p></td>
 <td align="left"><p>This indicates that a file was specified as part of the driver package, but the source location of the file relative to the INF was not specified in a [SourceDisksFiles] section.</p>
 <div class="code">
-```
-[SourceDisksFiles]<br/>
+<pre>
+[SourceDisksFiles]
 filename=disk id
-```
+</pre>
 </div>
 <p>Note that this error frequently occurs if architecture-decorated versions of [SourceDisksFiles] are specified (such as [SourceDisksFiles.amd64], but not all architectures supported by the INF have a [SourceDisksFiles] section.</p></td>
 </tr>
@@ -115,9 +117,9 @@ filename=disk id
 <td align="left"><p><span id="1233__Missing_directive_required_for_signature"></span><span id="1233__missing_directive_required_for_signature"></span><span id="1233__MISSING_DIRECTIVE_REQUIRED_FOR_SIGNATURE"></span><strong>1233: Missing directive required for signature</strong></p></td>
 <td align="left"><p>In the [Version] section, you must specify a CatalogFile directive (and associated catalog file) to receive a signature on a driver package.</p>
 <div class="code">
-```
+<pre>
 CatalogFile=wudf.cat
-```
+</pre>
 </div></td>
 </tr>
 <tr class="odd">
@@ -125,17 +127,17 @@ CatalogFile=wudf.cat
 <td align="left"><p>A specified string token has no definition in the [Strings] section. For example, the INF file specifies <em>%REG_DWORD%</em> in an <em>add-registry section</em> specified by an [<strong>AddReg</strong>](https://msdn.microsoft.com/library/windows/hardware/ff546320) directive, but there is no corresponding REG_DWORD = 0x00010001 in the [[Strings]](https://msdn.microsoft.com/library/windows/hardware/ff547485) section.</p>
 <p>This error frequently occurs if your INF file specifies a registry value that contains an environment variable. For example:</p>
 <div class="code">
-```
-[MyAddReg]<br/>
+<pre>
+[MyAddReg]
 HKR,,DllPath,”%SystemRoot%\System32\myDll.sys”
-```
+</pre>
 </div>
 <p>This line causes the INF parser to attempt to locate the token "SystemRoot" from the [Strings] section, rather than the intended behavior of storing the literal "%SystemRoot%" in the registry.  To use the literal value “%SystemRoot%” rather than perform a string replacement, use the escape sequence ‘%%’.</p>
 <div class="code">
-```
-[MyAddReg]<br/>
+<pre>
+[MyAddReg]
 HKR,,DllPath,”%%SystemRoot%%\System32\myDll.sys”
-```
+</pre>
 </div></td>
 </tr>
 </tbody>
@@ -181,9 +183,9 @@ The following errors and warnings are related to INF configurability:
 <td align="left"><p><span id="1304__Found_legacy_operation_defining_co-installers"></span><span id="1304__found_legacy_operation_defining_co-installers"></span><span id="1304__FOUND_LEGACY_OPERATION_DEFINING_CO-INSTALLERS"></span><strong>1304: Found legacy operation defining co-installers</strong></p></td>
 <td align="left"><p>Error 1304 indicates that an AddReg operation is specifying a coinstaller. For example:</p>
 <div class="code">
-```
+<pre>
 AddReg = HKR,,CoInstallers32,0x00010000,"MyCoinstaller.dll"
-```
+</pre>
 </div></td>
 </tr>
 <tr class="odd">
@@ -237,11 +239,11 @@ Issues in the 2000-2999 range appears as warnings. Possible values include the f
 <td align="left"><p><span id="2222__Legacy_directive_will_be_ignored."></span><span id="2222__legacy_directive_will_be_ignored."></span><span id="2222__LEGACY_DIRECTIVE_WILL_BE_IGNORED."></span><strong>2222: Legacy directive will be ignored.</strong></p></td>
 <td align="left"><p>This warning indicates that the INF specifies a deprecated directive. When the driver is installed, the directive referencing the section is not evaluated. For example, the [<strong>INF LogConfig Directive</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547448) directive is no longer supported, so the following section results in this warning.</p>
 <div class="code">
-```
+<pre>
 [InstallSection.LogConfigOverride]
 LogConfig=LogConfigSection
 ...
-```
+</pre>
 </div>
 <p>For information about which INF directives are deprecated, see [INF Directives](https://msdn.microsoft.com/library/windows/hardware/ff547388).</p></td>
 </tr>
@@ -249,24 +251,27 @@ LogConfig=LogConfigSection
 <td align="left"><p><span id="2223__Section_should_have_an_architecture_decoration"></span><span id="2223__section_should_have_an_architecture_decoration"></span><span id="2223__SECTION_SHOULD_HAVE_AN_ARCHITECTURE_DECORATION"></span><strong>2223: Section should have an architecture decoration</strong></p></td>
 <td align="left"><p>This warning indicates that the INF file contains an [<strong>INF Manufacturer Section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547454) that specifies a [<strong>model section</strong>](https://msdn.microsoft.com/library/windows/hardware/ff547456) with no architecture decoration. For example, the following INF syntax would result in warning 2223:</p>
 <div class="code">
-```
-[Manufacturer]<br/>
-%MfgName% = InstallSection<br/><br/>
-[InstallSection]<br/>
+<pre>
+[Manufacturer]
+%MfgName% = InstallSection
+
+[InstallSection]
 ...
-```
+</pre>
 </div>
 <p>When you install the driver, the preceding INF syntax defaults to x86.</p>
 <p>Instead, declare all supported architectures and provide a corresponding install section for each:</p>
 <div class="code">
-```
-[Manufacturer]<br/>
-%MfgName% = InstallSection, NTX86, NTAMD64<br/><br/>
-[InstallSection.NTAMD64]<br/>
-...<br/><br/>
-[InstallSection.NTX86]<br/>
+<pre>
+[Manufacturer]
+%MfgName% = InstallSection, NTX86, NTAMD64
+
+[InstallSection.NTAMD64]
 ...
-```
+
+[InstallSection.NTX86]
+...
+</pre>
 </div>
 <p>If the INF file specifies a decorated section for x86 and an undecorated section, the undecorated section is ignored when you install your driver.</p></td>
 </tr>
