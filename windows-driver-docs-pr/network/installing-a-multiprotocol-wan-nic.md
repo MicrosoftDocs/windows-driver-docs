@@ -13,8 +13,8 @@ keywords: ["add-registry-sections WDK networking , multiprotocol WAN NIC", "mult
 
 A multiprotocol WAN NIC provides more than one WAN protocol. For example, such a NIC might allow the user to select ISDN, Frame Relay, or channelized T1. The user selects the WAN protocol during installation of the NIC or when configuring the NIC.
 
-[!NOTE]
-ISDN capabilities have been depricated in Windows 10 and later. 
+> [!NOTE]
+> ISDN capabilities have been deprecated in Windows 10 and later. 
 
 
 A vendor of a multiprotocol WAN NIC must provide a co-installer that installs a wizard page. (For more information about co-installers, see [Writing a Co-installer](https://msdn.microsoft.com/library/windows/hardware/ff554011)). The wizard page prompts the user to select a WAN protocol:
