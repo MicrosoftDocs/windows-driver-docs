@@ -8,7 +8,7 @@ keywords: ["Winsock Kernel WDK networking , socket categories", "WSK WDK network
 # Winsock Kernel Socket Categories
 
 
-The Winsock Kernel (WSK) [Network Programming Interface (NPI)](network-programming-interface.md) defines four different categories of sockets: *basic sockets*, *listening sockets*, *datagram sockets*, and *connection-oriented sockets*. Each WSK socket category has unique functionality and supports a different set of socket functions. A WSK application must specify which category of WSK socket it is creating whenever it creates a new socket. The purpose for each WSK socket category is as follows:
+The Winsock Kernel (WSK) [Network Programming Interface (NPI)](network-programming-interface.md) defines five different categories of sockets: *basic sockets*, *listening sockets*, *datagram sockets*, *connection-oriented sockets*, and *traditional sockets*. Each WSK socket category has unique functionality and supports a different set of socket functions. A WSK application must specify which category of WSK socket it is creating whenever it creates a new socket. The purpose for each WSK socket category is as follows:
 
 <a href="" id="basic-sockets-------"></a>**Basic Sockets**   
 Basic sockets are used only to get and set transport stack socket options or to perform socket I/O control operations. Basic sockets cannot be bound to a local transport address and do not support sending or receiving network data.
@@ -22,7 +22,8 @@ Datagram sockets are used to send and receive datagrams. The functionality of a 
 <a href="" id="connection-oriented-sockets-------"></a>**Connection-Oriented Sockets**   
 Connection-oriented sockets are used to send and receive network data over established connections. The functionality of a connection-oriented socket includes all of the functionality of a basic socket.
 
- 
+ <a href="" id="traditional-sockets-------"></a>**Traditional Sockets**
+Traditional sockets are used either to listen for incoming connections from remote transport addresses (act as a listening socket), or to send and receive network data over established connections (act as a connection-oriented socket). The functionality of a traditional socket includes all of the functionality of a basic socket.
 
  
 
