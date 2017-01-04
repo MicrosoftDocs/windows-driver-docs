@@ -64,7 +64,7 @@ During validation, the dashboard performs the following actions for each package
 
 ### <span id="Submitting_a_service_metadata_package"></span><span id="submitting_a_service_metadata_package"></span><span id="SUBMITTING_A_SERVICE_METADATA_PACKAGE"></span>Submitting a service metadata package
 
-For info about submitting service metadata for a mobile broadband app, see [Service metadata package submission](97b1037e-326a-43e7-8362-12152293be67).
+For info about submitting service metadata for a mobile broadband app, see [Service metadata package submission](https://msdn.microsoft.com/library/windows/hardware/dn247118.aspx).
 
 ## <span id="related_topics"></span>Related topics
 

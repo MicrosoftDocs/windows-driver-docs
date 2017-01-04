@@ -166,7 +166,7 @@ C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http:
 ## <span id="Submit_the_EV_signed_Cab_file_using_the__Hardware_Dev_Center__Sysdev__dashboard"></span><span id="submit_the_ev_signed_cab_file_using_the__hardware_dev_center__sysdev__dashboard"></span><span id="SUBMIT_THE_EV_SIGNED_CAB_FILE_USING_THE__HARDWARE_DEV_CENTER__SYSDEV__DASHBOARD"></span>Submit the EV signed Cab file using the Hardware Dev Center (Sysdev) dashboard
 
 
-1. Submit the EV signed Cab file using the Hardware Dev Center (Sysdev) dashboard For more information see [Driver Signing Properties](vsdriver-driver_signing_properties) and [File Signing Services](file-signing-services.md).
+1. Submit the EV signed Cab file using the Hardware Dev Center (Sysdev) dashboard For more information see [Driver Signing Properties](https://msdn.microsoft.com/windows/hardware/drivers/develop/driver-signing-properties) and [File Signing Services](file-signing-services.md).
 
 As part of the submission process you will indicate what architectures all of the drivers in the submission support. Three options are available using the check boxes.
 
