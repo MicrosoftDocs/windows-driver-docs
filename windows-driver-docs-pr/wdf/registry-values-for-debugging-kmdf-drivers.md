@@ -17,7 +17,7 @@ The following registry values can exist under a driver's **Parameters\\Wdf** sub
 Set to a nonzero value to enable [KMDF Verifier](using-kmdf-verifier.md), which extensively validates a driver's state and function parameters. You should set **VerifierOn** and **DbgBreakOnError** when you are developing your driver.
 
 <a href="" id="verifyon-----------------reg-dword-"></a>**VerifyOn** (**REG\_DWORD**)  
-Set to a nonzero value to enable the [**WDFVERIFY**](https://msdn.microsoft.com/library/windows/hardware/ff551167) macro that is defined in Wdfassert.h, or set to zero to disable the macro. If the VerifyOn value is set, VerifyOn is implicitly set to nonzero.
+Set to a nonzero value to enable the [**WDFVERIFY**](https://msdn.microsoft.com/library/windows/hardware/ff551167) macro that is defined in Wdfassert.h, or set to zero to disable the macro. If the VerifierOn value is set, VerifyOn is implicitly set to nonzero.
 
 <a href="" id="dbgbreakonerror--reg-dword-"></a>**DbgBreakOnError** (**REG\_DWORD**)  
 If set to a nonzero value, the framework breaks into the debugger when a driver calls [**WdfVerifierDbgBreakPoint**](https://msdn.microsoft.com/library/windows/hardware/ff551164). (If the **VerifierOn** value is set, the framework breaks into the debugger even if the **DbgBreakOnError** value does not exist.)
@@ -137,7 +137,7 @@ These additional values are located in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\
 
 When you use the F5 option in Microsoft Visual Studio, all three flags are set for the deployed driver.
 
-<a href="" id="debugmodebinaries--reg-sz-"></a>**DebugModeBinaries** (**REG\_SZ**)  
+<a href="" id="debugmodebinaries--reg-sz-"></a>**DebugModeBinaries** (**REG\_MULTI\_SZ**)  
 This value specifies the names of the driver binaries to be loaded in debug mode. To enable debug mode for driver binaries X.DLL, Y.DLL and Z.DLL, for example, this value would be set to *X.DLL\\0Y.DLL\\0Z.DLL\\0\\0*.
 
 You can also set the following value in **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF**:
