@@ -22,7 +22,7 @@ Datagram sockets are used to send and receive datagrams. The functionality of a 
 <a href="" id="connection-oriented-sockets-------"></a>**Connection-Oriented Sockets**   
 Connection-oriented sockets are used to send and receive network data over established connections. The functionality of a connection-oriented socket includes all of the functionality of a basic socket.
 
- <a href="" id="stream-sockets-------"></a>**Stream Sockets** 
+<a href="" id="stream-sockets-------"></a>**Stream Sockets**   
 Stream sockets are used to either listen for incoming connections from remote transport addresses (act as a listening socket), or to send and receive network data over established connections (act as a connection-oriented socket). The functionality of a traditional socket includes all of the functionality of a basic socket.
  
 
