@@ -1,4 +1,4 @@
----
+﻿---
 Description: Supporting the WPD Infrastructure
 MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_supporting\_wpd\_infrastructure'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -12,7 +12,7 @@ The WPD infrastructure is command driven. When a WPD application calls one of th
 
 The following image of the *WpdMon.exe* tool shows the result of an application calling the **IPortableDeviceProperties::GetPropertyAttributes** method to retrieve the property attributes for the temperature and humidity sensor.
 
-![the wpd monitor ](images/wpdmon-get-attributes.png)
+![the wpd monitor ](images/wpdmon_get_attributes.png)
 
 In the previous image, the WPD serializer converted the **GetPropertyAttributes** call into the WPD\_COMMAND\_OBJECT\_PROPERTIES\_GET\_ATTRIBUTES command and the corresponding parameters. The driver processed this command and issued a response to the WPD API.
 

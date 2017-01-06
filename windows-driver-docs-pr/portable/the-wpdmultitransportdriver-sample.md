@@ -1,4 +1,4 @@
----
+﻿---
 Description: The WpdMultiTransportDriver Sample
 MS-HAID: 'wpddk.the\_wpdmultitransportdriver\_sample'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -18,7 +18,7 @@ Before Windows 7, if a user connected a portable device that supported multiple 
 
 The multitransport driver stack is shown in the following image:
 
-![the driver stack](images/multi-trans-driver-stack.png)
+![the driver stack](images/multi_trans_driver_stack.png)
 
 In the previous image, a hypothetical WPD application (*App.exe*) can move data back and forth between a cell phone that is enabled with multitransport and either a USB or a Bluetooth connection. The WPD Composite driver (*Wpdcomp.dll*) is supplied by Microsoft and is included with Windows 7. The multitransport driver (*WpdMultiTranscell.dll*) is a hypothetical vendor-supplied driver.
 

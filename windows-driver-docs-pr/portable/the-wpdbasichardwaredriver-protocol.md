@@ -1,4 +1,4 @@
----
+﻿---
 Description: The WpdBasicHardwareDriver Protocol
 MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_protocol'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -29,7 +29,7 @@ DEFINE_GUID (EVENT_SENSOR_READING_UPDATED, 0xada23b0b, 0xce13, 0x4e11, 0x9d, 0x2
 
 In the previous image, the SENSOR\_READING line contains data that is sent by the sensor by using the driver to the WPD API. This data is a multibyte packet that has the format that is shown in the following image:
 
-![sensor packet](images/sensiron-packetvsd.png)
+![sensor packet](images/sensiron_packetvsd.png)
 
 The first byte identifies the sensor, the second specifies a count of elements, the third specifies the size of an element, the fourth through (fourth + count) bytes contain the actual data elements, and the last six bytes specify the interval at which the sensor publishes its data to the computer.
 

@@ -1,4 +1,4 @@
----
+﻿---
 Description: Architecture Overview
 MS-HAID: 'wpddk.architecture\_overview'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -10,7 +10,7 @@ title: Architecture Overview
 
 The WPD architecture can be divided into three processes. Within these processes are the three primary components of WPD: the API, the serializer, and the driver. The following illustration depicts these processes and components that constitute the WPD architecture.
 
-![the 3 processes constituting wpd](images/wpd-overview-figure1.png)
+![the 3 processes constituting wpd](images/wpd_overview_figure1.png)
 
 ## <span id="The_WPD_Application_Programming_Interface"></span><span id="the_wpd_application_programming_interface"></span><span id="THE_WPD_APPLICATION_PROGRAMMING_INTERFACE"></span>The WPD Application Programming Interface
 

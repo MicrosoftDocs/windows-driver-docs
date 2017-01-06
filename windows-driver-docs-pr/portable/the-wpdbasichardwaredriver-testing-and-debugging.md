@@ -1,4 +1,4 @@
----
+﻿---
 Description: Testing and Debugging the Sample Driver
 MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_testing\_and\_debugging'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -35,7 +35,7 @@ The WpdInfo.Properties file is found in the same folder as *WpdInfo.exe*. If thi
 
 When you start *WpdInfo.exe*, it prompts you to select a portable device from the list of installed WPD devices. After you choose the sensor device, the tool logs events in the lower pane of its window.
 
-![the wpd information tool](images/wpdinfo-temphumidity-object.png)
+![the wpd information tool](images/wpdinfo_temphumidity_object.png)
 
 When the sensor reading event fired in the previous example, the following information was true:
 
@@ -50,7 +50,7 @@ After you have selected the Parallax BS2 Sensor device, you can use the tool to 
 1.  The first step requires that you to select the TempHumidity functional object from the enumeration pane to display all the property values for that object. You can find this object as the direct child of the DEVICE object on the leftmost pane.
 2.  Next, you click **SENSOR\_UPDATE\_INTERVAL**, which opens the **Edit** dialog box, where you can type the new value as a VT\_UI4 type.
 
-![the wpd information tool](images/wpdinfo-interval.png)
+![the wpd information tool](images/wpdinfo_interval.png)
 
 The allowed range of values is between 02000 and 60000, inclusive. Click **OK**, and the new interval property value is sent to the device. Observe the Events pane, and you can see the events that arrive with the new update interval value in the event parameters.
 

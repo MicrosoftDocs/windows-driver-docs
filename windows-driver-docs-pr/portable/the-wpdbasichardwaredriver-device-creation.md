@@ -1,4 +1,4 @@
----
+﻿---
 Description: Creating the Sensor Devices
 MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_device\_creation'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
@@ -12,7 +12,7 @@ The sensor circuits are based on the sample circuits that are provided by Parall
 
 For example, the datasheet for the Ultrasonic distance sensor shows the following circuit diagram and image:
 
-![ultrasonic distance sensor](images/ping-datasheet.png)
+![ultrasonic distance sensor](images/ping_datasheet.png)
 
 In this diagram, Pin 15 on the BS2 receives the sensor data. The firmware for each of the sensors is very similar. It consists of two primary functions: PollSensor and RetrieveInterval.
 
