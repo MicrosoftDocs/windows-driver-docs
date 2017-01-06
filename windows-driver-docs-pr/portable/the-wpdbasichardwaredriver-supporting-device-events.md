@@ -58,8 +58,8 @@ if (hr == S_OK)
 {
     // Create a buffer with the serialized parameters
     hr = m_pWpdSerializer->GetBufferFromIPortableDeviceValues(m_pEventParams,  
-                                                              &amp;pBuffer,
-                                                              &amp;cbBuffer);
+                                                              &pBuffer,
+                                                              &cbBuffer);
     CHECK_HR(hr, "Failed to get buffer from IPortableDeviceValues");
 }
 // Send the event

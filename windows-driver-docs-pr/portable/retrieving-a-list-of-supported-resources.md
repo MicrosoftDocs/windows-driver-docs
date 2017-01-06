@@ -22,7 +22,7 @@ HRESULT WpdObjectResources::OnGetSupportedResources(
     CComPtr<IPortableDeviceKeyCollection> pKeys;
 
     // Get the Object ID
-    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_RESOURCES_OBJECT_ID, &amp;wszObjectID);
+    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_RESOURCES_OBJECT_ID, &wszObjectID);
     if (hr != S_OK)
     {
         hr = E_INVALIDARG;
@@ -36,7 +36,7 @@ HRESULT WpdObjectResources::OnGetSupportedResources(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceKeyCollection,
-                              (VOID**) &amp;pKeys);
+                              (VOID**) &pKeys);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDeviceKeyCollection");
     }
 

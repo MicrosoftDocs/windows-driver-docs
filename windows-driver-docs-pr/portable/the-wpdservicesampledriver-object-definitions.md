@@ -75,7 +75,7 @@ These object identifier constants are passed to a method in a source module that
         {
             pv.vt       = VT_LPWSTR;
             pv.pwszVal  = CONTACTS_SERVICE_OBJECT_ID;
-            hr = pFunctionalObjects->Add(&amp;pv);
+            hr = pFunctionalObjects->Add(&pv);
             CHECK_HR(hr, "Failed to add contacts service object ID");
         }
     }

@@ -34,7 +34,7 @@ HRESULT WpdBaseDriver::OnGetObjectIDsFromPersistentUniqueIDs(
     // Get the list of Persistent IDs
     if (hr == S_OK)
     {
-        hr = pParams->GetIPortableDevicePropVariantCollectionValue(WPD_PROPERTY_COMMON_PERSISTENT_UNIQUE_IDS, &amp;pPersistentIDs);
+        hr = pParams->GetIPortableDevicePropVariantCollectionValue(WPD_PROPERTY_COMMON_PERSISTENT_UNIQUE_IDS, &pPersistentIDs);
         CHECK_HR(hr, "Failed to get WPD_PROPERTY_COMMON_PERSISTENT_UNIQUE_IDS");
     }
 
@@ -45,14 +45,14 @@ HRESULT WpdBaseDriver::OnGetObjectIDsFromPersistentUniqueIDs(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDevicePropVariantCollection,
-                              (VOID**) &amp;pObjectIDs);
+                              (VOID**) &pObjectIDs);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDevicePropVariantCollection");
     }
 
     // Iterate through the persistent ID list and add the equivalent object ID for each element.
     if (hr == S_OK)
     {
-        hr = pPersistentIDs->GetCount(&amp;dwCount);
+        hr = pPersistentIDs->GetCount(&dwCount);
         CHECK_HR(hr, "Failed to get count from persistent ID collection");
 
         if (hr == S_OK)
@@ -61,13 +61,13 @@ HRESULT WpdBaseDriver::OnGetObjectIDsFromPersistentUniqueIDs(
             PROPVARIANT pvPersistentID = {0};
             PROPVARIANT pvObjectID     = {0};
 
-            PropVariantInit(&amp;pvPersistentID);
-            PropVariantInit(&amp;pvObjectID);
+            PropVariantInit(&pvPersistentID);
+            PropVariantInit(&pvObjectID);
 
             for(dwIndex = 0; dwIndex < dwCount; dwIndex++)
             {
                 pvObjectID.vt = VT_LPWSTR;
-                hr = pPersistentIDs->GetAt(dwIndex, &amp;pvPersistentID);
+                hr = pPersistentIDs->GetAt(dwIndex, &pvPersistentID);
                 CHECK_HR(hr, "Failed to get persistent ID at index %d", dwIndex);
 
                 // Because our persistent unique identifiers are identical to our object
@@ -79,12 +79,12 @@ HRESULT WpdBaseDriver::OnGetObjectIDsFromPersistentUniqueIDs(
 
                 if (hr == S_OK)
                 {
-                    hr = pObjectIDs->Add(&amp;pvObjectID);
+                    hr = pObjectIDs->Add(&pvObjectID);
                     CHECK_HR(hr, "Failed to add next Object ID");
                 }
 
-                PropVariantClear(&amp;pvPersistentID);
-                PropVariantClear(&amp;pvObjectID);
+                PropVariantClear(&pvPersistentID);
+                PropVariantClear(&pvObjectID);
 
                 if(FAILED(hr))
                 {

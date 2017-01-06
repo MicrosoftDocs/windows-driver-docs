@@ -28,7 +28,7 @@ The WpdObjectResources command handlers are invoked by the **WpdObjectResources:
 
 ```ManagedCPlusPlus
 HRESULT WpdObjectResources::DispatchWpdMessage(
-    const PROPERTYKEY&amp;     Command,
+    const PROPERTYKEY&     Command,
     IPortableDeviceValues* pParams,
     IPortableDeviceValues* pResults)
 {

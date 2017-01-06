@@ -99,3 +99,6 @@
       - name: Windows driver samples
         tocHref: /windows/hardware/drivers/samples/
         topicHref: /windows/hardware/drivers/samples/index
+      - name: Windows portable devices
+        tocHref: /windows/hardware/drivers/portable/
+        topicHref: /windows/hardware/drivers/portable/index

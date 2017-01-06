@@ -29,8 +29,8 @@ The following code example shows how the WpdWudfSampleDriver handles step two in
 
 ```ManagedCPlusPlus
 LPWSTR pszEventCookie = NULL; 
-hr = pClientInfo->GetStringValue(WPD_CLIENT_EVENT_COOKIE, &amp;pszEventCookie);
-if (hr == S_OK &amp;&amp; pszEventCookie != NULL){    
+hr = pClientInfo->GetStringValue(WPD_CLIENT_EVENT_COOKIE, &pszEventCookie);
+if (hr == S_OK && pszEventCookie != NULL){    
 // Store the cookie value with the client context    
 pContext->EventCookie = pszEventCookie;
 }
@@ -40,8 +40,8 @@ CoTaskMemFree(pszEventCookie);
 The following code example shows how the WpdWudfSampleDriver handles step three in the previous list.
 
 ```ManagedCPlusPlus
-HRESULT hrEventCookie = GetClientEventCookie(pCommandParams, &amp;pszEventCookie);
-if (hrEventCookie == S_OK &amp;&amp; pszEventCookie != NULL)
+HRESULT hrEventCookie = GetClientEventCookie(pCommandParams, &pszEventCookie);
+if (hrEventCookie == S_OK && pszEventCookie != NULL)
 {    
 // Add it to the event parameters    
 // The application&#39;s OnEvent callback will match this with its cookie    
@@ -55,11 +55,11 @@ The following code example contains an outline of the GetClientEventCookie helpe
 ```ManagedCPlusPlus
 ClientContext* pClientContext = NULL;   
 // This is a context helper object defined by the sample 
-driverhr = pCommandParams->GetStringValue(WPD_PROPERTY_COMMON_CLIENT_INFORMATION_CONTEXT, &amp;pszClientContext);
+driverhr = pCommandParams->GetStringValue(WPD_PROPERTY_COMMON_CLIENT_INFORMATION_CONTEXT, &pszClientContext);
 if (hr == S_OK)
 {    
-hr = GetClientContext(pCommandParams, pszClientContext, (IUnknown**)&amp;pClientContext);    
-if (hr == S_OK &amp;&amp; pClientContext != NULL &amp;&amp; pClientContext->EventCookie.GetLength() > 0)    
+hr = GetClientContext(pCommandParams, pszClientContext, (IUnknown**)&pClientContext);    
+if (hr == S_OK && pClientContext != NULL && pClientContext->EventCookie.GetLength() > 0)    
 {       
 // Allocate the cookie string to return        
 *ppszEventCookie = AtlAllocTaskWideString(pClientContext->EventCookie);    

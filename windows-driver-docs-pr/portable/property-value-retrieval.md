@@ -26,14 +26,14 @@ HRESULT WpdObjectProperties::OnGetPropertyValues(
     // Get the object identifier whose property values have been requested
     if (hr == S_OK)
     {
-        hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_PROPERTIES_OBJECT_ID, &amp;wszObjectID);
+        hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_PROPERTIES_OBJECT_ID, &wszObjectID);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_OBJECT_PROPERTIES_OBJECT_ID");
     }
 
     // Get the list of property keys for the property values the caller wants to retrieve from the specified object
     if (hr == S_OK)
     {
-        hr = pParams->GetIPortableDeviceKeyCollectionValue(WPD_PROPERTY_OBJECT_PROPERTIES_PROPERTY_KEYS, &amp;pKeys);
+        hr = pParams->GetIPortableDeviceKeyCollectionValue(WPD_PROPERTY_OBJECT_PROPERTIES_PROPERTY_KEYS, &pKeys);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_OBJECT_PROPERTIES_PROPERTY_KEYS");
     }
 
@@ -44,7 +44,7 @@ HRESULT WpdObjectProperties::OnGetPropertyValues(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceValues,
-                              (VOID**) &amp;pValues);
+                              (VOID**) &pValues);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDeviceValues");
     }
 

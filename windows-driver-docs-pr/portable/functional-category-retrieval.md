@@ -27,7 +27,7 @@ HRESULT WpdCapabilities::OnGetFunctionalCategories(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDevicePropVariantCollection,
-                              (VOID**) &amp;pFunctionalCategories);
+                              (VOID**) &pFunctionalCategories);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDevicePropVariantCollection");
     }
 
@@ -37,13 +37,13 @@ HRESULT WpdCapabilities::OnGetFunctionalCategories(
         for (DWORD dwIndex = 0; dwIndex < ARRAYSIZE(g_SupportedFunctionalCategories); dwIndex++)
         {
             PROPVARIANT pv = {0};
-            PropVariantInit(&amp;pv);
+            PropVariantInit(&pv);
             // Don&#39;t call PropVariantClear, since we did not allocate the memory for these GUIDs
 
             pv.vt    = VT_CLSID;
-            pv.puuid = (GUID*) &amp;g_SupportedFunctionalCategories[dwIndex];
+            pv.puuid = (GUID*) &g_SupportedFunctionalCategories[dwIndex];
 
-            hr = pFunctionalCategories->Add(&amp;pv);
+            hr = pFunctionalCategories->Add(&pv);
             CHECK_HR(hr, "Failed to add supported functional category at index %d", dwIndex);
             if (FAILED(hr))
             {

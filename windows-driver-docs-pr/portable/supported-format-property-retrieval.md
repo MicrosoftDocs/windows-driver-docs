@@ -25,7 +25,7 @@ HRESULT WpdCapabilities::OnGetSupportedFormatProperties(
     // Get the object format whose supported properties have been requested
     if (hr == S_OK)
     {
-        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FORMAT, &amp;guidObjectFormat);
+        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FORMAT, &guidObjectFormat);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_FORMAT");
     }
 
@@ -36,7 +36,7 @@ HRESULT WpdCapabilities::OnGetSupportedFormatProperties(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceKeyCollection,
-                              (VOID**) &amp;pKeys);
+                              (VOID**) &pKeys);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDeviceKeyCollection");
     }
 

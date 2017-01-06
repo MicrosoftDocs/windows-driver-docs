@@ -23,7 +23,7 @@ HRESULT WpdObjectProperties::OnGetSupportedProperties(
     // then E_INVALIDARG should be returned and no further processing should occur.
 
     // Get the object identifier whose supported properties have been requested
-    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_PROPERTIES_OBJECT_ID, &amp;wszObjectID);
+    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_PROPERTIES_OBJECT_ID, &wszObjectID);
     if (hr != S_OK)
     {
         hr = E_INVALIDARG;
@@ -37,7 +37,7 @@ HRESULT WpdObjectProperties::OnGetSupportedProperties(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceKeyCollection,
-                              (VOID**) &amp;pKeys);
+                              (VOID**) &pKeys);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDeviceKeyCollection");
     }
 

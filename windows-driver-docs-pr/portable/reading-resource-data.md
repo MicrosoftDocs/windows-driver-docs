@@ -28,7 +28,7 @@ HRESULT WpdObjectResources::OnReadResource(
 
     // Get the enumeration context identifier for this enumeration operation.  We will
     // need this to look up the specific enumeration context in the client context map.
-    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_RESOURCES_CONTEXT, &amp;wszResourceContext);
+    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_RESOURCES_CONTEXT, &wszResourceContext);
     if (hr != S_OK)
     {
         hr = E_INVALIDARG;
@@ -38,14 +38,14 @@ HRESULT WpdObjectResources::OnReadResource(
     // Get the number of bytes to read
     if (hr == S_OK)
     {
-        hr = pParams->GetUnsignedIntegerValue(WPD_PROPERTY_OBJECT_RESOURCES_NUM_BYTES_TO_READ, &amp;dwNumBytesToRead);
+        hr = pParams->GetUnsignedIntegerValue(WPD_PROPERTY_OBJECT_RESOURCES_NUM_BYTES_TO_READ, &dwNumBytesToRead);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_OBJECT_RESOURCES_NUM_BYTES_TO_READ");
     }
 
     // Get the destination buffer
     if (hr == S_OK)
     {
-        hr = pParams->GetBufferValue(WPD_PROPERTY_OBJECT_RESOURCES_DATA, &amp;pBuffer, &amp;cbBuffer);
+        hr = pParams->GetBufferValue(WPD_PROPERTY_OBJECT_RESOURCES_DATA, &pBuffer, &cbBuffer);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_OBJECT_RESOURCES_DATA");
     }
 
@@ -53,7 +53,7 @@ HRESULT WpdObjectResources::OnReadResource(
     // operation using the WPD_PROPERTY_OBJECT_RESOURCES_CONTEXT property value obtained above.
     if (hr == S_OK)
     {
-        hr = pParams->GetIUnknownValue(PRIVATE_SAMPLE_DRIVER_CLIENT_CONTEXT_MAP, (IUnknown**)&amp;pContextMap);
+        hr = pParams->GetIUnknownValue(PRIVATE_SAMPLE_DRIVER_CLIENT_CONTEXT_MAP, (IUnknown**)&pContextMap);
         CHECK_HR(hr, "Failed to get PRIVATE_SAMPLE_DRIVER_CLIENT_CONTEXT_MAP");
     }
 
@@ -70,7 +70,7 @@ HRESULT WpdObjectResources::OnReadResource(
     // Read the next chunk of data for this request
     if (hr == S_OK)
     {
-        hr = ReadDataFromResource(pResourceContext, pBuffer, dwNumBytesToRead, &amp;dwNumBytesRead);
+        hr = ReadDataFromResource(pResourceContext, pBuffer, dwNumBytesToRead, &dwNumBytesRead);
         CHECK_HR(hr, "Failed to read %d bytes from resource", dwNumBytesToRead);
     }
 

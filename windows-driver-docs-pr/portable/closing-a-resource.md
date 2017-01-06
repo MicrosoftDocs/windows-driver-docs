@@ -28,7 +28,7 @@ HRESULT WpdObjectResources::OnCloseResource(
 
     // Get the resource context identifier for this resource operation.  We will
     // need this to look up the specific resource context in the client context map.
-    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_RESOURCES_CONTEXT, &amp;wszResourceContext);
+    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_RESOURCES_CONTEXT, &wszResourceContext);
     if (hr != S_OK)
     {
         hr = E_INVALIDARG;
@@ -39,7 +39,7 @@ HRESULT WpdObjectResources::OnCloseResource(
     // operation by using the WPD_PROPERTY_OBJECT_RESOURCES_CONTEXT property value obtained previously.
     if (hr == S_OK)
     {
-        hr = pParams->GetIUnknownValue(PRIVATE_SAMPLE_DRIVER_CLIENT_CONTEXT_MAP, (IUnknown**)&amp;pContextMap);
+        hr = pParams->GetIUnknownValue(PRIVATE_SAMPLE_DRIVER_CLIENT_CONTEXT_MAP, (IUnknown**)&pContextMap);
         CHECK_HR(hr, "Failed to get PRIVATE_SAMPLE_DRIVER_CLIENT_CONTEXT_MAP");
     }
 

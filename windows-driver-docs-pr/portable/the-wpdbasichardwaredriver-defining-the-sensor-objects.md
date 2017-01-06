@@ -74,7 +74,7 @@ These object identifier constants are passed to the methods in source modules th
 ```
 // If the enumeration context reports that there are more objects to return, then continue, if not,
     // return an empty results set.
-    if ((hr == S_OK) &amp;&amp; (pEnumeratorContext != NULL) &amp;&amp; (pEnumeratorContext->HasMoreChildrenToEnumerate() == TRUE))
+    if ((hr == S_OK) && (pEnumeratorContext != NULL) && (pEnumeratorContext->HasMoreChildrenToEnumerate() == TRUE))
     {
         if (pEnumeratorContext->m_strParentObjectID.CompareNoCase(L"") == 0)
         {

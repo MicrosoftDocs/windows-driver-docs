@@ -22,7 +22,7 @@ The following excerpt from the **WpdObjectProperties::DispatchWpdMessage** metho
 
 ```
 HRESULT WpdObjectProperties::DispatchWpdMessage(
-    const PROPERTYKEY&amp;     Command,
+    const PROPERTYKEY&     Command,
     IPortableDeviceValues* pParams,
     IPortableDeviceValues* pResults)
 {

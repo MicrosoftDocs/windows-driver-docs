@@ -24,7 +24,7 @@ When a Windows-based application invokes**IPortableDeviceContent::EnumObject** o
 The **WpdObjectEnumerator** command handlers are invoked by the **WpdObjectEnumerator::DispatchWpdMessage** method. The following excerpt from the sample driver contains the code for **WpdObjectEnumerator::DispatchWpdMessage.**
 
 ```ManagedCPlusPlus
-HRESULT WpdObjectEnumerator::DispatchWpdMessage(const PROPERTYKEY&amp;     Command,
+HRESULT WpdObjectEnumerator::DispatchWpdMessage(const PROPERTYKEY&     Command,
                                                 IPortableDeviceValues* pParams,
                                                 IPortableDeviceValues* pResults)
 {

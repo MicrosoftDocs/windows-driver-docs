@@ -59,7 +59,7 @@ The following code example from the **CDevice::OnPrepareHardware** method shows 
 
                     HRESULT hrTemp = m_pPortableDeviceClassExtension->QueryInterface(
                         __uuidof(IQueueCallbackDeviceIoControl),
-                        (void**)&amp;m_pWpdBaseDriver->m_pQueueCallback
+                        (void**)&m_pWpdBaseDriver->m_pQueueCallback
                         );
                     CHECK_HR(hrTemp, "Failed to obtain IQueueCallbackDeviceIoControl interface from class extension");
 
@@ -75,8 +75,8 @@ The following code example from the **CDevice::OnPrepareHardware** method shows 
                             hr = CreateIDValues(DEVICE_MANUFACTURER_VALUE,
                                                 DEVICE_MODEL_VALUE,
                                                 DEVICE_FIRMWARE_VERSION_VALUE,
-                                                &amp;guidFUID,
-                                                &amp;pIDs);
+                                                &guidFUID,
+                                                &pIDs);
                             CHECK_HR(hr, "Failed to Create the ID value collection");
                         }
 
@@ -115,7 +115,7 @@ The following code example contains the code that creates both the parallel and 
         CComPtr<IUnknown> pIUnknown;
         if(S_OK == hr)
         {
-            hr = CDefaultQueue::CreateInstance(&amp;pIUnknown);
+            hr = CDefaultQueue::CreateInstance(&pIUnknown);
         }
 
         //
@@ -130,7 +130,7 @@ The following code example contains the code that creates both the parallel and 
                               WdfIoQueueDispatchParallel,
                               TRUE,                         // bPowerManaged
                               FALSE,                        // bAllowZeroLengthRequests
-                              &amp;pDefaultQueue);
+                              &pDefaultQueue);
         }
         pIUnknown = NULL;
 
@@ -139,7 +139,7 @@ The following code example contains the code that creates both the parallel and 
         //
         if(S_OK == hr)
         {
-            hr = CQueue::CreateInstance(&amp;pIUnknown);
+            hr = CQueue::CreateInstance(&pIUnknown);
         }
 
         //
@@ -153,7 +153,7 @@ The following code example contains the code that creates both the parallel and 
                               WdfIoQueueDispatchSequential,
                               TRUE,                         // bPowerManaged
                               FALSE,                        // bAllowZeroLengthRequests
-                              &amp;pWpdBaseDriver->m_pWpdQueue);
+                              &pWpdBaseDriver->m_pWpdQueue);
         }
 ```
 

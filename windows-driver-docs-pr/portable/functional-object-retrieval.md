@@ -25,7 +25,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
     // Get the functional category whose functional object identifiers have been requested
     if (hr == S_OK)
     {
-        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY, &amp;guidFunctionalCategory);
+        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY, &guidFunctionalCategory);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY");
     }
 
@@ -36,7 +36,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDevicePropVariantCollection,
-                              (VOID**) &amp;pFunctionalObjects);
+                              (VOID**) &pFunctionalObjects);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDevicePropVariantCollection");
     }
 
@@ -45,7 +45,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
     if (hr == S_OK)
     {
         PROPVARIANT pv = {0};
-        PropVariantInit(&amp;pv);
+        PropVariantInit(&pv);
         // Don&#39;t call PropVariantClear, since we did not allocate the memory for these object identifiers
 
         // Add WPD_DEVICE_OBJECT_ID to the functional object identifiers collection
@@ -56,7 +56,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
             {
                 pv.vt       = VT_LPWSTR;
                 pv.pwszVal  = WPD_DEVICE_OBJECT_ID;
-                hr = pFunctionalObjects->Add(&amp;pv);
+                hr = pFunctionalObjects->Add(&pv);
                 CHECK_HR(hr, "Failed to add device object ID");
             }
         }
@@ -69,7 +69,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
             {
                 pv.vt       = VT_LPWSTR;
                 pv.pwszVal  = STORAGE_OBJECT_ID;
-                hr = pFunctionalObjects->Add(&amp;pv);
+                hr = pFunctionalObjects->Add(&pv);
                 CHECK_HR(hr, "Failed to add storage object ID");
             }
         }

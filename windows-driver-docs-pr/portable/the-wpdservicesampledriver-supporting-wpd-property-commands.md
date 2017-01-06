@@ -90,7 +90,7 @@ HRESULT FakeDevice::GetSupportedProperties(
         return hr;
     }
 
-    hr = GetContent(Scope, wszObjectID, &amp;pContent);
+    hr = GetContent(Scope, wszObjectID, &pContent);
     CHECK_HR(hr, "Failed to get content &#39;%ws&#39;", wszObjectID);
 
     if (hr == S_OK)
@@ -129,7 +129,7 @@ HRESULT FakeContent::GetContent(
 bool FakeContent::CanAccess(
     ACCESS_SCOPE Scope)
 {
-    return ((Scope &amp; RequiredScope) == RequiredScope);
+    return ((Scope & RequiredScope) == RequiredScope);
 }
 
 ```

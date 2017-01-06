@@ -57,7 +57,7 @@ The following is the complete source code for the ultrasonic distance sensor:
 
 ```
 &#39; Smart Sensors and Applications - PingMeasureCmAndIn.bs2
-&#39; Measure distance with Ping))) sensor and display in both in &amp; cm
+&#39; Measure distance with Ping))) sensor and display in both in & cm
 &#39; {$STAMP BS2}
 &#39; {$PBASIC 2.5}
 &#39; Conversion constants for room temperature measurements.

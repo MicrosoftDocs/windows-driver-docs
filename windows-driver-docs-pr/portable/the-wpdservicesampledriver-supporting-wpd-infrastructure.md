@@ -30,7 +30,7 @@ HRESULT WpdService::DispatchWpdMessage(
     LPWSTR      pszRequestFilename  = NULL;
 
     // Get the request filename to process the service message
-    hr = pParams->GetStringValue(PRIVATE_SAMPLE_DRIVER_REQUEST_FILENAME, &amp;pszRequestFilename);
+    hr = pParams->GetStringValue(PRIVATE_SAMPLE_DRIVER_REQUEST_FILENAME, &pszRequestFilename);
     if (FAILED(hr))
     {
         hr = E_INVALIDARG;

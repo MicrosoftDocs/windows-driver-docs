@@ -132,7 +132,7 @@ The following excerpt from the **GetPropertyValuesForObject** method contains th
             for (DWORD dwIndex = 0; dwIndex < cKeys; dwIndex++)
             {
                 PROPERTYKEY Key = WPD_PROPERTY_NULL;
-                hr = pKeys->GetAt(dwIndex, &amp;Key);
+                hr = pKeys->GetAt(dwIndex, &Key);
                 CHECK_HR(hr, "Failed to get PROPERTYKEY at index %d in collection", dwIndex);
 
                 if (hr == S_OK)

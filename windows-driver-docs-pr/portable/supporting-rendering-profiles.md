@@ -40,14 +40,14 @@ HRESULT SetRenderingProfiles(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceValuesCollection,
-                              (VOID**) &amp;pProfiles);
+                              (VOID**) &pProfiles);
         CHECK_HR(hr, "Failed to CoCreateInstance CLSID_PortableDeviceValuesCollection");
     }
 
     // Get the preferred audio profile
     if (hr == S_OK)
     {
-        hr = GetPreferredAudioProfile(&amp;pPreferredProfile);
+        hr = GetPreferredAudioProfile(&pPreferredProfile);
         CHECK_HR(hr, "Failed to get preferred audio profile properties");
     }
 
@@ -61,7 +61,7 @@ HRESULT SetRenderingProfiles(
     // Get the second audio profile
     if (hr == S_OK)
     {
-        hr = GetAudioProfile2(&amp;pProfile2);
+        hr = GetAudioProfile2(&pProfile2);
         CHECK_HR(hr, "Failed to get second audio profile properties");
     }
 
@@ -105,7 +105,7 @@ HRESULT GetPreferredAudioProfile(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceValues,
-                              (VOID**) &amp;pProfile);
+                              (VOID**) &pProfile);
         CHECK_HR(hr, "Failed to CoCreateInstance CLSID_PortableDeviceValues");
     }
 

@@ -69,29 +69,29 @@ CQueue::OnDeviceIoControl(
         // Get input memory buffer, the memory object is always returned even if the
         // underlying buffer is NULL
         //
-        pRequest->GetInputMemory(&amp;pMemoryIn);
-        pInputBuffer = (BYTE*) pMemoryIn->GetDataBuffer(&amp;cbInputBuffer);
+        pRequest->GetInputMemory(&pMemoryIn);
+        pInputBuffer = (BYTE*) pMemoryIn->GetDataBuffer(&cbInputBuffer);
 
         //
         // Get output memory buffer, the memory object is always returned even if the
         // underlying buffer is NULL
         //
-        pRequest->GetOutputMemory(&amp;pMemoryOut);
-        pOutputBuffer = (BYTE*) pMemoryOut->GetDataBuffer(&amp;cbOutputBuffer);
+        pRequest->GetOutputMemory(&pMemoryOut);
+        pOutputBuffer = (BYTE*) pMemoryOut->GetDataBuffer(&cbOutputBuffer);
 
         
         // Get the Context map for this client
-        pRequest->GetFileObject(&amp;pFileObject);
+        pRequest->GetFileObject(&pFileObject);
         if (pFileObject != NULL)
         {
-            hr = pFileObject->RetrieveContext((void**)&amp;pClientContextMap);
+            hr = pFileObject->RetrieveContext((void**)&pClientContextMap);
             CHECK_HR(hr, "Failed to get Contextmap from WDF File Object");
         }
 
         if (hr == S_OK)
         {
             // Get the device object
-            pQueue->GetDevice(&amp;pDevice );
+            pQueue->GetDevice(&pDevice );
             hr = ProcessWpdMessage(ControlCode,
                                    pClientContextMap,
                                    pDevice,
@@ -99,7 +99,7 @@ CQueue::OnDeviceIoControl(
                                    (DWORD)cbInputBuffer,
                                    pOutputBuffer,
                                    (DWORD)cbOutputBuffer,
-                                   &amp;dwBytesWritten);
+                                   &dwBytesWritten);
         }
 
    
@@ -148,7 +148,7 @@ HRESULT CQueue::ProcessWpdMessage(
     {
         hr = m_pWpdSerializer->GetIPortableDeviceValuesFromBuffer((BYTE*)pInBuffer,
                                                                   ulInputBufferLength,
-                                                                  &amp;pParams);
+                                                                  &pParams);
         CHECK_HR(hr, "Failed to deserialize command parameters from input buffer");
     }
 

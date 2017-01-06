@@ -25,7 +25,7 @@ HRESULT WpdCapabilities::OnGetSupportedContentTypes(
     // Get the functional category whose supported content types have been requested
     if (hr == S_OK)
     {
-        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY, &amp;guidFunctionalCategory);
+        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY, &guidFunctionalCategory);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY");
     }
 
@@ -36,7 +36,7 @@ HRESULT WpdCapabilities::OnGetSupportedContentTypes(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDevicePropVariantCollection,
-                              (VOID**) &amp;pContentTypes);
+                              (VOID**) &pContentTypes);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDevicePropVariantCollection");
     }
 
@@ -45,7 +45,7 @@ HRESULT WpdCapabilities::OnGetSupportedContentTypes(
     if (hr == S_OK)
     {
         PROPVARIANT pv = {0};
-        PropVariantInit(&amp;pv);
+        PropVariantInit(&pv);
         // Don&#39;t call PropVariantClear, since we did not allocate the memory for these GUIDs
 
         // Add supported content types for known functional categories
@@ -53,16 +53,16 @@ HRESULT WpdCapabilities::OnGetSupportedContentTypes(
         {
             // Add WPD_CONTENT_TYPE_DOCUMENT to the supported content type collection
             pv.vt    = VT_CLSID;
-            pv.puuid = (CLSID*)&amp;WPD_CONTENT_TYPE_DOCUMENT;
-            hr = pContentTypes->Add(&amp;pv);
+            pv.puuid = (CLSID*)&WPD_CONTENT_TYPE_DOCUMENT;
+            hr = pContentTypes->Add(&pv);
             CHECK_HR(hr, "Failed to add WPD_CONTENT_TYPE_DOCUMENT");
 
             if (hr == S_OK)
             {
                 // Add WPD_CONTENT_TYPE_FOLDER to the supported content type collection
                 pv.vt    = VT_CLSID;
-                pv.puuid = (CLSID*)&amp;WPD_CONTENT_TYPE_FOLDER;
-                hr = pContentTypes->Add(&amp;pv);
+                pv.puuid = (CLSID*)&WPD_CONTENT_TYPE_FOLDER;
+                hr = pContentTypes->Add(&pv);
                 CHECK_HR(hr, "Failed to add WPD_CONTENT_TYPE_FOLDER");
             }
         }

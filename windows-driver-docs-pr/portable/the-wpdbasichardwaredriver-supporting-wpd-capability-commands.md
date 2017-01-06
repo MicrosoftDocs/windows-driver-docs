@@ -116,7 +116,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
     // Get the functional category whose functional object identifiers have been requested
     if (hr == S_OK)
     {
-        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY, &amp;guidFunctionalCategory);
+        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY, &guidFunctionalCategory);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY");
     }
 
@@ -127,7 +127,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDevicePropVariantCollection,
-                              (VOID**) &amp;pFunctionalObjects);
+                              (VOID**) &pFunctionalObjects);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDevicePropVariantCollection");
     }
 
@@ -136,7 +136,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
     if (hr == S_OK)
     {
         PROPVARIANT pv = {0};
-        PropVariantInit(&amp;pv);
+        PropVariantInit(&pv);
         // Don&#39;t call PropVariantClear, since we did not allocate the memory for these object identifiers
 
         // Add WPD_DEVICE_OBJECT_ID to the functional object identifiers collection
@@ -148,7 +148,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
             {
                 pv.vt       = VT_LPWSTR;
                 pv.pwszVal  = WPD_DEVICE_OBJECT_ID;
-                hr = pFunctionalObjects->Add(&amp;pv);
+                hr = pFunctionalObjects->Add(&pv);
                 CHECK_HR(hr, "Failed to add device object ID");
             }
         }
@@ -162,7 +162,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
             {
                 pv.vt       = VT_LPWSTR;
                 pv.pwszVal  = SENSOR_OBJECT_ID;
-                hr = pFunctionalObjects->Add(&amp;pv);
+                hr = pFunctionalObjects->Add(&pv);
                 CHECK_HR(hr, "Failed to add sensor object ID");
             }
         }
@@ -204,7 +204,7 @@ HRESULT WpdCapabilities::OnGetSupportedContentTypes(
     if (hr == S_OK)
     {
         hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY, 
-                                   &amp;guidFunctionalCategory);
+                                   &guidFunctionalCategory);
         CHECK_HR(hr, 
                  "Missing value for 
                   WPD_PROPERTY_CAPABILITIES_FUNCTIONAL_CATEGORY");
@@ -217,7 +217,7 @@ HRESULT WpdCapabilities::OnGetSupportedContentTypes(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDevicePropVariantCollection,
-                              (VOID**) &amp;pContentTypes);
+                              (VOID**) &pContentTypes);
         CHECK_HR(hr, 
                  "Failed to CoCreate CLSID_PortableDevicePropVariantCollection");
     }
@@ -258,7 +258,7 @@ HRESULT WpdCapabilities::OnGetSupportedFormats(
     if (hr == S_OK)
     {
         hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_CONTENT_TYPE, 
-                                   &amp;guidContentType);
+                                   &guidContentType);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_CONTENT_TYPE");
     }
 
@@ -269,7 +269,7 @@ HRESULT WpdCapabilities::OnGetSupportedFormats(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDevicePropVariantCollection,
-                              (VOID**) &amp;pFormats);
+                              (VOID**) &pFormats);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDevicePropVariantCollection");
     }
 
@@ -317,7 +317,7 @@ HRESULT WpdCapabilities::OnGetSupportedEvents(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDevicePropVariantCollection,
-                              (VOID**) &amp;pEvents);
+                              (VOID**) &pEvents);
         CHECK_HR(hr, 
                  "Failed to CoCreate CLSID_PortableDevicePropVariantCollection");
     }
@@ -329,14 +329,14 @@ HRESULT WpdCapabilities::OnGetSupportedEvents(
         for (DWORD dwIndex = 0; dwIndex < ARRAYSIZE(g_SupportedEvents); dwIndex++)
         {
             PROPVARIANT pv = {0};
-            PropVariantInit(&amp;pv);
+            PropVariantInit(&pv);
             // Don&#39;t call PropVariantClear, 
             // since we did not allocate the memory for these GUIDs
 
             pv.vt    = VT_CLSID;
-            pv.puuid = (GUID*) &amp;g_SupportedEvents[dwIndex];
+            pv.puuid = (GUID*) &g_SupportedEvents[dwIndex];
 
-            hr = pEvents->Add(&amp;pv);
+            hr = pEvents->Add(&pv);
             CHECK_HR(hr, "Failed to add supported event at index %d", dwIndex);
             if (FAILED(hr))
             {
@@ -379,7 +379,7 @@ HRESULT WpdCapabilities::OnGetEventOptions(
     // Get the event whose options have been requested
     if (hr == S_OK)
     {
-        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_EVENT, &amp;Event);
+        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_EVENT, &Event);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_EVENT");
     }
 
@@ -390,7 +390,7 @@ HRESULT WpdCapabilities::OnGetEventOptions(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceValues,
-                              (VOID**) &amp;pOptions);
+                              (VOID**) &pOptions);
         CHECK_HR(hr, "Failed to CoCreateInstance CLSID_PortableDeviceValues");
     }
 

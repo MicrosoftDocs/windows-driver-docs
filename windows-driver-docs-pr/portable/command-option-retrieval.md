@@ -25,7 +25,7 @@ HRESULT WpdCapabilities::OnGetCommandOptions(
     // Get the command whose options have been requested
     if (hr == S_OK)
     {
-        hr = pParams->GetKeyValue(WPD_PROPERTY_CAPABILITIES_COMMAND, &amp;Command);
+        hr = pParams->GetKeyValue(WPD_PROPERTY_CAPABILITIES_COMMAND, &Command);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_COMMAND");
     }
 
@@ -36,7 +36,7 @@ HRESULT WpdCapabilities::OnGetCommandOptions(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceValues,
-                              (VOID**) &amp;pOptions);
+                              (VOID**) &pOptions);
         CHECK_HR(hr, "Failed to CoCreateInstance CLSID_PortableDeviceValues");
     }
 

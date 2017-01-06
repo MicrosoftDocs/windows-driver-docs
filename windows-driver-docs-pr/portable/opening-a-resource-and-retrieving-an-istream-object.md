@@ -31,7 +31,7 @@ HRESULT WpdObjectResources::OnOpenResource(
     ContextMap* pContextMap     = NULL;
 
     // Get the Object identifier of the object which contains the specified resource
-    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_RESOURCES_OBJECT_ID, &amp;wszObjectID);
+    hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_RESOURCES_OBJECT_ID, &wszObjectID);
     if (hr != S_OK)
     {
         hr = E_INVALIDARG;
@@ -41,14 +41,14 @@ HRESULT WpdObjectResources::OnOpenResource(
     // Get the resource key
     if (hr == S_OK)
     {
-        hr = pParams->GetKeyValue(WPD_PROPERTY_OBJECT_RESOURCES_RESOURCE_KEYS, &amp;Key);
+        hr = pParams->GetKeyValue(WPD_PROPERTY_OBJECT_RESOURCES_RESOURCE_KEYS, &Key);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_OBJECT_RESOURCES_RESOURCE_KEYS");
     }
 
     // Get the access mode
     if (hr == S_OK)
     {
-        hr = pParams->GetUnsignedIntegerValue(WPD_PROPERTY_OBJECT_RESOURCES_ACCESS_MODE, &amp;dwMode);
+        hr = pParams->GetUnsignedIntegerValue(WPD_PROPERTY_OBJECT_RESOURCES_ACCESS_MODE, &dwMode);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_OBJECT_RESOURCES_ACCESS_MODE");
     }
 
@@ -75,7 +75,7 @@ HRESULT WpdObjectResources::OnOpenResource(
         }
         if (hr == S_OK)
         {
-            if ((dwMode &amp; STGM_WRITE) != 0)
+            if ((dwMode & STGM_WRITE) != 0)
             {
                 hr = E_ACCESSDENIED;
                 CHECK_HR(hr, "This resource is not available for write access");
@@ -86,7 +86,7 @@ HRESULT WpdObjectResources::OnOpenResource(
     // Get the context map which the driver stored in pParams for convenience
     if (hr == S_OK)
     {
-        hr = pParams->GetIUnknownValue(PRIVATE_SAMPLE_DRIVER_CLIENT_CONTEXT_MAP, (IUnknown**)&amp;pContextMap);
+        hr = pParams->GetIUnknownValue(PRIVATE_SAMPLE_DRIVER_CLIENT_CONTEXT_MAP, (IUnknown**)&pContextMap);
         CHECK_HR(hr, "Failed to get PRIVATE_SAMPLE_DRIVER_CLIENT_CONTEXT_MAP");
     }
 

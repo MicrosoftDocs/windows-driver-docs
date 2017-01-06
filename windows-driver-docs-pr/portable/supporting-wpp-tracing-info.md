@@ -60,7 +60,7 @@ The following code example contains the updates to make to *Stdafx.h* if your dr
            WPP_LEVEL_LOGGER(flags)
 
 #define WPP_LEVEL_FLAGS_ENABLED(lvl, flags) \
-           (WPP_LEVEL_ENABLED(flags) &amp;&amp; WPP_CONTROL(WPP_BIT_ ## flags).Level >= lvl)
+           (WPP_LEVEL_ENABLED(flags) && WPP_CONTROL(WPP_BIT_ ## flags).Level >= lvl)
 
 //
 // This comment block is scanned by the trace preprocessor to define our

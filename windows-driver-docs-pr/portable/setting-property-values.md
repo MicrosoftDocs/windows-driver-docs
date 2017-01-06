@@ -28,14 +28,14 @@ HRESULT WpdObjectProperties::OnSetPropertyValues(
     // Get the object identifier whose property values are being set
     if (hr == S_OK)
     {
-        hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_PROPERTIES_OBJECT_ID, &amp;wszObjectID);
+        hr = pParams->GetStringValue(WPD_PROPERTY_OBJECT_PROPERTIES_OBJECT_ID, &wszObjectID);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_OBJECT_PROPERTIES_OBJECT_ID");
     }
 
     // Get the caller-supplied property values requested to be set on the object
     if (hr == S_OK)
     {
-        hr = pParams->GetIPortableDeviceValuesValue(WPD_PROPERTY_OBJECT_PROPERTIES_PROPERTY_VALUES, &amp;pValues);
+        hr = pParams->GetIPortableDeviceValuesValue(WPD_PROPERTY_OBJECT_PROPERTIES_PROPERTY_VALUES, &pValues);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_OBJECT_PROPERTIES_PROPERTY_VALUES");
     }
 
@@ -46,7 +46,7 @@ HRESULT WpdObjectProperties::OnSetPropertyValues(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceValues,
-                              (VOID**) &amp;pWriteResults);
+                              (VOID**) &pWriteResults);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDeviceValues");
     }
 
@@ -57,7 +57,7 @@ HRESULT WpdObjectProperties::OnSetPropertyValues(
         // results will be set to E_ACCESSDENIED.
         if (hr == S_OK)
         {
-            hr = pValues->GetCount(&amp;cValues);
+            hr = pValues->GetCount(&cValues);
             CHECK_HR(hr, "Failed to get total number of values");
         }
 
@@ -66,7 +66,7 @@ HRESULT WpdObjectProperties::OnSetPropertyValues(
             for (DWORD dwIndex = 0; dwIndex < cValues; dwIndex++)
             {
                 PROPERTYKEY Key = WPD_PROPERTY_NULL;
-                hr = pValues->GetAt(dwIndex, &amp;Key, NULL);
+                hr = pValues->GetAt(dwIndex, &Key, NULL);
                 CHECK_HR(hr, "Failed to get PROPERTYKEY at index %d", dwIndex);
 
                 if (hr == S_OK)

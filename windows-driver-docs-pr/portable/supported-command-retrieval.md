@@ -63,7 +63,7 @@ HRESULT WpdCapabilities::OnGetSupportedCommands(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceKeyCollection,
-                              (VOID**) &amp;pCommands);
+                              (VOID**) &pCommands);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDeviceKeyCollection");
     }
 

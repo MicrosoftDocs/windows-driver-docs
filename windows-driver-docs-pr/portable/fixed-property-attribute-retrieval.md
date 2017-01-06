@@ -26,14 +26,14 @@ HRESULT WpdCapabilities::OnGetFixedPropertyAttributes(
     // Get the object format whose fixed property attributes have been requested
     if (hr == S_OK)
     {
-        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FORMAT, &amp;guidObjectFormat);
+        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_FORMAT, &guidObjectFormat);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_FORMAT");
     }
 
     // Get the property whose fixed property attributes have been requested
     if(hr == S_OK)
     {
-        hr = pParams->GetKeyValue(WPD_PROPERTY_CAPABILITIES_PROPERTY_KEYS, &amp;key);
+        hr = pParams->GetKeyValue(WPD_PROPERTY_CAPABILITIES_PROPERTY_KEYS, &key);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_PROPERTY_KEYS");
     }
 
@@ -44,7 +44,7 @@ HRESULT WpdCapabilities::OnGetFixedPropertyAttributes(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDeviceValues,
-                              (VOID**) &amp;pAttributes);
+                              (VOID**) &pAttributes);
         CHECK_HR(hr, "Failed to CoCreateInstance CLSID_PortableDeviceValues");
     }
 

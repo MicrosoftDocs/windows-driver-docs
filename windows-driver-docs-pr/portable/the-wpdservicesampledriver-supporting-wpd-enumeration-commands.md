@@ -53,9 +53,9 @@ The driver calls the **WpdObjectEnumerator::OnFindNext** handler in response to 
 The following code example shows the **OnFindNext** handler calling the **FakeDevice::FindNext** method:
 
 ```ManagedCPlusPlus
-    if ((hr == S_OK) &amp;&amp; (pEnumeratorContext != NULL))
+    if ((hr == S_OK) && (pEnumeratorContext != NULL))
     {
-        hr = m_pDevice->FindNext(dwNumObjectsRequested, pEnumeratorContext, pObjectIDCollection, &amp;dwNumObjectsEnumerated);
+        hr = m_pDevice->FindNext(dwNumObjectsRequested, pEnumeratorContext, pObjectIDCollection, &dwNumObjectsEnumerated);
         CHECK_HR(hr, "Failed to get the next object");
     }
 ```
@@ -64,7 +64,7 @@ The following code example shows the **FakeDevice::FindNext** method calling the
 
 ```ManagedCPlusPlus
                     FakeContent* pChild = NULL;
-                    if (pContent->FindNext(pEnumContext->m_Scope, dwStartIndex, &amp;pChild))
+                    if (pContent->FindNext(pEnumContext->m_Scope, dwStartIndex, &pChild))
                     {
                         hr = AddStringValueToPropVariantCollection(pObjectIDCollection, pChild->ObjectID);
                         CHECK_HR(hr, "Failed to add object [%ws]", pChild->ObjectID);

@@ -13,7 +13,7 @@ By default, WPD broadcasts service events to all client applications (even clien
 The following code example shows how **WPD\_OBJECT\_CONTAINER\_FUNCTIONAL\_OBEJCT\_ID** is added to the event parameters in **FakeDevice::SetPropertyValues**, to indicate that an object has been updated:
 
 ```ManagedCPlusPlus
-        if (SUCCEEDED(hr) &amp;&amp; (*pbObjectChanged)) 
+        if (SUCCEEDED(hr) && (*pbObjectChanged)) 
         {
             HRESULT hrEvent = pEventParams->SetGuidValue(WPD_EVENT_PARAMETER_EVENT_ID, WPD_EVENT_OBJECT_UPDATED);
             CHECK_HR(hrEvent, "Failed to add WPD_EVENT_PARAMETER_EVENT_ID");

@@ -25,7 +25,7 @@ HRESULT WpdCapabilities::OnGetSupportedFormats(
     // Get the content type whose supported formats have been requested
     if (hr == S_OK)
     {
-        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_CONTENT_TYPE, &amp;guidContentType);
+        hr = pParams->GetGuidValue(WPD_PROPERTY_CAPABILITIES_CONTENT_TYPE, &guidContentType);
         CHECK_HR(hr, "Missing value for WPD_PROPERTY_CAPABILITIES_CONTENT_TYPE");
     }
 
@@ -36,7 +36,7 @@ HRESULT WpdCapabilities::OnGetSupportedFormats(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IPortableDevicePropVariantCollection,
-                              (VOID**) &amp;pFormats);
+                              (VOID**) &pFormats);
         CHECK_HR(hr, "Failed to CoCreate CLSID_PortableDevicePropVariantCollection");
     }
 
@@ -44,7 +44,7 @@ HRESULT WpdCapabilities::OnGetSupportedFormats(
     if (hr == S_OK)
     {
         PROPVARIANT pv = {0};
-        PropVariantInit(&amp;pv);
+        PropVariantInit(&pv);
         // Don&#39;t call PropVariantClear, since we did not allocate the memory for these GUIDs
 
         if ((guidContentType   == WPD_CONTENT_TYPE_DOCUMENT) ||
@@ -52,8 +52,8 @@ HRESULT WpdCapabilities::OnGetSupportedFormats(
         {
             // Add WPD_OBJECT_FORMAT_TEXT to the supported formats collection
             pv.vt    = VT_CLSID;
-            pv.puuid = (CLSID*)&amp;WPD_OBJECT_FORMAT_TEXT;
-            hr = pFormats->Add(&amp;pv);
+            pv.puuid = (CLSID*)&WPD_OBJECT_FORMAT_TEXT;
+            hr = pFormats->Add(&pv);
             CHECK_HR(hr, "Failed to add WPD_OBJECT_FORMAT_TEXT");
         }
     }
