@@ -1,6 +1,7 @@
 ---
 title: Attestation Signing a Kernel Driver for Public Release
 author: DOMARS
+redirect_url: https://msdn.microsoft.com/library/windows/hardware/mt786448
 ---
 
 # Attestation Signing a Kernel Driver for Public Release

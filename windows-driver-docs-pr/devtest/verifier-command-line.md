@@ -669,8 +669,6 @@ The following extension options are supported.
 </tbody>
 </table>
 
- 
-
 <span id="________logging_______"></span><span id="________LOGGING_______"></span> **/logging**   
 Enables logging for violated rules detected by the selected verifier extensions.
 
