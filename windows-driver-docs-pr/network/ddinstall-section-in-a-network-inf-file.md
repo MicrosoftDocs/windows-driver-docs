@@ -42,18 +42,18 @@ The **Characteristics** entry can have one or more of the following values (mult
 <tr class="odd">
 <td align="left"><p>0x1</p></td>
 <td align="left"><p>NCF_VIRTUAL</p></td>
-<td align="left"><p>Component is a virtual adapter. The device is not on a physical bus, such as the PCI bus or USB, but is on the root bus.</p></td>
+<td align="left"><p>Component is a virtual adapter. The device is not on a physical bus, such as the PCI bus or USB, but is on the root bus. This flag is only applicable to drivers which use the Net device setup class.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x2</p></td>
 <td align="left"><p>NCF_SOFTWARE_ENUMERATED</p></td>
-<td align="left"><p>Component is a software-enumerated adapter.</p></td>
+<td align="left"><p>Component is a software-enumerated adapter. This flag is only applicable to drivers which use the Net device setup class.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4</p></td>
 <td align="left"><p>NCF_PHYSICAL</p></td>
 <td align="left"><p>Component is a physical adapter that the driver communicates with directly (for example, through the PCI bus) or indirectly (for example, through USB).</p>
-<p>Select this option if the driver supports a physical network interface.¹</p></td>
+<p>Select this option if the driver supports a physical network interface.¹ This flag is only applicable to drivers which use the Net device setup class.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x8</p></td>
@@ -79,12 +79,18 @@ The **Characteristics** entry can have one or more of the following values (mult
 <tr class="even">
 <td align="left"><p>0x400</p></td>
 <td align="left"><p>NCF_FILTER</p></td>
-<td align="left"><p>Component is a filter.</p></td>
+<td align="left"><p>Component is a Filter Intermediate driver.  Filter Intermediate drivers are not supported in Windows 10 or later.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4000</p></td>
 <td align="left"><p>NCF_NDIS_PROTOCOL</p></td>
 <td align="left"><p>Component requires the unload event that is provided by the binding engine to the <strong>NetTrans</strong> device setup class (typically used by filter Intermediate drivers which use the <strong>NetService</strong> device setup class).</p></td>
+</tr>
+</tr>
+<tr class="even">
+<td align="left"><p>0x40000</p></td>
+<td align="left"><p>NCF_LW_FILTER</p></td>
+<td align="left"><p>Component is a lightweight filter driver.  This flag is only applicable to drivers which use the NetService device setup class.</p></td>
 </tr>
 </tbody>
 </table>
@@ -95,7 +101,7 @@ The **Characteristics** entry can have one or more of the following values (mult
 
 The following combinations of **Characteristics** values are not allowed:
 
--   NCF\_VIRTUAL, NCF\_SOFTWARE\_ENUMERATED, and NCF\_PHYSICAL are mutually exclusive.
+-   NCF\_VIRTUAL, NCF\_SOFTWARE\_ENUMERATED, and NCF\_PHYSICAL are mutually exclusive. 
 
 -   NCF\_NO\_SERVICE cannot be used with NCF\_VIRTUAL, NCF\_SOFTWARE\_ENUMERATED, or NCF\_PHYSICAL. A virtual, software-enumerated, or physical adapter must always have an associated service (device driver).
 

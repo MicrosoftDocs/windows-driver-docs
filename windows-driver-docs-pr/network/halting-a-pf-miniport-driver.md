@@ -55,7 +55,7 @@ After all receive filters, nondefault VPorts, and VFs have been deleted from the
 
 When NDIS calls *MiniportHaltEx*, the PF miniport driver must follow these steps:
 
-1.  If the PF miniport driver supports the static creation of NIC switches and all the NIC switches have been deleted, the driver must call [**NdisMEnableVirtualization**](https://msdn.microsoft.com/library/windows/hardware/hh451481).to disable virtualization on the adapter. To disable virtualization, the network adapter must set the *EnableVirtualization* parameter to FALSE and the *NumVFs* parameter to zero.
+1.  If the PF miniport driver supports the static creation of NIC switches and all the NIC switches have been deleted, the driver must disable the virtualization on the adapter by calling [**NdisMEnableVirtualization**](https://msdn.microsoft.com/library/windows/hardware/hh451481) with *EnableVirtualization* parameter set to FALSE and the *NumVFs* parameter set to zero.
 
     [**NdisMEnableVirtualization**](https://msdn.microsoft.com/library/windows/hardware/hh451481) clears the **NumVFs** member and the **VF Enable** bit in the SR-IOV Extended Capability structure in the PCIe configuration space of the network adapter's PF.
 

@@ -31,4 +31,5 @@
 ## [Test Authoring and Execution Framework (TAEF)](taef/index.md)
 ## [Windows Device Testing Framework (WDTF)](wdtf/index.md)
 ## [Windows driver samples](samples/index.md)
+## [Windows Hardware Dev Center Dashboard](dashboard/index.md)
 ## [Windows Hardware Error Architecture (WHEA)](whea/index.md)
