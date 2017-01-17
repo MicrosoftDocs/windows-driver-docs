@@ -7,9 +7,6 @@ keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast
 
 # C28118
 
-> [!WARNING]
-> C28114: Copying a whole IRP stack entry leaves certain fields initialized that should be cleared or updated.
-
 The current function is permitted to run at an IRQ level 
 above the maximum permitted for %func% (%level%). 
 Prior function calls or annotation are inconsistent with 
