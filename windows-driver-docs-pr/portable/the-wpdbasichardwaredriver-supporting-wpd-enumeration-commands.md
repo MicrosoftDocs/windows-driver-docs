@@ -1,0 +1,84 @@
+---
+Description: Supporting the Enumeration Commands
+MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_supporting\_wpd\_enumeration\_commands'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Supporting the Enumeration Commands
+---
+
+# Supporting the Enumeration Commands
+
+
+The sample driver supports three enumeration commands. These commands are processed initially by the **WpdObjectEnumerator::DispatchMessage** method that, in turn, invokes a corresponding command handler. The **DispatchMessage** method and the individual handlers are all found in the *WpdObjectEnum.cpp* file.
+
+The information in the following table shows each of the supported property commands, together with the names of the handlers that **DispatchMessage** calls when it processes a given command. These commands are issued when an application calls one of several methods in the **IPortableDeviceContent** or the **IEnumPortableDeviceObjectIDs** interfaces.
+
+| Command                                        | Handler     | Description                                                                |
+|------------------------------------------------|-------------|----------------------------------------------------------------------------|
+| WPD\_COMMAND\_OBJECT\_ENUMERATION\_START\_FIND | OnStartFind | Creates a new enumeration context and stores it in the client context map. |
+| WPD\_COMMAND\_OBJECT\_ENUMERATION\_FIND\_NEXT  | OnFindNext  | Returns an object identifier for the requested object.                     |
+| WPD\_COMMAND\_OBJECT\_ENUMERATION\_END\_FIND   | OnEndFind   | Performs necessary cleanup at the conclusion of an enumeration.            |
+
+ 
+
+For the sample driver, the code remains intact for the WPD\_COMMAND\_OBJECT\_ENUMERATION\_FIND\_NEXT and WPD\_COMMAND\_OBJECT\_ENUMERATION\_END\_FIND handlers. However, a portion of the code was modified for the WPD\_COMMAND\_OBJECT\_ ENUMERATION\_START\_FIND handler.
+
+## <span id="WPD_COMMAND_OBJECT_ENUMERATION_START_FIND"></span><span id="wpd_command_object_enumeration_start_find"></span>WPD\_COMMAND\_OBJECT\_ENUMERATION\_START\_FIND
+
+
+The driver calls the **WpdObjectEnumerator::OnStartFind** handler in response to the WPD\_COMMAND\_OBJECT\_ENUMERATION\_START\_FIND command. The handler, in turn, creates, initializes, and adds a new enumeration context to the client context map. For the sample driver, the **InitializeEnumerationContext** helper function that is called from within the **OnStartFind** handler was modified.
+
+The modifications to both the **OnStartFind** handler and the **InitializeEnumerationContext** helper function included removing support for objects that were no longer supported (the storage, folder, and file objects) and adding support for the sensor object. The following is the code for the **InitalizeEnumerationContext** helper function:
+
+```
+VOID WpdObjectEnumerator::InitializeEnumerationContext(
+    WpdObjectEnumeratorContext* pEnumeratorContext,
+    CAtlStringW                 strParentObjectID)
+{
+    if (pEnumeratorContext == NULL)
+    {
+        return;
+    }
+
+    // Initialize the enumeration context with the parent object identifier
+    pEnumeratorContext->m_strParentObjectID = strParentObjectID;
+
+    // Our sample driver has a very simple object structure where we know
+    // how many children are under each parent.
+    // The eumeration context is initialized below with this information.
+    if (strParentObjectID.CompareNoCase(L"") == 0)
+    {
+        // Clients passing an &#39;empty&#39; string for the parent are asking for the
+        // &#39;DEVICE&#39; object.  We should return 1 child in this case.
+        pEnumeratorContext->m_TotalChildren = 1;
+    }
+    else if (strParentObjectID.CompareNoCase(WPD_DEVICE_OBJECT_ID) == 0)
+    {
+        // The device object contains 1 child (the sensor object).
+        pEnumeratorContext->m_TotalChildren = 1;
+    }
+    // If the sensor objects have children, add them here...
+    else 
+    {
+        // The sensor object contains 0 children.
+        pEnumeratorContext->m_TotalChildren = 0;
+    }
+}
+```
+
+## <span id="related_topics"></span>Related topics
+
+
+****
+[The WpdBasicHardwareDriverSample](the-wpdbasichardwaredriver-sample.md)
+
+[The WPD Driver Samples](the-wpd-driver-samples.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Supporting%20the%20Enumeration%20Commands%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

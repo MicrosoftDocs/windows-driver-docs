@@ -33,9 +33,6 @@
       - name: Biometric
         tocHref: /windows/hardware/drivers/biometric/
         topicHref: /windows/hardware/drivers/biometric/index
-      - name: Dashboard
-        tocHref: /windows/hardware/drivers/dashboard/
-        topicHref: /windows/hardware/drivers/dashboard/index
       - name: Tools for Testing Drivers
         tocHref: /windows/hardware/drivers/devtest/
         topicHref: /windows/hardware/drivers/devtest/index
@@ -102,3 +99,6 @@
       - name: Windows driver samples
         tocHref: /windows/hardware/drivers/samples/
         topicHref: /windows/hardware/drivers/samples/index
+      - name: Windows portable devices
+        tocHref: /windows/hardware/drivers/portable/
+        topicHref: /windows/hardware/drivers/portable/index

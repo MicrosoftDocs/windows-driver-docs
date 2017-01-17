@@ -43,9 +43,10 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
   verifier /volatile /adddriver NAME [NAME ...]
   verifier /volatile /removedriver NAME [NAME ...]
   verifier /volatile /faults [Probability] [PoolTags] [Applications] [DelayMins]
-  verifier /domain <types> <options> /driver ... [/logging | /livedump]
+  verifier /domain <types> <options> /driver ... [/logging | /livedump | /onecheck]
   verifier /logging
   verifier /livedump
+  verifier /onecheck
   verifier /?
   verifier /help
 ```
@@ -669,11 +670,16 @@ The following extension options are supported.
 </tbody>
 </table>
 
+ 
+
 <span id="________logging_______"></span><span id="________LOGGING_______"></span> **/logging**   
 Enables logging for violated rules detected by the selected verifier extensions.
 
 <span id="________livedump_______"></span><span id="________LIVEDUMP_______"></span> **/livedump**   
 Enables live memory dump collection for violated rules detected by the selected verifier extensions.
+
+<span id="________onecheck_______"></span><span id="________ONECHECK_______"></span> **/onecheck**   
+Enables reporting of violated rules only for the first instances detected by the selected verifier extensions.
 
 <span id="_______________"></span> **/?**   
 Displays command-line help.
