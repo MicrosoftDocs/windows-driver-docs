@@ -23,7 +23,6 @@ Support for the class extension is included in UMDF 2.0. Because the NFC stack h
 The NFC class extension driver is not expected to run in Update OS context. However, the driver is expected to run in Microsoft Manufacturing OS (MMOS) to perform end-of-line testing. The NFC client driver supplied by a chipset manufacturer can implement additional DDI support for manufacturing and end-of-line testing purposes, but that is outside the scope of this documentation.
 
  
-
  
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  

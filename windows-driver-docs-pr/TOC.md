@@ -20,6 +20,7 @@
 ## [NFC device drivers](nfc/index.md)
 ## [PCI drivers](pci/index.md)
 ## [PCMCIA drivers](pcmcia/index.md)
+## [Point of Service device drivers](pos/index.md)
 ## [Power management technologies](powermeter/index.md)
 ## [Print device drivers](print/index.md)
 ## [SD card bus drivers](sd/index.md)
@@ -31,4 +32,5 @@
 ## [Test Authoring and Execution Framework (TAEF)](taef/index.md)
 ## [Windows Device Testing Framework (WDTF)](wdtf/index.md)
 ## [Windows driver samples](samples/index.md)
+## [Windows Hardware Dev Center Dashboard](dashboard/index.md)
 ## [Windows Hardware Error Architecture (WHEA)](whea/index.md)
