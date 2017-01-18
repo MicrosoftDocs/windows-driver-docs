@@ -13,7 +13,7 @@ keywords: ["network drivers WDK , installing components", "network drivers WDK ,
 
 This section discusses installing and upgrading network components and it includes the following topics:
 
-[Installing Network Components](installing-network-components.md)
+[Installing Network Components](installing-network-components2.md)
 
 [Notify Objects for Network Components](notify-objects-for-network-components.md)
 

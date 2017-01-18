@@ -12,7 +12,7 @@ Here's an example of such an entry:
 
 ![target platform set to universal in requirements block](images/TargetPlatform.png)
 
-The values specified in **Target Platform** map to the values you can use in Visual Studio, in the **Target Platform** property under **Configuration Properties-&gt;Driver** .
+The values specified in **Target Platform** map to the values you can use in Visual Studio, in the **Target Platform** property under **Configuration Properties-&gt;Driver Settings-&gt;General**.
 
 Here are the values you might see for **Target Platform** on MSDN, and what they mean:
 
