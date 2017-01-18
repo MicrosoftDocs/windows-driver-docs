@@ -1,5 +1,6 @@
 ---
 title: Writing a location sensor driver for Windows 8.1
+author: windows-driver-content
 description: Writing a location sensor driver for Windows 8.1
 MS-HAID:
 - 'Sensor\_DG\_DevelopmentBasics\_9c140f9e-44db-4539-8783-ca6d34d2badf.xml'
@@ -296,17 +297,9 @@ When raising these events, location drivers must follow these rules:
 -   You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR\_DATA\_TYPE\_NMEA\_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](https://msdn.microsoft.com/library/windows/hardware/ff545437).
 
 ## Related topics
+[Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md)  
 
-
-[Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Writing%20a%20location%20sensor%20driver%20for%20Windows%208.1%20%20RELEASE:%20%281/9/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 

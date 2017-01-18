@@ -1,5 +1,6 @@
 ---
 title: Testing sensor functionality with the Sensor Diagnostic Tool
+author: windows-driver-content
 description: Use the Sensor Diagnostic Tool to test your driver, firmware, and hardware functionality.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -46,19 +47,10 @@ The Sensor Diagnostic Tool includes support for ambient light sensors (ALS). The
 However, it's important to note that when the tool retrieves ALS values, it returns these values as (LUX, Offset) pairs. This ordering differs from the Advanced Configuration and Power Interface (ACPI) standard of (Offset, LUX) pairs.
 
 ## Related topics
+[Testing Sensor Functionality](testing-sensor-functionality.md)  
+[Testing Location Functionality](testing-location-functionality.md)  
 
-
-[Testing Sensor Functionality](testing-sensor-functionality.md)
-
-[Testing Location Functionality](testing-location-functionality.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bsensors\sensors%5D:%20Testing%20sensor%20functionality%20with%20the%20Sensor%20Diagnostic%20Tool%20%20RELEASE:%20%281/12/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
 
 
