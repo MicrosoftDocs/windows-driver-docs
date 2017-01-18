@@ -16,12 +16,13 @@ This section contains design guidance for building GNSS device drivers.
 ## In this section
 
 
-TBD
+-   [GNSS driver design guide for Windows 8.1](gnss-driver-design-guide-for-windows-8-1.md)
+-   [GNSS driver design guide for Windows 10](gnss-driver-design-guide-for-windows-10.md)
 
 ## Related sections
 
 
-TBD
+-   [Sensor device driver reference](https://go.microsoft.com/fwlink/p/?linkid=839449)
 
  
 
