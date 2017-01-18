@@ -56,7 +56,7 @@ For complete instructions for using Bootcfg, see Help and Support Services. For 
 
 In the Boot.ini file, the friendly name of a boot entry appears in the boot entry in quotation marks.
 
-For example, the following sample from a Boot.ini file has duplicate boot entries for Microsoft Windows XP Professional.
+For example, the following sample from a Boot.ini file has duplicate boot entries for Microsoft Windows 10 Professional.
 
 ```
 multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Microsoft Windows 10 Professional" /fastdetect

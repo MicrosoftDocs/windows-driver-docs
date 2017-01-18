@@ -38,7 +38,7 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Modem Devices](https://msdn.microsoft.com/library/windows/hardware/ff542573)
 -   [Multifunction Devices](https://msdn.microsoft.com/library/windows/hardware/ff542743)
 -   [Network Devices](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557563)
--   [Point of Service](https://msdn.microsoft.com/library/windows/hardware/mt269579)
+-   [Point of Service](https://msdn.microsoft.com/library/windows/hardware/mt791751)
 -   [Print Devices](https://msdn.microsoft.com/library/windows/hardware/ff559887)
 -   [Proximity Devices](https://msdn.microsoft.com/library/windows/hardware/dn905575)
 -   [Radio Management](https://msdn.microsoft.com/library/windows/hardware/hh406615)
