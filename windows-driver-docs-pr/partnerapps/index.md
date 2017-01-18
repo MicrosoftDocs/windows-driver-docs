@@ -1,4 +1,4 @@
----
+﻿---
 title: Partner app development
 description: Partner app development
 MSHAttr:
@@ -10,7 +10,6 @@ ms.assetid: 0F90F6D9-4524-4193-9470-0CA106DFE80F
 # Partner app development
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
 Partners have the ability to create special use applications for things like the Windows 10 settings app. Some partner-specific app development scenarios require functionality—such as access to system APIs--that is not available to APIs with General capabilities. Instead these apps require Restricted or special use capabilities, allowing for functionality available for partner development in a controlled fashion.
 
