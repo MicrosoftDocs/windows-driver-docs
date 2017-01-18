@@ -18,6 +18,7 @@
 ## [Multifunction device drivers](multifunction/index.md)
 ## [Network drivers](network/index.md)
 ## [NFC device drivers](nfc/index.md)
+## [Partner application development](partnerapps/index.md)
 ## [PCI drivers](pci/index.md)
 ## [PCMCIA drivers](pcmcia/index.md)
 ## [Point of Service device drivers](pos/index.md)

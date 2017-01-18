@@ -63,6 +63,9 @@
       - name: NFC
         tocHref: /windows/hardware/drivers/nfc/
         topicHref: /windows/hardware/drivers/nfc/index
+      - name: Partner Application Development
+        tocHref: /windows/hardware/drivers/partnerapps/
+        topicHref: /windows/hardware/drivers/partnerapps/index
       - name: PCI
         tocHref: /windows/hardware/drivers/pci/
         topicHref: /windows/hardware/drivers/pci/index
