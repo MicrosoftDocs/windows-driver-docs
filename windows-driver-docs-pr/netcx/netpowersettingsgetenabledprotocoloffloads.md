@@ -44,7 +44,7 @@ A ULONG value that contains a bitwise **OR** of flags that correspond to capabil
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsGetEnabledProtocolOffloads** during a power transition, typically from its [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_SX*](wdf-evtdevicearmwakefromsx) or [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_S0*](wdf-evtdevicearmwakefroms0) callback function.
+The client driver calls **NetPowerSettingsGetEnabledProtocolOffloads** during a power transition, typically from its [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.
 
 Requirements
 ------------

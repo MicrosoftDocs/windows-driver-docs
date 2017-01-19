@@ -48,7 +48,7 @@ Returns **TRUE** if the WoL pattern is enabled, and **FALSE** otherwise.
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsIsWakePatternEnabled** during a power transition, typically from its [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_SX*](wdf-evtdevicearmwakefromsx) or [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_S0*](wdf-evtdevicearmwakefroms0) callback function, or from the [*EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback function.
+The client driver calls **NetPowerSettingsIsWakePatternEnabled** during a power transition, typically from its [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback function.
 
 If the wake pattern is enabled, the driver programs its hardware to enable the pattern during a power down transition.
 
