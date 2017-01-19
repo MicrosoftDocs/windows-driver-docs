@@ -51,6 +51,9 @@
       - name: Installable File Systems
         tocHref: /windows/hardware/drivers/ifs/
         topicHref: /windows/hardware/drivers/ifs/index
+        name: GNSS
+        tocHref: /windows/hardware/drivers/gnss/
+        topicHref: /windows/hardware/drivers/gnss/index
       - name: GPIO
         tocHref: /windows/hardware/drivers/gpio/
         topicHref: /windows/hardware/drivers/gpio/index
@@ -81,6 +84,9 @@
       - name: SD
         tocHref: /windows/hardware/drivers/sd/
         topicHref: /windows/hardware/drivers/sd/index
+      - name: Sensors
+        tocHref: /windows/hardware/drivers/sensors/
+        topicHref: /windows/hardware/drivers/sensors/index        
       - name: SPB
         tocHref: /windows/hardware/drivers/spb/
         topicHref: /windows/hardware/drivers/spb/index
