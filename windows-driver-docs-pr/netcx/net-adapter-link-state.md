@@ -1,0 +1,113 @@
+---
+title: NET\_ADAPTER\_LINK\_STATE structure
+description: Describes the link state of the adapter.
+ms.assetid: c7feb12d-37e1-47d5-bd5b-54eded600c28
+keywords: ["NET_ADAPTER_LINK_STATE structure Network Drivers Starting with Windows Vista", "PNET_ADAPTER_LINK_STATE structure pointer Network Drivers Starting with Windows Vista"]
+topic_type:
+- apiref
+api_name:
+- NET_ADAPTER_LINK_STATE
+api_location:
+- netadapter.h
+api_type:
+- HeaderDef
+---
+
+# NET\_ADAPTER\_LINK\_STATE structure
+
+
+\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+
+Describes the link state of the adapter.
+
+Syntax
+------
+
+```ManagedCPlusPlus
+typedef struct _NET_ADAPTER_LINK_STATE {
+  ULONG                                Size;
+  ULONG64                              TxLinkSpeed;
+  ULONG64                              RxLinkSpeed;
+  NET_IF_MEDIA_CONNECT_STATE           MediaConnectState;
+  NET_IF_MEDIA_DUPLEX_STATE            MediaDuplexState;
+  NET_ADAPTER_PAUSE_FUNCTIONS          SupportedPauseFunctions;
+  NET_ADAPTER_AUTO_NEGOTIATION_FLAGS   AutoNegotiationFlags;
+} NET_ADAPTER_LINK_STATE, *PNET_ADAPTER_LINK_STATE;
+```
+
+Members
+-------
+
+**Size**  
+Size of the **NET\_ADAPTER\_LINK\_STATE** structure.
+
+**TxLinkSpeed**  
+The current transmit link speed of the adapter in bits per second.
+
+**RxLinkSpeed**  
+The current receive link speed of the adapter in bits per second.
+
+**MediaConnectState**  
+The media connect state for the miniport adapter.
+
+**MediaDuplexState**  
+The media duplex state for the miniport adapter.
+
+**SupportedPauseFunctions**  
+Support for the IEEE 802.3 pause frames. For more info, see [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
+
+**AutoNegotiationFlags**  
+The auto-negotiation settings for the miniport adapter. For more info, see [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
+
+Remarks
+-------
+
+Call [**NET\_ADAPTER\_LINK\_STATE\_INIT**](net-adapter-link-state-init.md) or [**NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED**](net-adapter-link-state-init-disconnected.md) to initialize this structure.
+
+An initialized **NET\_ADAPTER\_LINK\_STATE** structure is an input parameter value to [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md).
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Minimum KMDF version</p></td>
+<td align="left"><p>1.21</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Minimum NetAdapterCx version</p></td>
+<td align="left"><p>1.0</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Header</p></td>
+<td align="left">Netadapter.h</td>
+</tr>
+</tbody>
+</table>
+
+## See also
+
+
+[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
+
+[**NET\_ADAPTER\_LINK\_STATE\_INIT**](net-adapter-link-state-init.md)
+
+[**NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED**](net-adapter-link-state-init-disconnected.md)
+
+[**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20NET_ADAPTER_LINK_STATE%20structure%20%20RELEASE:%20%281/19/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
+

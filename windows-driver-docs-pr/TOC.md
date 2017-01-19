@@ -16,6 +16,7 @@
 ## [Installable file system drivers](ifs/index.md)
 ## [GPIO drivers](gpio/index.md)
 ## [Multifunction device drivers](multifunction/index.md)
+## [NetAdapterCx](netcx/index.md)
 ## [Network drivers](network/index.md)
 ## [NFC device drivers](nfc/index.md)
 ## [PCI drivers](pci/index.md)
