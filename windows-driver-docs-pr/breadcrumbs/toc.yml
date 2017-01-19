@@ -57,6 +57,9 @@
       - name: Multifunction
         tocHref: /windows/hardware/drivers/multifunction/
         topicHref: /windows/hardware/drivers/multifunction/index
+      - name: NetCx
+        tocHref: /windows/hardware/drivers/netcx/
+        topicHref: /windows/hardware/drivers/netcx/index
       - name: Network
         tocHref: /windows/hardware/drivers/network/
         topicHref: /windows/hardware/drivers/network/index
