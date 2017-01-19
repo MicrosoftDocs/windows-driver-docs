@@ -41,7 +41,7 @@ Parameters
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate [NTSTATUS](kernal-ntstatus_values) error code.
+(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Requirements
 ------------

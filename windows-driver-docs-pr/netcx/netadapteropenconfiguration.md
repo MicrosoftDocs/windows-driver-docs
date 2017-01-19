@@ -49,7 +49,7 @@ A pointer to a location that receives a handle to the new adapter configuration 
 Return value
 ------------
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate [NTSTATUS](kernal-ntstatus_values) error code.
+The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Remarks
 -------

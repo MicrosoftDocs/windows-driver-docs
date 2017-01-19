@@ -51,7 +51,7 @@ A handle to a framework string object. NetAdapterCx will assign the registry val
 Return value
 ------------
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate [NTSTATUS](kernal-ntstatus_values) error code.
+The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Remarks
 -------
