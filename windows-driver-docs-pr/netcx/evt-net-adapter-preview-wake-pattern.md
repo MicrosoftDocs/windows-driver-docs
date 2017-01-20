@@ -68,7 +68,7 @@ In this callback, the driver typically iterates through the *ExistingPowerSettin
 
 The client driver can use the pointer to examine the [**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure, but should not retain it. NetAdapterCx can release the wake pattern structure without notification to the driver.
 
-In its [*EvtDeviceArmWakeFromS0*](wdf-evtdevicearmwakefroms0) and [*EvtDeviceArmWakeFromSx*](wdf-evtdevicearmwakefromsx) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
+In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
 
 Requirements
 ------------
