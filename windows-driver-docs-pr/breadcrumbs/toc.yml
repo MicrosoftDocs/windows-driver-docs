@@ -51,12 +51,18 @@
       - name: Installable File Systems
         tocHref: /windows/hardware/drivers/ifs/
         topicHref: /windows/hardware/drivers/ifs/index
-        name: GNSS
+      - name: Getting started with Windows drivers
+        tocHref: /windows/hardware/drivers/gettingstarted/
+        topicHref: /windows/hardware/drivers/gettingstarted/index
+      - name: GNSS
         tocHref: /windows/hardware/drivers/gnss/
         topicHref: /windows/hardware/drivers/gnss/index
       - name: GPIO
         tocHref: /windows/hardware/drivers/gpio/
         topicHref: /windows/hardware/drivers/gpio/index
+      - name: Mobile broadband
+        tocHref: /windows/hardware/drivers/mobilebroadband/
+        topicHref: /windows/hardware/drivers/mobilebroadband/index
       - name: Multifunction
         tocHref: /windows/hardware/drivers/multifunction/
         topicHref: /windows/hardware/drivers/multifunction/index
@@ -66,6 +72,9 @@
       - name: NFC
         tocHref: /windows/hardware/drivers/nfc/
         topicHref: /windows/hardware/drivers/nfc/index
+      - name: Partner Application Development
+        tocHref: /windows/hardware/drivers/partnerapps/
+        topicHref: /windows/hardware/drivers/partnerapps/index
       - name: PCI
         tocHref: /windows/hardware/drivers/pci/
         topicHref: /windows/hardware/drivers/pci/index
