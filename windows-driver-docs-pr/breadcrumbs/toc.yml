@@ -54,6 +54,9 @@
       - name: GPIO
         tocHref: /windows/hardware/drivers/gpio/
         topicHref: /windows/hardware/drivers/gpio/index
+      - name: Mobile broadband
+        tocHref: /windows/hardware/drivers/mobilebroadband/
+        topicHref: /windows/hardware/drivers/mobilebroadband/index
       - name: Multifunction
         tocHref: /windows/hardware/drivers/multifunction/
         topicHref: /windows/hardware/drivers/multifunction/index

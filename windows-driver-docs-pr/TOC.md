@@ -15,6 +15,7 @@
 ## [Imaging device drivers](image/index.md)
 ## [Installable file system drivers](ifs/index.md)
 ## [GPIO drivers](gpio/index.md)
+## [Mobile broadband](mobilebroadband/index.md)
 ## [Multifunction device drivers](multifunction/index.md)
 ## [Network drivers](network/index.md)
 ## [NFC device drivers](nfc/index.md)
