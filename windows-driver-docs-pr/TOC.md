@@ -14,6 +14,7 @@
 ## [IEEE Drivers](ieee/index.md)
 ## [Imaging device drivers](image/index.md)
 ## [Installable file system drivers](ifs/index.md)
+## [Getting started with Windows drivers](gettingstarted/index.md)
 ## [GPIO drivers](gpio/index.md)
 ## [Multifunction device drivers](multifunction/index.md)
 ## [Network drivers](network/index.md)
