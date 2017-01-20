@@ -1,4 +1,4 @@
----
+﻿---
 title: Device nodes and device stacks
 description: In Windows, devices are represented by device nodes in the Plug and Play (PnP) device tree.
 ms.assetid: 7bf38b3b-72ba-461c-b9e2-68b697359b37
@@ -70,7 +70,7 @@ If your point of reference is the PCI bus, then Pci.sys is the function driver. 
 
 So far we've been discussing kernel-mode device stacks. That is, the drivers in the stacks run in kernel mode, and the device objects are mapped into system space, which is the address space that is available only to code running in kernel mode. For information about the difference between kernel mode and user mode, see [User mode and kernel mode](user-mode-and-kernel-mode.md).
 
-In some cases, a device has a user-mode device stack in addition to its kernel-mode device stack. User-mode drivers are often based on the User-Mode Driver Framework (UMDF), which is one of the driver models provided by the [Windows Driver Frameworks (WDF)](https://msdn.microsoft.com/library/windows/hardware/ff557565). In UMDF, the drivers are user-mode DLLs, and the device objects are COM objects that implement the [**IWDFDevice**](umdf-iwdfdevice) interface. A device object in a UMDF device stack is called a *WDF device object* (WDF DO).
+In some cases, a device has a user-mode device stack in addition to its kernel-mode device stack. User-mode drivers are often based on the User-Mode Driver Framework (UMDF), which is one of the driver models provided by the [Windows Driver Frameworks (WDF)](https://msdn.microsoft.com/library/windows/hardware/ff557565). In UMDF, the drivers are user-mode DLLs, and the device objects are COM objects that implement the IWDFDevice interface. A device object in a UMDF device stack is called a *WDF device object* (WDF DO).
 
 The following diagram shows the device node, kernel-mode device stack, and the user-mode device stack for a USB-FX-2 device. The drivers in both the user-mode and kernel-mode stacks participate in I/O requests that are directed at the USB-FX-2 device.
 

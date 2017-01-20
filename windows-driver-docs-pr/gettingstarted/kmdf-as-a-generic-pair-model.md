@@ -1,4 +1,4 @@
----
+﻿---
 title: KMDF as a generic driver pair model
 description: In this topic, we discuss the idea that the Kernel Mode Driver Framework can be viewed as a generic driver pair model. Before you read this topic, you should understand the ideas presented in Minidrivers and driver pairs.
 ms.assetid: C05E3017-0F1A-49D7-8EAD-0DC44351A39A
@@ -21,12 +21,12 @@ The Framework portion of the driver pair performs general tasks that are common 
 
 The Framework owns the dispatch table for the KMDF driver, so when someone sends an I/O request packet (IRP) to the (KMDF driver, Framework) pair, the IRP goes to Framework. If the Framework can handle the IRP by itself, the KMDF driver is not involved. If the Framework cannot handle the IRP by itself, it gets help by calling event handlers implemented by the KMDF driver. Here are some examples of event handlers that might be implemented by a KMDF driver.
 
--   [*EvtDevicePrepareHardware*](kmdf-evtdevicepreparehardware)
--   [*EvtIoRead*](kmdf-evtioread)
--   [*EvtIoDeviceControl*](kmdf-evtiodevicecontrol)
--   [*EvtInterruptIsr*](kmdf-evtinterruptisr)
--   [*EvtInterruptDpc*](kmdf-evtinterruptdpc)
--   [*EvtDevicePnpStateChange*](kmdf-evtdevicepnpstatechange)
+-   EvtDevicePrepareHardware
+-   EvtIoRead
+-   EvtIoDeviceControl
+-   EvtInterruptIsr
+-   EvtInterruptDpc
+-   EvtDevicePnpStateChange
 
 For example, a USB 2.0 host controller driver has a specific piece named usbehci.sys and a general piece named usbport.sys. Usbehci.sys, which is called the USB 2.0 Miniport driver, has code that is specific to USB 2.0 host controllers. Usbport.sys, which is called the USB Port driver, has general code that applies to both USB 2.0 and USB 1.0. The pair of drivers (usbehci.sys, usbport.sys) combine to form a single WDM driver for a USB 2.0 host controller.
 
