@@ -51,6 +51,9 @@
       - name: Installable File Systems
         tocHref: /windows/hardware/drivers/ifs/
         topicHref: /windows/hardware/drivers/ifs/index
+      - name: Getting started with Windows drivers
+        tocHref: /windows/hardware/drivers/gettingstarted/
+        topicHref: /windows/hardware/drivers/gettingstarted/index
       - name: GPIO
         tocHref: /windows/hardware/drivers/gpio/
         topicHref: /windows/hardware/drivers/gpio/index
