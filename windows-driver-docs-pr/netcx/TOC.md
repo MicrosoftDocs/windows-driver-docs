@@ -1,4 +1,5 @@
 # [NDIS-WDF Class Extension (Cx) Reference](index.md)
+## [Power-Up Sequence for an NDIS-WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md)
 ## [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md)
 ## [EVT_NET_ADAPTER_CREATE_TXQUEUE](evt-net-adapter-create-txqueue.md)
 ## [EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD](evt-net-adapter-preview-protocol-offload.md)
