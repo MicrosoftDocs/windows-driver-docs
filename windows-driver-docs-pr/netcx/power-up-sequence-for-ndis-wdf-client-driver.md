@@ -8,7 +8,7 @@ description: Power-Up Sequence for an NDIS-WDF Client Driver
 
 The following figure shows the order in which NetAdapterCx calls a client miniport driver's event callback functions when bringing a device to the fully operational state, starting from the Device Inserted state at the bottom of the figure:
 
-![device enumeration and power-up sequence for NDIS client driver](images/netadapter-powerup.png)
+![device enumeration and power-up sequence for NDIS client driver](images/netcx-powerup.png)
 
 The broad horizontal lines mark the steps that are involved in starting a device. The column on the left side of the figure describes the step, and the column on the right lists the event callbacks that accomplish it.
 
