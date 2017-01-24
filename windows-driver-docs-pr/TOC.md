@@ -9,7 +9,6 @@
 ## [ACPI](acpi/index.md)
 ## [Battery Drivers](battery/index.md)
 ## [Biometric Drivers](biometric/index.md)
-## [Device Apps](devapps/index.md)
 ## [Driver Development Tools](devtest/index.md)
 ## [HID Drivers](hid/index.md)
 ## [IEEE Drivers](ieee/index.md)
