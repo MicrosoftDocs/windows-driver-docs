@@ -16,7 +16,7 @@ api_type:
 # EVT\_NET\_ADAPTER\_SET\_CAPABILITIES callback function
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 The client driver's implementation of the *EVT\_NET\_ADAPTER\_SET\_CAPABILITIES* event callback function that sets the capabilities of the network adapter.
 

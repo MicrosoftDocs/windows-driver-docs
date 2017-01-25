@@ -16,7 +16,7 @@ api_type:
 # NET\_ADAPTER\_POWER\_FLAGS enumeration
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Defines flags that are used in a client driver's [**NET\_ADAPTER\_POWER\_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
 

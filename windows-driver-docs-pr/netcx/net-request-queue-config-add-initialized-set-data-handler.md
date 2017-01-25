@@ -16,7 +16,7 @@ api_type:
 # NET\_REQUEST\_QUEUE\_CONFIG\_ADD\_INITIALIZED\_SET\_DATA\_HANDLER method
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Adds a caller-provided custom request handler to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
 

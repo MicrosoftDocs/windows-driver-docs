@@ -16,7 +16,7 @@ api_type:
 # EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD callback function
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 The client driver's implementation of the *EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD* event callback function that accepts or rejects an incoming protocol offload.
 

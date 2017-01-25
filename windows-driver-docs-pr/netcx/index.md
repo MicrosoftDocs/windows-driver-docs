@@ -7,7 +7,7 @@ ms.assetid: b15ecf40-77f3-41ff-8643-530947e408ec
 # NDIS-WDF Class Extension (Cx) Reference
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Starting in the next major update to Windows 10, the Windows Driver Kit (WDK) includes a class extension module (NetAdapterCx) that enables you to write a KMDF-based networking (NDIS) client miniport driver (called the client driver in this section). The client driver interacts with NetAdapterCx, which acts as a bridge to traditional NDIS.
 

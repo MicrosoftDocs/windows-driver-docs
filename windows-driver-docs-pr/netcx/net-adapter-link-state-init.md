@@ -16,7 +16,7 @@ api_type:
 # NET\_ADAPTER\_LINK\_STATE\_INIT method
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Initializes a [NET\_ADAPTER\_LINK\_STATE](net-adapter-link-state.md) structure.
 

@@ -16,7 +16,7 @@ api_type:
 # EVT\_RXQUEUE\_SET\_NOTIFICATION\_ENABLED callback function
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Implemented by the client driver to perform client-specific processing when there are new packets received in the specified queue.
 

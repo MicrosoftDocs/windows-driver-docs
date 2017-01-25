@@ -8,7 +8,7 @@ keywords: ["NET_ADAPTER_POWER_CAPABILITIES structure Network Drivers Starting wi
 # NET\_ADAPTER\_POWER\_CAPABILITIES structure
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Describes the power capabilities of the adapter.
 

@@ -16,7 +16,7 @@ api_type:
 # NET\_RXQUEUE\_CONFIG structure
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Describes the configuration options for a NetAdapterCx client driver's receive queue.
 
