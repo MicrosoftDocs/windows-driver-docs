@@ -38,19 +38,19 @@ Due to long DDI names, you may need to scroll the table horizontally to see all 
 | *Virtual Wi-Fi* |
 | [OID\_DOT11\_CREATE\_MAC](https://msdn.microsoft.com/library/windows/hardware/ff569124) | Not applicable | [OID\_WDI\_TASK\_CREATE\_PORT](https://msdn.microsoft.com/library/windows/hardware/dn925949), [OID\_WDI\_TASK\_DOT11\_RESET](https://msdn.microsoft.com/library/windows/hardware/dn925952) |
 | [OID\_DOT11\_DELETE\_MAC](https://msdn.microsoft.com/library/windows/hardware/ff569140) | Not applicable | [OID\_WDI\_TASK\_DOT11\_RESET](https://msdn.microsoft.com/library/windows/hardware/dn925952), [OID\_WDI\_TASK\_DELETE\_PORT](https://msdn.microsoft.com/library/windows/hardware/dn925950) |
-| [OID\_DOT11\_VIRTUAL\_STATION\_CAPABILITY](https://msdn.microsoft.com/library/windows/hardware/ff569435) | **No planned support** |
+| [OID\_DOT11\_VIRTUAL\_STATION\_CAPABILITY](https://msdn.microsoft.com/library/windows/hardware/ff569435) | **No planned support** |  |
 | *ExtSTA/ExtAP* |
-| [OID\_DOT11\_ACTIVE\_PHY\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569102) | Handled by Microsoft based on [**WDI\_TLV\_ASSOCIATION\_RESULT**](https://msdn.microsoft.com/library/windows/hardware/dn926140) |
+| [OID\_DOT11\_ACTIVE\_PHY\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569102) | Handled by Microsoft based on [**WDI\_TLV\_ASSOCIATION\_RESULT**](https://msdn.microsoft.com/library/windows/hardware/dn926140) |  |
 | [OID\_DOT11\_ASSOCIATION\_PARAMS](https://msdn.microsoft.com/library/windows/hardware/ff569104) | Not applicable | Saved and set with [OID\_WDI\_TASK\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925948) |
 | [OID\_DOT11\_AUTO\_CONFIG\_ENABLED](https://msdn.microsoft.com/library/windows/hardware/ff569106) | Handled by Microsoft | Handled by Microsoft |
 | [OID\_DOT11\_CIPHER\_DEFAULT\_KEY](https://msdn.microsoft.com/library/windows/hardware/ff569119) | Not applicable | [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](https://msdn.microsoft.com/library/windows/hardware/dn925855) |
 | [OID\_DOT11\_CIPHER\_DEFAULT\_KEY\_ID](https://msdn.microsoft.com/library/windows/hardware/ff569120) | Handled by Microsoft | [OID\_WDI\_SET\_DEFAULT\_KEY\_ID](https://msdn.microsoft.com/library/windows/hardware/dn925928) |
 | [OID\_DOT11\_CIPHER\_KEY\_MAPPING\_KEY](https://msdn.microsoft.com/library/windows/hardware/ff569121) | Not applicable | [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](https://msdn.microsoft.com/library/windows/hardware/dn925855) |
 | [OID\_DOT11\_CONNECT\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569122) | Not applicable | [OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST](https://msdn.microsoft.com/library/windows/hardware/dn925940), [OID\_WDI\_TASK\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925948) |
-| [OID\_DOT11\_CURRENT\_PHY\_ID](https://msdn.microsoft.com/library/windows/hardware/ff569135) | Handled by Microsoft | Handled by Microsoft |
-| [OID\_DOT11\_DESIRED\_BSS\_TYPE](https://msdn.microsoft.com/library/windows/hardware/ff569142) | Handled by Microsoft | Handled by Microsoft |
-| [OID\_DOT11\_DESIRED\_BSSID\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569141) | Handled by Microsoft | Handled by Microsoft |
-| [OID\_DOT11\_DESIRED\_COUNTRY\_OR\_REGION\_STRING](https://msdn.microsoft.com/library/windows/hardware/ff569143) | Unsupported | Unsupported |
+| [OID\_DOT11\_CURRENT\_PHY\_ID](https://msdn.microsoft.com/library/windows/hardware/ff569135) | Handled by Microsoft | Handled by Microsoft |  |
+| [OID\_DOT11\_DESIRED\_BSS\_TYPE](https://msdn.microsoft.com/library/windows/hardware/ff569142) | Handled by Microsoft | Handled by Microsoft |  |
+| [OID\_DOT11\_DESIRED\_BSSID\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569141) | Handled by Microsoft | Handled by Microsoft |  |
+| [OID\_DOT11\_DESIRED\_COUNTRY\_OR\_REGION\_STRING](https://msdn.microsoft.com/library/windows/hardware/ff569143) | Unsupported | Unsupported |  |
 | [OID\_DOT11\_DESIRED\_PHY\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569144) | Handled by Microsoft | Saved and set with [OID\_WDI\_TASK\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925948) |
 | [OID\_DOT11\_DESIRED\_SSID\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569145) | Handled by Microsoft | Saved and set with [OID\_WDI\_TASK\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925948) |
 | [OID\_DOT11\_DISCONNECT\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569147) | Not applicable | [OID\_WDI\_TASK\_DISCONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925951) |
@@ -65,7 +65,7 @@ Due to long DDI names, you may need to scroll the table horizontally to see all 
 | [OID\_DOT11\_FLUSH\_BSS\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569367) | Not applicable | Handled by Microsoft |
 | [OID\_DOT11\_HARDWARE\_PHY\_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569370) | Handled by Microsoft | Not applicable |
 | [OID\_DOT11\_HIDDEN\_NETWORK\_ENABLED](https://msdn.microsoft.com/library/windows/hardware/ff569371) | Handled by Microsoft | Saved and set with [OID\_WDI\_TASK\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925948) |
-| [OID\_DOT11\_IBSS\_PARAMS](https://msdn.microsoft.com/library/windows/hardware/ff569378) | **No planned support** |
+| [OID\_DOT11\_IBSS\_PARAMS](https://msdn.microsoft.com/library/windows/hardware/ff569378) | **No planned support** |  |
 | [OID\_DOT11\_MEDIA\_STREAMING\_ENABLED](https://msdn.microsoft.com/library/windows/hardware/ff569386) | Handled by Microsoft | [OID\_WDI\_SET\_CONNECTION\_QUALITY](https://msdn.microsoft.com/library/windows/hardware/dn925927) |
 | [OID\_DOT11\_PMKID\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569400) | Handled by Microsoft | Saved and set with [OID\_WDI\_TASK\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925948) |
 | [OID\_DOT11\_PORT\_STATE\_NOTIFICATION](https://msdn.microsoft.com/library/windows/hardware/ff569401) | Not applicable | Unsupported |
@@ -75,16 +75,16 @@ Due to long DDI names, you may need to scroll the table horizontally to see all 
 | [OID\_DOT11\_SAFE\_MODE\_ENABLED](https://msdn.microsoft.com/library/windows/hardware/ff569412) | Handled by Microsoft | Saved and set with [OID\_WDI\_TASK\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925948) |
 | [OID\_DOT11\_STATISTICS](https://msdn.microsoft.com/library/windows/hardware/ff569420) | [OID\_WDI\_GET\_STATISTICS](https://msdn.microsoft.com/library/windows/hardware/dn925850) | Not applicable |
 | [OID\_DOT11\_SUPPORTED\_COUNTRY\_OR\_REGION\_STRING](https://msdn.microsoft.com/library/windows/hardware/ff569421) | Unsupported | Not applicable |
-| [OID\_DOT11\_SUPPORTED\_MULTICAST\_ALGORITHM\_PAIR](https://msdn.microsoft.com/library/windows/hardware/ff569424) | Handled by Microsoft |
-| [OID\_DOT11\_SUPPORTED\_UNICAST\_ALGORITHM\_PAIR](https://msdn.microsoft.com/library/windows/hardware/ff569430) | Handled by Microsoft |
+| [OID\_DOT11\_SUPPORTED\_MULTICAST\_ALGORITHM\_PAIR](https://msdn.microsoft.com/library/windows/hardware/ff569424) | Handled by Microsoft |  |
+| [OID\_DOT11\_SUPPORTED\_UNICAST\_ALGORITHM\_PAIR](https://msdn.microsoft.com/library/windows/hardware/ff569430) | Handled by Microsoft |  |
 | [OID\_DOT11\_UNICAST\_USE\_GROUP\_ENABLED](https://msdn.microsoft.com/library/windows/hardware/ff569433) | Handled by Microsoft | Saved and set with [OID\_WDI\_TASK\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925948) |
 | [OID\_DOT11\_UNREACHABLE\_DETECTION\_THRESHOLD](https://msdn.microsoft.com/library/windows/hardware/ff569434) | Unsupported | Unsupported |
 | *ExtAP* |
-| [OID\_DOT11\_ADDITIONAL\_IE](https://msdn.microsoft.com/library/windows/hardware/ff569103) | **No planned support** |
-| [OID\_DOT11\_AVAILABLE\_CHANNEL\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569107) | **No planned support** |
-| [OID\_DOT11\_AVAILABLE\_FREQUENCY\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569108) | **No planned support** |
+| [OID\_DOT11\_ADDITIONAL\_IE](https://msdn.microsoft.com/library/windows/hardware/ff569103) | **No planned support** |  |
+| [OID\_DOT11\_AVAILABLE\_CHANNEL\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569107) | **No planned support** |  |
+| [OID\_DOT11\_AVAILABLE\_FREQUENCY\_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569108) | **No planned support** |  |
 | [OID\_DOT11\_DISASSOCIATE\_PEER\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569146) | Not applicable | [OID\_WDI\_TASK\_DISCONNECT](https://msdn.microsoft.com/library/windows/hardware/dn925951) |
-| [OID\_DOT11\_ENUM\_PEER\_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569361) | **No planned support** |
+| [OID\_DOT11\_ENUM\_PEER\_INFO](https://msdn.microsoft.com/library/windows/hardware/ff569361) | **No planned support** |  |
 | [OID\_DOT11\_INCOMING\_ASSOCIATION\_DECISION](https://msdn.microsoft.com/library/windows/hardware/ff569379) | Not applicable | [OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE](https://msdn.microsoft.com/library/windows/hardware/dn925960) |
 | [OID\_DOT11\_START\_AP\_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff569418) | Not applicable | [OID\_WDI\_TASK\_START\_AP](https://msdn.microsoft.com/library/windows/hardware/dn925964) |
 | [OID\_DOT11\_WPS\_ENABLED](https://msdn.microsoft.com/library/windows/hardware/ff569436) | Handled by Microsoft | Handled by Microsoft |
@@ -151,7 +151,7 @@ Due to long DDI names, you may need to scroll the table horizontally to see all 
 | [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780) | Not applicable | [OID\_WDI\_SET\_POWER\_STATE](https://msdn.microsoft.com/library/windows/hardware/dn925939), [OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/dn925933), [OID\_WDI\_TASK\_OPEN](https://msdn.microsoft.com/library/windows/hardware/dn925954) (hibernate), [OID\_WDI\_TASK\_CLOSE](https://msdn.microsoft.com/library/windows/hardware/dn925947) (hibernate) |
 | [OID\_PM\_ADD\_PROTOCOL\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569763) | Not applicable | [OID\_WDI\_SET\_ADD\_PM\_PROTOCOL\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/dn925857) |
 | [OID\_PM\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/ff569764) | Not applicable | [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/dn925858) |
-| [OID\_PM\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569765) | Handled by Microsoft |
+| [OID\_PM\_CURRENT\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569765) | Handled by Microsoft |  |
 | [OID\_PM\_GET\_PROTOCOL\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569766) | Not applicable | [OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/dn925846) |
 | [OID\_PM\_HARDWARE\_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff569767) | Handled by Microsoft | Not applicable |
 | [OID\_PM\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/ff569768) | Handled by Microsoft | Handled by Microsoft |
