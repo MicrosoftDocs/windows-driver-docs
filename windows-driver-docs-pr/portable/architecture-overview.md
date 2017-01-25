@@ -1,0 +1,41 @@
+﻿---
+Description: Architecture Overview
+MS-HAID: 'wpddk.architecture\_overview'
+MSHAttr: 'PreferredLib:/library/windows/hardware'
+title: Architecture Overview
+---
+
+# Architecture Overview
+
+
+The WPD architecture can be divided into three processes. Within these processes are the three primary components of WPD: the API, the serializer, and the driver. The following illustration depicts these processes and components that constitute the WPD architecture.
+
+![the 3 processes constituting wpd](images/wpd_overview_figure1.png)
+
+## <span id="The_WPD_Application_Programming_Interface"></span><span id="the_wpd_application_programming_interface"></span><span id="THE_WPD_APPLICATION_PROGRAMMING_INTERFACE"></span>The WPD Application Programming Interface
+
+
+The WPD API is implemented as an in-proc COM server. The API uses standard Microsoft Win32 APIs to communicate with the appropriate WPD driver. A component called the WPD serializer is used by both API objects and the driver to pack or unpack parameters to or from Windows Driver Frameworks (WDF)-User-Mode Driver Framework (UMDF) buffers.
+
+## <span id="The_WPD_Serializer"></span><span id="the_wpd_serializer"></span><span id="THE_WPD_SERIALIZER"></span>The WPD Serializer
+
+
+The WPD serializer is also implemented as an in-proc COM server. The WPD API uses the serializer to pack commands and parameters into message buffers that are sent to the driver. The driver uses the serializer to unpack these message buffers for processing. The driver also uses the serializer to pack data and parameters into response buffers that are returned to the WPD API, and the WPD API uses the serializer to unpack these response buffers to return the results to callers.
+
+## <span id="WPD_Driver"></span><span id="wpd_driver"></span><span id="WPD_DRIVER"></span>WPD Driver
+
+
+The WPD driver is implemented as a standard Windows Driver Frameworks (WDF)-User-Mode Driver Framework (UMDF) driver. WPD drivers are hosted by WUDF in a separate process called the Driver Host.
+
+The driver receives messages from the WUDF reflector (this is not shown in the diagram, since how the buffers are received is not important to the driver. See WUDF documentation for more information). The driver implements a WPD-specific [IOCTL](http://go.microsoft.com/fwlink/p/?linkid=178715) handler to process WPD messages received by the WPD API. The driver uses the WPD serializer to unpack commands and parameters from these message buffers, and to pack the response into the buffer.
+
+WPD drivers may communicate with their devices by going through a kernel-mode driver, typically accessed via Win32 file operations (such as CreateFile, ReadFile, WriteFile, and so on). For the common buses, Microsoft will provide standard kernel drivers for vendors to use, which will allow vendors to ship a user-mode-only driver solution.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[wpd_dk\wpddk]:%20Architecture%20Overview%20%20RELEASE:%20%281/5/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+

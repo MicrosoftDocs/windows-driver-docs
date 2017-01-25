@@ -10,8 +10,11 @@ keywords: ["INF files WDK network , Winsock sections", "network INF files WDK , 
 
 ## <a href="" id="ddk-winsock-sections-ng"></a>
 
-
 An INF file for a **NetTrans** component that provides a Winsock interface must specify this Winsock dependency. Such an INF file must contain a *Winsock-install* section. To create a Winsockinstall section, add the .Winsock extension to the *DDInstall* section name for the protocol. For example, if the *DDInstall* section for a protocol is named **Ipx**, the *Winsock-install* section for that protocol must be named Ipx.Winsock.
+
+> [!NOTE] 
+> Winsock dependency has been deprecated in Windows 8 and later.
+
 
 A *Winsock-install* section must contain an **AddSock** directive. The **AddSock** directive specifies a vendor-named section that contains values to be added to the component's **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\*TransportDriverName*\\Params\\Winsock** key.
 
