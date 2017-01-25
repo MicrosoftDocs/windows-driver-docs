@@ -37,7 +37,7 @@ Parameters
 ----------
 
 *Device* \[in\]  
-The WDFDEVICE object created by a prior call to [**WdfDeviceCreate**](wdf-wdfdevicecreate)
+The WDFDEVICE object created by a prior call to [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926)
 
 *AdapterAttributes* \[in, optional\]  
 A pointer to a caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s ParentObject must be NULL. The parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
@@ -56,7 +56,7 @@ The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this me
 Remarks
 -------
 
-After it has called [**WdfDeviceCreate**](wdf-wdfdevicecreate), the client typically calls **NetAdapterCreate** from within its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) routine.
+After it has called [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926), the client typically calls **NetAdapterCreate** from within its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) routine.
 
 The NETADAPTER object is a standard WDF object. The framework manages its deletion, which occurs when the parent WDFDEVICE is deleted.
 
