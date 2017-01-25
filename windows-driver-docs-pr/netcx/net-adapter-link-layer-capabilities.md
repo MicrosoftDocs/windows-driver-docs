@@ -8,7 +8,7 @@ keywords: ["NET_ADAPTER_LINK_LAYER_CAPABILITIES structure Network Drivers Starti
 # NET\_ADAPTER\_LINK\_LAYER\_CAPABILITIES structure
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Describes the MAC capabilities of the adapter.
 

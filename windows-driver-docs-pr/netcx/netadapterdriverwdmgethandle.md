@@ -17,7 +17,7 @@ api_type:
 # NetAdapterDriverWdmGetHandle method
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 An NDIS-WDF miniport client driver calls **NetAdapterDriverWdmGetHandle** returns a Windows Driver Model (WDM) handle to the client driver.
 

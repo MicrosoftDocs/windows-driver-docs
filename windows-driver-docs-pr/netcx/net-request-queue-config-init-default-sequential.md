@@ -16,7 +16,7 @@ api_type:
 # NET\_REQUEST\_QUEUE\_CONFIG\_INIT\_DEFAULT\_SEQUENTIAL method
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Initializes the caller-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure to create a default request queue.
 

@@ -16,7 +16,7 @@ api_type:
 # NET\_REQUEST\_QUEUE\_METHOD\_HANDLER structure
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Call [NET\_REQUEST\_QUEUE\_METHOD\_HANDLER\_INIT](net-request-queue-method-handler-init.md) to initialize this structure.
 

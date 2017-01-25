@@ -16,7 +16,7 @@ api_type:
 # NetAdapterSetCurrentLinkState method
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Set the current link state of the of the network adapter.
 

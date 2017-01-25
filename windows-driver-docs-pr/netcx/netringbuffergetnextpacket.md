@@ -16,7 +16,7 @@ api_type:
 # NetRingBufferGetNextPacket method
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Returns a pointer to the net packet at the NextIndex value of the ring buffer.
 

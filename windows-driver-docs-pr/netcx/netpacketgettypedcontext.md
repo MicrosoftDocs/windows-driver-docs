@@ -17,7 +17,7 @@ api_type:
 # NetPacketGetTypedContext method
 
 
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Client drivers should not call this function directly. Instead, use [**NET\_PACKET\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME**](net-packet-declare-context-type-with-name.md).
 
