@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_CONFIG structure
+title: NET_ADAPTER_CONFIG structure
 description: Describes the configuration options for a NetAdapterCx client driver. An initialized NET\_ADAPTER\_CONFIG structure is an input parameter to NetAdapterCreate.
 ms.assetid: aa938a6d-91f5-4a28-89dd-03e28f4f9cad
 keywords: ["NET_ADAPTER_CONFIG structure Network Drivers Starting with Windows Vista", "PNET_ADAPTER_CONFIG structure pointer Network Drivers Starting with Windows Vista"]

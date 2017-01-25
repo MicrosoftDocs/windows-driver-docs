@@ -1,5 +1,5 @@
 ---
-title: NET\_TXQUEUE\_CONFIG\_INIT method
+title: NET_TXQUEUE_CONFIG_INIT method
 description: Initializes the NET\_TXQUEUE\_CONFIG structure.
 ms.assetid: 73e0c295-8324-4fb9-b845-1ab26981f215
 keywords: ["NET_TXQUEUE_CONFIG_INIT method Network Drivers Starting with Windows Vista"]

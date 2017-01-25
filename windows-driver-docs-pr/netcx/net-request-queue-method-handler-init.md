@@ -1,5 +1,5 @@
 ---
-title: NET\_REQUEST\_QUEUE\_METHOD\_HANDLER\_INIT method
+title: NET_REQUEST_QUEUE_METHOD_HANDLER_INIT method
 description: Initializes the NET\_REQUEST\_QUEUE\_METHOD\_HANDLER structure.
 ms.assetid: b4d004b6-7dad-4393-9c59-6274668f2d95
 keywords: ["NET_REQUEST_QUEUE_METHOD_HANDLER_INIT method Network Drivers Starting with Windows Vista"]

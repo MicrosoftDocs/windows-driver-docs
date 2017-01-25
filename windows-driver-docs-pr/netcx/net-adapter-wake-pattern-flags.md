@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_WAKE\_PATTERN\_FLAGS enumeration
+title: NET_ADAPTER_WAKE_PATTERN_FLAGS enumeration
 description: .
 ms.assetid: 211fde06-ee4d-412a-84ac-8979f6de2d25
 keywords: ["NET_ADAPTER_WAKE_PATTERN_FLAGS enumeration Network Drivers Starting with Windows Vista"]

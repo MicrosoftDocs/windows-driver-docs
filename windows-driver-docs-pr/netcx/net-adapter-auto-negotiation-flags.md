@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_AUTO\_NEGOTIATION\_FLAGS enumeration
+title: NET_ADAPTER_AUTO_NEGOTIATION_FLAGS enumeration
 description: .
 ms.assetid: e879294b-f70c-4dd2-9367-111facddf776
 keywords: ["NET_ADAPTER_AUTO_NEGOTIATION_FLAGS enumeration Network Drivers Starting with Windows Vista"]

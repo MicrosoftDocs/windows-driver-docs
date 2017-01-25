@@ -1,5 +1,5 @@
 ---
-title: EVT\_NET\_REQUEST\_DEFAULT\_SET\_DATA callback function
+title: EVT_NET_REQUEST_DEFAULT_SET_DATA callback function
 description: Implemented by the client driver to ... handler for set OIDs.
 ms.assetid: 84868830-f246-4fc0-8c6c-2946d1ba4099
 keywords: ["EvtNetRequestDefaultSetData callback function Network Drivers Starting with Windows Vista", "EVT_NET_REQUEST_DEFAULT_SET_DATA", "PFN_NET_REQUEST_DEFAULT_SET_DATA callback function pointer Network Drivers Starting with Windows Vista"]

@@ -1,5 +1,5 @@
 ---
-title: EVT\_NET\_REQUEST\_DEFAULT callback function
+title: EVT_NET_REQUEST_DEFAULT callback function
 description: The client driver's implementation of the EVT\_NET\_REQUEST\_DEFAULT event callback function to handle an object identifier (OID) request to query or set information in the driver.
 ms.assetid: 34be105b-c952-4dfe-9889-ef2ed444f8ac
 keywords: ["EvtNetRequestDefault callback function Network Drivers Starting with Windows Vista", "EVT_NET_REQUEST_DEFAULT", "PFN_NET_REQUEST_DEFAULT callback function pointer Network Drivers Starting with Windows Vista"]

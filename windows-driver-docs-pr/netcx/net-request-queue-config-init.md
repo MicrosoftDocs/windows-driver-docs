@@ -1,5 +1,5 @@
 ---
-title: NET\_REQUEST\_QUEUE\_CONFIG\_INIT method
+title: NET_REQUEST_QUEUE_CONFIG_INIT method
 description: Initializes the caller-allocated NET\_REQUEST\_QUEUE\_CONFIG structure.
 ms.assetid: 7edea289-b048-4733-8782-0daa537ada33
 keywords: ["NET_REQUEST_QUEUE_CONFIG_INIT method Network Drivers Starting with Windows Vista"]

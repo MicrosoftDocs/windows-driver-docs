@@ -1,5 +1,5 @@
 ---
-title: NET\_REQUEST\_QUEUE\_SET\_DATA\_HANDLER\_INIT method
+title: NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT method
 description: Initializes the NET\_REQUEST\_QUEUE\_SET\_DATA\_HANDLER structure.
 ms.assetid: 95fcef1d-62ac-42af-87e8-ba60baacb4ef
 keywords: ["NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT method Network Drivers Starting with Windows Vista"]

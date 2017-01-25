@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_MEDIA\_SPECIFIC\_WAKEUP\_EVENTS\_FLAGS enumeration
+title: NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS enumeration
 description: .
 ms.assetid: ddff8578-b521-4c86-a157-ab55b467379e
 keywords: ["NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS enumeration Network Drivers Starting with Windows Vista"]

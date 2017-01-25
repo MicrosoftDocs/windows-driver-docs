@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_PROTOCOL\_OFFLOADS\_FLAGS enumeration
+title: NET_ADAPTER_PROTOCOL_OFFLOADS_FLAGS enumeration
 description: .
 ms.assetid: 51d3d4fd-d43b-4f0b-8434-4dbe70e73b4f
 keywords: ["NET_ADAPTER_PROTOCOL_OFFLOADS_FLAGS enumeration Network Drivers Starting with Windows Vista"]

@@ -1,5 +1,5 @@
 ---
-title: EVT\_NET\_REQUEST\_METHOD callback function
+title: EVT_NET_REQUEST_METHOD callback function
 description: Implemented by the client driver to ... custom method handler callback.
 ms.assetid: 9dc17107-8e42-4853-be11-bc8031e21e2b
 keywords: ["EvtNetRequestMethod callback function Network Drivers Starting with Windows Vista", "EVT_NET_REQUEST_METHOD", "PFN_NET_REQUEST_METHOD callback function pointer Network Drivers Starting with Windows Vista"]

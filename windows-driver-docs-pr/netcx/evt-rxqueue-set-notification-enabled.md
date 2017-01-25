@@ -1,5 +1,5 @@
 ---
-title: EVT\_RXQUEUE\_SET\_NOTIFICATION\_ENABLED callback function
+title: EVT_RXQUEUE_SET_NOTIFICATION_ENABLED callback function
 description: Implemented by the client driver to perform client-specific processing when there are new packets received in the specified queue.
 ms.assetid: b85f88bd-0e8a-4fb7-af59-5b107e7d5ae5
 keywords: ["EvtRxqueueSetNotificationEnabled callback function Network Drivers Starting with Windows Vista", "EVT_RXQUEUE_SET_NOTIFICATION_ENABLED", "PFN_RXQUEUE_SET_NOTIFICATION_ENABLED callback function pointer Network Drivers Starting with Windows Vista"]

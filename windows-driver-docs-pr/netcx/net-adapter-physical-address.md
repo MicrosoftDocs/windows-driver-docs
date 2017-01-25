@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_PHYSICAL\_ADDRESS structure
+title: NET_ADAPTER_PHYSICAL_ADDRESS structure
 description: Call NET\_ADAPTER\_PHYSICAL\_ADDRESS\_INIT to initialize this structure.
 ms.assetid: 19d6a263-9741-47ce-beeb-20c59b9d1f54
 keywords: ["NET_ADAPTER_PHYSICAL_ADDRESS structure Network Drivers Starting with Windows Vista", "PNET_ADAPTER_PHYSICAL_ADDRESS structure pointer Network Drivers Starting with Windows Vista"]

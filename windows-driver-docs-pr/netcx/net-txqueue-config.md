@@ -1,5 +1,5 @@
 ---
-title: NET\_TXQUEUE\_CONFIG structure
+title: NET_TXQUEUE_CONFIG structure
 description: Call NET\_TXQUEUE\_CONFIG\_INIT to initialize this structure.
 ms.assetid: ec5be68e-dcd7-4133-8d0a-3512a5d71653
 keywords: ["NET_TXQUEUE_CONFIG structure Network Drivers Starting with Windows Vista", "PNET_TXQUEUE_CONFIG structure pointer Network Drivers Starting with Windows Vista"]

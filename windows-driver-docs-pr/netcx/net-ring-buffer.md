@@ -1,5 +1,5 @@
 ---
-title: NET\_RING\_BUFFER structure
+title: NET_RING_BUFFER structure
 description: Call NET\_RING\_BUFFER\_INIT to initialize this structure.
 ms.assetid: 8a265659-599f-48e0-a1c3-add49ba9acdc
 keywords: ["NET_RING_BUFFER structure Network Drivers Starting with Windows Vista", "PNET_RING_BUFFER structure pointer Network Drivers Starting with Windows Vista"]

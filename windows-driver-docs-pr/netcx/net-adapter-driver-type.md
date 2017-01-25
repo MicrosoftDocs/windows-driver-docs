@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_DRIVER\_TYPE enumeration
+title: NET_ADAPTER_DRIVER_TYPE enumeration
 description: The NET\_ADAPTER\_DRIVER\_TYPE enumeration identifies the type of network adapter driver.
 ms.assetid: 05a9d0b1-7764-41d6-bd2c-6f1f1224b9fe
 keywords: ["NET_ADAPTER_DRIVER_TYPE enumeration Network Drivers Starting with Windows Vista"]

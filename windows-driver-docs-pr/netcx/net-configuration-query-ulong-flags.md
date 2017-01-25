@@ -1,5 +1,5 @@
 ---
-title: NET\_CONFIGURATION\_QUERY\_ULONG\_FLAGS enumeration
+title: NET_CONFIGURATION_QUERY_ULONG_FLAGS enumeration
 description: The NET\_CONFIGURATION\_QUERY\_ULONG\_FLAGS enumeration is used as an input parameter to the NetConfigurationQueryUlong method.
 ms.assetid: 6396d551-5e78-4bb1-adcc-ce9a0ac84849
 keywords: ["NET_CONFIGURATION_QUERY_ULONG_FLAGS enumeration Network Drivers Starting with Windows Vista"]

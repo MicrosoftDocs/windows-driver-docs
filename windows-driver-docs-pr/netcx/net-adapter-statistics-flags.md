@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_STATISTICS\_FLAGS enumeration
+title: NET_ADAPTER_STATISTICS_FLAGS enumeration
 description: .
 ms.assetid: 64545e16-d6b4-439b-a913-c077bbe6ee32
 keywords: ["NET_ADAPTER_STATISTICS_FLAGS enumeration Network Drivers Starting with Windows Vista"]

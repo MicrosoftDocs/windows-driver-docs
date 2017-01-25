@@ -1,5 +1,5 @@
 ---
-title: EVT\_NET\_REQUEST\_SET\_DATA callback function
+title: EVT_NET_REQUEST_SET_DATA callback function
 description: Implemented by the client driver to ... set handler callback.
 ms.assetid: 1286c19b-ef24-4eaa-85f5-8049c864c3f7
 keywords: ["EvtNetRequestSetData callback function Network Drivers Starting with Windows Vista", "EVT_NET_REQUEST_SET_DATA", "PFN_NET_REQUEST_SET_DATA callback function pointer Network Drivers Starting with Windows Vista"]

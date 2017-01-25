@@ -1,5 +1,5 @@
 ---
-title: NET\_RXQUEUE\_CONFIG structure
+title: NET_RXQUEUE_CONFIG structure
 description: Describes the configuration options for a NetAdapterCx client driver's receive queue.
 ms.assetid: f5058263-4e48-42fc-bf8e-6a76276969f9
 keywords: ["NET_RXQUEUE_CONFIG structure Network Drivers Starting with Windows Vista", "PNET_RXQUEUE_CONFIG structure pointer Network Drivers Starting with Windows Vista"]

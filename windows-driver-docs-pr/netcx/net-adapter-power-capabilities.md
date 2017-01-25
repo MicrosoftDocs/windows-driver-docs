@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_POWER\_CAPABILITIES structure
+title: NET_ADAPTER_POWER_CAPABILITIES structure
 description: Describes the power capabilities of the adapter.
 ms.assetid: de2bd967-6e72-466a-8f5b-d669c324d155
 keywords: ["NET_ADAPTER_POWER_CAPABILITIES structure Network Drivers Starting with Windows Vista", "PNET_ADAPTER_POWER_CAPABILITIES structure pointer Network Drivers Starting with Windows Vista"]

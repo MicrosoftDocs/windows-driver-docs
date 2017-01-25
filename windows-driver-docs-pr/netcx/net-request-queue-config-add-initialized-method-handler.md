@@ -1,5 +1,5 @@
 ---
-title: NET\_REQUEST\_QUEUE\_CONFIG\_ADD\_INITIALIZED\_METHOD\_HANDLER method
+title: NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER method
 description: Adds a caller-provided custom request handler to a NET\_REQUEST\_QUEUE\_CONFIG structure.
 ms.assetid: 3caa5af8-90ae-43c3-8251-8030849c7176
 keywords: ["NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER method Network Drivers Starting with Windows Vista"]

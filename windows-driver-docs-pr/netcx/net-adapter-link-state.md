@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_LINK\_STATE structure
+title: NET_ADAPTER_LINK_STATE structure
 description: Describes the link state of the adapter.
 ms.assetid: c7feb12d-37e1-47d5-bd5b-54eded600c28
 keywords: ["NET_ADAPTER_LINK_STATE structure Network Drivers Starting with Windows Vista", "PNET_ADAPTER_LINK_STATE structure pointer Network Drivers Starting with Windows Vista"]

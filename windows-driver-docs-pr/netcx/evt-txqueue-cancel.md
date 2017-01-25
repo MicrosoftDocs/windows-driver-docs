@@ -1,5 +1,5 @@
 ---
-title: EVT\_TXQUEUE\_CANCEL callback function
+title: EVT_TXQUEUE_CANCEL callback function
 description: Implemented by the client driver to handle operations that must be performed before a transmit queue is deleted.
 ms.assetid: 0d75a483-3afa-42c2-826b-b7c5a977a6f5
 keywords: ["EvtTxqueueCancel callback function Network Drivers Starting with Windows Vista", "EVT_TXQUEUE_CANCEL", "PFN_TXQUEUE_CANCEL callback function pointer Network Drivers Starting with Windows Vista"]

@@ -1,5 +1,5 @@
 ---
-title: EVT\_TXQUEUE\_SET\_NOTIFICATION\_ENABLED callback function
+title: EVT_TXQUEUE_SET_NOTIFICATION_ENABLED callback function
 description: Implemented by the client driver to perform client-specific processing when there are new packets received in the specified queue's ring buffer.
 ms.assetid: c2b26585-3949-4d18-b25a-7aa1ac99e2a6
 keywords: ["EvtTxqueueSetNotificationEnabled callback function Network Drivers Starting with Windows Vista", "EVT_TXQUEUE_SET_NOTIFICATION_ENABLED", "PFN_TXQUEUE_SET_NOTIFICATION_ENABLED callback function pointer Network Drivers Starting with Windows Vista"]

@@ -1,5 +1,5 @@
 ---
-title: EVT\_NET\_REQUEST\_DEFAULT\_QUERY\_DATA callback function
+title: EVT_NET_REQUEST_DEFAULT_QUERY_DATA callback function
 description: Implemented by the client driver to ... handler for query OIDs.
 ms.assetid: 48211125-072e-49ac-a9d6-c81503ae1370
 keywords: ["EvtNetRequestDefaultQueryData callback function Network Drivers Starting with Windows Vista", "EVT_NET_REQUEST_DEFAULT_QUERY_DATA", "PFN_NET_REQUEST_DEFAULT_QUERY_DATA callback function pointer Network Drivers Starting with Windows Vista"]

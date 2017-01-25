@@ -1,5 +1,5 @@
 ---
-title: EVT\_TXQUEUE\_ADVANCE callback function
+title: EVT_TXQUEUE_ADVANCE callback function
 description: Implemented by the client driver to process transmit packets provided by NetAdapterCx.
 ms.assetid: ab96a094-6004-4d15-ab87-1a133c6d01f7
 keywords: ["EvtTxqueueAdvance callback function Network Drivers Starting with Windows Vista", "EVT_TXQUEUE_ADVANCE", "PFN_TXQUEUE_ADVANCE callback function pointer Network Drivers Starting with Windows Vista"]

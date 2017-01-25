@@ -1,5 +1,5 @@
 ---
-title: NET\_ADAPTER\_PAUSE\_FUNCTIONS enumeration
+title: NET_ADAPTER_PAUSE_FUNCTIONS enumeration
 description: .
 ms.assetid: 17bfa532-6edd-40f6-ab83-b230f5f92f75
 keywords: ["NET_ADAPTER_PAUSE_FUNCTIONS enumeration Network Drivers Starting with Windows Vista", "NET_ADAPTER_PAUSE_FUNCTIONS, PNET_ADAPTER_PAUSE_FUNCTIONS enumeration Network Drivers Starting with Windows Vista"]

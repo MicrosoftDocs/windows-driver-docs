@@ -1,5 +1,5 @@
 ---
-title: EVT\_NET\_ADAPTER\_CREATE\_TXQUEUE callback function
+title: EVT_NET_ADAPTER_CREATE_TXQUEUE callback function
 description: The client driver's implementation of the EVT\_NET\_ADAPTER\_CREATE\_TXQUEUE event callback function that sets up a transmit queue.
 ms.assetid: 6597b92f-9e32-428e-bf3c-b12d1fcf3834
 keywords: ["EvtNetAdapterCreateTxqueue callback function Network Drivers Starting with Windows Vista", "EVT_NET_ADAPTER_CREATE_TXQUEUE", "PFN_NET_ADAPTER_CREATE_TXQUEUE callback function pointer Network Drivers Starting with Windows Vista"]
