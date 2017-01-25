@@ -40,7 +40,7 @@ Parameters
 The WDFDEVICE object created by a prior call to [**WdfDeviceCreate**](wdf-wdfdevicecreate)
 
 *AdapterAttributes* \[in, optional\]  
-A pointer to a caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](wdf-wdf_object_attributes) structure. The structure’s ParentObject must be NULL. The parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
+A pointer to a caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s ParentObject must be NULL. The parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
 
 *Configuration* \[in\]  
 A pointer to a caller-allocated [**NET\_ADAPTER\_CONFIG**](net-adapter-config.md) structure. For info, see [**NET\_ADAPTER\_CONFIG\_INIT**](net-adapter-config-init.md).

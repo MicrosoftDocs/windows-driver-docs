@@ -39,7 +39,7 @@ Parameters
 A pointer to a caller-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
 
 *QueueAttributes* \[in, optional\]  
-An optional pointer to a caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](wdf-wdf_object_attributes) structure that specifies attributes for the net request queue object.
+An optional pointer to a caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that specifies attributes for the net request queue object.
 
 *Queue* \[out, optional\]  
 An optional pointer to a location that receives a handle to the new net request queue object.

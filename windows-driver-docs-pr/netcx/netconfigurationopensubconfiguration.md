@@ -43,7 +43,7 @@ A handle to an adapter configuration object opened in a prior call to [**NetAdap
 A pointer to a string specifying the name of the sub configuration to open.
 
 *SubConfigurationAttributes* \[in, optional\]  
-A pointer to a [**WDF\_OBJECT\_ATTRIBUTES**](wdf-wdf_object_attributes) structure that contains driver-supplied attributes for the new configuration object. This parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
+A pointer to a [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new configuration object. This parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
 
 *SubConfiguration* \[out\]  
 A pointer to a location that receives a handle to the new sub configuration object.
@@ -56,7 +56,7 @@ The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this me
 Remarks
 -------
 
-If the client provides a [**WDF\_OBJECT\_ATTRIBUTES**](wdf-wdf_object_attributes), it specifies **NULL** for **ParentObject**. By default, the sub configuration is parented to the existing adapter configuration object.
+If the client provides a [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400), it specifies **NULL** for **ParentObject**. By default, the sub configuration is parented to the existing adapter configuration object.
 
 The client driver closes the sub configuration by calling [**NetConfigurationClose**](netconfigurationclose.md) with either the sub configuration object or the parent adapter configuration object.
 

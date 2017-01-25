@@ -43,7 +43,7 @@ A handle to an adapter configuration object opened in a prior call to [**NetAdap
 A pointer to a **UNICODE\_STRING** structure that contains a name for string value.
 
 *StringAttributes* \[in, optional\]  
-A pointer to a [**WDF\_OBJECT\_ATTRIBUTES**](wdf-wdf_object_attributes) structure that contains driver-supplied attributes for the new WDFSTRING object. This parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
+A pointer to a [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new WDFSTRING object. This parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
 
 *WdfString* \[out\]  
 A handle to a framework string object. NetAdapterCx will assign the registry value's string data to this object.
@@ -56,7 +56,7 @@ The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this me
 Remarks
 -------
 
-By default, the framework string object is parented to the collection object. The client driver can change this by setting the **ParentObject** member of the [**WDF\_OBJECT\_ATTRIBUTES**](wdf-wdf_object_attributes) structure.
+By default, the framework string object is parented to the collection object. The client driver can change this by setting the **ParentObject** member of the [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure.
 
 Requirements
 ------------

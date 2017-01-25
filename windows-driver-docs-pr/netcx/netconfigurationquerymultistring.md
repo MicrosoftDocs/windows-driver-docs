@@ -43,7 +43,7 @@ A handle to an adapter configuration object opened in a prior call to [**NetAdap
 A pointer to a **UNICODE\_STRING** structure that contains a value name.
 
 *StringsAttributes* \[in, optional\]  
-A pointer to a [**WDF\_OBJECT\_ATTRIBUTES**](wdf-wdf_object_attributes) structure that contains driver-supplied attributes for the new WDFSTRING objects. This parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
+A pointer to a [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new WDFSTRING objects. This parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
 
 *Collection* \[in, out\]  
 A handle to a driver-supplied collection object.
@@ -56,7 +56,7 @@ The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this me
 Remarks
 -------
 
-By default, the strings are parented to the collection object. The client driver can change this by setting the **ParentObject** member of the [**WDF\_OBJECT\_ATTRIBUTES**](wdf-wdf_object_attributes) structure.
+By default, the strings are parented to the collection object. The client driver can change this by setting the **ParentObject** member of the [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure.
 
 Requirements
 ------------

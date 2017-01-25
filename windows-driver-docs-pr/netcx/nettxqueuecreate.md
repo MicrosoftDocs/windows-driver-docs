@@ -39,7 +39,7 @@ Parameters
 A pointer to the **NETTXQUEUE\_INIT** structure that the client driver received in [*EVT\_NET\_ADAPTER\_CREATE\_TXQUEUE*](evt-net-adapter-create-txqueue.md).
 
 *TxQueueAttributes* \[in\]  
-A pointer to caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](wdf-wdf_object_attributes) structure. The structure’s **ParentObject** must be NULL. The parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
+A pointer to caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s **ParentObject** must be NULL. The parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
 
 *Configuration* \[in\]  
 A pointer to a caller-allocated [**NET\_TXQUEUE\_CONFIG**](net-txqueue-config.md) structure.
