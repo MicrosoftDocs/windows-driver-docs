@@ -27,4 +27,4 @@ The actual number of CPUs that are used for RSS is also limited by the total num
 
 The PowerShell cmdlet for setting the number of RSS CPUs is [Set-NetAdapterRss](https://technet.microsoft.com/en-us/library/jj130863). The primary difference between using **Set-NetAdapterRss** and using **MaxNumRssCpus** is that PowerShell cmdlets operate on a per-Network Adapter basis while **MaxNumRssCpus** is global, meaning it applies to all Network Adapters. Generally, working with each Network Adapter separately is recommended because it offers more flexibility, granularity, and understandability in giving each Network Adapter its own configuration. However, administrators might still use the global **MaxNumRssCpus** key if they would like to apply a configuration to all current and all future Network Adapters at the same time.
 
-For a complete list of Network Adapter cmdlets, see [Network Adapter Cmdlets in WIndows PowerShell](https://technet.microsoft.com/library/jj134956).
+For a complete list of Network Adapter cmdlets, see [Network Adapter Cmdlets in Windows PowerShell](https://technet.microsoft.com/library/jj134956).
