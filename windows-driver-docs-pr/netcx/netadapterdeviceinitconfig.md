@@ -33,7 +33,7 @@ Parameters
 ----------
 
 *DeviceInit* \[in, out\]  
-The DeviceInit value passed in to the client by WDF in its [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) routine.
+The DeviceInit value passed in to the client by WDF in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) routine.
 
 Return value
 ------------
@@ -43,7 +43,7 @@ The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this me
 Remarks
 -------
 
-The client driver calls this method in its [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) callback before it calls [**WdfDeviceCreate**](wdf-wdfdevicecreate).
+The client driver calls this method in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback before it calls [**WdfDeviceCreate**](wdf-wdfdevicecreate).
 
 When a client driver calls **NetAdapterDeviceInitConfig**, the system-supplied NetAdapterCx.sys driver calls the following methods on behalf of the client. The client driver does not need to call these methods.
 

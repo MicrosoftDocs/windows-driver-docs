@@ -52,7 +52,7 @@ The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this me
 Remarks
 -------
 
-The client driver typically calls this method from its [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) routine after the client has called [**WdfDeviceCreate**](wdf-wdfdevicecreate) and [**NetAdapterCreate**](netadaptercreate.md).
+The client driver typically calls this method from its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) routine after the client has called [**WdfDeviceCreate**](wdf-wdfdevicecreate) and [**NetAdapterCreate**](netadaptercreate.md).
 
 The NETREQUESTQUEUE object represents an OID queue in the traditional NDIS model.
 
