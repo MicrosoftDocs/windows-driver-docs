@@ -13,7 +13,7 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE callback function
+# `EVT_NET_ADAPTER_CREATE_RXQUEUE` callback function
 
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
