@@ -15,7 +15,7 @@ The following table shows the result of binding a second socket to a local trans
  <table>
      <tr>
       <th colspan="2" rowspan="3">Second bind</th>
-      <th colspan="2">First bind</th>
+      <th colspan="6">First bind</th>
      </tr>
      <tr>
       <td colspan="2">
