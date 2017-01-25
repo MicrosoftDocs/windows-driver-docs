@@ -19,8 +19,6 @@ api_type:
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
-\[NetAdapterCx is preview only in the next major update to Windows 10\]
-
 Creates a net adapter object.
 
 Syntax
