@@ -1,1 +1,0 @@
-NetAdapterCx is preview only in Windows 10, version 1703.
