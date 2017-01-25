@@ -17,7 +17,7 @@ NDIS uses the default value of 0 for base CPU number, but an administrator can c
 
 In Microsoft Windows Server 2003 with the Scalable Networking Pack, administrators can set the base CPU number with the **RssBaseCpu** registry keyword in **HKEY\_LOCAL\_MACHINE\\\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters**. The **RssBaseCpu** value is a DWORD type and, if it is not present, NDIS uses the default value of 0.
 
-In Windows Server 2008, administrators can set the base CPU number with the **RssBaseCpu** registry keyword in **HKEY\_LOCAL\_MACHINE\\\\SYSTEM\\CurrentControlSet\\Services\\NDIS\\Parameters**. The **RssBaseCpu** value is a DWORD type and, if it is not present, NDIS uses the default value of 0. This registry keyword also applies to Windows Server 2012, Windows Server 2016, and later.
+In Windows Server 2008, administrators can set the base CPU number with the **RssBaseCpu** registry keyword in **HKEY\_LOCAL\_MACHINE\\\\SYSTEM\\CurrentControlSet\\Services\\NDIS\\Parameters**. The **RssBaseCpu** value is a DWORD type and, if it is not present, NDIS uses the default value of 0. This registry keyword also applies to later versions of Windows Server.
 
 **Note** Starting in Windows 8 and Windows Server 2012, administrators can control many aspects of Network Adapters by using PowerShell cmdlets. Directly editing the registry is now discouraged.
 
