@@ -52,7 +52,7 @@ Drivers that run in kernel mode must be very careful about directly reading from
 ## <span id="Paged_pool_and_Nonpaged_pool"></span><span id="paged_pool_and_nonpaged_pool"></span><span id="PAGED_POOL_AND_NONPAGED_POOL"></span>Paged pool and Nonpaged pool
 
 
-In user space, all physical memory pages can be paged out to a disk file as needed. In system space, some physical pages can be paged out and others cannot. System space has two regions for dynamically allocating memory: paged pool and nonpaged pool. In 64-bit Windows, paged pool is the 128-gigabyte range of virtual addresses that goes from 0xFFFFA800'00000000 through 0xFFFFA81F'FFFFFFFF. Nonpaged pool is the 128-gigabyte range of virtual addresses that goes from 0xFFFFAC00'00000000 through 0xFFFFAC1F'FFFFFFFF.
+In user space, all physical memory pages can be paged out to a disk file as needed. In system space, some physical pages can be paged out and others cannot. System space has two regions for dynamically allocating memory: paged pool and nonpaged pool. 
 
 Memory that is allocated in paged pool can be paged out to a disk file as needed. Memory that is allocated in nonpaged pool can never be paged out to a disk file.
 
