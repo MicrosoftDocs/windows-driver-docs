@@ -232,6 +232,7 @@
 ##### [C28110](28110---drivers-must-protect-floating-point-hardware-state--see-use-of.md)
 ##### [C28111](28111---the-irql-where-the-floating-point-state-was-saved-does-not-mat.md)
 ##### [C28114](28114---copying-a-whole-irp-leaves-certain-fields-initialized-that-sho.md)
+##### [C28118](28118---irq-exceeds-caller.md)
 ##### [C28120](28120---the-function--function--is-not-permitted-to-be-called-at-the-c.md)
 ##### [C28121](28121---the-function--function--is-not-permitted-to-be-called-at-the-c.md)
 ##### [C28122](28122---the-function--function--is-not-permitted-to-be-called-at-a-low.md)
