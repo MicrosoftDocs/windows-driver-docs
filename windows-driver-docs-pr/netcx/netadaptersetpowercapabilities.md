@@ -97,9 +97,6 @@ Requirements
 [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md)
 
 [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md)
-
-[**NetAdapterSetMacCapabilities**](netvista-netadaptersetmaccapabilities)
-
  
 
  

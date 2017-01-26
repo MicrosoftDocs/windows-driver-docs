@@ -82,7 +82,7 @@ Requirements
 
 [**NetPacketGetTypedContext**](netpacketgettypedcontext.md)
 
-[**WDF\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME**](wdf-wdf_declare_context_type_with_name)
+[**WDF\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff551252)
 
  
 
