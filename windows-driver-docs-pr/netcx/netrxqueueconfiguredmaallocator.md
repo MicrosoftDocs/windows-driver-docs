@@ -38,7 +38,7 @@ Parameters
 The receive queue object that the client driver obtained from a previous call to [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 *Enabler* \[in\]  
-A handle to a DMA enabler object that the client driver obtained from a previous call to [**WdfDmaEnablerCreate**](wdf-wdfdmaenablercreate).
+A handle to a DMA enabler object that the client driver obtained from a previous call to [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983).
 
 Return value
 ------------
@@ -50,7 +50,7 @@ Remarks
 
 The client driver can choose to let NetAdapterCx manage the receive buffer on its behalf. To opt in, the client driver must first specify the size of its desired common buffer by setting the **AllocationSize** and **AlignmentRequirement** members of [**NET\_RXQUEUE\_CONFIG**](net-rxqueue-config.md).
 
-Typically, from its [*EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function, the client driver calls [**WdfDmaEnablerCreate**](wdf-wdfdmaenablercreate), and then passes the initialized WDFDMAENABLER to **NetRxQueueConfigureDmaAllocator**.
+Typically, from its [*EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function, the client driver calls [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983), and then passes the initialized WDFDMAENABLER to **NetRxQueueConfigureDmaAllocator**.
 
 The client driver does not need to delete the common buffer. NetAdapterCx handles this on the driver's behalf.
 

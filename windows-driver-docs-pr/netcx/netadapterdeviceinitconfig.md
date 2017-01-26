@@ -47,11 +47,11 @@ The client driver calls this method in its [*EvtDriverDeviceAdd*](https://msdn.m
 
 When a client driver calls **NetAdapterDeviceInitConfig**, the system-supplied NetAdapterCx.sys driver calls the following methods on behalf of the client. The client driver does not need to call these methods.
 
--   [**WdfDeviceInitSetReleaseHardwareOrderOnFailure**](wdf-wdfdeviceinitsetreleasehardwareorderonfailure)
--   [**WdfDeviceInitSetDeviceType**](wdf-wdfdeviceinitsetdevicetype)
--   [**WdfDeviceInitSetCharacteristics**](wdf-wdfdeviceinitsetcharacteristics)
--   [**WdfDeviceInitSetIoType**](wdf-wdfdeviceinitsetiotype)
--   [**WdfDeviceInitSetPowerPageable**](wdf-wdfdeviceinitsetpowerpageable)
+-   [**WdfDeviceInitSetReleaseHardwareOrderOnFailure**](https://msdn.microsoft.com/library/windows/hardware/hh706196)
+-   [**WdfDeviceInitSetDeviceType**](https://msdn.microsoft.com/library/windows/hardware/ff546090)
+-   [**WdfDeviceInitSetCharacteristics**](https://msdn.microsoft.com/library/windows/hardware/ff546074)
+-   [**WdfDeviceInitSetIoType**](https://msdn.microsoft.com/library/windows/hardware/ff546128)
+-   [**WdfDeviceInitSetPowerPageable**](https://msdn.microsoft.com/library/windows/hardware/ff546766)
 
 Requirements
 ------------

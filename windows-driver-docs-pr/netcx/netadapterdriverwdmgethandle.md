@@ -35,7 +35,7 @@ Parameters
 ----------
 
 *Driver* \[in\]  
-A handle to the driver's framework driver object, obtained from a previous call to [**WdfDriverCreate**](wdf-wdfdrivercreate).
+A handle to the driver's framework driver object, obtained from a previous call to [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175).
 
 *Type* \[in\]  
 A [**NET\_ADAPTER\_DRIVER\_TYPE**](net-adapter-driver-type.md) enumeration value that specifies the type of network adapter driver.
