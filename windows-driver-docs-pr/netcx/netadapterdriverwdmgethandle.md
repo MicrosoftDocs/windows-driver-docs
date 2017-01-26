@@ -48,7 +48,7 @@ Return value
 Remarks
 -------
 
-The driver must have previously called [**NetAdapterDriverRegister**](netvista-netadapterdriverregister).
+The driver must have previously called [**NetAdapterCreate**](netvista-netadapterdrivercreate).
 
 Requirements
 ------------
