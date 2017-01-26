@@ -56,7 +56,7 @@ Remarks
 
 The client driver passes an initialized **NET\_ADAPTER\_LINK\_LAYER\_CAPABILITIES** structure as an input parameter value to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
 
-Call [**NET\_ADAPTER\_LINK\_LAYER\_CAPABILITIES\_INIT**](netvista-net_adapter_link_layer_capabilities_init) to initialize this structure.
+Call [**NET\_ADAPTER\_LINK\_LAYER\_CAPABILITIES\_INIT**](net-adapter-link-layer-capabilities-init.md) to initialize this structure.
 
 Requirements
 ------------
