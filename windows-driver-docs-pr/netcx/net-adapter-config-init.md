@@ -29,8 +29,6 @@ FORCEINLINE VOID NET_ADAPTER_CONFIG_INIT(
   _In_  PFN_NET_ADAPTER_SET_CAPABILITIES EvtAdapterSetCapabilities,
   _In_  PFN_NET_ADAPTER_CREATE_TXQUEUE   EvtAdapterCreateTxQueue,
   _In_  PFN_NET_ADAPTER_CREATE_RXQUEUE   EvtAdapterCreateRxQueue,
-  _In_  PFN_NET_ADAPTER_START            EvtAdapterStart,
-  _In_  PFN_NET_ADAPTER_PAUSE            EvtAdapterPause
 );
 ```
 
@@ -48,12 +46,6 @@ A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_CREATE\_TXQ
 
 *EvtAdapterCreateRxQueue* \[in\]  
 A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback.
-
-*EvtAdapterStart* \[in\]  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_START*](netvista-evt_net_adapter_start) event callback.
-
-*EvtAdapterPause* \[in\]  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_PAUSE*](netvista-evt_net_adapter_pause) event callback.
 
 Return value
 ------------

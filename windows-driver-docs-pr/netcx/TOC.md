@@ -25,6 +25,7 @@
 ## [NET_ADAPTER_DATAPATH_CAPABILITIES_INIT method](net-adapter-datapath-capabilities-init.md)
 ## [NET_ADAPTER_DRIVER_TYPE](net-adapter-driver-type.md)
 ## [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md)
+## [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT](net-adapter-link-layer-capabilities-init.md)
 ## [NET_ADAPTER_LINK_STATE](net-adapter-link-state.md)
 ## [NET_ADAPTER_LINK_STATE_INIT method](net-adapter-link-state-init.md)
 ## [NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED method](net-adapter-link-state-init-disconnected.md)
