@@ -15,8 +15,11 @@ api_type:
 
 # NetConfigurationAssignUlong method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+The **NetConfigurationAssignUlong** method 
+
+<!--what does it call and do? configuration registry database.  see ndis*configuration*-->
 
 Syntax
 ------
