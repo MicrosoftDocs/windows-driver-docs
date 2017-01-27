@@ -15,6 +15,7 @@ api_type:
 
 # NetConfigurationAssignBinary method
 
+The **NetConfigurationAssignBinary** method writes caller-supplied binary data to a specified value name in the registry.
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
@@ -34,17 +35,25 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
+Handle to the NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
+A pointer to a **UNICODE_STRING** structure that contains a value name. 
 
 *Buffer* \[in\]  
+A pointer to a buffer that contains driver-supplied data.
 
 *BufferLength* \[in\]  
+The length, in bytes, of the buffer that *Buffer* points to.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+
+Remarks
+---
+The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
 
 Requirements
 ------------
