@@ -12,7 +12,7 @@ ms.assetid: 5eeb8457-e63c-419b-ac68-11c1fde82e8c
 
 # Before You Sign In
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > This content only applies to administration tasks for the Sysdev dashboard, which is being replaced by the Windows Hardware Dev Center Dashboard. See [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/en-us/windows/hardware/drivers/dashboard/index) for current support and transition timelines.  
 
 To use the Hardware Dev Center dashboard, you must first register both you and your company on the dashboard. The dashboard replaces the Windows Quality Online Services website also known as Winqual.

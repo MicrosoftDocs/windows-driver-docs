@@ -9,7 +9,7 @@ ms.assetid: 056b71f9-32bc-47e9-b730-45ad1331cc51
 
 # Windows Update Hardware-Related Software Content Policy
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > This content applies to the Sysdev dashboard, which is being replaced by the Windows Hardware Dev Center Dashboard. See [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/en-us/windows/hardware/drivers/dashboard/index) for current support and transition timelines.  
 
 Updated: January 13, 2012 File name: windows-update-driver-policy.docx 59 KB Microsoft Word file

@@ -9,7 +9,7 @@ ms.assetid: 1d909826-bbf2-4a5c-9c6a-10e423880ee5
 
 # Driver Signing Guidelines for ISVs
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > This content applies to the Sysdev dashboard, which is being replaced by the Windows Hardware Dev Center Dashboard. See [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/en-us/windows/hardware/drivers/dashboard/index) for current support and transition timelines.    
 
 Your company's quality assurance processes are responsible for testing driver functionality during product development. When the driver is complete, you can verify that the driver is compatible with Windows and submit it to the Windows Certification Program for certification or digital signature. Any signed drivers may be distributed on Windows Update, regardless of whether the digital signature is obtained through certification, or through unclassified or “Other Device” testing.

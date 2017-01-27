@@ -12,7 +12,7 @@ ms.assetid: d55c98d9-4536-4004-8bee-e95f665cb4ce
 
 # Add or Remove Drivers
 
-> [NOTE]
+> [!NOTE]
 > This section is only for WLK submissions. For all other submissions, including submissions for Windows 10, use the [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/index).
 
 On the **Add or remove drivers** tab, you can start or stop distribution through Windows® Update for the drivers in a submission package.

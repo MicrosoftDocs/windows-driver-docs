@@ -9,7 +9,7 @@ ms.assetid: 0fc33c79-2fc0-47fc-9ae6-d5e4621ce8fd
 
 # Windows Update and Driver Distribution Support
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > This content applies to the Sysdev dashboard, which is being replaced by the Windows Hardware Dev Center Dashboard. See [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/en-us/windows/hardware/drivers/dashboard/index) for current support and transition timelines.  
 
 One goal for Windows and related hardware support is simple: customers should not have to think about finding drivers or other software to enable their hardware to work with Windows. Windows finds and installs the necessary drivers and software automatically through the well-proven services of Windows Update.
