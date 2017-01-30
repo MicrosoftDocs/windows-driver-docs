@@ -15,8 +15,9 @@ api_type:
 
 # NetConfigurationAssignMultiString method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+The **NetConfigurationAssignMultiString** method assigns a set of strings to a specified value name in the registry. The strings are contained in a specified collection of framework string objects.
 
 Syntax
 ------
@@ -33,15 +34,18 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
+Handle to the NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
+A pointer to a **UNICODE_STRING** structure that contains a value name. 
 
 *Collection* \[in\]  
+A handle to a framework collection object that represents a collection of framework string objects. 
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Requirements
 ------------
