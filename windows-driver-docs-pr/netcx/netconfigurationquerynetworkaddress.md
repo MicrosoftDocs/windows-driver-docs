@@ -17,7 +17,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves the network address that is currently assigned to the adapter configuration object.
+Retrieves the software-configurable network address that was stored in the registry for a NIC.
 
 Syntax
 ------
@@ -38,15 +38,22 @@ Parameters
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *BufferLength* \[in\]  
+The length, in bytes, of the buffer that *NetworkAddressBuffer* points to.
 
 *NetworkAddressBuffer* \[out\]  
+A pointer to a caller-allocated buffer that receives the requested network address as a byte array. The pointer can be NULL if the *BufferLength* parameter is zero.
 
 *ResultLength* \[out\]  
+A caller-supplied location that, on return, contains the size, in bytes, of the information that the method stored in *NetworkAddressBuffer*. If the function's return value is STATUS_BUFFER_TOO_SMALL, this location receives the required buffer size.
 
 Return value
 ------------
+Returns one of the following status values:
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+|Return Code|Description|
+|---|---|
+|STATUS\_SUCCESS|The operation succeeded.|
+|STATUS_BUFFER_TOO_SMALL|The supplied buffer is too small to receive the information.|
 
 Remarks
 -----
