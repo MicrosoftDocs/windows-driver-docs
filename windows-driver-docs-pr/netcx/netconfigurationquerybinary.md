@@ -15,6 +15,7 @@ api_type:
 
 # NetConfigurationQueryBinary method
 
+Retrieves the data that is currently assigned to a specified registry value, stores the data in a framework-allocated buffer, and creates a framework memory object to represent the buffer.
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
@@ -23,11 +24,11 @@ Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS NetConfigurationQueryBinary(
-  _In_  NETCONFIGURATION       Configuration,
-  _In_  PCUNICODE_STRING       ValueName,
-  _In_  POOL_TYPE              PoolType,
-  _In_  PWDF_OBJECT_ATTRIBUTES MemoryAttributes,
-  _Out_ WDFMEMORY*             Memory
+  _In_      NETCONFIGURATION       Configuration,
+  _In_      PCUNICODE_STRING       ValueName,
+  _In_      POOL_TYPE              PoolType,
+  _In_opt_  PWDF_OBJECT_ATTRIBUTES MemoryAttributes,
+  _Out_     WDFMEMORY*             Memory
 );
 ```
 
@@ -35,19 +36,28 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
+Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
+A pointer to a **UNICODE_STRING** structure that contains a value name. 
 
 *PoolType* \[in\]  
+A **POOL_TYPE**-typed value that specifies the type of memory to be allocated for the data buffer. 
 
-*MemoryAttributes* \[in\]  
+*MemoryAttributes* \[in, optional\]  
+A pointer to a [WDF_OBJECT_ATTRIBUTES](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains object attributes for the new memory object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. 
 
 *Memory* \[out\]  
+A pointer to a location that receives a handle to the new memory object. 
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+
+Remarks
+-----
+The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
 
 Requirements
 ------------

@@ -15,8 +15,9 @@ api_type:
 
 # NetConfigurationQueryNetworkAddress method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the network address that is currently assigned to the adapter configuration object.
 
 Syntax
 ------
@@ -34,6 +35,7 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
+Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *BufferLength* \[in\]  
 
@@ -44,7 +46,11 @@ Parameters
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+
+Remarks
+-----
+The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
 
 Requirements
 ------------

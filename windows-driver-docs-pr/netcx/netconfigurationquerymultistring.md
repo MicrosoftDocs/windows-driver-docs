@@ -16,7 +16,6 @@ api_type:
 
 # NetConfigurationQueryMultiString method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Retrieves the strings that are currently assigned to the adapter configuration object, creates a WDFSTRING object for each string, and adds each string object to a specified collection object.
@@ -37,7 +36,7 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
-A handle to an adapter configuration object opened in a prior call to [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md).
+Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
 A pointer to a **UNICODE\_STRING** structure that contains a value name.
@@ -55,6 +54,7 @@ The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this me
 
 Remarks
 -------
+The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
 
 By default, the strings are parented to the collection object. The client driver can change this by setting the **ParentObject** member of the [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure.
 

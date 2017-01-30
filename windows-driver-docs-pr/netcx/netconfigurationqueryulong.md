@@ -16,7 +16,6 @@ api_type:
 
 # NetConfigurationQueryUlong method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Retrieves the specified unsigned long word (REG\_DWORD) data from the adapter configuration object and copies the data to a specified location.
@@ -37,7 +36,7 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
-A handle to an adapter configuration object opened in a prior call to [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md).
+Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *Flags* \[in\]  
 A valid bitwise OR of [**NET\_CONFIGURATION\_QUERY\_ULONG\_FLAGS**](net-configuration-query-ulong-flags.md)-typed flags.
@@ -52,6 +51,10 @@ Return value
 ------------
 
 The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+
+Remarks
+-----
+The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
 
 Requirements
 ------------

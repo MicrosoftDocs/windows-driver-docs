@@ -37,7 +37,7 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
-A handle to an adapter configuration object opened in a prior call to [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md).
+Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
 A pointer to a **UNICODE\_STRING** structure that contains a name for string value.
@@ -55,6 +55,7 @@ The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this me
 
 Remarks
 -------
+The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
 
 By default, the framework string object is parented to the collection object. The client driver can change this by setting the **ParentObject** member of the [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure.
 

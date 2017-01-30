@@ -34,7 +34,7 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
-Handle to the NETCONFIGURATION object that represents an opened registry key.
+Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
 A pointer to a **UNICODE_STRING** structure that contains a value name. 

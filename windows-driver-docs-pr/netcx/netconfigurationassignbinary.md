@@ -15,9 +15,9 @@ api_type:
 
 # NetConfigurationAssignBinary method
 
-The **NetConfigurationAssignBinary** method writes caller-supplied binary data to a specified value name in the registry.
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+The **NetConfigurationAssignBinary** method writes caller-supplied binary data to a specified value name in the registry.
 
 Syntax
 ------
@@ -35,7 +35,7 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
-Handle to the NETCONFIGURATION object that represents an opened registry key.
+Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
 A pointer to a **UNICODE_STRING** structure that contains a value name. 

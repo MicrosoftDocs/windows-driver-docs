@@ -15,8 +15,9 @@ api_type:
 
 # NetConfigurationAssignUnicodeString method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+The **NetConfigurationAssignUnicodeString** method assigns a specified Unicode string to a specified value name in the registry.
 
 Syntax
 ------
@@ -33,7 +34,7 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
-Handle to the NETCONFIGURATION object that represents an opened registry key.
+Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
 A pointer to a **UNICODE_STRING** structure that contains a value name. 
