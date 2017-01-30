@@ -15,8 +15,9 @@ api_type:
 
 # NetConfigurationQueryNetworkAddress method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the software-configurable network address that was stored in the registry for a NIC.
 
 Syntax
 ------
@@ -34,17 +35,29 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
+Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *BufferLength* \[in\]  
+The length, in bytes, of the buffer that *NetworkAddressBuffer* points to.
 
 *NetworkAddressBuffer* \[out\]  
+A pointer to a caller-allocated buffer that receives the requested network address as a byte array. The pointer can be NULL if the *BufferLength* parameter is zero.
 
 *ResultLength* \[out\]  
+A caller-supplied location that, on return, contains the size, in bytes, of the information that the method stored in *NetworkAddressBuffer*. If the function's return value is STATUS_BUFFER_TOO_SMALL, this location receives the required buffer size.
 
 Return value
 ------------
+Returns one of the following status values:
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+|Return Code|Description|
+|---|---|
+|STATUS\_SUCCESS|The operation succeeded.|
+|STATUS_BUFFER_TOO_SMALL|The supplied buffer is too small to receive the information.|
+
+Remarks
+-----
+The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
 
 Requirements
 ------------
@@ -57,7 +70,7 @@ Requirements
 <tbody>
 <tr class="odd">
 <td align="left"><p>Target platform</p></td>
-<td align="left">[Universal](http://go.microsoft.com/fwlink/p/?linkid=531356)</td>
+<td align="left">Universal</td>
 </tr>
 <tr class="even">
 <td align="left"><p>Minimum KMDF version</p></td>
@@ -82,7 +95,6 @@ Requirements
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bnetvista\netvista%5D:%20NetConfigurationQueryNetworkAddress%20method%20%20RELEASE:%20%281/19/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 
