@@ -41,7 +41,7 @@ Handle to a NETCONFIGURATION object that represents an opened registry key.
 The length, in bytes, of the buffer that *NetworkAddressBuffer* points to.
 
 *NetworkAddressBuffer* \[out\]  
-A pointer to a caller-allocated buffer that receives the requested network address as a byte array. The pointer can be NULL if the *BufferLength* parameter is zero.
+A pointer to a caller-allocated buffer that receives the requested network address as a byte array.
 
 *ResultLength* \[out\]  
 A caller-supplied location that, on return, contains the size, in bytes, of the information that the method stored in *NetworkAddressBuffer*. If the function's return value is STATUS_BUFFER_TOO_SMALL, this location receives the required buffer size.
@@ -58,6 +58,16 @@ Returns one of the following status values:
 Remarks
 -----
 The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
+
+Typically, a **NetworkAddress** entry in the registry is stored as a string of hexadecimal digits. Optionally, an installer can store such an address as a string of paired digits, with each pair separated from the next by a hyphen. 
+
+The **NetConfigurationQueryNetworkAddress** method searches the registry **Parameters** key for the keyword **NetworkAddress** and then converts the value of this string-type entry to a sequence of byte integers. **NetConfigurationQueryNetworkAddress** discards hyphens and converts each such pair into a single byte.
+
+The buffer remains valid for the lifetime of the NETCONFIGURATION object.
+
+Note that NDIS does not validate the network address. NDIS does not guarantee that this value is a valid address, that the value has the proper length, or even that the value is a network address. If the caller determines that the value is out of bounds, it should not use the value; instead, it should use the permanent medium access control (MAC) address or a default address.
+
+To support software configurable network addressing, use MSFT_NetAdapter WMI classes instead.
 
 Requirements
 ------------
