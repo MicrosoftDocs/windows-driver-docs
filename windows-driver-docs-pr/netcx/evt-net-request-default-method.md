@@ -15,10 +15,9 @@ api_type:
 
 # EVT\_NET\_REQUEST\_DEFAULT\_METHOD callback function
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Implemented by the client driver to ... handler for method OIDs
+Implemented by the client driver to handle method OIDs.
 
 Syntax
 ------

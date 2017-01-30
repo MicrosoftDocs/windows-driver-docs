@@ -38,16 +38,16 @@ Members
 -------
 
 **Next**  
-Pointer to the Next Custom Handler
+A pointer to the next custom handler.
 
 **Memory**  
-The WDFMEMORY object backing this memory
+A handle to a WDFMEMORY object.
 
 **Oid**  
-The Request Identifiver
+Specifies the object identifier of the requested operation. The value is an OID_XXX code. 
 
 **EvtRequestMethod**  
-Pointer to the client driver's implementation of a [*EVT\_NET\_REQUEST\_METHOD*](evt-net-request-method.md) event callback function.
+Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_METHOD*](evt-net-request-method.md) event callback function.
 
 **MinimumInputLength**  
 Minimum input length needed by the client for this request.
@@ -57,7 +57,6 @@ Minimum output length needed by the client for this request.
 
 Remarks
 -------
-
 Call [**NET\_REQUEST\_QUEUE\_METHOD\_HANDLER\_INIT**](net-request-queue-method-handler-init.md) to initialize this structure.
 
 Call [**NET\_REQUEST\_QUEUE\_CONFIG\_ADD\_INITIALIZED\_METHOD\_HANDLER**](net-request-queue-config-add-initialized-method-handler.md) to add a caller-provided custom request handler to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.

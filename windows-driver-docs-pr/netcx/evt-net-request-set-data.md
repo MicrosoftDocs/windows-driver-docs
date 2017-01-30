@@ -18,7 +18,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Implemented by the client driver to ... set handler callback
+Implemented by the client driver to ... custom set handler callback
 
 Syntax
 ------

@@ -16,7 +16,6 @@ api_type:
 
 # NetRequestQueueCreate method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Creates a net request queue object.

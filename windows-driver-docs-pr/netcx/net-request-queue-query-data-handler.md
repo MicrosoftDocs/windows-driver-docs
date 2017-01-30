@@ -50,6 +50,12 @@ Pointer to the client driver's implementation of a [*EVT\_NET\_REQUEST\_QUERY\_D
 
 **MinimumOutputLength**  
 
+Remarks
+-------
+Call [**NET_REQUEST_QUEUE_QUERY_DATA_HANDLER_INIT**](net-request-queue-query-data-handler-init.md) to initialize this structure.
+
+Call [**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_QUERY_DATA_HANDLER**](net-request-queue-config-add-initialized-query-data-handler.md) to add a caller-provided custom request handler to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
+
 Requirements
 ------------
 

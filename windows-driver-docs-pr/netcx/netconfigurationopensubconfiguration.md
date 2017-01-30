@@ -16,7 +16,6 @@ api_type:
 
 # NetConfigurationOpenSubConfiguration method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Opens a sub configuration of a specified adapter configuration object.

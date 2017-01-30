@@ -44,7 +44,7 @@ A pointer to the driver-allocated NET\_REQUEST\_QUEUE\_METHOD\_HANDLER structure
 The NDIS\_OID identifier for the request.
 
 *EvtRequestMethod* \[in\]  
-Pointer to the custom query request handler.
+Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_METHOD*](evt-net-request-method.md) event callback function.
 
 *MinimumInputLength* \[in\]  
 The needed minimum input length for the request.

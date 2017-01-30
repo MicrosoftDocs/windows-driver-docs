@@ -16,7 +16,6 @@ api_type:
 
 # NetConfigurationClose method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Releases the handle to the registry key that is associated with an adapter configuration object and then deletes the adapter configuration object.

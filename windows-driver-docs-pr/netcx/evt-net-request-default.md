@@ -18,7 +18,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The client driver's implementation of the *EVT\_NET\_REQUEST\_DEFAULT* event callback function to handle an object identifier (OID) request to query or set information in the driver.
+Implemented by the client driver as the default handler for object identifier (OID) requests.
 
 Syntax
 ------
