@@ -33,15 +33,25 @@ Parameters
 ----------
 
 *Configuration* \[in\]  
+Handle to the NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
+A pointer to a **UNICODE_STRING** structure that contains a value name. 
 
 *Value* \[in\]  
+A pointer to a UNICODE_STRING structure that contains the string to be assigned to the value name that *ValueName* specifies.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+
+Remarks
+---
+
+The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
+
+If an entry of the same name as *ValueName* already exists under the opened registry key, **NetConfigurationAssignUlong** replaces its current value with the caller-supplied value. Otherwise, **NetConfigurationAssignUlong** adds a new value entry with the given name and supplied value to the registry.
 
 Requirements
 ------------
