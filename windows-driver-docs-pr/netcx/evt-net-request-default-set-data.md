@@ -44,19 +44,24 @@ Parameters
 ----------
 
 *RequestQueue* \[in\]  
+A handle to a net request queue object.
 
 *Request* \[in\]  
+A handle to a net request object.
 
 *Oid* \[in\]  
+Specifies the object identifier of the requested operation. The value is an OID_XXX code. 
 
 *InputBuffer* \[in\]  
+A pointer to a caller-supplied buffer.
 
 *InputBufferLength* \[in\]  
+The size of the buffer pointed to by *InputBuffer*.
 
 Return value
 ------------
 
-(NTSTATUS) If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 Requirements
 ------------

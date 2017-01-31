@@ -15,10 +15,9 @@ api_type:
 
 # EVT\_NET\_REQUEST\_METHOD callback function
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Implemented by the client driver to ... custom method handler callback
+Implemented by the client driver to handle a specific OID method request.
 
 Syntax
 ------
