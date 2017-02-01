@@ -259,7 +259,7 @@ Normally, if a Kiosk app fails to activate above the lock screen app, you can fi
 2.  In the **Event Viewer (Local)** pane, expand **Windows Logs**, and then click **Application**.
 3.  Also, in **Event Viewer (local)**, expand **Applications and Services Logs**, expand **Windows**, expand **Apps**, and then click **Microsoft-Windows-TWinUI/Operational**.
 
-Note that becaues kiosk apps with assigned access do not run in full-screen mode, **ApplicationView.GetForCurrentView().IsFullScreenMode** will return false.
+Note that because kiosk apps with assigned access do not run in full-screen mode, **ApplicationView.GetForCurrentView().IsFullScreenMode** will return false.
 
 ## <span id="related_topics"></span>Related topics
 
