@@ -80,10 +80,10 @@ If NDIS_REQUEST_TYPE is not query, set, or method, NetAdapterCx calls the client
 
 Requirements
 ------------
-_Target platform: Universal_
-_Minimum KMDF version: 1.21_
-_Minimum NetAdapterCx version: 1.0_
-_Header: Netrequestqueue.h_
+_Target platform: Universal_  
+_Minimum KMDF version: 1.21_  
+_Minimum NetAdapterCx version: 1.0_  
+_Header: Netrequestqueue.h_  
 _IRQL: PASSIVE_LEVEL_
 
 ## See also

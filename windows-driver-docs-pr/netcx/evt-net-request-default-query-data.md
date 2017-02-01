@@ -18,7 +18,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Implemented by the client driver to ... handler for query OIDs
+Implemented by the client driver as the default handler for object identifier (OID) requests of type query data.
 
 Syntax
 ------
@@ -60,9 +60,9 @@ This callback function does not return a value.
 
 Remarks
 ---
-To register an *EVT\_NET\_REQUEST\_DEFAULT* callback function, the client driver calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+To register an *EVT_NET_REQUEST_DEFAULT_QUERY_DATA* callback function, the client driver calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
-If NDIS_REQUEST_TYPE is not query, set, or method, NetAdapterCx calls the client driver's EVT_NET_REQUEST_DEFAULT handler with the request. If the client driver has not provided this callback, the request fails.
+NetAdapterCx calls the client driver's *EVT_NET_REQUEST_DEFAULT_QUERY_DATA* handler when it receives an OID query data request for which the client driver has not provided a specialized *EVT_NET_REQUEST_QUERY_DATA* handler.
 
 Requirements
 ------------

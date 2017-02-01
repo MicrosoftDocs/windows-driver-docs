@@ -64,7 +64,7 @@ Remarks
 ---
 To register an *EVT_NET_REQUEST_DEFAULT_METHOD* callback function, the client driver calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
-NetAdapterCx calls the client driver's EVT_NET_REQUEST_DEFAULT_METHOD handler when it receives an OID method request for which the client driver has not provided a specialized EVT_NET_REQUEST_METHOD handler.
+NetAdapterCx calls the client driver's *EVT_NET_REQUEST_DEFAULT_METHOD* handler when it receives an OID method request for which the client driver has not provided a specialized *EVT_NET_REQUEST_METHOD* handler.
 
 Requirements
 ------------
