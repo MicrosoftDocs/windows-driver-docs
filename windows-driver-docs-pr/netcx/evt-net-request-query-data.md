@@ -18,7 +18,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Implemented by the client driver to ... custom query handler callback
+Implemented by the client driver to handle a specific OID query data request.
 
 Syntax
 ------
@@ -37,23 +37,31 @@ VOID EvtNetRequestQueryData(
 typedef EVT_NET_REQUEST_QUERY_DATA PFN_NET_REQUEST_QUERY_DATA;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER**](net-request-queue-query-data-handler.md) and then calling [**NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER\_INIT**](net-request-queue-query-data-handler-init.md).
-
 Parameters
 ----------
 
 *RequestQueue* \[in\]  
+A handle to a net request queue object.
 
 *Request* \[in\]  
+A handle to a network request object.
 
 *OutputBuffer* \[out\]  
+A pointer to a caller-supplied buffer.
 
 *OutputBufferLength* \[in\]  
+The length, in bytes, of the request's output buffer, if an output buffer is available.
 
 Return value
 ------------
 
 If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+
+Remarks
+---
+Your client driver can provide one or more specialized handlers for specific OID query data requests, or it can provide a single generic EVT\_NET\_REQUEST\_DEFAULT\_QUERY_DATA callback function.
+
+To register an *EVT_NET_REQUEST_DEFAULT_QUERY_DATA* callback function, the client driver calls **NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER** or[**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_QUERY_DATA_HANDLER**](net-request-queue-config-add-initialized-query-data-handler.md).
 
 Requirements
 ------------

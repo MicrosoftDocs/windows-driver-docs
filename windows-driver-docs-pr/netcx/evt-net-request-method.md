@@ -37,25 +37,34 @@ VOID EvtNetRequestMethod(
 typedef EVT_NET_REQUEST_METHOD PFN_NET_REQUEST_METHOD;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_REQUEST\_QUEUE\_METHOD\_HANDLER**](net-request-queue-method-handler.md) and then calling [**NET\_REQUEST\_QUEUE\_METHOD\_HANDLER\_INIT**](net-request-queue-method-handler-init.md).
-
 Parameters
 ----------
 
 *RequestQueue* \[in\]  
+A handle to a net request queue object.
 
 *Request* \[in\]  
+A handle to a network request object.
 
 *InputOutputBuffer* \[out\]  
+A pointer to a buffer into which the client driver or NetAdapterCx returns information for the specified request.
 
 *InputBufferLength* \[in\]  
+The length, in bytes, of the request's input buffer, if an input buffer is available.
 
 *OutputBufferLength* \[in\]  
+The length, in bytes, of the request's output buffer, if an output buffer is available.
 
 Return value
 ------------
 
 If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+
+Remarks
+---
+Your client driver can provide one or more specialized handlers for specific OID method requests, or it can provide a single generic EVT\_NET\_REQUEST\_DEFAULT\_METHOD callback function.
+
+To register an *EVT_NET_REQUEST_DEFAULT_METHOD* callback function, the client driver calls **NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER** or [**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER**](net-request-queue-config-add-initialized-method-handler.md).
 
 Requirements
 ------------

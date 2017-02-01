@@ -18,7 +18,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Implemented by the client driver to ... custom set handler callback
+Implemented by the client driver to handle a specific OID set data request.
 
 Syntax
 ------
@@ -37,23 +37,31 @@ void EvtNetRequestSetData(
 typedef EVT_NET_REQUEST_SET_DATA PFN_NET_REQUEST_SET_DATA;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_REQUEST\_QUEUE\_SET\_DATA\_HANDLER**](net-request-queue-set-data-handler.md) and then calling [**NET\_REQUEST\_QUEUE\_SET\_DATA\_HANDLER\_INIT**](net-request-queue-set-data-handler-init.md).
-
 Parameters
 ----------
 
 *RequestQueue* \[in\]  
+A handle to a net request queue object.
 
 *Request* \[in\]  
+A handle to a network request object.
 
 *InputBuffer* \[in\]  
+A pointer to a caller-supplied buffer.
 
 *InputBufferLength* \[in\]  
+The length, in bytes, of the request's input buffer, if an input buffer is available.
 
 Return value
 ------------
 
 This callback function does not return a value.
+
+Remarks
+---
+Your client driver can provide one or more specialized handlers for specific OID query data requests, or it can provide a single generic EVT\_NET\_REQUEST\_DEFAULT\_SET_DATA callback function.
+
+To register an *EVT_NET_REQUEST_DEFAULT_SET_DATA* callback function, the client driver calls **NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER** or[**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_SET_DATA_HANDLER**](net-request-queue-config-add-initialized-set-data-handler.md).
 
 Requirements
 ------------

@@ -44,14 +44,19 @@ Parameters
 ----------
 
 *RequestQueue* \[in\]  
+A handle to a net request queue object.
 
 *Request* \[in\]  
+A handle to a network request object.
 
 *Oid* \[in\]  
+The object identifier of the requested operation. The value is an OID\_ *XXX* code.
 
 *OutputBuffer* \[out\]  
+A pointer to a caller-supplied buffer.
 
 *OutputBufferLength* \[in\]  
+The length, in bytes, of the request's output buffer, if an output buffer is available.
 
 Return value
 ------------
