@@ -63,6 +63,12 @@ Return value
 
 If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
+Remarks
+---
+To register an *EVT\_NET\_REQUEST\_DEFAULT* callback function, the client driver calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+
+If NDIS_REQUEST_TYPE is not query, set, or method, NetAdapterCx calls the client driver's EVT_NET_REQUEST_DEFAULT handler with the request. If the client driver has not provided this callback, the request fails.
+
 Requirements
 ------------
 

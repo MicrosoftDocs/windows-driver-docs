@@ -17,7 +17,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Implemented by the client driver to handle method OIDs.
+Implemented by the client driver as the default handler for object identifier (OID) requests of type method.
 
 Syntax
 ------
@@ -58,7 +58,13 @@ Parameters
 Return value
 ------------
 
-(NTSTATUS) If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+
+Remarks
+---
+To register an *EVT_NET_REQUEST_DEFAULT_METHOD* callback function, the client driver calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+
+NetAdapterCx calls the client driver's EVT_NET_REQUEST_DEFAULT_METHOD handler when it receives an OID method request for which the client driver has not provided a specialized EVT_NET_REQUEST_METHOD handler.
 
 Requirements
 ------------

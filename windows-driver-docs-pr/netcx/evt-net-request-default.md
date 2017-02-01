@@ -18,7 +18,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Implemented by the client driver as the default handler for object identifier (OID) requests.
+Implemented by the client driver as the default handler for object identifier (OID) requests that are not query, set, or method requests.
 
 Syntax
 ------
@@ -74,39 +74,17 @@ This callback function does not return a value.
 Remarks
 -------
 
-To register an *EVT\_NET\_REQUEST\_DEFAULT* callback function, the client driver must call [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+To register an *EVT\_NET\_REQUEST\_DEFAULT* callback function, the client driver calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+
+If NDIS_REQUEST_TYPE is not query, set, or method, NetAdapterCx calls the client driver's EVT_NET_REQUEST_DEFAULT handler with the request. If the client driver has not provided this callback, the request fails.
 
 Requirements
 ------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Target platform</p></td>
-<td align="left">Universal</td>
-</tr>
-<tr class="even">
-<td align="left"><p>Minimum KMDF version</p></td>
-<td align="left"><p>1.21</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Minimum NetAdapterCx version</p></td>
-<td align="left"><p>1.0</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Netrequestqueue.h</td>
-</tr>
-<tr class="odd">
-<td align="left"><p>IRQL</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-</tr>
-</tbody>
-</table>
+_Target platform: Universal_
+_Minimum KMDF version: 1.21_
+_Minimum NetAdapterCx version: 1.0_
+_Header: Netrequestqueue.h_
+_IRQL: PASSIVE_LEVEL_
 
 ## See also
 

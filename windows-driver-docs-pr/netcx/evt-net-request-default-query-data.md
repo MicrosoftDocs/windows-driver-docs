@@ -58,6 +58,12 @@ Return value
 
 This callback function does not return a value.
 
+Remarks
+---
+To register an *EVT\_NET\_REQUEST\_DEFAULT* callback function, the client driver calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+
+If NDIS_REQUEST_TYPE is not query, set, or method, NetAdapterCx calls the client driver's EVT_NET_REQUEST_DEFAULT handler with the request. If the client driver has not provided this callback, the request fails.
+
 Requirements
 ------------
 
