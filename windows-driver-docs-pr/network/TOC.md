@@ -1312,7 +1312,7 @@
 #### [MB Provisioned Context Operations](mb-provisioned-context-operations.md)
 #### [MB Network Blacklist Operations](mb-network-blacklist-operations.md)
 #### [MB LTE Attach Operations](mb-lte-attach-operations.md)
-#### [MB SAR Platform Support](mb-sar-platform-support)
+#### [MB SAR Platform Support](mb-sar-platform-support.md)
 #### [Supplemental MB Documentation](supplemental-mb-documentation.md)
 ##### [HOST Shutdown Device Service](host-shutdown-device-service.md)
 ##### [IHV Guidance for Implementing Multimode and Multicarrier Capable MB Devices](ihv-guidance-for-implementing-multimode-and-multicarrier-capable-mb-devices.md)

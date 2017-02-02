@@ -57,7 +57,7 @@ This section includes the following topics:
 
 [MB LTE Attach Operations](mb-lte-attach-operations.md)
 
-[MB SAR Platform Support](mb-sar-platform-support)
+[MB SAR Platform Support](mb-sar-platform-support.md)
 
 [Supplemental MB Documentation](supplemental-mb-documentation.md)
 
