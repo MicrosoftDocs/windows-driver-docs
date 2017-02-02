@@ -18,7 +18,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Adds a caller-provided custom request handler to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
+Adds a pre-initialized custom request handler structure to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
 
 Syntax
 ------
@@ -46,6 +46,7 @@ This method does not return a value.
 
 Remarks
 -------
+When the client driver has finished adding custom handlers, it registers them with NetAdapterCx by calling [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
 If the memory allocation for this method fails, the subsequent call to [**NetRequestQueueCreate**](netrequestqueuecreate.md) returns a failure code.
 

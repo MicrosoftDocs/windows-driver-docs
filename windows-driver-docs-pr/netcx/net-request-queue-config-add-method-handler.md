@@ -15,8 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
- This initializer adds a caller provided custom request callback to the Queue
-    config.
+Adds a caller-provided custom request callback to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
 
 Syntax
 ------
@@ -35,22 +34,27 @@ NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER(
 
 Parameters
 ----------
-  NetRequestQueueConfig - The pointer to the NET_REQUEST_QUEUE_CONFIG structure 
-        to which the custom handler is being added.
  
     Oid - The NDIS_OID Identifier for which this handler is meant for.
  
     EvtRequestMethod - The Custom callback for the request
  
-    MinimumInputLength - The needed minimum input length for the request.
  
-    MinimumOutputLength - The needed minimum output length for the request.
 
 *NetRequestQueueConfig* \[in\]  
 A pointer to a driver-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
 
-*MethodHandler* \[in\]  
-A pointer to a driver-allocated and initialized [**NET\_REQUEST\_QUEUE\_METHOD\_HANDLER**](net-request-queue-method-handler.md) structure.
+*Oid* \[in\]  
+The object identifier of the requested operation. The value is an OID\_ *XXX* code.
+
+*EvtRequestMethod* \[in\]
+Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_METHOD*](evt-net-request-method.md) event callback function.
+
+*MinimumInputLength* \[in\]
+A UINT specifying the minimum input length for the request.
+
+*MinimumOutputLength*  \[in\]
+A UINT specifying the minimum output length for the request.
 
 Return value
 ------------
@@ -59,10 +63,8 @@ This method does not return a value.
 
 Remarks
 -------
-This routine allocates memory, an operation that can fail. However to keep
-    client interface simple this routine doesnt return an error. Instead a bit
-    is set to track the error and thereby the subsequent call to NetRequestQueueCreate
-    fails. 
+When the client driver has finished adding custom handlers, it registers them with NetAdapterCx by calling [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+
 If the memory allocation for this method fails, the subsequent call to [**NetRequestQueueCreate**](netrequestqueuecreate.md) returns a failure code.
 
 Requirements
