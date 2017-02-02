@@ -1,21 +1,21 @@
 ---
-title: NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER method
+title: NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER method
 topic_type:
 - apiref
 api_name:
-- NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER
+- NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER
 api_location:
 - netrequestqueue.h
 api_type:
 - HeaderDef
 ---
 
-# NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER method
+# NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Adds a caller-provided handler for a specific OID method request to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
+Adds a caller-provided handler for a specific OID query data request to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
 
 Syntax
 ------
@@ -23,35 +23,24 @@ Syntax
 ```ManagedCPlusPlus
 FORCEINLINE
 VOID
-NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER(
-    _In_ PNET_REQUEST_QUEUE_CONFIG NetRequestQueueConfig,
-    _In_ NDIS_OID                  Oid,
-    _In_ PFN_NET_REQUEST_METHOD    EvtRequestMethod,
-    _In_ UINT                      MinimumInputLength,
-    _In_ UINT                      MinimumOutputLength
+NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
+    _In_ PNET_REQUEST_QUEUE_CONFIG  NetRequestQueueConfig,
+    _In_ NDIS_OID                   Oid,
+    _In_ PFN_NET_REQUEST_QUERY_DATA EvtRequestQueryData,
+    _In_ UINT                       MinimumOutputLength
 )
 ```
 
 Parameters
 ----------
- 
-    Oid - The NDIS_OID Identifier for which this handler is meant for.
- 
-    EvtRequestMethod - The Custom callback for the request
- 
- 
-
 *NetRequestQueueConfig* \[in\]  
 A pointer to a driver-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
 
 *Oid* \[in\]  
 The object identifier of the requested operation. The value is an OID\_ *XXX* code.
 
-*EvtRequestMethod* \[in\]
-Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_METHOD*](evt-net-request-method.md) event callback function.
-
-*MinimumInputLength* \[in\]
-A UINT specifying the minimum input length for the request.
+*EvtRequestQueryData* \[in\]
+Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function.
 
 *MinimumOutputLength*  \[in\]
 A UINT specifying the minimum output length for the request.

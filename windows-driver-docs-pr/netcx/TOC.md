@@ -51,6 +51,8 @@
 ## [NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_QUERY_DATA_HANDLER method](net-request-queue-config-add-initialized-query-data-handler.md)
 ## [NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_SET_DATA_HANDLER method](net-request-queue-config-add-initialized-set-data-handler.md)
 ## [NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER method](net-request-queue-config-add-method-handler.md)
+## [NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER method](net-request-queue-config-add-query-data-handler.md)
+## [NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER method](net-request-queue-config-add-set-data-handler.md)
 ## [NET_REQUEST_QUEUE_CONFIG_INIT method](net-request-queue-config-init.md)
 ## [NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL method](net-request-queue-config-init-default-parallel.md)
 ## [NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL method](net-request-queue-config-init-default-sequential.md)
