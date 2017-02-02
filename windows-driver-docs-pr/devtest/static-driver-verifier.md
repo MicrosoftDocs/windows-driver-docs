@@ -18,20 +18,6 @@ keywords: ["verifying drivers WDK , Static Driver Verifier", "driver verificatio
 <td align="left"><p><strong>Purpose</strong></p>
 <p>Static Driver Verifier (also known as &quot;StaticDV&quot; or &quot;SDV&quot;) is a static verification tool that systematically analyzes the source code of Windows kernel-mode drivers. SDV is a compile time tool that is capable of discovering defects and design issues in a driver. Based on a set of interface rules and a model of the operating system, SDV determines whether the driver correctly interacts with the Windows operating system kernel.</p>
 <p></p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Windows 10 WDK Version 1511</p>
-<p>A critical issue has been found when using Static Driver Verifier (SDV) when used with Visual Studio 2015 Update 1. Static Driver Verifier fails to complete a scan once started and the status will display &quot;Building...&quot; indefinitely.</p>
-<p>The following work around can be used.</p>
-<p>1. Edit the following file as administrator.</p>
-<p><strong>C:\Program Files (x86)\Windows Kits\10\build\WindowsDriver.Sdv.targets</strong></p>
-<p>2. Replace the following line:</p>
-<p><strong>&lt;Exec Command=&quot;staticdv.exe $(Inputs)&quot;</strong></p>
-<p>With this text:</p>
-<p><strong>&lt;Exec Command=&quot;chcp 437 &amp;&amp; staticdv.exe $(Inputs)&quot;</strong></p>
-<p>Information on the root cause of this issue is available here: [https://github.com/Microsoft/msbuild/issues/397](https://github.com/Microsoft/msbuild/issues/397)</p>
-</div>
-<div>
  
 </div>
 <p><strong>Visual Studio Integration</strong></p>
@@ -76,7 +62,3 @@ keywords: ["verifying drivers WDK , Static Driver Verifier", "driver verificatio
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Static%20Driver%20Verifier%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
