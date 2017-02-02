@@ -3,6 +3,7 @@
 ## [Hardware submissions](hardware-certification-submissions.md)
 ### [Create a new hardware submission](create-a-new-hardware-submission.md)
 ### [Manage hardware submissions](manage-your-hardware-submissions.md)
+### [ID definitions](id-definitions.md)
 ### [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md)
 ### [How to get a driver signed by Microsoft for multiple versions of Windows](walkthrough--how-to-get-a-driver-signed-by-microsoft-for-multiple-versions-of-windows.md)
 ## [Manage driver distribution with shipping labels](manage-driver-distribution-by-submission.md)
@@ -95,4 +96,3 @@
 ##### [Manage your service account credentials](manage-your-service-account-credentials.md)
 ### [Windows Device Experience List](windows-device-experience-list.md)
 ### [Windows Certified Products List](windows-certified-products-list.md)
-
