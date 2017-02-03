@@ -91,8 +91,6 @@
 ## [NetConfigurationQueryNetworkAddress method](netconfigurationquerynetworkaddress.md)
 ## [NetConfigurationQueryString method](netconfigurationquerystring.md)
 ## [NetConfigurationQueryUlong method](netconfigurationqueryulong.md)
-## [NetObjectMarkCancelableEx method](netobjectmarkcancelableex.md)
-## [NetObjectUnmarkCancelable method](netobjectunmarkcancelable.md)
 ## [NetPacketGetTypedContext method](netpacketgettypedcontext.md)
 ## [NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents method](netpowersettingsgetenabledmediaspecificwakeupevents.md)
 ## [NetPowerSettingsGetEnabledProtocolOffloads method](netpowersettingsgetenabledprotocoloffloads.md)
