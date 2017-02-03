@@ -14,5 +14,6 @@
         }
     ],
     "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/windows-driver-docs",
-    "git_repository_branch_open_to_public_contributors": "staging"
+    "git_repository_branch_open_to_public_contributors": "staging",
+    "need_generate_pdf": true
 }

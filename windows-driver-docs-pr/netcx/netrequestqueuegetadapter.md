@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestQueueGetAdapter method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the NETADAPTER object corresponding to the NETREQUESTQUEUE.
 
 Syntax
 ------
@@ -31,11 +32,12 @@ Parameters
 ----------
 
 *NetRequestQueue* \[in\]  
+A handle to a net request queue object.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+Returns the NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 Requirements
 ------------

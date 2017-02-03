@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestMethodComplete method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Completes a method request.
 
 Syntax
 ------
@@ -37,15 +38,19 @@ Parameters
 A handle to a network request object.
 
 *CompletionStatus* \[in\]  
+An NTSTATUS value that represents the completion status of the request.  Valid status values include, but are not limited to, the following:
+
+|Return code|Description|
+|--|--|
+|STATUS_SUCCESS|The driver successfully completed the request.|
+|STATUS_CANCELLED|The driver canceled the request.|
+|STATUS_UNSUCCESSFUL|The driver encountered an error while processing the request.|
 
 *BytesRead* \[in\]  
+The number of bytes that the client driver read from the buffer.
 
 *BytesWritten* \[in\]  
-
-Return value
-------------
-
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The number of bytes that the client driver wrote to the buffer.
 
 Requirements
 ------------
