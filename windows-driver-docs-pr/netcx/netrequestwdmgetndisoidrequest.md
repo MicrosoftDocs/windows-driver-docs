@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestWdmGetNdisOidRequest method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the traditional WDM [**NDIS_OID_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure for the NETREQUEST.
 
 Syntax
 ------
@@ -36,7 +37,7 @@ A handle to a network request object.
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+Pointer to the [**NDIS_OID_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure.
 
 Requirements
 ------------

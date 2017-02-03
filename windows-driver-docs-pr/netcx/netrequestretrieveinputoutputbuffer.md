@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestRetrieveInputOutputBuffer method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the input/output buffer associated with a NETREQUEST object.
 
 Syntax
 ------
@@ -39,19 +40,24 @@ Parameters
 A handle to a network request object.
 
 *MininumInputLengthRequired* \[in\]  
+The minimum input length needed for *InputOutputBuffer*. If the buffer's *InputOutputBuffer* is less than the minimum required, this routine returns STATUS_BUFFER_TOO_SMALL.
 
 *MininumOutputLengthRequired* \[in\]  
+The minimum output length needed for *InputOutputBuffer*. If the buffer's *OutputBufferLength* is less than the minimum required, this routine returns STATUS_BUFFER_TOO_SMALL.
 
 *InputOutputBuffer* \[in, out\]  
+Address to a location that receives a pointer to the buffer.
 
 *InputBufferLength* \[out\]  
+Address to a location that receives the actual input length of *InputOutputBuffer*.
 
 *OutputBufferLength* \[out\]  
+Address to a location that receives the actual output length of *InputOutputBuffer*.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Requirements
 ------------

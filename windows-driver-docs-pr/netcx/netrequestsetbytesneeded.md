@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestSetBytesNeeded method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Sets the number of bytes required for an NETREQUEST.
 
 Syntax
 ------
@@ -35,11 +36,13 @@ Parameters
 A handle to a network request object.
 
 *BytesNeeded* \[in\]  
+Number of bytes to be read or written.
 
-Return value
-------------
+Remarks
+---
+The client calls this routine if the I/O request fails due a smaller than expected InputOutputBuffer size.
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+Depending on the request type, *BytesNeeded* may mean space required perform a read operation or a write operation. 
 
 Requirements
 ------------
