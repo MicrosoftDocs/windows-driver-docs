@@ -57,7 +57,7 @@ Returns one of the following status values:
 
 Remarks
 -----
-The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netadapteropensubconfiguration.md).
+The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md).
 
 Typically, a **NetworkAddress** entry in the registry is stored as a string of hexadecimal digits. Optionally, an installer can store such an address as a string of paired digits, with each pair separated from the next by a hyphen. 
 

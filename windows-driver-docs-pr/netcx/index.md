@@ -283,14 +283,6 @@ These driver support methods that are implemented by NetAdapterCx. Your client d
 <td align="left"><p>Retrieves the specified unsigned long word (REG_DWORD) data from the adapter configuration object and copies the data to a specified location.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[<strong>NetObjectMarkCancelableEx method</strong>](netobjectmarkcancelableex.md)</p></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[<strong>NetObjectUnmarkCancelable method</strong>](netobjectunmarkcancelable.md)</p></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
 <td align="left"><p>[<strong>NetPacketGetTypedContext method</strong>](netpacketgettypedcontext.md)</p></td>
 <td align="left"><p>Client drivers should not call this function directly. Instead, use [<strong>NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME</strong>](net-packet-declare-context-type-with-name.md).</p></td>
 </tr>
