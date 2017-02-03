@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestGetType method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the request type in an OID request.
 
 Syntax
 ------
@@ -31,11 +32,12 @@ Parameters
 ----------
 
 *Request* \[in\]  
+A handle to a network request object.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+Returns a [**NDIS_REQUEST_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff567250) value that specifies the request type of the OID request.
 
 Requirements
 ------------

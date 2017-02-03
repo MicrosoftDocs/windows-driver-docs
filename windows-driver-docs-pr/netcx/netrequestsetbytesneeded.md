@@ -32,6 +32,7 @@ Parameters
 ----------
 
 *Request* \[in\]  
+A handle to a network request object.
 
 *BytesNeeded* \[in\]  
 

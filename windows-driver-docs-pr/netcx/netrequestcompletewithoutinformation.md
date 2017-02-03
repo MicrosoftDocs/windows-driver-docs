@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestCompleteWithoutInformation method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Completes a NETREQUEST with a supplied completion status.
 
 Syntax
 ------
@@ -32,13 +33,17 @@ Parameters
 ----------
 
 *Request* \[in\]  
+A handle to a network request object.
 
 *CompletionStatus* \[in\]  
+An NTSTATUS value that represents the completion status of the request.  Valid status values include, but are not limited to, the following:
 
-Return value
-------------
+|Return code|Description|
+|--|--|
+|STATUS_SUCCESS|The driver successfully completed the request.|
+|STATUS_CANCELLED|The driver canceled the request.|
+|STATUS_UNSUCCESSFUL|The driver encountered an error while processing the request.|
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Requirements
 ------------

@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestGetSwitchId method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the switch identifier for the net request.
 
 Syntax
 ------
@@ -31,11 +32,12 @@ Parameters
 ----------
 
 *Request* \[in\]  
+A handle to a network request object.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+Returns an NDIS_NIC_SWITCH_ID value that specifies a switch identifier. The switch identifier is an integer between zero and the number of switches that the network adapter supports. An NDIS_DEFAULT_SWITCH_ID value indicates the default network adapter switch. 
 
 Requirements
 ------------

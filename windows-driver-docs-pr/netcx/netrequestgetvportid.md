@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestGetVPortId method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the VPortId for the NETREQUEST.
 
 Syntax
 ------
@@ -31,11 +32,12 @@ Parameters
 ----------
 
 *Request* \[in\]  
+A handle to a network request object.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+Returns an NDIS_NIC_SWITCH_VPORT_ID value that specifies the identifier associated with the net request object. 
 
 Requirements
 ------------

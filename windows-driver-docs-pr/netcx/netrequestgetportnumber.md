@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestGetPortNumber method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the port number for the network request object. 
 
 Syntax
 ------
@@ -31,11 +32,12 @@ Parameters
 ----------
 
 *Request* \[in\]  
+A handle to a network request object.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+Returns the port number corresponding to the network request object. 
 
 Requirements
 ------------

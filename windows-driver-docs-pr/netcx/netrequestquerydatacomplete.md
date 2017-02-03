@@ -33,6 +33,7 @@ Parameters
 ----------
 
 *Request* \[in\]  
+A handle to a network request object.
 
 *CompletionStatus* \[in\]  
 

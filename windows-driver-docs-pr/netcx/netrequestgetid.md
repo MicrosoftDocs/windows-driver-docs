@@ -15,8 +15,9 @@ api_type:
 
 # NetRequestGetId method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the NDIS_OID identifier associated with the specified network request object.
 
 Syntax
 ------
@@ -31,11 +32,12 @@ Parameters
 ----------
 
 *Request* \[in\]  
+A handle to a network request object.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+Returns the object identifier for the network request object. The value is an OID_XXX code. 
 
 Requirements
 ------------
