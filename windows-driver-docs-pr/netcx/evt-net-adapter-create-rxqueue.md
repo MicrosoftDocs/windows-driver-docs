@@ -56,7 +56,7 @@ To register an *EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE* callback function, the clien
 
 The **NETRXQUEUE\_INIT** structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951).
 
-For example, the client driver would call [**NetRxQueueInitGetQueueId**](netrxqueueinitgetqueueid.md) to retrieve the identifier of the receive queue to set up.
+In this callback, the client driver typically calls [**NetRxQueueInitGetQueueId**](netrxqueueinitgetqueueid.md) to retrieve the identifier of the receive queue to set up.
 
 Requirements
 ------------

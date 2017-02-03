@@ -15,8 +15,9 @@ api_type:
 
 # NetRxQueueInitGetQueueId method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the identifier of the receive queue associated with a NETRXQUEUE_INIT structure.
 
 Syntax
 ------
@@ -31,11 +32,16 @@ Parameters
 ----------
 
 *NetRxQueueInit* \[in\]  
+A pointer to a NetAdapterCx-allocated **NETRXQUEUE\_INIT** structure. For more information, see the Remarks section.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+Returns a ULONG that identifies a receive queue.
+
+Remarks
+---
+The **NETRXQUEUE\_INIT** structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951).
 
 Requirements
 ------------
