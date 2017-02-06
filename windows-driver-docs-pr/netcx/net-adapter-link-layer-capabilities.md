@@ -46,10 +46,10 @@ A [**NET\_ADAPTER\_PHYSICAL\_ADDRESS**](net-adapter-physical-address.md) structu
 The statistics that the adapter supports. This value is a bitwise OR of [**NET\_ADAPTER\_STATISTICS\_FLAGS**](net-adapter-statistics-flags.md)-typed flags.
 
 **MaxTxLinkSpeed**  
-TBD
+The maximum transmit link speed of the adapter in bits per second. For more information, see [**OID_GEN_MAX_LINK_SPEED**](https://msdn.microsoft.com/library/windows/hardware/ff569602).
 
 **MaxRxLinkSpeed**  
-TBD
+The maximum receive link speed of the adapter in bits per second. For more information, see [**OID_GEN_MAX_LINK_SPEED**](https://msdn.microsoft.com/library/windows/hardware/ff569602).
 
 Remarks
 -------
