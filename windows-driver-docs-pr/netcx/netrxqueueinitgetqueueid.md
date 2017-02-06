@@ -43,8 +43,7 @@ Remarks
 ---
 The **NETRXQUEUE\_INIT** structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951).
 
-RxQueue IDs are always allocated incrementally from 0 to N-1 for each RxQueue created, where N is the number of RxQueues that the adapter supports,
-as reported by the NET_ADAPTER_DATAPATH_CAPABILITIES::NumRxQueues field passed to NetAdapterSetDataPathCapabilities.
+Starting with zero, NetAdapterCx assigns an unique identifier value for each receive queue that it creates.  The client driver specifies the number of receive queues that the network adapter supports in the **NumRxQueues** member of the [NET_ADAPTER_DATAPATH_CAPABILITIES](net-adapter-datapath-capabilities.md) structure.  The client driver passes this structure to [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md).  Identifier values range from zero to the value of **NumRxQueues** minus one.
 
 Requirements
 ------------
