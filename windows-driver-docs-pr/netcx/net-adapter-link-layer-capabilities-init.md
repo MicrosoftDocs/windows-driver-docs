@@ -42,18 +42,25 @@ Parameters
 ----------
 
 *LinkLayerCapabilities* \[out\]  
+A pointer to the driver-allocated [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure.
 
-*LinkSSupportedPacketFilterspeed* \[in\]  
+*SupportedPacketFilters* \[in\]  
+A structure of type [NET_PACKET_FILTER_TYPES_FLAGS](net-packet-filter-types-flags.md).
 
 *MaxMulticastListSize* \[in\]  
+The maximum multicast list size.
 
 *SupportedStatistics* \[in\]  
+A structure of type [NET_ADAPTER_STATISTICS_FLAGS](net-adapter-statistics-flags.md).
 
 *MaxTxLinkSpeed* \[in\]  
+Specifies the maximum transmit link speed, in
 
 *MaxRxLinkSpeed* \[in\]  
+Specifies the maximum receive link speed, in
 
 *PhysicalAddressLength* \[in\]  
+
 *PermanentPhysicalAddress* \[in\]  
 *CurrentPhysicalAddress* \[in\]  
 

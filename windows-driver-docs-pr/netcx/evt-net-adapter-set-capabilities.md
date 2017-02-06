@@ -50,9 +50,11 @@ If this function returns an [NTSTATUS](https://msdn.microsoft.com/library/window
 Remarks
 -------
 
-NetAdapterCx calls the client's *EVT\_NET\_ADAPTER\_SET\_CAPABILITIES* event callback function after [*EVT\_WDF\_PREPARE\_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) returns success.
+NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* after [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) but before [*EVT_WDF_DEVICE_D0_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/ff540848).
 
-This function must set the adapter's link and MAC capabilities, and can optionally specify power capabilities and current link state.
+NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* once per device arrival.
+
+In this function, the client typically sets the adapter's link and MAC capabilities, and optionally specifies power capabilities and current link state.
 
 Requirements
 ------------
