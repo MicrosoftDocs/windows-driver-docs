@@ -15,8 +15,9 @@ api_type:
 
 # NetTxQueueGetRingBuffer method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the net ring buffer for a specified net transmit queue structure.
 
 Syntax
 ------
@@ -31,11 +32,17 @@ Parameters
 ----------
 
 *NetTxQueue* \[in\]  
+A handle to a net transmit queue object.
 
 Return value
 ------------
 
-(NTSTATUS) The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+
+Return value
+------------
+
+Returns a pointer to the [NET_RING_BUFFER](net-ring-buffer.md) structure associated with a net transmit queue structure.
 
 Requirements
 ------------

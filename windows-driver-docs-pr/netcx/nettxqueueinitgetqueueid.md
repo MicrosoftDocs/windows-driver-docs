@@ -15,8 +15,9 @@ api_type:
 
 # NetTxQueueInitGetQueueId method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Retrieves the identifier associated with a transmit queue.
 
 Syntax
 ------
@@ -36,6 +37,12 @@ Return value
 ------------
 
 A ULONG that...
+
+Remarks
+-----
+The client driver receives a pointer to a NETTXQUEUE_INIT structure in its [EVT_NET_ADAPTER_CREATE_TXQUEUE](evt-net-adapter-create-txqueue.md) callback function.
+
+Starting with zero, NetAdapterCx assigns an unique identifier value for each transmit queue that it creates.  The client driver specifies the number of transmit queues that the network adapter supports in the **NumTxQueues** member of the [NET_ADAPTER_DATAPATH_CAPABILITIES](net-adapter-datapath-capabilities.md) structure.  The client driver passes this structure to [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md).  Identifier values range from zero to the value of **NumTxQueues** minus one.
 
 Requirements
 ------------
