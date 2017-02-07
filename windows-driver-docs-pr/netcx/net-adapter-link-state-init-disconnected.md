@@ -43,7 +43,9 @@ This method does not return a value.
 Remarks
 -------
 
-**NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED**
+Call [**NET\_ADAPTER\_LINK\_STATE\_INIT**](net-adapter-link-state-init.md) or **NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED** to initialize a [**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md) structure.
+
+An initialized **NET\_ADAPTER\_LINK\_STATE** structure is an input parameter value to [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md).
 
 Requirements
 ------------
@@ -79,6 +81,11 @@ Requirements
 [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
 
 [**NET\_ADAPTER\_LINK\_STATE\_INIT**](net-adapter-link-state-init.md)
+
+[**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md)
+
+[**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md)
+
 
  
 

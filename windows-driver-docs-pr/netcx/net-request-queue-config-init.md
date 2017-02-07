@@ -39,8 +39,10 @@ Parameters
 A pointer to the driver-allocated NET\_REQUEST\_QUEUE\_CONFIG structure.
 
 *Adapter* \[in\]  
+The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *QueueType* \[in\]  
+A [NET_REQUEST_QUEUE_TYPE](net-request-queue-type.md) enumeration that specifies the type of queue.
 
 Return value
 ------------

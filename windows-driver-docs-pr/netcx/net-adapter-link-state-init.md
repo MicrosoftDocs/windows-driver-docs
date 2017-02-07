@@ -60,6 +60,13 @@ Return value
 
 This method does not return a value.
 
+Remarks
+-------
+
+Call **NET\_ADAPTER\_LINK\_STATE\_INIT** or [**NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED**](net-adapter-link-state-init-disconnected.md) to initialize a [**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md) structure.
+
+An initialized **NET\_ADAPTER\_LINK\_STATE** structure is an input parameter value to [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md).
+
 Requirements
 ------------
 
@@ -97,7 +104,7 @@ Requirements
 
 [**NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED**](net-adapter-link-state-init-disconnected.md)
 
- 
+[**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md)
 
  
 
