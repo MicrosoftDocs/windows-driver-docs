@@ -69,9 +69,9 @@ To perform stream inspections only on connections that the driver is interested 
 
 ## Stream Layer Waterfall Model
 
-The stream layer in WFP follows a strict waterfall model; that is, a callout in this layer will be allowed to inspect a segment of stream only if the previous callout (if any) explicitly permitted it. If a callout blocks an indicated segment, partially or wholly, that segment is permanently taken out of the stream and no callouts will be allowed to inspect it.
+The stream layer in WFP follows a strict waterfall model; that is, a callout in this layer will be allowed to inspect a stream segment only if the previous callout (if any) explicitly permitted it. If a callout blocks an indicated segment, that segment is permanently taken out of the stream and no callouts will be allowed to inspect it.
 
-This design leads to two conclusions regarding the *classifyOut* parameter passed in *classifyFn* callbacks in this layer:
+Moreover:
 
 1. Every non-inspect callout at the stream layer must explicitly assign a value to the **actionType** member of the *classifyOut* parameter regardless of what value may have been previously set in that parameter.
 2. The **FWPS\_RIGHT\_ACTION\_WRITE** flag in the **rights** member of the *classifyOut* parameter has no significance in the WFP stream layer. Callouts at this layer should not check for the presence of this flag. Callouts may process the indicated *layerData* parameter regardless of the value of *classifyOut*->**rights**.
