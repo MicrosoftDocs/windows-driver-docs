@@ -7,7 +7,7 @@ ms.assetid: 2A780608-F386-4838-A4EB-022C2F0EED3B
 # Code Analysis for drivers overview
 
 
-The Windows Driver Kit provides a driver-specific extension to the [Code Analysis tool](http://go.microsoft.com/fwlink/p/?linkid=226836) in Microsoft Visual Studio Ultimate 2012. The Code Analysis for Drivers includes rules that apply only to drivers, particularly kernel-mode drivers. Code Analysis for Drivers can detect potential errors in your code as soon as the code can be compiled.
+The Windows Driver Kit provides a driver-specific extension to the [Code Analysis tool](http://go.microsoft.com/fwlink/p/?linkid=226836) in Microsoft Visual Studio. The Code Analysis for Drivers includes rules that apply only to drivers, particularly kernel-mode drivers. Code Analysis for Drivers can detect potential errors in your code as soon as the code can be compiled.
 
 ## <span id="How_the_Code_Analysis_tool_works"></span><span id="how_the_code_analysis_tool_works"></span><span id="HOW_THE_CODE_ANALYSIS_TOOL_WORKS"></span>How the Code Analysis tool works
 
