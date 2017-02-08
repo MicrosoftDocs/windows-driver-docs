@@ -49,6 +49,10 @@ Return value
 
 This method does not return a value.
 
+Remarks
+-----
+The driver supplies a member of type [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md) when it allocates a [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure to pass as an input parameter to **NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
+
 Requirements
 ------------
 
@@ -77,7 +81,13 @@ Requirements
 </tbody>
 </table>
 
- 
+## See also
+
+[NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md)
+
+[**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md)
+
+[NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md)
 
  
 
