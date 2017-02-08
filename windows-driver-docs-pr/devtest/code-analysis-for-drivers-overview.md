@@ -38,7 +38,7 @@ Code Analysis can detect several types of errors, including errors in the follow
 ## <span id="Code_Analysis_warnings"></span><span id="code_analysis_warnings"></span><span id="CODE_ANALYSIS_WARNINGS"></span>Code Analysis warnings
 
 
-The Code Analysis tool uses a rule-based model to identify errors in the program or driver code. Each rule is associated with a warning that is reported if the Code Analysis tool detects a violation of the rule. For detailed information about the driver-specific warnings, see [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md). For information about the core set of warnings that the Code Analysis tool in Visual Studio Ultimate 2012 reports, see [Code Analysis Warnings](http://go.microsoft.com/fwlink/p/?linkid=226853).
+The Code Analysis tool uses a rule-based model to identify errors in the program or driver code. Each rule is associated with a warning that is reported if the Code Analysis tool detects a violation of the rule. For detailed information about the driver-specific warnings, see [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md). For information about the core set of warnings that the Code Analysis tool in Visual Studio reports, see [Code Analysis Warnings](http://go.microsoft.com/fwlink/p/?linkid=226853).
 
 ## <span id="Annotations"></span><span id="annotations"></span><span id="ANNOTATIONS"></span>Annotations
 
@@ -50,7 +50,7 @@ One of the important capabilities that the Code Analysis tool provides is the ab
 
 Code Analysis for Drivers is easy to run and it runs quickly, even on very large drivers and programs. The work for the developer is in examining the output, analyzing the errors that the Code Analysis tool detected, and distinguishing real coding errors from valid code that the Code Analysis tool misinterpreted.
 
-For a comprehensive reference that describes each warning that the Code Analysis tool might detect, see [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md). For information about the core set of warnings that the Code Analysis tool in Visual Studio Ultimate 2012 reports, see [Code Analysis Warnings](http://go.microsoft.com/fwlink/p/?linkid=226853).
+For a comprehensive reference that describes each warning that the Code Analysis tool might detect, see [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md). For information about the core set of warnings that the Code Analysis tool in Visual Studio reports, see [Code Analysis Warnings](http://go.microsoft.com/fwlink/p/?linkid=226853).
 
 Resolving a code analysis warning typically involves either updating the source code when appropriate, or adding an annotation to clarify the function contract. Adding an annotation allows the analyzer to enforce the contract for all future callers, and it also improves readability.
 
