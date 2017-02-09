@@ -53,7 +53,7 @@ The client driver sets capabilities by calling the following methods from its [*
 -   [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md)
 -   **NetAdapterSetPowerCapabilities**
 
-Alternatively, the client can call **NetAdapterSetPowerCapabilities** in a callback that NdisCx calls after [*EVT\_NET\_ADAPTER\_SET\_CAPABILITIES*](evt-net-adapter-set-capabilities.md). If it does, it must not change the [*EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN*](evt-net-adapter-preview-wake-pattern.md) event callback function.
+Alternatively, the client can call **NetAdapterSetPowerCapabilities** in a callback that NetAdapterCx calls after [*EVT\_NET\_ADAPTER\_SET\_CAPABILITIES*](evt-net-adapter-set-capabilities.md). If it does, it must not change the [*EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN*](evt-net-adapter-preview-wake-pattern.md) event callback function.
 
 Requirements
 ------------
