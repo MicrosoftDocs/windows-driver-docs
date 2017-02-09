@@ -26,8 +26,8 @@ Syntax
 ```ManagedCPlusPlus
 typedef struct _NET_ADAPTER_PHYSICAL_ADDRESS {
   USHORT Length;
-  UCHAR  PermanentAddress;
-  UCHAR  CurrentAddress;
+  UCHAR  PermanentAddress[NDIS_MAX_PHYS_ADDRESS_LENGTH];
+  UCHAR  CurrentAddress[NDIS_MAX_PHYS_ADDRESS_LENGTH];
 } NET_ADAPTER_PHYSICAL_ADDRESS, *PNET_ADAPTER_PHYSICAL_ADDRESS;
 ```
 
@@ -35,15 +35,17 @@ Members
 -------
 
 **Length**  
+The MAC address length, in bytes. The MAC address length is specific to the type of media.
 
 **PermanentAddress**  
+The permanent MAC address. For example, the [**OID_802_3_PERMANENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569074) OID specifies the permanent MAC address for IEEE 802.3 drivers.
 
 **CurrentAddress**  
-
+The current MAC address. For example, the [**OID_802_3_CURRENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569069) OID specifies the current MAC address for IEEE 802.3 drivers.
 
 Remarks
 -----
-The driver supplies a member of type [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md) when it allocates a [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure to pass as an input parameter to **NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
+The driver supplies a member of type [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md) when it allocates a [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure to pass as an input parameter to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
 
 Requirements
 ------------
@@ -69,11 +71,7 @@ Requirements
 </tbody>
 </table>
 
- 
+See Also
+-----
 
- 
-
-
-
-
-
+[**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
