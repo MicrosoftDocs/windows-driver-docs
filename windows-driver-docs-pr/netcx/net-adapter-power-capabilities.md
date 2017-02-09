@@ -81,7 +81,11 @@ A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_PREVIEW\_WA
 A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) event callback.
 
 **ManageS0IdlePowerReferences**  
-TBD
+A [**WDF_TRI_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff552533)-typed enumerator that indicates whether the device will be powered down if it remains idle and while the system power is at S0.  This member can have one of the following values:
+
+**WdfTrue** - Powering down is enabled. must be power policy owner to specify **WdfTrue**.  
+**WdfFalse** - Powering down is disabled.  
+**WdfUseDefault** : if driver is power policy owner, then use **WdfTrue**, otherwise use **WdfFalse**.
 
 Remarks
 -------
