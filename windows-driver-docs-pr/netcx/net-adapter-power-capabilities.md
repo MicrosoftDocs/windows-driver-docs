@@ -81,10 +81,10 @@ A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_PREVIEW\_WA
 A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) event callback.
 
 **ManageS0IdlePowerReferences**  
-A [**WDF_TRI_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff552533)-typed enumerator that indicates whether the device will be powered down if it remains idle while the system power is at S0. This member can have one of the following values:
+A [**WDF_TRI_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff552533)-typed enumerator that indicates whether NetAdapterCx should manage power references for scenarios such as modern standby (AoAC).  See more info in the **Remarks** section.  This member can have one of the following values:
 
-**WdfTrue** - Powering down is enabled. The client driver must be the power policy owner to specify **WdfTrue**.  
-**WdfFalse** - Powering down is disabled.  
+**WdfTrue** - NetAdapterCx manages power references. The client driver must be the power policy owner to specify **WdfTrue**.  
+**WdfFalse** - NetAdapterCx does not manage power references.  
 **WdfUseDefault** : if driver is the power policy owner, then use **WdfTrue**, otherwise use **WdfFalse**.
 
 Remarks
@@ -93,6 +93,8 @@ Remarks
 The client driver passes an initialized **NET\_ADAPTER\_POWER\_CAPABILITIES** structure as an input parameter value to [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
 
 Call [**NET\_ADAPTER\_POWER\_CAPABILITIES\_INIT**](net-adapter-power-capabilities-init.md) to initialize this structure.
+
+When **ManageS0IdlePowerReferences** is enabled, the driver controls its own idle behavior (for example idle timeout value and desired low power device state) by providing [**WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS**](https://msdn.microsoft.com/library/windows/hardware/ff551270) in a call to [**WdfDeviceAssignS0IdleSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545903).  Additionally, the client driver can set the **NET_ADAPTER_POWER_SELECTIVE_SUSPEND** flag in the [**NET_ADAPTER_POWER_FLAGS**](net-adapter-power-flags.md) enumeration to cause NetAdapterCx to manage power references for the data and control path.  Note that the latter option may result in reduced performance.
 
 Requirements
 ------------
