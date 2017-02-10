@@ -33,9 +33,10 @@ typedef enum _NET_ADAPTER_POWER_FLAGS {
 Constants
 ---------
 
-<a href="" id="net-adapter-power-wake-packet-indication"></a>**NET\_ADAPTER\_POWER\_WAKE\_PACKET\_INDICATION**  
+**NET_ADAPTER_POWER_WAKE_PACKET_INDICATION**  
 
-<a href="" id="net-adapter-power-selective-suspend"></a>**NET\_ADAPTER\_POWER\_SELECTIVE\_SUSPEND**  
+**NET_ADAPTER_POWER_SELECTIVE_SUSPEND**  
+Specifies that NetAdapterCx should suspend an idle network adapter by transitioning the adapter to a low-power state.
 
 Requirements
 ------------
