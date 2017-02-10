@@ -15,8 +15,9 @@ api_type:
 
 # NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS enumeration
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Specifies the media-specific wake-up events that a network adapter supports.
 
 Syntax
 ------
@@ -65,10 +66,10 @@ If this flag is set, the MB network adapter can generate a wake-up event if it r
 
 
 **NET_ADAPTER_WWAN_WAKE_ON_PACKET_STATE**  
-If this flag is set, the MB network adapter can generate a wake-up event if TBD
+If this flag is set, the MB network adapter can generate a wake-up event when the Packet Service state of the Modem changes.
 
 **NET_ADAPTER_WWAN_WAKE_ON_UICC_CHANGE**  
-If this flag is set, the MB network adapter can generate a wake-up event if TBD 
+If this flag is set, the MB network adapter can generate a wake-up event when the UICC (SIM) is inserted or removed. 
 
 Requirements
 ------------
@@ -94,11 +95,6 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
-
-
+See Also
+-----
+[**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md)
