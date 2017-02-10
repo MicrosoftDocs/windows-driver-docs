@@ -13,7 +13,7 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_WAKEUP\_EVENTS\_FLAGS enumeration
+# NET_ADAPTER_WAKEUP_EVENTS_FLAGS enumeration
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -23,17 +23,17 @@ Syntax
 
 ```ManagedCPlusPlus
 typedef enum _NET_ADAPTER_WAKEUP_EVENTS_FLAGS { 
-  NET_ADAPTER_WAKE_ON_MEDIA_CONNECT     = = NDIS_PM_WAKE_ON_MEDIA_CONNECT_SUPPORTED,
-  NET_ADAPTER_WAKE_ON_MEDIA_DISCONNECT  = = NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_SUPPORTED
+  NET_ADAPTER_WAKE_ON_MEDIA_CONNECT     = NDIS_PM_WAKE_ON_MEDIA_CONNECT_SUPPORTED,
+  NET_ADAPTER_WAKE_ON_MEDIA_DISCONNECT  = NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_SUPPORTED
 } NET_ADAPTER_WAKEUP_EVENTS_FLAGS;
 ```
 
 Constants
 ---------
 
-<a href="" id="net-adapter-wake-on-media-connect"></a>**NET\_ADAPTER\_WAKE\_ON\_MEDIA\_CONNECT**  
+**NET_ADAPTER_WAKE_ON_MEDIA_CONNECT**  
 
-<a href="" id="net-adapter-wake-on-media-disconnect"></a>**NET\_ADAPTER\_WAKE\_ON\_MEDIA\_DISCONNECT**  
+**NET_ADAPTER_WAKE_ON_MEDIA_DISCONNECT**  
 
 Requirements
 ------------
@@ -62,7 +62,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_PM\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748)
+[**NDIS_PM_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748)
 
  
 

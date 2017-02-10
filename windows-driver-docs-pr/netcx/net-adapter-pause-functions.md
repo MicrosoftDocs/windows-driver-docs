@@ -23,26 +23,26 @@ Syntax
 
 ```ManagedCPlusPlus
 typedef enum _NET_ADAPTER_PAUSE_FUNCTIONS { 
-  NetAdapterPauseFunctionsUnsupported     = = NdisPauseFunctionsUnsupported,
-  NetAdapterPauseFunctionsSendOnly        = = NdisPauseFunctionsSendOnly,
-  NetAdapterPauseFunctionsReceiveOnly     = = NdisPauseFunctionsReceiveOnly,
-  NetAdapterPauseFunctionsSendAndReceive  = = NdisPauseFunctionsSendAndReceive,
-  NetAdapterPauseFunctionsUnknown         = = NdisPauseFunctionsUnknown
+  NetAdapterPauseFunctionsUnsupported     = NdisPauseFunctionsUnsupported,
+  NetAdapterPauseFunctionsSendOnly        = NdisPauseFunctionsSendOnly,
+  NetAdapterPauseFunctionsReceiveOnly     = NdisPauseFunctionsReceiveOnly,
+  NetAdapterPauseFunctionsSendAndReceive  = NdisPauseFunctionsSendAndReceive,
+  NetAdapterPauseFunctionsUnknown         = NdisPauseFunctionsUnknown
 } NET_ADAPTER_PAUSE_FUNCTIONS, *PNET_ADAPTER_PAUSE_FUNCTIONS;
 ```
 
 Constants
 ---------
 
-<a href="" id="netadapterpausefunctionsunsupported"></a>**NetAdapterPauseFunctionsUnsupported**  
+**NetAdapterPauseFunctionsUnsupported**  
 
-<a href="" id="netadapterpausefunctionssendonly"></a>**NetAdapterPauseFunctionsSendOnly**  
+**NetAdapterPauseFunctionsSendOnly**  
 
-<a href="" id="netadapterpausefunctionsreceiveonly"></a>**NetAdapterPauseFunctionsReceiveOnly**  
+**NetAdapterPauseFunctionsReceiveOnly**  
 
-<a href="" id="netadapterpausefunctionssendandreceive"></a>**NetAdapterPauseFunctionsSendAndReceive**  
+**NetAdapterPauseFunctionsSendAndReceive**  
 
-<a href="" id="netadapterpausefunctionsunknown"></a>**NetAdapterPauseFunctionsUnknown**  
+**NetAdapterPauseFunctionsUnknown**  
 
 Requirements
 ------------

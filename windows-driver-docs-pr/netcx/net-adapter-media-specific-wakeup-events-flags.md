@@ -13,7 +13,7 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_MEDIA\_SPECIFIC\_WAKEUP\_EVENTS\_FLAGS enumeration
+# NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS enumeration
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -23,38 +23,52 @@ Syntax
 
 ```ManagedCPlusPlus
 typedef enum _NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS { 
-  NET_ADAPTER_WLAN_WAKE_ON_NLO_DISCOVERY           = = NDIS_WLAN_WAKE_ON_NLO_DISCOVERY_SUPPORTED,
-  NET_ADAPTER_WLAN_WAKE_ON_AP_ASSOCIATION_LOST     = = NDIS_WLAN_WAKE_ON_AP_ASSOCIATION_LOST_SUPPORTED,
-  NET_ADAPTER_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR     = = NDIS_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR_SUPPORTED,
-  NET_ADAPTER_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST  = = NDIS_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST_SUPPORTED,
-  NET_ADAPTER_WWAN_WAKE_ON_REGISTER_STATE          = = NDIS_WWAN_WAKE_ON_REGISTER_STATE_SUPPORTED,
-  NET_ADAPTER_WWAN_WAKE_ON_SMS_RECEIVE             = = NDIS_WWAN_WAKE_ON_SMS_RECEIVE_SUPPORTED,
-  NET_ADAPTER_WWAN_WAKE_ON_USSD_RECEIVE            = = NDIS_WWAN_WAKE_ON_USSD_RECEIVE_SUPPORTED,
-  NET_ADAPTER_WWAN_WAKE_ON_PACKET_STATE            = = NDIS_WWAN_WAKE_ON_PACKET_STATE_SUPPORTED,
-  NET_ADAPTER_WWAN_WAKE_ON_UICC_CHANGE             = = NDIS_WWAN_WAKE_ON_UICC_CHANGE_SUPPORTED
+  NET_ADAPTER_WLAN_WAKE_ON_NLO_DISCOVERY           = NDIS_WLAN_WAKE_ON_NLO_DISCOVERY_SUPPORTED,
+  NET_ADAPTER_WLAN_WAKE_ON_AP_ASSOCIATION_LOST     = NDIS_WLAN_WAKE_ON_AP_ASSOCIATION_LOST_SUPPORTED,
+  NET_ADAPTER_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR     = NDIS_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR_SUPPORTED,
+  NET_ADAPTER_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST  = NDIS_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST_SUPPORTED,
+  NET_ADAPTER_WWAN_WAKE_ON_REGISTER_STATE          = NDIS_WWAN_WAKE_ON_REGISTER_STATE_SUPPORTED,
+  NET_ADAPTER_WWAN_WAKE_ON_SMS_RECEIVE             = NDIS_WWAN_WAKE_ON_SMS_RECEIVE_SUPPORTED,
+  NET_ADAPTER_WWAN_WAKE_ON_USSD_RECEIVE            = NDIS_WWAN_WAKE_ON_USSD_RECEIVE_SUPPORTED,
+  NET_ADAPTER_WWAN_WAKE_ON_PACKET_STATE            = NDIS_WWAN_WAKE_ON_PACKET_STATE_SUPPORTED,
+  NET_ADAPTER_WWAN_WAKE_ON_UICC_CHANGE             = NDIS_WWAN_WAKE_ON_UICC_CHANGE_SUPPORTED
 } NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS;
 ```
 
 Constants
 ---------
 
-<a href="" id="net-adapter-wlan-wake-on-nlo-discovery"></a>**NET\_ADAPTER\_WLAN\_WAKE\_ON\_NLO\_DISCOVERY**  
+**NET_ADAPTER_WLAN_WAKE_ON_NLO_DISCOVERY**  
+If this flag is set, the 802.11 network adapter can generate a wake-up event if it detects a service set identifier (SSID) that was specified through a network list offload (NLO). 
 
-<a href="" id="net-adapter-wlan-wake-on-ap-association-lost"></a>**NET\_ADAPTER\_WLAN\_WAKE\_ON\_AP\_ASSOCIATION\_LOST**  
+For more information about NLO, see [Wi-Fi Network List Offload](../network/wi-fi-network-list-offload.md).
 
-<a href="" id="net-adapter-wlan-wake-on-gtk-handshake-error"></a>**NET\_ADAPTER\_WLAN\_WAKE\_ON\_GTK\_HANDSHAKE\_ERROR**  
+**NET_ADAPTER_WLAN_WAKE_ON_AP_ASSOCIATION_LOST**  
+If this flag is set, the 802.11 network adapter can generate a wake-up event if it disassociates with the access point (AP).
 
-<a href="" id="net-adapter-wlan-wake-on-4way-handshake-request"></a>**NET\_ADAPTER\_WLAN\_WAKE\_ON\_4WAY\_HANDSHAKE\_REQUEST**  
+**NET_ADAPTER_WLAN_WAKE_ON_GTK_HANDSHAKE_ERROR**  
+If this flag is set, the 802.11 network adapter can generate a wake-up event if it encounters an error during the IEEE 802.11i RSN group transient key (GTK) handshake with the AP.
 
-<a href="" id="net-adapter-wwan-wake-on-register-state"></a>**NET\_ADAPTER\_WWAN\_WAKE\_ON\_REGISTER\_STATE**  
 
-<a href="" id="net-adapter-wwan-wake-on-sms-receive"></a>**NET\_ADAPTER\_WWAN\_WAKE\_ON\_SMS\_RECEIVE**  
+**NET_ADAPTER_WLAN_WAKE_ON_4WAY_HANDSHAKE_REQUEST**  
+If this flag is set, the 802.11 network adapter can generate a wake-up event if it receives the first frame of the IEEE 802.11i RSN 4-way handshake with the AP. This handshake is performed when the adapter authenticates with the AP.
 
-<a href="" id="net-adapter-wwan-wake-on-ussd-receive"></a>**NET\_ADAPTER\_WWAN\_WAKE\_ON\_USSD\_RECEIVE**  
+**NET_ADAPTER_WWAN_WAKE_ON_REGISTER_STATE**  
+If this flag is set, the mobile broadband (MB) network adapter can generate a wake-up event if its registration state to the MB Service has changed.
 
-<a href="" id="net-adapter-wwan-wake-on-packet-state"></a>**NET\_ADAPTER\_WWAN\_WAKE\_ON\_PACKET\_STATE**  
+**NET_ADAPTER_WWAN_WAKE_ON_SMS_RECEIVE**  
+If this flag is set, the MB network adapter can generate a wake-up event if the MB Service has to be notified about the receipt of a Short Message Service (SMS) message. The adapter generates this wake-up event either after the completion of a previously issued OID_WWAN_SMS_READ query request, or the arrival of a new class-0 (flash/alert) message from the network provider as an event notification.
 
-<a href="" id="net-adapter-wwan-wake-on-uicc-change"></a>**NET\_ADAPTER\_WWAN\_WAKE\_ON\_UICC\_CHANGE**  
+
+**NET_ADAPTER_WWAN_WAKE_ON_USSD_RECEIVE**  
+If this flag is set, the MB network adapter can generate a wake-up event if it receives an Unstructured Supplementary Service Data (USSD) message.
+
+
+**NET_ADAPTER_WWAN_WAKE_ON_PACKET_STATE**  
+If this flag is set, the MB network adapter can generate a wake-up event if TBD
+
+**NET_ADAPTER_WWAN_WAKE_ON_UICC_CHANGE**  
+If this flag is set, the MB network adapter can generate a wake-up event if TBD 
 
 Requirements
 ------------

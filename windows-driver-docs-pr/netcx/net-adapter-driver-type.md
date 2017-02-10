@@ -33,9 +33,9 @@ typedef enum _NET_ADAPTER_DRIVER_TYPE {
 Constants
 ---------
 
-<a href="" id="net-adapter-driver-type-invalid"></a>**NET\_ADAPTER\_DRIVER\_TYPE\_INVALID**  
+**NET\_ADAPTER\_DRIVER\_TYPE\_INVALID**  
 
-<a href="" id="net-adapter-driver-type-miniport"></a>**NET\_ADAPTER\_DRIVER\_TYPE\_MINIPORT**  
+**NET\_ADAPTER\_DRIVER\_TYPE\_MINIPORT**  
 
 Remarks
 -------

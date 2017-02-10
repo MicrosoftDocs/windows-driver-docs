@@ -35,20 +35,20 @@ Parameters
 ----------
 
 *RingBuffer* \[in\]  
-The [**NET\_RING\_BUFFER**](net-ring-buffer.md) to access
+A pointer to a [**NET\_RING\_BUFFER**](net-ring-buffer.md).
 
 *Index* \[in\]  
-The element index. Must be in the range \[0, RingBuffer-&gt;NumberOfElements).
+The element index, within the range \[0, RingBuffer-&gt;NumberOfElements).
 
 Return value
 ------------
 
-The specified element
+Returns the location of the specified element.
 
 Remarks
 -------
 
-NetRingBufferGetElementAtIndex uses the ElementStride member of the ring buffer to index into the buffer and returns the location of the specified element.
+**NetRingBufferGetElementAtIndex** uses the ElementStride member of the ring buffer to index into the buffer and returns the location of the specified element.
 
 Requirements
 ------------

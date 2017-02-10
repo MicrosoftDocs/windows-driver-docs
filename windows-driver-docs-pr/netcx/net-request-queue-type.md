@@ -13,7 +13,7 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_TYPE enumeration
+# NET_REQUEST_QUEUE_TYPE enumeration
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -32,11 +32,11 @@ typedef enum _NET_REQUEST_QUEUE_TYPE {
 Constants
 ---------
 
-<a href="" id="netrequestqueuetypeinvalid"></a>**NetRequestQueueTypeInvalid**  
+**NetRequestQueueTypeInvalid**  
 
-<a href="" id="netrequestqueuedefaultsequential"></a>**NetRequestQueueDefaultSequential**  
+**NetRequestQueueDefaultSequential**  
 
-<a href="" id="netrequestqueuedefaultparallel"></a>**NetRequestQueueDefaultParallel**  
+**NetRequestQueueDefaultParallel**  
 
 Requirements
 ------------

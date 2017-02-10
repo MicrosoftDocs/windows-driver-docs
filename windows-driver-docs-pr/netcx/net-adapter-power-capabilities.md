@@ -94,7 +94,9 @@ The client driver passes an initialized **NET\_ADAPTER\_POWER\_CAPABILITIES** st
 
 Call [**NET\_ADAPTER\_POWER\_CAPABILITIES\_INIT**](net-adapter-power-capabilities-init.md) to initialize this structure.
 
-When **ManageS0IdlePowerReferences** is enabled, the driver controls its own idle behavior (for example idle timeout value and desired low power device state) by providing [**WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS**](https://msdn.microsoft.com/library/windows/hardware/ff551270) in a call to [**WdfDeviceAssignS0IdleSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545903).  Additionally, the client driver can set the **NET_ADAPTER_POWER_SELECTIVE_SUSPEND** flag in the [**NET_ADAPTER_POWER_FLAGS**](net-adapter-power-flags.md) enumeration to cause NetAdapterCx to manage power references for the data and control path.  Note that the latter option may result in reduced performance.
+The client driver configures its S0-Idle policy like any other WDF driver, by calling [**WdfDeviceAssignS0IdleSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545903).
+
+ When power reference management is enabled via **ManageS0IdlePowerReferences**,  NetAdapterCx manages power references that result in the WDFDEVICE being powered up/down as necessary. For example, the class extension acquires and releases power references so the device maintains power state as necessary to support modern standby (AoAC). Additionally, the client driver can set the **NET_ADAPTER_POWER_SELECTIVE_SUSPEND** flag in the [**NET_ADAPTER_POWER_FLAGS**](net-adapter-power-flags.md) enumeration to cause NetAdapterCx to manage power references for the data and control path. This will result in the device being powered down when it is idle. Note that the **NET_ADAPTER_POWER_SELECTIVE_SUSPEND** option results in improved power efficiency at the cost of some performance.
 
 Requirements
 ------------
