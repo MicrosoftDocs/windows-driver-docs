@@ -1,8 +1,5 @@
 ---
 title: NetRxQueueCreate method
-description: Creates a net receive queue object.
-ms.assetid: 7c78d1f8-e454-40b1-95a7-c1a702ee476b
-keywords: ["NetRxQueueCreate method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

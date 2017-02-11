@@ -1,8 +1,5 @@
 ---
 title: NetAdapterSetDataPathCapabilities method
-description: Sets the data path capabilities of the network adapter.
-ms.assetid: 935f53c6-426d-4ec3-b4d8-43a35de2a87c
-keywords: ["NetAdapterSetDataPathCapabilities method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

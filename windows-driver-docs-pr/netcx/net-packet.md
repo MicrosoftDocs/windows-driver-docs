@@ -1,8 +1,5 @@
 ---
 title: NET_PACKET structure
-description: TBD.
-ms.assetid: 40C19288-8DA8-4610-958A-B215D6E4704B
-keywords: ["NET_PACKET structure Network Drivers Starting with Windows Vista", "PNET_PACKET structure pointer Network Drivers Starting with Windows Vista"]
 ---
 
 # NET\_PACKET structure

@@ -1,8 +1,5 @@
 ---
 title: NetRequestGetPortNumber method
-description: .
-ms.assetid: 7cd50c29-c17c-49ba-a97e-e4144102ef32
-keywords: ["NetRequestGetPortNumber method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

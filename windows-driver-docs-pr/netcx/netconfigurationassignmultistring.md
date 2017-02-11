@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationAssignMultiString method
-description: .
-ms.assetid: b5081e10-7e91-4315-b0ff-fd926e79153e
-keywords: ["NetConfigurationAssignMultiString method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NetRequestSetDataComplete method
-description: .
-ms.assetid: dd479305-fef9-4b5a-928e-4d9b80938bf9
-keywords: ["NetRequestSetDataComplete method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

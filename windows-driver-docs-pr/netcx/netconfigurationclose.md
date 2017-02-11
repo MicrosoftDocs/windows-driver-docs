@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationClose method
-description: Releases the handle to the registry key that is associated with an adapter configuration object and then deletes the adapter configuration object.
-ms.assetid: 1e6ad52a-37d5-4142-bef2-f9dbb3d2caa3
-keywords: ["NetConfigurationClose method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

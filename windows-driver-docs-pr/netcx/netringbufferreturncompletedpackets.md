@@ -1,8 +1,5 @@
 ---
 title: NetRingBufferReturnCompletedPackets method
-description: Calls NetRingBufferReturnCompletedPacketsThroughIndex with the NextIndex value of the specified ring buffer.
-ms.assetid: 984d42cd-3f2d-49c2-85de-9cc585b14f05
-keywords: ["NetRingBufferReturnCompletedPackets method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: EVT_NET_ADAPTER_CREATE_RXQUEUE callback function
-description: The client driver's implementation of the EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE event callback function that sets up a receive queue.
-ms.assetid: 6b7d01fe-6246-4e6d-b8d9-244fda044ab5
-keywords: ["EvtNetAdapterCreateRxqueue callback function Network Drivers Starting with Windows Vista", "EVT_NET_ADAPTER_CREATE_RXQUEUE", "PFN_NET_ADAPTER_CREATE_RXQUEUE callback function pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

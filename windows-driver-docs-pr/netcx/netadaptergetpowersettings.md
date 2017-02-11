@@ -1,8 +1,5 @@
 ---
 title: NetAdapterGetPowerSettings method
-description: Retrieves the NETPOWERSETTINGS that is associated with a net adapter.
-ms.assetid: 4ca16de4-15ab-4592-bcac-92934c657228
-keywords: ["NetAdapterGetPowerSettings method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

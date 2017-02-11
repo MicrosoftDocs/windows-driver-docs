@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationQueryBinary method
-description: .
-ms.assetid: 1940ed43-3f37-47b6-88df-13f0354408ae
-keywords: ["NetConfigurationQueryBinary method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

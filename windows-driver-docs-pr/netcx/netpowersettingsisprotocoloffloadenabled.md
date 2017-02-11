@@ -1,8 +1,5 @@
 ---
 title: NetPowerSettingsIsProtocolOffloadEnabled method
-description: Determines if a protocol offload structure is enabled.
-ms.assetid: 43629763-271a-4be8-817a-6019198dc96f
-keywords: ["NetPowerSettingsIsProtocolOffloadEnabled method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

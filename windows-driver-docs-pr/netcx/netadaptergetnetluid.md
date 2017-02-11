@@ -1,8 +1,5 @@
 ---
 title: NetAdapterGetNetLuid method
-description: Retrieves the NET\_LUID that is assigned to a net adapter.
-ms.assetid: d95ff6c4-7d1b-467c-a744-7cae3eb194ae
-keywords: ["NetAdapterGetNetLuid method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

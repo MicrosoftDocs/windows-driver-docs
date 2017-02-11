@@ -1,8 +1,5 @@
 ---
 title: NetAdapterOpenConfiguration method
-description: Opens the adapter’s configuration database.
-ms.assetid: 6057a654-9c96-4cf3-9f75-9562455227a5
-keywords: ["NetAdapterOpenConfiguration method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

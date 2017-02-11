@@ -1,8 +1,5 @@
 ---
 title: NET_REQUEST_QUEUE_CONFIG structure
-description: Call NET\_REQUEST\_QUEUE\_CONFIG\_INIT to initialize this structure.
-ms.assetid: 16c23905-7192-4ab0-9eab-f3a6c39ed3d5
-keywords: ["NET_REQUEST_QUEUE_CONFIG structure Network Drivers Starting with Windows Vista", "PNET_REQUEST_QUEUE_CONFIG structure pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationQueryString method
-description: Retrieves the specified string value from the adapter configuration object and assigns the string to a specified framework string object.
-ms.assetid: fdb68710-d3c4-44c5-a95e-036cfb38f4b6
-keywords: ["NetConfigurationQueryString method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

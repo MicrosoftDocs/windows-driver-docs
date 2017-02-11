@@ -1,8 +1,5 @@
 ---
 title: NetPowerSettingsGetWakePatternCountForType method
-description: Retrieves the number of wake-on-LAN (WoL) patterns stored in the NETPOWERSETTINGS object for a particular WoL pattern type.
-ms.assetid: 1f687e18-6d7d-4057-a186-f144dac12391
-keywords: ["NetPowerSettingsGetWakePatternCountForType method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

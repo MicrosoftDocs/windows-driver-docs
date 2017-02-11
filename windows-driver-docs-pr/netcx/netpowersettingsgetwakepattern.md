@@ -1,8 +1,5 @@
 ---
 title: NetPowerSettingsGetWakePattern method
-description: Retrieves a wake-on-LAN (WoL) pattern structure.
-ms.assetid: 31cffe3b-7d39-4ae3-9ae6-5eedce49910b
-keywords: ["NetPowerSettingsGetWakePattern method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

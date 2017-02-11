@@ -1,8 +1,5 @@
 ---
 title: NET_REQUEST_QUEUE_QUERY_DATA_HANDLER_INIT method
-description: Initializes the NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER structure.
-ms.assetid: d766afb0-46aa-4d79-8a40-c23c0e014d68
-keywords: ["NET_REQUEST_QUEUE_QUERY_DATA_HANDLER_INIT method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

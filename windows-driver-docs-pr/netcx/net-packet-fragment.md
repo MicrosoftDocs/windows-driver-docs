@@ -1,8 +1,5 @@
 ---
 title: NET_PACKET_FRAGMENT structure
-description: TBD.
-ms.assetid: E716E0DA-81CD-420E-B216-313B2E20FCCA
-keywords: ["NET_PACKET_FRAGMENT structure Network Drivers Starting with Windows Vista", "PNET_PACKET_FRAGMENT structure pointer Network Drivers Starting with Windows Vista"]
 ---
 
 # NET\_PACKET\_FRAGMENT structure

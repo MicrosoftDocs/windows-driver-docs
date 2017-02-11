@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationQueryMultiString method
-description: Retrieves the strings that are currently assigned to the adapter configuration object, creates a WDFSTRING object for each string, and adds each string object to a specified collection object.
-ms.assetid: 8015791d-ecbd-40e3-868c-f6b3bbbf9433
-keywords: ["NetConfigurationQueryMultiString method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

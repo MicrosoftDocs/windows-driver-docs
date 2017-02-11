@@ -1,6 +1,5 @@
 ---
 title: NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT method
-description: Initializes a NET_ADAPTER_LINK_LAYER_CAPABILITIES structure.
 topic_type:
 - apiref
 api_name:

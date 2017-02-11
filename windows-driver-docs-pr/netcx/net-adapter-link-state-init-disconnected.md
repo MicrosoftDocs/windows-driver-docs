@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED method
-description: Initializes a NET\_ADAPTER\_LINK\_STATE structure for an adapter that is disconnected from the network.
-ms.assetid: 4666d7b9-bedf-4c37-8cbb-d0e1fef29d31
-keywords: ["NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

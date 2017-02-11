@@ -1,8 +1,5 @@
 ---
 title: EVT_RXQUEUE_CANCEL callback function
-description: Implemented by the client driver to handle operations that must be performed before a receive queue is deleted.
-ms.assetid: c335424e-9a91-49ed-b3cd-34ed1483ea5f
-keywords: ["EvtRxqueueCancel callback function Network Drivers Starting with Windows Vista", "EVT_RXQUEUE_CANCEL", "PFN_RXQUEUE_CANCEL callback function pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

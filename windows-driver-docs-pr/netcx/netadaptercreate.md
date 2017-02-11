@@ -1,8 +1,5 @@
 ---
 title: NetAdapterCreate method
-description: Creates a net adapter object.
-ms.assetid: 9e36d6f9-c0ca-4e18-83f8-5d1cb74ab1e1
-keywords: ["NetAdapterCreate method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

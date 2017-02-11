@@ -1,8 +1,5 @@
 ---
 title: EVT_NET_ADAPTER_SET_CAPABILITIES callback function
-description: The client driver's implementation of the EVT\_NET\_ADAPTER\_SET\_CAPABILITIES event callback function that sets the capabilities of the network adapter.
-ms.assetid: 88f2ed30-a4e8-48c4-a6cf-9b5d89cebe0f
-keywords: ["EvtNetAdapterSetCapabilities callback function Network Drivers Starting with Windows Vista", "EVT_NET_ADAPTER_SET_CAPABILITIES", "PFN_NET_ADAPTER_SET_CAPABILITIES callback function pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

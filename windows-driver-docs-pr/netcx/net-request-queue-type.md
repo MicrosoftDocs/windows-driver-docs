@@ -1,8 +1,5 @@
 ---
 title: NET_REQUEST_QUEUE_TYPE enumeration
-description: .
-ms.assetid: 34aa0f46-b86f-4ee3-82ff-7fd8e2f86f54
-keywords: ["NET_REQUEST_QUEUE_TYPE enumeration Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

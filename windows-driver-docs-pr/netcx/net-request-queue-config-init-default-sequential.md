@@ -1,8 +1,5 @@
 ---
 title: NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL method
-description: Initializes the caller-allocated NET\_REQUEST\_QUEUE\_CONFIG structure to create a default request queue.
-ms.assetid: 99c8e1b9-7bf7-4da9-bdad-afebcb9558d6
-keywords: ["NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

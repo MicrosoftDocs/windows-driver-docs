@@ -1,8 +1,5 @@
 ---
 title: NetAdapterSetLinkLayerMtuSize method
-description: Overrides the maximum transfer unit (MTU) size that the client driver provided to NetAdapterSetLinkLayerCapabilities.
-ms.assetid: c3303fe1-18cd-4fd0-bdc9-6da9c0a95769
-keywords: ["NetAdapterSetLinkLayerMtuSize method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

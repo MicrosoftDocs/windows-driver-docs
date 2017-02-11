@@ -1,8 +1,5 @@
 ---
 title: NetRxQueueConfigureDmaAllocator method
-description: Associates a WDFDMAENABLER object with a receive queue.
-ms.assetid: f0eac676-0f0c-4be2-b514-db03d3eb7067
-keywords: ["NetRxQueueConfigureDmaAllocator method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

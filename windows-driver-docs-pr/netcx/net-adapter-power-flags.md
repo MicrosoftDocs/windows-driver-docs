@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_POWER_FLAGS enumeration
-description: Defines flags that are used in a client driver's NET\_ADAPTER\_POWER\_CAPABILITIES structure.
-ms.assetid: bbfa310a-2de6-4d98-9f6b-e7b8ac1e3439
-keywords: ["NET_ADAPTER_POWER_FLAGS enumeration Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

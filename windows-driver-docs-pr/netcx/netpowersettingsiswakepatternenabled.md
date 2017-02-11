@@ -1,8 +1,5 @@
 ---
 title: NetPowerSettingsIsWakePatternEnabled method
-description: Determines if a wake-on-LAN (WoL) pattern is enabled for a network adapter.
-ms.assetid: 7ea019d7-8d06-4e29-8da1-bd40b19b95d6
-keywords: ["NetPowerSettingsIsWakePatternEnabled method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

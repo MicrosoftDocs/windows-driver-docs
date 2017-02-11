@@ -1,8 +1,5 @@
 ---
 title: NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME macro
-description: The NET\_PACKET\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME macro creates an accessor method with a specified name for a client driver's object-specific context space.
-ms.assetid: 8A8240D4-DE32-4CBE-8AC3-FC19D4963F13
-keywords: ["NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME macro Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

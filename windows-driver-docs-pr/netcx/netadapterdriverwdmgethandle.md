@@ -1,8 +1,5 @@
 ---
 title: NetAdapterDriverWdmGetHandle method
-description: An NDIS-WDF miniport client driver calls NetAdapterDriverWdmGetHandle returns a Windows Driver Model (WDM) handle to the client driver.
-ms.assetid: 5744e6a9-70b6-4677-8e3b-9f156eb40b74
-keywords: ["NetAdapterDriverWdmGetHandle method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

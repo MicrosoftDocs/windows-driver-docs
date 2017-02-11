@@ -1,8 +1,5 @@
 ---
 title: NetTxQueueNotifyMoreCompletedPacketsAvailable method
-description: The client driver calls NetTxQueueNotifyMoreCompletedPacketsAvailable to resume queue operations after NetAdapterCx calls the client's EVT\_TXQUEUE\_SET\_NOTIFICATION\_ENABLED event callback routine.
-ms.assetid: 89949a53-d884-4e03-afc3-897920f97df2
-keywords: ["NetTxQueueNotifyMoreCompletedPacketsAvailable method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

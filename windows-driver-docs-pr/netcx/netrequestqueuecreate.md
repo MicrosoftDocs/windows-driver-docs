@@ -1,8 +1,5 @@
 ---
 title: NetRequestQueueCreate method
-description: Creates a net request queue object.
-ms.assetid: f5bb6f56-d7cf-4f88-acd8-35da081f2edd
-keywords: ["NetRequestQueueCreate method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

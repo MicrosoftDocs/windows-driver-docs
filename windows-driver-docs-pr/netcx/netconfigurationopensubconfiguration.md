@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationOpenSubConfiguration method
-description: Opens a sub configuration of a specified adapter configuration object.
-ms.assetid: ba79dd68-c5f2-4a23-a595-e17d0665dd91
-keywords: ["NetConfigurationOpenSubConfiguration method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NetRingBufferReturnCompletedPacketsThroughIndex method
-description: Sets the BeginIndex value of the specified ring buffer to the first packet that is not completed.
-ms.assetid: 5c6899e2-5d68-404c-b45e-bf052205ec2a
-keywords: ["NetRingBufferReturnCompletedPacketsThroughIndex method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

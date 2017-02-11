@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationAssignBinary method
-description: .
-ms.assetid: 2657409d-c658-49bc-a128-f6e96bc9ae6f
-keywords: ["NetConfigurationAssignBinary method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

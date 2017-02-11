@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_PHYSICAL_ADDRESS_INIT method
-description: Initializes the NET\_ADAPTER\_PHYSICAL\_ADDRESS structure.
-ms.assetid: 5b170ab3-a360-4824-952c-08dd1f99c297
-keywords: ["NET_ADAPTER_PHYSICAL_ADDRESS_INIT method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

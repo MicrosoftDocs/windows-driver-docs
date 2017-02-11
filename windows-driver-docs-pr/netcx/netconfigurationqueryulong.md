@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationQueryUlong method
-description: Retrieves the specified unsigned long word (REG\_DWORD) data from the adapter configuration object and copies the data to a specified location.
-ms.assetid: 2a8975d5-459b-40f2-b8a6-aafec6c76c20
-keywords: ["NetConfigurationQueryUlong method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NetRingBufferGetPacketAtIndex method
-description: Returns a pointer to the net packet at the specified index value of the ring buffer.
-ms.assetid: 6c694a5d-d6e2-46ae-aeb8-6fff180a78d8
-keywords: ["NetRingBufferGetPacketAtIndex method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

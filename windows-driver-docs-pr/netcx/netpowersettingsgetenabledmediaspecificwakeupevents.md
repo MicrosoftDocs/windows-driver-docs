@@ -1,8 +1,5 @@
 ---
 title: NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents method
-description: Retrieves the media-specific wake-up events that a network adapter supports.
-ms.assetid: b54918ed-1dc2-4e14-88a4-39c2b47c4954
-keywords: ["NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

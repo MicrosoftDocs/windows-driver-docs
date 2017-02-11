@@ -1,8 +1,5 @@
 ---
 title: NetRequestGetVPortId method
-description: .
-ms.assetid: d4a49f40-6f8b-42df-b7a2-b6978953ac42
-keywords: ["NetRequestGetVPortId method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

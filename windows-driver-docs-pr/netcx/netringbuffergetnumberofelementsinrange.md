@@ -1,8 +1,5 @@
 ---
 title: NetRingBufferGetNumberOfElementsInRange method
-description: Calculates the number of elements contained in a range of the specified net ring buffer.
-ms.assetid: 0cf45968-4204-4891-82cd-e1fd0e02d62d
-keywords: ["NetRingBufferGetNumberOfElementsInRange method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

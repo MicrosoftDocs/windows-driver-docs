@@ -1,8 +1,5 @@
 ---
 title: EVT_NET_REQUEST_DEFAULT_METHOD callback function
-description: Implemented by the client driver to ... handler for method OIDs.
-ms.assetid: 5e98a8fc-5d21-4940-bf08-bbc8fdd80af0
-keywords: ["EvtNetRequestDefaultMethod callback function Network Drivers Starting with Windows Vista", "EVT_NET_REQUEST_DEFAULT_METHOD", "PFN_NET_REQUEST_DEFAULT_METHOD callback function pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

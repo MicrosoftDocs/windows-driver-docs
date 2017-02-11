@@ -1,8 +1,5 @@
 ---
 title: NetRequestGetId method
-description: .
-ms.assetid: 56f5fea6-8018-4ceb-b9f5-988923cbe106
-keywords: ["NetRequestGetId method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

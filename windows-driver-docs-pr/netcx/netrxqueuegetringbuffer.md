@@ -1,8 +1,5 @@
 ---
 title: NetRxQueueGetRingBuffer method
-description: .
-ms.assetid: 8960e92a-cdce-4764-8ab5-2ff056e2d770
-keywords: ["NetRxQueueGetRingBuffer method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

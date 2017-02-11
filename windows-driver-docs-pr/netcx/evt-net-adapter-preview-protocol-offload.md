@@ -1,8 +1,5 @@
 ---
 title: EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD callback function
-description: The client driver's implementation of the EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD event callback function that accepts or rejects an incoming protocol offload.
-ms.assetid: b36a1cf6-dec1-470e-a7d2-33feba17e9ef
-keywords: ["EvtNetAdapterPreviewProtocolOffload callback function Network Drivers Starting with Windows Vista", "EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD", "PFN_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD callback function pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

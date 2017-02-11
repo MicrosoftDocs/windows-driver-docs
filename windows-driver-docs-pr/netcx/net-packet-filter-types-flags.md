@@ -1,8 +1,5 @@
 ---
 title: NET_PACKET_FILTER_TYPES_FLAGS enumeration
-description: .
-ms.assetid: 0895f608-619e-4b16-b0e9-5e31b382e346
-keywords: ["NET_PACKET_FILTER_TYPES_FLAGS enumeration Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

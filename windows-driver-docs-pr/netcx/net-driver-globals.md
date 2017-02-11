@@ -1,8 +1,5 @@
 ---
 title: NET_DRIVER_GLOBALS structure
-description: Call NET\_DRIVER\_GLOBALS\_INIT to initialize this structure.
-ms.assetid: 1d6c5f47-52ba-475d-b3c4-e86cf12562b4
-keywords: ["NET_DRIVER_GLOBALS structure Network Drivers Starting with Windows Vista", "PNET_DRIVER_GLOBALS structure pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_LINK_STATE_INIT method
-description: Initializes a NET\_ADAPTER\_LINK\_STATE structure.
-ms.assetid: a49b5ab3-6bbf-491f-876d-a6ed5712895a
-keywords: ["NET_ADAPTER_LINK_STATE_INIT method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

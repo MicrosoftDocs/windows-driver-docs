@@ -1,8 +1,5 @@
 ---
 title: NetRingBufferIncrementIndex method
-description: Returns the next index value after the specified index value, wrapping around to the beginning of the ring buffer if necessary.
-ms.assetid: 8653c497-4ba8-45f2-978c-bd591e785a88
-keywords: ["NetRingBufferIncrementIndex method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,7 +1,6 @@
 ---
 title: Power-Up Sequence for an NDIS-WDF Client Driver
 author: windows-driver-content
-description: Power-Up Sequence for an NDIS-WDF Client Driver
 ---
 
 # Power-Up Sequence for an NDIS-WDF Client Driver

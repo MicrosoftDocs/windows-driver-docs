@@ -1,8 +1,5 @@
 ---
 title: NET_REQUEST_QUEUE_METHOD_HANDLER structure
-description: Call NET\_REQUEST\_QUEUE\_METHOD\_HANDLER\_INIT to initialize this structure.
-ms.assetid: f088cead-48e8-4c53-8178-e6408c387389
-keywords: ["NET_REQUEST_QUEUE_METHOD_HANDLER structure Network Drivers Starting with Windows Vista", "PNET_REQUEST_QUEUE_METHOD_HANDLER structure pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

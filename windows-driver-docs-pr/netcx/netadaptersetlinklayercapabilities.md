@@ -1,8 +1,5 @@
 ---
 title: NetAdapterSetLinkLayerCapabilities method
-description: Sets the link capabilities of the network adapter.
-ms.assetid: 79254942-2e9c-4b19-8c0f-ae6498600c2e
-keywords: ["NetAdapterSetLinkLayerCapabilities method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

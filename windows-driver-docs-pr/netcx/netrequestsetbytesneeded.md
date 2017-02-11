@@ -1,8 +1,5 @@
 ---
 title: NetRequestSetBytesNeeded method
-description: .
-ms.assetid: 6a69bfbc-f646-4e0e-b140-f9691cf4f97a
-keywords: ["NetRequestSetBytesNeeded method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

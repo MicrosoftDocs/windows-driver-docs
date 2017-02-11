@@ -1,8 +1,5 @@
 ---
 title: NET_RXQUEUE_CONFIG_INIT method
-description: Initializes the NET\_RXQUEUE\_CONFIG structure.
-ms.assetid: f1b07385-2f4c-4eb3-84b8-7331b21a1985
-keywords: ["NET_RXQUEUE_CONFIG_INIT method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NetPowerSettingsGetEnabledProtocolOffloads method
-description: Retrieves the low power protocol offload capabilities of a network adapter.
-ms.assetid: 927eb28c-1e31-4570-a8f8-bbc078e1d16b
-keywords: ["NetPowerSettingsGetEnabledProtocolOffloads method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,7 +1,5 @@
 ---
 title: NDIS-WDF Class Extension (Cx) Limitation
-description: Due to some NetAdapterCx implementation details, certain existing WDF APIs need to be used carefully
-ms.assetid: 
 ---
 
 # NDIS-WDF Class Extension (Cx) Limitations

@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_DATAPATH_CAPABILITIES_INIT method
-description: Initializes the NET\_ADAPTER\_DATAPATH\_CAPABILITIES structure.
-ms.assetid: 9fc99964-6e86-4c6d-8f1a-dca532c1aef2
-keywords: ["NET_ADAPTER_DATAPATH_CAPABILITIES_INIT method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

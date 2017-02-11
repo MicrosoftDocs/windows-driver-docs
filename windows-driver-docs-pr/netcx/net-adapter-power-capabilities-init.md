@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_POWER_CAPABILITIES_INIT method
-description: Initializes the NET\_ADAPTER\_POWER\_CAPABILITIES structure.
-ms.assetid: 3178eff3-a8b4-4cbe-96f6-5a9bde8bc40b
-keywords: ["NET_ADAPTER_POWER_CAPABILITIES_INIT method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

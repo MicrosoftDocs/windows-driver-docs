@@ -1,8 +1,5 @@
 ---
 title: NetPowerSettingsGetProtocolOffloadCount method
-description: Retrieves the number of protocol offload structures associated with a NETPOWERSETTINGS object.
-ms.assetid: e3cce853-91c9-4477-93bf-c0a4fc9f39a1
-keywords: ["NetPowerSettingsGetProtocolOffloadCount method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

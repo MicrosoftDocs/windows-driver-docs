@@ -1,8 +1,5 @@
 ---
 title: NetRingBufferGetNextPacket method
-description: Returns a pointer to the net packet at the NextIndex value of the ring buffer.
-ms.assetid: ffaae9ec-2d45-497b-b17c-c5815ae5f291
-keywords: ["NetRingBufferGetNextPacket method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

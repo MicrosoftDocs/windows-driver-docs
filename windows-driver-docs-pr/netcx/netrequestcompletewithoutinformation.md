@@ -1,8 +1,5 @@
 ---
 title: NetRequestCompleteWithoutInformation method
-description: .
-ms.assetid: 604a25a5-aaaf-49ba-802d-2b7f159a47ea
-keywords: ["NetRequestCompleteWithoutInformation method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

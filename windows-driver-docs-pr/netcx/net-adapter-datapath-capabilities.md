@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_DATAPATH_CAPABILITIES structure
-description: Describes the data path capabilities of the adapter.
-ms.assetid: 85fac4c9-4a91-4c6f-b906-6b6a38d360d8
-keywords: ["NET_ADAPTER_DATAPATH_CAPABILITIES structure Network Drivers Starting with Windows Vista", "PNET_ADAPTER_DATAPATH_CAPABILITIES structure pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

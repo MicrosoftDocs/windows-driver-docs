@@ -1,8 +1,5 @@
 ---
 title: NetRxQueueInitGetQueueId method
-description: .
-ms.assetid: 134512e5-5158-4f3a-8691-7780646fe480
-keywords: ["NetRxQueueInitGetQueueId method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

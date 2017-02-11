@@ -1,8 +1,5 @@
 ---
 title: EVT_RXQUEUE_ADVANCE callback function
-description: Implemented by the client driver to process receive packets provided by NetAdapterCx.
-ms.assetid: 444e4845-b6fd-46a7-9d48-e99ff25cc113
-keywords: ["EvtRxqueueAdvance callback function Network Drivers Starting with Windows Vista", "EVT_RXQUEUE_ADVANCE", "PFN_RXQUEUE_ADVANCE callback function pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

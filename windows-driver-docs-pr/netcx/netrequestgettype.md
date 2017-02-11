@@ -1,8 +1,5 @@
 ---
 title: NetRequestGetType method
-description: .
-ms.assetid: 2c086c01-c32e-4039-9812-d7d7526df46b
-keywords: ["NetRequestGetType method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

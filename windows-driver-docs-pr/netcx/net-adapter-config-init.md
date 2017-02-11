@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_CONFIG_INIT method
-description: Initializes the NET\_ADAPTER\_CONFIG structure.
-ms.assetid: a2706ead-4ca1-4dbf-b8c0-8f6a624db507
-keywords: ["NET_ADAPTER_CONFIG_INIT method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

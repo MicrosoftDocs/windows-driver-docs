@@ -1,8 +1,5 @@
 ---
 title: NetTxQueueCreate method
-description: Creates a net transmit queue object.
-ms.assetid: 6b360b14-d104-4ffd-b0ef-e45cfa2b3ab2
-keywords: ["NetTxQueueCreate method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NetRequestRetrieveInputOutputBuffer method
-description: .
-ms.assetid: b999f2bd-a9ba-471e-b053-a566743180c5
-keywords: ["NetRequestRetrieveInputOutputBuffer method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

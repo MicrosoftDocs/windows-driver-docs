@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationAssignUlong method
-description: .
-ms.assetid: 861b862b-b833-45a8-bf18-132f98d73223
-keywords: ["NetConfigurationAssignUlong method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

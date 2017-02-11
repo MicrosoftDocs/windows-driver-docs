@@ -1,8 +1,5 @@
 ---
 title: NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_QUERY_DATA_HANDLER method
-description: Adds a caller-provided query data handler to a NET\_REQUEST\_QUEUE\_CONFIG structure.
-ms.assetid: 6495a861-cfdf-49c2-93ed-9f245d508e3b
-keywords: ["NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NET_REQUEST_QUEUE_QUERY_DATA_HANDLER structure
-description: Call NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER\_INIT to initialize this structure.
-ms.assetid: 6d4250e4-0e73-40a4-ac55-95312a17320a
-keywords: ["NET_REQUEST_QUEUE_QUERY_DATA_HANDLER structure Network Drivers Starting with Windows Vista", "PNET_REQUEST_QUEUE_QUERY_DATA_HANDLER structure pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

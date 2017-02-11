@@ -1,8 +1,5 @@
 ---
 title: NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_SET_DATA_HANDLER method
-description: Adds a caller-provided custom request handler to a NET\_REQUEST\_QUEUE\_CONFIG structure.
-ms.assetid: 062634a8-6684-4c97-9f50-eb6ea1a01a23
-keywords: ["NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_LINK_LAYER_CAPABILITIES structure
-description: Describes the MAC capabilities of the adapter.
-ms.assetid: 600211c2-e502-4c9f-b1ab-5fb5239b6652
-keywords: ["NET_ADAPTER_LINK_LAYER_CAPABILITIES structure Network Drivers Starting with Windows Vista", "PNET_ADAPTER_LINK_LAYER_CAPABILITIES structure pointer Network Drivers Starting with Windows Vista"]
 ---
 
 # NET\_ADAPTER\_LINK\_LAYER\_CAPABILITIES structure

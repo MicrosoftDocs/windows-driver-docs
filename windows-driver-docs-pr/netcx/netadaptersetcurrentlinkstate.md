@@ -1,8 +1,5 @@
 ---
 title: NetAdapterSetCurrentLinkState method
-description: Set the current link state of the of the network adapter.
-ms.assetid: ea560091-3ba4-428e-8560-6d75ce0493e6
-keywords: ["NetAdapterSetCurrentLinkState method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

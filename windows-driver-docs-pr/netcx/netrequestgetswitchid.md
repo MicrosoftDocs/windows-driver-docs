@@ -1,8 +1,5 @@
 ---
 title: NetRequestGetSwitchId method
-description: .
-ms.assetid: b325b9f8-5134-4463-890e-abe85b86bcd9
-keywords: ["NetRequestGetSwitchId method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

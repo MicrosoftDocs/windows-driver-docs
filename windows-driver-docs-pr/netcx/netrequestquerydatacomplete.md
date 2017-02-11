@@ -1,8 +1,5 @@
 ---
 title: NetRequestQueryDataComplete method
-description: .
-ms.assetid: 0883bc93-dcd3-4145-91fd-c8845095b8b4
-keywords: ["NetRequestQueryDataComplete method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NetAdapterSetPowerCapabilities method
-description: Sets the power capabilities of the network adapter.
-ms.assetid: 23eb3d91-d635-4be5-8b34-ccb60cda49be
-keywords: ["NetAdapterSetPowerCapabilities method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

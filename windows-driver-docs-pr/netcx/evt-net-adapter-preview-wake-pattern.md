@@ -1,8 +1,5 @@
 ---
 title: EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN callback function
-description: The client driver's implementation of the EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN event callback function that accepts or rejects an incoming wake-on-LAN (WOL) pattern.
-ms.assetid: 21049f7f-e066-4b01-b354-5b904385ef49
-keywords: ["EvtNetAdapterPreviewWakePattern callback function Network Drivers Starting with Windows Vista", "EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN", "PFN_NET_ADAPTER_PREVIEW_WAKE_PATTERN callback function pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NetAdapterDeviceInitConfig method
-description: Initializes device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
-ms.assetid: a478017c-9eaa-4e20-8d16-1201a8a3b4c7
-keywords: ["NetAdapterDeviceInitConfig method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

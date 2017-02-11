@@ -1,8 +1,5 @@
 ---
 title: NET_ADAPTER_WAKEUP_EVENTS_FLAGS enumeration
-description: .
-ms.assetid: 073582db-98b7-4128-979c-ade261ce192c
-keywords: ["NET_ADAPTER_WAKEUP_EVENTS_FLAGS enumeration Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

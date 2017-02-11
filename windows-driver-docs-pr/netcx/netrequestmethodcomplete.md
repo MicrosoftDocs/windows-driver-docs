@@ -1,8 +1,5 @@
 ---
 title: NetRequestMethodComplete method
-description: .
-ms.assetid: 5dd34173-b127-4f9e-bc38-7ce3fc7bf74c
-keywords: ["NetRequestMethodComplete method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

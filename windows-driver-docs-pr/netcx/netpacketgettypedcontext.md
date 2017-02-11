@@ -1,8 +1,5 @@
 ---
 title: NetPacketGetTypedContext method
-description: Client drivers should not call this function directly. Instead, use NET\_PACKET\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME.
-ms.assetid: 8050e118-ab90-4a65-a9ed-59a408983fce
-keywords: ["NetPacketGetTypedContext method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

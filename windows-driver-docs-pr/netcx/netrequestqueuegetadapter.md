@@ -1,8 +1,5 @@
 ---
 title: NetRequestQueueGetAdapter method
-description: .
-ms.assetid: c82fe7de-4f18-4c2d-9f07-49184ed59ef2
-keywords: ["NetRequestQueueGetAdapter method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

@@ -1,8 +1,5 @@
 ---
 title: NetPowerSettingsGetEnabledWakeUpFlags method
-description: Retrieves the media-independent wake-up events that a network adapter supports.
-ms.assetid: 40cc43e1-c2a8-4ba1-b5bc-dca8407d9296
-keywords: ["NetPowerSettingsGetEnabledWakeUpFlags method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

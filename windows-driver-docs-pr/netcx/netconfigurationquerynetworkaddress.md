@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationQueryNetworkAddress method
-description: .
-ms.assetid: 551f2c98-7daa-4dfc-a57d-81bf44e366f9
-keywords: ["NetConfigurationQueryNetworkAddress method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

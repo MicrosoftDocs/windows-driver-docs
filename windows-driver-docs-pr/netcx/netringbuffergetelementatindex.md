@@ -1,8 +1,5 @@
 ---
 title: NetRingBufferGetElementAtIndex method
-description: Returns the element at the specified index in the ring buffer.
-ms.assetid: 5b4d5e14-3e1f-425f-96e4-cc2a9d720b41
-keywords: ["NetRingBufferGetElementAtIndex method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

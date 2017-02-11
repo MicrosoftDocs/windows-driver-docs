@@ -1,8 +1,5 @@
 ---
 title: EVT_NET_REQUEST_QUERY_DATA callback function
-description: Implemented by the client driver to ... custom query handler callback.
-ms.assetid: 2a1ade3a-571d-402d-bfda-40de75b67164
-keywords: ["EvtNetRequestQueryData callback function Network Drivers Starting with Windows Vista", "EVT_NET_REQUEST_QUERY_DATA", "PFN_NET_REQUEST_QUERY_DATA callback function pointer Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

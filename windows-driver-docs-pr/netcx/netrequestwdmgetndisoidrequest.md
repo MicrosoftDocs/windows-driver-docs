@@ -1,8 +1,5 @@
 ---
 title: NetRequestWdmGetNdisOidRequest method
-description: .
-ms.assetid: 41984403-94bf-426b-a592-c02a16079076
-keywords: ["NetRequestWdmGetNdisOidRequest method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

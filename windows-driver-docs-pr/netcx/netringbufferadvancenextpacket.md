@@ -1,8 +1,5 @@
 ---
 title: NetRingBufferAdvanceNextPacket method
-description: Increments the NextIndex value of the ring buffer and then returns a pointer to the net packet at the new NextIndex value.
-ms.assetid: 3c5ad50a-23bc-4289-b182-1f08d28d6afd
-keywords: ["NetRingBufferAdvanceNextPacket method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

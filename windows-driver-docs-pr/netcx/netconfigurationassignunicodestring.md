@@ -1,8 +1,5 @@
 ---
 title: NetConfigurationAssignUnicodeString method
-description: .
-ms.assetid: d397df09-e14e-4ca4-95c0-ffa055e6ac50
-keywords: ["NetConfigurationAssignUnicodeString method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:

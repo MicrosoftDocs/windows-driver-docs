@@ -1,8 +1,5 @@
 ---
 title: NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL method
-description: Initializes the caller-allocated NET\_REQUEST\_QUEUE\_CONFIG structure to create a direct default request queue.
-ms.assetid: ae2838ad-2003-4f26-a81c-a5bc36a763e6
-keywords: ["NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER method Network Drivers Starting with Windows Vista"]
 topic_type:
 - apiref
 api_name:
