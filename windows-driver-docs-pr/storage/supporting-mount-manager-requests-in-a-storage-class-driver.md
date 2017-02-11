@@ -36,9 +36,10 @@ The mount manager relies on the Plug and Play device interface notification mech
 
 Upon receiving a Plug and Play notification of the arrival of a volume interface, mount manager sends the client three device control IRPs:
 
-[**IOCTL\_MOUNTDEV\_QUERY\_DEVICE\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff560437)
-[**IOCTL\_MOUNTDEV\_QUERY\_UNIQUE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff560441)
-[**IOCTL\_MOUNTDEV\_QUERY\_SUGGESTED\_LINK\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff560440)
+* [**IOCTL\_MOUNTDEV\_QUERY\_DEVICE\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff560437)
+* [**IOCTL\_MOUNTDEV\_QUERY\_UNIQUE\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff560441)
+* [**IOCTL\_MOUNTDEV\_QUERY\_SUGGESTED\_LINK\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff560440)
+
 In response to these three IOCTLs the client should return the volume's nonpersistent device object name (or target name) located in the **Device** directory of the system object tree (for example: "\\Device\\HarddiskVolume1"), the unique volume ID, and a suggested persistent symbolic link name for the volume, respectively. Although clients may elect to ignore [**IOCTL\_MOUNTDEV\_QUERY\_SUGGESTED\_LINK\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff560440), they are required to provide a unique volume ID upon receiving [**IOCTL\_MOUNTDEV\_QUERY\_DEVICE\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff560437) or IOCTL\_MOUNTDEV\_QUERY\_UNIQUE\_ID. The mount manager relies entirely upon the client to provide the unique volume ID, and if the client does not provide it, then the mount manager is not able to assign mount points, such as drive letters, to the volume.
 
 For more information about these IOCTLs, see [I/O Control Codes Sent by the Mount Manager](https://msdn.microsoft.com/library/windows/hardware/ff561594).
