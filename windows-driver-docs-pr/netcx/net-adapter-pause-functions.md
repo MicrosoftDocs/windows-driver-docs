@@ -10,7 +10,7 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_PAUSE\_FUNCTIONS enumeration
+# NET_ADAPTER_PAUSE_FUNCTIONS enumeration
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
