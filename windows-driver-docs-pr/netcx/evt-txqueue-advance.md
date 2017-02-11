@@ -10,7 +10,7 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_TXQUEUE\_ADVANCE callback function
+# EVT_TXQUEUE_ADVANCE callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -31,7 +31,7 @@ void EvtTxqueueAdvance(
 typedef EVT_TXQUEUE_ADVANCE PFN_TXQUEUE_ADVANCE;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_TXQUEUE\_CONFIG**](net-txqueue-config.md) and then calling [**NetTxQueueCreate**](nettxqueuecreate.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_TXQUEUE_CONFIG**](net-txqueue-config.md) and then calling [**NetTxQueueCreate**](nettxqueuecreate.md).
 
 Parameters
 ----------
@@ -47,7 +47,7 @@ This callback function does not return a value.
 Remarks
 -------
 
-See [*EVT\_RXQUEUE\_ADVANCE*](evt-rxqueue-advance.md).
+See [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
 
 Requirements
 ------------

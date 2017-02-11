@@ -34,7 +34,7 @@ Parameters
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *CurrentLinkState* \[in\]  
-A pointer to an allocated and initialized [**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md) structure that describes the current link state of the adapter.
+A pointer to an allocated and initialized [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure that describes the current link state of the adapter.
 
 Return value
 ------------
@@ -44,7 +44,7 @@ This method does not return a value.
 Remarks
 -------
 
-The client driver calls **NetAdapterSetCurrentLinkState** from its [*EVT\_NET\_ADAPTER\_SET\_CAPABILITIES*](evt-net-adapter-set-capabilities.md) implementation, or from a callback function that NetAdapterCx calls after *EVT\_NET\_ADAPTER\_SET\_CAPABILITIES*.
+The client driver calls **NetAdapterSetCurrentLinkState** from its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) implementation, or from a callback function that NetAdapterCx calls after *EVT_NET_ADAPTER_SET_CAPABILITIES*.
 
 Requirements
 ------------
@@ -81,9 +81,9 @@ Requirements
 ## See also
 
 
-[**NET\_ADAPTER\_LINK\_STATE\_INIT**](net-adapter-link-state-init.md)
+[**NET_ADAPTER_LINK_STATE_INIT**](net-adapter-link-state-init.md)
 
-[**NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED**](net-adapter-link-state-init-disconnected.md)
+[**NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED**](net-adapter-link-state-init-disconnected.md)
 
  
 

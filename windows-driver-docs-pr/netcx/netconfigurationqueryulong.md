@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves the specified unsigned long word (REG\_DWORD) data from the adapter configuration object and copies the data to a specified location.
+Retrieves the specified unsigned long word (REG_DWORD) data from the adapter configuration object and copies the data to a specified location.
 
 Syntax
 ------
@@ -36,10 +36,10 @@ Parameters
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *Flags* \[in\]  
-A valid bitwise OR of [**NET\_CONFIGURATION\_QUERY\_ULONG\_FLAGS**](net-configuration-query-ulong-flags.md)-typed flags.
+A valid bitwise OR of [**NET_CONFIGURATION_QUERY_ULONG_FLAGS**](net-configuration-query-ulong-flags.md)-typed flags.
 
 *ValueName* \[in\]  
-A pointer to a **UNICODE\_STRING** structure that contains a name for the ULONG value.
+A pointer to a **UNICODE_STRING** structure that contains a name for the ULONG value.
 
 *Value* \[out\]  
 A pointer to a location that receives the data that is assigned to the value that *ValueName* specifies.
@@ -47,7 +47,7 @@ A pointer to a location that receives the data that is assigned to the value tha
 Return value
 ------------
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Remarks
 -----

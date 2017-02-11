@@ -32,7 +32,7 @@ Parameters
 ----------
 
 *RingBuffer* \[in\]  
-The [**NET\_RING\_BUFFER**](net-ring-buffer.md) that
+The [**NET_RING_BUFFER**](net-ring-buffer.md) that
 
 *Index* \[in\]  
 

@@ -49,7 +49,7 @@ Returns one of the following status values:
 
 |Return Code|Description|
 |---|---|
-|STATUS\_SUCCESS|The operation succeeded.|
+|STATUS_SUCCESS|The operation succeeded.|
 |STATUS_BUFFER_TOO_SMALL|The supplied buffer is too small to receive the information.|
 
 Remarks

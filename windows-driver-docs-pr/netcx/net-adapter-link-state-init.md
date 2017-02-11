@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_LINK\_STATE\_INIT method
+# NET_ADAPTER_LINK_STATE_INIT method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes a [NET\_ADAPTER\_LINK\_STATE](net-adapter-link-state.md) structure.
+Initializes a [NET_ADAPTER_LINK_STATE](net-adapter-link-state.md) structure.
 
 Syntax
 ------
@@ -35,7 +35,7 @@ Parameters
 ----------
 
 *LinkState* \[out\]  
-A pointer to a driver-allocated [**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md) structure.
+A pointer to a driver-allocated [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure.
 
 *LinkSpeed* \[in\]  
 The link speed of the adapter in bits per second.
@@ -47,10 +47,10 @@ The media connect state for the miniport adapter.
 The media duplex state for the miniport adapter.
 
 *SupportedPauseFunctions* \[in\]  
-Support for the IEEE 802.3 pause frames. For more info, see [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
+Support for the IEEE 802.3 pause frames. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
 
 *SupportedPauseFunctions* \[in\]  
-The auto-negotiation settings for the miniport adapter. For more info, see [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
+The auto-negotiation settings for the miniport adapter. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
 
 Return value
 ------------
@@ -60,9 +60,9 @@ This method does not return a value.
 Remarks
 -------
 
-Call **NET\_ADAPTER\_LINK\_STATE\_INIT** or [**NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED**](net-adapter-link-state-init-disconnected.md) to initialize a [**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md) structure.
+Call **NET_ADAPTER_LINK_STATE_INIT** or [**NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED**](net-adapter-link-state-init-disconnected.md) to initialize a [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure.
 
-An initialized **NET\_ADAPTER\_LINK\_STATE** structure is an input parameter value to [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md).
+An initialized **NET_ADAPTER_LINK_STATE** structure is an input parameter value to [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md).
 
 Requirements
 ------------
@@ -95,13 +95,13 @@ Requirements
 ## See also
 
 
-[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
+[**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
 
 [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md)
 
-[**NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED**](net-adapter-link-state-init-disconnected.md)
+[**NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED**](net-adapter-link-state-init-disconnected.md)
 
-[**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md)
+[**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md)
 
  
 

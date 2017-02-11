@@ -35,7 +35,7 @@ Parameters
 A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
 *WakePatternType* \[in\]  
-An [**NDIS\_PM\_WOL\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) value that contains the type of WoL pattern to count.
+An [**NDIS_PM_WOL_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) value that contains the type of WoL pattern to count.
 
 Return value
 ------------
@@ -45,7 +45,7 @@ Returns the total number of enabled and disabled WoL patterns stored in the NETP
 Remarks
 -------
 
-The client driver calls [**NetPowerSettingsGetWakePatternCount**](netpowersettingsgetwakepatterncount.md) during a power transition, typically from its [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback function.
+The client driver calls [**NetPowerSettingsGetWakePatternCount**](netpowersettingsgetwakepatterncount.md) during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback function.
 
 To determine if a specific wake pattern is enabled, call [**NetPowerSettingsIsWakePatternEnabled**](netpowersettingsiswakepatternenabled.md).
 
@@ -88,7 +88,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768)
+[**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768)
 
  
 

@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Client drivers should not call this function directly. Instead, use [**NET\_PACKET\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME**](net-packet-declare-context-type-with-name.md).
+Client drivers should not call this function directly. Instead, use [**NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME**](net-packet-declare-context-type-with-name.md).
 
 Syntax
 ------
@@ -79,7 +79,7 @@ Requirements
 ## See also
 
 
-[**NET\_PACKET\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME**](net-packet-declare-context-type-with-name.md)
+[**NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME**](net-packet-declare-context-type-with-name.md)
 
  
 

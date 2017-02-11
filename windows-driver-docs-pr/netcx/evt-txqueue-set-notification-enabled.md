@@ -10,7 +10,7 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_TXQUEUE\_SET\_NOTIFICATION\_ENABLED callback function
+# EVT_TXQUEUE_SET_NOTIFICATION_ENABLED callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -32,7 +32,7 @@ NTSTATUS EvtTxqueueSetNotificationEnabled(
 typedef EVT_TXQUEUE_SET_NOTIFICATION_ENABLED PFN_TXQUEUE_SET_NOTIFICATION_ENABLED;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_TXQUEUE\_CONFIG**](net-txqueue-config.md) and then calling [**NetTxQueueCreate**](nettxqueuecreate.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_TXQUEUE_CONFIG**](net-txqueue-config.md) and then calling [**NetTxQueueCreate**](nettxqueuecreate.md).
 
 Parameters
 ----------
@@ -46,14 +46,14 @@ A Boolean value which, if TRUE, indicates that execution of this queue is paused
 Return value
 ------------
 
-If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 Remarks
 -------
 
-If *NotificationEnabled* is TRUE, NetAdapterCx waits to call [*EVT\_TXQUEUE\_ADVANCE*](evt-txqueue-advance.md) until after the client driver has called [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md).
+If *NotificationEnabled* is TRUE, NetAdapterCx waits to call [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) until after the client driver has called [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md).
 
-For more information, see [*EVT\_RXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-rxqueue-set-notification-enabled.md).
+For more information, see [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md).
 
 Requirements
 ------------
@@ -90,7 +90,7 @@ Requirements
 ## See also
 
 
-[*EVT\_TXQUEUE\_ADVANCE*](evt-txqueue-advance.md)
+[*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md)
 
 [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md)
 

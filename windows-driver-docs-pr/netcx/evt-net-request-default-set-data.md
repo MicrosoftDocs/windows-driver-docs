@@ -10,7 +10,7 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_NET\_REQUEST\_DEFAULT\_SET\_DATA callback function
+# EVT_NET_REQUEST_DEFAULT_SET_DATA callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -35,7 +35,7 @@ VOID EvtNetRequestDefaultSetData(
 typedef EVT_NET_REQUEST_DEFAULT_SET_DATA PFN_NET_REQUEST_DEFAULT_SET_DATA;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) and then calling [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) and then calling [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
 Parameters
 ----------
@@ -58,7 +58,7 @@ The size of the buffer pointed to by *InputBuffer*.
 Return value
 ------------
 
-If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 Remarks
 ---

@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The client driver calls **NetRxQueueNotifyMoreReceivedPacketsAvailable** to resume queue operations after NetAdapterCx calls the client's [*EVT\_RXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-rxqueue-set-notification-enabled.md) event callback routine.
+The client driver calls **NetRxQueueNotifyMoreReceivedPacketsAvailable** to resume queue operations after NetAdapterCx calls the client's [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) event callback routine.
 
 Syntax
 ------
@@ -40,9 +40,9 @@ This method does not return a value.
 Remarks
 -------
 
-After NetAdapterCx calls a client driver's [*EVT\_RXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-rxqueue-set-notification-enabled.md) event callback routine, the client must call **NetRxQueueNotifyMoreReceivedPacketsAvailable** to resume queue operations. Typically, the client does this after it completes a pending NET\_PACKET in the receive queue’s [**NET\_RING\_BUFFER**](net-ring-buffer.md).
+After NetAdapterCx calls a client driver's [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) event callback routine, the client must call **NetRxQueueNotifyMoreReceivedPacketsAvailable** to resume queue operations. Typically, the client does this after it completes a pending NET_PACKET in the receive queue’s [**NET_RING_BUFFER**](net-ring-buffer.md).
 
-When the client driver calls **NetRxQueueNotifyMoreReceivedPacketsAvailable**, NetAdapterCx reclaims the NET\_PACKET previously used for receive and may subsequently call the client’s [*EVT\_RXQUEUE\_ADVANCE*](evt-rxqueue-advance.md) callback function.
+When the client driver calls **NetRxQueueNotifyMoreReceivedPacketsAvailable**, NetAdapterCx reclaims the NET_PACKET previously used for receive and may subsequently call the client’s [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback function.
 
 Requirements
 ------------
@@ -79,9 +79,9 @@ Requirements
 ## See also
 
 
-[*EVT\_RXQUEUE\_ADVANCE*](evt-rxqueue-advance.md)
+[*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md)
 
-[*EVT\_RXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-rxqueue-set-notification-enabled.md)
+[*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md)
 
  
 

@@ -10,7 +10,7 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_TXQUEUE\_CANCEL callback function
+# EVT_TXQUEUE_CANCEL callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -31,7 +31,7 @@ void EvtTxqueueCancel(
 typedef EVT_TXQUEUE_CANCEL PFN_TXQUEUE_CANCEL;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_TXQUEUE\_CONFIG**](net-txqueue-config.md) and then calling [**NetTxQueueCreate**](nettxqueuecreate.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_TXQUEUE_CONFIG**](net-txqueue-config.md) and then calling [**NetTxQueueCreate**](nettxqueuecreate.md).
 
 Parameters
 ----------
@@ -47,7 +47,7 @@ This callback function does not return a value.
 Remarks
 -------
 
-NetAdapterCx calls this event callback function when the queue is being deleted. *EVT\_TXQUEUE\_CANCEL* is the final **EVT\_TXQUEUE\_*Xxx*** callback that NetAdapterCx calls.
+NetAdapterCx calls this event callback function when the queue is being deleted. *EVT_TXQUEUE_CANCEL* is the final **EVT_TXQUEUE_*Xxx*** callback that NetAdapterCx calls.
 
 In this callback, the client typically completes pending packets and cleans up client specific context data associated with this NETTXQUEUE object.
 

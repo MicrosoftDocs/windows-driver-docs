@@ -31,12 +31,12 @@ Parameters
 ----------
 
 *RingBuffer* \[in\]  
-A pointer to a [**NET\_RING\_BUFFER**](net-ring-buffer.md).
+A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 Return value
 ------------
 
-Returns NULL if the value of NextIndex equals the value of EndIndex for the specified ring buffer. Otherwise, increments NextIndex and returns a pointer to the NET\_PACKET at the new NextIndex value of the ring buffer.
+Returns NULL if the value of NextIndex equals the value of EndIndex for the specified ring buffer. Otherwise, increments NextIndex and returns a pointer to the NET_PACKET at the new NextIndex value of the ring buffer.
 
 Requirements
 ------------

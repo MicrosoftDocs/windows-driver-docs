@@ -36,7 +36,7 @@ Parameters
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *ConfigurationAttributes* \[in, optional\]  
-A pointer to a [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new configuration object. This parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
+A pointer to a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new configuration object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 *Configuration* \[out\]  
 A pointer to a location that receives a handle to the new adapter configuration object.
@@ -44,14 +44,14 @@ A pointer to a location that receives a handle to the new adapter configuration 
 Return value
 ------------
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Remarks
 -------
 
 The client is responsible for closing an opened configuration by calling [**NetConfigurationClose**](netconfigurationclose.md).
 
-If the client provides a [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400), it specifies **NULL** for **ParentObject**. The adapter configuration object is automatically parented to the adapter object.
+If the client provides a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400), it specifies **NULL** for **ParentObject**. The adapter configuration object is automatically parented to the adapter object.
 
 Requirements
 ------------

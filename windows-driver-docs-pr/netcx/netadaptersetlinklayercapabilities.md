@@ -34,7 +34,7 @@ Parameters
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *LinkCapabilities* \[in\]  
-A pointer to an allocated and initialized [**NET\_ADAPTER\_LINK\_LAYER\_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure.
+A pointer to an allocated and initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure.
 
 Return value
 ------------
@@ -44,9 +44,9 @@ This method does not return a value.
 Remarks
 -------
 
-The client driver calls this method from its [*EVT\_NET\_ADAPTER\_SET\_CAPABILITIES*](evt-net-adapter-set-capabilities.md) event callback routine.
+The client driver calls this method from its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) event callback routine.
 
-This method along with a few other set capability methods (see below) is the replacement for the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923) union that a (non-WDF) client of Ndis.sys sets by calling [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672).
+This method along with a few other set capability methods (see below) is the replacement for the [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923) union that a (non-WDF) client of Ndis.sys sets by calling [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672).
 
 Requirements
 ------------

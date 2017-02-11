@@ -37,10 +37,10 @@ Parameters
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
 *ValueName* \[in\]  
-A pointer to a **UNICODE\_STRING** structure that contains a name for string value.
+A pointer to a **UNICODE_STRING** structure that contains a name for string value.
 
 *StringAttributes* \[in, optional\]  
-A pointer to a [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new WDFSTRING object. This parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
+A pointer to a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new WDFSTRING object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 *WdfString* \[out\]  
 A handle to a framework string object. NetAdapterCx will assign the registry value's string data to this object.
@@ -48,13 +48,13 @@ A handle to a framework string object. NetAdapterCx will assign the registry val
 Return value
 ------------
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Remarks
 -------
 The client driver obtains a handle to a NETCONFIGURATION object by calling  [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md).
 
-By default, the framework string object is parented to the collection object. The client driver can change this by setting the **ParentObject** member of the [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure.
+By default, the framework string object is parented to the collection object. The client driver can change this by setting the **ParentObject** member of the [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure.
 
 Requirements
 ------------

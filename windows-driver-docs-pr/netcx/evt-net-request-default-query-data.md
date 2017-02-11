@@ -10,7 +10,7 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_NET\_REQUEST\_DEFAULT\_QUERY\_DATA callback function
+# EVT_NET_REQUEST_DEFAULT_QUERY_DATA callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -35,7 +35,7 @@ void EvtNetRequestDefaultQueryData(
 typedef EVT_NET_REQUEST_DEFAULT_QUERY_DATA PFN_NET_REQUEST_DEFAULT_QUERY_DATA;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) and then calling [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) and then calling [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
 Parameters
 ----------
@@ -47,7 +47,7 @@ A handle to a net request queue object.
 A handle to a network request object.
 
 *Oid* \[in\]  
-The object identifier of the requested operation. The value is an OID\_ *XXX* code.
+The object identifier of the requested operation. The value is an OID_ *XXX* code.
 
 *OutputBuffer* \[out\]  
 A pointer to a caller-supplied buffer.

@@ -37,10 +37,10 @@ Parameters
 The WDFDEVICE object created by a prior call to [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926)
 
 *AdapterAttributes* \[in, optional\]  
-A pointer to a caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s ParentObject must be NULL. The parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
+A pointer to a caller-allocated [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s ParentObject must be NULL. The parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 *Configuration* \[in\]  
-A pointer to a caller-allocated [**NET\_ADAPTER\_CONFIG**](net-adapter-config.md) structure. For info, see [**NET\_ADAPTER\_CONFIG\_INIT**](net-adapter-config-init.md).
+A pointer to a caller-allocated [**NET_ADAPTER_CONFIG**](net-adapter-config.md) structure. For info, see [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md).
 
 *Adapter* \[out\]  
 A pointer to a location that receives a handle to the new NET adapter object.
@@ -48,7 +48,7 @@ A pointer to a location that receives a handle to the new NET adapter object.
 Return value
 ------------
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Remarks
 -------
@@ -96,7 +96,7 @@ Requirements
 ## See also
 
 
-[**NET\_ADAPTER\_CONFIG\_INIT**](net-adapter-config-init.md)
+[**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md)
 
  
 

@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_CONFIG\_INIT\_DEFAULT\_PARALLEL method
+# NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes the caller-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure to create a direct default request queue.
+Initializes the caller-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to create a direct default request queue.
 
 Syntax
 ------
@@ -31,7 +31,7 @@ Parameters
 ----------
 
 *NetRequestQueueConfig* \[out\]  
-A pointer to a driver-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
+A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
 *Adapter* \[in\]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).

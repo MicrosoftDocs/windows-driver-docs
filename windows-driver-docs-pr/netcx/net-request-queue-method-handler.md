@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_METHOD\_HANDLER structure
+# NET_REQUEST_QUEUE_METHOD_HANDLER structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call [NET\_REQUEST\_QUEUE\_METHOD\_HANDLER\_INIT](net-request-queue-method-handler-init.md) to initialize this structure.
+Call [NET_REQUEST_QUEUE_METHOD_HANDLER_INIT](net-request-queue-method-handler-init.md) to initialize this structure.
 
 Syntax
 ------
@@ -54,9 +54,9 @@ Minimum output length needed by the client for this request.
 
 Remarks
 -------
-Call [**NET\_REQUEST\_QUEUE\_METHOD\_HANDLER\_INIT**](net-request-queue-method-handler-init.md) to initialize this structure.
+Call [**NET_REQUEST_QUEUE_METHOD_HANDLER_INIT**](net-request-queue-method-handler-init.md) to initialize this structure.
 
-Call [**NET\_REQUEST\_QUEUE\_CONFIG\_ADD\_INITIALIZED\_METHOD\_HANDLER**](net-request-queue-config-add-initialized-method-handler.md) to add a caller-provided custom request handler to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
+Call [**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER**](net-request-queue-config-add-initialized-method-handler.md) to add a caller-provided custom request handler to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
 Requirements
 ------------

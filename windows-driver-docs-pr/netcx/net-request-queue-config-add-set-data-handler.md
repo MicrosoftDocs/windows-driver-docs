@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Adds a caller-provided handler for a specific OID set data request to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
+Adds a caller-provided handler for a specific OID set data request to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
 Syntax
 ------
@@ -34,10 +34,10 @@ NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER(
 Parameters
 ----------
 *NetRequestQueueConfig* \[in\]  
-A pointer to a driver-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
+A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
 
 *Oid* \[in\]  
-The object identifier of the requested operation. The value is an OID\_ *XXX* code.
+The object identifier of the requested operation. The value is an OID_ *XXX* code.
 
 *EvtRequestSetData* \[in\]
 Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_SET_DATA*](evt-net-request-set-data.md) event callback function.

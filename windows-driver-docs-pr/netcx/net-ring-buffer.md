@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_RING\_BUFFER structure
+# NET_RING_BUFFER structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call NET\_RING\_BUFFER\_INIT to initialize this structure.
+Call NET_RING_BUFFER_INIT to initialize this structure.
 
 Syntax
 ------

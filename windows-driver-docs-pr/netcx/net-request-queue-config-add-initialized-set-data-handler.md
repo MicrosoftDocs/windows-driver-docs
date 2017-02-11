@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_CONFIG\_ADD\_INITIALIZED\_SET\_DATA\_HANDLER method
+# NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_SET_DATA_HANDLER method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Adds a caller-provided custom request handler to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
+Adds a caller-provided custom request handler to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
 Syntax
 ------
@@ -31,7 +31,7 @@ Parameters
 ----------
 
 *NetRequestQueueConfig* \[in\]  
-A pointer to a driver-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
+A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
 
 *SetDataHandler* \[in\]  
 A pointer to a driver-allocated and initialized custom handler structure.

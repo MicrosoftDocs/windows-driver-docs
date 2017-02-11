@@ -10,7 +10,7 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_DATAPATH\_CAPABILITIES structure
+# NET_ADAPTER_DATAPATH_CAPABILITIES structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -43,9 +43,9 @@ Maximum number of receive queues supported by the adapter.
 Remarks
 -------
 
-The client driver passes an initialized **NET\_ADAPTER\_DATAPATH\_CAPABILITIES** structure as an input parameter value to [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md).
+The client driver passes an initialized **NET_ADAPTER_DATAPATH_CAPABILITIES** structure as an input parameter value to [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md).
 
-Call [**NET\_ADAPTER\_DATAPATH\_CAPABILITIES\_INIT**](net-adapter-datapath-capabilities-init.md) to initialize this structure.
+Call [**NET_ADAPTER_DATAPATH_CAPABILITIES_INIT**](net-adapter-datapath-capabilities-init.md) to initialize this structure.
 
 Requirements
 ------------

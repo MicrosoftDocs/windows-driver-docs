@@ -40,18 +40,18 @@ A handle to a DMA enabler object that the client driver obtained from a previous
 Return value
 ------------
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Remarks
 -------
 
-The client driver can choose to let NetAdapterCx manage the receive buffer on its behalf. To opt in, the client driver must first specify the size of its desired common buffer by setting the **AllocationSize** and **AlignmentRequirement** members of [**NET\_RXQUEUE\_CONFIG**](net-rxqueue-config.md).
+The client driver can choose to let NetAdapterCx manage the receive buffer on its behalf. To opt in, the client driver must first specify the size of its desired common buffer by setting the **AllocationSize** and **AlignmentRequirement** members of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md).
 
-Typically, from its [*EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function, the client driver calls [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983), and then passes the initialized WDFDMAENABLER to **NetRxQueueConfigureDmaAllocator**.
+Typically, from its [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function, the client driver calls [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983), and then passes the initialized WDFDMAENABLER to **NetRxQueueConfigureDmaAllocator**.
 
 The client driver does not need to delete the common buffer. NetAdapterCx handles this on the driver's behalf.
 
-NetAdapterCx allocates DMA common buffers and stores them in a [**NET\_RING\_BUFFER**](net-ring-buffer.md) structure. The client driver retrieves a pointer to the ring buffer by calling [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md) and [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
+NetAdapterCx allocates DMA common buffers and stores them in a [**NET_RING_BUFFER**](net-ring-buffer.md) structure. The client driver retrieves a pointer to the ring buffer by calling [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md) and [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
 
 Requirements
 ------------
@@ -92,7 +92,7 @@ Requirements
 ## See also
 
 
-[**NET\_RXQUEUE\_CONFIG**](net-rxqueue-config.md)
+[**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md)
 
  
 

@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_PHYSICAL\_ADDRESS\_INIT method
+# NET_ADAPTER_PHYSICAL_ADDRESS_INIT method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes the [**NET\_ADAPTER\_PHYSICAL\_ADDRESS**](net-adapter-physical-address.md) structure.
+Initializes the [**NET_ADAPTER_PHYSICAL_ADDRESS**](net-adapter-physical-address.md) structure.
 
 Syntax
 ------
@@ -33,7 +33,7 @@ Parameters
 ----------
 
 *PhysicalAddress* \[out\]  
-A pointer to the driver-allocated [**NET\_ADAPTER\_PHYSICAL\_ADDRESS**](net-adapter-physical-address.md) structure.
+A pointer to the driver-allocated [**NET_ADAPTER_PHYSICAL_ADDRESS**](net-adapter-physical-address.md) structure.
 
 *Length* \[in\]  
 The number of bytes to copy from each address buffer parameter into the corresponding fields of the structure pointed to by *PhysicalAddress*.  If this value is greater than NDIS_MAX_PHYS_ADDRESS_LENGTH, that value is used instead.

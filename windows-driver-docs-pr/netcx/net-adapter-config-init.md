@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_CONFIG\_INIT method
+# NET_ADAPTER_CONFIG_INIT method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes the [NET\_ADAPTER\_CONFIG](net-adapter-config.md) structure.
+Initializes the [NET_ADAPTER_CONFIG](net-adapter-config.md) structure.
 
 Syntax
 ------
@@ -33,16 +33,16 @@ Parameters
 ----------
 
 *AdapterConfig* \[out\]  
-A pointer to the driver-allocated [**NET\_ADAPTER\_CONFIG**](net-adapter-config.md) structure.
+A pointer to the driver-allocated [**NET_ADAPTER_CONFIG**](net-adapter-config.md) structure.
 
 *EvtAdapterSetCapabilities* \[in\]  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_SET\_CAPABILITIES*](evt-net-adapter-set-capabilities.md) event callback.
+A pointer to the client's implementation of the [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) event callback.
 
 *EvtAdapterCreateTxQueue* \[in\]  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_CREATE\_TXQUEUE*](evt-net-adapter-create-txqueue.md) event callback.
+A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) event callback.
 
 *EvtAdapterCreateRxQueue* \[in\]  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback.
+A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback.
 
 Return value
 ------------

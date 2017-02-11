@@ -2,7 +2,7 @@
 title: NET_PACKET structure
 ---
 
-# NET\_PACKET structure
+# NET_PACKET structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]

@@ -2,7 +2,7 @@
 title: NET_PACKET_FRAGMENT structure
 ---
 
-# NET\_PACKET\_FRAGMENT structure
+# NET_PACKET_FRAGMENT structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -43,13 +43,13 @@ TBD
 
 **Reserved**  
 
-**NextFragment\_Reserved**  
+**NextFragment_Reserved**  
 
 **Reserved**  
 
-**NextFragment\_Reserved**  
+**NextFragment_Reserved**  
 
-**PHYSICAL\_ADDRESS**  
+**PHYSICAL_ADDRESS**  
 
 **VirtualAddress**  
 

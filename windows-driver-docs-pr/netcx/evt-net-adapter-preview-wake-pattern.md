@@ -10,12 +10,12 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN callback function
+# EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The client driver's implementation of the *EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN* event callback function that accepts or rejects an incoming wake-on-LAN (WOL) pattern.
+The client driver's implementation of the *EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN* event callback function that accepts or rejects an incoming wake-on-LAN (WOL) pattern.
 
 Syntax
 ------
@@ -44,26 +44,26 @@ The NDIS adapter object that the client created in a prior call to [**NetAdapter
 A handle to the net wake settings object.
 
 *WakePatternType* \[in\]  
-An [**NDIS\_PM\_WOL\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) enumeration value that specifies the type of the WOL packet.
+An [**NDIS_PM_WOL_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) enumeration value that specifies the type of the WOL packet.
 
 *PatternToBeAdded* \[in\]  
-A pointer to a structure of type [**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) that specifies the wake-on-LAN (WOL) pattern to accept or reject.
+A pointer to a structure of type [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) that specifies the wake-on-LAN (WOL) pattern to accept or reject.
 
 Return value
 ------------
 
-To accept the pattern, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE.
+To accept the pattern, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE.
 
-To reject the pattern, return STATUS\_NDIS\_PM\_WOL\_PATTERN\_LIST\_FULL.
+To reject the pattern, return STATUS_NDIS_PM_WOL_PATTERN_LIST_FULL.
 
 Remarks
 -------
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_ADAPTER\_POWER\_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
 
 In this callback, the driver typically iterates through the *ExistingPowerSettings* to determine whether to accept or reject *PatternToBeAdded*.
 
-The client driver can use the pointer to examine the [**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure, but should not retain it. NetAdapterCx can release the wake pattern structure without notification to the driver.
+The client driver can use the pointer to examine the [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure, but should not retain it. NetAdapterCx can release the wake pattern structure without notification to the driver.
 
 In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
 
@@ -102,7 +102,7 @@ Requirements
 ## See also
 
 
-[*EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md)
+[*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md)
 
 [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md)
 

@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The client driver's implementation of the *EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE* event callback function that sets up a receive queue.
+The client driver's implementation of the *EVT_NET_ADAPTER_CREATE_RXQUEUE* event callback function that sets up a receive queue.
 
 Syntax
 ------
@@ -39,19 +39,19 @@ Parameters
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *RxQueueInit* \[in, out\]  
-A pointer to a NetAdapterCx-allocated **NETRXQUEUE\_INIT** structure. For more information, see the Remarks section.
+A pointer to a NetAdapterCx-allocated **NETRXQUEUE_INIT** structure. For more information, see the Remarks section.
 
 Return value
 ------------
 
-If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 Remarks
 -------
 
-To register an *EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE* callback function, the client driver must call [**NetAdapterCreate**](netadaptercreate.md).
+To register an *EVT_NET_ADAPTER_CREATE_RXQUEUE* callback function, the client driver must call [**NetAdapterCreate**](netadaptercreate.md).
 
-The **NETRXQUEUE\_INIT** structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951).
+The **NETRXQUEUE_INIT** structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to [WDFDEVICE_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951).
 
 In this callback, the client driver typically calls [**NetRxQueueInitGetQueueId**](netrxqueueinitgetqueueid.md) to retrieve the identifier of the receive queue to set up.
 

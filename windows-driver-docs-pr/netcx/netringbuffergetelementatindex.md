@@ -32,7 +32,7 @@ Parameters
 ----------
 
 *RingBuffer* \[in\]  
-A pointer to a [**NET\_RING\_BUFFER**](net-ring-buffer.md).
+A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 *Index* \[in\]  
 The element index, within the range \[0, RingBuffer-&gt;NumberOfElements).

@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER\_INIT method
+# NET_REQUEST_QUEUE_QUERY_DATA_HANDLER_INIT method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes the [NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER](net-request-queue-query-data-handler.md) structure.
+Initializes the [NET_REQUEST_QUEUE_QUERY_DATA_HANDLER](net-request-queue-query-data-handler.md) structure.
 
 Syntax
 ------
@@ -34,10 +34,10 @@ Parameters
 ----------
 
 *QueryDataHandler* \[out\]  
-A pointer to the driver-allocated NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER structure.
+A pointer to the driver-allocated NET_REQUEST_QUEUE_QUERY_DATA_HANDLER structure.
 
 *Oid* \[in\]  
-The NDIS\_OID identifier for the request.
+The NDIS_OID identifier for the request.
 
 *EvtRequestQueryData* \[in\]  
 Pointer to the custom query request handler.

@@ -10,11 +10,11 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD callback function
+# EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD callback function
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The client driver's implementation of the *EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD* event callback function that accepts or rejects an incoming protocol offload.
+The client driver's implementation of the *EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD* event callback function that accepts or rejects an incoming protocol offload.
 
 Syntax
 ------
@@ -43,26 +43,26 @@ The NDIS adapter object that the client created in a prior call to [**NetAdapter
 A handle to the net wake settings object.
 
 *ProtocolOffloadType* \[in\]  
-An [**NDIS\_PM\_PROTOCOL\_OFFLOAD\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff566765) enumeration value that specifies the type of protocol offload.
+An [**NDIS_PM_PROTOCOL_OFFLOAD_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff566765) enumeration value that specifies the type of protocol offload.
 
 *ProtocolOffloadToBeAdded* \[in\]  
-A pointer to a structure of type [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) that specifies the protocol offload to accept or reject.
+A pointer to a structure of type [**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) that specifies the protocol offload to accept or reject.
 
 Return value
 ------------
 
-To accept the pattern, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE.
+To accept the pattern, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE.
 
-To reject the pattern, return STATUS\_NDIS\_PM\_PROTOCOL\_OFFLOAD\_LIST\_FULL.
+To reject the pattern, return STATUS_NDIS_PM_PROTOCOL_OFFLOAD_LIST_FULL.
 
 Remarks
 -------
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_ADAPTER\_POWER\_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
 
 In this callback, the driver typically iterates through the *ExistingPowerSettings* to determine whether to accept or reject *ProtocolOffloadToBeAdded*.
 
-The client driver can use the pointer to examine the [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) structure, but should not retain it. NetAdapterCx can release the protocol offload structure without notification to the driver.
+The client driver can use the pointer to examine the [**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) structure, but should not retain it. NetAdapterCx can release the protocol offload structure without notification to the driver.
 
 In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
 
@@ -101,7 +101,7 @@ Requirements
 ## See also
 
 
-[*EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN*](evt-net-adapter-preview-wake-pattern.md)
+[*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md)
 
 [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md)
 

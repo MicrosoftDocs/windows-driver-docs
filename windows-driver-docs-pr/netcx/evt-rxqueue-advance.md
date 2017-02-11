@@ -10,7 +10,7 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_RXQUEUE\_ADVANCE callback function
+# EVT_RXQUEUE_ADVANCE callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -31,7 +31,7 @@ void EvtRxqueueAdvance(
 typedef EVT_RXQUEUE_ADVANCE PFN_RXQUEUE_ADVANCE;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_RXQUEUE\_CONFIG**](net-rxqueue-config.md) and then calling [**NetRxQueueCreate**](netrxqueuecreate.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md) and then calling [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 Parameters
 ----------
@@ -52,7 +52,7 @@ In this callback function, the client driver typically performs the following st
 1.  Call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) to retrieve the ring buffer associated with the *RxQueue* handle.
 2.  Iterate on the packets in the ring buffer.
     1.  Call [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md). (If **NetRingBufferGetNextPacket** returns NULL, there are no more new packets available.)
-    2.  Program that packet to receive. (Insert this NET\_PACKET in the driver's available to receive list).
+    2.  Program that packet to receive. (Insert this NET_PACKET in the driver's available to receive list).
     3.  Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md)
 
 3.  Return completed packets to the OS. The client driver can track asynchronous completion of individual packets using a flag on the packet. For packets that have been completed (have new receive data), advance the **BeginIndex** value of the ring buffer.

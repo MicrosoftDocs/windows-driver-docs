@@ -35,7 +35,7 @@ Parameters
 A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
 *NdisProtocolOffload* \[in\]  
-A pointer to a [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) structure obtained by calling [**NetPowerSettingsGetProtocolOffload**](netpowersettingsgetprotocoloffload.md).
+A pointer to a [**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) structure obtained by calling [**NetPowerSettingsGetProtocolOffload**](netpowersettingsgetprotocoloffload.md).
 
 Return value
 ------------
@@ -45,7 +45,7 @@ Returns **TRUE** if the protocol offload is enabled, and **FALSE** otherwise.
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsIsProtocolOffloadEnabled** during a power transition, typically from its [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) callback function.
+The client driver calls **NetPowerSettingsIsProtocolOffloadEnabled** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) callback function.
 
 Requirements
 ------------
@@ -86,7 +86,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_PM\_PROTOCOL\_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760)
+[**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760)
 
  
 

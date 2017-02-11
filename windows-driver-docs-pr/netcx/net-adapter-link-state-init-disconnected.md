@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED method
+# NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes a [**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md) structure for an adapter that is disconnected from the network.
+Initializes a [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure for an adapter that is disconnected from the network.
 
 Syntax
 ------
@@ -30,7 +30,7 @@ Parameters
 ----------
 
 *LinkState* \[out\]  
-A pointer to a driver-allocated [**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md) structure.
+A pointer to a driver-allocated [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure.
 
 Return value
 ------------
@@ -40,9 +40,9 @@ This method does not return a value.
 Remarks
 -------
 
-Call [**NET\_ADAPTER\_LINK\_STATE\_INIT**](net-adapter-link-state-init.md) or **NET\_ADAPTER\_LINK\_STATE\_INIT\_DISCONNECTED** to initialize a [**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md) structure.
+Call [**NET_ADAPTER_LINK_STATE_INIT**](net-adapter-link-state-init.md) or **NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED** to initialize a [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure.
 
-An initialized **NET\_ADAPTER\_LINK\_STATE** structure is an input parameter value to [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md).
+An initialized **NET_ADAPTER_LINK_STATE** structure is an input parameter value to [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md).
 
 Requirements
 ------------
@@ -75,11 +75,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
+[**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
 
-[**NET\_ADAPTER\_LINK\_STATE\_INIT**](net-adapter-link-state-init.md)
+[**NET_ADAPTER_LINK_STATE_INIT**](net-adapter-link-state-init.md)
 
-[**NET\_ADAPTER\_LINK\_STATE**](net-adapter-link-state.md)
+[**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md)
 
 [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md)
 

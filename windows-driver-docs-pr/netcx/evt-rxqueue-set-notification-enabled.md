@@ -10,7 +10,7 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_RXQUEUE\_SET\_NOTIFICATION\_ENABLED callback function
+# EVT_RXQUEUE_SET_NOTIFICATION_ENABLED callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -32,7 +32,7 @@ NTSTATUS EvtRxqueueSetNotificationEnabled(
 typedef EVT_RXQUEUE_SET_NOTIFICATION_ENABLED PFN_RXQUEUE_SET_NOTIFICATION_ENABLED;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_RXQUEUE\_CONFIG**](net-rxqueue-config.md) and then calling [**NetRxQueueCreate**](netrxqueuecreate.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md) and then calling [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 Parameters
 ----------
@@ -41,17 +41,17 @@ Parameters
 A handle to a net receive queue object.
 
 *NotificationEnabled* \[in\]  
-A Boolean value which, if TRUE, indicates that the driver's EVT\_RXQUEUE\_ADVANCE callback will not be called until either a higher level application finishes processing previously indicated data, or the driver calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md). See Remarks for more info.
+A Boolean value which, if TRUE, indicates that the driver's EVT_RXQUEUE_ADVANCE callback will not be called until either a higher level application finishes processing previously indicated data, or the driver calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md). See Remarks for more info.
 
 Return value
 ------------
 
-If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 Remarks
 -------
 
-If *NotificationEnabled* is TRUE, NetAdapterCx waits to call [*EVT\_RXQUEUE\_ADVANCE*](evt-rxqueue-advance.md) until after the client driver has called [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md).
+If *NotificationEnabled* is TRUE, NetAdapterCx waits to call [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) until after the client driver has called [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md).
 
 In this callback, a client driver for a PCI device typically enables the hardware’s receive interrupt. Then from its interrupt handler, the client driver calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md).
 
@@ -123,7 +123,7 @@ Requirements
 ## See also
 
 
-[*EVT\_RXQUEUE\_ADVANCE*](evt-rxqueue-advance.md)
+[*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md)
 
 [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md)
 

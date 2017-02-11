@@ -36,12 +36,12 @@ A handle to the NETPOWERSETTINGS object associated with the net adapter. To retr
 Return value
 ------------
 
-A ULONG value that contains a bitwise **OR** of flags that correspond to capabilities that the client driver reported in the **SupportedWoLPacketPatterns** member of the [**NET\_ADAPTER\_POWER\_CAPABILITIES**](net-adapter-power-capabilities.md) structure. NDIS uses these flags to enable the wake-on-LAN (WOL) patterns that a network adapter uses to wake the local computer from a low power state. For more information about WOL patterns, see [**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768).
+A ULONG value that contains a bitwise **OR** of flags that correspond to capabilities that the client driver reported in the **SupportedWoLPacketPatterns** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. NDIS uses these flags to enable the wake-on-LAN (WOL) patterns that a network adapter uses to wake the local computer from a low power state. For more information about WOL patterns, see [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768).
 
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsGetEnabledWakePatterns** during a power transition, typically from its [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.
+The client driver calls **NetPowerSettingsGetEnabledWakePatterns** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.
 
 Requirements
 ------------
@@ -82,11 +82,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_PM\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748)
+[**NDIS_PM_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748)
 
-[**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759)
+[**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759)
 
-[**NDIS\_PM\_WOL\_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768)
+[**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768)
 
  
 

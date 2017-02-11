@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_PHYSICAL\_ADDRESS structure
+# NET_ADAPTER_PHYSICAL_ADDRESS structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call [NET\_ADAPTER\_PHYSICAL\_ADDRESS\_INIT](net-adapter-physical-address-init.md) to initialize this structure.
+Call [NET_ADAPTER_PHYSICAL_ADDRESS_INIT](net-adapter-physical-address-init.md) to initialize this structure.
 
 Syntax
 ------

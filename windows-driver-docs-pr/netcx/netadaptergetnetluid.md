@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves the NET\_LUID that is assigned to a net adapter.
+Retrieves the NET_LUID that is assigned to a net adapter.
 
 Syntax
 ------
@@ -35,7 +35,7 @@ The NDIS adapter object that the client created in a prior call to [**NetAdapter
 Return value
 ------------
 
-Returns the NET\_LUID for the specified net adapter object.
+Returns the NET_LUID for the specified net adapter object.
 
 Requirements
 ------------
@@ -72,7 +72,7 @@ Requirements
 ## See also
 
 
-[**NET\_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff568747)
+[**NET_LUID**](https://msdn.microsoft.com/library/windows/hardware/ff568747)
 
  
 

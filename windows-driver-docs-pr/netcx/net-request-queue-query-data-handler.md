@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER structure
+# NET_REQUEST_QUEUE_QUERY_DATA_HANDLER structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call [NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER\_INIT](net-request-queue-query-data-handler-init.md) to initialize this structure.
+Call [NET_REQUEST_QUEUE_QUERY_DATA_HANDLER_INIT](net-request-queue-query-data-handler-init.md) to initialize this structure.
 
 Syntax
 ------
@@ -41,7 +41,7 @@ Members
 **Oid**  
 
 **EvtRequestQueryData**  
-Pointer to the client driver's implementation of a [*EVT\_NET\_REQUEST\_QUERY\_DATA*](evt-net-request-query-data.md) event callback function.
+Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function.
 
 **MinimumInputLength**  
 

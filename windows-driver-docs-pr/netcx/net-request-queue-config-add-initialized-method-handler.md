@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_CONFIG\_ADD\_INITIALIZED\_METHOD\_HANDLER method
+# NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Adds a pre-initialized custom request handler structure to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
+Adds a pre-initialized custom request handler structure to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
 Syntax
 ------
@@ -31,10 +31,10 @@ Parameters
 ----------
 
 *NetRequestQueueConfig* \[in\]  
-A pointer to a driver-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
+A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
 
 *MethodHandler* \[in\]  
-A pointer to a driver-allocated and initialized [**NET\_REQUEST\_QUEUE\_METHOD\_HANDLER**](net-request-queue-method-handler.md) structure.
+A pointer to a driver-allocated and initialized [**NET_REQUEST_QUEUE_METHOD_HANDLER**](net-request-queue-method-handler.md) structure.
 
 Return value
 ------------

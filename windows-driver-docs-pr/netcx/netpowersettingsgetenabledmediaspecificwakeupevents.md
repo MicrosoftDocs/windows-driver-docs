@@ -36,14 +36,14 @@ A handle to the NETPOWERSETTINGS object associated with the net adapter. To retr
 Return value
 ------------
 
-A ULONG value that contains a bitwise **OR** of flags that correspond to events that the client driver reported in the **SupportedMediaSpecificWakeUpEvents** member of the [**NET\_ADAPTER\_POWER\_CAPABILITIES**](net-adapter-power-capabilities.md) structure. The flags represent the media-specific wake-up events that the driver must enable in the hardware to arm the device for wake.
+A ULONG value that contains a bitwise **OR** of flags that correspond to events that the client driver reported in the **SupportedMediaSpecificWakeUpEvents** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. The flags represent the media-specific wake-up events that the driver must enable in the hardware to arm the device for wake.
 
-For more information, see the **MediaSpecificWakeUpEvents** member of [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).
+For more information, see the **MediaSpecificWakeUpEvents** member of [**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).
 
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents** during a power transition, typically from its [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.
+The client driver calls **NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.
 
 Requirements
 ------------
@@ -84,7 +84,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759)
+[**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759)
 
  
 

@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_METHOD\_HANDLER\_INIT method
+# NET_REQUEST_QUEUE_METHOD_HANDLER_INIT method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes the [NET\_REQUEST\_QUEUE\_METHOD\_HANDLER](net-request-queue-method-handler.md) structure.
+Initializes the [NET_REQUEST_QUEUE_METHOD_HANDLER](net-request-queue-method-handler.md) structure.
 
 Syntax
 ------
@@ -35,10 +35,10 @@ Parameters
 ----------
 
 *MethodHandler* \[out\]  
-A pointer to the driver-allocated NET\_REQUEST\_QUEUE\_METHOD\_HANDLER structure.
+A pointer to the driver-allocated NET_REQUEST_QUEUE_METHOD_HANDLER structure.
 
 *Oid* \[in\]  
-The NDIS\_OID identifier for the request.
+The NDIS_OID identifier for the request.
 
 *EvtRequestMethod* \[in\]  
 Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_METHOD*](evt-net-request-method.md) event callback function.

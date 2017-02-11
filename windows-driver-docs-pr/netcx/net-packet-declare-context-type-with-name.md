@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_PACKET\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME macro
+# NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME macro
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The NET\_PACKET\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME macro creates an accessor method with a specified name for a client driver's object-specific context space.
+The NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME macro creates an accessor method with a specified name for a client driver's object-specific context space.
 
 Syntax
 ------
@@ -30,10 +30,10 @@ void NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME(
 Parameters
 ----------
 
-*\_contexttype*   
+*_contexttype*   
 The structure type name of a driver-defined structure that describes the contents of an object's context space.
 
-*\_castingfunction*   
+*_castingfunction*   
 A C-language routine name. The macro uses this name as the name for the accessor method that it creates for the object's context space.
 
 Return value
@@ -44,7 +44,7 @@ This macro does not return a value.
 Remarks
 -------
 
-You can use NET\_PACKET\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME to define one context per packet.
+You can use NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME to define one context per packet.
 
 Requirements
 ------------
@@ -79,7 +79,7 @@ Requirements
 
 [**NetPacketGetTypedContext**](netpacketgettypedcontext.md)
 
-[**WDF\_DECLARE\_CONTEXT\_TYPE\_WITH\_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff551252)
+[**WDF_DECLARE_CONTEXT_TYPE_WITH_NAME**](https://msdn.microsoft.com/library/windows/hardware/ff551252)
 
  
 

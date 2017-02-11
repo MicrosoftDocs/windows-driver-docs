@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_TXQUEUE\_CONFIG\_INIT method
+# NET_TXQUEUE_CONFIG_INIT method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes the [NET\_TXQUEUE\_CONFIG](net-txqueue-config.md) structure.
+Initializes the [NET_TXQUEUE_CONFIG](net-txqueue-config.md) structure.
 
 Syntax
 ------
@@ -34,16 +34,16 @@ Parameters
 ----------
 
 *NetTxQueueConfig* \[out\]  
-A pointer to the driver-allocated [**NET\_TXQUEUE\_CONFIG**](net-txqueue-config.md) structure.
+A pointer to the driver-allocated [**NET_TXQUEUE_CONFIG**](net-txqueue-config.md) structure.
 
 *EvtTxQueueAdvance* \[in\]  
-A pointer to the driver's [*EVT\_TXQUEUE\_ADVANCE*](evt-txqueue-advance.md) callback function.
+A pointer to the driver's [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback function.
 
 *EvtTxQueueSetNotificationEnabled* \[in\]  
-A pointer to the driver's [*EVT\_TXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-txqueue-set-notification-enabled.md) callback function.
+A pointer to the driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) callback function.
 
 *EvtTxQueueCancel* \[in\]  
-A pointer to the driver's [*EVT\_TXQUEUE\_CANCEL*](evt-txqueue-cancel.md) callback function.
+A pointer to the driver's [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md) callback function.
 
 Return value
 ------------

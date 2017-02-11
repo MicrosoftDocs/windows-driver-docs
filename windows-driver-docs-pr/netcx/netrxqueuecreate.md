@@ -34,13 +34,13 @@ Parameters
 ----------
 
 *NetRxQueueInit* \[in, out\]  
-A pointer to the **NETRXQUEUE\_INIT** structure that the client driver received in [*EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE*](evt-net-adapter-create-rxqueue.md).
+A pointer to the **NETRXQUEUE_INIT** structure that the client driver received in [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md).
 
 *RxQueueAttributes* \[in\]  
-A pointer to caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s **ParentObject** must be NULL. The parameter is optional and can be WDF\_NO\_OBJECT\_ATTRIBUTES.
+A pointer to caller-allocated [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s **ParentObject** must be NULL. The parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 *Configuration* \[in\]  
-A pointer to a caller-allocated [**NET\_RXQUEUE\_CONFIG**](net-rxqueue-config.md) structure.
+A pointer to a caller-allocated [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md) structure.
 
 *RxQueue* \[out\]  
 A pointer to a location that receives a handle to the new net receive queue object.
@@ -48,12 +48,12 @@ A pointer to a location that receives a handle to the new net receive queue obje
 Return value
 ------------
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Remarks
 -------
 
-The client typically calls **NetRxQueueCreate** from within its [*EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function. For info on assigning context space to the new object, see [Framework Object Context Space](https://msdn.microsoft.com/windows/hardware/drivers/wdf/framework-object-context-space).
+The client typically calls **NetRxQueueCreate** from within its [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function. For info on assigning context space to the new object, see [Framework Object Context Space](https://msdn.microsoft.com/windows/hardware/drivers/wdf/framework-object-context-space).
 
 The NETRXQUEUE object is a standard WDF object. The framework manages its deletion, which occurs when the parent WDFDEVICE is deleted.
 

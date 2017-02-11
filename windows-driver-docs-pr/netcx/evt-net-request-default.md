@@ -10,7 +10,7 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_NET\_REQUEST\_DEFAULT callback function
+# EVT_NET_REQUEST_DEFAULT callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -37,7 +37,7 @@ void EvtNetRequestDefault(
 typedef EVT_NET_REQUEST_DEFAULT PFN_NET_REQUEST_DEFAULT;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) and then calling [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) and then calling [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
 Parameters
 ----------
@@ -49,10 +49,10 @@ A handle to the net request queue object that is associated with the I/O request
 A handle to a network request object.
 
 *RequestType* \[in\]  
-The request type as one of the [**NDIS\_REQUEST\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff567250) enumeration values.
+The request type as one of the [**NDIS_REQUEST_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff567250) enumeration values.
 
 *Oid* \[in\]  
-The object identifier of the requested operation. The value is an OID\_ *XXX* code.
+The object identifier of the requested operation. The value is an OID_ *XXX* code.
 
 *InputOutputBuffer* \[in, out\]  
 A pointer to a buffer into which the client driver or NetAdapterCx returns information for the specified request.
@@ -71,7 +71,7 @@ This callback function does not return a value.
 Remarks
 -------
 
-To register an *EVT\_NET\_REQUEST\_DEFAULT* callback function, the client driver calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+To register an *EVT_NET_REQUEST_DEFAULT* callback function, the client driver calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
 If NDIS_REQUEST_TYPE is not query, set, or method, NetAdapterCx calls the client driver's EVT_NET_REQUEST_DEFAULT handler with the request. If the client driver has not provided this callback, the request fails.
 
@@ -88,7 +88,7 @@ _IRQL: PASSIVE_LEVEL_
 
 [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416)
 
-[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
+[**NDIS_OID_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
 
  
 

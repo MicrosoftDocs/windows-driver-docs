@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_POWER\_FLAGS enumeration
+# NET_ADAPTER_POWER_FLAGS enumeration
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Defines flags that are used in a client driver's [**NET\_ADAPTER\_POWER\_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
+Defines flags that are used in a client driver's [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
 
 Syntax
 ------
@@ -62,7 +62,7 @@ Requirements
 ## See also
 
 
-[**NET\_ADAPTER\_POWER\_CAPABILITIES**](net-adapter-power-capabilities.md)
+[**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md)
 
  
 

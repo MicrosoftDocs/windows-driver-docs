@@ -32,10 +32,10 @@ Parameters
 ----------
 
 *NetRequestQueueConfig* \[in\]  
-A pointer to a caller-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
+A pointer to a caller-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
 *QueueAttributes* \[in, optional\]  
-An optional pointer to a caller-allocated [**WDF\_OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that specifies attributes for the net request queue object.
+An optional pointer to a caller-allocated [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that specifies attributes for the net request queue object.
 
 *Queue* \[out, optional\]  
 An optional pointer to a location that receives a handle to the new net request queue object.
@@ -43,7 +43,7 @@ An optional pointer to a location that receives a handle to the new net request 
 Return value
 ------------
 
-The method returns STATUS\_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
+The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
 Remarks
 -------
@@ -124,13 +124,13 @@ Requirements
 ## See also
 
 
-[**NET\_REQUEST\_QUEUE\_CONFIG\_ADD\_INITIALIZED\_METHOD\_HANDLER**](net-request-queue-config-add-initialized-method-handler.md)
+[**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER**](net-request-queue-config-add-initialized-method-handler.md)
 
-[**NET\_REQUEST\_QUEUE\_CONFIG\_ADD\_INITIALIZED\_QUERY\_DATA\_HANDLER**](net-request-queue-config-add-initialized-query-data-handler.md)
+[**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_QUERY_DATA_HANDLER**](net-request-queue-config-add-initialized-query-data-handler.md)
 
-[**NET\_REQUEST\_QUEUE\_CONFIG\_INIT\_DEFAULT\_PARALLEL**](net-request-queue-config-init-default-parallel.md)
+[**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL**](net-request-queue-config-init-default-parallel.md)
 
-[**NET\_REQUEST\_QUEUE\_CONFIG\_INIT\_DEFAULT\_SEQUENTIAL**](net-request-queue-config-init-default-sequential.md)
+[**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL**](net-request-queue-config-init-default-sequential.md)
 
  
 

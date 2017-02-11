@@ -43,7 +43,7 @@ This method does not return a value.
 Remarks
 -------
 
-Typically, when it marks a packet as completed, the client driver sets the **Completed** flag in the starting fragment of the packet. Then, in its [*EVT\_RXQUEUE\_ADVANCE*](evt-rxqueue-advance.md) or [*EVT\_TXQUEUE\_ADVANCE*](evt-txqueue-advance.md) callback, the client calls **NetRingBufferReturnCompletedPacketsThroughIndex** to transfer ownership of completed packets in the ring buffer back to NetAdapterCx.
+Typically, when it marks a packet as completed, the client driver sets the **Completed** flag in the starting fragment of the packet. Then, in its [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) or [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback, the client calls **NetRingBufferReturnCompletedPacketsThroughIndex** to transfer ownership of completed packets in the ring buffer back to NetAdapterCx.
 
 Requirements
 ------------

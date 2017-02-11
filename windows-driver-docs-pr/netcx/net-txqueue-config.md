@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_TXQUEUE\_CONFIG structure
+# NET_TXQUEUE_CONFIG structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call [NET\_TXQUEUE\_CONFIG\_INIT](net-txqueue-config-init.md) to initialize this structure.
+Call [NET_TXQUEUE_CONFIG_INIT](net-txqueue-config-init.md) to initialize this structure.
 
 Syntax
 ------
@@ -36,13 +36,13 @@ Members
 **Size**  
 
 **EvtTxQueueCancel**  
-A pointer to the client driver's [*EVT\_TXQUEUE\_CANCEL*](evt-txqueue-cancel.md) event callback function. This callback function is required.
+A pointer to the client driver's [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md) event callback function. This callback function is required.
 
 **EvtTxQueueSetNotificationEnabled**  
-A pointer to the client driver's [*EVT\_TXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback function. This callback function is required.
+A pointer to the client driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback function. This callback function is required.
 
 **EvtTxQueueAdvance**  
-A pointer to the client driver's [*EVT\_TXQUEUE\_ADVANCE*](evt-txqueue-advance.md) event callback function. This callback function is required.
+A pointer to the client driver's [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) event callback function. This callback function is required.
 
 **ContextTypeInfo**  
 

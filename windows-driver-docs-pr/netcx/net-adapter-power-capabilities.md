@@ -2,7 +2,7 @@
 title: NET_ADAPTER_POWER_CAPABILITIES structure
 ---
 
-# NET\_ADAPTER\_POWER\_CAPABILITIES structure
+# NET_ADAPTER_POWER_CAPABILITIES structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -39,10 +39,10 @@ Members
 Size of this structure in bytes.
 
 **Flags**  
-Bitwise OR of [**NET\_ADAPTER\_POWER\_FLAGS**](net-adapter-power-flags.md)-typed flags.
+Bitwise OR of [**NET_ADAPTER_POWER_FLAGS**](net-adapter-power-flags.md)-typed flags.
 
 **SupportedWakePatterns**  
-Bitwise OR of [**NET\_ADAPTER\_WAKE\_PATTERN\_FLAGS**](net-adapter-wake-pattern-flags.md)-typed flags that specify the wake-on-LAN (WOL) patterns that a network adapter supports.
+Bitwise OR of [**NET_ADAPTER_WAKE_PATTERN_FLAGS**](net-adapter-wake-pattern-flags.md)-typed flags that specify the wake-on-LAN (WOL) patterns that a network adapter supports.
 
 **NumTotalWakePatterns**  
 The total number of wake patterns that a network adapter supports. This is the sum of the number of supported wake protocol patterns and the number of supported wake bitmap patterns.
@@ -57,7 +57,7 @@ The number of bytes in a packet that can be examined, starting at the beginning 
 The number of bytes of a wake packet that the client can save to a buffer and indicate up the driver stack. This value must be less than or equal to the size, in bytes, of the maximum transmission unit (MTU) for the network media.
 
 **SupportedProtocolOffloads**  
-Bitwise OR of [**NET\_ADAPTER\_PROTOCOL\_OFFLOADS\_FLAGS**](net-adapter-protocol-offloads-flags.md)-typed flags that specify the protocol offload features that a network adapter supports.
+Bitwise OR of [**NET_ADAPTER_PROTOCOL_OFFLOADS_FLAGS**](net-adapter-protocol-offloads-flags.md)-typed flags that specify the protocol offload features that a network adapter supports.
 
 **NumArpOffloadIPv4Addresses**  
 The number of IPv4 addresses that the adapter supports for ARP offload.
@@ -66,16 +66,16 @@ The number of IPv4 addresses that the adapter supports for ARP offload.
 The number of IPv6 NS offload requests that the adapter supports. This should be at least 2.
 
 **SupportedWakeUpEvents**  
-Bitwise OR of [**NET\_ADAPTER\_WAKEUP\_EVENTS\_FLAGS**](net-adapter-wakeup-events-flags.md)-typed flags that specify the media-independent wake-up events that a network adapter supports.
+Bitwise OR of [**NET_ADAPTER_WAKEUP_EVENTS_FLAGS**](net-adapter-wakeup-events-flags.md)-typed flags that specify the media-independent wake-up events that a network adapter supports.
 
 **SupportedMediaSpecificWakeUpEvents**  
-Bitwise OR of [**NET\_ADAPTER\_MEDIA\_SPECIFIC\_WAKEUP\_EVENTS\_FLAGS**](net-adapter-media-specific-wakeup-events-flags.md)-typed flags that specify the media-specific wake-up events that a network adapter supports.
+Bitwise OR of [**NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS**](net-adapter-media-specific-wakeup-events-flags.md)-typed flags that specify the media-specific wake-up events that a network adapter supports.
 
 **EvtAdapterPreviewWakePattern**  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_PREVIEW\_WAKE\_PATTERN*](evt-net-adapter-preview-wake-pattern.md) event callback.
+A pointer to the client's implementation of the [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) event callback.
 
 **EvtAdapterPreviewProtocolOffload**  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) event callback.
+A pointer to the client's implementation of the [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) event callback.
 
 **ManageS0IdlePowerReferences**  
 A [**WDF_TRI_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff552533)-typed enumerator that indicates whether NetAdapterCx should manage power references for scenarios such as modern standby (AoAC).  See more info in the **Remarks** section.  This member can have one of the following values:
@@ -87,9 +87,9 @@ A [**WDF_TRI_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff5525
 Remarks
 -------
 
-The client driver passes an initialized **NET\_ADAPTER\_POWER\_CAPABILITIES** structure as an input parameter value to [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
+The client driver passes an initialized **NET_ADAPTER_POWER_CAPABILITIES** structure as an input parameter value to [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
 
-Call [**NET\_ADAPTER\_POWER\_CAPABILITIES\_INIT**](net-adapter-power-capabilities-init.md) to initialize this structure.
+Call [**NET_ADAPTER_POWER_CAPABILITIES_INIT**](net-adapter-power-capabilities-init.md) to initialize this structure.
 
 The client driver configures its S0-Idle policy like any other WDF driver, by calling [**WdfDeviceAssignS0IdleSettings**](https://msdn.microsoft.com/library/windows/hardware/ff545903).
 

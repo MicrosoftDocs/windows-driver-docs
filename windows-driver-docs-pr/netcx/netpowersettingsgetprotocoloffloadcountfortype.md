@@ -35,7 +35,7 @@ Parameters
 A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
 *ProtocolOffloadType* \[in\]  
-An [**NDIS\_PM\_PROTOCOL\_OFFLOAD\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff566765) value that contains the type of protocol offload to count.
+An [**NDIS_PM_PROTOCOL_OFFLOAD_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff566765) value that contains the type of protocol offload to count.
 
 Return value
 ------------
@@ -45,7 +45,7 @@ Returns the total number of enabled and disabled protocol offloads in the NETPOW
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsGetProtocolOffloadCountForType** during a power transition, typically from its [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT\_WDF\_DEVICE\_ARM\_WAKE\_FROM\_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT\_NET\_ADAPTER\_PREVIEW\_PROTOCOL\_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) callback function.
+The client driver calls **NetPowerSettingsGetProtocolOffloadCountForType** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) callback function.
 
 To determine if a specific protocol offload is enabled, call [**NetPowerSettingsIsProtocolOffloadEnabled**](netpowersettingsisprotocoloffloadenabled.md).
 
@@ -88,7 +88,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_PM\_PROTOCOL\_OFFLOAD\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff566765)
+[**NDIS_PM_PROTOCOL_OFFLOAD_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff566765)
 
  
 

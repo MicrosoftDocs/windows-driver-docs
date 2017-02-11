@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_DRIVER\_GLOBALS structure
+# NET_DRIVER_GLOBALS structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call NET\_DRIVER\_GLOBALS\_INIT to initialize this structure.
+Call NET_DRIVER_GLOBALS_INIT to initialize this structure.
 
 Syntax
 ------

@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_DATAPATH\_CAPABILITIES\_INIT method
+# NET_ADAPTER_DATAPATH_CAPABILITIES_INIT method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes the [**NET\_ADAPTER\_DATAPATH\_CAPABILITIES**](net-adapter-datapath-capabilities.md) structure.
+Initializes the [**NET_ADAPTER_DATAPATH_CAPABILITIES**](net-adapter-datapath-capabilities.md) structure.
 
 Syntax
 ------
@@ -30,7 +30,7 @@ Parameters
 ----------
 
 *DataPathCapabilities* \[out\]  
-A pointer to the driver-allocated [**NET\_ADAPTER\_DATAPATH\_CAPABILITIES**](net-adapter-datapath-capabilities.md) structure.
+A pointer to the driver-allocated [**NET_ADAPTER_DATAPATH_CAPABILITIES**](net-adapter-datapath-capabilities.md) structure.
 
 Return value
 ------------

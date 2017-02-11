@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_CONFIG\_ADD\_INITIALIZED\_QUERY\_DATA\_HANDLER method
+# NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_QUERY_DATA_HANDLER method
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Adds a caller-provided query data handler to a [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure.
+Adds a caller-provided query data handler to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
 Syntax
 ------
@@ -31,10 +31,10 @@ Parameters
 ----------
 
 *NetRequestQueueConfig* \[in\]  
-A pointer to a driver-allocated [**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md) structure to which the query data handler is being added.
+A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the query data handler is being added.
 
 *QueryDataHandler* \[in\]  
-A pointer to a driver-allocated and initialized structure of type [**NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER**](net-request-queue-query-data-handler.md).
+A pointer to a driver-allocated and initialized structure of type [**NET_REQUEST_QUEUE_QUERY_DATA_HANDLER**](net-request-queue-query-data-handler.md).
 
 Return value
 ------------
@@ -77,9 +77,9 @@ Requirements
 ## See also
 
 
-[**NET\_REQUEST\_QUEUE\_CONFIG**](net-request-queue-config.md)
+[**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md)
 
-[**NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER**](net-request-queue-query-data-handler.md)
+[**NET_REQUEST_QUEUE_QUERY_DATA_HANDLER**](net-request-queue-query-data-handler.md)
 
  
 

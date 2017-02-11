@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_REQUEST\_QUEUE\_CONFIG structure
+# NET_REQUEST_QUEUE_CONFIG structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call [NET\_REQUEST\_QUEUE\_CONFIG\_INIT](net-request-queue-config-init.md) to initialize this structure.
+Call [NET_REQUEST_QUEUE_CONFIG_INIT](net-request-queue-config-init.md) to initialize this structure.
 
 Syntax
 ------
@@ -52,16 +52,16 @@ The NDIS adapter object that the client created in a prior call to [**NetAdapter
 A [NET_REQUEST_QUEUE_TYPE](net-request-queue-type.md) enumeration that specifies the type of queue.
 
 **EvtRequestDefaultSetData**  
-Pointer to the client driver's implementation of a [*EVT\_NET\_REQUEST\_DEFAULT\_SET\_DATA*](evt-net-request-default-set-data.md) event callback function.
+Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_DEFAULT_SET_DATA*](evt-net-request-default-set-data.md) event callback function.
 
 **EvtRequestDefaultQueryData**  
-Pointer to the client driver's implementation of a [*EVT\_NET\_REQUEST\_DEFAULT\_QUERY\_DATA*](evt-net-request-default-query-data.md) event callback function.
+Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_DEFAULT_QUERY_DATA*](evt-net-request-default-query-data.md) event callback function.
 
 **EvtRequestDefaultMethod**  
-Pointer to the client driver's implementation of a [*EVT\_NET\_REQUEST\_DEFAULT\_METHOD*](evt-net-request-default-method.md) event callback function.
+Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_DEFAULT_METHOD*](evt-net-request-default-method.md) event callback function.
 
 **EvtRequestDefault**  
-Pointer to the client driver's implementation of a [*EVT\_NET\_REQUEST\_DEFAULT*](evt-net-request-default.md) event callback function.
+Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md) event callback function.
 
 **AddHandlerError**  
 A bit field tracking any errors encountered during Add custom handler operation.
@@ -76,13 +76,13 @@ A ULONG that specifies the size of the QueryDataHandlers member.
 A ULONG that specifies the size of the MethodHandlers member.
 
 **SetDataHandlers**  
-Pointer to the first [**NET\_REQUEST\_QUEUE\_SET\_DATA\_HANDLER**](net-request-queue-set-data-handler.md) structure of the custom set handler list.
+Pointer to the first [**NET_REQUEST_QUEUE_SET_DATA_HANDLER**](net-request-queue-set-data-handler.md) structure of the custom set handler list.
 
 **QueryDataHandlers**  
-Pointer to a [**NET\_REQUEST\_QUEUE\_QUERY\_DATA\_HANDLER**](net-request-queue-query-data-handler.md) structure of the custom query handler list.
+Pointer to a [**NET_REQUEST_QUEUE_QUERY_DATA_HANDLER**](net-request-queue-query-data-handler.md) structure of the custom query handler list.
 
 **MethodHandlers**  
-Pointer to a [**NET\_REQUEST\_QUEUE\_METHOD\_HANDLER**](net-request-queue-method-handler.md) structure of the custom method handler list.
+Pointer to a [**NET_REQUEST_QUEUE_METHOD_HANDLER**](net-request-queue-method-handler.md) structure of the custom method handler list.
 
 Requirements
 ------------

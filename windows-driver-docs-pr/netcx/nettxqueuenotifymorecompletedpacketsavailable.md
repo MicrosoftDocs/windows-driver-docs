@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The client driver calls **NetTxQueueNotifyMoreCompletedPacketsAvailable** to resume queue operations after NetAdapterCx calls the client's [*EVT\_TXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine.
+The client driver calls **NetTxQueueNotifyMoreCompletedPacketsAvailable** to resume queue operations after NetAdapterCx calls the client's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine.
 
 Syntax
 ------
@@ -40,9 +40,9 @@ This method does not return a value.
 Remarks
 -------
 
-After NetAdapterCx calls a client driver's [*EVT\_TXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine, the client must call **NetTxQueueNotifyMoreCompletedPacketsAvailable** to resume queue operations. Typically, the client does this after it completes a pending NET\_PACKET in the transmit queue’s [**NET\_RING\_BUFFER**](net-ring-buffer.md).
+After NetAdapterCx calls a client driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine, the client must call **NetTxQueueNotifyMoreCompletedPacketsAvailable** to resume queue operations. Typically, the client does this after it completes a pending NET_PACKET in the transmit queue’s [**NET_RING_BUFFER**](net-ring-buffer.md).
 
-Then NetAdapterCx reclaims the NET\_PACKET previously used for transmit and calls the client’s [*EVT\_TXQUEUE\_ADVANCE*](evt-txqueue-advance.md) callback function.
+Then NetAdapterCx reclaims the NET_PACKET previously used for transmit and calls the client’s [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback function.
 
 Requirements
 ------------
@@ -79,9 +79,9 @@ Requirements
 ## See also
 
 
-[*EVT\_TXQUEUE\_ADVANCE*](evt-txqueue-advance.md)
+[*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md)
 
-[*EVT\_TXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-txqueue-set-notification-enabled.md)
+[*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md)
 
  
 

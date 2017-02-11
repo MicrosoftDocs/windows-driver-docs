@@ -10,7 +10,7 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_RXQUEUE\_CONFIG structure
+# NET_RXQUEUE_CONFIG structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
@@ -39,29 +39,29 @@ Members
 The size, in bytes, of this structure.
 
 **EvtRxQueueCancel**  
-A pointer to the client driver's [*EVT\_RXQUEUE\_CANCEL*](evt-rxqueue-cancel.md) event callback function. This callback function is required.
+A pointer to the client driver's [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md) event callback function. This callback function is required.
 
 **EvtRxQueueSetNotificationEnabled**  
-A pointer to the client driver's [*EVT\_RXQUEUE\_SET\_NOTIFICATION\_ENABLED*](evt-rxqueue-set-notification-enabled.md) event callback function. This callback function is required.
+A pointer to the client driver's [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) event callback function. This callback function is required.
 
 **EvtRxQueueAdvance**  
-A pointer to the client driver's [*EVT\_RXQUEUE\_ADVANCE*](evt-rxqueue-advance.md) event callback function. This callback function is required.
+A pointer to the client driver's [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) event callback function. This callback function is required.
 
 **ContextTypeInfo**  
-A pointer to a WDF\_OBJECT\_CONTEXT\_TYPE\_INFO structure.
+A pointer to a WDF_OBJECT_CONTEXT_TYPE_INFO structure.
 
 **AllocationSize**  
-Size of the DMA common buffer. If the driver provides a non-zero value, it must subsequently call [**NetRxQueueConfigureDmaAllocator**](netrxqueueconfiguredmaallocator.md). If this value is zero, the client must update the NET\_PACKET.Data.DmaLogicalAddress field manually to point to the memory it allocated.
+Size of the DMA common buffer. If the driver provides a non-zero value, it must subsequently call [**NetRxQueueConfigureDmaAllocator**](netrxqueueconfiguredmaallocator.md). If this value is zero, the client must update the NET_PACKET.Data.DmaLogicalAddress field manually to point to the memory it allocated.
 
 **AlignmentRequirement**  
-The alignment requirement for a data buffer. This value must be one less than the alignment boundary. For example, you can specify 15 for a 16-byte alignment boundary and 31 for a 32-byte alignment boundary. You can also use one of the FILE\_Xxxx\_ALIGNMENT constants that are defined in Wdm.h.
+The alignment requirement for a data buffer. This value must be one less than the alignment boundary. For example, you can specify 15 for a 16-byte alignment boundary and 31 for a 32-byte alignment boundary. You can also use one of the FILE_Xxxx_ALIGNMENT constants that are defined in Wdm.h.
 
 Remarks
 -------
 
-Call [**NET\_RXQUEUE\_CONFIG\_INIT**](net-rxqueue-config-init.md) to initialize this structure.
+Call [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) to initialize this structure.
 
-The **NET\_RXQUEUE\_CONFIG** structure is an input parameter to [**NetRxQueueCreate**](netrxqueuecreate.md). The client must use [**NET\_RXQUEUE\_CONFIG\_INIT**](net-rxqueue-config-init.md) to initialize this structure.
+The **NET_RXQUEUE_CONFIG** structure is an input parameter to [**NetRxQueueCreate**](netrxqueuecreate.md). The client must use [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) to initialize this structure.
 
 Requirements
 ------------

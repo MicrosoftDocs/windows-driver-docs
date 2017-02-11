@@ -10,12 +10,12 @@ api_type:
 - UserDefined
 ---
 
-# EVT\_NET\_ADAPTER\_SET\_CAPABILITIES callback function
+# EVT_NET_ADAPTER_SET_CAPABILITIES callback function
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The client driver's implementation of the *EVT\_NET\_ADAPTER\_SET\_CAPABILITIES* event callback function that sets the capabilities of the network adapter.
+The client driver's implementation of the *EVT_NET_ADAPTER_SET_CAPABILITIES* event callback function that sets the capabilities of the network adapter.
 
 Syntax
 ------
@@ -40,7 +40,7 @@ The NDIS adapter object that the client created in a prior call to [**NetAdapter
 Return value
 ------------
 
-If the operation is successful, the callback function must return STATUS\_SUCCESS, or another status value for which NT\_SUCCESS(status) equals TRUE.
+If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE.
 
 If this function returns an [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code, the device fails to initialize.
 
