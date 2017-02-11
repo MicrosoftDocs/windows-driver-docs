@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_CONFIG structure
+# NET_ADAPTER_CONFIG structure
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Describes the configuration options for a NetAdapterCx client driver. An initialized **NET\_ADAPTER\_CONFIG** structure is an input parameter to [**NetAdapterCreate**](netadaptercreate.md).
+Describes the configuration options for a NetAdapterCx client driver. An initialized **NET_ADAPTER_CONFIG** structure is an input parameter to [**NetAdapterCreate**](netadaptercreate.md).
 
 Syntax
 ------
@@ -36,19 +36,19 @@ Members
 -------
 
 **Size**  
-Size of the **NET\_ADAPTER\_CONFIG** structure.
+Size of the **NET_ADAPTER_CONFIG** structure.
 
 **Type**  
-A [**NET\_ADAPTER\_DRIVER\_TYPE**](net-adapter-driver-type.md)-typed value indicating the type of driver that is creating the NetAdapter object. Currently, the only supported value is **NET\_ADAPTER\_DRIVER\_TYPE\_MINIPORT**.
+A [**NET_ADAPTER_DRIVER_TYPE**](net-adapter-driver-type.md)-typed value indicating the type of driver that is creating the NetAdapter object. Currently, the only supported value is **NET_ADAPTER_DRIVER_TYPE_MINIPORT**.
 
 **EvtAdapterSetCapabilities**  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_SET\_CAPABILITIES*](evt-net-adapter-set-capabilities.md) event callback.
+A pointer to the client's implementation of the [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) event callback.
 
 **EvtAdapterCreateTxQueue**  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_CREATE\_TXQUEUE*](evt-net-adapter-create-txqueue.md) event callback.
+A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) event callback.
 
 **EvtAdapterCreateRxQueue**  
-A pointer to the client's implementation of the [*EVT\_NET\_ADAPTER\_CREATE\_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback.
+A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback.
 
 **NetRequestObjectAttributes**  
 Optional WDF object attributes associated with the NETREQUESTQUEUE object, or NULL.
@@ -59,7 +59,7 @@ Optional WDF object attributes associated with the NETPOWERSETTINGS object, or N
 Remarks
 -------
 
-Call [**NET\_ADAPTER\_CONFIG\_INIT**](net-adapter-config-init.md) to initialize this structure.
+Call [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md) to initialize this structure.
 
 Requirements
 ------------

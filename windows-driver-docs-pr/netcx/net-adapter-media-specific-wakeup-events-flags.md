@@ -68,6 +68,12 @@ If this flag is set, the MB network adapter can generate a wake-up event when th
 **NET_ADAPTER_WWAN_WAKE_ON_UICC_CHANGE**  
 If this flag is set, the MB network adapter can generate a wake-up event when the UICC (SIM) is inserted or removed. 
 
+Remarks
+-----
+The **NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS** enumeration is used to specify protocol offloads in the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
+
+The [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure is used as input to [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
+
 Requirements
 ------------
 

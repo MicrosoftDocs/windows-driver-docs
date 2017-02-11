@@ -12,8 +12,9 @@ api_type:
 
 # NET_ADAPTER_PAUSE_FUNCTIONS enumeration
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Specifies a client driver's support for the IEEE 802.3 pause frames.
 
 Syntax
 ------
@@ -32,14 +33,25 @@ Constants
 ---------
 
 **NetAdapterPauseFunctionsUnsupported**  
+Indicates that the adapter or link partner does not support pause frames.
 
 **NetAdapterPauseFunctionsSendOnly**  
+Indicates that the adapter and link partner only support sending pause frames from the adapter to the link partner.
 
 **NetAdapterPauseFunctionsReceiveOnly**  
+Indicates that the adapter and link partner only support sending pause frames from the link partner to the adapter.
 
 **NetAdapterPauseFunctionsSendAndReceive**  
+Indicates that the adapter and link partner support sending and receiving pause frames in both transint and receive directions.
 
 **NetAdapterPauseFunctionsUnknown**  
+Indicates that pause frame negotiation is in progress. The pause frame support that the link partner provides is unknown.
+
+Remarks
+---
+The **NET_ADAPTER_PAUSE_FUNCTIONS** enumeration is used to specify pause frame support in the [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure.
+
+An initialized [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure is an input to [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md).
 
 Requirements
 ------------

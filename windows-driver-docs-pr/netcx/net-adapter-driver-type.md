@@ -10,12 +10,12 @@ api_type:
 - HeaderDef
 ---
 
-# NET\_ADAPTER\_DRIVER\_TYPE enumeration
+# NET_ADAPTER_DRIVER_TYPE enumeration
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-The **NET\_ADAPTER\_DRIVER\_TYPE** enumeration identifies the type of network adapter driver.
+Identifies the type of network adapter driver.
 
 Syntax
 ------
@@ -30,14 +30,20 @@ typedef enum _NET_ADAPTER_DRIVER_TYPE {
 Constants
 ---------
 
-**NET\_ADAPTER\_DRIVER\_TYPE\_INVALID**  
+**NET_ADAPTER_DRIVER_TYPE_INVALID**  
+Not currently supported.
 
-**NET\_ADAPTER\_DRIVER\_TYPE\_MINIPORT**  
+**NET_ADAPTER_DRIVER_TYPE_MINIPORT**  
+In NetAdapterCx verion 1.0, this is the only supported value.
 
 Remarks
 -------
 
-The **NET\_ADAPTER\_DRIVER\_TYPE** enumeration is used as a parameter to [**NetAdapterDriverWdmGetHandle**](netadapterdriverwdmgethandle.md).
+The **NET_ADAPTER_DRIVER_TYPE** enumeration is used to specify adapter type in the [**NET_ADAPTER_CONFIG**](net-adapter-config.md) structure.
+
+An initialized **NET_ADAPTER_CONFIG** structure is an input parameter to [**NetAdapterCreate**](netadaptercreate.md).
+
+The **NET_ADAPTER_DRIVER_TYPE** enumeration is also used as input to [**NetAdapterDriverWdmGetHandle**](netadapterdriverwdmgethandle.md).
 
 Requirements
 ------------

@@ -89,7 +89,6 @@ Requirements
 
 ## See also
 
-
 [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
 
 [**NET\_ADAPTER\_LINK\_STATE\_INIT**](net-adapter-link-state-init.md)
