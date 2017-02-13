@@ -9,7 +9,7 @@ keywords: ["NFC", "near field communications", "proximity", "near field proximit
 # NFC class extension (CX) design guide
 
 
-This section describes the interface between the NFC class extension (CX) and the NFC client driver. The NFC CX driver implements all NFC device driver interfaces and standard NFC protocols and formats based on the *NFC Forum NFC Controller Interface (NCI) Technical Specification*. 
+This section describes the interface between the NFC class extension (CX) and the NFC client driver. The NFC CX driver implements all NFC device driver interfaces and standard NFC protocols and formats based on the *NFC Forum NFC Controller Interface (NCI) Technical Specification*.
 
 The NFC client driver is responsible for transport layer interfacing as well as support for any non-standard vendor-defined extensions for the optimized functioning of the NFC controller.
 
@@ -35,7 +35,7 @@ The following are the NFC Forum specifications implemented by the NFC CX driver:
 -   Logical Link Control Protocol, LLCP 1.1 Specification
 -   Simple NDEF Exchange Protocol, SNEP 1.0 Specification
 -   ISO/IEC 15693
- 
+
 ## Supported NFC smart cards and tags
 The following are the NFC smart cards and tags supported by the NFC CX driver:  
 
@@ -45,6 +45,7 @@ The following are the NFC smart cards and tags supported by the NFC CX driver:
 -   FeliCa family
 -   Jewel/Topaz family
 -   Generic ISO 15693 tags
+-   Thinfilm NFC Barcode (Kovio)
 
 
 
@@ -71,4 +72,3 @@ The following are the NFC smart cards and tags supported by the NFC CX driver:
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
-

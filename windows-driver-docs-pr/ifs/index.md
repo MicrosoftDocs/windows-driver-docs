@@ -35,7 +35,7 @@ You can subscribe to the NTFSD newsgroup for details about developing file syste
 
 OSR's "Developing File Systems for Windows" seminar explores developing file systems and File Systems and File System Filter Drivers. See [Training for IFS Developers](http://go.microsoft.com/fwlink/p/?linkid=50692).
 
-Plugfest 29 - An opportunity to conduct compatibility testing with the next version of Windows and other file system filters, network filters and disk encryption drivers is open for registration. To participate please [Register](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4Jsnh3PYSNMukoA0QD1QvdUNEtXSVVUTVVMQkhEQ005SFZZS0VKTUFTVy4u).
+
 
 ## In this section
 This design guide includes the following sections:  

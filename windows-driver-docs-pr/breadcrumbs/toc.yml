@@ -36,6 +36,9 @@
       - name: Dashboard
         tocHref: /windows/hardware/drivers/dashboard/
         topicHref: /windows/hardware/drivers/dashboard/index
+      - name: Device Apps
+        tocHref: /windows/hardware/drivers/devapps/
+        topicHref: /windows/hardware/drivers/devapps/index
       - name: Display
         tocHref: /windows/hardware/drivers/display/
         topicHref: /windows/hardware/drivers/display/index
