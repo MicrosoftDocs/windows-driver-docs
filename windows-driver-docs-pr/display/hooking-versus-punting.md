@@ -1,4 +1,4 @@
----
+﻿---
 title: Hooking Versus Punting
 description: Hooking Versus Punting
 ms.assetid: 52544915-8392-4eb1-8186-6a7fbad8ed4a
@@ -11,7 +11,7 @@ keywords: ["surface negotiation WDK GDI , hooking", "surface negotiation WDK GDI
 ## <span id="ddk_hooking_versus_punting_gg"></span><span id="DDK_HOOKING_VERSUS_PUNTING_GG"></span>
 
 
-The terms *hooking* and *punting* refer to driver decisions on whether it provides standard bitmap drawing operations, or relies on GDI to provide them. If the driver implements engine-managed surfaces, GDI can handle all drawing operations. A driver can, however, provide one or more of the [drawing functions](optional-display-driver-functions.md#ddk-drawing-functions-gg) if its hardware can accelerate those operations. It does this by implementing, or hooking, a *DrvXxx* function.
+The terms *hooking* and *punting* refer to driver decisions on whether it provides standard bitmap drawing operations, or relies on GDI to provide them. If the driver implements engine-managed surfaces, GDI can handle all drawing operations. A driver can, however, provide one or more of the [drawing functions](optional-display-driver-functions.md) if its hardware can accelerate those operations. It does this by implementing, or hooking, a *DrvXxx* function.
 
 A driver writer may wish to implement only a subset of the drawing operations a particular graphics DDI entry point implements. For any operations the driver does not support, it can call the appropriate GDI functions to carry them out. This is referred to as punting to GDI. There are some situations in which the operation must be implemented in the driver. For example, if the driver implements a device-managed surface, certain drawing functions must be implemented in the display driver.
 

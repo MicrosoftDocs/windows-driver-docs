@@ -1,4 +1,4 @@
----
+﻿---
 title: IddCx Objects
 description: IddCx uses the extensible UMDF object model to represent graphics objects, they are covered in following sections.
 ms.assetid: B4D40C6B-DCEF-4661-9DF2-411326870014
@@ -31,12 +31,12 @@ The driver creates the monitor object in a two stage process. First, the driver 
 ## <span id="IDDCX_SWAPCHAIN"></span><span id="iddcx_swapchain"></span>IDDCX\_SWAPCHAIN
 
 
-This object represents a swapchain that will provide desktop images to display on a connected monitor. The swapchain has multiple buffers to allow the OS to compose the next desktop image in one buffer while the Indirect Display driver is accessing another buffer. The **IDDCX\_SWAPCHAIN** is a child of the **IDDCX\_MONITOR** so there will only be one assigned swapchain to a given monitor at any time. The OS creates and destroys the **IDDCX\_SWAPCHAIN** objects and assigns/unassigns them to monitors using the [*EvtIddCxMonitorAssignSwapChain*](evt_idd_cx_adapter_init_finished) and [*EvtIddCxMonitorUnassignSwapChain*](evt_idd_cx_monitor_unassign_swapchain) Ddi calls.
+This object represents a swapchain that will provide desktop images to display on a connected monitor. The swapchain has multiple buffers to allow the OS to compose the next desktop image in one buffer while the Indirect Display driver is accessing another buffer. The **IDDCX\_SWAPCHAIN** is a child of the **IDDCX\_MONITOR** so there will only be one assigned swapchain to a given monitor at any time. The OS creates and destroys the **IDDCX\_SWAPCHAIN** objects and assigns/unassigns them to monitors using the EvtIddCxMonitorAssignSwapChain and EvtIddCxMonitorUnassignSwapChain Ddi calls.
 
 ## <span id="IDDCX_OPMCTX"></span><span id="iddcx_opmctx"></span>IDDCX\_OPMCTX
 
 
-This object represents an active OPM context from a single application OPM context that the application can use to control output protection on a single monitor. Multiple OPM contexts can be active on a given monitor at the same time. The OS calls the driver to create and destroy the OPM contexts using the driver's [*EvtIddCxMonitorOPMCreateProtectedOutput*](evt_idd_cx_monitor_opm_create_protected_output) and [*EvtIddCxMonitorOPMDestroyProtectedOutput*](evt_idd_cx_monitor_opm_destroy_protected_output) DDI calls.
+This object represents an active OPM context from a single application OPM context that the application can use to control output protection on a single monitor. Multiple OPM contexts can be active on a given monitor at the same time. The OS calls the driver to create and destroy the OPM contexts using the driver's EvtIddCxMonitorOPMCreateProtectedOutput and EvtIddCxMonitorOPMDestroyProtectedOutput DDI calls.
 
  
 

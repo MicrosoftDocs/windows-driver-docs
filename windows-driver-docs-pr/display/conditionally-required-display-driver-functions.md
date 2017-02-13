@@ -1,4 +1,4 @@
----
+﻿---
 title: Conditionally Required Display Driver Functions
 description: Conditionally Required Display Driver Functions
 ms.assetid: c2de7e48-2ce6-466f-947e-bdac1d4fe422
@@ -11,7 +11,7 @@ keywords: ["graphics DDI functions WDK Windows 2000 display"]
 ## <span id="ddk_conditionally_required_display_driver_functions_gg"></span><span id="DDK_CONDITIONALLY_REQUIRED_DISPLAY_DRIVER_FUNCTIONS_GG"></span>
 
 
-Depending on how a driver is implemented and on the features of the underlying adapter, other graphics DDI functions may be required. For example, if a driver manages its own surface (using [**EngCreateDeviceSurface**](https://msdn.microsoft.com/library/windows/hardware/ff564206) to get a handle to the surface), that driver must also, at a minimum, support the following [drawing functions](optional-display-driver-functions.md#ddk-drawing-functions-gg):
+Depending on how a driver is implemented and on the features of the underlying adapter, other graphics DDI functions may be required. For example, if a driver manages its own surface (using [**EngCreateDeviceSurface**](https://msdn.microsoft.com/library/windows/hardware/ff564206) to get a handle to the surface), that driver must also, at a minimum, support the following [drawing functions](optional-display-driver-functions.md):
 
 <table>
 <colgroup>

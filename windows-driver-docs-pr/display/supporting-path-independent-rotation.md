@@ -1,4 +1,4 @@
----
+﻿---
 title: Supporting Path-Independent Rotation
 description: Starting with Windows 8.1 Update, the operating system supports cloning portrait-first displays on landscape-first displays with the greatest possible resolution.
 ms.assetid: 136CEDA5-2839-4E6E-A032-1A9222C769C6
@@ -7,7 +7,7 @@ ms.assetid: 136CEDA5-2839-4E6E-A032-1A9222C769C6
 # <span id="display.supporting_path-independent_rotation"></span>Supporting Path-Independent Rotation
 
 
-Starting with Windows 8.1 Update, the operating system supports cloning portrait-first displays on landscape-first displays with the greatest possible resolution. The display miniport driver must set the proper offset values in the [**D3DKMDT\_VIDPN\_PRESENT\_PATH\_ROTATION\_SUPPORT**](https://msdn.microsoft.com/library/windows/hardware/ff546705) structure for the *primary clone path* and *secondary clone path*, as described in [Supporting Rotation in a Display Miniport Driver](supporting-rotation-in-a-display-miniport-driver.md#clone-mode-requirements).
+Starting with Windows 8.1 Update, the operating system supports cloning portrait-first displays on landscape-first displays with the greatest possible resolution. The display miniport driver must set the proper offset values in the [**D3DKMDT\_VIDPN\_PRESENT\_PATH\_ROTATION\_SUPPORT**](https://msdn.microsoft.com/library/windows/hardware/ff546705) structure for the *primary clone path* and *secondary clone path*, as described in [Supporting Rotation in a Display Miniport Driver](supporting-rotation-in-a-display-miniport-driver.md).
 
 These Device driver interfaces (DDIs) are new in Windows 8.1 Update:
 

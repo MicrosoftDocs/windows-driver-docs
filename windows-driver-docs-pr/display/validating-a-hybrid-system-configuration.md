@@ -1,4 +1,4 @@
----
+﻿---
 title: Validating a hybrid system configuration
 ms.assetid: 9DB53DAB-0A3D-48A4-84C0-8D60F56B64E8
 description: 
@@ -7,7 +7,7 @@ description:
 # Validating a hybrid system configuration
 
 
-This procedure is used starting in Windows 8.1 to validate the configuration of a [hybrid system](using-cross-adapter-resources-in-a-hybrid-system.md#definition-of-a-hybrid-system) of display adapters:
+This procedure is used starting in Windows 8.1 to validate the configuration of a [hybrid system](using-cross-adapter-resources-in-a-hybrid-system.md) of display adapters:
 
 1.  When the system boots, one of the display adapters is marked as the current POST adapter. If this POST adapter supports Windows Display Driver Model (WDDM) 1.3 and has an integrated display panel, it's considered an *integrated hybrid* adapter.
 2.  A discrete adapter in a hybrid system is considered a *hybrid discrete* adapter. It must:
