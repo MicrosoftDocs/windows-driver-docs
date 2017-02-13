@@ -23,15 +23,15 @@ Advancements in hardware have resulted in devices that are capable of maintainin
 
 The executor is a logical representation of the hardware and in reality may in fact be one single hardware transceiver being multiplexed. Exact hardware specifics are regarded as vendor implementation details and are out of scope for this specification. For an NDIS miniport driver, executors are exposed as multiple instances of a WWAN miniport adapter. For an MBIM modem, executors are represented by multiple MBIM functions on an enumerated composite device.
 
-![Logical view of a dual SIM modem](images/multi-SIM_1_dualSimModem.png "Logical view of a dual SIM modem")
+The following diagram illustrates the logical view of a dual SIM modem. Notice the two possible combinations of executor and UICC.
 
-The above diagram illustrates the logical view of a dual SIM modem. Notice the two possible combinations of executor and UICC.
+![Logical view of a dual SIM modem](images/multi-SIM_1_dualSimModem.png "Logical view of a dual SIM modem")
 
 The cellular stack inside an executor is considered mostly self-contained except in the case of a Dual Standby modem implementation where the executor conducting traffic (voice and/or data) may prevent the other from maintaining registration.
 
-![Logical view of a dual-standby modem](images/multi-SIM_2_dualExecutors.png "Logical view of a dual-standby modem")
+The following diagram illustrates the logical view of a dual standby modem. Traffic on Executor 0, a phone call, causes Executor 1 to lose registration.
 
-The above diagram illustrates the logical view of a dual standby modem. Traffic on Executor 0, a phone call, causes Executor 1 to lose registration.
+![Logical view of a dual-standby modem](images/multi-SIM_2_dualExecutors.png "Logical view of a dual-standby modem")
 
 The Windows Desktop modem interface model in NDIS 6.7 does not accommodate such an architecture because it is based upon several implicit assumptions:
 
@@ -43,9 +43,11 @@ By contrast, the Microsoft RIL interface on Windows Mobile explicitly exposes th
 
 ### Major Objects and Operations
 
+The following figure shows an abstract model of a modem.
+
 ![Relationship of Modem, Executors, and Slots](images/multi-SIM_3_majorObjectsAndOperations.png "Relationship of Modem, Executors, and Slots")
 
-The above figure shows an abstract model of a modem. Each modem is identified by a globally unique identifier (GUID) and contains a set of one or more executors, each of which is capable of independent registration on a cellular network. Each executor has an associated executor index, an integer, beginning with 0 for the first executor. In addition, the modem exposes one or more slots that may contain UICC cards. It is assumed is that the number of slots is greater than or equal to the number of executors. Each slot has an associated index, also beginning with 0, and a current state related to the power state of the slot and availability state of a card in the slot (if any).
+Each modem is identified by a globally unique identifier (GUID) and contains a set of one or more executors, each of which is capable of independent registration on a cellular network. Each executor has an associated executor index, an integer, beginning with 0 for the first executor. In addition, the modem exposes one or more slots that may contain UICC cards. It is assumed is that the number of slots is greater than or equal to the number of executors. Each slot has an associated index, also beginning with 0, and a current state related to the power state of the slot and availability state of a card in the slot (if any).
 
 To maintain compatibility with existing modems, each executor operates with information provided by a UICC card in a single slot. The association between executors and slots is defined by slot mapping, which maps each executor to exactly one slot.
 
@@ -55,11 +57,11 @@ The Windows Desktop NDIS interface to the modem is characterized by the exchange
 
 For non-Windows Mobile operating systems, a multi-executor modem appears as one device with multiple physical WWAN miniport instances. Each physical miniport instance represents an executor that is capable of maintaining registration as an NDIS instance. Additional virtual instances may be created at runtime to manage context-specific packet data and device service sessions. Executor-specific commands and notifications are exchanged through the WWAN miniport NDIS physical instance representing that executor. Modem-specific commands (i.e., those that are not executor-specific) and their corresponding notifications may be sent to or come from any physical miniport instance.
 
+The following two diagrams show the difference in executor-specific commands and notifications (the first diagram), where commands and notifications go through and come from the same executor, and modem-specific commands and notifications (the second diagram), where commands may go through any executor and come from any executor.
+
 ![Executor-specific commands and notifications](images/multi-SIM_4_executorSpecificCommands.png "Executor-specific commands and notifications")
 
 ![Modem-specific commands and notifications](images/multi-SIM_4_modemSpecificCommands.png "Modem-specific commands and notifications")
-
-The above two digrams show the difference in executor-specific commands and notifications, where commands and notifications go through and come from the same executor, and modem-specific commands and notifications, where commands may go through any executor and come from any executor.
 
 All OID set or query requests issued to a miniport instance are executed against the modem and executor with which the miniport instance is associated. Likewise, all unsolicited notifications and unsolicited Device Service events sent from a miniport instance are applicable to the modem and the executor with which the miniport instance is associated. For example, an unsolicited NDIS_STATUS_WWAN_REGISTER_STATE or NDIS_STATUS_WWAN_PACKET_SERVICE notification from a miniport indicates the registration (or packet service state) of the associated modem and the executor only and is unrelated to the state of other modem(s) or other executor(s). 
 
@@ -69,7 +71,7 @@ In the same way, if a device has multiple modems and/or multiple executors, non-
 
 For a device which has multiple modems and/or multiple executors, non-context-specific OID set requests may be issued to the physical miniport adapter instance associated with that modem and executor. The miniport driver shall keep track of the progress of such a request as a whole. If one such set request is in progress in any adapter and has not completed yet, a second such set request attempt (to any adapter instance associated with the same modem and executor) shall be queued and processed after the previous requests have completed.
 
-Windows inbox WMB class drivers normally follow the specification above, but if the aforementioned race condition occurs at the modem layer the modem should follow the same guidance to queue up conflicting device wide commands on the MBIM function if it is still processing another function that is linked to the same underlying device.
+Windows inbox WMB class drivers normally follow the preceding specification, but if the aforementioned race condition occurs at the modem layer the modem should follow the same guidance to queue up conflicting device wide commands on the MBIM function if it is still processing another function that is linked to the same underlying device.
 
 ## OIDs for Set and Query Requests
 
@@ -140,9 +142,9 @@ In a device with multiple modems and/or multiple executors, non-context-specific
 
 When there are multiple modems and/or multiple executors in a device, non-executor-specific CID set requests may be issued to the MBIM function associated with that modem and executor. The modem shall keep track of the progress of such requests as a whole. If one such set request is in progress in any adapter and has not completed yet, a second such set request attempt (to any adapter instance associated with the same modem and executor) shall be queued and processed after the previous requests have been completed.
 
-![Modem structure with MBIM functions](images/multi-SIM_10_MBIMspecification.png "Modem structure with MBIM functions")
+The following diagram illustrates the information flow between the WWANSVC and MBIM functions in two different modems.
 
-The above diagram illustrates the information flow between the WWANSVC and MBIM functions in two different modems.
+![Modem structure with MBIM functions](images/multi-SIM_10_MBIMspecification.png "Modem structure with MBIM functions")
 
 This section contains the detailed modem-wide and per-executor CID descriptions for the defined device services. The definitions reference back to existing public MBIM1.0 specification. An MBIM-compliant device implements and reports the following device service when queried by CID_MBIM_DEVICE_SERVICES. The existing well-known services are defined in section 10.1 of the USB NCM MBIM 1.0 specification. Microsoft extends this to define the following service.
 

@@ -76,7 +76,7 @@ The following MBIM_MS_NETWORK_BLACKLIST_INFO structure shall be used in the Info
 | 8 | 8 * EC | BlacklistProviderRefList | OL_PAIR_LIST | The first element of the pair is a 4 byte offset, calculated from the beginning (offset 0) of this MBIM_MS_NETWORK_BLACKLIST_INFO structure, to a MBIM_MS_NETWORK_BLACKLIST_PROVIDER structure. For more information, see the MBIM_MS_NETWORK_BLACKLIST_PROVIDER table.  The second element of the pair is a 4-byte size of a pointer to the corresponding MBIM_MS_NETWORK_BLACKLIST_PROVIDER structure. |
 | 8 + (8 * EC) |  | DataBuffer | DATABUFFER | Array of MBIM_MS_NETWORK_BLACKLIST_PROVIDER structures. |
 
-The following data structures are used in the above table.
+The following data structures are used in the preceding table.
 
 MBIM_MS_NETWORK_BLACKLIST_STATE describes the possible states of the two different blacklists.
 
@@ -94,7 +94,7 @@ MBIM_MS_NETWORK_BLACKLIST_PROVIDER specifies the provider of the blacklist.
 | 4 | 4 | MNC | UINT32 | As specified by 3GPP, MNC is part of IMSI and specifies the network of the provider. |
 | 8 | 4 | NetworkBlacklistType | MBIM_MS_NETWORK_BLACKLIST_TYPE | Specifies for which type of blacklist the MCC/MNC pair is used. For more information, see the MBIM_MS_NETWORK_BLACKLIST_TYPE table. |
 
-MBIM_MS_NETWORK_BLACKLIST_TYPE is used by the above data structure. It specifies which of the two blacklists will be used.
+MBIM_MS_NETWORK_BLACKLIST_TYPE is used by the preceding data structure. It specifies which of the two blacklists will be used.
 
 | Type | Value | Description |
 | --- | --- | ---- |

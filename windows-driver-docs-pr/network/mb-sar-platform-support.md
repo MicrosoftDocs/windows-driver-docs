@@ -83,7 +83,7 @@ The following MBIM_MS_SET_SAR_CONFIG structure shall be used in the InformationB
 | 12 | 8 * EC | SARConfigStatusRefList | OL_PAIR_LIST | The first element of the pair is a 4-byte offset, calculated from the beginning (offset 0) of this MBIM_MS_SET_SAR_CONFIG structure, to an MBIM_MS_SAR_CONFIG_STATE structure. For more information, see the MBIM_MS_SAR_CONFIG_STATE table. The second element of the pair is a 4-byte size of a pointer to the corresponding MBIM_MS_SAR_CONFIG_STATE structure. |
 | 12 + (8 * EC) |  | DataBuffer | DATABUFFER | Array of MBIM_MS_SAR_CONFIG_STATE structures. |
 
-The following structures are used in the above table.
+The following structures are used in the preceding table.
 
 MBIM_MS_SAR_CONTROL_MODE specifies how the SAR back off mechanism is controlled.
 
@@ -119,7 +119,7 @@ The following MBIM_MS_SAR_CONFIG structure shall be used in the InformationBuffe
 | 16 | 8 * EC | SARConfigStatusRefList | OL_PAIR_LIST | The first element of the pair is a 4 byte offset, calculated from the beginning (offset 0) of this MBIM_MS_SAR_CONFIG structure, to an MBIM_MS_SAR_CONFIG_STATE structure. For more information, see the  MBIM_MS_SAR_CONFIG_STATE table. The second element of the pair is a 4 -byte size of a pointer to the corresponding MBIM_MS_SAR_CONFIG_STATE structure. |
 | 16 + (8 * EC) |  | DataBuffer | DATABUFFER | Array of MBIM_MS_SAR_CONFIG_STATE structures. |
 
-The following MBIM_MS_SAR_HARDWARE_WIFI_INTEGRATION structure is used in the table above. It specifies whether Wi-Fi and Cellular are integrated at the hardware level.
+The following MBIM_MS_SAR_HARDWARE_WIFI_INTEGRATION structure is used in the preceding table. It specifies whether Wi-Fi and Cellular are integrated at the hardware level.
 
 | Type | Value | Description |
 | --- | --- | --- |
@@ -187,7 +187,7 @@ The following MBIM_MS_SET_TRANSMISSION_STATUS structure shall be used in the Inf
 | 0 | 4 | ChannelNotification | MBIM_MS_TRANSMISSION_STATUS_NOTIFICATION | For more information, see the MBIM_MS_TRANSMISSION_STATUS_NOTIFICATION table. |
 | 4 | 4 | HysteresisTimer | UINT32 | Hysteresis Indicator that is used by the modem to determine when to send the MBIMMsTransmissionStateInactive to the host. This value is the timer the modem sees as a continuous no-transmit activity before it sends an OFF indicator to host. This timer should be set in seconds, ranging from 1 second to 5 seconds. |
 
-The following MBIM_MS_TRANSMISSION_STATUS_NOTIFICATION structure is used in the above table. It specifies whether modem channel transmission is disabled or enabled.
+The following MBIM_MS_TRANSMISSION_STATUS_NOTIFICATION structure is used in the preceding table. It specifies whether modem channel transmission is disabled or enabled.
 
 | Type | Value | Description |
 | --- | --- | --- |
@@ -204,7 +204,7 @@ The following MBIM_MS_TRANSMISSION_STATUS_INFO structure is used for response.
 | 4 | 4 | TransmissionStatus | MBIM_MS_TRANSMISSION_STATUS | For more information, see the  MBIM_MS_TRANSMISSION_STATUS table. This indicates whether modem is having TX traffic every 5 seconds. |
 | 8 | 4 | HysteresisTimer | UINT32 | Hysteresis Indicator that is used by the modem to determine when to send the MBIMMsTransmissionStateInactive to the host. This value is the timer the modem sees as a continuous no-transmit activity before it sends an OFF indicator to host. This timer should be set in seconds, ranging from 1 second to 5 seconds. |
 
-The following MBIM_MS_TRANSMISSION_STATUS structure is used in the above table. It indicates whether modem is having TX traffic every 5 seconds.
+The following MBIM_MS_TRANSMISSION_STATUS structure is used in the preceding table. It indicates whether modem is having TX traffic every 5 seconds.
 
 | Type | Value | Description |
 | --- | --- | --- |

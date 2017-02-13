@@ -40,9 +40,9 @@ Although MBIM 1.0 has defined MBIM_CID_PROVISIONED_CONTEXT for the OS and its up
 
 MBIM 1.0 specifies that MBIM_CID_PROVISIONED_CONTEXT can only call Query on contexts that match the Provider ID (MCC/MNC pair) of the inserted SIM card. For Set requests, MBIM_CID_PROVISIONED_CONTEXT can specify the Provider ID of the context that it wants to be stored.  MBIM_CID_MS_PROVISIONED_CONTEXT_V2 specifies a similar but different behavior from MBIM 1.0. For each Query, the OS continues to expect the modem to only return contexts that match the Provider ID of the inserted SIM card. For Set, the command will no longer allow the OS to Set contexts that do not match the current Provider ID in the SIM card; it is expected that the Set request is to create a context for the current Provider ID of the presented SIM card. As an example, the user swaps from SIM 1 to SIM 2, then back to SIM 1. It is expected that during first SIM swap, the modem should clear up all its contexts before loading the context for SIM 2. When the user swaps back to SIM 1, SIM 1’s factory default configuration should be restored.  It is not expected for the modem to save runtime configuration across SIM swaps.
 
-![Modem context provisioning SIM swap example](images/Context_Provision_modem_context_1.png "Modem context provisioning SIM swap example")
+The following diagram illustrates a sample flow for when a user swaps from one SIM to another, then back to the first one.
 
-The above diagram illustrates a sample flow for when a user swaps from one SIM to another, then back to the first one.
+![Modem context provisioning SIM swap example](images/Context_Provision_modem_context_1.png "Modem context provisioning SIM swap example")
 
 OEMs and IHVs that have pre-configured the modem should keep the original factory configuration in case the OS or user would like to restore the context settings in the modem to the original settings. Only the original factory contexts for the currently inserted SIM’s Provider ID should be restored. The original factory setting pre-configured contexts should never get overwritten by the OS’s configuration. Below is an example flow for when a user chooses to restore factory settings:
 
@@ -108,7 +108,7 @@ The following MBIM_SET_MS_PROVISIONED_CONTEXT_V2 data structure shall be used in
 | 68 | 4 | AuthProtocol | MBIM_AUTH_PROTOCOL | Authentication type to use for the PDP activation. For more information, see the MBIM_AUTH_PROTOCOL table. |
 | 72 | 4 | DataBuffer | DATABUFFER | The data buffer that contains AccessString, UserName, and Password. |
 
-The following data structures are used in the above table.
+The following data structures are used in the preceding table.
 
 MBIM_MS_CONTEXT_ROAMING_CONTROL specifies the per-context roaming policy. The OS can specify whether the given context can be activated during roaming or not. The modem should not self-activate the context without OS intervention if the roaming state does not satisfy the specified conditions. In cases where the modem does not support partners, then all partner configurations should be treated as equivalent to home.
 
@@ -175,7 +175,7 @@ The following MBIM_MS_PROVISIONED_CONTEXT_INFO_V2 structure shall be used in the
 | 4 | 8 * EC | MsProvisionedContextV2RefList | OL_PAIR_LIST | The first element of the pair is a 4 byte Offset in bytes, calculated from the beginning (offset 0) of this MBIM_MS_PROVISIONED_CONTEXTS_INFO_V2 structure, to an MBIM_MS_CONTEXT_V2 structure (for more information, see the MBIM_MS_CONTEXT_V2 table). The second element of the pair is a 4-byte size of a pointer to the corresponding MBIM_MS_CONTEXT_V2 structure. |
 | 4 + 8 * EC |  | DataBuffer | DATABUFFER | Array of MBIM_MS_CONTEXT_V2 structuers. |
 
-MBIM_MS_CONTEXT_V2, used in the above table, provides information about a given context.
+MBIM_MS_CONTEXT_V2, used in the preceding table, provides information about a given context.
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |

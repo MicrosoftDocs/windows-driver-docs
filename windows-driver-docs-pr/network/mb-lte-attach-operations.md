@@ -72,7 +72,7 @@ When the OS issues a MBIM_CID_CONNECT request to deactivate a PDP context then t
 1.	Whether the device is LTE attached and the context to be deactivated is the only activated PDP context to maintain LTE registration
 2.	Whether the context to be deactivated is also used by the modem internally for any services that are not exposed to the OS
 
-If either of the above are true, then the modem should complete the CID deactivation request but continue to maintain the over-the-air bearer with the network. Otherwise the modem should deactivate the context as per normal deactivation requests.
+If either of the previous statements is true, then the modem should complete the CID deactivation request but continue to maintain the over-the-air bearer with the network. Otherwise the modem should deactivate the context as per normal deactivation requests.
 
 All default LTE attach APN configuration provided by the OS is per-provider and matches to the inserted SIM card’s home Provider ID (MCC/MNC pair). The modem should only provide configured LTE attach context for the current inserted SIM’s Provider ID when queried. The modem should always return three default LTE attach contexts that matches the inserted SIM’s Provider ID, one for each roaming condition (home/partner/non-partner).
 
@@ -124,7 +124,7 @@ The following MBIM_MS_SET_LTE_ATTACH_CONFIG structure shall be used in the Infor
 | 8 | 8 * EC | MsLteAttachContextRefList | OL_PAIR_LIST | The first element of the pair is a 4-byte offset, calculated from the beginning (offset 0) of this MBIM_MS_LTE_ATTACH_CONFIG_INFO structure, to an MBIM_MS_LTE_ATTACH_CONTEXT structure (For more information, see the  MBIM_MS_LTE_ATTACH_CONTEXT table). The second element of the pair is a 4-byte size of a pointer to the corresponding MBIM_MS_LTE_ATTACH_CONTEXT structure. |
 | 8 + (8 * EC) |  | DataBuffer | DATABUFFER | Array of MBIM_MS_LTE_ATTACH_CONTEXT structures. |
 
-The following structures are used in the above table.
+The following structures are used in the preceding table.
 
 MBIM_MS_LTE_ATTACH_CONTEXT_OPERATIONS describes the types of operations that can be used in the Set command.
 
@@ -272,7 +272,7 @@ The following MBIM_MS_LTE_ATTACH_STATUS structure shall be used in the Informati
 | 36 | 4 | AuthProtocol | MBIM_AUTH_PROTOCOL | Authentication type to use for the PDP activation. For more information, see the MBIM_AUTH_PROTOCOL table. |
 | 40 | 4 |  | DataBuffer | DATABUFFER | The data buffer that contains AccessString, UserName, and Password. |
 
-The following data structure is used in the above table.
+The following data structure is used in the preceding table.
 
 MBIM_MS_LTE_ATTACH_STATE indicates whether the device is currently attached to a LTE network or not.
 
