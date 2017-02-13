@@ -7,11 +7,11 @@ description: MB Multi-SIM Operations
 
 ## Desktop Multi-Modem Multi-Executor Support
 
-Traditionally, non-phone Windows devices have not usually been configured for multi-SIM modems because they have fewer physical space restraints than phones, allowing them to truly harness multiple active radios at the same time instead of having one modem with multiple SIM cards like a phone does. Due to the rise of eSIM and scenarios in the enterprise, however, the demand for multi-SIM-per-modem support on non-phone devices has increased.
+Traditionally, non-phone Windows devices have not been configured for multi-SIM modems because they have fewer physical space restraints than phones. This allows them to truly harness multiple active radios at the same time instead of having one modem with multiple SIM cards like a phone does; however, due to the rise of eSIM and scenarios in the enterprise , the demand for multi-SIM-per-modem support on non-phone devices has increased.
 
 Most typical multi-SIM phone devices have dual SIM slots but are limited to one primary SIM card supporting data while the other only supports voice features. Such a limitation does not exist in the non-phone PC model as all SIM cards are used for data connection.
 
-While the framework defined in this specification can theoretically support an unbounded number of modems and SIM cards, Windows 10 Version 1703 and later will only support the dual-SIM/single-active scenario end to end. 
+While the framework defined in this specification can theoretically support an unbounded number of modems and SIM cards, Windows 10 Version 1703 and later supports only the dual-SIM/single-active scenario end to end. 
 
 ## NDIS Modem Interface Specification
 
@@ -19,11 +19,11 @@ While the framework defined in this specification can theoretically support an u
 
 It is possible to support dual-SIM/dual-active functionality with multiple independent modems, where each modem is a separate device and operates completely independently. However, this is outside this documentation’s scope, which instead focuses on a WWAN miniport modem that is capable of presenting multiple and simultaneous cellular stacks to the host. This section defines the various objects and establishes the terminology used in all MB documentation related to multi-SIM functionality.
 
-Advancements in hardware have resulted in devices that are capable of maintaining simultaneous registrations with multiple cellular networks. In such devices, there are assumed to be “multiple instances of the cellular stack” running in parallel which are each able to maintain registration, monitor signal strengths, perform handovers and listen for incoming pages. Each instance of this “cellular stack” will be referred to as an *executor* for the rest of this document. For example, in a device capable of maintaining registrations with two networks simultaneously the modem hardware is considered to have two executors.
+Advancements in hardware have resulted in devices that can maintain simultaneous registrations with multiple cellular networks. In such devices, there are assumed to be “multiple instances of the cellular stack” running in parallel which are each able to maintain registration, monitor signal strengths, perform handovers and listen for incoming pages. Each instance of this “cellular stack” will be referred to as an *executor* for the rest of this document. For example, in a device capable of maintaining registrations with two networks simultaneously the modem hardware is considered to have two executors.
 
-The executor is a logical representation of the hardware and in reality may in fact be one single hardware transceiver being multiplexed. Exact hardware specifics are regarded as vendor implementation details and are out of scope for this specification. For an NDIS miniport driver, executors are exposed as multiple instances of a WWAN miniport adapter. For an MBIM modem, executors are represented by multiple MBIM functions on an enumerated composite device.
+The executor is a logical representation of the hardware and may in fact be one single hardware transceiver being multiplexed. Exact hardware specifics are regarded as vendor implementation details and are out of scope for this specification. For an NDIS miniport driver, executors are exposed as multiple instances of a WWAN miniport adapter. For an MBIM modem, executors are represented by multiple MBIM functions on an enumerated composite device.
 
-The following diagram illustrates the logical view of a dual SIM modem. Notice the two possible combinations of executor and UICC.
+The following two images illustrate the logical view of a dual SIM modem. Each shows a possible combination of executor and UICC.
 
 ![Logical view of a dual SIM modem](images/multi-SIM_1_dualSimModem.png "Logical view of a dual SIM modem")
 
@@ -39,7 +39,9 @@ The Windows Desktop modem interface model in NDIS 6.7 does not accommodate such 
 * The model assumes that there is a single UICC card directly associated with the modem hardware.
 * The UICC is treated as if it were a single-application SIM card.
 
-By contrast, the Microsoft RIL interface on Windows Mobile explicitly exposes the multiplicity of all of these assumptions. The Mobile Broadband interface in Windows Mobile exposes the ability to register independently through separate miniports and assumes that some basic configuration of the device has already been accomplished through the RIL interface. To provide equivalent functionality, Windows Desktop must provide mechanisms to discover the number of executors and slots, to access executors independently, to define the mapping between executors and slots, and to define the applications within the mapped UICC card that each executor will use.
+By contrast, the Microsoft Radio Interface Layer (RIL) interface on Windows Mobile explicitly exposes the multiplicity of these assumptions. The Mobile Broadband interface in Windows Mobile exposes the ability to register independently through separate miniports and assumes that some basic configuration of the device has already been accomplished through the RIL interface. To provide equivalent functionality, Windows Desktop must provide mechanisms to discover the number of executors and slots, to access executors independently, to define the mapping between executors and slots, and to define the applications within the mapped UICC card that each executor will use.
+
+For more information about cellular architecture and the differences between Windows 10 Mobile and Desktop, please see [Cellular architecture and implementation](cellular-architecture-and-driver-model.md).
 
 ### Major Objects and Operations
 
@@ -53,9 +55,9 @@ To maintain compatibility with existing modems, each executor operates with info
 
 A slot may contain a UICC card; each card contains one or more UICC applications such as a USIM, CSIM, ISIM, or possibly other telephony and non-telephony applications such as PKCS#15 or Global Platform applications for an NFC secure element. The addressing and use of these individual UICC applications is a topic for future specification and out of scope of this documentation.
 
-The Windows Desktop NDIS interface to the modem is characterized by the exchange of OIDs and NDIS notifications. In most cases these OIDs are directed to individual executors; however, a few commands and notifications are scoped to the modem as a whole.
+The Windows Desktop NDIS interface to the modem is characterized by the exchange of OIDs and NDIS notifications. In most cases these OIDs are directed to individual executors; however, a few commands and notifications are scoped to the modem.
 
-For non-Windows Mobile operating systems, a multi-executor modem appears as one device with multiple physical WWAN miniport instances. Each physical miniport instance represents an executor that is capable of maintaining registration as an NDIS instance. Additional virtual instances may be created at runtime to manage context-specific packet data and device service sessions. Executor-specific commands and notifications are exchanged through the WWAN miniport NDIS physical instance representing that executor. Modem-specific commands (i.e., those that are not executor-specific) and their corresponding notifications may be sent to or come from any physical miniport instance.
+For non-Windows Mobile operating systems, a multi-executor modem appears as one device with multiple physical WWAN miniport instances. Each physical miniport instance represents an executor that can maintain registration as an NDIS instance. Additional virtual instances may be created at runtime to manage context-specific packet data and device service sessions. Executor-specific commands and notifications are exchanged through the WWAN miniport NDIS physical instance representing that executor. Modem-specific commands (in other words, those that are not executor-specific) and their corresponding notifications may be sent to or come from any physical miniport instance.
 
 The following two diagrams show the difference in executor-specific commands and notifications (the first diagram), where commands and notifications go through and come from the same executor, and modem-specific commands and notifications (the second diagram), where commands may go through any executor and come from any executor.
 
@@ -65,13 +67,13 @@ The following two diagrams show the difference in executor-specific commands and
 
 All OID set or query requests issued to a miniport instance are executed against the modem and executor with which the miniport instance is associated. Likewise, all unsolicited notifications and unsolicited Device Service events sent from a miniport instance are applicable to the modem and the executor with which the miniport instance is associated. For example, an unsolicited NDIS_STATUS_WWAN_REGISTER_STATE or NDIS_STATUS_WWAN_PACKET_SERVICE notification from a miniport indicates the registration (or packet service state) of the associated modem and the executor only and is unrelated to the state of other modem(s) or other executor(s). 
 
-When there are multiple modems and/or multiple executors in a device, non-context-specific unsolicited notifications related to a particular modem and executor combination shall be issued from the physical miniport adapter associated with that modem and executor combination. 
+When there are multiple modems and/or multiple executors in a device, the physical miniport adapter associated with that modem and executor combination issues non-context-specific unsolicited notifications related to a particular modem and executor combination. 
 
-In the same way, if a device has multiple modems and/or multiple executors, non-context-specific OID query requests related to a particular modem and executor may be issued to the physical miniport adapter instance associated with that modem and executor combination. The adapter receiving such a query request shall process it according to the OID definition. If so chosen by miniport driver, this query request may be processed concurrently with any other in-process OID set or query requests in any instance of adapters associated with that modem and executor. All instances of a miniport adapter associated with a same modem and executor shall report the same state information for that cellular modem and executor as a whole (such as radio power state, registration state, packet service state, etc.).  
+In the same way, if a device has multiple modems and/or multiple executors, the physical miniport adapter instance associated with a particular modem and executor combination can receive non-context-specific OID query requests related to that modem and executor. The adapter receiving such a query request processes it according to the OID definition. If so chosen by miniport driver, this query request can be processed concurrently with any other in-process OID set or query requests in any instance of adapters associated with that modem and executor. All instances of a miniport adapter associated with a same modem and executor report the same state information for that cellular modem and executor (such as radio power state, registration state, packet service state, etc.).  
 
-For a device which has multiple modems and/or multiple executors, non-context-specific OID set requests may be issued to the physical miniport adapter instance associated with that modem and executor. The miniport driver shall keep track of the progress of such a request as a whole. If one such set request is in progress in any adapter and has not completed yet, a second such set request attempt (to any adapter instance associated with the same modem and executor) shall be queued and processed after the previous requests have completed.
+For a device which has multiple modems and/or multiple executors, the physical miniport adapter instance associated with a modem and executor combination can receive non-context-specific OID set requests. The miniport driver shall keep track of the progress of such a request. If one such set request is in progress in any adapter and has not completed yet, a second such set request attempt (to any adapter instance associated with the same modem and executor) shall be queued and processed after the previous requests have completed. 
 
-Windows inbox WMB class drivers normally follow the preceding specification, but if the aforementioned race condition occurs at the modem layer the modem should follow the same guidance to queue up conflicting device wide commands on the MBIM function if it is still processing another function that is linked to the same underlying device.
+The Windows 10 desktop WMBCLASS driver follows the specification outlined in the previous paragraph to handle this set request race condition, but if the race condition occurs at the modem layer the modem should follow the same guidance to queue up conflicting device-wide commands on the MBIM function if it is still processing another function that is linked to the same underlying device.
 
 ## OIDs for Set and Query Requests
 
@@ -132,7 +134,7 @@ With the addition of the executor concept to non-Windows Mobile devices in Windo
 
 ## MBIM Interface Update for Multi-SIM Operations
 
-For non-Windows Mobile operating systems, a multi-executor modem appears as one USB composite device with multiple MBIM functions. Each MBIM function represents an executor that is capable of maintaining registration. Executor-specific commands and notifications are exchanged through the MBIM function representing that executor, while modem-specific commands (i.e., those that are not executor-specific) and their corresponding notifications may be sent to or come from any MBIM function that belongs to the same underlying USB composite device. 
+For non-Windows Mobile operating systems, a multi-executor modem appears as one USB composite device with multiple MBIM functions. Each MBIM function represents an executor that can maintain registration. Executor-specific commands and notifications are exchanged through the MBIM function representing that executor, while modem-specific commands (in other words, those that are not executor-specific) and their corresponding notifications may be sent to or come from any MBIM function that belongs to the same underlying USB composite device. 
 
 All CID set or query requests issued to a MBIM function are executed against the modem and executor with which the miniport instance is associated; likewise, all unsolicited notifications sent from a MBIM function are applicable to the modem and the executor with which the MBIM function is associated. In the same way, all unsolicited Device Service events sent from a miniport instance are applicable to the modem and the executor with which the MBIM function is associated. For example, an unsolicited MBIM_CID_REGISTER_STATE or MBIM_CID_PACKET_SERVICE notification from a MBIM function indicates the registration or packet service state of the associated modem/executor only and is unrelated to the state of other modem(s) or other executor(s). 
 
@@ -221,13 +223,13 @@ The *ModemId* field denotes the unique 64-bit identifier for a given modem hardw
 
 #### Status Codes
 
-This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [LINK](TBD)).
+This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [the public USB MBIM standard](https://go.microsoft.com/fwlink/p/?linkid=842064)).
 
 ### MBIM_CID_MS_DEVICE_CAPS_V2
 
 #### Description
 
-This CID retrieves the capability information related to an executor. Since this CID is an extension of MBIM_CID_DEVICE_CAPS, only the changes from MBIM_CID_DEVICE_CAPS as stated in Section 10.5.1 of [LINK](TBD) are presented here.
+This CID retrieves the capability information related to an executor. Since this CID is an extension of MBIM_CID_DEVICE_CAPS, only the changes from MBIM_CID_DEVICE_CAPS as stated in Section 10.5.1 of the public USB MBIM standard are presented here.
 
 This CID continues to be query-only and will return a MBIM_MS_DEVICE_CAPS_INFO_V2 structure in response to MBIM_COMMAND_MSG with the MBIM service MSUUID_BASIC_CONNECT and CID MBIM_CID_MS_DEVICE_CAPS_V2.
 
@@ -242,7 +244,7 @@ This CID continues to be query-only and will return a MBIM_MS_DEVICE_CAPS_INFO_V
 
 ##### Query
 
-The same as Section 10.5.1.4 of [LINK](TBD).
+The same as Section 10.5.1.4 of the public USB MBIM standard.
 
 ##### Set
 
@@ -250,7 +252,7 @@ Not applicable.
 
 ##### Response
 
-The following MBIM_DEVICE_CAPS_INFO_V2 structure shall be used in the InformationBuffer. Compared with the MBIM_CID_DEVICE_CAPS structure defined in section 10.5.1 of [LINK](TBD), the following structure has a new field called *DeviceIndex*. Unless stated here, the field descriptions in Table 10-14 of [LINK](TBD) apply here.
+The following MBIM_DEVICE_CAPS_INFO_V2 structure shall be used in the InformationBuffer. Compared with the MBIM_CID_DEVICE_CAPS structure defined in section 10.5.1 of the public USB MBIM standard, the following structure has a new field called *DeviceIndex*. Unless stated here, the field descriptions in Table 10-14 of the public USB MBIM standard apply here.
 
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
@@ -275,13 +277,13 @@ The following MBIM_DEVICE_CAPS_INFO_V2 structure shall be used in the Informatio
 
 #### Status Codes
 
-This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [LINK](TBD)).
+This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of the public USB MBIM standard).
 
 ### MBIM_CID_MS_DEVICE_SLOT_MAPPINGS
 
 #### Description
 
-This CID sets or returns the device-slot mappings (i.e. the executor-slot mappings).
+This CID sets or returns the device-slot mappings (in other words the executor-slot mappings).
 
 ##### Query
 
@@ -315,7 +317,7 @@ The following MBIM_MS_DEVICE_SLOT_MAPPING_INFO structure shall be used in the In
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | MapCount (MC) | UINT32 | Number of mappings, which is always equal to the number of devices/executors. |
-| 4 | 8 * MC | SlotMapList | OL_PAIR_LIST | The i-th (0 <= i <= MC-1) pair of this list records the index of the slot which is currently mapped to the i-th device/executor. The first element in the pair is a 4-byte field with the Offset into the DataBuffer, calculated from the beginning (offset 0) of this MBIM_MS_DEVICE_SLOT_MAPPINGS_INFO structure, to an UINT32. The second element of the pair is a 4-byte size of the record element. Since the type of the slot index is UINT32, the second element in the pair is always 4. |
+| 4 | 8 * MC | SlotMapList | OL_PAIR_LIST | The *i-th* pair of this list, where (0 <= i <= (MC-1)) records the index of the slot which is currently mapped to the *i-th* device/executor. The first element in the pair is a 4-byte field with the Offset into the DataBuffer, calculated from the beginning (offset 0) of this MBIM_MS_DEVICE_SLOT_MAPPINGS_INFO structure, to an UINT32. The second element of the pair is a 4-byte size of the record element. Since the type of the slot index is UINT32, the second element in the pair is always 4. |
 | 4 + (8 * MC) | 4 * MC | DataBuffer | DATABUFFER | The data buffer that contains *SlotMapList*. Since the size of the slot is 4 bytes and MC is equal to the number of slot indices, the total size of DataBuffer is 4 * MC. |
 
 ##### Response
@@ -393,7 +395,7 @@ The following MBIM_MS_UICCSLOT_STATE structure describes the possible states of 
 
 #### Status Codes
 
-This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [LINK](TBD)).
+This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of the public USB MBIM standard).
 
 ### Non-NDIS Mapping of Per-executor and Per-modem MBIM CIDs
 
