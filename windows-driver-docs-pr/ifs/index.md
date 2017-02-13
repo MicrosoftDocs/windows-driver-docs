@@ -46,9 +46,7 @@ This design guide includes the following sections:
 * [Network Redirector Drivers](network-redirector-drivers.md)  
 * [Security Considerations for File Systems](security-considerations-for-file-systems.md)  
 * [Miscellaneous Information](miscellaneous-information.md)
-* [Learn more about Plugfest 29](https://sway.com/W1Vdi9n8buyXM5d2)
+
 
 
 --------------------
-
-
