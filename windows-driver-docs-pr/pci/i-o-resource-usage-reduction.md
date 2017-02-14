@@ -21,8 +21,8 @@ To reduce I/O resource usage, the driver developer must place the following entr
 
 ```
 [DDInstall.HW]
-Include=machine.inf
-Needs=PciIoSpaceNotRequired
+Include=pci.inf
+Needs=PciIoSpaceNotRequired.HW
 ```
 
  
