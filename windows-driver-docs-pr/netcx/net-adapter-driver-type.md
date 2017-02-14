@@ -34,7 +34,7 @@ Constants
 Not currently supported.
 
 **NET_ADAPTER_DRIVER_TYPE_MINIPORT**  
-In NetAdapterCx verion 1.0, this is the only supported value.
+In NetAdapterCx version 1.0, this is the only supported value.
 
 Remarks
 -------
