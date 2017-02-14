@@ -39,6 +39,9 @@
       - name: Device Apps
         tocHref: /windows/hardware/drivers/devapps/
         topicHref: /windows/hardware/drivers/devapps/index
+      - name: Display
+        tocHref: /windows/hardware/drivers/display/
+        topicHref: /windows/hardware/drivers/display/index
       - name: Tools for Testing Drivers
         tocHref: /windows/hardware/drivers/devtest/
         topicHref: /windows/hardware/drivers/devtest/index
