@@ -12,8 +12,9 @@ api_type:
 
 # NET_ADAPTER_PROTOCOL_OFFLOADS_FLAGS enumeration
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Specifies the low power protocol offload capabilities of a network adapter.
 
 Syntax
 ------
@@ -30,10 +31,19 @@ Constants
 ---------
 
 **NET_ADAPTER_PROTOCOL_OFFLOAD_ARP**  
+If this bit is set, the overlying driver will request the network adapter to enable the ARP protocol offload capability. As soon as this protocol offload has been configured by a set request of [OID_PM_ADD_PROTOCOL_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569763), the driver should enable the network adapter to respond to IPv4 ARP packets while it is in a low-power state.
 
 **NET_ADAPTER_PROTOCOL_OFFLOAD_NS**  
+If this bit is set, the overlying driver will request the network adapter to enable the IPv6 Neighbor Solicitation (NS) protocol offload capability. As soon as this protocol offload has been configured by a set request of [OID_PM_ADD_PROTOCOL_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569763), the driver should enable the network adapter to respond to NS packets while it is in a low-power state.
 
 **NET_ADAPTER_PROTOCOL_OFFLOAD_80211_RSN_REKEY**  
+If this bit is set, the overlying driver will request the network adapter to enable the IEEE 802.11i Robust Security Network (RSN) protocol offload capability. As soon as this protocol offload has been configured by a set request of [OID_PM_ADD_PROTOCOL_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/ff569763), the driver should enable the network adapter to respond to RSN re-key requests packets while it is in a low power state.
+
+Remarks
+---
+The **NET_ADAPTER_PROTOCOL_OFFLOADS_FLAGS** enumeration is used to specify protocol offload capabilities in the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
+
+The client driver passes an initialized **NET_ADAPTER_POWER_CAPABILITIES** structure as an input parameter value to [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
 
 Requirements
 ------------
@@ -59,7 +69,10 @@ Requirements
 </tbody>
 </table>
 
- 
+See Also
+-----
+[**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759)
+
 
  
 
