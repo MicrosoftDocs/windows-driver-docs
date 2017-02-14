@@ -12,8 +12,9 @@ api_type:
 
 # NET_ADAPTER_STATISTICS_FLAGS enumeration
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Specifies statistics that an adapter supports.
 
 Syntax
 ------
@@ -58,48 +59,73 @@ Constants
 **NET_ADAPTER_STATISTICS_RCV_OK**  
 
 **NET_ADAPTER_STATISTICS_XMIT_ERROR**  
+The data in the **ifOutErrors** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_RCV_ERROR**  
+The data in the **ifInErrors** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_RCV_NO_BUFFER**  
 
 **NET_ADAPTER_STATISTICS_DIRECTED_BYTES_XMIT**  
+The data in the **ifHCOutUcastOctets** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_DIRECTED_FRAMES_XMIT**  
+The data in the **ifHCOutUcastPkts** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_MULTICAST_BYTES_XMIT**  
+The data in the **ifHCOutMulticastOctets** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_MULTICAST_FRAMES_XMIT**  
+The data in the **ifHCOutMulticastPkts** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_BROADCAST_BYTES_XMIT**  
+The data in the **ifHCOutBroadcastOctets** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_BROADCAST_FRAMES_XMIT**  
+The data in the **ifHCOutBroadcastPkts** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_DIRECTED_BYTES_RCV**  
+The data in the **ifHCInUcastOctets** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_DIRECTED_FRAMES_RCV**  
+The data in the **ifHCInUcastPkts** member is valid.
 
 **NET_ADAPTER_STATISTICS_MULTICAST_BYTES_RCV**  
+The data in the **ifHCInMulticastOctets** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_MULTICAST_FRAMES_RCV**  
+The data in the **ifHCInMulticastPkts** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_BROADCAST_BYTES_RCV**  
+The data in the **ifHCInBroadcastOctets** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_BROADCAST_FRAMES_RCV**  
+The data in the **ifHCInBroadcastPkts** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_RCV_CRC_ERROR**  
 
 **NET_ADAPTER_STATISTICS_TRANSMIT_QUEUE_LENGTH**  
 
 **NET_ADAPTER_STATISTICS_BYTES_RCV**  
+The data in the **ifHCInOctets** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_BYTES_XMIT**  
+The data in the **ifHCOutOctets** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_RCV_DISCARDS**  
+The data in the **ifInDiscards** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_GEN_STATISTICS**  
 
 **NET_ADAPTER_STATISTICS_XMIT_DISCARDS**  
+The data in the **ifOutDiscards** member of NDIS_STATISTICS_INFO is valid.
+
+Remarks
+-----
+The **NET_ADAPTER_STATISTICS_FLAGS** enumeration is used to specify supported statistics in the [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure.
+
+The client driver passes an initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure as an input parameter value to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
+
 
 Requirements
 ------------
@@ -125,7 +151,9 @@ Requirements
 </tbody>
 </table>
 
- 
+See Also
+-----
+[**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
 
  
 
