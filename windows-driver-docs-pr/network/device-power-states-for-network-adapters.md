@@ -19,10 +19,11 @@ The state number is inversely related to power consumption: higher-numbered stat
 
 For a thorough description of device states, see the following topics:
 
-[Device Power States](https://msdn.microsoft.com/library/windows/hardware/ff543162)
-[Device Working State D0](https://msdn.microsoft.com/library/windows/hardware/ff543210)
-[Device Low-Power States](https://msdn.microsoft.com/library/windows/hardware/ff543186)
-[Required Support for Device Power States](https://msdn.microsoft.com/library/windows/hardware/ff561073)
+* [Device Power States](https://msdn.microsoft.com/library/windows/hardware/ff543162)
+* [Device Working State D0](https://msdn.microsoft.com/library/windows/hardware/ff543210)
+* [Device Low-Power States](https://msdn.microsoft.com/library/windows/hardware/ff543186)
+* [Required Support for Device Power States](https://msdn.microsoft.com/library/windows/hardware/ff561073)
+
 **Note**  NDIS processes power management IRPs, but NDIS drivers do not.
 
  
