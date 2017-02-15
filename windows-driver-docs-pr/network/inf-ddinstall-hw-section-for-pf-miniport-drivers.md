@@ -11,17 +11,17 @@ INF *DDInstall***.HW** sections are typically used for setting up any device-spe
 
 The INF file for the miniport driver of the PCI Express (PCIe) Physical Function (PF) network adapter must have a *DDInstall***.HW** section that contains the following INF entries:
 
--   An **Include** entry that specifies the Machine.inf file that is included with the Windows operating system.
+-   An **Include** entry that specifies the pci.inf file that is included with the Windows operating system.
 
--   A **Needs** entry that specifies the **PciSriovSupported** section to include from the Machine.inf file. This section defines standard INF settings that apply to all PF miniport drivers for network adapters that support the single root I/O virtualization (SR-IOV) interface.
+-   A **Needs** entry that specifies the **PciSriovSupported.HW** section to include from the pci.inf file. This section defines standard INF settings that apply to all PF miniport drivers for network adapters that support the single root I/O virtualization (SR-IOV) interface.
 
 The following is an example of a *DDInstall***.HW** section for a PF miniport driver:
 
 ``` syntax
 [Device_Inst.NT.HW]
 
-Include=machine.inf
-Needs=PciSriovSupported
+Include=pci.inf
+Needs=PciSriovSupported.HW
 ```
 
 For more information about the *DDInstall* section, see [DDInstall Section in a Network INF File](ddinstall-section-in-a-network-inf-file.md).
