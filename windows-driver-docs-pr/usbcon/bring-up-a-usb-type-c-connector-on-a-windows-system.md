@@ -1,4 +1,4 @@
----
+﻿---
 Description: 'Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.'
 MS-HAID: 'buses.bring\_up\_a\_usb\_type-c\_connector\_on\_a\_windows\_system'
 MSHAttr:
@@ -73,7 +73,7 @@ The UCM class extension keeps the operating system informed about the changes in
 
 -   **Data role configuration**
 
-    On USB Type-C systems, the data role (host or function) depends on the status of the CC pins of the connector. Your client driver reads the CC line (see [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md#hardware)) status from your port controller to determine whether the port has resolved to an Upstream Facing Port (UFP) or Downstream Facing Port (UFP). It reports that information to the class extension so that it can report the current role to USB role-switch drivers.
+    On USB Type-C systems, the data role (host or function) depends on the status of the CC pins of the connector. Your client driver reads the CC line (see [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)) status from your port controller to determine whether the port has resolved to an Upstream Facing Port (UFP) or Downstream Facing Port (UFP). It reports that information to the class extension so that it can report the current role to USB role-switch drivers.
 
     **Note**  USB role-switch drivers are used on Windows 10 Mobile systems. On Windows 10 for desktop editions systems, communication between the class extension and the role-switch drivers is optional. Such systems might not use a dual-role controller, in which case, the role-switch drivers are not used.
 
