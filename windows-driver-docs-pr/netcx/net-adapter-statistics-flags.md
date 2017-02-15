@@ -53,10 +53,13 @@ Constants
 ---------
 
 **NET_ADAPTER_STATISTICS_NO_FLAGS**  
+No flags are set.
 
 **NET_ADAPTER_STATISTICS_XMIT_OK**  
+The client can handle OID_GEN_XMIT_OK.
 
 **NET_ADAPTER_STATISTICS_RCV_OK**  
+The client can handle OID_GEN_RCV_OK.
 
 **NET_ADAPTER_STATISTICS_XMIT_ERROR**  
 The data in the **ifOutErrors** member of NDIS_STATISTICS_INFO is valid.
@@ -65,6 +68,7 @@ The data in the **ifOutErrors** member of NDIS_STATISTICS_INFO is valid.
 The data in the **ifInErrors** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_RCV_NO_BUFFER**  
+The client can handle OID_GEN_RCV_NO_BUFFER.
 
 **NET_ADAPTER_STATISTICS_DIRECTED_BYTES_XMIT**  
 The data in the **ifHCOutUcastOctets** member of NDIS_STATISTICS_INFO is valid.
@@ -103,8 +107,10 @@ The data in the **ifHCInBroadcastOctets** member of NDIS_STATISTICS_INFO is vali
 The data in the **ifHCInBroadcastPkts** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_RCV_CRC_ERROR**  
+The client can handle OID_GEN_RCV_CRC_ERROR.
 
 **NET_ADAPTER_STATISTICS_TRANSMIT_QUEUE_LENGTH**  
+The client can handle OID_GEN_TRANSMIT_QUEUE_LENGTH.
 
 **NET_ADAPTER_STATISTICS_BYTES_RCV**  
 The data in the **ifHCInOctets** member of NDIS_STATISTICS_INFO is valid.
@@ -116,6 +122,7 @@ The data in the **ifHCOutOctets** member of NDIS_STATISTICS_INFO is valid.
 The data in the **ifInDiscards** member of NDIS_STATISTICS_INFO is valid.
 
 **NET_ADAPTER_STATISTICS_GEN_STATISTICS**  
+The client can handle OID_GEN_STATISTICS.
 
 **NET_ADAPTER_STATISTICS_XMIT_DISCARDS**  
 The data in the **ifOutDiscards** member of NDIS_STATISTICS_INFO is valid.
@@ -125,6 +132,8 @@ Remarks
 The **NET_ADAPTER_STATISTICS_FLAGS** enumeration is used to specify supported statistics in the [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure.
 
 The client driver passes an initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure as an input parameter value to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
+
+The client returns an NDIS_STATISTICS_INFO structure when handling an OID_GEN_STATISTICS query.
 
 
 Requirements
