@@ -5,13 +5,13 @@ description: Filter Manager and Minifilter Driver Architecture
 keywords: ["Extended , File Attributes", "Kernel EA", "Extended Attributes", "$Kernel"]
 ---
 # Kernel Extended Attributes
-Kernel Extended Attributes (Kernel EA's) are a feature added to New Technology File System (NTFS) in Windows 8 as a new feature that guarantee only signed images are executed. While this allows for a stronger-signing model, a signature check can be a costly operation in order verify an image is signed. Therefore, storing information about whether a binary which has previously been validated, has been changed or not would reduce the amount of instances where an image would have to undergo a signature check.
+Kernel Extended Attributes (Kernel EA's) are a feature added to NTFS in Windows 8 as a new feature that guarantee only signed images are executed. While this allows for a stronger-signing model, a signature check can be a costly operation in order verify an image is signed. Therefore, storing information about whether a binary which has previously been validated, has been changed or not would reduce the amount of instances where an image would have to undergo a signature check.
 
 
 ## Overview
 EA's with the name prefix ``$Kernel`` can only be modified from kernel mode. Any EA that begins with this string are considered a Kernel EA. Before retrieving the necessary update sequence number (USN), it is recommended that **FSCTL_WRITE_USN_CLOSE_RECORD** be issued first as this will commit any pending USN Journal updates on the file that may have occurred earlier. Without this, the **FileUSN** value may change shortly after setting of the Kernel EA.
 
-After a Kernel EA is successfully validated it will contain at least the following information:
+It is recommended that a Kernel EA contains at least the following information:
   -  USN UsnJournalID
       -	The **UsnJournalID** field is a GUID that identifies the current incarnation of USN Journal File.  The USN Journal can be deleted and created from user mode per volume.  Each time the USN Journal is created a new **UsnJournalID** GUID will be generated.  With this field, you can tell if there was a period of time where the USN Journal was disabled and can revalidate.
         - This value can be retrieved using ``[FSCTL_QUERY_USN_JOURNAL]``.
@@ -39,6 +39,7 @@ When only a **FileObject** is provided, using ``[FsRtlQueryKernelEaFile]`` may b
 ## Querying Update Sequence Number Journal Information
 The ``[FSCTL_QUERY_USN_JOURNAL]`` operation requires **SE_MANAGE_VOLUME_PRIVILEGE** even when issued from kernel mode unless the **IRP_MN_KERNEL_CALL** value was set in the MinorFunction field of the IRP. The routine ``[FsRtlKernelFsControlFile]`` has been exported from the FsRtl package in the Kernel to easily allow kernel mode components to issue this USN request.
 
+**NOTE** Starting with Windows 10, version 1703 and later this operation no longer requires SE_MANAGE_VOLUME_PRIVILEGE.  
 
 ## Auto-Deletion of Kernel Extended Attributes
 Simply rescanning a file because the USN ID of the file changed can be expensive as there are many benign reasons a USN update may be posted to the file.  To simplify this, an auto delete of Kernel EA’s feature was added to NTFS.
@@ -47,6 +48,7 @@ Because not all Kernel EA’s may want to be deleted in this scenario, an extend
 -	USN_REASON_DATA_OVERWRITE
 -	USN_REASON_DATA_EXTEND
 -	USN_REASON_DATA_TRUNCATION
+- USN_REASON_REPARSE_POINT_CHANGE
 
 This delete of Kernel EA’s will be successful even in low memory situations.
 
@@ -58,3 +60,5 @@ This delete of Kernel EA’s will be successful even in low memory situations.
 ## See Also
 ``[FsRtlQueryKernelEaFile]``    
 ``[FsRtlSetKernelEaFile]``
+
+----
