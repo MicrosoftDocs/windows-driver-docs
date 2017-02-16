@@ -33,16 +33,16 @@ NTSTATUS NetAdapterCreate(
 Parameters
 ----------
 
-*Device* \[in\]  
+*Device* [in]  
 The WDFDEVICE object created by a prior call to [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926)
 
-*AdapterAttributes* \[in, optional\]  
+*AdapterAttributes* [in, optional]  
 A pointer to a caller-allocated [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s ParentObject must be NULL. The parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 A pointer to a caller-allocated [**NET_ADAPTER_CONFIG**](net-adapter-config.md) structure. For info, see [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md).
 
-*Adapter* \[out\]  
+*Adapter* [out]  
 A pointer to a location that receives a handle to the new NET adapter object.
 
 Return value
