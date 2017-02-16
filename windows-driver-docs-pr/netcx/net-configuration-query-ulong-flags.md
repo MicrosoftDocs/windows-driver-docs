@@ -12,7 +12,6 @@ api_type:
 
 # NET_CONFIGURATION_QUERY_ULONG_FLAGS enumeration
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 The **NET_CONFIGURATION_QUERY_ULONG_FLAGS** enumeration is used as an input parameter to the [**NetConfigurationQueryUlong**](netconfigurationqueryulong.md) method.
@@ -30,10 +29,10 @@ typedef enum _NET_CONFIGURATION_QUERY_ULONG_FLAGS {
 Constants
 ---------
 
-<a href="" id="net-configuration-query-ulong-no-flags"></a>**NET_CONFIGURATION_QUERY_ULONG_NO_FLAGS**  
+**NET_CONFIGURATION_QUERY_ULONG_NO_FLAGS**  
 No flags are set.
 
-<a href="" id="net-configuration-query-ulong-may-be-stored-as-hex-string"></a>**NET_CONFIGURATION_QUERY_ULONG_MAY_BE_STORED_AS_HEX_STRING**  
+**NET_CONFIGURATION_QUERY_ULONG_MAY_BE_STORED_AS_HEX_STRING**  
 Specifies that the ULONG may be stored in the configuration database as a string in hex format.
 
 Requirements
@@ -60,11 +59,8 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
+See Also
+-----
+[**NetConfigurationQueryUlong**](netconfigurationqueryulong.md)
 
 
