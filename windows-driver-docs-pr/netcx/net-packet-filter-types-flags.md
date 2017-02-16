@@ -12,8 +12,9 @@ api_type:
 
 # NET_PACKET_FILTER_TYPES_FLAGS enumeration
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Specifies the packet filters that the adapter supports.
 
 Syntax
 ------
@@ -36,22 +37,39 @@ Constants
 ---------
 
 **NET_PACKET_FILTER_TYPE_DIRECTED**  
+Directed packets. Directed packets contain a destination address equal to the station address of the NIC.
 
 **NET_PACKET_FILTER_TYPE_MULTICAST**  
+Multicast address packets sent to addresses in the multicast address list. 
+
+A protocol driver can receive Ethernet (802.3) multicast packets by specifying the multicast or functional address packet type. Setting the multicast address list or functional address determines which multicast address groups the NIC driver enables.
 
 **NET_PACKET_FILTER_TYPE_ALL_MULTICAST**  
+All multicast address packets, not just the ones enumerated in the multicast address list.
 
 **NET_PACKET_FILTER_TYPE_BROADCAST**  
+Broadcast packets.
 
 **NET_PACKET_FILTER_TYPE_SOURCE_ROUTING**  
+All source routing packets. If the protocol driver sets this bit, the NDIS library attempts to act as a source routing bridge.
 
 **NET_PACKET_FILTER_TYPE_PROMISCUOUS**  
+Specifies all packets regardless of whether VLAN filtering is enabled or not and whether the VLAN identifier matches or not.
 
 **NET_PACKET_FILTER_TYPE_ALL_LOCAL**  
+All packets sent by installed protocols and all packets indicated by the NIC that is identified by a given *NdisBindingHandle*.
 
 **NET_PACKET_FILTER_TYPE_MAC_FRAME**  
+NIC driver frames that a Token Ring NIC receives.
 
 **NET_PACKET_FILTER_TYPE_NO_LOCAL**  
+No packets sent by installed protocols and no packets indicated by the NIC that is identified by a given *NdisBindingHandle*.
+
+Remarks
+-------
+The **NET_PACKET_FILTER_TYPES_FLAGS** enumeration is used to specify supported packet filters in the [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure.
+
+The client driver passes an initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure as an input parameter value to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
 
 Requirements
 ------------
@@ -77,11 +95,7 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
-
-
+See Also
+-----
+[**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md)
+[**OID_GEN_CURRENT_PACKET_FILTER**](https://msdn.microsoft.com/library/windows/hardware/ff569575)
