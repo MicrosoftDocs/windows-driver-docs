@@ -10,10 +10,11 @@ api_type:
 - HeaderDef
 ---
 
-
-
+# NET_ADAPTER_AUTO_NEGOTIATION_FLAGS enumeration
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Specifies the auto-negotiation settings for the miniport adapter.
 
 Syntax
 ------
@@ -32,14 +33,25 @@ Constants
 ---------
 
 **NET_ADAPTER_AUTO_NEGOTIATION_NO_FLAGS**  
+No flags are set.
 
 **NET_ADAPTER_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED**  
+The adapter has auto-negotiated the transmit link speed with the link partner.
 
 **NET_ADAPTER_LINK_STATE_RCV_LINK_SPEED_AUTO_NEGOTIATED**  
+The adapter has auto-negotiated the receive link speed with the link partner.
 
 **NET_ADAPTER_LINK_STATE_DUPLEX_AUTO_NEGOTIATED**  
+The adapter has auto-negotiated the duplex state with the link partner.
 
 **NET_ADAPTER_LINK_STATE_PAUSE_FUNCTIONS_AUTO_NEGOTIATED**  
+The adapter has auto-negotiated the pause functions with the link partner.
+
+Remarks
+---
+The **NET_ADAPTER_AUTO_NEGOTIATION_FLAGS** enumeration is used to specify auto-negotiation settings in the [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure.
+
+An initialized [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure is an input to [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md).
 
 Requirements
 ------------
@@ -65,11 +77,8 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
+See Also
+-----
+[**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
 
 
