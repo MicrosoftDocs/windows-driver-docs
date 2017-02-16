@@ -12,8 +12,9 @@ api_type:
 
 # NET_REQUEST_QUEUE_TYPE enumeration
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Specifies the type of queue.
 
 Syntax
 ------
@@ -30,10 +31,20 @@ Constants
 ---------
 
 **NetRequestQueueTypeInvalid**  
+Not supported.
 
 **NetRequestQueueDefaultSequential**  
+Specifies that the queue supports sequential delivery (regular OIDs).
 
 **NetRequestQueueDefaultParallel**  
+Specifies that the queue supports parallel dispatching (direct OIDs).
+
+
+Remarks
+-------
+The **NET_REQUEST_QUEUE_TYPE** enumeration is used to specify queue type in the [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
+
+The client driver passes an initialized [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure as an input parameter value to [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
 Requirements
 ------------

@@ -84,6 +84,10 @@ Pointer to a [**NET_REQUEST_QUEUE_QUERY_DATA_HANDLER**](net-request-queue-query-
 **MethodHandlers**  
 Pointer to a [**NET_REQUEST_QUEUE_METHOD_HANDLER**](net-request-queue-method-handler.md) structure of the custom method handler list.
 
+Remarks
+-----
+The client driver passes an initialized [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure as an input parameter value to [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+
 Requirements
 ------------
 
