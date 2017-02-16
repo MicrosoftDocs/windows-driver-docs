@@ -133,7 +133,7 @@ The **NET_ADAPTER_STATISTICS_FLAGS** enumeration is used to specify supported st
 
 The client driver passes an initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure as an input parameter value to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
 
-The client returns an NDIS_STATISTICS_INFO structure when handling an OID_GEN_STATISTICS query.
+The client returns an NDIS_STATISTICS_INFO structure when handling an [**OID_GEN_STATISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff569640) query.
 
 
 Requirements

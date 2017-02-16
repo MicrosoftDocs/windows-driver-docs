@@ -103,7 +103,7 @@ Requirements
 
 See Also
 -----
-NDIS_PM_PARAMETERS
+[**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759)
 
 
 
