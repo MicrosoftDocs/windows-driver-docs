@@ -34,7 +34,7 @@ Parameters
 ----------
 
 *Device* [in]  
-The WDFDEVICE object created by a prior call to [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926)
+The WDFDEVICE object created by a prior call to [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 
 *AdapterAttributes* [in, optional]  
 A pointer to a caller-allocated [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s ParentObject must be NULL. The parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
