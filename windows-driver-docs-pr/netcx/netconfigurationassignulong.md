@@ -30,13 +30,13 @@ NTSTATUS NetConfigurationAssignUlong(
 Parameters
 ----------
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
-*ValueName* \[in\]  
+*ValueName* [in]  
 A pointer to a **UNICODE_STRING** structure that contains a value name. 
 
-*Value* \[in\]  
+*Value* [in]  
 A ULONG value that will be assigned to the value name that *ValueName* specifies.
 
 Return value

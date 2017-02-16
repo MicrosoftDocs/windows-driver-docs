@@ -33,22 +33,22 @@ NTSTATUS NetRequestRetrieveInputOutputBuffer(
 Parameters
 ----------
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
-*MininumInputLengthRequired* \[in\]  
+*MininumInputLengthRequired* [in]  
 The minimum input length needed for *InputOutputBuffer*. If the buffer's *InputOutputBuffer* is less than the minimum required, this routine returns STATUS_BUFFER_TOO_SMALL.
 
-*MininumOutputLengthRequired* \[in\]  
+*MininumOutputLengthRequired* [in]  
 The minimum output length needed for *InputOutputBuffer*. If the buffer's *OutputBufferLength* is less than the minimum required, this routine returns STATUS_BUFFER_TOO_SMALL.
 
-*InputOutputBuffer* \[in, out\]  
+*InputOutputBuffer* [in, out]  
 Address to a location that receives a pointer to the buffer.
 
-*InputBufferLength* \[out\]  
+*InputBufferLength* [out]  
 Address to a location that receives the actual input length of *InputOutputBuffer*.
 
-*OutputBufferLength* \[out\]  
+*OutputBufferLength* [out]  
 Address to a location that receives the actual output length of *InputOutputBuffer*.
 
 Return value

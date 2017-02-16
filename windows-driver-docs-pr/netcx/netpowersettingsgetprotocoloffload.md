@@ -31,10 +31,10 @@ PNDIS_PM_PROTOCOL_OFFLOAD NetPowerSettingsGetProtocolOffload(
 Parameters
 ----------
 
-*NetPowerSettings* \[in\]  
+*NetPowerSettings* [in]  
 A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
-*Index* \[in\]  
+*Index* [in]  
 A zero-based value that is used as an index into the protocol offload structures associated with the NETPOWERSETTINGS object. This value must be less than the value returned by [**NetPowerSettingsGetProtocolOffloadCount**](netpowersettingsgetprotocoloffloadcount.md).
 
 Return value

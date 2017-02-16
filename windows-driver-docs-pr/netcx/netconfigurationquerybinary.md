@@ -32,19 +32,19 @@ NTSTATUS NetConfigurationQueryBinary(
 Parameters
 ----------
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
-*ValueName* \[in\]  
+*ValueName* [in]  
 A pointer to a **UNICODE_STRING** structure that contains a value name. 
 
-*PoolType* \[in\]  
+*PoolType* [in]  
 A **POOL_TYPE**-typed value that specifies the type of memory to be allocated for the data buffer. 
 
-*MemoryAttributes* \[in, optional\]  
+*MemoryAttributes* [in, optional]  
 A pointer to a [WDF_OBJECT_ATTRIBUTES](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains object attributes for the new memory object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. 
 
-*Memory* \[out\]  
+*Memory* [out]  
 A pointer to a location that receives a handle to the new memory object. 
 
 Return value

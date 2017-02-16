@@ -29,7 +29,7 @@ void NetTxQueueNotifyMoreCompletedPacketsAvailable(
 Parameters
 ----------
 
-*TxQueue* \[in\]  
+*TxQueue* [in]  
 A handle to a net transmit queue object.
 
 Return value

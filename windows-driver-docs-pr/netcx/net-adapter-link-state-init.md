@@ -34,22 +34,22 @@ FORCEINLINE VOID NET_ADAPTER_LINK_STATE_INIT(
 Parameters
 ----------
 
-*LinkState* \[out\]  
+*LinkState* [out]  
 A pointer to a driver-allocated [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure.
 
-*LinkSpeed* \[in\]  
+*LinkSpeed* [in]  
 The link speed of the adapter in bits per second.
 
-*MediaConnectState* \[in\]  
+*MediaConnectState* [in]  
 The media connect state for the miniport adapter.
 
-*MediaDuplexState* \[in\]  
+*MediaDuplexState* [in]  
 The media duplex state for the miniport adapter.
 
-*SupportedPauseFunctions* \[in\]  
+*SupportedPauseFunctions* [in]  
 Support for the IEEE 802.3 pause frames. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
 
-*SupportedPauseFunctions* \[in\]  
+*SupportedPauseFunctions* [in]  
 The auto-negotiation settings for the miniport adapter. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
 
 Return value

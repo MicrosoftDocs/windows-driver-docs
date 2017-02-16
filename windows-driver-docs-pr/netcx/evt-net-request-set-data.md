@@ -37,16 +37,16 @@ typedef EVT_NET_REQUEST_SET_DATA PFN_NET_REQUEST_SET_DATA;
 Parameters
 ----------
 
-*RequestQueue* \[in\]  
+*RequestQueue* [in]  
 A handle to a net request queue object.
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
-*InputBuffer* \[in\]  
+*InputBuffer* [in]  
 A pointer to a caller-supplied buffer.
 
-*InputBufferLength* \[in\]  
+*InputBufferLength* [in]  
 The length, in bytes, of the request's input buffer, if an input buffer is available.
 
 Return value

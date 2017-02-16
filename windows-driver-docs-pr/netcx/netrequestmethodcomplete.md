@@ -31,10 +31,10 @@ VOID NetRequestMethodComplete(
 Parameters
 ----------
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
-*CompletionStatus* \[in\]  
+*CompletionStatus* [in]  
 An NTSTATUS value that represents the completion status of the request.  Valid status values include, but are not limited to, the following:
 
 |Return code|Description|
@@ -43,10 +43,10 @@ An NTSTATUS value that represents the completion status of the request.  Valid s
 |STATUS_CANCELLED|The driver canceled the request.|
 |STATUS_UNSUCCESSFUL|The driver encountered an error while processing the request.|
 
-*BytesRead* \[in\]  
+*BytesRead* [in]  
 The number of bytes that the client driver read from the buffer.
 
-*BytesWritten* \[in\]  
+*BytesWritten* [in]  
 The number of bytes that the client driver wrote to the buffer.
 
 Requirements

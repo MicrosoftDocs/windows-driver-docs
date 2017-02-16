@@ -33,16 +33,16 @@ void NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT(
 Parameters
 ----------
 
-*SetDataHandler* \[out\]  
+*SetDataHandler* [out]  
 A pointer to the driver-allocated NET_REQUEST_QUEUE_SET_DATA_HANDLER structure.
 
-*Oid* \[in\]  
+*Oid* [in]  
 The NDIS_OID identifier for the request.
 
-*EvtRequestSetData* \[in\]  
+*EvtRequestSetData* [in]  
 Pointer to the custom set request handler.
 
-*MinimumInputLength* \[in\]  
+*MinimumInputLength* [in]  
 The needed minimum input length for the request.
 
 Return value

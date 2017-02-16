@@ -29,7 +29,7 @@ void NetConfigurationClose(
 Parameters
 ----------
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 A handle to an adapter configuration object opened in a prior call to [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md).
 
 Return value

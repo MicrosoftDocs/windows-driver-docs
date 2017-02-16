@@ -29,7 +29,7 @@ NDIS_HANDLE NetAdapterWdmGetNdisHandle(
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 Return value

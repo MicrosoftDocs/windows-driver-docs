@@ -35,10 +35,10 @@ typedef EVT_NET_ADAPTER_CREATE_TXQUEUE PFN_NET_ADAPTER_CREATE_TXQUEUE;
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*TxQueueInit* \[in, out\]  
+*TxQueueInit* [in, out]  
 A pointer to a NetAdapterCx-allocated **NETTXQUEUE_INIT** structure. For more information, see the Remarks section.
 
 Return value

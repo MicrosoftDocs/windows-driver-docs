@@ -32,16 +32,16 @@ NTSTATUS NetTxQueueCreate(
 Parameters
 ----------
 
-*NetTxQueueInit* \[in, out\]  
+*NetTxQueueInit* [in, out]  
 A pointer to the **NETTXQUEUE_INIT** structure that the client driver received in [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md).
 
-*TxQueueAttributes* \[in\]  
+*TxQueueAttributes* [in]  
 A pointer to caller-allocated [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure. The structure’s **ParentObject** must be NULL. The parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 A pointer to a caller-allocated [**NET_TXQUEUE_CONFIG**](net-txqueue-config.md) structure.
 
-*TxQueue* \[out\]  
+*TxQueue* [out]  
 A pointer to a location that receives a handle to the new net receive queue object.
 
 Return value

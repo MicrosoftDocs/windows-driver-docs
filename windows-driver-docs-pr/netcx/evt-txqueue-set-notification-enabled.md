@@ -37,10 +37,10 @@ Register your implementation of this callback function by setting the appropriat
 Parameters
 ----------
 
-*TxQueue* \[in\]  
+*TxQueue* [in]  
 A handle to a net transmit queue object.
 
-*NotificationEnabled* \[in\]  
+*NotificationEnabled* [in]  
 A Boolean value which, if TRUE, indicates that execution of this queue is paused. See Remarks for more info.
 
 Return value

@@ -31,10 +31,10 @@ NTSTATUS NetRxQueueConfigureDmaAllocator(
 Parameters
 ----------
 
-*RxQueue* \[in\]  
+*RxQueue* [in]  
 The receive queue object that the client driver obtained from a previous call to [**NetRxQueueCreate**](netrxqueuecreate.md).
 
-*Enabler* \[in\]  
+*Enabler* [in]  
 A handle to a DMA enabler object that the client driver obtained from a previous call to [**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983).
 
 Return value

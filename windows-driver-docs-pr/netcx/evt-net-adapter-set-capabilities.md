@@ -34,7 +34,7 @@ typedef EVT_NET_ADAPTER_SET_CAPABILITIES PFN_NET_ADAPTER_SET_CAPABILITIES;
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 Return value

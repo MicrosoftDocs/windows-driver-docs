@@ -30,7 +30,7 @@ NET_PACKET* NetRingBufferAdvanceNextPacket(
 Parameters
 ----------
 
-*RingBuffer* \[in\]  
+*RingBuffer* [in]  
 A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 Return value

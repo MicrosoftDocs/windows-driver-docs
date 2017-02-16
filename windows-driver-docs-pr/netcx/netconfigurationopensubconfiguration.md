@@ -32,16 +32,16 @@ NTSTATUS NetConfigurationOpenSubConfiguration(
 Parameters
 ----------
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 A handle to an adapter configuration object opened in a prior call to [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) or **NetConfigurationOpenSubConfiguration**.
 
-*SubConfigurationName* \[in\]  
+*SubConfigurationName* [in]  
 A pointer to a string specifying the name of the sub configuration to open.
 
-*SubConfigurationAttributes* \[in, optional\]  
+*SubConfigurationAttributes* [in, optional]  
 A pointer to a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new configuration object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-*SubConfiguration* \[out\]  
+*SubConfiguration* [out]  
 A pointer to a location that receives a handle to the new sub configuration object.
 
 Return value

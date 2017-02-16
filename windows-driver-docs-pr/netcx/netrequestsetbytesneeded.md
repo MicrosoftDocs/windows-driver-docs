@@ -29,10 +29,10 @@ VOID NetRequestSetBytesNeeded(
 Parameters
 ----------
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
-*BytesNeeded* \[in\]  
+*BytesNeeded* [in]  
 Number of bytes to be read or written.
 
 Remarks

@@ -36,7 +36,7 @@ Register your implementation of this callback function by setting the appropriat
 Parameters
 ----------
 
-*RxQueue* \[in\]  
+*RxQueue* [in]  
 A NETRXQUEUE object.
 
 Return value

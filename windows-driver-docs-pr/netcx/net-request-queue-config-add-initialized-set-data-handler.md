@@ -30,10 +30,10 @@ FORCEINLINE VOID NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER(
 Parameters
 ----------
 
-*NetRequestQueueConfig* \[in\]  
+*NetRequestQueueConfig* [in]  
 A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
 
-*SetDataHandler* \[in\]  
+*SetDataHandler* [in]  
 A pointer to a driver-allocated and initialized custom handler structure.
 
 Return value

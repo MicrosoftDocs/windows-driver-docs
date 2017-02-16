@@ -37,10 +37,10 @@ Register your implementation of this callback function by setting the appropriat
 Parameters
 ----------
 
-*RxQueue* \[in\]  
+*RxQueue* [in]  
 A handle to a net receive queue object.
 
-*NotificationEnabled* \[in\]  
+*NotificationEnabled* [in]  
 A Boolean value which, if TRUE, indicates that the driver's EVT_RXQUEUE_ADVANCE callback will not be called until either a higher level application finishes processing previously indicated data, or the driver calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md). See Remarks for more info.
 
 Return value

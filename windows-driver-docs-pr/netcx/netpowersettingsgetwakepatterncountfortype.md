@@ -31,10 +31,10 @@ ULONG NetPowerSettingsGetWakePatternCountForType(
 Parameters
 ----------
 
-*NetPowerSettings* \[in\]  
+*NetPowerSettings* [in]  
 A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
-*WakePatternType* \[in\]  
+*WakePatternType* [in]  
 An [**NDIS_PM_WOL_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) value that contains the type of WoL pattern to count.
 
 Return value

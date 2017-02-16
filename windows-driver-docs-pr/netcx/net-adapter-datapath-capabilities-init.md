@@ -29,7 +29,7 @@ FORCEINLINE VOID NET_ADAPTER_DATAPATH_CAPABILITIES_INIT(
 Parameters
 ----------
 
-*DataPathCapabilities* \[out\]  
+*DataPathCapabilities* [out]  
 A pointer to the driver-allocated [**NET_ADAPTER_DATAPATH_CAPABILITIES**](net-adapter-datapath-capabilities.md) structure.
 
 Return value

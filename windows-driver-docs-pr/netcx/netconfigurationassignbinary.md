@@ -31,16 +31,16 @@ NTSTATUS NetConfigurationAssignBinary(
 Parameters
 ----------
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
-*ValueName* \[in\]  
+*ValueName* [in]  
 A pointer to a **UNICODE_STRING** structure that contains a value name. 
 
-*Buffer* \[in\]  
+*Buffer* [in]  
 A pointer to a buffer that contains driver-supplied data.
 
-*BufferLength* \[in\]  
+*BufferLength* [in]  
 The length, in bytes, of the buffer that *Buffer* points to.
 
 Return value

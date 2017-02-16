@@ -28,7 +28,7 @@ NDIS_NIC_SWITCH_ID NetRequestGetSwitchId(
 Parameters
 ----------
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
 Return value

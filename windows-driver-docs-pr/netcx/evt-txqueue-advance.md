@@ -36,7 +36,7 @@ Register your implementation of this callback function by setting the appropriat
 Parameters
 ----------
 
-*TxQueue* \[in\]  
+*TxQueue* [in]  
 A handle to a net transmit queue object.
 
 Return value

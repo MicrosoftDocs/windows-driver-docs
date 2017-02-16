@@ -28,7 +28,7 @@ ULONG NetRxQueueInitGetQueueId(
 Parameters
 ----------
 
-*NetRxQueueInit* \[in\]  
+*NetRxQueueInit* [in]  
 A pointer to a NetAdapterCx-allocated **NETRXQUEUE_INIT** structure. For more information, see the Remarks section.
 
 Return value

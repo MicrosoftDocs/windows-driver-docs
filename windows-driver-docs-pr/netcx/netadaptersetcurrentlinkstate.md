@@ -30,10 +30,10 @@ VOID NetAdapterSetCurrentLinkState(
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*CurrentLinkState* \[in\]  
+*CurrentLinkState* [in]  
 A pointer to an allocated and initialized [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure that describes the current link state of the adapter.
 
 Return value

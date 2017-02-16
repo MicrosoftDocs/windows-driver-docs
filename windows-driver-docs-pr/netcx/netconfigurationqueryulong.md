@@ -32,16 +32,16 @@ NTSTATUS NetConfigurationQueryUlong(
 Parameters
 ----------
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
-*Flags* \[in\]  
+*Flags* [in]  
 A valid bitwise OR of [**NET_CONFIGURATION_QUERY_ULONG_FLAGS**](net-configuration-query-ulong-flags.md)-typed flags.
 
-*ValueName* \[in\]  
+*ValueName* [in]  
 A pointer to a **UNICODE_STRING** structure that contains a name for the ULONG value.
 
-*Value* \[out\]  
+*Value* [out]  
 A pointer to a location that receives the data that is assigned to the value that *ValueName* specifies.
 
 Return value

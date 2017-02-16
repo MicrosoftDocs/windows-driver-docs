@@ -29,7 +29,7 @@ FORCEINLINE VOID NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED(
 Parameters
 ----------
 
-*LinkState* \[out\]  
+*LinkState* [out]  
 A pointer to a driver-allocated [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure.
 
 Return value

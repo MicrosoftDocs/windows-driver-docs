@@ -33,16 +33,16 @@ void NET_TXQUEUE_CONFIG_INIT(
 Parameters
 ----------
 
-*NetTxQueueConfig* \[out\]  
+*NetTxQueueConfig* [out]  
 A pointer to the driver-allocated [**NET_TXQUEUE_CONFIG**](net-txqueue-config.md) structure.
 
-*EvtTxQueueAdvance* \[in\]  
+*EvtTxQueueAdvance* [in]  
 A pointer to the driver's [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback function.
 
-*EvtTxQueueSetNotificationEnabled* \[in\]  
+*EvtTxQueueSetNotificationEnabled* [in]  
 A pointer to the driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) callback function.
 
-*EvtTxQueueCancel* \[in\]  
+*EvtTxQueueCancel* [in]  
 A pointer to the driver's [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md) callback function.
 
 Return value

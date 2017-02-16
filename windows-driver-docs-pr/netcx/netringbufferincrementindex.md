@@ -31,10 +31,10 @@ UINT32 NetRingBufferIncrementIndex(
 Parameters
 ----------
 
-*RingBuffer* \[in\]  
+*RingBuffer* [in]  
 The [**NET_RING_BUFFER**](net-ring-buffer.md) to access
 
-*Index* \[in\]  
+*Index* [in]  
 The starting index
 
 Return value

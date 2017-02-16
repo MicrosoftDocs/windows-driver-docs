@@ -31,13 +31,13 @@ NTSTATUS NetRequestQueueCreate(
 Parameters
 ----------
 
-*NetRequestQueueConfig* \[in\]  
+*NetRequestQueueConfig* [in]  
 A pointer to a caller-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
-*QueueAttributes* \[in, optional\]  
+*QueueAttributes* [in, optional]  
 An optional pointer to a caller-allocated [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that specifies attributes for the net request queue object.
 
-*Queue* \[out, optional\]  
+*Queue* [out, optional]  
 An optional pointer to a location that receives a handle to the new net request queue object.
 
 Return value

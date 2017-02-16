@@ -31,10 +31,10 @@ BOOLEAN NetPowerSettingsIsWakePatternEnabled(
 Parameters
 ----------
 
-*NetPowerSettings* \[in\]  
+*NetPowerSettings* [in]  
 A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
-*NdisPmWolPattern* \[in\]  
+*NdisPmWolPattern* [in]  
 A pointer to a [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure obtained by calling [**NetPowerSettingsGetWakePattern**](netpowersettingsgetwakepattern.md).
 
 Return value

@@ -36,16 +36,16 @@ typedef EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD PFN_NET_ADAPTER_PREVIEW_PROTOCO
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*ExistingPowerSettings* \[in\]  
+*ExistingPowerSettings* [in]  
 A handle to the net wake settings object.
 
-*ProtocolOffloadType* \[in\]  
+*ProtocolOffloadType* [in]  
 An [**NDIS_PM_PROTOCOL_OFFLOAD_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff566765) enumeration value that specifies the type of protocol offload.
 
-*ProtocolOffloadToBeAdded* \[in\]  
+*ProtocolOffloadToBeAdded* [in]  
 A pointer to a structure of type [**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) that specifies the protocol offload to accept or reject.
 
 Return value

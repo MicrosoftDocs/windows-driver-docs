@@ -31,10 +31,10 @@ void NetAdapterSetLinkLayerMtuSize(
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*MtuSize* \[in\]  
+*MtuSize* [in]  
 The new size of the adapter's MTU, in bytes.
 
 Return value
