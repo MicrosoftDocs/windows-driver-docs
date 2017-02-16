@@ -12,8 +12,9 @@ api_type:
 
 # NET_ADAPTER_WAKEUP_EVENTS_FLAGS enumeration
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
+Specifies the media-independent wake-up events that a network adapter supports.
 
 Syntax
 ------
@@ -29,8 +30,16 @@ Constants
 ---------
 
 **NET_ADAPTER_WAKE_ON_MEDIA_CONNECT**  
+If this flag is set, the network adapter can generate a wake-up event when it becomes connected to the networking interface.
 
 **NET_ADAPTER_WAKE_ON_MEDIA_DISCONNECT**  
+If this flag is set, the network adapter can generate a wake-up event when it becomes disconnected to the networking interface.
+
+Remarks
+-------
+The **NET_ADAPTER_WAKEUP_EVENTS_FLAGS** enumeration is used to specify media-independent wake-up events in the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
+
+The client driver passes an initialized **NET_ADAPTER_POWER_CAPABILITIES** structure as an input parameter value to [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
 
 Requirements
 ------------
@@ -57,7 +66,6 @@ Requirements
 </table>
 
 ## See also
-
 
 [**NDIS_PM_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748)
 
