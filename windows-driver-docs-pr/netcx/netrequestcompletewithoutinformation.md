@@ -29,10 +29,10 @@ VOID NetRequestCompleteWithoutInformation(
 Parameters
 ----------
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
-*CompletionStatus* \[in\]  
+*CompletionStatus* [in]  
 An NTSTATUS value that represents the completion status of the request.  Valid status values include, but are not limited to, the following:
 
 |Return code|Description|

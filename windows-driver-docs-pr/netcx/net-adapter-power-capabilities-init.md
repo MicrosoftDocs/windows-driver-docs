@@ -29,7 +29,7 @@ FORCEINLINE VOID NET_ADAPTER_POWER_CAPABILITIES_INIT(
 Parameters
 ----------
 
-*PowerCapabilities* \[out\]  
+*PowerCapabilities* [out]  
 A pointer to the driver-allocated [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
 
 Return value

@@ -28,7 +28,7 @@ NDIS_NIC_SWITCH_VPORT_ID NetRequestGetVPortId(
 Parameters
 ----------
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
 Return value

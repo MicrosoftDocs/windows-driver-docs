@@ -37,16 +37,16 @@ typedef EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN PFN_NET_ADAPTER_PREVIEW_WAKE_PATTER
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*ExistingPowerSettings* \[in\]  
+*ExistingPowerSettings* [in]  
 A handle to the net wake settings object.
 
-*WakePatternType* \[in\]  
+*WakePatternType* [in]  
 An [**NDIS_PM_WOL_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) enumeration value that specifies the type of the WOL packet.
 
-*PatternToBeAdded* \[in\]  
+*PatternToBeAdded* [in]  
 A pointer to a structure of type [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) that specifies the wake-on-LAN (WOL) pattern to accept or reject.
 
 Return value

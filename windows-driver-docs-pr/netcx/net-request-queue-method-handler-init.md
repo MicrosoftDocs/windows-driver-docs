@@ -34,19 +34,19 @@ void NET_REQUEST_QUEUE_METHOD_HANDLER_INIT(
 Parameters
 ----------
 
-*MethodHandler* \[out\]  
+*MethodHandler* [out]  
 A pointer to the driver-allocated NET_REQUEST_QUEUE_METHOD_HANDLER structure.
 
-*Oid* \[in\]  
+*Oid* [in]  
 The NDIS_OID identifier for the request.
 
-*EvtRequestMethod* \[in\]  
+*EvtRequestMethod* [in]  
 Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_METHOD*](evt-net-request-method.md) event callback function.
 
-*MinimumInputLength* \[in\]  
+*MinimumInputLength* [in]  
 The needed minimum input length for the request.
 
-*MinimumOutputLength* \[in\]  
+*MinimumOutputLength* [in]  
 The needed minimum output length for the request.
 
 Return value

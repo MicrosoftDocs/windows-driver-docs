@@ -31,10 +31,10 @@ BOOLEAN NetPowerSettingsIsProtocolOffloadEnabled(
 Parameters
 ----------
 
-*NetPowerSettings* \[in\]  
+*NetPowerSettings* [in]  
 A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
-*NdisProtocolOffload* \[in\]  
+*NdisProtocolOffload* [in]  
 A pointer to a [**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) structure obtained by calling [**NetPowerSettingsGetProtocolOffload**](netpowersettingsgetprotocoloffload.md).
 
 Return value

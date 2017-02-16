@@ -33,16 +33,16 @@ void NET_RXQUEUE_CONFIG_INIT(
 Parameters
 ----------
 
-*NetRxQueueConfig* \[out\]  
+*NetRxQueueConfig* [out]  
 A pointer to the driver-allocated [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md) structure.
 
-*EvtRxQueueAdvance* \[in\]  
+*EvtRxQueueAdvance* [in]  
 A pointer to the driver's [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback function.
 
-*EvtRxQueueSetNotificationEnabled* \[in\]  
+*EvtRxQueueSetNotificationEnabled* [in]  
 A pointer to the driver's [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) callback function.
 
-*EvtRxQueueCancel* \[in\]  
+*EvtRxQueueCancel* [in]  
 A pointer to the driver's [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md) callback function.
 
 Return value

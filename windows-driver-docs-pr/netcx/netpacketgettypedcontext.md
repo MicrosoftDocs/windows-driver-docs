@@ -31,9 +31,9 @@ PVOID NetPacketGetTypedContext(
 Parameters
 ----------
 
-*NetPacket* \[in\]  
+*NetPacket* [in]  
 
-*TypeInfo* \[in\]  
+*TypeInfo* [in]  
 
 Return value
 ------------

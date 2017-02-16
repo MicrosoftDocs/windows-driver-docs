@@ -28,7 +28,7 @@ ULONG NetTxQueueInitGetQueueId(
 Parameters
 ----------
 
-*NetTxQueueInit* \[in\]  
+*NetTxQueueInit* [in]  
 
 Return value
 ------------

@@ -29,7 +29,7 @@ NTSTATUS NetAdapterDeviceInitConfig(
 Parameters
 ----------
 
-*DeviceInit* \[in, out\]  
+*DeviceInit* [in, out]  
 The DeviceInit value passed in to the client by WDF in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) routine.
 
 Return value

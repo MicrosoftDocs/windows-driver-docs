@@ -28,7 +28,7 @@ NDIS_PORT_NUMBER NetRequestGetPortNumber(
 Parameters
 ----------
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
 Return value

@@ -30,10 +30,10 @@ VOID NetAdapterSetLinkLayerCapabilities(
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*LinkCapabilities* \[in\]  
+*LinkCapabilities* [in]  
 A pointer to an allocated and initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure.
 
 Return value

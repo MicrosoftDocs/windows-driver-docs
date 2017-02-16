@@ -31,10 +31,10 @@ PNDIS_PM_WOL_PATTERN NetPowerSettingsGetWakePattern(
 Parameters
 ----------
 
-*NetPowerSettings* \[in\]  
+*NetPowerSettings* [in]  
 A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
-*Index* \[in\]  
+*Index* [in]  
 A zero-based value that is used as an index into the WoL patterns stored in the NETPOWERSETTINGS object. This value must be less than the value returned by [**NetPowerSettingsGetWakePatternCount**](netpowersettingsgetwakepatterncount.md).
 
 Return value

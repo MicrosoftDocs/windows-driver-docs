@@ -31,9 +31,9 @@ void NetRingBufferReturnCompletedPacketsThroughIndex(
 Parameters
 ----------
 
-*RingBuffer* \[in\]  
+*RingBuffer* [in]  
 
-*EndIndex* \[in\]  
+*EndIndex* [in]  
 
 Return value
 ------------

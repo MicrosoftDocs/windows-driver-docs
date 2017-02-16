@@ -30,7 +30,7 @@ void NetRingBufferReturnCompletedPackets(
 Parameters
 ----------
 
-*RingBuffer* \[in\]  
+*RingBuffer* [in]  
 The [**NET_RING_BUFFER**](net-ring-buffer.md) that
 
 Return value

@@ -30,13 +30,13 @@ NTSTATUS NetConfigurationAssignMultiString(
 Parameters
 ----------
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
-*ValueName* \[in\]  
+*ValueName* [in]  
 A pointer to a **UNICODE_STRING** structure that contains a value name. 
 
-*Collection* \[in\]  
+*Collection* [in]  
 A handle to a framework collection object that represents a collection of framework string objects. 
 
 Return value

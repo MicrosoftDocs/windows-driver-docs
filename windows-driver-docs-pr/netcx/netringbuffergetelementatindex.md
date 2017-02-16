@@ -31,11 +31,11 @@ VOID* NetRingBufferGetElementAtIndex(
 Parameters
 ----------
 
-*RingBuffer* \[in\]  
+*RingBuffer* [in]  
 A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
-*Index* \[in\]  
-The element index, within the range \[0, RingBuffer-&gt;NumberOfElements).
+*Index* [in]  
+The element index, within the range [0, RingBuffer-&gt;NumberOfElements).
 
 Return value
 ------------

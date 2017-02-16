@@ -32,16 +32,16 @@ FORCEINLINE VOID NET_ADAPTER_CONFIG_INIT(
 Parameters
 ----------
 
-*AdapterConfig* \[out\]  
+*AdapterConfig* [out]  
 A pointer to the driver-allocated [**NET_ADAPTER_CONFIG**](net-adapter-config.md) structure.
 
-*EvtAdapterSetCapabilities* \[in\]  
+*EvtAdapterSetCapabilities* [in]  
 A pointer to the client's implementation of the [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) event callback.
 
-*EvtAdapterCreateTxQueue* \[in\]  
+*EvtAdapterCreateTxQueue* [in]  
 A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) event callback.
 
-*EvtAdapterCreateRxQueue* \[in\]  
+*EvtAdapterCreateRxQueue* [in]  
 A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback.
 
 Return value

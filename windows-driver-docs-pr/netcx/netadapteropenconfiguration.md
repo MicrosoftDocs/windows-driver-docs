@@ -32,13 +32,13 @@ NTSTATUS NetAdapterOpenConfiguration(
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*ConfigurationAttributes* \[in, optional\]  
+*ConfigurationAttributes* [in, optional]  
 A pointer to a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new configuration object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-*Configuration* \[out\]  
+*Configuration* [out]  
 A pointer to a location that receives a handle to the new adapter configuration object.
 
 Return value

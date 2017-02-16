@@ -30,10 +30,10 @@ VOID NetAdapterSetDataPathCapabilities(
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*DataPathCapabilities* \[in\]  
+*DataPathCapabilities* [in]  
 A pointer to an allocated and initialized [**NET_ADAPTER_DATAPATH_CAPABILITIES**](net-adapter-datapath-capabilities.md) structure.
 
 Return value

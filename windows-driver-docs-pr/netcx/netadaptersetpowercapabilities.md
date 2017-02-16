@@ -30,10 +30,10 @@ void NetAdapterSetPowerCapabilities(
 Parameters
 ----------
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*PowerCapabilities* \[in\]  
+*PowerCapabilities* [in]  
 A pointer to an allocated and initialized [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
 
 Return value

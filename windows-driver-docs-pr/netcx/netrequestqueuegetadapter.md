@@ -28,7 +28,7 @@ NETADAPTER NetRequestQueueGetAdapter(
 Parameters
 ----------
 
-*NetRequestQueue* \[in\]  
+*NetRequestQueue* [in]  
 A handle to a net request queue object.
 
 Return value

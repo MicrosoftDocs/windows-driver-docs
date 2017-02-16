@@ -30,10 +30,10 @@ FORCEINLINE VOID NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER(
 Parameters
 ----------
 
-*NetRequestQueueConfig* \[in\]  
+*NetRequestQueueConfig* [in]  
 A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the query data handler is being added.
 
-*QueryDataHandler* \[in\]  
+*QueryDataHandler* [in]  
 A pointer to a driver-allocated and initialized structure of type [**NET_REQUEST_QUEUE_QUERY_DATA_HANDLER**](net-request-queue-query-data-handler.md).
 
 Return value

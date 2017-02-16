@@ -40,22 +40,22 @@ Register your implementation of this callback function by setting the appropriat
 Parameters
 ----------
 
-*RequestQueue* \[in\]  
+*RequestQueue* [in]  
 A handle to a net request queue object.
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
-*Oid* \[in\]  
+*Oid* [in]  
 The object identifier of the requested operation. The value is an OID_ *XXX* code.
 
-*InputOutputBuffer* \[out\]  
+*InputOutputBuffer* [out]  
 A pointer to a buffer into which the client driver or NetAdapterCx returns information for the specified request.
 
-*InputBufferLength* \[in\]  
+*InputBufferLength* [in]  
 The length, in bytes, of the request's input buffer, if an input buffer is available.
 
-*OutputBufferLength* \[in\]  
+*OutputBufferLength* [in]  
 The length, in bytes, of the request's output buffer, if an output buffer is available.
 
 Return value

@@ -40,31 +40,31 @@ FORCEINLINE VOID NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT(
 Parameters
 ----------
 
-*LinkLayerCapabilities* \[out\]  
+*LinkLayerCapabilities* [out]  
 A pointer to the driver-allocated [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure that describes the MAC capabilities of the adapter.
 
-*SupportedPacketFilters* \[in\]  
+*SupportedPacketFilters* [in]  
 An enumeration of type [NET_PACKET_FILTER_TYPES_FLAGS](net-packet-filter-types-flags.md) that specifying packet filters the adapter supports.
 
-*MaxMulticastListSize* \[in\]  
+*MaxMulticastListSize* [in]  
 The multicast address list size for the adapter.
 
-*SupportedStatistics* \[in\]  
+*SupportedStatistics* [in]  
 A bitwise OR of [NET_ADAPTER_STATISTICS_FLAGS](net-adapter-statistics-flags.md)-typed flags specifying statistics the adapter supports.
 
-*MaxTxLinkSpeed* \[in\]  
+*MaxTxLinkSpeed* [in]  
 The maximum transmit link speed of the adapter in bits per second. For more information, see [**OID_GEN_MAX_LINK_SPEED**](https://msdn.microsoft.com/library/windows/hardware/ff569602).
 
-*MaxRxLinkSpeed* \[in\]  
+*MaxRxLinkSpeed* [in]  
 The maximum receive link speed of the adapter in bits per second. For more information, see [**OID_GEN_MAX_LINK_SPEED**](https://msdn.microsoft.com/library/windows/hardware/ff569602).
 
-*PhysicalAddressLength* \[in\]  
+*PhysicalAddressLength* [in]  
 The MAC address length, in bytes. The MAC address length is specific to the type of media.
 
-*PermanentPhysicalAddress* \[in\]  
+*PermanentPhysicalAddress* [in]  
 The permanent MAC address. For example, the [**OID_802_3_PERMANENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569074) OID specifies the permanent MAC address for IEEE 802.3 drivers.
 
-*CurrentPhysicalAddress* \[in\]  
+*CurrentPhysicalAddress* [in]  
 The current MAC address. For example, the [**OID_802_3_CURRENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569069) OID specifies the current MAC address for IEEE 802.3 drivers.
 
 Requirements

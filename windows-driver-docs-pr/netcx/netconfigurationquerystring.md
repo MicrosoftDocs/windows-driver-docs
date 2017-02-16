@@ -33,16 +33,16 @@ NTSTATUS NetConfigurationQueryString(
 Parameters
 ----------
 
-*Configuration* \[in\]  
+*Configuration* [in]  
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
-*ValueName* \[in\]  
+*ValueName* [in]  
 A pointer to a **UNICODE_STRING** structure that contains a name for string value.
 
-*StringAttributes* \[in, optional\]  
+*StringAttributes* [in, optional]  
 A pointer to a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400) structure that contains driver-supplied attributes for the new WDFSTRING object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-*WdfString* \[out\]  
+*WdfString* [out]  
 A handle to a framework string object. NetAdapterCx will assign the registry value's string data to this object.
 
 Return value

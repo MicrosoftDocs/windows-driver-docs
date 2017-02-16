@@ -33,16 +33,16 @@ NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER(
 
 Parameters
 ----------
-*NetRequestQueueConfig* \[in\]  
+*NetRequestQueueConfig* [in]  
 A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
 
-*Oid* \[in\]  
+*Oid* [in]  
 The object identifier of the requested operation. The value is an OID_ *XXX* code.
 
-*EvtRequestSetData* \[in\]
+*EvtRequestSetData* [in]
 Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_SET_DATA*](evt-net-request-set-data.md) event callback function.
 
-*MinimumInputLength* \[in\]
+*MinimumInputLength* [in]
 A UINT specifying the minimum input length for the request.
 
 Return value

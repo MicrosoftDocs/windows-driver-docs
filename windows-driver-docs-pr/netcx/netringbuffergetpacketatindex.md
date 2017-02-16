@@ -31,10 +31,10 @@ NET_PACKET* NetRingBufferGetPacketAtIndex(
 Parameters
 ----------
 
-*RingBuffer* \[in\]  
+*RingBuffer* [in]  
 The [**NET_RING_BUFFER**](net-ring-buffer.md) that
 
-*Index* \[in\]  
+*Index* [in]  
 
 Return value
 ------------

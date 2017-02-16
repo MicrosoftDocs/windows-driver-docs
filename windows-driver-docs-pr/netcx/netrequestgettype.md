@@ -28,7 +28,7 @@ NDIS_REQUEST_TYPE NetRequestGetType(
 Parameters
 ----------
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a network request object.
 
 Return value

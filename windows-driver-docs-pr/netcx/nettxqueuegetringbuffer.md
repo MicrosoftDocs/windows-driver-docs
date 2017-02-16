@@ -28,7 +28,7 @@ PNET_RING_BUFFER NetTxQueueGetRingBuffer(
 Parameters
 ----------
 
-*NetTxQueue* \[in\]  
+*NetTxQueue* [in]  
 A handle to a net transmit queue object.
 
 Return value

@@ -41,19 +41,19 @@ Parameters
  
  
 
-*NetRequestQueueConfig* \[in\]  
+*NetRequestQueueConfig* [in]  
 A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
 
-*Oid* \[in\]  
+*Oid* [in]  
 The object identifier of the requested operation. The value is an OID_ *XXX* code.
 
-*EvtRequestMethod* \[in\]
+*EvtRequestMethod* [in]
 Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_METHOD*](evt-net-request-method.md) event callback function.
 
-*MinimumInputLength* \[in\]
+*MinimumInputLength* [in]
 A UINT specifying the minimum input length for the request.
 
-*MinimumOutputLength*  \[in\]
+*MinimumOutputLength*  [in]
 A UINT specifying the minimum output length for the request.
 
 Return value

@@ -31,10 +31,10 @@ NDIS_HANDLE NetAdapterDriverWdmGetHandle(
 Parameters
 ----------
 
-*Driver* \[in\]  
+*Driver* [in]  
 A handle to the driver's framework driver object, obtained from a previous call to [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175).
 
-*Type* \[in\]  
+*Type* [in]  
 A [**NET_ADAPTER_DRIVER_TYPE**](net-adapter-driver-type.md) enumeration value that specifies the type of network adapter driver.
 
 Return value

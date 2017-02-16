@@ -32,13 +32,13 @@ void NET_REQUEST_QUEUE_CONFIG_INIT(
 Parameters
 ----------
 
-*NetRequestQueueConfig* \[out\]  
+*NetRequestQueueConfig* [out]  
 A pointer to the driver-allocated NET_REQUEST_QUEUE_CONFIG structure.
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
-*QueueType* \[in\]  
+*QueueType* [in]  
 A [NET_REQUEST_QUEUE_TYPE](net-request-queue-type.md) enumeration that specifies the type of queue.
 
 Return value

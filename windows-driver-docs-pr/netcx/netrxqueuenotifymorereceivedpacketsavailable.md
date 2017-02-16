@@ -29,7 +29,7 @@ void NetRxQueueNotifyMoreReceivedPacketsAvailable(
 Parameters
 ----------
 
-*RxQueue* \[in\]  
+*RxQueue* [in]  
 A handle to a net receive queue object.
 
 Return value

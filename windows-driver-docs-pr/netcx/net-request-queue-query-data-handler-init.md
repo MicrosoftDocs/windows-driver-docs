@@ -33,16 +33,16 @@ void NET_REQUEST_QUEUE_QUERY_DATA_HANDLER_INIT(
 Parameters
 ----------
 
-*QueryDataHandler* \[out\]  
+*QueryDataHandler* [out]  
 A pointer to the driver-allocated NET_REQUEST_QUEUE_QUERY_DATA_HANDLER structure.
 
-*Oid* \[in\]  
+*Oid* [in]  
 The NDIS_OID identifier for the request.
 
-*EvtRequestQueryData* \[in\]  
+*EvtRequestQueryData* [in]  
 Pointer to the custom query request handler.
 
-*MinimumOutputLength* \[in\]  
+*MinimumOutputLength* [in]  
 The needed minimum output length for the request.
 
 Return value

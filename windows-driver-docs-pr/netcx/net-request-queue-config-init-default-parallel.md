@@ -30,10 +30,10 @@ FORCEINLINE void NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER(
 Parameters
 ----------
 
-*NetRequestQueueConfig* \[out\]  
+*NetRequestQueueConfig* [out]  
 A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
-*Adapter* \[in\]  
+*Adapter* [in]  
 The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 Return value

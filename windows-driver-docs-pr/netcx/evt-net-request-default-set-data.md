@@ -40,19 +40,19 @@ Register your implementation of this callback function by setting the appropriat
 Parameters
 ----------
 
-*RequestQueue* \[in\]  
+*RequestQueue* [in]  
 A handle to a net request queue object.
 
-*Request* \[in\]  
+*Request* [in]  
 A handle to a net request object.
 
-*Oid* \[in\]  
+*Oid* [in]  
 Specifies the object identifier of the requested operation. The value is an OID_XXX code. 
 
-*InputBuffer* \[in\]  
+*InputBuffer* [in]  
 A pointer to a caller-supplied buffer.
 
-*InputBufferLength* \[in\]  
+*InputBufferLength* [in]  
 The size of the buffer pointed to by *InputBuffer*.
 
 Return value
