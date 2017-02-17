@@ -1,17 +1,16 @@
 ---
-title: NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT method
+title: NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT_NO_PHYSICAL_ADDRESS method
 topic_type:
 - apiref
 api_name:
-- NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT
+- NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT_NO_PHYSICAL_ADDRESS
 api_location:
 - netadapter.h
 api_type:
 - HeaderDef
 ---
 
-# NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT method
-
+# NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT_NO_PHYSICAL_ADDRESS method
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
@@ -21,19 +20,13 @@ Syntax
 ------
 
 ```ManagedCPlusPlus
-FORCEINLINE VOID NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT(
+FORCEINLINE VOID NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT_NO_PHYSICAL_ADDRESS(
     _Out_ PNET_ADAPTER_LINK_LAYER_CAPABILITIES  LinkLayerCapabilities,
     _In_  NET_PACKET_FILTER_TYPES_FLAGS         SupportedPacketFilters,
     _In_  ULONG                                 MaxMulticastListSize,
     _In_  NET_ADAPTER_STATISTICS_FLAGS          SupportedStatistics,
     _In_  ULONG64                               MaxTxLinkSpeed,
     _In_  ULONG64                               MaxRxLinkSpeed,
-    _In_range_(1,NDIS_MAX_PHYS_ADDRESS_LENGTH)
-          USHORT                                PhysicalAddressLength,
-    _In_reads_bytes_(PhysicalAddressLength) 
-          PUCHAR                                PermanentPhysicalAddress,
-    _In_reads_bytes_(PhysicalAddressLength) 
-          PUCHAR                                CurrentPhysicalAddress
     ) 
 ```
 
@@ -58,18 +51,9 @@ The maximum transmit link speed of the adapter in bits per second. For more info
 *MaxRxLinkSpeed* [in]  
 The maximum receive link speed of the adapter in bits per second. For more information, see [**OID_GEN_MAX_LINK_SPEED**](https://msdn.microsoft.com/library/windows/hardware/ff569602).
 
-*PhysicalAddressLength* [in]  
-The MAC address length, in bytes. The MAC address length is specific to the type of media.
-
-*PermanentPhysicalAddress* [in]  
-The permanent MAC address. For example, the [**OID_802_3_PERMANENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569074) OID specifies the permanent MAC address for IEEE 802.3 drivers.
-
-*CurrentPhysicalAddress* [in]  
-The current MAC address. For example, the [**OID_802_3_CURRENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569069) OID specifies the current MAC address for IEEE 802.3 drivers.
-
 Remarks
 -----
-**NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT** zeroes out the [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure and then sets all of its members.  It calls [**NET_ADAPTER_PHYSICAL_ADDRESS_INIT**](net-adapter-physical-address-init.md) to set the **PhysicalAddress** member.
+**NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT** zeroes out the [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure and then sets all of its members except for **PhysicalAddress**.
 
 Requirements
 ------------
