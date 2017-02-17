@@ -33,7 +33,7 @@ Parameters
 ----------
 
 *RingBuffer* [in]  
-The [**NET_RING_BUFFER**](net-ring-buffer.md) to access
+A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 *StartIndex* [in]  
 The inclusive start of the range to measure

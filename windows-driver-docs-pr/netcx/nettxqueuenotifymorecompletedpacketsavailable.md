@@ -40,9 +40,9 @@ This method does not return a value.
 Remarks
 -------
 
-After NetAdapterCx calls a client driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine, the client must call **NetTxQueueNotifyMoreCompletedPacketsAvailable** to resume queue operations. Typically, the client does this after it completes a pending NET_PACKET in the transmit queue’s [**NET_RING_BUFFER**](net-ring-buffer.md).
+After NetAdapterCx calls a client driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine, the client must call **NetTxQueueNotifyMoreCompletedPacketsAvailable** to resume queue operations. Typically, the client does this after it completes a pending [**NET_PACKET**](net-packet.md) in the transmit queue’s [**NET_RING_BUFFER**](net-ring-buffer.md).
 
-Then NetAdapterCx reclaims the NET_PACKET previously used for transmit and calls the client’s [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback function.
+Then NetAdapterCx reclaims the [**NET_PACKET**](net-packet.md) previously used for transmit and calls the client’s [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback function.
 
 Requirements
 ------------

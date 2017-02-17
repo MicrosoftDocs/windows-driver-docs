@@ -53,7 +53,7 @@ Remarks
 
 The client driver passes an initialized **NET_ADAPTER_LINK_LAYER_CAPABILITIES** structure as an input parameter value to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
 
-Call [**NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT**](net-adapter-link-layer-capabilities-init.md) to initialize this structure.
+Call [**NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT_NO_PHYSICAL_ADDRESS**](net-adapter-link-layer-capabilities-init-no-physical-address.md) or [**NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT**](net-adapter-link-layer-capabilities-init.md) to initialize this structure.
 
 Requirements
 ------------

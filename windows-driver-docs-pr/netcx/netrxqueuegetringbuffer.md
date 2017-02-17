@@ -34,7 +34,7 @@ A handle to a net receive queue object.
 Return value
 ------------
 
-Returns a pointer to the [NET_RING_BUFFER](net-ring-buffer.md) structure associated with a net receive queue structure.
+Returns a pointer to the [**NET_RING_BUFFER**](net-ring-buffer.md) structure associated with a net receive queue structure.
 
 Requirements
 ------------

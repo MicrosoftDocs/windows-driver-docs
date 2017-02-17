@@ -32,6 +32,7 @@ Parameters
 ----------
 
 *RingBuffer* [in]  
+A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 *EndIndex* [in]  
 

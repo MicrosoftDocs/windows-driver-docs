@@ -31,7 +31,7 @@ Parameters
 ----------
 
 *RingBuffer* [in]  
-The [**NET_RING_BUFFER**](net-ring-buffer.md) that
+A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 Return value
 ------------

@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call NET_RING_BUFFER_INIT to initialize this structure.
+Specifies a buffer comprised of one or more [**NET_PACKET**](net-packet.md) structures.
 
 Syntax
 ------
@@ -39,24 +39,34 @@ Members
 -------
 
 **OSReserved1**  
+Reserved.
 
 **ElementStride**  
+The byte offset from the start of one packet to the start of the next.
 
 **NumberOfElements**  
+Indicates the number of packets in the ring buffer. 
 
 **ElementIndexMask**  
+TBD
 
 **BeginIndex**  
+Specifies an index value to the first packet in the ring buffer.
 
 **NextIndex**  
+Specifies an index value to the packet to be processed next.
 
 **EndIndex**  
+Specifies an index value to the last packet in the ring buffer.
 
 **NetAdapterScratch**  
+Reserved.
 
 **OSReserved2**  
+Reserved.
 
 **Buffer**  
+Pointer to the ring buffer.
 
 Requirements
 ------------

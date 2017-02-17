@@ -40,9 +40,9 @@ This method does not return a value.
 Remarks
 -------
 
-After NetAdapterCx calls a client driver's [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) event callback routine, the client must call **NetRxQueueNotifyMoreReceivedPacketsAvailable** to resume queue operations. Typically, the client does this after it completes a pending NET_PACKET in the receive queue’s [**NET_RING_BUFFER**](net-ring-buffer.md).
+After NetAdapterCx calls a client driver's [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) event callback routine, the client must call **NetRxQueueNotifyMoreReceivedPacketsAvailable** to resume queue operations. Typically, the client does this after it completes a pending [**NET_PACKET**](net-packet.md) in the receive queue’s [**NET_RING_BUFFER**](net-ring-buffer.md).
 
-When the client driver calls **NetRxQueueNotifyMoreReceivedPacketsAvailable**, NetAdapterCx reclaims the NET_PACKET previously used for receive and may subsequently call the client’s [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback function.
+When the client driver calls **NetRxQueueNotifyMoreReceivedPacketsAvailable**, NetAdapterCx reclaims the [**NET_PACKET**](net-packet.md) previously used for receive and may subsequently call the client’s [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback function.
 
 Requirements
 ------------

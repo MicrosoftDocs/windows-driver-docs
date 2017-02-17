@@ -32,7 +32,7 @@ Parameters
 ----------
 
 *RingBuffer* [in]  
-The [**NET_RING_BUFFER**](net-ring-buffer.md) to access
+A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 *Index* [in]  
 The starting index

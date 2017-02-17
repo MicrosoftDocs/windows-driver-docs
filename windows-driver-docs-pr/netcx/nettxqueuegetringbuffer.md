@@ -39,7 +39,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 Return value
 ------------
 
-Returns a pointer to the [NET_RING_BUFFER](net-ring-buffer.md) structure associated with a net transmit queue structure.
+Returns a pointer to the [**NET_RING_BUFFER**](net-ring-buffer.md) structure associated with a net transmit queue structure.
 
 Requirements
 ------------
