@@ -35,7 +35,7 @@ If this flag is set, the network adapter must be able to save the received packe
 If this flag is set, the miniport driver must be able to do the following with this packet after the network adapter transitions to a full-power state:
 
 * The miniport driver must be able to indicate the packet by calling [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598). 
-* The miniport driver must be able to issue an NDIS_STATUS_PM_WAKE_REASON status indication and must pass the packet with the indication. 
+* The miniport driver must be able to issue an NDIS_STATUS_PM_WAKE_REASON status indication and must pass the packet with the indication. To indicate the received packet, the client calls [**NetAdapterWdmGetNdisHandle**](netadapterwdmgetndishandle.md) and then calls [**NdisMIndicateReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff563598).
 
 For more information about this power management capability, see [NDIS Wake Reason Status Indications](../network/ndis-wake-reason-status-indications.md).
 
