@@ -21,6 +21,8 @@ NDIS versions 6.0 and later support large send offload version 1 (LSOV1), which 
 
 A miniport driver that supports LSOV2 and LSOV1 must determine the offload type from the [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) structure OOB information. The driver can use the **Type** member of the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567882) structure to determine whether the driver stack is using LSOV2 or LSOV1 and perform the appropriate offload services. Any NET\_BUFFER\_LIST structure that contains the LSOv1 or LSOv2 OOB data also contains a single [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) structure. For more information about NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md).
 
+However, in a case where the miniport has received [**OID\_TCP\_OFFLOAD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff569807) to turn off LSO feature on the miniport and after the miniport has completed the OID successfully, the miniport shall drop all [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) which contain any non-zero LSOv1 or LSOv2 OOB data([**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567882)).
+
 The TCP/IP transport offloads only those large TCP packets that meet the following criteria:
 
 -   The packet is a TCP packet. The TCP/IP transport does not offload large UDP packets for segmentation.
