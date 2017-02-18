@@ -36,15 +36,15 @@ Parameters
 A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 *StartIndex* [in]  
-The inclusive start of the range to measure
+The inclusive start of the range to measure.
 
 *EndIndex* [in]  
-The exclusive end of the range to measure
+The exclusive end of the range to measure.
 
 Return value
 ------------
 
-The number of elements in the given range
+The number of elements in the given range.
 
 Remarks
 -------
