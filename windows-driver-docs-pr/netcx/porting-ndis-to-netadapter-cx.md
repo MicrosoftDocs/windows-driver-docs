@@ -34,9 +34,9 @@ KmdfLibraryVersion = <insert here>
 
 ## Driver Initialization
 
-Remove the call to NdisMRegisterMiniportDriver from DriverEntry.
+Remove the call to [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) from DriverEntry.
 
-Put the standard WDF driver initialization in [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff540807).  Do not specify the **WdfDriverInitNoDispatchOverride** flag in the call to **WdfDriverCreate**. Remove this flag if you were using WDF in miniport mode in your NDIS 6.x driver.  For example:
+Put the standard WDF driver initialization in [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff540807).  Do not specify the **WdfDriverInitNoDispatchOverride** flag in the call to [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175). Remove this flag if you were using WDF in miniport mode in your NDIS 6.x driver.  For example:
 
 ```ManagedCPlusPlus
 WDF_DRIVER_CONFIG_INIT(&config, EvtDriverDeviceAdd);
@@ -46,11 +46,11 @@ if (!NT_SUCCESS(status)) {
 }
 ```
 
- Consider removing the DriverUnload routine from your client driver, as it is an optional routine for a WDF networking client driver.  If you keep it, remove the call to NdisMDeregisterMiniportDriver from DriverUnload.
+ Consider removing the *DriverUnload* routine from your client driver, as it is an optional routine for a WDF networking client driver.  If you keep it, remove the call to [**NdisMDeregisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563578) from *DriverUnload*.
 
 ## Device Initialization
 
-Next, we need to break MiniportInitializeEx into several pieces, each of which is a standard WDF event.  <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/wdf/power-up-sequence-for-a-function-or-filter-driver">The full sequence of events</a> includes many events, most of which are optional.  You should move code into the most logical place, based on the WDF semantics of each state.
+Next, we need to break *MiniportInitializeEx* into several pieces, each of which is a standard WDF event.  <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/wdf/power-up-sequence-for-a-function-or-filter-driver">The full sequence of events</a> includes many events, most of which are optional.  You should move code into the most logical place, based on the WDF semantics of each state.
 
 In general, the most interesting events are:
 
@@ -65,7 +65,7 @@ While you may need to handle several events to properly manage your device, the 
 In EvtDriverDeviceAdd, your driver should do the following:
 
 1. Call [**NetAdapterDeviceInitConfig**](netadapterdeviceinitconfig.md).
-2. Load pointers to your driver's callbacks and call **WdfDeviceInitSetPnpPowerEventCallbacks**.  For example:
+2. Load pointers to your driver's callbacks and call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff546135).  For example:
 
     ```ManagedCPlusPlus
     status = NetAdapterDeviceInitConfig(DeviceInit);
@@ -82,7 +82,7 @@ In EvtDriverDeviceAdd, your driver should do the following:
     WdfDeviceInitSetPnpPowerEventCallbacks(DeviceInit, &pnpPowerCallbacks);
     ```
 
-3. Call WdfDeviceCreate.
+3. Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 
 4. Next you'll create the NETADAPTER object.  This object represents your NIC, which is the endpoint for all networking I/O.  To create it, initialize a config block and then call NetAdapterCreate.  For example:
 
@@ -113,7 +113,7 @@ The EvtAdapterSetCapabilities is where you call the APIs equivalent to NdisMSetM
 * NetAdapterSetLinkLayerCapabilities
 * NetAdapterSetPowerCapabilities
 
-If you want to set an attribute that does not have a equivalent NetAdapter* API you can call NdisMSetMiniportAttributes from this callback.
+If you want to set an attribute that does not have a equivalent NetAdapter* API you can call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from this callback.
 
 ## Initializing the OID path
 
@@ -178,7 +178,7 @@ In NDIS, to get IOCTLs from user mode you would create a control device object b
 
 Here are two ways to do the same in your WDF networking client driver.
 
-The first option is to create a control device object by calling WdfControlDeviceInitAllocate.  Alternatively, the driver can create a device interface by calling WdfDeviceCreateDeviceInterface with a reference string, as shown here:
+The first option is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff545841).  Alternatively, the driver can create a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) with a reference string, as shown here:
 
 ```ManagedCPlusPlus
 DECLARE_CONST_UNICODE_STRING(c_RefString, L"MyRefString");
@@ -353,15 +353,15 @@ Generally, you should find that you need very few APIs that are imported from ND
 
 |NDIS API Family|WDF Equivalent|
 |-|-|
-|NdisAllocateIoWorkItem|WdfWorkItemCreate|
-|NdisAllocateTimerObject|WdfTimerCreate|
-|NdisAcquireSpinLock|WdfSpinLockAcquire|
+|NdisAllocateIoWorkItem|[**WdfWorkItemCreate**](https://msdn.microsoft.com/library/windows/hardware/ff551201)|
+|NdisAllocateTimerObject|[**WdfTimerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550050)|
+|NdisAcquireSpinLock|[**WdfSpinLockAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff550040)|
 |NdisInterlockedIncrement|InterlockedIncrement (compiler intrinsic)|
-|NdisInitialzeEvent|KeInitialzeEvent|
-|NdisMInitializeScatterGatherDma|WdfDmaEnablerCreate|
-|NdisInitializeString|WdfStringCreate|
-|NdisSystemActiveProcessorCount|KeGetCurrentProcessorNumberEx (kernel)|
-|NdisWriteRegisterUchar|WDF_WRITE_REGISTER_UCHAR|
+|NdisInitialzeEvent|[**KeInitializeEvent**](https://msdn.microsoft.com/library/windows/hardware/ff552137)|
+|NdisMInitializeScatterGatherDma|[**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983)|
+|NdisInitializeString|[**WdfStringCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550046)|
+|NdisSystemActiveProcessorCount|[**KeGetCurrentProcessorNumberEx**](https://msdn.microsoft.com/library/windows/hardware/ff552076) (kernel)|
+|NdisWriteRegisterUchar|[**WDF_WRITE_REGISTER_UCHAR**](https://msdn.microsoft.com/library/windows/hardware/dn265684)|
 
 In some cases, you may be forced to call an NDIS API, because there is no equivalent in WDF, or because it would be difficult to refactor the code at this moment.  In that case, you can use NetAdapterWdmGetNdisHandle to get back an NDIS_HANDLE that works in many NDIS APIs as if it were a handle for an NDIS 6 miniport adapter.  Example:
 
@@ -372,5 +372,5 @@ NdisGetRssProcessorInformation(NetAdapterWdmGetNdisHandle(NetAdapter), . . .);
 Debugging
 ---------
 
-Since your driver is now a full-featured WDF driver, you can use all the usual !wdfkd commands, as you can for any other driver.  In addition, the latest version of !ndiskd.netadapter can see the networking aspect of your driver, and show all the usual things that !ndiskd.miniport showed for your NDIS 6 driver.
+Since your driver is now a full-featured WDF driver, you can use all the usual !wdfkd commands, as you can for any other driver.  In addition, the latest version of !ndiskd.netadapter can see the networking aspect of your driver, and show all the usual things that [**!ndiskd.miniport**](https://msdn.microsoft.com/library/windows/hardware/ff564142) showed for your NDIS 6 driver.
 
