@@ -1,8 +1,8 @@
 ---
-title: NDIS-WDF Class Extension (Cx) Limitation
+title: Network Adapter WDF Class Extension (Cx) Limitation
 ---
 
-# NDIS-WDF Class Extension (Cx) Limitations
+# Network Adapter WDF Class Extension (Cx) Limitations
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 

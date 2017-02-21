@@ -1,13 +1,14 @@
 ---
-title: NDIS-WDF Class Extension (Cx) Reference
+title: Network Adapter WDF Class Extension (Cx) Reference
 ---
 
-# NDIS-WDF Class Extension (Cx) Reference
+# Network Adapter WDF Class Extension (Cx) Reference
 
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Starting in the next major update to Windows 10, the Windows Driver Kit (WDK) includes a class extension module (NetAdapterCx) that enables you to write a KMDF-based networking (NDIS) client miniport driver (called the client driver in this section). The client driver interacts with NetAdapterCx, which acts as a bridge to traditional NDIS.
+Starting in Windows 10, version 1703, the Windows Driver Kit (WDK) includes a class extension module (NetAdapterCx) that enables you to write a KMDF-based driver for a network adapter.
+In previous versions of Windows, you needed to write an NDIS miniport driver.
 
 ## Event callback functions
 
@@ -198,7 +199,7 @@ These driver support methods that are implemented by NetAdapterCx. Your client d
 </tr>
 <tr class="even">
 <td align="left"><p>[<strong>NetAdapterDriverWdmGetHandle method</strong>](netadapterdriverwdmgethandle.md)</p></td>
-<td align="left"><p>An NDIS-WDF miniport client driver calls [<strong>NetAdapterDriverWdmGetHandle</strong>](netadapterdriverwdmgethandle.md) returns a Windows Driver Model (WDM) handle to the client driver.</p></td>
+<td align="left"><p>A WDF client driver calls [<strong>NetAdapterDriverWdmGetHandle</strong>](netadapterdriverwdmgethandle.md) to get a handle that can be used with NDIS APIs.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>[<strong>NetAdapterGetNetLuid method</strong>](netadaptergetnetluid.md)</p></td>

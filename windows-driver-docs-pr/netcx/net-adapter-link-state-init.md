@@ -41,16 +41,16 @@ A pointer to a driver-allocated [**NET_ADAPTER_LINK_STATE**](net-adapter-link-st
 The link speed of the adapter in bits per second.
 
 *MediaConnectState* [in]  
-The media connect state for the miniport adapter.
+The media connect state for the network adapter.
 
 *MediaDuplexState* [in]  
-The media duplex state for the miniport adapter.
+The media duplex state for the network adapter.
 
 *SupportedPauseFunctions* [in]  
 Support for the IEEE 802.3 pause frames. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
 
 *SupportedPauseFunctions* [in]  
-The auto-negotiation settings for the miniport adapter. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
+The auto-negotiation settings for the network adapter. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
 
 Return value
 ------------

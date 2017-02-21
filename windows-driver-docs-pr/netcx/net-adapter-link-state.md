@@ -45,16 +45,16 @@ The current transmit link speed of the adapter in bits per second.
 The current receive link speed of the adapter in bits per second.
 
 **MediaConnectState**  
-The media connect state for the miniport adapter.
+The media connect state for the network adapter.
 
 **MediaDuplexState**  
-The media duplex state for the miniport adapter.
+The media duplex state for the network adapter.
 
 **SupportedPauseFunctions**  
 Support for the IEEE 802.3 pause frames. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
 
 **AutoNegotiationFlags**  
-The auto-negotiation settings for the miniport adapter. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
+The auto-negotiation settings for the network adapter. For more info, see [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923).
 
 Remarks
 -------

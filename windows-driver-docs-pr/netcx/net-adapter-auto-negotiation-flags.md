@@ -14,7 +14,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Specifies the auto-negotiation settings for the miniport adapter.
+Specifies the auto-negotiation settings for the NIC driver.
 
 Syntax
 ------

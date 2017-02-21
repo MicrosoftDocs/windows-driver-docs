@@ -31,7 +31,7 @@ typedef struct _NET_RING_BUFFER {
   UINT32                                              EndIndex;
   VOID                                                *NetAdapterScratch[2];
   VOID                                                *OSReserved2[3];
-  _Field_size_(NumberOfElements * ElementStride) BYTE Buffer;
+  _Field_size_(NumberOfElements * ElementStride) BYTE Buffer[];
 } NET_RING_BUFFER, *PNET_RING_BUFFER;
 ```
 
@@ -40,33 +40,68 @@ Members
 
 **OSReserved1**  
 Reserved.
+Client drivers must not read or write to this value.
 
 **ElementStride**  
-The byte offset from the start of one packet to the start of the next.
+The byte offset from the start of one **NET_PACKET** to the start of the next.
+Read-only: client drivers may read this value, but must not modify it.
 
 **NumberOfElements**  
-Indicates the number of packets in the ring buffer. 
+Indicates the number of packets in the ring buffer.
+NumberOfElements is guaranteed to be a power of two.
+Read-only: client drivers may read this value, but must not modify it.
 
 **ElementIndexMask**  
-TBD
+A mask that is defined as (**NumberOfElements**-1).
+The mask can be used to efficiently calculate an index that wraps around the ring buffer.
+Read-only: client drivers may read this value, but must not modify it.
 
 **BeginIndex**  
-Specifies an index value to the first packet in the ring buffer.
+Specifies the index of the first element owned by the client driver.
+**BeginIndex** must have a value in the inclusive range [0, **NumberOfElements**-1].
+Read-write: client drivers may read or write to this value.
+Typically, a client driver would use helper routines like [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to write to this field.
 
 **NextIndex**  
-Specifies an index value to the packet to be processed next.
+Client drivers may use this value to track the index of the next element that needs processing.
+Typically, a client driver would use [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md) to read and update this field.
+Read-write: client drivers may read or write to this value.
 
 **EndIndex**  
-Specifies an index value to the last packet in the ring buffer.
+Specifies the index of the last element that is owned by the client driver.
+**EndIndex** is guaranteed to have a value in the inclusive range [0, **NumberOfElements**-1].
+Read-only: client drivers may read this value, but must not modify it.
 
 **NetAdapterScratch**  
-Reserved.
+Client drivers may use this for any purpose.
+Read-write: client drivers may read or write to this value.
 
 **OSReserved2**  
 Reserved.
+Client drivers must not read or write to this value.
 
 **Buffer**  
-Pointer to the ring buffer.
+Start of the array of elements.
+Typically, a client driver would use [**NetRingBufferGetPacketAtIndex**](netringbuffergetpacketatindex.md) to access elements in this array.
+
+Remarks
+-------
+
+The **NET_RING_BUFFER** is a generic ring buffer, optimized for efficient access from a single thread.
+In Windows 10, version 1703, a **NET_RING_BUFFER** can only contain [**NET_PACKET**](net-packet.md) elements.
+
+Each element in a **NET_RING_BUFFER** is owned by either the client driver or the operating system.  The values of the index members control ownership.  Specifically, the client driver owns every element from **BeginIndex** to **EndIndex**.
+For example, if **BeginIndex** is 2 and **EndIndex** is 5, then the client driver owns three elements: the elements with index 2, 3, and 4.
+If `BeginIndex == EndIndex`, then zero elements are owned by the client driver.
+
+The NetAdapter framework adds elements to the ring buffer by incrementing **EndIndex**.
+A client driver returns ownership of the elements by incrementing **BeginIndex**.
+
+The client driver may optionally use **NextIndex** to track an element that it has partially processed, but is not ready to return to the OS.
+For example, a driver could use **NextIndex** to a packet that it has submitted to the hardware.
+
+Although a client driver can manipulate the **NET_RING_BUFFER** directly, a client driver typically uses higher level helper routines like [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md).
+These high level routines hide the details of the ring buffer.
 
 Requirements
 ------------
