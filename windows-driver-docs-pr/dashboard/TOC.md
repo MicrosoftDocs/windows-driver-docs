@@ -74,7 +74,6 @@
 ### [Reports](reports.md)
 #### [Browse Reports](browse-reports.md)
 #### [Manage Subscriptions](manage-subscriptions.md)
-#### [Create Responses](create-responses.md)
 #### [Windows Error Reporting: Getting Started](windows-error-reporting-getting-started.md)
 ##### [How WER collects and classifies error reports](how-wer-collects-and-classifies-error-reports.md)
 ##### [Debugging OCA minidump files](debugging-oca-minidump-files.md)
