@@ -5,7 +5,7 @@ description: Filter Manager and Minifilter Driver Architecture
 keywords: ["Extended , File Attributes", "Kernel EA", "Extended Attributes", "$Kernel"]
 ---
 # Kernel Extended Attributes
-Kernel Extended Attributes (Kernel EA's) are a feature added to NTFS in Windows 8 as a new feature that guarantees only signed images are executed. While this allows for a stronger-signing model, a signature check can be a costly operation in order verify an image is signed. Therefore, storing information about whether a binary which has previously been validated, has been changed or not would reduce the number of instances where an image would have to undergo a signature check.
+Kernel Extended Attributes (Kernel EA's) are a feature added to NTFS in Windows 8 as a way to boost the performance of image file signature validation.  It is an expensive operation to verify an images signature. Therefore, storing information about whether a binary, which has previously been validated, has been changed or not would reduce the number of instances where an image would have to undergo a full signature check.
 
 
 ## Overview
@@ -19,7 +19,7 @@ It is recommended that a Kernel EA contains at least the following information:
     -    The **FileUSN** value contains the USN ID of the last change that was made to the file and is tracked inside the Master File Table (MFT) record for the given file.
         - When the USN Journal is deleted, **FileUSN** is reset to zero.
 
-This information is then set on the file as a Kernel EA.
+This information, along with any other a given usage might need, is then set on the file as a Kernel EA.
 
 
 ## Setting a Kernel Extended Attribute
@@ -33,7 +33,7 @@ You may not intermix the setting of normal and kernel EA’s in the same call to
 ## Querying an Extended Attribute
 Querying the EA’s on a file from user mode will return both normal and Kernel EA’s. They are returned to user mode to minimize any application compatibility issues. The normal ``[ZwQueryEaFile]`` and ``[FltQueryEaFile]`` operations will return both normal and kernel EA's from both user and kernel modes.
 
-When only a **FileObject** is provided, using ``[FsRtlQueryKernelEaFile]`` may be more convenient for use to query for Kernel EA's from kernel mode.
+When only a **FileObject** is available, using ``[FsRtlQueryKernelEaFile]`` may be more convenient for use to query for Kernel EA's from kernel mode.
 
 
 ## Querying Update Sequence Number Journal Information
@@ -53,7 +53,7 @@ Because not all Kernel EA’s may want to be deleted in this scenario, an extend
 This delete of Kernel EA’s will be successful even in low memory situations.
 
 ## Remarks
--  Kernel EA's cannot be tampered with by user mode components.
+- Kernel EA's cannot be tampered with by user mode components.
 - Kernel EA’s can exist in the same file as a normal EA.
 
 
