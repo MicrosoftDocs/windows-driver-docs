@@ -52,13 +52,13 @@ NumberOfElements is guaranteed to be a power of two.
 Read-only: client drivers may read this value, but must not modify it.
 
 **ElementIndexMask**  
-A mask that is defined as (`NumberOfElements`-1).
+A mask that is defined as (**NumberOfElements**-1).
 The mask can be used to efficiently calculate an index that wraps around the ring buffer.
 Read-only: client drivers may read this value, but must not modify it.
 
 **BeginIndex**  
 Specifies the index of the first element owned by the client driver.
-`BeginIndex` must have a value in the inclusive range [0, `NumberOfElements`-1].
+**BeginIndex** must have a value in the inclusive range [0, **NumberOfElements**-1].
 Read-write: client drivers may read or write to this value.
 Typically, a client driver would use helper routines like [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to write to this field.
 
@@ -69,7 +69,7 @@ Read-write: client drivers may read or write to this value.
 
 **EndIndex**  
 Specifies the index of the last element that is owned by the client driver.
-`EndIndex` is guaranteed to have a value in the inclusive range [0, `NumberOfElements`-1].
+**EndIndex** is guaranteed to have a value in the inclusive range [0, **NumberOfElements**-1].
 Read-only: client drivers may read this value, but must not modify it.
 
 **NetAdapterScratch**  
@@ -87,21 +87,21 @@ Typically, a client driver would use [**NetRingBufferGetPacketAtIndex**](netring
 Remarks
 -------
 
-The `NET_RING_BUFFER` is a generic ring buffer, optimized for efficient access from a single thread.
-In the current version of Windows, a `NET_RING_BUFFER` can only contain `NET_PACKET` elements.
+The **NET_RING_BUFFER** is a generic ring buffer, optimized for efficient access from a single thread.
+In Windows 10, version 1703, a **NET_RING_BUFFER** can only contain [**NET_PACKET**](net-packet.md) elements.
 
-A `NET_RING_BUFFER` is organized around ownership of elements: the client driver owns every element from `BeginIndex` to `EndIndex`.
-For example, if `BeginIndex` is 2 and `EndIndex` is 5, then the client driver owns three elements: the elements with index 2, 3, and 4.
+Each element in a **NET_RING_BUFFER** is owned by either the client driver or the operating system.  The values of the index members control ownership.  Specifically, the client driver owns every element from **BeginIndex** to **EndIndex**.
+For example, if **BeginIndex** is 2 and **EndIndex** is 5, then the client driver owns three elements: the elements with index 2, 3, and 4.
 If `BeginIndex == EndIndex`, then zero elements are owned by the client driver.
 
-The NetAdapter framework adds elements to the ring buffer by incrementing `EndIndex`.
-A client driver returns ownership of the elements by incrementing `BeginIndex`.
+The NetAdapter framework adds elements to the ring buffer by incrementing **EndIndex**.
+A client driver returns ownership of the elements by incrementing **BeginIndex**.
 
-The client driver may optionally use `NextIndex` to track elements that have been partially-processed, but which are still not ready to be returned back to the OS.
-For example, a driver may use `NextIndex` to track which packets have been submitted to the hardware.
+The client driver may optionally use **NextIndex** to track an element that it has partially processed, but is not ready to return to the OS.
+For example, a driver could use **NextIndex** to a packet that it has submitted to the hardware.
 
-Although a client driver may access the `NET_RING_BUFFER` directly, a client driver typically uses higher-level helper routines, like `NetRingBufferReturnCompletedPackets`.
-These high-level routines hide the details of the ring buffer.
+Although a client driver can manipulate the **NET_RING_BUFFER** directly, a client driver typically uses higher level helper routines like [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md).
+These high level routines hide the details of the ring buffer.
 
 Requirements
 ------------

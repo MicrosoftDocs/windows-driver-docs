@@ -7,7 +7,7 @@ title: NET_PACKET structure
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Represents a single network packet
+Represents a single network packet.
 
 Syntax
 ------
@@ -30,18 +30,22 @@ Members
 -------
 
 **Data**  
-Describes the first fragment of the packet payload.  See [**NET_PACKET_FRAGMENT**](net-packet-fragment.md).
+A structure of type [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) that describes the first fragment of the packet payload.
 
 **Layout**  
+A structure of type [**NET_PACKET_LAYOUT**](net-packet-layout.md).  
+
 For Tx queues, describes the layout of the packet.
-If the OS requets a task offload that involves a protocol header, the OS will write the offsets to each protocol field to the `Layout` field.
+If the OS requests a task offload that involves a protocol header, the OS will write the offsets to each protocol field to the `Layout` field.
 For example, if the OS requests TCP checksum offload, the OS will write the offset to the TCP header.
-The `Layout` field may be empty, if the OS does not request any features that involve protocol headers.
+The `Layout` field may be empty if the OS does not request any features that involve protocol headers.
 For Tx queues, this field is read-only.
 
 For Rx queues, this field is Reserved.
 
 **Checksum**  
+A structure of type [**NET_PACKET_CHECKSUM**](net-packet-checksum.md).  
+
 For Tx queues, client drivers read the Checksum field to determine whether to enable checksum offload.
 For Tx queues, this field is read-only.
 
@@ -74,7 +78,36 @@ Do not read or write to this value.
 Reserved.
 Do not read or write to this value.
 
- 
+Remarks
+-------
+The **NET_PACKET** structure can be an element in a [**NET_RING_BUFFER**](net-ring-buffer.md) structure.
+
+A single **NET_PACKET** has one or more [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) structures linked into it.
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Minimum KMDF version</p></td>
+<td align="left"><p>1.21</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Minimum NetAdapterCx version</p></td>
+<td align="left"><p>1.0</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Header</p></td>
+<td align="left">Netpacket.h</td>
+</tr>
+</tbody>
+</table>
+
 
 
 

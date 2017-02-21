@@ -7,7 +7,7 @@ title: NET_PACKET_FRAGMENT structure
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Represents one contiguous buffer in memory
+Represents one contiguous buffer in memory.
 
 Syntax
 ------
@@ -84,27 +84,51 @@ For Tx queues, this value is read-only.
 
 **Completed**  
 Client drivers may use this flag in conjunction with [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to complete packets back to the OS.
-The client driver sets the `Completed` flag to `TRUE` on the first fragment of a `NET_PACKET`.
+The client driver sets the `Completed` flag to `TRUE` on the first fragment of a [**NET_PACKET**](net-packet.md).
 
 This flag is Reserved on fragments other than the first fragment of a packet.
 
 **Scratch**  
 Client drivers may use this value for any purpose.  
-It will be reset to 0 when the `NET_PACKET` is reused.
+It will be reset to 0 when the [**NET_PACKET**](net-packet.md) is reused.
 
- 
-Members
+
+Remarks
 -------
 
 A `NET_PACKET_FRAGMENT` is similar in concept to an `MDL`.
 The `NET_PACKET_FRAGMENT` is optimized for efficient advance/retreat operations, and efficient use with DMA.
 
-A single `NET_PACKET` has one or more `NET_PACKET_FRAGMENT` structures linked into it.
+A single [**NET_PACKET**](net-packet.md) has one or more `NET_PACKET_FRAGMENT` structures linked into it.
 Each fragment is a virtually-contiguous buffer of memory; the packet itself is the sum of each virtually-contiguous buffer.
 Therefore, a packet can be virtually-discontiguous; if so, the packet has more than one fragment attached to it.
 
-In NetAdapterCx version 1.0, each `NET_PACKET` represents a single network frame, and the `LastPacketOfChain` field is not used.
+In NetAdapterCx version 1.0, each [**NET_PACKET**](net-packet.md) represents a single network frame, and the `LastPacketOfChain` field is not used.
 
-In NetAdapterCx version 1.0, the client driver cannot unlink, append, or rearrange `NET_PACKET_FRAGMENT` structures from a `NET_PACKET` structure.
+In NetAdapterCx version 1.0, the client driver cannot unlink, append, or rearrange `NET_PACKET_FRAGMENT` structures from a [**NET_PACKET**](net-packet.md) structure.
 
 The buffer layout fields must always obey this identity: `Capacity` &geq; `ValidLength` + `Offset`.
+
+Requirements
+------------
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Minimum KMDF version</p></td>
+<td align="left"><p>1.21</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Minimum NetAdapterCx version</p></td>
+<td align="left"><p>1.0</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>Header</p></td>
+<td align="left">Netpacket.h</td>
+</tr>
+</tbody>
+</table>
