@@ -9,9 +9,6 @@ ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
 
 # Get a code signing certificate
 
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
-
 Before you can establish a Hardware Dev Center hardware dashboard account, you need to get a code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your company’s ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
 
 ## <span id="Step_1__Determine_which_type_of_code_signing_certificate_you_need"></span><span id="step_1__determine_which_type_of_code_signing_certificate_you_need"></span><span id="STEP_1__DETERMINE_WHICH_TYPE_OF_CODE_SIGNING_CERTIFICATE_YOU_NEED"></span>Step 1: Determine which type of code signing certificate you need
