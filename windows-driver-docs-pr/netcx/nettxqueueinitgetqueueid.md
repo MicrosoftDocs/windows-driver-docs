@@ -29,11 +29,12 @@ Parameters
 ----------
 
 *NetTxQueueInit* [in]  
+A pointer to a NetAdapterCx-allocated **NETTXQUEUE_INIT** structure.  For more information, see the Remarks section.
 
 Return value
 ------------
 
-A ULONG that...
+Returns a ULONG that identifies a transmit queue.
 
 Remarks
 -----
