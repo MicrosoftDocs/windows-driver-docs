@@ -20,13 +20,7 @@ Today, all LTE attach APN information is provided by IHVs and OEMs directly in t
 
 Starting in Windows 10 Version 1703, if the underlying hardware supports LTE attach APN configuration from the OS then the user will be able to configure the LTE attach APN from Settings. Hardware that has default LTE attach APN configurations must also make its configuration available by the OS.
 
-## OIDs for Set and Query Requests
-
 This feature is supported by adding in two new OIDs and CIDs.  For IHV partners that implement MBIM, only the CID version has to be supported.
-
-OID_WWAN_LTE_ATTACH_CONFIG TBD
-
-OID_WWAN_LTE_ATTACH_STATUS TBD
 
 ## MB Interface Update for LTE Attach Operations
 

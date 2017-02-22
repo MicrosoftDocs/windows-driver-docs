@@ -13,13 +13,7 @@ Traditionally, OEMs have implemented proprietary solutions for Selective Absorpt
 
 Starting in Windows 10 Version 1703, Windows supports passing through SAR configuration and modem transmission status. Windows will continue to leave the SAR business logic to IHVs and OEMs to use as a self-differentiating factor but will provide an interface to streamline the platform. Two new NDIS OIDs and two new MBIM CIDs have been defined to support this interface. Devices that want to take advantage of OS support must implement both commands.
 
-## OIDs for Set and Query Requests
-
-This feature is supported by adding in two new OIDs and CIDs. For IHV partners that implement MBIM, only the CID version needs to be supported. For more information about the corresponding OIDs, see the links below.
-
-OID_WWAN_SAR_CONFIG TBD
-
-OID_WWAN_TRANSMISSION_STATUS TBD
+This feature is supported by adding in two new OIDs and CIDs. For IHV partners that implement MBIM, only the CID version needs to be supported.
 
 ## MB Interface Update for SAR Platform Support
 

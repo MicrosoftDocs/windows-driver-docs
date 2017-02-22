@@ -9,10 +9,6 @@ A device could be required to not register to a network under various scenarios,
 
 At any time, the OS can configure the MCC/MNC pair in the modem to specify the SIM or network to which the device is not allowed to register.  The interface is flexible enough to allow two different lists, one for SIM providers, and another for network providers.  If the device did not attempt registration because a particular SIM or network provider was blacklisted, the modem must report the registration status as denied.
 
-## OIDs for Set and Query Requests
-
-OID_WWAN_NETWORK_BLACKLIST TBD
-
 ## MB Interface Update for Network Blacklist Operations
 
 A new MBIM command has been created to enable the OS to query and set the MCC and MNC pair with which the modem should not attempt registration when a matching SIM cards or network provider is present on the device. For this command, a new MSFT proprietary CID has been defined as MBIM_CID_MS_NETWORK_BLACKLIST.

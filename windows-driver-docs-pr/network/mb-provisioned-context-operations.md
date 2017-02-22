@@ -14,10 +14,6 @@ Ideally, the modem should only store the APN configurations the OS does not have
 
 The USB forum’s MBIM 1.0 and Microsoft NDIS each have an existing CID and OID respectively to allow the OS to set and query the APN configurations in the modem. For MBIM 1.0 it does this through  MBIM_CID_PROVISIONED_CONTEXT while for NDIS it does this through [OID_WWAN_PROVISIONED_CONTEXTS](https://msdn.microsoft.com/library/windows/hardware/ff569831). However, the existing CID and OID were not designed with clear guidance on how the modem is expected to behave in various situations such as a power cycle or SIM swap. Devices that want to support OS configuring and updating of modem-provisioned contexts going forward will have to implement the newer version of the CID and OID in Windows 10 Version 1703. To ensure backward compatibility, for IHVs/OEMs that want to support new hardware on OS versions older than 1703, they will have to continue to support the existing MBIM_CID_PROVISIONED_CONTEXT and OID_WWAN_PROVISIONED_CONTEXTS.  Starting from Windows 10 Version 1703, if the device supports the new version of the CID and OID then the OS will only use the newer version of the command to query and set APN context configuration in the modem. 
 
-## OIDs for Set and Query Requests
-
-TBD
-
 ## MB Interface Update for Provisioned Context Operations
 
 While MBIM has a command for retrieving and replacing contexts stored in the modem, it does not have a field to “disable” or “enable” a profile.  Therefore, the existing MBIM_CID_PROVISIONED_CONTEXT must be updated for Windows 10 Version 1703 to include this capability. Because MBIM does not have a versioning mechanism, a new MSFT proprietary CID is defined as MBIM_CID_MS_PROVISIONED_CONTEXT_V2.
