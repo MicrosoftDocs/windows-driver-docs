@@ -5,13 +5,13 @@ description: MB SAR Platform Support
 
 # MB SAR Platform Support
 
-Traditionally, OEMs have implemented proprietary solutions for Selective Absorption Rate (SAR); this requires the OEM to implement a device service command that is either only identified between their User Mode Driver (UMDF) and the modem or requires kernel mode components to directly interact with the modem. Some OEMs may even have a hybrid solution where they have both UMDF-modem and kernel mode-modem components. As radio radiation awareness has increased, standardizing the interface for OEM software components to pass through the SAR command to the modem introduces the following benefits:
+Traditionally, OEMs have implemented proprietary solutions for Selective Absorption Rate (SAR). This requires the OEM to implement a device service command that is either only identified between their User Mode Driver (UMDF) and the modem or requires kernel mode components to directly interact with the modem. Some OEMs may even have a hybrid solution where they have both UMDF-modem and kernel mode-modem components. As radio radiation awareness has increased, standardizing the interface for OEM software components to pass through the SAR command to the modem introduces the following benefits:
 
-1.	OEMs can move towards user mode components and makes the system more stable, as errors in user mode are not fatal to the system compared to kernel mode.
+1.	OEMs can move toward user mode components and makes the system more stable, as errors in user mode are not fatal to the system compared to kernel mode.
 2.	Windows provides a platform standard interface and reduces the proprietary implementation from OEMs.
-3.	Services in the platform that would like to leverage SAR can retrieve the information from the modem.
+3.	Services in the platform that want to take advantage of SAR can retrieve the information from the modem.
 
-Starting in Windows 10 Version 1703, Windows supports passing through SAR configuration and modem transmission status. Windows will continue to leave the SAR business logic to IHVs and OEMs to use as a self-differentiating factor but will provide an interface to streamline the platform. Two new NDIS OIDs and two new MBIM CIDs have been defined to support this interface. Devices that would like to leverage OS support must implement both commands.
+Starting in Windows 10 Version 1703, Windows supports passing through SAR configuration and modem transmission status. Windows will continue to leave the SAR business logic to IHVs and OEMs to use as a self-differentiating factor but will provide an interface to streamline the platform. Two new NDIS OIDs and two new MBIM CIDs have been defined to support this interface. Devices that want to take advantage of OS support must implement both commands.
 
 ## OIDs for Set and Query Requests
 
@@ -40,9 +40,9 @@ UUID Value = **68223D04-9F6C-4E0F-822D-28441FB72340**
 
 #### Description
 
-The command sets or returns information about a MB device’s SAR back off mode and level. The MB device must act on the SAR back off command immediately by overwriting the current Transmit power limits and applying them to the transmitting antennas.  If an antenna’s SAR configuration was not changed by the operating system, it should retain its current setting. For example, if the operating system sets antenna 1 to be SAR back off index 1, then antenna 2’s configuration should be kept the same with no changes.
+This command sets or returns information about a MB device’s SAR back off mode and level. The MB device must act on the SAR back off command immediately by overwriting the current Transmit power limits and applying them to the transmitting antennas. If an antenna’s SAR configuration was not changed by the operating system, it should maintain its current setting. For example, if the operating system sets antenna 1 to be SAR back off index 1, then antenna 2’s configuration should be kept the same without any changes.
 
-It is expected for devices that support this command to implement Query so it provides device information to the OS and its clients. For the Set command, it is between the IHV and the OEM to define which value of each field is acceptable. The normal expectation is that the SAR back off index is configurable for all antennas as a minimum baseline. If a Set request is sent with fields that are not supported by the device, then MBIM_STATUS_INVALID_PARAMETERS must be returned as the status code.
+It is expected for devices that support this command to implement Query so they provide device information to the OS and its clients. For the Set command, it is between the IHV and the OEM to define which value of each field is acceptable. The typical expectation is that the SAR back off index is configurable for all antennas as a minimum baseline. If a Set request is sent with fields that are not supported by the device, then MBIM_STATUS_INVALID_PARAMETERS must be returned as the status code.
 
 After each Query or Set response, the modem should return a MBIM_MS_SAR_CONFIG structure that contains information for all antennas on the device associated with Mobile Broadband.
 
@@ -62,8 +62,8 @@ Not applicable.
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_MS_SET_SAR_CONFIG | N/A | N/A |
-| Response | MBIM_MS_SAR_CONFIG | MBIM_MS_SAR_CONFIG | N/A |
+| Command | MBIM_MS_SET_SAR_CONFIG | Not applicable | Not applicable |
+| Response | MBIM_MS_SAR_CONFIG | MBIM_MS_SAR_CONFIG | Not applicable |
 
 #### Data Structures
 
@@ -145,13 +145,13 @@ Not applicable.
 
 #### Description
 
-This command is used to enable or disable the notification from the modem on transmit state. It is a per-executor command as each executor can have different channel transmit states; for instance, a dual SIM modem might have one on LTE and the other on GSM. At the same time, it can be used to provide the transmit status of the modem. This notification could be used for clients that are interested in whether the modem is transmitting data or not. The modem should provide notification any time there is a start or end of TX traffic. If the duty cycle is too small and cannot be provided in real time to the host, then the TX state can be kept as active for a given amount of time with a hysteresis timer before sending an update of the state. As an example, it could be that there was a short burst of TX and the modem could not provide the start and end notification in time. The modem should send up notification when the TX traffic starts and should continue to monitor its TX traffic during the hysteresis timer. If no more TX traffic was generated within the timer’s timeframe, then it should report that TX traffic has ended.
+This command is used to enable or disable the notification from the modem on transmit state. It is a per-executor command as each executor can have different channel transmit state. For example, a dual SIM modem might have one on LTE and the other on GSM. At the same time, it can be used to provide the transmit status of the modem. This notification could be used for clients that are interested in whether the modem is transmitting data or not. The modem should provide notification any time there is a start or end of TX traffic. If the duty cycle is too small and cannot be provided in real time to the host, then the TX state can be kept as active for a set time with a hysteresis timer before it sends an update of the state. As an example, it might be that there was a short burst of TX and the modem could not provide the start and end notification in time. The modem should send up notification when the TX traffic starts and should continue to monitor its TX traffic during the hysteresis timer. If no more TX traffic was generated within the timer’s timeframe, then it should report that TX traffic has ended.
 
-This is extremely useful in scenarios where both Wi-Fi and LTE are connected.  If both LTE and Wi-Fi are in a transmitting state and proximity was detected, then Wi-Fi back off may be required. If LTE is not in transmitting state but Wi-Fi is, then Wi-Fi back off may not be required. This applies to general Wi-Fi/LTE connection and mobile hot spot scenarios.  
+This is very useful in scenarios where both Wi-Fi and LTE are connected.  If both LTE and Wi-Fi are in a transmitting state and proximity was detected, then Wi-Fi back off may be required. If LTE is not in transmitting state but Wi-Fi is, then Wi-Fi back off may not be required. This applies to general Wi-Fi/LTE connection and mobile hot spot scenarios.  
 
 The Wi-Fi back off mechanism and command is out of scope of this specification. 
 
-OEMs that utilize this command should be aware of the potential power impact as the modem may be sending up transmission-related notifications at all times, including lower power states. The OS, by default, will not allow this notification to awake the AP during Modern Standby to improve power performance.
+OEMs that use this command should be aware of the potential power impact as the modem may be sending up transmission-related notifications at all times, including reduced power states. The OS, by default, will not allow this notification to awake the AP during Modern Standby to improve power performance.
 
 ##### Query
 
@@ -163,13 +163,13 @@ The InformationBuffer on MBIM_COMMAND_MSG contains MBIM_MS_SET_TRANSMISSION_STAT
 
 ##### Unsolicited Events
 
-Unsolicited events contain the MBIM_MS_TRANSMISSION_STATUS_INFO and are sent when there is a change to the active over-the-air (OTA) channels. For instance, if a modem started uploading packet data, it would be required to set up uplink channels when using the network data channel so it can upload payloads. This would trigger the notification to be provided to the operating system.
+Unsolicited events contain MBIM_MS_TRANSMISSION_STATUS_INFO and are sent when there is a change to the active over-the-air (OTA) channels. For example, if a modem started uploading packet data, it would be required to set up uplink channels when it uses the network data channel so that it can upload payloads. This would trigger the notification to be provided to the operating system.
 
 #### Parameters
 
 |  | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_MS_SET_TRANSMISSION_STATUS | N/A | N/A |
+| Command | MBIM_MS_SET_TRANSMISSION_STATUS | Not applicable | Not applicable |
 | Response | MBIM_MS_TRANSMISSION_STATUS_INFO | MBIM_MS_TRANSMISSION_STATUS_INFO | MBIM_MS_TRANSMISSION_STATUS_INFO |
 
 #### Data Structures
@@ -201,7 +201,7 @@ The following MBIM_MS_TRANSMISSION_STATUS_INFO structure is used for response.
 | Offset | Size | Field | Type | Description |
 | --- | --- | --- | --- | --- |
 | 0 | 4 | ChannelNotification | MBIM_MS_TRANSMISSION_STATUS_NOTIFICATION | For more information, see the MBIM_MS_TRANSMISSION_STATUS_NOTIFICATION table. |
-| 4 | 4 | TransmissionStatus | MBIM_MS_TRANSMISSION_STATUS | For more information, see the  MBIM_MS_TRANSMISSION_STATUS table. This indicates whether modem is having TX traffic every 5 seconds. |
+| 4 | 4 | TransmissionStatus | MBIM_MS_TRANSMISSION_STATUS | For more information, see the  MBIM_MS_TRANSMISSION_STATUS table. This indicates whether the modem has TX traffic every 5 seconds. |
 | 8 | 4 | HysteresisTimer | UINT32 | Hysteresis Indicator that is used by the modem to determine when to send the MBIMMsTransmissionStateInactive to the host. This value is the timer the modem sees as a continuous no-transmit activity before it sends an OFF indicator to host. This timer should be set in seconds, ranging from 1 second to 5 seconds. |
 
 The following MBIM_MS_TRANSMISSION_STATUS structure is used in the preceding table. It indicates whether modem is having TX traffic every 5 seconds.
