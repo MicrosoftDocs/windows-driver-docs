@@ -74,6 +74,8 @@ Do not read or write to this value.
 
 Remarks
 -------
+Each [**NET_PACKET**](net-packet.md) structure represents a single network frame.
+
 The **NET_PACKET** structure can be an element in a [**NET_RING_BUFFER**](net-ring-buffer.md) structure.
 
 A single **NET_PACKET** has one or more [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) structures linked into it.

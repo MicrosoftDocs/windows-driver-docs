@@ -37,8 +37,7 @@ Members
 -------
 
 **LastFragmentOfFrame**  
-`TRUE` if this is the last fragment in the current packet.
-If `FALSE`, use `NET_PACKET_FRAGMENT_GET_NEXT` to get the next fragment in the chain.
+This bit field value specifies whether this is the last fragment in the current packet.  If it is not set, use **NET_PACKET_FRAGMENT_GET_NEXT** to get the next fragment in the chain.
 
 **LastPacketOfChain**  
 Reserved.
@@ -53,61 +52,51 @@ Reserved.
 Client drivers must not read or write to this value.
 
 **DmaLogicalAddress**  
-For Rx queues, contains a mapped DMA address that can be used to program NIC hardware.
+For receive queues, contains a mapped DMA address that can be used to program NIC hardware.
 
-For Tx queues, cast this value to an MDL pointer.
+For transmit queues, cast this value to an MDL pointer.
 
-This value is read-only: client drivers must not modify this value.
+Do not modify this value.
 
 **VirtualAddress**  
 Points to the start of the packet buffer.
 This address is mapped into the system address space.
 
-For Tx queues, this value is read-only.
+For transmit queues, this value is read-only.
 
 **ValidLength**  
-Contains the length of packet payload.
-The `ValidLength` is guaranteed to be less than or equal to `Capacity`.
+Contains the length of packet payload.  This value is less than or equal to the value of **Capacity**.
 
-For Tx queues, this value is read-only.
+For transmit queues, this value is read-only.
 
 **Capacity**  
 Contains the total length of the packet buffer.
 
-For Tx queues, this value is read-only.
+For transmit queues, this value is read-only.
 
 **Offset**  
-Contains the offset from the start of the `VirtualAddress` and `DmaLogicalAddress` to the start of the valid packet payload.
-The `Offset` is guaranteed to be less than or equal to `Capacity`.
+Contains the offset from the start of the `VirtualAddress` and `DmaLogicalAddress` to the start of the valid packet payload.  This value is less than or equal to the value of **Capacity**.
 
-For Tx queues, this value is read-only.
+For transmit queues, this value is read-only.
 
 **Completed**  
-Client drivers may use this flag in conjunction with [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to complete packets back to the OS.
-The client driver sets the `Completed` flag to `TRUE` on the first fragment of a [**NET_PACKET**](net-packet.md).
+A bit field value that, when set for the first fragment of a [**NET_PACKET**](net-packet.md), specifies that this packet should be completed when the client calls [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md).
 
-This flag is Reserved on fragments other than the first fragment of a packet.
+Do not use this flag on fragments other than the first fragment of a packet.
 
 **Scratch**  
-Client drivers may use this value for any purpose.  
-It will be reset to 0 when the [**NET_PACKET**](net-packet.md) is reused.
-
+A bit field value that the client may use for any purpose.  When the [**NET_PACKET**](net-packet.md) is reused, this value is reset to zero.
 
 Remarks
 -------
 
-A `NET_PACKET_FRAGMENT` is similar in concept to an `MDL`.
-The `NET_PACKET_FRAGMENT` is optimized for efficient advance/retreat operations, and efficient use with DMA.
+The **NET_PACKET_FRAGMENT** structure is similar in concept to a memory descriptor list (MDL).
 
-A single [**NET_PACKET**](net-packet.md) has one or more `NET_PACKET_FRAGMENT` structures linked into it.
-Each fragment is a virtually-contiguous buffer of memory; the packet itself is the sum of each virtually-contiguous buffer.
-Therefore, a packet can be virtually-discontiguous; if so, the packet has more than one fragment attached to it.
+A single [**NET_PACKET**](net-packet.md) structure contains references to one or more **NET_PACKET_FRAGMENT** structures.
 
-In NetAdapterCx version 1.0, each [**NET_PACKET**](net-packet.md) represents a single network frame, and the `LastPacketOfChain` field is not used.
+While each fragment is a virtually contiguous buffer of memory, a packet that contains more than one fragment is virtually discontiguous.
 
-In NetAdapterCx version 1.0, the client driver cannot unlink, append, or rearrange `NET_PACKET_FRAGMENT` structures from a [**NET_PACKET**](net-packet.md) structure.
-
-The buffer layout fields must always obey this identity: `Capacity` &geq; `ValidLength` + `Offset`.
+The client driver should not unlink, append, or rearrange **NET_PACKET_FRAGMENT** structures within a [**NET_PACKET**](net-packet.md) structure.
 
 Requirements
 ------------
