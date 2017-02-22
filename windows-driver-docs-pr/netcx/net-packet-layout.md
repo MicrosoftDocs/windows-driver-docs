@@ -4,10 +4,9 @@ title: NET_PACKET_LAYOUT structure
 
 # NET_PACKET_LAYOUT structure
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-TBD
+A [**NET_PACKET**](net-packet.md) structure contains a member of type **NET_PACKET_LAYOUT**.
 
 Syntax
 ------
@@ -15,42 +14,76 @@ Syntax
 ```ManagedCPlusPlus
 typedef struct _NET_PACKET_LAYOUT
 {
-    /// One of the NET_PACKET_LAYER2_TYPE values
     UINT8 Layer2Type : 4;
-
-    /// One of the NET_PACKET_LAYER3_TYPE values
     UINT8 Layer3Type : 4;
-
-    /// One of the NET_PACKET_LAYER4_TYPE values
     UINT8 Layer4Type : 4;
     UINT8 Reserved   : 4;
-
     UINT16 Layer2HeaderLength : 7;
     UINT16 Layer3HeaderLength : 9;
     UINT8  Layer4HeaderLength : 8;
 
-} NET_PACKET_LAYOUT;```
+} NET_PACKET_LAYOUT;
+```
 
 Members
 -------
 
 **Layer2Type**  
+A bit field that specifies a flag from **NET_PACKET_LAYER2_TYPE**.
 
 **Layer3Type**  
+A bit field that specifies a flag from **NET_PACKET_LAYER3_TYPE**.
 
 **Layer4Type**  
+A bit field that specifies a flag from **NET_PACKET_LAYER4_TYPE**.
 
 **Reserved**  
+Reserved for system use.
 
 **Layer2HeaderLength**  
+A UINT16 value specifying the length of the Layer2 header.
 
 **Layer3HeaderLength**  
+A UINT16 value specifying the length of the Layer3 header.
 
 **Layer4HeaderLength**  
+A UINT8 value specifying the length of the Layer4 header.
 
 Remarks
 -------
-A [**NET_PACKET**](net-packet.md) structure contains a member of type **NET_PACKET_LAYOUT**.
+See more info in the description of the **Layout** member of [**NET_PACKET**](net-packet.md).
+
+The client specifies flag values for this structure using the following enumerations:
+
+```
+typedef enum _NET_PACKET_LAYER2_TYPE
+{
+    NET_PACKET_LAYER2_TYPE_UNSPECIFIED                  = 0,
+    NET_PACKET_LAYER2_TYPE_NULL                         = 1,
+    NET_PACKET_LAYER2_TYPE_ETHERNET                     = 2,
+} NET_PACKET_LAYER2_TYPE;
+
+typedef enum _NET_PACKET_LAYER3_TYPE
+{
+    NET_PACKET_LAYER3_TYPE_UNSPECIFIED                  = 0,
+    NET_PACKET_LAYER3_TYPE_IPV4_UNSPECIFIED_OPTIONS     = 1,
+    NET_PACKET_LAYER3_TYPE_IPV4_WITH_OPTIONS            = 2,
+    NET_PACKET_LAYER3_TYPE_IPV4_NO_OPTIONS              = 3,
+    NET_PACKET_LAYER3_TYPE_IPV6_UNSPECIFIED_EXTENSIONS  = 4,
+    NET_PACKET_LAYER3_TYPE_IPV6_WITH_EXTENSIONS         = 5,
+    NET_PACKET_LAYER3_TYPE_IPV6_NO_EXTENSIONS           = 6,
+} NET_PACKET_LAYER3_TYPE;
+
+typedef enum _NET_PACKET_LAYER4_TYPE
+{
+    NET_PACKET_LAYER4_TYPE_UNSPECIFIED                  = 0,
+    NET_PACKET_LAYER4_TYPE_TCP                          = 1,
+    NET_PACKET_LAYER4_TYPE_UDP                          = 2,
+    NET_PACKET_LAYER4_TYPE_IP_NOT_FRAGMENTED            = 3,
+    NET_PACKET_LAYER4_TYPE_IP_FRAGMENT                  = 4,
+} NET_PACKET_LAYER4_TYPE;
+
+```
 
 Requirements
 ------------
