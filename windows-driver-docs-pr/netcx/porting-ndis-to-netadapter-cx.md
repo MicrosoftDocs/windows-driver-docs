@@ -237,7 +237,7 @@ First, new data structures have being created to work with the new model, here i
 |NET_PACKET_FRAGMENT|Similar to a MDL, each NET_PACKET has one or more of these|
 |NET_RING_BUFFER|Ring buffer shared between the OS and a client, holds NET_PACKETs|
 
-Network traffic is not per adapter, but rather per queue, as such new WDF objects represent such queues. Back when you called NET_ADAPTER_CONFIG_INIT you provided two queue creation callbacks ([EVT_NET_ADAPTER_CREATE_TXQUEUE](evt-net-adapter-create-txqueue.md) and [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md)). NetAdapterCx will call into those whenever it needs you driver to create a Tx or Rx queue. Queues don't have start/pause semantics like miniports had in NDIS 6.x, rather they are only created and deleted. You can create a Tx queue as follow:
+Network traffic is not per adapter, but rather per queue, as such new WDF objects represent such queues. Back when you called NET_ADAPTER_CONFIG_INIT you provided two queue creation callbacks ([EVT_NET_ADAPTER_CREATE_TXQUEUE](evt-net-adapter-create-txqueue.md) and [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md)). NetAdapterCx will call into those whenever it needs you driver to create a transmit or receive queue. Queues don't have start/pause semantics like miniports had in NDIS 6.x, rather they are only created and deleted. You can create a transmit queue as follow:
 
 ```ManagedCPlusPlus
 NTSTATUS
@@ -259,13 +259,13 @@ EvtAdapterCreateTxQueue(NETADAPTER Adapter, PNETTXQUEUE_INIT NetTxQueueInit)
     return status;
 }
 ```
-To create an Rx queue from [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md), use the same pattern.
+To create an receive queue from [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md), use the same pattern.
 
-As shown in the above example, when creating Tx/Rx queues you need to provide a set of callbacks:
+As shown in the above example, when creating transmit/receive queues you need to provide a set of callbacks:
 
 ### [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md)
 
-This callback can be seen as similar to SendNetBufferListsHandler in NDIS 6.x, the OS will call this every time new packets need to be sent, the big difference is that completions are required to be indicated from this event callback. The mechanics of how to retrieve packets to send from the queue and indicate completions requires understanding how the [*NET_RING_BUFFER*](net-ring-buffer.md) works. The following example just completes any incoming Tx packets:
+This callback can be seen as similar to SendNetBufferListsHandler in NDIS 6.x, the OS will call this every time new packets need to be sent, the big difference is that completions are required to be indicated from this event callback. The mechanics of how to retrieve packets to send from the queue and indicate completions requires understanding how the [*NET_RING_BUFFER*](net-ring-buffer.md) works. The following example just completes any incoming transmit packets:
 
 ```ManagedCPlusPlus
 VOID
@@ -295,7 +295,7 @@ This event callback is called when the OS wants to delete the queue. This is not
 
 ### EVT_RXQUEUE_ADVANCE
 
-In the new programming model there are no NET_BUFFER_LIST or NET_BUFFER pools. To get a descriptor to use to receive packets you need to retrieve one in your advance callback. Similar to the Tx case, to indicate that a receive is complete you are required to use this event callback, and both things work through the [*NET_RING_BUFFER*](net-ring-buffer.md). The following piece of code retrieves all the available Rx buffers and does nothing with them.
+In the new programming model there are no NET_BUFFER_LIST or NET_BUFFER pools. To get a descriptor to use to receive packets you need to retrieve one in your advance callback. Similar to the transmit case, to indicate that a receive is complete you are required to use this event callback, and both things work through the [*NET_RING_BUFFER*](net-ring-buffer.md). The following piece of code retrieves all the available receive buffers and does nothing with them.
 
 ```ManagedCPlusPlus
 VOID

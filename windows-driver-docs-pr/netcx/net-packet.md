@@ -35,28 +35,22 @@ A structure of type [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) that descr
 **Layout**  
 A structure of type [**NET_PACKET_LAYOUT**](net-packet-layout.md).  
 
-For Tx queues, describes the layout of the packet.
-If the OS requests a task offload that involves a protocol header, the OS will write the offsets to each protocol field to the `Layout` field.
-For example, if the OS requests TCP checksum offload, the OS will write the offset to the TCP header.
-The `Layout` field may be empty if the OS does not request any features that involve protocol headers.
-For Tx queues, this field is read-only.
+* For transmit queues, if the host stack has enabled a task offload that uses a protocol header, specifies a read-only offset to each protocol field.  For example, if TCP checksum offload is enabled, this member specifies the offset to the TCP header.  Otherwise, this member is empty.
 
-For Rx queues, this field is Reserved.
+* For receive queues, this member is reserved.
 
 **Checksum**  
 A structure of type [**NET_PACKET_CHECKSUM**](net-packet-checksum.md).  
 
-For Tx queues, client drivers read the Checksum field to determine whether to enable checksum offload.
-For Tx queues, this field is read-only.
+* For transmit queues, this member is read-only and specifies whether the client driver should perform checksum offload.
 
-For Rx queues, if the NIC hardware performed a checksum validation, the client driver writes the result of the validation in the Checksum field.
+* For receive queues, if the NIC hardware performed a checksum validation, specifies the result of the validation.
 
 **IgnoreThisPacket**  
-For Rx queues, client drivers may set this to `TRUE` to prevent the packet from being indicated to the OS.
-For example, if the hardware encountered a DMA error while writing bytes into this packet's data buffer, the client driver can set `IgnoreThisPacket` to drop the partial packet.
+* For receive queues, the client sets this bit to prevent the packet from being indicated to the host.
+For example, if the hardware encountered a DMA error while writing bytes into this the data buffer for this packet, the client can set this bit to drop the partial packet.
 
-For Tx queues, client drivers should not attempt to transmit packets where `IgnoreThisPacket` is `TRUE`.
-This field is read-only for Tx queues.
+* For transmit queues, this bit is read-only and specifies if the client should not transmit the packet.
 
 **AdvancedOffloadRequested**  
 Reserved.
