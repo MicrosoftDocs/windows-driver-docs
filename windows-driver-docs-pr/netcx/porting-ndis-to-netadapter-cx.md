@@ -273,9 +273,9 @@ As shown in the above example, when creating transmit/receive queues you need to
 
 ### [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md)
 
-This callback is similar to SendNetBufferListsHandler in NDIS 6.x.
+This callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.
 NetAdapterCx calls this callback when new packets need to be sent.
-However, in the NetAdapterCx model, the client must complete packets that it indicated from this event callback. The mechanics of how to retrieve packets to send from the queue and indicate completions requires understanding how the [*NET_RING_BUFFER*](net-ring-buffer.md) works. The following example just completes any incoming transmit packets:
+However, in the NetAdapterCx model, the client must complete packets from within the *Advance* event callback, typically by calling by calling [**NetRingBufferReturnCompletedPackets method**](netringbufferreturncompletedpackets.md).  In a production driver, the client would retrieve packets from the queue (by calling ring buffer macros), send the data, and then complete the packets. The following example simply completes incoming transmit packets:
 
 ```ManagedCPlusPlus
 VOID
