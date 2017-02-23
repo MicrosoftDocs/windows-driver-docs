@@ -87,10 +87,7 @@ The following table explains each entry in the spreadsheet:
 <td><p>GSM Provider Name</p></td>
 <td><p>A string of no more than 36 characters that should match the GSM provider name reported by your device. This column is case sensitive.</p></td>
 <td><p>Optional</p></td>
-<td><div class="alert">
-<strong>Note</strong>  
-<p>This entry is deprecated starting in the next major update to Windows 10.</p>
-</div>
+<td></div>
 <div>
  
 </div>
@@ -154,9 +151,8 @@ The following table explains each entry in the spreadsheet:
 <td><p>CDMA Provider ID</p></td>
 <td><p>A 5 digit number that should match the CDMA provider ID (also called SID) reported by your device.</p></td>
 <td><p>Optional</p></td>
-<td><div class="alert">
-<strong>Note</strong>  
-<p>This entry is deprecated starting in the next major update to Windows 10.</p>
+<td><div>
+
 </div>
 <div>
  
@@ -166,9 +162,7 @@ The following table explains each entry in the spreadsheet:
 <td><p>CDMA Provider Name</p></td>
 <td><p>A string of no more than 36 characters that should match the CDMA provider name reported by your device. This column is case sensitive.</p></td>
 <td><p>Optional</p></td>
-<td><div class="alert">
-<strong>Note</strong>  
-<p>This entry is deprecated starting in the next major update to Windows 10.</p>
+<td><div >
 </div>
 <div>
  
@@ -178,8 +172,7 @@ The following table explains each entry in the spreadsheet:
 <td><p>Cert Issuer Name</p></td>
 <td><p>The Cert Issuer Name of your signing certificate used for operator XML provisioning.</p></td>
 <td><p>Optional</p></td>
-<td><div class="alert">
-<strong>Note</strong>  Only create this entry if you aren't using the the next major update to Windows 10 COSA APN database.
+<td><div>
 </div>
 <div>
  
@@ -190,8 +183,7 @@ The following table explains each entry in the spreadsheet:
 <td><p>Cert Subject Name</p></td>
 <td><p>The Cert Subject Name of your signing certificate used for operator XML provisioning.</p></td>
 <td><p>Optional</p></td>
-<td><div class="alert">
-<strong>Note</strong>  Only create this entry if you aren't using the the next major update to Windows 10 COSA APN database.
+<td><div>
 </div>
 <div>
  
@@ -202,8 +194,7 @@ The following table explains each entry in the spreadsheet:
 <td><p>Carrier GUID</p></td>
 <td><p>The self-assigned GUID that is used in future operator XML provisioning packages.</p></td>
 <td><p>Optional</p></td>
-<td><div class="alert">
-<strong>Note</strong>  Only create this entry if you aren't using the the next major update to Windows 10 COSA APN database.
+<td><div>
 </div>
 <div>
  
@@ -242,16 +233,6 @@ The following table explains each entry in the spreadsheet:
 <td><p>If a value is not specified, the default value is &quot;IPv4&quot;.</p></td>
 </tr>
 <tr class="even">
-<td><p>Purpose Groups</p></td>
-<td><p>A string specifying the purposes of the connection by a comma-separated list of GUIDs representing purpose values.</p></td>
-<td><p>Optional</p></td>
-<td><p>The following purpose values are available:</p>
-<ul>
-<li>Internet - 3E5545D2-1137-4DC8-A198-33F1C657515F</li>
-<li>MMS - 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8</li>
-<li>IMS - 474D66ED-0E4B-476B-A455-19BB1239ED13</li>
-<li>SUPL - 6D42669F-52A9-408E-9493-1071DCC437BD</li>
-</ul></td>
 </tr>
 <tr class="odd">
 <td><p>Connection Information – User Name</p></td>
@@ -283,8 +264,7 @@ The following table explains each entry in the spreadsheet:
 <li><p><strong>N</strong> – if the APN is not provisioning or purchase</p></li>
 </ul></td>
 <td><p>Required</p></td>
-<td><div class="alert">
-<strong>Note</strong>  Only create this entry if you aren't using the the next major update to Windows 10 COSA APN database.
+<td><div>
 </div>
 <div>
  
@@ -295,9 +275,7 @@ The following table explains each entry in the spreadsheet:
 <td><p>Connection Information – Auto-Connect Order</p></td>
 <td><p>Windows tries connections to the APNs provided by the operator and marked as “auto-connect” in the APN database until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN.</p></td>
 <td><p>Optional</p></td>
-<td><div class="alert">
-<strong>Note</strong>  
-<p>This entry is deprecated starting in the next major update to Windows 10.</p>
+<td><div>
 </div>
 <div>
  
@@ -374,8 +352,6 @@ When submitting an APN database update, please note the following:
     <Operator name="Contoso (Argentina)">
     ```
 
--   **Note**  Starting in the next major update to Windows 10, use of hardware IDs has been deprecated.
-
      
 
     The operator identification data is stored in the APN database as encoded Hardware IDs.
@@ -393,16 +369,8 @@ When submitting an APN database update, please note the following:
     -   An MCC+MNC with a specific ICCID range
 
     -   An MCC+MNC with a specific GSM provider name
-
-    -   **Note**  Starting in the next major update to Windows 10, the use of CDMA Provider names has been deprecated.
-
          
-
         A CDMA Provider name
-
-    -   **Note**  Starting in the next major update to Windows 10, the use of CDMA provider IDs has been depricated.
-
-         
 
         A CDMA Provider ID (SID)
 
@@ -422,8 +390,6 @@ When submitting an APN database update, please note the following:
 
     -   For CDMA networks, a Network Access Identifier (NAI) is used to connect to the Internet.
 
--   **Note**  Starting in the next major update to Windows 10, the below consideration is depricated.
-
      
 
     The auto-connect order must be unique for the **Operator** and **Country/Region** combination with the same IMSI, ICCID range, CDMA provider name, or CDMA provider ID value.
@@ -439,7 +405,3 @@ Once your spreadsheet is complete, you can test the APNs you’ve entered.
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
