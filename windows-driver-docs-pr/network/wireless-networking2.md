@@ -22,7 +22,7 @@ This section includes the following topics:
 
 [WDI Miniport Driver Design Guide](wdi-miniport-driver-design-guide.md)
 
-[Wi-Fi Hotspot Offloading Guide](wi-fi-hotspot-offloading.md)
+[Wi-Fi Hotspot Offloading Guide](wi-fi-hotspot-offloading-guide.md)
 
  
 
