@@ -22,7 +22,7 @@ Identify the authentication methods required by the networks that the plugin wil
   * **HS_FLAG_CAPABILITY_NETWORK_AUTH_EAP_AKA**
   * **HS_FLAG_CAPABILITY_NETWORK_AUTH_EAP_AKA_PRIME**
 
-  For EAP-based networks, the plugin can also specify a custom realm by using the **HS_FLAG_CAPABILITY_NETWORK_CUSTOM_REALM capability.
+  For EAP-based networks, the plugin can also specify a custom realm by using the **HS_FLAG_CAPABILITY_NETWORK_CUSTOM_REALM** capability.
 
 * Networks that do not require any authentication or networks for which the plugin has an independent authentication mechanism that does not require any device credentials. These networks are represented by the following capability:
   * **HS_FLAG_CAPABILITY_NETWORK_AUTH_NO_SIM**
@@ -63,7 +63,7 @@ This is the main initialization function. It provides the following information 
 * A context handle for the plugin to use whenever it calls any of the hotspot plugin host (**HS_HOST_\*\***) functions
 * The version number currently used by the host (**dwVerNumUsed**)
 * Information about the device (**pDeviceIdentity**)
-* The OS capabilities available to the plugin, specified as a **HS_FLAG_CAPABILITY_NETWORK_\*** type (**dwHostCapabilities**)
+* The OS capabilities available to the plugin, specified as a **HS_FLAG_CAPABILITY_NETWORK_\*\*** type (**dwHostCapabilities**)
 * Handlers for the functions used by the plugin to call back to the host (**pHotspotHostHandlers**)
 
 The plugin returns the following information to the hotspot plugin host:
@@ -71,7 +71,7 @@ The plugin returns the following information to the hotspot plugin host:
 * A pointer to the structure that contains the list of plugin APIs (**pHotspotPluginAPIs**). For more information, see [HOTSPOT_PLUGIN_APIS](TBD).
 * A pointer to the structure that contains the plugin profile (**pPluginProfile**). For more information, see [HS_PLUGIN_PROFILE](TBD). 
 
-The profile includes all of the capabilities required by the plugin. This is represented by a single value that results from combining the applicable capability flag values (**HS_FLAG_CAPABILITY_NETWORK_\*\***) by using a bitwise OR operation. If the plugin specifies the **HS\_FLAG\_CAPABILITY\_NETWORK\_AUTH\_HTTP** capability or the **HS\_FLAG\_CAPABILITY\_NETWORK\_AUTH\_EAP\_\*** capabilities, the **dwSupportedSIMCount** member of the **HS_PLUGIN_PROFILE** structure must be set to the number of supported SIMs. The plugin must also specify the total number of networks that it supports by setting the **dwNumNetworksSupported** member of its **HS_PLUGIN_PROFILE** structure.
+The profile includes all of the capabilities required by the plugin. This is represented by a single value that results from combining the applicable capability flag values (**HS_FLAG_CAPABILITY_NETWORK_\*\***) by using a bitwise OR operation. If the plugin specifies the **HS\_FLAG\_CAPABILITY\_NETWORK\_AUTH\_HTTP** capability or the **HS\_FLAG\_CAPABILITY\_NETWORK\_AUTH\_EAP\_\*\*** capabilities, the **dwSupportedSIMCount** member of the **HS_PLUGIN_PROFILE** structure must be set to the number of supported SIMs. The plugin must also specify the total number of networks that it supports by setting the **dwNumNetworksSupported** member of its **HS_PLUGIN_PROFILE** structure.
 
 ### HsPluginQueryHiddenNetwork [Optional]
 

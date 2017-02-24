@@ -104,14 +104,24 @@ The following table shows the sample transformers that are provided with the com
 
 If your hotspot data is in simple Excel format, you must supply an XML file that maps columns in the Excel file to corresponding required JSON elements. The following list shows the allowed column names:
 
-|  |  |  |
-| --- | --- | --- |
-| Latitude | SSID | CountryOrRegion |
-| Longitude | Range | Bssids |
-| RadialUncertainty | Address | ProviderHotspotId |
-| Altitude | City | IsPublic |
-| AltitudeUncertainty | StateOrProvince | IsFree |
-| HotspotName | PostalCode | PhoneNumbers |
+* Latitude
+* Longitude
+* RadialUncertainty
+* Altitude
+* AltitudeUncertainty
+* HotspotName
+* SSID
+* Range
+* Address
+* City
+* StateOrProvince
+* PostalCode
+* CountryOrRegion
+* Bssids
+* ProviderHotspotId
+* IsPublic
+* IsFree
+* PhoneNumbers
 
 The following example shows a portion of a mapping file. Each **MappingRule** element associates an Excel column (**PartnerColumnName** and **PartnerColumnNumber**) with a required JSON element (**MicrosoftColumnName**). The **ContainsHeaderRow** element, located after the closing Rules tag (`</Rules>`), indicates that the file contains a header row, which should be skipped when reading data.
 
