@@ -36,7 +36,7 @@ UFX calls all client driver's callback functions asynchronously, and one callbac
 ## Initialization
 
 
-1.  The function controller client driver starts the initialization process when Windows Driver Foundation (WDF) invokes the client driver's implementation of the [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) callback. In that implementation, the client driver is expected to call [**UfxFdoInit**](https://msdn.microsoft.com/library/windows/hardware/mt187970) and then create the device object by calling [**WdfDeviceCreate**](wdf-wdfdevicecreate).
+1.  The function controller client driver starts the initialization process when Windows Driver Foundation (WDF) invokes the client driver's implementation of the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback. In that implementation, the client driver is expected to call [**UfxFdoInit**](https://msdn.microsoft.com/library/windows/hardware/mt187970) and then create the device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 2.  The client driver calls [**UfxDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187951) to create the USB device object and retrieve the UFXDEVICE handle.
 3.  The client driver calls [**UfxDeviceNotifyHardwareReady**](https://msdn.microsoft.com/library/windows/hardware/mt187958) to indicate to UFX that it can now invoke client driver's callback functions.
 4.  UFX performs initialization tasks such as:
