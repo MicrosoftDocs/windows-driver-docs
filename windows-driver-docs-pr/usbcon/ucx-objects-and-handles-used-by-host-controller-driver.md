@@ -38,7 +38,7 @@ For more details on WDF objects, see [Introduction to Framework Objects](https:/
 
 **UCXCONTROLLER**
 
-Represents the host controller that is created by the host controller driver. The driver must create only one host controller object per host controller instance. Typically created within the [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) callback by calling the [**UcxControllerCreate**](https://msdn.microsoft.com/library/windows/hardware/mt188033) method.
+Represents the host controller that is created by the host controller driver. The driver must create only one host controller object per host controller instance. Typically created within the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback by calling the [**UcxControllerCreate**](https://msdn.microsoft.com/library/windows/hardware/mt188033) method.
 
 When the host controller driver creates the object, the driver registers its implementation of callback functions that are invoked by UCX. The driver should additionally identify the bus type over which the host controller is connected, such as ACPI or PCI. The driver also provides host controller device information by using the [**UCX\_CONTROLLER\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt188057) structure that is passed to the [**UcxControllerCreate**](https://msdn.microsoft.com/library/windows/hardware/mt188033) call.
 
@@ -63,7 +63,7 @@ Used to retrieve the current frame number from the host controller, which is use
 
 **UCXROOTHUB**
 
-Gets and controls the status of the root ports of the host controller. Created by the host controller driver typically within the [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) callback by calling the [**UcxRootHubCreate**](https://msdn.microsoft.com/library/windows/hardware/mt188048) method after the host controller object is created. There should be only one root hub object per host controller instance. In the **UcxRootHubCreate** call, the driver registers its callback implementations.
+Gets and controls the status of the root ports of the host controller. Created by the host controller driver typically within the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback by calling the [**UcxRootHubCreate**](https://msdn.microsoft.com/library/windows/hardware/mt188048) method after the host controller object is created. There should be only one root hub object per host controller instance. In the **UcxRootHubCreate** call, the driver registers its callback implementations.
 
 [*EVT\_UCX\_ROOTHUB\_GET\_INFO*](https://msdn.microsoft.com/library/windows/hardware/mt187836)  
 Returns the number of USB 2.0 and USB 3.0 ports of the root hub.

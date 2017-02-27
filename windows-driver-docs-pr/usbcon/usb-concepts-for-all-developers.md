@@ -68,8 +68,8 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>KMDF</strong>: [<strong>WdfUsbTargetDeviceCreateWithParameters</strong>](wdf-wdfusbtargetdevicecreatewithparameters)</p>
-<p><strong>UMDF</strong>: [<strong>IWDFUsbTargetDevice</strong>](wdf-iwdfusbtargetdevice)</p></td>
+<td><p><strong>KMDF</strong>: [<strong>WdfUsbTargetDeviceCreateWithParameters</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439428)</p>
+<p><strong>UMDF</strong>: [<strong>IWDFUsbTargetDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560362)</p></td>
 <td><p>[<strong>UsbDevice</strong>](https://msdn.microsoft.com/library/windows/apps/dn263883)</p>
 <p>[How to connect to a USB device (Windows Store app)](how-to-connect-to-a-usb-device--windows-store-app-.md).</p></td>
 <td><p>[<strong>WinUsb_Initialize</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540277)</p>
@@ -98,10 +98,10 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <tbody>
 <tr class="odd">
 <td><p><strong>KMDF</strong>:</p>
-<p>[<strong>WdfUsbTargetDeviceGetDeviceDescriptor</strong>](wdf-wdfusbtargetdevicegetdevicedescriptor)</p>
-<p>[<strong>WdfUsbTargetDeviceRetrieveConfigDescriptor</strong>](wdf-wdfusbtargetdeviceretrieveconfigdescriptor)</p>
+<p>[<strong>WdfUsbTargetDeviceGetDeviceDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550090)</p>
+<p>[<strong>WdfUsbTargetDeviceRetrieveConfigDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550098)</p>
 <p><strong>UMDF</strong>:</p>
-<p>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](wdf-iwdfusbtargetdevice_retrievedescriptor)</p>
+<p>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560374)</p>
 <p>See [USB descriptors](usb-descriptors.md).</p></td>
 <td><p>[<strong>UsbDevice.DeviceDescriptor</strong>](https://msdn.microsoft.com/library/windows/apps/dn264002)</p>
 <p>[<strong>UsbConfiguration.Descriptors</strong>](https://msdn.microsoft.com/library/windows/apps/dn263802)</p>
@@ -136,15 +136,15 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <tbody>
 <tr class="odd">
 <td><p><strong>KMDF:</strong></p>
-<p>[<strong>WdfUsbTargetDeviceSelectConfig</strong>](wdf-wdfusbtargetdeviceselectconfigtype)</p>
-<p>[<strong>WdfUsbTargetDeviceCreateUrb</strong>](wdf-wdfusbtargetdevicecreateurb)</p>
+<p>[<strong>WdfUsbTargetDeviceSelectConfig</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550101)</p>
+<p>[<strong>WdfUsbTargetDeviceCreateUrb</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439423)</p>
 <p>[<strong>USBD_SelectConfigUrbAllocateAndBuild</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406243)</p>
-<p>[<strong>WdfUsbInterfaceSelectSetting</strong>](wdf-wdfusbinterfaceselectsetting)</p>
+<p>[<strong>WdfUsbInterfaceSelectSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550073)</p>
 <p>See [How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md).</p>
 <p>See [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md).</p>
 <p><strong>UMDF:</strong></p>
 <p>Configuration selection is not Supported.</p>
-<p>[<strong>IWDFUsbInterface::SelectSetting</strong>](wdf-iwdfusbinterface_selectsetting)</p></td>
+<p>[<strong>IWDFUsbInterface::SelectSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560343)</p></td>
 <td><p>[<strong>UsbInterfaceSetting.SelectSettingAsync</strong>](https://msdn.microsoft.com/library/windows/apps/dn264286)</p>
 <p>[How to select a USB interface setting (Windows Store app)](how-to-select-a-usb-interface-setting--windows-store-app-.md).</p></td>
 <td>[<strong>WinUsb_SetCurrentAlternateSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540302)</td>
@@ -172,11 +172,11 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <tbody>
 <tr class="odd">
 <td><p><strong>KMDF:</strong></p>
-<p>[<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](wdf-wdfusbtargetdevicesendcontroltransfersynchronously)</p>
-<p>[<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](wdf-wdfusbtargetdeviceformatrequestforcontroltransfer)</p>
+<p>[<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550104)</p>
+<p>[<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550082)</p>
 <p>[<strong>USBD_SelectConfigUrbAllocateAndBuild</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406243)</p>
 <p><strong>UMDF:</strong></p>
-<p>[<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](umdf-iwdfusbtargetdevice_formatrequestforcontroltransfer)</p>
+<p>[<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560363)</p>
 <p>See [How to send a USB control transfer](usb-control-transfer.md).</p></td>
 <td><p>[<strong>SendControlInTransferAsync</strong>](https://msdn.microsoft.com/library/windows/apps/dn264037)</p>
 <p>[<strong>SendControlOutTransferAsync</strong>](https://msdn.microsoft.com/library/windows/apps/dn264047)</p>
@@ -207,16 +207,16 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <tbody>
 <tr class="odd">
 <td><p><strong>KMDF:</strong></p>
-<p>[<strong>WdfUsbTargetPipeReadSynchronously</strong>](wdf-wdfusbtargetpipereadsynchronously)</p>
-<p>[<strong>WdfUsbTargetPipeWriteSynchronously</strong>](wdf-wdfusbtargetpipewritesynchronously)</p>
-<p>[<strong>WdfUsbTargetPipeFormatRequestForRead</strong>](wdf-wdfusbtargetpipeformatrequestforread)</p>
-<p>[<strong>WdfUsbTargetPipeFormatRequestForWrite</strong>](wdf-wdfusbtargetpipeformatrequestforwrite)</p>
+<p>[<strong>WdfUsbTargetPipeReadSynchronously</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551155)</p>
+<p>[<strong>WdfUsbTargetPipeWriteSynchronously</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551163)</p>
+<p>[<strong>WdfUsbTargetPipeFormatRequestForRead</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551136)</p>
+<p>[<strong>WdfUsbTargetPipeFormatRequestForWrite</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551141)</p>
 <p>[How to send USB bulk transfer requests](usb-bulk-and-interrupt-transfer.md)</p>
 <p>[How to use the continuous reader for reading data from a USB pipe](how-to-use-the-continous-reader-for-getting-data-from-a-usb-endpoint--umdf-.md).</p>
 <p><strong>UMDF:</strong></p>
-<p>[<strong>IUsbTargetPipeContinuousReaderCallbackReadComplete</strong>](umdf-iusbtargetpipecontinuousreadercallbackreadcomplete)</p>
-<p>[<strong>IWDFUsbTargetPipe</strong>](umdf-iwdfusbtargetpipe)</p>
-<p>[<strong>IWDFUsbTargetPipe2</strong>](umdf-iwdfusbtargetpipe2)</p></td>
+<p>[<strong>IUsbTargetPipeContinuousReaderCallbackReadComplete</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556908)</p>
+<p>[<strong>IWDFUsbTargetPipe</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560391)</p>
+<p>[<strong>IWDFUsbTargetPipe2</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560394)</p></td>
 <td><p>[<strong>UsbBulkInPipe.InputStream</strong>](https://msdn.microsoft.com/library/windows/apps/dn297601)</p>
 <p>[<strong>UsbBulkOutPipe.OutputStream</strong>](https://msdn.microsoft.com/library/windows/apps/dn297669)</p>
 <p>[How to send a USB bulk transfer request (Windows Store app)](how-to-send-a-usb-bulk-transfer--windows-store-app-.md).</p></td>
@@ -275,7 +275,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <tbody>
 <tr class="odd">
 <td><p><strong>KMDF:</strong></p>
-<p>[<strong>WdfUsbTargetDeviceCreateIsochUrb</strong>](wdf-wdfusbtargetdevicecreateisochurb)</p>
+<p>[<strong>WdfUsbTargetDeviceCreateIsochUrb</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439420)</p>
 <p>See [How to transfer data to USB isochronous endpoints](transfer-data-to-isochronous-endpoints.md).</p>
 <p><strong>UMDF:</strong> Not supported.</p></td>
 <td><p>Not supported.</p></td>
@@ -312,12 +312,12 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <tbody>
 <tr class="odd">
 <td><p><strong>KMDF:</strong></p>
-<p>[<strong>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</strong>](wdf-wdf_device_power_policy_idle_settings)</p>
-<p>[<strong>WdfDeviceAssignS0IdleSettings</strong>](wdf-wdfdeviceassigns0idlesettings)</p>
+<p>[<strong>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551270)</p>
+<p>[<strong>WdfDeviceAssignS0IdleSettings</strong>](https://msdn.microsoft.com/library/windows/hardware/ff545903)</p>
 <p><strong>UMDF:</strong></p>
-<p>[<strong>IWDFUsbTargetDevice::SetPowerPolicy</strong>](wdf-iwdfusbtargetdevice_setpowerpolicy)</p>
-<p>[<strong>IWDFDevice2::AssignS0IdleSettings</strong>](wdf-iwdfdevice2_assigns0idlesettings)</p>
-<p>[<strong>IWDFDevice3::AssignS0IdleSettingsEx</strong>](wdf-iwdfdevice3_assigns0idlesettingsex)</p>
+<p>[<strong>IWDFUsbTargetDevice::SetPowerPolicy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560385)</p>
+<p>[<strong>IWDFDevice2::AssignS0IdleSettings</strong>](https://msdn.microsoft.com/library/windows/hardware/ff556920)</p>
+<p>[<strong>IWDFDevice3::AssignS0IdleSettingsEx</strong>](BUGBUG)</p>
 <p>See [How to send a device to selective suspend](http://msdn.microsoft.com/windows/hardware/gg463309).</p></td>
 <td><p>Not supported.</p></td>
 <td><p>[<strong>WinUsb_SetPowerPolicy</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540309)</p>
