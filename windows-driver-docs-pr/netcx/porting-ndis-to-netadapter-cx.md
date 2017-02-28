@@ -2,13 +2,13 @@
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-This page describes how to convert a pre-existing NDIS 6.x miniport driver into a WDF-based networking client miniport driver.
+This page describes how to convert an NDIS 6.x miniport driver into a Windows Driver Framework (WDF) networking client miniport driver.
 
-Before beginning the conversion, it will be helpful to understand some of the [basic architecture and conventions](../wdf/index.md) of WDF.
+For general information about WDF, please review the [WDF Driver Development Guide](../wdf/index.md).
 
 ## Compilation Settings
 
-Ensure that your project links against the latest version of KMDF.  Also link against NetAdapterCxStub.lib (located in `Windows Kits\10\Lib\<latest_windows_version>\km\<architecture>\netadaptercx\1.0`).
+First, ensure that your project links against the latest version of KMDF.  Also link against NetAdapterCxStub.lib (located in `Windows Kits\10\Lib\<latest_windows_version>\km\<architecture>\netadaptercx\1.0`).
 
 It is no longer strictly necessary to link against `ndis.lib`, although you may still want to use some NDIS APIs, so you may still link against it.
 
@@ -22,7 +22,7 @@ Add these headers to every source file (or to your common/precompiled header):
 #include <netadaptercx.h>
 ```
 
-Add the [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF, if they are not already there.  For example:
+Ensure that you have the [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) in your INF:
 
 ```Inf
 [Yourdriver.Wdf]
@@ -46,7 +46,7 @@ if (!NT_SUCCESS(status)) {
 
 Do not specify the **WdfDriverInitNoDispatchOverride** flag in the call to [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175). Remove this flag if you were using WDF in miniport mode in your NDIS 6.x driver.
 
-Consider removing the *DriverUnload* routine from your client driver, as it is an optional routine for a WDF networking client driver.  If you keep it, remove the call to [**NdisMDeregisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563578).
+*DriverUnload* is an optional routine for a WDF networking client driver, so you can remove it if you like.  If you keep it, remove the call to [**NdisMDeregisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563578).
 
 ## Device Initialization
 
@@ -67,7 +67,7 @@ While you may need to handle several events to properly manage your device, the 
 In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), your driver should do the following:
 
 1. Call [**NetAdapterDeviceInitConfig**](netadapterdeviceinitconfig.md).
-2. Load pointers to your driver's callbacks and call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff546135).  For example:
+2. Load pointers to your driver's callbacks and call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff546135), as shown here:
 
     ```ManagedCPlusPlus
     status = NetAdapterDeviceInitConfig(DeviceInit);
@@ -86,7 +86,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hard
 
 3. Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 
-4. Next you'll create the NETADAPTER object.  This object represents your NIC, which is the endpoint for all networking I/O.  To create it, initialize a config block and then call NetAdapterCreate.  For example:
+4. Next you'll create the NETADAPTER object.  This object represents your NIC, which is the endpoint for all networking I/O.  To create it, the client typically calls [**NET_ADAPTER_CONFIG_INIT method**](net-adapter-config-init.md), followed by [**NetAdapterCreate method**](netadaptercreate.md):
 
     ```ManagedCPlusPlus
     WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attribs, MYDRIVER_ADAPTER_CONTEXT);
@@ -102,32 +102,38 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hard
 
 Typically, you'll have one NETADAPTER per WDFDEVICE, with the WDFDEVICE being the parent object of the NETADAPTER.
 
-As with any WDF object, you can (and probably likely will want to) set your own context block onto the object (in the example above, that's the MYDRIVER_ADAPTER_CONTEXT).   Since WDF allows you to set a context on any WDF object, you can actually set contexts on the WDFDEVICE and/or the NETADAPTER.
+Optionally, you can add context space to the object.   Since WDF allows you to set a context on any WDF object, you could add separate context space for the WDFDEVICE and the NETADAPTER objects.  In the example above, the client adds `MYDRIVER_ADAPTER_CONTEXT` to the NETADAPTER object.  For more info, see [Framework Object Context Space](../wdf/framework-object-context-space.md).
 
-We recommend that you put device-related data in your WDFDEVICE's context, and networking-related data into your NETADAPTER context.  However, this is not a requirement, and you can organize your contexts however you like.  If you are porting an existing NDIS 6.x driver, you'll likely have a single MiniportAdapterContext that combines networking- and device-related data into a single data structure.  To simplify the porting process, you can just convert that entire structure to the WDFDEVICE context, and make the NETADAPTER's context be a small structure that just points to the WDFDEVICE's context.
+We recommend that you put device-related data in your WDFDEVICE's context, and networking-related data into your NETADAPTER context.  If you are porting an existing NDIS 6.x driver, you'll likely have a single MiniportAdapterContext that combines networking- and device-related data into a single data structure.  To simplify the porting process, you can just convert that entire structure to the WDFDEVICE context, and make the NETADAPTER's context be a small structure that points to the WDFDEVICE's context.
 
-You'll provide 3 callbacks to NET_ADAPTER_CONFIG_INIT.  [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) and [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) are specific to the new data path programming model.
+You'll provide 3 callbacks to [**NET_ADAPTER_CONFIG_INIT method**](net-adapter-config-init.md):
 
-The [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) is where you call the APIs equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672), but instead of having one API taking a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure there are different APIs to set different types of capabilities.  For example, your [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) might call:
+* [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md)
+* [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md)
+* [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md)
+
+The first two are specific to the NetAdapter data path programming model.
+
+The third is where the client calls the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672).  However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities.  For example, your [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) might call some or all of the following:
 
 * [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md)
 * [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md)
 * [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md)
 * [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md)
 
-If you want to set an attribute that does not have a equivalent NetAdapter API you can call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from this callback.
+To set an attribute that does not have equivalent NetAdapter functionality, call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from this callback.
 
-## Initializing the OID path
+## Initializing the Control Request Path
 
-Next, while we're still in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), we're going to set up the OID path.  The OID path is modelled like a WDF queue.  Except instead of WDFREQUESTs, you'll be getting OIDs.
+Next, while we're still in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), we're going to set up the object identifier (OID) path.  The OID path is modeled like a WDF queue.  Except instead of WDFREQUESTs, you'll be getting OIDs.
 
-You have two choices in how to port this.  You can get a low level hook that will just give you the OID requests in a very similar way to how NDIS gives requests to a miniport driver.  This is the easiest port, since you'll mostly just need to adjust a function signature from your old MiniportOidRequest handler.
+There are two high level approaches you might take when porting this.  The first option is to register a default handler that receives OID requests in a very similar way to how a miniport driver receives requests from NDIS.  This is the easiest port, since you'll likely just need to adjust a function signature from your old MiniportOidRequest handler.
 
-The other choice is to break apart your OID handler's switch statement, so each OID is its own function.  This makes for cleaner code, but requires more work.
+The other option is to break apart your OID handler's switch statement and provide a separate handler for each individual OID.
 
-You can use both approaches in the same driver – some OIDs can have a custom function per OID, while the rest get dumped into a catch-all function with a big switch statement.  So you can incrementally move out individual OIDs if they become too unwieldy to lump into a single function.
+You might even use both approaches in the same driver, providing custom handlers for some OIDs while using a default handler with a switch statement for the remainder.
 
-Here's how to register default handlers for all query OIDs and all set OIDs:
+To register default handlers for all query OIDs and all set OIDs, provide [**EVT_NET_REQUEST_DEFAULT_QUERY_DATA callback function**](evt-net-request-default-query-data.md) and [**EVT_NET_REQUEST_DEFAULT_SET_DATA callback function**](evt-net-request-default-set-data.md):
 
 ```ManagedCPlusPlus
 NET_REQUEST_QUEUE_CONFIG config;
@@ -136,7 +142,7 @@ config.EvtRequestDefaultQueryData = MyQueryHandler;
 config.EvtRequestDefaultSetData = MySetHandler;
 ```
 
-You can then optionally add a special-purpose handler for any particular OID.  For example:
+To add an OID-specific handler, call [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER method**](net-request-queue-config-add-query-data-handler.md) with a pointer to the client driver's implementation of a [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function :
 
 ```ManagedCPlusPlus
 NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
@@ -144,7 +150,7 @@ NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
     EvtQueryGenVendorDescription, sizeof(NIC_VENDOR_DESC));
 ```
 
-Once you've set up the OID queue the way you like, you create it with NetRequestQueueCreate.  Example:
+Once you've set up the OID queue the way you like, call [**NetRequestQueueCreate method**](netrequestqueuecreate.md) to create the queue:
 
 ```ManagedCPlusPlus
 status = NetRequestQueueCreate(&config, WDF_NO_OBJECT_ATTRIBUTES, NULL);
@@ -157,7 +163,9 @@ if(!NT_SUCCESS(status))
 
 ## Querying Network Advanced Keywords
 
-Next we'll replace NdisOpenConfiguration[Ex] and related APIs with the NETCONFIGURATION APIs.  The APIs are similar, and you won't need to restructure your code.  For example:
+Next we'll replace [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/hh975122) and related calls with the `NetConfiguration*` methods.  The methods are similar, and you won't need to restructure your code.
+
+Start by calling [**NetAdapterOpenConfiguration method**](netadapteropenconfiguration.md) to get a handle to a configuration object.  Then, you can query it:
 
 ```ManagedCPlusPlus
 NETCONFIGURATION config = NULL;
@@ -172,15 +180,17 @@ status = NetConfigurationQueryUlong(config, 0, &SomeValue, &myvalue);
 NetConfigurationClose(configuration);
 ```
 
-There are configuration functions for querying ULONGs, Strings, Multi-Strings (similar to REG_MULTI_SZ), binary blobs, and MAC addresses.
+There are configuration functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and MAC addresses.
 
 ## Creating Device Interfaces
 
-Read this section if your NDIS driver calls [**NdisRegisterDeviceEx**](https://msdn.microsoft.com/library/windows/hardware/ff564518).  An NDIS driver typically does this to create a control device object (CDO) so that it can receive IOCTLs from user mode.
+Read this section if your NDIS driver calls [**NdisRegisterDeviceEx**](https://msdn.microsoft.com/library/windows/hardware/ff564518).  An NDIS driver typically uses this routine to create a control device object (CDO) so that it can receive IOCTLs from user mode.
 
-Here are two ways to do the same in your WDF networking client driver.
+Here are two ways to do this in your WDF networking client driver.
 
-The first option is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff545841).  Alternatively, the driver can create a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) with a reference string, as shown here:
+The first option is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff545841).
+
+Alternatively, create a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) with a reference string, as shown here:
 
 ```ManagedCPlusPlus
 DECLARE_CONST_UNICODE_STRING(c_RefString, L"MyRefString");
@@ -193,7 +203,7 @@ if (!NT_SUCCESS(status)) {
 }
 ```
 
-Any component that sends requests to a handle opened on this device interface results in I/O requests being delivered to your device driver.  You can use [WDF queue objects](../wdf/framework-queue-objects.md) to handle the incoming I/O requests.
+When a component sends requests to a handle opened on this device interface, your device driver receives I/O requests.  You can use [WDF queue objects](../wdf/framework-queue-objects.md) to handle the incoming I/O requests.
 
 ## Finishing Device Initialization
 
@@ -201,16 +211,20 @@ At this point in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/librar
 
 ## Power Management
 
-In NDIS 6.x, your driver received OID_PNP_SET_POWER for power state changes.  Your WDF client never receives this OID, however.  Instead, it can register optional callback functions to receive power state change notifications.  For an overview, see [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
+While your NDIS 6.x driver received [**OID_PNP_SET_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff569780) for power state changes, your WDF client never receives this OID.
 
-The code in your OID_PNP_SET_POWER handler likely moves to [*EVT_WDF_DEVICE_D0_EXIT*](https://msdn.microsoft.com/library/windows/hardware/ff540855) and [*EVT_WDF_DEVICE_D0_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/ff540848).
+Instead, a WDF client registers optional callback functions to receive power state change notifications.  For an overview, see [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
 
-Because the state machines are slightly different, you may need to make minor modifications to the code.
+Typically, the code in your [**OID_PNP_SET_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff569780) handler moves to [*EVT_WDF_DEVICE_D0_EXIT*](https://msdn.microsoft.com/library/windows/hardware/ff540855) and [*EVT_WDF_DEVICE_D0_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/ff540848).
+
+Because the WDF power state machine is slightly different, you might need to make minor modifications to the code.
 
 In particular, NDIS assumes that a device initializes in D0.
-However, WDF assumes that a device initializes into D3, and supports an explicit [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848) callback function as part of device initialization. 
+However, WDF assumes that a device initializes in D3, and supports an explicit [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848) callback function as part of device initialization. 
 
-Likewise, a WDF network adapter driver will not receive OID_PM_PARAMETERS.  Instead, the driver can query the necessary WoL configuration from the NETPOWERSETTINGS object.  Access to this object is available only when you need to arm/disarm your hardware for wake, which in WDF is the [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and related callback functions.  For example:
+Similarly, a WDF client driver never receives OID_PM_PARAMETERS.
+
+Instead, the driver queries the necessary WoL configuration from the NETPOWERSETTINGS object.  To access this object, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md) from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and related callback functions.  For example:
 
 ```ManagedCPlusPlus
 NTSTATUS
@@ -226,21 +240,19 @@ EvtDeviceArmWakeFromS0(WDFDEVICE Device)
 }
 ```
 
-The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic.  The main difference is that you can now query these flags at a more convenient time during the power-down sequence.
+The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic.  The main difference is that you can now query these flags during the power-down sequence.
 
 Once you've moved this code around, you can delete your OID handlers for OID_PNP_SET_POWER and OID_PM_PARAMETERS.
 
-Your driver is the [power policy owner](../wdf/power-policy-ownership.md) for the NIC's device stack.
+Because the client is the [power policy owner](../wdf/power-policy-ownership.md) for the NIC's device stack, it can use WDF's built-in power management functionality.  For example, you might want to add your own idle logic. For info, see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
 
-As a result, you can use most of the built-in power management functionality in WDF.  For example, you can use **IdleCanWakeFromS0** to add your own idle logic. For info, see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
-
-Note that when you associate a NetAdapter with your device, the NetAdapter framework keeps your device at D0 when the host is using your network interface.  Therefore, in most cases, it's not necessary for you to implement your own power logic, as the default behavior that comes with NetAdapter is sufficient.
+Because the NetAdapter framework keeps your device at D0 while the host uses the network interface, the client typically does not implement power logic; the default NetAdapter power behavior is sufficient.
 
 ## Data Path
 
-The data path programming model has changed significantly and requires a more in-depth explanation. This section explains the bare minimum to enable you to install and remove your device.
+The data path programming model has changed significantly and requires a more in-depth explanation. This section explains the minimum you'll need to install and remove your device.
 
-First, here are some of the new data structures that you'll use with the new model:
+The NetAdapter model introduces the following new structures for use with the data path:
 
 |New data path structures|Description|
 |-|-|
@@ -248,7 +260,7 @@ First, here are some of the new data structures that you'll use with the new mod
 |[**NET_PACKET_FRAGMENT**](net-packet-fragment.md)|Similar to a memory descriptor list (MDL). Each NET_PACKET has one or more of these.|
 |[**NET_RING_BUFFER**](net-ring-buffer.md)|Ring buffer shared between the host and a client, a container for one or more NET_PACKET structures|
 
-In the NetAdapterCx model, network traffic is no longer per adapter, as in NDIS, but rather per queue.  Specifically, WDF objects represent network packet queues. When your client driver calls [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md), it provides two queue creation callbacks [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) and [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md). NetAdapterCx calls these callbacks when it's time for the client to create a transmit or receive queue.
+In the NetAdapter model, network traffic is no longer per adapter, as in NDIS, but rather per queue.  Specifically, WDF objects represent network packet queues. When your client driver calls [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md), it provides two queue creation callbacks: [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) and [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md). In these callbacks, the client creates transmit and receive queues respectively.
 
 In NDIS 6.x, miniports have start and pause semantics; in WDF, queues are only created and deleted.
 

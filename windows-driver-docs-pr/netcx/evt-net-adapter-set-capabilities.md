@@ -51,7 +51,12 @@ NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* after [*EVT_WDF_DEVICE_PRE
 
 NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* once per device arrival.
 
-In this function, the client typically sets the adapter's link and MAC capabilities, and optionally specifies power capabilities and current link state.
+In this function, the client typically sets the adapter's link and MAC capabilities, and optionally specifies power capabilities and current link state.  To do so, it uses the following methods:
+
+* [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md)
+* [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md)
+* [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md)
+* [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md)
 
 In NetAdapterCx version 1.0, the client driver reports offload capabilities by calling [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from this callback routine. 
 
