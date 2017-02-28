@@ -46,8 +46,11 @@ This callback function does not return a value.
 
 Remarks
 -------
+In this callback, the client retrieves packets from the queue, sends the data, and then completes the packets.
 
-See [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
+To retrieve packets, the client can either update the ring buffer's **BeginIndex** manually, or it can call helper macros such as [**NetRingBufferReturnCompletedPackets method**](netringbufferreturncompletedpackets.md).
+
+For more info, see [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
 
 Requirements
 ------------

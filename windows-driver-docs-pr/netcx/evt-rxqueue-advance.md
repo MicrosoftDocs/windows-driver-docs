@@ -49,33 +49,48 @@ Remarks
 
 In this callback function, the client driver typically performs the following steps:
 
-1.  Call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) to retrieve the ring buffer associated with the *RxQueue* handle.
+1.  Call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) to retrieve the ring buffer handle associated with the *RxQueue* handle.
 2.  Iterate on the packets in the ring buffer.
-    1.  Call [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md). (If **NetRingBufferGetNextPacket** returns NULL, there are no more new packets available.)
+    1.  Call [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md) to retrieve packets containing receive buffers.  If **NetRingBufferGetNextPacket** returns NULL, there are no more new packets available.
     2.  Program that packet to receive. (Insert this NET_PACKET in the driver's available to receive list).
-    3.  Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md)
+    3.  Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md).
+
+```ManagedCPlusPlus
+VOID
+EvtRxQueueAdvance(NETRXQUEUE RxQueue)
+{
+    NET_RING_BUFFER *ringBuffer = NetRxQueueGetRingBuffer(RxQueue);
+    NET_PACKET *netPacket;
+
+    while ((pNetPacket = NetRingBufferGetNextPacket(pRingBuffer)) != NULL)
+    {
+        NetRingBufferAdvanceNextPacket(ringBuffer);
+    }
+}
+```
 
 3.  Return completed packets to the OS. The client driver can track asynchronous completion of individual packets using a flag on the packet. For packets that have been completed (have new receive data), advance the **BeginIndex** value of the ring buffer.
-    ```
-        UINT32 numOfElments =
-            NetRingBufferGetNumberOfElementsInRange(RingBuffer,
-                                                    RingBuffer->BeginIndex,
-                                                    RingBuffer->NextIndex);
-        PNET_PACKET pPacket = NULL;
 
-        while (numOfElments > 0)
-        {
-            pPacket = (PNET_PACKET) NetRingBufferGetElementAtIndex(RingBuffer, RingBuffer->BeginIndex);
+```
+    UINT32 numOfElments =
+        NetRingBufferGetNumberOfElementsInRange(RingBuffer,
+                                                RingBuffer->BeginIndex,
+                                                RingBuffer->NextIndex);
+    PNET_PACKET pPacket = NULL;
 
-            if (!pPacket->Data.Scratch)
-                break;
+    while (numOfElments > 0)
+    {
+        pPacket = (PNET_PACKET) NetRingBufferGetElementAtIndex(RingBuffer, RingBuffer->BeginIndex);
 
-            RingBuffer->BeginIndex = NetRingBufferIncrementIndex(RingBuffer,
-                                                                 RingBuffer->BeginIndex);
+        if (!pPacket->Data.Scratch)
+            break;
 
-            numOfElments--;
-        }
-    ```
+        RingBuffer->BeginIndex = NetRingBufferIncrementIndex(RingBuffer,
+                                                                RingBuffer->BeginIndex);
+
+        numOfElments--;
+    }
+```
 
 Requirements
 ------------

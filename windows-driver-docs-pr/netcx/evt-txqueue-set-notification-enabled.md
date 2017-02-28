@@ -51,7 +51,9 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 Remarks
 -------
 
-If *NotificationEnabled* is TRUE, NetAdapterCx waits to call [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) until after the client driver has called [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md).
+When NetAdapterCx detects that that [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md), is not completing any packets, it calls [**EVT_TXQUEUE_SET_NOTIFICATION_ENABLED**](evt-txqueue-set-notification-enabled.md) with **TRUE** to notify the client that it should call [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) when it is ready for more packets.
+
+The client driver might enable an interrupt from this callback and then call [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) from the interrupt handler.
 
 For more information, see [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md).
 
