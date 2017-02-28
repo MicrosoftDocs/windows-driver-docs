@@ -10,9 +10,9 @@ For general information about WDF, please review the [WDF Driver Development Gui
 
 First, ensure that your project links against the latest version of KMDF.  Also link against NetAdapterCxStub.lib (located in `Windows Kits\10\Lib\<latest_windows_version>\km\<architecture>\netadaptercx\1.0`).
 
-It is no longer strictly necessary to link against `ndis.lib`, although you may still want to use some NDIS APIs, so you may still link against it.
+Link against `ndis.lib` if your driver calls NDIS APIs.
 
-It is no longer necessary to set NDIS preprocessor macros, like NDIS650_MINIPORT=1.
+Remove NDIS preprocessor macros, like NDIS650_MINIPORT=1.
 
 Add these headers to every source file (or to your common/precompiled header):
 
@@ -22,7 +22,7 @@ Add these headers to every source file (or to your common/precompiled header):
 #include <netadaptercx.h>
 ```
 
-Ensure that you have the [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) in your INF:
+Add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
 
 ```Inf
 [Yourdriver.Wdf]
@@ -44,15 +44,13 @@ if (!NT_SUCCESS(status)) {
 }
 ```
 
-Do not specify the **WdfDriverInitNoDispatchOverride** flag in the call to [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175). Remove this flag if you were using WDF in miniport mode in your NDIS 6.x driver.
+If it is set, remove the **WdfDriverInitNoDispatchOverride** flag from the call to [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175).
 
-*DriverUnload* is an optional routine for a WDF networking client driver, so you can remove it if you like.  If you keep it, remove the call to [**NdisMDeregisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563578).
+*DriverUnload* is an optional routine for a WDF networking client driver, so you can remove it if you like.  Do not call [**NdisMDeregisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563578) from *DriverUnload*.
 
 ## Device Initialization
 
-Next, we need to break *MiniportInitializeEx* into several pieces, each of which is a standard WDF event.  The full sequence includes many events, several of which are optional.  See [Power-Up Sequence for a Function or Filter Driver](../wdf/power-up-sequence-for-a-function-or-filter-driver.md).
-
-You should move code into the most logical place, based on the WDF semantics of each state.
+Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional.  For details on the callback sequence, see [Power-Up Sequence for a Function or Filter Driver](../wdf/power-up-sequence-for-a-function-or-filter-driver.md).
 
 In general, callbacks you'll need to provide are:
 
@@ -60,7 +58,7 @@ In general, callbacks you'll need to provide are:
 - [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880)
 - [*EVT_WDF_DEVICE_D0_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/ff540848)
 
-While you may need to handle several events to properly manage your device, the system requires only that the client driver do a few things in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693).
+While you may need to provide optional event handlers specific to the device, there are only a few requirements that the client driver must meet in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693).
 
 ## Creating the NETADAPTER Object
 
