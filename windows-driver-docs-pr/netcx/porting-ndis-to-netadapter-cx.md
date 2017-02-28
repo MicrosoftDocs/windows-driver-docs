@@ -60,7 +60,7 @@ In general, callbacks you'll need to provide are:
 
 While you may need to provide optional event handlers specific to the device, there are only a few requirements that the client driver must meet in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693).
 
-## Creating the NETADAPTER Object
+### Creating the NETADAPTER Object
 
 In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), your driver should do the following:
 
@@ -121,7 +121,7 @@ The third is where the client calls the methods equivalent to [**NdisMSetMinipor
 
 To set an attribute that does not have equivalent NetAdapter functionality, call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from this callback.
 
-## Initializing the Control Request Path
+### Creating Queues to Manage Control Requests
 
 Next, while we're still in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), we're going to set up the object identifier (OID) path.  The OID path is modeled like a WDF queue.  Except instead of WDFREQUESTs, you'll be getting OIDs.
 
@@ -159,11 +159,11 @@ if(!NT_SUCCESS(status))
 }
 ```
 
-## Querying Network Advanced Keywords
+### Accessing Configuration Parameters in the Registry
 
-Next we'll replace [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/hh975122) and related calls with the `NetConfiguration*` methods.  The methods are similar, and you won't need to restructure your code.
+Next, we'll replace calls to [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/ff563717) and related functions with the `NetConfiguration*` methods.  The methods are similar, and you won't need to restructure your code.
 
-Start by calling [**NetAdapterOpenConfiguration method**](netadapteropenconfiguration.md) to get a handle to a configuration object.  Then, you can query it:
+Start by calling [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) to get a handle to a configuration object.  Then, you can query it:
 
 ```ManagedCPlusPlus
 NETCONFIGURATION config = NULL;
@@ -180,13 +180,13 @@ NetConfigurationClose(configuration);
 
 There are configuration functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and MAC addresses.
 
-## Creating Device Interfaces
+### Receiving I/O Control Codes (IOTCLs) from User Mode
 
 Read this section if your NDIS driver calls [**NdisRegisterDeviceEx**](https://msdn.microsoft.com/library/windows/hardware/ff564518).  An NDIS driver typically uses this routine to create a control device object (CDO) so that it can receive IOCTLs from user mode.
 
 Here are two ways to do this in your WDF networking client driver.
 
-The first option is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff545841).
+The first option is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff545841) from the client's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback.  For details, see [Using Control Device Objects](../wdf/using-control-device-objects.md).
 
 Alternatively, create a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) with a reference string, as shown here:
 
@@ -201,15 +201,17 @@ if (!NT_SUCCESS(status)) {
 }
 ```
 
+For more info, see [Using Device Interfaces](../wdf/using-device-interfaces.md).
+
 When a component sends requests to a handle opened on this device interface, your device driver receives I/O requests.  You can use [WDF queue objects](../wdf/framework-queue-objects.md) to handle the incoming I/O requests.
 
-## Finishing Device Initialization
+### Finishing Device Initialization
 
 At this point in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), you can do anything else you'd like to initialize your device, like allocate interrupts.
 
 ## Power Management
 
-While your NDIS 6.x driver received [**OID_PNP_SET_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff569780) for power state changes, your WDF client never receives this OID.
+A WDF client driver does not receive [**OID_PNP_SET_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff569780) for power state changes.
 
 Instead, a WDF client registers optional callback functions to receive power state change notifications.  For an overview, see [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
 
@@ -351,11 +353,7 @@ EvtRxQueueCancel(NETRXQUEUE RxQueue)
 }
 ```
 
-### Conclusion
-
-At this point, you should have a working driver that starts and stops your device. To receive and transmit data, you need to understand how the ring buffer works, which is out of scope for this porting guide.
-
-## Stopping the Device
+## Device Removal
 
 Device removal for a WDF NIC driver is the same as in any other WDF device driver, with no networking specific processing required.  The network data path shuts down first, followed by the WDF device.  For info on WDF shutdown, see [A User Unplugs a Device](../wdf/a-user-unplugs-a-device.md).
 
@@ -363,33 +361,37 @@ Your *MiniportHaltEx* handler will likely be distributed between [*EVT_WDF_DEVIC
 
 The WDF client does not need to delete the NetAdapter or any of the OID and datapath queues that it created.  WDF deletes these objects automatically.
 
-You can delete MiniportShutdownEx, MiniportResetEx and MiniportCheckForHangEx.  These callbacks are no longer supported.
+You can delete *MiniportShutdownEx*, *MiniportResetEx* and *MiniportCheckForHangEx*.  These callbacks are no longer supported.
 
-## General Purpose Functions
+## NDIS-WDF Function Equivalents
 
-Most `NdisXxx` functions can be replaced with a WDF equivalent.  This table lists a few examples:
+Most `NdisXxx` functions can be replaced with a WDF equivalent.  In general, you should find that you need very little functionality that is imported from `NDIS.SYS`.
 
-Generally, you should find that you need very little functionality that is imported from `NDIS.SYS`.
+The following table lists NDIS functions and their WDF equivalents:
 
 |NDIS API Family|WDF Equivalent|
 |-|-|
-|NdisAllocateIoWorkItem|[**WdfWorkItemCreate**](https://msdn.microsoft.com/library/windows/hardware/ff551201)|
-|NdisAllocateTimerObject|[**WdfTimerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550050)|
-|NdisAcquireSpinLock|[**WdfSpinLockAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff550040)|
-|NdisInterlockedIncrement|InterlockedIncrement (compiler intrinsic)|
-|NdisInitialzeEvent|[**KeInitializeEvent**](https://msdn.microsoft.com/library/windows/hardware/ff552137)|
-|NdisMInitializeScatterGatherDma|[**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983)|
-|NdisInitializeString|[**WdfStringCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550046)|
-|NdisSystemActiveProcessorCount|[**KeGetCurrentProcessorNumberEx**](https://msdn.microsoft.com/library/windows/hardware/ff552076) (kernel)|
-|NdisWriteRegisterUchar|[**WDF_WRITE_REGISTER_UCHAR**](https://msdn.microsoft.com/library/windows/hardware/dn265684)|
+|[**NdisAllocateIoWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff561604)|[**WdfWorkItemCreate**](https://msdn.microsoft.com/library/windows/hardware/ff551201)|
+|[**NdisAllocateTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff561618)|[**WdfTimerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550050)|
+|[**NdisAcquireSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff560699)|[**WdfSpinLockAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff550040)|
+|[**NdisInterlockedIncrement**](https://msdn.microsoft.com/library/windows/hardware/ff562752)|InterlockedIncrement (compiler intrinsic)|
+|[**NdisInitializeEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562732)|[**KeInitializeEvent**](https://msdn.microsoft.com/library/windows/hardware/ff552137)|
+|[**NdisMInitializeScatterGatherDma**](https://msdn.microsoft.com/library/windows/hardware/ff553543)|[**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983)|
+|[**NdisInitializeString**](https://msdn.microsoft.com/library/windows/hardware/ff562741)|[**WdfStringCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550046)|
+|[**NdisSystemActiveProcessorCount**](https://msdn.microsoft.com/library/windows/hardware/ff564577)|[**KeGetCurrentProcessorNumberEx**](https://msdn.microsoft.com/library/windows/hardware/ff552076) (kernel)|
+|[**NdisWriteRegisterUchar**](https://msdn.microsoft.com/library/windows/hardware/ff564678)|[**WDF_WRITE_REGISTER_UCHAR**](https://msdn.microsoft.com/library/windows/hardware/dn265684)|
 
-In cases with no WDF equivalent, you can call [**NetAdapterWdmGetNdisHandle**](netadapterwdmgetndishandle.md) to retrieve an NDIS_HANDLE that works in many NDIS APIs as if it were a handle for an NDIS 6 miniport adapter.  For example:
+For functions with no WDF equivalent, the client can call [**NetAdapterWdmGetNdisHandle**](netadapterwdmgetndishandle.md) to retrieve an NDIS_HANDLE for use with NDIS functions.  For example:
 
 ```Management
 NdisGetRssProcessorInformation(NetAdapterWdmGetNdisHandle(NetAdapter), . . .);
 ```
 
-Debugging
----------
+## Debugging
 
-Since your driver is now a full-featured WDF driver, you can use !wdfkd commands to debug it.  In addition, the latest version of !ndiskd.netadapter can display networking-specifc properties of your driver, and shows similar results to what [**!ndiskd.miniport**](https://msdn.microsoft.com/library/windows/hardware/ff564142) shows for an NDIS 6 driver.  Also, !ndiskd.netadapter accepts a WDF-style NETADAPTER handle.
+You can use [Windows Driver Framework Extensions (Wdfkd.dll)](https://msdn.microsoft.com/library/windows/hardware/ff551876) commands to debug your client driver.  In addition, you can provide a NETADAPTER handle to !ndiskd.netadapter to see networking-specific properties of your driver.  This extension shows similar results to what [**!ndiskd.miniport**](https://msdn.microsoft.com/library/windows/hardware/ff564142) shows for an NDIS 6 driver.
+
+## Conclusion
+
+You should now have a working driver that starts and stops your device. To receive and transmit data, you need to understand how the ring buffer works, which is out of scope for this porting guide.
+
