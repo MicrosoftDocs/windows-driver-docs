@@ -7,6 +7,7 @@ keywords: ["IPsecOV1 WDK TCP/IP transport , ESP-protected", "IPsecOV1 WDK TCP/IP
 
 # Offloading the Processing of ESP-Protected and AH-Protected Packets
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-offloading-the-processing-of-esp-protected-and-ah-protected-packet"></a>
 

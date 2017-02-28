@@ -7,6 +7,7 @@ keywords: ["IPsecOV1 WDK TCP/IP transport , UDP-encapsulated ESP packets", "UDP-
 
 # Offloading the Processing of UDP-Encapsulated ESP Packets
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-offloading-the-processing-of-udp-encapsulated-esp-packets-ng"></a>
 

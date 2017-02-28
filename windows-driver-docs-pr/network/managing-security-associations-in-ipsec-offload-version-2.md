@@ -7,6 +7,7 @@ keywords: ["IPsecOV2 WDK TCP/IP transport , security associations", "security as
 
 # Managing Security Associations in IPsec Offload Version 2
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-managing-security-associations-in-ipsec-offload-version-2-ng"></a>
 

@@ -7,6 +7,7 @@ keywords: ["UDP-encapsulated ESP packets WDK IPsec offload , processing"]
 
 # Processing UDP-Encapsulated ESP Packets
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-processing-udp-encapsulated-esp-packets-ng"></a>
 

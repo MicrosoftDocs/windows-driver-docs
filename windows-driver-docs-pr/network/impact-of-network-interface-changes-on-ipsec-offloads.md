@@ -7,6 +7,7 @@ keywords: ["ESP-protected packets WDK IPsec offload , routing interface changed"
 
 # Impact of Network Interface Changes on IPsec Offloads
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-impact-of-network-interface-changes-on-ipsec-offloads-ng"></a>
 

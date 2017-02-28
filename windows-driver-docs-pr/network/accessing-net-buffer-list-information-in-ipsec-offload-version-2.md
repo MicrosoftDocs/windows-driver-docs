@@ -7,6 +7,7 @@ keywords: ["IPsecOV2 WDK TCP/IP transport , NET_BUFFER_LIST information", "NET_B
 
 # Accessing NET\_BUFFER\_LIST Information in IPsec Offload Version 2
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-accessing-net-buffer-list-information-in-ipsec-offload-version-2-n"></a>
 

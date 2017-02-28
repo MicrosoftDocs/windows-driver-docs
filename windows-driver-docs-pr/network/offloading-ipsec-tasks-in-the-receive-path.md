@@ -7,6 +7,7 @@ keywords: ["ESP-protected packets WDK IPsec offload , receive path offload", "AH
 
 # Offloading IPsec Tasks in the Receive Path
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-offloading-ipsec-tasks-in-the-receive-path-ng"></a>
 
