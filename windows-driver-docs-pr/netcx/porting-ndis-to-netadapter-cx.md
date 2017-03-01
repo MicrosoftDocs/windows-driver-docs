@@ -50,7 +50,7 @@ If it is set, remove the **WdfDriverInitNoDispatchOverride** flag from the call 
 
 ## Device Initialization
 
-Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional.  For details on the callback sequence, see [Power-Up Sequence for a Function or Filter Driver](../wdf/power-up-sequence-for-a-function-or-filter-driver.md).
+Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional.  For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md).
 
 In general, callbacks you'll need to provide are:
 
@@ -219,12 +219,17 @@ Typically, the code in your [**OID_PNP_SET_POWER**](https://msdn.microsoft.com/l
 
 Because the WDF power state machine is slightly different, you might need to make minor modifications to the code.
 
-In particular, NDIS assumes that a device initializes in D0.
-However, WDF assumes that a device initializes in D3, and supports an explicit [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848) callback function as part of device initialization. 
+Specifically, in its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) callback function, an NDIS miniport driver performs one-time initialization tasks as well as work to bring the device to the D0 state.  Then, it repeats the work to go to D0 in its [*OID_PNP_SET_POWER*](https://msdn.microsoft.com/library/windows/hardware/ff569780) handler.
 
-Similarly, a WDF client driver never receives OID_PM_PARAMETERS.
+In contrast, a WDF client performs one-time initialization tasks in event callbacks before [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848), during which the device is in a low-power state.  Then it does the work to go to D0 in [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848).
 
-Instead, the driver queries the necessary WoL configuration from the NETPOWERSETTINGS object.  To access this object, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md) from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and related callback functions.  For example:
+To summarize, in WDF, you put your "go to D0" code in one place, instead of two.
+
+For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md).
+
+Similarly, a WDF client driver never receives [**OID_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff569768).
+
+Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.  To access this object, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md) from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and related callback functions.  For example:
 
 ```ManagedCPlusPlus
 NTSTATUS
@@ -240,9 +245,9 @@ EvtDeviceArmWakeFromS0(WDFDEVICE Device)
 }
 ```
 
-The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic.  The main difference is that you can now query these flags during the power-down sequence.
+The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic.  The main difference is that you can now query these flags during the power-down sequence.  See [Power-Down Sequence for an Network Adapter WDF Client Driver](power-down-sequence-for-ndis-wdf-client-driver.md).
 
-Once you've moved this code around, you can delete your OID handlers for OID_PNP_SET_POWER and OID_PM_PARAMETERS.
+Once you've moved this code around, you can delete your OID handlers for [*OID_PNP_SET_POWER*](https://msdn.microsoft.com/library/windows/hardware/ff569780) and [*OID_PM_PARAMETERS*](https://msdn.microsoft.com/library/windows/hardware/ff569768).
 
 Because the client is the [power policy owner](../wdf/power-policy-ownership.md) for the NIC's device stack, it can use WDF's built-in power management functionality.  For example, you might want to add your own idle logic. For info, see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
 
