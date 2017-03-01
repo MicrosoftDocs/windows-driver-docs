@@ -90,6 +90,7 @@
 #### [Manage Legal Agreements](manage-legal-agreements.md)
 #### [For Administrators](for-administrators.md)
 ##### [Establish a new company](establish-a-new-company.md)
+##### [Driver signing](driver-signing.md)
 ##### [Get a code signing certificate](get-a-code-signing-certificate.md)
 ##### [Update a code signing certificate](update-a-code-signing-certificate.md)
 ##### [Manage your divisions](manage-your-divisions.md)
