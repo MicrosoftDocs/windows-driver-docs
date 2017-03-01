@@ -7,6 +7,7 @@ keywords: ["Ethernet frame splitting WDK networking , IPsec frames", "IPsec fram
 
 # Splitting IPsec Frames
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-splitting-ipsec-frames-ng"></a>
 
