@@ -92,7 +92,7 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 <td><p><strong>UsbVerifierFailRegistration</strong></p>
 <p>Fails the client driver's calls to these routines:</p>
 <ul>
-<li>[<strong>WdfUsbTargetDeviceCreateWithParameters</strong>](kmdf-wdfusbtargetdevicecreatewithparameters)</li>
+<li>[<strong>WdfUsbTargetDeviceCreateWithParameters</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439428)</li>
 <li>[<strong>USBD_CreateHandle</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406241)</li>
 </ul></td>
 <td><ul>
@@ -115,7 +115,7 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 <p>Fails the client driver's calls to these routines when the caller passes GUID_USB_CAPABILITY_CHAINED_MDLS in the <em>CapabilityType</em> parameter.</p>
 <ul>
 <li>[<strong>USBD_QueryUsbCapability</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406230)</li>
-<li>[<strong>WdfUsbTargetDeviceQueryUsbCapability</strong>](kmdf-wdfusbtargetdevicequeryusbcapability)</li>
+<li>[<strong>WdfUsbTargetDeviceQueryUsbCapability</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439434)</li>
 </ul></td>
 <td><ul>
 <li>0: Setting is disabled.</li>
@@ -137,7 +137,7 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 <p>Fails the client driver's calls to these routines when the caller passes GUID_USB_CAPABILITY_STATIC_STREAMS in the <em>CapabilityType</em> parameter.</p>
 <ul>
 <li>[<strong>USBD_QueryUsbCapability</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406230)</li>
-<li>[<strong>WdfUsbTargetDeviceQueryUsbCapability</strong>](kmdf-wdfusbtargetdevicequeryusbcapability)</li>
+<li>[<strong>WdfUsbTargetDeviceQueryUsbCapability</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439434)</li>
 </ul></td>
 <td><ul>
 <li>0: Setting is disabled.</li>
@@ -158,7 +158,7 @@ This table shows the possible values for *&lt;USB client driver verifier setting
 Changes the value received in the <em>OutputBuffer</em> parameter when the client calls to these routines with GUID_USB_CAPABILITY_STATIC_STREAMS.
 <ul>
 <li>[<strong>USBD_QueryUsbCapability</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406230)</li>
-<li>[<strong>WdfUsbTargetDeviceQueryUsbCapability</strong>](kmdf-wdfusbtargetdevicequeryusbcapability)</li>
+<li>[<strong>WdfUsbTargetDeviceQueryUsbCapability</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439434)</li>
 </ul>
 <p>The <em>OutputBuffer</em> value indicates the maximum number of static streams that the host controller supports.</p></td>
 <td><ul>
@@ -187,7 +187,7 @@ Changes the value received in the <em>OutputBuffer</em> parameter when the clien
 <li><em>N</em>: The request fails with a probability of 1/<em>N</em>, where <em>N</em> is a hex value between 1 to 0x7FF. For example, if <em>N</em> is 10. The request fails once every 10 calls.</li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  The open static-streams request fails if the previous call to [<strong>USBD_QueryUsbCapability</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406230) or [<strong>WdfUsbTargetDeviceQueryUsbCapability</strong>](kmdf-wdfusbtargetdevicequeryusbcapability) failed.
+<strong>Note</strong>  The open static-streams request fails if the previous call to [<strong>USBD_QueryUsbCapability</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406230) or [<strong>WdfUsbTargetDeviceQueryUsbCapability</strong>](https://msdn.microsoft.com/library/windows/hardware/hh439434) failed.
 </div>
 <div>
  

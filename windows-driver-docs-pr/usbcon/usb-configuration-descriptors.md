@@ -70,14 +70,14 @@ The **bEndpointAddress** field specifies the unique endpoint address that contai
 
 The configuration descriptor is obtained from the device through a standard device request (GET\_DESCRIPTOR), which is sent as a control transfer by the USB driver stack. A USB client driver can initiate the request in one of the following ways:
 
--   If the device supports only one configuration, the easiest way is to call the framework-provided [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](kmdf-wdfusbtargetdeviceretrieveconfigdescriptor) method.
+-   If the device supports only one configuration, the easiest way is to call the framework-provided [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) method.
 -   For a device that supports multiple configurations, if the client driver wants to get the descriptor of the configuration other than the first, the driver must submit an URB. To submit an URB, the driver must allocate, format, and then submit the URB to the USB driver stack.
 
-    To allocate the URB, the client driver must call the [**WdfUsbTargetDeviceCreateUrb**](kmdf-wdfusbtargetdevicecreateurb) method. The method receives a pointer to an URB allocated by the USB driver stack.
+    To allocate the URB, the client driver must call the [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method. The method receives a pointer to an URB allocated by the USB driver stack.
 
     To format the URB, the client driver can use the [**UsbBuildGetDescriptorRequest**](https://msdn.microsoft.com/library/windows/hardware/ff538943) macro. The macro sets all the necessary information in the URB, such as the device-defined configuration number for which to retrieve the descriptor. The URB function is set to URB\_FUNCTION\_GET\_DESCRIPTOR\_FROM\_DEVICE (see [**\_URB\_CONTROL\_DESCRIPTOR\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff540357)) and the type of descriptor is set to USB\_CONFIGURATION\_DESCRIPTOR\_TYPE. By using the information contained in the URB, the USB driver stack builds a standard control request and sends it to the device.
 
-    To submit the URB, the client driver must use a WDF request object. To send the request object to the USB driver stack asynchronously, the driver must call the [**WdfRequestSend**](kmdf-wdfrequestsend)method. To send it synchronously, call the [**WdfUsbTargetDeviceSendUrbSynchronously**](kmdf-wdfusbtargetdevicesendurbsynchronously) method.
+    To submit the URB, the client driver must use a WDF request object. To send the request object to the USB driver stack asynchronously, the driver must call the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027)method. To send it synchronously, call the [**WdfUsbTargetDeviceSendUrbSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550105) method.
 
     **WDM drivers:  **A Windows Driver Model (WDM) client driver can only get the configuration descriptor by submitting an URB. To allocate the URB, the driver must call the [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250) routine. To format the URB, the driver must call the [**UsbBuildGetDescriptorRequest**](https://msdn.microsoft.com/library/windows/hardware/ff538943) macro. To submit the URB, the driver must associate the URB with an IRP, and submit the IRP to the USB driver stack. For more information, see [How to Submit an URB](send-requests-to-the-usb-driver-stack.md).
 
@@ -85,9 +85,9 @@ Within a USB configuration, the number of interfaces and their alternate setting
 
 **To obtain the configuration descriptor by calling WdfUsbTargetDeviceRetrieveConfigDescriptor, perform these steps:**
 
-1.  Get the size of buffer required to hold all of the configuration information by calling [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](kmdf-wdfusbtargetdeviceretrieveconfigdescriptor). The driver must pass NULL in the buffer, and a variable to hold the size of the buffer.
-2.  Allocate a larger buffer based on the size received through the previous [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](kmdf-wdfusbtargetdeviceretrieveconfigdescriptor) call.
-3.  Call [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](kmdf-wdfusbtargetdeviceretrieveconfigdescriptor) again and specify a pointer to the new buffer allocated in step 2.
+1.  Get the size of buffer required to hold all of the configuration information by calling [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098). The driver must pass NULL in the buffer, and a variable to hold the size of the buffer.
+2.  Allocate a larger buffer based on the size received through the previous [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) call.
+3.  Call [**WdfUsbTargetDeviceRetrieveConfigDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff550098) again and specify a pointer to the new buffer allocated in step 2.
 
 ```
  NTSTATUS RetrieveDefaultConfigurationDescriptor (
@@ -157,9 +157,9 @@ Exit:
 
 **To obtain the configuration descriptor by submitting an URB, perform these steps:**
 
-1.  Allocate an URB by calling the [**WdfUsbTargetDeviceCreateUrb**](kmdf-wdfusbtargetdevicecreateurb) method.
+1.  Allocate an URB by calling the [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method.
 2.  Format the URB by calling the [**UsbBuildGetDescriptorRequest**](https://msdn.microsoft.com/library/windows/hardware/ff538943) macro. The transfer buffer of the URB must point to a buffer large enough to hold a [**USB\_CONFIGURATION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff539241) structure.
-3.  Submit the URB as a WDF request object by calling [**WdfRequestSend**](kmdf-wdfrequestsend) or [**WdfUsbTargetDeviceSendUrbSynchronously**](kmdf-wdfusbtargetdevicesendurbsynchronously).
+3.  Submit the URB as a WDF request object by calling [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) or [**WdfUsbTargetDeviceSendUrbSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550105).
 4.  After the request completes, check the **wTotalLength** member of [**USB\_CONFIGURATION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff539241). That value indicates the size of the buffer required to contain a full configuration descriptor.
 5.  Allocate a larger buffer based on the size retrieved in **wTotalLength**.
 6.  Issue the same request with the larger buffer.

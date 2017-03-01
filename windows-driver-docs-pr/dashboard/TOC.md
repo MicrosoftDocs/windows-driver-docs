@@ -91,6 +91,7 @@
 #### [For Administrators](for-administrators.md)
 ##### [Establish a new company](establish-a-new-company.md)
 ##### [Get a code signing certificate](get-a-code-signing-certificate.md)
+##### [Update a code signing certificate](update-a-code-signing-certificate.md)
 ##### [Manage your divisions](manage-your-divisions.md)
 ##### [Manage your service account credentials](manage-your-service-account-credentials.md)
 ### [Windows Device Experience List](windows-device-experience-list.md)

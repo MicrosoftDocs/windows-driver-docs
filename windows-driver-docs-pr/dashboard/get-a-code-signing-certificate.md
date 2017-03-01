@@ -9,9 +9,6 @@ ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
 
 # Get a code signing certificate
 
-
-\[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
-
 Before you can establish a Hardware Dev Center hardware dashboard account, you need to get a code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your company’s ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
 
 ## <span id="Step_1__Determine_which_type_of_code_signing_certificate_you_need"></span><span id="step_1__determine_which_type_of_code_signing_certificate_you_need"></span><span id="STEP_1__DETERMINE_WHICH_TYPE_OF_CODE_SIGNING_CERTIFICATE_YOU_NEED"></span>Step 1: Determine which type of code signing certificate you need
@@ -156,7 +153,7 @@ You must use the same computer and browser to retrieve your certificate.
 
 -   If you’re setting up a new Hardware Dev Center hardware dashboard account, follow the steps in [Register for the Hardware Program](register-for-the-hardware-program.md).
 
--   If you’ve already set up a Hardware Dev Center hardware dashboard account and need to renew a certificate, follow the steps in [Update a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/mt786467).
+-   If you’ve already set up a Hardware Dev Center hardware dashboard account and need to renew a certificate, follow the steps in [Update a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/update-a-code-signing-certificate).
 
 ## <span id="Code_Signing_FAQ"></span><span id="code_signing_faq"></span><span id="CODE_SIGNING_FAQ"></span>Code Signing FAQ
 
@@ -241,7 +238,3 @@ This table summarizes the driver signing requirements for Windows.
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Get%20a%20code%20signing%20certificate%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
