@@ -186,9 +186,9 @@ Read this section if your NDIS driver calls [**NdisRegisterDeviceEx**](https://m
 
 Here are two ways to do this in your WDF networking client driver.
 
-The first option is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff545841) from the client's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback.  For details, see [Using Control Device Objects](../wdf/using-control-device-objects.md).
+The most straightforward port is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff545841) from the client's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback.  For details, see [Using Control Device Objects](../wdf/using-control-device-objects.md).
 
-Alternatively, create a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) with a reference string, as shown here:
+However, the recommended solution is to create a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) with a reference string, as shown here:
 
 ```ManagedCPlusPlus
 DECLARE_CONST_UNICODE_STRING(c_RefString, L"MyRefString");
