@@ -50,6 +50,29 @@ In this callback, the client retrieves packets from the queue, sends the data, a
 
 To retrieve packets, the client can either update the ring buffer's **BeginIndex** manually, or it can call helper macros such as [**NetRingBufferReturnCompletedPackets method**](netringbufferreturncompletedpackets.md).
 
+The following example retrieves incoming transmit packets from the queue and then immediately completes them.
+
+```cpp
+VOID
+EvtTxQueueAdvance(NETTXQUEUE TxQueue)
+{
+    NET_RING_BUFFER *ringBuffer = NetTxQueueGetRingBuffer(TxQueue);
+    NET_PACKET *netPacket;
+
+    while ((netPacket = NetRingBufferGetNextPacket(ringBuffer)) != nullptr)
+    {
+        
+        // Transmit the data
+        
+        netPacket->Data.Completed = TRUE;
+
+        NetRingBufferAdvanceNextPacket(ringBuffer);
+    }
+
+    NetRingBufferReturnCompletedPackets(ringBuffer);
+}
+```
+
 For more info, see [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
 
 Requirements
