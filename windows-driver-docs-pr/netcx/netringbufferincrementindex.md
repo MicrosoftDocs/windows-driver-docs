@@ -20,7 +20,7 @@ Returns the next index value after the specified index value, wrapping around to
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 UINT32 NetRingBufferIncrementIndex(
   _In_ NET_RING_BUFFER *RingBuffer,

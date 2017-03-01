@@ -19,7 +19,7 @@ Specifies the type of queue.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_REQUEST_QUEUE_TYPE { 
   NetRequestQueueTypeInvalid        = ,
   NetRequestQueueDefaultSequential  = ,

@@ -20,7 +20,7 @@ The client driver's implementation of the *EVT_NET_ADAPTER_CREATE_TXQUEUE* event
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_NET_ADAPTER_CREATE_TXQUEUE EvtNetAdapterCreateTxqueue;
 
 NTSTATUS EvtNetAdapterCreateTxqueue(

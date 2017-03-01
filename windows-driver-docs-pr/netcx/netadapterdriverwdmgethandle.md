@@ -21,7 +21,7 @@ A WDF client driver calls **NetAdapterDriverWdmGetHandle** to get a handle that 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NDIS_HANDLE NetAdapterDriverWdmGetHandle(
   _In_ WDFDRIVER               Driver,
   _In_ NET_ADAPTER_DRIVER_TYPE Type

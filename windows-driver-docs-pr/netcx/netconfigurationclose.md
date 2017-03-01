@@ -20,7 +20,7 @@ Releases the handle to the registry key that is associated with an adapter confi
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void NetConfigurationClose(
   _In_ NETCONFIGURATION Configuration
 );

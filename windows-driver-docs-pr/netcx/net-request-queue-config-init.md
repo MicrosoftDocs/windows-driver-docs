@@ -20,7 +20,7 @@ Initializes the caller-allocated [NET_REQUEST_QUEUE_CONFIG](net-request-queue-co
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 void NET_REQUEST_QUEUE_CONFIG_INIT(
   _Out_ PNET_REQUEST_QUEUE_CONFIG NetRequestQueueConfig,

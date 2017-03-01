@@ -19,7 +19,7 @@ Retrieves the NDIS_OID identifier associated with the specified network request 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NDIS_OID NetRequestGetId(
   _In_ NETREQUEST Request
 );

@@ -21,7 +21,7 @@ Associates a WDFDMAENABLER object with a receive queue.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetRxQueueConfigureDmaAllocator(
   _In_ NETRXQUEUE    RxQueue,
   _In_ WDFDMAENABLER Enabler

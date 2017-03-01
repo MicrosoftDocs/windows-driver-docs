@@ -20,7 +20,7 @@ The NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME macro creates an accessor method w
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void NET_PACKET_DECLARE_CONTEXT_TYPE_WITH_NAME(
     _contexttype,
     _castingfunction

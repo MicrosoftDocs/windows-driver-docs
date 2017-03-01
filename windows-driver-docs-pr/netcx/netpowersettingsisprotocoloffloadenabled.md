@@ -21,7 +21,7 @@ Determines if a protocol offload structure is enabled.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 BOOLEAN NetPowerSettingsIsProtocolOffloadEnabled(
   _In_ NETPOWERSETTINGS          NetPowerSettings,
   _In_ PNDIS_PM_PROTOCOL_OFFLOAD NdisProtocolOffload

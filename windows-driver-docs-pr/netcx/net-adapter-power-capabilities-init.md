@@ -20,7 +20,7 @@ Initializes the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilit
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 FORCEINLINE VOID NET_ADAPTER_POWER_CAPABILITIES_INIT(
   _Out_ PNET_ADAPTER_POWER_CAPABILITIES PowerCapabilities
 );

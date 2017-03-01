@@ -20,7 +20,7 @@ Describes the configuration options for a NetAdapterCx client driver. An initial
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_ADAPTER_CONFIG {
   ULONG                                     Size;
   NET_ADAPTER_DRIVER_TYPE                   Type;

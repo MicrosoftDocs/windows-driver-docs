@@ -19,7 +19,7 @@ Specifies the media-specific wake-up events that a network adapter supports.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS { 
   NET_ADAPTER_WLAN_WAKE_ON_NLO_DISCOVERY           = NDIS_WLAN_WAKE_ON_NLO_DISCOVERY_SUPPORTED,
   NET_ADAPTER_WLAN_WAKE_ON_AP_ASSOCIATION_LOST     = NDIS_WLAN_WAKE_ON_AP_ASSOCIATION_LOST_SUPPORTED,

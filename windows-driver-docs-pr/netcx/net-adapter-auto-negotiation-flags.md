@@ -19,7 +19,7 @@ Specifies the auto-negotiation settings for the NIC driver.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_ADAPTER_AUTO_NEGOTIATION_FLAGS { 
   NET_ADAPTER_AUTO_NEGOTIATION_NO_FLAGS                   = = 0,
   NET_ADAPTER_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED  = NDIS_LINK_STATE_XMIT_LINK_SPEED_AUTO_NEGOTIATED,

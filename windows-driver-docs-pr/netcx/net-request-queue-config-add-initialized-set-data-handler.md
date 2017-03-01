@@ -20,7 +20,7 @@ Adds a caller-provided custom request handler to a [**NET_REQUEST_QUEUE_CONFIG**
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 FORCEINLINE VOID NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER(
   _In_ PNET_REQUEST_QUEUE_CONFIG           NetRequestQueueConfig,
   _In_ PNET_REQUEST_QUEUE_SET_DATA_HANDLER SetDataHandler

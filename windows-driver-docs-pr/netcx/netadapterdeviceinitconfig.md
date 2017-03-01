@@ -20,7 +20,7 @@ Initializes device initialization operations when the Plug and Play (PnP) manage
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetAdapterDeviceInitConfig(
   _Inout_ PWDFDEVICE_INIT DeviceInit
 );

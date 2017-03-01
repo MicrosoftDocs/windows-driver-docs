@@ -19,7 +19,7 @@ The **NetConfigurationAssignBinary** method writes caller-supplied binary data t
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationAssignBinary(
   _In_ NETCONFIGURATION Configuration,
   _In_ PCUNICODE_STRING ValueName,

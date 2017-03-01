@@ -19,7 +19,7 @@ Retrieves the data that is currently assigned to a specified registry value, sto
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationQueryBinary(
   _In_      NETCONFIGURATION       Configuration,
   _In_      PCUNICODE_STRING       ValueName,

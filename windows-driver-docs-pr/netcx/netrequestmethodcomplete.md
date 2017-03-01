@@ -19,7 +19,7 @@ Completes a method request.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 VOID NetRequestMethodComplete(
   _In_ NETREQUEST Request,
   _In_ NTSTATUS   CompletionStatus,

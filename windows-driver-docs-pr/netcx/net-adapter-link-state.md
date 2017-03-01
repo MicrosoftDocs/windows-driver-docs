@@ -20,7 +20,7 @@ Describes the link state of the adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_ADAPTER_LINK_STATE {
   ULONG                                Size;
   ULONG64                              TxLinkSpeed;

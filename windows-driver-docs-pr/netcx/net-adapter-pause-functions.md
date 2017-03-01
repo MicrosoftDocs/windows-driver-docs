@@ -19,7 +19,7 @@ Specifies a client driver's support for the IEEE 802.3 pause frames.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_ADAPTER_PAUSE_FUNCTIONS { 
   NetAdapterPauseFunctionsUnsupported     = NdisPauseFunctionsUnsupported,
   NetAdapterPauseFunctionsSendOnly        = NdisPauseFunctionsSendOnly,

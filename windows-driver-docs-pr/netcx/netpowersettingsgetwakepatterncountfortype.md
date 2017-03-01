@@ -21,7 +21,7 @@ Retrieves the number of wake-on-LAN (WoL) patterns stored in the NETPOWERSETTING
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 ULONG NetPowerSettingsGetWakePatternCountForType(
   _In_ NETPOWERSETTINGS   NetPowerSettings,
   _In_ NDIS_PM_WOL_PACKET WakePatternType

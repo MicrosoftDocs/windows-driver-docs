@@ -20,7 +20,7 @@ Sets the BeginIndex value of the specified ring buffer to the first packet that 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 void NetRingBufferReturnCompletedPacketsThroughIndex(
   _In_ NET_RING_BUFFER *RingBuffer,

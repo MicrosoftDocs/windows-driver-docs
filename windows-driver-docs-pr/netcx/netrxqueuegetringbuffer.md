@@ -19,7 +19,7 @@ Retrieves the net ring buffer for a specified net receive queue structure.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 PNET_RING_BUFFER NetRxQueueGetRingBuffer(
   _In_ NETRXQUEUE NetRxQueue
 );

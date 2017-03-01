@@ -20,7 +20,7 @@ Retrieves the NDIS adapter handle for a specified net adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NDIS_HANDLE NetAdapterWdmGetNdisHandle(
   _In_ NETADAPTER Adapter
 );

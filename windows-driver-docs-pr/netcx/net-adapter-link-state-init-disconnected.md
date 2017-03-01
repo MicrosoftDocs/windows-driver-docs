@@ -20,7 +20,7 @@ Initializes a [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure 
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 FORCEINLINE VOID NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED(
   _Out_ PNET_ADAPTER_LINK_STATE LinkState
 );

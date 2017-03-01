@@ -21,7 +21,7 @@ Retrieves the number of protocol offload structures associated with a NETPOWERSE
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 ULONG NetPowerSettingsGetProtocolOffloadCount(
   _In_ NETPOWERSETTINGS NetPowerSettings
 );

@@ -21,7 +21,7 @@ Determines if a wake-on-LAN (WoL) pattern is enabled for a network adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 BOOLEAN NetPowerSettingsIsWakePatternEnabled(
   _In_ NETPOWERSETTINGS     NetPowerSettings,
   _In_ PNDIS_PM_WOL_PATTERN NdisPmWolPattern

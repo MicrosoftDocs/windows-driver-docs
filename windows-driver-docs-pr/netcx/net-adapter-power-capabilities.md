@@ -12,7 +12,7 @@ Describes the power capabilities of the adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_ADAPTER_POWER_CAPABILITIES {
   ULONG                                          Size;
   NET_ADAPTER_POWER_FLAGS                        Flags;

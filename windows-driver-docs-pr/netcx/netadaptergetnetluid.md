@@ -20,7 +20,7 @@ Retrieves the NET_LUID that is assigned to a net adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NET_LUID NetAdapterGetNetLuid(
   _In_ NETADAPTER Adapter
 );

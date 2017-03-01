@@ -20,7 +20,7 @@ Implemented by the client driver to handle a specific OID query data request.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_NET_REQUEST_QUERY_DATA EvtNetRequestQueryData;
 
 VOID EvtNetRequestQueryData(

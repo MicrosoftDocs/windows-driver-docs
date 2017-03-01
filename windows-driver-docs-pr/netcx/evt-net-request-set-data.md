@@ -20,7 +20,7 @@ Implemented by the client driver to handle a specific OID set data request.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_NET_REQUEST_SET_DATA EvtNetRequestSetData;
 
 void EvtNetRequestSetData(

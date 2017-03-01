@@ -19,7 +19,7 @@ Retrieves the request type in an OID request.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NDIS_REQUEST_TYPE NetRequestGetType(
   _In_ NETREQUEST Request
 );

@@ -20,7 +20,7 @@ Retrieves the strings that are currently assigned to the adapter configuration o
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationQueryMultiString(
   _In_     NETCONFIGURATION       Configuration,
   _In_     PCUNICODE_STRING       ValueName,

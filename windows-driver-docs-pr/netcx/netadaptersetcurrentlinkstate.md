@@ -20,7 +20,7 @@ Set the current link state of the of the network adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 VOID NetAdapterSetCurrentLinkState(
   _In_ NETADAPTER              Adapter,
   _In_ PNET_ADAPTER_LINK_STATE CurrentLinkState

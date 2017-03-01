@@ -20,7 +20,7 @@ Implemented by the client driver to process receive packets provided by NetAdapt
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_RXQUEUE_ADVANCE EvtRxqueueAdvance;
 
 void EvtRxqueueAdvance(
@@ -55,7 +55,7 @@ In this callback function, the client driver typically performs the following st
     2.  Program that packet to receive. (Insert this NET_PACKET in the driver's available to receive list).
     3.  Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md).
 
-```ManagedCPlusPlus
+```cpp
 VOID
 EvtRxQueueAdvance(NETRXQUEUE RxQueue)
 {

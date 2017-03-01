@@ -20,7 +20,7 @@ The client driver calls **NetTxQueueNotifyMoreCompletedPacketsAvailable** to res
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void NetTxQueueNotifyMoreCompletedPacketsAvailable(
   _In_ NETTXQUEUE TxQueue
 );

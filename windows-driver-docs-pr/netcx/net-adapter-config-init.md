@@ -20,7 +20,7 @@ Initializes the [NET_ADAPTER_CONFIG](net-adapter-config.md) structure.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 FORCEINLINE VOID NET_ADAPTER_CONFIG_INIT(
   _Out_ PNET_ADAPTER_CONFIG              AdapterConfig,
   _In_  PFN_NET_ADAPTER_SET_CAPABILITIES EvtAdapterSetCapabilities,

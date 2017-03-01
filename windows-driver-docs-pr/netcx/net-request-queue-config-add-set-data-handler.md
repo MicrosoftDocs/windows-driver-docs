@@ -20,7 +20,7 @@ Adds a caller-provided handler for a specific OID set data request to a [**NET_R
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 FORCEINLINE
 VOID
 NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER(

@@ -19,7 +19,7 @@ Completes a set data request.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 VOID NetRequestSetDataComplete(
   _In_ NETREQUEST Request,
   _In_ NTSTATUS   CompletionStatus,

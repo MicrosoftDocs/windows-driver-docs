@@ -20,7 +20,7 @@ Call [NET_TXQUEUE_CONFIG_INIT](net-txqueue-config-init.md) to initialize this st
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_TXQUEUE_CONFIG {
   ULONG                                Size;
   PFN_TXQUEUE_CANCEL                   EvtTxQueueCancel;

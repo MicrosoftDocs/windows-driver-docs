@@ -19,7 +19,7 @@ Retrieves the NETADAPTER object corresponding to the NETREQUESTQUEUE.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NETADAPTER NetRequestQueueGetAdapter(
   _In_ NETREQUESTQUEUE NetRequestQueue
 );

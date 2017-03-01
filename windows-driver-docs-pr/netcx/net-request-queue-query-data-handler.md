@@ -20,7 +20,7 @@ Call [NET_REQUEST_QUEUE_QUERY_DATA_HANDLER_INIT](net-request-queue-query-data-ha
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_REQUEST_QUEUE_QUERY_DATA_HANDLER {
   PNET_REQUEST_QUEUE_QUERY_DATA_HANDLER Next;
   WDFMEMORY                             Memory;

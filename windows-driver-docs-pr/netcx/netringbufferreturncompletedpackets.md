@@ -20,7 +20,7 @@ Calls [**NetRingBufferReturnCompletedPacketsThroughIndex**](netringbufferreturnc
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 void NetRingBufferReturnCompletedPackets(
   _In_ NET_RING_BUFFER *RingBuffer

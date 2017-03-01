@@ -20,7 +20,7 @@ Returns a pointer to the net packet at the specified index value of the ring buf
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 NET_PACKET* NetRingBufferGetPacketAtIndex(
   _In_ NET_RING_BUFFER *RingBuffer,

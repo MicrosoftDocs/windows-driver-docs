@@ -19,7 +19,7 @@ Implemented by the client driver to handle a specific OID method request.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_NET_REQUEST_METHOD EvtNetRequestMethod;
 
 VOID EvtNetRequestMethod(

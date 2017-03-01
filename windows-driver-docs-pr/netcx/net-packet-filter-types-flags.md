@@ -19,7 +19,7 @@ Specifies the packet filters that the adapter supports.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_PACKET_FILTER_TYPES_FLAGS { 
   NET_PACKET_FILTER_TYPE_DIRECTED        = NDIS_PACKET_TYPE_DIRECTED,
   NET_PACKET_FILTER_TYPE_MULTICAST       = NDIS_PACKET_TYPE_MULTICAST,

@@ -11,7 +11,7 @@ A [**NET_PACKET**](net-packet.md) structure contains a member of type **NET_PACK
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_PACKET_CHECKSUM
 {
     UINT8 Layer2 : 2;

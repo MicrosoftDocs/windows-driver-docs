@@ -19,7 +19,7 @@ The **NetConfigurationAssignMultiString** method assigns a set of strings to a s
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationAssignMultiString(
   _In_ NETCONFIGURATION Configuration,
   _In_ PCUNICODE_STRING ValueName,

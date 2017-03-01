@@ -20,7 +20,7 @@ Initializes a [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capab
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 FORCEINLINE VOID NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT(
     _Out_ PNET_ADAPTER_LINK_LAYER_CAPABILITIES  LinkLayerCapabilities,
     _In_  NET_PACKET_FILTER_TYPES_FLAGS         SupportedPacketFilters,

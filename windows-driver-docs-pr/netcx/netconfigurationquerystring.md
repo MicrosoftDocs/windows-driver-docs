@@ -21,7 +21,7 @@ Retrieves the specified string value from the adapter configuration object and a
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationQueryString(
   _In_     NETCONFIGURATION       Configuration,
   _In_     PCUNICODE_STRING       ValueName,

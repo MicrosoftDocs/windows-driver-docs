@@ -19,7 +19,7 @@ The client driver's implementation of the *EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFL
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD EvtNetAdapterPreviewProtocolOffload;
 
 NTSTATUS EvtNetAdapterPreviewProtocolOffload(

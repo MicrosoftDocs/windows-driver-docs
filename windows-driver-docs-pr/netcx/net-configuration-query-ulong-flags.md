@@ -19,7 +19,7 @@ The **NET_CONFIGURATION_QUERY_ULONG_FLAGS** enumeration is used as an input para
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_CONFIGURATION_QUERY_ULONG_FLAGS { 
   NET_CONFIGURATION_QUERY_ULONG_NO_FLAGS                     = = 0x00000000,
   NET_CONFIGURATION_QUERY_ULONG_MAY_BE_STORED_AS_HEX_STRING  = = 0x00000001

@@ -20,7 +20,7 @@ Implemented by the client driver to handle operations that must be performed bef
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_TXQUEUE_CANCEL EvtTxqueueCancel;
 
 void EvtTxqueueCancel(

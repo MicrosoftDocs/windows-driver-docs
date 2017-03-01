@@ -20,7 +20,7 @@ Call [NET_REQUEST_QUEUE_CONFIG_INIT](net-request-queue-config-init.md) to initia
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_REQUEST_QUEUE_CONFIG {
   ULONG                                   Size;
   NETADAPTER                              Adapter;

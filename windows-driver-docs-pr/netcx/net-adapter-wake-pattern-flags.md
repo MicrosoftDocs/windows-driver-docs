@@ -19,7 +19,7 @@ Specifies wake patterns that an adapter supports.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_ADAPTER_WAKE_PATTERN_FLAGS { 
   NET_ADAPTER_WAKE_BITMAP_PATTERN            = NDIS_PM_WOL_BITMAP_PATTERN_ENABLED,
   NET_ADAPTER_WAKE_MAGIC_PACKET              = NDIS_PM_WOL_MAGIC_PACKET_ENABLED,

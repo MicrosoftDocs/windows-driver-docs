@@ -20,7 +20,7 @@ Call NET_DRIVER_GLOBALS_INIT to initialize this structure.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_DRIVER_GLOBALS {
   ULONG Unused;
 } NET_DRIVER_GLOBALS, *PNET_DRIVER_GLOBALS;

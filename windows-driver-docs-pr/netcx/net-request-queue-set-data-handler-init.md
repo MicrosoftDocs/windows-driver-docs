@@ -20,7 +20,7 @@ Initializes the [NET_REQUEST_QUEUE_SET_DATA_HANDLER](net-request-queue-set-data-
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 void NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT(
   _Out_ PNET_REQUEST_QUEUE_SET_DATA_HANDLER SetDataHandler,

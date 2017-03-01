@@ -20,7 +20,7 @@ Returns the element at the specified index in the ring buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 VOID* NetRingBufferGetElementAtIndex(
   _In_ NET_RING_BUFFER *RingBuffer,

@@ -20,7 +20,7 @@ Identifies the type of network adapter driver.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_ADAPTER_DRIVER_TYPE { 
   NET_ADAPTER_DRIVER_TYPE_INVALID   = 0,
   NET_ADAPTER_DRIVER_TYPE_MINIPORT  = 1

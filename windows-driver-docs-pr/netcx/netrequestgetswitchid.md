@@ -19,7 +19,7 @@ Retrieves the switch identifier for the net request.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NDIS_NIC_SWITCH_ID NetRequestGetSwitchId(
   _In_ NETREQUEST Request
 );

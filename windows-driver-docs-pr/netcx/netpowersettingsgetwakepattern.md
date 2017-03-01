@@ -21,7 +21,7 @@ Retrieves a wake-on-LAN (WoL) pattern structure.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 PNDIS_PM_WOL_PATTERN NetPowerSettingsGetWakePattern(
   _In_ NETPOWERSETTINGS NetPowerSettings,
   _In_ ULONG            Index

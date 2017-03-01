@@ -19,7 +19,7 @@ Completes a NETREQUEST with a supplied completion status.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 VOID NetRequestCompleteWithoutInformation(
   _In_ NETREQUEST Request,
   _In_ NTSTATUS   CompletionStatus

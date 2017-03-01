@@ -20,7 +20,7 @@ Initializes the caller-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queu
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 FORCEINLINE void NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER(
   _Out_ PNET_REQUEST_QUEUE_CONFIG NetRequestQueueConfig,
   _In_  NETADAPTER                Adapter

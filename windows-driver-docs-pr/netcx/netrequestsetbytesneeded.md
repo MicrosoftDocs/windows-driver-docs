@@ -19,7 +19,7 @@ Sets the number of bytes required for an NETREQUEST.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 VOID NetRequestSetBytesNeeded(
   _In_ NETREQUEST Request,
   _In_ UINT       BytesNeeded

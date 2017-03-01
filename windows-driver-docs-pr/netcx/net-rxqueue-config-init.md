@@ -20,7 +20,7 @@ Initializes the [NET_RXQUEUE_CONFIG](net-rxqueue-config.md) structure.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 void NET_RXQUEUE_CONFIG_INIT(
   _Out_ PNET_RXQUEUE_CONFIG                  NetRxQueueConfig,

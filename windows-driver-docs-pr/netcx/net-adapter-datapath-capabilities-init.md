@@ -20,7 +20,7 @@ Initializes the [**NET_ADAPTER_DATAPATH_CAPABILITIES**](net-adapter-datapath-cap
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 FORCEINLINE VOID NET_ADAPTER_DATAPATH_CAPABILITIES_INIT(
   _Out_ PNET_ADAPTER_DATAPATH_CAPABILITIES DataPathCapabilities
 );

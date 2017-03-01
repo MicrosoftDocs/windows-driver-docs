@@ -19,7 +19,7 @@ Specifies the low power protocol offload capabilities of a network adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_ADAPTER_PROTOCOL_OFFLOADS_FLAGS { 
   NET_ADAPTER_PROTOCOL_OFFLOAD_ARP              = NDIS_PM_PROTOCOL_OFFLOAD_ARP_ENABLED,
   NET_ADAPTER_PROTOCOL_OFFLOAD_NS               = NDIS_PM_PROTOCOL_OFFLOAD_NS_ENABLED,

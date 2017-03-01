@@ -20,7 +20,7 @@ Retrieves the specified unsigned long word (REG_DWORD) data from the adapter con
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationQueryUlong(
   _In_  NETCONFIGURATION                    Configuration,
   _In_  NET_CONFIGURATION_QUERY_ULONG_FLAGS Flags,

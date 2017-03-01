@@ -20,7 +20,7 @@ Sets the data path capabilities of the network adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 VOID NetAdapterSetDataPathCapabilities(
   _In_ NETADAPTER                         Adapter,
   _In_ PNET_ADAPTER_DATAPATH_CAPABILITIES DataPathCapabilities

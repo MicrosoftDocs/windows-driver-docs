@@ -21,7 +21,7 @@ Creates a net adapter object.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetAdapterCreate(
   _In_     WDFDEVICE              Device,
   _In_opt_ PWDF_OBJECT_ATTRIBUTES AdapterAttributes,

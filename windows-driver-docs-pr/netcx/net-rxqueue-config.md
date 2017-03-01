@@ -20,7 +20,7 @@ Describes the configuration options for a NetAdapterCx client driver's receive q
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_RXQUEUE_CONFIG {
   ULONG                                Size;
   PFN_RXQUEUE_CANCEL                   EvtRxQueueCancel;

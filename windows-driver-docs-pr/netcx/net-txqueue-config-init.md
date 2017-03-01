@@ -20,7 +20,7 @@ Initializes the [NET_TXQUEUE_CONFIG](net-txqueue-config.md) structure.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 void NET_TXQUEUE_CONFIG_INIT(
   _Out_ PNET_TXQUEUE_CONFIG                  NetTxQueueConfig,

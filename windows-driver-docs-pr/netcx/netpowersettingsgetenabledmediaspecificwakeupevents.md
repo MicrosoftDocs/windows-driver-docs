@@ -21,7 +21,7 @@ Retrieves the media-specific wake-up events that a network adapter supports.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 ULONG NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents(
   _In_ NETPOWERSETTINGS NetPowerSettings
 );

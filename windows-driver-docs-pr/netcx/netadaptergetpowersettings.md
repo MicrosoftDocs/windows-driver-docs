@@ -21,7 +21,7 @@ Retrieves the NETPOWERSETTINGS that is associated with a net adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NETPOWERSETTINGS NetAdapterGetPowerSettings(
   _In_ NETADAPTER Adapter
 );

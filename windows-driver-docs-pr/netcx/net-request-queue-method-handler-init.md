@@ -20,7 +20,7 @@ Initializes the [NET_REQUEST_QUEUE_METHOD_HANDLER](net-request-queue-method-hand
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 void NET_REQUEST_QUEUE_METHOD_HANDLER_INIT(
   _Out_ PNET_REQUEST_QUEUE_METHOD_HANDLER MethodHandler,

@@ -20,7 +20,7 @@ Describes the data path capabilities of the adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_ADAPTER_DATAPATH_CAPABILITIES {
   ULONG Size;
   ULONG NumTxQueues;

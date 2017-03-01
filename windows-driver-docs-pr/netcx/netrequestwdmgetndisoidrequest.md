@@ -19,7 +19,7 @@ Retrieves the traditional WDM [**NDIS_OID_REQUEST**](https://msdn.microsoft.com/
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 PNDIS_OID_REQUEST NetRequestWdmGetNdisOidRequest(
   _In_ NETREQUEST Request
 );

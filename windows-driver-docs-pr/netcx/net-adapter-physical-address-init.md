@@ -20,7 +20,7 @@ Initializes the [**NET_ADAPTER_PHYSICAL_ADDRESS**](net-adapter-physical-address.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 VOID NET_ADAPTER_PHYSICAL_ADDRESS_INIT(
   _Out_ PNET_ADAPTER_PHYSICAL_ADDRESS PhysicalAddress,
   _In_  USHORT                        Length,

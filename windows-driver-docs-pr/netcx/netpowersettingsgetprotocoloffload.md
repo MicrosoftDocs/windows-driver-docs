@@ -21,7 +21,7 @@ Retrieves a structure that specifies parameters for a low power protocol offload
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 PNDIS_PM_PROTOCOL_OFFLOAD NetPowerSettingsGetProtocolOffload(
   _In_ NETPOWERSETTINGS NetPowerSettings,
   _In_ ULONG            Index

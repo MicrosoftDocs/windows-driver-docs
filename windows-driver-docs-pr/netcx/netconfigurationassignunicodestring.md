@@ -19,7 +19,7 @@ The **NetConfigurationAssignUnicodeString** method assigns a specified Unicode s
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationAssignUnicodeString(
   _In_ NETCONFIGURATION Configuration,
   _In_ PCUNICODE_STRING ValueName,

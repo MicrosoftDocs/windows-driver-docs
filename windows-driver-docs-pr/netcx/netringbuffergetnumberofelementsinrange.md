@@ -20,7 +20,7 @@ Calculates the number of elements contained in a range of the specified net ring
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 UINT32 NetRingBufferGetNumberOfElementsInRange(
   _In_ NET_RING_BUFFER *RingBuffer,

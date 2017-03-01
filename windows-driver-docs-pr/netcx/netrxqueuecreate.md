@@ -21,7 +21,7 @@ Creates a net receive queue object.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetRxQueueCreate(
   _Inout_ PNETRXQUEUE_INIT       NetRxQueueInit,
   _In_    PWDF_OBJECT_ATTRIBUTES RxQueueAttributes,

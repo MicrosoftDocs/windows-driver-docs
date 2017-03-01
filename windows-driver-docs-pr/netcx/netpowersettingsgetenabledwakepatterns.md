@@ -21,7 +21,7 @@ Retrieves the wake-on-LAN (WOL) patterns that a network adapter supports.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 ULONG NetPowerSettingsGetEnabledWakePatterns(
   _In_ NETPOWERSETTINGS NetPowerSettings
 );

@@ -20,7 +20,7 @@ Creates a net transmit queue object.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetTxQueueCreate(
   _Inout_ PNETTXQUEUE_INIT       NetTxQueueInit,
   _In_    PWDF_OBJECT_ATTRIBUTES TxQueueAttributes,

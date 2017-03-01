@@ -20,7 +20,7 @@ Sets the link capabilities of the network adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 VOID NetAdapterSetLinkLayerCapabilities(
   _In_ NETADAPTER                           Adapter,
   _In_ PNET_ADAPTER_LINK_LAYER_CAPABILITIES LinkCapabilities

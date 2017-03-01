@@ -20,7 +20,7 @@ Adds a caller-provided handler for a specific OID method request to a [**NET_REQ
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 FORCEINLINE
 VOID
 NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER(

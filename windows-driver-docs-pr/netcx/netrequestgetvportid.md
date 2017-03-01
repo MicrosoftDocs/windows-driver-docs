@@ -19,7 +19,7 @@ Retrieves the VPortId for the NETREQUEST.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NDIS_NIC_SWITCH_VPORT_ID NetRequestGetVPortId(
   _In_ NETREQUEST Request
 );

@@ -20,7 +20,7 @@ Opens a sub configuration of a specified adapter configuration object.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationOpenSubConfiguration(
   _In_     NETCONFIGURATION       Configuration,
   _In_     PCUNICODE_STRING       SubConfigurationName,

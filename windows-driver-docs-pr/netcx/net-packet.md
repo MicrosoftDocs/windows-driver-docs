@@ -12,7 +12,7 @@ Represents a single network packet.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_PACKET {
   NET_PACKET_FRAGMENT Data;
   NET_PACKET_LAYOUT   Layout;

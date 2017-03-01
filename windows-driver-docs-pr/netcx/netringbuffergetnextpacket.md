@@ -20,7 +20,7 @@ Returns a pointer to the net packet at the NextIndex value of the ring buffer.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 __inline
 NET_PACKET* NetRingBufferGetNextPacket(
   _In_ NET_RING_BUFFER *RingBuffer

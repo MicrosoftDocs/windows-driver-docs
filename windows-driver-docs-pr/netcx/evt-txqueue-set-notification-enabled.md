@@ -20,7 +20,7 @@ Implemented by the client driver to perform client-specific processing when ther
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_TXQUEUE_SET_NOTIFICATION_ENABLED EvtTxqueueSetNotificationEnabled;
 
 NTSTATUS EvtTxqueueSetNotificationEnabled(

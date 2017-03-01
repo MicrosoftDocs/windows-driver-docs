@@ -20,7 +20,7 @@ The client driver's implementation of the *EVT_NET_ADAPTER_SET_CAPABILITIES* eve
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_NET_ADAPTER_SET_CAPABILITIES EvtNetAdapterSetCapabilities;
 
 NTSTATUS EvtNetAdapterSetCapabilities(

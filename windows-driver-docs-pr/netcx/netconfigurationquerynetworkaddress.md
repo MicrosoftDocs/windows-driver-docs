@@ -19,7 +19,7 @@ Retrieves the software-configurable network address that was stored in the regis
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationQueryNetworkAddress(
   _In_  NETCONFIGURATION Configuration,
   _In_  ULONG            BufferLength,

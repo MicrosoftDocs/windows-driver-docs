@@ -20,7 +20,7 @@ Call [NET_REQUEST_QUEUE_METHOD_HANDLER_INIT](net-request-queue-method-handler-in
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_REQUEST_QUEUE_METHOD_HANDLER {
   PNET_REQUEST_QUEUE_METHOD_HANDLER Next;
   WDFMEMORY                         Memory;

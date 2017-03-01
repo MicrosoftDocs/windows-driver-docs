@@ -20,7 +20,7 @@ Implemented by the client driver to process transmit packets provided by NetAdap
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_TXQUEUE_ADVANCE EvtTxqueueAdvance;
 
 void EvtTxqueueAdvance(

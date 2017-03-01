@@ -20,7 +20,7 @@ The client driver calls **NetRxQueueNotifyMoreReceivedPacketsAvailable** to resu
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void NetRxQueueNotifyMoreReceivedPacketsAvailable(
   _In_ NETRXQUEUE RxQueue
 );

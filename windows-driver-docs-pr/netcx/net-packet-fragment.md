@@ -12,7 +12,7 @@ Represents one contiguous buffer in memory.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_PACKET_FRAGMENT {
   ULONG_PTR         LastFragmentOfFrame  :1;
   ULONG_PTR         LastPacketOfChain  :1;

@@ -21,7 +21,7 @@ Opens the adapter’s configuration database.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetAdapterOpenConfiguration(
   _In_     NETADAPTER             Adapter,
   _In_opt_ PWDF_OBJECT_ATTRIBUTES ConfigurationAttributes,

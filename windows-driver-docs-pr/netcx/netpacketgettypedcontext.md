@@ -21,7 +21,7 @@ Client drivers should not call this function directly. Instead, use [**NET_PACKE
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 PVOID NetPacketGetTypedContext(
   _In_ NET_PACKET              *NetPacket,
   _In_ PCNET_CONTEXT_TYPE_INFO TypeInfo

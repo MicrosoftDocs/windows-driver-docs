@@ -12,7 +12,7 @@ Describes the MAC capabilities of the adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_ADAPTER_LINK_LAYER_CAPABILITIES {
   ULONG                         Size;
   NET_PACKET_FILTER_TYPES_FLAGS SupportedPacketFilters;

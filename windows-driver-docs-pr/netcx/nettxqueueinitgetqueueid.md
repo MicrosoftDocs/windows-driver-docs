@@ -19,7 +19,7 @@ Retrieves the identifier associated with a transmit queue.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 ULONG NetTxQueueInitGetQueueId(
   _In_ PNETTXQUEUE_INIT NetTxQueueInit
 );

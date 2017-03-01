@@ -21,7 +21,7 @@ Overrides the maximum transfer unit (MTU) size that the client driver provided t
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void NetAdapterSetLinkLayerMtuSize(
   _In_ NETADAPTER Adapter,
   _In_ ULONG      MtuSize

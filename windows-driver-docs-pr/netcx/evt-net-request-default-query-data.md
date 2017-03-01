@@ -20,7 +20,7 @@ Implemented by the client driver as the default handler for object identifier (O
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_NET_REQUEST_DEFAULT_QUERY_DATA EvtNetRequestDefaultQueryData;
 
 void EvtNetRequestDefaultQueryData(

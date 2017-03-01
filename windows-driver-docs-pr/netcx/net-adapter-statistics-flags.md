@@ -19,7 +19,7 @@ Specifies statistics that an adapter supports.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_ADAPTER_STATISTICS_FLAGS { 
   NET_ADAPTER_STATISTICS_NO_FLAGS               = 0,
   NET_ADAPTER_STATISTICS_XMIT_OK                = NDIS_STATISTICS_XMIT_OK_SUPPORTED,

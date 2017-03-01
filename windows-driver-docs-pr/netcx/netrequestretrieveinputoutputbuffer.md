@@ -19,7 +19,7 @@ Retrieves the input/output buffer associated with a NETREQUEST object.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetRequestRetrieveInputOutputBuffer(
   _In_    NETREQUEST Request,
   _In_    UINT       MininumInputLengthRequired,

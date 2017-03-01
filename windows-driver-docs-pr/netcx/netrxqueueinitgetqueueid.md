@@ -19,7 +19,7 @@ Retrieves the identifier of the receive queue associated with a receive queue.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 ULONG NetRxQueueInitGetQueueId(
   _In_ PNETRXQUEUE_INIT NetRxQueueInit
 );

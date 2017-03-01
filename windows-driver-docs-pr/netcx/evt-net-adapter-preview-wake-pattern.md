@@ -20,7 +20,7 @@ The client driver's implementation of the *EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN EvtNetAdapterPreviewWakePattern;
 
 NTSTATUS EvtNetAdapterPreviewWakePattern(

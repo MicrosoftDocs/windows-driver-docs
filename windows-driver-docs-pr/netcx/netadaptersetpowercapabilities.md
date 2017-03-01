@@ -20,7 +20,7 @@ Sets the power capabilities of the network adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 void NetAdapterSetPowerCapabilities(
   _In_ NETADAPTER                      Adapter,
   _In_ PNET_ADAPTER_POWER_CAPABILITIES PowerCapabilities

@@ -20,7 +20,7 @@ Call [NET_ADAPTER_PHYSICAL_ADDRESS_INIT](net-adapter-physical-address-init.md) t
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_ADAPTER_PHYSICAL_ADDRESS {
   USHORT Length;
   UCHAR  PermanentAddress[NDIS_MAX_PHYS_ADDRESS_LENGTH];

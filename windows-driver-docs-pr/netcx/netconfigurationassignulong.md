@@ -19,7 +19,7 @@ The **NetConfigurationAssignUlong** method writes a caller-supplied unsigned lon
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetConfigurationAssignUlong(
   _In_ NETCONFIGURATION Configuration,
   _In_ PCUNICODE_STRING ValueName,

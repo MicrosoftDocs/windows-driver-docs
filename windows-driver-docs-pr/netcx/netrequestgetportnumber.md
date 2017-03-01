@@ -19,7 +19,7 @@ Retrieves the port number for the network request object.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NDIS_PORT_NUMBER NetRequestGetPortNumber(
   _In_ NETREQUEST Request
 );

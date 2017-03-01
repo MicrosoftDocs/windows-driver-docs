@@ -19,7 +19,7 @@ Specifies a buffer comprised of one or more [**NET_PACKET**](net-packet.md) stru
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _NET_RING_BUFFER {
   UINT16                                              OSReserved1;
   UINT16                                              ElementStride;

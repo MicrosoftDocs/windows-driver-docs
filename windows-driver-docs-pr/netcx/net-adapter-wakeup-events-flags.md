@@ -19,7 +19,7 @@ Specifies the media-independent wake-up events that a network adapter supports.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 typedef enum _NET_ADAPTER_WAKEUP_EVENTS_FLAGS { 
   NET_ADAPTER_WAKE_ON_MEDIA_CONNECT     = NDIS_PM_WAKE_ON_MEDIA_CONNECT_SUPPORTED,
   NET_ADAPTER_WAKE_ON_MEDIA_DISCONNECT  = NDIS_PM_WAKE_ON_MEDIA_DISCONNECT_SUPPORTED

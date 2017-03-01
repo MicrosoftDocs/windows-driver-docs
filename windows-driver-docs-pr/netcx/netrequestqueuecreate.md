@@ -20,7 +20,7 @@ Creates a net request queue object.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS NetRequestQueueCreate(
   _In_      PNET_REQUEST_QUEUE_CONFIG NetRequestQueueConfig,
   _In_opt_  PWDF_OBJECT_ATTRIBUTES    QueueAttributes,

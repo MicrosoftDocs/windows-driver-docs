@@ -21,7 +21,7 @@ Retrieves the low power protocol offload capabilities of a network adapter.
 Syntax
 ------
 
-```ManagedCPlusPlus
+```cpp
 ULONG NetPowerSettingsGetEnabledProtocolOffloads(
   _In_ NETPOWERSETTINGS NetPowerSettings
 );
