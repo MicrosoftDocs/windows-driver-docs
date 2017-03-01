@@ -8,13 +8,13 @@ For general information about WDF, please review the [WDF Driver Development Gui
 
 ## Compilation settings
 
-1. First, ensure that your project links against the latest version of KMDF.
+1. First, ensure that your project links against the latest version of KMDF.  To do so in Visual Studio, navigate to **Configuration Properties->Driver Settings->Driver Model** and verify that **Type of driver** is set to KMDF, and that **KMDF Version Major** and **KMDF Version Minor** are both empty.
 2. Also link against NetAdapterCxStub.lib (located in `Windows Kits\10\Lib\<latest_windows_version>\km\<architecture>\netadaptercx\1.0`).
     * If your driver calls NDIS APIs, link against `ndis.lib`.
 3. Remove NDIS preprocessor macros, like NDIS650_MINIPORT=1.
 4. Add the following headers to every source file (or to your common/precompiled header):
 
-```ManagedCPlusPlus
+```cpp
 #include <ntddk.h>
 #include <wdf.h>
 #include <netadaptercx.h>
@@ -34,7 +34,7 @@ KmdfLibraryVersion = <insert here>
 
 Remove the call to [**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654) from [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff540807), and add the following:
 
-```ManagedCPlusPlus
+```cpp
 WDF_DRIVER_CONFIG_INIT(&config, EvtDriverDeviceAdd);
 status = WdfDriverCreate(. . . );
 if (!NT_SUCCESS(status)) {
@@ -65,7 +65,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hard
 1. Call [**NetAdapterDeviceInitConfig**](netadapterdeviceinitconfig.md).
 2. Load pointers to your driver's callbacks and call [**WdfDeviceInitSetPnpPowerEventCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff546135), as shown here:
 
-    ```ManagedCPlusPlus
+    ```cpp
     status = NetAdapterDeviceInitConfig(DeviceInit);
     if (!NT_SUCCESS(status)) {
         return status;
@@ -84,7 +84,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hard
 
 4. Create the NETADAPTER object.  This object represents your NIC, which is the endpoint for all networking I/O.  To create the NETADAPTER object, the client typically calls [**NET_ADAPTER_CONFIG_INIT method**](net-adapter-config-init.md), followed by [**NetAdapterCreate method**](netadaptercreate.md):
 
-    ```ManagedCPlusPlus
+    ```cpp
     WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attribs, MYDRIVER_ADAPTER_CONTEXT);
 
     NET_ADAPTER_CONFIG_INIT (
@@ -131,7 +131,7 @@ You might even use both approaches in the same driver, providing custom handlers
 
 To register default handlers for all query OIDs and all set OIDs, provide an [**EVT_NET_REQUEST_DEFAULT_QUERY_DATA callback function**](evt-net-request-default-query-data.md) and an [**EVT_NET_REQUEST_DEFAULT_SET_DATA callback function**](evt-net-request-default-set-data.md):
 
-```ManagedCPlusPlus
+```cpp
 NET_REQUEST_QUEUE_CONFIG config;
 NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL(&config, NetAdapter);
 config.EvtRequestDefaultQueryData = MyQueryHandler;
@@ -140,7 +140,7 @@ config.EvtRequestDefaultSetData = MySetHandler;
 
 To add an OID-specific handler, call the [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md) method with a pointer to the client driver's implementation of an [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function:
 
-```ManagedCPlusPlus
+```cpp
 NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
     &config, OID_GEN_VENDOR_DESCRIPTION,
     EvtQueryGenVendorDescription, sizeof(NIC_VENDOR_DESC));
@@ -148,7 +148,7 @@ NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
 
 Once you've set up the OID queue the way you like, call [**NetRequestQueueCreate method**](netrequestqueuecreate.md) to create the queue:
 
-```ManagedCPlusPlus
+```cpp
 status = NetRequestQueueCreate(&config, WDF_NO_OBJECT_ATTRIBUTES, NULL);
 
 if(!NT_SUCCESS(status))
@@ -163,7 +163,7 @@ Next, replace calls to [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/
 
 Start by calling [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) to get a handle to a configuration object.  You can then query it:
 
-```ManagedCPlusPlus
+```cpp
 NETCONFIGURATION config = NULL;
 
 status = NetAdapterOpenConfiguration(NetAdapter, WDF_NO_OBJECT_ATTRIBUTES, &config);
@@ -188,7 +188,7 @@ The most straightforward port is to create a control device object by calling [*
 
 However, the recommended solution is to create a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) with a reference string, as shown here:
 
-```ManagedCPlusPlus
+```cpp
 DECLARE_CONST_UNICODE_STRING(c_RefString, L"MyRefString");
 status = WdfDeviceCreateDeviceInterface(
             device, 
@@ -201,7 +201,7 @@ if (!NT_SUCCESS(status)) {
 
 For more info, see [Using Device Interfaces](../wdf/using-device-interfaces.md).
 
-When a component sends requests to a handle opened on this device interface, your device driver receives I/O requests.  You can use [WDF queue objects](../wdf/framework-queue-objects.md) to handle the incoming I/O requests.
+When a user-mode application sends requests to a handle opened on a device interface with a reference string, your client driver receives I/O requests.  You can use [WDF queue objects](../wdf/framework-queue-objects.md) to handle the incoming I/O requests.
 
 ### Finishing device initialization
 
@@ -229,7 +229,7 @@ Similarly, a WDF client driver never receives [**OID_PM_PARAMETERS**](https://ms
 
 Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.  To access this object, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md) from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and related callback functions.  For example:
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS
 EvtDeviceArmWakeFromS0(WDFDEVICE Device)
 {
@@ -267,9 +267,9 @@ In the NetAdapter model, network traffic is no longer per adapter, as in NDIS, b
 
 When your client driver calls [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md), it provides two queue creation callbacks: [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) and [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md).  The client creates transmit and receive queues in these callbacks.
 
-The client creates a transmit queue as follows:
+The client creates a transmit queue by calling [**NetTxQueueCreate**](nettxqueuecreate.md) as follows:
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS
 EvtAdapterCreateTxQueue(NETADAPTER Adapter, PNETTXQUEUE_INIT NetTxQueueInit)
 {
@@ -290,63 +290,35 @@ EvtAdapterCreateTxQueue(NETADAPTER Adapter, PNETTXQUEUE_INIT NetTxQueueInit)
 }
 ```
 
-To create a receive queue from [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md), use the same pattern.
+To create a receive queue from [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md), use the same pattern to call [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 Because the NETRXQUEUE and NETTXQUEUE objects are parented to the NETADAPTER, WDF automatically deletes the queues when the adapter is deleted.  Also, the client does not need to handle start and pause semantics (unlike in NDIS 6.x where the miniport does need to handle them).
 
 When creating transmit and receive queues, the client provides pointers to the following callbacks:
 
+* [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md)
+* [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md)
+* [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md)
+* [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md)
+* [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md)
+* [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md)
+
 ### EVT_TXQUEUE_ADVANCE
 
 The [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.
 
-In a production driver, the client would call ring buffer macros to retrieve packets from the queue, send the data, and then complete the packets. The following example simply completes incoming transmit packets:
-
-```ManagedCPlusPlus
-VOID
-EvtTxQueueAdvance(NETTXQUEUE TxQueue)
-{
-    NET_RING_BUFFER *ringBuffer = NetTxQueueGetRingBuffer(TxQueue);
-    NET_PACKET *netPacket;
-
-    while ((netPacket = NetRingBufferGetNextPacket(ringBuffer)) != nullptr)
-    {
-        netPacket->Data.Completed = TRUE;
-
-        NetRingBufferAdvanceNextPacket(ringBuffer);
-    }
-
-    NetRingBufferReturnCompletedPackets(ringBuffer);
-}
-```
-
-### EVT_TXQUEUE_SET_NOTIFICATION_ENABLED
-
-For info, see [**EVT_TXQUEUE_SET_NOTIFICATION_ENABLED**](evt-txqueue-set-notification-enabled.md).
-
-### EVT_TXQUEUE_CANCEL
-
-In its [**EVT_TXQUEUE_CANCEL**](evt-txqueue-cancel.md) callback function, the client driver should complete the buffers as soon as possible, regardless of whether pending transmit packets have been successfully transmitted.
-
-You can safely ignore this handler for now.
 
 ### EVT_RXQUEUE_ADVANCE
 
 In the new programming model there are no NET_BUFFER_LIST or NET_BUFFER pools.
 
-For more info and an example, see [**EVT_RXQUEUE_ADVANCE callback function**](evt-rxqueue-advance.md).
-
-### EVT_RXQUEUE_SET_NOTIFICATION_ENABLED
-
-The purpose of the [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) callback is the same of [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md).
-
 ### EVT_RXQUEUE_CANCEL
 
-The [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md) callback is similar to [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md), a suggestion from the host that the client driver should return all the buffers as soon as possible. 
-In this example we're didn't give the buffers to any hardware, so it's safe to immediately return all the buffers to the host in the cancellation handler.
+Consider a simple example in which we have not provided buffers to any hardware.  In this case, it's safe to immediately return all the buffers to the host in the cancellation handler.
+
 The fastest way to do that is to adjust the [*NET_RING_BUFFER*](net-ring-buffer.md) pointers like this:
 
-```ManagedCPlusPlus
+```cpp
 VOID
 EvtRxQueueCancel(NETRXQUEUE RxQueue)
 {
@@ -356,9 +328,9 @@ EvtRxQueueCancel(NETRXQUEUE RxQueue)
 }
 ```
 
-## Device Removal
+## Device removal
 
-Device removal for a WDF NIC driver is the same as in any other WDF device driver, with no networking specific processing required.  The network data path shuts down first, followed by the WDF device.  For info on WDF shutdown, see [A User Unplugs a Device](../wdf/a-user-unplugs-a-device.md).
+Device removal for a WDF NIC driver is the same as in any other WDF device driver, with no networking specific processing required.  The network data path shuts down first, followed by the WDF device.  For info about WDF shutdown, see [A User Unplugs a Device](../wdf/a-user-unplugs-a-device.md).
 
 Your *MiniportHaltEx* handler will likely be distributed between [*EVT_WDF_DEVICE_D0_EXIT*](https://msdn.microsoft.com/library/windows/hardware/ff540855) and [*EVT_WDF_DEVICE_RELEASE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540890).
 
@@ -366,7 +338,7 @@ The WDF client does not need to delete the NetAdapter or any of the OID and data
 
 You can delete *MiniportShutdownEx*, *MiniportResetEx* and *MiniportCheckForHangEx*.  These callbacks are no longer supported.
 
-## NDIS-WDF Function Equivalents
+## NDIS-WDF function equivalents
 
 Most `NdisXxx` functions can be replaced with a WDF equivalent.  In general, you should find that you need very little functionality that is imported from `NDIS.SYS`.
 
@@ -377,7 +349,7 @@ The following table lists NDIS functions and their WDF equivalents:
 |[**NdisAllocateIoWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff561604)|[**WdfWorkItemCreate**](https://msdn.microsoft.com/library/windows/hardware/ff551201)|
 |[**NdisAllocateTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff561618)|[**WdfTimerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550050)|
 |[**NdisAcquireSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff560699)|[**WdfSpinLockAcquire**](https://msdn.microsoft.com/library/windows/hardware/ff550040)|
-|[**NdisInterlockedIncrement**](https://msdn.microsoft.com/library/windows/hardware/ff562752)|InterlockedIncrement (compiler intrinsic)|
+|[**NdisInterlockedIncrement**](https://msdn.microsoft.com/library/windows/hardware/ff562752)|[**InterlockedIncrement**](https://msdn.microsoft.com/library/windows/hardware/ff547910) (compiler intrinsic)|
 |[**NdisInitializeEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562732)|[**KeInitializeEvent**](https://msdn.microsoft.com/library/windows/hardware/ff552137)|
 |[**NdisMInitializeScatterGatherDma**](https://msdn.microsoft.com/library/windows/hardware/ff553543)|[**WdfDmaEnablerCreate**](https://msdn.microsoft.com/library/windows/hardware/ff546983)|
 |[**NdisInitializeString**](https://msdn.microsoft.com/library/windows/hardware/ff562741)|[**WdfStringCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550046)|
@@ -396,5 +368,5 @@ You can use [Windows Driver Framework Extensions (Wdfkd.dll)](https://msdn.micro
 
 ## Conclusion
 
-You should now have a working driver that starts and stops your device. To receive and transmit data, you need to understand how the ring buffer works, which is out of scope for this porting guide.
+Using the steps in this topic, you should have a working driver that starts and stops your device. To receive and transmit data, you need to understand how the ring buffer works, which is out of scope for this porting guide.
 
