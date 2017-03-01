@@ -49,9 +49,11 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 Remarks
 -------
 
-The client is responsible for closing an opened configuration by calling [**NetConfigurationClose**](netconfigurationclose.md).
+Typically, the client calls this method from its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
 If the client provides a [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff552400), it specifies **NULL** for **ParentObject**. The adapter configuration object is automatically parented to the adapter object.
+
+As a result, WDF automatically deletes the configuration object when the adapter is deleted.  However, the client can manually delete a configuration object by calling [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734), typically from its [*EVT_WDF_OBJECT_CONTEXT_CLEANUP*](https://msdn.microsoft.com/library/windows/hardware/ff540840) callback function.
 
 Requirements
 ------------
