@@ -35,7 +35,7 @@ Parameters
 A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 *Index* [in]  
-The starting index
+The starting index to increment.
 
 Return value
 ------------
