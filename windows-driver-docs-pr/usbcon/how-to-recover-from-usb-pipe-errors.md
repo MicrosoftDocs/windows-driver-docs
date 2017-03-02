@@ -66,7 +66,7 @@ Instructions
 The client driver initiates a data transfer by using a USB Request Block (URB). After the request completes, the USB driver stack returns a USBD status code that indicates whether the transfer was successful or it failed. In a failure, the USBD code indicates the reason for failure.
 
 -   If you submitted URB by calling the [**WdfUsbTargetDeviceSendUrbSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550105) method, check the **Hdr.Status** member of the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure after the method returns.
--   If you submitted the URB asynchronously by calling the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) method, check the URB status in the [*CompletionRoutine*](BUGBUG) function. The *Params* parameter points to a [**WDF\_REQUEST\_COMPLETION\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552454) structure. To check the USBD status code, inspect the **Usb-&gt;UsbdStatus** member. For information about the code, see [USBD\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff539136).
+-   If you submitted the URB asynchronously by calling the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) method, check the URB status in the [*EVT_WDF_REQUEST_COMPLETION_ROUTINE*](https://msdn.microsoft.com/library/windows/hardware/ff540745). The *Params* parameter points to a [**WDF\_REQUEST\_COMPLETION\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552454) structure. To check the USBD status code, inspect the **Usb-&gt;UsbdStatus** member. For information about the code, see [USBD\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff539136).
 
 Transfer failures can result from a device error, such as USBD\_STATUS\_STALL\_PID or USBD\_STATUS\_BABBLE\_DETECTED. They can also result due to an error reported by the host controller, such as USBD\_STATUS\_XACT\_ERROR.
 
@@ -89,7 +89,7 @@ Before sending any requests that reset the pipe or port, cancel all pending tran
 
     -   Call the [**WdfUsbTargetPipeFormatRequestForAbort**](https://msdn.microsoft.com/library/windows/hardware/ff551132) method to format a request object for an abort-pipe request, and then send the request by calling [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) method.
 
-        If the driver sends the request asynchronously, then it must specify a pointer to the driver's [*CompletionRoutine*](BUGBUG) that the driver implements. To specify the pointer, call the [**WdfRequestSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550030) method.
+        If the driver sends the request asynchronously, then it must specify a pointer to the driver's [*EVT_WDF_REQUEST_COMPLETION_ROUTINE*](https://msdn.microsoft.com/library/windows/hardware/ff540745) that the driver implements. To specify the pointer, call the [**WdfRequestSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550030) method.
 
         The driver can send the request synchronously by specifying WDF\_REQUEST\_SEND\_OPTION\_SYNCHRONOUS as one of the request options in [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027). If you send the request synchronously, then call [**WdfUsbTargetPipeAbortSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff551129) instead.
 
