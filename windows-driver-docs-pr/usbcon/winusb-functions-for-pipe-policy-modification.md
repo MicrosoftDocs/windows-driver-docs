@@ -5,6 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 title: WinUSB Functions for Pipe Policy Modification
+author: windows-driver-content
 ---
 
 # WinUSB Functions for Pipe Policy Modification
@@ -229,32 +230,17 @@ Enabling this setting significantly improves the performance of multiple read re
  
 
 ## Related topics
+[WinUSB Power Management](winusb-power-management.md)  
+[WinUSB Architecture and Modules](winusb-architecture.md)  
+[Choosing a driver model for developing a USB client driver](winusb-considerations.md)  
+[WinUSB (Winusb.sys) Installation](winusb-installation.md)  
+[How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
+[WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)  
+[**WinUsb\_GetPipePolicy**](https://msdn.microsoft.com/library/windows/hardware/ff540266)  
+[**WinUsb\_SetPipePolicy**](https://msdn.microsoft.com/library/windows/hardware/ff540304)  
+[WinUSB](winusb.md)  
 
-
-[WinUSB Power Management](winusb-power-management.md)
-
-[WinUSB Architecture and Modules](winusb-architecture.md)
-
-[Choosing a driver model for developing a USB client driver](winusb-considerations.md)
-
-[WinUSB (Winusb.sys) Installation](winusb-installation.md)
-
-[How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)
-
-[WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)
-
-[**WinUsb\_GetPipePolicy**](https://msdn.microsoft.com/library/windows/hardware/ff540266)
-
-[**WinUsb\_SetPipePolicy**](https://msdn.microsoft.com/library/windows/hardware/ff540304)
-
-[WinUSB](winusb.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20WinUSB%20Functions%20for%20Pipe%20Policy%20Modification%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

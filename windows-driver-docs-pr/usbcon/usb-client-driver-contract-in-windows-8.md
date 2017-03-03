@@ -5,6 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 title: 'Best Practices: Using URBs'
+author: windows-driver-content
 ---
 
 # Best Practices: Using URBs
@@ -89,16 +90,9 @@ The USB driver stack does not support isochronous transfer URBs in which the **N
 If you register your client driver with USBD\_CLIENT\_CONTRACT\_VERSION\_602 as the contract version, the USB driver stack assumes that the client driver sent the request at the appropriate IRQL level. If a client driver sends a request at DISPATCH\_LEVEL, which should be sent at PASSIVE\_LEVEL. Upon receiving the request, in some cases, the USB driver stack validates the IRQL value and fails the request. However, in other cases, the USB driver stack might generate a bugcheck.
 
 ## Related topics
+[Sending Requests to a USB Device](communicating-with-a-usb-device.md)  
 
-
-[Sending Requests to a USB Device](communicating-with-a-usb-device.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Best%20Practices:%20Using%20URBs%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

@@ -5,6 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 title: How to recover from USB pipe errors
+author: windows-driver-content
 ---
 
 # How to recover from USB pipe errors
@@ -65,8 +66,8 @@ Instructions
 
 The client driver initiates a data transfer by using a USB Request Block (URB). After the request completes, the USB driver stack returns a USBD status code that indicates whether the transfer was successful or it failed. In a failure, the USBD code indicates the reason for failure.
 
--   If you submitted URB by calling the [**WdfUsbTargetDeviceSendUrbSynchronously**](kmdf-wdfusbtargetdevicesendurbsynchronously) method, check the **Hdr.Status** member of the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure after the method returns.
--   If you submitted the URB asynchronously by calling the [**WdfRequestSend**](kmdf-wdfrequestsend) method, check the URB status in the [*CompletionRoutine*](kmdf-completionroutine) function. The *Params* parameter points to a [**WDF\_REQUEST\_COMPLETION\_PARAMS**](kmdf-wdf_request_completion_params) structure. To check the USBD status code, inspect the **Usb-&gt;UsbdStatus** member. For information about the code, see [USBD\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff539136).
+-   If you submitted URB by calling the [**WdfUsbTargetDeviceSendUrbSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550105) method, check the **Hdr.Status** member of the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure after the method returns.
+-   If you submitted the URB asynchronously by calling the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) method, check the URB status in the CompletionRoutine function. The *Params* parameter points to a [**WDF\_REQUEST\_COMPLETION\_PARAMS**](kmdf-wdf_request_completion_params) structure. To check the USBD status code, inspect the **Usb-&gt;UsbdStatus** member. For information about the code, see [USBD\_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff539136).
 
 Transfer failures can result from a device error, such as USBD\_STATUS\_STALL\_PID or USBD\_STATUS\_BABBLE\_DETECTED. They can also result due to an error reported by the host controller, such as USBD\_STATUS\_XACT\_ERROR.
 
@@ -147,16 +148,9 @@ As a result of cycle port operation, any application that has a handle open to t
 Similar to the reset-port operation (described in step 6), for a composite device, cycle-port operation affects the entire device and not individual functions of the device.
 
 ## Related topics
+[USB I/O Transfers](usb-device-i-o.md)  
 
-
-[USB I/O Transfers](usb-device-i-o.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20recover%20from%20USB%20pipe%20errors%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 
