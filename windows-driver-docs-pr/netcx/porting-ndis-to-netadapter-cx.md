@@ -13,13 +13,11 @@ For general information about WDF, please review the [WDF Driver Development Gui
     * If your driver calls NDIS APIs, link against `ndis.lib`.
 3. Remove NDIS preprocessor macros, like NDIS650_MINIPORT=1.
 4. Add the following headers to every source file (or to your common/precompiled header):
-
 ```cpp
 #include <ntddk.h>
 #include <wdf.h>
 #include <netadaptercx.h>
 ```
-
 5. Add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
 
 ```Inf
