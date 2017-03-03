@@ -20,6 +20,8 @@ For general information about WDF, please review the [WDF Driver Development Gui
 ```
 5. Add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
 
+Finally, add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
+
 ```Inf
 [Yourdriver.Wdf]
 KmdfService = Yourdriverservice, Yourdriver.wdfsect
@@ -44,7 +46,7 @@ If it is set, remove the **WdfDriverInitNoDispatchOverride** flag from the call 
 
 *DriverUnload* is an optional routine for a WDF networking client driver, so you can remove it if you like.  Do not call [**NdisMDeregisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563578) from *DriverUnload*.
 
-## Device Initialization
+## Device initialization
 
 Next, you'll distribute code from *MiniportInitializeEx* into the appropriate WDF event callback handlers, several of which are optional.  For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md).
 
