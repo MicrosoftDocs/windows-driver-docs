@@ -1,5 +1,6 @@
 # [Network Adapter WDF Class Extension (Cx) Reference](index.md)
 ## [Porting NDIS Miniport Drivers to NetAdapter Class Extension](porting-ndis-to-netadapter-cx.md)
+## [Device Initialization](device-initialization.md)
 ## [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md)
 ## [Power-Down Sequence for an Network Adapter WDF Client Driver](power-down-sequence-for-ndis-wdf-client-driver.md)
 ## [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md)

@@ -58,7 +58,7 @@ In this function, the client typically sets the adapter's link and MAC capabilit
 * [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md)
 * [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md)
 
-In NetAdapterCx version 1.0, the client driver reports offload capabilities by calling [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from this callback routine. 
+To set an attribute that does not have equivalent NetAdapter functionality, for example to report offload capabilities, call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
 
 Requirements
 ------------
