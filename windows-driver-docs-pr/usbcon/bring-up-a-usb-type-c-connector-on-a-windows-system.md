@@ -1,4 +1,4 @@
----
+﻿---
 Description: 'Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.'
 MS-HAID: 'buses.bring\_up\_a\_usb\_type-c\_connector\_on\_a\_windows\_system'
 MSHAttr:
