@@ -1,6 +1,20 @@
 {
   "need_generate_pdf": false,
+  "need_generate_pdf_url_template": true, 
   "need_generate_intellisense": false,
+  "branch_target_mapping": {
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
+
+  "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+
   "docsets_to_publish": [
     {
       "docset_name": "wdkdocs-test",
@@ -30,7 +44,11 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
-    }
-  ],
-  "need_generate_pdf_url_template": false
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master"
+    }    
+  ]
 }
