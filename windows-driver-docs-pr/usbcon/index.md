@@ -20,7 +20,7 @@ The USB-IF is a Special Interest Groups (SIGs) that maintains the [Official USB 
 
 Windows operating systems include native support for USB host controllers, hubs, and devices and systems that comply with the official USB specification. Windows also provides programming interfaces that you can use to develop [device drivers](usb-driver-development-guide.md) and [applications](developing-windows-applications-that-communicate-with-a-usb-device.md) that communicate with a USB device.
 
-[![usb for device builders](images/icon-dev.png)](building_usb_devices_for_windows)[![usb for driver developers](images/icon-driver.png)](usb_driver_development_guide)[![usb for app developers](images/icon-app.png)](developing_windows_applications_that_communicate_with_a_usb_device)[![usb hck certification](images/icon-cert.png)](windows_hardware_certification_kit_tests_for_usb)
+[![usb for device builders](images/icon-dev.png)](building-usb-devices-for-windows.md)[![usb for driver developers](images/icon-driver.png)](usb-driver-development-guide.md)[![usb for app developers](images/icon-app.png)](developing-windows-applications-that-communicate-with-a-usb-device.md)[![usb hck certification](images/icon-cert.png)](windows-hardware-certification-kit-tests-for-usb.md)
 
 <table>
 <colgroup>
@@ -31,7 +31,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <tr class="odd">
 <td><strong>USB in Windows</strong>
 <p></p>
-[Windows 10: What's new for USB](windows_10__what_s_new_for_usb.md)
+[Windows 10: What's new for USB](windows-10--what-s-new-for-usb.md)
 <p>Overview of new features and improvements in USB in Windows 10.</p>
 [USB FAQ](usb_faq__introductory_level)
 <p>Frequently asked questions from driver developers about the USB stack and features that are supported in USB.</p>
