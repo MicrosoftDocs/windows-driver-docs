@@ -29,7 +29,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
       "is_dynamic_rendering": false
     }
   ],
