@@ -7,7 +7,7 @@ title: Network Adapter WDF Class Extension (Cx) Reference
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Starting in Windows 10, version 1703, the Windows Driver Kit (WDK) includes a class extension module (NetAdapterCx) that enables you to write a KMDF-based driver for a network adapter.
+Starting in Windows 10, version 1703, the Windows Driver Kit (WDK) includes a class extension module (NetAdapterCx) that enables you to write a KMDF-based driver (called the client driver in this section) for a network adapter.
 In previous versions of Windows, you needed to write an NDIS miniport driver.
 
 ## Event callback functions
