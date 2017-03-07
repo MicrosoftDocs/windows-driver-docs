@@ -35,7 +35,7 @@ Parameters
 A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 *EndIndex* [in]  
-The index of the last NET_PACKET in the client RingBuffer window that is programmed for transmission or receive.
+The index of the last [**NET_PACKET**](net-packet.md) in the client's ring buffer window that is programmed for transmission or receive.
 
 Return value
 ------------
@@ -45,7 +45,7 @@ This method does not return a value.
 Remarks
 -------
 
-When the device driver completes transmission or receiving a NET\_PACKET it marks the packet as completed by setting the **Completed** flag in the starting fragment of the packet. Then, in its [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) or [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback, the client calls **NetRingBufferReturnCompletedPacketsThroughIndex** to transfer ownership of completed packets in the ring buffer back to NetAdapterCx. The packet's **BeginIndex** field will be updated to the index of the first non-completed packet or to **EndIndex**, whichever comes first. **EndIndex** should indicate the last NET\_PACKET that has been programmed for transmission/receive.
+When the device driver completes transmission or reception of a [**NET_PACKET**](net-packet.md), it marks the packet as completed by setting the **Completed** flag in the starting fragment of the packet. Then, in its [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) or [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback, the client calls **NetRingBufferReturnCompletedPacketsThroughIndex** to transfer ownership of completed packets in the ring buffer back to NetAdapterCx. The class extension updates the packet's **BeginIndex** field to the index of the first non-completed packet or to **EndIndex**, whichever comes first. **EndIndex** should indicate the last [**NET_PACKET**](net-packet.md) that the client has programmed to transmit or receive data.
 
 Requirements
 ------------
