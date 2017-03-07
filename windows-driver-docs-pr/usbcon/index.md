@@ -51,9 +51,9 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>Parent driver for USB devices with multiple functions. Usbccgp creates physical device objects (PDOs) for each of those functions. Those individual PDOs are managed by their respective USB function drivers, which could be the Winusb.sys driver or a USB device class driver.</p>
 <strong>WDF extension for developing USB drivers</strong>
 <ul>
-<li>[USB connector manager class extension (UcmCx)](usb_connection_manager_class_extension__ucmcx_)</li>
-<li>[USB host controller extension (UCX) reference](usb_class_extension__ucx_)</li>
-<li>[USB function class extension (UFX) reference](usb_function_class_extension__ufx_)</li>
+<li>[USB connector manager class extension (UcmCx)](https://msdn.microsoft.com/library/windows/hardware/mt188011)</li>
+<li>[USB host controller extension (UCX) reference](https://msdn.microsoft.com/library/windows/hardware/mt188009)</li>
+<li>[USB function class extension (UFX) reference](https://msdn.microsoft.com/library/windows/hardware/mt188013)</li>
 </ul>
 <strong>Testing USB devices with Windows</strong>
 <p></p>
