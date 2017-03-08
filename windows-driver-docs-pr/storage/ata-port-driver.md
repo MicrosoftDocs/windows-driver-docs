@@ -12,6 +12,9 @@ keywords: ["storage port drivers WDK , ATA Port driver", "ATA Port drivers WDK",
 ## <span id="ddk_ata_port_driver_kg"></span><span id="DDK_ATA_PORT_DRIVER_KG"></span>
 
 
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+
+
 In addition to the [SCSI Port Driver](scsi-port-driver.md) and the [Storport Driver](storport-driver.md), Windows Vista and later versions of the Windows operating system provide the ATA port driver (*Ataport.sys*), a storage port driver that is especially suitable for use with IDE controllers.
 
 The most significant difference between the ATA port driver and other system-supplied storage port drivers is the protocol that the ATA port driver uses to communicate with other drivers. All other system-supplied storage port drivers use SCSI request blocks (SRBs) to communicate both with higher-level drivers, such as storage class drivers, and with miniport drivers. The ATA port driver uses SRBs to communicate with higher-level drivers only. To communicate with its miniport drivers, ATA port uses a packet called an IDE request block (IRB), which is defined by the [**IDE\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559140) structure. IRBs are better designed than SRBs to the characteristics of ATA devices.
@@ -28,5 +31,3 @@ Together with the ATA port driver, the operating system provides a default ATA m
 
 
 --------------------
-
-
