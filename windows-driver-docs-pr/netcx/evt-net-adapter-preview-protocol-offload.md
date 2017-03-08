@@ -62,9 +62,7 @@ Register your implementation of this callback function by setting the appropriat
 
 In this callback, the driver typically iterates through the *ExistingPowerSettings* to determine whether to accept or reject *ProtocolOffloadToBeAdded*.
 
-The client driver can use the pointer to examine the [**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) structure, but should not retain it. NetAdapterCx can release the protocol offload structure without notification to the driver.
-
-In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
+For more info, see [Configuring Power Management Hardware Capabilities](configuring-power-management-hardware-capabilities.md).
 
 Requirements
 ------------

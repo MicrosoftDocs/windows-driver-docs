@@ -4,13 +4,17 @@ title: Configuring Power Management Hardware Capabilities
 
 # Configuring Power Management Hardware Capabilities
 
-first you can preview protocol offload and wake patterns as they come in.
+This topic describes how to preview and query power management capabilities in a NetAdapterCx client driver.
 
-## Power Management
+## Previewing Protocol Offload and Wake Patterns
 
-then, client driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.
+The client can register [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) and [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback functions to accept or reject incoming protocol offloads and wake patterns.
 
- To access this object, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md) from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and related callback functions.  For example:
+## Querying Protocol Offload and Wake Patterns
+
+In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
+
+To access the configuration from the NETPOWERSETTINGS object, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md) from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) or a related callback function.  For example:
 
 ```cpp
 NTSTATUS

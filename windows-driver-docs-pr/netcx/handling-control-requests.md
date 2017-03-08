@@ -4,7 +4,7 @@ title: Handling Control Requests
 
 # Handling Control Requests
 
-In the NetAdapterCx model, the client driver receives most control requests as OID (object identifier) requests.  The client driver typically sets up one or two WDF queues (called NETREQUESTQUEUEs here) to manage control requests, which the class extension provides to the client as NETREQUEST objects.
+In the NetAdapterCx model, the client driver receives most control requests as OID (object identifier) requests.  The client driver typically sets up one or two WDF queues (called NETREQUESTQUEUEs) to manage control requests, which the class extension provides to the client as NETREQUEST objects.
 
 This table shows the parent-child hierarchy for these objects:
 
@@ -15,9 +15,9 @@ This table shows the parent-child hierarchy for these objects:
 
 To see all the default parent child relationships for NetAdapterCx, see [Summary of Objects](summary-of-objects.md).
 
-NDIS Wdf client can create 2 NETREQUESTQUEUEs. sequential and another one is parallel.
+The client driver calls [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL method**](net-request-queue-config-init-default-sequential.md) or [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL method**](net-request-queue-config-init-default-parallel.md) to create a sequential queue or a parallel queue.
 
-NETREQUESTQUEUE modeled to resemble WDFQUEUEs (look at the def)
+For info on the two queue types, see [Dispatching Methods for I/O Requests](../wdf/dispatching-methods-for-i-o-requests.md).
 
 For each of the three main request types (query data, set data, and method), the client driver can provide a single default handler, or one or more OID-specific handlers.
 
@@ -57,9 +57,10 @@ For requests of type other than query data, set data, and method, the client dri
 
 For example, if the protocol driver issues an OID request with `NDIS_REQUEST_TYPE = NdisRequestGeneric1`, NetAdapterCx calls [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md).  NetAdapterCx fails the request if the client driver has not provided such a handler.
 
-Your OID handlers can be called as soon as EvtDevicePrepareHardware is finished up until EvtDeviceReleaseHardware
+NetAdapterCx can call the client driver's control request handlers as soon as [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) returns until the time it calls [*EVT_WDF_DEVICE_RELEASE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540890).
 
-To complete the request, call [**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md) from the OID handler.
+To complete a control request, call [**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md) from the OID handler.
 
-    NetRequestCompleteWithoutInformation(Request, STATUS_SUCCESS);
-
+```cpp
+NetRequestCompleteWithoutInformation(Request, STATUS_SUCCESS);
+```
