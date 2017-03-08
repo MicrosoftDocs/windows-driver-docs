@@ -99,7 +99,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <strong>Write a USB dual-role controller driver</strong>
 <p>USB Dual Role controllers are now supported in Windows 10. Windows includes in-box client drivers for ChipIdea and Synopsys controllers. For other controllers, Microsoft provides a set of programming interfaces that allow the dual-role class extension (UrsCx) and its client driver to communicate with each other to handle the role-switching capability of a dual-role controller.</p>
 <p>For more information about this feature, see:</p>
-<p>[USB Dual Role Driver Stack Architecture](usb_dual_role_driver_stack_architecture.md)</p>
+<p>[USB Dual Role Driver Stack Architecture](usb-dual-role-driver-stack-architecture.md)</p>
 <p>[USB dual-role controller driver programming reference](usb_role_switch__urs__reference)</p>
 <strong>Write a USB driver for emulated devices</strong>
 <p>Windows 10 introduces support for emulated devices. Now you can develop an emulated Universal Serial Bus (USB) host controller driver and a connected virtual USB device. Both components are combined into a single KMDF driver that communicates with the Microsoft-provided USB device emulation class extension (UdeCx).</p>
@@ -111,9 +111,9 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>[<strong>Windows.Devices.Usb</strong>](w_dvc_usb.windows_devices_usb)</p>
 <strong>Write a Windows desktop app</strong>
 <p>Describes how an application can call WinUSB Functions to communicate with a USB device.</p>
-<p>[Write a WinUSB application](how_to_write_a_windows_desktop_app_that_communicates_with_a_usb_device)</p>
+<p>[Write a WinUSB application](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md)</p>
 <p>[<strong>WinUSB Functions</strong>](usb_interfaces#winusb)</p>
-[Common programming scenarios](wdk_resources_for_usb_driver_development)
+[Common programming scenarios](wdk-resources-for-usb-driver-development.md)
 <p>List of common tasks that a driver or an app performs in order to communicate with a USB device. Get quick info about the programming interfaces you need for each task.</p>
 <p></p>
 <p><strong>USB samples</strong></p>
