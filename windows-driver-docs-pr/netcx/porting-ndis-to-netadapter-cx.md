@@ -138,7 +138,7 @@ For details on the callback sequence, see [Power-Up Sequence for an Network Adap
 
 Similarly, a WDF client driver does not receive [**OID_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff569768) to query or set power management hardware capabilities of the network adapter.
 
-Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.  For more info, see [Configuring Power Management Hardware Capabilities](configuring-adapter-attributes.md).
+Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.  For more info, see [Configuring Power Management Hardware Capabilities](configuring-power-management.md).
 
 The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic.  The main difference is that you can now query these flags during the power-down sequence.  See [Power-Down Sequence for an Network Adapter WDF Client Driver](power-down-sequence-for-ndis-wdf-client-driver.md).
 

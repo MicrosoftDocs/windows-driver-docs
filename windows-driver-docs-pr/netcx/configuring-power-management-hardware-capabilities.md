@@ -1,8 +1,8 @@
 ---
-title: Configuring Power Management Hardware Capabilities
+title: Configuring Power Management
 ---
 
-# Configuring Power Management Hardware Capabilities
+# Configuring Power Management
 
 This topic describes how to preview and query power management capabilities in a NetAdapterCx client driver.
 

@@ -4,7 +4,7 @@
 ## [Device Initialization](device-initialization.md)
 ## [Handling Control Requests](handling-control-requests.md)
 ## [Handling I/O Requests](handling-i-o-requests.md)
-## [Configuring Power Management Hardware Capabilities](configuring-power-management-hardware-capabilities.md)
+## [Configuring Power Management](configuring-power-management.md)
 ## [Summary of Objects](summary-of-objects.md)
 ## [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md)
 ## [Power-Down Sequence for an Network Adapter WDF Client Driver](power-down-sequence-for-ndis-wdf-client-driver.md)
