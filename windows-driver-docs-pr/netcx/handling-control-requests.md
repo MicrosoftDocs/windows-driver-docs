@@ -4,46 +4,62 @@ title: Handling Control Requests
 
 # Handling Control Requests
 
-NDIS 6.x Control Path
+In the NetAdapterCx model, the client driver receives most control requests as OID (object identifier) requests.  The client driver typically sets up one or two WDF queues (called NETREQUESTQUEUEs here) to manage control requests, which the class extension provides to the client as NETREQUEST objects.
 
-To complete: mark the OID something other than NDIS_STATUS_PENDING, or call *RequestComplete.
+This table shows the parent-child hierarchy for these objects:
 
+|Object|Parent|
+|---|---|
+|NETREQUESTQUEUE|NETADAPTER|
+|NETREQUEST|NETREQUESTQUEUE|
 
-OIDs are still the way to deliver most control messages
-Few exceptions: for example OID_PM_PARAMETERS, OID_PNP_SET_POWER (see porting guide)
-The two categories of OIDs are preserved (Serial and Direct)
+To see all the default parent child relationships for NetAdapterCx, see [Summary of Objects](summary-of-objects.md).
 
-NETREQUESTQUEUE (Parents to a NETADAPTER)
-NETREQUEST (Parents to a NETREQUESTQUEUE) represents a control request
-Client driver creates request queues during PnP add
-Request queues are tied to a specific adapter
+NDIS Wdf client can create 2 NETREQUESTQUEUEs. sequential and another one is parallel.
 
 NETREQUESTQUEUE modeled to resemble WDFQUEUEs (look at the def)
 
-Reminder: A NETREQUESTQUEUE can start to receive NETREQUESTs as soon as EvtDevicePrepareHardware is finished up until EvtDeviceReleaseHardware
+For each of the three main request types (query data, set data, and method), the client driver can provide a single default handler, or one or more OID-specific handlers.
 
-For each of the three main request types (query data, set data, and method), the client driver can provide a single default handler for that request type, or one or more individual handlers for OID requests of that type, or both.
+You can use both approaches in the same driver, providing custom handlers for some OIDs while using a default handler with a switch statement for the remainder.
 
-For example, for requests with `NDIS_REQUEST_TYPE=NdisRequestQueryInformation`, the handlers are:
+A client driver sets up OID handlers in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) routine.
 
-* [*EVT_NET_REQUEST_DEFAULT_QUERY_DATA*](evt-net-request-default-query-data.md)
-* [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md)
+To register default handlers for all query OIDs and all set OIDs, provide an [*EVT_NET_REQUEST_DEFAULT_QUERY_DATA*](evt-net-request-default-query-data.md) event callback function and an [*EVT_NET_REQUEST_DEFAULT_SET_DATA*](evt-net-request-default-set-data.md) event callback function:
 
-If a specialized OID handler is provided, NetAdapter calls that handler; otherwise, NetAdapterCx calls the default handler for the request type.
+```cpp
+NET_REQUEST_QUEUE_CONFIG config;
+NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL(&config, NetAdapter);
+config.EvtRequestDefaultQueryData = MyQueryHandler;
+config.EvtRequestDefaultSetData = MySetHandler;
+```
 
-To register it, use... from...
-<!--see sample code-->
+To add an OID-specific query data handler, call the [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md) method with a pointer to the client driver's implementation of an [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function:
 
-For requests of type other than the three main ones, the client driver can provide [**EVT_NET_REQUEST_DEFAULT callback function**](evt-net-request-default.md)
+```cpp
+NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
+    &config, OID_GEN_VENDOR_DESCRIPTION,
+    EvtQueryGenVendorDescription, sizeof(NIC_VENDOR_DESC));
+```
 
-For example, if protocol issues an OID request with NDIS_REQUEST_TYPE = NdisRequestGeneric1, CX would use EvtRequestDefault if the client driver registered one.
+Once you've set up the OID queue the way you like, call [**NetRequestQueueCreate**](netrequestqueuecreate.md) to create the queue:
 
-NETREQUESTQUEUE represents an OID Queue. NDIS Wdf client creates 2 NETREQUESTQUEUEs. One is for regular OIDs (sequential) and another one is for Direct OIDs (parallel).  
-With the Queue it associates various event callbacks for different OIDs.  
-* General Oid Handlers: 
-o EvtDefaultSetData 
-o EvtDefaultQueryData 
-o EvtDefaultMethod 
-o EvtDefault 
-* Custom Handlers  
-o NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER
+```cpp
+status = NetRequestQueueCreate(&config, WDF_NO_OBJECT_ATTRIBUTES, NULL);
+
+if(!NT_SUCCESS(status))
+{
+    return status;
+}
+```
+
+For requests of type other than query data, set data, and method, the client driver can provide an [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md) event callback function.
+
+For example, if the protocol driver issues an OID request with `NDIS_REQUEST_TYPE = NdisRequestGeneric1`, NetAdapterCx calls [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md).  NetAdapterCx fails the request if the client driver has not provided such a handler.
+
+Your OID handlers can be called as soon as EvtDevicePrepareHardware is finished up until EvtDeviceReleaseHardware
+
+To complete the request, call [**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md) from the OID handler.
+
+    NetRequestCompleteWithoutInformation(Request, STATUS_SUCCESS);
+

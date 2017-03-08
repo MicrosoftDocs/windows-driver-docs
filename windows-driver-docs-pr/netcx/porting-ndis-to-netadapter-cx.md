@@ -64,35 +64,9 @@ There are two high level approaches you might take when porting this.  The first
 
 The other option is to break apart your OID handler's switch statement and provide a separate handler for each individual OID.  You might choose this option if your device requires OID-specific functionality.
 
-You can use both approaches in the same driver, providing custom handlers for some OIDs while using a default handler with a switch statement for the remainder.
+If you used the [**Direct OID Request Interface in NDIS 6.1**](../network/direct-oid-request-interface-in-ndis-6-1.md), replace it with a parallel WDF queue.  Similarly, the regular (serial) request interface in NDIS should become a sequential WDF queue.
 
-To register default handlers for all query OIDs and all set OIDs, provide an [**EVT_NET_REQUEST_DEFAULT_QUERY_DATA callback function**](evt-net-request-default-query-data.md) and an [**EVT_NET_REQUEST_DEFAULT_SET_DATA callback function**](evt-net-request-default-set-data.md):
-
-```cpp
-NET_REQUEST_QUEUE_CONFIG config;
-NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL(&config, NetAdapter);
-config.EvtRequestDefaultQueryData = MyQueryHandler;
-config.EvtRequestDefaultSetData = MySetHandler;
-```
-
-To add an OID-specific query data handler, for example, call the [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md) method with a pointer to the client driver's implementation of an [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function:
-
-```cpp
-NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
-    &config, OID_GEN_VENDOR_DESCRIPTION,
-    EvtQueryGenVendorDescription, sizeof(NIC_VENDOR_DESC));
-```
-
-Once you've set up the OID queue the way you like, call [**NetRequestQueueCreate**](netrequestqueuecreate.md) to create the queue:
-
-```cpp
-status = NetRequestQueueCreate(&config, WDF_NO_OBJECT_ATTRIBUTES, NULL);
-
-if(!NT_SUCCESS(status))
-{
-    return status;
-}
-```
+For info on registering handlers for OIDs, see [Handling Control Requests](handling-control-requests.md).
 
 ## Accessing configuration parameters in the registry
 
@@ -162,29 +136,13 @@ To summarize, in WDF, you put your "go to D0" code in one place, instead of two.
 
 For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md).
 
-Similarly, a WDF client driver never receives [**OID_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff569768).
+Similarly, a WDF client driver does not receive [**OID_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff569768) to query or set power management hardware capabilities of the network adapter.
 
-Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.  To access this object, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md) from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and related callback functions.  For example:
-
-```cpp
-NTSTATUS
-EvtDeviceArmWakeFromS0(WDFDEVICE Device)
-{
-    NETPOWERSETTINGS powerSettings = NetAdapterGetPowerSettings(Adapter->NetAdapter);
-
-    ULONG EnabledWakePatterns = NetPowerSettingsGetEnabledWakePatterns(powerSettings);
-    ULONG EnabledProtocolOffloads = NetPowerSettingsGetEnabledProtocolOffloads(powerSettings);
-    ULONG WakeUpFlags = NetPowerSettingsGetEnabledWakeUpFlags(powerSettings);
-
-    // ...
-}
-```
+Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.  For more info, see [Configuring Power Management Hardware Capabilities](configuring-adapter-attributes.md).
 
 The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic.  The main difference is that you can now query these flags during the power-down sequence.  See [Power-Down Sequence for an Network Adapter WDF Client Driver](power-down-sequence-for-ndis-wdf-client-driver.md).
 
 Once you've moved this code around, you can delete your OID handlers for [*OID_PNP_SET_POWER*](https://msdn.microsoft.com/library/windows/hardware/ff569780) and [*OID_PM_PARAMETERS*](https://msdn.microsoft.com/library/windows/hardware/ff569768).
-
-Because the client is the [power policy owner](../wdf/power-policy-ownership.md) for the NIC's device stack, it can use WDF's built-in power management functionality.  For example, you might want to add your own idle logic. For info, see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
 
 Because the NetAdapter framework keeps your device at D0 while the host uses the network interface, the client typically does not implement power logic; the default NetAdapter power behavior is sufficient.
 
