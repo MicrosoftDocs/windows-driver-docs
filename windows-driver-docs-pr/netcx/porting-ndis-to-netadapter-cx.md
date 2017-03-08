@@ -8,9 +8,11 @@ For general information about WDF, please review the [WDF Driver Development Gui
 
 ## Compilation settings
 
-1. First, ensure that your project links against the latest version of KMDF.  To do so in Visual Studio, navigate to **Configuration Properties->Driver Settings->Driver Model** and verify that **Type of driver** is set to KMDF, and that **KMDF Version Major** and **KMDF Version Minor** are both empty.
-2. Also link against NetAdapterCxStub.lib (located in `Windows Kits\10\Lib\<latest_windows_version>\km\<architecture>\netadaptercx\1.0`).
-    * If your driver calls NDIS APIs, link against `ndis.lib`.
+Open your existing driver project in Visual Studio and use the following steps to convert it to a KMDF project.
+
+1. First, navigate to **Configuration Properties->Driver Settings->Driver Model** and verify that **Type of driver** is set to KMDF, and that **KMDF Version Major** and **KMDF Version Minor** are both empty.
+2. In project properties, open **Linker->Input->Additional Dependencies** and add NetAdapterCxStub.lib (located in `Windows Kits\10\Lib\<latest_windows_version>\km\<architecture>\netadaptercx\1.0`).
+    * If your existing driver calls NDIS APIs, link against `ndis.lib`.
 3. Remove NDIS preprocessor macros, like NDIS650_MINIPORT=1.
 4. Add the following headers to every source file (or to your common/precompiled header):
 ```cpp
@@ -54,7 +56,7 @@ For info on the callbacks you'll need to provide, see [Device Initialization](de
   
 [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) is where the client calls the methods equivalent to [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672).  However, instead of calling one routine with a generic [**NDIS_MINIPORT_ADAPTER_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565920) structure, the client driver calls different functions to set different types of capabilities.  For more info, see the Remarks section of [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
 
-### Creating queues to manage control requests
+## Creating queues to manage control requests
 
 Next, still in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), set up the object identifier (OID) path.  The OID path is modeled like a WDF queue.  But you'll be getting OIDs instead of WDFREQUESTs.
 
@@ -62,7 +64,7 @@ There are two high level approaches you might take when porting this.  The first
 
 The other option is to break apart your OID handler's switch statement and provide a separate handler for each individual OID.  You might choose this option if your device requires OID-specific functionality.
 
-You might even use both approaches in the same driver, providing custom handlers for some OIDs while using a default handler with a switch statement for the remainder.
+You can use both approaches in the same driver, providing custom handlers for some OIDs while using a default handler with a switch statement for the remainder.
 
 To register default handlers for all query OIDs and all set OIDs, provide an [**EVT_NET_REQUEST_DEFAULT_QUERY_DATA callback function**](evt-net-request-default-query-data.md) and an [**EVT_NET_REQUEST_DEFAULT_SET_DATA callback function**](evt-net-request-default-set-data.md):
 
@@ -73,7 +75,7 @@ config.EvtRequestDefaultQueryData = MyQueryHandler;
 config.EvtRequestDefaultSetData = MySetHandler;
 ```
 
-To add an OID-specific handler, call the [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md) method with a pointer to the client driver's implementation of an [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function:
+To add an OID-specific query data handler, for example, call the [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md) method with a pointer to the client driver's implementation of an [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function:
 
 ```cpp
 NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
@@ -81,7 +83,7 @@ NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
     EvtQueryGenVendorDescription, sizeof(NIC_VENDOR_DESC));
 ```
 
-Once you've set up the OID queue the way you like, call [**NetRequestQueueCreate method**](netrequestqueuecreate.md) to create the queue:
+Once you've set up the OID queue the way you like, call [**NetRequestQueueCreate**](netrequestqueuecreate.md) to create the queue:
 
 ```cpp
 status = NetRequestQueueCreate(&config, WDF_NO_OBJECT_ATTRIBUTES, NULL);
@@ -92,7 +94,7 @@ if(!NT_SUCCESS(status))
 }
 ```
 
-### Accessing configuration parameters in the registry
+## Accessing configuration parameters in the registry
 
 Next, replace calls to [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/ff563717) and related functions with the `NetConfiguration*` methods.  The `NetConfiguration*` methods are similar to the `Ndis*Configuration*` functions, and you won't need to restructure your code.
 

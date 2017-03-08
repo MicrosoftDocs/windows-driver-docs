@@ -34,12 +34,6 @@ NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER(
 
 Parameters
 ----------
- 
-    Oid - The NDIS_OID Identifier for which this handler is meant for.
- 
-    EvtRequestMethod - The Custom callback for the request
- 
- 
 
 *NetRequestQueueConfig* [in]  
 A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.

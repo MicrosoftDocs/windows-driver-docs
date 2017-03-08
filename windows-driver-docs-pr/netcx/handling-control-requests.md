@@ -6,8 +6,6 @@ title: Handling Control Requests
 
 NDIS 6.x Control Path
 
-Three main types of control requests: query, set, method
-
 To complete: mark the OID something other than NDIS_STATUS_PENDING, or call *RequestComplete.
 
 
@@ -24,15 +22,21 @@ NETREQUESTQUEUE modeled to resemble WDFQUEUEs (look at the def)
 
 Reminder: A NETREQUESTQUEUE can start to receive NETREQUESTs as soon as EvtDevicePrepareHardware is finished up until EvtDeviceReleaseHardware
 
+For each of the three main request types (query data, set data, and method), the client driver can provide a single default handler for that request type, or one or more individual handlers for OID requests of that type, or both.
 
-Let’s use the same example as before (OID_GEN_INTERRUPT_MODERATION) and consider the following three cases:
-1)	If the miniport registered a handler, then the registered handler will be used. In the code example of netvminikmdf, the default query handler will not be called if protocol issues OID_GEN_INTERRUPT_MODERATION to the miniport because miniport has a specialized handler for OID_GEN_INTERRUPT_MODERATION. In fact, netvminikmdf doesn’t even register a default query handler.
-2)	If the miniport doesn’t register a handler, the default handler for that type of request will be used. In the code example of netvminikmdf, the miniport doesn’t register a special set handler for OID_GEN_INTERRUPT_MODERATION, thus the default set handler is used since netvminikmdf registered a default set handler.
-3)	If neither specialized handler nor default handler is registered, the OID request would fail.
+For example, for requests with `NDIS_REQUEST_TYPE=NdisRequestQueryInformation`, the handlers are:
 
-When the miniport configures the NET_REQUEST_QUEUE, I don’t think it has control over the sizeof* variables directly. So client driver doesn’t specify anything for that variable, the client driver would simply register 5 “set” handlers.
+* [*EVT_NET_REQUEST_DEFAULT_QUERY_DATA*](evt-net-request-default-query-data.md)
+* [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md)
 
-Since CX interacts with NDIS in the traditional way, EvtRequestDefault is used when the NDIS_REQUEST_TYPE doesn’t fall into the three known categories. For example, if protocol issues an OID request with NDIS_REQUEST_TYPE = NdisRequestGeneric1, CX would use EvtRequestDefault if the client driver registered one.
+If a specialized OID handler is provided, NetAdapter calls that handler; otherwise, NetAdapterCx calls the default handler for the request type.
+
+To register it, use... from...
+<!--see sample code-->
+
+For requests of type other than the three main ones, the client driver can provide [**EVT_NET_REQUEST_DEFAULT callback function**](evt-net-request-default.md)
+
+For example, if protocol issues an OID request with NDIS_REQUEST_TYPE = NdisRequestGeneric1, CX would use EvtRequestDefault if the client driver registered one.
 
 NETREQUESTQUEUE represents an OID Queue. NDIS Wdf client creates 2 NETREQUESTQUEUEs. One is for regular OIDs (sequential) and another one is for Direct OIDs (parallel).  
 With the Queue it associates various event callbacks for different OIDs.  

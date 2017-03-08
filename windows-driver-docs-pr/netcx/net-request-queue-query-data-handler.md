@@ -35,17 +35,22 @@ Members
 -------
 
 **Next**  
+A pointer to the next custom handler.
 
 **Memory**  
+A handle to a WDFMEMORY object.
 
 **Oid**  
+Specifies the object identifier of the requested operation. The value is an OID_XXX code. 
 
 **EvtRequestQueryData**  
 Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function.
 
 **MinimumInputLength**  
+Minimum input length needed by the client for this request.
 
 **MinimumOutputLength**  
+Minimum output length needed by the client for this request.
 
 Remarks
 -------

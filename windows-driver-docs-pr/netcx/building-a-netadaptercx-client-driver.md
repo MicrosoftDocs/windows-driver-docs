@@ -4,7 +4,7 @@ title: Building a NetAdapterCx Client Driver
 
 # Building a NetAdapterCx Client Driver
 
-Use the following steps to build a NetAdapter client drive in Visual Studio:
+Use the following steps to create a new NetAdapter client driver in Visual Studio:
 
 1. Open Microsoft Visual Studio. On the File menu, choose **New > Project**.
 2. In the **New Project** dialog box, select **WDF**.
