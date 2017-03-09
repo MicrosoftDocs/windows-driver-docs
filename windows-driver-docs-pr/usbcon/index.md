@@ -33,7 +33,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p></p>
 [Windows 10: What's new for USB](windows-10--what-s-new-for-usb.md)
 <p>Overview of new features and improvements in USB in Windows 10.</p>
-[USB FAQ](usb_faq__introductory_level)
+[USB FAQ](usb-faq--introductory-level.md)
 <p>Frequently asked questions from driver developers about the USB stack and features that are supported in USB.</p>
 [Microsoft OS Descriptors for USB Devices](microsoft_defined_usb_descriptors.md)
 <p>Windows defines MS OS descriptors that allows better enumeration when connected to system running Windows operating system</p>
@@ -41,13 +41,13 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p></p>
 [USB device-side drivers in Windows](usb_device-side_drivers_in_windows.md)
 <p>A set of drivers for handling common function logic for USB devices.</p>
-[USB host-side drivers in Windows](usb_3_0_driver_stack_architecture.md)
+[USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)
 <p>Microsoft provides a core stack of drivers that interoperate with devices that are connected to EHCI and xHCI controllers.</p>
 [USB-IF device class drivers](supported_usb_classes.md)
 <p>Windows provides in-box device class drivers for many USB-IF approved device classes, audio, mass storage, and so on.</p>
 [USB generic function driver–WinUSB](winusb.md)
 <p>Windows provides Winusb.sys that can be loaded as a function driver for a custom device and a function of a composite device.</p>
-[USB generic parent driver for composite devices–Usbccgp](usb_common_class_generic_parent_driver.md)
+[USB generic parent driver for composite devices–Usbccgp](usb-common-class-generic-parent-driver.md)
 <p>Parent driver for USB devices with multiple functions. Usbccgp creates physical device objects (PDOs) for each of those functions. Those individual PDOs are managed by their respective USB function drivers, which could be the Winusb.sys driver or a USB device class driver.</p>
 <strong>WDF extension for developing USB drivers</strong>
 <ul>
@@ -82,7 +82,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>If you are new to USB driver development. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from OSR Online Store.</p></td>
 <td><strong>Write a USB client driver (KMDF, UMDF)</strong>
 <p>Introduces you to USB driver development. Provides information about choosing the most appropriate model for providing a USB driver for your device. This section also includes tutorials about writing your first user-mode and kernel-mode USB drivers by using the USB templates included with Microsoft Visual Studio.</p>
-<p>[Getting started with USB client driver development](getting_started_with_usb_client_driver_development.md)</p>
+<p>[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)</p>
 <p>[USB client driver reference](usb_reference)</p>
 <strong>Write a USB host controller driver</strong>
 <p>If you are developing an xHCI host controller that is not compliant with the specification or developing a custom non-xHCI hardware (such as a virtual host controller), you can write a host controller driver that communicates with UCX. For example, consider a wireless dock that supports USB devices. The PC communicates with USB devices through the wireless dock by using USB over TCP as a transport.</p>
