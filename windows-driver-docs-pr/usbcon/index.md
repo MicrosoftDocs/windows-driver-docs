@@ -35,15 +35,15 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>Overview of new features and improvements in USB in Windows 10.</p>
 [USB FAQ](usb-faq--introductory-level.md)
 <p>Frequently asked questions from driver developers about the USB stack and features that are supported in USB.</p>
-[Microsoft OS Descriptors for USB Devices](microsoft_defined_usb_descriptors.md)
+[Microsoft OS Descriptors for USB Devices](microsoft-defined-usb-descriptors.md)
 <p>Windows defines MS OS descriptors that allows better enumeration when connected to system running Windows operating system</p>
 <strong>Microsoft-provided USB drivers</strong>
 <p></p>
-[USB device-side drivers in Windows](usb_device-side_drivers_in_windows.md)
+[USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)
 <p>A set of drivers for handling common function logic for USB devices.</p>
 [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)
 <p>Microsoft provides a core stack of drivers that interoperate with devices that are connected to EHCI and xHCI controllers.</p>
-[USB-IF device class drivers](supported_usb_classes.md)
+[USB-IF device class drivers](supported-usb-classes.md)
 <p>Windows provides in-box device class drivers for many USB-IF approved device classes, audio, mass storage, and so on.</p>
 [USB generic function driver–WinUSB](winusb.md)
 <p>Windows provides Winusb.sys that can be loaded as a function driver for a custom device and a function of a composite device.</p>
@@ -57,7 +57,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 </ul>
 <strong>Testing USB devices with Windows</strong>
 <p></p>
-[Testing USB hardware, drivers, and apps in Windows](usb_driver_testing_guide.md)
+[Testing USB hardware, drivers, and apps in Windows](usb-driver-testing-guide.md)
 <p>Get information about the tools that you can use to test your USB hardware or software, capture traces of operations and other system events, and observe how the USB driver stack responds to a request sent by a client driver or an application.</p>
 <p>Read an overview of tests in the Hardware Certification Kit that enable hardware vendors and device manufacturers to prepare their USB devices and host controllers for Windows Hardware Certification submission.</p>
 <p><strong>Other Resources for USB</strong></p>
@@ -76,7 +76,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 [Building great USB 3.0 devices](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T)
 [USB Debugging Innovations in Windows 8 (Part I, II, &amp; III)](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P)
 <p><strong>USB hardware for learning</strong></p>
-[MUTT devices](microsoft_usb_test_tool__mutt__devices.md)
+[MUTT devices](microsoft-usb-test-tool--mutt--devices.md)
 <p>MUTT and SuperMUTT devices and the accompanying software package are integrated into the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.</p>
 [OSR USB FX2 Learning Kit](http://www.osronline.com/index.cfm)
 <p>If you are new to USB driver development. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from OSR Online Store.</p></td>
@@ -86,15 +86,15 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>[USB client driver reference](usb_reference)</p>
 <strong>Write a USB host controller driver</strong>
 <p>If you are developing an xHCI host controller that is not compliant with the specification or developing a custom non-xHCI hardware (such as a virtual host controller), you can write a host controller driver that communicates with UCX. For example, consider a wireless dock that supports USB devices. The PC communicates with USB devices through the wireless dock by using USB over TCP as a transport.</p>
-<p>[Developing Windows drivers for USB host controllers](developing_windows_drivers_for_usb_host_controllers.md)</p>
+<p>[Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)</p>
 <p>[USB host controller extension (UCX) reference](usb_class_extension__ucx_)</p>
 <strong>Write a function controller driver for a USB device</strong>
 <p>You can develop a controller driver that handles all USB data transfers and commands sent by the host to the device. This driver communicates with the Microsoft-provided USB function controller extension (UFX).</p>
-<p>[Developing Windows drivers for USB function controllers](developing_windows_drivers_for_usb_function_controllers.md)</p>
+<p>[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)</p>
 <p>[USB function class extension (UFX) reference](usb_function_class_extension__ufx_)</p>
 <strong>Write a USB Type-C connector driver</strong>
 <p>Windows 10 introduces support for the new USB connector: USB Type-C. You can write a driver for the connector that communicates with the Microsoft-provided class extension module: UcmCx to handle scenarios related to Type-C connectors such as, which ports support Type-C, which ports support power delivery.</p>
-<p>[Developing Windows drivers for USB Type-C connectors](developing_windows_drivers_for_usb_type-c_connectors.md)</p>
+<p>[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)</p>
 <p>[USB connector manager class extension (UcmCx) reference](usb_connection_manager_class_extension__ucmcx_)</p>
 <strong>Write a USB dual-role controller driver</strong>
 <p>USB Dual Role controllers are now supported in Windows 10. Windows includes in-box client drivers for ChipIdea and Synopsys controllers. For other controllers, Microsoft provides a set of programming interfaces that allow the dual-role class extension (UrsCx) and its client driver to communicate with each other to handle the role-switching capability of a dual-role controller.</p>
@@ -103,11 +103,11 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>[USB dual-role controller driver programming reference](usb_role_switch__urs__reference)</p>
 <strong>Write a USB driver for emulated devices</strong>
 <p>Windows 10 introduces support for emulated devices. Now you can develop an emulated Universal Serial Bus (USB) host controller driver and a connected virtual USB device. Both components are combined into a single KMDF driver that communicates with the Microsoft-provided USB device emulation class extension (UdeCx).</p>
-<p>[Developing Windows drivers for emulated USB devices (UDE)](developing_windows_drivers_for_emulated_usb_host_controllers_and_devices)</p>
+<p>[Developing Windows drivers for emulated USB devices (UDE)](developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md)</p>
 <p>[Emulated USB host controller driver programming reference](usb_emulated_device_driver_programming_reference)</p>
 <strong>Write a Windows Store app</strong>
 <p>Provides step-by-step instructions about implementing USB features in a Windows Store app. To write such an app for a USB device you need Visual Studio and Microsoft Windows Software Development Kit (SDK) .</p>
-<p>[Talk to USB devices, start to finish](talking_to_usb_devices_start_to_finish)</p>
+<p>[Talk to USB devices, start to finish](talking-to-usb-devices-start-to-finish.md)</p>
 <p>[<strong>Windows.Devices.Usb</strong>](w_dvc_usb.windows_devices_usb)</p>
 <strong>Write a Windows desktop app</strong>
 <p>Describes how an application can call WinUSB Functions to communicate with a USB device.</p>
