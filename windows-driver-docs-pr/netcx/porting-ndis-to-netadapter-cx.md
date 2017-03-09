@@ -68,28 +68,13 @@ If you used the [**Direct OID Request Interface in NDIS 6.1**](../network/direct
 
 For info on registering handlers for OIDs, see [Handling Control Requests](handling-control-requests.md).
 
-## Accessing configuration parameters in the registry
+## Reading configuration from the registry
 
 Next, replace calls to [**NdisOpenConfigurationEx**](https://msdn.microsoft.com/library/windows/hardware/ff563717) and related functions with the `NetConfiguration*` methods.  The `NetConfiguration*` methods are similar to the `Ndis*Configuration*` functions, and you won't need to restructure your code.
 
-Start by calling [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) to get a handle to a configuration object.  You can then query it:
+For more info, see [Accessing Configuration Information](accessing-configuration-information.md).
 
-```cpp
-NETCONFIGURATION config = NULL;
-
-status = NetAdapterOpenConfiguration(NetAdapter, WDF_NO_OBJECT_ATTRIBUTES, &config);
-if (!NT_SUCCESS(status)) {
-    return status;
-}
-
-status = NetConfigurationQueryUlong(config, 0, &SomeValue, &myvalue);
-
-NetConfigurationClose(configuration);
-```
-
-There are `NetConfiguration` functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and MAC addresses.
-
-### Receiving I/O control codes (IOTCLs) from user mode
+## Receiving I/O control codes (IOTCLs) from user mode
 
 Read this section if your NDIS driver calls [**NdisRegisterDeviceEx**](https://msdn.microsoft.com/library/windows/hardware/ff564518), a routine used to create a control device object (CDO) to receive IOCTLs from user mode.
 
@@ -114,7 +99,7 @@ For more info, see [Using Device Interfaces](../wdf/using-device-interfaces.md).
 
 When a user-mode application sends requests to a handle opened on a device interface with a reference string, your client driver receives I/O requests.  You can use [WDF queue objects](../wdf/framework-queue-objects.md) to handle the incoming I/O requests.
 
-### Finishing device initialization
+## Finishing device initialization
 
 At this point in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), you can do anything else you'd like to initialize your device, like allocating interrupts.
 
@@ -138,7 +123,7 @@ For details on the callback sequence, see [Power-Up Sequence for an Network Adap
 
 Similarly, a WDF client driver does not receive [**OID_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff569768) to query or set power management hardware capabilities of the network adapter.
 
-Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.  For more info, see [Configuring Power Management Hardware Capabilities](configuring-power-management.md).
+Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.  For more info, see [Configuring Power Management](configuring-power-management.md).
 
 The actual flags you get back have the same semantics as they do for an NDIS 6 miniport, so you don't need to make deep changes to the logic.  The main difference is that you can now query these flags during the power-down sequence.  See [Power-Down Sequence for an Network Adapter WDF Client Driver](power-down-sequence-for-ndis-wdf-client-driver.md).
 
@@ -148,80 +133,14 @@ Because the NetAdapter framework keeps your device at D0 while the host uses the
 
 ## Data path
 
-The data path programming model has changed significantly. This section explains the minimum you'll need to install and remove your device.
+The data path programming model has changed significantly. Here are some key differences:
 
-The NetAdapter model introduces the following new structures for use with the data path:
-
-|New data path structures|Description|
-|-|-|
-|[**NET_PACKET**](net-packet.md)|Similar to a NET_BUFFER|
-|[**NET_PACKET_FRAGMENT**](net-packet-fragment.md)|Similar to a memory descriptor list (MDL). Each NET_PACKET has one or more of these.|
-|[**NET_RING_BUFFER**](net-ring-buffer.md)|Ring buffer shared between the host and a client, a container for one or more NET_PACKET structures|
-
-In the NetAdapter model, network traffic is no longer per adapter, as in NDIS, but rather per queue.  Each queue is associated with a ring buffer, which contains a group of packets and pointers to indicate where in the ring to read and write next.
-
-When your client driver calls [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md), it provides two queue creation callbacks: [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) and [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md).  The client creates transmit and receive queues in these callbacks.
-
-The client creates a transmit queue by calling [**NetTxQueueCreate**](nettxqueuecreate.md) as follows:
-
-```cpp
-NTSTATUS
-EvtAdapterCreateTxQueue(NETADAPTER Adapter, PNETTXQUEUE_INIT NetTxQueueInit)
-{
-    NETTXQUEUE txQueue;
-
-    NET_TXQUEUE_CONFIG txQueueConfig;
-    NET_TXQUEUE_CONFIG_INIT(&txQueueConfig, 
-                            EvtTxQueueAdvance,
-                            EvtTxQueueSetNotificationEnabled,
-                            EvtTxQueueCancel);
-    NTSTATUS status = NetTxQueueCreate(
-        NetTxQueueInit,
-        WDF_NO_OBJECT_ATTRIBUTES,
-        &txQueueConfig,
-        &txQueue);
-
-    return status;
-}
-```
-
-To create a receive queue from [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md), use the same pattern to call [**NetRxQueueCreate**](netrxqueuecreate.md).
-
-Because the NETRXQUEUE and NETTXQUEUE objects are parented to the NETADAPTER, WDF automatically deletes the queues when the adapter is deleted.  Also, the client does not need to handle start and pause semantics (unlike in NDIS 6.x where the miniport does need to handle them).
-
-When creating transmit and receive queues, the client provides pointers to the following callbacks:
-
-* [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md)
-* [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md)
-* [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md)
-* [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md)
-* [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md)
-* [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md)
-
-### EVT_TXQUEUE_ADVANCE
-
-The [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.
-
-
-### EVT_RXQUEUE_ADVANCE
-
-In the new programming model there are no NET_BUFFER_LIST or NET_BUFFER pools.
-
-### EVT_RXQUEUE_CANCEL
-
-Consider a simple example in which we have not provided buffers to any hardware.  In this case, it's safe to immediately return all the buffers to the host in the cancellation handler.
-
-The fastest way to do that is to adjust the [*NET_RING_BUFFER*](net-ring-buffer.md) pointers like this:
-
-```cpp
-VOID
-EvtRxQueueCancel(NETRXQUEUE RxQueue)
-{
-    NET_RING_BUFFER *ringBuffer = NetRxQueueGetRingBuffer(RxQueue);
-
-    ringBuffer->BeginIndex = ringBuffer->NextIndex = ringBuffer->EndIndex;
-}
-```
+* In the NetAdapter model, network traffic is no longer per adapter, as in NDIS, but rather per WDF queue.  See [Creating I/O Queues](../wdf/creating-i-o-queues.md).
+* Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces new data packet structures.  For details on the replacement structures and how to use them, see [Handling I/O Requests](handling-i-o-requests.md).
+* In NDIS 6.x, the miniport needs to handle start and pause semantics.  In the NetAdapterCx model, this is no longer the case.
+* The [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.
+* A [**NET_PACKET**](net-packet.md) is similar to a NET_BUFFER.
+* A [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](net-packet.md) has one or more of these.
 
 ## Device removal
 
@@ -259,9 +178,10 @@ NdisGetRssProcessorInformation(NetAdapterWdmGetNdisHandle(NetAdapter), . . .);
 
 ## Debugging
 
-You can use [Windows Driver Framework Extensions (Wdfkd.dll)](https://msdn.microsoft.com/library/windows/hardware/ff551876) commands to debug your client driver.  In addition, you can provide a NETADAPTER handle to !ndiskd.netadapter to see networking-specific properties of your driver.  This extension shows similar results to what [**!ndiskd.miniport**](https://msdn.microsoft.com/library/windows/hardware/ff564142) shows for an NDIS 6 driver.
+See [Debugging NetAdapterCx Client Drivers](debugging-netadaptercx-client-drivers.md).
+
+The !ndiskd.netadapter debugger extension shows similar results to what [**!ndiskd.miniport**](https://msdn.microsoft.com/library/windows/hardware/ff564142) shows for an NDIS 6 driver.
 
 ## Conclusion
 
 Using the steps in this topic, you should have a working driver that starts and stops your device. To receive and transmit data, you need to understand how the ring buffer works, which is out of scope for this porting guide.
-

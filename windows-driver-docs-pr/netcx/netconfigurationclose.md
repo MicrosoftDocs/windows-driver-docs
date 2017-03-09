@@ -37,6 +37,11 @@ Return value
 
 This method does not return a value.
 
+Remarks
+-----
+
+**NetConfigurationClose** is an alias of **WdfObjectDelete**.  Because the configuration object, like all NetAdapterCx objects, is a WDF object, you can use **WdfObjectDelete** interchangeably.
+
 Requirements
 ------------
 

@@ -44,6 +44,23 @@ Return value
 
 This callback function does not return a value.
 
+Example
+-----
+
+Consider a simple example in which we have not provided buffers to any hardware.  In this case, it's safe to immediately return all the buffers to the host in the cancellation handler.
+
+The fastest way to do that is to adjust the [*NET_RING_BUFFER*](net-ring-buffer.md) pointers like this:
+
+```cpp
+VOID
+EvtRxQueueCancel(NETRXQUEUE RxQueue)
+{
+    NET_RING_BUFFER *ringBuffer = NetRxQueueGetRingBuffer(RxQueue);
+
+    ringBuffer->BeginIndex = ringBuffer->NextIndex = ringBuffer->EndIndex;
+}
+```
+
 Remarks
 -------
 

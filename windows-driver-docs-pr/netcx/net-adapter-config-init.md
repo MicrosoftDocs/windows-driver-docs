@@ -49,6 +49,11 @@ Return value
 
 This method does not return a value.
 
+Remarks
+-----
+
+The client typically calls this method from its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) event callback function.
+
 Requirements
 ------------
 
