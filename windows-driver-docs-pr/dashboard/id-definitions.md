@@ -17,18 +17,6 @@ The Windows Hardware Dev Center Dashboard lists each of these IDs on the driver 
 ![screenshot that shows the relationship of the three ID types](images/id_driver_details.png)
 
 ## ID definitions
-| ID Name | Description |
-| --- | --- |
-|Shared product ID | This identifier is shared across all accounts who have access to a driver. The Shared product ID allows you to easily communicate about specific submissions and track submission updates across multiple organizations. In most cases, this is the ID you will want to track and share with others. |
-| Private product ID | <p> The private product ID is the top level identifier that is generated with each new product creation. This ID is most useful for personal reference of specific products, and predicting their URLs.
-> [!NOTE]
-> when you share a driver with someone else, they will be assigned a new private product ID. If you want to communicate about a product, use the Shared Product ID.
- </p>
-
-
- Submission ID |
-
-
 
 <table>
 <thead>
@@ -44,12 +32,10 @@ The Windows Hardware Dev Center Dashboard lists each of these IDs on the driver 
 </tr>
 <tr class="even">
 <td><p>Private Product ID</p></td>
-<td><p>The private product ID is the top level identifier that is generated with each new product creation. This ID is most useful for personal reference of specific products, and predicting their URLs.
-<br><br>
-<b>NOTE: </b>
-when you share a driver with someone else, they will be assigned a new private product ID. If you want to communicate about a product, use the Shared Product ID.
+<td><p>The private product ID is the top level identifier that is generated with each new product creation. This ID is most useful for personal reference of specific products, and predicting their URLs.</p>
 
-</p>
+> [!NOTE]
+> when you share a driver with someone else, they will be assigned a new private product ID. If you want to communicate about a product, use the Shared Product ID.
 
 </td>
 </tr>
