@@ -7,7 +7,7 @@
     topicHref: /windows-hardware/
     items:
     - name: Windows Drivers
-      tocHref: /windows-hardware/
+      tocHref: /windows-hardware/drivers
       topicHref: /windows-hardware/drivers/index/
       items:
       - name: Bring up guide
