@@ -133,4 +133,4 @@
             topicHref: /windows-hardware/drivers/samples/index
           - name: Windows portable devices
             tocHref: /windows-hardware/drivers/portable/
-            topicHref: "https://docs.microsoft.com/en-us/windows/#pivot=hardware-dev"
+            topicHref: /windows-hardware/drivers/portable/index

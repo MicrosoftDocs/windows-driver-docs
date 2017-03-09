@@ -1,4 +1,4 @@
-# [Windows Drivers](index.md)
+# [Getting Started with the Windows Driver Kit](index.md)
 # [What's new in driver development](what-s-new-in-driver-development.md)
 # [Bring up guide](bringup/index.md)
 # [Developing, Testing, and Deploying Drivers](develop/index.md)
