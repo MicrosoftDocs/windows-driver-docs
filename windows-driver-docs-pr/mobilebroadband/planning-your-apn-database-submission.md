@@ -374,17 +374,15 @@ When submitting an APN database update, please note the following:
 
 -   The **Country/Region** and the **Operator** columns in the spreadsheet are used to determine whether this is an update to an existing APN or a request for a new APN. If the **Country/Region** and the **Operator** fields match content that already exists in the APN database, the entries will be deleted and replaced with the entries that you list in your spreadsheet.
 
-    **Note**  
-    Because the previous entries will be deleted, it is important to list all APNs for the **Operator** and **Country/Region** combination, including the ones that are not changing.
-
-     
+    >[!Note]  
+    >Because the previous entries will be deleted, it is important to list all APNs for the **Operator** and **Country/Region** combination, including the ones that are not changing.
 
     For example, when the following values are entered in a row in the spreadsheet:
 
-    ``` syntax
-    Operator: Contoso
-    Country/Region: Argentina
-    ```
+      ``` syntax
+      Operator: Contoso
+      Country/Region: Argentina
+      ```
 
     All entries currently in the COSA or APN connectivity database that match the following format will be deleted and replaced with the row in your spreadsheet for that **Operator** and **Country/Region** combination:
 
