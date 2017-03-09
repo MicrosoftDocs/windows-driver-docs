@@ -40,7 +40,7 @@ This method does not return a value.
 Remarks
 -----
 
-**NetConfigurationClose** is an alias of **WdfObjectDelete**.  Because the configuration object, like all NetAdapterCx objects, is a WDF object, you can use **WdfObjectDelete** interchangeably.
+**NetConfigurationClose** is an alias of [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734).  Because the configuration object, like all NetAdapterCx objects, is a WDF object, you can use [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734) interchangeably.
 
 Requirements
 ------------
