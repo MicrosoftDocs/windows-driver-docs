@@ -44,12 +44,12 @@ When creating transmit and receive queues, the client provides pointers to the f
 * [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md)
 * [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md)
 
-Use the following routines to retrieve and return packets:
+See the above pages for details on what the client needs to do in each event callback function.
+
+The [**NET_RING_BUFFER**](net-ring-buffer.md) is a ring buffer shared between the host and a client, a container for one or more [**NET_PACKET**](net-packet.md) structures.  To retrieve and return packets stored in the ring buffer, use the following routines:
 
 * [NetRingBufferAdvanceNextPacket method](netringbufferadvancenextpacket.md)
 * [NetRingBufferGetNextPacket method](netringbuffergetnextpacket.md)
 * [NetRingBufferGetPacketAtIndex method](netringbuffergetpacketatindex.md)
 * [NetRingBufferReturnCompletedPackets method](netringbufferreturncompletedpackets.md)
 * [NetRingBufferReturnCompletedPacketsThroughIndex method](netringbufferreturncompletedpacketsthroughindex.md)
-
-The [**NET_RING_BUFFER**](net-ring-buffer.md) is a ring buffer shared between the host and a client, a container for one or more [**NET_PACKET**](net-packet.md) structures.
