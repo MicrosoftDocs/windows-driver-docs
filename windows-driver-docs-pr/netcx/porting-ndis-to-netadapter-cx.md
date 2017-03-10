@@ -2,7 +2,7 @@
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-This page describes how to convert an NDIS 6.x miniport driver into a Windows Driver Framework (WDF) networking client miniport driver.
+This page describes how to convert an NDIS 6.x miniport driver into a Windows Driver Framework (WDF) networking client driver.
 
 For general information about WDF, please review the [WDF Driver Development Guide](../wdf/index.md).
 
