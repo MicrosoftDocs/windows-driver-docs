@@ -33,10 +33,8 @@ Driver signing submissions require an extended validation (EV) code signing cert
   <li><p>After your submission is processed you’ll receive an email with the results.
   > [!IMPORTANT]
   > <ol type="a">
-    <li> <p>All Driver Signing submissions must be in a single, signed CAB file. </p></li>
-    
+    <li> <p>All Driver Signing submissions must be in a single, signed CAB file. </p></li>    
     <li><p>The CAB file signature must match the EV code signing certificate on file for your company with Windows Dev Center hardware dashboard. For more information about code signing certificates, see <a href="https://msdn.microsoft.com/windows/hardware/drivers/dashboard/get-a-code-signing-certificate">Get a code signing certificate.</p></li>
-
     <li><p>All driver folders in your cab must support the same set of architectures. For example, all drivers must be x86 or x64. Otherwise, all drivers must support both x86 and x64. For packages that support both x86 and x64, a single INF file supporting both architectures and binaries is required for each architecture.</p></li>
     <li><p>The CAB should not contain symbols.</p></li>
     <li><p>The CAB should not have files at the root level, and each driver package must be in separate folders. The following illustration is an example of the CAB structure.</p><img src="images/b-wes-driversigning.png" alt="an image showing a CAB structure"></img></li>
