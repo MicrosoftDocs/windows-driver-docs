@@ -18,6 +18,17 @@
       "template_folder": "_themes"
     }
   ],
+  "branch_target_mapping": {
+    "master": [
+        "Publish",
+        "Pdf"
+    ]
+  },
+  "Targets": {
+    "Pdf": {
+        "template_folder": "_themes.pdf"
+    }
+  },
   "notification_subscribers": [],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/windows-driver-docs",
@@ -30,6 +41,10 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
+    }, {
+        "path_to_root": "_themes.pdf",
+        "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+        "branch": "master"
     }
   ],
   "need_generate_pdf_url_template": false
