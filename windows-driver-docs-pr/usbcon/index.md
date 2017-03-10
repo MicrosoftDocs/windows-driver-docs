@@ -83,15 +83,15 @@ Windows operating systems include native support for USB host controllers, hubs,
 <td><strong>Write a USB client driver (KMDF, UMDF)</strong>
 <p>Introduces you to USB driver development. Provides information about choosing the most appropriate model for providing a USB driver for your device. This section also includes tutorials about writing your first user-mode and kernel-mode USB drivers by using the USB templates included with Microsoft Visual Studio.</p>
 <p>[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)</p>
-<p>[USB client driver reference](usb_reference)</p>
+<p>[USB device driver programming reference](https://msdn.microsoft.com/library/windows/hardware/ff540134)</p>
 <strong>Write a USB host controller driver</strong>
 <p>If you are developing an xHCI host controller that is not compliant with the specification or developing a custom non-xHCI hardware (such as a virtual host controller), you can write a host controller driver that communicates with UCX. For example, consider a wireless dock that supports USB devices. The PC communicates with USB devices through the wireless dock by using USB over TCP as a transport.</p>
 <p>[Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)</p>
-<p>[USB host controller extension (UCX) reference](usb_class_extension__ucx_)</p>
+<p>[USB host controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188009)</p>
 <strong>Write a function controller driver for a USB device</strong>
 <p>You can develop a controller driver that handles all USB data transfers and commands sent by the host to the device. This driver communicates with the Microsoft-provided USB function controller extension (UFX).</p>
 <p>[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)</p>
-<p>[USB function class extension (UFX) reference](usb_function_class_extension__ufx_)</p>
+<p>[USB function controller programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188013)</p>
 <strong>Write a USB Type-C connector driver</strong>
 <p>Windows 10 introduces support for the new USB connector: USB Type-C. You can write a driver for the connector that communicates with the Microsoft-provided class extension module: UcmCx to handle scenarios related to Type-C connectors such as, which ports support Type-C, which ports support power delivery.</p>
 <p>[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)</p>
@@ -100,19 +100,19 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>USB Dual Role controllers are now supported in Windows 10. Windows includes in-box client drivers for ChipIdea and Synopsys controllers. For other controllers, Microsoft provides a set of programming interfaces that allow the dual-role class extension (UrsCx) and its client driver to communicate with each other to handle the role-switching capability of a dual-role controller.</p>
 <p>For more information about this feature, see:</p>
 <p>[USB Dual Role Driver Stack Architecture](usb-dual-role-driver-stack-architecture.md)</p>
-<p>[USB dual-role controller driver programming reference](usb_role_switch__urs__reference)</p>
+<p>[USB dual-role controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628026)</p>
 <strong>Write a USB driver for emulated devices</strong>
 <p>Windows 10 introduces support for emulated devices. Now you can develop an emulated Universal Serial Bus (USB) host controller driver and a connected virtual USB device. Both components are combined into a single KMDF driver that communicates with the Microsoft-provided USB device emulation class extension (UdeCx).</p>
 <p>[Developing Windows drivers for emulated USB devices (UDE)](developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md)</p>
-<p>[Emulated USB host controller driver programming reference](usb_emulated_device_driver_programming_reference)</p>
+<p>[Emulated USB host controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628025)</p>
 <strong>Write a Windows Store app</strong>
 <p>Provides step-by-step instructions about implementing USB features in a Windows Store app. To write such an app for a USB device you need Visual Studio and Microsoft Windows Software Development Kit (SDK) .</p>
 <p>[Talk to USB devices, start to finish](talking-to-usb-devices-start-to-finish.md)</p>
-<p>[<strong>Windows.Devices.Usb</strong>](w_dvc_usb.windows_devices_usb)</p>
+<p>[<strong>Windows.Devices.Usb</strong>](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb)</p>
 <strong>Write a Windows desktop app</strong>
 <p>Describes how an application can call WinUSB Functions to communicate with a USB device.</p>
 <p>[Write a WinUSB application](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md)</p>
-<p>[<strong>WinUSB Functions</strong>](usb_interfaces#winusb)</p>
+<p>[<strong>WinUSB Functions</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)</p>
 [Common programming scenarios](wdk-resources-for-usb-driver-development.md)
 <p>List of common tasks that a driver or an app performs in order to communicate with a USB device. Get quick info about the programming interfaces you need for each task.</p>
 <p></p>
