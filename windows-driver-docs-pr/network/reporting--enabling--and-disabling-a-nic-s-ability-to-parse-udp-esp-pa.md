@@ -7,6 +7,7 @@ keywords: ["UDP-encapsulated ESP packets WDK IPsec offload , parsing capabilitie
 
 # Reporting, Enabling, and Disabling a NIC's Ability to Parse UDP-ESP Packets
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-reporting-enabling-and-disabling-a-nic-s-ability-to-parse-udp-esp-"></a>
 

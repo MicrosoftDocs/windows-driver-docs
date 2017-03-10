@@ -32,13 +32,13 @@ Before you create a request for an isochronous transfer, you must have informati
 
 A client driver that uses Windows Driver Model (WDM) routines has the pipe information in one of the [**USBD\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff539114) structures of a [**USBD\_INTERFACE\_LIST\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff539076) array. The client driver obtained that array in the driver's previous request to select a configuration or an interface in the device.
 
-A Windows Driver Framework (WDF) client driver must get a reference to the framework's target pipe object and call [**WdfUsbTargetPipeGetInformation**](kmdf-wdfusbtargetpipegetinformation) to obtain pipe information in a [**WDF\_USB\_PIPE\_INFORMATION**](kmdf-wdf_usb_pipe_information) structure.
+A Windows Driver Framework (WDF) client driver must get a reference to the framework's target pipe object and call [**WdfUsbTargetPipeGetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff551142) to obtain pipe information in a [**WDF\_USB\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff553037) structure.
 
 Based on the pipe information, determine this set of information:
 
 -   How much data can the host controller send to the pipe in each packet.
 
-    The amount of data that the client driver can send in a request cannot exceed the maximum number of bytes that the host controller can send or receive from an endpoint. The maximum number of bytes is indicated by the **MaximumPacketSize** member of [**USBD\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff539114) and [**WDF\_USB\_PIPE\_INFORMATION**](kmdf-wdf_usb_pipe_information) structures. The USB driver stack sets the **MaximumPacketSize** value the during a select-configuration or select-interface request.
+    The amount of data that the client driver can send in a request cannot exceed the maximum number of bytes that the host controller can send or receive from an endpoint. The maximum number of bytes is indicated by the **MaximumPacketSize** member of [**USBD\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff539114) and [**WDF\_USB\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff553037) structures. The USB driver stack sets the **MaximumPacketSize** value the during a select-configuration or select-interface request.
 
     For full speed devices, **MaximumPacketSize** is derived from the first 11 bits of the **wMaxPacketSize** field of the endpoint descriptor, which indicates the maximum number of bytes that the endpoint can send or receive in a transaction. For full speed devices the controller sends one transaction per bus interval.
 
@@ -162,7 +162,7 @@ The client driver should validate these requirements:
 
     If your client driver uses WDM routines, the driver must call the [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231) if you have the Windows Driver Kit (WDK) for Windows 8. A client driver can uses the routine to target Windows Vista and later versions of the Windows operating system. If you do not have the WDK for Windows 8 or if the client driver is intended for an earlier version of the operating system, you can allocate the structure on the stack or in nonpaged pool by calling [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520).
 
-    A WDF client driver can call the [**WdfUsbTargetDeviceCreateIsochUrb**](kmdf-wdfusbtargetdevicecreateisochurb) method to allocate memory for the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure.
+    A WDF client driver can call the [**WdfUsbTargetDeviceCreateIsochUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439420) method to allocate memory for the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure.
 
 2.  The **UrbIsochronousTransfer** member of the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) structure points to a [**\_URB\_ISOCH\_TRANSFER**](https://msdn.microsoft.com/library/windows/hardware/ff540414) structure that describes the details of an isochronous transfer. Initialize the following **UrbIsochronousTransfer** members as follows:
     -   Set the **UrbIsochronousTransfer.Hdr.Length** member to the size of the URB. To get the size of the URB, call [**GET\_ISO\_URB\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff537144) macro and specify the number of packets.
@@ -170,7 +170,7 @@ The client driver should validate these requirements:
     -   Set the **UrbIsochronousTransfer.NumberOfPackets** member to the number of isochronous packets.
     -   Set the **UrbIsochronousTransfer.PipeHandle** to the opaque handle for the pipe that is associated with the endpoint. Make sure that the pipe handle is the USBD pipe handle used by the Universal Serial Bus (USB) driver stack.
 
-        To obtain the USBD pipe handle, a WDF client driver can call the [**WdfUsbTargetPipeWdmGetPipeHandle**](kmdf-wdfusbtargetpipewdmgetpipehandle) method and specify the WDFUSBPIPE handle to the framework's pipe object. A WDM client driver must use the same handle that was obtained in the **PipeHandle** member of the [**USBD\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff539114) structure.
+        To obtain the USBD pipe handle, a WDF client driver can call the [**WdfUsbTargetPipeWdmGetPipeHandle**](https://msdn.microsoft.com/library/windows/hardware/ff551162) method and specify the WDFUSBPIPE handle to the framework's pipe object. A WDM client driver must use the same handle that was obtained in the **PipeHandle** member of the [**USBD\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff539114) structure.
 
     -   Specify the direction of the transfer. Set **UrbIsochronousTransfer.TransferFlags** to USBD\_TRANSFER\_DIRECTION\_IN for an isochronous IN transfer (reading from the device); USBD\_TRANSFER\_DIRECTION\_OUT for an isochronous OUT transfer (writing to the device).
     -   Specify the USBD\_START\_ISO\_TRANSFER\_ASAP flag in **UrbIsochronousTransfer**.TransferFlags. The flag instructs the USB driver stack to send the transfer in the next appropriate frame. For the first time that the client driver sends an isochronous URB for this pipe, the driver stack sends the isochronous packets in the URB as soon as it can. The USB driver stack tracks the next frame to use for subsequent URBs on that pipe. If there is a delay in sending a subsequent isochronous URB that uses the USBD\_START\_ISO\_TRANSFER\_ASAP flag, the driver stack considers some or all packets of that URB to be late and does not transfer those packets.
@@ -179,7 +179,7 @@ The client driver should validate these requirements:
 
     -   Specify the transfer buffer and its size. You can set a pointer to the buffer in **UrbIsochronousTransfer.TransferBuffer** or the [**MDL**](https://msdn.microsoft.com/library/windows/hardware/ff554414) that describes the buffer in **UrbIsochronousTransfer.TransferBufferMDL**.
 
-        To retrieve the [**MDL**](https://msdn.microsoft.com/library/windows/hardware/ff554414) for the transfer buffer, a WDF client driver can call [**WdfRequestRetrieveOutputWdmMdl**](kmdf-wdfrequestretrieveoutputwdmmdl) or [**WdfRequestRetrieveInputWdmMdl**](kmdf-wdfrequestretrieveinputwdmmdl), depending on the direction of the transfer.
+        To retrieve the [**MDL**](https://msdn.microsoft.com/library/windows/hardware/ff554414) for the transfer buffer, a WDF client driver can call [**WdfRequestRetrieveOutputWdmMdl**](https://msdn.microsoft.com/library/windows/hardware/ff550021) or [**WdfRequestRetrieveInputWdmMdl**](https://msdn.microsoft.com/library/windows/hardware/ff550016), depending on the direction of the transfer.
 
 ### <a href="" id="specify-the-details-of-each-isochronous-packet-in-the-transfer-"></a>Step 5: Specify the details of each isochronous packet in the transfer.
 

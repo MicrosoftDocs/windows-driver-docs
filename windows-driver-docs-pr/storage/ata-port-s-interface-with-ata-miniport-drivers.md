@@ -12,6 +12,9 @@ keywords: ["ATA Port drivers WDK , miniport drivers", "ATA miniport drivers WDK"
 ## <span id="ddk_ata_ports_interface_with_ata_minport_drivers_kg"></span><span id="DDK_ATA_PORTS_INTERFACE_WITH_ATA_MINPORT_DRIVERS_KG"></span>
 
 
+**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
+
+
 In the IDE architecture for Windows Vista and later versions of Windows, there are four system-supplied IDE drivers:
 
 -   The ATA port driver (*Ataport.sys*) that manages the controller channel
@@ -60,5 +63,3 @@ An ATA miniport driver that implements the channel interface exposes controller 
 
 
 --------------------
-
-
