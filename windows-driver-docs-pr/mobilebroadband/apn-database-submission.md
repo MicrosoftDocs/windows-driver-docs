@@ -1,26 +1,26 @@
 ---
-title: APN database submission
-description: APN database submission
+title: COSA/APN database submission
+description: COSAAPN database submission
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: a6a11b36-2848-45d0-93e5-1a5fedc0cfc9
 ---
 
-# APN database submission
+# COSA/APN database submission
 
 
 Use the topics in this section to add a new APN or update an existing APN:
 
--   [Planning your APN database submission](planning-your-apn-database-submission.md)
+-   [Planning your COSA/APN database submission](planning-your-apn-database-submission.md)
 
--   [Testing Your APN database submission](testing-your-apn-database-submission.md)
+-   [Testing Your COSA/APN database submission](testing-your-apn-database-submission.md)
 
--   [Submitting the APN database update](submitting-the-apn-database-update.md)
+-   [Submitting the COSA/APN database update](submitting-the-apn-database-update.md)
 
 -   [APN database schema reference](apn-database-schema-reference.md)
 
-For more information about what the APN database does and how you can use it, see [APN database](apn-database.md).
+For more information about what the COSA and the APN database do and how you can use them, see [COSA/APN database](apn-database.md).
 
  
 

@@ -1,18 +1,20 @@
 ---
-title: APN database
-description: APN database
+title: COSA/APN database
+description: COSA/APN database
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 699b797e-c225-47ba-96a5-26b15c91a759
 ---
 
-# APN database
-
+# COSA/APN database
 
 Windows 8, Windows 8.1, and Windows 10 include an APN database that is used by Windows Connection Manager to provide a seamless connection experience for end users by supplying and trying available connection APNs based on the user’s mobile broadband device. The APN database contains the information needed to connect to the mobile broadband network, allowing Windows to connect automatically with minimal user input. The database maintains access strings for different mobile network operators, enabling a user’s connection to the operator’s network prior to acquiring any additional software or metadata. For example, a user can get connected without having a mobile broadband app installed.
 
 In addition to provisioning information, the database also includes a URL to the account experience website. After automatically connecting to the operator’s network, the account experience website opens in the default browser, where the user can purchase a subscription or one-time access.
+
+> [!NOTE] 
+> Starting in Windows 10 Version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before Version 1703 will continue to use the APN database while Windows 10 Version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA FAQ](cosa---faq.md).
 
 ## <span id="apndbcon"></span><span id="APNDBCON"></span>APN database contents
 
