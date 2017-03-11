@@ -95,7 +95,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <strong>Write a USB Type-C connector driver</strong>
 <p>Windows 10 introduces support for the new USB connector: USB Type-C. You can write a driver for the connector that communicates with the Microsoft-provided class extension module: UcmCx to handle scenarios related to Type-C connectors such as, which ports support Type-C, which ports support power delivery.</p>
 <p>[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)</p>
-<p>[USB connector manager class extension (UcmCx) reference](usb_connection_manager_class_extension__ucmcx_)</p>
+<p>[USB connector manager class extension (UcmCx) reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)</p>
 <strong>Write a USB dual-role controller driver</strong>
 <p>USB Dual Role controllers are now supported in Windows 10. Windows includes in-box client drivers for ChipIdea and Synopsys controllers. For other controllers, Microsoft provides a set of programming interfaces that allow the dual-role class extension (UrsCx) and its client driver to communicate with each other to handle the role-switching capability of a dual-role controller.</p>
 <p>For more information about this feature, see:</p>
