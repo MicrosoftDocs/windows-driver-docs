@@ -30,21 +30,27 @@ The following table shows the release history of the KMDF library:
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><p>1.21</p></td>
+<td align="left"><p>Windows 10, version 1703 WDK</p></td>
+<td align="left"><p>Windows 10, version 1703 (Creator's Update, Redstone 2)</p></td>
+<td align="left"><p>Windows 10 version 1703 and later</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>1.19</p></td>
 <td align="left"><p>Windows 10, version 1607 WDK</p></td>
-<td align="left"><p>Windows 10, version 1607</p></td>
+<td align="left"><p>Windows 10, version 1607 (Anniversary Update, Redstone 1)</p></td>
 <td align="left"><p>Windows 10 version 1607 and later, Windows Server 2016</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>1.17</p></td>
 <td align="left"><p>Windows 10, version 1511 WDK</p></td>
-<td align="left"><p>Windows 10, version 1511</p></td>
+<td align="left"><p>Windows 10, version 1511 (November Update, Threshold 2)</p></td>
 <td align="left"><p>Windows 10 version 1511 and later, Windows 10 Mobile, Windows 10 IoT Core, Windows Server 2016</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>1.15</p></td>
 <td align="left"><p>Windows 10 WDK</p></td>
-<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Windows 10, version 1507 (Threshold 1)</p></td>
 <td align="left"><p>Windows 10 for desktop editions, Windows 10 Mobile, IoT Core, Windows Server 2016</p></td>
 </tr>
 <tr class="odd">
@@ -93,11 +99,18 @@ The following table shows the release history of the KMDF library:
 </table>
 
 
-You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
+You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2017 to build drivers that run on Windows 7 and later.
 
 For a complete list of callbacks and methods, and which frameworks and versions they apply to, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
 
 For information about the new features for KMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
+
+## KMDF Version 1.21
+
+* [**WdfFileObjectGetInitiatorProcessId**](https://msdn.microsoft.com/library/windows/hardware/dn265614) was previously UMDF-only, now available in KMDF.
+* [**WdfRequestGetRequestorProcessId**](https://msdn.microsoft.com/library/windows/hardware/dn265617) was previously UMDF-only, now available in KMDF.
+* [**WdfObjectDereferenceActual**](https://msdn.microsoft.com/library/windows/hardware/ff548743): Type of *File* parameter changed from PCHAR to PCCH.
+* [**WdfObjectReferenceActual**](https://msdn.microsoft.com/library/windows/hardware/ff548760): Type of *File* parameter changed from PCHAR to PCCH.
 
 ## KMDF Version 1.19
 
