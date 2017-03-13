@@ -39,19 +39,19 @@ The following table shows the release history of the KMDF library:
 <td align="left"><p>1.19</p></td>
 <td align="left"><p>Windows 10, version 1607 WDK</p></td>
 <td align="left"><p>Windows 10, version 1607 (Anniversary Update, Redstone 1)</p></td>
-<td align="left"><p>Windows 10 version 1607 and later, Windows Server 2016</p></td>
+<td align="left"><p>Windows 10 version 1607, Windows Server 2016 and later</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>1.17</p></td>
 <td align="left"><p>Windows 10, version 1511 WDK</p></td>
 <td align="left"><p>Windows 10, version 1511 (November Update, Threshold 2)</p></td>
-<td align="left"><p>Windows 10 version 1511 and later, Windows Server 2016</p></td>
+<td align="left"><p>Windows 10 version 1511, Windows Server 2016 and later</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>1.15</p></td>
 <td align="left"><p>Windows 10 WDK</p></td>
 <td align="left"><p>Windows 10, version 1507 (Threshold 1)</p></td>
-<td align="left"><p>Windows 10, version 1507 and later, Windows Server 2016</p></td>
+<td align="left"><p>Windows 10, version 1507, Windows Server 2016 and later</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>1.13</p></td>
