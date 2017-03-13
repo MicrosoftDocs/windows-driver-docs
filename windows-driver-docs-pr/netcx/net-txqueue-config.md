@@ -34,6 +34,7 @@ Members
 -------
 
 **Size**  
+The size, in bytes, of this structure.
 
 **EvtTxQueueCancel**  
 A pointer to the client driver's [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md) event callback function. This callback function is required.
@@ -45,6 +46,14 @@ A pointer to the client driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-tx
 A pointer to the client driver's [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) event callback function. This callback function is required.
 
 **ContextTypeInfo**  
+A pointer to a [**WDF_OBJECT_CONTEXT_TYPE_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552407) structure.
+
+Remarks
+-------
+
+Call [**NET_TXQUEUE_CONFIG_INIT**](net-txqueue-config-init.md) to initialize this structure.
+
+The **NET_TXQUEUE_CONFIG** structure is an input parameter to [**NetTxQueueCreate**](nettxqueuecreate.md). The client must use [**NET_TXQUEUE_CONFIG_INIT**](net-txqueue-config-init.md) to initialize this structure.
 
 Requirements
 ------------

@@ -48,7 +48,7 @@ A pointer to the client driver's [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rx
 A pointer to the client driver's [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) event callback function. This callback function is required.
 
 **ContextTypeInfo**  
-A pointer to a WDF_OBJECT_CONTEXT_TYPE_INFO structure.
+A pointer to a [**WDF_OBJECT_CONTEXT_TYPE_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552407) structure.
 
 **AllocationSize**  
 Size of the DMA common buffer. If the driver provides a non-zero value, it must subsequently call [**NetRxQueueConfigureDmaAllocator**](netrxqueueconfiguredmaallocator.md). If this value is zero, the client must update the NET_PACKET.Data.DmaLogicalAddress field manually to point to the memory it allocated.
