@@ -31,22 +31,29 @@ The following table shows the release history of the UMDF library:
 <th align="left">Drivers using it can run on</th>
 </tr>
 </thead>
-<tbody><tr class="odd">
+<tbody>
+<tr class="odd">
+<td align="left"><p>2.21</p></td>
+<td align="left"><p>Windows 10, version 1703 WDK</p></td>
+<td align="left"><p>Windows 10, version 1703 (Creator's Update, Redstone 2)</p></td>
+<td align="left"><p>Windows 10 version 1703</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p>2.19</p></td>
 <td align="left"><p>Windows 10, version 1607 WDK</p></td>
-<td align="left"><p>Windows 10, version 1607 </p></td>
+<td align="left"><p>Windows 10, version 1607 (Anniversary Update, Redstone 1)</p></td>
 <td align="left"><p>Windows 10, version 1607 (all SKUs), Windows Server 2016</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2.17</p></td>
 <td align="left"><p>Windows 10, version 1511 WDK</p></td>
-<td align="left"><p>Windows 10, version 1511</p></td>
+<td align="left"><p>Windows 10, version 1511 (November Update, Threshold 2)</p></td>
 <td align="left"><p>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, Windows 10 IoT Core (IoT Core), Windows Server 2016</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2.15</p></td>
 <td align="left"><p>Windows 10 WDK</p></td>
-<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Windows 10, version 1507 (Threshold 1)</p></td>
 <td align="left"><p>Windows 10 for desktop editions, Windows 10 Mobile, IoT Core, Windows Server 2016</p></td>
 </tr>
 <tr class="odd">
@@ -84,9 +91,14 @@ The following table shows the release history of the UMDF library:
 
  
 
-You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
+You can use the Windows Driver Kit (WDK) with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
 
 For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
+
+## UMDF Version 2.21
+
+* [**WdfObjectDereferenceActual**](https://msdn.microsoft.com/library/windows/hardware/ff548743): Type of *File* parameter changed from PCHAR to PCCH.
+* [**WdfObjectReferenceActual**](https://msdn.microsoft.com/library/windows/hardware/ff548760): Type of *File* parameter changed from PCHAR to PCCH.
 
 ## UMDF Version 2.19
 
@@ -151,10 +163,10 @@ In addition to the shared functionality described in [Getting Started with UMDF]
     -   [**WdfDevicePostEvent**](https://msdn.microsoft.com/library/windows/hardware/dn265606)
     -   [**WdfDeviceQueryInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/dn265607)
     -   [**WdfDeviceUnmapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/dn265610)
-    -   [**WdfFileObjectGetInitiatorProcessId**](https://msdn.microsoft.com/library/windows/hardware/dn265614)
+    -   [**WdfFileObjectGetInitiatorProcessId**](https://msdn.microsoft.com/library/windows/hardware/dn265614) (added to KMDF 1.21)
     -   [**WdfFileObjectGetRelatedFileObject**](https://msdn.microsoft.com/library/windows/hardware/dn265615)
     -   [**WdfRequestGetEffectiveIoType**](https://msdn.microsoft.com/library/windows/hardware/dn265616)
-    -   [**WdfRequestGetRequestorProcessId**](https://msdn.microsoft.com/library/windows/hardware/dn265617)
+    -   [**WdfRequestGetRequestorProcessId**](https://msdn.microsoft.com/library/windows/hardware/dn265617) (added to KMDF 1.21)
     -   [**WdfRequestGetUserModeInitiatedIo**](https://msdn.microsoft.com/library/windows/hardware/dn265618)
     -   [**WdfRequestImpersonate**](https://msdn.microsoft.com/library/windows/hardware/dn265619)
     -   [**WdfRequestIsFromUserModeDriver**](https://msdn.microsoft.com/library/windows/hardware/dn265620)
