@@ -39,10 +39,10 @@ A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue
 *Oid* [in]  
 The object identifier of the requested operation. The value is an OID_ *XXX* code.
 
-*EvtRequestQueryData* [in]
+*EvtRequestQueryData* [in]  
 Pointer to the client driver's implementation of a [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function.
 
-*MinimumOutputLength*  [in]
+*MinimumOutputLength*  [in]  
 A UINT specifying the minimum output length for the request.
 
 Return value
