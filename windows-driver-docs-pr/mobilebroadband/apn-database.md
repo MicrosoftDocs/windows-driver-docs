@@ -13,7 +13,7 @@ Windows 8, Windows 8.1, and Windows 10 include an APN database that is used b
 
 In addition to provisioning information, the database also includes a URL to the account experience website. After automatically connecting to the operator’s network, the account experience website opens in the default browser, where the user can purchase a subscription or one-time access.
 
-> [!NOTE] 
+> [!IMPORTANT] 
 > Starting in Windows 10 Version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before Version 1703 will continue to use the APN database while Windows 10 Version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA FAQ](cosa---faq.md).
 
 ## <span id="apndbcon"></span><span id="APNDBCON"></span>APN database contents

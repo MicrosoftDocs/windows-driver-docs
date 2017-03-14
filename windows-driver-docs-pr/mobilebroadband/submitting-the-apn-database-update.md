@@ -9,7 +9,7 @@ ms.assetid: 1ad1be32-74c9-4f84-b680-9124135a3b66
 
 # Submitting the COSA/APN database update
 
->[!NOTE]
+>[!IMPORTANT]
 > The following steps to submit an APN update apply to both COSA, which is used for Windows 10 Version 1703 and later, and apndatabase.xml, which is used for Windows 8, Windows 8.1, and versions of Windows 10 before 1703. Microsoft will convert apndatabase.xml submissions to COSA if you are targeting Windows 10 Version 1703 or later.
 
 Now that you’ve tested the APN entries, it’s now time to submit them to Microsoft by following the steps in this topic.
@@ -58,10 +58,8 @@ Use the following procedure to submit APN connectivity database updates to Micro
 
     -   A completed spreadsheet that contains your APN information.
 
-    **Note**  
-    You do not need to send your TAM the local APN database file that you created. A MS Solve case is needed to process the APN update, but you will not be charged for the case.
-
-     
+  > [!NOTE]
+  > You do not need to send your TAM the local APN database file that you created. A MS Solve case is needed to process the APN update, but you will not be charged for the case.     
 
     If you do not have a TAM:
 
@@ -73,10 +71,8 @@ Use the following procedure to submit APN connectivity database updates to Micro
 
     -   If asked, specify Windows 8 or Windows 10 as the product, as appropriate.
 
-    **Note**  
-    You will need to provide a credit card to open the incident, but you will not be charged.
-
-     
+  > [!NOTE] 
+  > You will need to provide a credit card to open the incident, but you will not be charged.     
 
 2.  **Microsoft triage process** -- Microsoft will review your submission and may contact you if errors are detected. Microsoft will not do any testing on your mobile network. If no errors are detected in your submission, it will proceed through the release process.
 

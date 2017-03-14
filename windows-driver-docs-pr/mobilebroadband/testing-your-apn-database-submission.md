@@ -13,14 +13,14 @@ Before submitting an APN update request to Microsoft, it is important for the MN
 
 ## Test your submission for COSA
 
-> [!NOTE]
+> [!IMPORTANT]
 > Use this process for Windows 10 Version 1703 and later.
 
 For COSA, please test your APN submission as described below for apndatabase.xml, then follow the steps in [Submitting the COSA/APN database update](submitting-the-apn-database-update.md) to submit your APN update to Microsoft. Microsoft will validate that your submission works for COSA.
 
-## Test your submission for apndatabase.xml
+## Test your submission for the APN database (apndatabase.xml)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Use this process for Windows 8, Windows 8.1, and versions of Windows 10 before 1703.
 
 There are two ways that you can ensure that the APN entries work before submitting them to Microsoft:
@@ -47,9 +47,6 @@ A simple way to test that an APN can connect to your network is to edit the curr
 5.  Save your changes, and then try to connect to the mobile broadband network.
 
 ### <a href="" id="modifydatabase"></a>Modify the local APN database
-
-> [!NOTE]
-> This secton only applies to apndatabase.xml when targeting Windows 8, Windows 8.1, or versions of Windows 10 before 1703. 
 
 Before you submit an APN update, you should editing the local APN database or creating a new one for testing. By doing this, you closely simulate the full experience because the APN selection logic that Windows Connection Manager uses is fully tested.
 
