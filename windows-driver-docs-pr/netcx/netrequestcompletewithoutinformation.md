@@ -14,7 +14,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Completes a NETREQUEST with a supplied completion status.
+Completes a NETREQUEST and supplies a completion status.
 
 Syntax
 ------
@@ -30,7 +30,7 @@ Parameters
 ----------
 
 *Request* [in]  
-A handle to a network request object.
+A handle to a network request object that represents the control (OID) request that is being completed.
 
 *CompletionStatus* [in]  
 An NTSTATUS value that represents the completion status of the request.  Valid status values include, but are not limited to, the following:
@@ -41,6 +41,11 @@ An NTSTATUS value that represents the completion status of the request.  Valid s
 |STATUS_CANCELLED|The driver canceled the request.|
 |STATUS_UNSUCCESSFUL|The driver encountered an error while processing the request.|
 
+Remarks
+-----
+Typically, the client driver calls **NetRequestCompleteWithoutInformation** from one of its control request handler routines.  For more info, see [Handling Control Requests](handling-control-requests.md#completing-requests).
+
+After this method returns, the request handle is no longer valid.  NetAdapterCx removes it from the NETQUEUE and deletes the NETREQUEST object.
 
 Requirements
 ------------
@@ -74,11 +79,8 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
-
-
+See Also
+-----
+[**NetRequestMethodComplete**](netrequestmethodcomplete.md)  
+[**NetRequestQueryDataComplete**](netrequestquerydatacomplete.md)  
+[**NetRequestSetDataComplete**](netrequestsetdatacomplete.md)  

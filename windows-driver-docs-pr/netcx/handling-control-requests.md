@@ -59,8 +59,16 @@ For example, if the protocol driver issues an OID request with `NDIS_REQUEST_TYP
 
 NetAdapterCx can call the client driver's control request handlers as soon as [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) returns until the time it calls [*EVT_WDF_DEVICE_RELEASE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540890).
 
-To complete a control request, call [**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md) from the OID handler.
+## Completing Requests
 
-```cpp
-NetRequestCompleteWithoutInformation(Request, STATUS_SUCCESS);
-```
+* To complete a control request and specify only completion status, call [**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md) from the OID handler.
+    
+    ```cpp
+            NetRequestCompleteWithoutInformation(Request, NDIS_STATUS_INVALID_DATA);
+    ```
+
+* To complete a control request and specify data read or written, call one of the following:
+
+    * [**NetRequestMethodComplete**](netrequestmethodcomplete.md)
+    * [**NetRequestQueryDataComplete**](netrequestquerydatacomplete.md)
+    * [**NetRequestSetDataComplete**](netrequestsetdatacomplete.md)

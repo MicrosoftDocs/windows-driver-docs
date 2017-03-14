@@ -45,6 +45,12 @@ An NTSTATUS value that represents the completion status of the request.  Valid s
 *BytesWritten* [in]  
 The number of bytes that the client driver wrote to the buffer.
 
+Remarks
+-----
+Typically, the client driver calls **NetRequestQueryDataComplete** from one of its control request handler routines.  For more info, see [Handling Control Requests](handling-control-requests.md#completing-requests).
+
+After this method returns, the request handle is no longer valid.  NetAdapterCx removes it from the NETQUEUE and deletes the NETREQUEST object.
+
 Requirements
 ------------
 
@@ -77,11 +83,8 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
-
-
+See Also
+-----
+[**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md)  
+[**NetRequestMethodComplete**](netrequestmethodcomplete.md)  
+[**NetRequestSetDataComplete**](netrequestsetdatacomplete.md)  

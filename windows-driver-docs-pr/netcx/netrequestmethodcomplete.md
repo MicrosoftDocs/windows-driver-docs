@@ -49,6 +49,12 @@ The number of bytes that the client driver read from the buffer.
 *BytesWritten* [in]  
 The number of bytes that the client driver wrote to the buffer.
 
+Remarks
+-----
+Typically, the client driver calls **NetRequestMethodComplete** from one of its control request handler routines.  For more info, see [Handling Control Requests](handling-control-requests.md#completing-requests).
+
+After this method returns, the request handle is no longer valid.  NetAdapterCx removes it from the NETQUEUE and deletes the NETREQUEST object.
+
 Requirements
 ------------
 
@@ -81,11 +87,8 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
-
-
+See Also
+-----
+[**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md)  
+[**NetRequestQueryDataComplete**](netrequestquerydatacomplete.md)  
+[**NetRequestSetDataComplete**](netrequestsetdatacomplete.md)  
