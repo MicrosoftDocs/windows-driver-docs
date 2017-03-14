@@ -24,11 +24,9 @@ This section includes the following topics:
 
 [Auditing](auditing.md)
 
- 
+[Kernel Extended Attributes](kernel-extended-attributes.md)
 
  
 
 
 --------------------
-
-

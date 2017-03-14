@@ -7,6 +7,7 @@ keywords: ["IPsecOV2 WDK TCP/IP transport , sending data", "sending data WDK net
 
 # Sending Network Data with IPsec Offload Version 2
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-sending-network-data-with-ipsec-offload-version-2-ng"></a>
 

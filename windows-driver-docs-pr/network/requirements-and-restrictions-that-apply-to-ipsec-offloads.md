@@ -7,6 +7,7 @@ keywords: ["ESP-protected packets WDK IPsec offload , requirements", "AH-protect
 
 # Requirements and Restrictions That Apply to IPsec Offloads
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-requirements-and-restrictions-that-apply-to-ipsec-offloads-ng"></a>
 
