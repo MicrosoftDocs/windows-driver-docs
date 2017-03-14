@@ -1,6 +1,6 @@
 ---
-title: Submitting the APN database update
-description: Submitting the APN database update
+title: Submitting the COSA/APN database update
+description: Submitting the COSA/APN database update
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -47,7 +47,6 @@ Provide your contact information:
 
 ## Submit APN database updates to Microsoft
 
-
 Use the following procedure to submit APN connectivity database updates to Microsoft. APN updates require a support case for tracking purposes, but you will not be charged for the case.
 
 **To submit APN database updates to Microsoft**
@@ -76,13 +75,10 @@ Use the following procedure to submit APN connectivity database updates to Micro
 
 2.  **Microsoft triage process** -- Microsoft will review your submission and may contact you if errors are detected. Microsoft will not do any testing on your mobile network. If no errors are detected in your submission, it will proceed through the release process.
 
-3.  **Operator validation** -- Since Microsoft cannot test the APNs you provided for your mobile network, you’ll be asked to do so after a new APN database has been generated. You’ll be provided a new copy of the APN database XML file that you’ll use to apply to your PCs and test the functionality on your actual network. You’ll go through another test pass, as described in [Testing Your COSA/APN database submission](testing-your-apn-database-submission.md). Your Microsoft TAM will provide you with an installable file that will patch the APN database on the PC with the updated database. You’ll be given a specific time period to test the new APN database. Once you have completed your testing, you’ll be asked to reply back to your Microsoft contact with your sign-off.
+3.  **Operator validation** -- Since Microsoft cannot test the APNs you provided for your mobile network, you’ll be asked to do so after a new APN database has been generated. You’ll be provided a new copy of the APN database XML file that you’ll use to apply to your PCs and test the functionality on your actual network. You’ll go through another test pass, as described in [Testing Your COSA/APN database submission](testing-your-apn-database-submission.md). Your Microsoft TAM will provide you with an installable file that will patch the APN database on the PC with the updated database. You’ll be given a specific time period to test the new APN database. Once you have completed your testing, you’ll be asked to reply back to your Microsoft contact with your sign-off. If you find an issue or error, there may be a limited opportunity to correct it. If the issue cannot be corrected in time, your changes will be reverted from the next released update of the APN database. You’ll need to resubmit your APN connectivity database submission and wait until the next scheduled update.
 
   > [!IMPORTANT]  
-  > If you do not sign-off within the allotted time period, your changes will be reverted from the next released update of the APN connectivity database. You’ll need to resubmit your APN submission and wait until the next scheduled update.
-     
-
-    If you find an issue or error, there may be a limited opportunity to correct it. If the issue cannot be corrected in time, your changes will be reverted from the next released update of the APN database. You’ll need to resubmit your APN connectivity database submission and wait until the next scheduled update.
+  > If you do not sign-off within the allotted time period, your changes will be reverted from the next released update of the APN connectivity database. You’ll need to resubmit your APN submission and wait until the next scheduled update.     
 
 4.  **Update is released** -- Once you have signed off on the new APN database, it will go through the update publishing process. Once it is ready, it will appear in Windows Update for users to install. You’ll be provided a more detailed release timeline after completing your APN database submission.
 
@@ -90,10 +86,8 @@ Use the following procedure to submit APN connectivity database updates to Micro
 
 Deleting an APN entry is considered a special-case operation. If you are only deleting an entry, you do not have to fill out a spreadsheet. List the entries in the APN connectivity database you want to have deleted by answering the following questionnaire. Once this is done, send it to your TAM.
 
-**Note**  
-Deletions take place based on **Operator** and **Country/Region** combination.
-
- 
+> [!NOTE]
+> Deletions take place based on **Operator** and **Country/Region** combination. 
 
 ```syntax
 Please describe which operator and region combination you wish to have removed from the APN database.

@@ -1,6 +1,6 @@
 ---
 title: COSA/APN database submission
-description: COSAAPN database submission
+description: COSA/APN database submission
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

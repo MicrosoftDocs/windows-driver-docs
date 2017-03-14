@@ -1,6 +1,6 @@
 ---
-title: Testing Your APN database submission
-description: Testing Your APN database submission
+title: Testing your COSA/APN database submission
+description: Testing your COSA/APN database submission
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
