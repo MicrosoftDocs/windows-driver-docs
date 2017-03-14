@@ -10,7 +10,7 @@ ms.assetid: a6a11b36-2848-45d0-93e5-1a5fedc0cfc9
 # COSA/APN database submission
 
 
-Use the topics in this section to add a new APN or update an existing APN:
+Use the topics in this section to make a submission to Microsoft to either add a new APN to the baseline COSA database that ships with Windows, or update an existing APN:
 
 -   [Planning your COSA/APN database submission](planning-your-apn-database-submission.md)
 
@@ -20,7 +20,7 @@ Use the topics in this section to add a new APN or update an existing APN:
 
 -   [APN database schema reference](apn-database-schema-reference.md)
 
-For more information about what the COSA and the APN database do and how you can use them, see [COSA/APN database](apn-database.md).
+For more information about what COSA and the APN database do and how you can use them, see [COSA/APN database](apn-database.md).
 
  
 

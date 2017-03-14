@@ -7,29 +7,23 @@ MSHAttr:
 ms.assetid: 8f45dbf0-4f96-4d11-b2a2-41b9e75b5e9b
 ---
 
-# Testing Your APN database submission
+# Testing Your COSA/APN database submission
 
 
-Before submitting an APN update request to Microsoft, it is important for the MNO or MVNO to validate the APN entries that they are about to submit. Microsoft does not have access to your network, so it is your responsibility to ensure the values that are being submitted are valid and work correctly.
-
-
- 
+Before submitting an APN update request to Microsoft, it is important for the MNO or MVNO to validate the APN entries that they are about to submit. Microsoft does not have access to your network, so it is your responsibility to ensure the values that are being submitted are valid and work correctly. 
 
 There are two ways that you can ensure that the APN entries work before submitting them to Microsoft:
 
--   [Editing APN values for the current profile](#bkmk-1)
+-   [Editing APN values for the current profile](#editprofile)
 
--   [Modify the local APN database](#bkmk-2)
+-   [Modify the local APN database](#modifydatabase)
 
-## <span id="BKMK_1"></span><span id="bkmk_1"></span>Editing APN values for the current profile
-
+## <a href="" id="editprofile"></a>Editing APN values for the current profile
 
 A simple way to test that an APN can connect to your network is to edit the current profile and insert the APN to test into the profile. To perform this test, follow these steps:
 
-**Note**  
-This test does not simulate the full experience, which is described in the [Modify the local APN database](#bkmk-2) section.
-
- 
+> [!NOTE] 
+> This test does not simulate the full experience, which is described in the [Modify the local APN database](#modifydatabase) section. 
 
 1.  Insert a SIM into the PC that works with the APN value you want to test.
 
@@ -41,12 +35,10 @@ This test does not simulate the full experience, which is described in the [Modi
 
 5.  Save your changes, and then try to connect to the mobile broadband network.
 
-## <span id="BKMK_2"></span><span id="bkmk_2"></span>Modify the local APN database
+## <a href="" id="modifydatabase"></a>Modify the local APN database
 
-
-**Note**  This secton only applies to apndatabase.xml introduced in Windows 10, version 1607.
-
- 
+> [!NOTE]
+> This secton only applies to apndatabase.xml when targeting Windows 8, Windows 8.1, or versions of Windows 10 before 1703. 
 
 Before you submit an APN update, you should editing the local APN database or creating a new one for testing. By doing this, you closely simulate the full experience because the APN selection logic that Windows Connection Manager uses is fully tested.
 

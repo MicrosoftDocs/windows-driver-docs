@@ -7,16 +7,12 @@ MSHAttr:
 ms.assetid: 1ad1be32-74c9-4f84-b680-9124135a3b66
 ---
 
-# Submitting the APN database update
+# Submitting the COSA/APN database update
 
 
-Now that you’ve tested the APN entries, it’s now time to submit them to Microsoft by using the following steps:
+Now that you’ve tested the APN entries, it’s now time to submit them to Microsoft by following the steps in this topic.
 
--   [Fill out the APN testing questionnaire](#bkmk-1)
-
--   [Submit APN connectivity database updates to Microsoft](#bkmk-2)
-
-## <span id="BKMK_1"></span><span id="bkmk_1"></span>Fill out the APN testing questionnaire
+## Fill out the APN testing questionnaire
 
 
 Once you have tested your APN values, you must fill out the following questionnaire. This will be sent to your TAM as part of your submission.
@@ -48,7 +44,7 @@ Provide your contact information:
    [phone 2]
 ```
 
-## <span id="BKMK_2"></span><span id="bkmk_2"></span>Submit APN database updates to Microsoft
+## Submit APN database updates to Microsoft
 
 
 Use the following procedure to submit APN connectivity database updates to Microsoft. APN updates require a support case for tracking purposes, but you will not be charged for the case.
