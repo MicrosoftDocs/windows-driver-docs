@@ -62,7 +62,7 @@ Register your implementation of this callback function by setting the appropriat
 
 In this callback, the driver typically iterates through the *ExistingPowerSettings* to determine whether to accept or reject *ProtocolOffloadToBeAdded*.
 
-For more info, see [Configuring Power Management Hardware Capabilities](configuring-power-management-hardware-capabilities.md).
+For more info, see [Configuring Power Management](configuring-power-management.md).
 
 Requirements
 ------------

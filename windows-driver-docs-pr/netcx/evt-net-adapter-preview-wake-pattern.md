@@ -67,7 +67,7 @@ The client driver can use the pointer to examine the [**NDIS_PM_WOL_PATTERN**](h
 
 In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
 
-For more info, see [Configuring Power Management Hardware Capabilities](configuring-power-management-hardware-capabilities.md).
+For more info, see [Configuring Power Management](configuring-power-management.md).
 
 Requirements
 ------------
