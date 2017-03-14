@@ -9,8 +9,19 @@ ms.assetid: 8f45dbf0-4f96-4d11-b2a2-41b9e75b5e9b
 
 # Testing Your COSA/APN database submission
 
-
 Before submitting an APN update request to Microsoft, it is important for the MNO or MVNO to validate the APN entries that they are about to submit. Microsoft does not have access to your network, so it is your responsibility to ensure the values that are being submitted are valid and work correctly. 
+
+## Test your submission for COSA
+
+> [!NOTE]
+> Use this process for Windows 10 Version 1703 and later.
+
+For COSA, please test your APN submission as described below for apndatabase.xml, then follow the steps in [Submitting the COSA/APN database update](submitting-the-apn-database-update.md) to submit your APN update to Microsoft. Microsoft will validate that your submission works for COSA.
+
+## Test your submission for apndatabase.xml
+
+> [!NOTE]
+> Use this process for Windows 8, Windows 8.1, and versions of Windows 10 before 1703.
 
 There are two ways that you can ensure that the APN entries work before submitting them to Microsoft:
 
@@ -18,7 +29,7 @@ There are two ways that you can ensure that the APN entries work before submitti
 
 -   [Modify the local APN database](#modifydatabase)
 
-## <a href="" id="editprofile"></a>Editing APN values for the current profile
+### <a href="" id="editprofile"></a> Editing APN values for the current profile
 
 A simple way to test that an APN can connect to your network is to edit the current profile and insert the APN to test into the profile. To perform this test, follow these steps:
 
@@ -35,7 +46,7 @@ A simple way to test that an APN can connect to your network is to edit the curr
 
 5.  Save your changes, and then try to connect to the mobile broadband network.
 
-## <a href="" id="modifydatabase"></a>Modify the local APN database
+### <a href="" id="modifydatabase"></a>Modify the local APN database
 
 > [!NOTE]
 > This secton only applies to apndatabase.xml when targeting Windows 8, Windows 8.1, or versions of Windows 10 before 1703. 
