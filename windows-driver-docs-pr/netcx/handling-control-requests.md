@@ -4,9 +4,9 @@ title: Handling Control Requests
 
 # Handling Control Requests
 
-In the NetAdapterCx model, the client driver receives most control requests as OID (object identifier) requests.  The client driver typically sets up one or two WDF queues (called NETREQUESTQUEUEs) to manage control requests, which the class extension provides to the client as NETREQUEST objects.
+In the NetAdapterCx model, the client driver receives most control requests as NETREQUEST objects, each of which represents an OID (object identifier) request.  The client driver typically sets up one or two WDF queues (called NETREQUESTQUEUEs) to manage control requests.
 
-This table shows the parent-child hierarchy for these objects:
+The following table shows the parent-child hierarchy for these objects:
 
 |Object|Parent|
 |---|---|
@@ -25,14 +25,26 @@ You can use both approaches in the same driver, providing custom handlers for so
 
 A client driver sets up OID handlers in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) routine.
 
-To register default handlers for all query OIDs and all set OIDs, provide an [*EVT_NET_REQUEST_DEFAULT_QUERY_DATA*](evt-net-request-default-query-data.md) event callback function and an [*EVT_NET_REQUEST_DEFAULT_SET_DATA*](evt-net-request-default-set-data.md) event callback function:
+To register default handlers for all query OIDs and all set OIDs, provide an [*EVT_NET_REQUEST_DEFAULT_QUERY_DATA*](evt-net-request-default-query-data.md) event callback function and an [*EVT_NET_REQUEST_DEFAULT_SET_DATA*](evt-net-request-default-set-data.md) event callback function.
+
+For requests of type other than query data, set data, and method, the client driver can provide an [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md) event callback function.
+
+For example, if the protocol driver issues an OID request with `NDIS_REQUEST_TYPE = NdisRequestGeneric1`, NetAdapterCx calls [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md).  NetAdapterCx fails the request if the client driver has not provided such a handler.
 
 ```cpp
+NTSTATUS status;
 NET_REQUEST_QUEUE_CONFIG config;
+NETREQUESTQUEUE requestQueue;
+
 NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL(&config, NetAdapter);
-config.EvtRequestDefaultQueryData = MyQueryHandler;
-config.EvtRequestDefaultSetData = MySetHandler;
+config.EvtRequestDefaultQueryData = MyDefaultQueryData;
+config.EvtRequestDefaultSetData = MyDefaultSetData;
+config.EvtRequestDefaultMethod = MyDefaultMethod;
+
+config.EvtRequestDefault = MyDefault;
 ```
+
+If the client driver will receive direct OIDs, call [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL**](net-request-queue-config-init-default-parallel.md) to add a second queue that is configured for parallel dispatching.
 
 To add an OID-specific query data handler, call the [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md) method with a pointer to the client driver's implementation of an [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function:
 
@@ -52,10 +64,6 @@ if(!NT_SUCCESS(status))
     return status;
 }
 ```
-
-For requests of type other than query data, set data, and method, the client driver can provide an [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md) event callback function.
-
-For example, if the protocol driver issues an OID request with `NDIS_REQUEST_TYPE = NdisRequestGeneric1`, NetAdapterCx calls [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md).  NetAdapterCx fails the request if the client driver has not provided such a handler.
 
 NetAdapterCx can call the client driver's control request handlers as soon as [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) returns until the time it calls [*EVT_WDF_DEVICE_RELEASE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540890).
 

@@ -4,6 +4,8 @@ title: Building a NetAdapterCx Client Driver
 
 # Building a NetAdapterCx Client Driver
 
+To obtain the latest version of Visual Studio and the Windows Driver Kit (WDK), please visit the [Hardware Dev Center](https://developer.microsoft.com/windows/hardware/windows-driver-kit).
+
 Use the following steps to create a new NetAdapter client driver in Visual Studio:
 
 1. Open Microsoft Visual Studio. On the File menu, choose **New > Project**.
@@ -14,5 +16,3 @@ Use the following steps to create a new NetAdapter client driver in Visual Studi
 ```cpp
 #include <netadaptercx.h>
 ```
-
-<!--will there be an NCX option in VS?-->

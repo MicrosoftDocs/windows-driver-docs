@@ -60,7 +60,7 @@ For info on the callbacks you'll need to provide, see [Device Initialization](de
 
 Next, still in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), set up the object identifier (OID) path.  The OID path is modeled like a WDF queue.  But you'll be getting OIDs instead of WDFREQUESTs.
 
-There are two high level approaches you might take when porting this.  The first option is to register a default handler that receives OID requests in a very similar way to how a miniport driver receives requests from NDIS.  This is the easiest port, since you'll likely just need to adjust a function signature from your old MiniportOidRequest handler.
+There are two high level approaches you might take when porting this.  The first option is to register a [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md) handler that receives OID requests in a very similar way to how a miniport driver receives requests from NDIS.  This is the easiest port, since you'll likely just need to adjust a function signature from your old MINIPORT_OID_REQUEST handler.
 
 The other option is to break apart your OID handler's switch statement and provide a separate handler for each individual OID.  You might choose this option if your device requires OID-specific functionality.
 
