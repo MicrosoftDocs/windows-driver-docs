@@ -32,8 +32,10 @@ Parameters
 ----------
 
 *NetPacket* [in]  
+Reserved.
 
 *TypeInfo* [in]  
+Reserved.
 
 Return value
 ------------

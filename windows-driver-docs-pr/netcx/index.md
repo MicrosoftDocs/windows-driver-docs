@@ -12,6 +12,8 @@ In previous versions of Windows, you needed to write an NDIS miniport driver.
 
 To learn how to port an NDIS 6.x miniport driver into a Windows Driver Framework (WDF) networking client driver, see [Porting NDIS Miniport Drivers to NetAdapter Class Extension](porting-ndis-to-netadapter-cx.md).
 
+If you would like to work with Microsoft as you develop a NetAdapterCx client driver, or have feedback on the class extension, please send us an [email](netadapter@microsoft.com).
+
 This section contains the following topics:
 
 * [Porting NDIS Miniport Drivers to NetAdapter Class Extension](porting-ndis-to-netadapter-cx.md)
