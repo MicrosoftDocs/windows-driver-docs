@@ -82,28 +82,13 @@ Here are two ways to do this in your WDF networking client driver.
 
 The most straightforward port is to create a control device object by calling [**WdfControlDeviceInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/ff545841) from the client's [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback.  For more info, see [Using Control Device Objects](../wdf/using-control-device-objects.md).
 
-However, the recommended solution is to create a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) with a reference string, as shown here:
-
-```cpp
-DECLARE_CONST_UNICODE_STRING(c_RefString, L"MyRefString");
-status = WdfDeviceCreateDeviceInterface(
-            device, 
-            &GUID_MY_DEVICE_INTERFACE, 
-            &c_RefString);
-if (!NT_SUCCESS(status)) {
-    return status;
-}
-```
-
-For more info, see [Using Device Interfaces](../wdf/using-device-interfaces.md).
-
-When a user-mode application sends requests to a handle opened on a device interface with a reference string, your client driver receives I/O requests.  You can use [WDF queue objects](../wdf/framework-queue-objects.md) to handle the incoming I/O requests.
+However, the recommended solution is to create a device interface, as described in [Using Device Interfaces](using-device-interfaces.md).
 
 ## Finishing device initialization
 
 At this point in [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), you can do anything else you'd like to initialize your device, like allocating interrupts.
 
-## Power management
+## Handling power state change notifications
 
 A WDF client driver does not receive [**OID_PNP_SET_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff569780) for power state changes.
 
@@ -121,6 +106,8 @@ To summarize, in WDF, you put your "go to D0" code in one place, instead of two.
 
 For details on the callback sequence, see [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md).
 
+## Querying and setting power management capabilities
+
 Similarly, a WDF client driver does not receive [**OID_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff569768) to query or set power management hardware capabilities of the network adapter.
 
 Instead, the driver queries the necessary wake-on-LAN (WoL) configuration from the NETPOWERSETTINGS object.  For more info, see [Configuring Power Management](configuring-power-management.md).
@@ -136,11 +123,13 @@ Because the NetAdapter framework keeps your device at D0 while the host uses the
 The data path programming model has changed significantly. Here are some key differences:
 
 * In the NetAdapter model, network traffic is no longer per adapter, as in NDIS, but rather per WDF queue.  See [Creating I/O Queues](../wdf/creating-i-o-queues.md).
-* Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces new data packet structures.  For details on the replacement structures and how to use them, see [Handling I/O Requests](handling-i-o-requests.md).
+* Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces a ring buffer that is comprised of net packets, which map to NDIS as follows:
+    * A [**NET_PACKET**](net-packet.md) is similar to a NET_BUFFER.
+    * A [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](net-packet.md) has one or more of these.
+    * For details on the replacement structures and how to use them, see [Handling I/O Requests](handling-i-o-requests.md).
 * In NDIS 6.x, the miniport needs to handle start and pause semantics.  In the NetAdapterCx model, this is no longer the case.
+* The [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback is similar to [**MINIPORT_RETURN_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559437) in NDIS 6.x.
 * The [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.
-* A [**NET_PACKET**](net-packet.md) is similar to a NET_BUFFER.
-* A [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](net-packet.md) has one or more of these.
 
 ## Device removal
 
@@ -172,4 +161,4 @@ The !ndiskd.netadapter debugger extension shows similar results to what [**!ndis
 
 ## Conclusion
 
-Using the steps in this topic, you should have a working driver that starts and stops your device. To receive and transmit data, you need to understand how the ring buffer works, which is out of scope for this porting guide.
+Using the steps in this topic, you should have a working driver that starts and stops your device.

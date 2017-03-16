@@ -1,4 +1,4 @@
-# [Network Adapter WDF Class Extension (Cx) Reference](index.md)
+# [Network Adapter WDF Class Extension (Cx)](index.md)
 ## [Porting NDIS Miniport Drivers to NetAdapter Class Extension](porting-ndis-to-netadapter-cx.md)
 ## [Building a NetAdapterCx Client Driver](building-a-netadaptercx-client-driver.md)
 ## [Device Initialization](device-initialization.md)
@@ -7,6 +7,7 @@
 ## [Debugging NetAdapterCx Client Drivers](debugging-netadaptercx-client-drivers.md)
 ## [Handling I/O Requests](handling-i-o-requests.md)
 ## [Configuring Power Management](configuring-power-management.md)
+## [NDIS-WDF Function Equivalents](ndis-wdf-function-equivalents.md)
 ## [Summary of Objects](summary-of-objects.md)
 ## [Power-Up Sequence for an Network Adapter WDF Client Driver](power-up-sequence-for-ndis-wdf-client-driver.md)
 ## [Power-Down Sequence for an Network Adapter WDF Client Driver](power-down-sequence-for-ndis-wdf-client-driver.md)
