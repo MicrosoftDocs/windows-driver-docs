@@ -87,6 +87,8 @@ NetAdapterCx can call the client driver's control request handlers as soon as [*
 
 ## Completing Requests
 
+The client driver must complete each NETREQUEST that it receives.  Otherwise, the control request is left in a pending state.
+
 * To complete a control request and specify only completion status, call [**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md) from the OID handler.
     
     ```cpp
