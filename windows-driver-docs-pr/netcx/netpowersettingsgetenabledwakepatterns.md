@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves the wake-on-LAN (WOL) patterns that a network adapter supports.
+Retrieves flags representing the types of wake patterns that a network adapter supports.
 
 Syntax
 ------
@@ -36,7 +36,7 @@ A handle to the NETPOWERSETTINGS object associated with the net adapter. To retr
 Return value
 ------------
 
-A ULONG value that contains a bitwise **OR** of flags that correspond to capabilities that the client driver reported in the **SupportedWakePacketPatterns** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. NDIS uses these flags to enable the wake-on-LAN (WOL) patterns that a network adapter uses to wake the local computer from a low power state. For more information about WOL patterns, see [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768).
+A ULONG value that contains a bitwise **OR** of [**NET_ADAPTER_WAKE_PATTERN_FLAGS**](net-adapter-wake-pattern-flags.md)-typed flags that correspond to capabilities that the client driver reported in the **SupportedWakePacketPatterns** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. NDIS uses these flags to enable the wake-on-LAN (WOL) patterns that a network adapter uses to wake the local computer from a low power state. For more information about WOL patterns, see [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768).
 
 Remarks
 -------

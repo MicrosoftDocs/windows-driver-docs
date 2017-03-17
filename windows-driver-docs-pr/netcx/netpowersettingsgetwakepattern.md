@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves a wake-on-LAN (WoL) pattern structure.
+Retrieves the wake pattern structure at the specified index.
 
 Syntax
 ------
@@ -46,6 +46,8 @@ Remarks
 -------
 
 The client driver calls **NetPowerSettingsGetWakePattern** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback function.
+
+The client can check if this pattern is enabled by calling [**NetPowerSettingsIsWakePatternEnabled**](netpowersettingsiswakepatternenabled.md).
 
 The client driver can use the pointer to examine the [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure, but should not retain it. NetAdapterCx automatically releases the pattern structure during WoL pattern removal.
 

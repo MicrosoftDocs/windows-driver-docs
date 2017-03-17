@@ -6,6 +6,10 @@ title: Configuring Power Management
 
 This topic describes how to preview and query power management capabilities in a NetAdapterCx client driver.
 
+Typically, a client driver calls [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md) to set the power capabilities of the network adapter.
+
+The client then uses standard WDF event callbacks to receive notification of power transitions.  For more info, see [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
+
 ## Previewing Protocol Offload and Wake Patterns
 
 The client can register [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) and [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback functions to accept or reject incoming protocol offloads and wake patterns.
@@ -43,9 +47,19 @@ EvtDeviceArmWakeFromS0(
 }
 ```
 
+For more info, see:
+
+|fun|times|
+|---|---|
+| [**NetPowerSettingsGetEnabledWakePatterns**](netpowersettingsgetenabledwakepatterns.md) | Retrieves flags representing the types of wake patterns that a network adapter supports. |
+| [**NetPowerSettingsGetEnabledWakeUpFlags**](netpowersettingsgetenabledwakeupflags.md) | Retrieves the media-independent wake-up events that a network adapter supports. |
+
+
+
+
 ### Protocol offloads
 
-Use these methods to iterate through protocol offloads:
+Use these methods to access protocol offloads:
 
 * [**NetPowerSettingsGetEnabledProtocolOffloads**](netpowersettingsgetenabledprotocoloffloads.md)
 * [**NetPowerSettingsGetProtocolOffload**](netpowersettingsgetprotocoloffload.md)
@@ -54,9 +68,3 @@ Use these methods to iterate through protocol offloads:
 * [**NetPowerSettingsIsProtocolOffloadEnabled**](netpowersettingsisprotocoloffloadenabled.md)
 
 Because the client is the [power policy owner](../wdf/power-policy-ownership.md) for the NIC's device stack, it can use WDF's built-in power management functionality.  For example, you might want to add your own idle logic. For info, see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
-
-See Also
------
-[**NetPowerSettingsGetEnabledWakePatterns**](netpowersettingsgetenabledwakepatterns.md)
-[**NetPowerSettingsGetEnabledProtocolOffloads**](netpowersettingsgetenabledprotocoloffloads.md)
-[**NetPowerSettingsGetEnabledWakeUpFlags**](netpowersettingsgetenabledwakeupflags.md)
