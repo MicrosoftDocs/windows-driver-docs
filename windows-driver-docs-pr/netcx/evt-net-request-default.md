@@ -75,6 +75,8 @@ To register an *EVT_NET_REQUEST_DEFAULT* callback function, the client driver ca
 
 If NDIS_REQUEST_TYPE is not query, set, or method, NetAdapterCx calls the client driver's EVT_NET_REQUEST_DEFAULT handler with the request. If the client driver has not provided this callback, the request fails.
 
+The contents of the *InputOutputBuffer*, *InputBufferLength*, and *OutputBufferLength* parameters are specific to NDIS_REQUEST_TYPE.
+
 Requirements
 ------------
 _Target platform: Universal_  
