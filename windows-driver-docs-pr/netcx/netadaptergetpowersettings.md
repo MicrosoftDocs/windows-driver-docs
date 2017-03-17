@@ -74,11 +74,8 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
-
-
+See Also
+-----
+[**NetPowerSettingsGetEnabledWakePatterns**](netpowersettingsgetenabledwakepatterns.md)
+[**NetPowerSettingsGetEnabledProtocolOffloads**](netpowersettingsgetenabledprotocoloffloads.md)
+[**NetPowerSettingsGetEnabledWakeUpFlags**](netpowersettingsgetenabledwakeupflags.md)

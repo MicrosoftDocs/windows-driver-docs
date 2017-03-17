@@ -36,7 +36,7 @@ A handle to the NETPOWERSETTINGS object associated with the net adapter. To retr
 Return value
 ------------
 
-A ULONG value that contains a bitwise **OR** of flags that correspond to capabilities that the client driver reported in the **SupportedWoLPacketPatterns** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. NDIS uses these flags to enable the wake-on-LAN (WOL) patterns that a network adapter uses to wake the local computer from a low power state. For more information about WOL patterns, see [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768).
+A ULONG value that contains a bitwise **OR** of flags that correspond to capabilities that the client driver reported in the **SupportedWakePacketPatterns** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. NDIS uses these flags to enable the wake-on-LAN (WOL) patterns that a network adapter uses to wake the local computer from a low power state. For more information about WOL patterns, see [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768).
 
 Remarks
 -------
@@ -81,19 +81,7 @@ Requirements
 
 ## See also
 
-
-[**NDIS_PM_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748)
-
-[**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759)
-
-[**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768)
-
- 
-
- 
-
-
-
-
-
-
+* [**NetPowerSettingsGetWakePatternCount**](netpowersettingsgetwakepatterncount.md)
+* [**NDIS_PM_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff566748)
+* [**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759)
+* [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768)
