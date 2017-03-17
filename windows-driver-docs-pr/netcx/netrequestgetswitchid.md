@@ -68,11 +68,6 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
-
-
+See Also
+-----
+[**NDIS_NIC_SWITCH_PARAMETERS **](https://msdn.microsoft.com/library/windows/hardware/hh451587)

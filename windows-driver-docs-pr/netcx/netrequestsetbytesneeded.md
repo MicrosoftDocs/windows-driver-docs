@@ -14,7 +14,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Sets the number of bytes required for an NETREQUEST.
+Sets the number of bytes needed to read or write for a control request (OID).
 
 Syntax
 ------
@@ -37,9 +37,22 @@ Number of bytes to be read or written.
 
 Remarks
 ---
-The client calls this routine if the I/O request fails due a smaller than expected InputOutputBuffer size.
+The client calls this routine if the I/O request fails due a smaller than expected InputOutputBuffer size.  For example, to report that 8 bytes are required to support the requested OID:
+
+```cpp
+status = STATUS_BUFFER_TOO_SMALL;
+NetRequestSetBytesNeeded(Request, sizeof(ULONG64));
+```
 
 Depending on the request type, *BytesNeeded* may mean space required perform a read operation or a write operation. 
+
+After calling **NetRequestSetBytesNeeded**, the client calls one of the following methods, or  [**NetRequestCompleteWithoutInformation**](netrequestcompletewithoutinformation.md):
+
+    * [**NetRequestMethodComplete**](netrequestmethodcomplete.md)
+    * [**NetRequestQueryDataComplete**](netrequestquerydatacomplete.md)
+    * [**NetRequestSetDataComplete**](netrequestsetdatacomplete.md)
+
+For general info about control requests, see [Handling Control Requests](handling-control-requests.md).
 
 Requirements
 ------------

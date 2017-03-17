@@ -34,7 +34,7 @@ A handle to a network request object.
 Return value
 ------------
 
-Returns the port number corresponding to the network request object. 
+Returns the port number corresponding to the network request object.  If the port is unknown or default, returns zero.
 
 Requirements
 ------------
@@ -68,11 +68,6 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
-
-
+See Also
+-----
+[**NDIS_OID_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)

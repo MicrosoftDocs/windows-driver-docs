@@ -68,11 +68,6 @@ Requirements
 </tbody>
 </table>
 
- 
-
- 
-
-
-
-
-
+See Also
+-----
+[**NDIS_OID_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)

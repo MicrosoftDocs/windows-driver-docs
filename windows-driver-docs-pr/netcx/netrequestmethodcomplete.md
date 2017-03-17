@@ -14,7 +14,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Completes a method request.
+Completes a method (OID) request.
 
 Syntax
 ------
@@ -44,10 +44,10 @@ An NTSTATUS value that represents the completion status of the request.  Valid s
 |STATUS_UNSUCCESSFUL|The driver encountered an error while processing the request.|
 
 *BytesRead* [in]  
-The number of bytes that the client driver read from the buffer.
+The number of bytes that the client driver read from the request buffer.
 
 *BytesWritten* [in]  
-The number of bytes that the client driver wrote to the buffer.
+The number of bytes that the client driver wrote to the request buffer.
 
 Remarks
 -----

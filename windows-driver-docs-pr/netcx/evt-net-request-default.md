@@ -87,17 +87,6 @@ _IRQL: PASSIVE_LEVEL_
 
 ## See also
 
-
 [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416)
 
 [**NDIS_OID_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
-
- 
-
- 
-
-
-
-
-
-
