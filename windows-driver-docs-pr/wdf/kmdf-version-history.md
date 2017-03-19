@@ -97,7 +97,7 @@ You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 
 
 For a complete list of callbacks and methods, and which frameworks and versions they apply to, see [Summary of WDF Callbacks and Methods](https://msdn.microsoft.com/library/windows/hardware/dn265591).
 
-For information about the new features for KMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
+For information about the new features for KMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
 
 ## KMDF Version 1.19
 
