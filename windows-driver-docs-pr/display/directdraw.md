@@ -1,0 +1,48 @@
+---
+title: DirectDraw
+description: DirectDraw
+ms.assetid: b7f1194e-0f5e-444e-a71c-6a4a836547d9
+keywords: ["DirectDraw WDK Windows 2000 display", "Windows 2000 display driver model WDK , DirectDraw", "display driver model WDK Windows 2000 , DirectDraw", "header files WDK DirectDraw", "DirectDraw WDK Windows 2000 display , header files", "drawing WDK DirectDraw", "drawing WDK DirectDraw , header files", "graphics WDK Windows 2000 display"]
+---
+
+# DirectDraw
+
+
+## <span id="ddk_directdraw_gg"></span><span id="DDK_DIRECTDRAW_GG"></span>
+
+
+This section describes the Microsoft DirectDraw interface and architecture, and provides implementation guidelines for DirectDraw driver writers. The guidelines are written for Microsoft Windows 2000 and later. The reader should be familiar with the DirectDraw APIs, and have a firm grasp of the Windows 2000 display driver model.
+
+Driver writers who are creating Microsoft DirectDraw drivers for Microsoft Windows 2000 and later should use the following header files:
+
+-   *ddrawint.h* contains the basic types, constants, and structures for DirectDraw drivers.
+
+-   *ddraw.h* contains the basic types, constants, and structures used by both applications and drivers.
+
+-   *dvp.h* is used when the driver supports the DirectDraw video port extensions (VPE).
+
+-   *dxmini.h* is used when the video miniport driver includes support for kernel-mode video transport, the DxApi interface (functions specified by the [**DXAPI\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff557395) structure).
+
+-   *ddkmapi.h* is used by video capture drivers to access the [**DxApi**](https://msdn.microsoft.com/library/windows/hardware/ff557364) function. DirectDraw, in turn, calls upon the DxApi interface.
+
+-   *dmemmgr.h* is used when the driver wants to perform its own memory management instead of relying on the DirectDraw runtime.
+
+-   *ddkernel.h* is used when the driver includes kernel-mode support.
+
+-   *dx95type.h* allows driver writers to easily port existing Windows 98/Me drivers to Windows 2000 and later. This header file maps names that are different on the two platforms.
+
+The *ddraw.h* header file is shipped with the Windows SDK; all other header files are included with the Windows Driver Kit (WDK). The Windows Driver Development Kit (DDK) also contains sample code for a DirectDraw driver in the *p3samp* video display directory.
+
+Reference pages for DirectDraw driver functions, callbacks, and structures can be found in [DirectDraw Driver Functions](https://msdn.microsoft.com/library/windows/hardware/ff553825) and [DirectDraw Driver Structures](https://msdn.microsoft.com/library/windows/hardware/ff553831).
+
+For more information about DirectDraw, see the Windows SDK. DirectDraw driver writers can send questions and comments by email to *directx@microsoft.com*.
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20DirectDraw%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

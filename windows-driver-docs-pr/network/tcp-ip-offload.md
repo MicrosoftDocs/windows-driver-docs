@@ -20,6 +20,7 @@ Beginning with Windows Vista, the Windows operating system supports the followin
 -   Applications Internet protocol security (IPsec) offload version 1
 
 -   IPsec offload version 2
+    - \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 -   Large send offload version 1
 

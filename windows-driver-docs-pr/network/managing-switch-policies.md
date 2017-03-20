@@ -57,7 +57,7 @@ The extensible switch extension must follow these guidelines when it handles an 
 
          
 
-    If the extension handles these OID set requests, the extension must update or delete the switch policy that matches the following members of the [**NDIS\_SWITCH\_PROPERTY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598255) structure:
+-   If the extension handles these OID set requests, the extension must update or delete the switch policy that matches the following members of the [**NDIS\_SWITCH\_PROPERTY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh598255) structure:
 
     -   The **PropertyVersion** member that specifies the version of the extensible switch policy.
 

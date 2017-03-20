@@ -18,7 +18,7 @@ Here are the new audio features in Windows 10.
 
 -   [Signal Processing Modes and Audio Categories](#signalprocessing)
 
--   [Hardware Offloaded APO Effect](#hardwareoffloaded)s
+-   [Hardware Offloaded APO Effects](#hardwareoffloaded)
 
 -   [Cortana Voice Activation](#cortanavoice)
 

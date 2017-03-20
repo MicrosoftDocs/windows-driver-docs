@@ -8,7 +8,7 @@ keywords: ["WDM audio drivers WDK , sample drivers", "audio drivers WDK , sample
 # Sample Audio Drivers
 
 
-## <span id="SYVAD_Audio_Sample"></span><span id="syvad_audio_sample"></span><span id="SYVAD_AUDIO_SAMPLE"></span>SYVAD Audio Sample
+## <span id="SYSVAD_Audio_Sample"></span><span id="sysvad_audio_sample"></span><span id="SYSVAD_AUDIO_SAMPLE"></span>SYSVAD Audio Sample
 
 
 **System Virtual Audio Device Driver Sample (SYSVAD)**

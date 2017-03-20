@@ -33,6 +33,15 @@
       - name: Biometric
         tocHref: /windows/hardware/drivers/biometric/
         topicHref: /windows/hardware/drivers/biometric/index
+      - name: Dashboard
+        tocHref: /windows/hardware/drivers/dashboard/
+        topicHref: /windows/hardware/drivers/dashboard/index
+      - name: Device Apps
+        tocHref: /windows/hardware/drivers/devapps/
+        topicHref: /windows/hardware/drivers/devapps/index
+      - name: Display
+        tocHref: /windows/hardware/drivers/display/
+        topicHref: /windows/hardware/drivers/display/index
       - name: Tools for Testing Drivers
         tocHref: /windows/hardware/drivers/devtest/
         topicHref: /windows/hardware/drivers/devtest/index
@@ -48,9 +57,18 @@
       - name: Installable File Systems
         tocHref: /windows/hardware/drivers/ifs/
         topicHref: /windows/hardware/drivers/ifs/index
+      - name: Getting started with Windows drivers
+        tocHref: /windows/hardware/drivers/gettingstarted/
+        topicHref: /windows/hardware/drivers/gettingstarted/index
+      - name: GNSS
+        tocHref: /windows/hardware/drivers/gnss/
+        topicHref: /windows/hardware/drivers/gnss/index
       - name: GPIO
         tocHref: /windows/hardware/drivers/gpio/
         topicHref: /windows/hardware/drivers/gpio/index
+      - name: Mobile broadband
+        tocHref: /windows/hardware/drivers/mobilebroadband/
+        topicHref: /windows/hardware/drivers/mobilebroadband/index
       - name: Multifunction
         tocHref: /windows/hardware/drivers/multifunction/
         topicHref: /windows/hardware/drivers/multifunction/index
@@ -60,6 +78,9 @@
       - name: NFC
         tocHref: /windows/hardware/drivers/nfc/
         topicHref: /windows/hardware/drivers/nfc/index
+      - name: Partner Application Development
+        tocHref: /windows/hardware/drivers/partnerapps/
+        topicHref: /windows/hardware/drivers/partnerapps/index
       - name: PCI
         tocHref: /windows/hardware/drivers/pci/
         topicHref: /windows/hardware/drivers/pci/index
@@ -78,6 +99,9 @@
       - name: SD
         tocHref: /windows/hardware/drivers/sd/
         topicHref: /windows/hardware/drivers/sd/index
+      - name: Sensors
+        tocHref: /windows/hardware/drivers/sensors/
+        topicHref: /windows/hardware/drivers/sensors/index        
       - name: SPB
         tocHref: /windows/hardware/drivers/spb/
         topicHref: /windows/hardware/drivers/spb/index
@@ -99,3 +123,6 @@
       - name: Windows driver samples
         tocHref: /windows/hardware/drivers/samples/
         topicHref: /windows/hardware/drivers/samples/index
+      - name: Windows portable devices
+        tocHref: /windows/hardware/drivers/portable/
+        topicHref: /windows/hardware/drivers/portable/index

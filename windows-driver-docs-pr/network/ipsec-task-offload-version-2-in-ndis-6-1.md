@@ -7,6 +7,7 @@ keywords: ["IPsec offload WDK TCP/IP transport , version 2", "IPsecOV2 WDK TCP/I
 
 # IPsec Task Offload Version 2 in NDIS 6.1
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-ipsec-task-offload-version-2-in-ndis-6-1-ng"></a>
 

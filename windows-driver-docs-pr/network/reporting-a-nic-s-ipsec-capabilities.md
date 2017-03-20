@@ -7,6 +7,7 @@ keywords: ["task offload WDK TCP/IP transport , IPsec tasks", "IPsec offload WDK
 
 # Reporting a NIC's IPsec Capabilities
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-reporting-a-nic-s-ipsec-capabilities-ng"></a>
 

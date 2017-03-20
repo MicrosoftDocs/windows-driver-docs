@@ -7,6 +7,7 @@ keywords: ["IPsecOV2 WDK TCP/IP transport , capabilities"]
 
 # Reporting a NIC's IPsec Offload Version 2 Capabilities
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-reporting-a-nic-s-ipsec-offload-version-2-capabilities-ng"></a>
 

@@ -7,6 +7,7 @@ keywords: ["security associations WDK IPsec offload", "SAs WDK IPsec offload", "
 
 # Adding a Security Association to a NIC
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-adding-a-security-association-to-a-nic-ng"></a>
 
