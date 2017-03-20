@@ -8,7 +8,7 @@ This topic describes how to preview and query power management capabilities in a
 
 Typically, a client driver calls [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md) to set the power capabilities of the network adapter.
 
-The client then uses standard WDF event callbacks to receive notification of power transitions.  For more info, see [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
+The client registers optional WDF event callbacks such as [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) and [*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848) to receive notification of power transitions.  For more info, see [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
 
 The following example shows how to initialize and configure a NETPOWERSETTINGS object.  The client typically does this in its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) callback:
 
