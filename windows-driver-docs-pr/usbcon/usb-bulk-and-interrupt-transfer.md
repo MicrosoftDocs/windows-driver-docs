@@ -85,7 +85,7 @@ An application or a driver on the host always initiates a bulk transfer to send 
 
 Let's see how the client driver submits the request for a bulk transfer as a result of an application's or another driver's request. Alternatively, the driver can initiate the transfer on its own. Irrespective of the approach, a driver must have the transfer buffer and the request in order to initiate the bulk transfer.
 
-For a KMDF driver, the request is described in a framework request object (see [Framework Request Object Reference](kmdf-framework_request_object_reference)). The client driver calls methods of the request object by specifying the WDFREQUEST handle to send the request to the USB driver stack. If the client driver is sending a bulk transfer in response to a request from an application or another driver, the framework creates a request object and delivers the request to the client driver by using a framework queue object. In that case, the client driver may use that request for the purposes of sending the bulk transfer. If the client driver initiated the request, the driver may choose to allocate its own request object.
+For a KMDF driver, the request is described in a framework request object (see [WDF Request Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265664)). The client driver calls methods of the request object by specifying the WDFREQUEST handle to send the request to the USB driver stack. If the client driver is sending a bulk transfer in response to a request from an application or another driver, the framework creates a request object and delivers the request to the client driver by using a framework queue object. In that case, the client driver may use that request for the purposes of sending the bulk transfer. If the client driver initiated the request, the driver may choose to allocate its own request object.
 
 If the application or another driver sent or requested data, the transfer buffer is passed to the driver by the framework. Alternatively, the client driver can allocate the transfer buffer and create the request object if the driver initiates the transfer on its own.
 
@@ -106,7 +106,7 @@ Consider an example scenario, where an application wants to read or write data t
 
 The I/O Manager receives the request, creates an I/O Request Packet (IRP), and forwards it to the client driver.
 
-The framework intercepts the request, creates a framework request object, and adds it to the framework queue object. The framework then notifies the client driver that a new request is waiting to be processed. That notification is done by invoking the driver’s queue callback routines for [*EvtIoRead*](kmdf-evtioread) or [*EvtIoWrite*](kmdf-evtiowrite).
+The framework intercepts the request, creates a framework request object, and adds it to the framework queue object. The framework then notifies the client driver that a new request is waiting to be processed. That notification is done by invoking the driver’s queue callback routines for [*EvtIoRead*](https://msdn.microsoft.com/library/windows/hardware/ff541776) or [*EvtIoWrite*](https://msdn.microsoft.com/library/windows/hardware/ff541813).
 
 When the framework delivers the request to the client driver, it receives these parameters:
 
@@ -114,7 +114,7 @@ When the framework delivers the request to the client driver, it receives these 
 -   WDFREQUEST handle to the framework request object that contains details about this request.
 -   The transfer length, that is, the number of bytes to read or write.
 
-In the client driver's implementation of [*EvtIoRead*](kmdf-evtioread) or [*EvtIoWrite*](kmdf-evtiowrite), the driver inspects the request parameters and can optionally perform validation checks.
+In the client driver's implementation of [*EvtIoRead*](https://msdn.microsoft.com/library/windows/hardware/ff541776) or [*EvtIoWrite*](https://msdn.microsoft.com/library/windows/hardware/ff541813), the driver inspects the request parameters and can optionally perform validation checks.
 
 If you are using streams of a SuperSpeed bulk endpoint, you will send the request in an URB because KMDF does not support streams intrinsically. For information about submitting a request for transfer to streams of a bulk endpoint, see [How to open and close static streams in a USB bulk endpoint](how-to-open-streams-in-a-usb-endpoint.md).
 
@@ -124,7 +124,7 @@ If you are not using streams, you can use KMDF defined methods to send the reque
 
 Before you begin, make sure that you have this information:
 
--   The client driver must have created the framework USB target device object and obtained the WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](kmdf-wdfusbtargetdevicecreatewithparameters) method.
+-   The client driver must have created the framework USB target device object and obtained the WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method.
 
     If you are using the USB templates that are provided with Microsoft Visual Studio Professional 2012, the template code performs those tasks. The template code obtains the handle to the target device object and stores in the device context. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
 
@@ -136,10 +136,10 @@ Before you begin, make sure that you have this information:
 
 ### <a href="" id="step-1--get-the-transfer-buffer--"></a>Step 1: Get the transfer buffer.
 
-The transfer buffer or the transfer buffer MDL contains the data to send or receive. This topic assumes that you are sending or receiving data in a transfer buffer. The transfer buffer is described in a WDF memory object (see [Framework Memory Object Reference](kmdf-framework_memory_object_reference)). To get the memory object associated with the transfer buffer, call one of these methods:
+The transfer buffer or the transfer buffer MDL contains the data to send or receive. This topic assumes that you are sending or receiving data in a transfer buffer. The transfer buffer is described in a WDF memory object (see [WDF Memory Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265645)). To get the memory object associated with the transfer buffer, call one of these methods:
 
--   For a bulk IN transfer request, call the [**WdfRequestRetrieveOutputMemory**](kmdf-wdfrequestretrieveoutputmemory) method.
--   For a bulk OUT transfer request, call the [**WdfRequestRetrieveInputMemory**](kmdf-wdfrequestretrieveinputmemory) method.
+-   For a bulk IN transfer request, call the [**WdfRequestRetrieveOutputMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550019) method.
+-   For a bulk OUT transfer request, call the [**WdfRequestRetrieveInputMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550015) method.
 
 The client driver does not need to release this memory. The memory is associated with the parent request object and is released when the parent is released.
 
@@ -149,15 +149,15 @@ You can send the transfer request asynchronously or synchronously.
 
 These are the asynchronous methods:
 
--   [**WdfUsbTargetPipeFormatRequestForRead**](kmdf-wdfusbtargetpipeformatrequestforread)
--   [**WdfUsbTargetPipeFormatRequestForWrite**](kmdf-wdfusbtargetpipeformatrequestforwrite)
+-   [**WdfUsbTargetPipeFormatRequestForRead**](https://msdn.microsoft.com/library/windows/hardware/ff551136)
+-   [**WdfUsbTargetPipeFormatRequestForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff551141)
 
-The methods in this list format the request. If you send the request asynchronously, set a pointer to the driver-implemented completion routine by calling the [**WdfRequestSetCompletionRoutine**](kmdf-wdfrequestsetcompletionroutine) method (described in the next step). To send the request, call the [**WdfRequestSend**](kmdf-wdfrequestsend) method.
+The methods in this list format the request. If you send the request asynchronously, set a pointer to the driver-implemented completion routine by calling the [**WdfRequestSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550030) method (described in the next step). To send the request, call the [**WdfRequestSend**](https://msdn.microsoft.com/library/windows/hardware/ff550027) method.
 
 If you send the request synchronously, call these methods:
 
--   [**WdfUsbTargetPipeReadSynchronously**](kmdf-wdfusbtargetpipereadsynchronously)
--   [**WdfUsbTargetPipeWriteSynchronously**](kmdf-wdfusbtargetpipewritesynchronously)
+-   [**WdfUsbTargetPipeReadSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff551155)
+-   [**WdfUsbTargetPipeWriteSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff551163)
 
 For code examples, see the Examples section of the reference topics for those methods.
 ### Step 3: Implement a completion routine for the request.
@@ -166,8 +166,8 @@ If the request is sent asynchronously, you must implement a completion routine t
 
 -   WDFREQUEST handle to the request object.
 -   WDFIOTARGET handle to the I/O target object for the request.
--   A pointer to a [**WDF\_REQUEST\_COMPLETION\_PARAMS**](kmdf-wdf_request_completion_params) structure that contains completion information. USB-specific information is contained in the **CompletionParams-&gt;Parameters.Usb** member.
--   WDFCONTEXT handle to the context that the driver specified in its call to [**WdfRequestSetCompletionRoutine**](kmdf-wdfrequestsetcompletionroutine).
+-   A pointer to a [**WDF\_REQUEST\_COMPLETION\_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552454) structure that contains completion information. USB-specific information is contained in the **CompletionParams-&gt;Parameters.Usb** member.
+-   WDFCONTEXT handle to the context that the driver specified in its call to [**WdfRequestSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff550030).
 
 In the completion routine, perform these tasks:
 
@@ -180,7 +180,7 @@ In the completion routine, perform these tasks:
 
     In a simple transfer where the USB driver stack sends all the requested bytes in one data packet, you can check compare the **Length** value with the number of bytes requested. If the USB driver stack transfers the request in multiple data packets, you must keep track of the number of bytes transferred and the remaining number of bytes.
 
--   If total number of bytes were transferred, complete the request. If an error condition occurred, complete the request with the returned error code. Complete the request by calling the [**WdfRequestComplete**](kmdf-wdfrequestcomplete) method. If you want to set information, such as the number of bytes transferred, call [**WdfRequestCompleteWithInformation**](kmdf-wdfrequestcompletewithinformation).
+-   If total number of bytes were transferred, complete the request. If an error condition occurred, complete the request with the returned error code. Complete the request by calling the [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) method. If you want to set information, such as the number of bytes transferred, call [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549945withinformation).
 -   Make sure that when you complete the request with information, the number of bytes must be equal to or less than the number of bytes requested. The framework validates those values. If length set in the completed request is greater than the original request length, a bugcheck can occur.
 
 This example code shows how the client driver can submit a bulk transfer request. The driver sets a completion routine. That routine is shown in the next code block.

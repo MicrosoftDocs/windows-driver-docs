@@ -73,7 +73,7 @@ The UCM class extension keeps the operating system informed about the changes in
 
 -   **Data role configuration**
 
-    On USB Type-C systems, the data role (host or function) depends on the status of the CC pins of the connector. Your client driver reads the CC line (see [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md#hardware)) status from your port controller to determine whether the port has resolved to an Upstream Facing Port (UFP) or Downstream Facing Port (UFP). It reports that information to the class extension so that it can report the current role to USB role-switch drivers.
+    On USB Type-C systems, the data role (host or function) depends on the status of the CC pins of the connector. Your client driver reads the CC line (see [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)) status from your port controller to determine whether the port has resolved to an Upstream Facing Port (UFP) or Downstream Facing Port (UFP). It reports that information to the class extension so that it can report the current role to USB role-switch drivers.
 
     **Note**  USB role-switch drivers are used on Windows 10 Mobile systems. On Windows 10 for desktop editions systems, communication between the class extension and the role-switch drivers is optional. Such systems might not use a dual-role controller, in which case, the role-switch drivers are not used.
 
@@ -111,7 +111,7 @@ The UCM connector object (UCMCONNECTOR) represents the USB Type-C connector and 
 
 Here is the summary of the sequence in which the client driver retrieves a UCMCONNECTOR handle for the connector. Perform these tasks in your driver's
 
-1.  Call [**UcmInitializeDevice**](https://msdn.microsoft.com/library/windows/hardware/mt187920) by passing the reference to a [**UCM\_MANAGER\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187932) structure. The driver must call this method in the [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) callback function before calling [**WdfDeviceCreate**](wdf-wdfdevicecreate).
+1.  Call [**UcmInitializeDevice**](https://msdn.microsoft.com/library/windows/hardware/mt187920) by passing the reference to a [**UCM\_MANAGER\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187932) structure. The driver must call this method in the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function before calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 2.  Specify the initialization parameters for the USB Type-C connector in a [**UCM\_CONNECTOR\_TYPEC\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187930) structure. This includes the operating mode of the connector, whether it's a downstream-facing port, upstream-facing port, or is dual-role capable. It also specifies the USB Type-C current levels when the connector is a power source. A USB Type-C connector can be designed such that it can act a 3.5 mm audio jack. If the hardware supports the feature, the connector object must be initialized accordingly.
 
     In the structure, you must also register the client driver's callback function for handling data roles.
@@ -130,7 +130,7 @@ Here is the summary of the sequence in which the client driver retrieves a UCMCO
     [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187819)  
     Sets the power role of the connector to the specified role when attached to a partner connector.
 
-4.  Call [**UcmConnectorCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187909) and retrieve a UCMCONNECTOR handle for the connector. Make sure you call this method after the client driver has created the framework device object by calling [**WdfDeviceCreate**](wdf-wdfdevicecreate). An appropriate place for this call can be in driver's [*EVT\_WDF\_DEVICE\_PREPARE\_HARDWARE*](wdf-evtdevicepreparehardware) or [*EVT\_WDF\_DEVICE\_D0\_ENTRY*](wdf-evtdeviced0entry).
+4.  Call [**UcmConnectorCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187909) and retrieve a UCMCONNECTOR handle for the connector. Make sure you call this method after the client driver has created the framework device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). An appropriate place for this call can be in driver's [*EVT\_WDF\_DEVICE\_PREPARE\_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) or [*EVT\_WDF\_DEVICE\_D0\_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/ff540848).
 
 ```
 EVT_UCM_CONNECTOR_SET_DATA_ROLE     EvtSetDataRole;

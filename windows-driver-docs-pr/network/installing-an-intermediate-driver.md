@@ -11,7 +11,7 @@ keywords: ["intermediate drivers WDK networking , installation", "NDIS intermedi
 ## <a href="" id="ddk-installing-intermediate-drivers-ng"></a>
 
 
-ntermediate drivers require two INF files. One of the INF files defines the installation parameters for the protocol lower edge. The other INF file defines the installation parameters for the virtual miniport upper edge.
+Intermediate drivers require two INF files. One of the INF files defines the installation parameters for the protocol lower edge. The other INF file defines the installation parameters for the virtual miniport upper edge.
 
 The protocol INF file is the primary INF file. After the protocol lower edge is installed, the virtual miniport upper edge is installed, based on references to the miniport driver INF file that are defined in the protocol INF file.
 

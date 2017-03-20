@@ -7,6 +7,7 @@ keywords: ["task offload WDK TCP/IP transport , IPsec tasks", "IPsec offload WDK
 
 # Offloading IPsec Tasks
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-offloading-ipsec-tasks-ng"></a>
 

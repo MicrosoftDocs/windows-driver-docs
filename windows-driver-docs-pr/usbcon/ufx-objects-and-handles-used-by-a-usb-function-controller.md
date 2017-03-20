@@ -30,14 +30,14 @@ title: UFX objects and handles used by a USB function client driver
 
 USB function class extension (UFX) uses the WDF object functionality to define these USB-specific UFX objects.
 
-These objects are handles to WDF objects and are created by UFX at the request of the function client driver. Optionally client driver can associate a context with these objects which can be passed at the time of the creation. Every WDF object created by UFX can potentially have two device contexts: One device context set by UFX at the object creation time; the other device context passed in by client driver and is set in UFX by using [**WdfObjectAllocateContext**](wdf-wdfobjectallocatecontext) after the WDF object is created.
+These objects are handles to WDF objects and are created by UFX at the request of the function client driver. Optionally client driver can associate a context with these objects which can be passed at the time of the creation. Every WDF object created by UFX can potentially have two device contexts: One device context set by UFX at the object creation time; the other device context passed in by client driver and is set in UFX by using [**WdfObjectAllocateContext**](https://msdn.microsoft.com/library/windows/hardware/ff548723) after the WDF object is created.
 
 ## USB device object
 
 
 **UFXDEVICE**
 
-Represents the USB device created by the controller. The object is responsible for managing USB states according to the USB protocol specification and managing one or more endpoints associated with the USB device. The function controller driver creates this object within the [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) callback by calling the [**UfxDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187951) method.
+Represents the USB device created by the controller. The object is responsible for managing USB states according to the USB protocol specification and managing one or more endpoints associated with the USB device. The function controller driver creates this object within the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback by calling the [**UfxDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187951) method.
 
 [*EVT\_UFX\_DEVICE\_HOST\_CONNECT*](https://msdn.microsoft.com/library/windows/hardware/mt187852)  
 Initiates connection with the host.

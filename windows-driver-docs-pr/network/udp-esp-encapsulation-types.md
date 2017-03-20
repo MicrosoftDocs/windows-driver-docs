@@ -7,6 +7,7 @@ keywords: ["UDP-encapsulated ESP packets WDK IPsec offload , encapsulation types
 
 # UDP-ESP Encapsulation Types
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-udp-esp-encapsulation-types-ng"></a>
 

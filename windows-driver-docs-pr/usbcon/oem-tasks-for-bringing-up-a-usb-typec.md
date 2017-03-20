@@ -60,7 +60,7 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 <tr class="even">
 <td><img src="images/design.png" alt="Design" /></td>
 <td><p>The main component are: the USB Type-C connector and its port or PD controller that manages the CC pin logic for the connector. Such systems typically have a dual-role controller that can swap the USB role from host to function. It has Display-Out module that allows video signal to be transmitted over USB. Optionally it can support BC1.2 charger detection.</p>
-<p>[Hardware design of a USB Type-C system](architecture--usb-type-c-in-a-windows-system.md#hardware)</p>
+<p>[Hardware design of a USB Type-C system](architecture--usb-type-c-in-a-windows-system.md)</p>
 <p>[Hardware design for a USB Type-C system with an embedded controller](ucsi.md)</p>
 <p>Consider recommendations for the design and development of USB components, including minimum hardware requirements, Windows Hardware Compatibility Program requirements, and other recommendations that build on those requirements.</p>
 <p>[Hardware component guidelines USB](https://msdn.microsoft.com/library/windows/hardware/dn915125)</p></td>
