@@ -34,7 +34,7 @@ Three events trigger the Windows provisioning engine to look for a change in set
 
 ## <a href="" id="SIMinfo"></a> What SIM information from modems does COSA use?
 
-For MO/MVNO discovery, Windows tries to make the best match for an available profile in the COSA database using IMSI, MCC, MNC and SPN from the SIM in the modem.
+For MO/MVNO discovery, Windows tries to make the best match for an available profile in the COSA database using SPN from the SIM in the modem.
 
 ## <a href="" id="APNmatch"></a> Is there an algorithm to make the best APN match?
 
