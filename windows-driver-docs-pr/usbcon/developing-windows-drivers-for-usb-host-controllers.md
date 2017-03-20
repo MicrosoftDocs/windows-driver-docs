@@ -49,10 +49,10 @@ title: Developing Windows drivers for USB host controllers
 <p></p>
 <dl>
 <dt>Host controller object (UCXCONTROLLER)</dt>
-<dd><p>Represents the host controller that is created by the host controller driver. The driver must create only one host controller object per host controller instance. Typically created within the [<em>EvtDriverDeviceAdd</em>](wdf-evtdriverdeviceadd) callback by calling the [<strong>UcxControllerCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188033) method.</p>
+<dd><p>Represents the host controller that is created by the host controller driver. The driver must create only one host controller object per host controller instance. Typically created within the [<em>EvtDriverDeviceAdd</em>](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback by calling the [<strong>UcxControllerCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188033) method.</p>
 </dd>
 <dt>Root hub object (UCXROOTHUB)</dt>
-<dd><p>Gets and controls the status of the root ports of the host controller. Created by the host controller driver typically within the [<em>EvtDriverDeviceAdd</em>](wdf-evtdriverdeviceadd) callback by calling the [<strong>UcxRootHubCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188048) method.</p>
+<dd><p>Gets and controls the status of the root ports of the host controller. Created by the host controller driver typically within the [<em>EvtDriverDeviceAdd</em>](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback by calling the [<strong>UcxRootHubCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188048) method.</p>
 </dd>
 <dt>USB device object (UCXUSBDEVICE)</dt>
 <dd><p>Represents a physical USB device connected to the bus. Created by the host controller driver typically within the [<em>EVT_UCX_CONTROLLER_USBDEVICE_ADD</em>](https://msdn.microsoft.com/library/windows/hardware/mt187823) callback by calling the [<strong>UcxUsbDeviceCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188052) method.</p>

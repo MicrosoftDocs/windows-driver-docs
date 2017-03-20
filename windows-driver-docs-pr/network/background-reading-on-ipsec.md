@@ -7,6 +7,7 @@ keywords: ["ESP-protected packets WDK IPsec offload , background reading", "AH-p
 
 # Background Reading on IPsec
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-background-reading-on-ipsec-ng"></a>
 

@@ -17,6 +17,7 @@ This section describes the following components of scalable networking.
 -   [Receive Segment Coalescing (RSC)](receive-segment-coalescing--rsc-.md)
 -   [Receive Side Scaling](ndis-receive-side-scaling2.md)
 -   [TCP Chimney Offload](ndis-tcp-chimney-offload.md)
+    - \[The TCP chimney offload feature is deprecated and should not be used.\]
 -   [TCP/IP Offload](tcp-ip-offload.md)
 
  

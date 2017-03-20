@@ -60,11 +60,11 @@ UDE class extension and the client driver use particular WDF objects that repres
 ## Initialize the emulated host controller
 
 
-Here is the summary of the sequence in which the client driver retrieves a WDFDEVICE handle for the emulated host controller. We recommend that the driver perform these tasks in its [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) callback function.
+Here is the summary of the sequence in which the client driver retrieves a WDFDEVICE handle for the emulated host controller. We recommend that the driver perform these tasks in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
-1.  Call [**UdecxInitializeWdfDeviceInit**](https://msdn.microsoft.com/library/windows/hardware/mt595953) by passing the reference to [WDFDEVICE\_INIT](wdf-wdfdevice_init) passed by the framework.
-2.  Initialize the [WDFDEVICE\_INIT](wdf-wdfdevice_init) structure with setup information such that this device appears similar to other USB host controllers. For example assign an FDO name and a symbolic link, register a device interface with the Microsoft-provided GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER GUID as the device interface GUID so that applications can open a handle to the device.
-3.  Call [**WdfDeviceCreate**](wdf-wdfdevicecreate) to create the framework device object.
+1.  Call [**UdecxInitializeWdfDeviceInit**](https://msdn.microsoft.com/library/windows/hardware/mt595953) by passing the reference to [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951) passed by the framework.
+2.  Initialize the [WDFDEVICE\_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951) structure with setup information such that this device appears similar to other USB host controllers. For example assign an FDO name and a symbolic link, register a device interface with the Microsoft-provided GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER GUID as the device interface GUID so that applications can open a handle to the device.
+3.  Call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) to create the framework device object.
 4.  Call [**UdecxWdfDeviceAddUsbDeviceEmulation**](https://msdn.microsoft.com/library/windows/hardware/mt627990) and register the client driver's callback functions.
 
     Here are the callback functions associated with the host controller object, which are invoked by UDE class extension. These functions must be implemented by the client driver.
@@ -256,7 +256,7 @@ Here is the summary of the sequence in which the client driver retrieves a WDFDE
 
 During initialization, the UDE client driver exposes the GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER device interface GUID. This enables the driver to receive IOCTL requests from an application that opens a device handle by using that GUID. For a list of IOCTL control codes, see [USB IOCTLs for applications and services](https://msdn.microsoft.com/library/windows/hardware/ff540046#um-ioctl) with Device interface GUID: GUID\_DEVINTERFACE\_USB\_HOST\_CONTROLLER.
 
-To handle those requests, the client driver registers the [*EvtIoDeviceControl*](wdf-evtiodevicecontrol) event callback. In the implementation, instead of handling the request, the driver can opt to forward the request to the UDE class extension for processing. To forward the request, the driver must call [**UdecxWdfDeviceTryHandleUserIoctl**](https://msdn.microsoft.com/library/windows/hardware/mt627992). If the received IOCTL control code corresponds to a standard request, such as retrieving device descriptors, the class extension processes and completes the request successfully. In this case, **UdecxWdfDeviceTryHandleUserIoctl** completes with TRUE as the return value. Otherwise, the call returns FALSE and the driver must determine how to complete the request. In a simplest implementation, the driver can complete the request with an appropriate failure code by calling [**WdfRequestComplete**](wdf-wdfrequestcomplete).
+To handle those requests, the client driver registers the [*EvtIoDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff541758) event callback. In the implementation, instead of handling the request, the driver can opt to forward the request to the UDE class extension for processing. To forward the request, the driver must call [**UdecxWdfDeviceTryHandleUserIoctl**](https://msdn.microsoft.com/library/windows/hardware/mt627992). If the received IOCTL control code corresponds to a standard request, such as retrieving device descriptors, the class extension processes and completes the request successfully. In this case, **UdecxWdfDeviceTryHandleUserIoctl** completes with TRUE as the return value. Otherwise, the call returns FALSE and the driver must determine how to complete the request. In a simplest implementation, the driver can complete the request with an appropriate failure code by calling [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945).
 
 ```
 
@@ -307,7 +307,7 @@ exit:
 ## Report the capabilities of the host controller
 
 
-Before upper layer drivers can use the capabilities of a USB host controller, the drivers must determine whether those capabilities are supported by the controller. Drivers make such queries by calling [**WdfUsbTargetDeviceQueryUsbCapability**](wdf-wdfusbtargetdevicequeryusbcapability) and [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230). Those calls are forwarded to the USB Device Emulation(UDE) class extension. Upon getting the request, the class extension invokes the client driver's [*EVT\_UDECX\_WDF\_DEVICE\_QUERY\_USB\_CAPABILITY*](https://msdn.microsoft.com/library/windows/hardware/mt595919) implementation. This call is made only after [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) completes, typically in [*EvtDevicePrepareHardware*](wdf-evtdevicepreparehardware) and not after [*EvtDeviceReleaseHardware*](wdf-evtdevicereleasehardware). This is callback function is required.
+Before upper layer drivers can use the capabilities of a USB host controller, the drivers must determine whether those capabilities are supported by the controller. Drivers make such queries by calling [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) and [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230). Those calls are forwarded to the USB Device Emulation(UDE) class extension. Upon getting the request, the class extension invokes the client driver's [*EVT\_UDECX\_WDF\_DEVICE\_QUERY\_USB\_CAPABILITY*](https://msdn.microsoft.com/library/windows/hardware/mt595919) implementation. This call is made only after [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) completes, typically in [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) and not after [*EvtDeviceReleaseHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540890). This is callback function is required.
 
 In the implementation, the client driver must report whether it supports the requested capability. Certain capabilities are not supported by UDE such as static streams.
 
@@ -358,7 +358,7 @@ A virtual USB device behaves similar to a USB device. It supports a configuratio
 
  
 
-Here is the summary of the sequence in which the client driver creates a UDECXUSBDEVICE handle for a UDE device object. The driver must perform these steps after it has retrieved the WDFDEVICE handle for the emulated host controller. We recommend that the driver perform these tasks in its [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) callback function.
+Here is the summary of the sequence in which the client driver creates a UDECXUSBDEVICE handle for a UDE device object. The driver must perform these steps after it has retrieved the WDFDEVICE handle for the emulated host controller. We recommend that the driver perform these tasks in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
 1.  Call [**UdecxUsbDeviceInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/mt627968) to get a pointer to the initialization parameters required to create the device. This structure is allocated by the UDE class extension.
 2.  Register event callback functions by setting members of [**UDECX\_USB\_DEVICE\_STATE\_CHANGE\_CALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/mt628003) and then calling [**UdecxUsbDeviceInitSetStateChangeCallbacks**](https://msdn.microsoft.com/library/windows/hardware/mt627972). Here are the callback functions associated with the UDE device object, which are invoked by the UDE class extension.
@@ -603,7 +603,7 @@ The client driver can simulate the action of a virtual USB device initiating its
 
 The client driver creates UDE endpoint objects to handle data transfers to and from the USB device. The driver creates simple endpoints after creating the UDE device and before reporting the device as plugged in.
 
-Here is the summary of the sequence in which the client driver creates a UDECXUSBENDPOINT handle for a UDE endpoint object. The driver must perform these steps after it has retrieved the UDECXUSBDEVICE handle for the virtual USB device. We recommend that the driver perform these tasks in its [*EvtDriverDeviceAdd*](wdf-evtdriverdeviceadd) callback function.
+Here is the summary of the sequence in which the client driver creates a UDECXUSBENDPOINT handle for a UDE endpoint object. The driver must perform these steps after it has retrieved the UDECXUSBDEVICE handle for the virtual USB device. We recommend that the driver perform these tasks in its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
 1.  Call [**UdecxUsbSimpleEndpointInitAllocate**](https://msdn.microsoft.com/library/windows/hardware/mt627989) to get a pointer to the initialization parameters allocated by the class extension.
 2.  Call [**UdecxUsbEndpointInitSetEndpointAddress**](https://msdn.microsoft.com/library/windows/hardware/mt627986) to set the endpoint address in the initialization parameters.
@@ -793,7 +793,7 @@ exit:
 
 At times, data transfers can fail due to various reasons, such as a stall condition in the endpoint. In the case of failed transfers, the endpoint cannot process requests until the error condition is cleared. When the UDE class extension experiences failed data transfers, it invokes the client driver's [*EVT\_UDECX\_USB\_ENDPOINT\_RESET*](https://msdn.microsoft.com/library/windows/hardware/mt595917) callback function, which the driver registered in the previous call to [**UdecxUsbEndpointInitSetCallbacks**](https://msdn.microsoft.com/library/windows/hardware/mt627985). In the implementation, the driver can choose to clear the HALT state of the pipe and take other necessary steps to clear the error condition.
 
-This call is asynchronous. After the client is finished with the reset operation, driver must complete the request with an appropriate failure code by calling [**WdfRequestComplete**](wdf-wdfrequestcomplete). That call notifies the UDE client extension about the completion of the reset operation with status.
+This call is asynchronous. After the client is finished with the reset operation, driver must complete the request with an appropriate failure code by calling [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945). That call notifies the UDE client extension about the completion of the reset operation with status.
 
 **Note**  If a complex solution is required for error recovery, the client driver has the option of resetting the host controller. This logic can be implemented in the [*EVT\_UDECX\_WDF\_DEVICE\_RESET*](https://msdn.microsoft.com/library/windows/hardware/mt595920) callback function that the driver registered in its [**UdecxWdfDeviceAddUsbDeviceEmulation**](https://msdn.microsoft.com/library/windows/hardware/mt627990) call. If applicable, the driver can reset the host controller and all downstream devices. If the client driver does not need to reset the controller but reset all downstream devices, the driver must specify **UdeWdfDeviceResetActionResetEachUsbDevice** in the configuration parameters during registration. In that case, the class extension invokes *EVT\_UDECX\_WDF\_DEVICE\_RESET* for each connected device.
 
@@ -838,9 +838,9 @@ Completes the URB request with an NTSTATUS code.
 
 The client driver can complete an I/O request on a separate with a DPC. Follow these best practices:
 
--   To ensure compatibility with existing USB drivers, the UDE client must call [**WdfRequestComplete**](wdf-wdfrequestcomplete) at DISPATCH\_LEVEL.
--   If the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) was added to an endpoint's queue and the driver starts processing it synchronously on the calling driver’s thread or DPC, the request must not be completed synchronously. A separate DPC is required for that purpose, which the driver queue by calling [**WdfDpcEnqueue**](wdf-wdfdpcenqueue).
--   When the UDE class extension invokes [*EvtIoCanceledOnQueue*](wdf-evtiocanceledonqueue) or [*EvtRequestCancel*](wdf-evtrequestcancel), the client driver must complete the received URB on a separate DPC from the caller's thread or DPC. To do this, the driver must provide an *EvtIoCanceledOnQueue* callback for its [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) queues.
+-   To ensure compatibility with existing USB drivers, the UDE client must call [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) at DISPATCH\_LEVEL.
+-   If the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) was added to an endpoint's queue and the driver starts processing it synchronously on the calling driver’s thread or DPC, the request must not be completed synchronously. A separate DPC is required for that purpose, which the driver queue by calling [**WdfDpcEnqueue**](https://msdn.microsoft.com/library/windows/hardware/ff547148).
+-   When the UDE class extension invokes [*EvtIoCanceledOnQueue*](https://msdn.microsoft.com/library/windows/hardware/ff541756) or [*EvtRequestCancel*](https://msdn.microsoft.com/library/windows/hardware/ff541817), the client driver must complete the received URB on a separate DPC from the caller's thread or DPC. To do this, the driver must provide an *EvtIoCanceledOnQueue* callback for its [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) queues.
 
  
 

@@ -7,6 +7,7 @@ keywords: ["UDP-encapsulated ESP packets WDK IPsec offload , parser entries", "p
 
 # UDP-ESP SAs and Parser Entries
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-udp-esp-sas-and-parser-entries-ng"></a>
 
