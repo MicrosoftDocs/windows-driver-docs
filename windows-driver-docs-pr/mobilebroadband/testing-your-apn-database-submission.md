@@ -7,7 +7,7 @@ MSHAttr:
 ms.assetid: 8f45dbf0-4f96-4d11-b2a2-41b9e75b5e9b
 ---
 
-# Testing Your COSA/APN database submission
+# Testing your COSA/APN database submission
 
 Before submitting an APN update request to Microsoft, it is important for the MNO or MVNO to validate the APN entries that they are about to submit. Microsoft does not have access to your network, so it is your responsibility to ensure the values that are being submitted are valid and work correctly. 
 

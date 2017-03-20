@@ -51,7 +51,7 @@
 ###### [APN example](apn-example.md)
 #### [COSA/APN database submission](apn-database-submission.md)
 ##### [Planning your COSA/APN database submission](planning-your-apn-database-submission.md)
-##### [Testing Your COSA/APN database submission](testing-your-apn-database-submission.md)
+##### [Testing your COSA/APN database submission](testing-your-apn-database-submission.md)
 ##### [Submitting the COSA/APN database update](submitting-the-apn-database-update.md)
 ### [Service metadata](service-metadata.md)
 #### [Delivering experiences for MVNOs](delivering-experiences-for-mvnos.md)
