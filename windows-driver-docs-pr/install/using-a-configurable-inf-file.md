@@ -61,6 +61,8 @@ The following directives are valid with some caveats:
 
     -   11 (corresponds to %WINDIR%\\System32)
     -   12 (corresponds to %WINDIR%\\System32\\Drivers)
+    -   13 (corresponds to the directory under %WINDIR%\\System32\\DriverStore\\FileRepository where the driver is stored)  
+        **Note:** This location may not be valid on all SKUs
 
 ## Related topics
 
