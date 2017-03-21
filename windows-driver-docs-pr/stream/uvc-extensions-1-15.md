@@ -1,24 +1,24 @@
 ---
-title: 
+title: Microsoft extensions to USB Video Class 1.5 Specification
 author: windows-driver-content
-description: 
+description: Describes Microsoft extensions to the USB Video Class 1.5 Specification that enables new controls as well as the capability to carry well-defined frame-metadata in a standard format.
 ---
 
 # 1 Overview
 
 ## 1.1 Summary
 
-Microsoft’s extension to the [USB Video Class specification](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) enables new controls as well as the capability to carry well-defined frame-metadata in a standard format.
+Microsoft extensions to the [USB Video Class specification](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) enable new controls as well as the capability to carry well-defined frame-metadata in a standard format.
 
 ## 1.2 Architecture Decisions
 
 UVC frame metadata support will be available to ISOCH and BULK endpoints. However, in the case of BULK endpoint, the metadata size will be limited to 240 bytes (due to the fact that all video frame data is transferred in a single video frame packet on BULK endpoints).
 
-UVC metadata support will be only available to frame based payload.
+UVC metadata support will be only available to frame based payloads.
 
 UVC metadata support will be available only through the Media Foundation (MF) capture pipeline.
 
-UVC metadata will be opt-in. Every IHV/OEM that needs metadata support must enable this through a custom INF.
+UVC metadata will be opt-in. Every IHV/OEM that needs metadata support must enable this through a custom INF file.
 
 UVC metadata will only support system allocated memory. VRAM or DX surfaces will not be supported.
 
@@ -30,11 +30,15 @@ UVC metadata will only support system allocated memory. VRAM or DX surfaces will
 
 #### 2.2.1.1 Still Image Capture – Method 2
 
-There have been reports that existing UVC devices do not reliably support the Method 2 described in section 2.4.2.4 (titled “Still Image Capture”) of the document *UVC 1.5 Class specification.pdf* found at [USB Video Class specification](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip). In Windows 10, version 1607 and earlier, the capture pipeline did not leverage Method 2 even if a device advertised support for it per the UVC 1.5 spec.
+Some existing UVC devices may not support Method 2 described in section 2.4.2.4 (Still Image Capture) of the *UVC 1.5 Class specification.pdf* that can be downloaded at the [USB Video Class specification](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) web site. 
 
-In Windows 10, version 1703, devices that desire to leverage this method must additionally use a custom INF for the camera driver (note: the camera driver can be based on the Windows USBVIDEO.SYS or can be based on a custom driver binary, but a custom INF is required for the given hardware to enable Method 2 still image capture).
+In Windows 10, version 1607 and earlier, the capture pipeline did not leverage Method 2, even if a device advertised support for it per the UVC 1.5 spec.
 
-The custom INF file (based on either custom UVC driver or inbox UVC driver) shall include the following AddReg entry:
+In Windows 10, version 1703, devices that leverage this method must use a custom INF file for the camera driver, but a custom INF is required for the given hardware to enable Method 2 still image capture).
+
+Note: The camera driver can be based on the Windows USBVIDEO.SYS or can be based on a custom driver binary.
+
+The custom INF file, based on either custom UVC driver or inbox UVC driver, should include the following AddReg entry:
 
 **EnableDependentStillPinCapture**: REG_DWORD: 0x0 (Disabled) to 0x1 (Enabled)
 
@@ -44,29 +48,19 @@ An example for the custom INF section would be as follows:
 
 ```
 [USBVideo.NT.Interfaces]
-
 AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,USBVideo.Interface
-
 AddInterface=%KSCATEGORY_RENDER%,GLOBAL,USBVideo.Interface
-
 AddInterface=%KSCATEGORY_VIDEO%,GLOBAL,USBVideo.Interface
-
 AddInterface=%KSCATEGORY_RENDER_EXT%,GLOBAL,USBVideo.Interface
-
 AddInterface=%KSCATEGORY_VIDEO_CAMERA%,GLOBAL,USBVideo.Interface
 
 [USBVideo.Interface]
-
 AddReg=USBVideo.Interface.AddReg
 
 [USBVideo.Interface.AddReg]
-
 HKR,,CLSID,,%ProxyVCap.CLSID%
-
 HKR,,FriendlyName,,%USBVideo.DeviceDesc%
-
 HKR,,RTCFlags,0x00010001,0x00000010
-
 HKR,,EnableDependentStillPinCapture,0x00010001,0x00000001
 ```
 
@@ -80,7 +74,7 @@ DEFINE_GUID(MS_CAMERA_CONTROL_XU,
     0xf3f95dc, 0x2632, 0x4c4e, 0x92, 0xc9, 0xa0, 0x47, 0x82, 0xf4, 0x3b, 0xc8);
 ```
 
-A Microsoft-XU implemented by the device firmware will house the new controls defined in the following sub-sections. The following request definitions apply to all these controls unless an overriding definition is specified explicitly for that control. Refer to “UVC 1.5 Class specification.pdf” for definitions of D3, D4, GET_INFO etc.
+A Microsoft-XU implemented by the device firmware will house the new controls defined in the following sub-sections. The following request definitions apply to all these controls unless an overriding definition is specified explicitly for that control. Refer to **UVC 1.5 Class specification.pdf** for definitions of D3, D4, GET_INFO, and so on.
 
 GET_INFO request shall report the control without AutoUpdate and Asynchronous capabilities (i.e. D3 and D4 bits shall be set to 0).
 
@@ -100,34 +94,34 @@ The following table maps the control selectors for Microsoft-XU to their respect
 
 | Control Selector                    | Value | Bit Position (bmControls Field) |
 |-------------------------------------|-------|---------------------------------|
-| MSXU_CONTROL_UNDEFINED            | 0x00  | NA                              |
-| MSXU_FOCUS_CONTROL                | 0x01  | D0                              |
-| MSXU_EXPOSURE_CONTROL             | 0x02  | D1                              |
-| MSXU_EVCOMPENSATION_CONTROL       | 0x03  | D2                              |
-| MSXU_WHITEBALANCE_CONTROL         | 0x04  | D3                              |
-| MSXU_ISO_CONTROL                  | 0x05  | D4                              |
-| MSXU_FACE_AUTHENTICATION_CONTROL | 0x06  | D5                              |
-| MSXU_CAMERA_EXTRINSICS_CONTROL   | 0x07  | D6                              |
-| MSXU_CAMERA_INTRINSICS_CONTROL   | 0x08  | D7                              |
+| MSXU_CONTROL_UNDEFINED              | 0x00  | NA                              |
+| MSXU_FOCUS_CONTROL                  | 0x01  | D0                              |
+| MSXU_EXPOSURE_CONTROL               | 0x02  | D1                              |
+| MSXU_EVCOMPENSATION_CONTROL         | 0x03  | D2                              |
+| MSXU_WHITEBALANCE_CONTROL           | 0x04  | D3                              |
+| MSXU_ISO_CONTROL                    | 0x05  | D4                              |
+| MSXU_FACE_AUTHENTICATION_CONTROL    | 0x06  | D5                              |
+| MSXU_CAMERA_EXTRINSICS_CONTROL      | 0x07  | D6                              |
+| MSXU_CAMERA_INTRINSICS_CONTROL      | 0x08  | D7                              |
 
 #### 2.2.2.1 Cancelable Asynchronous Controls
 
 A Cancelable Asynchronous control is defined here by leveraging the Autoupdate capability.
 
-GET_INFO request shall report such control as an Autoupdate Control (i.e. D3 bit shall be set to 1) but not as an Asynchronous control (i.e. D4 bit shall be set to 0).
+GET_INFO request shall report such control as an Autoupdate Control (for example, D3 bit shall be set to 1) but not as an Asynchronous control (for example, D4 bit shall be set to 0).
 
 For such control, a SET_CUR request can be issued to set a new value (a SET_CUR(NORMAL) request wherein **bmOperationFlags:D0** bit is set to 0) or cancel a previous SET_CUR(NORMAL) request (a SET_CUR(CANCEL) request wherein **bmOperationFlags:D0** bit is set to 1). A SET_CUR request should be completed by the device immediately as soon as the request is received (even though the hardware is not configured or converged to the new settings requested). For each SET_CUR(NORMAL) request, the device produces a corresponding Control Change interrupt for this control raised when the new settings have been applied or when a SET_CUR(CANCEL) request arrives; until this interrupt arrives, the SET_CUR(NORMAL) request will be considered to be in-progress. When a SET_CUR(NORMAL) request is in-progress, additional SET_CUR(NORMAL) requests for this particular control shall result in a failure. A SET_CUR(CANCEL) request shall always succeed. If there is nothing to cancel, then the device just does nothing.
 
-The Control Change interrupt’s payload shall have the bit **bmOperationFlags:D0** set to 0 if the settings specified by SET_CUR(NORMAL) were applied (i.e. convergence happened) and set to 1 if the settings were not applied because of a SET_CUR(CANCEL) request that came after the SET_CUR(NORMAL) request (i.e. convergence hasn’t happened yet).
+The Control Change interrupt payload shall have the bit **bmOperationFlags:D0** set to 0 if the settings specified by SET_CUR(NORMAL) were applied (i.e. convergence happened) and set to 1 if the settings were not applied because of a SET_CUR(CANCEL) request that came after the SET_CUR(NORMAL) request (i.e. convergence hasn’t happened yet).
 
 #### 2.2.2.2 Focus Control
 
 This control allows the host software to specify the focus settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-| Control Selector   | MSXU_FOCUS_CONTROL                                                            |
+| Control Selector   | MSXU_FOCUS_CONTROL                                                              |
 |--------------------|---------------------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR |
-| **wLength **       | 12                                                                              |
+| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR         |
+| **wLength**        | 12                                                                              |
 | Offset             | Field                                                                           |
 | 0                  | **bmOperationFlags**                                                            |
 | 1                  | **bmControlFlags**                                                              |
@@ -155,10 +149,10 @@ D2 is incompatible with D16, D17, D18, D19 and D20 if D0 is not set.
 
 This control allows the host software to specify the exposure settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-| Control Selector   | MSXU_EXPOSURE_CONTROL                                                         |
+| Control Selector   | MSXU_EXPOSURE_CONTROL                                                           |
 |--------------------|---------------------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR |
-| **wLength **       | 15                                                                              |
+| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR         |
+| **wLength**        | 15                                                                              |
 | Offset             | Field                                                                           |
 | 0                  | **bmControlFlags**                                                              |
 | 7                  | **qwValue**                                                                     |
@@ -199,10 +193,10 @@ GET_DEF, GET_CUR, SET_CUR requests shall follow the definitions in section 2.2.2
 
 This control allows the host software to specify the white balance settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-| Control Selector   | MSXU_WHITEBALANCE_CONTROL                                                     |
+| Control Selector   | MSXU_WHITEBALANCE_CONTROL                                                       |
 |--------------------|---------------------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR |
-| **wLength **       | 15                                                                              |
+| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR         |
+| **wLength**        | 15                                                                              |
 | Offset             | Field                                                                           |
 | 0                  | **bmControlFlags**                                                              |
 | 7                  | **dwValueFormat**                                                               |
@@ -225,6 +219,8 @@ For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmCon
     1.  #### ISO Control
 
 This control allows the host software to specify the ISO film speed settings for still image capture on the camera. This control is only applicable to the specified video/still endpoints (which is a subset of all video/still endpoints on all video streaming interfaces associated with the video control interface). If Method 1 for still capture is used, this control should be supported on the video endpoint. If Method 2 or Method 3 for still capture is used, this control should be supported on the still endpoint.
+
+TBD
 
 | Control Selector   | MSXU_ISO_CONTROL                                                              |
 |--------------------|---------------------------------------------------------------------------------|
@@ -250,6 +246,8 @@ This control allows the host software to specify whether the camera supports str
 
 This control is only applicable to cameras that can produce Infra-Red (IR) data and is only applicable to the specified video endpoints (which is a subset of all video endpoints on all video streaming interfaces associated with the video control interface).
 
+TBD
+
 | Control Selector   | MSXU_FACE_AUTHENTICATION_CONTROL                                             |
 |--------------------|---------------------------------------------------------------------------------|
 | Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR |
@@ -271,6 +269,8 @@ For GET_DEF / GET_CUR / SET_CUR requests, a bit set to 1 indicates that the corr
 #### Camera Extrinsics Control
 
 This control allows the host software to obtain the camera extrinsics data for endpoints on video streaming interfaces associated with the video control interface. The data thus obtained for each endpoint will show up as attribute MFStreamExtension_CameraExtrinsics on the attribute store for the corresponding stream (obtained using IMFDeviceTransform::GetOutputStreamAttributes call).
+
+TBD
 
 | Control Selector   | MSXU_CAMERA_EXTRINSICS_CONTROL                                     |
 |--------------------|-----------------------------------------------------------------------|
@@ -316,7 +316,7 @@ GET_DEF request shall list all endpoints that have the intrinsics information av
 
 The design for standard-format frame-metadata builds on the UVC custom metadata design from Windows 10. In Windows 10, custom metadata is supported for UVC by using a custom INF for the camera driver (note: the camera driver can be based on the Windows USBVIDEO.SYS, but a custom INF is required for the given hardware for metadata to come through). If MetadataBufferSizeInKB&lt;PinIndex&gt; registry entry is present and non-zero, then custom metadata is supported for that pin and the value indicates the buffer size used for the metadata. The &lt;PinIndex&gt; field indicates a 0 based index of the video pin index.
 
-In Redstone2, a camera driver can signal support for Microsoft standard-format metadata by including the following AddReg entry:
+In Windows 10, version 1703, a camera driver can signal support for Microsoft standard-format metadata by including the following AddReg entry:
 
 **StandardFormatMetadata&lt;PinIndex&gt;**: REG_DWORD: 0x0 (NotSupported) to 0x1 (Supported)
 
@@ -357,7 +357,7 @@ The Size field is set to sizeof(KSCAMERA_METADATA_ITEMHEADER) + sizeof(Metadata 
 
 During a transfer over UVC for frame based video, the video frame is packetized into a series of packets, each preceded by a UVC Payload Header. Each UVC Payload Header is defined by the USB Video Class Driver Frame Based Payload specification:
 
-> **Payload Header **
+> **Payload Header**
 >
 > The following is a description of the payload header format for Frame Based formats.
 
@@ -375,11 +375,11 @@ During a transfer over UVC for frame based video, the video frame is packetized 
 |       |       |       | SCR [39:32]         |       |       |
 |       |       |       | SCR [47:40]         |       |       |
 
-> **HLE (Header length) field **
+> **HLE (Header length) field**
 >
 > The header length field specifies the length of the header, in bytes.
 >
-> **Bit field header field **
+> **Bit field header field**
 >
 > *FID: Frame Identifier*
 >
@@ -519,7 +519,7 @@ The metadata format for this identifier is defined by the following structure:
     KSCAMERA_METADATA_ITEMHEADER Header;
     ULONG Flags;
     ULONG Reserved;
-}KSCAMERA_METADATA_FRAMEILLUMINATION, *PKSCAMERA_METADATA_FRAMEILLUMINATION;
+} KSCAMERA_METADATA_FRAMEILLUMINATION, *PKSCAMERA_METADATA_FRAMEILLUMINATION;
 ```
 The **Flags** field indicates information about the captured frame. Currently, the following flags are defined:
 
