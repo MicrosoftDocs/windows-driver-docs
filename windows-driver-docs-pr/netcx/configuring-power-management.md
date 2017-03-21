@@ -4,13 +4,21 @@ title: Configuring Power Management
 
 # Configuring Power Management
 
-This topic describes how to preview and query power management capabilities in a NetAdapterCx client driver.
+This topic describes how to configure power management capabilities in a NetAdapterCx client driver.
 
-Typically, a client driver calls [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md) to set the power capabilities of the network adapter.
+Because the client driver is a WDF driver, much of the implementation is the same as any other WDF driver, and then there are a few options specific to NetAdapterCx that you can add in.
 
-The client registers optional WDF event callbacks such as [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) and [*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848) to receive notification of power transitions.  For more info, see [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
+For details on the common WDF behaviors, see the following pages:
 
-The following example shows how to initialize and configure a NETPOWERSETTINGS object.  The client typically does this in its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) callback:
+*  The client registers optional WDF event callbacks to receive notification of power transitions, as described in [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
+*  For info on registering PnP and power callback functions in a WDF client, see [Creating Device Objects in a Function Driver](../wdf/creating-device-objects-in-a-function-driver.md).
+*  For details on how your device can wake the system from a system-wide low-power state, see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
+
+## NetAdapterCx specific options
+
+After configuring the standard WDF power management functionality, the next step is to call [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md) to set the power capabilities of the network adapter.
+
+The following example shows how to initialize and configure a NETPOWERSETTINGS object, which the client typically does in its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) callback:
 
 ```cpp
 NET_ADAPTER_POWER_CAPABILITIES     powerCaps;
@@ -29,15 +37,13 @@ powerCaps.EvtAdapterPreviewProtocolOffload = EvtAdapterPreviewProtocolOffload;
 NetAdapterSetPowerCapabilities(NetAdapter, &powerCaps);
 ```
 
-## Previewing Protocol Offload and Wake Patterns
-
 The client can register [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) and [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback functions to accept or reject incoming protocol offloads and wake patterns.
 
-In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
+## Programming Protocol Offload and Wake Patterns
 
-### Wake patterns
+In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver iterates through the enabled wake patterns and protocol offloads and programs them into the hardware.
 
-To access the configuration from the NETPOWERSETTINGS object, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md) from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) or a related callback function.  For example:
+First retrieve a handle to the NETPOWERSETTINGS object that is associated with the adapter by calling [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md) from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) or a related callback function.  The following example shows how to iterate through the wake patterns:
 
 ```cpp
 NTSTATUS
@@ -63,22 +69,4 @@ EvtDeviceArmWakeFromS0(
     return STATUS_SUCCESS;
 }
 ```
-
-For more info, see:
-
-|Method|Summary|
-|---|---|
-| [**NetPowerSettingsGetEnabledWakePatterns**](netpowersettingsgetenabledwakepatterns.md) | Retrieves flags representing the types of wake patterns that a network adapter supports. |
-| [**NetPowerSettingsGetEnabledWakeUpFlags**](netpowersettingsgetenabledwakeupflags.md) | Retrieves the media-independent wake-up events that a network adapter supports. |
-<!--TODO: add other NetPowerSettings* to table, usage examples-->
-
-Use these methods to access protocol offloads:
-
-* [**NetPowerSettingsGetEnabledProtocolOffloads**](netpowersettingsgetenabledprotocoloffloads.md)
-* [**NetPowerSettingsGetProtocolOffload**](netpowersettingsgetprotocoloffload.md)
-* [**NetPowerSettingsGetProtocolOffloadCount**](netpowersettingsgetprotocoloffloadcount.md)
-* [**NetPowerSettingsGetProtocolOffloadCountForType**](netpowersettingsgetprotocoloffloadcountfortype.md)
-* [**NetPowerSettingsIsProtocolOffloadEnabled**](netpowersettingsisprotocoloffloadenabled.md)
-
-Because the client is the [power policy owner](../wdf/power-policy-ownership.md) for the NIC's device stack, it can use WDF's built-in power management functionality.  For example, you might want to add your own idle logic. For info, see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
-
+The client uses the same mechanism to iterate through protocol offloads.

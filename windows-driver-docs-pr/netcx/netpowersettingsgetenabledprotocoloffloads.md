@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves the low power protocol offload capabilities of a network adapter.
+Retrieves flags that specify the low power protocol offload capabilities of a network adapter.
 
 Syntax
 ------
@@ -36,7 +36,7 @@ A handle to the NETPOWERSETTINGS object associated with the net adapter. To retr
 Return value
 ------------
 
-A ULONG value that contains a bitwise **OR** of flags that correspond to capabilities that the client driver reported in the **SupportedProtocolOffloads** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. NDIS uses these flags to enable the low power protocol offload capabilities on a network adapter. For more information, see [**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).
+A ULONG value that contains a bitwise **OR** of [**NET_ADAPTER_PROTOCOL_OFFLOADS_FLAGS**](net-adapter-protocol-offloads-flags.md)-typed flags that correspond to capabilities that the client driver reported in the **SupportedProtocolOffloads** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. NDIS uses these flags to enable the low power protocol offload capabilities on a network adapter. For more information, see [**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).
 
 Remarks
 -------

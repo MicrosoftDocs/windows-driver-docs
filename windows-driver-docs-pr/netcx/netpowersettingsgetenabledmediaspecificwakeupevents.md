@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves the media-specific wake-up events that a network adapter supports.
+Retrieves flags that specify the media-specific wake-up events that a network adapter supports.
 
 Syntax
 ------
@@ -36,7 +36,7 @@ A handle to the NETPOWERSETTINGS object associated with the net adapter. To retr
 Return value
 ------------
 
-A ULONG value that contains a bitwise **OR** of flags that correspond to events that the client driver reported in the **SupportedMediaSpecificWakeUpEvents** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. The flags represent the media-specific wake-up events that the driver must enable in the hardware to arm the device for wake.
+A ULONG value that contains a bitwise **OR** of [**NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS**](net-adapter-media-specific-wakeup-events-flags.md)-typed flags that correspond to events that the client driver reported in the **SupportedMediaSpecificWakeUpEvents** member of the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure. The flags represent the media-specific wake-up events that the driver must enable in the hardware to arm the device for wake.
 
 For more information, see the **MediaSpecificWakeUpEvents** member of [**NDIS_PM_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).
 

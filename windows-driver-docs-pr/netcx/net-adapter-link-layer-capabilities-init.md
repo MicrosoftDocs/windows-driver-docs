@@ -71,6 +71,23 @@ Remarks
 -----
 **NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT** zeroes out the [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure and then sets all of its members.  It calls [**NET_ADAPTER_PHYSICAL_ADDRESS_INIT**](net-adapter-physical-address-init.md) to set the **PhysicalAddress** member.
 
+Example
+-----
+
+```cpp
+NET_ADAPTER_LINK_LAYER_CAPABILITIES linkLayerCapabilities;
+NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT(
+      &linkLayerCapabilities,
+      NIC_SUPPORTED_FILTERS,
+      NIC_MAX_MCAST_LIST,
+      NIC_SUPPORTED_STATISTICS,
+      maxXmitLinkSpeed,
+      maxRcvLinkSpeed,
+      ETH_LENGTH_OF_ADDRESS,
+      adapterContext->PermanentAddress,
+      adapterContext->CurrentAddress);
+```
+
 Requirements
 ------------
 
