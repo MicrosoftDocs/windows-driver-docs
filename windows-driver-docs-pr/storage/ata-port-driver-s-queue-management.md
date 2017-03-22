@@ -12,9 +12,6 @@ keywords: ["ATA Port drivers WDK , queues", "queues WDK ATA Port driver", "devic
 ## <span id="ddk_ata_port_drivers_queue_management_kg"></span><span id="DDK_ATA_PORT_DRIVERS_QUEUE_MANAGEMENT_KG"></span>
 
 
-**NOTE** The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver) and [Storport miniport](https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers) driver models.
-
-
 The ATA port driver maintains a device queue for each logical unit number (LUN) that is exposed by the miniport driver and a separate queue for each channel that is enabled on the IDE controller. These queues work together to control the flow of requests to the miniport driver.
 
 The following figure shows how requests flow from the port driver's LUN queues into the channel queues.
@@ -33,3 +30,5 @@ The ATA miniport driver can also control the flow of requests that it receives f
 
 
 --------------------
+
+

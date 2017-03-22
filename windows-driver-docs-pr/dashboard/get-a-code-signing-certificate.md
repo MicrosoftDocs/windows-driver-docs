@@ -108,9 +108,7 @@ If you don’t have an approved standard or EV code signing certificate, you can
 
 -   [Buy a Symantec standard code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393247)
 
--   [Buy a Certum standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843062)
-
--   [Buy an Entrust standard code signing cert](https://go.microsoft.com/fwlink/?linkid=843067)
+-   [Buy an Entrust standard code signing cert](http://go.microsoft.com/fwlink/p/?LinkId=624811)
 
 -   [Buy a GlobalSign standard code signing cert](http://go.microsoft.com/fwlink/p/?LinkId=620887)
 
@@ -128,9 +126,7 @@ If you don’t have an approved standard or EV code signing certificate, you can
 
 -   [Buy a Symantec EV code signing certificate](http://go.microsoft.com/fwlink/?LinkId=393248)
 
--   [Buy a Certum EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843061)
-
--   [Buy an Entrust EV code signing cert](https://go.microsoft.com/fwlink/?linkid=843068)
+-   [Buy an Entrust standard code signing cert](http://go.microsoft.com/fwlink/p/?LinkId=624811)
 
 -   [Buy a GlobalSign EV code signing certificate](http://go.microsoft.com/fwlink/p/?LinkId=620888)
 

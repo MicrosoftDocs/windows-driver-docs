@@ -86,7 +86,7 @@ The following table shows the release history of the UMDF library:
 
 You can use the Windows Driver Kit (WDK) 10 with Microsoft Visual Studio 2015 to build drivers that run on Windows 7 and later.
 
-For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
+For information about the new features for UMDF drivers in Windows 10, see [What's New for WDF Drivers](what-s-new-for-wdf-drivers.md).
 
 ## UMDF Version 2.19
 

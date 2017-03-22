@@ -135,7 +135,7 @@ In the [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544
 
 -   Calls the [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175) method and retrieves a handle to the *framework driver object*.
 
-    After the client driver calls [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175), the framework creates a framework driver object to represent the client driver. When the call completes, the client driver receives a WDFDRIVER handle and can retrieve information about the driver, such as its registry path, version information, and so on (see [WDF Driver Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265636)).
+    After the client driver calls [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175), the framework creates a framework driver object to represent the client driver. When the call completes, the client driver receives a WDFDRIVER handle and can retrieve information about the driver, such as its registry path, version information, and so on (see [Framework Driver Object Methods](BUGBUG)).
 
     Note that the framework driver object is different from the Windows driver object described by [**DRIVER\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff544174). At anytime, the client driver can get a pointer to the Windows**DRIVER\_OBJECT** structure by using the WDFDRIVER handle and calling the [**WdfGetDriver**](https://msdn.microsoft.com/library/windows/hardware/ff547336) method.
 

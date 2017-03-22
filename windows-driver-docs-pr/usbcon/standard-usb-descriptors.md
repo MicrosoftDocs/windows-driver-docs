@@ -239,7 +239,7 @@ The **bEndpointAddress** field specifies the unique endpoint address that contai
 </tr>
 <tr class="odd">
 <td>UMDF-based client driver</td>
-<td>[<strong>WDFUsbTargetPipe::GetInformation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560403)</td>
+<td>[<strong>IWDFUsbPipe::GetInterfaceDescriptor</strong>](BUGBUG)</td>
 </tr>
 <tr class="even">
 <td>KMDF-based client driver</td>

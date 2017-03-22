@@ -85,7 +85,7 @@ An application or a driver on the host always initiates a bulk transfer to send 
 
 Let's see how the client driver submits the request for a bulk transfer as a result of an application's or another driver's request. Alternatively, the driver can initiate the transfer on its own. Irrespective of the approach, a driver must have the transfer buffer and the request in order to initiate the bulk transfer.
 
-For a KMDF driver, the request is described in a framework request object (see [WDF Request Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265664)). The client driver calls methods of the request object by specifying the WDFREQUEST handle to send the request to the USB driver stack. If the client driver is sending a bulk transfer in response to a request from an application or another driver, the framework creates a request object and delivers the request to the client driver by using a framework queue object. In that case, the client driver may use that request for the purposes of sending the bulk transfer. If the client driver initiated the request, the driver may choose to allocate its own request object.
+For a KMDF driver, the request is described in a framework request object (see [Framework Request Object Reference](BUGBUG)). The client driver calls methods of the request object by specifying the WDFREQUEST handle to send the request to the USB driver stack. If the client driver is sending a bulk transfer in response to a request from an application or another driver, the framework creates a request object and delivers the request to the client driver by using a framework queue object. In that case, the client driver may use that request for the purposes of sending the bulk transfer. If the client driver initiated the request, the driver may choose to allocate its own request object.
 
 If the application or another driver sent or requested data, the transfer buffer is passed to the driver by the framework. Alternatively, the client driver can allocate the transfer buffer and create the request object if the driver initiates the transfer on its own.
 
@@ -136,7 +136,7 @@ Before you begin, make sure that you have this information:
 
 ### <a href="" id="step-1--get-the-transfer-buffer--"></a>Step 1: Get the transfer buffer.
 
-The transfer buffer or the transfer buffer MDL contains the data to send or receive. This topic assumes that you are sending or receiving data in a transfer buffer. The transfer buffer is described in a WDF memory object (see [WDF Memory Object Reference](https://msdn.microsoft.com/library/windows/hardware/dn265645)). To get the memory object associated with the transfer buffer, call one of these methods:
+The transfer buffer or the transfer buffer MDL contains the data to send or receive. This topic assumes that you are sending or receiving data in a transfer buffer. The transfer buffer is described in a WDF memory object (see [Framework Memory Object Reference](BUGBUG)). To get the memory object associated with the transfer buffer, call one of these methods:
 
 -   For a bulk IN transfer request, call the [**WdfRequestRetrieveOutputMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550019) method.
 -   For a bulk OUT transfer request, call the [**WdfRequestRetrieveInputMemory**](https://msdn.microsoft.com/library/windows/hardware/ff550015) method.

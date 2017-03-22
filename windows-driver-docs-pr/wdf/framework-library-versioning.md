@@ -39,8 +39,7 @@ For UMDF version 2.0, the file name of the UMDF library is *Wudfx02000.dll*.
 
 For UMDF version 1.*x*, the file name of the UMDF library is *Wudfx.dll*.
 
-For information about the release history of the KMDF library, see [UMDF Version History](umdf-version-history.md).
-
+ 
 
  
 
