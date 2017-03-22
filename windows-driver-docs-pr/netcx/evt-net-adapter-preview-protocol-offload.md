@@ -54,6 +54,7 @@ Return value
 To accept the pattern, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE.
 
 To reject the pattern, return STATUS_NDIS_PM_PROTOCOL_OFFLOAD_LIST_FULL.
+<!--STATUS_NDIS_PM_PROTOCOL_LIST_FULL?-->
 
 Remarks
 -------

@@ -45,7 +45,7 @@ Returns the total number of enabled and disabled protocol offloads in the NETPOW
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsGetProtocolOffloadCountForType** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) callback function.
+The client driver must only call **NetPowerSettingsGetProtocolOffloadCountForType** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) callback function.  Otherwise, the call results in a system bugcheck.
 
 To determine if a specific protocol offload is enabled, call [**NetPowerSettingsIsProtocolOffloadEnabled**](netpowersettingsisprotocoloffloadenabled.md).
 

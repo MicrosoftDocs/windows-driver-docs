@@ -45,7 +45,7 @@ Returns a pointer to the [**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.c
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsGetProtocolOffload** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) callback function.
+The client driver must only call **NetPowerSettingsGetProtocolOffload** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) callback function.  Otherwise, the call results in a system bugcheck.
 
 The client driver can use the pointer to examine the [**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) structure, but should not retain it. NetAdapterCx automatically releases the protocol offload structure during offload removal.
 
