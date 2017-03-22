@@ -45,7 +45,7 @@ Returns a pointer to the [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/li
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsGetWakePattern** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback function.
+The client driver must only call **NetPowerSettingsGetWakePattern** during a power transition, typically [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844), or from [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) or [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md).
 
 The client can check if this pattern is enabled by calling [**NetPowerSettingsIsWakePatternEnabled**](netpowersettingsiswakepatternenabled.md).
 

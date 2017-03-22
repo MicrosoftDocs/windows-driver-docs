@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves the number of wake-on-LAN (WoL) patterns stored in the NETPOWERSETTINGS object for a particular WoL pattern type.
+Retrieves the number of wake-on-LAN (WoL) patterns stored in the NETPOWERSETTINGS object for the specified wake pattern type.
 
 Syntax
 ------
@@ -35,17 +35,17 @@ Parameters
 A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
 *WakePatternType* [in]  
-An [**NDIS_PM_WOL_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) value that contains the type of WoL pattern to count.
+An [**NDIS_PM_WOL_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) value that contains the type of wake pattern to count.
 
 Return value
 ------------
 
-Returns the total number of enabled and disabled WoL patterns stored in the NETPOWERSETTINGS object for the specified pattern type.
+Returns the total number of enabled and disabled wake patterns stored in the NETPOWERSETTINGS object for the specified pattern type.
 
 Remarks
 -------
 
-The client driver calls [**NetPowerSettingsGetWakePatternCount**](netpowersettingsgetwakepatterncount.md) during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from the [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback function.
+The client driver must only call [**NetPowerSettingsGetWakePatternCount**](netpowersettingsgetwakepatterncount.md) during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function, or from its [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback function.
 
 To determine if a specific wake pattern is enabled, call [**NetPowerSettingsIsWakePatternEnabled**](netpowersettingsiswakepatternenabled.md).
 

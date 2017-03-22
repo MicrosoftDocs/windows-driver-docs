@@ -40,7 +40,7 @@ A pointer to a [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/wind
 Return value
 ------------
 
-Returns **TRUE** if the WoL pattern is enabled, and **FALSE** otherwise.
+Returns **TRUE** if the WoL pattern is enabled and the driver must enable it in its hardware, and **FALSE** otherwise.
 
 Remarks
 -------

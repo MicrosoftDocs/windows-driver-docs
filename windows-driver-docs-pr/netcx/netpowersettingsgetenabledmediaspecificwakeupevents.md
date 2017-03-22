@@ -43,7 +43,7 @@ For more information, see the **MediaSpecificWakeUpEvents** member of [**NDIS_PM
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.
+The client driver must only call **NetPowerSettingsGetEnabledMediaSpecificWakeUpEvents** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.
 
 Requirements
 ------------

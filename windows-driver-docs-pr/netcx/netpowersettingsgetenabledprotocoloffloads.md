@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves flags that specify the low power protocol offload capabilities of a network adapter.
+Retrieves flags that specify the low power protocol offload capabilities that a network adapter supports.
 
 Syntax
 ------
@@ -41,7 +41,7 @@ A ULONG value that contains a bitwise **OR** of [**NET_ADAPTER_PROTOCOL_OFFLOADS
 Remarks
 -------
 
-The client driver calls **NetPowerSettingsGetEnabledProtocolOffloads** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.
+The client driver must only call **NetPowerSettingsGetEnabledProtocolOffloads** during a power transition, typically from its [*EVT_WDF_DEVICE_ARM_WAKE_FROM_SX*](https://msdn.microsoft.com/library/windows/hardware/ff540844) or [*EVT_WDF_DEVICE_ARM_WAKE_FROM_S0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) callback function.
 
 Requirements
 ------------
