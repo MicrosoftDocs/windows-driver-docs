@@ -1,152 +1,122 @@
 ---
-title: WDF Driver Development Guide
+title: What's New for WDF Drivers in Windows 10
 author: windows-driver-content
-description: This section describes Windows Driver Frameworks (WDF) driver development concepts, including power management, I/O requests, and interrupt handling.
-ms.assetid: 46009B18-7EDD-4E58-B561-36775A335B87
+description: This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.Windows 10 includes Kernel-Mode Driver Framework (KMDF) version 1.15 and User-Mode Driver Framework (UMDF) version 2.15.
+ms.assetid: 61fd9916-38e7-47d0-aec7-d5a489eb21eb
+keywords: ["kernel-mode drivers WDK KMDF , about KMDF", "KMDF WDK , about KMDF", "Kernel-Mode Driver Framework WDK , about KMDF", "framework-based drivers WDK KMDF", "framework-based drivers WDK KMDF , about framework-based drivers", "objects WDK KMDF", "framework objects WDK KMDF"]
 ---
 
-# WDF Driver Development Guide
+# What's New for WDF Drivers in Windows 10
 
 
-This section describes Windows Driver Frameworks (WDF) driver development concepts, including power management, I/O requests, and interrupt handling.
+This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-## In this section
+Windows 10, version 1607 includes Kernel-Mode Driver Framework (KMDF) version 1.19 and User-Mode Driver Framework (UMDF) version 2.19.
 
+You can use these framework versions to build drivers for:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[What's New for WDF Drivers](what-s-new-for-wdf-drivers.md)</p></td>
-<td align="left"><p>This topic summarizes the new features and improvements for WDF drivers in Windows 10.</p>
-<p>Windows 10 includes Kernel-Mode Driver Framework (KMDF) version 1.15 and User-Mode Driver Framework (UMDF) version 2.15.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[WDF Architecture](kernel-mode-driver-framework-architecture.md)</p></td>
-<td align="left"><p>This topic describes the object-based interfaces that WDF provides for drivers. </p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Getting Started with UMDF](getting-started-with-umdf-version-2.md)</p></td>
-<td align="left"><p>This section describes UMDF and details the differences between UMDF versions 1 and 2. It also provides high-level architectural information about UMDF. Use this section to determine if a UMDF driver is the right choice for your needs, and to decide which UMDF version to use.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Writing a Simple WDF Driver](writing-a-simple-kmdf-driver.md)</p></td>
-<td align="left"><p>This topic describes the minimal functionality you need to write a KMDF driver. You need the same minimal functionality to write a UMDF driver starting in UMDF version 2.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Using WDF to Develop a Driver](using-the-framework-to-develop-a-driver.md)</p></td>
-<td align="left"><p>This topic provides a high-level overview of the framework objects you'll use to develop a KMDF driver. Except where indicated, you'll use the same objects to develop a UMDF driver starting in UMDF version 2.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Framework Library Versioning](framework-library-versioning.md)</p></td>
-<td align="left"><p>In this topic, you'll learn about the naming conventions for the file names of the KMDF library and the UMDF library.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[KMDF Version History](kmdf-version-history.md)</p></td>
-<td align="left"><p>This topic lists versions of KMDF, the corresponding versions of the Windows operating system, and the changes made in each release.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[UMDF Version History](umdf-version-history.md)</p></td>
-<td align="left"><p>This topic lists versions of UMDF, the corresponding versions of the Windows operating system, and the changes made in each release.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Sample KMDF Drivers](sample-kmdf-drivers.md)</p></td>
-<td align="left"><p>This topic lists the KMDF sample drivers that you can download from the [Windows Dev Center - Hardware](http://go.microsoft.com/fwlink/p/?linkid=256387).</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Sample UMDF Drivers](sample-umdf-drivers.md)</p></td>
-<td align="left"><p>This topic lists available UMDF sample drivers that you can download from the [Windows driver samples repository](http://go.microsoft.com/fwlink/p/?LinkId=616507) on GitHub.</p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Sample Toaster Driver Programming Tour](sample-toaster-driver-programming-tour.md)</p></td>
-<td align="left"><p>This topic provides a code walkthrough of the [Toaster](http://go.microsoft.com/fwlink/p/?LinkId=618939) sample, which contains KMDF and UMDF drivers designed for learning purposes.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Developing Drivers with the Windows Driver Foundation: Reference Book](developing-drivers-with-wdf.md)</p></td>
-<td align="left"><p>The <em>Developing Drivers with Windows Driver Foundation</em> book is also available to help you learn the concepts and fundamentals of WDF. This book introduces Windows drivers and basic kernel-mode programming, and then describes the WDF architecture and programming model. It provides a practical, sample-oriented guide to using the frameworks to develop Windows drivers.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[WDF Objects](wdf-objects.md)</p></td>
-<td align="left"><p>This section describes common characteristics of framework objects and how a WDF driver uses object-based interfaces to call methods, register callback routines, set and retrieve property data, and manage object reference counts.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[PnP and Power Management](pnp-and-power-management.md)</p></td>
-<td align="left"><p>The topics in this section describe the default PnP and power management support that the framework provides.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Handling I/O Requests](handling-i-o-requests-in-wdf-drivers.md)</p></td>
-<td align="left"><p>This section describes how a WDF driver can use I/O queues to manage the I/O requests that the driver receives.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Using I/O Targets](using-i-o-targets.md)</p></td>
-<td align="left"><p>The topics in this section describe how a WDF driver can forward an I/O request or create and send a new request to another driver, called an I/O target.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Synchronization Techniques](synchronization-techniques-for-wdf-drivers.md)</p></td>
-<td align="left"><p>This section describes how a WDF driver can customize the framework's built-in callback synchronization, or use manual locks to control when the framework calls the driver's callback routines.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[WDF Support Objects](wdf-support-objects.md)</p></td>
-<td align="left"><p>The topics in this section describe how a WDF driver uses memory buffers, timers, string objects, work items, and other support functionality that the framework provides.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Handling Hardware Interrupts](handling-hardware-interrupts.md)</p></td>
-<td align="left"><p>The topics in this section describe how a WDF driver creates framework interrupt objects to service hardware interrupts, and how your driver synchronizes access to interrupt data buffers.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Handling DMA Operations in KMDF Drivers](handling-dma-operations-in-kmdf-drivers.md)</p></td>
-<td align="left"><p>This section describes how a KMDF driver converts I/O requests into direct memory access (DMA) operations. KMDF supports bus-master and system-mode DMA.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Supporting WMI in KMDF Drivers](supporting-wmi-in-kmdf-drivers.md)</p></td>
-<td align="left"><p>The topics in this section describe how a KMDF driver registers as a WMI data provider, responds to requests for instance data, and sends events to registered WMI clients.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Accessing WDM Interfaces in KMDF Drivers](accessing-wdm-interfaces-in-kmdf-drivers.md)</p></td>
-<td align="left"><p>Most KMDF drivers do not need to access Windows Driver Model (WDM) interfaces directly. This section describes the limited cases when a KMDF driver requires direct access to WDM data structures, for example to obtain WDM information or manipulate an IRP.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Handling Hardware Resources](hardware-resources-for-kmdf-drivers.md)</p></td>
-<td align="left"><p>A system's hardware resources are the I/O ports, interrupt vectors, DMA channels, and other communication paths that must be assigned to each device that is connected to the system. The topics in this section describe how KMDF drivers negotiate hardware resource requirements for a device, review the proposed resource list, and then receive the assigned resources. This section also discusses how both KMDF and UMDF drivers access and map assigned resources.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Building, Installing, and Testing](building--installing--and-testing-a-wdf-driver.md)</p></td>
-<td align="left"><p>This section describes how you build a WDF driver in Microsoft Visual Studio, whether you need to provide a co-installer, and how you test your driver using the WDF Verifier and built-in event logging.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Debugging WDF Drivers](debugging-a-wdf-driver.md)</p></td>
-<td align="left"><p>The topics in this section describe techniques and tools that you can use to debug a KMDF or UMDF driver.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Porting a Driver from WDM to WDF](wdf-porting-guide.md)</p></td>
-<td align="left"><p>The topics in this section describe how to convert an existing WDM driver to a KMDF driver or a UMDF version 2 driver.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Additional Topics for KMDF Drivers](kmdf-only-functionality.md)</p></td>
-<td align="left"><p>This section contains information that applies only to KMDF.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[UMDF 1.x Design Guide](user-mode-driver-framework-design-guide.md)</p></td>
-<td align="left"><p>This section contains information that applies only to UMDF versions 1.11 and earlier.</p></td>
-</tr>
-</tbody>
-</table>
+-   Windows 10 (all SKUs)
+-   Windows Server 2016
+
+For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
+
+## WDF source code is publicly available
 
 
+-   The WDF source code is now available as open source on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from <http://github.com/Microsoft/Windows-Driver-Frameworks>.
+
+-   The private symbol files for WDF on Windows 10 are now available through the Microsoft Symbol Server.
+
+-   The Windows Driver Kit (WDK) 10 samples are also now published to GitHub. Download them from <http://github.com/Microsoft/Windows-Driver-Samples>.
+
+## Automatic Source Level Debugging of Framework Code
 
 
+When you use WinDbg to debug a WDF driver on Windows 10, WinDbg automatically retrieves the framework source code from Microsoft's public GitHub repository. You can use this feature to step through the WDF source code while debugging, and to learn about framework internals without downloading the source code to a local machine. For more information, see [New support for source-level debugging of WDF code in Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=618534), [Debugging with WDF Source](http://go.microsoft.com/fwlink/p/?LinkId=618535), and [Video: Debugging your driver with WDF source code](video--debugging-your-driver-with-wdf-source-code.md).
+
+## Universal Driver Compliance
 
 
+All WDF driver samples and Visual Studio driver templates are [Universal Windows driver](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers) compliant.
+
+All KMDF and UMDF 2 functionality is Universal Windows driver compliant.
+
+Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlier versions of desktop Windows. Want to benefit from the universal capabilities of UMDF 2? To learn how to port your old UMDF 1 driver, see [Porting a Driver from UMDF 1 to UMDF 2](porting-a-driver-from-umdf-1-to-umdf-2.md).
+
+## Debugging and Diagnosability
+
+
+-   All KMDF and UMDF 2 drivers can use the new always on, always available Inflight Trace Recorder (IFR). When a driver provides a custom trace, the driver IFR log contains the trace messages. Note that the new driver IFR log is separate from the framework IFR log that WDF creates for each driver.
+
+    It's easy to turn on the IFR. See [Inflight Trace Recorder (IFR) for logging traces](https://msdn.microsoft.com/library/windows/hardware/dn914610) and [Using Inflight Trace Recorder in KMDF and UMDF Drivers](using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md).
+
+-   The IFR maintains a circular buffer of WPP traces in non-pageable memory. If a driver crashes, the logs are frequently included in the crash dump file.
+
+-   If you turn on the IFR in your driver binary, the IFR is present and running during the lifetime of your driver. You don't need to start an explicit trace collection session.
+
+    -   IFR logs are included in minidump files except when the responsible driver is undetermined or if the crash was a host timeout.
+
+    -   If you have a debugger connected, you can access both the driver and framework IFR logs by issuing [**!wdfkd.wdflogdump**](https://msdn.microsoft.com/library/windows/hardware/ff565805).
+
+    -   If you do not have a debugger connected, you can still access both logs.  To learn how, see [Video: Accessing driver IFR logs without a debugger](video--accessing-driver-ifr-logs-without-a-debugger.md).
+
+    -   When debugging a UMDF driver, you can merge framework logs with driver logs by issuing: **!wdfkd.wdflogdump** *&lt;drivername.dll&gt;* **-m**
+
+-   UMDF logs (WudfTrace.etl) and dumps are now located in %ProgramData%\\Microsoft\\WDF instead of %systemDrive%\\LogFiles\\Wudf.
+
+-   New debugger command: [**!wdfkd.wdfumtriage**](https://msdn.microsoft.com/library/windows/hardware/dn961126) provides a kernel-centric view of all UMDF devices on the system.
+
+-   You can run [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) to investigate UMDF verifier failures or UMDF unhandled exceptions. This works for live kernel debugging as well as debugging user crash dump files from *%ProgramData%*\\Microsoft\\WDF.
+
+-   In KMDF and UMDF 2, you can monitor power reference usage in the debugger. For info, see [Debugging Power Reference Leaks in WDF](debugging-power-reference-leaks-in-wdf.md).
+
+-   You can use [**!wdfkd.wdfcrashdump**](https://msdn.microsoft.com/library/windows/hardware/ff565682) to display error information about UMDF 2 drivers. For more information, see **!wdfkd.wdfcrashdump**.
+
+## New Performance Tracing tool for WDF drivers
+
+
+You can use the Windows Performance Toolkit (WPT) to view performance data for a given KMDF or UMDF 2 driver. When tracing is enabled, the framework generates ETW events for I/O, PnP, and Power callback paths. You can then view graphs in the Windows Performance Analyzer (WPA) that show I/O throughput rates, CPU utilization, and callback performance. The WPT is included in the Windows Assessment and Deployment Kit (ADK).
+
+For more information, see [New Performance Tools for WDF Drivers in Windows 10]( http://go.microsoft.com/fwlink/p/?LinkId=618537) and [Using the Windows Performance Toolkit (WPT) with WDF](using-the-windows-performance-toolkit--wpt--with-wdf.md).
+
+## Additional support for HID drivers in UMDF
+
+
+-   UMDF now fully supports HID filters (enumerated by HIDClass) and minidrivers. Simply port your existing KMDF driver or write a new UMDF 2 filter; the functionality is automatically enabled.
+
+-   UMDF HID minidrivers that are enumerated by ACPI can perform selective suspend. For more information, see [Creating WDF HID Minidrivers](creating-umdf-hid-minidrivers.md).
+
+-   UMDF drivers can now be installed in the HID stack for low latency input devices such as touch and mouse. A driver for an input device should specify the **UmdfHostPriority** INF directive. For information, see [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
+
+## Support for interrupts for GPIO-backed devices
+
+
+-   UMDF 2 supports interrupts for GPIO-backed devices like hardware push-buttons. KMDF supports these devices natively, without the workaround described in [Handling Active-Both Interrupts](handling-active-both-interrupts.md). For more information, see [Creating an Interrupt Object](creating-an-interrupt-object.md).
+
+## UMDF no longer requires WinUSB
+
+
+New support has been added for USB drivers in UMDF. A UMDF 2 USB driver no longer uses WinUSB. To use the new functionality, the driver sets the **UmdfDispatcher** directive to **NativeUSB**, instead of **WinUSB**. See [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
+
+## DDI Updates
+
+
+For information about new and updated DDIs, please see [UMDF Version History](umdf-version-history.md) and [KMDF Version History](kmdf-version-history.md).
+
+## Improved Performance
+
+
+-   UMDF system components consume less disk space.
+
+-   KMDF and UMDF drivers use less non-paged memory.
+
+-   Improved framework version checking reduces header/library mismatches.
+
+-   UMDF provides improved buffer mapping for HID transfers.
+
+ 
+
+ 
 
 
 

@@ -276,7 +276,7 @@ Before you start using the continuous reader, you must configure the reader in y
 
 **Configure the continuous reader**
 
-1.  Call [**IWDFUsbTargetPipe::QueryInterface**](BUGBUG) on the target pipe object and query for the [**IWDFUsbTargetPipe2**](BUGBUG2) interface.
+1.  Call **QueryInterface** on the target pipe object ([**IWDFUsbTargetPipe**](https://msdn.microsoft.com/library/windows/hardware/ff560391)) and query for the [**IWDFUsbTargetPipe2**](https://msdn.microsoft.com/library/windows/hardware/ff560394) interface.
 2.  Call **QueryInterface** on the device callback object and query for the [**IUsbTargetPipeContinuousReaderCallbackReadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff556908) interface. In order to use the continuous reader, you must implement IUsbTargetPipeContinuousReaderCallbackReadComplete. The implementation is described later in this topic.
 3.  Call **QueryInterface** on the device callback object and query for the [IUsbTargetPipeContinuousReaderCallbackReadersFailed](https://msdn.microsoft.com/library/windows/hardware/ff556914) interface if you have implemented a failure callback. The implementation is described later in this topic.
 4.  Call the [**IWDFUsbTargetPipe2::ConfigureContinuousReader**](https://msdn.microsoft.com/library/windows/hardware/ff560395) method and specify the configuration parameters, such as header, trailer, number of pending requests, and references to the completion and failure callback methods.
@@ -371,7 +371,7 @@ The continuous reader does not use power-managed queues to submit requests. Ther
 
 **Implement state management**
 
-1.  In your implementation of [**IPnpCallbackHardware::OnPrepareHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556766), call [**IWDFUsbTargetPipe::QueryInterface**](BUGBUG) on the target pipe object and query for the [**IWDFIoTargetStateManagement**](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface. Store the reference in a member variable of your device callback class.
+1.  In your implementation of [**IPnpCallbackHardware::OnPrepareHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556766), call[**QueryInterface** on the target pipe object ([**IWDFUsbTargetPipe**](https://msdn.microsoft.com/library/windows/hardware/ff560391)) and query for the [**IWDFIoTargetStateManagement**](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface. Store the reference in a member variable of your device callback class.
 2.  Implement the [**IPnpCallback**](https://msdn.microsoft.com/library/windows/hardware/ff556762) interface on the device callback object.
 3.  In the implementation of the [**IPnpCallback::OnD0Entry**](https://msdn.microsoft.com/library/windows/hardware/ff556799) method, call [**IWDFIoTargetStateManagement::Start**](https://msdn.microsoft.com/library/windows/hardware/ff559213) to start the continuous reader.
 4.  In the implementation of the [**IPnpCallback::OnD0Exit**](https://msdn.microsoft.com/library/windows/hardware/ff556803) method, call [**IWDFIoTargetStateManagement::Stop**](https://msdn.microsoft.com/library/windows/hardware/ff559217) to stop the continuous reader.
@@ -450,7 +450,7 @@ The following example code shows how to get a pointer to the IWDFIoTargetStateMa
     }
 ```
 
-The following example code shows how to get a pointer to the [**IWDFIoTargetStateManagement**](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface of the target pipe object in the [**IPnpCallback::OnPrepareHardware**](BUGBUG) method.
+The following example code shows how to get a pointer to the [**IWDFIoTargetStateManagement**](https://msdn.microsoft.com/library/windows/hardware/ff559198) interface of the target pipe object in the [**IPnpCallbackHardware::OnPrepareHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556766) method.
 
 ```
  HRESULT CDeviceCallback::OnD0Entry(
@@ -635,7 +635,7 @@ The client driver can get notifications from the framework when a failure occurs
 2.  Make sure the **QueryInterface** implementation of the device callback object increments the reference count of the callback object and then returns the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed**](https://msdn.microsoft.com/library/windows/hardware/ff556914) interface pointer.
 3.  In the implementation of the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure**](https://msdn.microsoft.com/library/windows/hardware/ff556915) method, provide error handling of the failed read request.
 
-    If the continuous reader fails to complete a read request and the client driver provides a failure callback, the framework invokes the [**OnReaderFailure**](BUGBUG) method. The framework provides an HRESULT value in the *hrStatus* parameter that indicates the error code that occurred in the target pipe object. Based on that error code you might provide certain error handling. For example, if you want the framework to reset the pipe and then restart the continuous reader, make sure that the callback returns TRUE.
+    If the continuous reader fails to complete a read request and the client driver provides a failure callback, the framework invokes the [**IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure**](https://msdn.microsoft.com/library/windows/hardware/ff556915) method. The framework provides an HRESULT value in the *hrStatus* parameter that indicates the error code that occurred in the target pipe object. Based on that error code you might provide certain error handling. For example, if you want the framework to reset the pipe and then restart the continuous reader, make sure that the callback returns TRUE.
 
     **Note**  Do not call [**IWDFIoTargetStateManagement::Start**](https://msdn.microsoft.com/library/windows/hardware/ff559213) and [**IWDFIoTargetStateManagement::Stop**](https://msdn.microsoft.com/library/windows/hardware/ff559217) within the failure callback.
 
