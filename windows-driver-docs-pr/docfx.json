@@ -17,8 +17,7 @@
         "ROBOTS": "INDEX, FOLLOW",
         "Search.Product": "eADQiWindows 10XVcnh",
         "uhfHeaderId": "MSDocsHeader-WinHW",
-        "breadcrumb_path": "/windows-hardware/drivers/breadcrumbs/toc.json",
-    		"extendBreadcrumb": true
+        "breadcrumb_path": "/windows-hardware/drivers/breadcrumbs/toc.json"
     },
     "externalReference": [
     ],
