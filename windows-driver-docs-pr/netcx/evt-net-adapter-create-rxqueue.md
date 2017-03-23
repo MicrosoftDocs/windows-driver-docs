@@ -53,7 +53,50 @@ To register an *EVT_NET_ADAPTER_CREATE_RXQUEUE* callback function, the client dr
 
 The **NETRXQUEUE_INIT** structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to [WDFDEVICE_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951).
 
-In this callback, the client driver typically calls [**NetRxQueueInitGetQueueId**](netrxqueueinitgetqueueid.md) to retrieve the identifier of the receive queue to set up.
+In this callback, the client driver might call [**NetRxQueueInitGetQueueId**](netrxqueueinitgetqueueid.md) to retrieve the identifier of the receive queue to set up.
+
+Example
+-----
+
+```cpp
+NTSTATUS
+EvtAdapterCreateRxQueue(
+    _In_ NETADAPTER netAdapter,
+    _Inout_ PNETRXQUEUE_INIT rxQueueInit)
+{
+    NTSTATUS status = STATUS_SUCCESS;
+
+    NET_RXQUEUE_CONFIG rxConfig;
+    NET_RXQUEUE_CONFIG_INIT(
+        &rxConfig,
+        EvtRxQueueAdvance,
+        EvtRxQueueSetNotificationEnabled,
+        EvtRxQueueCancel);
+
+    // Specify buffer size required per packet so the OS can preallocate
+
+    rxConfig.AlignmentRequirement = 64;
+    rxConfig.AllocationSize = NIC_MAX_PACKET_SIZE + FRAME_CRC_SIZE + RSVD_BUF_SIZE;
+
+    // Assign fixed size data type as per packet context
+
+    NET_RXQUEUE_CONFIG_SET_DEFAULT_PACKET_CONTEXT_TYPE(&rxConfig, MY_RXQUEUE_PACKET_CONTEXT);
+
+    NTSTATUS status = NetRxQueueCreate(
+        rxQueueInit,
+        &rxAttributes,
+        &rxConfig,
+        &adapter->RxQueue);
+
+    // Specify that the OS use a WDFDMAENABLER to allocate the needed buffers
+
+    status = NetRxQueueConfigureDmaAllocator(
+        adapter->RxQueue,
+        adapter->DmaEnabler);
+
+     return status;
+}
+```
 
 Requirements
 ------------
