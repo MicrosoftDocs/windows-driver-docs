@@ -45,40 +45,18 @@ Provide your contact information:
    [phone 2]
 ```
 
-## Submit APN database updates to Microsoft
+## Submit COSA/APN database updates to Microsoft
 
-Use the following procedure to submit APN connectivity database updates to Microsoft. APN updates require a support case for tracking purposes, but you will not be charged for the case.
+Use the following procedure to submit COSA or APN connectivity database updates to Microsoft. 
 
-**To submit APN database updates to Microsoft**
-
-1.  **Contact your Microsoft TAM** -- Work with your TAM to open a MS Solve case with Microsoft Customer Services and Support. After a MS Solve case is opened, provide the following information to support engineer:
-
-    -   A completed APN testing questionnaire to describe the level of testing that has been done.
-
-    -   A completed spreadsheet that contains your APN information.
-
-  > [!NOTE]
-  > You do not need to send your TAM the local APN database file that you created. A MS Solve case is needed to process the APN update, but you will not be charged for the case.     
-
-    If you do not have a TAM:
-
-    -   Contact Microsoft Customer Services and Support by calling (800) MICROSOFT (642-7676).
-
-    -   Inform the customer service representative that an APN database update is needed.
-
-    -   Provide the spreadsheet to the support engineer.
-
-    -   If asked, specify Windows 8 or Windows 10 as the product, as appropriate.
-
-  > [!NOTE] 
-  > You will need to provide a credit card to open the incident, but you will not be charged.     
+1.  **Contact your Microsoft TAM** - Using the same MS Solve case described in [Testing your COSA/APN database submission](testing-your-apn-database-submission.md), provide your TAM with a completed APN testing questionnaire to describe the level of testing that has been done.  
 
 2.  **Microsoft triage process** -- Microsoft will review your submission and may contact you if errors are detected. Microsoft will not do any testing on your mobile network. If no errors are detected in your submission, it will proceed through the release process.
 
 3.  **Operator validation** -- Since Microsoft cannot test the APNs you provided for your mobile network, you’ll be asked to do so after a new APN database has been generated. You’ll be provided a new copy of the APN database XML file that you’ll use to apply to your PCs and test the functionality on your actual network. You’ll go through another test pass, as described in [Testing Your COSA/APN database submission](testing-your-apn-database-submission.md). Your Microsoft TAM will provide you with an installable file that will patch the APN database on the PC with the updated database. You’ll be given a specific time period to test the new APN database. Once you have completed your testing, you’ll be asked to reply back to your Microsoft contact with your sign-off. If you find an issue or error, there may be a limited opportunity to correct it. If the issue cannot be corrected in time, your changes will be reverted from the next released update of the APN database. You’ll need to resubmit your APN connectivity database submission and wait until the next scheduled update.
 
-  > [!IMPORTANT]  
-  > If you do not sign-off within the allotted time period, your changes will be reverted from the next released update of the APN connectivity database. You’ll need to resubmit your APN submission and wait until the next scheduled update.     
+> [!IMPORTANT]  
+> If you do not sign-off within the allotted time period, your changes will be reverted from the next released update of the APN connectivity database. You’ll need to resubmit your APN submission and wait until the next scheduled update.     
 
 4.  **Update is released** -- Once you have signed off on the new APN database, it will go through the update publishing process. Once it is ready, it will appear in Windows Update for users to install. You’ll be provided a more detailed release timeline after completing your APN database submission.
 
