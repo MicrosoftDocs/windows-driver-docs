@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Calls [**NetRingBufferReturnCompletedPacketsThroughIndex**](netringbufferreturncompletedpacketsthroughindex.md) with the NextIndex value of the specified ring buffer.
+Calls [**NetRingBufferReturnCompletedPacketsThroughIndex**](netringbufferreturncompletedpacketsthroughindex.md) returns completed packets to the operating system, starting with the **BeginIndex** of the ring buffer, and continuing up to and including the **NextIndex** value of the specified ring buffer.
 
 Syntax
 ------
@@ -37,6 +37,10 @@ Return value
 ------------
 
 This method does not return a value.
+
+Remarks
+-----
+This method updates the **BeginIndex** of the ring buffer to the first element that is not yet completed.
 
 Requirements
 ------------

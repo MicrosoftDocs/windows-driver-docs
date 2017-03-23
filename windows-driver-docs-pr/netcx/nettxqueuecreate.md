@@ -49,6 +49,14 @@ Return value
 
 The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate NTSTATUS error code.
 
+Remarks
+-------
+
+The client calls **NetTxQueueCreate** from within its [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](evt-net-adapter-create-txqueue.md) event callback function. For info on assigning context space to the new object, see [Framework Object Context Space](https://msdn.microsoft.com/windows/hardware/drivers/wdf/framework-object-context-space).
+
+The NETTXQUEUE object is a standard WDF object. The framework manages its deletion, which occurs when the parent WDFDEVICE is deleted.
+
+
 Requirements
 ------------
 

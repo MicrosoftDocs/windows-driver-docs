@@ -46,7 +46,7 @@ This callback function does not return a value.
 
 Remarks
 -------
-In this callback, the client retrieves packets from the queue, sends the data, and then completes the packets.
+In this callback, the client retrieves packets from the queue, programs the hardware to send the data, and then completes the packets.
 
 To retrieve packets, the client can either update the ring buffer's **BeginIndex** manually, or it can call helper macros such as [**NetRingBufferReturnCompletedPackets method**](netringbufferreturncompletedpackets.md).
 
@@ -59,6 +59,8 @@ EvtTxQueueAdvance(NETTXQUEUE TxQueue)
     NET_RING_BUFFER *ringBuffer = NetTxQueueGetRingBuffer(TxQueue);
     NET_PACKET *netPacket;
 
+    // Retrieve pointer to packet at the NextIndex value of the ring buffer
+
     while ((netPacket = NetRingBufferGetNextPacket(ringBuffer)) != nullptr)
     {
         
@@ -66,6 +68,8 @@ EvtTxQueueAdvance(NETTXQUEUE TxQueue)
         
         netPacket->Data.Completed = TRUE;
 
+        // Increment NextIndex
+        
         NetRingBufferAdvanceNextPacket(ringBuffer);
     }
 

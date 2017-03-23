@@ -53,7 +53,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 Remarks
 -------
 
-The client typically calls **NetRxQueueCreate** from within its [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function. For info on assigning context space to the new object, see [Framework Object Context Space](https://msdn.microsoft.com/windows/hardware/drivers/wdf/framework-object-context-space).
+The client calls **NetRxQueueCreate** from within its [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback function. For info on assigning context space to the new object, see [Framework Object Context Space](https://msdn.microsoft.com/windows/hardware/drivers/wdf/framework-object-context-space).
 
 The NETRXQUEUE object is a standard WDF object. The framework manages its deletion, which occurs when the parent WDFDEVICE is deleted.
 

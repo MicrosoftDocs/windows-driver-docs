@@ -51,7 +51,7 @@ Typically, from its [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rx
 
 The client driver does not need to delete the common buffer. NetAdapterCx handles this on the driver's behalf.
 
-NetAdapterCx allocates DMA common buffers and stores them in a [**NET_RING_BUFFER**](net-ring-buffer.md) structure. The client driver retrieves a pointer to the ring buffer by calling [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md) and [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
+NetAdapterCx preallocates DMA common buffers and stores them in a [**NET_RING_BUFFER**](net-ring-buffer.md) structure. The client driver retrieves a pointer to the ring buffer by calling [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md) and [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
 
 Requirements
 ------------

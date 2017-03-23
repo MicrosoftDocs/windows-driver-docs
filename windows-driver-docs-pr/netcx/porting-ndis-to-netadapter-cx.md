@@ -124,7 +124,7 @@ The data path programming model has changed significantly. Here are some key dif
 
 * In the NetAdapter model, network traffic is no longer per adapter, as in NDIS, but rather per WDF queue.  See [Creating I/O Queues](../wdf/creating-i-o-queues.md).
 * Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces a ring buffer that is comprised of net packets, which map to NDIS as follows:
-    * A [**NET_PACKET**](net-packet.md) is similar to a NET_BUFFER.
+    * A [**NET_PACKET**](net-packet.md) is similar to a NET_BUFFER_LIST + NET_BUFFER.
     * A [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](net-packet.md) has one or more of these.
     * For details on the replacement structures and how to use them, see [Handling I/O Requests](handling-i-o-requests.md).
 * In NDIS 6.x, the miniport needs to handle start and pause semantics.  In the NetAdapterCx model, this is no longer the case.

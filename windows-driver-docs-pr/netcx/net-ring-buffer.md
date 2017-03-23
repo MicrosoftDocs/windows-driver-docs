@@ -42,20 +42,20 @@ Reserved.
 Client drivers must not read or write to this value.
 
 **ElementStride**  
-A read-only byte offset from the start of one **NET_PACKET** to the start of the next.
+A read-only byte offset from the start of one **NET_PACKET** to the start of the next.  Use `((BYTE*)p + ElementStride)` to obtain the address of the next element.
 
 **NumberOfElements**  
-A read-only value that indicates the number of packets in the ring buffer, which is always a power of two.
+A read-only value that indicates the number of packets in the ring buffer, which is always a power of two, and greater than one.
 
 **ElementIndexMask**  
-A read-only UINT32 mask that is defined as (**NumberOfElements**-1).  The client can use this value to calculate an index that wraps around the ring buffer.
+A read-only UINT32 mask that is defined as (**NumberOfElements**-1).  The client can use this value to calculate an index that wraps around the ring buffer.  Use the identity `(x % NumberofElements) == (x & ElementIndexMask)`.
 
 **BeginIndex**  
 Specifies the index of the first element owned by the client driver in the inclusive range [0, **NumberOfElements**-1].
 While a client driver can modify this value directly, it typically uses helper routines like [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) instead.
 
 **NextIndex**  
-Specifies the index of the next element that needs processing.
+Specifies the index of the next element that needs processing.  For optional use by the client driver.
 While a client driver can modify this value directly, it typically calls [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md) instead.
 
 **EndIndex**  
@@ -70,7 +70,7 @@ Client drivers must not read or write to this value.
 
 **Buffer**  
 A byte array that contains the packets in the ring buffer.
-Typically, a client driver calls [**NetRingBufferGetPacketAtIndex**](netringbuffergetpacketatindex.md) to access elements in this array.
+Typically, a client driver calls [**NetRingBufferGetPacketAtIndex**](netringbuffergetpacketatindex.md) to access packets in the ring buffer.
 
 Remarks
 -------
