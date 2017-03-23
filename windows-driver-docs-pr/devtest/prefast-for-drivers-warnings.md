@@ -130,7 +130,7 @@ Code Analysis for Drivers reports the following types of warnings:
 <td align="left"><p>warning C28145: The opaque MDL structure should not be modified by a driver</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[C28146](28146---kernel-mode-drivers-should-not-use-strsafe-h.md)</p></td>
+<td align="left"><p>[C28146](28146-kernel-mode-drivers-should-use-ntstrsafe.md)</p></td>
 <td align="left"><p>warning C28146: Kernel Mode drivers should use ntstrsafe.h, not strsafe.h. Found in source file</p></td>
 </tr>
 <tr class="odd">

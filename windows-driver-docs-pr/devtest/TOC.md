@@ -252,7 +252,7 @@
 ##### [C28143](28143-iomarkirppending-must-return-statuspending.md)
 ##### [C28144](28144-cancelirql-should-be-current-irql.md)
 ##### [C28145](28145-opaque-mdl-structure-should-not-be-modified.md)
-##### [C28146](28146---kernel-mode-drivers-should-not-use-strsafe-h.md)
+##### [C28146](28146-kernel-mode-drivers-should-use-ntstrsafe.md)
 ##### [C28147](28147-improper-use-of-default-pool-tag.md)
 ##### [C28150](28150-function-causes-irq-level-to-be-set-above-max.md)
 ##### [C28151](28151-illegal-irql-value.md)
