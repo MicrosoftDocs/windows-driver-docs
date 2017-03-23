@@ -42,334 +42,40 @@ The following table explains each entry in the spreadsheet.
 > [!NOTE] 
 > In the Applicable Profile column of this table, "APN database only" means this entry will be used if targeting Windows 8, Windows 8.1, or versions of Windows 10 before 1703, and "COSA only" means this entry will be used if targeting Windows 10 Version 1703 or later. "APN database & COSA" means this entry is used in both situations. MOs should send all information to target all devices to Microsoft when submitting an APN update, if applicable.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Applicable Profile</th>
-<th>Column Name</th>
-<th>Description</th>
-<th>Optional or Required</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>APN database & COSA</p></td>
-<td><p>Update Type</p></td>
-<td><p>Describes whether the APN Database entry is new or modified.</p>
-<p>Possible values:</p>
-<ul>
-<li><p><strong>Add</strong> – A new entry</p></li>
-<li><p><strong>Change</strong> – Update an existing entry</p></li>
-<li><p><strong>Keep</strong> – Do not change the entry</p></li>
-<li><p><strong>Delete</strong> – Delete the entry</p></li>
-</ul></td>
-<td><p>Required</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>COSA only</p></td>
-<td><p>Data Marketplace support</p></td>
-<td><p>A true/false string describing whether the profile supported by the data marketplace.</p></td>
-<td><p>Optional</p></td>
-<td><p>Either &quot;True&quot; or &quot;False&quot;.</p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database & COSA </p></td>
-<td><p>Country/Region</p></td>
-<td><p>The country or region for the APN entry.</p></td>
-<td><p>Required</p></td>
-<td><p>Microsoft may change this to match how Windows refers to a particular country or region.</p></td>
-</tr>
-<tr class="even">
-<td><p>APN database & COSA</p></td>
-<td><p>Operator</p></td>
-<td><p>The name of the operator. You do not need to include the country or region in this field.</p></td>
-<td><p>Required</p></td>
-<td><p>Ensure you use the same spelling and capitalization each time you submit an update for your APN entries.</p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database only</p></td>
-<td><p>GSM Provider Name</p></td>
-<td><p>A string of no more than 36 characters that should match the GSM provider name reported by your device. This column is case sensitive.</p></td>
-<td><p>Optional</p></td>
-<td></div>
-<div> 
-</div>
-<p>This entry is only supported on Windows 8.1 and versions of Windows 10 before 1703.</p></td>
-</tr>
-<tr class="even">
-<td><p>COSA only</p></td>
-<td><p>SPN</p></td>
-<td><p>An identifier string for the Service Provider Name (SPN)</p></td>
-<td><p>Optional</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>COSA only</p></td>
-<td><p>PNN</p></td>
-<td><p>An identifier string for Public Land Mobile Network (PLMN) Network Name</p></td>
-<td><p>Optional</p></td>
-<td><p>Identifier string for MVNO</p></td>
-</tr>
-<tr class="even">
-<td><p>COSA only</p></td>
-<td><p>GID1</p></td>
-<td><p>An identifier for Group Identifier Level 1 (GID1)</p></td>
-<td><p>Optional</p></td>
-<td><p>Identifier string for MVNO</p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database & COSA</p></td>
-<td><p>MCC</p></td>
-<td><p>A 3 digit MCC value used for GSM IMSI submissions.</p></td>
-<td><p>Required for GSM providers</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>APN database & COSA</p></td>
-<td><p>MNC</p></td>
-<td><p>A 2 or 3 digit MNC value used for GSM IMSI submissions.</p></td>
-<td><p>Required for GSM providers</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database & COSA</p></td>
-<td><p>IMSI Range - Start</p></td>
-<td><p>A 15-digit number that includes the MCC+MNC at the start of the number. The number should end in 00.</p></td>
-<td><p>Optional</p></td>
-<td><p>If this column and the <strong>IMSI Range - End</strong> column is left blank but the <strong>MCC</strong> and <strong>MNC</strong> columns are specified, the entire MCC+MNC range is covered.</p></td>
-</tr>
-<tr class="even">
-<td><p>APN database & COSA</p></td>
-<td><p>IMSI Range - End</p></td>
-<td><p>A 15-digit number that includes the MCC+MNC at the start of the number. The number should end in 99.</p></td>
-<td><p>Optional</p></td>
-<td><p>If this column and the <strong>IMSI Range - Start</strong> column is left blank but the <strong>MCC</strong> and <strong>MNC</strong> columns are specified, the entire MCC+MNC range is covered.</p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database & COSA</p></td>
-<td><p>ICCID Range - Start</p></td>
-<td><p>A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). The number should end in 00.</p></td>
-<td><p>Optional</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>APN database & COSA</p></td>
-<td><p>ICCID Range - End</p></td>
-<td><p>A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). The number should end in 99.</p></td>
-<td><p>Optional</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>APN databse only</p></td>
-<td><p>CDMA Provider ID</p></td>
-<td><p>A 5 digit number that should match the CDMA provider ID (also called SID) reported by your device.</p></td>
-<td><p>Optional</p></td>
-<td><div>
-
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td><p>APN database only</p></td>
-<td><p>CDMA Provider Name</p></td>
-<td><p>A string of no more than 36 characters that should match the CDMA provider name reported by your device. This column is case sensitive.</p></td>
-<td><p>Optional</p></td>
-<td><div >
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="odd">
-<td><p>APN database only</p></td>
-<td><p>Cert Issuer Name</p></td>
-<td><p>The Cert Issuer Name of your signing certificate used for operator XML provisioning.</p></td>
-<td><p>Optional</p></td>
-<td><div>
-</div>
-<div> 
-</div>
-<p>If specified, you must also specify the Cert Subject Name and Carrier GUID.</p></td>
-</tr>
-
-<tr class="even">
-<td><p>APN database only</p></td>
-<td><p>Cert Subject Name</p></td>
-<td><p>The Cert Subject Name of your signing certificate used for operator XML provisioning.</p></td>
-<td><p>Optional</p></td>
-<td><div>
-</div>
-<div>
- 
-</div>
-<p>If specified, you must also specify the Cert Issuer Name and Carrier GUID.</p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database only</p></td>
-<td><p>Carrier GUID</p></td>
-<td><p>The self-assigned GUID that is used in future operator XML provisioning packages.</p></td>
-<td><p>Optional</p></td>
-<td><div>
-</div>
-<div>
- 
-</div>
-<p>If specified must also specify the Cert Subject Name and Cert Issuer Name.</p></td>
-</tr>
-<tr class="even">
-<td><p>APN database & COSA</p></td>
-<td><p>Account Experience URL</p></td>
-<td><p>Used by Windows Connection Manager if the user does not have an active plan and tries to connect to your network.</p></td>
-<td><p>Optional</p></td>
-<td><p>Helps improve the plan acquisition experience.</p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database & COSA</p></td>
-<td><p>Connection Information – Friendly Name</p></td>
-<td><p>A name for this APN entry that is understandable and meaningful to subscribers.</p></td>
-<td><p>Optional</p></td>
-<td><p>Shows up in Windows Connection Manager in cases where Windows cannot automatically connect to the network.</p></td>
-</tr>
-<tr class="even">
-<td><p>APN database & COSA</p></td>
-<td><p>Connection Information – Access String</p></td>
-<td><p>For GSM networks, this is an APN such as data.contoso.com.</p>
-<p>For CDMA networks, this is an access string that includes a special dial code such as #777 or an Network Access Identifier such as example@contoso.com.</p></td>
-<td><p>Required</p></td>
-<td><p>The access string can be blank.</p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database & COSA</p></td>
-<td><p>IP Type</p></td>
-<td><p>A string specifying the network protocol of the connection. Available values are:</p>
-<ul>
-<li>IPv4</li>
-<li>IPv6</li>
-<li>IPv4v6</li>
-<li>IPv4v6xlat</li>
-</ul></td>
-<td><p>Optional</p></td>
-<td><p>If a value is not specified, the default value is &quot;IPv4&quot;.</p></td>
-</tr>
-<tr class="even">
-<td><p>COSA only</p></td>
-<td><p>AlwaysOn</p></td>
-<td><p></p></td>
-<td><p>Required</p></td>
-<td><p></p></td>
-</tr>
-
-<tr class="odd">
-<td><p>COSA only</p></td>
-<td><p>Purpose groups</p></td>
-<td><p>A string specifying the purposes of the connection by a comma-separated list of GUIDs representing purpose values. </p></td>
-<td><p>Optional</p></td>
-<td><p>The following purpose values are available:</p>
-<ul>
-  <li><b>Internet</b> - 3E5545D2-1137-4DC8-A198-33F1C657515F</li>
-  <li><b>MMS</b> - 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8</li>
-  <li><b>IMS</b> - 474D66ED-0E4B-476B-A455-19BB1239ED13</li>
-  <li><b>SUPL</b> - 6D42669F-52A9-408E-9493-1071DCC437BD</li>
-  <li><b>Purchase</b> - TBD</li>
-  <li><b>Administrative</b> - TBD</li>
-  <li><b>Application</b> - TBD</li>
-</ul>
-</td>
-</tr>
-
-<tr class="odd">
-<td><p>APN database & COSA</p></td>
-<td><p>Connection Information – User Name</p></td>
-<td><p>The user name used to connect to your APN. This column is case sensitive.</p></td>
-<td><p>Optional</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>APN database & COSA</p></td>
-<td><p>Connection Information - Password</p></td>
-<td><p>The password used to connect to your APN. This column is case sensitive.</p></td>
-<td><p>Optional</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database only</p></td>
-<td><p>Connection Information – Purchase Flag</p></td>
-<td><p>Possible values:</p>
-<ul>
-<li><p><strong>Y</strong> – if the APN is provisioning or purchase</p></li>
-<li><p><strong>N</strong> – if the APN is not provisioning or purchase</p></li>
-</ul></td>
-<td><p>Required</p></td>
-<td><p>If <strong>Purchase Flag</strong> column is <strong>Y</strong>, the <strong>Connect Flag</strong> column must be <strong>N</strong>.</p></td>
-</tr>
-<tr class="even">
-<td><p>APN database only</p></td>
-<td><p>Connection Information – Connect Flag</p></td>
-<td><p>Possible values:</p>
-<ul>
-<li><p><strong>Y</strong> – if the APN is provisioning or purchase</p></li>
-<li><p><strong>N</strong> – if the APN is not provisioning or purchase</p></li>
-</ul></td>
-<td><p>Required</p></td>
-<td><div>
-</div>
-<div>
- 
-</div>
-<p>If <strong>Connect Flag</strong> column is <strong>Y</strong>, the <strong>Purchase Flag</strong> column must be <strong>N</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database only</p></td>
-<td><p>Connection Information – Auto-Connect Order</p></td>
-<td><p>Windows tries connections to the APNs provided by the operator and marked as “auto-connect” in the APN database until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN.</p></td>
-<td><p>Optional</p></td>
-<td><div>
-</div>
-<div>
- 
-</div>
-<p>If you have more than one access string for an operator, this column must start with 1. This is needed for Windows to try several APN entries that share either an IMSI range, ICCID range, CDMA provider ID, or CDMA provider name when the user tries to connect.</p></td>
-</tr>
-<tr class="even">
-<td><p>APN database & COSA</p></td>
-<td><p>Auth Protocol</p></td>
-<td><p>Specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context.</p>
-<p>Possible values:</p>
-<ul>
-<li><p><strong>NONE</strong> – No authentication protocol is required</p></li>
-<li><p><strong>PAP</strong> – PAP authentication is required.</p></li>
-<li><p><strong>CHAP</strong> – CHAP authentication is required.</p></li>
-<li><p><strong>MsCHAPV2</strong> –MSCHAPv2 is authentication is required.</p></li>
-</ul></td>
-<td><p>Optional</p></td>
-<td><p>This entry is only supported on Windows 8.1 and Windows 10.</p></td>
-</tr>
-<tr class="odd">
-<td><p>APN database & COSA</p></td>
-<td><p>Compression</p></td>
-<td><p>Specifies if compression will be used at the data link for header and data transfer.</p>
-<p>Possible values:</p>
-<ul>
-<li><p><strong>ENABLE</strong> – Compression is enabled</p></li>
-<li><p><strong>DISABLE</strong> – Compression is not enabled</p></li>
-</ul></td>
-<td><p>Optional</p></td>
-<td><p>This entry is only supported on Windows 8.1 and Windows 10.</p></td>
-</tr>
-</tbody>
-</table>
-
+| Applicable profile | Column name | Description | Optional or Required | Notes |
+| --- | --- | --- | --- | --- |
+| APN database & COSA | Update Type | Describes whether the APN Database entry is new or modified. | Possible values: <ul><li>**Add** – A new entry</li><li>**Change** – Update an existing entry</li><li>**Keep** – Do not change the entry</li><li>**Delete** – Delete the entry</li></ul> | Required |  |
+| COSA only | Data Marketplace support | A true/false string describing whether the profile supported by the data marketplace. | Optional | Either "True" or "False". |
+| APN database & COSA | Country/Region | The country or region for the APN entry. | Required | Microsoft may change this to match how Windows refers to a particular country or region. |
+| APN database & COSA | Operator | The name of the operator. You do not need to include the country or region in this field. | Required | Ensure you use the same spelling and capitalization each time you submit an update for your APN entries. |
+| APN database only | GSM Provider Name | A string of no more than 36 characters that should match the GSM provider name reported by your device. This column is case sensitive. | Optional | This entry is only supported on Windows 8.1 and versions of Windows 10 before 1703. |
+| COSA only | SPN | An identifier string for the Service Provider Name (SPN) | Optional |  |
+| COSA only | PNN | An identifier string for Public Land Mobile Network (PLMN) Network Name | Optional | Identifier string for MVNO |
+| COSA only | GID1 | An identifier for Group Identifier Level 1 (GID1) | Optional | Identifier string for MVNO |
+| APN database & COSA | MCC | A 3-digit MCC value used for GSM IMSI submissions. | Required for GSM providers |  |
+| APN database & COSA | MNC | A 2- or 3-digit MNC value used for GSM IMSI submissions. | Required for GSM providers |  |
+| APN database & COSA | IMSI Range - Start | A 15-digit number that includes the MCC+MNC at the start of the number. The number should end in 00. | Optional | If this column and the **IMSI Range - End** column is left blank but the **MCC** and **MNC** columns are specified, the entire MCC+MNC range is covered. |
+| APN database & COSA | IMSI Range - End | A 15-digit number that includes the MCC+MNC at the start of the number. The number should end in 99. | Optional | If this column and th **IMSI Range - Start** column is left blank but the **MCC** and **MNC** columns are specified, the entire MCC+MNC range is covered. |
+| APN database & COSA | ICCID Range - Start | A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). The number should end in 00. | Optional |  |
+| APN database & COSA | ICCID Range - End | A 19- or 20-digit number that starts with 89 (the ICCID issuer identifier number). The number should end in 99. | Optional |  |
+| APN databse only | CDMA Provider ID | A 5-digit number that should match the CDMA provider ID (also called SID) reported by your device. | Optional |  |
+| APN database only | CDMA Provider Name | A string of no more than 36 characters that should match the CDMA provider name reported by your device. This column is case sensitive. | Optional |  |
+| APN database only | Cert Issuer Name | The Cert Issuer Name of your signing certificate used for operator XML provisioning. | Optional | If specified, you must also specify the Cert Subject Name and Carrier GUID. |
+| APN database only | Cert Subject Name | The Cert Subject Name of your signing certificate used for operator XML provisioning. | Optional | If specified, you must also specify the Cert Issuer Name and Carrier GUID. |
+| APN database only | Carrier GUID | The self-assigned GUID that is used in future operator XML provisioning packages. | Optional | If specified, you must also specify the Cert Subject Name and Cert Issuer Name. |
+| APN database & COSA | Account Experience URL | Used by Windows Connection Manager if the user does not have an active plan and tries to connect to your network. | Optional | Helps improve the plan acquisition experience. |
+| APN database & COSA | Connection Information – Friendly Name | A name for this APN entry that is understandable and meaningful to subscribers. | Optional | Shows up in Windows Connection Manager in cases where Windows cannot automatically connect to the network. |
+| APN database & COSA | Connection Information – Access String | For GSM networks, this is an APN such as data.contoso.com. For CDMA networks, this is an access string that includes a special dial code such as #777 or an Network Access Identifier such as example@contoso.com. | Required | The access string can be blank. |
+| APN database & COSA | IP Type | A string specifying the network protocol of the connection. Available values are: <ul><li>IPv4</li><li>IPv6</li><li>IPv4v6</li><li>IPv4v6xlat</li></ul> | Optional | If a value is not specified, the default value is "IPv4". |
+| COSA only | AlwaysOn |  | Required |  | 
+| COSA only | Purpose groups | A string specifying the purposes of the connection by a comma-separated list of GUIDs representing purpose values. | Optional | The following purpose values are available: <ul><li>**Internet** - 3E5545D2-1137-4DC8-A198-33F1C657515F</li><li>**MMS** - 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8</li><li>**IMS** - 474D66ED-0E4B-476B-A455-19BB1239ED13</li><li>**SUPL** - 6D42669F-52A9-408E-9493-1071DCC437BD</li><li>**Purchase** - TBD</li><li>**Administrative** - TBD</li><li>**Application** - TBD</li></ul> |
+| APN database & COSA | Connection Information – User Name | The user name used to connect to your APN. This column is case sensitive. | Optional |  |
+| APN database & COSA | Connection Information - Password | The password used to connect to your APN. This column is case sensitive. | Optional |  |
+| APN database only | Connection Information – Purchase Flag | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> | Required | If **Purchase Flag** column is **Y**, the **Connect Flag** column must be **N**. |
+| APN database only | Connection Information – Connect Flag | Possible values: <ul><li>**Y** – if the APN is provisioning or purchase</li><li>**N** – if the APN is not provisioning or purchase</li></ul> | Required | If **Connect Flag** column is **Y**, the **Purchase Flag** column must be **N**. |
+| APN database only | Connection Information – Auto-Connect Order | Windows tries connections to the APNs provided by the operator and marked as “auto-connect” in the APN database until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN. | Optional | If you have more than one access string for an operator, this column must start with 1. This is needed for Windows to try several APN entries that share either an IMSI range, ICCID range, CDMA provider ID, or CDMA provider name when the user tries to connect. |
+| APN database & COSA | Auth Protocol | Specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context. Possible values: <ul><li>**NONE** – No authentication protocol is required</li><li>**PAP** – PAP authentication is required.</li><li>**CHAP** – CHAP authentication is required.</li><li>**MsCHAPV2** –MSCHAPv2 is authentication is required.</li></ul> | Optional | This entry is only supported on Windows 8.1 and Windows 10. |
+| APN database & COSA | Compression | Specifies if compression will be used at the data link for header and data transfer. | Possible values: <ul><li>**ENABLE** – Compression is enabled</li><li>**DISABLE** – Compression is not enabled</li></ul> | Optional | This entry is only supported on Windows 8.1 and Windows 10. |
  
 
 ### Considerations when completing the spreadsheet
