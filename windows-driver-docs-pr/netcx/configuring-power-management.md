@@ -14,7 +14,7 @@ For details on the common WDF behaviors, see the following pages:
 *  For info on registering PnP and power callback functions in a WDF client, see [Creating Device Objects in a Function Driver](../wdf/creating-device-objects-in-a-function-driver.md).
 *  For details on how your device can wake the system from a system-wide low-power state, see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
 
-## NetAdapterCx specific options
+## Setting power capabilities of the network adapter
 
 After configuring the standard WDF power management functionality, the next step is to call [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md) to set the power capabilities of the network adapter.
 
@@ -52,21 +52,32 @@ EvtDeviceArmWakeFromS0(
 )
 {
 
-    NETPOWERSETTINGS NetWakeSettings;
-    ULONG EnabledWolPacketPatterns;
+    NETADAPTER adapter = GetDeviceContext(Device)->Adapter;
+    NETPOWERSETTINGS powerSettings = NetAdapterGetPowerSettings(adapter);
 
-    NetWakeSettings = NetAdapterGetPowerSettings(deviceContext->AdapterContext->Adapter);
-    EnabledWolPacketPatterns = NetPowerSettingsGetEnabledWakePatterns(NetWakeSettings);
-    PNDIS_PM_WOL_PATTERN CurrentPattern = nullptr;
-    ULONG NumberOfPatterns = NetPowerSettingsGetWakePatternCount(NetWakeSettings);
-
-    for (UINT PatternIndex = 0; PatternIndex < NumberOfPatterns ; PatternIndex++)
+    ULONG wakeUpFlags = NetPowerSettingsGetEnabledWakeUpFlags(powerSettings);
+     
+    if (wakeUpFlags & NET_ADAPTER_WAKE_ON_MEDIA_DISCONNNECT)
     {
-        CurrentPattern = NetPowerSettingsGetWakePattern(NetWakeSettings, PatternIndex);
+        // ...
+    }
+
+    // Iterate through stored wake patterns and query which ones
+    // are enabled and should be programmed to hardware
+
+    for (ULONG i = 0; i < NetPowerSettingsGetWakePatternCount(powerSettings); i++)
+    {
+        PNDIS_PM_WOL_PATTERN wakePattern = NetPowerSettingsGetWakePattern(powerSettings, i);
+
+        if (NetPowerSettingsIsWakePatternEnabled(powerSettings, wakePattern))
+        {
+            // ...
+        }
 
     }
 
     return STATUS_SUCCESS;
 }
 ```
+
 The client uses the same mechanism to iterate through protocol offloads.
