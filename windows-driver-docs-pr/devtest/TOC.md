@@ -228,8 +228,8 @@
 ##### [Driver annotations for interlocked operands](driver-annotations-for-interlocked-operands.md)
 ##### [_Flt_CompletionContext_Outptr_ Annotation](-flt-completioncontext-outptr--annotation.md)
 #### [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md)
-##### [C28101](28101-wrong-function-type)
-##### [C28110](28110---drivers-must-protect-floating-point-hardware-state--see-use-of.md)
+##### [C28101](28101-wrong-function-type.md)
+##### [C28110](28110-floating-point-hardware-protect.md)
 ##### [C28111](28111-floating-point-irql-mismatch.md)
 ##### [C28114](28114-improper-irp-stack-copy.md)
 ##### [C28118](28118-irq-exceeds-caller.md)
@@ -728,4 +728,3 @@
 #### [Troubleshooting the metadata authoring wizards](troubleshooting.md)
 #### [XML reference](xml-reference.md)
 #### [Additional resources](additional-resources.md)
-
