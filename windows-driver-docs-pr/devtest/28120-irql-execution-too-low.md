@@ -33,7 +33,7 @@ The Code Analysis tool infers the current IRQL and reports this warning only whe
 
 If the Code Analysis tool cannot determine the IRQL at which the driver is running, it will not report this warning, even if the function is being called at the wrong IRQL.
 
-For a description of a similar situation, see [Warning 28121](28121---the-function--function--is-not-permitted-to-be-called-at-the-c.md).
+For a description of a similar situation, see [Warning 28121](28121-irq-execution-too-high.md).
 
  
 
