@@ -117,6 +117,9 @@
       - name: TAEF
         tocHref: /windows/hardware/drivers/taef
         topicHref: /windows/hardware/drivers/taef/index
+      - name: USBCON
+        tocHref: /windows/hardware/drivers/usbcon
+        topicHref: /windows/hardware/drivers/usbcon/index   
       - name: WDTF
         tocHref: /windows/hardware/drivers/wdtf/
         topicHref: /windows/hardware/drivers/wdtf/index
