@@ -71,7 +71,7 @@ A client driver returns ownership of the elements by incrementing **BeginIndex**
 
 The client driver may optionally set **NextIndex** to the index of the next packet that it will submit to the hardware.
 
-In this model, the client has submitted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware.  Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been sent to hardware.
+In this model, the client has submitted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware.  Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been sent to hardware.  If the value of **BeginIndex** is equal to the value of **NextIndex**, the client has not programmed any packets to hardware.
 
 After the hardware transmits or receives data, the client calls [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to return ownership of the completed packets to the class extension, which advances the **BeginIndex** accordingly.  Because the ring buffer is circular, eventually the index values wrap around the end of the buffer and come back to the beginning.
 
