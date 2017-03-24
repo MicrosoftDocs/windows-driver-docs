@@ -23,13 +23,13 @@ When you create a WDF driver, you will typically do the following:
 
     All drivers must call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) to create a framework device object for each device that a driver supports. A device can be a piece of hardware that is plugged into the computer, or it can be a software-only device. Framework device objects support PnP and power management operations, and drivers can register event callback functions that notify the driver when a device enters or leaves its working state.
 
-    For more information about framework device objects, see [PnP and Power Management in Framework-based Drivers](pnp-and-power-management.md).
+    For more information about framework device objects, see [Supporting PnP and Power Management in Your Driver](supporting-pnp-and-power-management-in-your-driver.md).
 
 -   Use *framework queue objects* and *framework request objects* to support I/O operations in your driver.
 
     All drivers that receive read, write, or device I/O control requests from applications or other drivers must call [**WdfIoQueueCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547401) to create framework queue objects that represent I/O queues. Typically, drivers register one or more [request handlers](request-handlers.md) for each I/O queue. When the I/O manager sends an I/O request to the driver, the framework creates a framework request object for the request, places the request object in an I/O queue, and calls one of the driver's request handlers to inform the driver that a request is available. The driver obtains the I/O request and can requeue, complete, cancel, or forward the request.
 
-    For more information about using the framework's queue objects and request objects, see [Handling I/O Requests in Framework-based Drivers](handling-i-o-requests-in-wdf-drivers.md).
+    For more information about using the framework's queue objects and request objects, see [Framework Queue Objects](framework-queue-objects.md) and [Framework Request Objects](framework-request-objects.md).
 
 -   Use *framework interrupt objects* to handle device interrupts.
 
