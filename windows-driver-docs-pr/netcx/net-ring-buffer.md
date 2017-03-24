@@ -78,17 +78,7 @@ Remarks
 The **NET_RING_BUFFER** is a generic ring buffer, optimized for efficient access from a single thread.
 A **NET_RING_BUFFER** contains elements of type [**NET_PACKET**](net-packet.md).
 
-Each element in a **NET_RING_BUFFER** is owned by either the client driver or the operating system.  The values of the index members control ownership.  Specifically, the client driver owns every element from **BeginIndex** to **EndIndex**.
-For example, if **BeginIndex** is 2 and **EndIndex** is 5, then the client driver owns three elements: the elements with index 2, 3, and 4.
-If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.
-
-NetAdapterCx adds elements to the ring buffer by incrementing **EndIndex**.
-A client driver returns ownership of the elements by incrementing **BeginIndex**.
-
-The client driver may optionally use **NextIndex** to track an element that it has partially processed, but is not ready to return to the host.
-For example, a driver could use **NextIndex** to a packet that it has submitted to the hardware.
-
-Although a client driver can manipulate the **NET_RING_BUFFER** directly, a client driver typically uses higher level helper routines like [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md).
+For more info about the ring buffer, see [Handling I/O Requests](handling-i-o-requests.md#using-the-ring-buffer).
 
 Requirements
 ------------

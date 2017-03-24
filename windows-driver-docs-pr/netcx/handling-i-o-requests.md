@@ -58,12 +58,31 @@ Similarly, when creating a receive (Rx) queue, the client must provide pointers 
 
 See the above pages for details on what the client needs to do in each event callback function.
 
-## Manipulating the ring buffer
+## Using the ring buffer
 
-The [**NET_RING_BUFFER**](net-ring-buffer.md) is a ring buffer shared between the host and a client, a container for one or more [**NET_PACKET**](net-packet.md) structures.  To retrieve and return packets stored in the ring buffer, use the following routines:
+The [**NET_RING_BUFFER**](net-ring-buffer.md) is a circular buffer of one or more [**NET_PACKET**](net-packet.md) structures that is shared between NetAdapterCx and a client.
+
+Each element in a [**NET_RING_BUFFER**](net-ring-buffer.md) is owned by either the client driver or NetAdapterCx.  The values of the index members control ownership.  Specifically, the client driver owns every element from **BeginIndex** to **EndIndex - 1** inclusive.
+For example, if **BeginIndex** is 2 and **EndIndex** is 5, the client driver owns three elements: the elements with index values 2, 3, and 4.
+If **BeginIndex** is equal to **EndIndex**, the client driver does not own any elements.
+
+NetAdapterCx adds elements to the ring buffer by incrementing **EndIndex**.
+A client driver returns ownership of the elements by incrementing **BeginIndex**.
+
+The client driver may optionally set **NextIndex** to the index of the next packet that it will submit to the hardware.
+
+In this model, the client has submitted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware.  Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been sent to hardware.
+
+After the hardware transmits or receives data, the client calls [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to return ownership of the completed packets to the class extension, which advances the **BeginIndex** accordingly.  Because the ring buffer is circular, eventually the index values wrap around the end of the buffer and come back to the beginning.
+
+To retrieve and return packets stored in the ring buffer, use the following routines:
+
+Although a client driver can manipulate the **NET_RING_BUFFER** directly, a client driver typically uses higher level helper routines like
 
 * [NetRingBufferAdvanceNextPacket method](netringbufferadvancenextpacket.md)
 * [NetRingBufferGetNextPacket method](netringbuffergetnextpacket.md)
 * [NetRingBufferGetPacketAtIndex method](netringbuffergetpacketatindex.md)
 * [NetRingBufferReturnCompletedPackets method](netringbufferreturncompletedpackets.md)
 * [NetRingBufferReturnCompletedPacketsThroughIndex method](netringbufferreturncompletedpacketsthroughindex.md)
+
+For code examples, see [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) and [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
