@@ -92,17 +92,7 @@ A SET_CUR request is issued by host after setting all fields.
 
 The following table maps the control selectors for Microsoft-XU to their respective values and the bit position for the *bmControls* field in Extension Unit Descriptor:
 
-| Control Selector                    | Value | Bit Position (bmControls Field) |
-|-------------------------------------|-------|---------------------------------|
-| MSXU_CONTROL_UNDEFINED              | 0x00  | NA                              |
-| MSXU_FOCUS_CONTROL                  | 0x01  | D0                              |
-| MSXU_EXPOSURE_CONTROL               | 0x02  | D1                              |
-| MSXU_EVCOMPENSATION_CONTROL         | 0x03  | D2                              |
-| MSXU_WHITEBALANCE_CONTROL           | 0x04  | D3                              |
-| MSXU_ISO_CONTROL                    | 0x05  | D4                              |
-| MSXU_FACE_AUTHENTICATION_CONTROL    | 0x06  | D5                              |
-| MSXU_CAMERA_EXTRINSICS_CONTROL      | 0x07  | D6                              |
-| MSXU_CAMERA_INTRINSICS_CONTROL      | 0x08  | D7                              |
+![Extension unit controls](uvc-1-15-01.png)
 
 #### 2.2.2.1 Cancelable Asynchronous Controls
 
@@ -118,14 +108,7 @@ The Control Change interrupt payload shall have the bit **bmOperationFlags:D0** 
 
 This control allows the host software to specify the focus settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-| Control Selector   | MSXU_FOCUS_CONTROL                                                              |
-|--------------------|---------------------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR         |
-| **wLength**        | 12                                                                              |
-| Offset             | Field                                                                           |
-| 0                  | **bmOperationFlags**                                                            |
-| 1                  | **bmControlFlags**                                                              |
-| 8                  | **dwValue**                                                                     |
+![Focus control](uvc-1-15-02.png)
 
 This control shall function as a Cancelable Asynchronous Control (see section 2.2.2.1 for GET_INFO request requirements and functional behavior of SET_CUR request).
 
@@ -149,13 +132,7 @@ D2 is incompatible with D16, D17, D18, D19 and D20 if D0 is not set.
 
 This control allows the host software to specify the exposure settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-| Control Selector   | MSXU_EXPOSURE_CONTROL                                                           |
-|--------------------|---------------------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR         |
-| **wLength**        | 15                                                                              |
-| Offset             | Field                                                                           |
-| 0                  | **bmControlFlags**                                                              |
-| 7                  | **qwValue**                                                                     |
+![Exposure control](uvc-1-15-03.png)
 
 GET_INFO request shall report this control as an Asynchronous control (i.e. D4 bit shall be set to 1) but not as an AutoUpdate control (i.e. D3 bit shall be set to 0).
 
@@ -169,17 +146,11 @@ For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmCon
 
 -   D1 is incompatible with D0 and D2.
 
-    1.  #### EV Compensation Control
+#### 2.2.2.4 EV Compensation Control
 
 This control allows the host software to specify the EV compensation settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-| Control Selector   | MSXU_EVCOMPENSATION_CONTROL                                                   |
-|--------------------|---------------------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR |
-| **wLength **       | 11                                                                              |
-| Offset             | Field                                                                           |
-| 0                  | **bmControlFlags**                                                              |
-| 7                  | **dwValue**                                                                     |
+![EV compensation control](uvc-1-15-04.png)
 
 GET_INFO request shall report this control as an Asynchronous control (i.e. D4 bit shall be set to 1) but not as an AutoUpdate control (i.e. D3 bit shall be set to 0).
 
@@ -189,18 +160,11 @@ GET_MIN and GET_MAX requests shall report the minimum and maximum supported valu
 
 GET_DEF, GET_CUR, SET_CUR requests shall follow the definitions in section 2.2.2.1 but shall have one and only one bit set among D0, D1, D2, D3 and D4 bits for field **bmControlFlags**. Furthermore, GET_DEF request shall have **dwValue** set to 0.
 
-#### White Balance Control
+#### 2.2.2.5 White Balance Control
 
 This control allows the host software to specify the white balance settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
-| Control Selector   | MSXU_WHITEBALANCE_CONTROL                                                       |
-|--------------------|---------------------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR         |
-| **wLength**        | 15                                                                              |
-| Offset             | Field                                                                           |
-| 0                  | **bmControlFlags**                                                              |
-| 7                  | **dwValueFormat**                                                               |
-| 11                 | **dwValue**                                                                     |
+![White balance control](uvc-1-15-05.png)
 
 GET_INFO request shall report this control as an Asynchronous control (i.e. D4 bit shall be set to 1) but not as an AutoUpdate control (i.e. D3 bit shall be set to 0).
 
@@ -212,53 +176,27 @@ GET_DEF requirement: The default for **bmControlFlags** shall be D0 set to 1 and
 
 For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmControlFlags**:
 
--   Among D0, D1 and D2 bits, atleast one bit shall be set.
+- Among D0, D1 and D2 bits, atleast one bit shall be set.
 
--   D1 is incompatible with D0 and D2.
+- D1 is incompatible with D0 and D2.
 
-    1.  #### ISO Control
+#### 2.2.2.6 ISO Control
 
 This control allows the host software to specify the ISO film speed settings for still image capture on the camera. This control is only applicable to the specified video/still endpoints (which is a subset of all video/still endpoints on all video streaming interfaces associated with the video control interface). If Method 1 for still capture is used, this control should be supported on the video endpoint. If Method 2 or Method 3 for still capture is used, this control should be supported on the still endpoint.
 
-TBD
-
-| Control Selector   | MSXU_ISO_CONTROL                                                              |
-|--------------------|---------------------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR |
-| **wLength **       | Vendor-Specific                                                                 |
-| Offset             | Field                                                                           |
-| 0                  | **bNumEntries**                                                                 |
-| 1                  | **bEndpointAddress(1)**                                                         |
-| 2                  | **bmControlFlags(1)**                                                           |
-| 9                  | **dwValue(1)**                                                                  |
-| …                  | **…**                                                                           |
-| 12*(n-1)+1        | **bEndpointAddress(n)**                                                         |
-| 12*(n-1)+2        | **bmControlFlags(n)**                                                           |
-| 12*(n-1)+9        | **dwValue(n)**                                                                  |
+![ISO control](uvc-1-15-06.png)
 
 GET_INFO request shall report this control as an Asynchronous control (i.e. D4 bit shall be set to 1) but not as an AutoUpdate control (i.e. D3 bit shall be set to 0).
 
 GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR requests shall follow the definitions in section 2.2.2.1. Also, the output of these requests shall list all and only endpoints capable of either D0 (Auto mode) or D52 (Manual mode) i.e. if an endpoint is capable of either D0 or D52, it gets listed; otherwise, it does not get listed.
 
-#### Face Authentication Control
+#### 2.2.2.7 Face Authentication Control
 
 This control allows the host software to specify whether the camera supports streaming modes that are used for face authentication. This control should be supported only if the camera wishes to support face authentication.
 
 This control is only applicable to cameras that can produce Infra-Red (IR) data and is only applicable to the specified video endpoints (which is a subset of all video endpoints on all video streaming interfaces associated with the video control interface).
 
-TBD
-
-| Control Selector   | MSXU_FACE_AUTHENTICATION_CONTROL                                             |
-|--------------------|---------------------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR, SET_CUR |
-| **wLength **       | Vendor-Specific                                                                 |
-| Offset             | Field                                                                           |
-| 0                  | **bNumEntries**                                                                 |
-| 1                  | **bEndpointAddress(1)**                                                         |
-| 2                  | **bmControlFlags(1)**                                                           |
-| …                  | **…**                                                                           |
-| 8*(n-1)+1         | **bEndpointAddress(n)**                                                         |
-| 8*(n-1)+2         | **bmControlFlags(n)**                                                           |
+![Face authentication control](uvc-1-15-07.png)
 
 GET_RES and GET_MIN requests shall report field **bNumEntries** set to 0 and hence have no additional fields.
 
@@ -266,67 +204,41 @@ For a GET_MAX request, a bit set to 1 on the **bmControlFlags** field indicates 
 
 For GET_DEF / GET_CUR / SET_CUR requests, a bit set to 1 indicates that the corresponding mode is chosen for that endpoint. In these requests, one and only one bit (among D0, D1 & D2) shall be set for a particular endpoint. For the GET_DEF request that returns the default choice (which is implementation specific), if an endpoint is expected to work in a general purpose manner (i.e. outside of the purpose of face authentication), then D0 should be set to 1 by default on that endpoint; otherwise, either D1 or D2 (but not both) should be set to 1 by default. A GET_DEF / GET_CUR request output shall contain information on all endpoints listed in GET_MAX request output; however, a SET_CUR request may only include a subset of the endpoints listed in GET_MAX request output.
 
-#### Camera Extrinsics Control
+#### 2.2.2.8 Camera Extrinsics Control
 
 This control allows the host software to obtain the camera extrinsics data for endpoints on video streaming interfaces associated with the video control interface. The data thus obtained for each endpoint will show up as attribute MFStreamExtension_CameraExtrinsics on the attribute store for the corresponding stream (obtained using IMFDeviceTransform::GetOutputStreamAttributes call).
 
-TBD
-
-| Control Selector   | MSXU_CAMERA_EXTRINSICS_CONTROL                                     |
-|--------------------|-----------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR |
-| **wLength **       | Vendor-specific                                                       |
-| Offset             | Field                                                                 |
-| 0                  | **bNumEntries**                                                       |
-| 1                  | **bEndpointAddress(1)**                                               |
-| 2                  | **wSize(1)**                                                          |
-| 4                  | **bData(1)**                                                          |
-| …                  | **…**                                                                 |
-| x                  | **bEndpointAddress(n)**                                               |
-| x + 1              | **wSize(n)**                                                          |
-| x + 3              | **bData(n)**                                                          |
+![Camera extrinsics control](uvc-1-15-08.png)
 
 GET_RES, GET_MIN, GET_MAX, GET_CUR requests shall report field **bNumEntries** set to 0 and hence have no additional fields.
 
 GET_DEF request shall list all endpoints that have the extrinsics information available.
 
-#### Camera Intrinsics Control
+#### 2.2.2.9 Camera Intrinsics Control
 
 This control allows the host software to obtain the camera intrinsics data for endpoints on video streaming interfaces associated with the video control interface. The data thus obtained for each endpoint will show up as attribute MFStreamExtension_PinholeCameraIntrinsics on the attribute store for the corresponding stream (obtained using IMFDeviceTransform::GetOutputStreamAttributes call).
 
-| Control Selector   | MSXU_CAMERA_INTRINSICS_CONTROL                                     |
-|--------------------|-----------------------------------------------------------------------|
-| Mandatory Requests | GET_INFO, GET_LEN, GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR |
-| **wLength **       | Vendor-specific                                                       |
-| Offset             | Field                                                                 |
-| 0                  | **bNumEntries**                                                       |
-| 1                  | **bEndpointAddress(1)**                                               |
-| 2                  | **wSize(1)**                                                          |
-| 4                  | **bData(1)**                                                          |
-| …                  | **…**                                                                 |
-| x                  | **bEndpointAddress(n)**                                               |
-| x + 1              | **wSize(n)**                                                          |
-| x + 3              | **bData(n)**                                                          |
+![Camera intrinsics control](uvc-1-15-09.png)
 
 GET_RES, GET_MIN, GET_MAX, GET_CUR requests shall report field **bNumEntries** set to 0 and hence have no additional fields.
 
 GET_DEF request shall list all endpoints that have the intrinsics information available.
 
-### Metadata
+### 2.2.3 Metadata
 
-The design for standard-format frame-metadata builds on the UVC custom metadata design from Windows 10. In Windows 10, custom metadata is supported for UVC by using a custom INF for the camera driver (note: the camera driver can be based on the Windows USBVIDEO.SYS, but a custom INF is required for the given hardware for metadata to come through). If MetadataBufferSizeInKB&lt;PinIndex&gt; registry entry is present and non-zero, then custom metadata is supported for that pin and the value indicates the buffer size used for the metadata. The &lt;PinIndex&gt; field indicates a 0 based index of the video pin index.
+The design for standard-format frame-metadata builds on the UVC custom metadata design from Windows 10. In Windows 10, custom metadata is supported for UVC by using a custom INF for the camera driver (note: the camera driver can be based on the Windows USBVIDEO.SYS, but a custom INF is required for the given hardware for metadata to come through). If MetadataBufferSizeInKB<PinIndex> registry entry is present and non-zero, then custom metadata is supported for that pin and the value indicates the buffer size used for the metadata. The <PinIndex> field indicates a 0 based index of the video pin index.
 
 In Windows 10, version 1703, a camera driver can signal support for Microsoft standard-format metadata by including the following AddReg entry:
 
-**StandardFormatMetadata&lt;PinIndex&gt;**: REG_DWORD: 0x0 (NotSupported) to 0x1 (Supported)
+**StandardFormatMetadata<PinIndex>**: REG_DWORD: 0x0 (NotSupported) to 0x1 (Supported)
 
 This registry key will be read by DevProxy and informs the UVC driver that the metadata is in standard format by setting the flag KSSTREAM_METADATA_INFO_FLAG_STANDARDFORMAT in the Flags field for KSSTREAM_METADATA_INFO structure.
 
-#### Microsoft Standard-Format Metadata
+#### 2.2.3.1 Microsoft Standard-format Metadata
 
 The Microsoft standard-format metadata is one or more instances of the following structure:
 
-![extension standard format metadata](images/extension-standard-format-metadata.png)
+![Standard format metadata](images/extension-standard-format-metadata.png)
 
 ```
 typedef struct tagKSCAMERA_METADATA_ITEMHEADER {
@@ -335,7 +247,7 @@ typedef struct tagKSCAMERA_METADATA_ITEMHEADER {
 } KSCAMERA_METADATA_ITEMHEADER, *PKSCAMERA_METADATA_ITEMHEADER;
 ```
 
-The MetadataId field is filled by an identifier from the following enum definition which contains well-defined identifiers as well as custom identifiers (identifiers &gt;= MetadataId_Custom_Start).
+The MetadataId field is filled by an identifier from the following enum definition which contains well-defined identifiers as well as custom identifiers (identifiers >= MetadataId_Custom_Start).
 
 ```
 typedef enum {
@@ -353,92 +265,79 @@ typedef enum {
 
 The Size field is set to sizeof(KSCAMERA_METADATA_ITEMHEADER) + sizeof(Metadata Payload).
 
-#### Firmware-generated standard-format metadata from USB video frame packets
+#### 2.2.3.2 Firmware-generated standard-format metadata from USB video frame packets
 
 During a transfer over UVC for frame based video, the video frame is packetized into a series of packets, each preceded by a UVC Payload Header. Each UVC Payload Header is defined by the USB Video Class Driver Frame Based Payload specification:
 
-> **Payload Header**
->
-> The following is a description of the payload header format for Frame Based formats.
+**Payload Header**
 
-|       |       |       | HLE (Header Length)   |       |       |
-|-------|-------|-------|-----------------------|-------|-------|
-| EOH   | ERR   | STI   | RES                   | SCR   | PTS   |
-|       |       |       | PTS [7:0]           |       |       |
-|       |       |       | PTS [15:8]          |       |       |
-|       |       |       | PTS [23:16]         |       |       |
-|       |       |       | PTS [31:24]         |       |       |
-|       |       |       | SCR [7:0]           |       |       |
-|       |       |       | SCR [15:8]          |       |       |
-|       |       |       | SCR [23:16]         |       |       |
-|       |       |       | SCR [31:24]         |       |       |
-|       |       |       | SCR [39:32]         |       |       |
-|       |       |       | SCR [47:40]         |       |       |
+The following is a description of the payload header format for Frame Based formats.
 
-> **HLE (Header length) field**
->
-> The header length field specifies the length of the header, in bytes.
->
-> **Bit field header field**
->
-> *FID: Frame Identifier*
->
-> This bit toggles at each frame start boundary and stays constant for the rest of the frame.
->
-> *EOF: End of Frame*
->
-> This bit indicates the end of a video frame and is set in the last video sample belonging to a frame. The use of this bit is an optimization to reduce latency in completion of a frame transfer, and is optional.
->
-> *PTS: Presentation Time Stamp*
->
-> This bit, when set, indicates the presence of a PTS field.
->
-> *SCR: Source Clock Reference*
->
-> This bit, when set, indicates the presence of a SCR field.
->
-> *RES: Reserved.*
->
-> Set to 0.
->
-> *STI: Still Image*
->
-> This bit, when set, identifies a video sample as belonging to a still image.
->
-> *ERR: Error Bit*
->
-> This bit, when set, indicates an error in the device streaming.
->
-> *EOH: End of Header*
->
-> This bit, when set, indicates the end of the BFH fields.
->
-> *PTS: Presentation Time Stamp, Size: 4 bytes, Value: Number *
->
-> The PTS field is present when the PTS bit is set in the BFH[0] field. See Section 2.4.3.3 “Video and Still Image Payload Headers” in the *USB Device Class Definition for Video Devices* specification.
->
-> *SCR: Source Clock Reference, Size: 6 bytes, Value: Number*
->
-> The SCR field is present when the SCR bit is set in the BFH[0] field. See Section 2.4.3.3 “Video and Still Image Payload Headers” in the *USB Device Class Definition for Video Devices* specification.
+![Payload header](uvc-1-15-10.png)
 
-The HLE field in the existing UVC driver is fixed to either 2 bytes (no PTS/SCR present) or upto 12 bytes (PTS/SCR present). **However, the HLE field, being a byte sized field, can potentially specify up to 255 bytes of header data.** If both PTS/SCR are present, and the HLE is &gt;12 bytes, any additional data following the first 12 bytes of the payload header is picked up as standard metadata specific to the video frame when INF entry *StandardFormatMetadata&lt;PinIndex&gt;* is set.
+**HLE (Header length) field**
+
+The header length field specifies the length of the header, in bytes.
+
+**Bit field header field**
+
+*FID: Frame Identifier*
+
+This bit toggles at each frame start boundary and stays constant for the rest of the frame.
+
+*EOF: End of Frame*
+
+This bit indicates the end of a video frame and is set in the last video sample belonging to a frame. The use of this bit is an optimization to reduce latency in completion of a frame transfer, and is optional.
+
+*PTS: Presentation Time Stamp*
+
+This bit, when set, indicates the presence of a PTS field.
+
+*SCR: Source Clock Reference*
+
+This bit, when set, indicates the presence of a SCR field.
+
+*RES: Reserved.*
+
+Set to 0.
+
+*STI: Still Image*
+
+This bit, when set, identifies a video sample as belonging to a still image.
+
+*ERR: Error Bit*
+
+This bit, when set, indicates an error in the device streaming.
+
+*EOH: End of Header*
+
+This bit, when set, indicates the end of the BFH fields.
+
+*PTS: Presentation Time Stamp, Size: 4 bytes, Value: Number *
+
+The PTS field is present when the PTS bit is set in the BFH[0] field. See Section 2.4.3.3 “Video and Still Image Payload Headers” in the *USB Device Class Definition for Video Devices* specification.
+
+*SCR: Source Clock Reference, Size: 6 bytes, Value: Number*
+
+The SCR field is present when the SCR bit is set in the BFH[0] field. See Section 2.4.3.3 “Video and Still Image Payload Headers” in the *USB Device Class Definition for Video Devices* specification.
+
+The HLE field in the existing UVC driver is fixed to either 2 bytes (no PTS/SCR present) or upto 12 bytes (PTS/SCR present). **However, the HLE field, being a byte sized field, can potentially specify up to 255 bytes of header data.** If both PTS/SCR are present, and the HLE is > 12 bytes, any additional data following the first 12 bytes of the payload header is picked up as standard metadata specific to the video frame when INF entry *StandardFormatMetadata<PinIndex>* is set.
 
 The standard-format metadata (generated by firmware) for a frame is obtained by concatenating the partial blobs found in the Video Frame Packets representing that frame.
 
-![extension metadata frame packets](images/extension-metadata-frame-packets.png)
-
+![Metadata frame packets](images/extension-metadata-frame-packets.png)
 
 #### 2.2.3.3 Metadata buffer provided to user-mode component
 
     The metadata buffer provided to the user mode component would have a metadata item for the UVC timestamps (generated by UVC driver) followed by firmware-generated metadata items and they are laid out as follows:
 
-![extension metadata buffer](images/extension-metadata-buffer.png)
+![Metadata buffer](images/extension-metadata-buffer.png)
 
 #### 2.2.3.4 Metadata format for standard metadata identifiers
 
 The firmware can choose whether or not to produce metadata corresponding to an identifier. If the firmware chooses to produce metadata corresponding to an identifier, then that identifier’s metadata shall be present on all frames emitted by the firmware.
 
-##### MetadataId_CaptureStats
+##### 2.2.3.4.1 MetadataId_CaptureStats
 
 The metadata format for this identifier is defined by the following structure:
 
@@ -480,7 +379,6 @@ The **Flags** field indicates which of the later fields in the structure are fil
 
 The **Reserved** field is reserved for future and shall be set to 0.
 
-
 The **ExposureTime** field contains the exposure time, in 100ns, applied to the sensor when the frame was captured. This will show up as attribute MF_CAPTURE_METADATA_EXPOSURE_TIME on the corresponding MF sample.
 
 The **ExposureCompensationFlags** field contains the EV compensation step (exactly one of the KSCAMERA_EXTENDEDPROP_EVCOMP_XXX step flags shall be set) used to convey the EV Compensation value. The **ExposureCompensationValue** field contains the EV Compensation value in units of the step applied to the sensor when the frame was captured. These will show up as attribute MF_CAPTURE_METADATA_EXPOSURE_COMPENSATION on the corresponding MF sample.
@@ -515,7 +413,8 @@ The metadata format for this identifier involves the standard KSCAMERA_METADATA_
 
 The metadata format for this identifier is defined by the following structure:
 
-```typedef struct tagKSCAMERA_METADATA_FRAMEILLUMINATION {
+```
+typedef struct tagKSCAMERA_METADATA_FRAMEILLUMINATION {
     KSCAMERA_METADATA_ITEMHEADER Header;
     ULONG Flags;
     ULONG Reserved;
@@ -523,7 +422,7 @@ The metadata format for this identifier is defined by the following structure:
 ```
 The **Flags** field indicates information about the captured frame. Currently, the following flags are defined:
 
-``
+```
 #define KSCAMERA_METADATA_FRAMEILLUMINATION_FLAG_ON 0x00000001
 ```
 
