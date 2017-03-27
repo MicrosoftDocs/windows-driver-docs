@@ -1,8 +1,10 @@
 ---
-title: Microsoft extensions to USB Video Class 1.5 Specification
+title: Microsoft extensions to USB Video Class 1.5 specification
 author: windows-driver-content
 description: Describes Microsoft extensions to the USB Video Class 1.5 Specification that enables new controls as well as the capability to carry well-defined frame-metadata in a standard format.
 ---
+
+# Microsoft extensions to USB Video Class 1.5 specification
 
 # 1 Overview
 
@@ -12,7 +14,7 @@ Microsoft extensions to the [USB Video Class specification](http://www.usb.org/d
 
 ## 1.2 Architecture Decisions
 
-UVC frame metadata support will be available to ISOCH and BULK endpoints. However, in the case of BULK endpoint, the metadata size will be limited to 240 bytes (due to the fact that all video frame data is transferred in a single video frame packet on BULK endpoints).
+The USB Video Class (UVC) frame metadata support will be available to ISOCH and BULK endpoints. However, in the case of BULK endpoint, the metadata size will be limited to 240 bytes (due to the fact that all video frame data is transferred in a single video frame packet on BULK endpoints).
 
 UVC metadata support will be only available to frame based payloads.
 
