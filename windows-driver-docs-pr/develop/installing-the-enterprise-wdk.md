@@ -9,7 +9,7 @@ The current Windows Driver Kit (WDK) is optimized for individual developers usin
 The Enterprise WDK contains the necessary elements to build drivers and basic Win32 test applications, and is based on Visual Studio 2015 Enterprise, WDK, and the standalone Windows Software Development Kit (SDK). Use your favorite code editor to modify source code and project files. Because it's a command-line, the Enterprise WDK does lack some of the features incorporated into Visual Studio, such as testing and driver deployment. 
 
 
-##Enterprise WDK components
+## Enterprise WDK components
 *	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.24720.0 (VS 2015 Update 1)  
   *	Note that the Enterprise WDK does not include the IDE, devenv.exe.
 *	Windows SDK build 10586.13
@@ -39,7 +39,7 @@ Where drive\dir is the location that the files were extracted to, for example, d
 %comspec% /k pushd "d:\ewdk" && LaunchBuildEnv.cmd
 
 
-#See Also
+## See Also
 [ MSBuild Reference](https://msdn.microsoft.com/en-us/library/0k6kkbsd.aspx)
 
 
