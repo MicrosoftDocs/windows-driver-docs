@@ -24,63 +24,8 @@ You must choose one or the other; you cannot write a UMDF driver that calls meth
 
 UMDF version 2 drivers run only on Windows 8.1 or later. If you need to write a UMDF driver that runs on operating systems earlier than Windows 8.1, you need to write a UMDF 1.x driver. You can use version 1.11 to build drivers that run on Windows Vista and later. For more info on version 1, see [UMDF 1.x Design Guide](user-mode-driver-framework-design-guide.md). This section describes UMDF version 2.
 
-## In this section
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>[User-Mode Driver Framework Frequently Asked Questions](user-mode-driver-framework-frequently-asked-questions.md)</p></td>
-<td align="left"><p>WDF is a set of libraries that you can use to write device drivers that run on the Windows operating system. WDF defines a single driver model that is supported by two frameworks: KMDF and UMDF. This topic provides answers to frequently asked questions about UMDF.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Advantages of Writing UMDF Drivers](advantages-of-writing-umdf-drivers.md)</p></td>
-<td align="left"><p>This topic describes the advantages of writing a UMDF driver instead of a kernel-mode driver.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Overview of UMDF](overview-of-the-umdf.md)</p></td>
-<td align="left"><p>This topic provides a high-level overview of UMDF components and describes how your driver interacts with system-supplied components. It applies to both UMDF versions 1 and 2.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[UMDF Driver Host Process](umdf-driver-host-process.md)</p></td>
-<td align="left"><p>This topic describes the UMDF driver host process and how it works with other UMDF components. It applies to both UMDF versions 1 and 2.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[Architecture of UMDF](detailed-view-of-the-umdf-architecture.md)</p></td>
-<td align="left"><p>This topic describes how the driver manager builds a user-mode device stack, and how the host process, reflector, and driver manager process an I/O request that an application sends to a UMDF driver.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Comparing UMDF 2 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md)</p></td>
-<td align="left"><p>This topic compares the functionality available to a KMDF driver with that available to a UMDF 2 driver. It is designed to help you decide whether you should write a UMDF 2 driver or a KMDF driver.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>[How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)](how-to-generate-a-umdf-driver-from-a-kmdf-driver.md)</p></td>
-<td align="left"><p>This topic describes how to convert a KMDF driver into a UMDF version 2 driver, and vice-versa.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>[Porting a Driver from UMDF 1 to UMDF 2](porting-a-driver-from-umdf-1-to-umdf-2.md)</p></td>
-<td align="left"><p>This topic describes how to port a UMDF 1 driver to UMDF 2. You can start with a UMDF 1 driver that uses Sources/Dirs files (not a Visual Studio project), or you can convert a UMDF 1 driver that is contained in a Visual Studio project. The result will be a UMDF 2 driver project in Visual Studio. UMDF 2 drivers run on both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.</p></td>
-</tr>
-</tbody>
-</table>
 
  
 
  
-
- 
-
-
-
-
-
