@@ -277,9 +277,9 @@ HKR,,FriendlyName,,%Capture.FilterDescBack%
 HKR,,CameraDeviceMftClsid,,%CameraDeviceMFT.Clsid%
 ```
 
-The above INF entries result in the following registry keys being entered.
+The above INF entries result in the following registry keys being entered:
     
-Note: This is only an example and not the actual regkey
+**Note** This is an example only (and not the actual regkey)
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{E5323777-F976-4f5b-9B55-B94699C46E44}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\#GLOBAL\Device Parameters]
