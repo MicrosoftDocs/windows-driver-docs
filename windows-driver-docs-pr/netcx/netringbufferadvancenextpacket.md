@@ -38,6 +38,11 @@ Return value
 
 Returns NULL if the value of NextIndex equals the value of EndIndex for the specified ring buffer. Otherwise, increments NextIndex and returns a pointer to the NET_PACKET at the new NextIndex value of the ring buffer.
 
+Remarks
+-----
+
+For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+
 Requirements
 ------------
 

@@ -45,7 +45,13 @@ This method does not return a value.
 Remarks
 -------
 
-When the device driver completes transmission or reception of a [**NET_PACKET**](net-packet.md), it marks the packet as completed by setting the **Completed** flag in the starting fragment of the packet. Then, in its [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) or [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback, the client calls **NetRingBufferReturnCompletedPacketsThroughIndex** to transfer ownership of completed packets in the ring buffer back to NetAdapterCx. The class extension updates the packet's **BeginIndex** field to the index of the first non-completed packet or to **EndIndex**, whichever comes first. **EndIndex** should indicate the last [**NET_PACKET**](net-packet.md) that the client has programmed to transmit or receive data.
+When the device driver completes transmission or reception of a [**NET_PACKET**](net-packet.md), it marks the packet as completed by setting the **Completed** flag in the starting fragment of the packet.
+
+The client can call **NetRingBufferReturnCompletedPacketsThroughIndex** from [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) or [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) to transfer ownership of completed packets in the ring buffer back to NetAdapterCx.
+
+NetAdapterCx updates the packet's **BeginIndex** field to the index of the first non-completed packet or to **EndIndex**, whichever comes first. **EndIndex** should indicate the last [**NET_PACKET**](net-packet.md) that the client has programmed to transmit or receive data.
+
+For more info, see [Handling I/O Requests](handling-i-o-requests.md).
 
 Requirements
 ------------

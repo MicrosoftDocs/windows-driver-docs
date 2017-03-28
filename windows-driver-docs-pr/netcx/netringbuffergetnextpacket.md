@@ -38,6 +38,11 @@ Return value
 
 A pointer to a [**NET_PACKET**](net-packet.md) at the **NextIndex** value of the ring buffer, or NULL if the value of **NextIndex** equals the value of **EndIndex**.
 
+Remarks
+-----
+
+For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+
 Requirements
 ------------
 

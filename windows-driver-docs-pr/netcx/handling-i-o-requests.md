@@ -75,14 +75,29 @@ In this model, the client has submitted packets with index values between **Begi
 
 After the hardware transmits or receives data, the client calls [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to return ownership of the completed packets to the class extension, which advances the **BeginIndex** accordingly.  Because the ring buffer is circular, eventually the index values wrap around the end of the buffer and come back to the beginning.
 
-To retrieve and return packets stored in the ring buffer, use the following routines:
-
-Although a client driver can manipulate the **NET_RING_BUFFER** directly, a client driver typically uses higher level helper routines like
+Although a client driver can manipulate the **NET_RING_BUFFER** directly, a client driver typically uses higher level helper routines like:
 
 * [NetRingBufferAdvanceNextPacket method](netringbufferadvancenextpacket.md)
 * [NetRingBufferGetNextPacket method](netringbuffergetnextpacket.md)
-* [NetRingBufferGetPacketAtIndex method](netringbuffergetpacketatindex.md)
 * [NetRingBufferReturnCompletedPackets method](netringbufferreturncompletedpackets.md)
+
+Here is a typical sequence:
+
+1. Get ring buffer.
+2. Iterate on the packets in the ring buffer.  Typically, do the following in a loop:
+    1. Call [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md).
+    2. Program hardware to receive or transmit.
+    3. Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md).
+3. Call [NetRingBufferReturnCompletedPackets method](netringbufferreturncompletedpackets.md).
+
+For code examples of this sequence, see [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) and [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
+
+If the client manipulates the ring buffer indices directly, these additional routines may be useful:
+
+* [NetRingBufferGetPacketAtIndex method](netringbuffergetpacketatindex.md)
 * [NetRingBufferReturnCompletedPacketsThroughIndex method](netringbufferreturncompletedpacketsthroughindex.md)
 
-For code examples, see [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) and [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
+Finally, you can use the [**NET_RING_BUFFER**](net-ring-buffer.md) as a general purpose ring buffer API, outside of its use in the NetAdapterCx model.  To do so, use the following:
+
+* [**NetRingBufferGetElementAtIndex**](netringbuffergetelementatindex.md)
+* [**NetRingBufferGetNumberOfElementsInRange**](netringbuffergetnumberofelementsinrange.md)
