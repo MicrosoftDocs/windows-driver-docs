@@ -5,7 +5,7 @@ description: Provides step-by-step information on implementing a USB Video Class
 ---
 
 
-# Step 1: Get started with USB Video Class (UVC) with documentation from usb.org and MSDN
+# Step 1: Get started with USB Video Class (UVC) using documentation from usb.org and MSDN
 
 Use these links to get acquainted with UVC:
 
@@ -13,15 +13,15 @@ Use these links to get acquainted with UVC:
 
     * Dowmload the [USB Video Class 1.5](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) documentation from usb.org
 
-    * Review the [USB Video Class Driver Overview](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/usb-video-class-driver-overview) on MSDN 
+    * Review the [USB Video Class driver overview](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/usb-video-class-driver-overview) on MSDN 
 
 # Step 2: Implement the platform-supplied Device MFT
 
     * The platform-supplied Device MFT is for RGB USB cameras. It provides common functionality, for example, face detection based ROI for 3A prioritization (if the camera firmware supports ROI control specified in UVC 1.5 standard).
 
-    * To enable this functionality, IHVs and OEMs only need to ensure that the camera supports ROI. If the OEM or IHV needs to disable this functionality, they must do so through registry keys (for example, an INF file entry). For more information, see [DMFT chaining](TBD IRFormatTypesForUVCCameras_External_001.pdf).
+    * To enable this functionality, IHVs and OEMs only need to ensure that the camera supports ROI. If the OEM or IHV needs to disable this functionality, they must do so through registry keys (for example, an INF file entry). 
 
-    * [Device MFT chaining](TBD IRFormatTypesForUVCCameras_External_001.pdf)
+    * For more information, see [DMFT chaining](TBD IRFormatTypesForUVCCameras_External_001.pdf).
 
 # Step 3: Implement the custom Device MFT and MFT0 for your device
 
@@ -33,9 +33,9 @@ Use these links to get acquainted with UVC:
 
     * Review the [MFT0 sample code](https://msdn.microsoft.com/en-us/library/windows/hardware/dn394064) – Creating a camera driver MFT for a Windows Store device app. Note that the Device MFT model supersedes the MFT0 model. While Windows continues to support the MFT0 model, IHVs and OEMs are encouraged to use Device MFT instead, as it simplifies the design and supports more functionality and scalability.
 
-# Step 4: Microsoft-specified UVC extensions
+# Step 4: Implement Microsoft-specified UVC extensions
 
-    *  [USBVideo.sys updates](USBVideo.sys_Updates%20-%20Functional_External_47.0.pdf)
+    *  [USBVideo.sys updates](TBD USBVideo.sys_Updates%20-%20Functional_External_47.0.pdf)
 
     * [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-extensions-1-15)
 
@@ -43,11 +43,11 @@ Use these links to get acquainted with UVC:
 
     * Method 2 still image capture:
 
-        * To find an introduction in the official USB documentation you downloaded and unzipped in Step 1 above:
+        * Locate the introduction in the official USB documentation you downloaded and unzipped in Step 1 above:
 
-            * Open *UVC 1.5 Class specification.pdf* and locate the section for *Method 2* around page 17
+            * Open the *UVC 1.5 Class specification.pdf* document and locate the section for *Method 2* (around page 17)
 
-        * Microsoft specific documentation:
+        * Microsoft-specific documentation:
 
             * Section 3 in [USBVideo.sys Updates](TBD USBVideo.sys_Updates - Functional_External_47.0.pdf) where the registry key needed to light-up Method 2 in the platform is described
 
