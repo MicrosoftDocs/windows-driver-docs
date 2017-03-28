@@ -11,7 +11,7 @@ keywords: ["kernel-mode drivers WDK KMDF , about KMDF", "KMDF WDK , about KMDF",
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-Windows 10, version 1607 includes Kernel-Mode Driver Framework (KMDF) version 1.19 and User-Mode Driver Framework (UMDF) version 2.19.
+Windows 10, version 1703 includes Kernel-Mode Driver Framework (KMDF) version 1.21 and User-Mode Driver Framework (UMDF) version 2.21.
 
 You can use these framework versions to build drivers for:
 
@@ -72,7 +72,7 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 
 -   You can use [**!wdfkd.wdfcrashdump**](https://msdn.microsoft.com/library/windows/hardware/ff565682) to display error information about UMDF 2 drivers. For more information, see **!wdfkd.wdfcrashdump**.
 
-## New Performance Tracing tool for WDF drivers
+## Performance Tracing tool for WDF drivers
 
 
 You can use the Windows Performance Toolkit (WPT) to view performance data for a given KMDF or UMDF 2 driver. When tracing is enabled, the framework generates ETW events for I/O, PnP, and Power callback paths. You can then view graphs in the Windows Performance Analyzer (WPA) that show I/O throughput rates, CPU utilization, and callback performance. The WPT is included in the Windows Assessment and Deployment Kit (ADK).
@@ -98,10 +98,6 @@ For more information, see [New Performance Tools for WDF Drivers in Windows 10](
 
 New support has been added for USB drivers in UMDF. A UMDF 2 USB driver no longer uses WinUSB. To use the new functionality, the driver sets the **UmdfDispatcher** directive to **NativeUSB**, instead of **WinUSB**. See [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
 
-## DDI Updates
-
-
-For information about new and updated DDIs, please see [UMDF Version History](umdf-version-history.md) and [KMDF Version History](kmdf-version-history.md).
 
 ## Improved Performance
 
