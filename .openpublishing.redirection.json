@@ -1,7 +1,7 @@
 {
   "redirections": [
     {
-      "source_path": "windows-driver-docs/devtest/28101---the-drivers-module-has-inferred-that-the-current-function-is-a.md",
+      "source_path": "devtest/28101---the-drivers-module-has-inferred-that-the-current-function-is-a.md",
       "redirect_URL": "https://msdn.microsoft.com/en-us/windows/hardware/drivers/devtest/28101-wrong-function-type",
       "redirect_document_id": true
     }
