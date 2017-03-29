@@ -6,13 +6,13 @@ description: Describes Microsoft extensions to the USB Video Class 1.5 Specifica
 
 # Microsoft extensions to USB Video Class 1.5 specification
 
-# 1 Overview
+## 1 Overview
 
-## 1.1 Summary
+### 1.1 Summary
 
 Microsoft extensions to the [USB Video Class specification](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) enable new controls as well as the capability to carry well-defined frame-metadata in a standard format.
 
-## 1.2 Architecture Decisions
+### 1.2 Architecture Decisions
 
 The USB Video Class (UVC) frame metadata support will be available to ISOCH and BULK endpoints. However, in the case of BULK endpoint, the metadata size will be limited to 240 bytes (due to the fact that all video frame data is transferred in a single video frame packet on BULK endpoints).
 
@@ -24,13 +24,13 @@ UVC metadata will be opt-in. Every IHV/OEM that needs metadata support must enab
 
 UVC metadata will only support system allocated memory. VRAM or DX surfaces will not be supported.
 
-# 2 Architectural Overview
+## 2 Architectural Overview
 
-## 2.1 Description
+### 2.1 Description
 
-### 2.2.1 Capability discovery through INF
+#### 2.2.1 Capability discovery through INF
 
-#### 2.2.1.1 Still Image Capture – Method 2
+##### 2.2.1.1 Still Image Capture – Method 2
 
 Some existing UVC devices may not support Method 2 described in section 2.4.2.4 (Still Image Capture) of the *UVC 1.5 Class specification.pdf* that can be downloaded at the [USB Video Class specification](http://www.usb.org/developers/docs/devclass_docs/USB_Video_Class_1_5.zip) web site. 
 
@@ -66,7 +66,7 @@ HKR,,RTCFlags,0x00010001,0x00000010
 HKR,,EnableDependentStillPinCapture,0x00010001,0x00000001
 ```
 
-### 2.2.2 Extension Unit Controls
+#### 2.2.2 Extension Unit Controls
 
 Microsoft’s extension to the **USB Video Class specification** for enabling new controls is done through an extension unit identified by GUID MS_CAMERA_CONTROL_XU (referred to as Microsoft-XU).
 
@@ -96,7 +96,7 @@ The following table maps the control selectors for Microsoft-XU to their respect
 
 ![Extension unit controls](images/uvc-1-15-01.png)
 
-#### 2.2.2.1 Cancelable Asynchronous Controls
+##### 2.2.2.1 Cancelable Asynchronous Controls
 
 A Cancelable Asynchronous control is defined here by leveraging the Autoupdate capability.
 
@@ -106,7 +106,7 @@ For such control, a SET_CUR request can be issued to set a new value (a SET_CUR(
 
 The Control Change interrupt payload shall have the bit **bmOperationFlags:D0** set to 0 if the settings specified by SET_CUR(NORMAL) were applied (i.e. convergence happened) and set to 1 if the settings were not applied because of a SET_CUR(CANCEL) request that came after the SET_CUR(NORMAL) request (i.e. convergence hasn’t happened yet).
 
-#### 2.2.2.2 Focus Control
+##### 2.2.2.2 Focus Control
 
 This control allows the host software to specify the focus settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
@@ -120,17 +120,17 @@ GET_DEF requirement: The default for **bmControlFlags** shall be D0 and D18 set 
 
 For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmControlFlags**:
 
--   Among D0, D1 and D8 bits, only one bit can be set; none of them being set is valid too if D2 bit is set.
+- Among D0, D1 and D8 bits, only one bit can be set; none of them being set is valid too if D2 bit is set.
 
--   Among D16, D17, D18, D19 and D20, only one bit can be set; none of them being set is valid too.
+- Among D16, D17, D18, D19 and D20, only one bit can be set; none of them being set is valid too.
 
--   D1 is incompatible with all other bits currently defined (D0, D2, D8, D16, D17, D18, D19 and D20).
+- D1 is incompatible with all other bits currently defined (D0, D2, D8, D16, D17, D18, D19 and D20).
 
--   D2 is incompatible with D1 and D8.
+- D2 is incompatible with D1 and D8.
 
 D2 is incompatible with D16, D17, D18, D19 and D20 if D0 is not set.
 
-#### 2.2.2.3 Exposure Control
+##### 2.2.2.3 Exposure Control
 
 This control allows the host software to specify the exposure settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
@@ -148,7 +148,7 @@ For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmCon
 
 -   D1 is incompatible with D0 and D2.
 
-#### 2.2.2.4 EV Compensation Control
+##### 2.2.2.4 EV Compensation Control
 
 This control allows the host software to specify the EV compensation settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
@@ -162,7 +162,7 @@ GET_MIN and GET_MAX requests shall report the minimum and maximum supported valu
 
 GET_DEF, GET_CUR, SET_CUR requests shall follow the definitions in section 2.2.2.1 but shall have one and only one bit set among D0, D1, D2, D3 and D4 bits for field **bmControlFlags**. Furthermore, GET_DEF request shall have **dwValue** set to 0.
 
-#### 2.2.2.5 White Balance Control
+##### 2.2.2.5 White Balance Control
 
 This control allows the host software to specify the white balance settings for the camera. This is a global control that affects all endpoints on all video streaming interfaces associated with the video control interface.
 
@@ -182,7 +182,7 @@ For GET_CUR/SET_CUR requests, the following restrictions apply for field **bmCon
 
 - D1 is incompatible with D0 and D2.
 
-#### 2.2.2.6 ISO Control
+##### 2.2.2.6 ISO Control
 
 This control allows the host software to specify the ISO film speed settings for still image capture on the camera. This control is only applicable to the specified video/still endpoints (which is a subset of all video/still endpoints on all video streaming interfaces associated with the video control interface). If Method 1 for still capture is used, this control should be supported on the video endpoint. If Method 2 or Method 3 for still capture is used, this control should be supported on the still endpoint.
 
@@ -192,7 +192,7 @@ GET_INFO request shall report this control as an Asynchronous control (i.e. D4 b
 
 GET_RES, GET_MIN, GET_MAX, GET_DEF, GET_CUR requests shall follow the definitions in section 2.2.2.1. Also, the output of these requests shall list all and only endpoints capable of either D0 (Auto mode) or D52 (Manual mode) i.e. if an endpoint is capable of either D0 or D52, it gets listed; otherwise, it does not get listed.
 
-#### 2.2.2.7 Face Authentication Control
+##### 2.2.2.7 Face Authentication Control
 
 This control allows the host software to specify whether the camera supports streaming modes that are used for face authentication. This control should be supported only if the camera wishes to support face authentication.
 
@@ -206,7 +206,7 @@ For a GET_MAX request, a bit set to 1 on the **bmControlFlags** field indicates 
 
 For GET_DEF / GET_CUR / SET_CUR requests, a bit set to 1 indicates that the corresponding mode is chosen for that endpoint. In these requests, one and only one bit (among D0, D1 & D2) shall be set for a particular endpoint. For the GET_DEF request that returns the default choice (which is implementation specific), if an endpoint is expected to work in a general purpose manner (i.e. outside of the purpose of face authentication), then D0 should be set to 1 by default on that endpoint; otherwise, either D1 or D2 (but not both) should be set to 1 by default. A GET_DEF / GET_CUR request output shall contain information on all endpoints listed in GET_MAX request output; however, a SET_CUR request may only include a subset of the endpoints listed in GET_MAX request output.
 
-#### 2.2.2.8 Camera Extrinsics Control
+##### 2.2.2.8 Camera Extrinsics Control
 
 This control allows the host software to obtain the camera extrinsics data for endpoints on video streaming interfaces associated with the video control interface. The data thus obtained for each endpoint will show up as attribute MFStreamExtension_CameraExtrinsics on the attribute store for the corresponding stream (obtained using IMFDeviceTransform::GetOutputStreamAttributes call).
 
@@ -216,7 +216,7 @@ GET_RES, GET_MIN, GET_MAX, GET_CUR requests shall report field **bNumEntries** s
 
 GET_DEF request shall list all endpoints that have the extrinsics information available.
 
-#### 2.2.2.9 Camera Intrinsics Control
+##### 2.2.2.9 Camera Intrinsics Control
 
 This control allows the host software to obtain the camera intrinsics data for endpoints on video streaming interfaces associated with the video control interface. The data thus obtained for each endpoint will show up as attribute MFStreamExtension_PinholeCameraIntrinsics on the attribute store for the corresponding stream (obtained using IMFDeviceTransform::GetOutputStreamAttributes call).
 
@@ -226,7 +226,7 @@ GET_RES, GET_MIN, GET_MAX, GET_CUR requests shall report field **bNumEntries** s
 
 GET_DEF request shall list all endpoints that have the intrinsics information available.
 
-### 2.2.3 Metadata
+#### 2.2.3 Metadata
 
 The design for standard-format frame-metadata builds on the UVC custom metadata design from Windows 10. In Windows 10, custom metadata is supported for UVC by using a custom INF for the camera driver (note: the camera driver can be based on the Windows USBVIDEO.SYS, but a custom INF is required for the given hardware for metadata to come through). If MetadataBufferSizeInKB<PinIndex> registry entry is present and non-zero, then custom metadata is supported for that pin and the value indicates the buffer size used for the metadata. The <PinIndex> field indicates a 0 based index of the video pin index.
 
@@ -236,7 +236,7 @@ In Windows 10, version 1703, a camera driver can signal support for Microsoft st
 
 This registry key will be read by DevProxy and informs the UVC driver that the metadata is in standard format by setting the flag KSSTREAM_METADATA_INFO_FLAG_STANDARDFORMAT in the Flags field for KSSTREAM_METADATA_INFO structure.
 
-#### 2.2.3.1 Microsoft Standard-format Metadata
+##### 2.2.3.1 Microsoft Standard-format Metadata
 
 The Microsoft standard-format metadata is one or more instances of the following structure:
 
@@ -267,7 +267,7 @@ typedef enum {
 
 The Size field is set to sizeof(KSCAMERA_METADATA_ITEMHEADER) + sizeof(Metadata Payload).
 
-#### 2.2.3.2 Firmware-generated standard-format metadata from USB video frame packets
+##### 2.2.3.2 Firmware-generated standard-format metadata from USB video frame packets
 
 During a transfer over UVC for frame based video, the video frame is packetized into a series of packets, each preceded by a UVC Payload Header. Each UVC Payload Header is defined by the USB Video Class Driver Frame Based Payload specification:
 
@@ -329,17 +329,17 @@ The standard-format metadata (generated by firmware) for a frame is obtained by 
 
 ![Metadata frame packets](images/extension-metadata-frame-packets.png)
 
-#### 2.2.3.3 Metadata buffer provided to user-mode component
+##### 2.2.3.3 Metadata buffer provided to user-mode component
 
 The metadata buffer provided to the user mode component would have a metadata item for the UVC timestamps (generated by UVC driver) followed by firmware-generated metadata items and they are laid out as follows:
 
 ![Metadata buffer](images/extension-metadata-buffer.png)
 
-#### 2.2.3.4 Metadata format for standard metadata identifiers
+##### 2.2.3.4 Metadata format for standard metadata identifiers
 
 The firmware can choose whether or not to produce metadata corresponding to an identifier. If the firmware chooses to produce metadata corresponding to an identifier, then that identifier’s metadata shall be present on all frames emitted by the firmware.
 
-##### 2.2.3.4.1 MetadataId_CaptureStats
+###### 2.2.3.4.1 MetadataId_CaptureStats
 
 The metadata format for this identifier is defined by the following structure:
 
@@ -403,15 +403,15 @@ The **SceneMode** field contains the scene mode applied to the frame captured wh
 
 The **SensorFramerate** field contains the measured sensor readout rate in hertz when the frame is captured, which consists of a numerator value in the upper 32 bit and a denominator value in the lower 32 bit. This will show up as attribute MF_CAPTURE_METADATA_SENSORFRAMERATE on the corresponding MF sample.
 
-##### 2.2.3.4.2 MetadataId_CameraExtrinsics
+###### 2.2.3.4.2 MetadataId_CameraExtrinsics
 
 The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFCameraExtrinsics](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740392) structure followed by zero or more [MFCameraExtrinsic_CalibratedTransform](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740393) structures. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
-##### 2.2.3.4.3 MetadataId_CameraIntrinsics
+###### 2.2.3.4.3 MetadataId_CameraIntrinsics
 
 The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFPinholeCameraIntrinsics](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740396) structure. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
-##### 2.2.3.4.4 MetadataId_FrameIllumination
+###### 2.2.3.4.4 MetadataId_FrameIllumination
 
 The metadata format for this identifier is defined by the following structure:
 

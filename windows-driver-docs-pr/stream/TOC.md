@@ -1,4 +1,8 @@
 # [Streaming media devices design guide](index.md)
+# [USB Video Class (UVC) driver implementation checklist](uvc-driver-implementation-checklist.md)
+## [Device MFT design guide](dmft-design.md)
+## [Infrared stream support in UVC](infrared-stream-support-in-uvc.md)
+## [Microsoft extensions to USB Video Class 1.5 specification](uvc-extensions-1-15.md)
 ## [AVStream Minidrivers Design Guide](avstream-minidrivers-design-guide.md)
 ### [New AVStream Interfaces for Windows 8.1](new-avstream-interfaces-for-windows-8-1.md)
 ### [New AVStream Interfaces for Windows 8](new-windows-8-ddis.md)

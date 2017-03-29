@@ -6,7 +6,7 @@ description: Provides information on infrared stream support in UVC
 
 # Infrared stream support in UVC
 
-In Windows 10, version 1607 and later, the inbox USB Video Class driver supports cameras that produce Infrared (IR) streams. 
+In Windows 10, version 1607 and later, the inbox USB Video Class (UVC) driver supports cameras that produce infrared (IR) streams. 
 
 These cameras capture the scene’s luma value and transmit the frames over USB as an uncompressed format or as a compressed MJPEG format. These cameras and their streams are exposed to applications through the media capture pipeline. 
 
@@ -32,7 +32,7 @@ typedef struct _VIDEO_FORMAT_FRAME
     UCHAR bDescriptorSubtype;
     UCHAR bFormatIndex;
     UCHAR bNumFrameDescriptors;
-    GUID guidFormat;        // guidFormat must contain one of the IIR format type GUIDs from the table above
+    GUID  guidFormat;           // guidFormat must contain one of the IIR format type GUIDs from the table above
     UCHAR bBitsPerPixel;
     UCHAR bDefaultFrameIndex;
     UCHAR bAspectRatioX;
