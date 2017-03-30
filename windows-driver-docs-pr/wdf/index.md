@@ -20,6 +20,37 @@ You can use these framework versions to build drivers for:
 
 For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
 
+## New in WDF for Redstone 2
+
+In Windows 10, version 1703, WDF includes the following enhancements:
+
+* New WDF Verifier settings to detect excessive object creation
+ 
+    In some cases, framework objects are incorrectly parented and not deleted after use.  With this feature, you can specify a maximum number of objects and what should happen when this threshold is exceeded.
+    
+    To start monitoring, add the following registry values under:
+    `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\<driver service>\Parameters\wdf`
+    
+    1.  Add a DWORD value named **ObjectLeakDetectionLimit** with the threshold value. This is the maximum number of objects of the types described in the **ObjectsForLeakDetection** key.
+    
+    2.  Add a new REG_MULTI_SZ value named **ObjectsForLeakDetection** that lists each type name to verify. For example, you could specify `WDFDMATRANSACTION WDFDEVICE`. To specify all handle types, use `*` as the string.
+
+    3. To control whether exceeding this threshold should cause a debug break or a bugcheck, set the [DbgBreakOnError](using-kmdf-verifier.md) key.
+
+    By default, if the ObjectsForLeakDetection key is not specified, the framework monitors WDFREQUEST, WDFWORKITEM, WDFKEY, WDFSTRING, WDFOBJECT, and WDFDEVICE.
+    
+    The limit scales with the number of devices installed, so if the driver creates three WDFDEVICE objects, the WDF Verifier limit is three times the value specified in **ObjectLeakDetectionLimit**.
+    
+    If you specify WDFREQUEST, the verifier only counts WDFREQUEST objects that the driver creates.
+    
+    This feature does not currently support tracking the WDFMEMORY object type. 
+
+* SleepStudy tool provides info on KMDF drivers
+
+    The SleepStudy software tool reports the number of power references that a KMDF driver has that are preventing the system from going to sleep.  For more info, see [Modern standby SleepStudy](https://msdn.microsoft.com/windows/hardware/commercialize/design/device-experiences/modern-standby-sleepstudy).
+
+The rest of this page describes functionality that was added in Windows 10, version 1507.
+
 ## WDF source code is publicly available
 
 
@@ -46,7 +77,7 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 ## Debugging and Diagnosability
 
 
--   All KMDF and UMDF 2 drivers can use the new always on, always available Inflight Trace Recorder (IFR). When a driver provides a custom trace, the driver IFR log contains the trace messages. Note that the new driver IFR log is separate from the framework IFR log that WDF creates for each driver.
+-   All KMDF and UMDF 2 drivers can use an always on, always available Inflight Trace Recorder (IFR). When a driver provides a custom trace, the driver IFR log contains the trace messages. Note that the new driver IFR log is separate from the framework IFR log that WDF creates for each driver.
 
     It's easy to turn on the IFR. See [Inflight Trace Recorder (IFR) for logging traces](https://msdn.microsoft.com/library/windows/hardware/dn914610) and [Using Inflight Trace Recorder in KMDF and UMDF Drivers](using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md).
 
