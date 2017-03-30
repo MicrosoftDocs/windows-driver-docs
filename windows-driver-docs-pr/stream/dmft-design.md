@@ -58,7 +58,7 @@ The capture stack introduces a new system-provided component, the Device Transfo
 
 ### Devproxy
 
-Devproxy is an async MFT that marshals the commands and video frames between AvStream camera driver and Media Foundation. This is provided by Windows and supports “n” number of outputs from the camera driver. Also, this owns the allocators for all the pins exposed by the device.
+Devproxy is an async MFT that marshals the commands and video frames between the AvStream camera driver and Media Foundation. This is provided by Windows and supports *n* number of outputs from the camera driver. Also, this owns the allocators for all the pins exposed by the device.
 
 ### Device MFT
 
@@ -66,13 +66,13 @@ Device MFT is a user-mode extension to the capture driver. It is an *m x n* asyn
 
 The number of input streams of Device MFT must be same as the number of Ks pins exposed by the device. The mediatypes supported by Device MFT’s input streams must be same as the mediatypes exposed by the KS pins.
 
-The number of output streams exposed by Device MFT are the streams seen by Device Source and capture stack, capture API and applications. It could be one, two or three. The input and output stream count of Device MFT need not be the same. Also, Input and output streams need not have same mediatypes, in fact they would typically have different mediatypes. The number of mediatypes need not match either.
+The number of output streams exposed by Device MFT are the streams seen by Device Source and capture stack, capture API and applications and can  be one, two, or three stream. The input and output stream counts of Device MFT do not need to be the same. Also, input and output streams do not need to have the same mediatypes, and typically will have different mediatypes. The number of mediatypes need not match either.
 
-First Ks Pin represented in user mode by Devproxy’s output stream gets associated with the first input stream of Device MFT, the second Ks Pin represented in user mode by Devproxy’s output stream with the second input stream of Device MFT and so on.
+The first Ks Pin represented in user mode by Devproxy’s output stream gets associated with the first input stream of Device MFT, the second Ks Pin represented in user mode by Devproxy’s output stream with the second input stream of Device MFT, and so on.
 
-Device MFT is given a pointer to Devproxy, DX device, and MF WorkQueue ID. Frames coming out of the device is fed directly into the corresponding Device MFT’s input as MF Samples. With all these, Device MFT can post process the captured samples and serve samples to the preview, record and photo pins.
+Device MFT is given a pointer to Devproxy, DX device, and MF WorkQueue ID. Frames coming out of the device are fed directly into the corresponding Device MFT’s input as MF Samples. With all these, Device MFT can post process the captured samples and serve samples to the preview, record, and photo pins.
 
-All the commands and controls going to the device would be rerouted to Device MFT. Device MFT would handle the controls or passes it on to the driver through Devproxy. This streamlines command handling by the capture driver stack.
+All the commands and controls going to the device are rerouted to Device MFT. Device MFT handles the controls or passes them on to the driver through Devproxy. This streamlines command handling by the capture driver stack.
 
 ## Functional Overview
 
@@ -124,7 +124,7 @@ Clients of Source Reader would be able to see the mediatypes exposed by the Devi
 
 ### Input Mediatype change in Device MFT
 
-Since this is an *m x n* MFT, there can be repercussions on input streaming pin’s mediatypes and state change when output streaming pin’s mediatypes or state changes. Specifically when:
+Since this is an *m x n* MFT, there can be repercussions on input streaming pin’s mediatypes and state change when output streaming pin’s mediatypes or state changes. Specifically when the following changes occur:
 
 - Output Mediatype changes
 
