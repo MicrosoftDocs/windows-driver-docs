@@ -4,13 +4,13 @@ author: windows-driver-content
 description: This topic outlines the design of a device-wide extension running in user mode that can be used to perform post-processing common to all streams.
 ---
 
-# Overview
+# Device MFT design guide
 
 The video capture stack in Windows supports a user-mode extension in the form of MFT0. This is a per-stream extension component that IHVs supply, and the capture pipeline inserts as the first transform, post-capture. The MFT0 is fed post-processed frames from the device. Further post processing operations on the frames can be done inside MFT0. 
 
 This topic outlines the design of a device-wide extension running in user mode that can be used to perform post-processing common to all streams.
 
-# Terminology
+## Terminology
 
 | Term       | Description                                                                                         |
 |------------|-----------------------------------------------------------------------------------------------------|
@@ -21,7 +21,7 @@ This topic outlines the design of a device-wide extension running in user mode t
 | Devproxy   | MF <-> AvStream marshaler                                                                           |
 | DTM        | Device Transform Manager that manages devproxy and Device MFT. Represents the device in MF pipeline.|
 
-# Design goals
+## Design goals
 
 - Device filter-wide user-mode extension that has same lifetime as the Device Filter
 - Supports any number of inputs coming from device
@@ -36,13 +36,12 @@ This topic outlines the design of a device-wide extension running in user mode t
 - Simple interface (similar to MFT)
 - Flexible internal architecture for IHV/OEM extensibility
 
-# Design constraints
-==================
+## Design constraints
 
 - No change in the Capture API surface
 - Complete backward compatibility. For example, no regressions while working with legacy apps and scenarios.
 
-# Capture stack architecture
+## Capture stack architecture
 
 This topic describes support for a filter-wide user-mode extension to the capture driver. This component has access to MF APIs, thread pools, GPU and ISP resources. The filter wide extension provides the flexibility of having any number of streams between itself and device Ks filter. This flexibility enables seemless out of band communication between the user-mode extension and driver which can be used for dedicated metadata and 3A processing streams.
 
@@ -53,15 +52,15 @@ This topic describes support for a filter-wide user-mode extension to the captur
 
 ![device mft architecture](images/device-mft-architecture.png)
 
-## Device Transform Manager (DTM)
+### Device Transform Manager (DTM)
 
 The capture stack introduces a new system-provided component, the Device Transform Manager. This resides inside Device Source and manages Devproxy MFT and Device MFT. Device Transform Manager does the MediaType negotiation, sample propagation, and all MFT event handling. It also exposes the IMFTransform interface to Device Source and other necessary private interfaces that Device Source needs to manage device streams. This component abstracts Devproxy and Device MFT from the pipeline. The pipeline just sees the DTM as the device and the streams out of DTM as the device streams.
 
-## Devproxy
+### Devproxy
 
 Devproxy is an async MFT that marshals the commands and video frames between AvStream camera driver and Media Foundation. This is provided by Windows and supports “n” number of outputs from the camera driver. Also, this owns the allocators for all the pins exposed by the device.
 
-## Device MFT
+### Device MFT
 
 Device MFT is a user-mode extension to the capture driver. It is an *m x n* async MFT. It is installed on the system with the capture driver and is provided by the capture driver vendor.
 
@@ -71,11 +70,11 @@ The number of output streams exposed by Device MFT are the streams seen by Devic
 
 First Ks Pin represented in user mode by Devproxy’s output stream gets associated with the first input stream of Device MFT, the second Ks Pin represented in user mode by Devproxy’s output stream with the second input stream of Device MFT and so on.
 
-Device MFT is given a pointer to Devproxy, DX device and MF WorkQueue ID. Frames coming out of the device is fed directly into the corresponding Device MFT’s input as MF Samples. With all these, Device MFT can post process the captured samples and serve samples to the preview, record and photo pins.
+Device MFT is given a pointer to Devproxy, DX device, and MF WorkQueue ID. Frames coming out of the device is fed directly into the corresponding Device MFT’s input as MF Samples. With all these, Device MFT can post process the captured samples and serve samples to the preview, record and photo pins.
 
 All the commands and controls going to the device would be rerouted to Device MFT. Device MFT would handle the controls or passes it on to the driver through Devproxy. This streamlines command handling by the capture driver stack.
 
-# Functional Overview
+## Functional Overview
 
 On initialization of the capture pipeline, DeviceSource instantiates Device Transform Manager, if there is a Device MFT for the device. Passes an instance of Devproxy that represents the device to the Device Transform Manager’s initialization routine. Device Transform Manager CoCreates Device MFT and performs basic validations. Like the number of output pins of Devproxy is same as the number of input pins of Device MFT, support for mandatory interfaces etc…
 
@@ -105,9 +104,7 @@ However, the output stream transition is controlled by capture pipeline. i.e. th
 ![device mft take photo sequence](images/device-mft-take-photo-sequence.png)
 
 
-
-## Lifetime of Device MFT
-----------------------
+### Lifetime of Device MFT
 
 Device MFT is loaded after KS Filter gets created. It will be unloaded before KS Filter gets closed.
 
@@ -115,19 +112,17 @@ From pipeline stand point, when the Device Source is created the Device MFT is c
 
 To support shutdown, the Device MFT must support IMFShutdown interface. After Device MFT->Shutdown is called, any other interface call into the Device MFT must return MF_E_SHUTDOWN error.
 
-## Memory Type
------------
+### Memory Type
 
 Frames can be captured into system memory buffers or DX memory buffers per the preference of camera driver. Whatever buffer that comes out of the camera driver is directly fed into the Device MFT for further processing.
 
 Devproxy will allocate the buffers based on driver’s preference. We require Device MFT to make use of MF allocator APIs to allocate samples needed for its output pins for non-inplace transforms.
 
-## Mediatype change while streaming
---------------------------------
+### Mediatype change while streaming
 
 Clients of Source Reader would be able to see the mediatypes exposed by the Device MFT’s output streams as the natively supported mediatypes. When the native mediatype is changed, Source Reader sends mediatype notification calls into the Device MFT through DeviceSource. It is the responsibility of the Device MFT to flush all the pending samples from that stream’s queue and switch to the new mediatype on that stream in a timely manner. If there is a necessity for changing the input mediatype then it should change the current input mediatype to that one. Device Transform Manager would get the current mediatype from the input stream of the Device MFT and sets it on the Devproxy’s output streams and the Device MFT’s input after each native mediatype change.
 
-## Input Mediatype change in Device MFT
+### Input Mediatype change in Device MFT
 
 Since this is an *m x n* MFT, there can be repercussions on input streaming pin’s mediatypes and state change when output streaming pin’s mediatypes or state changes. Specifically when:
 
@@ -143,7 +138,7 @@ Since this is an *m x n* MFT, there can be repercussions on input streaming pin�
 
 Device Transform Manager would handle [METransformInputStreamStateChanged](https://msdn.microsoft.com/En-US/Library/Windows/Hardware/mt797687) notifications from Device MFT to change the mediatype and or state on Device MFT input and Devproxy output under these conditions.
 
-## Flush Device MFT
+### Flush Device MFT
 
 Two types of flushing is needed while managing Device MFT:
 
@@ -161,27 +156,27 @@ Two types of flushing is needed while managing Device MFT:
 
 All the events that were posted prior to flush would be dropped by DMFT Manager. After flush the DMFT should reset its internal [METransformHaveOutput](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797686) tracking count.
 
-## Drain of Device MFT
+### Drain of Device MFT
 
 Device MFT will not receive separate drain message since there is no need for drain in a live capture source.
 
-## Photo trigger
+### Photo trigger
 
 In this new model, instead of sending the photo trigger and photo sequence start and stop triggers directly to the driver, they will be re-routed to Device MFT. Device MFT should handle the trigger or forward it to the camera driver as necessary.
 
-## Warm start
+### Warm start
 
 Device Source would try to warm start specific output stream by transitioning the stream to Pause state. In turn DTM would call the [IMFDeviceTransform::SetOutputStreamState](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797684) method on Device MFT to transition a specific output stream to Pause state. This would result in corresponding input stream to be put in to Pause. This will be achieved by Device MFT by requesting **METransformInputStreamStateChanged** to DTM and handling the [IMFDeviceTransform::SetInputStreamState](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797683) method.
 
-## Variable photo sequence
+### Variable photo sequence
 
 With this change in architecture, photo sequence could be implemented with the help of camera device driver and Device MFT. This would greatly reduce the complexity of the camera device driver. The start and stop photo sequence triggers would be sent to the Device MFT and it can handle the photo sequence with lot less difficulty.
 
-## Photo confirmation
+### Photo confirmation
 
 A DMFT can support photo confirmation by supporting the **IMFCapturePhotoConfirmation** interface. The pipeline retrieves this interface through [IMFGetService::GetService] (https://msdn.microsoft.com/en-us/library/windows/desktop/ms696978) method.
 
-## Metadata
+### Metadata
 
 Devproxy queries the driver for metadata buffer size and allocates the memory for metadata. Metadata coming from driver would still be set by Devproxy on the sample. Device MFT would consume this sample metadata. Either pass it on with the sample through its output stream or just use them for its post processing.
 
@@ -191,7 +186,7 @@ This metadata stream will not be exposed beyond DTM. The stream can be put into 
 
 Note: There is no requirement for the number of input pins to match the number of output pins in this model. There can be a separate pin just dedicated for metadata or 3A.
 
-# Device Transform Manager event handling
+## Device Transform Manager event handling
 
 [Device Transform Manager events](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt797660) are defined in the following reference topics:
 
@@ -201,17 +196,17 @@ Note: There is no requirement for the number of input pins to match the number o
 - [METransformNeedInput](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797688)
 
 
-# IMFDeviceTransform interface
+## IMFDeviceTransform interface
 
 The [IMFDeviceTransform](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797663) interface is defined to interact with Device MFT. This interface facilitates the management of *m* inputs and *n* output Device MFT. Along with other interfaces, Device MFT must implement this interface.
 
-## General event propagation
+### General event propagation
 
 When an event occurs in Devproxy (or inside device) we need to propagate that to the Device MFT and to the Device Source.
 
-# Device MFT requirements
+## Device MFT requirements
 
-## Interface requirements
+### Interface requirements
 
 Device MFTs must support the following interfaces:
 
@@ -233,7 +228,7 @@ Device MFTs must support the following interfaces:
 
 - [IMFShutdown](https://msdn.microsoft.com/en-us/library/windows/desktop/ms703054)
 
-## Notification Requirements
+### Notification Requirements
 
 Device MFTs must use the following messages to inform DTM about the availability of samples, any input stream state change, and so on.
 
@@ -243,17 +238,17 @@ Device MFTs must use the following messages to inform DTM about the availability
 
 - [METransformFlushInputStream](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797685)
 
-## Thread Requirements
+### Thread Requirements
 
 Device MFT must not create its own threads. Instead it must use MF Work Queues, whose ID is passed through the [IMFRealtimeClientEx] (https://msdn.microsoft.com/en-us/library/windows/desktop/hh448047) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running. Otherwise it may cause thread priority inversions.
 
-## InputStream Requirements
+### InputStream Requirements
 
-### Stream Count
+#### Stream Count
 
 - The number of input streams in Device MFT must be the same as the number of streams supported by the driver.
 
-### MediaTypes
+#### MediaTypes
 
 - The number of mediatypes and the actual media types supported by the Device MFT’s input must match the number and types of mediatypes supported by the driver.
 
@@ -261,7 +256,7 @@ Device MFT must not create its own threads. Instead it must use MF Work Queues, 
 
 - The mediatypes supported by the driver and input of Device MFT could be standard or custom mediatypes.
 
-## To register Device MFT
+### To register Device MFT
 
 The camera device INF must have the following device interface entry that specifies the CLSID of the CoClass of the Device MFT.
 
@@ -279,7 +274,7 @@ HKR,,CameraDeviceMftClsid,,%CameraDeviceMFT.Clsid%
 
 The above INF entries result in the following registry keys being entered:
     
-**Note** This is an example only (and not the actual regkey)
+**Note** This is an example only (not the actual regkey)
 
 ```
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\{E5323777-F976-4f5b-9B55-B94699C46E44}\##?#USB#VID_045E&PID_075D&MI_00#8&23C3DB65&0&0000#{E5323777-F976-4f5b-9B55-B94699C46E44}\#GLOBAL\Device Parameters]
