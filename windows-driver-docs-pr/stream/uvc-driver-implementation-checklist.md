@@ -36,7 +36,7 @@ Use these links to get acquainted with UVC:
 
 ## Step 4: Implement Microsoft-specified UVC extensions
 
-- [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-extensions-1-15)
+- [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-extensions-1-5)
 
 - [Infrared stream support in UVC](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/infrared-stream-support-in-uvc)
 
@@ -48,7 +48,7 @@ Use these links to get acquainted with UVC:
 
     - Microsoft-specific documentation:
 
-        - Review section 2.2.1 and 2.2.2 in the [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-extensions-1-15#21-description).
+        - Review section 2.2.1 and 2.2.2 in the [Microsoft extensions to USB Video Class 1.5 specification](https://msdn.microsoft.com/en-us/windows/hardware/drivers/stream/uvc-extensions-1-5#21-description).
 
 ## Step 5: Test your UVC implementation to ensure it passes HLK tests and meets required functionality and performance
 

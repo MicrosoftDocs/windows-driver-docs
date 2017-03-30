@@ -16,14 +16,14 @@ These IR format type GUIDs are defined in ksmedia.h:
 
 | IR format type GUID             | Description                          |
 |---------------------------------|--------------------------------------|
-| KSDATAFORMAT_SUBTYPE_L8_IR      | 8 bit luma only frames               |
-| KSDATAFORMAT_SUBTYPE_L16_IR     | 16 bit luma only frames              |
-| KSDATAFORMAT_SUBTYPE_MJPEG_IR   | MJPEG compressed luma only frames    |
+| KSDATAFORMAT_SUBTYPE_L8_IR      | 8 bit luma-only frames               |
+| KSDATAFORMAT_SUBTYPE_L16_IR     | 16 bit luma-only frames              |
+| KSDATAFORMAT_SUBTYPE_MJPEG_IR   | MJPEG compressed luma-only frames    |
 
 When these IR format type GUIDs are specified, the capture pipeline automatically marks these streams as IR streams which aids applications in selecting the correct stream for their scenarios.
 
 ```
-// Example: Format Descriptor for UVC 1.1 frame based uncompressed format
+// Example: Format descriptor for UVC 1.1 frame based uncompressed format
 
 typedef struct _VIDEO_FORMAT_FRAME
 {
