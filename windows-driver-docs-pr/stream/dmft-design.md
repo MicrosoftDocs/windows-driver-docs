@@ -24,9 +24,9 @@ This topic outlines the design of a device-wide extension running in user mode t
 ## Design goals
 
 - Device filter-wide user-mode extension that has same lifetime as the Device Filter
-- Supports any number of inputs coming from device
+- Supports any number of inputs coming from the device
 - Supports any number of outputs (current requirement is three streams: preview, record and photo)
-- Routes all device controls to Device MFT (which would optionally handle or pass it to device)
+- Routes all device controls to Device MFT (which optionally handles or passes it to the device)
 - Parallel post processing of captured stream
 - Allow 3A processing independent of frame rate
 - Allow metadata from one stream to be shared among other streams
@@ -54,7 +54,7 @@ This topic describes support for a filter-wide user-mode extension to the captur
 
 ### Device Transform Manager (DTM)
 
-The capture stack introduces a new system-provided component, the Device Transform Manager. This resides inside Device Source and manages Devproxy MFT and Device MFT. Device Transform Manager does the MediaType negotiation, sample propagation, and all MFT event handling. It also exposes the IMFTransform interface to Device Source and other necessary private interfaces that Device Source needs to manage device streams. This component abstracts Devproxy and Device MFT from the pipeline. The pipeline just sees the DTM as the device and the streams out of DTM as the device streams.
+The capture stack introduces a new system-provided component, the Device Transform Manager (DTM). This resides inside DeviceSource and manages Devproxy MFT and Device MFT. DTM does the MediaType negotiation, sample propagation, and all MFT event handling. It also exposes the IMFTransform interface to DeviceSource and other necessary private interfaces that DeviceSource needs to manage device streams. This component abstracts Devproxy and Device MFT from the pipeline. The pipeline just sees the DTM as the device and the streams out of DTM as the device streams.
 
 ### Devproxy
 
@@ -66,7 +66,7 @@ Device MFT is a user-mode extension to the capture driver. It is an *m x n* asyn
 
 The number of input streams of Device MFT must be same as the number of Ks pins exposed by the device. The mediatypes supported by Device MFT’s input streams must be same as the mediatypes exposed by the KS pins.
 
-The number of output streams exposed by Device MFT are the streams seen by Device Source and capture stack, capture API and applications and can  be one, two, or three stream. The input and output stream counts of Device MFT do not need to be the same. Also, input and output streams do not need to have the same mediatypes, and typically will have different mediatypes. The number of mediatypes need not match either.
+The number of output streams exposed by Device MFT are the streams seen by DeviceSource and capture stack, capture API and applications and can  be one, two, or three stream. The input and output stream counts of Device MFT do not need to be the same. Also, input and output streams do not need to have the same mediatypes, and typically will have different mediatypes. The number of mediatypes need not match either.
 
 The first Ks Pin represented in user mode by Devproxy’s output stream gets associated with the first input stream of Device MFT, the second Ks Pin represented in user mode by Devproxy’s output stream with the second input stream of Device MFT, and so on.
 
@@ -76,25 +76,27 @@ All the commands and controls going to the device are rerouted to Device MFT. De
 
 ## Functional Overview
 
-On initialization of the capture pipeline, DeviceSource instantiates Device Transform Manager, if there is a Device MFT for the device. Passes an instance of Devproxy that represents the device to the Device Transform Manager’s initialization routine. Device Transform Manager CoCreates Device MFT and performs basic validations. Like the number of output pins of Devproxy is same as the number of input pins of Device MFT, support for mandatory interfaces etc…
+On initialization of the capture pipeline, if there is a Device MFT for the device, DeviceSource instantiates DTM. It passes an instance of Devproxy that represents the device to the DTM’s initialization routine. DTM co-creates Device MFT and performs basic validations, for example, verifes the number of output pins of Devproxy is same as the number of input pins of Device MFT, support for mandatory interfaces, and so on.
 
-Device Source would query Device Transform Manager to obtain the supported output mediatypes. DTM gets these from Device MFT’s output pins. Device Source exposes the Presentation Descriptor and Stream Descriptor based on this information to the capture pipeline.
+DeviceSource querys DTM to obtain the supported output mediatypes. DTM gets these from Device MFT’s output pins. DeviceSource exposes the Presentation Descriptor and Stream Descriptor based on this information to the capture pipeline.
 
-Source Reader would use the exposed mediatypes out of the Device Source and sets the default mediatypes on each stream. In turn, DeviceSource would set these default mediatypes on the output streams of the DTM. DTM would set this mediatype on the output stream of the Device MFT using the SetOuputStreamState() function.
+SourceReader uses the exposed mediatypes of the DeviceSource and sets the default mediatypes on each stream. In turn, DeviceSource sets the default mediatypes on the output streams of the DTM. DTM sets the mediatype on the output stream of the Device MFT using the [SetOutputStreamState](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797684) method.
 
-When SetOutputStreamState() is called, Device MFT posts a message to DTM to change its input stream’s mediatype based on the selected output mediatype and waits. In response to this message, DTM would query the preferred input mediatype for the input stream of the Device MFT using GetPreferredInputStreamState(). Sets this mediatype on the corresponding output stream of Devproxy. If that succeeds then DTM sets that same mediatype on to the Device MFT’s input stream using SetInputStreamState(). After receiving this call, Device MFT would complete SetOutputStreamState().
+When **SetOutputStreamState** is called, Device MFT posts a message to DTM to change its input stream’s mediatype based on the selected output mediatype and waits. In response to this message, DTM querys the preferred input mediatype for the input stream of the Device MFT using [GetPreferredInputStreamState](https://msdn.microsoft.com/en-us/library/mt797670). This sets the mediatype on the corresponding output stream of Devproxy. If that succeeds, then DTM sets that same mediatype on to the Device MFT’s input stream using SetInputStreamState. After receiving this call, Device MFT completes **SetOutputStreamState**.
 
-CaptureEngine would select individual streams by enabling specific streams on DeviceSource. This will be propagated to Device MFT by DTM through SetOutputStreamState() call. Device MFT would place the specific output streams in the requested state. As mentioned above, Device MFT would also notify Device Transform Manager about the necessary input streams that need to be enabled. This would result in Device Transform Manager propagating the stream selection to Devproxy. At the end of this process, all necessary streams, in Devproxy and Device MFT, would be ready to stream.
+CaptureEngine selects individual streams by enabling specific streams on DeviceSource. This will be propagated to Device MFT by DTM through a **SetOutputStreamState** call. Device MFT places the specific output streams in the requested state. As mentioned above, Device MFT also notifies DTM about the necessary input streams that need to be enabled. This results in DTM propagating the stream selection to Devproxy. At the end of this process, all necessary streams, in Devproxy and Device MFT, are ready to stream.
 
-Source Reader would start the DeviceSource when CaptureEngine calls ReadSample. In turn, DeviceSource would start the Device Transform Manager by sending MFT_MESSAGE_NOTIFY_BEGIN_STREAMING and MFT_MESSAGE_NOTIFY_START_OF_STREAM messages indicating the start of the pipeline. Device Transform Manager would start Devproxy and Device MFT by propagating MFT_MESSAGE_NOTIFY_BEGIN_STREAMING and MFT_MESSAAGE_NOTIFY_SART_OF_STREAM messages. Note: Allocate the necessary resources on start streaming instead of DMFT initialize.
+SourceReader starts the DeviceSource when CaptureEngine calls ReadSample. In turn, DeviceSource starts the DTM by sending MFT_MESSAGE_NOTIFY_BEGIN_STREAMING and MFT_MESSAGE_NOTIFY_START_OF_STREAM messages indicating the start of the pipeline. DTM starts Devproxy and Device MFT by propagating MFT_MESSAGE_NOTIFY_BEGIN_STREAMING and MFT_MESSAAGE_NOTIFY_START_OF_STREAM messages. 
 
-DTM would call SetOutputStreamState on Device MFT’s outputs with the streaming state parameter. Device MFT would start streaming in those streams. DTM would start the streaming on Devproxy output streams that has valid mediatype set. Devproxy would allocate the samples and fetch them from the device. These samples are fed into the Device MFT in the relevant input pin. Device MFT would process these samples and give the output to DeviceSource. From DeviceSource the samples would flow through SourceReader to CaptureEngine.
+**Note** Allocate the necessary resources on start streaming instead of Device MFT initialize.
 
-CaptureEngine would stop individual streams by disabling individual stream through an internal interface on DeviceSource. This will be translated into specific output stream disabling on Device MFT through SetOutputStreamState(). In turn, Device MFT might request disabling specific input stream(s) through METransformInputStreamStateChanged event. Device Transform Manager would propagate this to corresponding Devproxy stream(s).
+DTM calls **SetOutputStreamState** on Device MFT’s outputs with the streaming state parameter. Device MFT starts streaming in those output streams. DTM starts the streaming on the Devproxy output streams that has valid mediatype set. Devproxy allocates the samples and fetches them from the device. These samples are fed into the Device MFT in the relevant input pin. Device MFT processes these samples and gives the output to DeviceSource. From DeviceSource, the samples flow through SourceReader to CaptureEngine.
 
-As long as the Device MFT itself in streaming state, it can request any input stream to transition to any of the valid DeviceStreamState. i.e. it could send it to DeviceStreamState_Stop or DeviceStreamState_Run or DeviceStreamState_Pause etc… without affecting other streams.
+CaptureEngine stops individual streams by disabling individual streams through an internal interface on DeviceSource. This will be translated into specific output stream disabling on Device MFT through **SetOutputStreamState**. In turn, Device MFT may request disabling specific input streams through **METransformInputStreamStateChanged** event. DTM propagates this to corresponding Devproxy streams.
 
-However, the output stream transition is controlled by capture pipeline. i.e. the Preview, Record and Photo streams are enabled or disabled by the capture pipeline. Even when the outputs are disabled, any input stream could still be streaming as long as the Device MFT itself is in streaming state.
+As long as the Device MFT itself in streaming state, it can request any input stream to transition to any of the valid DeviceStreamState. For example, it could send it to DeviceStreamState_Stop or DeviceStreamState_Run or DeviceStreamState_Pause, and so on, without affecting other streams.
+
+However, the output stream transition is controlled by the capture pipeline. For example, the preview, record, and photo streams are enabled or disabled by the capture pipeline. Even when the outputs are disabled, an input stream could still be streaming as long as the Device MFT itself is in streaming state.
 
 ![device mft pipeline preview sequence](images/device-mft-pipeline-preview-sequence.png)
 
@@ -108,19 +110,19 @@ However, the output stream transition is controlled by capture pipeline. i.e. th
 
 Device MFT is loaded after KS Filter gets created. It will be unloaded before KS Filter gets closed.
 
-From pipeline stand point, when the Device Source is created the Device MFT is created and when the Device Source is shutdown the Device MFT will be shutdown synchronously.
+From a pipeline perspective, when the DeviceSource is created, the Device MFT is created, and when the DeviceSource is shutdown, the Device MFT is shutdown synchronously.
 
-To support shutdown, the Device MFT must support IMFShutdown interface. After Device MFT->Shutdown is called, any other interface call into the Device MFT must return MF_E_SHUTDOWN error.
+To support shutdown, the Device MFT must support the **IMFShutdown** interface. After **Device MFT->Shutdown** is called, any other interface call into the Device MFT must return an MF_E_SHUTDOWN error.
 
 ### Memory Type
 
-Frames can be captured into system memory buffers or DX memory buffers per the preference of camera driver. Whatever buffer that comes out of the camera driver is directly fed into the Device MFT for further processing.
+Frames can be captured into system memory buffers, or DX memory buffers, per the preference of camera driver. Whatever buffer comes out of the camera driver is directly fed into the Device MFT for further processing.
 
-Devproxy will allocate the buffers based on driver’s preference. We require Device MFT to make use of MF allocator APIs to allocate samples needed for its output pins for non-inplace transforms.
+Devproxy will allocate the buffers based on the driver’s preference. We require Device MFT to make use of MF allocator APIs to allocate the samples needed for its output pins for non-inplace transforms.
 
 ### Mediatype change while streaming
 
-Clients of Source Reader would be able to see the mediatypes exposed by the Device MFT’s output streams as the natively supported mediatypes. When the native mediatype is changed, Source Reader sends mediatype notification calls into the Device MFT through DeviceSource. It is the responsibility of the Device MFT to flush all the pending samples from that stream’s queue and switch to the new mediatype on that stream in a timely manner. If there is a necessity for changing the input mediatype then it should change the current input mediatype to that one. Device Transform Manager would get the current mediatype from the input stream of the Device MFT and sets it on the Devproxy’s output streams and the Device MFT’s input after each native mediatype change.
+Clients of SourceReader are able to see the mediatypes exposed by the Device MFT’s output streams as natively supported mediatypes. When the native mediatype is changed, SourceReader sends mediatype notification calls into the Device MFT through DeviceSource. It is the responsibility of the Device MFT to flush all pending samples from that stream’s queue and switch to the new mediatype on that stream in a timely manner. If there is a necessity for changing the input mediatype, then it should change the current input mediatype to that one. DTM gets the current mediatype from the input stream of the Device MFT and sets it on the Devproxy’s output streams and the Device MFT’s input after each native mediatype change.
 
 ### Input Mediatype change in Device MFT
 
@@ -128,65 +130,65 @@ Since this is an *m x n* MFT, there can be repercussions on input streaming pin�
 
 - Output Mediatype changes
 
-    - When an application changes native mediatype, that will cascade through the capture stack into Device MFT as an output pin mediatype change.
+    - When an application changes native mediatype, it cascades through the capture stack into Device MFT as an output pin mediatype change.
 
-    - When output mediatype changes that could trigger an input mediatype change. For example, all output pins are streaming at 720 p. This would have resulted in streaming from camera at 720 p. Now let us say, the record stream changes its native mediatype to 1080p. Now one of the Device MFT input stream that was fetching data to the record stream, has to change its mediatype.
+    - When output mediatype changes, it may trigger an input mediatype change. For example, assume all output pins are streaming at 720p. This results in streaming from the camera at 720p. Next, assume the record stream changes its native mediatype to 1080p. In that case, one of the Device MFT input streams that was fetching data to the record stream would have to change its mediatype.
 
-- Output pin gets disabled
+- Output pin is disabled
 
-    - When application disables one of Device MFT outputs when the same input is shared by more than one outputs, for optimization sake the input may have to change the mediatype. For example, if a 1080p output stream stops and all the other streams, sharing one input, are just streaming at 720p then the input stream should change its mediatype to 720p to save power and performance.
+    - When an application disables one of Device MFT's outputs when the same input is shared by more than one outputs, for optimization, the input may have to change the mediatype. For example, if a 1080p output stream stops, and all the other streams, sharing one input, are streaming at 720p, then the input stream should change its mediatype to 720p to save power and improve performance.
 
-Device Transform Manager would handle [METransformInputStreamStateChanged](https://msdn.microsoft.com/En-US/Library/Windows/Hardware/mt797687) notifications from Device MFT to change the mediatype and or state on Device MFT input and Devproxy output under these conditions.
+DTM handles [METransformInputStreamStateChanged](https://msdn.microsoft.com/En-US/Library/Windows/Hardware/mt797687) notifications from Device MFT to change the mediatype and state on Device MFT input and Devproxy output under these conditions.
 
 ### Flush Device MFT
 
-Two types of flushing is needed while managing Device MFT:
+Two types of flushing are needed while managing Device MFT:
 
 - Global flush
 
-    - Device MFT wide flush. This typically happens when the Device Transform Manager is about to send stop streaming message to Device MFT.
+    - Device MFT-wide flush. This typically happens when the DTM is about to send a stop streaming message to Device MFT.
 
     - Device MFT is expected to drop all samples from its input and output queues and return synchronously.
 
-    - Device MFT is not supposed to ask for new input or send notification on new available output.
+    - Device MFT should not ask for new input or send notification on new available output.
 
 - Local flush
 
-    - Output pin specific flush. This typically happens when a stream is stopped.
+    - Output pin-specific flush. This typically happens when a stream is stopped.
 
-All the events that were posted prior to flush would be dropped by DMFT Manager. After flush the DMFT should reset its internal [METransformHaveOutput](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797686) tracking count.
+All the events that were posted prior to flush are dropped by Device MFT Manager. After flush, the Device MFT resets its internal [METransformHaveOutput](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797686) tracking count.
 
 ### Drain of Device MFT
 
-Device MFT will not receive separate drain message since there is no need for drain in a live capture source.
+Device MFT will not receive s separate drain message since there is no need for drain in a live capture source.
 
 ### Photo trigger
 
-In this new model, instead of sending the photo trigger and photo sequence start and stop triggers directly to the driver, they will be re-routed to Device MFT. Device MFT should handle the trigger or forward it to the camera driver as necessary.
+In this model, instead of sending the photo trigger and photo sequence start and stop triggers directly to the driver, they will be re-routed to Device MFT. Device MFT will handle the trigger or forward it to the camera driver as necessary.
 
 ### Warm start
 
-Device Source would try to warm start specific output stream by transitioning the stream to Pause state. In turn DTM would call the [IMFDeviceTransform::SetOutputStreamState](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797684) method on Device MFT to transition a specific output stream to Pause state. This would result in corresponding input stream to be put in to Pause. This will be achieved by Device MFT by requesting **METransformInputStreamStateChanged** to DTM and handling the [IMFDeviceTransform::SetInputStreamState](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797683) method.
+DeviceSource tries to warm start a specific output stream by transitioning the stream to pause state. In turn, DTM calls the [IMFDeviceTransform::SetOutputStreamState](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797684) method on Device MFT to transition a specific output stream to pause state. This results in the corresponding input stream to be put into pause. This is achieved by Device MFT by requesting **METransformInputStreamStateChanged** to DTM and handling the [IMFDeviceTransform::SetInputStreamState](https://msdn.microsoft.com/en-us/library/windows/hardware/mt797683) method.
 
 ### Variable photo sequence
 
-With this change in architecture, photo sequence could be implemented with the help of camera device driver and Device MFT. This would greatly reduce the complexity of the camera device driver. The start and stop photo sequence triggers would be sent to the Device MFT and it can handle the photo sequence with lot less difficulty.
+With this architecture, photo sequence is implemented with the camera device driver and Device MFT, greatly reducing complexity of the camera device driver. The start and stop photo sequence triggers are sent to Device MFT and handle the photo sequence more easily.
 
 ### Photo confirmation
 
-A DMFT can support photo confirmation by supporting the **IMFCapturePhotoConfirmation** interface. The pipeline retrieves this interface through [IMFGetService::GetService] (https://msdn.microsoft.com/en-us/library/windows/desktop/ms696978) method.
+Device MFT supports photo confirmation through the **IMFCapturePhotoConfirmation** interface. The pipeline retrieves this interface through [IMFGetService::GetService] (https://msdn.microsoft.com/en-us/library/windows/desktop/ms696978) method.
 
 ### Metadata
 
-Devproxy queries the driver for metadata buffer size and allocates the memory for metadata. Metadata coming from driver would still be set by Devproxy on the sample. Device MFT would consume this sample metadata. Either pass it on with the sample through its output stream or just use them for its post processing.
+Devproxy queries the driver for metadata buffer size and allocates the memory for metadata. Metadata coming from driver is still set by Devproxy on the sample. Device MFT consumes the sample's metadata. Metadata can either be passed on with the sample through its output stream or just used for its post processing.
 
-With Device MFT supporting any number of inputs, a dedicated input pin could be used just for metadata or out of band metadata. The mediatype for this pin would be custom and the driver decides the size and number of buffers.
+With Device MFT supporting any number of inputs, a dedicated input pin could be used just for metadata or out-of-band metadata. The mediatype for this pin is custom and the driver decides the size and number of buffers.
 
-This metadata stream will not be exposed beyond DTM. The stream can be put into streaming state when Device MFT starts streaming. For example, when output streams are selected for streaming, Device MFT can request DTM to start one or more video stream, and the metadata stream as well, using the **METransformInputStreamStateChanged** event. 
+This metadata stream is exposed beyond DTM. The stream can be put into streaming state when Device MFT starts streaming. For example, when output streams are selected for streaming, Device MFT can request DTM to start one or more video stream, and the metadata stream as well, using the **METransformInputStreamStateChanged** event. 
 
 Note: There is no requirement for the number of input pins to match the number of output pins in this model. There can be a separate pin just dedicated for metadata or 3A.
 
-## Device Transform Manager event handling
+## Device Transform Manager (DTM) event handling
 
 [Device Transform Manager events](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/mt797660) are defined in the following reference topics:
 
@@ -202,7 +204,7 @@ The [IMFDeviceTransform](https://msdn.microsoft.com/en-us/library/windows/hardwa
 
 ### General event propagation
 
-When an event occurs in Devproxy (or inside device) we need to propagate that to the Device MFT and to the Device Source.
+When an event occurs in Devproxy (or inside device) we need to propagate that to the Device MFT and to the DeviceSource.
 
 ## Device MFT requirements
 
@@ -214,15 +216,15 @@ Device MFTs must support the following interfaces:
 
 - [IKsControl](https://msdn.microsoft.com/en-us/library/windows/hardware/ff559769)
 
-    - This allows all ksproperties, events and methods to go through the DMFT. This gives DMFT a chance to handle these functions calls inside DMFT or just forward them to the driver. In case it handles the KsEvent methods then the DMFT has to do the following:
+    - This allows all ksproperties, events and methods to go through the Device MFT. This gives Device MFT the ability to handle these functions calls inside Device MFT or just forward them to the driver. In the case where it handles the KsEvent methods, then the Device MFT has to do the following:
 
-        - If DMFT handles any KSEVENT_TYPE_ONESHOT event then it should duplicate the handle when it receives KSEVENT_TYPE_ENABLE.
+        - If Device MFT handles any **KSEVENT_TYPE_ONESHOT** event, then it duplicates the handle when it receives **KSEVENT_TYPE_ENABLE**.
 
-        - When it is done setting or raising the event, it should call CloseHandle on the duplicated handle.
+        - When it is done setting or raising the event, it calls **CloseHandle** on the duplicated handle.
 
-        - If DMFT handles non-KSEVENT_TYPE_ONESHOT event, then it should duplicate the handle when it receives KSEVENT_TYPE_ENABLE and should call CloseHandle on the duplicated handle when the ks event is disabled by calling KsEvent function with the first parameter (ks event id) second parameter (event length) set to zero. The event data and length would be valid. The event data uniquely identifies a specific ks event.
+        - If Device MFT handles non-KSEVENT_TYPE_ONESHOT events, then it should duplicate the handle when it receives **KSEVENT_TYPE_ENABLE** and call **CloseHandle** on the duplicated handle when the ks event is disabled by calling KsEvent function with the first parameter (ks event id) and second parameter (event length) set to zero. The event data and length will be valid. The event data uniquely identifies a specific ks event.
 
-        - If DMFT handles non-KSEVENT_TYPE_ONESHOT events, then it should duplicate the handle when it receives KSEVENT_TYPE_ENABLE and should call CloseHandle on the duplicated handles when the ks events are disabled by calling KsEvent function with all parameters set to zero.
+        - If Device MFT handles non-KSEVENT_TYPE_ONESHOT events, then it should duplicate the handle when it receives **KSEVENT_TYPE_ENABLE** and should call **CloseHandle** on the duplicated handles when the ks events are disabled by calling KsEvent function with all parameters set to zero.
 
 - [IMFRealtimeClientEx](https://msdn.microsoft.com/en-us/library/windows/desktop/hh448047)
 
