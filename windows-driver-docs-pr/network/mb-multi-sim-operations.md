@@ -130,7 +130,8 @@ With the addition of the executor concept to non-Windows Mobile devices in Windo
 |  | OID_WWAN_VISIBLE_PROVIDERS |
 |  | OID_WWAN_SLOT_INFO_STATUS |
 
-**Note**  [OID_WWAN_RADIO_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832) has been updated for Windows 10 Version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
+> [!NOTE]
+> [OID_WWAN_RADIO_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832) has been updated for Windows 10 Version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
 
 ## MBIM Interface Update for Multi-SIM Operations
 
