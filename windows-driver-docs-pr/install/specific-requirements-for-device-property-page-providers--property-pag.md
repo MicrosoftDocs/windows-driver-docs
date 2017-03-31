@@ -29,7 +29,7 @@ A property page extension DLL is installed by using the following directives in 
     The following code example shows an *add-registry-section* that adds the **EnumPropPages32** entry that specifies the name of the DLL (*MyPropProvider.dll*) and callback function (*MyCallbackFunction*):
 
     ```
-    HKR, EnumPropPages32, 0, "MyPropProvider.dll, MyCallbackFunction"
+    HKR, , EnumPropPages32, 0, "MyPropProvider.dll, MyCallbackFunction"
     ```
 
     **Important**  Both the name of the DLL and callback function must be enclosed together within quotation marks (" ").
