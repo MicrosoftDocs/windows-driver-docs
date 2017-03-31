@@ -7,9 +7,13 @@ keywords: ["add-registry-sections WDK networking , Advanced properties page conf
 
 # Specifying Configuration Parameters for the Advanced Properties Page
 
+> [!NOTE]
+> Prior to Windows 10, version 1703, INF values that the driver defined for the [**Advanced** properties page](specifying-configuration-parameters-for-the-advanced-properties-page.md) could be altered in driver upgrades and Windows updates.
+> Starting in Windows 10, version 1703, advanced properties that a driver specifies in its INF persist through these updates.
+
+<!--If the default value of an advanced property is subject to change, the driver typically sets that parameter as **Optional**.-->
 
 ## <a href="" id="ddk-specifying-configuration-parameters-for-the-advanced-properties-pa"></a>
-
 
 An INF file that installs a Net component (adapter) can specify adapter configuration parameters for display in the **Advanced** properties page for the component. Configuration values specified by the user in the **Advanced** properties page are written to the root instance key for the component.
 
