@@ -64,7 +64,7 @@ To safely load an executable file or DLL by a class installer or co-installer, w
 
 During device installation, Windows cannot track additional processes and is unable to determine what they are doing or when they are finished. For example, Windows could start or stop the device or initiate a system restart while the process is performing a critical action.
 
-In most cases, [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) should not start other processes or services. However, installers can start other processes safely by calling [CreateProcess](http://go.microsoft.com/fwlink/p/?linkid=194524) from a function of dialog that is displayed through a [finish-install action](finish-install-actions--windows-vista-and-later-.md). The installer must not let the user continue in the dialog procedure until the created process has finished.
+In most cases, [*co-installers*](https://msdn.microsoft.com/library/windows/hardware/ff556274#wdkgloss-co-installer) should not start other processes or services. However, installers can start other processes safely by calling [CreateProcess](http://go.microsoft.com/fwlink/p/?linkid=194524) from a function or dialog that is displayed through a [finish-install action](finish-install-actions--windows-vista-and-later-.md). The installer must not let the user continue in the dialog or procedure until the created process has exited.
 
  
 
