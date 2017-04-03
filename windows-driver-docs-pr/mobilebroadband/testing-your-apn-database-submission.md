@@ -81,7 +81,7 @@ Before you submit an APN update, you should editing the local APN database or cr
 
     2.  Type **takeown /f .\\ApnDatabase.xml** and then press ENTER.
 
-    3.  Type **cacls .\\ApnDatabase.xml /G %username%:F** and then press ENTER.
+    3.  Type **icacls .\ApnDatabase.xml /grant %username%:F** and then press ENTER.
 
     4.  Copy your customized version of the ApnDatabase.xml file to the directory.
 
