@@ -105,7 +105,7 @@ Before you can configure your driver to use IFR, you must first set up your driv
         #include "MyDriver.tmh"
         ```
 
-    -   Initialize WPP in [DriverEntry](28131---the-driverentry-routine-should-save-a-copy-of-the-argument--ar.md) of your driver.
+    -   Initialize WPP in [DriverEntry](28131-driverentry-saving-pointer-to-buffer.md) of your driver.
         ```ManagedCPlusPlus
         //
         // WPP Initialization

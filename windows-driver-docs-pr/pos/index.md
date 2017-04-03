@@ -28,17 +28,9 @@ This section provides design guidance for point-of-service devices.
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><p>[POS driver samples](driver-samples.md)</p></td>
 <td><p>Samples that demonstrate how to create universal drivers for point of service (POS) devices.</p></td>
-</tr>
-<tr class="even">
-<td><p>[Out-of-band pairing](out-of-band-pairing.md)</p></td>
-<td><p>Out-of-band pairing allows apps to connect to a Point-of-Service peripheral without requiring discovery.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[Deploy barcode scanner profiles with MDM](deploy-scanner-profiles-with-mdm.md)</p></td>
-<td><p>Barcode scanner profiles can be deployed with an MDM server.</p></td>
 </tr>
 </tbody>
 </table>

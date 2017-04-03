@@ -33,6 +33,9 @@
       - name: Biometric
         tocHref: /windows/hardware/drivers/biometric/
         topicHref: /windows/hardware/drivers/biometric/index
+      - name: Bluetooth
+        tocHref: /windows/hardware/drivers/bluetooth/
+        topicHref: /windows/hardware/drivers/bluetooth/index
       - name: Dashboard
         tocHref: /windows/hardware/drivers/dashboard/
         topicHref: /windows/hardware/drivers/dashboard/index
@@ -114,6 +117,9 @@
       - name: TAEF
         tocHref: /windows/hardware/drivers/taef
         topicHref: /windows/hardware/drivers/taef/index
+      - name: USBCON
+        tocHref: /windows/hardware/drivers/usbcon
+        topicHref: /windows/hardware/drivers/usbcon/index   
       - name: WDTF
         tocHref: /windows/hardware/drivers/wdtf/
         topicHref: /windows/hardware/drivers/wdtf/index
