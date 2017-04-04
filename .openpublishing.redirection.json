@@ -510,6 +510,10 @@
       "redirect_URL": "/windows/hardware/drivers/devtest/30035-function-call-must-be-made-inside-init-function ",
       "redirect_document_id": true
     },
-
+    {
+      "source_path": "windows-driver-docs-pr/devtest/obtaining-the-checked-build.md",
+      "redirect_URL": "/windows/hardware/drivers/devtest/installing-the-checked-build",
+      "redirect_document_id": true
+    }
   ]
 }
