@@ -66,7 +66,7 @@ A client uses device control requests to do the following:
 * Get and set registers
 * Get and set operating modes
 
-For a description of the device control requests supported by Serial, see Serial Device Control Requests.
+For a description of the device control requests supported by Serial, see [Serial Device Control Requests](https://msdn.microsoft.com/en-us/library/windows/hardware/ff547466.aspx).
 
 ### Input Parameters
 Request specific
@@ -127,7 +127,7 @@ A client uses internal device control requests to do the following:
 * Get and reset basic settings
 * Control wait/wake operation
 
-For a description of the internal device control requests, see Serial Internal Device Control Requests.
+For a description of the internal device control requests, see [Serial Internal Device Control Requests](https://msdn.microsoft.com/en-us/library/windows/hardware/ff547480.aspx).
 
 ### Input Parameters
 Request specific
@@ -160,20 +160,20 @@ Request specific
 ### Operation
 Serial supports the following Plug and Play requests:
 
-* IRP_MN_CANCEL_REMOVE_DEVICE
-* IRP_MN_CANCEL_STOP_DEVICE
-* IRP_MN_FILTER_RESOURCE_REQUIREMENTS
-* IRP_MN_QUERY_CAPABILITIES
-* IRP_MN_QUERY_DEVICE_RELATIONS
-* IRP_MN_QUERY_ID
-* IRP_MN_QUERY_PNP_DEVICE_STATE
-* IRP_MN_QUERY_REMOVE_DEVICE
-* IRP_MN_QUERY_RESOURCE_REQUIREMENTS
-* IRP_MN_QUERY_STOP_DEVICE
-* IRP_MN_REMOVE_DEVICE
-* IRP_MN_START_DEVICE
-* IRP_MN_STOP_DEVICE
-* IRP_MN_SURPRISE_REMOVAL
+* [IRP_MN_CANCEL_REMOVE_DEVICE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550823.aspx)
+* [IRP_MN_CANCEL_STOP_DEVICE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550826.aspx)
+* [IRP_MN_FILTER_RESOURCE_REQUIREMENTS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550874.aspx)
+* [IRP_MN_QUERY_CAPABILITIES](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551664.aspx)
+* [IRP_MN_QUERY_DEVICE_RELATIONS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551670.aspx)
+* [IRP_MN_QUERY_ID](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551679.aspx)
+* [IRP_MN_QUERY_PNP_DEVICE_STATE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551698.aspx)
+* [IRP_MN_QUERY_REMOVE_DEVICE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551705.aspx)
+* [IRP_MN_QUERY_RESOURCE_REQUIREMENTS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551715.aspx)
+* [IRP_MN_QUERY_STOP_DEVICE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551725.aspx)
+* [IRP_MN_REMOVE_DEVICE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551738.aspx)
+* [IRP_MN_START_DEVICE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551749.aspx)
+* [IRP_MN_STOP_DEVICE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551755.aspx)
+* [IRP_MN_SURPRISE_REMOVAL](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551760.aspx)
 
 Serial sends all other Plug and Play requests down the device stack without further processing.
 
@@ -188,7 +188,7 @@ IRP_MN_FILTER_RESOURCE_REQUIREMENTS
 
 serial devices on a multiport ISA card share the same interrupt status register and the same interrupt.
 
-For a description of the generic operation of Plug and Play requests, see Plug and Play Minor IRPs.
+For a description of the generic operation of Plug and Play requests, see [Plug and Play Minor IRPs](https://msdn.microsoft.com/en-us/library/windows/hardware/ff558807(v=vs.85).aspx).
 
 ## IRP_MJ_POWER (Serial)
 The IRP_MJ_POWER request controls power management.
@@ -208,14 +208,14 @@ Request specific
 ### Operation
 Serial supports the following power requests:
 
-* IRP_MN_QUERY_POWER
-* IRP_MN_SET_POWER
+* [IRP_MN_QUERY_POWER](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551699.aspx)
+* [IRP_MN_SET_POWER](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551744.aspx)
 
 Serial sends all other power requests down the device stack to be completed by a lower-level driver.
 
 Serial is the default power policy owner for a serial device stack that uses Serial as a function driver or a lower-level filter driver.
 
-For more information about the generic operation of these requests, see Rules for Handling Power IRPs.
+For more information about the generic operation of these requests, see [Rules for Handling Power IRPs](https://msdn.microsoft.com/en-us/library/windows/hardware/ff563629.aspx).
 
 
 ## IRP_MJ_QUERY_INFORMATION (Serial)
@@ -306,9 +306,9 @@ STATUS_TIMEOUT
 The time to complete the request exceeded the total time-out value or the interval time-out value.
 
 ### Operation
-A client can use time-out events to terminate a read request. Note, however, that when a serial device is opened, the time-out settings for the device are undefined. A kernel-mode client can use an IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS to set time-out parameters to zero (no time-out events are used). User-mode and kernel-mode clients can use an IOCTL_SERIAL_SET_TIMEOUTS request to set time-out parameters. 
+A client can use time-out events to terminate a read request. Note, however, that when a serial device is opened, the time-out settings for the device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff546626.aspx) to set time-out parameters to zero (no time-out events are used). User-mode and kernel-mode clients can use an [IOCTL_SERIAL_SET_TIMEOUTS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff546772.aspx) request to set time-out parameters. 
 
-For more information about read and write time-outs, see Setting Read and Write Timeouts for a Serial Device.
+For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://msdn.microsoft.com/en-us/library/windows/hardware/ff547486.aspx).
 
 
 ## IRP_MJ_SET_INFORMATION (Serial)
@@ -390,12 +390,12 @@ STATUS_WMI_GUID_NOT_FOUND
 The WMI GUID is not supported.
 
 ### Operation
-Serial uses WmiSystemControl to handle WMI system control requests. Serial registers the following types of WMI library callback routines, which WmiSystemControl calls to handle WMI requests sent to a device:
+Serial uses [WmiSystemControl](https://msdn.microsoft.com/en-us/library/windows/hardware/ff565834.aspx) to handle WMI system control requests. Serial registers the following types of WMI library callback routines, which **WmiSystemControl** calls to handle WMI requests sent to a device:
 
-* DpWmiQueryReginfo
-* DpWmiQueryDataBlock
-* DpWmiSetDataBlock
-* DpWmiSetDataItem
+* [DpWmiQueryReginfo](https://msdn.microsoft.com/en-us/library/windows/hardware/ff544097.aspx)
+* [DpWmiQueryDataBlock](https://msdn.microsoft.com/en-us/library/windows/hardware/ff544096.aspx)
+* [DpWmiSetDataBlock](https://msdn.microsoft.com/en-us/library/windows/hardware/ff544104.aspx)
+* [DpWmiSetDataItem](https://msdn.microsoft.com/en-us/library/windows/hardware/ff544108.aspx)
 
 Serial does not support any other system control requests. For non-WMI requests, Serial skips the current stack location, and sends the request down the device stack.
 
@@ -455,5 +455,7 @@ STATUS_TIMEOUT
 The total time allowed for the write request was exceeded.
 
 ### Operation
-A client can use time-out events to terminate a write request. Note, however, that when a serial device is opened, the time-out events set on a device are undefined. A kernel-mode client can use an IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS to set time-out parameters to zero (no time-out events are used) and an IOCTL_SERIAL_SET_TIMEOUTS request to set time-out parameters. For more information about read and write time-outs, see Setting Read and Write Timeouts for a Serial Device.
+A client can use time-out events to terminate a write request. Note, however, that when a serial device is opened, the time-out events set on a device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff546626.aspx) to set time-out parameters to zero (no time-out events are used) and an [IOCTL_SERIAL_SET_TIMEOUTS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff546772.aspx) request to set time-out parameters. For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://msdn.microsoft.com/en-us/library/windows/hardware/ff547486.aspx).
 
+
+## See also
