@@ -35,7 +35,7 @@ The following table shows the release history of the UMDF library:
 <tr class="odd">
 <td align="left"><p>2.21</p></td>
 <td align="left"><p>Windows 10, version 1703 WDK</p></td>
-<td align="left"><p>Windows 10, version 1703 (Creator's Update, Redstone 2)</p></td>
+<td align="left"><p>Windows 10, version 1703 (Creators Update, Redstone 2)</p></td>
 <td align="left"><p>Windows 10 version 1703</p></td>
 </tr>
 <tr class="even">
