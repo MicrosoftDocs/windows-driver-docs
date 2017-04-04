@@ -13,6 +13,13 @@ author: windows-driver-content
 
 This topic highlights the new features and improvements for Universal Serial Bus (USB) in Windows 10.
 
+-   **USB Type-C Port Controller Interface** 
+
+    Windows 10 version 1703 provides a class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. 
+    The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. 
+
+    [USB Type-C Port Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826)
+
 -   **USB Dual Role support.**
 
     USB Dual Role controllers are now supported in Windows. Windows includes in-box client drivers for ChipIdea and Synopsys controllers. For other controllers, Microsoft provides a set of programming interfaces that allow the dual-role class extension (UrsCx) and its client driver to communicate with each other to handle the role-switching capability of a dual-role controller.
