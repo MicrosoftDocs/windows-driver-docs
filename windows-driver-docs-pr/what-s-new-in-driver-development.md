@@ -206,7 +206,11 @@ Updated:
 
 Windows 10 version 1703 provides a new class extension (UcmTcpciCx.sys) that supports the Universal Serial Bus Type-C Port Controller Interface Specification. A USB Type-C connector driver does not need to maintain any internal PD/Type-C state. The complexity of managing the USB Type-C connector and USB Power Delivery (PD) state machines is handled by the system. You only need to write a client driver that communicates hardware events to the system through the class extension. For more information, see [USB Type-C Controller Interface driver class extensions reference](https://msdn.microsoft.com/library/windows/hardware/mt805826).
 
+<<<<<<< HEAD
+## <a href="" id="version-1607"></a>Changes in Windows 10, version 1607
+=======
 ## <a href="" id="version-1607">Changes in Windows 10, version 1607
+>>>>>>> master
 [Back to Top](#top)
 
 This section describes new features for driver development in Windows 10, version 1607.
@@ -259,7 +263,8 @@ New GNSS Breadcrumb DDIs:
 
 New and updated topics for WLAN Device Driver Interface (WDI) version 1.0.21. For details, see [WDI doc change history](https://msdn.microsoft.com/library/windows/hardware/mt691980).
 
-## <a href="" id="version-1507">Changes in Windows 10
+## <a href="" id="version-1507"></a>Changes in Windows 10
+
 [Back to Top](#top)
 
 This section describes new features for driver development in Windows 10.
