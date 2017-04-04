@@ -210,7 +210,6 @@
 ##### [The Checked Build and the Debugger](the-checked-build-and-the-debugger.md)
 ##### [The Checked Build and Driver Verifier](the-checked-build-and-driver-verifier.md)
 #### [Installing the Checked Build of Windows](installing-the-checked-build.md)
-##### [Downloading a Checked Build of Windows](obtaining-the-checked-build.md)
 ##### [Installing the Complete Checked Build](installing-the-complete-checked-build.md)
 ##### [Installing Just the Checked Operating System and HAL (For Windows Vista and Later)](installing-just-the-checked-operating-system-and-hal--for-windows-vist.md)
 ##### [Installing Just the Checked Operating System and HAL (For Windows XP and Windows Server 2003)](installing-just-the-checked-operating-system-and-hal--for-windows-xp-a.md)
