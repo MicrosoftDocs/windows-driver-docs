@@ -457,5 +457,3 @@ The total time allowed for the write request was exceeded.
 ### Operation
 A client can use time-out events to terminate a write request. Note, however, that when a serial device is opened, the time-out events set on a device are undefined. A kernel-mode client can use an [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff546626.aspx) to set time-out parameters to zero (no time-out events are used) and an [IOCTL_SERIAL_SET_TIMEOUTS](https://msdn.microsoft.com/en-us/library/windows/hardware/ff546772.aspx) request to set time-out parameters. For more information about read and write time-outs, see [Setting Read and Write Timeouts for a Serial Device](https://msdn.microsoft.com/en-us/library/windows/hardware/ff547486.aspx).
 
-
-## See also
