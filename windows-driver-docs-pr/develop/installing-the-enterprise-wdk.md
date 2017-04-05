@@ -27,7 +27,7 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 
 ## Installation Instructions
 1.	Download one of the following: 
- * [Enterprise WDK 1704](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) 
+ * [Enterprise WDK 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) 
  * [Enterprise WDK 1607](https://developer.microsoft.com/en-us/windows/hardware/license-terms-enterprise-wdk)
 2.	Expand the .zip file into an appropriately named directory, such as d:\ewdk.
 3.	From an Administrator command prompt, navigate to the expanded folder in the previous step, and then run **LaunchBuildEnvcmd** to create the build environment. For example:
