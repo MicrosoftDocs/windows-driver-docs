@@ -10,11 +10,11 @@ The Enterprise WDK contains the necessary elements to build drivers and basic Wi
 
 
 ## Enterprise WDK 1704 Prerequisites
-*	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.24720.0 (VS 2015 Update 1)  
+*	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.0.25431.01 (VS 2015 Update 3)  
   *	Note that the Enterprise WDK does not include the IDE, devenv.exe.
-*	Windows SDK build 10.0.15063
-*	.NET Framework 4.6 SDK build 10.0.15063
-*	Windows Driver Development Kit build 10.0.15063
+*	Windows SDK build 10.1.15063.137
+*	.NET Framework 4.6 SDK build 4.6.01586
+*	Windows Driver Development Kit build 10.1.15063.0
 
 ## Enterprise WDK 1607 Prerequisites
 *	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.24720.0 (VS 2015 Update 1)  
