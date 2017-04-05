@@ -38,11 +38,9 @@ An overlying driver specifies a packet coalescing receive filter by initializing
 
 -   If the overlying driver is creating a new receive filter, it must set the **FilterId** member to NDIS\_DEFAULT\_RECEIVE\_FILTER\_ID.
 
-    **Note**  NDIS will generate a unique filter identifier (ID) for the receive filter before it forwards the OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) to the miniport driver.
+    **Note**  NDIS will generate a unique filter identifier (ID) for the receive filter before it forwards the OID method request of [OID\_RECEIVE\_FILTER\_SET\_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569795) to the miniport driver.     
 
-     
-
-    If the overlying driver is modifying an existing receive filter, it must set the **FilterId** member to the nonzero filter ID of the receive filter. The overlying driver obtains the filter ID for the receive filter when it issues an OID method request of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787). For more information about how to modify a receive filter, see [Modifying Packet Coalescing Receive Filters](modifying-packet-coalescing-receive-filters.md).
+-  If the overlying driver is modifying an existing receive filter, it must set the **FilterId** member to the nonzero filter ID of the receive filter. The overlying driver obtains the filter ID for the receive filter when it issues an OID method request of [OID\_RECEIVE\_FILTER\_ENUM\_FILTERS](https://msdn.microsoft.com/library/windows/hardware/ff569787). For more information about how to modify a receive filter, see [Modifying Packet Coalescing Receive Filters](modifying-packet-coalescing-receive-filters.md).
 
 -   The **FieldParametersArrayOffset**, **FieldParametersArrayNumElements**, and **FieldParametersArrayElementSize** members of the [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567181) structure must be set to define a field parameter's array. Each element in the array is an [**NDIS\_RECEIVE\_FILTER\_FIELD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567169) structure that specifies the parameters for a header field test of a receive filter.
 
