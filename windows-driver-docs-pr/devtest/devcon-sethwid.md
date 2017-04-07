@@ -1,4 +1,4 @@
-﻿---
+---
 title: DevCon SetHwID
 description: Adds, deletes, and changes the order of hardware IDs of root-enumerated devices on a local or remote computer.
 ms.assetid: 79948ff0-8b30-4a64-beea-e3f08aef7170

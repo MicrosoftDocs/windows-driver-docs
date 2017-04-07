@@ -1,4 +1,4 @@
-﻿---
+---
 title: Device nodes and device stacks
 description: In Windows, devices are represented by device nodes in the Plug and Play (PnP) device tree.
 ms.assetid: 7bf38b3b-72ba-461c-b9e2-68b697359b37

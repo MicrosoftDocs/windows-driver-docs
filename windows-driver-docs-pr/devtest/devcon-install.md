@@ -1,4 +1,4 @@
-﻿---
+---
 title: DevCon Install
 description: Creates a new, root-enumerated devnode for a non-Plug and Play device and installs its supporting software. Valid only on the local computer.
 ms.assetid: d31007dd-6f20-460d-8561-d1639c69aa09
