@@ -1,4 +1,4 @@
-﻿---
+---
 Description: Device Representation
 MS-HAID: 'wpddk.device\_representation'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

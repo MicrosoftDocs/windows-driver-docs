@@ -1,4 +1,4 @@
-﻿---
+---
 title: Converting a WDK sources file to a Visual Studio project
 description: For most Windows 7 WDK projects that were built using Build.exe, you can use the Nmake2MsBuild utility, or the automatic conversion process within Visual Studio, to generate a project file (.VcxProj).
 ms.assetid: 6030317B-5068-40FD-8C9A-0B7A48C82B31

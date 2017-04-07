@@ -1,4 +1,4 @@
-﻿---
+---
 title: DevCon FindAll
 description: Finds all devices on the computer, including devices that were once attached to the computer but have been detached or moved.
 ms.assetid: 63148bb4-dc54-4b82-9e8f-d6967ad86d74

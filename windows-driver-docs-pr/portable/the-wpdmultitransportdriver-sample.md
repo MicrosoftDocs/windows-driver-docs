@@ -1,4 +1,4 @@
-﻿---
+---
 Description: The WpdMultiTransportDriver Sample
 MS-HAID: 'wpddk.the\_wpdmultitransportdriver\_sample'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

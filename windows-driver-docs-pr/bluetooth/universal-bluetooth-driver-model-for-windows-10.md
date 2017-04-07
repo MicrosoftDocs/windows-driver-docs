@@ -1,4 +1,4 @@
-﻿---
+---
 title: Bluetooth Universal Windows driver model for Windows 10
 description: In Windows 10, the Bluetooth transport driver interface for all devices is converged and uses the Universal Windows driver model.
 ms.assetid: E65A71D3-C0D2-4E13-9E19-1E6C6C1A172E

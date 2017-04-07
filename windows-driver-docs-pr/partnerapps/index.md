@@ -1,4 +1,4 @@
-﻿---
+---
 title: Partner app development
 description: Partner app development
 MSHAttr:

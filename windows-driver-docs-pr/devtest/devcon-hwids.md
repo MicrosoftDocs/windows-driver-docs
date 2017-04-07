@@ -1,4 +1,4 @@
-﻿---
+---
 title: DevCon HwIDs
 description: Displays the hardware IDs, compatible IDs, and device instance IDs of the specified devices. Valid on local and remote computers.
 ms.assetid: b76de01e-fedf-41c2-ba2e-837b442ab93f
