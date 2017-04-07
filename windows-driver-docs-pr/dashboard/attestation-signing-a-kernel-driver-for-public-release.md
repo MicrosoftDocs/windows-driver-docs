@@ -22,7 +22,7 @@ This topic describes how to sign a driver using attestation signing.
   -   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
   -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center (Sysdev) dashboard.
   -   An attestation signed driver will only work for Windows 10 Desktop. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
-  -   Attestation signing requires driver folder names to be less than 40 characters, and to contain no special characters
+  -   Attestation signing requires driver folder names to be less than 40 characters, and to contain no special characters.
  
 
 ## <span id="Attestation_Signing_a_Kernel_Mode_Driver"></span><span id="attestation_signing_a_kernel_mode_driver"></span><span id="ATTESTATION_SIGNING_A_KERNEL_MODE_DRIVER"></span>Attestation Signing a Kernel Mode Driver
@@ -53,8 +53,7 @@ You can sign your drivers using the legacy (Sysdev) dashboard. To access the Sys
 
 Follow the process described in [Before You Sign In](https://msdn.microsoft.com/library/windows/hardware/br230782) to set up the account you will need on the dashboard.
 
-## <span id="_Download_and_install_the_Windows_Driver_Kit"></span><span id="_download_and_install_the_windows_driver_kit"></span><span id="_DOWNLOAD_AND_INSTALL_THE_WINDOWS_DRIVER_KIT"></span> Download and install the Windows Driver Kit
-
+## Download and install the Windows Driver Kit
 
 You will need to download and install the Windows Driver Kit (WDK) to gain access to tools that are used to sign binary files.
 
@@ -65,91 +64,85 @@ Follow the process described in [Download kits and tools for Windows 10](https:/
 
 To create a CAB files submission for the dashboard, complete the following steps.
 
-1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here, will reference the echo driver available in GitHub at this location
+1. Gather the binaries that you will submit to be signed in a single directory. In this example, we will use C:\\Echo. The steps described here, will reference the echo driver available in GitHub at this location: <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync>
 
-<https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync>
+  Typical cab file submissions contain the following.
 
-Typical cab file submissions contain the following.
-
--   The driver itself, for example Echo.sys
--   The driver INF file that is used by the dashboard to facilitate the signing process.
--   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
+  -   The driver itself, for example Echo.sys
+  -   The driver INF file that is used by the dashboard to facilitate the signing process.
+  -   Catalog .CAT files are not required. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
 
 2. Use MakeCab.exe to process the DDF file and create a cab file.
 
-Open a Command Prompt window as Administrator. Then enter the following command to view the MakeCab options:
+  Enter the command: **MakeCab /?** into a Command Prompt as Administrator to view the MakeCab options, as shown below:
 
-MakeCab /?
+  ```
+  C:\Echo> MakeCab /?
+  Cabinet Maker - Lossless Data Compression Tool
 
-```
-C:\Echo> MakeCab /?
-Cabinet Maker - Lossless Data Compression Tool
+  MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]
+  MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
 
-MAKECAB [/V[n]] [/D var=value ...] [/L dir] source [destination]
-MAKECAB [/V[n]] [/D var=value ...] /F directive_file [...]
-
-  source         File to compress.
-  destination    File name to give compressed file.  If omitted, the
-                 last character of the source file name is replaced
-                 with an underscore (_) and used as the destination.
-  /F directives  A file with MakeCAB directives (may be repeated). Refer to
-                 Microsoft Cabinet SDK for information on directive_file.
-  /D var=value   Defines variable with specified value.
-  /L dir         Location to place destination (default is current directory).
-  /V[n]          Verbosity level (1..3).
-```
+    source         File to compress.
+    destination    File name to give compressed file.  If omitted, the
+                   last character of the source file name is replaced
+                   with an underscore (_) and used as the destination.
+    /F directives  A file with MakeCAB directives (may be repeated). Refer to
+                   Microsoft Cabinet SDK for information on directive_file.
+    /D var=value   Defines variable with specified value.
+    /L dir         Location to place destination (default is current directory).
+    /V[n]          Verbosity level (1..3).
+  ```
 
 3. Prepare a cab file DDF input file. For our Echo driver it might look something like this.
 
-```
-;*** Echo.ddf example
-;
-.OPTION EXPLICIT     ; Generate errors
-.Set CabinetFileCountThreshold=0
-.Set FolderFileCountThreshold=0
-.Set FolderSizeThreshold=0
-.Set MaxCabinetSize=0
-.Set MaxDiskFileCount=0
-.Set MaxDiskSize=0
-.Set CompressionType=MSZIP
-.Set Cabinet=on
-.Set Compress=on
-;Specify file name for new cab file
-.Set CabinetNameTemplate=Echo.cab
-; Specify the subdirectory for the files.  
-; Your cab file should not have files at the root level,
-; and each driver package must be in a separate subfolder.
-.Set DestinationDir=Echo
-;Specify files to be included in cab file
-C:\Echo\Echo.Inf
-C:\Echo\Echo.Sys
-```
+  ```
+  ;*** Echo.ddf example
+  ;
+  .OPTION EXPLICIT     ; Generate errors
+  .Set CabinetFileCountThreshold=0
+  .Set FolderFileCountThreshold=0
+  .Set FolderSizeThreshold=0
+  .Set MaxCabinetSize=0
+  .Set MaxDiskFileCount=0
+  .Set MaxDiskSize=0
+  .Set CompressionType=MSZIP
+  .Set Cabinet=on
+  .Set Compress=on
+  ;Specify file name for new cab file
+  .Set CabinetNameTemplate=Echo.cab
+  ; Specify the subdirectory for the files.  
+  ; Your cab file should not have files at the root level,
+  ; and each driver package must be in a separate subfolder.
+  .Set DestinationDir=Echo
+  ;Specify files to be included in cab file
+  C:\Echo\Echo.Inf
+  C:\Echo\Echo.Sys
+  ```
 
-> [!NOTE]  
-> All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
-
- 
+  > [!NOTE]  
+  > All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
 
 4. Call the makecab utility and provide the ddf file as input using the /f option.
 
-```
-C:\Echo> MakeCab /f "C:\Echo\Echo.ddf
-```
+  ```
+  C:\Echo> MakeCab /f "C:\Echo\Echo.ddf
+  ```
 
-The output of makecab should display the number of files in the created cabinet, in our example 2.
+  The output of makecab should display the number of files in the created cabinet, in our example 2.
 
-```
-C:\Echo> MakeCab /f Echo.ddf
-Cabinet Maker - Lossless Data Compression Tool
+  ```
+  C:\Echo> MakeCab /f Echo.ddf
+  Cabinet Maker - Lossless Data Compression Tool
 
-17,682 bytes in 2 files
-Total files:              2
-Bytes before:        17,682
-Bytes after:          7,374
-After/Before:            41.70% compression
-Time:                     0.20 seconds ( 0 hr  0 min  0.20 sec)
-Throughput:              86.77 Kb/second
-```
+  17,682 bytes in 2 files
+  Total files:              2
+  Bytes before:        17,682
+  Bytes after:          7,374
+  After/Before:            41.70% compression
+  Time:                     0.20 seconds ( 0 hr  0 min  0.20 sec)
+  Throughput:              86.77 Kb/second
+  ```
 
 5. Locate the cab file in the Disk1 subdirectory. You can click the cab file in File Explorer to verify that it contains the expected files.
 
