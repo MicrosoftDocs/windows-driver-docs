@@ -267,6 +267,7 @@
 ##### [Synchronizing with Interrupts](synchronizing-with-interrupts.md)
 ##### [Interrupt Moderation](interrupt-moderation.md)
 #### [Miniport Adapter OID Requests](miniport-adapter-oid-requests.md)
+##### [Miniport Adapter OID Request Serialization](miniport-adapter-oid-request-serialization.md)
 ##### [Handling OID Requests In a Miniport Adapter](handling-oid-requests-in-a-miniport-adapter.md)
 ##### [Miniport Adapter Direct OID Requests](miniport-adapter-direct-oid-requests.md)
 #### [Miniport Adapter Status Indications](miniport-adapter-status-indications.md)
