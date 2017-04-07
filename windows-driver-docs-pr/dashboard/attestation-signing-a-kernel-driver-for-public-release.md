@@ -12,17 +12,17 @@ ms.assetid: A292B15D-37FD-407E-998C-728D9423E712
 
 This topic describes how to sign a driver using attestation signing.
 
-> [Important]  
+> [!IMPORTANT]  
 > You must still use [Hardware Dev Center (Sysdev)](dashboard-services.md) to sign a driver using attestation signing until driver signing is available through the new Windows Hardware Dev Center dashboard.
 
  
 
-> [Note]  
+> [!NOTE]  
 > Attestation signing has the following properties.
   -   Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
   -   Attestation signing requires the use of an EV Certificate to submit the driver to the Hardware Dev Center (Sysdev) dashboard.
   -   An attestation signed driver will only work for Windows 10 Desktop. It will not work for other versions of Windows, such as Windows Server 2016,Windows 8.1, or Windows 7.
-  -   Attestation signing requires driver folder names to be less than 40 characters, and to contain no special characters 
+  -   Attestation signing requires driver folder names to be less than 40 characters, and to contain no special characters
  
 
 ## <span id="Attestation_Signing_a_Kernel_Mode_Driver"></span><span id="attestation_signing_a_kernel_mode_driver"></span><span id="ATTESTATION_SIGNING_A_KERNEL_MODE_DRIVER"></span>Attestation Signing a Kernel Mode Driver
@@ -125,7 +125,8 @@ C:\Echo\Echo.Inf
 C:\Echo\Echo.Sys
 ```
 
-**Note**  All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
+> [!NOTE]  
+> All driver folders in your cab must support the same set of architectures, for example, all drivers must be x86 or all drivers must be x64, or all drivers must support both x86 and x64.
 
  
 
@@ -161,7 +162,8 @@ Throughput:              86.77 Kb/second
 C:\Echo> SignTool sign /v /ac "C:\MyEVCert.cer" /s MY /n "Company Name" /t http://timestamp.verisign.com/scripts/timstamp.dll "C:\Echo\Disk1\Echo.cab"
 ```
 
-**Note**  Use industry best practices to manage the security of the EV cert signing process.
+> [!NOTE]  
+> Use industry best practices to manage the security of the EV cert signing process.
 
  
 
@@ -235,7 +237,7 @@ C:\Echo> devcon install echo.inf root\ECHO
 
 To submit multiple drivers at the same time create a sub directory for each driver as shown below.
 
-![](images/b-wes-driversigning.png)
+![An image of the sub directories created for each driver submission](images/b-wes-driversigning.png)
 
 Prepare a cab file DDF input file that references the subdirectories. It might look something like this.
 
