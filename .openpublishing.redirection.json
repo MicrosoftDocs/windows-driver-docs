@@ -671,9 +671,64 @@
       "redirect_document_id": true                                                                                                     
     },
     {
-      "source_path": "(enumeration-of-interface-collections-on-audio-devices-without-iads.md",
+      "source_path": "enumeration-of-interface-collections-on-audio-devices-without-iads.md",
       "redirect_URL": "/windows/hardware/drivers/usbcon/support-for-interface-collections",
       "redirect_document_id": true                                                                                                           
+    },
+    {
+      "source_path": "obtaining-hid-reports-by-user-mode-applications.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/obtaining-hid-reports",
+      "redirect_document_id": true                                                                                                                 
+    },
+    {
+      "source_path": "obtaining-hid-reports-by-kernel-mode-drivers.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/obtaining-hid-reports",
+      "redirect_document_id": true                                                                                                                       
+    },
+    {
+      "source_path": "sending-hid-reports-by-user-mode-applications.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/sending-hid-reports",
+      "redirect_document_id": true                                                                                                                             
+    },
+    {
+      "source_path": "sending-hid-reports-by-kernel-mode-drivers.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/sending-hid-reports",
+      "redirect_document_id": true                                                                                                                                   
+    },
+    {
+      "source_path": "extracting-value-data-by-specifying-its-usage.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/interpreting-hid-reports",
+      "redirect_document_id": true                                                                                                                                         
+    },
+    {
+      "source_path": "extracting-button-usages-that-are-set-to-on.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/interpreting-hid-reports",
+      "redirect_document_id": true                                                                                                                                               
+    },
+    {
+      "source_path": "setting-value-data-by-specifying-its-usage.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/interpreting-hid-reports",
+      "redirect_document_id": true                                                                                                                                                     
+    },
+    {
+      "source_path": "setting-button-state-by-specifying-its-usage.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/interpreting-hid-reports",
+      "redirect_document_id": true                                                                                                                                                           
+    },
+    {
+      "source_path": "extracting-and-setting-control-data-by-data-indices.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/interpreting-hid-reports",
+      "redirect_document_id": true                                                                                                                                                           
+    },
+    {
+      "source_path": "joystick-driver-model.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/joystick-support",
+      "redirect_document_id": true                                                                                                                                                           
+    },
+    {
+      "source_path": "minidriver-supplied-callbacks.md",
+      "redirect_URL": "/windows/hardware/drivers/hid/joystick-support",
+      "redirect_document_id": true                                                                                                                                                                 
     }
   ]
 }
