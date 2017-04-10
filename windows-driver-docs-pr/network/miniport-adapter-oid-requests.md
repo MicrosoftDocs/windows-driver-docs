@@ -19,6 +19,8 @@ The following topics provide more information about miniport driver OID requests
 
 [Handling OID Requests In a Miniport Adapter](handling-oid-requests-in-a-miniport-adapter.md)
 
+[Miniport Adapter OID Request Serialization](miniport-adapter-oid-request-serialization.md)
+
 [Miniport Adapter Direct OID Requests](miniport-adapter-direct-oid-requests.md)
 
  
