@@ -1,4 +1,4 @@
----
+--
 title: Example Uses of I/O Queues
 author: windows-driver-content
 description: Example Uses of I/O Queues
@@ -24,13 +24,13 @@ For each device that is connected to a system and supported by a particular driv
 
 Some example scenarios include:
 
--   [A Single Sequential I/O Queue](#a-single-sequential-i-o-queue)
+-   [A Single Sequential I/O Queue](#a-single-sequential-io-queue)
 
--   [Multiple Sequential I/O Queues and a Manual Queue](#multiple-sequential-i-o-queues-and-a-manual-queue)
+-   [Multiple Sequential I/O Queues and a Manual Queue](#multiple-sequential-io-queues-and-a-manual-queue)
 
--   [A Single Parallel I/O Queue](#a-single-parallel-i-o-queue)
+-   [A Single Parallel I/O Queue](#a-single-parallel-io-queue)
 
--   [Multiple Parallel I/O Queues](#multiple-parallel-i-o-queues)
+-   [Multiple Parallel I/O Queues](#multiple-parallel-io-queues)
 
 ### A Single Sequential I/O Queue
 
