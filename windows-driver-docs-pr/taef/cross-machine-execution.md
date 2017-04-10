@@ -76,7 +76,7 @@ You can manually specify additional test dependencies via the **/TestDependencie
     -   Sends all necessary binaries for your test to TAEFTest1 as well as all files/directories within or below the *unittests* directory. TAEF retains the directory hierarchy.
 
     ``` syntax
-    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\*.jpg...
+_    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unittests\*.jpg...
     ```
 
     -   Sends all necessary binaries for your test to TAEFTest1 as well as all jpg files within or below the *unittests* directory. TAEF retains the directory hierarchy.
@@ -123,7 +123,7 @@ te unittests\wex.common.tests.dll /runon:TAEFTest1 /runas:system
 -   Te.Service looks for each file on the remote machine and compares the CRC values. Any matches are removed from the list, and the list is sent back to the client.
 -   If there are any files left in the dependency list, Te.exe sends each dependency to Te.Service.
     -   Te.Service saves them in the &lt;Te.Service directory&gt;\\RemoteTests\\&lt;test dll name&gt; directory.
--   Te.exe asks Te.Service to launch a new Te.ProcessHost.exe instance on the remote machine using the correct [user context](#User Context).
+-   Te.exe asks Te.Service to launch a new Te.ProcessHost.exe instance on the remote machine using the correct [user context](#User_Context).
 -   Te.exe connects to the remote Te.ProcessHost.exe instance and begins executing the tests.
 
  
