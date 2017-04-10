@@ -33,6 +33,7 @@ The ComputerHardwareIds tool creates hardware IDs for the computer based on info
 
 For more information about selecting hardware ID values for the computer as well as more information about device metadata packages, see [Specifying Hardware IDs for a Computer](https://msdn.microsoft.com/library/windows/hardware/ff552325).
 
+For more information about the Windows Development Kit, see [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/?linkid=846744).
  
 
  
