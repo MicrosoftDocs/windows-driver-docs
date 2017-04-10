@@ -64,7 +64,6 @@ You can manually specify additional test dependencies via the **/TestDependencie
     ``` syntax
     te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:*verification*.jpg;mysample.txt
     ```
-
     -   Sends all necessary binaries for your test to TAEFTest1 as well as any files found that match the files specified in the **/TestDependencies** parameter.
 -   **Directories**
 
@@ -86,7 +85,7 @@ You can manually specify additional test dependencies via the **/TestDependencie
 
 You can aso specify test dependencies via [DeploymentItem metadata](deploymentitem-metadata.md)
 
-## <span id="User_Context"></span><span id="user_context"></span><span id="USER_CONTEXT"></span>User Context
+## <span id="User_Context"></span><span id="user_context"></span><span id="USER_CONTEXT"></span>User Context 
 
 
 By default, TAEF attempts to run the tests on the remote machine with your user context. It does so by:
@@ -124,7 +123,7 @@ te unittests\wex.common.tests.dll /runon:TAEFTest1 /runas:system
 -   Te.Service looks for each file on the remote machine and compares the CRC values. Any matches are removed from the list, and the list is sent back to the client.
 -   If there are any files left in the dependency list, Te.exe sends each dependency to Te.Service.
     -   Te.Service saves them in the &lt;Te.Service directory&gt;\\RemoteTests\\&lt;test dll name&gt; directory.
--   Te.exe asks Te.Service to launch a new Te.ProcessHost.exe instance on the remote machine using the correct [user context](#user-context).
+-   Te.exe asks Te.Service to launch a new Te.ProcessHost.exe instance on the remote machine using the correct [user context](#User Context).
 -   Te.exe connects to the remote Te.ProcessHost.exe instance and begins executing the tests.
 
  
