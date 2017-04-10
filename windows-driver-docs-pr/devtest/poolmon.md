@@ -15,7 +15,7 @@ PoolMon (poolmon.exe), the Memory Pool Monitor, displays data that the operating
 
 Driver developers and testers often use PoolMon to detect memory leaks when they create a new driver, change the driver code, or stress the driver. You can also use PoolMon in each stage of testing to view the driver's patterns of allocation and free operations, and to reveal how much pool memory the driver is using at any given time.
 
-The version of PoolMon described in this document is included in the \\Tools\\Other subdirectory of the Windows Driver Kit (WDK).
+The version of PoolMon described in this document is included in the \\Tools\\Other subdirectory of the [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?linkid=846744).
 
 This topic includes:
 
