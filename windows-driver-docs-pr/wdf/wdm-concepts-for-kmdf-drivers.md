@@ -9,7 +9,7 @@ keywords: ["kernel-mode drivers WDK KMDF , WDM", "KMDF WDK , WDM", "Kernel-Mode 
 # WDM Concepts for WDF Drivers
 
 
-Windows Driver Frameworks (WDF) is a wrapper around Microsoft Windows Driver Model (WDM) interfaces. Although the framework simplifies many WDM concepts and hides others completely so that you do not have to work with them, you should still understand some of the basic concepts of WDM drivers. Specifically, you should understand [driver types](#driver-types), [driver stacks](#driver-stacks), [device stacks](#device-stacks), and [I/O request packets](#i-o-request-packets).
+Windows Driver Frameworks (WDF) is a wrapper around Microsoft Windows Driver Model (WDM) interfaces. Although the framework simplifies many WDM concepts and hides others completely so that you do not have to work with them, you should still understand some of the basic concepts of WDM drivers. Specifically, you should understand [driver types](#driver-types), [driver stacks](#driver-stacks), [device stacks](#device-stacks), and [I/O request packets](#io-request-packets).
 
 ### Driver types
 
