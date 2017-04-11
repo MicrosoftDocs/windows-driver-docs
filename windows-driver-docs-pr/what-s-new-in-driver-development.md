@@ -101,7 +101,7 @@ Driver verifier includes new driver validation rules for the following technolog
 
 Windows 10, version 1607 includes Kernel-Mode Driver Framework (KMDF) version 1.19 and User-Mode Driver Framework (UMDF) version 2.19.
 
-For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://msdn.microsoft.com/windows/hardware/drivers/wdf/what-s-new-for-wdf-drivers).
+For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](wdf/index.md).
 
 ### Universal Windows drivers
 
