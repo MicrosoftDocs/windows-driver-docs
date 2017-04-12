@@ -6,12 +6,21 @@ keywords: ["Parallel devices WDK", "Parallel drivers WDK", "Parallel IRP codes"]
 ---
 
 # Device-specific operations for I/O requests for parallel devices
+This topic documents the following device-specific operations for I/O requests for parallel devices
 
-## IRP_MJ_CREATE
-The [IRP_MJ_CREATE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550729.aspx) request opens a parallel device.
+* [IRP_MJ_CREATE](#irp_mj_create)
+* [IRP_MJ_DEVICE_CONTROL](#irp_mj_device_control)
+* [IRP_MJ_INTERNAL_DEVICE_CONTROL](#irp_mj_internal_device_control)
+* [IRP_MJ_QUERY_INFORMATION](#irp_mj_query_information)
+* [IRP_MJ_READ](#irp_mj_read)
+* [IRP_MJ_WRITE](#irp_mj_write)
+
+
+## <a href="" id=""></a> IRP_MJ_CREATE
+The [IRP_MJ_CREATE](https://msdn.microsoft.com/library/windows/hardware/ff550729) request opens a parallel device.
 
 ### When Sent
-A client must use an [IRP_MJ_CREATE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550729.aspx) request to open a parallel device before it can access the device.
+A client must use an [IRP_MJ_CREATE](https://msdn.microsoft.com/library/windows/hardware/ff550729) request to open a parallel device before it can access the device.
 
 ### Input Parameters
 None.
@@ -50,13 +59,13 @@ STATUS_NOT_A_DIRECTORY
 The device is not a directory.
 
 ### Operation
-A parallel device is an exclusive device. If a parallel device is open, the system-supplied bus driver for parallel ports fails any subsequent [IRP_MJ_CREATE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550729.aspx) requests for the device until the device has been closed. A client must open a parallel device before it sends other I/O requests to the device or calls the [parallel device callback routines](https://msdn.microsoft.com/library/windows/hardware/ff544275).
+A parallel device is an exclusive device. If a parallel device is open, the system-supplied bus driver for parallel ports fails any subsequent [IRP_MJ_CREATE](https://msdn.microsoft.com/library/windows/hardware/ff550729) requests for the device until the device has been closed. A client must open a parallel device before it sends other I/O requests to the device or calls the [parallel device callback routines](https://msdn.microsoft.com/library/windows/hardware/ff544275).
 
-For more information, see [Opening and Using a Parallel Device](https://msdn.microsoft.com/en-us/windows/hardware/drivers/parports/opening-and-using-a-parallel-device).
+For more information, see [Opening and Using a Parallel Device](https://msdn.microsoft.com/windows/hardware/drivers/parports/opening-and-using-a-parallel-device).
 
 
-## IRP_MJ_DEVICE_CONTROL
-The [IRP_MJ_DEVICE_CONTROL](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550744.aspx) request operates a parallel device.
+## <a href="" id=""></a> IRP_MJ_DEVICE_CONTROL
+The [IRP_MJ_DEVICE_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff550744) request operates a parallel device.
 
 ### When Sent
 A client uses device control requests for the following types of operations:
@@ -64,7 +73,7 @@ A client uses device control requests for the following types of operations:
 * Obtain information about a device
 * Set the operating mode of the device
 
-See [Device Control Requests for Parallel Devices](https://msdn.microsoft.com/en-us/library/windows/hardware/ff543945.aspx).
+See [Device Control Requests for Parallel Devices](https://msdn.microsoft.com/library/windows/hardware/ff543945).
 
 ### Input Parameters
 Request-specific.
@@ -110,8 +119,8 @@ The request did not complete successfully.
 The operation is request-specific.
 
 
-## IRP_MJ_INTERNAL_DEVICE_CONTROL
-The [IRP_MJ_INTERNAL_DEVICE_CONTROL](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550766.aspx) request sets internal operating modes on a parallel device.
+## <a href="" id=""></a> IRP_MJ_INTERNAL_DEVICE_CONTROL
+The [IRP_MJ_INTERNAL_DEVICE_CONTROL](https://msdn.microsoft.com/library/windows/hardware/ff550766) request sets internal operating modes on a parallel device.
 
 ### When Sent
 A client uses internal device control requests for the following types of operations:
@@ -120,7 +129,7 @@ A client uses internal device control requests for the following types of operat
 * Obtain connection information about a parallel port
 * Lock and unlock a parallel port for exclusive use by the device
 
-See Internal [Device Control Requests for Parallel Devices](https://msdn.microsoft.com/en-us/library/windows/hardware/ff543945.aspx).
+See Internal [Device Control Requests for Parallel Devices](https://msdn.microsoft.com/library/windows/hardware/ff543945).
 
 ### Input Parameters
 Request-specific.
@@ -167,8 +176,8 @@ The request did not complete successfully.
 The operation is request-specific.
 
 
-## IRP_MJ_QUERY_INFORMATION
-The [IRP_MJ_QUERY_INFORMATION](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550788.aspx) request obtains information about the file that represents the parallel device.
+## <a href="" id=""></a> IRP_MJ_QUERY_INFORMATION
+The [IRP_MJ_QUERY_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff550788) request obtains information about the file that represents the parallel device.
 
 ### When Sent
 A client sends a query information request to determine the file size or current byte offset of the file pointer.
@@ -179,13 +188,13 @@ The **Parameters.QueryFile.FileInformationClass** member is set to **FileStandar
 
 **FileStandardInformation** request:
  
-The **AssociatedIrp.SystemBuffer** member points to a [FILE_STANDARD_INFORMATION](https://msdn.microsoft.com/en-us/library/windows/hardware/ff545855.aspx) structure that the client allocates for output of file information.
+The **AssociatedIrp.SystemBuffer** member points to a [FILE_STANDARD_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff545855) structure that the client allocates for output of file information.
 
 The **Parameters.QueryFile.Length** member is set to the size, in bytes, of a **FILE_STANDARD_INFORMATION** structure.
 
 **FilePositionInformation** request: 
 
-**AssociatedIrp.SystemBuffer** points to a [FILE_POSITION_INFORMATION](https://msdn.microsoft.com/en-us/library/windows/hardware/ff545848.aspx) structure that the client allocates for output of file information.
+**AssociatedIrp.SystemBuffer** points to a [FILE_POSITION_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff545848) structure that the client allocates for output of file information.
 
 The **Parameters.SetFile.Length** member is set to the size, in bytes, of a **FILE_POSITION_INFORMATION** structure.
 
@@ -235,11 +244,11 @@ The system-supplied bus driver for parallel ports supports queries for the follo
 * **FilePositionInformation**
 
 
-## IRP_MJ_READ
-The [IRP_MJ_READ](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550794.aspx) request obtains input data from a parallel device.
+## <a href="" id=""></a> IRP_MJ_READ
+The [IRP_MJ_READ](https://msdn.microsoft.com/library/windows/hardware/ff550794) request obtains input data from a parallel device.
 
 ### When Sent
-A client uses an [IRP_MJ_READ](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550794.aspx) request to obtain input from a parallel device.
+A client uses an [IRP_MJ_READ](https://msdn.microsoft.com/library/windows/hardware/ff550794) request to obtain input from a parallel device.
 
 ### Input Parameters
 The **Parameters.Read.Length** member points to the number of bytes to read from the parallel device.
@@ -278,18 +287,18 @@ STATUS_DEVICE_REMOVED
 The device has been removed.
 
 ### Operation
-The system-supplied bus driver for parallel ports uses the read protocol set for the parallel device. The default read protocol is NIBBLE_MODE. A client can negotiate a read protocol by using an [IOCTL_IEEE1284_NEGOTIATE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff543978.aspx) request.
+The system-supplied bus driver for parallel ports uses the read protocol set for the parallel device. The default read protocol is NIBBLE_MODE. A client can negotiate a read protocol by using an [IOCTL_IEEE1284_NEGOTIATE](https://msdn.microsoft.com/library/windows/hardware/ff543978) request.
 
 The parallel port bus driver sets a cancel routine for the read request, marks the read request as pending, and queues the read request on a work queue. The read request is held in the work queue in a state that can be canceled until the read request is either completed or canceled by the client.
 
-For more information, see [Reading and Writing a Parallel Device](https://msdn.microsoft.com/en-us/windows/hardware/drivers/parports/reading-and-writing-a-parallel-device).
+For more information, see [Reading and Writing a Parallel Device](https://msdn.microsoft.com/windows/hardware/drivers/parports/reading-and-writing-a-parallel-device).
 
 
-## IRP_MJ_WRITE
-The [IRP_MJ_WRITE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550819.aspx) request transfers output data to a parallel device.
+## <a href="" id=""></a> IRP_MJ_WRITE
+The [IRP_MJ_WRITE](https://msdn.microsoft.com/library/windows/hardware/ff550819) request transfers output data to a parallel device.
 
 ### When Sent
-A client uses an [IRP_MJ_WRITE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff550819.aspx) request whenever it transfers output data to a parallel device.
+A client uses an [IRP_MJ_WRITE](https://msdn.microsoft.com/library/windows/hardware/ff550819) request whenever it transfers output data to a parallel device.
 
 ### Input Parameters
 The **AssociatedIrp.SystemBuffer** points to a write buffer that the client allocates for write data. The buffer must be large enough to hold the requested number of bytes to write to the parallel device.
@@ -329,9 +338,24 @@ STATUS_DEVICE_REMOVED
 The device has been removed.
 
 ### Operation
-The system-supplied bus driver for parallel ports transfers data by using the write protocol that is set for the parallel device. The default write protocol is CENTRONICS. A client can negotiate a write protocol by using an [IOCTL_IEEE1284_NEGOTIATE](https://msdn.microsoft.com/en-us/library/windows/hardware/ff543978.aspx) request. 
+The system-supplied bus driver for parallel ports transfers data by using the write protocol that is set for the parallel device. The default write protocol is CENTRONICS. A client can negotiate a write protocol by using an [IOCTL_IEEE1284_NEGOTIATE](https://msdn.microsoft.com/library/windows/hardware/ff543978) request. 
 
 The parallel port bus driver sets a cancel routine for the write request, marks the write request as pending, and queues the write request on a work queue. The write request is held in a state that can be canceled until the request is either completed or canceled.
 
-For more information, see [Reading and Writing a Parallel Device](https://msdn.microsoft.com/en-us/windows/hardware/drivers/parports/reading-and-writing-a-parallel-device).
+For more information, see [Reading and Writing a Parallel Device](https://msdn.microsoft.com/windows/hardware/drivers/parports/reading-and-writing-a-parallel-device).
 
+## Related topics
+
+[Device Control Requests for Parallel Devices](https://msdn.microsoft.com/library/windows/hardware/ff543945).
+
+[FILE_POSITION_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff545848) [FILE_STANDARD_INFORMATION](https://msdn.microsoft.com/library/windows/hardware/ff545855)
+
+[Opening and Using a Parallel Device](https://msdn.microsoft.com/windows/hardware/drivers/parports/opening-and-using-a-parallel-device)
+
+[Parallel device callback routines](https://msdn.microsoft.com/library/windows/hardware/ff544275)
+
+[Reading and Writing a Parallel Device](https://msdn.microsoft.com/windows/hardware/drivers/parports/reading-and-writing-a-parallel-device)
+
+
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Slicer%20settings%20%20RELEASE:%20%289/2/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default. "Send comments about this topic to Microsoft")
