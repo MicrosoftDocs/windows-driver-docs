@@ -27,4 +27,7 @@
 ### [Identifying the location of internal cameras](identifying-the-location-of-internal-cameras.md)
 ## [Windows Store device apps for internal devices](windows-store-device-apps-for-specialized-devices.md)
 ## [Automatic installation for Windows Store device apps](auto-install-for-windows-store-device-apps.md)
-
+## [Hardware access for Universal Windows Platform Apps](hardware-access-for-universal-windows-platform-apps.md)
+### [Custom Capabilities for Universal Windows Platform Apps](custom-capabilities-for-universal-windows-platform-apps.md)
+### [Developing a Universal Windows Platform app with Custom Capabilities](developing-a-universal-windows-platform-app-with-custom-capabilities.md)
+### [FAQ on custom capabilities](FAQ-on-custom-capabilities.md)
