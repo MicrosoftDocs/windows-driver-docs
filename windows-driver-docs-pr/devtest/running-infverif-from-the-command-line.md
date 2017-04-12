@@ -9,7 +9,7 @@ ms.assetid: CC2DB624-FFEE-4049-ACE7-4A24B330BADB
 
 This topic lists the options that are available when you run InfVerif.exe from the command line.
 > [!NOTE]
-> InfVerif requires that the combined path and file name must be less than 260 characters
+> InfVerif requires that each combined path and file name must be less than 260 characters.
 
 ``` syntax
 USAGE: InfVerif.exe [/v] [/u | /universal] [/l <path>] <files>
