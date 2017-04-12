@@ -57,4 +57,4 @@
 #### [Installing an Advanced Properties Page for a COM Port](installing-an-advanced-properties-page-for-a-com-port.md)
 #### [Installing Serial Devices that Use a 16550 UART-Compatible Interface](installing-serial-devices-that-use-a-16550-uart-compatible-interface.md)
 #### [Installing Serenum Devices](installing-serenum-devices.md)
-
+## [Serial IRP major function codes](serial-irp-major-function-codes.md)
