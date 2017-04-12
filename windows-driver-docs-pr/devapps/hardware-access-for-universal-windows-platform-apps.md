@@ -1,11 +1,11 @@
 ---
-title:  Universal Windows Platform apps with custom capabilities
+title:  Hardware access for Universal Windows Platform apps
 author: windows-driver-content
 description: Writing apps with custom capabilities
 keywords: ["Custom , Capabilities", "UWP Apps", "Custom Capabilities", "UWP","Hardware"]
 ---
 
-#  Universal Windows Platform apps with custom capabilities
+# Hardware access for Universal Windows Platform apps
 
 ## Overview
 The extensibility of the Windows platform has led to the creation of a
