@@ -38,7 +38,7 @@ apps](https://developer.microsoft.com/en-us/windows/apps/develop)**.**
 |[Developing a Universal Windows Platform app with Custom Capabilities](developing-a-universal-windows-platform-app-with-custom-capabilities.md)| This section goes over how to use Custom Capabilities in developing UWP Apps.|
 |[FAQ on custom capabilities](FAQ-on-custom-capabilities.md)| This Section goes over some of the frequently asked question about custom capabilities.|
 
-## Useful Links
+## See Also
 
 -   [App capabilities](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations)
 
@@ -46,14 +46,8 @@ apps](https://developer.microsoft.com/en-us/windows/apps/develop)**.**
 
 -   [Develop UWP apps](https://developer.microsoft.com/en-us/windows/apps/develop)
 
--   Custom Capability Sample App
+-   [Custom Capability Sample App](http://go.microsoft.com/fwlink/p/?LinkId=846904)
 
 -   [Sideload apps in Windows 10](https://technet.microsoft.com/library/mt269549.aspx)
-
--   [Universal Windows Platform (UWP)](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide)
-
--   [Custom Capabilities for Universal Windows Platform Apps](custom-capabilities-for-universal-windows-platform-apps.md)
-
--   [Developing a Universal Windows Platform app with Custom Capabilities](developing-a-universal-windows-platform-app-with-custom-capabilities.md)
 
 -   [FAQ on custom capabilities](FAQ-on-custom-capabilities.md)
