@@ -1,5 +1,5 @@
 ---
-title: Print Ticket and Print Capabilities Provider Interface Implemented by Printer Drivers
+title: Print Ticket and Print Capabilities Provider Interface
 author: windows-driver-content
 description: Print Ticket and Print Capabilities Provider Interface Implemented by Printer Drivers
 MS-HAID:

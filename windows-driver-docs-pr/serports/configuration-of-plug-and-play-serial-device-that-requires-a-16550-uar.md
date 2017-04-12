@@ -1,5 +1,5 @@
 ---
-title: Configuration of Plug and Play Serial Device that Requires a 16550 UART-Compatible Interface
+title: Configure Plug and Play Serial Device for 16550 UART-Compatible Interface
 author: windows-driver-content
 description: Configuration of Plug and Play Serial Device that Requires a 16550 UART-Compatible Interface
 MS-HAID:

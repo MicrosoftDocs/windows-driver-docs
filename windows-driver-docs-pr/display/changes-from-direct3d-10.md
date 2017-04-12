@@ -1,4 +1,4 @@
-﻿---
+---
 title: Changes from Direct3D 10
 description: Changes from Direct3D 10
 ms.assetid: 014a5e44-f8c4-45c0-96e8-d82f37b8b28d

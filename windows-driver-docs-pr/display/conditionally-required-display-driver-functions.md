@@ -1,4 +1,4 @@
-﻿---
+---
 title: Conditionally Required Display Driver Functions
 description: Conditionally Required Display Driver Functions
 ms.assetid: c2de7e48-2ce6-466f-947e-bdac1d4fe422

@@ -1,5 +1,5 @@
 ---
-title: Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
+title: Performance Bottlenecks in an NDIS Virtualized Networking Environment
 description: Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
 ms.assetid: D295E450-C8AF-43A9-B169-5387EB2A2CF0
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 Description: Architecture Overview
 MS-HAID: 'wpddk.architecture\_overview'
 MSHAttr: 'PreferredLib:/library/windows/hardware'

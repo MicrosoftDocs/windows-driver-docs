@@ -1,5 +1,5 @@
 ---
-title: Device Property Representations (Windows Server 2003, Windows XP, and Windows 2000)
+title: Device Property Representations (Windows Server 2003, Windows XP)
 description: Device Property Representations (Windows Server 2003, Windows XP, and Windows 2000)
 ms.assetid: 124172d7-52a4-423c-a1fd-eec554f328d6
 keywords: ["device properties WDK device installations , representations"]

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Basic Trace Session Options
 description: Basic Trace Session Options
 ms.assetid: c997310f-79dc-4c94-945e-13a0a7786928

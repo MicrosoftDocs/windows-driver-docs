@@ -1,5 +1,5 @@
 ---
-title: Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device
+title: Get IMEI, ICCID, IMSI, telephone numbers for mobile broadband device
 description: Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device
 MSHAttr:
 - 'PreferredSiteName:MSDN'

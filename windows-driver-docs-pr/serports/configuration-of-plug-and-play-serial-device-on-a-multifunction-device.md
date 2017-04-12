@@ -1,5 +1,5 @@
 ---
-title: Configuration of Plug and Play Serial Device on a Multifunction Device that Requires a 16550 UART-Compatible Interface
+title: Configure PnP Multifunction Serial Device with 16550 UART Interface
 author: windows-driver-content
 description: Configuration of Plug and Play Serial Device on a Multifunction Device that Requires a 16550 UART-Compatible Interface
 MS-HAID:

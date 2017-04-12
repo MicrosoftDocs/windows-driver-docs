@@ -39,7 +39,7 @@ In addition to the required common sensor properties and enumeration properties,
 
 -   PKEY\_Sensor\_FifoMaxSize\_Samples
 
--   PKEY\_Sensor\_Wake\_Capable
+-   PKEY\_Sensor\_WakeCapable
 
 For more information, see [Common sensor properties](https://msdn.microsoft.com/library/windows/hardware/dn957018) and [Enumeration properties](https://msdn.microsoft.com/library/windows/hardware/dn957027).
 

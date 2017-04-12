@@ -49,6 +49,16 @@ This section includes the following topics:
 
 [MB Multimode Multicarrier](mb-multimode-multicarrier.md)
 
+[MB Multi-SIM Operations](mb-multi-sim-operations.md)
+
+[MB Provisioned Context Operations](mb-provisioned-context-operations.md)
+
+[MB Network Blacklist Operations](mb-network-blacklist-operations.md)
+
+[MB LTE Attach Operations](mb-lte-attach-operations.md)
+
+[MB SAR Platform Support](mb-sar-platform-support.md)
+
 [Supplemental MB Documentation](supplemental-mb-documentation.md)
 
 ## Related topics

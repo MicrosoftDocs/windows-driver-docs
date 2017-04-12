@@ -1,4 +1,4 @@
-﻿---
+---
 Description: Defining the Service Properties
 MS-HAID: 'wpddk.the\_wpdservicesampledriver\_property\_definitions'
 MSHAttr: 'PreferredLib:/library/windows/hardware'
