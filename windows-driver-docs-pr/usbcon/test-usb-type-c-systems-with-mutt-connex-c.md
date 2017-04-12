@@ -1,4 +1,4 @@
-﻿---
+---
 Description: 'The USB Type-C Connection Exerciser (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.'
 MS-HAID: 'buses.test\_usb\_type-c\_systems\_with\_mutt\_connex-c'
 MSHAttr:

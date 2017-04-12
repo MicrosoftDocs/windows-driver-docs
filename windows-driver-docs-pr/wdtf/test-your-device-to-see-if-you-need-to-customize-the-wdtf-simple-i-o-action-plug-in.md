@@ -1,5 +1,5 @@
 ---
-title: How to determine if a custom WDTF Simple I/O Action Plug-in is required for your device
+title: Determine if custom WDTF Simple I/O Action Plug-in is required for device
 author: windows-driver-content
 description: If you have configured a remote computer for testing using Visual Studio, you can run a utility test that displays all the devices that have WDTF Simple I/O plug-ins.
 MSHAttr:

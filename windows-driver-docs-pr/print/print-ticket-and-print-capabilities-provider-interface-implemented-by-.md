@@ -1,5 +1,5 @@
 ---
-title: Print Ticket and Print Capabilities Provider Interface Implemented by Unidrv/Pscript5 Plug-ins
+title: Print Ticket and Capabilities Provider Interface in Unidrv/Pscript5 Plug-in
 author: windows-driver-content
 description: Print Ticket and Print Capabilities Provider Interface Implemented by Unidrv/Pscript5 Plug-ins
 MS-HAID:

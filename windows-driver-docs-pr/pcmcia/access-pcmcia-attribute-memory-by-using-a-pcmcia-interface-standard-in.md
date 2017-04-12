@@ -1,5 +1,5 @@
 ---
-title: Access PCMCIA Attribute Memory by Using a PCMCIA\_INTERFACE\_STANDARD Interface
+title: Access PCMCIA Attribute Memory Using PCMCIA_INTERFACE_STANDARD Interface
 description: Access PCMCIA Attribute Memory by Using a PCMCIA\_INTERFACE\_STANDARD Interface
 MS-HAID:
 - 'pamch1\_3e3e298d-5af2-46b3-b296-69006d4c6095.xml'

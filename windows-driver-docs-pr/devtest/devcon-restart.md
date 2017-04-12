@@ -1,4 +1,4 @@
-﻿---
+---
 title: DevCon Restart
 description: Stops and restarts the specified devices. Valid only on the local computer.
 ms.assetid: 3d16435d-e80d-408c-8e61-fad4a5aa7b9b

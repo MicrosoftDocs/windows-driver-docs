@@ -1,5 +1,5 @@
 ---
-title: Designing a Miniport Driver Callback Routine that Handles WMI Classes with Methods
+title: Designing Miniport Driver Callback Routine to Handle WMI Classes with Methods
 author: windows-driver-content
 description: Designing a Miniport Driver Callback Routine that Handles WMI Classes with Methods
 ms.assetid: f5a0331a-1daa-4ef5-bf99-14b3a3393956

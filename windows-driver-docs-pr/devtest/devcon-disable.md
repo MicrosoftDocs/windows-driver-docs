@@ -1,4 +1,4 @@
-﻿---
+---
 title: DevCon Disable
 description: Disables devices on the computer.
 ms.assetid: 544b219c-30dd-41d1-ac47-9760c772b07e

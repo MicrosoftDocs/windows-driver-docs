@@ -1,4 +1,4 @@
-﻿---
+---
 title: Service icon requirements
 description: Service icon requirements
 MS-HAID:

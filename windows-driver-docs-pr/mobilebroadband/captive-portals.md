@@ -1,4 +1,4 @@
-﻿---
+---
 title: Captive portals
 description: Captive portals
 MSHAttr:
