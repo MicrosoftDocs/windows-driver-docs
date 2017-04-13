@@ -1,7 +1,7 @@
 ---
 Description: The WpdHelloWorldDriver Sample
-MS-HAID: 'wpddk.the\_sample\_driver\_architecture'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.the\_sample\_driver\_architecture
+MSHAttr: PreferredLib:/library/windows/hardware
 title: The WpdHelloWorldDriver Sample
 ---
 

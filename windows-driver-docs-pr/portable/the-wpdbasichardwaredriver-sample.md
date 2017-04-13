@@ -1,7 +1,7 @@
 ---
 Description: The WpdBasicHardwareDriver Sample
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_sample'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.the\_wpdbasichardwaredriver\_sample
+MSHAttr: PreferredLib:/library/windows/hardware
 title: The WpdBasicHardwareDriver Sample
 ---
 

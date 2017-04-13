@@ -1,7 +1,7 @@
 ---
 Description: Using the WpdInfo Tool
-MS-HAID: 'wpddk.using\_the\_wpdinfo\_tool'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.using\_the\_wpdinfo\_tool
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Using the WpdInfo Tool
 ---
 

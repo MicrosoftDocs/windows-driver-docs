@@ -1,5 +1,5 @@
 ---
-Description: 'If a USB composite device has an interface association descriptor (IAD) in its firmware, Windows enumerates interface collections as though each collection were a single device and assigns a single physical device object (PDO) to each interface collection and associates hardware and compatible identifiers (IDs) with the PDO. For a detailed description of IADs, see USB Interface Association Descriptor. This section describes the hardware IDs and compatible identifiers (IDs) assigned to interface collections associated with an IAD.'
+Description: If a USB composite device has an interface association descriptor (IAD) in its firmware, Windows enumerates interface collections as though each collection were a single device and assigns a single physical device object (PDO) to each interface collection and associates hardware and compatible identifiers (IDs) with the PDO. For a detailed description of IADs, see USB Interface Association Descriptor. This section describes the hardware IDs and compatible identifiers (IDs) assigned to interface collections associated with an IAD.
 MS-HAID:
 - 'usbsystem\_31f7c94a-0f76-4fd8-af34-e5d2ce130efc.xml'
 - 'buses.enumeration\_of\_interface\_collections\_on\_devices\_that\_have\_iads'

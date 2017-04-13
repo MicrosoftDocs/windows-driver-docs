@@ -1,7 +1,7 @@
 ---
 Description: Handling Plug and Play and Power Management Events
-MS-HAID: 'wpddk.handling\_plug\_and\_play\_and\_power\_management\_events'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.handling\_plug\_and\_play\_and\_power\_management\_events
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Handling Plug and Play and Power Management Events
 ---
 

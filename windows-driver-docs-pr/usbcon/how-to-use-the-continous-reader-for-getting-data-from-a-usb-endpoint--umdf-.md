@@ -1,6 +1,6 @@
 ---
-Description: 'This topic describes the WDF-provided continuous reader object. The procedures in this topic provide step-by-step instructions about how to configure the object and use it to read data from a USB pipe.'
-MS-HAID: 'buses.how\_to\_use\_the\_continous\_reader\_for\_getting\_data\_from\_a\_usb\_endpoint\_\_umdf\_'
+Description: This topic describes the WDF-provided continuous reader object. The procedures in this topic provide step-by-step instructions about how to configure the object and use it to read data from a USB pipe.
+MS-HAID: buses.how\_to\_use\_the\_continous\_reader\_for\_getting\_data\_from\_a\_usb\_endpoint\_\_umdf\_
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

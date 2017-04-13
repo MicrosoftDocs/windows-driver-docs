@@ -1,10 +1,10 @@
 ---
-Description: 'Best practices for a host controller driver for handling I/O requests sent by UCX.'
-MS-HAID: 'buses.handling\_i\_o\_requests\_in\_a\_host\_controller\_driver'
+Description: Best practices for a host controller driver for handling I/O requests sent by UCX.
+MS-HAID: buses.handling\_i\_o\_requests\_in\_a\_host\_controller\_driver
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'Handle I/O requests in a USB host controller driver'
+title: Handle I/O requests in a USB host controller driver
 ---
 
 # Handle I/O requests in a USB host controller driver

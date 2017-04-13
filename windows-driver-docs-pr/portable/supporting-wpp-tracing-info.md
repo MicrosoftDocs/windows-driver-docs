@@ -1,7 +1,7 @@
 ---
 Description: Supporting WPP Tracing
-MS-HAID: 'wpddk.supporting\_wpp\_tracing\_info'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.supporting\_wpp\_tracing\_info
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Supporting WPP Tracing
 ---
 

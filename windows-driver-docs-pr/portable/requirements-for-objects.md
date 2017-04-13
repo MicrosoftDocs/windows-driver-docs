@@ -1,7 +1,7 @@
 ---
 Description: Requirements for Objects
-MS-HAID: 'wpddk.requirements\_for\_objects'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.requirements\_for\_objects
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Requirements for Objects
 ---
 

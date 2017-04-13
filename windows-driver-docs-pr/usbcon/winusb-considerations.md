@@ -1,6 +1,6 @@
 ---
-Description: 'This topic provides guidelines for choosing the best driver model for developing a USB client driver that acts as the device's function driver.'
-MS-HAID: 'buses.winusb\_considerations'
+Description: This topic provides guidelines for choosing the best driver model for developing a USB client driver that acts as the device's function driver.
+MS-HAID: buses.winusb\_considerations
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

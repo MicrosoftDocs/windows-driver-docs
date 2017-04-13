@@ -1,6 +1,6 @@
 ---
-Description: 'This paper provides information about USB ContainerIDs for the Windows operating system. It includes guidelines for device manufacturers to program their multifunction USB devices so that they can be correctly detected by Windows.'
-MS-HAID: 'buses.usb\_containerids\_in\_windows'
+Description: This paper provides information about USB ContainerIDs for the Windows operating system. It includes guidelines for device manufacturers to program their multifunction USB devices so that they can be correctly detected by Windows.
+MS-HAID: buses.usb\_containerids\_in\_windows
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

@@ -1,6 +1,6 @@
 ---
-Description: 'This topic provides information about how to view the timeline of events captured in a USB ETW log.'
-MS-HAID: 'buses.analyzing\_usb\_performance\_issues\_by\_using\_xperf\_and\_netmon'
+Description: This topic provides information about how to view the timeline of events captured in a USB ETW log.
+MS-HAID: buses.analyzing\_usb\_performance\_issues\_by\_using\_xperf\_and\_netmon
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

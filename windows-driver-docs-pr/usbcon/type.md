@@ -1,10 +1,10 @@
 ---
-Description: 'This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.'
-MS-HAID: 'buses.Type'
+Description: This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.
+MS-HAID: buses.Type
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'USB Type-C manual interoperability test procedures'
+title: USB Type-C manual interoperability test procedures
 ---
 
 # USB Type-C manual interoperability test procedures

@@ -1,5 +1,5 @@
 ---
-Description: 'The topics in this section describe how a client driver must configure their device.'
+Description: The topics in this section describe how a client driver must configure their device.
 MS-HAID:
 - 'usb-config\_8a4d3d91-f0cd-4210-a79a-d917f49f7adc.xml'
 - 'buses.configuring\_usb\_devices'

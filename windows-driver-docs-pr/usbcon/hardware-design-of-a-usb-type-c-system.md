@@ -1,10 +1,10 @@
 ---
-Description: 'Here are some example designs for USB Type-C system.'
-MS-HAID: 'buses.hardware\_design\_of\_a\_usb\_type-c\_system'
+Description: Here are some example designs for USB Type-C system.
+MS-HAID: buses.hardware\_design\_of\_a\_usb\_type-c\_system
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'Hardware design: USB Type-C systems'
+title: Hardware design: USB Type-C systems
 ---
 
 # Hardware design: USB Type-C systems

@@ -1,7 +1,7 @@
 ---
 Description: Defining the Sensor Objects
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_defining\_the\_sensor\_objects'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.the\_wpdbasichardwaredriver\_defining\_the\_sensor\_objects
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Defining the Sensor Objects
 ---
 

@@ -1,7 +1,7 @@
 ---
 Description: Opening a Resource and Retrieving an IStream object
-MS-HAID: 'wpddk.opening\_a\_resource\_and\_retrieving\_an\_istream\_object'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.opening\_a\_resource\_and\_retrieving\_an\_istream\_object
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Opening a Resource and Retrieving an IStream object
 ---
 

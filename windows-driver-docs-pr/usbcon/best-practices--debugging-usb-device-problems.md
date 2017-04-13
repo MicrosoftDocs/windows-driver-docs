@@ -1,6 +1,6 @@
 ---
-Description: 'This topic provides tips for debugging USB device problems by using ETW events.'
-MS-HAID: 'buses.best\_practices\_\_debugging\_usb\_device\_problems'
+Description: This topic provides tips for debugging USB device problems by using ETW events.
+MS-HAID: buses.best\_practices\_\_debugging\_usb\_device\_problems
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

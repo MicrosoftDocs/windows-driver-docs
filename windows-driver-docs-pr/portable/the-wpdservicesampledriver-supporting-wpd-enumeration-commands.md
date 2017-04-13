@@ -1,7 +1,7 @@
 ---
 Description: Supporting the Enumeration Commands
-MS-HAID: 'wpddk.the\_wpdservicesampledriver\_supporting\_wpd\_enumeration\_commands'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.the\_wpdservicesampledriver\_supporting\_wpd\_enumeration\_commands
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Supporting the Enumeration Commands
 ---
 

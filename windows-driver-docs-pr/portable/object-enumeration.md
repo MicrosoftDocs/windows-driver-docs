@@ -1,7 +1,7 @@
 ---
 Description: Object Enumeration
-MS-HAID: 'wpddk.object\_enumeration'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.object\_enumeration
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Object Enumeration
 ---
 

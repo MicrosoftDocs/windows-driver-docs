@@ -1,6 +1,6 @@
 ---
-Description: 'This topic describes hardware transitions to U1 and U2.'
-MS-HAID: 'buses.hardware\_transitions'
+Description: This topic describes hardware transitions to U1 and U2.
+MS-HAID: buses.hardware\_transitions
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

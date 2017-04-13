@@ -1,5 +1,5 @@
 ---
-Description: 'This topic describes how UMDF function drivers support USB selective suspend.'
+Description: This topic describes how UMDF function drivers support USB selective suspend.
 MS-HAID:
 - 'buses.guidelines\_for\_selective\_suspend\_in\_umdf\_drivers'
 - 'buses.selective\_suspend\_in\_umdf\_drivers'

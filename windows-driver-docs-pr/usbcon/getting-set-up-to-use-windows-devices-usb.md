@@ -1,6 +1,6 @@
 ---
-Description: 'Starting in Windows 8.1, the set of WinUSB Functions have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.'
-MS-HAID: 'buses.getting\_set\_up\_to\_use\_windows\_devices\_usb'
+Description: Starting in Windows 8.1, the set of WinUSB Functions have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.
+MS-HAID: buses.getting\_set\_up\_to\_use\_windows\_devices\_usb
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

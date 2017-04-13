@@ -1,10 +1,10 @@
 ---
-Description: 'The USB role-switch drivers (URS) are a set of WDF class extension and its client driver that handles the role-switching capability of a dual-role controller.'
-MS-HAID: 'buses.dual-role\_controller\_bringup\_for\_a\_usb\_type-c\_system'
+Description: The USB role-switch drivers (URS) are a set of WDF class extension and its client driver that handles the role-switching capability of a dual-role controller.
+MS-HAID: buses.dual-role\_controller\_bringup\_for\_a\_usb\_type-c\_system
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'Bring up the dual-role controller for a USB Type-C Windows system'
+title: Bring up the dual-role controller for a USB Type-C Windows system
 ---
 
 # Bring up the dual-role controller for a USB Type-C Windows system

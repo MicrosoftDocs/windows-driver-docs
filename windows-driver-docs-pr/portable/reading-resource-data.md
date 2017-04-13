@@ -1,7 +1,7 @@
 ---
 Description: Reading Resource Data
-MS-HAID: 'wpddk.reading\_resource\_data'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.reading\_resource\_data
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Reading Resource Data
 ---
 

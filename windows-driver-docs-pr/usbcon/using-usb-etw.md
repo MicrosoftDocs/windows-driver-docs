@@ -1,6 +1,6 @@
 ---
-Description: 'This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.'
-MS-HAID: 'buses.using\_usb\_etw'
+Description: This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.
+MS-HAID: buses.using\_usb\_etw
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

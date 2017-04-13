@@ -1,7 +1,7 @@
 ---
 Description: Advanced Tasks
-MS-HAID: 'wpddk.advanced\_tasks'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.advanced\_tasks
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Advanced Tasks
 ---
 

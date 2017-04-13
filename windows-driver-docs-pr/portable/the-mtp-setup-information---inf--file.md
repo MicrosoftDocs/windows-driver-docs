@@ -1,8 +1,8 @@
 ---
-Description: 'The MTP Setup Information (.inf) File'
-MS-HAID: 'wpddk.the\_mtp\_setup\_information\_\_\_inf\_\_file'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'The MTP Setup Information (.inf) File'
+Description: The MTP Setup Information (.inf) File
+MS-HAID: wpddk.the\_mtp\_setup\_information\_\_\_inf\_\_file
+MSHAttr: PreferredLib:/library/windows/hardware
+title: The MTP Setup Information (.inf) File
 ---
 
 # The MTP Setup Information (.inf) File

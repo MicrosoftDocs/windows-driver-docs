@@ -1,7 +1,7 @@
 ---
 Description: Supporting AutoPlay
-MS-HAID: 'wpddk.supporting\_autoplay'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.supporting\_autoplay
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Supporting AutoPlay
 ---
 

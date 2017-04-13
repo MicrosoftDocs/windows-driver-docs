@@ -1,6 +1,6 @@
 ---
-Description: 'This topic discusses static streams capability and explains how a USB client driver can open and close streams in a bulk endpoint of a USB 3.0 device.'
-MS-HAID: 'buses.how\_to\_open\_streams\_in\_a\_usb\_endpoint'
+Description: This topic discusses static streams capability and explains how a USB client driver can open and close streams in a bulk endpoint of a USB 3.0 device.
+MS-HAID: buses.how\_to\_open\_streams\_in\_a\_usb\_endpoint
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

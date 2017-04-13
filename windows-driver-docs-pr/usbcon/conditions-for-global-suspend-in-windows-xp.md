@@ -1,5 +1,5 @@
 ---
-Description: 'The USB 2.0 Specification defines Global Suspend as the suspension of the entire bus behind a USB host controller by ceasing all USB traffic on the bus, including start-of-frame packets.'
+Description: The USB 2.0 Specification defines Global Suspend as the suspension of the entire bus behind a USB host controller by ceasing all USB traffic on the bus, including start-of-frame packets.
 MS-HAID:
 - 'usbpower\_8255f0fd-43ba-4291-9a6d-88bc5ba280fc.xml'
 - 'buses.conditions\_for\_global\_suspend\_in\_windows\_xp'

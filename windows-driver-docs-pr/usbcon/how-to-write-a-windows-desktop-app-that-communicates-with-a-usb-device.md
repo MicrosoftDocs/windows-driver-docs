@@ -1,6 +1,6 @@
 ---
-Description: 'The easiest way to write a Windows desktop app that communicates with a USB device, is by using the C/C++ WinUSB template.'
-MS-HAID: 'buses.how\_to\_write\_a\_windows\_desktop\_app\_that\_communicates\_with\_a\_usb\_device'
+Description: The easiest way to write a Windows desktop app that communicates with a USB device, is by using the C/C++ WinUSB template.
+MS-HAID: buses.how\_to\_write\_a\_windows\_desktop\_app\_that\_communicates\_with\_a\_usb\_device
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

@@ -1,6 +1,6 @@
 ---
-Description: 'This topic provides information about steps you can try when a data transfer to a USB pipe fails. The mechanisms described in this topic cover abort, reset, and cycle port operations on bulk, interrupt, and isochronous pipes.'
-MS-HAID: 'buses.how\_to\_recover\_from\_usb\_pipe\_errors'
+Description: This topic provides information about steps you can try when a data transfer to a USB pipe fails. The mechanisms described in this topic cover abort, reset, and cycle port operations on bulk, interrupt, and isochronous pipes.
+MS-HAID: buses.how\_to\_recover\_from\_usb\_pipe\_errors
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

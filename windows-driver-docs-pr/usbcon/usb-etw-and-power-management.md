@@ -1,6 +1,6 @@
 ---
-Description: 'This topic provides a brief overview about using ETW to examine USB selective suspend state and identifying system energy efficiency problems by using the Windows PowerCfg utility.'
-MS-HAID: 'buses.usb\_etw\_and\_power\_management'
+Description: This topic provides a brief overview about using ETW to examine USB selective suspend state and identifying system energy efficiency problems by using the Windows PowerCfg utility.
+MS-HAID: buses.usb\_etw\_and\_power\_management
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

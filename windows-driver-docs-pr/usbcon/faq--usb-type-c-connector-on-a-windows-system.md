@@ -1,10 +1,10 @@
 ---
-Description: 'Frequently asked questions for OEMs who want to build Windows systems with USB Type-C connectors.'
-MS-HAID: 'buses.faq\_\_usb\_type-c\_connector\_on\_a\_windows\_system'
+Description: Frequently asked questions for OEMs who want to build Windows systems with USB Type-C connectors.
+MS-HAID: buses.faq\_\_usb\_type-c\_connector\_on\_a\_windows\_system
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'FAQ: USB Type-C connector on a Windows system'
+title: FAQ: USB Type-C connector on a Windows system
 ---
 
 # FAQ: USB Type-C connector on a Windows system

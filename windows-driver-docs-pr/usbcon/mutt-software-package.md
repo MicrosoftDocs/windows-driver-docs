@@ -1,6 +1,6 @@
 ---
-Description: 'The MUTT software package contains several tools to be used with MUTT devices. The suite of tools include firmware upgrade application, driver installation package, and applications that send transfers to the device.'
-MS-HAID: 'buses.mutt\_software\_package'
+Description: The MUTT software package contains several tools to be used with MUTT devices. The suite of tools include firmware upgrade application, driver installation package, and applications that send transfers to the device.
+MS-HAID: buses.mutt\_software\_package
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

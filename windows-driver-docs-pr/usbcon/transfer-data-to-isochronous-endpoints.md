@@ -1,6 +1,6 @@
 ---
-Description: 'This topic describes how a client driver can build a USB Request Block (URB) to transfer data to and from isochronous endpoints in a USB device.'
-MS-HAID: 'buses.transfer\_data\_to\_isochronous\_endpoints'
+Description: This topic describes how a client driver can build a USB Request Block (URB) to transfer data to and from isochronous endpoints in a USB device.
+MS-HAID: buses.transfer\_data\_to\_isochronous\_endpoints
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

@@ -1,6 +1,6 @@
 ---
-Description: 'This topic first describes the initial setup that is done by the software to enable U1 and U2 transitions, and then describes how these transitions occur in the hardware.'
-MS-HAID: 'buses.u1\_and\_u2\_transitions'
+Description: This topic first describes the initial setup that is done by the software to enable U1 and U2 transitions, and then describes how these transitions occur in the hardware.
+MS-HAID: buses.u1\_and\_u2\_transitions
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

@@ -1,6 +1,6 @@
 ---
-Description: 'USBTCD is the combination of a user-mode application and kernel-mode driver.'
-MS-HAID: 'buses.usbtcd'
+Description: USBTCD is the combination of a user-mode application and kernel-mode driver.
+MS-HAID: buses.usbtcd
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

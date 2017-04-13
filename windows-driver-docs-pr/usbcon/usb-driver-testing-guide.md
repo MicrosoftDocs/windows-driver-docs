@@ -1,10 +1,10 @@
 ---
-Description: 'This section describes tools that you can use to test your USB hardware or software, capture traces of operations and other system events, and observe how the USB driver stack responds to a request sent by a client driver or an application.'
-MS-HAID: 'buses.usb\_driver\_testing\_guide'
+Description: This section describes tools that you can use to test your USB hardware or software, capture traces of operations and other system events, and observe how the USB driver stack responds to a request sent by a client driver or an application.
+MS-HAID: buses.usb\_driver\_testing\_guide
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'Testing USB hardware, drivers, and apps in Windows'
+title: Testing USB hardware, drivers, and apps in Windows
 ---
 
 # Testing USB hardware, drivers, and apps in Windows

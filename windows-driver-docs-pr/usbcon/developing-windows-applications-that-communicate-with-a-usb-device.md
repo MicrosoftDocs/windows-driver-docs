@@ -1,6 +1,6 @@
 ---
-Description: 'This topic provides guidelines for deciding whether you should write a Windows Store app or a Windows desktop app to communicate with a USB device.'
-MS-HAID: 'buses.developing\_windows\_applications\_that\_communicate\_with\_a\_usb\_device'
+Description: This topic provides guidelines for deciding whether you should write a Windows Store app or a Windows desktop app to communicate with a USB device.
+MS-HAID: buses.developing\_windows\_applications\_that\_communicate\_with\_a\_usb\_device
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

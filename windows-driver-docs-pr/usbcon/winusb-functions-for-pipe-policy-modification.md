@@ -1,6 +1,6 @@
 ---
-Description: 'To enable applications to get and set an endpoint pipe's default policy parameters, Winusb.dll exposes the WinUsb\_GetPipePolicy function to retrieve the pipe's default policy.'
-MS-HAID: 'buses.winusb\_functions\_for\_pipe\_policy\_modification'
+Description: To enable applications to get and set an endpoint pipe's default policy parameters, Winusb.dll exposes the WinUsb\_GetPipePolicy function to retrieve the pipe's default policy.
+MS-HAID: buses.winusb\_functions\_for\_pipe\_policy\_modification
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

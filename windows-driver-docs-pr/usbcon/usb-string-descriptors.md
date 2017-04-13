@@ -1,5 +1,5 @@
 ---
-Description: 'Device, configuration, and interface descriptors may contain references to string descriptors. This topic describes how to get a particular string descriptor from the device.'
+Description: Device, configuration, and interface descriptors may contain references to string descriptors. This topic describes how to get a particular string descriptor from the device.
 MS-HAID:
 - 'usb-config\_9d048bd3-a031-4cac-8990-6a6b6d444205.xml'
 - 'buses.usb\_string\_descriptors'

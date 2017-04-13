@@ -1,10 +1,10 @@
 ---
-Description: 'This topic describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.'
-MS-HAID: 'buses.how\_to\_retrieve\_information\_about\_a\_usb\_device'
+Description: This topic describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
+MS-HAID: buses.how\_to\_retrieve\_information\_about\_a\_usb\_device
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'USB hardware verifier (USB3HWVerifierAnalyzer.exe)'
+title: USB hardware verifier (USB3HWVerifierAnalyzer.exe)
 ---
 
 # USB hardware verifier (USB3HWVerifierAnalyzer.exe)

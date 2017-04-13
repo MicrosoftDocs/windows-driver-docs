@@ -1,12 +1,12 @@
 ---
-Description: 'Digital Rights Management (DRM) systems often make use of device serial numbers to ensure that legitimate customers have access to digitized intellectual property.'
+Description: Digital Rights Management (DRM) systems often make use of device serial numbers to ensure that legitimate customers have access to digitized intellectual property.
 MS-HAID:
 - 'usbsystem\_be7c1a32-8463-44dc-891c-7c9af0a167b9.xml'
 - 'buses.content\_security\_features\_in\_the\_composite\_client\_generic\_parent\_drive'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'Content Security Features in Usbccgp.sys'
+title: Content Security Features in Usbccgp.sys
 ---
 
 # Content Security Features in Usbccgp.sys

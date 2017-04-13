@@ -1,7 +1,7 @@
 ---
 Description: Supporting Rendering Profiles
-MS-HAID: 'wpddk.supporting\_rendering\_profiles'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.supporting\_rendering\_profiles
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Supporting Rendering Profiles
 ---
 

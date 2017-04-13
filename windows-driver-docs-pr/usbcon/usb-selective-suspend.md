@@ -1,5 +1,5 @@
 ---
-Description: 'This section provides information about choosing the correct mechanism for the selective suspend feature.'
+Description: This section provides information about choosing the correct mechanism for the selective suspend feature.
 MS-HAID:
 - 'usbpower\_01a84111-d3de-4cc1-a9c1-1cdd2718b92a.xml'
 - 'buses.usb\_selective\_suspend'

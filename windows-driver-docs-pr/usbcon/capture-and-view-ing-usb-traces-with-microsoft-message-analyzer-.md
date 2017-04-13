@@ -1,6 +1,6 @@
 ---
-Description: 'You can use Microsoft Message Analyzer (MMA) to capture and view live USB traces, or view an existing trace.'
-MS-HAID: 'buses.capture\_and\_view\_ing\_usb\_traces\_with\_microsoft\_message\_analyzer\_'
+Description: You can use Microsoft Message Analyzer (MMA) to capture and view live USB traces, or view an existing trace.
+MS-HAID: buses.capture\_and\_view\_ing\_usb\_traces\_with\_microsoft\_message\_analyzer\_
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

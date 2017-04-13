@@ -1,6 +1,6 @@
 ---
-Description: 'This topic describes how to example a event trace file by using Netmon.'
-MS-HAID: 'buses.how\_to\_examining\_a\_trace\_file\_by\_using\_netmon'
+Description: This topic describes how to example a event trace file by using Netmon.
+MS-HAID: buses.how\_to\_examining\_a\_trace\_file\_by\_using\_netmon
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

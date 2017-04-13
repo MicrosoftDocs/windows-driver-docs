@@ -1,5 +1,5 @@
 ---
-Description: 'This topic describes best practices about implementing the remote wakeup capability in a client driver.'
+Description: This topic describes best practices about implementing the remote wakeup capability in a client driver.
 MS-HAID:
 - 'usbpower\_18d34c21-29a2-449c-a3ac-fce27187c246.xml'
 - 'buses.remote\_wakeup\_of\_usb\_devices'

@@ -1,8 +1,8 @@
 ---
-Description: 'Property-Attribute Retrieval'
-MS-HAID: 'wpddk.property\_attribute\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Property-Attribute Retrieval'
+Description: Property-Attribute Retrieval
+MS-HAID: wpddk.property\_attribute\_retrieval
+MSHAttr: PreferredLib:/library/windows/hardware
+title: Property-Attribute Retrieval
 ---
 
 # Property-Attribute Retrieval

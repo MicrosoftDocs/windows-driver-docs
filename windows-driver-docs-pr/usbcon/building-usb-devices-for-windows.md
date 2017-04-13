@@ -1,5 +1,5 @@
 ---
-Description: 'This section provides links for manufacturers of USB peripheral devices.'
+Description: This section provides links for manufacturers of USB peripheral devices.
 MS-HAID:
 - 'buses.diagnostic\_tools\_for\_usb\_devices'
 - 'buses.event\_tracing\_for\_windows'
