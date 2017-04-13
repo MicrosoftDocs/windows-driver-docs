@@ -1,7 +1,5 @@
 ---
 Description: Supporting the Property Commands
-MS-HAID: wpddk.the\_wpdbasichardwaredriver\_supporting\_wpd\_property\_commands
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Supporting the Property Commands
 ---
 

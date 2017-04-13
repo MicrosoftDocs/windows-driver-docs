@@ -2,9 +2,6 @@
 title: EFI\_USB\_CONFIG\_INFO
 author: windows-driver-content
 description: EFI\_USB\_CONFIG\_INFO
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 74d5cb02-2648-4bd1-990e-61156b5dc8cd
 ---
 

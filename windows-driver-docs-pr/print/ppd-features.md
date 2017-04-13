@@ -2,12 +2,6 @@
 title: PPD Features
 author: windows-driver-content
 description: PPD Features
-MS-HAID:
-- 'pscript\_7ed98cd6-6b90-4067-8370-28ec452f17c2.xml'
-- 'print.ppd\_features'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee78031a-2138-4d0c-ac8a-5328aa54d904
 keywords: ["PPD files WDK Pscript", "non-PPD features WDK Pscript", "driver features WDK Pscript"]
 ---

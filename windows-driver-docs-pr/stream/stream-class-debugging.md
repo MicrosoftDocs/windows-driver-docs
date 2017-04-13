@@ -2,12 +2,6 @@
 title: Stream Class Debugging
 author: windows-driver-content
 description: Stream Class Debugging
-MS-HAID:
-- 'strmini-design\_ba385dd6-886a-4d85-aca1-389f0fe15c2a.xml'
-- 'stream.stream\_class\_debugging'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 544b922b-58e4-4cbb-a76c-d8e13ae17e55
 keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , debugging", "streaming minidrivers WDK Windows 2000 Kernel , debugging", "minidrivers WDK Windows 2000 Kernel Streaming , debugging", "debugging stream class minidrivers WDK Windows 2000 Kernel"]
 ---

@@ -2,12 +2,6 @@
 title: Installing an Image Processing Filter
 author: windows-driver-content
 description: Installing an Image Processing Filter
-MS-HAID:
-- 'WIA\_tree\_f4b120fc-616b-4e27-a3a6-aaabe791c3e3.xml'
-- 'image.installing\_an\_image\_processing\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bce6405f-0377-4e50-b898-28c6cdb962be
 ---
 

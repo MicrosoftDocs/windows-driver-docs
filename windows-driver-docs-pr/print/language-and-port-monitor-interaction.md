@@ -2,12 +2,6 @@
 title: Language and Port Monitor Interaction
 author: windows-driver-content
 description: Language and Port Monitor Interaction
-MS-HAID:
-- 'provider\_5b328d96-5a23-4e71-bd29-8a94268beef2.xml'
-- 'print.language\_and\_port\_monitor\_interaction'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6c3c55fc-40f3-43d7-b8a2-20fed8d28813
 keywords: ["print monitors WDK , language monitors", "print monitors WDK , port monitors", "language monitors WDK print , port monitor interaction", "port monitors WDK print , language monitor interaction"]
 ---

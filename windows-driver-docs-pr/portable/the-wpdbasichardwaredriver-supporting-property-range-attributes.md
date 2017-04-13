@@ -1,7 +1,5 @@
 ---
 Description: Supporting the Property Range Attributes
-MS-HAID: wpddk.the\_wpdbasichardwaredriver\_supporting\_property\_range\_attributes
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Supporting the Property Range Attributes
 ---
 

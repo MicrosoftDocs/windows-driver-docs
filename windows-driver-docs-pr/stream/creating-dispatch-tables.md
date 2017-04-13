@@ -2,12 +2,6 @@
 title: Creating Dispatch Tables
 author: windows-driver-content
 description: Creating Dispatch Tables
-MS-HAID:
-- 'bdadg\_e3644696-d096-4107-b08d-b2455c1529ca.xml'
-- 'stream.creating\_dispatch\_tables'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0771aeac-68b2-4dec-8887-a0b313899ce8
 keywords: ["BDA minidrivers WDK AVStream , dispatch tables", "dispatch tables WDK AVStream", "filter dispatch tables WDK BDA", "pin dispatch tables WDK BDA"]
 ---

@@ -1,9 +1,6 @@
 ---
 title: AllowTethering
 description: AllowTethering
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f9b92c46-5e0e-447a-b571-bf549e9a749d
 ---
 

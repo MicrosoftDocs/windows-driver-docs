@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.FreeTransferBuffer
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.FreeTransferBuffer
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 236b925f-2c7b-4df8-b5c8-e8c2f7b853d2
 ---
 

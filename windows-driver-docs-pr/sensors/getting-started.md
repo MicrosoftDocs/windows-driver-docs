@@ -2,12 +2,6 @@
 title: Getting Started
 author: windows-driver-content
 description: Getting Started
-MS-HAID:
-- 'Sensor\_DG\_GettingStarted\_6ba72068-2658-4fcc-be64-36664ee7e0e1.xml'
-- 'sensors.getting\_started'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d0df748d-f6a4-40d4-907a-324d1b78af98
 ---
 

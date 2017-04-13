@@ -1,7 +1,5 @@
 ---
 Description: WPD Driver Development Tools
-MS-HAID: wpddk.familiarizing\_yourself\_with\_the\_sample\_driver
-MSHAttr: PreferredLib:/library/windows/hardware
 title: WPD Driver Development Tools
 ---
 

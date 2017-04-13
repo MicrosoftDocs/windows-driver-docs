@@ -2,9 +2,6 @@
 title: Extended camera controls
 author: windows-driver-content
 description: Extended controls use the KSPROPERTY mechanism to expose camera controls to the application.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B480C007-7DCA-4CFB-9169-BE2D0B2D2137
 ---
 

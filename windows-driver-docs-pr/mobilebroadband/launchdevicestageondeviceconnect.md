@@ -1,9 +1,6 @@
 ---
 title: LaunchDeviceStageOnDeviceConnect
 description: LaunchDeviceStageOnDeviceConnect
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6c3ac8f9-373f-4b70-85c6-a4bd3d81a534
 ---
 

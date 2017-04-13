@@ -2,12 +2,6 @@
 title: Unidrv Minidrivers
 author: windows-driver-content
 description: Unidrv Minidrivers
-MS-HAID:
-- 'nt5gpd\_78506769-3f07-4d18-b9b6-d7606a757eda.xml'
-- 'print.unidrv\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ebf12f61-6194-4033-92a2-2bbccc40a6fd
 keywords: ["Unidrv, minidrivers", "minidrivers WDK Unidrv", "text-based printer descriptions WDK Unidrv", "printer descriptions WDK Unidrv", "GPD files WDK Unidrv , Unidrv capabilities", "Unidrv WDK print"]
 ---

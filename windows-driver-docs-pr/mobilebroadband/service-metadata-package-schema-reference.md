@@ -1,9 +1,6 @@
 ---
 title: Service metadata package schema reference
 description: Service metadata package schema reference
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15e82a90-3f1a-4244-92dc-35ee8b90ec80
 ---
 

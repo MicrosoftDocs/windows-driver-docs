@@ -2,12 +2,6 @@
 title: Overview of VRAM Capture in AVStream
 author: windows-driver-content
 description: Overview of VRAM Capture in AVStream
-MS-HAID:
-- 'gpucap\_eae9fbf6-bc1f-404a-8c88-c9129a811a9f.xml'
-- 'stream.overview\_of\_vram\_capture\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b5fd026f-75e3-49e0-a39e-4883dd6cacf2
 keywords: ["VRAM capture WDK AVStream , about VRAM capture"]
 ---

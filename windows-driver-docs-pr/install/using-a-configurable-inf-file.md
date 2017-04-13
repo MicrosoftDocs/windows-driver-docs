@@ -57,7 +57,7 @@ The following directives are valid with some caveats:
 
 -   The [**INF AddReg Directive**](inf-addreg-directive.md) is valid only if entries in the specified *add-registry-section* have a *reg-root* value of **HKR**.
 
--   [**INF CopyFiles Directive**](inf-copyfiles-directive.md) is valid only if the destination directory is one of the following:
+-   [**INF CopyFiles Directive**](inf-copyfiles-directive.md) is valid only if the [destination directory](inf-destinationdirs-section.md) is one of the following:
 
     -   11 (corresponds to %WINDIR%\\System32)
     -   12 (corresponds to %WINDIR%\\System32\\Drivers)

@@ -2,12 +2,6 @@
 title: Microdriver Functions
 author: windows-driver-content
 description: Microdriver Functions
-MS-HAID:
-- 'WIA\_db\_hello\_23f7f541-c98f-4679-b958-e044e8eef44c.xml'
-- 'image.microdriver\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 491b954a-8ffa-4899-8c7d-0aee409f4742
 ---
 

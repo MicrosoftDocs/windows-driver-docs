@@ -2,12 +2,6 @@
 title: Initializing a BDA Filter
 author: windows-driver-content
 description: Initializing a BDA Filter
-MS-HAID:
-- 'bdadg\_dc1c863d-aefa-4f66-9ece-d00d17abc2d0.xml'
-- 'stream.initializing\_a\_bda\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 716978f5-4bdd-4673-8c4a-14dc76947fba
 keywords: ["BDA minidrivers WDK AVStream , filter initialization", "initializing BDA filters", "initial filter instance WDK BDA"]
 ---

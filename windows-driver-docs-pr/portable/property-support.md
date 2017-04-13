@@ -1,7 +1,5 @@
 ---
 Description: Property Support
-MS-HAID: wpddk.property\_support
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Property Support
 ---
 

@@ -2,12 +2,6 @@
 title: Configuring a Port
 author: windows-driver-content
 description: Configuring a Port
-MS-HAID:
-- 'provider\_a81f2d0d-9a71-4c63-8133-b2f0413123df.xml'
-- 'print.configuring\_a\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f5996e94-aa48-4aa0-82f5-331a57d2fb6b
 keywords: ["port management WDK print , configuring ports", "ConfigurePort"]
 ---

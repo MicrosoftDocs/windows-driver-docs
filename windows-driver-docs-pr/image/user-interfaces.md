@@ -2,12 +2,6 @@
 title: User Interfaces
 author: windows-driver-content
 description: User Interfaces
-MS-HAID:
-- 'dsm\_des\_req\_7b0bd8c7-a3ac-4042-88b5-013863d49551.xml'
-- 'image.user\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aecd7156-91f9-4142-b991-4d6f4bdd6be7
 ---
 

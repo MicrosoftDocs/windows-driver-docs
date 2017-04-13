@@ -2,12 +2,6 @@
 title: About Contexts
 author: windows-driver-content
 description: About Contexts
-MS-HAID:
-- 'WIA\_arch\_c9010bbc-2f9c-427a-acb8-997bd62ff68b.xml'
-- 'image.about\_contexts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 39d51828-cfb3-4692-be9b-a89411ba7841
 ---
 

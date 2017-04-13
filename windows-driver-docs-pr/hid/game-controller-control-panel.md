@@ -2,12 +2,6 @@
 title: Game Controller Control Panel
 author: windows-driver-content
 description: Game Controller Control Panel
-MS-HAID:
-- 'di\_ed719f0f-7ceb-4b44-9959-e8de9b5e37a0.xml'
-- 'hid.game\_controller\_control\_panel'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb68102a-24d6-4dda-8f27-69366a2129bc
 keywords: ["property sheets WDK DirectInput , control panel structure", "game controllers WDK DirectInput , control panel structure", "control panels WDK DirectInput , architecture"]
 ---

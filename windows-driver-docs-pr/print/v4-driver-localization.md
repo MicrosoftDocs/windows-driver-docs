@@ -2,9 +2,6 @@
 title: V4 Printer Driver Localization
 author: windows-driver-content
 description: Windows 8 has provided standard, localized display strings to support the development of printer extensions and Windows Store device apps.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5C587AF2-C51E-4728-A214-7FC1F8A6E445
 ---
 

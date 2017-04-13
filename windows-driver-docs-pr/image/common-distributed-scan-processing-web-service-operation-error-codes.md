@@ -2,12 +2,6 @@
 title: Common Distributed Scan Processing Web Service Operation Error Codes
 author: windows-driver-content
 description: Common Distributed Scan Processing Web Service Operation Error Codes
-MS-HAID:
-- 'dsm\_des\_arch\_ee961a61-b5a8-4ea8-8cc3-3f173f31272f.xml'
-- 'image.common\_distributed\_scan\_processing\_web\_service\_operation\_error\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d31898d2-3536-4cc2-8480-c78e952fcdbb
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Subscriber and Device Information API
 description: Subscriber and Device Information API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 45d6c053-b64b-4768-8e79-a090dcdf346e
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: Submit a PC device manifest package
 description: Submit a PC device manifest package
-MS-HAID:
-- 'p\_dashboard.submit\_a\_pc\_device\_manifest\_package'
-- 'hw\_dashboard.submit\_a\_pc\_device\_manifest\_package'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b96b02b8-8804-403e-9513-7a5d1b730fcd
 ---
 

@@ -2,12 +2,6 @@
 title: Initializing an AVStream Minidriver
 author: windows-driver-content
 description: Initializing an AVStream Minidriver
-MS-HAID:
-- 'avsover\_df77233d-9077-4c4d-bde9-7250668a2c8a.xml'
-- 'stream.initializing\_an\_avstream\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 666d6efb-93ec-43f3-87c5-ea1a3983bfd0
 keywords: ["AVStream WDK , initializing minidrivers", "minidrivers WDK AVStream , initializing"]
 ---

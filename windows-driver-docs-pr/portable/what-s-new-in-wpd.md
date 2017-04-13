@@ -1,7 +1,5 @@
 ---
 Description: This topic summarizes the new features and improvements for Windows Portable Devices (WPD) in Windows 8.
-MS-HAID: wpddk.what\_s\_new\_in\_wpd
-MSHAttr: PreferredLib:/library/windows/hardware
 title: What's New in WPD
 ---
 

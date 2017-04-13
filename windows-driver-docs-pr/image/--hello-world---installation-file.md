@@ -2,12 +2,6 @@
 title: Hello World' Installation File
 author: windows-driver-content
 description: Hello World' Installation File
-MS-HAID:
-- 'WIA\_db\_hello\_ddcea0a6-0d94-428a-bdd2-2ed160e476c0.xml'
-- 'image.\_\_hello\_world\_\_\_installation\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 826f4f99-16bd-4586-9cc1-0afde2fcee65
 ---
 

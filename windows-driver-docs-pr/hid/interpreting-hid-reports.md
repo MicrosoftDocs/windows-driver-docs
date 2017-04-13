@@ -2,12 +2,6 @@
 title: Interpreting HID Reports
 author: windows-driver-content
 description: Interpreting HID Reports
-MS-HAID:
-- 'hidclass\_ee7f8c3a-31b7-4ed9-a47d-d2f3ca31d600.xml'
-- 'hid.interpreting\_hid\_reports'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10f8c3a1-ad60-4c99-a425-fa8c9a3be0e1
 keywords: ["HID reports WDK , interpreting", "reports WDK HID , interpreting"]
 ---

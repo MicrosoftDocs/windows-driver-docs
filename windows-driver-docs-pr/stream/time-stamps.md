@@ -2,12 +2,6 @@
 title: Time Stamps
 author: windows-driver-content
 description: Time Stamps
-MS-HAID:
-- 'vidcapds\_455eaac9-a0c1-40b8-9a49-1d313e454c88.xml'
-- 'stream.time\_stamps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a97a57df-294a-4cbb-85d3-56d33ece65c9
 keywords: ["video capture WDK AVStream , time stamps", "capturing video WDK AVStream , time stamps", "time stamps WDK video capture", "clocks WDK video capture"]
 ---

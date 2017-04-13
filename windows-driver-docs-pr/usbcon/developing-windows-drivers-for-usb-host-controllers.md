@@ -1,9 +1,5 @@
 ---
 Description: Developing Windows drivers for USB host controllers
-MS-HAID: buses.developing\_windows\_drivers\_for\_usb\_host\_controllers
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Developing Windows drivers for USB host controllers
 ---
 

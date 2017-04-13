@@ -1,9 +1,6 @@
 ---
 title: DeviceNotificationHandlers
 description: DeviceNotificationHandlers
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94661e6a-97ed-4dbf-ab09-b39545ee2e40
 ---
 

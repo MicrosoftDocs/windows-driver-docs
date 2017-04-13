@@ -1,7 +1,5 @@
 ---
 Description: Supporting Client Contexts
-MS-HAID: wpddk.supporting\_client\_contexts
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Supporting Client Contexts
 ---
 

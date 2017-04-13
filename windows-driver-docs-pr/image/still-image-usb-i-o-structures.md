@@ -2,12 +2,6 @@
 title: Still Image USB I/O Structures
 author: windows-driver-content
 description: Still Image USB I/O Structures
-MS-HAID:
-- 'stillimg\_de0f061c-f661-44d8-beb8-e991061ad43b.xml'
-- 'image.still\_image\_usb\_i\_o\_structures'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d70c5c11-c8f2-4196-a7f5-d97ceef10ca2
 ---
 

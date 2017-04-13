@@ -2,12 +2,6 @@
 title: Introduction to Printing
 author: windows-driver-content
 description: Introduction to Printing
-MS-HAID:
-- 'printro\_6dcaac61-afa9-46ab-8dba-2d6035c3f08f.xml'
-- 'print.introduction\_to\_printing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8a2e0151-6d40-493d-9757-42350a9e6220
 keywords: ["printing WDK", "rendering component WDK print", "configuration component WDK print", "components WDK printing", "architecture WDK print"]
 ---

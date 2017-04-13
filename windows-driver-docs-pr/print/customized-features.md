@@ -2,12 +2,6 @@
 title: Customized Features
 author: windows-driver-content
 description: Customized Features
-MS-HAID:
-- 'nt5gpd\_66acdfe1-fede-45cc-9b55-bf39c0b931bc.xml'
-- 'print.customized\_features'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7dfed02-3505-4ed6-86cf-efb273f76ad6
 keywords: ["printer features WDK Unidrv , customized", "customized printer features WDK Unidrv"]
 ---

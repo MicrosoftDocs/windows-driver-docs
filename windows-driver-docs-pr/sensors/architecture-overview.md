@@ -2,12 +2,6 @@
 title: Architecture Overview
 author: windows-driver-content
 description: Architecture Overview
-MS-HAID:
-- 'Sensor\_DG\_Overview\_f272b9d5-f655-4872-b8aa-fd61d9cf6531.xml'
-- 'sensors.architecture\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6d1b15ea-ba27-4bde-8000-d31f014ab47d
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Get SMS device information
 description: Get SMS device information
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 906b3b12-466a-418e-84fd-e0cfad00445a
 ---
 

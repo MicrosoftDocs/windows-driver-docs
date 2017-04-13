@@ -2,9 +2,6 @@
 title: Sensor data batching for power savings
 author: windows-driver-content
 description: This topic covers the interfaces that are required between the sensor class extension and the sensor driver, to implement sensor data batching in Windows 10.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E64B9CE0-2C76-430A-ABE0-717BD27BCA8A
 ---
 

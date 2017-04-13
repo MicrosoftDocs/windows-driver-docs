@@ -2,12 +2,6 @@
 title: Modifying a Driver-Supplied Property Sheet Page
 author: windows-driver-content
 description: Modifying a Driver-Supplied Property Sheet Page
-MS-HAID:
-- 'custdrvr\_8d123caf-f6c5-4ec9-9e80-8eef2fc9c8a2.xml'
-- 'print.modifying\_a\_driver\_supplied\_property\_sheet\_page'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 98338017-96a0-414c-9b80-bcb98eff61e5
 keywords: ["user interface plug-ins WDK print , property sheet pages", "UI plug-ins WDK print , property sheet pages", "property sheet pages WDK print", "option items WDK UI plug-in", "customized option items WDK UI plug-in"]
 ---

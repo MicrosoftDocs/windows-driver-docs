@@ -1,12 +1,6 @@
 ---
 title: Device Metadata Business Rules
 description: Device Metadata Business Rules
-MS-HAID:
-- 'p\_dashboard.device\_metadata\_business\_rules'
-- 'hw\_dashboard.device\_metadata\_business\_rules'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19a0ced7-bb31-4899-abb4-2de803f179a6
 ---
 

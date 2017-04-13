@@ -1,9 +1,6 @@
 ---
 title: Windows Store mobile broadband apps
 description: Windows Store mobile broadband apps
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bb02397b-0da5-4e09-be1c-8812abec6fd5
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: View and Manage Your Bugs
 description: View and Manage Your Bugs
-MS-HAID:
-- 'p\_dashboard.view\_and\_manage\_your\_bugs'
-- 'hw\_dashboard.view\_and\_manage\_your\_bugs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e94e9d8b-1324-4a3c-8d0f-14bb95c0baca
 ---
 

@@ -2,12 +2,6 @@
 title: Advanced Duplex-Capable Document Feeder
 author: windows-driver-content
 description: Advanced Duplex-Capable Document Feeder
-MS-HAID:
-- 'WIA\_scanner\_tree\_90a09a88-9473-4998-bd59-6229ceb0edd8.xml'
-- 'image.advanced\_duplex\_capable\_document\_feeder'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05b91864-7573-4d99-8a03-701d6cdd650b
 ---
 

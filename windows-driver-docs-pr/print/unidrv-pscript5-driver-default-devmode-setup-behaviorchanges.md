@@ -2,12 +2,6 @@
 title: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
 author: windows-driver-content
 description: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
-MS-HAID:
-- 'xpsconfig\_3960b1a3-ab50-4b1b-bd80-34bf32417e6b.xml'
-- 'print.unidrv\_pscript5\_driver\_default\_devmode\_setup\_behaviorchanges'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9760d527-0205-477b-bc16-d6aa65b1eaf7
 ---
 

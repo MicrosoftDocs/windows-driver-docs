@@ -2,9 +2,6 @@
 title: SerCx2 Custom-Transmit Transactions
 author: windows-driver-content
 description: Some serial controller hardware might implement a data-transfer mechanism other than PIO or system DMA for writing data to a serial controller.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E72E68BC-A60A-41BE-8606-92A608648042
 ---
 

@@ -1,11 +1,5 @@
 ---
 Description: This topic describes USB transfer sizes allowed in various versions of the Windows operating system.
-MS-HAID:
-- 'usb-io\_e0c77eb5-d512-4fa8-84d1-e53e3306aa06.xml'
-- 'buses.setting\_usb\_transfer\_and\_packet\_sizes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: USB Transfer and Packet Sizes
 ---
 

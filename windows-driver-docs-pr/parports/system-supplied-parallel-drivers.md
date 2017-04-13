@@ -2,12 +2,6 @@
 title: System-Supplied Parallel Drivers
 author: windows-driver-content
 description: System-Supplied Parallel Drivers
-MS-HAID:
-- 'sspd\_27044104-2b16-450e-a56b-8621d4d5382c.xml'
-- 'parports.system\_supplied\_parallel\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c38d31f9-ad7c-40aa-9464-6cc6ac03c9a5
 keywords: ["parallel ports WDK , system supplied drivers", "system-supplied parallel drivers WDK", "parallel drivers WDK", "parallel devices WDK , system supplied drivers"]
 ---

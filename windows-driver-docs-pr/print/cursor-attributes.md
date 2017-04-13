@@ -2,12 +2,6 @@
 title: Cursor Attributes
 author: windows-driver-content
 description: Cursor Attributes
-MS-HAID:
-- 'nt5gpd\_4fb5ceec-9f17-4695-847b-945807cc6a30.xml'
-- 'print.cursor\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 43646e2a-bc40-430e-ac7e-6fe4cb353309
 keywords: ["cursor attributes WDK Unidrv", "general printer attributes WDK Unidrv , cursor"]
 ---

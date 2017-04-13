@@ -1,7 +1,5 @@
 ---
 Description: Creating the Sensor Devices
-MS-HAID: wpddk.the\_wpdbasichardwaredriver\_device\_creation
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Creating the Sensor Devices
 ---
 

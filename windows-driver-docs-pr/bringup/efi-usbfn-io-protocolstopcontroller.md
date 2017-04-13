@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.StopController
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.StopController
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 531fd280-bcb1-4b6f-a2fa-9052318171b3
 ---
 

@@ -2,12 +2,6 @@
 title: Introduction to GPD Files
 author: windows-driver-content
 description: Introduction to GPD Files
-MS-HAID:
-- 'nt5gpd\_fa8011db-1dea-4f06-99ce-71acf01b0d8d.xml'
-- 'print.introduction\_to\_gpd\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f29415cf-d8ca-42a2-bbae-2be53e3621a6
 keywords: ["generic printer description WDK Unidrv", "GPD files WDK Unidrv", "Unidrv, GPD files", "GPD files WDK Unidrv , about GPD files", "Unidrv WDK print"]
 ---

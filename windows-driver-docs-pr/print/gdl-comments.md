@@ -2,12 +2,6 @@
 title: GDL Comments
 author: windows-driver-content
 description: GDL Comments
-MS-HAID:
-- 'gplfiles\_61f4e3b0-b747-4449-a0eb-77cc9e3651ce.xml'
-- 'print.gdl\_comments'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d7103c5b-87dd-46e9-972a-188758ee3447
 keywords: ["constructs WDK GDL , comments", "comments WDK GDL", "contexts WDK GDL , comments", "GDL WDK , comments"]
 ---

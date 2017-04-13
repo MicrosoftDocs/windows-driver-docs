@@ -1,7 +1,5 @@
 ---
 Description: The Sample Driver Setup Information (.inf) File
-MS-HAID: wpddk.the\_sample\_driver\_setup\_information\_\_\_inf\_\_file
-MSHAttr: PreferredLib:/library/windows/hardware
 title: The Sample Driver Setup Information (.inf) File
 ---
 

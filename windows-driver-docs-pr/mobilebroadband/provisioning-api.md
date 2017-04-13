@@ -1,9 +1,6 @@
 ---
 title: Provisioning API
 description: Provisioning API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bcb17631-a13c-416c-ac10-97f6c0d12cb0
 ---
 

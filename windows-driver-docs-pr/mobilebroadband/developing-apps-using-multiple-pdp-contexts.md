@@ -1,9 +1,6 @@
 ---
 title: Developing apps using multiple PDP contexts
 description: Developing apps using multiple PDP contexts
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6a977a69-397d-4922-890d-1810dd54dff4
 ---
 

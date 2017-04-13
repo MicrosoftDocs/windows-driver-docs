@@ -2,12 +2,6 @@
 title: Print Ticket and Print Capabilities Provider Interface
 author: windows-driver-content
 description: Print Ticket and Print Capabilities Provider Interface Implemented by Printer Drivers
-MS-HAID:
-- 'drvarch\_b33f27f0-5e08-4c4b-b4a4-a32a377f5b84.xml'
-- 'print.print\_ticket\_and\_print\_capabilities\_provider\_interface\_implemented\_by\_2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a14c1173-0419-44c7-bc8f-7197590083b3
 keywords: ["printer interface DLL WDK , Print Ticket support", "printer interface DLL WDK , Print Capabilities support", "Print Capabilities WDK , printer interface DLL", "Print Tickets WDK , printer interface DLL"]
 ---

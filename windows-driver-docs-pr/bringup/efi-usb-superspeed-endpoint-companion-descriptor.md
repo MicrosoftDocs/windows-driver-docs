@@ -2,9 +2,6 @@
 title: EFI\_USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR
 author: windows-driver-content
 description: EFI\_USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5449A10A-17BC-40CB-A8FC-19F867CFC9D0
 ---
 

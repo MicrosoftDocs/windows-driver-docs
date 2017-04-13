@@ -2,12 +2,6 @@
 title: DSM Operation Phases.
 author: windows-driver-content
 description: DSM Operation Phases.
-MS-HAID:
-- 'dsm\_des\_theory\_67eca661-530f-4565-85df-a73e50ff2795.xml'
-- 'image.dsm\_operation\_phases\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6cd9418d-fd34-4b7b-acce-23e4ba3854aa
 ---
 

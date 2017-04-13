@@ -2,12 +2,6 @@
 title: Configuration of Plug and Play Serial Device Connected to an RS-232 Port
 author: windows-driver-content
 description: Configuration of Plug and Play Serial Device Connected to an RS-232 Port
-MS-HAID:
-- 'sseovr\_aff646d6-9185-43f0-99b2-6cfb7e97ca01.xml'
-- 'serports.configuration\_of\_plug\_and\_play\_serial\_device\_connected\_to\_an\_rs\_232\_po'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b6a851e2-0fcf-4d64-80ac-51928b823077
 keywords: ["Plug and Play serial devices WDK", "serial devices WDK , Plug and Play", "RS-232 ports WDK serial devices"]
 ---

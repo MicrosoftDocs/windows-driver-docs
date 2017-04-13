@@ -2,12 +2,6 @@
 title: Print Ticket Organization
 author: windows-driver-content
 description: Print Ticket Organization
-MS-HAID:
-- 'drvarch\_250123e2-3e05-493b-af61-af61bf87540d.xml'
-- 'print.print\_ticket\_organization'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e30eb53-2f62-469d-a27c-dc256df37126
 keywords: ["Print Tickets WDK , organization", "hierarchy WDK Print Ticket"]
 ---

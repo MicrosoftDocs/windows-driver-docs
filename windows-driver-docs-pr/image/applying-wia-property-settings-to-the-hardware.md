@@ -2,12 +2,6 @@
 title: Applying WIA Property Settings to the Hardware
 author: windows-driver-content
 description: Applying WIA Property Settings to the Hardware
-MS-HAID:
-- 'WIA\_drv\_basic\_d3ed9bdd-5613-4e4a-a6f0-fbf6518381b4.xml'
-- 'image.applying\_wia\_property\_settings\_to\_the\_hardware'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: adb85f77-1814-427b-8b75-0bfce4c8ca06
 ---
 

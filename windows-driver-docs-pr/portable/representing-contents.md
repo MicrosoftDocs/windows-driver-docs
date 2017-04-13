@@ -1,7 +1,5 @@
 ---
 Description: Representing Contents
-MS-HAID: wpddk.representing\_contents
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Representing Contents
 ---
 

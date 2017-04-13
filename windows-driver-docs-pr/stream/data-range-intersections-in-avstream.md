@@ -2,12 +2,6 @@
 title: Data Range Intersections in AVStream
 author: windows-driver-content
 description: Data Range Intersections in AVStream
-MS-HAID:
-- 'avsover\_6dc5ac10-3b2e-46b8-9c2f-6db654b9e903.xml'
-- 'stream.data\_range\_intersections\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44281574-8258-47a3-857d-fd44bb949f17
 keywords: ["data intersections WDK AVStream", "intersections WDK AVStream", "data formats WDK AVStream", "data ranges WDK AVStream", "ranges WDK AVStream", "formats WDK AVStream", "pin data ranges WDK"]
 ---

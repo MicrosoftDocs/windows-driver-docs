@@ -2,12 +2,6 @@
 title: Font Cartridges
 author: windows-driver-content
 description: Font Cartridges
-MS-HAID:
-- 'nt5gpd\_df8f2303-1fa2-496a-9d96-094f4e43a23a.xml'
-- 'print.font\_cartridges'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bc92e2eb-ea75-4f0f-85b7-1433d57401f3
 keywords: ["printer font descriptions WDK Unidrv , cartridges", "font cartridges WDK Unidrv", "cartridge fonts WDK Unidrv"]
 ---

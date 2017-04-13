@@ -1,9 +1,5 @@
 ---
 Description: A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints.
-MS-HAID: buses.usb\_concepts\_for\_all\_developers
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Concepts for all USB developers
 ---
 

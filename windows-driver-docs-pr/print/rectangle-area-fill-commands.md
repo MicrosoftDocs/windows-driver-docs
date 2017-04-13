@@ -2,12 +2,6 @@
 title: Rectangle Area Fill Commands
 author: windows-driver-content
 description: Rectangle Area Fill Commands
-MS-HAID:
-- 'nt5gpd\_12ae54b2-382b-4f69-86c7-c18f45ac4be1.xml'
-- 'print.rectangle\_area\_fill\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b9401126-4173-4187-960a-dc5ce69d3522
 keywords: ["rectangular area fill commands WDK Unidrv", "filling rectangular areas WDK Unidrv"]
 ---

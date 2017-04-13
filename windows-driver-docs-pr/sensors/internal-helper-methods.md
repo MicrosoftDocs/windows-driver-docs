@@ -1,9 +1,6 @@
 ---
 title: Driver update methods
 author: windows-driver-content
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F809BCE4-9176-4503-9EC7-B80AC229ABB5
 description: 
 ---

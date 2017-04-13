@@ -2,12 +2,6 @@
 title: WIA Camera Tree
 author: windows-driver-content
 description: WIA Camera Tree
-MS-HAID:
-- 'WIA\_tree\_c88425ce-d647-413f-a5e9-4c34b7b726f1.xml'
-- 'image.wia\_camera\_tree'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c932c91-b389-4b4c-b686-75ca6bf3de6a
 ---
 

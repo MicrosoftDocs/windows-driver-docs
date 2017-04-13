@@ -1,9 +1,6 @@
 ---
 title: Using metadata to configure mobile broadband experiences
 description: Using metadata to configure mobile broadband experiences
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d3ceab6e-550f-4852-8ee0-4a261c238434
 ---
 

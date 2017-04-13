@@ -2,12 +2,6 @@
 title: Plotter Driver Minidrivers
 author: windows-driver-content
 description: Plotter Driver Minidrivers
-MS-HAID:
-- 'plotter\_c91a6304-4803-40d5-b29f-88b8930c19e7.xml'
-- 'print.plotter\_driver\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f7223a0a-df02-4a4f-a3d6-7910aed926eb
 keywords: ["Plotter Driver WDK print , minidrivers", "MSPlot WDK print , minidrivers", "minidrivers WDK MSPlot", "PCD files WDK MSPlot", ".pcd files"]
 ---

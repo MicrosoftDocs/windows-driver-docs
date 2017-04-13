@@ -2,12 +2,6 @@
 title: Functional Areas
 author: windows-driver-content
 description: Functional Areas
-MS-HAID:
-- 'whea\_1f860baf-54eb-4557-b05a-7a85d5c5644a.xml'
-- 'whea.functional\_areas'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0631c59e-ad30-4684-b254-c1254914fc94
 keywords: ["platform-specific hardware error driver plug-ins WDK WHEA , functional areas", "PSHED plug-ins WDK WHEA , functional areas"]
 ---

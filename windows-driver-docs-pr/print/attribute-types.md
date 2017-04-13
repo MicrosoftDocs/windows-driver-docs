@@ -2,12 +2,6 @@
 title: Attribute Types
 author: windows-driver-content
 description: Attribute Types
-MS-HAID:
-- 'nt5gpd\_8e314552-d022-433c-8ddf-a1134b936d2b.xml'
-- 'print.attribute\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6ca5d3d0-fec1-49b6-af5f-ead57371e0d0
 keywords: ["printer attributes WDK Unidrv , types"]
 ---

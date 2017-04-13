@@ -2,12 +2,6 @@
 title: LDAP Bind
 author: windows-driver-content
 description: LDAP Bind
-MS-HAID:
-- 'dsm\_des\_tut\_08305556-e176-4a2b-8f04-124f6cda7c0d.xml'
-- 'image.ldap\_bind'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c45a3273-d571-4e56-987e-929fb12159a6
 ---
 

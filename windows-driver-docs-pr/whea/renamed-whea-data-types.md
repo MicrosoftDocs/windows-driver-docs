@@ -2,12 +2,6 @@
 title: Renamed WHEA Data Types
 author: windows-driver-content
 description: Renamed WHEA Data Types
-MS-HAID:
-- 'whea\_ed3e276f-5027-4086-8e85-4ef38cdfb0a4.xml'
-- 'whea.renamed\_whea\_data\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e2c511a2-fd6e-4c7a-a47f-eb9b9f917bb4
 keywords: ["Windows Hardware Error Architecture WDK , renamed data types", "WHEA WDK , renamed data types", "hardware errors WDK WHEA , renamed data types", "renamed data types WDK WHEA"]
 ---

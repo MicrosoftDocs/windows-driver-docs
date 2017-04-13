@@ -2,12 +2,6 @@
 title: GDL Keywords
 author: windows-driver-content
 description: GDL Keywords
-MS-HAID:
-- 'gplfiles\_82a5b0d6-b0cc-4500-ac71-34e2dc6dff74.xml'
-- 'print.gdl\_keywords'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3baf187b-b108-49f7-8f8a-bce93eba15c7
 keywords: ["GDL WDK , keywords", "keywords WDK GDL , about GDL keywords", "keywords WDK GDL , characters"]
 ---

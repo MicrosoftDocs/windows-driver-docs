@@ -1,11 +1,5 @@
 ---
 Description: This section describes a USB Request Block (URB) and provides information about how a USB client driver can use Windows Driver Model (WDM) routines to allocate, build, and submit URBs to the USB driver stack.
-MS-HAID:
-- 'usbvendor\_a54373f7-864d-460e-a193-8e9d7ad9dd08.xml'
-- 'buses.communicating\_with\_a\_usb\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: USB Request Blocks (URBs)
 ---
 

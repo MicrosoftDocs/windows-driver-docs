@@ -2,12 +2,6 @@
 title: Option Selection Command
 author: windows-driver-content
 description: Option Selection Command
-MS-HAID:
-- 'nt5gpd\_01977bab-7dcc-499f-a8d0-b23c72e20cd5.xml'
-- 'print.option\_selection\_command'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f47d265-e12f-47e7-8a51-380a2fb4aaaa
 keywords: ["printer commands WDK Unidrv , option selections", "option selection commands WDK Unidrv"]
 ---

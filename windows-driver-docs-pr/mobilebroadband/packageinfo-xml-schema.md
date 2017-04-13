@@ -1,9 +1,6 @@
 ---
 title: PackageInfo XML schema
 description: PackageInfo XML schema
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5873604e-564e-4c8e-bfc7-526aac5767fa
 ---
 

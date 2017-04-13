@@ -2,12 +2,6 @@
 title: USB Video Class Driver Overview
 author: windows-driver-content
 description: USB Video Class Driver Overview
-MS-HAID:
-- 'uvcds\_28967501-AFAC-40AB-9D0A-DAD36E1B2F87.xml'
-- 'stream.usb\_video\_class\_driver\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 890d448e-bfee-462d-8cce-a2cca42f2f6d
 keywords: ["USB Video Class drivers WDK AVStream , about USB Video Class drivers", "Video Class drivers WDK USB , about USB Video Class drivers", "UVC drivers WDK AVStream , about USB Video Class drivers", "user-mode clients WDK USB Video Class"]
 ---

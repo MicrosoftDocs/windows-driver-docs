@@ -2,9 +2,6 @@
 title: Power management
 author: windows-driver-content
 description: This section describes power management for devices that support HID over the I²C.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00FE1248-683F-48FE-8422-E51E88224955
 ---
 

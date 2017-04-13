@@ -2,12 +2,6 @@
 title: TV Audio Change Event
 author: windows-driver-content
 description: TV Audio Change Event
-MS-HAID:
-- 'vidcapds\_b9cb0526-cf1f-4983-b4a9-eb0e7467b086.xml'
-- 'stream.tv\_audio\_change\_event'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 85ba81f0-9443-42c7-9886-15b6b702f287
 keywords: ["TV audio changed event WDK video capture", "events WDK video capture", "KSEVENTSETID_VIDCAP_TVAUDIO", "audio changed event WDK video capture"]
 ---

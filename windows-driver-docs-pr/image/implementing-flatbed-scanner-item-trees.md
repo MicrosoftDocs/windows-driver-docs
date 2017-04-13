@@ -2,12 +2,6 @@
 title: Implementing Flatbed Scanner Item Trees
 author: windows-driver-content
 description: Implementing Flatbed Scanner Item Trees
-MS-HAID:
-- 'WIA\_scanner\_tree\_c2d9b7fd-825e-4d17-9435-d29179c65b16.xml'
-- 'image.implementing\_flatbed\_scanner\_item\_trees'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 43c4e6d6-129b-4633-92c1-6efd1e200b9b
 ---
 

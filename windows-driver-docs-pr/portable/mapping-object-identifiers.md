@@ -1,7 +1,5 @@
 ---
 Description: Mapping Object Identifiers
-MS-HAID: wpddk.mapping\_object\_identifiers
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Mapping Object Identifiers
 ---
 

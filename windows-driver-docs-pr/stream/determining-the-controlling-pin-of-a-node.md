@@ -2,12 +2,6 @@
 title: Determining the Controlling Pin of a Node
 author: windows-driver-content
 description: Determining the Controlling Pin of a Node
-MS-HAID:
-- 'bdadg\_7b99ef43-2b33-43f5-8ea6-006029145c23.xml'
-- 'stream.determining\_the\_controlling\_pin\_of\_a\_node'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: be1236e2-c710-4833-863e-54e826e53f92
 keywords: ["method sets WDK BDA , node controlling pin", "property sets WDK BDA , node controlling pin", "controlling pin WDK BDA", "node controlling pin WDK BDA", "arrays WDK BDA", "pin controller WDK BDA"]
 ---

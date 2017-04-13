@@ -1,9 +1,5 @@
 ---
 Description: PurposeThis section describes Universal Serial Bus (USB) support in the Windows operating system, so that you can develop USB device drivers that are interoperable with Windows.
-MS-HAID: buses.usb\_driver\_development\_guide
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Developing Windows client drivers for USB devices
 ---
 

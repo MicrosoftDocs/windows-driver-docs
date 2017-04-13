@@ -1,7 +1,5 @@
 ---
 Description: Defining the Service Objects
-MS-HAID: wpddk.the\_wpdservicesampledriver\_object\_definitions
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Defining the Service Objects
 ---
 

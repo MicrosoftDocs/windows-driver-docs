@@ -1,9 +1,5 @@
 ---
 Description: The goal of device testing is to test device usage against various hub scenarios and systems power states.
-MS-HAID: buses.tools\_in\_the\_package
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: USB device testing with MUTT devices
 ---
 

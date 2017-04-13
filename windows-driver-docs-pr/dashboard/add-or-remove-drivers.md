@@ -1,12 +1,6 @@
 ---
 title: Add or Remove Drivers
 description: Add or Remove Drivers
-MS-HAID:
-- 'p\_dashboard.add\_or\_remove\_drivers'
-- 'hw\_dashboard.add\_or\_remove\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d55c98d9-4536-4004-8bee-e95f665cb4ce
 ---
 

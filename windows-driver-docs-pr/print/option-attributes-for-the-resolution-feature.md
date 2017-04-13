@@ -2,12 +2,6 @@
 title: Option Attributes for the Resolution Feature
 author: windows-driver-content
 description: Option Attributes for the Resolution Feature
-MS-HAID:
-- 'nt5gpd\_b424e7b3-3f8b-43fa-909e-c1738ab4c511.xml'
-- 'print.option\_attributes\_for\_the\_resolution\_feature'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f04cd119-38c7-465c-b4fd-d657aa5bfacd
 keywords: ["Resolution Feature"]
 ---

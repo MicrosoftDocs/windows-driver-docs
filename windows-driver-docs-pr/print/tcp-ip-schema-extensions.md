@@ -2,12 +2,6 @@
 title: TCP/IP Schema Extensions
 author: windows-driver-content
 description: TCP/IP Schema Extensions
-MS-HAID:
-- 'autocfg\_23a5b159-203a-44c7-98dd-d6c69bf51dda.xml'
-- 'print.tcp\_ip\_schema\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fe0f12ee-3e91-40a2-b4fa-f0d4a62460a3
 keywords: ["in-box autoconfiguration support WDK printer , TCP/IP schema extensions"]
 ---

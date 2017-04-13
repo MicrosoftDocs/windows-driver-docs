@@ -1,9 +1,6 @@
 ---
 title: Know when network connectivity changes
 description: Know when network connectivity changes
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2937ba62-16ad-4a81-92e8-62a8bb40d608
 ---
 

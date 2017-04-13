@@ -2,12 +2,6 @@
 title: Changing BDA Filter Properties
 author: windows-driver-content
 description: Changing BDA Filter Properties
-MS-HAID:
-- 'bdadg\_e37dc510-ce33-4f84-a6e7-262c4d2ad902.xml'
-- 'stream.changing\_bda\_filter\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1833864a-5759-437c-ba60-0b38602d9e41
 keywords: ["property sets WDK BDA , filter property changes", "filter property changes WDK BDA", "method sets WDK BDA , filter property changes"]
 ---

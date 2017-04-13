@@ -2,12 +2,6 @@
 title: Injecting a Hardware Error
 author: windows-driver-content
 description: Injecting a Hardware Error
-MS-HAID:
-- 'whea\_dbc7cc61-4f9c-4380-b394-997ad0d9e219.xml'
-- 'whea.injecting\_a\_hardware\_error'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c27c79d9-c0b2-433b-b3f4-7674c361f1aa
 keywords: ["injecting hardware errors WDK WHEA", "errors WDK WHEA , injecting, WHEA WDK , injecting", "Windows Hardware Error Architecture WDK , injecting"]
 ---

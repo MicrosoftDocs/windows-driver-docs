@@ -2,12 +2,6 @@
 title: Symbolic Names
 author: windows-driver-content
 description: Symbolic Names
-MS-HAID:
-- 'nt5gpd\_f2d92a9c-1baa-4efb-a30e-8dfe5795ef66.xml'
-- 'print.symbolic\_names'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4bd07f73-9fe1-4a81-adab-0e382f808a88
 keywords: ["GPD file entries WDK Unidrv , symbolic names", "symbolic names WDK GPD files", "identifiers WDK GPD files"]
 ---

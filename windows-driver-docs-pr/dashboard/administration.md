@@ -1,9 +1,6 @@
 ---
 title: Administration
 description: Administration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3B3AFF6D-7FBB-41AF-80B1-68CA240DE2B0
 ---
 

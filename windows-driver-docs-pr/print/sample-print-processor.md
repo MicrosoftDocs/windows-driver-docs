@@ -2,12 +2,6 @@
 title: Sample Print Processor
 author: windows-driver-content
 description: Sample Print Processor
-MS-HAID:
-- 'provider\_c6a6c796-e409-41fd-b5f1-97079ec4eabe.xml'
-- 'print.sample\_print\_processor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 42ab44f2-dba4-4b52-870a-2cb42fc2d0a9
 keywords: ["print processors WDK , samples"]
 ---

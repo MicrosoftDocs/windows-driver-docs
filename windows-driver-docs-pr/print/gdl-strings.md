@@ -2,12 +2,6 @@
 title: GDL Strings
 author: windows-driver-content
 description: GDL Strings
-MS-HAID:
-- 'gplfiles\_ebbb4152-ca90-462d-910f-496d27b81671.xml'
-- 'print.gdl\_strings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b51b44c5-f319-4f8d-a30a-342e647cdfe6
 keywords: ["constructs WDK GDL , strings", "GDL WDK , strings", "strings WDK GDL"]
 ---

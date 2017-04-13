@@ -1,7 +1,5 @@
 ---
 Description: Functional-Object Retrieval
-MS-HAID: wpddk.functional\_object\_retrieval
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Functional-Object Retrieval
 ---
 

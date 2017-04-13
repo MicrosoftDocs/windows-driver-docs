@@ -1,7 +1,5 @@
 ---
 Description: Retrieving a list of Supported Resources
-MS-HAID: wpddk.retrieving\_a\_list\_of\_supported\_resources
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Retrieving a list of Supported Resources
 ---
 

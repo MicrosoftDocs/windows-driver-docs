@@ -2,12 +2,6 @@
 title: About the Sensor Class Extension
 author: windows-driver-content
 description: About the Sensor Class Extension
-MS-HAID:
-- 'Sensor\_DG\_Overview\_ac0d731d-47e8-41a8-9cdf-631be87b3c7b.xml'
-- 'sensors.about\_the\_sensor\_class\_extension'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4b55e5fe-2947-4511-ba2d-479d5fd83ebe
 ---
 

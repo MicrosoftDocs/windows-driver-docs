@@ -2,12 +2,6 @@
 title: WS-DSD Operations
 author: windows-driver-content
 description: WS-DSD Operations
-MS-HAID:
-- 'dsm\_des\_theory\_2c8cd1e1-a7f5-4d0f-b054-be836a32bfd4.xml'
-- 'image.ws\_dsd\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aaf8d20c-99e3-4046-89b0-af5251b26577
 ---
 

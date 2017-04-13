@@ -2,12 +2,6 @@
 title: Using Customized Compression
 author: windows-driver-content
 description: Using Customized Compression
-MS-HAID:
-- 'nt5gpd\_49e5194a-829f-4b56-9531-086390366f44.xml'
-- 'print.using\_customized\_compression'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 959c0015-4b31-4790-8d2b-26d6acc19ac7
 keywords: ["raster data compression WDK Unidrv", "compressing raster data WDK Unidrv", "customized raster data compression WDK Unidrv"]
 ---

@@ -2,12 +2,6 @@
 title: AVStream Descriptors
 author: windows-driver-content
 description: AVStream Descriptors
-MS-HAID:
-- 'avsover\_53ed9161-79cf-499c-b62e-8cc6e50d7570.xml'
-- 'stream.avstream\_descriptors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fd436406-311b-4537-994d-fbd8d92d4673
 keywords: ["AVStream descriptors WDK", "descriptors WDK AVStream", "nested descriptor structures WDK AVStream", "AVStream object hierarchy WDK", "objects WDK AVStream", "hierarchy WDK AVStream", "static descriptor tables WDK AVStream", "KSFILTER_DESCRIPTOR", "device descriptors WDK AVStream", "filter factories WDK AVStream", "filter types WDK AVStream", "pin types WDK AVStream"]
 ---

@@ -2,12 +2,6 @@
 title: Using vector types with sensors
 author: windows-driver-content
 description: Using vector types with sensors
-MS-HAID:
-- 'Sensor\_DG\_DevelopmentBasics\_3601f457-c0f0-45af-87fe-0ecdd2049cfd.xml'
-- 'sensors.using\_vector\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cadc2cd3-10aa-4a4a-926f-edc01b046f27
 ---
 

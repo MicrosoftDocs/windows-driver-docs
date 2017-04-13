@@ -1,9 +1,5 @@
 ---
 Description: An app that communicates with a USB device usually sends several control transfers requests.
-MS-HAID: buses.how\_to\_send\_a\_usb\_control\_transfer\_\_windows\_store\_app\_
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: How to send a USB control transfer (Windows Store app)
 ---
 

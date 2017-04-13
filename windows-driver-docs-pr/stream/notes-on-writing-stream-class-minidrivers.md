@@ -2,12 +2,6 @@
 title: Notes on Writing Stream Class Minidrivers
 author: windows-driver-content
 description: Notes on Writing Stream Class Minidrivers
-MS-HAID:
-- 'strmini-design\_a167c9c4-654e-4bd1-b85d-0f5c8df4e4b9.xml'
-- 'stream.notes\_on\_writing\_stream\_class\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dc966b47-4ffe-4122-847d-118a465bf5f5
 keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , writing", "streaming minidrivers WDK Windows 2000 Kernel , writing", "minidrivers WDK Windows 2000 Kernel Streaming , writing"]
 ---

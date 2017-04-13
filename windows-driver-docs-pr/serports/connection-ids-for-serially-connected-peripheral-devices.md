@@ -2,9 +2,6 @@
 title: Connection IDs for Serially Connected Peripheral Devices
 author: windows-driver-content
 description: If you write a driver for a peripheral device that is connected to a serial port managed by SerCx2, the list of hardware resources that the driver receives includes a connection ID that encapsulates the device connection information from the platform firmware.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9A688552-DFAF-48A1-935D-70C3B13F30EC
 ---
 

@@ -2,12 +2,6 @@
 title: UVC Video Capture Selector Properties
 author: windows-driver-content
 description: UVC Video Capture Selector Properties
-MS-HAID:
-- 'vidcapds\_2f82ca88-6db6-4c93-ab0b-608785a464b2.xml'
-- 'stream.uvc\_video\_capture\_selector\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f3af81a1-5c9b-4af6-a931-5146ef187b36
 keywords: ["UVC video capture selector properties WDK video capture", "selector properties WDK video capture", "PROPSETID_VIDCAP_SELECTOR"]
 ---

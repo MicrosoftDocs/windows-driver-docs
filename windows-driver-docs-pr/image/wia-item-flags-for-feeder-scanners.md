@@ -2,12 +2,6 @@
 title: WIA Item Flags for Feeder Scanners
 author: windows-driver-content
 description: WIA Item Flags for Feeder Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_0637d567-0130-4fca-b084-a317667d4ddd.xml'
-- 'image.wia\_item\_flags\_for\_feeder\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b1256646-be6c-436c-86da-9dff43ef9867
 ---
 

@@ -2,12 +2,6 @@
 title: Installing a Print Processor
 author: windows-driver-content
 description: Installing a Print Processor
-MS-HAID:
-- 'provider\_76db69e3-3b07-49f9-af34-8c002c0bb696.xml'
-- 'print.installing\_a\_print\_processor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4e9e1148-16a3-42f6-a262-1eef014636d0
 keywords: ["print processors WDK , installing", "installing print processors WDK", "print queues WDK , print processor installations", "associating print processor with print queue WDK", "print processors WDK , associating with print queue", "print queues WDK"]
 ---

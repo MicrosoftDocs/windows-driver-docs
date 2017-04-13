@@ -1,11 +1,5 @@
 ---
 Description: This topic describes the routines that a third-party driver can call to replace the Microsoft-provided RPM driver.
-MS-HAID:
-- 'usbinterKG\_cd35809f-5086-4d5b-b43a-a07f8cc15d4c.xml'
-- 'buses.usb\_device\_redirection2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: USB Device Redirection
 ---
 

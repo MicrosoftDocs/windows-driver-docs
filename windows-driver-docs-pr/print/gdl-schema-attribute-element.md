@@ -2,12 +2,6 @@
 title: GDL Schema Attribute Element
 author: windows-driver-content
 description: GDL Schema Attribute Element
-MS-HAID:
-- 'gplfiles\_ecaf6225-8b88-468f-b06d-35693a2a0e43.xml'
-- 'print.gdl\_schema\_attribute\_element'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b46c0c6c-28af-4121-9182-65dc23b0ce7d
 keywords: ["GDL WDK , elements", "GDL WDK , schemas", "attribute element WDK GDL", "GDL_ATTRIBUTE WDK GDL", "GDL_UntypedAtt WDK GDL", "untyped attribute WDK GDL", "snapshots WDK GDL , structure"]
 ---

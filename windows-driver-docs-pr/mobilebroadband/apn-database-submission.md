@@ -1,9 +1,6 @@
 ---
 title: COSA/APN database submission
 description: COSA/APN database submission
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a6a11b36-2848-45d0-93e5-1a5fedc0cfc9
 ---
 

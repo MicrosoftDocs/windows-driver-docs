@@ -2,12 +2,6 @@
 title: RAW Format Data Transfer
 author: windows-driver-content
 description: RAW Format Data Transfer
-MS-HAID:
-- 'WIA\_db\_trans\_0c70f649-1620-4f62-9580-7789b59979bd.xml'
-- 'image.raw\_format\_data\_transfer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8541b5ce-fd55-47b0-9687-162fb2b4e6aa
 ---
 

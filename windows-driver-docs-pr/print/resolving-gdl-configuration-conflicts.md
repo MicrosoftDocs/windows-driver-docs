@@ -2,12 +2,6 @@
 title: Resolving GDL Configuration Conflicts
 author: windows-driver-content
 description: Resolving GDL Configuration Conflicts
-MS-HAID:
-- 'gplfiles\_0dca4fa2-e574-4f1c-98b1-a752e00957c9.xml'
-- 'print.resolving\_gdl\_configuration\_conflicts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 02a2da63-0b7f-4aa9-b3c3-72784f409d94
 keywords: ["GDL WDK , configurations", "configurations WDK GDL , invalid configurations", "configurations WDK GDL , conflicts", "invalid GDL configurations WDK", "configurations WDK GDL , resolving conflicts", "resolving GDL configuration conflicts WDK GDL", "ConflictPriority directive WDK GDL", "FeatureType directive WDK GDL"]
 ---

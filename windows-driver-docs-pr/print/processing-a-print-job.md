@@ -2,12 +2,6 @@
 title: Processing a Print Job
 author: windows-driver-content
 description: Processing a Print Job
-MS-HAID:
-- 'provider\_b941f8a9-ddb3-47ca-afa2-d06c6de2ce74.xml'
-- 'print.processing\_a\_print\_job'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c5e291d9-069c-4877-a167-862ba5794368
 keywords: ["print processors WDK , print job processing", "print jobs WDK , processing", "sending print jobs", "jobs WDK print , processing", "EMF record playback WDK print processor", "N-up printing WDK", "PrintDocumentOnPrintProcessor", "output formats WDK print processor", "input formats WDK print processor", "jobs WDK print", "print jobs WDK"]
 ---

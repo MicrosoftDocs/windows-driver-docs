@@ -1,12 +1,6 @@
 ---
 title: Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request
 description: Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request
-MS-HAID:
-- 'pamch1\_a0d06d64-03b6-4376-8865-ea042b631dca.xml'
-- 'PCMCIA.access\_pcmcia\_attribute\_memory\_by\_using\_a\_plug\_and\_play\_i\_o\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee2f9d9f-9e2b-4ecf-ba6d-4baad3653301
 keywords: ["attribute memory WDK PCMCIA bus , Plug and Play I/O requests", "Plug and Play WDK PCMCIA bus", "PnP WDK PCMCIA bus"]
 ---

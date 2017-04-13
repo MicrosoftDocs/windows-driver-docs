@@ -2,12 +2,6 @@
 title: List Template Data Type Issues
 author: windows-driver-content
 description: List Template Data Type Issues
-MS-HAID:
-- 'gplfiles\_99e175f5-41f3-4f11-8a66-84154d236f80.xml'
-- 'print.list\_template\_data\_type\_issues'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee5ef9f4-5001-4c81-ad06-07c9c588928e
 keywords: ["data types WDK GDL , problems with template data types", "LIST data type WDK GDL"]
 ---

@@ -2,12 +2,6 @@
 title: Autoconfiguration Details
 author: windows-driver-content
 description: Autoconfiguration Details
-MS-HAID:
-- 'autocfg\_22a9dadc-2924-4138-942d-7c9d8f930521.xml'
-- 'print.autoconfiguration\_details'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ba596ce3-724d-45c4-85ee-2486a31a0c01
 keywords: ["autoconfiguration WDK printer , about printer autoconfiguration", "printer autoconfiguration WDK printer , about printer autoconfiguration"]
 ---

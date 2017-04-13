@@ -2,12 +2,6 @@
 title: User Interface Extension Registry Entries
 author: windows-driver-content
 description: User Interface Extension Registry Entries
-MS-HAID:
-- 'WIA\_drv\_cus\_f15095c2-cfca-4489-b410-a83b19c88c9a.xml'
-- 'image.user\_interface\_extension\_registry\_entries'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1ddf12a1-50e9-4f6e-9394-5bb1afb67798
 ---
 

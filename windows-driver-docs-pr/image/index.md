@@ -2,12 +2,6 @@
 title: Imaging Devices Design Guide
 author: windows-driver-content
 description: Imaging Devices Design Guide
-MS-HAID:
-- 'still\_dg\_b0e2fc70-998f-44a2-8d20-ecde7c4b418e.xml'
-- 'image.imaging\_devices\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dfdeeec8-bd06-452a-9189-87b20ce27699
 ---
 

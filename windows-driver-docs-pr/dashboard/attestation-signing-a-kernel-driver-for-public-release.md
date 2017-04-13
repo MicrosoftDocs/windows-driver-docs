@@ -1,9 +1,6 @@
 ---
 title: Attestation signing a kernel driver for public release
 description: This topic describes how to sign a driver using attestation signing.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A292B15D-37FD-407E-998C-728D9423E712
 ---
 

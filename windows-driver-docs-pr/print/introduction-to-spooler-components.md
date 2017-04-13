@@ -2,12 +2,6 @@
 title: Introduction to Spooler Components
 author: windows-driver-content
 description: Introduction to Spooler Components
-MS-HAID:
-- 'splarch\_6aecc065-5eb8-4145-9081-c7418a466710.xml'
-- 'print.introduction\_to\_spooler\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4eb6e84a-f75f-4ec2-af4f-0007678d120b
 keywords: ["spooler component diagram WDK print", "print spooler component diagram WDK"]
 ---

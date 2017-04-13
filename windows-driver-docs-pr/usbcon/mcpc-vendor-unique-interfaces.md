@@ -1,11 +1,5 @@
 ---
 Description: MCPC Vendor-Unique Interfaces
-MS-HAID:
-- 'usbsystem\_5955e989-ff71-411a-a57a-b18a7426b3a4.xml'
-- 'buses.mcpc\_vendor\_unique\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: MCPC Vendor-Unique Interfaces
 ---
 

@@ -1,9 +1,5 @@
 ---
 Description: This topic describes best practices for a client driver for allocating, building, and sending an URB to the USB driver stack included with Windows 8.
-MS-HAID: buses.usb\_client\_driver\_contract\_in\_windows\_8
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Best Practices: Using URBs
 ---
 

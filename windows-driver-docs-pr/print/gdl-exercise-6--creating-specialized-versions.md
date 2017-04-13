@@ -2,12 +2,6 @@
 title: GDL Exercise 6 Creating Specialized Versions
 author: windows-driver-content
 description: GDL Exercise 6 Creating Specialized Versions
-MS-HAID:
-- 'gplfiles\_77892853-660f-4f73-a7a3-d275c63b160b.xml'
-- 'print.gdl\_exercise\_6\_\_creating\_specialized\_versions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d9e60958-58b6-4ffe-a955-bc1b13b6a649
 keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "constructs WDK GDL , creating specialized versions"]
 ---

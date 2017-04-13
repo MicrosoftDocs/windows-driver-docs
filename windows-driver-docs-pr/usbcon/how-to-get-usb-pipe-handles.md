@@ -1,9 +1,5 @@
 ---
 Description: This topic provides an overview of USB pipes and describes the steps required by a USB client driver to obtain pipe handles from the USB driver stack.
-MS-HAID: buses.how\_to\_get\_usb\_pipe\_handles
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: How to enumerate USB pipes
 ---
 

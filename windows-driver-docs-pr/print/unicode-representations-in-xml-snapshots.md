@@ -2,12 +2,6 @@
 title: Unicode Representations in XML Snapshots
 author: windows-driver-content
 description: Unicode Representations in XML Snapshots
-MS-HAID:
-- 'gplfiles\_47ef5a57-52e3-458d-ac9b-4bc8cdbf1b01.xml'
-- 'print.unicode\_representations\_in\_xml\_snapshots'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6efb7b2d-ab4d-4caf-a7e1-ed3bfab14453
 keywords: ["snapshots WDK GDL , Unicode representations", "Unicode representations WDK GDL", "parser WDK GDL , Unicod representations"]
 ---

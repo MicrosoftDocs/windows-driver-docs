@@ -2,12 +2,6 @@
 title: Notification Data Object
 author: windows-driver-content
 description: Notification Data Object
-MS-HAID:
-- 'splarch\_5012c450-b99e-403c-828c-96df53740ed6.xml'
-- 'print.notification\_data\_object'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6ba8840d-a693-485c-81da-81205e511120
 keywords: ["spooler notification WDK print , data object", "print spooler notification WDK , data object", "notification data object WDK print spooler", "IPrintAsyncNotifyDataObject", "data object WDK spooler notification"]
 ---

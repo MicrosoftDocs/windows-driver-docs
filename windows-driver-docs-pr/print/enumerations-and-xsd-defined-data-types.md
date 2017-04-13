@@ -2,12 +2,6 @@
 title: Enumerations and XSD-Defined Data Types
 author: windows-driver-content
 description: Enumerations and XSD-Defined Data Types
-MS-HAID:
-- 'gplfiles\_5cd4218a-2216-407b-ab4b-d3e1551160aa.xml'
-- 'print.enumerations\_and\_xsd\_defined\_data\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1e5f41b2-4e47-4c9f-a702-9455e69dca75
 keywords: ["snapshots WDK GDL , structure", "GDL WDK , enumerations", "enumerations WDK GDL", "data types WDK GDL", "GDL WDK , data types"]
 ---

@@ -2,12 +2,6 @@
 title: Native XML Template Data Types
 author: windows-driver-content
 description: Native XML Template Data Types
-MS-HAID:
-- 'gplfiles\_b5376051-671b-4dcd-8a73-e4966e469acd.xml'
-- 'print.native\_xml\_template\_data\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a34dec46-de5d-4f12-8863-2fe6b6e5eed4
 keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "native data type WDK GDL", "XML_TYPE WDK GDL", "ArrayLabel directive WDK GDL", "XMLDataType directive WDK GDL"]
 ---

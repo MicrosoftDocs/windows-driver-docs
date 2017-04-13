@@ -2,12 +2,6 @@
 title: DirectInput Control Panel Essentials
 author: windows-driver-content
 description: DirectInput Control Panel Essentials
-MS-HAID:
-- 'di\_840ba001-1c40-449b-9946-31e8356e0106.xml'
-- 'hid.directinput\_control\_panel\_essentials'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 37d904e7-57a7-4033-9fef-4d47d6b14772
 ---
 

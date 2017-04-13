@@ -2,12 +2,6 @@
 title: Scanner Storage Architecture
 author: windows-driver-content
 description: Scanner Storage Architecture
-MS-HAID:
-- 'WIA\_scanner\_tree\_70d7f80e-d685-4964-bf2f-c82433b60af8.xml'
-- 'image.scanner\_storage\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 90b2367f-c611-47c6-bd60-4125bd7ca709
 ---
 

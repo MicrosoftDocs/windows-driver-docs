@@ -2,12 +2,6 @@
 title: Returning Printer-Specific Information
 author: windows-driver-content
 description: Returning Printer-Specific Information
-MS-HAID:
-- 'drvarch\_be728c0a-c769-4cdf-b7aa-bf8628773a1e.xml'
-- 'print.returning\_printer\_specific\_information'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7a47b395-4b01-437f-bed7-967b31b5841e
 keywords: ["printer graphics DLL WDK , return printer-specific information", "graphics DLL WDK printer , return printer-specific information", "returning printer-specific information WDK printer graphics"]
 ---

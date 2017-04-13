@@ -2,12 +2,6 @@
 title: Web Services
 author: windows-driver-content
 description: Web Services
-MS-HAID:
-- 'dsm\_des\_req\_231d9a6b-17f7-4df7-9663-18fcacf0c032.xml'
-- 'image.web\_services'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5cc44582-c4d1-4140-9bd4-8fb81f452261
 ---
 

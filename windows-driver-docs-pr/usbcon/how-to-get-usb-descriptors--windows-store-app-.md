@@ -1,9 +1,5 @@
 ---
 Description: One of the main tasks of interacting with a USB device is to get information about it.
-MS-HAID: buses.how\_to\_get\_usb\_descriptors\_\_windows\_store\_app\_
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: How to get USB descriptors (Windows Store app)
 ---
 

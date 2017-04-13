@@ -2,12 +2,6 @@
 title: WIA-TWAIN Locking
 author: windows-driver-content
 description: WIA-TWAIN Locking
-MS-HAID:
-- 'WIA\_drv\_scan\_8723baf8-525f-4f8c-aae2-48a257e7fecd.xml'
-- 'image.wia\_twain\_locking'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf2dc7f5-f3a0-4c51-86e1-854d0704074a
 ---
 

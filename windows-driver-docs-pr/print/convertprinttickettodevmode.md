@@ -2,12 +2,6 @@
 title: ConvertPrintTicketToDevMode
 author: windows-driver-content
 description: ConvertPrintTicketToDevMode
-MS-HAID:
-- 'drvarch\_41a9430f-d630-4158-9cb9-97afc671b868.xml'
-- 'print.convertprinttickettodevmode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dd77d79e-e274-47c3-9bfd-95054bc9f23d
 keywords: ["ConvertPrintTicketToDevMode"]
 ---

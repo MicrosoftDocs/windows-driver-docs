@@ -2,9 +2,6 @@
 title: UEFI requirements for USB flashing support
 author: windows-driver-content
 description: Microsoft provides several USB-based flashing solutions for use in engineering and manufacturing environments. In order for a device to be used with these tools, the UEFI environment on the device must meet the requirements listed in this topic.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8979173C-DCBC-4544-9978-BB069FF35914
 ---
 

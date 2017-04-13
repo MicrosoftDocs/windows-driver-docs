@@ -1,7 +1,5 @@
 ---
 Description: WPD Drivers Overview
-MS-HAID: wpddk.wpd\_drivers\_overview
-MSHAttr: PreferredLib:/library/windows/hardware
 title: WPD Drivers Overview
 ---
 

@@ -2,12 +2,6 @@
 title: Transfer Modes
 author: windows-driver-content
 description: Transfer Modes
-MS-HAID:
-- 'stillimg\_ab37d701-a6ff-490c-8f24-c45926bdb9e0.xml'
-- 'image.transfer\_modes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 79af0d8f-dd04-4ff4-a047-f415562a16a5
 ---
 

@@ -2,12 +2,6 @@
 title: Adding VRAM Capture Support to Existing AVStream Drivers
 author: windows-driver-content
 description: Adding VRAM Capture Support to Existing AVStream Drivers
-MS-HAID:
-- 'gpucap\_1ddd738d-775b-4b4a-bea3-a3c1429eee06.xml'
-- 'stream.adding\_vram\_capture\_support\_to\_existing\_avstream\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10736533-3873-4f1d-91c5-d2e55163daaa
 keywords: ["VRAM capture WDK AVStream , existing driver support"]
 ---

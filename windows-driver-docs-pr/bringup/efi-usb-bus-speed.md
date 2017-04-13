@@ -2,9 +2,6 @@
 title: EFI\_USB\_BUS\_SPEED
 author: windows-driver-content
 description: EFI\_USB\_BUS\_SPEED
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2888cff6-db12-47ea-866f-de218e2b08e5
 ---
 

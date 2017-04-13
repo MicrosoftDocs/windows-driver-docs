@@ -1,7 +1,5 @@
 ---
 Description: Audio Devices Design Guide
-MS-HAID: audio.audio\_devices\_design\_guide
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Audio Devices Design Guide
 ---
 

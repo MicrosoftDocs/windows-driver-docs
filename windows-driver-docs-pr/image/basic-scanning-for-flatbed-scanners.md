@@ -2,12 +2,6 @@
 title: Basic Scanning for Flatbed Scanners
 author: windows-driver-content
 description: Basic Scanning for Flatbed Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_f7e84a79-7006-4e51-a13e-939d53f67750.xml'
-- 'image.basic\_scanning\_for\_flatbed\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a1100a8d-752a-4109-b1dc-cf7c4bf5a100
 ---
 

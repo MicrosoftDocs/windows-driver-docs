@@ -2,12 +2,6 @@
 title: Which Printer Details Page is Displayed
 author: windows-driver-content
 description: Which Printer Details Page is Displayed
-MS-HAID:
-- 'inetpri\_0c79fea0-cd1d-41af-90ae-e5da4f820bfe.xml'
-- 'print.which\_printer\_details\_page\_is\_displayed\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f7824350-a6de-45ca-8d72-859edf77e86d
 keywords: ["customized print Web pages WDK , viewing specific pages", "viewing printer details page", "displaying printer details page"]
 ---

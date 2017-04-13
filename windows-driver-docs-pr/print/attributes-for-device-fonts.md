@@ -2,12 +2,6 @@
 title: Attributes for Device Fonts
 author: windows-driver-content
 description: Attributes for Device Fonts
-MS-HAID:
-- 'nt5gpd\_66e3ebc4-eca0-4dee-9ac3-fa3bab67691b.xml'
-- 'print.attributes\_for\_device\_fonts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 748faa90-9c31-44c2-8bb3-641a1f95eab1
 keywords: ["device fonts WDK Unidrv", "font attributes WDK Unidrv"]
 ---

@@ -2,12 +2,6 @@
 title: Converting East Asian AFM Files to NTF Files
 author: windows-driver-content
 description: Converting East Asian AFM Files to NTF Files
-MS-HAID:
-- 'pscript\_ada045c7-c77b-4897-ae1c-09ba0ca74ad5.xml'
-- 'print.converting\_east\_asian\_afm\_files\_to\_ntf\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0932068a-9101-4cdc-8c80-b2d3a4b507ba
 keywords: ["minidrivers WDK Pscript , converting AFM files", "NTF files", ".ntf files", ".afm files", "AFM files", "converting AFM files to NTF files WDK Pscript", "Adobe Font Metrics WDK Pscript", "East Asian fonts WDK print", "Asian fonts WDK print", "Chinese Simplified font support WDK print", "Chinese Traditional font support WDK print", "Japanese font support WDK", "Korean font support WDK print"]
 ---

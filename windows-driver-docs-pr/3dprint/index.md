@@ -2,9 +2,6 @@
 title: 3D printer driver design guide
 author: windows-driver-content
 description: This section provides information about 3D printer drivers in Windows 10.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3271C160-4253-48B5-A089-E026C6BAD3AF
 ---
 

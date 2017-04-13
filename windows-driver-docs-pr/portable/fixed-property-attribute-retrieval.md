@@ -1,7 +1,5 @@
 ---
 Description: Fixed Property-Attribute Retrieval
-MS-HAID: wpddk.fixed\_property\_attribute\_retrieval
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Fixed Property-Attribute Retrieval
 ---
 

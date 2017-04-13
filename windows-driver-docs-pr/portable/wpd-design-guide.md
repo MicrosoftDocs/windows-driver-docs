@@ -1,7 +1,5 @@
 ---
 Description: WPD Design Guide
-MS-HAID: wpddk.wpd\_design\_guide
-MSHAttr: PreferredLib:/library/windows/hardware
 title: WPD Design Guide
 ---
 

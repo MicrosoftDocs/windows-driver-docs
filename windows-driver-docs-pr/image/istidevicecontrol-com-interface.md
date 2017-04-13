@@ -2,12 +2,6 @@
 title: IStiDeviceControl COM Interface
 author: windows-driver-content
 description: IStiDeviceControl COM Interface
-MS-HAID:
-- 'stillimg\_085f0cd4-376a-435c-8005-59468f15421f.xml'
-- 'image.istidevicecontrol\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6d98f5d7-c471-4abb-8e69-dbac3d336c2f
 ---
 

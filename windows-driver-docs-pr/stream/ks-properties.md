@@ -2,12 +2,6 @@
 title: KS Properties
 author: windows-driver-content
 description: KS Properties
-MS-HAID:
-- 'ks-overview\_1c4153d6-c153-44da-bb5a-5dab0ea4bd5c.xml'
-- 'stream.ks\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a385929e-1934-4d88-aaf9-ff1ddbfd30f7
 keywords: ["kernel streaming WDK , properties", "KS properties WDK kernel streaming", "properties WDK kernel streaming"]
 ---

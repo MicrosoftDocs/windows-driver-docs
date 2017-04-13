@@ -2,12 +2,6 @@
 title: Installing a WIA Minidriver
 author: windows-driver-content
 description: Installing a WIA Minidriver
-MS-HAID:
-- 'WIA\_GS\_6568d6a5-53e4-41f7-82e3-ffa06c55259d.xml'
-- 'image.installing\_a\_wia\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 03340e9a-700c-4eb6-8505-57a09455117f
 ---
 

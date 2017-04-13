@@ -2,12 +2,6 @@
 title: VRAM Capture Properties
 author: windows-driver-content
 description: VRAM Capture Properties
-MS-HAID:
-- 'gpucap\_a8da9b19-6613-48db-9ef8-4fe1d440b59f.xml'
-- 'stream.vram\_capture\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e3ab3a10-42af-488f-9b13-d2c6d5aac615
 keywords: ["VRAM capture WDK AVStream , properties", "capturing to system memory WDK AVStream", "pin VRAM processing WDK AVStream", "VRAM capture WDK AVStream , request sequence"]
 ---

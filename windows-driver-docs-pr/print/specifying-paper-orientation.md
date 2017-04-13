@@ -2,12 +2,6 @@
 title: Specifying Paper Orientation
 author: windows-driver-content
 description: Specifying Paper Orientation
-MS-HAID:
-- 'nt5gpd\_f6dfefac-c7ff-49ca-ac5a-11d62bb2db00.xml'
-- 'print.specifying\_paper\_orientation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d62e1ff-965b-4fd7-922c-319ec1bc39a5
 keywords: ["Unidrv, paper orientation", "paper orientation WDK Unidrv", "PORTRAIT orientation WDK Unidrv", "LANDSCAPE_CC90 orientation WDK Unidrv", "LANDSCAPE_CC270 orientation WDK Unidrv", "landscape mode WDK Unidrv", "portrait mode WDK Unidrv", "Unidrv WDK print"]
 ---

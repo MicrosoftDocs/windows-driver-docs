@@ -1,9 +1,5 @@
 ---
 Description: The section describes architecture of USB Device Emulation(UDE) that emulates the behavior of a USB host controller and a connected device.
-MS-HAID: buses.usb\_emulated\_device\_\_ude\_\_architecture
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Architecture: USB Device Emulation (UDE)
 ---
 

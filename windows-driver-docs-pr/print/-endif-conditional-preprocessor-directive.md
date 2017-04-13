@@ -2,12 +2,6 @@
 title: \ Endif Conditional Preprocessor Directive
 author: windows-driver-content
 description: \ Endif Conditional Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_86e255c4-7c79-425f-a622-3d80feb2fbb5.xml'
-- 'print.\_endif\_conditional\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dfbfdb4a-955b-4ccf-b496-c8c5ddc42d2b
 keywords: ["preprocessor directives WDK GDL , conditional directives", "directives WDK GDL , conditional directives", "conditional directives WDK GDL", "Endif directive WDK GDL"]
 ---

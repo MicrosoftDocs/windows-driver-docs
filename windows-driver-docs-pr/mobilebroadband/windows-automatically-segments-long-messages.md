@@ -1,9 +1,6 @@
 ---
 title: Windows automatically segments long messages
 description: Windows automatically segments long messages
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0c1d7347-4e53-4f17-bdb5-908479f903de
 ---
 

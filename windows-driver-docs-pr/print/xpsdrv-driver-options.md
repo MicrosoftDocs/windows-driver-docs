@@ -2,12 +2,6 @@
 title: XPSDrv Driver Options
 author: windows-driver-content
 description: XPSDrv Driver Options
-MS-HAID:
-- 'xpsconfig\_107208cf-a525-4435-9a41-decb573d496d.xml'
-- 'print.xpsdrv\_driver\_options'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51db3cce-a95a-4084-9927-542c2d06312a
 keywords: ["Version 3 XPS drivers WDK XPSDrv , options"]
 ---

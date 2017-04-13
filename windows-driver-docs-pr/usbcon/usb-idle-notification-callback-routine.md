@@ -1,11 +1,5 @@
 ---
 Description: The bus driver (either an instance of the hub driver or the generic parent driver) determines when it is safe to suspend its device's children. If it is, it calls the idle notification callback routine supplied by each child's client driver.
-MS-HAID:
-- 'usbpower\_f8bc1ea8-b465-43ee-892c-4f382739b43d.xml'
-- 'buses.usb\_idle\_notification\_callback\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: USB Idle Notification Callback Routine
 ---
 

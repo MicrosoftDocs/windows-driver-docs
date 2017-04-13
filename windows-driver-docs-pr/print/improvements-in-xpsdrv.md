@@ -2,9 +2,6 @@
 title: Improvements in XPSDrv
 author: windows-driver-content
 description: This topic provides information about updates that have been made to the XPSDrv rendering architecture.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5D76ECA2-C5F6-47E4-BC05-B5137AD4196B
 ---
 

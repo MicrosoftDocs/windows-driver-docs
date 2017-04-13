@@ -2,9 +2,6 @@
 title: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Write
 author: windows-driver-content
 description: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Write
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55475573-e904-4adc-91cf-62afe9e67927
 ---
 

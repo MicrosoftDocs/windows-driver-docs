@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_MESSAGE
 author: windows-driver-content
 description: EFI\_USBFN\_MESSAGE
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 411890e1-8913-4e47-acd5-1b36b1b05f34
 ---
 

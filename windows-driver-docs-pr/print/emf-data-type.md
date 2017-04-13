@@ -2,12 +2,6 @@
 title: EMF Data Type
 author: windows-driver-content
 description: EMF Data Type
-MS-HAID:
-- 'provider\_6b78d6ab-5d3b-4706-878e-081e9eb8fe13.xml'
-- 'print.emf\_data\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d5a05778-3637-4dba-b036-5f0fc236d52d
 keywords: ["print processors WDK , data types", "data types WDK print processor", "EMF data type WDK print processor"]
 ---

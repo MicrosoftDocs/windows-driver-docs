@@ -1,11 +1,5 @@
 ---
 Description: This topic explains the structure of a control transfer and how a client driver should send a control request to the device.
-MS-HAID:
-- 'usb-io\_4fd41873-a720-434a-91ca-016a1a8deb8b.xml'
-- 'buses.usb\_control\_transfer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: How to send a USB control transfer
 ---
 

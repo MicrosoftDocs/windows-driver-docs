@@ -2,12 +2,6 @@
 title: Properties for All WIA Minidrivers
 author: windows-driver-content
 description: Properties for All WIA Minidrivers
-MS-HAID:
-- 'WIA\_arch\_caf9b7e9-2b61-4d91-b26b-fce76a21228c.xml'
-- 'image.properties\_for\_all\_wia\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ba85dbbd-2333-4f4f-b12a-84985773eef6
 ---
 

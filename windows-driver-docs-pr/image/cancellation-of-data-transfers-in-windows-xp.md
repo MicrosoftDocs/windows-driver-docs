@@ -2,12 +2,6 @@
 title: Cancellation of Data Transfers in Windows XP
 author: windows-driver-content
 description: Cancellation of Data Transfers in Windows XP
-MS-HAID:
-- 'WIA\_arch\_7f038008-6946-4697-ad56-034937e1cb39.xml'
-- 'image.cancellation\_of\_data\_transfers\_in\_windows\_xp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 971979a5-950b-49d4-9adb-cd4589a00426
 ---
 

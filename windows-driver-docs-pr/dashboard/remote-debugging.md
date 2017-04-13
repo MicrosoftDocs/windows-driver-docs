@@ -1,12 +1,6 @@
 ---
 title: Remote Debugging
 description: Remote Debugging
-MS-HAID:
-- 'p\_dashboard.remote\_debugging'
-- 'hw\_dashboard.remote\_debugging'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 070c68e3-eb15-4c03-89f1-2601ddab901e
 ---
 
