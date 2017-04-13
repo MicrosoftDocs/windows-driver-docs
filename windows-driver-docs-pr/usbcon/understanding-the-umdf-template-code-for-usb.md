@@ -1,9 +1,5 @@
 ---
 Description: In this topic you'll learn about the source code for a UMDF-based USB client driver.
-MS-HAID: buses.understanding\_the\_umdf\_template\_code\_for\_usb
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Understanding the USB client driver code structure (UMDF)
 ---
 

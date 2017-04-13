@@ -1,11 +1,5 @@
 ---
 Description: WinUSB consists of two primary components:Winusb.sys is a kernel-mode driver that can be installed as either a filter or function driver, above the protocol drivers in a USB device's kernel-mode device stack.Winusb.dll is a user-mode DLL that exposes WinUSB functions. Applications can use these functions to communicate with Winusb.sys when it is installed as a device's function driver.
-MS-HAID:
-- 'usbsystem\_d13dcd66-a3d2-4908-8b3a-d552e9b4f4aa.xml'
-- 'buses.winusb\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: WinUSB Architecture and Modules
 ---
 

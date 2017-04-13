@@ -1,9 +1,6 @@
 ---
 title: ServiceInfo XML Elements
 description: ServiceInfo XML Elements
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 807a2741-a515-468f-9188-0cc4e43b4485
 ---
 

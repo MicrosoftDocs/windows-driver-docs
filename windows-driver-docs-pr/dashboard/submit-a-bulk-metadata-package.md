@@ -1,12 +1,6 @@
 ---
 title: Submit a Bulk Metadata Package
 description: Submit a Bulk Metadata Package
-MS-HAID:
-- 'p\_dashboard.submit\_a\_bulk\_metadata\_package'
-- 'hw\_dashboard.submit\_a\_bulk\_metadata\_package'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8e248d4-a419-48e1-839d-1bbb9adda382
 ---
 

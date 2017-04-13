@@ -2,12 +2,6 @@
 title: 64-Bit WIA Driver Components
 author: windows-driver-content
 description: 64-Bit WIA Driver Components
-MS-HAID:
-- 'WIA\_Fundamentals\_54ca301c-1629-4740-a78f-039a815aa59f.xml'
-- 'image.64\_bit\_wia\_driver\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c5951977-1ac9-4ef3-9427-f964cab9725e
 ---
 

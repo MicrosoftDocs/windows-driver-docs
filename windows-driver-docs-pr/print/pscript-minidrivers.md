@@ -2,12 +2,6 @@
 title: Pscript Minidrivers
 author: windows-driver-content
 description: Pscript Minidrivers
-MS-HAID:
-- 'pscript\_89e06478-22e5-4d3e-b4b6-80c220cc142b.xml'
-- 'print.pscript\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b1108a6b-e0cc-413c-b3ea-53a1aa3156c0
 keywords: ["PostScript Printer Driver WDK print , minidrivers", "Pscript WDK print , minidrivers", "minidrivers WDK Pscript", "minidrivers WDK Pscript , about Pscript minidrivers", "PPD files WDK print", ".ppd files", "NTF files", ".ntf files", "East Asian fonts WDK print", "Asian fonts WDK print"]
 ---

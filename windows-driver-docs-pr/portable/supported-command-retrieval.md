@@ -1,7 +1,5 @@
 ---
 Description: Supported Command Retrieval
-MS-HAID: wpddk.supported\_command\_retrieval
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Supported Command Retrieval
 ---
 

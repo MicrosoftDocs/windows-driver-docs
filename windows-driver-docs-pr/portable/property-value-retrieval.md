@@ -1,7 +1,5 @@
 ---
 Description: Property-Value Retrieval
-MS-HAID: wpddk.property\_value\_retrieval
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Property-Value Retrieval
 ---
 

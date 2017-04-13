@@ -2,12 +2,6 @@
 title: For More Information
 author: windows-driver-content
 description: For More Information
-MS-HAID:
-- 'Sensor\_DG\_GettingStarted\_feabe640-bc88-4c5a-a44b-90307d947885.xml'
-- 'sensors.for\_more\_information'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d7fde94a-4b10-4b4f-aa4f-3716d7db06d3
 ---
 

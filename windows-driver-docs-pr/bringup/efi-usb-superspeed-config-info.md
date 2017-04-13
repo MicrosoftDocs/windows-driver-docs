@@ -2,9 +2,6 @@
 title: EFI\_USB\_SUPERSPEED\_CONFIG\_INFO
 author: windows-driver-content
 description: EFI\_USB\_SUPERSPEED\_CONFIG\_INFO
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9827B0A9-AC69-43FA-922F-384E3AE140F7
 ---
 

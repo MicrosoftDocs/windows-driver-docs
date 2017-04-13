@@ -1,11 +1,5 @@
 ---
 Description: The device descriptor contains information about a USB device as a whole. This topic describes the USB\_DEVICE\_DESCRIPTOR structure and includes information about how a client driver can send a get-descriptor request to obtain the device descriptor.
-MS-HAID:
-- 'usb-config\_2e0d8323-c56b-48a2-8e1f-3b24873b8785.xml'
-- 'buses.usb\_device\_descriptors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: USB device descriptors
 ---
 

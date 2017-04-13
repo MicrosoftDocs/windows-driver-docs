@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.SetEndpointPolicy
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.SetEndpointPolicy
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d7ab0529-1925-47b5-9706-2e6288a6a5cf
 ---
 

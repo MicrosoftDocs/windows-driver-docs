@@ -2,12 +2,6 @@
 title: USB Video Class Driver Stack
 author: windows-driver-content
 description: USB Video Class Driver Stack
-MS-HAID:
-- 'uvcds\_a3d8cd00-0534-429d-8214-07c6b5552a41.xml'
-- 'stream.usb\_video\_class\_driver\_stack'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8dd9ce8d-eaa0-43d3-a27a-5b328220e10e
 keywords: ["USB Video Class drivers WDK AVStream , about USB Video Class driver stack", "Video Class drivers WDK USB , about USB Video Class driver stack", "UVC drivers WDK AVStream , about USB Video Class driver stack"]
 ---

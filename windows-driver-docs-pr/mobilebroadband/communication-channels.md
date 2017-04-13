@@ -1,9 +1,6 @@
 ---
 title: Communication channels
 description: Communication channels
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e26e22a2-4cc2-46a2-9d6c-02ab5df35041
 ---
 

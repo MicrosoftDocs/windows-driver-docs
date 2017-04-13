@@ -1,11 +1,5 @@
 ---
 Description: Describes Windows support for USB Type-C connector and tasks for OEMs who are building USB Type-C systems, including how to write drivers that manage different features of the connector.
-MS-HAID:
-- 'buses.oem\_tasks\_for\_bringing\_up\_a\_usb\_type-c'
-- 'buses.oem\_tasks\_for\_bringing\_up\_a\_usb\_typec'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Windows support for USB Type-C connectors
 ---
 

@@ -2,12 +2,6 @@
 title: Dedicated Film Scanners
 author: windows-driver-content
 description: Dedicated Film Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_24c59805-c15f-4655-bf67-defacc4cd265.xml'
-- 'image.dedicated\_film\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1f8b73eb-a81a-4db3-b5be-b0a01a12696a
 ---
 

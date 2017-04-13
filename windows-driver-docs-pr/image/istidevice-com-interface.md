@@ -2,12 +2,6 @@
 title: IStiDevice COM Interface
 author: windows-driver-content
 description: IStiDevice COM Interface
-MS-HAID:
-- 'stillimg\_9d2113d3-3c15-44b0-8e75-e8f32b7ad97f.xml'
-- 'image.istidevice\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b026fb74-9ce6-4d4e-8a5b-402731904064
 ---
 

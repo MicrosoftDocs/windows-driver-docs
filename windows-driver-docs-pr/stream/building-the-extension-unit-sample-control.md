@@ -2,12 +2,6 @@
 title: Building the Extension Unit Sample Control
 author: windows-driver-content
 description: Building the Extension Unit Sample Control
-MS-HAID:
-- 'uvcds\_86a410c9-f95a-4d6b-8bae-bd95d15ed738.xml'
-- 'stream.building\_the\_extension\_unit\_sample\_control'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 57dd0bc3-2aab-42a2-b0c5-7f6ecaefd300
 keywords: ["Extension Unit controls WDK USB Video Class", "controls WDK USB Video Class"]
 ---

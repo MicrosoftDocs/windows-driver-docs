@@ -1,7 +1,5 @@
 ---
 Description: Device Installation
-MS-HAID: wpddk.device\_installation
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Device Installation
 ---
 

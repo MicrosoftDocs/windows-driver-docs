@@ -2,12 +2,6 @@
 title: Using the System-Supplied Multifunction Bus Driver
 author: windows-driver-content
 description: Using the System-Supplied Multifunction Bus Driver
-MS-HAID:
-- 'mf-supp\_99ee04ab-eab2-405f-bb5c-1c3f9e074f96.xml'
-- 'multifunc.using\_the\_system\_supplied\_multifunction\_bus\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 75fe659d-5311-4bc6-adfb-fd608e10c718
 keywords: ["multifunction devices WDK , system-supplied bus drivers", "system-supplied multifunction bus drivers WDK", "mf.sys", "functional device objects WDK multifunction devices", "FDOs WDK multifunction devices", "physical device objects WDK multifunction devices", "PDOs WDK multifunction devices"]
 ---

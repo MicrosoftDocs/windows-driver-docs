@@ -1,9 +1,6 @@
 ---
 title: Delivering experiences for MVNOs
 description: Delivering experiences for MVNOs
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fcb2a3d4-bc19-4fa5-b81d-b0df287404a8
 ---
 

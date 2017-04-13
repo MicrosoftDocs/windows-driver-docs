@@ -1,7 +1,5 @@
 ---
 Description: Supported Scenarios
-MS-HAID: wpddk.supported\_scenarios
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Supported Scenarios
 ---
 

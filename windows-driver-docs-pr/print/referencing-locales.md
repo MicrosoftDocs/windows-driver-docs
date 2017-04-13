@@ -2,12 +2,6 @@
 title: Referencing Locales
 author: windows-driver-content
 description: Referencing Locales
-MS-HAID:
-- 'nt5gpd\_4705df88-4186-4d82-a442-01093afbea60.xml'
-- 'print.referencing\_locales'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 63ea5534-b2e1-43aa-b45b-e4fe8bb69f49
 keywords: ["Unidrv, referencing locales", "GPD files WDK Unidrv , referencing locales", "referencing locales", "locale referencing WDK Unidrv", "Unidrv WDK print"]
 ---

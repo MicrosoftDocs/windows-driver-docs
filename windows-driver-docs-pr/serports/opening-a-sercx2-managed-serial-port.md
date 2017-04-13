@@ -2,12 +2,6 @@
 title: Opening a SerCx2-Managed Serial Port
 author: windows-driver-content
 description: If your peripheral driver controls a device on a serial port that is jointly managed by SerCx2 and a serial controller driver, your driver can open a logical connection to this port and then send I/O requests to the device through the port.
-MS-HAID:
-- 'serports.how\_to\_open\_a\_serial\_port\_managed\_by\_sercx2'
-- 'serports.opening\_a\_sercx2\_managed\_serial\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: CBFE1789-0D60-480A-B467-4690DFF88AAC
 ---
 

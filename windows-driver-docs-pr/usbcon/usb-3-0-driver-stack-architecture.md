@@ -1,9 +1,5 @@
 ---
 Description: This topic provides an overview of the Universal Serial Bus (USB) driver stack architecture.
-MS-HAID: buses.usb\_3\_0\_driver\_stack\_architecture
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: USB host-side drivers in Windows
 ---
 

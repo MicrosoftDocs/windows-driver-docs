@@ -2,12 +2,6 @@
 title: Macros
 author: windows-driver-content
 description: Macros
-MS-HAID:
-- 'nt5gpd\_06982635-fcec-4166-88b3-e77a608a91c3.xml'
-- 'print.macros'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 071051fe-d15a-45dc-8f76-5818916aef9f
 keywords: ["GPD file entries WDK Unidrv , macros", "macros WDK GPD files"]
 ---

@@ -1,9 +1,5 @@
 ---
 Description: This topic describes the steps that are required to submit an initialized URB to the USB driver stack to process a particular request.
-MS-HAID: buses.send\_requests\_to\_the\_usb\_driver\_stack
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: How to Submit an URB
 ---
 

@@ -2,12 +2,6 @@
 title: Dropped Frame Properties
 author: windows-driver-content
 description: Dropped Frame Properties
-MS-HAID:
-- 'vidcapds\_c04e27bc-e33a-4d01-a44f-0e52f49b80dc.xml'
-- 'stream.dropped\_frame\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c8bd66f-aa25-49e2-a442-9046a4d46466
 keywords: ["dropped frame properties WDK video capture", "PROPSETID_VIDCAP_DROPPEDFRAMES"]
 ---

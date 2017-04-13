@@ -2,12 +2,6 @@
 title: Feeder Scanner Architecture
 author: windows-driver-content
 description: Feeder Scanner Architecture
-MS-HAID:
-- 'WIA\_scanner\_tree\_7fb00f37-f5ff-4ddf-a7dd-00f6369f63ae.xml'
-- 'image.feeder\_scanner\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 02157a88-fccd-4a23-a4ee-174755c8d3aa
 ---
 

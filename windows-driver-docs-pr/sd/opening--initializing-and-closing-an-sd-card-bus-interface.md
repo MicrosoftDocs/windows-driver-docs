@@ -2,12 +2,6 @@
 title: Opening, Initializing and Closing an SD Card Bus Interface
 author: windows-driver-content
 description: Opening, Initializing and Closing an SD Card Bus Interface
-MS-HAID:
-- 'securedigital\_dg\_e7ed351c-2854-46d5-95c7-a87479b72ee9.xml'
-- 'SD.opening\_\_initializing\_and\_closing\_an\_sd\_card\_bus\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 986a352e-c479-444d-9c65-7958dd638bbb
 keywords: ["SD WDK buses , opening interfaces", "SD WDK buses , initializing interfaces", "SD WDK buses , closing interfaces", "initializing SD bus interfaces", "SdBusOpenInterface", "SDBUS_INTERFACE_STANDARD", "interfaces WDK SD bus"]
 ---

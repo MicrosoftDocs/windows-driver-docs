@@ -2,9 +2,6 @@
 title: 3D printing sample WSD app
 author: windows-driver-content
 description: This section contains detailed instructions for building and deploying the web service device (WSD) sample application with the included 3D print driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 357DF3FB-2259-48D1-8597-6ABA27890237
 ---
 

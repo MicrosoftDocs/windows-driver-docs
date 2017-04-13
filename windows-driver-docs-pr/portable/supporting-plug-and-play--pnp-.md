@@ -1,7 +1,5 @@
 ---
 Description: The User Mode Driver Framework (UMDF) requires that drivers support the IPnpCallback interface for Plug and Play (PnP) operations and the IPnpCallbackSelfManagedIo interface for power-management operations.
-MS-HAID: wpddk.supporting\_plug\_and\_play\_\_pnp\_
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Supporting Plug and Play (PnP) and Power Management
 ---
 

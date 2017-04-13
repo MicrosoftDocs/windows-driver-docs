@@ -2,12 +2,6 @@
 title: Bluetooth Printing
 author: windows-driver-content
 description: Bluetooth Printing
-MS-HAID:
-- 'prnbluetooth\_c0d8fe1a-e335-46d8-b9dc-059efebf7acd.xml'
-- 'print.bluetooth\_printing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6c40c142-9b52-4878-a84b-82d411086304
 keywords: ["printer drivers WDK , Bluetooth", "Bluetooth WDK , printing", "wireless connectivity WDK printer"]
 ---

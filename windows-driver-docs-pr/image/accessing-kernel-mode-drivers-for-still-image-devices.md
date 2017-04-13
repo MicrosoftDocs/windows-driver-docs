@@ -2,12 +2,6 @@
 title: Accessing Kernel-Mode Drivers for Still Image Devices
 author: windows-driver-content
 description: Accessing Kernel-Mode Drivers for Still Image Devices
-MS-HAID:
-- 'WIA\_drv\_basic\_3ce1f660-0d58-43c1-97fa-22334fe4ac3d.xml'
-- 'image.accessing\_kernel\_mode\_drivers\_for\_still\_image\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f9216d3c-4930-4c26-8eac-6ee500b038e0
 ---
 

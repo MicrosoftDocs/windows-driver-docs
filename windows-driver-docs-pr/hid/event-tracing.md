@@ -2,9 +2,6 @@
 title: Event tracing
 author: windows-driver-content
 description: You can use Event Tracing for Windows (ETW) or the Windows software trace preprocessor (WPP) to trace the operations in your HID over I²C.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F23E5516-36B9-478E-90D3-54D1C52CB467
 ---
 

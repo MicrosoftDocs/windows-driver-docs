@@ -1,9 +1,6 @@
 ---
 title: Send SMS by using the text-mode interface
 description: Send SMS by using the text-mode interface
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 418328ef-09ab-40f5-989a-c592377e4b57
 ---
 

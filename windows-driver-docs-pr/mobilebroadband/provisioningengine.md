@@ -1,9 +1,6 @@
 ---
 title: ProvisioningEngine
 description: ProvisioningEngine
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b6b10145-d554-43be-8682-1355145b3241
 ---
 

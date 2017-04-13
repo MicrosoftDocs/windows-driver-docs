@@ -1,9 +1,6 @@
 ---
 title: ServiceInfo XML schema
 description: ServiceInfo XML schema
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e59aa675-fea2-4c2d-90f8-4979aac1c7e8
 ---
 

@@ -2,12 +2,6 @@
 title: Passthrough Template Data Types
 author: windows-driver-content
 description: Passthrough Template Data Types
-MS-HAID:
-- 'gplfiles\_1536cb85-1de9-4539-adb8-64abaef9fa6f.xml'
-- 'print.passthrough\_template\_data\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e5e6a12-5847-45fe-bee5-68944cd546d7
 keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "PASSTHROUGH data type WDK GDL", "schemas WDK GDL , validating PASSTHROUGH data types", "ArrayLabel directive WDK GDL"]
 ---

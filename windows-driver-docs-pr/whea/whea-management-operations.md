@@ -2,12 +2,6 @@
 title: WHEA Management Operations
 author: windows-driver-content
 description: WHEA Management Operations
-MS-HAID:
-- 'whea\_b3c93c23-5771-4002-8b8f-7e8a3f86a1fa.xml'
-- 'whea.whea\_management\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 74b57d81-c6ee-4823-b877-53c25d2eaa8a
 keywords: ["WHEA WDK , management operations", "Windows Hardware Error Architecture WDK , management operations"]
 ---

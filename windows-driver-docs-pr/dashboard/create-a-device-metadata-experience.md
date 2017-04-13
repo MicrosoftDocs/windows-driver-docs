@@ -1,12 +1,6 @@
 ---
 title: Create a Device Metadata Experience
 description: Create a Device Metadata Experience
-MS-HAID:
-- 'p\_dashboard.create\_a\_device\_metadata\_experience'
-- 'hw\_dashboard.create\_a\_device\_metadata\_experience'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 964ad06e-0f29-441d-b184-61f80a614914
 ---
 

@@ -2,12 +2,6 @@
 title: Introduction to Image Processing Filters
 author: windows-driver-content
 description: Introduction to Image Processing Filters
-MS-HAID:
-- 'WIA\_tree\_48e6d51a-fb1c-4ea2-9149-a455a383596c.xml'
-- 'image.introduction\_to\_image\_processing\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59fc1bc1-c783-43df-9778-ea4306f6dd50
 ---
 

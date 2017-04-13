@@ -2,12 +2,6 @@
 title: Post-Scan Job Execution
 author: windows-driver-content
 description: Post-Scan Job Execution
-MS-HAID:
-- 'dsm\_des\_theory\_2173d009-15cb-4651-9786-e27e23f91351.xml'
-- 'image.post\_scan\_job\_execution'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ce8eee6-0aaa-43da-b3ca-d12063c01d7d
 ---
 

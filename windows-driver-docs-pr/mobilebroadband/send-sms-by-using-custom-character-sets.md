@@ -1,9 +1,6 @@
 ---
 title: Send SMS by using custom character sets
 description: Send SMS by using custom character sets
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c1f19c16-66f5-4bcd-ba28-950eaa6472d2
 ---
 

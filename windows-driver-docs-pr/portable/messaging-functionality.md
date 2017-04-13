@@ -1,7 +1,5 @@
 ---
 Description: Messaging Functionality
-MS-HAID: wpddk.messaging\_functionality
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Messaging Functionality
 ---
 

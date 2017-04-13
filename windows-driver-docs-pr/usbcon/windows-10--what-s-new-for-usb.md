@@ -1,9 +1,5 @@
 ---
 Description: This topic highlights the new features and improvements for Universal Serial Bus (USB) in Windows 10.
-MS-HAID: buses.windows\_10\_\_what\_s\_new\_for\_usb
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Windows 10: What's new for USB
 ---
 

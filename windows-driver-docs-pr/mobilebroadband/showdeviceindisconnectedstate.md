@@ -1,9 +1,6 @@
 ---
 title: ShowDeviceInDisconnectedState
 description: ShowDeviceInDisconnectedState
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f2f517dd-68e5-4013-83ee-777579562db3
 ---
 

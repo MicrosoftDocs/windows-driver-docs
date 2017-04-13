@@ -2,12 +2,6 @@
 title: Creating Property Sheet Pages for Printers
 author: windows-driver-content
 description: Creating Property Sheet Pages for Printers
-MS-HAID:
-- 'drvarch\_be5800a3-1080-42dd-b7d3-aa8ae59ec9d9.xml'
-- 'print.creating\_property\_sheet\_pages\_for\_printers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b9b7aa52-39b7-4809-acdf-e72293da37e1
 keywords: ["printer interface DLL WDK , property sheet pages", "property sheet pages WDK print , creating", "property sheet pages WDK print , printer interface DLL"]
 ---

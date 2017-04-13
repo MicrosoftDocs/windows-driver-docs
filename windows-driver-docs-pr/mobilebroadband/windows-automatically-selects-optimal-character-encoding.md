@@ -1,9 +1,6 @@
 ---
 title: Windows automatically selects optimal character encoding
 description: Windows automatically selects optimal character encoding
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3fde6e89-c9ea-43d2-a999-506686b223f4
 ---
 

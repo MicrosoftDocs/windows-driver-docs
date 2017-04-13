@@ -2,12 +2,6 @@
 title: Broadcast Driver Architecture Minidrivers
 author: windows-driver-content
 description: Broadcast Driver Architecture Minidrivers
-MS-HAID:
-- 'bdadg\_9e736b6c-5fd4-4133-8590-3206835fca77.xml'
-- 'stream.broadcast\_driver\_architecture\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0ad56dbd-6f79-439f-8dfc-8d118d114ddd
 keywords: ["Broadcast Driver Architecture WDK AVStream , minidrivers", "BDA WDK AVStream , minidrivers", "minidrivers WDK BDA", "BDA minidrivers WDK AVStream", "BDA minidrivers WDK AVStream , about BDA minidrivers"]
 ---

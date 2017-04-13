@@ -2,12 +2,6 @@
 title: \ SetPPPrefix Preprocessor Directive
 author: windows-driver-content
 description: \ SetPPPrefix Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_a9230076-94f8-4554-94ce-841758821e9d.xml'
-- 'print.\_setppprefix\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3520aa66-1090-40db-9c9f-cfba0e6e2bee
 keywords: ["preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK", "SetPPPrefix directive WDK GDL"]
 ---

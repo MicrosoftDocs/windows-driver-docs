@@ -2,9 +2,6 @@
 title: UEFI battery charging protocol
 author: windows-driver-content
 description: UEFI battery charging protocol
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e9ef620-2ca1-4579-a715-19eec8933d57
 ---
 

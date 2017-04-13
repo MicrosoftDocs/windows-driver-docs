@@ -2,12 +2,6 @@
 title: Writing WIA Item Properties by an Application
 author: windows-driver-content
 description: Writing WIA Item Properties by an Application
-MS-HAID:
-- 'WIA\_drv\_basic\_a7bf987e-fdb5-455d-9f84-8007efe36bfc.xml'
-- 'image.writing\_wia\_item\_properties\_by\_an\_application'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 728f3f73-4815-4d79-ac02-227de7ae9bb7
 ---
 

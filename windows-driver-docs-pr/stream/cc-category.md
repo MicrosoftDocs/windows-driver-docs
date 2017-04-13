@@ -2,12 +2,6 @@
 title: CC Category
 author: windows-driver-content
 description: CC Category
-MS-HAID:
-- 'vidcapds\_aedab175-6ae0-4da7-85f2-58ecac6aa4fd.xml'
-- 'stream.cc\_category'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 742955f3-85a2-4627-b1b1-0bd85cdb1e77
 keywords: ["stream categories WDK video capture , closed-captioning category", "CC category WDK video capture", "PINNAME_VIDEO_CC", "closed-captioning category WDK video capture"]
 ---

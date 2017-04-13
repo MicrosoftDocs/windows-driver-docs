@@ -2,12 +2,6 @@
 title: IStillImage COM Interface
 author: windows-driver-content
 description: IStillImage COM Interface
-MS-HAID:
-- 'stillimg\_ad25ab56-2671-47cb-9f8c-bcb0295c0c99.xml'
-- 'image.istillimage\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eb60a3fd-e7e2-4d3c-973e-af8cb3c3c511
 ---
 

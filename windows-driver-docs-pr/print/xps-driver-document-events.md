@@ -2,12 +2,6 @@
 title: XPS Driver Document Events
 author: windows-driver-content
 description: XPS Driver Document Events
-MS-HAID:
-- 'xpsconfig\_5b443525-074f-42e9-a00b-5dc9c8116b5e.xml'
-- 'print.xps\_driver\_document\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 240e14d1-d8ee-403c-b728-b14941775634
 keywords: ["Version 3 XPS drivers WDK XPSDrv , events", "events WDK XPSDrv", "notifications WDK XPSDrv", "DrvDocumentEvent"]
 ---

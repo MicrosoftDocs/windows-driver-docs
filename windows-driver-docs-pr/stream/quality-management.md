@@ -2,12 +2,6 @@
 title: Quality Management
 author: windows-driver-content
 description: Quality Management
-MS-HAID:
-- 'ks-overview\_861d5d13-4970-4f34-9e0f-b7b1d8e871eb.xml'
-- 'stream.quality\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 359e6e12-903f-4037-8f35-b090ce41f770
 keywords: ["quality management WDK kernel streaming", "KSPROPERTY_STREAM_QUALITY", "KSQUALITY_MANAGER", "notifications WDK kernel streaming", "complaints WDK kernel streaming", "kernel streaming WDK , quality management", "KS WDK , quality management"]
 ---

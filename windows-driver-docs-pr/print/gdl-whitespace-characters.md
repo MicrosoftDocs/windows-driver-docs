@@ -2,12 +2,6 @@
 title: GDL Whitespace Characters
 author: windows-driver-content
 description: GDL Whitespace Characters
-MS-HAID:
-- 'gplfiles\_45f0021e-08de-4b70-ab43-abc425a28dbf.xml'
-- 'print.gdl\_whitespace\_characters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 703c41c0-3e12-465a-823f-c32990a52382
 keywords: ["constructs WDK GDL , whitespace characters", "continuation linebreak WDK GDL", "linebreak sequence WDK GDL", "parser WDK GDL , handling whitespace", "GDL WDK , whitespace characters"]
 ---

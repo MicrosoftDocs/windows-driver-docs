@@ -1,7 +1,5 @@
 ---
 Description: WPD and Earlier Technologies
-MS-HAID: wpddk.wpd\_and\_earlier\_technologies
-MSHAttr: PreferredLib:/library/windows/hardware
 title: WPD and Earlier Technologies
 ---
 

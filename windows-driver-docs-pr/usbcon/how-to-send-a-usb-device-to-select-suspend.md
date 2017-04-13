@@ -1,9 +1,5 @@
 ---
 Description: This topic describes the USB client driver verifier feature of the USB 3.0 driver stack that enables the client driver to test certain failure cases.
-MS-HAID: buses.how\_to\_send\_a\_usb\_device\_to\_select\_suspend
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: USB client driver verifier
 ---
 

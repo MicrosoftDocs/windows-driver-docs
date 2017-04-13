@@ -2,12 +2,6 @@
 title: Handling Device-Managed Surfaces
 author: windows-driver-content
 description: Handling Device-Managed Surfaces
-MS-HAID:
-- 'custdrvr\_f4820470-cb69-464e-8b46-3c73a58faa52.xml'
-- 'print.handling\_device\_managed\_surfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4403165f-c528-450e-9c96-77a9ce0778aa
 keywords: ["Unidrv, device-managed surfaces", "device-managed surfaces WDK Unidrv", "surface device-managed WDK Unidrv", "hooking graphics DDI functions WDK Unidrv", "DrvTextOut", "Unidrv WDK print"]
 ---

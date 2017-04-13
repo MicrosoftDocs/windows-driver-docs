@@ -2,12 +2,6 @@
 title: Installing printers that support Web Services for Devices
 author: windows-driver-content
 description: Installing printers that support Web Services for Devices
-MS-HAID:
-- 'prtinst\_e7abdba9-4f13-4d31-b43a-29a98e5932e1.xml'
-- 'print.web\_services\_device\_installation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb5f043b-bae5-4cb6-95c0-e4e6b9e9d187
 keywords: ["Web Services Device Monitor WDK printer"]
 ---

@@ -2,12 +2,6 @@
 title: USBCAMD2 Minidriver Operation
 author: windows-driver-content
 description: USBCAMD2 Minidriver Operation
-MS-HAID:
-- 'usbcmdds\_3938fce7-6309-431b-92ed-79ac39d6f6b8.xml'
-- 'stream.usbcamd2\_minidriver\_operation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 395612cd-3407-4b42-b3a5-0afa838e73d9
 keywords: ["Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library", "Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library", "Kernel Streaming Model WDK , USBCAMD2 minidriver library", "USBCAMD2 minidriver operations WDK Windows 2000 Kernel Streaming", "USB-based streaming cameras WDK USBCAMD2", "cameras WDK USBCAMD2", "SRBs WDK USBCAMD2"]
 ---

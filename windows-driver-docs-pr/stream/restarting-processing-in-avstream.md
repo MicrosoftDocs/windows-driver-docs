@@ -2,12 +2,6 @@
 title: Restarting Processing in AVStream
 author: windows-driver-content
 description: Restarting Processing in AVStream
-MS-HAID:
-- 'avsover\_8e88a507-318c-4b0f-ae4a-8851d932ced5.xml'
-- 'stream.restarting\_processing\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f60d4dbd-61e6-4ae2-aa43-9edc8f36c3ff
 keywords: ["restarting AVStream processing", "AVStream process restarting WDK", "resume processing WDK AVStream", "pending status WDK AVStream"]
 ---

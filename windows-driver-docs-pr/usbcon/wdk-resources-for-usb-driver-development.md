@@ -1,9 +1,5 @@
 ---
 Description: This topic lists the &\#0034;How to&\#0034; topics in this documentation set. Each how-to topic presents a set of tasks as a sequence of steps with code examples.
-MS-HAID: buses.wdk\_resources\_for\_usb\_driver\_development
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Common tasks for USB client drivers
 ---
 

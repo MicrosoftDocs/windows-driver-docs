@@ -2,12 +2,6 @@
 title: Obtaining Information About a Parallel Port
 author: windows-driver-content
 description: Obtaining Information About a Parallel Port
-MS-HAID:
-- 'vspd\_20405e28-f051-40cf-8cd5-b2f8e0b1ff87.xml'
-- 'parports.obtaining\_information\_about\_a\_parallel\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d8ae2296-05b6-419a-93cc-00fcb12d41fe
 keywords: ["parallel ports WDK , obtaining information"]
 ---

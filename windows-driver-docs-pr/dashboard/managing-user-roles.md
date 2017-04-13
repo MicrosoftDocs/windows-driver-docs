@@ -1,8 +1,5 @@
 ---
 title: Managing User Roles
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 000D3756-7110-4E9F-91CA-86F91EECCFCA
 description: 
 ---

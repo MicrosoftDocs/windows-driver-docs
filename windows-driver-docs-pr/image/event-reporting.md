@@ -2,12 +2,6 @@
 title: Event Reporting
 author: windows-driver-content
 description: Event Reporting
-MS-HAID:
-- 'WIA\_arch\_6dc78b29-f24c-4718-a154-7a236fa61a93.xml'
-- 'image.event\_reporting'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c3ffa7e-d0b3-483c-9f6b-3fe8ae997cf0
 ---
 

@@ -2,9 +2,6 @@
 title: Windows Store device apps for printers
 author: windows-driver-content
 description: Windows Store device apps for printers allow IHVs to highlight the special features of their devices through customized printer preferences and notification support.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 687ECBA2-2DEF-4C62-A587-17A281490B59
 ---
 

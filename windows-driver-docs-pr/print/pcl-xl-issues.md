@@ -2,12 +2,6 @@
 title: PCL XL Issues
 author: windows-driver-content
 description: PCL XL Issues
-MS-HAID:
-- 'nt5gpd\_e3d5471a-131f-4b01-9680-c247b139c57a.xml'
-- 'print.pcl\_xl\_issues'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 65db50fb-b58f-44f0-aa2a-67c23a448d32
 keywords: ["PCL XL vector graphics WDK Unidrv , additional considerations"]
 ---

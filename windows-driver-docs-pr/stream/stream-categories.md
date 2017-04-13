@@ -2,12 +2,6 @@
 title: Stream Categories
 author: windows-driver-content
 description: Stream Categories
-MS-HAID:
-- 'vidcapds\_018b7a6a-ead9-4187-b92a-24955bbcfa3b.xml'
-- 'stream.stream\_categories'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dc2af282-4976-42d8-b07b-13b2a6dfb7d5
 keywords: ["video capture WDK AVStream , stream categories", "capturing video WDK AVStream , stream categories", "identifying pin primary purpose", "stream categories WDK video capture , about stream categories", "GUIDs WDK video capture"]
 ---

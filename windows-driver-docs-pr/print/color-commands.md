@@ -2,12 +2,6 @@
 title: Color Commands
 author: windows-driver-content
 description: Color Commands
-MS-HAID:
-- 'nt5gpd\_2dae9fe6-613c-4845-a831-61d1841755f9.xml'
-- 'print.color\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 752a3c1d-05f1-4f5e-9ef2-e51721ef7cc4
 keywords: ["printer commands WDK Unidrv , colors", "color commands WDK Unidrv", "background color options WDK Unidrv", "palettes WDK Unidrv", "patterns WDK Unidrv", "brushes WDK Unidrv"]
 ---

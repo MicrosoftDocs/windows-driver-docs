@@ -2,12 +2,6 @@
 title: Performing Diagnostics on a WIA Device
 author: windows-driver-content
 description: Performing Diagnostics on a WIA Device
-MS-HAID:
-- 'WIA\_drv\_basic\_e3b9e8a1-4878-450c-8bd3-46812f69d8e3.xml'
-- 'image.performing\_diagnostics\_on\_a\_wia\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15962c49-f03c-409b-b138-033893a50ec2
 ---
 

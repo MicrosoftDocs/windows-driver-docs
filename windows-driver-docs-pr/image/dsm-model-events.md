@@ -2,12 +2,6 @@
 title: DSM Model Events
 author: windows-driver-content
 description: DSM Model Events
-MS-HAID:
-- 'dsm\_des\_theory\_f1e8ec02-0679-48c8-8e11-d0f638cb67fa.xml'
-- 'image.dsm\_model\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f7f3d777-4a2c-42a1-a355-9e9617108915
 ---
 

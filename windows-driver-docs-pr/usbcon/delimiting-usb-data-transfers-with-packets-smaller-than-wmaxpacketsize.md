@@ -1,11 +1,5 @@
 ---
 Description: Delimiting USB Data Transfers With Packets Smaller Than wMaxPacketSize
-MS-HAID:
-- 'usb-io\_e563da6b-7191-4a05-9c95-f48760c2697b.xml'
-- 'buses.delimiting\_usb\_data\_transfers\_with\_packets\_smaller\_than\_wmaxpacketsize'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Delimiting USB Data Transfers With Packets Smaller Than wMaxPacketSize
 ---
 

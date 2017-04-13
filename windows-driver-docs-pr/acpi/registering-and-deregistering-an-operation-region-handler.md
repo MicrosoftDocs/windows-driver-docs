@@ -2,12 +2,6 @@
 title: Registering and Deregistering an Operation Region Handler
 author: windows-driver-content
 description: Registering and Deregistering an Operation Region Handler
-MS-HAID:
-- 'opregdg\_32a2162f-28c6-4bce-863a-02883229566b.xml'
-- 'acpi.registering\_and\_deregistering\_an\_operation\_region\_handler'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: de40488d-7935-431c-b1f4-87f8aff1125b
 keywords: ["ACPI devices WDK , operation regions", "operation regions WDK ACPI", "function drivers WDK ACPI , operation regions", "WDM function drivers WDK ACPI , operation regions", "registering operation region handlers", "deregistering operation region handlers"]
 ---

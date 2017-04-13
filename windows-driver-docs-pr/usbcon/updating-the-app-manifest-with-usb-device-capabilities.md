@@ -1,9 +1,5 @@
 ---
 Description: This topic describes the device capabilities that are required for a Windows store app that uses the Windows.Devices.Usb namespace.
-MS-HAID: buses.updating\_the\_app\_manifest\_with\_usb\_device\_capabilities
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: How to add USB device capabilities to the app manifest
 ---
 

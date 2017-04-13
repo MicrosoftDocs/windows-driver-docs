@@ -1,11 +1,5 @@
 ---
 Description: Some USB devices have interface collections that the USB Interface Association Descriptor (IAD) is unable to describe.
-MS-HAID:
-- 'usbsystem\_ca3e9fb3-0079-4b82-ac2f-2b1e21cf08ba.xml'
-- 'buses.custom\_enumeration\_of\_interface\_collections\_by\_vendor\_supplied\_callbac'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Customizing Enumeration of Interface Collections for Composite Devices
 ---
 

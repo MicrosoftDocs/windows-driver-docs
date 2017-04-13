@@ -1,9 +1,5 @@
 ---
 Description: Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
-MS-HAID: buses.what\_s\_new\_for\_usb\_in\_windows\_blue
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Windows 8.1: What's new for USB
 ---
 

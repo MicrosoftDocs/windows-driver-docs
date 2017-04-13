@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_TRANSFER\_STATUS
 author: windows-driver-content
 description: EFI\_USBFN\_TRANSFER\_STATUS
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 60631dad-a617-4ed4-a975-5e480cf324e3
 ---
 

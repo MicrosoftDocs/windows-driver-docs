@@ -1,9 +1,5 @@
 ---
 Description: Developing Windows drivers for emulated USB devices (UDE)
-MS-HAID: buses.developing\_windows\_drivers\_for\_emulated\_usb\_host\_controllers\_and\_devices
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Developing Windows drivers for emulated USB devices (UDE)
 ---
 

@@ -1,11 +1,5 @@
 ---
 Description: This topic provides a brief overview about USB bulk transfers. It also provides step-by-step instructions about how a client driver can send and receive bulk data from the device.
-MS-HAID:
-- 'usb-io\_9baaf14b-6b8e-484d-85ea-1e5bb2bbc7bf.xml'
-- 'buses.usb\_bulk\_and\_interrupt\_transfer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: How to send USB bulk transfer requests
 ---
 

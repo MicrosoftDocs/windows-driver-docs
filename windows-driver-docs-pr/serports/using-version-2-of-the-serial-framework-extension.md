@@ -2,12 +2,6 @@
 title: Using Version 2 of the Serial Framework Extension (SerCx2)
 author: windows-driver-content
 description: You can write a serial controller driver that works together with version 2 of the serial framework extension (SerCx2) to manage a serial controller.
-MS-HAID:
-- 'serports.extension\_based\_serial\_controller\_driver\_design\_guide'
-- 'serports.using\_version\_2\_of\_the\_serial\_framework\_extension'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 192C25B2-936B-40D3-A0EA-5D02A234506E
 ---
 

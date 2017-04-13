@@ -1,9 +1,6 @@
 ---
 title: Calculate characters and segments of a draft SMS
 description: Calculate characters and segments of a draft SMS
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: abbec0b0-dfa8-43e9-8b48-e99680d56b42
 ---
 

@@ -2,9 +2,6 @@
 title: Geolocation driver sample for Windows 8.1
 author: windows-driver-content
 description: The geolocation sample driver for Windows 8.1 demonstrates a sensor driver for a Global Positioning System (GPS) device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2675DB47-B973-419C-930D-1F1B9D65E42D
 keywords: ["GPS", "geolocation driver", "GPS driver", "radio management API", "radio-state change", "sensor driver", "UMDF sensor driver"]
 ---

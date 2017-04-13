@@ -2,12 +2,6 @@
 title: Customizing the Printer Details Web Page
 author: windows-driver-content
 description: Customizing the Printer Details Web Page
-MS-HAID:
-- 'inetpri\_2da071ff-7e71-4821-b216-896a11b9678b.xml'
-- 'print.customizing\_the\_printer\_details\_web\_page'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4853d5de-b855-4698-9178-877455e257c5
 keywords: ["customized print Web pages WDK , creating pages", "ASP files WDK printer", "port monitors WDK print , customized Web pages", "customized print Web pages WDK , details page", "details page WDK printer", "print Web pages WDK , details page", "Web pages WDK printer , details page"]
 ---

@@ -1,7 +1,5 @@
 ---
 Description: Scoping Service Events
-MS-HAID: wpddk.the\_wpdservicesampledriver\_scoping\_service\_events
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Scoping Service Events
 ---
 

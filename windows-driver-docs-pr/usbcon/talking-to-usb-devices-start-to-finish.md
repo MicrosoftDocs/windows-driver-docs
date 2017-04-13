@@ -1,9 +1,5 @@
 ---
 Description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write Windows Store apps that gives users access to their peripheral USB device.
-MS-HAID: buses.talking\_to\_usb\_devices\_start\_to\_finish
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Talking to USB devices, start to finish (Windows Store app)
 ---
 

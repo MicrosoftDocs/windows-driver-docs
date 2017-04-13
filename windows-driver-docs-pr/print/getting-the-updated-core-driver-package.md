@@ -2,12 +2,6 @@
 title: Getting the Updated Core Driver Package
 author: windows-driver-content
 description: Getting the Updated Core Driver Package
-MS-HAID:
-- 'prtinst\_e804f5ac-89e8-4218-ae84-75518cfd93b0.xml'
-- 'print.getting\_the\_updated\_core\_driver\_package'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7fac00e4-1d3e-4bb7-95cd-298176de374d
 ---
 

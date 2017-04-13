@@ -2,12 +2,6 @@
 title: USB Video Class Driver
 author: windows-driver-content
 description: USB Video Class Driver
-MS-HAID:
-- 'uvcds\_6D1E8DE4-EF41-497A-8FE3-694BB67C6998.xml'
-- 'stream.usb\_video\_class\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84b5302d-c4c1-4519-bb94-66e80879ce26
 keywords: ["AVStream WDK , USB Video Class drivers", "USB Video Class drivers WDK AVStream", "Video Class drivers WDK USB", "webcams WDK AVStream", "digital video camcorders WDK AVStream", "camcorders WDK AVStream", "video camcorders WDK AVStream", "video streaming devices WDK AVStream", "UVC drivers WDK AVStream", "pins WDK USB Video Class"]
 ---

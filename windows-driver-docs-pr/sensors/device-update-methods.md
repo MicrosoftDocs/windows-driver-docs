@@ -1,9 +1,6 @@
 ---
 title: Device update methods
 author: windows-driver-content
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: EB5158D7-6ACA-42BB-89E2-0937EAB94BA2
 description: 
 ---

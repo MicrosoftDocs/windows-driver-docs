@@ -2,12 +2,6 @@
 title: WIA Properties Supported by an Auto Item
 author: windows-driver-content
 description: WIA Properties Supported by an Auto Item
-MS-HAID:
-- 'WIA\_scanner\_tree\_7a59eefd-076d-4689-aa9c-67683e07ad8f.xml'
-- 'image.wia\_properties\_supported\_by\_an\_auto\_item'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71b3a9ea-e402-4be8-9c62-9463e2a10f27
 ---
 

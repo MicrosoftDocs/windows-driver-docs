@@ -2,12 +2,6 @@
 title: Camera Control Properties
 author: windows-driver-content
 description: Camera Control Properties
-MS-HAID:
-- 'vidcapds\_3c74bd0f-c266-4bc5-bfe1-c62b4d4514e5.xml'
-- 'stream.camera\_control\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36a57245-e89e-4418-b0c4-a4c1479413b2
 keywords: ["camera control properties WDK video capture", "control properties WDK video capture", "PROPSETID_VIDCAP_CAMERACONTROL"]
 ---

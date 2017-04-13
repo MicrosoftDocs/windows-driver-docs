@@ -2,12 +2,6 @@
 title: WIA Item Property and Location Changes
 author: windows-driver-content
 description: WIA Item Property and Location Changes
-MS-HAID:
-- 'WIA\_scanner\_tree\_0ab84a25-06e9-4b61-8aec-dcf51d18006d.xml'
-- 'image.wia\_item\_property\_and\_location\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4e8b3d2a-a28c-41d1-9c4b-8d85f28cf904
 ---
 

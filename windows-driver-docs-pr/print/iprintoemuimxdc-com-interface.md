@@ -2,12 +2,6 @@
 title: IPrintOemUIMXDC COM Interface
 author: windows-driver-content
 description: IPrintOemUIMXDC COM Interface
-MS-HAID:
-- 'custdrvr\_5410b937-9a12-4f3c-880d-c08ef5c5f5e4.xml'
-- 'print.iprintoemuimxdc\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: db6d575e-31d0-4a26-8cf9-5188935610e5
 keywords: ["IPrintOemUIMXDC"]
 ---

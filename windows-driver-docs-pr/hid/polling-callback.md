@@ -2,12 +2,6 @@
 title: Polling Callback
 author: windows-driver-content
 description: Polling Callback
-MS-HAID:
-- 'di\_4755e8ec-d219-4705-ae08-cddf78df23f9.xml'
-- 'hid.polling\_callback'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d86ed391-19c6-47e4-83df-cc2f2298846a
 keywords: ["polling WDK joysticks", "callbacks WDK joysticks", "joysticks WDK HID , polling", "virtual joystick drivers WDK HID , polling", "VJoyD WDK HID , polling", "joysticks WDK HID , positions", "locations WDK joysticks", "positions WDK joysticks"]
 ---

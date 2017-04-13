@@ -1,11 +1,5 @@
 ---
 Description: Why is my USB driver getting out of bandwidth errors?
-MS-HAID:
-- 'usb-io\_cc4c3579-ca5f-47cf-bdac-6a88b05ec7be.xml'
-- 'buses.why\_is\_my\_usb\_driver\_getting\_out\_of\_bandwidth\_errors\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Why is my USB driver getting out of bandwidth errors?
 ---
 

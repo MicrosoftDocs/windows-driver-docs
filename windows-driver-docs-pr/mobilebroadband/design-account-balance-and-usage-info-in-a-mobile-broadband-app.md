@@ -1,9 +1,6 @@
 ---
 title: Design account balance and usage info in a mobile broadband app
 description: Design account balance and usage info in a mobile broadband app
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aec4e4b3-d207-4319-a134-29b4a773c3a6
 ---
 

@@ -2,9 +2,6 @@
 title: EFI\_DISPLAY\_POWER\_STATE
 author: windows-driver-content
 description: EFI\_DISPLAY\_POWER\_STATE
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b4b0980b-db87-44e8-842c-afce0c8df0a0
 ---
 

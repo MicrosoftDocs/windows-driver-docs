@@ -1,11 +1,5 @@
 ---
 Description: CDC and WMCDC Control Models
-MS-HAID:
-- 'usbsystem\_ca96b130-eec6-4ef3-8933-83ea448ec472.xml'
-- 'buses.cdc\_and\_wmcdc\_control\_models'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: CDC and WMCDC Control Models
 ---
 

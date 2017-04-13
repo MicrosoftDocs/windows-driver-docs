@@ -1,9 +1,6 @@
 ---
 title: Mobile operator notification event technical details
 description: Mobile operator notification event technical details
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 639f238a-4bb4-4ac0-9b59-92a761dbc351
 ---
 

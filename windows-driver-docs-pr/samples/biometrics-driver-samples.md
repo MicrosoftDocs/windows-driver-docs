@@ -2,9 +2,6 @@
 title: Biometrics driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: AF13B554-4774-4F62-9C1E-3AED5B753B68
 ---
 

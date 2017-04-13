@@ -2,12 +2,6 @@
 title: New Keyword for GPD Schema
 author: windows-driver-content
 description: New Keyword for GPD Schema
-MS-HAID:
-- 'autocfg\_48aa0c7e-7cd2-4e94-9483-6f72bb9532ce.xml'
-- 'print.new\_keyword\_for\_gpd\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4814d019-0556-4e5a-8c55-c05454bafbd3
 keywords: ["root-level keywords WDK printer autoconfiguration", "GPD files WDK GDL extensions , keywords", "keywords WDK printer autoconfiguration", "in-box autoconfiguration support WDK printer , keywords"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: Create a production device submission
 description: Create a production device submission
-MS-HAID:
-- 'p\_dashboard.create\_a\_production\_device\_submission'
-- 'hw\_dashboard.create\_a\_production\_device\_submission'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf7a4e6b-852a-49a9-beb7-9818aea9cae4
 ---
 

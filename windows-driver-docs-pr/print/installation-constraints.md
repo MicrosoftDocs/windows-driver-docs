@@ -2,12 +2,6 @@
 title: Installation Constraints
 author: windows-driver-content
 description: Installation Constraints
-MS-HAID:
-- 'nt5gpd\_e08d5959-1477-483d-83bb-a109efc681f8.xml'
-- 'print.installation\_constraints'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0adf5a6a-e9de-4bb0-bf1c-fe7eef565840
 keywords: ["installation constraints WDK Unidrv"]
 ---

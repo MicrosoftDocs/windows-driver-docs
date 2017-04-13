@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.StartController
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.StartController
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 431406c3-6b96-4815-a8a0-01100e8a5a5f
 ---
 

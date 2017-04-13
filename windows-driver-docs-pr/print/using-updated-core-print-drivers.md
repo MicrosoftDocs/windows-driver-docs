@@ -2,12 +2,6 @@
 title: Using Updated Core Print Drivers
 author: windows-driver-content
 description: Using Updated Core Print Drivers
-MS-HAID:
-- 'prtinst\_9a959555-ecbf-4ee7-b9ab-128038ea9e83.xml'
-- 'print.using\_updated\_core\_print\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a2a31627-a453-4776-b4f2-13660e4ad7a3
 ---
 

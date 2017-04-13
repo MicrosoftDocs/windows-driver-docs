@@ -2,12 +2,6 @@
 title: Print Ticket and Capabilities Provider Interface in Unidrv/Pscript5 Plug-in
 author: windows-driver-content
 description: Print Ticket and Print Capabilities Provider Interface Implemented by Unidrv/Pscript5 Plug-ins
-MS-HAID:
-- 'drvarch\_3e44d968-573e-47b2-a942-8ec7903f641b.xml'
-- 'print.print\_ticket\_and\_print\_capabilities\_provider\_interface\_implemented\_by\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00dcbbde-e4e4-4fcc-b69f-9c91051e0e29
 keywords: ["Unidrv WDK print"]
 ---

@@ -2,12 +2,6 @@
 title: Still Image SCSI I/O
 author: windows-driver-content
 description: Still Image SCSI I/O
-MS-HAID:
-- 'stillimg\_f5a36165-5ba8-4a3f-9460-c37aa9f1d9fd.xml'
-- 'image.still\_image\_scsi\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f06351e-7dea-4d93-af05-bcc0572655e3
 ---
 

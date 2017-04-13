@@ -2,12 +2,6 @@
 title: Encoder Installation and Registration
 author: windows-driver-content
 description: Encoder Installation and Registration
-MS-HAID:
-- 'encodeds\_108069be-9c2d-404d-b7c8-e1fb9910dd92.xml'
-- 'stream.encoder\_installation\_and\_registration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6ce0c504-977a-4db5-b5ee-128b69ce8eba
 keywords: ["kernel streaming categories WDK encoder", "encoder devices WDK AVStream", "AVStream WDK , encoder devices", "uncompressed data streams WDK AVStream", "encoded streams WDK AVStream", "audio encoder devices WDK AVStream", "video encoder devices WDK AVStream", "INF files WDK encoder", "metadata WDK encoder", "KS proxy WDK AVStream", "Kernel Streaming Proxy WDK AVStream"]
 ---

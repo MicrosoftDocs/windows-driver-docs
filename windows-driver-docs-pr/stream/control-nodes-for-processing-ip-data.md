@@ -2,12 +2,6 @@
 title: Control Nodes for Processing IP Data
 author: windows-driver-content
 description: Control Nodes for Processing IP Data
-MS-HAID:
-- 'bdaov\_b5250a35-9ae4-45f6-a6c7-edc9b73a61c3.xml'
-- 'stream.control\_nodes\_for\_processing\_ip\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6195ffe9-d20c-4687-8d45-abbfc17ba2fa
 keywords: ["control nodes WDK BDA", "nodes WDK BDA", "IP data processing WDK BDA"]
 ---

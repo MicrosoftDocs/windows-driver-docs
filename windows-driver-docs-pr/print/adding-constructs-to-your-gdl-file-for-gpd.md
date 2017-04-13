@@ -2,12 +2,6 @@
 title: Adding Constructs to Your GDL File for GPD
 author: windows-driver-content
 description: Adding Constructs to Your GDL File for GPD
-MS-HAID:
-- 'autocfg\_b3604545-97c2-40f0-b2fa-83d1f437ed50.xml'
-- 'print.adding\_constructs\_to\_your\_gdl\_file\_for\_gpd'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a0ce5a46-152f-47f3-9246-c272224d4be9
 ---
 

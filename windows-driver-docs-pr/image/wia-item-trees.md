@@ -2,12 +2,6 @@
 title: WIA Item Trees
 author: windows-driver-content
 description: WIA Item Trees
-MS-HAID:
-- 'WIA\_tree\_17b1cd50-f2b2-4fe7-ae27-7aaa72605a4b.xml'
-- 'image.wia\_item\_trees'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 98c43595-8547-4916-8671-86652212ac92
 ---
 

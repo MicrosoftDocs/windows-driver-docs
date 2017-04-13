@@ -1,7 +1,5 @@
 ---
 Description: Functional-Category Retrieval
-MS-HAID: wpddk.functional\_category\_retrieval
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Functional-Category Retrieval
 ---
 

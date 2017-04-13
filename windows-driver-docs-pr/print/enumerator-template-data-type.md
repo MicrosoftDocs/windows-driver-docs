@@ -2,12 +2,6 @@
 title: Enumerator Template Data Type
 author: windows-driver-content
 description: Enumerator Template Data Type
-MS-HAID:
-- 'gplfiles\_5cd7849f-34b2-403f-b925-46bbe5b5a452.xml'
-- 'print.enumerator\_template\_data\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: deb95ca1-05a5-47f4-8e2a-1d1aa1ae2261
 keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "ENUMERATOR data type WDK GDL", "ArrayLabel directive WDK GDL", "XMLDataType directive WDK GDL", "EnumeratorList directive WDK GDL", "ElementTags directive WDK GDL"]
 ---

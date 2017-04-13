@@ -1,11 +1,5 @@
 ---
 Description: WMCDC OBEX Control Model (Multiple PDOs)
-MS-HAID:
-- 'usbsystem\_ac76fd6c-8fa9-4a16-9afb-8567a903395a.xml'
-- 'buses.wmcdc\_obex\_control\_model\_\_multiple\_pdos\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: WMCDC OBEX Control Model (Multiple PDOs)
 ---
 

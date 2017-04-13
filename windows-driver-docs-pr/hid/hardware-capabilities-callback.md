@@ -2,12 +2,6 @@
 title: Hardware Capabilities Callback
 author: windows-driver-content
 description: Hardware Capabilities Callback
-MS-HAID:
-- 'di\_b1128c56-d5b3-4f38-8449-670aebfb9320.xml'
-- 'hid.hardware\_capabilities\_callback'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 407505e4-c0d7-4e12-80d7-55801a66f531
 keywords: ["callbacks WDK joysticks", "joysticks WDK HID , capabilities", "hardware capabilities callbacks WDK joysticks"]
 ---

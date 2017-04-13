@@ -2,12 +2,6 @@
 title: Still Image SCSI I/O Control Codes
 author: windows-driver-content
 description: Still Image SCSI I/O Control Codes
-MS-HAID:
-- 'stillimg\_b9c366ea-e257-4373-ad01-cad9b1467d2d.xml'
-- 'image.still\_image\_scsi\_i\_o\_control\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8db15071-61ac-4bb3-9193-da854a15f376
 ---
 

@@ -2,12 +2,6 @@
 title: Print Spooler Architecture
 author: windows-driver-content
 description: Print Spooler Architecture
-MS-HAID:
-- 'splarch\_db01a91d-067b-42d1-b951-6ee58fdc7df3.xml'
-- 'print.print\_spooler\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 712da599-29cb-4df9-9627-49907f0aa500
 keywords: ["spooler architecture WDK print", "print spooler architecture WDK", "jobs WDK print , print spoolers", "print jobs WDK , print spoolers"]
 ---

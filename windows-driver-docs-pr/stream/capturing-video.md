@@ -2,12 +2,6 @@
 title: Capturing Video
 author: windows-driver-content
 description: Capturing Video
-MS-HAID:
-- 'vidcapds\_53cd982f-6622-4c0d-89bd-c2fa894af344.xml'
-- 'stream.capturing\_video'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0adea8fe-1669-4daf-a858-05e014f00a72
 keywords: ["video capture WDK AVStream , capturing process", "capturing video WDK AVStream , capturing process"]
 ---

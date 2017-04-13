@@ -1,11 +1,5 @@
 ---
 Description: CDC Telephone Control Model
-MS-HAID:
-- 'usbsystem\_cd3aa7f1-51f9-4f89-813b-004a31035645.xml'
-- 'buses.cdc\_telephone\_control\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: CDC Telephone Control Model
 ---
 

@@ -1,9 +1,5 @@
 ---
 Description: This topic describes how software enumerates a device.
-MS-HAID: buses.initial\_setup\_by\_software
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Initial setup by software
 ---
 

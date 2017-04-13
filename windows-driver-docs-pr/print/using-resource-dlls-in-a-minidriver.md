@@ -2,12 +2,6 @@
 title: Using Resource DLLs in a Minidriver
 author: windows-driver-content
 description: Using Resource DLLs in a Minidriver
-MS-HAID:
-- 'nt5gpd\_d139be8f-f24b-472f-9eeb-ff31450f2dbb.xml'
-- 'print.using\_resource\_dlls\_in\_a\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b63c48bb-3321-45e0-b37c-a9612a95cc24
 keywords: ["GPD files WDK Unidrv , resource DLLs", "resource DLLs WDK Unidrv"]
 ---

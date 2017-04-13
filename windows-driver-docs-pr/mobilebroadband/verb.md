@@ -1,9 +1,6 @@
 ---
 title: Verb
 description: Verb
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 38edbb37-5fd4-4301-adc0-4a66a7e8a564
 ---
 

@@ -2,9 +2,6 @@
 title: GPIO Interrupt Masks
 author: windows-driver-content
 description: General-purpose I/O (GPIO) pins that are configured as interrupt inputs can be masked and unmasked in addition to being enabled and disabled.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: FD6537DA-2AAA-4646-896D-D5BC834526B6
 ---
 

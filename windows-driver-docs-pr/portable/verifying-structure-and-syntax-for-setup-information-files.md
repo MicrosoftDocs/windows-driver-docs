@@ -1,7 +1,5 @@
 ---
 Description: Verifying Structure and Syntax for Setup Information Files
-MS-HAID: wpddk.verifying\_structure\_and\_syntax\_for\_setup\_information\_files
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Verifying Structure and Syntax for Setup Information Files
 ---
 

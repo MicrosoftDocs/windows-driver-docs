@@ -2,12 +2,6 @@
 title: Command Handling
 author: windows-driver-content
 description: Command Handling
-MS-HAID:
-- 'WIA\_arch\_28d46c57-9cc6-4ad7-aab8-848c0789e19a.xml'
-- 'image.command\_handling'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1b940585-8228-4857-92bf-c77c789f6ad5
 ---
 

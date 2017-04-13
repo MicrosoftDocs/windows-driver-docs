@@ -1,9 +1,6 @@
 ---
 title: MobileBroadbandProfiles
 description: MobileBroadbandProfiles
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 251ece1e-67ec-48d3-977a-f033f1bff8c4
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: WindowsInfo XML schema
 description: WindowsInfo XML schema
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a9c440ec-189c-4148-8f76-d6476aa708c0
 ---
 

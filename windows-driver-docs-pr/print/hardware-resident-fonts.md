@@ -2,12 +2,6 @@
 title: Hardware-Resident Fonts
 author: windows-driver-content
 description: Hardware-Resident Fonts
-MS-HAID:
-- 'nt5gpd\_fc3ca20b-2be4-4112-b735-0d73f2557402.xml'
-- 'print.hardware\_resident\_fonts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 359735c2-bfa3-4c32-82a5-1d455c4eacb1
 keywords: ["printer font descriptions WDK Unidrv , hardware-resident fonts", "hardware-resident fonts WDK Unidrv"]
 ---

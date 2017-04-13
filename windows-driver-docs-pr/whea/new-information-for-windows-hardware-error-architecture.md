@@ -2,12 +2,6 @@
 title: New Information for Windows Hardware Error Architecture
 author: windows-driver-content
 description: New Information for Windows Hardware Error Architecture
-MS-HAID:
-- 'whea\_9ffd5a1b-f728-4a25-8944-bab902cf2d43.xml'
-- 'whea.new\_information\_for\_windows\_hardware\_error\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 258dca19-3988-4fab-bc9f-a93035cbbd0e
 keywords: ["Windows Hardware Error Architecture WDK , new information", "WHEA WDK , new information", "hardware errors WDK WHEA , new information", "errors WDK WHEA , new information about WHEA", "source information WDK WHEA , new"]
 ---

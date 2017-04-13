@@ -1,11 +1,5 @@
 ---
 Description: Video Class Interfaces
-MS-HAID:
-- 'usbsystem\_66ef88c9-87f7-4007-96c0-79b43df1f712.xml'
-- 'buses.video\_class\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Video Class Interfaces
 ---
 

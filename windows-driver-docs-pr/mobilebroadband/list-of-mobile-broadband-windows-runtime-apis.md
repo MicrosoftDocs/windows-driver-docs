@@ -1,9 +1,6 @@
 ---
 title: List of mobile broadband Windows Runtime APIs
 description: List of mobile broadband Windows Runtime APIs
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 45ec97c4-1a58-48a8-ad50-1cd8fcc4763f
 ---
 

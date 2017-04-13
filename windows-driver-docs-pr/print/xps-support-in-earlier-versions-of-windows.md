@@ -2,12 +2,6 @@
 title: XPS Support in Earlier Versions of Windows
 author: windows-driver-content
 description: XPS Support in Earlier Versions of Windows
-MS-HAID:
-- 'drvarch\_cf4d5936-0eb2-417a-bfa8-7a6437c1f3a0.xml'
-- 'print.xps\_support\_in\_earlier\_versions\_of\_windows'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e13b43f5-e926-404d-9f76-c2dfef6e0637
 keywords: ["XPSDrv printer drivers WDK , earlier Windows versions"]
 ---

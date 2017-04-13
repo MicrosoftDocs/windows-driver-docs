@@ -2,12 +2,6 @@
 title: Introduction to Point and Print
 author: windows-driver-content
 description: Introduction to Point and Print
-MS-HAID:
-- 'prtinst\_0504248b-5757-45b7-8eb8-c773ac23d45c.xml'
-- 'print.introduction\_to\_point\_and\_print'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 03902c64-29d7-4b59-a604-e282e4a2c7ae
 keywords: ["Point and Print WDK , about Point and Print"]
 ---

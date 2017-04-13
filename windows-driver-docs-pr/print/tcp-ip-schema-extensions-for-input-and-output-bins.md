@@ -2,12 +2,6 @@
 title: TCP/IP Schema Extensions for Input and Output Bins
 author: windows-driver-content
 description: TCP/IP Schema Extensions for Input and Output Bins
-MS-HAID:
-- 'autocfg\_c33855bb-9cd5-415d-9279-487333b24439.xml'
-- 'print.tcp\_ip\_schema\_extensions\_for\_input\_and\_output\_bins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 942325e8-588c-4171-91fa-366db6e2cb16
 keywords: ["TCP/IP schema extensions WDK printer", "schema extensions WDK TCP/IP", "OutputBin construct", "InputBin construct", "output bins WDK printer", "input bins WDK printer"]
 ---

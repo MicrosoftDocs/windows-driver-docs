@@ -2,12 +2,6 @@
 title: Option Attributes for the InputBin Feature
 author: windows-driver-content
 description: Option Attributes for the InputBin Feature
-MS-HAID:
-- 'nt5gpd\_27710f7c-2846-446f-a437-a579aaaadab4.xml'
-- 'print.option\_attributes\_for\_the\_inputbin\_feature'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0ba5e7af-b44d-4aef-ab1b-17b5773a13d1
 keywords: ["InputBin Feature"]
 ---

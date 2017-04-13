@@ -2,9 +2,6 @@
 title: Reading Data from a SerCx2-Managed Serial Port
 author: windows-driver-content
 description: A serial controller (or UART) typically includes a receive FIFO.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36522E60-3616-4431-8C8C-3EAC4A6E4422
 ---
 

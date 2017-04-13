@@ -2,12 +2,6 @@
 title: Device Stage Document Device Development Kit
 author: windows-driver-content
 description: Device Stage Document Device Development Kit
-MS-HAID:
-- 'prn\_dxpui\_aff77b55-0343-4de0-acc7-a0de9be65592.xml'
-- 'print.device\_stage\_document\_device\_development\_kit'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b66912d9-27f5-41e2-9e10-1e16aca14a8a
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: Developer and preview mode
 description: Developer and preview mode
-MS-HAID:
-- 'p\_dashboard.developer\_and\_preview\_mode'
-- 'hw\_dashboard.developer\_and\_preview\_mode'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4e1c7277-3df1-42e0-ab4d-fa0c3f267047
 ---
 

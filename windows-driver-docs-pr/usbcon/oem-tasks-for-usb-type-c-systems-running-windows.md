@@ -1,9 +1,5 @@
 ---
 Description: This table describes the use cases is supported by Windows 10, and the additional tasks OEMs must perform for those use case to work.
-MS-HAID: buses.oem\_tasks\_for\_usb\_type-c\_systems\_running\_windows
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: OEM tasks for USB Type-C systems
 ---
 

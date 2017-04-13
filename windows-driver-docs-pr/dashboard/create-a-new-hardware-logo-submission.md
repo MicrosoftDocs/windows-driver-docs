@@ -1,12 +1,6 @@
 ---
 title: Create a new WLK device certification submission
 description: Create a new WLK device certification submission
-MS-HAID:
-- 'p\_dashboard.create\_a\_new\_hardware\_logo\_submission'
-- 'hw\_dashboard.create\_a\_new\_hardware\_logo\_submission'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e812eee1-768d-42d6-918e-c716b5c29ea2
 ---
 

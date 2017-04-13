@@ -2,12 +2,6 @@
 title: Rendering Plug-Ins
 author: windows-driver-content
 description: Rendering Plug-Ins
-MS-HAID:
-- 'custdrvr\_b2df98ef-4631-4425-87c4-6860c4cbd405.xml'
-- 'print.rendering\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e55ca083-2790-4929-9e5b-6fce49eb0404
 keywords: ["printer driver customizing WDK , rendering plug-ins", "customizing printer drivers WDK , rendering plug-ins", "rendering plug-ins WDK print", "plug-ins WDK print , rendering", "customizing printer rendering WDK", "printer rendering options WDK", "Pscript WDK print", "plug-ins WDK print , customized rendering"]
 ---

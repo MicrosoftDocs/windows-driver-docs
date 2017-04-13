@@ -1,9 +1,5 @@
 ---
 Description: In this topic, you'll learn about changing a setting within a USB interface. You'll use the UsbInterfaceSetting object to get the current setting and set a setting in the interface.
-MS-HAID: buses.how\_to\_select\_a\_usb\_interface\_setting\_\_windows\_store\_app\_
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: How to select a USB interface setting (Windows Store app)
 ---
 

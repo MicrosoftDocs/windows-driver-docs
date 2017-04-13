@@ -2,12 +2,6 @@
 title: Device-Specific Contexts
 author: windows-driver-content
 description: Device-Specific Contexts
-MS-HAID:
-- 'WIA\_arch\_0500fcdb-9d2a-4320-8d85-db6fc0ffd81f.xml'
-- 'image.device\_specific\_contexts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 29e0d451-57fb-4943-9508-022adffa4650
 ---
 

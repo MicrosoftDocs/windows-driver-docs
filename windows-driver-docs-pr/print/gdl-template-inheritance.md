@@ -2,12 +2,6 @@
 title: GDL Template Inheritance
 author: windows-driver-content
 description: GDL Template Inheritance
-MS-HAID:
-- 'gplfiles\_8f1cc5dd-4695-4182-aa74-9a19c2209560.xml'
-- 'print.gdl\_template\_inheritance'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e3271ee-6b58-4f57-a0be-18715705604f
 keywords: ["GDL WDK , templates", "templates WDK GDL , inheritance", "inheritance WDK GDL", "schemas WDK GDL , inheritance-based schemas", "templates WDK GDL , derived templates"]
 ---

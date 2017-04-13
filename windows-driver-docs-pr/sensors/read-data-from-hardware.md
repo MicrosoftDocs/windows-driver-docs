@@ -2,9 +2,6 @@
 title: Read data from hardware
 author: windows-driver-content
 description: This topic shows you how the sample sensor driver reads data from the sensor hardware (the accelerometer) in response to read requests.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4C01324D-3C4D-4028-A7DE-0AD8F2233071
 ---
 

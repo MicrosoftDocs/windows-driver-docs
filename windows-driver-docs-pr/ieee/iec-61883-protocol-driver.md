@@ -2,12 +2,6 @@
 title: IEC-61883 Protocol Driver
 author: windows-driver-content
 description: IEC-61883 Protocol Driver
-MS-HAID:
-- '61883\_dg\_d13a7214-2f08-4381-b28c-a9560e34c63f.xml'
-- 'IEEE.iec\_61883\_protocol\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d1e639f0-a22f-4005-86a7-fdbfe509265b
 keywords: ["IEC-61883 client drivers WDK IEEE 1394 bus", "61883 WDK IEEE 1394 bus"]
 ---

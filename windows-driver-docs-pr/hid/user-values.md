@@ -2,12 +2,6 @@
 title: User Values
 author: windows-driver-content
 description: User Values
-MS-HAID:
-- 'di\_f77f7f1f-952f-4a34-a766-07a8a5e86575.xml'
-- 'hid.user\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 42b57fc2-fda0-464a-83dc-3e63ef693e9f
 keywords: ["user registry settings WDK joysticks"]
 ---

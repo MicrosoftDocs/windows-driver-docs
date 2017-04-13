@@ -2,12 +2,6 @@
 title: Text Printing Commands
 author: windows-driver-content
 description: Text Printing Commands
-MS-HAID:
-- 'nt5gpd\_24811547-0e74-497c-b6bd-046af9f7bb57.xml'
-- 'print.text\_printing\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9dc4bbea-c4e4-43a2-9c58-6e4aded5efee
 keywords: ["text printing commands WDK Unidrv", "printer commands WDK Unidrv , text"]
 ---

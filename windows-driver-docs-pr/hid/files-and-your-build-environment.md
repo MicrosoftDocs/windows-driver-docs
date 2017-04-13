@@ -2,12 +2,6 @@
 title: Files and Your Build Environment
 author: windows-driver-content
 description: Files and Your Build Environment
-MS-HAID:
-- 'di\_c1ee6950-1553-461d-b05e-12776df4769c.xml'
-- 'hid.files\_and\_your\_build\_environment'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0c85a599-65bb-45e5-a2f8-eefd47e82025
 keywords: ["property sheets WDK DirectInput , files", "game controllers WDK DirectInput , files", "control panels WDK DirectInput , files", "property sheets WDK DirectInput , build environments", "game controllers WDK DirectInput , build environments", "control panels WDK DirectInput , build environments", "build environments WDK DirectInput", "files WDK DirectInput"]
 ---

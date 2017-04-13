@@ -1,9 +1,6 @@
 ---
 title: App startup
 description: App startup
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0aca0d3c-9865-4a11-a9c5-e77cc735ba21
 ---
 

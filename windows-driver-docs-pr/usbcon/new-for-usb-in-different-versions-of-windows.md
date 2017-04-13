@@ -1,9 +1,5 @@
 ---
 Description: The topics in this section point out what's new for USB in different versions of Windows.
-MS-HAID: buses.new\_for\_usb\_in\_different\_versions\_of\_windows
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: New for USB in different versions of Windows
 ---
 

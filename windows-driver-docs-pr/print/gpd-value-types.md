@@ -2,12 +2,6 @@
 title: GPD Value Types
 author: windows-driver-content
 description: GPD Value Types
-MS-HAID:
-- 'nt5gpd\_67321705-c3f4-4ec1-9375-5ff1058d2ac3.xml'
-- 'print.gpd\_value\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 12108642-88fa-4753-9945-b72b00dc64e1
 keywords: ["GPD file entries WDK Unidrv , value types", "value types WDK GPD files"]
 ---

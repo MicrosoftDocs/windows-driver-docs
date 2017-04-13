@@ -2,12 +2,6 @@
 title: Using CPSUI with Printer Drivers
 author: windows-driver-content
 description: Using CPSUI with Printer Drivers
-MS-HAID:
-- 'cpsui\_5cd53110-72df-491c-983d-4eccfedfc65c.xml'
-- 'print.using\_cpsui\_with\_printer\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 898a855d-6a9a-4f98-9ee4-bad439427326
 keywords: ["Common Property Sheet User Interface WDK print , displaying property sheet pages", "CPSUI WDK print , displaying property sheet pages", "property sheet pages WDK print , displaying", "displaying property sheet pages", "Common Property Sheet User Interface WDK print , about CPSUI", "CPSUI WDK print , about CPSUI", "property sheet pages WDK print , about CPSUI with printer drivers"]
 ---

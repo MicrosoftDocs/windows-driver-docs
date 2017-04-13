@@ -2,12 +2,6 @@
 title: Printer Attributes
 author: windows-driver-content
 description: Printer Attributes
-MS-HAID:
-- 'nt5gpd\_f671dd0e-4b10-481d-a011-9002c655607d.xml'
-- 'print.printer\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46254c16-ecd3-47a4-ab2e-5a6687cde1ee
 keywords: ["Unidrv, printer attributes", "GPD file entries WDK Unidrv , printer attributes", "printer attributes WDK Unidrv", "attributes WDK Unidrv", "printer attributes WDK Unidrv , about printer attributes", "Unidrv WDK print"]
 ---

@@ -2,9 +2,6 @@
 title: Atomic Bus Operations
 author: windows-driver-content
 description: To use certain hardware capabilities of an SPB-connected peripheral device, a client of the SPB controller (that is, a peripheral driver) might need to perform a sequence of data transfers to and from the device as an atomic bus operation.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F8CD670F-C817-40BF-AF4B-5F3839E46EFB
 ---
 

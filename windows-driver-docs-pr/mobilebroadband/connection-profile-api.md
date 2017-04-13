@@ -1,9 +1,6 @@
 ---
 title: Connection Profile API
 description: Connection Profile API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 671b0df6-4f4b-4867-86dd-5eb832d86b4b
 ---
 

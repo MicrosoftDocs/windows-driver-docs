@@ -2,12 +2,6 @@
 title: Filter-Centric Processing
 author: windows-driver-content
 description: Filter-Centric Processing
-MS-HAID:
-- 'avsover\_a199fb72-2b5b-42fa-906a-b3e88381338d.xml'
-- 'stream.filter\_centric\_processing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e56c5102-7ea6-4687-ae5e-1550db9500f0
 keywords: ["filter-centric filters WDK AVStream", "AVStream filter-centric filters WDK", "filter types WDK AVStream", "AVStrMiniFilterProcess"]
 ---

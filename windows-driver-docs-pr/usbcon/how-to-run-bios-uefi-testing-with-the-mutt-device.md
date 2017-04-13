@@ -1,9 +1,5 @@
 ---
 Description: BIOS/UEFI testing validates USB boot and handoff of the controller to the operating system.
-MS-HAID: buses.how\_to\_run\_bios\_uefi\_testing\_with\_the\_mutt\_device
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: BIOS/UEFI testing with the MUTT devices
 ---
 

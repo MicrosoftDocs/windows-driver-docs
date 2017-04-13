@@ -1,11 +1,5 @@
 ---
 Description: CDC Abstract Control Model
-MS-HAID:
-- 'usbsystem\_0f00b19e-8fff-42de-901d-d8ab0a138218.xml'
-- 'buses.cdc\_abstract\_control\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: CDC Abstract Control Model
 ---
 

@@ -2,12 +2,6 @@
 title: IEC-61883 Client Drivers
 author: windows-driver-content
 description: IEC-61883 Client Drivers
-MS-HAID:
-- '61883\_dg\_34b0864e-4f68-48b1-8c61-aa45d8258cbc.xml'
-- 'IEEE.iec\_61883\_client\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2a3f62d0-c1f2-4978-8f89-3ed800d697f4
 keywords: ["IEC-61883 client drivers WDK IEEE 1394 bus", "61883 WDK IEEE 1394 bus", "IEEE 1394 WDK buses , IEC-61883 client drivers", "1394 WDK buses , IEC-61883 client drivers", "protocols WDK buses"]
 ---

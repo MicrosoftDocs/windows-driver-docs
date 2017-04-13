@@ -2,12 +2,6 @@
 title: Printer Driver and Plug-in Helper Interfaces
 author: windows-driver-content
 description: Printer Driver and Plug-in Helper Interfaces
-MS-HAID:
-- 'drvarch\_ab6690bb-4a09-453d-b7f9-2c8e9daac76e.xml'
-- 'print.printer\_driver\_and\_plug\_in\_helper\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 21e5ae44-01e8-4f80-8d67-18e4d9c190c5
 ---
 

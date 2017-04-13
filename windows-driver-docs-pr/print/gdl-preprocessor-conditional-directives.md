@@ -2,12 +2,6 @@
 title: GDL Preprocessor Conditional Directives
 author: windows-driver-content
 description: GDL Preprocessor Conditional Directives
-MS-HAID:
-- 'gplfiles\_cdc97bd8-8539-4fb3-9e7c-838afc580732.xml'
-- 'print.gdl\_preprocessor\_conditional\_directives'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5eb4bcbf-3f5e-44cc-b4e5-716a15e43b15
 keywords: ["directives WDK GDL , source file preprocessor directives", "source files WDK GDL , preprocessor directives", "preprocessor directives WDK GDL , conditional directives", "directives WDK GDL , conditional directives", "conditional directives WDK GDL"]
 ---

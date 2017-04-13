@@ -2,12 +2,6 @@
 title: Considerations for writing a sensor driver
 author: windows-driver-content
 description: Considerations for writing a sensor driver
-MS-HAID:
-- 'Sensor\_DG\_DevelopmentBasics\_5b8f416d-8224-4448-a48d-8fe20a8c4d26.xml'
-- 'sensors.considerations\_for\_writing\_a\_sensor\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fec3cfe8-43ad-481a-833a-6f38d04bfdef
 ---
 

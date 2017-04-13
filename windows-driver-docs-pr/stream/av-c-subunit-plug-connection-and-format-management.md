@@ -2,12 +2,6 @@
 title: AV/C Subunit Plug Connection and Format Management
 author: windows-driver-content
 description: AV/C Subunit Plug Connection and Format Management
-MS-HAID:
-- 'AVCguide\_3beb2e72-c87c-4581-8937-f7861599cfcc.xml'
-- 'stream.av\_c\_subunit\_plug\_connection\_and\_format\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c80641d5-3108-4dbc-91b9-7ed295434b97
 keywords: ["plug connections WDK AV/C", "subunit support WDK AV/C", "AV/C WDK , plug connections", "peer subunit driver stacks WDK AV/C", "KS pin connections WDK AV/C", "pin connections WDK AV/C", "formats WDK AV/C", "pin formats WDK AV/C"]
 ---

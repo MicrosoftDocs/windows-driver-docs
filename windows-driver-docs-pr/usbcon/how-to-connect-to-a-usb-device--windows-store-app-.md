@@ -1,9 +1,5 @@
 ---
 Description: In Windows 8.1, you can write a Windows Store app that interacts with a USB device.
-MS-HAID: buses.how\_to\_connect\_to\_a\_usb\_device\_\_windows\_store\_app\_
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: How to connect to a USB device (Windows Store app)
 ---
 

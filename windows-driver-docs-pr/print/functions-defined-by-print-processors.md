@@ -2,12 +2,6 @@
 title: Functions Defined by Print Processors
 author: windows-driver-content
 description: Functions Defined by Print Processors
-MS-HAID:
-- 'provider\_7749dff2-5b74-4984-bafe-db35f155ab7b.xml'
-- 'print.functions\_defined\_by\_print\_processors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ada376f0-515e-4995-b612-4da9523b6fcf
 keywords: ["print processors WDK , functions", "functions WDK print"]
 ---

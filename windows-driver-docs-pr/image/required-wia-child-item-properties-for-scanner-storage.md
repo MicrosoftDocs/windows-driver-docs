@@ -2,12 +2,6 @@
 title: Required WIA Child Item Properties for Scanner Storage
 author: windows-driver-content
 description: Required WIA Child Item Properties for Scanner Storage
-MS-HAID:
-- 'WIA\_scanner\_tree\_682e1f99-7332-4814-b24c-3f6c90e95561.xml'
-- 'image.required\_wia\_child\_item\_properties\_for\_scanner\_storage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 47640b56-d6d9-4ad6-b973-be9fd8992a2c
 ---
 

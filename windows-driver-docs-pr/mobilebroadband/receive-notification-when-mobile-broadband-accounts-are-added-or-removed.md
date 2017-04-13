@@ -1,9 +1,6 @@
 ---
 title: Receive notification when mobile broadband accounts are added or removed
 description: Receive notification when mobile broadband accounts are added or removed
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3131fa6f-61c3-4917-8370-26c8c0a35049
 ---
 

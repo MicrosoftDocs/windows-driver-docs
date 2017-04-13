@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.DetectPort
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.DetectPort
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 66f7500e-e075-495b-9ce0-aed2aa11f66a
 ---
 

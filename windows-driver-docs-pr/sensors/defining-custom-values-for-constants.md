@@ -2,12 +2,6 @@
 title: Defining custom values for sensor constants
 author: windows-driver-content
 description: Defining custom values for sensor constants
-MS-HAID:
-- 'Sensor\_DG\_DevelopmentBasics\_67665444-743c-4955-a8fe-068b9bcaa436.xml'
-- 'sensors.defining\_custom\_values\_for\_constants'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0ed635c2-117d-4a49-a565-31e5a0a9861d
 ---
 

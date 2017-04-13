@@ -2,9 +2,6 @@
 title: Magnetic stripe reader driver sample
 author: windows-driver-content
 description: The magnetic stripe reader driver sample demonstrates how to create a universal driver for a magnetic stripe reader and is intended to be used as a template for creating a new driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92A8C116-F71F-4A74-A453-44C14297BCDD
 ---
 

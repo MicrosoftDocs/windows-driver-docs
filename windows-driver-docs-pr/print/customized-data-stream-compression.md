@@ -2,12 +2,6 @@
 title: Customized Data Stream Compression
 author: windows-driver-content
 description: Customized Data Stream Compression
-MS-HAID:
-- 'custdrvr\_c3932ef7-1784-46c2-ad0a-62aacb298dd6.xml'
-- 'print.customized\_data\_stream\_compression'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e42f3c7-c833-49ee-976b-ed32b921af95
 keywords: ["Unidrv, data stream compression", "data stream compression WDK Unidrv", "customized data stream compression WDK Unidrv", "compressed data streams WDK Unidrv", "Unidrv WDK print"]
 ---

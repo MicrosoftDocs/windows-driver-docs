@@ -1,7 +1,5 @@
 ---
 Description: Installing the WpdHelloWorldDriver Sample
-MS-HAID: wpddk.the\_wpdhelloworlddriver\_installation
-MSHAttr: PreferredLib:/library/windows/hardware
 title: Installing the WpdHelloWorldDriver Sample
 ---
 

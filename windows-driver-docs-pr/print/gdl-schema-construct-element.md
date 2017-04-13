@@ -2,12 +2,6 @@
 title: GDL Schema Construct Element
 author: windows-driver-content
 description: GDL Schema Construct Element
-MS-HAID:
-- 'gplfiles\_216c8fc7-ad4a-4703-b62e-1da18a83777c.xml'
-- 'print.gdl\_schema\_construct\_element'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46653504-4ce7-455c-a22a-a6032cbd6a3e
 keywords: ["GDL WDK , elements", "GDL WDK , schemas", "construct element WDK GDL", "snapshots WDK GDL , structure"]
 ---

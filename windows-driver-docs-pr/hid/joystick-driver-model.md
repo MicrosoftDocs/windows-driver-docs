@@ -2,12 +2,6 @@
 title: Joystick Driver Model
 author: windows-driver-content
 description: Joystick Driver Model
-MS-HAID:
-- 'di\_a8971174-3c3a-4ecf-b043-0954822f8dc2.xml'
-- 'hid.joystick\_driver\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5bd41377-37ae-4ca7-8a6d-93311511ef4e
 keywords: ["joysticks WDK HID , driver model", "virtual joystick drivers WDK HID , driver model", "VJoyD WDK HID , driver model"]
 ---

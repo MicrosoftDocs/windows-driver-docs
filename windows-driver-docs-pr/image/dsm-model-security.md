@@ -2,12 +2,6 @@
 title: DSM Model Security
 author: windows-driver-content
 description: DSM Model Security
-MS-HAID:
-- 'dsm\_des\_theory\_94659a15-70c6-4d39-861f-a1fdd3d87d62.xml'
-- 'image.dsm\_model\_security'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cdcebf26-465f-4bac-a6f9-d8e12745b2e7
 ---
 

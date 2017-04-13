@@ -2,12 +2,6 @@
 title: Common Control Nodes and Filters
 author: windows-driver-content
 description: Common Control Nodes and Filters
-MS-HAID:
-- 'bdaov\_31171a59-459d-4664-b6c0-be4b9350075f.xml'
-- 'stream.common\_control\_nodes\_and\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33e0605b-0fd1-4506-a48b-427976e94dfc
 keywords: ["control nodes WDK BDA", "nodes WDK BDA", "network provider filters WDK BDA", "tuner control nodes WDK BDA", "demodulator control nodes WDK BDA", "capture filters WDK BDA", "PID Filter control node WDK BDA", "IPSink WDK BDA", "NDISIP WDK BDA", "Broadcast Driver Architecture WDK AVStream , control nodes", "BDA WDK AVStream , control nodes"]
 ---

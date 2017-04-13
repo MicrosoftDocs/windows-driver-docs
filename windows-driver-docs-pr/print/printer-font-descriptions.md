@@ -2,12 +2,6 @@
 title: Printer Font Descriptions
 author: windows-driver-content
 description: Printer Font Descriptions
-MS-HAID:
-- 'nt5gpd\_604b810b-ad78-4d5c-8072-548870972820.xml'
-- 'print.printer\_font\_descriptions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1165d880-a729-4225-bd8f-2a0a74fff328
 keywords: ["Unidrv, fonts", "GPD files WDK Unidrv , printer font descriptions", "printer font descriptions WDK Unidrv", "font descriptions WDK Unidrv", "printer font descriptions WDK Unidrv , about printer font descriptions"]
 ---

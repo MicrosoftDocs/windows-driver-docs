@@ -2,12 +2,6 @@
 title: DSM Model Operations
 author: windows-driver-content
 description: DSM Model Operations
-MS-HAID:
-- 'dsm\_des\_theory\_9c59b976-5c45-4738-bd53-78fcf855f68a.xml'
-- 'image.dsm\_model\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46a9fdcb-3990-4fac-a2b3-d41637d9667e
 ---
 

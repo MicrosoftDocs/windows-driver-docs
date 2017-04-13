@@ -2,12 +2,6 @@
 title: Object Bags
 author: windows-driver-content
 description: Object Bags
-MS-HAID:
-- 'avsover\_77963301-d8c4-41ab-9933-3e63a911942a.xml'
-- 'stream.object\_bags'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b7ee5756-1c79-4ead-9999-d13be9a0d3d9
 keywords: ["AVStream object bags WDK", "object bags WDK AVStream", "objects WDK AVStream", "memory management WDK AVStream", "sharing dynamically allocated data for AVStream WDK", "dynamically allocated data WDK AVStream", "AVStream descriptors WDK", "descriptors WDK AVStream"]
 ---

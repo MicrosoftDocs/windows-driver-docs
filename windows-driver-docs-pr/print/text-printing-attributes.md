@@ -2,12 +2,6 @@
 title: Text Printing Attributes
 author: windows-driver-content
 description: Text Printing Attributes
-MS-HAID:
-- 'nt5gpd\_d3a609d1-76bb-4091-a5a3-a56ffed89ced.xml'
-- 'print.text\_printing\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ef48385-8bcf-40f9-8820-c2dfeb60143a
 keywords: ["text printing attributes WDK Unidrv", "general printer attributes WDK Unidrv , text"]
 ---

@@ -2,12 +2,6 @@
 title: Comments and Ignored Blocks
 author: windows-driver-content
 description: Comments and Ignored Blocks
-MS-HAID:
-- 'nt5gpd\_87925af2-dd68-44ec-9595-a0a2176d88ce.xml'
-- 'print.comments\_and\_ignored\_blocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b3a0195-b2c8-491d-abcd-bfaebefbc77d
 keywords: ["GPD file entries WDK Unidrv , ignored blocks", "ignored blocks WDK GPD files", "GPD file entries WDK Unidrv , comments", "comments WDK GPD files"]
 ---

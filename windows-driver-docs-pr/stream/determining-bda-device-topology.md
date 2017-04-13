@@ -2,12 +2,6 @@
 title: Determining BDA Device Topology
 author: windows-driver-content
 description: Determining BDA Device Topology
-MS-HAID:
-- 'bdadg\_62a2e931-f78d-4401-b6c8-1a1748e0710f.xml'
-- 'stream.determining\_bda\_device\_topology'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fdac317e-d4fc-47c9-87d3-bec597f758f5
 keywords: ["method sets WDK BDA , BDA device topology", "property sets WDK BDA , BDA device topology", "KSPROPERTY_BDA_NODE_TYPES", "KSPROPERTY_BDA_PIN_TYPES", "KSPROPERTY_BDA_TEMPLATE_CONNECTIONS", "template filter topology WDK BDA"]
 ---

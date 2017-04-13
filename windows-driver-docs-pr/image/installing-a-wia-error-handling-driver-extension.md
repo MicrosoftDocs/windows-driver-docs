@@ -2,12 +2,6 @@
 title: Installing a WIA Error Handling Driver Extension
 author: windows-driver-content
 description: Installing a WIA Error Handling Driver Extension
-MS-HAID:
-- 'WIA\_error\_92e91887-292e-41b2-ac7a-fc8e83f0627f.xml'
-- 'image.installing\_a\_wia\_error\_handling\_driver\_extension'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8a16b0db-25ed-4512-8b45-0256fed6b83e
 ---
 

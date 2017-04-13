@@ -1,9 +1,6 @@
 ---
 title: Application
 description: Application
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8dd55438-8097-4177-a4ad-94b0ee8d3616
 ---
 

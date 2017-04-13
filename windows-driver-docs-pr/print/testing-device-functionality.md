@@ -2,12 +2,6 @@
 title: Testing Device Functionality
 author: windows-driver-content
 description: Testing Device Functionality
-MS-HAID:
-- 'prntools\_fc562ae7-b315-4346-a713-90550f36f3ab.xml'
-- 'print.testing\_device\_functionality'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51b3e55d-b071-4dbe-b687-5e3ed25aed20
 keywords: ["testing device functionality WDK printer", "device functionality testing WDK printer", "functionality testing WDK printer"]
 ---

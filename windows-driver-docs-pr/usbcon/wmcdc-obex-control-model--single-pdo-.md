@@ -1,11 +1,5 @@
 ---
 Description: WMCDC OBEX Control Model (Single PDO)
-MS-HAID:
-- 'usbsystem\_9f6bd2d7-9d48-4cdb-9158-ba35ac7e9e1d.xml'
-- 'buses.wmcdc\_obex\_control\_model\_\_single\_pdo\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: WMCDC OBEX Control Model (Single PDO)
 ---
 

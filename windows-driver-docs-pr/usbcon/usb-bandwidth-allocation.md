@@ -1,11 +1,5 @@
 ---
 Description: This section provides guidance concerning the careful management of USB bandwidth.
-MS-HAID:
-- 'usb-io\_7e866648-fdad-440f-8e3f-f8b9c05617b3.xml'
-- 'buses.usb\_bandwidth\_allocation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: USB Bandwidth Allocation
 ---
 
