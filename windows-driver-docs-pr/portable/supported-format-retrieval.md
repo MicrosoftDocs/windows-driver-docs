@@ -1,7 +1,7 @@
 ---
 Description: Supported Format Retrieval
-MS-HAID: 'wpddk.supported\_format\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.supported\_format\_retrieval
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Supported Format Retrieval
 ---
 

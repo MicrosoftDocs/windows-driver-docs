@@ -1,12 +1,12 @@
 ---
-Description: 'For certain Universal Serial Bus (USB) devices, such as devices that are accessed by only a single application, you can install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.'
+Description: For certain Universal Serial Bus (USB) devices, such as devices that are accessed by only a single application, you can install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 MS-HAID:
 - 'usbsystem\_aa4e426a-3537-45a7-9952-f9e0d661822e.xml'
 - 'buses.winusb\_installation'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'WinUSB (Winusb.sys) Installation'
+title: WinUSB (Winusb.sys) Installation
 ---
 
 # WinUSB (Winusb.sys) Installation

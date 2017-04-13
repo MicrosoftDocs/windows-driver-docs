@@ -1,7 +1,7 @@
 ---
 Description: Resources
-MS-HAID: 'wpddk.resources'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.resources
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Resources
 ---
 

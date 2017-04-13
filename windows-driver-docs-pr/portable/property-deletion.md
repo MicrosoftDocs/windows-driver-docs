@@ -1,7 +1,7 @@
 ---
 Description: Property Deletion
-MS-HAID: 'wpddk.property\_deletion'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.property\_deletion
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Property Deletion
 ---
 

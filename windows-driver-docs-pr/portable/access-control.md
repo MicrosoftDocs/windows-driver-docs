@@ -1,7 +1,7 @@
 ---
 Description: Access Control
-MS-HAID: 'wpddk.access\_control'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.access\_control
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Access Control
 ---
 

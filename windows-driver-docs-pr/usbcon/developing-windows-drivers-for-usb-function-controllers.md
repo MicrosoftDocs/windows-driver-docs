@@ -1,6 +1,6 @@
 ---
 Description: Developing Windows drivers for USB function controllers
-MS-HAID: 'buses.developing\_windows\_drivers\_for\_usb\_function\_controllers'
+MS-HAID: buses.developing\_windows\_drivers\_for\_usb\_function\_controllers
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

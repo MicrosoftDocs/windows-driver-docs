@@ -1,5 +1,5 @@
 ---
-Description: 'For audio devices, the Windows operating system can enumerate groups of interfaces (interface collections) that are associated with a function and assign a single physical device object (PDO) to each group, even when the device does not have an interface association descriptor (IAD).'
+Description: For audio devices, the Windows operating system can enumerate groups of interfaces (interface collections) that are associated with a function and assign a single physical device object (PDO) to each group, even when the device does not have an interface association descriptor (IAD).
 MS-HAID:
 - 'usbsystem\_71f6d80d-d1d6-4a45-bfe4-c3518802a032.xml'
 - 'buses.enumeration\_of\_interface\_collections\_on\_audio\_devices\_without\_iads'

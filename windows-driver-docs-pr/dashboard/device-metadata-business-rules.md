@@ -167,7 +167,7 @@ Different types of device metadata packages must follow different rules. Additio
 
 -   In an experience, you can only have one default preview locale package and one default released package for each Windows operating system version.
 
-### <span id="BKMK_Unique"></span><span id="bkmk_unique"></span><span id="BKMK_UNIQUE"></span>Unique Device Stage Metadata Submissions
+### <span id="BKMK-Unique"></span><span id="bkmk-unique"></span><span id="BKMK-UNIQUE"></span>Unique Device Stage Metadata Submissions
 
 To submit a PC metadata package, see, [Submit a PC device manifest package](https://msdn.microsoft.com/library/windows/hardware/hh801890.aspx).
 

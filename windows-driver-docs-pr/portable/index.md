@@ -1,7 +1,7 @@
 ---
 Description: Windows Portable Devices
-MS-HAID: 'wpddk.windows\_portable\_devices\_driver'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.windows\_portable\_devices\_driver
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Windows Portable Devices
 ---
 

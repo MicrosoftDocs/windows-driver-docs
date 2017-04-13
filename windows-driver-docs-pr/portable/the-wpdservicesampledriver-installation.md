@@ -1,7 +1,7 @@
 ---
 Description: Installing the WpdServiceSampleDriver Sample
-MS-HAID: 'wpddk.the\_wpdservicesampledriver\_installation'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.the\_wpdservicesampledriver\_installation
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Installing the WpdServiceSampleDriver Sample
 ---
 

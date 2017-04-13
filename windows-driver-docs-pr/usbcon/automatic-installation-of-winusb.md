@@ -1,6 +1,6 @@
 ---
-Description: 'In this topic, you will learn about how a WinUSB device is recognized in Windows 8.'
-MS-HAID: 'buses.automatic\_installation\_of\_winusb'
+Description: In this topic, you will learn about how a WinUSB device is recognized in Windows 8.
+MS-HAID: buses.automatic\_installation\_of\_winusb
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

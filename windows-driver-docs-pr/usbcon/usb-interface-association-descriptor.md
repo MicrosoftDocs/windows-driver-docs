@@ -1,5 +1,5 @@
 ---
-Description: 'USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function. This topic describes how a client driver can determine whether the device contains an IAD for a function.'
+Description: USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function. This topic describes how a client driver can determine whether the device contains an IAD for a function.
 MS-HAID:
 - 'usb-config\_f6a43294-76ae-4a86-8dbd-5ac6f34e4115.xml'
 - 'buses.usb\_interface\_association\_descriptor'

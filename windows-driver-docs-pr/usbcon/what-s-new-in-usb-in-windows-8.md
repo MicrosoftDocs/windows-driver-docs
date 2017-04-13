@@ -1,10 +1,10 @@
 ---
-Description: 'This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.New Driver Stack for USB 3.0 DevicesFeatures Supported by the New StackClient contract version for USB client driversNew Routines for Allocating and Building URBsNew User Mode I/O Control Requests for USB 3.0 HubsNew Compatible ID for WinUSBNew Visual Studio templates for USB client drivers (\*New for Beta)UASP driverBoot supportEnhanced debugging and diagnostic capabilities New USB-specific failure messages in Device ManagerFor information about new features in USB in general, see New for USB Drivers.'
-MS-HAID: 'buses.what\_s\_new\_in\_usb\_in\_windows\_8'
+Description: This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.New Driver Stack for USB 3.0 DevicesFeatures Supported by the New StackClient contract version for USB client driversNew Routines for Allocating and Building URBsNew User Mode I/O Control Requests for USB 3.0 HubsNew Compatible ID for WinUSBNew Visual Studio templates for USB client drivers (\*New for Beta)UASP driverBoot supportEnhanced debugging and diagnostic capabilities New USB-specific failure messages in Device ManagerFor information about new features in USB in general, see New for USB Drivers.
+MS-HAID: buses.what\_s\_new\_in\_usb\_in\_windows\_8
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'Windows 8: What's new for USB'
+title: Windows 8: What's new for USB
 ---
 
 # Windows 8: What's new for USB

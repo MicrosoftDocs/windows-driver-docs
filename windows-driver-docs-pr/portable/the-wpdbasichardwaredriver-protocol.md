@@ -1,7 +1,7 @@
 ---
 Description: The WpdBasicHardwareDriver Protocol
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_protocol'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.the\_wpdbasichardwaredriver\_protocol
+MSHAttr: PreferredLib:/library/windows/hardware
 title: The WpdBasicHardwareDriver Protocol
 ---
 

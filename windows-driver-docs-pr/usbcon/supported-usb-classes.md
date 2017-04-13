@@ -1,5 +1,5 @@
 ---
-Description: 'This topic lists the Microsoft-provided drivers for the supported USB device classes.'
+Description: This topic lists the Microsoft-provided drivers for the supported USB device classes.
 MS-HAID:
 - 'usbsystem\_83d29b8a-e051-41c1-9aa8-2f042ff194a7.xml'
 - 'buses.supported\_usb\_classes'

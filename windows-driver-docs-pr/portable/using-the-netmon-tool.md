@@ -1,7 +1,7 @@
 ---
-Description: 'The Network Monitor tool (NetMon.exe) is a Windows-based application that you can use to view traces from WPD components.'
-MS-HAID: 'wpddk.using\_the\_netmon\_tool'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+Description: The Network Monitor tool (NetMon.exe) is a Windows-based application that you can use to view traces from WPD components.
+MS-HAID: wpddk.using\_the\_netmon\_tool
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Using the Network Monitor Tool
 ---
 

@@ -1,7 +1,7 @@
 ---
 Description: The COM Component Files
-MS-HAID: 'wpddk.the\_com\_component\_files'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.the\_com\_component\_files
+MSHAttr: PreferredLib:/library/windows/hardware
 title: The COM Component Files
 ---
 

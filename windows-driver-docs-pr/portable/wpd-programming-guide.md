@@ -1,7 +1,7 @@
 ---
 Description: WPD Programming Guide
-MS-HAID: 'wpddk.wpd\_programming\_guide'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.wpd\_programming\_guide
+MSHAttr: PreferredLib:/library/windows/hardware
 title: WPD Programming Guide
 ---
 

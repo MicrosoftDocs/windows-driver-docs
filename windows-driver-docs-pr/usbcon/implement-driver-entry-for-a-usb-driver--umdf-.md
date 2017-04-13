@@ -1,10 +1,10 @@
 ---
-Description: 'In this topic you'll use the USB User-Mode Driver template provided with Microsoft Visual Studio 2012 to write a user-mode driver framework (UMDF)-based client driver.'
-MS-HAID: 'buses.implement\_driver\_entry\_for\_a\_usb\_driver\_\_umdf\_'
+Description: In this topic you'll use the USB User-Mode Driver template provided with Microsoft Visual Studio 2012 to write a user-mode driver framework (UMDF)-based client driver.
+MS-HAID: buses.implement\_driver\_entry\_for\_a\_usb\_driver\_\_umdf\_
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'How to write your first USB client driver (UMDF)'
+title: How to write your first USB client driver (UMDF)
 ---
 
 # How to write your first USB client driver (UMDF)

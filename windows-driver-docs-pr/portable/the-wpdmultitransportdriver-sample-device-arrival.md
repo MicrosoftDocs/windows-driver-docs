@@ -1,7 +1,7 @@
 ---
 Description: MultiTransport Device Support
-MS-HAID: 'wpddk.the\_wpdmultitransportdriver\_sample\_device\_arrival'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.the\_wpdmultitransportdriver\_sample\_device\_arrival
+MSHAttr: PreferredLib:/library/windows/hardware
 title: MultiTransport Device Support
 ---
 

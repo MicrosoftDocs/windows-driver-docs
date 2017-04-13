@@ -1,5 +1,5 @@
 ---
-Description: 'Interfaces on a composite USB device can be grouped in collections. The USB Generic Parent Driver (Usbccgp.sys) can enumerate interface collections in four ways.'
+Description: Interfaces on a composite USB device can be grouped in collections. The USB Generic Parent Driver (Usbccgp.sys) can enumerate interface collections in four ways.
 MS-HAID:
 - 'usbsystem\_9b6a6a90-7beb-48f2-9b45-2df226830e29.xml'
 - 'buses.support\_for\_interface\_collections'

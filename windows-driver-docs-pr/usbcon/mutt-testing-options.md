@@ -1,6 +1,6 @@
 ---
-Description: 'Before using MUTT devices, you must prepare the test system.'
-MS-HAID: 'buses.mutt\_testing\_options'
+Description: Before using MUTT devices, you must prepare the test system.
+MS-HAID: buses.mutt\_testing\_options
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

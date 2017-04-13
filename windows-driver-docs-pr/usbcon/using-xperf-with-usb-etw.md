@@ -1,6 +1,6 @@
 ---
-Description: 'This topic describes how to use Xperf with Netmon to analyze USB trace data.'
-MS-HAID: 'buses.using\_xperf\_with\_usb\_etw'
+Description: This topic describes how to use Xperf with Netmon to analyze USB trace data.
+MS-HAID: buses.using\_xperf\_with\_usb\_etw
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

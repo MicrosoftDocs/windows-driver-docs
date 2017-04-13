@@ -16,7 +16,7 @@ This section provides a glimpse of what's new for Windows Store device apps. For
 ## <span id="What_s_new_for_Windows_10"></span><span id="what_s_new_for_windows_10"></span><span id="WHAT_S_NEW_FOR_WINDOWS_10"></span>What's new for Windows 10
 
 
-With Windows 10, there are no changes to the Windows Store device app functionality. The Windows 8.1 processes for building, testing, and submitting Windows Store device apps will continue to work with Windows 10.
+With Windows 10, there are no changes to the Windows Store device app functionality. The Windows 8.1 processes for building, testing, and submitting Windows Store device apps will continue to work with Windows 10. However, it is recomended to develop a Universal Windows Platform app with Custom Capabilities. For more info, see [Developing a Universal Windows Platform app with Custom Capabilities](developing-a-universal-windows-platform-app-with-custom-capabilities.md)
 
 ## <span id="Device_metadata_wizard"></span><span id="device_metadata_wizard"></span><span id="DEVICE_METADATA_WIZARD"></span>Device metadata wizard
 

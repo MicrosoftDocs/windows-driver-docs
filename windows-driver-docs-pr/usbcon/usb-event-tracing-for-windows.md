@@ -1,6 +1,6 @@
 ---
-Description: 'This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).'
-MS-HAID: 'buses.usb\_event\_tracing\_for\_windows'
+Description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
+MS-HAID: buses.usb\_event\_tracing\_for\_windows
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

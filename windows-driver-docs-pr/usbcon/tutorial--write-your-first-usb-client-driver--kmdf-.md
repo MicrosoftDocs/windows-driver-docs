@@ -1,10 +1,10 @@
 ---
-Description: 'In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2012 to write a simple kernel-mode driver framework (KMDF)-based client driver.'
-MS-HAID: 'buses.tutorial\_\_write\_your\_first\_usb\_client\_driver\_\_kmdf\_'
+Description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2012 to write a simple kernel-mode driver framework (KMDF)-based client driver.
+MS-HAID: buses.tutorial\_\_write\_your\_first\_usb\_client\_driver\_\_kmdf\_
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'How to write your first USB client driver (KMDF)'
+title: How to write your first USB client driver (KMDF)
 ---
 
 # How to write your first USB client driver (KMDF)

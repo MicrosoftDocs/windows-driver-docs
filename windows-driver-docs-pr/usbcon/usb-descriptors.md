@@ -1,5 +1,5 @@
 ---
-Description: 'A USB device provides information about itself in data structures called USB descriptors. This section provides information about various descriptors that a client driver can obtain from a USB device.'
+Description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about various descriptors that a client driver can obtain from a USB device.
 MS-HAID:
 - 'usb-config\_c74bfa15-fd4c-4831-91ad-5b9fed7a0085.xml'
 - 'buses.usb\_descriptors'

@@ -1,7 +1,7 @@
 ---
 Description: Handling the Entry and Exit Points
-MS-HAID: 'wpddk.handling\_the\_entry\_and\_exit\_points'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.handling\_the\_entry\_and\_exit\_points
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Handling the Entry and Exit Points
 ---
 

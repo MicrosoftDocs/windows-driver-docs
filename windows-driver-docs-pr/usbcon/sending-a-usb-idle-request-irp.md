@@ -1,5 +1,5 @@
 ---
-Description: 'When a device goes idle, the client driver informs the bus driver by sending an idle request IRP (IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION).'
+Description: When a device goes idle, the client driver informs the bus driver by sending an idle request IRP (IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION).
 MS-HAID:
 - 'usbpower\_ed24b6c4-8cfd-48de-89d3-258940b1cad8.xml'
 - 'buses.sending\_a\_usb\_idle\_request\_irp'

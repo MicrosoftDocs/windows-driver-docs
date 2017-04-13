@@ -1,6 +1,6 @@
 ---
-Description: 'Common failures for USB tests in the Windows HCK.'
-MS-HAID: 'buses.common\_failures\_for\_usb\_tests\_in\_the\_windows\_hck'
+Description: Common failures for USB tests in the Windows HCK.
+MS-HAID: buses.common\_failures\_for\_usb\_tests\_in\_the\_windows\_hck
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

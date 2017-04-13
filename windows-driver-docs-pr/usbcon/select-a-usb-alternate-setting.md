@@ -1,6 +1,6 @@
 ---
-Description: 'This topic describes the steps for issuing a select-interface request to activate an alternate setting in a USB interface.'
-MS-HAID: 'buses.select\_a\_usb\_alternate\_setting'
+Description: This topic describes the steps for issuing a select-interface request to activate an alternate setting in a USB interface.
+MS-HAID: buses.select\_a\_usb\_alternate\_setting
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

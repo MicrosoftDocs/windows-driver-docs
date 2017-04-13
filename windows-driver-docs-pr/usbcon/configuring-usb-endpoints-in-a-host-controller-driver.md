@@ -1,6 +1,6 @@
 ---
-Description: 'UCX manages the creation of endpoint objects, and notifies the host controller to program or deprogram endpoints into the USB host controller.'
-MS-HAID: 'buses.configuring\_usb\_endpoints\_in\_a\_host\_controller\_driver'
+Description: UCX manages the creation of endpoint objects, and notifies the host controller to program or deprogram endpoints into the USB host controller.
+MS-HAID: buses.configuring\_usb\_endpoints\_in\_a\_host\_controller\_driver
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

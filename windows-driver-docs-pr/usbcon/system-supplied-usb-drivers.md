@@ -1,12 +1,12 @@
 ---
-Description: 'This topics in this section describe the class drivers, generic client driver, and the parent composite driver that are provided by Microsoft.'
+Description: This topics in this section describe the class drivers, generic client driver, and the parent composite driver that are provided by Microsoft.
 MS-HAID:
 - 'usbsystem\_acf1cbfb-6227-4502-8eca-2b444d52a1da.xml'
 - 'buses.system\_supplied\_usb\_drivers'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-title: 'Microsoft-provided USB drivers'
+title: Microsoft-provided USB drivers
 ---
 
 # Microsoft-provided USB drivers

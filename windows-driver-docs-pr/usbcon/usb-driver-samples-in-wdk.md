@@ -1,6 +1,6 @@
 ---
-Description: 'The topic contains basic information about the USB samples that are available for download from the Windows driver samples repository on GitHub.'
-MS-HAID: 'buses.usb\_driver\_samples\_in\_wdk'
+Description: The topic contains basic information about the USB samples that are available for download from the Windows driver samples repository on GitHub.
+MS-HAID: buses.usb\_driver\_samples\_in\_wdk
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

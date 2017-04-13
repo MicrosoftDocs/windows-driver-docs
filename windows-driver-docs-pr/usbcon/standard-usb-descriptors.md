@@ -1,6 +1,6 @@
 ---
-Description: 'A USB device provides information about itself in data structures called USB descriptors. This section provides information about device, configuration, interface, and endpoint descriptors and ways to retrieve them from a USB device.'
-MS-HAID: 'buses.standard\_usb\_descriptors'
+Description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about device, configuration, interface, and endpoint descriptors and ways to retrieve them from a USB device.
+MS-HAID: buses.standard\_usb\_descriptors
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

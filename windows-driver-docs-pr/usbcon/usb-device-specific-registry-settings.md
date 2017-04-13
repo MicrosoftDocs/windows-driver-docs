@@ -1,6 +1,6 @@
 ---
-Description: 'This topic describes the device-specific registry entries.'
-MS-HAID: 'buses.usb\_device-specific\_registry\_settings'
+Description: This topic describes the device-specific registry entries.
+MS-HAID: buses.usb\_device-specific\_registry\_settings
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'

@@ -1,7 +1,7 @@
 ---
 Description: Requirements
-MS-HAID: 'wpddk.requirements'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.requirements
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Requirements
 ---
 

@@ -1,7 +1,7 @@
 ---
 Description: Supporting Device Events
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_supporting\_device\_events'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
+MS-HAID: wpddk.the\_wpdbasichardwaredriver\_supporting\_device\_events
+MSHAttr: PreferredLib:/library/windows/hardware
 title: Supporting Device Events
 ---
 
