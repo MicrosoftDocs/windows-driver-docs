@@ -13,9 +13,9 @@ To successfully match service metadata, Windows reads information from the SIM c
 
 Use the link from the following list that is appropriate for your network:
 
--   [Matching on GSM networks](#Matching-on-GSM-networks)
+-   [Matching on GSM networks](#matching-on-gsm-networks)
 
--   [Matching on CDMA networks](#Matching-on-CDMA-networks)
+-   [Matching on CDMA networks](#matching-on-cdma-networks)
 
 For info about the hardware that is required to properly match service metadata to an MNO and MVNO, see [Mobile operator hardware overview](mobile-operator-hardware-overview.md).
 
