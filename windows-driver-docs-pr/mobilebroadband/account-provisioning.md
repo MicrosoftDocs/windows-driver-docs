@@ -55,21 +55,21 @@ A provisioning file can include a directive for Windows to automatically retriev
 
 The provisioning metadata includes the following sections:
 
--   [Global](#bkmk-contents-global)
+-   [Global](#bkmk_contents_global)
 
--   [Activation](#bkmk-contents-activation)
+-   [Activation](#bkmk_contents_activation)
 
--   [Mobile broadband information](#bkmk-contents-mbninfo)
+-   [Mobile broadband information](#bkmk_contents_mbninfo)
 
--   [Wi-Fi information](#bkmk-contents-wifi)
+-   [Wi-Fi information](#bkmk_contents_wifi)
 
--   [Plan information](#bkmk-contents-plan)
+-   [Plan information](#bkmk_contents_plan)
 
--   [Refresh](#bkmk-contents-refresh)
+-   [Refresh](#bkmk_contents_refresh)
 
--   [Signature](#bkmk-contents-signature)
+-   [Signature](#bkmk_contents_signature)
 
--   [Permitted combinations](#bkmk-usage-permittedcombos)
+-   [Permitted combinations](#bkmk_usage_permittedcombos)
 
 For more info about these sections, see [CarrierControlSchema schema](https://msdn.microsoft.com/library/windows/apps/hh868312).
 
