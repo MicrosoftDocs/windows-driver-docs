@@ -2,12 +2,6 @@
 title: Enumerating Legacy COM Ports
 author: windows-driver-content
 description: Enumerating Legacy COM Ports
-MS-HAID:
-- 'sseovr\_6ae5c2bb-a184-483e-9265-9a35daa2d5b6.xml'
-- 'serports.enumerating\_legacy\_com\_ports'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36a73153-0e3e-4b41-9b3d-08b29b5220fe
 keywords: ["Serial driver WDK , COM ports", "COM ports WDK serial devices", "serial devices WDK , COM ports", "enumerating COM ports WDK serial devices", "legacy COM ports WDK serial devices"]
 ---

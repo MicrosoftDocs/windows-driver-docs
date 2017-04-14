@@ -2,12 +2,6 @@
 title: Sensor Driver Design Guide
 author: windows-driver-content
 description: Sensor Driver Design Guide
-MS-HAID:
-- 'Sensor\_DG\_top\_575550c9-172d-4dbc-9fc8-8ea01f9811ba.xml'
-- 'sensors.sensor\_driver\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b787b398-8bcd-4efd-81bf-36a4d9626347
 ---
 

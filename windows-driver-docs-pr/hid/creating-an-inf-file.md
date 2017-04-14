@@ -2,12 +2,6 @@
 title: Creating an INF File
 author: windows-driver-content
 description: Creating an INF File
-MS-HAID:
-- 'di\_fcab54a8-0698-436a-b0e4-f7706892f781.xml'
-- 'hid.creating\_an\_inf\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c45fb42c-f0d6-4ab8-9a19-4bbf98c4cf8c
 keywords: ["joysticks WDK HID , INF files", "virtual joystick drivers WDK HID , INF files", "VJoyD WDK HID , INF files", "INF files WDK joysticks", "INF files WDK joysticks , creating"]
 ---

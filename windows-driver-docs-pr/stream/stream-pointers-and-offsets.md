@@ -2,12 +2,6 @@
 title: Stream Pointers and Offsets
 author: windows-driver-content
 description: Stream Pointers and Offsets
-MS-HAID:
-- 'avsover\_017302c5-7aed-4fe9-830c-b0ee1cf55970.xml'
-- 'stream.stream\_pointers\_and\_offsets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ef9dc015-f0ee-49a6-8774-cfb0223c8b12
 keywords: ["stream pointers WDK AVStream , offsets", "offsets WDK AVStream", "stream positions WDK AVStream", "input positions WDK AVStream", "output positions WDK AVStream", "AVStream pointers WDK", "AVStream offsets WDK"]
 ---

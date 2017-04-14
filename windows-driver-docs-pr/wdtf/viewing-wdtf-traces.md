@@ -2,12 +2,6 @@
 title: Enabling and Viewing WDTF Traces
 author: windows-driver-content
 description: Enabling and Viewing WDTF Traces
-MS-HAID:
-- 'wdtfdevguide\_81ca15ff-62b8-4040-adbf-4e4e4aae0d86.xml'
-- 'dtf.viewing\_wdtf\_traces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9bed6042-3691-4a5e-a143-51acf746b1ae
 keywords: ["Windows Device Testing Framework WDK , tracing events", "WDTF WDK , tracing events", "tracing WDK WDTF"]
 ---

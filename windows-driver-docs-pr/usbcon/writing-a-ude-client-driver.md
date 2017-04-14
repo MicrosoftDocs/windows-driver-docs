@@ -1,9 +1,5 @@
 ---
-Description: 'Describes the behavior of USB Device Emulation(UDE) class extension and tasks that a client driver must perform for an emulated host controller and devices attached to it.'
-MS-HAID: 'buses.writing\_a\_ude\_client\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Describes the behavior of USB Device Emulation(UDE) class extension and tasks that a client driver must perform for an emulated host controller and devices attached to it.
 title: Write a UDE client driver
 ---
 

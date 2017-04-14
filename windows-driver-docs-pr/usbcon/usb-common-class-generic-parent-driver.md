@@ -1,12 +1,6 @@
 ---
-Description: 'This section describes the Usbccgp.sys driver provided by Microsoft for composite devices.'
-MS-HAID:
-- 'usbsystem\_25177178-1554-418c-aa1b-5d6b3b90749e.xml'
-- 'buses.usb\_common\_class\_generic\_parent\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'USB Generic Parent Driver (Usbccgp.sys)'
+Description: This section describes the Usbccgp.sys driver provided by Microsoft for composite devices.
+title: USB Generic Parent Driver (Usbccgp.sys)
 ---
 
 # USB Generic Parent Driver (Usbccgp.sys)

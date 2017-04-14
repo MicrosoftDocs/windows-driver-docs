@@ -1,9 +1,6 @@
 ---
 title: Windows Hardware Dev Center dashboard
 description: The Windows Hardware Dev Center dashboard allows you to submit hardware for certification, and code sign and publish your drivers to Windows Update.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: da6fe9f5-7495-4aec-b6c2-c53402cb8ea0
 ---
 

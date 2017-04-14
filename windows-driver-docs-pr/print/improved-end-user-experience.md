@@ -2,12 +2,6 @@
 title: Improved End-User Experience
 author: windows-driver-content
 description: Improved End-User Experience
-MS-HAID:
-- 'drvarch\_3feedb5b-44b2-42fe-846c-ba697f2ae5f7.xml'
-- 'print.improved\_end\_user\_experience'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d87062f2-2832-4443-b9f0-97e34f79c47f
 keywords: ["Print Tickets WDK , XPSDrv", "XPSDrv printer drivers WDK , end-user improvements", "Print Capabilities WDK , XPSDrv"]
 ---

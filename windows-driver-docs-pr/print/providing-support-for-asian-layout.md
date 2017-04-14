@@ -2,12 +2,6 @@
 title: Providing Support for Asian Layout
 author: windows-driver-content
 description: Providing Support for Asian Layout
-MS-HAID:
-- 'provider\_dcdee000-4fca-411b-bdc7-511a38ec321b.xml'
-- 'print.providing\_support\_for\_asian\_layout'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 38c7dfca-ce30-4967-84a4-e2f40bba8c57
 keywords: ["print processors WDK , Asian languages", "Asian languages WDK print", "booklets WDK print", "N-up printing WDK", "reverse orientation WDK print", "Arabic print support WDK", "Japanese print support WDK", "Urdu print support WDK", "international considerations WDK", "printing Asian languages WDK", "languages WDK print", "right to left reading languages WDk print"]
 ---

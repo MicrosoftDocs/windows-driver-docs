@@ -2,12 +2,6 @@
 title: ServiceID
 author: windows-driver-content
 description: ServiceID
-MS-HAID:
-- 'provider\_cb997733-e621-45ff-bd45-a120c1783eca.xml'
-- 'print.serviceid'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ef7ff736-e5ec-47cf-b3b6-64988f43f594
 keywords: ["WSDMON port monitors WDK , ServiceID command", "ServiceID"]
 ---

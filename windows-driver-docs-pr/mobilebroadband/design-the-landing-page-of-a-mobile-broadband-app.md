@@ -1,9 +1,6 @@
 ---
 title: Design the landing page of a mobile broadband app
 description: Design the landing page of a mobile broadband app
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a42886f-8a32-4576-af31-65443bb718ca
 ---
 

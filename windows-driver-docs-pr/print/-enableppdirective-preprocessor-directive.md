@@ -2,12 +2,6 @@
 title: \ EnablePPDirective Preprocessor Directive
 author: windows-driver-content
 description: \ EnablePPDirective Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_301b6e4e-f6f6-4f39-b51d-68bcd38d0a66.xml'
-- 'print.\_enableppdirective\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aebb11ec-b281-461e-b3fd-65e9b2773049
 keywords: ["preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK", "EnablePPDirective directive WDK GDL"]
 ---

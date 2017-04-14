@@ -2,12 +2,6 @@
 title: Opening and Initializing a 16550 UART-Compatible Interface
 author: windows-driver-content
 description: Opening and Initializing a 16550 UART-Compatible Interface
-MS-HAID:
-- 'sseovr\_072feb6d-a24b-4dc5-99de-1da8e041df3d.xml'
-- 'serports.opening\_and\_initializing\_a\_16550\_uart\_compatible\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 341cc1cb-bbcf-4514-8f5d-8970e49923c2
 keywords: ["Serial driver WDK , 16550 UART-compatible interfaces", "universal asynchronous receiver-transmitters WDK serial devices", "UART WDK serial devices", "16550 UART-compatible interfaces WDK serial devices", "initializing 16550 UART-compatible interfaces"]
 ---

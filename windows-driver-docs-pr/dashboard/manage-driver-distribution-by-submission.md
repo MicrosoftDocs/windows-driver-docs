@@ -1,9 +1,6 @@
 ---
 title: Manage driver distribution with shipping labels
 description: After you have created your hardware submissions and uploaded your driver packages, you can create shipping labels to distribute your drivers.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 61D6735E-6DFF-435A-9AF8-63C2020C0CF0
 ---
 

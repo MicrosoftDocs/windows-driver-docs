@@ -1,9 +1,6 @@
 ---
 title: SIM PIN API
 description: SIM PIN API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f1e1dc0f-71ee-47ff-971b-cec36bfa0643
 ---
 

@@ -1,7 +1,5 @@
 ---
 Description: Setting Property Values
-MS-HAID: 'wpddk.setting\_property\_values'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Setting Property Values
 ---
 

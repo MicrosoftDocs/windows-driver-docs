@@ -2,12 +2,6 @@
 title: Creating the Plug-In
 author: windows-driver-content
 description: Creating the Plug-In
-MS-HAID:
-- 'custdrvr\_97f421f6-6f23-414c-a2f4-6a608c578adf.xml'
-- 'print.creating\_the\_plug\_in'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4e52c855-f2c6-49b5-ac79-96dcac785579
 keywords: ["COM interfaces WDK print , creating plug-ins", "plug-ins WDK print , creating"]
 ---

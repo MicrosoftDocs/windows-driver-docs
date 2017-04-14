@@ -1,9 +1,6 @@
 ---
 title: Device Services Extension API
 description: Device Services Extension API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e1539ae1-78fd-4d79-81bf-4030e69e191c
 ---
 

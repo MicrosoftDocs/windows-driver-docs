@@ -2,12 +2,6 @@
 title: Enabling TWAIN Capability Pass-Through in a WIA Driver
 author: windows-driver-content
 description: Enabling TWAIN Capability Pass-Through in a WIA Driver
-MS-HAID:
-- 'WIA\_drv\_scan\_2be90435-6fa6-465b-b7ed-34bf64f37706.xml'
-- 'image.enabling\_twain\_capability\_pass\_through\_in\_a\_wia\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b2108109-9e41-481d-bc25-67327420faf9
 ---
 

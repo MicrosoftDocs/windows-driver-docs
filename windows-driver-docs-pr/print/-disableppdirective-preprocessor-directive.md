@@ -2,12 +2,6 @@
 title: \ DisablePPDirective Preprocessor Directive
 author: windows-driver-content
 description: \ DisablePPDirective Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_b3d3ffab-0035-4759-9568-3b2e08e3ba0c.xml'
-- 'print.\_disableppdirective\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f85a6b1-a72f-45e2-901a-7bce94b4793c
 keywords: ["preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK", "DisablePPDirective directive WDK GDL"]
 ---

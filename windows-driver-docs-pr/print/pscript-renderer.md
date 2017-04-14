@@ -2,12 +2,6 @@
 title: Pscript Renderer
 author: windows-driver-content
 description: Pscript Renderer
-MS-HAID:
-- 'pscript\_e429748d-ef05-4632-9a3b-21c97d76f5d9.xml'
-- 'print.pscript\_renderer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b1707a83-c5c9-4578-8603-7c19de4960ed
 keywords: ["PostScript Printer Driver WDK print , renderer", "Pscript WDK print , renderer", "renderer WDK Pscript"]
 ---

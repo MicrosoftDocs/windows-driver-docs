@@ -2,12 +2,6 @@
 title: Minidriver Flow of Control
 author: windows-driver-content
 description: Minidriver Flow of Control
-MS-HAID:
-- 'strmini-design\_d34f4c56-69b2-49e7-b8fa-da424016137a.xml'
-- 'stream.minidriver\_flow\_of\_control'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c3c23d32-4023-445b-bd89-e0b454bec1ed
 keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , flow of control", "streaming minidrivers WDK Windows 2000 Kernel , flow of control", "minidrivers WDK Windows 2000 Kernel Streaming , flow of control", "uninitialized streaming minidrivers WDK streaming minidriver", "initializing streaming minidrivers WDK Windows 2000 Kernel"]
 ---

@@ -2,12 +2,6 @@
 title: WS-DSP Scenario Device-Initiated Scan
 author: windows-driver-content
 description: WS-DSP Scenario Device-Initiated Scan
-MS-HAID:
-- 'dsm\_des\_theory\_7e17050a-2b18-46e2-a4a4-94683fb3cba1.xml'
-- 'image.ws\_dsp\_scenario\_\_device\_initiated\_scan'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aa301f2c-64f6-4b4f-bb48-f3b2a10ea08d
 ---
 

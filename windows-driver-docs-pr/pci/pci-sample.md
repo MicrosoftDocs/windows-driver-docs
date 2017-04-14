@@ -2,9 +2,6 @@
 title: PCI Sample
 author: windows-driver-content
 description: PCI Sample
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E8C4C98C-502F-4CE6-8443-DDFEA1CD1743
 ---
 

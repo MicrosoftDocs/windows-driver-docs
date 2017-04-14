@@ -2,12 +2,6 @@
 title: Printer INF File Data Sections
 author: windows-driver-content
 description: Printer INF File Data Sections
-MS-HAID:
-- 'prtinst\_5a6b18f4-dcee-4e41-9615-8b8ce69f5b4e.xml'
-- 'print.printer\_inf\_file\_data\_sections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d060716c-7c26-41a8-afbc-6fe83829d46a
 keywords: ["INF files WDK print , data sections", "data sections WDK printer", "Previous Names data section WDK printer", "sections WDK printer"]
 ---

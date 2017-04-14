@@ -2,12 +2,6 @@
 title: USBCAMD2 Camera Configurations
 author: windows-driver-content
 description: USBCAMD2 Camera Configurations
-MS-HAID:
-- 'usbcmdds\_a6303556-b8ff-4488-8a3f-da08a435a4c9.xml'
-- 'stream.usbcamd2\_camera\_configurations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9a0dd6f9-aefb-4134-8bd5-31420a16db4a
 keywords: ["Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library", "Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library", "Kernel Streaming Model WDK , USBCAMD2 minidriver library", "USBCAMD2 camera configurations WDK Windows 2000 Kernel Streaming", "USB-based streaming cameras WDK USBCAMD2", "cameras WDK USBCAMD2"]
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Windows 2000 Display Driver Responsibilities
 description: Windows 2000 Display Driver Responsibilities
 ms.assetid: ccd7ff38-a4a3-4917-bf59-c2a1b864d026

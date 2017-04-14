@@ -2,12 +2,6 @@
 title: Sample Registry Entry for UVC Extension Units
 author: windows-driver-content
 description: Sample Registry Entry for UVC Extension Units
-MS-HAID:
-- 'uvcds\_c3ffbe2a-2ec7-4821-9852-2746f009075a.xml'
-- 'stream.sample\_registry\_entry\_for\_uvc\_extension\_units'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a34e00e2-90f0-4073-8740-7f3e04d68639
 keywords: ["registry WDK USB Video Class", "extension units WDK USB Video Class , samples, registry entry", "sample code WDK USB Video Class , registry entry for UVC extension units"]
 ---

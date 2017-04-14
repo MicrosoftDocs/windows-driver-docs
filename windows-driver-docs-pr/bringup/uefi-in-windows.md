@@ -2,9 +2,6 @@
 title: UEFI in Windows
 author: windows-driver-content
 description: UEFI in Windows
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 14b54fe3-49f7-4ad8-b9b6-ecc747dff137
 ---
 

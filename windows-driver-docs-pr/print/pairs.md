@@ -2,12 +2,6 @@
 title: Pairs
 author: windows-driver-content
 description: Pairs
-MS-HAID:
-- 'nt5gpd\_d293de62-dbb7-448b-871e-9cebfc0fcf91.xml'
-- 'print.pairs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 156e6b10-74c2-4702-b0be-b9d209c02070
 keywords: ["GPD file entries WDK Unidrv , pairs", "pairs WDK GPD files"]
 ---

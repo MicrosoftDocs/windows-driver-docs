@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.ConfigureEnableEndpoints
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.ConfigureEnableEndpoints
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 31bc58a0-ec2b-4b5e-ad1b-e6107cc083b1
 ---
 

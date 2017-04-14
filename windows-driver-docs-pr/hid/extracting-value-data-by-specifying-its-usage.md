@@ -2,12 +2,6 @@
 title: Extracting Value Data by Specifying Its Usage
 author: windows-driver-content
 description: Extracting Value Data by Specifying Its Usage
-MS-HAID:
-- 'hidclass\_822d63d4-d5e0-4f9f-a403-59574805bb1a.xml'
-- 'hid.extracting\_value\_data\_by\_specifying\_its\_usage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 043cdb68-ead8-4ccf-ae00-1165fe2988f4
 keywords: ["HID reports WDK , extracting control data", "reports WDK HID , extracting control data", "extracting HID control data", "data usage extractions WDK HID"]
 ---

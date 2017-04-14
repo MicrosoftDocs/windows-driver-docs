@@ -2,12 +2,6 @@
 title: Flow Control Gates in AVStream
 author: windows-driver-content
 description: Flow Control Gates in AVStream
-MS-HAID:
-- 'avsover\_9ba7a3f0-983b-49b0-af2d-44b95ef8533f.xml'
-- 'stream.flow\_control\_gates\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c5592f92-a432-44e3-afe0-60fcf917a443
 keywords: ["AVStream logic gates WDK", "logic gates WDK AVStream", "gates WDK AVStream", "AND gate WDK AVStream", "KSGATE", "flow control gates WDK AVStream", "processing control gates WDK AVStream"]
 ---

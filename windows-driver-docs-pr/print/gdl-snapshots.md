@@ -2,12 +2,6 @@
 title: GDL Snapshots
 author: windows-driver-content
 description: GDL Snapshots
-MS-HAID:
-- 'gplfiles\_27a204e8-9489-43cf-963a-456901e79b08.xml'
-- 'print.gdl\_snapshots'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2e6a7693-2db8-4fa5-a4e7-d069313b68bf
 keywords: ["GDL WDK , snapshots", "snapshots WDK GDL", "parser WDK GDL , creating snapshots", "schemas WDK GDL , creating snapshots without GDL schemas"]
 ---

@@ -2,12 +2,6 @@
 title: COM Port Database
 author: windows-driver-content
 description: COM Port Database
-MS-HAID:
-- 'sseovr\_1c125b3d-696c-43e9-8701-d6c4b8689024.xml'
-- 'serports.com\_port\_database'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c9baf147-6e33-4ed2-b682-c141938eb0da
 keywords: ["COM ports WDK serial devices", "serial devices WDK , COM ports", "COM port databases WDK serial devices", "COM port numbers WDK serial devices", "port numbers WDK serial devices", "releasing port numbers", "current port number usage WDK serial devices", "size WDK COM port databases", "resizing COM port databases", "databases WDK COM port databases"]
 ---

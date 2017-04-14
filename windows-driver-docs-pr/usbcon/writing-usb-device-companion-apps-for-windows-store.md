@@ -1,9 +1,5 @@
 ---
-Description: 'The Windows.Devices.Usb namespace provides a way for a Windows store app to communicate with an external USB device that uses WinUSB (Winusb.sys) as the device driver.'
-MS-HAID: 'buses.writing\_usb\_device\_companion\_apps\_for\_windows\_store'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: The Windows.Devices.Usb namespace provides a way for a Windows store app to communicate with an external USB device that uses WinUSB (Winusb.sys) as the device driver.
 title: Windows Store app for a USB device
 ---
 

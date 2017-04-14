@@ -2,12 +2,6 @@
 title: Introduction to WHEA Management Applications
 author: windows-driver-content
 description: Introduction to WHEA Management Applications
-MS-HAID:
-- 'whea\_67950f13-b2d8-446d-bcaa-9aebcb540263.xml'
-- 'whea.introduction\_to\_whea\_management\_applications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d0c487bd-dfa8-43f2-a494-0ed95d767bfb
 keywords: ["management applications WDK WHEA , about management applications", "user-mode applications WDK WHEA , management applications", "WHEA WDK , management applications", "Windows Hardware Error Architecture WDK , management applications"]
 ---

@@ -2,12 +2,6 @@
 title: Pscript-Supported Escapes
 author: windows-driver-content
 description: Pscript-Supported Escapes
-MS-HAID:
-- 'pscript\_7f7a48f9-1a7e-4f1b-96ba-7a1a7a87cddf.xml'
-- 'print.pscript\_supported\_escapes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c0133355-fa3b-4117-bd38-b6a8b3898f94
 keywords: ["PostScript Printer Driver WDK print , escapes", "Pscript WDK print , escapes", "escapes WDK Pscript"]
 ---

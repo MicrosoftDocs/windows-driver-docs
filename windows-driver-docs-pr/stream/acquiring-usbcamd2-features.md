@@ -2,12 +2,6 @@
 title: Acquiring USBCAMD2 Features
 author: windows-driver-content
 description: Acquiring USBCAMD2 Features
-MS-HAID:
-- 'usbcmdds\_fac0626a-aef5-4985-8a6b-ad6f8eb2b18d.xml'
-- 'stream.acquiring\_usbcamd2\_features'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 39db38a8-8279-4c61-9010-cc6d4767efc2
 keywords: ["Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library", "Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library", "Kernel Streaming Model WDK , USBCAMD2 minidriver library", "USBCAMD2 features WDK Windows 2000 Kernel Streaming", "USB-based streaming cameras WDK USBCAMD2", "cameras WDK USBCAMD2", "IRP_MN_QUERY_INTERFACE"]
 ---

@@ -1,9 +1,6 @@
 ---
 title: PackageStructure
 description: PackageStructure
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44be9d7d-79b0-49b6-b427-e729efadb88c
 ---
 

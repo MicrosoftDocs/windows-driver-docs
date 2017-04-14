@@ -1,9 +1,6 @@
 ---
 title: AllowStandardUserPinUnlock
 description: AllowStandardUserPinUnlock
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3fb6de78-662b-46d0-bf0c-9efde15b0861
 ---
 

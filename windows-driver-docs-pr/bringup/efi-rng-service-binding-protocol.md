@@ -2,9 +2,6 @@
 title: EFI\_RNG\_SERVICE\_BINDING\_PROTOCOL
 author: windows-driver-content
 description: The EFI\_RNG\_SERVICE\_BINDING\_PROTOCOL is used to locate Random Number Generation (RNG) services provided by a driver, and to create and destroy instances of the EFI\_RNG\_PROTOCOL so that multiple drivers can use the underlying RNG services.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3CAD0FD8-DD26-4D26-A9E9-4B2750985E00
 ---
 

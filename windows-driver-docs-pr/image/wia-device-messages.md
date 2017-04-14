@@ -2,12 +2,6 @@
 title: WIA Device Messages
 author: windows-driver-content
 description: WIA Device Messages
-MS-HAID:
-- 'WIA\_error\_2ad4285b-061a-4167-90a0-223128872fff.xml'
-- 'image.wia\_device\_messages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b498a75d-1252-4f13-ae62-9a53491c2bde
 ---
 

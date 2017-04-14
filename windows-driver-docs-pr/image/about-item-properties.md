@@ -2,12 +2,6 @@
 title: About Item Properties
 author: windows-driver-content
 description: About Item Properties
-MS-HAID:
-- 'WIA\_tree\_ad54e741-817c-469b-8f2e-319886cad5e5.xml'
-- 'image.about\_item\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f8d00e29-ce7d-4949-a713-07755f495d6a
 ---
 

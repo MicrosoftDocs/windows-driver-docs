@@ -1,9 +1,6 @@
 ---
 title: ExperienceID
 description: ExperienceID
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 550527ae-fef9-46c6-816b-d842fe472b68
 ---
 

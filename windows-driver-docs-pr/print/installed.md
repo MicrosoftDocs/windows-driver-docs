@@ -2,12 +2,6 @@
 title: Installed
 author: windows-driver-content
 description: Installed
-MS-HAID:
-- 'autocfg\_89f40a46-5d10-4850-80bf-65b1db4f68c4.xml'
-- 'print.installed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f05add2a-d37e-4eb5-8408-dd5eeef4b13c
 keywords: ["Installed construct"]
 ---

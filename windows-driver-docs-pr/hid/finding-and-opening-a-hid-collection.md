@@ -2,12 +2,6 @@
 title: Finding and Opening a HID Collection
 author: windows-driver-content
 description: Finding and Opening a HID Collection
-MS-HAID:
-- 'hidclass\_2ee37dfd-d722-4fb7-82f6-c22bb79ccd22.xml'
-- 'hid.finding\_and\_opening\_a\_hid\_collection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b46fdb06-e6ae-4376-994f-69bf6539f2ce
 keywords: ["collections WDK HID , finding", "HID collections WDK , finding", "finding HID collections", "collections WDK HID , opening", "HID collections WDK , opening", "opening HID collections"]
 ---

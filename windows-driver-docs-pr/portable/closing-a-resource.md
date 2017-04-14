@@ -1,7 +1,5 @@
 ---
 Description: Closing a Resource
-MS-HAID: 'wpddk.closing\_a\_resource'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Closing a Resource
 ---
 

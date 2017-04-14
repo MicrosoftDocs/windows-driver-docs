@@ -2,12 +2,6 @@
 title: GDL Primitive Data Types
 author: windows-driver-content
 description: GDL Primitive Data Types
-MS-HAID:
-- 'gplfiles\_7842c81b-cc2a-40e2-9b20-3d9bdbce8fd5.xml'
-- 'print.gdl\_primitive\_data\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e9a0a58b-ae29-46b1-8928-18686a89bd10
 keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "parser WDK GDL , primitive data types"]
 ---

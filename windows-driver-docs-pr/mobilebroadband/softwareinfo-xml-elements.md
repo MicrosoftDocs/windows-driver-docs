@@ -1,9 +1,6 @@
 ---
 title: SoftwareInfo XML Elements
 description: SoftwareInfo XML Elements
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a8e8401d-456a-4c0a-976c-3802061a2bf6
 ---
 

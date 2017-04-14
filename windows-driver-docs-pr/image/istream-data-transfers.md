@@ -2,12 +2,6 @@
 title: IStream Data Transfers
 author: windows-driver-content
 description: IStream Data Transfers
-MS-HAID:
-- 'WIA\_arch\_2c7147b3-6cc3-496f-8add-aea06997cbd2.xml'
-- 'image.istream\_data\_transfers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 348871d7-137b-4921-aeb0-ac689f4385c3
 ---
 

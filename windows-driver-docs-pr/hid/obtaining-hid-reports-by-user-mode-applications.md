@@ -2,9 +2,6 @@
 title: Obtaining HID Reports by User-Mode Applications
 author: windows-driver-content
 description: This topic discusses the obtaining of HID input reports or HID feature reports, by user-mode applications using ReadFile or the HidD\_GetXxx routines.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 28f560dd-b919-4652-93f6-691051a0ffbe
 ---
 

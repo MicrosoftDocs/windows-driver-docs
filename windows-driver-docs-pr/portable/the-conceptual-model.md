@@ -1,7 +1,5 @@
-﻿---
+---
 Description: The Conceptual Model
-MS-HAID: 'wpddk.the\_conceptual\_model'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: The Conceptual Model
 ---
 

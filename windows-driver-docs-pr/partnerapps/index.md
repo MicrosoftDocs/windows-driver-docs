@@ -1,9 +1,6 @@
-﻿---
+---
 title: Partner app development
 description: Partner app development
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0F90F6D9-4524-4193-9470-0CA106DFE80F
 ---
 

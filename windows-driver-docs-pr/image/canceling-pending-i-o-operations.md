@@ -2,12 +2,6 @@
 title: Canceling Pending I/O Operations
 author: windows-driver-content
 description: Canceling Pending I/O Operations
-MS-HAID:
-- 'WIA\_db\_trans\_4f6045d5-d04e-4127-9aca-5a40a663dbd7.xml'
-- 'image.canceling\_pending\_i\_o\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 58383836-5922-4499-a73d-d17d26dd2f76
 ---
 

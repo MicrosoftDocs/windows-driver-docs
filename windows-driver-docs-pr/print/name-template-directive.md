@@ -2,12 +2,6 @@
 title: Name Template Directive
 author: windows-driver-content
 description: Name Template Directive
-MS-HAID:
-- 'gplfiles\_eefdbe8d-975d-4acd-9643-0f000dfc9edd.xml'
-- 'print.name\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed5cc1a9-f3f1-4bcc-83fa-a78d2324840b
 keywords: ["Name directive WDK GDL"]
 ---

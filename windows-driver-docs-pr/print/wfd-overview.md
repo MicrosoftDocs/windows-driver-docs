@@ -2,9 +2,6 @@
 title: Wi-Fi Direct Printing Overview
 author: windows-driver-content
 description: .
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 40ED3410-EC46-42C8-B09B-8010639F2268
 ---
 

@@ -2,12 +2,6 @@
 title: Attributes for Downloaded Fonts
 author: windows-driver-content
 description: Attributes for Downloaded Fonts
-MS-HAID:
-- 'nt5gpd\_facb877b-57df-4547-9e6f-b67591830094.xml'
-- 'print.attributes\_for\_downloaded\_fonts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 335413d0-cf0a-4dd9-b1a4-345945c63395
 keywords: ["downloaded font attributes WDK Unidrv", "font attributes WDK Unidrv"]
 ---

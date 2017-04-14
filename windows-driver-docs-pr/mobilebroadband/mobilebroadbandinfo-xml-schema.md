@@ -1,9 +1,6 @@
 ---
 title: MobileBroadbandInfo XML schema
 description: MobileBroadbandInfo XML schema
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fdbc340c-8fed-4a25-96c4-ec185af04de9
 ---
 

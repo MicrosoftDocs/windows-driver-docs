@@ -2,12 +2,6 @@
 title: GDL Values
 author: windows-driver-content
 description: GDL Values
-MS-HAID:
-- 'gplfiles\_29f1c263-ba9f-439e-be35-e499d71589c1.xml'
-- 'print.gdl\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e634646-d334-4b9c-b9d2-36026f617575
 keywords: ["GDL WDK , values", "values WDK GDL , about GDL values", "values WDK GDL , characters", "GDL WDK , contexts", "GDL WDK , Value Macro References", "Value Macro References WDK GDL", "values WDK GDL , examples", "contexts WDK GDL"]
 ---

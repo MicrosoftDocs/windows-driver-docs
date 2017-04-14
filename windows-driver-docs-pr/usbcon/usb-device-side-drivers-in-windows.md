@@ -1,10 +1,6 @@
 ---
-Description: 'Describes the architecture of the USB function stack.'
-MS-HAID: 'buses.usb\_device-side\_drivers\_in\_windows'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'USB device-side drivers in Windows'
+Description: Describes the architecture of the USB function stack.
+title: USB device-side drivers in Windows
 ---
 
 # USB device-side drivers in Windows

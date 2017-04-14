@@ -2,9 +2,6 @@
 title: GNSS driver requirements
 author: windows-driver-content
 description: Describes requirements, assumptions, and constraints to consider when developing a GNSS driver for Windows 10.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: BA117292-4877-4753-8FEB-2DEE6450155D
 ---
 

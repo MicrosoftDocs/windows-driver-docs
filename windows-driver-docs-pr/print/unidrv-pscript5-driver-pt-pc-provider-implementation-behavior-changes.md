@@ -2,12 +2,6 @@
 title: Unidrv/PScript5 Driver PT/PC Provider Implementation Behavior Changes
 author: windows-driver-content
 description: Unidrv/PScript5 Driver PT/PC Provider Implementation Behavior Changes
-MS-HAID:
-- 'xpsconfig\_65d56bba-8ee5-48f4-b7ac-238c96ec68aa.xml'
-- 'print.unidrv\_pscript5\_driver\_pt\_pc\_provider\_implementation\_behavior\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff401ae8-b0c5-4f20-88dd-055a14e1d065
 ---
 

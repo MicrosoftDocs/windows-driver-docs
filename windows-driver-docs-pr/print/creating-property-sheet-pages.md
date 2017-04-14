@@ -2,12 +2,6 @@
 title: Creating Property Sheet Pages
 author: windows-driver-content
 description: Creating Property Sheet Pages
-MS-HAID:
-- 'cpsui\_325e6bd8-ff17-4fa6-a614-4e8458921c9a.xml'
-- 'print.creating\_property\_sheet\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 90b1743c-b530-408a-aa30-9ab774166306
 keywords: ["Common Property Sheet User Interface WDK print , creating property sheet pages", "CPSUI WDK print , creating property sheet pages", "property sheet pages WDK print , creating"]
 ---

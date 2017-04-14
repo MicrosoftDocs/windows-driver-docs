@@ -2,12 +2,6 @@
 title: GDL Reference
 author: windows-driver-content
 description: GDL Reference
-MS-HAID:
-- 'gplfiles\_f8ff66ef-be09-4f3d-bb5d-f2da13c6aeaf.xml'
-- 'print.gdl\_reference'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e8605f5d-c2e4-49d8-915e-80504160fb49
 keywords: ["GDL WDK , reference"]
 ---

@@ -2,12 +2,6 @@
 title: Print Driver Manifests
 author: windows-driver-content
 description: Print Driver Manifests
-MS-HAID:
-- 'prtinst\_d677a6fd-e670-4e4c-9c76-e8662cf1275d.xml'
-- 'print.print\_driver\_manifests'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fca0c211-1daa-4295-a03e-c0038b66a898
 keywords: ["installing drivers WDK printer , manifests", "printer driver installations WDK , manifests", "manifests WDK printer"]
 ---

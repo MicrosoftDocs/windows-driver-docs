@@ -2,12 +2,6 @@
 title: AVStream DMA Services
 author: windows-driver-content
 description: AVStream DMA Services
-MS-HAID:
-- 'avsover\_4f4d9eb7-cc8a-471c-926a-8c06ca5b6105.xml'
-- 'stream.avstream\_dma\_services'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ba1c525b-26b0-4778-b58b-f4169cfb972e
 keywords: ["AVStream WDK , hardware", "hardware WDK AVStream", "DMA services WDK AVStream", "Direct Memory Access WDK AVStream", "capture buffers WDK AVStream", "buffers WDK AVStream", "AVStream DMA WDK"]
 ---

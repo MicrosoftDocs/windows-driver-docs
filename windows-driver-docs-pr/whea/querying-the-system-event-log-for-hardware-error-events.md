@@ -2,12 +2,6 @@
 title: Querying the System Event Log for Hardware Error Events
 author: windows-driver-content
 description: Querying the System Event Log for Hardware Error Events
-MS-HAID:
-- 'whea\_84eb347d-808d-4a6d-8dd5-ee8a7a688bb6.xml'
-- 'whea.querying\_the\_system\_event\_log\_for\_hardware\_error\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e2290a1b-6fde-4843-9c52-17279f93a887
 keywords: ["events WDK WHEA , querying system event log", "querying system event log WDK WHEA", "logs WDK WHEA", "WHEA WDK , querying system event log", "Windows Hardware Error Architecture WDK , querying system event log", "event log WDK WHEA"]
 ---

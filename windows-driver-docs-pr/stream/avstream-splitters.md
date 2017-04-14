@@ -2,12 +2,6 @@
 title: AVStream Splitters
 author: windows-driver-content
 description: AVStream Splitters
-MS-HAID:
-- 'avsover\_3b4079ca-57bb-48de-8a41-53fc7534592c.xml'
-- 'stream.avstream\_splitters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c2cfc183-0f4c-4104-a580-234e0483eee4
 keywords: ["splitters WDK AVStream", "AVStream splitters WDK", "splitting data streams WDK AVStream", "KSPIN_FLAG_SPLITTER", "automatic splitting WDK AVStream", "input pin splitting WDK AVStream", "output pin splitter processing WDK AVStream", "pin splitting WDK AVStream", "process pins WDK AVStream", "frames WDK AVStream"]
 ---

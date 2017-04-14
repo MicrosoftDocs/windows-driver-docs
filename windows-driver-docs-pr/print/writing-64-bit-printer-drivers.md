@@ -2,12 +2,6 @@
 title: Writing 64-Bit Printer Drivers
 author: windows-driver-content
 description: Writing 64-Bit Printer Drivers
-MS-HAID:
-- 'drvarch\_2a33a32a-77d2-4c84-a9f5-650d558a2194.xml'
-- 'print.writing\_64\_bit\_printer\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 41f1a521-980e-4ccd-a395-e1d1bf0114d1
 keywords: ["printer drivers WDK , 64-bit", "64-bit WDK printer"]
 ---

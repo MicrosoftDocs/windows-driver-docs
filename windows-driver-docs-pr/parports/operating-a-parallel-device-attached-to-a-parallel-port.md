@@ -2,12 +2,6 @@
 title: Operating a Parallel Device Attached to a Parallel Port
 author: windows-driver-content
 description: Operating a Parallel Device Attached to a Parallel Port
-MS-HAID:
-- 'vspd\_af50eebe-27e3-4206-b852-c0dac3ab6368.xml'
-- 'parports.operating\_a\_parallel\_device\_attached\_to\_a\_parallel\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5ad36162-efbe-4be8-954c-964ef12c539a
 keywords: ["parallel ports WDK , parallel device operation", "parallel devices WDK", "vendor-supplied parallel drivers WDK , parallel device operation", "parallel devices WDK , client operation"]
 ---

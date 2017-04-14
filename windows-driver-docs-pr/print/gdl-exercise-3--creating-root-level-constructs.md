@@ -2,12 +2,6 @@
 title: GDL Exercise 3 Creating Root-Level Constructs
 author: windows-driver-content
 description: GDL Exercise 3 Creating Root-Level Constructs
-MS-HAID:
-- 'gplfiles\_ef3fd893-cd46-4312-a815-6528236e1e46.xml'
-- 'print.gdl\_exercise\_3\_\_creating\_root\_level\_constructs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3c7ad284-b77c-4ad3-8334-2fe5b026e340
 keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "constructs WDK GDL , creating constructs", "creating GDL constructs WDK"]
 ---

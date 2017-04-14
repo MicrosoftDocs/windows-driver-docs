@@ -2,12 +2,6 @@
 title: PCI Express FAQ for Graphics
 author: windows-driver-content
 description: This paper provides information about PCI Express Graphics for Microsoft Windows operating systems, and answers frequently asked questions.
-MS-HAID:
-- 'hw\_design.pci\_express\_faq\_for\_graphics'
-- 'PCI.pci\_express\_faq\_for\_graphics'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 30FC1CF9-B642-4E00-869C-63009BA3F128
 ---
 

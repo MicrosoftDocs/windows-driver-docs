@@ -2,12 +2,6 @@
 title: WIA Architecture Overview
 author: windows-driver-content
 description: WIA Architecture Overview
-MS-HAID:
-- 'WIA\_intro\_1b17ef5f-807a-4077-9cc3-e8e33b178bf1.xml'
-- 'image.wia\_architecture\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 47f44042-f22b-4ee0-88c5-fc977bf13791
 ---
 

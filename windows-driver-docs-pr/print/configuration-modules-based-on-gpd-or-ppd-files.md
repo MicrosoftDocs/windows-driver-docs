@@ -2,12 +2,6 @@
 title: Configuration Modules Based on GPD or PPD Files
 author: windows-driver-content
 description: Configuration Modules Based on GPD or PPD Files
-MS-HAID:
-- 'xpsconfig\_fc4db68f-d95a-48c5-b33c-1abbd707e2b9.xml'
-- 'print.configuration\_modules\_based\_on\_gpd\_or\_ppd\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0aeea58-1c58-475e-8d4a-597778e42a7c
 keywords: ["Version 3 XPS drivers WDK XPSDrv , GPD files", "Version 3 XPS drivers WDK XPSDrv , PPD files", "GPD files WDK XPSDrv", "PPD files WDK XPSDrv"]
 ---

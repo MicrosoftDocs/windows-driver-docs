@@ -1,9 +1,6 @@
 ---
 title: COSA - FAQ
 description: COSA - FAQ
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ---
 
 # COSA - FAQ

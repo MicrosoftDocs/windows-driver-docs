@@ -1,10 +1,6 @@
 ---
-Description: 'Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.'
-MS-HAID: 'buses.ucsi'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'USB Type-C Connector System Software Interface (UCSI) driver'
+Description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
+title: USB Type-C Connector System Software Interface (UCSI) driver
 ---
 
 # USB Type-C Connector System Software Interface (UCSI) driver

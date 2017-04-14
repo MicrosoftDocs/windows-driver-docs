@@ -2,12 +2,6 @@
 title: GDL Source File Preprocessor Directives
 author: windows-driver-content
 description: GDL Source File Preprocessor Directives
-MS-HAID:
-- 'gplfiles\_88527682-0edb-417f-aff5-49cb292ae48a.xml'
-- 'print.gdl\_source\_file\_preprocessor\_directives'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cc0f807f-5c06-4add-bed1-c15c8251dc98
 keywords: ["directives WDK GDL , source file preprocessor directives", "source files WDK GDL , preprocessor directives", "preprocessor directives WDK GDL", "parser WDK GDL , directives", "Include directive WDK GDL", "PreCompiled directive WDK GDL", "Define directive WDK GDL", "Undefine directive WDK GDL", "Ifdef directive WDK GDL", "Elseifdef directive WDK GDL", "Else directive WDK GDL", "Endif directive WDK GDL", "SetPPPrefix directive WDK GDL", "UndefinePrefix directive WDK GDL", "EnablePPDirective directive WDK GDL", "DisablePPDirective directive WDK GDL"]
 ---

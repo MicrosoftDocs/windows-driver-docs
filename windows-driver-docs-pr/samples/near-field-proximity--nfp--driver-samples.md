@@ -2,9 +2,6 @@
 title: Near field proximity (NFP) driver samples
 author: windows-driver-content
 description: The driver sample in this directory provides a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0AE9A015-A18E-4E2A-A477-C5EAAA2FBD3D
 ---
 

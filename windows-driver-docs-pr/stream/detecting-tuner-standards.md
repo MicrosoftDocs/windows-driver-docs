@@ -2,12 +2,6 @@
 title: Detecting Tuner Standards
 author: windows-driver-content
 description: Detecting Tuner Standards
-MS-HAID:
-- 'vidcapds\_23636715-ac69-4cf4-a0df-d7a0d20c1b43.xml'
-- 'stream.detecting\_tuner\_standards'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 02923d8f-d8a2-427d-8957-2ffb0273b84a
 keywords: ["formats WDK video capture", "TV signal formats WDK video capture", "KSPROPERTY_TUNER_STANDARD_MODE", "detecting tuner standards WDK video capture"]
 ---

@@ -1,9 +1,6 @@
 ---
 title: HardwareID
 description: HardwareID
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: edd05106-1bbc-45da-80cc-792d7fcce192
 ---
 

@@ -1,7 +1,5 @@
 ---
 Description: WPD Drivers
-MS-HAID: 'wpddk.wpd\_drivers'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: WPD Drivers
 ---
 

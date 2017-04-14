@@ -2,12 +2,6 @@
 title: Supporting PC Cards That Conform to the Multifunction Standard
 author: windows-driver-content
 description: Supporting PC Cards That Conform to the Multifunction Standard
-MS-HAID:
-- 'mf-supp\_07cc13b0-8b06-42a5-a408-887438a48596.xml'
-- 'multifunc.supporting\_pc\_cards\_that\_conform\_to\_the\_multifunction\_standard'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1ab295b6-42c9-46fc-97e0-2228e189ff37
 keywords: ["PCMCIA buses WDK multifunction devices", "mf.inf", "hardware IDs WDK multifunction devices", "child function hardware IDs WDK multifunction devices", "system-supplied multifunction bus drivers WDK", "mf.sys"]
 ---

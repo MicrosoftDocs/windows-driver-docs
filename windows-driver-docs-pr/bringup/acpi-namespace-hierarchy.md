@@ -2,9 +2,6 @@
 title: ACPI namespace hierarchy
 author: windows-driver-content
 description: The ACPI namespace hierarchy must accurately model the platform's hardware topology, starting with the processor's system bus ( \ 0034;\\\_SB \ 0034;).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 14B5F787-65B1-4BC3-90CD-D4AD1C8044D1
 ---
 

@@ -2,12 +2,6 @@
 title: Power and State Changes in AVStream
 author: windows-driver-content
 description: Power and State Changes in AVStream
-MS-HAID:
-- 'avsover\_e096396d-ae78-42c6-b492-c5ac911c53c2.xml'
-- 'stream.power\_and\_state\_changes\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f62f4306-97c0-40fe-89ec-d08eb18988c9
 keywords: ["AVStream WDK , power and state changes", "power changes WDK , AVStream", "state changes WDK , AVStream"]
 ---

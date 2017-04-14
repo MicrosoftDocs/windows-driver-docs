@@ -2,12 +2,6 @@
 title: Timecode Properties
 author: windows-driver-content
 description: Timecode Properties
-MS-HAID:
-- 'vidcapds\_bc993933-10ec-4130-bf69-bf8037a7c6b6.xml'
-- 'stream.timecode\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e8359778-8cc6-4f19-b869-f9597dae0502
 keywords: ["timecode properties WDK video capture", "PROPSETID_TIMECODE_READER", "tape timecode properties WDK video capture"]
 ---

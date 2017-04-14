@@ -2,12 +2,6 @@
 title: IWiaUIExtension COM Interface
 author: windows-driver-content
 description: IWiaUIExtension COM Interface
-MS-HAID:
-- 'WIA\_drv\_cus\_59d948bd-d29d-4c12-aba0-a8fa0130d9bc.xml'
-- 'image.iwiauiextension\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10a8e981-889a-46f0-8bf5-da75632d4d94
 ---
 

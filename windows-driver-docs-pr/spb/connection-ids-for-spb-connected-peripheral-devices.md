@@ -2,9 +2,6 @@
 title: Connection IDs for SPB-Connected Peripheral Devices
 author: windows-driver-content
 description: Before a driver can send I/O requests to a peripheral device on a simple peripheral bus (SPB), the driver must open a logical connection to the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 234B5858-5930-40AD-BE4C-4A774A809D10
 ---
 

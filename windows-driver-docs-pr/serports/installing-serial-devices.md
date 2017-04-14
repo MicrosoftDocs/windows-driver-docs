@@ -2,12 +2,6 @@
 title: Installing Serial Devices
 author: windows-driver-content
 description: Installing Serial Devices
-MS-HAID:
-- 'sseovr\_4836ff1f-66ac-41a3-92ad-2f36336c3b82.xml'
-- 'serports.installing\_serial\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e51ac390-1de0-4377-bcc3-5f179b6ca6df
 keywords: ["serial devices WDK , installing"]
 ---

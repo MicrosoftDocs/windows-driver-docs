@@ -1,12 +1,6 @@
 ---
 title: Manage your service account credentials
 description: Manage your service account credentials
-MS-HAID:
-- 'p\_dashboard.manage\_your\_service\_account\_credentials'
-- 'hw\_dashboard.manage\_your\_service\_account\_credentials'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6e51fc43-257f-4fba-9e6f-5a289b834ab9
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Live tile updates
 description: Live tile updates
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46ad4a92-0a80-47ca-a8dc-2608d863e14f
 ---
 

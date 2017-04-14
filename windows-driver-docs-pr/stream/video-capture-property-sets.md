@@ -2,12 +2,6 @@
 title: Video Capture Property Sets
 author: windows-driver-content
 description: Video Capture Property Sets
-MS-HAID:
-- 'vidcapds\_4ee2a51f-9f81-4056-8c2a-3aa6d562158d.xml'
-- 'stream.video\_capture\_property\_sets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23f61735-ae04-4143-8bd5-b713a2ab0e90
 keywords: ["video capture WDK AVStream , property sets", "capturing video WDK AVStream , property sets", "property sets WDK video capture", "hardware property sets WDK video capture", "stream property sets WDK video capture", "ranges WDK video capture", "default video capture property sets WDK AVStream", "capture property sets WDK video capture"]
 ---

@@ -2,12 +2,6 @@
 title: Sample Interface for UVC Extension Units
 author: windows-driver-content
 description: Sample Interface for UVC Extension Units
-MS-HAID:
-- 'uvcds\_b58a812c-f06e-4af3-bfca-7d160d9f60ec.xml'
-- 'stream.sample\_interface\_for\_uvc\_extension\_units'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 898fdaf7-c3e1-4ef5-be4e-a5f9849ee905
 keywords: ["interfaces WDK USB Video Class", "extension units WDK USB Video Class , samples, interface", "sample code WDK USB Video Class , interface for UVC extension units"]
 ---

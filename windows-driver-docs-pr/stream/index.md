@@ -2,12 +2,6 @@
 title: Streaming Media Devices Design Guide
 author: windows-driver-content
 description: Streaming Media Devices Design Guide
-MS-HAID:
-- 'vidcap\_dg\_c43e4884-a631-40ad-96a6-aedb1cfdc863.xml'
-- 'stream.streaming\_media\_devices\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 321edd72-4f6a-4eaf-85bf-3b36680a522c
 keywords: ["streaming media WDK", "media streaming WDK", "data streaming WDK"]
 ---

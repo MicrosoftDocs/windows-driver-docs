@@ -2,12 +2,6 @@
 title: Print Ticket Merging
 author: windows-driver-content
 description: Print Ticket Merging
-MS-HAID:
-- 'xpsfiltpipe\_81582d68-abda-4d77-97f9-a52743b2cc36.xml'
-- 'print.print\_ticket\_merging'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d9cf4d3-5c73-4355-b5e0-effcfb7102cc
 keywords: ["XPSDrv printer drivers WDK , render modules", "render modules WDK XPSDrv , Print Tickets", "Print Tickets WDK , XPSDrv printer drivers", "merging Print Ticket objects"]
 ---

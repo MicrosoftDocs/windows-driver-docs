@@ -1,9 +1,6 @@
 ---
 title: File a New Bug
 description: File a New Bug
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f05df7f1-ab0c-46a8-ac75-16b68359c761
 ---
 

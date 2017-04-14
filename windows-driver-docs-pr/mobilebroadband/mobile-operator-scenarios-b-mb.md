@@ -1,9 +1,6 @@
 ---
 title: Mobile operator scenarios
 description: Mobile operator scenarios
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 68ebee74-9c34-489d-9a88-02493ac3b5fe
 ---
 

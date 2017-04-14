@@ -2,12 +2,6 @@
 title: Controlling Targets
 author: windows-driver-content
 description: Controlling Targets
-MS-HAID:
-- 'wdtfdevguide\_9798197c-1e87-4743-a8a9-f6958652f1d2.xml'
-- 'dtf.controlling\_targets'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b329e9a2-7d24-4612-9aa1-9d7955a61473
 keywords: ["Windows Device Testing Framework WDK , action interfaces", "WDTF WDK , action interfaces", "Windows Device Testing Framework WDK , manageable tests", "WDTF WDK , manageable tests", "manageable tests WDK WDTF", "action interfaces WDK WDTF", "COM interfaces WDK WDTF", "interfaces WDK WDTF", "code modules WDK WDTF", "scripts WDK WDTF", "synchronous tests WDK WDTF", "asynchronous tests WDK WDTF", "test scripts WDK WDTF"]
 ---

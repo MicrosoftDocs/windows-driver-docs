@@ -2,12 +2,6 @@
 title: Camera Minidriver Sample
 author: windows-driver-content
 description: Camera Minidriver Sample
-MS-HAID:
-- 'WIA\_GS\_205dbf27-c330-4831-bcd5-e13d76d9bc10.xml'
-- 'image.camera\_minidriver\_sample'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 82ed48e9-2e3e-4386-bb89-03e3c5ff92b0
 ---
 

@@ -2,12 +2,6 @@
 title: Notification Channel
 author: windows-driver-content
 description: Notification Channel
-MS-HAID:
-- 'splarch\_b3435e38-1470-4664-80bf-14045befff3c.xml'
-- 'print.notification\_channel'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3161342a-0737-4f3b-bb16-32d6949bceea
 keywords: ["spooler notification WDK print , channel", "print spooler notification WDK , channel", "notification channel WDK print spooler", "CreatePrintAsyncNotifyChannel", "channel notification WDK print spooler", "data channels WDK spooler notification", "IPrintAsyncNotifyChannel"]
 ---

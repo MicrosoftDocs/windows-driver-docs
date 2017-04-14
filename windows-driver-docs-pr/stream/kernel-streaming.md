@@ -2,12 +2,6 @@
 title: Kernel Streaming
 author: windows-driver-content
 description: Kernel Streaming
-MS-HAID:
-- 'ks-overview\_7941b1b7-80a5-4506-a156-78a743117d58.xml'
-- 'stream.kernel\_streaming'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dcd28218-b3bf-4e5d-b1a7-6910103afb96
 keywords: ["Windows 2000 Kernel Streaming Model WDK , kernel streaming", "Streaming Model WDK Windows 2000 Kernel , kernel streaming", "Kernel Streaming Model WDK , kernel streaming", "kernel streaming WDK", "kernel streaming WDK , about kernel streaming", "KS WDK", "KS WDK , about kernel streaming", "minidrivers WDK kernel streaming"]
 ---

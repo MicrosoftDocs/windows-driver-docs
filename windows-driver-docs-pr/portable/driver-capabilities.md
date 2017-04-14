@@ -1,7 +1,5 @@
 ---
 Description: Driver Capabilities
-MS-HAID: 'wpddk.driver\_capabilities'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Driver Capabilities
 ---
 

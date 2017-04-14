@@ -2,12 +2,6 @@
 title: Active Directory
 author: windows-driver-content
 description: Active Directory
-MS-HAID:
-- 'dsm\_des\_req\_acbb9fea-0659-4e3c-9348-01519ebafd37.xml'
-- 'image.active\_directory'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8524c708-7d21-4657-8af5-975894808d8e
 ---
 

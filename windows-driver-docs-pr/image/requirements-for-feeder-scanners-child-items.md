@@ -2,12 +2,6 @@
 title: Requirements for Feeder Scanners Child Items
 author: windows-driver-content
 description: Requirements for Feeder Scanners Child Items
-MS-HAID:
-- 'WIA\_scanner\_tree\_aa7e1177-822b-44c1-866f-50861140eae6.xml'
-- 'image.requirements\_for\_feeder\_scanners\_child\_items'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 069ce228-ac73-42b5-9f1b-528ee6fe6a92
 ---
 

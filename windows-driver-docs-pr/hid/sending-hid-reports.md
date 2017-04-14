@@ -2,12 +2,6 @@
 title: Sending HID Reports
 author: windows-driver-content
 description: Sending HID Reports
-MS-HAID:
-- 'hidclass\_5fae5f62-ca90-443f-8f35-394ceea29d9f.xml'
-- 'hid.sending\_hid\_reports'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a4571b79-847b-4db0-be02-ac2f922162bb
 keywords: ["reports WDK HID , sending", "sending reports", "WriteFile WDK HID", "IRP_MJ_WRITE requests WDK HID", "IOCTL_HID_SET_Xxx requests WDK HID", "HID reports WDK , sending"]
 ---

@@ -1,9 +1,5 @@
 ---
-Description: 'The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT pack.'
-MS-HAID: 'buses.how\_to\_run\_hub\_testing\_with\_the\_mutt\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT pack.
 title: USB hub testing with MUTT devices
 ---
 

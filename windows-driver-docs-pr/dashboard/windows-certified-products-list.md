@@ -1,12 +1,6 @@
 ---
 title: Windows Certified Products List
 description: Windows Certified Products List
-MS-HAID:
-- 'p\_dashboard.windows\_certified\_products\_list'
-- 'hw\_dashboard.windows\_certified\_products\_list'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e03b18e3-5c5c-4636-89dc-ab15ae6b25a0
 ---
 

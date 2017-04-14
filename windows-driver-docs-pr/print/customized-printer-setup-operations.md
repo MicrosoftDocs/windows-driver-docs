@@ -2,12 +2,6 @@
 title: Customized Printer Setup Operations
 author: windows-driver-content
 description: Customized Printer Setup Operations
-MS-HAID:
-- 'prtinst\_1e459ee2-b84b-4a6f-8de2-fc1375bc1ea4.xml'
-- 'print.customized\_printer\_setup\_operations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 888125e9-a057-4e86-9df8-0086cedb368d
 keywords: ["customized printer setup operations WDK", "INF files WDK print , customized setup operations"]
 ---

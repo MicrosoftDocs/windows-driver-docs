@@ -1,9 +1,5 @@
 ---
-Description: 'This topic describes how to view a USB event trace in Xperf.'
-MS-HAID: 'buses.viewing\_a\_usb\_event\_trace\_in\_xperf'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic describes how to view a USB event trace in Xperf.
 title: Viewing a USB Event Trace in Xperf
 ---
 

@@ -2,12 +2,6 @@
 title: Commands for Simulated Fonts
 author: windows-driver-content
 description: Commands for Simulated Fonts
-MS-HAID:
-- 'nt5gpd\_27e22407-745a-4c53-a0ce-c16d7f517c49.xml'
-- 'print.commands\_for\_simulated\_fonts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3bfdcf86-35ac-4b95-9efd-31f79a8b9871
 keywords: ["simulated font commands WDK Unidrv", "font commands WDK Unidrv"]
 ---

@@ -2,9 +2,6 @@
 title: EFI\_USB\_ENDPOINT\_TYPE
 author: windows-driver-content
 description: EFI\_USB\_ENDPOINT\_TYPE
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5cdb0efc-2355-42e2-929b-df19257e35c1
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: PackageInfo
 description: PackageInfo
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b74bfc2a-6779-4f53-9e46-71ca8ae26fda
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Version
 description: Version
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1a476586-bef9-41ec-8e8a-f4343361dc92
 ---
 

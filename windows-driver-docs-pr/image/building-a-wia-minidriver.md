@@ -2,12 +2,6 @@
 title: Building a WIA Minidriver
 author: windows-driver-content
 description: Building a WIA Minidriver
-MS-HAID:
-- 'WIA\_GS\_23f2b476-93e7-44cc-a777-691d8d12823a.xml'
-- 'image.building\_a\_wia\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7a13d355-f42e-406d-8cba-4739df1af9fa
 ---
 

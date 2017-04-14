@@ -2,12 +2,6 @@
 title: Notification Filtering and Communication Styles
 author: windows-driver-content
 description: Notification Filtering and Communication Styles
-MS-HAID:
-- 'splarch\_badd9426-e8f9-4be1-82fb-c49612729c5d.xml'
-- 'print.notification\_filtering\_and\_communication\_styles'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 66d019c2-0760-440d-acc4-85a7c073929a
 keywords: ["spooler notification WDK print , filtering", "print spooler notification WDK , filtering", "notification filtering WDK print spooler", "filtering WDK spooler notification", "CreatePrintAsyncNotifyChannel", "RegisterForPrintAsyncNotifications", "notification data types WDK print spooler", "data types WDK spooler notification", "communication WDK spooler notification", "all listener notifications WDK print spooler", "per-user listener filtering WDK spooler notification"]
 ---

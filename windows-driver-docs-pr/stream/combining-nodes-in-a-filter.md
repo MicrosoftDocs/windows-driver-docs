@@ -2,12 +2,6 @@
 title: Combining Nodes in a Filter
 author: windows-driver-content
 description: Combining Nodes in a Filter
-MS-HAID:
-- 'bdaov\_2c1be1f3-9398-4908-8d23-e959dc20b631.xml'
-- 'stream.combining\_nodes\_in\_a\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ebceb42a-966d-4c03-b4f5-8666284fc871
 keywords: ["control nodes WDK BDA", "nodes WDK BDA", "combining nodes in filters WDK BDA"]
 ---

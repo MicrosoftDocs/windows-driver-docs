@@ -2,12 +2,6 @@
 title: Selecting Source Files
 author: windows-driver-content
 description: Selecting Source Files
-MS-HAID:
-- 'di\_7bb057d0-47bd-4108-aff7-ac64bb2b60bd.xml'
-- 'hid.selecting\_source\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 259a7092-1197-4521-853a-6064aaa0c037
 keywords: ["INF files WDK joysticks , source files"]
 ---

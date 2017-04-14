@@ -2,9 +2,6 @@
 title: Bring up
 author: windows-driver-content
 description: This section of the partner documentation is designed for hardware engineers and developers who need to understand how to get started with bringing up hardware on Windows 10.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 019ABD43-601C-4C1B-A0D9-30A3A402650C
 ---
 

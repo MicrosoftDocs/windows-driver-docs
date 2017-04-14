@@ -2,12 +2,6 @@
 title: Developing a WIA Driver Basic Concepts
 author: windows-driver-content
 description: Developing a WIA Driver Basic Concepts
-MS-HAID:
-- 'WIA\_drv\_basic\_7248ef9f-bc1e-4382-a13f-8eee3de22e69.xml'
-- 'image.developing\_a\_wia\_driver\_\_basic\_concepts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d931e7a-3c58-4b64-8850-22375b10d0a4
 ---
 

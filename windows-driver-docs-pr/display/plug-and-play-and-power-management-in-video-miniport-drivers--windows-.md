@@ -1,5 +1,5 @@
 ---
-title: Plug and Play and Power Management in Video Miniport Drivers (Windows 2000 Model)
+title: Plug and Play and Power Management in Video Miniport Drivers (Windows 2000)
 description: Plug and Play and Power Management in Video Miniport Drivers (Windows 2000 Model)
 ms.assetid: e5b2ac53-e492-43de-91a3-5b02c26ee9a3
 keywords: ["video miniport drivers WDK Windows 2000 , Plug and Play", "video miniport drivers WDK Windows 2000 , power management", "Plug and Play WDK video miniport", "PnP WDK video miniport", "power management WDK video miniport"]

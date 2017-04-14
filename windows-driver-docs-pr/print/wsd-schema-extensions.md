@@ -2,12 +2,6 @@
 title: WSD Schema Extensions
 author: windows-driver-content
 description: WSD Schema Extensions
-MS-HAID:
-- 'autocfg\_cc418bfc-5b91-4374-998b-b8c2fb7a950e.xml'
-- 'print.wsd\_schema\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 79a07c2f-2efa-44b1-9ee9-1a75f96ab207
 keywords: ["in-box autoconfiguration support WDK printer , WSD schema extensions"]
 ---

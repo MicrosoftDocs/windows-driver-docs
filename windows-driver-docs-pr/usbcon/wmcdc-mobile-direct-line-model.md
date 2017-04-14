@@ -1,11 +1,5 @@
 ---
 Description: WMCDC Mobile Direct Line Model
-MS-HAID:
-- 'usbsystem\_639f336f-ecee-4c41-9e11-921fee547def.xml'
-- 'buses.wmcdc\_mobile\_direct\_line\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: WMCDC Mobile Direct Line Model
 ---
 

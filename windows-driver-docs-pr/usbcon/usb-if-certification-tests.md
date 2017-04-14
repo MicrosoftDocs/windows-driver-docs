@@ -1,10 +1,6 @@
 ---
-Description: 'Guidelines for hardware vendors and device manufacturers to prepare USB devices and host controllers for Windows Hardware Certification Program submission.'
-MS-HAID: 'buses.usb-if\_certification\_tests'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'USB-IF Certification Tests'
+Description: Guidelines for hardware vendors and device manufacturers to prepare USB devices and host controllers for Windows Hardware Certification Program submission.
+title: USB-IF Certification Tests
 ---
 
 # USB-IF Certification Tests

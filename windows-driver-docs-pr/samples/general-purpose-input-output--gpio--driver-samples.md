@@ -2,9 +2,6 @@
 title: General-purpose input/output (GPIO) driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F56180C7-44CF-47A6-A292-48DEF5AD90A6
 ---
 

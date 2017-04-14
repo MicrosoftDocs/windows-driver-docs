@@ -1,9 +1,6 @@
 ---
 title: Account provisioning
 description: Account provisioning
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ffcd769-253f-4918-8095-a9206445a201
 ---
 

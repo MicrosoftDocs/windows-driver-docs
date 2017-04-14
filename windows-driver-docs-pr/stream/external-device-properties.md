@@ -2,12 +2,6 @@
 title: External Device Properties
 author: windows-driver-content
 description: External Device Properties
-MS-HAID:
-- 'vidcapds\_4294f47e-9bf6-49f5-8b3e-9ebeb681de74.xml'
-- 'stream.external\_device\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 633b24c7-a1da-4748-aaa2-864a01a3fd98
 keywords: ["external device properties WDK video capture", "PROPSETID_EXT_DEVICE"]
 ---

@@ -2,12 +2,6 @@
 title: WIA Image Processing Filter
 author: windows-driver-content
 description: WIA Image Processing Filter
-MS-HAID:
-- 'WIA\_tree\_97097f68-2b6c-42bb-92b8-2969bd64c090.xml'
-- 'image.wia\_image\_processing\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 80bc7f50-45dc-4c18-b826-113dd6465ced
 ---
 

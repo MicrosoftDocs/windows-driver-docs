@@ -1,9 +1,6 @@
 ---
 title: ServiceProvider
 description: ServiceProvider
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6fa22f4d-9be9-4d02-b610-e20bed4958e9
 ---
 

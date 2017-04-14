@@ -1,11 +1,5 @@
 ---
 Description: CDC Ethernet Networking Control Model
-MS-HAID:
-- 'usbsystem\_fce765e7-d545-4330-bd9f-1bc436df298b.xml'
-- 'buses.cdc\_ethernet\_networking\_control\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: CDC Ethernet Networking Control Model
 ---
 

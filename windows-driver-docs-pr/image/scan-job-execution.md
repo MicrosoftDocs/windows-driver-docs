@@ -2,12 +2,6 @@
 title: Scan Job Execution
 author: windows-driver-content
 description: Scan Job Execution
-MS-HAID:
-- 'dsm\_des\_theory\_200d7fe2-7539-45ec-b932-02ec91cf4082.xml'
-- 'image.scan\_job\_execution'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cefc6aee-725d-4dc4-bbdc-3d152c97b203
 ---
 

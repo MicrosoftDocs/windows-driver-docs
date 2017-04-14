@@ -2,12 +2,6 @@
 title: Introduction to Parallel Ports and Devices
 author: windows-driver-content
 description: Introduction to Parallel Ports and Devices
-MS-HAID:
-- 'pcppd\_ee5042df-54d2-4551-a08b-9605466daecb.xml'
-- 'parports.introduction\_to\_parallel\_ports\_and\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0aaf63d-cc2d-4273-9760-6446cbb28938
 keywords: ["parallel ports WDK", "ports WDK , parallel", "parallel ports WDK , about parallel ports", "parallel devices WDK"]
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Driver Verifier Command Syntax
 description: The following syntax is used when running the Verifier utility in a Command Prompt window.You can type several options on the same single line.
 ms.assetid: 7cdf5277-7187-4e90-b22a-6f828f06e2fb

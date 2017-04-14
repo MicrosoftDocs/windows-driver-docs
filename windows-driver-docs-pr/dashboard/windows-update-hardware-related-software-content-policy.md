@@ -1,9 +1,6 @@
 ---
 title: Windows Update Hardware-Related Software Content Policy
 description: Windows Update Hardware-Related Software Content Policy
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 056b71f9-32bc-47e9-b730-45ad1331cc51
 ---
 

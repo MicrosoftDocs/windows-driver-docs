@@ -2,12 +2,6 @@
 title: Event Handling in AVStream
 author: windows-driver-content
 description: Event Handling in AVStream
-MS-HAID:
-- 'avsover\_379c97a2-ccdd-4e5b-acbf-1df52dd0b75c.xml'
-- 'stream.event\_handling\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7add2055-8d3f-432d-8aa1-44459ac197dd
 keywords: ["events WDK AVStream", "AVStream events WDK", "automation tables WDK AVStream"]
 ---

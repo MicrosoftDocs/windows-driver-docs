@@ -2,12 +2,6 @@
 title: WIA Item Categories
 author: windows-driver-content
 description: WIA Item Categories
-MS-HAID:
-- 'WIA\_tree\_543895c3-a331-4eb0-99ea-b612b160c4d1.xml'
-- 'image.wia\_item\_categories'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b201e365-60d8-4c3b-a9cf-4bbaa318337f
 ---
 

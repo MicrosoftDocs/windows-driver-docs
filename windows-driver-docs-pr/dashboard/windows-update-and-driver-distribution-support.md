@@ -1,9 +1,6 @@
 ---
 title: Windows Update and Driver Distribution Support
 description: Windows Update and Driver Distribution Support
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0fc33c79-2fc0-47fc-9ae6-d5e4621ce8fd
 ---
 

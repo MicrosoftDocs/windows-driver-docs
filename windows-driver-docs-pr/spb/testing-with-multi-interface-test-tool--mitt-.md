@@ -2,9 +2,6 @@
 title: Test with Multi Interface Test Tool (MITT)
 author: windows-driver-content
 description: The Multiple Interface Test Tool (MITT) is a test tool for validating hardware and software for simple peripheral buses, such as UART, I2C, SPI, and GPIO.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B847568F-4872-4FF7-BB73-E45A6FFF8249
 ---
 

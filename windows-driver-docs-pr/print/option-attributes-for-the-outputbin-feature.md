@@ -2,12 +2,6 @@
 title: Option Attributes for the OutputBin Feature
 author: windows-driver-content
 description: Option Attributes for the OutputBin Feature
-MS-HAID:
-- 'nt5gpd\_9da68ec8-2425-4aac-a7f2-6b7bc616f215.xml'
-- 'print.option\_attributes\_for\_the\_outputbin\_feature'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 492dbaeb-2930-4dfe-b14d-959bbc07233f
 keywords: ["OutputBin Feature"]
 ---

@@ -1,10 +1,6 @@
 ---
-Description: 'This topic describes the Microsoft-provided driver framework for USB devices that do not have their own USB device class specification.'
-MS-HAID: 'buses.microsoft\_defined\_usb\_frameworks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Microsoft-Defined USB Driver Frameworks'
+Description: This topic describes the Microsoft-provided driver framework for USB devices that do not have their own USB device class specification.
+title: Microsoft-Defined USB Driver Frameworks
 ---
 
 # Microsoft-Defined USB Driver Frameworks

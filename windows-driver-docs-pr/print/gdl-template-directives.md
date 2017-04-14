@@ -2,12 +2,6 @@
 title: GDL Template Directives
 author: windows-driver-content
 description: GDL Template Directives
-MS-HAID:
-- 'gplfiles\_2cf690a7-cf1a-4bad-93e0-cadeb1f0a4a0.xml'
-- 'print.gdl\_template\_directives'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 67400ddc-2575-4ceb-b204-66daf9708a4c
 keywords: ["templates WDK GDL , directives", "directives WDK GDL , template directives"]
 ---

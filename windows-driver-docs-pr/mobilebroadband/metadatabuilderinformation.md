@@ -1,9 +1,6 @@
 ---
 title: MetadataBuilderInformation
 description: MetadataBuilderInformation
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94403994-2165-405e-bfa0-974af8e241fe
 ---
 

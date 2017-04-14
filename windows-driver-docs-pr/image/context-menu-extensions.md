@@ -2,12 +2,6 @@
 title: Context Menu Extensions
 author: windows-driver-content
 description: Context Menu Extensions
-MS-HAID:
-- 'WIA\_drv\_cus\_1d8530d4-fbe9-4acf-bac0-97f8e1ad91bb.xml'
-- 'image.context\_menu\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6c52dd43-7f47-476e-acbc-15269d23ea71
 ---
 

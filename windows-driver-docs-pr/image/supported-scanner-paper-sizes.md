@@ -2,12 +2,6 @@
 title: Supported Scanner Paper Sizes
 author: windows-driver-content
 description: Supported Scanner Paper Sizes
-MS-HAID:
-- 'WIA\_drv\_scan\_dc769758-5769-46cc-a20f-6072b38846f3.xml'
-- 'image.supported\_scanner\_paper\_sizes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c4437c38-b43a-433c-913a-d3de9bf74284
 ---
 

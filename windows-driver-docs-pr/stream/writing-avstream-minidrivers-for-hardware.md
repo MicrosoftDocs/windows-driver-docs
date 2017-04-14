@@ -2,12 +2,6 @@
 title: Writing AVStream Minidrivers for Hardware
 author: windows-driver-content
 description: Writing AVStream Minidrivers for Hardware
-MS-HAID:
-- 'avsover\_3c3bcf61-6e86-494d-9253-8fa886dd207a.xml'
-- 'stream.writing\_avstream\_minidrivers\_for\_hardware'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d7dc42d7-efd0-41ff-abab-d97c508a41e6
 keywords: ["AVStream WDK , hardware", "hardware WDK AVStream", "AVStrMiniDeviceStart", "filter graphs WDK AVStream", "graphs WDK AVStream", "interference between graphs WDK AVStream", "encoding WDK AVStream", "decoding WDK AVStream"]
 ---

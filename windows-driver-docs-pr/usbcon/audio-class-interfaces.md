@@ -1,11 +1,5 @@
 ---
 Description: Audio Class Interfaces
-MS-HAID:
-- 'usbsystem\_3b4bf410-4062-468f-9ae1-31537243ecb4.xml'
-- 'buses.audio\_class\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Audio Class Interfaces
 ---
 

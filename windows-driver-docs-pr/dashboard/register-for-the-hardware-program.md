@@ -1,9 +1,6 @@
 ---
 title: Register for the Hardware Program
 description: Register for the Hardware Program
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8E947636-7F0E-4C31-9149-D6BF60D84226
 ---
 

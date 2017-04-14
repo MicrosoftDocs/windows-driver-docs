@@ -1,9 +1,6 @@
 ---
 title: ServiceSpecificExtension
 description: ServiceSpecificExtension
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49c8e902-d943-4884-96e4-c5472a82b568
 ---
 

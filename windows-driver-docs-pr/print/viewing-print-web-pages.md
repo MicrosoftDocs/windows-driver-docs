@@ -2,12 +2,6 @@
 title: Viewing Print Web Pages
 author: windows-driver-content
 description: Viewing Print Web Pages
-MS-HAID:
-- 'inetpri\_22d62328-45e1-4986-8fb4-ee23e0ac6c32.xml'
-- 'print.viewing\_print\_web\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c2cf782c-0f53-47e1-8c5e-1e2aa87613c4
 keywords: ["Internet printing WDK , viewing print Web pages", "viewing print Web pages", "displaying print Web pages", "print Web pages WDK , viewing", "Web pages WDK printer , viewing", "print server pages WDK", "viewing print server pages", "print URLs WDK"]
 ---

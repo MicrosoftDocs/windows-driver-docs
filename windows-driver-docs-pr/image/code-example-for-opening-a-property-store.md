@@ -2,12 +2,6 @@
 title: Code Example for Opening a Property Store
 author: windows-driver-content
 description: Code Example for Opening a Property Store
-MS-HAID:
-- 'WIA\_wsd\_scan\_c59cb22d-0665-495b-ba0d-64ac31000f81.xml'
-- 'image.code\_example\_for\_opening\_a\_property\_store'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4d63ea52-f3f5-4af7-ad6f-0bbd57b76c52
 ---
 

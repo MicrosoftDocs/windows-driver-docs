@@ -2,12 +2,6 @@
 title: Properties for WIA Video Minidrivers
 author: windows-driver-content
 description: Properties for WIA Video Minidrivers
-MS-HAID:
-- 'WIA\_arch\_4caf7ddd-3acc-438d-825a-c2cfa07ecb27.xml'
-- 'image.properties\_for\_wia\_video\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d02baba-c9af-4596-9d7a-2b6c6675c87c
 ---
 

@@ -2,12 +2,6 @@
 title: Removing IEEE 1394 Virtual Devices
 author: windows-driver-content
 description: Removing IEEE 1394 Virtual Devices
-MS-HAID:
-- '1394-configrom\_ed5ffff1-cea2-43e1-8ec8-3b5f76aeca96.xml'
-- 'IEEE.removing\_ieee\_1394\_virtual\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea2d4b9e-7774-42dc-98dd-d95298012d72
 keywords: ["emulation drivers WDK IEEE 1394 bus", "hardware emulation drivers WDK IEEE 1394 bus", "virtual devices WDK IEEE 1394 bus", "removing virtual devices"]
 ---

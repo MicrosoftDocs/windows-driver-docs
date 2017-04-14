@@ -2,12 +2,6 @@
 title: AVStream Child Devices
 author: windows-driver-content
 description: AVStream Child Devices
-MS-HAID:
-- 'avsover\_f1d4ad8e-8a23-493f-911f-23c920ed5b72.xml'
-- 'stream.avstream\_child\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4b2528d7-acc7-40eb-a351-64d8564c7a13
 keywords: ["child devices WDK AVStream", "AVStream child devices WDK", "bus enumeration WDK AVStream", "hardware IDs WDK AVStream", "identifiers WDK AVStream", "compatible IDs WDK AVStream"]
 ---

@@ -2,9 +2,6 @@
 title: Windows Portable Device (WPD) driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5EB5B820-A29A-4A93-BBB9-6F4CDF101E3B
 ---
 

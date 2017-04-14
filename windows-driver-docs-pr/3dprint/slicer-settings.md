@@ -2,9 +2,6 @@
 title: Slicer settings
 author: windows-driver-content
 description: The configuration file XML contains a number of settings that need to be adjusted for a specific 3D Printer device to control the print capabilities exposed to the 3D Print Dialog in Windows.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9203AABB-48D9-47A6-A2B1-7A878BF82FD1
 ---
 

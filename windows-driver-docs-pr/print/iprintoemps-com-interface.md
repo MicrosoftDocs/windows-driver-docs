@@ -2,12 +2,6 @@
 title: IPrintOemPS COM Interface
 author: windows-driver-content
 description: IPrintOemPS COM Interface
-MS-HAID:
-- 'custdrvr\_99e3e9db-4c3f-4e5f-a1cf-ff1931fef953.xml'
-- 'print.iprintoemps\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 504db6ab-291e-4fba-995d-49a22a3a7c7f
 keywords: ["IPrintOemPS"]
 ---

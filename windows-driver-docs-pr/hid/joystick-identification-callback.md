@@ -2,12 +2,6 @@
 title: Joystick Identification Callback
 author: windows-driver-content
 description: Joystick Identification Callback
-MS-HAID:
-- 'di\_c0d43617-916b-4f39-ad85-aa168e627809.xml'
-- 'hid.joystick\_identification\_callback'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d5e859d2-bfe4-41ef-9d09-ebb945d299bd
 keywords: ["callbacks WDK joysticks", "joysticks WDK HID , ID requests", "ID requests WDK joysticks", "identification callbacks WDK joysticks"]
 ---

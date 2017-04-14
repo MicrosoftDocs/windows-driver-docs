@@ -2,12 +2,6 @@
 title: Writing Core Drivers
 author: windows-driver-content
 description: Writing Core Drivers
-MS-HAID:
-- 'prtinst\_43b0ff42-b920-403b-b2a5-ec83ead2fbae.xml'
-- 'print.writing\_core\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a41a91b-3cc3-462a-8836-448203ccb4c2
 ---
 

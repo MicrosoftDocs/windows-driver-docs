@@ -1,9 +1,6 @@
 ---
 title: Design services and goods pages in a mobile broadband app
 description: Design services and goods pages in a mobile broadband app
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7c13a42f-b808-4f33-a740-a8596b3520f7
 ---
 

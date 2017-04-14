@@ -2,12 +2,6 @@
 title: Customized Data Stream Filtering
 author: windows-driver-content
 description: Customized Data Stream Filtering
-MS-HAID:
-- 'custdrvr\_426d70ce-941a-4fd2-8444-9b2593b1ff60.xml'
-- 'print.customized\_data\_stream\_filtering'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 768d4b95-4d8d-4460-9a8c-c80785f7f799
 keywords: ["Unidrv, data stream filtering", "data stream filtering WDK Unidrv", "customized data stream filtering WDK Unidrv", "filtering WDK Unidrv", "Unidrv WDK print"]
 ---

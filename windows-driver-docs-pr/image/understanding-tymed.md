@@ -2,12 +2,6 @@
 title: Understanding TYMED
 author: windows-driver-content
 description: Understanding TYMED
-MS-HAID:
-- 'WIA\_db\_trans\_db62c910-27ce-4853-9e50-400784a021b8.xml'
-- 'image.understanding\_tymed'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36110923-c346-4367-8b7d-ef4d003ed88c
 ---
 

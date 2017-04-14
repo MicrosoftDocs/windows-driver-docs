@@ -2,12 +2,6 @@
 title: How to Locate an Active Directory Domain Controller
 author: windows-driver-content
 description: How to Locate an Active Directory Domain Controller
-MS-HAID:
-- 'dsm\_des\_tut\_42579e70-4dc6-4544-aafe-9c26163cd004.xml'
-- 'image.how\_to\_locate\_an\_active\_directory\_domain\_controller'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e4570259-63dd-4b8a-9ab9-7846dc057896
 ---
 

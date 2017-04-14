@@ -2,12 +2,6 @@
 title: Flatbed Scanner Minidriver Sample
 author: windows-driver-content
 description: Flatbed Scanner Minidriver Sample
-MS-HAID:
-- 'WIA\_GS\_cc3328d7-24ca-4842-abe6-f4b8d239d568.xml'
-- 'image.flatbed\_scanner\_minidriver\_sample'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c1ad90a-cff9-45a0-b2d9-e2605436f128
 ---
 
