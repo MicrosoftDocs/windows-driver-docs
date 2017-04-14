@@ -2,12 +2,6 @@
 title: Supporting Standard Paper Sizes
 author: windows-driver-content
 description: Supporting Standard Paper Sizes
-MS-HAID:
-- 'nt5gpd\_49b2a5c9-16ed-492e-ad2d-4fca1e87398a.xml'
-- 'print.supporting\_standard\_paper\_sizes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04f8fbdb-88f8-4595-b5d2-74315c02bb41
 keywords: ["standard paper sizes WDK Unidrv"]
 ---

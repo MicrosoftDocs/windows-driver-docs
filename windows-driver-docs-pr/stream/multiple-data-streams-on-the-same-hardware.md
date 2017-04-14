@@ -2,12 +2,6 @@
 title: Multiple Data Streams on the same Hardware
 author: windows-driver-content
 description: Multiple Data Streams on the same Hardware
-MS-HAID:
-- 'dvd-design\_f84a1191-383c-4563-a02b-251f0c2ef3ae.xml'
-- 'stream.multiple\_data\_streams\_on\_the\_same\_hardware'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23133022-6d00-44ad-8c0d-24715204cacc
 keywords: ["multiple data streams WDK DVD decoder", "stream numbers supported WDK DVD decoder"]
 ---

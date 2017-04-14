@@ -2,9 +2,6 @@
 title: EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR
 author: windows-driver-content
 description: EFI\_USB\_SUPERSPEED\_ENDPOINT\_DESCRIPTOR
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3254C0F1-85C2-472B-938A-F71645703540
 ---
 

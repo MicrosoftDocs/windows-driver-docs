@@ -2,12 +2,6 @@
 title: WIA Properties for Segmentation Filters
 author: windows-driver-content
 description: WIA Properties for Segmentation Filters
-MS-HAID:
-- 'WIA\_tree\_80e0275a-a3ba-4db7-b690-eebf970cdbb7.xml'
-- 'image.wia\_properties\_for\_segmentation\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fc61e950-14e5-4bc3-b425-8f22143b76d9
 ---
 

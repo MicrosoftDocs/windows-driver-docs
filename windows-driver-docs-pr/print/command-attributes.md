@@ -2,12 +2,6 @@
 title: Command Attributes
 author: windows-driver-content
 description: Command Attributes
-MS-HAID:
-- 'nt5gpd\_45af4f66-21fd-4dcc-b12f-c8df5ba9d2bf.xml'
-- 'print.command\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ce2c668-a130-428e-bf5f-0eab2dcd3fdb
 keywords: ["printer attributes WDK Unidrv , commands", "commands WDK Unidrv", "printer commands WDK Unidrv , attributes", "CallbackID", "Cmd", "NoPageEject", "Order", "Params"]
 ---

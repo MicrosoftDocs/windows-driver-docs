@@ -2,12 +2,6 @@
 title: Print Ticket Support in Unidrv and PScript5 Print Drivers
 author: windows-driver-content
 description: Print Ticket Support in Unidrv and PScript5 Print Drivers
-MS-HAID:
-- 'drvarch\_0f90c6eb-af76-4675-97e6-e97ad8f4e5c9.xml'
-- 'print.print\_ticket\_support\_in\_unidrv\_and\_pscript5\_print\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c3d22e8-5bf3-4e4d-aae4-88716b59682a
 keywords: ["Print Tickets WDK , Unidrv", "Print Tickets WDK , PScript5"]
 ---

@@ -2,12 +2,6 @@
 title: Connecting and Disconnecting a WIA Application
 author: windows-driver-content
 description: Connecting and Disconnecting a WIA Application
-MS-HAID:
-- 'WIA\_drv\_basic\_4bb35efc-7268-4fc2-a3b7-23db147cc54e.xml'
-- 'image.connecting\_and\_disconnecting\_a\_wia\_application'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3360b707-2167-4c51-af86-4edece3b557f
 ---
 

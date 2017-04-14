@@ -2,12 +2,6 @@
 title: Customizing a WIA Driver
 author: windows-driver-content
 description: Customizing a WIA Driver
-MS-HAID:
-- 'WIA\_drv\_cus\_fd3cc410-af85-425e-bc05-f93c07acdd7e.xml'
-- 'image.customizing\_a\_wia\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 293d9278-0223-4164-b640-6c00576f501f
 ---
 

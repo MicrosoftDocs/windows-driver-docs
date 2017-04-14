@@ -1,9 +1,6 @@
 ---
 title: WindowsInfo
 description: WindowsInfo
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 62b3a7d3-503e-4815-aadb-8c67318c54e0
 ---
 

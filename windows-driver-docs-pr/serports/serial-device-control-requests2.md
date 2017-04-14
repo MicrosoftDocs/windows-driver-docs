@@ -2,12 +2,6 @@
 title: Serial Device Control Requests
 author: windows-driver-content
 description: Serial Device Control Requests
-MS-HAID:
-- 'sseovr\_8325478c-d64c-4520-a9a9-73975b595013.xml'
-- 'serports.serial\_device\_control\_requests2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 12dab038-e4da-47b5-ada8-e1c7ee980cde
 keywords: ["serial devices WDK , device control requests", "device control requests WDK serial devices", "Serial driver WDK , device control requests"]
 ---

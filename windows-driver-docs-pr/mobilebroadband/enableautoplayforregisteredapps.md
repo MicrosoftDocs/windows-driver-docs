@@ -1,9 +1,6 @@
 ---
 title: EnableAutoPlayForRegisteredApps
 description: EnableAutoPlayForRegisteredApps
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8f4b1a6a-262a-4ebc-808b-8e998fd78f99
 ---
 

@@ -2,9 +2,6 @@
 title: UEFI check signature protocol
 author: windows-driver-content
 description: UEFI check signature protocol
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71df491f-c507-4ca4-831b-50ca95167fb3
 ---
 

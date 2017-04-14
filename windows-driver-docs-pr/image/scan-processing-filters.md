@@ -2,12 +2,6 @@
 title: Scan Processing Filters
 author: windows-driver-content
 description: Scan Processing Filters
-MS-HAID:
-- 'dsm\_des\_arch\_51cd052b-76d8-4f26-a87f-d1cd620a7eb4.xml'
-- 'image.scan\_processing\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c654af4-9492-4aca-95fb-4301084eefa7
 ---
 

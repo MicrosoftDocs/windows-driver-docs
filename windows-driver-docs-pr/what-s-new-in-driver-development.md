@@ -101,7 +101,7 @@ Driver verifier includes new driver validation rules for the following technolog
 
 Windows 10, version 1607 includes Kernel-Mode Driver Framework (KMDF) version 1.19 and User-Mode Driver Framework (UMDF) version 2.19.
 
-For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](https://msdn.microsoft.com/windows/hardware/drivers/wdf/what-s-new-for-wdf-drivers).
+For info on what's included in these framework versions, see [What's New for WDF Drivers in Windows 10](wdf/index.md).
 
 ### Universal Windows drivers
 
@@ -186,9 +186,12 @@ For more information about what's new for Bluetooth, see [Bluetooth](https://msd
 
 The following lists updates to Networking:
 
-* [**Winsock Kernel**](https://msdn.microsoft.com/windows/hardware/drivers/network/winsock-kernel-socket-categories) - Includes a new type of socket called Stream Sockets, which support Linux networking applications on Windows.
-* [**Mobile Broadband (MB)**](https://msdn.microsoft.com/windows/hardware/drivers/network/mobile-broadband--mb--design-guide) - Updates include improved LTE attach features, support for multi-SIM, support for provisioning contexts into the modem, support for the Selective Absorption Rate platform, and support for network blacklisting.
-* [**Mobile Operator Scenarios (MOs)**](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/apn-database) - New database format called COSA for MOs to provision Windows Desktop MB devices.
+* [**Winsock Kernel**](https://msdn.microsoft.com/windows/hardware/drivers/network/winsock-kernel-socket-categories) - Includes a new type of socket called Stream Sockets, which support Linux networking applications on Windows. New functions and structures include [WskConnectEx](https://msdn.microsoft.com/library/windows/hardware/mt799884), [WskListen](https://msdn.microsoft.com/library/windows/hardware/mt799885), [WSK_CLIENT_STREAM_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/mt799886), and [WSK_PROVIDER_STREAM_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/mt799887).
+* [**Mobile Broadband (MB)**](https://msdn.microsoft.com/windows/hardware/drivers/network/mobile-broadband--mb--design-guide) - Updates include improved [LTE attach features](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-lte-attach-operations), support for [Multi-SIM Operations](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-multi-sim-operations), support for [provisioning contexts](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-provisioned-context-operations) into the modem, support for the [Selective Absorption Rate platform](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-sar-platform-support), and support for [network blacklisting](https://msdn.microsoft.com/windows/hardware/drivers/network/mb-network-blacklist-operations).
+* [**Mobile Operator Scenarios (MOs)**](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/apn-database) - New database format called [COSA FAQ](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/cosa---faq), for MOs to provision Windows Desktop MB devices. See these topics for more updates:
+    * [Planning your COSA/APN database submission](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/planning-your-apn-database-submission)
+    * [Submitting the COSA/APN database update](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/submitting-the-apn-database-update)
+    * [Testing your COSA/APN database submission](https://msdn.microsoft.com/windows/hardware/drivers/mobilebroadband/testing-your-apn-database-submission)
 
 ### POS
 

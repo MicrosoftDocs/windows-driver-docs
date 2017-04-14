@@ -2,12 +2,6 @@
 title: Mapping PTP Associations to WIA Folders
 author: windows-driver-content
 description: Mapping PTP Associations to WIA Folders
-MS-HAID:
-- 'WIA\_drv\_cam\_a098b202-a9d9-4d83-814c-e75500fff0d2.xml'
-- 'image.mapping\_ptp\_associations\_to\_wia\_folders'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 81de26fd-1f93-4018-a628-ad0b0d7468ba
 ---
 

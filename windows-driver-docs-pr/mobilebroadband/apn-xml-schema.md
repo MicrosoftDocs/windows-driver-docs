@@ -1,9 +1,6 @@
 ---
 title: APN XML schema
 description: APN XML schema
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5cf6f837-b077-4dd7-88cf-eac4715ef668
 ---
 

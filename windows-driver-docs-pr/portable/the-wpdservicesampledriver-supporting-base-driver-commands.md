@@ -1,8 +1,6 @@
 ---
-Description: 'Supporting the Base-Driver Commands'
-MS-HAID: 'wpddk.the\_wpdservicesampledriver\_supporting\_base\_driver\_commands'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Supporting the Base-Driver Commands'
+Description: Supporting the Base-Driver Commands
+title: Supporting the Base-Driver Commands
 ---
 
 # Supporting the Base-Driver Commands

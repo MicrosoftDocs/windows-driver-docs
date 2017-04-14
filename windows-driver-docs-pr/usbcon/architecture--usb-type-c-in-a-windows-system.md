@@ -1,10 +1,6 @@
 ---
-Description: 'Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.'
-MS-HAID: 'buses.architecture\_\_usb\_type-c\_in\_a\_windows\_system'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Architecture: USB Type-C design for a Windows system'
+Description: Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.
+title: Architecture: USB Type-C design for a Windows system
 ---
 
 # Architecture: USB Type-C design for a Windows system

@@ -2,12 +2,6 @@
 title: DISTRIBUTED SCAN DEVICE WEB SERVICE PROTOCOL SUMMARY
 author: windows-driver-content
 description: DISTRIBUTED SCAN DEVICE WEB SERVICE PROTOCOL SUMMARY
-MS-HAID:
-- 'dsm\_des\_arch\_2ee1f954-444f-456e-81ff-aa3f1ed6ee36.xml'
-- 'image.distributed\_scan\_device\_web\_service\_protocol\_summary'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: de9925b1-be55-4d22-8255-0f0b8744ee75
 ---
 

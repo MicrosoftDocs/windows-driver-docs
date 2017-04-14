@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_POLICY\_TYPE
 author: windows-driver-content
 description: EFI\_USBFN\_POLICY\_TYPE
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51f615d4-a226-45d5-b5e9-fea4859640a9
 ---
 

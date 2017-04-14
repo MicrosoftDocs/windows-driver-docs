@@ -1,10 +1,6 @@
 ---
-Description: 'This section provides information about certain limitations of the Universal Serial Bus (USB) 2.0 Selective Suspend mechanism.'
-MS-HAID: 'buses.link\_power\_management\_in\_usb\_3\_0\_hardware'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Link power management in USB 3.0 hardware'
+Description: This section provides information about certain limitations of the Universal Serial Bus (USB) 2.0 Selective Suspend mechanism.
+title: Link power management in USB 3.0 hardware
 ---
 
 # Link power management in USB 3.0 hardware

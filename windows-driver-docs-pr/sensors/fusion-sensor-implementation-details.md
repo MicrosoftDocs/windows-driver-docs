@@ -2,9 +2,6 @@
 title: Fusion sensor implementation details
 author: windows-driver-content
 description: This section provides implementation details about the Windows fusion sensor driver stack.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B53D76AC-127C-4B5A-B908-A647D2B3F164
 ---
 

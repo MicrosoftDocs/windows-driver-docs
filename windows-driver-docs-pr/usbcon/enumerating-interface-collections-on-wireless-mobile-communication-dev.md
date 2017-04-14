@@ -1,11 +1,5 @@
 ---
-Description: 'The USB wireless mobile communication device class (WMCDC) is a subclass of the USB communications device class (CDC).'
-MS-HAID:
-- 'usbsystem\_1a647b7b-8a2e-4ca5-8d3b-d7f21d0c3d7c.xml'
-- 'buses.enumerating\_interface\_collections\_on\_wireless\_mobile\_communication\_dev'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: The USB wireless mobile communication device class (WMCDC) is a subclass of the USB communications device class (CDC).
 title: Enumerating Interface Collections on WMCDC
 ---
 

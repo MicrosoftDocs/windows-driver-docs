@@ -1,9 +1,6 @@
 ---
 title: Background tasks and custom triggers
 description: Background tasks and custom triggers
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 672d3501-da84-495b-b70e-f07de32aff53
 ---
 

@@ -2,12 +2,6 @@
 title: Example Simple Segmentation Filter
 author: windows-driver-content
 description: Example Simple Segmentation Filter
-MS-HAID:
-- 'WIA\_tree\_a5bd9bd7-cd4a-437e-8cac-5655b7420fe7.xml'
-- 'image.example\_\_simple\_segmentation\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c77fea4-61d9-4bec-8d8d-35436d00c1ed
 ---
 

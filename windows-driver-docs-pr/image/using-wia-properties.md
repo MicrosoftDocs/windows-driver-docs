@@ -2,12 +2,6 @@
 title: Using WIA Properties
 author: windows-driver-content
 description: Using WIA Properties
-MS-HAID:
-- 'WIA\_drv\_basic\_0c5b6a68-ff45-435b-92a0-92f2ab74d055.xml'
-- 'image.using\_wia\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a1bc114c-d547-486f-9b34-5ff0bab4d94b
 ---
 

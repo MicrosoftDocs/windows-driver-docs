@@ -2,12 +2,6 @@
 title: Command Names
 author: windows-driver-content
 description: Command Names
-MS-HAID:
-- 'nt5gpd\_e72b4b95-1a5d-40df-9d91-f792acc3714d.xml'
-- 'print.command\_names'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eb659fb2-e74c-42c1-bb80-6d2f03e32e6c
 keywords: ["printer commands WDK Unidrv , names", "names WDK printer commands"]
 ---

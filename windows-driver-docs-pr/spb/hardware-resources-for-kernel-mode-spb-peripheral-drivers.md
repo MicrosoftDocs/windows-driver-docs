@@ -2,9 +2,6 @@
 title: Hardware Resources for Kernel-Mode SPB Peripheral Drivers
 author: windows-driver-content
 description: The code examples in this topic show how the Kernel-Mode Driver Framework (KMDF) driver for a peripheral device on a simple peripheral bus (SPB) obtains the hardware resources that it requires to operate the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ABFFCBEC-16AB-44AF-BEF6-34AEE612EAF7
 ---
 

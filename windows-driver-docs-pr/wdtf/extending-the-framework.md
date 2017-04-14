@@ -2,12 +2,6 @@
 title: Extending the Framework
 author: windows-driver-content
 description: Extending the Framework
-MS-HAID:
-- 'wdtfdevguide\_39b82316-26bd-4340-a9ee-21c417a4a33f.xml'
-- 'dtf.extending\_the\_framework'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 37a0fd70-0c88-414f-b4e3-afd641f1c667
 keywords: ["Windows Device Testing Framework WDK , extending WDTF", "WDTF WDK , extending WDTF", "Windows Device Testing Framework WDK , action interfaces", "WDTF WDK , action interfaces", "Windows Device Testing Framework WDK , samples", "WDTF WDK , samples", "SimpleIO wizard WDK WDTF", "action interfaces WDK WDTF"]
 ---

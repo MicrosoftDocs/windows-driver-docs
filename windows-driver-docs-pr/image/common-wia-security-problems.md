@@ -2,12 +2,6 @@
 title: Common WIA Security Problems
 author: windows-driver-content
 description: Common WIA Security Problems
-MS-HAID:
-- 'WIA\_best\_practice\_84c81de6-ac31-4b87-a235-2b4c00a03bf2.xml'
-- 'image.common\_wia\_security\_problems'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d3f7d6e9-1ac4-4209-92bb-d08e4e13a4ad
 ---
 

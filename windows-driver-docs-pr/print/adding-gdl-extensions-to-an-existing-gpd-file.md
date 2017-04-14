@@ -2,12 +2,6 @@
 title: Adding GDL Extensions to an Existing GPD File
 author: windows-driver-content
 description: Adding GDL Extensions to an Existing GPD File
-MS-HAID:
-- 'autocfg\_0a59ebff-1396-439f-8d54-fdc8bfe68a01.xml'
-- 'print.adding\_gdl\_extensions\_to\_an\_existing\_gpd\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5ba2a447-e133-47bb-aa1e-93abe75c6eef
 keywords: ["in-box autoconfiguration support WDK printer , GDL extensions", "GDL files WDK printer", "extensions WDK GDL files", "GPD files WDK GDL extensions", "GPD files WDK GDL extensions , adding"]
 ---

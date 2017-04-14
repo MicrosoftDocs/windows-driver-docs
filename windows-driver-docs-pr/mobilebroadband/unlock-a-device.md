@@ -1,9 +1,6 @@
 ---
 title: Unlock a device
 description: Unlock a device
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4e6ed725-2384-429b-be1e-027b7784e95b
 ---
 

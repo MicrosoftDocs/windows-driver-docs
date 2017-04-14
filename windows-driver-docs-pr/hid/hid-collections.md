@@ -2,12 +2,6 @@
 title: HID Collections
 author: windows-driver-content
 description: A HID collection is a meaningful grouping of HID controls and their respective HID usages.
-MS-HAID:
-- 'hidclass\_16636fc3-28f4-4174-9068-609f21ed1156.xml'
-- 'hid.hid\_collections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d3efb38-4eba-43db-8cff-9fac30209952
 keywords: ["Human Interface Devices WDK , collections", "HID WDK , collections", "interactive input devices WDK , collections", "input devices WDK , collections", "collections WDK HID", "collections WDK HID , about HID collections", "subcollections WDK HID", "Human Interface Devices WDK , controls", "HID WDK , controls", "interactive input devices WDK , controls", "input devices WDK , controls", "controls WDK HID", "HID collections WDK", "HID collections WDK , about HID collections"]
 ---

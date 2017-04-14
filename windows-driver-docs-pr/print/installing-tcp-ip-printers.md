@@ -2,12 +2,6 @@
 title: Installing TCP/IP Printers
 author: windows-driver-content
 description: Installing TCP/IP Printers
-MS-HAID:
-- 'prtinst\_00a0b5bb-2659-436b-b292-b9967e738a5a.xml'
-- 'print.installing\_tcp\_ip\_printers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15339cce-69aa-480d-bfee-11ea509ff5d4
 keywords: ["TCP/IP WDK printer"]
 ---

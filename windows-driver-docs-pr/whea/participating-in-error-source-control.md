@@ -2,12 +2,6 @@
 title: Participating in Error Source Control
 author: windows-driver-content
 description: Participating in Error Source Control
-MS-HAID:
-- 'whea\_55fba653-e1e6-481b-b5dc-fdc3bae69b82.xml'
-- 'whea.participating\_in\_error\_source\_control'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4b2e3431-348f-48b1-924e-14b9fb5a48f0
 keywords: ["Windows Hardware Error Architecture WDK , error source control", "WHEA WDK , error source control", "hardware errors WDK WHEA , error source control", "errors WDK WHEA , error source control", "platform-specific hardware error driver plug-ins WDK WHEA , error source control", "PSHED plug-ins WDK WHEA , error source control", "error source control WDK WHEA"]
 ---

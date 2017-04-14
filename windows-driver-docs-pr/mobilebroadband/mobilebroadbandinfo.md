@@ -1,9 +1,6 @@
 ---
 title: MobileBroadbandInfo
 description: MobileBroadbandInfo
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 02279e23-becd-49ef-8981-6afb8e5aab91
 ---
 

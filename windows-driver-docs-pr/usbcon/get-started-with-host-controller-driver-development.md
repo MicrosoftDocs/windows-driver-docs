@@ -1,10 +1,6 @@
 ---
-Description: 'This section introduces you to high-level concepts and tasks for host driver development.'
-MS-HAID: 'buses.get\_started\_with\_host\_controller\_driver\_development'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Architecture: USB host controller extension (UCX)'
+Description: This section introduces you to high-level concepts and tasks for host driver development.
+title: Architecture: USB host controller extension (UCX)
 ---
 
 # Architecture: USB host controller extension (UCX)

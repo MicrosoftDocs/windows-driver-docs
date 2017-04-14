@@ -2,12 +2,6 @@
 title: Transferring Data to a WIA Application
 author: windows-driver-content
 description: Transferring Data to a WIA Application
-MS-HAID:
-- 'WIA\_db\_trans\_bcf3b94a-7750-4edc-83d4-fc2026a1450c.xml'
-- 'image.transferring\_data\_to\_a\_wia\_application'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ad906c9-968f-43d7-ae17-fc570440883d
 ---
 

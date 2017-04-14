@@ -2,12 +2,6 @@
 title: Leading and Trailing Edge Stream Pointers
 author: windows-driver-content
 description: Leading and Trailing Edge Stream Pointers
-MS-HAID:
-- 'avsover\_5063fd89-9aa4-4c03-a5ea-50f4ade9b827.xml'
-- 'stream.leading\_and\_trailing\_edge\_stream\_pointers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 73ab974f-8034-421f-980a-2393d84ec54c
 keywords: ["stream pointers WDK AVStream , leading and trailing edge", "leading edge stream pointers WDK AVStream", "trailing edge stream pointers WDK AVStream"]
 ---

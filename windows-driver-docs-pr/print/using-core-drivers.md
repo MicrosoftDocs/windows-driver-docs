@@ -2,12 +2,6 @@
 title: Using Core Drivers
 author: windows-driver-content
 description: Using Core Drivers
-MS-HAID:
-- 'prtinst\_18a9596d-3482-42e4-971d-742eda19bcf4.xml'
-- 'print.using\_core\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 333f3f17-0cdc-48d3-bb30-f8e2d7216d89
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Handling large numbers of SSIDs
 description: Handling large numbers of SSIDs
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 52bcfbd4-98f6-43e3-b697-c632f6660717
 ---
 

@@ -2,12 +2,6 @@
 title: Support for TWAIN-Compatible Applications
 author: windows-driver-content
 description: Support for TWAIN-Compatible Applications
-MS-HAID:
-- 'WIA\_drv\_scan\_4093579b-6122-4f3e-b811-2fbc797123c5.xml'
-- 'image.support\_for\_twain\_compatible\_applications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8135178f-a432-4200-81c3-8e12112637f4
 ---
 

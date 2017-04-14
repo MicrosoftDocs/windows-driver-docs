@@ -2,12 +2,6 @@
 title: Adding Attachments to Images
 author: windows-driver-content
 description: Adding Attachments to Images
-MS-HAID:
-- 'WIA\_drv\_cam\_9c805555-b449-4d41-8605-25433d0ac4e4.xml'
-- 'image.adding\_attachments\_to\_images'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 704f541b-b98c-44a8-bb19-5d5d0d1eab78
 ---
 

@@ -2,12 +2,6 @@
 title: Developing a WIA Video Driver
 author: windows-driver-content
 description: Developing a WIA Video Driver
-MS-HAID:
-- 'WIA\_drv\_cus\_1c8438e5-89dd-4625-ae56-2470ce939c02.xml'
-- 'image.developing\_a\_wia\_video\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3cf14fd3-1dfa-480e-a69c-c4d2c196a504
 ---
 

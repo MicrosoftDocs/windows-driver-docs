@@ -2,12 +2,6 @@
 title: LDAP Search for PSPs
 author: windows-driver-content
 description: LDAP Search for PSPs
-MS-HAID:
-- 'dsm\_des\_tut\_558584a7-98bc-4528-9718-9efa0a110fb1.xml'
-- 'image.ldap\_search\_for\_psps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c93b0c0f-eb46-4740-a5af-6a1ccaa6ccf9
 ---
 

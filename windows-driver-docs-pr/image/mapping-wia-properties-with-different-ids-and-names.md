@@ -2,12 +2,6 @@
 title: Mapping WIA Properties with Different IDs and Names
 author: windows-driver-content
 description: Mapping WIA Properties with Different IDs and Names
-MS-HAID:
-- 'WIA\_Fundamentals\_d9be54a8-caba-4e9b-aa47-4a7fde431692.xml'
-- 'image.mapping\_wia\_properties\_with\_different\_ids\_and\_names'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e3a352fc-c817-466e-bd04-0ec8b029d500
 ---
 

@@ -2,12 +2,6 @@
 title: New Root-Level-Only PPD Attributes for Windows Vista
 author: windows-driver-content
 description: New Root-Level-Only PPD Attributes for Windows Vista
-MS-HAID:
-- 'nt5gpd\_f10cc16f-b1b3-41d8-84e0-9c9c2bd99018.xml'
-- 'print.new\_root\_level\_only\_ppd\_attributes\_for\_windows\_vista'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49cdfb2f-e119-4960-9e79-67e1025b753f
 keywords: ["root-level-only attributes WDK Unidrv", "general printer attributes WDK Unidrv , root-level-only", "PPD attributes WDK Unidrv"]
 ---

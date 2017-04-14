@@ -2,12 +2,6 @@
 title: How to Use Decorations in INF Files for Printer Drivers
 author: windows-driver-content
 description: How to Use Decorations in INF Files for Printer Drivers
-MS-HAID:
-- 'prtinst\_3c28de9e-d1e9-4bc6-a1e4-a5148452a9fd.xml'
-- 'print.how\_to\_use\_decorations\_in\_inf\_files\_for\_printer\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 772e2797-8019-4715-870c-b7cd2b8e65f2
 keywords: ["multiple processor architectures WDK printer", "x86-based driver sample WDK printer", "Itanium-based driver sample WDK printer", "undecorated INF WDK printer", "INF files WDK print , decorations", "decorated INF WDK"]
 ---

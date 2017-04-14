@@ -2,12 +2,6 @@
 title: DVD Data Streams
 author: windows-driver-content
 description: DVD Data Streams
-MS-HAID:
-- 'dvd-design\_a6f78b16-9fb6-4f34-a62a-8cf81416aa80.xml'
-- 'stream.dvd\_data\_streams'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77e38075-5e28-4d9d-a2ca-caa274bde4db
 keywords: ["DVD decoder minidrivers WDK , data streams", "decoder minidrivers WDK DVD , data streams", "streams WDK DVD decoder"]
 ---

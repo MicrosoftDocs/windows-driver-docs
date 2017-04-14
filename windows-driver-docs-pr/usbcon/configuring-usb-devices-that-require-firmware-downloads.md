@@ -1,11 +1,5 @@
 ---
-Description: 'Firmware is internal to a device, and is independent of the operating system. However, firmware downloads can cause operating system errors.'
-MS-HAID:
-- 'usb-config\_eb3f400d-28d8-43cb-83c7-7ef3c436a972.xml'
-- 'buses.configuring\_usb\_devices\_that\_require\_firmware\_downloads'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Firmware is internal to a device, and is independent of the operating system. However, firmware downloads can cause operating system errors.
 title: Configuring a USB Device for Firmware Update
 ---
 

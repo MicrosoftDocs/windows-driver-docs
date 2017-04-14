@@ -2,12 +2,6 @@
 title: AV/C Overview
 author: windows-driver-content
 description: AV/C Overview
-MS-HAID:
-- 'AVCguide\_9a6d3ce6-c220-42bf-987e-8bf9d4f895f3.xml'
-- 'stream.av\_c\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff9e6dfc-7ab4-4b56-8b47-d3ea46b579e0
 keywords: ["AV/C WDK , about AV/C", "Avc.sys function driver WDK", "peer Avc.sys mode WDK AV/C", "virtual Avc.sys mode WDK AV/C", "Avc.sys function driver WDK , about Avc.sys function driver"]
 ---

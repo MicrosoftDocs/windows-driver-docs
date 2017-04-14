@@ -2,12 +2,6 @@
 title: WS-DSP Scenarios
 author: windows-driver-content
 description: WS-DSP Scenarios
-MS-HAID:
-- 'dsm\_des\_theory\_5d6d99d2-b629-409c-aca5-b644907949c3.xml'
-- 'image.ws\_dsp\_scenarios'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d68fc40-f585-43d4-a5a3-5e5052c52c3e
 ---
 

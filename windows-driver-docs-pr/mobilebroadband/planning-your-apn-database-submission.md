@@ -1,9 +1,6 @@
 ---
 title: Planning your COSA/APN database submission
 description: Planning your COSA/APN database submission
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e974914-c3e5-409e-b0bf-28d6885585b3
 ---
 

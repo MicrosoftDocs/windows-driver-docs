@@ -1,9 +1,6 @@
 ---
 title: Internet
 description: Internet
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 13723c21-0054-4b91-9059-c7c985e83773
 ---
 

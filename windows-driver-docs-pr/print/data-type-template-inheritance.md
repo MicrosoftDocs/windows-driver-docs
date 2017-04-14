@@ -2,12 +2,6 @@
 title: Data Type Template Inheritance
 author: windows-driver-content
 description: Data Type Template Inheritance
-MS-HAID:
-- 'gplfiles\_dc9f1cc2-cd5a-4ec0-a10c-158a74248e0d.xml'
-- 'print.data\_type\_template\_inheritance'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c2ecc091-8fdc-4666-9cdf-629903f13f6f
 keywords: ["templates WDK GDL , data types", "data types WDK GDL , template inheritance", "templates WDK GDL , inheritance", "inheritance WDK GDL"]
 ---

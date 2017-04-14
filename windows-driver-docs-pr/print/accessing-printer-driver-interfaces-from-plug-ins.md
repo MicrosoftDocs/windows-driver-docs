@@ -2,12 +2,6 @@
 title: Accessing Printer Driver Interfaces from Plug-Ins
 author: windows-driver-content
 description: Accessing Printer Driver Interfaces from Plug-Ins
-MS-HAID:
-- 'custdrvr\_d8f8330d-1779-4e8a-b5bb-c04a97217ef9.xml'
-- 'print.accessing\_printer\_driver\_interfaces\_from\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 021ba789-99bd-4ab5-98fb-0d24ffd0ce25
 keywords: ["COM interfaces WDK print , accessing printer driver interfaces", "plug-ins WDK print , accessing interfaces"]
 ---

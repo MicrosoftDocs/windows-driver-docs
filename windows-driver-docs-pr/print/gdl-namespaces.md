@@ -2,12 +2,6 @@
 title: GDL Namespaces
 author: windows-driver-content
 description: GDL Namespaces
-MS-HAID:
-- 'gplfiles\_eb7b672e-b0fc-4581-9991-f0b50aed9e9a.xml'
-- 'print.gdl\_namespaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 111bc393-a44a-4c42-98ef-36f6f225b8a0
 keywords: ["GDL WDK , namespaces", "namespaces WDK GDL", "namespaces WDK GDL , examples", "unnamed namespaces WDK GDL"]
 ---

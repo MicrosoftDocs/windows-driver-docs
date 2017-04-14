@@ -2,12 +2,6 @@
 title: Common, Camera, and Scanner Properties
 author: windows-driver-content
 description: Common, Camera, and Scanner Properties
-MS-HAID:
-- 'WIA\_tree\_c7ada10d-4485-4bbc-8793-0caa0a3b81bb.xml'
-- 'image.common\_\_camera\_\_and\_scanner\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7d988a1b-4c2f-43f7-be09-a250d9ede35c
 ---
 

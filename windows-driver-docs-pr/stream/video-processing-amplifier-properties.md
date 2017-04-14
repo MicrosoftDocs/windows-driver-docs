@@ -2,12 +2,6 @@
 title: Video Processing Amplifier Properties
 author: windows-driver-content
 description: Video Processing Amplifier Properties
-MS-HAID:
-- 'vidcapds\_4ca4b31c-46db-4dd7-bed0-c01f6d5741df.xml'
-- 'stream.video\_processing\_amplifier\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1adc4fcc-c9a2-41a8-90db-1030ba7c257f
 keywords: ["video processing amplifier properties WDK video capture", "amplification properties WDK video capture", "saturation WDK video capture", "contrast WDK video capture", "hue WDK video capture", "PROPSETID_VIDCAP_VIDEOPROCAMP"]
 ---

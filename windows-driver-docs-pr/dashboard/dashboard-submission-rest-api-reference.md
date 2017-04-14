@@ -1,12 +1,6 @@
 ---
 title: Dashboard submission REST API reference
 description: Dashboard submission REST API reference
-MS-HAID:
-- 'p\_dashboard.dashboard\_submission\_rest\_api\_reference'
-- 'hw\_dashboard.dashboard\_submission\_rest\_api\_reference'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6a01d44b-1bd4-4992-98ee-e8d6813522be
 ---
 

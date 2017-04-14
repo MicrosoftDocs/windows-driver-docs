@@ -2,12 +2,6 @@
 title: Device Communication through the Bus Driver
 author: windows-driver-content
 description: Device Communication through the Bus Driver
-MS-HAID:
-- 'WIA\_arch\_6fd02bbf-cfc0-4893-aaa7-619d7f0f8f22.xml'
-- 'image.device\_communication\_through\_the\_bus\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 093e95db-dc3e-467b-9163-e61d793c042e
 ---
 

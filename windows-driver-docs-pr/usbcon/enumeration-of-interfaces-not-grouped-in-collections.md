@@ -1,11 +1,5 @@
 ---
-Description: 'Interfaces on a composite USB device can be grouped in collections or represent one USB function individually.'
-MS-HAID:
-- 'usbsystem\_24dfc7f1-6dfe-462c-bd8a-4b56fb9e06fa.xml'
-- 'buses.enumeration\_of\_interfaces\_not\_grouped\_in\_collections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Interfaces on a composite USB device can be grouped in collections or represent one USB function individually.
 title: Enumeration of Interfaces on USB Composite Devices
 ---
 

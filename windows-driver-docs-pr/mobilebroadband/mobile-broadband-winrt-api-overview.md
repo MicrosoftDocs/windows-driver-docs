@@ -1,9 +1,6 @@
 ---
 title: Mobile broadband WinRT API overview
 description: Mobile broadband WinRT API overview
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 82f562bb-ae2d-43cf-a741-cbf97c35c7c3
 ---
 

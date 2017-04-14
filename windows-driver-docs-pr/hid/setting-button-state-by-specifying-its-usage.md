@@ -2,12 +2,6 @@
 title: Setting Button State by Specifying Its Usage
 author: windows-driver-content
 description: Setting Button State by Specifying Its Usage
-MS-HAID:
-- 'hidclass\_25448ae4-0b7e-4f64-b1c5-ab6fccbc1e84.xml'
-- 'hid.setting\_button\_state\_by\_specifying\_its\_usage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0806f274-2b29-44f5-b487-4c0acb7a3e42
 keywords: ["HID reports WDK , setting control data", "reports WDK HID , setting control data", "button usages WDK HID"]
 ---

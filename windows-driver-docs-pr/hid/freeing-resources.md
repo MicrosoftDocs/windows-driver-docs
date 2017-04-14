@@ -2,12 +2,6 @@
 title: Freeing Resources
 author: windows-driver-content
 description: User-mode applications and kernel-mode drivers that are HID clients should always free any resources that are no longer required.
-MS-HAID:
-- 'hidclass\_629edcef-8ce3-432f-87c8-8160bbbfdc24.xml'
-- 'hid.freeing\_resources'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19cbc443-cc25-448f-92dc-d9586c1fd5a7
 keywords: ["collections WDK HID , free resources", "HID collections WDK , free resources", "freeing HID resources"]
 ---

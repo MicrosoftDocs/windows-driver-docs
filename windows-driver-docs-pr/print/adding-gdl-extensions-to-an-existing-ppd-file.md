@@ -2,12 +2,6 @@
 title: Adding GDL Extensions to an Existing PPD File
 author: windows-driver-content
 description: Adding GDL Extensions to an Existing PPD File
-MS-HAID:
-- 'autocfg\_7a39b4a3-edae-4321-8034-82bff2333016.xml'
-- 'print.adding\_gdl\_extensions\_to\_an\_existing\_ppd\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4d425701-85af-43e8-9ff2-ddfcc755f90c
 keywords: ["in-box autoconfiguration support WDK printer , GDL extensions", "GDL files WDK printer", "extensions WDK GDL files", "PPD files WDK autoconfiguration , GDL extensions"]
 ---

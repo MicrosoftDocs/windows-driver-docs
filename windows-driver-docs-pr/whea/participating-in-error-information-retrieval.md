@@ -2,12 +2,6 @@
 title: Participating in Error Information Retrieval
 author: windows-driver-content
 description: Participating in Error Information Retrieval
-MS-HAID:
-- 'whea\_6eb76302-927b-4203-b4c4-4d5a41d8a48f.xml'
-- 'whea.participating\_in\_error\_information\_retrieval'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed0ad20b-d978-4650-b3a0-6b0795323c77
 keywords: ["Windows Hardware Error Architecture WDK , error information retrieval", "WHEA WDK , error information retrieval", "hardware errors WDK WHEA , error information retrieval", "errors WDK WHEA , error information retrieval", "platform-specific hardware error driver plug-ins WDK WHEA , error information retrieval", "PSHED plug-ins WDK WHEA , error information retrieval", "error information retrieval WDK WHEA"]
 ---

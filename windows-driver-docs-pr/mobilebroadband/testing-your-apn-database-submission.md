@@ -1,9 +1,6 @@
 ---
 title: Testing your COSA/APN database submission
 description: Testing your COSA/APN database submission
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8f45dbf0-4f96-4d11-b2a2-41b9e75b5e9b
 ---
 

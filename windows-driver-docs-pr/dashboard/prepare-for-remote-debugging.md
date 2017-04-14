@@ -1,9 +1,6 @@
 ---
 title: Prepare for Remote Debugging
 description: Prepare for Remote Debugging
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 744c9ff6-77a8-4bb0-ada8-502f22aa6558
 ---
 

@@ -1,11 +1,5 @@
 ---
-Description: 'In many cases, a bus driver might call a driver's idle request IRP completion routine.'
-MS-HAID:
-- 'usbpower\_57198da7-ce23-4daf-9003-32396d9b9163.xml'
-- 'buses.usb\_idle\_request\_irp\_completion\_routine'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: In many cases, a bus driver might call a driver's idle request IRP completion routine.
 title: USB Idle Request IRP Completion Routine
 ---
 

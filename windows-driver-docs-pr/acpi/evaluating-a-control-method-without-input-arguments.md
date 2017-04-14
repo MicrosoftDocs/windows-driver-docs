@@ -2,12 +2,6 @@
 title: Evaluating a Control Method Without Input Arguments
 author: windows-driver-content
 description: Evaluating a Control Method Without Input Arguments
-MS-HAID:
-- 'acpi-meth-eval-dg\_8f69b5fe-af1e-4a64-ad3c-5a6ca276cf1a.xml'
-- 'acpi.evaluating\_a\_control\_method\_without\_input\_arguments'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dd989b4d-46db-4fe3-aa7b-8dbfe37057cb
 ---
 

@@ -1,12 +1,6 @@
 ---
 title: Windows Error Reporting Getting Started
 description: Windows Error Reporting Getting Started
-MS-HAID:
-- 'p\_dashboard.windows\_error\_reporting\_getting\_started'
-- 'hw\_dashboard.windows\_error\_reporting\_getting\_started'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 74b2522a-c6e5-4079-83b8-57ccc14b58f7
 ---
 

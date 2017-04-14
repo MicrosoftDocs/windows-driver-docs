@@ -1,12 +1,6 @@
 ---
-Description: 'CDC Multi-Channel ISDN Control Model'
-MS-HAID:
-- 'usbsystem\_8b016e2f-4ecc-48a7-9ff5-5d7072124796.xml'
-- 'buses.cdc\_multi\_channel\_isdn\_control\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'CDC Multi-Channel ISDN Control Model'
+Description: CDC Multi-Channel ISDN Control Model
+title: CDC Multi-Channel ISDN Control Model
 ---
 
 # CDC Multi-Channel ISDN Control Model

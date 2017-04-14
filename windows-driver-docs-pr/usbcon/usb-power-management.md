@@ -1,11 +1,5 @@
 ---
-Description: 'The topics in this section examine the ways in which the WDM power model interacts with the power management properties of USB devices.'
-MS-HAID:
-- 'usbpower\_ae289e03-78cd-433d-ad65-de2c6b1e1e83.xml'
-- 'buses.usb\_power\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: The topics in this section examine the ways in which the WDM power model interacts with the power management properties of USB devices.
 title: Implementing power management in USB client drivers
 ---
 

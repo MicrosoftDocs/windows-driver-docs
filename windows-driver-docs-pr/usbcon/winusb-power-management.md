@@ -1,9 +1,5 @@
 ---
 Description: WinUSB Power Management
-MS-HAID: 'buses.winusb\_power\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: WinUSB Power Management
 ---
 

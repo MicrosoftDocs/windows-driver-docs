@@ -1,9 +1,5 @@
 ---
-Description: 'This topic provides installation information about Netmon and the USB ETW parsers.'
-MS-HAID: 'buses.how\_to\_install\_netmon\_and\_the\_netmon\_usb\_parser'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic provides installation information about Netmon and the USB ETW parsers.
 title: How to install Netmon and USB ETW Parsers
 ---
 

@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.AllocateTransferBuffer
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.AllocateTransferBuffer
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dbaa4f18-97b5-4867-9e03-de19b2253722
 ---
 

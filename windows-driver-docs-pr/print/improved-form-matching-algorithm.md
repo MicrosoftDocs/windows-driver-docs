@@ -2,12 +2,6 @@
 title: Improved Form Matching Algorithm
 author: windows-driver-content
 description: Improved Form Matching Algorithm
-MS-HAID:
-- 'splarch\_f40a254a-ac03-4dd2-9646-0f5f93452c42.xml'
-- 'print.improved\_form\_matching\_algorithm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b4f5ce5-c206-42ee-a707-3205f08e0ee0
 keywords: ["matching algorithm WDK forms", "form matching algorithm WDK printer"]
 ---

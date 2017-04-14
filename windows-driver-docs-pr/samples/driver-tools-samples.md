@@ -2,9 +2,6 @@
 title: Tools samples
 author: windows-driver-content
 description: The driver samples in this directory contains intentional code errors that are designed to show the capabilities and features of Static Driver Verifier (SDV).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0B0487B1-C14D-4CD8-AE81-875E8886004D
 ---
 

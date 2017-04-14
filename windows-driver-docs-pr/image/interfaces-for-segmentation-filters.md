@@ -2,12 +2,6 @@
 title: Interfaces for Segmentation Filters
 author: windows-driver-content
 description: Interfaces for Segmentation Filters
-MS-HAID:
-- 'WIA\_tree\_a857a43e-d7bb-4c38-abc6-563fff62f2a9.xml'
-- 'image.interfaces\_for\_segmentation\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 428f6fce-d76c-4485-aa92-39f2b608160d
 ---
 

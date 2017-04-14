@@ -2,12 +2,6 @@
 title: Interfaces Implemented at Both Ends of the Notification Channel
 author: windows-driver-content
 description: Interfaces Implemented at Both Ends of the Notification Channel
-MS-HAID:
-- 'splarch\_3dd8de88-9217-45fe-b0e6-239e194a800d.xml'
-- 'print.interfaces\_implemented\_at\_both\_ends\_of\_the\_notification\_channel'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cc6f1b06-c185-4915-a212-d0b3a2702d5d
 keywords: ["spooler notification WDK print , channel", "print spooler notification WDK , channel", "notification channel WDK print spooler", "channel notification WDK print spooler", "data channels WDK spooler notification"]
 ---

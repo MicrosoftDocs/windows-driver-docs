@@ -1,10 +1,6 @@
 ---
-Description: 'The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.'
-MS-HAID: 'buses.microsoft\_usb\_test\_tool\_\_mutt\_\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Microsoft USB Test Tool (MUTT) devices'
+Description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
+title: Microsoft USB Test Tool (MUTT) devices
 ---
 
 # Microsoft USB Test Tool (MUTT) devices

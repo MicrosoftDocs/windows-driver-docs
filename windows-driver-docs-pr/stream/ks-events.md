@@ -2,12 +2,6 @@
 title: KS Events
 author: windows-driver-content
 description: KS Events
-MS-HAID:
-- 'ks-overview\_381d42e5-9858-4c03-a424-2e560e51fa49.xml'
-- 'stream.ks\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3eaa1d65-8417-4a07-b358-823394baec9b
 keywords: ["kernel streaming WDK , events", "KS WDK , events", "events WDK kernel streaming", "event sets WDK kernel streaming"]
 ---

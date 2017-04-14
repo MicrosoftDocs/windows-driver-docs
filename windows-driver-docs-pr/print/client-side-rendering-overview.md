@@ -2,12 +2,6 @@
 title: Client-Side Rendering Overview
 author: windows-driver-content
 description: Client-Side Rendering Overview
-MS-HAID:
-- 'splarch\_80f64947-1128-4c36-b2a3-e7ce32161aff.xml'
-- 'print.client\_side\_rendering\_overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0c73ca03-0fde-423d-80c9-6800468176b5
 keywords: ["client-side rendering WDK print , about client-side rendering"]
 ---

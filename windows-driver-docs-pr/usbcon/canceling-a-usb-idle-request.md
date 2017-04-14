@@ -1,11 +1,5 @@
 ---
-Description: 'Under certain circumstances, a device driver might need to cancel an idle request IRP that has been submitted to the bus driver.'
-MS-HAID:
-- 'usbpower\_91a4ce30-9738-4e05-837c-76ef645df02a.xml'
-- 'buses.canceling\_a\_usb\_idle\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Under certain circumstances, a device driver might need to cancel an idle request IRP that has been submitted to the bus driver.
 title: Canceling a USB Idle Request
 ---
 

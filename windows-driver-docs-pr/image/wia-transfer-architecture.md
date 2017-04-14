@@ -2,12 +2,6 @@
 title: WIA Transfer Architecture
 author: windows-driver-content
 description: WIA Transfer Architecture
-MS-HAID:
-- 'WIA\_arch\_61023fb6-399b-4201-affe-66ebb28f8ccf.xml'
-- 'image.wia\_transfer\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d8a11440-efdb-4590-9261-2b424c11186d
 ---
 

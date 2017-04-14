@@ -2,12 +2,6 @@
 title: Device Experience Scenarios for Document Devices
 author: windows-driver-content
 description: Device Experience Scenarios for Document Devices
-MS-HAID:
-- 'prn\_dxpui\_c9d4bb50-f4af-4212-b492-2cde75980f9f.xml'
-- 'print.device\_experience\_scenarios\_for\_document\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8e01e9d7-5017-4e0a-90b8-4a025e25a60b
 ---
 

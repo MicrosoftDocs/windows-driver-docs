@@ -1,7 +1,5 @@
 ---
 Description: Handling Access Control
-MS-HAID: 'wpddk.handling\_access\_control'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Handling Access Control
 ---
 

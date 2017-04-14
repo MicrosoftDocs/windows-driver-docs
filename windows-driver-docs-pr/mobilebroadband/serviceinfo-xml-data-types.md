@@ -1,9 +1,6 @@
 ---
 title: ServiceInfo XML Data Types
 description: ServiceInfo XML Data Types
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 273ae051-047a-4e77-8566-7fa999a2695d
 ---
 

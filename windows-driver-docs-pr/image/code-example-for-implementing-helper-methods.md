@@ -2,12 +2,6 @@
 title: Code Example for Implementing Helper Methods
 author: windows-driver-content
 description: Code Example for Implementing Helper Methods
-MS-HAID:
-- 'WIA\_wsd\_scan\_9967e57f-50cd-481c-8ead-0b40b9f1780b.xml'
-- 'image.code\_example\_for\_implementing\_helper\_methods'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4f9710c2-3741-4048-9b6c-b21241b72c91
 ---
 

@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_TRANSFER\_RESULT
 author: windows-driver-content
 description: EFI\_USBFN\_TRANSFER\_RESULT
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d101b061-2a83-4bf8-9502-ccb6e56f5cea
 ---
 

@@ -2,9 +2,6 @@
 title: Extended Camera Control Payloads
 author: windows-driver-content
 description: The control properties within the KSPROPERTYSETID\_ExtendedCameraControl property set use a common payload format for getting and setting the property data.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 347413DB-229B-40D7-BD3E-931493EE1FBC
 ---
 

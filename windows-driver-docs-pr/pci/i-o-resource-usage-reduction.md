@@ -2,12 +2,6 @@
 title: I/O Resource Usage Reduction
 author: windows-driver-content
 description: I/O Resource Usage Reduction
-MS-HAID:
-- 'pcidg\_8154a41f-05b5-4698-9f3b-7ae86b92bcb7.xml'
-- 'PCI.i\_o\_resource\_usage\_reduction'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ad83856c-ad1a-42fc-97f0-7881f745174d
 keywords: ["I/O resource usage reduction WDK", "resource usage WDK", "I/O resources WDK"]
 ---

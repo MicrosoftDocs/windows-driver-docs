@@ -2,12 +2,6 @@
 title: GDL Parser
 author: windows-driver-content
 description: GDL Parser
-MS-HAID:
-- 'gplfiles\_2c49be3c-b287-4ff9-ac16-8cc6bb721ec7.xml'
-- 'print.gdl\_parser'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: abb0e9b7-db98-4f8c-af15-83cd1841e5c2
 keywords: ["GDL WDK , parser", "parser WDK GDL , about", "printer drivers WDK , converting data into XML", "converting data into XML WDK GDL", "transforming data into XML WDK GDL", "parsing GDL data WDK", "snapshots WDK GDL , GDL parser", "parser WDK GDL"]
 ---

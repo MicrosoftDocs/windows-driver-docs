@@ -2,12 +2,6 @@
 title: WIA Scanner Item Tree for Windows 7
 author: windows-driver-content
 description: WIA Scanner Item Tree for Windows 7
-MS-HAID:
-- 'WIA\_scanner\_tree\_26a88f5c-1c3c-441b-b5d1-52760efa90f9.xml'
-- 'image.wia\_scanner\_item\_tree\_for\_windows\_7'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8269e385-aa65-443b-aa9e-3cc74fe3fb01
 ---
 

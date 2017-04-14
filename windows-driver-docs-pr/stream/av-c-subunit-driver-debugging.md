@@ -2,12 +2,6 @@
 title: AV/C Subunit Driver Debugging
 author: windows-driver-content
 description: AV/C Subunit Driver Debugging
-MS-HAID:
-- 'AVCguide\_0745c998-1a0c-4550-970d-4094f0d698d8.xml'
-- 'stream.av\_c\_subunit\_driver\_debugging'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d669157c-60fa-4b7a-8f33-58923a3f2230
 keywords: ["Avc.sys function driver WDK , debugging", "trace messages WDK AV/C", "messages WDK AV/C", "debugging drivers WDK AV/C", "generic messages WDK AV/C", "Plug and Play WDK AV/C", "PnP WDK AV/C", "power management WDK AV/C", "I/O WDK AV/C", "connection messages WDK AV/C", "AV/C WDK , debugging"]
 ---

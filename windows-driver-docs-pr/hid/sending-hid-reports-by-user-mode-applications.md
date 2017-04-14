@@ -2,9 +2,6 @@
 title: Sending HID Reports by User-Mode Applications
 author: windows-driver-content
 description: Sending HID Reports by User-Mode Applications
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 265d7393-62be-41ad-8f87-efcfa462de1f
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Locale
 description: Locale
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1cf8d075-a1b3-4554-83d5-71fd5059c1c4
 ---
 

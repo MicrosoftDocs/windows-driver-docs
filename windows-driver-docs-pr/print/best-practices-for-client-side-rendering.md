@@ -2,12 +2,6 @@
 title: Best Practices for Client-Side Rendering
 author: windows-driver-content
 description: Best Practices for Client-Side Rendering
-MS-HAID:
-- 'splarch\_a9343eac-f353-45af-9248-0e08957e1214.xml'
-- 'print.best\_practices\_for\_client\_side\_rendering'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d05086c1-4e0b-4767-bb1d-7b6d73b1b210
 keywords: ["client-side rendering WDK print , best practices"]
 ---

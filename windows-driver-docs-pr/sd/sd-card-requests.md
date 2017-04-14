@@ -2,12 +2,6 @@
 title: SD Card Requests
 author: windows-driver-content
 description: SD Card Requests
-MS-HAID:
-- 'securedigital\_dg\_8a6435f9-b1c9-471b-a7ab-51ed58dce912.xml'
-- 'SD.sd\_card\_requests'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3c04573a-5fe7-4332-b899-5aff3234f1ad
 keywords: ["SD WDK buses , request processing", "I/O WDK SD bus", "request processing WDK SD bus", "synchronous requests WDK SD bus", "asynchronous requests WDK SD bus", "SdBusSubmitRequest", "SdBusSubmitRequestAsync"]
 ---

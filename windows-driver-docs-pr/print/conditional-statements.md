@@ -2,12 +2,6 @@
 title: Conditional Statements
 author: windows-driver-content
 description: Conditional Statements
-MS-HAID:
-- 'nt5gpd\_246a551a-c087-468e-8bbb-9939f600f546.xml'
-- 'print.conditional\_statements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eea2f9c1-a73b-46ed-a778-ece6bed615ac
 keywords: ["Unidrv, conditional statements", "GPD files WDK Unidrv , conditional statements", "conditional statements WDK Unidrv", "multiple dependencies WDK Unidrv", "Unidrv WDK print"]
 ---

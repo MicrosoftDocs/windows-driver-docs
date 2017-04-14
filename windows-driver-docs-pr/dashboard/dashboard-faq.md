@@ -1,12 +1,6 @@
 ---
 title: Dashboard FAQ
 description: This article provides answers to frequently asked questions sent in to the alias, Sysdev Microsoft.com, about the Dashboard or Windows Hardware Certification program.
-MS-HAID:
-- 'p\_dashboard.dashboard\_faq'
-- 'hw\_dashboard.dashboard\_faq'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1459D6EF-5DCB-445E-A2A1-0C5FFD96F504
 ---
 

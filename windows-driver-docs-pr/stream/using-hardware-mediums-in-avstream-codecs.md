@@ -2,12 +2,6 @@
 title: Using Hardware Mediums in AVStream Codecs
 author: windows-driver-content
 description: Using Hardware Mediums in AVStream Codecs
-MS-HAID:
-- 'shed\_dg\_30c99718-2581-4878-b68f-de3e7d47654a.xml'
-- 'stream.using\_hardware\_mediums\_in\_avstream\_codecs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07c25875-c549-4d47-ac0d-605f2aa9daa4
 keywords: ["AVStream hardware codec support WDK , using hardware mediums"]
 ---

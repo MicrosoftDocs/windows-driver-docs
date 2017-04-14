@@ -2,9 +2,6 @@
 title: V4 Printer Driver Configuration
 author: windows-driver-content
 description: The v4 printer driver model supports a greatly simplified configuration layer.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1EAF1322-43A6-4DB5-B059-721FBF640B77
 ---
 

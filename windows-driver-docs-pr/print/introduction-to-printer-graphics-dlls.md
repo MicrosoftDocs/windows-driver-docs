@@ -2,12 +2,6 @@
 title: Introduction to Printer Graphics DLLs
 author: windows-driver-content
 description: Introduction to Printer Graphics DLLs
-MS-HAID:
-- 'drvarch\_3494a1a7-0799-4e84-8e27-d6002fe1fe80.xml'
-- 'print.introduction\_to\_printer\_graphics\_dlls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f7ce476-6bef-4a80-ae2a-2a63e891dda1
 keywords: ["printer graphics DLL WDK , about printer graphics DLL", "graphics DLL WDK printer , about printer graphics DLL", "graphics DLL WDK printer", "printer graphics DLL WDK"]
 ---

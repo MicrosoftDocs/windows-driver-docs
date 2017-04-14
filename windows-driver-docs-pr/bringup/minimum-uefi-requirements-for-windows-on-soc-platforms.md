@@ -2,9 +2,6 @@
 title: Minimum UEFI requirements for Windows on SoC platforms
 author: windows-driver-content
 description: Minimum UEFI requirements for Windows on SoC platforms
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 32743d69-83a2-4658-8652-6d624e75e3db
 ---
 

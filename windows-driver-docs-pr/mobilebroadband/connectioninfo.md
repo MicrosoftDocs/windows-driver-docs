@@ -1,9 +1,6 @@
 ---
 title: ConnectionInfo
 description: ConnectionInfo
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbdba286-4d28-46b6-bafa-83cbddd883ae
 ---
 

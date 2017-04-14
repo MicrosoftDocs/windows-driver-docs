@@ -2,12 +2,6 @@
 title: Overview
 author: windows-driver-content
 description: Overview
-MS-HAID:
-- 'dsm\_design\_63e60364-7cc4-46d6-9662-1fb03710f47e.xml'
-- 'image.overview'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e9a45ae0-0ec8-4d6c-8486-ae88bdaa1f8c
 ---
 

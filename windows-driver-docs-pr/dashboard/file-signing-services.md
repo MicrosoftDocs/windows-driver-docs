@@ -1,12 +1,6 @@
 ---
 title: File Signing Services
 description: File Signing Services
-MS-HAID:
-- 'p\_dashboard.file\_signing\_services'
-- 'hw\_dashboard.file\_signing\_services'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e042e7b-d724-4748-8e7e-f42ac8d94b72
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Captive portals
 description: Captive portals
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6f710440-3012-4bf4-92cc-3743b0f4fd34
 ---
 

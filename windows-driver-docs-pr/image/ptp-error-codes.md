@@ -2,12 +2,6 @@
 title: PTP Error Codes
 author: windows-driver-content
 description: PTP Error Codes
-MS-HAID:
-- 'WIA\_drv\_cam\_4f63c523-5cc6-41bb-9f12-ab91c5e96822.xml'
-- 'image.ptp\_error\_codes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4d7ad081-fc0b-4a9e-8f17-a0c98fa4fa50
 ---
 

@@ -2,12 +2,6 @@
 title: Feature Entry Format
 author: windows-driver-content
 description: Feature Entry Format
-MS-HAID:
-- 'nt5gpd\_2d17dfc1-0692-4ce3-a193-dc758be2ad3c.xml'
-- 'print.feature\_entry\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f4e91611-aa68-4426-82ef-9ad3f09d62f2
 keywords: ["printer features WDK Unidrv , entry format", "formats WDK printer features"]
 ---

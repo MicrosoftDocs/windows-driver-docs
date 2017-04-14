@@ -2,9 +2,6 @@
 title: Job Management
 author: windows-driver-content
 description: A job management feature has been introduced in Windows 8.1 and later versions of Windows to provide a live view of the job queue.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D1236DD2-D4AD-4615-9036-7EC75D6CADCE
 ---
 

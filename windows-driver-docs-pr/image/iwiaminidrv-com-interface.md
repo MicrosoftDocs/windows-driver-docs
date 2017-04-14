@@ -1,12 +1,6 @@
 ---
 title: IWiaMiniDrv COM Interface
 author: windows-driver-content
-MS-HAID:
-- 'WIA\_arch\_db97070c-3040-490c-8b23-45265a961dae.xml'
-- 'image.iwiaminidrv\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a4bd0dee-fb40-42d4-a235-9dab3bc84017
 description: 
 ---

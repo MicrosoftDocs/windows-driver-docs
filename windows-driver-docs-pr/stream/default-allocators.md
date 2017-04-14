@@ -2,12 +2,6 @@
 title: Default Allocators
 author: windows-driver-content
 description: Default Allocators
-MS-HAID:
-- 'ks-overview\_1af502e3-b8f1-4d70-9a7f-d6d1b2494c3e.xml'
-- 'stream.default\_allocators'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ef61a33d-eabf-4449-8d11-cfd97aa2e403
 keywords: ["default allocators WDK kernel streaming", "system memory allocators WDK kernel streaming", "memory allocators WDK kernel streaming", "multiple destination sinks WDK kernel streaming"]
 ---

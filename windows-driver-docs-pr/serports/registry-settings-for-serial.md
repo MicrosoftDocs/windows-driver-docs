@@ -2,12 +2,6 @@
 title: Registry Settings for Serial
 author: windows-driver-content
 description: Registry Settings for Serial
-MS-HAID:
-- 'sseovr\_e24d4a1c-8bdf-4996-9bad-7a0be6cfc899.xml'
-- 'serports.registry\_settings\_for\_serial'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: be64d9d7-6d6b-4430-96a3-ac071d48b121
 keywords: ["Serial driver WDK , registry settings", "registry WDK serial devices", "serial devices WDK , registry settings", "serial devices WDK , Serial driver"]
 ---

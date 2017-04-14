@@ -2,12 +2,6 @@
 title: Control Nodes, Filters and Hardware
 author: windows-driver-content
 description: Control Nodes, Filters and Hardware
-MS-HAID:
-- 'bdaov\_bc5d59b7-3f93-412d-97c0-b719da17a85c.xml'
-- 'stream.control\_nodes\_\_filters\_and\_hardware'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c299f5d9-634f-46c9-becf-cf59aaa0257f
 keywords: ["functional topology WDK BDA", "demodulator control nodes WDK BDA", "tuner control nodes WDK BDA", "Broadcast Driver Architecture WDK AVStream , control nodes", "BDA WDK AVStream , control nodes"]
 ---

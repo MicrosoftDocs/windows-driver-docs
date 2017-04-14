@@ -2,9 +2,6 @@
 title: Supporting multiple sensors
 author: windows-driver-content
 description: The SpbAccelerometer sample demonstrates how to write a driver for a single sensor device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 633B7CB5-EF4A-42BE-A60E-7D12BDAFA34F
 ---
 

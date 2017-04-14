@@ -2,12 +2,6 @@
 title: Example Application Using a Segmentation Filter
 author: windows-driver-content
 description: Example Application Using a Segmentation Filter
-MS-HAID:
-- 'WIA\_tree\_ff35540b-1bfe-4645-b3fe-2e9f05dcddba.xml'
-- 'image.example\_\_application\_using\_a\_segmentation\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f7de6a2-5684-4c37-97bc-47f4727114ab
 ---
 

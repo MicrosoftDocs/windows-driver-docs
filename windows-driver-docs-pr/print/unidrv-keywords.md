@@ -2,12 +2,6 @@
 title: Unidrv Keywords
 author: windows-driver-content
 description: Unidrv Keywords
-MS-HAID:
-- 'drvarch\_5e056391-1e9b-41a1-b615-3e6bfbc2d763.xml'
-- 'print.unidrv\_keywords'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b76fcf53-cd75-4e85-a7a2-00a69cc82a97
 ---
 

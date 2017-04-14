@@ -1,9 +1,6 @@
 ---
 title: AutoplayType
 description: AutoplayType
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 06097d2a-7883-416e-a81d-3a8abccc620b
 ---
 

@@ -2,12 +2,6 @@
 title: Sample Application for UVC Extension Units
 author: windows-driver-content
 description: Sample Application for UVC Extension Units
-MS-HAID:
-- 'uvcds\_4f4db094-13e5-4915-9525-14a381ec9221.xml'
-- 'stream.sample\_application\_for\_uvc\_extension\_units'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f900b0b1-3469-442f-8593-2094a0966d4a
 keywords: ["extension units WDK USB Video Class , samples, sample application", "sample code WDK USB Video Class , UVC extension units"]
 ---

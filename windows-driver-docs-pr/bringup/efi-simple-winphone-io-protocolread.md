@@ -2,9 +2,6 @@
 title: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Read
 author: windows-driver-content
 description: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Read
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9b5525a4-d98c-4328-8ebe-55ede53befca
 ---
 

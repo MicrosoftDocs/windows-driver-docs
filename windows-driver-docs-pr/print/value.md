@@ -2,12 +2,6 @@
 title: Value
 author: windows-driver-content
 description: Value
-MS-HAID:
-- 'autocfg\_0508b506-e7a8-4c39-88e6-4e72b6eb191e.xml'
-- 'print.value'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8930e012-88ee-44ff-9abc-a15367f04ca3
 keywords: ["Value construct"]
 ---

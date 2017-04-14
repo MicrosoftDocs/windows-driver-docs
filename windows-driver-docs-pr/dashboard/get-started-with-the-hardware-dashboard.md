@@ -1,9 +1,6 @@
 ---
 title: Get started with the Hardware program
 description: Get started with the Hardware program
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 000B5BBB-61EF-4837-8E5E-EF1BBB65B14E
 ---
 

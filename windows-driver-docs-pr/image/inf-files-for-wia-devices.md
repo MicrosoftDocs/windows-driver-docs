@@ -2,12 +2,6 @@
 title: INF Files for WIA Devices
 author: windows-driver-content
 description: INF Files for WIA Devices
-MS-HAID:
-- 'WIA\_GS\_bd362406-5c5f-4d85-b729-ce47d35a5a6d.xml'
-- 'image.inf\_files\_for\_wia\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 65eac8b5-35d2-4537-8646-a35a1cf9aced
 ---
 

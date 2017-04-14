@@ -2,12 +2,6 @@
 title: Testing Your Property Sheet
 author: windows-driver-content
 description: Testing Your Property Sheet
-MS-HAID:
-- 'di\_92a26734-71a5-4a57-93f5-009a4073e13c.xml'
-- 'hid.testing\_your\_property\_sheet'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9886a758-392b-451d-874d-5ffcc5f9f5cd
 keywords: ["property sheets WDK DirectInput , testing", "game controllers WDK DirectInput , property sheet testing", "control panels WDK DirectInput , property sheet testing", "testing property sheets WDK DirectInput", "debugging control panel applications WDK DirectInput"]
 ---

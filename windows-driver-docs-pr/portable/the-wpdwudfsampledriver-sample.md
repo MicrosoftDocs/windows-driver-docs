@@ -1,7 +1,5 @@
 ---
 Description: The WpdWudfSampleDriver Sample
-MS-HAID: 'wpddk.the\_wpdwudfsampledriver\_sample'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: The WpdWudfSampleDriver Sample
 ---
 

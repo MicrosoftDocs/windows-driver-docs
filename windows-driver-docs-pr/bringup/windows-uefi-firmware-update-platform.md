@@ -2,9 +2,6 @@
 title: Windows UEFI firmware update platform
 author: windows-driver-content
 description: Windows supports a platform for installing system and device firmware updates via driver packages that are processed by using the UEFI UpdateCapsule function.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9F0D22FB-3C83-4F90-8E24-2205EEF9D5F7
 ---
 

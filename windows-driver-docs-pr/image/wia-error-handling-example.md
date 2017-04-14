@@ -2,12 +2,6 @@
 title: WIA Error Handling Example
 author: windows-driver-content
 description: WIA Error Handling Example
-MS-HAID:
-- 'WIA\_error\_964f1cca-912c-4add-b66a-c2dfc4d365be.xml'
-- 'image.wia\_error\_handling\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7dc4b15e-40db-4e64-be41-d6bcc44603c6
 ---
 

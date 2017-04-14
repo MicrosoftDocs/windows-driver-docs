@@ -2,12 +2,6 @@
 title: Standard Variable Expressions
 author: windows-driver-content
 description: Standard Variable Expressions
-MS-HAID:
-- 'nt5gpd\_b9df7db2-913b-4d48-9d76-dcd4859091a7.xml'
-- 'print.standard\_variable\_expressions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b77c6b88-9ef2-4485-b77c-50acb21e13b9
 keywords: ["printer commands WDK Unidrv , strings", "command strings WDK Unidrv", "strings WDK Unidrv", "standard variable expressions WDK Unidrv", "max_repeat"]
 ---

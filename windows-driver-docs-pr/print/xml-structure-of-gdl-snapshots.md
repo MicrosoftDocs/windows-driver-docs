@@ -2,12 +2,6 @@
 title: XML Structure of GDL Snapshots
 author: windows-driver-content
 description: XML Structure of GDL Snapshots
-MS-HAID:
-- 'gplfiles\_7951dd1a-e5ba-4444-954b-056e660bab2b.xml'
-- 'print.xml\_structure\_of\_gdl\_snapshots'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 46051e45-da46-488c-9d70-2299954445be
 keywords: ["GDL WDK , snapshots", "snapshots WDK GDL , structure", "parser WDK GDL , snapshots", "GDL WDK , data tree", "data tree WDK GDL", "GDL WDK , entries"]
 ---

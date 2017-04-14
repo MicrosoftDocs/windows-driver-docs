@@ -1,9 +1,6 @@
 ---
 title: Package
 description: Package
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f15f0ffe-593d-4007-8002-4d593d18dd9a
 ---
 

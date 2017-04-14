@@ -1,9 +1,6 @@
 ---
 title: Best practices for connecting to the mobile broadband network
 description: Best practices for connecting to the mobile broadband network
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6106d026-1c5f-4990-8ef2-467c1a77a38e
 ---
 

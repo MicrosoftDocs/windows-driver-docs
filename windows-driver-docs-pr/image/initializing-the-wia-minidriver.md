@@ -2,12 +2,6 @@
 title: Initializing the WIA Minidriver
 author: windows-driver-content
 description: Initializing the WIA Minidriver
-MS-HAID:
-- 'WIA\_drv\_basic\_5e16964c-b0c8-4261-8990-e065a653fadf.xml'
-- 'image.initializing\_the\_wia\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9ccb136b-41f7-438a-9e07-1fd7c8971417
 ---
 

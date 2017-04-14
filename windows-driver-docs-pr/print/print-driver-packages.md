@@ -2,12 +2,6 @@
 title: Print Driver Packages
 author: windows-driver-content
 description: Print Driver Packages
-MS-HAID:
-- 'prtinst\_80659023-3f68-43a4-b0c2-d5b7a32c16e0.xml'
-- 'print.print\_driver\_packages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 902e1634-e705-4902-baab-a93818288b08
 keywords: ["installing drivers WDK printer , packages", "printer driver installations WDK , packages", "packages WDK print", "driver pacakges WDK print", "printer driver packages WDK print"]
 ---

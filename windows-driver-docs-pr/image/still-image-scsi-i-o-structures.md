@@ -2,12 +2,6 @@
 title: Still Image SCSI I/O Structures
 author: windows-driver-content
 description: Still Image SCSI I/O Structures
-MS-HAID:
-- 'stillimg\_03eac7e7-c585-4b63-9dd9-37a92eb04754.xml'
-- 'image.still\_image\_scsi\_i\_o\_structures'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2cf17295-e3af-4109-bfdd-118aecf80bbe
 ---
 

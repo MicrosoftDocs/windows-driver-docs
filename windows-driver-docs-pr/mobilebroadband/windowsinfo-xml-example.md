@@ -1,9 +1,6 @@
 ---
 title: WindowsInfo XML Example
 description: WindowsInfo XML Example
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5933512e-d2bf-437f-abd8-dc3486e07be0
 ---
 

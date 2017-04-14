@@ -2,12 +2,6 @@
 title: Weak Authentication
 author: windows-driver-content
 description: Weak Authentication
-MS-HAID:
-- 'dsm\_des\_tut\_b4b109b2-0812-4572-b563-f6ab291c3894.xml'
-- 'image.weak\_authentication'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff220633-31cb-4405-a0a5-c6d9e7e51f76
 ---
 
