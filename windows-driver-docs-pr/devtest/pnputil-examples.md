@@ -15,7 +15,8 @@ This topic provides the following examples on how to use the PnPUtil tool:
 
 -   [Deleting a driver package from the driver store](#deleting-a-driver-package-from-the-driver-store)
 
-### <span id="adding_a_driver_package_to_the_driver_store"></span><span id="ADDING_A_DRIVER_PACKAGE_TO_THE_DRIVER_STORE"></span> Adding a driver package to the driver store
+### Adding a driver package to the driver store
+
 
 The following example adds a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840), which contains the [INF](https://msdn.microsoft.com/library/windows/hardware/ff547402) file that is named MyDriver.inf, to the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868):
 
@@ -30,7 +31,8 @@ Published name : oem22.inf
 
 As soon as it is added to the driver store, the INF file for the driver package is referenced within the store through its published named (oem22.inf).
 
-### <span id="listing_the_driver_packages_within_the_driver_store"></span><span id="LISTING_THE_DRIVER_PACKAGES_WITHIN_THE_DRIVER_STORE"></span> Listing the driver packages within the driver store
+### Listing the driver packages within the driver store
+
 
 The following example lists the [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840) that are currently in the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868). Only driver packages that are not in-box packages are listed. An *in-box* driver package is one which is included in the default installation of Windows or its service packs:
 
@@ -57,7 +59,8 @@ In this example, information is displayed about the [driver package](https://msd
 
  
 
-### <span id="deleting_a_driver_package_from_the_driver_store"></span><span id="DELETING_A_DRIVER_PACKAGE_FROM_THE_DRIVER_STORE"></span> Deleting a driver package from the driver store
+### Deleting a driver package from the driver store
+
 
 The following example removes the [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) from the [driver store](https://msdn.microsoft.com/library/windows/hardware/ff544868). The driver package is referenced by its published INF file (oem22.inf):
 
