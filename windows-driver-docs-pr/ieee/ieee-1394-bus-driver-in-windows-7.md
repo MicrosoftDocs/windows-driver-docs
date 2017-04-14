@@ -16,12 +16,12 @@ The new 1394ohci.sys bus driver is fully backward compatible with the legacy bus
 
  
 
--   [I/O Request Completion](#-i-o-request-completion)
+-   [I/O Request Completion](#io-request-completion)
 -   [Configuration ROM Retrieval](#configuration-rom-retrieval)
 -   [IEEE-1394-1995 PHY Support](#ieee-1394-1995-phy-support)
 -   [NODE\_DEVICE\_EXTENSION Structure Usage](#-node-device-extension-structure-usage)
 -   [Gap Count Optimization](#gap-count-optimization)
--   [Device Driver Interface (DDI) Changes](#-device-driver-interface--ddi--changes)
+-   [Device Driver Interface (DDI) Changes](#device-driver-interface-ddi-changes)
 -   [Related topics](#related-topics)
 
 ##  I/O Request Completion
