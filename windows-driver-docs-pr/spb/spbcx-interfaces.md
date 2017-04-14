@@ -12,8 +12,8 @@ The SPB framework extension (SpbCx) has two interfaces. The first is an I/O requ
 
 The two SpbCx interfaces are defined in the Spbcx.h and Spb.h header files. Spbcx.h defines the DDI between SpbCx and the SPB controller driver. Spb.h defines the SPB-specific I/O control codes that are supported by the SpbCx I/O request interface.
 
--   [SpbCx Device Driver Interface (DDI)](#spbcx-device-driver-interface--ddi-)
--   [SPB I/O Request Interface](#spb-i-o-request-interface)
+-   [SpbCx Device Driver Interface (DDI)](#spbcx-device-driver-interface-ddi)
+-   [SPB I/O Request Interface](#spb-io-request-interface)
 
 ## SpbCx Device Driver Interface (DDI)
 
