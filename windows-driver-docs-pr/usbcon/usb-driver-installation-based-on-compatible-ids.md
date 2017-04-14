@@ -80,6 +80,7 @@ AddReg=LowerFilterAddReg
 
 For more information, see [this KB article](https://support.microsoft.com/kb/837637/).
 
+
 ## Configure selective suspend for Usbser.sys
 
 
