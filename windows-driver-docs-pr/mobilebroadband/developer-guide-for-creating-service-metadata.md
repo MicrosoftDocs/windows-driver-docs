@@ -96,17 +96,17 @@ To edit an existing service metadata package, see [Steps for editing a service m
 
 Use the following steps to create a service metadata package on the Windows Dev Center hardware dashboard:
 
--   [Step 1: Gather the required information for the service metadata package](#bkmk-step1)
+-   [Step 1: Gather the required information for the service metadata package](#step-1:-gather-the-required-information-for-the-service-metadata-package)
 
--   [Step 2: Create the service metadata package](#bkmk-step2)
+-   [Step 2: Create the service metadata package](#step-2:-create-the-service-metadata-package)
 
--   [Step 3: Insert the store manifest file into the Windows Store device app](#bkmk-step3)
+-   [Step 3: Insert the store manifest file into the Windows Store device app](#step-3:-insert-the-store-manifest-file-into-the-windows-store-device-app)
 
--   [Step 4: Test the service metadata package](#bkmk-step4)
+-   [Step 4: Test the service metadata package](#step-4:-test-the-service-metadata-package)
 
--   [Step 5: Publish the service metadata package](#bkmk-step5)
+-   [Step 5: Publish the service metadata package](#step-5:-publish-the-service-metadata-package)
 
-### <span id="BKMK_Step1"></span><span id="bkmk_step1"></span><span id="BKMK_STEP1"></span>Step 1: Gather the required information for the service metadata package
+###Step 1: Gather the required information for the service metadata package
 
 As you go through the steps in the Service Metadata Wizard in Step 2 of this topic, several pieces of information stored in the package.appxmanifest file from the mobile broadband app project that you want to associated with the device is required. Use the following steps to gather the information so that it’s ready for Step 2 of this topic.
 
@@ -153,7 +153,7 @@ You can also complete this without using Visual Studio 2013 by doing the followi
 
 5.  Save and close the package.appxmanifest file.
 
-### <span id="BKMK_Step2"></span><span id="bkmk_step2"></span><span id="BKMK_STEP2"></span>Step 2: Create the service metadata package
+###Step 2: Create the service metadata package
 
 Service metadata is created by using the Service Metadata Wizard in the Windows Dev Center hardware dashboard.
 
@@ -209,7 +209,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     ![this is the confirm step of the wizard](images/mbae-sxs81-confirm.png)
 
-### <span id="BKMK_Step3"></span><span id="bkmk_step3"></span><span id="BKMK_STEP3"></span>Step 3: Insert the store manifest file into the Windows Store device app
+###Step 3: Insert the store manifest file into the Windows Store device app
 
 A store manifest file must be included with a Windows Store device app. Use the following steps to download the store manifest file from your service metadata package and insert it into the mobile broadband app project.
 
@@ -227,7 +227,7 @@ A store manifest file must be included with a Windows Store device app. Use the 
 
 5.  Recompile the mobile broadband app and publish it again to the Windows Store.
 
-### <span id="BKMK_Step4"></span><span id="bkmk_step4"></span><span id="BKMK_STEP4"></span>Step 4: Test the service metadata package
+###Step 4: Test the service metadata package
 
 To test the service metadata package, you must have the mobile broadband device and the service metadata package files. The instructions to configure your test system and install the service metadata package depend on the mode of the package.
 
@@ -514,7 +514,7 @@ After the environment is set up, run the following steps each time that you want
 
     2.  Right-click each mobile broadband device, and then click **Enable**.
 
-### <span id="BKMK_Step5"></span><span id="bkmk_step5"></span><span id="BKMK_STEP5"></span>Step 5: Publish the service metadata package
+###Step 5: Publish the service metadata package
 
 Once you have confirmed that the service metadata package works correctly, the final step is to release the package. You can release the package by selecting the package attached to the specific experience by clicking the **Release** button, as shown below.
 
@@ -527,7 +527,7 @@ You can edit a service metadata package by using the Manage Experiences page of 
 
 ![the manage experiences page](images/mbae-sxs81-manageexperience.png)
 
-## <span id="BKMK_Troubleshooting"></span><span id="bkmk_troubleshooting"></span><span id="BKMK_TROUBLESHOOTING"></span>Troubleshooting
+##Troubleshooting
 
 
 Open the networks list and look for your mobile broadband network. If the network is listed by using the name and icon that you used in the service metadata package **ServiceInfo.xml** file, the package is correctly parsed. If you are updating a service metadata package that has the same name and icon, or if the name or icon has not appeared in the list after about approximately one minute, you should perform additional steps, as discussed here:
