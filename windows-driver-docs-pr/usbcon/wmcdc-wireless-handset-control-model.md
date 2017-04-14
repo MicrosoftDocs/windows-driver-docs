@@ -1,11 +1,5 @@
 ---
 Description: WMCDC Wireless Handset Control Model
-MS-HAID:
-- 'usbsystem\_db0a8f81-00c0-4611-bf7c-c2e536d6b759.xml'
-- 'buses.wmcdc\_wireless\_handset\_control\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: WMCDC Wireless Handset Control Model
 ---
 

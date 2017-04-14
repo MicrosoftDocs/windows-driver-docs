@@ -1,9 +1,6 @@
 ---
 title: Set SMS declarations
 description: Set SMS declarations
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fad7fb60-eb08-43e9-bc58-afb8d6b5633c
 ---
 

@@ -2,9 +2,6 @@
 title: EFI\_BATTERY\_CHARGING\_PROTOCOL
 author: windows-driver-content
 description: EFI\_BATTERY\_CHARGING\_PROTOCOL
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 978d063e-f864-44be-9f58-4e4c6b2193b8
 ---
 

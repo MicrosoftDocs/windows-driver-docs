@@ -2,12 +2,6 @@
 title: Connecting to an IEEE 1284.3 Data Link Device
 author: windows-driver-content
 description: Connecting to an IEEE 1284.3 Data Link Device
-MS-HAID:
-- 'vspd\_99922a87-4074-4dba-a6c8-089a6e0f2be1.xml'
-- 'parports.connecting\_to\_an\_ieee\_1284\_3\_data\_link\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 306ff7db-472b-400a-8f14-3f7667160ded
 keywords: ["parallel ports WDK , IEEE 1284 devices", "IEEE 1284 WDK", "data link service support WDK parallel ports"]
 ---

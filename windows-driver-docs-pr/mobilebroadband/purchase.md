@@ -1,9 +1,6 @@
 ---
 title: Purchase
 description: Purchase
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e753ba12-650e-4116-bb2e-dc17fc7bddee
 ---
 

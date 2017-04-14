@@ -2,12 +2,6 @@
 title: Defining the Configuration-Dependent Data Parameters
 author: windows-driver-content
 description: Defining the Configuration-Dependent Data Parameters
-MS-HAID:
-- 'gplfiles\_d5e1c297-ed8c-4595-8e9c-9d623651cc63.xml'
-- 'print.defining\_the\_configuration\_dependent\_data\_parameters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5bb2e3a-22e0-41d7-8035-5437ac473b21
 keywords: ["GDL WDK , configurations", "configurations WDK GDL , defining configuration-dependent data", "defining configuration-dependent data WDK GDL", "PICKMANY parameters WDK GDL", "PICKONE parameters WDK GDL", "null-value parameters WDK GDL"]
 ---

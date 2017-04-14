@@ -1,11 +1,5 @@
 ---
 Description: WMCDC Abstract Control Model
-MS-HAID:
-- 'usbsystem\_7d150155-7371-452a-a522-1d7bcd5c5b75.xml'
-- 'buses.wmcdc\_abstract\_control\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: WMCDC Abstract Control Model
 ---
 

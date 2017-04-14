@@ -2,12 +2,6 @@
 title: COM Interfaces for Rendering Plug-Ins
 author: windows-driver-content
 description: COM Interfaces for Rendering Plug-Ins
-MS-HAID:
-- 'custdrvr\_b5ff32f4-e2fa-4771-b515-bc8ea28fe847.xml'
-- 'print.com\_interfaces\_for\_rendering\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a1a67ed-7c29-42fa-9bd2-ee38468f6d4b
 keywords: ["rendering plug-ins WDK print , COM interfaces", "COM interfaces WDK print , rendering plug-ins"]
 ---

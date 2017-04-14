@@ -2,12 +2,6 @@
 title: Adding Document Feeder Support
 author: windows-driver-content
 description: Adding Document Feeder Support
-MS-HAID:
-- 'WIA\_drv\_scan\_3059b906-ebab-4243-856a-3af90215127e.xml'
-- 'image.adding\_document\_feeder\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f3fa6a2e-3714-4620-9acc-f9d177045ee0
 ---
 

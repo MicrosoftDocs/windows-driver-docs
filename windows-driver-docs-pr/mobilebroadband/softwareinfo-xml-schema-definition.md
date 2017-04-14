@@ -1,9 +1,6 @@
 ---
 title: SoftwareInfo XML Schema Definition
 description: SoftwareInfo XML Schema Definition
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b09ffc6-0f69-4710-988b-4952823da72e
 ---
 

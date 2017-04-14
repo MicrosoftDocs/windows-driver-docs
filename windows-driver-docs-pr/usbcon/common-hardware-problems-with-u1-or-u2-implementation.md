@@ -1,9 +1,5 @@
 ---
-Description: 'This topic discusses the LPM mechanism for saving power and described various common problems seen in current USB 3.0 hardware.'
-MS-HAID: 'buses.common\_hardware\_problems\_with\_u1\_or\_u2\_implementation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic discusses the LPM mechanism for saving power and described various common problems seen in current USB 3.0 hardware.
 title: Common hardware problems with U1 or U2 implementation
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: PackageIdentity
 description: PackageIdentity
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b5533962-ea42-416e-bbd8-ce9dce1a9a40
 ---
 

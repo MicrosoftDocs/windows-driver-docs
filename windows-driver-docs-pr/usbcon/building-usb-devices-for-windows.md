@@ -1,12 +1,5 @@
 ---
-Description: 'This section provides links for manufacturers of USB peripheral devices.'
-MS-HAID:
-- 'buses.diagnostic\_tools\_for\_usb\_devices'
-- 'buses.event\_tracing\_for\_windows'
-- 'buses.building\_usb\_devices\_for\_windows'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This section provides links for manufacturers of USB peripheral devices.
 title: Building USB devices for Windows
 ---
 

@@ -1,9 +1,5 @@
 ---
-Description: 'Describes various tools you can use to test USB devices and drivers.'
-MS-HAID: 'buses.usb\_test\_tools'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Describes various tools you can use to test USB devices and drivers.
 title: USB test tools
 ---
 

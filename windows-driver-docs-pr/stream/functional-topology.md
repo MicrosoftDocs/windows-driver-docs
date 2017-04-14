@@ -2,12 +2,6 @@
 title: Functional Topology
 author: windows-driver-content
 description: Functional Topology
-MS-HAID:
-- 'bdaov\_35e61659-dc8a-4318-a689-0892a9f22308.xml'
-- 'stream.functional\_topology'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f25b3581-5561-4668-8549-65506b03815d
 keywords: ["functional topology WDK BDA", "control nodes WDK BDA", "template topology WDK BDA", "pin types WDK AVStream", "nodes WDK AVStream", "node description GUIDs WDK BDA", "actual topologies WDK BDA", "GUIDs WDK BDA", "demodulator control nodes WDK BDA", "tuner control nodes WDK BDA", "Broadcast Driver Architecture WDK AVStream , control nodes", "BDA WDK AVStream , control nodes"]
 ---

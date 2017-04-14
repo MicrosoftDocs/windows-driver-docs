@@ -1,9 +1,6 @@
 ---
 title: Account management
 description: Account management
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8201a4ac-1344-4a96-b0d5-d4ba8123c4dd
 ---
 

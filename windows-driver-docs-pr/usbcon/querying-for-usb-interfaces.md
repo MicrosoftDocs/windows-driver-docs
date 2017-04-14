@@ -1,11 +1,5 @@
 ---
-Description: 'Instead of using the I/O Request Packet (IRP) mechanism, a USB client driver can get a reference to a bus driver interface and use it to access bus driver routines.'
-MS-HAID:
-- 'usbinterKG\_638eb209-5f2e-4f96-b169-beedcf106ac4.xml'
-- 'buses.querying\_for\_usb\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Instead of using the I/O Request Packet (IRP) mechanism, a USB client driver can get a reference to a bus driver interface and use it to access bus driver routines.
 title: Querying for Bus Driver Interfaces
 ---
 

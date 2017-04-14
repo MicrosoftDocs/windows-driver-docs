@@ -2,12 +2,6 @@
 title: Using GetFeatureAttribute
 author: windows-driver-content
 description: Using GetFeatureAttribute
-MS-HAID:
-- 'pscript\_c6834fd2-e40c-4120-af54-000a829e9266.xml'
-- 'print.using\_getfeatureattribute'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e5050cb1-c178-405d-bb0e-fd7827198bca
 keywords: ["GetFeatureAttribute"]
 ---

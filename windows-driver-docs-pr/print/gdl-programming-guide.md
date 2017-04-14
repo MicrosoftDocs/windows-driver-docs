@@ -2,12 +2,6 @@
 title: GDL Programming Guide
 author: windows-driver-content
 description: GDL Programming Guide
-MS-HAID:
-- 'gplfiles\_eae90003-d4d0-4f5c-a629-901c7cd03b6d.xml'
-- 'print.gdl\_programming\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ca524040-453f-4ea2-991c-5d031b3725e7
 keywords: ["GDL WDK , programming with GDL", "programming with GDL WDK", "printer drivers WDK , programming with GDL"]
 ---

@@ -2,12 +2,6 @@
 title: DataType Template Directive
 author: windows-driver-content
 description: DataType Template Directive
-MS-HAID:
-- 'gplfiles\_5de26b14-d65d-4469-90d0-342c58d08c54.xml'
-- 'print.datatype\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 211b4123-db0a-4180-a529-67f36b1e1c9b
 keywords: ["DataType directive WDK GDL"]
 ---

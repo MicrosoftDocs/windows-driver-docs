@@ -1,9 +1,6 @@
 ---
 title: Mobile broadband app scenarios
 description: Mobile broadband app scenarios
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10a90dcf-2cca-4299-b999-d9e30a7359ad
 ---
 

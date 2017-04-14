@@ -2,9 +2,6 @@
 title: SPB controller drivers
 author: windows-driver-content
 description: An SPB controller is a device that controls a simple peripheral bus (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 046353F9-315F-4328-8ECA-1C23AF87B4B4
 ---
 

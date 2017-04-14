@@ -1,4 +1,4 @@
-﻿---
+---
 title: KMDF as a generic driver pair model
 description: In this topic, we discuss the idea that the Kernel Mode Driver Framework can be viewed as a generic driver pair model. Before you read this topic, you should understand the ideas presented in Minidrivers and driver pairs.
 ms.assetid: C05E3017-0F1A-49D7-8EAD-0DC44351A39A

@@ -2,12 +2,6 @@
 title: Stream Pointers
 author: windows-driver-content
 description: Stream Pointers
-MS-HAID:
-- 'avsover\_404adb26-b80d-423d-9589-3116f3cfac00.xml'
-- 'stream.stream\_pointers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4bac68a0-34d2-431a-9ed9-8a42751a736f
 keywords: ["stream pointers WDK AVStream", "AVStream stream pointers WDK", "pointers WDK AVStream", "frames WDK AVStream", "queues WDK AVStream", "SRBs WDK AVStream"]
 ---

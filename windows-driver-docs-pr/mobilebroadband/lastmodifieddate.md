@@ -1,9 +1,6 @@
 ---
 title: LastModifiedDate
 description: LastModifiedDate
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e0ef7ca0-0c3d-4e71-af2e-ead90013e561
 ---
 

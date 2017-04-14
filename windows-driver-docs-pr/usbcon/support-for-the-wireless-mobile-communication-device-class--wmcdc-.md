@@ -1,11 +1,5 @@
 ---
 Description: Support for the Wireless Mobile Communication Device Class
-MS-HAID:
-- 'usbsystem\_5d3a8256-65fe-4392-ad53-55253d3eac84.xml'
-- 'buses.support\_for\_the\_wireless\_mobile\_communication\_device\_class\_\_wmcdc\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Support for the Wireless Mobile Communication Device Class
 ---
 

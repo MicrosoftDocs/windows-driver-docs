@@ -2,12 +2,6 @@
 title: DSM Scan Job Sequence Diagram
 author: windows-driver-content
 description: DSM Scan Job Sequence Diagram
-MS-HAID:
-- 'dsm\_des\_arch\_ab344964-d827-4c6c-aa6a-4a75ee2180d8.xml'
-- 'image.dsm\_scan\_job\_sequence\_diagram'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 127139cc-49c3-424b-b22e-36467f92df13
 ---
 

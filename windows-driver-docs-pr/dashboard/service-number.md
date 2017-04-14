@@ -1,12 +1,6 @@
 ---
 title: Service number
 description: Service number
-MS-HAID:
-- 'p\_dashboard.service\_number'
-- 'hw\_dashboard.service\_number'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c09bd5f2-16d7-44d4-b87f-e46961932cfc
 ---
 

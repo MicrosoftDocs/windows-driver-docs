@@ -2,12 +2,6 @@
 title: Custom Property Sets and Interfaces
 author: windows-driver-content
 description: Custom Property Sets and Interfaces
-MS-HAID:
-- 'vidcapds\_7d819782-d2fd-4989-bba3-4050deb42908.xml'
-- 'stream.custom\_property\_sets\_and\_interfaces'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea1337e4-c8e5-4971-b602-c066b5a6fd07
 keywords: ["interfaces WDK video capture", "custom property sets WDK video capture", "video capture WDK AVStream , property sets", "capturing video WDK AVStream , property sets", "property sets WDK video capture", "custom interfaces WDK video capture"]
 ---

@@ -2,12 +2,6 @@
 title: Handling Stride in AVStream Codecs
 author: windows-driver-content
 description: Handling Stride in AVStream Codecs
-MS-HAID:
-- 'shed\_dg\_fa9bacce-eb13-4fcb-aec4-d945d2ac8dc5.xml'
-- 'stream.handling\_stride\_in\_avstream\_codecs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 816a0ddc-8ab8-4259-9842-76f5e4dadee0
 keywords: ["AVStream hardware codec support WDK , handling stride"]
 ---

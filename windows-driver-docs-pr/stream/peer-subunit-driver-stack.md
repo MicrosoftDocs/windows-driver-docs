@@ -2,12 +2,6 @@
 title: Peer Subunit Driver Stack
 author: windows-driver-content
 description: Peer Subunit Driver Stack
-MS-HAID:
-- 'AVCguide\_63cdc09d-7ded-4822-99c6-0ba6fd0f38d9.xml'
-- 'stream.peer\_subunit\_driver\_stack'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6ef4b6ae-3802-4ba9-acfa-4b3edba11ba3
 keywords: ["peer subunit driver stacks WDK AV/C", "driver stacks WDK AV/C", "stacks WDK AV/C", "subunit support WDK AV/C", "AV/C WDK , driver stacks", "unit commands WDK AV/C", "built-in extension mechanism WDK AV/C", "command extension mechanism WDK AV/C", "command targets WDK AV/C", "Avc.sys function driver WDK , driver stacks"]
 ---

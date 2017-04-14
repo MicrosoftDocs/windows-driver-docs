@@ -1,9 +1,5 @@
 ---
-Description: 'You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon.'
-MS-HAID: 'buses.viewing\_etw\_traces\_in\_netmon'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon.
 title: USB ETW traces in Netmon
 ---
 

@@ -2,12 +2,6 @@
 title: GDL Schema Root Element
 author: windows-driver-content
 description: GDL Schema Root Element
-MS-HAID:
-- 'gplfiles\_afea31af-e3c2-408b-ba23-222eec2f37ac.xml'
-- 'print.gdl\_schema\_root\_element'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6148f026-52fa-452d-aa81-564d6ee5288d
 keywords: ["GDL WDK , elements", "GDL WDK , schemas", "SnapshotRoot element WDK GDL", "root element WDK GDL", "snapshots WDK GDL , structure"]
 ---

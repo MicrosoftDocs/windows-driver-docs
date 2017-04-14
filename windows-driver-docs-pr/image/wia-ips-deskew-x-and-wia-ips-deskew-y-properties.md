@@ -2,12 +2,6 @@
 title: WIA\_IPS\_DESKEW\_X and WIA\_IPS\_DESKEW\_Y Properties
 author: windows-driver-content
 description: WIA\_IPS\_DESKEW\_X and WIA\_IPS\_DESKEW\_Y Properties
-MS-HAID:
-- 'WIA\_tree\_4bd778e1-a74d-4c64-8885-dea276d5dab1.xml'
-- 'image.wia\_ips\_deskew\_x\_and\_wia\_ips\_deskew\_y\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 748b08f7-e838-4df8-abcb-4ff1cdd20f7e
 ---
 

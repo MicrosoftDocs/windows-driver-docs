@@ -1,9 +1,6 @@
 ---
 title: ServiceDescription2
 description: ServiceDescription2
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92de51be-dfd7-443b-987c-b4b364e1aaa6
 ---
 

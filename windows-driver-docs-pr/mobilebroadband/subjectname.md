@@ -1,9 +1,6 @@
 ---
 title: SubjectName
 description: SubjectName
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1aa9c826-c95a-4e89-931f-4e296122edc3
 ---
 

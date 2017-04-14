@@ -2,12 +2,6 @@
 title: Participating in Error Source Discovery
 author: windows-driver-content
 description: Participating in Error Source Discovery
-MS-HAID:
-- 'whea\_1ae07e87-26cc-4329-9999-8acd146798be.xml'
-- 'whea.participating\_in\_error\_source\_discovery'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 349c8f06-be79-4a40-8b9f-cbefc563f6de
 keywords: ["Windows Hardware Error Architecture WDK , error source discovery", "WHEA WDK , error source discovery", "hardware errors WDK WHEA , error source discovery", "errors WDK WHEA , error source discovery", "platform-specific hardware error driver plug-ins WDK WHEA , error source discovery", "PSHED plug-ins WDK WHEA , error source discovery", "error source discovery WDK WHEA"]
 ---

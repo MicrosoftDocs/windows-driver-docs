@@ -2,9 +2,6 @@
 title: Supporting radio management
 author: windows-driver-content
 description: When the user chooses the Wireless option in PC settings on their Windows 8 laptop, notebook, or tablet, they can turn any connected wireless devices on or off.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: AA7AB429-30C5-4C10-AA85-41ED9EAEE69A
 keywords: ["radio management API", "radio management API, example", "radio management, example", "GPS radio management", "radio management, GPS"]
 ---

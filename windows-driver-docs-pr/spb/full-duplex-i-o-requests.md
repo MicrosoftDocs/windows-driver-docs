@@ -2,9 +2,6 @@
 title: Full-Duplex I/O Requests
 author: windows-driver-content
 description: Some buses, such as SPI, support full-duplex bus transfers.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: C80FE3F2-6659-4DE8-8F77-F77EDA60400F
 ---
 

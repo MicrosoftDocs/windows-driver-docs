@@ -2,12 +2,6 @@
 title: 1394 Bridges
 author: windows-driver-content
 description: 1394 Bridges
-MS-HAID:
-- '1394-design\_b2027068-c43e-41d7-9600-f2fc60182fdc.xml'
-- 'IEEE.1394\_bridges'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 208cceaa-dd26-46f9-b015-723c5940b02b
 keywords: ["IEEE 1394 WDK buses , bridges", "1394 WDK buses , bridges", "bridges WDK IEEE 1394 bus", "1394 bridges WDK IEEE 1394 bus"]
 ---

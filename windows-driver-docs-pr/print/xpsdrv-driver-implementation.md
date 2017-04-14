@@ -2,12 +2,6 @@
 title: XPSDrv Driver Implementation
 author: windows-driver-content
 description: XPSDrv Driver Implementation
-MS-HAID:
-- 'xpsconfig\_e4e5e4a3-acd4-4c52-a7c6-c0afac7af005.xml'
-- 'print.xpsdrv\_driver\_implementation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b5b9a51-a8d4-433b-8bd5-01bd629c4c63
 keywords: ["Version 3 XPS drivers WDK XPSDrv , implementing"]
 ---

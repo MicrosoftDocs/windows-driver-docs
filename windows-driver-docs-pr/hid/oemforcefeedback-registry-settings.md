@@ -2,12 +2,6 @@
 title: OEMForceFeedback Registry Settings
 author: windows-driver-content
 description: OEMForceFeedback Registry Settings
-MS-HAID:
-- 'di\_10d0818a-5feb-4ae9-8c53-2a554051465c.xml'
-- 'hid.oemforcefeedback\_registry\_settings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c29fe1e8-1cd9-4b32-96d7-1afae5a49d42
 keywords: ["force feedback drivers WDK HID , OEMForceFeedback settiings", "OEMForceFeedback key WDK HID", "registry WDK force feedback", "Effects subkey WDK force feedback"]
 ---

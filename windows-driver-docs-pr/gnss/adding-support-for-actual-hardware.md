@@ -2,9 +2,6 @@
 title: Adding support for real hardware to the geolocation driver sample
 author: windows-driver-content
 description: The geolocation driver sample was provided as a starting point that simulates a GPS device. This topic describes how you can add support for real hardware.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0D16C46F-4622-4191-83F2-579FC17DE985
 ---
 

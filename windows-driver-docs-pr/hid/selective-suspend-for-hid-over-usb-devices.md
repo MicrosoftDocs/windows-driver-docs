@@ -2,9 +2,6 @@
 title: Selective suspend for HID over USB devices
 author: windows-driver-content
 description: Revision 2.0 of the Universal Serial Bus Specification specifies a USB selective suspend feature.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A4560D7C-8A32-4A91-95B6-4377E0F0D0C1
 ---
 

@@ -2,12 +2,6 @@
 title: Minidriver Initialization
 author: windows-driver-content
 description: Minidriver Initialization
-MS-HAID:
-- 'strmini-design\_f7fb0977-cd0a-473c-b021-1678ea70b790.xml'
-- 'stream.minidriver\_initialization'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5aa4e2c6-5848-45fe-8a89-686aae7e85e6
 keywords: ["initializing streaming minidrivers WDK Windows 2000 Kernel", "Stream.sys class driver WDK Windows 2000 Kernel , initializing minidrivers", "streaming minidrivers WDK Windows 2000 Kernel , initializing", "minidrivers WDK Windows 2000 Kernel Streaming , initializing"]
 ---

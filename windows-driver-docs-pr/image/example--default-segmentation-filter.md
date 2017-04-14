@@ -2,12 +2,6 @@
 title: Example Default Segmentation Filter
 author: windows-driver-content
 description: Example Default Segmentation Filter
-MS-HAID:
-- 'WIA\_tree\_316d3a51-b4ab-46d0-961a-51c3b5465189.xml'
-- 'image.example\_\_default\_segmentation\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 96c74ca6-0162-4991-b3f9-86c17c92ffc3
 ---
 

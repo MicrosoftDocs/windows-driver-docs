@@ -2,12 +2,6 @@
 title: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
 author: windows-driver-content
 description: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
-MS-HAID:
-- 'WIA\_scanner\_tree\_65594771-8cba-4cfe-979c-b06ce54444e1.xml'
-- 'image.wia\_flatbed\_scanner\_compatibility\_for\_windows\_xp\_and\_windows\_me'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fc3424fa-3898-4f6a-a611-f81d97db8b1d
 ---
 

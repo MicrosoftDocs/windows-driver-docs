@@ -1,9 +1,5 @@
 ---
-Description: 'Read how to run stress and transfer and Super MUTT performance tests.Stress and transfer tests are geared towards saturating the bus protocol and the host controller software.'
-MS-HAID: 'buses.how\_to\_run\_stress\_and\_transfer\_and\_super\_mutt\_performance\_tests\_for\_mutt\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Read how to run stress and transfer and Super MUTT performance tests.Stress and transfer tests are geared towards saturating the bus protocol and the host controller software.
 title: How to run stress and transfer performance tests for MUTT devices
 ---
 

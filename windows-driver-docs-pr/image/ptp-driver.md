@@ -2,12 +2,6 @@
 title: PTP Driver
 author: windows-driver-content
 description: PTP Driver
-MS-HAID:
-- 'WIA\_drv\_cam\_f513ce0b-6019-417f-80f4-8a8dab3a8f48.xml'
-- 'image.ptp\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8bfdea9-0778-498f-a87d-d2766c9c02cc
 ---
 

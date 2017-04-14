@@ -2,12 +2,6 @@
 title: WIA Item Properties for Feeder Scanners
 author: windows-driver-content
 description: WIA Item Properties for Feeder Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_c6a7b3c6-7d53-44cf-818a-85542822d864.xml'
-- 'image.wia\_item\_properties\_for\_feeder\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92b5f435-d34a-4a31-85e3-53a6d0ed8f16
 ---
 

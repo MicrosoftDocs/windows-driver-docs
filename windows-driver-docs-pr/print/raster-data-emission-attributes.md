@@ -2,12 +2,6 @@
 title: Raster Data Emission Attributes
 author: windows-driver-content
 description: Raster Data Emission Attributes
-MS-HAID:
-- 'nt5gpd\_27aa6f7d-cea8-408e-8e7c-262167fc2e42.xml'
-- 'print.raster\_data\_emission\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 98366b64-f96b-4275-ba25-8483abf705aa
 keywords: ["data emission raster printing attributes WDK Unidrv", "emission raster printing attributes WDK Unidrv"]
 ---

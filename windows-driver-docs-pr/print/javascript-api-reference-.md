@@ -2,9 +2,6 @@
 title: JavaScript API Reference
 author: windows-driver-content
 description: Manufacturers can use the JavaScript API presented here, in combination with a Bidi XML file to provide support for Bidi over a USB connection to a print device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 604DF74E-AEF1-43DC-81B2-566A94B1CE8E
 ---
 

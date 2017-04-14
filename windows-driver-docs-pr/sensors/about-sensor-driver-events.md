@@ -2,12 +2,6 @@
 title: About Sensor Driver Events
 author: windows-driver-content
 description: About Sensor Driver Events
-MS-HAID:
-- 'Sensor\_DG\_Overview\_b9999d82-84a1-4b24-ab1a-917270bf04fe.xml'
-- 'sensors.about\_sensor\_driver\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1e747743-f701-4854-92be-7b55c39fee08
 ---
 

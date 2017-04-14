@@ -1,9 +1,6 @@
 ---
 title: AutoplayHandler
 description: AutoplayHandler
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0ee7ac9b-7c1a-4267-b718-ba110ef5b12d
 ---
 

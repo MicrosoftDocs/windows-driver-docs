@@ -2,12 +2,6 @@
 title: WIA Components
 author: windows-driver-content
 description: WIA Components
-MS-HAID:
-- 'WIA\_arch\_39065e0d-e007-4857-8abe-748d322e2658.xml'
-- 'image.wia\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e75b8929-c16a-4c7a-9064-4fcb104bfa41
 ---
 

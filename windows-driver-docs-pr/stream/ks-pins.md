@@ -2,12 +2,6 @@
 title: KS Pins
 author: windows-driver-content
 description: KS Pins
-MS-HAID:
-- 'ks-overview\_effbcd0a-bbee-49d8-9bc9-d84e83cb1999.xml'
-- 'stream.ks\_pins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04d0d17b-c326-417d-b2e8-58b33420455a
 keywords: ["pins WDK kernel streaming", "KS pins WDK kernel streaming , about KS pins", "KSPIN_DESCRIPTOR", "IRP source pins WDK kernel streaming", "data source pins WDK kernel streaming", "pin connections WDK kernel streaming", "kernel streaming WDK , pins"]
 ---

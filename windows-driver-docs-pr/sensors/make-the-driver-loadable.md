@@ -2,9 +2,6 @@
 title: Make the driver loadable
 author: windows-driver-content
 description: To make a driver loadable, you must add a function that will register the required driver callback routines (DriverEntry), a function that will attach the driver to a device stack (DeviceAdd), and a function that will unload the driver when it's no longer needed (DriverUnload).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6BEB7CBC-0179-41B3-BD3D-126290940768
 ---
 

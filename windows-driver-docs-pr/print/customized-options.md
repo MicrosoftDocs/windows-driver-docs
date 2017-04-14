@@ -2,12 +2,6 @@
 title: Customized Options
 author: windows-driver-content
 description: Customized Options
-MS-HAID:
-- 'nt5gpd\_3a366d4d-1c80-4529-9602-f7adf74c7c06.xml'
-- 'print.customized\_options'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b54c59e-b469-488a-ae31-52045c00c971
 keywords: ["printer options WDK Unidrv , customized", "customized printer options WDK Unidrv"]
 ---

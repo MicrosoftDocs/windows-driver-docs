@@ -2,12 +2,6 @@
 title: High-Fidelity Print Output
 author: windows-driver-content
 description: High-Fidelity Print Output
-MS-HAID:
-- 'drvarch\_4841e40a-5421-4135-88cb-ad4a9b6bcdd4.xml'
-- 'print.high\_fidelity\_print\_output'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 37ff186e-d078-40f4-b7dc-9bf75e0b2847
 keywords: ["color fidelity WDK XPSDrv", "print fidelity WDK XPSDrv", "high-fidelity print output WDK XPSDrv", "XPSDrv printer drivers WDK , high-fidelity print output"]
 ---

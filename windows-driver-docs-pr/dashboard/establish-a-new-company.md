@@ -1,12 +1,6 @@
 ---
 title: Establish a new company
 description: Establish a new company
-MS-HAID:
-- 'p\_dashboard.establish\_a\_new\_company'
-- 'hw\_dashboard.establish\_a\_new\_company'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 98cdd891-3bb8-4aa1-8418-35c2670ba087
 ---
 

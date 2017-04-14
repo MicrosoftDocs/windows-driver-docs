@@ -2,12 +2,6 @@
 title: Defining Custom Properties
 author: windows-driver-content
 description: Defining Custom Properties
-MS-HAID:
-- 'WIA\_drv\_basic\_ace035a1-9f76-4f62-b056-17f262958a64.xml'
-- 'image.defining\_custom\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c3b69482-12ad-4b9f-8c0c-5ce315032d51
 ---
 

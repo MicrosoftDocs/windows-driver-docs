@@ -2,12 +2,6 @@
 title: Certificate Management
 author: windows-driver-content
 description: Certificate Management
-MS-HAID:
-- 'dsm\_des\_tut\_d1a8aa9a-7d82-4b5f-97d5-ab4bd8a8569e.xml'
-- 'image.certificate\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4a629424-9595-430e-8c47-1205dcbad53c
 ---
 

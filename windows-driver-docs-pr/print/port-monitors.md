@@ -2,12 +2,6 @@
 title: Port Monitors
 author: windows-driver-content
 description: Port Monitors
-MS-HAID:
-- 'provider\_54021ee6-b26d-4840-9b9b-7b58b41c2e57.xml'
-- 'print.port\_monitors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4758ebda-f93e-49fb-8605-17cf43194afc
 keywords: ["print monitors WDK , port monitors", "port monitors WDK print", "port monitors WDK print , about port monitors", "port monitors WDK print , DLLs", "print queues WDK , port monitors"]
 ---

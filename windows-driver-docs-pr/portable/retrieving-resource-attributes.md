@@ -1,7 +1,5 @@
 ---
 Description: Retrieving Resource Attributes
-MS-HAID: 'wpddk.retrieving\_resource\_attributes'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Retrieving Resource Attributes
 ---
 

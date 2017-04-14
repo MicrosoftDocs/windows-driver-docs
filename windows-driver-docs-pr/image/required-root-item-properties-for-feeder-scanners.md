@@ -2,12 +2,6 @@
 title: Required Root Item Properties for Feeder Scanners
 author: windows-driver-content
 description: Required Root Item Properties for Feeder Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_3b10c041-440d-4cbc-864e-479d18b041ca.xml'
-- 'image.required\_root\_item\_properties\_for\_feeder\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 51dfdc28-675f-4ee1-a36c-850327b3c3b0
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Understanding and configuring Windows Connection Manager
 description: Understanding and configuring Windows Connection Manager
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5ef0034f-5b30-4484-a11c-ed19931484a2
 ---
 

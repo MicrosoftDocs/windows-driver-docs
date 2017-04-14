@@ -2,12 +2,6 @@
 title: Synchronization Examples
 author: windows-driver-content
 description: Synchronization Examples
-MS-HAID:
-- 'strmini-design\_fe251cde-15c5-4607-8a49-c050ae9d6bd5.xml'
-- 'stream.synchronization\_examples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b9290fab-8213-4083-bda5-0e6c2af737a6
 keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , synchronization", "streaming minidrivers WDK Windows 2000 Kernel , synchronization", "minidrivers WDK Windows 2000 Kernel Streaming , synchronization", "synchronization WDK streaming minidriver"]
 ---

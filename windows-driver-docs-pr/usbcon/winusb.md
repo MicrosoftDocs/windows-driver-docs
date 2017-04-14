@@ -1,12 +1,6 @@
 ---
-Description: 'This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.'
-MS-HAID:
-- 'usbsystem\_ad1cc4f6-8edd-4ac8-ad77-3b5656665c74.xml'
-- 'buses.winusb'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'WinUSB (Winusb.sys)'
+Description: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
+title: WinUSB (Winusb.sys)
 ---
 
 # WinUSB (Winusb.sys)

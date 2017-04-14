@@ -1,7 +1,5 @@
 ---
 Description: The WPD Driver Samples
-MS-HAID: 'wpddk.the\_wpd\_driver\_samples'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: The WPD Driver Samples
 ---
 

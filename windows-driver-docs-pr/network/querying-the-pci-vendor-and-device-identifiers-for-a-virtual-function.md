@@ -6,6 +6,7 @@ ms.assetid: A2FB0A35-A89B-4028-92BA-E75739B080FD
 
 # Querying the PCI Vendor and Device Identifiers for a Virtual Function
 
+**Note** This method can only be used by overlying drivers that run in the management operating system of the Hyper-V parent partition.
 
 An overlying driver issues an object identifier (OID) method request of [OID\_SRIOV\_VF\_VENDOR\_DEVICE\_ID](https://msdn.microsoft.com/library/windows/hardware/hh451913) to query the PCI Express (PCIe) vendor identifier (*VendorID*) and device identifier (*DeviceID*). This data is read from the PCIe configuration space for the PCIe Virtual Function (VF) on the physical network adapter.
 

@@ -1,9 +1,6 @@
 ---
 title: Extended Camera Control Properties
 author: windows-driver-content
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 27D94D73-D190-4C01-B082-7798CA71EDB4
 description: 
 ---

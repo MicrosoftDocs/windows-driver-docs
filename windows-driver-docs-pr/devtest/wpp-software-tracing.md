@@ -1,4 +1,4 @@
-﻿---
+---
 title: WPP Software Tracing
 description: WPP Software Tracing
 ms.assetid: dab776b3-bac9-4157-a530-6e48868ba900

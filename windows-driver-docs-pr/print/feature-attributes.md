@@ -2,12 +2,6 @@
 title: Feature Attributes
 author: windows-driver-content
 description: Feature Attributes
-MS-HAID:
-- 'nt5gpd\_a73dc8c3-17bc-4c7e-b662-5d2bbba169e3.xml'
-- 'print.feature\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae1a489e-2554-46fc-8f2e-45128b073f91
 keywords: ["printer attributes WDK Unidrv , features", "feature attribues WDK Unidrv", "printer features WDK Unidrv , attributes"]
 ---

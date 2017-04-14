@@ -2,12 +2,6 @@
 title: Setting Up AddReg Entries
 author: windows-driver-content
 description: Setting Up AddReg Entries
-MS-HAID:
-- 'di\_d5019d67-d09d-46c9-9104-bf212cee3493.xml'
-- 'hid.setting\_up\_addreg\_entries'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b3e3eea-96d6-4f39-907a-80ef64ba61a9
 keywords: ["INF files WDK joysticks , AddReg entries", "AddReg entries WDK joysticks", "registry WDK joysticks"]
 ---

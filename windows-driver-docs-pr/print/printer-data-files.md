@@ -2,12 +2,6 @@
 title: Printer Data Files
 author: windows-driver-content
 description: Printer Data Files
-MS-HAID:
-- 'drvarch\_325d0824-8335-41df-9164-c362ea210041.xml'
-- 'print.printer\_data\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 971d3c6d-ecbe-42e8-8d13-b44543738bad
 keywords: ["GDI printer drivers WDK , data files", "data files WDK print"]
 ---

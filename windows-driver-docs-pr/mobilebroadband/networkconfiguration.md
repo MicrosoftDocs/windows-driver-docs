@@ -1,9 +1,6 @@
 ---
 title: NetworkConfiguration
 description: NetworkConfiguration
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4a52b185-1bfb-4626-99fb-6be364e88e85
 ---
 

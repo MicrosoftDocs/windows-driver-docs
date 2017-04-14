@@ -2,12 +2,6 @@
 title: GDL Compound Data Types
 author: windows-driver-content
 description: GDL Compound Data Types
-MS-HAID:
-- 'gplfiles\_9490fa04-4874-41ec-a910-fd015abd547c.xml'
-- 'print.gdl\_compound\_data\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c0e623f2-cb98-4fed-82ad-cc38ea4b0aa0
 keywords: ["templates WDK GDL , data types", "data types WDK GDL , compound", "parser WDK GDL , compound data types"]
 ---

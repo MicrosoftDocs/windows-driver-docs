@@ -2,12 +2,6 @@
 title: Installing Serial Devices that Use a 16550 UART-Compatible Interface
 author: windows-driver-content
 description: Installing Serial Devices that Use a 16550 UART-Compatible Interface
-MS-HAID:
-- 'sseovr\_d6a78e2f-6a97-4544-a1ba-8a3177d05bac.xml'
-- 'serports.installing\_serial\_devices\_that\_use\_a\_16550\_uart\_compatible\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d80db651-b890-44dc-98ad-32e72e244d8c
 keywords: ["Serial driver WDK , 16550 UART-compatible interfaces", "universal asynchronous receiver-transmitters WDK serial devices", "UART WDK serial devices", "16550 UART-compatible interfaces WDK serial devices"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: Manage Hardware Submissions
 description: Manage Hardware Submissions
-MS-HAID:
-- 'p\_dashboard.manage\_hardware\_submissions'
-- 'hw\_dashboard.manage\_hardware\_submissions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 732c601f-6bd6-4a6a-b82c-5ed913bc7e62
 ---
 

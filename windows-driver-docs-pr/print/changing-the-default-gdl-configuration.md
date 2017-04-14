@@ -2,12 +2,6 @@
 title: Changing the Default GDL Configuration
 author: windows-driver-content
 description: Changing the Default GDL Configuration
-MS-HAID:
-- 'gplfiles\_ad1a18e8-0c4c-4a60-8f49-313f415c1ee9.xml'
-- 'print.changing\_the\_default\_gdl\_configuration'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ecc4a6ab-869a-402e-b90e-5ad94e0347c3
 keywords: ["GDL WDK , configurations", "configurations WDK GDL , default configurations", "configurations WDK GDL , changing the default configuration", "default GDL configurations WDK", "DefaultOption directive WDK GDL"]
 ---

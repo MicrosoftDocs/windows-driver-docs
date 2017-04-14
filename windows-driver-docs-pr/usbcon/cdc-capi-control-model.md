@@ -1,11 +1,5 @@
 ---
 Description: CDC CAPI Control Model
-MS-HAID:
-- 'usbsystem\_3cf29d6e-1874-4e1f-97b1-4fb1a8da8307.xml'
-- 'buses.cdc\_capi\_control\_model'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: CDC CAPI Control Model
 ---
 

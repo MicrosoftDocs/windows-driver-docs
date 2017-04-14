@@ -1,9 +1,6 @@
 ---
 title: APN database schema reference
 description: APN database schema reference
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7192b74c-d868-4740-815b-f10255e374b2
 ---
 

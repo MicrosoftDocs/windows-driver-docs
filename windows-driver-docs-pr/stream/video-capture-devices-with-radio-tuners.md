@@ -2,12 +2,6 @@
 title: Video Capture Devices with Radio Tuners
 author: windows-driver-content
 description: Video Capture Devices with Radio Tuners
-MS-HAID:
-- 'vidcapds\_54706a3c-8cff-4487-bdc0-9775227e4283.xml'
-- 'stream.video\_capture\_devices\_with\_radio\_tuners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36e3ca98-cb1b-46cc-809a-8c9ad08a53c8
 keywords: ["radio tuners WDK video capture", "PLL offsets WDK video capture", "signal strength WDK video capture", "manual radio tuning WDK video capture", "FM tuners WDK video capture"]
 ---

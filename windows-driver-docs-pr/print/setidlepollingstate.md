@@ -2,12 +2,6 @@
 title: SetIdlePollingState
 author: windows-driver-content
 description: SetIdlePollingState
-MS-HAID:
-- 'provider\_24f0eb93-7ce6-4348-9c16-7526476b6992.xml'
-- 'print.setidlepollingstate'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55eb8c74-d759-4837-8ee8-b6e1819c1366
 keywords: ["SetIdlePollingState"]
 ---

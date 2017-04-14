@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_PORT\_TYPE
 author: windows-driver-content
 description: EFI\_USBFN\_PORT\_TYPE
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2596dd4f-26bd-454b-9550-a89c7e1f790b
 ---
 

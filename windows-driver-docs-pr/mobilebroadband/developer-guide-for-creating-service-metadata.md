@@ -1,9 +1,6 @@
 ---
 title: Developer guide for creating service metadata
 description: Developer guide for creating service metadata
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d250bce-2dd2-4bd8-aa0f-432dde7783e1
 ---
 

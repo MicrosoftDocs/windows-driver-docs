@@ -2,12 +2,6 @@
 title: PCI-Based TV Capture
 author: windows-driver-content
 description: PCI-Based TV Capture
-MS-HAID:
-- 'vidcapds\_86bd0933-f55f-4264-88a7-d143b38d9392.xml'
-- 'stream.pci\_based\_tv\_capture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae97d5f7-82de-4d6e-9835-ff4c7427f333
 keywords: ["filter graph configurations WDK video capture , PCI-based TV capture", "PCI-based TV capture WDK video capture", "TV capture WDK video capture", "television capture WDK video capture"]
 ---

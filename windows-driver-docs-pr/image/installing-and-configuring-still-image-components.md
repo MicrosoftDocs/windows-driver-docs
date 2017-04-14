@@ -2,12 +2,6 @@
 title: Installing and Configuring Still Image Components
 author: windows-driver-content
 description: Installing and Configuring Still Image Components
-MS-HAID:
-- 'stillimg\_6918925a-6606-4034-bbbe-83600a4273d8.xml'
-- 'image.installing\_and\_configuring\_still\_image\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 18d32f09-28e0-40f2-a9cb-962de0554b74
 ---
 

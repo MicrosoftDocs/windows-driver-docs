@@ -2,12 +2,6 @@
 title: Code Example for Challenging a Potentially Disconnected Device
 author: windows-driver-content
 description: Code Example for Challenging a Potentially Disconnected Device
-MS-HAID:
-- 'WIA\_wsd\_scan\_86c08f57-176b-4929-8b45-9e0fb2b194ab.xml'
-- 'image.code\_example\_for\_challenging\_a\_potentially\_disconnected\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 74633481-229f-4074-a84e-cc515eaaacd0
 ---
 

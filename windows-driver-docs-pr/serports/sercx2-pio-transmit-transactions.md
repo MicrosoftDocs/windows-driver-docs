@@ -2,9 +2,6 @@
 title: SerCx2 PIO-Transmit Transactions
 author: windows-driver-content
 description: SerCx2 requires all serial controller drivers to implement support for transmit transactions that use programmed I/O (PIO).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3BEF9A3D-1FEF-4626-B07F-1670359062AF
 ---
 

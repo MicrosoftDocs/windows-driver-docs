@@ -2,9 +2,6 @@
 title: V4 Printer Driver Rendering
 author: windows-driver-content
 description: For rendering print jobs into the page description language for a print device, the v4 print driver model uses the XPSDrv Render Module.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8952063C-3706-43A0-BA6B-231E7CD01514
 ---
 

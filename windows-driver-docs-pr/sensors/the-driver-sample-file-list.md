@@ -2,9 +2,6 @@
 title: The driver sample file list
 author: windows-driver-content
 description: The following source files are in the src\\SPB\\SpbAccelerometer folder and are used to build the SpbAccelerometer.sys and SpbAccelerometer.inf files.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 48965F7F-1396-4E08-974B-3613684FAA6E
 ---
 

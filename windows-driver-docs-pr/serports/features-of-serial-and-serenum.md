@@ -2,12 +2,6 @@
 title: Features of Serial and Serenum
 author: windows-driver-content
 description: Features of Serial and Serenum
-MS-HAID:
-- 'sseovr\_8d50a2a8-faaf-4417-bc2d-556c1d36d529.xml'
-- 'serports.features\_of\_serial\_and\_serenum'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 47202203-935a-4e1a-9b05-5555f7cbcfa8
 keywords: ["serial devices WDK , Serial driver", "serial devices WDK , Serenum driver", "Serial driver WDK , about Serial driver", "Serenum driver WDK , about Serenum driver", "Serial service WDK", "serial drivers WDK"]
 ---

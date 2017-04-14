@@ -2,12 +2,6 @@
 title: ElementTags Template Directive
 author: windows-driver-content
 description: ElementTags Template Directive
-MS-HAID:
-- 'gplfiles\_5ace9e2f-d9ea-4f1c-a23d-82ae29dbdee1.xml'
-- 'print.elementtags\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 24ebecc0-6485-4be8-8ae9-6010cd5f0f44
 keywords: ["ElementTags directive WDK GDL"]
 ---

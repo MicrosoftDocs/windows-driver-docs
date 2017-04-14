@@ -1,8 +1,6 @@
 ---
-Description: 'Command-Option Retrieval'
-MS-HAID: 'wpddk.command\_option\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Command-Option Retrieval'
+Description: Command-Option Retrieval
+title: Command-Option Retrieval
 ---
 
 # Command-Option Retrieval

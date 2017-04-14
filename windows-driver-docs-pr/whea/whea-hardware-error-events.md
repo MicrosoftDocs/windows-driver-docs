@@ -2,12 +2,6 @@
 title: WHEA Hardware Error Events
 author: windows-driver-content
 description: WHEA Hardware Error Events
-MS-HAID:
-- 'whea\_ef5bac2d-30d1-4434-b99e-abc4e9f39b02.xml'
-- 'whea.whea\_hardware\_error\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c9f88e3b-3915-4a77-8d60-f0f3da514abc
 keywords: ["events WDK WHEA , about events", "Windows Hardware Error Architecture WDK , events", "WHEA WDK , events", "hardware errors WDK WHEA , events", "errors WDK WHEA , events", "hardware error events WDK WHEA", "events WDK WHEA"]
 ---

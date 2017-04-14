@@ -2,12 +2,6 @@
 title: Getting Started with Hardware Codec Support in AVStream
 author: windows-driver-content
 description: Getting Started with Hardware Codec Support in AVStream
-MS-HAID:
-- 'shed\_dg\_56db8580-2091-424e-b3fd-5d5ba5e6b8cf.xml'
-- 'stream.getting\_started\_with\_hardware\_codec\_support\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f8335285-e74f-4600-aee9-7e2881cb0764
 keywords: ["hardware codec support WDK AVStream , using"]
 ---

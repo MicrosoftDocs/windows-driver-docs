@@ -2,9 +2,6 @@
 title: Secure boot and device encryption overview
 author: windows-driver-content
 description: Secure boot and device encryption overview
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4e206bd2-7bb4-48c2-9e01-8da041e798ef
 ---
 

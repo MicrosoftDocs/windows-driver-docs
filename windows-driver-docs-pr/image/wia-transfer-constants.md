@@ -2,12 +2,6 @@
 title: WIA Transfer Constants
 author: windows-driver-content
 description: WIA Transfer Constants
-MS-HAID:
-- 'WIA\_arch\_7a6af1c8-2e3b-457a-8837-359ef89e77f8.xml'
-- 'image.wia\_transfer\_constants'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 69f76919-5bbb-4968-997c-2d51f19aab6b
 ---
 

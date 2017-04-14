@@ -2,9 +2,6 @@
 title: PrintCapabilities document example
 author: windows-driver-content
 description: The keywords used in the following example are for illustration only, although they generally conform to the Print Schema keywords for 3D manufacturing.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0FCEFC25-C22F-44BD-9693-B3DBE6F6D314
 ---
 

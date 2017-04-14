@@ -2,12 +2,6 @@
 title: Configuration Manager Callback
 author: windows-driver-content
 description: Configuration Manager Callback
-MS-HAID:
-- 'di\_afbac7ff-cb48-45c9-9859-80d6d9e72e9c.xml'
-- 'hid.configuration\_manager\_callback'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a8d33bed-3a06-4d61-be42-b9ae195b79f9
 keywords: ["callbacks WDK joysticks", "configuration manager callbacks WDK joysticks"]
 ---

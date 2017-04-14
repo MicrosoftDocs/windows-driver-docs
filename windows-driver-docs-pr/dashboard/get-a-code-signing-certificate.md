@@ -1,9 +1,6 @@
 ---
 title: Get a code signing certificate
 description: Get a code signing certificate
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
 ---
 

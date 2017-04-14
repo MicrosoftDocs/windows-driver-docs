@@ -2,9 +2,6 @@
 title: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.GetMaxPacketSize
 author: windows-driver-content
 description: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.GetMaxPacketSize
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8808bb5d-e00d-4b19-87ad-4a071a896e22
 ---
 

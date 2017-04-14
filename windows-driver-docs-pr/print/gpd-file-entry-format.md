@@ -2,12 +2,6 @@
 title: GPD File Entry Format
 author: windows-driver-content
 description: GPD File Entry Format
-MS-HAID:
-- 'nt5gpd\_5fca696f-7c4e-4816-8579-5b58c18fd0c0.xml'
-- 'print.gpd\_file\_entry\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44057b4d-5ea1-426f-ae87-047b650cbf65
 keywords: ["GPD file entries WDK Unidrv , formats", "formats WDK GPD files"]
 ---

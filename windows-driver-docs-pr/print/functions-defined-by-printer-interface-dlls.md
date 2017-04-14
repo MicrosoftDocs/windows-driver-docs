@@ -2,12 +2,6 @@
 title: Functions Defined by Printer Interface DLLs
 author: windows-driver-content
 description: Functions Defined by Printer Interface DLLs
-MS-HAID:
-- 'drvarch\_f3e6d384-2fe6-4b1f-b1be-b9fb3c8072c2.xml'
-- 'print.functions\_defined\_by\_printer\_interface\_dlls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b0ae796-67cf-4619-a0a7-6cb6aab8c2e4
 keywords: ["printer interface DLL WDK , functions", "functions WDK printer interface DLL"]
 ---

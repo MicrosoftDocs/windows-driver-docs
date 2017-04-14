@@ -2,12 +2,6 @@
 title: WIA Film Scanner Compatibility for Windows XP and Windows Me
 author: windows-driver-content
 description: WIA Film Scanner Compatibility for Windows XP and Windows Me
-MS-HAID:
-- 'WIA\_scanner\_tree\_9ea0bc1c-c375-4c1d-8bd2-4ee0be17934e.xml'
-- 'image.wia\_film\_scanner\_compatibility\_for\_windows\_xp\_and\_windows\_me'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9f96ef72-2482-435f-b512-b48c12dc1628
 ---
 

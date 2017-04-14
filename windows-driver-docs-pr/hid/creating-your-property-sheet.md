@@ -2,12 +2,6 @@
 title: Creating Your Property Sheet
 author: windows-driver-content
 description: Creating Your Property Sheet
-MS-HAID:
-- 'di\_0b4f22e3-71ca-4c72-b4fa-2db3c053562a.xml'
-- 'hid.creating\_your\_property\_sheet'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04fa34fd-86d6-4017-a6da-9882d65674e3
 keywords: ["property sheets WDK DirectInput , creating", "game controllers WDK DirectInput , property sheet creation", "control panels WDK DirectInput , property sheet creation", "sample property sheet applications WDK DirectInput", "custom property sheets WDK DirectInput", "templates WDK DirectInput"]
 ---

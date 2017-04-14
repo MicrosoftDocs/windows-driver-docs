@@ -2,12 +2,6 @@
 title: LDAP Connect
 author: windows-driver-content
 description: LDAP Connect
-MS-HAID:
-- 'dsm\_des\_tut\_13bb3f50-f6c3-4b2e-aa39-7516e32260dd.xml'
-- 'image.ldap\_connect'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8a19e5fb-fec3-4fb6-9cca-1fba01e70958
 ---
 

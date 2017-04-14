@@ -2,12 +2,6 @@
 title: Print Capabilities in Unidrv and PScript5 Print Drivers
 author: windows-driver-content
 description: Print Capabilities in Unidrv and PScript5 Print Drivers
-MS-HAID:
-- 'drvarch\_2d3c985b-a56f-4e5d-bbd5-62e20d29a45b.xml'
-- 'print.print\_capabilities\_in\_unidrv\_and\_pscript5\_print\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 70f8b846-3e05-4345-baad-a3db6b8df620
 keywords: ["Print Capabilities WDK , Unidrv", "Print Capabilities WDK , PScript5"]
 ---

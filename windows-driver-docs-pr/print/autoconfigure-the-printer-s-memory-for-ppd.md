@@ -2,12 +2,6 @@
 title: Autoconfigure the Printer's Memory for PPD
 author: windows-driver-content
 description: Autoconfigure the Printer's Memory for PPD
-MS-HAID:
-- 'autocfg\_9b3db038-774d-4a8c-8ab2-378fde3b5405.xml'
-- 'print.autoconfigure\_the\_printer\_s\_memory\_for\_ppd'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 75df1026-896f-4840-a69d-975f813ca636
 keywords: ["memory WDK printer autoconfig", "PPD files WDK autoconfiguration , memory", "in-box autoconfiguration support WDK printer , memory", "autoconfiguring printer memory WDK", "printer memory configurations WDK autoconfiguration"]
 ---

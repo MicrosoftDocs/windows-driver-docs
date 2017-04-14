@@ -2,9 +2,6 @@
 title: Build the sensor driver
 author: windows-driver-content
 description: This topic shows you how to build the sample sensor driver for the ADXL345 accelerometer.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F9D8D124-DAD6-4779-9F03-B1743BADC31A
 ---
 

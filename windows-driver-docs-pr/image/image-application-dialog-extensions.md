@@ -2,12 +2,6 @@
 title: Image Application Dialog Extensions
 author: windows-driver-content
 description: Image Application Dialog Extensions
-MS-HAID:
-- 'WIA\_drv\_cus\_614f0450-60a6-4cd6-a9ec-04e9d1f68179.xml'
-- 'image.image\_application\_dialog\_extensions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4bb7d2f9-58c3-4cfa-aa6b-a4bd9335d2ac
 ---
 

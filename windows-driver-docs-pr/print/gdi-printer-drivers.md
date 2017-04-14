@@ -2,12 +2,6 @@
 title: GDI Printer Drivers
 author: windows-driver-content
 description: GDI Printer Drivers
-MS-HAID:
-- 'drvarch\_4ebc6efc-b6f0-46aa-bd2b-d82ab7982a97.xml'
-- 'print.gdi\_printer\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c7ae6c0e-ae43-4b10-9a6f-f2daf578ecd2
 keywords: ["GDI printer drivers WDK", "printer drivers WDK , GDI", "GDI printer drivers WDK , about GDI printer drivers"]
 ---

@@ -2,12 +2,6 @@
 title: Security
 author: windows-driver-content
 description: Security
-MS-HAID:
-- 'dsm\_des\_req\_583b3d7a-8d01-4c58-a04a-d12de5a14d47.xml'
-- 'image.security'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d2cd7be-fc19-4714-af07-38a032f1ab02
 ---
 

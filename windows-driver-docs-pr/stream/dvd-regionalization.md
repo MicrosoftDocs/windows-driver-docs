@@ -2,12 +2,6 @@
 title: DVD Regionalization
 author: windows-driver-content
 description: DVD Regionalization
-MS-HAID:
-- 'dvd-design\_011868ca-3aed-48f1-82fe-28f7bf5e975e.xml'
-- 'stream.dvd\_regionalization'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 931441c8-9521-43c9-86f1-dbf75d36e190
 keywords: ["DVD decoder minidrivers WDK", "regionalization WDK DVD decoder"]
 ---

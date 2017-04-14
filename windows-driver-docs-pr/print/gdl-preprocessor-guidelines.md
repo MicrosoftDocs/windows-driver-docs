@@ -2,12 +2,6 @@
 title: GDL Preprocessor Guidelines
 author: windows-driver-content
 description: GDL Preprocessor Guidelines
-MS-HAID:
-- 'gplfiles\_abc57b09-5ecf-4ea3-b3d0-7f55c2d0c8df.xml'
-- 'print.gdl\_preprocessor\_guidelines'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dc8450ca-cacc-458c-a05b-8566d04d8bae
 keywords: ["preprocessor directives WDK GDL , guidelines", "directives WDK GDL , source file preprocessor directives", "source files WDK GDL , preprocessor directives"]
 ---

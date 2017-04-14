@@ -1,9 +1,6 @@
 ---
 title: GUIDType
 description: GUIDType
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f88df5a-2a17-4006-ad3b-aab9a12cbcb9
 ---
 

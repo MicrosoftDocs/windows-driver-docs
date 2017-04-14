@@ -2,12 +2,6 @@
 title: Installing Pages for a Printer Type
 author: windows-driver-content
 description: Installing Pages for a Printer Type
-MS-HAID:
-- 'inetpri\_31c80fc9-9b05-4070-9122-2f69f16e21f8.xml'
-- 'print.installing\_pages\_for\_a\_printer\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6c878612-d490-4791-a284-c48f1db0cde8
 keywords: ["installing customized print Web pages WDK", "customized print Web pages WDK , installing", "printer-specific installations WDK"]
 ---

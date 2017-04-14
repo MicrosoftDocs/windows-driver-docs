@@ -2,12 +2,6 @@
 title: Error Injection
 author: windows-driver-content
 description: Error Injection
-MS-HAID:
-- 'whea\_0163f5ec-dac8-4205-9b71-054961c4ce39.xml'
-- 'whea.error\_injection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d97d49bc-b216-40d6-afd1-aecff624624d
 keywords: ["Windows Hardware Error Architecture WDK , error injection", "WHEA WDK , error injection", "hardware errors WDK WHEA , error injections", "errors WDK WHEA , error injection", "platform-specific hardware error driver plug-ins WDK WHEA , error injection", "PSHED plug-ins WDK WHEA , error injection", "error injection WDK WHEA"]
 ---

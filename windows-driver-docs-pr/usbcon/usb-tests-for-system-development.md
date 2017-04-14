@@ -1,11 +1,5 @@
 ---
-Description: 'If you are building a new system, the tests in this topic are recommended.'
-MS-HAID:
-- 'buses.windows\_usb\_samples'
-- 'buses.usb\_tests\_for\_system\_development'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: If you are building a new system, the tests in this topic are recommended.
 title: Recommended USB tests for system development
 ---
 

@@ -2,12 +2,6 @@
 title: WIA Scanner Storage Compatibility for Windows XP and Windows Me
 author: windows-driver-content
 description: WIA Scanner Storage Compatibility for Windows XP and Windows Me
-MS-HAID:
-- 'WIA\_scanner\_tree\_ebe0c244-f9f6-4033-8bd8-3010ee23ff86.xml'
-- 'image.wia\_scanner\_storage\_compatibility\_for\_windows\_xp\_and\_windows\_me'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10f3d212-7e63-40ef-99b5-eba6bb13e3e8
 ---
 

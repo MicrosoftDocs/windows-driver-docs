@@ -2,12 +2,6 @@
 title: Printer INF File CopyFiles Sections
 author: windows-driver-content
 description: Printer INF File CopyFiles Sections
-MS-HAID:
-- 'prtinst\_f44a864f-f0a7-4e9e-82e7-f56281c5e2d2.xml'
-- 'print.printer\_inf\_file\_copyfiles\_sections'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 92c96019-d2dd-4b2c-818a-80ae091ec662
 keywords: ["INF files WDK print , CopyFiles sections", "sections WDK printer", "CopyFiles directive"]
 ---

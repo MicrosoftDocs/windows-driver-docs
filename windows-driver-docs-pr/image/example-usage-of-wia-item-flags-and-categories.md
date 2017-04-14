@@ -2,12 +2,6 @@
 title: Example Usage of WIA Item Flags and Categories
 author: windows-driver-content
 description: Example Usage of WIA Item Flags and Categories
-MS-HAID:
-- 'WIA\_tree\_de7bbff9-eb08-4485-aad7-fc24da3b5304.xml'
-- 'image.example\_usage\_of\_wia\_item\_flags\_and\_categories'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c9f7d85-6c84-4df9-9db3-6554d7eddf93
 ---
 

@@ -2,12 +2,6 @@
 title: Printer Graphics DLL
 author: windows-driver-content
 description: Printer Graphics DLL
-MS-HAID:
-- 'drvarch\_b2c30d51-4fe1-4c8e-9fa2-b1a80bba3597.xml'
-- 'print.printer\_graphics\_dll'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 58e181ff-c792-41a5-967d-a69a8ff5a041
 keywords: ["GDI printer drivers WDK ,", "DLLs WDK print"]
 ---

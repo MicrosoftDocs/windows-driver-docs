@@ -2,12 +2,6 @@
 title: Still Image USB I/O
 author: windows-driver-content
 description: Still Image USB I/O
-MS-HAID:
-- 'stillimg\_cea47eea-e3c0-42dd-928e-a29205c5e9f1.xml'
-- 'image.still\_image\_usb\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 93b320b3-1a3f-4ed9-8692-d0d94a3b69bd
 ---
 

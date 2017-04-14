@@ -2,12 +2,6 @@
 title: Creating a persistent unique identifier for a sensor
 author: windows-driver-content
 description: Creating a persistent unique identifier for a sensor
-MS-HAID:
-- 'Sensor\_DG\_DevelopmentBasics\_6f3a8c58-dee8-4938-a813-89256e1006c3.xml'
-- 'sensors.creating\_a\_persistent\_unique\_identifier'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09ff583e-6bb5-4812-ae3b-970dac671e39
 ---
 

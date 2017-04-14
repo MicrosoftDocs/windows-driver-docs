@@ -2,12 +2,6 @@
 title: Storing and Transferring Thumbnail Data
 author: windows-driver-content
 description: Storing and Transferring Thumbnail Data
-MS-HAID:
-- 'WIA\_drv\_cam\_fcb6cf2e-e657-4bc5-8a8c-6e6d5e967d42.xml'
-- 'image.storing\_and\_transferring\_thumbnail\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c27f93f-859e-42e3-95ea-9bfd8d0329d6
 ---
 

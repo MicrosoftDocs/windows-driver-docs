@@ -2,12 +2,6 @@
 title: Property Contexts
 author: windows-driver-content
 description: Property Contexts
-MS-HAID:
-- 'WIA\_arch\_fade99c8-2581-420e-8d52-b77a257d1176.xml'
-- 'image.property\_contexts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: da33848c-a9bc-40c7-ab1b-0ca056f3e06d
 ---
 

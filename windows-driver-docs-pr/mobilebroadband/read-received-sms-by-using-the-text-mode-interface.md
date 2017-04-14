@@ -1,9 +1,6 @@
 ---
 title: Read received SMS by using the text-mode interface
 description: Read received SMS by using the text-mode interface
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e095fc0-59bf-4ec4-96a3-efe6f4ae054f
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: ServiceName
 description: ServiceName
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50a3c985-c798-4287-87c6-ffa9a3c2058a
 ---
 

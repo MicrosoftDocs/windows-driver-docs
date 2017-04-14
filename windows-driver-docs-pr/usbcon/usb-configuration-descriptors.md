@@ -1,11 +1,5 @@
 ---
-Description: 'A USB device exposes its capabilities in the form of a series of interfaces called a USB configuration.'
-MS-HAID:
-- 'usb-config\_1cb61921-cac1-4c24-82fd-2c0d42c441a8.xml'
-- 'buses.usb\_configuration\_descriptors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: A USB device exposes its capabilities in the form of a series of interfaces called a USB configuration.
 title: USB configuration descriptors
 ---
 

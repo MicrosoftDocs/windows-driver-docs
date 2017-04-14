@@ -1,12 +1,6 @@
 ---
 title: UEFI Firmware Signing
 description: UEFI Firmware Signing
-MS-HAID:
-- 'p\_dashboard.uefi\_firmware\_signing'
-- 'hw\_dashboard.uefi\_firmware\_signing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a39f65c3-9b0b-43ca-9831-ec420fb4cdca
 ---
 

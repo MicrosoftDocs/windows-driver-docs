@@ -2,12 +2,6 @@
 title: WIA Security Best Practices
 author: windows-driver-content
 description: WIA Security Best Practices
-MS-HAID:
-- 'WIA\_best\_practice\_420ac8ab-c283-4f27-86b9-8cfd12a91902.xml'
-- 'image.wia\_security\_best\_practices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3c8bd0e9-5832-4854-83ab-d422c617c67c
 ---
 

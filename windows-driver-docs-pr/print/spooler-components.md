@@ -2,12 +2,6 @@
 title: Spooler Components
 author: windows-driver-content
 description: Spooler Components
-MS-HAID:
-- 'splarch\_ce81961d-bcf4-48c3-bcd5-37847253f14c.xml'
-- 'print.spooler\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c2f70a23-6539-4736-b806-ec48d4f772a6
 ---
 

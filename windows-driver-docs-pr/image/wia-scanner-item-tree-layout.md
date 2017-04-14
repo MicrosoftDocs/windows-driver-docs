@@ -2,12 +2,6 @@
 title: WIA Scanner Item Tree Layout
 author: windows-driver-content
 description: WIA Scanner Item Tree Layout
-MS-HAID:
-- 'WIA\_drv\_scan\_e5e37caf-0d97-4b20-9d4c-176702ea70cd.xml'
-- 'image.wia\_scanner\_item\_tree\_layout'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8d4e5bad-9dab-404d-944d-a98d98698b62
 ---
 

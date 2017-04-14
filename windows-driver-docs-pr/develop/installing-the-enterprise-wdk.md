@@ -9,16 +9,26 @@ The current Windows Driver Kit (WDK) is optimized for individual developers usin
 The Enterprise WDK contains the necessary elements to build drivers and basic Win32 test applications, and is based on Visual Studio 2015 Enterprise, WDK, and the standalone Windows Software Development Kit (SDK). Use your favorite code editor to modify source code and project files. Because it's a command-line, the Enterprise WDK does lack some of the features incorporated into Visual Studio, such as testing and driver deployment. 
 
 
-## Enterprise WDK components
+## Enterprise WDK 1703 Prerequisites
+*	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.0.25431.01 (VS 2015 Update 3)  
+  *	Note that the Enterprise WDK does not include the IDE, devenv.exe.
+*	Windows SDK build 10.1.15063.137
+*	.NET Framework 4.6 SDK build 4.6.01586
+*	Windows Driver Development Kit build 10.1.15063.0
+
+## Enterprise WDK 1607 Prerequisites
 *	Visual Studio build tools, C/C++ compiler, linker and libs for Visual Studio build 14.00.24720.0 (VS 2015 Update 1)  
   *	Note that the Enterprise WDK does not include the IDE, devenv.exe.
 *	Windows SDK build 10586.13
 *	.NET Framework 4.6 SDK build 10586.13
-*	Windows Driver Development Kit build 10586.0
+*	Windows Driver Development Kit build 10586
+
 
 
 ## Installation Instructions
-1.	Download the [Enterprise WDK](https://msdn.microsoft.com/en-us/windows/hardware/mt612818.aspx).
+1.	Download one of the following: 
+ * [Enterprise WDK 1703](https://developer.microsoft.com/windows/hardware/license-terms-enterprise-wdk-1703) 
+ * [Enterprise WDK 1607](https://developer.microsoft.com/en-us/windows/hardware/license-terms-enterprise-wdk)
 2.	Expand the .zip file into an appropriately named directory, such as d:\ewdk.
 3.	From an Administrator command prompt, navigate to the expanded folder in the previous step, and then run **LaunchBuildEnvcmd** to create the build environment. For example:
   **D:\EWDK\LaunchBuildEnv**

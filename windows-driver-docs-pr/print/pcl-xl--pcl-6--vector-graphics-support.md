@@ -2,12 +2,6 @@
 title: PCL XL (PCL-6) Vector Graphics Support
 author: windows-driver-content
 description: PCL XL (PCL-6) Vector Graphics Support
-MS-HAID:
-- 'nt5gpd\_0434c1a3-a6fd-4ade-aa84-e1c5c6050db9.xml'
-- 'print.pcl\_xl\_\_pcl\_6\_\_vector\_graphics\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8a96506-ed95-44f2-863e-24cbfc919d65
 keywords: ["vector graphics WDK Unidrv , PCL XL", "PCL XL vector graphics WDK Unidrv", "PCL XL vector graphics WDK Unidrv , about PCL XL vector graphics", "PCL-6 WDK Unidrv"]
 ---

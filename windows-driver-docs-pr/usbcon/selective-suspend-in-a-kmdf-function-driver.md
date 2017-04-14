@@ -1,9 +1,5 @@
 ---
-Description: 'This topic describes how KMDF function drivers support USB selective suspend.'
-MS-HAID: 'buses.selective\_suspend\_in\_a\_kmdf\_function\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic describes how KMDF function drivers support USB selective suspend.
 title: Selective suspend in USB KMDF function drivers
 ---
 

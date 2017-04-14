@@ -2,12 +2,6 @@
 title: Unidrv Capabilities
 author: windows-driver-content
 description: Unidrv Capabilities
-MS-HAID:
-- 'nt5gpd\_a11d4ae4-454f-42ed-9a16-4e777b3693d2.xml'
-- 'print.unidrv\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e715e6c7-32cf-4db1-a6d2-3577824249c1
 keywords: ["Unidrv, capabilities", "Unidrv WDK print"]
 ---

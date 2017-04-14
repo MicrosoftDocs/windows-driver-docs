@@ -2,12 +2,6 @@
 title: WS-DSD Scenario Manage a DSM Device
 author: windows-driver-content
 description: WS-DSD Scenario Manage a DSM Device
-MS-HAID:
-- 'dsm\_des\_theory\_d3662869-22b5-4795-8fdc-c5f50143a7b7.xml'
-- 'image.ws\_dsd\_scenario\_\_manage\_a\_dsm\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 76b7d70d-deda-4c04-a8c3-a7b255d6a1ab
 ---
 

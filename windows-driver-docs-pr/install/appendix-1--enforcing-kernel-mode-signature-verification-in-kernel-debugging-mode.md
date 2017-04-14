@@ -1,5 +1,5 @@
 ---
-title: Appendix 1 Enforcing Kernel-Mode Signature Verification in Kernel Debugging Mode
+title: Appendix 1 Enforce Kernel-Mode Signature Verification in Kernel Debugging Mode
 description: .
 ms.assetid: D7CB436F-4B89-49E7-BB53-101BDA7046F3
 ---

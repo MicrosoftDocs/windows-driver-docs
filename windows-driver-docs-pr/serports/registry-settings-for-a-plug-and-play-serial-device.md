@@ -2,12 +2,6 @@
 title: Registry Settings for a Plug and Play Serial Device
 author: windows-driver-content
 description: Registry Settings for a Plug and Play Serial Device
-MS-HAID:
-- 'sseovr\_11a1a94d-9e28-46ad-a54c-82b6e14422a2.xml'
-- 'serports.registry\_settings\_for\_a\_plug\_and\_play\_serial\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 57bd090a-20fe-41c6-b730-0479f6ae0982
 keywords: ["Serial driver WDK , Plug and Play devices", "Plug and Play serial devices WDK", "serial devices WDK , Plug and Play"]
 ---

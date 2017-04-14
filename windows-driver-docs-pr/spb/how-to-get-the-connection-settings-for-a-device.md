@@ -2,9 +2,6 @@
 title: How to Get the Connection Settings for a Device
 author: windows-driver-content
 description: If your SPB controller driver registers an EvtSpbTargetConnect callback function, the SPB framework extension (SpbCx) calls this function when a client (peripheral driver) of the controller sends an IRP\_MJ\_CREATE request to open a logical connection to a target device on the bus. In response to the EvtSpbTargetConnect callback, the SPB controller driver should call the SpbTargetGetConnectionParameters method to get the connection settings for the target device. The SPB controller driver stores these settings and uses them later to access the device in response to I/O requests from the client.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B614993A-0EA9-4B91-A336-80EEF9BE3E69
 ---
 

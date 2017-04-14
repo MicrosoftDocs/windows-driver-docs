@@ -1,7 +1,5 @@
 ---
 Description: Supporting the Capability Commands
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_supporting\_wpd\_capability\_commands'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting the Capability Commands
 ---
 

@@ -2,12 +2,6 @@
 title: Core Driver Sample
 author: windows-driver-content
 description: Core Driver Sample
-MS-HAID:
-- 'prtinst\_0e413cf5-4962-40a1-bacd-8ec663ae6b27.xml'
-- 'print.core\_driver\_sample'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cd46ea6a-7d21-4a4c-b21a-f9db3b47e3b4
 ---
 

@@ -2,12 +2,6 @@
 title: Initializing a Print Monitor
 author: windows-driver-content
 description: Initializing a Print Monitor
-MS-HAID:
-- 'provider\_4b65082e-c7bb-4b42-a352-7b21c64796a2.xml'
-- 'print.initializing\_a\_print\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 006727dd-aa0f-451c-b1c9-983d0c6401df
 keywords: ["print monitors WDK , initializing", "initializing print monitors", "LoadLibrary"]
 ---

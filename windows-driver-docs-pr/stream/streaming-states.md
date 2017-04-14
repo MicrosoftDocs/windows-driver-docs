@@ -2,12 +2,6 @@
 title: Streaming States
 author: windows-driver-content
 description: Streaming States
-MS-HAID:
-- 'vidcapds\_4db67431-ab5d-4056-aed6-0762c0eed59d.xml'
-- 'stream.streaming\_states'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1030e5cd-441b-4f6a-8f6a-21ce11aaca96
 keywords: ["video capture WDK AVStream , stream states", "capturing video WDK AVStream , stream states", "stream states WDK video capture", "states WDK video capture", "STOP state WDK video capture", "ACQUIRE state WDK video capture", "PAUSE state WDK video capture", "RUN state WDK video capture"]
 ---

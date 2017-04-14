@@ -2,12 +2,6 @@
 title: Describing a WIA Device Using WIA Items
 author: windows-driver-content
 description: Describing a WIA Device Using WIA Items
-MS-HAID:
-- 'WIA\_tree\_5ca1b992-d9a5-4aec-aded-b6ebbdb8dd29.xml'
-- 'image.describing\_a\_wia\_device\_using\_wia\_items'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d8149f78-e095-48f9-be79-ff115b25f14e
 ---
 

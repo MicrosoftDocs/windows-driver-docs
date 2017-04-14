@@ -2,12 +2,6 @@
 title: Problems with Logical Operators in GDL Preprocessing
 author: windows-driver-content
 description: Problems with Logical Operators in GDL Preprocessing
-MS-HAID:
-- 'gplfiles\_0df6a7bc-c8fe-4cf4-9214-08023e8083d2.xml'
-- 'print.problems\_with\_logical\_operators\_in\_gdl\_preprocessing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ba1758c-8b8e-4eb2-8625-ffee213025aa
 keywords: ["preprocessor directives WDK GDL , problems with preprocessing", "directives WDK GDL , source file preprocessor directives", "source files WDK GDL , problems with preprocessing", "preprocessor directives WDK GDL , logical operators", "logical operators WDK GDL", "NOT operator WDK GDL", "AND operator WDK GDL", "OR operator WDK GDL"]
 ---

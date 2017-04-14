@@ -2,9 +2,6 @@
 title: Writing tests with WDTF
 author: windows-driver-content
 description: Whether you start writing driver tests with the templates provided in the Windows Driver Kit (WDK), or whether you create the tests on your own, the Microsoft Windows Device Testing Framework (WDTF) enables you to create and extend device-centric, scenario-based automated tests.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A7CB296D-FE40-43BB-9C73-CAF9B95E9586
 ---
 

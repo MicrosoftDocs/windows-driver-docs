@@ -1,12 +1,6 @@
 ---
 title: Errors and Solutions When Submitting Device Metadata Experiences
 description: Errors and Solutions When Submitting Device Metadata Experiences
-MS-HAID:
-- 'p\_dashboard.errors\_and\_solutions\_when\_submitting\_device\_metadata\_experiences'
-- 'hw\_dashboard.errors\_and\_solutions\_when\_submitting\_device\_metadata\_experiences'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 793b4c92-96e8-4b3e-a7de-d00e953c983a
 ---
 

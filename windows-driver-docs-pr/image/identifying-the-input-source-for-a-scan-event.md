@@ -2,12 +2,6 @@
 title: Identifying the Input Source for a Scan Event
 author: windows-driver-content
 description: Identifying the Input Source for a Scan Event
-MS-HAID:
-- 'WIA\_scanner\_tree\_ea01cba9-863e-4c1d-abaa-dce56dfaafd9.xml'
-- 'image.identifying\_the\_input\_source\_for\_a\_scan\_event'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: aaa0bbf4-6866-45d7-8150-c6a74d6c46c1
 ---
 

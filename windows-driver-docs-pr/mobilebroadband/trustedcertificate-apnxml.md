@@ -1,9 +1,6 @@
 ---
 title: TrustedCertificate
 description: TrustedCertificate
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b1b09ab-7ab8-4d6d-9ea6-395a109def91
 ---
 

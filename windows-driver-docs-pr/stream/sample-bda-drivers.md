@@ -2,12 +2,6 @@
 title: Sample BDA Drivers
 author: windows-driver-content
 description: Sample BDA Drivers
-MS-HAID:
-- 'bdadg\_2cffe45c-3aa8-48ce-85bd-4945f264fce1.xml'
-- 'stream.sample\_bda\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d5d9778c-1591-444f-89e8-95aa0eab61aa
 keywords: ["sample drivers WDK BDA", "Broadcast Driver Architecture WDK AVStream , sample drivers", "BDA WDK AVStream , sample drivers"]
 ---

@@ -2,12 +2,6 @@
 title: Hard-Coded UniDrv and PScript5 Features for XPSDrv
 author: windows-driver-content
 description: Hard-Coded UniDrv and PScript5 Features for XPSDrv
-MS-HAID:
-- 'xpsconfig\_8512a1a4-f431-4700-9f2d-8ae3696b8779.xml'
-- 'print.hard\_coded\_unidrv\_and\_pscript5\_features\_for\_xpsdrv'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d2922bc4-83d7-40da-adee-15c0810f2321
 ---
 

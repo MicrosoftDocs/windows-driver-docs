@@ -2,12 +2,6 @@
 title: Printer Installation Basics
 author: windows-driver-content
 description: Printer Installation Basics
-MS-HAID:
-- 'prtinst\_dcf65e0b-0a6a-43f6-a25a-277296a49e6a.xml'
-- 'print.printer\_installation\_basics'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e4f51bcd-302b-450b-a5d0-ae3ddae4e1b3
 ---
 

@@ -2,12 +2,6 @@
 title: Preprocessor Directives
 author: windows-driver-content
 description: Preprocessor Directives
-MS-HAID:
-- 'nt5gpd\_3ee60963-debd-4501-b2e8-33e0c0e8d47f.xml'
-- 'print.preprocessor\_directives'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5731b159-c6f9-47a8-8eaa-a1b0b6c12132
 keywords: ["GPD file entries WDK Unidrv , preprocessor directives", "preprocessor directives WDK GPD files", "parsing GPD file sections", "preprocessor symbols WDK GPD files"]
 ---

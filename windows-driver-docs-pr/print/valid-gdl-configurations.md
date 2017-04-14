@@ -2,12 +2,6 @@
 title: Valid GDL Configurations
 author: windows-driver-content
 description: Valid GDL Configurations
-MS-HAID:
-- 'gplfiles\_0e19717b-da9f-4a93-805a-e9c1f12e1455.xml'
-- 'print.valid\_gdl\_configurations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 68dbe7f7-4f6d-46e5-b2f1-27b123c4bedb
 keywords: ["GDL WDK , configurations", "parser WDK GDL , validating configurations", "configurations WDK GDL , valid configurations", "validating GDL configurations WDK"]
 ---

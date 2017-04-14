@@ -2,12 +2,6 @@
 title: PnPXID
 author: windows-driver-content
 description: PnPXID
-MS-HAID:
-- 'provider\_47eb9386-0fe0-412e-957c-97032d112dd4.xml'
-- 'print.pnpxid'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 42590d47-edb0-4435-8f7c-6b9c19d7f324
 keywords: ["WSDMON port monitors WDK , PnPXID command", "PnPXID"]
 ---

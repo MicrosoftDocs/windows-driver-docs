@@ -1,9 +1,6 @@
 ---
 title: Driver Signing Guidelines for ISVs
 description: Driver Signing Guidelines for ISVs
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1d909826-bbf2-4a5c-9c6a-10e423880ee5
 ---
 

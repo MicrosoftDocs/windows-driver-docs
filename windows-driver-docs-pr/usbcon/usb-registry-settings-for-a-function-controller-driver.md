@@ -1,9 +1,5 @@
 ---
-Description: 'OEMs must set several registry values to make sure that their device enumerates with the correct metadata when connected to a computer.'
-MS-HAID: 'buses.usb\_registry\_settings\_for\_a\_function\_controller\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: OEMs must set several registry values to make sure that their device enumerates with the correct metadata when connected to a computer.
 title: USB registry settings for a function controller driver
 ---
 

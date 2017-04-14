@@ -2,12 +2,6 @@
 title: Using Invalid GDL Configurations
 author: windows-driver-content
 description: Using Invalid GDL Configurations
-MS-HAID:
-- 'gplfiles\_492483c1-e65c-43a8-86d9-f444ec207301.xml'
-- 'print.using\_invalid\_gdl\_configurations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a61232dd-ab64-4ca4-9eb9-68fe5c7249e4
 keywords: ["GDL WDK , configurations", "configurations WDK GDL , invalid configurations", "invalid GDL configurations WDK", "configurations WDK GDL , examples", "InvalidCombination directive WDK GDL"]
 ---

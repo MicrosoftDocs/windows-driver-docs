@@ -1,9 +1,5 @@
 ---
-Description: 'This topic provides an overview of function suspend and function remote wake-up features for Universal Serial Bus (USB) 3.0 multi-function devices (composite devices).'
-MS-HAID: 'buses.how-to\_\_implement\_remote\_and\_function\_wake\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic provides an overview of function suspend and function remote wake-up features for Universal Serial Bus (USB) 3.0 multi-function devices (composite devices).
 title: How to Implement Function Suspend in a Composite Driver
 ---
 

@@ -2,12 +2,6 @@
 title: Adding Bidirectional Communication
 author: windows-driver-content
 description: Adding Bidirectional Communication
-MS-HAID:
-- 'provider\_d072988b-ca38-4d6a-8ae7-1d2aafea7142.xml'
-- 'print.adding\_bidirectional\_communication'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 30767eda-e456-4928-afac-40edd2ab48fc
 keywords: ["print spooler customizing WDK , bidirectional communication", "spooler customizing WDK print , bidirectional communication", "customizing print spooler components WDK , bidirectional communication", "bidirectional communication WDK print", "bidi communication WDK print"]
 ---

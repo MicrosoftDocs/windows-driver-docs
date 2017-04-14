@@ -2,12 +2,6 @@
 title: DeviceID
 author: windows-driver-content
 description: DeviceID
-MS-HAID:
-- 'provider\_a0252dd1-9cf7-41e1-95da-4a89cbb8afc4.xml'
-- 'print.deviceid2'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0fb02802-a7b6-4efa-b9b1-6d73059b425f
 keywords: ["WSDMON port monitors WDK , DeviceID command", "DeviceID"]
 ---

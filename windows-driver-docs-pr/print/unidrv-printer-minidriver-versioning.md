@@ -2,12 +2,6 @@
 title: Unidrv Printer Minidriver Versioning
 author: windows-driver-content
 description: Unidrv Printer Minidriver Versioning
-MS-HAID:
-- 'nt5gpd\_ae45a3c9-258f-4474-89be-6e3d8dab5da4.xml'
-- 'print.unidrv\_printer\_minidriver\_versioning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4f7701f4-79c4-4cdd-8562-fe4f70ad5cfe
 keywords: ["minidrivers WDK Unidrv", "version numbers WDK Unidrv"]
 ---

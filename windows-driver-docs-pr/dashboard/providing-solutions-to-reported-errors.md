@@ -1,12 +1,6 @@
 ---
 title: Providing Solutions to Reported Errors
 description: Providing Solutions to Reported Errors
-MS-HAID:
-- 'p\_dashboard.providing\_solutions\_to\_reported\_errors'
-- 'hw\_dashboard.providing\_solutions\_to\_reported\_errors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dfff5afb-3ff7-4681-be63-160993e855ec
 ---
 

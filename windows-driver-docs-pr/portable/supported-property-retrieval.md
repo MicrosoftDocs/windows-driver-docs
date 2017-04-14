@@ -1,7 +1,5 @@
 ---
 Description: Supported Property Retrieval
-MS-HAID: 'wpddk.supported\_property\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supported Property Retrieval
 ---
 

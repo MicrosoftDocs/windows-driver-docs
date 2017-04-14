@@ -2,12 +2,6 @@
 title: Methods for Specifying Pages
 author: windows-driver-content
 description: Methods for Specifying Pages
-MS-HAID:
-- 'cpsui\_c008ab0a-fafc-44d6-a606-1cc021c67191.xml'
-- 'print.methods\_for\_specifying\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 76006a2b-37b9-4490-913e-dcfc01812d43
 keywords: ["Common Property Sheet User Interface WDK print , specifying pages", "CPSUI WDK print , specifying pages", "property sheet pages WDK print , specifying", "COMPROPSHEETUI", "PROPSHEETPAGE"]
 ---

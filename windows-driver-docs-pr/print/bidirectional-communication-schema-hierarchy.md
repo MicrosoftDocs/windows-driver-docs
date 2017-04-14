@@ -2,12 +2,6 @@
 title: Bidirectional Communication Schema Hierarchy
 author: windows-driver-content
 description: Bidirectional Communication Schema Hierarchy
-MS-HAID:
-- 'autocfg\_7d516071-f0cf-4c45-8d63-4393e42801da.xml'
-- 'print.bidirectional\_communication\_schema\_hierarchy'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b3435c17-f72b-4925-8d13-bd3e71b4947e
 keywords: ["bidirectional communication schema WDK print", "bidi communication schema WDK print", "hierarchy WDK bidi communication"]
 ---

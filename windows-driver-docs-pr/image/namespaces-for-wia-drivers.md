@@ -2,12 +2,6 @@
 title: Namespaces for WIA Drivers
 author: windows-driver-content
 description: Namespaces for WIA Drivers
-MS-HAID:
-- 'WIA\_best\_practice\_034aa5e9-1222-405f-894d-9d900aa9bb1a.xml'
-- 'image.namespaces\_for\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 67260a25-6233-4738-a08f-26223cc8e563
 ---
 

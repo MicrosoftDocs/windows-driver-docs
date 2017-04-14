@@ -1,9 +1,6 @@
 ---
 title: Enabling mobile broadband experiences using portable hotspot devices
 description: Enabling mobile broadband experiences using portable hotspot devices
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bfd53d0d-d9cb-4b6a-bbad-549139c5a1ae
 ---
 

@@ -2,9 +2,6 @@
 title: Sensor driver model for Windows 8.1
 author: windows-driver-content
 description: The topics in this section provide information about the sensor driver model for Windows 8.1.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 24EF48C5-6AD4-4FC3-8004-D527E65837AB
 ---
 

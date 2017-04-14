@@ -2,9 +2,6 @@
 title: Provided WDTF Simple I/O plug-ins
 author: windows-driver-content
 description: Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 948E8CF5-24A1-4A7C-BD18-374F989AD053
 ---
 

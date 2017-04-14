@@ -2,12 +2,6 @@
 title: WHEA Changes for Windows 7
 author: windows-driver-content
 description: WHEA Changes for Windows 7
-MS-HAID:
-- 'whea\_7b1bae49-1a11-42e3-97d4-5c5380107c39.xml'
-- 'whea.whea\_changes\_for\_windows\_7'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d92c2be0-732b-4fcd-b517-5cb9eccf962b
 keywords: ["Windows Hardware Error Architecture WDK , Windows 7 changes", "WHEA WDK , Windows 7 changes", "Windows 7 WDK WHEA", "Windows 7 WDK WHEA , WHEA changes"]
 ---

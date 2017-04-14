@@ -2,12 +2,6 @@
 title: GDL Configurations
 author: windows-driver-content
 description: GDL Configurations
-MS-HAID:
-- 'gplfiles\_cbcf77ed-d57d-4445-9433-7c72fca8ff61.xml'
-- 'print.gdl\_configurations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce698737-c9d8-4502-8823-e249820a06fa
 keywords: ["GDL WDK , configurations", "configurations WDK GDL", "configurations WDK GDL , examples"]
 ---

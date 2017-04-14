@@ -2,12 +2,6 @@
 title: Option Constraints
 author: windows-driver-content
 description: Option Constraints
-MS-HAID:
-- 'nt5gpd\_94a0ae2f-732b-4eae-b078-dc390f7f9053.xml'
-- 'print.option\_constraints'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dc399715-c238-4a6e-8ce0-3204aa0cca68
 keywords: ["constraints WDK Unidrv", "printer options WDK Unidrv , constraints", "simultaneous printer options WDK Unidrv", "combining printer options WDK Unidrv"]
 ---

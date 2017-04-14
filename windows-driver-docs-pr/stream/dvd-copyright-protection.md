@@ -2,12 +2,6 @@
 title: DVD Copyright Protection
 author: windows-driver-content
 description: DVD Copyright Protection
-MS-HAID:
-- 'dvd-design\_ab31177a-b113-4abf-997f-324a9a9e44c9.xml'
-- 'stream.dvd\_copyright\_protection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff9cf8c8-7c8f-485c-b2ab-7567a5eeb87b
 ---
 

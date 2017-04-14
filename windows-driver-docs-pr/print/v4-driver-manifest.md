@@ -2,9 +2,6 @@
 title: V4 Driver Manifest
 author: windows-driver-content
 description: The v4 print driver manifest is a text file that contains all the printer-specific setup directives. A v4 print driver manifest is used in conjunction with a v4 print driver INF file, as part of the set up for a printer-specific v4 print driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 187A10B7-2AAC-46D9-998C-C8724D8E3862
 ---
 

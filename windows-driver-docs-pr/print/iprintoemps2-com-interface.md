@@ -2,12 +2,6 @@
 title: IPrintOemPS2 COM Interface
 author: windows-driver-content
 description: IPrintOemPS2 COM Interface
-MS-HAID:
-- 'custdrvr\_eb9ffbd0-9e87-43b2-bf5d-9112455bd9ba.xml'
-- 'print.iprintoemps2\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6743d73e-243b-4a05-8e88-576c65b37a19
 keywords: ["IPrintOemPS2"]
 ---

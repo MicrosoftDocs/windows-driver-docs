@@ -2,12 +2,6 @@
 title: WIA Flatbed Scanners
 author: windows-driver-content
 description: WIA Flatbed Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_d888f8b0-b672-479e-9c08-3288868a8aac.xml'
-- 'image.wia\_flatbed\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ff6342b-94b1-404e-9d04-b513511f65dc
 ---
 

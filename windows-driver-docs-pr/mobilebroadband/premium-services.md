@@ -1,9 +1,6 @@
 ---
 title: Premium services
 description: Premium services
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23c68c28-686c-4396-ac07-21d3c2bcca1c
 ---
 

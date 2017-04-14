@@ -1,9 +1,6 @@
 ---
 title: Wi-Fi Direct
 description: Wi-Fi Direct
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 52D09B1D-5832-48C9-B200-46B8DDC14BE5
 ---
 
