@@ -15,7 +15,7 @@ Starting in Visual Studio 2015 with WDK 10, when you build your driver, the foll
 -   [Universal INF errors (1300-1309)](#err-130x)
 -   [Installation warnings (2000-2999)](#warning-2xxx)
 
-## <span id="err_12xx"></span><span id="ERR_12XX"></span>Syntax errors in the INF file (1200-1299)
+## Syntax errors in the INF file (1200-1299)<a name="err-12xx"></a>
 
 
 When you install a driver, Windows skips lines in the INF file that contain errors, but does not fail driver installation due to errors in this range. If the driver installs successfully, you might not notice that some lines were skipped.
@@ -145,7 +145,7 @@ HKR,,DllPath,”%%SystemRoot%%\System32\myDll.sys”
 
  
 
-## <span id="err_130x"></span><span id="ERR_130X"></span>Universal INF errors (1300-1309)
+## Universal INF errors (1300-1309) <a name="err-130x"></a>
 
 
 **Important**  
@@ -214,7 +214,7 @@ Whether these issues appear as errors or warnings depends on the following:
     -   In Visual Studio, you build your driver with target platform set to **Desktop**.
     -   You run InfVerif.exe from the command line and do not specify the /c flag.
 
-## <span id="warning_2xxx"></span><span id="WARNING_2XXX"></span>Installation warnings (2000-2999)
+## Installation warnings (2000-2999) <a name="warning-2xxx"></a>
 
 
 Issues in the 2000-2999 range appears as warnings. Possible values include the following.
@@ -285,7 +285,3 @@ LogConfig=LogConfigSection
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20INF%20Validation%20Errors%20and%20Warnings%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

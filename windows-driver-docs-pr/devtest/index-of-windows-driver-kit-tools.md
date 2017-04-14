@@ -18,9 +18,9 @@ This topic includes the following:
 -   [What's New in the WDK for Windows 8.1](#what-s-new-in-the-wdk-for-windows8-1)
 -   [What's New in the WDK for Windows 8](#what-s-new-in-the-wdk-for-windows8)
 -   [What's Changed in the WDK for Windows 8](#what-s-changed-in-the-wdk-for-windows8)
--   [Supported platforms](#supported-os-wdk-for-win8)
+-   [Supported platforms](#supported-platforms)
 
-### <span id="index_of_wdk_tools"></span><span id="INDEX_OF_WDK_TOOLS"></span>Index of WDK Tools
+### Index of WDK Tools
 
 The information in the following tables describes the tools that are useful for Windows driver developers. The list of tools includes tools that ship with the WDK (as indicated by the **WDK tool** field) and also includes some tools that are available separately or that are installed with Windows. Tools that can generally be used with all drivers are listed under [All Drivers](#tech-all). Tools that are specific to a technology are grouped together, for example, tools that are specific for [Windows Portable Devices (WPD) Drivers](#tech-wpd) or [Sensors](#tech-sensors).
 
@@ -36,7 +36,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### <span id="tech_audio_video"></span><span id="TECH_AUDIO_VIDEO"></span>Technology: Audio / Video Drivers
+### Technology: Audio / Video Drivers <a name="tech-audio-video"></a>
 
 <table>
 <colgroup>
@@ -98,7 +98,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### <span id="tech_bluetooth"></span><span id="TECH_BLUETOOTH"></span>Technology: Bluetooth Drivers
+### Technology: Bluetooth Drivers<a name="tech-bluetooth"></a>
 
 <table>
 <colgroup>
@@ -128,7 +128,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### <span id="tech_wia"></span><span id="TECH_WIA"></span>Technology: Windows Image Acquisition (WIA) Drivers
+### Technology: Windows Image Acquisition (WIA) Drivers <a id="tech-wia></a>
 
 <table>
 <colgroup>
@@ -200,7 +200,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### <span id="tech_wpd"></span><span id="TECH_WPD"></span>Technology: Windows Portable Devices (WPD) Drivers
+### Technology: Windows Portable Devices (WPD) Drivers <a name="tech-wpd"></a>
 
 <table>
 <colgroup>
@@ -250,7 +250,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### <span id="tech_printer"></span><span id="TECH_PRINTER"></span>Technology: Printer Drivers
+### Technology: Printer Drivers <a name="tech-printer"></a>
 
 <table>
 <colgroup>
@@ -345,7 +345,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### <span id="tech_sensors"></span><span id="TECH_SENSORS"></span>Technology: Sensors
+### Technology: Sensors <a name="tech-sensors"></a>
 
 <table>
 <colgroup>
@@ -375,7 +375,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### <span id="tech_all"></span><span id="TECH_ALL"></span>Technology: All Drivers
+### Technology: All Drivers <a name="tech-all"></a>
 
 <table>
 <colgroup>
@@ -771,7 +771,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### <span id="what_s_new_in_the_wdk_for_windows8.1"></span><span id="WHAT_S_NEW_IN_THE_WDK_FOR_WINDOWS8.1"></span>What's New in the WDK for Windows 8.1
+### What's New in the WDK for Windows 8.1 <a name="what-s-new-in-the-wdk-for-windows8-1"></a>
 
 The following tools have been added or have changed in the WDK 8.1:
 
@@ -781,7 +781,7 @@ The following tools have been added or have changed in the WDK 8.1:
 -   [PwrTest](pwrtest.md)—updated documentation, new test scenarios, including support for connected standby power states.
 -   [Tracelog](tracelog.md)—new options.
 
-### <span id="what_s_new_in_the_wdk_for_windows8"></span><span id="WHAT_S_NEW_IN_THE_WDK_FOR_WINDOWS8"></span>What's New in the WDK for Windows 8
+### What's New in the WDK for Windows 8 <a name="what-s-new-in-the-wdk-for-windows8"></a>
 
 The following tools have been added to the WDK for Windows 8:
 
@@ -791,8 +791,7 @@ The following tools have been added to the WDK for Windows 8:
 
 -   Sensor Diagnostic Tool (sensordiagnostictool.exe)
 
-### <span id="what_s_changed_in_the_wdk_for_windows8"></span><span id="WHAT_S_CHANGED_IN_THE_WDK_FOR_WINDOWS8"></span>What's Changed in the WDK for Windows 8
-
+### What's Changed in the WDK for Windows 8 <a name="what-s-changed-in-the-wdk-for-windows8"></a>
 The following tools were in the Microsoft WDK for Windows 7, but are not included in the WDK for Windows 8.
 
 -   Windows Biometric Framework Tools (BioTest.exe, WBDIDriverTest.exe)
@@ -811,7 +810,7 @@ The following tools were in the Microsoft WDK for Windows 7, but are not include
 
 -   WWAN Driver Test App (wwandrivertestapp.exe)
 
-### <span id="supported_OS_wdk_for_win8"></span><span id="supported_os_wdk_for_win8"></span><span id="SUPPORTED_OS_WDK_FOR_WIN8"></span>Supported platforms
+### Supported platforms
 
 WDK 8.1 supports development of drivers that run on these versions of Windows:
 
@@ -840,7 +839,3 @@ You can run the integrated Visual Studio driver development environment on these
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Index%20of%20Windows%20Driver%20Kit%20Tools%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

@@ -12,7 +12,7 @@ This section applies only to Windows 7 and later, and Windows Server 2008 R2 and
 
 The following sections describe how Direct3D 11 has changed from Direct3D 10.
 
-### <span id="driver_callback_functions_to_kernel_mode_services"></span><span id="DRIVER_CALLBACK_FUNCTIONS_TO_KERNEL_MODE_SERVICES"></span>Driver Callback Functions to Kernel-Mode Services
+### Driver Callback Functions to Kernel-Mode Services
 
 The device-specific callback functions that the Direct3D version 11 runtime supplies in the [**D3DDDI\_DEVICECALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff544512) structure when the runtime calls the user-mode display driver's [**CreateDevice(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff540635) function isolate the driver from kernel handles and kernel function signatures. The Direct3D version 11 runtime changes the callback semantics and, therefore, the implementation of the callback functions to support a free-threaded mode of operation, whereas previous Direct3D version runtimes did not support a free-threaded mode of operation. The rules for free-threaded mode operation apply after the driver indicates that it supports free-threaded mode (D3D11DDICAPS\_FREETHREADED); otherwise, the previous heavily restricted rules apply. For information about how the driver indicates support for free-threaded mode, see [Threading and Command Lists](supporting-threading--command-lists--and-3-d-pipeline.md). The following restrictions still exist for Direct3D version 11:
 
@@ -34,13 +34,13 @@ The device-specific callback functions that the Direct3D version 11 runtime supp
 
 -   The [*pfnDeallocateCb*](https://msdn.microsoft.com/library/windows/hardware/ff568898) callback function deserves special mention because the driver is not required to call *pfnDeallocateCb* before the driver returns from its [**DestroyResource(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552797) function for most resource types. Because DestroyResource(D3D10) is a free-threaded function, the driver must defer destruction of the object until the driver can efficiently ensure that no existing immediate context reference remains (that is, the driver must call [**pfnRenderCb**](https://msdn.microsoft.com/library/windows/hardware/ff568923) before *pfnDeallocateCb*). This restriction applies even to shared resources or to any other callback function that uses HRESOURCE to complement HRESOURCE usage with [**pfnAllocateCb**](https://msdn.microsoft.com/library/windows/hardware/ff568893). However, this restriction does not apply to primaries. For more information about primary exceptions, see [Primary Exceptions](#primary-exceptions). Because some applications might require the appearance of synchronous destruction, the driver must ensure that it calls *pfnDeallocateCb* for any previously destroyed shared resources during a call to its [**Flush(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff565961) function. A driver must also cleanup any previously destroyed objects (only those that will not stall the pipeline) during a call to its Flush(D3D10) function; the driver must do so to ensure that the runtime calls Flush(D3D10) as an official mechanism to cleanup deferred destroyed objects for those few applications that might require such a mechanism. For more information about this mechanism, see [Deferred Destruction and Flush(D3D10)](#deferred-destruction-and-flush-d3d10-). The driver must also ensure that any objects for which destruction was deferred are fully destroyed before the driver's [**DestroyDevice(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552768) function returns during cleanup.
 
-### <span id="deprecate_ability_to_allow_modification_of_free_threaded_ddis"></span><span id="DEPRECATE_ABILITY_TO_ALLOW_MODIFICATION_OF_FREE_THREADED_DDIS"></span>Deprecate Ability to Allow Modification of Free-Threaded DDIs
+### Deprecate Ability to Allow Modification of Free-Threaded DDIs
 
 For Direct3D version 11, the API-level concept of a display device and an immediate context are still bundled together at the DDI level by the legacy concept of a display device. This bundling of display device and immediate context maximizes compatibility with prior-version DDIs (such as, the [Direct3D version 10 DDI](https://msdn.microsoft.com/library/windows/hardware/ff552909)) and reduces driver churn when supporting multiple versions of APIs through multiple versions of DDIs. However, this bundling of display device and immediate context results in a more confusing DDI because the threading domains are not extremely explicit. Instead, to understand the threading requirements of multiple interfaces and the functions within those interfaces, driver developers must refer to the documentation.
 
 A primary feature of the Direct3D version 11 API is that it allows multiple threads to enter create and destroy functions simultaneously. Such a feature is incompatible with allowing the driver to swap out the function table pointers for create and destroy, as the Direct3D version 10 DDI semantics for functions that are specified in [**D3D10DDI\_DEVICEFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff541833) and [**D3D10\_1DDI\_DEVICEFUNCS**](https://msdn.microsoft.com/library/windows/hardware/ff541873) allowed. Therefore, after the driver passes back the function pointers for creates ([**CreateDevice(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff540635)), the driver should not attempt to change behavior by modifying these particular function pointers when the driver runs under the Direct3D version 11 DDI and while the driver supports DDI threading. This restriction applies to all device functions that start with *pfnCreate*, *pfnOpen*, *pfnDestroy*, *pfnCalcPrivate*, and *pfnCheck*. All the rest of the device functions are strongly associated with the immediate context. Because a single thread manipulates the immediate context at a time, it is well-defined to continue to allow the driver to hot-swap immediate context function table entries.
 
-### <span id="pfnrendercb_versus_pfnperformamortizedprocessingcb"></span><span id="PFNRENDERCB_VERSUS_PFNPERFORMAMORTIZEDPROCESSINGCB"></span>pfnRenderCb Versus pfnPerformAmortizedProcessingCb
+### pfnRenderCb Versus pfnPerformAmortizedProcessingCb
 
 The Direct3D version 10 API functions hooked the Direct3D runtime's [**pfnRenderCb**](https://msdn.microsoft.com/library/windows/hardware/ff568923) kernel callback function to perform amortized processing (that is, instead of executing certain operations for every API function call, the driver performed amortized operations for every so many API function calls). The API typically uses this opportunity to trim high watermarks and flush out its deferred object destruction queue, among other things.
 
@@ -50,15 +50,15 @@ In addition, the driver should be aware of the API amortization issue, and try t
 
 For drivers that support command lists, those drivers must also call [**pfnPerformAmortizedProcessingCb**](https://msdn.microsoft.com/library/windows/hardware/ff568915) from deferred contexts whenever those drivers run out of room (a similar frequency as every immediate context flush). The Direct3D version 11 runtime expects to, at least, trim its high-watermarks during such an operation. Because the threading semantic that is related to [**pfnRenderCb**](https://msdn.microsoft.com/library/windows/hardware/ff568923) has been relaxed for Direct3D version 11, concurrency issues must be solved in order to allow Direct3D version 11 to continue to hook **pfnRenderCb**, without restriction.
 
-### <span id="new_ddi_error_code"></span><span id="NEW_DDI_ERROR_CODE"></span>New DDI Error Code
+### New DDI Error Code
 
 The D3DDDIERR\_APPLICATIONERROR error code is created to allow drivers to participate in validation where the Direct3D version 11 API did not. Previously, if the driver returned the E\_INVALIDARG error code, it would cause the API to raise an exception. The presence of the debug layer would cause debugging output and indicate that the driver had returned an internal error. The debugging output would suggest to the developer that the driver had a bug. If the driver returns D3DDDIERR\_APPLICATIONERROR, the debug layer determines that the application is at fault, instead.
 
-### <span id="retroactively_requiring_free_threaded_calcprivate_ddis"></span><span id="RETROACTIVELY_REQUIRING_FREE_THREADED_CALCPRIVATE_DDIS"></span>Retroactively Requiring Free-Threaded CalcPrivate DDIs
+### Retroactively Requiring Free-Threaded CalcPrivate DDIs
 
 Direct3D version 11 retroactively requires driver functions that begin with *pfnCalcPrivate* on Direct3D version 10 DDI functions to be free threaded. This retroactive requirement matches the behavior of the Direct3D version 11 DDI to always require *pfnCalcPrivate\** and [**pfnCalcDeferredContextHandleSize**](https://msdn.microsoft.com/library/windows/hardware/ff538272) functions to be free threaded even if the driver indicates it does not support DDI threading. For more information about this retroactive requirement, see [Retroactively Requiring Free-Threaded CalcPrivate DDIs](retroactively-requiring-free-threaded-calcprivate-ddis.md).
 
-### <span id="deferred_destruction_and_flush_d3d10_"></span><span id="DEFERRED_DESTRUCTION_AND_FLUSH_D3D10_"></span> Deferred Destruction and Flush(D3D10)
+### Deferred Destruction and Flush(D3D10)
 
 Because all the destroy functions are now free-threaded, the Direct3D runtime cannot flush a command buffer during destruction. Therefore, the destroy functions must defer the actual destruction of an object until the driver can ensure that the thread that manipulates the immediate context is no longer dependent on that object to survive. Each discrete immediate context method cannot efficiently use synchronization to solve this destruction issue; therefore, the driver should use synchronization only when it flushes a command buffer. The Direct3D runtime also uses this same design when it must deal with similar issues.
 
@@ -83,7 +83,7 @@ Those applications that require a form of synchronous destruction must use one o
     ImmediateContext::Flush(); // Destroy all objects, completely.
     ```
 
-### <span id="primary_exceptions"></span><span id="PRIMARY_EXCEPTIONS"></span> Primary Exceptions
+### Primary Exceptions
 
 Primaries are resources that the runtime creates in calls to the driver's [**CreateResource(D3D11)**](https://msdn.microsoft.com/library/windows/hardware/ff540694) function. The runtime creates a primary by setting the **pPrimaryDesc** member of the [**D3D11DDIARG\_CREATERESOURCE**](https://msdn.microsoft.com/library/windows/hardware/ff542062) structure to a valid pointer to a [**DXGI\_DDI\_PRIMARY\_DESC**](https://msdn.microsoft.com/library/windows/hardware/ff557511) structure. Primaries have the following notable exceptions in regard to the preceding changes from Direct3D 10 to Direct3D 11:
 
@@ -96,7 +96,3 @@ Primaries are resources that the runtime creates in calls to the driver's [**Cre
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Changes%20from%20Direct3D%2010%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
