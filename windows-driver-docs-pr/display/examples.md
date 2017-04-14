@@ -14,10 +14,10 @@ These scenarios include:
 -   [Updating page table entries of a process](#updating-page-table-entries-of-a-process)
 -   [Transferring allocation content from one location to another](#transferring-allocation-content-from-one-location-to-another)
 -   [Filling an allocation with a pattern](#filling-an-allocation-with-a-pattern)
--   [Making an allocation resident in system memory](#making-an-allocation-resident-in-system-memory)
+-   [Making an allocation resident in system memory](#Making an allocation resident in system memory)
 -   [Initialization of the memory manager control structures](#initialization-of-the-memory-manager-control-structures)
 
-## Updating page table entries of a process
+## Updating page table entries of a process <a name="updating-page-table-entries-of-a-process"></a>
 
 
 Here is the sequence of operations to update page table entries to map an allocation that belong to a process (P) to physical memory. It is assumed that the page table allocations are already resident in a graphics processing unit (GPU) memory segment.
@@ -32,7 +32,7 @@ Here is the sequence of operations to update page table entries to map an alloca
 
 ![updating page table entries of a process](images/examples.1.png)
 
-## Transferring allocation content from one location to another
+## Transferring allocation content from one location to another<a name="transferring-allocation-content-from-one-location-to-another"></a>
 
 
 Here is the sequence of operations when transferring an allocation content from one location to another (ex. from local memory to system memory).
@@ -46,7 +46,7 @@ Here is the sequence of operations when transferring an allocation content from 
 
 ![transferring allocation content from one location to another](images/examples.2.png)
 
-## <span id="Filling_an_allocation_with_a_pattern"></span><span id="filling_an_allocation_with_a_pattern"></span><span id="FILLING_AN_ALLOCATION_WITH_A_PATTERN"></span>Filling an allocation with a pattern
+## Filling an allocation with a pattern <a name="filling-an-allocation-with-a-pattern"></a>
 
 
 Here is the sequence of operations when an allocation needs to be filled with a pattern.
@@ -59,7 +59,7 @@ Here is the sequence of operations when an allocation needs to be filled with a 
 
 ![filling an allocation with a pattern](images/examples.3.png)
 
-## <span id="Making_an_allocation_resident_in_system_memory"></span><span id="making_an_allocation_resident_in_system_memory"></span><span id="MAKING_AN_ALLOCATION_RESIDENT_IN_SYSTEM_MEMORY"></span>Making an allocation resident in system memory
+## Making an allocation resident in system memory
 
 
 The following operations are performed when [**D3DKMTMakeResident**](https://msdn.microsoft.com/library/windows/hardware/dn906775) is called to make an allocation resident. It is assumed that the application process page tables are resident in memory.
@@ -77,7 +77,7 @@ In the video memory manager worker thread context:
 2.  If the allocation is resident in a local memory segment, fill the allocation with zeros (see the corresponding section above).
 3.  Submit the *SignalSynchronizationObject* command to the scheduler with the paging fence ID.
 
-## <span id="Initialization_of_the_memory_manager_control_structures"></span><span id="initialization_of_the_memory_manager_control_structures"></span><span id="INITIALIZATION_OF_THE_MEMORY_MANAGER_CONTROL_STRUCTURES"></span>Initialization of the memory manager control structures
+## Initialization of the memory manager control structures
 
 
 <span id="The_paging_process_initialization"></span><span id="the_paging_process_initialization"></span><span id="THE_PAGING_PROCESS_INITIALIZATION"></span>The paging process initialization  
