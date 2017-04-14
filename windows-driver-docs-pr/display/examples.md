@@ -14,7 +14,7 @@ These scenarios include:
 -   [Updating page table entries of a process](#updating-page-table-entries-of-a-process)
 -   [Transferring allocation content from one location to another](#transferring-allocation-content-from-one-location-to-another)
 -   [Filling an allocation with a pattern](#filling-an-allocation-with-a-pattern)
--   [Making an allocation resident in system memory](#Making-an-allocation-resident-in-system-memory)
+-   [Making an allocation resident in system memory](#making-an-allocation-resident-in-system-memory)
 -   [Initialization of the memory manager control structures](#initialization-of-the-memory-manager-control-structures)
 
 ## Updating page table entries of a process <a name="updating-page-table-entries-of-a-process"></a>
