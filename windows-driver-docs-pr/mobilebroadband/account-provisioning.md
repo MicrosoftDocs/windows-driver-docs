@@ -55,25 +55,25 @@ A provisioning file can include a directive for Windows to automatically retriev
 
 The provisioning metadata includes the following sections:
 
--   [Global](#bkmk_contents_global)
+-   [Global](#global)
 
--   [Activation](#bkmk_contents_activation)
+-   [Activation](#activation)
 
--   [Mobile broadband information](#bkmk_contents_mbninfo)
+-   [Mobile broadband information](#mobile-broadband-info)
 
--   [Wi-Fi information](#bkmk_contents_wifi)
+-   [Wi-Fi information](#wi-fi-information)
 
--   [Plan information](#bkmk_contents_plan)
+-   [Plan information](#plan-information)
 
--   [Refresh](#bkmk_contents_refresh)
+-   [Refresh](#refresh)
 
--   [Signature](#bkmk_contents_signature)
+-   [Signature](#signature)
 
--   [Permitted combinations](#bkmk_usage_permittedcombos)
+-   [Permitted combinations](#permitted-combinations)
 
 For more info about these sections, see [CarrierControlSchema schema](https://msdn.microsoft.com/library/windows/apps/hh868312).
 
-### <span id="bkmk_Contents_Global"></span><span id="bkmk_contents_global"></span><span id="BKMK_CONTENTS_GLOBAL"></span>Global
+###Global
 
 The global section is required in every provisioning file. Required elements in this section are as follows:
 
@@ -88,7 +88,7 @@ The global section is required in every provisioning file. Required elements in 
 
 -   [**SubscriberId**](https://msdn.microsoft.com/library/windows/apps/hh868305) A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
 
-### <span id="BKMK_Contents_Activation"></span><span id="bkmk_contents_activation"></span><span id="BKMK_CONTENTS_ACTIVATION"></span>Activation
+###Activation
 
 Device activation occurs after the activation process is complete on the back end. The PC might need to follow certain instructions before connecting to the network. The provisioning engine uses the activation instructions received in the device activation element. If no value is specified, then no client action is required. Available actions include:
 
@@ -98,7 +98,7 @@ Device activation occurs after the activation process is complete on the back en
 
 -   **Data** Data or instructions that you want to send to the device to activate the connection. The Provisioning Engine passes this data as is to the device. For CDMA, this can include instructions such as **\*228** to start an OTA Programming Session and reconnect to the network.
 
-### <span id="bkmk_Contents_MBNInfo"></span><span id="bkmk_contents_mbninfo"></span><span id="BKMK_CONTENTS_MBNINFO"></span>Mobile broadband information
+###Mobile broadband information
 
 Mobile broadband information contains several elements:
 
@@ -233,7 +233,7 @@ Because SMS messages influence Windows behavior, only trusted SMS messages can b
 
  
 
-### <span id="BKMK_Contents_WiFi"></span><span id="bkmk_contents_wifi"></span><span id="BKMK_CONTENTS_WIFI"></span>Wi-Fi information
+###Wi-Fi information
 
 This section lets you provide any number of Wi-Fi network profiles for Windows to use. The format of the section is similar to the XML schema that is used by the Windows native WLAN API.
 
@@ -399,7 +399,7 @@ This profile configures Windows to connect to an open network and use WISPr auth
 </WLANProfile>
 ```
 
-### <span id="BKMK_Contents_Plan"></span><span id="bkmk_contents_plan"></span><span id="BKMK_CONTENTS_PLAN"></span>Plan information
+###Plan information
 
 Each mobile broadband and hotspot profile references a plan. Multiple profiles can reference the same plan. Plans are described in a separate top-level section.
 
@@ -407,7 +407,7 @@ The Plan is divided into two sections—*Description* and *Usage*. This allows y
 
 This information is used to directly affect the behavior of Windows, and is provided to applications to tailor their behavior to the network. This information can be made available to third-party applications through network information APIs.
 
-### <span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>Description
+###Description
 
 The elements that generally change with low frequency over a customer’s subscription period, including:
 
@@ -431,7 +431,7 @@ The elements that generally change with low frequency over a customer’s subscr
 
 -   [**UserSMSEnabled**](https://msdn.microsoft.com/library/windows/apps/hh868376) Indicates whether the plan includes user-to-user SMS support. If true, Windows will keep the device attached to the network in Connected Standby even when the mobile broadband interface is not being used. If false, Windows can power down the mobile broadband interface to conserve power, thereby resulting in the device not being addressable by the network when the computer is idle.
 
-### <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
+###Usage
 
 The following elements can change with higher frequency:
 
@@ -441,7 +441,7 @@ The following elements can change with higher frequency:
 
 -   [**Congested**](https://msdn.microsoft.com/library/windows/apps/hh868449) A Boolean value that indicates whether a lower connection speed than usual is being imposed due to excessive usage. The Congested flag indicates that the network is currently experiencing (or expects to experience) heavy load, and lower-priority transfers should be deferred until another time, if possible. You can use this flag to indicate concepts such as peak hours, or to respond to an overloaded hotspot.
 
-### <span id="BKMK_Contents_Refresh"></span><span id="bkmk_contents_refresh"></span><span id="BKMK_CONTENTS_REFRESH"></span>Refresh
+###Refresh
 
 You can push updated settings to the computer as required because of network changes or for technical support. Windows attempts periodic refreshes by using information that is provided by you or by the provisioning API. A refresh can be triggered by SMS notifications from the operator. To enable Refresh, you must provide the following information in the provisioning XML:
 
@@ -466,7 +466,7 @@ Alternatively, the mobile broadband app can provide a new provisioning file at a
     </RefreshParameters>
 ```
 
-### <span id="BKMK_Contents_Signature"></span><span id="bkmk_contents_signature"></span><span id="BKMK_CONTENTS_SIGNATURE"></span>Signature
+###Signature
 
 Because provisioning modifies system settings that persist after the user has exited or uninstalled the app, a stricter measure of verification is required than for most APIs. This verification is provided by a combination of operator-specific hardware (the SIM), cryptographic signatures, and user confirmation.
 
@@ -519,7 +519,7 @@ Provisioning requirements:
 
  
 
-### <span id="BKMK_Usage_PermittedCombos"></span><span id="bkmk_usage_permittedcombos"></span><span id="BKMK_USAGE_PERMITTEDCOMBOS"></span>Permitted combinations
+###Permitted combinations
 
 Although [**Global**](https://msdn.microsoft.com/library/windows/apps/hh868294) is the only first-level node that is required by the schema, certain combinations of other nodes are typical. This section discusses these typical combinations:
 
