@@ -73,7 +73,7 @@ The mobile broadband app doesn’t have to be published to the Windows Store unt
 ## <span id="Creating_service_metadata_packages"></span><span id="creating_service_metadata_packages"></span><span id="CREATING_SERVICE_METADATA_PACKAGES"></span>Creating service metadata packages
 
 
-Creating a service metadata package starts with the Service Metadata wizard that is available on the Windows Dev Center hardware dashboard. For more info on the Service Metadata wizard, see [Step 2: Create the service metadata package](#bkmk-step2). You can use the Service Metadata wizard to create a new or edit an existing service metadata package. As you go through the wizard and fill out the values, the wizard will validate and notify you of any errors or warnings. This validation includes checking for missing or incorrect fields, service identifier ownership, mobile broadband app existence in the Windows Store, and so on.
+Creating a service metadata package starts with the Service Metadata wizard that is available on the Windows Dev Center hardware dashboard. For more info on the Service Metadata wizard, see [Step 2: Create the service metadata package](#step-2:-create-the-service-metadata-package). You can use the Service Metadata wizard to create a new or edit an existing service metadata package. As you go through the wizard and fill out the values, the wizard will validate and notify you of any errors or warnings. This validation includes checking for missing or incorrect fields, service identifier ownership, mobile broadband app existence in the Windows Store, and so on.
 
 When you are on the final confirmation page and ready to submit, you have the option of submitting your package either in **Developer** mode or **Preview** mode.
 
@@ -87,9 +87,9 @@ The following diagram discusses the workflow:
 
 ![creating a service metadata package](images/mbae-sxs81-createpackageworkflow.png)
 
-To create a new service metadata package, see [Steps for creating a service metadata package](#bkmk-createnewpackage).
+To create a new service metadata package, see [Steps for creating a service metadata package](#steps-for-creating-a-service-metadata-package).
 
-To edit an existing service metadata package, see [Steps for editing a service metadata package](#bkmk-editpackage).
+To edit an existing service metadata package, see [Steps for editing a service metadata package](#steps-for-editing-a-service-metadata-package).
 
 ## <span id="BKMK_CreateNewPackage"></span><span id="bkmk_createnewpackage"></span><span id="BKMK_CREATENEWPACKAGE"></span>Steps for creating a service metadata package
 
