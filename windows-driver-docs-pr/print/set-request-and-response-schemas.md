@@ -2,9 +2,6 @@
 title: Set Request and Response Schemas
 author: windows-driver-content
 description: The Set request schema and corresponding response schema definition, and an example of each, are below.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 88E7F06C-3232-48C3-A0D6-2BEFF4ABA188
 ---
 

@@ -2,12 +2,6 @@
 title: ValidatePrintTicket
 author: windows-driver-content
 description: ValidatePrintTicket
-MS-HAID:
-- 'drvarch\_41203c19-dfde-447d-975d-b0736016bfda.xml'
-- 'print.validateprintticket'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a4cf946-c931-4f71-9f1a-4efec4dfe866
 keywords: ["ValidatePrintTicket"]
 ---

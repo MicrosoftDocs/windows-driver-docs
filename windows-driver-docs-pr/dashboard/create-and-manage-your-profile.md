@@ -1,17 +1,13 @@
 ---
 title: Create and Manage Your Profile
 description: Create and Manage Your Profile
-MS-HAID:
-- 'p\_dashboard.create\_and\_manage\_your\_profile'
-- 'hw\_dashboard.create\_and\_manage\_your\_profile'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1b5ba1f9-bfd8-4e98-a5cb-9861af0dd07b
 ---
 
 # Create and Manage Your Profile
 
+> [!IMPORTANT]
+> This content only applies to administration tasks for the Sysdev dashboard, which is being replaced by the Windows Hardware Dev Center Dashboard. See [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/en-us/windows/hardware/drivers/dashboard/index) for current support and transition timelines.  
 
 The Administration page on the Dashboard displays different information for general registered users and company administrators. For more information about the administrators’ experience, see [Manage users and permissions](https://msdn.microsoft.com/library/windows/hardware/br230781.aspx).
 
@@ -50,8 +46,3 @@ Your administrator must review and grant your request before your permissions ar
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Create%20and%20Manage%20Your%20Profile%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
-

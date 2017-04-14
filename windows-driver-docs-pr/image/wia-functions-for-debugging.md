@@ -2,12 +2,6 @@
 title: WIA Functions for Debugging
 author: windows-driver-content
 description: WIA Functions for Debugging
-MS-HAID:
-- 'WIA\_arch\_73f84e9b-2aa6-4032-a55d-65e416343584.xml'
-- 'image.wia\_functions\_for\_debugging'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 164eeab3-1e4a-46de-99db-28b8f63593a4
 ---
 

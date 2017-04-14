@@ -1,9 +1,6 @@
 ---
 title: Design billing pages in a mobile broadband app
 description: Design billing pages in a mobile broadband app
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 44c5a273-1dd4-4ff5-90aa-9d1f4f855439
 ---
 

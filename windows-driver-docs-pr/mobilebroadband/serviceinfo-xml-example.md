@@ -1,9 +1,6 @@
 ---
 title: ServiceInfo XML Example
 description: ServiceInfo XML Example
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b2114044-ca4b-4c1e-ab2e-73f4f56142b5
 ---
 

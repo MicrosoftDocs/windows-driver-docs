@@ -2,12 +2,6 @@
 title: XML Restrictions on Allowed Characters in Snapshots
 author: windows-driver-content
 description: XML Restrictions on Allowed Characters in Snapshots
-MS-HAID:
-- 'gplfiles\_030496e1-95eb-4e5f-a529-f0ded33f965d.xml'
-- 'print.xml\_restrictions\_on\_allowed\_characters\_in\_snapshots'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e90fb0f2-28f7-4264-bd8c-cd5994717bad
 keywords: ["snapshots WDK GDL , allowed characters", "GDL WDK , source files", "GDL WDK , strings", "source files WDK GDL", "strings WDK GDL , allowed characters"]
 ---

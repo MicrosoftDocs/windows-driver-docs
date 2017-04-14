@@ -2,12 +2,6 @@
 title: Architecture
 author: windows-driver-content
 description: Architecture
-MS-HAID:
-- 'dsm\_des\_arch\_ccebe646-8f0b-4a1c-b9fb-8051d9a9512d.xml'
-- 'image.architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: af6a338a-feb2-47a4-a8ed-eedbc4c11797
 ---
 

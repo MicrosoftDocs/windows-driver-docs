@@ -6,6 +6,7 @@ ms.assetid: FFE7C946-4406-46A5-A9A7-CD0E2756C98E
 
 # Querying the PCI Configuration Space for a Virtual Function
 
+**Note** This method can only be used by overlying drivers that run in the management operating system of the Hyper-V parent partition.
 
 The miniport driver for a PCI Express (PCIe) Virtual Function (VF) runs in the guest operating system of a Hyper-V child partition. Because of this, the VF miniport driver cannot directly access hardware resources, such as the VF's PCIe configuration space. Only the miniport driver for the PCIe Physical Function (PF) can access the PCIe configuration space for a VF. The PF miniport driver runs in the management operating system of a Hyper-V parent partition and has privileged access to the VF resources.
 

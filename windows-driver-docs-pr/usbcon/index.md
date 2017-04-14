@@ -1,16 +1,6 @@
 ---
+Description: Universal Serial Bus (USB) provides an expandable, hot-pluggable Plug and Play serial interface that ensures a standard, low-cost connection for peripheral devices such as keyboards, mice, joysticks, printers, scanners, storage devices, modems, and video conferencing cameras. Migration to USB is recommended for all peripheral devices that use legacy ports such as PS/2, serial, and parallel ports. The USB-IF is a Special Interest Groups (SIGs) that maintains the Official USB Specification, test specifications and tools. Windows operating systems include native support for USB host controllers, hubs, and devices and systems that comply with the official USB specification. Windows also provides programming interfaces that you can use to develop device drivers and applications that communicate with a USB device.
 title: Universal Serial Bus (USB)
-author: windows-driver-content
-description: Universal Serial Bus (USB) provides an expandable, hot-pluggable Plug and Play serial interface that ensures a standard, low-cost connection for peripheral devices such as keyboards, mice, joysticks, printers, scanners, storage devices, modems, and video conferencing cameras. Migration to USB is recommended for all peripheral devices that use legacy ports such as PS/2, serial, and parallel ports. The USB-IF is a Special Interest Groups (SIGs) that maintains the Official USB Specification, test specifications and tools. Windows operating systems include native support for USB host controllers, hubs, and devices and systems that comply with the official USB specification. Windows also provides programming interfaces that you can use to develop device drivers and applications that communicate with a USB device.
-MS-HAID:
-- 'USBhdr\_685e1afc-535e-455d-9719-a5cd1633b942.xml'
-- 'nodepage.usb'
-- 'buses.usb'
-- 'wdknodes.usb'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 45ba2638-b1b9-409d-bd23-78e75a3515be
 ---
 
 # Universal Serial Bus (USB)
@@ -20,9 +10,9 @@ Universal Serial Bus (USB) provides an expandable, hot-pluggable Plug and Play s
 
 The USB-IF is a Special Interest Groups (SIGs) that maintains the [Official USB Specification](http://www.usb.org/developers/docs/), test specifications and tools.
 
-Windows operating systems include native support for USB host controllers, hubs, and devices and systems that comply with the official USB specification. Windows also provides programming interfaces that you can use to develop [device drivers](https://msdn.microsoft.com/library/windows/hardware/hh406260) and [applications](https://msdn.microsoft.com/library/windows/hardware/dn303342) that communicate with a USB device.
+Windows operating systems include native support for USB host controllers, hubs, and devices and systems that comply with the official USB specification. Windows also provides programming interfaces that you can use to develop [device drivers](usb-driver-development-guide.md) and [applications](developing-windows-applications-that-communicate-with-a-usb-device.md) that communicate with a USB device.
 
-[![usb for device builders](images/icon-dev.png)](https://msdn.microsoft.com/library/windows/hardware/dn385698)[![usb for driver developers](images/icon-driver.png)](https://msdn.microsoft.com/library/windows/hardware/hh406260)[![usb for app developers](images/icon-app.png)](https://msdn.microsoft.com/library/windows/hardware/dn303342)[![usb hck certification](images/icon-cert.png)](https://msdn.microsoft.com/library/windows/hardware/dn423380)
+[![usb for device builders](images/icon-dev.png)](building-usb-devices-for-windows.md)[![usb for driver developers](images/icon-driver.png)](usb-driver-development-guide.md)[![usb for app developers](images/icon-app.png)](developing-windows-applications-that-communicate-with-a-usb-device.md)[![usb hck certification](images/icon-cert.png)](windows-hardware-certification-kit-tests-for-usb.md)
 
 <table>
 <colgroup>
@@ -33,23 +23,23 @@ Windows operating systems include native support for USB host controllers, hubs,
 <tr class="odd">
 <td><strong>USB in Windows</strong>
 <p></p>
-[Windows 10: What's new for USB](https://msdn.microsoft.com/library/windows/hardware/dn957037)
+[Windows 10: What's new for USB](windows-10--what-s-new-for-usb.md)
 <p>Overview of new features and improvements in USB in Windows 10.</p>
-[USB FAQ](https://msdn.microsoft.com/library/windows/hardware/dn423379)
+[USB FAQ](usb-faq--introductory-level.md)
 <p>Frequently asked questions from driver developers about the USB stack and features that are supported in USB.</p>
-[Microsoft OS Descriptors for USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff537430)
+[Microsoft OS Descriptors for USB Devices](microsoft-defined-usb-descriptors.md)
 <p>Windows defines MS OS descriptors that allows better enumeration when connected to system running Windows operating system</p>
 <strong>Microsoft-provided USB drivers</strong>
 <p></p>
-[USB device-side drivers in Windows](https://msdn.microsoft.com/library/windows/hardware/mt187890)
+[USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)
 <p>A set of drivers for handling common function logic for USB devices.</p>
-[USB host-side drivers in Windows](https://msdn.microsoft.com/library/windows/hardware/hh406256)
+[USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)
 <p>Microsoft provides a core stack of drivers that interoperate with devices that are connected to EHCI and xHCI controllers.</p>
-[USB-IF device class drivers](https://msdn.microsoft.com/library/windows/hardware/ff538820)
+[USB-IF device class drivers](supported-usb-classes.md)
 <p>Windows provides in-box device class drivers for many USB-IF approved device classes, audio, mass storage, and so on.</p>
-[USB generic function driver–WinUSB](https://msdn.microsoft.com/library/windows/hardware/ff540196)
+[USB generic function driver–WinUSB](winusb.md)
 <p>Windows provides Winusb.sys that can be loaded as a function driver for a custom device and a function of a composite device.</p>
-[USB generic parent driver for composite devices–Usbccgp](https://msdn.microsoft.com/library/windows/hardware/ff539234)
+[USB generic parent driver for composite devices–Usbccgp](usb-common-class-generic-parent-driver.md)
 <p>Parent driver for USB devices with multiple functions. Usbccgp creates physical device objects (PDOs) for each of those functions. Those individual PDOs are managed by their respective USB function drivers, which could be the Winusb.sys driver or a USB device class driver.</p>
 <strong>WDF extension for developing USB drivers</strong>
 <ul>
@@ -59,7 +49,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 </ul>
 <strong>Testing USB devices with Windows</strong>
 <p></p>
-[Testing USB hardware, drivers, and apps in Windows](https://msdn.microsoft.com/library/windows/hardware/jj151576)
+[Testing USB hardware, drivers, and apps in Windows](usb-driver-testing-guide.md)
 <p>Get information about the tools that you can use to test your USB hardware or software, capture traces of operations and other system events, and observe how the USB driver stack responds to a request sent by a client driver or an application.</p>
 <p>Read an overview of tests in the Hardware Certification Kit that enable hardware vendors and device manufacturers to prepare their USB devices and host controllers for Windows Hardware Certification submission.</p>
 <p><strong>Other Resources for USB</strong></p>
@@ -78,44 +68,44 @@ Windows operating systems include native support for USB host controllers, hubs,
 [Building great USB 3.0 devices](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T)
 [USB Debugging Innovations in Windows 8 (Part I, II, &amp; III)](http://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P)
 <p><strong>USB hardware for learning</strong></p>
-[MUTT devices](https://msdn.microsoft.com/library/windows/hardware/dn376873)
+[MUTT devices](microsoft-usb-test-tool--mutt--devices.md)
 <p>MUTT and SuperMUTT devices and the accompanying software package are integrated into the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.</p>
 [OSR USB FX2 Learning Kit](http://www.osronline.com/index.cfm)
 <p>If you are new to USB driver development. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from OSR Online Store.</p></td>
 <td><strong>Write a USB client driver (KMDF, UMDF)</strong>
 <p>Introduces you to USB driver development. Provides information about choosing the most appropriate model for providing a USB driver for your device. This section also includes tutorials about writing your first user-mode and kernel-mode USB drivers by using the USB templates included with Microsoft Visual Studio.</p>
-<p>[Getting started with USB client driver development](https://msdn.microsoft.com/library/windows/hardware/hh706183)</p>
-<p>[USB client driver reference](https://msdn.microsoft.com/library/windows/hardware/ff540134)</p>
+<p>[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)</p>
+<p>[USB device driver programming reference](https://msdn.microsoft.com/library/windows/hardware/ff540134)</p>
 <strong>Write a USB host controller driver</strong>
 <p>If you are developing an xHCI host controller that is not compliant with the specification or developing a custom non-xHCI hardware (such as a virtual host controller), you can write a host controller driver that communicates with UCX. For example, consider a wireless dock that supports USB devices. The PC communicates with USB devices through the wireless dock by using USB over TCP as a transport.</p>
-<p>[Developing Windows drivers for USB host controllers](https://msdn.microsoft.com/library/windows/hardware/mt187811)</p>
-<p>[USB host controller extension (UCX) reference](https://msdn.microsoft.com/library/windows/hardware/mt188009)</p>
+<p>[Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)</p>
+<p>[USB host controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188009)</p>
 <strong>Write a function controller driver for a USB device</strong>
 <p>You can develop a controller driver that handles all USB data transfers and commands sent by the host to the device. This driver communicates with the Microsoft-provided USB function controller extension (UFX).</p>
-<p>[Developing Windows drivers for USB function controllers](https://msdn.microsoft.com/library/windows/hardware/mt187810)</p>
-<p>[USB function class extension (UFX) reference](https://msdn.microsoft.com/library/windows/hardware/mt188013)</p>
+<p>[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)</p>
+<p>[USB function controller programming reference](https://msdn.microsoft.com/library/windows/hardware/mt188013)</p>
 <strong>Write a USB Type-C connector driver</strong>
 <p>Windows 10 introduces support for the new USB connector: USB Type-C. You can write a driver for the connector that communicates with the Microsoft-provided class extension module: UcmCx to handle scenarios related to Type-C connectors such as, which ports support Type-C, which ports support power delivery.</p>
-<p>[Developing Windows drivers for USB Type-C connectors](https://msdn.microsoft.com/library/windows/hardware/mt595926)</p>
+<p>[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)</p>
 <p>[USB connector manager class extension (UcmCx) reference](https://msdn.microsoft.com/library/windows/hardware/mt188011)</p>
 <strong>Write a USB dual-role controller driver</strong>
 <p>USB Dual Role controllers are now supported in Windows 10. Windows includes in-box client drivers for ChipIdea and Synopsys controllers. For other controllers, Microsoft provides a set of programming interfaces that allow the dual-role class extension (UrsCx) and its client driver to communicate with each other to handle the role-switching capability of a dual-role controller.</p>
 <p>For more information about this feature, see:</p>
-<p>[USB Dual Role Driver Stack Architecture](https://msdn.microsoft.com/library/windows/hardware/dn957036)</p>
+<p>[USB Dual Role Driver Stack Architecture](usb-dual-role-driver-stack-architecture.md)</p>
 <p>[USB dual-role controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628026)</p>
 <strong>Write a USB driver for emulated devices</strong>
 <p>Windows 10 introduces support for emulated devices. Now you can develop an emulated Universal Serial Bus (USB) host controller driver and a connected virtual USB device. Both components are combined into a single KMDF driver that communicates with the Microsoft-provided USB device emulation class extension (UdeCx).</p>
-<p>[Developing Windows drivers for emulated USB devices (UDE)](https://msdn.microsoft.com/library/windows/hardware/mt595925)</p>
+<p>[Developing Windows drivers for emulated USB devices (UDE)](developing-windows-drivers-for-emulated-usb-host-controllers-and-devices.md)</p>
 <p>[Emulated USB host controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628025)</p>
 <strong>Write a Windows Store app</strong>
 <p>Provides step-by-step instructions about implementing USB features in a Windows Store app. To write such an app for a USB device you need Visual Studio and Microsoft Windows Software Development Kit (SDK) .</p>
-<p>[Talk to USB devices, start to finish](https://msdn.microsoft.com/library/windows/hardware/dn312121)</p>
-<p>[<strong>Windows.Devices.Usb</strong>](https://msdn.microsoft.com/library/windows/apps/dn278466)</p>
+<p>[Talk to USB devices, start to finish](talking-to-usb-devices-start-to-finish.md)</p>
+<p>[<strong>Windows.Devices.Usb</strong>](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb)</p>
 <strong>Write a Windows desktop app</strong>
 <p>Describes how an application can call WinUSB Functions to communicate with a USB device.</p>
-<p>[Write a WinUSB application](https://msdn.microsoft.com/library/windows/hardware/dn376872)</p>
+<p>[Write a WinUSB application](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md)</p>
 <p>[<strong>WinUSB Functions</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)</p>
-[Common programming scenarios](https://msdn.microsoft.com/library/windows/hardware/hh406288)
+[Common programming scenarios](wdk-resources-for-usb-driver-development.md)
 <p>List of common tasks that a driver or an app performs in order to communicate with a USB device. Get quick info about the programming interfaces you need for each task.</p>
 <p></p>
 <p><strong>USB samples</strong></p>

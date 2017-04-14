@@ -2,12 +2,6 @@
 title: Integration with the Image Processing Filter
 author: windows-driver-content
 description: Integration with the Image Processing Filter
-MS-HAID:
-- 'WIA\_arch\_1bd226a8-c001-45a2-bb08-22c7c259fd59.xml'
-- 'image.integration\_with\_the\_image\_processing\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae5c6209-c95a-424c-9151-caeb8e6b3f8c
 ---
 

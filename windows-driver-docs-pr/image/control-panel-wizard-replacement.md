@@ -2,12 +2,6 @@
 title: Control Panel Wizard Replacement
 author: windows-driver-content
 description: Control Panel Wizard Replacement
-MS-HAID:
-- 'WIA\_drv\_cus\_f75d766b-58ef-4ffb-b1f6-5bb9e6c7d137.xml'
-- 'image.control\_panel\_wizard\_replacement'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d4a418b6-a9f9-41c4-99a9-20992abe80e9
 ---
 

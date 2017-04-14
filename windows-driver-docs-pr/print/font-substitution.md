@@ -2,12 +2,6 @@
 title: Font Substitution
 author: windows-driver-content
 description: Font Substitution
-MS-HAID:
-- 'nt5gpd\_43a650ea-ece9-48bd-96e9-1146f58de8cc.xml'
-- 'print.font\_substitution'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a67f42cd-1c10-46b7-8d24-0cb26339bc92
 keywords: ["printer font descriptions WDK Unidrv , substitutions", "substitution font table WDK Unidrv"]
 ---

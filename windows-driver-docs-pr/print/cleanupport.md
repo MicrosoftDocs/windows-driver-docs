@@ -2,12 +2,6 @@
 title: CleanupPort
 author: windows-driver-content
 description: CleanupPort
-MS-HAID:
-- 'provider\_7a1b6440-a9d2-45a0-a1ac-3a25cac4008d.xml'
-- 'print.cleanupport'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c24a9f09-3fac-4fe7-a4d2-aeb9f818fa54
 keywords: ["WSDMON port monitors WDK , CleanupPort command", "CleanupPort"]
 ---

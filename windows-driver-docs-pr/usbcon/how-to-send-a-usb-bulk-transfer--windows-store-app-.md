@@ -1,11 +1,6 @@
 ---
-Description: 'In this topic, you'll learn about a USB bulk transfer and how to initiate a transfer request from your Windows Store app that communicates with a USB device.'
-MS-HAID: 'buses.how\_to\_send\_a\_usb\_bulk\_transfer\_\_windows\_store\_app\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'How to send a USB bulk transfer request (Windows Store app)'
-author: windows-driver-content
+Description: In this topic, you'll learn about a USB bulk transfer and how to initiate a transfer request from your Windows Store app that communicates with a USB device.
+title: How to send a USB bulk transfer request (Windows Store app)
 ---
 
 # How to send a USB bulk transfer request (Windows Store app)

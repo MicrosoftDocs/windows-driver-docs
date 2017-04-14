@@ -2,12 +2,6 @@
 title: Specifying New Device Fonts in PCL XL Minidrivers
 author: windows-driver-content
 description: Specifying New Device Fonts in PCL XL Minidrivers
-MS-HAID:
-- 'nt5gpd\_a7a0caa8-ba5a-4fba-bf12-dbeab3e008b3.xml'
-- 'print.specifying\_new\_device\_fonts\_in\_pcl\_xl\_minidrivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 395b9200-4514-4b05-b417-15d4896914f4
 keywords: ["PCL XL vector graphics WDK Unidrv , device fonts", "device fonts WDK PCL XL", "fonts WDK PCL XL"]
 ---

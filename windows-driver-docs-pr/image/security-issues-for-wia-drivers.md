@@ -2,12 +2,6 @@
 title: Security Issues for WIA Drivers
 author: windows-driver-content
 description: Security Issues for WIA Drivers
-MS-HAID:
-- 'WIA\_best\_practice\_4063da36-b451-4daa-9a29-86d4356a889c.xml'
-- 'image.security\_issues\_for\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5d8fc015-cbf5-43a3-8f65-3ebb17754417
 ---
 

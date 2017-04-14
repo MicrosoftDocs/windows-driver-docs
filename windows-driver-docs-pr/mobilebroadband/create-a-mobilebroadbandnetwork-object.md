@@ -1,9 +1,6 @@
 ---
 title: Create a MobileBroadbandNetwork object
 description: Create a MobileBroadbandNetwork object
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b69c72dc-56cd-4358-9eae-3859705488ea
 ---
 

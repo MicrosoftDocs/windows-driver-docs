@@ -1,9 +1,6 @@
 ---
 title: Overview of mobile broadband
 description: Overview of mobile broadband
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5193927b-7367-468e-8012-c41f6bd743a3
 ---
 

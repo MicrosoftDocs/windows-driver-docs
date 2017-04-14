@@ -1,9 +1,6 @@
 ---
 title: ServiceCategory
 description: ServiceCategory
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 770cb127-808f-4d77-905e-66064553d3d7
 ---
 

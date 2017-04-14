@@ -1,9 +1,6 @@
 ---
 title: Relationships
 description: Relationships
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78443a49-96c6-45d9-a4f3-8213005f82d5
 ---
 

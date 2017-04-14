@@ -2,9 +2,6 @@
 title: Testing sensor functionality with the Sensor Diagnostic Tool
 author: windows-driver-content
 description: Use the Sensor Diagnostic Tool to test your driver, firmware, and hardware functionality.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 447E1348-53BA-4AD4-9010-A6452F46A827
 keywords: ["testing sensors", "sensors, testing", "Sensor Diagnostic Tool", "sensor driver, testing", "sensor firmware, testing", "sensor hardware, testing", "sensor events", "sensor, report interval", "sensor, change sensitivity", "report interval", "change sensitivity"]
 ---

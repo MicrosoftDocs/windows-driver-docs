@@ -2,12 +2,6 @@
 title: Customized Font Management
 author: windows-driver-content
 description: Customized Font Management
-MS-HAID:
-- 'custdrvr\_ef4b95b8-02c8-479d-8829-de7ee3a61d77.xml'
-- 'print.customized\_font\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6e643703-ace1-4660-990c-3a9ca735829d
 keywords: ["Unidrv, fonts", "font management WDK Unidrv", "customized font management WDK Unidrv", ".ufm files", "UFM files", ".gtt files", "GTT files", ".uff files", "UFF files", "device fonts WDK Unidrv", "cartridge fonts WDK Unidrv", "downloadable PCL soft fonts WDK Unidrv", "PCL soft fonts WDK Unidrv", "Unidrv WDK print"]
 ---

@@ -2,12 +2,6 @@
 title: Supporting Multiple Streams
 author: windows-driver-content
 description: Supporting Multiple Streams
-MS-HAID:
-- 'strmini-design\_339ddf55-a040-48ba-bd59-b69c3feb700a.xml'
-- 'stream.supporting\_multiple\_streams'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89f79078-129a-44cc-8b7e-5f5c1c33a473
 keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , multiple streams", "streaming minidrivers WDK Windows 2000 Kernel , multiple streams", "minidrivers WDK Windows 2000 Kernel Streaming , multiple streams", "multiple streams WDK streaming minidriver", "stream numbers supported WDK streaming minidriver"]
 ---

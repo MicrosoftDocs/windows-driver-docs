@@ -1,13 +1,6 @@
 ---
-Description: 'This topic provides information about registry settings that configure the way Usbccgp.sys selects a USB configuration.'
-MS-HAID:
-- 'usb-config\_32913589-4b87-44c0-971a-a12558e7db98.xml'
-- 'buses.selecting\_the\_configuration\_for\_a\_multiple\_interface\_\_composite\_\_usb\_d'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Configuring Usbccgp.sys to Select a Non-Default USB Configuration'
-author: windows-driver-content
+Description: This topic provides information about registry settings that configure the way Usbccgp.sys selects a USB configuration.
+title: Configuring Usbccgp.sys to Select a Non-Default USB Configuration
 ---
 
 # Configuring Usbccgp.sys to Select a Non-Default USB Configuration

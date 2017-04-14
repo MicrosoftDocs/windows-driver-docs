@@ -2,12 +2,6 @@
 title: KS Filters
 author: windows-driver-content
 description: KS Filters
-MS-HAID:
-- 'ks-overview\_9d81bb1f-bfbc-47e0-ba76-e0ebc791c691.xml'
-- 'stream.ks\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: caf46279-17f3-4bb4-8b8a-a1673f9fa28f
 keywords: ["filters WDK kernel streaming", "KS filters WDK kernel streaming", "mixers WDK kernel streaming", "kernel streaming WDK , filters"]
 ---

@@ -2,12 +2,6 @@
 title: Print Ticket Parsing
 author: windows-driver-content
 description: Print Ticket Parsing
-MS-HAID:
-- 'xpsfiltpipe\_9881cd01-c9f9-4204-812a-9860763210ce.xml'
-- 'print.print\_ticket\_parsing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8328110a-abb4-47aa-ab1d-730e4a2ce7bd
 keywords: ["XPSDrv printer drivers WDK , render modules", "render modules WDK XPSDrv , Print Tickets", "Print Tickets WDK , XPSDrv printer drivers", "parsing Print Ticket objects"]
 ---

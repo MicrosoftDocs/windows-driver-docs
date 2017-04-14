@@ -1,13 +1,7 @@
 ---
-title: Configuration of Plug and Play Serial Device that Requires a 16550 UART-Compatible Interface
+title: Configure Plug and Play Serial Device for 16550 UART-Compatible Interface
 author: windows-driver-content
 description: Configuration of Plug and Play Serial Device that Requires a 16550 UART-Compatible Interface
-MS-HAID:
-- 'sseovr\_e7d594d2-1f2f-411d-b8ca-d5e1140be233.xml'
-- 'serports.configuration\_of\_plug\_and\_play\_serial\_device\_that\_requires\_a\_16550\_uar'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b99259bd-7573-4f71-9ab5-b263eed41288
 keywords: ["Plug and Play serial devices WDK", "serial devices WDK , Plug and Play", "universal asynchronous receiver-transmitters WDK serial devices", "UART WDK serial devices", "16550 UART-compatible interfaces WDK serial devices"]
 ---

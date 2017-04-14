@@ -1,9 +1,6 @@
 ---
 title: PackageInfo XML elements
 description: PackageInfo XML elements
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eb08c164-d901-4806-a9f1-f538f3ff00e3
 ---
 

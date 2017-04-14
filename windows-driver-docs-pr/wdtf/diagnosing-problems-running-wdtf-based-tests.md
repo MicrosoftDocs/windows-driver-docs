@@ -2,9 +2,6 @@
 title: Diagnosing problems running WDTF-based tests
 author: windows-driver-content
 description: To help you troubleshoot problems running WDTF-based test, you can use a debugger.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 24257B50-ED9C-4D45-A245-1EC855463D33
 ---
 

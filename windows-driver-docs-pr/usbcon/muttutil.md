@@ -1,9 +1,5 @@
 ---
-Description: 'MuttUtil performs various tasks on MUTT devices.'
-MS-HAID: 'buses.muttutil'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: MuttUtil performs various tasks on MUTT devices.
 title: MuttUtil
 author: windows-driver-content
 ---

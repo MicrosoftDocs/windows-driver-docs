@@ -1,9 +1,5 @@
 ---
-Description: 'This topic describes how a driver of a USB multi-function device, called a composite driver, can register and unregister the composite device with the underlying USB driver stack.'
-MS-HAID: 'buses.register\_a\_composite\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic describes how a driver of a USB multi-function device, called a composite driver, can register and unregister the composite device with the underlying USB driver stack.
 title: How to Register a Composite Device
 author: windows-driver-content
 ---

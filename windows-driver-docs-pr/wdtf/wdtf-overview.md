@@ -2,12 +2,6 @@
 title: WDTF Architecture and Overview
 author: windows-driver-content
 description: The Microsoft Windows Device Testing Framework (WDTF) enables you to create, manage, reuse, and extend device-centric, scenario-based automated tests.
-MS-HAID:
-- 'WDTF\_MainPage\_b1f12a00-d478-47cf-bfd6-e0a41a764556.xml'
-- 'dtf.windows\_device\_testing\_framework\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e7660ec-1f17-4987-82c0-f62cca3a99b9
 keywords: ["Windows Device Testing Framework WDK", "WDTF WDK", "scripts WDK WDTF", "Windows Device Testing Framework WDK , about WDTF", "WDTF WDK , about Windows Device Testing Framework", "test scripts WDK WDTF"]
 ---

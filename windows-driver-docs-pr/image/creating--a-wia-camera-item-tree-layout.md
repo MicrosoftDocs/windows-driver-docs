@@ -2,12 +2,6 @@
 title: Creating a WIA Camera Item Tree Layout
 author: windows-driver-content
 description: Creating a WIA Camera Item Tree Layout
-MS-HAID:
-- 'WIA\_drv\_cam\_9a4c9c0a-7f88-49b3-b4d6-355e8eb5074c.xml'
-- 'image.creating\_\_a\_wia\_camera\_item\_tree\_layout'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 83b496dc-8c47-46fb-b703-837eb536cb66
 ---
 

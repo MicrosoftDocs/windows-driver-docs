@@ -2,12 +2,6 @@
 title: Setting the Manufacturer-Specific Data
 author: windows-driver-content
 description: Setting the Manufacturer-Specific Data
-MS-HAID:
-- 'di\_100a2e20-fbc2-4fa0-a47d-e90b812d7f86.xml'
-- 'hid.setting\_the\_manufacturer\_specific\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 57787e7a-2a80-476c-8027-b7c154b2f407
 keywords: ["INF files WDK joysticks , manufacturer-specific data"]
 ---

@@ -1,11 +1,5 @@
 ---
-Description: 'This topic explains the structure of a control transfer and how a client driver should send a control request to the device.'
-MS-HAID:
-- 'usb-io\_4fd41873-a720-434a-91ca-016a1a8deb8b.xml'
-- 'buses.usb\_control\_transfer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic explains the structure of a control transfer and how a client driver should send a control request to the device.
 title: How to send a USB control transfer
 author: windows-driver-content
 ---
@@ -248,11 +242,11 @@ Before the client driver can enumerate pipes, make sure that these requirements 
 
     **KMDF client driver:  **
 
-    A KMDF client driver must obtain a WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](kmdf-wdfusbtargetdevicecreatewithparameters) method. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
+    A KMDF client driver must obtain a WDFUSBDEVICE handle by calling the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method. For more information, see "Device source code" in [Understanding the USB client driver code structure (KMDF)](understanding-the-kmdf-template-code-for-usb.md).
 
     **UMDF client driver:  **
 
-    A UMDF client driver must obtain an [**IWDFUsbTargetDevice**](umdf-iwdfusbtargetdevice) pointer by querying the framework target device object. For more information, see "[**IPnpCallbackHardware**](umdf-ipnpcallbackhardware) implementation and USB-specific tasks" in [Understanding the USB client driver code structure (UMDF)](understanding-the-umdf-template-code-for-usb.md).
+    A UMDF client driver must obtain an [**IWDFUsbTargetDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560362) pointer by querying the framework target device object. For more information, see "[**IPnpCallbackHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556764) implementation and USB-specific tasks" in [Understanding the USB client driver code structure (UMDF)](understanding-the-umdf-template-code-for-usb.md).
 
 -   The most important aspect for a control transfer is to format the setup token appropriately. Before sending the request, gather this set of information:
 
@@ -321,12 +315,12 @@ Use this table to determine the best way to send control requests to the USB dri
 <tr class="odd">
 <td>CLEAR_FEATURE: Disable certain feature settings in device, its configurations, interfaces and endpoints. See section 9.4.1 in the USB specification.</td>
 <td><ol>
-<li>Declare a setup packet. See the [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](kmdf-wdf_usb_control_setup_packet) structure.</li>
-<li>Initialize the setup packet by calling [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE</strong>](kmdf-wdf_usb_control_setup_packet_init_feature).</li>
-<li>Specify a recipient value defined in [<strong>WDF_USB_BMREQUEST_RECIPIENT</strong>](kmdf-wdf_usb_bmrequest_recipient).</li>
+<li>Declare a setup packet. See the [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552568) structure.</li>
+<li>Initialize the setup packet by calling [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552576).</li>
+<li>Specify a recipient value defined in [<strong>WDF_USB_BMREQUEST_RECIPIENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552554).</li>
 <li>Specify the feature selector (<strong>wValue</strong>). See USB_FEATURE_XXX constants in Usbspec.h. Also see Table 9-6 in the USB specification.</li>
 <li>Set <em>SetFeature</em> to <strong>FALSE</strong>.</li>
-<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](kmdf-wdfusbtargetdevicesendcontroltransfersynchronously) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](kmdf-wdfusbtargetdeviceformatrequestforcontroltransfer).</li>
+<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550104) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550082).</li>
 </ol></td>
 <td><ol>
 <li>Declare a setup packet. See the <strong>WINUSB_CONTROL_SETUP_PACKET</strong> structure declared in usb_hw.h.</li>
@@ -334,8 +328,8 @@ Use this table to determine the best way to send control requests to the USB dri
 <li>Specify a recipient value defined in <strong>WINUSB_BMREQUEST_RECIPIENT</strong>.</li>
 <li>Specify the feature selector (<strong>wValue</strong>). See <strong>USB_FEATURE_XXX</strong> constants in Usbspec.h. Also see Table 9-6 in the USB specification.</li>
 <li>Set <em>SetFeature</em> to <strong>FALSE</strong>.</li>
-<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](umdf-iwdfusbtargetdevice_formatrequestforcontroltransfer) method.</li>
-<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](umdf-iwdfiorequest_send) method.</li>
+<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560363) method.</li>
+<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559149) method.</li>
 </ol></td>
 <td><p>[<strong>_URB_CONTROL_FEATURE_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540361)</p>
 <p>([<strong>UsbBuildFeatureRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538932))</p>
@@ -348,17 +342,17 @@ Use this table to determine the best way to send control requests to the USB dri
 <td>GET_CONFIGURATION: Get the current USB configuration. See section 9.4.2 in the USB specification.</td>
 <td><p>KMDF selects the first configuration by default. To retrieve the device-defined configuration number:</p>
 <ol>
-<li>Format a [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](kmdf-wdf_usb_control_setup_packet) and set its <strong>bRequest</strong> member to <strong>USB_REQUEST_GET_CONFIGURATION</strong>.</li>
-<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](kmdf-wdfusbtargetdevicesendcontroltransfersynchronously) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](kmdf-wdfusbtargetdeviceformatrequestforcontroltransfer).</li>
+<li>Format a [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552568) and set its <strong>bRequest</strong> member to <strong>USB_REQUEST_GET_CONFIGURATION</strong>.</li>
+<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550104) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550082).</li>
 </ol></td>
 <td><p>UMDF selects the first configuration by default. To retrieve the device-defined configuration number:</p>
 <ol>
 <li>Declare a setup packet. See the <strong>WINUSB_CONTROL_SETUP_PACKET</strong> structure declared in usb_hw.h.</li>
 <li>Initialize the setup packet by calling the helper macro, <strong>WINUSB_CONTROL_SETUP_PACKET_INIT</strong>, defined in usb_hw.h.</li>
 <li>Specify <strong>BmRequestToDevice</strong> as the direction, <strong>BmRequestToDevice</strong> as the recipient, and <strong>USB_REQUEST_GET_CONFIGURATION</strong> as the request.</li>
-<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](umdf-iwdfusbtargetdevice_formatrequestforcontroltransfer) method.</li>
-<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](umdf-iwdfiorequest_send) method.</li>
-<li>Receive the configuration number in the transfer buffer. Access that buffer by calling [<strong>IWDFMemory</strong>](umdf-iwdfmemory) methods.</li>
+<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560363) method.</li>
+<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559149) method.</li>
+<li>Receive the configuration number in the transfer buffer. Access that buffer by calling [<strong>IWDFMemory</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559249) methods.</li>
 </ol></td>
 <td><p>[<strong>_URB_CONTROL_GET_CONFIGURATION_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540365)</p>
 <p>URB_FUNCTION_GET_CONFIGURATION</p></td>
@@ -368,15 +362,15 @@ Use this table to determine the best way to send control requests to the USB dri
 <p>For more information, see [USB Descriptors](usb-descriptors.md).</p></td>
 <td><p>Call these methods:</p>
 <ul>
-<li>[<strong>WdfUsbTargetDeviceGetDeviceDescriptor</strong>](kmdf-wdfusbtargetdevicegetdevicedescriptor)</li>
-<li>[<strong>WdfUsbInterfaceGetDescriptor</strong>](kmdf-wdfusbinterfacegetdescriptor)</li>
-<li>[<strong>WdfUsbInterfaceGetEndpointInformation</strong>](kmdf-wdfusbinterfacegetendpointinformation) or [<strong>WdfUsbTargetPipeGetInformation</strong>](kmdf-wdfusbtargetpipegetinformation). This method returns endpoint descriptor fields in a [<strong>WDF_USB_PIPE_INFORMATION</strong>](kmdf-wdf_usb_pipe_information) structure.</li>
+<li>[<strong>WdfUsbTargetDeviceGetDeviceDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550090)</li>
+<li>[<strong>WdfUsbInterfaceGetDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550060)</li>
+<li>[<strong>WdfUsbInterfaceGetEndpointInformation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550063) or [<strong>WdfUsbTargetPipeGetInformation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551142). This method returns endpoint descriptor fields in a [<strong>WDF_USB_PIPE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff553037) structure.</li>
 </ul></td>
 <td><p>Call these methods:</p>
 <ul>
-<li>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](umdf-iwdfusbtargetdevice_retrievedescriptor)</li>
-<li>[<strong>IWDFUsbInterface::GetInterfaceDescriptor</strong>](umdf-iwdfusbinterface_getinterfacedescriptor)</li>
-<li>[<strong>IWDFUsbTargetPipe::GetInformation</strong>](umdf-iwdfusbtargetpipe_getinformation). This method returns endpoint descriptor fields in a [<strong>WINUSB_PIPE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540285) structure.</li>
+<li>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560374)</li>
+<li>[<strong>IWDFUsbInterface::GetInterfaceDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560320)</li>
+<li>[<strong>IWDFUsbTargetPipe::GetInformation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560403). This method returns endpoint descriptor fields in a [<strong>WINUSB_PIPE_INFORMATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540285) structure.</li>
 </ul></td>
 <td><p>[<strong>_URB_CONTROL_DESCRIPTOR_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540357)</p>
 <p>([<strong>UsbBuildGetDescriptorRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538943))</p>
@@ -388,12 +382,12 @@ Use this table to determine the best way to send control requests to the USB dri
 <td>GET_INTERFACE: Get the current alternate setting for an interface. See section 9.4.4 in the USB specification.</td>
 <td><p></p>
 <ol>
-<li>Get a WDFUSBINTERFACE handle to the target interface object by calling the [<strong>WdfUsbTargetDeviceGetInterface</strong>](kmdf-wdfusbtargetdevicegetinterface) method.</li>
-<li>Call the [<strong>WdfUsbInterfaceGetConfiguredSettingIndex</strong>](kmdf-wdfusbinterfacegetconfiguredsettingindex) method.</li>
+<li>Get a WDFUSBINTERFACE handle to the target interface object by calling the [<strong>WdfUsbTargetDeviceGetInterface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550092) method.</li>
+<li>Call the [<strong>WdfUsbInterfaceGetConfiguredSettingIndex</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550059) method.</li>
 </ol></td>
 <td><ol>
-<li>Get a [<strong>IWDFUsbInterface</strong>](umdf-iwdfusbinterface) pointer to the target interface object.</li>
-<li>Call the [<strong>IWDFUsbInterface::GetConfiguredSettingIndex</strong>](kmdf-wdfusbinterfacegetconfiguredsettingindex) method.</li>
+<li>Get a [<strong>IWDFUsbInterface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560312) pointer to the target interface object.</li>
+<li>Call the [<strong>IWDFUsbInterface::GetConfiguredSettingIndex</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560317) method.</li>
 </ol></td>
 <td><p>[<strong>_URB_CONTROL_GET_INTERFACE_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540373)</p>
 <p>URB_FUNCTION_GET_INTERFACE</p></td>
@@ -401,20 +395,20 @@ Use this table to determine the best way to send control requests to the USB dri
 <tr class="odd">
 <td>GET_STATUS: Get status bits from a device, endpoint, or interface. See section 9.4.5. in the USB specification.</td>
 <td><ol>
-<li>Declare a setup packet. See the [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](kmdf-wdf_usb_control_setup_packet) structure.</li>
-<li>Initialize the setup packet by calling [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS</strong>](kmdf-wdf_usb_control_setup_packet_init_get_status).</li>
-<li>Specify the recipient value defined in [<strong>WDF_USB_BMREQUEST_RECIPIENT</strong>](kmdf-wdf_usb_bmrequest_recipient).</li>
+<li>Declare a setup packet. See the [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552568) structure.</li>
+<li>Initialize the setup packet by calling [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552582).</li>
+<li>Specify the recipient value defined in [<strong>WDF_USB_BMREQUEST_RECIPIENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552554).</li>
 <li>Specify which status you want to get: device, interface, or endpoint (<strong>wIndex</strong>).</li>
-<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](kmdf-wdfusbtargetdevicesendcontroltransfersynchronously) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](kmdf-wdfusbtargetdeviceformatrequestforcontroltransfer).</li>
+<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550104) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550082).</li>
 </ol></td>
 <td><ol>
 <li>Declare a setup packet. See the <strong>WINUSB_CONTROL_SETUP_PACKET</strong> structure declared in usb_hw.h.</li>
 <li>Initialize the setup packet by calling the helper macro, <strong>WINUSB_CONTROL_SETUP_PACKET_INIT_GET_STATUS</strong>, defined in usb_hw.h.</li>
 <li>Specify a recipient value defined in <strong>WINUSB_BMREQUEST_RECIPIENT</strong>.</li>
 <li>Specify which status you want to get: device, interface, or endpoint (<strong>wIndex</strong>).</li>
-<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](umdf-iwdfusbtargetdevice_formatrequestforcontroltransfer) method.</li>
-<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](umdf-iwdfiorequest_send) method.</li>
-<li>Receive the status value in the transfer buffer. Access that buffer by calling [<strong>IWDFMemory</strong>](umdf-iwdfmemory) methods.</li>
+<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560363) method.</li>
+<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559149) method.</li>
+<li>Receive the status value in the transfer buffer. Access that buffer by calling [<strong>IWDFMemory</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559249) methods.</li>
 <li>To determine if the status indicates self-powered, remote wake-up, use thee values defined in the <strong>WINUSB_DEVICE_TRAITS</strong> enumeration:</li>
 </ol></td>
 <td><p>[<strong>_URB_CONTROL_GET_STATUS_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540378)</p>
@@ -433,7 +427,7 @@ Use this table to determine the best way to send control requests to the USB dri
 <tr class="odd">
 <td>SET_CONFIGURATION: Set a configuration. See section 9.4.7 in USB specification.
 <p>For more information, see [How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md).</p></td>
-<td>By default KMDF selects the default configuration and first alternate setting in each interface. The client driver can change the default configuration by calling [<strong>WdfUsbTargetDeviceSelectConfigType</strong>](kmdf-wdfusbtargetdeviceselectconfigtype) method and specifying <strong>WdfUsbTargetDeviceSelectConfigTypeUrb</strong> as the request option. You must then format an URB for this request and submit it to the USB driver stack.</td>
+<td>By default KMDF selects the default configuration and first alternate setting in each interface. The client driver can change the default configuration by calling [<strong>WdfUsbTargetDeviceSelectConfigType</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550102) method and specifying <strong>WdfUsbTargetDeviceSelectConfigTypeUrb</strong> as the request option. You must then format an URB for this request and submit it to the USB driver stack.</td>
 <td>By default UMDF selects the default configuration and first alternate setting in each interface. The client driver cannot change the configuration.</td>
 <td><p>[<strong>_URB_SELECT_CONFIGURATION</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540422)</p>
 <p>([<strong>USBD_SelectConfigUrbAllocateAndBuild</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406243))</p>
@@ -445,13 +439,13 @@ Use this table to determine the best way to send control requests to the USB dri
 <td><ol>
 <li>Allocate and build an [<strong>URB</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538923) for the request.</li>
 <li>Specify the transfer information in a [<strong>_URB_CONTROL_DESCRIPTOR_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540357) structure.</li>
-<li>Send the request by calling [<strong>WdfUsbTargetDeviceFormatRequestForUrb</strong>](kmdf-wdfusbtargetdeviceformatrequestforurb) or [<strong>WdfUsbTargetDeviceSendUrbSynchronously</strong>](kmdf-wdfusbtargetdevicesendurbsynchronously) .</li>
+<li>Send the request by calling [<strong>WdfUsbTargetDeviceFormatRequestForUrb</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550088) or [<strong>WdfUsbTargetDeviceSendUrbSynchronously</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550105) .</li>
 </ol></td>
 <td><ol>
 <li>Declare a setup packet. See the <strong>WINUSB_CONTROL_SETUP_PACKET</strong> structure declared in usb_hw.h.</li>
 <li>Specify the transfer information as per the USB specification.</li>
-<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](umdf-iwdfusbtargetdevice_formatrequestforcontroltransfer) method.</li>
-<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](umdf-iwdfiorequest_send) method.</li>
+<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560363) method.</li>
+<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559149) method.</li>
 </ol></td>
 <td><p>[<strong>_URB_CONTROL_DESCRIPTOR_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540357)</p>
 <p>URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE</p>
@@ -461,12 +455,12 @@ Use this table to determine the best way to send control requests to the USB dri
 <tr class="odd">
 <td>SET_FEATURE: Enable certain feature settings in device, its configurations, interfaces and endpoints. See section 9.4.9 in the USB specification.</td>
 <td><ol>
-<li>Declare a setup packet. See the [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](kmdf-wdf_usb_control_setup_packet) structure.</li>
-<li>Initialize the setup packet by calling [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE</strong>](kmdf-wdf_usb_control_setup_packet_init_feature).</li>
-<li>Specify the recipient value (device, interface, endpoint) defined in [<strong>WDF_USB_BMREQUEST_RECIPIENT</strong>](kmdf-wdf_usb_bmrequest_recipient).</li>
+<li>Declare a setup packet. See the [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552568) structure.</li>
+<li>Initialize the setup packet by calling [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552576).</li>
+<li>Specify the recipient value (device, interface, endpoint) defined in [<strong>WDF_USB_BMREQUEST_RECIPIENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552554).</li>
 <li>Specify the feature selector (<strong>wValue</strong>). See USB_FEATURE_XXX constants in Usbspec.h. Also see Table 9-6 in the USB specification.</li>
 <li>Set <em>SetFeature</em> to <strong>TRUE</strong></li>
-<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](kmdf-wdfusbtargetdevicesendcontroltransfersynchronously) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](kmdf-wdfusbtargetdeviceformatrequestforcontroltransfer).</li>
+<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550104) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550082).</li>
 </ol></td>
 <td><ol>
 <li>Declare a setup packet. See the <strong>WINUSB_CONTROL_SETUP_PACKET</strong> structure declared in usb_hw.h.</li>
@@ -474,8 +468,8 @@ Use this table to determine the best way to send control requests to the USB dri
 <li>Specify a recipient value defined in <strong>WINUSB_BMREQUEST_RECIPIENT</strong>.</li>
 <li>Specify the feature selector (<strong>wValue</strong>). See <strong>USB_FEATURE_XXX</strong> constants in Usbspec.h. Also see Table 9-6 in the USB specification.</li>
 <li>Set <em>SetFeature</em> to <strong>TRUE</strong>.</li>
-<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](umdf-iwdfusbtargetdevice_formatrequestforcontroltransfer) method.</li>
-<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](umdf-iwdfiorequest_send) method.</li>
+<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560363) method.</li>
+<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559149) method.</li>
 </ol></td>
 <td><p>[<strong>_URB_CONTROL_FEATURE_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540361)</p>
 <p>([<strong>UsbBuildFeatureRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538932))</p>
@@ -487,15 +481,15 @@ Use this table to determine the best way to send control requests to the USB dri
 <tr class="even">
 <td>SET_INTERFACE: Changes the alternate setting in an interface. See section 9.4.9 in the USB specification.
 <p>For more information, see [How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md).</p></td>
-<td>[<strong>WdfUsbTargetDeviceSelectConfig</strong>](kmdf-wdfusbtargetdeviceselectconfig)
+<td>[<strong>WdfUsbTargetDeviceSelectConfig</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550101)
 <p></p>
 <ol>
 <li>Get a WDFUSBINTERFACE handle to the target interface object.</li>
-<li>Call the [<strong>WdfUsbInterfaceSelectSetting</strong>](kmdf-wdfusbinterfaceselectsetting) method.</li>
+<li>Call the [<strong>WdfUsbInterfaceSelectSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550073) method.</li>
 </ol></td>
 <td><ol>
-<li>Get a [<strong>IWDFUsbInterface</strong>](umdf-iwdfusbinterface) pointer to the target interface object.</li>
-<li>Call the [<strong>IWDFUsbInterface::SelectSetting</strong>](kmdf-wdfusbinterfaceselectsetting) method.</li>
+<li>Get a [<strong>IWDFUsbInterface</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560312) pointer to the target interface object.</li>
+<li>Call the [<strong>IWDFUsbInterface::SelectSetting</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560343) method.</li>
 </ol></td>
 <td><p>[<strong>_URB_SELECT_INTERFACE</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540425)</p>
 <p>([<strong>USBD_SelectInterfaceUrbAllocateAndBuild</strong>](https://msdn.microsoft.com/library/windows/hardware/hh406245))</p>
@@ -510,18 +504,18 @@ Use this table to determine the best way to send control requests to the USB dri
 <tr class="even">
 <td>For device class-specific requests and vendor commands.</td>
 <td><ol>
-<li>Declare a setup packet. See the [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](kmdf-wdf_usb_control_setup_packet) structure.</li>
-<li>Initialize the setup packet by calling [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS</strong>](kmdf-wdf_usb_control_setup_packet_init_class)-specific requests or [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR</strong>](kmdf-wdf_usb_control_setup_packet_init_vendor) for vendor commands.</li>
-<li>Specify the recipient value (device, interface, endpoint) defined in [<strong>WDF_USB_BMREQUEST_RECIPIENT</strong>](kmdf-wdf_usb_bmrequest_recipient).</li>
-<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](kmdf-wdfusbtargetdevicesendcontroltransfersynchronously) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](kmdf-wdfusbtargetdeviceformatrequestforcontroltransfer).</li>
+<li>Declare a setup packet. See the [<strong>WDF_USB_CONTROL_SETUP_PACKET</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552568) structure.</li>
+<li>Initialize the setup packet by calling [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552574)-specific requests or [<strong>WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552588) for vendor commands.</li>
+<li>Specify the recipient value (device, interface, endpoint) defined in [<strong>WDF_USB_BMREQUEST_RECIPIENT</strong>](https://msdn.microsoft.com/library/windows/hardware/ff552554).</li>
+<li>Send the request by calling [<strong>WdfUsbTargetDeviceSendControlTransferSynchronously</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550104) or [<strong>WdfUsbTargetDeviceFormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550082).</li>
 </ol></td>
 <td><ol>
 <li>Declare a setup packet. See the <strong>WINUSB_CONTROL_SETUP_PACKET</strong> structure declared in usb_hw.h.</li>
 <li>Initialize the setup packet by calling the helper macro, <strong>WINUSB_CONTROL_SETUP_PACKET_INIT_CLASS</strong> or <strong>WINUSB_CONTROL_SETUP_PACKET_INIT_VENDOR</strong>, defined in usb_hw.h.</li>
 <li>Specify the direction (see the <strong>WINUSB_BMREQUEST_DIRECTION</strong> enumeration), the recipient ( see the <strong>WINUSB_BMREQUEST_RECIPIENT</strong> enumeration), and the request, as described in the class or the hardware specification.</li>
-<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](umdf-iwdfusbtargetdevice_formatrequestforcontroltransfer) method.</li>
-<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](umdf-iwdfiorequest_send) method.</li>
-<li>Receive the information from the device in the transfer buffer. Access that buffer by calling [<strong>IWDFMemory</strong>](umdf-iwdfmemory) methods.</li>
+<li>Build the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [<strong>IWDFUsbTargetDevice::FormatRequestForControlTransfer</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560363) method.</li>
+<li>Send the request by calling the [<strong>IWDFIoRequest::Send</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559149) method.</li>
+<li>Receive the information from the device in the transfer buffer. Access that buffer by calling [<strong>IWDFMemory</strong>](https://msdn.microsoft.com/library/windows/hardware/ff559249) methods.</li>
 </ol></td>
 <td><p>[<strong>_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</strong>](https://msdn.microsoft.com/library/windows/hardware/ff540393)</p>
 <p>([<strong>UsbBuildVendorRequest</strong>](https://msdn.microsoft.com/library/windows/hardware/ff538986))</p>
@@ -545,18 +539,18 @@ Use this table to determine the best way to send control requests to the USB dri
 This procedure shows how a client driver can send a control transfer. In this example, the client driver sends a vendor command that retrieves the firmware version from the device.
 
 1.  Declare a constant for the vendor command. Study the hardware specification and determine the vendor command that you want to use.
-2.  Declare a [**WDF\_MEMORY\_DESCRIPTOR**](kmdf-wdf_memory_descriptor) structure and initialize it by calling the [**WDF\_MEMORY\_DESCRIPTOR\_INIT\_BUFFER**](kmdf-wdf_memory_descriptor_init_buffer) macro. This structure will receive the response from the device after the USB driver completes the request.
+2.  Declare a [**WDF\_MEMORY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff552392) structure and initialize it by calling the [**WDF\_MEMORY\_DESCRIPTOR\_INIT\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552392_init_buffer) macro. This structure will receive the response from the device after the USB driver completes the request.
 3.  Depending on whether you send the request synchronously or asynchronously, specify your send options:
-    -   If you send the request synchronously by calling [**WdfUsbTargetDeviceSendControlTransferSynchronously**](kmdf-wdfusbtargetdevicesendcontroltransfersynchronously), specify a timeout value. That value is important because without a timeout, you can block the thread indefinitely.
+    -   If you send the request synchronously by calling [**WdfUsbTargetDeviceSendControlTransferSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550104), specify a timeout value. That value is important because without a timeout, you can block the thread indefinitely.
 
-        For this, declare a [**WDF\_REQUEST\_SEND\_OPTIONS**](kmdf-wdf_request_send_options) structure and initialize it by calling the [**WDF\_REQUEST\_SEND\_OPTIONS\_INIT**](kmdf-wdf_request_send_options_init) macro. Specify the option as **WDF\_REQUEST\_SEND\_OPTION\_TIMEOUT**.
+        For this, declare a [**WDF\_REQUEST\_SEND\_OPTIONS**](https://msdn.microsoft.com/library/windows/hardware/ff552491) structure and initialize it by calling the [**WDF\_REQUEST\_SEND\_OPTIONS\_INIT**](https://msdn.microsoft.com/library/windows/hardware/ff552491_init) macro. Specify the option as **WDF\_REQUEST\_SEND\_OPTION\_TIMEOUT**.
 
-        Next, set the timeout value by calling the [**WDF\_REQUEST\_SEND\_OPTIONS\_SET\_TIMEOUT**](kmdf-wdf_request_send_options_set_timeout) macro.
+        Next, set the timeout value by calling the [**WDF\_REQUEST\_SEND\_OPTIONS\_SET\_TIMEOUT**](https://msdn.microsoft.com/library/windows/hardware/ff552498) macro.
 
     -   If you are sending the request asynchronously, implement a completion routine. Free all allocated resources in the completion routine.
 
-4.  Declare a [**WDF\_USB\_CONTROL\_SETUP\_PACKET**](kmdf-wdf_usb_control_setup_packet) structure to contain the setup token and format the structure. To do so, call the [**WDF\_USB\_CONTROL\_SETUP\_PACKET\_INIT\_VENDOR**](kmdf-wdf_usb_control_setup_packet_init_vendor) macro to format the setup packet. In the call specify, the direction of the request, the recipient, the sent-request options (initialized in step3), and the constant for the vendor command.
-5.  Send the request by calling [**WdfUsbTargetDeviceSendControlTransferSynchronously**](kmdf-wdfusbtargetdevicesendcontroltransfersynchronously) or [**WdfUsbTargetDeviceFormatRequestForControlTransfer**](kmdf-wdfusbtargetdeviceformatrequestforcontroltransfer).
+4.  Declare a [**WDF\_USB\_CONTROL\_SETUP\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff552568) structure to contain the setup token and format the structure. To do so, call the [**WDF\_USB\_CONTROL\_SETUP\_PACKET\_INIT\_VENDOR**](https://msdn.microsoft.com/library/windows/hardware/ff552568_init_vendor) macro to format the setup packet. In the call specify, the direction of the request, the recipient, the sent-request options (initialized in step3), and the constant for the vendor command.
+5.  Send the request by calling [**WdfUsbTargetDeviceSendControlTransferSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff550104) or [**WdfUsbTargetDeviceFormatRequestForControlTransfer**](https://msdn.microsoft.com/library/windows/hardware/ff550082).
 6.  Check the NTSTATUS value returned by the framework and inspect the received value.
 
 This code example sends a control transfer request to a USB device to retrieve its firmware version. The request is sent synchronously and the client driver specifies a relative timeout value of 5 seconds (in 100-nanosecond units). The driver stores the received response in the driver-defined device context.
@@ -668,7 +662,7 @@ This procedure shows how a client driver can send a control transfer for a GET\_
 5.  Specify 0 in the *Index* value.
 6.  Call the helper method SendControlTransferSynchronously to send the request synchronously.
 
-    The helper method builds the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [**IWDFUsbTargetDevice::FormatRequestForControlTransfer**](umdf-iwdfusbtargetdevice_formatrequestforcontroltransfer) method. The helper method then sends the request by calling the [**IWDFIoRequest::Send**](umdf-iwdfiorequest_send) method. After the method returns, inspect the value returned.
+    The helper method builds the request by associating the initialized setup packet with the framework request object and the transfer buffer by calling [**IWDFUsbTargetDevice::FormatRequestForControlTransfer**](https://msdn.microsoft.com/library/windows/hardware/ff560363) method. The helper method then sends the request by calling the [**IWDFIoRequest::Send**](https://msdn.microsoft.com/library/windows/hardware/ff559149) method. After the method returns, inspect the value returned.
 
 7.  To determine if the status indicates self-powered, remote wake-up, use these values defined in the **WINUSB\_DEVICE\_TRAITS** enumeration:
 

@@ -2,12 +2,6 @@
 title: Camera Driver UI Extension Sample
 author: windows-driver-content
 description: Camera Driver UI Extension Sample
-MS-HAID:
-- 'WIA\_GS\_afaf16bc-3d54-4435-ae9f-294216ed3933.xml'
-- 'image.camera\_driver\_ui\_extension\_sample'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 21ddf804-fff5-4cdc-adb5-f85d769ccc1f
 ---
 

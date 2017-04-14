@@ -2,12 +2,6 @@
 title: Printer Driver Isolation
 author: windows-driver-content
 description: Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
-MS-HAID:
-- 'autocfg\_577e1d1b-3abe-40b0-b9c6-d8925e09b025.xml'
-- 'print.printer\_driver\_isolation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b0f11b3f-92f7-41f6-8edb-63b5651f5499
 ---
 

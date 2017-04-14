@@ -1,11 +1,6 @@
 ---
-Description: 'A USB device can support interrupt endpoints so that it can send or receive data at regular intervals.'
-MS-HAID: 'buses.how\_to\_send\_a\_usb\_interrupt\_transfer\_\_windows\_store\_app\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'How to send a USB interrupt transfer request (Windows Store app)'
-author: windows-driver-content
+Description: A USB device can support interrupt endpoints so that it can send or receive data at regular intervals.
+title: How to send a USB interrupt transfer request (Windows Store app)
 ---
 
 # How to send a USB interrupt transfer request (Windows Store app)

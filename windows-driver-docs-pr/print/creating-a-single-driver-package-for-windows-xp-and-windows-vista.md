@@ -2,12 +2,6 @@
 title: Creating a Single Driver Package for Windows XP and Windows Vista
 author: windows-driver-content
 description: Creating a Single Driver Package for Windows XP and Windows Vista
-MS-HAID:
-- 'prtinst\_e17e74d9-ec19-454e-82ba-59b94238101c.xml'
-- 'print.creating\_a\_single\_driver\_package\_for\_windows\_xp\_and\_windows\_vista'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5e350152-edd7-4afb-bcba-dd0217d0d17a
 ---
 

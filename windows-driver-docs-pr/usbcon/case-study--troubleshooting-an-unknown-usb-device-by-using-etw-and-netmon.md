@@ -1,11 +1,6 @@
 ---
-Description: 'This topic provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.'
-MS-HAID: 'buses.case\_study\_\_troubleshooting\_an\_unknown\_usb\_device\_by\_using\_etw\_and\_netmon'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Case Study: Troubleshooting an unknown USB device by using ETW and Netmon'
-author: windows-driver-content
+Description: This topic provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
+title: Case Study: Troubleshooting an unknown USB device by using ETW and Netmon
 ---
 
 # Case Study: Troubleshooting an unknown USB device by using ETW and Netmon

@@ -2,12 +2,6 @@
 title: Differences from Previous Versions of Microsoft Windows
 author: windows-driver-content
 description: Differences from Previous Versions of Microsoft Windows
-MS-HAID:
-- 'whea\_60cc66de-ef2a-49fb-97ca-800cecb35512.xml'
-- 'whea.differences\_from\_previous\_versions\_of\_microsoft\_windows'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c30c5c6-27a7-424e-b5f0-ab625eed4b8a
 keywords: ["Windows Hardware Error Architecture WDK , earlier Windows versions", "WHEA WDK , comparison with earlier Windows versions", "hardware errors WDK WHEA , earlier Windows versions", "errors WDK WHEA , earlier Windows versions"]
 ---

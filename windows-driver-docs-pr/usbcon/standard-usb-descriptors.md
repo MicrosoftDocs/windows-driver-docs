@@ -1,9 +1,5 @@
 ---
-Description: 'A USB device provides information about itself in data structures called USB descriptors. This section provides information about device, configuration, interface, and endpoint descriptors and ways to retrieve them from a USB device.'
-MS-HAID: 'buses.standard\_usb\_descriptors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about device, configuration, interface, and endpoint descriptors and ways to retrieve them from a USB device.
 title: Standard USB descriptors
 author: windows-driver-content
 ---
@@ -62,11 +58,11 @@ The host obtains the device descriptor through a control transfer. Microsoft pro
 </tr>
 <tr class="odd">
 <td>UMDF-based client driver</td>
-<td>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](umdf-iwdfusbtargetdevice_retrievedescriptor)</td>
+<td>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560374)</td>
 </tr>
 <tr class="even">
 <td>KMDF-based client driver</td>
-<td>[<strong>WdfUsbTargetDeviceGetDeviceDescriptor</strong>](kmdf-wdfusbtargetdevicegetdevicedescriptor)</td>
+<td>[<strong>WdfUsbTargetDeviceGetDeviceDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550090)</td>
 </tr>
 <tr class="odd">
 <td>WDM-based client driver</td>
@@ -122,11 +118,11 @@ The **bConfigurationValue** field indicates the number for the configuration def
 </tr>
 <tr class="odd">
 <td>UMDF-based client driver</td>
-<td>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](umdf-iwdfusbtargetdevice_retrievedescriptor)</td>
+<td>[<strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560374)</td>
 </tr>
 <tr class="even">
 <td>KMDF-based client driver</td>
-<td>[<strong>WdfUsbTargetDeviceRetrieveConfigDescriptor</strong>](kmdf-wdfusbtargetdeviceretrieveconfigdescriptor)</td>
+<td>[<strong>WdfUsbTargetDeviceRetrieveConfigDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550098)</td>
 </tr>
 <tr class="odd">
 <td>WDM-based client driver</td>
@@ -183,11 +179,11 @@ In the preceding example, note **bInterfaceNumber** and **bAlternateSetting** fi
 </tr>
 <tr class="odd">
 <td>UMDF-based client driver</td>
-<td>[<strong>IWDFUsbInterface::GetInterfaceDescriptor</strong>](umdf-iwdfusbinterface_getinterfacedescriptor)</td>
+<td>[<strong>IWDFUsbInterface::GetInterfaceDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560320)</td>
 </tr>
 <tr class="even">
 <td>KMDF-based client driver</td>
-<td>[<strong>WdfUsbInterfaceGetDescriptor</strong>](kmdf-wdfusbinterfacegetdescriptor)</td>
+<td>[<strong>WdfUsbInterfaceGetDescriptor</strong>](https://msdn.microsoft.com/library/windows/hardware/ff550060)</td>
 </tr>
 <tr class="odd">
 <td>WDM-based client driver</td>
@@ -240,11 +236,11 @@ The **bEndpointAddress** field specifies the unique endpoint address that contai
 </tr>
 <tr class="odd">
 <td>UMDF-based client driver</td>
-<td>[<strong>IWDFUsbPipe::GetInterfaceDescriptor</strong>](umdf-iwdfusbinterface_getinterfacedescriptor)</td>
+<td>[<strong>WDFUsbTargetPipe::GetInformation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff560403)</td>
 </tr>
 <tr class="even">
 <td>KMDF-based client driver</td>
-<td>[<strong>WdfUsbTargetPipeGetInformation</strong>](kmdf-wdfusbtargetpipegetinformation)</td>
+<td>[<strong>WdfUsbTargetPipeGetInformation</strong>](https://msdn.microsoft.com/library/windows/hardware/ff551142)</td>
 </tr>
 <tr class="odd">
 <td>WDM-based client driver</td>

@@ -2,12 +2,6 @@
 title: How the Application Creates the WIA Device
 author: windows-driver-content
 description: How the Application Creates the WIA Device
-MS-HAID:
-- 'WIA\_drv\_basic\_2d834d2b-0f93-43f5-abec-07bea02d9952.xml'
-- 'image.how\_the\_application\_creates\_the\_wia\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f4268c61-11e5-4796-b7cb-80c8112be4d8
 ---
 

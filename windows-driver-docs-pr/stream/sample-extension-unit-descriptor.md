@@ -2,12 +2,6 @@
 title: Sample Extension Unit Descriptor
 author: windows-driver-content
 description: Sample Extension Unit Descriptor
-MS-HAID:
-- 'uvcds\_e81fd882-0608-426c-ba7e-d4c44509bba3.xml'
-- 'stream.sample\_extension\_unit\_descriptor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 283a28e6-9f73-4131-bcfb-b4983a92cecd
 keywords: ["Extension Unit descriptor WDK USB Video Class", "descriptors WDK USB Video Class", "descriptors WDK USB Video Class , sample code", "sample code WDK USB Video Class , extension unit descriptors"]
 ---

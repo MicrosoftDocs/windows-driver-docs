@@ -1,17 +1,13 @@
 ---
 title: Establish a new company
 description: Establish a new company
-MS-HAID:
-- 'p\_dashboard.establish\_a\_new\_company'
-- 'hw\_dashboard.establish\_a\_new\_company'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 98cdd891-3bb8-4aa1-8418-35c2670ba087
 ---
 
 # Establish a new company
 
+> [!IMPORTANT]
+> This content only applies to administration tasks for the Sysdev dashboard, which is being replaced by the Windows Hardware Dev Center Dashboard. See [Windows Hardware Dev Center Dashboard](https://msdn.microsoft.com/en-us/windows/hardware/drivers/dashboard/index) for current support and transition timelines.  
 
 Before you can establish a new company on the Hardware Dev Center dashboard, you need to get an approved standard code signing or extended validation (EV) code signing certificate from one of the approved certificate authorities. To learn more, see [Get a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/hh801887.aspx).
 
@@ -59,8 +55,3 @@ Once you have the code signing certificate, follow the steps to establish a new 
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Establish%20a%20new%20company%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
-

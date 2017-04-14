@@ -1,11 +1,6 @@
 ---
-Description: 'Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.'
-MS-HAID: 'buses.usb\_driver\_installation\_based\_on\_compatible\_ids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'USB serial driver (Usbser.sys)'
-author: windows-driver-content
+Description: Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
+title: USB serial driver (Usbser.sys)
 ---
 
 # USB serial driver (Usbser.sys)

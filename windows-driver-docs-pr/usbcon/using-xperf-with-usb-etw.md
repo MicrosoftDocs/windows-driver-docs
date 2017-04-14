@@ -1,9 +1,5 @@
 ---
-Description: 'This topic describes how to use Xperf with Netmon to analyze USB trace data.'
-MS-HAID: 'buses.using\_xperf\_with\_usb\_etw'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic describes how to use Xperf with Netmon to analyze USB trace data.
 title: Using Xperf with USB ETW
 author: windows-driver-content
 ---

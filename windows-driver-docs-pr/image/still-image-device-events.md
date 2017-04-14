@@ -2,12 +2,6 @@
 title: Still Image Device Events
 author: windows-driver-content
 description: Still Image Device Events
-MS-HAID:
-- 'stillimg\_e9a94449-3fab-4009-958c-2b9f20ccc066.xml'
-- 'image.still\_image\_device\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f9be89c-8442-4894-b2f6-a4d3558464bf
 ---
 

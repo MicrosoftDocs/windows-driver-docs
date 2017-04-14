@@ -1,9 +1,5 @@
 ---
-Description: 'This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.'
-MS-HAID: 'buses.headers\_and\_libraries\_for\_a\_usb\_client\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic lists the headers and libraries required for writing a Windows Driver Model (WDM) USB client driver.
 title: Headers and libraries required by a USB client driver
 author: windows-driver-content
 ---

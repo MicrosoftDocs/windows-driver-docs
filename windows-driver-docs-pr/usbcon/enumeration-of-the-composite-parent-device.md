@@ -1,11 +1,5 @@
 ---
 Description: Enumeration of USB Composite Devices
-MS-HAID:
-- 'usbsystem\_f8471a16-9c46-4424-aad3-920994f6f26c.xml'
-- 'buses.enumeration\_of\_the\_composite\_parent\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Enumeration of USB Composite Devices
 author: windows-driver-content
 ---

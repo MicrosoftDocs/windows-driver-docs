@@ -1,9 +1,5 @@
 ---
-Description: 'This topic includes a detailed walkthrough of how to use WinUSB Functions to communicate with a USB device that is using Winusb.sys as its function driver.'
-MS-HAID: 'buses.using\_winusb\_api\_to\_communicate\_with\_a\_usb\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic includes a detailed walkthrough of how to use WinUSB Functions to communicate with a USB device that is using Winusb.sys as its function driver.
 title: How to Access a USB Device by Using WinUSB Functions
 author: windows-driver-content
 ---

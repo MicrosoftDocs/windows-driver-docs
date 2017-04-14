@@ -1,7 +1,5 @@
 ---
 Description: The Windows Portable Devices Files
-MS-HAID: 'wpddk.the\_windows\_portable\_device\_files'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: The Windows Portable Devices Files
 ---
 

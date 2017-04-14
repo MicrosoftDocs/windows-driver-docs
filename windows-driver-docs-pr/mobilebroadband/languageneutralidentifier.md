@@ -1,9 +1,6 @@
 ---
 title: LanguageNeutralIdentifier
 description: LanguageNeutralIdentifier
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 38713565-464c-4b12-9076-331ae43e01e8
 ---
 

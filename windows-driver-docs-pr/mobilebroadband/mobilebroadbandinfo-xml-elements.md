@@ -1,9 +1,6 @@
 ---
 title: MobileBroadbandInfo XML elements
 description: MobileBroadbandInfo XML elements
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 399a0d58-5464-49b2-a6da-8c645016cc1e
 ---
 

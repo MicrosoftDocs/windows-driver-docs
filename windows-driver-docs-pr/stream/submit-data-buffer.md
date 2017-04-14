@@ -2,12 +2,6 @@
 title: Submit Data Buffer
 author: windows-driver-content
 description: Submit Data Buffer
-MS-HAID:
-- 'avcsguide\_c306feec-94f5-4092-86b3-5580ecf8823f.xml'
-- 'stream.submit\_data\_buffer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 151f5139-3706-4255-9d71-d8e6e3416b7c
 keywords: ["Avcstrm.sys streaming filter driver WDK , data buffer submissions", "data buffers WDK AV/C streaming", "submitting data buffers WDK AV/C streaming", "buffers WDK AV/C streaming", "pending streams WDK AV/C streaming"]
 ---

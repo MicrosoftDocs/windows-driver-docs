@@ -2,12 +2,6 @@
 title: Multifunction device driver design guide
 author: windows-driver-content
 description: Multifunction device driver design guide
-MS-HAID:
-- 'mf-supp\_5055ff9d-981b-4d05-8d10-6e1a084e0d11.xml'
-- 'multifunc.multifunction\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 110c0b9b-4870-4853-8fbf-a9faf0c5f2ca
 keywords: ["multifunction devices WDK", "multifunction devices WDK , about multifunction devices", "combined function devices WDK", "multiple function devices WDK", "printer multiple functions WDK", "DVD/CD-ROM multiple functions WDK", "multifunction devices WDK , installing", "parent buses WDK multifunction devices", "INF files WDK multifunction devices"]
 ---

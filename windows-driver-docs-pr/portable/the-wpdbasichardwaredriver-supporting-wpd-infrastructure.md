@@ -1,7 +1,5 @@
-﻿---
+---
 Description: Supporting the WPD Infrastructure
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_supporting\_wpd\_infrastructure'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting the WPD Infrastructure
 ---
 

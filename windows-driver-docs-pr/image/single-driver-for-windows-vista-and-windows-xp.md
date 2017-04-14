@@ -2,12 +2,6 @@
 title: Single Driver for Windows Vista and Windows XP
 author: windows-driver-content
 description: Single Driver for Windows Vista and Windows XP
-MS-HAID:
-- 'WIA\_arch\_18402dcb-1b92-47ca-942e-e8a0fee90434.xml'
-- 'image.single\_driver\_for\_windows\_vista\_and\_windows\_xp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3fa9c044-ab9d-4bed-b5fc-89396e1269ce
 ---
 

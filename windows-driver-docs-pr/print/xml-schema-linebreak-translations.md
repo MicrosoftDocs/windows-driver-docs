@@ -2,12 +2,6 @@
 title: XML Schema Linebreak Translations
 author: windows-driver-content
 description: XML Schema Linebreak Translations
-MS-HAID:
-- 'gplfiles\_5ad1f366-8ea2-4b47-abcb-18f5a0e614eb.xml'
-- 'print.xml\_schema\_linebreak\_translations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c277984f-8e7a-4d17-98ab-66c3f6f80473
 keywords: ["linebreak sequence WDK GDL", "GDL WDK , schemas", "schemas WDK GDL", "snapshots WDK GDL , linebreaks"]
 ---

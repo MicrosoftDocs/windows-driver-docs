@@ -2,12 +2,6 @@
 title: Optional WIA Item Properties for Scanner Storage
 author: windows-driver-content
 description: Optional WIA Item Properties for Scanner Storage
-MS-HAID:
-- 'WIA\_scanner\_tree\_6cdafa04-89b8-4d20-b4cf-b7e84d2c9f48.xml'
-- 'image.optional\_wia\_item\_properties\_for\_scanner\_storage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d21e7195-37be-4821-a326-68bcdff9cdd6
 ---
 

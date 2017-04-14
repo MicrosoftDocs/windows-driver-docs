@@ -2,12 +2,6 @@
 title: Basic Scanning with a Feeder Scanner
 author: windows-driver-content
 description: Basic Scanning with a Feeder Scanner
-MS-HAID:
-- 'WIA\_scanner\_tree\_8eb4fac2-9657-4d38-86a9-c191377fa6cf.xml'
-- 'image.basic\_scanning\_with\_a\_feeder\_scanner'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 29b0752e-88f7-482b-a618-4d7730eceaad
 ---
 

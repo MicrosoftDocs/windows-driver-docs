@@ -1,9 +1,6 @@
 ---
 title: ServiceInfo
 description: ServiceInfo
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0dab9e5b-122c-4fe4-9314-97a0531af4aa
 ---
 

@@ -2,12 +2,6 @@
 title: Controlling Image Quality
 author: windows-driver-content
 description: Controlling Image Quality
-MS-HAID:
-- 'nt5gpd\_2830dd44-4ffd-47b7-a3ec-2e3c49c03ee9.xml'
-- 'print.controlling\_image\_quality'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b6d25178-6726-4ce0-ab34-efeedc618044
 keywords: ["Unidrv, image quality", "image quality options WDK Unidrv", "draft image quality WDK Unidrv", "better image quality WDK Unidrv", "best image quality WDK Unidrv", "quality setting entries WDK Unidrv", "print jobs WDK , image quality", "formats WDK image quality", "Unidrv WDK print"]
 ---

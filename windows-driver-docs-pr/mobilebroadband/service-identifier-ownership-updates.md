@@ -1,9 +1,6 @@
 ---
 title: Service identifier ownership updates
 description: Service identifier ownership updates
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6cb03631-def6-44d4-a73a-0e6124e3b1f2
 ---
 

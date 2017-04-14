@@ -1,9 +1,6 @@
 ---
 title: Provisioning for hotspot authentication
 description: Provisioning for hotspot authentication
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bfb4e1ec-9887-4b25-bfcc-be642b1a0101
 ---
 

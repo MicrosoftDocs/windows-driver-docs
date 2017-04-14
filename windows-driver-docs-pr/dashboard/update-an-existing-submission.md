@@ -1,12 +1,6 @@
 ---
 title: Update an existing submission
 description: Update an existing submission
-MS-HAID:
-- 'p\_dashboard.update\_an\_existing\_submission'
-- 'hw\_dashboard.update\_an\_existing\_submission'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09d55f98-d915-46a8-a96e-ef414f6e4f18
 ---
 

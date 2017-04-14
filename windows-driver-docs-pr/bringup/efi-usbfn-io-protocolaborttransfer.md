@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.AbortTransfer
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.AbortTransfer
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 204998d6-7d8d-482b-8d9c-b96d2e2729bf
 ---
 

@@ -2,12 +2,6 @@
 title: About WIA Properties
 author: windows-driver-content
 description: About WIA Properties
-MS-HAID:
-- 'WIA\_arch\_cf0878b7-28a3-4475-896c-898ab13249f0.xml'
-- 'image.about\_wia\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f8cc03d-9bc2-4f2b-bccb-f055049a3d4c
 ---
 

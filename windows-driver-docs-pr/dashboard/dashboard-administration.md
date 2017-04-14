@@ -1,9 +1,6 @@
 ---
 title: Dashboard Administration
 description: .
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 078FDCAE-0012-481A-8328-0EF0A199C0ED
 ---
 

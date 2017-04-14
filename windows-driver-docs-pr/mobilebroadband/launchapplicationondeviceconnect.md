@@ -1,9 +1,6 @@
 ---
 title: LaunchApplicationOnDeviceConnect
 description: LaunchApplicationOnDeviceConnect
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d8a5f20a-bd88-4279-9e15-4f20287edfd4
 ---
 

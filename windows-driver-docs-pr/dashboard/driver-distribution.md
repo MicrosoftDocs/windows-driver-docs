@@ -1,12 +1,6 @@
 ---
 title: Driver Distribution
 description: Driver Distribution
-MS-HAID:
-- 'p\_dashboard.driver\_distribution'
-- 'hw\_dashboard.driver\_distribution'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 39cb27bc-9c31-4943-85ae-e2a5c96815d1
 ---
 

@@ -2,12 +2,6 @@
 title: GDL Template Qualification
 author: windows-driver-content
 description: GDL Template Qualification
-MS-HAID:
-- 'gplfiles\_6b74b75f-0327-4c78-a952-136947d2ec79.xml'
-- 'print.gdl\_template\_qualification'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6a0fef55-4097-4d5b-b192-ce8a03b9c41f
 keywords: ["templates WDK GDL , associating templates with keywords", "keywords WDK GDL , associating templates with keywords", "templates WDK GDL , association search criteria", "association search criteria WDK GDL", "GDL WDK , searching for entries", "GDL WDK , entries", "templates WDK GDL , qualifying to represent GDL entry", "templates WDK GDL , derived templates"]
 ---

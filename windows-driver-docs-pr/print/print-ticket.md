@@ -2,12 +2,6 @@
 title: Print Ticket
 author: windows-driver-content
 description: Print Ticket
-MS-HAID:
-- 'drvarch\_2b614815-7693-445c-8aeb-9c9243c12524.xml'
-- 'print.print\_ticket'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dd18d0ef-c1f7-4a35-a420-2da102fb07f4
 keywords: ["PrintTicket documents WDK", "Print Tickets WDK , PrintTicket documents", "document descriptions WDK print", "print jobs WDK , Print Tickets", "jobs WDK print , Print Tickets"]
 ---

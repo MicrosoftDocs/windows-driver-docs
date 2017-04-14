@@ -2,9 +2,6 @@
 title: Processing updates
 author: windows-driver-content
 description: After any firmware update package(s) have been applied and the system subsequently rebooted, the Windows OS loader loads all the firmware payload files (in this example, firmware.bin) into physical memory.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 87BC1366-F69D-412A-883E-861853A4902A
 ---
 

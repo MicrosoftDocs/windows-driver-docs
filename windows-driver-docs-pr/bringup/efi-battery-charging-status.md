@@ -2,9 +2,6 @@
 title: EFI\_BATTERY\_CHARGING\_STATUS
 author: windows-driver-content
 description: EFI\_BATTERY\_CHARGING\_STATUS
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dc267920-2c2f-447b-8772-35160886a24c
 ---
 

@@ -2,9 +2,6 @@
 title: AVStream driver samples
 author: windows-driver-content
 description: The AVStream driver samples in this directory provide a starting point for writing a custom streaming media driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7ABE9DCB-6EF1-4A96-A2EC-B446D4DED7C7
 ---
 

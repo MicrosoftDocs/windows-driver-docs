@@ -2,12 +2,6 @@
 title: Frame Injection
 author: windows-driver-content
 description: Frame Injection
-MS-HAID:
-- 'avsover\_65174d3a-4251-43df-a805-f2dca76db1d2.xml'
-- 'stream.frame\_injection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cdfb1763-92a8-4a60-8f49-2af34a8beca5
 keywords: ["frames WDK AVStream", "injection mode WDK AVStream frames", "frame injection WDK AVStream", "pin-centric filters WDK AVStream", "filter-centric filters WDK AVStream", "empty frames WDK AVStream", "default frame behavior WDK AVStream", "overriding default frame behavior WDK streaming media", "circuits WDK AVStream"]
 ---

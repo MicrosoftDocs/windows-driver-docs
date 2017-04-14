@@ -1,21 +1,18 @@
----
-title: Windows Store device apps for Printers
+--
+title: Windows Store device apps for printers
 author: windows-driver-content
 description: Windows Store device apps for printers allow IHVs to highlight the special features of their devices through customized printer preferences and notification support.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 687ECBA2-2DEF-4C62-A587-17A281490B59
 ---
 
-# Windows Store device apps for Printers
+# Windows Store device apps for printers
 
 
 Windows Store device apps for printers allow IHVs to highlight the special features of their devices through customized printer preferences and notification support.
 
 Windows Store device apps are distributed by the Windows Store and automatically installed for users who have opted in to download applications. Windows Store device apps for printers may be provided for any printer on Windows.
 
-Printers that are installed using v4 print drivers can provide a customized printer preferences experience by supporting the printTaskSettings contract or support printer notifications by supporting the backgroundTasks contract. For more information, see the [Developing a Windows Store device app for Printing](http://msdn.microsoft.com/library/windows/hardware/br259129.aspx) whitepaper.
+Printers that are installed using v4 print drivers can provide a customized printer preferences experience by supporting the printTaskSettings contract or support printer notifications by supporting the backgroundTasks contract. For more information, see [Developing a Windows Store device app for Printing](http://msdn.microsoft.com/library/windows/hardware/br259129.aspx).
 
  
 

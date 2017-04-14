@@ -2,12 +2,6 @@
 title: WIA RAW Data Header
 author: windows-driver-content
 description: WIA RAW Data Header
-MS-HAID:
-- 'WIA\_db\_trans\_14061f55-ae37-457a-9502-08493c5eabaa.xml'
-- 'image.wia\_raw\_data\_header'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a2cb3835-7879-4f69-9784-9487df40730a
 ---
 

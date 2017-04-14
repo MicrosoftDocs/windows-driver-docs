@@ -2,12 +2,6 @@
 title: Converter
 author: windows-driver-content
 description: Converter
-MS-HAID:
-- 'autocfg\_c63d7225-1bf8-4de1-aacf-bd5d900a7d15.xml'
-- 'print.converter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eadbbaf5-3fe3-484f-b3f1-3d543ddc817f
 ---
 

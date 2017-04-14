@@ -1,12 +1,6 @@
 ---
 title: Browse Reports
 description: Browse Reports
-MS-HAID:
-- 'p\_dashboard.browse\_reports'
-- 'hw\_dashboard.browse\_reports'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2d8efcbf-b740-4ef4-8791-7791c75b474a
 ---
 

@@ -2,12 +2,6 @@
 title: State Transitions
 author: windows-driver-content
 description: State Transitions
-MS-HAID:
-- 'vidcapds\_81b397f1-86df-458b-a423-7fcf177ac2aa.xml'
-- 'stream.state\_transitions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c71fd395-28aa-4421-9443-b5b0a1f3ac7e
 keywords: ["video capture WDK AVStream , stream states", "capturing video WDK AVStream , stream states", "stream states WDK video capture", "states WDK video capture", "state transitions WDK video capture"]
 ---

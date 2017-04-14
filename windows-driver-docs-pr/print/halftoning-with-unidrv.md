@@ -2,12 +2,6 @@
 title: Halftoning with Unidrv
 author: windows-driver-content
 description: Halftoning with Unidrv
-MS-HAID:
-- 'nt5gpd\_f5854d1e-c6a2-4d7b-97a7-395988139112.xml'
-- 'print.halftoning\_with\_unidrv'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 42d1ca77-f8af-4212-a5a7-fb147d86b689
 keywords: ["Unidrv, halftoning", "halftoning WDK Unidrv"]
 ---

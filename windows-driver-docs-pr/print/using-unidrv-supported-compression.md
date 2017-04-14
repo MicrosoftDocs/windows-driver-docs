@@ -2,12 +2,6 @@
 title: Using Unidrv-Supported Compression
 author: windows-driver-content
 description: Using Unidrv-Supported Compression
-MS-HAID:
-- 'nt5gpd\_bf4131cc-12dd-4420-a63f-766998e191ad.xml'
-- 'print.using\_unidrv\_supported\_compression'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: feda6898-da2c-403f-a159-1423891f3dd5
 keywords: ["raster data compression WDK Unidrv", "compressing raster data WDK Unidrv"]
 ---

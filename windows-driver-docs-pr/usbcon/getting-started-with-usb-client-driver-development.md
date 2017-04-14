@@ -1,9 +1,5 @@
 ---
-Description: 'This section introduces you to USB driver development.'
-MS-HAID: 'buses.getting\_started\_with\_usb\_client\_driver\_development'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This section introduces you to USB driver development.
 title: Getting started with USB client driver development
 author: windows-driver-content
 ---

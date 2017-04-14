@@ -2,9 +2,6 @@
 title: Wi-Fi Direct Printing Implementation
 author: windows-driver-content
 description: .
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 03266F8F-4C91-49E7-9CAF-2D08AF5E3E18
 ---
 

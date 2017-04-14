@@ -1,9 +1,6 @@
 ---
 title: Integrating Windows with wireless hotspots
 description: Integrating Windows with wireless hotspots
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 948660a2-7ecf-4860-9092-1cfb332cfd04
 ---
 

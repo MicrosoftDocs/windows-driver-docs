@@ -2,12 +2,6 @@
 title: Developing a WIA Driver
 author: windows-driver-content
 description: Developing a WIA Driver
-MS-HAID:
-- 'WIA\_driver\_hdr\_8d90db76-fdba-42e0-b3b5-dccd8c0d1846.xml'
-- 'image.developing\_a\_wia\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0497e93a-e7c5-4d89-bfa9-b2f277e471a0
 ---
 

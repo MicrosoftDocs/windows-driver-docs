@@ -2,12 +2,6 @@
 title: Using Unidrv Vector Graphics Capabilities
 author: windows-driver-content
 description: Using Unidrv Vector Graphics Capabilities
-MS-HAID:
-- 'nt5gpd\_6ec94c4c-39c9-47a0-ab14-f13d611118da.xml'
-- 'print.using\_unidrv\_vector\_graphics\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1b956d7f-4dd5-4486-897a-d4885fee5887
 keywords: ["Unidrv, vector graphics", "vector graphics WDK Unidrv", "vector graphics WDK Unidrv , about vector graphics", "graphics printers WDK Unidrv", "Unidrv WDK print"]
 ---

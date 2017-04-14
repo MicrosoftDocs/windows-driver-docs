@@ -2,12 +2,6 @@
 title: Implementing an Operation Region Handler
 author: windows-driver-content
 description: Implementing an Operation Region Handler
-MS-HAID:
-- 'opregdg\_d0eabdd0-b0b2-40be-a313-a098d04be4a8.xml'
-- 'acpi.implementing\_an\_operation\_region\_handler'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e435393c-d637-45c1-ab65-0b23f796ec02
 keywords: ["ACPI devices WDK , operation regions", "operation regions WDK ACPI", "function drivers WDK ACPI , operation regions", "WDM function drivers WDK ACPI , operation regions"]
 ---

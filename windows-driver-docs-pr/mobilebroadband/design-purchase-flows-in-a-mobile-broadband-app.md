@@ -1,9 +1,6 @@
 ---
 title: Design purchase flows in a mobile broadband app
 description: Design purchase flows in a mobile broadband app
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1243b255-aac6-4d75-826a-e42482f5ac1b
 ---
 

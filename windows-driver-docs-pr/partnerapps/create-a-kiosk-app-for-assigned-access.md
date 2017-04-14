@@ -1,9 +1,6 @@
 ---
 title: Kiosk apps for assigned access Best practices
 description: Kiosk apps for assigned access Best practices
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2405B5BB-2214-4B40-B3A1-C47073390B21
 ---
 
@@ -133,14 +130,14 @@ Each view or window has its own dispatcher. In assigned access mode, you should 
 For example, in the following code sample there is a Button and a **TextBlock** on the .xaml page. A click event handler is added to the button. The handler does some background work and then updates the text of **TextBlock**. The usage of **CoreApplication.MainView.Dispatcher** would cause the app crash in this example because in assigned access mode, the main window is not **MainView** but rendered in a secondary view. It is recommended you use **CoreApplication.GetCurrentView.Dispatcher**.
 
 ```
-using Windows.ApplicationModel.Core; 
+using Windows.ApplicationModel.Core;
 
 private async void Button_Click(object sender, RoutedEventArgs e)
 {
     button.IsEnabled = false;
 
     // start a background task and update UI periodically (every 1 second)
-    // using MainView dispatcher in below code will end up with app crash 
+    // using MainView dispatcher in below code will end up with app crash
     // in assigned access mode, use GetCurrentView().Dispatcher instead
     await CoreApplication.GetCurrentView().Dispatcher.RunAsync(
         CoreDispatcherPriority.Normal,
@@ -259,6 +256,8 @@ Normally, if a Kiosk app fails to activate above the lock screen app, you can fi
 2.  In the **Event Viewer (Local)** pane, expand **Windows Logs**, and then click **Application**.
 3.  Also, in **Event Viewer (local)**, expand **Applications and Services Logs**, expand **Windows**, expand **Apps**, and then click **Microsoft-Windows-TWinUI/Operational**.
 
+Note that because kiosk apps with assigned access do not run in full-screen mode, **ApplicationView.GetForCurrentView().IsFullScreenMode** will return false.
+
 ## <span id="related_topics"></span>Related topics
 
 
@@ -271,8 +270,3 @@ Normally, if a Kiosk app fails to activate above the lock screen app, you can fi
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_phPartAppDev\p_phPartAppDev%5D:%20Kiosk%20apps%20for%20assigned%20access:%20Best%20practices%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
-

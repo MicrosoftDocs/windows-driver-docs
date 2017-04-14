@@ -2,12 +2,6 @@
 title: Setting Up the WIA Build Environment
 author: windows-driver-content
 description: Setting Up the WIA Build Environment
-MS-HAID:
-- 'WIA\_GS\_e842c4fa-a582-43a8-bc51-fced94db7718.xml'
-- 'image.setting\_up\_the\_wia\_build\_environment'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e961aca-1b0c-483c-9269-e656daee3e5e
 ---
 

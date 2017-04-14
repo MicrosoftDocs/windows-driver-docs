@@ -15,133 +15,133 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 ### <span id="devcon_hwids"></span><span id="DEVCON_HWIDS"></span>DevCon HwIDs
 
-[Example 1: Find all hardware IDs](#ddk-example-1-find-all-hardware-ids-tools)
+[Example 1: Find all hardware IDs](#ddk_example_1_find_all_hardware_ids_tools)
 
-[Example 2: Find hardware IDs by using a pattern](#ddk-example-2-find-hardware-ids-by-using-a-pattern-tools)
+[Example 2: Find hardware IDs by using a pattern](#ddk_example_2_find_hardware_ids_by_using_a_pattern_tools)
 
-[Example 3: Find hardware IDs by using a class](#ddk-example-3-find-hardware-ids-by-using-a-class-tools)
+[Example 3: Find hardware IDs by using a class](#ddk_example_3_find_hardware_ids_by_using_a_class_tools)
 
 ### <span id="devcon_classes"></span><span id="DEVCON_CLASSES"></span>DevCon Classes
 
-[Example 4: List classes on the local computer](#ddk-example-4-list-classes-on-the-local-computer-tools)
+[Example 4: List classes on the local computer](#ddk_example_4_list_classes_on_the_local_computer_tools)
 
-[Example 5: List classes on the remote computer](#ddk-example-5-list-classes-on-the-remote-computer-tools)
+[Example 5: List classes on the remote computer](#ddk_example_5_list_classes_on_the_remote_computer_tools)
 
 ### <span id="devcon_listclass"></span><span id="DEVCON_LISTCLASS"></span>DevCon ListClass
 
-[Example 6: List the devices in a device setup class](#ddk-example-6-list-the-devices-in-a-device-setup-class-tools)
+[Example 6: List the devices in a device setup class](#ddk_example_6_list_the_devices_in_a_device_setup_class_tools)
 
-[Example 7: List the devices in multiple classes on a remote computer](#ddk-example-7-list-the-devices-in-multiple-classes-on-a-remote-compute)
+[Example 7: List the devices in multiple classes on a remote computer](#ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute)
 
 ### <span id="devcon_driverfiles"></span><span id="DEVCON_DRIVERFILES"></span>DevCon DriverFiles
 
-[Example 8: List all driver files](#ddk-example-8-list-all-driver-files-tools)
+[Example 8: List all driver files](#ddk_example_8_list_all_driver_files_tools)
 
-[Example 9: List the driver files of a particular device](#ddk-example-9-list-the-driver-files-of-a-particular-device-tools)
+[Example 9: List the driver files of a particular device](#ddk_example_9_list_the_driver_files_of_a_particular_device_tools)
 
 ### <span id="devcon_drivernodes"></span><span id="DEVCON_DRIVERNODES"></span>DevCon DriverNodes
 
-[Example 10: List driver packages by hardware ID pattern](#ddk-example-10-list-driver-packages-by-hardware-id-pattern-tools)
+[Example 10: List driver packages by hardware ID pattern](#ddk_example_10_list_driver_packages_by_hardware_id_pattern_tools)
 
-[Example 11: List driver packages by device instance ID pattern](#ddk-example-11-list-driver-packages-by-device-instance-id-pattern-tool)
+[Example 11: List driver packages by device instance ID pattern](#ddk_example_11_list_driver_packages_by_device_instance_id_pattern_tool)
 
 ### <span id="devcon_resources"></span><span id="DEVCON_RESOURCES"></span>DevCon Resources
 
-[Example 12: List resources of a class of devices](#ddk-example-12-list-resources-of-a-class-of-devices-tools)
+[Example 12: List resources of a class of devices](#ddk_example_12_list_resources_of_a_class_of_devices_tools)
 
-[Example 13: List resources of device on a remote computer by ID](#ddk-example-13-list-resources-of-device-on-a-remote-computer-by-id-too)
+[Example 13: List resources of device on a remote computer by ID](#ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too)
 
 ### <span id="devcon_stack"></span><span id="DEVCON_STACK"></span>DevCon Stack
 
-[Example 14: Display the driver stack for storage devices](#ddk-example-14-display-the-driver-stack-for-storage-devices-tools)
+[Example 14: Display the driver stack for storage devices](#ddk_example_14_display_the_driver_stack_for_storage_devices_tools)
 
-[Example 15: Find the setup class of a device](#ddk-example-15-find-the-setup-class-of-a-device-tools)
+[Example 15: Find the setup class of a device](#ddk_example_15_find_the_setup_class_of_a_device_tools)
 
-[Example 16: Display the stack for related devices on a remote computer](#ddk-example-16-display-the-stack-for-related-devices-on-a-remote-compu)
+[Example 16: Display the stack for related devices on a remote computer](#ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu)
 
 ### <span id="devcon_status"></span><span id="DEVCON_STATUS"></span>DevCon Status
 
-[Example 17: Display the status of all devices on the local computer](#ddk-example-17-display-the-status-of-all-devices-on-the-local-computer)
+[Example 17: Display the status of all devices on the local computer](#ddk_example_17_display_the_status_of_all_devices_on_the_local_computer)
 
-[Example 18: Display the status of a device by device instance ID](#ddk-example-18-display-the-status-of-a-device-by-device-instance-id-to)
+[Example 18: Display the status of a device by device instance ID](#ddk_example_18_display_the_status_of_a_device_by_device_instance_id_to)
 
-[Example 19: Display the status of related devices on a remote computer](#ddk-example-19-display-the-status-of-related-devices-on-a-remote-compu)
+[Example 19: Display the status of related devices on a remote computer](#ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu)
 
 ### <span id="devcon_find"></span><span id="DEVCON_FIND"></span>DevCon Find
 
-[Example 20: Find devices by hardware ID pattern](#ddk-example-20-find-devices-by-hardware-id-pattern-tools)
+[Example 20: Find devices by hardware ID pattern](#ddk_example_20_find_devices_by_hardware_id_pattern_tools)
 
-[Example 21: Find devices by device instance ID or class](#ddk-example-21-find-devices-by-device-instance-id-or-class-tools)
+[Example 21: Find devices by device instance ID or class](#ddk_example_21_find_devices_by_device_instance_id_or_class_tools)
 
 ### <span id="devcon_findall"></span><span id="DEVCON_FINDALL"></span>DevCon FindAll
 
-[Example 22: Find (and find all) devices in a setup class](#ddk-example-22-find-and-find-all-devices-in-a-setup-class-tools)
+[Example 22: Find (and find all) devices in a setup class](#ddk_example_22_find_and_find_all_devices_in_a_setup_class_tools)
 
 ### <span id="devcon_classfilter"></span><span id="DEVCON_CLASSFILTER"></span>DevCon ClassFilter
 
-[Example 23: Display the filter drivers for a setup class](#ddk-example-23-display-the-filter-drivers-for-a-setup-class-tools)
+[Example 23: Display the filter drivers for a setup class](#ddk_example_23_display_the_filter_drivers_for_a_setup_class_tools)
 
-[Example 24: Add a filter driver to a setup class](#ddk-example-24-add-a-filter-driver-to-a-setup-class-tools)
+[Example 24: Add a filter driver to a setup class](#ddk_example_24_add_a_filter_driver_to_a_setup_class_tools)
 
-[Example 25: Insert a filter driver in the class list](#ddk-example-25-insert-a-filter-driver-in-the-class-list-tools)
+[Example 25: Insert a filter driver in the class list](#ddk_example_25_insert_a_filter_driver_in_the_class_list_tools)
 
-[Example 26: Replace a filter driver](#ddk-example-26-replace-a-filter-driver-tools)
+[Example 26: Replace a filter driver](#ddk_example_26_replace_a_filter_driver_tools)
 
-[Example 27: Change the order of filter drivers](#ddk-example-27-change-the-order-of-filter-drivers-tools)
+[Example 27: Change the order of filter drivers](#ddk_example_27_change_the_order_of_filter_drivers_tools)
 
 ### <span id="devcon_enable"></span><span id="DEVCON_ENABLE"></span>DevCon Enable
 
-[Example 28: Enable a particular device](#ddk-example-28-enable-a-particular-device-tools)
+[Example 28: Enable a particular device](#ddk_example_28_enable_a_particular_device_tools)
 
-[Example 29: Enable devices by class](#ddk-example-29-enable-devices-by-class-tools)
+[Example 29: Enable devices by class](#ddk_example_29_enable_devices_by_class_tools)
 
 ### <span id="devcon_disable"></span><span id="DEVCON_DISABLE"></span>DevCon Disable
 
-[Example 30: Disable devices by an ID pattern](#ddk-example-30-disable-devices-by-an-id-pattern-tools)
+[Example 30: Disable devices by an ID pattern](#ddk_example_30_disable_devices_by_an_id_pattern_tools)
 
-[Example 31: Disable devices by device instance ID](#ddk-example-31-disable-devices-by-device-instance-id-tools)
+[Example 31: Disable devices by device instance ID](#ddk_example_31_disable_devices_by_device_instance_id_tools)
 
 ### <span id="devcon_update_and_updateni"></span><span id="DEVCON_UPDATE_AND_UPDATENI"></span>DevCon Update and UpdateNI
 
-[Example 32: Update the driver for communication ports](#ddk-example-32-update-the-driver-for-communication-ports-tools)
+[Example 32: Update the driver for communication ports](#ddk_example_32_update_the_driver_for_communication_ports_tools)
 
-[Example 44: Forcibly update the HAL](#ddk-example-44-forcibly-update-the-hal-tools)
+[Example 44: Forcibly update the HAL](#ddk_example_44_forcibly_update_the_hal_tools)
 
 ### <span id="devcon_install"></span><span id="DEVCON_INSTALL"></span>DevCon Install
 
-[Example 33: Install a device](#ddk-example-33-install-a-device-tools)
+[Example 33: Install a device](#ddk_example_33_install_a_device_tools)
 
-[Example 34: Install a device using unattended setup](#ddk-example-34-install-a-device-using-unattended-setup-tools)
+[Example 34: Install a device using unattended setup](#ddk_example_34_install_a_device_using_unattended_setup_tools)
 
 ### <span id="devcon_remove"></span><span id="DEVCON_REMOVE"></span>DevCon Remove
 
-[Example 35: Remove devices by device instance ID pattern](#ddk-example-35-remove-devices-by-device-instance-id-pattern-tools)
+[Example 35: Remove devices by device instance ID pattern](#ddk_example_35_remove_devices_by_device_instance_id_pattern_tools)
 
-[Example 36: Remove a particular network device](#ddk-example-36-remove-a-particular-network-device-tools)
+[Example 36: Remove a particular network device](#ddk_example_36_remove_a_particular_network_device_tools)
 
 ### <span id="devcon_rescan"></span><span id="DEVCON_RESCAN"></span>DevCon Rescan
 
-[Example 37: Scan the computer for new devices](#ddk-example-37-scan-the-computer-for-new-devices-tools)
+[Example 37: Scan the computer for new devices](#ddk_example_37_scan_the_computer_for_new_devices_tools)
 
 ### <span id="devcon_restart"></span><span id="DEVCON_RESTART"></span>DevCon Restart
 
-[Example 38: Restart a device](#ddk-example-38-restart-a-device-tools)
+[Example 38: Restart a device](#ddk_example_38_restart_a_device_tools)
 
 ### <span id="devcon_status2"></span><span id="DEVCON_STATUS2"></span>DevCon Status
 
-[Example 39: Reboot the local computer](#ddk-example-39-reboot-the-local-computer-tools)
+[Example 39: Reboot the local computer](#ddk_example_39_reboot_the_local_computer_tools)
 
 ### <span id="devcon_sethwid"></span><span id="DEVCON_SETHWID"></span>DevCon SetHwID
 
-[Example 40: Assign a hardware ID to a legacy device](#ddk-example-40-assign-a-hardware-id-to-a-legacy-device-tools)
+[Example 40: Assign a hardware ID to a legacy device](#ddk_example_40_assign_a_hardware_id_to_a_legacy_device_tools)
 
-[Example 41: Add a hardware ID to all legacy devices on a remote computer](#ddk-example-41-add-a-hardware-id-to-all-legacy-devices-on-a-remote-com)
+[Example 41: Add a hardware ID to all legacy devices on a remote computer](#ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com)
 
-[Example 42: Delete a hardware ID from all legacy devices on a remote computer](#ddk-example-42-delete-a-hardware-id-from-all-legacy-devices-on-a-remot)
+[Example 42: Delete a hardware ID from all legacy devices on a remote computer](#ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot)
 
-[Example 43: Add, delete, and replace hardware IDs](#ddk-example-43-add-delete-and-replace-hardwareids-tools)
+[Example 43: Add, delete, and replace hardware IDs](#ddk_example_43_add_delete_and_replace_hardwareids_tools)
 
-[Example 44: Forcibly update the HAL](#ddk-example-44-forcibly-update-the-hal-tools)
+[Example 44: Forcibly update the HAL](#ddk_example_44_forcibly_update_the_hal_tools)
 
 ### <span id="devcon_dp_add__dp_deleted__dp_enum"></span><span id="DEVCON_DP_ADD__DP_DELETED__DP_ENUM"></span>DevCon dp\_add, dp\_deleted, dp\_enum
 

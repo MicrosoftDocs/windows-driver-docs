@@ -2,12 +2,6 @@
 title: AV/C Streaming INF Example
 author: windows-driver-content
 description: AV/C Streaming INF Example
-MS-HAID:
-- 'avcsguide\_0dc96da1-7cce-40b9-b4e7-4fd8be691461.xml'
-- 'stream.av\_c\_streaming\_inf\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8a2c9cd-c71b-4fd1-80f5-34d13837865e
 keywords: ["AV/C WDK , Stream filter driver", "Stream filter driver WDK AV/C", "Avcstrm.sys streaming filter driver WDK , INF example", "INF files WDK AV/C streaming"]
 ---

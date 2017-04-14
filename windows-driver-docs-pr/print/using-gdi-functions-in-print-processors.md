@@ -2,12 +2,6 @@
 title: Using GDI Functions in Print Processors
 author: windows-driver-content
 description: Using GDI Functions in Print Processors
-MS-HAID:
-- 'provider\_f957a45c-faa5-4cac-8a98-5ab3d2aac56c.xml'
-- 'print.using\_gdi\_functions\_in\_print\_processors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ad62308-ab42-4475-ac42-f753d5091251
 keywords: ["EMF record playback WDK print processor", "GDI functions WDK print processor", "NT EMF WDK print processor"]
 ---

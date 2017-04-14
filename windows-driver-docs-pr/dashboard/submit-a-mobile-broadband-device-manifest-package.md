@@ -1,12 +1,6 @@
 ---
 title: Submit a mobile broadband device manifest package
 description: Submit a mobile broadband device manifest package
-MS-HAID:
-- 'p\_dashboard.submit\_a\_mobile\_broadband\_device\_manifest\_package'
-- 'hw\_dashboard.submit\_a\_mobile\_broadband\_device\_manifest\_package'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 080c3f4a-400f-426c-8296-1cd0bdfb0828
 ---
 

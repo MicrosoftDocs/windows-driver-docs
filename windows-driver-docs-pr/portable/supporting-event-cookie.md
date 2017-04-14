@@ -1,7 +1,5 @@
 ---
 Description: Supporting Event Cookies
-MS-HAID: 'wpddk.supporting\_event\_cookie'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Supporting Event Cookies
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Create a new hardware submission
 description: Create a new hardware submission
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3F433F0A-422C-46E5-B59E-8DB4AC537F01
 ---
 
@@ -27,18 +24,15 @@ For information about creating and digitally signing an **.hckx** file, see the 
 2.  In the **Packages and signing properties** section, choose a name for your driver submission. This name can be used to search for and organize your driver submissions. Note: If you share your driver with another company, they will see this name.
 
 3.  Either drag and drop, or browse to the **.hlkx/.hckx** file that you want to submit. The file will begin to upload.
-
-4.  Select the "This is a beta driver" checkbox if applicable. This option states that your driver should be signed for pre-production and will not be broadly released.
-
     ![screenshot that shows the driver name field](images/drivers-name.png)
 
-5.  Select any applicable additional certifications if available. This option allows you to specify which down-level operating system signatures should be included with your driver. Available certifications vary depending on your driver submission package, so there may not be any certifications listed.
+4.  Select any applicable additional certifications if available. This option allows you to specify which down-level operating system signatures should be included with your driver. Available certifications vary depending on your driver submission package, so there may not be any certifications listed.
 
-6.  Select **Finalize**. You will not be able to select the **Finalize** button until your file upload is complete. Note: Your signature properties and name cannot be changed after you click **Finalize**.
+5.  Select **Finalize**. You will not be able to select the **Finalize** button until your file upload is complete. Note: Your signature properties and name cannot be changed after you click **Finalize**.
 
     ![screenshot that shows possible certifications for a driver submission, and the finalize button](images/additionalcertifications.png)
 
-7.  In the **Certification** section, complete the following information:
+6.  In the **Certification** section, complete the following information:
 
     <table>
     <colgroup>
@@ -85,19 +79,17 @@ For information about creating and digitally signing an **.hckx** file, see the 
     </tbody>
     </table>
 
-     
-
     ![screenshot that shows the certification section](images/drivers-certification.png)
 
-8.  Select **Submit**.
+7.  Select **Submit**.
 
-9.  The **Distribution** section is used to publish your driver to Windows Update. For information about how to use the **Distribution** section, see [Manage driver distribution with shipping labels](manage-driver-distribution-by-submission.md).
+8.  The **Distribution** section is used to publish your driver to Windows Update. For information about how to use the **Distribution** section, see [Manage driver distribution with shipping labels](manage-driver-distribution-by-submission.md).
 
-10. You can monitor the progress of your submission with the progress tracker at the top of the page. Once all steps show a green check, the submission is complete and your organization will receive a notification in the dashboard header.
+9. You can monitor the progress of your submission with the progress tracker at the top of the page. Once all steps show a green check, the submission is complete and your organization will receive a notification in the dashboard header.
 
     ![screenshot that shows the progress tracker](images/drivers-allgreen-new.png)
 
-11. Review the results. If your submission failed, make any necessary changes and resubmit.
+10. Review the results. If your submission failed, make any necessary changes and resubmit.
 
 ## <span id="related_topics"></span>Related topics
 
@@ -109,8 +101,3 @@ For information about creating and digitally signing an **.hckx** file, see the 
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20Create%20a%20new%20hardware%20submission%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
-

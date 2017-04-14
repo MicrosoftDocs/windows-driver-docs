@@ -1,9 +1,5 @@
 ---
-Description: 'This topic describes how a USB client driver can use Windows Driver Model (WDM) driver routines to allocate and format an URB before sending the request to the Microsoft-provided USB driver stack.'
-MS-HAID: 'buses.how\_to\_add\_xrb\_support\_for\_client\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic describes how a USB client driver can use Windows Driver Model (WDM) driver routines to allocate and format an URB before sending the request to the Microsoft-provided USB driver stack.
 title: Allocating and Building URBs
 author: windows-driver-content
 ---

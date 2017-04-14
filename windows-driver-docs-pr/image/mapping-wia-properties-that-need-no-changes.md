@@ -2,12 +2,6 @@
 title: Mapping WIA Properties That Need No Changes
 author: windows-driver-content
 description: Mapping WIA Properties That Need No Changes
-MS-HAID:
-- 'WIA\_Fundamentals\_aeb28af3-0b7e-408a-b03b-b5f1a756776f.xml'
-- 'image.mapping\_wia\_properties\_that\_need\_no\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ceb0fe83-9803-4ba5-9a9f-7c722389db0b
 ---
 

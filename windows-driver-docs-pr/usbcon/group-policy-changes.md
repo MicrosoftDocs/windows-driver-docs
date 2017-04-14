@@ -1,11 +1,5 @@
 ---
 Description: Group Policy Changes
-MS-HAID:
-- 'usbinterKG\_ad287511-6526-4233-9817-4512f8a47044.xml'
-- 'buses.group\_policy\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Group Policy Changes
 author: windows-driver-content
 ---

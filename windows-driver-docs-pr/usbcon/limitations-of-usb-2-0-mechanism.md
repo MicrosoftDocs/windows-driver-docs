@@ -1,11 +1,6 @@
 ---
-Description: 'Describes the limitations of the Universal Serial Bus (USB) 2.0 Selective Suspend mechanism.'
-MS-HAID: 'buses.limitations\_of\_usb\_2\_0\_mechanism'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Limitations of USB 2.0 mechanism'
-author: windows-driver-content
+Description: Describes the limitations of the Universal Serial Bus (USB) 2.0 Selective Suspend mechanism.
+title: Limitations of USB 2.0 mechanism
 ---
 
 # Limitations of USB 2.0 mechanism

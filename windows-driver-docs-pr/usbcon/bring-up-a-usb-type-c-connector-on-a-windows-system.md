@@ -1,11 +1,6 @@
-﻿---
-Description: 'Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.'
-MS-HAID: 'buses.bring\_up\_a\_usb\_type-c\_connector\_on\_a\_windows\_system'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Write a USB Type-C connector driver'
-author: windows-driver-content
+---
+Description: Describes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.
+title: Write a USB Type-C connector driver
 ---
 
 # Write a USB Type-C connector driver
@@ -112,7 +107,11 @@ The UCM connector object (UCMCONNECTOR) represents the USB Type-C connector and 
 
 Here is the summary of the sequence in which the client driver retrieves a UCMCONNECTOR handle for the connector. Perform these tasks in your driver's
 
+<<<<<<< HEAD
 1.  Call [**UcmInitializeDevice**](https://msdn.microsoft.com/library/windows/hardware/mt187920) by passing the reference to a [**UCM\_MANAGER\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187932) structure. The driver must call this method in the [**EVT_WDF_DRIVER_DEVICE_ADD**](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function before calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
+=======
+1.  Call [**UcmInitializeDevice**](https://msdn.microsoft.com/library/windows/hardware/mt187920) by passing the reference to a [**UCM\_MANAGER\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187932) structure. The driver must call this method in the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function before calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
+>>>>>>> master
 2.  Specify the initialization parameters for the USB Type-C connector in a [**UCM\_CONNECTOR\_TYPEC\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/mt187930) structure. This includes the operating mode of the connector, whether it's a downstream-facing port, upstream-facing port, or is dual-role capable. It also specifies the USB Type-C current levels when the connector is a power source. A USB Type-C connector can be designed such that it can act a 3.5 mm audio jack. If the hardware supports the feature, the connector object must be initialized accordingly.
 
     In the structure, you must also register the client driver's callback function for handling data roles.
@@ -131,7 +130,11 @@ Here is the summary of the sequence in which the client driver retrieves a UCMCO
     [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://msdn.microsoft.com/library/windows/hardware/mt187819)  
     Sets the power role of the connector to the specified role when attached to a partner connector.
 
+<<<<<<< HEAD
 4.  Call [**UcmConnectorCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187909) and retrieve a UCMCONNECTOR handle for the connector. Make sure you call this method after the client driver has created the framework device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). An appropriate place for this call can be in driver's [**EVT_WDF_DEVICE_PREPARE_HARDWARE**](https://msdn.microsoft.com/library/windows/hardware/ff540880) or [**EVT_WDF_DEVICE_D0_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff540848).
+=======
+4.  Call [**UcmConnectorCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187909) and retrieve a UCMCONNECTOR handle for the connector. Make sure you call this method after the client driver has created the framework device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926). An appropriate place for this call can be in driver's [*EVT\_WDF\_DEVICE\_PREPARE\_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) or [*EVT\_WDF\_DEVICE\_D0\_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/ff540848).
+>>>>>>> master
 
 ```
 EVT_UCM_CONNECTOR_SET_DATA_ROLE     EvtSetDataRole;

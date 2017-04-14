@@ -2,12 +2,6 @@
 title: Registering to Receive Notifications
 author: windows-driver-content
 description: Registering to Receive Notifications
-MS-HAID:
-- 'splarch\_e8c15596-c997-4403-be87-19dca71117f4.xml'
-- 'print.registering\_to\_receive\_notifications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2442c204-c9d8-49fa-93ae-02623d08119c
 keywords: ["spooler notification WDK print , registering to receive", "print spooler notification WDK , registering to receive", "receiving spooler notifications", "registering for spooler notifications", "RegisterForPrintAsyncNotifications", "UnRegisterForPrintAsyncNotifications", "unregistering for spooler notifications"]
 ---

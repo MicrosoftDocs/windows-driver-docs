@@ -2,12 +2,6 @@
 title: Setting the Device Class
 author: windows-driver-content
 description: Setting the Device Class
-MS-HAID:
-- 'di\_433a60ce-4a36-4a5f-9c98-0debdd66cb50.xml'
-- 'hid.setting\_the\_device\_class'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6e2e043f-30a7-46b0-8773-8bca819d2841
 keywords: ["INF files WDK joysticks , device class setting"]
 ---

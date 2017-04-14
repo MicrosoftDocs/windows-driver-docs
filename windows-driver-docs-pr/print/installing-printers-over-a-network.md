@@ -2,12 +2,6 @@
 title: Installing Printers Over a Network
 author: windows-driver-content
 description: Installing Printers Over a Network
-MS-HAID:
-- 'prtinst\_8b85e633-2af4-49b7-9317-bc7465de0167.xml'
-- 'print.installing\_printers\_over\_a\_network'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 217fcc1f-0193-4b7f-882c-23b39d676670
 keywords: ["installing drivers WDK printer , over network", "printer driver installations WDK , over network", "network printer installations WDK", "over network printer installations WDK", "remote printers WDK", "network-shared printers WDK", "sharing printers over network", "connections WDK printer"]
 ---

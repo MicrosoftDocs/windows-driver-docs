@@ -2,9 +2,6 @@
 title: V4 Printer Driver Development Best Practices
 author: windows-driver-content
 description: Since v4 printer drivers are invoked directly from the Driver Store, and they are also expected to communicate with low-rights applications like Internet Explorer, it is important to follow the recommended best practices when you develop v4 printer drivers.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D26241F5-A514-40D3-8618-70C8636B7405
 ---
 

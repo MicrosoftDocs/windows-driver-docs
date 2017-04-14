@@ -2,12 +2,6 @@
 title: WIA Item Flags for Flatbed Scanners
 author: windows-driver-content
 description: WIA Item Flags for Flatbed Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_765b0be6-8df1-4562-a179-d91766913dbc.xml'
-- 'image.wia\_item\_flags\_for\_flatbed\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd070e41-47e9-4165-a250-e759b8a214aa
 ---
 

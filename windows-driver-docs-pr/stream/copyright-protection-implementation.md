@@ -2,12 +2,6 @@
 title: Copyright Protection Implementation
 author: windows-driver-content
 description: Copyright Protection Implementation
-MS-HAID:
-- 'dvd-design\_4ad57b8a-828d-47b5-87db-841564f3da90.xml'
-- 'stream.copyright\_protection\_implementation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 42d91ad3-615a-461a-846b-4876ac8decea
 keywords: ["DVD decoder minidrivers WDK , copyright protection", "decoder minidrivers WDK DVD , copyright protection", "copyright protection WDK DVD decoder", "content scrambling system WDK DVD decoder", "CSS WDK DVD decoder", "DVD decrypters WDK", "key exchange WDK DVD decoder", "decryption WDK DVD decoder", "encryption WDK DVD decoder", "cryptography WDK DVD decoder", "authentication WDK DVD decoder"]
 ---

@@ -2,12 +2,6 @@
 title: Sample Printer INF Files
 author: windows-driver-content
 description: Sample Printer INF Files
-MS-HAID:
-- 'prtinst\_80e93d0f-775b-4c18-baa8-c5517c65ecc2.xml'
-- 'print.sample\_printer\_inf\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e57f11fe-b114-46e4-a4ae-b48f04613da7
 keywords: ["INF files WDK print , samples"]
 ---

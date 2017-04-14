@@ -67,6 +67,15 @@ Windows 7 and later support dynamic stream inspections. A dynamic stream inspec
 
 To perform stream inspections only on connections that the driver is interested in, a callout can set the **FWP\_CALLOUT\_FLAG\_CONDITIONAL\_ON\_FLOW** flag in the **Flags** member of the [**FWPS\_CALLOUT0**](https://msdn.microsoft.com/library/windows/hardware/ff551224) structure. This callout will be ignored on all other connections. Performance will be improved and the driver will not have to maintain unnecessary state data.
 
+## Stream Layer Waterfall Model
+
+The stream layer in WFP follows a strict waterfall model; that is, a callout in this layer will be allowed to inspect a stream segment only if the previous callout (if any) explicitly permitted it. If a callout blocks an indicated segment, that segment is permanently taken out of the stream and no callouts will be allowed to inspect it.
+
+Moreover:
+
+1. Every non-inspect callout at the stream layer must explicitly assign a value to the **actionType** member of the *classifyOut* parameter regardless of what value may have been previously set in that parameter.
+2. The **FWPS\_RIGHT\_ACTION\_WRITE** flag in the **rights** member of the *classifyOut* parameter has no significance in the WFP stream layer. Callouts at this layer should not check for the presence of this flag. Callouts may process the indicated *layerData* parameter regardless of the value of *classifyOut*->**rights**.
+
  
 
  

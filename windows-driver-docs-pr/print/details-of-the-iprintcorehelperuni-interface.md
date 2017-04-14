@@ -2,12 +2,6 @@
 title: Details of the IPrintCoreHelperUni Interface
 author: windows-driver-content
 description: Details of the IPrintCoreHelperUni Interface
-MS-HAID:
-- 'drvarch\_8649600c-ca8f-4a6c-900a-35cc03429003.xml'
-- 'print.details\_of\_the\_iprintcorehelperuni\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fd9a2024-2960-4546-a5a1-cd0d9739194f
 keywords: ["IPrintCoreHelperUni"]
 ---

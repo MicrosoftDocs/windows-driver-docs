@@ -2,12 +2,6 @@
 title: Supporting Multifunction PCI Devices
 author: windows-driver-content
 description: Supporting Multifunction PCI Devices
-MS-HAID:
-- 'mf-supp\_1b21d9a2-c4a9-45f9-b81d-386e482c82fb.xml'
-- 'multifunc.supporting\_multifunction\_pci\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 57cbbcdb-7201-4bf4-a2a0-e613607e4509
 keywords: ["multifunction devices WDK , PCI", "PCI multifunction standard WDK", "functional device objects WDK multifunction devices", "FDOs WDK multifunction devices", "physical device objects WDK multifunction devices", "PDOs WDK multifunction devices"]
 ---

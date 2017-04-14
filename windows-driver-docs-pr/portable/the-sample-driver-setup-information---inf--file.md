@@ -1,8 +1,6 @@
 ---
-Description: 'The Sample Driver Setup Information (.inf) File'
-MS-HAID: 'wpddk.the\_sample\_driver\_setup\_information\_\_\_inf\_\_file'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'The Sample Driver Setup Information (.inf) File'
+Description: The Sample Driver Setup Information (.inf) File
+title: The Sample Driver Setup Information (.inf) File
 ---
 
 # The Sample Driver Setup Information (.inf) File
@@ -37,7 +35,7 @@ The WpdHelloWorldDriver project contains a setup information (.inf) file named *
 <p>Example: <code>[Basic_Install.CoInstallers_AddReg]</code></p>
 <p><code>HKR,,CoInstallers32,0x00010000,&quot;WUDFCoInstaller.dll&quot;</code></p></td>
 </tr>
-<tr class="even">
+ <tr class="even">
 <td align="left">Basic_Install.wdf</td>
 <td align="left">UmdfService directive</td>
 <td align="left">This directive is required.
@@ -54,13 +52,13 @@ The WpdHelloWorldDriver project contains a setup information (.inf) file named *
 <td align="left">DDInstall.Services</td>
 <td align="left">Includes directive</td>
 <td align="left">This directive is required if the driver reuses the MTP class driver components. Otherwise, it should not appear.
-<p>The necessary system files must be referenced by using the appropriate Includes or Needs directives. (These files are WpdMtpDr.dll, <em>WpdMtp.dll</em>, <em>WpdMtpUs.dll</em>, <em>WpdConns.dll,</em> and <em>WpdUsb.sys</em>). The necessary service files must also be referenced. (The single service file that requires reference is <em>WpdUsb.sys</em> (for Windows Vista) or <em>WinUSB.sys</em> (for Windows 7).)</p></td>
+<p>The necessary system files must be referenced by using the appropriate Includes or Needs directives. (These files are <em>WpdMtpDr.dll</em>, <em>WpdMtp.dll</em>, <em>WpdMtpUs.dll</em>, <em>WpdConns.dll</em> (for Windows Vista), and either <em>WpdUsb.sys</em> (for Windows Vista) or <em>WinUsb.sys</em> (for Windows 7 and later)). The necessary service files must also be referenced. (The single service file that requires reference is <em>WpdUsb.sys</em> (for Windows Vista) or <em>WinUSB.sys</em> (for Windows 7 and later).)</p></td>
 </tr>
 <tr class="even">
 <td align="left">DDInstall.Services</td>
 <td align="left">Needs directive</td>
 <td align="left">This directive is required if the driver reuses the MTP class driver components. Otherwise, it should not appear.
-<p>The necessary system files must be referenced by using the appropriate Includes or Needs directives. (These files are: <em>WpdMtpDr.dll</em>, <em>WpdMtp.dll,WpdMtpUs.dll</em>, <em>WpdConns.dll</em>, and <em>WpdUsb.sys</em>). The necessary service files must also be referenced. (The single service file that requires reference is <em>WpdUsb.sys</em> (for Windows Vista) or <em>WinUSB.sys</em> (for Windows 7).)</p></td>
+<p>The necessary system files must be referenced by using the appropriate Includes or Needs directives. (These files are: <em>WpdMtpDr.dll</em>, <em>WpdMtp.dll,WpdMtpUs.dll</em>, <em>WpdConns.dll</em> (for Windows Vista), and either <em>WpdUsb.sys</em> (for Windows Vista) or <em>WinUsb.sys</em> (for Windows 7 and later)). The necessary service files must also be referenced. (The single service file that requires reference is <em>WpdUsb.sys</em> (for Windows Vista) or <em>WinUSB.sys</em> (for Windows 7 and later).)</p></td>
 </tr>
 <tr class="odd">
 <td align="left">Device_AddReg</td>

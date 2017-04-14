@@ -1,12 +1,6 @@
 ---
 title: Certify a New App
 description: Certify a New App
-MS-HAID:
-- 'p\_dashboard.certify\_a\_new\_app'
-- 'hw\_dashboard.certify\_a\_new\_app'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2a11dfe3-e197-4455-ad79-2c9ef5897c46
 ---
 

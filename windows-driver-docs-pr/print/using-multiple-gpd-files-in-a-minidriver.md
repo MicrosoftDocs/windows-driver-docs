@@ -2,12 +2,6 @@
 title: Using Multiple GPD Files in a Minidriver
 author: windows-driver-content
 description: Using Multiple GPD Files in a Minidriver
-MS-HAID:
-- 'nt5gpd\_319226d9-78d3-4e72-8d69-5739692ebe9d.xml'
-- 'print.using\_multiple\_gpd\_files\_in\_a\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ec08b46-a286-4af8-a5d4-e0306f731b3f
 keywords: ["GPD files WDK Unidrv , multiple", "multiple GPD files WDK Unidrv"]
 ---

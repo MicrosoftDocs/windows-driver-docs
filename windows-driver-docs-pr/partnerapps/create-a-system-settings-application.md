@@ -1,9 +1,6 @@
 ---
 title: Create a partner settings app
 description: Create a partner settings app
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b549c11-f8b2-46e8-9d22-4edc787743ee
 ---
 

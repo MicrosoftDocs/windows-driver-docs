@@ -2,12 +2,6 @@
 title: Required Flatbed Item Properties
 author: windows-driver-content
 description: Required Flatbed Item Properties
-MS-HAID:
-- 'WIA\_scanner\_tree\_8d13912b-5bca-48fd-ba60-83bb6a6bd03c.xml'
-- 'image.required\_flatbed\_item\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5af295de-b5ad-47c7-b1db-9d5685ed8d19
 ---
 

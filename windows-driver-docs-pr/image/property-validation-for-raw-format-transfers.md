@@ -2,12 +2,6 @@
 title: Property Validation for RAW Format Transfers
 author: windows-driver-content
 description: Property Validation for RAW Format Transfers
-MS-HAID:
-- 'WIA\_db\_trans\_dd5d09b8-4c38-4f8f-bb4c-5a341d1b16e4.xml'
-- 'image.property\_validation\_for\_raw\_format\_transfers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ad58f94e-d59e-4d04-be27-cc87f89f3d76
 ---
 

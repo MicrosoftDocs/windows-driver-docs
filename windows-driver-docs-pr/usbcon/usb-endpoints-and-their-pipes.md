@@ -1,9 +1,5 @@
 ---
-Description: 'A USB device has endpoints that are used to for data transfers. On the host side, endpoints are represented by pipes. This topic differentiates between those two terms.'
-MS-HAID: 'buses.usb\_endpoints\_and\_their\_pipes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: A USB device has endpoints that are used to for data transfers. On the host side, endpoints are represented by pipes. This topic differentiates between those two terms.
 title: USB endpoints and their pipes
 author: windows-driver-content
 ---

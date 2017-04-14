@@ -2,12 +2,6 @@
 title: GDL Elements
 author: windows-driver-content
 description: GDL Elements
-MS-HAID:
-- 'gplfiles\_97143c56-a289-45c8-a201-1fec72ad14a7.xml'
-- 'print.gdl\_elements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9584b9aa-befe-45a3-9cf4-996e40083d3d
 keywords: ["GDL WDK , elements", "printer drivers WDK , Generic Description Language"]
 ---

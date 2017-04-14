@@ -1,7 +1,5 @@
-﻿---
+---
 Description: Testing and Debugging the Sample Driver
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_testing\_and\_debugging'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Testing and Debugging the Sample Driver
 ---
 

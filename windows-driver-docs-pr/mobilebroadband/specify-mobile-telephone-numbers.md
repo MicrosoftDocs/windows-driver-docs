@@ -1,9 +1,6 @@
 ---
 title: Specify mobile telephone numbers
 description: Specify mobile telephone numbers
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3b7037c5-4ad6-4285-a9dd-05955621d149
 ---
 

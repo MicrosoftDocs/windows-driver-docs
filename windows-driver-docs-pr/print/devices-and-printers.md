@@ -2,12 +2,6 @@
 title: Devices and Printers
 author: windows-driver-content
 description: Devices and Printers
-MS-HAID:
-- 'prn\_dxpui\_033a5bfb-8346-403c-9205-19031c3ca057.xml'
-- 'print.devices\_and\_printers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78a2a012-a9be-4280-a33e-5d1c29d4ff07
 ---
 

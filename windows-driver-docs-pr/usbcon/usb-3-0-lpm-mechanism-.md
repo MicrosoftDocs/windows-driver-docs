@@ -1,11 +1,6 @@
 ---
-Description: 'This topic describes the USB 3.0 LPM mechanism.There is an addendum to the official USB 2.0 Specification (USB2\_LinkPowerMangement\_ECN), which defines LPM for newer USB 2.0 hardware.'
-MS-HAID: 'buses.usb\_3\_0\_lpm\_mechanism\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'USB 3.0 LPM mechanism'
-author: windows-driver-content
+Description: This topic describes the USB 3.0 LPM mechanism.There is an addendum to the official USB 2.0 Specification (USB2\_LinkPowerMangement\_ECN), which defines LPM for newer USB 2.0 hardware.
+title: USB 3.0 LPM mechanism
 ---
 
 # USB 3.0 LPM mechanism

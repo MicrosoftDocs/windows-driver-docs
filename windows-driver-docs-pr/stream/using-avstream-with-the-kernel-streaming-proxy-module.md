@@ -2,12 +2,6 @@
 title: Using AVStream with the Kernel Streaming Proxy Module
 author: windows-driver-content
 description: Using AVStream with the Kernel Streaming Proxy Module
-MS-HAID:
-- 'avsover\_b8a00f4a-f922-464a-9920-dc2abb0a3806.xml'
-- 'stream.using\_avstream\_with\_the\_kernel\_streaming\_proxy\_module'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8ae1385-337e-46ad-841e-fbdf5d685210
 keywords: ["Kernel Streaming Proxy WDK AVStream", "KS proxy WDK AVStream", "proxy user-mode connections WDK AVStream", "media types WDK AVStream", "DirectShow filters WDK AVStream", "AVStream Kernel Streaming Proxy WDK"]
 ---

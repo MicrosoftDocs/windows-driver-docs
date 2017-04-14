@@ -1,11 +1,6 @@
 ---
-Description: 'This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.'
-MS-HAID: 'buses.usb\_faq\_\_introductory\_level'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'USB in Windows - FAQ'
-author: windows-driver-content
+Description: This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.
+title: USB in Windows - FAQ
 ---
 
 # USB in Windows - FAQ

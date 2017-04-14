@@ -2,12 +2,6 @@
 title: Compressing Raster Data
 author: windows-driver-content
 description: Compressing Raster Data
-MS-HAID:
-- 'nt5gpd\_af2bb2eb-9bb8-40c8-a588-6fa8937d9432.xml'
-- 'print.compressing\_raster\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c74e7f3-5601-4510-9fcd-261f5cd48e9c
 keywords: ["Unidrv, raster data compression", "GPD files WDK Unidrv , raster data compression", "raster data compression WDK Unidrv", "compressing raster data WDK Unidrv", "Unidrv WDK print"]
 ---

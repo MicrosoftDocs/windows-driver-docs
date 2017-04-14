@@ -1,9 +1,6 @@
 ---
 title: APN elements
 description: APN elements
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 551e713e-7ac9-477f-966e-214b63f94507
 ---
 

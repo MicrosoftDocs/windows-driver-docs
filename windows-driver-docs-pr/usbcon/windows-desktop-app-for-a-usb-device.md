@@ -1,9 +1,5 @@
 ---
-Description: 'In this topic you'll learn about how an application can call WinUSB Functions to communicate with a USB device.'
-MS-HAID: 'buses.windows\_desktop\_app\_for\_a\_usb\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: In this topic you'll learn about how an application can call WinUSB Functions to communicate with a USB device.
 title: Windows desktop app for a USB device
 author: windows-driver-content
 ---

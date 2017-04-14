@@ -2,12 +2,6 @@
 title: COM Interface Design Skills
 author: windows-driver-content
 description: COM Interface Design Skills
-MS-HAID:
-- 'wdtfdevguide\_e9752588-f922-4a21-9870-09f5a5ebbba6.xml'
-- 'dtf.com\_interface\_design\_skills'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a3adbc2-af6f-4495-8993-fd25d56ffad6
 keywords: ["Windows Device Testing Framework WDK , action interfaces", "WDTF WDK , action interfaces", "action interfaces WDK WDTF"]
 ---

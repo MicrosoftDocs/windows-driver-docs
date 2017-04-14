@@ -2,12 +2,6 @@
 title: Distributed Scan Management (DSM)
 author: windows-driver-content
 description: Distributed Scan Management (DSM)
-MS-HAID:
-- 'dsm\_design\_ecec8333-1b63-40a6-b9b3-c32ea1c759f7.xml'
-- 'image.distributed\_scan\_management\_\_dsm\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 830dac08-6d3c-4f1d-b7eb-2c51878ad6b3
 ---
 

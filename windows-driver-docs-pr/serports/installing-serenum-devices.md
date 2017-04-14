@@ -2,12 +2,6 @@
 title: Installing Serenum Devices
 author: windows-driver-content
 description: Installing Serenum Devices
-MS-HAID:
-- 'sseovr\_840e9103-7898-4570-99a0-bfa19d7feee8.xml'
-- 'serports.installing\_serenum\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: abb58ce0-7afb-43eb-81e0-1942d451355a
 keywords: ["Serenum driver WDK , device installations"]
 ---

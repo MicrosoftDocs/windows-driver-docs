@@ -2,12 +2,6 @@
 title: Creating WDTF Scenarios
 author: windows-driver-content
 description: .
-MS-HAID:
-- 'wdtfdevguide\_2fa9104a-0c69-4ac5-8f31-347ea3976d8d.xml'
-- 'dtf.creating\_wdtf\_scenarios'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f9e3de20-28be-40c6-802c-f4637b3f6c20
 keywords: ["Windows Device Testing Framework WDK , scripts", "WDTF WDK , scripts", "scripts WDK WDTF", "test scripts WDK WDTF", "phantom devices WDK WDTF", "removed devices WDK WDTF", "hot-swapped devices WDK WDTF"]
 ---

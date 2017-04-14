@@ -1,11 +1,6 @@
 ---
-Description: 'Developing Windows drivers for emulated USB devices (UDE)'
-MS-HAID: 'buses.developing\_windows\_drivers\_for\_emulated\_usb\_host\_controllers\_and\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Developing Windows drivers for emulated USB devices (UDE)'
-author: windows-driver-content
+Description: Developing Windows drivers for emulated USB devices (UDE)
+title: Developing Windows drivers for emulated USB devices (UDE)
 ---
 
 # Developing Windows drivers for emulated USB devices (UDE)
@@ -47,7 +42,7 @@ author: windows-driver-content
 <p>[Write a UDE client driver](writing-a-ude-client-driver.md)</p>
 <p><strong>Programming reference sections</strong></p>
 <p>[Emulated USB host controller driver programming reference](https://msdn.microsoft.com/library/windows/hardware/mt628025)</p>
-<p>[**WDF Reference**](https://msdn.microsoft.com/library/windows/hardware/dn265590)</p></td>
+<p>[WDF Reference](https://msdn.microsoft.com/library/windows/hardware/dn265590)</p></td>
 </tr>
 </tbody>
 </table>

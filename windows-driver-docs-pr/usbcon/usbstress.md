@@ -1,9 +1,5 @@
 ---
-Description: 'USBStress is the combination of a user-mode application (usbstress.exe) and driver installation package for the kernel-mode driver, usbstress.sys.'
-MS-HAID: 'buses.usbstress'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: USBStress is the combination of a user-mode application (usbstress.exe) and driver installation package for the kernel-mode driver, usbstress.sys.
 title: USBStress
 author: windows-driver-content
 ---

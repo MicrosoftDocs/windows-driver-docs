@@ -2,12 +2,6 @@
 title: Command String Argument Types
 author: windows-driver-content
 description: Command String Argument Types
-MS-HAID:
-- 'nt5gpd\_0f00c927-8c1a-4b6c-92c3-cbe205ade6bf.xml'
-- 'print.command\_string\_argument\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c7540c3f-265a-4fee-aca9-b8cc10b6be8f
 keywords: ["printer commands WDK Unidrv , strings", "command strings WDK Unidrv", "strings WDK Unidrv"]
 ---

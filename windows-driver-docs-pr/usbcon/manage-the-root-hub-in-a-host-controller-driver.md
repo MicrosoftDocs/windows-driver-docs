@@ -1,9 +1,5 @@
 ---
-Description: 'UCX performs root hub management. It simulates and manages virtual control and interrupt endpoints. UCX creates those virtual endpoints when the host controller driver creates the root hub object.'
-MS-HAID: 'buses.manage\_the\_root\_hub\_in\_a\_host\_controller\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: UCX performs root hub management. It simulates and manages virtual control and interrupt endpoints. UCX creates those virtual endpoints when the host controller driver creates the root hub object.
 title: Root hub callback functions of a USB host controller driver
 author: windows-driver-content
 ---

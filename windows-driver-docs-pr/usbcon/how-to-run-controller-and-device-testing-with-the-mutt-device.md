@@ -1,9 +1,5 @@
 ---
-Description: 'The goal of controller testing is to generate a complete set of possible traffic patterns from hubs and devices.'
-MS-HAID: 'buses.how\_to\_run\_controller\_and\_device\_testing\_with\_the\_mutt\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: The goal of controller testing is to generate a complete set of possible traffic patterns from hubs and devices.
 title: USB host controller testing with MUTT devices
 author: windows-driver-content
 ---

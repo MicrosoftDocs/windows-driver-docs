@@ -1,11 +1,5 @@
 ---
 Description: Descriptors on USB Composite Devices
-MS-HAID:
-- 'usbsystem\_c2ef6fcf-aadf-4411-a58d-335a0fd56803.xml'
-- 'buses.descriptors\_on\_composite\_usb\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 title: Descriptors on USB Composite Devices
 author: windows-driver-content
 ---

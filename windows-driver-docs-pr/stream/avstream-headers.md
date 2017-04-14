@@ -2,12 +2,6 @@
 title: AVStream Headers
 author: windows-driver-content
 description: AVStream Headers
-MS-HAID:
-- 'avsover\_cb4d3b72-0fa7-4b94-9c63-1073a999393a.xml'
-- 'stream.avstream\_headers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2afd5a1f-385a-4370-b751-e6f5d28d1d4e
 keywords: ["AVStream headers WDK", "headers WDK AVStream"]
 ---

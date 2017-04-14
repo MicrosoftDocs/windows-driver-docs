@@ -2,12 +2,6 @@
 title: WIA Item Tree Architecture
 author: windows-driver-content
 description: WIA Item Tree Architecture
-MS-HAID:
-- 'WIA\_tree\_ecd274ff-586a-430b-bd62-6c19d5508a20.xml'
-- 'image.wia\_item\_tree\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e0f2b65-7150-4f8a-9780-abdaf93e44d6
 ---
 

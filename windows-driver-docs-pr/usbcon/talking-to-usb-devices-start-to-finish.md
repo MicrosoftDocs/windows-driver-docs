@@ -1,11 +1,6 @@
 ---
-Description: 'Use the Windows Runtime APIs, introduced in Windows 8.1, to write Windows Store apps that gives users access to their peripheral USB device.'
-MS-HAID: 'buses.talking\_to\_usb\_devices\_start\_to\_finish'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Talking to USB devices, start to finish (Windows Store app)'
-author: windows-driver-content
+Description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write Windows Store apps that gives users access to their peripheral USB device.
+title: Talking to USB devices, start to finish (Windows Store app)
 ---
 
 # Talking to USB devices, start to finish (Windows Store app)
@@ -269,7 +264,7 @@ For more information, see [How to get notifications if devices are added, remove
 <li>On the <strong>Device Info</strong> page, enter <strong>Model Name</strong>, <strong>Manufacturer</strong>, and <strong>Description</strong>.</li>
 <li>On the <strong>Hardware Info</strong> page, enter the hardware ID of your device.</li>
 </ul>
-<p><img src="../common/wedge.gif" /><strong>To declare the app as a privileged app for your device, follow these instructions:</strong></p>
+<p><strong>To declare the app as a privileged app for your device, follow these instructions:</strong></p>
 <ol>
 <li><p>On the <strong>App Info</strong> page, in the <strong>Privileged application</strong> group, enter the <strong>Package name</strong>, <strong>Publisher name</strong>, and <strong>Windows Store App ID</strong>.</p>
 <p><img src="images/privileged-app.png" alt="device metatdata for privileged apps" /></p>
@@ -309,7 +304,7 @@ For more information, see [How to get notifications if devices are added, remove
 <div>
  
 </div>
-<p><img src="../common/wedge.gif" /><strong>Background task class</strong></p>
+<p><strong>Background task class</strong></p>
 <ol>
 <li>Implements the [<strong>IBackgroundTask</strong>](https://msdn.microsoft.com/library/windows/apps/br224794) interface required by the Windows background task infrastructure.</li>
 <li>Obtains the DeviceUseDetails instance passed to the class in the <strong>Run</strong> method and uses this instance to report progress back to the Windows Store app and to register for cancellation events.</li>

@@ -2,12 +2,6 @@
 title: Introduction to Segmentation Filters
 author: windows-driver-content
 description: Introduction to Segmentation Filters
-MS-HAID:
-- 'WIA\_tree\_c0556924-4e97-4bde-bc7c-13401722e8e8.xml'
-- 'image.introduction\_to\_segmentation\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f73aa08-c3ef-4e97-9e3e-a1f0325cd599
 ---
 

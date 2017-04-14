@@ -235,6 +235,7 @@
 ##### [Access Control List](access-control-list.md)
 #### [Privileges](privileges.md)
 #### [Auditing](auditing.md)
+#### [Kernel Extended Attributes](kernel-extended-attributes.md)
 ### [File System Security Issues](file-system-security-issues.md)
 #### [Semantic Model Checks](semantic-model-checks.md)
 ##### [Create Processing](create-processing.md)
@@ -271,4 +272,3 @@
 ### [Offloaded Data Transfers](offloaded-data-transfers.md)
 ### [Locating Disk Images Correctly](locating-disk-images-correctly.md)
 ### [Understanding Volume Enumerations with Duplicate Volume Names](understanding-volume-enumerations-with-duplicate-volume-names.md)
-

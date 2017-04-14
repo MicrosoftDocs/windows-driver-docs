@@ -2,12 +2,6 @@
 title: Image Geometry Properties
 author: windows-driver-content
 description: Image Geometry Properties
-MS-HAID:
-- 'WIA\_drv\_cam\_7a26565d-8e08-4854-b6ef-81303bc481bf.xml'
-- 'image.image\_geometry\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d1343ad4-3a54-414c-bc08-e07e0fb079cd
 ---
 

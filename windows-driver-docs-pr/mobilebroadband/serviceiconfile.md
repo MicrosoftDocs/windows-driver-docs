@@ -1,9 +1,6 @@
 ---
 title: ServiceIconFile
 description: ServiceIconFile
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a35a121d-66a8-485e-ac12-adc653db3572
 ---
 

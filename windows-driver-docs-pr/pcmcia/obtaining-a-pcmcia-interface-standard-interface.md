@@ -1,12 +1,6 @@
 ---
 title: Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface
 description: Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface
-MS-HAID:
-- 'mcch2\_136e3e61-0080-48cf-8372-1f276a39139e.xml'
-- 'PCMCIA.obtaining\_a\_pcmcia\_interface\_standard\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 475bf66a-5b6e-4a06-95f7-b7280dd7276d
 ---
 

@@ -2,9 +2,6 @@
 title: Extended camera controls
 author: windows-driver-content
 description: Extended controls use the KSPROPERTY mechanism to expose camera controls to the application.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B480C007-7DCA-4CFB-9169-BE2D0B2D2137
 ---
 
@@ -18,10 +15,10 @@ The following list of standardized extended controls (defined by Media Foundatio
 -   [Metadata](#metadata)
 -   [Focus priority](#focus-priority)
 -   [Focus state](#focus-state)
--   [Extended region of interest (ROI)](#extended-region-of-interest--roi-)
+-   [Extended region of interest (ROI)](#extended-region-of-interest-roi)
 -   [Photo confirmation](#photo-confirmation)
 -   [Photo sequence submode](#photo-sequence-submode)
--   [Photo capture feedback (applied device settings)](#photo-capture-feedback--applied-device-settings-)
+-   [Photo capture feedback (applied device settings)](#photo-capture-feedback-applied-device-settings)
 -   [Integer ISO](#integer-iso)
 -   [Advanced focus](#advanced-focus)
 -   [Flash](#flash)

@@ -1,9 +1,6 @@
 ---
 title: Hotspot 2.0
 description: Hotspot 2.0
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4dbd242d-8745-4ab2-b1dc-9f9dd9a73b42
 ---
 

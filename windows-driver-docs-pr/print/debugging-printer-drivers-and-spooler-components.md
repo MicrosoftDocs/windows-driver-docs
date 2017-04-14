@@ -2,12 +2,6 @@
 title: Debugging Printer Drivers and Spooler Components
 author: windows-driver-content
 description: Debugging Printer Drivers and Spooler Components
-MS-HAID:
-- 'prntools\_07651c80-5f4a-4360-b852-03f6418b6ff7.xml'
-- 'print.debugging\_printer\_drivers\_and\_spooler\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: baa793b8-fda5-4ec2-b670-954abf809b4c
 ---
 

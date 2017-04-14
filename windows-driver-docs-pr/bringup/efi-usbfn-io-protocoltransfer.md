@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.Transfer
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.Transfer
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0585de75-9268-4964-8c5f-dcc3338e5287
 ---
 

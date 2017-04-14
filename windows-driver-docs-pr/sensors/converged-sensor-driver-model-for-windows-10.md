@@ -2,9 +2,6 @@
 title: Universal sensor driver model for Windows 10
 author: windows-driver-content
 description: The topics in this section provide information about the universal sensor driver model for Windows 10.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B8DF3DDB-C0E9-41F8-8FC0-0869A10FF565
 ---
 

@@ -2,12 +2,6 @@
 title: Features of System-Supplied Parallel Drivers
 author: windows-driver-content
 description: Features of System-Supplied Parallel Drivers
-MS-HAID:
-- 'sspd\_73eda256-542a-4967-8b5f-183f45723b1d.xml'
-- 'parports.features\_of\_system\_supplied\_parallel\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6d579a88-4608-4333-9789-e10c562fc644
 keywords: ["system-supplied parallel drivers WDK , about system-supplied parallel drivers", "Parclass driver", "Parport driver", "functional device objects WDK ports", "FDOs WDK ports", "IEEE 1284 WDK"]
 ---

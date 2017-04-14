@@ -2,12 +2,6 @@
 title: WIA Flatbed Driver
 author: windows-driver-content
 description: WIA Flatbed Driver
-MS-HAID:
-- 'WIA\_db\_hello\_37c6a265-24ac-481e-a120-05a9ea42d46e.xml'
-- 'image.wia\_flatbed\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 83c35b1f-10e0-47e1-97cc-5a7a79fb8088
 ---
 

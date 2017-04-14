@@ -1,9 +1,5 @@
 ---
-Description: 'USB Dual Role controllers are now supported in Windows, starting with Windows 10.'
-MS-HAID: 'buses.usb\_dual\_role\_driver\_stack\_architecture'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: USB Dual Role controllers are now supported in Windows, starting with Windows 10.
 title: USB Dual Role Driver Stack Architecture
 author: windows-driver-content
 ---

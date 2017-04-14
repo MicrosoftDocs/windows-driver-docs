@@ -1,9 +1,6 @@
 ---
 title: V4 Printer Driver Setup
 author: windows-driver-content
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A72A36B8-4C3E-49C6-B85A-6D0DD1CBD66C
 description: 
 ---

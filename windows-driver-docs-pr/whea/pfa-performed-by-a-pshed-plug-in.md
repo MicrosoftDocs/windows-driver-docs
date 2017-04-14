@@ -2,12 +2,6 @@
 title: PFA Performed by a PSHED Plug-In
 author: windows-driver-content
 description: PFA Performed by a PSHED Plug-In
-MS-HAID:
-- 'whea\_0202b7a8-e40b-451e-bbd5-0c21c3ef27c4.xml'
-- 'whea.pfa\_performed\_by\_a\_pshed\_plug\_in'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e9876c86-b059-406f-a01a-7670ab294098
 keywords: ["predictive failure analysis (PFA) WDK WHEA , PSHED plug-in", "PFA WDK WHEA , PSHED plug-in", "platform-specific hardware error driver (PSHED) WDK WHEA", "platform-specific hardware error driver (PSHED) WDK WHEA , predictive failure analysis", "PSHED plug-in WDK WHEA", "PSHED plug-in WDK WHEA , predictive failure analysis"]
 ---

@@ -2,12 +2,6 @@
 title: Sample Printer Interface DLL
 author: windows-driver-content
 description: Sample Printer Interface DLL
-MS-HAID:
-- 'drvarch\_e3f183b7-c5b6-4c07-bec7-2646bc56a1cf.xml'
-- 'print.sample\_printer\_interface\_dll'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf33c353-a565-436a-9bd6-c92f5df85d65
 keywords: ["printer interface DLL WDK , samples"]
 ---

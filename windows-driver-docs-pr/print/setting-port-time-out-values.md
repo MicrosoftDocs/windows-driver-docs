@@ -2,12 +2,6 @@
 title: Setting Port Time-Out Values
 author: windows-driver-content
 description: Setting Port Time-Out Values
-MS-HAID:
-- 'provider\_a93d02a8-81fe-451d-bd46-a8440c13faa8.xml'
-- 'print.setting\_port\_time\_out\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bf39670b-440d-46f9-9110-790d36eb3b49
 keywords: ["port management WDK print , time-out values", "time-outs WDK print", "OpenPort", "SetPortTimeOuts"]
 ---

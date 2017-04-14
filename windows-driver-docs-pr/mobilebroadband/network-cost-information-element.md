@@ -1,9 +1,6 @@
 ---
 title: Network cost information element
 description: Network cost information element
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 973294b5-0c4f-4056-ad28-62c58f10c232
 ---
 

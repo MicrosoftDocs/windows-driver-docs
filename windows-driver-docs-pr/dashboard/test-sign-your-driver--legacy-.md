@@ -1,12 +1,6 @@
 ---
 title: Test-Sign Your Driver (Legacy)
 description: Test-Sign Your Driver (Legacy)
-MS-HAID:
-- 'p\_dashboard.test\_sign\_your\_driver\_\_legacy\_'
-- 'hw\_dashboard.test\_sign\_your\_driver\_\_legacy\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2abe618d-ef4d-4c8b-8a5d-4100f44f8798
 ---
 

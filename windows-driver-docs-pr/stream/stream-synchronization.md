@@ -2,12 +2,6 @@
 title: Stream Synchronization
 author: windows-driver-content
 description: Stream Synchronization
-MS-HAID:
-- 'dvd-design\_53beffa5-bbac-4dee-b64b-b0f6cbc7d6bc.xml'
-- 'stream.stream\_synchronization'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bbf589f1-ca4b-41a2-970d-b31c7761eb1a
 keywords: ["synchronization WDK DVD decoder", "stream synchronization WDK DVD decoder"]
 ---

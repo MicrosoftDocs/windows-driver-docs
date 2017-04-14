@@ -1,9 +1,6 @@
 ---
 title: Notifications
 description: Notifications
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 55292cae-9255-4dae-9f60-93ce22253e60
 ---
 

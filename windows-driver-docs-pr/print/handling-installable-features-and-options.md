@@ -2,12 +2,6 @@
 title: Handling Installable Features and Options
 author: windows-driver-content
 description: Handling Installable Features and Options
-MS-HAID:
-- 'nt5gpd\_28b5fc1f-3170-421e-a03a-c24baa219b16.xml'
-- 'print.handling\_installable\_features\_and\_options'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b970808f-55bd-4a3a-9464-c9cd3567fa6f
 keywords: ["Unidrv, installable features and options", "installable features and options WDK Unidrv", "GPD files WDK Unidrv , installable features and options", "Unidrv WDK print"]
 ---

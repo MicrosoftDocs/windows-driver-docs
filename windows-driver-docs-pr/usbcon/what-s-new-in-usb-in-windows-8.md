@@ -1,11 +1,6 @@
 ---
-Description: 'This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.New Driver Stack for USB 3.0 DevicesFeatures Supported by the New StackClient contract version for USB client driversNew Routines for Allocating and Building URBsNew User Mode I/O Control Requests for USB 3.0 HubsNew Compatible ID for WinUSBNew Visual Studio templates for USB client drivers (\*New for Beta)UASP driverBoot supportEnhanced debugging and diagnostic capabilities New USB-specific failure messages in Device ManagerFor information about new features in USB in general, see New for USB Drivers.'
-MS-HAID: 'buses.what\_s\_new\_in\_usb\_in\_windows\_8'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Windows 8: What's new for USB'
-author: windows-driver-content
+Description: This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.New Driver Stack for USB 3.0 DevicesFeatures Supported by the New StackClient contract version for USB client driversNew Routines for Allocating and Building URBsNew User Mode I/O Control Requests for USB 3.0 HubsNew Compatible ID for WinUSBNew Visual Studio templates for USB client drivers (\*New for Beta)UASP driverBoot supportEnhanced debugging and diagnostic capabilities New USB-specific failure messages in Device ManagerFor information about new features in USB in general, see New for USB Drivers.
+title: Windows 8: What's new for USB
 ---
 
 # Windows 8: What's new for USB
@@ -66,8 +61,8 @@ A client driver that intends to use the capabilities of the USB driver stack for
 
 | Use case                                                           | A KMDF-based driver should ...                                                                                                              | A WDM driver must ...                                                                                          |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| To specify a client contract version and with the USB driver stack | Call the [**WdfUsbTargetDeviceCreateWithParameters**](kmdf-wdfusbtargetdevicecreatewithconfig) method.                                      | Call the [**USBD\_CreateHandle**](https://msdn.microsoft.com/library/windows/hardware/hh406241) routine.                                                |
-| To query for a particular capability                               | Call [**WdfUsbTargetDeviceQueryUsbCapability**](kmdf-wdfusbtargetdevicequeryusbcapability) and specify the GUID of the capability to query. | Call [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) and specify the GUID of the capability to query. |
+| To specify a client contract version and with the USB driver stack | Call the [**WdfUsbTargetDeviceCreateWithParameters**](https://msdn.microsoft.com/library/windows/hardware/hh439428) method.                                      | Call the [**USBD\_CreateHandle**](https://msdn.microsoft.com/library/windows/hardware/hh406241) routine.                                                |
+| To query for a particular capability                               | Call [**WdfUsbTargetDeviceQueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh439434) and specify the GUID of the capability to query. | Call [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) and specify the GUID of the capability to query. |
 
  
 
@@ -87,8 +82,8 @@ The new routines are as follows:
 
 In addition to the routines in the preceding list, there are new KMDF-specific methods for URB allocation. For KMDF-based client drivers, we recommend that you call,
 
--   The [**WdfUsbTargetDeviceCreateUrb**](kmdf-wdfusbtargetdevicecreateurb) method (instead of [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250)) to allocate an URB.
--   The [**WdfUsbTargetDeviceCreateIsochUrb**](kmdf-wdfusbtargetdevicecreateisochurb) method (instead of [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231))to allocate an URB for an isochronous transfer. Those calls allocate a variable-sized URB that is based on the number of isochronous packets required for the transfer. For more information about isochronous transfers, see [How to Transfer Data to USB Isochronous Endpoints](transfer-data-to-isochronous-endpoints.md).
+-   The [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method (instead of [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250)) to allocate an URB.
+-   The [**WdfUsbTargetDeviceCreateIsochUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439420) method (instead of [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231))to allocate an URB for an isochronous transfer. Those calls allocate a variable-sized URB that is based on the number of isochronous packets required for the transfer. For more information about isochronous transfers, see [How to Transfer Data to USB Isochronous Endpoints](transfer-data-to-isochronous-endpoints.md).
 
 ## New User Mode I/O Control Requests for USB 3.0 Hubs
 

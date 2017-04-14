@@ -2,12 +2,6 @@
 title: IWiaDrvItem COM Interface
 author: windows-driver-content
 description: IWiaDrvItem COM Interface
-MS-HAID:
-- 'WIA\_arch\_04b2f58c-337b-49d0-8e0c-fc779a92d442.xml'
-- 'image.iwiadrvitem\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1be2265b-7ae8-4935-9559-588b885526d4
 ---
 

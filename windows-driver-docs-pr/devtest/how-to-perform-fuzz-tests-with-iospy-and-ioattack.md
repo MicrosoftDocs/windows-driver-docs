@@ -1,4 +1,4 @@
-﻿---
+---
 title: How to Perform Fuzz Tests with IoSpy and IoAttack
 description: How to Perform Fuzz Tests with IoSpy and IoAttack
 ms.assetid: f800e962-2a0f-4039-a479-395a62428b06

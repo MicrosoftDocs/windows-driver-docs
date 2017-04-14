@@ -2,12 +2,6 @@
 title: PSCRIPT1 Data Type
 author: windows-driver-content
 description: PSCRIPT1 Data Type
-MS-HAID:
-- 'provider\_fea5d513-2e33-4cfa-8a95-0b2c292dc9c7.xml'
-- 'print.pscript1\_data\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f39419e-fbb5-423f-8bcb-79a5207a29fd
 keywords: ["print processors WDK , data types", "data types WDK print processor", "PSCRIPT1 data type WDK print processor", "Postscript data WDK print processor"]
 ---

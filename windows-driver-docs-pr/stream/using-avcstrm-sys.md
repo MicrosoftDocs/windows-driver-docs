@@ -2,12 +2,6 @@
 title: Using Avcstrm.sys
 author: windows-driver-content
 description: Using Avcstrm.sys
-MS-HAID:
-- 'avcsguide\_4f0e4f23-4af7-45d0-b6b9-14dbe821054f.xml'
-- 'stream.using\_avcstrm\_sys'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 53430526-ee24-4081-b220-4089d60aec94
 keywords: ["filter drivers WDK AV/C streaming", "AV/C WDK , Stream filter driver", "Stream filter driver WDK AV/C", "Avcstrm.sys streaming filter driver WDK , about Avcstrm.sys streaming filter driver"]
 ---

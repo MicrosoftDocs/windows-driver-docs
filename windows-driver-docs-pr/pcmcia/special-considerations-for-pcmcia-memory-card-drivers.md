@@ -1,12 +1,6 @@
 ---
 title: Special Considerations for PCMCIA Memory Card Drivers
 description: Special Considerations for PCMCIA Memory Card Drivers
-MS-HAID:
-- 'mcch2\_7148d1da-faf7-40f3-8962-f85c77fb0414.xml'
-- 'PCMCIA.special\_considerations\_for\_pcmcia\_memory\_card\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: de6de14a-d8de-45fa-9bb9-93307f61114e
 keywords: ["PCMCIA_INTERFACE_STANDARD"]
 ---

@@ -2,12 +2,6 @@
 title: About ISensorDriver
 author: windows-driver-content
 description: About ISensorDriver
-MS-HAID:
-- 'Sensor\_DG\_Overview\_868bd866-9d11-42c0-b7d4-3068fc665582.xml'
-- 'sensors.about\_isensordriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2c51c235-e402-4f89-bff5-39af87d95e19
 ---
 

@@ -1,9 +1,5 @@
 ---
-Description: 'In this topic, you will learn about how to select a configuration in a universal serial bus (USB) device.'
-MS-HAID: 'buses.how\_to\_select\_a\_configuration\_for\_a\_usb\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: In this topic, you will learn about how to select a configuration in a universal serial bus (USB) device.
 title: How to select a configuration for a USB device
 author: windows-driver-content
 ---

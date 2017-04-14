@@ -2,12 +2,6 @@
 title: GDL Exercise Notes
 author: windows-driver-content
 description: GDL Exercise Notes
-MS-HAID:
-- 'gplfiles\_4e2d8368-c20b-4077-a948-941710404377.xml'
-- 'print.gdl\_exercise\_notes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 39013410-ad8e-4b1a-9db7-2ec541f08989
 keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "GDL WDK , index tree", "parser WDK GDL , index tree"]
 ---

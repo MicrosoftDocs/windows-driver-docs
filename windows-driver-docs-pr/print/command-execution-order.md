@@ -2,12 +2,6 @@
 title: Command Execution Order
 author: windows-driver-content
 description: Command Execution Order
-MS-HAID:
-- 'nt5gpd\_6a864fa6-3200-4b9b-abb2-22bc338d37fd.xml'
-- 'print.command\_execution\_order'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2bf7438c-bfb0-407f-9c80-be3b8a9322f9
 keywords: ["printer commands WDK Unidrv , execution order", "sequence numbers WDK Unidrv"]
 ---

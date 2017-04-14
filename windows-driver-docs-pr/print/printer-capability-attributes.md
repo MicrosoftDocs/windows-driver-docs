@@ -2,12 +2,6 @@
 title: Printer Capability Attributes
 author: windows-driver-content
 description: Printer Capability Attributes
-MS-HAID:
-- 'nt5gpd\_8a648136-b0f7-4163-801e-401b3522bbaf.xml'
-- 'print.printer\_capability\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3ee98eee-8f46-4bf0-ac2c-f47f8402fa86
 keywords: ["printer capability attributes WDK Unidrv", "general printer attributes WDK Unidrv , printer capability", "capability attributes WDK Unidrv"]
 ---

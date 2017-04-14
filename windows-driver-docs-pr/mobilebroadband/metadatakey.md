@@ -1,9 +1,6 @@
 ---
 title: MetadataKey
 description: MetadataKey
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1915db47-98bb-40f5-be3b-75e9af80f506
 ---
 

@@ -1,11 +1,5 @@
 ---
-Description: 'The topics in this section describe how a client driver must configure their device.'
-MS-HAID:
-- 'usb-config\_8a4d3d91-f0cd-4210-a79a-d917f49f7adc.xml'
-- 'buses.configuring\_usb\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: The topics in this section describe how a client driver must configure their device.
 title: Selecting a USB configuration in USB drivers
 author: windows-driver-content
 ---

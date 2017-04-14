@@ -2,9 +2,6 @@
 title: Install the sample device and driver on your Sharks Cove board
 author: windows-driver-content
 description: Follow these steps to install the sample driver and attach an ADXL345 accelerometer to the J1C1 header on your Sharks Cove board.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A67EBD9C-9C5A-49D3-9205-37FC4396DF56
 ---
 

@@ -2,12 +2,6 @@
 title: Print Driver Versioning
 author: windows-driver-content
 description: Print Driver Versioning
-MS-HAID:
-- 'prtinst\_17e31a0a-7873-4141-bc53-69021b034003.xml'
-- 'print.print\_driver\_versioning'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8ce844a5-44f6-4967-8586-b302823fc862
 keywords: ["installing drivers WDK printer , versioning", "printer driver installations WDK , versioning", "version numbers WDK printer", "printer driver versioning WDK"]
 ---

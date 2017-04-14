@@ -2,12 +2,6 @@
 title: Packet-based DMA in AVStream
 author: windows-driver-content
 description: Packet-based DMA in AVStream
-MS-HAID:
-- 'avsover\_a0ddf80f-b9b1-4fbc-95db-743b142638f1.xml'
-- 'stream.packet\_based\_dma\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4246819e-d8d6-4302-9477-675ca181b1e3
 keywords: ["AVStream WDK , hardware", "hardware WDK AVStream", "DMA services WDK AVStream", "Direct Memory Access WDK AVStream", "packet-based DMA WDK AVStream", "scatter/gather DMA WDK AVStream", "capture buffers WDK AVStream", "buffers WDK AVStream"]
 ---

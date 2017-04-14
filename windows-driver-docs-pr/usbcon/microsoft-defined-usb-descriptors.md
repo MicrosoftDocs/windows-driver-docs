@@ -1,11 +1,5 @@
 ---
-Description: 'Microsoft provides a set of proprietary device classes and USB descriptors, which are called Microsoft OS Descriptors (MODs).'
-MS-HAID:
-- 'usb-config\_38a60310-b278-439a-9c50-37e228e4a266.xml'
-- 'buses.microsoft\_defined\_usb\_descriptors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Microsoft provides a set of proprietary device classes and USB descriptors, which are called Microsoft OS Descriptors (MODs).
 title: Microsoft OS Descriptors for USB Devices
 author: windows-driver-content
 ---

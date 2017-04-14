@@ -2,12 +2,6 @@
 title: Transferring Data from Scanner Storage
 author: windows-driver-content
 description: Transferring Data from Scanner Storage
-MS-HAID:
-- 'WIA\_scanner\_tree\_00e99d46-b667-4bfa-a4d0-e085df3f6a2e.xml'
-- 'image.transferring\_data\_from\_scanner\_storage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6fc9c825-509c-4c18-a859-e1f5504879b8
 ---
 
