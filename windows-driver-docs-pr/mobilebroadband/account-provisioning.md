@@ -534,29 +534,29 @@ Although [**Global**](https://msdn.microsoft.com/library/windows/apps/hh868294) 
 
 Here are some common scenarios that you may need as you create provisioning metadata:
 
--   [Find the account provisioning schema](#bkmk-scenario-1)
+-   [Find the account provisioning schema](#find-the-account-provisioning-schema)
 
--   [Apply provisioning XML to the device](#bkmk-scenario-2)
+-   [Apply provisioning XML to the device](#apply-provisioning-xml-to-the-device)
 
--   [Provision the device to connect automatically to a mobile broadband network](#bkmk-scenario-3)
+-   [Provision the device to connect automatically to a mobile broadband network](#provision-the-device-to-connect-automatically-to-a-mobile-broadband-network)
 
--   [Provision the device to connect automatically to a Wi-Fi network](#bkmk-scenario-4)
+-   [Provision the device to connect automatically to a Wi-Fi network](#provision-the-device-to-connect-automatically-to-a-wi-fi-network)
 
--   [Provision the device to connect automatically to a WISPr-enabled hotspot](#bkmk-scenario-5)
+-   [Provision the device to connect automatically to a WISPr-enabled hotspot](#provision-the-device-to-connect-automatically-to-a-wispr-enabled-hotspot)
 
--   [Sending activation to the mobile broadband device](#bkmk-scenario-6)
+-   [Sending activation to the mobile broadband device](#sending-activation-to-the-mobile-broadband-device)
 
--   [Force the mobile broadband device to reconnect to the network after provisioning completes](#bkmk-scenario-7)
+-   [Force the mobile broadband device to reconnect to the network after provisioning completes](#force-the-mobile-broadband-device-to-reconnect-to-the-network-after-provisioning-completes)
 
--   [Updating data usage statistics for a connection profile](#bkmk-scenario-8)
+-   [Updating data usage statistics for a connection profile](#updating-data-usage-statistics-for-a-connection-profile)
 
--   [Update data usage by using an SMS message](#bkmk-scenario-9)
+-   [Update data usage by using an SMS message](#update-data-usage-by-using-an-sms-message)
 
-### <span id="BKMK_Scenario_1"></span><span id="bkmk_scenario_1"></span><span id="BKMK_SCENARIO_1"></span>Find the account provisioning schema
+###Find the account provisioning schema
 
 XSD schemas are available under **%SYSTEMROOT%\\schemas\\provisioning** on any computer that is running Windows 8, Windows 8.1, or Windows 10.
 
-### <span id="BKMK_Scenario_2"></span><span id="bkmk_scenario_2"></span><span id="BKMK_SCENARIO_2"></span>Apply provisioning XML to the device
+###Apply provisioning XML to the device
 
 You can apply a provisioning XML file to a device by using a mobile broadband app, a Windows Store app, or from a web site.
 
@@ -586,7 +586,7 @@ From a web site:
 
 The operation completes and the results of the provisioning operation are returned.
 
-### <span id="BKMK_Scenario_3"></span><span id="bkmk_scenario_3"></span><span id="BKMK_SCENARIO_3"></span>Provision the device to connect automatically to a mobile broadband network
+###Provision the device to connect automatically to a mobile broadband network
 
 You can define a provisioning XML document by using an **MBNProfile** section.
 
@@ -619,7 +619,7 @@ The child elements of **DefaultProfile** are required. See the provisioning XML 
 
  
 
-### <span id="BKMK_Scenario_4"></span><span id="bkmk_scenario_4"></span><span id="BKMK_SCENARIO_4"></span>Provision the device to connect automatically to a Wi-Fi network
+###Provision the device to connect automatically to a Wi-Fi network
 
 You can define a provisioning XML document by using a **WlanProfiles** section.
 
@@ -654,7 +654,7 @@ You can define a provisioning XML document by using a **WlanProfiles** section.
 
 The child elements of **MSM** define how to connect to the network. This includes any necessary EAP configuration. All child elements elements of the MSM element in the [WLAN\_profile Schema](https://msdn.microsoft.com/library/windows/desktop/ms707341) are supported. See the provisioning XML schema reference for more details.
 
-### <span id="BKMK_Scenario_5"></span><span id="bkmk_scenario_5"></span><span id="BKMK_SCENARIO_5"></span>Provision the device to connect automatically to a WISPr-enabled hotspot
+###Provision the device to connect automatically to a WISPr-enabled hotspot
 
 You can use either of the following two ways to enable hotspot authentication:
 
@@ -731,7 +731,7 @@ You can use either of the following two ways to enable hotspot authentication:
 
 You should directly define credentials when possible. Redirecting to another app has power and complexity implications.
 
-### <span id="BKMK_Scenario_6"></span><span id="bkmk_scenario_6"></span><span id="BKMK_SCENARIO_6"></span>Sending activation to the mobile broadband device
+###Sending activation to the mobile broadband device
 
 An arbitrary binary large object (BLOB) that is contained inside the [**CarrierSpecificData**](https://msdn.microsoft.com/library/windows/apps/hh868447) element can be Base64-encoded and sent to the device by using the ProvisioningAgent. You can do this by using the **Activation&lt;ServiceActivatation&gt;** directive in the provisioning XML:
 
@@ -752,7 +752,7 @@ An arbitrary binary large object (BLOB) that is contained inside the [**CarrierS
 
 This method is equivalent to invoking the [**IMbnVendorSpecificOperation::SetVendorSpecific**](https://msdn.microsoft.com/library/windows/desktop/dd323208) method of the Mobile Broadband API, and passing a SAFEARRAY together with the BLOB contents.
 
-### <span id="BKMK_Scenario_7"></span><span id="bkmk_scenario_7"></span><span id="BKMK_SCENARIO_7"></span>Force the mobile broadband device to reconnect to the network after provisioning completes
+###Force the mobile broadband device to reconnect to the network after provisioning completes
 
 There are two ways you can force the mobile broadband device to reconnect to the network after provisioning: **ReregisterToNetwork** and **ReconnectToNetwork**.
 
@@ -789,7 +789,7 @@ If the radio is successfully cycled on in a **ReregisterToNetwork** but the auto
 </CarrierProvisioning>
 ```
 
-### <span id="BKMK_Scenario_8"></span><span id="bkmk_scenario_8"></span><span id="BKMK_SCENARIO_8"></span>Updating data usage statistics for a connection profile
+###Updating data usage statistics for a connection profile
 
 You can only update usage for profiles that were provisioned by using the [**ProvisioningAgent**](https://msdn.microsoft.com/library/windows/apps/br207397) by applying a new account provisioning file that has updated plan information. You can provide a provisioning file that contains only usage information, or only plan information. Depending on how much of the system configuration you want to change, the new provisioning file can include the following:
 
@@ -801,7 +801,7 @@ You can only update usage for profiles that were provisioned by using the [**Pro
 
 If you apply new profiles and reference plans that are not defined in the XML, the provisioning results include a warning.
 
-### <span id="BKMK_Scenario_9"></span><span id="bkmk_scenario_9"></span><span id="BKMK_SCENARIO_9"></span>Update data usage by using an SMS message
+###Update data usage by using an SMS message
 
 This is accomplished in one of the following ways:
 
