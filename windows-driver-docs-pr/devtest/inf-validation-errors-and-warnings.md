@@ -214,7 +214,7 @@ Whether these issues appear as errors or warnings depends on the following:
     -   In Visual Studio, you build your driver with target platform set to **Desktop**.
     -   You run InfVerif.exe from the command line and do not specify the /c flag.
 
-## Installation warnings (2000-2999) <a name="warning_2xxx"></a>
+## Installation warnings (2000-2999) <a name="warning-2xxx"></a>
 
 
 Issues in the 2000-2999 range appears as warnings. Possible values include the following.
