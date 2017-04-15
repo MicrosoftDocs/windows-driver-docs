@@ -24,23 +24,23 @@ Windows 8, Windows 8.1, and Windows 10 present an opportunity to reimagine an
 
 This section describes key scenarios that are part of the current mobile broadband experience that you can choose to enable. Consider each of these scenarios in the context of your business models when you plan which Windows components your app must interact with.
 
--   [Plan purchase](#bkmk-ks-1)
+-   [Plan purchase](#plan-purchase)
 
--   [Connecting an active device](#bkmk-ks-2)
+-   [Connecting an active device](#connecting-an-active-device)
 
--   [Operator notifications and system events](#bkmk-ks-3)
+-   [Operator notifications and system events](#operator-notifications-and-system-events)
 
--   [Providing accurate usage and plan data](#bkmk-ks-4)
+-   [Providing accurate usage and plan data](#providing-accurate-usage-and-plan-data)
 
--   [Internet sharing](#bkmk-ks-5)
+-   [Internet sharing](#internet-sharing)
 
--   [Wireless hotspot authentication](#bkmk-ks-6)
+-   [Wi-Fi hotspot authentication](#wi-fi-hotspot-authentication)
 
--   [Displaying account information to the user](#bkmk-ks-7)
+-   [Displaying account information to the user](#displaying-account-information-to-the-user)
 
--   [Enabling other devices and app scenarios](#bkmk-ks-8)
+-   [Enabling other devices and app scenarios](#enabling-other-devices-and-app-scenarios)
 
-### <span id="BKMK_KS_1"></span><span id="bkmk_ks_1"></span>Plan Purchase
+### Plan Purchase
 
 A seamless plan purchase experience makes it easier for users to buy connectivity and enables the operator to accept new customers without the need for support or retail-store intervention. There are two purchase plan options:
 
@@ -124,7 +124,7 @@ An external mobile broadband device, such as a hardware dongle, can be inserted 
 
 6.  When a background event occurs, the app generates a more complete provisioning file, if needed, and passes it to the provisioning agent. This configures Windows with information about the plan that the user has purchased.
 
-### <span id="BKMK_KS_2"></span><span id="bkmk_ks_2"></span>Connecting an Active Device
+### Connecting an Active Device
 
 When a device with an active mobile broadband plan is attached to a PC, the experience is similar to that for purchase, except that the attempted connection leads to the Internet. Windows will not start the mobile broadband app for mobile broadband or connect to the mobile operator’s website. Instead, the app is installed in the background.
 
@@ -136,7 +136,7 @@ When a device with an active mobile broadband plan is attached to a PC, the expe
 
 Windows 8.1 and Windows 10 can connect to an operator network during Windows Setup if a mobile broadband device with an active plan is attached to the PC. The mobile broadband network appears in the Networks list during Windows Setup along with Wi-Fi networks. Similar to the process for connecting an active device, a HWID is generated based on the detected mobile broadband hardware and is used to locate appropriate connections settings within the Windows APN database.
 
-### <span id="BKMK_KS_3"></span><span id="bkmk_ks_3"></span>Operator Notifications and System Events
+### Operator Notifications and System Events
 
 In order to keep users informed about their account status, the mobile broadband app needs to perform some activities even when the user is not interacting with it. These activities include responding to operator SMS or network-initiated USSD messages, notifying the user that they are approaching their data limit, notifying the user that their data plan has expired, and notifying the user of their roaming status. Incoming SMS messages are available to privileged apps that have been granted access to the SMS capabilities on the PC by the service metadata package.
 
@@ -176,7 +176,7 @@ Building a mobile broadband app with SMS support is necessary to show notificati
 
 SMS functionality is available to mobile broadband apps, Windows Store apps that are given privileged access to mobile network operators, Windows Store apps that are given privileged access by the PC OEM (if the mobile broadband device is embedded in the PC), or the mobile broadband device IHV (if the mobile broadband device is removable). Mobile network operators and the PC OEM (or the mobile broadband device IHV) specify privileged apps through service metadata. For more information about service metadata, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
-### <span id="BKMK_KS_4"></span><span id="bkmk_ks_4"></span>Providing accurate usage and plan data
+### Providing accurate usage and plan data
 
 Windows provides Data Usage and Subscription Manager APIs that the mobile broadband app can use to describe the user’s data plan. The mobile broadband app can update this API with information about the data plan size, metered vs. non-metered plan, and an updated data usage value from the operator’s network.
 
@@ -198,7 +198,7 @@ The following is a walkthrough of the various features that the mobile broadband
 
 7.  Windows components and third-party apps on the PC can access this usage information by using the [**Windows.Networking.Connectivity.ConnectionProfile**](https://msdn.microsoft.com/library/windows/apps/br207249) class. Apps can adjust their behavior accordingly. For example, the app can use a lower quality video stream on metered networks.
 
-### <span id="BKMK_KS_5"></span><span id="bkmk_ks_5"></span>Internet sharing
+### Internet sharing
 
 Mobile broadband provides users with connectivity wherever they go. However, not every device has a mobile broadband device. Windows 8.1 and Windows 10 enable users to share their mobile broadband connectivity over Wi-Fi with friends and family using different devices.
 
@@ -220,7 +220,7 @@ The following is a walkthrough of the various features that you can configure an
 
 For more information about Internet Sharing, see [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md).
 
-### <span id="BKMK_KS_6"></span><span id="bkmk_ks_6"></span>Wi-Fi hotspot authentication
+### Wi-Fi hotspot authentication
 
 As part of the provisioning metadata, the mobile broadband app can describe the hotspots that a user can authenticate using their operator-supplied credentials. These may include WISPr 1.0 hotspots or encrypted hotspots using EAP-SIM, EAP-AKA, or other supported EAP methods.
 
@@ -264,7 +264,7 @@ The configuration information provided by the mobile broadband app to the connec
 
 2.  The Wi-Fi hotspot verifies the credentials with the operator and then permits the PC to access the Internet.
 
-### <span id="BKMK_KS_7"></span><span id="bkmk_ks_7"></span>Displaying account information to the user
+### Displaying account information to the user
 
 The best way for you to interact with your subscribers in Windows 8, Windows 8.1, and Windows 10 is by using a mobile broadband app. This app is developed by you to meet your key scenarios around subscriber interaction.
 
@@ -280,7 +280,7 @@ The best way for you to interact with your subscribers in Windows 8, Windows 8
 
 6.  More scenarios can be developed into the mobile broadband app. For detailed examples and user experience guidelines of key scenarios the mobile broadband app can enable, see [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md).
 
-### <span id="BKMK_KS_8"></span><span id="bkmk_ks_8"></span>Enabling other devices and app scenarios
+### Enabling other devices and app scenarios
 
 Windows 8, Windows 8.1, and Windows 10 provide a rich set of development tools and a flexible development platform that you can advantage of by creating apps that highlight the value added services that make them unique.
 
@@ -309,25 +309,25 @@ The components that support the key scenarios for mobile broadband in Windows 8
 
 The following components are part of Windows 8, Windows 8.1, and Windows 10:
 
--   [Provisioning Agent](#bkmk-wc-1)
+-   [Provisioning Agent](#provisioning-agent)
 
--   [Data Usage and Subscription Manager](#bkmk-wc-2)
+-   [Data Usage and Subscription Manager](#data-usage-and-subscription-manager)
 
--   [Windows Connection Manager](#bkmk-wc-3)
+-   [Windows Connection Manager](#windows-connection-manager)
 
--   [Local Data Counters](#bkmk-wc-4)
+-   [Local Data Counters](#local-data-counters)
 
--   [Mobile Broadband Service](#bkmk-wc-5)
+-   [Mobile Broadband Service](#mobile-broadband-service)
 
--   [Mobile Broadband Class Driver](#bkmk-wc-6)
+-   [Mobile Broadband Class Driver](#mobile-broadband-class-driver)
 
--   [System Event Broker](#bkmk-wc-7)
+-   [System Event Broker](#system-event-broker)
 
--   [Windows Metadata and Internet Services](#bkmk-wc-8)
+-   [Windows Metadata and Internet Services](#windows-metadata-and-internet-services)
 
--   [Windows Store](#bkmk-wc-9)
+-   [Windows Store](#windows-store)
 
-### <span id="BKMK_WC_1"></span><span id="bkmk_wc_1"></span>Provisioning Agent
+### Provisioning Agent
 
 The Provisioning Agent provides an interface for you to configure Windows with your network settings. The Provisioning Agent accepts an XML file that describes the desired configuration.
 
@@ -339,19 +339,19 @@ You can provide the XML file in one of the following ways:
 
 For more details about the format and content of the provisioning file, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
-### <span id="BKMK_WC_2"></span><span id="bkmk_wc_2"></span>Data Usage and Subscription Manager
+### Data Usage and Subscription Manager
 
 The Data Usage and Subscription Manager tracks details about the user’s accounts. The stored cost information about the currently connected network is available to all Windows Store apps. You can update this information by using the Provisioning Agent.
 
 If the carrier requests it, the Data Usage and Subscription Manager uses local data counters to trigger a background event when 5 percent of the data limit has been used. The System Event Broker delivers this background event and the mobile broadband app can use the event as a trigger to update billable usage.
 
-### <span id="BKMK_WC_3"></span><span id="bkmk_wc_3"></span>Windows Connection Manager
+### Windows Connection Manager
 
 Windows Connection Manager monitors available networks across Wi-Fi, mobile broadband, and Ethernet. It makes automatic connect and disconnect decisions based on the available networks. The Provisioning Agent enables you to define the relative priority between networks that you own. However, the user can manually connect to any network. Windows Connection Manager uses the user’s manual actions to influence future automatic connection choices.
 
 Windows Connection Manager also manages post-connect authentication with Wi-Fi hotspots that support WISPr 1.0. If static credentials have been stored for the Wi-Fi hotspot, Windows Connection Manager will authenticate automatically. If dynamic credentials are required, Windows Connection Manager triggers a background event by using System Event Broker. The mobile broadband app should then generate appropriate credentials and deliver them to Windows Connection Manager in order to complete the authentication process. For more details, see [Integrating Windows with wireless hotspots](integrating-windows-with-wireless-hotspots.md).
 
-### <span id="BKMK_WC_4"></span><span id="bkmk_wc_4"></span>Local Data Counters
+### Local Data Counters
 
 Local data counters track the amount of data that is sent and received on a network interface over time. This information appears to the user in multiple locations:
 
@@ -367,19 +367,19 @@ Local data counters are also available programmatically by using the following A
 
 Local data usage information serves as an estimate and a guide for the user. Windows cannot account for unbilled traffic or for usage on other devices that share the same data limits. For example, family plans using the same SIM on different devices. Mobile broadband apps should use local data counters only to approximate usage since the last sync with your billing system. For data usage that has already been processed, the billing system should be considered authoritative.
 
-### <span id="BKMK_WC_5"></span><span id="bkmk_wc_5"></span>Mobile Broadband Service
+### Mobile Broadband Service
 
 The Mobile Broadband service is a Windows service that manages communication between the Mobile Broadband APIs and a mobile broadband device. The service can interact with any mobile broadband device whose driver conforms to the Windows Mobile Broadband Driver Model.
 
 The service also reads the SIM of a newly inserted device and initiates the process that retrieves the service metadata and the mobile broadband app that corresponds to the attached mobile broadband device.
 
-### <span id="BKMK_WC_6"></span><span id="bkmk_wc_6"></span>Mobile Broadband Class Driver
+### Mobile Broadband Class Driver
 
 The Mobile Broadband class driver reduces the burden on device manufacturers to deliver a custom driver for their specific mobile broadband device. Any mobile broadband interface that manifests as a USB device and complies with the USB Implementers Forum (USB-IF) Network Control Model (NCM) 2.0 specification will be managed by the Mobile Broadband class driver and does not require additional drivers to be downloaded or installed.
 
 The Mobile Broadband class driver conforms to the Windows Mobile Broadband Driver Model and provides full functionality to the Mobile Broadband service. It also supports custom extensions, which will be exposed directly to the mobile broadband app. For more information, see [Mobile operator hardware overview](mobile-operator-hardware-overview.md).
 
-### <span id="BKMK_WC_7"></span><span id="bkmk_wc_7"></span>System Event Broker
+### System Event Broker
 
 The System Event Broker manages background events. Apps, including the mobile broadband app, can register to receive background events in order to respond to changes in system state. Events that could be of interest to the mobile broadband app include:
 
@@ -397,11 +397,11 @@ The System Event Broker manages background events. Apps, including the mobile br
 
 Developers should be aware that a strict limit is placed on the amount of CPU time that an app may consume while it is not active. Although these limits are relaxed for some events, apps must always minimize the resources that they consume while the system is in a low-power state or while another app is running. For more information about background events in Windows 8 and Windows 10, see [Introduction to Background Tasks](http://go.microsoft.com/fwlink/?linkid=227329).
 
-### <span id="BKMK_WC_8"></span><span id="bkmk_wc_8"></span>Windows Metadata and Internet Services
+### Windows Metadata and Internet Services
 
 Windows Metadata and Internet Services (WMIS) is a cloud-based Windows service that delivers customizations to Windows from third parties that participate in the Windows device ecosystem. For a mobile broadband device, WMIS delivers the service metadata package. This provides the basic information that Windows needs in order to retrieve the mobile broadband app from the Windows Store, allow connectivity to the network for the first time, and display appropriate branding elements in Windows Connection Manager.
 
-### <span id="BKMK_WC_9"></span><span id="bkmk_wc_9"></span>Windows Store
+### Windows Store
 
 The Windows Store is the primary way that Windows Store apps are delivered to Windows 8, Windows 8.1, and Windows 10 PCs. For a mobile broadband app, the app package is retrieved from the Windows Store whenever Internet connectivity is available after the device is connected. The app package is automatically installed and available to the user at that point. In Windows 8.1 and Windows 10, the app is available in **All Apps** but is not automatically pinned to the Start screen.
 
