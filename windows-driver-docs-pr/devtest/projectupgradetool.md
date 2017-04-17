@@ -93,7 +93,7 @@ ProjectUpgradeTool.exe  < rootDir >
 ## <span id="Comments"></span><span id="comments"></span><span id="COMMENTS"></span>Comments
 
 
--   [What to do if you see Error MSB8020 (Platform Toolset = 'WindowsKernelModeDriver8.0') cannot be found](#what-to-do-if-you-see-error-msb8020--platform-toolset)
+-   [What to do if you see Error MSB8020 (Platform Toolset = 'WindowsKernelModeDriver8.0') cannot be found](#what-to-do-if-you-see-error-msb8020)
 -   [What to do if you are unable to build a Windows Vista target after migrating a WDK 8 project to WDK 8.1](#build-vista-with-wdk-8-1)
 
 ### <span id="What_to_do_if_you_see_Error_MSB8020__Platform_Toolset____WindowsKernelModeDriver8.0___cannot_be_found_"></span><span id="what_to_do_if_you_see_error_msb8020__platform_toolset____windowskernelmodedriver8.0___cannot_be_found_"></span><span id="WHAT_TO_DO_IF_YOU_SEE_ERROR_MSB8020__PLATFORM_TOOLSET____WINDOWSKERNELMODEDRIVER8.0___CANNOT_BE_FOUND_"></span><a name="what-to-do-if-you-see-error-msb8020"></a>What to do if you see Error MSB8020 (Platform Toolset = 'WindowsKernelModeDriver8.0') cannot be found
