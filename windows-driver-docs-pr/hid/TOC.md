@@ -51,7 +51,7 @@
 ### [HID over I2C](hid-over-i2c-guide.md)
 #### [Architecture and overview](architecture-and-overview.md)
 #### [Plug and play support and power management](plug-and-play-support-and-power-management.md)
-#### [Power management](power-management-over-i2c.md)
+#### [Power management for I²C transport](power-management-over-i2c.md)
 #### [Troubleshooting common errors](troubleshooting-common-errors.md)
 #### [Event tracing](event-tracing.md)
 #### [Resources for HID over I2C](reference-and-additional-details2.md)

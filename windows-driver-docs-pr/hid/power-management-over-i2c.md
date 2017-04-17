@@ -1,5 +1,5 @@
 ---
-title: Power management
+title: Power management for I²C transport
 author: windows-driver-content
 description: This section describes power management for devices that support HID over the I²C.
 MSHAttr:
