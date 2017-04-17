@@ -96,17 +96,17 @@ To edit an existing service metadata package, see [Steps for editing a service m
 
 Use the following steps to create a service metadata package on the Windows Dev Center hardware dashboard:
 
--   [Step 1- Gather the required information for the service metadata package](#step-1--gather-the-required-information-for-the-service-metadata-package)
+-   [1-Gather the required information for the service metadata package](#1-gather-the-required-information-for-the-service-metadata-package)
 
--   [Step 2- Create the service metadata package](#step-2--create-the-service-metadata-package)
+-   [2-Create the service metadata package](#2-create-the-service-metadata-package)
 
--   [Step 3- Insert the store manifest file into the Windows Store device app](#step-3--insert-the-store-manifest-file-into-the-windows-store-device-app)
+-   [3-Insert the store manifest file into the Windows Store device app](#3-insert-the-store-manifest-file-into-the-windows-store-device-app)
 
--   [Step 4- Test the service metadata package](#step-4--test-the-service-metadata-package)
+-   [4-Test the service metadata package](#4-test-the-service-metadata-package)
 
--   [Step 5- Publish the service metadata package](#step-5--publish-the-service-metadata-package)
+-   [5-Publish the service metadata package](#5-publish-the-service-metadata-package)
 
-### Step 1- Gather the required information for the service metadata package
+### 1-Gather the required information for the service metadata package
 
 As you go through the steps in the Service Metadata Wizard in Step 2 of this topic, several pieces of information stored in the package.appxmanifest file from the mobile broadband app project that you want to associated with the device is required. Use the following steps to gather the information so that it’s ready for Step 2 of this topic.
 
@@ -153,7 +153,7 @@ You can also complete this without using Visual Studio 2013 by doing the followi
 
 5.  Save and close the package.appxmanifest file.
 
-### Step 2- Create the service metadata package
+### 2-Create the service metadata package
 
 Service metadata is created by using the Service Metadata Wizard in the Windows Dev Center hardware dashboard.
 
@@ -209,7 +209,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     ![this is the confirm step of the wizard](images/mbae-sxs81-confirm.png)
 
-### Step 3- Insert the store manifest file into the Windows Store device app
+### 3-Insert the store manifest file into the Windows Store device app
 
 A store manifest file must be included with a Windows Store device app. Use the following steps to download the store manifest file from your service metadata package and insert it into the mobile broadband app project.
 
@@ -227,7 +227,7 @@ A store manifest file must be included with a Windows Store device app. Use the 
 
 5.  Recompile the mobile broadband app and publish it again to the Windows Store.
 
-### Step 4- Test the service metadata package
+### 4-Test the service metadata package
 
 To test the service metadata package, you must have the mobile broadband device and the service metadata package files. The instructions to configure your test system and install the service metadata package depend on the mode of the package.
 
@@ -514,7 +514,7 @@ After the environment is set up, run the following steps each time that you want
 
     2.  Right-click each mobile broadband device, and then click **Enable**.
 
-### Step 5- Publish the service metadata package
+### 5-Publish the service metadata package
 
 Once you have confirmed that the service metadata package works correctly, the final step is to release the package. You can release the package by selecting the package attached to the specific experience by clicking the **Release** button, as shown below.
 
