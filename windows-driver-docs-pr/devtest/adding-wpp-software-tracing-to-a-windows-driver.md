@@ -11,11 +11,11 @@ To use WPP software tracing in a trace provider, such as a kernel-mode driver or
 **Tip**  The easiest way to add WPP tracing to your driver is to use one of the KMDF or UMDF driver templates in Visual Studio. If you use the templates, much of the code you need to add is already done for you. In Visual Studio, click **File &gt; New &gt; Project**, and then select the Windows Driver (user-mode or kernel mode) WDF project. The WPP macros are defined in the Trace.h header file that is included as part of the project. If you use one of the templates, you can skip ahead to [Step 5](#step-5-instrument-the-driver-code-to-generate-trace-messages-at-appropriate-points). 
 
 -   [Step 1: Define the control GUID and trace flags](#step-1-define-the-control-guid-and-trace-flags)
--   [Step 2: Choose which trace message functions you intend to use and define the WPP macros for the those functions](#step-2-choose-which-trace-message-functions-you-intend-to-use-and-define-the-WPP-macros-for-the-those-functions)
+-   [Step 2: Choose which trace message functions you intend to use and define the WPP macros for those functions](#step-2-choose-which-trace-message-functions-you-intend-to-use-and-define-the-wpp-macros-for-those-functions)
 -   [Step 3: Include the associated trace header files (.h and .tmh) in your C or C++ source files](#step-3-include-the-associated-trace-header-files-h-and-tmh-in-your-c-or-c-source-files)
 -   [Step 4: Add macros to the appropriate callback functions to initialize and clean up WPP](#step-4-add-macros-to-the-appropriate-callback-functions-to-initialize-and-clean-up-wpp)
 -   [Step 5: Instrument the driver code to generate trace messages at appropriate points](#step-5-instrument-the-driver-code-to-generate-trace-messages-at-appropriate-points)
--   [Step 6: Modify the Visual Studio project to run the WPP preprocessor and build the solution](#step-6-modify-the-visual-studio-project-to-run-the-WPP-preprocessor-and-build-the-solution)
+-   [Step 6: Modify the Visual Studio project to run the WPP preprocessor and build the solution](#step-6-modify-the-visual-studio-project-to-run-the-wpp-preprocessor-and-build-the-solution)
 -   [Step 7: Start a trace session to capture and verify your trace messages](#step-7-start-a-trace-session-to-capture-and-verify-your-trace-messages)
 
 ## Step 1: Define the control GUID and trace flags
@@ -73,7 +73,7 @@ For convenience, the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com/library/wi
 
      
 
-## Step 2: Choose which trace message functions you intend to use and define the WPP macros for the those functions
+## Step 2: Choose which trace message functions you intend to use and define the WPP macros for those functions
 
 
 Like a debug print function, a trace message function is a function (or macro) you add to your code to write trace messages.
