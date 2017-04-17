@@ -29,9 +29,9 @@ Tracelog has commands (or actions) that start, stop, and control a [trace sessio
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 
-For information about the Tracelog parameters, see \[[*actions*](#-actions-)\] \[[*options*](#-options-)\].
+For information about the Tracelog parameters, see \[[*actions*](#actions)\] \[[*options*](#options)\].
 
-### <span id="_actions_"></span><span id="_ACTIONS_"></span>\[*actions*\]
+### \[*actions*\]
 
 <span id="_______-addautologger__LoggerName_"></span><span id="_______-addautologger__loggername_"></span><span id="_______-ADDAUTOLOGGER__LOGGERNAME_"></span> **-addautologger** \[*LoggerName*\]  
 Configures the registry entries for an autologger session. An autologger session is the preferred method for tracing the activity of a driver or other trace provider during system boot. Autologger sessions are supported only on Windows Vista and later versions of Windows. You must specify the session GUID using the **-sessionguid** option. The **tracelog -addautologger** command takes the same options as the **Tracelog -start** command.
@@ -170,7 +170,7 @@ A **tracelog -disable** command only disables the trace providers.
 
 Tracelog uses the **EnableTrace** and **ControlTrace** functions to implement a **tracelog -x** command. For more information about these functions, see the [EnableTrace](http://go.microsoft.com/fwlink/p/?linkid=150370) and [ControlTrace](http://go.microsoft.com/fwlink/p/?linkid=150371) topics in the Windows SDK documentation.
 
-### <span id="_options_"></span><span id="_OPTIONS_"></span>\[*options*\]
+### \[*options*\]
 
 <span id="_-addtotriagedump_______"></span><span id="_-ADDTOTRIAGEDUMP_______"></span> **-addtotriagedump**   
 Writes out buffers for triage memory dumps.

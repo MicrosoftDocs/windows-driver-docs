@@ -156,7 +156,7 @@ You must use the same computer and browser to retrieve your certificate.
 
 -   If you’ve already set up a Hardware Dev Center hardware dashboard account and need to renew a certificate, follow the steps in [Update a code signing certificate](https://msdn.microsoft.com/library/windows/hardware/update-a-code-signing-certificate).
 
-## <span id="Code_Signing_FAQ"></span><span id="code_signing_faq"></span><span id="CODE_SIGNING_FAQ"></span>Code Signing FAQ
+## Code Signing FAQ
 
 
 This section provides answers to frequently asked questions about code signing for Windows 10. Additional code signing information is available on the Windows Hardware Certification blog.

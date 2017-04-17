@@ -9,12 +9,12 @@ ms.assetid: D9F4AD08-19EA-4a6c-AD25-886FBEA334B8
 
 The WexLogger provides a consistent API for logging which spans native code, managed code and script. It also scales from running Unit Tests in a command prompt all the way up to long-haul stress testing.
 
-## <span id="fx_wex"></span><span id="FX_WEX"></span>Logging Through the Verify Framework
+## Logging Through the Verify Framework
 
 
 Most logging within a test case should be performed via the [Verify](verify.md) framework. This will ensure that tests are authored in a clearer, more sequential and human-readable fashion. However, in some cases, test authors will find that they need more granular control around what is written to the logs: hence the need for the WexLogger API.
 
-## <span id="taef_wex"></span><span id="TAEF_WEX"></span>Logging Within TAEF
+## Logging Within TAEF
 
 
 For test cases running within TAEF, there is no logger initialization necessary by the test author. You can immediately start using the Log API that is exposed to the language that you are authoring your tests in.
@@ -48,14 +48,14 @@ log.Comment("Rendering to the BufferView");
 log.Comment("Render succeeded");
 ```
 
-## <span id="outsidetaef_wex"></span><span id="OUTSIDETAEF_WEX"></span>Logging Outside TAEF
+## Logging Outside TAEF
 
 
 The majority of the time, logging initialization and completion will be performed by TAEF, so the WexLogger will be ready to use for the duration of the test case as stated above, and will finish properly. However, if a client would like to use the WexLogger outside TAEF, they will be responsible for manually calling **LogController::InitializeLogging()** and **LogController::FinalizeLogging()**. This requirement exists for native and managed code only; scripts do not have this additional requirement. See the Static LogController Methods table below for more information on the LogController API.
 
 Refer to the [Generating WTT Logs](#generatingwttlogs-wex) section for information on how to generate WTT Logs outside TAEF.
 
-## <span id="api_wex"></span><span id="API_WEX"></span>WexLogger API
+## WexLogger API
 
 
 **Here is the list of native C++ Log methods available.**
@@ -225,7 +225,7 @@ Here is the list of managed Log methods available.
 
 **Note:** See the [Remote Logging From Child Processes](#remotelogging-wex) section below for more information on remote logging.
 
-## <span id="remoteLogging_wex"></span><span id="remotelogging_wex"></span><span id="REMOTELOGGING_WEX"></span>Remote Logging From Child Processes
+## Remote Logging From Child Processes
 
 
 WexLogger provides the ability for one or more child processes to log back to a single parent process, resulting in the generation of consolidated test results within a single log file.
@@ -248,17 +248,17 @@ The following steps are necessary to set up each remote logging connection:
 
 2.  Communicate the connection data with the child process either by setting it in its environment block, or by passing it as an argument at the command prompt. For example:
 
-    <span id="Pass_as_a_named_argument_at_the_command_prompt_that_WexLogger_understands_"></span><span id="pass_as_a_named_argument_at_the_command_prompt_that_wexlogger_understands_"></span><span id="PASS_AS_A_NAMED_ARGUMENT_AT_THE_COMMAND_PROMPT_THAT_WEXLOGGER_UNDERSTANDS_"></span>**Pass as a named argument at the command prompt that WexLogger understands:**  
+    **Pass as a named argument at the command prompt that WexLogger understands:**  
     /wexlogger\_connectiondata=*\[connection data\]*
 
     **Note:** If this option is used, then step 1 in the **Child Process** section below **is not** necessary.
 
-    <span id="Pass_as_a_named_environment_variable_that_WexLogger_understands_"></span><span id="pass_as_a_named_environment_variable_that_wexlogger_understands_"></span><span id="PASS_AS_A_NAMED_ENVIRONMENT_VARIABLE_THAT_WEXLOGGER_UNDERSTANDS_"></span>**Pass as a named environment variable that WexLogger understands:**  
+    **Pass as a named environment variable that WexLogger understands:**  
     \[YourAppName\_cmd\]=/wexlogger\_connectiondata=*\[connection data\]*
 
     **Note:** If this option is used, then step 1 in the **Child Process** section below **is not** necessary.
 
-    <span id="Pass_to_process_in_an_arbitrary_format__some_other__command_parameter__environment_variable__etc._"></span><span id="pass_to_process_in_an_arbitrary_format__some_other__command_parameter__environment_variable__etc._"></span><span id="PASS_TO_PROCESS_IN_AN_ARBITRARY_FORMAT__SOME_OTHER__COMMAND_PARAMETER__ENVIRONMENT_VARIABLE__ETC._"></span>**Pass to process in an arbitrary format (some other command parameter, environment variable, etc.)**  
+    **Pass to process in an arbitrary format (some other command parameter, environment variable, etc.)**  
     **Note:** If this option is used, then step 1 in the **Child Process** section below **is** necessary.
 
     **Note:** As a convenience, the value "/wexlogger\_connectiondata=" is defined as a constant in both the native and managed RemoteLogControllers:
@@ -296,7 +296,7 @@ The following steps are necessary to set up each remote logging connection:
 3.  Log, etc; all traces will be sent back to the parent process.
 4.  Call **LogController::FinalizeLogging()** to finish logging for this process.
 
-## <span id="outcome_wex"></span><span id="OUTCOME_WEX"></span>Determining Test Outcome
+## Determining Test Outcome
 
 
 Although there is a method provided to explicitly state the intended outcome of a test case (**Log::Result()**), there is no **need** for a test case to use this method in most cases.
@@ -309,7 +309,7 @@ Inside the TAEF framework, this behavior can be overridden by tagging your test 
 
 This behavior can also be overridden by explicitly calling **Log::StartGroup()** for your own test groups/test cases, with a default test result of your choice.
 
-## <span id="GeneratingWTTLogs_wex"></span><span id="generatingwttlogs_wex"></span><span id="GENERATINGWTTLOGS_WEX"></span>Generating WTT Logs
+## Generating WTT Logs
 
 
 Three methods exist to generate WTT logs via the **WexLogger**. All of them require that **WttLog.dll** is present in the run directory, or in your path.
@@ -350,10 +350,10 @@ Three methods exist to generate WTT logs via the **WexLogger**. All of them requ
 
 It is also possible to completely override or append to the default WttLogger device string by specifying one of the following command options:
 
-<span id="__________________________WttDeviceString__new_device_string______________________"></span><span id="__________________________wttdevicestring__new_device_string______________________"></span><span id="__________________________WTTDEVICESTRING__NEW_DEVICE_STRING______________________"></span> /WttDeviceString:&lt;new device string&gt;   
+/WttDeviceString:&lt;new device string&gt;   
 Completely overrides the WttDeviceString used by WexLogger when it initializes WttLogger.
 
-<span id="__________________________WttDeviceStringSuffix__value_to_append_to_the_device_string______________________"></span><span id="__________________________wttdevicestringsuffix__value_to_append_to_the_device_string______________________"></span><span id="__________________________WTTDEVICESTRINGSUFFIX__VALUE_TO_APPEND_TO_THE_DEVICE_STRING______________________"></span> /WttDeviceStringSuffix:&lt;value to append to the device string&gt;   
+/WttDeviceStringSuffix:&lt;value to append to the device string&gt;   
 Appends the specified value to the default WttDeviceString used by WexLogger when it initializes WttLogger. Ignored if '/WttDeviceString' is also specified.
 
 The following table lists how WexLogger TestResults map to WttLogger results:
@@ -368,7 +368,7 @@ The following table lists how WexLogger TestResults map to WttLogger results:
 
  
 
-## <span id="depend_wex"></span><span id="DEPEND_WEX"></span>Logger Dependencies
+## Logger Dependencies
 
 
 The native C++ logger (**Wex.Logger.dll**) is dependent upon **Wex.Common.dll** and **Wex.Communication.dll**.
@@ -377,7 +377,7 @@ The managed logger (**Wex.Logger.Interop.dll**) is dependent upon **Wex.Logger.d
 
 Additionally, **WttLog.dll** is required when Wtt Logging is enabled.
 
-## <span id="adderrordata_wex"></span><span id="ADDERRORDATA_WEX"></span>Additional Error Data
+## Additional Error Data
 
 
 In the event that an error is logged, you can enable WexLogger to include one or more of the following items in addition to the error itself:
@@ -408,7 +408,7 @@ Environment.SetEnvironmentVariable("consoleapplication4_cmd", "/screencaptureone
 LogController.InitializeLogging();
 ```
 
-## <span id="cpluspluserror_wex"></span><span id="CPLUSPLUSERROR_WEX"></span>C++ Error Handling
+## C++ Error Handling
 
 
 In order to shield test case authors from the burden of checking return values for each Log API call, the WexLogger reports unexpected error conditions via the use of an optional callback mechanism; a **WexLoggerErrorCallback** function. Upon initializaiton of the **WexLogger** (via **LogController::InitializeLogging()**), clients may choose to specify a **WexLoggerErrorCallback** function to call if unexpected error conditions occur within the **WexLogger**. The **WexLoggerErrorCallback** function must use the following signature:
@@ -419,7 +419,7 @@ void __stdcall MyLoggerErrorCallback(const unsigned short* pszMessage, HRESULT h
 
 A common use for the WexLoggerErrorCallback function would be to write out the error messages to the console (if your test harness is a console application). For example, the TAEF framework is a client of the **WexLogger**, and implements a **WexLoggerErrorCallback** which writes red text to the console when WexLogger errors occur.
 
-## <span id="dotnetcompat_wex"></span><span id="DOTNETCOMPAT_WEX"></span>.NET 4.0 Compatibility
+## .NET 4.0 Compatibility
 
 
 Wex.Logger.Interop is compiled as a NetFx 2/3/3.5 binary, so that it can be loaded into both NetFx 2/3/3.5 and NetFx 4 processes. This allows TAEF to run all managed assemblies above NetFx 2. If you're using Wex.Logger outside TAEF, then you need to add a [config file](http://msdn.microsoft.com/library/ms229689.aspx) for your exe to configure the NetFx 4 runtime to load NetFx 2/3/3.5 binaries into it's process. The config file should contain the following:
@@ -433,7 +433,7 @@ Wex.Logger.Interop is compiled as a NetFx 2/3/3.5 binary, so that it can be load
                 
 ```
 
-## <span id="managederror_wex"></span><span id="MANAGEDERROR_WEX"></span>Managed Code Error and Exception Handling
+## Managed Code Error and Exception Handling
 
 
 In order to shield test case authors from the burden of checking return values for each **Log** API call, the managed layer of the WexLogger reports unexpected error conditions via the use of the **LoggerController.WexLoggerError** event. You may subscribe to this event at any time by implementing your own **WexLoggerErrorEventHandler** and using the following familiar syntax for C# event subscription:

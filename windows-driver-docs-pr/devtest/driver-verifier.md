@@ -12,16 +12,16 @@ Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to det
 
 You can run Driver Verifier on multiple drivers simultaneously, or on one driver at a time. You can configure which tests to run, which allows you to put a driver through heavy stress loads or through more streamlined testing.
 
--   [Where can I download Driver Verifier?](#where-can-i-download-driver-verifier-)
--   [When to use Driver Verifier](#when-to-use-dv)
--   [How to start Driver Verifier](#how-to-start-dv)
--   [How to control Driver Verifier (stop, reset, and view settings and status)](#how-to-control-dv)
--   [How to debug Driver Verifier violations](#how-to-debug-dv)
+-   [Where can I download Driver Verifier?](#where-can-i-download-driver-verifier)
+-   [When to use Driver Verifier](#when-to-use-driver-verifier)
+-   [How to start Driver Verifier](#how-to-start-driver-verifier)
+-   [How to control Driver Verifier](#how-to-control-driver-verifier)
+-   [How to debug Driver Verifier violations](#how-to-debug-driver-verifier-violations)
 -   [Related topics](#related-topics)
 
  
 
-## <span id="Where_can_I_download_Driver_Verifier_"></span><span id="where_can_i_download_driver_verifier_"></span><span id="WHERE_CAN_I_DOWNLOAD_DRIVER_VERIFIER_"></span>Where can I download Driver Verifier?
+## Where can I download Driver Verifier?
 
 
 <table>
@@ -56,7 +56,7 @@ You can run Driver Verifier on multiple drivers simultaneously, or on one driver
 
  
 
-## <span id="when_to_use_dv"></span><span id="WHEN_TO_USE_DV"></span>When to use Driver Verifier
+## When to use Driver Verifier
 
 
 Run Driver Verifier throughout the driver development and test process.
@@ -69,7 +69,7 @@ Run Driver Verifier throughout the driver development and test process.
 
  
 
-## <span id="how_to_start_dv"></span><span id="HOW_TO_START_DV"></span>How to start Driver Verifier
+## How to start Driver Verifier
 
 
 You should only run Driver Verifier on test computers, or computers you are testing and debugging. To get the most benefit from Driver Verifier, you should use a kernel debugger and connect to the test computer. See [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
@@ -131,7 +131,7 @@ See [**Driver Verifier Command Syntax**](verifier-command-line.md) for more info
 
  
 
-## <span id="how_to_control_dv"></span><span id="HOW_TO_CONTROL_DV"></span>How to control Driver Verifier (stop, reset, and view settings and status)
+## How to control Driver Verifier
 
 
 **To stop or reset Driver Verifier**
@@ -170,7 +170,7 @@ verifier  /query
 
  
 
-## <span id="how_to_debug_dv"></span><span id="HOW_TO_DEBUG_DV"></span>How to debug Driver Verifier violations
+## How to debug Driver Verifier violations
 
 
 To get the most benefit from Driver Verifier, you should use a kernel debugger and connect to the test computer. See [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) for more information.
@@ -220,10 +220,9 @@ In addition [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/f
     kd> !ruleinfo 0x20005
     ```
 
-## <span id="ddk_driver_verifier_tools"></span><span id="DDK_DRIVER_VERIFIER_TOOLS"></span>
 
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Driver Verifier: What's New](driver-verifier--what-s-new.md)
