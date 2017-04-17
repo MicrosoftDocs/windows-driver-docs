@@ -1,5 +1,5 @@
 ---
-title: Minidriver requirements for tablet PCs running on earlier versions of Windows
+title: Minidriver requirements for tablet PCs
 author: windows-driver-content
 description: This section pertains to operating systems prior to Windows 8 and describes the general requirements for vendor-supplied HID minidrivers for pen devices and button devices that are installed on a tablet PC edition system.
 MSHAttr:
