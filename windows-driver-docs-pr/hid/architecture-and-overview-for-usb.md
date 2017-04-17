@@ -1,5 +1,5 @@
 ---
-title: Architecture and overview
+title: Architecture of HID over USB
 author: windows-driver-content
 description: This section describes the driver stack for devices that support HID over the USB transport.
 MSHAttr:

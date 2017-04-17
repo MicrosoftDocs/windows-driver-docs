@@ -43,7 +43,7 @@
 #### [Minidrivers and the HID class driver](minidriver-operations.md)
 #### [Minidriver requirements for tablet PCs running on earlier versions of Windows](minidriver-requirements-for-tablet-pcs-running-on-earlier-versions-of-windows.md)
 ### [HID over USB](hid-over-usb.md)
-#### [Architecture and overview](architecture-and-overview-for-usb.md)
+#### [Architecture of HID over USB](architecture-and-overview-for-usb.md)
 #### [Plug and play support](plug-and-play-support.md)
 #### [Power management](power-management.md)
 #### [Selective suspend for HID over USB devices](selective-suspend-for-hid-over-usb-devices.md)
