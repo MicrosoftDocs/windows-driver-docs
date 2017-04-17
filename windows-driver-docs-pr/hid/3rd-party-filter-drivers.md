@@ -5,7 +5,7 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2EAFE726-2266-4E40-AC51-0025BF6069B6
-description: 
+description: Sample filter drivers in the Microsoft Windows Driver Kit (WDK)
 ---
 
 # 3rd party filter drivers

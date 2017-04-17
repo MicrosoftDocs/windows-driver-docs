@@ -41,7 +41,7 @@
 ### [Transport Minidrivers](transport-minidrivers.md)
 #### [Binding minidrivers to the HID class](binding-minidrivers-to-the-hid-class.md)
 #### [Minidrivers and the HID class driver](minidriver-operations.md)
-#### [Minidriver requirements for tablet PCs running on earlier versions of Windows](minidriver-requirements-for-tablet-pcs-running-on-earlier-versions-of-windows.md)
+#### [Minidriver requirements for tablet PCs](minidriver-requirements-for-tablet-pcs-running-on-earlier-versions-of-windows.md)
 ### [HID over USB](hid-over-usb.md)
 #### [Architecture of HID over USB](architecture-and-overview-for-usb.md)
 #### [Plug and play support](plug-and-play-support.md)
