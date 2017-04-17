@@ -11,13 +11,13 @@ You create custom WPP extended format specification strings by using the DEFINE\
 
 This topic provides examples that show you how to do the following:
 
-- [Trace fixed length strings through custom WPP extended format specification strings](#trace-fixed-length-buffers-through-custom-wpp-extended-format-specification-strings)
+- [Trace fixed-length strings through custom WPP extended format specification strings](#trace-fixed-length-strings-through-custom-wpp-extended-format-specification-strings)
 
-- [Trace variable length strings through custom WPP extended format specification strings](#trace-variable-buffers-strings-through-custom-WPP-extended-format-specification-strings)
+- [Trace variable-length strings through custom WPP extended format specification strings](#trace-variable-length-strings-through-custom-wpp-extended-format-specification-strings)
 
 Each of these examples shows the use of a custom WPP configuration file for the definition of the DEFINE\_CPLX\_TYPE macro. In these examples, the configuration file is named LocalWpp.ini. For more information about how to use custom WPP configuration files, see [How do you define custom data types?](how-do-you-define-custom-data-types-.md).
 
-## Trace fixed length buffers through custom WPP extended format specification strings
+## Trace fixed-length strings through custom WPP extended format specification strings
 
 This example shows how to trace Internet Protocol version 6 (IPv6) network addresses by using a custom WPP extended format specification string. IPv6 network addresses, as defined by the in6\_addr structure, have a fixed-length length of 16 bytes.
 
@@ -68,7 +68,7 @@ DoTraceMessage(Noise, "IN6_ADDR  = %!IPV6ADDR!", &IPAddressV6);
 
  
 
-## Trace variable length buffers through custom WPP extended format specification strings
+## Trace variable-length strings through custom WPP extended format specification strings
 
 This example shows how to trace variable-length buffers of data by using a custom WPP extended format specification string.
 
