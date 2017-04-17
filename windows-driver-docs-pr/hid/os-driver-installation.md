@@ -2,9 +2,6 @@
 title: OS Driver installation
 author: windows-driver-content
 description: This section documents the following class-specific INF file entries that a vendor can use to control how the Microsoft-supplied keyboard and mouse class installers install devices under Microsoft Windows 2000 and later.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: A934B1F3-01FA-4B70-92B8-9CB3EB096C89
 ---
 

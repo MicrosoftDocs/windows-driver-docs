@@ -2,12 +2,6 @@
 title: Creating Device-Specific Components for Image Acquisition APIs
 author: windows-driver-content
 description: Creating Device-Specific Components for Image Acquisition APIs
-MS-HAID:
-- 'stillimg\_55b99e22-3da7-4b44-b839-b73de50614e5.xml'
-- 'image.creating\_device\_specific\_components\_for\_image\_acquisition\_apis'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c4906dec-6d34-47f5-abde-0513c4499a66
 ---
 

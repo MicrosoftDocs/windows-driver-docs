@@ -1,7 +1,5 @@
 ---
 Description: Using the WpdDeviceInspector Tool
-MS-HAID: 'wpddk.using\_the\_wpddeviceinspector\_tool'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Using the WpdDeviceInspector Tool
 ---
 

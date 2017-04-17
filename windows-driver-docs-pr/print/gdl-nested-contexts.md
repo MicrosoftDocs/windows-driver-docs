@@ -2,12 +2,6 @@
 title: GDL Nested Contexts
 author: windows-driver-content
 description: GDL Nested Contexts
-MS-HAID:
-- 'gplfiles\_00bd62b4-a7da-407e-8f4c-abae6ef1ad54.xml'
-- 'print.gdl\_nested\_contexts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c679937a-fa36-487a-84f2-f61a7ef0198e
 keywords: ["GDL WDK , contexts", "contexts WDK GDL , nested contexts", "nested contexts WDL GDL", "GDL WDK , values", "values WDK GDL , nested contexts"]
 ---

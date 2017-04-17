@@ -2,12 +2,6 @@
 title: Filter Control Mutex in AVStream
 author: windows-driver-content
 description: Filter Control Mutex in AVStream
-MS-HAID:
-- 'avsover\_876dd5f1-4b38-42dc-aea8-e8c9a87f549f.xml'
-- 'stream.filter\_control\_mutex\_in\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 402795a0-e567-4e7e-a7d8-b2ce29ffb8fd
 keywords: ["filter control mutex WDK AVStream", "AVStream mutexes WDK", "mutexes WDK AVStream", "synchronization WDK AVStream", "state transitions WDK AVStream"]
 ---

@@ -1,11 +1,5 @@
 ---
-Description: 'The topics in this section provides an USB pipes, URBs for I/O requests, and describes how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.'
-MS-HAID:
-- 'usb-io\_0035114f-2883-49b4-9de4-aa3b3878f976.xml'
-- 'buses.usb\_device\_i\_o'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: The topics in this section provides an USB pipes, URBs for I/O requests, and describes how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.
 title: Sending USB data transfers in USB client drivers
 ---
 

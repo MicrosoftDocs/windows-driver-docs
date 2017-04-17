@@ -2,12 +2,6 @@
 title: Still Image Drivers
 author: windows-driver-content
 description: Still Image Drivers
-MS-HAID:
-- 'stillimg\_5ffde380-30d8-4697-b492-c4143bd2ae4b.xml'
-- 'image.still\_image\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e207f76e-ff35-4a0d-a4bf-744931055eb8
 ---
 

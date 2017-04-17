@@ -2,12 +2,6 @@
 title: Stress Testing
 author: windows-driver-content
 description: Stress Testing
-MS-HAID:
-- 'prntools\_42833e7c-59ee-4972-9a32-6237df1a5391.xml'
-- 'print.stress\_testing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 14d20ce2-7d98-4fa3-b639-a4e9b7b07a72
 keywords: ["stress testing WDK printer", "bus stress testing WDK printer"]
 ---

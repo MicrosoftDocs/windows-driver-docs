@@ -2,12 +2,6 @@
 title: Building and Testing BDA Drivers
 author: windows-driver-content
 description: Building and Testing BDA Drivers
-MS-HAID:
-- 'bdabuild\_661e67c8-8381-4a7a-81f8-90c4e2a56bda.xml'
-- 'stream.building\_and\_testing\_bda\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 219fb12e-635b-406d-a680-a63ef02dc308
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Create a MobileBroadbandDeviceInformation object
 description: Create a MobileBroadbandDeviceInformation object
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d7f89045-acb5-4b7c-9154-c05e4169490d
 ---
 

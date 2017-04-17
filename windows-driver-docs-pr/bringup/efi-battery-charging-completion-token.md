@@ -2,9 +2,6 @@
 title: EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN
 author: windows-driver-content
 description: EFI\_BATTERY\_CHARGING\_COMPLETION\_TOKEN
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1151643e-8b22-4034-b043-ac4d44c01082
 ---
 

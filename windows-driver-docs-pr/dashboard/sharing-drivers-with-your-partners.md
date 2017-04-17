@@ -1,9 +1,6 @@
 ---
 title: Share a driver with a partner
 description: To share a driver with one of your partners, create a hardware submission and follow the steps below.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: BB69EF13-9271-4B17-BB42-A503BCDB0DE1
 ---
 

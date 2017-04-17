@@ -2,12 +2,6 @@
 title: XPSDrv Printer Drivers
 author: windows-driver-content
 description: XPSDrv Printer Drivers
-MS-HAID:
-- 'drvarch\_a6c3694b-6384-457d-96cb-f78af79dea72.xml'
-- 'print.xpsdrv\_printer\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9e61cb21-4e02-48dc-b291-576d37bb640d
 keywords: ["XPSDrv printer drivers WDK , about XPS", "printer drivers WDK , XPSDrv", "XML Paper Specification WDK print", "XPS Documents WDK XPSDrv", "XPS spool files WDK XPSDrv", "spool files WDK print"]
 ---

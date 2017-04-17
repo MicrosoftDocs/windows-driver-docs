@@ -1,12 +1,6 @@
 ---
 title: Known Issues with the Remote Debugging Client
 description: Known Issues with the Remote Debugging Client
-MS-HAID:
-- 'p\_dashboard.known\_issues\_with\_the\_remote\_debugging\_client'
-- 'hw\_dashboard.known\_issues\_with\_the\_remote\_debugging\_client'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1f98fd22-ca21-49ea-a241-c1fa5450ee5b
 ---
 

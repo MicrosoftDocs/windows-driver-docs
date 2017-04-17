@@ -2,12 +2,6 @@
 title: Current Settings
 author: windows-driver-content
 description: Current Settings
-MS-HAID:
-- 'di\_fbd5430e-8518-4971-b4ca-6ceafaa7e133.xml'
-- 'hid.current\_settings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4de99ad0-fcd9-4f8d-8125-8f622443a0c6
 keywords: ["current registry settings WDK joysticks"]
 ---

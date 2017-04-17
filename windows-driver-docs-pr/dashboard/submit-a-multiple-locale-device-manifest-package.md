@@ -1,12 +1,6 @@
 ---
 title: Submit a Multiple-locale device manifest package
 description: Submit a Multiple-locale device manifest package
-MS-HAID:
-- 'p\_dashboard.submit\_a\_multiple\_locale\_device\_manifest\_package'
-- 'hw\_dashboard.submit\_a\_multiple\_locale\_device\_manifest\_package'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b6748bff-d730-434e-9316-dc7b7222b727
 ---
 

@@ -2,12 +2,6 @@
 title: WIA Root Item
 author: windows-driver-content
 description: WIA Root Item
-MS-HAID:
-- 'WIA\_tree\_6edeb785-0066-4125-bc77-0973f9e53b4f.xml'
-- 'image.wia\_root\_item'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cf4d1056-3437-4ba7-8a87-421e91afd02a
 ---
 

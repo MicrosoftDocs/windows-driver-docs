@@ -2,9 +2,6 @@
 title: SerCx2 I/O Transactions
 author: windows-driver-content
 description: SerCx2 simplifies the handling of read (IRP\_MJ\_READ) and write (IRP\_MJ\_WRITE) requests for your serial controller driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: C1B3F059-A445-4224-8316-DBF194CE6A80
 ---
 

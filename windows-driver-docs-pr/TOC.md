@@ -1,4 +1,4 @@
-# [Windows Driver Kit documentation](index.md)
+# [Getting Started with the Windows Driver Kit](index.md)
 # [What's new in driver development](what-s-new-in-driver-development.md)
 # [Bring up guide](bringup/index.md)
 # [Developing, Testing, and Deploying Drivers](develop/index.md)
@@ -10,6 +10,7 @@
 ## [ACPI](acpi/index.md)
 ## [Battery Drivers](battery/index.md)
 ## [Biometric Drivers](biometric/index.md)
+## [Bluetooth Drivers](bluetooth/index.md)
 ## [Display drivers](display/index.md)
 ## [Driver Development Tools](devtest/index.md)
 ## [HID Drivers](hid/index.md)

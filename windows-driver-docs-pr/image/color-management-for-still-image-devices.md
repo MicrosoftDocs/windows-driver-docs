@@ -2,12 +2,6 @@
 title: Color Management for Still Image Devices
 author: windows-driver-content
 description: Color Management for Still Image Devices
-MS-HAID:
-- 'stillimg\_57feac67-c585-44ad-abde-f643d5e72c1d.xml'
-- 'image.color\_management\_for\_still\_image\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dfc4afad-221a-436c-9124-981a74f70ee3
 ---
 

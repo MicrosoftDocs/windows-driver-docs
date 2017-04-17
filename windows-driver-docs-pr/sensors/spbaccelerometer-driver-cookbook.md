@@ -2,9 +2,6 @@
 title: SpbAccelerometer driver cookbook
 author: windows-driver-content
 description: SpbAccelerometer driver cookbook
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3E7875E1-0810-4698-A5E1-7A4C6C366967
 ---
 

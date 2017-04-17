@@ -2,9 +2,6 @@
 title: Universal Serial Bus (USB) driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4A61F62B-9C23-4265-8AB4-D3AB45F512DF
 ---
 

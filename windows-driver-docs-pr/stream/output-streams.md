@@ -2,12 +2,6 @@
 title: Output Streams
 author: windows-driver-content
 description: Output Streams
-MS-HAID:
-- 'dvd-design\_ba2e851a-f686-4cff-8038-cc304792ee15.xml'
-- 'stream.output\_streams'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 91be637c-f195-4713-bfb0-b41c0346e390
 keywords: ["output streams WDK DVD decoder"]
 ---

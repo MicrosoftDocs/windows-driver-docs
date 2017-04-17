@@ -2,9 +2,6 @@
 title: Buy hardware for using MITT
 author: windows-driver-content
 description: To you use Multiple Interface Test Tool (MITT), order you need a MITT board and bus-specific adapter boards that plug into ports on the MITT board. The type of adapter board depends on the bus you want to test.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 268217FF-0F0B-4175-B2DE-A45FAF94EA79
 ---
 

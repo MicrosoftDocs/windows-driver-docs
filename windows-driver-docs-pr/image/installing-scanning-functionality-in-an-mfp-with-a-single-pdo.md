@@ -2,12 +2,6 @@
 title: Installing Scanning Functionality in an MFP with a Single PDO
 author: windows-driver-content
 description: Installing Scanning Functionality in an MFP with a Single PDO
-MS-HAID:
-- 'WIA\_GS\_c1fbb33e-6cf7-45c1-8430-677a40ccfc3b.xml'
-- 'image.installing\_scanning\_functionality\_in\_an\_mfp\_with\_a\_single\_pdo'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 002ff319-42f9-4034-9bdd-c1e771ed2ba9
 ---
 

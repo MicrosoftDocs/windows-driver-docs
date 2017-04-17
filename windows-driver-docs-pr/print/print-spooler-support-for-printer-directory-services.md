@@ -2,12 +2,6 @@
 title: Print Spooler Support for Printer Directory Services
 author: windows-driver-content
 description: Print Spooler Support for Printer Directory Services
-MS-HAID:
-- 'prtinst\_f7a810cf-c02b-46bd-9e32-775aa992eafe.xml'
-- 'print.print\_spooler\_support\_for\_printer\_directory\_services'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 23cd73a5-8628-4471-a6c6-e056536fcc75
 keywords: ["Directory Services WDK printer", "print spooler Directory Services support WDK", "publishing WDK printer"]
 ---

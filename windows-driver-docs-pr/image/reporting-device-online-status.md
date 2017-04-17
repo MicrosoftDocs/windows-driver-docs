@@ -2,12 +2,6 @@
 title: Reporting Device Online Status
 author: windows-driver-content
 description: Reporting Device Online Status
-MS-HAID:
-- 'WIA\_drv\_basic\_fd76f962-9761-4086-ab10-e8a16cf3f9cf.xml'
-- 'image.reporting\_device\_online\_status'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 59ce747a-bb5e-4e8c-ab4a-d3f4432f17e6
 ---
 

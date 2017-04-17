@@ -1,10 +1,6 @@
 ---
-Description: 'Possible causes and resolutions to troubleshooting messages in Windows 10 that users might get on USB Type-C systems running Windows.'
-MS-HAID: 'buses.introduction\_to\_usb\_type-c\_connectors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Troubleshoot messages for a USB Type-C Windows system'
+Description: Possible causes and resolutions to troubleshooting messages in Windows 10 that users might get on USB Type-C systems running Windows.
+title: Troubleshoot messages for a USB Type-C Windows system
 ---
 
 # Troubleshoot messages for a USB Type-C Windows system

@@ -1,9 +1,6 @@
 ---
 title: Identity
 description: Identity
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fcec93ad-54d4-466e-8fac-888377115689
 ---
 

@@ -1,8 +1,6 @@
 ---
-Description: 'Supported Format-Property Retrieval'
-MS-HAID: 'wpddk.supported\_format\_property\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Supported Format-Property Retrieval'
+Description: Supported Format-Property Retrieval
+title: Supported Format-Property Retrieval
 ---
 
 # Supported Format-Property Retrieval

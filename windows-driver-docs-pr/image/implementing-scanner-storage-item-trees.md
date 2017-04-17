@@ -2,12 +2,6 @@
 title: Implementing Scanner-Storage Item Trees
 author: windows-driver-content
 description: Implementing Scanner-Storage Item Trees
-MS-HAID:
-- 'WIA\_scanner\_tree\_718c09d0-5605-4b2b-9641-5dc57166aa74.xml'
-- 'image.implementing\_scanner\_storage\_item\_trees'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e65a2a61-4d31-4336-9712-444943f4f4d3
 ---
 

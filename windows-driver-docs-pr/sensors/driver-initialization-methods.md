@@ -1,9 +1,6 @@
 ---
 title: Driver initialization methods
 author: windows-driver-content
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: CA8F6308-501D-47BC-902E-3259949A1D57
 description: 
 ---

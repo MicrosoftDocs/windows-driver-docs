@@ -2,12 +2,6 @@
 title: Sample Code to Create Custom Properties
 author: windows-driver-content
 description: Sample Code to Create Custom Properties
-MS-HAID:
-- 'WIA\_drv\_basic\_1f214d44-315e-4629-a42c-9e92d9a2dac4.xml'
-- 'image.sample\_code\_to\_create\_custom\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cf3e5e5b-8853-43a3-857f-87945cea2aa7
 ---
 

@@ -2,12 +2,6 @@
 title: Registering KS Proxy Plug-ins
 author: windows-driver-content
 description: Registering KS Proxy Plug-ins
-MS-HAID:
-- 'ksproxy\_dg\_82aec31e-afd5-4669-a871-9f99c43d0e3c.xml'
-- 'stream.registering\_ks\_proxy\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1f8691cb-5371-4039-a081-7c422dcac5a8
 keywords: ["Kernel Streaming Proxy WDK AVStream , registering plug-ins", "registering Kernel Streaming Proxy plug-ins WDK AVStream"]
 ---

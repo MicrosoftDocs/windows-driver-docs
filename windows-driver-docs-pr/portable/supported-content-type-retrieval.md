@@ -1,8 +1,6 @@
 ---
-Description: 'Supported Content-Type Retrieval'
-MS-HAID: 'wpddk.supported\_content\_type\_retrieval'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Supported Content-Type Retrieval'
+Description: Supported Content-Type Retrieval
+title: Supported Content-Type Retrieval
 ---
 
 # Supported Content-Type Retrieval

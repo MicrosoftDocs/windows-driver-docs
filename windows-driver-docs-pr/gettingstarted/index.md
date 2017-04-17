@@ -1,4 +1,4 @@
-﻿---
+---
 title: Getting started with Windows drivers
 description: Getting started with Windows drivers
 ms.assetid: 92258ae0-5535-4f90-aa80-573ee543a0d6

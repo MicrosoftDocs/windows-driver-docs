@@ -2,12 +2,6 @@
 title: Standard Options
 author: windows-driver-content
 description: Standard Options
-MS-HAID:
-- 'nt5gpd\_dbb99d93-c7b8-4a1c-b166-30d95b6204a2.xml'
-- 'print.standard\_options'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: db4578c1-0954-4c51-a11a-923ab7df2b5b
 keywords: ["printer options WDK Unidrv , standard", "standard options WDK Unidrv"]
 ---

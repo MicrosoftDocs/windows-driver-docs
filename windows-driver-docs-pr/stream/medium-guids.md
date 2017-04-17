@@ -2,12 +2,6 @@
 title: Medium GUIDs
 author: windows-driver-content
 description: Medium GUIDs
-MS-HAID:
-- 'vidcapds\_7c38839a-14ea-4f6c-a901-adf52dbdcce2.xml'
-- 'stream.medium\_guids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4209952c-0ba5-4359-b612-91529a0a46f1
 keywords: ["video capture WDK AVStream , mediums", "capturing video WDK AVStream , mediums", "mediums WDK video capture", "pin connections WDK video capture", "GUIDs WDK video capture"]
 ---

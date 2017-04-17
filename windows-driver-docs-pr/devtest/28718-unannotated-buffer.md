@@ -1,4 +1,4 @@
-﻿---
+---
 title: C28718
 description: Warning C28718 Unannotated buffer.
 ms.assetid: 8417AB73-B645-451D-A359-9A66A793A78D

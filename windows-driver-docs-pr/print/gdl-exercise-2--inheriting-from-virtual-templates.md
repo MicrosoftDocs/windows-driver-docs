@@ -2,12 +2,6 @@
 title: GDL Exercise 2 Inheriting from Virtual Templates
 author: windows-driver-content
 description: GDL Exercise 2 Inheriting from Virtual Templates
-MS-HAID:
-- 'gplfiles\_002b8198-7dcd-421c-8273-4762ef34fc9c.xml'
-- 'print.gdl\_exercise\_2\_\_inheriting\_from\_virtual\_templates'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 89878438-bea4-4d6f-bf3b-88d5bef0e6ab
 keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "schemas WDK GDL , implementing GDL schemas", "templates WDK GDL , inheritance", "templates WDK GDL , examples", "inheritance WDK GDL", "virtual templates WDK GDL"]
 ---

@@ -1,11 +1,5 @@
 ---
-Description: 'This topic describes the WDM device states to use for USB device power states as specified in section 9.1 of the Universal Serial Bus 2.0 specification.'
-MS-HAID:
-- 'usbpower\_9662a03f-8bd8-4097-a6a3-646161507444.xml'
-- 'buses.comparing\_usb\_device\_states\_to\_wdm\_device\_states'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: This topic describes the WDM device states to use for USB device power states as specified in section 9.1 of the Universal Serial Bus 2.0 specification.
 title: USB Device Power States
 ---
 

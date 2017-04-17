@@ -2,12 +2,6 @@
 title: Canceling a Data Transfer
 author: windows-driver-content
 description: Canceling a Data Transfer
-MS-HAID:
-- 'WIA\_db\_trans\_71507fc7-a019-47db-ae49-de6037143aba.xml'
-- 'image.canceling\_a\_data\_transfer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7900968-df57-41d9-abb1-4d2c97517362
 ---
 

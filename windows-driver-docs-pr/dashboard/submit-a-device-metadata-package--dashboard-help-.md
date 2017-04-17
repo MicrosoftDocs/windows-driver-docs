@@ -1,12 +1,6 @@
 ---
 title: Submit a Device Metadata Package (Dashboard help)
 description: Submit a Device Metadata Package (Dashboard help)
-MS-HAID:
-- 'p\_dashboard.submit\_a\_device\_metadata\_package\_\_dashboard\_help\_'
-- 'hw\_dashboard.submit\_a\_device\_metadata\_package\_\_dashboard\_help\_'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dcd35784-51c3-410a-8704-94f07fa8959a
 ---
 

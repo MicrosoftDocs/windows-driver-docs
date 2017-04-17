@@ -2,9 +2,6 @@
 title: The radio-manager file list
 author: windows-driver-content
 description: The following table describes the files that are found in the radio manager DLL.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 70A8B11F-89FF-49E3-933E-2BB66D5E1BF6
 ---
 

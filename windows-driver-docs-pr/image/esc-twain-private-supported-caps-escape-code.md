@@ -2,12 +2,6 @@
 title: ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS Escape Code
 author: windows-driver-content
 description: ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS Escape Code
-MS-HAID:
-- 'WIA\_drv\_scan\_b1a515d8-b151-42ff-b948-30c47fa4adf0.xml'
-- 'image.esc\_twain\_private\_supported\_caps\_escape\_code'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 99b9f180-018b-47c4-ab8d-dc037e3f637a
 ---
 

@@ -2,12 +2,6 @@
 title: Directory Services for Printers
 author: windows-driver-content
 description: Directory Services for Printers
-MS-HAID:
-- 'prtinst\_d1f9365c-d5ef-4aff-88da-3587d6704375.xml'
-- 'print.directory\_services\_for\_printers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4b368602-67d9-4d26-a82b-8d14d8da2625
 keywords: ["Directory Services WDK printer", "printer Directory Services support WDK", "print queues WDK , Directory Services", "queues WDK printer , Directory Services"]
 ---

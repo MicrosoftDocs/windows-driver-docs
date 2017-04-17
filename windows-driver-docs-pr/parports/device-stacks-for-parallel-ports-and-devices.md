@@ -2,12 +2,6 @@
 title: Device Stacks for Parallel Ports and Devices
 author: windows-driver-content
 description: Device Stacks for Parallel Ports and Devices
-MS-HAID:
-- 'sspd\_55bde216-5e17-4441-a30a-5c68b1771e5f.xml'
-- 'parports.device\_stacks\_for\_parallel\_ports\_and\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 80222ed9-f900-4d97-b459-2d8ca780e1d1
 keywords: ["system-supplied parallel drivers WDK , device stacks", "device stacks WDK parallel drivers", "parallel devices WDK , device stacks"]
 ---

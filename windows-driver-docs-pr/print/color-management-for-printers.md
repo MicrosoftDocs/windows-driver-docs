@@ -2,12 +2,6 @@
 title: Color Management for Printers
 author: windows-driver-content
 description: Color Management for Printers
-MS-HAID:
-- 'printicm\_b91a2499-239f-41d1-b5ea-207923e8ba2e.xml'
-- 'print.color\_management\_for\_printers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b83a46b3-57cb-463f-9a57-64a9b73035e2
 keywords: ["printer driver customizing WDK , color management", "customizing printer drivers WDK , color management", "color management WDK print", "printer driver color management WDK"]
 ---

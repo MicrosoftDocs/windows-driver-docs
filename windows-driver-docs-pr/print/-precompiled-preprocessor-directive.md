@@ -2,12 +2,6 @@
 title: \ PreCompiled Preprocessor Directive
 author: windows-driver-content
 description: \ PreCompiled Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_3c04df21-07bb-4606-91a4-b7a815280ab8.xml'
-- 'print.\_precompiled\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 639db56d-7677-4d21-8329-a0f35d68151e
 keywords: ["preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK", "PreCompiled directive WDK GDL", "GDL WDK , source files", "source files WDK GDL", "precompiled source files WDK GDL"]
 ---

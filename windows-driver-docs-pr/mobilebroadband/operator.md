@@ -1,9 +1,6 @@
 ---
 title: Operator
 description: Operator
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 770ad50d-d42d-49ad-a302-e839a0ca1fb4
 ---
 

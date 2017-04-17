@@ -1,4 +1,4 @@
-﻿---
+---
 title: DevCon ListClass
 description: Lists all devices in the specified device setup classes. Valid on local and remote computers.
 ms.assetid: b642ca5e-5ef1-499f-b8c5-96583a4bd411

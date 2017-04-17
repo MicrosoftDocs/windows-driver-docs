@@ -1,12 +1,6 @@
 ---
 title: Windows Device Experience List
 description: Windows Device Experience List
-MS-HAID:
-- 'p\_dashboard.windows\_device\_experience\_list'
-- 'hw\_dashboard.windows\_device\_experience\_list'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6325401e-4c8d-4b24-b910-ee3652470e31
 ---
 

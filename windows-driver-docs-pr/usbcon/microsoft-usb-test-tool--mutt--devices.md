@@ -1,10 +1,6 @@
 ---
-Description: 'The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.'
-MS-HAID: 'buses.microsoft\_usb\_test\_tool\_\_mutt\_\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-title: 'Microsoft USB Test Tool (MUTT) devices'
+Description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
+title: Microsoft USB Test Tool (MUTT) devices
 ---
 
 # Microsoft USB Test Tool (MUTT) devices
@@ -40,7 +36,7 @@ To communicate with MUTT devices, you need the MUTT software package. This packa
 <a href="" id="dr-mutt"></a>DR MUTT  
 [JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287)
 
-<a href="" id="mutt-connex-c"></a>MUTT ConnEx-C  
+<a href="" id="mutt-connex-c"></a> USB Type-C ConnEx
 [MCCI](http://go.microsoft.com/fwlink/p/?LinkId=733488)
 
 [JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287)
@@ -123,12 +119,12 @@ The SuperMUTT Pack is two devices in one. It is a USB 3.0 hub with a Cypress FX2
 
 The DR MUTT acts like a SuperMutt when testing host mode of the device under test, but it can also switch to host mode to test the function mode of the device under test.
 
-## MUTT ConnEx-C
+## USB Type-C ConnEx
 
 
-The MUTT Connection Exerciser for USB Type-C (MUTT ConnEx-C) is a custom shield that has a four-to-one switch to automate USB Type-C interoperability scenarios. The shield has been designed to work with Arduino as the microcontroller. For more information, see [Test USB Type-C systems with MUTT ConnEx-C](test-usb-type-c-systems-with-mutt-connex-c.md).
+The USB Type-C Connection Exerciser (USB Type-C ConnEx) is a custom shield that has a four-to-one switch to automate USB Type-C interoperability scenarios. The shield has been designed to work with Arduino as the microcontroller. For more information, see [Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md).
 
-![mutt connex-c](images/connexc-side.jpg)
+![ USB Type-C ConnEx](images/connexc-side.jpg)
 
 ## Related topics
 
@@ -142,6 +138,7 @@ The MUTT Connection Exerciser for USB Type-C (MUTT ConnEx-C) is a custom shield 
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Microsoft%20USB%20Test%20Tool%20%28MUTT%29%20devices%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
 
 
 

@@ -1,9 +1,6 @@
 ---
 title: Determine which Windows device is being used to connect to the network
 description: Determine which Windows device is being used to connect to the network
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea9a07cd-ad6e-4c49-aae0-fc9eee9b17c8
 ---
 

@@ -2,9 +2,6 @@
 title: Non-HID legacy devices
 author: windows-driver-content
 description: This section describes drivers, transports, and filter-drivers for non-HID keyboards and mice. These devices primarily run on the PS/2 transport.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4726DD47-C22E-4B92-A7BD-EB37BA53496F
 ---
 

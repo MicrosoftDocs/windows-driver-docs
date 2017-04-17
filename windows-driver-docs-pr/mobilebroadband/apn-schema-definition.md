@@ -1,14 +1,13 @@
 ---
 title: APN schema definition
 description: APN schema definition
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ae552bb5-702e-443f-8a97-c143859b127d
 ---
 
 # APN schema definition
 
+**Note**  
+The XML document must be saved by using UTF-8 encoding.
 
 The following is a definition of the APN schema.
 

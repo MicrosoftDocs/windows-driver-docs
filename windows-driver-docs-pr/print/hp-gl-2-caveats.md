@@ -2,12 +2,6 @@
 title: HP-GL/2 Caveats
 author: windows-driver-content
 description: HP-GL/2 Caveats
-MS-HAID:
-- 'nt5gpd\_3d7b47ed-70bd-4498-8489-0d0ea58197a3.xml'
-- 'print.hp\_gl\_2\_caveats'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 201a894e-5d22-46f8-965d-0e5b88dc54d7
 keywords: ["HP-GL/2 monochrome WDK Unidrv , additional considerations", "PCL-5e WDK Unidrv , additional considerations"]
 ---

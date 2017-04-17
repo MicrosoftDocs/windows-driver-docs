@@ -2,12 +2,6 @@
 title: Windows Hardware Error Architecture-Aware User-Mode Applications
 author: windows-driver-content
 description: Windows Hardware Error Architecture-Aware User-Mode Applications
-MS-HAID:
-- 'whea\_9bc3e087-d070-461e-b669-ae036655cb9c.xml'
-- 'whea.windows\_hardware\_error\_architecture\_aware\_user\_mode\_applications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb559ac3-1f8d-48b7-8ebe-018623ab8d09
 keywords: ["user-mode applications WDK WHEA", "WHEA WDK , user-mode applications", "Windows Hardware Error Architecture WDK , user-mode applications", "errors WDK WHEA , user-mode applications"]
 ---

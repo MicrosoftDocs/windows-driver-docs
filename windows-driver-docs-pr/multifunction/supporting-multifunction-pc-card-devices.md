@@ -2,12 +2,6 @@
 title: Supporting Multifunction PC Card Devices
 author: windows-driver-content
 description: Supporting Multifunction PC Card Devices
-MS-HAID:
-- 'mf-supp\_655efa6f-1f0d-41d7-82d5-3d6cb7f3609a.xml'
-- 'multifunc.supporting\_multifunction\_pc\_card\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4da3b99c-0731-41b5-9f67-29c7e181342f
 keywords: ["multifunction devices WDK , PC Card", "PC Card multifunction standard WDK", "resource maps WDK multifunction devices", "16-bit PC Card multifunction devices WDK", "configuration registers WDK multifunction devices", "registers WDK multifunction devices"]
 ---

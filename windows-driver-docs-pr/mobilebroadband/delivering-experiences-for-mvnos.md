@@ -1,9 +1,6 @@
 ---
 title: Delivering experiences for MVNOs
 description: Delivering experiences for MVNOs
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fcb2a3d4-bc19-4fa5-b81d-b0df287404a8
 ---
 
@@ -16,9 +13,9 @@ To successfully match service metadata, Windows reads information from the SIM c
 
 Use the link from the following list that is appropriate for your network:
 
--   [Matching on GSM networks](#bkmk-gsm)
+-   [Matching on GSM networks](#matching-on-gsm-networks)
 
--   [Matching on CDMA networks](#bkmk-cdma)
+-   [Matching on CDMA networks](#matching-on-cdma-networks)
 
 For info about the hardware that is required to properly match service metadata to an MNO and MVNO, see [Mobile operator hardware overview](mobile-operator-hardware-overview.md).
 
@@ -26,7 +23,7 @@ For info on service metadata, see [Service metadata](service-metadata.md).
 
 For info on the service metadata package schema, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
 
-## <span id="BKMK_GSM"></span><span id="bkmk_gsm"></span>Matching on GSM networks
+## Matching on GSM networks
 
 
 For a GSM network (3GPP), Windows reads the Integrated Circuit Card Identifier (ICCID) and the International Mobile Subscriber Identity (IMSI) number from the SIM card. These numbers must be set and retrievable from the device. If a SIM is PIN-locked and the IMSI information is hidden, Windows does not take action until the SIM PIN is unlocked. Windows also reads the Home Provider Name from the SIM or mobile broadband device.
@@ -261,7 +258,7 @@ If you want to dynamically reprogram SIMs to change the IMSI or the ICCID, you s
 
 To get new service metadata (which results in new branding), and to get a new mobile broadband app to download the ICCID and the IMSI, you must change both the service data and the mobile broadband app by using the operator’s reprogramming method.
 
-## <span id="BKMK_CDMA"></span><span id="bkmk_cdma"></span>Matching on CDMA networks
+## Matching on CDMA networks
 
 
 For a CDMA network (3GPP2), Windows reads the SID and the Provider Name values that are reported by the device to a corresponding service metadata package in WMIS. If no matches are found, no service metadata package is downloaded. Windows checks approximately every eight days to see if new metadata exists for the device. If service metadata exists for a SID and a separate service metadata package exists for a Provider Name, and both values match the SID and Provider Name values that the device is reporting, matching preference is given to SID. In this case, the Provider Name package is not matched.

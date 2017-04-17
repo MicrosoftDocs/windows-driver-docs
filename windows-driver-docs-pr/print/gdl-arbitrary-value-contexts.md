@@ -2,12 +2,6 @@
 title: GDL Arbitrary Value Contexts
 author: windows-driver-content
 description: GDL Arbitrary Value Contexts
-MS-HAID:
-- 'gplfiles\_c5cac278-dae4-4de3-a8bb-4c46f9fc6bbd.xml'
-- 'print.gdl\_arbitrary\_value\_contexts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6de79b2b-5f0f-4d6c-8a95-d9ef2266c2ef
 keywords: ["GDL WDK , contexts", "contexts WDK GDL , arbitrary value contexts", "arbitrary value contexts WDK GDL", "values WDK GDL , contexts"]
 ---

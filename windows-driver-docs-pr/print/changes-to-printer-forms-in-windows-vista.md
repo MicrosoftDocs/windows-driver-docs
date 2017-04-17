@@ -2,12 +2,6 @@
 title: Changes to Printer Forms in Windows Vista
 author: windows-driver-content
 description: Changes to Printer Forms in Windows Vista
-MS-HAID:
-- 'splarch\_c8aac47f-3674-4639-9a7f-f287fbf3431c.xml'
-- 'print.changes\_to\_printer\_forms\_in\_windows\_vista'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6e970cbd-1c7f-4c48-8d05-a29f922a3f33
 keywords: ["printer forms WDK", "forms WDK printer", "special forms WDK printer", "special paper sizes WDK printer", "paper sizes WDK forms", "custom forms WDK printer", "FORM_INFO_2 data structure WDK printer"]
 ---

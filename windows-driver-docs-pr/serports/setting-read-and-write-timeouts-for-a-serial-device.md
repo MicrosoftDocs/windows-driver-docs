@@ -2,12 +2,6 @@
 title: Setting Read and Write Timeouts for a Serial Device
 author: windows-driver-content
 description: Setting Read and Write Timeouts for a Serial Device
-MS-HAID:
-- 'sseovr\_93b8c6af-9b78-47a1-b3c1-ec5f8adeaa35.xml'
-- 'serports.setting\_read\_and\_write\_timeouts\_for\_a\_serial\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed5b80a9-93cb-4e3f-9038-e715be35f206
 keywords: ["Serial driver WDK , time-outs", "time-outs WDK serial devices", "serial devices WDK , time-outs", "read time-outs WDK serial devices", "write time-outs WDK serial devices"]
 ---

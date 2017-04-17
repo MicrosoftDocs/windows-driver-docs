@@ -2,12 +2,6 @@
 title: Distributed Scan Processing Web Service Protocol Summary
 author: windows-driver-content
 description: Distributed Scan Processing Web Service Protocol Summary
-MS-HAID:
-- 'dsm\_des\_arch\_9803e5d8-c15e-4d54-afd7-2079a0e4c895.xml'
-- 'image.distributed\_scan\_processing\_web\_service\_protocol\_summary'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c800383b-77d2-42cc-9fc5-c96ea0c0183f
 ---
 

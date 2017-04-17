@@ -2,12 +2,6 @@
 title: How the WIA Minidriver Receives a Disconnect Event from the WIA Service
 author: windows-driver-content
 description: How the WIA Minidriver Receives a Disconnect Event from the WIA Service
-MS-HAID:
-- 'WIA\_drv\_basic\_a55845b6-1cc8-4a21-be9d-6c33fc93eac1.xml'
-- 'image.how\_the\_wia\_minidriver\_receives\_a\_disconnect\_event\_from\_the\_wia\_servic'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6ae3c230-d026-469e-a699-860a295fba85
 ---
 

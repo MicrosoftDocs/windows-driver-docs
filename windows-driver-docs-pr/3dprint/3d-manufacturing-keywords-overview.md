@@ -2,9 +2,6 @@
 title: 3D manufacturing keywords overview
 author: windows-driver-content
 description: The Print Schema 3D manufacturing keywords identify possible settings for an 3D manufacturing device’s capabilities or selected settings for a particular device configuration.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D78EB9E6-584A-419C-B320-8962CDCC966E
 ---
 

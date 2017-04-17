@@ -2,12 +2,6 @@
 title: Constructing a Package-Aware Driver with Updated Core Drivers
 author: windows-driver-content
 description: Constructing a Package-Aware Driver with Updated Core Drivers
-MS-HAID:
-- 'prtinst\_0826710e-0aa3-43e2-be2d-16d3bbe3eb4e.xml'
-- 'print.constructing\_a\_package\_aware\_driver\_with\_updated\_core\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 801ac83c-a04a-4a3f-81a9-24010a390ee5
 ---
 

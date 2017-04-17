@@ -2,12 +2,6 @@
 title: Handling Color Formats
 author: windows-driver-content
 description: Handling Color Formats
-MS-HAID:
-- 'nt5gpd\_2b830623-8b39-4746-950f-c37172a447a8.xml'
-- 'print.handling\_color\_formats'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4d0faba6-1994-474f-a5d3-e25cd2800cf7
 keywords: ["Unidrv, color formats", "color formats WDK Unidrv", "ColorMode Feature", "printer color formats WDK Unidrv", "color management WDK print , formats", "Unidrv WDK print"]
 ---

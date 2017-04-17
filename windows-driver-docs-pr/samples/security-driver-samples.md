@@ -2,9 +2,6 @@
 title: Security driver samples
 author: windows-driver-content
 description: The driver sample in this directory provides a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 335446EF-0DEA-4C5E-9DE5-B08F07F6BA09
 ---
 

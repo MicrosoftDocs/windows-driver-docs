@@ -2,12 +2,6 @@
 title: RAW Data Type
 author: windows-driver-content
 description: RAW Data Type
-MS-HAID:
-- 'provider\_cb88cc32-5e95-476e-938e-a433215a31c1.xml'
-- 'print.raw\_data\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f53264c1-97aa-42f0-8bab-76bf984f2c79
 keywords: ["print processors WDK , data types", "data types WDK print processor", "RAW data type WDK print processor"]
 ---

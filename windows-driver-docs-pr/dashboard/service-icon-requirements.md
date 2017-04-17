@@ -1,12 +1,6 @@
-﻿---
+---
 title: Service icon requirements
 description: Service icon requirements
-MS-HAID:
-- 'p\_dashboard.service\_icon\_requirements'
-- 'hw\_dashboard.service\_icon\_requirements'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce018a26-f5ce-4fbb-8339-b3207ca5ed68
 ---
 

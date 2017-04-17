@@ -1,12 +1,6 @@
 ---
 title: Legacy Dashboard
 description: Legacy Dashboard
-MS-HAID:
-- 'p\_dashboard.dashboard\_services'
-- 'hw\_dashboard.dashboard\_services'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c71750f4-885f-425a-a3ad-29740a1cb0bb
 ---
 

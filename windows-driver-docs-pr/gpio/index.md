@@ -2,9 +2,6 @@
 title: General-Purpose I/O (GPIO) Driver Design Guide
 author: windows-driver-content
 description: This section describes how to write a driver for a general-purpose I/O (GPIO) controller device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D11E72AC-2B0D-4325-8BD0-9AE9B21AFD8D
 ---
 

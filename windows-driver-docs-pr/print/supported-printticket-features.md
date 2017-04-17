@@ -2,9 +2,6 @@
 title: Supported PrintTicket Features
 author: windows-driver-content
 description: This section provides information about the PrintTicket features that are supported by the standard XPS filters.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6D1AD770-D4BA-4BDC-886A-C5C36A09BB0E
 ---
 

@@ -2,9 +2,6 @@
 title: Interrupt-Related Callbacks
 author: windows-driver-content
 description: As an option, the driver for a general-purpose I/O (GPIO) controller can provide support for GPIO interrupts.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 638B52A0-CB8D-4A79-B7D1-ED2474E46DAE
 ---
 

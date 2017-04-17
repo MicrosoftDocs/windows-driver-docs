@@ -1,9 +1,6 @@
 ---
 title: Hotspot authentication methods
 description: Hotspot authentication methods
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10334e20-693c-4fa3-a38d-e82e77fcd865
 ---
 

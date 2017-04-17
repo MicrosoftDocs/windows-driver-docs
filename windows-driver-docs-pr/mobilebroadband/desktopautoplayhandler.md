@@ -1,9 +1,6 @@
 ---
 title: DesktopAutoplayHandler
 description: DesktopAutoplayHandler
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e1a07580-36dd-4618-b522-3f7605c9b87b
 ---
 

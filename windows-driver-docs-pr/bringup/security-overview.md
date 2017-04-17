@@ -2,9 +2,6 @@
 title: Security
 author: windows-driver-content
 description: Use the topics in this section to learn more about security in Windows 10 Mobile.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15783e59-f37b-4373-8604-d35c57eedfcc
 ---
 

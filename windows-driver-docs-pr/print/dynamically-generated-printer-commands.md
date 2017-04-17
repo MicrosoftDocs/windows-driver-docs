@@ -2,12 +2,6 @@
 title: Dynamically Generated Printer Commands
 author: windows-driver-content
 description: Dynamically Generated Printer Commands
-MS-HAID:
-- 'custdrvr\_b41e36c2-b02c-47cc-ab13-b341d1e9362b.xml'
-- 'print.dynamically\_generated\_printer\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ba395716-6906-4f23-a050-79d808ccd44b
 keywords: ["Unidrv, dynamically generated commands", "dynamically generated print commands WDK Unidrv", "GPD files WDK Unidrv", "Unidrv WDK print"]
 ---

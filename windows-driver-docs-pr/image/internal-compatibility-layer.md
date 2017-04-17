@@ -2,12 +2,6 @@
 title: Internal Compatibility Layer
 author: windows-driver-content
 description: Internal Compatibility Layer
-MS-HAID:
-- 'WIA\_arch\_b0ae1e3e-8225-4fff-8fdd-6b50d543f680.xml'
-- 'image.internal\_compatibility\_layer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6cfb3842-751e-4f4c-9fac-daba70245b81
 ---
 

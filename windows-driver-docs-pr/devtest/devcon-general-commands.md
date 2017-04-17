@@ -129,7 +129,7 @@ For example, **devcon hwids =media \*pnp\* \*microsoft\*** returns devices in th
 
  
 
-### <span id="ddk_rebooting_and_restarting_tools"></span><span id="DDK_REBOOTING_AND_RESTARTING_TOOLS"></span>Rebooting and restarting
+### <span id="ddk_rebooting_and_restarting_tools"></span><span id="DDK_REBOOTING_AND_RESTARTING_TOOLS"></span><a name="ddk-rebooting-and-restarting-tools"></a>Rebooting and restarting
 
 DevCon provides two methods to reboot the operating system and one method to restart devices.
 

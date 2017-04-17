@@ -2,12 +2,6 @@
 title: Pscript-Specific Customized Rendering
 author: windows-driver-content
 description: Pscript-Specific Customized Rendering
-MS-HAID:
-- 'custdrvr\_9172473f-75c8-4c99-bcf0-2d5915bebf63.xml'
-- 'print.pscript\_specific\_customized\_rendering'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e984f0f0-1435-4cfd-9a99-297f6a9521f5
 keywords: ["rendering plug-ins WDK print , Pscript5", "Pscript WDK print , customized rendering"]
 ---

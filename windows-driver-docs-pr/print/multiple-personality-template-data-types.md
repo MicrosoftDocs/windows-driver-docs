@@ -2,12 +2,6 @@
 title: Multiple Personality Template Data Types
 author: windows-driver-content
 description: Multiple Personality Template Data Types
-MS-HAID:
-- 'gplfiles\_5b2b6268-b6a9-437e-a6d2-5166632f11b3.xml'
-- 'print.multiple\_personality\_template\_data\_types'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ee550416-9185-41fa-b113-6a1d22c3aa96
 keywords: ["templates WDK GDL , data types", "data types WDK GDL , compound", "MULTIPLE_PERSONALITY data type WDK GDL", "ElementType directive WDK GDL", "ElementTags directive WDK GDL", "unions WDK GDL", "GDL WDK , unions"]
 ---

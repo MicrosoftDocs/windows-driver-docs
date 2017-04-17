@@ -2,12 +2,6 @@
 title: Pscript Capabilities
 author: windows-driver-content
 description: Pscript Capabilities
-MS-HAID:
-- 'pscript\_78c8dda7-391d-425e-81ab-f58b90b7fcbb.xml'
-- 'print.pscript\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1530cb64-a1b1-4ff5-a6bf-b3634e83a225
 keywords: ["PostScript Printer Driver WDK print , capabilities", "Pscript WDK print , capabilities"]
 ---

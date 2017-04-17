@@ -2,12 +2,6 @@
 title: AVStream Dispatch Tables
 author: windows-driver-content
 description: AVStream Dispatch Tables
-MS-HAID:
-- 'avsover\_966a9157-7a70-4b8c-af90-12b49aea82e9.xml'
-- 'stream.avstream\_dispatch\_tables'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 974ea9ee-bb59-4973-83ef-c61f0240a555
 keywords: ["dispatch tables WDK AVStream", "AVStream dispatch tables WDK", "KSDEVICE_DISPATCH", "dispatching functions WDK AVStream", "dispatch functions WDK AVStream", "Process dispatch WDK AVStream", "filter-centric filters WDK AVStream", "pin-centric filters WDK AVStream"]
 ---

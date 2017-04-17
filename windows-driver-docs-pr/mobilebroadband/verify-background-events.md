@@ -1,9 +1,6 @@
 ---
 title: Verify background events
 description: Verify background events
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c840f555-2e09-409d-9d4f-4d9e8bd8d5a5
 ---
 

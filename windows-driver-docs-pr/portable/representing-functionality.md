@@ -1,7 +1,5 @@
 ---
 Description: Representing Functionality
-MS-HAID: 'wpddk.representing\_functionality'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
 title: Representing Functionality
 ---
 

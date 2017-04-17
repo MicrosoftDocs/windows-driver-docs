@@ -2,12 +2,6 @@
 title: IPrintOemUI2 COM Interface
 author: windows-driver-content
 description: IPrintOemUI2 COM Interface
-MS-HAID:
-- 'custdrvr\_27eeca4f-f102-4969-9cba-5fe855fab9b9.xml'
-- 'print.iprintoemui2\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9aee61af-e8e2-4bc4-a17b-783242d1ac1f
 keywords: ["IPrintOemUI2"]
 ---

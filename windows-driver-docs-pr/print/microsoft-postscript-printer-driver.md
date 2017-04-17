@@ -2,12 +2,6 @@
 title: Microsoft PostScript Printer Driver
 author: windows-driver-content
 description: Microsoft PostScript Printer Driver
-MS-HAID:
-- 'pscript\_ccdc3e30-0b44-4ada-b51a-8c0d0bfd5997.xml'
-- 'print.microsoft\_postscript\_printer\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1c67d20c-ada6-42fd-a882-61e12b72611f
 keywords: ["printer drivers WDK , PostScript Printer Driver", "PostScript Printer Driver WDK print", "Pscript WDK print"]
 ---

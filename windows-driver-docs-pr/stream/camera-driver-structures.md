@@ -2,9 +2,6 @@
 title: Camera driver structures
 author: windows-driver-content
 description: The following camera driver structures are new for Windows 10.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E1C2695B-F3E3-4B16-9552-C79B957A5470
 ---
 

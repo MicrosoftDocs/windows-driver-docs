@@ -2,12 +2,6 @@
 title: TWAIN Compatibility
 author: windows-driver-content
 description: TWAIN Compatibility
-MS-HAID:
-- 'WIA\_drv\_scan\_703dd7e2-5a3f-41cb-bfa5-2f4eed5a074a.xml'
-- 'image.twain\_compatibility'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 270e62dd-590c-4495-be22-002957932031
 ---
 

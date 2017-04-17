@@ -2,12 +2,6 @@
 title: GDL Block Macros
 author: windows-driver-content
 description: GDL Block Macros
-MS-HAID:
-- 'gplfiles\_2aa9ccf7-9baa-40c6-9cba-555f27329d46.xml'
-- 'print.gdl\_block\_macros'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8b8e38d-237f-4c54-a394-148d211237ce
 keywords: ["GDL WDK , macros", "macros WDK GDL , block macros", "block macros WDK GDL", "BlockMacros directive WDK GDL", "macros WDK GDL , examples"]
 ---

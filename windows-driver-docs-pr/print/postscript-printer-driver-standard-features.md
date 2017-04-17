@@ -2,9 +2,6 @@
 title: PostScript Printer Standard Features
 author: windows-driver-content
 description: The PostScript printer standard features are the common ones that are provided by most PostScript printers.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F904B8DD-7790-44FA-8C20-BCC3720B3528
 ---
 

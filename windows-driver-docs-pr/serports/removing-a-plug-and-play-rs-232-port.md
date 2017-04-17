@@ -2,12 +2,6 @@
 title: Removing a Plug and Play RS-232 Port
 author: windows-driver-content
 description: Removing a Plug and Play RS-232 Port
-MS-HAID:
-- 'sseovr\_64d6356a-543f-40bd-ba17-26c411c4e420.xml'
-- 'serports.removing\_a\_plug\_and\_play\_rs\_232\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b439dc51-09f2-4149-a562-2e376bb504c5
 keywords: ["RS-232 ports WDK serial devices", "Serenum driver WDK , Plug and Play devices", "Plug and Play serial devices WDK", "serial devices WDK , Plug and Play", "removing RS-232 ports"]
 ---

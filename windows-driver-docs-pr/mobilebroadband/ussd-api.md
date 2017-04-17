@@ -1,9 +1,6 @@
 ---
 title: USSD API
 description: USSD API
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c5700791-6978-4626-ab69-aa4391247542
 ---
 

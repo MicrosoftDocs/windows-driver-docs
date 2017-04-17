@@ -2,12 +2,6 @@
 title: Customized Font Installers for Unidrv
 author: windows-driver-content
 description: Customized Font Installers for Unidrv
-MS-HAID:
-- 'custdrvr\_68f873f0-bd62-4776-aeae-2a7cd47d6c4d.xml'
-- 'print.customized\_font\_installers\_for\_unidrv'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d753368d-b1c8-454e-a02b-131dc778e723
 keywords: ["printer driver customizing WDK , installing components", "customizing printer drivers WDK , installing components", "installing custom printer driver components WDK", "font installers WDK Unidrv", ".uff files", "UFF files"]
 ---

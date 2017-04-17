@@ -1,9 +1,6 @@
 ---
 title: Enumerate SMS devices
 description: Enumerate SMS devices
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d0d57a4f-df83-4f3b-b7b4-417ad4e11350
 ---
 

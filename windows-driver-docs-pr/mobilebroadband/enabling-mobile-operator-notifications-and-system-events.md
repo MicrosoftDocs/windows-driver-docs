@@ -1,9 +1,6 @@
 ---
 title: Enabling mobile operator notifications and system events
 description: Enabling mobile operator notifications and system events
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 988bafcc-ad8e-446d-9336-85c19cf05577
 ---
 

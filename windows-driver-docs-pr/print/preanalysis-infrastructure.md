@@ -2,12 +2,6 @@
 title: Preanalysis Infrastructure
 author: windows-driver-content
 description: Preanalysis Infrastructure
-MS-HAID:
-- 'nt5gpd\_80576847-81c9-492e-ba14-05345bfafde3.xml'
-- 'print.preanalysis\_infrastructure'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4c07145a-9a08-4507-8bab-769617e73d77
 keywords: ["banding WDK Unidrv", "preanalysis infrastructure WDK Unidrv", "black bands WDK Unidrv", "DrvStretchBlt", "OEMStretchBlt", "DrvStartBanding", "DrvNextBand", "DrvQueryPerBandInfo"]
 ---

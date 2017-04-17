@@ -1,9 +1,6 @@
 ---
 title: Overview
 description: Overview
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b9b79b7d-35b3-4058-ad6d-1dbead76c4fb
 ---
 

@@ -2,12 +2,6 @@
 title: Customized Graphics DDI Functions
 author: windows-driver-content
 description: Customized Graphics DDI Functions
-MS-HAID:
-- 'custdrvr\_485af06e-fe7c-45b0-953b-7d87c4071382.xml'
-- 'print.customized\_graphics\_ddi\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33d7d567-5371-4873-a4ef-cd2b06f65d73
 keywords: ["rendering plug-ins WDK print , graphics DDI functions", "graphics DDI functions WDK print", "hooking graphics DDI functions WDK print"]
 ---

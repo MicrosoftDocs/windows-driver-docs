@@ -2,12 +2,6 @@
 title: Printer Connected to a USB Port
 author: windows-driver-content
 description: Printer Connected to a USB Port
-MS-HAID:
-- 'prtinst\_ec3efc32-5ea7-46e0-b9c6-a359a247e85f.xml'
-- 'print.printer\_connected\_to\_a\_usb\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 85e238e1-4dc1-4720-b383-d6aaed72e560
 keywords: ["USB printers WDK", "bus-type printer driver WDK"]
 ---

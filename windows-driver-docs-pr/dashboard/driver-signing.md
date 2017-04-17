@@ -1,9 +1,6 @@
 ---
 title: Driver signing
 description: Driver signing
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e0d378a7-79dd-4af8-a5b9-aa90452cc78d
 ---
 

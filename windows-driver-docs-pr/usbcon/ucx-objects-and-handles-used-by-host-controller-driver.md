@@ -1,9 +1,5 @@
 ---
-Description: 'UCX extends the WDF object functionality to define its own USB-specific UCX objects. UCX uses these objects for queuing requests to any underlying host controller driver.'
-MS-HAID: 'buses.ucx\_objects\_and\_handles\_used\_by\_host\_controller\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: UCX extends the WDF object functionality to define its own USB-specific UCX objects. UCX uses these objects for queuing requests to any underlying host controller driver.
 title: UCX objects and handles used by a host controller driver
 ---
 

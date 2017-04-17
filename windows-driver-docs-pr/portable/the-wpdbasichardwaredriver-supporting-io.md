@@ -1,8 +1,6 @@
-﻿---
-Description: 'Supporting I/O'
-MS-HAID: 'wpddk.the\_wpdbasichardwaredriver\_supporting\_io'
-MSHAttr: 'PreferredLib:/library/windows/hardware'
-title: 'Supporting I/O'
+---
+Description: Supporting I/O
+title: Supporting I/O
 ---
 
 # Supporting I/O

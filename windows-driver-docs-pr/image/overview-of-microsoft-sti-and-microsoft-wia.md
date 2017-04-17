@@ -2,12 +2,6 @@
 title: Overview of Microsoft STI and Microsoft WIA
 author: windows-driver-content
 description: Overview of Microsoft STI and Microsoft WIA
-MS-HAID:
-- 'stillimg\_c201559a-cc95-4e7f-bf16-e39322ea3e2e.xml'
-- 'image.overview\_of\_microsoft\_sti\_and\_microsoft\_wia'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c973f9a2-48a5-420f-b317-0797171cf714
 ---
 

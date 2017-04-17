@@ -2,12 +2,6 @@
 title: Setting Value Data by Specifying Its Usage
 author: windows-driver-content
 description: Setting Value Data by Specifying Its Usage
-MS-HAID:
-- 'hidclass\_346ca1e8-4649-468c-b3dd-fe7c33e50f48.xml'
-- 'hid.setting\_value\_data\_by\_specifying\_its\_usage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 69dc3bb4-8999-4990-950c-8581328030eb
 keywords: ["HID reports WDK , setting control data", "reports WDK HID , setting control data", "data usage settings WDK HID"]
 ---

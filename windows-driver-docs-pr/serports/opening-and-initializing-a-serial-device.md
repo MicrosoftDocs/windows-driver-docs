@@ -2,12 +2,6 @@
 title: Opening and Initializing a Serial Device
 author: windows-driver-content
 description: Opening and Initializing a Serial Device
-MS-HAID:
-- 'sseovr\_6d023cfd-6152-4d65-9f61-1079b799a7d9.xml'
-- 'serports.opening\_and\_initializing\_a\_serial\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 08266561-4738-4313-b53b-d60081e875c7
 keywords: ["Serial driver WDK , device opening", "Serial driver WDK , device initializing", "serial devices WDK , opening", "serial devices WDK , initializing", "initializing serial devices"]
 ---

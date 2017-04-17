@@ -2,12 +2,6 @@
 title: GDL Template Structure
 author: windows-driver-content
 description: GDL Template Structure
-MS-HAID:
-- 'gplfiles\_f702bc89-9698-4f52-9e8a-03cc065dae85.xml'
-- 'print.gdl\_template\_structure'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 68c03c8a-f0d5-43db-a44a-5b0c344fa934
 keywords: ["GDL WDK , templates", "templates WDK GDL", "templates WDK GDL , structure", "parser WDK GDL , template-based parsing", "template-based parsing WDK GDL", "validating GDL entries WDK GDL", "GDL WDK , validating entries", "attributes WDK GDL , in templates", "constructs WDK GDL , in templates", "inheritance WDK GDL", "schemas WDK GDL , inheritance-based schemas"]
 ---

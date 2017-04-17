@@ -2,12 +2,6 @@
 title: Command Processing and Event Reporting
 author: windows-driver-content
 description: Command Processing and Event Reporting
-MS-HAID:
-- 'WIA\_arch\_8fbf2f36-cf8f-497b-9246-e789af6bac8d.xml'
-- 'image.command\_processing\_and\_event\_reporting'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f51c082d-1be5-4f34-b7a6-82235e8c14f4
 ---
 

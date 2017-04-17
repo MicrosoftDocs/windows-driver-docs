@@ -2,12 +2,6 @@
 title: Installing Pages for a Manufacturer
 author: windows-driver-content
 description: Installing Pages for a Manufacturer
-MS-HAID:
-- 'inetpri\_918a1dbc-370f-4cb0-80e7-dfa13d1f82ca.xml'
-- 'print.installing\_pages\_for\_a\_manufacturer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 637b265f-9138-4696-b52a-ce63cd1f2c01
 keywords: ["installing customized print Web pages WDK", "customized print Web pages WDK , installing", "manufacturer-specific printer installations WDK"]
 ---

@@ -2,12 +2,6 @@
 title: Installing Serial Ports and COM Ports
 author: windows-driver-content
 description: Installing Serial Ports and COM Ports
-MS-HAID:
-- 'sseovr\_d4e1e257-31ad-432b-b752-847a6b8ff061.xml'
-- 'serports.installing\_serial\_ports\_and\_com\_ports'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c755dfa-65e5-4ecb-8544-dd63c6b69c8e
 keywords: ["serial ports WDK", "COM ports WDK serial devices", "Serial driver WDK , COM ports"]
 ---

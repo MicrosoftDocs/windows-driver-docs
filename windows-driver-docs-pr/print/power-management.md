@@ -2,12 +2,6 @@
 title: Power Management
 author: windows-driver-content
 description: Power Management
-MS-HAID:
-- 'prntools\_2d3abef5-fdfb-4a51-8864-560d52b92687.xml'
-- 'print.power\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b47ed463-2292-419a-af16-196382dbd3f1
 keywords: ["power management WDK printer", "critical shutdowns WDK printer", "shutdown power management WDK printer", "standby tests WDK printer", "hibernate tests WDK printer"]
 ---

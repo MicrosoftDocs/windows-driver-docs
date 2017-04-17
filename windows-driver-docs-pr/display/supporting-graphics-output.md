@@ -1,4 +1,4 @@
-﻿---
+---
 title: Supporting Graphics Output
 description: Supporting Graphics Output
 ms.assetid: 2ac9b01d-9dca-44b4-9645-9c5eefb2ef1b

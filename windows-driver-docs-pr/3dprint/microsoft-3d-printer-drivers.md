@@ -2,9 +2,6 @@
 title: Microsoft 3D printer drivers
 author: windows-driver-content
 description: This section contains information about Microsoft 3D printer drivers.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1CDEEEBE-86BD-463B-B119-BA35E30DA45F
 ---
 

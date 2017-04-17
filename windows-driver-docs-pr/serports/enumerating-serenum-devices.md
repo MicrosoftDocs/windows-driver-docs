@@ -2,12 +2,6 @@
 title: Enumerating Serenum Devices
 author: windows-driver-content
 description: Enumerating Serenum Devices
-MS-HAID:
-- 'sseovr\_5e7fab23-4131-4c53-9088-19e53e4525a3.xml'
-- 'serports.enumerating\_serenum\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c850c52b-82d7-48c2-a6c4-bfd071756632
 keywords: ["Serenum driver WDK , device enumeration", "enumerating Serenum devices WDK serial devices"]
 ---

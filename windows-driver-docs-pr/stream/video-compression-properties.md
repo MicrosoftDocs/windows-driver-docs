@@ -2,12 +2,6 @@
 title: Video Compression Properties
 author: windows-driver-content
 description: Video Compression Properties
-MS-HAID:
-- 'vidcapds\_52151629-ea9e-47a1-8e50-4e1ded384e29.xml'
-- 'stream.video\_compression\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2fd69425-7c36-4766-88e6-7f02d5fa6659
 keywords: ["video compression properties WDK video capture", "compression properties WDK video capture", "PROPSETID_VIDCAP_VIDEOCOMPRESSION"]
 ---

@@ -2,12 +2,6 @@
 title: GDL Macros
 author: windows-driver-content
 description: GDL Macros
-MS-HAID:
-- 'gplfiles\_3936e921-149d-4a73-b3a8-cdea2fed227c.xml'
-- 'print.gdl\_macros'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4ac8d76e-b52a-4987-920c-38d375559777
 keywords: ["GDL WDK , macros", "macros WDK GDL", "GDL WDK , elements"]
 ---

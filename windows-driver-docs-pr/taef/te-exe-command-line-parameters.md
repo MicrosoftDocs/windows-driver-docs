@@ -21,7 +21,7 @@ ms.assetid: E9A9292D-FA30-410d-9322-BD0F321314F9
 ## <span id="SelectionExecutionCommands"></span><span id="selectionexecutioncommands"></span><span id="SELECTIONEXECUTIONCOMMANDS"></span>Selection/Execution Commands
 
 
-### <span id="TestBinaries"></span><span id="testbinaries"></span><span id="TESTBINARIES"></span>test\_binaries
+### test\_binaries
 
 Specify one or more test files to execute (separated by spaces). Wildcard characters are supported.
 
@@ -44,7 +44,7 @@ Specifies whether or not TAEF should output colored console text. The default is
 
 Provides options for configuring TE's use of the console. The following options are available:
 
-<span id="_console_flushWrites"></span><span id="_console_flushwrites"></span><span id="_CONSOLE_FLUSHWRITES"></span>**/console:flushWrites**  
+<span id="console-option"></span>**/console:flushWrites**  
 Causes console output to be flushed after every line is written - useful when TE.exe's output has been redirected.
 
 <span id="_console_position__x_y___current__"></span><span id="_CONSOLE_POSITION__X_Y___CURRENT__"></span>**/console:position=\[x,y | current \]**  

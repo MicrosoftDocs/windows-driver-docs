@@ -2,12 +2,6 @@
 title: IStiUSD COM Interface
 author: windows-driver-content
 description: IStiUSD COM Interface
-MS-HAID:
-- 'stillimg\_57617ce0-9992-43e6-ac7f-73caa456c318.xml'
-- 'image.istiusd\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2f805955-8c66-4c9e-839e-c8a98c6637a8
 ---
 

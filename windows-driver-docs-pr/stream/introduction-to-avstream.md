@@ -2,12 +2,6 @@
 title: Introduction to AVStream
 author: windows-driver-content
 description: Introduction to AVStream
-MS-HAID:
-- 'avsover\_a4d3f7d8-9cb1-4100-bef6-12b2cdd3bf30.xml'
-- 'stream.introduction\_to\_avstream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 626556b5-cdfe-4d02-a5a9-881062d4e5b2
 keywords: ["AVStream WDK"]
 ---

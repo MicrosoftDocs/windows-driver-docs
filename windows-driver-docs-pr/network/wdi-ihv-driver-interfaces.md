@@ -28,8 +28,8 @@ The WDI IHV miniport is like any other NDIS miniport driver and it would follow 
 -   [MiniportSendNetBufferLists](#miniportsendnetbufferlists)
 -   [MiniportCancelSend](#miniportcancelsend)
 -   [MiniportReturnNetBufferLists](#miniportreturnnetbufferlists)
--   [WDI handler: MiniportWdiOpenAdapter](#wdi-handler--miniportwdiopenadapter)
--   [WDI handler: MiniportWdiCloseAdapter](#wdi-handler--miniportwdicloseadapter)
+-   [WDI handler: MiniportWdiOpenAdapter](#wdi-handler-miniportwdiopenadapter)
+-   [WDI handler: MiniportWdiCloseAdapter](#wdi-handler-miniportwdicloseadapter)
 
 ## Driver installation
 

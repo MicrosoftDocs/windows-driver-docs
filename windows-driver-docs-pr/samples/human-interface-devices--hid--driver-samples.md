@@ -2,9 +2,6 @@
 title: Human interface devices (HID) driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 38C52EAD-9DC6-4575-A9FF-1472FDDC2702
 ---
 

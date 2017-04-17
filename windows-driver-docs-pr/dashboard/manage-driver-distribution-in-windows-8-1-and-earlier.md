@@ -1,12 +1,6 @@
 ---
 title: Manage Driver Distribution in Windows 8.1 and earlier
 description: Manage Driver Distribution in Windows 8.1 and earlier
-MS-HAID:
-- 'p\_dashboard.manage\_driver\_distribution\_in\_windows\_8\_1\_and\_earlier'
-- 'hw\_dashboard.manage\_driver\_distribution\_in\_windows\_8\_1\_and\_earlier'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 402880AC-67B1-420A-A77D-949D6DD32DE5
 ---
 

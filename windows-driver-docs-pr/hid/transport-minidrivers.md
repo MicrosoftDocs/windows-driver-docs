@@ -2,9 +2,6 @@
 title: Transport minidrivers
 author: windows-driver-content
 description: This section contains details for vendors who need to create their own HID minidrivers. (You will need to create a minidriver if your device requires a transport other than USB, Bluetooth, Bluetooth LE, or I²C.).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5142A2C9-AE6E-4CE6-AF16-2CF811D6C10F
 ---
 

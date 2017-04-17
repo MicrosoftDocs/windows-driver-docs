@@ -2,12 +2,6 @@
 title: Sample Port Monitor
 author: windows-driver-content
 description: Sample Port Monitor
-MS-HAID:
-- 'provider\_df357cb4-7200-4908-9e25-c61bef4193f7.xml'
-- 'print.sample\_port\_monitor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: dac754bf-f39d-439c-974b-889436211ef3
 keywords: ["port monitors WDK print , samples"]
 ---

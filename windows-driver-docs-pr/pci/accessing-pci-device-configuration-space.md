@@ -2,12 +2,6 @@
 title: Accessing PCI Device Configuration Space
 author: windows-driver-content
 description: Accessing PCI Device Configuration Space
-MS-HAID:
-- 'pcidg\_1ad3e7c4-998e-4a79-af99-55fbf1c7d5fe.xml'
-- 'PCI.accessing\_pci\_device\_configuration\_space'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05e0ada9-d465-4787-abc5-469a75352ee0
 keywords: ["PCI configuration space WDK buses", "configuration space WDK buses", "IRP_MN_READ_CONFIG", "IRP_MN_WRITE_CONFIG"]
 ---

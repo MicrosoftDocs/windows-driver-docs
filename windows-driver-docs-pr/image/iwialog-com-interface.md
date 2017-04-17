@@ -2,12 +2,6 @@
 title: IWiaLog COM Interface
 author: windows-driver-content
 description: IWiaLog COM Interface
-MS-HAID:
-- 'WIA\_arch\_842eb8ec-6790-4ec5-aece-a564fe1854d5.xml'
-- 'image.iwialog\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e5d42b5d-796f-42f3-9c01-4234b8765ca6
 ---
 

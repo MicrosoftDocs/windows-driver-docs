@@ -2,9 +2,6 @@
 title: GNSS driver design guide
 author: windows-driver-content
 description: This section contains design guidance for building GNSS device drivers.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: BD6A1262-D4DF-4340-A172-2E236B03C03C
 ---
 

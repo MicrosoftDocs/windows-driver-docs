@@ -1,12 +1,6 @@
 ---
 title: Join a Remote Debugging Session
 description: Join a Remote Debugging Session
-MS-HAID:
-- 'p\_dashboard.join\_a\_remote\_debugging\_session'
-- 'hw\_dashboard.join\_a\_remote\_debugging\_session'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7be4b7b3-ecbb-435a-8256-0e4ba9919ff7
 ---
 

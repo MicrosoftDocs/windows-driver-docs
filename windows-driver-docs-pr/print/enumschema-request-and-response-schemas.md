@@ -2,9 +2,6 @@
 title: EnumSchema Request and Response Schemas
 author: windows-driver-content
 description: The EnumSchema request schema and corresponding response schema definition, and an example of each, are below.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 031FA2EA-A33B-409C-82FD-B4FE9D0A2E93
 ---
 

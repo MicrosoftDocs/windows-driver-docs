@@ -2,12 +2,6 @@
 title: Printer Connected to an Infrared Port
 author: windows-driver-content
 description: Printer Connected to an Infrared Port
-MS-HAID:
-- 'prtinst\_839151ea-f2e5-4e3b-8bc5-9d128b1fd23a.xml'
-- 'print.printer\_connected\_to\_an\_infrared\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8545cf66-9b5c-41e8-82e0-e0edd75ad41b
 keywords: ["infrared ports WDK printer", "IR ports WDK printer"]
 ---

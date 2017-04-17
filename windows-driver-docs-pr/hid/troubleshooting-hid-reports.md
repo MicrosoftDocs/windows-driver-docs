@@ -2,12 +2,6 @@
 title: Troubleshooting HID Reports
 author: windows-driver-content
 description: Troubleshooting HID Reports
-MS-HAID:
-- 'hidclass\_c8f67bf7-a98c-4933-9859-7c1d4e915527.xml'
-- 'hid.troubleshooting\_hid\_reports'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8fbf641b-461b-44c2-9cc5-c1547abc75d6
 keywords: ["HID reports WDK , troubleshooting", "reports WDK HID , troubleshooting", "troubleshooting reports WDK HID", "dropped HID reports WDK", "errors WDK HID reports"]
 ---

@@ -2,12 +2,6 @@
 title: Option Attributes
 author: windows-driver-content
 description: Option Attributes
-MS-HAID:
-- 'nt5gpd\_82866191-d69c-450b-b34a-11e01dfb537a.xml'
-- 'print.option\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 140837b9-2af6-485c-8b59-95fcd6502e18
 keywords: ["printer attributes WDK Unidrv , options", "option attributes WDK Unidrv", "printer options WDK Unidrv , attributes"]
 ---

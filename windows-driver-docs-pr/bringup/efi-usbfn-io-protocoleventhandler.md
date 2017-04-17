@@ -2,9 +2,6 @@
 title: EFI\_USBFN\_IO\_PROTOCOL.EventHandler
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.EventHandler
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d493de90-cb8c-44d1-8999-f1ceb26e5c15
 ---
 

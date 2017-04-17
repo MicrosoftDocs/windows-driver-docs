@@ -2,12 +2,6 @@
 title: PSHED Plug-In Installation
 author: windows-driver-content
 description: PSHED Plug-In Installation
-MS-HAID:
-- 'whea\_7fbf17b6-70f2-445d-972a-a889e8336924.xml'
-- 'whea.pshed\_plug\_in\_installation'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0c84c7c1-f976-4731-9f2b-46a95186eb18
 keywords: ["Windows Hardware Error Architecture WDK , installing platform-specific hardware error driver plug-ins", "WHEA WDK , installing platform-specific hardware error driver plug-ins", "hardware errors WDK WHEA , installing platform-specific hardware error driver plug-ins", "errors WDK WHEA , installing platform-specific hardware error driver plug-ins", "Windows Hardware Error Architecture WDK , installing PSHED plug-ins", "WHEA WDK , installing PSHED plug-ins", "hardware errors WDK WHEA , installing PSHED plug-ins", "errors WDK WHEA , installing PSHED plug-ins", "platform-specific hardware error driver plug-ins WDK WHEA , installing", "PSHED plug-ins WDK WHEA , installing", "installing PSHED plug-ins WDK WHEA"]
 ---

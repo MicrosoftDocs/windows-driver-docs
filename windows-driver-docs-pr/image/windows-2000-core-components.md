@@ -2,12 +2,6 @@
 title: Windows 2000 Core Components
 author: windows-driver-content
 description: Windows 2000 Core Components
-MS-HAID:
-- 'stillimg\_f3723cac-3457-4b59-8b95-2275fa4ec57c.xml'
-- 'image.windows\_2000\_core\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e3c560e8-ad75-4187-84c2-f918a201d10e
 ---
 

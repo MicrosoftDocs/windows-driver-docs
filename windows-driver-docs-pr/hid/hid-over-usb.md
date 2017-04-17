@@ -2,9 +2,6 @@
 title: HID over USB
 author: windows-driver-content
 description: USB was the first supported HID transport in the Windows operating system. The corresponding inbox driver was introduced in Windows 2000 and has been available in all operating systems since then.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F892C910-BA33-4795-A803-9D3FD55782BC
 keywords: ["HID miniport driver", "USB", "USB 1.1", "USB 2.0", "USB 3.0", "USB, HID"]
 ---

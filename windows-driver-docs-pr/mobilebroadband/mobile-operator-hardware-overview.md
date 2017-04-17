@@ -1,9 +1,6 @@
 ---
 title: Mobile operator hardware overview
 description: Mobile operator hardware overview
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b2322972-16be-443f-b46a-7834b4d7ead0
 ---
 

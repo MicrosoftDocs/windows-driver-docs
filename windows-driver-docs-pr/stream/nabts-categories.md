@@ -2,12 +2,6 @@
 title: NABTS Categories
 author: windows-driver-content
 description: NABTS Categories
-MS-HAID:
-- 'vidcapds\_15887077-9c43-4f95-abea-bf39084ee78b.xml'
-- 'stream.nabts\_categories'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7d064ed4-1bd9-4457-83c8-8b1fee10251c
 keywords: ["stream categories WDK video capture , NABTS", "PINNAME_VIDEO_NABTS", "North American Broadcast Teletext Standard WDK video capture", "NABTS WDK video capture"]
 ---

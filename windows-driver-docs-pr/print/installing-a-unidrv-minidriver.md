@@ -2,12 +2,6 @@
 title: Installing a Unidrv Minidriver
 author: windows-driver-content
 description: Installing a Unidrv Minidriver
-MS-HAID:
-- 'nt5gpd\_cb0ec936-be92-4345-8c02-19bb863206a6.xml'
-- 'print.installing\_a\_unidrv\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0efead8f-c413-4ec1-b940-89b57f95345e
 keywords: ["Unidrv, minidrivers", "minidrivers WDK Unidrv", "INF files WDK print , Unidrv minidrivers", "Unidrv WDK print"]
 ---

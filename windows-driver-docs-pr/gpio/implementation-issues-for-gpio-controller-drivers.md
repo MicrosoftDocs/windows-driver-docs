@@ -2,9 +2,6 @@
 title: Implementation Issues for GPIO Controller Drivers
 author: windows-driver-content
 description: The GPIO framework extension (GpioClx) provides a flexible device driver interface (DDI).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 303A6034-7ED7-4C21-86E5-076383AF3A5B
 ---
 

@@ -2,12 +2,6 @@
 title: Implementing Image Color Management
 author: windows-driver-content
 description: Implementing Image Color Management
-MS-HAID:
-- 'WIA\_drv\_basic\_6fc82f0f-f049-4ca7-a139-836104d63bc9.xml'
-- 'image.implementing\_image\_color\_management'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b3184a8b-4f32-4cb0-8f68-777d85110142
 ---
 

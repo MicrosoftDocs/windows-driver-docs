@@ -12,8 +12,6 @@ ms.assetid: 88bbd0a2-2b72-4000-87ba-cbdafeb4c609
 
 This section includes:
 
-[Downloading a Checked Build of Windows](obtaining-the-checked-build.md)
-
 [Installing the Complete Checked Build](installing-the-complete-checked-build.md)
 
 [Installing Just the Checked Operating System and HAL (For Windows Vista and Later)](installing-just-the-checked-operating-system-and-hal--for-windows-vist.md)

@@ -2,12 +2,6 @@
 title: Installing and Configuring Printer Drivers
 author: windows-driver-content
 description: Installing and Configuring Printer Drivers
-MS-HAID:
-- 'prtinst\_4e61a357-0ea0-4580-b235-593660b5a18f.xml'
-- 'print.installing\_and\_configuring\_printer\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 77534f45-daa5-460c-97d4-0f0c3c54f4b4
 keywords: ["installing drivers WDK printer", "printer driver installations WDK"]
 ---

@@ -2,9 +2,6 @@
 title: Sending HID Reports by Kernel-Mode Drivers
 author: windows-driver-content
 description: Sending HID Reports by Kernel-Mode Drivers
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ff3d090f-cf76-40a7-9215-8440a592f303
 ---
 

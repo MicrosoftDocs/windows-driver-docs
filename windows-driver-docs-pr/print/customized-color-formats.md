@@ -2,12 +2,6 @@
 title: Customized Color Formats
 author: windows-driver-content
 description: Customized Color Formats
-MS-HAID:
-- 'custdrvr\_8fca9f1f-4a54-4af7-8fa4-6c60ed8dbb32.xml'
-- 'print.customized\_color\_formats'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 309d33e8-6338-4c32-8e03-d6cbf3371e16
 keywords: ["Unidrv, color formats", "color formats WDK Unidrv", "customized color formats WDK Unidrv", "Unidrv WDK print"]
 ---

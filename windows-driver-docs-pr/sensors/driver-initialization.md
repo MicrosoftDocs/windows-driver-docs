@@ -2,9 +2,6 @@
 title: Driver initialization
 author: windows-driver-content
 description: Driver initialization
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9886BBBC-7EE5-45AF-AEDD-75C0885C622B
 ---
 

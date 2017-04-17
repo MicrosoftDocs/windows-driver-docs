@@ -2,12 +2,6 @@
 title: Describing Extended Sample Information in AVStream Codecs
 author: windows-driver-content
 description: Describing Extended Sample Information in AVStream Codecs
-MS-HAID:
-- 'shed\_dg\_4a019e77-82df-4467-97cf-f56bda239c19.xml'
-- 'stream.describing\_extended\_sample\_information\_in\_avstream\_codecs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04447525-78f5-4c77-9a41-4e6e4729f729
 keywords: ["AVStream hardware codec support WDK , extended sample information"]
 ---

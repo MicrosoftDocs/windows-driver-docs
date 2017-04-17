@@ -2,12 +2,6 @@
 title: Introduction to USB Video Class Extension Units
 author: windows-driver-content
 description: Introduction to USB Video Class Extension Units
-MS-HAID:
-- 'uvcds\_6a1bfae4-966f-4caf-b6c7-6552321be23f.xml'
-- 'stream.introduction\_to\_usb\_video\_class\_extension\_units'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a46feb97-771e-4efd-872e-4a4b0fb3b705
 keywords: ["extension units WDK USB Video Class , about extension units", "USB Video Class drivers WDK AVStream , about extension units", "Video Class drivers WDK USB , extension units, about", "UVC drivers WDK AVStream , extension units, about", "extension units WDK USB Video Class , about"]
 ---

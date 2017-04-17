@@ -2,12 +2,6 @@
 title: Sample GPD Files
 author: windows-driver-content
 description: Sample GPD Files
-MS-HAID:
-- 'nt5gpd\_5cb97211-e1f7-4428-805d-a38ac8d938df.xml'
-- 'print.sample\_gpd\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 68b4ffa1-8c94-4cda-bc96-887e196cf534
 keywords: ["Unidrv, GPD files", "GPD files WDK Unidrv , samples", "Unidrv WDK print"]
 ---

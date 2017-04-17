@@ -2,12 +2,6 @@
 title: Vendor-Extended Properties
 author: windows-driver-content
 description: Vendor-Extended Properties
-MS-HAID:
-- 'WIA\_drv\_cam\_fb85aa18-6730-4c51-b20f-0e986f18986b.xml'
-- 'image.vendor\_extended\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bcc89272-c14d-4d46-a2ca-7da0fb188111
 ---
 

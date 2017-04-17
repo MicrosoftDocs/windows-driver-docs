@@ -2,9 +2,6 @@
 title: Partitioning a GPIO Controller into Banks of Pins
 author: windows-driver-content
 description: A driver developer can, as an option, partition a general-purpose I/O (GPIO) controller device into two or more banks of GPIO pins.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D9425459-E052-48D8-A4F3-91387AE7059A
 ---
 

@@ -2,12 +2,6 @@
 title: \ Else Conditional Preprocessor Directive
 author: windows-driver-content
 description: \ Else Conditional Preprocessor Directive
-MS-HAID:
-- 'gplfiles\_cf7f3ac5-21d4-4f38-8f8a-c13b881669c7.xml'
-- 'print.\_else\_conditional\_preprocessor\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3a8ddc60-1db9-4db0-9e55-405c88b84849
 keywords: ["preprocessor directives WDK GDL , conditional directives", "directives WDK GDL , conditional directives", "conditional directives WDK GDL", "Else directive WDK GDL"]
 ---

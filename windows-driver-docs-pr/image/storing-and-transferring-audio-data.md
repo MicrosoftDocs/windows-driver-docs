@@ -2,12 +2,6 @@
 title: Storing and Transferring Audio Data
 author: windows-driver-content
 description: Storing and Transferring Audio Data
-MS-HAID:
-- 'WIA\_drv\_cam\_b13a08d1-2892-4923-8f6d-857c772fd97c.xml'
-- 'image.storing\_and\_transferring\_audio\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c8d0af2f-1c3d-49d5-96ca-de1703f85448
 ---
 

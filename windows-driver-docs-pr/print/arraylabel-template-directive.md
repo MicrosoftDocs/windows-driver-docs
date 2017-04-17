@@ -2,12 +2,6 @@
 title: ArrayLabel Template Directive
 author: windows-driver-content
 description: ArrayLabel Template Directive
-MS-HAID:
-- 'gplfiles\_0ed90f8c-c9ff-4f5d-9b6e-392a9c81c599.xml'
-- 'print.arraylabel\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 05921b64-3af2-4b29-8eda-9477967be5ff
 keywords: ["ArrayLabel directive WDK GDL"]
 ---

@@ -2,12 +2,6 @@
 title: Tuner Events
 author: windows-driver-content
 description: Tuner Events
-MS-HAID:
-- 'vidcapds\_992d8085-fde5-4f28-b50e-13ecf460802d.xml'
-- 'stream.tuner\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eb5e0698-2641-4d47-9fa3-d1969a03c795
 keywords: ["tuner events WDK video capture", "events WDK video capture", "EVENTSETID_TUNER"]
 ---

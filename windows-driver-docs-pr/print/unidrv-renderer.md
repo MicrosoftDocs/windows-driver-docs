@@ -2,12 +2,6 @@
 title: Unidrv Renderer
 author: windows-driver-content
 description: Unidrv Renderer
-MS-HAID:
-- 'nt5gpd\_a8072c6f-c3cc-452d-9b89-e02197389cf7.xml'
-- 'print.unidrv\_renderer'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5c19eb9c-149b-4587-a12d-f01164231b51
 keywords: ["Unidrv, renderer", "renderer WDK Unidrv", "Unidrv WDK print"]
 ---

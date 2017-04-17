@@ -2,12 +2,6 @@
 title: Supporting an Operation Region
 author: windows-driver-content
 description: Supporting an Operation Region
-MS-HAID:
-- 'opregdg\_c1928011-b4c1-4767-a089-1ade887ff15b.xml'
-- 'acpi.supporting\_an\_operation\_region'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 262a7201-d89e-4639-9630-a51aaa28db34
 keywords: ["ACPI devices WDK , operation regions", "operation regions WDK ACPI", "function drivers WDK ACPI , operation regions", "WDM function drivers WDK ACPI , operation regions"]
 ---

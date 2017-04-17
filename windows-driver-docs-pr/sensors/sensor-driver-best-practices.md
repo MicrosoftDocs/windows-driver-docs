@@ -2,12 +2,6 @@
 title: Sensor driver best practices
 author: windows-driver-content
 description: Sensor driver best practices
-MS-HAID:
-- 'Sensor\_DG\_DevelopmentBasics\_2f147adc-cdfc-4532-868e-dcd02473e7c3.xml'
-- 'sensors.sensor\_driver\_best\_practices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: adb20558-aa94-41a9-9d26-9d757bdb0999
 ---
 

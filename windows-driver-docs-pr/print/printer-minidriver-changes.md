@@ -2,12 +2,6 @@
 title: Printer Minidriver Changes
 author: windows-driver-content
 description: Printer Minidriver Changes
-MS-HAID:
-- 'autocfg\_1e8a23f7-1507-4c20-96aa-30d06063328d.xml'
-- 'print.printer\_minidriver\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8f427642-a758-48bf-96e1-95a27adbaf23
 keywords: ["in-box autoconfiguration support WDK printer , minidriver changes", "GPD files WDK print , in-box autoconfiguration support", "GDL files WDK printer", "PPD files WDK autoconfiguration", "plug-ins WDK print , in-box autoconfiguration support"]
 ---

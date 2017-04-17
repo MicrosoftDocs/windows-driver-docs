@@ -2,12 +2,6 @@
 title: Raising sensor events
 author: windows-driver-content
 description: Raising sensor events
-MS-HAID:
-- 'Sensor\_DG\_DevelopmentBasics\_9f401325-ffd9-4823-a4bb-36473f2fdcc0.xml'
-- 'sensors.raising\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a6e428f8-1613-4e8d-813d-5a54824dab82
 keywords: ["sensor events", "event handler", "data update event", "sensor data update event", "state change event", "sensor state change event"]
 ---

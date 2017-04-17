@@ -2,12 +2,6 @@
 title: Production Template Directive
 author: windows-driver-content
 description: Production Template Directive
-MS-HAID:
-- 'gplfiles\_3be1ce43-f300-42ff-a1f4-14112e2e0bac.xml'
-- 'print.production\_template\_directive'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5deae299-389a-4de4-8f2f-7c247f045ada
 keywords: ["Production directive WDK GDL", "constructs WDK GDL , valid combinations", "templates WDK GDL , host template"]
 ---

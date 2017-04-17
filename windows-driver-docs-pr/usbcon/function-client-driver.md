@@ -1,9 +1,5 @@
 ---
-Description: 'Describes the various tasks that a function controller client driver performs while interacting with USB function controller extension (UFX).'
-MS-HAID: 'buses.function\_client\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+Description: Describes the various tasks that a function controller client driver performs while interacting with USB function controller extension (UFX).
 title: Writing a function controller client driver
 ---
 
