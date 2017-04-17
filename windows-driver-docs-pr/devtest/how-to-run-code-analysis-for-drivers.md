@@ -17,7 +17,7 @@ In this topic:
 -   [Changing stack usage limits for warning C6262 for kernel-mode drivers](#changing-stack-usage-limits-for-warning-c6262-for-kernel-mode-drivers)
 -   [Related topics](#related-topics)
 
-## <span id="Running_code_analysis"></span><span id="running_code_analysis"></span><span id="RUNNING_CODE_ANALYSIS"></span>Running code analysis
+## Running code analysis
 
 
 **To run code analysis on driver source code manually**
@@ -34,7 +34,7 @@ In this topic:
 5.  Under Rule set, select **Microsoft Driver Recommended Rules**. This is the default rule set for drivers.
 6.  In the **Build** menu, click **Build Solution**.
 
-## <span id="Viewing_the_code_analysis_results"></span><span id="viewing_the_code_analysis_results"></span><span id="VIEWING_THE_CODE_ANALYSIS_RESULTS"></span>Viewing the code analysis results
+## Viewing the code analysis results
 
 
 If possible defects are found in the source code, the **Code Analysis Results** window displays the code analysis warning number and the line number in the source file where the defect occurs.
@@ -52,7 +52,7 @@ If possible defects are found in the source code, the **Code Analysis Results** 
 1.  Navigate to the directory for your build configuration and platform (for example, \\Windows7Release\\x64).
 2.  If you use the recommended rules, the log file is called vc.\*codeanalysis.xml. If you are creating a driver for Windows Server 2012, this file is used to create the Driver Verification log.
 
-## <span id="Suppressing_the_report_of_defects"></span><span id="suppressing_the_report_of_defects"></span><span id="SUPPRESSING_THE_REPORT_OF_DEFECTS"></span>Suppressing the report of defects
+## Suppressing the report of defects
 
 
 In some cases, you might want to suppress the report of a particular warning messages; for example, if the warning is primarily informational and you know the cause of the error.
@@ -68,7 +68,7 @@ In some cases, you might want to suppress the report of a particular warning mes
     #pragma warning(suppress: 6014)
     ```
 
-## <span id="Changing_stack_usage_limits_for_warning_C6262_for_kernel-mode_drivers"></span><span id="changing_stack_usage_limits_for_warning_c6262_for_kernel-mode_drivers"></span><span id="CHANGING_STACK_USAGE_LIMITS_FOR_WARNING_C6262_FOR_KERNEL-MODE_DRIVERS"></span>Changing stack usage limits for warning C6262 for kernel-mode drivers
+## Changing stack usage limits for warning C6262 for kernel-mode drivers
 
 
 In user-mode and kernel-mode code, stack space is limited, and failure to commit a page of stack causes a stack overflow exception. High stack usage is particularly a concern in kernel mode because the total stack space available is only 12 KB. Kernel-mode code should aggressively limit stack use.
@@ -98,7 +98,7 @@ The Code Analysis tool issues warning [C6262](http://go.microsoft.com/fwlink/p/?
 
     To revert to the default of 1 KB, undo the changes you made to the project file, or change the stack size value to **stacksize1024**.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md)

@@ -85,7 +85,7 @@ _    te unittests\wex.common.tests.dll /runon:TAEFTest1 /TestDependencies:unitte
 
 You can aso specify test dependencies via [DeploymentItem metadata](deploymentitem-metadata.md)
 
-## <span id="User_Context"></span><span id="user_context"></span><span id="USER_CONTEXT"></span>User Context 
+## User Context 
 
 
 By default, TAEF attempts to run the tests on the remote machine with your user context. It does so by:

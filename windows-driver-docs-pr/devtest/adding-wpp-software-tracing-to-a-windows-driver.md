@@ -6,23 +6,19 @@ ms.assetid: 487BA8AA-950A-4F3C-9E3E-EBE1DA35D4B1
 
 # Adding WPP Software Tracing to a Windows Driver
 
-
 To use WPP software tracing in a trace provider, such as a kernel-mode driver or a user-mode application, you need to add code (or *instrument*) the driver source files and modify the driver project. This section will describe those steps.
 
-**Tip**  The easiest way to add WPP tracing to your driver is to use one of the KMDF or UMDF driver templates in Visual Studio. If you use the templates, much of the code you need to add is already done for you. In Visual Studio, click **File &gt; New &gt; Project**, and then select the Windows Driver (user-mode or kernel mode) WDF project. The WPP macros are defined in the Trace.h header file that is included as part of the project. If you use one of the templates, you can skip ahead to [Step 5](#step-tracemessage).
+**Tip**  The easiest way to add WPP tracing to your driver is to use one of the KMDF or UMDF driver templates in Visual Studio. If you use the templates, much of the code you need to add is already done for you. In Visual Studio, click **File &gt; New &gt; Project**, and then select the Windows Driver (user-mode or kernel mode) WDF project. The WPP macros are defined in the Trace.h header file that is included as part of the project. If you use one of the templates, you can skip ahead to [Step 5](#step-5-instrument-the-driver-code-to-generate-trace-messages-at-appropriate-points). 
 
- 
+-   [Step 1: Define the control GUID and trace flags](#step-1-define-the-control-guid-and-trace-flags)
+-   [Step 2: Choose which trace message functions you intend to use and define the WPP macros for those functions](#step-2-choose-which-trace-message-functions-you-intend-to-use-and-define-the-wpp-macros-for-those-functions)
+-   [Step 3: Include the associated trace header files (.h and .tmh) in your C or C++ source files](#step-3-include-the-associated-trace-header-files-h-and-tmh-in-your-c-or-c-source-files)
+-   [Step 4: Add macros to the appropriate callback functions to initialize and clean up WPP](#step-4-add-macros-to-the-appropriate-callback-functions-to-initialize-and-clean-up-wpp)
+-   [Step 5: Instrument the driver code to generate trace messages at appropriate points](#step-5-instrument-the-driver-code-to-generate-trace-messages-at-appropriate-points)
+-   [Step 6: Modify the Visual Studio project to run the WPP preprocessor and build the solution](#step-6-modify-the-visual-studio-project-to-run-the-wpp-preprocessor-and-build-the-solution)
+-   [Step 7: Start a trace session to capture and verify your trace messages](#step-7-start-a-trace-session-to-capture-and-verify-your-trace-messages)
 
--   [Step 1: Define the control GUID and trace flags](#step-1--define-the-control-guid-and-trace-flags)
--   [Step 2: Choose which trace message functions you intend to use and define the WPP macros for the those functions](#step2-choose-func)
--   [Step 3: Include the associated trace header files (.h and .tmh) in your C or C++ source files](#step-3--include-the-associated-trace-header-files---h-and--tmh--in-your-c-or-c---source-files)
--   [Step 4: Add macros to the appropriate callback functions to initialize and clean up WPP](#step-4--add-macros-to-the-appropriate-callback-functions-to-initialize-and-clean-up-wpp)
--   [Step 5: Instrument the driver code to generate trace messages at appropriate points](#step-tracemessage)
--   [Step 6: Modify the Visual Studio project to run the WPP preprocessor and build the solution](#step-run-wpp)
--   [Step 7: Start a trace session to capture and verify your trace messages](#step-7--start-a-trace-session-to-capture-and-verify-your-trace-messages-)
-
-## <span id="Step_1__Define_the_control_GUID_and_trace_flags"></span><span id="step_1__define_the_control_guid_and_trace_flags"></span><span id="STEP_1__DEFINE_THE_CONTROL_GUID_AND_TRACE_FLAGS"></span>Step 1: Define the control GUID and trace flags
-
+## Step 1: Define the control GUID and trace flags
 
 Every trace provider (such as a driver, or user-mode app) must be uniquely defined. You do this by adding the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186) macro that defines a control GUID, an identifier, and trace flags. This is done so that you can identify and control when and what you want to trace. While each driver typically has a separate control GUID, a driver could have multiple control GUIDs, or multiple drivers could share one control GUID.
 
@@ -71,22 +67,22 @@ For convenience, the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com/library/wi
 
     The WPP\_DEFINE\_BIT elements of the WPP\_CONTROL\_GUIDS macro define the trace flags for the trace provider. Typically, the flags represent increasingly detailed reporting levels, but you can use flags as any way you like as conditions for generating trace messages. In the WPP\_CONTROL\_GUIDS example, the WPP\_DEFINE\_BIT defines four trace flags (MYDRIVER\_ALL\_INFO, TRACE\_DRIVER, TRACE\_DEVICE, and TRACE\_QUEUE).
 
-    You can define up to 31 trace flags. WPP assigns bit values to the elements in the order they appear, for example, bit 0 (0x1), bit 1 (0x2), bit 2 (0x4), bit 3 (0x8) and so on. You use the trace flags when you add trace message functions to your source code (described in [Step 6: Instrument the driver code to generate trace messages at appropriate points](#step-tracemessage)).
+    You can define up to 31 trace flags. WPP assigns bit values to the elements in the order they appear, for example, bit 0 (0x1), bit 1 (0x2), bit 2 (0x4), bit 3 (0x8) and so on. You use the trace flags when you add trace message functions to your source code (described in [Step 5: Instrument the driver code to generate trace messages at appropriate points](#step-5-instrument-the-driver-code-to-generate-trace-messages-at-appropriate-points)).
 
     **Note**  Using the trace flags you can control when to trace specific components (for example, specific I/O requests, or activities of device or driver objects). You add the trace flag to your trace message statement (for example, `DoTraceMessage (TRACE_DRIVER, "Hello World!\n")`. When you create a trace session with a trace controller, like [Tracelog](tracelog.md), you specify the **-flag** option to use for the trace provider in that session, in this case, the flag is bit 1 (0x1), which corresponds to the TRACE\_DRIVER flag. When you start the trace session, all the trace messages that specify that trace flag are written to the log.
 
      
 
-## <span id="step2_choose_func"></span><span id="STEP2_CHOOSE_FUNC"></span>Step 2: Choose which trace message functions you intend to use and define the WPP macros for the those functions
+## Step 2: Choose which trace message functions you intend to use and define the WPP macros for those functions
 
 
 Like a debug print function, a trace message function is a function (or macro) you add to your code to write trace messages.
 
 **Choosing a trace message function**
 
-1.  The default trace message function is the [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro. If you use the default function you can control when to generate messages using the [Trace Flag](trace-level.md) values for your provider. The Trace Flags values are the flags you defined when you created the control GUID in Step 1. If you use **DoTraceMessage**, the default WPP macros are already defined for you (WPP\_LEVEL\_ENABLED and WPP\_LEVEL\_LOGGER), so you can skip the rest of this step and go to [Step 5](#step-tracemessage).
+1.  The default trace message function is the [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro. If you use the default function you can control when to generate messages using the [Trace Flag](trace-level.md) values for your provider. The Trace Flags values are the flags you defined when you created the control GUID in Step 1. If you use **DoTraceMessage**, the default WPP macros are already defined for you (WPP\_LEVEL\_ENABLED and WPP\_LEVEL\_LOGGER), so you can skip the rest of this step and go to [Step 5](#step-5-instrument-the-driver-code-to-generate-trace-messages-at-appropriate-points).
 
-2.  If you are using one of the KMDF or UMDF templates, the **TraceEvents** function and the necessary WPP macros are already defined to enable that function, so you can skip ahead to [Step 5](#step-tracemessage).
+2.  If you are using one of the KMDF or UMDF templates, the **TraceEvents** function and the necessary WPP macros are already defined to enable that function, so you can skip ahead to [Step 5](#step-5-instrument-the-driver-code-to-generate-trace-messages-at-appropriate-points).
 
 3.  If you are creating your own trace message function, or converting existing debug print function, continue with the rest of this step.
 
@@ -205,7 +201,7 @@ You can also convert existing debug print statements to trace messages statement
 //
 ```
 
-## <span id="Step_3__Include_the_associated_trace_header_files__.h_and_.tmh__in_your_C_or_C___source_files"></span><span id="step_3__include_the_associated_trace_header_files__.h_and_.tmh__in_your_c_or_c___source_files"></span><span id="STEP_3__INCLUDE_THE_ASSOCIATED_TRACE_HEADER_FILES__.H_AND_.TMH__IN_YOUR_C_OR_C___SOURCE_FILES"></span>Step 3: Include the associated trace header files (.h and .tmh) in your C or C++ source files
+## Step 3: Include the associated trace header files (.h and .tmh) in your C or C++ source files
 
 
 If you defined the control GUID and trace flags for your driver in a header file (for example, trace.h), you need to include the header file in the source files where you will initialize and unload WPP (Step 4) or call trace message functions.
@@ -219,7 +215,7 @@ In addition, you need to add an **\#include** statement for [Trace Message Heade
 #include "driver.tmh"  /* this file is auto-generated */
 ```
 
-## <span id="Step_4__Add_macros_to_the_appropriate_callback_functions_to_initialize_and_clean_up_WPP"></span><span id="step_4__add_macros_to_the_appropriate_callback_functions_to_initialize_and_clean_up_wpp"></span><span id="STEP_4__ADD_MACROS_TO_THE_APPROPRIATE_CALLBACK_FUNCTIONS_TO_INITIALIZE_AND_CLEAN_UP_WPP"></span>Step 4: Add macros to the appropriate callback functions to initialize and clean up WPP
+## Step 4: Add macros to the appropriate callback functions to initialize and clean up WPP
 
 
 **To initialize WPP on driver entry**
@@ -366,7 +362,7 @@ DllMain(
 }
 ```
 
-## <span id="step_tracemessage"></span><span id="STEP_TRACEMESSAGE"></span>Step 5: Instrument the driver code to generate trace messages at appropriate points
+## Step 5: Instrument the driver code to generate trace messages at appropriate points
 
 
 You can use any trace message function you choose, provided the trace message function, the trace flags, and levels are defined appropriately. The default trace message function is the [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) macro. You can add this macro to your code to write messages to the log file. The following table lists some of the predefined trace message functions and the debug print functions you can use to create trace messages.
@@ -385,15 +381,15 @@ You can use any trace message function you choose, provided the trace message fu
 <tbody>
 <tr class="odd">
 <td align="left">[<strong>DoTraceMessage</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544918)</td>
-<td align="left"><p>This is the default trace message function. The advantage of using [<strong>DoTraceMessage</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544918) is that the function is already defined for you. You can use the trace flags you specify in the WPP_CONFIG_GUIDS macro. The disadvantage of using <strong>DoTraceMessage</strong>, is that the function only takes one conditional parameter, that is, trace flags. If you want to use trace levels, to log only error or warning messages, you can use <strong>DoDebugTrace</strong> macro, or use <strong>TraceEvents</strong>, which uses both trace flags and trace levels. See [Using DoTraceMessage statements](#using-dotracemessage).</p></td>
+<td align="left"><p>This is the default trace message function. The advantage of using [<strong>DoTraceMessage</strong>](https://msdn.microsoft.com/library/windows/hardware/ff544918) is that the function is already defined for you. You can use the trace flags you specify in the WPP_CONFIG_GUIDS macro. The disadvantage of using <strong>DoTraceMessage</strong>, is that the function only takes one conditional parameter, that is, trace flags. If you want to use trace levels, to log only error or warning messages, you can use <strong>DoDebugTrace</strong> macro, or use <strong>TraceEvents</strong>, which uses both trace flags and trace levels.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>TraceEvents</strong></td>
-<td align="left"><p>If you create a driver using WDF templates in Visual Studio, this is the default trace message function. The advantage of using <strong>TraceEvents</strong> is that the trace message function, the trace flags, and [Trace Level](trace-level.md) are already defined for you. In addition, the templates also include instrumentation that writes messages to the log file upon function entry and exit. See [Using TraceEvents statements](#using-traceevents).</p></td>
+<td align="left"><p>If you create a driver using WDF templates in Visual Studio, this is the default trace message function. The advantage of using <strong>TraceEvents</strong> is that the trace message function, the trace flags, and [Trace Level](trace-level.md) are already defined for you. In addition, the templates also include instrumentation that writes messages to the log file upon function entry and exit.</p></td>
 </tr>
 <tr class="odd">
 <td align="left">[<strong>KdPrint</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548092), [<strong>KdPrintEx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548100), [<strong>DbgPrint</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543632), [<strong>DbgPrintEx</strong>](https://msdn.microsoft.com/library/windows/hardware/ff543634)</td>
-<td align="left"><p>The advantage of using the debug print functions is that you do not need to modify your existing debug print statements. You can easily switch from viewing messages in the debugger, to recording trace messages in a file. If you customized the trace message function in [Step 2](#step2-choose-func) to include one of the debug print functions, you do not to do any more work. When you create a trace session with Logman or [Tracelog](tracelog.md), or another trace controller, you just specify the flags and levels for your provider. Any debug print statements that meet the conditions you specify are printed to the log.</p></td>
+<td align="left"><p>The advantage of using the debug print functions is that you do not need to modify your existing debug print statements. You can easily switch from viewing messages in the debugger, to recording trace messages in a file. If you customized the trace message function to include one of the debug print functions, you do not need to do any more work. When you create a trace session with Logman or [Tracelog](tracelog.md), or another trace controller, you just specify the flags and levels for your provider. Any debug print statements that meet the conditions you specify are printed to the log.</p></td>
 </tr>
 </tbody>
 </table>
@@ -485,7 +481,7 @@ If you are using the Windows driver templates in Visual Studio, the **TraceEvent
                 "Built %s %s\n", __DATE__, __TIME__);
 ```
 
-## <span id="step_run_wpp"></span><span id="STEP_RUN_WPP"></span>Step 6: Modify the Visual Studio project to run the WPP preprocessor and build the solution
+## Step 6: Modify the Visual Studio project to run the WPP preprocessor and build the solution
 
 
 The WDK provides support for the [WPP Preprocessor](wpp-preprocessor.md), so that you can run the preprocessor using Visual Studio and the MSBuild environment.
@@ -502,7 +498,7 @@ For information about the build process, see [TraceWPP task](tracewpp-task.md) a
 
 You can also run the preprocessor separate from the build environment by using the TraceWPP tool (TraceWPP.exe). This tool is located in the bin/x86 and bin/x64 subdirectory of the WDK.
 
-## <span id="Step_7__Start_a_trace_session_to_capture_and_verify_your_trace_messages_"></span><span id="step_7__start_a_trace_session_to_capture_and_verify_your_trace_messages_"></span><span id="STEP_7__START_A_TRACE_SESSION_TO_CAPTURE_AND_VERIFY_YOUR_TRACE_MESSAGES_"></span>Step 7: Start a trace session to capture and verify your trace messages
+## Step 7: Start a trace session to capture and verify your trace messages
 
 
 To verify that you have set up WPP tracing correctly, you should install your driver or application on a test computer and then create a trace session to capture the trace messages. You can create a trace session for your trace provider, using any trace controller, such as Logman, [Tracelog](tracelog.md), or [TraceView](traceview.md). You can have the messages written to a log file or sent to a kernel debugger. Depending upon the trace message functions you are using, you need to be sure to specify the trace flags and trace levels that will generate the messages.

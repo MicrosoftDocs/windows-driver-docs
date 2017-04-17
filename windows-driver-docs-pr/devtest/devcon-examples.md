@@ -147,7 +147,7 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 [Example 45: Add and Remove Driver Packages](example-45--add-and-remove-driver-packages.md)
 
-### <span id="ddk_example_1_find_all_hardware_ids_tools"></span><span id="DDK_EXAMPLE_1_FIND_ALL_HARDWARE_IDS_TOOLS"></span>Example 1: Find all hardware IDs
+### <span id="ddk_example_1_find_all_hardware_ids_tools"></span><span id="DDK_EXAMPLE_1_FIND_ALL_HARDWARE_IDS_TOOLS"></span><a name="ddk_example_1_find_all_hardware_ids_tools"></a>Example 1: Find all hardware IDs
 
 Because DevCon operations use IDs and ID patterns to identify devices, a common first step in using DevCon is to create a hardware ID reference file for devices on the computer.
 
@@ -175,7 +175,7 @@ The following command finds the hardware IDs of devices on a remote computer, Se
 devcon /m:\\server01 hwids * > server01_hwids.txt
 ```
 
-### <span id="ddk_example_2_find_hardware_ids_by_using_a_pattern_tools"></span><span id="DDK_EXAMPLE_2_FIND_HARDWARE_IDS_BY_USING_A_PATTERN_TOOLS"></span>Example 2: Find hardware IDs by using a pattern
+### <span id="ddk_example_2_find_hardware_ids_by_using_a_pattern_tools"></span><span id="DDK_EXAMPLE_2_FIND_HARDWARE_IDS_BY_USING_A_PATTERN_TOOLS"></span><a name="ddk_example_2_find_hardware_ids_by_using_a_pattern_tools"></a>Example 2: Find hardware IDs by using a pattern
 
 To find the hardware IDs of a particular device, enter the hardware ID or pattern, the compatible ID or pattern, the device instance ID or pattern, or the name of the device setup class.
 
@@ -199,7 +199,7 @@ FDC\GENERIC_FLOPPY_DRIVE\5&39194F6D&0&0
 
 In this case, the phrase "floppy" occurs in the hardware ID or compatible ID of only one device on the computer. If it occurs in the ID of more than one device, all devices with "floppy" in their IDs appear in the output.
 
-### <span id="ddk_example_3_find_hardware_ids_by_using_a_class_tools"></span><span id="DDK_EXAMPLE_3_FIND_HARDWARE_IDS_BY_USING_A_CLASS_TOOLS"></span>Example 3: Find hardware IDs by using a class
+### <span id="ddk_example_3_find_hardware_ids_by_using_a_class_tools"></span><span id="DDK_EXAMPLE_3_FIND_HARDWARE_IDS_BY_USING_A_CLASS_TOOLS"></span><a name="ddk_example_3_find_hardware_ids_by_using_a_class_tools"></a>Example 3: Find hardware IDs by using a class
 
 The following command uses the [**DevCon HwIDs**](devcon-hwids.md) operation and a device setup class to find the hardware IDs of all devices in the Ports device setup class. The equal sign (**=**) preceding the class name indicates that it is a class, not an ID.
 
@@ -228,7 +228,7 @@ ACPI\PNP0501\2
 3 matching device(s) found.
 ```
 
-### <span id="ddk_example_4_list_classes_on_the_local_computer_tools"></span><span id="DDK_EXAMPLE_4_LIST_CLASSES_ON_THE_LOCAL_COMPUTER_TOOLS"></span>Example 4: List classes on the local computer
+### <span id="ddk_example_4_list_classes_on_the_local_computer_tools"></span><span id="DDK_EXAMPLE_4_LIST_CLASSES_ON_THE_LOCAL_COMPUTER_TOOLS"></span><a name="ddk_example_4_list_classes_on_the_local_computer_tools"></a>Example 4: List classes on the local computer
 
 Because DevCon operations can use the device setup class to identify devices, it is useful to create a reference file of the device setup classes of devices on the computer.
 
@@ -246,7 +246,7 @@ The following command displays all device classes on the computer. It uses the r
 devcon classes > classes.txt
 ```
 
-### <span id="ddk_example_5_list_classes_on_the_remote_computer_tools"></span><span id="DDK_EXAMPLE_5_LIST_CLASSES_ON_THE_REMOTE_COMPUTER_TOOLS"></span>Example 5: List classes on the remote computer
+### <span id="ddk_example_5_list_classes_on_the_remote_computer_tools"></span><span id="DDK_EXAMPLE_5_LIST_CLASSES_ON_THE_REMOTE_COMPUTER_TOOLS"></span><a name="ddk_example_5_list_classes_on_the_remote_computer_tools"></a>Example 5: List classes on the remote computer
 
 The following command uses the [**DevCon Classes**](devcon-classes.md) operation to list the device setup classes on a remote computer, Server01:
 
@@ -262,7 +262,7 @@ The following command uses the redirection character (**&gt;**) to save the comm
 devcon /m:\\server01 classes > server01_classes.txt
 ```
 
-### <span id="ddk_example_6_list_the_devices_in_a_device_setup_class_tools"></span><span id="DDK_EXAMPLE_6_LIST_THE_DEVICES_IN_A_DEVICE_SETUP_CLASS_TOOLS"></span>Example 6: List the devices in a device setup class
+### <span id="ddk_example_6_list_the_devices_in_a_device_setup_class_tools"></span><span id="DDK_EXAMPLE_6_LIST_THE_DEVICES_IN_A_DEVICE_SETUP_CLASS_TOOLS"></span><a name="ddk_example_6_list_the_devices_in_a_device_setup_class_tools"></a>Example 6: List the devices in a device setup class
 
 The following command uses the [**DevCon ListClass**](devcon-listclass.md) operation to list the devices in Net, the device setup class for network adapters.
 
@@ -329,7 +329,7 @@ ROOT\MS_PTIMINIPORT\0000
 6 matching device(s) found.
 ```
 
-### <span id="ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute"></span><span id="DDK_EXAMPLE_7_LIST_THE_DEVICES_IN_MULTIPLE_CLASSES_ON_A_REMOTE_COMPUTE"></span>Example 7: List the devices in multiple classes on a remote computer
+### <span id="ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute"></span><span id="DDK_EXAMPLE_7_LIST_THE_DEVICES_IN_MULTIPLE_CLASSES_ON_A_REMOTE_COMPUTE"></span><a name="ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute"></a>Example 7: List the devices in multiple classes on a remote computer
 
 The following command uses the [**DevCon ListClass**](devcon-listclass.md) operation to list the devices in the DiskDrive, CDROM, and TapeDrive classes on Server01, a remote computer.
 
@@ -347,7 +347,7 @@ IDE\CDROMSAMSUNG_DVD-ROM_SD-608__________________2.2_____\4&13B4AFD&0&0.0.0: SAM
 No devices for setup class "TapeDrive" (Tape drives) on \\server01.
 ```
 
-### <span id="ddk_example_8_list_all_driver_files_tools"></span><span id="DDK_EXAMPLE_8_LIST_ALL_DRIVER_FILES_TOOLS"></span>Example 8: List all driver files
+### <span id="ddk_example_8_list_all_driver_files_tools"></span><span id="DDK_EXAMPLE_8_LIST_ALL_DRIVER_FILES_TOOLS"></span><a name="ddk_example_8_list_all_driver_files_tools"></a>Example 8: List all driver files
 
 The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) operation to list the file names of drivers that devices on the system use. The command uses the wildcard character (**\***) to indicate all devices on the system. Because the output is extensive, the command uses the redirection character (**&gt;**) to redirect the output to a reference file, driverfiles.txt.
 
@@ -355,7 +355,7 @@ The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) o
 devcon driverfiles * > driverfiles.txt
 ```
 
-### <span id="ddk_example_9_list_the_driver_files_of_a_particular_device_tools"></span><span id="DDK_EXAMPLE_9_LIST_THE_DRIVER_FILES_OF_A_PARTICULAR_DEVICE_TOOLS"></span>Example 9: List the driver files of a particular device
+### <span id="ddk_example_9_list_the_driver_files_of_a_particular_device_tools"></span><span id="DDK_EXAMPLE_9_LIST_THE_DRIVER_FILES_OF_A_PARTICULAR_DEVICE_TOOLS"></span><a name="ddk_example_9_list_the_driver_files_of_a_particular_device_tools"></a>Example 9: List the driver files of a particular device
 
 The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) operation to search for the device driver that the mouse device on the local computer uses. It identifies the device by one of its hardware IDs, HID\\Vid\_045e&Pid\_0039&Rev\_0121. The hardware ID is enclosed in quotation marks because it includes the ampersand character (**&**).
 
@@ -375,7 +375,7 @@ HID\VID_045E&PID_0039\6&DC36FDE&0&0000
 1 matching device(s) found.
 ```
 
-### <span id="ddk_example_10_list_driver_packages_by_hardware_id_pattern_tools"></span><span id="DDK_EXAMPLE_10_LIST_DRIVER_PACKAGES_BY_HARDWARE_ID_PATTERN_TOOLS"></span>Example 10: List driver packages by hardware ID pattern
+### <span id="ddk_example_10_list_driver_packages_by_hardware_id_pattern_tools"></span><span id="DDK_EXAMPLE_10_LIST_DRIVER_PACKAGES_BY_HARDWARE_ID_PATTERN_TOOLS"></span><a name="ddk_example_10_list_driver_packages_by_hardware_id_pattern_tools"></a>Example 10: List driver packages by hardware ID pattern
 
 The following command uses the [**DevCon DriverNodes**](devcon-drivernodes.md) command and an ID pattern to list the driver nodes of software-enumerated devices. Patterns are useful for finding information about similar devices that might not be in the same setup class.
 
@@ -433,7 +433,7 @@ DriverNode #0:
 3 matching device(s) found.
 ```
 
-### <span id="ddk_example_11_list_driver_packages_by_device_instance_id_pattern_tool"></span><span id="DDK_EXAMPLE_11_LIST_DRIVER_PACKAGES_BY_DEVICE_INSTANCE_ID_PATTERN_TOOL"></span>Example 11: List driver packages by device instance ID pattern
+### <span id="ddk_example_11_list_driver_packages_by_device_instance_id_pattern_tool"></span><span id="DDK_EXAMPLE_11_LIST_DRIVER_PACKAGES_BY_DEVICE_INSTANCE_ID_PATTERN_TOOL"></span><a name="ddk_example_11_list_driver_packages_by_device_instance_id_pattern_tool"></a>Example 11: List driver packages by device instance ID pattern
 
 The following command uses the [**DevCon DriverNodes**](devcon-drivernodes.md) operation to list the driver packages of all devices whose device instance IDs begin with ROOT\\MEDIA, that is, devices in the Enum\\Root\\Media registry subkey. The command uses the at character (**@**) to indicate that the phrase is in the device instance ID.
 
@@ -512,7 +512,7 @@ DriverNode #0:
 5 matching device(s) found.
 ```
 
-### <span id="ddk_example_12_list_resources_of_a_class_of_devices_tools"></span><span id="DDK_EXAMPLE_12_LIST_RESOURCES_OF_A_CLASS_OF_DEVICES_TOOLS"></span>Example 12: List resources of a class of devices
+### <span id="ddk_example_12_list_resources_of_a_class_of_devices_tools"></span><span id="DDK_EXAMPLE_12_LIST_RESOURCES_OF_A_CLASS_OF_DEVICES_TOOLS"></span><a name="ddk_example_12_list_resources_of_a_class_of_devices_tools"></a>Example 12: List resources of a class of devices
 
 The following command uses the [**DevCon Resources**](devcon-resources.md) operation to display the resources allocated to devices in the Hdc device setup class. This class includes IDE controllers. The equal sign (**=**) is prepended to "hdc" to indicate that it is a class and not an ID.
 
@@ -542,7 +542,7 @@ PCIIDE\IDECHANNEL\4&37E53584&0&1
 3 matching device(s) found.
 ```
 
-### <span id="ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too"></span><span id="DDK_EXAMPLE_13_LIST_RESOURCES_OF_DEVICE_ON_A_REMOTE_COMPUTER_BY_ID_TOO"></span>Example 13: List resources of device on a remote computer by ID
+### <span id="ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too"></span><span id="DDK_EXAMPLE_13_LIST_RESOURCES_OF_DEVICE_ON_A_REMOTE_COMPUTER_BY_ID_TOO"></span><a name="ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too"></a>Example 13: List resources of device on a remote computer by ID
 
 The following command uses the [**DevCon Resources**](devcon-resources.md) operation to list the resources allocated to the system timer on Server01, a remote computer. The command uses the hardware ID of the system timer, ACPI\\PNP0100, to specify the device.
 
@@ -567,7 +567,7 @@ The following command uses the device instance ID of the remote system timer in 
 devcon /m:\\Server01 resources @ACPI\PNP0100\4&b4063f4&0
 ```
 
-### <span id="ddk_example_14_display_the_driver_stack_for_storage_devices_tools"></span><span id="DDK_EXAMPLE_14_DISPLAY_THE_DRIVER_STACK_FOR_STORAGE_DEVICES_TOOLS"></span>Example 14: Display the driver stack for storage devices
+### <span id="ddk_example_14_display_the_driver_stack_for_storage_devices_tools"></span><span id="DDK_EXAMPLE_14_DISPLAY_THE_DRIVER_STACK_FOR_STORAGE_DEVICES_TOOLS"></span><a name="ddk_example_14_display_the_driver_stack_for_storage_devices_tools"></a>Example 14: Display the driver stack for storage devices
 
 The following command uses the [**DevCon Stack**](devcon-stack.md) operation to search for devices in the Volume setup class and display the expected driver stack for those devices. The equal sign (**=**) indicates that the string is a class name.
 
@@ -595,7 +595,7 @@ STORAGE\VOLUME\1&30A96598&0&SIGNATURE32323533OFFSET7E00LENGTH27115F800
 2 matching device(s) found.
 ```
 
-### <span id="ddk_example_15_find_the_setup_class_of_a_device_tools"></span><span id="DDK_EXAMPLE_15_FIND_THE_SETUP_CLASS_OF_A_DEVICE_TOOLS"></span>Example 15: Find the setup class of a device
+### <span id="ddk_example_15_find_the_setup_class_of_a_device_tools"></span><span id="DDK_EXAMPLE_15_FIND_THE_SETUP_CLASS_OF_A_DEVICE_TOOLS"></span><a name="ddk_example_15_find_the_setup_class_of_a_device_tools"></a>Example 15: Find the setup class of a device
 
 The [**DevCon Stack**](devcon-stack.md) operation returns the setup class of a device in addition to the upper and lower filter drivers. The following commands find the setup class of the printer port interface by finding its device instance ID and then using the device instance ID to find its setup class.
 
@@ -633,7 +633,7 @@ LPTENUM\MICROSOFTRAWPORT\5&CA97D7E&0&LPT1
 1 matching device(s) found.
 ```
 
-### <span id="ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu"></span><span id="DDK_EXAMPLE_16_DISPLAY_THE_STACK_FOR_RELATED_DEVICES_ON_A_REMOTE_COMPU"></span>Example 16: Display the stack for related devices on a remote computer
+### <span id="ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu"></span><span id="DDK_EXAMPLE_16_DISPLAY_THE_STACK_FOR_RELATED_DEVICES_ON_A_REMOTE_COMPU"></span><a name="ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu"></a>Example 16: Display the stack for related devices on a remote computer
 
 The following command uses the **DevCon Stack** operation to display the expected stack for miniport driver devices on Server01, a remote computer. It searches for devices in the Net setup class that have "miniport" in their hardware ID or compatible ID.
 
@@ -675,7 +675,7 @@ ROOT\MS_PTIMINIPORT\0000
 4 matching device(s) found on \\Server01.
 ```
 
-### <span id="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></span><span id="DDK_EXAMPLE_17_DISPLAY_THE_STATUS_OF_ALL_DEVICES_ON_THE_LOCAL_COMPUTER"></span>Example 17: Display the status of all devices on the local computer
+### <span id="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></span><span id="DDK_EXAMPLE_17_DISPLAY_THE_STATUS_OF_ALL_DEVICES_ON_THE_LOCAL_COMPUTER"></span><a name="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></a>Example 17: Display the status of all devices on the local computer
 
 The following command uses the [**DevCon Status**](devcon-status.md) operation to find the status of all devices on the local computer. It then saves the status in the status.txt file for logging or later review. The command uses the wildcard character (**\***) to represent all devices and the redirection character (**&gt;**) to redirect the output to the status.txt file.
 
@@ -683,7 +683,7 @@ The following command uses the [**DevCon Status**](devcon-status.md) operation t
 devcon status * > status.txt
 ```
 
-### <span id="ddk_example_18_display_the_status_of_a_device_by_device_instance_id_to"></span><span id="DDK_EXAMPLE_18_DISPLAY_THE_STATUS_OF_A_DEVICE_BY_DEVICE_INSTANCE_ID_TO"></span>Example 18: Display the status of a device by device instance ID
+### <span id="ddk_example_18_display_the_status_of_a_device_by_device_instance_id_to"></span><span id="DDK_EXAMPLE_18_DISPLAY_THE_STATUS_OF_A_DEVICE_BY_DEVICE_INSTANCE_ID_TO"></span><a name="ddk_example_18_display_the_status_of_a_device_by_device_instance_id_to"></a>Example 18: Display the status of a device by device instance ID
 
 The most reliable way to find the status of a particular device is to use the device instance ID of the device.
 
@@ -702,7 +702,7 @@ PCI\VEN_8086&DEV_1130&SUBSYS_00000000&REV_02\3&29E81982&0&00
 1 matching device(s) found.
 ```
 
-### <span id="ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu"></span><span id="DDK_EXAMPLE_19_DISPLAY_THE_STATUS_OF_RELATED_DEVICES_ON_A_REMOTE_COMPU"></span>Example 19: Display the status of related devices on a remote computer
+### <span id="ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu"></span><span id="DDK_EXAMPLE_19_DISPLAY_THE_STATUS_OF_RELATED_DEVICES_ON_A_REMOTE_COMPU"></span><a name="ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu"></a>Example 19: Display the status of related devices on a remote computer
 
 The following command uses the [**DevCon Status**](devcon-status.md) operation to display the status of particular storage-related devices on Server01, a remote computer. It searches for the following devices:
 
@@ -762,7 +762,7 @@ STORAGE\VOLUME\1&30A96598&0&SIGNATUREEA1AA9C7OFFSET7E00LENGTH1770CFC00
 11 matching device(s) found on \\Server01.
 ```
 
-### <span id="ddk_example_20_find_devices_by_hardware_id_pattern_tools"></span><span id="DDK_EXAMPLE_20_FIND_DEVICES_BY_HARDWARE_ID_PATTERN_TOOLS"></span>Example 20: Find devices by hardware ID pattern
+### <span id="ddk_example_20_find_devices_by_hardware_id_pattern_tools"></span><span id="DDK_EXAMPLE_20_FIND_DEVICES_BY_HARDWARE_ID_PATTERN_TOOLS"></span><a name="ddk_example_20_find_devices_by_hardware_id_pattern_tools"></a>Example 20: Find devices by hardware ID pattern
 
 The following command uses the [**DevCon Find**](devcon-find.md) operation to search for mouse devices on Server01, a remote computer. Specifically, the command searches the Server01 computer for devices whose hardware ID or compatible ID includes "mou."
 
@@ -800,7 +800,7 @@ ROOT\RDP_MOU\0000
 2 matching device(s) found.
 ```
 
-### <span id="ddk_example_21_find_devices_by_device_instance_id_or_class_tools"></span><span id="DDK_EXAMPLE_21_FIND_DEVICES_BY_DEVICE_INSTANCE_ID_OR_CLASS_TOOLS"></span>Example 21: Find devices by device instance ID or class
+### <span id="ddk_example_21_find_devices_by_device_instance_id_or_class_tools"></span><span id="DDK_EXAMPLE_21_FIND_DEVICES_BY_DEVICE_INSTANCE_ID_OR_CLASS_TOOLS"></span><a name="ddk_example_21_find_devices_by_device_instance_id_or_class_tools"></a>Example 21: Find devices by device instance ID or class
 
 The following commands use the [**DevCon Find**](devcon-find.md) operation to display all legacy devices on the local computer. Because legacy devices do not have a hardware ID, you must search for them by their device instance ID (registry path), ROOT\\LEGACY, or their setup class, LegacyDriver.
 
@@ -849,7 +849,7 @@ ROOT\LEGACY_WANARP\0000                                     : Remote Access IP A
 27 matching device(s) found.
 ```
 
-### <span id="ddk_example_22_find_and_find_all_devices_in_a_setup_class_tools"></span><span id="DDK_EXAMPLE_22_FIND_AND_FIND_ALL_DEVICES_IN_A_SETUP_CLASS_TOOLS"></span>Example 22: Find (and find all) devices in a setup class
+### <span id="ddk_example_22_find_and_find_all_devices_in_a_setup_class_tools"></span><span id="DDK_EXAMPLE_22_FIND_AND_FIND_ALL_DEVICES_IN_A_SETUP_CLASS_TOOLS"></span><a name="ddk_example_22_find_and_find_all_devices_in_a_setup_class_tools"></a>Example 22: Find (and find all) devices in a setup class
 
 The following command uses the [**DevCon FindAll**](devcon-findall.md) operation to find all devices on the computer in the Net setup class. The equal sign (**=**) indicates that Net is a setup class and not an ID.
 
@@ -892,7 +892,7 @@ ROOT\MS_PTIMINIPORT\0000                                    : Direct Parallel
 
 Predictably, the **DevCon Find** command, which returns only currently installed devices, does not list the software-enumerated device because the device is not installed.
 
-### <span id="ddk_example_23_display_the_filter_drivers_for_a_setup_class_tools"></span><span id="DDK_EXAMPLE_23_DISPLAY_THE_FILTER_DRIVERS_FOR_A_SETUP_CLASS_TOOLS"></span>Example 23: Display the filter drivers for a setup class
+### <span id="ddk_example_23_display_the_filter_drivers_for_a_setup_class_tools"></span><span id="DDK_EXAMPLE_23_DISPLAY_THE_FILTER_DRIVERS_FOR_A_SETUP_CLASS_TOOLS"></span><a name="ddk_example_23_display_the_filter_drivers_for_a_setup_class_tools"></a>Example 23: Display the filter drivers for a setup class
 
 The following command uses the [**DevCon ClassFilter**](devcon-classfilter.md) operation to display the upper filter drivers for the DiskDrive setup class. Because this command includes no classfilter operators, DevCon displays the filter drivers for the class, but does not change them.
 
@@ -907,7 +907,7 @@ Class filters unchanged.
     PartMgr
 ```
 
-### <span id="ddk_example_24_add_a_filter_driver_to_a_setup_class_tools"></span><span id="DDK_EXAMPLE_24_ADD_A_FILTER_DRIVER_TO_A_SETUP_CLASS_TOOLS"></span>Example 24: Add a filter driver to a setup class
+### <span id="ddk_example_24_add_a_filter_driver_to_a_setup_class_tools"></span><span id="DDK_EXAMPLE_24_ADD_A_FILTER_DRIVER_TO_A_SETUP_CLASS_TOOLS"></span><a name="ddk_example_24_add_a_filter_driver_to_a_setup_class_tools"></a>Example 24: Add a filter driver to a setup class
 
 The following command uses the [**DevCon ClassFilter**](devcon-classfilter.md) operation to add a fictitious filter, Disklog.sys, to the list of upper filter drivers for the DiskDrive setup class.
 
@@ -938,7 +938,7 @@ devcon /r classfilter DiskDrive upper +Disklgg
 devcon failed.
 ```
 
-### <span id="ddk_example_25_insert_a_filter_driver_in_the_class_list_tools"></span><span id="DDK_EXAMPLE_25_INSERT_A_FILTER_DRIVER_IN_THE_CLASS_LIST_TOOLS"></span>Example 25: Insert a filter driver in the class list
+### <span id="ddk_example_25_insert_a_filter_driver_in_the_class_list_tools"></span><span id="DDK_EXAMPLE_25_INSERT_A_FILTER_DRIVER_IN_THE_CLASS_LIST_TOOLS"></span><a name="ddk_example_25_insert_a_filter_driver_in_the_class_list_tools"></a>Example 25: Insert a filter driver in the class list
 
 The following command uses the [**DevCon ClassFilter**](devcon-classfilter.md) operation to add a fictitious filter driver, MyFilter.sys, to the list of upper filter drivers for the DiskDrive setup class. The command places MyFilter.sys between PartMgr.sys and Disklog.sys in the load order.
 
@@ -974,7 +974,7 @@ You can also use the following command to add the MyFilter driver and to place i
 devcon /r classfilter DiskDrive upper @PartMgr +MyFilter
 ```
 
-### <span id="ddk_example_26_replace_a_filter_driver_tools"></span><span id="DDK_EXAMPLE_26_REPLACE_A_FILTER_DRIVER_TOOLS"></span>Example 26: Replace a filter driver
+### <span id="ddk_example_26_replace_a_filter_driver_tools"></span><span id="DDK_EXAMPLE_26_REPLACE_A_FILTER_DRIVER_TOOLS"></span><a name="ddk_example_26_replace_a_filter_driver_tools"></a>Example 26: Replace a filter driver
 
 The following command uses the [**DevCon ClassFilter**](devcon-classfilter.md) operation to replace the original copy of MyFilter.sys with a new and improved version, MyNewFilter.sys, in the list of filter drivers for the DiskDrive setup class.
 
@@ -1005,7 +1005,7 @@ Class filters changed. Class devices must be restarted for changes to take effec
     Disklog
 ```
 
-### <span id="ddk_example_27_change_the_order_of_filter_drivers_tools"></span><span id="DDK_EXAMPLE_27_CHANGE_THE_ORDER_OF_FILTER_DRIVERS_TOOLS"></span>Example 27: Change the order of filter drivers
+### <span id="ddk_example_27_change_the_order_of_filter_drivers_tools"></span><span id="DDK_EXAMPLE_27_CHANGE_THE_ORDER_OF_FILTER_DRIVERS_TOOLS"></span><a name="ddk_example_27_change_the_order_of_filter_drivers_tools"></a>Example 27: Change the order of filter drivers
 
 The following command uses the [**DevCon ClassFilter**](devcon-classfilter.md) operation to change the order of filter drivers for the DiskDrive setup class. Specifically, it reverses the order of the second and third filter drivers.
 
@@ -1055,7 +1055,7 @@ Class filters changed. Class devices must be restarted for changes to take effec
     MyNewFilter
 ```
 
-### <span id="ddk_example_28_enable_a_particular_device_tools"></span><span id="DDK_EXAMPLE_28_ENABLE_A_PARTICULAR_DEVICE_TOOLS"></span>Example 28: Enable a particular device
+### <span id="ddk_example_28_enable_a_particular_device_tools"></span><span id="DDK_EXAMPLE_28_ENABLE_A_PARTICULAR_DEVICE_TOOLS"></span><a name="ddk_example_28_enable_a_particular_device_tools"></a>Example 28: Enable a particular device
 
 The following command uses the [**DevCon Enable**](devcon-enable.md) operation to enable a programmable interrupt controller that had been disabled to correct a system problem. Because the controller hardware ID \*PNP0000 includes an asterisk, the command uses the single quote character (**'**) to direct DevCon to find the hardware ID precisely as it is specified in the command. Otherwise, the asterisk would be interpreted as a wildcard character.
 
@@ -1090,7 +1090,7 @@ ACPI\PNP0000\4&B4063F4&0
     Driver is running.
 ```
 
-### <span id="ddk_example_29_enable_devices_by_class_tools"></span><span id="DDK_EXAMPLE_29_ENABLE_DEVICES_BY_CLASS_TOOLS"></span>Example 29: Enable devices by class
+### <span id="ddk_example_29_enable_devices_by_class_tools"></span><span id="DDK_EXAMPLE_29_ENABLE_DEVICES_BY_CLASS_TOOLS"></span><a name="ddk_example_29_enable_devices_by_class_tools"></a>Example 29: Enable devices by class
 
 The following command enables all printer devices on the computer by specifying the Printer setup class in a [**DevCon Enable**](devcon-enable.md) command. The command includes the **/r** parameter, which reboots the system if it is necessary to make the enabling effective.
 
@@ -1105,7 +1105,7 @@ LPTENUM\HEWLETT-PACKARDDESKJET_1120C\1&7530F08&0&LPT1.4        : Enabled
 1 device(s) enabled.
 ```
 
-### <span id="ddk_example_30_disable_devices_by_an_id_pattern_tools"></span><span id="DDK_EXAMPLE_30_DISABLE_DEVICES_BY_AN_ID_PATTERN_TOOLS"></span>Example 30: Disable devices by an ID pattern
+### <span id="ddk_example_30_disable_devices_by_an_id_pattern_tools"></span><span id="DDK_EXAMPLE_30_DISABLE_DEVICES_BY_AN_ID_PATTERN_TOOLS"></span><a name="ddk_example_30_disable_devices_by_an_id_pattern_tools"></a>Example 30: Disable devices by an ID pattern
 
 The following command uses the [**DevCon Disable**](devcon-disable.md) operation to disable the USB devices on the local computer. It identifies the devices by a hardware ID pattern (USB\*). This pattern will match any device whose hardware ID or compatible ID begins with "USB." The command includes the **/r** parameter, which reboots the system if it is necessary to make the disabling effective.
 
@@ -1129,7 +1129,7 @@ USB\VID_045E&PID_0039\5&29F428A4&0&2
 3 device(s) disabled.
 ```
 
-### <span id="ddk_example_31_disable_devices_by_device_instance_id_tools"></span><span id="DDK_EXAMPLE_31_DISABLE_DEVICES_BY_DEVICE_INSTANCE_ID_TOOLS"></span>Example 31: Disable devices by device instance ID
+### <span id="ddk_example_31_disable_devices_by_device_instance_id_tools"></span><span id="DDK_EXAMPLE_31_DISABLE_DEVICES_BY_DEVICE_INSTANCE_ID_TOOLS"></span><a name="ddk_example_31_disable_devices_by_device_instance_id_tools"></a>Example 31: Disable devices by device instance ID
 
 The following command uses the [**DevCon Disable**](devcon-disable.md) operation to disable the USB devices on the local computer. This command identifies the devices by their device instance IDs as indicated by the at character (**@**) that precedes each ID. Each device instance ID is separated from the others by a space.
 
@@ -1151,7 +1151,7 @@ USB\VID_045E&PID_0039\5&29F428A4&0&2
 3 device(s) disabled.
 ```
 
-### <span id="ddk_example_32_update_the_driver_for_communication_ports_tools"></span><span id="DDK_EXAMPLE_32_UPDATE_THE_DRIVER_FOR_COMMUNICATION_PORTS_TOOLS"></span>Example 32: Update the driver for communication ports
+### <span id="ddk_example_32_update_the_driver_for_communication_ports_tools"></span><span id="DDK_EXAMPLE_32_UPDATE_THE_DRIVER_FOR_COMMUNICATION_PORTS_TOOLS"></span><a name="ddk_example_32_update_the_driver_for_communication_ports_tools"></a>Example 32: Update the driver for communication ports
 
 The following command uses the [**DevCon Update**](devcon-update.md) operation to replace the current device driver for communication ports on the system with a test driver specified in the test.inf file. The command affects only devices whose entire hardware ID is \*PNP0501 (including the asterisk).
 
@@ -1185,7 +1185,7 @@ Updating drivers for *PNP0501 from c:\windows\inf\test.inf.
 devcon failed.
 ```
 
-### <span id="ddk_example_33_install_a_device_tools"></span><span id="DDK_EXAMPLE_33_INSTALL_A_DEVICE_TOOLS"></span>Example 33: Install a device
+### <span id="ddk_example_33_install_a_device_tools"></span><span id="DDK_EXAMPLE_33_INSTALL_A_DEVICE_TOOLS"></span><a name="ddk_example_33_install_a_device_tools"></a>Example 33: Install a device
 
 The following command uses the [**DevCon Install**](devcon-install.md) operation to install a keyboard device on the local computer. The command includes the full path to the INF file for the device (keyboard.inf) and a hardware ID (\*PNP030b).
 
@@ -1201,7 +1201,7 @@ Updating drivers for *PNPO30b from c:\windows\inf\keyboard.inf
 Drivers updated successfully.
 ```
 
-### <span id="ddk_example_34_install_a_device_using_unattended_setup_tools"></span><span id="DDK_EXAMPLE_34_INSTALL_A_DEVICE_USING_UNATTENDED_SETUP_TOOLS"></span>Example 34: Install a device using unattended setup
+### <span id="ddk_example_34_install_a_device_using_unattended_setup_tools"></span><span id="DDK_EXAMPLE_34_INSTALL_A_DEVICE_USING_UNATTENDED_SETUP_TOOLS"></span><a name="ddk_example_34_install_a_device_using_unattended_setup_tools"></a>Example 34: Install a device using unattended setup
 
 The following example shows how to install the Microsoft Loopback Adapter during an unattended installation of Microsoft Windows XP.
 
@@ -1219,7 +1219,7 @@ The command also specifies that DevCon use the Netloop.inf file (on the floppy d
 
 Finally, add network configuration settings to the unattended setup file and run the unattended setup.
 
-### <span id="ddk_example_35_remove_devices_by_device_instance_id_pattern_tools"></span><span id="DDK_EXAMPLE_35_REMOVE_DEVICES_BY_DEVICE_INSTANCE_ID_PATTERN_TOOLS"></span>Example 35: Remove devices by device instance ID pattern
+### <span id="ddk_example_35_remove_devices_by_device_instance_id_pattern_tools"></span><span id="DDK_EXAMPLE_35_REMOVE_DEVICES_BY_DEVICE_INSTANCE_ID_PATTERN_TOOLS"></span><a name="ddk_example_35_remove_devices_by_device_instance_id_pattern_tools"></a>Example 35: Remove devices by device instance ID pattern
 
 The following command uses the [**DevCon Remove**](devcon-remove.md) operation to remove all USB devices from the computer. It identifies the devices by a device instance ID pattern that matches any device instance ID (registry path) that begins with the "USB\\" string. The at character (**@**) distinguishes the device instance ID from a hardware ID or compatible ID. The command also includes the **/r** parameter that reboots the system if it is required to make the remove procedure effective.
 
@@ -1240,7 +1240,7 @@ USB\VID_045E&PID_0039\5&29F428A4&0&2                  : Removed
 3 device(s) removed.
 ```
 
-### <span id="ddk_example_36_remove_a_particular_network_device_tools"></span><span id="DDK_EXAMPLE_36_REMOVE_A_PARTICULAR_NETWORK_DEVICE_TOOLS"></span>Example 36: Remove a particular network device
+### <span id="ddk_example_36_remove_a_particular_network_device_tools"></span><span id="DDK_EXAMPLE_36_REMOVE_A_PARTICULAR_NETWORK_DEVICE_TOOLS"></span><a name="ddk_example_36_remove_a_particular_network_device_tools"></a>Example 36: Remove a particular network device
 
 The following command uses the [**DevCon Remove**](devcon-remove.md) operation to uninstall the NDISWAN miniport driver from the local computer. The command specifies the Net class and then refines the search by specifying devices in the class whose hardware ID or compatible ID include "ndiswan." The command also includes the **/r** parameter, which reboots the system if rebooting is required to make the remove procedure effective.
 
@@ -1258,7 +1258,7 @@ In response, DevCon displays the device instance ID of the device that it remove
 ROOT\MS_NDISWANIP\0000 : Removed 1 device(s) removed.
 ```
 
-### <span id="ddk_example_37_scan_the_computer_for_new_devices_tools"></span><span id="DDK_EXAMPLE_37_SCAN_THE_COMPUTER_FOR_NEW_DEVICES_TOOLS"></span>Example 37: Scan the computer for new devices
+### <span id="ddk_example_37_scan_the_computer_for_new_devices_tools"></span><span id="DDK_EXAMPLE_37_SCAN_THE_COMPUTER_FOR_NEW_DEVICES_TOOLS"></span><a name="ddk_example_37_scan_the_computer_for_new_devices_tools"></a>Example 37: Scan the computer for new devices
 
 The following command use the [**DevCon Rescan**](devcon-rescan.md) operation to scan the local computer for new devices.
 
@@ -1279,7 +1279,7 @@ You can also use a **DevCon Rescan** command on a remote computer. The following
 devcon /m:\\server01 rescan
 ```
 
-### <span id="ddk_example_38_restart_a_device_tools"></span><span id="DDK_EXAMPLE_38_RESTART_A_DEVICE_TOOLS"></span>Example 38: Restart a device
+### <span id="ddk_example_38_restart_a_device_tools"></span><span id="DDK_EXAMPLE_38_RESTART_A_DEVICE_TOOLS"></span><a name="ddk_example_38_restart_a_device_tools"></a>Example 38: Restart a device
 
 The following command uses the [**DevCon Restart**](devcon-restart.md) operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, **ROOT\\\*MSLOOP\\0000**. The at character (**@**) identifies the string as an device instance ID. The single quote character (**'**), which requests a literal search, prevents DevCon from interpreting the asterisk in the ID as a wildcard character.
 
@@ -1294,7 +1294,7 @@ ROOT\*MSLOOP\0000                                              : Restarted
 1 device(s) restarted.
 ```
 
-### <span id="ddk_example_39_reboot_the_local_computer_tools"></span><span id="DDK_EXAMPLE_39_REBOOT_THE_LOCAL_COMPUTER_TOOLS"></span>Example 39: Reboot the local computer
+### <span id="ddk_example_39_reboot_the_local_computer_tools"></span><span id="DDK_EXAMPLE_39_REBOOT_THE_LOCAL_COMPUTER_TOOLS"></span><a name="ddk_example_39_reboot_the_local_computer_tools"></a>Example 39: Reboot the local computer
 
 The following command uses the [**DevCon Reboot**](devcon-reboot.md) operation to reboot the operating system on the local computer and to associate the reboot with a hardware installation. Unlike the **/r** parameter, the **DevCon Reboot** operation does not depend on the return code from another operation.
 
@@ -1312,7 +1312,7 @@ In response, DevCon displays a message indicating that it is restarting the comp
 
 DevCon uses the standard **ExitWindowsEx** function to reboot. If the user has open files on the computer or a program will not close, the system does not reboot until the user has responded to system prompts to close the files or end the process.
 
-### <span id="ddk_example_40_assign_a_hardware_id_to_a_legacy_device_tools"></span><span id="DDK_EXAMPLE_40_ASSIGN_A_HARDWARE_ID_TO_A_LEGACY_DEVICE_TOOLS"></span>Example 40: Assign a hardware ID to a legacy device
+### <span id="ddk_example_40_assign_a_hardware_id_to_a_legacy_device_tools"></span><span id="DDK_EXAMPLE_40_ASSIGN_A_HARDWARE_ID_TO_A_LEGACY_DEVICE_TOOLS"></span><a name="ddk_example_40_assign_a_hardware_id_to_a_legacy_device_tools"></a>Example 40: Assign a hardware ID to a legacy device
 
 The following command uses the [**DevCon SetHwID**](devcon-sethwid.md) operation to assign the hardware ID, beep, to the legacy beep device.
 
@@ -1331,7 +1331,7 @@ ROOT\LEGACY_BEEP\0000                              : beep
 Modified 1 hardware ID(s).
 ```
 
-### <span id="ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com"></span><span id="DDK_EXAMPLE_41_ADD_A_HARDWARE_ID_TO_ALL_LEGACY_DEVICES_ON_A_REMOTE_COM"></span>Example 41: Add a hardware ID to all legacy devices on a remote computer
+### <span id="ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com"></span><span id="DDK_EXAMPLE_41_ADD_A_HARDWARE_ID_TO_ALL_LEGACY_DEVICES_ON_A_REMOTE_COM"></span><a name="ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com"></a>Example 41: Add a hardware ID to all legacy devices on a remote computer
 
 The following command uses the [**DevCon SetHwID**](devcon-sethwid.md) operation to add the hardware ID, legacy, to the list of hardware IDs for all legacy devices on the Server1 remote computer.
 
@@ -1363,7 +1363,7 @@ For example, the following command displays the status of all legacy devices.
 devcon status legacy
 ```
 
-### <span id="ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot"></span><span id="DDK_EXAMPLE_42_DELETE_A_HARDWARE_ID_FROM_ALL_LEGACY_DEVICES_ON_A_REMOT"></span>Example 42: Delete a hardware ID from all legacy devices on a remote computer
+### <span id="ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot"></span><span id="DDK_EXAMPLE_42_DELETE_A_HARDWARE_ID_FROM_ALL_LEGACY_DEVICES_ON_A_REMOT"></span><a name="ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot"></a>Example 42: Delete a hardware ID from all legacy devices on a remote computer
 
 The following command uses the [**DevCon SetHwID**](devcon-sethwid.md) operation to delete the hardware ID, **legacy**, from the list of hardware IDs for all legacy devices on the Server1 remote computer.
 
@@ -1387,7 +1387,7 @@ ROOT\LEGACY_WANARP\0000                                     :
 Modified 27 hardware ID(s).
 ```
 
-### <span id="ddk_example_43_add_delete_and_replace_hardwareids_tools"></span><span id="DDK_EXAMPLE_43_ADD_DELETE_AND_REPLACE_HARDWAREIDS_TOOLS"></span>Example 43: Add, delete, and replace hardware IDs
+### <span id="ddk_example_43_add_delete_and_replace_hardwareids_tools"></span><span id="DDK_EXAMPLE_43_ADD_DELETE_AND_REPLACE_HARDWAREIDS_TOOLS"></span><a name="ddk_example_43_add_delete_and_replace_hardwareids_tools"></a>Example 43: Add, delete, and replace hardware IDs
 
 The following series of examples shows how to use the varied features of the [**DevCon SetHwID**](devcon-sethwid.md) operation.
 
@@ -1442,7 +1442,7 @@ Modified 1 hardware ID(s).
 
 The success message indicates that DevCon modified the hardware ID of one device.
 
-### <span id="ddk_example_44_forcibly_update_the_hal_tools"></span><span id="DDK_EXAMPLE_44_FORCIBLY_UPDATE_THE_HAL_TOOLS"></span>Example 44: Forcibly update the HAL
+### <span id="ddk_example_44_forcibly_update_the_hal_tools"></span><span id="DDK_EXAMPLE_44_FORCIBLY_UPDATE_THE_HAL_TOOLS"></span><a name="ddk_example_44_forcibly_update_the_hal_tools"></a>Example 44: Forcibly update the HAL
 
 The following example shows how to use DevCon to update the HAL on the computer. In this example, a tester wants to replace the uniprocessor APCI APIC HAL that is best suited to the computer with a multiprocessor APCI APIC HAL for testing purposes.
 
