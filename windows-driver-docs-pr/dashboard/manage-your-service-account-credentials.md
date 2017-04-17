@@ -16,15 +16,15 @@ As an administrator, you can create, manage, and disable service accounts for yo
 
 **In this section:**
 
--   [To generate a new service account](#new-account)
+-   [To generate a new service account](#to-generate-a-new-service-account)
 
--   [To get the service account credentials](#get-account-credentials)
+-   [To get the service account credentials](#to-get-the-service-account-credentials)
 
--   [To generate a new password](#generate-password)
+-   [To generate a new password](#to-generate-a-new-password)
 
--   [To disable a service account](#disable-account)
+-   [To disable a service account](#to-disable-a-service-account)
 
-## <span id="new_account"></span><span id="NEW_ACCOUNT"></span>To generate a new service account
+## To generate a new service account
 
 
 1.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account. This account must be an Administrator for your organization in the Dashboard.
@@ -44,7 +44,7 @@ Microsoft does not store the password associated with this account.
 
  
 
-## <span id="get_account_credentials"></span><span id="GET_ACCOUNT_CREDENTIALS"></span>To get the service account credentials
+## To get the service account credentials
 
 
 1.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account. This account must be an Administrator for your organization in the Dashboard.
@@ -59,7 +59,7 @@ Microsoft does not store the password associated with this account.
 
 5.  Copy the account ID and password and provide them in a secure manner to the authorized users in your organization.
 
-## <span id="generate_password"></span><span id="GENERATE_PASSWORD"></span>To generate a new password
+## To generate a new password
 
 
 You can only generate a new password for an active service account; if the account is disabled or expired, you cannot generate a new password.
@@ -83,7 +83,7 @@ Don't forget to send the new password to your account users.
 
  
 
-## <span id="disable_account"></span><span id="DISABLE_ACCOUNT"></span>To disable a service account
+## To disable a service account
 
 
 1.  Sign in to the **Dashboard** from either the Hardware Dev Center or the Windows Dev Center by using a Microsoft account. This account must be an Administrator for your organization in the Dashboard.

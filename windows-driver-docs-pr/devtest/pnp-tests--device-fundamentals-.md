@@ -9,7 +9,7 @@ ms.assetid: 4224F92B-5430-4F55-900D-0B08ADBE54F6
 
 The Device Fundamentals PnP tests force a driver to handle almost all of the PnP IRPs; however, there are three areas that are stressed specifically: removal, rebalance, and surprise removal. The PnP test provides a mechanism to test each of these separately, or to test them all together (that is, as a stress test). This PnP testing is accomplished by using a combination of user-mode API calls (through the test application) and kernel-mode API calls (through an upper-filter driver).
 
-## <span id="pnp_tests"></span><span id="PNP_TESTS"></span>PNP tests
+## PNP tests
 
 
 The Plug and Play (PnP) tests execute various PnP-related code paths in the driver and user-mode components. The PnP tests should be run with [Driver Verifier](driver-verifier.md) enabled on the test computer. For information about enabling Driver Verifier, see [Driver Verifier properties for driver projects](https://msdn.microsoft.com/windows-drivers/develop/driver_verifier_properties_for__driver_projects).
@@ -67,7 +67,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <tr class="even">
 <td align="left"><p><span id="PNP_Cancel_Remove_Device_test_"></span><span id="pnp_cancel_remove_device_test_"></span><span id="PNP_CANCEL_REMOVE_DEVICE_TEST_"></span>PNP Cancel Remove Device test</p></td>
 <td align="left"><p>This test uses the EDT filter driver to send IRP_MN_CANCEL_REMOVE_DEVICE to target device stacks.</p>
-<p>For more information, see [About the Device Removal tests](#about-device-removal).</p>
+<p>For more information, see [About the Device Removal tests](#about-the-device-removal-tests).</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPCancelRemoveDevice</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -80,7 +80,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <tr class="odd">
 <td align="left"><p><span id="PNP_Cancel_Stop_Device_test"></span><span id="pnp_cancel_stop_device_test"></span><span id="PNP_CANCEL_STOP_DEVICE_TEST"></span>PNP Cancel Stop Device test</p></td>
 <td align="left"><p>This test uses the EDT filter driver to send IRP_MN_CANCEL_STOP_DEVICE to target device stacks.</p>
-<p>For more information, see [About the Rebalance tests](#about-rebalance-tests).</p>
+<p>For more information, see [About the Rebalance tests](#about-the-rebalance-tests).</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPCancelStopDevice</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -118,7 +118,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <tr class="even">
 <td align="left"><p><span id="PNP_Rebalance_Fail_Restart_Device_test"></span><span id="pnp_rebalance_fail_restart_device_test"></span><span id="PNP_REBALANCE_FAIL_RESTART_DEVICE_TEST"></span>PNP Rebalance Fail Restart Device test</p></td>
 <td align="left"><p>This test uses the EDT filter driver to try to send IRP_MN_STOP_DEVICE to target device stacks. The EDT filter driver then fails IRP_MN_START_DEVICE requests (that follow IRP_MN_STOP_DEVICE requests) to trigger the surprise removal of target devices.</p>
-<p>For more information, see [About the Rebalance tests](#about-rebalance-tests).</p>
+<p>For more information, see [About the Rebalance tests](#about-the-rebalance-tests).</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPTryStopDeviceAndFailRestart</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -131,7 +131,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <tr class="odd">
 <td align="left"><p><span id="PNP_Rebalance_Request_New_Resources_Device_test"></span><span id="pnp_rebalance_request_new_resources_device_test"></span><span id="PNP_REBALANCE_REQUEST_NEW_RESOURCES_DEVICE_TEST"></span>PNP Rebalance Request New Resources Device test</p></td>
 <td align="left"><p>This test uses the EDT filter driver to try to send IRP_MN_STOP_DEVICE to target device stacks. It also manipulates the resource requirements of the devices to maximize the chances that new resources are allocated to devices.</p>
-<p>For more information, see [About the Rebalance tests](#about-rebalance-tests).</p>
+<p>For more information, see [About the Rebalance tests](#about-the-rebalance-tests).</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPTryStopDeviceRequestNewResourcesAndRestartDevice</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -144,7 +144,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <tr class="even">
 <td align="left"><p><span id="PNP_Remove_Device_Test"></span><span id="pnp_remove_device_test"></span><span id="PNP_REMOVE_DEVICE_TEST"></span>PNP Remove Device Test</p></td>
 <td align="left"><p>This test causes IRP_MN_QUERY_REMOVE_DEVICE and IRP_MN_REMOVE_DEVICE to be sent to target device stacks.</p>
-<p>For more information, see [About the Device Removal tests](#about-device-removal).</p>
+<p>For more information, see [About the Device Removal tests](#about-the-device-removal-tests).</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPRemoveAndRestartDevice</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -157,7 +157,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <tr class="odd">
 <td align="left"><p><span id="PNP_Stop__Rebalance__Device_test"></span><span id="pnp_stop__rebalance__device_test"></span><span id="PNP_STOP__REBALANCE__DEVICE_TEST"></span>PNP Stop (Rebalance) Device test</p></td>
 <td align="left"><p>This test uses the EDT filter driver to try to send IRP_MN_STOP_DEVICE to target device stacks.</p>
-<p>For more information, see [About the Rebalance tests](#about-rebalance-tests).</p>
+<p>For more information, see [About the Rebalance tests](#about-the-rebalance-tests).</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPTryStopAndRestartDevice</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -170,7 +170,7 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 <tr class="even">
 <td align="left"><p><span id="PNP_Surprise_Remove_Device_test"></span><span id="pnp_surprise_remove_device_test"></span><span id="PNP_SURPRISE_REMOVE_DEVICE_TEST"></span>PNP Surprise Remove Device test</p></td>
 <td align="left"><p>This test uses the EDT filter driver to send IRP_MN_SURPRISE_REMOVAL to target device stacks.</p>
-<p>For more information, see [About the Surprise Removal test](#about-surprise-removal).</p>
+<p>For more information, see [About the Surprise Removal test](#about-the-surprise-removal-test).</p>
 <p><strong>Test binary:</strong> Devfund_PnPDTest.dll</p>
 <p><strong>Test method:</strong> PNPSurpriseRemoveAndRestartDevice</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -185,11 +185,11 @@ The Plug and Play (PnP) tests execute various PnP-related code paths in the driv
 
  
 
-## <span id="About_device_removal"></span><span id="about_device_removal"></span><span id="ABOUT_DEVICE_REMOVAL"></span>About the Device Removal tests
+## About the Device Removal tests
 
 
--   PNP Remove Device Test
--   PNP Cancel Remove Device test
+- PNP Remove Device Test
+- PNP Cancel Remove Device test
 
 The Device Removal test encompasses IRP\_MN\_QUERY\_REMOVE\_DEVICE, IRP\_MN\_CANCEL\_REMOVE\_DEVICE, and IRP\_MN\_REMOVE\_DEVICE.
 
@@ -203,10 +203,10 @@ Next, the test application calls the appropriate class installer and any registe
 
 Each of these steps involves a preliminary remove request. If that request is vetoed, the device will not be removed. You can choose to veto a remove request when appropriate, such as while streaming video on a USB camera or if the target device is in the boot or paging path. Remember that simply failing all remove requests is generally not good practice. Failing all remove requests will not guarantee that driver will never receive a remove because a remove IRP will still be issued after a surprise removal, or if anyone in the device stack fails a start IRP.
 
-## <span id="About_surprise_removal"></span><span id="about_surprise_removal"></span><span id="ABOUT_SURPRISE_REMOVAL"></span>About the Surprise Removal test
+## About the Surprise Removal test
 
 
--   PNP Surprise Remove Device test
+- PNP Surprise Remove Device test
 
 The Surprise Removal test encompasses IRP\_MN\_SURPRISE\_REMOVAL followed by IRP\_MN\_REMOVE\_DEVICE.
 
@@ -216,13 +216,13 @@ When triggered by the test application, the filter driver will cause the system 
 
 After the surprise removal test is complete, the device will be uninstalled and reenumerated, also removing the filter driver from the stack.
 
-## <span id="About_rebalance_tests"></span><span id="about_rebalance_tests"></span><span id="ABOUT_REBALANCE_TESTS"></span>About the Rebalance Tests
+## About the Rebalance Tests
 
 
--   PNP Stop (Rebalance) Device test
--   PNP Rebalance Request New Resources Device test
--   PNP Rebalance Fail Restart Device test
--   PNP Cancel Stop Device test
+- PNP Stop (Rebalance) Device test
+- PNP Rebalance Request New Resources Device test
+- PNP Rebalance Fail Restart Device test
+- PNP Cancel Stop Device test
 
 As with the removal test, the test application attempts to add an upper filter to the target device stack and then restart the device stack by using **SetupDiCallClassInstaller** with DIF\_PROPERTYCHANGE. If this attempt is not successful (that is, if someone on the target device stack failed the query-remove IRP), the test restarts the computer to test rebalance.
 
@@ -274,12 +274,12 @@ Depending upon which rebalance test that you choose, the following events occur:
 
     After the rebalance test is complete, the device will be uninstalled and reenumerated, also removing the filter driver from the stack.
 
-## <span id="Device_Error_Codes"></span><span id="device_error_codes"></span><span id="DEVICE_ERROR_CODES"></span>Device Error Codes
+## Device Error Codes
 
 
 If the test gives an error message saying that the device status is not OK, you can learn more about the device status through Device Manager. For a summary of the various device error codes, see [Device Manager Error Messages](https://msdn.microsoft.com/library/windows/hardware/ff541422).
 
-## <span id="Debug_installation_failures_using_the_Setup_API_logs"></span><span id="debug_installation_failures_using_the_setup_api_logs"></span><span id="DEBUG_INSTALLATION_FAILURES_USING_THE_SETUP_API_LOGS"></span>Debug installation failures using the Setup API logs
+## Debug installation failures using the Setup API logs
 
 
 The Setup API logs (setupapi.app.log and setupapi.dev.log) might contain useful information to debug driver installation failures logged by this test. The Setup API logs can be found under %windir%\\inf\\ directory on the test system.
@@ -290,7 +290,7 @@ To increase the verbosity and potential usefulness of these logs, set the follow
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [How to How to test a driver at runtime using Visual Studio](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver_at_runtime)

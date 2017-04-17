@@ -9,17 +9,17 @@ ms.assetid: 29E93E9E-7F87-4706-97AD-DB9A32EDD388
 
 Static Driver Verifier (SDV) can support WDM, KMDF, NDIS, and Storport drivers and libraries. To determine if your driver or library is supported and configured correctly, read over requirements described in this section.
 
-## <span id="driver.library.reqs"></span><span id="DRIVER.LIBRARY.REQS"></span>Driver or library requirements
+## Driver or library requirements
 
 
 You can run the SDV analysis tool if your driver or library meets one of following conditions:
 
--   You have a WDM driver or library, and the driver or library does not link to a class framework (that is, a Microsoft-provided library). For more information, see [Class framework (libraries)](#class-framework-libraries).
+-   You have a WDM driver or library, and the driver or library does not link to a class framework (that is, a Microsoft-provided library). For more information, see [Class framework libraries](#class-framework-libraries).
 -   You have a driver or library that links to WdfLdr.lib or WdfDriverEntry.lib.
 -   You have a driver or library that links to NDIS.lib.
 -   You have a driver or library that links to Storport.lib.
 
-Static Driver Verifier supports a driver or library that passes those conditions even if the driver or library links to multiple [utility libraries](#known-utility-libraries).
+Static Driver Verifier supports a driver or library that passes those conditions even if the driver or library links to multiple [utility libraries](#utility-libraries).
 
 In addition, to perform the analysis, SDV requires that:
 
@@ -35,7 +35,7 @@ There are other factors that affect the quality and accuracy of the static analy
 -   Size of the driver, particularly if it has more than 100K lines of code.
 -   Use of language-specific features, such as virtual functions and pointer arithmetic.
 
-## <span id="Visual_Studio_project_requirements"></span><span id="visual_studio_project_requirements"></span><span id="VISUAL_STUDIO_PROJECT_REQUIREMENTS"></span>Visual Studio project requirements
+## Visual Studio project requirements
 
 
 To use Static Driver Verifier, the Visual Studio project must have the following settings:
@@ -43,7 +43,7 @@ To use Static Driver Verifier, the Visual Studio project must have the following
 -   UseDebugLibraries = false
 -   Platform = Win32 (x86) or x64
 
-## <span id="class.framework.libraries"></span><span id="CLASS.FRAMEWORK.LIBRARIES"></span>Class framework (libraries)
+## Class framework libraries
 
 
 If you have a WDM driver or library and want to run SDV, the driver or library must not link to one of the following class framework libraries.
@@ -211,7 +211,7 @@ If you have a WDM driver or library and want to run SDV, the driver or library m
 
  
 
-## <span id="known.utility.libraries"></span><span id="KNOWN.UTILITY.LIBRARIES"></span>Known utility libraries
+## Utility libraries
 
 
 Static Driver Verifier supports a driver or library that has links to multiple utility libraries if the driver or library conforms to the [Driver or Library requirements](#driver-library-reqs).

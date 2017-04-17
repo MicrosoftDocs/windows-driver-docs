@@ -17,7 +17,7 @@ Two different drivers may allocate the same address range. By default, the bus d
 
 -   [Which addresses are allocated?](#ddk-receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus-kg)
 -   [Allocation and backing store](#allocation-and-backing-store)
--   [Client driver's notification routine for receive asynchronous I/O requests](#client-driver-s-notification-routine-for-receive-asynchronous-i-o-requests)
+-   [Client driver's notification routine for receive asynchronous I/O requests](#client-drivers-notification-routine-for-receive-asynchronous-io-requests)
 -   [Asynchronous receive in the pre-notification case](#asynchronous-receive-in-the-pre-notification-case)
 
 ## <a href="" id="ddk-receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus-kg"></a>Which addresses are allocated?

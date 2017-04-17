@@ -12,7 +12,7 @@ To update an NDIS 6.x miniport driver to support NDIS 6.30, you must modify it a
 -   [Build Environment and Testing](#build-environment-and-testing)
 -   [General Porting Requirements](#general-porting-requirements)
 -   [Wi-Fi Direct Miniport Drivers](#wi-fi-direct-miniport-drivers)
--   [USB-Based WWAN (Mobile Broadband) Miniport Drivers](#usb-based-wwan--mobile-broadband--miniport-drivers)
+-   [USB-Based WWAN (Mobile Broadband) Miniport Drivers](#usb-based-wwan-mobile-broadband-miniport-drivers)
 
 For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md).
 

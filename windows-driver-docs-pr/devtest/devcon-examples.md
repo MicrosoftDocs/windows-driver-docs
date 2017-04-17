@@ -147,7 +147,7 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 [Example 45: Add and Remove Driver Packages](example-45--add-and-remove-driver-packages.md)
 
-### <span id="ddk_example_1_find_all_hardware_ids_tools"></span><span id="DDK_EXAMPLE_1_FIND_ALL_HARDWARE_IDS_TOOLS"></span>Example 1: Find all hardware IDs
+### <span id="ddk_example_1_find_all_hardware_ids_tools"></span><span id="DDK_EXAMPLE_1_FIND_ALL_HARDWARE_IDS_TOOLS"></span><a name="ddk_example_1_find_all_hardware_ids_tools"></a>Example 1: Find all hardware IDs
 
 Because DevCon operations use IDs and ID patterns to identify devices, a common first step in using DevCon is to create a hardware ID reference file for devices on the computer.
 

@@ -9,7 +9,7 @@ ms.assetid: 53EBAF4B-2CEF-492B-98B8-DA199FDFBC46
 
 The Device Fundamentals Penetration tests perform various forms of input attacks, which are a critical component of security testing. Attack and Penetration testing can help identify vulnerabilities in software interfaces.
 
-## <span id="penetration_tests"></span><span id="PENETRATION_TESTS"></span>Penetration
+## Penetration
 
 
 The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](iospy.md) and [I/O Attack](ioattack.md) tests. The Fuzz tests were also a feature of the **Device Path Exceriser** test tool.
@@ -35,7 +35,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p><em>DQ</em></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="Display_I_O_Spy-enabled_Device"></span><span id="display_i_o_spy-enabled_device"></span><span id="DISPLAY_I_O_SPY-ENABLED_DEVICE"></span>Display I/O Spy-enabled Device</p></td>
+<td align="left"><p><span id="display_i_o_spy-enabled_device"></span>Display I/O Spy-enabled Device</p></td>
 <td align="left"><p>Display devices that have [I/O Spy](iospy.md) enabled on them.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_DisplayEnabledDevices.wsc</p>
 <p><strong>Test method:</strong> DisplayIoSpyDevices</p></td>
@@ -50,7 +50,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p><em>DFD</em> - specifies the path to the IoSpy data file. The default location is %SystemDrive%\DriverTest\IoSpy</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="Fuzz_Misc_API_test"></span><span id="fuzz_misc_api_test"></span><span id="FUZZ_MISC_API_TEST"></span>Fuzz Misc API test</p></td>
+<td align="left"><p><span id="fuzz_misc_api_test"></span>Fuzz Misc API test</p></td>
 <td align="left"><p>The Fuzz Misc API tests are tests that determine whether the driver can handle a variety of common calls from kernel mode drivers.</p>
 <p>The tests includes the following tests:</p>
 <ul>
@@ -89,9 +89,9 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p><em>FillZeroPageWithNull</em></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="Fuzz_open_and_close_test"></span><span id="fuzz_open_and_close_test"></span><span id="FUZZ_OPEN_AND_CLOSE_TEST"></span>Fuzz open and close test</p></td>
+<td align="left"><p><span id="fuzz_open_and_close_test"></span>Fuzz open and close test</p></td>
 <td align="left"><p>This test performs thousands of create-open-close sequences.</p>
-<p>For detailed information about this test, see [About the Fuzz open and close test](#fuzz-open-close).</p>
+<p>For detailed information about this test, see [About the Fuzz open and close test](#about-the-fuzz-open-and-close-test).</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoOpenCloseTest</p>
 <p><strong>Parameters:</strong> - see [Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)</p>
@@ -105,7 +105,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <tr class="odd">
 <td align="left"><p><span id="Fuzz_Query_and_Set_File_Information_test_"></span><span id="fuzz_query_and_set_file_information_test_"></span><span id="FUZZ_QUERY_AND_SET_FILE_INFORMATION_TEST_"></span>Fuzz Query and Set File Information test</p></td>
 <td align="left"><p>This test issues calls to retrieve and change the object, file, and volume information of devices.</p>
-<p>During the <em>Query and Set File Information Test</em>, the Fuzz test issue calls to retrieve and change the object, file, and volume information of devices opened by the [Basic Open Operations](#fuzz-basic-open) and other open operations, including the operations performed by the Fuzz Sub-opens test.</p>
+<p>During the <em>Query and Set File Information Test</em>, the Fuzz test issue calls to retrieve and change the object, file, and volume information of devices opened by the [Basic Open Operations](#basic-open-operations) and other open operations, including the operations performed by the Fuzz Sub-opens test.</p>
 <p>The Fuzz test issues each query or set call at least 1024 times with a valid buffer and a variety of buffer lengths and file information classes. One request of each type is also sent with an invalid buffer pointer and a zero buffer length.</p>
 <p>If you use the <em>ChangeBufferProtectionFlags</em> parameter, which sets the protection option, the Fuzz test varies the security setting on the buffer in each query and set call.</p>
 <p>This test also performs the Fuzz Sub-opens test.</p>
@@ -123,7 +123,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <tr class="even">
 <td align="left"><p><span id="Fuzz_Query_and_Set_Security_test"></span><span id="fuzz_query_and_set_security_test"></span><span id="FUZZ_QUERY_AND_SET_SECURITY_TEST"></span>Fuzz Query and Set Security test</p></td>
 <td align="left"><p>This test issues calls to retrieve the security descriptor and change the security state of devices.</p>
-<p>During the <em>Query and Set Security Test</em>, the Fuzz test issues calls to retrieve the security descriptor and change the security state of devices opened by the [Basic Open Operations](#fuzz-basic-open) and other open operations, including the operations performed by the Fuzz Sub-opens test.</p>
+<p>During the <em>Query and Set Security Test</em>, the Fuzz test issues calls to retrieve the security descriptor and change the security state of devices opened by the [Basic Open Operations](#basic-open-operations) and other open operations, including the operations performed by the Fuzz Sub-opens test.</p>
 <p>the Fuzz test issues each query or set call at least 1024 times with a valid buffer and a variety of buffer lengths and security information types (OWNER_SECURITY_INFORMATION, GROUP_SECURITY_INFORMATION, DACL_SECURITY_INFORMATION, SACL_SECURITY_INFORMATION, and no information type). One request of each type is also sent with an invalid buffer pointer and a zero buffer length.</p>
 <p>If you use the <em>ChangeBufferProtectionFlags</em> parameter, which sets the protection option, the Fuzz test varies the security setting on the buffer in each query and set call.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
@@ -140,7 +140,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p><span id="Fuzz_Random_FSCTL_test___Fuzz_Random_IOCTL_test_"></span><span id="fuzz_random_fsctl_test___fuzz_random_ioctl_test_"></span><span id="FUZZ_RANDOM_FSCTL_TEST___FUZZ_RANDOM_IOCTL_TEST_"></span>Fuzz Random FSCTL test / Fuzz Random IOCTL test</p></td>
 <td align="left"><p>This test issues a series of calls to the DeviceIoControl function with function codes, device types, data transfer methods, and access requirements that are selected at random from a specified range of values. The calls include input and output buffers with valid and invalid buffer pointers and lengths, and randomly generated content.</p>
 <p>During random tests, the Fuzz test issues a series of calls to the <strong>DeviceIoControl</strong> function with function codes, device types, data transfer methods, and access requirements that are selected at random from a specified range of values. The calls include input and output buffers with valid and invalid buffer pointers and lengths, and randomly generated content.</p>
-<p>The Fuzz test performs the random tests on all devices opened during the [Basic Open Test](#fuzz-basic-open) and additional open tests. You can customize this test by using the following parameters:</p>
+<p>The Fuzz test performs the random tests on all devices opened during the [Basic Open Operations](#basic-open-operations) and additional open tests. You can customize this test by using the following parameters:</p>
 <ul>
 <li><p>Use <em>MinFunctionCode</em> and <em>MaxFunctionCode</em> to specify the range of IOCTL or FSCTL function codes used in the calls</p></li>
 <li><p>Use <em>MinDeviceType</em> and <em>MaxDeviceType</em> to specify the range of device types used in the calls</p></li>
@@ -170,10 +170,10 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p><em>FillZeroPageWithNull</em></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="Fuzz_Sub-opens_test"></span><span id="fuzz_sub-opens_test"></span><span id="FUZZ_SUB-OPENS_TEST"></span>Fuzz Sub-opens test</p></td>
+<td align="left"><p><span id="fuzz_sub-opens_test"></span>Fuzz Sub-opens test</p></td>
 <td align="left"><p>The test performs a rapid series of calls to open objects in the device's namespace. In these calls, it passes a path that begins with the device and includes arbitrary names and nonsense strings of varying length and content.</p>
 <p>During a <em>Relative Open Test</em>, (also known as a <em>Sub-open Test</em>) the Fuzz test attempts to open objects in the device's [namespace](https://msdn.microsoft.com/library/windows/hardware/ff542068).</p>
-<p>During this test, the Fuzz test performs a rapid series of calls to open objects in the namespace of the devices opened by using [Basic Open Operations](#fuzz-basic-open) and other open operations. In these calls, the Fuzz test passes a path that begins with the device and includes arbitrary names and nonsense strings of varying length and content.</p>
+<p>During this test, the Fuzz test performs a rapid series of calls to open objects in the namespace of the devices opened by using [Basic Open Operations](#basic-open-operations) and other open operations. In these calls, the Fuzz test passes a path that begins with the device and includes arbitrary names and nonsense strings of varying length and content.</p>
 <p>This test determines how the driver or file system manages open requests in its namespace. In particular, if the driver does not support open requests in its namespace, it must prevent unauthorized access, either by failing the requests, or by setting the FILE_DEVICE_SECURE_OPEN device characteristic when it uses [<strong>IoCreateDevice</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548397) or [<strong>IoCreateDeviceSecure</strong>](https://msdn.microsoft.com/library/windows/hardware/ff548407) to create the device object.</p>
 <p>For more information about the namespace of a device, see [Controlling Device Namespace Access](https://msdn.microsoft.com/library/windows/hardware/ff542068).</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
@@ -234,12 +234,12 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 
  
 
-## <span id="fuzz_open_close"></span><span id="FUZZ_OPEN_CLOSE"></span>About the Fuzz open and close test,
+## About the Fuzz open and close test
 
 
-The Fuzz open and close test employs several different ways of opening and closing instances of the specified device or devices: [Basic Open Operations](#fuzz-basic-open), [Direct Device Open Operations](#fuzz-direct-open), and an [Open and Close stress test](#fuzz-open-close).
+The Fuzz open and close test employs several different ways of opening and closing instances of the specified device or devices: [Basic Open Operations](#basic-open-operations), [Direct Device Open Operations](#direct-device-open-operations), and an [Open and Close test](#open-and-close-test).
 
-### <span id="fuzz_basic_open"></span><span id="FUZZ_BASIC_OPEN"></span>Basic Open Operations
+### Basic Open Operations
 
 During the *Basic Open Operations*, the Fuzz test repeatedly opens (creates) instances of the specified devices or the devices exported by the specified driver by using different methods and options.
 
@@ -263,17 +263,17 @@ There are five types of Basic Open Operations:
 
 The parameters used in the open calls vary to accommodate the characteristics of the device and make it likely that the calls succeed. For example, if a basic open operation fails because the call did not meet the security requirements of the device, the Fuzz test repeats the open operation with a request for lesser access. For example, if an open operation that requested write access returns a security violation error, the open is repeated with a request for read access.
 
-### <span id="fuzz_direct_open"></span><span id="FUZZ_DIRECT_OPEN"></span>Direct Device Open Operations
+### Direct Device Open Operations
 
 During the *Direct Device Open Operations*, the Fuzz test opens the device directly, as a device, not as a file in a file system. Direct Device Open Operations are always synchronous. If the call is successful, the Fuzz test uses the handle provided to perform other selected tests.
 
-### <span id="fuzz_open_close_test"></span><span id="FUZZ_OPEN_CLOSE_TEST"></span>Open and Close Test
+### Open and Close Test
 
 During the *Open and Close Test*, the Fuzz test creates several threads, each of which performs thousands of create-open-close sequences. This tests the driver's ability to handle an extraordinary volume of otherwise simple and anticipated calls.
 
-The Open and Close Test uses the same options used in [Basic Open Operation](#fuzz-basic-open) and Open with Added Backslash tests and are performed just prior to these tests.
+The Open and Close Test uses the same options used in [Basic Open Operations](#basic-open-operations) and Open with Added Backslash tests and are performed just prior to these tests.
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [How to How to test a driver at runtime using Visual Studio](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver_at_runtime)
