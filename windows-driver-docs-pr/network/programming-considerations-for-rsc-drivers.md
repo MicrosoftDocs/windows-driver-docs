@@ -12,7 +12,7 @@ The following sections describe issues to consider when implementing a receive-s
 -   [Responding to Queries for RSC Statistics](#responding-to-queries-for-rsc-statistics)
 -   [Forwarded TCP Packets](#forwarded-tcp-packets)
 -   [RSC Support for Lightweight Filters and MUX Intermediate Drivers](#rsc-support-for-lightweight-filters-and-mux-intermediate-drivers)
--   [Windows Filtering Platform (WFP) Inspection and Callout Drivers](#windows-filtering-platform--wfp--inspection-and-callout-drivers)
+-   [Windows Filtering Platform (WFP) Inspection and Callout Drivers](#windows-filtering-platform-wfp-inspection-and-callout-drivers)
 
 ## Responding to Queries for RSC Statistics
 
