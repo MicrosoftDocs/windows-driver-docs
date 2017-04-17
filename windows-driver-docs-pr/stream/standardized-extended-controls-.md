@@ -18,7 +18,7 @@ The following list of standardized extended controls (defined by Media Foundatio
 -   [Extended region of interest (ROI)](#extended-region-of-interest-roi)
 -   [Photo confirmation](#photo-confirmation)
 -   [Photo sequence submode](#photo-sequence-submode)
--   [Photo capture feedback (applied device settings)](#photo-capture-feedback-applied-device-settings)
+-   [Photo capture feedback applied device settings](#photo-capture-feedback-applied-device-settings)
 -   [Integer ISO](#integer-iso)
 -   [Advanced focus](#advanced-focus)
 -   [Flash](#flash)
@@ -117,7 +117,7 @@ The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY**](https://msdn.micros
 
 The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE**](https://msdn.microsoft.com/library/windows/hardware/dn917944) property ID is the only control that is associated with the focus state DDI.
 
-## Extended region of interest (ROI)
+## Extended region of interest ROI
 
 
 The following property IDs are the controls that are associated with the ROI DDI:
@@ -136,7 +136,7 @@ The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOCONFIRMATION**](https://msdn.mi
 
 The [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE**](https://msdn.microsoft.com/library/windows/hardware/dn567582) property ID is the only control associated with the photo sequence DDI.
 
-## Photo capture feedback (applied device settings)
+## Photo capture feedback applied device settings
 
 
 The MFT0 parses the metadata buffer provided by the driver and attaches the required applied device settings IMFAttributes to the **MFSampleExtension\_CaptureMetadata** attribute bag associated with each IMFSample. The following IMFAttributes must be carried over by the MF pipeline and any third-party supplied MFTs:
