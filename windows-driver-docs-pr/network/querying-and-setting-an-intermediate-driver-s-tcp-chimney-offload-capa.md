@@ -1,12 +1,11 @@
 ---
-title: Querying and Setting an Intermediate Driver's TCP Chimney Offload Capabilities
+title: Querying and setting TCP chimney offload for intermediate drivers
 description: Querying and Setting an Intermediate Driver's TCP Chimney Offload Capabilities
 ms.assetid: afa7fadf-81cf-4efb-8c66-5bd7af3c95b9
 keywords: ["intermediate drivers WDK TCP chimney offload , capabilities", "capabilities WDK TCP chimney offload", "querying TCP chimney offload capabilities"]
 ---
 
 # Querying and Setting an Intermediate Driver's TCP Chimney Offload Capabilities
-
 
 \[The TCP chimney offload feature is deprecated and should not be used.\]
 

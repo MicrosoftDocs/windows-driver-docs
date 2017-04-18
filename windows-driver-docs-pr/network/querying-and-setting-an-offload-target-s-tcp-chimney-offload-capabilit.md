@@ -1,5 +1,5 @@
 ---
-title: Querying and Setting an Offload Target's TCP Chimney Offload Capabilities
+title: Querying and setting TCP chimney offload for an offload target
 description: Querying and Setting an Offload Target's TCP Chimney Offload Capabilities
 ms.assetid: e4e6dc5f-0cf6-4de6-9402-4ce8c8cba942
 keywords: ["TCP chimney offload WDK networking , capabilities", "chimney offload WDK networking , capabilities", "capabilities WDK TCP chimney offload", "querying TCP chimney offload capabilities", "target capabilities WDK TCP chimney offload"]

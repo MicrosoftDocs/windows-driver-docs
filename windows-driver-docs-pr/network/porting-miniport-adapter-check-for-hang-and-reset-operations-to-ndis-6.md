@@ -1,6 +1,6 @@
 ---
-title: Porting Miniport Adapter Check for Hang and Reset Operations to NDIS 6.0
-description: Porting Miniport Adapter Check for Hang and Reset Operations to NDIS 6.0
+title: Porting Miniport Driver Check for Hang and Reset to NDIS 6.0
+description: Porting Miniport Driver Check for Hang and Reset Operations to NDIS 6.0
 ms.assetid: c0361e24-b1d5-407c-b69a-6fa9d768943f
 keywords: ["adapters WDK networking , hang and reset operations", "hang and reset operations WDK networking", "porting miniport drivers WDK networking , hang and reset operations"]
 ---
