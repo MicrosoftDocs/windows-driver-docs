@@ -1,10 +1,10 @@
 ---
-title: Application
-description: Application
+title: Application (WindowsInfo)
+description: Application (WindowsInfo)
 ms.assetid: e76ede51-e494-47b4-b30a-e354799f66e7
 ---
 
-# Application
+# Application (WindowsInfo)
 
 
 The Application element specifies the application ID for the app.

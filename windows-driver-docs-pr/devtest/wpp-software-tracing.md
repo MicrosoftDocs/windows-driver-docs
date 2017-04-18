@@ -1,14 +1,11 @@
 ---
 title: WPP Software Tracing
-description: WPP Software Tracing
+description: This section describes how to use the *Windows software trace preprocessor* (WPP) to trace the operation of a software component trace provider.
 ms.assetid: dab776b3-bac9-4157-a530-6e48868ba900
 keywords: ["Windows software trace preprocessor WDK", "WPP software tracing WDK", "software tracing WDK , WPP", "kernel-mode WPP WDK software tracing", "Windows software trace preprocessor WDK , about WPP", "WPP software tracing WDK , about WPP", "default WPP software tracing", "tracing WDK , WPP"]
 ---
 
 # WPP Software Tracing
-
-
-## <span id="ddk_wpp_software_tracing_tools"></span><span id="DDK_WPP_SOFTWARE_TRACING_TOOLS"></span>
 
 
 This section describes how to use the *Windows software trace preprocessor* (WPP) to trace the operation of a software component ([trace provider](trace-provider.md)). A trace provider can be one of the following:
@@ -35,7 +32,7 @@ WPP software tracing supplements and enhances [WMI event tracing](https://msdn.m
 <li>For kernel-mode drivers, use the [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) API.</li>
 <li>For user-mode drivers or applications, use the [Event Tracing](https://msdn.microsoft.com/library/windows/desktop/bb968803) (Windows Desktop) API.</li>
 </ul>
-For more information, see [When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](tools-for-software-tracing.md#when_to_use_event_tracing)</td>
+For more information, see [When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](tools-for-software-tracing.md##when-should-i-use-wpp-software-tracing-or-the-event-tracing-for-windows-etw-api)</td>
 </tr>
 </tbody>
 </table>
@@ -46,7 +43,7 @@ Logging messages with WPP software tracing is similar to using Windows event log
 
 WPP software tracing is supported on Microsoft Windows 2000 and later versions of Windows.
 
-### <span id="ddk_using_wpp_software_tracing_in_a_driver_tools"></span><span id="DDK_USING_WPP_SOFTWARE_TRACING_IN_A_DRIVER_TOOLS"></span>An overview of the WPP software tracing process
+### An overview of the WPP software tracing process
 
 The basic process for adding WPP software tracing to a driver or application, includes the following steps. If you use one of the Visual Studio templates provided in the WDK for creating a WDF driver, much of the work is done for you.
 
@@ -54,11 +51,11 @@ The basic process for adding WPP software tracing to a driver or application, in
 
 -   Add the required WPP-related C preprocessor directives and WPP macro calls to the provider's source files, as described in [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md) and in [WPP Software Tracing Reference](https://msdn.microsoft.com/library/windows/hardware/ff556205).
 
--   Modify the Visual Studio project to run the WPP preprocessor and build the driver, as described in [Step 6](adding-wpp-software-tracing-to-a-windows-driver.md#step_run_wpp) of Adding WPP Software Tracing to a Windows Driver. You can refer to the [WPP Preprocessor](wpp-preprocessor.md) for more build time options.
+-   Modify the Visual Studio project to run the WPP preprocessor and build the driver, as described in [Step 6](adding-wpp-software-tracing-to-a-windows-driver.md#step-6-modify-the-visual-studio-project-to-run-the-wpp-preprocessor-and-build-the-solution) of Adding WPP Software Tracing to a Windows Driver. You can refer to the [WPP Preprocessor](wpp-preprocessor.md) for more build time options.
 
 -   Install the driver or component. Start a trace session and record the trace messages. Use the tools for software tracing, such as [TraceView](traceview.md), [Tracelog](tracelog.md), [Tracefmt](tracefmt.md), and [Tracepdb](tracepdb.md) to configure, start, and stop tracing sessions and to display and filter trace messages. These tools are included in the Windows Driver Kit (WDK).
 
-## <span id="in_this_section"></span>In this section
+## In this section
 
 
 -   [Adding WPP Software Tracing to a Windows Driver](adding-wpp-software-tracing-to-a-windows-driver.md)

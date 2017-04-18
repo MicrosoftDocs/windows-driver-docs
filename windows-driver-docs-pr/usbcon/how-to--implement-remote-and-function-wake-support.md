@@ -1,6 +1,7 @@
 ---
 Description: This topic provides an overview of function suspend and function remote wake-up features for Universal Serial Bus (USB) 3.0 multi-function devices (composite devices).
 title: How to Implement Function Suspend in a Composite Driver
+author: windows-driver-content
 ---
 
 # How to Implement Function Suspend in a Composite Driver
@@ -23,7 +24,7 @@ For the client driver, the steps for sending a function to suspend state and wak
 3.  Submit a request to arm its function for remote wake-up by sending a wait-wake I/O request packet (IRP).
 4.  Transition the function to a low power state by sending **Dx** power IRPs (**D2** or **D3**).
 
-For more information about the preceding steps, see [Sending a USB Idle Request IRP](sending-a-usb-idle-request-irp.md) in the [USB Selective Suspend](usb-selective-suspend.md) section.
+For more information about the preceding steps, see "Sending a USB Idle Request IRP" in [USB Selective Suspend](usb-selective-suspend.md).
 A composite driver creates a physical device object (PDO) for each function in the composite device and handles power requests sent by the client driver (the FDO of the function device stack). In order for a client driver to successfully enter and exit suspend state for its function, the composite driver must support function suspend and remote wake-up features, and process the received power requests.
 
 In Windows 8, the USB driver stack for USB 3.0 devices supports those features. In addition, function suspend and function remote wake-up implementation has been added to the Microsoft-provided [USB generic parent driver](usb-common-class-generic-parent-driver.md) (Usbccgp.sys), which is the Windows default composite driver. If you are writing a custom composite driver, your driver must handle requests related to function suspend and remote wake-up requests, as per the following procedure.
@@ -246,18 +247,10 @@ In the (remote wake-up) completion routine, the composite driver should queue a 
 The worker thread completes the wait-wake IRP and invokes the client driver's completion routine. The completion routine then sends a **D0** IRP to enter the function in working state. Before completing the wait-wake IRP, the composite driver should call [**PoSetSystemWake**](https://msdn.microsoft.com/library/windows/hardware/ff559770) to mark the wait-wake IRP as the one that contributed to waking up the system from suspend state. The power manager logs an Event Tracing for Windows (ETW) event (viewable in the global system channel) that includes information about devices that woke up the system.
 
 ## Related topics
+[USB Power Management](usb-power-management.md)  
+[USB Selective Suspend](usb-selective-suspend.md)  
 
-
-[USB Power Management](usb-power-management.md)
-
-[USB Selective Suspend](usb-selective-suspend.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20Implement%20Function%20Suspend%20in%20%20a%20Composite%20Driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

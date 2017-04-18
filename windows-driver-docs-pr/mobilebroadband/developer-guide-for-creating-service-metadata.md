@@ -91,7 +91,7 @@ To create a new service metadata package, see [Steps for creating a service meta
 
 To edit an existing service metadata package, see [Steps for editing a service metadata package](#steps-for-editing-a-service-metadata-package).
 
-## <span id="BKMK_CreateNewPackage"></span><span id="bkmk_createnewpackage"></span><span id="BKMK_CREATENEWPACKAGE"></span>Steps for creating a service metadata package
+## Steps for creating a service metadata package
 
 
 Use the following steps to create a service metadata package on the Windows Dev Center hardware dashboard:
@@ -283,7 +283,7 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
      
 
     ``` syntax
-# DEVICE SHOULD BE CONNECTED TO MACHINE
+    # DEVICE SHOULD BE CONNECTED TO MACHINE
 
     Write-Host "Launching devcon to remove MBAE software device nodes devcon.exe remove @SWD\MBAE\*"
     $DevconParameters = ' remove @SWD\MBAE\* '
@@ -330,7 +330,7 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
     Stop-Service DsmSvc
 
     Write-Host "Removing MBAE metadata packages in store"
-#Find Package Ids
+    #Find Package Ids
     $MBAEPackageRegKeyHive = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\Accounts\"
     if(Test-Path $MBAEPackageRegKeyHive)
     {
@@ -379,7 +379,7 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
 
     Write-Host "END of Script"
 
-# DEVICE SHOULD BE CONNECTED TO MACHINE
+    # DEVICE SHOULD BE CONNECTED TO MACHINE
 
     Write-Host "Launching devcon to remove MBAE software device nodes devcon.exe remove @SWD\MBAE\*"
     $DevconParameters = ' remove @SWD\MBAE\* '
@@ -418,7 +418,7 @@ This will not work on a Windows RT device. Use the steps in the procedure named 
 
 
     Write-Host "Removing MBAE metadata packages in cache and store"
-#Find Package Ids
+    #Find Package Ids
     $MBAEPackageRegKeyHive = "HKLM:\SOFTWARE\Microsoft\WwanSvc\MobileBroadbandAccounts\Accounts\"
     if(Test-Path $MBAEPackageRegKeyHive)
     {
@@ -520,7 +520,7 @@ Once you have confirmed that the service metadata package works correctly, the f
 
 ![release your service metadata package](images/mbae-sxs81-releasetolive.jpg)
 
-## <span id="BKMK_EditPackage"></span><span id="bkmk_editpackage"></span><span id="BKMK_EDITPACKAGE"></span>Steps for editing a service metadata package
+## Steps for editing a service metadata package
 
 
 You can edit a service metadata package by using the Manage Experiences page of the Windows Dev Center hardware dashboard.

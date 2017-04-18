@@ -15,8 +15,8 @@ Microsoft provides an NDIS miniport driver, Rndismp.sys, which implements the Re
 
 To use the Remote NDIS driver with a USB device, an IHV must provide an INF file according to one of the following templates:
 
--   [RNDIS INF template for NDIS 5.1 (Windows XP and later)](#rndis-inf-template-for-ndis-5-1-windows-xp-and-later)
--   [RNDIS INF template for NDIS 6.0 (Windows 7 and later)](#rndis-inf-template-for-ndis-6-0-windows-7-and-later)
+-   [RNDIS INF template for NDIS 5.1 (Windows XP and later)](#rndis-inf-template-for-ndis-51-windows-xp-and-later)
+-   [RNDIS INF template for NDIS 6.0 (Windows 7 and later)](#rndis-inf-template-for-ndis-60-windows-7-and-later)
 
 ### RNDIS INF template for NDIS 5.1 (Windows XP and later)
 

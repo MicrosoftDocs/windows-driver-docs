@@ -12,23 +12,16 @@ UCX keeps track of all the endpoints that have been created by the host controll
 
 To ensure compatibility with existing USB drivers, the host controller must comply with the following requirements when completing URB request:
 
--   [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) must be called at DISPATCH\_LEVEL.
+-  [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) must be called at DISPATCH\_LEVEL.
 -   If the URB was delivered to its framework queue and the driver began processing it synchronously on the calling driver’s thread or DPC, the request should not also be completed synchronously. The request must be completed on a separate DPC, which can be scheduled with a call to [**WdfDpcEnqueue**](https://msdn.microsoft.com/library/windows/hardware/ff547148).
--   Similar to the preceding requirement, upon receiving [*EvtIoCanceledOnQueue*](https://msdn.microsoft.com/library/windows/hardware/ff541756) or [*EvtRequestCancel*](https://msdn.microsoft.com/library/windows/hardware/ff541817), the host controller driver must complete the URB request on a separate DPC from the calling thread or DPC. By default, WDF completes canceled requests on the queue synchronously. That behavior might cause issues for URB requests. For this reason, the driver must provide an *EvtIoCanceledOnQueue* callback for its URB queues.
+-   Similar to the preceding requirement, upon receiving [**EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE**](https://msdn.microsoft.com/library/windows/hardware/ff541756) or [**EVT_WDF_REQUEST_CANCEL**](https://msdn.microsoft.com/library/windows/hardware/ff541817), the host controller driver must complete the URB request on a separate DPC from the calling thread or DPC. By default, WDF completes canceled requests on the queue synchronously. That behavior might cause issues for URB requests. For this reason, the driver must provide an *EvtIoCanceledOnQueue* callback for its URB queues.
 
 The framework request object for an [**IOCTL\_INTERNAL\_USB\_SUBMIT\_URB**](https://msdn.microsoft.com/library/windows/hardware/ff537271) contains an URB located at **Parameters.Others.Arg1** of the request. When the request is completed, the URB status must be set to either USBD\_STATUS\_SUCCESS, or to a failure status that indicates the nature of the failure. The failure status values are defined in the usb.h header file.
 
 ## Related topics
+[Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)  
 
-
-[Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Handle%20I/O%20requests%20in%20a%20USB%20host%20controller%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

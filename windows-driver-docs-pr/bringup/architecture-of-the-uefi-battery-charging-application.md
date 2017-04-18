@@ -1,5 +1,5 @@
 ---
-title: Architecture of the UEFI battery charging application provided by Microsoft
+title: Architecture of the UEFI battery charging application
 author: windows-driver-content
 description: Architecture of the UEFI battery charging application provided by Microsoft
 ms.assetid: eabac2ec-6e2f-448f-9793-117e12c288d9

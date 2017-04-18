@@ -2,7 +2,7 @@
 title: Resources for HID over USB
 author: windows-driver-content
 ms.assetid: 17BC5293-1D60-41BC-8A23-1F2FAF29C577
-description: 
+description: Additional references for HID over USB.
 ---
 
 # Resources for HID over USB

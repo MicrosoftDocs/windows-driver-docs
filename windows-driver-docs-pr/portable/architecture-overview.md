@@ -1,5 +1,5 @@
 ---
-Description: Architecture Overview
+Description: Architecture overview of WIndows Portable Devices
 title: Architecture Overview
 ---
 

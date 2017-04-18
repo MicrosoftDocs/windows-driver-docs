@@ -1,11 +1,10 @@
 ---
-title: GUIDType
-description: GUIDType
+title: GUIDType (ServiceInfo)
+description: GUIDType (ServiceInfo)
 ms.assetid: a08d4c7c-c282-4870-b836-6788ffa2d088
 ---
 
-# GUIDType
-
+# GUIDType (ServiceInfo)
 
 The GUIDType XML simple type specifies a GUID.
 
