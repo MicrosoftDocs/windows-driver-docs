@@ -1,11 +1,11 @@
 ---
 title: Overview of storage silo drivers
 author: windows-driver-content
-description: Overview
+description: Overview of storage silo drivers
 ms.assetid: e150228e-820f-49ac-bc3f-644e77f3d544
 ---
 
-# Overview
+# Overview of storage silo drivers
 
 
 This topic describes the underlying design and architecture of the storage silo driver system components, which enable the following sequence of events:
