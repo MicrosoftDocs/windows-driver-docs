@@ -1,11 +1,11 @@
 ---
-title: Architecture and overview for HID over USB
+title: Architecture of HID over USB transport
 author: windows-driver-content
-description: This section describes the driver stack for devices that support HID over the USB transport.
+description: This section describes the driver stack for devices that support HID over USB transport.
 ms.assetid: D0D87B86-AD36-442A-9D36-571D12A360D4
 ---
 
-# Architecture and overview for HID over USB
+# Architecture and overview
 
 
 This section describes the driver stack for devices that support HID over the USB transport.
