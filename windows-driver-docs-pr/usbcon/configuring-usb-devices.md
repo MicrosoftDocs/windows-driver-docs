@@ -1,6 +1,7 @@
 ---
 Description: The topics in this section describe how a client driver must configure their device.
 title: Selecting a USB configuration in USB drivers
+author: windows-driver-content
 ---
 
 # Selecting a USB configuration in USB drivers
@@ -61,22 +62,12 @@ Certain restrictions apply if a client driver is using WDF objects or whether th
 -   A class driver frequently lacks support for multiple configurations. If your device implements a class that is defined by a USB class specification, see the [USB Technology](http://go.microsoft.com/fwlink/p/?linkid=8769) website for information about device classes and class specifications. Microsoft provides class drivers for the supported USB device classes. For more information, see [Drivers for the Supported USB Device Classes](supported-usb-classes.md).
 
 ## Related topics
+[USB Driver Development Guide](usb-driver-development-guide.md)  
+[USB Configuration Descriptors](usb-configuration-descriptors.md)  
+[Working with USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff553101)  
+[Working with USB Interfaces in UMDF](https://msdn.microsoft.com/library/windows/hardware/ff561478)  
 
-
-[USB Driver Development Guide](usb-driver-development-guide.md)
-
-[USB Configuration Descriptors](usb-configuration-descriptors.md)
-
-[Working with USB Devices](https://msdn.microsoft.com/library/windows/hardware/ff553101)
-
-[Working with USB Interfaces in UMDF](https://msdn.microsoft.com/library/windows/hardware/ff561478)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Selecting%20a%20USB%20configuration%20in%20USB%20drivers%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

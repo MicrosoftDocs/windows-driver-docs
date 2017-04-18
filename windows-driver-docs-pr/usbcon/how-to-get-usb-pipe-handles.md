@@ -1,6 +1,7 @@
 ---
 Description: This topic provides an overview of USB pipes and describes the steps required by a USB client driver to obtain pipe handles from the USB driver stack.
 title: How to enumerate USB pipes
+author: windows-driver-content
 ---
 
 # How to enumerate USB pipes
@@ -697,9 +698,15 @@ HRESULT  CMyDevice::CreateUsbIoTargets()
 
 ```
 
+<<<<<<< HEAD
+In UMDF, the client driver uses a pipe index to send data transfer requests. A pipe index is a number assigned by the USB driver stack when it opens pipes for the endpoints in a setting. To obtain the pipe index, call the [**IWDFUsbTargetPipe::GetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff560403) method. The method populates a [**WINUSB_PIPE_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540285) structure. The **PipeId** value indicates the pipe index.
+
+One way of performing read and write operations on the target pipe is to call [**IWDFUsbInterface::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560337) to obtaining a WinUSB handle and then call [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb). For example, the driver can call the [**WinUsb_ReadPipe**](https://msdn.microsoft.com/library/windows/hardware/ff540297) or [**WinUsb_WritePipe**](https://msdn.microsoft.com/library/windows/hardware/ff540322) function. In those function calls, the driver must specify the pipe index. For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+=======
 In UMDF, the client driver uses a pipe index to send data transfer requests. A pipe index is a number assigned by the USB driver stack when it opens pipes for the endpoints in a setting. To obtain the pipe index, call the[**IWDFUsbTargetPipe::GetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff560403) method. The method populates a [**WINUSB\_PIPE\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff540285) structure. The **PipeId** value indicates the pipe index.
 
 One way of performing read and write operations on the target pipe is to call [**IWDFUsbInterface::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560337) to obtaining a WinUSB handle and then call [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb). For example, the driver can call the [**WinUsb\_ReadPipe**](https://msdn.microsoft.com/library/windows/hardware/ff540297) or [**WinUsb\_WritePipe**](https://msdn.microsoft.com/library/windows/hardware/ff540322) function. In those function calls, the driver must specify the pipe index. For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+>>>>>>> master
 
 Remarks
 -------
@@ -719,22 +726,12 @@ The client driver then submits the URB to the USB driver stack. The USB driver s
 The URB contains information about the request such as the target pipe handle, transfer buffer, and its length. Each structure within the [**URB**](https://msdn.microsoft.com/library/windows/hardware/ff538923) union shares certain members: **TransferFlags**, **TransferBuffer**, **TransferBufferLength**, and **TransferBufferMDL**. There are type-specific flags in the **TransferFlags** member that correspond to each URB type. For all data transfer URBs, the USBD\_TRANSFER\_DIRECTION\_IN flag in **TransferFlags** specifies the direction of the transfer. Client drivers set the USBD\_TRANSFER\_DIRECTION\_IN flag to read data from the device. Drivers clear this flag to send data to the device. Data may be read from or written to either a buffer resident in memory or an MDL. In either case, the driver specifies the size of the buffer in the **TransferBufferLength** member. The driver provides a resident buffer in the **TransferBuffer** member and an MDL in the **TransferBufferMDL** member. Whichever one the driver provides, the other must be NULL.
 
 ## Related topics
+[USB I/O Transfers](usb-device-i-o.md)  
+[How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md)  
+[How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md)  
+[Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md)  
 
-
-[USB I/O Transfers](usb-device-i-o.md)
-
-[How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md)
-
-[How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md)
-
-[Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20How%20to%20enumerate%20USB%20pipes%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 
