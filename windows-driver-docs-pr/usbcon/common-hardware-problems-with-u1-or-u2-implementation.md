@@ -22,7 +22,7 @@ LPM can significantly save power and lead to longer battery life. Therefore, it 
 
 -   **Incorrect deferred packet implementation**
 
-    As described in [Packet Deferring](hardware-transitions.md#packet-def), after a device has sent ERDY, the device must keep the link in U0 until the host sends a response to ERDY or **tERDYTimeout** occurs. Some devices fail to send ERDY after getting a deferred packet notification. This can lead to a problematic situation where a transfer never completes.
+    As described in [Packet Deferring](u1-and-u2-transitions.md#packet-deferring), after a device has sent ERDY, the device must keep the link in U0 until the host sends a response to ERDY or **tERDYTimeout** occurs. Some devices fail to send ERDY after getting a deferred packet notification. This can lead to a problematic situation where a transfer never completes.
 
 -   **Failure to send Ping.LPFS in U1**
 
@@ -49,7 +49,7 @@ LPM can significantly save power and lead to longer battery life. Therefore, it 
 
 -   **Incorrect implementation of deferred packet**
 
-    As described in [Packet Deferring](hardware-transitions.md#packet-def), hubs are responsible for sending the deferred bit packet header back to the host that must process the packet, similar to a NRDY notification from the device. Some hubs fail to send the deferred packet to the host or the device. Some hosts do not correctly process the deferred bit packet or re-send the transfer when the device ultimately sends ERDY. This leads to transfer failures and unreliable behavior.
+    As described in [Packet Deferring](u1-and-u2-transitions.md#packet-deferring), hubs are responsible for sending the deferred bit packet header back to the host that must process the packet, similar to a NRDY notification from the device. Some hubs fail to send the deferred packet to the host or the device. Some hosts do not correctly process the deferred bit packet or re-send the transfer when the device ultimately sends ERDY. This leads to transfer failures and unreliable behavior.
 
 -   **Not sending upstream port to U2 when no device connected**
 

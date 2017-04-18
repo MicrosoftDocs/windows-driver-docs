@@ -29,7 +29,7 @@ For U1 or U2 transitions to occur, software performs the following steps during 
 
      
 
-3.  If the PORT\_U2\_TIMEOUT value is between 01H-FEH, there is an additional step that occurs in the hardware as a result of step 2. The DS port informs its link partner about that value. The importance of this step is described in [Direct Transition from U1 to U2](hardware-transitions.md#u1tou2) in Hardware Transitions.
+3.  If the PORT\_U2\_TIMEOUT value is between 01H-FEH, there is an additional step that occurs in the hardware as a result of step 2. The DS port informs its link partner about that value. The importance of this step is described in "Direct Transition from U1 to U2".
 4.  For every device or hub, the software configures two values: U1\_ENABLE and U2\_ENABLE by sending SET\_FEATURE (U1\_ENABLE/U2\_ENABLE) control transfers. The following table describes those values.
 
     **Table 2. U1\_ENABLE and U2\_ENABLE values**
@@ -63,9 +63,9 @@ If a link is in U1 or U2, a DS port can bring the port back into U0 anytime it r
 ### Device (US port)-initiated transitions
 
 
-A device can choose to initiate a transition from U0 to U1 or U0 to U2, as long as the capability is enabled by the software. If the device transitions a link to U1, the link can transition to U2 directly based on the U2 timer of the DS port (described in [Direct Transition from U1 to U2](#u1tou2)). However, if the U2 timer is not set, the device cannot initiate a direct transition from U1 to U2 on its own. In that case, the device must bring the link back to U0 before initiating the transition to U2.
+A device can choose to initiate a transition from U0 to U1 or U0 to U2, as long as the capability is enabled by the software. If the device transitions a link to U1, the link can transition to U2 directly based on the U2 timer of the DS port (described in "Direct Transition from U1 to U2". However, if the U2 timer is not set, the device cannot initiate a direct transition from U1 to U2 on its own. In that case, the device must bring the link back to U0 before initiating the transition to U2.
 
-While deciding when to initiate those transitions, a device should consider its exit latencies and performance requirements. To help the device make informed decisions about how aggressively it can initiate the transitions, software also provides various exit latency values as described earlier in this document in [Initial setup by software](initial-setup-by-software.md).
+While deciding when to initiate those transitions, a device should consider its exit latencies and performance requirements. To help the device make informed decisions about how aggressively it can initiate the transitions, software also provides various exit latency values as described earlier in this document in "Initial setup by software".
 
 If the link is in U1 or U2, a US port can bring the port back into U0 at any time. Typically, the US port initiates the transition to U0 when it knows that it is about to send any packets to the host or if it is anticipating a packet from the host.
 
@@ -83,7 +83,7 @@ For example, the device has sent a NRDY notification on one of its endpoints and
 
 If the link is in U1, it is possible that the link can directly transition to U2 without entering U0 in between. That can occur regardless of which link partner initiated the transition to U1. However, the U1 to U2 transition can occur only if the U2 timeout on the DS port of the link is set to a value between 01H-FEH.
 
-The [Initial setup by software](initial-setup-by-software.md) section describes an additional step that allows the DS port to communicate the timeout value to its link partner. After the link has entered U1, both link partners start a timer using the timeout value set according to the U2 timeout value of the DS port. If the timer is not reset due to traffic and expires, both link partners silently transition to U2 without any explicit communication between them.
+The "Initial setup by software" section describes an additional step that allows the DS port to communicate the timeout value to its link partner. After the link has entered U1, both link partners start a timer using the timeout value set according to the U2 timeout value of the DS port. If the timer is not reset due to traffic and expires, both link partners silently transition to U2 without any explicit communication between them.
 
 ### Transitions from U1 or U2 to U3
 
@@ -104,7 +104,7 @@ If there is no device attached to a DS port, the port’s state is Rx.Detect, wh
 
  
 
-## <a href="" id="packet-def"></a>Packet deferring
+## Packet deferring
 
 
 The USB 3.0 specification describes a mechanism known as packet deferring (see section C.1.2.2). The mechanism is used to minimize the effect of LPM on bus utilization.

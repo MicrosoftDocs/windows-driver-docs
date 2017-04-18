@@ -24,7 +24,7 @@ For the client driver, the steps for sending a function to suspend state and wak
 3.  Submit a request to arm its function for remote wake-up by sending a wait-wake I/O request packet (IRP).
 4.  Transition the function to a low power state by sending **Dx** power IRPs (**D2** or **D3**).
 
-For more information about the preceding steps, see [Sending a USB Idle Request IRP](sending-a-usb-idle-request-irp.md) in the [USB Selective Suspend](usb-selective-suspend.md) section.
+For more information about the preceding steps, see "Sending a USB Idle Request IRP" in [USB Selective Suspend](usb-selective-suspend.md).
 A composite driver creates a physical device object (PDO) for each function in the composite device and handles power requests sent by the client driver (the FDO of the function device stack). In order for a client driver to successfully enter and exit suspend state for its function, the composite driver must support function suspend and remote wake-up features, and process the received power requests.
 
 In Windows 8, the USB driver stack for USB 3.0 devices supports those features. In addition, function suspend and function remote wake-up implementation has been added to the Microsoft-provided [USB generic parent driver](usb-common-class-generic-parent-driver.md) (Usbccgp.sys), which is the Windows default composite driver. If you are writing a custom composite driver, your driver must handle requests related to function suspend and remote wake-up requests, as per the following procedure.

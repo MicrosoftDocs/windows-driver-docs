@@ -36,7 +36,7 @@ For interrupt endpoints, the descriptor exposes these properties. Those values a
 
 -   How much data can be transmitted in each service interval?
 
-    Get the number of bytes that can transmitted by getting the maximum packet size supported by the endpoint descriptor (see [UsbInterruptOutEndpointDescriptor.MaxPacketSize](delimiting-usb-data-transfers-with-packets-smaller-than-wmaxpacketsize.md) or UsbInterruptInEndpointDescriptor.MaxPacketSize. The maximum packet size constrained on the speed of the device. For low-speed devices up to 8 bytes. For full-speed devices, up to 64 bytes. For high-speed, high-bandwidth devices, the app can send or receive more than maximum packet size up to 3072 bytes per microframe.
+    Get the number of bytes that can transmitted by getting the maximum packet size supported by the endpoint descriptor (see UsbInterruptOutEndpointDescriptor.MaxPacketSize or UsbInterruptInEndpointDescriptor.MaxPacketSize. The maximum packet size constrained on the speed of the device. For low-speed devices up to 8 bytes. For full-speed devices, up to 64 bytes. For high-speed, high-bandwidth devices, the app can send or receive more than maximum packet size up to 3072 bytes per microframe.
 
     **Note**  Interrupt endpoints on SuperSpeed devices are capable of transmitting even more number of bytes. That value is indicated by the **wBytesPerInterval** of the USB\_SUPERSPEED\_ENDPOINT\_COMPANION\_DESCRIPTOR. To retrieve the descriptor, get the descriptor buffer by using the [**UsbEndpointDescriptor.AsByte**](https://msdn.microsoft.com/library/windows/apps/dn263827) property and then parse that buffer by using [**DataReader**](https://msdn.microsoft.com/library/windows/apps/br208119) methods.
 

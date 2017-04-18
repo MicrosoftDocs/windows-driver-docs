@@ -15,7 +15,7 @@ USB device power states (as specified in section 9.1 of the Universal Serial Bus
 -   Powered: The device is in one of the fully powered states: Default, Address, or Configured.
 -   Suspended: The device is the Idle state and operating on low power.
 
-There is no direct correlation between the device power states defined in the WDM power model and the device power states defined in the USB standard. For example, the terms *suspended* and *idle* have very specific meanings in the USB specification; however these terms are often used differently in the WDM power model. Windows client drivers can put a USB device in the Suspended state. For more information, see [USB Selective Suspend](usb-selective-suspend.md). When a client driver is ready to suspend its device, it instructs the bus driver to idle it. For a discussion of idle requests, see [Sending a USB Idle Request IRP](sending-a-usb-idle-request-irp.md).
+There is no direct correlation between the device power states defined in the WDM power model and the device power states defined in the USB standard. For example, the terms *suspended* and *idle* have very specific meanings in the USB specification; however these terms are often used differently in the WDM power model. Windows client drivers can put a USB device in the Suspended state. For more information, see [USB Selective Suspend](usb-selective-suspend.md). When a client driver is ready to suspend its device, it instructs the bus driver to idle it. For a discussion of idle requests, see [USB Selective Suspend](usb-selective-suspend.md).
 
 Device power states in the WDM model can be summarized as follows:
 

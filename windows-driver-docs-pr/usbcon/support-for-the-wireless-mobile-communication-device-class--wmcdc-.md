@@ -41,15 +41,10 @@ HKR,,EnumeratorClass, 0x00000001,02,00,00
 
 The value that you must assign to **EnumeratorClass** is constructed from three 1-byte binary values that are represented in the INF file by pairs of hexadecimal digits: 02, 00, and 00. These three numbers correspond to the values that the USB Implementers Forum has assigned to the CDC device class, CDC device subclass and CDC device protocol, respectively.
 
-For more information about how to configure the registry to correctly enumerate your WMCDC device, see [Enumerating Interface Collections on WMCDC](enumerating-interface-collections-on-wireless-mobile-communication-dev.md).
+For more information about how to configure the registry to correctly enumerate your WMCDC device, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
 
 The following topics further describe the WMCDC:
 
-[Enumerating Interface Collections on WMCDC](enumerating-interface-collections-on-wireless-mobile-communication-dev.md)
-
-[Handling CDC and WMCDC Interface Collections](handling-cdc-and-wmcdc-interface-collections.md)
-
-[CDC and WMCDC Control Models](cdc-and-wmcdc-control-models.md)
 
 ## Related topics
 [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)  

@@ -121,7 +121,7 @@ In Windows 8.1 and earlier versions, Usbser.sys is not automatically loaded. To
 
 Starting with Windows Vista, you can enable CDC and Wireless Mobile CDC (WMCDC) support by setting a registry value, as described in [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
 
-When CDC support is enabled, the [USB Common Class Generic Parent Driver](usb-common-class-generic-parent-driver.md) enumerates interface collections that correspond to [CDC and WMCDC Control Models](cdc-and-wmcdc-control-models.md), and assigns physical device objects (PDO) to these collections.
+When CDC support is enabled, the [USB Common Class Generic Parent Driver](usb-common-class-generic-parent-driver.md) enumerates interface collections that correspond to CDC and WMCDC Control Models, and assigns physical device objects (PDO) to these collections.
 
 **Net**
 
