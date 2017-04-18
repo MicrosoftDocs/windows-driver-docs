@@ -1,6 +1,7 @@
 ---
 Description: Describes the various tasks that a function controller client driver performs while interacting with USB function controller extension (UFX).
 title: Writing a function controller client driver
+author: windows-driver-content
 ---
 
 # Writing a function controller client driver
@@ -32,7 +33,7 @@ UFX calls all client driver's callback functions asynchronously, and one callbac
 ## Initialization
 
 
-1.  The function controller client driver starts the initialization process when Windows Driver Foundation (WDF) invokes the client driver's implementation of the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback. In that implementation, the client driver is expected to call [**UfxFdoInit**](https://msdn.microsoft.com/library/windows/hardware/mt187970) and then create the device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
+1.  The function controller client driver starts the initialization process when Windows Driver Foundation (WDF) invokes the client driver's implementation of the [**EVT_WDF_DRIVER_DEVICE_ADD**](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback. In that implementation, the client driver is expected to call [**UfxFdoInit**](https://msdn.microsoft.com/library/windows/hardware/mt187970) and then create the device object by calling [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926).
 2.  The client driver calls [**UfxDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/mt187951) to create the USB device object and retrieve the UFXDEVICE handle.
 3.  The client driver calls [**UfxDeviceNotifyHardwareReady**](https://msdn.microsoft.com/library/windows/hardware/mt187958) to indicate to UFX that it can now invoke client driver's callback functions.
 4.  UFX performs initialization tasks such as:
@@ -149,20 +150,11 @@ In a Working state, UFX may call any callback. While not in the Working state, U
 Device suspend occurs when there is no traffic on the bus for 3 milliseconds. In this case, the client driver must inform UFX when it detects suspend and resume by calling [**UfxDeviceNotifySuspend**](https://msdn.microsoft.com/library/windows/hardware/mt187961) and [**UfxDeviceNotifyResume**](https://msdn.microsoft.com/library/windows/hardware/mt187960). On receiving those calls, UFX calls [*EVT\_UFX\_DEVICE\_USB\_STATE\_CHANGE*](https://msdn.microsoft.com/library/windows/hardware/mt187863) and notifies class drivers by completing [**IOCTL\_INTERNAL\_USBFN\_BUS\_EVENT\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/mt187892) requests. If remote wake is supported by the device and enabled by the host, UFX may call calls *EVT\_UFX\_DEVICE\_USB\_STATE\_CHANGE* while suspended to issue a remote wake signal.
 
 ## Related topics
+[USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)  
+[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)  
+[UFX objects and handles used by a USB function client driver](ufx-objects-and-handles-used-by-a-usb-function-controller.md)  
 
-
-[USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md)
-
-[Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md)
-
-[UFX objects and handles used by a USB function client driver](ufx-objects-and-handles-used-by-a-usb-function-controller.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Writing%20a%20function%20controller%20client%20driver%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

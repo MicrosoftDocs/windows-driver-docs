@@ -1,6 +1,7 @@
 ---
 Description: The MUTT software package contains several tools to be used with MUTT devices. The suite of tools include firmware upgrade application, driver installation package, and applications that send transfers to the device.
 title: Tools in the MUTT software package
+author: windows-driver-content
 ---
 
 # Tools in the MUTT software package
@@ -131,18 +132,10 @@ Changes for version 1.9
  
 
 ## Related topics
+[USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
 
-
-[USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)
-
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Tools%20in%20the%20MUTT%20software%20package%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

@@ -1,15 +1,13 @@
 ---
-title: AV/C Kernel-Streaming Interface and Kernel-Streaming Proxy Plug-ins
+title: AV/C kernel interface and streaming proxy plug-ins
 author: windows-driver-content
-description: AV/C Kernel-Streaming Interface and Kernel-Streaming Proxy Plug-ins
+description: AV/C kernel-streaming interface and kernel-streaming proxy plug-ins
 ms.assetid: 0831d917-5afc-4c0c-832a-c2b2669b8c22
 keywords: ["kernel-streaming interface WDK AV/C", "kernel-streaming proxy plug-ins WDK AV/C", "AV/C WDK , kernel-streaming proxy plug-ins", "AV/C WDK , kernel-streaming interface", "proxy plug-ins WDK AV/C", "Kernel Streaming Proxy WDK AVStream", "KS proxy WDK AVStream"]
 ---
 
-# AV/C Kernel-Streaming Interface and Kernel-Streaming Proxy Plug-ins
+# AV/C kernel-streaming interface and kernel-streaming proxy plug-ins
 
-
-## <a href="" id="ddk-kernel-streaming-architectures-and-ks-proxy-plug-ins-ksg"></a>
 
 
 Vendors should write peer and/or virtual subunit drivers as WDM drivers that use either the Stream class interface (Kernel Streaming 1.0, which is implemented in the file *Stream.sys*) or the AVStream interface (Kernel Streaming 2.0, which is implemented in the file *Ks.sys*). AVStream is the preferred interface because the stream class interface is obsolete and Microsoft has discontinued any further development on it.
@@ -24,7 +22,6 @@ A general way to directly access the property and event sets remains available. 
 
  
 
- 
 
 
 --------------------

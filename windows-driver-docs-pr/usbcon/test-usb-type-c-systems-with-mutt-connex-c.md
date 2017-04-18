@@ -1,14 +1,14 @@
 ---
-Description: The USB Type-C Connection Exerciser (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.
-title: 'Test USB Type-C systems with USB Type-C ConnEx
+Description: 'The MUTT Connection Exerciser Type-C (MUTT ConnEx-C) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.'
+title: 'Test USB Type-C systems with MUTT ConnEx-C'
 ---
 
-# Test USB Type-C systems with USB Type-C ConnEx
+# Test USB Type-C systems with MUTT ConnEx-C
 
 
 **Summary**
 
--   Automated testing by using USB Type-C ConnEx
+-   Automated testing by using MUTT ConnEx-C
 -   USB Type-C interoperability test procedures in Windows 10: functional testing (FT) and stress testing (ST).
 -   Diagnostic procedures and tips to confirm scenarios, such as device addition and removal.
 
@@ -27,7 +27,7 @@ title: 'Test USB Type-C systems with USB Type-C ConnEx
 
 \[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.\]
 
-The USB Type-C Connection Exerciser (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.
+The MUTT Connection Exerciser Type-C (MUTT ConnEx-C) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.
 
 This topic provides guidelines to automate the testing of systems, devices, docks with USB Type-C connectors and their interoperability with the Windows operating system. You can test hardware that belong to one of the following categories:
 
@@ -38,7 +38,7 @@ This topic provides guidelines to automate the testing of systems, devices, dock
 ## Hardware requirements
 
 
-To perform the USB Type-C interoperability test procedures by using USB Type-C ConnEx, you need:
+To perform the USB Type-C interoperability test procedures by using MUTT ConnEx-C, you need:
 
 -   **System under test (SUT)**
 
@@ -54,11 +54,11 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
     For information about compatible adapters for the Arduino Mega 2560 R3 board, [see this site](http://go.microsoft.com/fwlink/p/?LinkID=733660).
 
--   ** USB Type-C ConnEx **
+-   **MUTT ConnEx-C**
 
     The shield has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The shield also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The shield monitors amperage and voltage being drawn from the SUT. You can buy this board from [MCCI](http://go.microsoft.com/fwlink/p/?LinkId=733488) or [JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287).
 
-    ![USB Type-C ConnEx](images/connexc-top.png)
+    ![mutt connex-c](images/connexc-top.png)
 
 -   **USB A-to-B cable**
 
@@ -74,7 +74,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
 -   **Proxy controller**
 
-    The USB Type-C ConnEx can be controlled by using a proxy for running the tests. The proxy controller can be one of these entities:
+    The MUTT ConnEx-C can be controlled by using a proxy for running the tests. The proxy controller can be one of these entities:
 
     -   Secondary desktop PC or a laptop.
 
@@ -101,7 +101,7 @@ Make sure you meet these requirements:
 -   Your SUT must have the version of the Windows operating system with which you want to test interoperability.
 -   The proxy controller must be running Windows 10.
 -   [![download the mutt software package](images/download.png)](http://go.microsoft.com/fwlink/p/?LinkId=786621) and install the latest MUTT software package on the proxy controller.
--   The package is a suite of tools used to run tests with USB Type-C ConnEx.
+-   The package is a suite of tools used to run tests with MUTT ConnEx-C .
 
     It includes utilities to update the firmware, switch between the peripheral ports, and send requests to simulate test cases. It also contains test driver packages that test the functionality of the buses, its controller, and devices connected to the bus.
 
@@ -109,13 +109,13 @@ Make sure you meet these requirements:
 
     To open an elevated command window, the user must be a member of the **Administrators** group on the proxy controller. To open an elevated Command Prompt window, create a desktop shortcut to Cmd.exe, right-click the Cmd.exe shortcut, and select **Run as administrator**.
 
-### USB Type-C ConnEx tools
+### MUTT ConnEx-C tools
 
-Here are the tools in MUTT software package that are specific to USB Type-C ConnEx
+Here are the tools in MUTT software package that are specific to MUTT ConnEx-C
 
 | Tool                          | Description                                                                                          |
 |-------------------------------|------------------------------------------------------------------------------------------------------|
-| [ConnExUtil.exe](#connexutil) | Command line tool for exercising USB Type-C ConnEx features.                                             |
+| [ConnExUtil.exe](#connexutil) | Command line tool for exercising MUTT ConnEx-C features.                                             |
 | [CxLoop.cmd](#cxloop)         | Connects and disconnects each port once.                                                             |
 | [CxStress.cmd](#cxstress)     | Randomized stress script.                                                                            |
 | [CxPower.cmd](#cxpower)       | Captures power data (voltage and amperage) over a period of time and sends the output to a CSV file. |
@@ -129,15 +129,15 @@ For information about all other tools, see [Tools in the MUTT software package](
 
 Follow this procedure to set up your test environment.
 
-![USB Type-C ConnEx configuration](images/connexc.png)
+![mutt connex-c configuration](images/connexc.png)
 
-The configuration should be similar to this image. Note that the USB Type-C port on the microcontroller provides control over USB Type-C ConnEx when connected to a PC.
+The configuration should be similar to this image. Note that the USB Type-C port on the microcontroller provides control over MUTT ConnEx-C when connected to a PC.
 
-In these steps, you will connect the hardware pieces, update the firmware on the microcontroller, and validate the installation. The DTMF shield provides control over USB Type-C ConnEx when connected to the audio port of a phone or tablet.
+In these steps, you will connect the hardware pieces, update the firmware on the microcontroller, and validate the installation. The DTMF shield provides control over MUTT ConnEx-C when connected to the audio port of a phone or tablet.
 
 1.  Connect the microcontroller to the USB Type-C shield.
 
-    If the USB Type-C ConnEx did not come assembled, then continue with step 1. If your USB Type-C ConnEx has been assembled, then proceed to step 2.
+    If the MUTT ConnEx-C did not come assembled, then continue with step 1. If your MUTT ConnEx-C has been assembled, then proceed to step 2.
 
     **Caution**  ![caution](images/caution.png) This step must be performed carefully because the pins bend easily.
 
@@ -145,25 +145,25 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
     1.  Align the pins of the USB Type-C shield with the receptors on the microcontroller by making sure that the boards are level to each other.
 
-        ![align pins of the USB Type-C ConnEx](images/connexc-align.png)
+        ![align pins of the mutt connex-c](images/connexc-align.png)
 
     2.  Gently press the two boards together. Be careful not to bend the pins on the shield.
 
-        ![assembling the USB Type-C ConnEx](images/connexc-connect.png)
+        ![assembling the mutt connex-c](images/connexc-connect.png)
 
         Your assembled unit should be similar to this image:
 
-        ![connected USB Type-C ConnEx board](images/connexc-connect1.png)
+        ![connected connex-c board](images/connexc-connect1.png)
 
-2.  Power the USB Type-C ConnEx from the attached microcontroller by using either the USB Type-B (connected to the proxy controller) or from an external power adapter. The LCD display is similar to this image:
+2.  Power the MUTT ConnEx-C from the attached microcontroller by using either the USB Type-B (connected to the proxy controller) or from an external power adapter. The LCD display is similar to this image:
 
     After five seconds, the LCD display shows the current and voltage.
 
-    ![ USB Type-C ConnEx before firmware boot](images/connexc-connect2.png)![ USB Type-C ConnEx before firmware boot](images/connexc-connect3.png)
+    ![mutt connex-c before firmware boot](images/connexc-connect2.png)![mutt connex-c before firmware boot](images/connexc-connect3.png)
 
     If you do not the see display as shown in the previous image, make sure your have assembled the unit correctly.
 
-3.  Update the microcontroller with the USB Type-C ConnEx firmware.
+3.  Update the microcontroller with the MUTT ConnEx-C firmware.
     -   Open an elevated Command Prompt window.
     -   Navigate to the location of the MUTT software package, such as C:\\Program Files (x86)\\USBTest\\*&lt;arch&gt;*.
     -   Run the following command:
@@ -180,7 +180,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
 5.  Attach the peripherals to the USB ports labeled **J2**, **J3**, **J4**, **J6**.
 
-    ![attach peripherals to the USB Type-C ConnEx](images/connexc-connect7.png)
+    ![attach peripherals to the mutt connex-c](images/connexc-connect7.png)
 
 6.  Attach the proxy controller to the microcontroller.
     -   If the proxy controller is a desktop PC or laptop, establish connection over USB. Connect the USB Type-B port on the microcontroller to a USB port on the proxy controller, as shown in the preceding image.
@@ -195,16 +195,16 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
             ![attaching system under test (sut) with dtmf](images/connexc-connect5.png)
 
-7.  Make sure USB Type-C ConnEx is recognized by Device Manager on the proxy controller.
+7.  Make sure MUTT ConnEx-C is recognized by Device Manager on the proxy controller.
     1.  Right-click the Start button in the task bar and select **Device Manager**.
     2.  Expand the **Ports (COM & LPT)** node and note the COM port that is used by the microcontroller. In this example, it is connected to COM 4.
 
-        ![ USB Type-C ConnEx in device manager](images/connexc-connect8.png)
+        ![mutt connex-c in device manager](images/connexc-connect8.png)
 
 ## <a href="" id="connexutil"></a>ConnExUtil.exe
 
 
-Here are the command line options that ConnExUtil.exe supports for controlling the USB Type-C ConnEx board.
+Here are the command line options that ConnExUtil.exe supports for controlling the MUTT ConnEx-C board.
 
 <table>
 <colgroup>
@@ -222,24 +222,24 @@ Here are the command line options that ConnExUtil.exe supports for controlling t
 <tbody>
 <tr class="odd">
 <td>Device Discovery
-<p>List all devices connected to USB Type-C ConnEx </p></td>
+<p>List all devices connected to MUTT ConnEx-C</p></td>
 <td><strong>/list</strong></td>
 <td>For USB connected devices, this option lists the device instance path. For audio connected devices it shows <strong>Audio</strong>.
 <p>To view audio devices, use this in combination with the <strong>/all</strong> parameter. Lists with 1-based index that can be used for input to the <strong>/#</strong> parameter.</p></td>
 </tr>
 <tr class="even">
 <td>Device Selection
-<p>Select all devices connected to USB Type-C ConnEx, including audio.</p></td>
+<p>Select all devices connected to MUTT ConnEx-C, including audio.</p></td>
 <td><strong>/all</strong></td>
 <td>Optional.
 <p>Without this parameter, the utility addresses USB connected devices. Use this parameter only if an audio connected device is in use. Audio discovery is time consuming and disabled by default.</p></td>
 </tr>
 <tr class="odd">
 <td>Device Selection
-<p>Select a specific device connected to USB Type-C ConnEx ‘n’.</p></td>
+<p>Select a specific device connected to MUTT ConnEx-C ‘n’.</p></td>
 <td><strong>/#</strong> <em>n</em></td>
 <td>(Optional)
-<p>Input <em>n</em> is a 1-based index of the available devices connected to USB Type-C ConnEx which can be viewed by using the <strong>/list</strong> parameter. Without this parameter, the default behavior is to run each command on all USB Type-C ConnEx boards.</p></td>
+<p>Input <em>n</em> is a 1-based index of the available devices connected to MUTT ConnEx-C which can be viewed by using the <strong>/list</strong> parameter. Without this parameter, the default behavior is to run each command on all MUTT ConnEx-C boards.</p></td>
 </tr>
 <tr class="even">
 <td>Device Command</td>
@@ -368,7 +368,7 @@ The command line parameter **C** causes the script to only switch between the US
 
 ### <a href="" id="cxpower"></a>Long running power measurement: CXPOWER.CMD
 
-Saves the amperage and voltage reported by the USB Type-C ConnEx to output file power.csv at 2 second intervals. The data is formatted as comma-separated variables as follows:
+Saves the amperage and voltage reported by the MUTT ConnEx-C to output file power.csv at 2 second intervals. The data is formatted as comma-separated variables as follows:
 
 *index***,***time***,***volts***,***amps*
 
@@ -385,7 +385,7 @@ After capture is complete, this data may be post processed into charts showing p
 
 The USB Type-C interoperability test procedures are divided into two sections: functional testing (FT) and stress testing (ST). Each test section describes the test case and identifies the category that applies to the test. The product must be tested against the entire applicable category. Certain test cases contain links to relevant hints and tips for additional information. This section is focused on USB Type-C functionality and experience. A USB Type-C solution may contains other USB components such as a USB hub or USB controller. Detailed testing of USB hubs and controllers is covered in both the USB-IF's [xHCI interoperability test procedures](http://go.microsoft.com/fwlink/p/?LinkId=623257) and the Windows Hardware Certification Kit.
 
-These test cases are based on the ConnExUtil commands and example scripts [Scripts for controlling the USB Type-C ConnEx board](#scripts). The test cases refer to the scripts. Customize the scripts as required for your test scenario.
+These test cases are based on the ConnExUtil commands and example scripts [Scripts for controlling the MUTT ConnEx-C board](#scripts). The test cases refer to the scripts. Customize the scripts as required for your test scenario.
 
 <a href="" id="device-enumeration"></a>[Device Enumeration](#ft1)  
 Confirms that core aspects of device enumeration are functional.
@@ -423,9 +423,9 @@ Confirms charging with USB Type-C.
  
 
 1.  Power off the SUT.
-2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3.  Connect the proxy controller to USB Type-C ConnEx.
-4.  Connect peripherals to USB Type-C ConnEx.
+2.  Connect the SUT to the port labeled as **J1** on MUTT ConnEx-C.
+3.  Connect the proxy controller to MUTT ConnEx-C.
+4.  Connect peripherals to MUTT ConnEx-C.
 5.  Power on the SUT and log on to Windows.
 6.  At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
 7.  Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
@@ -448,9 +448,9 @@ For configuration images related to step 2 -4, see [Get started...](#config).
  
 
 1.  Power off the SUT.
-2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3.  Connect the proxy controller to USB Type-C ConnEx.
-4.  Connect peripherals to USB Type-C ConnEx.
+2.  Connect the SUT to the port labeled as **J1** on MUTT ConnEx-C.
+3.  Connect the proxy controller to MUTT ConnEx-C.
+4.  Connect peripherals to MUTT ConnEx-C.
 5.  Power on the SUT and log on to Windows.
 6.  At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
 7.  Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
@@ -473,13 +473,13 @@ For configuration images related to step 2 -4, see [Get started...](#config).
  
 
 1.  Power off the SUT.
-2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3.  Connect the proxy controller to USB Type-C ConnEx.
-4.  Connect peripherals to USB Type-C ConnEx.
+2.  Connect the SUT to the port labeled as **J1** on MUTT ConnEx-C.
+3.  Connect the proxy controller to MUTT ConnEx-C.
+4.  Connect peripherals to MUTT ConnEx-C.
 5.  Power on the SUT and log on to Windows.
 6.  At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
 7.  Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
-8.  Connect USB Type-C ConnEx to port **J2**.
+8.  Connect MUTT ConnEx-C to port **J2**.
 
     **ConnExUtil.exe /setPort 2**
 
@@ -511,13 +511,13 @@ For configuration images related to step 2 -4, see [Get started...](#config).
  
 
 1.  Power off the SUT.
-2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3.  Connect the proxy controller to USB Type-C ConnEx.
-4.  Connect peripherals to USB Type-C ConnEx.
+2.  Connect the SUT to the port labeled as **J1** on MUTT ConnEx-C.
+3.  Connect the proxy controller to MUTT ConnEx-C.
+4.  Connect peripherals to MUTT ConnEx-C.
 5.  Power on the SUT and log on to Windows.
 6.  At an elevated Command prompt, run the CXLOOP.CMD script. When script pauses, confirm the newly activated peripheral is operational.
 7.  Reverse the orientation of USB Type-C cable and repeat step 5 - 7.
-8.  Connect USB Type-C ConnEx to port **J2**.
+8.  Connect MUTT ConnEx-C to port **J2**.
 
     Confirm role swap. The Amperage shown on the LCD screen indicates power roles. **+ve** if **J1** is the power sink; **-ve** if **J1** is the power source.
 
@@ -541,9 +541,9 @@ For configuration images related to step 2 -4, see [Get started...](#config).
  
 
 1.  Power off the SUT.
-2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3.  Connect the proxy controller to USB Type-C ConnEx.
-4.  Connect peripherals to USB Type-C ConnEx.
+2.  Connect the SUT to the port labeled as **J1** on MUTT ConnEx-C.
+3.  Connect the proxy controller to MUTT ConnEx-C.
+4.  Connect peripherals to MUTT ConnEx-C.
 5.  Power on the SUT and log on to Windows.
 6.  At an elevated Command prompt, run the CXSTRESS.CMD for 12 hours.
 
@@ -569,9 +569,9 @@ For configuration images related to step 2 -4, see [Get started...](#config).
  
 
 1.  Power off the SUT.
-2.  Connect the SUT to the port labeled as **J1** on USB Type-C ConnEx.
-3.  Connect the proxy controller to MUTT USB Type-C ConnEx.
-4.  Connect peripherals to USB Type-C ConnEx.
+2.  Connect the SUT to the port labeled as **J1** on MUTT ConnEx-C.
+3.  Connect the proxy controller to MUTT ConnEx-C.
+4.  Connect peripherals to MUTT ConnEx-C.
 5.  Power on the SUT and log on to Windows.
 6.  At an elevated Command prompt, run the CXSTRESS.CMD for 12 hours. .
 
@@ -610,7 +610,7 @@ The following stress tests can be adapted from the SuperMUTT test documentation 
 
 ### Confirming charging and power
 
-The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direction). Confirm that it matches expectations from power sources plugged in and actively enabled with the USB Type-C ConnEx.
+The onboard LCD on the MUTT ConnEx-C displays power (volts, amps, and direction). Confirm that it matches expectations from power sources plugged in and actively enabled with the MUTT ConnEx-C .
 
 ![confirming charging and power](images/connexc-connect9.png)
 
@@ -670,8 +670,9 @@ Provide these details:
 
  
 
-[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Test%20USB%20Type-C%20systems%20with%20MUTT%20ConnEx-C%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
+--------------------
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Test%20USB%20Type-C%20systems%20with%20MUTT%20ConnEx-C%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 
 
 

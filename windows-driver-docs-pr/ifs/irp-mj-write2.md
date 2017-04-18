@@ -1,61 +1,96 @@
 ---
-title: IRP\_MJ\_WRITE
+title: Checking the Oplock State of an IRP_MJ_WRITE operation
 author: windows-driver-content
-description: IRP\_MJ\_WRITE
+description: Checking the Oplock State of an IRP_MJ_WRITE operation
 ms.assetid: 04d09810-f157-4140-8bfb-c780a65cdf77
 ---
 
-# IRP\_MJ\_WRITE
+# Checking the Oplock State of an IRP_MJ_WRITE operation
 
 
 The following only applies when a *stream* is being written and the write is not a paging I/O.
 
-Request Type
-Conditions
-Level 1
-
-Batch
-
-Filter
-
-Read-Handle
-
-Read-Write
-
-Read-Write-Handle
-
-Broken on IRP\_MJ\_WRITE when:
-
--   The write operation occurs on a FILE\_OBJECT with a different oplock key from the FILE\_OBJECT which owns the oplock.
-
-If the oplock is broken:
-
--   Break to None.
-
--   For the Read-Handle request: Although acknowledgment of the break is required, the operation continues immediately (for example, without waiting for the acknowledgment).
-
--   For all other request types: An acknowledgment must be received before the operation continues.
-
-Read
-
-Broken on IRP\_MJ\_WRITE when:
-
--   The write operation occurs on a FILE\_OBJECT with a different oplock key from the FILE\_OBJECT which owns the oplock.
-
-If the oplock is broken:
-
--   Break to None.
-
--   No acknowledgment is required, the operation proceeds immediately.
-
-Level 2
-
--   Always break to None.
-
--   No acknowledgment is required, the operation proceeds immediately.
-
- 
-
+<table>
+<tr>
+<th>Request Type</th>
+<th>Conditions</th>
+</tr>
+<tr>
+<td rowspan="2">
+<p>Level 1</p>
+<p>Batch</p>
+<p>Filter</p>
+<p>Read-Handle</p>
+<p>Read-Write</p>
+<p>Read-Write-Handle</p>
+</td>
+<td>
+<p>Broken on IRP_MJ_WRITE when:</p>
+<ul>
+<li>
+<p> The write operation occurs on a FILE_OBJECT with a different oplock key from the FILE_OBJECT which owns the oplock.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>If the oplock is broken:</p>
+<ul>
+<li>
+<p> Break to None.</p>
+</li>
+<li>
+<p> For the Read-Handle request: Although acknowledgment of the break is required, the operation continues immediately (for example, without waiting for the acknowledgment).</p>
+</li>
+<li>
+<p> For all other request types: An acknowledgment must be received before the operation continues.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>Read</p>
+</td>
+<td>
+<p>Broken on IRP_MJ_WRITE when:</p>
+<ul>
+<li>
+<p> The write operation occurs on a FILE_OBJECT with a different oplock key from the FILE_OBJECT which owns the oplock.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>If the oplock is broken:</p>
+<ul>
+<li>
+<p> Break to None.</p>
+</li>
+<li>
+<p> No acknowledgment is required, the operation proceeds immediately.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>Level 2</p>
+</td>
+<td>
+<ul>
+<li>
+<p> Always break to None.</p>
+</li>
+<li>
+<p> No acknowledgment is required, the operation proceeds immediately.</p>
+</li>
+</ul>
+</td>
+</tr>
+</table>
  
 
  

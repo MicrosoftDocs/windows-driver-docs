@@ -35,6 +35,7 @@
 ## [Smartcard device drivers](smartcard/index.md)
 ## [SPB drivers](spb/index.md)
 ## [Storage device drivers](storage/index.md)
+## [Universal Serial Bus (USB)](usbcon/index.md)
 ## [Windows portable device drivers](portable/index.md)
 ## [Streaming media device drivers](stream/index.md)
 ## [Test Authoring and Execution Framework (TAEF)](taef/index.md)

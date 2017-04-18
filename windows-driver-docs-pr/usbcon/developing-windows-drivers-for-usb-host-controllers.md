@@ -1,6 +1,7 @@
 ---
 Description: Developing Windows drivers for USB host controllers
 title: Developing Windows drivers for USB host controllers
+author: windows-driver-content
 ---
 
 # Developing Windows drivers for USB host controllers
@@ -45,10 +46,10 @@ title: Developing Windows drivers for USB host controllers
 <p></p>
 <dl>
 <dt>Host controller object (UCXCONTROLLER)</dt>
-<dd><p>Represents the host controller that is created by the host controller driver. The driver must create only one host controller object per host controller instance. Typically created within the [<em>EvtDriverDeviceAdd</em>](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback by calling the [<strong>UcxControllerCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188033) method.</p>
+<dd><p>Represents the host controller that is created by the host controller driver. The driver must create only one host controller object per host controller instance. Typically created within the [**EVT_WDF_DRIVER_DEVICE_ADD**](https://msdn.microsoft.com/library/windows/hardware/ff541693)callback by calling the [<strong>UcxControllerCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188033) method.</p>
 </dd>
 <dt>Root hub object (UCXROOTHUB)</dt>
-<dd><p>Gets and controls the status of the root ports of the host controller. Created by the host controller driver typically within the [<em>EvtDriverDeviceAdd</em>](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback by calling the [<strong>UcxRootHubCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188048) method.</p>
+<dd><p>Gets and controls the status of the root ports of the host controller. Created by the host controller driver typically within the [**EVT_WDF_DRIVER_DEVICE_ADD**](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback by calling the [<strong>UcxRootHubCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188048) method.</p>
 </dd>
 <dt>USB device object (UCXUSBDEVICE)</dt>
 <dd><p>Represents a physical USB device connected to the bus. Created by the host controller driver typically within the [<em>EVT_UCX_CONTROLLER_USBDEVICE_ADD</em>](https://msdn.microsoft.com/library/windows/hardware/mt187823) callback by calling the [<strong>UcxUsbDeviceCreate</strong>](https://msdn.microsoft.com/library/windows/hardware/mt188052) method.</p>
@@ -78,17 +79,9 @@ title: Developing Windows drivers for USB host controllers
  
 
 ## Related topics
+[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
 
-
-****
-[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Developing%20Windows%20drivers%20for%20USB%20host%20controllers%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 
