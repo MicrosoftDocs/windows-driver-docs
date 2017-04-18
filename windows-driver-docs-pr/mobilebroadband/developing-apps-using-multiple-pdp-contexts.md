@@ -15,13 +15,13 @@ Here’s a figure that shows how multiple PDP context works in Windows 8.1 and 
 
 Use the following sections in this topic to learn more about multiple PDP contexts:
 
--   [Key scenarios](#bkmk-scenarios)
+-   [Key scenarios](#key-scenarios)
 
--   [Mobile broadband apps](#bkmk-apps)
+-   [Mobile broadband apps](#mobile-broadband-apps)
 
--   [Mobile broadband devices](#bkmk-devices)
+-   [Mobile broadband devices](#mobile-broadband-devices)
 
-## <span id="BKMK_Scenarios"></span><span id="bkmk_scenarios"></span><span id="BKMK_SCENARIOS"></span>Key scenarios
+## Key scenarios
 
 
 You can use multiple PDP contexts to enable premium services.
@@ -34,7 +34,7 @@ You can use multiple PDP contexts to enable premium services.
 
 -   **Personal Hotspot** – Some mobile operators charge different rates when the connection is being used as a personal hotspot. You can use multiple PDP contexts to differentiate between the two.
 
-## <span id="BKMK_Apps"></span><span id="bkmk_apps"></span><span id="BKMK_APPS"></span>Mobile broadband apps
+## Mobile broadband apps
 
 
 Windows Store mobile broadband apps can take advantage of multiple PDP contexts to activate a special PDP context and specify rules to route data traffic. These apps can create rules for specific destinations or for all data traffic.
@@ -568,7 +568,7 @@ Real-time communication apps, such as VoIP or chat apps, can receive a wake up t
 
 To enable this scenario, the mobile broadband device should support wake up filters on special PDP context, as stated in the [Mobile Broadband Interface Model (MBIM) specification](https://msdn.microsoft.com/library/windows/hardware/dn265427).
 
-## <span id="BKMK_Devices"></span><span id="bkmk_devices"></span><span id="BKMK_DEVICES"></span>Mobile broadband devices
+## Mobile broadband devices
 
 
 To support multiple PDP contexts, the firmware of the mobile broadband Device must support multiple PDP contexts, as defined in the [MBIM specification](https://go.microsoft.com/fwlink/?linkid=620028). It must also pass any Windows Hardware Certification Kit tests specific to multiple PDP contexts.
