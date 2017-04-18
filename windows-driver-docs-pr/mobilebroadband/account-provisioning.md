@@ -59,7 +59,7 @@ The provisioning metadata includes the following sections:
 
 -   [Activation](#activation)
 
--   [Mobile broadband information](#mobile-broadband-info)
+-   [Mobile broadband information](#mobile-broadband-information)
 
 -   [Wi-Fi information](#wi-fi-information)
 
@@ -73,7 +73,7 @@ The provisioning metadata includes the following sections:
 
 For more info about these sections, see [CarrierControlSchema schema](https://msdn.microsoft.com/library/windows/apps/hh868312).
 
-###Global
+### Global
 
 The global section is required in every provisioning file. Required elements in this section are as follows:
 
@@ -88,7 +88,7 @@ The global section is required in every provisioning file. Required elements in 
 
 -   [**SubscriberId**](https://msdn.microsoft.com/library/windows/apps/hh868305) A string that uniquely identifies the customer in your organization. If you are a mobile operator, this should be the IMSI or ICCID ranges for GSM operators or the provider ID or provider name for CDMA operators. If you are not a mobile operator, you can choose any sufficiently unique string.
 
-###Activation
+### Activation
 
 Device activation occurs after the activation process is complete on the back end. The PC might need to follow certain instructions before connecting to the network. The provisioning engine uses the activation instructions received in the device activation element. If no value is specified, then no client action is required. Available actions include:
 
@@ -98,7 +98,7 @@ Device activation occurs after the activation process is complete on the back en
 
 -   **Data** Data or instructions that you want to send to the device to activate the connection. The Provisioning Engine passes this data as is to the device. For CDMA, this can include instructions such as **\*228** to start an OTA Programming Session and reconnect to the network.
 
-###Mobile broadband information
+### Mobile broadband information
 
 Mobile broadband information contains several elements:
 
@@ -233,7 +233,7 @@ Because SMS messages influence Windows behavior, only trusted SMS messages can b
 
  
 
-###Wi-Fi information
+### Wi-Fi information
 
 This section lets you provide any number of Wi-Fi network profiles for Windows to use. The format of the section is similar to the XML schema that is used by the Windows native WLAN API.
 
@@ -399,7 +399,7 @@ This profile configures Windows to connect to an open network and use WISPr auth
 </WLANProfile>
 ```
 
-###Plan information
+### Plan information
 
 Each mobile broadband and hotspot profile references a plan. Multiple profiles can reference the same plan. Plans are described in a separate top-level section.
 
@@ -407,7 +407,7 @@ The Plan is divided into two sections—*Description* and *Usage*. This allows y
 
 This information is used to directly affect the behavior of Windows, and is provided to applications to tailor their behavior to the network. This information can be made available to third-party applications through network information APIs.
 
-###Description
+### Description
 
 The elements that generally change with low frequency over a customer’s subscription period, including:
 
@@ -431,7 +431,7 @@ The elements that generally change with low frequency over a customer’s subscr
 
 -   [**UserSMSEnabled**](https://msdn.microsoft.com/library/windows/apps/hh868376) Indicates whether the plan includes user-to-user SMS support. If true, Windows will keep the device attached to the network in Connected Standby even when the mobile broadband interface is not being used. If false, Windows can power down the mobile broadband interface to conserve power, thereby resulting in the device not being addressable by the network when the computer is idle.
 
-###Usage
+### Usage
 
 The following elements can change with higher frequency:
 
@@ -441,7 +441,7 @@ The following elements can change with higher frequency:
 
 -   [**Congested**](https://msdn.microsoft.com/library/windows/apps/hh868449) A Boolean value that indicates whether a lower connection speed than usual is being imposed due to excessive usage. The Congested flag indicates that the network is currently experiencing (or expects to experience) heavy load, and lower-priority transfers should be deferred until another time, if possible. You can use this flag to indicate concepts such as peak hours, or to respond to an overloaded hotspot.
 
-###Refresh
+### Refresh
 
 You can push updated settings to the computer as required because of network changes or for technical support. Windows attempts periodic refreshes by using information that is provided by you or by the provisioning API. A refresh can be triggered by SMS notifications from the operator. To enable Refresh, you must provide the following information in the provisioning XML:
 
@@ -466,7 +466,7 @@ Alternatively, the mobile broadband app can provide a new provisioning file at a
     </RefreshParameters>
 ```
 
-###Signature
+### Signature
 
 Because provisioning modifies system settings that persist after the user has exited or uninstalled the app, a stricter measure of verification is required than for most APIs. This verification is provided by a combination of operator-specific hardware (the SIM), cryptographic signatures, and user confirmation.
 
@@ -519,7 +519,7 @@ Provisioning requirements:
 
  
 
-###Permitted combinations
+### Permitted combinations
 
 Although [**Global**](https://msdn.microsoft.com/library/windows/apps/hh868294) is the only first-level node that is required by the schema, certain combinations of other nodes are typical. This section discusses these typical combinations:
 
@@ -552,11 +552,11 @@ Here are some common scenarios that you may need as you create provisioning meta
 
 -   [Update data usage by using an SMS message](#update-data-usage-by-using-an-sms-message)
 
-###Find the account provisioning schema
+### Find the account provisioning schema
 
 XSD schemas are available under **%SYSTEMROOT%\\schemas\\provisioning** on any computer that is running Windows 8, Windows 8.1, or Windows 10.
 
-###Apply provisioning XML to the device
+### Apply provisioning XML to the device
 
 You can apply a provisioning XML file to a device by using a mobile broadband app, a Windows Store app, or from a web site.
 
@@ -586,7 +586,7 @@ From a web site:
 
 The operation completes and the results of the provisioning operation are returned.
 
-###Provision the device to connect automatically to a mobile broadband network
+### Provision the device to connect automatically to a mobile broadband network
 
 You can define a provisioning XML document by using an **MBNProfile** section.
 
@@ -619,7 +619,7 @@ The child elements of **DefaultProfile** are required. See the provisioning XML 
 
  
 
-###Provision the device to connect automatically to a Wi-Fi network
+### Provision the device to connect automatically to a Wi-Fi network
 
 You can define a provisioning XML document by using a **WlanProfiles** section.
 
@@ -654,7 +654,7 @@ You can define a provisioning XML document by using a **WlanProfiles** section.
 
 The child elements of **MSM** define how to connect to the network. This includes any necessary EAP configuration. All child elements elements of the MSM element in the [WLAN\_profile Schema](https://msdn.microsoft.com/library/windows/desktop/ms707341) are supported. See the provisioning XML schema reference for more details.
 
-###Provision the device to connect automatically to a WISPr-enabled hotspot
+### Provision the device to connect automatically to a WISPr-enabled hotspot
 
 You can use either of the following two ways to enable hotspot authentication:
 
@@ -731,7 +731,7 @@ You can use either of the following two ways to enable hotspot authentication:
 
 You should directly define credentials when possible. Redirecting to another app has power and complexity implications.
 
-###Sending activation to the mobile broadband device
+### Sending activation to the mobile broadband device
 
 An arbitrary binary large object (BLOB) that is contained inside the [**CarrierSpecificData**](https://msdn.microsoft.com/library/windows/apps/hh868447) element can be Base64-encoded and sent to the device by using the ProvisioningAgent. You can do this by using the **Activation&lt;ServiceActivatation&gt;** directive in the provisioning XML:
 
@@ -752,7 +752,7 @@ An arbitrary binary large object (BLOB) that is contained inside the [**CarrierS
 
 This method is equivalent to invoking the [**IMbnVendorSpecificOperation::SetVendorSpecific**](https://msdn.microsoft.com/library/windows/desktop/dd323208) method of the Mobile Broadband API, and passing a SAFEARRAY together with the BLOB contents.
 
-###Force the mobile broadband device to reconnect to the network after provisioning completes
+### Force the mobile broadband device to reconnect to the network after provisioning completes
 
 There are two ways you can force the mobile broadband device to reconnect to the network after provisioning: **ReregisterToNetwork** and **ReconnectToNetwork**.
 
@@ -789,7 +789,7 @@ If the radio is successfully cycled on in a **ReregisterToNetwork** but the auto
 </CarrierProvisioning>
 ```
 
-###Updating data usage statistics for a connection profile
+### Updating data usage statistics for a connection profile
 
 You can only update usage for profiles that were provisioned by using the [**ProvisioningAgent**](https://msdn.microsoft.com/library/windows/apps/br207397) by applying a new account provisioning file that has updated plan information. You can provide a provisioning file that contains only usage information, or only plan information. Depending on how much of the system configuration you want to change, the new provisioning file can include the following:
 
@@ -801,7 +801,7 @@ You can only update usage for profiles that were provisioned by using the [**Pro
 
 If you apply new profiles and reference plans that are not defined in the XML, the provisioning results include a warning.
 
-###Update data usage by using an SMS message
+### Update data usage by using an SMS message
 
 This is accomplished in one of the following ways:
 
