@@ -47,6 +47,8 @@ If this function returns an [NTSTATUS](https://msdn.microsoft.com/library/window
 Remarks
 -------
 
+To register an *EVT_NET_ADAPTER_SET_CAPABILITIES* callback function, the client driver must call [**NetAdapterCreate**](netadaptercreate.md).
+
 NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* after [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) but before [*EVT_WDF_DEVICE_D0_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/ff540848).
 
 NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* once per device arrival.
