@@ -2,12 +2,6 @@
 title: How the Application Creates the WIA Device
 author: windows-driver-content
 description: How the Application Creates the WIA Device
-MS-HAID:
-- 'WIA\_drv\_basic\_2d834d2b-0f93-43f5-abec-07bea02d9952.xml'
-- 'image.how\_the\_application\_creates\_the\_wia\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f4268c61-11e5-4796-b7cb-80c8112be4d8
 ---
 
@@ -57,7 +51,7 @@ HRESULT hr =
                       (IWiaMiniDrv *)this, // this WIA driver object
                        sizeof(MINIDRIVERITEMCONTEXT), // size of context
                        NULL, // context
-                       &amp;pIWiaDrvRootItem // created ROOT item
+                       &pIWiaDrvRootItem // created ROOT item
                       );                 // (IWiaDrvItem interface)
 
 if(S_OK == hr){
@@ -86,8 +80,8 @@ HRESULT hr =
                        bstrFullItemName,  // item full name ("0000\Root\Flatbed")
                       (IWiaMiniDrv *)this,  // this WIA driver object
      sizeof(MINIDRIVERITEMCONTEXT), // size of context
-                      (PBYTE)&amp;pItemContext, // context
-                      &amp;pIWiaDrvNewItem // created child item
+                      (PBYTE)&pItemContext, // context
+                      &pIWiaDrvNewItem // created child item
                      );                // (IWiaDrvItem interface)  
 
 if(S_OK == hr){
@@ -176,7 +170,7 @@ HRESULT _stdcall CWIADevice::drvInitializeWia(
                 (IWiaMiniDrv *)this,  // this WIA driver object
       sizeof(MINIDRIVERITEMCONTEXT),  // size of context
                                NULL,  // context
-                 &amp;pIWiaDrvRootItem);  // created ROOT item
+                 &pIWiaDrvRootItem);  // created ROOT item
                                       // (IWiaDrvItem interface)
   if (S_OK == hr) {
 
@@ -216,8 +210,8 @@ HRESULT _stdcall CWIADevice::drvInitializeWia(
                              trFullItemName,  // item full name ("0000\Root\Flatbed")
                         (IWiaMiniDrv *)this,  // this WIA driver object
                sizeof(MINIDRIVERITEMCONTEXT), // size of context
-                       (BYTE**)&amp;pItemContext, // context
-                        &amp;pIWiaDrvNewItem);    // created child item
+                       (BYTE**)&pItemContext, // context
+                        &pIWiaDrvNewItem);    // created child item
                                               // (IWiaDrvItem interface)
 
             if (S_OK == hr) {
@@ -261,7 +255,7 @@ HRESULT _stdcall CWIADevice::drvInitializeWia(
   //
 
   if(S_OK == hr){
-    InterlockedIncrement(&amp;m_lClientsConnected);
+    InterlockedIncrement(&m_lClientsConnected);
   }
 
   return hr;

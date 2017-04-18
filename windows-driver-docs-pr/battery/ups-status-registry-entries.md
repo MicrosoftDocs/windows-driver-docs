@@ -1,8 +1,7 @@
 ---
-title: UPS\\Status Registry Entries
-description: UPS\\Status Registry Entries
+title: UPS\Status Registry Entries
+description: UPS\Status Registry Entries
 ms.assetid: c24ef185-ba8d-4cfd-9d33-b70682905f00
-keywords: ["UPS minidrivers WDK , registry entries", "UPS\Status registry key", "status registry entries WDK UPS", "UPS registry entries WDK", "registry WDK UPS"]
 ---
 
 # UPS\\Status Registry Entries

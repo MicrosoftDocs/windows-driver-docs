@@ -2,12 +2,6 @@
 title: IStream Transfer Driver Example
 author: windows-driver-content
 description: IStream Transfer Driver Example
-MS-HAID:
-- 'WIA\_arch\_da400e7c-1648-49da-8b8e-a3ac391c1652.xml'
-- 'image.istream\_transfer\_driver\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb830522-f95e-4dd7-8c1b-de092a6c5a51
 ---
 
@@ -24,12 +18,12 @@ PMINIDRV_TRANSFER_CONTEXT pmdtc,
 LONG                      *plDevErrVal)
 {
    // Check what kind of data transfer is requested.
-   if (lFlags &amp; WIA_MINIDRV_TRANSFER_DOWNLOAD)
+   if (lFlags & WIA_MINIDRV_TRANSFER_DOWNLOAD)
    {
       // This transfer is a stream-based download.
       IWiaMiniDrvTransferCallback *pTransferCallback = NULL;
       hr = pmdtc->pIWiaMiniDrvCallBack->QueryInterface(IID_IWiaMiniDrvTransferCallback,
-             (void**) &amp;pIWiaMiniDrvTransferCallback);
+             (void**) &pIWiaMiniDrvTransferCallback);
       if (SUCCEEDED(hr))
       {
          IStream *pDestination = NULL;
@@ -37,13 +31,13 @@ LONG                      *plDevErrVal)
          hr = pTransferCallback->GetNextStream(0, 
                                                bstrItemName,
                                                bstrFullItemName,
-                                               &amp;pDestination);
+                                               &pDestination);
          if (hr == S_OK)
          {
             BYTE    *pBuffer = ...
             ULONG   ulBytesRead = 0;
             // Read the next chunk of data into the buffer.
-            while(GetNextDataBand(pBuffer, &amp;ulBytesRead))
+            while(GetNextDataBand(pBuffer, &ulBytesRead))
             {
                // Write the data to the destination stream.
                // The driver does not need to know what the

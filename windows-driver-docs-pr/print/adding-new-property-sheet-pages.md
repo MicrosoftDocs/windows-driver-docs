@@ -2,12 +2,6 @@
 title: Adding New Property Sheet Pages
 author: windows-driver-content
 description: Adding New Property Sheet Pages
-MS-HAID:
-- 'custdrvr\_c51e7a3e-c42e-4aa0-bac3-c901ca45999a.xml'
-- 'print.adding\_new\_property\_sheet\_pages'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ec4303e9-889c-41ee-8872-ddefdc906eb2
 keywords: ["user interface plug-ins WDK print , property sheet pages", "UI plug-ins WDK print , property sheet pages", "property sheet pages WDK print"]
 ---

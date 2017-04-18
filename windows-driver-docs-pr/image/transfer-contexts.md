@@ -2,12 +2,6 @@
 title: Transfer Contexts
 author: windows-driver-content
 description: Transfer Contexts
-MS-HAID:
-- 'WIA\_arch\_3bd54245-02f9-46b0-9ab6-9f4ca5aeb9cc.xml'
-- 'image.transfer\_contexts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b4eadccd-afb6-4cb5-bf52-704f64d45e40
 ---
 

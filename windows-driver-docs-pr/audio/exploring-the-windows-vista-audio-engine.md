@@ -84,7 +84,7 @@ The following table shows the sAPOs that are available in the Windows Vista audi
 
 When an audio application initiates audio processing, the audio engine configures the system-supplied APOs and the sAPOs into an audio graph to process the digital audio data. The mechanism the audio engine uses for building the audio graph is a system detail and will not be discussed.
 
-The audio application can initiate the connection in shared mode ore exclusive mode. Although a default set of sAPOs is installed with Windows Vista, sAPOs are not considered to be system components and are therefore customizable.
+The audio application can initiate the connection in shared mode or exclusive mode. Although a default set of sAPOs is installed with Windows Vista, sAPOs are not considered to be system components and are therefore customizable.
 
 ### <span id="shared_mode"></span><span id="SHARED_MODE"></span>Shared mode
 
@@ -97,7 +97,7 @@ In shared mode, an audio application shares the audio hardware with other audio 
         0,
         0,
  pWfx,
-        &amp;m_SubmixGuid);
+        &m_SubmixGuid);
 ```
 
 ### <span id="exclusive_mode"></span><span id="EXCLUSIVE_MODE"></span>Exclusive mode
@@ -111,7 +111,7 @@ In contrast, when an application opens a stream in exclusive mode, the applicati
             0,
             0,  
  pWfxEx,
-            &amp;m_SubmixGuid);
+            &m_SubmixGuid);
 ```
 
 After an application initiates audio processing, the graph builder configures the sAPOs into an audio graph and also initializes the sAPOs. The audio service then negotiates with the LFX sAPO to establish the format for the audio data at the input and output of the sAPO. For more information, see [Format Negotiation](format-negotiation.md).

@@ -2,12 +2,6 @@
 title: Spooler Notification Terminology
 author: windows-driver-content
 description: Spooler Notification Terminology
-MS-HAID:
-- 'splarch\_35264ae9-73a7-4504-b860-8b94ad803134.xml'
-- 'print.spooler\_notification\_terminology'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7d4888b1-cb5f-4095-9e1b-c330c04e4971
 keywords: ["spooler notification WDK print , terminology", "print spooler notification WDK , terminology"]
 ---

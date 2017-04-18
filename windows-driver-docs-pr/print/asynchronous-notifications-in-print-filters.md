@@ -2,12 +2,6 @@
 title: Asynchronous Notifications in Print Filters
 author: windows-driver-content
 description: Asynchronous Notifications in Print Filters
-MS-HAID:
-- 'xpsfiltpipe\_ca7d1578-a521-4498-941c-73032d7ddb89.xml'
-- 'print.asynchronous\_notifications\_in\_print\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 52b0790b-4927-4e1b-8ae5-6e2afc7c9df6
 keywords: ["render modules WDK XPSDrv , XPS filters", "XPS filters WDK XPSDrv", "filters WDK XPS", "asynchronous notifications WDK XPS"]
 ---
@@ -33,17 +27,17 @@ IPrintClassObjectFactory  *m_pPrintClassFactory;
 
 // The following code goes in the IntializeFilter method of the filter
 VARIANT var;
-VariantInit(&amp;var);
+VariantInit(&var);
 
 HRESULT hr = pIPropertyBag->GetProperty(
     XPS_FP_PRINT_CLASS_FACTORY, 
-    &amp;var);
+    &var);
 
 if (SUCCEEDED(hr))
 {
-    hr = V_UNKNOWN(&amp;var)->QueryInterface(
+    hr = V_UNKNOWN(&var)->QueryInterface(
  IID_IPrintClassObjectFactory,
- reinterpret_cast<void **>(&amp;m_pPrintClassFactory));
+ reinterpret_cast<void **>(&m_pPrintClassFactory));
 }
 ```
 
@@ -59,17 +53,17 @@ IPrintAsyncNotify  *pIAsyncNotify;
 HRESULT hr = m_pPrintClassFactory->GetPrintClassObject(
  m_bstrPrinter,      // The printer name that was read from the property bag
  IID_IPrintAsyncNotify,
- reinterpret_cast<void**>(&amp;pIAsyncNotify)));
+ reinterpret_cast<void**>(&pIAsyncNotify)));
 
 if (SUCCEEDED(hr))
 {
     hr = pIAsyncNotify->CreatePrintAsyncNotifyChannel(
  m_jobId,
- const_cast<GUID*>(&amp;MS_ASYNCNOTIFY_UI),
+ const_cast<GUID*>(&MS_ASYNCNOTIFY_UI),
  kPerUser,
  kUniDirectional,
         NULL,
-        &amp;pIAsyncNotifyChannel));
+        &pIAsyncNotifyChannel));
 
    // Etc.
 }
@@ -85,17 +79,17 @@ IPrintAsyncNotify *pIAsyncNotify;
 HRESULT hr = m_pPrintClassFactory->GetPrintClassObject(
  m_bstrPrinterName,   // The printer name that was read from the property bag
  IID_IPrintAsyncNotify,
- reinterpret_cast<void**>(&amp;pIAsyncNotify)));
+ reinterpret_cast<void**>(&pIAsyncNotify)));
 
 if (SUCCEEDED(hr))
 {
     hr = pIAsyncNotify->CreatePrintAsyncNotifyChannel(
  m_jobId,
- const_cast<GUID*>(&amp; SAMPLE_ASYNCNOTIFY_UI),
+ const_cast<GUID*>(& SAMPLE_ASYNCNOTIFY_UI),
  kPerUser,
  kBiDirectional,
  pIAsyncCallback,
-        &amp;pIAsyncNotifyChannel));
+        &pIAsyncNotifyChannel));
 
     // Etc.
 }
@@ -123,7 +117,7 @@ IPrintAsyncNotify  *pIAsyncNotify;
 HRESULT hr = m_pPrintClassFactory->GetPrintClassObject(
  m_bstrPrinterName,      // get it from the property bag
  IID_IPrintAsyncNotify,
- reinterpret_cast<void**>(&amp;pIAsyncNotify)));
+ reinterpret_cast<void**>(&pIAsyncNotify)));
 
 if (SUCCEEDED(hr))
 {

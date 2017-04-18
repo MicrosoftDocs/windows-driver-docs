@@ -2,12 +2,6 @@
 title: Selection Constraints
 author: windows-driver-content
 description: Selection Constraints
-MS-HAID:
-- 'nt5gpd\_6e4ef24f-e7f0-4a74-ad7d-1e7a6b609552.xml'
-- 'print.selection\_constraints'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9537e4c7-2cee-494d-b1ec-95d8c91a90e6
 keywords: ["selection constraints WDK Unidrv"]
 ---

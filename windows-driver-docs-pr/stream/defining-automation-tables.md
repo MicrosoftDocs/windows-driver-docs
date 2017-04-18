@@ -2,12 +2,6 @@
 title: Defining Automation Tables
 author: windows-driver-content
 description: Defining Automation Tables
-MS-HAID:
-- 'bdadg\_3433fda8-0ba7-412f-b8cf-4d12ac590386.xml'
-- 'stream.defining\_automation\_tables'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1c0dace6-b618-4705-bf5d-65457d14c072
 keywords: ["BDA minidrivers WDK AVStream , automation tables", "automation tables WDK AVStream"]
 ---
@@ -35,7 +29,7 @@ DEFINE_KSPROPERTY_SET_TABLE(FilterPropertySets)
 {
     DEFINE_KSPROPERTY_SET
     (
-        &amp;KSPROPSETID_BdaTopology,                   // Set
+        &KSPROPSETID_BdaTopology,                   // Set
         SIZEOF_ARRAY(FilterTopologyProperties),     // PropertiesCount
         FilterTopologyProperties,                   // PropertyItems
         0,                                          // FastIoCount
@@ -52,7 +46,7 @@ DEFINE_KSMETHOD_SET_TABLE(FilterMethodSets)
 {
     DEFINE_KSMETHOD_SET
     (
-        &amp;KSMETHODSETID_BdaChangeSync,               // Set
+        &KSMETHODSETID_BdaChangeSync,               // Set
         SIZEOF_ARRAY(BdaChangeSyncMethods),         // MethodsCount
         BdaChangeSyncMethods,                       // MethodItems
         0,                                          // FastIoCount
@@ -60,7 +54,7 @@ DEFINE_KSMETHOD_SET_TABLE(FilterMethodSets)
     ),
     DEFINE_KSMETHOD_SET
     (
-        &amp;KSMETHODSETID_BdaDeviceConfiguration,      // Set
+        &KSMETHODSETID_BdaDeviceConfiguration,      // Set
         SIZEOF_ARRAY(BdaDeviceConfigurationMethods),// MethodsCount
         BdaDeviceConfigurationMethods,              // MethodItems
         0,                                          // FastIoCount
@@ -93,7 +87,7 @@ DEFINE_KSPROPERTY_SET_TABLE(RFNodePropertySets)
 {
     DEFINE_KSPROPERTY_SET
     (
-        &amp;KSPROPSETID_BdaFrequencyFilter,            // Set
+        &KSPROPSETID_BdaFrequencyFilter,            // Set
         SIZEOF_ARRAY(RFNodeFrequencyProperties),    // PropertiesCount
         RFNodeFrequencyProperties,                  // PropertyItems
         0,                                          // FastIoCount

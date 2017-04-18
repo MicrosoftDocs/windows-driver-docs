@@ -2,12 +2,6 @@
 title: Overview of Partial Print Providers
 author: windows-driver-content
 description: Overview of Partial Print Providers
-MS-HAID:
-- 'provider\_0286205d-06db-4b7e-a3f4-10ecccbb57a6.xml'
-- 'print.overview\_of\_partial\_print\_providers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 622f99e3-d4a5-42f0-ab71-4d256e0ea02c
 keywords: ["print providers WDK , partial print providers", "network print providers WDK , partial print providers", "partial print providers WDK"]
 ---

@@ -2,12 +2,6 @@
 title: Multipage IStream Transfers
 author: windows-driver-content
 description: Multipage IStream Transfers
-MS-HAID:
-- 'WIA\_arch\_a8223ef0-4d17-4125-a5c6-7423791f11b7.xml'
-- 'image.multipage\_istream\_transfers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0d17cfa8-f200-4d87-a2cb-cfd8dbc24e1e
 ---
 

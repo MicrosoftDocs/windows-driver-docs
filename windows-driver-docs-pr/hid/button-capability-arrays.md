@@ -2,12 +2,6 @@
 title: Button Capability Arrays
 author: windows-driver-content
 description: Button Capability Arrays
-MS-HAID:
-- 'hidclass\_3354256b-3936-463a-a2eb-5ff268a8991b.xml'
-- 'hid.button\_capability\_arrays'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 139324e5-4d46-4d00-9f5a-fd0313fc109a
 keywords: ["button capability arrays WDK HID", "arrays WDK HID", "capabilities WDK HID collections", "button usages WDK HID"]
 ---

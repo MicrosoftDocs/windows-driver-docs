@@ -15,9 +15,7 @@ To support the direct OID request path, miniport drivers provide *MiniportXxx* f
 
 The *direct OID request interface* is similar to the standard OID request interface. For example, the [**NdisMDirectOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563582) and [*MiniportDirectOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559371) functions are similar to the [**NdisMOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563622) and [*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416) functions.
 
-**Note**  NDIS 6.1 supports specific OIDs for use with the direct OID request interface. OIDs that existed before NDIS 6.1 and some NDIS 6.1 OIDs are not supported. To determine if an OID can be used in the direct OIDs interface, see the OID reference page. For example, see the note in the [OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_ADD\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569812) OID.
-
- 
+**Note**  NDIS 6.1 supports specific OIDs for use with the direct OID request interface. OIDs that existed before NDIS 6.1 and some NDIS 6.1 OIDs are not supported. To determine if an OID can be used in the direct OIDs interface, see the OID reference page. 
 
 Miniport drivers must be able to handle direct OID requests that are not serialized. Unlike the standard OID request interface, NDIS does not serialize direct OID requests with other requests that are sent with the direct OID interface or with the standard OID request interface. Also, miniport drivers drivers must be able to handle direct OID requests at IRQL &lt;= DISPATCH\_LEVEL.
 

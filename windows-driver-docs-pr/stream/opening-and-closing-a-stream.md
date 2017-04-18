@@ -2,12 +2,6 @@
 title: Opening and Closing a Stream
 author: windows-driver-content
 description: Opening and Closing a Stream
-MS-HAID:
-- 'vidcapds\_92e4a8d7-c44e-44db-9c58-e64ee9908e4e.xml'
-- 'stream.opening\_and\_closing\_a\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a4895e99-ab2e-482e-b89f-04b01177ec03
 keywords: ["video capture WDK AVStream , opening streams", "capturing video WDK AVStream , opening streams", "video capture WDK AVStream , closing streams", "capturing video WDK AVStream , closing streams", "opening streams WDK AVStream", "closing streams WDK AVStream"]
 ---
@@ -24,7 +18,7 @@ int StreamNumber = pSrb->StreamObject->StreamNumber;
 PKS_DATAFORMAT_VIDEOINFOHEADER  pKSDataFormat = 
     (PKS_DATAFORMAT_VIDEOINFOHEADER) pSrb->CommandData.OpenFormat;
 PKS_VIDEOINFOHEADER pVideoInfoHdrRequested = 
-    &amp;pKSDataFormat->VideoInfoHeader;
+    &pKSDataFormat->VideoInfoHeader;
 ```
 
 Minidrivers should verify that they can support the requested stream format. In particular, the contents of the [**KS\_BITMAPINFOHEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567305) structure should be verified, along with cropping and scaling information specified by the **rcSource** and **rcTarget** members.
@@ -38,7 +32,7 @@ Special rules apply when the output buffer is a DirectDraw surface. In this case
 To determine the requested image width, use the following code example:
 
 ```
-if (IsRectEmpty(&amp;pVideoInfoHdrRequested->rcTarget) {
+if (IsRectEmpty(&pVideoInfoHdrRequested->rcTarget) {
     Width =  pVideoInfoHdrRequested->bmiHeader.biWidth;
     Height = pVideoInfoHdrRequested->bmiHeader.biHeight;
 } 

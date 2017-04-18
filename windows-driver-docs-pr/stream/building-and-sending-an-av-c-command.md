@@ -2,12 +2,6 @@
 title: Building and Sending an AV/C Command
 author: windows-driver-content
 description: Building and Sending an AV/C Command
-MS-HAID:
-- 'AVCguide\_4cb2b697-ea0a-4331-878e-03d721a5ec85.xml'
-- 'stream.building\_and\_sending\_an\_av\_c\_command'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0f5bb205-7ffe-4007-bb66-a77889af2eed
 keywords: ["Avc.sys function driver WDK , command building and sending", "command building WDK AV/C", "command sending WDK AV/C", "AV/C WDK , commands", "IRPs WDK AV/C", "I/O WDK AV/C"]
 ---

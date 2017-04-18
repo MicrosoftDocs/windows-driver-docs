@@ -2,12 +2,6 @@
 title: Unidrv and Pscript5 Helper Interfaces for Plug-ins
 author: windows-driver-content
 description: Unidrv and Pscript5 Helper Interfaces for Plug-ins
-MS-HAID:
-- 'drvarch\_9df0b216-9c45-47ae-bb7b-fdb052e74d54.xml'
-- 'print.unidrv\_and\_pscript5\_helper\_interfaces\_for\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 043a38f7-200c-4f1d-b937-4ddd6e2045dd
 keywords: ["IPrintCoreHelperPS", "IPrintCoreHelperUni", "IPrintCoreHelper", "helper interfaces WDK printer interface DLL"]
 ---

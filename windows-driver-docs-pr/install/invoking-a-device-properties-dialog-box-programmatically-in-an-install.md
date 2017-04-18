@@ -1,5 +1,5 @@
 ---
-title: Invoking a Device Properties Dialog Box Programmatically in an Installation Application
+title: Invoke Device Properties Dialog Box in an Installation Application
 description: Invoking a Device Properties Dialog Box Programmatically in an Installation Application
 ms.assetid: c573acac-581e-44f1-b46b-eceb1f3d5484
 keywords: ["device properties dialog box WDK device installations", "invoking device properties dialog box", "DeviceProperties_RunDLL WDK device installations", "programmatically invoke device properties dialog box WDK", "pDeviceProperties function pointer WDK", "machin"]
@@ -63,7 +63,7 @@ After obtaining a *pDeviceProperties* function pointer, you must supply a comput
 -   (Windows XP and later) An optional *machine-name-parameter* field is not supplied, which indicates, by default, that the computer is the local computer. A required *device-instance-ID-parameter* field supplies the device instance identifier "PCI\\VEN\_8086&DEV\_2445 &SUBSYS\_010E1028&REV\_12\\3&172E68DD&0&FD".
     ```
     if (pDeviceProperties){
-     pDeviceProperties(m_hWnd, NULL, _TEXT("/DeviceID PCI\\VEN_8086\&amp;DEV_2445\&amp;SUBSYS_010E1028\&amp;REV_12\\3\&amp;172E68DD\&amp;0\&amp;FD"), NULL);
+     pDeviceProperties(m_hWnd, NULL, _TEXT("/DeviceID PCI\\VEN_8086\&DEV_2445\&SUBSYS_010E1028\&REV_12\\3\&172E68DD\&0\&FD"), NULL);
     };
     ```
 

@@ -2,12 +2,6 @@
 title: Sample Code to Set Custom Properties
 author: windows-driver-content
 description: Sample Code to Set Custom Properties
-MS-HAID:
-- 'WIA\_drv\_basic\_7361e4e5-c017-41d5-854c-45dcaa937b7d.xml'
-- 'image.sample\_code\_to\_set\_custom\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 726315eb-de5c-47b6-a35b-524ec1c97d52
 ---
 
@@ -25,7 +19,7 @@ To set a custom property, your application or custom UI might have code that loo
     //
     //  Get the item&#39;s Property Storage
     //
-    hr = pMyItem->QueryInterface(IID_IWiaPropertyStorage, (void**)&amp;pItemPropertyStorage);
+    hr = pMyItem->QueryInterface(IID_IWiaPropertyStorage, (void**)&pItemPropertyStorage);
     if (SUCCEEDED(hr)) {
 
  
@@ -48,7 +42,7 @@ To set a custom property, your application or custom UI might have code that loo
   //
   //  Initialize the PropVariant.
   //
-  PropVariantInit(&amp;pvMyProperty);
+  PropVariantInit(&pvMyProperty);
  
   //
   //  Fill in the property value.
@@ -61,8 +55,8 @@ To set a custom property, your application or custom UI might have code that loo
   //  Write the property value.
   //
   hr = pItemPropertyStorage->WriteMultiple(1,
-                               &amp;psMyProperty,
-                               &amp;pvMyProperty,
+                               &psMyProperty,
+                               &pvMyProperty,
                                           0);
   //
   //  Etc.  

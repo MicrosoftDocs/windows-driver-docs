@@ -2,12 +2,6 @@
 title: Registry Entries for Still Image Devices
 author: windows-driver-content
 description: Registry Entries for Still Image Devices
-MS-HAID:
-- 'stillimg\_c847a9b1-c96d-43b8-ad9b-13dd6580d5e7.xml'
-- 'image.registry\_entries\_for\_still\_image\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cedc8afc-54c4-485e-989c-481fe30d899b
 ---
 

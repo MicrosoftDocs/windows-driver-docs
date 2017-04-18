@@ -2,9 +2,6 @@
 title: HID Transports Supported in Windows
 author: windows-driver-content
 description: Windows supports the following transports.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 03B66788-A930-4C18-A019-CA906634DC4C
 ---
 

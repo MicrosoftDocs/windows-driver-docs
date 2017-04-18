@@ -2,9 +2,6 @@
 title: Write a HID source driver by using Virtual HID Framework (VHF)
 author: windows-driver-content
 description: Learn about writing a HID source driver that reports HID data to the operating system.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 26964963-792F-4529-B4FC-110BF5C65B35
 ---
 
@@ -139,7 +136,7 @@ VHF invokes HID source driver-implemented event callback functions for these IOC
 
 For any other [HID Minidriver IOCTL](https://msdn.microsoft.com/library/windows/hardware/ff539926), VHF completes the request with STATUS\_NOT\_SUPPORTED.
 
-The virtual HID device is deleted by calling the [**VhfDelete**](https://msdn.microsoft.com/library/windows/hardware/dn925038). The [*EvtVhfCleanup*](https://msdn.microsoft.com/library/windows/hardware/dn897134) callback is required if the driver allocated resources for the virtual HID device. The driver must implement the *EvtVhfCleanup* function and specify a pointer to that function in the **EvtVhfCleanup** member of [**VHF\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/dn925044). *EvtVhfCleanup* is invoked before the **VhfDelete** call completes. For more information, see [Delete the virtual HID device](#delete).
+The virtual HID device is deleted by calling the [**VhfDelete**](https://msdn.microsoft.com/library/windows/hardware/dn925038). The [*EvtVhfCleanup*](https://msdn.microsoft.com/library/windows/hardware/dn897134) callback is required if the driver allocated resources for the virtual HID device. The driver must implement the *EvtVhfCleanup* function and specify a pointer to that function in the **EvtVhfCleanup** member of [**VHF\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/dn925044). *EvtVhfCleanup* is invoked before the **VhfDelete** call completes. For more information, see [Delete the virtual HID device](#delete-the-virtual-hid-device).
 
 **Note**  After an asynchronous operation completes, the driver must call [**VhfAsyncOperationComplete**](https://msdn.microsoft.com/library/windows/hardware/dn925060) to set the results of the operation. You can call the method from the event callback or at a later time after returning from the callback.
 
@@ -160,21 +157,21 @@ _Inout_ PWDFDEVICE_INIT DeviceInit
 
     PAGED_CODE();
 
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;deviceAttributes, DEVICE_CONTEXT);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&deviceAttributes, DEVICE_CONTEXT);
     deviceAttributes.EvtCleanupCallback = VhfSourceDeviceCleanup;
 
-    status = WdfDeviceCreate(&amp;DeviceInit, &amp;deviceAttributes, &amp;device);
+    status = WdfDeviceCreate(&DeviceInit, &deviceAttributes, &device);
 
     if (NT_SUCCESS(status)) 
     {
         deviceContext = DeviceGetContext(device);
 
-        VHF_CONFIG_INIT(&amp;vhfConfig,
+        VHF_CONFIG_INIT(&vhfConfig,
             WdfDeviceWdmGetDeviceObject(device),
             sizeof(VhfHeadSetReportDescriptor),
             VhfHeadSetReportDescriptor);
 
-        status = VhfCreate(&amp;vhfConfig, &amp;deviceContext->VhfHandle);
+        status = VhfCreate(&vhfConfig, &deviceContext->VhfHandle);
 
         if (!NT_SUCCESS(status)) {
             TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE, "VhfCreate failed %!STATUS!", status);
@@ -213,12 +210,12 @@ The HID source driver can submit input reports by implementing the buffering pol
         PDEVICE_CONTEXT deviceContext = (PDEVICE_CONTEXT)(Context);
 
         if (ButtonState == ButtonStateUp) {
-            deviceContext->VhfHidReport.ReportBuffer[0] &amp;= ~(0x01 << ButtonType);
+            deviceContext->VhfHidReport.ReportBuffer[0] &= ~(0x01 << ButtonType);
         } else {
             deviceContext->VhfHidReport.ReportBuffer[0] |=  (0x01 << ButtonType);
         }
 
-        status = VhfSubmitReadReport(deviceContext->VhfHandle, &amp;deviceContext->VhfHidReport);
+        status = VhfSubmitReadReport(deviceContext->VhfHandle, &deviceContext->VhfHidReport);
 
         if (!NT_SUCCESS(status)) {
             TraceEvents(TRACE_LEVEL_ERROR, TRACE_DEVICE,"VhfSubmitReadReport failed %!STATUS!", status);
@@ -226,7 +223,7 @@ The HID source driver can submit input reports by implementing the buffering pol
     }
     ```
 
-## <a href="" id="delete"></a>Delete the virtual HID device
+## Delete the virtual HID device
 
 
 Delete the virtual HID device by calling [**VhfDelete**](https://msdn.microsoft.com/library/windows/hardware/dn925038).

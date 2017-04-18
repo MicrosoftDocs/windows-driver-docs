@@ -2,12 +2,6 @@
 title: Example Simple Segmentation Filter
 author: windows-driver-content
 description: Example Simple Segmentation Filter
-MS-HAID:
-- 'WIA\_tree\_a5bd9bd7-cd4a-437e-8cac-5655b7420fe7.xml'
-- 'image.example\_\_simple\_segmentation\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c77fea4-61d9-4bec-8d8d-35436d00c1ed
 ---
 
@@ -46,7 +40,7 @@ SegFilter::DetectRegions(IN IStream  *pInputStream,
 
     LONG  lCreationFlags = COPY_PARENTS_PROPERTY_VALUES;
 
-    ReadPropertyGUID(pWiaItem2, WIA_IPA_FORMAT, &amp;formatGUID);
+    ReadPropertyGUID(pWiaItem2, WIA_IPA_FORMAT, &formatGUID);
 
     //
     // The algorithm that performs the actual region
@@ -54,11 +48,11 @@ SegFilter::DetectRegions(IN IStream  *pInputStream,
     //
     FindSubRegions(pInputStream,
                    formatGUID,
-                   &amp;pSubRegions,
-                   &amp;cRegionsFound);
+                   &pSubRegions,
+                   &cRegionsFound);
 
-    ReadPropertyLong(pWiaItem2, WIA_IPS_XPOS, &amp;parent_xpos);
-    ReadPropertyLong(pWiaItem2, WIA_IPS_YPOS, &amp;parent_ypos);
+    ReadPropertyLong(pWiaItem2, WIA_IPS_XPOS, &parent_xpos);
+    ReadPropertyLong(pWiaItem2, WIA_IPS_YPOS, &parent_ypos);
 
     //
     // For each subimage that was found, create
@@ -72,13 +66,13 @@ SegFilter::DetectRegions(IN IStream  *pInputStream,
         IWiaItem2  *pChildIWiaItem = NULL;
 
         GetNamesForChild(i,
-                         &amp;bstrChildName,
-                         &amp;bstrFullChildName);
+                         &bstrChildName,
+                         &bstrFullChildName);
 
         pWiaItem2->CreateChildItem(lItemFlags,
                                    lCreationFlags,
                                    bstrChildName,
-                                   &amp;pChildIWiaItem);
+                                   &pChildIWiaItem);
 
         WritePropertyLong(pChildWiaItem,
                           WIA_IPS_XPOS,

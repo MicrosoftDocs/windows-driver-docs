@@ -14,11 +14,11 @@ When a [device property page provider](types-of-device-property-page-providers.m
     ```
     SP_ADDPROPERTYPAGE_DATA AddPropertyPageData;
     :
-    ZeroMemory(&amp;AddPropertyPageData, sizeof(SP_ADDPROPERTYPAGE_DATA));
+    ZeroMemory(&AddPropertyPageData, sizeof(SP_ADDPROPERTYPAGE_DATA));
     AddPropertyPageData.ClassInstallHeader.cbSize = sizeof(SP_CLASSINSTALL_HEADER);
 
     if (SetupDiGetClassInstallParams(DeviceInfoSet, DeviceInfoData,
-         (PSP_CLASSINSTALL_HEADER)&amp;AddPropertyPageData,
+         (PSP_CLASSINSTALL_HEADER)&AddPropertyPageData,
          sizeof(SP_ADDPROPERTYPAGE_DATA), NULL )) {
     ...
     ```

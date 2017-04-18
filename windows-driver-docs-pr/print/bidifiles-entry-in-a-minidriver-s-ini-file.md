@@ -2,12 +2,6 @@
 title: BidiFiles Entry in a Minidriver's INI File
 author: windows-driver-content
 description: BidiFiles Entry in a Minidriver's INI File
-MS-HAID:
-- 'autocfg\_f0b0b793-2613-499c-8a39-74fe8ccf5173.xml'
-- 'print.bidifiles\_entry\_in\_a\_minidriver\_s\_ini\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 953a29d2-f778-410e-bc8a-a09e294f2473
 keywords: ["BidiFiles section", "INF files WDK print , bidi extension file information", "bidi extension files WDK printer autoconfig", "in-box autoconfiguration support WDK printer , bidi extension files"]
 ---
@@ -20,7 +14,7 @@ A printer minidriver communicates information about the bidi extension file to t
 The following sample shows the `BidiFiles` section of the INI file. The `BidiSPMFile` entry would be used for a standard TCP/IP port monitor, and the `BidiWSDFile` entry would be used for a Web Services for Devices (WSD) port monitor.
 
 ```
-# OEM Mapping &amp; Extension GDL files 
+# OEM Mapping & Extension GDL files 
 # 
 [BidiFiles]
 BidiSPMFile = BidiSPM_AcmeXXX.XML

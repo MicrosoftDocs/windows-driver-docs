@@ -2,12 +2,6 @@
 title: Comments and Ignored Blocks
 author: windows-driver-content
 description: Comments and Ignored Blocks
-MS-HAID:
-- 'nt5gpd\_87925af2-dd68-44ec-9595-a0a2176d88ce.xml'
-- 'print.comments\_and\_ignored\_blocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8b3a0195-b2c8-491d-abcd-bfaebefbc77d
 keywords: ["GPD file entries WDK Unidrv , ignored blocks", "ignored blocks WDK GPD files", "GPD file entries WDK Unidrv , comments", "comments WDK GPD files"]
 ---
@@ -32,9 +26,9 @@ The following are examples of valid comments:
 *Macros: HP4L
 {
     *% These macros define command prefixes for the paper size feature.
-    LetterCmdPrefix: "<1B>&amp;l2a8c1E<1B>*p0x0Y"  *% Prefix for letter option.
-    A4CmdPrefix: "<1B>&amp;l26a8c1E<1B>*p0x0Y"     *% Prefix for A4 option.
-    Env10CmdPrefix: "<1B>&amp;l81a8c1E<1B>*p0x0Y"  *% Prefix for Env10 option.
+    LetterCmdPrefix: "<1B>&l2a8c1E<1B>*p0x0Y"  *% Prefix for letter option.
+    A4CmdPrefix: "<1B>&l26a8c1E<1B>*p0x0Y"     *% Prefix for A4 option.
+    Env10CmdPrefix: "<1B>&l81a8c1E<1B>*p0x0Y"  *% Prefix for Env10 option.
 }
 ```
 
@@ -68,7 +62,7 @@ In the following example, the GPD parser ignores the GPD entries describing the 
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.7
-            *Cmd: "<1B>&amp;l0O"
+            *Cmd: "<1B>&l0O"
         }
     }
 *IgnoreBlock
@@ -79,7 +73,7 @@ In the following example, the GPD parser ignores the GPD entries describing the 
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.7
-            *Cmd: "<1B>&amp;l1O"
+            *Cmd: "<1B>&l1O"
         }
     }
 }

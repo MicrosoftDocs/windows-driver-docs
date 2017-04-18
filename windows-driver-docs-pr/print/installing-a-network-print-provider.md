@@ -2,12 +2,6 @@
 title: Installing a Network Print Provider
 author: windows-driver-content
 description: Installing a Network Print Provider
-MS-HAID:
-- 'provider\_ec0b4e3a-7ee8-4732-bf65-298700892c46.xml'
-- 'print.installing\_a\_network\_print\_provider'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 448101f8-cb26-4a6f-807d-f110978321da
 keywords: ["print providers WDK , installing", "network print providers WDK , installing", "installing print providers WDK"]
 ---

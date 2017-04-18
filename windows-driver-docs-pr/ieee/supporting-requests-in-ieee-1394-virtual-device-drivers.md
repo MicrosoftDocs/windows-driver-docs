@@ -2,12 +2,6 @@
 title: Supporting Requests in IEEE 1394 Virtual Device Drivers
 author: windows-driver-content
 description: Supporting Requests in IEEE 1394 Virtual Device Drivers
-MS-HAID:
-- '1394-configrom\_f6f4ff3f-80cc-4a84-a316-4aad16717c1f.xml'
-- 'IEEE.supporting\_requests\_in\_ieee\_1394\_virtual\_device\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 17e0c84b-29d9-461f-a5f6-7677ecb7fb6e
 keywords: ["emulation drivers WDK IEEE 1394 bus", "hardware emulation drivers WDK IEEE 1394 bus", "virtual devices WDK IEEE 1394 bus", "REQUEST_ASYNC_READ", "REQUEST_ASYNC_WRITE", "REQUEST_ASYNC_LOCK", "REQUEST_ALLOCATE_ADDRESS_RANGE", "REQUEST_GET_ADDR_FROM_DEVICE_OBJECT", "REQUEST_SET_DEVICE_XMIT_PROPERTIES"]
 ---

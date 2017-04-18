@@ -63,8 +63,8 @@ NTSTATUS
  status =
  FwpsCalloutRegister0(
  deviceObject,
-      &amp;Callout,
-      &amp;CalloutId
+      &Callout,
+      &CalloutId
       );
 
   ...

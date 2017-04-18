@@ -2,9 +2,6 @@
 title: Handling IOCTL\_SPB\_FULL\_DUPLEX Requests
 author: windows-driver-content
 description: Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B200461F-9F9C-43A7-BA78-0864FD58C64E
 ---
 
@@ -57,8 +54,8 @@ Typically, the SPB controller driver validates the parameter values in an **IOCT
 //
 
 SPB_REQUEST_PARAMETERS params;
-SPB_REQUEST_PARAMETERS_INIT(&amp;params);
-SpbRequestGetParameters(SpbRequest, &amp;params);
+SPB_REQUEST_PARAMETERS_INIT(&params);
+SpbRequestGetParameters(SpbRequest, &params);
 
 if (params.SequenceTransferCount != 2)
 {
@@ -83,20 +80,20 @@ SPB_TRANSFER_DESCRIPTOR readDescriptor;
 PMDL pWriteMdl;
 PMDL pReadMdl;
 
-SPB_TRANSFER_DESCRIPTOR_INIT(&amp;writeDescriptor);
-SPB_TRANSFER_DESCRIPTOR_INIT(&amp;readDescriptor);
+SPB_TRANSFER_DESCRIPTOR_INIT(&writeDescriptor);
+SPB_TRANSFER_DESCRIPTOR_INIT(&readDescriptor);
 
 SpbRequestGetTransferParameters(
     SpbRequest, 
     fullDuplexWriteIndex, 
-    &amp;writeDescriptor,
-    &amp;pWriteMdl);
+    &writeDescriptor,
+    &pWriteMdl);
 
 SpbRequestGetTransferParameters(
     SpbRequest, 
     fullDuplexReadIndex, 
-    &amp;readDescriptor,
-    &amp;pReadMdl);
+    &readDescriptor,
+    &pReadMdl);
     
 //
 // Validate the transfer direction of each descriptor.

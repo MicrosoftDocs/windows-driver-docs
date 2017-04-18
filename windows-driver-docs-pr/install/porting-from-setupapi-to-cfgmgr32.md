@@ -45,20 +45,20 @@ GetDevicePropertiesSetupapi(
         goto Exit;
     }
 
-    ZeroMemory(&amp;DeviceInfoData, sizeof(DeviceInfoData));
+    ZeroMemory(&DeviceInfoData, sizeof(DeviceInfoData));
     DeviceInfoData.cbSize = sizeof(DeviceInfoData);
 
     for (Index = 0;
          SetupDiEnumDeviceInfo(DeviceInfoSet,
                                Index,
-                               &amp;DeviceInfoData);
+                               &DeviceInfoData);
          Index++)
     {
         // Query a property on the device.  For example, the device description.
         if (!SetupDiGetDeviceProperty(DeviceInfoSet,
-                                      &amp;DeviceInfoData,
-                                      &amp;DEVPKEY_Device_DeviceDesc,
-                                      &amp;PropertyType,
+                                      &DeviceInfoData,
+                                      &DEVPKEY_Device_DeviceDesc,
+                                      &PropertyType,
                                       (PBYTE)DeviceDesc,
                                       sizeof(DeviceDesc),
                                       NULL,
@@ -108,7 +108,7 @@ GetDevicePropertiesCfgmgr32(
     ULONG PropertySize;
     DWORD Index = 0;
 
-    cr = CM_Get_Device_ID_List_Size(&amp;DeviceListLength,
+    cr = CM_Get_Device_ID_List_Size(&DeviceListLength,
                                     NULL,
                                     CM_GETIDLIST_FILTER_PRESENT);
 
@@ -143,7 +143,7 @@ GetDevicePropertiesCfgmgr32(
         // If the list of devices also includes non-present devices,
         // CM_LOCATE_DEVNODE_PHANTOM should be used in place of
         // CM_LOCATE_DEVNODE_NORMAL.
-        cr = CM_Locate_DevNode(&amp;Devinst,
+        cr = CM_Locate_DevNode(&Devinst,
                                CurrentDevice,
                                CM_LOCATE_DEVNODE_NORMAL);
 
@@ -155,10 +155,10 @@ GetDevicePropertiesCfgmgr32(
         // Query a property on the device.  For example, the device description.
         PropertySize = sizeof(DeviceDesc);
         cr = CM_Get_DevNode_Property(Devinst,
-                                     &amp;DEVPKEY_Device_DeviceDesc,
-                                     &amp;PropertyType,
+                                     &DEVPKEY_Device_DeviceDesc,
+                                     &PropertyType,
                                      (PBYTE)DeviceDesc,
-                                     &amp;PropertySize,
+                                     &PropertySize,
                                      0);
 
         if (cr != CR_SUCCESS)
@@ -207,7 +207,7 @@ GetInterfacesAndDevicePropertySetupapi(
     WCHAR DeviceDesc[2048];
     DEVPROPTYPE PropertyType;
 
-    DeviceInfoSet = SetupDiGetClassDevs(&amp;GUID_DEVINTERFACE_VOLUME,
+    DeviceInfoSet = SetupDiGetClassDevs(&GUID_DEVINTERFACE_VOLUME,
                                         NULL,
                                         NULL,
                                         DIGCF_DEVICEINTERFACE);
@@ -217,27 +217,27 @@ GetInterfacesAndDevicePropertySetupapi(
         goto Exit;
     }
 
-    ZeroMemory(&amp;DeviceInterfaceData, sizeof(DeviceInterfaceData));
+    ZeroMemory(&DeviceInterfaceData, sizeof(DeviceInterfaceData));
     DeviceInterfaceData.cbSize = sizeof(DeviceInterfaceData);
 
     for (Index = 0;
          SetupDiEnumDeviceInterfaces(DeviceInfoSet,
                                      NULL,
-                                     &amp;GUID_DEVINTERFACE_VOLUME,
+                                     &GUID_DEVINTERFACE_VOLUME,
                                      Index,
-                                     &amp;DeviceInterfaceData);
+                                     &DeviceInterfaceData);
          Index++)
     {
 
-        ZeroMemory(&amp;DeviceInfoData, sizeof(DeviceInfoData));
+        ZeroMemory(&DeviceInfoData, sizeof(DeviceInfoData));
         DeviceInfoData.cbSize = sizeof(DeviceInfoData);
 
         if ((!SetupDiGetDeviceInterfaceDetail(DeviceInfoSet,
-                                              &amp;DeviceInterfaceData,
+                                              &DeviceInterfaceData,
                                               NULL,
                                               0,
                                               NULL,
-                                              &amp;DeviceInfoData)) &amp;&amp;
+                                              &DeviceInfoData)) &&
             (GetLastError() != ERROR_INSUFFICIENT_BUFFER))
         {
             // The error can be retrieved with GetLastError();
@@ -246,9 +246,9 @@ GetInterfacesAndDevicePropertySetupapi(
 
         // Query a property on the device.  For example, the device description.
         if (!SetupDiGetDeviceProperty(DeviceInfoSet,
-                                      &amp;DeviceInfoData,
-                                      &amp;DEVPKEY_Device_DeviceDesc,
-                                      &amp;PropertyType,
+                                      &DeviceInfoData,
+                                      &DEVPKEY_Device_DeviceDesc,
+                                      &PropertyType,
                                       (PBYTE)DeviceDesc,
                                       sizeof(DeviceDesc),
                                       NULL,
@@ -299,8 +299,8 @@ GetInterfacesAndDevicePropertyCfgmgr32(
     ULONG PropertySize;
     DWORD Index = 0;
 
-    cr = CM_Get_Device_Interface_List_Size(&amp;DeviceInterfaceListLength,
-                                           (LPGUID)&amp;GUID_DEVINTERFACE_VOLUME,
+    cr = CM_Get_Device_Interface_List_Size(&DeviceInterfaceListLength,
+                                           (LPGUID)&GUID_DEVINTERFACE_VOLUME,
                                            NULL,
                                            CM_GET_DEVICE_INTERFACE_LIST_ALL_DEVICES);
 
@@ -318,7 +318,7 @@ GetInterfacesAndDevicePropertyCfgmgr32(
         goto Exit;
     }
 
-    cr = CM_Get_Device_Interface_List((LPGUID)&amp;GUID_DEVINTERFACE_VOLUME,
+    cr = CM_Get_Device_Interface_List((LPGUID)&GUID_DEVINTERFACE_VOLUME,
                                       NULL,
                                       DeviceInterfaceList,
                                       DeviceInterfaceListLength,
@@ -336,10 +336,10 @@ GetInterfacesAndDevicePropertyCfgmgr32(
 
         PropertySize = sizeof(CurrentDevice);
         cr = CM_Get_Device_Interface_Property(CurrentInterface,
-                                              &amp;DEVPKEY_Device_InstanceId,
-                                              &amp;PropertyType,
+                                              &DEVPKEY_Device_InstanceId,
+                                              &PropertyType,
                                               (PBYTE)CurrentDevice,
-                                              &amp;PropertySize,
+                                              &PropertySize,
                                               0);
 
         if (cr != CR_SUCCESS)
@@ -355,7 +355,7 @@ GetInterfacesAndDevicePropertyCfgmgr32(
         // Since the list of interfaces includes all interfaces, enabled or not, the
         // device that exposed that interface may currently be non-present, so
         // CM_LOCATE_DEVNODE_PHANTOM should be used.
-        cr = CM_Locate_DevNode(&amp;Devinst,
+        cr = CM_Locate_DevNode(&Devinst,
                                CurrentDevice,
                                CM_LOCATE_DEVNODE_PHANTOM);
 
@@ -367,10 +367,10 @@ GetInterfacesAndDevicePropertyCfgmgr32(
         // Query a property on the device.  For example, the device description.
         PropertySize = sizeof(DeviceDesc);
         cr = CM_Get_DevNode_Property(Devinst,
-                                     &amp;DEVPKEY_Device_DeviceDesc,
-                                     &amp;PropertyType,
+                                     &DEVPKEY_Device_DeviceDesc,
+                                     &PropertyType,
                                      (PBYTE)DeviceDesc,
-                                     &amp;PropertySize,
+                                     &PropertySize,
                                      0);
 
         if (cr != CR_SUCCESS)
@@ -422,14 +422,14 @@ GetDevicePropertySpecificDeviceSetupapi(
         goto Exit;
     }
 
-    ZeroMemory(&amp;DeviceInfoData, sizeof(DeviceInfoData));
+    ZeroMemory(&DeviceInfoData, sizeof(DeviceInfoData));
     DeviceInfoData.cbSize = sizeof(DeviceInfoData);
 
     if (!SetupDiOpenDeviceInfo(DeviceInfoSet,
                                MY_DEVICE,
                                NULL,
                                0,
-                               &amp;DeviceInfoData))
+                               &DeviceInfoData))
     {
         // The error can be retrieved with GetLastError();
         goto Exit;
@@ -437,9 +437,9 @@ GetDevicePropertySpecificDeviceSetupapi(
 
     // Query a property on the device.  For example, the device description.
     if (!SetupDiGetDeviceProperty(DeviceInfoSet,
-                                  &amp;DeviceInfoData,
-                                  &amp;DEVPKEY_Device_DeviceDesc,
-                                  &amp;PropertyType,
+                                  &DeviceInfoData,
+                                  &DEVPKEY_Device_DeviceDesc,
+                                  &PropertyType,
                                   (PBYTE)DeviceDesc,
                                   sizeof(DeviceDesc),
                                   NULL,
@@ -480,7 +480,7 @@ GetDevicePropertySpecificDeviceCfgmgr32(
 
     // If MY_DEVICE could be a non-present device, CM_LOCATE_DEVNODE_PHANTOM
     // should be used in place of CM_LOCATE_DEVNODE_NORMAL.
-    cr = CM_Locate_DevNode(&amp;Devinst,
+    cr = CM_Locate_DevNode(&Devinst,
                            MY_DEVICE,
                            CM_LOCATE_DEVNODE_NORMAL);
 
@@ -492,10 +492,10 @@ GetDevicePropertySpecificDeviceCfgmgr32(
     // Query a property on the device.  For example, the device description.
     PropertySize = sizeof(DeviceDesc);
     cr = CM_Get_DevNode_Property(Devinst,
-                                 &amp;DEVPKEY_Device_DeviceDesc,
-                                 &amp;PropertyType,
+                                 &DEVPKEY_Device_DeviceDesc,
+                                 &PropertyType,
                                  (PBYTE)DeviceDesc,
-                                 &amp;PropertySize,
+                                 &PropertySize,
                                  0);
 
     if (cr != CR_SUCCESS)
@@ -524,7 +524,7 @@ This example shows how to disable a device using CfgMgr32. To do this with Setup
  
 
 ```ManagedCPlusPlus
-    cr = CM_Locate_DevNode(&amp;devinst,
+    cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
  
@@ -545,7 +545,7 @@ This example shows how to disable a device using CfgMgr32. To do this with Setup
 This example shows how to enable a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF\_PROPERTYCHANGE**, specifying **DICS\_ENABLE**.
 
 ```ManagedCPlusPlus
-    cr = CM_Locate_DevNode(&amp;devinst,
+    cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
  
@@ -566,7 +566,7 @@ This example shows how to enable a device using CfgMgr32. To do this with SetupA
 This example shows how to restart a device using CfgMgr32. To do this with SetupApi, you would use [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) with *InstallFunction* of **DIF\_PROPERTYCHANGE**, specifying **DICS\_PROPCHANGE**.
 
 ```ManagedCPlusPlus
-    cr = CM_Locate_DevNode(&amp;devinst,
+    cr = CM_Locate_DevNode(&devinst,
                            (DEVINSTID_W)DeviceInstanceId,
                            CM_LOCATE_DEVNODE_NORMAL);
  

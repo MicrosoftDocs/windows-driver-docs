@@ -2,9 +2,6 @@
 title: Overview of SerCx2 I/O Transactions
 author: windows-driver-content
 description: SerCx2 handles a read or write request from a client by issuing one or more I/O transactions to the serial controller driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 04DDFE53-4855-4029-BE1E-9D184B02A998
 ---
 

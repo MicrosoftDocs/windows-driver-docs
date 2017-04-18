@@ -2,12 +2,6 @@
 title: Introduction to CPSUI
 author: windows-driver-content
 description: Introduction to CPSUI
-MS-HAID:
-- 'cpsui\_391e1c34-b039-45a9-8e9b-cad5006e5596.xml'
-- 'print.introduction\_to\_cpsui'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 737c2dbf-1ce6-4f83-af94-265c948f3128
 keywords: ["Common Property Sheet User Interface WDK print , about CPSUI", "CPSUI WDK print , about CPSUI", "property sheet pages WDK print , about CPSUI with printer drivers"]
 ---

@@ -2,12 +2,6 @@
 title: Enforcing a Secure Read For a HID Collection
 author: windows-driver-content
 description: Enforcing a Secure Read For a HID Collection
-MS-HAID:
-- 'hidclass\_a9928fc7-4365-4870-8f92-bda3bea0392f.xml'
-- 'hid.enforcing\_a\_secure\_read\_for\_a\_hid\_collection'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: be3c7d1b-195c-4b7f-a404-070b3b265333
 keywords: ["collections WDK HID , secure reads", "HID collections WDK , secure reads", "secure reads WDK HID", "trusted secure reads WDK HID"]
 ---

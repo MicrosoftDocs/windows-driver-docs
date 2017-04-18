@@ -2,12 +2,6 @@
 title: Initializing a BDA Minidriver
 author: windows-driver-content
 description: Initializing a BDA Minidriver
-MS-HAID:
-- 'bdadg\_6587a790-f8ed-4fd0-bec6-02d7f128dfd1.xml'
-- 'stream.initializing\_a\_bda\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4df2efc6-e666-48d5-9a7b-cbf724c027f0
 keywords: ["BDA minidrivers WDK AVStream , initializing", "initializing BDA minidrivers WDK AVStream"]
 ---
@@ -37,7 +31,7 @@ The following code snippet shows examples of an array of filter descriptors, a d
 //
 DEFINE_KSFILTER_DESCRIPTOR_TABLE(FilterDescriptors)
 {
-    &amp;TemplateTunerFilterDescriptor
+    &TemplateTunerFilterDescriptor
 };
 //
 //  Device Dispatch Table
@@ -80,7 +74,7 @@ const
 KSDEVICE_DESCRIPTOR
 DeviceDescriptor =
 {
-    &amp;DeviceDispatch,    // Dispatch
+    &DeviceDispatch,    // Dispatch
 #ifdef DYNAMIC_TOPOLOGY // network provider is present
     0,    // FilterDescriptorsCount
     NULL, // FilterDescriptors

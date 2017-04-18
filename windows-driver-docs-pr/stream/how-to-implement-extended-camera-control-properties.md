@@ -2,9 +2,6 @@
 title: How To Implement Extended Camera Control Properties
 author: windows-driver-content
 description: The camera driver should implement extended camera control properties as individual property sets \ 8212;that is, each property should be implemented as a single property set.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: BF5B2F1F-AC1D-4ED1-B1FC-64E8FA1218DA
 ---
 
@@ -60,21 +57,21 @@ DEFINE_KSPROPERTY_TABLE(SocSimFilterFlashPropertyItems)
 DEFINE_KSPROPERTY_SET_TABLE(SocSimFilterPropertySets)
 {
     DEFINE_KSPROPERTY_SET(
-        &amp;PROPSETID_VIDCAP_CAMERACONTROL_REGION_OF_INTEREST,
+        &PROPSETID_VIDCAP_CAMERACONTROL_REGION_OF_INTEREST,
         SIZEOF_ARRAY(SocSimFilterFocusPropertyItems),
         SocSimFilterFocusPropertyItems,
         0,
         NULL),
 
     DEFINE_KSPROPERTY_SET(
-        &amp;PROPSETID_VIDCAP_CAMERACONTROL_FLASH,
+        &PROPSETID_VIDCAP_CAMERACONTROL_FLASH,
         SIZEOF_ARRAY(SocSimFilterFlashPropertyItems),
         SocSimFilterFlashPropertyItems,
         0,
         NULL),
 
     DEFINE_KSPROPERTY_SET(
-        &amp;PROPSETID_VIDCAP_CAMERACONTROL_VIDEO_STABILIZATION,
+        &PROPSETID_VIDCAP_CAMERACONTROL_VIDEO_STABILIZATION,
         SIZEOF_ARRAY(SocSimFilterVideoStabPropertyItems),
         SocSimFilterVideoStabPropertyItems,
         0,
@@ -100,7 +97,7 @@ CCaptureFilter::FlashHandler(
     ULONG ulOutputBufferLength = pIrpStack->Parameters.DeviceIoControl.OutputBufferLength;
     ULONG InputBufferLength = pIrpStack->Parameters.DeviceIoControl.InputBufferLength;
 
-    if (Property->Flags &amp; KSPROPERTY_TYPE_SET)
+    if (Property->Flags & KSPROPERTY_TYPE_SET)
     {
         if (ulOutputBufferLength == 0)
         {
@@ -111,7 +108,7 @@ CCaptureFilter::FlashHandler(
         {
             Status = STATUS_BUFFER_TOO_SMALL;
         }
-        else if (pData &amp;&amp; ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_FLASH_S))
+        else if (pData && ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_FLASH_S))
         {
             PKSPROPERTY_CAMERACONTROL_FLASH_S pFlash = (PKSPROPERTY_CAMERACONTROL_FLASH_S)pData;
             pFilter->m_Flash = pFlash->Flash;
@@ -124,7 +121,7 @@ CCaptureFilter::FlashHandler(
             Status = STATUS_INVALID_PARAMETER;
         }
     }
-    else if (Property->Flags &amp; KSPROPERTY_TYPE_GET)
+    else if (Property->Flags & KSPROPERTY_TYPE_GET)
     {
         if (ulOutputBufferLength == 0)
         {
@@ -135,7 +132,7 @@ CCaptureFilter::FlashHandler(
         {
             Status = STATUS_BUFFER_TOO_SMALL;
         }
-        else if (pData &amp;&amp; ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_FLASH_S))
+        else if (pData && ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_FLASH_S))
         {
             PKSPROPERTY_CAMERACONTROL_FLASH_S pFlash = (PKSPROPERTY_CAMERACONTROL_FLASH_S)pData;
             pFlash->Flash = pFilter->m_Flash;
@@ -170,7 +167,7 @@ CCaptureFilter::VideoStabilizationModeHandler(
     ULONG ulOutputBufferLength = pIrpStack->Parameters.DeviceIoControl.OutputBufferLength;
     ULONG InputBufferLength = pIrpStack->Parameters.DeviceIoControl.InputBufferLength;
 
-    if (Property->Flags &amp; KSPROPERTY_TYPE_SET)
+    if (Property->Flags & KSPROPERTY_TYPE_SET)
     {
         if (ulOutputBufferLength == 0)
         {
@@ -181,7 +178,7 @@ CCaptureFilter::VideoStabilizationModeHandler(
         {
             Status = STATUS_BUFFER_TOO_SMALL;
         }
-        else if (pData &amp;&amp; ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S))
+        else if (pData && ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S))
         {
             PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S pVideoStab = (PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S)pData;
             pFilter->m_VideoStabMode = pVideoStab->VideoStabilizationMode;
@@ -194,7 +191,7 @@ CCaptureFilter::VideoStabilizationModeHandler(
             Status = STATUS_INVALID_PARAMETER;
         }
     }
-    else if (Property->Flags &amp; KSPROPERTY_TYPE_GET)
+    else if (Property->Flags & KSPROPERTY_TYPE_GET)
     {
         if (ulOutputBufferLength == 0)
         {
@@ -205,7 +202,7 @@ CCaptureFilter::VideoStabilizationModeHandler(
         {
             Status = STATUS_BUFFER_TOO_SMALL;
         }
-        else if (pData &amp;&amp; ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S))
+        else if (pData && ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S))
         {
             PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S pVideoStab = (PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S)pData;
             pVideoStab->VideoStabilizationMode = pFilter->m_VideoStabMode;
@@ -240,7 +237,7 @@ CCaptureFilter::FocusRectHandler(
     ULONG ulOutputBufferLength = pIrpStack->Parameters.DeviceIoControl.OutputBufferLength;
     ULONG InputBufferLength = pIrpStack->Parameters.DeviceIoControl.InputBufferLength;
 
-    if (Property->Flags &amp; KSPROPERTY_TYPE_SET)
+    if (Property->Flags & KSPROPERTY_TYPE_SET)
     {
         if (ulOutputBufferLength == 0)
         {
@@ -251,7 +248,7 @@ CCaptureFilter::FocusRectHandler(
         {
             Status = STATUS_BUFFER_TOO_SMALL;
         }
-        else if (pData &amp;&amp; ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S))
+        else if (pData && ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S))
         {
             PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S pFocusRect = (PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S)pData;
             pFilter->m_FocusRect.left = pFocusRect->FocusRect.left;
@@ -269,7 +266,7 @@ CCaptureFilter::FocusRectHandler(
             Status = STATUS_INVALID_PARAMETER;
         }
     }
-    else if (Property->Flags &amp; KSPROPERTY_TYPE_GET)
+    else if (Property->Flags & KSPROPERTY_TYPE_GET)
     {
         if (ulOutputBufferLength == 0)
         {
@@ -280,7 +277,7 @@ CCaptureFilter::FocusRectHandler(
         {
             Status = STATUS_BUFFER_TOO_SMALL;
         }
-        else if (pData &amp;&amp; ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S))
+        else if (pData && ulOutputBufferLength >= sizeof(KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S))
         {
             PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S pFocusRect = (PKSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_S)pData;
             pFocusRect->FocusRect.left = pFilter->m_FocusRect.left;

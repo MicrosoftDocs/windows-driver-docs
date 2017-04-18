@@ -2,12 +2,6 @@
 title: Group Parent
 author: windows-driver-content
 description: Group Parent
-MS-HAID:
-- 'cpsui\_6bda6a64-c9a1-4867-8d26-a375cf471641.xml'
-- 'print.group\_parent'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b4c40c15-df16-4af0-81c8-9e70d26ba598
 keywords: ["group parents WDK print", "Common Property Sheet User Interface WDK print , group parents", "CPSUI WDK print , group parents", "property sheet pages WDK print , group parents", "grouping property sheet pages"]
 ---

@@ -1,12 +1,6 @@
 ---
 title: Access Attribute Memory of a PCMCIA Device
 description: Access Attribute Memory of a PCMCIA Device
-MS-HAID:
-- 'pamch1\_6b66e55f-38b4-478d-b08b-c2b02402ca46.xml'
-- 'PCMCIA.access\_attribute\_memory\_of\_a\_pcmcia\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 270b8821-6322-4694-83eb-de319197dd6a
 keywords: ["PCMCIA WDK buses , attribute memory", "attribute memory WDK PCMCIA bus", "attribute memory WDK PCMCIA bus , about attribute memory"]
 ---

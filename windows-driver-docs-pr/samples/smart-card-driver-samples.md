@@ -2,9 +2,6 @@
 title: Smart card driver samples
 author: windows-driver-content
 description: The driver sample in this directory provides a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8AFF3553-B70D-4784-A309-2C741D86B362
 ---
 

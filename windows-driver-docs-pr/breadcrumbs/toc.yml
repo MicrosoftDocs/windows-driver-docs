@@ -24,12 +24,30 @@
       - name: ACPI
         tocHref: /windows/hardware/drivers/acpi/
         topicHref: /windows/hardware/drivers/acpi/index
+      - name: Audio
+        tocHref: /windows/hardware/drivers/audio/
+        topicHref: /windows/hardware/drivers/audio/index
       - name: Battery
         tocHref: /windows/hardware/drivers/battery/
         topicHref: /windows/hardware/drivers/battery/index
       - name: Biometric
         tocHref: /windows/hardware/drivers/biometric/
         topicHref: /windows/hardware/drivers/biometric/index
+      - name: Bluetooth
+        tocHref: /windows/hardware/drivers/bluetooth/
+        topicHref: /windows/hardware/drivers/bluetooth/index
+      - name: Dashboard
+        tocHref: /windows/hardware/drivers/dashboard/
+        topicHref: /windows/hardware/drivers/dashboard/index
+      - name: Device Apps
+        tocHref: /windows/hardware/drivers/devapps/
+        topicHref: /windows/hardware/drivers/devapps/index
+      - name: Display
+        tocHref: /windows/hardware/drivers/display/
+        topicHref: /windows/hardware/drivers/display/index
+      - name: Tools for Testing Drivers
+        tocHref: /windows/hardware/drivers/devtest/
+        topicHref: /windows/hardware/drivers/devtest/index
       - name: HID
         tocHref: /windows/hardware/drivers/hid/
         topicHref: /windows/hardware/drivers/hid/index
@@ -38,22 +56,34 @@
         topicHref: /windows/hardware/drivers/ieee/index
       - name: Image
         tocHref: /windows/hardware/drivers/image/
-        topicHref: /windows/hardware/drivers/image/index        
+        topicHref: /windows/hardware/drivers/image/index
       - name: Installable File Systems
         tocHref: /windows/hardware/drivers/ifs/
         topicHref: /windows/hardware/drivers/ifs/index
+      - name: Getting started with Windows drivers
+        tocHref: /windows/hardware/drivers/gettingstarted/
+        topicHref: /windows/hardware/drivers/gettingstarted/index
+      - name: GNSS
+        tocHref: /windows/hardware/drivers/gnss/
+        topicHref: /windows/hardware/drivers/gnss/index
       - name: GPIO
         tocHref: /windows/hardware/drivers/gpio/
         topicHref: /windows/hardware/drivers/gpio/index
+      - name: Mobile broadband
+        tocHref: /windows/hardware/drivers/mobilebroadband/
+        topicHref: /windows/hardware/drivers/mobilebroadband/index
       - name: Multifunction
         tocHref: /windows/hardware/drivers/multifunction/
-        topicHref: /windows/hardware/drivers/multifunction/index   
+        topicHref: /windows/hardware/drivers/multifunction/index
       - name: Network
         tocHref: /windows/hardware/drivers/network/
         topicHref: /windows/hardware/drivers/network/index
       - name: NFC
         tocHref: /windows/hardware/drivers/nfc/
         topicHref: /windows/hardware/drivers/nfc/index
+      - name: Partner Application Development
+        tocHref: /windows/hardware/drivers/partnerapps/
+        topicHref: /windows/hardware/drivers/partnerapps/index
       - name: PCI
         tocHref: /windows/hardware/drivers/pci/
         topicHref: /windows/hardware/drivers/pci/index
@@ -63,12 +93,18 @@
       - name: Powermeter
         tocHref: /windows/hardware/drivers/powermeter/
         topicHref: /windows/hardware/drivers/powermeter/index
+      - name: Point-of-service
+        tocHref: /windows/hardware/drivers/pos/
+        topicHref: /windows/hardware/drivers/pos/index
       - name: Print
         tocHref: /windows/hardware/drivers/print/
-        topicHref: /windows/hardware/drivers/print/index        
+        topicHref: /windows/hardware/drivers/print/index
       - name: SD
         tocHref: /windows/hardware/drivers/sd/
         topicHref: /windows/hardware/drivers/sd/index
+      - name: Sensors
+        tocHref: /windows/hardware/drivers/sensors/
+        topicHref: /windows/hardware/drivers/sensors/index        
       - name: SPB
         tocHref: /windows/hardware/drivers/spb/
         topicHref: /windows/hardware/drivers/spb/index
@@ -81,6 +117,9 @@
       - name: TAEF
         tocHref: /windows/hardware/drivers/taef
         topicHref: /windows/hardware/drivers/taef/index
+      - name: USBCON
+        tocHref: /windows/hardware/drivers/usbcon
+        topicHref: /windows/hardware/drivers/usbcon/index   
       - name: WDTF
         tocHref: /windows/hardware/drivers/wdtf/
         topicHref: /windows/hardware/drivers/wdtf/index
@@ -90,3 +129,6 @@
       - name: Windows driver samples
         tocHref: /windows/hardware/drivers/samples/
         topicHref: /windows/hardware/drivers/samples/index
+      - name: Windows portable devices
+        tocHref: /windows/hardware/drivers/portable/
+        topicHref: /windows/hardware/drivers/portable/index

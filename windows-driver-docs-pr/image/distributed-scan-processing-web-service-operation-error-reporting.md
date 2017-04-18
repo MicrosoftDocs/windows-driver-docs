@@ -2,12 +2,6 @@
 title: Distributed Scan Processing Web Service Operation Error Reporting
 author: windows-driver-content
 description: Distributed Scan Processing Web Service Operation Error Reporting
-MS-HAID:
-- 'dsm\_des\_arch\_63a002ab-1ff5-41a8-80c4-eca99cf3dc9f.xml'
-- 'image.distributed\_scan\_processing\_web\_service\_operation\_error\_reporting'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d0d8f543-466e-4270-99cd-624db44bd250
 ---
 

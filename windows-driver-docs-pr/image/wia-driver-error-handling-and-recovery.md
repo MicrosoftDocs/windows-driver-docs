@@ -2,12 +2,6 @@
 title: WIA Driver Error Handling and Recovery
 author: windows-driver-content
 description: WIA Driver Error Handling and Recovery
-MS-HAID:
-- 'WIA\_error\_4ef828f3-4d53-4cd3-ae24-dfa09d55c8e8.xml'
-- 'image.wia\_driver\_error\_handling\_and\_recovery'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b7772d9-cc54-492a-b849-27cfe8f043f5
 ---
 

@@ -2,12 +2,6 @@
 title: Property Sheet Pages for Still Image Devices
 author: windows-driver-content
 description: Property Sheet Pages for Still Image Devices
-MS-HAID:
-- 'stillimg\_ccc82174-0939-47d8-847c-be9b6d69a2e7.xml'
-- 'image.property\_sheet\_pages\_for\_still\_image\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ef77e57d-f791-4afa-8d51-67e78b60cf57
 ---
 

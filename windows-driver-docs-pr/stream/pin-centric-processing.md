@@ -2,12 +2,6 @@
 title: Pin-Centric Processing
 author: windows-driver-content
 description: Pin-Centric Processing
-MS-HAID:
-- 'avsover\_68f5ea3a-f689-4a38-82cb-761b77752fc9.xml'
-- 'stream.pin\_centric\_processing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0b6a02c2-e672-4568-a890-491c721ec3a7
 keywords: ["pin-centric filters WDK AVStream", "AVStream pin-centric filters WDK", "filter types WDK AVStream", "AVStrMiniPinProcess"]
 ---

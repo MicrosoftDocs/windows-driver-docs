@@ -2,12 +2,6 @@
 title: PTP Events
 author: windows-driver-content
 description: PTP Events
-MS-HAID:
-- 'WIA\_drv\_cam\_7ddbb4e0-5f56-4ae1-b86c-f3c484147b94.xml'
-- 'image.ptp\_events'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 69bbe1e1-46e7-4615-93ff-ecd640e7d56b
 ---
 

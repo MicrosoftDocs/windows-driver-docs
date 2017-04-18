@@ -2,9 +2,6 @@
 title: Hardware Resources for User-Mode SPB Peripheral Drivers
 author: windows-driver-content
 description: The code examples in this topic show how the User-Mode Driver Framework (UMDF) driver for a peripheral device on a simple peripheral bus (SPB) obtains the hardware resources that it requires to operate the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4D240011-1F4E-4C1E-8258-A2CF44BD3F06
 ---
 
@@ -105,7 +102,7 @@ HRESULT hres;
 //
 // TODO: Replace this hardcoded string with the appropriate
 //       helper method from Reshub.h when available.
-hres = StringCbPrintfW(&amp;szTargetPath[0],
+hres = StringCbPrintfW(&szTargetPath[0],
                        sizeof(szTargetPath),
                        L"\\\\.\\RESOURCE_HUB\\%0*I64x",
                        (size_t)(sizeof(LARGE_INTEGER) * 2),
@@ -125,9 +122,9 @@ UMDF_IO_TARGET_OPEN_PARAMS openParams;
 openParams.dwShareMode = 0;
 openParams.dwCreationDisposition = OPEN_EXISTING;
 openParams.dwFlagsAndAttributes = FILE_FLAG_OVERLAPPED;
-hres = pRemoteTarget->OpenFileByName(&amp;szTargetPath[0],
+hres = pRemoteTarget->OpenFileByName(&szTargetPath[0],
                                      (GENERIC_READ | GENERIC_WRITE),
-                                     &amp;openParams);
+                                     &openParams);
 if (FAILED(hres))
 {
     // Error handling
@@ -149,7 +146,7 @@ if (SUCCEEDED(hres))
 {
     hres = pWdfDevice->CreateRequest(NULL, 
                                      pWdfDevice, 
-                                     &amp;pWdfIoRequest);
+                                     &pWdfIoRequest);
     if (FAILED(hres))
     {
         // Error handling
@@ -164,7 +161,7 @@ if (SUCCEEDED(hres))
                                                    inBufferSize, 
                                                    NULL,
                                                    pWdfIoRequest,
-                                                   &amp;pInputMemory);
+                                                   &pInputMemory);
     if (FAILED(hres))
     {
         // Error handling

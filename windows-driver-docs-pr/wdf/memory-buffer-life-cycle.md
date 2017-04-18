@@ -52,7 +52,7 @@ EvtIoRead(
     BOOLEAN ret;
     ioTarget = WdfDeviceGetIoTarget(WdfIoQueueGetDevice(Queue));
  
-    status = WdfRequestRetrieveOutputMemory(Request, &amp;memory);
+    status = WdfRequestRetrieveOutputMemory(Request, &memory);
     if (!NT_SUCCESS(status)) {
         goto End;
     }

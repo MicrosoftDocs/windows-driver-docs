@@ -2,12 +2,6 @@
 title: Configuring a BDA Filter
 author: windows-driver-content
 description: Configuring a BDA Filter
-MS-HAID:
-- 'bdadg\_dd52f18b-a4ba-4da9-b473-0a07f82c3586.xml'
-- 'stream.configuring\_a\_bda\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4af9efc3-8073-4111-9ad0-8b2fba4d1545
 keywords: ["method sets WDK BDA , filter configuration", "property sets WDK BDA , filter configuration", "KSMETHODSETID_BdaDeviceConfiguration", "filter configuration WDK BDA"]
 ---

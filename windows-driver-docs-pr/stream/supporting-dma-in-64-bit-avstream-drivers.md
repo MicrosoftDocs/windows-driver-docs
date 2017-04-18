@@ -2,12 +2,6 @@
 title: Supporting DMA in 64-Bit AVStream Drivers
 author: windows-driver-content
 description: Supporting DMA in 64-Bit AVStream Drivers
-MS-HAID:
-- 'avsover\_29f43ebf-2694-40c2-b4d4-a04f98b4f87e.xml'
-- 'stream.supporting\_dma\_in\_64\_bit\_avstream\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1173a83f-8d9e-4678-bfb5-f2fb91e827be
 keywords: ["AVStream WDK , hardware", "hardware WDK AVStream", "DMA services WDK AVStream", "Direct Memory Access WDK AVStream", "64-bit WDK AVStream", "32-bit addressable devices WDK AVStream"]
 ---
@@ -31,8 +25,8 @@ NTSTATUS MyDeviceStart (...) {
 // Get the DMA adapter object and store it in the Context member of the I/O stack location.
 Context -> AdapterObject = IoGetDmaAdapter (
 Device -> PhysicalDeviceObject,
-&amp;DeviceDesc,
-&amp;Context -> NumberOfMapRegisters
+&DeviceDesc,
+&Context -> NumberOfMapRegisters
 );
 
 PUNKNOWN DeviceUnk =
@@ -44,7 +38,7 @@ Device
 IKsDeviceFunctions *DeviceFunctions;
 NTSTATUS Status = DeviceUnk -> QueryInterface (
 __uuidof (IKsDeviceFunctions),
-(PVOID *)&amp;DeviceFunctions
+(PVOID *)&DeviceFunctions
 );
 
 // Conditionally, call IksDeviceFunctions::RegisterAdapterObjectEx, 
@@ -53,7 +47,7 @@ __uuidof (IKsDeviceFunctions),
 if (NT_SUCCESS (Status)) {
 DeviceFunctions -> RegisterAdapterObjectEx (
 Context -> AdapterObject,
-&amp;DeviceDesc,
+&DeviceDesc,
 Context -> NumMapRegisters,
 MAX_MAPPING,
 sizeof (KSMAPPING)

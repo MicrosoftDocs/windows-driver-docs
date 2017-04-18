@@ -2,12 +2,6 @@
 title: Hello World' Implementation File
 author: windows-driver-content
 description: Hello World' Implementation File
-MS-HAID:
-- 'WIA\_db\_hello\_2060fde0-82ca-4df3-91b3-5d818631c817.xml'
-- 'image.\_\_hello\_world\_\_\_implementation\_file'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f81df130-44de-48c5-bfd1-d7e7084e91de
 ---
 
@@ -204,10 +198,10 @@ public:
                    (IWiaMiniDrv*)this, // this WIA driver object
                                     0, // size of context
                                  NULL, // context
-                &amp;m_pIDrvItemRoot); // created ROOT item
+                &m_pIDrvItemRoot); // created ROOT item
                                        // (IWiaDrvItem interface)
              if (S_OK == hr) {
-                 InterlockedIncrement(&amp;m_lClientsConnected);
+                 InterlockedIncrement(&m_lClientsConnected);
              }
              SysFreeString(bstrRootItemName);
              bstrRootItemName = NULL;
@@ -320,7 +314,7 @@ public:
      }
 
      *plDevErrVal = 0;
-     *ppwfi = &amp;m_WIAFormatInfo[0];
+     *ppwfi = &m_WIAFormatInfo[0];
      *pcelt = 2; // number of formats in returned array
      return S_OK;
  }
@@ -330,7 +324,7 @@ public:
           ULONG                         ulReserved){return E_NOTIMPL;}
  STDMETHOD(drvUnInitializeWia)(THIS_ BYTE *pWiasContext)
  {
-     if(InterlockedDecrement(&amp;m_lClientsConnected) < 0) {
+     if(InterlockedDecrement(&m_lClientsConnected) < 0) {
          m_lClientsConnected = 0;
      }
 
@@ -373,12 +367,12 @@ public:
 
  STDMETHODIMP_(ULONG) NonDelegatingAddRef()
  {
-     return InterlockedIncrement(&amp;m_cRef);
+     return InterlockedIncrement(&m_cRef);
  }
 
  STDMETHODIMP_(ULONG) NonDelegatingRelease()
  {
-     if(InterlockedDecrement(&amp;m_cRef) == 0) {
+     if(InterlockedDecrement(&m_cRef) == 0) {
          delete this;
          return 0;
      }
@@ -411,11 +405,11 @@ public:
  }
  STDMETHODIMP_(ULONG) AddRef()
  {
-     return InterlockedIncrement(&amp;m_cRef);
+     return InterlockedIncrement(&m_cRef);
  }
  STDMETHODIMP_(ULONG) Release()
  {
-     if(InterlockedDecrement(&amp;m_cRef) == 0) {
+     if(InterlockedDecrement(&m_cRef) == 0) {
          delete this;
          return 0;
      }
@@ -423,7 +417,7 @@ public:
  }
  STDMETHODIMP CreateInstance(IUnknown __RPC_FAR *pUnkOuter,REFIID riid,void __RPC_FAR *__RPC_FAR *ppvObject)
  {
-     if ((pUnkOuter)&amp;&amp;(!IsEqualIID(riid,IID_IUnknown))) {
+     if ((pUnkOuter)&&(!IsEqualIID(riid,IID_IUnknown))) {
          return CLASS_E_NOAGGREGATION;
      }
 

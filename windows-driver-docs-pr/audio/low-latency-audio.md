@@ -13,13 +13,13 @@ This topic contains the following sections.
 
 -   [Overview](#overview)
 -   [Definitions](#definitions)
--   [Windows Audio Stack](#windows-audio-stack)
--   [Audio Stack Improvements in Windows 10](#audio-stack-improvements-in-windows-10)
--   [API Improvements](#api-improvements)
+-   [Windows Audio Stack](#windows_audio_stack)
+-   [Audio Stack Improvements in Windows 10](#audio_stack_improvements_in_windows_10)
+-   [API Improvements](#api_improvements)
 -   [AudioGraph](#audiograph)
--   [Windows Audio Session API (WASAPI)](#windows-audio-session-api-wasapi)
--   [Driver Improvements](#driver-improvements)
--   [Measurement Tools](#measurement-tools)
+-   [Windows Audio Session API (WASAPI)](#windows_audio_session_api_wasapi)
+-   [Driver Improvements](#driver_improvements)
+-   [Measurement Tools](#measurement_tools)
 -   [Samples](#samples)
 -   [FAQ](#faq)
 
@@ -157,7 +157,7 @@ This is how an application developer can determine which of the two APIs to use:
     -   You need additional control than that provided by AudioGraph.
     -   You need lower latency than that provided by AudioGraph.
 
-The [measurement tools](#measurement-tools) section of this topic, shows specific measurements from a Haswell system using the inbox HDAudio driver.
+The [measurement tools](#measurement_tools) section of this topic, shows specific measurements from a Haswell system using the inbox HDAudio driver.
 
 The following sections will explain the low latency capabilities in each API. As it was noted in the previous section, in order for the system to achieve the minimum latency, it needs to have updated drivers that support small buffer sizes.
 
@@ -257,7 +257,7 @@ Windows::Media::Devices::AudioDeviceRole::Default );
 // This call must be made on the main UI thread.  Async operation will call back to 
 // IActivateAudioInterfaceCompletionHandler::ActivateCompleted, which must be an agile // interface implementation
 hr = ActivateAudioInterfaceAsync( m_DeviceIdString->Data(), __uuidof(IAudioClient3), 
-nullptr, this, &amp;asyncOp );
+nullptr, this, &asyncOp );
 
 // 2. Setting the audio client properties – note that low latency offload is not supported
 
@@ -272,13 +272,13 @@ audioProps.eCategory = AudioCategory_Media;
 // audioProps.Options |= AUDCLNT_STREAMOPTIONS_MATCH_FORMAT;
 
 
-hr = m_AudioClient->SetClientProperties( &amp;audioProps ); if (FAILED(hr)) { ... }
+hr = m_AudioClient->SetClientProperties( &audioProps ); if (FAILED(hr)) { ... }
 
 // 3. Querying the legal periods
 
-hr = m_AudioClient->GetMixFormat( &amp;mixFormat ); if (FAILED(hr)) { ... }
+hr = m_AudioClient->GetMixFormat( &mixFormat ); if (FAILED(hr)) { ... }
 
-hr = m_AudioClient->GetSharedModeEnginePeriod(wfx, &amp;defaultPeriodInFrames, &amp;fundamentalPeriodInFrames, &amp;minPeriodInFrames, &amp;maxPeriodInFrames); if (FAILED(hr)) { ... }
+hr = m_AudioClient->GetSharedModeEnginePeriod(wfx, &defaultPeriodInFrames, &fundamentalPeriodInFrames, &minPeriodInFrames, &maxPeriodInFrames); if (FAILED(hr)) { ... }
 
 // legal periods are any multiple of fundamentalPeriodInFrames between 
 // minPeriodInFrames and maxPeriodInFrames, inclusive
@@ -304,10 +304,10 @@ audioProps.cbSize = sizeof( AudioClientProperties );
 audioProps.eCategory = AudioCategory_Media;
 audioProps.Options |= AUDCLNT_STREAMOPTIONS_MATCH_FORMAT;
 
-hr = m_AudioClient->SetClientProperties( &amp;audioProps ); 
+hr = m_AudioClient->SetClientProperties( &audioProps ); 
 if (FAILED(hr)) { ... }
 
-hr = m_AudioClient->IsFormatSupported(AUDCLNT_SHAREMODE_SHARED, appFormat, &amp;closest);
+hr = m_AudioClient->IsFormatSupported(AUDCLNT_SHAREMODE_SHARED, appFormat, &closest);
 if (S_OK == hr) {
        /* device supports the app format */
 } else if (S_FALSE == hr) {
@@ -348,13 +348,13 @@ Attributes->SetUnknown( MF_SOURCE_READER_ASYNC_CALLBACK, static_cast<IMFSourceRe
         goto exit; 
     } 
     // Create a stream from IRandomAccessStream 
-    hr = MFCreateMFByteStreamOnStreamEx (reinterpret_cast<IUnknown*>(m_ContentStream), &amp;ByteStream ); 
+    hr = MFCreateMFByteStreamOnStreamEx (reinterpret_cast<IUnknown*>(m_ContentStream), &ByteStream ); 
     if ( FAILED( hr ) ) 
     { 
         goto exit; 
     } 
     // Create source reader 
-    hr = MFCreateSourceReaderFromByteStream( ByteStream, Attributes, &amp;m_MFSourceReader );
+    hr = MFCreateSourceReaderFromByteStream( ByteStream, Attributes, &m_MFSourceReader );
 ```
 
 Alternatively, the following code snippet shows how to use the RT Work Queue APIs.
@@ -385,15 +385,15 @@ STDMETHODIMP TestClass::Invoke(IRtwqAsyncResult* pAsyncResult)
 
        printf("Callback is invoked pAsyncResult(0x%0x)  Current process id :0x%0x Current thread id :0x%0x\n", (INT64)pAsyncResult, GetCurrentProcessId(), GetCurrentThreadId());
 
-       hr = RtwqGetWorkQueueMMCSSClass(g_WorkQueueId, className, &amp;bufferLength);
+       hr = RtwqGetWorkQueueMMCSSClass(g_WorkQueueId, className, &bufferLength);
        IF_FAIL_EXIT(hr, Exit);
 
        if (className[0])
        {
-              hr = RtwqGetWorkQueueMMCSSTaskId(g_WorkQueueId, &amp;taskID);
+              hr = RtwqGetWorkQueueMMCSSTaskId(g_WorkQueueId, &taskID);
               IF_FAIL_EXIT(hr, Exit);
 
-              hr = RtwqGetWorkQueueMMCSSPriority(g_WorkQueueId, &amp;priority);
+              hr = RtwqGetWorkQueueMMCSSPriority(g_WorkQueueId, &priority);
               IF_FAIL_EXIT(hr, Exit);
               printf("MMCSS: [%ws] taskID (%d) priority(%d)\n", className, taskID, priority);
        }
@@ -401,7 +401,7 @@ STDMETHODIMP TestClass::Invoke(IRtwqAsyncResult* pAsyncResult)
        {
               printf("non-MMCSS\n");
        }
-       hr = pAsyncResult->GetState(&amp;pState);
+       hr = pAsyncResult->GetState(&pState);
        IF_FAIL_EXIT(hr, Exit);
 
 Exit:
@@ -431,20 +431,20 @@ int _tmain(int argc, _TCHAR* argv[])
 
        g_WorkQueueId = RTWQ_MULTITHREADED_WORKQUEUE;
 
-       hr = RtwqLockSharedWorkQueue(L"Audio", 0, &amp;taskId, &amp;g_WorkQueueId);
+       hr = RtwqLockSharedWorkQueue(L"Audio", 0, &taskId, &g_WorkQueueId);
        IF_FAIL_EXIT(hr, Exit);
 
-       hr = RtwqCreateAsyncResult(NULL, reinterpret_cast<IRtwqAsyncCallback*>(&amp;cbClass), NULL, &amp;pAsyncResult);
+       hr = RtwqCreateAsyncResult(NULL, reinterpret_cast<IRtwqAsyncCallback*>(&cbClass), NULL, &pAsyncResult);
        IF_FAIL_EXIT(hr, Exit);
 
-       hr = RtwqPutWaitingWorkItem(signalEvent, Priority, pAsyncResult, &amp;workItemKey);
+       hr = RtwqPutWaitingWorkItem(signalEvent, Priority, pAsyncResult, &workItemKey);
        IF_FAIL_EXIT(hr, Exit);
 
        for (int i = 0; i < 5; i++)
        {
               SetEvent(signalEvent);
               Sleep(30);
-              hr = RtwqPutWaitingWorkItem(signalEvent, Priority, pAsyncResult, &amp;workItemKey);
+              hr = RtwqPutWaitingWorkItem(signalEvent, Priority, pAsyncResult, &workItemKey);
               IF_FAIL_EXIT(hr, Exit);
     }
 

@@ -2,12 +2,6 @@
 title: WS-DSD Scenarios
 author: windows-driver-content
 description: WS-DSD Scenarios
-MS-HAID:
-- 'dsm\_des\_theory\_46b04aa9-2535-4f33-9240-4f2ac98b7902.xml'
-- 'image.ws\_dsd\_scenarios'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5a7db624-6655-4cf1-9e0a-d019e86aa515
 ---
 

@@ -2,12 +2,6 @@
 title: GDL Macro Considerations
 author: windows-driver-content
 description: GDL Macro Considerations
-MS-HAID:
-- 'gplfiles\_8281d28d-cec2-4f70-a7be-835d886cc87a.xml'
-- 'print.gdl\_macro\_considerations'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b1e3e32f-2f5f-47ae-b69b-7645ada59c2a
 keywords: ["GDL WDK , macros", "macros WDK GDL , considerations", "passing GDL macro references WDK", "macros WDK GDL , passing macro references"]
 ---

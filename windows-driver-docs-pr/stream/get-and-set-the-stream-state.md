@@ -2,12 +2,6 @@
 title: Get and Set the Stream State
 author: windows-driver-content
 description: Get and Set the Stream State
-MS-HAID:
-- 'avcsguide\_40840902-e07c-49eb-8068-02c6df443ce2.xml'
-- 'stream.get\_and\_set\_the\_stream\_state'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e2fde528-d0cf-4ffe-945a-8672b76db61f
 keywords: ["Avcstrm.sys streaming filter driver WDK , stream states", "stream states WDK AV/C streaming", "states WDK AV/C streaming", "KSSTATE_STOP", "KSSTATE_ACQUIRE", "KSSTATE_PAUSE", "KSSTATE_RUN"]
 ---

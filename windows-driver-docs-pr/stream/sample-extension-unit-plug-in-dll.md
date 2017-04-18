@@ -2,12 +2,6 @@
 title: Sample Extension Unit Plug-in DLL
 author: windows-driver-content
 description: Sample Extension Unit Plug-in DLL
-MS-HAID:
-- 'uvcds\_a0833dbc-5b7e-4d09-8e81-09d9abd6168b.xml'
-- 'stream.sample\_extension\_unit\_plug\_in\_dll'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bd9ea70d-7bd0-494d-8d67-7a36a41d005b
 keywords: ["plug-in DLL WDK USB Video Class", "extension units WDK USB Video Class , samples, plug-in DLL", "sample code WDK USB Video Class , extension unit plug-in DLL"]
 ---
@@ -49,7 +43,7 @@ public:
 class CExtension :
    public IExtensionUnit,
    public CComObjectRootEx<CComObjectThreadModel>,
-   public CComCoClass<CExtension, &amp;CLSID_ExtensionUnit>,
+   public CComCoClass<CExtension, &CLSID_ExtensionUnit>,
    public CNodeControl
 {
    public:
@@ -126,7 +120,7 @@ CNodeControl::put_KsControl(
 
     if (m_pKsControl) m_pKsControl.Release();
  hr = pIKsControl->QueryInterface(__uuidof(IKsControl),
-       (void **) &amp;m_pKsControl);        
+       (void **) &m_pKsControl);        
 
     return hr;
 }
@@ -164,11 +158,11 @@ CExtension::get_InfoSize(
     ExtensionProp.NodeId = m_dwNodeId;
 
  hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
         sizeof(ExtensionProp),
         NULL,
         0,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
     if (hr == HRESULT_FROM_WIN32(ERROR_MORE_DATA)) 
     {
@@ -196,11 +190,11 @@ CExtension::get_Info(
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
  sizeof(ExtensionProp),
         (PVOID) pInfo,
         ulSize,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
  return hr;
 }
@@ -224,11 +218,11 @@ CExtension::get_PropertySize(
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
  sizeof(ExtensionProp),
         NULL,
         0,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
  if (hr == HRESULT_FROM_WIN32(ERROR_MORE_DATA)) 
     {
@@ -256,11 +250,11 @@ CExtension::get_Property(
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
  sizeof(ExtensionProp),
         (PVOID) pValue,
         ulSize,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
     return hr;
 }
@@ -282,11 +276,11 @@ CExtension::put_Property(
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
  sizeof(ExtensionProp),
         (PVOID) pValue,
         ulSize,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 
     return hr;
 }

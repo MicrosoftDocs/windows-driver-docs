@@ -2,9 +2,6 @@
 title: How to Get the Connection Settings for a Device
 author: windows-driver-content
 description: If your SPB controller driver registers an EvtSpbTargetConnect callback function, the SPB framework extension (SpbCx) calls this function when a client (peripheral driver) of the controller sends an IRP\_MJ\_CREATE request to open a logical connection to a target device on the bus. In response to the EvtSpbTargetConnect callback, the SPB controller driver should call the SpbTargetGetConnectionParameters method to get the connection settings for the target device. The SPB controller driver stores these settings and uses them later to access the device in response to I/O requests from the client.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B614993A-0EA9-4B91-A336-80EEF9BE3E69
 ---
 
@@ -68,8 +65,8 @@ GetTargetSettings(_In_ SPBTARGET Target, _Out_ PI2C_TARGET_SETTINGS Settings)
     PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER Connection = NULL;
     SPB_CONNECTION_PARAMETERS Params;
 
-    SPB_CONNECTION_PARAMETERS_INIT(&amp;Params);
-    SpbTargetGetConnectionParameters(Target, &amp;Params);
+    SPB_CONNECTION_PARAMETERS_INIT(&Params);
+    SpbTargetGetConnectionParameters(Target, &Params);
     Connection = (PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER)Params.ConnectionParameters;
     if (Connection->PropertiesLength < sizeof(PNP_SERIAL_BUS_DESCRIPTOR))
     {
@@ -92,7 +89,7 @@ GetTargetSettings(_In_ SPBTARGET Target, _Out_ PI2C_TARGET_SETTINGS Settings)
     Settings->Address = (ULONG)I2CDescriptor->SlaveAddress;
     I2CFlags = I2CDescriptor->SerialBusDescriptor.TypeSpecificFlags;
     Settings->AddressMode = 
-                ((I2CFlags &amp; I2C_SERIAL_BUS_SPECIFIC_FLAG_10BIT_ADDRESS) == 0) ? AddressMode7Bit : AddressMode10Bit;
+                ((I2CFlags & I2C_SERIAL_BUS_SPECIFIC_FLAG_10BIT_ADDRESS) == 0) ? AddressMode7Bit : AddressMode10Bit;
 
     Settings->ClockFrequency = I2CDescriptor->ConnectionSpeed;
 

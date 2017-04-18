@@ -2,12 +2,6 @@
 title: CPSUI-Supplied Functions
 author: windows-driver-content
 description: CPSUI-Supplied Functions
-MS-HAID:
-- 'cpsui\_dbbd2fbf-32a0-48fb-a1fe-33820c57d0d4.xml'
-- 'print.cpsui\_supplied\_functions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 49da252a-fb51-43f3-b2e8-27253470b4b5
 keywords: ["Common Property Sheet User Interface WDK print , functions", "CPSUI WDK print , functions", "property sheet pages WDK print , functions", "functions WDK CPSUI", "CommonPropertySheetUI", "ComPropSheet"]
 ---

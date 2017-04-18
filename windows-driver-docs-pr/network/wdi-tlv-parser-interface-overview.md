@@ -17,8 +17,8 @@ ndisStatus = Parse(
     cbBufferLength,
     pvBuffer,
     messageId,
-    &amp;Context,
-    &amp;pParsed);
+    &Context,
+    &pParsed);
 ```
 
 After checking the return for errors, the code can cast the output buffer (*pParsed*) into a concrete type, such as in the below example.
@@ -45,14 +45,14 @@ WDI_GET_ADAPTER_CAPABILITIES_PARAMETERS adapterCapabilitiesParsed;
 ndisStatus = ParseWdiGetAdapterCapabilities(
     cbBufferLength,
     pvBuffer,
-    &amp;Context
-    &amp;adapterCapabilitiesParsed);
+    &Context
+    &adapterCapabilitiesParsed);
 ```
 
 After the caller is finished using the structure, the caller should give the parser a chance to clean up any allocation it made during parsing, and wipe the structure so it is ready to be reused. The parameter is strongly typed, so the callee does not need any additional parameters.
 
 ```
-CleanupParsedWdiGetAdapterCapabilities(&amp;adapterCapabilitiesParsed);
+CleanupParsedWdiGetAdapterCapabilities(&adapterCapabilitiesParsed);
 ```
 
 After calling the CleanupParse API, all data in the structure is invalid.

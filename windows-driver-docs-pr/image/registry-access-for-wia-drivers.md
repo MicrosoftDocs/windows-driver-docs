@@ -2,12 +2,6 @@
 title: Registry Access for WIA Drivers
 author: windows-driver-content
 description: Registry Access for WIA Drivers
-MS-HAID:
-- 'WIA\_best\_practice\_be148eac-3738-422b-91f1-ad7532ccb171.xml'
-- 'image.registry\_access\_for\_wia\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e0b7493-858b-4add-9e1d-fd71bae21b6e
 ---
 
@@ -43,7 +37,7 @@ STDMETHODIMP CWIADevice::Initialize(
                  TEXT("DeviceData"), // subkey to open
                  0,                  // options (must be NULL)
                  KEY_READ|KEY_WRITE, // requesting read/write access
-                 &amp;m_hMyWritableRegistryKey);
+                 &m_hMyWritableRegistryKey);
   if (dwError == ERROR_SUCCESS)
   {
       //
@@ -79,7 +73,7 @@ STDMETHODIMP CWIADevice::SomeDriverMethod()
                      TEXT("MyDriverValueName"),
                      0,
                      REG_DWORD,
-                     (BYTE*)&amp;dwValue,
+                     (BYTE*)&dwValue,
                      sizeof(dwValue));
   if (dwError == ERROR_SUCCESS)
   {

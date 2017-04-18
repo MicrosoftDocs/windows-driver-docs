@@ -38,7 +38,7 @@ Specifies the name of the file on the source disk.
 Specifies the integer identifying the source disk that contains the file. This value, along with the initial *subdir*(ectory) path (if any) that contains the named file, must be defined in a [**SourceDisksNames**](inf-sourcedisksnames-section.md) section of the same INF.
 
 <a href="" id="subdir"></a>*subdir*  
-This optional value specifies the subdirectory (relative to the **SourceDisksNames** *path* specification, if any) on the source disk where the named file resides.
+This optional value specifies the subdirectory (relative to the *path* value of the **SourceDisksNames** section, if any) on the source disk where the named file resides.
 
 If this value is omitted from an entry, the named source file is assumed to be in the *path* directory that was specified in the **SourceDisksFiles** section for the given disk or, if no *path* directory was specified, in the [*installation root*](https://msdn.microsoft.com/library/windows/hardware/ff556290#wdkgloss-installation-root).
 
@@ -56,7 +56,7 @@ To support distribution of driver files on multiple system architectures, you ca
 
 For example, to specify a source disk names section for an x86-based system, use a **SourceDisksFiles.x86** section, not a **SourceDisksFiles.ntx86** section. Similarly, use a **SourceDisksFiles.ia64** section to specify an Itanium-based system and a **SourceDisksFiles.amd64** section to specify an x64-based system.
 
-During installation, SetupAPI functions look for architecture-specific **SourceDisksFiles** sections before using the generic section. For example, if, during installation on an x86-based platform, Windows is copying a file that is named *driver.sys*, it will look for the file's description in **SourceDisksNames.x86** before looking in **SourceDisksNames**.
+During installation, SetupAPI functions look for architecture-specific **SourceDisksFiles** sections before using the generic section. For example, if, during installation on an x86-based platform, Windows is copying a file that is named *driver.sys*, it will look for the file's description in [**SourceDisksFiles.x86**] before looking in [**SourceDisksFiles**].
 
 **Important**  Do not use a **SourceDisksFiles** section to copy INF files. For more information about how to copy INF files, see [Copying INFs](copying-inf-files.md).
 
@@ -65,7 +65,7 @@ During installation, SetupAPI functions look for architecture-specific **SourceD
 Examples
 --------
 
-The following example shows a [**SourceDisksNames**](inf-sourcedisksnames-section.md) section and a corresponding SourceDisksFiles section.
+The following example shows a [**SourceDisksNames**](inf-sourcedisksnames-section.md) section and a corresponding SourceDisksFiles section.  Note that this example has only a **SourceDisksFiles.x86** section, specifying the files for the x86 architecture.  An INF that supports another architecture will need a corresponding **SourceDisksFiles** section for that architecture, or the use of an undecorated [**SourceDisksFiles**] section, which supports all architectures.
 
 ```
 [SourceDisksNames]

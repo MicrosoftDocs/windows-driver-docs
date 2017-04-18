@@ -2,12 +2,6 @@
 title: Mediums and Categories
 author: windows-driver-content
 description: Mediums and Categories
-MS-HAID:
-- 'vidcapds\_7b441ff1-7cfc-42e9-89f9-603f64584fe7.xml'
-- 'stream.mediums\_and\_categories'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2bc83ce6-7f79-44e7-a0fb-7b9f56771730
 keywords: ["video capture WDK AVStream , mediums", "capturing video WDK AVStream , mediums", "video capture WDK AVStream , stream categories", "capturing video WDK AVStream , stream categories", "identifying pin primary purpose", "stream categories WDK video capture", "mediums WDK video capture", "pin connections WDK video capture"]
 ---

@@ -2,12 +2,6 @@
 title: How the Application Releases the WIA Device
 author: windows-driver-content
 description: How the Application Releases the WIA Device
-MS-HAID:
-- 'WIA\_drv\_basic\_66c11c75-ca8f-422e-978c-f2fcf806cb32.xml'
-- 'image.how\_the\_application\_releases\_the\_wia\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 694daed4-d794-4835-a052-27cc498baa10
 ---
 
@@ -42,7 +36,7 @@ HRESULT _stdcall CWIADevice::drvUnInitializeWia(BYTE *pWiasContext)
       return E_INVALIDARG;
   }
 
-  InterlockedDecrement(&amp;m_lClientsConnected);
+  InterlockedDecrement(&m_lClientsConnected);
 
   //
   // make sure we never decrement below zero (0)

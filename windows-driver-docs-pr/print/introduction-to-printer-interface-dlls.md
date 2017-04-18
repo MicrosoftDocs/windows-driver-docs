@@ -2,12 +2,6 @@
 title: Introduction to Printer Interface DLLs
 author: windows-driver-content
 description: Introduction to Printer Interface DLLs
-MS-HAID:
-- 'drvarch\_7a2626c6-79ec-48c0-a13b-a9ca80ad0303.xml'
-- 'print.introduction\_to\_printer\_interface\_dlls'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1993d818-9761-418e-96c3-e3c46965bef1
 keywords: ["printer interface DLL WDK , about printer interface DLL"]
 ---

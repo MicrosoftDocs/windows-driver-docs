@@ -1,0 +1,131 @@
+---
+Description: Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
+title: USB serial driver (Usbser.sys)
+---
+
+# USB serial driver (Usbser.sys)
+
+
+**Last updated**
+
+-   April, 2015
+
+** OS version**
+
+-   Windows 10
+-   Windows 8.1
+
+**Applies to**
+
+-   Device manufacturers of CDC Control devices
+
+Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
+
+In Windows 10, the driver has been rewritten by using the [Kernel-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557565) that improves the overall stability of the driver.
+
+-   Improved PnP and power management by the driver (such as, handling surprise removal).
+-   Added power management features such as [USB Selective Suspend](usb-selective-suspend.md).
+
+In addition, Windows Store applications can now use the APIs provided by the new [**Windows.Devices.SerialCommunication**](https://msdn.microsoft.com/library/windows/apps/dn921817) namespace that allow apps to talk to these devices.
+
+## Usbser.sys installation
+
+
+Load the Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
+
+**Note**  If you trying to install a USB device class driver included in Windows, you do not need to download the driver. They are installed automatically. If they are not installed automatically, contact the device manufacturer. For the list of USB device class driver included in Windows, see [USB device class drivers included in Windows](supported-usb-classes.md).
+
+ 
+
+**Windows 10**
+
+In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that loads Usbser.sys as the function device object (FDO) in the device stack. If your device belongs to the Communications and CDC Control device class, Usbser.sys is loaded automatically. The driver is loaded based on a compatible ID match similar to [other USB device class drivers included in Windows](supported-usb-classes.md).
+
+`USB\Class_02`
+
+`USB\Class_02&SubClass_02`
+
+-   If you want to load Usbser.sys automatically, set the class code to 02 and subclass code to 02 in the [Device Descriptor](usb-device-descriptors.md). For more information, see USB communications device class (or USB CDC) Specification found on the [USB DWG website](http://go.microsoft.com/fwlink/p/?linkid=617741). With this approach, you are not required to distribute INF files for your device because the system uses Usbser.inf.
+-   If your device specifies class code 02 but a subclass code value other than 02, Usbser.sys does not load automatically. Pnp Manager tries to find a driver. If a suitable driver is not found, the device might not have a driver loaded. In this case, you might have to load your own driver or write an INF that references another in-box driver.
+-   If your device specifies class and subclass codes to 02, and you want to load another driver instead of Usbser.sys, you have to write an INF that specifies the hardware ID of the device and the driver to install. For examples, look through the INF files included with [sample drivers](http://go.microsoft.com/fwlink/p/?LinkId=534087) and find devices similar to your device. For information about INF sections, see [Overview of INF Files](https://msdn.microsoft.com/library/windows/hardware/ff549520).
+
+**Note**  Microsoft encourages you to use in-box drivers whenever possible. On mobile editions of Windows, such as Windows 10 Mobile, only drivers that are part of the operating system are loaded. Unlike desktop editions, it is not possible to load a driver through an external driver package. With the new in-box INF, Usbser.sys is automatically loaded if a USB-to-serial device is detected on the mobile device.
+
+ 
+
+**Windows 8.1 and earlier versions**
+
+In Windows 8.1 and earlier versions of the operating system, Usbser.sys is not automatically loaded when a USB-to-serial device is attached to a computer. To load the driver, you need to write an INF that references the modem INF (mdmcpq.inf) and includes \[Install\] and \[Needs\] sections. Those sections are required for instantiating the service, copying inbox binaries, and registering a device interface GUID that applications require to find the device and talk to it. That INF specifies "Usbser" as a lower filter driver in a device stack.
+
+``` syntax
+[DDInstall.NT]
+include=mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection 
+
+[DDInstall.NT.Services]
+include=mdmcpq.inf
+AddService=usbser, 0x00000000, LowerFilter_Service_Inst 
+
+[DDInstall.NT.HW]
+include=mdmcpq.inf
+AddReg=LowerFilterAddReg
+```
+
+For more information, see [this KB article](https://support.microsoft.com/kb/837637/).
+
+## Configure selective suspend for Usbser.sys
+
+
+Starting in Windows 10, Usbser.sys supports [USB Selective Suspend](usb-selective-suspend.md). It allows the attached USB-to-serial device to enter a low power state when not in use, while the system remains in the S0 state. When communication with the device resumes, the device can leave the Suspend state and resume Working state. The feature is disabled by default and can be enabled and configured by setting the **IdleUsbSelectiveSuspendPolicy** entry under this registry key:
+
+**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;hardware id&gt;\\&lt;instance id&gt;\\Device Parameters**
+
+To configure power management features of Usbser.sys, you can set **IdleUsbSelectiveSuspendPolicy** to:
+
+-   "0x00000001"
+
+    Enters selective suspend when idle, that is, when there are no active data transfers to or from the device.
+
+-   "0x00000000"
+
+    Enters selective suspend only when there are no open handles to the device.
+
+That entry can be added in one of two ways:
+
+-   Write an INF that references the install INF and add the registry entry in the **HW.AddReg** section.
+-   Describe the registry entry in an extended properties OS feature descriptor. Add a custom property section that sets the **bPropertyName** field to a Unicode string, "IdleUsbSelectiveSuspendPolicy" and **wPropertyNameLength** to 62 bytes. Set the **bPropertyData** field to "0x00000001" or "0x00000000". The property values are stored as little-endian 32-bit integers.
+
+    For more information, see [Microsoft OS Descriptors](http://go.microsoft.com/fwlink/p/?linkid=224878).
+
+## Develop Windows applications for a USB CDC device
+
+
+If you install Usbser.sys for the USB CDC device, here are the application programming model options:
+
+-   Starting in Windows 10, a Windows store app can send requests to Usbser.sys by using the [**Windows.Devices.SerialCommunication**](https://msdn.microsoft.com/library/windows/apps/dn921817) namespace. It defines Windows Runtime classes that can use to communicate with a USB CDC device through a serial port or some abstraction of a serial port. The classes provide functionality to discover such serial device, read and write data, and control serial-specific properties for flow control, such as setting baud rate, signal states.
+
+-   In Windows 8.1 and earlier versions, you can write a Windows desktop application that opens a virtual COM port and communicates with the device. For more information, see:
+
+    Win32 programming model:
+
+    -   [Configuring a Communications Resource](https://msdn.microsoft.com/library/windows/desktop/aa363201)
+    -   [Communications Reference](https://msdn.microsoft.com/library/windows/desktop/aa363195)
+
+    .NET framework programming model:
+
+    -   [System.IO.Ports Namespace](https://msdn.microsoft.com/library/System.IO.Ports.aspx)
+
+## Related topics
+
+
+[USB device class drivers included in Windows](supported-usb-classes.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20USB%20serial%20driver%20%28Usbser.sys%29%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

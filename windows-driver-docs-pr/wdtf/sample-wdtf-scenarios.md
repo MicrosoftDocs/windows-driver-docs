@@ -2,12 +2,6 @@
 title: Sample WDTF Scenarios
 author: windows-driver-content
 description: Sample WDTF Scenarios
-MS-HAID:
-- 'wdtfdevguide\_c21f9e63-a6cb-4e95-ac3c-70573c6ecc20.xml'
-- 'dtf.sample\_wdtf\_scenarios'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6b894dc8-417b-4d2f-ad3b-c75a844953b2
 keywords: ["Windows Device Testing Framework WDK , samples", "WDTF WDK , samples", "sample scripts WDK WDTF", "scripts WDK WDTF", "test scripts WDK WDTF"]
 ---

@@ -2,12 +2,6 @@
 title: Using the XPS Rasterization Service
 author: windows-driver-content
 description: Using the XPS Rasterization Service
-MS-HAID:
-- 'xpsfiltpipe\_3360445b-1681-4959-a13f-90908218eb80.xml'
-- 'print.using\_the\_xps\_rasterization\_service'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a6a3746a-3638-464b-bca0-60003f37af76
 ---
 
@@ -72,12 +66,12 @@ HRESULT CreateRasterizationFactory(
     //
     // Retrieve the factory object from the property bag.
     //
- VariantInit(&amp;var);
+ VariantInit(&var);
     hr = pPropertyBag->GetProperty(L"MS_IXpsRasterizationFactory",
-                                   &amp;var);
+                                   &var);
     if (SUCCEEDED(hr))
     {
-        assert(var.vt == VT_UNKNOWN &amp;&amp; var.punkVal != NULL);
+        assert(var.vt == VT_UNKNOWN && var.punkVal != NULL);
 
         //
         // Get the factory object&#39;s IXpsRasterizationFactory interface.
@@ -85,7 +79,7 @@ HRESULT CreateRasterizationFactory(
  IUnknown *pUnknown = var.punkVal;
 
         hr = pUnknown->QueryInterface(__uuidof(IXpsRasterizationFactory),
- reinterpret_cast<void**>(&amp;pXPSRasFactory));
+ reinterpret_cast<void**>(&pXPSRasFactory));
     }
 
     if (SUCCEEDED(hr))
@@ -96,7 +90,7 @@ HRESULT CreateRasterizationFactory(
         *ppXPSRasFactory = pXPSRasFactory;
     }
 
- VariantClear(&amp;var);
+ VariantClear(&var);
     return hr;
 }
 ```

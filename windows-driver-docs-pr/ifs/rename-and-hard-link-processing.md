@@ -63,7 +63,7 @@ The following code example to handle a rename operation mimics the file system c
     //
 
     for (Links = TargetDcb->Specific.Dcb.ParentDcbQueue.Flink;
-            Links != &amp;TargetDcb->Specific.Dcb.ParentDcbQueue; ) {
+            Links != &TargetDcb->Specific.Dcb.ParentDcbQueue; ) {
 
         TempFcb = CONTAINING_RECORD( Links, FCB, ParentDcbLinks );
 
@@ -75,9 +75,9 @@ The following code example to handle a rename operation mimics the file system c
 
         Links = Links->Flink;
 
-        if ((TempFcb->DirentOffsetWithinDirectory == TargetDirentOffset) &amp;&amp;
+        if ((TempFcb->DirentOffsetWithinDirectory == TargetDirentOffset) &&
                 ((TempFcb->UncleanCount != 0) ||
-                !MmFlushImageSection( &amp;TempFcb->NonPaged->SectionObjectPointers,
+                !MmFlushImageSection( &TempFcb->NonPaged->SectionObjectPointers,
                 MmFlushForDelete))) {
 
             //
@@ -87,8 +87,8 @@ The following code example to handle a rename operation mimics the file system c
 
             Status = STATUS_ACCESS_DENIED;
 
-            if ((NodeType(TempFcb) == FAT_NTC_FCB) &amp;&amp;
-                    FsRtlCurrentBatchOplock( &amp;TempFcb->Specific.Fcb.Oplock )) {
+            if ((NodeType(TempFcb) == FAT_NTC_FCB) &&
+                    FsRtlCurrentBatchOplock( &TempFcb->Specific.Fcb.Oplock )) {
 
                 //
                 //  Do all of the cleanup now since the IrpContext
@@ -97,7 +97,7 @@ The following code example to handle a rename operation mimics the file system c
 
                 FatUnpinBcb( IrpContext, TargetDirentBcb );
 
-                Status = FsRtlCheckOplock( &amp;TempFcb->Specific.Fcb.Oplock,
+                Status = FsRtlCheckOplock( &TempFcb->Specific.Fcb.Oplock,
                     Irp,
                     IrpContext,
                     FatOplockComplete,
@@ -118,7 +118,7 @@ The following code example to handle a rename operation mimics the file system c
     //
 
     TargetLfnOffset = TargetDirentOffset -
-        FAT_LFN_DIRENTS_NEEDED(&amp;TargetLfn) * sizeof(DIRENT);
+        FAT_LFN_DIRENTS_NEEDED(&TargetLfn) * sizeof(DIRENT);
 
     DeleteTarget = TRUE;
 }

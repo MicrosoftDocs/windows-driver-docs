@@ -2,12 +2,6 @@
 title: WIA Security and Security Descriptors
 author: windows-driver-content
 description: WIA Security and Security Descriptors
-MS-HAID:
-- 'WIA\_best\_practice\_28714e9d-052f-4dc3-8e3c-cb32460535c1.xml'
-- 'image.wia\_security\_and\_security\_descriptors'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2919f3fc-1eb5-4801-a589-ae3000320763
 ---
 
@@ -43,9 +37,9 @@ SECURITY_ATTRIBUTES sa = { sizeof(sa), FALSE, NULL };
 if(ConvertStringSecurityDescriptorToSecurityDescriptor(
               MY_EVENT_DACL,
               SDDL_REVISION_1, 
-              &amp;(sa.lpSecurityDescriptor), NULL))
+              &(sa.lpSecurityDescriptor), NULL))
 {
-  h_MyEvent = CreateEvent(&amp;sa,           // Our security descriptor 
+  h_MyEvent = CreateEvent(&sa,           // Our security descriptor 
                                          //  allowing access to 
                                          //  Admins, LocalService
                                          //  and the Interactive

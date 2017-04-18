@@ -2,12 +2,6 @@
 title: Obtaining Preparsed Data
 author: windows-driver-content
 description: Obtaining Preparsed Data
-MS-HAID:
-- 'hidclass\_57f5d81e-6f72-4ecd-84c1-f77bb37a4b12.xml'
-- 'hid.obtaining\_preparsed\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7a2bdbd1-a970-421f-bbaa-40fe589bb49a
 keywords: ["collections WDK HID , preparsed data", "HID collections WDK , preparsed data", "preparsed data WDK HID"]
 ---

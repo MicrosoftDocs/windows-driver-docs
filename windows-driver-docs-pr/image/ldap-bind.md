@@ -2,12 +2,6 @@
 title: LDAP Bind
 author: windows-driver-content
 description: LDAP Bind
-MS-HAID:
-- 'dsm\_des\_tut\_08305556-e176-4a2b-8f04-124f6cda7c0d.xml'
-- 'image.ldap\_bind'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c45a3273-d571-4e56-987e-929fb12159a6
 ---
 
@@ -19,7 +13,7 @@ The LDAP Bind should use either NTLM/Kerberos authentication to bind with the su
 A typical example would look like this:
 
 ```
-ldap_bind_s(ld, NULL, &amp;NtAuthIdentity, 4230);
+ldap_bind_s(ld, NULL, &NtAuthIdentity, 4230);
 ```
 
 The above example assumes that NTAuthIdentity has the user credentials.
@@ -31,7 +25,7 @@ For example, to search for the SID of user "Joe" in the directory the search que
 ```
 scope: SubTree
 baseObject: [defaultNamingContext of the domain]
-filter: (&amp;(objectclass=*)(sAMAccountName=Joe))
+filter: (&(objectclass=*)(sAMAccountName=Joe))
 attributes: 
      Item: cn
      Item: objectSid

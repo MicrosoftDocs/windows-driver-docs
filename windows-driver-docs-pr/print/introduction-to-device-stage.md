@@ -2,12 +2,6 @@
 title: Introduction to Device Stage
 author: windows-driver-content
 description: Introduction to Device Stage
-MS-HAID:
-- 'prn\_dxpui\_55484010-bf8c-467d-8517-e731b151fbf9.xml'
-- 'print.introduction\_to\_device\_stage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 375cd28e-0a85-4652-bd9a-a220d00b6deb
 ---
 

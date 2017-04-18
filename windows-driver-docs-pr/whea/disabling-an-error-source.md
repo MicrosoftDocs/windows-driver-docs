@@ -2,12 +2,6 @@
 title: Disabling an Error Source
 author: windows-driver-content
 description: Disabling an Error Source
-MS-HAID:
-- 'whea\_948ab199-d717-4508-9239-fcf24d0c2e73.xml'
-- 'whea.disabling\_an\_error\_source'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a481ac98-0ff1-4583-a81a-1d2e4f968111
 keywords: ["error sources WDK WHEA , disabling", "Windows Hardware Error Architecture WDK , disabling error sources", "WHEA WDK , disabling error sources", "errors WDK WHEA , disabling error sources", "hardware error sources WDK WHEA , disabling", "disabling an error sourc"]
 ---
@@ -52,7 +46,7 @@ Result =
     ClassName,
     0,
     NULL,
-    &amp;pClass,
+    &pClass,
     NULL
     );
 
@@ -61,7 +55,7 @@ Result =
   pClass->GetMethod(
     MethodName,
     0,
-    &amp;pInParametersClass,
+    &pInParametersClass,
     NULL
     );
 
@@ -69,7 +63,7 @@ Result =
 Result =
   pInParametersClass->SpawnInstance(
     0,
-    &amp;pInParameters
+    &pInParameters
     );
 
 // Set the ErrorSourceId parameter
@@ -79,10 +73,10 @@ Result =
   pInParameters->Put(
     L"ErrorSourceId",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Call the DisableErrorSourceRtn method indirectly by
 // calling the IWbemServices::ExecMethod method.
@@ -92,8 +86,8 @@ Result =
     MethodName,
     0,
     NULL,
-    &amp;pInParameters,
- &amp;pOutParameters,
+    &pInParameters,
+ &pOutParameters,
     NULL
     );
 
@@ -102,12 +96,12 @@ Result =
   pOutParameters->Get(
     L"Status",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
 Status = Parameter.ulval;
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Free up resources
 SysFreeString(ClassName);

@@ -2,12 +2,6 @@
 title: Vendor-Extended Commands
 author: windows-driver-content
 description: Vendor-Extended Commands
-MS-HAID:
-- 'WIA\_drv\_cam\_b7bfe7c2-8898-4cdc-8b2f-9dd9478b3663.xml'
-- 'image.vendor\_extended\_commands'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3d360a9f-5a65-452b-a8ad-080dc7d8c8f5
 ---
 
@@ -100,7 +94,7 @@ HRESULT hr = S_OK;
 IWiaItemExtras *pIWiaItemExtras = NULL;
 
 hr = pIWiaRootItem->QueryInterface(IID_IWiaItemExtras,
-                                   (VOID **) &amp;pIWiaItemExtras);
+                                   (VOID **) &pIWiaItemExtras);
 if (FAILED(hr)) {
     MessageBox("QueryInterface for IWiaItemExtras failed");
     return;
@@ -143,7 +137,7 @@ pDataIn->NextPhase = PTP_NEXTPHASE_READ_DATA;
 hr = pIWiaItemExtras->Escape(ESCAPE_PTP_VENDOR_COMMAND,
                              (BYTE *) pDataIn, dwDataInSize,
                              (BYTE *) pDataOut, dwDataOutSize,
-                             &amp;dwActualDataOutSize);
+                             &dwActualDataOutSize);
 
 if (FAILED(hr)) {
     MessageBox("Escape failed");

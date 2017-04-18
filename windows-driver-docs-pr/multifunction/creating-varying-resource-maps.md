@@ -2,12 +2,6 @@
 title: Creating Varying Resource Maps
 author: windows-driver-content
 description: Creating Varying Resource Maps
-MS-HAID:
-- 'mf-supp\_589ec12f-02e8-4d3f-8f9b-f91ba571e842.xml'
-- 'multifunc.creating\_varying\_resource\_maps'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bfe3a760-d8fe-4213-9bbe-2bad6927d8e2
 keywords: ["varying resource maps WDK multifunction devices"]
 ---
@@ -110,7 +104,7 @@ ExcludeFromSelect=*
 %MYCOMPANY%=MYCOMPANY
 
 [MYCOMPANY]
-%MYCOMPANY_4PORT%=MYCOMPANY4PORT_inst, PCI\VEN_10B5&amp;DEV_9050&amp;SUBSYS_003112E0
+%MYCOMPANY_4PORT%=MYCOMPANY4PORT_inst, PCI\VEN_10B5&DEV_9050&SUBSYS_003112E0
 
 [MYCOMPANY4PORT_inst]
 Include = mf.inf

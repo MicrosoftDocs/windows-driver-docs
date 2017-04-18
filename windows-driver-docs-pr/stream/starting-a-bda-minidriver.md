@@ -2,12 +2,6 @@
 title: Starting a BDA Minidriver
 author: windows-driver-content
 description: Starting a BDA Minidriver
-MS-HAID:
-- 'bdadg\_26ed5e0c-c521-4011-8a2b-2e51b05dc25d.xml'
-- 'stream.starting\_a\_bda\_minidriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c71e1483-756c-4e98-a413-64ff02ee4a9b
 keywords: ["BDA minidrivers WDK AVStream , starting", "starting BDA minidrivers WDK AVStream"]
 ---
@@ -43,11 +37,11 @@ const KSFILTER_DESCRIPTOR    InitialTunerFilterDescriptor;
 //
 DEFINE_KSFILTER_DESCRIPTOR(InitialTunerFilterDescriptor)
 {
-    &amp;FilterDispatch,             // Table of dispatch routines
-    &amp;FilterAutomation,           // Table of properties and methods
+    &FilterDispatch,             // Table of dispatch routines
+    &FilterAutomation,           // Table of properties and methods
     KSFILTER_DESCRIPTOR_VERSION, // Version
     0,                           // Flags
-    &amp;KSNAME_Filter,              // Reference Guid
+    &KSNAME_Filter,              // Reference Guid
     DEFINE_KSFILTER_PIN_DESCRIPTORS(InitialPinDescriptors),
                                    // PinDescriptorsCount
                                    // PinDescriptorSize
@@ -81,8 +75,8 @@ InitialPinDescriptors[] =
     //  Antenna Pin
     //
     {
-        &amp;AntennaPinDispatch,
-        &amp;AntennaAutomation,   // AntennaPinAutomation
+        &AntennaPinDispatch,
+        &AntennaAutomation,   // AntennaPinAutomation
         {
             0,  // Interfaces
             NULL,
@@ -124,7 +118,7 @@ const
 BDA_FILTER_TEMPLATE
 TunerBdaFilterTemplate =
 {
-    &amp;TemplateTunerFilterDescriptor,
+    &TemplateTunerFilterDescriptor,
     SIZEOF_ARRAY(TemplateTunerPinPairings),
     TemplateTunerPinPairings
 };
@@ -137,11 +131,11 @@ TunerBdaFilterTemplate =
 //
 DEFINE_KSFILTER_DESCRIPTOR(TemplateTunerFilterDescriptor)
 {
-    &amp;FilterDispatch,             // Table of dispatch routines
-    &amp;FilterAutomation,           // Table of properties and methods
+    &FilterDispatch,             // Table of dispatch routines
+    &FilterAutomation,           // Table of properties and methods
     KSFILTER_DESCRIPTOR_VERSION, // Version
     0,                           // Flags
-    &amp;KSNAME_Filter,              // Reference Guid
+    &KSNAME_Filter,              // Reference Guid
     DEFINE_KSFILTER_PIN_DESCRIPTORS(TemplatePinDescriptors),
                                    // PinDescriptorsCount
                                    // PinDescriptorSize

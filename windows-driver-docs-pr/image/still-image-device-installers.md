@@ -2,12 +2,6 @@
 title: Still Image Device Installers
 author: windows-driver-content
 description: Still Image Device Installers
-MS-HAID:
-- 'stillimg\_c3ea59d7-434e-41ef-b1ac-47a7aa9a1e10.xml'
-- 'image.still\_image\_device\_installers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e0ea31de-063a-49a4-922f-62edb774ac76
 ---
 

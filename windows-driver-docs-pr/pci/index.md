@@ -2,12 +2,6 @@
 title: PCI driver programming guide
 author: windows-driver-content
 description: PCI driver programming guide
-MS-HAID:
-- 'pcidg\_b844ab1f-d0d6-4f3a-ac41-d6c7abefffa6.xml'
-- 'PCI.pci\_bus\_design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 014f6243-6166-42e1-9f0f-1a438c77fd78
 keywords: ["PCI WDK buses", "buses WDK , PCI", "Peripheral Component Interconnect WDK buses", "PCI Local Bus specification WDK", "configuration space WDK PCI", "device-specific configuration space WDK PCI", "requesting configuration space information WDK PCI", "power management WDK PCI", "querying power management capability data", "headers WDK PCI"]
 ---

@@ -2,12 +2,6 @@
 title: Device Properties
 author: windows-driver-content
 description: Device Properties
-MS-HAID:
-- 'WIA\_arch\_ca16a8da-72a9-4f03-9087-cb8480384bed.xml'
-- 'image.device\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f41040c5-0eac-450d-b532-9165c543cc1a
 ---
 

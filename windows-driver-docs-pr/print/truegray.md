@@ -2,12 +2,6 @@
 title: TrueGray
 author: windows-driver-content
 description: TrueGray
-MS-HAID:
-- 'pscript\_ee7fd9c5-fc41-4e65-9a72-f128ee2ae367.xml'
-- 'print.truegray'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d6fef790-79d9-4ea7-8e1d-bca8837108de
 keywords: ["minidrivers WDK Pscript , TrueGray feature", "TrueGray feature", "RGB colors WDK printer", "gray color space WDK Pscript", "ADTrueGray", "color checking WDK Pscript", "checking RGB colors"]
 ---

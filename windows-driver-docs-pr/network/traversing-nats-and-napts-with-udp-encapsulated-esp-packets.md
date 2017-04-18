@@ -7,6 +7,7 @@ keywords: ["UDP-encapsulated ESP packets WDK IPsec offload , transversing NATs a
 
 # Traversing NATs and NAPTs with UDP-Encapsulated ESP Packets
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-traversing-nats-and-napts-with-udp-encapsulated-esp-packets-ng"></a>
 

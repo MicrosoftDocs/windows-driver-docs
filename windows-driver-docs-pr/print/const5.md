@@ -2,12 +2,6 @@
 title: Const
 author: windows-driver-content
 description: Const
-MS-HAID:
-- 'autocfg\_4c54f4d9-dfc8-4d5c-a0c0-54b46bbccf67.xml'
-- 'print.const5'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e9bcf007-0117-48a9-9873-a9bbc5702e29
 keywords: ["Const construct"]
 ---

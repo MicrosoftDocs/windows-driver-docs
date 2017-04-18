@@ -2,12 +2,6 @@
 title: Supporting User-Defined Paper Sizes
 author: windows-driver-content
 description: Supporting User-Defined Paper Sizes
-MS-HAID:
-- 'nt5gpd\_c4027b04-9e7f-4fb9-8990-e7546eb632e8.xml'
-- 'print.supporting\_user\_defined\_paper\_sizes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f9c0b759-687e-4d92-80ce-330e30cbc41c
 keywords: ["user-defined paper sizes WDK Unidrv", "customized paper sizes WDK Unidrv", "largest paper size WDK Unidrv", "margins WDK paper size"]
 ---
@@ -182,7 +176,7 @@ The following example GPD file segment describes acceptable customized paper siz
        *Command: CmdSelect
        {
          *Order: DOC_SETUP.13
- *Cmd: "<1B>&amp;l101a8c1e99F<1B>*p0x0Y<1B>*c0t8064x12528Y"
+ *Cmd: "<1B>&l101a8c1e99F<1B>*p0x0Y<1B>*c0t8064x12528Y"
  }
     }
     *case: LANDSCAPE_CC90
@@ -204,7 +198,7 @@ The following example GPD file segment describes acceptable customized paper siz
           *Command: CmdSelect
           {
             *Order: DOC_SETUP.13
-            *Cmd: "<1B>&amp;l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
+            *Cmd: "<1B>&l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
           }
         }
         *case: MBM5S
@@ -218,7 +212,7 @@ The following example GPD file segment describes acceptable customized paper siz
           *Command: CmdSelect
           {
             *Order: DOC_SETUP.13
-            *Cmd: "<1B>&amp;l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
+            *Cmd: "<1B>&l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
           }
         }
         *default
@@ -232,7 +226,7 @@ The following example GPD file segment describes acceptable customized paper siz
           *Command: CmdSelect
           {
             *Order: DOC_SETUP.13
- *Cmd: "<1B>&amp;l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
+ *Cmd: "<1B>&l101a8c1e63F<1B>*p0x0Y<1B>*c0t12456x8184Y"
  }
         }
       } *% switch Option20

@@ -2,12 +2,6 @@
 title: Print Ticket Compatibility with Win 32 Applications
 author: windows-driver-content
 description: Print Ticket Compatibility with Win 32 Applications
-MS-HAID:
-- 'drvarch\_8e1fc90b-ac9b-436c-b170-22003bcf7bf4.xml'
-- 'print.print\_ticket\_compatibility\_with\_win\_32\_applications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e358f8a-e950-4da0-b8ef-4e350ea28091
 keywords: ["Win32 applications WDK print", "Print Tickets WDK ,Win32 applications", "Print Tickets WDK , XPSDrv", "Print Tickets WDK , GDI-based print drivers"]
 ---

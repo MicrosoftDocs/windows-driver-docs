@@ -2,12 +2,6 @@
 title: INF SharedDriver Entry
 author: windows-driver-content
 description: INF SharedDriver Entry
-MS-HAID:
-- 'km-ovr\_9af1722a-4ce4-4fd6-9c77-c4922433f7e6.xml'
-- 'hid.inf\_shareddriver\_entry'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 36d094b4-481d-41bb-b034-345b0743456e
 keywords: ["INF files WDK non-HID keyboard/mouse", "SharedDriver entry WDK non-HID keyboard/mouse"]
 ---

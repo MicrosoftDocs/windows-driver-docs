@@ -2,12 +2,6 @@
 title: Supporting CMYK Color Space
 author: windows-driver-content
 description: Supporting CMYK Color Space
-MS-HAID:
-- 'printicm\_04eda0f7-5f28-43e5-9cb3-3a0d6a385c8b.xml'
-- 'print.supporting\_cmyk\_color\_space'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b8ac5f1a-c903-4313-b7de-0335f4c44367
 keywords: ["CMYK color space WDK print", "BR_CMYKCOLOR", "XO_FROM_CMYK"]
 ---

@@ -2,12 +2,6 @@
 title: Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD
 author: windows-driver-content
 description: Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD
-MS-HAID:
-- 'nt5gpd\_3a94800e-d1b8-4a08-b0ff-ed786dafdb83.xml'
-- 'print.enabling\_hp\_gl\_2\_vector\_graphics\_support\_\_pcl\_5e\_\_in\_the\_gpd'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2ca5a2fe-4c37-4b7f-bd9b-d41240f8843f
 keywords: ["HP-GL/2 monochrome WDK Unidrv , enabling support", "PCL-5e WDK Unidrv , enabling support"]
 ---
@@ -74,7 +68,7 @@ A GPD file for a color printer should also define a ColorMode feature, as shown 
      *Command: CmdSelect
       {
         *Order: PAGE_SETUP.16 
-        *Cmd: "<1B>&amp;b1M"
+        *Cmd: "<1B>&b1M"
       }
    }
   *Option: 24bpp

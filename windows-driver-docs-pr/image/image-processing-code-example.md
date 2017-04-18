@@ -2,12 +2,6 @@
 title: Image Processing Code Example
 author: windows-driver-content
 description: Image Processing Code Example
-MS-HAID:
-- 'WIA\_tree\_cf59db78-a42c-4295-9d08-88283dba8dbe.xml'
-- 'image.image\_processing\_code\_example'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fe5ac3db-46e0-4162-9add-c3b0ae736926
 ---
 
@@ -67,7 +61,7 @@ CImageFilter::InitializeFilter(
 {
     HRESULT  hr = S_OK;
 
-    hr = (pWiaItem &amp;&amp; pWiaTransferCallback) ? S_OK : E_INVALIDARG;
+    hr = (pWiaItem && pWiaTransferCallback) ? S_OK : E_INVALIDARG;
 
     //
     // InitializeFilter should only be called only once, but,
@@ -122,17 +116,17 @@ CImageFilter::FilterPreviewImage(
     if (SUCCEEDED(hr))
     {
         hr = ReadAllProperties(pWiaChildItem,
-                               &amp;xpos,
-                               &amp;ypos,
-                               &amp;width,
-                               &amp;height,
-                               &amp;bstrItemName,
-                               &amp;bstrFullItemName,
-                               &amp;lBrightness,
-                               &amp;lContrast,
-                               &amp;lRotation,
-                               &amp;lDeskewX,
-                               &amp;lDeskewY);
+                               &xpos,
+                               &ypos,
+                               &width,
+                               &height,
+                               &bstrItemName,
+                               &bstrFullItemName,
+                               &lBrightness,
+                               &lContrast,
+                               &lRotation,
+                               &lDeskewX,
+                               &lDeskewY);
     }
 
     //
@@ -157,7 +151,7 @@ CImageFilter::FilterPreviewImage(
                                             0,
                                             bstrItemName,
                                             bstrFullItemName,
-                                            &amp;pAppStream);
+                                            &pAppStream);
     }
     if (SUCCEEDED(hr))
     {
@@ -232,7 +226,7 @@ CImageFilter::TransferCallback(
         // modify the ulBytesWrittenToCurrentStream member.
         //
         if ((pWiaTransferParams->lMessage ==
-                            WIA_TRANSFER_MSG_END_OF_STREAM) &amp;&amp;
+                            WIA_TRANSFER_MSG_END_OF_STREAM) &&
              m_pCurrentStream )
         {
             hr = m_pCurrentStream->Flush();
@@ -246,7 +240,7 @@ CImageFilter::TransferCallback(
         hr = m_pAppWiaTransferCallback->TransferCallback(
                                             lFlags,
                                             pWiaTransferParams);
-        if (m_pCurrentStream &amp;&amp;
+        if (m_pCurrentStream &&
             (pWiaTransferParams->lMessage ==
                             WIA_TRANSFER_MSG_END_OF_STREAM))
         {
@@ -294,14 +288,14 @@ CImageFilter::GetNextStream(
                                             lFlags,
                                             bstrItemName,
                                             bstrFullItemName,
-                                            &amp;pAppStream);
+                                            &pAppStream);
     }
     if (SUCCEEDED(hr))
     {
         hr = m_pWiaItem->FindItemByName(
                              0,
                              bstrFullItemName,
-                             &amp;pCurrentWiaItem);
+                             &pCurrentWiaItem);
     }
     //
     // Here we read all properties from pCurrentWiaItem
@@ -314,16 +308,16 @@ CImageFilter::GetNextStream(
     if (SUCCEEDED(hr))
     {
         hr = ReadDownloadProperties(pCurrentWiaItem,
-                                    &amp;lBrightness,
-                                    &amp;lContrast,
-                                    &amp;lRotation,
-                                    &amp;lDeskewX,
-                                    &amp;lDeskewY);
+                                    &lBrightness,
+                                    &lContrast,
+                                    &lRotation,
+                                    &lDeskewX,
+                                    &lDeskewY);
     }
 
     if (SUCCEEDED(hr))
     {
-        hr = CreateStreamOnHGlobal(0, TRUE, &amp;pCachingStream);
+        hr = CreateStreamOnHGlobal(0, TRUE, &pCachingStream);
         if (SUCCEEDED(hr))
         {
             //

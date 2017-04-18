@@ -2,12 +2,6 @@
 title: Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request
 author: windows-driver-content
 description: Sending an IOCTL\_ACPI\_ENUM\_CHILDREN Request
-MS-HAID:
-- 'acpi-meth-eval-dg\_f84e38f7-867a-4ed9-9253-2f8e977cd4c0.xml'
-- 'acpi.sending\_an\_ioctl\_acpi\_enum\_children\_request'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cbad53dd-4320-4920-9d16-231d0aaae839
 ---
 
@@ -61,9 +55,9 @@ After the example code obtains the required size of the output buffer, it perfor
     status = SendDownStreamIrp(
        Pdo,
  IOCTL_ACPI_ENUM_CHILDREN,
-       &amp;inputBuffer,
+       &inputBuffer,
        sizeof(inputBuffer),
-       &amp;outputSizeBuffer,
+       &outputSizeBuffer,
        sizeof(outputSizeBuffer)
        );
 
@@ -100,9 +94,9 @@ After the example code obtains the required size of the output buffer, it perfor
     status = SendDownStreamIrp(
        Pdo,
  IOCTL_ACPI_ENUM_CHILDREN,
-       &amp;inputBuffer,
+       &inputBuffer,
        sizeof(inputBuffer),
-       &amp;outputBuffer,
+       &outputBuffer,
        bufferSize
        );
 
@@ -115,7 +109,7 @@ After the example code obtains the required size of the output buffer, it perfor
 
     // Skip the first child device because ACPI returns the device itself 
  // as the first child device
-    childObject = &amp;(outputBuffer->Children[0]);
+    childObject = &(outputBuffer->Children[0]);
 
     for (index = 1; index < outputBuffer->NumberOfChildren; ++index) {
 

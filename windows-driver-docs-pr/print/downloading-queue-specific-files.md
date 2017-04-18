@@ -2,12 +2,6 @@
 title: Downloading Queue-Specific Files
 author: windows-driver-content
 description: Downloading Queue-Specific Files
-MS-HAID:
-- 'prtinst\_7c16afd8-3364-4262-bc16-125817806499.xml'
-- 'print.downloading\_queue\_specific\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b6aad46a-2934-461a-ad11-6ad699687fc1
 keywords: ["downloading queue-specific printer files", "Point and Print WDK , queue-specific files", "queue-specific files WDK printer", "print queues WDK , Point and Print", "queues WDK printer , Point and Print"]
 ---
@@ -62,12 +56,12 @@ On the server, the spooler loads Mscms.dll and calls [**GenerateCopyFilePaths**]
 GenerateCopyFilePaths(
     "HpColor",
     "Color",
-    &amp;SplclientInfo1,
+    &SplclientInfo1,
     1,
     \\NTPRINT\PRINT$\Color,
-    &amp;dwSourceDirSize,
+    &dwSourceDirSize,
     "Color",
-    &amp;dwDestDirSize,
+    &dwDestDirSize,
     COPYFILE_FLAG_SERVER_SPOOLER)
 ```
 
@@ -90,12 +84,12 @@ The spooler on MyClient performs the following operations:
     GenerateCopyFilePaths(
         "\\NTPRINT\HpColor",
         "Color",
-        &amp;SplclientInfo1,
+        &SplclientInfo1,
         1,
         \\NTPRINT\PRINT$\Color,
-        &amp;dwSourceDirSize,
+        &dwSourceDirSize,
         "C:\Winnt\System32\Spool\Drivers\Color",
-        &amp;dwDestDirSize,
+        &dwDestDirSize,
         COPYFILE_FLAG_CLIENT_SPOOLER)
     ```
 

@@ -2,12 +2,6 @@
 title: Scan Job Setup
 author: windows-driver-content
 description: Scan Job Setup
-MS-HAID:
-- 'dsm\_des\_theory\_e9c9ded4-ccf6-4086-af69-e65ab651ea88.xml'
-- 'image.scan\_job\_setup'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9fca3b10-8df9-476a-a319-6f0ab7bbd6e8
 ---
 

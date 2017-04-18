@@ -31,20 +31,20 @@ The following example shows how the Ndisedge sample driver uses the above techni
 ```
 status = WdfIoTargetCreate(Adapter->WdfDevice,
                         WDF_NO_OBJECT_ATTRIBUTES,
-                        &amp;Adapter->IoTarget);
+                        &Adapter->IoTarget);
     if (!NT_SUCCESS(status)) {
         DEBUGP(MP_ERROR, ("WdfIoTargetCreate failed 0x%x\n",
                status));
         return status;
     }
 
-    WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME(&amp;openParams,
-                                &amp;fileName,
+    WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME(&openParams,
+                                &fileName,
                                 STANDARD_RIGHTS_ALL
                                 );
 
     status = WdfIoTargetOpen(Adapter->IoTarget,
-                        &amp;openParams);
+                        &openParams);
     if (!NT_SUCCESS(status)) {
         DEBUGP(MP_ERROR, ("WdfIoTargetOpen failed 0x%x\n", status));
         return status;

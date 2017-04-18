@@ -2,12 +2,6 @@
 title: Example DownloadPreviewImage
 author: windows-driver-content
 description: Example DownloadPreviewImage
-MS-HAID:
-- 'WIA\_tree\_64f1970e-c233-40f3-8a8c-2e92197303d1.xml'
-- 'image.example\_\_downloadpreviewimage'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9b27492e-0725-4c8b-9101-3aaf5c9291d9
 ---
 
@@ -30,7 +24,7 @@ DownloadPreviewImage(
   BOOL                 bHasImgFilter  = FALSE;
   IWiaTransferCallback *pAppWiaTransferCallback = NULL;
 
-  hr = CheckImgFilter(pWiaFlatbedItem2, &amp;bHasImgFilter)
+  hr = CheckImgFilter(pWiaFlatbedItem2, &bHasImgFilter)
 
   if (SUCCEEDED(hr))
   {
@@ -61,7 +55,7 @@ DownloadPreviewImage(
          // the successful return of GetNewPreview.
          // The stream is passed into the segmentation filter
          // for region detection.
-         if (SUCCEEDED(hr) &amp;&amp; m_bUseSegmentationFilter)
+         if (SUCCEEDED(hr) && m_bUseSegmentationFilter)
          {
             DetectSubregions(m_FlatbedPreviewStream, pWiaFlatbedItem2);
          }

@@ -2,12 +2,6 @@
 title: Unidrv/PScript5 UI Standard Tab vs. Advanced Tree View Changes
 author: windows-driver-content
 description: Unidrv/PScript5 UI Standard Tab vs.
-MS-HAID:
-- 'xpsconfig\_85917136-9e96-469d-9fe0-1c248b4c9cc1.xml'
-- 'print.unidrv\_pscript5\_ui\_standard\_tab\_vs\_\_advanced\_tree\_view\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 07374e07-f0ca-4e97-8e5f-e5fe54d14af4
 ---
 

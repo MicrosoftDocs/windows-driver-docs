@@ -2,12 +2,6 @@
 title: DirectInput
 author: windows-driver-content
 description: DirectInput
-MS-HAID:
-- 'di\_93890564-99e5-4c16-981c-fa1cbe38d521.xml'
-- 'hid.directinput'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4a69905b-017b-46d7-8b15-c9089a77e795
 keywords: ["Human Interface Devices WDK , DirectInput", "HID WDK , DirectInput", "DirectInput WDK", "DirectX input components WDK HID", "pointing devices WDK , DirectInput", "input devices WDK , DirectInput"]
 ---

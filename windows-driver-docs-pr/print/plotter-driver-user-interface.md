@@ -2,12 +2,6 @@
 title: Plotter Driver User Interface
 author: windows-driver-content
 description: Plotter Driver User Interface
-MS-HAID:
-- 'plotter\_36bf142e-5a15-417c-a1e7-466cc05e1ac8.xml'
-- 'print.plotter\_driver\_user\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 681e9215-d34b-4991-9c0f-b9dbe23412f6
 keywords: ["Plotter Driver WDK print , user interface", "MSPlot WDK print , user interface", "user interface WDK MSPlot"]
 ---

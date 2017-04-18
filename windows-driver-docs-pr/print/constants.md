@@ -2,12 +2,6 @@
 title: Constants
 author: windows-driver-content
 description: Constants
-MS-HAID:
-- 'nt5gpd\_d070896c-6e1f-46e9-996b-4c935a4c47aa.xml'
-- 'print.constants'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f35a8032-bbee-493d-8a16-17518cdf5b39
 keywords: ["GPD file entries WDK Unidrv , constants", "constants WDK GPD files"]
 ---

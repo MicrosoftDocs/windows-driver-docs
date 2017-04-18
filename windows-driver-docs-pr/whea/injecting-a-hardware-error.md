@@ -2,12 +2,6 @@
 title: Injecting a Hardware Error
 author: windows-driver-content
 description: Injecting a Hardware Error
-MS-HAID:
-- 'whea\_dbc7cc61-4f9c-4380-b394-997ad0d9e219.xml'
-- 'whea.injecting\_a\_hardware\_error'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c27c79d9-c0b2-433b-b3f4-7674c361f1aa
 keywords: ["injecting hardware errors WDK WHEA", "errors WDK WHEA , injecting, WHEA WDK , injecting", "Windows Hardware Error Architecture WDK , injecting"]
 ---
@@ -52,7 +46,7 @@ Result =
     ClassName,
     0,
     NULL,
-    &amp;pClass,
+    &pClass,
     NULL
     );
 
@@ -61,7 +55,7 @@ Result =
   pClass->GetMethod(
     MethodName,
     0,
-    &amp;pInParametersClass,
+    &pInParametersClass,
     NULL
     );
 
@@ -69,7 +63,7 @@ Result =
 Result =
   pInParametersClass->SpawnInstance(
     0,
-    &amp;pInParameters
+    &pInParameters
     );
 
 // Set the ErrorType parameter
@@ -79,10 +73,10 @@ Result =
   pInParameters->Put(
     L"ErrorType",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Set the additional parameters - in this case
 // they are all set to zero. If additional data
@@ -95,31 +89,31 @@ Result =
   pInParameters->Put(
     L"Parameter1",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
 Result =
   pInParameters->Put(
     L"Parameter2",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
 Result =
   pInParameters->Put(
     L"Parameter3",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
 Result =
   pInParameters->Put(
     L"Parameter4",
     0,
-    &amp;Parameter,
+    &Parameter,
     0
     );
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Call the InjectErrorRtn method indirectly by
 // calling the IWbemServices::ExecMethod method.
@@ -129,8 +123,8 @@ Result =
     MethodName,
     0,
     NULL,
-    &amp;pInParameters,
- &amp;pOutParameters,
+    &pInParameters,
+ &pOutParameters,
     NULL
     );
 
@@ -144,7 +138,7 @@ Result =
   pOutParameters->Get(
     L"Status",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );

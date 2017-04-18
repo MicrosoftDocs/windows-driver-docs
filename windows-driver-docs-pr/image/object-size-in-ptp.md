@@ -2,12 +2,6 @@
 title: Object Size in PTP
 author: windows-driver-content
 description: Object Size in PTP
-MS-HAID:
-- 'WIA\_drv\_cam\_c1e0fbf1-0e03-49ec-9fe3-7f90f6864dca.xml'
-- 'image.object\_size\_in\_ptp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: bc54e057-3c98-457b-859a-79d216b2a34d
 ---
 

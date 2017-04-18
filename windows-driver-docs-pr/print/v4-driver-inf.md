@@ -2,9 +2,6 @@
 title: V4 Driver INF
 author: windows-driver-content
 description: The v4 print driver setup model continues to use INF files, but also employs a new manifest file to capture the printer specific setup directives.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 48F19796-43F9-4A69-B042-1305245C9CB9
 ---
 

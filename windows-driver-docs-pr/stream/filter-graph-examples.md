@@ -2,12 +2,6 @@
 title: Filter Graph Examples
 author: windows-driver-content
 description: Filter Graph Examples
-MS-HAID:
-- 'vidcapds\_1ed414d4-f6b5-4e6b-ba93-39ad4e1777bd.xml'
-- 'stream.filter\_graph\_examples'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7888da79-b21d-4935-ac6c-25ef2f947931
 keywords: ["video capture WDK AVStream , filter graph configurations", "capturing video WDK AVStream , filter graph configurations", "filter graph configurations WDK video capture", "filter graph configurations WDK video capture , listed"]
 ---

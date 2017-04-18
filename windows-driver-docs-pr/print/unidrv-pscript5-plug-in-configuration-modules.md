@@ -2,12 +2,6 @@
 title: Unidrv/PScript5 Plug-in Configuration Modules
 author: windows-driver-content
 description: Unidrv/PScript5 Plug-in Configuration Modules
-MS-HAID:
-- 'xpsconfig\_5e4511e1-2318-4290-ad7f-75a690422448.xml'
-- 'print.unidrv\_pscript5\_plug\_in\_configuration\_modules'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 806175ba-18a9-48f3-8f50-06e794d1f304
 keywords: ["Version 3 XPS drivers WDK XPSDrv , Unidrv plug-in", "Version 3 XPS drivers WDK XPSDrv , PScript5 plug-in", "IPrintCoreHelper", "Pscript WDK print , XPSDrv print drivers", "Unidrv, XPSDrv print drivers", "Unidrv WDK print"]
 ---
@@ -89,7 +83,7 @@ CBookletDMPTConv::GetDrvSettingsFromDM(
 
   for (GPD::Binding::EGPDSettings setting = 
         GPD::Binding::EGPDSettingsMin;
-      setting < GPD::Binding::EGPDSettingsMax &amp;&amp; SUCCEEDED(hr);
+      setting < GPD::Binding::EGPDSettingsMax && SUCCEEDED(hr);
       setting++)
   {
     PCSTR pszOption;
@@ -97,7 +91,7 @@ CBookletDMPTConv::GetDrvSettingsFromDM(
       pDevmode,
       cbDevmode, 
       m_featureNames[setting], 
-      &amp;pszOption)
+      &pszOption)
     if (SUCCEEDED(hr))
     {
       hr = GPDSettingFromOptionString(

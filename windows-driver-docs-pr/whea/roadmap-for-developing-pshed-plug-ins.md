@@ -2,12 +2,6 @@
 title: Roadmap for Developing PSHED Plug-Ins
 author: windows-driver-content
 description: Roadmap for Developing PSHED Plug-Ins
-MS-HAID:
-- 'whea\_rm\_8f189f67-8ca0-4b5c-81fa-e7fee57ff413.xml'
-- 'whea.roadmap\_for\_developing\_pshed\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3e1eb744-e480-4478-9705-94da8029c382
 ---
 

@@ -2,12 +2,6 @@
 title: WIA Item Flags for Film Scanners
 author: windows-driver-content
 description: WIA Item Flags for Film Scanners
-MS-HAID:
-- 'WIA\_scanner\_tree\_deef01e3-6b40-47cd-a7ab-e700741ba797.xml'
-- 'image.wia\_item\_flags\_for\_film\_scanners'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 50aad730-6897-488d-a9de-58ce24738c17
 ---
 

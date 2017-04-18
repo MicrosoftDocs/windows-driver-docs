@@ -2,12 +2,6 @@
 title: GDL Quoted Strings
 author: windows-driver-content
 description: GDL Quoted Strings
-MS-HAID:
-- 'gplfiles\_99401c35-a33e-40d1-9b8a-586d9a59ab1c.xml'
-- 'print.gdl\_quoted\_strings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 52d6f1bf-0b8c-4aa7-8cc8-1a18def224be
 keywords: ["constructs WDK GDL , strings", "GDL WDK , strings", "strings WDK GDL , quoted strings", "quoted strings WDK GDL"]
 ---

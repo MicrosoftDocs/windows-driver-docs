@@ -2,12 +2,6 @@
 title: Example Application Using a Segmentation Filter
 author: windows-driver-content
 description: Example Application Using a Segmentation Filter
-MS-HAID:
-- 'WIA\_tree\_ff35540b-1bfe-4645-b3fe-2e9f05dcddba.xml'
-- 'image.example\_\_application\_using\_a\_segmentation\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3f7de6a2-5684-4c37-97bc-47f4727114ab
 ---
 
@@ -26,7 +20,7 @@ IWiaTransfer  *pWiaTransfer = NULL;
 
 ...
 
-pWiaItem2->QueryInterface(IID_IWiaTransfer, (void**)&amp;pWiaTransfer);
+pWiaItem2->QueryInterface(IID_IWiaTransfer, (void**)&pWiaTransfer);
 
 pMyWiaTransferCallback = new MyWiaTransferCallback();
 
@@ -43,14 +37,14 @@ pWiaTransfer->Download(lFlags, pMyWiaTransferCallback);
 // restored) before calling IWiaSegmentationFilter::DetectRegions.
 //
 
-if (ReadPropertyLong(WIA_IPS_SEGMENTATION_FILTER, &amp;lUseSegFilter) &amp;&amp;
+if (ReadPropertyLong(WIA_IPS_SEGMENTATION_FILTER, &lUseSegFilter) &&
     (lUseSegFilter == WIA_USE_SEGMENTATION_FILTER)
 {
     bstrSegmentation = SysAllocStr(WIA_SEGMENTATION_FILTER_STR);
 
     pWiaItem2->GetExtension(bstrSegmentation,
                             IID_IWiaSegmentationFilter,
-                           (void**)&amp; pWiaSegmentationFilter);
+                           (void**)& pWiaSegmentationFilter);
 
 //
 // m_pInputStream is a pointer to the IStream that the application&#39;s
@@ -88,7 +82,7 @@ if (ReadPropertyLong(WIA_IPS_SEGMENTATION_FILTER, &amp;lUseSegFilter) &amp;&amp;
 IWiaTransfer  *pWiaTransferChild= NULL;
 
 pChildItem->QueryInterface(IID_IWiaTransfer,
-                           (void**)&amp; pWiaTransferChild);
+                           (void**)& pWiaTransferChild);
 
 pWiaTransferChild->Download(lFlags, pMyWiaTransferCallback); 
 ```

@@ -2,12 +2,6 @@
 title: Participating in Error Record Persistence
 author: windows-driver-content
 description: Participating in Error Record Persistence
-MS-HAID:
-- 'whea\_b18a3e70-1907-4033-a56b-b7fbb35bf11a.xml'
-- 'whea.participating\_in\_error\_record\_persistence'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 06cbcccf-7cda-468d-aa6e-b8ecf95adf16
 keywords: ["Windows Hardware Error Architecture WDK , error record persistence", "WHEA WDK , error record persistence", "hardware errors WDK WHEA , error record persistence", "errors WDK WHEA , error record persistence", "platform-specific hardware error driver plug-ins WDK WHEA , error record persistence", "PSHED plug-ins WDK WHEA , error record persistence", "error record persistence WDK WHEA"]
 ---
@@ -38,7 +32,7 @@ NTSTATUS
     )
 {
   // Check if dummy write operation
-  if (Flags &amp; WHEA_WRITE_FLAG_DUMMY)
+  if (Flags & WHEA_WRITE_FLAG_DUMMY)
   {
     return STATUS_SUCCESS;
   }

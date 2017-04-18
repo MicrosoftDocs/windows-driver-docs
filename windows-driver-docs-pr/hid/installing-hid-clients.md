@@ -2,9 +2,6 @@
 title: Installing HID clients
 author: windows-driver-content
 description: This section describes the following requirements for installing HIDClass devices in Microsoft Windows.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 080992B1-AB36-4BA1-BF44-7CF0C9F4EEE3
 ---
 

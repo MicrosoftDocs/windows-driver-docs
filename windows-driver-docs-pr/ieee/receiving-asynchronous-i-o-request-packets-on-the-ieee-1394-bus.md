@@ -2,12 +2,6 @@
 title: Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
 author: windows-driver-content
 description: The computer itself is a node on the IEEE 1394 bus, and therefore can receive asynchronous I/O requests.
-MS-HAID:
-- '1394-async\_b14ca735-5a08-4e52-9e51-783dde848f69.xml'
-- 'IEEE.receiving\_asynchronous\_i\_o\_request\_packets\_on\_the\_ieee\_1394\_bus'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b8eaf40-7fdc-4c25-86a7-8377d2d51877
 keywords: ["receiving asynchronous I/O requests", "allocating address ranges", "addresses WDK IEEE 1394 bus", "backing store WDK IEEE 1394 bus"]
 ---
@@ -23,7 +17,7 @@ Two different drivers may allocate the same address range. By default, the bus d
 
 -   [Which addresses are allocated?](#ddk-receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus-kg)
 -   [Allocation and backing store](#allocation-and-backing-store)
--   [Client driver's notification routine for receive asynchronous I/O requests](#client-driver-s-notification-routine-for-receive-asynchronous-i-o-requests)
+-   [Client driver's notification routine for receive asynchronous I/O requests](#client-drivers-notification-routine-for-receive-asynchronous-io-requests)
 -   [Asynchronous receive in the pre-notification case](#asynchronous-receive-in-the-pre-notification-case)
 
 ## <a href="" id="ddk-receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus-kg"></a>Which addresses are allocated?
@@ -223,7 +217,7 @@ kmdf1394_NotifyRoutineWorkItem (
     ASSERT(notifyContext);
 
     ntStatus = KeWaitForSingleObject(
-                                     &amp;notifyContext->responseEvent,
+                                     &notifyContext->responseEvent,
                                      Executive,
                                      KernelMode,
                                      FALSE,
@@ -355,17 +349,17 @@ kmdf1394_NotificationCallback (
                         // only implementing Quadlet Read for now
 
                         // Create a WdfWorkItem, with notifyResponse as its context, 
-                        // to handle waiting for the Response Event &amp; cleaning up all the response stuff
+                        // to handle waiting for the Response Event & cleaning up all the response stuff
 
-                        WDF_WORKITEM_CONFIG_INIT (&amp;workItemConfig, kmdf1394_NotifyRoutineWorkItem);
+                        WDF_WORKITEM_CONFIG_INIT (&workItemConfig, kmdf1394_NotifyRoutineWorkItem);
 
-                        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;attributes, NOTIFY_WORKITEM_CONTEXT);
+                        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attributes, NOTIFY_WORKITEM_CONTEXT);
 
                         attributes.ParentObject = WdfObjectContextGetObject(asyncAddressData->DeviceExtension);
 
-                        ntStatus = WdfWorkItemCreate( &amp;workItemConfig,
-                            &amp;attributes,
-                            &amp;workItem);
+                        ntStatus = WdfWorkItemCreate( &workItemConfig,
+                            &attributes,
+                            &workItem);
 
                         if (!NT_SUCCESS (ntStatus)) 
                         {
@@ -387,16 +381,16 @@ kmdf1394_NotificationCallback (
                         // a pointer to the beginning of its response packet
 
                         // parent this memory object to the workitem so both can be cleaned up together
-                        WDF_OBJECT_ATTRIBUTES_INIT (&amp;attributes);
+                        WDF_OBJECT_ATTRIBUTES_INIT (&attributes);
                         attributes.ParentObject = workItem;
 
                         ntStatus = WdfMemoryCreate(
-                                                   &amp;attributes,
+                                                   &attributes,
                                                    NonPagedPool,
                                                    POOLTAG_KMDF_VDEV,
                                                    sizeof(ULONG),
-                                                   &amp;notifyContext->responseMemory,
-                                                   &amp;responseQuadlet);
+                                                   &notifyContext->responseMemory,
+                                                   &responseQuadlet);
 
                         if (!NT_SUCCESS(ntStatus) || !responseQuadlet)
                         {
@@ -424,15 +418,15 @@ kmdf1394_NotificationCallback (
                         // do what it looks like the New (KMDF) stack expects,
                         // which is that NotifyInfo->ResponsePacket points to the
                         // data following the Async Packet header
-                        *NotifyInfo->ResponsePacket = (PVOID)&amp;responseQuadlet;
+                        *NotifyInfo->ResponsePacket = (PVOID)&responseQuadlet;
 
                         // NotifyInfo->ResponseEvent
                         // memory location that the driver fills in with
                         // the kernel event the bus driver should use to signal
                         // that it has completed sending the response packet
-                        KeInitializeEvent(&amp;notifyContext->responseEvent, NotificationEvent, FALSE);
+                        KeInitializeEvent(&notifyContext->responseEvent, NotificationEvent, FALSE);
 
-                        *NotifyInfo->ResponseEvent = &amp;notifyContext->responseEvent;
+                        *NotifyInfo->ResponseEvent = &notifyContext->responseEvent;
 
                         // NotifyInfo->ResponseLength
                         // memory location that the driver fills in with
@@ -451,7 +445,7 @@ kmdf1394_NotificationCallback (
                                             "Pre-Notification: Read Quadlet: Notify Response Handle %!HANDLE! Data %08x Event %p\n", 
                                             notifyContext->responseMemory, 
                                             *responseQuadlet, 
-                                            &amp;notifyContext->responseEvent);
+                                            &notifyContext->responseEvent);
 
                         break;
 

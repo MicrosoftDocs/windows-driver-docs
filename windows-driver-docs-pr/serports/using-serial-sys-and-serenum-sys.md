@@ -2,13 +2,6 @@
 title: Using Serial.sys and Serenum.sys
 author: windows-driver-content
 description: Using Serial.sys and Serenum.sys
-MS-HAID:
-- 'serports.serial\_devices\_and\_drivers'
-- 'serports.serial\_sys\_and\_serenum\_sys'
-- 'serports.using\_serial\_sys\_and\_serenum\_sys'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2dcf22c8-0666-4b58-8fd3-97a4d17eaa2a
 keywords: ["serial ports WDK", "serial devices WDK", "ports WDK , serial", "universal asynchronous receiver-transmitters WDK serial devices", "UART WDK serial devices", "function drivers WDK serial ports", "serial drivers WDK", "16550 UART-compatible interfaces WDK serial devices", "lower-level device filter drivers WDK serial devices", "higher-level device filter drivers WDK serial devices", "filter drivers WDK serial devices"]
 ---

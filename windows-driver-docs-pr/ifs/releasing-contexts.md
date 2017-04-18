@@ -40,7 +40,7 @@ status = FltAllocateContext(
            FLT_INSTANCE_CONTEXT,         //ContextType
            CTX_INSTANCE_CONTEXT_SIZE,    //ContextSize
            NonPagedPool,                 //PoolType
-           &amp;instanceContext);            //ReturnedContext
+           &instanceContext);            //ReturnedContext
 ...
 status = FltSetInstanceContext(
            FltObjects->Instance,              //Instance

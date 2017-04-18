@@ -2,12 +2,6 @@
 title: Introduction to WHEA-Aware User-Mode Applications
 author: windows-driver-content
 description: Introduction to WHEA-Aware User-Mode Applications
-MS-HAID:
-- 'whea\_a8f9060b-aac6-45bb-91c1-30f375dd5fba.xml'
-- 'whea.introduction\_to\_whea\_aware\_user\_mode\_applications'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cf2de8fa-191b-4dae-aaac-5d6d74f94ca7
 keywords: ["Windows Hardware Error Architecture WDK , user-mode applications", "WHEA WDK , user-mode applications", "hardware errors WDK WHEA , user-mode applications", "errors WDK WHEA , user-mode applications", "user-mode applications WDK WHEA", "events WDK WHEA", "events WDK WHEA , categories", "Windows Hardware Error Architecture WDK , events", "WHEA WDK , events", "hardware errors WDK WHEA , events", "errors WDK WHEA , events"]
 ---

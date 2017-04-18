@@ -2,9 +2,6 @@
 title: How to customize I/O for your device using the WDTF Simple I/O Action Plug-in
 author: windows-driver-content
 description: To get the most benefit from the Device Fundamental tests and tests you might have written using the Visual Studio test templates, your device should be supported by a Simple I/O plug-in.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 96BC880B-79DC-4CB1-BD79-87B0A4717634
 ---
 
@@ -47,7 +44,7 @@ Instructions
        
         ////
         // TODO: 1)  Perform your checks to see if your implementation is compatible with the target.
-        //       Use the ITarget::GetValue() &amp; ITarget::Eval() method to get the necessary data , info 
+        //       Use the ITarget::GetValue() & ITarget::Eval() method to get the necessary data , info 
         //       to determine that. 
         //       2)  Also get the necessary info and save it in a member variable 
         //       to accomplish the later Open() method call.

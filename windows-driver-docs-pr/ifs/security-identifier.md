@@ -88,9 +88,9 @@ The following code example demonstrates how to create a SID using the **SecLooku
     PISID localSid = (PISID) sidBuffer;
     SIZE_T sidSize;
     status = SecLookupWellKnownSid(WinLocalSid,
-                                   &amp;localSid,
+                                   &localSid,
                                    sizeof(sidBuffer),
-                                   &amp;sidSize);
+                                   &sidSize);
 
     if (!NT_SUCCESS(status)) {
       //

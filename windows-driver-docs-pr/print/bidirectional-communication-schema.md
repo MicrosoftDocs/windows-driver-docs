@@ -2,12 +2,6 @@
 title: Bidirectional Communication Schema
 author: windows-driver-content
 description: Bidirectional Communication Schema
-MS-HAID:
-- 'autocfg\_b09e1b77-9cc7-4eb8-b1b0-576a8fd615ba.xml'
-- 'print.bidirectional\_communication\_schema'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b15b1aff-623e-4159-ab0f-ce386a1377eb
 keywords: ["bidirectional communication schema WDK print", "bidi communication schema WDK print", "property WDK bidi communication", "value WDK bidi communication"]
 ---

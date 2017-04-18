@@ -2,12 +2,6 @@
 title: Rectangle Area Fill Attributes
 author: windows-driver-content
 description: Rectangle Area Fill Attributes
-MS-HAID:
-- 'nt5gpd\_5fb7ced6-f690-423f-984a-a60c6de9ce84.xml'
-- 'print.rectangle\_area\_fill\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 287e8805-4aec-490b-88da-00576a2f4fbf
 keywords: ["rectangular area fill attibutes WDK Unidrv", "filling rectangular areas WDK Unidrv"]
 ---

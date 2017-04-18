@@ -2,12 +2,6 @@
 title: Autodetecting the Duplex Unit for GPD
 author: windows-driver-content
 description: Autodetecting the Duplex Unit for GPD
-MS-HAID:
-- 'autocfg\_cf609580-e1ff-4efc-87e7-dae548406cf3.xml'
-- 'print.autodetecting\_the\_duplex\_unit\_for\_gpd'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a5c91b00-ca7c-4c22-a16c-a976011d8b89
 keywords: ["autodetecting duplex unit WDK printer autoconfiguration", "GPD files WDK GDL extensions , autodetecting duplex unit", "in-box autoconfiguration support WDK printer , autodetecting duplex unit", "detecting duplex unit", "duplex unit WDK printer autoconfiguration"]
 ---
@@ -28,7 +22,7 @@ Suppose that your GPD file has a Duplex feature that is defined like the followi
     *Command: CmdSelect
     {
       *Order: DOC_SETUP.9
-      *Cmd: "<1B>&amp;l0S"
+      *Cmd: "<1B>&l0S"
     }
   }
   *Option: VERTICAL
@@ -37,7 +31,7 @@ Suppose that your GPD file has a Duplex feature that is defined like the followi
     *Command: CmdSelect
     {
       *Order: DOC_SETUP.10
-      *Cmd: "<1B>&amp;l1S"
+      *Cmd: "<1B>&l1S"
     }
   }
   *Option: HORIZONTAL
@@ -46,7 +40,7 @@ Suppose that your GPD file has a Duplex feature that is defined like the followi
     *Command: CmdSelect
     {
       *Order: DOC_SETUP.10
-      *Cmd: "<1B>&amp;l2S"
+      *Cmd: "<1B>&l2S"
     }
   }
 }

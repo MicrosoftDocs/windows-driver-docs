@@ -44,7 +44,7 @@ MiniportPins[] =
             PinDataRangePointersBridge,                 // DataRanges
             KSPIN_DATAFLOW_IN,                          // DataFlow
             KSPIN_COMMUNICATION_NONE,                   // Communication
-            &amp;KSNODETYPE_LEGACY_AUDIO_CONNECTOR,         // Category
+            &KSNODETYPE_LEGACY_AUDIO_CONNECTOR,         // Category
             NULL,                                       // Name
             0                                           // Reserved
         }
@@ -61,8 +61,8 @@ MiniportPins[] =
             PinDataRangePointersBridge,                 // DataRanges
             KSPIN_DATAFLOW_OUT,                         // DataFlow
             KSPIN_COMMUNICATION_NONE,                   // Communication
-            &amp;KSNODETYPE_SPEAKER,                        // Category
-            &amp;KSAUDFNAME_VOLUME_CONTROL,                 // Name (This name shows up as the 
+            &KSNODETYPE_SPEAKER,                        // Category
+            &KSAUDFNAME_VOLUME_CONTROL,                 // Name (This name shows up as the 
                                                         // playback panel name in SndVol32)
             0                                           // Reserved
         }
@@ -75,9 +75,9 @@ PCNODE_DESCRIPTOR TopologyNodes[] =
 {
     {   // KSNODE_WAVEOUT_VOLUME
         0,                      // Flags
-        &amp;AutomationVolume,      // AutomationTable
-        &amp;KSNODETYPE_VOLUME,     // Type
-        &amp;KSAUDFNAME_WAVE_VOLUME // Name
+        &AutomationVolume,      // AutomationTable
+        &KSNODETYPE_VOLUME,     // Type
+        &KSAUDFNAME_WAVE_VOLUME // Name
     }
 };
 
@@ -133,7 +133,7 @@ The filter contains a single node, KSNODE\_WAVEOUT\_VOLUME, which the **mixer** 
 
 The volume node has two "logical" pins, which are numbered 0 and 1. The two connections that are specified by the MiniportConnections array are represented in the figure by dashed arrows that point in the direction of data flow. Each connection is described by one of the two elements in the array.
 
-The KSPIN\_WAVEOUT\_SRC and KSPIN\_SPEAKERS\_DST pins are both [*bridge pins*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss-bridge-pin), which means that they represent hardwired connections in the adapter. In the preceding sample code, the two pin descriptors in the MiniportPins array both specify their IRP-flow direction as KSPIN\_COMMUNICATION\_NONE, which is appropriate because bridge pins neither send nor receive IRPs. The two pin descriptors also refer to a PinDataRangePointersBridge array, which is defined as follows:
+The KSPIN\_WAVEOUT\_SRC and KSPIN\_SPEAKERS\_DST pins are both [*bridge pins*](https://msdn.microsoft.com/library/windows/hardware/ff556272#wdkgloss_bridge_pin), which means that they represent hardwired connections in the adapter. In the preceding sample code, the two pin descriptors in the MiniportPins array both specify their IRP-flow direction as KSPIN\_COMMUNICATION\_NONE, which is appropriate because bridge pins neither send nor receive IRPs. The two pin descriptors also refer to a PinDataRangePointersBridge array, which is defined as follows:
 
 ```
 static KSDATARANGE PinDataRangesBridge[] =
@@ -149,7 +149,7 @@ static KSDATARANGE PinDataRangesBridge[] =
 
 static PKSDATARANGE PinDataRangePointersBridge[] =
 {
-    &amp;PinDataRangesBridge[0]
+    &PinDataRangesBridge[0]
 };
 ```
 

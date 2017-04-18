@@ -11,7 +11,7 @@ keywords: ["receive-side scaling WDK networking , CPU configuration", "RSS WDK n
 ## <a href="" id="ddk-setting-the-rss-cpu-configuration-ng"></a>
 
 
-This section provides information about setting the RSS CPU configuration in Microsoft Windows Server 2003 with the Scalable Networking Pack and in Windows Server 2008 and later.
+This section provides information about setting the RSS CPU configuration in Microsoft Windows Server 2003 with the Scalable Networking Pack and in Windows Server 2008. Information for Windows Server 2008 also applies to later versions.
 
 This section describes how to configure the maximum number of CPUs that can be used for RSS and the algorithm for choosing CPUs for RSS.
 

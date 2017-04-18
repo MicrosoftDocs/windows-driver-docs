@@ -21,7 +21,7 @@ This topic describes the algorithm that the KMixer system driver uses to generat
 
 ### <span id="connecting_the_first_audio_stream"></span><span id="CONNECTING_THE_FIRST_AUDIO_STREAM"></span>Connecting the First Audio Stream
 
--   When the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver) initializes the KMixer driver for an audio device, it assigns a sample rate corresponding to the higher of 44.1 kHz and the highest rate available on the audio device. (In Microsoft Windows XP SP1, Windows Server 2003, and later, the highest sample rate that KMixer supports is 200 kHz. In Windows 98/Me, Windows 2000, and Windows XP, KMixer's highest sample rate is 100 kHz.) Note that the miniport driver's request handler returns the sample rates available on the device (see [Pin Data-Range and Intersection Properties](pin-data-range-and-intersection-properties.md)).
+-   When the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver) initializes the KMixer driver for an audio device, it assigns a sample rate corresponding to the higher of 44.1 kHz and the highest rate available on the audio device. (In Microsoft Windows XP SP1, Windows Server 2003, and later, the highest sample rate that KMixer supports is 200 kHz. In Windows 98/Me, Windows 2000, and Windows XP, KMixer's highest sample rate is 100 kHz.) Note that the miniport driver's request handler returns the sample rates available on the device (see [Pin Data-Range and Intersection Properties](pin-data-range-and-intersection-properties.md)).
 
 -   When a client requests connection of an audio stream to a device, KMixer queries the device to determine whether it supports the incoming rate. If the device supports the incoming rate, KMixer passes the incoming stream to the device without SRC. Otherwise, KMixer maintains the current output rate, and does the following:
     -   If the device supports the current output rate, KMixer uses SRC to convert the input rate to the current output rate.
@@ -73,7 +73,7 @@ Following connection of the first input stream, KMixer applies a different polic
 
 -   KMixer does not adjust its output rate when a client makes an **IDirectSoundBuffer::SetFrequency** call on a DirectSound buffer. Instead, KMixer adjusts the output rate when the buffer is first played.
 
--   The Sound Blaster emulator ([SBEmul system driver](kernel-mode-wdm-audio-components.md#sbemul-system-driver)) makes dynamic adjustments to its sample rate. KMixer maintains an output rate greater than or equal to that of the Sound Blaster emulator.
+-   The Sound Blaster emulator ([SBEmul system driver](kernel-mode-wdm-audio-components.md#sbemul_system_driver)) makes dynamic adjustments to its sample rate. KMixer maintains an output rate greater than or equal to that of the Sound Blaster emulator.
 
  
 

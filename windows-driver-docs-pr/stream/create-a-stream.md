@@ -2,12 +2,6 @@
 title: Create a Stream
 author: windows-driver-content
 description: Create a Stream
-MS-HAID:
-- 'avcsguide\_dbb9d67a-4e30-40d7-b2aa-27b1fe6b3fbb.xml'
-- 'stream.create\_a\_stream'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9984275f-7ead-4df2-aa98-a3b4e5e85ae0
 keywords: ["Avcstrm.sys streaming filter driver WDK , creating streams", "stream creation WDK AV/C streaming", "contexts WDK AV/C streaming"]
 ---
@@ -26,7 +20,7 @@ This is a synchronous operation. The operation first creates a stream request st
 #include <avcstrm.h>
 
 INIT_AVCSTRM_HEADER(pAVCStrmReq, AVCSTRM_OPEN);
-pAVCStrmReq->CommandData.OpenStruct.AVCFormatInfo =            &amp;AVCStrmFormatInfoTable[pDevExt->VideoFormatIndex]; 
+pAVCStrmReq->CommandData.OpenStruct.AVCFormatInfo =            &AVCStrmFormatInfoTable[pDevExt->VideoFormatIndex]; 
 pAVCStrmReq->CommandData.OpenStruct.AVCStreamContext = NULL;
 pAVCStrmReq->CommandData.OpenStruct.DataFlow         = DataFlow;
 

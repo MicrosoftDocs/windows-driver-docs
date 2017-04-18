@@ -2,12 +2,6 @@
 title: Printer Dirids
 author: windows-driver-content
 description: Printer Dirids
-MS-HAID:
-- 'prtinst\_e0288931-16eb-4ca0-8582-dd81639d5c99.xml'
-- 'print.printer\_dirids'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 104af180-c739-4733-b21b-448cfe15ab71
 keywords: ["INF files WDK print , dirids", "dirids WDK", "directory identifiers WDK printer", "printer dirids WDK", "identifiers WDK printer"]
 ---

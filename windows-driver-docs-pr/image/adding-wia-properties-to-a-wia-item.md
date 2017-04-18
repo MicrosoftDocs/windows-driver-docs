@@ -2,12 +2,6 @@
 title: Adding WIA Properties to a WIA Item
 author: windows-driver-content
 description: Adding WIA Properties to a WIA Item
-MS-HAID:
-- 'WIA\_drv\_basic\_5818e971-4b92-40fb-aa35-d6b8464770bd.xml'
-- 'image.adding\_wia\_properties\_to\_a\_wia\_item'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0cf4748f-c50a-4781-8b8d-3fb73e5d7242
 ---
 

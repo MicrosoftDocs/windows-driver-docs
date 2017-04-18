@@ -2,12 +2,6 @@
 title: Allocator Properties
 author: windows-driver-content
 description: Allocator Properties
-MS-HAID:
-- 'vidcapds\_d52040da-f423-434d-b85c-47f63764454d.xml'
-- 'stream.allocator\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 851bc3d8-46f6-46d0-87a8-81de2536492a
 keywords: ["allocator properties WDK video capture", "PROPSETID_ALLOCATOR_CONTROL"]
 ---

@@ -2,12 +2,6 @@
 title: Reading WIA Item Properties by a Driver
 author: windows-driver-content
 description: Reading WIA Item Properties by a Driver
-MS-HAID:
-- 'WIA\_drv\_basic\_100f2a84-58ba-4262-85d0-89e89a9a5230.xml'
-- 'image.reading\_wia\_item\_properties\_by\_a\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4e592c62-e8bf-4b25-9c65-5a0079d3a857
 ---
 

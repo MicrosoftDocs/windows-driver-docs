@@ -2,12 +2,6 @@
 title: GDL Attributes
 author: windows-driver-content
 description: GDL Attributes
-MS-HAID:
-- 'gplfiles\_9401dee4-6dd6-435b-82fe-cfe2c9ac62fc.xml'
-- 'print.gdl\_attributes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3dd314c7-33d6-47e0-90b2-512cbaf79a2b
 keywords: ["GDL WDK , attributes", "attributes WDK GDL", "GDL WDK , values", "GDL WDK , keywords", "attributes WDK GDL , examples", "keywords WDK GDL", "values WDK GDL"]
 ---

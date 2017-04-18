@@ -71,10 +71,10 @@ To make a callout driver that is registered with a transport layer (FWPS\_LAYER\
      layerData,
         FWPS_PACKET_LIST_INFORMATION_QUERY_IPSEC |
         FWPS_PACKET_LIST_INFORMATION_QUERY_INBOUND,
-        &amp;packetInfo
+        &packetInfo
         );
 
-    if (packetInfo.ipsecInformation.inbound.isTunnelMode &amp;&amp;
+    if (packetInfo.ipsecInformation.inbound.isTunnelMode &&
         !packetInfo.ipsecInformation.inbound.isDeTunneled)
     {
      classifyOut->actionType = FWP_ACTION_PERMIT;

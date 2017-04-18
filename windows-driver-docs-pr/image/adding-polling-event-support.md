@@ -2,12 +2,6 @@
 title: Adding Polling Event Support
 author: windows-driver-content
 description: Adding Polling Event Support
-MS-HAID:
-- 'WIA\_db\_event\_645eacba-1ef0-47a0-a2af-8d699fc599d2.xml'
-- 'image.adding\_polling\_event\_support'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7c7617d4-22d6-48a8-b69c-dd0347f078dd
 ---
 
@@ -86,8 +80,8 @@ STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
   // a pending event.
   //
 
-  pDevStatus->dwEventHandlingState &amp;= ~STI_EVENTHANDLING_PENDING;
-  if (pDevStatus->StatusMask &amp; STI_DEVSTATUS_EVENTS_STATE) {
+  pDevStatus->dwEventHandlingState &= ~STI_EVENTHANDLING_PENDING;
+  if (pDevStatus->StatusMask & STI_DEVSTATUS_EVENTS_STATE) {
 
     //
     // set the polled event result here, for the GetNotificationData()
@@ -96,7 +90,7 @@ STDMETHODIMP CWIADevice::GetStatus(PSTI_DEVICE_STATUS pDevStatus)
     //
 
     LONG lEventResult = 0;
-    PollMyDeviceForEvents(&amp;lEventResult)
+    PollMyDeviceForEvents(&lEventResult)
 
     if(lEventResult == DEVICE_SCAN_BUTTON_PRESSED) {
 

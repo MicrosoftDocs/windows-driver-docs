@@ -2,12 +2,6 @@
 title: Print Ticket Processing in the Print Driver
 author: windows-driver-content
 description: Print Ticket Processing in the Print Driver
-MS-HAID:
-- 'drvarch\_321d29d9-4920-4fa6-a8a7-c150aa143ba4.xml'
-- 'print.print\_ticket\_processing\_in\_the\_print\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a7295632-0133-4133-b62e-5526dcc12c7d
 keywords: ["Print Tickets WDK , print driver processing", "Print Tickets WDK , XPSDrv", "Print Tickets WDK , GDI-based print drivers"]
 ---

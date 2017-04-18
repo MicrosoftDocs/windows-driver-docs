@@ -2,12 +2,6 @@
 title: Improved Spooling and Rendering
 author: windows-driver-content
 description: Improved Spooling and Rendering
-MS-HAID:
-- 'drvarch\_ddfe3568-761f-46d4-b959-cdf7cbf3687e.xml'
-- 'print.improved\_spooling\_and\_rendering'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e385282-fbc8-4c4b-9070-19ee8290ddd6
 keywords: ["XPSDrv printer drivers WDK , spooling", "XPSDrv printer drivers WDK , rendering", "XPS spool files WDK XPSDrv", "spool files WDK print", "rendering plug-ins WDK print , XPSDrv"]
 ---

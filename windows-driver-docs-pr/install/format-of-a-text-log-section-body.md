@@ -140,7 +140,7 @@ The section body entries that are logged depend on the event level that is set f
 When SetupAPI creates a section that groups operations that apply to a device installation, it also recursively groups section body log entries in subsections. SetupAPI distinguishes subsections by the way it annotates and indents log entries. One such subsection appears in the following excerpt from a typical device installation section. The subsection begins with the log entry "dvi: {Build Driver List}" and ends with the log entry "dvi: {Build Driver List - exit(0x00000000)}". This subsection shows a typical sequence of log entries that include the *entry\_prefix*, *event\_category*, *indentation*, and *formatted\_message* fields. The SetupAPI operations that wrote the log entries also created the indentation and supplied the content of the formatted messages. The event level for this example was set to TXTLOG\_DETAILS and all category levels were enabled for this example.
 
 ```
->>>  [Device Install - PCI\VEN_104C&amp;DEV_8019&amp;SUBSYS_8010104C&amp;REV_00\3&amp;61aaa01&amp;0&amp;38]
+>>>  [Device Install - PCI\VEN_104C&DEV_8019&SUBSYS_8010104C&REV_00\3&61aaa01&0&38]
 >>>  2005/02/13 22:06:28.109: Section start
 ...
  Deleted section body log entries
@@ -148,7 +148,7 @@ When SetupAPI creates a section that groups operations that apply to a device in
      dvi: {Build Driver List}
      dvi:      Enumerating all INFs...
      dvi:      Found driver match:
-     dvi:           HardwareID - PCI\VEN_104C&amp;DEV_8019
+     dvi:           HardwareID - PCI\VEN_104C&DEV_8019
      dvi:           InfName    - C:\WINDOWS\inf\1394.inf
      dvi:           DevDesc    - Texas Instruments OHCI Compliant IEEE 1394 Host Controller
      dvi:           DrvDesc    - Texas Instruments OHCI Compliant IEEE 1394 Host Controller
@@ -159,7 +159,7 @@ When SetupAPI creates a section that groups operations that apply to a device in
  dvi:           Rank       - 0x00002001
      dvi:           DrvDate    - 10/01/2002
  dvi:           Version    - 6.0.5033.0 
-!!!  inf:      InfCache: Error flagging 1394.inf for match string pci\ven_104c&amp;dev_8019
+!!!  inf:      InfCache: Error flagging 1394.inf for match string pci\ven_104c&dev_8019
      dvi: {Build Driver List - exit(0x00000000)}
 ...
  Deleted section body log entries 

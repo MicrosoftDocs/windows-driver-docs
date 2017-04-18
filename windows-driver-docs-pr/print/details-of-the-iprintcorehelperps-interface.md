@@ -2,12 +2,6 @@
 title: Details of the IPrintCoreHelperPS Interface
 author: windows-driver-content
 description: Details of the IPrintCoreHelperPS Interface
-MS-HAID:
-- 'drvarch\_dc9b41ef-f0ca-47da-8d9e-a23a6f45e93a.xml'
-- 'print.details\_of\_the\_iprintcorehelperps\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0e00012c-6ced-4369-b367-675465e29d93
 keywords: ["IPrintCoreHelperPS"]
 ---

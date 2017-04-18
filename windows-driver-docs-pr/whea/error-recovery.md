@@ -2,12 +2,6 @@
 title: Error Recovery
 author: windows-driver-content
 description: Error Recovery
-MS-HAID:
-- 'whea\_ccd80781-b0e9-495b-8fb8-f6b463e2f991.xml'
-- 'whea.error\_recovery'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5710625f-bb65-41d4-a5c9-d61a48178859
 keywords: ["Windows Hardware Error Architecture WDK , error recovery", "WHEA WDK , error recovery", "hardware errors WDK WHEA , error recovery", "errors WDK WHEA , error recovery", "platform-specific hardware error driver plug-ins WDK WHEA , error recovery", "PSHED plug-ins WDK WHEA , error recovery", "error recovery WDK WHEA"]
 ---

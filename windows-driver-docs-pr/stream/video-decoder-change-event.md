@@ -2,12 +2,6 @@
 title: Video Decoder Change Event
 author: windows-driver-content
 description: Video Decoder Change Event
-MS-HAID:
-- 'vidcapds\_8488c281-8f2c-4330-a811-927f1a1c30a0.xml'
-- 'stream.video\_decoder\_change\_event'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 94269541-49e5-4273-874a-c6c2643ec2ae
 keywords: ["video decoder changed event WDK video capture", "decoder changed event WDK video capture", "events WDK video capture", "EVENTSETID_VIDEODECODER"]
 ---

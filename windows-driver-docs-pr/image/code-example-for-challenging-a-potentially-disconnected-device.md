@@ -2,12 +2,6 @@
 title: Code Example for Challenging a Potentially Disconnected Device
 author: windows-driver-content
 description: Code Example for Challenging a Potentially Disconnected Device
-MS-HAID:
-- 'WIA\_wsd\_scan\_86c08f57-176b-4929-8b45-9e0fb2b194ab.xml'
-- 'image.code\_example\_for\_challenging\_a\_potentially\_disconnected\_device'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 74633481-229f-4074-a84e-cc515eaaacd0
 ---
 
@@ -26,7 +20,7 @@ if (SUCCEEDED(hr))
     //
     hr = m_pFunctionInstance->QueryService(__uuidof(WSDScanProxy),
                                            __uuidof(IScanService),
-                                           (void**) &amp;m_pScanProxy);
+                                           (void**) &m_pScanProxy);
     if (FAILED(hr))
     {
         WIAS_ERROR((g_hInst, "IFunctionInstance::QueryService(WSDScanProxy, IScanService) failed, cannot activate ScanProxy, hr = 0x%08X", hr));
@@ -43,7 +37,7 @@ if (SUCCEEDED(hr))
     //
     // Retrieve the IScanServiceEvents interface from the ScanProxy
     //
-    hr = m_pScanProxy->QueryInterface(__uuidof(IScanServiceEvents), (void**)&amp;m_pScanEvents);
+    hr = m_pScanProxy->QueryInterface(__uuidof(IScanServiceEvents), (void**)&m_pScanEvents);
     if (FAILED(hr))
     {
         WIAS_ERROR((g_hInst, "IScanService::QueryInterface(IScanServiceEvents) failed, hr = 0x%08X", hr));

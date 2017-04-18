@@ -2,12 +2,6 @@
 title: Exposing the Vendor Extensions of Your PTP Camera
 author: windows-driver-content
 description: Exposing the Vendor Extensions of Your PTP Camera
-MS-HAID:
-- 'WIA\_drv\_cam\_1be91650-22f8-480a-b908-baf79b245e7c.xml'
-- 'image.exposing\_the\_vendor\_extensions\_of\_your\_ptp\_camera'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b3a8b70b-c7ac-4e45-97bb-9b58e013100d
 ---
 

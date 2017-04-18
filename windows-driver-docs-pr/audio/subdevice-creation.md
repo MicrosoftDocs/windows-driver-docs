@@ -59,7 +59,7 @@ The following code example shows how the adapter driver performs these actions:
   // Instantiate the port by calling a function supplied by PortCls.
   //
   PPORT    port;
-  NTSTATUS ntStatus = PcNewPort(&amp;port, PortClassId);
+  NTSTATUS ntStatus = PcNewPort(&port, PortClassId);
 
   if (NT_SUCCESS(ntStatus))
   {
@@ -69,12 +69,12 @@ The following code example shows how the adapter driver performs these actions:
       //
       if (MiniportCreate)   // a function to create a proprietary miniport
       {
-          ntStatus = MiniportCreate(&amp;miniport,
+          ntStatus = MiniportCreate(&miniport,
                                     MiniportClassId, NULL, NonPagedPool);
       }
       else   // Ask PortCls for one of its built-in miniports.
  {
-          ntStatus = PcNewMiniport((PMINIPORT*)&amp;miniport,
+          ntStatus = PcNewMiniport((PMINIPORT*)&miniport,
                                    MiniportClassId);
  }
 

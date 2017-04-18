@@ -1,10 +1,7 @@
 ---
-title: HID Architecture
+title: Architecture and overview
 author: windows-driver-content
 description: This section describes the driver stack for devices that support HID over the I²C transport.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 99384729-552C-4847-AA35-E0D413018104
 ---
 

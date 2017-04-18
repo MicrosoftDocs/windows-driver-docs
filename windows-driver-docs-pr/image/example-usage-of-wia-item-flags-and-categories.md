@@ -2,12 +2,6 @@
 title: Example Usage of WIA Item Flags and Categories
 author: windows-driver-content
 description: Example Usage of WIA Item Flags and Categories
-MS-HAID:
-- 'WIA\_tree\_de7bbff9-eb08-4485-aad7-fc24da3b5304.xml'
-- 'image.example\_usage\_of\_wia\_item\_flags\_and\_categories'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8c9f7d85-6c84-4df9-9db3-6554d7eddf93
 ---
 
@@ -60,7 +54,7 @@ PROPVARIANT pv[2] = {0};
 hr = pIWiaPropertyStorage->ReadMultiple(2, ps, pv);
 if (hr == S_OK)
 {
-    if (pv[0].lVal &amp; WiaItemTypeProgrammableDataSource)
+    if (pv[0].lVal & WiaItemTypeProgrammableDataSource)
     {
         // Item is a programmable data source.
     }
@@ -70,19 +64,19 @@ if (hr == S_OK)
         // some data associated with the device, or a folder.
         // Use the WIA item flags to further classify the item.
 
-        if (pv[0].lVal &amp; WiaItemTypeImage)
+        if (pv[0].lVal & WiaItemTypeImage)
         {
             // Item represents image data.
         }
-        if (pv[0].lVal &amp; WiaItemTypeAudio)
+        if (pv[0].lVal & WiaItemTypeAudio)
         {
             // Item represents audio data.
         }
-        if (pv[0].lVal &amp; WiaItemTypeVideo)
+        if (pv[0].lVal & WiaItemTypeVideo)
         {
             // Item represents video data.
         }
-        if (pv[0].lVal &amp; WiaItemTypeDocument)
+        if (pv[0].lVal & WiaItemTypeDocument)
         {
             // Item represents document data.
         }

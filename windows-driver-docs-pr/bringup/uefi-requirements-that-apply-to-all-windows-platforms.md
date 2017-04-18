@@ -2,9 +2,6 @@
 title: UEFI requirements that apply to all Windows editions on SoC platforms
 author: windows-driver-content
 description: This topic describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7A0B901E-1252-4F8F-B1CB-BA1AB7B01112
 ---
 

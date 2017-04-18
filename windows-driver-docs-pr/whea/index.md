@@ -2,12 +2,6 @@
 title: Windows Hardware Error Architecture (WHEA) design guide
 author: windows-driver-content
 description: Windows Hardware Error Architecture (WHEA) design guide
-MS-HAID:
-- 'whea\_85a09f70-65b3-4897-a74f-92c112271bb7.xml'
-- 'whea.design\_guide'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7a42bacd-cafe-48e0-8568-402738fd6e7c
 keywords: ["Windows Hardware Error Architecture WDK", "WHEA WDK", "hardware errors WDK WHEA", "errors WDK WHEA", "detecting hardware errors WDK", "reporting hardware errors WDK", "recovering from hardware errors WDK WHEA"]
 ---

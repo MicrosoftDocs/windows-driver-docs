@@ -35,8 +35,10 @@ You can subscribe to the NTFSD newsgroup for details about developing file syste
 
 OSR's "Developing File Systems for Windows" seminar explores developing file systems and File Systems and File System Filter Drivers. See [Training for IFS Developers](http://go.microsoft.com/fwlink/p/?linkid=50692).
 
+
+
 ## In this section
-This design gude includes the following sections:  
+This design guide includes the following sections:  
 
 * [File System Drivers](file-system-drivers.md)  
 * [File System Filter Drivers](file-system-filter-drivers.md)  
@@ -46,6 +48,5 @@ This design gude includes the following sections:
 * [Miscellaneous Information](miscellaneous-information.md)
 
 
+
 --------------------
-
-

@@ -2,9 +2,6 @@
 title: SerCx2 Custom-Receive Transactions
 author: windows-driver-content
 description: Some serial controller hardware might implement a data-transfer mechanism other than PIO or system DMA for reading data from a serial controller.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 29849A8C-6656-444C-BE91-405A4BA2D5B0
 ---
 

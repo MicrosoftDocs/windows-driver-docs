@@ -1,9 +1,6 @@
 ---
 title: HID Clients Supported in Windows
 author: windows-driver-content
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: E6584286-6BF1-40C7-83C1-D07077B13F3E
 description: 
 ---
@@ -30,11 +27,11 @@ Windows supports the following top-level collections:
 | 0x008C | 0x0002 | No | Yes(Windows 8.1 and later) | Yes | Barcode Scanner (hidscanner.dll) | Shared |
 
 
-In the preceding table, the access mode for input HID clients is Exclusive to prevent other HID clients intercepting or receiving global input state when they are not the target recipient of that input. Therefore for security reasons RIM (Raw Input Manager) opens all such devices exclusively. 
+In the preceding table, the access mode for input HID clients is Exclusive to prevent other HID clients from intercepting or receiving global input state when they are not the target recipient of that input. Therefore, for security reasons RIM (Raw Input Manager) opens all such devices exclusively. 
 
-Sharing mode allows multiple applications to access the device. For example, for barcode scanner multiple applications can inquire about the devices capabilities and retrieve statistics.  However, retrieving decoded data from a barcode scanner is done in exclusive mode. Usages are define by the [USB HID POS Scanner standard specification](https://go.microsoft.com/fwlink/?linkid=830661). 
+Sharing mode allows multiple applications to access the device. For example, multiple applications can access a barcode scanner to inquire about device capabilities and retrieve statistics. However, retrieving decoded data from a barcode scanner is done in Exclusive mode. Usages are defined by the [USB HID POS Scanner standard specification](https://go.microsoft.com/fwlink/?linkid=830661). 
 
-*Sensors usages from 0x00 – 0xFF are segmented for different purposes. For example 0x10 indicates a Biometric sensor; 0x40 indicates a Light sensor. Those allocations are not contiguous. For the list of sensor usages, see [Review Request 39:HID Usage Table Sensor Page](https://go.microsoft.com/fwlink/?linkid=830659). For information about the sensors usages that are supported in Windows, [HID Sensors Usages](https://go.microsoft.com/fwlink/?linkid=830658).
+*Multiple: Sensors usages from 0x00 – 0xFF are segmented for different purposes. For example 0x10 indicates a Biometric sensor; 0x40 indicates a Light sensor. Those allocations are not contiguous. For the list of sensor usages, see  [Review Request 39:HID Usage Table Sensor Page](https://go.microsoft.com/fwlink/?linkid=830659). For information about  sensors usages that are supported in Windows, [HID Sensors Usages](https://go.microsoft.com/fwlink/?linkid=830658).
 
  
 

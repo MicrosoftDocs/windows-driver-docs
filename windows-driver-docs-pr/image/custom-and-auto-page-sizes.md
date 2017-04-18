@@ -2,12 +2,6 @@
 title: Custom and Auto Page Sizes
 author: windows-driver-content
 description: Custom and Auto Page Sizes
-MS-HAID:
-- 'WIA\_drv\_scan\_60ca66f1-d3c0-4569-b465-33aecba0c2b1.xml'
-- 'image.custom\_and\_auto\_page\_sizes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a1f5f78d-fc05-4a7e-9d19-c7f40302b85f
 ---
 

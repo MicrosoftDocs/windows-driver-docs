@@ -2,9 +2,6 @@
 title: V4 Driver Manifest
 author: windows-driver-content
 description: The v4 print driver manifest is a text file that contains all the printer-specific setup directives. A v4 print driver manifest is used in conjunction with a v4 print driver INF file, as part of the set up for a printer-specific v4 print driver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 187A10B7-2AAC-46D9-998C-C8724D8E3862
 ---
 
@@ -180,8 +177,8 @@ PrintFax.Printer.Virtual</td>
 <p>Specifies a list of hardware IDs that match one or more device interfaces to be used for USB Bidi communications.</p></td>
 <td><p>None, but should only be supported if status is done over a USB interface that is not the print interface.</p></td>
 <td><p>BidiUSBStatusInterface=</p>
-<p>”USB\vid_1234&amp;pid_1234”,</p>
-<p>”USB\vid_1234&amp;pid_4567”</p></td>
+<p>”USB\vid_1234&pid_1234”,</p>
+<p>”USB\vid_1234&pid_4567”</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>UserPropertyBagScope</strong></p>

@@ -2,12 +2,6 @@
 title: Handling Data Type Negotiation in AVStream Codecs
 author: windows-driver-content
 description: Handling Data Type Negotiation in AVStream Codecs
-MS-HAID:
-- 'shed\_dg\_c8c5541a-4ff6-48dd-b191-078dde404780.xml'
-- 'stream.handling\_data\_type\_negotiation\_in\_avstream\_codecs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b5212429-dbc8-4e9a-b5a9-2431f8a1eb2a
 keywords: ["hardware codec support WDK AVStream , data type negotiation", "data type negotiation WDK AVStream", "AVStream hardware codec support WDK , handling data type negotiation"]
 ---
@@ -37,14 +31,14 @@ To enable successful data type negotiation, the minidriver must follow these ste
 
     ```
     const PKSDATARANGE VideoDecoderInputPinDataRanges[8] = {
-        (PKSDATARANGE)&amp;H264DataFormat,
-        (PKSDATARANGE)&amp;VC_1DataFormat,
-        (PKSDATARANGE)&amp;VC_1DataFormatVIH2,
-        (PKSDATARANGE)&amp;WMV9DataFormat,
-        (PKSDATARANGE)&amp;WMV9DataFormatVIH2,
-        (PKSDATARANGE)&amp;DX50DataFormat,
-        (PKSDATARANGE)&amp;DX50DataFormatVIH2,
-        (PKSDATARANGE)&amp;MPEG2DataFormat
+        (PKSDATARANGE)&H264DataFormat,
+        (PKSDATARANGE)&VC_1DataFormat,
+        (PKSDATARANGE)&VC_1DataFormatVIH2,
+        (PKSDATARANGE)&WMV9DataFormat,
+        (PKSDATARANGE)&WMV9DataFormatVIH2,
+        (PKSDATARANGE)&DX50DataFormat,
+        (PKSDATARANGE)&DX50DataFormatVIH2,
+        (PKSDATARANGE)&MPEG2DataFormat
     };
     ```
 

@@ -2,12 +2,6 @@
 title: GDL Contexts
 author: windows-driver-content
 description: GDL Contexts
-MS-HAID:
-- 'gplfiles\_08f6f1cc-a223-4236-a234-c231bc5eb2c1.xml'
-- 'print.gdl\_contexts'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 11916baa-fc56-43d9-bc08-e8fdf28f3fb8
 keywords: ["GDL WDK , contexts", "contexts WDK GDL"]
 ---

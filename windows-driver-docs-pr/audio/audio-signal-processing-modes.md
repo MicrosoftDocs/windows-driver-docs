@@ -116,7 +116,7 @@ HRESULT hr = S_OK;
 
 String ^defaultRender = Windows::Media::Devices::MediaDevice::GetDefaultAudioRenderId( Windows::Media::Devices::AudioDeviceRole::Default );
 
-hr = ActivateAudioInterfaceAsync( defaultRender->Data(), __uuidof( IAudioClient3 ), nullptr, this, &amp;asyncOp );
+hr = ActivateAudioInterfaceAsync( defaultRender->Data(), __uuidof( IAudioClient3 ), nullptr, this, &asyncOp );
 if ( FAILED( hr ) ) { … }
 …
 
@@ -127,11 +127,11 @@ HRESULT ActivateAudioInterfaceCompletionHandler::ActivateCompleted( IActivateAud
     IUnknown *pUnknown = nullptr;
     IAudioClient3 *pAudioClient3 = nullptr;
 
-    hr = activateOperation->GetActivateResult( &amp;hrActivateResult, &amp;pUnknown );
+    hr = activateOperation->GetActivateResult( &hrActivateResult, &pUnknown );
     if ( FAILED( hr ) )  { … }
     if ( FAILED( hrActivateResult ) ) { … }
     
-    hr = pUnknown->QueryInterface( IID_PPV_ARGS( &amp;pAudioClient3 ) );
+    hr = pUnknown->QueryInterface( IID_PPV_ARGS( &pAudioClient3 ) );
     if ( FAILED( hr ) ) { … }
 
     // The IAudioClient3::SetClientProperties call needs to happen after activation completes, 
@@ -139,7 +139,7 @@ HRESULT ActivateAudioInterfaceCompletionHandler::ActivateCompleted( IActivateAud
     AudioClientProperties props = {};
     props.cbSize = sizeof(props);
     props.eCategory = AudioCategory_GameEffects;
-    pAudioClient3->SetClientProperties( &amp;props );
+    pAudioClient3->SetClientProperties( &props );
     if ( FAILED( hr ) ) { … }
 
     hr = pAudioClient3->InitializeSharedAudioStream( … );

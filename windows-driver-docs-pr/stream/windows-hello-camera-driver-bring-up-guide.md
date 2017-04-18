@@ -2,9 +2,6 @@
 title: Windows Hello camera driver bring up guide
 author: windows-driver-content
 description: Windows Hello provides you the ability to enable face authentication to log on to a Windows 10 system or device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5CE619F4-E136-4F8F-8F90-F7F96DE4642E
 ---
 
@@ -39,7 +36,7 @@ There are two new face authentication DDI constructs available in Windows 10, v
 
 -   **MF\_CAPTURE\_METADATA\_FRAME\_ILLUMINATION**
 
-    This metadata attribute for IR cameras specifies that frames are using active IR illumination. For more information, see the **Mandatory metadata attributes** table in the [Photo capture feedback](standardized-extended-controls-.md#photo-capture-feedback--applied-device-settings-) section of the [Extended camera controls](standardized-extended-controls-.md) topic.
+    This metadata attribute for IR cameras specifies that frames are using active IR illumination. For more information, see the **Mandatory metadata attributes** table in the [Photo capture feedback](standardized-extended-controls-.md#photo-capture-feedback-applied-device-settings) section of the [Extended camera controls](standardized-extended-controls-.md) topic.
 
 ## USB camera support
 

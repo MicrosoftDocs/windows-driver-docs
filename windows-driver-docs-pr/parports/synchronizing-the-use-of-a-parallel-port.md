@@ -2,12 +2,6 @@
 title: Synchronizing the Use of a Parallel Port
 author: windows-driver-content
 description: Synchronizing the Use of a Parallel Port
-MS-HAID:
-- 'vspd\_3371cf0f-b94e-4a92-acf1-e30dd642f4f6.xml'
-- 'parports.synchronizing\_the\_use\_of\_a\_parallel\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ea3a1998-9e31-4047-9193-6b402db222c9
 keywords: ["parallel ports WDK , synchronization", "synchronization WDK parallel ports"]
 ---

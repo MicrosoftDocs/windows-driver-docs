@@ -2,9 +2,6 @@
 title: Input driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 19DD6B95-AAE7-4F40-BB48-7AA1C20BA01E
 ---
 

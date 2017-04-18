@@ -2,9 +2,6 @@
 title: Minidrivers and the HID class driver
 author: windows-driver-content
 description: The section includes the following topics about the operation of the HID class driver Operational features of the HID class driverBinding the operation of the HID class driver to a HID minidriverCommunicating with a HID minidriver.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3A8F5545-F8EB-47E2-989D-7DE83E32110E
 ---
 

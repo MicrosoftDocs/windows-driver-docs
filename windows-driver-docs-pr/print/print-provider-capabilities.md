@@ -2,12 +2,6 @@
 title: Print Provider Capabilities
 author: windows-driver-content
 description: Print Provider Capabilities
-MS-HAID:
-- 'splarch\_b0f015b5-65f7-4109-9e5e-1a0e0d235a9f.xml'
-- 'print.print\_provider\_capabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1b01aac5-673a-4593-a52e-6017d9683c42
 keywords: ["print providers WDK , capabilities"]
 ---

@@ -2,12 +2,6 @@
 title: Virtual Subunit Driver Stack
 author: windows-driver-content
 description: Virtual Subunit Driver Stack
-MS-HAID:
-- 'AVCguide\_0bf426ae-4d98-4f45-b6df-3e38e9b7a444.xml'
-- 'stream.virtual\_subunit\_driver\_stack'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5aa1804f-b871-4577-8e8a-ce4ad5150ee0
 keywords: ["virtual subunit driver stack WDK AV/C", "driver stacks WDK AV/C", "stacks WDK AV/C", "subunit support WDK AV/C", "AV/C WDK , driver stacks", "Avc.sys function driver WDK , driver stacks", "compatible IDs WDK AV/C"]
 ---

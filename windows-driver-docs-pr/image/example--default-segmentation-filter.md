@@ -2,12 +2,6 @@
 title: Example Default Segmentation Filter
 author: windows-driver-content
 description: Example Default Segmentation Filter
-MS-HAID:
-- 'WIA\_tree\_316d3a51-b4ab-46d0-961a-51c3b5465189.xml'
-- 'image.example\_\_default\_segmentation\_filter'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 96c74ca6-0162-4991-b3f9-86c17c92ffc3
 ---
 
@@ -35,7 +29,7 @@ SegFilter::DetectRegions(
     {
         ReadPropertyLong(pWiaItem2,
                          WIA_IPA_ITEM_CATEGORY,
-                         &amp;categoryGUID);
+                         &categoryGUID);
  
         if (categoryGUID == WIA_CATEGORY_FILM)
         {
@@ -56,7 +50,7 @@ SegFilter::DetectRegions(
  
     ...
  
-    if (SUCCEEDED(hr) &amp;&amp; bUseDefaultFilter)
+    if (SUCCEEDED(hr) && bUseDefaultFilter)
     {
         //
         // This must be on the flatbed item - use the Microsoft Default WIA Segmentation Filter.
@@ -68,7 +62,7 @@ SegFilter::DetectRegions(
                               NULL,
                               CLSCTX_INPROC_SERVER,
                               IID_IWiaSegmentationFilter,
-                              reinterpret_cast<void **>(&amp;pDefaultSegFilter));
+                              reinterpret_cast<void **>(&pDefaultSegFilter));
         if (SUCCEEDED(hr))
         {
             hr = pDefaultSegFilter->DetectRegions(lFlags, pInputStream, pWiaItem2);

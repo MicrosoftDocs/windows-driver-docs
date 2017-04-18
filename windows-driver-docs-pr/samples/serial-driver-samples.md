@@ -2,9 +2,6 @@
 title: Serial driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: C4C6ED0B-50EA-4483-A81F-FC3C7F5CCE12
 ---
 

@@ -2,12 +2,6 @@
 title: IPrintCorePS2 COM Interface
 author: windows-driver-content
 description: IPrintCorePS2 COM Interface
-MS-HAID:
-- 'custdrvr\_ce996d8f-a683-49d5-9229-ec21da9a7300.xml'
-- 'print.iprintcoreps2\_com\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d5eb6962-2201-405f-9a22-2b11fb6d0360
 keywords: ["IPrintCorePS2"]
 ---

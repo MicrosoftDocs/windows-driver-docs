@@ -26,7 +26,7 @@ The framework represents each USB device as a framework USB device object. A UMD
 To use the framework's USB I/O target capabilities, a UMDF driver must first obtain a pointer to the [IWDFUsbTargetFactory](https://msdn.microsoft.com/library/windows/hardware/ff560387) interface. To obtain the pointer, the driver must call the **QueryInterface** method of the device's [IWDFDevice](https://msdn.microsoft.com/library/windows/hardware/ff556917) interface. The following code example shows how to call **QueryInterface** to obtain the pointer:
 
 ```
-hr = pdevice->QueryInterface(IID_IWDFUsbTargetFactory, (LPVOID*)&amp;ppUsbTargetFactory);
+hr = pdevice->QueryInterface(IID_IWDFUsbTargetFactory, (LPVOID*)&ppUsbTargetFactory);
 ```
 
 The driver must next call the [**IWDFUsbTargetFactory::CreateUsbTargetDevice**](https://msdn.microsoft.com/library/windows/hardware/ff560390) method to create a USB I/O target object for the device. After the driver creates the USB I/O target, the driver can send requests to the I/O target. Typically, drivers call **IWDFUsbTargetFactory::CreateUsbTargetDevice** from within an [**IPnpCallbackHardware::OnPrepareHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556766) callback function.

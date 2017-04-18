@@ -2,12 +2,6 @@
 title: Allocating Memory for Data
 author: windows-driver-content
 description: Allocating Memory for Data
-MS-HAID:
-- 'WIA\_db\_trans\_f3f797e8-48de-4bee-a59c-4ead8b09efa2.xml'
-- 'image.allocating\_memory\_for\_data'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 15df5616-ddce-44ec-bd10-65cae0d95cf4
 ---
 
@@ -163,7 +157,7 @@ HRESULT _stdcall CWIADevice::drvAcquireItemData(
     // Driver allocated the buffer for data transfers
     //
 
-    hr = wiasReadPropLong(pWiasContext, WIA_IPA_BUFFER_SIZE, &amp;lClassDrvAllocSize,NULL,TRUE);
+    hr = wiasReadPropLong(pWiasContext, WIA_IPA_BUFFER_SIZE, &lClassDrvAllocSize,NULL,TRUE);
     if (FAILED(hr)) {
 
       //
@@ -233,16 +227,16 @@ HRESULT _stdcall CWIADevice::drvAcquireItemData(
       //
 
       LONG lDepth = 0;
-      hr = wiasReadPropLong(pWiasContext, WIA_IPA_DEPTH, &amp;lDepth,NULL,TRUE);
+      hr = wiasReadPropLong(pWiasContext, WIA_IPA_DEPTH, &lDepth,NULL,TRUE);
       if (hr == S_OK) {
 
         LONG lPixelsPerLine = 0;
-        hr = wiasReadPropLong(pWiasContext, WIA_IPA_PIXELS_PER_LINE, &amp;lPixelsPerLine,NULL,TRUE);
+        hr = wiasReadPropLong(pWiasContext, WIA_IPA_PIXELS_PER_LINE, &lPixelsPerLine,NULL,TRUE);
         if (hr == S_OK) {
 
             LONG lBytesPerLineRaw     = ((lPixelsPerLine * lDepth) + 7) / 8;
             LONG lBytesPerLineAligned = (lPixelsPerLine * lDepth) + 31;
-            lBytesPerLineAligned      = (lBytesPerLineAligned / 8) &amp; 0xfffffffc;
+            lBytesPerLineAligned      = (lBytesPerLineAligned / 8) & 0xfffffffc;
             LONG lTotalImageBytes     = pmdtc->lImageSize + pmdtc->lHeaderSize;
             LONG lBytesReceived       = pmdtc->lHeaderSize;
             lBytesTransferredToApplication = 0;
@@ -320,7 +314,7 @@ HRESULT _stdcall CWIADevice::drvAcquireItemData(
             // request byte amount from device
             //
 
-            hr = GetDataFromMyDevice(pmdtc->pTransferBuffer, lBytesToReadFromDevice, (DWORD*)&amp;lBytesReceived);
+            hr = GetDataFromMyDevice(pmdtc->pTransferBuffer, lBytesToReadFromDevice, (DWORD*)&lBytesReceived);
             if (FAILED(hr)) {
                 break;
             }

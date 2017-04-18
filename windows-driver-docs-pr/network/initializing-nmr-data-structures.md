@@ -61,8 +61,8 @@ const NPI_CLIENT_CHARACTERISTICS Characteristics =
   {
     0,
     sizeof(NPI_REGISTRATION_INSTANCE),
-    &amp;NPI_WSK_INTERFACE_ID,
-    &amp;ModuleId,
+    &NPI_WSK_INTERFACE_ID,
+    &ModuleId,
     0,
     NULL
   }
@@ -92,9 +92,9 @@ NTSTATUS
 
   // Register the WSK application with the NMR
   Status = NmrRegisterClient(
-    &amp;Characteristics,
+    &Characteristics,
     NULL,
-    &amp;RegistrationHandle
+    &RegistrationHandle
     );
 
   if(!NT_SUCCESS(Status)) {

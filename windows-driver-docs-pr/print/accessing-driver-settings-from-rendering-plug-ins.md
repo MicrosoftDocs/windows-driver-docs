@@ -2,12 +2,6 @@
 title: Accessing Driver Settings from Rendering Plug-Ins
 author: windows-driver-content
 description: Accessing Driver Settings from Rendering Plug-Ins
-MS-HAID:
-- 'custdrvr\_3833c8b0-ca94-4a38-bc86-1e2a3725dbb8.xml'
-- 'print.accessing\_driver\_settings\_from\_rendering\_plug\_ins'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d13526f5-85e1-4036-98fb-aea2c6d5a1e3
 keywords: ["rendering plug-ins WDK print , accessing driver settings", "status information WDK print plug-ins"]
 ---

@@ -2,9 +2,6 @@
 title: Keyboard and mouse HID client drivers
 author: windows-driver-content
 description: This topic discusses keyboard and mouse HID client drivers. Keyboards and mice represent the first set of HID clients that were standardized in the HID Usage tables and implemented in Windows operating systems.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: DAD50261-7619-4554-B864-9158A0FA1ACE
 keywords: ["HID keyboard driver", "keyboard drivers, HID", "HID keyboard driver for Windows", "HID mouse driver", "mouse drivers, HID", "HID mouse driver for Windows"]
 ---

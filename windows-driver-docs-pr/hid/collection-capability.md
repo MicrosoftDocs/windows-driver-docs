@@ -2,12 +2,6 @@
 title: Collection Capability
 author: windows-driver-content
 description: Collection Capability
-MS-HAID:
-- 'hidclass\_85321b44-d36f-45c8-9567-b139e927098d.xml'
-- 'hid.collection\_capability'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 228fab4f-ff90-43c5-bc68-26b29e8a7dd6
 keywords: ["capabilities WDK HID collections", "summary capabilities WDK HID"]
 ---

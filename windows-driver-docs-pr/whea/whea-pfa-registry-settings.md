@@ -2,12 +2,6 @@
 title: WHEA Policy Settings
 author: windows-driver-content
 description: WHEA Policy Settings
-MS-HAID:
-- 'whea\_debddb4d-3e88-4a49-8add-5abd2832fec8.xml'
-- 'whea.whea\_pfa\_registry\_settings'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 65ef70b7-a517-4428-9e6d-09c6da84e798
 keywords: ["predictive failure analysis (PFA) WDK WHEA , registry settings", "registry settings WDK WHEA", "registry settings WDK WHEA , predictive failure analysis (PFA)", "policy settings WDK WHEA"]
 ---

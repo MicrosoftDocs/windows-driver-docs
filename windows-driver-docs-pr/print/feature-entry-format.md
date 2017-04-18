@@ -2,12 +2,6 @@
 title: Feature Entry Format
 author: windows-driver-content
 description: Feature Entry Format
-MS-HAID:
-- 'nt5gpd\_2d17dfc1-0692-4ce3-a193-dc758be2ad3c.xml'
-- 'print.feature\_entry\_format'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f4e91611-aa68-4426-82ef-9ad3f09d62f2
 keywords: ["printer features WDK Unidrv , entry format", "formats WDK printer features"]
 ---
@@ -48,7 +42,7 @@ For example, a GPD file might contain the following specification of the standar
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.10
-            *Cmd: "<1B>&amp;l1H"
+            *Cmd: "<1B>&l1H"
         }
         *Constraints: PaperSize.Env10
     }
@@ -58,7 +52,7 @@ For example, a GPD file might contain the following specification of the standar
         *Command: CmdSelect
         {
             *Order: DOC_SETUP.10
-            *Cmd: "<1B>&amp;l2H"
+            *Cmd: "<1B>&l2H"
         }
         *Installable?: TRUE
     }

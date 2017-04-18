@@ -2,12 +2,6 @@
 title: Opening and Closing a Parallel Port
 author: windows-driver-content
 description: Opening and Closing a Parallel Port
-MS-HAID:
-- 'vspd\_30166531-5586-4e06-98be-b7e7e3f6489f.xml'
-- 'parports.opening\_and\_closing\_a\_parallel\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2183ffd9-8265-4848-b5d1-703643e0d0e6
 keywords: ["parallel ports WDK , opening", "parallel ports WDK , closing", "parallel ports WDK , sharing"]
 ---

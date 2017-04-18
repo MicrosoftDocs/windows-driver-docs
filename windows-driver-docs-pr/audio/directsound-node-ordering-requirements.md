@@ -31,7 +31,7 @@ A 2D pin requires all the nodes in the previous list, except for the 3D node, wh
 
 The SRC (sample-rate conversion) node should precede the SUM node. The SRC and SUM nodes are typically adjacent, although this is not a requirement. The **IDirectSoundBuffer::SetFrequency** method (see Microsoft Windows SDK documentation) perturbs the SRC node's resampling rate.
 
-A mixer that contains only SRC and SUM nodes is sufficient for mixing streams that are managed by system drivers such as SWMidi and Redbook (see [SWMidi System Driver](kernel-mode-wdm-audio-components.md#swmidi-system-driver) and [Redbook System Driver](kernel-mode-wdm-audio-components.md#redbook-system-driver)), but DirectSound additionally requires that two volume nodes and a supermixer node precede the SUM node. DirectSound sends volume changes resulting from **IDirectSoundBuffer::SetVolume** calls to the first volume node and sends panning effects from **IDirectSoundBuffer::SetPan** calls to the second volume node.
+A mixer that contains only SRC and SUM nodes is sufficient for mixing streams that are managed by system drivers such as SWMidi and Redbook (see [SWMidi System Driver](kernel-mode-wdm-audio-components.md#swmidi_system_driver) and [Redbook System Driver](kernel-mode-wdm-audio-components.md#redbook_system_driver)), but DirectSound additionally requires that two volume nodes and a supermixer node precede the SUM node. DirectSound sends volume changes resulting from **IDirectSoundBuffer::SetVolume** calls to the first volume node and sends panning effects from **IDirectSoundBuffer::SetPan** calls to the second volume node.
 
 DirectSound can produce 3D effects on a 2D pin by using the **SetVolume**, **SetPan**, and **SetFrequency** calls to control the volume and SRC nodes:
 

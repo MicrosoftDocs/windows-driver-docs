@@ -54,7 +54,7 @@ The GUIDs for the available compressed audio formats are listed in the following
 <td align="left"><p>0x03</p></td>
 <td align="left"><p>00000003-0cea-0010-8000-00aa00389b71</p>
 <p>KSDATAFORMAT_SUBTYPE_IEC61937_MPEG1</p></td>
-<td align="left"><p>MPEG-1 (Layer1 &amp; 2)</p></td>
+<td align="left"><p>MPEG-1 (Layer1 & 2)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x04</p></td>

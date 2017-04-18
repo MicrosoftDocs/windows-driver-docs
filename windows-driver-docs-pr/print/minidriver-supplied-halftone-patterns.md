@@ -2,12 +2,6 @@
 title: Minidriver-Supplied Halftone Patterns
 author: windows-driver-content
 description: Minidriver-Supplied Halftone Patterns
-MS-HAID:
-- 'nt5gpd\_8798c3d9-ca44-47b2-b349-a04e0e3c3157.xml'
-- 'print.minidriver\_supplied\_halftone\_patterns'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: db2e1c5c-f337-4875-980d-a75a54a4cece
 keywords: ["GDI-supplied halftoning WDK Unidrv", "minidriver-supplied halftoning WDK Unidrv"]
 ---
@@ -23,7 +17,7 @@ When GDI-supported halftone methods are being used, GDI allows specification of 
 -   The \*rcHTPatternID, \*HTPatternSize and \*HTNumPatterns attributes allow you to describe halftone patterns that are stored in a resource DLL. Halftone pattern resources are three-dimensional arrays of binary data, starting on a DWORD address boundary. They can be specified using the following format, which calculates the correct size and provides the required address alignment:
 
     ```
-    BYTE HTPatternResource [HTNumPatterns][(HTPatternSize.y*HTPatternSize.x+3) &amp; ~3];
+    BYTE HTPatternResource [HTNumPatterns][(HTPatternSize.y*HTPatternSize.x+3) & ~3];
     ```
 
     Within an .rc file used to create a resource DLL, the pattern might be specified as follows:

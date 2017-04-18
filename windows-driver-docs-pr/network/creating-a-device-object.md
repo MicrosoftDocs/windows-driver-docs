@@ -36,7 +36,7 @@ NTSTATUS
       FILE_DEVICE_UNKNOWN,
       FILE_DEVICE_SECURE_OPEN,
       FALSE,
-      &amp;deviceObject
+      &deviceObject
       );
 
   ...
@@ -69,7 +69,7 @@ NTSTATUS
  deviceInit =
  WdfControlDeviceInitAllocate(
     driver;
-    &amp;SDDL_DEVOBJ_KERNEL_ONLY
+    &SDDL_DEVOBJ_KERNEL_ONLY
     );
 
   // Set the device characteristics
@@ -82,9 +82,9 @@ NTSTATUS
   // Create a framework device object
  status =
  WdfDeviceCreate(
-    &amp;deviceInit,
+    &deviceInit,
     WDF_NO_OBJECT_ATTRIBUTES,
-    &amp;wdfDevice
+    &wdfDevice
     );
 
   // Check status

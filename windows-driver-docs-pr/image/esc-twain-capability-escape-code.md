@@ -2,12 +2,6 @@
 title: ESC\_TWAIN\_CAPABILITY Escape Code
 author: windows-driver-content
 description: ESC\_TWAIN\_CAPABILITY Escape Code
-MS-HAID:
-- 'WIA\_drv\_scan\_153c2505-2b1a-4e1c-8fd1-f07d8173d96c.xml'
-- 'image.esc\_twain\_capability\_escape\_code'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 3fd3f03b-ea72-4151-a19c-3e71cf3193fa
 ---
 
@@ -119,7 +113,7 @@ STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
            pInHeader  = (TWAIN_CAPABILITY*)lpInData;
            pOutHeader = (TWAIN_CAPABILITY*)pOutData;
 
-           if(pInHeader &amp;&amp; pOutHeader) {
+           if(pInHeader && pOutHeader) {
          // Check the headers to determine the operation to perform.
 
                switch(pInHeader->lCapID) {
@@ -273,7 +267,7 @@ STDMETHODIMP CWIADevice::Escape(STI_RAW_CONTROL_CODE EscapeFunction,
                      break;
                  }
                } // End switch(pInHeader->lCapID)
-           } // End if (pInHeader &amp;&amp; pOutHeader)
+           } // End if (pInHeader && pOutHeader)
        }
     }
   }

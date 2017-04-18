@@ -2,12 +2,6 @@
 title: Sample Application for UVC Extension Units
 author: windows-driver-content
 description: Sample Application for UVC Extension Units
-MS-HAID:
-- 'uvcds\_4f4db094-13e5-4915-9525-14a381ec9221.xml'
-- 'stream.sample\_application\_for\_uvc\_extension\_units'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f900b0b1-3469-442f-8593-2094a0966d4a
 keywords: ["extension units WDK USB Video Class , samples, sample application", "sample code WDK USB Video Class , UVC extension units"]
 ---
@@ -26,7 +20,7 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
 ```
   // pUnkOuter is the unknown associated with the base filter
   hr = pUnkOuter->QueryInterface(__uuidof(IKsTopologyInfo), 
-                               (void **) &amp;pKsTopologyInfo);
+                               (void **) &pKsTopologyInfo);
   if (!SUCCEEDED(hr))
   {
         printf("Unable to obtain IKsTopologyInfo %x\n", hr);
@@ -35,7 +29,7 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
 
   hr = FindExtensionNode(pKsTopologyInfo,                                                                                                   
      GUID_EXTENSION_UNIT_DESCRIPTOR,
-     &amp;dwExtensionNode);
+     &dwExtensionNode);
   if (FAILED(hr))
   {
         printf("Unable to find extension node : %x\n", hr);
@@ -45,14 +39,14 @@ Also include in TestApp.cpp the code shown in [Supporting Autoupdate Events with
   hr = pKsTopologyInfo->CreateNodeInstance(
         dwExtensionNode, 
    __uuidof(IExtensionUnit), 
- (void **) &amp;pExtensionUnit);
+ (void **) &pExtensionUnit);
  if (FAILED(hr))
   {
         printf("Unable to create extension node instance : %x\n", hr);
  goto errExit;
   }
 
-  hr = pExtensionUnit->get_PropertySize(1, &amp;ulSize);
+  hr = pExtensionUnit->get_PropertySize(1, &ulSize);
   if (FAILED(hr))
   {
         printf("Unable to find property size : %x\n", hr);

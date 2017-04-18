@@ -2,12 +2,6 @@
 title: List
 author: windows-driver-content
 description: List
-MS-HAID:
-- 'autocfg\_b09207bc-8ac6-4303-9a3c-ef15f5a64523.xml'
-- 'print.list'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4cf1c1ea-f890-4f9d-96ea-b79790f6bc60
 keywords: ["List construct"]
 ---

@@ -2,12 +2,6 @@
 title: GDL Directives
 author: windows-driver-content
 description: GDL Directives
-MS-HAID:
-- 'gplfiles\_c2fcb03d-6d9d-4b59-a51f-6197cde16f4c.xml'
-- 'print.gdl\_directives'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7b7ba94f-9494-4477-b4f0-dd9fcfd1fccf
 keywords: ["GDL WDK , directives", "directives WDK GDL", "parser WDK GDL , directives"]
 ---

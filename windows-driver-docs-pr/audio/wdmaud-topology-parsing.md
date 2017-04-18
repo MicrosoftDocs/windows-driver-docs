@@ -11,7 +11,7 @@ keywords: ["WDMAud topology parsing WDK audio", "topology parsing WDK audio", "s
 ## <span id="wdmaud_topology_parsing"></span><span id="WDMAUD_TOPOLOGY_PARSING"></span>
 
 
-The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud-system-driver) parses destination mixer lines first before parsing the source mixer lines. The order in which WDMAud parses the destination lines is the reverse of that in which SysAudio discovers the lines. For example, the higher numbered pins are parsed first. Parsing starts at the immediate parent of the pin and moves in the upstream direction. Each node is translated according to these rules until the parser detects one of the following terminating conditions:
+The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) parses destination mixer lines first before parsing the source mixer lines. The order in which WDMAud parses the destination lines is the reverse of that in which SysAudio discovers the lines. For example, the higher numbered pins are parsed first. Parsing starts at the immediate parent of the pin and moves in the upstream direction. Each node is translated according to these rules until the parser detects one of the following terminating conditions:
 
 -   The current node being parsed is a SUM node.
 

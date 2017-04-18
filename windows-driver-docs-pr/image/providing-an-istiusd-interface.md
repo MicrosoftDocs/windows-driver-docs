@@ -2,12 +2,6 @@
 title: Providing an IStiUSD Interface
 author: windows-driver-content
 description: Providing an IStiUSD Interface
-MS-HAID:
-- 'WIA\_drv\_basic\_d74fc438-8db2-4f7d-a9a5-4c3e82bbc887.xml'
-- 'image.providing\_an\_istiusd\_interface'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ed15b56b-0b63-4983-a4ff-df379a2b9de9
 ---
 

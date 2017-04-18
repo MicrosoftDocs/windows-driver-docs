@@ -19,7 +19,7 @@ In response to a WM\_INITDIALOG message, the dialog box procedure initializes in
 
 ```
 if (SetupDiLoadClassIcon(
-        &amp;pTestPropPageData->DeviceInfoData->ClassGuid, &amp;ClassIcon, 
+        &pTestPropPageData->DeviceInfoData->ClassGuid, &ClassIcon, 
         NULL)) {
     OldIcon = (HICON)SendDlgItemMessage(
                         hDlg, 

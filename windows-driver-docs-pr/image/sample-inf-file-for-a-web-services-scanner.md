@@ -2,12 +2,6 @@
 title: Sample INF File for a Web Services Scanner
 author: windows-driver-content
 description: Sample INF File for a Web Services Scanner
-MS-HAID:
-- 'WIA\_wsd\_scan\_907841e5-254e-4460-b80c-c4161cf6f3c8.xml'
-- 'image.sample\_inf\_file\_for\_a\_web\_services\_scanner'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1e65739f-9216-4962-9108-60ba291ff052
 ---
 

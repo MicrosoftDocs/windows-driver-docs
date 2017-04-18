@@ -2,12 +2,6 @@
 title: Microsoft Printer Drivers
 author: windows-driver-content
 description: Microsoft Printer Drivers
-MS-HAID:
-- 'prndrv\_overview\_c4a8eeb9-3aac-41fd-a5fe-75d12cad4605.xml'
-- 'print.microsoft\_printer\_drivers'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6aa4b31c-8e1c-4506-b5ab-9e8440823319
 ---
 

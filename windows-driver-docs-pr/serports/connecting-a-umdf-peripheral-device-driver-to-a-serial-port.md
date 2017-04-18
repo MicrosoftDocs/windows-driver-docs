@@ -2,9 +2,6 @@
 title: Connecting a UMDF Peripheral Driver to a Serial Port
 author: windows-driver-content
 description: The UMDF driver for a peripheral device on a SerCx2-managed serial port requires certain hardware resources to operate the device. Included in these resources is the information that the driver needs to open a logical connection to the serial port.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 75FC5E79-59E9-4C07-9119-A4FE81CC318E
 ---
 
@@ -103,7 +100,7 @@ HRESULT hres;
 // Create the device path using the well-known resource hub
 // path name and the connection ID.
 //
-hres = StringCbPrintfW(&amp;szTargetPath[0],
+hres = StringCbPrintfW(&szTargetPath[0],
                        sizeof(DevicePath),
                        L"\\\\.\\RESOURCE_HUB\\%0*I64x",
                        (size_t)(sizeof(LARGE_INTEGER) * 2),
@@ -123,9 +120,9 @@ UMDF_IO_TARGET_OPEN_PARAMS openParams;
 openParams.dwShareMode = 0;
 openParams.dwCreationDisposition = OPEN_EXISTING;
 openParams.dwFlagsAndAttributes = FILE_FLAG_OVERLAPPED;
-hres = pRemoteTarget->OpenFileByName(&amp;szTargetPath[0],
+hres = pRemoteTarget->OpenFileByName(&szTargetPath[0],
                                      (GENERIC_READ | GENERIC_WRITE),
-                                     &amp;openParams);
+                                     &openParams);
 if (FAILED(hres))
 {
     // Error handling
@@ -150,7 +147,7 @@ if (SUCCEEDED(hres))
 {
     hres = pWdfDevice->CreateRequest(NULL, 
                                      pWdfDevice, 
-                                     &amp;pWdfIoRequest);
+                                     &pWdfIoRequest);
     if (FAILED(hres))
     {
         // Error handling
@@ -165,7 +162,7 @@ if (SUCCEEDED(hres))
                                                    inBufferSize, 
                                                    NULL,
                                                    pWdfIoRequest,
-                                                   &amp;pInputMemory);
+                                                   &pInputMemory);
     if (FAILED(hres))
     {
         // Error handling

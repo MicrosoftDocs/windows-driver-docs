@@ -2,12 +2,6 @@
 title: Creating a WIA Microdriver
 author: windows-driver-content
 description: Creating a WIA Microdriver
-MS-HAID:
-- 'WIA\_db\_hello\_9d3d469a-5d10-47cc-883d-fdd2a2c9a890.xml'
-- 'image.creating\_a\_wia\_microdriver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4f453569-d768-47fb-9b70-ebb51e303cf0
 ---
 

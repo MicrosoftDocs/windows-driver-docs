@@ -2,12 +2,6 @@
 title: WIA Error Handler Return Values
 author: windows-driver-content
 description: WIA Error Handler Return Values
-MS-HAID:
-- 'WIA\_error\_f07c3cd5-691c-4d2e-b965-c84be0faa11c.xml'
-- 'image.wia\_error\_handler\_return\_values'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9b8efcd7-e767-4344-b3a1-96b1898e102f
 ---
 
@@ -50,7 +44,7 @@ CErrHandler::ReportStatus(
     IN  LONG        lPercentComplete)
 {
     HRESULT hr = WIA_STATUS_NOT_HANDLED;
-    if ((hrStatus == WIA_ERROR_PAPER_JAM) &amp;&amp; HandleMessageNow())
+    if ((hrStatus == WIA_ERROR_PAPER_JAM) && HandleMessageNow())
     {
         ...
     }

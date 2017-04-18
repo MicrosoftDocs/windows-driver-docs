@@ -2,12 +2,6 @@
 title: VJoyD Minidriver Override
 author: windows-driver-content
 description: VJoyD Minidriver Override
-MS-HAID:
-- 'di\_da8c0829-b728-43fc-8a3b-88f2554e0b31.xml'
-- 'hid.vjoyd\_minidriver\_override'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a77d2464-7785-44a9-b527-2224d261feac
 keywords: ["joysticks WDK HID , overrides", "virtual joystick drivers WDK HID , overrides", "VJoyD WDK HID , overrides", "overriding virtual minidrivers WDK joysticks"]
 ---

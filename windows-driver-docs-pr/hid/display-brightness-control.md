@@ -1,10 +1,7 @@
 ---
 title: Display brightness control
 author: windows-driver-content
-description: A standardized solution to allow keyboards (external or embedded on laptops), to control a laptop’s or tablet’s screen brightness through HID.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
+description: Starting with Windows 8, a standardized solution has been added to allow keyboards (external or embedded on laptops), to control a laptop’s or tablet’s screen brightness through HID.
 ms.assetid: B22BA244-C5C6-4A50-AFE6-4E773194F18C
 ---
 

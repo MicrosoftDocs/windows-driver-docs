@@ -2,12 +2,6 @@
 title: Lists
 author: windows-driver-content
 description: Lists
-MS-HAID:
-- 'nt5gpd\_102dad2f-318c-426c-88d1-fc2dc6ec1ac8.xml'
-- 'print.lists'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 69b928fa-8348-437a-ac4d-677f272615dd
 keywords: ["GPD file entries WDK Unidrv , lists", "listing attributes WDK GPD files", "LIST keyword"]
 ---

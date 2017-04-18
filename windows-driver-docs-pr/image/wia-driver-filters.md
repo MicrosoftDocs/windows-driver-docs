@@ -2,12 +2,6 @@
 title: WIA Driver Filters
 author: windows-driver-content
 description: WIA Driver Filters
-MS-HAID:
-- 'WIA\_tree\_6ee44161-32a8-412f-864f-bd06ccc3cba3.xml'
-- 'image.wia\_driver\_filters'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e7e239b5-aaa5-4d7a-a872-2ad37af3d1a9
 ---
 

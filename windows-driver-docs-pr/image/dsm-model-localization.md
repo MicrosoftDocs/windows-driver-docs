@@ -2,12 +2,6 @@
 title: DSM Model Localization
 author: windows-driver-content
 description: DSM Model Localization
-MS-HAID:
-- 'dsm\_des\_theory\_b12c05ad-2c70-4d63-b489-571b6323bd3a.xml'
-- 'image.dsm\_model\_localization'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c5e5c47-d363-45d8-abe0-e265b7aa9c7a
 ---
 

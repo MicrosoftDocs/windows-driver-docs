@@ -2,12 +2,6 @@
 title: Creating a "Hello World" WIA Minidriver UI Extension
 author: windows-driver-content
 description: Creating a \ 0034;Hello World \ 0034; WIA Minidriver UI Extension
-MS-HAID:
-- 'WIA\_drv\_cus\_5f73e225-8a9f-41c3-b825-d4f30b1a44b0.xml'
-- 'image.creating\_a\_\_hello\_world\_\_wia\_minidriver\_ui\_extension'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8de1f8ca-f618-44d7-b6dd-c02cdee8a556
 ---
 
@@ -210,12 +204,12 @@ public:
 
     STDMETHODIMP_(ULONG) AddRef()
     {
-        return InterlockedIncrement(&amp;m_cRef);
+        return InterlockedIncrement(&m_cRef);
     }
 
     STDMETHODIMP_(ULONG) Release()
     {
-        if(InterlockedDecrement(&amp;m_cRef) == 0) {
+        if(InterlockedDecrement(&m_cRef) == 0) {
         delete this;
             return 0;
         }
@@ -287,11 +281,11 @@ public:
     }
     STDMETHODIMP_(ULONG) AddRef()
     {
-        return InterlockedIncrement(&amp;m_cRef);
+        return InterlockedIncrement(&m_cRef);
     }
     STDMETHODIMP_(ULONG) Release()
     {
-  if(InterlockedDecrement(&amp;m_cRef) == 0) {
+  if(InterlockedDecrement(&m_cRef) == 0) {
             delete this;
             return 0;
         }
@@ -299,7 +293,7 @@ public:
     }
     STDMETHODIMP CreateInstance(IUnknown __RPC_FAR *pUnkOuter,REFIID riid,void __RPC_FAR *__RPC_FAR *ppvObject)
     {
-        if ((pUnkOuter)&amp;&amp;(!IsEqualIID(riid,IID_IUnknown))) {
+        if ((pUnkOuter)&&(!IsEqualIID(riid,IID_IUnknown))) {
             return CLASS_E_NOAGGREGATION;
         }
 

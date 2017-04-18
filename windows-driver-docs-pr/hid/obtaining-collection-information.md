@@ -2,12 +2,6 @@
 title: Obtaining Collection Information
 author: windows-driver-content
 description: Obtaining Collection Information
-MS-HAID:
-- 'hidclass\_5bb7fb86-7d80-4e40-8437-e5f2357a3ad0.xml'
-- 'hid.obtaining\_collection\_information'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0568993b-ff50-48ac-a875-95ab643d6c28
 keywords: ["collections WDK HID , informatin gathering", "HID collections WDK , information gathering"]
 ---

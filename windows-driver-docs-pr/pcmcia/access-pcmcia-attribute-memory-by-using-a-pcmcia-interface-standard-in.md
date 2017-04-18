@@ -1,12 +1,6 @@
 ---
-title: Access PCMCIA Attribute Memory by Using a PCMCIA\_INTERFACE\_STANDARD Interface
+title: Access PCMCIA Attribute Memory Using PCMCIA_INTERFACE_STANDARD Interface
 description: Access PCMCIA Attribute Memory by Using a PCMCIA\_INTERFACE\_STANDARD Interface
-MS-HAID:
-- 'pamch1\_3e3e298d-5af2-46b3-b296-69006d4c6095.xml'
-- 'PCMCIA.access\_pcmcia\_attribute\_memory\_by\_using\_a\_pcmcia\_interface\_standard\_in'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cd73a8da-1441-4e95-a955-97235ad091ce
 keywords: ["PCMCIA_INTERFACE_STANDARD", "attribute memory WDK PCMCIA bus , PCMCIA_INTERFACE_STANDARD interface"]
 ---

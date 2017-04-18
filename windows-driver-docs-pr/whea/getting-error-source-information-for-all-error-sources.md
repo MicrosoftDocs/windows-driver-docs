@@ -2,12 +2,6 @@
 title: Getting Error Source Information for All Error Sources
 author: windows-driver-content
 description: Getting Error Source Information for All Error Sources
-MS-HAID:
-- 'whea\_5b2f202a-27a8-4c09-9cab-498964260af2.xml'
-- 'whea.getting\_error\_source\_information\_for\_all\_error\_sources'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 78e3a015-128d-44d1-b0ec-4da43c359090
 keywords: ["error sources WDK WHEA , getting information", "errors WDK WHEA , error sources", "WHEA WDK , getting error source information", "Windows Hardware Error Architecture WDK , getting error source information", "hardware error sources WDK WHEA , getting informati"]
 ---
@@ -51,7 +45,7 @@ Result =
     0,
     NULL,
     NULL,
-    &amp;pOutParameters,
+    &pOutParameters,
     NULL
     );
 
@@ -60,43 +54,43 @@ Result =
   pOutParameters->Get(
     L"Status",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
 Status = Parameter.ulval;
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Get the count from the output parameters object
 Result =
   pOutParameters->Get(
     L"Count",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
 Count = Parameter.ulval;
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Get the length from the output parameters object
 Result =
   pOutParameters->Get(
     L"Length",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
 Length = Parameter.ulval;
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Get the data buffer from the output parameters object
 Result =
   pOutParameters->Get(
     L"ErrorSourceArray",
     0,
-    &amp;Parameter,
+    &Parameter,
     NULL,
     NULL
     );
@@ -106,7 +100,7 @@ Array = Parameter.parray;
 Result =
   SafeArrayAccessData(
     Array,
-    &amp;ErrorSourceList
+    &ErrorSourceList
     );
 
 // Process the error source information.
@@ -121,7 +115,7 @@ Result =
 
 // Free the array containing the error source information
 SafeArrayUnaccessData(Array);
-VariantClear(&amp;Parameter);
+VariantClear(&Parameter);
 
 // Free up resources
 SysFreeString(ClassName);

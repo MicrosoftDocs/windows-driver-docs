@@ -2,12 +2,6 @@
 title: Installing Queue-Specific Files
 author: windows-driver-content
 description: Installing Queue-Specific Files
-MS-HAID:
-- 'prtinst\_7ffe66d4-14bf-4c89-bdf3-c10d4ae84a86.xml'
-- 'print.installing\_queue\_specific\_files'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 86cb16d5-6035-4a4d-a6b7-f27ebd3e9f5c
 keywords: ["Point and Print WDK , queue-specific files", "queue-specific files WDK printer", "print queues WDK , Point and Print", "queues WDK printer , Point and Print"]
 ---

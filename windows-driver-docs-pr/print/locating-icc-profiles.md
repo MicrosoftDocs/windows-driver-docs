@@ -2,12 +2,6 @@
 title: Locating ICC Profiles
 author: windows-driver-content
 description: Locating ICC Profiles
-MS-HAID:
-- 'printicm\_54bf89c4-59de-4368-b56d-312bc21cf1ba.xml'
-- 'print.locating\_icc\_profiles'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 828b53cd-452a-4c4d-bfbb-45ea674ef49a
 keywords: ["color management WDK print , locating ICC profiles", "ICC profiles WDK print"]
 ---

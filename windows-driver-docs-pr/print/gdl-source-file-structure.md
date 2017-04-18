@@ -2,12 +2,6 @@
 title: GDL Source File Structure
 author: windows-driver-content
 description: GDL Source File Structure
-MS-HAID:
-- 'gplfiles\_81af7e0f-e50f-4d25-af39-08477a510282.xml'
-- 'print.gdl\_source\_file\_structure'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e6f7bc9a-08ee-44e9-ae46-2a0097e017ff
 keywords: ["GDL WDK , source files", "source files WDK GDL", "GDL WDK , attributes", "attributes WDK GDL", "GDL WDK , constructs", "constructs WDK GDL", "GDL WDK , keywords", "keywords WDK GDL", "GDL WDK , values", "values WDK GDL"]
 ---

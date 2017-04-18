@@ -2,12 +2,6 @@
 title: Unidrv/PScript5 XPSDrv UI Behavior Changes
 author: windows-driver-content
 description: Unidrv/PScript5 XPSDrv UI Behavior Changes
-MS-HAID:
-- 'xpsconfig\_c363a98e-71cd-4fd6-9da2-648b3c6af562.xml'
-- 'print.unidrv\_pscript5\_xpsdrvui\_behavior\_changes'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7c594f40-8e75-4c8b-a60e-42f74116c75f
 ---
 

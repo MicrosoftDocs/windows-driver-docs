@@ -2,12 +2,6 @@
 title: INF PS2\_Inst.NoInterruptInit Section
 author: windows-driver-content
 description: INF PS2\_Inst.NoInterruptInit Section
-MS-HAID:
-- 'km-ovr\_0b7aba3c-079d-49ff-919f-001b35f50f2b.xml'
-- 'hid.inf\_ps2\_inst\_nointerruptinit\_section'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: e84cc7fc-8b17-4119-84f9-12ac888c68aa
 keywords: ["INF files WDK non-HID keyboard/mouse", "PS2_Inst.NoInterruptInit section"]
 ---

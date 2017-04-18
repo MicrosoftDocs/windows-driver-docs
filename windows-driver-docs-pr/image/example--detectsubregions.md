@@ -2,12 +2,6 @@
 title: Example DetectSubregions
 author: windows-driver-content
 description: Example DetectSubregions
-MS-HAID:
-- 'WIA\_tree\_72fee391-a26c-4553-8e34-1800b20ec1a0.xml'
-- 'image.example\_\_detectsubregions'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8fd5271a-587a-4b29-82a4-b84f70f5478f
 ---
 
@@ -35,7 +29,7 @@ DetectSubregions(
 
    if (SUCCEEDED(hr))
    {
-      hr = CreateSegmentationFilter(pWiaItem2, &amp;pSegmentationFilter);
+      hr = CreateSegmentationFilter(pWiaItem2, &pSegmentationFilter);
    }
 
    if (SUCCEEDED(hr))

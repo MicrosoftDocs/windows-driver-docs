@@ -2,9 +2,6 @@
 title: SerCx2 PIO-Receive Transactions
 author: windows-driver-content
 description: SerCx2 requires all serial controller drivers to implement support for receive transactions that use programmed I/O (PIO).
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 00C43A55-ACAF-4AB6-BDFB-F3D9350C4536
 ---
 

@@ -15,8 +15,8 @@ Microsoft provides an NDIS miniport driver, Rndismp.sys, which implements the Re
 
 To use the Remote NDIS driver with a USB device, an IHV must provide an INF file according to one of the following templates:
 
--   [RNDIS INF template for NDIS 5.1 (Windows XP and later)](#rndis-inf-template-for-ndis-5-1--windows-xp-and-later-)
--   [RNDIS INF template for NDIS 6.0 (Windows 7 and later)](#rndis-inf-template-for-ndis-6-0--windows-7-and-later-)
+-   [RNDIS INF template for NDIS 5.1 (Windows XP and later)](#rndis-inf-template-for-ndis-5-1-windows-xp-and-later)
+-   [RNDIS INF template for NDIS 6.0 (Windows 7 and later)](#rndis-inf-template-for-ndis-6-0-windows-7-and-later)
 
 ### RNDIS INF template for NDIS 5.1 (Windows XP and later)
 
@@ -45,15 +45,15 @@ DriverVer           =06/21/2006,6.0.6000.16384
 
 ; Decoration for x86 architecture
 [RndisDevices.NTx86]
-%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&PID_yyyy
 
 ; Decoration for x64 architecture
 [RndisDevices.NTamd64]
-%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&PID_yyyy
 
 ; Decoration for ia64 architecture
 [RndisDevices.NTia64]
-%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.5.1, USB\VID_xxxx&PID_yyyy
 
 ;@@@ This is the common setting for setup
 [ControlFlags]
@@ -117,15 +117,15 @@ DriverVer           = 07/21/2008,6.0.6000.16384
 
 ; Decoration for x86 architecture
 [RndisDevices.NTx86]
-%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&PID_yyyy
 
 ; Decoration for x64 architecture
 [RndisDevices.NTamd64]
-%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&PID_yyyy
 
 ; Decoration for ia64 architecture
 [RndisDevices.NTia64]
-%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&amp;PID_yyyy
+%RndisDevice%    = RNDIS.NT.6.0, USB\VID_xxxx&PID_yyyy
 
 ;@@@ This is the common setting for setup
 [ControlFlags]

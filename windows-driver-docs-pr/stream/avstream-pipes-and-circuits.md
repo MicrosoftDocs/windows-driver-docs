@@ -2,12 +2,6 @@
 title: AVStream Pipes and Circuits
 author: windows-driver-content
 description: AVStream Pipes and Circuits
-MS-HAID:
-- 'avsover\_ca51d1de-ca37-41d9-a4f4-30c765376010.xml'
-- 'stream.avstream\_pipes\_and\_circuits'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e4db0da-7faf-4155-ab9d-f8651db834ec
 keywords: ["AVStream allocators WDK", "allocators WDK AVStream", "user-mode sources WDK AVStream", "frames WDK AVStream", "transform filters WDK AVStream", "pipes WDK AVStream", "AVStream pipes WDK", "sharing allocators WDK AVStream", "inplace transform filters WDK AVStream", "source filter WDK AVStream", "renderer filters WDK AVStream", "non-inplace transform filters WDK AVStream", "circuits WDK AVStream"]
 ---

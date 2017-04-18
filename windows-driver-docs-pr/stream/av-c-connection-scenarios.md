@@ -2,12 +2,6 @@
 title: AV/C Connection Scenarios
 author: windows-driver-content
 description: AV/C Connection Scenarios
-MS-HAID:
-- 'AVCguide\_dd80376c-bef0-4579-b269-be232d181c85.xml'
-- 'stream.av\_c\_connection\_scenarios'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 392f996c-47aa-4ceb-adf9-0c8fd114a511
 keywords: ["connections WDK AV/C", "AV/C WDK , connection scenarios", "digital video WDK AV/C", "DV WDK AV/C", "Set-Top Box WDK AV/C", "STB WDK AV/C", "TV WDK AV/C", "television WDK AV/C", "subunit support WDK AV/C", "intra-unit connections WDK AV/C", "inter-unit connections WDK AV/C", "Avc.sys function driver WDK , connections", "external plug connections WDK AV/C"]
 ---

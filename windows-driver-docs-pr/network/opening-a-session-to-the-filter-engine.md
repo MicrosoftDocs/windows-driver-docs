@@ -21,7 +21,7 @@ status =
     RPC_C_AUTHN_WINNT, // Use the Windows authentication service
     NULL,              // Use the calling thread&#39;s credentials
     NULL,              // There are no session-specific parameters
-    &amp;engineHandle      // Pointer to a variable to receive the handle
+    &engineHandle      // Pointer to a variable to receive the handle
     );
 ```
 

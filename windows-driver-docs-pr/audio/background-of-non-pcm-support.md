@@ -17,7 +17,7 @@ Several issues prevented earlier versions of Microsoft Windows from supporting n
 
 The software layer that separates waveOut applications from VxD wave drivers is fairly thin. Drivers and applications that support a custom wave format can stream data in that format regardless of whether the operating system understands the format.
 
-However, in Windows 2000 and Windows 98, the WDM audio framework forces all the audio data that is processed by the waveOut API (and DirectShow's waveOut renderer) to pass through the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver) (Kmixer.sys), which is the kernel audio mixer. A waveOutOpen call succeeds only if KMixer supports the format, regardless of whether the driver supports the format.
+However, in Windows 2000 and Windows 98, the WDM audio framework forces all the audio data that is processed by the waveOut API (and DirectShow's waveOut renderer) to pass through the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver) (Kmixer.sys), which is the kernel audio mixer. A waveOutOpen call succeeds only if KMixer supports the format, regardless of whether the driver supports the format.
 
 KMixer handles WAVE\_FORMAT\_PCM on all WDM operating systems. Windows 2000 and later, and Windows 98 SE, extend KMixer to support not only WAVE\_FORMAT\_IEEE\_FLOAT but also [**WAVEFORMATEXTENSIBLE**](https://msdn.microsoft.com/library/windows/hardware/ff538802) variants of PCM and IEEE-float formats. Because KMixer supports no non-PCM formats, an attempt to pass non-PCM data through KMixer fails.
 

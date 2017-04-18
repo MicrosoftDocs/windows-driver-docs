@@ -2,12 +2,6 @@
 title: Installing a Custom Plug and Play Printer Driver
 author: windows-driver-content
 description: Installing a Custom Plug and Play Printer Driver
-MS-HAID:
-- 'prtinst\_378b11b9-85a1-4a92-a0f1-3db68b87bf12.xml'
-- 'print.installing\_a\_custom\_plug\_and\_play\_printer\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0269afbe-c7d1-4227-ad77-b921852d6a0c
 keywords: ["customizing printer drivers WDK , Plug and Play"]
 ---

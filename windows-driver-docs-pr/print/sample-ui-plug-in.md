@@ -2,12 +2,6 @@
 title: Sample UI Plug-In
 author: windows-driver-content
 description: Sample UI Plug-In
-MS-HAID:
-- 'custdrvr\_ed878366-37ed-4619-b2d3-e46fc99e7e1f.xml'
-- 'print.sample\_ui\_plug\_in'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: a97b7769-c820-413e-96de-a1a2358c6979
 keywords: ["user interface plug-ins WDK print ,", "UI plug-ins WDK print ,"]
 ---

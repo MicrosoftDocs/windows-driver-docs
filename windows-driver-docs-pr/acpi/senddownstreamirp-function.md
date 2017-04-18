@@ -2,12 +2,6 @@
 title: SendDownStreamIrp Function
 author: windows-driver-content
 description: SendDownStreamIrp Function
-MS-HAID:
-- 'acpi-meth-eval-dg\_b374e5d4-529f-42b9-9ca2-49717d7154ec.xml'
-- 'acpi.senddownstreamirp\_function'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 09a06041-5b26-4796-b9b8-d7d27321d955
 ---
 
@@ -64,7 +58,7 @@ Return Value:
     PIRP                irp;
 
     // Initialize an event to wait on
-    KeInitializeEvent(&amp;myIoctlEvent, SynchronizationEvent, FALSE);
+    KeInitializeEvent(&myIoctlEvent, SynchronizationEvent, FALSE);
 
     // Build the request
     irp = IoBuildDeviceIoControlRequest(
@@ -75,8 +69,8 @@ Return Value:
         OutputBuffer,
         OutputSize,
         FALSE,
-        &amp;myIoctlEvent,
-        &amp;ioBlock);
+        &myIoctlEvent,
+        &ioBlock);
 
     if (!irp) {
         return STATUS_INSUFFICIENT_RESOURCES;
@@ -88,7 +82,7 @@ Return Value:
     if (status == STATUS_PENDING) {
         // Wait for the IRP to be completed, and then return the status code
         KeWaitForSingleObject(
-            &amp;myIoctlEvent,
+            &myIoctlEvent,
             Executive,
             KernelMode,
             FALSE,

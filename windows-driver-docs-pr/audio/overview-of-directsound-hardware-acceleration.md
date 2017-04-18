@@ -13,11 +13,11 @@ keywords: ["hardware acceleration WDK DirectSound , about DirectSound hardware a
 
 A number of audio adapters offer DirectSound hardware acceleration, which is the ability to perform hardware mixing for one or more DirectSound streams. Hardware mixing improves performance by offloading audio mixing operations from the CPU and performing them at hardware speeds. In addition to mixing, the hardware performs related operations such as sample-rate conversion (SRC), attenuation, and, optionally, 3D processing that would otherwise need to be performed in software.
 
-All WaveCyclic or WavePci rendering devices present one or more hardware pins for mixing audio streams. In the case of a single-stream device, the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer-system-driver) is always instantiated on the one available hardware rendering pin.
+All WaveCyclic or WavePci rendering devices present one or more hardware pins for mixing audio streams. In the case of a single-stream device, the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver) is always instantiated on the one available hardware rendering pin.
 
 Devices with DirectSound hardware acceleration provide more than one hardware mixing pin. Each additional pin can be used to mix a DirectSound stream. DirectSound streams that feed into hardware mixer pins bypass KMixer and avoid the latency of software mixing in KMixer. DirectSound makes use of all of an audio device's available hardware-accelerated mixer pins as long as those pins have a topology that conforms to the [DirectSound node-ordering requirements](directsound-node-ordering-requirements.md). DirectSound also requires that the pins support the DirectSound data format specified by KSDATAFORMAT\_SPECIFIER\_DSOUND (see [DirectSound Stream Data Format](directsound-stream-data-format.md)).
 
-The [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio-system-driver) always reserves one hardware pin for KMixer so that after the other (unreserved) hardware pins have all been allocated, any additional streams can be mixed by KMixer and fed into the reserved hardware pin.
+The [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver) always reserves one hardware pin for KMixer so that after the other (unreserved) hardware pins have all been allocated, any additional streams can be mixed by KMixer and fed into the reserved hardware pin.
 
 The figure in [Rendering Wave Content Using DirectSound Software and Hardware Buffers](rendering-wave-content-using-directsound-software-and-hardware-buffers.md) illustrates these concepts.
 

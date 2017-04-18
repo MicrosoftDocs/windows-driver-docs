@@ -2,12 +2,6 @@
 title: GetPrintCapabilities
 author: windows-driver-content
 description: The IPrintTicketProvider GetPrintCapabilities routine must return a valid PrintCapabilities document.
-MS-HAID:
-- 'drvarch\_F0269555-059E-4f7b-8295-274C33609E13.xml'
-- 'print.getprintcapabilities'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9c9bd387-5ea2-4758-a967-190a711cd8c3
 keywords: ["GetPrintCapabilities"]
 ---

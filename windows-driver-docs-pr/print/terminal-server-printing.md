@@ -2,12 +2,6 @@
 title: Terminal Server Printing
 author: windows-driver-content
 description: Terminal Server Printing
-MS-HAID:
-- 'printts\_a62ef23f-453b-45a4-9a41-7118bfb7346a.xml'
-- 'print.terminal\_server\_printing'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 627d05f6-1499-4645-ad9a-b1a09f41b0c9
 keywords: ["printer drivers WDK , terminal servers", "terminal server printing WDK"]
 ---

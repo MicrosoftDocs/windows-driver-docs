@@ -2,12 +2,6 @@
 title: Microsoft STI Components
 author: windows-driver-content
 description: Microsoft STI Components
-MS-HAID:
-- 'stillimg\_468c6c41-16ee-4752-9460-974d9dd8f56b.xml'
-- 'image.microsoft\_sti\_components'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 72084682-ce7a-40ff-9494-06054e953e7a
 ---
 

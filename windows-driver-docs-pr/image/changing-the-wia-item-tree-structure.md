@@ -2,12 +2,6 @@
 title: Changing the WIA Item Tree Structure
 author: windows-driver-content
 description: Changing the WIA Item Tree Structure
-MS-HAID:
-- 'WIA\_tree\_6e7a0162-0067-44cc-b5be-8c724d2593c2.xml'
-- 'image.changing\_the\_wia\_item\_tree\_structure'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fa6c9d25-4435-43ee-a262-9e267b9a0a69
 ---
 
@@ -66,7 +60,7 @@ HRESULT _stdcall CWIADevice::drvDeleteItem(BYTE *pWiasContext,
     BSTR bstrFullItemName = NULL;
     hr = wiasReadPropStr(pWiasContext,
                          WIA_IPA_FULL_ITEM_NAME,
-                         &amp;bstrFullItemName,NULL,TRUE);
+                         &bstrFullItemName,NULL,TRUE);
     if (hr == S_OK)
     {
         hr = HARDWARE_DELETE_DATA_FOR_ITEM();
@@ -78,7 +72,7 @@ HRESULT _stdcall CWIADevice::drvDeleteItem(BYTE *pWiasContext,
             //
 
             hr = wiasQueueEvent(m_bstrDeviceID,
-                                &amp;WIA_EVENT_ITEM_DELETED,
+                                &WIA_EVENT_ITEM_DELETED,
                                 bstrFullItemName);
         }
 

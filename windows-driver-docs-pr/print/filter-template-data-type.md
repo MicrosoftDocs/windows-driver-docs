@@ -2,12 +2,6 @@
 title: Filter Template Data Type
 author: windows-driver-content
 description: Filter Template Data Type
-MS-HAID:
-- 'gplfiles\_3f6657ae-df87-4dc5-9b56-366d2455f238.xml'
-- 'print.filter\_template\_data\_type'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cfbe8f39-9a8d-4e6b-91d8-f25926057e7b
 keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "FILTER_TYPE data type WDK GDL", "ArrayLabel directive WDK GDL", "ElementType directive WDK GDL", "FilterTypeName directive WDK GDL", "ElementTags directive WDK GDL"]
 ---
@@ -45,7 +39,7 @@ The following directives are used to completely define the FILTER\_TYPE data typ
 
 The value to be parsed must conform to the syntax that is defined for the specific filter type that the \*FilterTypeName directive specifies. The parser filter will convert and output this value into one or more XML data types, as specified earlier. If the conversion results in more than one XML element, each element will be tagged by using the names that are specified in the \*ElementTags directive.
 
-When emitting the XML snapshot, the parser will automatically represent special characters with the appropriate XML entity if they are present in the values of string filter types. For example, the ampersand character (&) is represented by t&amp; in the snapshot. You do not need to follow XML syntax rules when using parser filter defined data types.
+When emitting the XML snapshot, the parser will automatically represent special characters with the appropriate XML entity if they are present in the values of string filter types. For example, the ampersand character (&) is represented by t& in the snapshot. You do not need to follow XML syntax rules when using parser filter defined data types.
 
 Consider the following template.
 

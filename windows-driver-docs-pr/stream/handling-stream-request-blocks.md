@@ -2,12 +2,6 @@
 title: Handling Stream Request Blocks
 author: windows-driver-content
 description: Handling Stream Request Blocks
-MS-HAID:
-- 'strmini-design\_722ff500-4a65-44c2-bdd4-c5accbb7649e.xml'
-- 'stream.handling\_stream\_request\_blocks'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: fb4fda0d-54e9-4f1b-a78c-276e770189d5
 keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , SRBs", "streaming minidrivers WDK Windows 2000 Kernel , SRBs", "minidrivers WDK Windows 2000 Kernel Streaming , SRBs", "SRBs WDK streaming minidriver", "stream request blocks See SRB or SRBs"]
 ---

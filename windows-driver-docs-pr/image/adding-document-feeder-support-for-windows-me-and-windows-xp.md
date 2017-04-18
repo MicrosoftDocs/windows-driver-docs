@@ -2,12 +2,6 @@
 title: Adding Document Feeder Support for Windows Me and Windows XP
 author: windows-driver-content
 description: Adding Document Feeder Support for Windows Me and Windows XP
-MS-HAID:
-- 'WIA\_tree\_e525f7ac-1cad-4550-904a-4ea10bd94b39.xml'
-- 'image.adding\_document\_feeder\_support\_for\_windows\_me\_and\_windows\_xp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f3be94fa-6fb7-45de-a3ce-f3d173e802cf
 ---
 

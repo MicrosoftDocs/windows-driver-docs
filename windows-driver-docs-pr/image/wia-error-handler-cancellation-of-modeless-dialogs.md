@@ -2,12 +2,6 @@
 title: WIA Error Handler Cancellation of Modeless Dialogs
 author: windows-driver-content
 description: WIA Error Handler Cancellation of Modeless Dialogs
-MS-HAID:
-- 'WIA\_error\_f0aece82-7291-4903-a0b1-4aedcc6ca544.xml'
-- 'image.wia\_error\_handler\_cancellation\_of\_modeless\_dialogs'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: eca6c3a3-c196-4d28-925a-c8f5d5d8601b
 ---
 

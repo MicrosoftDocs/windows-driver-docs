@@ -7,9 +7,11 @@ keywords: ["add-registry-sections WDK networking , Advanced properties page conf
 
 # Specifying Configuration Parameters for the Advanced Properties Page
 
+> [!NOTE]
+> Prior to Windows 10, version 1703, driver upgrades and Windows updates could result in changes to INF values that the driver had previously defined in the **Advanced** properties page.
+> Starting in Windows 10, version 1703, advanced properties that a driver specifies in its INF file persist through these updates.
 
 ## <a href="" id="ddk-specifying-configuration-parameters-for-the-advanced-properties-pa"></a>
-
 
 An INF file that installs a Net component (adapter) can specify adapter configuration parameters for display in the **Advanced** properties page for the component. Configuration values specified by the user in the **Advanced** properties page are written to the root instance key for the component.
 
@@ -17,7 +19,7 @@ Note that if an adapter supports an **Advanced** properties page, the **Characte
 
 A network INF file specifies configuration parameters for display in the Advanced page through an *add-registry-section* that is referenced by the *DDInstall* section for the component. Such an *add-registry-section* adds one or more configuration subkeys to the **Ndi\\params** key. The format for a configuration parameter subkey is **Ndi\\params\\***SubKeyName*, where *SubKeyName* is a REG\_SZ value that specifies a vendor-specific parameter name. For example, the key for a parameter that specifies a transceiver type could be named **Ndi\\params\\TransceiverType**.
 
-The following keywords are reserved and cannot be used as an **Ndi\\params\\***SubKeyName*: **BundleId**, **Characteristics**, **ComponentId**, **Description**, **DriverDesc**, **InfPath**, **InfSection**, **InfSectionExt**, **Manufacturer**, **NetCfgInstanceId**, **Provider**, and **ProviderName**.
+The following keywords are reserved and cannot be used as an **Ndi\\params\\***SubKeyName*: **BundleId**, **BusType**, **Characteristics**, **ComponentId**, **Description**, **DeviceInstanceId**, **DriverDate**, **DriverDesc**, **DriverVersion**, **InfPath**, **InfSection**, **InfSectionExt**,** *IfType** **InstallTimeStamp**, **Manufacturer**,** *MediaType**, **NetCfgInstanceId**, **NetLuidIndex**,** *PhysicalMediaType**, **Provider**, and **ProviderName**.
 
 For each parameter subkey that is added to **Ndi\\params**, the *add-registry-section* must add **ParamDesc**(parameter description) and **Type** values. The *add-registry-section* can also add **Default** and **Optional** values for the parameter and, if the parameter is numeric, **Min**, **Max**, and **Step** values. The following table describes the values that can be added to each **Ndi\\params** key.
 

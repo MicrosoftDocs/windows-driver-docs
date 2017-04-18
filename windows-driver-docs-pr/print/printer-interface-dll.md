@@ -2,12 +2,6 @@
 title: Printer Interface DLL
 author: windows-driver-content
 description: Printer Interface DLL
-MS-HAID:
-- 'drvarch\_f4c4111d-222a-4c1c-91bd-65c8dff53091.xml'
-- 'print.printer\_interface\_dll'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac
 keywords: ["GDI printer drivers WDK , printer interface DLL", "printer interface DLL WDK", "DLLs WDK print", "user interface WDK printer interface DLL", "configuration options user interface WDK print"]
 ---

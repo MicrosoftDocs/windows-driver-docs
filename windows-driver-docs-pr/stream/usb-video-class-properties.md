@@ -2,12 +2,6 @@
 title: USB Video Class Properties
 author: windows-driver-content
 description: .
-MS-HAID:
-- 'uvcds\_C562AAA1-5F6F-4A7F-A981-D353189F51D5.xml'
-- 'stream.usb\_video\_class\_properties'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6295926b-4ec5-42f5-98ca-a375d36f917b
 keywords: ["USB Video Class drivers WDK AVStream , properties", "Video Class drivers WDK USB , properties", "UVC drivers WDK AVStream , properties", "property sets WDK USB Video Class"]
 ---

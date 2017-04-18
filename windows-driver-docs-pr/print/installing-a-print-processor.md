@@ -2,12 +2,6 @@
 title: Installing a Print Processor
 author: windows-driver-content
 description: Installing a Print Processor
-MS-HAID:
-- 'provider\_76db69e3-3b07-49f9-af34-8c002c0bb696.xml'
-- 'print.installing\_a\_print\_processor'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4e9e1148-16a3-42f6-a262-1eef014636d0
 keywords: ["print processors WDK , installing", "installing print processors WDK", "print queues WDK , print processor installations", "associating print processor with print queue WDK", "print processors WDK , associating with print queue", "print queues WDK"]
 ---
@@ -50,9 +44,9 @@ DrvPrinterEvent(
   switch (Event)
   {
     case PRINTER_EVENT_INITIALIZE:
-      if (OpenPrinter(pPrinterName, &amp;hPrinter, &amp;PrinterDef))
+      if (OpenPrinter(pPrinterName, &hPrinter, &PrinterDef))
       {
-        if ( !GetPrinter( hPrinter, 2, (LPBYTE) pInfo, 0, &amp;cbNeeded ) &amp;&amp;
+        if ( !GetPrinter( hPrinter, 2, (LPBYTE) pInfo, 0, &cbNeeded ) &&
            (GetLastError() != ERROR_INSUFFICIENT_BUFFER) )
         {
           bRet = FALSE;
@@ -64,7 +58,7 @@ DrvPrinterEvent(
         }
         if (bRet == TRUE)
         {
-          if (GetPrinter(hPrinter, 2, (LPBYTE) pInfo, cbNeeded, &amp;cbNeeded))
+          if (GetPrinter(hPrinter, 2, (LPBYTE) pInfo, cbNeeded, &cbNeeded))
           {
             pInfo->pPrintProcessor = gszPrintProc;
             SetPrinter(hPrinter, 2, (LPBYTE) pInfo, 0);
@@ -114,11 +108,11 @@ DrvUpgradePrinter(
   TCHAR                   gszPrintDriver[] = TEXT("<Printer driver name>");
   BOOL                    bRet = TRUE;
 
-  if ((Level == 2)                                            &amp;&amp;
-      (pDUI2 = (PDRIVER_UPGRADE_INFO_2)pDriverUpgradeInfo)    &amp;&amp;
-      (OpenPrinter(pDUI2->pPrinterName, &amp;hPrinter, &amp;PrinterDef)))
+  if ((Level == 2)                                            &&
+      (pDUI2 = (PDRIVER_UPGRADE_INFO_2)pDriverUpgradeInfo)    &&
+      (OpenPrinter(pDUI2->pPrinterName, &hPrinter, &PrinterDef)))
   {
-    if ( !GetPrinter( hPrinter, 2, (LPBYTE) pInfo, 0, &amp;cbNeeded )  &amp;&amp;
+    if ( !GetPrinter( hPrinter, 2, (LPBYTE) pInfo, 0, &cbNeeded )  &&
          (GetLastError() != ERROR_INSUFFICIENT_BUFFER) )
     {
        bRet = FALSE;
@@ -130,7 +124,7 @@ DrvUpgradePrinter(
     }
     if (bRet == TRUE)
     {
-      if (GetPrinter(hPrinter, 2, (LPBYTE) pInfo, cbNeeded, &amp;cbNeeded))
+      if (GetPrinter(hPrinter, 2, (LPBYTE) pInfo, cbNeeded, &cbNeeded))
       {
       //
       // This function is called for every printer queue that uses a driver

@@ -2,12 +2,6 @@
 title: Reading Device Metadata
 author: windows-driver-content
 description: Reading Device Metadata
-MS-HAID:
-- 'WIA\_wsd\_scan\_630d5f75-cba0-4587-9873-30a3c3a77bef.xml'
-- 'image.reading\_device\_metadata'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 402de9de-8bfe-4cc2-9b8e-06e0ad925eb1
 ---
 

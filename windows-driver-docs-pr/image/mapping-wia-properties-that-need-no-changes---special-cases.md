@@ -2,12 +2,6 @@
 title: Mapping WIA Properties That Need No Changes - Special Cases
 author: windows-driver-content
 description: Mapping WIA Properties That Need No Changes - Special Cases
-MS-HAID:
-- 'WIA\_Fundamentals\_c8eea4b5-02b5-4b71-85fd-af27d97d73fd.xml'
-- 'image.mapping\_wia\_properties\_that\_need\_no\_changes\_\_\_special\_cases'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4ed02c01-efe8-4728-a54a-26fe27aa403c
 ---
 

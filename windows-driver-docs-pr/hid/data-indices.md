@@ -2,12 +2,6 @@
 title: Data Indices
 author: windows-driver-content
 description: Data Indices
-MS-HAID:
-- 'hidclass\_ad2e0cb5-3435-4df9-9115-2a68c801809e.xml'
-- 'hid.data\_indices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 84577544-515a-4fdc-86e5-518182c6c461
 keywords: ["data index WDK HID", "index WDK HID data"]
 ---

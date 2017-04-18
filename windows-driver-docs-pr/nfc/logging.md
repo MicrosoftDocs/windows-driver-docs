@@ -12,10 +12,13 @@ description:
 For function/method and other verbose logging, *Windows software trace preprocessor* (WPP) logging is used. For NCI packet/protocol logging, Event Tracing for Windows (ETW) is used. To enable WPP logging for debugging, use the following commands:
 
 ```
-tracelog -start MySession1 -f C:\Data\MySession.etl
-tracelog -enableex MySession1 -guid #351734b9-8706-4cee-9247-04accd448c76 -matchanykw 0xFF -level 7
-tracelog -enableex MySession1 -guid #696D4914-12A4-422C-A09E-E7E0EB25806A -matchanykw 0xFF -level 7
-tracelog -stop MySession1
+tracelog -start MyNfcSession -f C:\Data\test\bin\MyNfcSession.etl
+tracelog -enableex MyNfcSession -guid #351734b9-8706-4cee-9247-04accd448c76 -matchanykw 0xFFFFFFFFFFFFFFFF -level 7
+tracelog -enableex MyNfcSession -guid #696D4914-12A4-422C-A09E-E7E0EB25806A -matchanykw 0xFFFFFFFFFFFFFFFF -level 7
+tracelog -enableex MyNfcSession -guid #9d97cb90-8dee-42b8-b553-d1816be6fb9e -matchanykw 0xFFFFFFFFFFFFFFFF -level 7
+tracelog -enableex MyNfcSession -guid #4EB7CC58-145C-4a79-9418-68CD290DD9D4 -matchanykw 0xFFFFFFFFFFFFFFFF -level 7
+tracelog -enableex MyNfcSession -guid #D976D933-B88B-4227-95F8-00513C0986DE -matchanykw 0xFFFFFFFFFFFFFFFF -level 7
+tracelog -stop MyNfcSession
 ```
 
 This will generate an ETL file named MySession.etl in the C:\\Data folder. You can then decode them using [Tracepdb](https://msdn.microsoft.com/library/windows/hardware/ff553034) (Tracepdb.exe) and [Tracefmt](https://msdn.microsoft.com/library/windows/hardware/ff552974) (Tracefmt.exe), which are included in the Windows Driver Kit.

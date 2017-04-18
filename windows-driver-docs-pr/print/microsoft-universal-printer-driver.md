@@ -2,12 +2,6 @@
 title: Microsoft Universal Printer Driver
 author: windows-driver-content
 description: The Microsoft Universal print driver (Unidrv) is also referred to as the v3 print driver. The topics in this section show how to add minidrivers to Unidrv to support different printer models.
-MS-HAID:
-- 'nt5gpd\_e6b13511-9415-43eb-bd8a-9fd55e89118b.xml'
-- 'print.microsoft\_universal\_printer\_driver'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 1f5d68a1-3552-44a9-a0c5-b3ec5fe22a22
 keywords: ["printer drivers WDK , Unidrv", "Unidrv WDK print", "Universal Printer Driver WDK See Unidrv", "minidrivers WDK Unidrv"]
 ---

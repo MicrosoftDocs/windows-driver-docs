@@ -2,12 +2,6 @@
 title: Registry Settings for a Legacy COM Port
 author: windows-driver-content
 description: Registry Settings for a Legacy COM Port
-MS-HAID:
-- 'sseovr\_4e5ce195-0190-441b-8e78-6ca67c77e206.xml'
-- 'serports.registry\_settings\_for\_a\_legacy\_com\_port'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 043ac1f5-eeb1-4828-8417-b3c6d76b4322
 keywords: ["Serial driver WDK , COM ports", "COM ports WDK serial devices", "serial devices WDK , COM ports", "legacy COM ports WDK serial devices"]
 ---

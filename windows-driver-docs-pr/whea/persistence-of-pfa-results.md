@@ -2,9 +2,6 @@
 title: Persistence of PFA Results
 author: windows-driver-content
 description: Persistence of PFA Results
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: de79b87e-2c9a-4181-b531-8ad283bb9d5b
 ---
 

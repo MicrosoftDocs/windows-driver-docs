@@ -2,12 +2,6 @@
 title: Filters Used with the Video Capture Devices
 author: windows-driver-content
 description: Filters Used with the Video Capture Devices
-MS-HAID:
-- 'vidcapds\_b2e9da1c-e0ed-46fe-a3b7-c97e4e03b12b.xml'
-- 'stream.filters\_used\_with\_the\_video\_capture\_devices'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 797f855d-5c6f-45bc-8b4a-f03543fa196d
 keywords: ["filter graph configurations WDK video capture , DirectShow", "DirectShow WDK video capture"]
 ---

@@ -38,7 +38,7 @@ When an application or kernel-mode component requests access to a driver's devic
 
 This section shows how a Kernel-Mode Driver Framework (KMDF) driver or a User-Mode Driver Framework (UMDF) version 2 driver registers for notification of arrival or removal of a device interface provided by another driver, and then creates a [remote I/O target](general-i-o-targets-in-umdf.md) to communicate with the device represented by the device interface.
 
-For information on how to do this in a UMDF version 1 driver, see [Using Device Interfaces in UMDF Drivers](using-device-interfaces-in-umdf-drivers.md#accessing-another-driver-s-device-interface).
+For information on how to do this in a UMDF version 1 driver, see [Using Device Interfaces in UMDF Drivers](using-device-interfaces-in-umdf-drivers.md#accessing-another-drivers-device-interface).
 
 To register for notification of device interface events, a KMDF driver calls [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526), while a UMDF 2 driver calls [**CM\_Register\_Notification**](https://msdn.microsoft.com/library/windows/hardware/hh780224). In both cases, the driver calls the appropriate routine from its [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.
 
@@ -47,11 +47,11 @@ The following code example shows how a local UMDF 2 driver registers for notific
 1.  The remote driver registers for a device interface by calling [**WdfDeviceCreateDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff545935) from [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693).
     ```
         UNICODE_STRING ref;
-        RtlInitUnicodeString(&amp;ref, MY_HID_FILTER_REFERENCE_STRING);
+        RtlInitUnicodeString(&ref, MY_HID_FILTER_REFERENCE_STRING);
         status = WdfDeviceCreateDeviceInterface(
                      hDevice,
-                     (LPGUID) &amp;GUID_DEVINTERFACE_MY_HIDFILTER_DRIVER,
-                     &amp;ref // ReferenceString
+                     (LPGUID) &GUID_DEVINTERFACE_MY_HIDFILTER_DRIVER,
+                     &ref // ReferenceString
                  );
 
         if (!NT_SUCCESS (status)) {
@@ -66,16 +66,16 @@ The following code example shows how a local UMDF 2 driver registers for notific
     DWORD cmRet;
         CM_NOTIFY_FILTER cmFilter;
        
-        ZeroMemory(&amp;cmFilter, sizeof(cmFilter));
+        ZeroMemory(&cmFilter, sizeof(cmFilter));
         cmFilter.cbSize = sizeof(cmFilter);
         cmFilter.FilterType = CM_NOTIFY_FILTER_TYPE_DEVICEINTERFACE;
         cmFilter.u.DeviceInterface.ClassGuid = GUID_DEVINTERFACE_MY_HIDFILTER_DRIVER;
         
         cmRet = CM_Register_Notification(
-                    &amp;cmFilter,                     // PCM_NOTIFY_FILTER pFilter,
+                    &cmFilter,                     // PCM_NOTIFY_FILTER pFilter,
                     (PVOID) hDevice,               // PVOID pContext,
                     MyCmInterfaceNotification,    // PCM_NOTIFY_CALLBACK pCallback,
-                    &amp;fdoData->CmNotificationHandle // PHCMNOTIFICATION pNotifyContext
+                    &fdoData->CmNotificationHandle // PHCMNOTIFICATION pNotifyContext
                     );
         if (cmRet != CR_SUCCESS) {
             MyKdPrint( ("CM_Register_Notification failed, error %d\n", cmRet));

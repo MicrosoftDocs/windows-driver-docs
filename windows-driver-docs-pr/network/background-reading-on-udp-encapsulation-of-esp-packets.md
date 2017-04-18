@@ -7,6 +7,7 @@ keywords: ["UDP-encapsulated ESP packets WDK IPsec offload , background reading"
 
 # Background Reading on UDP Encapsulation of ESP Packets
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-background-reading-on-udp-encapsulation-of-esp-packets-ng"></a>
 

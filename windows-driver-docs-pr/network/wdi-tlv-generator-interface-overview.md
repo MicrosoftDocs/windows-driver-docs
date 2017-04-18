@@ -19,11 +19,11 @@ ULONG length = 0;
 NDIS_STATUS ndisStatus = NDIS_STATUS_SUCCESS;
 
 ndisStatus = Generate(
-    &amp;BssEntryList,
+    &BssEntryList,
     cbHeaderLength,
-    &amp;Context,
-    &amp;length,
-    &amp;pOutput);
+    &Context,
+    &length,
+    &pOutput);
 ```
 
 The second parameter can be very helpful. Sometimes, the TLV buffer is packed into a bigger data structure, and this parameter allows you to pre-reserve space at the beginning of the buffer for that header. The correct value for *cbHeaderLength* is often `sizeof(WDI_MESSAGE_HEADER)`.
@@ -44,11 +44,11 @@ In this model, there is a specific Generate routine for each top-level message o
 
 ```
 ndisStatus = GenerateWdiGetAdapterCapabilities(
-    &amp;adapterCapabilities,
+    &adapterCapabilities,
     (ULONG)sizeof(WFC_COMMAND_HEADER),
-    &amp;Context,
-    &amp;length,
-    &amp;pOutput);
+    &Context,
+    &length,
+    &pOutput);
 ```
 
 When you are done with the TLV byte array, call back to release the memory in the same way as the C++ model.

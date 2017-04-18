@@ -7,6 +7,7 @@ keywords: ["IPsecOV2 WDK TCP/IP transport , about IPsecOV2"]
 
 # Introduction to IPsec Offload Version 2
 
+\[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-introduction-to-ipsec-offload-version-2-ng"></a>
 

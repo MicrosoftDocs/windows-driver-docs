@@ -2,12 +2,6 @@
 title: Value Macros
 author: windows-driver-content
 description: Value Macros
-MS-HAID:
-- 'nt5gpd\_1ef27636-aa46-498d-93c6-eddb390fdb56.xml'
-- 'print.value\_macros'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 265b2d35-5e91-4c47-a145-1e9f8c497c2c
 keywords: ["value macros WDK GPD files", "referencing macros"]
 ---
@@ -62,9 +56,9 @@ As an example, you might define value macros for a set of frequently used comman
 ```
 *Macros: HP4L
 {
-    LetterCmdPrefix: "<1B>&amp;l2a8c1E<1B>*p0x0Y"
-    A4CmdPrefix: "<1B>&amp;l26a8c1E<1B>*p0x0Y"
-    Env10CmdPrefix: "<1B>&amp;l81a8c1E<1B>*p0x0Y"
+    LetterCmdPrefix: "<1B>&l2a8c1E<1B>*p0x0Y"
+    A4CmdPrefix: "<1B>&l26a8c1E<1B>*p0x0Y"
+    Env10CmdPrefix: "<1B>&l81a8c1E<1B>*p0x0Y"
 }
 ```
 
