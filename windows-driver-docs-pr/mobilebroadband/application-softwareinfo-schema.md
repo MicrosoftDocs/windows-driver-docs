@@ -1,10 +1,10 @@
 ---
-title: Application
-description: Application
+title: Application (SoftwareInfo)
+description: Application (SoftwareInfo)
 ms.assetid: 1f16a690-4453-4563-a4b1-44bbd5d02f47
 ---
 
-# Application
+# Application (SoftwareInfo)
 
 
 The Application element specifies the associated device notification handler.
