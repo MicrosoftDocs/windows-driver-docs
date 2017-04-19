@@ -1,6 +1,6 @@
 ---
 title: WPP Software Tracing
-description: This section describes how to use the *Windows software trace preprocessor* (WPP) to trace the operation of a software component trace provider.
+description: This section describes how to use the Windows software trace preprocessor (WPP) to trace the operation of a software component trace provider.
 ms.assetid: dab776b3-bac9-4157-a530-6e48868ba900
 keywords: ["Windows software trace preprocessor WDK", "WPP software tracing WDK", "software tracing WDK , WPP", "kernel-mode WPP WDK software tracing", "Windows software trace preprocessor WDK , about WPP", "WPP software tracing WDK , about WPP", "default WPP software tracing", "tracing WDK , WPP"]
 ---
@@ -32,7 +32,7 @@ WPP software tracing supplements and enhances [WMI event tracing](https://msdn.m
 <li>For kernel-mode drivers, use the [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md) API.</li>
 <li>For user-mode drivers or applications, use the [Event Tracing](https://msdn.microsoft.com/library/windows/desktop/bb968803) (Windows Desktop) API.</li>
 </ul>
-For more information, see [When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](tools-for-software-tracing.md##when-should-i-use-wpp-software-tracing-or-the-event-tracing-for-windows-etw-api)</td>
+For more information, see [When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](tools-for-software-tracing.md#Swhen-should-i-use-wpp-software-tracing-or-the-event-tracing-for-windows-etw-api)</td>
 </tr>
 </tbody>
 </table>
