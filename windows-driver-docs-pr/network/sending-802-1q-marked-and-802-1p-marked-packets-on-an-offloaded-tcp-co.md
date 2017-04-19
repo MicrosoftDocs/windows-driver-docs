@@ -1,5 +1,5 @@
 ---
-title: Sending 802.1Q-Marked and 802.1p-Marked Packets on an Offloaded TCP Connection
+title: Sending marked packets on an offloaded TCP connection
 description: Sending 802.1Q-Marked and 802.1p-Marked Packets on an Offloaded TCP Connection
 ms.assetid: 4c16d5af-33e2-4cce-b9e8-d2b60afa0986
 keywords: ["802.1Q and 802.1p information WDK TCP chimney offload , sending marked packets"]

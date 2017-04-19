@@ -1,5 +1,5 @@
 ---
-title: Porting Intermediate Driver Send and Receive Operations to NDIS 6.0
+title: Porting intermediate driver send and receive to NDIS 6.0
 description: Porting Intermediate Driver Send and Receive Operations to NDIS 6.0
 ms.assetid: e7d4d7b7-e467-4af5-9a68-e272f6859653
 keywords: ["porting intermediate drivers WDK networking , send and receive operations", "send operation porting WDK networking", "receive operation porting WDK networking", "data send/receive operation porting WDK networking"]

@@ -1,7 +1,7 @@
 ---
-title: Power Management Enhancements in NDIS 6.30
+title: Power management enhancements in NDIS 6.30
 ms.assetid: A3B64252-DD6C-4715-8D4B-8D8176BC585B
-description: 
+description: Introduces NDIS 6.30 power management enhancements to reduce computer power consumption
 ---
 
 # Power Management Enhancements in NDIS 6.30

@@ -15,9 +15,6 @@ The following illustration shows the order of the calls to **IPrintOemPrintTicke
 
 ![diagram illustrating the convertprinttickettodevmode calling sequence](images/ptpcpt2dm-uml.gif)
 
-The **IPrintTicketProvider::ConvertPrintTicketToDevMode** method is called by the print subsystem to convert the PrintTicket object to a **DEVMODEW** structure.
-
- 
 
 
 --------------------

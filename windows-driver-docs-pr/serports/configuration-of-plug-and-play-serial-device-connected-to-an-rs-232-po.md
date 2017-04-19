@@ -1,5 +1,5 @@
 ---
-title: Configuration of Plug and Play Serial Device Connected to an RS-232 Port
+title: Configure PnP Serial Devices to an RS-232 Port
 author: windows-driver-content
 description: Configuration of Plug and Play Serial Device Connected to an RS-232 Port
 ms.assetid: b6a851e2-0fcf-4d64-80ac-51928b823077

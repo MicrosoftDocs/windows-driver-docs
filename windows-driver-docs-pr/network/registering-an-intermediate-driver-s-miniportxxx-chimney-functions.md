@@ -1,5 +1,5 @@
 ---
-title: Registering an Intermediate Driver's MiniportXxx Chimney Functions
+title: Registering intermediate driver MiniportXxx chimney functions
 description: Registering an Intermediate Driver's MiniportXxx Chimney Functions
 ms.assetid: d6f610b4-4390-4aa3-9711-b376848ce741
 keywords: ["intermediate drivers WDK TCP chimney offload , function registration", "registering TCP chimney-specific functions"]

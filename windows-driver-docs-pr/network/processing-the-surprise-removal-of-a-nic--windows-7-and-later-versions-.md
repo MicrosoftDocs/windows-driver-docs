@@ -1,5 +1,5 @@
 ---
-title: Processing the Surprise Removal of a NIC (Windows 7 and Later Versions)
+title: Processing the surprise removal of a NIC (Windows 7 and later)
 description: Processing the Surprise Removal of a NIC (Windows 7 and Later Versions)
 ms.assetid: D1C1C862-8AFF-490F-8A1D-362280196548
 ---

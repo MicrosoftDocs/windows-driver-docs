@@ -1,6 +1,7 @@
 ---
 Description: Support for the Wireless Mobile Communication Device Class
 title: Support for the Wireless Mobile Communication Device Class
+author: windows-driver-content
 ---
 
 # Support for the Wireless Mobile Communication Device Class
@@ -40,27 +41,15 @@ HKR,,EnumeratorClass, 0x00000001,02,00,00
 
 The value that you must assign to **EnumeratorClass** is constructed from three 1-byte binary values that are represented in the INF file by pairs of hexadecimal digits: 02, 00, and 00. These three numbers correspond to the values that the USB Implementers Forum has assigned to the CDC device class, CDC device subclass and CDC device protocol, respectively.
 
-For more information about how to configure the registry to correctly enumerate your WMCDC device, see [Enumerating Interface Collections on WMCDC](enumerating-interface-collections-on-wireless-mobile-communication-dev.md).
+For more information about how to configure the registry to correctly enumerate your WMCDC device, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).
 
 The following topics further describe the WMCDC:
 
-[Enumerating Interface Collections on WMCDC](enumerating-interface-collections-on-wireless-mobile-communication-dev.md)
-
-[Handling CDC and WMCDC Interface Collections](handling-cdc-and-wmcdc-interface-collections.md)
-
-[CDC and WMCDC Control Models](cdc-and-wmcdc-control-models.md)
 
 ## Related topics
+[USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)  
 
-
-[USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)
-
- 
-
- 
-
+--------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Busbcon\buses%5D:%20Support%20for%20the%20Wireless%20Mobile%20Communication%20Device%20Class%20%20RELEASE:%20%281/26/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
 
 

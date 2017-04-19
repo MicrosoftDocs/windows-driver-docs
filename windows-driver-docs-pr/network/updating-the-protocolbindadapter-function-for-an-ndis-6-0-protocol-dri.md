@@ -1,5 +1,5 @@
 ---
-title: Updating the ProtocolBindAdapter Function for an NDIS 6.0 Protocol Driver
+title: Updating ProtocolBindAdapter for an NDIS 6.0 protocol driver
 description: Updating the ProtocolBindAdapter Function for an NDIS 6.0 Protocol Driver
 ms.assetid: 7e11e468-72a1-4c77-a240-76e0679ed880
 keywords: ["ProtocolBindAdapter", "ProtocolBindAdapterEx", "updating ProtocolBindAdapter"]

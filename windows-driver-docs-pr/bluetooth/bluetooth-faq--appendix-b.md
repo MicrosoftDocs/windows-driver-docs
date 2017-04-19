@@ -1,5 +1,5 @@
 ---
-title: Appendix B An Example of a Vendor-Provided INF File for Use in Windows Vista
+title: An Example of a Vendor-Provided INF File in Windows Vista
 description: This appendix includes an example of how to implement a vendor-provided INF file that references Bth.inf.
 ms.assetid: 37865571-D632-4A69-A2AB-D0B2570A6F9D
 ---

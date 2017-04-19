@@ -1,6 +1,6 @@
 ---
-title: Standardized INF Keywords for NVGRE Task Offload
-description: The \ EncapsulatedPacketTaskOffload standardized enumeration keyword is defined to enable or disable support for Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload in miniport adapters.
+title: Standardized INF keywords for NVGRE Task Offload
+description: This section describes standardized keywords used in INF files for NVGRE-capable drivers
 ms.assetid: C1FB0519-6BB7-46B0-A3FA-B8E982279C44
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Device Installation Application Not Included in the Driver Package
+title: Device Installation Application Not Included in Driver Package
 description: Device Installation Application Not Included in the Driver Package
 ms.assetid: 3c8fd504-50c9-4a61-9cca-cd8cee4e2bd7
 ---

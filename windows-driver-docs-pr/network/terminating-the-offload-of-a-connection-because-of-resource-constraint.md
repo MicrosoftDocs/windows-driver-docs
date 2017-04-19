@@ -1,5 +1,5 @@
 ---
-title: Terminating the Offload of a Connection Because of Resource Constraints
+title: Terminating a connection's offload due to resource constraints
 description: Terminating the Offload of a Connection Because of Resource Constraints
 ms.assetid: 3b2a9a87-8e2b-44cf-ad77-6d81822cb932
 keywords: ["state offloading process WDK TCP chimney offload , resource contraints", "offloading state process WDK TCP chimney offload , resource contraints", "resource contraints WDK TCP chimney offload"]

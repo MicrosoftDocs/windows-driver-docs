@@ -1,7 +1,7 @@
 ---
 title: Related Topics and Appendices
 ms.assetid: AD0A2FCB-9790-4E9D-B0B5-AF550EF5ECB0
-description: 
+description: Contains a list of link to topic related to Windows driver signing.
 ---
 
 # Related Topics and Appendices

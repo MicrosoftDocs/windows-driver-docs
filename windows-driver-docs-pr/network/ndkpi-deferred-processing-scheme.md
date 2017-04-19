@@ -1,6 +1,6 @@
 ---
-title: NDKPI Deferred Processing Scheme
-description: .
+title: NDKPI deferred processing scheme
+description: This section describes the deferred processing used with NDKPI
 ms.assetid: DA2D0FCA-D84B-4599-A560-8F87A0918D99
 ---
 

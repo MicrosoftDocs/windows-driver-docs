@@ -1,7 +1,7 @@
 ---
 ms.assetid: 9B4E7164-A63A-4E47-AFD1-BEBDC3761054
 title: Preparing a Computer for Manual Driver Deployment
-description: You can deploy a driver automatically or manually. In either case, you need to prepare the target computer first. Here we describe how to prepare the target computer if you choose to deploy your driver manually.
+description: Describes how to prepare the target computer before deploying a driver manually.
 ---
 
 # Preparing a Computer for Manual Driver Deployment

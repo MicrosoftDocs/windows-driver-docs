@@ -1,5 +1,5 @@
 ---
-title: Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port
+title: Configure Non-PnP devices to an RS-232 Port
 author: windows-driver-content
 description: Configuration of Non-Plug and Play Serial Device Connected to an RS-232 Port
 ms.assetid: 5106e42e-4f87-47c3-a0ec-f70e77daabd3

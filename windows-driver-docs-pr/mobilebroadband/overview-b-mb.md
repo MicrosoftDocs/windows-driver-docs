@@ -1,13 +1,12 @@
 ---
-title: Overview
-description: Overview
+title: Overview for mobile broadband technologies
+description: Overview for mobile broadband technologies
 ms.assetid: b9b79b7d-35b3-4058-ad6d-1dbead76c4fb
 ---
 
-# Overview
+# Overview for mobile broadband technologies
 
-
-Need to learn more about mobile broadband in Windows 8, Windows 8.1, and Windows 10? Here are the docs you’ll need to figure out how mobile broadband works.
+This section contains an overview of mobile broadband in Windows 8, Windows 8.1, and Windows 10, as well as overviews of mobile broadband WinRT APIs and mobile operator hardware.
 
 -   [Overview of mobile broadband](overview-of-mobile-broadband.md)
 
