@@ -1,6 +1,6 @@
 ---
 title: Bluetooth Certification
-description: .
+description: Describes Windows Hardware Certification Program requirements for Bluetooth radios
 ms.assetid: B9AC4035-E52E-4B2B-8AE5-76F314C35EDD
 ---
 
