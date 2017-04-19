@@ -1,6 +1,6 @@
 ---
 title: WDI low latency connection quality
-description: .
+description: This section describes how to maintain quality with low latency connections in WDI
 ms.assetid: 194A26DA-A138-4967-9A09-5843A38007E9
 ---
 

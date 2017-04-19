@@ -1,6 +1,6 @@
 ---
 title: WDI TLV generator interface overview
-description: .
+description: This section describes an overview of function models for the WDI TLV generator interface
 ms.assetid: 8A344BF7-932E-4404-9B3E-E7D3C33722C3
 ---
 
@@ -12,7 +12,7 @@ ms.assetid: 8A344BF7-932E-4404-9B3E-E7D3C33722C3
 
 In this model, there is only one function call to generate a TLV byte array from your data structure.
 
-```
+```c++
 WDI_INDICATION_BSS_ENTRY_LIST_PARAMETERS BssEntryList = ...;
 BYTE* pOutput = NULL;
 ULONG length = 0;
@@ -32,7 +32,7 @@ For messages that have no associated data, there are still overloaded Generate A
 
 When you are done with the TLV data contained in *pOutput*, you must call back into the library to release the buffer.
 
-```
+```c++
     FreeGenerated(pOutput);
     pOutput = NULL;
 ```
@@ -42,7 +42,7 @@ When you are done with the TLV data contained in *pOutput*, you must call back i
 
 In this model, there is a specific Generate routine for each top-level message or structure because C does not support overloaded functions. Otherwise, it behaves the same as the C++ model.
 
-```
+```c
 ndisStatus = GenerateWdiGetAdapterCapabilities(
     &adapterCapabilities,
     (ULONG)sizeof(WFC_COMMAND_HEADER),
@@ -53,7 +53,7 @@ ndisStatus = GenerateWdiGetAdapterCapabilities(
 
 When you are done with the TLV byte array, call back to release the memory in the same way as the C++ model.
 
-```
+```c
     FreeGenerated(pOutput);
     pOutput = NULL;
 ```

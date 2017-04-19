@@ -1,6 +1,6 @@
 ---
-title: MB Union Function Descriptors
-description: .
+title: MB union function descriptors
+description: This section describes union function descriptors and MBIM backwards-compatible functions for MB devices
 ms.assetid: 4B8C63DD-4B8D-40AB-A6DF-0466343E7E45
 ---
 

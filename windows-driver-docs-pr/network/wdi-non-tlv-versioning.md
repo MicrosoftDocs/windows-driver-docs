@@ -1,6 +1,6 @@
 ---
 title: WDI non-TLV versioning
-description: Data structures that are passed between WDI and the IHV miniport and contain a NDIS\_OBJECT\_HEADER (such as NDIS\_MINIPORT\_DRIVER\_WDI\_CHARACTERISTICS) follow the standard NDIS versioning model.
+description: This section describes WDI non-TLV versioning
 ms.assetid: 19B5BEE1-BE17-40E3-99FA-D9BF4492D020
 ---
 
