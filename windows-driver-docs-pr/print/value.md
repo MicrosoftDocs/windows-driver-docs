@@ -1,7 +1,7 @@
 ---
-title: Value
+title: Value (WSD)
 author: windows-driver-content
-description: Value
+description: The WSD Value construct allows you to extend the bidi communications schema with queries that retrieve data from a particular schema element.
 ms.assetid: 8930e012-88ee-44ff-9abc-a15367f04ca3
 keywords: ["Value construct"]
 ---

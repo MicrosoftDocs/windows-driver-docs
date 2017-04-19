@@ -1,7 +1,7 @@
 ---
-title: Const
+title: Const (TCP/IP)
 author: windows-driver-content
-description: Const
+description: The TCP/IP Const construct defines the data type and value that must be returned.
 ms.assetid: a0ede11d-ada4-4dc4-87a4-68c96635c0fd
 keywords: ["Const construct"]
 ---
