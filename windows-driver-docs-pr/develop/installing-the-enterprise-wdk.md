@@ -1,5 +1,6 @@
 ---
 title: Installing the Enterprise WDK 10
+description: Describes how to set up a command-line based environment for organization use of the WDK.
 author: Dansimp
 ---
 

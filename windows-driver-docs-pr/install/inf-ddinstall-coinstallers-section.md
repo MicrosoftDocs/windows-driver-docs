@@ -1,6 +1,6 @@
 ---
 title: INF DDInstall.CoInstallers Section
-description: This optional section registers one or more device-specific co-installers supplied on the distribution media to supplement the operations of existing device class installers.
+description: The CoInstallers section registers one or more device-specific co-installers to supplement the operations of existing device class installers.
 ms.assetid: 2deb16e1-632a-4169-b718-7e3501e64562
 keywords: ["INF DDInstall.CoInstallers Section Device and Driver Installation"]
 topic_type:
