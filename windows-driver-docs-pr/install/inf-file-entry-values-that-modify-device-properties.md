@@ -1,11 +1,11 @@
 ---
-title: INF File Entry Values That Modify Device Properties
-description: INF File Entry Values That Modify Device Properties
+title: INF File Entry Values That Modify Device Properties before Windows Vista
+description: INF File Entry Values That Modify Device Properties before Windows Vista
 ms.assetid: b2a1f265-fc9b-47fb-83af-b4f66d79da83
 keywords: ["device properties WDK device installations , modifying"]
 ---
 
-# INF File Entry Values That Modify Device Properties
+# INF File Entry Values That Modify Device Properties before Windows Vista
 
 
 The following are the INF file entry values that modify device properties on Windows Server 2003, Windows XP, and Windows 2000:

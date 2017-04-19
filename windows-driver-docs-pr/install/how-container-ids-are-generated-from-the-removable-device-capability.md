@@ -1,5 +1,5 @@
 ---
-title: How Container IDs are Generated from the Removable Device Capability
+title: How Container IDs are Generated from Removable Device Capability
 description: How Container IDs are Generated from the Removable Device Capability
 ms.assetid: 493a9473-4989-4557-b2b2-efa0e2a8b24e
 ---

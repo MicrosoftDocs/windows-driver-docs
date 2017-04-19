@@ -24,15 +24,15 @@ For each device that is connected to a system and supported by a particular driv
 
 Some example scenarios include:
 
--   [A Single Sequential I/O Queue](#a-single-sequential-i-o-queue)
+-   [A Single Sequential I/O Queue](#a-single-sequential-io-queue)
 
--   [Multiple Sequential I/O Queues and a Manual Queue](#multiple-sequential-i-o-queues-and-a-manual-queue)
+-   [Multiple Sequential I/O Queues and a Manual Queue](#multiple-sequential-io-queues-and-a-manual-queue)
 
--   [A Single Parallel I/O Queue](#a-single-parallel-i-o-queue)
+-   [A Single Parallel I/O Queue](#a-single-parallel-io-queue)
 
--   [Multiple Parallel I/O Queues](#multiple-parallel-i-o-queues)
+-   [Multiple Parallel I/O Queues](#multiple-parallel-io-queues)
 
-### A Single Sequential I/O Queue
+## A Single Sequential I/O Queue
 
 If you are writing a function driver for a disk drive that can only service read and write requests one at a time, the function driver needs only one I/O queue per device.
 
@@ -44,7 +44,7 @@ The driver can use the default I/O queue that the framework creates when the dri
 
 Each time an I/O request is available in the driver's default I/O queue, the framework will deliver the request to the driver by calling the driver's [*EvtIoDefault*](https://msdn.microsoft.com/library/windows/hardware/ff541757) request handler. If another request becomes available in the queue, the framework will not deliver it until the driver calls [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) for the previously delivered request.
 
-### Multiple Sequential I/O Queues and a Manual Queue
+## Multiple Sequential I/O Queues and a Manual Queue
 
 Consider a serial port device that has the following characteristics:
 
@@ -66,7 +66,7 @@ With this configuration, the device's default I/O queue [*EvtIoDefault*](https:/
 
 If the driver has to hold a status request for a long time, it can create a fourth queue and specify **WdfIoQueueDispatchManual** as the dispatching method. When the driver receives a request for information that it must wait for, it can place the request in this extra queue until the status information becomes available. Then the driver can retrieve the request from the queue and complete it. In the meantime, the default queue can deliver another request to the driver.
 
-### A Single Parallel I/O Queue
+## A Single Parallel I/O Queue
 
 IDE disk controllers can overlap some I/O operations, but not others. For example, while a controller is processing a read or write operation on one disk, it can send a seek command to another disk. On the other hand, multiple, simultaneous read and write commands are not supported.
 
@@ -84,7 +84,7 @@ For each device that is connected to the controller, the driver could call [**Wd
 
 With this configuration, a single, parallel I/O queue is assigned to each device. The driver must examine each I/O request that the framework delivers from each I/O queue. If the driver can process the request immediately, it does so. Otherwise, the driver calls [**WdfIoQueueStop**](https://msdn.microsoft.com/library/windows/hardware/ff548482), which causes the framework to stop delivering requests until the driver calls [**WdfIoQueueStart**](https://msdn.microsoft.com/library/windows/hardware/ff548478).
 
-### Multiple Parallel I/O Queues
+## Multiple Parallel I/O Queues
 
 A SCSI host adapter is an example of a device that supports asynchronous, overlapped I/O operations. Up to 32 devices can be connected to the adapter. Consider a system with the following configuration:
 

@@ -1,5 +1,5 @@
 ---
-title: Container IDs Generated from a Removable Device Capability Override
+title: Container IDs Generated from Removable Device Capability Override
 description: Container IDs Generated from a Removable Device Capability Override
 ms.assetid: 8b1bf9d4-1aea-4d82-b783-f6dc62b9f8f3
 ---

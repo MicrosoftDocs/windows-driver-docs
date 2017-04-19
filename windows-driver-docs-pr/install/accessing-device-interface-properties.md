@@ -1,10 +1,10 @@
 ---
-title: Accessing Device Interface Properties
-description: Accessing Device Interface Properties
+title: Accessing Device Interface Properties before Windows Vista
+description: Accessing Device Interface Properties before Windows Vista
 ms.assetid: 48b47d01-ec07-49ca-a03c-c4c387dcfb19
 ---
 
-# Accessing Device Interface Properties
+# Accessing Device Interface Properties before Windows Vista
 
 
 In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) includes device interface properties that characterize a device interface. The unified device property model uses [property keys](property-keys.md) to represent these properties.

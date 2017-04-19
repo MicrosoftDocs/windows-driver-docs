@@ -1,5 +1,5 @@
 ---
-title: Determining Why UMDF Indicates Outstanding Files at Device Removal Time
+title: UMDF Indicates Outstanding Files at Device Removal Time
 author: windows-driver-content
 description: This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 or 2 driver to determine why UMDF indicates that there are outstanding files when you remove a device.
 ms.assetid: 9a8b3b69-1192-40c1-895b-4abfc01c1ca7
