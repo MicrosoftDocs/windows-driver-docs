@@ -1,6 +1,6 @@
 ---
 title: WDI message structure
-description: All WDI command messages must start with a WDI\_MESSAGE\_HEADER structure. The command header is followed by zero or more type-length-value (TLV) structures.
+description: This section describes the structure for WDI command messages
 ms.assetid: 09663C5F-A458-479F-B450-A994486A6C18
 ---
 

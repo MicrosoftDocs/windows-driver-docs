@@ -1,6 +1,6 @@
 ---
-title: Rules for Coalescing TCP/IP Segments
-description: This section defines the rules that specify when a receive segment coalescing (RSC)-capable miniport driver must coalesce a segment for a given TCP connection.
+title: Rules for coalescing TCP/IP segments
+description: This section defines the rules for coalescing TCP/IP segments in miniport drivers
 ms.assetid: EC3C72EB-20A6-4D48-8E8C-F70EE4483193
 ---
 

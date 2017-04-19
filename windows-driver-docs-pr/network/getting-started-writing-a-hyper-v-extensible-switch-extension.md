@@ -1,6 +1,6 @@
 ---
-title: Getting Started Writing a Hyper-V Extensible Switch Extension
-description: A Hyper-V Extensible Switch extension is an NDIS filter or Windows Filtering Platform (WFP) filter that runs inside the Hyper-V Extensible Switch (also called the \ 0034;Hyper-V virtual switch \ 0034;).
+title: Getting started writing a Hyper-V Extensible Switch extension
+description: This section describes how to start writing a Hyper-V Extensible Switch extension
 ms.assetid: 91C6ED75-1057-4520-8E8E-28817D8F3C81
 ---
 

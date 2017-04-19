@@ -1,6 +1,6 @@
 ---
-title: Hybrid Forwarding
-description: Starting with NDIS 6.40 (Windows Server 2012 R2, the Hyper-V extensible switch architecture supports hybrid forwarding by the Hyper-V Network Virtualization (HNV) component of the extensible switch and by forwarding extensions.
+title: Hyper-V Extensible Switch hybrid forwarding
+description: This section describes hybrid forwarding with a Hyper-V Extensible Switch 
 ms.assetid: 135CA734-1C92-4EEA-81DC-96A6A68ABBE8
 ---
 

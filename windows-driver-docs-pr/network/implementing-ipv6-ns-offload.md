@@ -1,6 +1,6 @@
 ---
 title: Implementing IPv6 NS Offload
-description: An NDIS protocol driver sends an IPv6 neighbor solicitation (NS) offload request as an OID\_PM\_ADD\_PROTOCOL\_OFFLOAD OID request. To support these NS offload requests, miniports should do the following.
+description: This section describes how to implement IPv6 neighbor solicitation (NS) offload
 ms.assetid: 48AACE46-4D39-49ED-90AD-F73E27D0CDBE
 ---
 
