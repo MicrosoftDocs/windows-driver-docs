@@ -1,5 +1,5 @@
 ---
-title: Summary of Changes Required to Port an Intermediate Driver to NDIS 6.0
+title: Summary of changes to port an intermediate driver to NDIS 6.0
 description: Summary of Changes Required to Port an Intermediate Driver to NDIS 6.0
 ms.assetid: 4992cf66-7775-434a-b9ff-3e9ef10d938f
 keywords: ["porting intermediate drivers WDK networking , required changes"]

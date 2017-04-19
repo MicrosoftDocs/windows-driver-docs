@@ -1,5 +1,5 @@
 ---
-title: Guidelines for Native 802.11 Extensible Station Receive Operations
+title: Guidelines for Native 802.11 ExtSTA receive operations
 description: Guidelines for Native 802.11 Extensible Station Receive Operations
 ms.assetid: 08cc06c7-822d-4d1b-b4a3-e43f424425e8
 keywords: ["Extensible Station receive operations WDK Native 802.11", "ExtSTA receive operations WDK Native 802.11"]

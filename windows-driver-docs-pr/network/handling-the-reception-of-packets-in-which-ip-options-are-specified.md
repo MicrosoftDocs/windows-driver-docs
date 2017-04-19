@@ -1,5 +1,5 @@
 ---
-title: Handling the Reception of Packets in Which IP Options are Specified
+title: Handling receiving packets in which IP options are specified
 description: Handling the Reception of Packets in Which IP Options are Specified
 ms.assetid: 198c0ea6-41ce-4bdf-973c-1608e4fe1f1d
 keywords: ["non-standard packets and messages WDK TCP chimney offload , IP options specified"]
