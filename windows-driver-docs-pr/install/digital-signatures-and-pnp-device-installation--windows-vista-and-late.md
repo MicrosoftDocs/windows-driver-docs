@@ -1,5 +1,5 @@
 ---
-title: Digital Signatures and PnP Device Installation (Windows Vista and Later)
+title: Digital Signatures and PnP Device Installation (Vista and Later)
 description: Digital Signatures and PnP Device Installation (Windows Vista and Later)
 ms.assetid: 38d3e8c9-0be1-4fea-9128-15834c0c4e2e
 keywords: ["driver signing WDK , PnP device installations", "signing drivers WDK , PnP device installations", "digital signatures WDK , PnP device installations", "signatures WDK , PnP device installations", "PnP WDK driver signing", "Plug and Play WDK driver signing", "driver package digital signatures WDK", "package digital signatures WDK"]
