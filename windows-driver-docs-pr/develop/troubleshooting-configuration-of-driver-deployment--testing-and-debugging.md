@@ -1,7 +1,7 @@
 ---
 ms.assetid: D92A4E42-82F0-4034-B208-66E04F6EAB26
 title: Troubleshooting Driver Deployment, Testing and Debugging
-description: Provisioning a target computer is described in Provision a computer for driver deployment and testing \(WDK 8.1\). Here we give some troubleshooting tips for the provisioning process.
+description: Provides troubleshooting tips for provisioning Visual Studio for driver deployment.
 ---
 
 # Troubleshooting Configuration of Driver Deployment, Testing and Debugging

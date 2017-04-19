@@ -1,7 +1,7 @@
 ---
 title: What's New for WDF Drivers in Windows 10
 author: windows-driver-content
-description: This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.Windows 10 includes Kernel-Mode Driver Framework (KMDF) version 1.15 and User-Mode Driver Framework (UMDF) version 2.15.
+description: Summarizes new features and improvements for WDF drivers in Windows 10.
 ms.assetid: 61fd9916-38e7-47d0-aec7-d5a489eb21eb
 keywords: ["kernel-mode drivers WDK KMDF , about KMDF", "KMDF WDK , about KMDF", "Kernel-Mode Driver Framework WDK , about KMDF", "framework-based drivers WDK KMDF", "framework-based drivers WDK KMDF , about framework-based drivers", "objects WDK KMDF", "framework objects WDK KMDF"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: Enable Code Integrity Event Logging and System Auditing
-description: .
+description: Describes how to Enable Code Integrity Event Logging and System Auditing.
 ms.assetid: D17C64F1-B295-4EC1-B0D0-F1A119D77F64
 ---
 

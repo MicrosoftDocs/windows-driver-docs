@@ -1,6 +1,6 @@
 ---
 title: Test Signing
-description: Starting with Windows Vista, x64-based versions of Windows required all software running in kernel mode, including drivers, to be digitally signed in order to be loaded.
+description: Windows 64-bit editions require all software running in kernel mode, including drivers, to be digitally signed in order to be loaded.
 ms.assetid: 52F309E4-9553-456B-BBD6-217318FC7222
 ---
 
