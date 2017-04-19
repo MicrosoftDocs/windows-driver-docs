@@ -1,6 +1,6 @@
 ---
 title: Introduction to the NDIS PacketDirect Provider Interface
-description: The PacketDirect Provider Interface (PDPI) extends NDIS with an accelerated I/O model, for both physical and virtual environments, that can increase the number of packets processed per second by an order of magnitude and significantly decrease jitter when compared to the traditional NDIS I/O path.
+description: This section provides an introduction to the NDIS PacketDirect Provider Interface (PDPI)
 ms.assetid: E85ED51E-BDE5-43BE-93BA-19F214670B8F
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: NDKPI Listeners, Connectors, and Endpoints
-description: .
+title: NDKPI listeners, connectors, and endpoints
+description: This section describes NDKPI listeners, connectors, and endpoints, and reference counting for connectors and endpoints
 ms.assetid: 956D3550-11C8-48D0-BCF4-9027515C7C0E
 ---
 
