@@ -1,5 +1,5 @@
 ---
-title: Managing Hyper-V Extensible Switch Source and Destination Port Data
+title: Managing Hyper-V Extensible Switch source, destination port data
 description: Managing Hyper-V Extensible Switch Source and Destination Port Data
 ms.assetid: 2AF60A5E-4BBD-41C6-9581-3F665A1B4D69
 ---

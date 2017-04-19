@@ -1,5 +1,5 @@
 ---
-title: Summary of NDIS 6.0 Task Offload Porting Issues for Miniport Drivers
+title: Summary of NDIS 6.0 miniport driver task offload porting issues
 description: Summary of NDIS 6.0 Task Offload Porting Issues for Miniport Drivers
 ms.assetid: 1f07829b-f66c-4709-ba94-77ef03821ff4
 keywords: ["task offload porting WDK networking , miniport drivers", "TCP/IP offload service porting WDK networking , miniport drivers", "offload service porting WDK networking , miniport drivers", "porting task offload services WDK networking , miniport drivers", "portin"]
