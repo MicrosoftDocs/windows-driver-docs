@@ -1,12 +1,12 @@
 ---
-title: Reusing Framework Request Objects
+title: Reusing Framework Request Objects in UMDF
 author: windows-driver-content
-description: Reusing Framework Request Objects
+description: Reusing Framework Request Objects in UMDF
 ms.assetid: 804efc94-a7df-4ebd-a42e-82d1c5376e19
 keywords: ["I/O requests WDK UMDF , reusing objects", "request processing WDK UMDF , reusing I/O request objects", "User-Mode Driver Framework WDK , reusing I/O request objects", "UMDF WDK , reusing I/O request objects", "user-mode drivers WDK UMDF , reusing I/O request objects", "reusing I/O request objects WDK UMDF"]
 ---
 
-# Reusing Framework Request Objects
+# Reusing Framework Request Objects in UMDF
 
 
 \[This topic applies to UMDF 1.*x*.\]

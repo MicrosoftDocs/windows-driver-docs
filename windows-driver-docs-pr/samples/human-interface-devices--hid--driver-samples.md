@@ -1,14 +1,14 @@
 ---
 title: Human interface devices (HID) driver samples
 author: windows-driver-content
-description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
+description: The driver samples in this directory provide a starting point for writing a custom HID driver for your device.
 ms.assetid: 38C52EAD-9DC6-4575-A9FF-1472FDDC2702
 ---
 
 # Human interface devices (HID) driver samples
 
 
-The driver samples in this directory provide a starting point for writing a custom driver for your device.
+The driver samples in this directory provide a starting point for writing a custom HID driver for your device.
 
 ## Human interface devices (HID)
 

@@ -1,14 +1,14 @@
 ---
 title: Print driver samples
 author: windows-driver-content
-description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
+description: The driver samples in this directory provide a starting point for writing a custom print driver for your device.
 ms.assetid: B4485626-9062-4892-B317-8FFA8B68C0D0
 ---
 
 # Print driver samples
 
 
-The driver samples in this directory provide a starting point for writing a custom driver for your device.
+The driver samples in this directory provide a starting point for writing a custom print driver for your device.
 
 ## Print
 
