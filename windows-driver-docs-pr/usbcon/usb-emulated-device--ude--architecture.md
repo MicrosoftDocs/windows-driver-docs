@@ -1,6 +1,11 @@
 ---
 Description: The section describes architecture of USB Device Emulation(UDE) that emulates the behavior of a USB host controller and a connected device.
 title: Architecture of USB Device Emulation (UDE)
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Architecture: USB Device Emulation (UDE)
