@@ -128,7 +128,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### Technology: Windows Image Acquisition (WIA) Drivers <a name="tech-wia></a>
+### Technology: Windows Image Acquisition (WIA) Drivers <a name="tech-wia"></a>
 
 <table>
 <colgroup>
