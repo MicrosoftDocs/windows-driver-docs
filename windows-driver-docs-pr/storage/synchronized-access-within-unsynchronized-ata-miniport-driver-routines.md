@@ -1,5 +1,5 @@
 ---
-title: Synchronized Access within Unsynchronized ATA Miniport Driver Routines
+title: Synchronized Access within ATA Miniport Driver Routines
 author: windows-driver-content
 description: Synchronized Access within Unsynchronized ATA Miniport Driver Routines
 ms.assetid: ed047579-9f22-4725-a4b0-3c44b8db89ef
@@ -14,7 +14,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Synchronized Access within Unsynchronized ATA Miniport Driver Routines
+# Synchronized Access within ATA Miniport Driver Routines
 
 
 ## <span id="ddk_synchronized_access_within_unsynchronized_ata_miniport_driver_rout"></span><span id="DDK_SYNCHRONIZED_ACCESS_WITHIN_UNSYNCHRONIZED_ATA_MINIPORT_DRIVER_ROUT"></span>

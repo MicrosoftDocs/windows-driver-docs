@@ -1,5 +1,5 @@
 ---
-title: Design Miniport Driver Callback Routine to Handle WMI Class with Data Fields
+title: Design Miniport Callback Routine to Handle WMI Classes
 author: windows-driver-content
 description: Designing a Miniport Driver Callback Routine that Handles WMI Classes with Data Fields
 ms.assetid: 6e08f9c1-e541-4e5f-8c99-f81d5793cc21

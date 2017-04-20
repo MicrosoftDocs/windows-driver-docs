@@ -1,5 +1,5 @@
 ---
-title: IRP-Based I/O Operations That Always Use Neither Buffered Nor Direct I/O
+title: IRP-Based I/O Operations That use Neither Buffered Nor Direct I/O
 author: windows-driver-content
 description: IRP-Based I/O Operations That Always Use Neither Buffered Nor Direct I/O
 ms.assetid: 2d757904-e46c-476d-896c-77beacfe4b7c

@@ -1,7 +1,7 @@
 ---
-title: Bypassing the Class Driver with SCSI Pass-Through Requests to Storport
+title: Bypass a Class Driver with SCSI Pass-Through Requests to Storport
 author: windows-driver-content
-description: Bypassing the Class Driver with SCSI Pass-Through Requests to Storport
+description: Bypass a Class Driver with SCSI Pass-Through Requests to Storport
 ms.assetid: 1162a1e7-a4f8-446f-8106-527f9b916382
 ms.author: windows-driver-content
 ms.date: 04/20/2017
@@ -10,8 +10,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Bypassing the Class Driver with SCSI Pass-Through Requests to Storport
-
+# Bypass a Class Driver with SCSI Pass-Through Requests to Storport
 
 In most cases, a class driver mediates all communication between Storport and higher-level drivers and applications. Some target devices, however, do not have a class driver. Drivers for such devices must communicate directly with Storport by using a class of requests called "pass-through" requests. To use a pass-through request, the higher-level component is required to set up the CDB that is used in the request, rather than relying on the class driver to do so.
 

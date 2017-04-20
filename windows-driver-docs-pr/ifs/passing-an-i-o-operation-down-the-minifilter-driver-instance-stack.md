@@ -1,5 +1,5 @@
 ---
-title: Passing an I/O Operation Down the Minifilter Driver Instance Stack
+title: Passing I/O Operations Down the Minifilter Driver Instance Stack
 author: windows-driver-content
 description: Passing an I/O Operation Down the Minifilter Driver Instance Stack
 ms.assetid: b2661e1e-2190-4def-be6c-27057c631304
@@ -13,7 +13,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Passing an I/O Operation Down the Minifilter Driver Instance Stack
+# Passing I/O Operations Down the Minifilter Driver Instance Stack
 
 
 ## <span id="ddk_passing_an_io_operation_down_the_minifilter_instance_stack_if"></span><span id="DDK_PASSING_AN_IO_OPERATION_DOWN_THE_MINIFILTER_INSTANCE_STACK_IF"></span>

@@ -1,5 +1,5 @@
 ---
-title: Using Driver MFTs on multi-pin cameras (Windows Store device apps)
+title: Using Driver MFTs on multi-pin cameras
 description: Some cameras provide separate pins for preview, capture, and stills. These multi-pin cameras pose unique challenges to developers. This topic covers some points to consider when developing a camera driver MFT on a multi-pin camera.
 ms.assetid: E946C676-D1CE-4759-A255-3E16EDCE599F
 ms.author: windows-driver-content

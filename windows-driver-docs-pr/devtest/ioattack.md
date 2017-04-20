@@ -12,7 +12,7 @@ ms.technology: windows-devices
 # IoAttack
 
 
-The [Penetration Tests (Device Fundamentals)](penetration-tests--device-fundamentals-.md) test **Run I/O Attack** performs the fuzz tests. The **Run I/O Attack** test uses the [IoSpy data file](iospy.md#iospy-data-file) that was previously created through IoSpy on a test system.
+The [Penetration Tests (Device Fundamentals)](penetration-tests--device-fundamentals-.md) test **Run I/O Attack** performs the fuzz tests. The **Run I/O Attack** test uses the [IoSpy data file](iospy.md) that was previously created through IoSpy on a test system.
 
 Before running IoAttack on a test system, you must do the following:
 
