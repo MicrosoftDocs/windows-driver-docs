@@ -223,7 +223,7 @@ The HID source driver can submit input reports by implementing the buffering pol
     }
     ```
 
-## Delete the virtual HID device
+## <a href="" id="delete-the-virtual-hid-device"></a> Delete the virtual HID device
 
 
 Delete the virtual HID device by calling [**VhfDelete**](https://msdn.microsoft.com/library/windows/hardware/dn925038).
