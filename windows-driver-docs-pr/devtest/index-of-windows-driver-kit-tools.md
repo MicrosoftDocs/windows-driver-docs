@@ -26,7 +26,7 @@ The information in the following tables describes the tools that are useful for 
 
 -   [Audio/Video Drivers](#tech-audio-video)
 -   [Bluetooth Drivers](#tech-bluetooth)
--   [Windows Image Acquisition (WIA) Drivers](#tech-wia)
+-   [Windows Image Acquisition (WIA) Drivers](#tech_wia)
 -   [Windows Portable Devices (WPD) Drivers](#tech-wpd)
 -   [Printer Drivers](#tech-printer)
 -   [Sensors](#tech-sensors)
@@ -128,7 +128,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### Technology: Windows Image Acquisition (WIA) Drivers<a name="tech-wia"></a>
+### Technology: Windows Image Acquisition (WIA) Drivers<a name="tech_wia"></a>
 
 <table>
 <colgroup>
