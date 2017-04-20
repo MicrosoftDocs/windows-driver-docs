@@ -2,7 +2,18 @@
 title: COPP Status Events
 description: COPP Status Events
 ms.assetid: e9d6bb04-9abd-4864-b359-3c8331843968
-keywords: ["copy protection WDK COPP , status", "video copy protection WDK COPP , status", "COPP WDK DirectX VA , status", "protected video WDK COPP , status", "status information WDK COPP", "status events WDK COPP"]
+keywords:
+- copy protection WDK COPP , status
+- video copy protection WDK COPP , status
+- COPP WDK DirectX VA , status
+- protected video WDK COPP , status
+- status information WDK COPP
+- status events WDK COPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP Status Events

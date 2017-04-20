@@ -2,7 +2,18 @@
 title: Setting and Canceling Battery Notification
 description: Setting and Canceling Battery Notification
 ms.assetid: bd0920f0-9f3f-47f7-b1a7-29ec233e93ff
-keywords: ["battery notifications WDK", "battery miniclass drivers WDK , notifications", "notifications WDK battery", "battery class drivers WDK , notifications", "canceling battery notifications", "stopping battery notifications"]
+keywords:
+- battery notifications WDK
+- battery miniclass drivers WDK , notifications
+- notifications WDK battery
+- battery class drivers WDK , notifications
+- canceling battery notifications
+- stopping battery notifications
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting and Canceling Battery Notification

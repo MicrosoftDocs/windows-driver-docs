@@ -3,7 +3,16 @@ title: How UMDF Handles Driver Failures
 author: windows-driver-content
 description: This topic describes actions that User-Mode Driver Framework (UMDF) and the operating system take when a UMDF driver fails. It applies to both UMDF versions 1 and 2.
 ms.assetid: 1811f131-6a51-4e53-bc8d-da511619f6fd
-keywords: ["User-Mode Driver Framework WDK , driver failures", "UMDF WDK , driver failures", "user-mode drivers WDK UMDF , driver failures", "failed drivers WDK UMDF"]
+keywords:
+- User-Mode Driver Framework WDK , driver failures
+- UMDF WDK , driver failures
+- user-mode drivers WDK UMDF , driver failures
+- failed drivers WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How UMDF Handles Driver Failures

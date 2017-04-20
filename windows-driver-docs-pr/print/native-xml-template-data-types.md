@@ -3,7 +3,18 @@ title: Native XML Template Data Types
 author: windows-driver-content
 description: Native XML Template Data Types
 ms.assetid: a34dec46-de5d-4f12-8863-2fe6b6e5eed4
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "native data type WDK GDL", "XML_TYPE WDK GDL", "ArrayLabel directive WDK GDL", "XMLDataType directive WDK GDL"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , primitive
+- native data type WDK GDL
+- XML_TYPE WDK GDL
+- ArrayLabel directive WDK GDL
+- XMLDataType directive WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native XML Template Data Types

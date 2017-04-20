@@ -2,7 +2,20 @@
 title: Minimal Interoperability Configuration Sets
 description: Minimal Interoperability Configuration Sets
 ms.assetid: 2390c710-8693-4af4-903f-89068436141d
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , restricted profiles", "Video Acceleration WDK DirectX , restricted profiles", "VA WDK DirectX , restricted profiles", "restricted profiles WDK DirectX VA", "minimal interoperability configuration set WDK DirectX VA", "interoperability configuration sets WDK DirectX VA", "configuration sets WDK DirectX VA", "DXVA_ConfigPictureDecode"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , restricted profiles
+- Video Acceleration WDK DirectX , restricted profiles
+- VA WDK DirectX , restricted profiles
+- restricted profiles WDK DirectX VA
+- minimal interoperability configuration set WDK DirectX VA
+- interoperability configuration sets WDK DirectX VA
+- configuration sets WDK DirectX VA
+- DXVA_ConfigPictureDecode
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Minimal Interoperability Configuration Sets

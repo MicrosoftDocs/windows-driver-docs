@@ -2,7 +2,17 @@
 title: Static Driver Verifier Input Files
 description: Static Driver Verifier Input Files
 ms.assetid: 0c31a752-6946-4704-aff6-c9cd1bf9f522
-keywords: ["Static Driver Verifier WDK , input files", "StaticDV WDK , input files", "SDV WDK , input files", "input files WDK Static Driver Verifier", "files WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , input files
+- StaticDV WDK , input files
+- SDV WDK , input files
+- input files WDK Static Driver Verifier
+- files WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier Input Files

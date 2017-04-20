@@ -2,6 +2,11 @@
 title: APN elements
 description: APN elements
 ms.assetid: 551e713e-7ac9-477f-966e-214b63f94507
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # APN elements

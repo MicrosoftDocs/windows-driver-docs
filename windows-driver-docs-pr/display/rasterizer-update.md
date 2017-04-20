@@ -2,7 +2,15 @@
 title: Rasterizer Update
 description: Rasterizer Update
 ms.assetid: 0b7db462-2b04-42e1-baa0-ec9070741c1d
-keywords: ["rasterizers WDK Direct3D", "production rasterizers WDK Direct3D", "reference rasterizers WDK Direct3D"]
+keywords:
+- rasterizers WDK Direct3D
+- production rasterizers WDK Direct3D
+- reference rasterizers WDK Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rasterizer Update

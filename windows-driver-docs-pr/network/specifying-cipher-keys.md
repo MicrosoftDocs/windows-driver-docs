@@ -2,7 +2,14 @@
 title: Specifying Cipher Keys
 description: Specifying Cipher Keys
 ms.assetid: 7580c84d-7f4c-49af-9513-96d62a293beb
-keywords: ["cipher keys WDK Native 802.11", "cipher operations WDK Native 802.11 , cipher keys"]
+keywords:
+- cipher keys WDK Native 802.11
+- cipher operations WDK Native 802.11 , cipher keys
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Cipher Keys

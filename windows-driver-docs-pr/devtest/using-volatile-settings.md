@@ -2,7 +2,14 @@
 title: Using Volatile Settings
 description: Using Volatile Settings
 ms.assetid: 16fb8c2a-60d8-4c0a-879d-447a1cda5415
-keywords: ["Driver Verifier WDK , volatile settings", "volatile settings WDK Driver Verifier"]
+keywords:
+- Driver Verifier WDK , volatile settings
+- volatile settings WDK Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Volatile Settings

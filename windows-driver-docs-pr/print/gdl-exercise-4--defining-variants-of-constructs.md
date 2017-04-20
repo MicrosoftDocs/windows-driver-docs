@@ -3,7 +3,18 @@ title: GDL Exercise 4 Defining Variants of Constructs
 author: windows-driver-content
 description: GDL Exercise 4 Defining Variants of Constructs
 ms.assetid: b923b5f8-6e60-44a0-a38e-8bfa315281c5
-keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "constructs WDK GDL , creating constructs", "creating GDL constructs WDK"]
+keywords:
+- GDL WDK , examples
+- examples WDK GDL
+- tutorials WDK GDL
+- GDL WDK , tutorials
+- constructs WDK GDL , creating constructs
+- creating GDL constructs WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Exercise 4: Defining Variants of Constructs

@@ -2,6 +2,11 @@
 title: Communication channels
 description: Communication channels
 ms.assetid: e26e22a2-4cc2-46a2-9d6c-02ab5df35041
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Communication channels

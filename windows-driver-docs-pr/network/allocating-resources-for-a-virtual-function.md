@@ -2,6 +2,11 @@
 title: Allocating Resources for a Virtual Function
 description: Allocating Resources for a Virtual Function
 ms.assetid: 00191D2C-E093-4DB7-AC82-8E8E5A74656F
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Resources for a Virtual Function

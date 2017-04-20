@@ -2,7 +2,14 @@
 title: ACPI Power Meter Interface
 description: ACPI Power Meter Interface
 ms.assetid: ed39b02d-eb21-47c4-9e6a-d98334232c7b
-keywords: ["Power Metering and Budgeting WDK , ACPI Power Meter Interface (PMI)", "ACPI Power Meter Interface WDK"]
+keywords:
+- Power Metering and Budgeting WDK , ACPI Power Meter Interface (PMI)
+- ACPI Power Meter Interface WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ACPI Power Meter Interface

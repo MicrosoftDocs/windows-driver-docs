@@ -2,6 +2,11 @@
 title: Managing User Roles
 ms.assetid: 000D3756-7110-4E9F-91CA-86F91EECCFCA
 description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing User Roles

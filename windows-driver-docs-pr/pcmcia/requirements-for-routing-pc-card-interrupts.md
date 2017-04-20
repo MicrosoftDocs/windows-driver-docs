@@ -2,7 +2,18 @@
 title: Requirements for Routing PC Card Interrupts
 description: Requirements for Routing PC Card Interrupts
 ms.assetid: dbe01864-f05b-4004-9b04-bdefc5055e78
-keywords: ["IRQ routing WDK PCMCIA bus", "PCMCIA WDK buses , IRQ routing", "PC Cards WDK PCMCIA bus", "interrupts WDK PCMCIA bus", "PCI interrupts WDK PCMCIA bus", "ISA interrupts WDK PCMCIA bus"]
+keywords:
+- IRQ routing WDK PCMCIA bus
+- PCMCIA WDK buses , IRQ routing
+- PC Cards WDK PCMCIA bus
+- interrupts WDK PCMCIA bus
+- PCI interrupts WDK PCMCIA bus
+- ISA interrupts WDK PCMCIA bus
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requirements for Routing PC Card Interrupts

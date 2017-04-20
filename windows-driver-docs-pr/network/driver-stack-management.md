@@ -2,7 +2,18 @@
 title: Driver Stack Management
 description: Driver Stack Management
 ms.assetid: 61d17e92-a1bf-42d9-b241-400b43b0ec0a
-keywords: ["driver stacks WDK networking , managing", "miniport adapters WDK networking , driver stacks", "miniport drivers WDK networking , miniport adapters", "NDIS miniport drivers WDK , miniport adapters", "protocol bindings WDK networking", "protocol drivers WDK net"]
+keywords:
+- driver stacks WDK networking , managing
+- miniport adapters WDK networking , driver stacks
+- miniport drivers WDK networking , miniport adapters
+- NDIS miniport drivers WDK , miniport adapters
+- protocol bindings WDK networking
+- protocol drivers WDK net
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Stack Management

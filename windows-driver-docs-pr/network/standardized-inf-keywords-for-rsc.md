@@ -2,7 +2,16 @@
 title: Standardized INF Keywords for RSC
 description: Standardized INF Keywords for RSC
 ms.assetid: 7418E02F-FD5A-4E58-AAA5-3055B98ED264
-keywords: ["receive-side coalescing WDK networking , standardized INF keywords", "RSC WDK networking , standardized INF keywords", "standardized INF keywords WDK RSC", "INF entries WDK RSC"]
+keywords:
+- receive-side coalescing WDK networking , standardized INF keywords
+- RSC WDK networking , standardized INF keywords
+- standardized INF keywords WDK RSC
+- INF entries WDK RSC
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standardized INF Keywords for RSC

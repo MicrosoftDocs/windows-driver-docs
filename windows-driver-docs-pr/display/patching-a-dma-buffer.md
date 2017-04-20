@@ -2,7 +2,14 @@
 title: Patching a DMA Buffer
 description: Patching a DMA Buffer
 ms.assetid: 4d8a8a89-0617-4ab8-8609-37bbdb8999f0
-keywords: ["DMA buffers WDK display , patching", "patching DMA buffers WDK display"]
+keywords:
+- DMA buffers WDK display , patching
+- patching DMA buffers WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Patching a DMA Buffer

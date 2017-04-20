@@ -3,7 +3,16 @@ title: Preprocessing and Postprocessing IRPs
 author: windows-driver-content
 description: Preprocessing and Postprocessing IRPs
 ms.assetid: a0e14ae6-a06e-4c24-8b64-b56f485cf9ff
-keywords: ["preprocessing IRPs WDK KMDF", "postprocessing IRPs WDK KMDF", "WDM IRPs WDK KMDF , preprocessing and postprocessing", "IRPs WDK KMDF , preprocessing and postprocessing"]
+keywords:
+- preprocessing IRPs WDK KMDF
+- postprocessing IRPs WDK KMDF
+- WDM IRPs WDK KMDF , preprocessing and postprocessing
+- IRPs WDK KMDF , preprocessing and postprocessing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preprocessing and Postprocessing IRPs

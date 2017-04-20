@@ -3,7 +3,20 @@ title: GDL Directives for Macros
 author: windows-driver-content
 description: GDL Directives for Macros
 ms.assetid: b3bf8686-ccbb-4c57-a896-16c6db6f131d
-keywords: ["directives WDK GDL , macro directives", "source files WDK GDL , macro directives", "macro directives WDK GDL", "parser WDK GDL , directives", "Macros directive WDK GDL", "BlockMacro directive WDK GDL", "InsertBlock directive WDK GDL", "macros WDK GDL , directives"]
+keywords:
+- directives WDK GDL , macro directives
+- source files WDK GDL , macro directives
+- macro directives WDK GDL
+- parser WDK GDL , directives
+- Macros directive WDK GDL
+- BlockMacro directive WDK GDL
+- InsertBlock directive WDK GDL
+- macros WDK GDL , directives
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Directives for Macros

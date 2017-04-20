@@ -2,7 +2,14 @@
 title: KMixer Latency
 description: KMixer Latency
 ms.assetid: 9781c145-e7c6-4933-a3e8-bdba39918636
-keywords: ["KMixer system driver WDK audio , latency", "waveOut latency WDK audio"]
+keywords:
+- KMixer system driver WDK audio , latency
+- waveOut latency WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KMixer Latency

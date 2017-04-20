@@ -2,7 +2,14 @@
 title: C28133
 description: Warning C28133 IoInitializeTimer is best called from AddDevice.
 ms.assetid: c832cf67-1fc2-491b-a9e3-d35c5d9f6b73
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28133

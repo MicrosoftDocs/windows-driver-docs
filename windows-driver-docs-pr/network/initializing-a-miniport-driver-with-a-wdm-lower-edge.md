@@ -2,7 +2,20 @@
 title: Initializing a Miniport Driver with a WDM Lower Edge
 description: Initializing a Miniport Driver with a WDM Lower Edge
 ms.assetid: 1c5b0ec0-5d63-423d-af21-ffd8990f6160
-keywords: ["NDIS-WDM miniport drivers WDK networking , initializing", "NDIS-WDM miniport drivers WDK networking , upper edge of", "miniport drivers WDK networking , initializing", "NDIS miniport drivers WDK , initializing", "deserialized NDIS miniport drivers WDK networking", "lower edge of NDIS miniport drivers WDK networking , driver initialization", "WDM lower edge WDK networking , driver initialization", "initializing miniport drivers"]
+keywords:
+- NDIS-WDM miniport drivers WDK networking , initializing
+- NDIS-WDM miniport drivers WDK networking , upper edge of
+- miniport drivers WDK networking , initializing
+- NDIS miniport drivers WDK , initializing
+- deserialized NDIS miniport drivers WDK networking
+- lower edge of NDIS miniport drivers WDK networking , driver initialization
+- WDM lower edge WDK networking , driver initialization
+- initializing miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a Miniport Driver with a WDM Lower Edge

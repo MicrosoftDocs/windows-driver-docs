@@ -2,6 +2,11 @@
 title: HardwareId
 description: HardwareId
 ms.assetid: 9c09915c-d0f6-4ddf-b2e1-79f00599c3a0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HardwareId

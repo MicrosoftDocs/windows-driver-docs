@@ -2,6 +2,11 @@
 title: Virtual Machine Queue (VMQ) Interface
 description: Virtual Machine Queue (VMQ) Interface
 ms.assetid: AE0F65F0-7A5B-48FA-8635-617E71D86479
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Machine Queue (VMQ) Interface

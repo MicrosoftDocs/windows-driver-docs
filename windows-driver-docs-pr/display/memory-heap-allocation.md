@@ -2,7 +2,23 @@
 title: Memory Heap Allocation
 description: Memory Heap Allocation
 ms.assetid: 669dce85-ed37-4d47-88d6-115cb3a2e419
-keywords: ["stride WDK DirectDraw", "pitch WDK DirectDraw", "offsets WDK DirectDraw", "drawing memory WDK DirectDraw , heaps", "DirectDraw memory WDK Windows 2000 display , heaps", "memory WDK DirectDraw , heaps", "display memory WDK DirectDraw , heaps", "heaps WDK DirectDraw", "allocating memory heaps", "VIDEOMEMORY", "surfaces WDK DirectDraw , memory heap allocation"]
+keywords:
+- stride WDK DirectDraw
+- pitch WDK DirectDraw
+- offsets WDK DirectDraw
+- drawing memory WDK DirectDraw , heaps
+- DirectDraw memory WDK Windows 2000 display , heaps
+- memory WDK DirectDraw , heaps
+- display memory WDK DirectDraw , heaps
+- heaps WDK DirectDraw
+- allocating memory heaps
+- VIDEOMEMORY
+- surfaces WDK DirectDraw , memory heap allocation
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Memory Heap Allocation

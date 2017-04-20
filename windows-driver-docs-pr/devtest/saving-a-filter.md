@@ -2,7 +2,15 @@
 title: Saving a Filter
 description: Saving a Filter
 ms.assetid: ffddd3c9-8e90-45c6-acba-3540ba10c4a0
-keywords: ["filtering trace messages, saving WDK", "trace message filters WDK , saving", "saving trace filters"]
+keywords:
+- filtering trace messages, saving WDK
+- trace message filters WDK , saving
+- saving trace filters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Saving a Filter

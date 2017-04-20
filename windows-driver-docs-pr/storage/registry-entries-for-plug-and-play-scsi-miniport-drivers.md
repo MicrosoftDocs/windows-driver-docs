@@ -3,7 +3,17 @@ title: Registry Entries for Plug and Play SCSI Miniport Drivers
 author: windows-driver-content
 description: Registry Entries for Plug and Play SCSI Miniport Drivers
 ms.assetid: d4c7c8ee-9d04-4fd4-9b70-2630d2ce6401
-keywords: ["SCSI miniport drivers WDK storage , PnP", "PnP WDK SCSI", "Plug and Play WDK SCSI", "PnPInterface", "registry WDK SCSI"]
+keywords:
+- SCSI miniport drivers WDK storage , PnP
+- PnP WDK SCSI
+- Plug and Play WDK SCSI
+- PnPInterface
+- registry WDK SCSI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Entries for Plug and Play SCSI Miniport Drivers

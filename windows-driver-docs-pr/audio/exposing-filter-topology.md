@@ -2,7 +2,17 @@
 title: Exposing Filter Topology
 description: Exposing Filter Topology
 ms.assetid: bf791f40-b2fb-48fe-8350-3b926db4ead7
-keywords: ["topology filters WDK audio", "filter topology WDK audio", "KS filters WDK audio , topology", "exposing filter topology", "audio filters WDK audio , exposing topology"]
+keywords:
+- topology filters WDK audio
+- filter topology WDK audio
+- KS filters WDK audio , topology
+- exposing filter topology
+- audio filters WDK audio , exposing topology
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Exposing Filter Topology

@@ -2,7 +2,15 @@
 title: Validating Index Values
 description: Validating Index Values
 ms.assetid: 09247df3-0c87-48cf-9c94-bda23c6b38d2
-keywords: ["user-mode display drivers WDK Windows Vista , index validation", "validating index values WDK display", "index validation WDK display"]
+keywords:
+- user-mode display drivers WDK Windows Vista , index validation
+- validating index values WDK display
+- index validation WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Validating Index Values

@@ -3,7 +3,16 @@ title: Storage Class Driver's ReleaseQueue Routine
 author: windows-driver-content
 description: Storage Class Driver's ReleaseQueue Routine
 ms.assetid: 4d0f74f2-6c98-4de1-bc28-dfff3c01e319
-keywords: ["ReleaseQueue", "queues WDK storage", "freezing queues WDK storage", "frozen queues WDK storage"]
+keywords:
+- ReleaseQueue
+- queues WDK storage
+- freezing queues WDK storage
+- frozen queues WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Class Driver's ReleaseQueue Routine

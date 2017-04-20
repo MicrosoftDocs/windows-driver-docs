@@ -2,7 +2,17 @@
 title: Prefetch Offsets
 description: Prefetch Offsets
 ms.assetid: 92a0163f-29b1-4e15-88ab-67e1097d015e
-keywords: ["hardware acceleration WDK DirectSound , prefetch offsets", "prefetch offsets WDK audio", "write cursor offsets WDK audio", "play cursor offsets WDK audio", "offsets WDK audio"]
+keywords:
+- hardware acceleration WDK DirectSound , prefetch offsets
+- prefetch offsets WDK audio
+- write cursor offsets WDK audio
+- play cursor offsets WDK audio
+- offsets WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Prefetch Offsets

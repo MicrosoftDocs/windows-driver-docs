@@ -2,7 +2,17 @@
 title: Using Kernel-Mode Video Transport
 description: Using Kernel-Mode Video Transport
 ms.assetid: 0be84371-f7d5-42bb-b164-80fcf1b58d95
-keywords: ["drawing kernel-mode video transport WDK DirectDraw , about kernel-mode video transport", "DirectDraw kernel-mode video transport WDK Windows 2000 display , about kernel-mode video transport", "kernel-mode video transport WDK DirectDraw , about kernel-mode video transport", "video transport kernel-mode WDK DirectDraw , about kernel-mode video transport", "video capture WDK video transport kernel-mode"]
+keywords:
+- drawing kernel-mode video transport WDK DirectDraw , about kernel-mode video transport
+- DirectDraw kernel-mode video transport WDK Windows 2000 display , about kernel-mode video transport
+- kernel-mode video transport WDK DirectDraw , about kernel-mode video transport
+- video transport kernel-mode WDK DirectDraw , about kernel-mode video transport
+- video capture WDK video transport kernel-mode
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Kernel-Mode Video Transport

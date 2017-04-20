@@ -2,7 +2,20 @@
 title: GDI Halftoning Capabilities
 description: GDI Halftoning Capabilities
 ms.assetid: 57274fd5-fdf6-4041-b52c-4e409465d159
-keywords: ["GDI WDK Windows 2000 display , rendering engine", "graphics drivers WDK Windows 2000 display , rendering engine", "drawing WDK GDI , rendering engine", "rendering engine WDK GDI", "GDI WDK Windows 2000 display , halftoning", "graphics drivers WDK Windows 2000 display , halftoning", "drawing WDK GDI , halftoning", "halftoning WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , rendering engine
+- graphics drivers WDK Windows 2000 display , rendering engine
+- drawing WDK GDI , rendering engine
+- rendering engine WDK GDI
+- GDI WDK Windows 2000 display , halftoning
+- graphics drivers WDK Windows 2000 display , halftoning
+- drawing WDK GDI , halftoning
+- halftoning WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Halftoning Capabilities

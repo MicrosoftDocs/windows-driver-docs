@@ -3,7 +3,19 @@ title: Participating in Error Record Persistence
 author: windows-driver-content
 description: Participating in Error Record Persistence
 ms.assetid: 06cbcccf-7cda-468d-aa6e-b8ecf95adf16
-keywords: ["Windows Hardware Error Architecture WDK , error record persistence", "WHEA WDK , error record persistence", "hardware errors WDK WHEA , error record persistence", "errors WDK WHEA , error record persistence", "platform-specific hardware error driver plug-ins WDK WHEA , error record persistence", "PSHED plug-ins WDK WHEA , error record persistence", "error record persistence WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , error record persistence
+- WHEA WDK , error record persistence
+- hardware errors WDK WHEA , error record persistence
+- errors WDK WHEA , error record persistence
+- platform-specific hardware error driver plug-ins WDK WHEA , error record persistence
+- PSHED plug-ins WDK WHEA , error record persistence
+- error record persistence WDK WHEA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Participating in Error Record Persistence

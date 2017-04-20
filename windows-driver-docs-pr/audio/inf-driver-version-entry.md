@@ -2,7 +2,19 @@
 title: INF Driver-Version Entry
 description: INF Driver-Version Entry
 ms.assetid: 092cd9ed-8988-4ffd-9958-1267f3c52819
-keywords: ["version numbers WDK audio", "INF files WDK audio", "audio miniport drivers WDK , version numbers", "miniport drivers WDK audio , version numbers", "audio drivers WDK , version numbers", "driver version numbers WDK audio", "INF DriverVer Directive"]
+keywords:
+- version numbers WDK audio
+- INF files WDK audio
+- audio miniport drivers WDK , version numbers
+- miniport drivers WDK audio , version numbers
+- audio drivers WDK , version numbers
+- driver version numbers WDK audio
+- INF DriverVer Directive
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Driver-Version Entry

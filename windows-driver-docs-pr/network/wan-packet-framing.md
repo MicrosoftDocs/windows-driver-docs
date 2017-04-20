@@ -2,7 +2,19 @@
 title: WAN Packet Framing
 description: WAN Packet Framing
 ms.assetid: 11a6fbf5-c7a9-474b-811e-c77a36e834f3
-keywords: ["WAN miniport drivers WDK networking , packets", "CoNDIS WAN drivers WDK networking , packets", "packet framing WDK WAN", "NDISWAN WDK networking", "WAN packet framing WDK networking", "packet framing WDK WAN , about WAN packet framing", "WAN packet framing WDK networking , about WAN packet framing"]
+keywords:
+- WAN miniport drivers WDK networking , packets
+- CoNDIS WAN drivers WDK networking , packets
+- packet framing WDK WAN
+- NDISWAN WDK networking
+- WAN packet framing WDK networking
+- packet framing WDK WAN , about WAN packet framing
+- WAN packet framing WDK networking , about WAN packet framing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WAN Packet Framing

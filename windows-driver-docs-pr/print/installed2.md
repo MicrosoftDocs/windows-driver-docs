@@ -3,7 +3,13 @@ title: Installed
 author: windows-driver-content
 description: Installed
 ms.assetid: 4e14d8c1-7c66-4035-845d-f3f92dad8c4f
-keywords: ["Installed construct"]
+keywords:
+- Installed construct
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installed

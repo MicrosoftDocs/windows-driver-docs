@@ -2,6 +2,11 @@
 title: Setting the PCI Configuration Data of a Virtual Function
 description: Setting the PCI Configuration Data of a Virtual Function
 ms.assetid: 74CAAD8B-7009-4C79-A496-93B4A3DA0B43
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the PCI Configuration Data of a Virtual Function

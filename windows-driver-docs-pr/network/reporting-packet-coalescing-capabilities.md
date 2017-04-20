@@ -2,6 +2,11 @@
 title: Reporting Packet Coalescing Capabilities
 description: Reporting Packet Coalescing Capabilities
 ms.assetid: 6118F648-87FE-4B9E-9535-1602F4FF79D2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Packet Coalescing Capabilities

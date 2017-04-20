@@ -2,7 +2,29 @@
 title: Remote NDIS Concepts and Definitions
 description: Remote NDIS Concepts and Definitions
 ms.assetid: caf01e69-9368-4b9b-a343-ef17a2154bb8
-keywords: ["Remote NDIS WDK networking , concepts", "Remote NDIS WDK networking , definitions", "Remote NDIS WDK networking , control channels", "Remote NDIS WDK networking , data channels", "Remote NDIS WDK networking , halt", "control channels WDK networking", "control channels WDK networking , initialization", "control channels WDK networking , teardown", "data channels WDK networking", "data channels WDK networking , initialization", "data channels WDK networking , teardown", "Remote NDIS WDK networking , device states", "device states WDK networking", "Remote NDIS WDK networking , flow control", "Remote NDIS WDK networking , resetting communication channels", "communication channels WDK networking", "Remote NDIS WDK networking , message encapsulation"]
+keywords:
+- Remote NDIS WDK networking , concepts
+- Remote NDIS WDK networking , definitions
+- Remote NDIS WDK networking , control channels
+- Remote NDIS WDK networking , data channels
+- Remote NDIS WDK networking , halt
+- control channels WDK networking
+- control channels WDK networking , initialization
+- control channels WDK networking , teardown
+- data channels WDK networking
+- data channels WDK networking , initialization
+- data channels WDK networking , teardown
+- Remote NDIS WDK networking , device states
+- device states WDK networking
+- Remote NDIS WDK networking , flow control
+- Remote NDIS WDK networking , resetting communication channels
+- communication channels WDK networking
+- Remote NDIS WDK networking , message encapsulation
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote NDIS Concepts and Definitions

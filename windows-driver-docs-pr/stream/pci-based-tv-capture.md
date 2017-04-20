@@ -3,7 +3,16 @@ title: PCI-Based TV Capture
 author: windows-driver-content
 description: PCI-Based TV Capture
 ms.assetid: ae97d5f7-82de-4d6e-9835-ff4c7427f333
-keywords: ["filter graph configurations WDK video capture , PCI-based TV capture", "PCI-based TV capture WDK video capture", "TV capture WDK video capture", "television capture WDK video capture"]
+keywords:
+- filter graph configurations WDK video capture , PCI-based TV capture
+- PCI-based TV capture WDK video capture
+- TV capture WDK video capture
+- television capture WDK video capture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PCI-Based TV Capture

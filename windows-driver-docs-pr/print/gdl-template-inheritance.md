@@ -3,7 +3,17 @@ title: GDL Template Inheritance
 author: windows-driver-content
 description: GDL Template Inheritance
 ms.assetid: 0e3271ee-6b58-4f57-a0be-18715705604f
-keywords: ["GDL WDK , templates", "templates WDK GDL , inheritance", "inheritance WDK GDL", "schemas WDK GDL , inheritance-based schemas", "templates WDK GDL , derived templates"]
+keywords:
+- GDL WDK , templates
+- templates WDK GDL , inheritance
+- inheritance WDK GDL
+- schemas WDK GDL , inheritance-based schemas
+- templates WDK GDL , derived templates
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Template Inheritance

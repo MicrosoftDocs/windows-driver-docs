@@ -3,7 +3,15 @@ title: ATA Port's Interface with ATA Miniport Drivers
 author: windows-driver-content
 description: ATA Port's Interface with ATA Miniport Drivers
 ms.assetid: c3a9b862-8d6e-4ad7-8061-178b053b820c
-keywords: ["ATA Port drivers WDK , miniport drivers", "ATA miniport drivers WDK", "miniport drivers WDK storage , ATA miniport drivers"]
+keywords:
+- ATA Port drivers WDK , miniport drivers
+- ATA miniport drivers WDK
+- miniport drivers WDK storage , ATA miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ATA Port's Interface with ATA Miniport Drivers

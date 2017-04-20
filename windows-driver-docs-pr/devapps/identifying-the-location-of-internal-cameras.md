@@ -2,6 +2,11 @@
 title: Identifying the location of internal cameras
 description: This topic provides info about supporting internal cameras on systems in Windows 8.1.
 ms.assetid: 7664F0F6-BD95-4919-82E4-F6F8080C2B5B
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifying the location of internal cameras (Windows Store device apps)

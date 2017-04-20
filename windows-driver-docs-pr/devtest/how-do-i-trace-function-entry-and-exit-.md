@@ -2,6 +2,11 @@
 title: How do I trace function entry and exit
 description: How do I trace function entry and exit
 ms.assetid: 08b0cf86-0f19-4972-8ae1-44ffdc968c16
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How do I trace function entry and exit?

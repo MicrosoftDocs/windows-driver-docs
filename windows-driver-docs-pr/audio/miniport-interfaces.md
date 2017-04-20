@@ -2,7 +2,20 @@
 title: Miniport Interfaces
 description: Miniport Interfaces
 ms.assetid: 50b92adc-a63c-4242-9ec9-4d97151f0f91
-keywords: ["audio miniport drivers WDK , interfaces", "miniport drivers WDK audio , interfaces", "miniport interfaces WDK audio", "port class drivers WDK audio", "PortCls WDK audio , interfaces", "interfaces WDK audio", "built-in port drivers WDK audio", "stream interfaces WDK audio"]
+keywords:
+- audio miniport drivers WDK , interfaces
+- miniport drivers WDK audio , interfaces
+- miniport interfaces WDK audio
+- port class drivers WDK audio
+- PortCls WDK audio , interfaces
+- interfaces WDK audio
+- built-in port drivers WDK audio
+- stream interfaces WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Interfaces

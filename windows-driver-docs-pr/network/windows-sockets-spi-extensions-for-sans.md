@@ -2,7 +2,14 @@
 title: Windows Sockets SPI Extensions for SANs
 description: Windows Sockets SPI Extensions for SANs
 ms.assetid: 08f51612-2e2b-439a-8318-43884086828c
-keywords: ["SAN service providers WDK , extensions", "extensions WDK SANs"]
+keywords:
+- SAN service providers WDK , extensions
+- extensions WDK SANs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Sockets SPI Extensions for SANs

@@ -2,7 +2,16 @@
 title: Supporting Multiple PDEVs
 description: Supporting Multiple PDEVs
 ms.assetid: e06fe2da-b677-4649-bf7a-09a8f2ddfc6b
-keywords: ["display drivers WDK Windows 2000 , desktop management", "desktop management WDK Windows 2000 display", "multiple PDEVs WDK Windows 2000 display", "PDEV WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , desktop management
+- desktop management WDK Windows 2000 display
+- multiple PDEVs WDK Windows 2000 display
+- PDEV WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Multiple PDEVs

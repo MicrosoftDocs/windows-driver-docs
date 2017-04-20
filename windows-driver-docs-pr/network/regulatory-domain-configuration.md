@@ -2,7 +2,14 @@
 title: Regulatory Domain Configuration
 description: Regulatory Domain Configuration
 ms.assetid: 53fae694-976f-4d5b-b576-97c98e7e0ca4
-keywords: ["configurations WDK Native 802.11 , regulatory domain", "regulatory domain WDK Native 802.11"]
+keywords:
+- configurations WDK Native 802.11 , regulatory domain
+- regulatory domain WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Regulatory Domain Configuration

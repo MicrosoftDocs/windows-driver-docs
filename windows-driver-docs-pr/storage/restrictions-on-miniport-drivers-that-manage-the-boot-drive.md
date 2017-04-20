@@ -3,7 +3,17 @@ title: Restrictions on Miniport Drivers that Manage the Boot Drive
 author: windows-driver-content
 description: Restrictions on Miniport Drivers that Manage the Boot Drive
 ms.assetid: 78375e9b-8be9-4e64-b90e-cc8c4ab1751b
-keywords: ["storage miniport drivers WDK , boot drives", "miniport drivers WDK storage , boot drives", "boot drives WDK storage", "disk dump drivers WDK storage", "dump mode WDK storage"]
+keywords:
+- storage miniport drivers WDK , boot drives
+- miniport drivers WDK storage , boot drives
+- boot drives WDK storage
+- disk dump drivers WDK storage
+- dump mode WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Restrictions on Miniport Drivers that Manage the Boot Drive

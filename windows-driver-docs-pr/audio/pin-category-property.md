@@ -2,7 +2,24 @@
 title: Pin Category Property
 description: Pin Category Property
 ms.assetid: fd4a4afd-2c17-4002-87ae-21501b1d75c1
-keywords: ["audio properties WDK , pins", "WDM audio properties WDK , pins", "pins WDK audio , categories", "input terminal identifiers WDK audio", "output terminal identifiers WDK audio", "bidirectional terminal identifiers WDK audio", "telephony terminal identifiers WDK audio", "external terminal identifiers WDK audio", "embedded function terminal identifiers WDK audio", "terminal identifiers WDK audio", "GUIDs WDK audio", "category GUIDs WDK audio"]
+keywords:
+- audio properties WDK , pins
+- WDM audio properties WDK , pins
+- pins WDK audio , categories
+- input terminal identifiers WDK audio
+- output terminal identifiers WDK audio
+- bidirectional terminal identifiers WDK audio
+- telephony terminal identifiers WDK audio
+- external terminal identifiers WDK audio
+- embedded function terminal identifiers WDK audio
+- terminal identifiers WDK audio
+- GUIDs WDK audio
+- category GUIDs WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pin Category Property

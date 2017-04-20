@@ -2,7 +2,16 @@
 title: Upgrading Network Components
 description: Upgrading Network Components
 ms.assetid: ddd1eda0-7bed-44e7-8636-8db3508825f5
-keywords: ["network component upgrades WDK", "upgrading network components WDK", "network component upgrades WDK , about upgrading network components", "upgrading network components WDK , about upgrading network components"]
+keywords:
+- network component upgrades WDK
+- upgrading network components WDK
+- network component upgrades WDK , about upgrading network components
+- upgrading network components WDK , about upgrading network components
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Upgrading Network Components

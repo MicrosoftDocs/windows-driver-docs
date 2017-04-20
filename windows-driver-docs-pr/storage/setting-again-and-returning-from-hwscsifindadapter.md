@@ -3,7 +3,16 @@ title: Setting Again and Returning from HwScsiFindAdapter
 author: windows-driver-content
 description: Setting Again and Returning from HwScsiFindAdapter
 ms.assetid: 8a9cde40-06fa-4b56-818d-63a9c71da208
-keywords: ["HwScsiFindAdapter", "SCSI miniport drivers WDK storage , HwScsiFindAdapter", "Again WDK SCSI", "return values WDK SCSI"]
+keywords:
+- HwScsiFindAdapter
+- SCSI miniport drivers WDK storage , HwScsiFindAdapter
+- Again WDK SCSI
+- return values WDK SCSI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Again and Returning from HwScsiFindAdapter

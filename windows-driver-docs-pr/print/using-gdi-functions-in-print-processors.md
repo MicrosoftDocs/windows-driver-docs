@@ -3,7 +3,15 @@ title: Using GDI Functions in Print Processors
 author: windows-driver-content
 description: Using GDI Functions in Print Processors
 ms.assetid: 2ad62308-ab42-4475-ac42-f753d5091251
-keywords: ["EMF record playback WDK print processor", "GDI functions WDK print processor", "NT EMF WDK print processor"]
+keywords:
+- EMF record playback WDK print processor
+- GDI functions WDK print processor
+- NT EMF WDK print processor
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using GDI Functions in Print Processors

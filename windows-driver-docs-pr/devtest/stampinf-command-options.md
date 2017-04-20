@@ -2,13 +2,19 @@
 title: Stampinf Command Options
 description: Stampinf is a command-line tool that updates common INF file directives.
 ms.assetid: 409b1bcc-9e19-4a95-a459-fc9f1ec41ea1
-keywords: ["Stampinf Command Options Driver Development Tools"]
+keywords:
+- Stampinf Command Options Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - Stampinf
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stampinf Command Options

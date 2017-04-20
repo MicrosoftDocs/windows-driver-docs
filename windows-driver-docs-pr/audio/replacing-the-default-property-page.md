@@ -2,6 +2,11 @@
 title: Replacing the Default Property Page
 description: Replacing the Default Property Page
 ms.assetid: decd2f44-fb1f-41bf-b5a7-e1ca295a0bb9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Replacing the Default Property Page

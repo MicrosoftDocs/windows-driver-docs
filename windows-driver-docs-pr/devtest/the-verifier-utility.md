@@ -2,7 +2,14 @@
 title: The Verifier Utility
 description: The Verifier Utility
 ms.assetid: e332a6fc-b90c-49e8-8775-5332e9284e4e
-keywords: ["Verifier utility", "Driver Verifier WDK , Verifier utility"]
+keywords:
+- Verifier utility
+- Driver Verifier WDK , Verifier utility
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Verifier Utility

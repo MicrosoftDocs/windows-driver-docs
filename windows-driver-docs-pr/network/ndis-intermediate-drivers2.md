@@ -2,7 +2,16 @@
 title: NDIS Intermediate Drivers
 description: NDIS Intermediate Drivers
 ms.assetid: 773d9711-fdea-4541-bb0d-6b07b50892fc
-keywords: ["intermediate drivers WDK networking", "network drivers WDK , intermediate drivers", "NDIS WDK , intermediate drivers", "NDIS intermediate drivers WDK"]
+keywords:
+- intermediate drivers WDK networking
+- network drivers WDK , intermediate drivers
+- NDIS WDK , intermediate drivers
+- NDIS intermediate drivers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Intermediate Drivers

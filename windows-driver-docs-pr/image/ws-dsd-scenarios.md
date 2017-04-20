@@ -3,6 +3,11 @@ title: WS-DSD Scenarios
 author: windows-driver-content
 description: WS-DSD Scenarios
 ms.assetid: 5a7db624-6655-4cf1-9e0a-d019e86aa515
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSD Scenarios

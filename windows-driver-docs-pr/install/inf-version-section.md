@@ -2,13 +2,19 @@
 title: INF Version Section
 description: By convention, the Version section appears first in INF files. Every INF file must have this section.
 ms.assetid: 53e30950-28a3-4ae3-a351-a917b02c84a5
-keywords: ["INF Version Section Device and Driver Installation"]
+keywords:
+- INF Version Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF Version Section
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Version Section

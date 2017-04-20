@@ -2,7 +2,14 @@
 title: Creating a Device Interface for a WBDI Driver
 description: Creating a Device Interface for a WBDI Driver
 ms.assetid: 8595092c-9105-4638-814a-74cdfa372638
-keywords: ["biometric drivers WDK , device interfaces", "device interfaces WDK biometric"]
+keywords:
+- biometric drivers WDK , device interfaces
+- device interfaces WDK biometric
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Device Interface for a WBDI Driver

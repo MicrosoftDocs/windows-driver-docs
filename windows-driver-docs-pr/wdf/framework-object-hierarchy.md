@@ -3,7 +3,15 @@ title: Framework Object Hierarchy
 author: windows-driver-content
 description: Framework Object Hierarchy
 ms.assetid: ffacca8f-4083-4998-83d2-7c31544eb497
-keywords: ["UMDF objects WDK , hierarchy", "framework objects WDK UMDF , hierarchy", "hierarchy WDK UMDF"]
+keywords:
+- UMDF objects WDK , hierarchy
+- framework objects WDK UMDF , hierarchy
+- hierarchy WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework Object Hierarchy

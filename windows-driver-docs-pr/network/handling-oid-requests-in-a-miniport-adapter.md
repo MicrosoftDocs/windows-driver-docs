@@ -2,7 +2,14 @@
 title: Handling OID Requests In a Miniport Adapter
 description: Handling OID Requests In a Miniport Adapter
 ms.assetid: 0819ef06-5715-4814-a1ed-ddc757728ec4
-keywords: ["miniport drivers WDK networking , OID requests", "OIDs WDK networking , miniport drivers"]
+keywords:
+- miniport drivers WDK networking , OID requests
+- OIDs WDK networking , miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling OID Requests In a Miniport Adapter

@@ -2,7 +2,15 @@
 title: Supporting Multiple-Head Hardware
 description: Supporting Multiple-Head Hardware
 ms.assetid: ea618586-3649-405c-b1fd-78a11f14c742
-keywords: ["multiple-head hardware WDK DirectX 9.0", "hardware multiple-head support WDK DirectX 9.0", "multiple-head hardware WDK DirectX 9.0 , about multiple-head hardware"]
+keywords:
+- multiple-head hardware WDK DirectX 9.0
+- hardware multiple-head support WDK DirectX 9.0
+- multiple-head hardware WDK DirectX 9.0 , about multiple-head hardware
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Multiple-Head Hardware

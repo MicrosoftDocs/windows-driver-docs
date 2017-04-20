@@ -2,6 +2,11 @@
 title: Rasterizer Block
 description: Rasterizer Block
 ms.assetid: 115c265d-0264-4a8a-b07b-710438394c68
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rasterizer Block

@@ -2,6 +2,11 @@
 title: How Do I Enable WPP Tracing Through the Windows Event Log Service
 description: .
 ms.assetid: cd5dad3e-fa25-4ec2-bc17-9332b4c00d17
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How Do I Enable WPP Tracing Through the Windows Event Log Service?

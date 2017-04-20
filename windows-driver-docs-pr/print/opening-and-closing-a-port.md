@@ -3,7 +3,22 @@ title: Opening and Closing a Port
 author: windows-driver-content
 description: Opening and Closing a Port
 ms.assetid: 8bfdb3af-51d4-4252-ae1c-7910f973f5f6
-keywords: ["print monitors WDK , port management", "port management WDK print , opening ports", "opening print ports", "port management WDK print , closing ports", "closing print ports", "OpenPort", "OpenPortEx", "ClosePort", "spooler opening and closing ports WDK print", "print spooler opening and closing ports WDK"]
+keywords:
+- print monitors WDK , port management
+- port management WDK print , opening ports
+- opening print ports
+- port management WDK print , closing ports
+- closing print ports
+- OpenPort
+- OpenPortEx
+- ClosePort
+- spooler opening and closing ports WDK print
+- print spooler opening and closing ports WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening and Closing a Port

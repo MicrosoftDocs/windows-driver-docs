@@ -3,7 +3,14 @@ title: Installing ICC Profiles
 author: windows-driver-content
 description: Installing ICC Profiles
 ms.assetid: d9253ee8-c414-46a9-899f-46ae32cee41a
-keywords: ["color management WDK print , installing ICC profiles", "ICC profiles WDK print"]
+keywords:
+- color management WDK print , installing ICC profiles
+- ICC profiles WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing ICC Profiles

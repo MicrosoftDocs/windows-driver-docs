@@ -2,7 +2,17 @@
 title: Calling Other Windows Filtering Platform Functions
 description: Calling Other Windows Filtering Platform Functions
 ms.assetid: dae70b4d-2be2-4db3-86cc-2e7df7d5c034
-keywords: ["Windows Filtering Platform callout drivers WDK , calling other functions", "callout drivers WDK Windows Filtering Platform , calling other functions", "filter engine WDK Windows Filtering Platform", "kernel-mode callout drivers WDK Windows Filtering Platform", "user-mode callout drivers WDK Windows Filtering Platform"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , calling other functions
+- callout drivers WDK Windows Filtering Platform , calling other functions
+- filter engine WDK Windows Filtering Platform
+- kernel-mode callout drivers WDK Windows Filtering Platform
+- user-mode callout drivers WDK Windows Filtering Platform
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling Other Windows Filtering Platform Functions

@@ -3,7 +3,18 @@ title: PFA Performed by a PSHED Plug-In
 author: windows-driver-content
 description: PFA Performed by a PSHED Plug-In
 ms.assetid: e9876c86-b059-406f-a01a-7670ab294098
-keywords: ["predictive failure analysis (PFA) WDK WHEA , PSHED plug-in", "PFA WDK WHEA , PSHED plug-in", "platform-specific hardware error driver (PSHED) WDK WHEA", "platform-specific hardware error driver (PSHED) WDK WHEA , predictive failure analysis", "PSHED plug-in WDK WHEA", "PSHED plug-in WDK WHEA , predictive failure analysis"]
+keywords:
+- predictive failure analysis (PFA) WDK WHEA , PSHED plug-in
+- PFA WDK WHEA , PSHED plug-in
+- platform-specific hardware error driver (PSHED) WDK WHEA
+- platform-specific hardware error driver (PSHED) WDK WHEA , predictive failure analysis
+- PSHED plug-in WDK WHEA
+- PSHED plug-in WDK WHEA , predictive failure analysis
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PFA Performed by a PSHED Plug-In

@@ -2,7 +2,14 @@
 title: C28134
 description: Warning C28134 The type of a pool tag should be integral, not a string or string pointer.
 ms.assetid: f61aec4c-4072-421f-aa6d-d9399d0c439c
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28134

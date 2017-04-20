@@ -2,7 +2,19 @@
 title: Fast User Switching
 description: Fast User Switching
 ms.assetid: 79e13d56-f71f-4a7d-9069-de4821d29d94
-keywords: ["display driver model WDK Windows 2000 , Fast User Switching", "Windows 2000 display driver model WDK , Fast User Switching", "video miniport drivers WDK Windows 2000 , Fast User Switching", "Fast User Switching WDK Windows 2000 display", "multiple virtual display drivers WDK Windows 2000 display", "virtual display drivers WDK Windows 2000 display", "display drivers WDK Windows 2000 , Fast User Switching"]
+keywords:
+- display driver model WDK Windows 2000 , Fast User Switching
+- Windows 2000 display driver model WDK , Fast User Switching
+- video miniport drivers WDK Windows 2000 , Fast User Switching
+- Fast User Switching WDK Windows 2000 display
+- multiple virtual display drivers WDK Windows 2000 display
+- virtual display drivers WDK Windows 2000 display
+- display drivers WDK Windows 2000 , Fast User Switching
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Fast User Switching

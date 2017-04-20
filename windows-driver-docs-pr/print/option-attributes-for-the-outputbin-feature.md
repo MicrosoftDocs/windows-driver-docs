@@ -3,7 +3,13 @@ title: Option Attributes for the OutputBin Feature
 author: windows-driver-content
 description: Option Attributes for the OutputBin Feature
 ms.assetid: 492dbaeb-2930-4dfe-b14d-959bbc07233f
-keywords: ["OutputBin Feature"]
+keywords:
+- OutputBin Feature
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Attributes for the OutputBin Feature

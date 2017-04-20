@@ -3,7 +3,18 @@ title: Customized Font Installers for Unidrv
 author: windows-driver-content
 description: Customized Font Installers for Unidrv
 ms.assetid: d753368d-b1c8-454e-a02b-131dc778e723
-keywords: ["printer driver customizing WDK , installing components", "customizing printer drivers WDK , installing components", "installing custom printer driver components WDK", "font installers WDK Unidrv", ".uff files", "UFF files"]
+keywords:
+- printer driver customizing WDK , installing components
+- customizing printer drivers WDK , installing components
+- installing custom printer driver components WDK
+- font installers WDK Unidrv
+- .uff files
+- UFF files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customized Font Installers for Unidrv

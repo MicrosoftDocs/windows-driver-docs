@@ -2,7 +2,33 @@
 title: Channel Mask
 description: Channel Mask
 ms.assetid: 875ed000-ac53-4365-8381-3fe08d45cbcc
-keywords: ["data formats WDK audio", "formats WDK audio , data", "audio data formats WDK", "formats WDK audio , multichannel", "multichannel formats WDK audio", "home-theater systems WDK audio", "speakers WDK audio , home-threater systems", "audio drivers WDK , home-theater systems", "WDM audio drivers WDK , home-theater systems", "7.1 home theater speakers WDK audio", "7.1 wide configuration speakers WDK audio", "wide configuration speakers WDK audio", "LFE speakers", "subwoofers WDK audio", "recording formats WDK audio", "playback WDK audio", "channel masks WDK audio", "mask bits WDK audio", "PCM formats WDK audio", "positions WDK audio", "data formats WDK audio , channel masks"]
+keywords:
+- data formats WDK audio
+- formats WDK audio , data
+- audio data formats WDK
+- formats WDK audio , multichannel
+- multichannel formats WDK audio
+- home-theater systems WDK audio
+- speakers WDK audio , home-threater systems
+- audio drivers WDK , home-theater systems
+- WDM audio drivers WDK , home-theater systems
+- 7.1 home theater speakers WDK audio
+- 7.1 wide configuration speakers WDK audio
+- wide configuration speakers WDK audio
+- LFE speakers
+- subwoofers WDK audio
+- recording formats WDK audio
+- playback WDK audio
+- channel masks WDK audio
+- mask bits WDK audio
+- PCM formats WDK audio
+- positions WDK audio
+- data formats WDK audio , channel masks
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Channel Mask

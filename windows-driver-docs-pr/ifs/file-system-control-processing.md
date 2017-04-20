@@ -3,7 +3,17 @@ title: File System Control Processing
 author: windows-driver-content
 description: File System Control Processing
 ms.assetid: 95a610c8-b48c-4fff-bf1f-f9fb6abb0fd9
-keywords: ["security WDK file systems , semantic model checks", "semantic model checks WDK file systems , control processing", "FILE_SPECIAL_ACCESS", "FSCTL_MOVE_FILE", "control processing WDK file systems"]
+keywords:
+- security WDK file systems , semantic model checks
+- semantic model checks WDK file systems , control processing
+- FILE_SPECIAL_ACCESS
+- FSCTL_MOVE_FILE
+- control processing WDK file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File System Control Processing

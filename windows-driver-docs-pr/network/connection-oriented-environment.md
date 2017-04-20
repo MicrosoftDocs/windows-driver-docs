@@ -2,7 +2,23 @@
 title: Connection-Oriented Environment
 description: Connection-Oriented Environment
 ms.assetid: 596d7d74-ad9d-40da-b483-3afc0e333f98
-keywords: ["connection-oriented NDIS WDK , environment", "CoNDIS WDK networking , environment", "connection-oriented NDIS WDK , miniport drivers", "CoNDIS WDK networking , miniport drivers", "miniport drivers WDK networking , CoNDIS", "connection-oriented NDIS WDK , call managers", "CoNDIS WDK networking , call managers", "call managers WDK networking , connection-oriented operations", "connection-oriented NDIS WDK , MCM drivers", "CoNDIS WDK networking , MCM drivers", "MCM drivers WDK networking"]
+keywords:
+- connection-oriented NDIS WDK , environment
+- CoNDIS WDK networking , environment
+- connection-oriented NDIS WDK , miniport drivers
+- CoNDIS WDK networking , miniport drivers
+- miniport drivers WDK networking , CoNDIS
+- connection-oriented NDIS WDK , call managers
+- CoNDIS WDK networking , call managers
+- call managers WDK networking , connection-oriented operations
+- connection-oriented NDIS WDK , MCM drivers
+- CoNDIS WDK networking , MCM drivers
+- MCM drivers WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connection-Oriented Environment

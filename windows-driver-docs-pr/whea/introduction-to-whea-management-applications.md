@@ -3,7 +3,16 @@ title: Introduction to WHEA Management Applications
 author: windows-driver-content
 description: Introduction to WHEA Management Applications
 ms.assetid: d0c487bd-dfa8-43f2-a494-0ed95d767bfb
-keywords: ["management applications WDK WHEA , about management applications", "user-mode applications WDK WHEA , management applications", "WHEA WDK , management applications", "Windows Hardware Error Architecture WDK , management applications"]
+keywords:
+- management applications WDK WHEA , about management applications
+- user-mode applications WDK WHEA , management applications
+- WHEA WDK , management applications
+- Windows Hardware Error Architecture WDK , management applications
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to WHEA Management Applications

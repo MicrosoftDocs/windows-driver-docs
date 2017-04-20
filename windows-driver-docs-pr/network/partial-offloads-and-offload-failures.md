@@ -2,7 +2,18 @@
 title: Partial Offloads and Offload Failures
 description: Partial Offloads and Offload Failures
 ms.assetid: 70b10b0f-f367-4ade-b85b-f86b30334d5c
-keywords: ["state offloading process WDK TCP chimney offload , partial offloads", "offloading state process WDK TCP chimney offload , partial offloads", "partial offloads WDK TCP chimney offload", "failed offloads WDK TCP chimney offload", "state offloading process WDK TCP chimney offload , failed offloads", "offloading state process WDK TCP chimney offload , failed offloads"]
+keywords:
+- state offloading process WDK TCP chimney offload , partial offloads
+- offloading state process WDK TCP chimney offload , partial offloads
+- partial offloads WDK TCP chimney offload
+- failed offloads WDK TCP chimney offload
+- state offloading process WDK TCP chimney offload , failed offloads
+- offloading state process WDK TCP chimney offload , failed offloads
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Partial Offloads and Offload Failures

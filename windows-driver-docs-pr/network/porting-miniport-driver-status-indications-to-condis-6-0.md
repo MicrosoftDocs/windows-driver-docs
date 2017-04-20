@@ -2,7 +2,13 @@
 title: Porting Miniport Driver Status Indications to CoNDIS 6.0
 description: Porting Miniport Driver Status Indications to CoNDIS 6.0
 ms.assetid: 149c0305-d26e-4e40-9304-064396de3a3d
-keywords: ["porting status indications WDK networking"]
+keywords:
+- porting status indications WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Miniport Driver Status Indications to CoNDIS 6.0

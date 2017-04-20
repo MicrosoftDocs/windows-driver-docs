@@ -2,7 +2,18 @@
 title: Device Installations and System Restarts
 description: Device Installations and System Restarts
 ms.assetid: c09d2150-60ae-4912-86f5-6489c818853e
-keywords: ["device installations WDK , reboots", "installing devices WDK , reboots", "Device setup WDK device installations , reboots", "rebooting WDK device installations", "initiating reboots during device installations", "restarting during device installations"]
+keywords:
+- device installations WDK , reboots
+- installing devices WDK , reboots
+- Device setup WDK device installations , reboots
+- rebooting WDK device installations
+- initiating reboots during device installations
+- restarting during device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Installations and System Restarts

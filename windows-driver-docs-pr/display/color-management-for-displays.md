@@ -2,7 +2,20 @@
 title: Color Management for Displays
 description: Color Management for Displays
 ms.assetid: a0c3f35f-3741-4d5a-b7ae-dd177c719508
-keywords: ["display drivers WDK Windows 2000 , color management", "color management WDK Windows 2000 display", "Image Color Management WDK Windows 2000 display", "ICM WDK Windows 2000 display", "gamma ramps WDK Windows 2000 display", "color exactness WDK Windows 2000 display", "exact colors WDK Windows 2000 display", "calibrating colors WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , color management
+- color management WDK Windows 2000 display
+- Image Color Management WDK Windows 2000 display
+- ICM WDK Windows 2000 display
+- gamma ramps WDK Windows 2000 display
+- color exactness WDK Windows 2000 display
+- exact colors WDK Windows 2000 display
+- calibrating colors WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Color Management for Displays

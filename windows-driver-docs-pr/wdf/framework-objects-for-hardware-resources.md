@@ -3,7 +3,21 @@ title: Framework Objects for Hardware Resources
 author: windows-driver-content
 description: Framework Objects for Hardware Resources
 ms.assetid: 64eb628f-ce3d-494b-9fc1-7179a722c5f2
-keywords: ["hardware resources WDK KMDF , framework objects", "framework objects WDK KMDF , hardware resources", "framework resource-requirements-list objects WDK KMDF", "framework resource-range-list objects WDK KMDF", "framework resource-list objects WDK KMDF", "resource-list objects WDK KMDF", "resource-range-list objects WDK KMDF", "resource-requirements-list objects WDK KMDF", "hardware resources WDK KMDF , specifying"]
+keywords:
+- hardware resources WDK KMDF , framework objects
+- framework objects WDK KMDF , hardware resources
+- framework resource-requirements-list objects WDK KMDF
+- framework resource-range-list objects WDK KMDF
+- framework resource-list objects WDK KMDF
+- resource-list objects WDK KMDF
+- resource-range-list objects WDK KMDF
+- resource-requirements-list objects WDK KMDF
+- hardware resources WDK KMDF , specifying
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework Objects for Hardware Resources

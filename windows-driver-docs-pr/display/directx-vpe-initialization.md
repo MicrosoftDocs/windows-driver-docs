@@ -2,7 +2,18 @@
 title: DirectX VPE Initialization
 description: DirectX VPE Initialization
 ms.assetid: 1309a302-f9fc-49cf-a6b8-691d0956beab
-keywords: ["DirectX VPE support WDK DirectDraw , initialization", "drawing VPEs WDK DirectDraw , initialization", "DirectDraw VPEs WDK Windows 2000 display , initialization", "video port extensions WDK DirectDraw , initialization", "VPEs WDK DirectDraw , initialization", "initializing DirectX VPE functionality"]
+keywords:
+- DirectX VPE support WDK DirectDraw , initialization
+- drawing VPEs WDK DirectDraw , initialization
+- DirectDraw VPEs WDK Windows 2000 display , initialization
+- video port extensions WDK DirectDraw , initialization
+- VPEs WDK DirectDraw , initialization
+- initializing DirectX VPE functionality
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX VPE Initialization

@@ -2,7 +2,19 @@
 title: Using Winsock Kernel Functions vs. Event Callback Functions
 description: Using Winsock Kernel Functions vs.
 ms.assetid: 63a3f933-f74a-4cb8-a7a9-9498e1c17afa
-keywords: ["Winsock Kernel WDK networking , functions", "WSK WDK networking , functions", "Winsock Kernel WDK networking , events", "WSK WDK networking , events", "events WDK Winsock Kernel", "functions WDK Winsock Kernel", "event callback functions WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , functions
+- WSK WDK networking , functions
+- Winsock Kernel WDK networking , events
+- WSK WDK networking , events
+- events WDK Winsock Kernel
+- functions WDK Winsock Kernel
+- event callback functions WDK Winsock Kernel
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Winsock Kernel Functions vs. Event Callback Functions

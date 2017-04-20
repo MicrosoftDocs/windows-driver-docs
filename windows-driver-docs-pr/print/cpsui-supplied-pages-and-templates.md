@@ -3,7 +3,21 @@ title: CPSUI-Supplied Pages and Templates
 author: windows-driver-content
 description: CPSUI-Supplied Pages and Templates
 ms.assetid: de33cb29-3941-4232-bd61-d36fb04d69d3
-keywords: ["Common Property Sheet User Interface WDK print , templates", "CPSUI WDK print , templates", "property sheet pages WDK print , templates", "Common Property Sheet User Interface WDK print , predefined pages", "CPSUI WDK print , predefined pages", "property sheet pages WDK print , predefined pages", "predefined property sheet pages WDK CPSUI", "templates WDK CPSUI", "treeview pages WDK CPSUI"]
+keywords:
+- Common Property Sheet User Interface WDK print , templates
+- CPSUI WDK print , templates
+- property sheet pages WDK print , templates
+- Common Property Sheet User Interface WDK print , predefined pages
+- CPSUI WDK print , predefined pages
+- property sheet pages WDK print , predefined pages
+- predefined property sheet pages WDK CPSUI
+- templates WDK CPSUI
+- treeview pages WDK CPSUI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CPSUI-Supplied Pages and Templates

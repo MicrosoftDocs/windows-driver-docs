@@ -3,7 +3,19 @@ title: Converting AFM Files to NTF Files
 author: windows-driver-content
 description: Converting AFM Files to NTF Files
 ms.assetid: 5c6c8843-c1b8-4cbd-81db-8a54cc377020
-keywords: ["minidrivers WDK Pscript , converting AFM files", "NTF files", ".ntf files", ".afm files", "AFM files", "converting AFM files to NTF files", "Adobe Font Metrics WDK Pscript"]
+keywords:
+- minidrivers WDK Pscript , converting AFM files
+- NTF files
+- .ntf files
+- .afm files
+- AFM files
+- converting AFM files to NTF files
+- Adobe Font Metrics WDK Pscript
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Converting AFM Files to NTF Files

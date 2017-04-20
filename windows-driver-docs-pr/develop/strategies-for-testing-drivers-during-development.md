@@ -2,6 +2,11 @@
 ms.assetid: 3AF1C7EA-A7E0-47C4-A8D0-BB8D432F7EA0
 title: Provides recommendations for testing your driver code and driver package during development.
 description: When should you start testing? As soon as you have the requirements for your driver, you can begin to design test cases to test that the critical requirements have been implemented.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tips for testing drivers during development

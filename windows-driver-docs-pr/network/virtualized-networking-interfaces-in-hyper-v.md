@@ -2,6 +2,11 @@
 title: Virtualized Networking Interfaces in Hyper-V
 description: Virtualized Networking Interfaces in Hyper-V
 ms.assetid: ABBC74CF-C30B-413E-B368-A09157E0575C
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtualized Networking Interfaces in Hyper-V

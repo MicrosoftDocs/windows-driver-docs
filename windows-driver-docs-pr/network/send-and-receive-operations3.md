@@ -2,7 +2,14 @@
 title: Send and Receive Operations
 description: Send and Receive Operations
 ms.assetid: 8fcd14bf-2f45-4c1d-87b7-523a0ceb32e0
-keywords: ["IHV Extensions DLL WDK Native 802.11 , send and receive operations", "Native 802.11 IHV Extensions DLL WDK , send and receive operations"]
+keywords:
+- IHV Extensions DLL WDK Native 802.11 , send and receive operations
+- Native 802.11 IHV Extensions DLL WDK , send and receive operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Send and Receive Operations

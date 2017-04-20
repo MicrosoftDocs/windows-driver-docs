@@ -2,7 +2,15 @@
 title: Multiple-Monitor Support in the Display Driver
 description: Multiple-Monitor Support in the Display Driver
 ms.assetid: ba15af67-94c0-4c37-8b3d-b1472e731d88
-keywords: ["display drivers WDK Windows 2000 , multiple monitors", "multiple monitors WDK", "multiple-monitor systems WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , multiple monitors
+- multiple monitors WDK
+- multiple-monitor systems WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multiple-Monitor Support in the Display Driver

@@ -2,6 +2,11 @@
 title: Transport Bus Driver FAQ
 description: The following are common questions, scenarions, and issues that a driver developer may encounter when developing a bus driver to support Bluetooth functionality.
 ms.assetid: 7189EB3B-E071-4145-8308-EFA6D4E89D4B
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Transport Bus Driver FAQ

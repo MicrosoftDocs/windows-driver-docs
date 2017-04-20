@@ -2,6 +2,11 @@
 title: Using Virtual Switch Filtering
 description: Using Virtual Switch Filtering
 ms.assetid: 09325037-F9A4-45C8-97E0-8FCA7D42A120
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Virtual Switch Filtering

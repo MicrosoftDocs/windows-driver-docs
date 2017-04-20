@@ -2,7 +2,14 @@
 title: Overview of the ACPI 4.0 Power Metering Objects
 description: Overview of the ACPI 4.0 Power Metering Objects
 ms.assetid: 91488b88-bbdc-40e9-9095-2ea3fb7d69ad
-keywords: ["Power Metering and Budgeting WDK , ACPI 4.0 power metering objects", "ACPI 4.0 Power Metering objects WDK"]
+keywords:
+- Power Metering and Budgeting WDK , ACPI 4.0 power metering objects
+- ACPI 4.0 Power Metering objects WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of the ACPI 4.0 Power Metering Objects

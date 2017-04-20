@@ -2,7 +2,21 @@
 title: Internal and External Version Numbers
 description: Internal and External Version Numbers
 ms.assetid: 705a2e5f-11b8-499c-815d-a2a54e907980
-keywords: ["version numbers WDK audio", "audio miniport drivers WDK , version numbers", "miniport drivers WDK audio , version numbers", "audio drivers WDK , version numbers", "internal version numbers WDK audio", "external version numbers WDK audio", "files WDK audio", "driver-file version numbers WDK audio", "driver version numbers WDK audio"]
+keywords:
+- version numbers WDK audio
+- audio miniport drivers WDK , version numbers
+- miniport drivers WDK audio , version numbers
+- audio drivers WDK , version numbers
+- internal version numbers WDK audio
+- external version numbers WDK audio
+- files WDK audio
+- driver-file version numbers WDK audio
+- driver version numbers WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Internal and External Version Numbers

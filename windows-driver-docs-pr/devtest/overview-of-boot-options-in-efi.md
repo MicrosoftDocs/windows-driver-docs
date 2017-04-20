@@ -2,7 +2,21 @@
 title: Overview of Boot Options in EFI
 description: Overview of Boot Options in EFI
 ms.assetid: 2237d321-75e6-4723-9f08-484bd9097360
-keywords: ["NVRAM boot options WDK , about EFI NVRAM boot options", "EFI NVRAM boot options WDK , about EFI NVRAM boot options", "globally-defined variables WDK boot options", "boot options WDK , variables", "boot entry IDs WDK", "EFI boot entry IDs WDK", "identifiers WDK boot options", "boot entries WDK", "Bootcfg tool"]
+keywords:
+- NVRAM boot options WDK , about EFI NVRAM boot options
+- EFI NVRAM boot options WDK , about EFI NVRAM boot options
+- globally-defined variables WDK boot options
+- boot options WDK , variables
+- boot entry IDs WDK
+- EFI boot entry IDs WDK
+- identifiers WDK boot options
+- boot entries WDK
+- Bootcfg tool
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Boot Options in EFI

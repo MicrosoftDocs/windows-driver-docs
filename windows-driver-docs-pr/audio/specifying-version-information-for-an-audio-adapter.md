@@ -2,7 +2,16 @@
 title: Specifying Version Information for an Audio Adapter
 description: Specifying Version Information for an Audio Adapter
 ms.assetid: 2d1fb5e7-84fe-451f-b53f-bf6017ae94ad
-keywords: ["audio adapters WDK , version information", "adapter drivers WDK audio , version information", "Port Class audio adapters WDK , version information", "versions WDK audio"]
+keywords:
+- audio adapters WDK , version information
+- adapter drivers WDK audio , version information
+- Port Class audio adapters WDK , version information
+- versions WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Version Information for an Audio Adapter

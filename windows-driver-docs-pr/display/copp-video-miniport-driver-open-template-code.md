@@ -2,7 +2,13 @@
 title: COPP Video Miniport Driver Open Template Code
 description: COPP Video Miniport Driver Open Template Code
 ms.assetid: 41facdef-c5f7-42f1-a251-07e4685649de
-keywords: ["opening COPP DirectX VA device objects"]
+keywords:
+- opening COPP DirectX VA device objects
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP Video Miniport Driver Open Template Code

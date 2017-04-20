@@ -3,7 +3,17 @@ title: Testing BDA Drivers Using BDA Filters
 author: windows-driver-content
 description: Testing BDA Drivers Using BDA Filters
 ms.assetid: 136810b7-9378-482b-8e21-a7eae0142909
-keywords: ["Broadcast Driver Architecture WDK AVStream , testing drivers", "BDA WDK AVStream , testing drivers", "testing drivers WDK , BDA", "DirectShow filters WDK AVStream", "Graph Editor WDK BDA"]
+keywords:
+- Broadcast Driver Architecture WDK AVStream , testing drivers
+- BDA WDK AVStream , testing drivers
+- testing drivers WDK , BDA
+- DirectShow filters WDK AVStream
+- Graph Editor WDK BDA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing BDA Drivers Using BDA Filters

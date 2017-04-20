@@ -3,7 +3,17 @@ title: Building BDA Drivers
 author: windows-driver-content
 description: Building BDA Drivers
 ms.assetid: 2272fa18-5102-443e-8728-f256444ab044
-keywords: ["Broadcast Driver Architecture WDK AVStream , building drivers", "BDA WDK AVStream , building drivers", "building drivers WDK , BDA", "Build utility WDK , BDA", "macros WDK BDA"]
+keywords:
+- Broadcast Driver Architecture WDK AVStream , building drivers
+- BDA WDK AVStream , building drivers
+- building drivers WDK , BDA
+- Build utility WDK , BDA
+- macros WDK BDA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building BDA Drivers

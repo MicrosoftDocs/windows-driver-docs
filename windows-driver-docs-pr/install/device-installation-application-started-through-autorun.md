@@ -2,6 +2,11 @@
 title: Device Installation Application Started through AutoRun
 description: Device Installation Application Started through AutoRun
 ms.assetid: 9b520d82-2293-4936-99fe-30bf6753ba9f
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Installation Application Started through AutoRun

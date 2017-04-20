@@ -3,6 +3,11 @@ title: Architecture and overview for HID over the I²C transport
 author: windows-driver-content
 description: This section describes the driver stack for devices that support HID over the I²C transport.
 ms.assetid: 99384729-552C-4847-AA35-E0D413018104
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Architecture and overview for HID over the I²C transport

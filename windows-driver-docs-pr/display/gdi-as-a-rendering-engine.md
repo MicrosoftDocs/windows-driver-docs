@@ -2,7 +2,17 @@
 title: GDI as a Rendering Engine
 description: GDI as a Rendering Engine
 ms.assetid: 3aae0c71-fc98-452c-a7a3-f20a790a466b
-keywords: ["GDI WDK Windows 2000 display , rendering engine", "graphics drivers WDK Windows 2000 display , rendering engine", "drawing WDK GDI , rendering engine", "rendering engine WDK GDI", "PDEV WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , rendering engine
+- graphics drivers WDK Windows 2000 display , rendering engine
+- drawing WDK GDI , rendering engine
+- rendering engine WDK GDI
+- PDEV WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI as a Rendering Engine

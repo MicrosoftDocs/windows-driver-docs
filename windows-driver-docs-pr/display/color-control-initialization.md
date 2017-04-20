@@ -2,7 +2,19 @@
 title: Color Control Initialization
 description: Color Control Initialization
 ms.assetid: dd3afcaa-3da0-4515-8b8d-e7429792be23
-keywords: ["drawing WDK DirectDraw , color control initialization", "DirectDraw WDK Windows 2000 display , color control initialization", "color control initialization WDK DirectDraw", "initializing DirectDraw color control", "DdControlColor", "luminance WDK DirectDraw", "brightness WDK DirectDraw"]
+keywords:
+- drawing WDK DirectDraw , color control initialization
+- DirectDraw WDK Windows 2000 display , color control initialization
+- color control initialization WDK DirectDraw
+- initializing DirectDraw color control
+- DdControlColor
+- luminance WDK DirectDraw
+- brightness WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Color Control Initialization

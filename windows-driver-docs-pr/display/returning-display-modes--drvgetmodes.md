@@ -2,7 +2,17 @@
 title: Returning Display Modes DrvGetModes
 description: Returning Display Modes DrvGetModes
 ms.assetid: 1010235a-0609-4380-8b83-7d8c649c2404
-keywords: ["display drivers WDK Windows 2000 , desktop management", "desktop management WDK Windows 2000 display", "returning display modes WDK Windows 2000 display", "DrvGetModes", "display modes WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , desktop management
+- desktop management WDK Windows 2000 display
+- returning display modes WDK Windows 2000 display
+- DrvGetModes
+- display modes WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning Display Modes: DrvGetModes

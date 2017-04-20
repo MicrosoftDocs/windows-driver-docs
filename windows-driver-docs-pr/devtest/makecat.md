@@ -2,6 +2,11 @@
 title: MakeCat
 description: MakeCat
 ms.assetid: 348c5069-0360-4ff9-897e-9a8832ac196c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MakeCat

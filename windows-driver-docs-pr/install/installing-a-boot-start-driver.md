@@ -2,7 +2,21 @@
 title: Installing a Boot-Start Driver
 description: Installing a Boot-Start Driver
 ms.assetid: 0b93233b-266c-4d2e-a5d8-01d2d477dd13
-keywords: ["Device setup WDK device installations , boot drivers", "device installations WDK , boot drivers", "installing devices WDK , boot drivers", "boot drivers WDK device installations", "boot driver distribution disks WDK device installations", "distribution disks WDK", "platform-specific distribution disks WDK", "cross-platform distribution disks WDK", "vendor-supplied boot drivers WDK"]
+keywords:
+- Device setup WDK device installations , boot drivers
+- device installations WDK , boot drivers
+- installing devices WDK , boot drivers
+- boot drivers WDK device installations
+- boot driver distribution disks WDK device installations
+- distribution disks WDK
+- platform-specific distribution disks WDK
+- cross-platform distribution disks WDK
+- vendor-supplied boot drivers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Boot-Start Driver

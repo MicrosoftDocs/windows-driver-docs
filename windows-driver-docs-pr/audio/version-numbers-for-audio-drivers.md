@@ -2,7 +2,20 @@
 title: Version Numbers for Audio Drivers
 description: Version Numbers for Audio Drivers
 ms.assetid: 6d621021-eb45-40ab-9452-97c9be2bbdd8
-keywords: ["version numbers WDK audio", "audio miniport drivers WDK , version numbers", "miniport drivers WDK audio , version numbers", "audio drivers WDK , version numbers", "audio adapter drivers WDK , version numbers", "adapter drivers WDK audio , version numbers", "audio drivers WDK , models supported", "driver version numbers WDK audio"]
+keywords:
+- version numbers WDK audio
+- audio miniport drivers WDK , version numbers
+- miniport drivers WDK audio , version numbers
+- audio drivers WDK , version numbers
+- audio adapter drivers WDK , version numbers
+- adapter drivers WDK audio , version numbers
+- audio drivers WDK , models supported
+- driver version numbers WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Version Numbers for Audio Drivers

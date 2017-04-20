@@ -2,6 +2,11 @@
 title: Windows Error Reporting Getting Started
 description: Windows Error Reporting Getting Started
 ms.assetid: 74b2522a-c6e5-4079-83b8-57ccc14b58f7
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Error Reporting: Getting Started

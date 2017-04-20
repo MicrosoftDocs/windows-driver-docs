@@ -2,7 +2,14 @@
 title: Extending the Properties for Wireless Network Profiles
 description: Extending the Properties for Wireless Network Profiles
 ms.assetid: c98266b5-3841-4dfa-b274-5c1ef16bfef6
-keywords: ["IHV UI Extensions DLL WDK Native 802.11 , network profile extensions", "network profiles WDK Native 802.11 IHV UI Extensions DLL"]
+keywords:
+- IHV UI Extensions DLL WDK Native 802.11 , network profile extensions
+- network profiles WDK Native 802.11 IHV UI Extensions DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending the Properties for Wireless Network Profiles

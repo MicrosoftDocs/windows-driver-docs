@@ -3,7 +3,15 @@ title: Calling ScsiPortInitialize
 author: windows-driver-content
 description: Calling ScsiPortInitialize
 ms.assetid: a736f279-9ade-4043-90f7-209fca260a39
-keywords: ["ScsiPortInitialize", "initializing SCSI miniport drivers", "SCSI miniport drivers WDK storage , initializing"]
+keywords:
+- ScsiPortInitialize
+- initializing SCSI miniport drivers
+- SCSI miniport drivers WDK storage , initializing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling ScsiPortInitialize

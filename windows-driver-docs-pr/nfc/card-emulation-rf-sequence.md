@@ -3,7 +3,17 @@ title: Card emulation RF sequence
 author: windows-driver-content
 description: The following figure illustrates the state sequences for StateRfDiscovered and StateRfDataXchg for card emulation mode for hardware NFCEE example UICC SE when tapped against an external reader.
 ms.assetid: 553A5002-3FE3-4178-B671-9F23560F939C
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Card emulation RF sequence

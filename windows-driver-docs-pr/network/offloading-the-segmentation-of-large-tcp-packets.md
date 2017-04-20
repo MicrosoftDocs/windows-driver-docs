@@ -2,7 +2,15 @@
 title: Offloading the Segmentation of Large TCP Packets
 description: Offloading the Segmentation of Large TCP Packets
 ms.assetid: 6ae162fb-a8fc-47b8-80ae-ff39f3059d53
-keywords: ["task offload WDK TCP/IP transport , large packet segmentation", "large TCP packet segmentation WDK networking", "segmentation of large TCP packets WDK networking"]
+keywords:
+- task offload WDK TCP/IP transport , large packet segmentation
+- large TCP packet segmentation WDK networking
+- segmentation of large TCP packets WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offloading the Segmentation of Large TCP Packets

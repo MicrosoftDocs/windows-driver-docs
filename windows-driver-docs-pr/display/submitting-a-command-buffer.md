@@ -2,7 +2,15 @@
 title: Submitting a Command Buffer
 description: Submitting a Command Buffer
 ms.assetid: 3622697a-3989-4756-89d4-c67c81815d49
-keywords: ["command buffers WDK display , submitting", "submitting command buffers WDK display", "passing command buffers WDK display"]
+keywords:
+- command buffers WDK display , submitting
+- submitting command buffers WDK display
+- passing command buffers WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Submitting a Command Buffer

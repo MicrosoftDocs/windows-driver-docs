@@ -3,6 +3,11 @@ title: WIA RAW Data Header
 author: windows-driver-content
 description: WIA RAW Data Header
 ms.assetid: a2cb3835-7879-4f69-9784-9487df40730a
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA RAW Data Header

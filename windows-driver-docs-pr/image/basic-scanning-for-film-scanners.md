@@ -3,6 +3,11 @@ title: Basic Scanning for Film Scanners
 author: windows-driver-content
 description: Basic Scanning for Film Scanners
 ms.assetid: ca25c14d-120e-4e53-9d57-ba5663536bae
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Basic Scanning for Film Scanners

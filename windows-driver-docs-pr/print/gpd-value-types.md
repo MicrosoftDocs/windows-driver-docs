@@ -3,7 +3,14 @@ title: GPD Value Types
 author: windows-driver-content
 description: GPD Value Types
 ms.assetid: 12108642-88fa-4753-9945-b72b00dc64e1
-keywords: ["GPD file entries WDK Unidrv , value types", "value types WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , value types
+- value types WDK GPD files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GPD Value Types

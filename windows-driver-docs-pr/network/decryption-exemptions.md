@@ -2,7 +2,15 @@
 title: Decryption Exemptions
 description: Decryption Exemptions
 ms.assetid: 2a9eb917-946a-4ab8-ac5e-031705d9b654
-keywords: ["decryption WDK Native 802.11", "exemptions WDK Native 802.11", "privacy exemptions WDK Native 802.11"]
+keywords:
+- decryption WDK Native 802.11
+- exemptions WDK Native 802.11
+- privacy exemptions WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Decryption Exemptions

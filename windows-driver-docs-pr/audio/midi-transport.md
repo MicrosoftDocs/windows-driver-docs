@@ -2,7 +2,17 @@
 title: MIDI Transport
 description: MIDI Transport
 ms.assetid: ce9ec589-0aea-4ed9-a60d-50f2ddfb0c13
-keywords: ["port drivers WDK audio , synthesizers", "miniport drivers WDK audio , synthesizers", "MIDI transport WDK audio", "wave sinks WDK audio , MIDI transport", "synthesizers WDK audio , MIDI transport"]
+keywords:
+- port drivers WDK audio , synthesizers
+- miniport drivers WDK audio , synthesizers
+- MIDI transport WDK audio
+- wave sinks WDK audio , MIDI transport
+- synthesizers WDK audio , MIDI transport
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MIDI Transport

@@ -2,7 +2,20 @@
 title: Drawing Lines and Curves
 description: Drawing Lines and Curves
 ms.assetid: 0816fb69-7811-4319-b050-00ded21a10d4
-keywords: ["lines WDK GDI", "GDI WDK Windows 2000 display , lines", "graphics drivers WDK Windows 2000 display , lines", "drawing WDK GDI , lines", "GDI WDK Windows 2000 display , curves", "graphics drivers WDK Windows 2000 display , curves", "drawing WDK GDI , curves", "brushes WDK GDI"]
+keywords:
+- lines WDK GDI
+- GDI WDK Windows 2000 display , lines
+- graphics drivers WDK Windows 2000 display , lines
+- drawing WDK GDI , lines
+- GDI WDK Windows 2000 display , curves
+- graphics drivers WDK Windows 2000 display , curves
+- drawing WDK GDI , curves
+- brushes WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Drawing Lines and Curves

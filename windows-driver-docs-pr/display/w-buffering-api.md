@@ -2,7 +2,14 @@
 title: W-Buffering API
 description: W-Buffering API
 ms.assetid: 7244d697-5200-4d37-9a75-270788c1c7f7
-keywords: ["Direct3D WDK Windows 2000 display , w-buffering", "w-buffering WDK Direct3D"]
+keywords:
+- Direct3D WDK Windows 2000 display , w-buffering
+- w-buffering WDK Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # W-Buffering API

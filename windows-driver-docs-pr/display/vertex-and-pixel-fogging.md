@@ -2,7 +2,21 @@
 title: Vertex and Pixel Fogging
 description: Vertex and Pixel Fogging
 ms.assetid: 4cdba82f-0cfe-4416-951c-59b577c7f30e
-keywords: ["pixel fogging WDK Direct3D", "vertex fog WDK Direct3D", "fogging WDK Direct3D", "linear fog WDK Direct3D", "exponential fog WDK Direct3D", "exponential squared fog WDK Direct3D", "monochromatic lighting WDK Direct3D", "color fog calculations WDK Direct3D", "blending fog factor WDK Direct3D"]
+keywords:
+- pixel fogging WDK Direct3D
+- vertex fog WDK Direct3D
+- fogging WDK Direct3D
+- linear fog WDK Direct3D
+- exponential fog WDK Direct3D
+- exponential squared fog WDK Direct3D
+- monochromatic lighting WDK Direct3D
+- color fog calculations WDK Direct3D
+- blending fog factor WDK Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vertex and Pixel Fogging

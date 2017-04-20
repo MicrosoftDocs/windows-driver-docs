@@ -2,6 +2,11 @@
 title: Wi-Fi Direct Client Operation
 description: A Wi-Fi Direct Role port is configured in operation mode DOT11\_OPERATION\_MODE\_WFD\_CLIENT before it can function as a Client.
 ms.assetid: 5DE4D86F-7EE0-4BB0-87AC-36E99CE3D209
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Direct Client Operation

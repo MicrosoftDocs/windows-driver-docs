@@ -3,6 +3,11 @@ title: UEFI USB function protocol
 author: windows-driver-content
 description: UEFI USB function protocol
 ms.assetid: eac35cf4-82b4-4d7e-ae69-8f506f12ae5d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UEFI USB function protocol

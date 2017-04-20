@@ -3,7 +3,18 @@ title: Tampering with Data
 author: windows-driver-content
 description: Tampering with Data
 ms.assetid: 277395b9-b770-45b4-8f4c-cad8b684ca44
-keywords: ["threat models WDK file systems , data tampering", "security threat models WDK file systems , data tampering", "data tampering WDK file systems", "tampering with data WDK file systems", "buffers WDK file systems", "IOCTLs WDK file systems"]
+keywords:
+- threat models WDK file systems , data tampering
+- security threat models WDK file systems , data tampering
+- data tampering WDK file systems
+- tampering with data WDK file systems
+- buffers WDK file systems
+- IOCTLs WDK file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tampering with Data

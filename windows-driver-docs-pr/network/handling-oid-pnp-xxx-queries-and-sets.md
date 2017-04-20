@@ -2,7 +2,15 @@
 title: Handling OID\_PNP\_Xxx Queries and Sets
 description: Handling OID\_PNP\_Xxx Queries and Sets
 ms.assetid: 2d5db7fb-2a27-4359-9d75-35939e72de69
-keywords: ["OID_PNP_Xxx", "query operations WDK NDIS intermediate", "set operations WDK NDIS intermediate"]
+keywords:
+- OID_PNP_Xxx
+- query operations WDK NDIS intermediate
+- set operations WDK NDIS intermediate
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling OID\_PNP\_Xxx Queries and Sets

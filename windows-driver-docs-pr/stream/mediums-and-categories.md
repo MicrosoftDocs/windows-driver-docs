@@ -3,7 +3,20 @@ title: Mediums and Categories
 author: windows-driver-content
 description: Mediums and Categories
 ms.assetid: 2bc83ce6-7f79-44e7-a0fb-7b9f56771730
-keywords: ["video capture WDK AVStream , mediums", "capturing video WDK AVStream , mediums", "video capture WDK AVStream , stream categories", "capturing video WDK AVStream , stream categories", "identifying pin primary purpose", "stream categories WDK video capture", "mediums WDK video capture", "pin connections WDK video capture"]
+keywords:
+- video capture WDK AVStream , mediums
+- capturing video WDK AVStream , mediums
+- video capture WDK AVStream , stream categories
+- capturing video WDK AVStream , stream categories
+- identifying pin primary purpose
+- stream categories WDK video capture
+- mediums WDK video capture
+- pin connections WDK video capture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mediums and Categories

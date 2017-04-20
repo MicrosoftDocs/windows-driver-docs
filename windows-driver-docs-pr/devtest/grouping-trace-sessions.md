@@ -2,7 +2,16 @@
 title: Grouping Trace Sessions
 description: Grouping Trace Sessions
 ms.assetid: dd9f39ee-fb93-4bf8-ac5c-5e884e57fcaa
-keywords: ["TraceView WDK , grouping sessions", "grouping trace sessions", "trace sessions WDK , groups", "multiple trace sessions WDK TraceView"]
+keywords:
+- TraceView WDK , grouping sessions
+- grouping trace sessions
+- trace sessions WDK , groups
+- multiple trace sessions WDK TraceView
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Grouping Trace Sessions

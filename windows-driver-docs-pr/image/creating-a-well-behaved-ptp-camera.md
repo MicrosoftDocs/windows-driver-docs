@@ -3,6 +3,11 @@ title: Creating a Well-Behaved PTP Camera
 author: windows-driver-content
 description: Creating a Well-Behaved PTP Camera
 ms.assetid: 5d36a973-c4ff-4da7-9626-f358f801b592
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Well-Behaved PTP Camera

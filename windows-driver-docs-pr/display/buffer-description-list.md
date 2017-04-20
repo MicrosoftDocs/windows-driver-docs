@@ -2,7 +2,18 @@
 title: Buffer Description List
 description: Buffer Description List
 ms.assetid: 7d820491-2df2-4036-8f3d-e6bcff4cd1f6
-keywords: ["video decoding WDK DirectX VA , buffer description list", "decoding video WDK DirectX VA , buffer description list", "picture decoding WDK DirectX VA , buffer description list", "buffers WDK DirectX VA", "buffer description list WDK DirectX VA", "DXVA_BufferDescription"]
+keywords:
+- video decoding WDK DirectX VA , buffer description list
+- decoding video WDK DirectX VA , buffer description list
+- picture decoding WDK DirectX VA , buffer description list
+- buffers WDK DirectX VA
+- buffer description list WDK DirectX VA
+- DXVA_BufferDescription
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Buffer Description List

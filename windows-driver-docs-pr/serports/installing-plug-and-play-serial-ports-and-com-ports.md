@@ -3,7 +3,15 @@ title: Installing Plug and Play Serial Ports and COM Ports
 author: windows-driver-content
 description: Installing Plug and Play Serial Ports and COM Ports
 ms.assetid: 48a489a1-6ed9-4e17-a7b5-0f2325486ab6
-keywords: ["Serial driver WDK , Plug and Play devices", "Plug and Play serial devices WDK", "serial devices WDK , Plug and Play"]
+keywords:
+- Serial driver WDK , Plug and Play devices
+- Plug and Play serial devices WDK
+- serial devices WDK , Plug and Play
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Plug and Play Serial Ports and COM Ports

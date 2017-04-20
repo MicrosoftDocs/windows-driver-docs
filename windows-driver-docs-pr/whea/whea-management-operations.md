@@ -3,7 +3,14 @@ title: WHEA Management Operations
 author: windows-driver-content
 description: WHEA Management Operations
 ms.assetid: 74b57d81-c6ee-4823-b877-53c25d2eaa8a
-keywords: ["WHEA WDK , management operations", "Windows Hardware Error Architecture WDK , management operations"]
+keywords:
+- WHEA WDK , management operations
+- Windows Hardware Error Architecture WDK , management operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WHEA Management Operations

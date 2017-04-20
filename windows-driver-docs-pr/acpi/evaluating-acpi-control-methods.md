@@ -3,7 +3,14 @@ title: Evaluating ACPI Control Methods
 author: windows-driver-content
 description: Evaluating ACPI Control Methods
 ms.assetid: 00cf7530-30e6-4ff2-8a26-1c5143413b56
-keywords: ["ACPI control methods WDK , evaluating", "ACPI devices WDK , evaluating control methods"]
+keywords:
+- ACPI control methods WDK , evaluating
+- ACPI devices WDK , evaluating control methods
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Evaluating ACPI Control Methods

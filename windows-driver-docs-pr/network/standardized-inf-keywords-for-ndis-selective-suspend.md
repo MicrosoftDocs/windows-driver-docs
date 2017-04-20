@@ -2,6 +2,11 @@
 title: Standardized INF Keywords for NDIS Selective Suspend
 description: Standardized INF Keywords for NDIS Selective Suspend
 ms.assetid: A45EE23D-1C60-4DA4-82A5-89DB5CE48E21
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standardized INF Keywords for NDIS Selective Suspend

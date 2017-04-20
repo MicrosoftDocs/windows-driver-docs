@@ -2,7 +2,20 @@
 title: GDI Support for Palettes
 description: GDI Support for Palettes
 ms.assetid: 8c6ebf1e-6c83-45d9-bf83-f0684d28fc32
-keywords: ["DrvEnablePDEV", "GDI WDK Windows 2000 display , colors", "graphics drivers WDK Windows 2000 display , colors", "color management WDK GDI", "palettes WDK Windows 2000 display", "drawing WDK GDI , colors", "DrvSetPalette", "color index WDK GDI"]
+keywords:
+- DrvEnablePDEV
+- GDI WDK Windows 2000 display , colors
+- graphics drivers WDK Windows 2000 display , colors
+- color management WDK GDI
+- palettes WDK Windows 2000 display
+- drawing WDK GDI , colors
+- DrvSetPalette
+- color index WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Support for Palettes

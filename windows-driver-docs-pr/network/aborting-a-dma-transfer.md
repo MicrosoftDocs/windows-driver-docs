@@ -2,7 +2,18 @@
 title: Aborting a DMA Transfer
 description: Aborting a DMA Transfer
 ms.assetid: e63ccf75-b080-4268-b7af-03915c26a6ba
-keywords: ["memory-to-memory data transfers WDK NetDMA , aborting", "data transfers WDK NetDMA , aborting", "transferring data WDK NetDMA , aborting", "DMA transfers WDK NetDMA , aborting", "NetDMA WDK networking , aborting transfers", "aborting DMA transfers WDK NetDMA"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , aborting
+- data transfers WDK NetDMA , aborting
+- transferring data WDK NetDMA , aborting
+- DMA transfers WDK NetDMA , aborting
+- NetDMA WDK networking , aborting transfers
+- aborting DMA transfers WDK NetDMA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Aborting a DMA Transfer

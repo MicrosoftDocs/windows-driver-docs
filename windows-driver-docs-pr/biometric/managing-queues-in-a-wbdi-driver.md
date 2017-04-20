@@ -2,7 +2,14 @@
 title: Managing Queues in a WBDI Driver
 description: Managing Queues in a WBDI Driver
 ms.assetid: f0434581-8492-42e1-ae50-4114e7b8b202
-keywords: ["biometric drivers WDK , managing queues", "managing queues WDK biometric"]
+keywords:
+- biometric drivers WDK , managing queues
+- managing queues WDK biometric
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Queues in a WBDI Driver

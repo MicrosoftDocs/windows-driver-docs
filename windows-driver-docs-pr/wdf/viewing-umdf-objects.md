@@ -3,7 +3,15 @@ title: Viewing UMDF Objects
 author: windows-driver-content
 description: This topic describes how you can use the Wudfext.dll debugger extensions to view information about objects used by a User-Mode Driver Framework (UMDF) version 1 driver.
 ms.assetid: 36d0d604-3ed1-4ca7-b5bd-207942ecfc1e
-keywords: ["debugging scenarios WDK UMDF , viewing UMDF objects", "UMDF WDK , debugging scenarios, viewing UMDF objects", "UMDF WDK , viewing UMDF objects"]
+keywords:
+- debugging scenarios WDK UMDF , viewing UMDF objects
+- UMDF WDK , debugging scenarios, viewing UMDF objects
+- UMDF WDK , viewing UMDF objects
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Viewing UMDF Objects

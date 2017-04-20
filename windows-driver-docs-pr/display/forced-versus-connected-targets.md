@@ -2,7 +2,22 @@
 title: Forced Versus Connected Targets
 description: Forced Versus Connected Targets
 ms.assetid: 690e585b-3c90-4373-844d-42afe033b59b
-keywords: ["connecting displays WDK Windows 7 display , CCD concepts, forced versus connected targets", "connecting displays WDK Windows Server 2008 R2 display , CCD concepts, forced versus connected targets", "configuring displays WDK Windows 7 display , CCD concepts, forced versus connected targets", "configuring displays WDK Windows Server 2008 R2 display , CCD concepts, forced versus connected targets", "CCD concepts WDK Windows 7 display , forced versus connected targets", "CCD concepts WDK Windows Server 2008 R2 display , forced versus connected targets", "forced versus connected targets WDK Windows 7 display", "forced versus connected targets WDK Windows Server 2008 R2 display", "connected versus forced targets WDK Windows 7 display", "connected versus forced targets WDK Windows Server 2008 R2 display"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD concepts, forced versus connected targets
+- connecting displays WDK Windows Server 2008 R2 display , CCD concepts, forced versus connected targets
+- configuring displays WDK Windows 7 display , CCD concepts, forced versus connected targets
+- configuring displays WDK Windows Server 2008 R2 display , CCD concepts, forced versus connected targets
+- CCD concepts WDK Windows 7 display , forced versus connected targets
+- CCD concepts WDK Windows Server 2008 R2 display , forced versus connected targets
+- forced versus connected targets WDK Windows 7 display
+- forced versus connected targets WDK Windows Server 2008 R2 display
+- connected versus forced targets WDK Windows 7 display
+- connected versus forced targets WDK Windows Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Forced Versus Connected Targets

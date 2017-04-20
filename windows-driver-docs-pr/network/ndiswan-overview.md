@@ -2,7 +2,16 @@
 title: NDISWAN Overview
 description: NDISWAN Overview
 ms.assetid: bc092222-5418-4a57-9811-5d97c1c10a73
-keywords: ["NDISWAN WDK networking", "NDIS intermediate drivers WDK , NDISWAN driver", "intermediate drivers WDK networking , NDISWAN driver", "architecture WDK WAN , NDISWAN"]
+keywords:
+- NDISWAN WDK networking
+- NDIS intermediate drivers WDK , NDISWAN driver
+- intermediate drivers WDK networking , NDISWAN driver
+- architecture WDK WAN , NDISWAN
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDISWAN Overview

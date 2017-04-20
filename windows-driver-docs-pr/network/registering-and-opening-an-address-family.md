@@ -2,7 +2,16 @@
 title: Registering and Opening an Address Family
 description: Registering and Opening an Address Family
 ms.assetid: 2249adf9-2876-4442-be94-1a966d3f1c88
-keywords: ["address families WDK networking", "AFs WDK networking", "registering address families", "opening address families"]
+keywords:
+- address families WDK networking
+- AFs WDK networking
+- registering address families
+- opening address families
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering and Opening an Address Family

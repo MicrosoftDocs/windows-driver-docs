@@ -2,7 +2,20 @@
 title: DirectMusic DDI Overview
 description: DirectMusic DDI Overview
 ms.assetid: 95870103-197c-4b7c-b6ee-cac176b62dfc
-keywords: ["DirectMusic WDK audio , about DirectMusic DDI", "user-mode synths WDK audio", "kernel-mode synths WDK audio", "user-mode interface WDK audio", "DMus port drivers WDK audio", "kernel-mode interfaces WDK audio", "custom synths WDK audio", "DMus miniport drivers WDK audio"]
+keywords:
+- DirectMusic WDK audio , about DirectMusic DDI
+- user-mode synths WDK audio
+- kernel-mode synths WDK audio
+- user-mode interface WDK audio
+- DMus port drivers WDK audio
+- kernel-mode interfaces WDK audio
+- custom synths WDK audio
+- DMus miniport drivers WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectMusic DDI Overview

@@ -2,6 +2,11 @@
 title: System-Provided DCB Components
 description: System-Provided DCB Components
 ms.assetid: 64C9ADEF-5512-41E4-AE7B-DFEF1B94FC5F
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System-Provided DCB Components

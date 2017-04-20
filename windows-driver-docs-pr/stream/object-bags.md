@@ -3,7 +3,20 @@ title: Object Bags
 author: windows-driver-content
 description: Object Bags
 ms.assetid: b7ee5756-1c79-4ead-9999-d13be9a0d3d9
-keywords: ["AVStream object bags WDK", "object bags WDK AVStream", "objects WDK AVStream", "memory management WDK AVStream", "sharing dynamically allocated data for AVStream WDK", "dynamically allocated data WDK AVStream", "AVStream descriptors WDK", "descriptors WDK AVStream"]
+keywords:
+- AVStream object bags WDK
+- object bags WDK AVStream
+- objects WDK AVStream
+- memory management WDK AVStream
+- sharing dynamically allocated data for AVStream WDK
+- dynamically allocated data WDK AVStream
+- AVStream descriptors WDK
+- descriptors WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Object Bags

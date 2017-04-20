@@ -2,7 +2,19 @@
 title: Conditionally Required Graphics Driver Functions
 description: Conditionally Required Graphics Driver Functions
 ms.assetid: db5816e2-83a1-491d-99f5-d693fefcf1fd
-keywords: ["GDI WDK Windows 2000 display , functions, conditionally required", "graphics drivers WDK Windows 2000 display , functions, conditionally required", "functions WDK graphics , conditionally required", "drawing WDK GDI , functions, conditionally required", "GDI WDK Windows 2000 display , DDI, conditionally required functions", "graphics drivers WDK Windows 2000 display , DDI, conditionally required functions", "DDI WDK graphics , conditionally required functions"]
+keywords:
+- GDI WDK Windows 2000 display , functions, conditionally required
+- graphics drivers WDK Windows 2000 display , functions, conditionally required
+- functions WDK graphics , conditionally required
+- drawing WDK GDI , functions, conditionally required
+- GDI WDK Windows 2000 display , DDI, conditionally required functions
+- graphics drivers WDK Windows 2000 display , DDI, conditionally required functions
+- DDI WDK graphics , conditionally required functions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Conditionally Required Graphics Driver Functions

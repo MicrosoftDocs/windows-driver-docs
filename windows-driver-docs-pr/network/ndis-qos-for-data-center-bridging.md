@@ -2,6 +2,11 @@
 title: NDIS QoS for Data Center Bridging
 description: NDIS QoS for Data Center Bridging
 ms.assetid: 777988E8-D45E-49A7-B607-5E1218B27B54
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS QoS for Data Center Bridging

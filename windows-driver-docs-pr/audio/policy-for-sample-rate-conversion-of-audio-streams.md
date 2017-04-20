@@ -2,7 +2,14 @@
 title: Policy for Sample Rate Conversion of Audio Streams
 description: Policy for Sample Rate Conversion of Audio Streams
 ms.assetid: 5a54e1fb-abf6-4ab1-808d-0233e3e3a478
-keywords: ["SRC WDK audio , policy", "sample-rate conversion WDK audio , policy"]
+keywords:
+- SRC WDK audio , policy
+- sample-rate conversion WDK audio , policy
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Policy for Sample Rate Conversion of Audio Streams

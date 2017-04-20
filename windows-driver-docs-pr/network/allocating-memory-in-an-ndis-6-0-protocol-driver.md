@@ -2,7 +2,19 @@
 title: Allocating Memory in an NDIS 6.0 Protocol Driver
 description: Allocating Memory in an NDIS 6.0 Protocol Driver
 ms.assetid: abbbd151-d8b7-4413-9ccb-63ec570876ab
-keywords: ["protocol drivers WDK networking , memory", "NDIS protocol drivers WDK , memory", "allocating memory", "memory WDK networking", "NdisAllocateMemory", "NdisAllocateMemoryWithTag", "NdisAllocateMemoryWithTagPriority"]
+keywords:
+- protocol drivers WDK networking , memory
+- NDIS protocol drivers WDK , memory
+- allocating memory
+- memory WDK networking
+- NdisAllocateMemory
+- NdisAllocateMemoryWithTag
+- NdisAllocateMemoryWithTagPriority
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Memory in an NDIS 6.0 Protocol Driver

@@ -2,7 +2,16 @@
 title: Adding a Component
 description: Adding a Component
 ms.assetid: f8177904-77a2-4d1a-8c72-0b47a100bc37
-keywords: ["notify objects WDK networking , adding components", "network notify objects WDK , adding components", "adding network components", "network component additions WDK"]
+keywords:
+- notify objects WDK networking , adding components
+- network notify objects WDK , adding components
+- adding network components
+- network component additions WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding a Component

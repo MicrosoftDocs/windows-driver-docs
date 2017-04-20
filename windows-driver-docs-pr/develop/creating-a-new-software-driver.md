@@ -2,6 +2,11 @@
 ms.assetid: AB35CE97-0C66-47B3-9C64-81BA01D65104
 title: Creating a New Software Driver
 description: In this topic we explain how to use Visual Studio to start writing a new software driver.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a New Software Driver

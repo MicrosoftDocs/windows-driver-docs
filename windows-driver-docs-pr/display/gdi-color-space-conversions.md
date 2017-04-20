@@ -2,7 +2,15 @@
 title: GDI Color Space Conversions
 description: GDI Color Space Conversions
 ms.assetid: f1840d58-9f93-4aa3-8344-d5e61c176254
-keywords: ["surface negotiation WDK GDI , color space conversions", "color channels WDK GDI", "color space conversions WDK GDI"]
+keywords:
+- surface negotiation WDK GDI , color space conversions
+- color channels WDK GDI
+- color space conversions WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Color Space Conversions

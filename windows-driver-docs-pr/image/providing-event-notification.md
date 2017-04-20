@@ -3,6 +3,11 @@ title: Providing Event Notification
 author: windows-driver-content
 description: Providing Event Notification
 ms.assetid: 53ca7ef0-fa8b-4ae1-9b5e-b145c2d02db2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing Event Notification

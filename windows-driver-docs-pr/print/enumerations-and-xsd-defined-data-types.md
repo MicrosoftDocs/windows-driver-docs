@@ -3,7 +3,17 @@ title: Enumerations and XSD-Defined Data Types
 author: windows-driver-content
 description: Enumerations and XSD-Defined Data Types
 ms.assetid: 1e5f41b2-4e47-4c9f-a702-9455e69dca75
-keywords: ["snapshots WDK GDL , structure", "GDL WDK , enumerations", "enumerations WDK GDL", "data types WDK GDL", "GDL WDK , data types"]
+keywords:
+- snapshots WDK GDL , structure
+- GDL WDK , enumerations
+- enumerations WDK GDL
+- data types WDK GDL
+- GDL WDK , data types
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerations and XSD-Defined Data Types

@@ -2,7 +2,18 @@
 title: Synchronous and Asynchronous Codec Commands
 description: Synchronous and Asynchronous Codec Commands
 ms.assetid: c37cc94d-37eb-4a3e-b7ae-63fed8827d21
-keywords: ["TransferCodecVerbs", "codec commands WDK audio", "HD Audio, codec commands", "High Definition Audio (HD Audio), codec commands", "synchronous codec commands WDK audio", "asynchronous codec commands WDK audio"]
+keywords:
+- TransferCodecVerbs
+- codec commands WDK audio
+- HD Audio, codec commands
+- High Definition Audio (HD Audio), codec commands
+- synchronous codec commands WDK audio
+- asynchronous codec commands WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronous and Asynchronous Codec Commands

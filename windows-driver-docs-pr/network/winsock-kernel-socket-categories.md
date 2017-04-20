@@ -2,7 +2,18 @@
 title: Winsock Kernel Socket Categories
 description: Winsock Kernel Socket Categories
 ms.assetid: e99cbef5-c484-43ee-be02-8088f51117ef
-keywords: ["Winsock Kernel WDK networking , socket categories", "WSK WDK networking , socket categories", "basic sockets WDK Winsock Kernel", "listening sockets WDK Winsock Kernel", "datagram sockets WDK Winsock Kernel", "connection-oriented sockets WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , socket categories
+- WSK WDK networking , socket categories
+- basic sockets WDK Winsock Kernel
+- listening sockets WDK Winsock Kernel
+- datagram sockets WDK Winsock Kernel
+- connection-oriented sockets WDK Winsock Kernel
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winsock Kernel Socket Categories

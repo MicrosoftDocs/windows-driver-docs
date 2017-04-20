@@ -3,7 +3,15 @@ title: How File System Filter Drivers Are Similar to Device Drivers
 author: windows-driver-content
 description: How File System Filter Drivers Are Similar to Device Drivers
 ms.assetid: 7797239e-e0cc-4422-bcc6-31cfe6efd8e4
-keywords: ["filter drivers WDK file system , vs. device drivers", "file system filter drivers WDK , vs. device drivers", "device drivers WDK file system"]
+keywords:
+- filter drivers WDK file system , vs. device drivers
+- file system filter drivers WDK , vs. device drivers
+- device drivers WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How File System Filter Drivers Are Similar to Device Drivers

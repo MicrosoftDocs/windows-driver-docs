@@ -2,13 +2,19 @@
 title: INF ControlFlags Section
 description: A ControlFlags section identifies devices for which Windows should take certain unique actions during installation.
 ms.assetid: 529060b6-ee4b-49a8-b723-5eda47e9f561
-keywords: ["INF ControlFlags Section Device and Driver Installation"]
+keywords:
+- INF ControlFlags Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF ControlFlags Section
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF ControlFlags Section

@@ -3,7 +3,20 @@ title: Overview of UMDF
 author: windows-driver-content
 description: This topic provides a high-level overview of UMDF components and describes how your driver interacts with system-supplied components.
 ms.assetid: b36c9fad-1963-4d29-a1e7-890de77fed50
-keywords: ["User-Mode Driver Framework WDK , about UMDF", "UMDF WDK , about UMDF", "user-mode drivers WDK UMDF , about UMDF", "driver host process WDK UMDF", "reflectors WDK UMDF", "driver manager WDK UMDF", "stacks WDK UMDF", "device stacks WDK UMDF"]
+keywords:
+- User-Mode Driver Framework WDK , about UMDF
+- UMDF WDK , about UMDF
+- user-mode drivers WDK UMDF , about UMDF
+- driver host process WDK UMDF
+- reflectors WDK UMDF
+- driver manager WDK UMDF
+- stacks WDK UMDF
+- device stacks WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of UMDF

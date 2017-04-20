@@ -2,7 +2,13 @@
 title: Receiving Notifications
 description: Receiving Notifications
 ms.assetid: 852243b2-35b0-4c94-9b3b-9855ed1a678a
-keywords: ["notifications WDK Native 802.11 IHV Extensions DLL"]
+keywords:
+- notifications WDK Native 802.11 IHV Extensions DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving Notifications

@@ -2,7 +2,13 @@
 title: General Guidelines for INF Files
 description: General Guidelines for INF Files
 ms.assetid: a0394708-46ed-47f8-a629-0c7d3088df3b
-keywords: ["INF files WDK device installations , general guidelines"]
+keywords:
+- INF files WDK device installations , general guidelines
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Guidelines for INF Files

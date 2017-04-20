@@ -2,7 +2,15 @@
 title: Deinterlace Container Device for ProcAmp Control
 description: Deinterlace Container Device for ProcAmp Control
 ms.assetid: ce179efe-9e92-4407-8e90-896e4b9a2e84
-keywords: ["container device WDK DirectX VA", "deinterlacing WDK DirectX VA , ProcAmp control", "ProcAmp WDK DirectX VA , deinterlace container device"]
+keywords:
+- container device WDK DirectX VA
+- deinterlacing WDK DirectX VA , ProcAmp control
+- ProcAmp WDK DirectX VA , deinterlace container device
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deinterlace Container Device for ProcAmp Control

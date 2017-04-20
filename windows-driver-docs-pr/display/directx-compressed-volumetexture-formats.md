@@ -2,7 +2,22 @@
 title: DirectX Compressed VolumeTexture Formats
 description: DirectX Compressed VolumeTexture Formats
 ms.assetid: 5a655a30-e489-4691-873a-58bece059877
-keywords: ["drawing compressed textures WDK DirectDraw , compressed volume texture formats", "DirectDraw compressed textures WDK Windows 2000 display , compressed volume texture formats", "compressed texture surfaces WDK DirectDraw , compressed volume texture formats", "surfaces WDK DirectDraw , compressed textures", "textures WDK DirectDraw , compressed", "DXVN WDK DirectDraw", "DXTN WDK DirectDraw", "slicing WDK DirectDraw", "volume textures WDK DirectDraw", "volumetric rendering WDK DirectDraw"]
+keywords:
+- drawing compressed textures WDK DirectDraw , compressed volume texture formats
+- DirectDraw compressed textures WDK Windows 2000 display , compressed volume texture formats
+- compressed texture surfaces WDK DirectDraw , compressed volume texture formats
+- surfaces WDK DirectDraw , compressed textures
+- textures WDK DirectDraw , compressed
+- DXVN WDK DirectDraw
+- DXTN WDK DirectDraw
+- slicing WDK DirectDraw
+- volume textures WDK DirectDraw
+- volumetric rendering WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX Compressed VolumeTexture Formats

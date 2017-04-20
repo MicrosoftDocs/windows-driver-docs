@@ -2,13 +2,19 @@
 title: INF SignatureAttributes Section
 description: This section allows users to request additional signatures as required by certain certification scenarios.
 ms.assetid: 8169686B-C45B-4D67-8B09-CD5F9977898D
-keywords: ["INF SignatureAttributes Section Device and Driver Installation"]
+keywords:
+- INF SignatureAttributes Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF SignatureAttributes Section
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF SignatureAttributes Section

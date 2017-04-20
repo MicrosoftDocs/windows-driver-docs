@@ -3,7 +3,18 @@ title: USB I/O Targets in UMDF
 author: windows-driver-content
 description: USB I/O Targets in UMDF
 ms.assetid: e08ca910-1b28-4809-9a5b-db3730cda31a
-keywords: ["user-mode drivers WDK UMDF , USB I/O targets", "UMDF WDK , USB I/O targets", "User-Mode Driver Framework WDK , USB I/O targets", "framework-based drivers WDK UMDF , USB I/O targets", "USB I/O targets WDK UMDF", "I/O targets WDK UMDF , USB"]
+keywords:
+- user-mode drivers WDK UMDF , USB I/O targets
+- UMDF WDK , USB I/O targets
+- User-Mode Driver Framework WDK , USB I/O targets
+- framework-based drivers WDK UMDF , USB I/O targets
+- USB I/O targets WDK UMDF
+- I/O targets WDK UMDF , USB
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB I/O Targets in UMDF

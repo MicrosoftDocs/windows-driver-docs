@@ -3,7 +3,16 @@ title: Sample Extension Unit Descriptor
 author: windows-driver-content
 description: Sample Extension Unit Descriptor
 ms.assetid: 283a28e6-9f73-4131-bcfb-b4983a92cecd
-keywords: ["Extension Unit descriptor WDK USB Video Class", "descriptors WDK USB Video Class", "descriptors WDK USB Video Class , sample code", "sample code WDK USB Video Class , extension unit descriptors"]
+keywords:
+- Extension Unit descriptor WDK USB Video Class
+- descriptors WDK USB Video Class
+- descriptors WDK USB Video Class , sample code
+- sample code WDK USB Video Class , extension unit descriptors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Extension Unit Descriptor

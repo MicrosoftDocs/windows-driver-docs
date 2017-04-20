@@ -2,7 +2,17 @@
 title: Video Decode Acceleration for DirectX VA 2.0
 description: Video Decode Acceleration for DirectX VA 2.0
 ms.assetid: c393a16c-24bd-4a76-b502-3e8287085307
-keywords: ["DirectX Video Acceleration WDK display , video decoding", "Video Acceleration WDK DirectX , video decoding", "VA WDK DirectX , video decoding", "video decoding WDK DirectX VA", "decoding video WDK DirectX VA"]
+keywords:
+- DirectX Video Acceleration WDK display , video decoding
+- Video Acceleration WDK DirectX , video decoding
+- VA WDK DirectX , video decoding
+- video decoding WDK DirectX VA
+- decoding video WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Decode Acceleration for DirectX VA 2.0

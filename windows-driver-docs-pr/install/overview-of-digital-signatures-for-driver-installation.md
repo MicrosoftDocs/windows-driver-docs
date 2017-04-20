@@ -2,6 +2,11 @@
 title: Overview of Digital Signatures for Driver Installation
 description: Overview of Digital Signatures for Driver Installation
 ms.assetid: d8a59ba8-1f7a-42a2-b24e-615aae28b31b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Digital Signatures for Driver Installation

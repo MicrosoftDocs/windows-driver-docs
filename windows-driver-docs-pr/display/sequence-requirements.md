@@ -2,7 +2,19 @@
 title: Sequence Requirements
 description: Sequence Requirements
 ms.assetid: ee716286-f455-463d-906d-6f1b9fb8f227
-keywords: ["video decoding WDK DirectX VA , sequence requirements", "decoding video WDK DirectX VA , sequence requirements", "picture decoding WDK DirectX VA , sequence requirements", "sequence requirements WDK DirectX VA", "compressed buffers WDK DirectX VA", "buffers WDK DirectX VA", "succession requirements WDK DirectX VA"]
+keywords:
+- video decoding WDK DirectX VA , sequence requirements
+- decoding video WDK DirectX VA , sequence requirements
+- picture decoding WDK DirectX VA , sequence requirements
+- sequence requirements WDK DirectX VA
+- compressed buffers WDK DirectX VA
+- buffers WDK DirectX VA
+- succession requirements WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sequence Requirements

@@ -2,7 +2,20 @@
 title: 802.11 WLAN Adapter Communication Channel
 description: 802.11 WLAN Adapter Communication Channel
 ms.assetid: 6a4b07a5-3a0a-41cb-a5cf-74d44fb38192
-keywords: ["adapters WDK 802.11 WLAN , communication channel", "WLAN adapters WDK , communication channel", "communication channels WDK networking", "pass-through communication channels WDK networking", "packets WDK networking , Native 802.11 IHV Extensions DLL", "indications WDK Native 802.11 IHV Extensions DLL", "send operations WDK Native 802.11 IHV Extensions DLL", "receive operations WDK Native 802.11 IHV Extensions DLL"]
+keywords:
+- adapters WDK 802.11 WLAN , communication channel
+- WLAN adapters WDK , communication channel
+- communication channels WDK networking
+- pass-through communication channels WDK networking
+- packets WDK networking , Native 802.11 IHV Extensions DLL
+- indications WDK Native 802.11 IHV Extensions DLL
+- send operations WDK Native 802.11 IHV Extensions DLL
+- receive operations WDK Native 802.11 IHV Extensions DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 WLAN Adapter Communication Channel

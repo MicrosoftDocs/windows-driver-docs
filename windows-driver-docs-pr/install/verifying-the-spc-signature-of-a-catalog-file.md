@@ -2,6 +2,11 @@
 title: Verifying the SPC Signature of a Catalog File
 description: Verifying the SPC Signature of a Catalog File
 ms.assetid: 57bc65fe-1c31-4ebb-a1bc-e1fe275f8d10
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Verifying the SPC Signature of a Catalog File

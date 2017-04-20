@@ -2,6 +2,11 @@
 title: Virtualized Surround Sound over Headphones
 description: Virtualized Surround Sound over Headphones
 ms.assetid: 9ed47254-413d-4efc-bfbf-929d0428e2c2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtualized Surround Sound over Headphones

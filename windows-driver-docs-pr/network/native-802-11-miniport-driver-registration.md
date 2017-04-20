@@ -2,7 +2,16 @@
 title: Native 802.11 Miniport Driver Registration
 description: Native 802.11 Miniport Driver Registration
 ms.assetid: bb05b936-0344-4e1d-93b6-83a893a8b99d
-keywords: ["Native 802.11 miniport drivers WDK networking , registration", "miniport drivers WDK Native 802.11 , registration", "registering miniport drivers", "registering Native 802.11 miniport drivers"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , registration
+- miniport drivers WDK Native 802.11 , registration
+- registering miniport drivers
+- registering Native 802.11 miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Miniport Driver Registration

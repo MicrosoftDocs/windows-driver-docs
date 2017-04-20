@@ -2,7 +2,16 @@
 title: Mapping of GUIDs to OIDs and Miniport Driver Status
 description: Mapping of GUIDs to OIDs and Miniport Driver Status
 ms.assetid: b3c9bb40-2906-4059-b9fa-06f6ababd3f2
-keywords: ["WMI WDK networking , GUIDs", "OIDs WDK networking , WMI", "GUIDs WDK networking", "Windows Management Instrumentation WDK networking , GUIDs"]
+keywords:
+- WMI WDK networking , GUIDs
+- OIDs WDK networking , WMI
+- GUIDs WDK networking
+- Windows Management Instrumentation WDK networking , GUIDs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping of GUIDs to OIDs and Miniport Driver Status

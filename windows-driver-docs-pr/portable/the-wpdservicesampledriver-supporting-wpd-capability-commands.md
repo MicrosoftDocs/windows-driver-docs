@@ -1,6 +1,11 @@
 ---
 Description: Supporting the Capability Commands
 title: Supporting the Capability Commands
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting the Capability Commands

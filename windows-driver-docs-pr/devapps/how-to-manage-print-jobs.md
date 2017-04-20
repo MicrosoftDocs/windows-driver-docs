@@ -2,6 +2,11 @@
 title: How to manage print jobs in a Windows Store device app
 description: In Windows 8.1, Windows Store device apps for printers can manage print jobs.
 ms.assetid: 30E247DB-E5B0-4CD5-89F5-4227EE20A564
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to manage print jobs in a Windows Store device app

@@ -2,7 +2,17 @@
 title: WDM Audio Components
 description: WDM Audio Components
 ms.assetid: 629d32ff-56ec-4128-9974-d56fd8336766
-keywords: ["WDM audio components WDK", "audio components WDK", "WDM audio drivers WDK , components", "audio drivers WDK , components", "components WDK audio"]
+keywords:
+- WDM audio components WDK
+- audio components WDK
+- WDM audio drivers WDK , components
+- audio drivers WDK , components
+- components WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Audio Components

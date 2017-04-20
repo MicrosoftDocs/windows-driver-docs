@@ -2,7 +2,17 @@
 title: I2C Bus and Child Devices of the Display Adapter
 description: I2C Bus and Child Devices of the Display Adapter
 ms.assetid: bfa81f2d-dc35-4430-9117-4706a446058c
-keywords: ["video miniport drivers WDK Windows 2000 , I2C", "I2C WDK video miniport", "child devices WDK video miniport", "I2CRead", "I2CWrite"]
+keywords:
+- video miniport drivers WDK Windows 2000 , I2C
+- I2C WDK video miniport
+- child devices WDK video miniport
+- I2CRead
+- I2CWrite
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # I2C Bus and Child Devices of the Display Adapter

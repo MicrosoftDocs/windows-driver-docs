@@ -3,7 +3,24 @@ title: Supporting Mount Manager Requests in a Storage Class Driver
 author: windows-driver-content
 description: Supporting Mount Manager Requests in a Storage Class Driver
 ms.assetid: fb37f862-70d6-4514-b481-16f664346422
-keywords: ["storage class drivers WDK , mount manager", "class drivers WDK storage , mount manager", "Mount Manager WDK storage", "MM WDK storage", "volume names WDK storage", "names WDK storage", "unique volume names WDK storage", "persistent name database WDK storage", "MountedDevices", "dead mounted devices WDK storage", "symbolic link names WDK storage", "nonpersistent names WDK storage"]
+keywords:
+- storage class drivers WDK , mount manager
+- class drivers WDK storage , mount manager
+- Mount Manager WDK storage
+- MM WDK storage
+- volume names WDK storage
+- names WDK storage
+- unique volume names WDK storage
+- persistent name database WDK storage
+- MountedDevices
+- dead mounted devices WDK storage
+- symbolic link names WDK storage
+- nonpersistent names WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Mount Manager Requests in a Storage Class Driver

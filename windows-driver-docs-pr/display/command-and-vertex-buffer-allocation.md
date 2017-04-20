@@ -2,7 +2,20 @@
 title: Command and Vertex Buffer Allocation
 description: Command and Vertex Buffer Allocation
 ms.assetid: 07666a6f-1d2e-4f30-bba8-a09b59225ecf
-keywords: ["command buffers WDK Direct3D", "vertex buffers WDK Direct3D", "buffers WDK Direct3D", "allocating Direct3D buffers", "implicit vertex buffers WDK Direct3D", "explicit vertex buffers WDK Direct3D", "DDSCAPS2_VERTEXBUFFER", "DDSCAPS2_COMMANDBUFFER"]
+keywords:
+- command buffers WDK Direct3D
+- vertex buffers WDK Direct3D
+- buffers WDK Direct3D
+- allocating Direct3D buffers
+- implicit vertex buffers WDK Direct3D
+- explicit vertex buffers WDK Direct3D
+- DDSCAPS2_VERTEXBUFFER
+- DDSCAPS2_COMMANDBUFFER
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command and Vertex Buffer Allocation

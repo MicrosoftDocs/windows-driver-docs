@@ -2,7 +2,14 @@
 title: Static and Dynamic Verification Tools
 description: Static and Dynamic Verification Tools
 ms.assetid: 8bdf1f11-5deb-427b-b058-b9173e167f8d
-keywords: ["dynamic verification tools WDK", "static verification tools WDK"]
+keywords:
+- dynamic verification tools WDK
+- static verification tools WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static and Dynamic Verification Tools

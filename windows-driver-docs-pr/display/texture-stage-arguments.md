@@ -2,7 +2,15 @@
 title: Texture Stage Arguments
 description: Texture Stage Arguments
 ms.assetid: 434a0b88-2fb6-43e3-8a54-48f134a0dbff
-keywords: ["multiple textures WDK Direct3D , texture stages", "texture stages WDK Direct3D", "texture management WDK Direct3D , stages"]
+keywords:
+- multiple textures WDK Direct3D , texture stages
+- texture stages WDK Direct3D
+- texture management WDK Direct3D , stages
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Texture Stage Arguments

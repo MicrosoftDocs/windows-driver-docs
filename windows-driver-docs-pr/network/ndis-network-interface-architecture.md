@@ -2,7 +2,14 @@
 title: NDIS Network Interface Architecture
 description: NDIS Network Interface Architecture
 ms.assetid: ce51008e-678c-421c-b796-36baab3df6b3
-keywords: ["NDIS network interfaces WDK , architecture", "network interfaces WDK , architecture"]
+keywords:
+- NDIS network interfaces WDK , architecture
+- network interfaces WDK , architecture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Network Interface Architecture

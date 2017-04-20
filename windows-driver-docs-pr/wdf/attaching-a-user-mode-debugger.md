@@ -3,7 +3,22 @@ title: Attaching a User-Mode Debugger
 author: windows-driver-content
 description: Attaching a User-Mode Debugger
 ms.assetid: ba8eeabd-946d-46fa-b9ed-b9a674315bd4
-keywords: ["attaching user-mode debuggers WDK UMDF", "multiple-device debugger attachments WDK UMDF", "single-device debugger attachments WDK UMDF", "User-Mode Driver Framework WDK , user-mode debugger", "UMDF WDK , user-mode debugger", "user-mode debugger WDK UMDF", "user-mode debugger WDK UMDF , attaching", "user-mode drivers WDK UMDF , debugging", "debugging drivers WDK UMDF , attaching a user-mode debugger", "driver debugging WDK UMDF , attaching a user-mode debugger"]
+keywords:
+- attaching user-mode debuggers WDK UMDF
+- multiple-device debugger attachments WDK UMDF
+- single-device debugger attachments WDK UMDF
+- User-Mode Driver Framework WDK , user-mode debugger
+- UMDF WDK , user-mode debugger
+- user-mode debugger WDK UMDF
+- user-mode debugger WDK UMDF , attaching
+- user-mode drivers WDK UMDF , debugging
+- debugging drivers WDK UMDF , attaching a user-mode debugger
+- driver debugging WDK UMDF , attaching a user-mode debugger
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attaching a User-Mode Debugger

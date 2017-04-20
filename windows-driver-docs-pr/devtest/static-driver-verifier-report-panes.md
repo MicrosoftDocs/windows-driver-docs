@@ -2,6 +2,11 @@
 title: Static Driver Verifier Report Panes
 description: Static Driver Verifier Report Panes
 ms.assetid: 12487bd0-70f6-4d97-b1a5-c0e5ea055698
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier Report Panes

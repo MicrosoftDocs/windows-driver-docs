@@ -2,7 +2,19 @@
 title: Pausing an Adapter
 description: Pausing an Adapter
 ms.assetid: e24a9886-a1d7-4ca5-bed8-85db4a49ed9c
-keywords: ["miniport adapters WDK networking , pausing", "adapters WDK networking , pausing", "Pausing state WDK networking", "Paused state WDK networking", "MiniportPause", "pausing miniport adapters", "stopping miniport adapters"]
+keywords:
+- miniport adapters WDK networking , pausing
+- adapters WDK networking , pausing
+- Pausing state WDK networking
+- Paused state WDK networking
+- MiniportPause
+- pausing miniport adapters
+- stopping miniport adapters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pausing an Adapter

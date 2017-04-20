@@ -3,7 +3,16 @@ title: GDL Schema Construct Element
 author: windows-driver-content
 description: GDL Schema Construct Element
 ms.assetid: 46653504-4ce7-455c-a22a-a6032cbd6a3e
-keywords: ["GDL WDK , elements", "GDL WDK , schemas", "construct element WDK GDL", "snapshots WDK GDL , structure"]
+keywords:
+- GDL WDK , elements
+- GDL WDK , schemas
+- construct element WDK GDL
+- snapshots WDK GDL , structure
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Schema Construct Element

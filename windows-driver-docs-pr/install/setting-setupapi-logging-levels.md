@@ -2,7 +2,13 @@
 title: Setting SetupAPI Logging Levels
 description: Setting SetupAPI Logging Levels
 ms.assetid: e6fa4c9c-e210-42c7-8bc7-d36463073c28
-keywords: ["logging levels WDK SetupAPI"]
+keywords:
+- logging levels WDK SetupAPI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting SetupAPI Logging Levels

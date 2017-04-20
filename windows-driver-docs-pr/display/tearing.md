@@ -2,7 +2,18 @@
 title: Tearing
 description: Tearing
 ms.assetid: b4c21592-cbdf-4dd6-9457-71d53b9f7b32
-keywords: ["tears WDK DirectDraw", "drawing page flips WDK DirectDraw , tearing", "DirectDraw flipping WDK Windows 2000 display , tearing", "page flipping WDK DirectDraw , tearing", "flipping WDK DirectDraw , tearing", "surfaces WDK DirectDraw , flipping"]
+keywords:
+- tears WDK DirectDraw
+- drawing page flips WDK DirectDraw , tearing
+- DirectDraw flipping WDK Windows 2000 display , tearing
+- page flipping WDK DirectDraw , tearing
+- flipping WDK DirectDraw , tearing
+- surfaces WDK DirectDraw , flipping
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tearing

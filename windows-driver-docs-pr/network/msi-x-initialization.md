@@ -2,7 +2,16 @@
 title: MSI-X Initialization
 description: MSI-X Initialization
 ms.assetid: 64e79ea1-eb6b-4c94-8bad-dd892b712b28
-keywords: ["MSI-X WDK networking , initializing", "message-signaled interrupts WDK networking , initializing", "MSIs WDK networking , initializing", "initializing MSI-X"]
+keywords:
+- MSI-X WDK networking , initializing
+- message-signaled interrupts WDK networking , initializing
+- MSIs WDK networking , initializing
+- initializing MSI-X
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MSI-X Initialization

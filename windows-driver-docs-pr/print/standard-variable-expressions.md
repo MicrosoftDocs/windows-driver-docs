@@ -3,7 +3,17 @@ title: Standard Variable Expressions
 author: windows-driver-content
 description: Standard Variable Expressions
 ms.assetid: b77c6b88-9ef2-4485-b77c-50acb21e13b9
-keywords: ["printer commands WDK Unidrv , strings", "command strings WDK Unidrv", "strings WDK Unidrv", "standard variable expressions WDK Unidrv", "max_repeat"]
+keywords:
+- printer commands WDK Unidrv , strings
+- command strings WDK Unidrv
+- strings WDK Unidrv
+- standard variable expressions WDK Unidrv
+- max_repeat
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standard Variable Expressions

@@ -2,6 +2,11 @@
 title: Interface Descriptor for Data Class Interface
 description: Interface Descriptor for Data Class Interface
 ms.assetid: 258dde6f-952a-4b92-8b76-e26da1b51480
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interface Descriptor for Data Class Interface

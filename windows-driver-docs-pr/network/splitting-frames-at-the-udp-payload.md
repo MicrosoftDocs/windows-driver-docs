@@ -2,7 +2,14 @@
 title: Splitting Frames at the UDP Payload
 description: Splitting Frames at the UDP Payload
 ms.assetid: 10116077-89d2-4d07-9807-46b6281e9851
-keywords: ["Ethernet frame splitting WDK networking , UDP payload", "UDP payload WDK header-data split"]
+keywords:
+- Ethernet frame splitting WDK networking , UDP payload
+- UDP payload WDK header-data split
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Splitting Frames at the UDP Payload

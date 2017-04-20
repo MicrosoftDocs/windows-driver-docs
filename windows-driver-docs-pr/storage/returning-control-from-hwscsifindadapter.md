@@ -3,7 +3,16 @@ title: Returning Control from HwScsiFindAdapter
 author: windows-driver-content
 description: Returning Control from HwScsiFindAdapter
 ms.assetid: 689eae76-9b5b-438f-bbdc-5ee11c6fe737
-keywords: ["HwScsiFindAdapter", "SCSI miniport drivers WDK storage , HwScsiFindAdapter", "return values WDK SCSI", "status values WDK SCSI"]
+keywords:
+- HwScsiFindAdapter
+- SCSI miniport drivers WDK storage , HwScsiFindAdapter
+- return values WDK SCSI
+- status values WDK SCSI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning Control from HwScsiFindAdapter

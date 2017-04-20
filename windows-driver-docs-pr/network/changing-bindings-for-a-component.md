@@ -2,7 +2,15 @@
 title: Changing Bindings for a Component
 description: Changing Bindings for a Component
 ms.assetid: 2e59a160-d8d9-4739-a8fa-919760f8eb05
-keywords: ["notify objects WDK networking , binding changes", "network notify objects WDK , binding changes", "binding changes WDK networking"]
+keywords:
+- notify objects WDK networking , binding changes
+- network notify objects WDK , binding changes
+- binding changes WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing Bindings for a Component

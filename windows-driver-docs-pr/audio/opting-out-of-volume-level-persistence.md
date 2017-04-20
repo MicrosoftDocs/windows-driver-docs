@@ -2,6 +2,11 @@
 title: Opting Out of Volume Level Persistence
 description: Opting Out of Volume Level Persistence
 ms.assetid: e96533be-25e8-49ae-8e56-7105dfa92b5a
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opting Out of Volume Level Persistence

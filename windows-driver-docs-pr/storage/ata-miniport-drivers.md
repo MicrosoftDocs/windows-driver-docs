@@ -3,7 +3,16 @@ title: ATA Miniport Drivers
 author: windows-driver-content
 description: ATA Miniport Drivers
 ms.assetid: 4e5cf0e3-72c5-43df-b61e-0039c3666de4
-keywords: ["ATA miniport drivers WDK", "storage ATA miniport drivers WDK", "storage miniport drivers WDK , ATA miniport drivers", "miniport drivers WDK storage , ATA miniport drivers"]
+keywords:
+- ATA miniport drivers WDK
+- storage ATA miniport drivers WDK
+- storage miniport drivers WDK , ATA miniport drivers
+- miniport drivers WDK storage , ATA miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ATA Miniport Drivers

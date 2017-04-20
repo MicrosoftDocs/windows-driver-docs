@@ -2,6 +2,11 @@
 title: Manage Legal Agreements
 description: Manage Legal Agreements
 ms.assetid: bc02805d-1b9f-4c90-9934-23d7b23a9985
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manage Legal Agreements

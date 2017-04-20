@@ -3,6 +3,11 @@ title: IWiaUIExtension COM Interface
 author: windows-driver-content
 description: IWiaUIExtension COM Interface
 ms.assetid: 10a8e981-889a-46f0-8bf5-da75632d4d94
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IWiaUIExtension COM Interface

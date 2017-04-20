@@ -3,7 +3,17 @@ title: Initializing and Calling IDE Minidriver Routines
 author: windows-driver-content
 description: Initializing and Calling IDE Minidriver Routines
 ms.assetid: ae7b19a9-0a2e-4231-b008-879b7f6c8566
-keywords: ["IDE controller minidrivers WDK storage , initializing", "storage IDE controller minidrivers WDK , initializing", "IDE controller minidrivers WDK storage , calling", "storage IDE controller minidrivers WDK , calling", "initializing IDE controller minidrivers"]
+keywords:
+- IDE controller minidrivers WDK storage , initializing
+- storage IDE controller minidrivers WDK , initializing
+- IDE controller minidrivers WDK storage , calling
+- storage IDE controller minidrivers WDK , calling
+- initializing IDE controller minidrivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing and Calling IDE Minidriver Routines

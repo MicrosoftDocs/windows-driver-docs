@@ -2,7 +2,15 @@
 title: Format of a Text Log Section Body
 description: Format of a Text Log Section Body
 ms.assetid: 37995fc8-9822-4c2f-ba6a-154a86e1eadf
-keywords: ["section body WDK SetupAPI", "formats WDK SetupAPI logging", "text logs WDK SetupAPI , section body"]
+keywords:
+- section body WDK SetupAPI
+- formats WDK SetupAPI logging
+- text logs WDK SetupAPI , section body
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Format of a Text Log Section Body

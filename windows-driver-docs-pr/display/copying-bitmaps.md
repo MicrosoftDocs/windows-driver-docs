@@ -2,7 +2,22 @@
 title: Copying Bitmaps
 description: Copying Bitmaps
 ms.assetid: 76e07c66-7e57-42d7-b6da-c13c8e9a8dee
-keywords: ["GDI WDK Windows 2000 display , bitmaps", "graphics drivers WDK Windows 2000 display , bitmaps", "drawing WDK GDI , bitmaps", "bitmaps WDK GDI", "copying bitmaps", "DrvBitBlt", "DrvCopyBits", "DrvStretchBlt", "DrvTransparentBlt", "stretching WDK Windows 2000 display"]
+keywords:
+- GDI WDK Windows 2000 display , bitmaps
+- graphics drivers WDK Windows 2000 display , bitmaps
+- drawing WDK GDI , bitmaps
+- bitmaps WDK GDI
+- copying bitmaps
+- DrvBitBlt
+- DrvCopyBits
+- DrvStretchBlt
+- DrvTransparentBlt
+- stretching WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Copying Bitmaps

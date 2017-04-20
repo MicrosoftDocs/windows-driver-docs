@@ -3,7 +3,26 @@ title: WDTF Architecture
 author: windows-driver-content
 description: WDTF Architecture
 ms.assetid: 8c110e97-6870-41f1-a4f3-4d44b2974c1a
-keywords: ["Windows Device Testing Framework WDK , architecture", "WDTF WDK , architecture", "architecture WDK WDTF", "Windows Device Testing Framework WDK , components", "WDTF WDK , components", "device-oriented target objects WDK WDTF", "system-oriented target objects WDK WDTF", "target objects WDK WDTF", "device depot WDK WDTF", "system depot WDK WDTF", "Simple Data Evaluation Language WDK WDTF", "SDEL WDK WDTF", "code modules WDK WDTF", "query languages WDK WDTF"]
+keywords:
+- Windows Device Testing Framework WDK , architecture
+- WDTF WDK , architecture
+- architecture WDK WDTF
+- Windows Device Testing Framework WDK , components
+- WDTF WDK , components
+- device-oriented target objects WDK WDTF
+- system-oriented target objects WDK WDTF
+- target objects WDK WDTF
+- device depot WDK WDTF
+- system depot WDK WDTF
+- Simple Data Evaluation Language WDK WDTF
+- SDEL WDK WDTF
+- code modules WDK WDTF
+- query languages WDK WDTF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDTF Architecture

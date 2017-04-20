@@ -3,6 +3,11 @@ title: Using Extra Create Parameters with an IRP\_MJ\_CREATE Operation
 author: windows-driver-content
 description: Using Extra Create Parameters with an IRP\_MJ\_CREATE Operation
 ms.assetid: e32aeec6-1a0a-4d21-8358-89d9fc0a15eb
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Extra Create Parameters with an IRP\_MJ\_CREATE Operation

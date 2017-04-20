@@ -2,7 +2,16 @@
 title: KS Topology Considerations
 description: KS Topology Considerations
 ms.assetid: 81a2a41a-2a10-4de0-9a64-2c8f86a0c96d
-keywords: ["non-PCM audio formats WDK , KS topology", "bridge pins WDK audio", "mixer API WDK audio", "KS filters WDK audio , non-PCM wave formats"]
+keywords:
+- non-PCM audio formats WDK , KS topology
+- bridge pins WDK audio
+- mixer API WDK audio
+- KS filters WDK audio , non-PCM wave formats
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Topology Considerations

@@ -2,7 +2,16 @@
 title: Smart Card Reader States
 description: Smart Card Reader States
 ms.assetid: 7596ba27-206a-4590-aec0-c9009e7a12b6
-keywords: ["smart card drivers WDK , reader states", "reader states WDK smart card", "states WDK smart card", "vendor-supplied drivers WDK smart card , reader states"]
+keywords:
+- smart card drivers WDK , reader states
+- reader states WDK smart card
+- states WDK smart card
+- vendor-supplied drivers WDK smart card , reader states
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Smart Card Reader States

@@ -2,7 +2,15 @@
 title: Unloading a Miniport Driver
 description: Unloading a Miniport Driver
 ms.assetid: c5199a0f-31c3-42e4-8758-cbe480dff682
-keywords: ["miniport drivers WDK networking , unloading", "NDIS miniport drivers WDK , unloading", "unloading miniport drivers"]
+keywords:
+- miniport drivers WDK networking , unloading
+- NDIS miniport drivers WDK , unloading
+- unloading miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unloading a Miniport Driver

@@ -2,7 +2,19 @@
 title: Extensions to Chained Descriptors
 description: Extensions to Chained Descriptors
 ms.assetid: a558c6c8-359c-487b-a51a-5cb16b1a541d
-keywords: ["memory-to-memory data transfers WDK NetDMA , descriptor handling", "data transfers WDK NetDMA , descriptor handling", "transferring data WDK NetDMA , descriptor handling", "DMA transfers WDK NetDMA , descriptor handling", "NetDMA WDK networking , descriptor handling", "NetDMA 2.0 WDK networking , descriptor handling", "NetDMA 2.0 WDK networking , chained descriptors"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , descriptor handling
+- data transfers WDK NetDMA , descriptor handling
+- transferring data WDK NetDMA , descriptor handling
+- DMA transfers WDK NetDMA , descriptor handling
+- NetDMA WDK networking , descriptor handling
+- NetDMA 2.0 WDK networking , descriptor handling
+- NetDMA 2.0 WDK networking , chained descriptors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensions to Chained Descriptors

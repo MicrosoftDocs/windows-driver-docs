@@ -2,7 +2,24 @@
 title: Extensible Wave-Format Descriptors
 description: Extensible Wave-Format Descriptors
 ms.assetid: b80e651b-fb97-4502-8526-e844425805dc
-keywords: ["wave-format descriptors WDK audio", "PCM formats WDK audio", "wave-format tags WDK audio", "wave streams WDK audio", "audio data formats WDK", "data formats WDK audio , wave-format descriptors", "formats WDK audio , wave-format descriptors", "KSDATAFORMAT structure", "KMixer system driver WDK audio , wave-format descriptors", "WAVEFORMATEXTENSIBLE", "WAVEFORMATEX structure", "WDM audio data formats WDK"]
+keywords:
+- wave-format descriptors WDK audio
+- PCM formats WDK audio
+- wave-format tags WDK audio
+- wave streams WDK audio
+- audio data formats WDK
+- data formats WDK audio , wave-format descriptors
+- formats WDK audio , wave-format descriptors
+- KSDATAFORMAT structure
+- KMixer system driver WDK audio , wave-format descriptors
+- WAVEFORMATEXTENSIBLE
+- WAVEFORMATEX structure
+- WDM audio data formats WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Wave-Format Descriptors

@@ -2,13 +2,19 @@
 title: MakeCert
 description: MakeCert (Makecert.exe) is a command-line CryptoAPI tool that creates an X.509 certificate that is signed by a system test root key or by another specified key.
 ms.assetid: 752aa806-5e8c-4519-bece-dcd91161b98a
-keywords: ["MakeCert Driver Development Tools"]
+keywords:
+- MakeCert Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - MakeCert
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MakeCert

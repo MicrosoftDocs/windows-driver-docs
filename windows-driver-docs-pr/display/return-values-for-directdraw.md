@@ -2,7 +2,16 @@
 title: Return Values for DirectDraw
 description: Return Values for DirectDraw
 ms.assetid: da4cc7d7-6826-48aa-96c6-004e31fc3e3e
-keywords: ["return values WDK DirectDraw", "drawing WDK DirectDraw , return values", "DirectDraw WDK Windows 2000 display , return values", "errors WDK DirectDraw"]
+keywords:
+- return values WDK DirectDraw
+- drawing WDK DirectDraw , return values
+- DirectDraw WDK Windows 2000 display , return values
+- errors WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Return Values for DirectDraw

@@ -3,7 +3,15 @@ title: RAW Data Type
 author: windows-driver-content
 description: RAW Data Type
 ms.assetid: f53264c1-97aa-42f0-8bab-76bf984f2c79
-keywords: ["print processors WDK , data types", "data types WDK print processor", "RAW data type WDK print processor"]
+keywords:
+- print processors WDK , data types
+- data types WDK print processor
+- RAW data type WDK print processor
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RAW Data Type

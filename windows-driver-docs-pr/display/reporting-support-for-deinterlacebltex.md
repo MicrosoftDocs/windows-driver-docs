@@ -2,7 +2,16 @@
 title: Reporting Support for DeinterlaceBltEx
 description: Reporting Support for DeinterlaceBltEx
 ms.assetid: 9cf8d05c-ef59-44a4-a377-66282e7888d5
-keywords: ["DeinterlaceBltEx, reporting", "DXVA_VideoProcess_SubStreamsExtended", "DXVA_VideoProcess_YUV2RGBExtended", "DXVA_VideoProcess_AlphaBlendExtended"]
+keywords:
+- DeinterlaceBltEx, reporting
+- DXVA_VideoProcess_SubStreamsExtended
+- DXVA_VideoProcess_YUV2RGBExtended
+- DXVA_VideoProcess_AlphaBlendExtended
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Support for DeinterlaceBltEx

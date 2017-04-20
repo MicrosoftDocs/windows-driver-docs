@@ -2,7 +2,14 @@
 title: Registering intermediate driver ProtocolXxx chimney functions
 description: Registering an Intermediate Driver's ProtocolXxx Chimney Functions
 ms.assetid: 3fbdff0a-caf7-46bd-9893-d81ceb0e8c93
-keywords: ["intermediate drivers WDK TCP chimney offload , function registration", "registering TCP chimney-specific functions"]
+keywords:
+- intermediate drivers WDK TCP chimney offload , function registration
+- registering TCP chimney-specific functions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering an Intermediate Driver's ProtocolXxx Chimney Functions

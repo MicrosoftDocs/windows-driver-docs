@@ -3,7 +3,14 @@ title: Autoconfiguration During Configuration Change
 author: windows-driver-content
 description: Autoconfiguration During Configuration Change
 ms.assetid: 0294d34d-06e4-4e57-8f4d-4100ab482852
-keywords: ["autoconfiguration WDK printer , during configuration changes", "printer autoconfiguration WDK printer , during configuration changes"]
+keywords:
+- autoconfiguration WDK printer , during configuration changes
+- printer autoconfiguration WDK printer , during configuration changes
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autoconfiguration During Configuration Change

@@ -2,7 +2,15 @@
 title: Native 802.11 Statistics
 description: Native 802.11 Statistics
 ms.assetid: e6bd2abf-faa2-463f-91df-a15924afae96
-keywords: ["Native 802.11 miniport drivers WDK networking , statistics", "miniport drivers WDK Native 802.11 , statistics", "statistics WDK networking"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , statistics
+- miniport drivers WDK Native 802.11 , statistics
+- statistics WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Statistics

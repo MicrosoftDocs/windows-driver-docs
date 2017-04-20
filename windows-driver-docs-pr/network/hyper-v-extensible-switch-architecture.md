@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch Architecture
 description: Hyper-V Extensible Switch Architecture
 ms.assetid: AEFF534A-56AF-47AC-AA94-46EA0C2FC50A
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch Architecture

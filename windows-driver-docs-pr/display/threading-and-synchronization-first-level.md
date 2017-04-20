@@ -2,7 +2,14 @@
 title: Threading and Synchronization First Level
 description: Threading and Synchronization First Level
 ms.assetid: 9fce6a18-2a66-4518-b05b-e85bdaa3951f
-keywords: ["threading WDK display , first level", "synchronization WDK display , first level"]
+keywords:
+- threading WDK display , first level
+- synchronization WDK display , first level
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Threading and Synchronization First Level

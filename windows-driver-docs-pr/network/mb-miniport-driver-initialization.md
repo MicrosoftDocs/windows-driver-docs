@@ -2,6 +2,11 @@
 title: MB Miniport Driver Initialization
 description: MB Miniport Driver Initialization
 ms.assetid: cf332eb4-faea-40e3-b313-512f81718267
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB Miniport Driver Initialization

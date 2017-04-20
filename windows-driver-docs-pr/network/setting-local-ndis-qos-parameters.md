@@ -2,6 +2,11 @@
 title: Setting Local NDIS QoS Parameters
 description: Setting Local NDIS QoS Parameters
 ms.assetid: 7AB30829-16A0-46BF-8066-506E01E718A4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Local NDIS QoS Parameters

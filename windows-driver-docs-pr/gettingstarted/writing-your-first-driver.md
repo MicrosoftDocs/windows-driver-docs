@@ -2,7 +2,13 @@
 title: Write your first driver
 description: If you're writing your first driver, use these exercises to get started. Each exercise is independent of the others, so you can do them in any order.
 ms.assetid: d8493589-cdaf-4f20-9416-5810da51aa6a
-keywords: ["Hello World driver"]
+keywords:
+- Hello World driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Write your first driver

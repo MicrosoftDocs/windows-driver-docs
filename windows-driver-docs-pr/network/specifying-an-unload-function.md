@@ -2,7 +2,18 @@
 title: Specifying an Unload Function
 description: Specifying an Unload Function
 ms.assetid: 3bfac8a5-1367-40bd-81b5-4a7fb9aaaece
-keywords: ["Windows Filtering Platform callout drivers WDK , initializing", "callout drivers WDK Windows Filtering Platform , initializing", "initializing callout drivers WDK Windows Filtering Platform", "WDM-based callout drivers WDK Windows Filtering Platform", "WDF-based callout drivers WDK Windows Filtering Platform", "unload function WDK Windows Filtering Platform"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , initializing
+- callout drivers WDK Windows Filtering Platform , initializing
+- initializing callout drivers WDK Windows Filtering Platform
+- WDM-based callout drivers WDK Windows Filtering Platform
+- WDF-based callout drivers WDK Windows Filtering Platform
+- unload function WDK Windows Filtering Platform
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying an Unload Function

@@ -2,7 +2,18 @@
 title: Default Queue Callback Routine Functions
 description: Default Queue Callback Routine Functions
 ms.assetid: 46d767ed-cfeb-4bd0-8792-08781a1335d6
-keywords: ["SetupAPI functions WDK , default queue callback routines", "default queue callback routines", "queue callback routines WDK SetupAPI", "callback routines WDK SetupAPI", "queue files WDK SetupAPI", "file queuing WDK SetupAPI"]
+keywords:
+- SetupAPI functions WDK , default queue callback routines
+- default queue callback routines
+- queue callback routines WDK SetupAPI
+- callback routines WDK SetupAPI
+- queue files WDK SetupAPI
+- file queuing WDK SetupAPI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Default Queue Callback Routine Functions

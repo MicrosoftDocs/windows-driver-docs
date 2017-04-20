@@ -3,7 +3,14 @@ title: COM Interfaces for Rendering Plug-Ins
 author: windows-driver-content
 description: COM Interfaces for Rendering Plug-Ins
 ms.assetid: 3a1a67ed-7c29-42fa-9bd2-ee38468f6d4b
-keywords: ["rendering plug-ins WDK print , COM interfaces", "COM interfaces WDK print , rendering plug-ins"]
+keywords:
+- rendering plug-ins WDK print , COM interfaces
+- COM interfaces WDK print , rendering plug-ins
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COM Interfaces for Rendering Plug-Ins

@@ -2,6 +2,11 @@
 title: Wi-Fi Direct invitation procedure
 description: This section shows the procedure for Wi-Fi Direct invitation
 ms.assetid: 36B8C2A7-1880-4AE3-AA4E-604400420AFB
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Direct Invitation Procedure

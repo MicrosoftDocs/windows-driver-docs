@@ -1,6 +1,11 @@
 ---
 Description: Supporting the Base-Driver Commands
 title: Supporting the Base-Driver Commands
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting the Base-Driver Commands

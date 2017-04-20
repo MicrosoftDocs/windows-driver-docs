@@ -2,6 +2,11 @@
 title: Performance in Network Adapters
 description: There are always tradeoffs in deciding which hardware functions to implement on a network adapter.
 ms.assetid: 7BE3FC13-DEE1-41A2-9B4A-D04CF5D0FC9B
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performance in Network Adapters

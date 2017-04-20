@@ -2,7 +2,16 @@
 title: Updating the NDIS 6.0 Protocol Driver characteristics Structure
 description: Updating the NDIS 6.0 Protocol Driver characteristics Structure
 ms.assetid: 2f2ca525-7379-4c63-9c80-7dd24c011b4d
-keywords: ["NDIS_PROTOCOL_CHARACTERISTICS", "updating protocol driver characteristics structure", "NDIS_PROTOCOL_DRIVER_CHARACTERISTICS", "characteristics structure WDK networking"]
+keywords:
+- NDIS_PROTOCOL_CHARACTERISTICS
+- updating protocol driver characteristics structure
+- NDIS_PROTOCOL_DRIVER_CHARACTERISTICS
+- characteristics structure WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating the NDIS 6.0 Protocol Driver characteristics Structure

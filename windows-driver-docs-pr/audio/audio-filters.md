@@ -2,7 +2,21 @@
 title: Audio Filters
 description: Audio Filters
 ms.assetid: d4b14327-2870-4d4d-a575-68725421da95
-keywords: ["audio filters WDK audio", "audio filters WDK audio , about audio filters", "filters WDK audio , about audio filters", "KS filters WDK audio", "KS filters WDK audio , about KS filters", "sink pins WDK audio", "source pins WDK audio", "IRPs WDK audio", "interrupt service routines WDK audio"]
+keywords:
+- audio filters WDK audio
+- audio filters WDK audio , about audio filters
+- filters WDK audio , about audio filters
+- KS filters WDK audio
+- KS filters WDK audio , about KS filters
+- sink pins WDK audio
+- source pins WDK audio
+- IRPs WDK audio
+- interrupt service routines WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Filters

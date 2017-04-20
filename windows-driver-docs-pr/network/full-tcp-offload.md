@@ -2,7 +2,16 @@
 title: Full TCP Offload
 description: Full TCP Offload
 ms.assetid: a940617a-b848-430d-8da1-acd946feba1b
-keywords: ["TCP offload WDK networking", "chimney offload WDK networking , full", "offloading processing WDK networking", "full TCP offload WDK networking"]
+keywords:
+- TCP offload WDK networking
+- chimney offload WDK networking , full
+- offloading processing WDK networking
+- full TCP offload WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Full TCP Offload

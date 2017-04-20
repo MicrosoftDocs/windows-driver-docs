@@ -2,13 +2,19 @@
 title: INF CopyINF Directive
 description: A CopyINF directive causes specified INF files to be copied to the target system. The CopyINF directive is supported in Windows XP and later versions of Windows.
 ms.assetid: 289822a8-69c3-43a3-ab07-ee02a7473db8
-keywords: ["INF CopyINF Directive Device and Driver Installation"]
+keywords:
+- INF CopyINF Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF CopyINF Directive
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF CopyINF Directive
