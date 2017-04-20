@@ -1,7 +1,7 @@
 ---
 title: Specifying device state and frame latency starting in WDDM 1.3
 ms.assetid: 97FC54BD-0D20-4235-B914-5F44690274AE
-description: 
+description: Implementing escape flags to pass info to the miniport driver
 ---
 
 # Specifying device state and frame latency starting in WDDM 1.3
