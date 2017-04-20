@@ -1,7 +1,7 @@
 ---
 title: Validating a hybrid system configuration
 ms.assetid: 9DB53DAB-0A3D-48A4-84C0-8D60F56B64E8
-description: 
+description: A decription of the procedure to validate a hybrid system.
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
