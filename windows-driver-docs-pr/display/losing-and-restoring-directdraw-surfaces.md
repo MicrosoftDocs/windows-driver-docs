@@ -2,7 +2,21 @@
 title: Losing and Restoring DirectDraw Surfaces
 description: Losing and Restoring DirectDraw Surfaces
 ms.assetid: 74203932-8a30-44ea-8d0d-45265dd2e74a
-keywords: ["drawing surfaces WDK DirectDraw , losing", "DirectDraw surfaces WDK Windows 2000 display , losing", "surfaces WDK DirectDraw , losing", "drawing surfaces WDK DirectDraw , restoring", "DirectDraw surfaces WDK Windows 2000 display , restoring", "surfaces WDK DirectDraw , restoring", "restoring surfaces WDK DirectDraw", "lost surfaces WDK DirectDraw", "suspended surfaces WDK DirectDraw"]
+keywords:
+- drawing surfaces WDK DirectDraw , losing
+- DirectDraw surfaces WDK Windows 2000 display , losing
+- surfaces WDK DirectDraw , losing
+- drawing surfaces WDK DirectDraw , restoring
+- DirectDraw surfaces WDK Windows 2000 display , restoring
+- surfaces WDK DirectDraw , restoring
+- restoring surfaces WDK DirectDraw
+- lost surfaces WDK DirectDraw
+- suspended surfaces WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Losing and Restoring DirectDraw Surfaces

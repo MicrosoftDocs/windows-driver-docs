@@ -2,7 +2,15 @@
 title: Texture Stages
 description: Texture Stages
 ms.assetid: 98149615-ef64-4b0d-9adf-d6b72324e1b4
-keywords: ["multiple textures WDK Direct3D , texture stages", "texture stages WDK Direct3D", "texture management WDK Direct3D , stages"]
+keywords:
+- multiple textures WDK Direct3D , texture stages
+- texture stages WDK Direct3D
+- texture management WDK Direct3D , stages
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Texture Stages

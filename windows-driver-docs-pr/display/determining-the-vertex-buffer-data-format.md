@@ -2,7 +2,17 @@
 title: Determining the Vertex Buffer Data Format
 description: Determining the Vertex Buffer Data Format
 ms.assetid: e10604f9-e800-40ff-a0e1-0f9389340e9c
-keywords: ["vertex format WDK Direct3D", "flexible vertex format WDK Direct3D", "FVF WDK Direct3D", "vertex buffers WDK Direct3D", "Direct3D WDK Windows 2000 display , flexible vertex format"]
+keywords:
+- vertex format WDK Direct3D
+- flexible vertex format WDK Direct3D
+- FVF WDK Direct3D
+- vertex buffers WDK Direct3D
+- Direct3D WDK Windows 2000 display , flexible vertex format
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining the Vertex Buffer Data Format

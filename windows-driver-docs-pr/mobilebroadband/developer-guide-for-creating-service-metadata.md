@@ -2,6 +2,11 @@
 title: Developer guide for creating service metadata
 description: Developer guide for creating service metadata
 ms.assetid: 2d250bce-2dd2-4bd8-aa0f-432dde7783e1
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developer guide for creating service metadata

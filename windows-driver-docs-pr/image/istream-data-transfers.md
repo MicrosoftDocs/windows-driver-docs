@@ -3,6 +3,11 @@ title: IStream Data Transfers
 author: windows-driver-content
 description: IStream Data Transfers
 ms.assetid: 348871d7-137b-4921-aeb0-ac689f4385c3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IStream Data Transfers

@@ -2,7 +2,18 @@
 title: DirectX File Version Numbers
 description: DirectX File Version Numbers
 ms.assetid: 60f840d2-384c-49be-bf05-c16613b4858c
-keywords: ["DirectX file version numbers WDK audio", "version numbers WDK audio", "audio miniport drivers WDK , version numbers", "miniport drivers WDK audio , version numbers", "audio drivers WDK , version numbers", "driver version numbers WDK audio"]
+keywords:
+- DirectX file version numbers WDK audio
+- version numbers WDK audio
+- audio miniport drivers WDK , version numbers
+- miniport drivers WDK audio , version numbers
+- audio drivers WDK , version numbers
+- driver version numbers WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX File Version Numbers

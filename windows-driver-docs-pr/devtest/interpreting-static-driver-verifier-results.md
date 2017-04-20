@@ -2,7 +2,19 @@
 title: Interpreting Static Driver Verifier Results
 description: Interpreting Static Driver Verifier Results
 ms.assetid: ec7e3b90-5d55-411a-8cfe-a1c9c4029694
-keywords: ["Static Driver Verifier WDK , display options", "StaticDV WDK , display options", "SDV WDK , display options", "Static Driver Verifier WDK , verification results", "StaticDV WDK , verification results", "SDV WDK , verification results", "verification results WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , display options
+- StaticDV WDK , display options
+- SDV WDK , display options
+- Static Driver Verifier WDK , verification results
+- StaticDV WDK , verification results
+- SDV WDK , verification results
+- verification results WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interpreting Static Driver Verifier Results

@@ -1,7 +1,12 @@
 ---
-title: \_Flt\_CompletionContext\_Outptr\_ Annotation
+title: '\_Flt\_CompletionContext\_Outptr\_ Annotation'
 description: Use the \_Flt\_CompletionContext\_Outptr\_ annotation when you declare the file system minifilter pre-operation callback function PFLT\_PRE\_OPERATION\_CALLBACK.
 ms.assetid: C3B285EA-0DAB-48D4-AE2F-CB4FBB30EF15
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \_Flt\_CompletionContext\_Outptr\_ Annotation

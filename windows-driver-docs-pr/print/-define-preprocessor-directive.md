@@ -1,9 +1,18 @@
 ---
-title: \ Define Preprocessor Directive
+title: '\ Define Preprocessor Directive'
 author: windows-driver-content
-description: \ Define Preprocessor Directive
+description: '\ Define Preprocessor Directive'
 ms.assetid: e2fab866-dc81-4e4a-bac7-291d0b803962
-keywords: ["preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK", "Define directive WDK GDL"]
+keywords:
+- preprocessor directives WDK GDL , keywords
+- keywords WDK GDL
+- reserved keywords WDK
+- Define directive WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \#Define Preprocessor Directive

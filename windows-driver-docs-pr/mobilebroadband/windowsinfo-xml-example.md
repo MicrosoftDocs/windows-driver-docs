@@ -2,6 +2,11 @@
 title: WindowsInfo XML Example
 description: WindowsInfo XML Example
 ms.assetid: 5933512e-d2bf-437f-abd8-dc3486e07be0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WindowsInfo XML Example

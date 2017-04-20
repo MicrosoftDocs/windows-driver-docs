@@ -3,7 +3,14 @@ title: Ensuring that Completion Processing is Performed at Safe IRQL
 author: windows-driver-content
 description: Ensuring that Completion Processing is Performed at Safe IRQL
 ms.assetid: 54487fba-2ced-4bcd-afa6-d56b351aa7d6
-keywords: ["postoperation callback routines WDK file system minifilter , completion processing", "completing I/O requests WDK file system"]
+keywords:
+- postoperation callback routines WDK file system minifilter , completion processing
+- completing I/O requests WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Ensuring that Completion Processing is Performed at Safe IRQL

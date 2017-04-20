@@ -3,7 +3,14 @@ title: Pscript-Specific Customized Rendering
 author: windows-driver-content
 description: Pscript-Specific Customized Rendering
 ms.assetid: e984f0f0-1435-4cfd-9a99-297f6a9521f5
-keywords: ["rendering plug-ins WDK print , Pscript5", "Pscript WDK print , customized rendering"]
+keywords:
+- rendering plug-ins WDK print , Pscript5
+- Pscript WDK print , customized rendering
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pscript-Specific Customized Rendering

@@ -2,7 +2,15 @@
 title: Advanced Direct3D Driver Topics
 description: Advanced Direct3D Driver Topics
 ms.assetid: 1df15e92-387a-4e2f-ab91-4eac56d4fec7
-keywords: ["Direct3D WDK Windows 2000 display", "Direct3D WDK Windows 2000 display , advanced driver topics", "Windows 2000 display driver model WDK , advanced Direct3D driver topics"]
+keywords:
+- Direct3D WDK Windows 2000 display
+- Direct3D WDK Windows 2000 display , advanced driver topics
+- Windows 2000 display driver model WDK , advanced Direct3D driver topics
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Advanced Direct3D Driver Topics

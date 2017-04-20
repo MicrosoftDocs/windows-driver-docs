@@ -2,7 +2,17 @@
 title: Supporting Display Output and ACPI Events
 description: A comprehensive approach to system configuration and device power control is built into Windows, based on the Advanced Configuration and Power Interface (ACPI) specification.
 ms.assetid: CD5BC59A-4C15-4111-BF4F-13DC04F6874F
-keywords: ["ACPI display WDK display", "ACPI-based display hot-keys WDK display", "display hot-keys WDK display", "BIOS display control WDK display", "automatic display switch WDK display"]
+keywords:
+- ACPI display WDK display
+- ACPI-based display hot-keys WDK display
+- display hot-keys WDK display
+- BIOS display control WDK display
+- automatic display switch WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Display Output and ACPI Events

@@ -2,6 +2,11 @@
 title: Parallel
 description: Parallel
 ms.assetid: E2AF7B3A-B614-4fe1-9CFB-0860F68E895C
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Parallel

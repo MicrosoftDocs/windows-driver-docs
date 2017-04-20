@@ -3,7 +3,16 @@ title: CPSUI-Supported Window Controls
 author: windows-driver-content
 description: CPSUI-Supported Window Controls
 ms.assetid: 557aa4e6-e48e-44fe-b833-93728426b056
-keywords: ["Common Property Sheet User Interface WDK print , window controls", "CPSUI WDK print , window controls", "property sheet pages WDK print , window controls", "window controls WDK CPSUI"]
+keywords:
+- Common Property Sheet User Interface WDK print , window controls
+- CPSUI WDK print , window controls
+- property sheet pages WDK print , window controls
+- window controls WDK CPSUI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CPSUI-Supported Window Controls

@@ -2,7 +2,15 @@
 title: Performing Deinterlacing with Substream Compositing Operations
 description: Performing Deinterlacing with Substream Compositing Operations
 ms.assetid: e6759e88-5cbb-4372-8a92-312f1684b99d
-keywords: ["deinterlacing WDK DirectX VA , combining substream compositing", "combining substream compositing WDK DirectX VA", "substream compositing WDK DirectX VA"]
+keywords:
+- deinterlacing WDK DirectX VA , combining substream compositing
+- combining substream compositing WDK DirectX VA
+- substream compositing WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performing Deinterlacing with Substream Compositing Operations

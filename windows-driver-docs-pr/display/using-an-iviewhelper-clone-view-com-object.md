@@ -2,7 +2,18 @@
 title: Using an IViewHelper Clone-View COM Object
 description: Using an IViewHelper Clone-View COM Object
 ms.assetid: 2f264c5d-0e12-4116-9561-16dce99ce1fe
-keywords: ["TMM WDK display , about IViewHelper", "monitor configurations WDK display , about IViewHelper", "monitor configurations WDK display , detecting new monitors", "monitor configurations WDK display , persisted", "video present networks WDK display , about IViewHelper", "VidPN WDK display , about IViewHelper"]
+keywords:
+- TMM WDK display , about IViewHelper
+- monitor configurations WDK display , about IViewHelper
+- monitor configurations WDK display , detecting new monitors
+- monitor configurations WDK display , persisted
+- video present networks WDK display , about IViewHelper
+- VidPN WDK display , about IViewHelper
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using an IViewHelper Clone-View COM Object

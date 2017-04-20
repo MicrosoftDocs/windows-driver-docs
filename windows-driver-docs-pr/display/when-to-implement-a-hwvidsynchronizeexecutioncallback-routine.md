@@ -2,7 +2,15 @@
 title: When to Implement a HwVidSynchronizeExecutionCallback Routine
 description: When to Implement a HwVidSynchronizeExecutionCallback Routine
 ms.assetid: d33736ca-aff2-421b-a8cc-d09eba76ff7f
-keywords: ["video miniport drivers WDK Windows 2000 , interrupts", "interrupts WDK video miniport", "HwVidSynchronizeExecutionCallback"]
+keywords:
+- video miniport drivers WDK Windows 2000 , interrupts
+- interrupts WDK video miniport
+- HwVidSynchronizeExecutionCallback
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # When to Implement a HwVidSynchronizeExecutionCallback Routine

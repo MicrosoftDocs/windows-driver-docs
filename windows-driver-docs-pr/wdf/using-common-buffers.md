@@ -3,7 +3,16 @@ title: Using Common Buffers
 author: windows-driver-content
 description: Using Common Buffers
 ms.assetid: 81a56f62-917e-4798-b2cc-6469c802fab8
-keywords: ["DMA operations WDK KMDF , common buffers", "bus-master DMA WDK KMDF , common buffers", "common buffers WDK KMDF", "buffers WDK KMDF"]
+keywords:
+- DMA operations WDK KMDF , common buffers
+- bus-master DMA WDK KMDF , common buffers
+- common buffers WDK KMDF
+- buffers WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Common Buffers

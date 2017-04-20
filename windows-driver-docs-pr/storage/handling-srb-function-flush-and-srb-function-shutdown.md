@@ -3,7 +3,16 @@ title: Handling SRB\_FUNCTION\_FLUSH and SRB\_FUNCTION\_SHUTDOWN
 author: windows-driver-content
 description: Handling SRB\_FUNCTION\_FLUSH and SRB\_FUNCTION\_SHUTDOWN
 ms.assetid: d4b8b3e5-d895-42ca-bd28-9d3cef805654
-keywords: ["SCSI miniport drivers WDK storage , HwScsiStartIo", "HwScsiStartIo", "SRB_FUNCTION_FLUSH", "SRB_FUNCTION_SHUTDOWN"]
+keywords:
+- SCSI miniport drivers WDK storage , HwScsiStartIo
+- HwScsiStartIo
+- SRB_FUNCTION_FLUSH
+- SRB_FUNCTION_SHUTDOWN
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling SRB\_FUNCTION\_FLUSH and SRB\_FUNCTION\_SHUTDOWN

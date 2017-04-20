@@ -2,7 +2,15 @@
 title: Querying for Bluetooth Interfaces
 description: Querying for Bluetooth Interfaces
 ms.assetid: 56db29cd-26ab-4262-9b9f-40d46372ffe9
-keywords: ["Bluetooth WDK , interface queries", "querying Bluetooth interfaces", "interfaces WDK Bluetooth"]
+keywords:
+- Bluetooth WDK , interface queries
+- querying Bluetooth interfaces
+- interfaces WDK Bluetooth
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying for Bluetooth Interfaces

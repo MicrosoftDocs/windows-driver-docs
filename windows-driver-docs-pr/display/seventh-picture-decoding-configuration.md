@@ -2,7 +2,14 @@
 title: Seventh Picture Decoding Configuration
 description: Seventh Picture Decoding Configuration
 ms.assetid: eb52cdb4-4009-4860-80ac-5c2172f8a9b3
-keywords: ["compressed picture decoding set WDK DirectX VA", "picture decoding set WDK DirectX VA"]
+keywords:
+- compressed picture decoding set WDK DirectX VA
+- picture decoding set WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Seventh Picture Decoding Configuration

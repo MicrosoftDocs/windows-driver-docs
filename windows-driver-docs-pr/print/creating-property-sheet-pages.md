@@ -3,7 +3,15 @@ title: Creating Property Sheet Pages
 author: windows-driver-content
 description: Creating Property Sheet Pages
 ms.assetid: 90b1743c-b530-408a-aa30-9ab774166306
-keywords: ["Common Property Sheet User Interface WDK print , creating property sheet pages", "CPSUI WDK print , creating property sheet pages", "property sheet pages WDK print , creating"]
+keywords:
+- Common Property Sheet User Interface WDK print , creating property sheet pages
+- CPSUI WDK print , creating property sheet pages
+- property sheet pages WDK print , creating
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Property Sheet Pages

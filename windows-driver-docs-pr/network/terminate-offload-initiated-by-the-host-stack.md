@@ -2,7 +2,13 @@
 title: Terminate Offload Initiated by the Host Stack
 description: Terminate Offload Initiated by the Host Stack
 ms.assetid: 5ccb5621-b483-4520-8971-5e110c80bc82
-keywords: ["terminating offload state WDK TCP chimney offload , initiated by host stack"]
+keywords:
+- terminating offload state WDK TCP chimney offload , initiated by host stack
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Terminate Offload Initiated by the Host Stack

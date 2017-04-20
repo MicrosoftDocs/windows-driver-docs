@@ -2,6 +2,11 @@
 title: Append Information to the Friendly String Names for Windows 7 Display Drivers
 description: Appending Information to the Friendly String Names for Windows 7 Display Drivers
 ms.assetid: 8c65f3d9-6f4c-49e9-a9b2-2689d83a181c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Appending Information to the Friendly String Names for Windows 7 Display Drivers

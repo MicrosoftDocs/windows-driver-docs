@@ -3,6 +3,11 @@ title: WIA Scanner Storage
 author: windows-driver-content
 description: WIA Scanner Storage
 ms.assetid: d47d2c30-1f2f-4baf-927c-eda30377ab6b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Scanner Storage

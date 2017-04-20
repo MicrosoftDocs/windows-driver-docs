@@ -2,7 +2,14 @@
 title: Deleting a Workspace
 description: Deleting a Workspace
 ms.assetid: 43bfa26f-d2b9-428b-ad46-16c707be6a8e
-keywords: ["deleting workspaces", "workspaces WDK TraceView , deleting"]
+keywords:
+- deleting workspaces
+- workspaces WDK TraceView , deleting
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting a Workspace

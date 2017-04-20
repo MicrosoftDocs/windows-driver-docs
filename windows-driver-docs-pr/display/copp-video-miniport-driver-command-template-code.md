@@ -2,7 +2,13 @@
 title: COPP Video Miniport Driver Command Template Code
 description: COPP Video Miniport Driver Command Template Code
 ms.assetid: a772fc78-0024-4834-8ff3-a1cf6672b316
-keywords: ["commands WDK COPP"]
+keywords:
+- commands WDK COPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP Video Miniport Driver Command Template Code

@@ -2,6 +2,11 @@
 title: Overview of Hyper-V
 description: Overview of Hyper-V
 ms.assetid: 2D77B1EB-6320-4609-B8EE-236EA75BEADE
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Hyper-V

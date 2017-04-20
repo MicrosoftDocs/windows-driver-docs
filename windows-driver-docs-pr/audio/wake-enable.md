@@ -2,7 +2,17 @@
 title: Wake Enable
 description: Wake Enable
 ms.assetid: f4a2d4b1-d3a0-449a-ac65-a448d2bcab5c
-keywords: ["HD Audio, wake enable", "High Definition Audio (HD Audio), wake enable", "wake enable WDK audio", "status-change events WDK audio", "power management WDK audio"]
+keywords:
+- HD Audio, wake enable
+- High Definition Audio (HD Audio), wake enable
+- wake enable WDK audio
+- status-change events WDK audio
+- power management WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wake Enable

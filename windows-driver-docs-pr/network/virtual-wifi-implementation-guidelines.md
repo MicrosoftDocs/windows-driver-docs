@@ -2,7 +2,13 @@
 title: Virtual WiFi Implementation Guidelines
 description: Virtual WiFi Implementation Guidelines
 ms.assetid: e8a6903c-a673-4393-8a43-98ce4b219116
-keywords: ["Virtual WiFi in kernel mode WDK networking , implementation"]
+keywords:
+- Virtual WiFi in kernel mode WDK networking , implementation
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual WiFi Implementation Guidelines

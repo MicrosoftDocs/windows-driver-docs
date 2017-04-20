@@ -1,14 +1,20 @@
 ---
 title: /Remove Switch
-description: The /Remove switch of the Enhanced Storage Certificate Management tool removes a specified certificate from the authentication silo certificate (ASC) store in an IEEE 1667-compliant USB storage device.Note  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, type EhStorCertMgrCmd /List at the command prompt and then press Enter.�
+description: The /Remove switch of the Enhanced Storage Certificate Management tool removes a specified certificate from the authentication silo certificate (ASC) store in an IEEE 1667-compliant USB storage device.Note  To produce a list of the volume names of the IEEE 1667-compliant USB storage devices that are currently connected to a computer, type EhStorCertMgrCmd /List at the command prompt and then press Enter.�
 ms.assetid: c74fe7c3-264e-4bbd-9036-b5a254b3ba5b
-keywords: ["/Remove Switch Driver Development Tools"]
+keywords:
+- /Remove Switch Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - /Remove
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # /Remove Switch

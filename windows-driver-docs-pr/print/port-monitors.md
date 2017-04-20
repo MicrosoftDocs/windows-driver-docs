@@ -3,7 +3,17 @@ title: Port Monitors
 author: windows-driver-content
 description: Port Monitors
 ms.assetid: 4758ebda-f93e-49fb-8605-17cf43194afc
-keywords: ["print monitors WDK , port monitors", "port monitors WDK print", "port monitors WDK print , about port monitors", "port monitors WDK print , DLLs", "print queues WDK , port monitors"]
+keywords:
+- print monitors WDK , port monitors
+- port monitors WDK print
+- port monitors WDK print , about port monitors
+- port monitors WDK print , DLLs
+- print queues WDK , port monitors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Port Monitors

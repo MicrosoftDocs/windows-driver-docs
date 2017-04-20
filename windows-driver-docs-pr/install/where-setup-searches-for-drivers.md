@@ -2,7 +2,15 @@
 title: Where Windows Searches for Drivers
 description: Where Windows Searches for Drivers
 ms.assetid: 4c193b97-7b70-425f-99f2-ba976a4cc40a
-keywords: ["driver selections WDK device installations , where Device setupsearches", "locating drivers for device installation WDK device installations , where Device setupsearches", "searching for drivers during device installation WDK device installations , where Device setupsearches"]
+keywords:
+- driver selections WDK device installations , where Device setupsearches
+- locating drivers for device installation WDK device installations , where Device setupsearches
+- searching for drivers during device installation WDK device installations , where Device setupsearches
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Where Windows Searches for Drivers

@@ -3,6 +3,11 @@ title: Introduction to the Universal Printer Driver
 author: windows-driver-content
 description: Introduction to the Universal Printer Driver
 ms.assetid: e4e66d88-4273-47b1-9eb1-f2f5af8a7529
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to the Universal Printer Driver

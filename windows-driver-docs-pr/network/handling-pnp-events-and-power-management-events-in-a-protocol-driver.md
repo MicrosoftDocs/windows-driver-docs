@@ -1,8 +1,21 @@
 ---
-title: Handling PnP Events and Power Management Events in a Protocol Driver
+title: Handling PnP and power management events in a protocol driver
 description: Handling PnP Events and Power Management Events in a Protocol Driver
 ms.assetid: 97cc51f1-7d83-4bf1-87e3-7d986f54e7a1
-keywords: ["protocol drivers WDK networking , power management", "NDIS protocol drivers WDK , power management", "protocol drivers WDK networking , Plug and Play", "NDIS protocol drivers WDK , Plug and Play", "power management WDK NDIS protocol", "Plug and Play WDK NDIS protocol", "notifications WDK PnP , NDIS protocol drivers", "event notifications WDK networking"]
+keywords:
+- protocol drivers WDK networking , power management
+- NDIS protocol drivers WDK , power management
+- protocol drivers WDK networking , Plug and Play
+- NDIS protocol drivers WDK , Plug and Play
+- power management WDK NDIS protocol
+- Plug and Play WDK NDIS protocol
+- notifications WDK PnP , NDIS protocol drivers
+- event notifications WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling PnP Events and Power Management Events in a Protocol Driver

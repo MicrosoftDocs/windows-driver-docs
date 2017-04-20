@@ -2,7 +2,15 @@
 title: Reporting DDI Version
 description: Reporting DDI Version
 ms.assetid: f539a4b4-4652-4e40-928d-d90a3dd1988d
-keywords: ["version numbers WDK DirectX 9.0", "reporting DDI version WDK DirectX 9.0", "DDI version WDK DirectX 9.0"]
+keywords:
+- version numbers WDK DirectX 9.0
+- reporting DDI version WDK DirectX 9.0
+- DDI version WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting DDI Version

@@ -3,7 +3,18 @@ title: Filtering Raster Data
 author: windows-driver-content
 description: Filtering Raster Data
 ms.assetid: 179a2dc0-8794-4934-99b9-eb3f7900536c
-keywords: ["Unidrv, raster data filtering", "GPD files WDK Unidrv , raster data filtering", "filtering raster data WDK print", "raster data filtering WDK Unidrv", "postprocessing scan line data stream WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, raster data filtering
+- GPD files WDK Unidrv , raster data filtering
+- filtering raster data WDK print
+- raster data filtering WDK Unidrv
+- postprocessing scan line data stream WDK Unidrv
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filtering Raster Data

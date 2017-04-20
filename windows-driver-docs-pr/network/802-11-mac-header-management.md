@@ -2,7 +2,14 @@
 title: 802.11 MAC Header Management
 description: 802.11 MAC Header Management
 ms.assetid: 20bf0527-35ef-4c61-92d8-042391cb0203
-keywords: ["headers WDK Native 802.11", "MAC headers WDK Native 802.11"]
+keywords:
+- headers WDK Native 802.11
+- MAC headers WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 MAC Header Management

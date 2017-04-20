@@ -2,7 +2,18 @@
 title: Freeing a NetDMA Channel
 description: Freeing a NetDMA Channel
 ms.assetid: 71d563d4-c0be-4fc3-a0c6-6bf139cd3ba3
-keywords: ["memory-to-memory data transfers WDK NetDMA , freeing channels", "data transfers WDK NetDMA , freeing channels", "transferring data WDK NetDMA , freeing channels", "DMA transfers WDK NetDMA , freeing channels", "NetDMA WDK networking , freeing channels", "channe"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , freeing channels
+- data transfers WDK NetDMA , freeing channels
+- transferring data WDK NetDMA , freeing channels
+- DMA transfers WDK NetDMA , freeing channels
+- NetDMA WDK networking , freeing channels
+- channe
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Freeing a NetDMA Channel

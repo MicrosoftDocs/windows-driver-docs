@@ -2,7 +2,17 @@
 title: Optimized Texture API
 description: Optimized Texture API
 ms.assetid: 58d42807-3f52-415e-a06a-2ed408c20fb0
-keywords: ["texture management WDK Direct3D , optimized textures", "optimized textures WDK Direct3D", "CAPS2_HINTDYNAMIC", "DDSCAPS2_HINTSTATIC", "DDSCAPS2_OPAQUE"]
+keywords:
+- texture management WDK Direct3D , optimized textures
+- optimized textures WDK Direct3D
+- CAPS2_HINTDYNAMIC
+- DDSCAPS2_HINTSTATIC
+- DDSCAPS2_OPAQUE
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Optimized Texture API

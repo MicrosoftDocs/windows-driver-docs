@@ -3,7 +3,15 @@ title: Device Object Example for a SCSI HBA
 author: windows-driver-content
 description: Device Object Example for a SCSI HBA
 ms.assetid: 695ccf9a-a18f-4f1f-bfdc-24fefc2846b4
-keywords: ["storage drivers WDK , device objects", "device objects WDK storage", "SCSI HBA device object example WDK storage"]
+keywords:
+- storage drivers WDK , device objects
+- device objects WDK storage
+- SCSI HBA device object example WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Object Example for a SCSI HBA

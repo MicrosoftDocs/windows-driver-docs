@@ -3,7 +3,17 @@ title: SCSI Miniport Drivers
 author: windows-driver-content
 description: SCSI Miniport Drivers
 ms.assetid: d9268be8-a68d-4617-b323-349ce7c62f3f
-keywords: ["SCSI miniport drivers WDK storage", "storage miniport drivers WDK , SCSI miniport drivers", "miniport drivers WDK storage , SCSI miniport drivers", "SCSI miniport drivers WDK storage , about SCSI miniport drivers", "HBA WDK SCSI"]
+keywords:
+- SCSI miniport drivers WDK storage
+- storage miniport drivers WDK , SCSI miniport drivers
+- miniport drivers WDK storage , SCSI miniport drivers
+- SCSI miniport drivers WDK storage , about SCSI miniport drivers
+- HBA WDK SCSI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SCSI Miniport Drivers

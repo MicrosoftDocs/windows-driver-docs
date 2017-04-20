@@ -2,7 +2,14 @@
 title: Supporting 2D DirectSound Acceleration in WDM Audio
 description: Supporting 2D DirectSound Acceleration in WDM Audio
 ms.assetid: dbbb2416-8928-41ee-90d5-b3b77d23c251
-keywords: ["hardware acceleration WDK DirectSound , 2D mixing", "2D mixing WDK audio"]
+keywords:
+- hardware acceleration WDK DirectSound , 2D mixing
+- 2D mixing WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting 2D DirectSound Acceleration in WDM Audio

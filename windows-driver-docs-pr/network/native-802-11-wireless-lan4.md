@@ -2,7 +2,14 @@
 title: Native 802.11 Wireless LAN
 description: Native 802.11 Wireless LAN
 ms.assetid: ee8f4e80-efb1-4d1b-9134-72456df4fb5c
-keywords: ["Native 802.11 WDK networking", "802.11 See Native 802.11 WDK networking"]
+keywords:
+- Native 802.11 WDK networking
+- 802.11 See Native 802.11 WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Wireless LAN

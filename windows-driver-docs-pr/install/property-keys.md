@@ -2,7 +2,13 @@
 title: Property Keys
 description: Property Keys
 ms.assetid: 767dbe79-72c6-4445-8d4a-8be53a080825
-keywords: ["device properties WDK device installations , property keys"]
+keywords:
+- device properties WDK device installations , property keys
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property Keys

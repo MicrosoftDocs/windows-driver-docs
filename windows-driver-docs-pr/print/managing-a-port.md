@@ -3,7 +3,15 @@ title: Managing a Port
 author: windows-driver-content
 description: Managing a Port
 ms.assetid: 204d57bb-eb4a-4417-952a-349e27633560
-keywords: ["print monitors WDK , port management", "port management WDK print", "port management WDK print , about port management"]
+keywords:
+- print monitors WDK , port management
+- port management WDK print
+- port management WDK print , about port management
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing a Port

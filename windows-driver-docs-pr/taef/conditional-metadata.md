@@ -2,6 +2,11 @@
 title: Conditional Metadata
 description: Conditional Metadata
 ms.assetid: A1C223AB-E9BB-480e-B9ED-75989FD34479
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Conditional Metadata

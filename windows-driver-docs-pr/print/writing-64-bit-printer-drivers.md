@@ -3,7 +3,14 @@ title: Writing 64-Bit Printer Drivers
 author: windows-driver-content
 description: Writing 64-Bit Printer Drivers
 ms.assetid: 41f1a521-980e-4ccd-a395-e1d1bf0114d1
-keywords: ["printer drivers WDK , 64-bit", "64-bit WDK printer"]
+keywords:
+- printer drivers WDK , 64-bit
+- 64-bit WDK printer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing 64-Bit Printer Drivers

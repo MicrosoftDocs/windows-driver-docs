@@ -2,6 +2,11 @@
 title: Configuration Descriptor
 description: Configuration Descriptor
 ms.assetid: 256edfa8-de02-438d-b4ce-0a2df0d0f46e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuration Descriptor

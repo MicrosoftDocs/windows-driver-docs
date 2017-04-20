@@ -2,7 +2,14 @@
 title: Specifying ISDN Keys and Values for an ISDN Adapter
 description: Specifying ISDN Keys and Values for an ISDN Adapter
 ms.assetid: ba2156c1-fb54-4e1e-b0ec-72aa2d950505
-keywords: ["add-registry-sections WDK networking , ISDN adapters", "ISDN adapters WDK networking"]
+keywords:
+- add-registry-sections WDK networking , ISDN adapters
+- ISDN adapters WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying ISDN Keys and Values for an ISDN Adapter

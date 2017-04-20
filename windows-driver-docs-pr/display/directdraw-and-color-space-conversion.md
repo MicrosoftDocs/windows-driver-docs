@@ -2,7 +2,21 @@
 title: DirectDraw and Color Space Conversion
 description: DirectDraw and Color Space Conversion
 ms.assetid: 2a5e59ea-2190-4701-ab7b-7a6503aec6e5
-keywords: ["surfaces WDK DirectDraw , blitting", "drawing blt WDK DirectDraw , color space conversions", "DirectDraw blitting WDK Windows 2000 display , color space conversions", "blitting WDK DirectDraw , color space conversions", "blt WDK DirectDraw , color space conversions", "YUV formats WDK DirectDraw", "FOURCCs", "color space WDK DirectDraw", "converting color space"]
+keywords:
+- surfaces WDK DirectDraw , blitting
+- drawing blt WDK DirectDraw , color space conversions
+- DirectDraw blitting WDK Windows 2000 display , color space conversions
+- blitting WDK DirectDraw , color space conversions
+- blt WDK DirectDraw , color space conversions
+- YUV formats WDK DirectDraw
+- FOURCCs
+- color space WDK DirectDraw
+- converting color space
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectDraw and Color Space Conversion

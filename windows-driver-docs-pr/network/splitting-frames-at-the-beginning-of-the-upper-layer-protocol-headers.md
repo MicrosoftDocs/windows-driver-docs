@@ -1,11 +1,18 @@
 ---
-title: Splitting Frames at the Beginning of the Upper-Layer-Protocol Headers
-description: Splitting Frames at the Beginning of the Upper-Layer-Protocol Headers
+title: Splitting frames at the upper-layer protocol header beginning
+description: Splitting Frames at the Beginning of the Upper Layer-Protocol Headers
 ms.assetid: 2559ac20-46dc-4116-9d12-b2cd634e501b
-keywords: ["Ethernet frame splitting WDK networking , beginning of upper-layer protocol", "upper-layer protocols WDK header-data split"]
+keywords:
+- Ethernet frame splitting WDK networking , beginning of upper-layer protocol
+- upper-layer protocols WDK header-data split
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Splitting Frames at the Beginning of the Upper-Layer-Protocol Headers
+# Splitting Frames at the Beginning of the Upper Layer-Protocol Headers
 
 
 ## <a href="" id="ddk-splitting-frames-at-the-beginning-of-the-upper-layer-protocol-head"></a>

@@ -2,7 +2,15 @@
 title: Offload Target's Internal State Trees
 description: Offload Target's Internal State Trees
 ms.assetid: 5a9d5e31-1c7c-4621-a911-174db8ed114f
-keywords: ["offload state WDK TCP chimney offload , trees", "trees WDK TCP chimney offload", "internal state tree WDK TCP chimney offload"]
+keywords:
+- offload state WDK TCP chimney offload , trees
+- trees WDK TCP chimney offload
+- internal state tree WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offload Target's Internal State Trees

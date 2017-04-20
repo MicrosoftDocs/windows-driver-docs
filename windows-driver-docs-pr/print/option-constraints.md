@@ -3,7 +3,16 @@ title: Option Constraints
 author: windows-driver-content
 description: Option Constraints
 ms.assetid: dc399715-c238-4a6e-8ce0-3204aa0cca68
-keywords: ["constraints WDK Unidrv", "printer options WDK Unidrv , constraints", "simultaneous printer options WDK Unidrv", "combining printer options WDK Unidrv"]
+keywords:
+- constraints WDK Unidrv
+- printer options WDK Unidrv , constraints
+- simultaneous printer options WDK Unidrv
+- combining printer options WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Constraints

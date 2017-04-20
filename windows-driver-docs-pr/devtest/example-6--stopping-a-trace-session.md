@@ -2,7 +2,14 @@
 title: Example 6 Stopping a Trace Session
 description: Example 6 Stopping a Trace Session
 ms.assetid: a8520531-bebb-4334-9dc3-d50f4a851e7e
-keywords: ["trace sessions WDK , stopping", "stopping trace sessions"]
+keywords:
+- trace sessions WDK , stopping
+- stopping trace sessions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 6: Stopping a Trace Session

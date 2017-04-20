@@ -2,7 +2,15 @@
 title: Linear Aperture-Space Segments
 description: Linear Aperture-Space Segments
 ms.assetid: bf818841-eb73-442e-8745-a59d9c3a527c
-keywords: ["memory segments WDK display , linear aperture-space segments", "linear aperture-space segments WDK display", "aperture-space segments WDK display"]
+keywords:
+- memory segments WDK display , linear aperture-space segments
+- linear aperture-space segments WDK display
+- aperture-space segments WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Linear Aperture-Space Segments

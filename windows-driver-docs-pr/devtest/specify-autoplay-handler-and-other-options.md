@@ -2,7 +2,13 @@
 title: Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
 description: Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
 ms.assetid: 7604E8D4-BCBB-45C4-9510-3860304CE7C8
-keywords: ["Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard"]
+keywords:
+- Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specify AutoPlay Handler and options in the Device Metadata Authoring Wizard

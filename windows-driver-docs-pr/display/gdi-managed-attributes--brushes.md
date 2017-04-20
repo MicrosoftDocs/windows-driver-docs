@@ -2,7 +2,22 @@
 title: GDI-Managed Attributes Brushes
 description: GDI-Managed Attributes Brushes
 ms.assetid: 8ca38ba1-824d-45be-9039-13222d3400c3
-keywords: ["GDI WDK Windows 2000 display , rendering engine", "graphics drivers WDK Windows 2000 display , rendering engine", "drawing WDK GDI , rendering engine", "rendering engine WDK GDI", "GDI WDK Windows 2000 display , patterns", "graphics drivers WDK Windows 2000 display , patterns", "patterns WDK GDI", "brushes WDK GDI", "realizing brushes WDK GDI", "drawing WDK GDI , brushes"]
+keywords:
+- GDI WDK Windows 2000 display , rendering engine
+- graphics drivers WDK Windows 2000 display , rendering engine
+- drawing WDK GDI , rendering engine
+- rendering engine WDK GDI
+- GDI WDK Windows 2000 display , patterns
+- graphics drivers WDK Windows 2000 display , patterns
+- patterns WDK GDI
+- brushes WDK GDI
+- realizing brushes WDK GDI
+- drawing WDK GDI , brushes
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI-Managed Attributes: Brushes

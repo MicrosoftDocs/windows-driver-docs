@@ -2,7 +2,15 @@
 title: Preloading Driver Packages
 description: Preloading Driver Packages
 ms.assetid: e617764d-0b48-4cd8-aeac-04d6039aba71
-keywords: ["installation applications WDK , preloaded driver packages", "device installation applications WDK , preloaded driver packages", "preloaded driver packages WDK device installations"]
+keywords:
+- installation applications WDK , preloaded driver packages
+- device installation applications WDK , preloaded driver packages
+- preloaded driver packages WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preloading Driver Packages

@@ -2,7 +2,21 @@
 title: Test-Signing a Driver File
 description: Test-Signing a Driver File
 ms.assetid: 3d73d632-e910-43e7-a8fd-c78a11df0206
-keywords: ["test signing driver packages WDK , driver files", "test signing driver packages WDK , embedding signatures", "embedded signatures in driver files WDK", "signatures WDK , embedded", "digital signatures WDK , embedded", "MakeCert test certificates WDK", "test signing driver files WDK", "commercial test certificates WDK", "Enterprise CA test certificates WDK"]
+keywords:
+- test signing driver packages WDK , driver files
+- test signing driver packages WDK , embedding signatures
+- embedded signatures in driver files WDK
+- signatures WDK , embedded
+- digital signatures WDK , embedded
+- MakeCert test certificates WDK
+- test signing driver files WDK
+- commercial test certificates WDK
+- Enterprise CA test certificates WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test-Signing a Driver File

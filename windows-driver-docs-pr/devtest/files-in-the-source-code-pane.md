@@ -2,7 +2,15 @@
 title: Files in the Source Code Pane
 description: Files in the Source Code Pane
 ms.assetid: 1bc248be-cdc8-4e6c-9eca-da2943daaf58
-keywords: ["Static Driver Verifier Report WDK , Source Code pane", "Source Code pane WDK Static Driver Verifier", "files WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier Report WDK , Source Code pane
+- Source Code pane WDK Static Driver Verifier
+- files WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Files in the Source Code Pane

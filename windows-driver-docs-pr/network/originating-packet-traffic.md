@@ -2,6 +2,11 @@
 title: Originating Packet Traffic
 description: Originating Packet Traffic
 ms.assetid: 613C7E82-387D-47AE-A699-A799087D3C1D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Originating Packet Traffic

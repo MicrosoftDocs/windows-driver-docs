@@ -3,7 +3,14 @@ title: Storage Drivers and Device Objects
 author: windows-driver-content
 description: Storage Drivers and Device Objects
 ms.assetid: dbadebe6-b2ae-4dc2-837b-5ca9634d45d0
-keywords: ["storage drivers WDK , device objects", "device objects WDK storage"]
+keywords:
+- storage drivers WDK , device objects
+- device objects WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Drivers and Device Objects

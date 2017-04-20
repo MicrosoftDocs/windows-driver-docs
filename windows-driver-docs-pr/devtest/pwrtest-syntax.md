@@ -2,6 +2,11 @@
 title: PwrTest Syntax
 description: You run PwrTest from a Command Prompt window. You can select and configure PwrTest Scenarios using command options.
 ms.assetid: bcae1bb6-ce5b-4ece-a5ba-bae6fefd6408
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PwrTest Syntax

@@ -2,7 +2,20 @@
 title: Installation Requirements for Display Miniport and User-Mode Display Drivers
 description: Installation Requirements for Display Miniport and User-Mode Display Drivers
 ms.assetid: f813071d-897d-4100-bc46-326558de2e70
-keywords: ["display driver model WDK Windows Vista , driver installations", "Windows Vista display driver model WDK , driver installations", "display driver model WDK Windows Vista , installing", "user-mode drivers WDK display", "INF files WDK display", "graphics device display miniport drivers WDK Windows Vista", "INF files WDK display , about driver installations", "miniport drivers WDK display , installing"]
+keywords:
+- display driver model WDK Windows Vista , driver installations
+- Windows Vista display driver model WDK , driver installations
+- display driver model WDK Windows Vista , installing
+- user-mode drivers WDK display
+- INF files WDK display
+- graphics device display miniport drivers WDK Windows Vista
+- INF files WDK display , about driver installations
+- miniport drivers WDK display , installing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installation Requirements for Display Miniport and User-Mode Display Drivers

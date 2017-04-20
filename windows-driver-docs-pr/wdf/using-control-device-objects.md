@@ -3,7 +3,22 @@ title: Using Control Device Objects
 author: windows-driver-content
 description: Using Control Device Objects
 ms.assetid: 6367954f-6916-46df-a5a0-e80f045b69e5
-keywords: ["control device objects WDK KMDF", "device objects WDK KMDF", "framework objects WDK KMDF , control device objects", "legacy hardware devices WDK KMDF", "software-only virtual devices WDK KMDF", "system shutdown notifications WDK KMDF", "shutdown notifications WDK KMDF", "notifications WDK KMDF", "names WDK KMDF", "names WDK KMDF , device objects"]
+keywords:
+- control device objects WDK KMDF
+- device objects WDK KMDF
+- framework objects WDK KMDF , control device objects
+- legacy hardware devices WDK KMDF
+- software-only virtual devices WDK KMDF
+- system shutdown notifications WDK KMDF
+- shutdown notifications WDK KMDF
+- notifications WDK KMDF
+- names WDK KMDF
+- names WDK KMDF , device objects
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Control Device Objects

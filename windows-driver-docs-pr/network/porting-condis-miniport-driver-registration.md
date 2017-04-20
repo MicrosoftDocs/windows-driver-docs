@@ -2,7 +2,16 @@
 title: Porting CoNDIS Miniport Driver Registration
 description: Porting CoNDIS Miniport Driver Registration
 ms.assetid: dcbde406-6498-4bb0-a80e-f2d0f0962051
-keywords: ["registering CoNDIS drivers", "entry points WDK networking", "registration porting WDK CoNDIS", "porting CoNDIS drivers WDK networking , registration"]
+keywords:
+- registering CoNDIS drivers
+- entry points WDK networking
+- registration porting WDK CoNDIS
+- porting CoNDIS drivers WDK networking , registration
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting CoNDIS Miniport Driver Registration

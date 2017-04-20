@@ -2,7 +2,22 @@
 title: Pin Factories
 description: Pin Factories
 ms.assetid: 1399b8e1-bd73-4052-afa5-3e992be8789b
-keywords: ["audio filters WDK audio , pin factories", "pin factories WDK audio", "pins WDK audio , factories", "filters WDK audio , pin factories", "multiple pin factories WDK audio", "data formats WDK audio , pin factories", "formats WDK audio , pin factories", "multiple pin instances WDK audio", "identifying pin factories", "KSPIN_DESCRIPTOR structure"]
+keywords:
+- audio filters WDK audio , pin factories
+- pin factories WDK audio
+- pins WDK audio , factories
+- filters WDK audio , pin factories
+- multiple pin factories WDK audio
+- data formats WDK audio , pin factories
+- formats WDK audio , pin factories
+- multiple pin instances WDK audio
+- identifying pin factories
+- KSPIN_DESCRIPTOR structure
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pin Factories

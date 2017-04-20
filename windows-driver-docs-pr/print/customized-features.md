@@ -3,7 +3,14 @@ title: Customized Features
 author: windows-driver-content
 description: Customized Features
 ms.assetid: a7dfed02-3505-4ed6-86cf-efb273f76ad6
-keywords: ["printer features WDK Unidrv , customized", "customized printer features WDK Unidrv"]
+keywords:
+- printer features WDK Unidrv , customized
+- customized printer features WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customized Features

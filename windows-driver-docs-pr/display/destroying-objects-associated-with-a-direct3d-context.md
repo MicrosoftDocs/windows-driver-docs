@@ -2,7 +2,15 @@
 title: Destroying Objects Associated with a Direct3D Context
 description: Destroying Objects Associated with a Direct3D Context
 ms.assetid: b464eb31-6062-4c0c-90a2-2de39b5a85ac
-keywords: ["memory leaks WDK DirectX 9.0", "context WDK Direct3D , DirectX 9.0", "destroying objects associated with context WDK DirectX 9.0"]
+keywords:
+- memory leaks WDK DirectX 9.0
+- context WDK Direct3D , DirectX 9.0
+- destroying objects associated with context WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Destroying Objects Associated with a Direct3D Context

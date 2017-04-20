@@ -3,6 +3,11 @@ title: DSM Model Events
 author: windows-driver-content
 description: DSM Model Events
 ms.assetid: f7f3d777-4a2c-42a1-a355-9e9617108915
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DSM Model Events

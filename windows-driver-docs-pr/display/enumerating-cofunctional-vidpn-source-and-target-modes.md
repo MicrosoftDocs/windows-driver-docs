@@ -2,7 +2,26 @@
 title: Enumerating Cofunctional VidPN Source and Target Modes
 description: Enumerating Cofunctional VidPN Source and Target Modes
 ms.assetid: f1aa6277-7af6-4ba0-8ff1-d562f7029540
-keywords: ["video present networks WDK display , enumerate target and source modes", "VidPN WDK display , enumerate target and source modes", "constraining VidPN WDK", "enumerating target and source modes WDK video present networks", "source modes WDK video present network", "target modes WDK video present network", "pinned scaling transformations WDK video present networks", "pinned rotation transformations WDK video present networks", "multisampling methods WDK video present networks", "mode sets WDK video present networks", "inspecting constraining VidPN WDK", "scaling support flags WDK video present networks", "rotation support flags WDK video present networks", "enumeration pivot WDK video present networks"]
+keywords:
+- video present networks WDK display , enumerate target and source modes
+- VidPN WDK display , enumerate target and source modes
+- constraining VidPN WDK
+- enumerating target and source modes WDK video present networks
+- source modes WDK video present network
+- target modes WDK video present network
+- pinned scaling transformations WDK video present networks
+- pinned rotation transformations WDK video present networks
+- multisampling methods WDK video present networks
+- mode sets WDK video present networks
+- inspecting constraining VidPN WDK
+- scaling support flags WDK video present networks
+- rotation support flags WDK video present networks
+- enumeration pivot WDK video present networks
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Cofunctional VidPN Source and Target Modes

@@ -3,6 +3,11 @@ title: V4 Printer Driver Connectivity
 author: windows-driver-content
 description: The v4 printer driver connectivity model enables the use of, for example, Bidi and Web Services for Devices (WSD) to communicate with a print device.
 ms.assetid: 427FFF34-80B9-4B9F-8FFD-FD0956BBE9DC
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # V4 Printer Driver Connectivity

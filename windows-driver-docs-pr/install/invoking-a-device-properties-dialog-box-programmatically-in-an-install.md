@@ -1,8 +1,19 @@
 ---
-title: Invoke Device Properties Dialog Box in an Installation Application
+title: Invoke Device Properties Dialog Box in Installation Application
 description: Invoking a Device Properties Dialog Box Programmatically in an Installation Application
 ms.assetid: c573acac-581e-44f1-b46b-eceb1f3d5484
-keywords: ["device properties dialog box WDK device installations", "invoking device properties dialog box", "DeviceProperties_RunDLL WDK device installations", "programmatically invoke device properties dialog box WDK", "pDeviceProperties function pointer WDK", "machin"]
+keywords:
+- device properties dialog box WDK device installations
+- invoking device properties dialog box
+- DeviceProperties_RunDLL WDK device installations
+- programmatically invoke device properties dialog box WDK
+- pDeviceProperties function pointer WDK
+- machin
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Invoking a Device Properties Dialog Box Programmatically in an Installation Application

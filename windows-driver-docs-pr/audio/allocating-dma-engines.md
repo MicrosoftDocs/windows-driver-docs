@@ -2,7 +2,18 @@
 title: Allocating DMA Engines
 description: Allocating DMA Engines
 ms.assetid: 45b772ce-e6ae-4102-bad4-734f8f079817
-keywords: ["HD Audio, DMA engines", "High Definition Audio (HD Audio), DMA engines", "allocating DMA engines", "DMA engine allocation WDK audio", "render DMA engines WDK audio", "capture DMA engines WDK audio"]
+keywords:
+- HD Audio, DMA engines
+- High Definition Audio (HD Audio), DMA engines
+- allocating DMA engines
+- DMA engine allocation WDK audio
+- render DMA engines WDK audio
+- capture DMA engines WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating DMA Engines

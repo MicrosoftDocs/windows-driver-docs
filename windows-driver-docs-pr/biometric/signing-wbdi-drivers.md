@@ -2,6 +2,11 @@
 title: Signing WBDI Drivers
 description: Signing WBDI Drivers
 ms.assetid: 1BE83F60-4A04-457E-BD31-5E6F104A3505
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Signing WBDI Drivers

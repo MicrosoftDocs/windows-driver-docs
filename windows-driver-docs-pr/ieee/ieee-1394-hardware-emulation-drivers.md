@@ -3,7 +3,18 @@ title: IEEE 1394 Hardware Emulation Drivers
 author: windows-driver-content
 description: IEEE 1394 Hardware Emulation Drivers
 ms.assetid: 44141072-e425-4983-9234-3ad79daa2017
-keywords: ["IEEE 1394 WDK buses , emulation drivers", "1394 WDK buses , emulation drivers", "emulation drivers WDK IEEE 1394 bus", "hardware emulation drivers WDK IEEE 1394 bus", "PDOs WDK IEEE 1394 bus", "virtual PDOs WDK IEEE 1394 bus"]
+keywords:
+- IEEE 1394 WDK buses , emulation drivers
+- 1394 WDK buses , emulation drivers
+- emulation drivers WDK IEEE 1394 bus
+- hardware emulation drivers WDK IEEE 1394 bus
+- PDOs WDK IEEE 1394 bus
+- virtual PDOs WDK IEEE 1394 bus
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IEEE 1394 Hardware Emulation Drivers

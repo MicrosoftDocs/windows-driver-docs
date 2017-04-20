@@ -2,7 +2,13 @@
 title: PNPCPU Overview
 description: PNPCPU Overview
 ms.assetid: c6bc9567-3c6a-45ea-a39e-e77b52a2279a
-keywords: ["PNPCPU WDK , about PNPCPU"]
+keywords:
+- PNPCPU WDK , about PNPCPU
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PNPCPU Overview

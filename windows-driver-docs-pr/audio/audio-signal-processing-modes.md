@@ -2,6 +2,11 @@
 title: Audio Signal Processing Modes
 description: Drivers declare the supported audio signal processing modes for each device.
 ms.assetid: 104275F8-2302-484B-B673-7448CAA1F793
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Signal Processing Modes

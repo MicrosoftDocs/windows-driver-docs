@@ -3,7 +3,13 @@ title: Implicit Bin Extensions
 author: windows-driver-content
 description: Implicit Bin Extensions
 ms.assetid: 2aaa9e48-59f9-4c87-b592-ed60469cf747
-keywords: ["implicit bin extensions WDK printer"]
+keywords:
+- implicit bin extensions WDK printer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implicit Bin Extensions

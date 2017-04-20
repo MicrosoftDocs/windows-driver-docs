@@ -2,7 +2,16 @@
 title: Latency Clocks
 description: Latency Clocks
 ms.assetid: 3cdd4c69-d99d-48bc-a1d9-9da2a2511e94
-keywords: ["synthesizers WDK audio , latency clocks", "latency WDK audio , clocks", "clocks WDK audio , latency", "latency WDK audio"]
+keywords:
+- synthesizers WDK audio , latency clocks
+- latency WDK audio , clocks
+- clocks WDK audio , latency
+- latency WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Latency Clocks

@@ -2,7 +2,21 @@
 title: Allocating an NDIS Port
 description: Allocating an NDIS Port
 ms.assetid: 39c77921-5841-40f5-90ba-0fba89b3b55e
-keywords: ["ports WDK NDIS , allocating", "NDIS ports WDK , allocating", "allocating NDIS ports", "ports WDK NDIS , maximum number", "NDIS ports WDK , maximum number", "maximum number of ports WDK NDIS", "port states WDK NDIS", "allocated port state WDK NDIS", "port numbers"]
+keywords:
+- ports WDK NDIS , allocating
+- NDIS ports WDK , allocating
+- allocating NDIS ports
+- ports WDK NDIS , maximum number
+- NDIS ports WDK , maximum number
+- maximum number of ports WDK NDIS
+- port states WDK NDIS
+- allocated port state WDK NDIS
+- port numbers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating an NDIS Port

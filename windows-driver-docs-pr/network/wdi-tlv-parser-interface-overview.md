@@ -1,7 +1,12 @@
 ---
 title: WDI TLV parser interface overview
-description: .
+description: This section describes an overview of the WDI TLV parser interface
 ms.assetid: FD204F24-0336-4A54-992C-ACF46565D8D1
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI TLV parser interface overview
@@ -12,7 +17,7 @@ ms.assetid: FD204F24-0336-4A54-992C-ACF46565D8D1
 
 An entry point within the driver receives a message or indication that contains TLVs. After the code extracts the message ID and determines if it is an ID that it wants to handle, it calls the generic parse routine and passes the TLV blob (after advancing past the [**WDI\_MESSAGE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn926074)) to parse the TLVs into a C-structure.
 
-```
+```c
 ndisStatus = Parse(
     cbBufferLength,
     pvBuffer,
@@ -23,13 +28,13 @@ ndisStatus = Parse(
 
 After checking the return for errors, the code can cast the output buffer (*pParsed*) into a concrete type, such as in the below example.
 
-```
+```c
 ((WDI_INDICATION_BSS_ENTRY_LIST_PARAMETERS*)pParsed)
 ```
 
 After the caller is finished with the parsed data, the caller must return the memory back to the parser. The parser needs to know the original message ID used to allocate so it frees the correct data.
 
-```
+```c
 FreeParsed(messageId, pParsed);
 pParsed = NULL;
 ```
@@ -39,7 +44,7 @@ pParsed = NULL;
 
 In this model, the caller has already determined the correct specific TLV to parse and is possibly using a stack local to avoid allocations on the heap. The caller creates the local and calls a specific parse routine. The API does not need the message ID, and the parameter is strongly typed with one less level of indirection.
 
-```
+```c
 WDI_GET_ADAPTER_CAPABILITIES_PARAMETERS adapterCapabilitiesParsed;
 
 ndisStatus = ParseWdiGetAdapterCapabilities(
@@ -51,7 +56,7 @@ ndisStatus = ParseWdiGetAdapterCapabilities(
 
 After the caller is finished using the structure, the caller should give the parser a chance to clean up any allocation it made during parsing, and wipe the structure so it is ready to be reused. The parameter is strongly typed, so the callee does not need any additional parameters.
 
-```
+```c
 CleanupParsedWdiGetAdapterCapabilities(&adapterCapabilitiesParsed);
 ```
 

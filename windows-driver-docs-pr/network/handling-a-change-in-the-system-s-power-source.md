@@ -2,7 +2,16 @@
 title: Handling a Change in the System's Power Source
 description: Handling a Change in the System's Power Source
 ms.assetid: 80e36a23-8a41-46f0-a7cb-0039c306a695
-keywords: ["power source changes WDK networking", "NICs WDK networking , power source changes", "network interface cards WDK networking , power source changes", "Plug and Play WDK NDIS miniport , power source changes"]
+keywords:
+- power source changes WDK networking
+- NICs WDK networking , power source changes
+- network interface cards WDK networking , power source changes
+- Plug and Play WDK NDIS miniport , power source changes
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling a Change in the System's Power Source

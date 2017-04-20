@@ -2,7 +2,16 @@
 title: Enabling and Disabling a Device Interface Instance
 description: Enabling and Disabling a Device Interface Instance
 ms.assetid: 4e3341c2-ba95-458e-8d92-a35545a773e0
-keywords: ["interface classes WDK device installations", "disabling device interface instances", "IoSetDeviceInterfaceState", "device interface classes WDK device installations"]
+keywords:
+- interface classes WDK device installations
+- disabling device interface instances
+- IoSetDeviceInterfaceState
+- device interface classes WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling and Disabling a Device Interface Instance

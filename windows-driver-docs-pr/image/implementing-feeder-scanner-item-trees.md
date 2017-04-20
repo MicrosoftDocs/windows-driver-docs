@@ -3,6 +3,11 @@ title: Implementing Feeder Scanner Item Trees
 author: windows-driver-content
 description: Implementing Feeder Scanner Item Trees
 ms.assetid: 2e81b2f1-01b9-4636-b50c-fee70fbcd871
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing Feeder Scanner Item Trees

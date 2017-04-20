@@ -2,7 +2,14 @@
 title: BinPlace Examples
 description: BinPlace Examples
 ms.assetid: 4f15f332-84ea-4dc1-989e-7c55b07c3ab5
-keywords: ["BinPlace WDK , examples", "examples WDK BinPlace"]
+keywords:
+- BinPlace WDK , examples
+- examples WDK BinPlace
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # BinPlace Examples

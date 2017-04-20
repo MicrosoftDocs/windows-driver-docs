@@ -2,7 +2,22 @@
 title: Synchronization and Notification in Network Drivers
 description: Synchronization and Notification in Network Drivers
 ms.assetid: 9fd9306f-5431-485f-9d6b-f7d6f25ea1ce
-keywords: ["synchronizing access to resources WDK networking", "synchronization WDK networking", "notification WDK networking", "spin locks WDK networking", "network drivers WDK , notifying drivers about events", "notifying drivers about events WDK networking", "shared resources WDL networking", "timers WDK networking", "event notifications WDK networking", "events WDK networking"]
+keywords:
+- synchronizing access to resources WDK networking
+- synchronization WDK networking
+- notification WDK networking
+- spin locks WDK networking
+- network drivers WDK , notifying drivers about events
+- notifying drivers about events WDK networking
+- shared resources WDL networking
+- timers WDK networking
+- event notifications WDK networking
+- events WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronization and Notification in Network Drivers

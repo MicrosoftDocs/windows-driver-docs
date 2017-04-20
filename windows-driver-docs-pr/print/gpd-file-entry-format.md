@@ -3,7 +3,14 @@ title: GPD File Entry Format
 author: windows-driver-content
 description: GPD File Entry Format
 ms.assetid: 44057b4d-5ea1-426f-ae87-047b650cbf65
-keywords: ["GPD file entries WDK Unidrv , formats", "formats WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , formats
+- formats WDK GPD files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GPD File Entry Format

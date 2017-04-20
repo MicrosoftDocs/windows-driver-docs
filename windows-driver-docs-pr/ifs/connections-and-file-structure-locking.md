@@ -3,7 +3,24 @@ title: Connections and File Structure Locking
 author: windows-driver-content
 description: Connections and File Structure Locking
 ms.assetid: 7286a34f-db8f-4b0a-ab7f-674b9dc641a8
-keywords: ["locking WDK RDBSS", "per-device object tables WDK RDBSS", "exclusive locks WDK RDBSS", "reference counts WDK RDBSS", "table-per-NET_ROOT structure WDK RDBSS", "data structures WDK file systems", "RDBSS WDK file systems , connection and file structures", "Redirected Drive Buffering Subsystem WDK file systems , connection and file structures", "connection structures WDK RDBSS", "file structures WDK RDBSS", "structures WDK RDBSS", "connection information WDK RDBSS"]
+keywords:
+- locking WDK RDBSS
+- per-device object tables WDK RDBSS
+- exclusive locks WDK RDBSS
+- reference counts WDK RDBSS
+- table-per-NET_ROOT structure WDK RDBSS
+- data structures WDK file systems
+- RDBSS WDK file systems , connection and file structures
+- Redirected Drive Buffering Subsystem WDK file systems , connection and file structures
+- connection structures WDK RDBSS
+- file structures WDK RDBSS
+- structures WDK RDBSS
+- connection information WDK RDBSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connections and File Structure Locking

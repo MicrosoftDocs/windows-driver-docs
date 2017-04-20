@@ -2,6 +2,11 @@
 title: WindowsInfo XML Document
 description: WindowsInfo XML Document
 ms.assetid: 8004d165-46c5-4bf4-849d-ba83205b9f54
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WindowsInfo XML Document

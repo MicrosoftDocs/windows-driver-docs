@@ -2,7 +2,14 @@
 title: ChkINF Components
 description: ChkINF Components
 ms.assetid: f0437daf-45cd-4260-814b-25dbf5c92a4a
-keywords: ["ChkINF components WDK", "ChkINF WDK"]
+keywords:
+- ChkINF components WDK
+- ChkINF WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ChkINF Components

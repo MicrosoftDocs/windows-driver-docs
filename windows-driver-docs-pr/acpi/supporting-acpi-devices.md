@@ -3,7 +3,20 @@ title: Supporting ACPI Devices
 author: windows-driver-content
 description: Supporting ACPI Devices
 ms.assetid: ebaf2e66-4f56-48ca-93ca-f34e694c0d73
-keywords: ["Advanced Configuration and Power Interface Specification WDK", "ACPI devices WDK", "ACPI devices WDK , about ACPI devices", "definition blocks WDK ACPI", "operation regions WDK ACPI", "operation region handlers WDK ACPI", "function drivers WDK ACPI", "WDM function drivers WDK ACPI"]
+keywords:
+- Advanced Configuration and Power Interface Specification WDK
+- ACPI devices WDK
+- ACPI devices WDK , about ACPI devices
+- definition blocks WDK ACPI
+- operation regions WDK ACPI
+- operation region handlers WDK ACPI
+- function drivers WDK ACPI
+- WDM function drivers WDK ACPI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting ACPI Devices

@@ -1,7 +1,12 @@
 ---
-title: Accessing the Friendly Name and Class Name of a Device Setup Class
+title: Accessing Friendly Name and Class Name of a Device Setup Class
 description: Accessing the Friendly Name and Class Name of a Device Setup Class
 ms.assetid: 52775fc6-1c52-4bed-a943-1afcee67e7e9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing the Friendly Name and Class Name of a Device Setup Class

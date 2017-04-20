@@ -2,6 +2,11 @@
 title: Packet Flow through the Extensible Switch Data Path
 description: Packet Flow through the Extensible Switch Data Path
 ms.assetid: 9236CE95-F959-445F-849F-14377EE91D19
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Packet Flow through the Extensible Switch Data Path

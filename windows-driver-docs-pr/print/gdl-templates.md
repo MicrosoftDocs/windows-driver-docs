@@ -3,7 +3,20 @@ title: GDL Templates
 author: windows-driver-content
 description: GDL Templates
 ms.assetid: 9cce885d-395e-4f8d-8076-951d75d82410
-keywords: ["GDL WDK , templates", "templates WDK GDL", "validating GDL entries WDK GDL", "GDL WDK , validating entries", "attributes WDK GDL , in templates", "constructs WDK GDL , in templates", "inheritance WDK GDL", "schemas WDK GDL , inheritance-based schemas"]
+keywords:
+- GDL WDK , templates
+- templates WDK GDL
+- validating GDL entries WDK GDL
+- GDL WDK , validating entries
+- attributes WDK GDL , in templates
+- constructs WDK GDL , in templates
+- inheritance WDK GDL
+- schemas WDK GDL , inheritance-based schemas
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Templates

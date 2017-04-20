@@ -2,7 +2,14 @@
 title: Cursors
 description: Cursors
 ms.assetid: 8647b0fc-b93b-489d-b2c0-b5caf98e800b
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , cursors", "cursors WDK DirectX 8.0"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , cursors
+- cursors WDK DirectX 8.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cursors

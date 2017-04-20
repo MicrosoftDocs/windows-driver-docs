@@ -2,7 +2,15 @@
 title: Mirror Driver INF File
 description: Mirror Driver INF File
 ms.assetid: ee42cb92-7630-4b5e-912c-88c12e54349b
-keywords: ["display drivers WDK Windows 2000 , mirror drivers", "mirror drivers WDK Windows 2000 display", "INF files WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , mirror drivers
+- mirror drivers WDK Windows 2000 display
+- INF files WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mirror Driver INF File

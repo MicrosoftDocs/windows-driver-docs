@@ -2,7 +2,15 @@
 title: Asynchronous I/O and Completion Functions in Network Drivers
 description: Asynchronous I/O and Completion Functions in Network Drivers
 ms.assetid: fbb940d8-41ad-4f66-998b-f5dc829b54cc
-keywords: ["network drivers WDK , asynchronous operations", "asynchronous I/O WDK networking", "completion function WDK networking"]
+keywords:
+- network drivers WDK , asynchronous operations
+- asynchronous I/O WDK networking
+- completion function WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Asynchronous I/O and Completion Functions in Network Drivers

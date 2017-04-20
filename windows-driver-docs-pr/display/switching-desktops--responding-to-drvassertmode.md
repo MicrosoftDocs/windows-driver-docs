@@ -2,7 +2,16 @@
 title: Switching Desktops Responding to DrvAssertMode
 description: Switching Desktops Responding to DrvAssertMode
 ms.assetid: 0e37050f-63db-4e85-840b-c8f817a7f0e8
-keywords: ["display drivers WDK Windows 2000 , desktop management", "desktop management WDK Windows 2000 display", "switching desktops WDK Windows 2000 display", "DrvAssertMode"]
+keywords:
+- display drivers WDK Windows 2000 , desktop management
+- desktop management WDK Windows 2000 display
+- switching desktops WDK Windows 2000 display
+- DrvAssertMode
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Switching Desktops: Responding to DrvAssertMode

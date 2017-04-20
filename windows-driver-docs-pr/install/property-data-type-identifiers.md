@@ -2,7 +2,13 @@
 title: Property-Data-Type Identifiers
 description: Property-Data-Type Identifiers
 ms.assetid: 8deb96d8-c18c-48f2-be5d-1a3fc8ba8508
-keywords: ["device properties WDK device installations , property-data-type identifiers"]
+keywords:
+- device properties WDK device installations , property-data-type identifiers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property-Data-Type Identifiers

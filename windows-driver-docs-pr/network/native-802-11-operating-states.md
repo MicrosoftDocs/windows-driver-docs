@@ -2,7 +2,15 @@
 title: Native 802.11 Operating States
 description: Native 802.11 Operating States
 ms.assetid: 9b1185cb-4729-487a-bcb6-7f46f3d43187
-keywords: ["Native 802.11 miniport drivers WDK networking , operating states", "miniport drivers WDK Native 802.11 , operating states", "operating states WDK Native 802.11"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , operating states
+- miniport drivers WDK Native 802.11 , operating states
+- operating states WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Operating States

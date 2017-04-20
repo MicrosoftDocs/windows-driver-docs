@@ -3,7 +3,16 @@ title: Handling Client Impersonation in UMDF 1.x Drivers
 author: windows-driver-content
 description: Handling Client Impersonation in UMDF 1.x Drivers
 ms.assetid: 25beab8c-e6b8-479b-ad60-fcc3b5b56a6d
-keywords: ["User-Mode Driver Framework WDK , impersonation", "UMDF WDK , impersonation", "user-mode drivers WDK UMDF , impersonation", "impersonation WDK UMDF"]
+keywords:
+- User-Mode Driver Framework WDK , impersonation
+- UMDF WDK , impersonation
+- user-mode drivers WDK UMDF , impersonation
+- impersonation WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Client Impersonation in UMDF 1.x Drivers

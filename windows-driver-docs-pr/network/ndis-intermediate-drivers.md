@@ -2,7 +2,14 @@
 title: NDIS Intermediate Drivers
 description: NDIS Intermediate Drivers
 ms.assetid: 0c0516b0-1fc4-43b5-8c7c-58255c72a4e7
-keywords: ["intermediate drivers WDK networking , architecture", "NDIS intermediate drivers WDK , architecture"]
+keywords:
+- intermediate drivers WDK networking , architecture
+- NDIS intermediate drivers WDK , architecture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Intermediate Drivers

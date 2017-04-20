@@ -2,7 +2,20 @@
 title: Frame Buffer Organization
 description: Frame Buffer Organization
 ms.assetid: 2a9ce844-84c5-4517-acf7-c7e67a1e5e07
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , video decoding", "Video Acceleration WDK DirectX , video decoding", "VA WDK DirectX , video decoding", "decoding video WDK DirectX VA , frame buffer organization", "video decoding WDK DirectX VA , frame buffer organization", "frame buffer organization WDK DirectX VA", "buffers WDK DirectX VA", "prediction blocks WDK DirectX VA"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , video decoding
+- Video Acceleration WDK DirectX , video decoding
+- VA WDK DirectX , video decoding
+- decoding video WDK DirectX VA , frame buffer organization
+- video decoding WDK DirectX VA , frame buffer organization
+- frame buffer organization WDK DirectX VA
+- buffers WDK DirectX VA
+- prediction blocks WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Frame Buffer Organization

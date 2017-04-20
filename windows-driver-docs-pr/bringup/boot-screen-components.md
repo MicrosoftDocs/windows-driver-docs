@@ -3,6 +3,11 @@ title: Boot screen components
 author: windows-driver-content
 description: There are two components to the firmware update boot screen the OEM logo and the update text.
 ms.assetid: 7ACD6BFC-AB92-4BCC-A9E1-9574D959B577
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boot screen components

@@ -3,7 +3,18 @@ title: Differences Between GDL and GPD Preprocessing
 author: windows-driver-content
 description: Differences Between GDL and GPD Preprocessing
 ms.assetid: 0ca79e85-1697-4f8d-b534-fe24748aaf5b
-keywords: ["GPD file entries WDK Unidrv , preprocessor directives", "GPD file entries WDK Unidrv , vs. GDL file entries", "GDL WDK , vs GPD", "preprocessor directives WDK GDL , vs. GDL preprocessing", "directives WDK GDL , source file preprocessor directives", "source files WDK GDL , preprocessor directives"]
+keywords:
+- GPD file entries WDK Unidrv , preprocessor directives
+- GPD file entries WDK Unidrv , vs. GDL file entries
+- GDL WDK , vs GPD
+- preprocessor directives WDK GDL , vs. GDL preprocessing
+- directives WDK GDL , source file preprocessor directives
+- source files WDK GDL , preprocessor directives
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Differences Between GDL and GPD Preprocessing

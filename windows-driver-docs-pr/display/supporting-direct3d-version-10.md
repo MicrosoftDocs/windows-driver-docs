@@ -2,6 +2,11 @@
 title: Supporting Direct3D Version 10
 description: Supporting Direct3D Version 10
 ms.assetid: 2f7ff2a4-25ac-4e82-9b44-f64a8b814601
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Direct3D Version 10

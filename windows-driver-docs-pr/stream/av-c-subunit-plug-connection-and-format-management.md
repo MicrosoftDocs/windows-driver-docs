@@ -3,7 +3,20 @@ title: AV/C Subunit Plug Connection and Format Management
 author: windows-driver-content
 description: AV/C Subunit Plug Connection and Format Management
 ms.assetid: c80641d5-3108-4dbc-91b9-7ed295434b97
-keywords: ["plug connections WDK AV/C", "subunit support WDK AV/C", "AV/C WDK , plug connections", "peer subunit driver stacks WDK AV/C", "KS pin connections WDK AV/C", "pin connections WDK AV/C", "formats WDK AV/C", "pin formats WDK AV/C"]
+keywords:
+- plug connections WDK AV/C
+- subunit support WDK AV/C
+- AV/C WDK , plug connections
+- peer subunit driver stacks WDK AV/C
+- KS pin connections WDK AV/C
+- pin connections WDK AV/C
+- formats WDK AV/C
+- pin formats WDK AV/C
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C Subunit Plug Connection and Format Management

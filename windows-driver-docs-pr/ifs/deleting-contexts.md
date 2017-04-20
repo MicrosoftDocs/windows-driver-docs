@@ -3,7 +3,14 @@ title: Deleting Contexts
 author: windows-driver-content
 description: Deleting Contexts
 ms.assetid: 43a30a75-4344-4fc5-ad57-28b48c2e54a8
-keywords: ["contexts WDK file system minifilter , deleting", "deleting contexts"]
+keywords:
+- contexts WDK file system minifilter , deleting
+- deleting contexts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting Contexts

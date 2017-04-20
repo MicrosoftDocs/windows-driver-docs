@@ -2,7 +2,14 @@
 title: Registry Key Objects
 description: Registry Key Objects
 ms.assetid: c666f0cc-5a8a-4df8-9c65-08e3b044a08f
-keywords: ["helper objects WDK audio , registry key objects", "registry key objects WDK audio"]
+keywords:
+- helper objects WDK audio , registry key objects
+- registry key objects WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Key Objects

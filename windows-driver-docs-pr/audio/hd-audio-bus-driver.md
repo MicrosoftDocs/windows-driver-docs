@@ -2,7 +2,19 @@
 title: HD Audio Bus Driver
 description: HD Audio Bus Driver
 ms.assetid: a08f4304-467b-45cf-8026-87f41b408692
-keywords: ["HD Audio, Universal Audio Architecture", "High Definition Audio (HD Audio), Universal Audio Architecture", "UAA WDK", "Universal Audio Architecture WDK", "bus drivers WDK audio", "HD Audio, bus driver", "High Definition Audio (HD Audio), bus driver"]
+keywords:
+- HD Audio, Universal Audio Architecture
+- High Definition Audio (HD Audio), Universal Audio Architecture
+- UAA WDK
+- Universal Audio Architecture WDK
+- bus drivers WDK audio
+- HD Audio, bus driver
+- High Definition Audio (HD Audio), bus driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HD Audio Bus Driver

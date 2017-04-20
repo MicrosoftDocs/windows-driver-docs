@@ -3,6 +3,11 @@ title: Integration with the Image Processing Filter
 author: windows-driver-content
 description: Integration with the Image Processing Filter
 ms.assetid: ae5c6209-c95a-424c-9151-caeb8e6b3f8c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Integration with the Image Processing Filter

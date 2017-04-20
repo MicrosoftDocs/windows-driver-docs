@@ -3,6 +3,11 @@ title: Device update methods
 author: windows-driver-content
 ms.assetid: EB5158D7-6ACA-42BB-89E2-0937EAB94BA2
 description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device update methods

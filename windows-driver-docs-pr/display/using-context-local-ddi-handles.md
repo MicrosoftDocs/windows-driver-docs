@@ -2,7 +2,18 @@
 title: Using Context-Local DDI Handles
 description: Using Context-Local DDI Handles
 ms.assetid: 1b3e5c29-9b9e-4c10-8fe0-706255c8fd91
-keywords: ["Direct3D version 11 WDK Windows 7 display , deferred contexts, using context-local DDI handles", "Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts, using context-local DDI handles", "deferred contexts WDK Windows 7 display , using context-local DDI handles", "deferred contexts WDK Windows Server 2008 R2 display , using context-local DDI handles", "context-local DDI handles WDK Windows 7 display", "context-local DDI handles WDK Windows Server 2008 R2 display"]
+keywords:
+- Direct3D version 11 WDK Windows 7 display , deferred contexts, using context-local DDI handles
+- Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts, using context-local DDI handles
+- deferred contexts WDK Windows 7 display , using context-local DDI handles
+- deferred contexts WDK Windows Server 2008 R2 display , using context-local DDI handles
+- context-local DDI handles WDK Windows 7 display
+- context-local DDI handles WDK Windows Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Context-Local DDI Handles

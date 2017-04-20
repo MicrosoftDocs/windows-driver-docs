@@ -3,7 +3,17 @@ title: Handling SD Card Interrupts
 author: windows-driver-content
 description: Handling SD Card Interrupts
 ms.assetid: 40c18af4-6b23-4893-b82f-7fe652929069
-keywords: ["SD WDK buses , interrupts", "interrupts WDK SD bus", "IRQLs WDK SD bus", "hardware interrupts WDK SD bus", "interrupt notifications WDK SD bus"]
+keywords:
+- SD WDK buses , interrupts
+- interrupts WDK SD bus
+- IRQLs WDK SD bus
+- hardware interrupts WDK SD bus
+- interrupt notifications WDK SD bus
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling SD Card Interrupts

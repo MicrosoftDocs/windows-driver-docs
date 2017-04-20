@@ -2,7 +2,22 @@
 title: Forwarding DRM Content IDs
 description: Forwarding DRM Content IDs
 ms.assetid: 62bcc44f-303a-4e72-8140-4b9bee59c252
-keywords: ["Digital Rights Management WDK audio , secure data paths", "DRM WDK audio , secure data paths", "content IDs WDK audio", "identifiers WDK audio", "forwarding content IDs", "unscrambling content WDK audio", "Digital Rights Management WDK audio , content IDs", "DRM WDK audio , content IDs", "converting digital to analog", "authenticating DRM content IDs WDK audio"]
+keywords:
+- Digital Rights Management WDK audio , secure data paths
+- DRM WDK audio , secure data paths
+- content IDs WDK audio
+- identifiers WDK audio
+- forwarding content IDs
+- unscrambling content WDK audio
+- Digital Rights Management WDK audio , content IDs
+- DRM WDK audio , content IDs
+- converting digital to analog
+- authenticating DRM content IDs WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Forwarding DRM Content IDs

@@ -1,8 +1,18 @@
 ---
-title: Invoking a Device Properties Dialog Box from a Command-line Prompt
+title: Invoking a Device Properties Dialog Box from Command-line Prompt
 description: Invoking a Device Properties Dialog Box from a Command-line Prompt
 ms.assetid: 616c93ee-8360-4bab-8e08-48a55cd617f1
-keywords: ["device properties dialog box WDK device installations", "invoking device properties dialog box", "DeviceProperties_RunDLL WDK device installations", "machine-name-parameter field WDK device installations", "device-instance-ID-parameter field WDK device inst"]
+keywords:
+- device properties dialog box WDK device installations
+- invoking device properties dialog box
+- DeviceProperties_RunDLL WDK device installations
+- machine-name-parameter field WDK device installations
+- device-instance-ID-parameter field WDK device inst
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Invoking a Device Properties Dialog Box from a Command-line Prompt

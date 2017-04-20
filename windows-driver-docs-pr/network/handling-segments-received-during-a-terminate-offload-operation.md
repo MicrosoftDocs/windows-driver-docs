@@ -2,7 +2,17 @@
 title: Handling Segments Received During a Terminate Offload Operation
 description: Handling Segments Received During a Terminate Offload Operation
 ms.assetid: 19924d55-80c0-4cb3-bce2-cf0e2fc0758d
-keywords: ["terminating offload state WDK TCP chimney offload , segments received during", "out-of-order segments WDK TCP chimney offload", "segments received during termination WDK TCP chimney offload", "TCP SACK WDK TCP chimney offload", "selective acknowledgment for out-of-order segments WDK TCP chimney offload"]
+keywords:
+- terminating offload state WDK TCP chimney offload , segments received during
+- out-of-order segments WDK TCP chimney offload
+- segments received during termination WDK TCP chimney offload
+- TCP SACK WDK TCP chimney offload
+- selective acknowledgment for out-of-order segments WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Segments Received During a Terminate Offload Operation

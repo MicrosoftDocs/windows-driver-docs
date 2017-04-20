@@ -2,6 +2,11 @@
 title: Graphics Driver Functions
 description: Graphics Driver Functions
 ms.assetid: 2e8725a1-2d98-472d-b8ec-8f451272fe77
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Graphics Driver Functions

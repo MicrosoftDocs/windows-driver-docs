@@ -3,7 +3,15 @@ title: Crossbar Change Event
 author: windows-driver-content
 description: Crossbar Change Event
 ms.assetid: 67202a53-d981-47db-9bc1-7de18f9192aa
-keywords: ["crossbar changed event WDK video capture", "events WDK video capture", "EVENTSETID_CROSSBAR"]
+keywords:
+- crossbar changed event WDK video capture
+- events WDK video capture
+- EVENTSETID_CROSSBAR
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Crossbar Change Event

@@ -2,7 +2,16 @@
 title: One-to-Many ID Mapping
 description: One-to-Many ID Mapping
 ms.assetid: 395d3f20-7410-496b-9ec3-1052cd731ae3
-keywords: ["mapping network component IDs", "ID mapping WDK netmap.inf", "one-to-many ID mapping WDK networking", "preupgrade IDs WDK networking"]
+keywords:
+- mapping network component IDs
+- ID mapping WDK netmap.inf
+- one-to-many ID mapping WDK networking
+- preupgrade IDs WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # One-to-Many ID Mapping

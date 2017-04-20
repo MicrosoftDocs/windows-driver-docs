@@ -1,14 +1,19 @@
 ---
 title: Networking driver samples
 author: windows-driver-content
-description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
+description: The driver samples in this directory provide a starting point for writing a custom network driver for your device.
 ms.assetid: 97C88E82-96AA-41AD-9B1F-3EB848A08BD8
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Networking driver samples
 
 
-The driver samples in this directory provide a starting point for writing a custom driver for your device.
+The driver samples in this directory provide a starting point for writing a custom network driver for your device.
 
 ## Networking
 

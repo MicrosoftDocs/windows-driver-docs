@@ -2,7 +2,13 @@
 title: Describe your service in the Mobile Broadband Metadata Authoring Wizard
 description: Describe your service in the Mobile Broadband Metadata Authoring Wizard
 ms.assetid: 0FA4945C-3CD9-4106-BC47-F89CEF168FDC
-keywords: ["Describe your service in the Mobile Broadband Metadata Authoring Wizard"]
+keywords:
+- Describe your service in the Mobile Broadband Metadata Authoring Wizard
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Describe your service in the Mobile Broadband Metadata Authoring Wizard

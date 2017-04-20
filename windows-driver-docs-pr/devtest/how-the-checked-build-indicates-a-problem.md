@@ -2,7 +2,19 @@
 title: How the Checked Build Indicates a Problem
 description: How the Checked Build Indicates a Problem
 ms.assetid: 373519e0-bca9-434e-8cc3-e11c2d4b42a4
-keywords: ["checked builds WDK , problem notifications", "notifications WDK checked builds", "ASSERTs WDK checked builds", "breakpoints WDK", "debugger messages WDK", "messages WDK checked builds", "errors WDK checked builds"]
+keywords:
+- checked builds WDK , problem notifications
+- notifications WDK checked builds
+- ASSERTs WDK checked builds
+- breakpoints WDK
+- debugger messages WDK
+- messages WDK checked builds
+- errors WDK checked builds
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How the Checked Build Indicates a Problem

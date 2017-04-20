@@ -3,7 +3,20 @@ title: Handling Enumeration Requests
 author: windows-driver-content
 description: Handling Enumeration Requests
 ms.assetid: 3719ffa7-2daf-4716-a183-531837be99aa
-keywords: ["enumeration WDK KMDF", "PnP WDK KMDF , bus enumeration", "Plug and Play WDK KMDF , bus enumeration", "bus enumeration WDK KMDF", "listing child devices WDK KMDF", "child devices WDK KMDF", "dynamic enumeration WDK KMDF", "static enumeration WDK KMDF"]
+keywords:
+- enumeration WDK KMDF
+- PnP WDK KMDF , bus enumeration
+- Plug and Play WDK KMDF , bus enumeration
+- bus enumeration WDK KMDF
+- listing child devices WDK KMDF
+- child devices WDK KMDF
+- dynamic enumeration WDK KMDF
+- static enumeration WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Enumeration Requests

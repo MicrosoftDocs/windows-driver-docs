@@ -3,6 +3,11 @@ title: Accessing Kernel-Mode Drivers for Still Image Devices
 author: windows-driver-content
 description: Accessing Kernel-Mode Drivers for Still Image Devices
 ms.assetid: f9216d3c-4930-4c26-8eac-6ee500b038e0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Kernel-Mode Drivers for Still Image Devices

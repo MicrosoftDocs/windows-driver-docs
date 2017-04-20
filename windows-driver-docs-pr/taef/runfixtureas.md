@@ -1,7 +1,12 @@
 ---
 title: RunFixtureAs
-description: TAEF uses RunFixtureAs to execute test fixtures (module, class, and test-level setup and cleanup functions) in a context other than the corresponding test(s).
+description: TAEF provides a mechanism to execute test fixtures within a different context than their corresponding tests.
 ms.assetid: FAFF5265-5268-412E-86A5-149B187B1376
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RunFixtureAs

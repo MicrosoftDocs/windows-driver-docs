@@ -2,7 +2,13 @@
 title: Terminate Offload Requested by an Offload Target
 description: Terminate Offload Requested by an Offload Target
 ms.assetid: 2e0254c9-9dc4-4a85-b014-806974dbaabe
-keywords: ["terminating offload state WDK TCP chimney offload , requested by offload target"]
+keywords:
+- terminating offload state WDK TCP chimney offload , requested by offload target
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Terminate Offload Requested by an Offload Target

@@ -2,7 +2,18 @@
 title: Low-Level IDCT Processing Elements
 description: Low-Level IDCT Processing Elements
 ms.assetid: 7736a226-1122-4380-b09f-a8560c0cd609
-keywords: ["macroblocks WDK DirectX VA , IDCT", "low-level IDCT WDK DirectX VA", "off-host IDCT WDK DirectX VA", "host-based IDCT WDK DirectX VA", "inverse discrete-cosine transform WDK DirectX VA", "IDCT WDK DirectX VA"]
+keywords:
+- macroblocks WDK DirectX VA , IDCT
+- low-level IDCT WDK DirectX VA
+- off-host IDCT WDK DirectX VA
+- host-based IDCT WDK DirectX VA
+- inverse discrete-cosine transform WDK DirectX VA
+- IDCT WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Low-Level IDCT Processing Elements

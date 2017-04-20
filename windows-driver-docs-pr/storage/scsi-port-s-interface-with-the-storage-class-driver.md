@@ -3,6 +3,11 @@ title: SCSI Port's Interface with the Storage Class Driver
 author: windows-driver-content
 description: SCSI Port's Interface with the Storage Class Driver
 ms.assetid: 195397c2-dade-4117-9809-592d7c1ae4a2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SCSI Port's Interface with the Storage Class Driver

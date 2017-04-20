@@ -2,7 +2,20 @@
 title: Offload State Objects
 description: Offload State Objects
 ms.assetid: 39d0fb00-db07-4918-87a8-fd90d31107c8
-keywords: ["offload state WDK TCP chimney offload , objects", "neighbor state WDK TCP chimney offload", "path state WDK TCP chimney offload", "TCP state object WDK TCP chimney offload", "constant variables WDK TCP chimney offload", "cached variables WDK TCP chimney offload", "delegated variables WDK TCP chimney offload", "variables WDK TCP chimney offload state"]
+keywords:
+- offload state WDK TCP chimney offload , objects
+- neighbor state WDK TCP chimney offload
+- path state WDK TCP chimney offload
+- TCP state object WDK TCP chimney offload
+- constant variables WDK TCP chimney offload
+- cached variables WDK TCP chimney offload
+- delegated variables WDK TCP chimney offload
+- variables WDK TCP chimney offload state
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offload State Objects

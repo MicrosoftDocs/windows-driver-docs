@@ -2,6 +2,11 @@
 title: Calling a PCMCIA\_INTERFACE\_STANDARD Interface Routine
 description: Calling a PCMCIA\_INTERFACE\_STANDARD Interface Routine
 ms.assetid: 468d2037-a7d5-4851-9f41-d1e6c9006750
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling a PCMCIA\_INTERFACE\_STANDARD Interface Routine

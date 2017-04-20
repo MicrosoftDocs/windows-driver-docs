@@ -2,7 +2,23 @@
 title: Special Effects in Display Drivers
 description: Special Effects in Display Drivers
 ms.assetid: f44a89df-6412-442c-8491-3e2f2bbd826f
-keywords: ["display drivers WDK Windows 2000 , special effects", "special effects WDK Windows 2000 display", "effects WDK Windows 2000 display", "blend-in animations WDK Windows 2000 display", "blend-out animations WDK Windows 2000 display", "alpha cursors WDK Windows 2000 display", "gradient fills WDK Windows 2000 display", "alpha blending WDK Windows 2000 display", "bit-block transfers WDK Windows 2000 display", "stretching WDK Windows 2000 display", "animations WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , special effects
+- special effects WDK Windows 2000 display
+- effects WDK Windows 2000 display
+- blend-in animations WDK Windows 2000 display
+- blend-out animations WDK Windows 2000 display
+- alpha cursors WDK Windows 2000 display
+- gradient fills WDK Windows 2000 display
+- alpha blending WDK Windows 2000 display
+- bit-block transfers WDK Windows 2000 display
+- stretching WDK Windows 2000 display
+- animations WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Special Effects in Display Drivers

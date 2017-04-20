@@ -2,7 +2,15 @@
 title: Reading the Registry in an NDIS 6.0 Protocol Driver
 description: Reading the Registry in an NDIS 6.0 Protocol Driver
 ms.assetid: ef6d9a77-b804-4ba3-b791-25ad3e9ff4da
-keywords: ["NdisOpenConfiguration", "NdisOpenConfigurationEx", "registry WDK networking"]
+keywords:
+- NdisOpenConfiguration
+- NdisOpenConfigurationEx
+- registry WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading the Registry in an NDIS 6.0 Protocol Driver

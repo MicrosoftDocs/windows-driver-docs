@@ -3,7 +3,17 @@ title: Tape Drivers
 author: windows-driver-content
 description: Tape Drivers
 ms.assetid: d6d8ac92-0713-401c-9551-fc8e08e903f4
-keywords: ["tape drivers WDK storage", "storage tape drivers WDK", "storage drivers WDK , tape drivers", "tape drivers WDK storage , about tape drivers", "storage tape drivers WDK , about tape drivers"]
+keywords:
+- tape drivers WDK storage
+- storage tape drivers WDK
+- storage drivers WDK , tape drivers
+- tape drivers WDK storage , about tape drivers
+- storage tape drivers WDK , about tape drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tape Drivers

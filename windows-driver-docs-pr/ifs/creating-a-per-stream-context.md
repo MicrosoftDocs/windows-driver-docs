@@ -3,7 +3,18 @@ title: Creating a Per-Stream Context
 author: windows-driver-content
 description: Creating a Per-Stream Context
 ms.assetid: e33dba3b-50f7-43d8-b7e8-b7c2c9034d51
-keywords: ["filter drivers WDK file system , per-stream context tracking", "file system filter drivers WDK , per-stream context tracking", "per-stream context tracking WDK file system", "tracking per-stream context WDK file system", "allocating per-stream context", "initializing per-stream context"]
+keywords:
+- filter drivers WDK file system , per-stream context tracking
+- file system filter drivers WDK , per-stream context tracking
+- per-stream context tracking WDK file system
+- tracking per-stream context WDK file system
+- allocating per-stream context
+- initializing per-stream context
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Per-Stream Context

@@ -3,7 +3,18 @@ title: Accessing the User Buffers for an I/O Operation
 author: windows-driver-content
 description: Accessing the User Buffers for an I/O Operation
 ms.assetid: 0f4334bf-eec9-4667-af02-537e3357d872
-keywords: ["buffers WDK file system minifilter", "FLT_PARAMETERS", "memory descriptor lists WDK file system minifilter", "MDLs WDK file systems", "I/O WDK file systems", "IRP-based I/O operations WDK file system minifilter"]
+keywords:
+- buffers WDK file system minifilter
+- FLT_PARAMETERS
+- memory descriptor lists WDK file system minifilter
+- MDLs WDK file systems
+- I/O WDK file systems
+- IRP-based I/O operations WDK file system minifilter
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing the User Buffers for an I/O Operation

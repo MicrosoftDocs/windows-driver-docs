@@ -3,7 +3,15 @@ title: COM Interfaces for UI Plug-Ins
 author: windows-driver-content
 description: COM Interfaces for UI Plug-Ins
 ms.assetid: 9cc6502b-a003-4d0b-857e-4653cf6fa0ea
-keywords: ["user interface plug-ins WDK print , COM interfaces", "UI plug-ins WDK print , COM interfaces", "COM interfaces WDK print , user interface plug-ins"]
+keywords:
+- user interface plug-ins WDK print , COM interfaces
+- UI plug-ins WDK print , COM interfaces
+- COM interfaces WDK print , user interface plug-ins
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COM Interfaces for UI Plug-Ins

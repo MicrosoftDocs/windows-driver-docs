@@ -2,7 +2,18 @@
 title: NDIS Port States
 description: NDIS Port States
 ms.assetid: bb13edd2-815b-488a-b36c-21a48809a143
-keywords: ["ports WDK NDIS , states", "NDIS ports WDK , states", "states WDK NDIS ports", "authentication states WDK NDIS ports", "link states WDK NDIS ports", "initialization states WDK NDIS ports"]
+keywords:
+- ports WDK NDIS , states
+- NDIS ports WDK , states
+- states WDK NDIS ports
+- authentication states WDK NDIS ports
+- link states WDK NDIS ports
+- initialization states WDK NDIS ports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Port States

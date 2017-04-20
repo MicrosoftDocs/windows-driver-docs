@@ -2,7 +2,17 @@
 title: Translating to a SAN Native Address
 description: Translating to a SAN Native Address
 ms.assetid: 959c66f2-4801-47d5-9e80-f18f17057e23
-keywords: ["proxy drivers WDK SANs , native address translations", "SAN proxy drivers WDK , native address translations", "native address translations WDK SANs", "translating native addresss WDK SANs", "AF_INET addresses WDK SANs"]
+keywords:
+- proxy drivers WDK SANs , native address translations
+- SAN proxy drivers WDK , native address translations
+- native address translations WDK SANs
+- translating native addresss WDK SANs
+- AF_INET addresses WDK SANs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Translating to a SAN Native Address

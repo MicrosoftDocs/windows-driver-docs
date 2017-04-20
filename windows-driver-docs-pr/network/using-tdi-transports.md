@@ -2,7 +2,13 @@
 title: Using TDI Transports
 description: Using TDI Transports
 ms.assetid: 58fb5e62-e15d-4f15-8eb3-3e302ea08c4f
-keywords: ["TDI transports WDK Winsock Kernel"]
+keywords:
+- TDI transports WDK Winsock Kernel
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using TDI Transports

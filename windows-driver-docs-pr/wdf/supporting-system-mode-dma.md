@@ -1,8 +1,13 @@
 ---
 title: Supporting System-Mode DMA
 author: windows-driver-content
-description: System-mode DMA, in contrast to bus-master DMA, describes a configuration in which multiple devices share a single, typically multichannel DMA controller.Starting in Kernel-Mode Driver Framework (KMDF) version 1.11, the framework supports system-mode DMA on System on a Chip (SoC)–based systems running on Windows 8 or later versions of the Windows operating system.This topic describes the code that a KMDF driver must provide in its event callback functions, as well as optional event callback functions it can register, to handle I/O requests for a system-mode DMA device.
+description: Describes the code that a KMDF driver provides in its event callback functions to handle I/O requests for a system-mode DMA device.
 ms.assetid: CCC77C15-69CA-44CB-8DEB-29F3EAEA44F6
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting System-Mode DMA

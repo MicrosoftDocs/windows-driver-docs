@@ -2,6 +2,11 @@
 Description: USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function. This topic describes how a client driver can determine whether the device contains an IAD for a function.
 title: USB Interface Association Descriptor
 author: windows-driver-content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Interface Association Descriptor
@@ -106,12 +111,12 @@ The following illustrates a descriptor layout for a composite USB device. The ex
 <a href="" id="function-1--video-class"></a>**Function 1: Video Class**  
 This function is defined by an interface association descriptor (IAD) and contains two interfaces: interface zero (0) and interface one (1).
 
-The system generates hardware and compatible identifiers (IDs) for the function, as described in [Enumeration of Interface Collections on USB Devices with IADs](enumeration-of-interface-collections-on-devices-that-have-iads.md). After matching the appropriate INF file, the system loads the Video Class driver stack.
+The system generates hardware and compatible identifiers (IDs) for the function, as described in [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md). After matching the appropriate INF file, the system loads the Video Class driver stack.
 
 <a href="" id="function-2--human-input-device"></a>**Function 2: Human Input Device**  
 This function contains only one interface: interface two (2).
 
-The system generates hardware and compatible IDs for the function, as described in [Enumeration of Interfaces on USB Composite Devices](enumeration-of-interfaces-not-grouped-in-collections.md). After matching the appropriate INF file, the system loads the Human Input Device (HID) class driver.
+The system generates hardware and compatible IDs for the function, as described in [Enumeration of Interface Collections on USB Composite Devices](support-for-interface-collections.md). After matching the appropriate INF file, the system loads the Human Input Device (HID) class driver.
 
 The descriptor is as follows:
 

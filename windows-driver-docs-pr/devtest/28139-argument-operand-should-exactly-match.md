@@ -2,7 +2,14 @@
 title: C28139
 description: Warning C28139 The argument should exactly match the type.
 ms.assetid: c20b39c2-eee7-4265-ac2f-39023da16549
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28139

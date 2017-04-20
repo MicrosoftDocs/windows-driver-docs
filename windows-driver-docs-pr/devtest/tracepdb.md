@@ -2,7 +2,17 @@
 title: Tracepdb
 description: Tracepdb
 ms.assetid: da7658a8-5fc3-409c-8a34-2aa134b9823b
-keywords: ["software tracing WDK , Tracepdb", "Tracepdb WDK", "TMF files WDK , Tracepdb", "tracing WDK , Tracepdb", "trace message format files WDK"]
+keywords:
+- software tracing WDK , Tracepdb
+- Tracepdb WDK
+- TMF files WDK , Tracepdb
+- tracing WDK , Tracepdb
+- trace message format files WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracepdb

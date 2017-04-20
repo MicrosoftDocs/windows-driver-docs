@@ -2,7 +2,32 @@
 title: Mapping Stream Formats to Speaker Configurations
 description: Mapping Stream Formats to Speaker Configurations
 ms.assetid: 6af4a3e3-e24b-449f-84ad-9e8bbc22fdde
-keywords: ["data formats WDK audio", "formats WDK audio , data", "audio data formats WDK", "formats WDK audio , multichannel", "multichannel formats WDK audio", "home-theater systems WDK audio", "speakers WDK audio , home-threater systems", "audio drivers WDK , home-theater systems", "WDM audio drivers WDK , home-theater systems", "7.1 home theater speakers WDK audio", "7.1 wide configuration speakers WDK audio", "wide configuration speakers WDK audio", "WAVEFORMATEXTENSIBLE", "recording formats WDK audio", "mapping formats", "system mixers WDK audio", "5.1 surround sound speakers WDK audio", "positions WDK audio", "WDM audio data formats WDK", "data formats WDK audio , mapping formats"]
+keywords:
+- data formats WDK audio
+- formats WDK audio , data
+- audio data formats WDK
+- formats WDK audio , multichannel
+- multichannel formats WDK audio
+- home-theater systems WDK audio
+- speakers WDK audio , home-threater systems
+- audio drivers WDK , home-theater systems
+- WDM audio drivers WDK , home-theater systems
+- 7.1 home theater speakers WDK audio
+- 7.1 wide configuration speakers WDK audio
+- wide configuration speakers WDK audio
+- WAVEFORMATEXTENSIBLE
+- recording formats WDK audio
+- mapping formats
+- system mixers WDK audio
+- 5.1 surround sound speakers WDK audio
+- positions WDK audio
+- WDM audio data formats WDK
+- data formats WDK audio , mapping formats
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping Stream Formats to Speaker Configurations

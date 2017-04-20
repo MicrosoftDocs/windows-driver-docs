@@ -3,7 +3,18 @@ title: Communication Between User Mode and Kernel Mode
 author: windows-driver-content
 description: Communication Between User Mode and Kernel Mode
 ms.assetid: ddfec0d0-ec7d-4f76-91b8-2cc34cfacf4e
-keywords: ["filter manager WDK file system minifilter , communication server ports", "communication server ports WDK file system minifilter", "filter manager WDK file system minifilter , user-mode/kernel-mode communication", "kernel-mode communication WDK file system minifilter", "user-mode communication WDK file system minifilter", "ports WDK , file system minifilter"]
+keywords:
+- filter manager WDK file system minifilter , communication server ports
+- communication server ports WDK file system minifilter
+- filter manager WDK file system minifilter , user-mode/kernel-mode communication
+- kernel-mode communication WDK file system minifilter
+- user-mode communication WDK file system minifilter
+- ports WDK , file system minifilter
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Communication Between User Mode and Kernel Mode

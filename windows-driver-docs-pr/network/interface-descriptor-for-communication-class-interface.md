@@ -2,6 +2,11 @@
 title: Interface Descriptor for Communication Class Interface
 description: Interface Descriptor for Communication Class Interface
 ms.assetid: e3873a58-34fc-4ca0-8c45-197401cbf08b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interface Descriptor for Communication Class Interface

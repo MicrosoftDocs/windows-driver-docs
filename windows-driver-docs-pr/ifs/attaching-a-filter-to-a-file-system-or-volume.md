@@ -3,7 +3,16 @@ title: Attaching a Filter to a File System or Volume
 author: windows-driver-content
 description: Attaching a Filter to a File System or Volume
 ms.assetid: 7c5059b3-cd9f-4a83-8f78-5a2fcc96b246
-keywords: ["filter drivers WDK file system , attaching filters", "file system filter drivers WDK , attaching filters", "attaching filters to file system or volume", "volumes WDK file system , attaching filters"]
+keywords:
+- filter drivers WDK file system , attaching filters
+- file system filter drivers WDK , attaching filters
+- attaching filters to file system or volume
+- volumes WDK file system , attaching filters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attaching a Filter to a File System or Volume

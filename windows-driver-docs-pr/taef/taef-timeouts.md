@@ -2,6 +2,11 @@
 title: TAEF Timeouts
 description: TAEF Timeouts
 ms.assetid: 43FE81A2-71DF-4e3a-998E-1B1F8C1398AC
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TAEF Timeouts

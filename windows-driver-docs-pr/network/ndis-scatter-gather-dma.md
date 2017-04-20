@@ -2,7 +2,18 @@
 title: NDIS Scatter/Gather DMA
 description: NDIS Scatter/Gather DMA
 ms.assetid: 70b8321b-7b21-4d11-a9c2-46b0caa26ce6
-keywords: ["miniport drivers WDK networking , scatter/gather DMA", "NDIS miniport drivers WDK , scatter/gather DMA", "scatter/gather DMA WDK networking", "SGDMA WDK networking", "NICs WDK networking , system memory transfers", "network interface cards WDK networking , s"]
+keywords:
+- miniport drivers WDK networking , scatter/gather DMA
+- NDIS miniport drivers WDK , scatter/gather DMA
+- scatter/gather DMA WDK networking
+- SGDMA WDK networking
+- NICs WDK networking , system memory transfers
+- network interface cards WDK networking , s
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Scatter/Gather DMA

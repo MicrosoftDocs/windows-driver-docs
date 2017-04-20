@@ -3,7 +3,16 @@ title: Operation Flow with Double Device Stack
 author: windows-driver-content
 description: Operation Flow with Double Device Stack
 ms.assetid: a717b9c0-b24a-4347-8b0a-254a17238b5f
-keywords: ["operation flow WDK UMDF", "I/O requests WDK UMDF , operation flow", "request processing WDK UMDF , operation flow", "double device stack flow WDK UMDF"]
+keywords:
+- operation flow WDK UMDF
+- I/O requests WDK UMDF , operation flow
+- request processing WDK UMDF , operation flow
+- double device stack flow WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Operation Flow with Double Device Stack

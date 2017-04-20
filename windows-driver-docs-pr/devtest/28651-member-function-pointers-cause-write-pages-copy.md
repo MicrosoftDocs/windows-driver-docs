@@ -2,6 +2,11 @@
 title: C28651
 description: Warning C28651 Static initializer causes copy on write pages due to member function pointers.
 ms.assetid: 2E7B61A7-FF15-46C3-87B4-36CAA2E52CAC
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28651

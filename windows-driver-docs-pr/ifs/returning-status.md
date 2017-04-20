@@ -3,7 +3,15 @@ title: Returning Status
 author: windows-driver-content
 description: Returning Status
 ms.assetid: fd490517-f4c5-4e20-9eac-6a9ac7d04992
-keywords: ["status values WDK file system", "success status values WDK file system", "returning status WDK file system"]
+keywords:
+- status values WDK file system
+- success status values WDK file system
+- returning status WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning Status

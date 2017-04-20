@@ -2,7 +2,15 @@
 title: Porting MCM OID Request Handling to CoNDIS 6.0
 description: Porting MCM OID Request Handling to CoNDIS 6.0
 ms.assetid: 2d2ff7c8-9ae0-4d99-b4aa-38ccec21f534
-keywords: ["miniport call managers WDK networking , OID requests", "MCMs WDK networking , OID requests", "porting OID requests WDK networking"]
+keywords:
+- miniport call managers WDK networking , OID requests
+- MCMs WDK networking , OID requests
+- porting OID requests WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting MCM OID Request Handling to CoNDIS 6.0

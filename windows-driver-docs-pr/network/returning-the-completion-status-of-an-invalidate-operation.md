@@ -2,7 +2,14 @@
 title: Returning the Completion Status of an Invalidate Operation
 description: Returning the Completion Status of an Invalidate Operation
 ms.assetid: f205ccd4-7b00-467e-950e-2601820d5275
-keywords: ["invalidating offloaded state WDK TCP chimney offload , completion status", "completion status of invalidation WDK TCP chimney offload"]
+keywords:
+- invalidating offloaded state WDK TCP chimney offload , completion status
+- completion status of invalidation WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning the Completion Status of an Invalidate Operation

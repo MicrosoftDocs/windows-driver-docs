@@ -2,7 +2,17 @@
 title: Supporting a Mixture of 2D and 3D Pins
 description: Supporting a Mixture of 2D and 3D Pins
 ms.assetid: 26d98eca-b70a-4244-a7c3-d3a19930a96a
-keywords: ["hardware acceleration WDK DirectSound , 2D and 3D pin mixture", "3D mixing WDK audio", "2D mixing WDK audio", "pins WDK audio , 2D", "pins WDK audio , 3D"]
+keywords:
+- hardware acceleration WDK DirectSound , 2D and 3D pin mixture
+- 3D mixing WDK audio
+- 2D mixing WDK audio
+- pins WDK audio , 2D
+- pins WDK audio , 3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting a Mixture of 2D and 3D Pins

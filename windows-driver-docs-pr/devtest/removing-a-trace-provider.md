@@ -2,7 +2,17 @@
 title: Removing a Trace Provider
 description: Removing a Trace Provider
 ms.assetid: 3ea38137-9196-46a6-8cb5-04722cd43086
-keywords: ["trace providers WDK", "providers WDK software tracing", "trace sessions WDK , providers", "removing trace providers", "disabling trace providers"]
+keywords:
+- trace providers WDK
+- providers WDK software tracing
+- trace sessions WDK , providers
+- removing trace providers
+- disabling trace providers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing a Trace Provider

@@ -2,13 +2,19 @@
 title: INF ClassInstall32 Section
 description: A ClassInstall32 section installs a new device setup class (and possibly a class installer) for devices in the new class.
 ms.assetid: c1da44ca-3b99-43de-99ef-56fbe67b46c2
-keywords: ["INF ClassInstall32 Section Device and Driver Installation"]
+keywords:
+- INF ClassInstall32 Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF ClassInstall32 Section
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF ClassInstall32 Section

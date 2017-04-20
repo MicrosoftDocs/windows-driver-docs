@@ -3,6 +3,11 @@ title: Achieving Compatibility with IStream Transfers
 author: windows-driver-content
 description: Achieving Compatibility with IStream Transfers
 ms.assetid: fdd0dce8-8f21-466b-bd2d-48da34914a23
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Achieving Compatibility with IStream Transfers

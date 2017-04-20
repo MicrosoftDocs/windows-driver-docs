@@ -2,6 +2,11 @@
 title: Handling the OID\_NIC\_SWITCH\_CREATE\_SWITCH Request
 description: Handling the OID\_NIC\_SWITCH\_CREATE\_SWITCH Request
 ms.assetid: 5C0BC300-8904-483A-A66B-8F5CFE0829B1
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the OID\_NIC\_SWITCH\_CREATE\_SWITCH Request

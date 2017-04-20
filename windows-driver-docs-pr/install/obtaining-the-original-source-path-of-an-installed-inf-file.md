@@ -2,7 +2,18 @@
 title: Obtaining the Original Source Path of an Installed INF File
 description: Obtaining the Original Source Path of an Installed INF File
 ms.assetid: 7e086248-b11d-43ee-9afa-fad6f2136dc8
-keywords: ["SetupAPI functions WDK , INF files", "paths WDK SetupAPI", "INF files WDK SetupAPI", "source paths WDK INF files", "original source paths WDK INF files", "retrieving INF file path information"]
+keywords:
+- SetupAPI functions WDK , INF files
+- paths WDK SetupAPI
+- INF files WDK SetupAPI
+- source paths WDK INF files
+- original source paths WDK INF files
+- retrieving INF file path information
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining the Original Source Path of an Installed INF File

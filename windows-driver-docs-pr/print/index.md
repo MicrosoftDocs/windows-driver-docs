@@ -3,7 +3,15 @@ title: Printer driver design guide
 author: windows-driver-content
 description: This section provides information on designing, testing, and debugging printer drivers.
 ms.assetid: ff6b9c2e-920a-4cfc-8872-38976ed872f9
-keywords: ["print devices WDK", "print WDK See printer driver", "print WDK See printing"]
+keywords:
+- print devices WDK
+- print WDK See printer driver
+- print WDK See printing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer driver design guide

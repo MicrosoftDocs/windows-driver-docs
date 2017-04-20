@@ -2,7 +2,18 @@
 title: Selecting Flags and Levels
 description: Selecting Flags and Levels
 ms.assetid: cde1ef3e-ab1b-4725-b18d-8f7704cc9f5a
-keywords: ["trace flags WDK", "flags WDK software tracing", "trace levels WDK", "levels WDK software tracing", "trace sessions WDK , flags", "trace sessions WDK , levels"]
+keywords:
+- trace flags WDK
+- flags WDK software tracing
+- trace levels WDK
+- levels WDK software tracing
+- trace sessions WDK , flags
+- trace sessions WDK , levels
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Selecting Flags and Levels

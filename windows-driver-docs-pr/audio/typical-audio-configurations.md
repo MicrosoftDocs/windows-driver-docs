@@ -2,7 +2,18 @@
 title: Typical Audio Configurations
 description: Typical Audio Configurations
 ms.assetid: 00e05a66-2830-4f68-baac-2244e1f66770
-keywords: ["WDM audio drivers WDK , typical configurations", "audio drivers WDK , typical configurations", "rendering audio content WDK audio", "capturing audio content WDK audio", "capture configurations WDK audio", "rendering configurations WDK audio"]
+keywords:
+- WDM audio drivers WDK , typical configurations
+- audio drivers WDK , typical configurations
+- rendering audio content WDK audio
+- capturing audio content WDK audio
+- capture configurations WDK audio
+- rendering configurations WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Typical Audio Configurations

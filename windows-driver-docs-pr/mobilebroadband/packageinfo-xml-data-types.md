@@ -2,6 +2,11 @@
 title: PackageInfo XML data types
 description: PackageInfo XML data types
 ms.assetid: 97e35e40-dba9-4cdf-9b75-59fb674b521e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PackageInfo XML data types

@@ -3,7 +3,15 @@ title: Returning Printer-Specific Information
 author: windows-driver-content
 description: Returning Printer-Specific Information
 ms.assetid: 7a47b395-4b01-437f-bed7-967b31b5841e
-keywords: ["printer graphics DLL WDK , return printer-specific information", "graphics DLL WDK printer , return printer-specific information", "returning printer-specific information WDK printer graphics"]
+keywords:
+- printer graphics DLL WDK , return printer-specific information
+- graphics DLL WDK printer , return printer-specific information
+- returning printer-specific information WDK printer graphics
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning Printer-Specific Information

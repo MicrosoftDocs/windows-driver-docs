@@ -2,6 +2,11 @@
 title: Declaring Functions by Using Function Role Types for Storport Drivers
 description: To enable SDV to analyze a Storport driver, you must declare your functions by using the function role type declarations that are defined for Storport. The function role types are defined in Storport.h.
 ms.assetid: 40BD11CD-A559-4F90-BF39-4ED2FB800392
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Declaring Functions by Using Function Role Types for Storport Drivers

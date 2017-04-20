@@ -3,7 +3,16 @@ title: GDL HexSubStrings
 author: windows-driver-content
 description: GDL HexSubStrings
 ms.assetid: 7451fd1f-a765-486a-bd90-bc01eac2c388
-keywords: ["constructs WDK GDL , strings", "GDL WDK , strings", "strings WDK GDL , HexSubString", "HexSubString WDK GDL"]
+keywords:
+- constructs WDK GDL , strings
+- GDL WDK , strings
+- strings WDK GDL , HexSubString
+- HexSubString WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL HexSubStrings

@@ -3,7 +3,20 @@ title: Writing AVStream Minidrivers for Hardware
 author: windows-driver-content
 description: Writing AVStream Minidrivers for Hardware
 ms.assetid: d7dc42d7-efd0-41ff-abab-d97c508a41e6
-keywords: ["AVStream WDK , hardware", "hardware WDK AVStream", "AVStrMiniDeviceStart", "filter graphs WDK AVStream", "graphs WDK AVStream", "interference between graphs WDK AVStream", "encoding WDK AVStream", "decoding WDK AVStream"]
+keywords:
+- AVStream WDK , hardware
+- hardware WDK AVStream
+- AVStrMiniDeviceStart
+- filter graphs WDK AVStream
+- graphs WDK AVStream
+- interference between graphs WDK AVStream
+- encoding WDK AVStream
+- decoding WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing AVStream Minidrivers for Hardware

@@ -2,6 +2,11 @@
 title: TraceView Basics
 description: TraceView Basics
 ms.assetid: e6cb2028-dcb6-47dc-bd62-abcdd46ef7c6
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TraceView Basics

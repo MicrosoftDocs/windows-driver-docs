@@ -2,7 +2,15 @@
 title: Test-Signing a Catalog File
 description: Test-Signing a Catalog File
 ms.assetid: a6397f8f-e5f1-4ce2-af7b-a7846fa30bc8
-keywords: ["catalog files WDK driver signing , test signing", "test signing catalog files WDK", "test signing driver packages WDK , catalog files"]
+keywords:
+- catalog files WDK driver signing , test signing
+- test signing catalog files WDK
+- test signing driver packages WDK , catalog files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test-Signing a Catalog File

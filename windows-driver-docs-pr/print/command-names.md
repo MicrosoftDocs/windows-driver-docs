@@ -3,7 +3,14 @@ title: Command Names
 author: windows-driver-content
 description: Command Names
 ms.assetid: eb659fb2-e74c-42c1-bb80-6d2f03e32e6c
-keywords: ["printer commands WDK Unidrv , names", "names WDK printer commands"]
+keywords:
+- printer commands WDK Unidrv , names
+- names WDK printer commands
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command Names

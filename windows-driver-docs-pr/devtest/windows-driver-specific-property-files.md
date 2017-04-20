@@ -2,6 +2,11 @@
 title: Windows driver-specific property files
 description: The driver property sheets have default settings for all of the tools that MSBuild uses to build any driver project.
 ms.assetid: 696EE510-266B-457A-B74E-491D7804B833
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="devtest.windows_driver-specific_property_files"></span>Windows driver-specific property files

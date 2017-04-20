@@ -3,6 +3,11 @@ title: WIA Flatbed Scanners
 author: windows-driver-content
 description: WIA Flatbed Scanners
 ms.assetid: 8ff6342b-94b1-404e-9d04-b513511f65dc
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Flatbed Scanners

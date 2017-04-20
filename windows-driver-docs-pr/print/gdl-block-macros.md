@@ -3,7 +3,17 @@ title: GDL Block Macros
 author: windows-driver-content
 description: GDL Block Macros
 ms.assetid: c8b8e38d-237f-4c54-a394-148d211237ce
-keywords: ["GDL WDK , macros", "macros WDK GDL , block macros", "block macros WDK GDL", "BlockMacros directive WDK GDL", "macros WDK GDL , examples"]
+keywords:
+- GDL WDK , macros
+- macros WDK GDL , block macros
+- block macros WDK GDL
+- BlockMacros directive WDK GDL
+- macros WDK GDL , examples
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Block Macros

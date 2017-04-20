@@ -3,7 +3,17 @@ title: Kernel Network Redirector Driver Components
 author: windows-driver-content
 description: Kernel Network Redirector Driver Components
 ms.assetid: 0d699794-86a0-40bd-beff-b040a8d51b42
-keywords: ["network redirectors WDK , kernel", "redirector drivers WDK , kernel", "kernel network redirectors WDK , components", "remote file systems WDK", "file system drivers WDK , remote file systems"]
+keywords:
+- network redirectors WDK , kernel
+- redirector drivers WDK , kernel
+- kernel network redirectors WDK , components
+- remote file systems WDK
+- file system drivers WDK , remote file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel Network Redirector Driver Components

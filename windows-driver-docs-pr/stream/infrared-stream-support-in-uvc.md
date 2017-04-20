@@ -2,6 +2,11 @@
 title: Infrared stream support in UVC
 author: windows-driver-content
 description: Provides information on infrared stream support in UVC
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Infrared stream support in UVC

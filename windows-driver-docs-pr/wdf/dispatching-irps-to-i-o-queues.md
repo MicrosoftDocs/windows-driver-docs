@@ -3,6 +3,11 @@ title: Dispatching IRPs to I/O Queues
 author: windows-driver-content
 description: Dispatching IRPs to I/O Queues
 ms.assetid: 71872114-2A38-47FE-9D18-EF8923273811
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dispatching IRPs to I/O Queues

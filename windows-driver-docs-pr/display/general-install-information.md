@@ -2,7 +2,16 @@
 title: General Install Information
 description: General Install Information
 ms.assetid: e177ae15-4ef8-4d0f-804b-67cf232c6e7e
-keywords: ["INF files WDK display , about driver installations", "out-of-box display drivers WDK Windows Vista", "production display drivers WDK Windows Vista", "retail display drivers WDK Windows Vista"]
+keywords:
+- INF files WDK display , about driver installations
+- out-of-box display drivers WDK Windows Vista
+- production display drivers WDK Windows Vista
+- retail display drivers WDK Windows Vista
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Install Information

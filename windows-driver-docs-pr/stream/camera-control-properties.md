@@ -3,7 +3,15 @@ title: Camera Control Properties
 author: windows-driver-content
 description: Camera Control Properties
 ms.assetid: 36a57245-e89e-4418-b0c4-a4c1479413b2
-keywords: ["camera control properties WDK video capture", "control properties WDK video capture", "PROPSETID_VIDCAP_CAMERACONTROL"]
+keywords:
+- camera control properties WDK video capture
+- control properties WDK video capture
+- PROPSETID_VIDCAP_CAMERACONTROL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Camera Control Properties

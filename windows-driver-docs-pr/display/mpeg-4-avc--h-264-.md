@@ -2,7 +2,16 @@
 title: MPEG-4 AVC (H.264)
 description: MPEG-4 AVC (H.264)
 ms.assetid: 15bf39bd-8554-4ef5-8208-9c12c558ec9b
-keywords: ["MPEG-4 AVC (H.264) WDK DirectX VA", "Advanced Video Coding (AVC) WDK DirectX VA", "ITU-T H.264 video compression WDK DirectX VA", "H.264 video compression WDK DirectX VA"]
+keywords:
+- MPEG-4 AVC (H.264) WDK DirectX VA
+- Advanced Video Coding (AVC) WDK DirectX VA
+- ITU-T H.264 video compression WDK DirectX VA
+- H.264 video compression WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MPEG-4 AVC (H.264)

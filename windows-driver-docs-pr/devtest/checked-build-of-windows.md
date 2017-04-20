@@ -2,7 +2,16 @@
 title: Checked Build of Windows
 description: Checked Build of Windows
 ms.assetid: c0e5ccc4-78fc-4c48-a6d7-2f9825aa7de2
-keywords: ["verifying drivers WDK , checked builds", "driver verification WDK , checked builds", "checked builds WDK", "debug builds WDK"]
+keywords:
+- verifying drivers WDK , checked builds
+- driver verification WDK , checked builds
+- checked builds WDK
+- debug builds WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Checked Build of Windows

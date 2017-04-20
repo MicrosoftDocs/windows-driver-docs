@@ -1,8 +1,17 @@
 ---
-title: Summary of Changes Required to Port an Intermediate Driver to NDIS 6.20
+title: Summary of changes to port an intermediate driver to NDIS 6.20
 description: Summary of Changes Required to Port an Intermediate Driver to NDIS 6.20
 ms.assetid: 1ed2b2f6-f337-4aaa-9ce8-90adf7d05722
-keywords: ["NDIS 6.20 WDK , porting intermediate drivers", "porting intermediate drivers to NDIS 6.20 WDK", "intermediate drivers WDK", "intermediate drivers WDK , porting to NDIS 6.20"]
+keywords:
+- NDIS 6.20 WDK , porting intermediate drivers
+- porting intermediate drivers to NDIS 6.20 WDK
+- intermediate drivers WDK
+- intermediate drivers WDK , porting to NDIS 6.20
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Summary of Changes Required to Port an Intermediate Driver to NDIS 6.20

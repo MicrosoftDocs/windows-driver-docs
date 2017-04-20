@@ -2,7 +2,14 @@
 title: Setting the NetDMA Interrupt CPU Affinities
 description: Setting the NetDMA Interrupt CPU Affinities
 ms.assetid: 61804166-1888-4cdb-bf6f-c9d84e302698
-keywords: ["interrupts WDK NetDMA , CPU affinities", "CPU affinities WDK NetDMA"]
+keywords:
+- interrupts WDK NetDMA , CPU affinities
+- CPU affinities WDK NetDMA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the NetDMA Interrupt CPU Affinities

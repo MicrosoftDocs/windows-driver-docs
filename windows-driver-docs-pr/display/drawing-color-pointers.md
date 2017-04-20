@@ -2,7 +2,16 @@
 title: Drawing Color Pointers
 description: Drawing Color Pointers
 ms.assetid: f2791ccc-3d9e-46f0-bc70-051ac298c1ee
-keywords: ["drawing pointers WDK Windows 2000 display", "display drivers WDK Windows 2000 , pointers", "pointers WDK Windows 2000 display", "color pointers WDK Windows 2000 display"]
+keywords:
+- drawing pointers WDK Windows 2000 display
+- display drivers WDK Windows 2000 , pointers
+- pointers WDK Windows 2000 display
+- color pointers WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Drawing Color Pointers

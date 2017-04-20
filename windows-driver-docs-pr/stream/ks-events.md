@@ -3,7 +3,16 @@ title: KS Events
 author: windows-driver-content
 description: KS Events
 ms.assetid: 3eaa1d65-8417-4a07-b358-823394baec9b
-keywords: ["kernel streaming WDK , events", "KS WDK , events", "events WDK kernel streaming", "event sets WDK kernel streaming"]
+keywords:
+- kernel streaming WDK , events
+- KS WDK , events
+- events WDK kernel streaming
+- event sets WDK kernel streaming
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Events

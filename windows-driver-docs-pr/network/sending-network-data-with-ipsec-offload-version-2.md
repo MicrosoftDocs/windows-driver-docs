@@ -2,7 +2,14 @@
 title: Sending Network Data with IPsec Offload Version 2
 description: Sending Network Data with IPsec Offload Version 2
 ms.assetid: d3580313-a98b-4150-b344-e3e395ce68e9
-keywords: ["IPsecOV2 WDK TCP/IP transport , sending data", "sending data WDK networking"]
+keywords:
+- IPsecOV2 WDK TCP/IP transport , sending data
+- sending data WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending Network Data with IPsec Offload Version 2

@@ -2,7 +2,17 @@
 title: Initializing Use of Memory Segments
 description: Initializing Use of Memory Segments
 ms.assetid: 8e4cf1dc-c428-4564-9a16-925e17e6d488
-keywords: ["memory segments WDK display , initializing", "GPU address space WDK display", "paging buffers WDK display", "segments WDK display", "address space WDK display"]
+keywords:
+- memory segments WDK display , initializing
+- GPU address space WDK display
+- paging buffers WDK display
+- segments WDK display
+- address space WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing Use of Memory Segments

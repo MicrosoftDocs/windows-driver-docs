@@ -2,6 +2,11 @@
 title: Exploring the Windows Vista Audio Engine
 description: Exploring the Windows Vista Audio Engine
 ms.assetid: 6301f6d7-57f5-4b9f-9567-57efb9dc58f3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Exploring the Windows Vista Audio Engine

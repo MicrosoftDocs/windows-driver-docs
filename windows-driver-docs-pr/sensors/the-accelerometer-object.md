@@ -3,6 +3,11 @@ title: Accelerometer object
 author: windows-driver-content
 description: Accelerometer object
 ms.assetid: D8E227E1-FFB5-4F4B-A981-6BD05C8FFAF2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accelerometer object

@@ -3,7 +3,17 @@ title: DVD Decoder Related Clock Events
 author: windows-driver-content
 description: DVD Decoder Related Clock Events
 ms.assetid: c3ed0ee4-95a3-4596-9f29-86397b0d8753
-keywords: ["DVD decoder minidrivers WDK , master clock", "decoder minidrivers WDK DVD , master clock", "master clocks WDK DVD decoder", "clocks WDK DVD decoder", "events WDK DVD decoder"]
+keywords:
+- DVD decoder minidrivers WDK , master clock
+- decoder minidrivers WDK DVD , master clock
+- master clocks WDK DVD decoder
+- clocks WDK DVD decoder
+- events WDK DVD decoder
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DVD Decoder Related Clock Events

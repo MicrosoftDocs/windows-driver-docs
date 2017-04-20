@@ -1,9 +1,21 @@
 ---
-title: \ PreCompiled Preprocessor Directive
+title: '\ PreCompiled Preprocessor Directive'
 author: windows-driver-content
-description: \ PreCompiled Preprocessor Directive
+description: '\ PreCompiled Preprocessor Directive'
 ms.assetid: 639db56d-7677-4d21-8329-a0f35d68151e
-keywords: ["preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK", "PreCompiled directive WDK GDL", "GDL WDK , source files", "source files WDK GDL", "precompiled source files WDK GDL"]
+keywords:
+- preprocessor directives WDK GDL , keywords
+- keywords WDK GDL
+- reserved keywords WDK
+- PreCompiled directive WDK GDL
+- GDL WDK , source files
+- source files WDK GDL
+- precompiled source files WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \#PreCompiled Preprocessor Directive

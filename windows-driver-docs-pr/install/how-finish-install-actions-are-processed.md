@@ -2,7 +2,18 @@
 title: How Finish-Install Actions are Processed
 description: How Finish-Install Actions are Processed
 ms.assetid: 028cce46-018d-496e-bc99-c8bf6158c898
-keywords: ["finish-install actions WDK device installations", "default finish-install actions", "server-side installations WDK", "CONFIG_FINISHINSTALL", "actions WDK finish-install", "DI_FLAGSEX_FINISHINSTALL_ACTION"]
+keywords:
+- finish-install actions WDK device installations
+- default finish-install actions
+- server-side installations WDK
+- CONFIG_FINISHINSTALL
+- actions WDK finish-install
+- DI_FLAGSEX_FINISHINSTALL_ACTION
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How Finish-Install Actions are Processed

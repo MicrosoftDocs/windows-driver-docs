@@ -3,7 +3,13 @@ title: Returning FLT\_PREOP\_SUCCESS\_WITH\_CALLBACK
 author: windows-driver-content
 description: Returning FLT\_PREOP\_SUCCESS\_WITH\_CALLBACK
 ms.assetid: 6247b952-3189-4792-a15b-c3a4b3dc80ae
-keywords: ["FLT_PREOP_SUCCESS_WITH_CALLBACK"]
+keywords:
+- FLT_PREOP_SUCCESS_WITH_CALLBACK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning FLT\_PREOP\_SUCCESS\_WITH\_CALLBACK

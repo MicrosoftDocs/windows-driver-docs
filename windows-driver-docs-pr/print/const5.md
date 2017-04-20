@@ -1,9 +1,15 @@
 ---
-title: Const
+title: Const (WSD)
 author: windows-driver-content
-description: Const
+description: The Web Services for Devices (WSD) Const construct defines the data type and value that must be returned.
 ms.assetid: e9bcf007-0117-48a9-9873-a9bbc5702e29
-keywords: ["Const construct"]
+keywords:
+- Const construct
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Const

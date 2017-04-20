@@ -2,7 +2,16 @@
 title: Creating a Netupg.inf File
 description: Creating a Netupg.inf File
 ms.assetid: 8ee000e0-abd1-4a06-9f38-2a7971bc2c97
-keywords: ["netupg.inf files WDK", "network component upgrades WDK , customizing", "upgrading network components WDK , customizing", "customizing network upgrade process WDK networking"]
+keywords:
+- netupg.inf files WDK
+- network component upgrades WDK , customizing
+- upgrading network components WDK , customizing
+- customizing network upgrade process WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Netupg.inf File

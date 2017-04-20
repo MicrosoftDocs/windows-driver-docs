@@ -2,6 +2,11 @@
 title: Partner app development
 description: Partner app development
 ms.assetid: 0F90F6D9-4524-4193-9470-0CA106DFE80F
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Partner app development

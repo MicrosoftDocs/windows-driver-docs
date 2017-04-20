@@ -2,6 +2,11 @@
 title: Executing Data-driven tests
 description: Executing Data-driven tests
 ms.assetid: E8E7A66A-6E39-442d-A195-AE4633B817FE
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="taef.executing_data-driven_tests"></span>Executing Data-driven tests

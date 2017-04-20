@@ -1,8 +1,13 @@
 ---
 title: Supporting Passive-Level Interrupts
 author: windows-driver-content
-description: Starting with framework version 1.11, Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers running on Windows 8 or later versions of the operating system can create interrupt objects that require passive-level handling.
+description: Starting with framework version 1.11, WDF drivers can create interrupt objects that require passive-level handling.
 ms.assetid: E464F885-928C-40BC-A09F-7A7921F8FF37
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Passive-Level Interrupts

@@ -2,7 +2,15 @@
 title: D3dCreateSurfaceEx and MIP Maps
 description: D3dCreateSurfaceEx and MIP Maps
 ms.assetid: d0f4ee41-7622-4153-877c-17c88f8147a9
-keywords: ["MIP map surfaces WDK Direct3D", "context WDK Direct3D , D3dCreateSurfaceEx", "D3dCreateSurfaceEx"]
+keywords:
+- MIP map surfaces WDK Direct3D
+- context WDK Direct3D , D3dCreateSurfaceEx
+- D3dCreateSurfaceEx
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # D3dCreateSurfaceEx and MIP Maps

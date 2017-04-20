@@ -3,7 +3,15 @@ title: Sample BDA Drivers
 author: windows-driver-content
 description: Sample BDA Drivers
 ms.assetid: d5d9778c-1591-444f-89e8-95aa0eab61aa
-keywords: ["sample drivers WDK BDA", "Broadcast Driver Architecture WDK AVStream , sample drivers", "BDA WDK AVStream , sample drivers"]
+keywords:
+- sample drivers WDK BDA
+- Broadcast Driver Architecture WDK AVStream , sample drivers
+- BDA WDK AVStream , sample drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample BDA Drivers

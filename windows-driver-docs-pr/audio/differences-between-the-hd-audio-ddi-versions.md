@@ -2,7 +2,16 @@
 title: Differences Between the HD Audio DDI Versions
 description: Differences Between the HD Audio DDI Versions
 ms.assetid: e24071d3-9021-40c0-907a-91ada8a1306b
-keywords: ["HD Audio, DDI version differences", "High Definition Audio (HD Audio), DDI version differences", "HDAUDIO_BUS_INTERFACE structure", "HDAUDIO_BUS_INTERFACE_BDL structure"]
+keywords:
+- HD Audio, DDI version differences
+- High Definition Audio (HD Audio), DDI version differences
+- HDAUDIO_BUS_INTERFACE structure
+- HDAUDIO_BUS_INTERFACE_BDL structure
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Differences Between the HD Audio DDI Versions

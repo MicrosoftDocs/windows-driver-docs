@@ -3,7 +3,14 @@ title: Allocator Properties
 author: windows-driver-content
 description: Allocator Properties
 ms.assetid: 851bc3d8-46f6-46d0-87a8-81de2536492a
-keywords: ["allocator properties WDK video capture", "PROPSETID_ALLOCATOR_CONTROL"]
+keywords:
+- allocator properties WDK video capture
+- PROPSETID_ALLOCATOR_CONTROL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocator Properties

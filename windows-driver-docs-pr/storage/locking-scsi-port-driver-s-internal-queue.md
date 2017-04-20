@@ -3,6 +3,11 @@ title: Locking SCSI Port Driver's Internal Queue
 author: windows-driver-content
 description: Locking SCSI Port Driver's Internal Queue
 ms.assetid: ea5be4e1-4908-431c-9c80-96539157b87e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Locking SCSI Port Driver's Internal Queue

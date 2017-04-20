@@ -2,6 +2,11 @@
 title: Release-Signing a Driver Package's Catalog File
 description: Release-Signing a Driver Package's Catalog File
 ms.assetid: 8bfedf24-403a-406e-993d-5ab8cc790f60
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Release-Signing a Driver Package's Catalog File

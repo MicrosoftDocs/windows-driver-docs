@@ -3,7 +3,16 @@ title: Enumerating Child Devices and Control Methods
 author: windows-driver-content
 description: Enumerating Child Devices and Control Methods
 ms.assetid: fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67
-keywords: ["ACPI devices WDK , enumerating child devices", "ACPI devices WDK , enumerating control methods", "ACPI namespaces WDK", "ACPI control methods WDK , enumerating"]
+keywords:
+- ACPI devices WDK , enumerating child devices
+- ACPI devices WDK , enumerating control methods
+- ACPI namespaces WDK
+- ACPI control methods WDK , enumerating
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Child Devices and Control Methods

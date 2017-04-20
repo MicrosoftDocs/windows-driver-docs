@@ -2,13 +2,19 @@
 title: CertMgr
 description: CertMgr (Certmgr.exe) is a command-line CryptoAPI tool that manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
 ms.assetid: 860693f5-de64-4ca9-be64-23e2fbb862c5
-keywords: ["CertMgr Driver Development Tools"]
+keywords:
+- CertMgr Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - CertMgr
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CertMgr

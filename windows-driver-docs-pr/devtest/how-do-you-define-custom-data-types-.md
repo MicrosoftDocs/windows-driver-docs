@@ -2,6 +2,11 @@
 title: How do you define custom data types
 description: How do you define custom data types
 ms.assetid: 849f83ae-5fe7-447b-9d02-3d980757bf7d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How do you define custom data types?

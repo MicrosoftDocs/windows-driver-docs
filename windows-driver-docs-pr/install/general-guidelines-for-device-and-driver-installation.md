@@ -2,7 +2,14 @@
 title: General Guidelines for Device and Driver Installation
 description: General Guidelines for Device and Driver Installation
 ms.assetid: E62906AB-CE32-4b07-B7DB-F523FFE4E6C2
-keywords: ["device installations WDK , general guidelines", "driver installations WDK , general guidelines"]
+keywords:
+- device installations WDK , general guidelines
+- driver installations WDK , general guidelines
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Guidelines for Device and Driver Installation

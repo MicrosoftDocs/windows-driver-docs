@@ -2,6 +2,11 @@
 title: WaveRT Port Driver
 description: WaveRT Port Driver
 ms.assetid: d25e37e2-2e29-4bf9-8150-221ebef88c87
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WaveRT Port Driver

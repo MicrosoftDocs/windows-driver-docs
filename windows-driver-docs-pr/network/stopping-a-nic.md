@@ -2,7 +2,16 @@
 title: Stopping a NIC
 description: Stopping a NIC
 ms.assetid: 033b45bd-fbe9-4a40-84e6-b9447370b17f
-keywords: ["NICs WDK networking , stopping", "network interface cards WDK networking , stopping", "Plug and Play WDK NDIS miniport , stopping NIC", "stopping NICs WDK networking"]
+keywords:
+- NICs WDK networking , stopping
+- network interface cards WDK networking , stopping
+- Plug and Play WDK NDIS miniport , stopping NIC
+- stopping NICs WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stopping a NIC

@@ -2,6 +2,11 @@
 title: Activation Context
 description: Activation Context
 ms.assetid: 76584379-2AEF-47e0-B14E-C7698903658F
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Activation Context

@@ -3,7 +3,14 @@ title: Obtaining Information About a General I/O Target in UMDF
 author: windows-driver-content
 description: Obtaining Information About a General I/O Target in UMDF
 ms.assetid: 306a7f46-423a-4647-846d-76f917ca0f7c
-keywords: ["general I/O targets WDK UMDF , information about", "status information WDK I/O targets"]
+keywords:
+- general I/O targets WDK UMDF , information about
+- status information WDK I/O targets
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining Information About a General I/O Target in UMDF

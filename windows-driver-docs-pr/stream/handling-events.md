@@ -3,7 +3,17 @@ title: Handling Events
 author: windows-driver-content
 description: Handling Events
 ms.assetid: 2cd7ccf3-12f5-4ad0-a7c9-a0f437b72445
-keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , events", "streaming minidrivers WDK Windows 2000 Kernel , events", "minidrivers WDK Windows 2000 Kernel Streaming , events", "events WDK streaming minidriver", "event sets WDK streaming minidriver"]
+keywords:
+- Stream.sys class driver WDK Windows 2000 Kernel , events
+- streaming minidrivers WDK Windows 2000 Kernel , events
+- minidrivers WDK Windows 2000 Kernel Streaming , events
+- events WDK streaming minidriver
+- event sets WDK streaming minidriver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Events

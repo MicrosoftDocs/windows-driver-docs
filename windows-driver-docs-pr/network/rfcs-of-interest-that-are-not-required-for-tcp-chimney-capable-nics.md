@@ -1,8 +1,17 @@
 ---
-title: RFCs of Interest That Are Not Required for TCP Chimney-Capable NICs
+title: RFCs that are not required for TCP Chimney-capable NICs
 description: RFCs of Interest That Are Not Required for TCP Chimney-Capable NICs
 ms.assetid: efb53f70-a716-4cae-9e04-afb04cbefdea
-keywords: ["RFC compliance WDK TCP chimney offload", "IETF RFC compliance WDK TCP chimney offload", "task-offload engine NIC WDK TCP chimney offload", "TOE NIC WDK TCP chimney offload"]
+keywords:
+- RFC compliance WDK TCP chimney offload
+- IETF RFC compliance WDK TCP chimney offload
+- task-offload engine NIC WDK TCP chimney offload
+- TOE NIC WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RFCs of Interest That Are Not Required for TCP Chimney-Capable NICs

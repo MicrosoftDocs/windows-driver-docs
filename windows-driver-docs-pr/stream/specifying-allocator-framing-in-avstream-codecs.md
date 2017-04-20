@@ -3,7 +3,13 @@ title: Specifying Allocator Framing in AVStream Codecs
 author: windows-driver-content
 description: Specifying Allocator Framing in AVStream Codecs
 ms.assetid: e5b042ae-9b9c-48e9-9f0c-449e205316a9
-keywords: ["AVStream hardware codec support WDK , specifying allocator framing"]
+keywords:
+- AVStream hardware codec support WDK , specifying allocator framing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Allocator Framing in AVStream Codecs

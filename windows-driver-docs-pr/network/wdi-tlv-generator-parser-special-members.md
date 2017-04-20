@@ -1,7 +1,12 @@
 ---
 title: WDI TLV generator/parser special members
-description: .
+description: This section describes special members for the WDI TLV generator/parser
 ms.assetid: 2FD485E5-E2F9-4B21-A777-ABA9693B1223
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI TLV generator/parser special members

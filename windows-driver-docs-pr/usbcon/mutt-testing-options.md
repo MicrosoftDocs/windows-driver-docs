@@ -2,6 +2,11 @@
 Description: Before using MUTT devices, you must prepare the test system.
 title: How to prepare the test system to run MUTT test tools
 author: windows-driver-content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to prepare the test system to run MUTT test tools

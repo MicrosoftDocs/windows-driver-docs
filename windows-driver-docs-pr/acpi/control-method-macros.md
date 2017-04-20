@@ -3,7 +3,13 @@ title: Control Method Macros
 author: windows-driver-content
 description: Control Method Macros
 ms.assetid: cffcfb7a-c949-4bc9-a92f-349f5637ab84
-keywords: ["ACPI control methods WDK , macros"]
+keywords:
+- ACPI control methods WDK , macros
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Control Method Macros

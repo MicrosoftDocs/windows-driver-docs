@@ -2,7 +2,14 @@
 title: C28143
 description: Warning C28143 A dispatch routine that calls IoMarkIrpPending must also return STATUS\_PENDING.
 ms.assetid: 3b9e6c4f-73d1-4abc-9495-85bb56e2532b
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28143

@@ -2,7 +2,15 @@
 title: Reporting Capabilities for Shader 2 Support
 description: Reporting Capabilities for Shader 2 Support
 ms.assetid: 27397e32-cdc0-47b5-b9b5-a4b22ed971f3
-keywords: ["shaders WDK DirectX 9.0 , shader 2.0 support", "vertex shaders WDK DirectX 9.0 , shader 2.0 support", "pixel shaders WDK DirectX 9.0 , shader 2.0 support"]
+keywords:
+- shaders WDK DirectX 9.0 , shader 2.0 support
+- vertex shaders WDK DirectX 9.0 , shader 2.0 support
+- pixel shaders WDK DirectX 9.0 , shader 2.0 support
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Capabilities for Shader 2 Support

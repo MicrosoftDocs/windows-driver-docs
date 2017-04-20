@@ -3,7 +3,17 @@ title: NFP protocol support
 author: windows-driver-content
 description: NFP protocol support
 ms.assetid: B9F27F28-1D67-4692-9EA1-FC671B5C2098
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NFP protocol support

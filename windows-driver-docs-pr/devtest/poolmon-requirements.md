@@ -2,7 +2,17 @@
 title: PoolMon Requirements
 description: PoolMon Requirements
 ms.assetid: 5ee1ed1c-5392-4ce4-8edb-e600b93f82d7
-keywords: ["PoolMon WDK , requirements", "Memory Pool Monitor WDK , requirements", "PoolMon WDK , displays", "Memory Pool Monitor WDK , displays", "files WDK PoolMon"]
+keywords:
+- PoolMon WDK , requirements
+- Memory Pool Monitor WDK , requirements
+- PoolMon WDK , displays
+- Memory Pool Monitor WDK , displays
+- files WDK PoolMon
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PoolMon Requirements

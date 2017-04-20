@@ -1,14 +1,19 @@
 ---
 title: Camera driver samples
 author: windows-driver-content
-description: The driver sample in this directory provides a starting point for writing a custom driver for your device.
+description: The driver sample in this directory provides a starting point for writing a custom camera driver for your device.
 ms.assetid: 73837E29-7E4C-4FDB-9994-413F5B449F43
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Camera driver samples
 
 
-The driver sample in this directory provides a starting point for writing a custom driver for your device.
+The driver sample in this directory provides a starting point for writing a custom camera driver for your device.
 
 ## Camera
 

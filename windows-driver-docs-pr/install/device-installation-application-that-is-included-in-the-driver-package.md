@@ -1,7 +1,12 @@
 ---
-title: Device Installation Application that is Included in the Driver Package
+title: Device Installation Application Included in Driver Package
 description: Device Installation Application that is Included in the Driver Package
 ms.assetid: bd6e182c-6b7a-4cde-bcc7-637ae6bf39be
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Installation Application that is Included in the Driver Package

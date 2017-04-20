@@ -1,6 +1,11 @@
 ---
 Description: Opening a Resource and Retrieving an IStream object
 title: Opening a Resource and Retrieving an IStream object
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening a Resource and Retrieving an IStream object

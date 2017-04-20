@@ -2,7 +2,18 @@
 title: WHQL Test Signature Program
 description: WHQL Test Signature Program
 ms.assetid: 241a8cfe-c7c4-4c88-9d61-831f18f4eb21
-keywords: ["driver signing WDK , WHQL digital signatures", "signing drivers WDK , WHQL digital signatures", "digital signatures WDK , WHQL", "signatures WDK , WHQL", "test signing drivers WDK , WHQL digital signatures", "WHQL digital signatures WDK"]
+keywords:
+- driver signing WDK , WHQL digital signatures
+- signing drivers WDK , WHQL digital signatures
+- digital signatures WDK , WHQL
+- signatures WDK , WHQL
+- test signing drivers WDK , WHQL digital signatures
+- WHQL digital signatures WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WHQL Test Signature Program

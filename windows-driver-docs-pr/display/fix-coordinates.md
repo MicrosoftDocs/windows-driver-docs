@@ -2,7 +2,17 @@
 title: FIX Coordinates
 description: FIX Coordinates
 ms.assetid: dfa5c61f-9464-4c63-998e-7fee21cfd278
-keywords: ["surface negotiation WDK GDI , FIX coordinates", "fractional coordinates WDK GDI", "FIX coordinates WDK GDI", "Bezier curves WDK GDI", "lines WDK GDI"]
+keywords:
+- surface negotiation WDK GDI , FIX coordinates
+- fractional coordinates WDK GDI
+- FIX coordinates WDK GDI
+- Bezier curves WDK GDI
+- lines WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # FIX Coordinates

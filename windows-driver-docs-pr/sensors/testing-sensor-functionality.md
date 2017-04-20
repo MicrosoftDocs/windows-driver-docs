@@ -3,7 +3,22 @@ title: Testing Sensor Functionality
 author: windows-driver-content
 description: You can use the Sensor Diagnostic Tool to test your sensor's functionality.
 ms.assetid: 1AA232D9-D535-4168-926B-4667289EB7DB
-keywords: ["testing sensors", "sensors, testing", "testing sensor functionality", "current report interval", "change sensitivity", "sensor events", "events, sensors", "testing sensor events", "testing sensor data retrieval", "testing sensor property support"]
+keywords:
+- testing sensors
+- sensors, testing
+- testing sensor functionality
+- current report interval
+- change sensitivity
+- sensor events
+- events, sensors
+- testing sensor events
+- testing sensor data retrieval
+- testing sensor property support
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing Sensor Functionality

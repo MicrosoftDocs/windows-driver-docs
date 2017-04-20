@@ -2,6 +2,11 @@
 title: Programming Guidelines
 description: Programming Guidelines
 ms.assetid: 289bdf85-9138-4920-a61f-050c51077d3e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Programming Guidelines

@@ -3,7 +3,16 @@ title: Storage Class Driver's InterpretRequestSense Routine
 author: windows-driver-content
 description: Storage Class Driver's InterpretRequestSense Routine
 ms.assetid: abfb529d-7fab-40f7-b4cd-e6adb4cf643e
-keywords: ["InterpretRequestSense", "request sense WDK storage", "errors WDK storage", "retrying requests WDK storage"]
+keywords:
+- InterpretRequestSense
+- request sense WDK storage
+- errors WDK storage
+- retrying requests WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Class Driver's InterpretRequestSense Routine

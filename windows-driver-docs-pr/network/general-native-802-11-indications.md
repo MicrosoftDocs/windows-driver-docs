@@ -2,7 +2,13 @@
 title: General Native 802.11 Indications
 description: General Native 802.11 Indications
 ms.assetid: d82ba0d3-d7c9-4f35-8d4b-4296257e19e7
-keywords: ["general status indications WDK Native 802.11"]
+keywords:
+- general status indications WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Native 802.11 Indications

@@ -3,7 +3,15 @@ title: GDI Printer Drivers
 author: windows-driver-content
 description: GDI Printer Drivers
 ms.assetid: c7ae6c0e-ae43-4b10-9a6f-f2daf578ecd2
-keywords: ["GDI printer drivers WDK", "printer drivers WDK , GDI", "GDI printer drivers WDK , about GDI printer drivers"]
+keywords:
+- GDI printer drivers WDK
+- printer drivers WDK , GDI
+- GDI printer drivers WDK , about GDI printer drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Printer Drivers

@@ -3,7 +3,15 @@ title: Obtaining Preparsed Data
 author: windows-driver-content
 description: Obtaining Preparsed Data
 ms.assetid: 7a2bdbd1-a970-421f-bbaa-40fe589bb49a
-keywords: ["collections WDK HID , preparsed data", "HID collections WDK , preparsed data", "preparsed data WDK HID"]
+keywords:
+- collections WDK HID , preparsed data
+- HID collections WDK , preparsed data
+- preparsed data WDK HID
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining Preparsed Data

@@ -2,7 +2,14 @@
 title: Initial View
 description: Initial View
 ms.assetid: e6873ddd-8554-4fd0-97d8-4eccac9bf7a2
-keywords: ["TraceView WDK , window", "trace sessions WDK , displaying"]
+keywords:
+- TraceView WDK , window
+- trace sessions WDK , displaying
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initial View

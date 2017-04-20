@@ -1,7 +1,12 @@
 ---
 title: WDI low latency connection quality
-description: .
+description: This section describes how to maintain quality with low latency connections in WDI
 ms.assetid: 194A26DA-A138-4967-9A09-5843A38007E9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI low latency connection quality

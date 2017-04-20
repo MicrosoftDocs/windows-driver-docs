@@ -1,8 +1,15 @@
 ---
-title: Handling Buffered Receive Data During a Terminate Offload Operation
+title: Handling buffered receive data during terminate offload operation
 description: Handling Buffered Receive Data During a Terminate Offload Operation
 ms.assetid: 14746a36-0126-4924-85ad-ecca01779937
-keywords: ["terminating offload state WDK TCP chimney offload , buffered receive data", "buffered receive data WDK TCP chimney offload"]
+keywords:
+- terminating offload state WDK TCP chimney offload , buffered receive data
+- buffered receive data WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Buffered Receive Data During a Terminate Offload Operation

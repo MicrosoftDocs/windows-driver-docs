@@ -2,6 +2,11 @@
 title: Calling SetupWriteTextLog
 description: Calling SetupWriteTextLog
 ms.assetid: a07118ae-bef6-4d01-94d9-98587cbff863
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling SetupWriteTextLog

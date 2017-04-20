@@ -3,7 +3,15 @@ title: Evaluating ACPI Control Methods Synchronously
 author: windows-driver-content
 description: Evaluating ACPI Control Methods Synchronously
 ms.assetid: 3fd8f7bd-bfae-4846-8051-3a0023d565e4
-keywords: ["ACPI control methods WDK , evaluating synchronously", "ACPI control methods WDK , input buffer structures", "ACPI control methods WDK , SendDownStreamIrp code sample"]
+keywords:
+- ACPI control methods WDK , evaluating synchronously
+- ACPI control methods WDK , input buffer structures
+- ACPI control methods WDK , SendDownStreamIrp code sample
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Evaluating ACPI Control Methods Synchronously

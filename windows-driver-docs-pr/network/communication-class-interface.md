@@ -2,7 +2,13 @@
 title: Communication Class Interface
 description: Communication Class Interface
 ms.assetid: b0414d0e-6e1b-4d84-8ca4-40a59fb1b099
-keywords: ["communication"]
+keywords:
+- communication
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Communication Class Interface

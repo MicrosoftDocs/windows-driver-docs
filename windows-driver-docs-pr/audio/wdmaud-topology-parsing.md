@@ -2,7 +2,19 @@
 title: WDMAud Topology Parsing
 description: WDMAud Topology Parsing
 ms.assetid: 8aa3e2e8-c9a2-4c3e-94b1-44a0dc218bf3
-keywords: ["WDMAud topology parsing WDK audio", "topology parsing WDK audio", "source mixer lines WDK audio", "destination mixer lines WDK audio", "parsing destination mixer lines", "virtual sum WDK audio", "translating nodes WDK audio"]
+keywords:
+- WDMAud topology parsing WDK audio
+- topology parsing WDK audio
+- source mixer lines WDK audio
+- destination mixer lines WDK audio
+- parsing destination mixer lines
+- virtual sum WDK audio
+- translating nodes WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDMAud Topology Parsing

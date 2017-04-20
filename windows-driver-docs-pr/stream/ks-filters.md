@@ -3,7 +3,16 @@ title: KS Filters
 author: windows-driver-content
 description: KS Filters
 ms.assetid: caf46279-17f3-4bb4-8b8a-a1673f9fa28f
-keywords: ["filters WDK kernel streaming", "KS filters WDK kernel streaming", "mixers WDK kernel streaming", "kernel streaming WDK , filters"]
+keywords:
+- filters WDK kernel streaming
+- KS filters WDK kernel streaming
+- mixers WDK kernel streaming
+- kernel streaming WDK , filters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Filters

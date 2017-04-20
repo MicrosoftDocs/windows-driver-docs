@@ -2,7 +2,22 @@
 title: Multimatrix Vertex Blending
 description: Multimatrix Vertex Blending
 ms.assetid: d7348609-324d-4852-b217-4c298b8aaab7
-keywords: ["lending WDK Direct3D", "vertex blending WDK Direct3D", "Direct3D WDK Windows 2000 display , vertex blending", "multimatrix vertex blending WDK Direct3D", "multimatrix vertex blending WDK Direct3D , about multimatrix vertex blending", "transforms WDK Direct3D", "skin blending WDK Direct3D", "geometry blending WDK Direct3D", "joint blending WDK Direct3D", "matrix vertex blending WDK Direct3D"]
+keywords:
+- lending WDK Direct3D
+- vertex blending WDK Direct3D
+- Direct3D WDK Windows 2000 display , vertex blending
+- multimatrix vertex blending WDK Direct3D
+- multimatrix vertex blending WDK Direct3D , about multimatrix vertex blending
+- transforms WDK Direct3D
+- skin blending WDK Direct3D
+- geometry blending WDK Direct3D
+- joint blending WDK Direct3D
+- matrix vertex blending WDK Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multimatrix Vertex Blending

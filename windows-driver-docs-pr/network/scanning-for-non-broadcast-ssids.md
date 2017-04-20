@@ -2,7 +2,15 @@
 title: Scanning for Non-Broadcast SSIDs
 description: Scanning for Non-Broadcast SSIDs
 ms.assetid: ad4fd978-1e18-48c6-907b-1139fe7832d3
-keywords: ["scan operations WDK Native 802.11 , non-broadcast SSIDs", "non-broadcast SSIDs WDK Native 802.11", "SSIDs WDK Native 802.11"]
+keywords:
+- scan operations WDK Native 802.11 , non-broadcast SSIDs
+- non-broadcast SSIDs WDK Native 802.11
+- SSIDs WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scanning for Non-Broadcast SSIDs

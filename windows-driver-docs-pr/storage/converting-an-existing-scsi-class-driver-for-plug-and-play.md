@@ -3,7 +3,19 @@ title: Converting an Existing SCSI Class Driver for Plug and Play
 author: windows-driver-content
 description: Converting an Existing SCSI Class Driver for Plug and Play
 ms.assetid: b6570eef-f425-4b73-aa8a-7084f53bb10a
-keywords: ["storage class drivers WDK , converting SCSI class drivers", "class drivers WDK storage , converting SCSI class drivers", "storage class drivers WDK , PnP", "class drivers WDK storage , PnP", "PnP WDK storage", "Plug and Play WDK storage", "converting SCSI class drivers"]
+keywords:
+- storage class drivers WDK , converting SCSI class drivers
+- class drivers WDK storage , converting SCSI class drivers
+- storage class drivers WDK , PnP
+- class drivers WDK storage , PnP
+- PnP WDK storage
+- Plug and Play WDK storage
+- converting SCSI class drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Converting an Existing SCSI Class Driver for Plug and Play

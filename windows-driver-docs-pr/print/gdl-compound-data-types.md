@@ -3,7 +3,15 @@ title: GDL Compound Data Types
 author: windows-driver-content
 description: GDL Compound Data Types
 ms.assetid: c0e623f2-cb98-4fed-82ad-cc38ea4b0aa0
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , compound", "parser WDK GDL , compound data types"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , compound
+- parser WDK GDL , compound data types
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Compound Data Types

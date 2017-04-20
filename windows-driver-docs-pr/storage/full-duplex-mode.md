@@ -3,6 +3,11 @@ title: Full-Duplex Mode
 author: windows-driver-content
 description: Full-Duplex Mode
 ms.assetid: 01e3388d-d568-4476-9ff0-2125acafb841
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Full-Duplex Mode

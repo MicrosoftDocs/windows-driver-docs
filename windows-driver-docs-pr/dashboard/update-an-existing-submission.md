@@ -2,6 +2,11 @@
 title: Update an existing submission
 description: Update an existing submission
 ms.assetid: 09d55f98-d915-46a8-a96e-ef414f6e4f18
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Update an existing submission

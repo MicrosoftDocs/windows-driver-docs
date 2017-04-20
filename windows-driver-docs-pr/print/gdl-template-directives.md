@@ -3,7 +3,14 @@ title: GDL Template Directives
 author: windows-driver-content
 description: GDL Template Directives
 ms.assetid: 67400ddc-2575-4ceb-b204-66daf9708a4c
-keywords: ["templates WDK GDL , directives", "directives WDK GDL , template directives"]
+keywords:
+- templates WDK GDL , directives
+- directives WDK GDL , template directives
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Template Directives

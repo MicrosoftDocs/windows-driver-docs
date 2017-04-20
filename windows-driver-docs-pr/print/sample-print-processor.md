@@ -3,7 +3,13 @@ title: Sample Print Processor
 author: windows-driver-content
 description: Sample Print Processor
 ms.assetid: 42ab44f2-dba4-4b52-870a-2cb42fc2d0a9
-keywords: ["print processors WDK , samples"]
+keywords:
+- print processors WDK , samples
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Print Processor

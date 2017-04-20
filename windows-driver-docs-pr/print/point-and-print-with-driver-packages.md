@@ -3,7 +3,13 @@ title: Point and Print with Driver Packages
 author: windows-driver-content
 description: Point and Print with Driver Packages
 ms.assetid: 4574d0c3-2ec5-4870-96ac-f828ba8515b3
-keywords: ["Point and Print WDK , packages"]
+keywords:
+- Point and Print WDK , packages
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Point and Print with Driver Packages

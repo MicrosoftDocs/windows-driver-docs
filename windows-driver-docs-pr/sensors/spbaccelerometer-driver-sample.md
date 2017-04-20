@@ -3,6 +3,11 @@ title: SpbAccelerometer driver sample
 author: windows-driver-content
 description: This sample UMDF driver controls an ADXL345 accelerometer that is connected to a simple peripheral bus (SPB).
 ms.assetid: 5951CED5-13D5-44A4-862A-1C34E2122D99
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SpbAccelerometer driver sample

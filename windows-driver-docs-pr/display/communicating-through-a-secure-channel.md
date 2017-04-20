@@ -2,7 +2,18 @@
 title: Communicating Through a Secure Channel
 description: Communicating Through a Secure Channel
 ms.assetid: 6c6607fa-bede-4565-9968-02bd35ca68ff
-keywords: ["copy protection WDK COPP , secure communication channel", "video copy protection WDK COPP , secure communication channel", "COPP WDK DirectX VA , secure communication channel", "protected video WDK COPP , secure communication channel", "security WDK COPP", "authentication WDK COPP"]
+keywords:
+- copy protection WDK COPP , secure communication channel
+- video copy protection WDK COPP , secure communication channel
+- COPP WDK DirectX VA , secure communication channel
+- protected video WDK COPP , secure communication channel
+- security WDK COPP
+- authentication WDK COPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Communicating Through a Secure Channel

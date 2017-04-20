@@ -2,7 +2,20 @@
 title: ChkINF
 description: ChkINF
 ms.assetid: fa09cd42-34f0-4a0a-9729-0134057053f1
-keywords: ["Perl scripts WDK INF files", "ChkINF", "INF File Syntax Checker WDK", "INF files WDK , syntax checker", "syntax checker WDK INF files", "verifying INF files", "checking INF files", "scripts WDK ChkINF"]
+keywords:
+- Perl scripts WDK INF files
+- ChkINF
+- INF File Syntax Checker WDK
+- INF files WDK , syntax checker
+- syntax checker WDK INF files
+- verifying INF files
+- checking INF files
+- scripts WDK ChkINF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ChkINF

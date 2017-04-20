@@ -3,6 +3,11 @@ title: Required Root Item Properties for WIA Scanners
 author: windows-driver-content
 description: Required Root Item Properties for WIA Scanners
 ms.assetid: 9eea80a3-a657-4ba1-8ea0-301fc799ada3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required Root Item Properties for WIA Scanners

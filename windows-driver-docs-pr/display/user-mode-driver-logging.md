@@ -2,6 +2,11 @@
 title: User-mode driver logging
 description: To get a more actionable breakdown of video memory, the Windows Display Driver Model (WDDM) driver must expose the relationship between Microsoft Direct3D resources and video memory allocations.
 ms.assetid: E850E148-821D-4544-A778-00B1B9D13964
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="display.user-mode_driver_logging"></span>User-mode driver logging

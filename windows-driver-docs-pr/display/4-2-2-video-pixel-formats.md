@@ -2,7 +2,17 @@
 title: 4 2 2 Video Pixel Formats
 description: 4 2 2 Video Pixel Formats
 ms.assetid: 7064c7bd-bc7d-4b71-8876-ccb3a5808e45
-keywords: ["uncompressed video pixel formats WDK DirectX VA", "pixel formats for uncompressed video WDK DirectX VA", "compressed picture decoding WDK DirectX VA , pixel formats for uncompressed video", "picture decoding WDK DirectX VA , compressed", "4 2 2 video WDK DirectX VA"]
+keywords:
+- uncompressed video pixel formats WDK DirectX VA
+- pixel formats for uncompressed video WDK DirectX VA
+- compressed picture decoding WDK DirectX VA , pixel formats for uncompressed video
+- picture decoding WDK DirectX VA , compressed
+- 4 2 2 video WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 4:2:2 Video Pixel Formats

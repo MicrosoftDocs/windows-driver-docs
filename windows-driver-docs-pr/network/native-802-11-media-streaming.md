@@ -2,7 +2,16 @@
 title: Native 802.11 Media Streaming
 description: Native 802.11 Media Streaming
 ms.assetid: 818ad430-b87b-4c51-8d48-0dff9d9269ad
-keywords: ["send operations WDK Native 802.11", "receive operations WDK Native 802.11", "media streaming WDK , Native 802.11", "streaming data WDK Native 802.11"]
+keywords:
+- send operations WDK Native 802.11
+- receive operations WDK Native 802.11
+- media streaming WDK , Native 802.11
+- streaming data WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Media Streaming

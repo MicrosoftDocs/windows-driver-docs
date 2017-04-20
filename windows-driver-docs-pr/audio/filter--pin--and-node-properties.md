@@ -2,7 +2,25 @@
 title: Filter, Pin, and Node Properties
 description: Filter, Pin, and Node Properties
 ms.assetid: e0d52e97-459f-4095-9cf5-1474117ce66a
-keywords: ["audio properties WDK , filters", "WDM audio properties WDK , filters", "audio properties WDK , pins", "WDM audio properties WDK , pins", "audio properties WDK , nodes", "WDM audio properties WDK , nodes", "filter properties WDK audio", "node properties WDK audio", "KS filters WDK audio , property requests", "filters WDK audio , property requests", "filters WDK audio , property overview", "nodes WDK audio , property overview", "pins WDK audio , property overview"]
+keywords:
+- audio properties WDK , filters
+- WDM audio properties WDK , filters
+- audio properties WDK , pins
+- WDM audio properties WDK , pins
+- audio properties WDK , nodes
+- WDM audio properties WDK , nodes
+- filter properties WDK audio
+- node properties WDK audio
+- KS filters WDK audio , property requests
+- filters WDK audio , property requests
+- filters WDK audio , property overview
+- nodes WDK audio , property overview
+- pins WDK audio , property overview
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter, Pin, and Node Properties

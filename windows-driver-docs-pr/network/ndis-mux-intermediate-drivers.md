@@ -2,7 +2,16 @@
 title: NDIS MUX Intermediate Drivers
 description: NDIS MUX Intermediate Drivers
 ms.assetid: 2c2e0af8-aa33-47fb-8605-26eae184ea22
-keywords: ["MUX intermediate drivers WDK", "NDIS MUX intermediate drivers WDK", "one-to-n MUX intermediate driver configuration WDK", "n-to-one MUX intermediate driver configuration WDK"]
+keywords:
+- MUX intermediate drivers WDK
+- NDIS MUX intermediate drivers WDK
+- one-to-n MUX intermediate driver configuration WDK
+- n-to-one MUX intermediate driver configuration WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS MUX Intermediate Drivers

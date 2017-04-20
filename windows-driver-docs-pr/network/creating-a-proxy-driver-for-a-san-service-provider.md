@@ -2,7 +2,18 @@
 title: Creating a Proxy Driver for a SAN Service Provider
 description: Creating a Proxy Driver for a SAN Service Provider
 ms.assetid: 350c21a3-98e3-48a2-8403-68de97314933
-keywords: ["Windows Sockets Direct WDK , proxy drivers", "proxy drivers WDK SANs", "SAN proxy drivers WDK", "proxy drivers WDK SANs , about SAN proxy drivers", "SAN proxy drivers WDK , about SAN proxy drivers", "SAN service providers WDK , proxy drivers"]
+keywords:
+- Windows Sockets Direct WDK , proxy drivers
+- proxy drivers WDK SANs
+- SAN proxy drivers WDK
+- proxy drivers WDK SANs , about SAN proxy drivers
+- SAN proxy drivers WDK , about SAN proxy drivers
+- SAN service providers WDK , proxy drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Proxy Driver for a SAN Service Provider

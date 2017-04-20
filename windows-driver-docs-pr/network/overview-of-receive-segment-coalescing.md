@@ -2,6 +2,11 @@
 title: Overview of Receive Segment Coalescing
 description: When receiving data, the miniport driver, NDIS, and TCP/IP must all look at each segment's header information separately.
 ms.assetid: 1E9BC335-BB62-415B-B242-D63672A4E406
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Receive Segment Coalescing

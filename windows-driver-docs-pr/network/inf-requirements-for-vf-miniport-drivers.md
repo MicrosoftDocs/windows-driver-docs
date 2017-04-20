@@ -2,6 +2,11 @@
 title: INF Requirements for VF Miniport Drivers
 description: INF Requirements for VF Miniport Drivers
 ms.assetid: D15B337F-EC63-4E9A-94DA-E7F0487D5D48
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Requirements for VF Miniport Drivers

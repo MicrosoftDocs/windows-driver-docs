@@ -1,6 +1,11 @@
 ---
 Description: The Windows Driver Frameworks Files
 title: The Windows Driver Frameworks Files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Windows Driver Frameworks Files

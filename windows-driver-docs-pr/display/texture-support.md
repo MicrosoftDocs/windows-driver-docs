@@ -2,7 +2,19 @@
 title: Texture support
 description: Texture support
 ms.assetid: 8ae4d4bf-9fef-4e5e-a88a-5cb93519c802
-keywords: ["drawing page flips WDK DirectDraw , textures", "DirectDraw flipping WDK Windows 2000 display , textures", "page flipping WDK DirectDraw , textures", "flipping WDK DirectDraw , textures", "textures WDK DirectDraw , flipping", "3D surface flips WDK DirectDraw", "surfaces WDK DirectDraw , flipping"]
+keywords:
+- drawing page flips WDK DirectDraw , textures
+- DirectDraw flipping WDK Windows 2000 display , textures
+- page flipping WDK DirectDraw , textures
+- flipping WDK DirectDraw , textures
+- textures WDK DirectDraw , flipping
+- 3D surface flips WDK DirectDraw
+- surfaces WDK DirectDraw , flipping
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Texture support

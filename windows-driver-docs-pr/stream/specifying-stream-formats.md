@@ -3,7 +3,16 @@ title: Specifying Stream Formats
 author: windows-driver-content
 description: Specifying Stream Formats
 ms.assetid: 60ef129c-f4a1-4eb5-97d9-6be6c7803258
-keywords: ["video capture WDK AVStream , stream formats", "capturing video WDK AVStream , stream formats", "stream formats WDK video capture", "formats WDK video capture"]
+keywords:
+- video capture WDK AVStream , stream formats
+- capturing video WDK AVStream , stream formats
+- stream formats WDK video capture
+- formats WDK video capture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Stream Formats

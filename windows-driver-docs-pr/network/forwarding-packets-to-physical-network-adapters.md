@@ -2,6 +2,11 @@
 title: Forwarding Packets to Physical Network Adapters
 description: Forwarding Packets to Physical Network Adapters
 ms.assetid: 14A78DB2-6643-471D-97B9-4D8524EC3E73
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Forwarding Packets to Physical Network Adapters

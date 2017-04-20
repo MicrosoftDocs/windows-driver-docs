@@ -2,7 +2,13 @@
 title: XML reference
 description: XML reference
 ms.assetid: 54ACDF08-D3EA-4AAD-AE5D-4E2FC4D40E87
-keywords: ["device metadata XML Reference"]
+keywords:
+- device metadata XML Reference
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XML reference

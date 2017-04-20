@@ -2,7 +2,15 @@
 title: Blocking Calls for a SAN
 description: Blocking Calls for a SAN
 ms.assetid: 93be861c-4cf1-48ea-ac69-a4a171ca9052
-keywords: ["blocking calls WDK SANs", "Windows Sockets Direct WDK , blocking calls", "SAN blocking calls WDK"]
+keywords:
+- blocking calls WDK SANs
+- Windows Sockets Direct WDK , blocking calls
+- SAN blocking calls WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Blocking Calls for a SAN

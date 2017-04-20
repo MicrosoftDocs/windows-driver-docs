@@ -2,7 +2,14 @@
 title: Handling Outstanding Send Data During a Terminate Offload Operation
 description: Handling Outstanding Send Data During a Terminate Offload Operation
 ms.assetid: 34a3e464-5ea6-4021-9a52-59f691ce3ffb
-keywords: ["terminating offload state WDK TCP chimney offload , outstanding send data during", "outstanding send data during termination WDK TCP chimney offload"]
+keywords:
+- terminating offload state WDK TCP chimney offload , outstanding send data during
+- outstanding send data during termination WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Outstanding Send Data During a Terminate Offload Operation

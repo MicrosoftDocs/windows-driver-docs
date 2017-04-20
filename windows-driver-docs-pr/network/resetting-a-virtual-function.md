@@ -2,6 +2,11 @@
 title: Resetting a Virtual Function
 description: Resetting a Virtual Function
 ms.assetid: 4B7A4E02-6383-45FB-9F75-D17C047C40D0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Resetting a Virtual Function

@@ -2,6 +2,11 @@
 title: General Unicode requirement in INF files
 description: INF files should be saved and encoded as Unicode; they must not be ANSI.
 ms.assetid: 100F5DAB-FD25-4B42-8E3B-321E96CD25A2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Unicode requirement in INF files

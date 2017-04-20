@@ -3,6 +3,11 @@ title: Implementing Film Scanner Item Trees
 author: windows-driver-content
 description: Implementing Film Scanner Item Trees
 ms.assetid: 8ae8741d-9444-49bf-b38d-e955a285b198
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing Film Scanner Item Trees

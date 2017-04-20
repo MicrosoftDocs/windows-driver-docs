@@ -2,7 +2,15 @@
 title: Optional Features for Multiple Render Targets
 description: Optional Features for Multiple Render Targets
 ms.assetid: 265df4d3-acc9-4978-97d1-a6f81bc7afaf
-keywords: ["rendering multiple targets WDK DirectX 9.0 , optional features", "multiple render targets WDK DirectX 9.0 , optional features", "simultaneous render targets WDK DirectX 9.0 , optional features"]
+keywords:
+- rendering multiple targets WDK DirectX 9.0 , optional features
+- multiple render targets WDK DirectX 9.0 , optional features
+- simultaneous render targets WDK DirectX 9.0 , optional features
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Optional Features for Multiple Render Targets

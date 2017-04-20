@@ -2,7 +2,16 @@
 title: GFX Data Format Requirements
 description: GFX Data Format Requirements
 ms.assetid: 34a02463-231f-46c5-b6c1-b3592adb3739
-keywords: ["GFX filters WDK audio , data formats", "stream formats WDK audio , GFX filters", "formats WDK audio , GFX filters", "data formats WDK audio , GFX filters"]
+keywords:
+- GFX filters WDK audio , data formats
+- stream formats WDK audio , GFX filters
+- formats WDK audio , GFX filters
+- data formats WDK audio , GFX filters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GFX Data Format Requirements
