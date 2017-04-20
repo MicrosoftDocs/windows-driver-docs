@@ -2,7 +2,14 @@
 title: Configuring Optional Protocol Driver Services
 description: Configuring Optional Protocol Driver Services
 ms.assetid: 3bb6d0ed-bc44-48c6-8f28-d861c4ff7a87
-keywords: ["protocol drivers WDK networking , optional services", "NDIS protocol drivers WDK , optional services"]
+keywords:
+- protocol drivers WDK networking , optional services
+- NDIS protocol drivers WDK , optional services
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuring Optional Protocol Driver Services

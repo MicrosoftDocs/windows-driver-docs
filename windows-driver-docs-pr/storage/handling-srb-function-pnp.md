@@ -3,6 +3,11 @@ title: Handling SRB\_FUNCTION\_PNP
 author: windows-driver-content
 description: Handling SRB\_FUNCTION\_PNP
 ms.assetid: 25490320-8d6b-4c5a-a585-4f628ea72393
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling SRB\_FUNCTION\_PNP

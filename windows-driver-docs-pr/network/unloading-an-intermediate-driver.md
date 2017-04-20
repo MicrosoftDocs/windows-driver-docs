@@ -2,7 +2,16 @@
 title: Unloading an Intermediate Driver
 description: Unloading an Intermediate Driver
 ms.assetid: e3c1dad4-4262-4449-8dcd-2e2f5d6c8e25
-keywords: ["NDIS intermediate drivers WDK , unloading", "intermediate drivers WDK networking , unloading", "unloading intermediate drivers", "cleaning up after install or uninstall WDK NDIS intermediate"]
+keywords:
+- NDIS intermediate drivers WDK , unloading
+- intermediate drivers WDK networking , unloading
+- unloading intermediate drivers
+- cleaning up after install or uninstall WDK NDIS intermediate
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unloading an Intermediate Driver

@@ -2,7 +2,15 @@
 title: Synchronizing Operations on a SAN
 description: Synchronizing Operations on a SAN
 ms.assetid: 9bbceecc-652e-44a7-b969-57578d2ebe68
-keywords: ["synchronization WDK SANs", "SAN synchronizations WDK", "Windows Sockets Direct WDK , SAN synchronizations"]
+keywords:
+- synchronization WDK SANs
+- SAN synchronizations WDK
+- Windows Sockets Direct WDK , SAN synchronizations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing Operations on a SAN

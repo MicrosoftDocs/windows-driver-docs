@@ -3,6 +3,11 @@ title: Using UMDF Verifier
 author: windows-driver-content
 description: Using UMDF Verifier
 ms.assetid: 95D85894-86AF-4312-B5BD-F1C9E8F8B2E5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using UMDF Verifier

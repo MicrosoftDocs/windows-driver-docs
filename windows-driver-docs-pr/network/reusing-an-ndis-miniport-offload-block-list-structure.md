@@ -2,7 +2,16 @@
 title: Reusing an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST Structure
 description: Reusing an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST Structure
 ms.assetid: 5f5e2e00-a29a-48f9-8f87-6e2fe1026aad
-keywords: ["propagating TCP chimney state-manipulation operations, block list types", "state-manipulation operations WDK TCP chimney offload , block list types", "block list types WDK TCP chimney offload", "NDIS_MINIPORT_OFFLOAD_BLOCK_LIST"]
+keywords:
+- propagating TCP chimney state-manipulation operations, block list types
+- state-manipulation operations WDK TCP chimney offload , block list types
+- block list types WDK TCP chimney offload
+- NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reusing an NDIS\_MINIPORT\_OFFLOAD\_BLOCK\_LIST Structure

@@ -3,7 +3,32 @@ title: Managing I/O Queues
 author: windows-driver-content
 description: Managing I/O Queues
 ms.assetid: 83cc87c8-7e2d-4f79-a580-0519d327e7ba
-keywords: ["I/O queues WDK KMDF , starting", "I/O queues WDK KMDF , stopping", "I/O queues WDK KMDF , restarting", "I/O queues WDK KMDF , adding requests", "I/O queues WDK KMDF , obtaining requests", "I/O queues WDK KMDF , searching requests", "I/O queues WDK KMDF , purging", "I/O queues WDK KMDF , draining", "I/O queues WDK KMDF , moving requests", "I/O queues WDK KMDF , intercepting requests", "I/O queues WDK KMDF , properties", "intercepting I/O requests WDK KMDF", "moving I/O requests WDK KMDF", "relocating I/O requests WDK KMDF", "searching I/O requests WDK KMDF", "requeuing I/O requests WDK KMDF", "stopping I/O queues WDK KMDF", "restarting I/O queues WDK KMDF", "starting I/O queues WDK KMDF", "dispatching methods WDK KMDF"]
+keywords:
+- I/O queues WDK KMDF , starting
+- I/O queues WDK KMDF , stopping
+- I/O queues WDK KMDF , restarting
+- I/O queues WDK KMDF , adding requests
+- I/O queues WDK KMDF , obtaining requests
+- I/O queues WDK KMDF , searching requests
+- I/O queues WDK KMDF , purging
+- I/O queues WDK KMDF , draining
+- I/O queues WDK KMDF , moving requests
+- I/O queues WDK KMDF , intercepting requests
+- I/O queues WDK KMDF , properties
+- intercepting I/O requests WDK KMDF
+- moving I/O requests WDK KMDF
+- relocating I/O requests WDK KMDF
+- searching I/O requests WDK KMDF
+- requeuing I/O requests WDK KMDF
+- stopping I/O queues WDK KMDF
+- restarting I/O queues WDK KMDF
+- starting I/O queues WDK KMDF
+- dispatching methods WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing I/O Queues

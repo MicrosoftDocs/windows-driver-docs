@@ -3,6 +3,11 @@ title: EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryInformation
 author: windows-driver-content
 description: EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryInformation
 ms.assetid: 497cd001-5180-4dee-a070-ccf8c987bd71
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryInformation

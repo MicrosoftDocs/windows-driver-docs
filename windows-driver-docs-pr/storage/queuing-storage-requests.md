@@ -3,7 +3,16 @@ title: Queuing Storage Requests
 author: windows-driver-content
 description: Queuing Storage Requests
 ms.assetid: 077f7e4f-feb5-4a2e-b22b-b1d8d6871987
-keywords: ["peripherals WDK storage , queued requests", "storage peripherals WDK , queued requests", "queued requests WDK storage", "queues WDK storage"]
+keywords:
+- peripherals WDK storage , queued requests
+- storage peripherals WDK , queued requests
+- queued requests WDK storage
+- queues WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Queuing Storage Requests

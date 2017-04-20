@@ -2,7 +2,20 @@
 title: Identifiers for IDE Devices
 description: Identifiers for IDE Devices
 ms.assetid: b1624eb9-afa7-49ce-9db1-b0eab466ddcd
-keywords: ["device identification strings WDK , IDE devices", "identification strings WDK device , IDE devices", "identifiers WDK device , IDE devices", "IDE device identifiers WDK device installations", "device IDs WDK device installations", "hardware IDs WDK device installations", "compatible IDs WDK device installations", "integrated device electronics identifiers WDK device installations"]
+keywords:
+- device identification strings WDK , IDE devices
+- identification strings WDK device , IDE devices
+- identifiers WDK device , IDE devices
+- IDE device identifiers WDK device installations
+- device IDs WDK device installations
+- hardware IDs WDK device installations
+- compatible IDs WDK device installations
+- integrated device electronics identifiers WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifiers for IDE Devices

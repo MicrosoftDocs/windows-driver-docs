@@ -3,7 +3,16 @@ title: Configuring a BDA Filter
 author: windows-driver-content
 description: Configuring a BDA Filter
 ms.assetid: 4af9efc3-8073-4111-9ad0-8b2fba4d1545
-keywords: ["method sets WDK BDA , filter configuration", "property sets WDK BDA , filter configuration", "KSMETHODSETID_BdaDeviceConfiguration", "filter configuration WDK BDA"]
+keywords:
+- method sets WDK BDA , filter configuration
+- property sets WDK BDA , filter configuration
+- KSMETHODSETID_BdaDeviceConfiguration
+- filter configuration WDK BDA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuring a BDA Filter

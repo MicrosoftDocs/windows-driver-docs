@@ -2,7 +2,14 @@
 title: Data-Range Properties
 description: Data-Range Properties
 ms.assetid: 84bdd151-a034-445e-9f6d-19940e32b2c1
-keywords: ["data-intersection handlers WDK audio , data-range properties", "data ranges WDK audio , properties"]
+keywords:
+- data-intersection handlers WDK audio , data-range properties
+- data ranges WDK audio , properties
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data-Range Properties

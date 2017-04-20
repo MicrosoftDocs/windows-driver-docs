@@ -2,7 +2,13 @@
 title: Version Numbers for Display Drivers
 description: Version Numbers for Display Drivers
 ms.assetid: 73d26532-61c1-45d1-a388-7c0befc53487
-keywords: ["version numbers WDK Windows 2000 display"]
+keywords:
+- version numbers WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Version Numbers for Display Drivers

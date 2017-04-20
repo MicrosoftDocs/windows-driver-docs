@@ -2,6 +2,11 @@
 Description: This topic provides an overview of USB pipes and describes the steps required by a USB client driver to obtain pipe handles from the USB driver stack.
 title: How to enumerate USB pipes
 author: windows-driver-content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to enumerate USB pipes

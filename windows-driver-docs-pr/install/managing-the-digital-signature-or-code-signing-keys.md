@@ -2,7 +2,18 @@
 title: Managing the Digital Signature or Code Signing Keys
 description: Managing the Digital Signature or Code Signing Keys
 ms.assetid: 3aaa713b-c964-4a1e-9b2c-dee66cb4c4b2
-keywords: ["driver signing WDK , cryptographic keys", "signing drivers WDK , cryptographic keys", "digital signatures WDK , cryptographic keys", "signatures WDK , cryptographic keys", "cryptography WDK driver signing", "keys WDK driver signing"]
+keywords:
+- driver signing WDK , cryptographic keys
+- signing drivers WDK , cryptographic keys
+- digital signatures WDK , cryptographic keys
+- signatures WDK , cryptographic keys
+- cryptography WDK driver signing
+- keys WDK driver signing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing the Digital Signature or Code Signing Keys

@@ -2,7 +2,15 @@
 title: Color Coding in the Source Code Pane
 description: Color Coding in the Source Code Pane
 ms.assetid: 1bc3635b-31ed-4453-aaef-cd5aac637df2
-keywords: ["color coding WDK Static Driver Verifier", "Static Driver Verifier Report WDK , Source Code pane", "Source Code pane WDK Static Driver Verifier"]
+keywords:
+- color coding WDK Static Driver Verifier
+- Static Driver Verifier Report WDK , Source Code pane
+- Source Code pane WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Color Coding in the Source Code Pane

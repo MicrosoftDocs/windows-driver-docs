@@ -3,6 +3,11 @@ title: Tracking Per-File Context in a Legacy File System Filter Driver
 author: windows-driver-content
 description: Tracking Per-File Context in a Legacy File System Filter Driver
 ms.assetid: 6be3ff10-47e4-47f5-8f15-88a80a16f451
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracking Per-File Context in a Legacy File System Filter Driver

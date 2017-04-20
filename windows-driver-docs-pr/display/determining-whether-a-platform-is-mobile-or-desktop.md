@@ -2,7 +2,13 @@
 title: Determining Whether a Platform is Mobile or Desktop
 description: Determining Whether a Platform is Mobile or Desktop
 ms.assetid: f0a553a4-a23b-45c8-abc5-b5014ba328ae
-keywords: ["TMM WDK display , determining mobile or desktop"]
+keywords:
+- TMM WDK display , determining mobile or desktop
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining Whether a Platform is Mobile or Desktop

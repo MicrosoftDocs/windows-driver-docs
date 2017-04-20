@@ -2,6 +2,11 @@
 title: Retrieving a Device Class Property Value
 description: Retrieving a Device Class Property Value
 ms.assetid: 50b16bd9-7f38-4128-af8f-8b39b099931f
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieving a Device Class Property Value

@@ -3,7 +3,17 @@ title: GDL Exercise 1 Implementing a GDL Schema
 author: windows-driver-content
 description: GDL Exercise 1 Implementing a GDL Schema
 ms.assetid: 0adfef5a-4211-45e9-bb65-8174822efdc5
-keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "schemas WDK GDL , implementing GDL schemas"]
+keywords:
+- GDL WDK , examples
+- examples WDK GDL
+- tutorials WDK GDL
+- GDL WDK , tutorials
+- schemas WDK GDL , implementing GDL schemas
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Exercise 1: Implementing a GDL Schema

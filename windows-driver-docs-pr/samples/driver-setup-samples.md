@@ -3,6 +3,11 @@ title: Setup samples
 author: windows-driver-content
 description: The driver samples in this directory provide information and examples for setup and installation of custom drivers for your device.
 ms.assetid: EE4D2F04-3ECD-4406-8FC3-7C54B079F974
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setup samples

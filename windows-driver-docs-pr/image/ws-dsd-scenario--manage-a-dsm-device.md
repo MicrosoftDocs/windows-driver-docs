@@ -3,6 +3,11 @@ title: WS-DSD Scenario Manage a DSM Device
 author: windows-driver-content
 description: WS-DSD Scenario Manage a DSM Device
 ms.assetid: 76b7d70d-deda-4c04-a8c3-a7b255d6a1ab
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSD Scenario: Manage a DSM Device

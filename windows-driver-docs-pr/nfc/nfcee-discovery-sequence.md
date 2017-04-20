@@ -2,8 +2,18 @@
 title: NFCEE discovery sequence
 author: windows-driver-content
 ms.assetid: F6894EFD-4140-490B-B0BB-1A9BDA4DCECE
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
-description:
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NFCEE discovery sequence

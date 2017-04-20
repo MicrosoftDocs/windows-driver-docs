@@ -2,13 +2,19 @@
 title: INF DDInstall.Services Section
 description: Each per-Models DDInstall.Services section contains one or more INF AddService directives that reference additional INF-writer-defined sections in an INF file.
 ms.assetid: 30efb094-cc18-4c01-8851-4bc5dba1ae1d
-keywords: ["INF DDInstall.Services Section Device and Driver Installation"]
+keywords:
+- INF DDInstall.Services Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DDInstall.Services Section
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DDInstall.Services Section

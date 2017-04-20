@@ -2,7 +2,13 @@
 title: Using a Debugger
 description: Using a Debugger
 ms.assetid: e2490442-9d90-454b-95e0-db8c5d7fa19a
-keywords: ["debugging drivers WDK , debuggers"]
+keywords:
+- debugging drivers WDK , debuggers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using a Debugger

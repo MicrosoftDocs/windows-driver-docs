@@ -2,7 +2,14 @@
 title: Referencing Offloaded State Through an Intermediate Driver
 description: Referencing Offloaded State Through an Intermediate Driver
 ms.assetid: ea721b1e-1b75-4982-bcc5-f1359191cc72
-keywords: ["intermediate drivers WDK TCP chimney offload , referencing offloaded state", "referencing offloaded state via intermediate driver"]
+keywords:
+- intermediate drivers WDK TCP chimney offload , referencing offloaded state
+- referencing offloaded state via intermediate driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Referencing Offloaded State Through an Intermediate Driver

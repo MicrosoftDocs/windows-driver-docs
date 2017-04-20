@@ -2,6 +2,11 @@
 title: Wi-Fi Direct Device Discovery
 description: Windows uses the Device Discovery procedure to ask the miniport driver to search for Wi-Fi Direct Devices and optionally search for legacy Wi-Fi networks.
 ms.assetid: D855F72E-2FC9-4AFD-9A46-D535AC41719C
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Direct Device Discovery

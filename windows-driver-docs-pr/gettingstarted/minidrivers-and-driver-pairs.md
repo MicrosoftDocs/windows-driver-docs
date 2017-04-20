@@ -2,6 +2,11 @@
 title: Minidrivers, Miniport drivers, and driver pairs
 description: A minidriver or a miniport driver acts as half of a driver pair.
 ms.assetid: 33387A72-5278-4637-AED4-C010E4C1616B
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Minidrivers, Miniport drivers, and driver pairs

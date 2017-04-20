@@ -2,7 +2,19 @@
 title: Boot Parameters to Manipulate Memory
 description: Boot Parameters to Manipulate Memory
 ms.assetid: 04504216-20b5-4c65-a1e2-6eec7480ce17
-keywords: ["memory-related boot options WDK", "boot parameters WDK", "boot entry parameters WDK", "manipulating memory WDK boot parameters", "low-memory environments WDK boot parameters", "simulating low-memory environments WDK boot parameters", "memory WDK boot parameters"]
+keywords:
+- memory-related boot options WDK
+- boot parameters WDK
+- boot entry parameters WDK
+- manipulating memory WDK boot parameters
+- low-memory environments WDK boot parameters
+- simulating low-memory environments WDK boot parameters
+- memory WDK boot parameters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boot Parameters to Manipulate Memory

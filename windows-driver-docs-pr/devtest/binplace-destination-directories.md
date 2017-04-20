@@ -2,7 +2,20 @@
 title: BinPlace Destination Directories
 description: BinPlace Destination Directories
 ms.assetid: 7a5a2324-b2a1-488b-b8de-cb5a6319d3ec
-keywords: ["BinPlace WDK , destination directories", "destination directories WDK BinPlace", "symbol root directories WDK BinPlace", "class subdirectories WDK BinPlace", "file-type subdirectories WDK BinPlace", "place files WDK BinPlace", "directories WDK BinPlace", "symbol files WDK BinPlace"]
+keywords:
+- BinPlace WDK , destination directories
+- destination directories WDK BinPlace
+- symbol root directories WDK BinPlace
+- class subdirectories WDK BinPlace
+- file-type subdirectories WDK BinPlace
+- place files WDK BinPlace
+- directories WDK BinPlace
+- symbol files WDK BinPlace
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # BinPlace Destination Directories

@@ -3,7 +3,16 @@ title: Configuration of Serial Devices and Drivers
 author: windows-driver-content
 description: Configuration of Serial Devices and Drivers
 ms.assetid: a3b5c58a-e66a-4e8c-ab59-7684c12f8e8b
-keywords: ["serial devices WDK , configurations", "serial drivers WDK", "Serial driver WDK , configurations", "Serenum driver WDK , configurations"]
+keywords:
+- serial devices WDK , configurations
+- serial drivers WDK
+- Serial driver WDK , configurations
+- Serenum driver WDK , configurations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuration of Serial Devices and Drivers

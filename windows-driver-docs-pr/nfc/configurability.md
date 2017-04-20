@@ -3,7 +3,17 @@ title: Configurability
 author: windows-driver-content
 description: In addition to extensibility points available to the NFC client driver, the NFC CX also enables the client driver to configure the parameters of many of its operations. The following configurations can be customized by the NFC client driver.
 ms.assetid: 29C6C96E-9F20-4750-ABDD-103871B405FA
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configurability

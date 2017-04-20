@@ -2,7 +2,16 @@
 title: Computing the Size of Point Sprites
 description: Computing the Size of Point Sprites
 ms.assetid: f92ea8c6-f330-4625-873f-70c773c86334
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , point sprites", "point sprites WDK DirectX 8.0", "size WDK point sprites", "point size WDK DirectX 8.0"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , point sprites
+- point sprites WDK DirectX 8.0
+- size WDK point sprites
+- point size WDK DirectX 8.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Computing the Size of Point Sprites

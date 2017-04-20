@@ -2,7 +2,21 @@
 title: Installing a Port Class Audio Adapter
 description: Installing a Port Class Audio Adapter
 ms.assetid: 02cea7c1-cf9a-4f4b-9d35-d565fac731ec
-keywords: ["Port Class audio adapters WDK , installing", "audio miniport drivers WDK , adapter drivers", "miniport drivers WDK audio , adapter drivers", "adapter drivers WDK audio , installing", "audio adapter drivers WDK , installing", "port-class audio adapters WDK", "registry WDK audio", "add-registry-sections WDK audio", "audio adapter drivers WDK"]
+keywords:
+- Port Class audio adapters WDK , installing
+- audio miniport drivers WDK , adapter drivers
+- miniport drivers WDK audio , adapter drivers
+- adapter drivers WDK audio , installing
+- audio adapter drivers WDK , installing
+- port-class audio adapters WDK
+- registry WDK audio
+- add-registry-sections WDK audio
+- audio adapter drivers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Port Class Audio Adapter

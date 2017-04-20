@@ -2,7 +2,14 @@
 title: D3dCreateSurfaceEx Handles and DirectDraw DDIs
 description: D3dCreateSurfaceEx Handles and DirectDraw DDIs
 ms.assetid: 626b04a2-3c50-425a-bbdf-3fb24fc95215
-keywords: ["context WDK Direct3D , D3dCreateSurfaceEx", "D3dCreateSurfaceEx"]
+keywords:
+- context WDK Direct3D , D3dCreateSurfaceEx
+- D3dCreateSurfaceEx
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # D3dCreateSurfaceEx Handles and DirectDraw DDIs

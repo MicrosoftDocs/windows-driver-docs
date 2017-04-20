@@ -3,7 +3,14 @@ title: Halftoning with Unidrv
 author: windows-driver-content
 description: Halftoning with Unidrv
 ms.assetid: 42d1ca77-f8af-4212-a5a7-fb147d86b689
-keywords: ["Unidrv, halftoning", "halftoning WDK Unidrv"]
+keywords:
+- Unidrv, halftoning
+- halftoning WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Halftoning with Unidrv

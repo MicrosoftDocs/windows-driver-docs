@@ -2,7 +2,19 @@
 title: Establishing a Connection with a Destination
 description: Establishing a Connection with a Destination
 ms.assetid: 1258ee32-3914-4832-b98b-361dace0abaf
-keywords: ["Winsock Kernel WDK networking , remote transport addresses", "WSK WDK networking , remote transport addresses", "remote transport address bindings WDK Winsock Kernel", "transport addresses WDK Winsock Kernel", "established socket connections WDK Winsock Kernel", "connections WDK Winsock Kernel", "destination connections WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , remote transport addresses
+- WSK WDK networking , remote transport addresses
+- remote transport address bindings WDK Winsock Kernel
+- transport addresses WDK Winsock Kernel
+- established socket connections WDK Winsock Kernel
+- connections WDK Winsock Kernel
+- destination connections WDK Winsock Kernel
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Establishing a Connection with a Destination

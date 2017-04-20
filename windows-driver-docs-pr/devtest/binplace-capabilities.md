@@ -2,7 +2,16 @@
 title: BinPlace Capabilities
 description: BinPlace Capabilities
 ms.assetid: 2fd49ce3-8617-4c3e-bb86-8642343ca756
-keywords: ["BinPlace WDK , capabilities", "stripping files", "splitting files", "moving files WDK BinPlace"]
+keywords:
+- BinPlace WDK , capabilities
+- stripping files
+- splitting files
+- moving files WDK BinPlace
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # BinPlace Capabilities

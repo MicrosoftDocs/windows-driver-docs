@@ -2,7 +2,14 @@
 title: Enabling Authentication Algorithms
 description: Enabling Authentication Algorithms
 ms.assetid: 4ff435fc-6644-4571-9599-33a154af3899
-keywords: ["algorithms WDK Native 802.11 authentication", "authentication WDK Native 802.11 , algorithms"]
+keywords:
+- algorithms WDK Native 802.11 authentication
+- authentication WDK Native 802.11 , algorithms
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling Authentication Algorithms

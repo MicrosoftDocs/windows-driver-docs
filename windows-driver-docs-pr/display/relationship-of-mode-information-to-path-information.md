@@ -2,7 +2,22 @@
 title: Relationship of Mode Information to Path Information
 description: Relationship of Mode Information to Path Information
 ms.assetid: 214717dd-1c01-4daf-9296-586299668d3a
-keywords: ["connecting displays WDK Windows 7 display , CCD concepts, mode and path information", "connecting displays WDK Windows Server 2008 R2 display , CCD concepts, mode and path information", "configuring displays WDK Windows 7 display , CCD concepts, mode and path information", "configuring displays WDK Windows Server 2008 R2 display , CCD concepts, mode and path information", "CCD concepts WDK Windows 7 display , mode and path information", "CCD concepts WDK Windows Server 2008 R2 display , mode and path information", "mode and path information WDK Windows 7 display", "mode and path information WDK Windows Server 2008 R2 display", "path and mode information WDK Windows 7 display", "path and mode information WDK Windows Server 2008 R2 display"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD concepts, mode and path information
+- connecting displays WDK Windows Server 2008 R2 display , CCD concepts, mode and path information
+- configuring displays WDK Windows 7 display , CCD concepts, mode and path information
+- configuring displays WDK Windows Server 2008 R2 display , CCD concepts, mode and path information
+- CCD concepts WDK Windows 7 display , mode and path information
+- CCD concepts WDK Windows Server 2008 R2 display , mode and path information
+- mode and path information WDK Windows 7 display
+- mode and path information WDK Windows Server 2008 R2 display
+- path and mode information WDK Windows 7 display
+- path and mode information WDK Windows Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Relationship of Mode Information to Path Information

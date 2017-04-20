@@ -2,13 +2,19 @@
 title: XpsAnalyzer Command Syntax
 description: To run XpsAnalyzer, type a command at the command line using the following syntax and parameters.
 ms.assetid: f91be3ee-e92a-46c8-ab93-96423a35fd86
-keywords: ["XpsAnalyzer Command Syntax Driver Development Tools"]
+keywords:
+- XpsAnalyzer Command Syntax Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - XpsAnalyzer Command Syntax
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XpsAnalyzer Command Syntax

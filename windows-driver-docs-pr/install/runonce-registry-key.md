@@ -2,7 +2,18 @@
 title: RunOnce Registry Key
 description: RunOnce Registry Key
 ms.assetid: dbeb7be7-4d38-49e2-944c-ea95d9914ebe
-keywords: ["RunOnce registry key", "registry WDK device installations", "device installations WDK , registry", "installing devices WDK , registry", "Device setup WDK device installations , registry", "driver registry RunOnce key WDK device installations"]
+keywords:
+- RunOnce registry key
+- registry WDK device installations
+- device installations WDK , registry
+- installing devices WDK , registry
+- Device setup WDK device installations , registry
+- driver registry RunOnce key WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RunOnce Registry Key

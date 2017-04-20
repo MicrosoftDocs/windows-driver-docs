@@ -3,7 +3,19 @@ title: Do Not Depend on Order of SCSI Miniport Initialization
 author: windows-driver-content
 description: Do Not Depend on Order of SCSI Miniport Initialization
 ms.assetid: 762fa062-4eaa-40f2-acdb-99fc6cafe680
-keywords: ["SCSI miniport drivers WDK storage , PnP", "PnP WDK SCSI", "Plug and Play WDK SCSI", "converting SCSI miniport drivers", "initializing SCSI miniport drivers", "SCSI miniport drivers WDK storage , initializing", "order-dependent code WDK SCSI"]
+keywords:
+- SCSI miniport drivers WDK storage , PnP
+- PnP WDK SCSI
+- Plug and Play WDK SCSI
+- converting SCSI miniport drivers
+- initializing SCSI miniport drivers
+- SCSI miniport drivers WDK storage , initializing
+- order-dependent code WDK SCSI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Do Not Depend on Order of SCSI Miniport Initialization

@@ -3,7 +3,15 @@ title: Managing File Names
 author: windows-driver-content
 description: Managing File Names
 ms.assetid: 390c3817-e306-4d20-9ec0-9d68ccc8ff1b
-keywords: ["filter manager WDK file system minifilter , file names", "file names WDK file system minifilter", "names WDK file systems"]
+keywords:
+- filter manager WDK file system minifilter , file names
+- file names WDK file system minifilter
+- names WDK file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing File Names

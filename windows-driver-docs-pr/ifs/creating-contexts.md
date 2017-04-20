@@ -3,7 +3,13 @@ title: Creating Contexts
 author: windows-driver-content
 description: Creating Contexts
 ms.assetid: da62d79d-064b-4ea4-abed-ffb13a9cc13d
-keywords: ["contexts WDK file system minifilter , creating"]
+keywords:
+- contexts WDK file system minifilter , creating
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Contexts

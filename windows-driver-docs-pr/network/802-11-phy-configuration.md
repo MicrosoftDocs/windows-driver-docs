@@ -2,7 +2,15 @@
 title: 802.11 PHY Configuration
 description: 802.11 PHY Configuration
 ms.assetid: 6cbe794f-0109-4772-ada7-3dc2bcea143f
-keywords: ["PHY configuration WDK Native 802.11", "PHY configuration WDK Native 802.11 , about PHY miniport driver configuration", "configurations WDK Native 802.11 , PHY configuration"]
+keywords:
+- PHY configuration WDK Native 802.11
+- PHY configuration WDK Native 802.11 , about PHY miniport driver configuration
+- configurations WDK Native 802.11 , PHY configuration
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 PHY Configuration

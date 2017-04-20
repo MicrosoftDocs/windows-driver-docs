@@ -2,7 +2,16 @@
 title: Virtual Interface Architecture and Support for SAN
 description: Virtual Interface Architecture and Support for SAN
 ms.assetid: 83d28f33-7354-4f59-8b01-4842286f12fb
-keywords: ["system area networks WDK , VI architecture", "SAN WDK , VI architecture", "VI architecture WDK SANs", "Virtual Interface architecture WDK SANs"]
+keywords:
+- system area networks WDK , VI architecture
+- SAN WDK , VI architecture
+- VI architecture WDK SANs
+- Virtual Interface architecture WDK SANs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Interface Architecture and Support for SAN

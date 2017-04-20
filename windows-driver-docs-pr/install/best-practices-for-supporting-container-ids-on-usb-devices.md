@@ -2,6 +2,11 @@
 title: Best Practices for Supporting Container IDs on USB Devices
 description: Best Practices for Supporting Container IDs on USB Devices
 ms.assetid: 58086d52-196f-4ea3-9ce6-62d3fcb43f9e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Best Practices for Supporting Container IDs on USB Devices

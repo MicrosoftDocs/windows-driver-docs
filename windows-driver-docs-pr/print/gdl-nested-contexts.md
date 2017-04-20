@@ -3,7 +3,17 @@ title: GDL Nested Contexts
 author: windows-driver-content
 description: GDL Nested Contexts
 ms.assetid: c679937a-fa36-487a-84f2-f61a7ef0198e
-keywords: ["GDL WDK , contexts", "contexts WDK GDL , nested contexts", "nested contexts WDL GDL", "GDL WDK , values", "values WDK GDL , nested contexts"]
+keywords:
+- GDL WDK , contexts
+- contexts WDK GDL , nested contexts
+- nested contexts WDL GDL
+- GDL WDK , values
+- values WDK GDL , nested contexts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Nested Contexts

@@ -2,6 +2,11 @@
 title: Dynamic Creation of a NIC Switch
 description: Dynamic Creation of a NIC Switch
 ms.assetid: 16B2D94A-AF30-434F-8F14-2F535501A52F
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dynamic Creation of a NIC Switch

@@ -2,7 +2,15 @@
 title: Creating a SCO Client Connection to a Remote Device
 description: Creating a SCO Client Connection to a Remote Device
 ms.assetid: e5a4ed14-1fb0-4a5f-b388-5e536d674c23
-keywords: ["Synchronous Connection-Oriented WDK Bluetooth", "SCO profile drivers WDK Bluetooth", "initiating SCO connections"]
+keywords:
+- Synchronous Connection-Oriented WDK Bluetooth
+- SCO profile drivers WDK Bluetooth
+- initiating SCO connections
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a SCO Client Connection to a Remote Device

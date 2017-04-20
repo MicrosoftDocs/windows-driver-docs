@@ -3,7 +3,17 @@ title: Working with USB Interfaces
 author: windows-driver-content
 description: Working with USB Interfaces
 ms.assetid: 6a1801e4-bd46-4a78-8c30-7dc62e41a37a
-keywords: ["USB I/O targets WDK KMDF , USB interfaces", "USB interfaces WDK KMDF", "framework objects WDK KMDF , USB interface objects", "interface objects WDK KMDF", "alternate USB interface settings WDK KMDF"]
+keywords:
+- USB I/O targets WDK KMDF , USB interfaces
+- USB interfaces WDK KMDF
+- framework objects WDK KMDF , USB interface objects
+- interface objects WDK KMDF
+- alternate USB interface settings WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Working with USB Interfaces

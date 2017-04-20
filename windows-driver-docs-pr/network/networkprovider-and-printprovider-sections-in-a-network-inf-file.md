@@ -2,7 +2,18 @@
 title: NetworkProvider and PrintProvider Sections in a Network INF File
 description: NetworkProvider and PrintProvider Sections in a Network INF File
 ms.assetid: 9ce32644-2b11-4c03-9743-d678ff8de229
-keywords: ["INF files WDK network , PrintProvider section", "network INF files WDK , PrintProvider section", "INF files WDK network , NetworkProvider section", "network INF files WDK , NetworkProvider section", "PrintProvider section WDK networking", "NetworkProvider section WDK networking"]
+keywords:
+- INF files WDK network , PrintProvider section
+- network INF files WDK , PrintProvider section
+- INF files WDK network , NetworkProvider section
+- network INF files WDK , NetworkProvider section
+- PrintProvider section WDK networking
+- NetworkProvider section WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NetworkProvider and PrintProvider Sections in a Network INF File

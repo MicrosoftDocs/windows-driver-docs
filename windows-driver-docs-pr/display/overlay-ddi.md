@@ -2,7 +2,14 @@
 title: Overlay DDI
 description: Overlay DDI
 ms.assetid: c8f1cdd6-1beb-43bd-b96c-2eea3a51321e
-keywords: ["Overlay DDI WDK Windows 7 display", "Overlay DDI WDK Server 2008 R2 display"]
+keywords:
+- Overlay DDI WDK Windows 7 display
+- Overlay DDI WDK Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overlay DDI

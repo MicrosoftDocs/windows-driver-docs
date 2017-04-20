@@ -2,8 +2,18 @@
 title: Logging
 author: windows-driver-content
 ms.assetid: CB7FE988-6E5A-4669-9FFB-A2B3F8DAF30F
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
-description:
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Logging

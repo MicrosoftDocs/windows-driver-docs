@@ -3,7 +3,17 @@ title: Conditional Statements
 author: windows-driver-content
 description: Conditional Statements
 ms.assetid: eea2f9c1-a73b-46ed-a778-ece6bed615ac
-keywords: ["Unidrv, conditional statements", "GPD files WDK Unidrv , conditional statements", "conditional statements WDK Unidrv", "multiple dependencies WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, conditional statements
+- GPD files WDK Unidrv , conditional statements
+- conditional statements WDK Unidrv
+- multiple dependencies WDK Unidrv
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Conditional Statements

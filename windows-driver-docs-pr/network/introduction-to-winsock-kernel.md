@@ -2,7 +2,14 @@
 title: Introduction to Winsock Kernel
 description: Introduction to Winsock Kernel
 ms.assetid: 52c65b9f-e3b3-4b0d-8334-7db1abb2c971
-keywords: ["Winsock Kernel WDK networking , about Winsock Kernel", "WSK WDK networking , about Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , about Winsock Kernel
+- WSK WDK networking , about Winsock Kernel
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Winsock Kernel

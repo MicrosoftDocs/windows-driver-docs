@@ -2,7 +2,21 @@
 title: Supporting Banked Frame Buffers
 description: Supporting Banked Frame Buffers
 ms.assetid: edb0421b-fd1d-43da-9c1f-3414182282fb
-keywords: ["display drivers WDK Windows 2000 , banked frame buffers", "banked frame buffers WDK Windows 2000 display", "frame buffers WDK Windows 2000 display", "banked memory WDK Windows 2000 display", "banked callbacks WDK Windows 2000 display", "banks WDK Windows 2000 display", "mapping video memory to banked frame buffer", "spanning multiple banks", "multiple banks in frame buffer WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , banked frame buffers
+- banked frame buffers WDK Windows 2000 display
+- frame buffers WDK Windows 2000 display
+- banked memory WDK Windows 2000 display
+- banked callbacks WDK Windows 2000 display
+- banks WDK Windows 2000 display
+- mapping video memory to banked frame buffer
+- spanning multiple banks
+- multiple banks in frame buffer WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Banked Frame Buffers

@@ -2,7 +2,14 @@
 title: Making PortDMus the Default DirectMusic Port Driver
 description: Making PortDMus the Default DirectMusic Port Driver
 ms.assetid: 1e498eb1-8a48-4240-8557-2fd2bba02abb
-keywords: ["port drivers WDK audio , default DMus port driver", "default DMus port driver"]
+keywords:
+- port drivers WDK audio , default DMus port driver
+- default DMus port driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Making PortDMus the Default DirectMusic Port Driver

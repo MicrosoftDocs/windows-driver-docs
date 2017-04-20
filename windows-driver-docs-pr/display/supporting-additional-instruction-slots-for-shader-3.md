@@ -2,7 +2,16 @@
 title: Supporting Additional Instruction Slots for Shader 3
 description: Supporting Additional Instruction Slots for Shader 3
 ms.assetid: 8ff00178-cd08-42ce-8dea-127fc0d04733
-keywords: ["instruction slots WDK DirectX 9.0", "shaders WDK DirectX 9.0", "pixel shaders WDK DirectX 9.0", "vertex shaders WDK DirectX 9.0"]
+keywords:
+- instruction slots WDK DirectX 9.0
+- shaders WDK DirectX 9.0
+- pixel shaders WDK DirectX 9.0
+- vertex shaders WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Additional Instruction Slots for Shader 3

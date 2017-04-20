@@ -2,6 +2,11 @@
 title: Residency overview
 description: Residency overview
 ms.assetid: E610C2B8-354C-4DF5-8B25-6472A9313B15
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Residency overview

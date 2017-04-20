@@ -3,6 +3,11 @@ title: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Read
 author: windows-driver-content
 description: EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Read
 ms.assetid: 9b5525a4-d98c-4328-8ebe-55ede53befca
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_SIMPLE\_WINPHONE\_IO\_PROTOCOL.Read

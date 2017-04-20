@@ -3,6 +3,11 @@ title: Devices and Printers
 author: windows-driver-content
 description: Devices and Printers
 ms.assetid: 78a2a012-a9be-4280-a33e-5d1c29d4ff07
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Devices and Printers

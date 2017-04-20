@@ -2,7 +2,15 @@
 title: Format of a Text Log Section Footer
 description: Format of a Text Log Section Footer
 ms.assetid: 3b804934-a695-4091-a3ef-03f7598cbe63
-keywords: ["section footer WDK SetupAPI", "formats WDK SetupAPI logging", "text logs WDK SetupAPI , section footer"]
+keywords:
+- section footer WDK SetupAPI
+- formats WDK SetupAPI logging
+- text logs WDK SetupAPI , section footer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Format of a Text Log Section Footer

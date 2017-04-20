@@ -2,7 +2,15 @@
 title: Native 802.11 Cipher Operations
 description: Native 802.11 Cipher Operations
 ms.assetid: 37b8baf1-1698-4665-b36f-fd374920d257
-keywords: ["Native 802.11 miniport drivers WDK networking , cipher operations", "miniport drivers WDK Native 802.11 , cipher operations", "cipher operations WDK Native 802.11"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , cipher operations
+- miniport drivers WDK Native 802.11 , cipher operations
+- cipher operations WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Cipher Operations

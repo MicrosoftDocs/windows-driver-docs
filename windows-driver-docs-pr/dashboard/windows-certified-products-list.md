@@ -2,6 +2,11 @@
 title: Windows Certified Products List
 description: Windows Certified Products List
 ms.assetid: e03b18e3-5c5c-4636-89dc-ab15ae6b25a0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Certified Products List

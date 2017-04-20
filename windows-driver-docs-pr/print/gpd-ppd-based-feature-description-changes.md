@@ -3,6 +3,11 @@ title: GPD/PPD-Based Feature Description Changes
 author: windows-driver-content
 description: GPD/PPD-Based Feature Description Changes
 ms.assetid: 22333d78-f78f-4031-a9f3-50b43ec746b6
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GPD/PPD-Based Feature Description Changes

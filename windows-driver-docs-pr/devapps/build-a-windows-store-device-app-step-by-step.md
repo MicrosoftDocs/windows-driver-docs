@@ -2,6 +2,11 @@
 title: Build a Windows Store device app step-by-step
 description: This step-by-step guide describes in detail how to build a Windows Store device app with Microsoft Visual Studio 2013 and the Device Metadata Authoring Wizard.
 ms.assetid: 2E3B47B6-1278-48EC-A530-64B8970A0142
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="devapps.build_a_windows_store_device_app_step-by-step"></span>Build a Windows Store device app step-by-step

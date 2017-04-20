@@ -2,7 +2,17 @@
 title: Winsock Kernel
 description: Winsock Kernel
 ms.assetid: 89d389ff-1a5e-4889-8009-c0fe3b6273f9
-keywords: ["Winsock Kernel WDK networking", "WSK WDK networking", "kernel-mode NPI WDK Winsock Kernel", "NPI WDK Winsock Kernel", "sockets WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking
+- WSK WDK networking
+- kernel-mode NPI WDK Winsock Kernel
+- NPI WDK Winsock Kernel
+- sockets WDK Winsock Kernel
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winsock Kernel

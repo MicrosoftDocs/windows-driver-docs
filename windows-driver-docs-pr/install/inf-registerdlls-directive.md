@@ -2,13 +2,19 @@
 title: INF RegisterDlls Directive
 description: A RegisterDlls directive references one or more INF sections used to specify files that are OLE controls and require self-registration.
 ms.assetid: 59da13e6-f801-4efe-8cd3-d0305e503c24
-keywords: ["INF RegisterDlls Directive Device and Driver Installation"]
+keywords:
+- INF RegisterDlls Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF RegisterDlls Directive
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF RegisterDlls Directive

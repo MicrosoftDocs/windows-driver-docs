@@ -2,7 +2,16 @@
 title: Accessing Profile and Context Data
 description: Accessing Profile and Context Data
 ms.assetid: 88463b20-e61b-4258-b5ff-9b6880c1d0f6
-keywords: ["custom UI WDK Native 802.11 IHV UI Extensions DLL , profile data", "custom UI WDK Native 802.11 IHV UI Extensions DLL , context data", "context data WDK networking", "profile data WDK networking"]
+keywords:
+- custom UI WDK Native 802.11 IHV UI Extensions DLL , profile data
+- custom UI WDK Native 802.11 IHV UI Extensions DLL , context data
+- context data WDK networking
+- profile data WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Profile and Context Data

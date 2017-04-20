@@ -2,7 +2,13 @@
 title: Extensible Access Point Power Management
 description: Extensible Access Point Power Management
 ms.assetid: 66a7edb8-8987-488c-a91f-679cae3e948a
-keywords: ["power management WDK networking , Native 802.11 extensible AP"]
+keywords:
+- power management WDK networking , Native 802.11 extensible AP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Access Point Power Management

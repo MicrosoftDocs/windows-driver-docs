@@ -2,7 +2,14 @@
 title: Setting the Number of RSS Processors
 description: Setting the Number of RSS Processors
 ms.assetid: c13db4a1-e345-4368-9bcd-afbd2fd8db7a
-keywords: ["processors WDK RSS", "CPU configuration WDK RSS"]
+keywords:
+- processors WDK RSS
+- CPU configuration WDK RSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the Number of RSS Processors

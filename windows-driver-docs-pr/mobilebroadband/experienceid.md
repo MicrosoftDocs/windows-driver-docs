@@ -2,6 +2,11 @@
 title: ExperienceID
 description: ExperienceID
 ms.assetid: 550527ae-fef9-46c6-816b-d842fe472b68
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ExperienceID

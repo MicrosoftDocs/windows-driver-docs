@@ -3,7 +3,15 @@ title: File System Filter Drivers
 author: windows-driver-content
 description: File System Filter Drivers
 ms.assetid: 9ea59c4a-d6be-4081-82e7-46539d0a1dbd
-keywords: ["filter drivers WDK file system", "file system filter drivers WDK", "file system drivers WDK , filter drivers"]
+keywords:
+- filter drivers WDK file system
+- file system filter drivers WDK
+- file system drivers WDK , filter drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File System Filter Drivers

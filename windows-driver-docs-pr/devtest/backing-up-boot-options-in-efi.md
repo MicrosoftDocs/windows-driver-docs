@@ -2,7 +2,19 @@
 title: Backing up Boot Options in EFI
 description: Backing up Boot Options in EFI
 ms.assetid: a9c7052c-c554-460c-a8ba-12b79126e67f
-keywords: ["back ups WDK boot options , EFI", "NVRAM boot options WDK , backing up", "EFI NVRAM boot options WDK , backing up", "copying boot options", "saving boot options", "boot options WDK , backing up", "Nvrboot tool"]
+keywords:
+- back ups WDK boot options , EFI
+- NVRAM boot options WDK , backing up
+- EFI NVRAM boot options WDK , backing up
+- copying boot options
+- saving boot options
+- boot options WDK , backing up
+- Nvrboot tool
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Backing up Boot Options in EFI

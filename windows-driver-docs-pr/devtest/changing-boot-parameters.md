@@ -2,7 +2,15 @@
 title: Changing Boot Parameters
 description: Changing Boot Parameters
 ms.assetid: e835e1e9-ad80-462b-b55f-2fa0e55009a5
-keywords: ["boot entry parameters WDK", "boot parameters WDK", "boot options WDK , boot parameters"]
+keywords:
+- boot entry parameters WDK
+- boot parameters WDK
+- boot options WDK , boot parameters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing Boot Parameters

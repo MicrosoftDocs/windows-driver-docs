@@ -2,7 +2,17 @@
 title: Miniport Driver Hardware Reset
 description: Miniport Driver Hardware Reset
 ms.assetid: d5209809-039c-4ac2-afdf-1f5144307850
-keywords: ["network interface cards WDK networking , resetting", "NICs WDK networking , resetting", "resetting NIC", "MiniportResetEx", "hardware resets WDK NDIS"]
+keywords:
+- network interface cards WDK networking , resetting
+- NICs WDK networking , resetting
+- resetting NIC
+- MiniportResetEx
+- hardware resets WDK NDIS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Driver Hardware Reset

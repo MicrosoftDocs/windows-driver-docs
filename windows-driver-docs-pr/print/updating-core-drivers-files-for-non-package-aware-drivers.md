@@ -3,6 +3,11 @@ title: Updating Core Drivers Files for Non-Package-Aware Drivers
 author: windows-driver-content
 description: Updating Core Drivers Files for Non-Package-Aware Drivers
 ms.assetid: ce5da376-edac-4cd1-8750-9981bb5b709d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating Core Drivers Files for Non-Package-Aware Drivers

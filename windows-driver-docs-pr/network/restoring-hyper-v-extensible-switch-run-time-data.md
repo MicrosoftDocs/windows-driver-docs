@@ -2,6 +2,11 @@
 title: Restoring Hyper-V Extensible Switch Run-Time Data
 description: Restoring Hyper-V Extensible Switch Run-Time Data
 ms.assetid: 7904FF12-06E9-433F-A0C1-E1FDEF3427B1
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Restoring Hyper-V Extensible Switch Run-Time Data

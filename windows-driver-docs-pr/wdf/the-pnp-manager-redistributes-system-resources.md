@@ -3,7 +3,18 @@ title: The PnP Manager Redistributes System Resources
 author: windows-driver-content
 description: The PnP Manager Redistributes System Resources
 ms.assetid: fc88ae0a-5b78-4292-a101-29d2fc383555
-keywords: ["PnP WDK KMDF , redistributing resources", "Plug and Play WDK KMDF , redistributing resources", "resource redistribution WDK KMDF", "redistributing resources WDK KMDF", "power-down sequence WDK KMDF", "power-up sequence WDK KMDF"]
+keywords:
+- PnP WDK KMDF , redistributing resources
+- Plug and Play WDK KMDF , redistributing resources
+- resource redistribution WDK KMDF
+- redistributing resources WDK KMDF
+- power-down sequence WDK KMDF
+- power-up sequence WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The PnP Manager Redistributes System Resources

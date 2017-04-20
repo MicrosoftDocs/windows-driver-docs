@@ -2,7 +2,13 @@
 title: Unified Device Property Model
 description: Unified Device Property Model
 ms.assetid: 51105f84-38d8-4005-a3fd-4beccc0a2a39
-keywords: ["device properties WDK device installations , unified device property model"]
+keywords:
+- device properties WDK device installations , unified device property model
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unified Device Property Model

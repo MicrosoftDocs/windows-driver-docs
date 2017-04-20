@@ -2,7 +2,14 @@
 title: Making a Call
 description: Making a Call
 ms.assetid: b5273df1-b99f-415c-a099-16a51f3329ee
-keywords: ["call setup WDK CoNDIS", "making calls WDK CoNDIS"]
+keywords:
+- call setup WDK CoNDIS
+- making calls WDK CoNDIS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Making a Call

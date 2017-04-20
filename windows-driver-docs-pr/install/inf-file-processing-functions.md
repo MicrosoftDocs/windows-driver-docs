@@ -2,7 +2,17 @@
 title: INF File Processing Functions
 description: INF File Processing Functions
 ms.assetid: df769d05-9843-44d2-971d-13f1a81755c2
-keywords: ["SetupAPI functions WDK , INF files", "INF files WDK SetupAPI", "SetupCopyOEMInf", "INF file processing functions WDK SetupAPI", "processing functions WDK INF files"]
+keywords:
+- SetupAPI functions WDK , INF files
+- INF files WDK SetupAPI
+- SetupCopyOEMInf
+- INF file processing functions WDK SetupAPI
+- processing functions WDK INF files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF File Processing Functions

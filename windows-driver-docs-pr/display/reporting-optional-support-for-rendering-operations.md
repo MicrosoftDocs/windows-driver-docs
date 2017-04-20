@@ -2,6 +2,11 @@
 title: Reporting Optional Support for Rendering Operations
 description: Reporting Optional Support for Rendering Operations
 ms.assetid: 97a0b8c6-7ff8-47df-97df-4e9714ebc903
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Optional Support for Rendering Operations

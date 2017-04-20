@@ -2,6 +2,11 @@
 title: SIM PIN API
 description: SIM PIN API
 ms.assetid: f1e1dc0f-71ee-47ff-971b-cec36bfa0643
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SIM PIN API

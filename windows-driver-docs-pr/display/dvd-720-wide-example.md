@@ -2,7 +2,16 @@
 title: DVD 720-Wide Example
 description: DVD 720-Wide Example
 ms.assetid: 02761bf5-afae-4f38-9178-6a721fcad84e
-keywords: ["alpha-blend combination WDK DirectX VA , DVD 720-wide example", "blended pictures WDK DirectX VA , DVD 720-wide example", "DVD 720-wide example WDK DirectX VA", "720-wide example WDK DirectX VA"]
+keywords:
+- alpha-blend combination WDK DirectX VA , DVD 720-wide example
+- blended pictures WDK DirectX VA , DVD 720-wide example
+- DVD 720-wide example WDK DirectX VA
+- 720-wide example WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DVD 720-Wide Example

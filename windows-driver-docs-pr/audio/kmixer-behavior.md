@@ -2,7 +2,17 @@
 title: KMixer Behavior
 description: KMixer Behavior
 ms.assetid: 1668176f-3d19-425f-85f5-e51fb1b40acb
-keywords: ["KMixer system driver WDK audio , data intersection", "data-intersection handlers WDK audio , KMixer", "mixed streams WDK audio", "sink pins WDK audio", "source pins WDK audio"]
+keywords:
+- KMixer system driver WDK audio , data intersection
+- data-intersection handlers WDK audio , KMixer
+- mixed streams WDK audio
+- sink pins WDK audio
+- source pins WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KMixer Behavior

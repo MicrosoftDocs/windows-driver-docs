@@ -2,7 +2,15 @@
 title: Background Reading on 802.11
 description: Background Reading on 802.11
 ms.assetid: 5ab3e515-f1de-4180-99bd-d14b1b92e39b
-keywords: ["Native 802.11 WDK networking , background reading", "wireless LAN networks WDK , Native 802.11 background reading", "WLAN networks WDK , Native 802.11 background reading"]
+keywords:
+- Native 802.11 WDK networking , background reading
+- wireless LAN networks WDK , Native 802.11 background reading
+- WLAN networks WDK , Native 802.11 background reading
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Background Reading on 802.11

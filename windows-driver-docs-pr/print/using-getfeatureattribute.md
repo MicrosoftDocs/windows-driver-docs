@@ -3,7 +3,13 @@ title: Using GetFeatureAttribute
 author: windows-driver-content
 description: Using GetFeatureAttribute
 ms.assetid: e5050cb1-c178-405d-bb0e-fd7827198bca
-keywords: ["GetFeatureAttribute"]
+keywords:
+- GetFeatureAttribute
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using GetFeatureAttribute

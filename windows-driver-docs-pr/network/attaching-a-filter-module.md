@@ -2,7 +2,16 @@
 title: Attaching a Filter Module
 description: Attaching a Filter Module
 ms.assetid: 4441383e-cc22-4fe1-9c46-28d405736daa
-keywords: ["filter modules WDK networking , attaching", "attaching filter modules", "filter drivers WDK networking , attaching filter modules", "NDIS filter drivers WDK , attaching filter modules"]
+keywords:
+- filter modules WDK networking , attaching
+- attaching filter modules
+- filter drivers WDK networking , attaching filter modules
+- NDIS filter drivers WDK , attaching filter modules
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attaching a Filter Module

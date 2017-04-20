@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch control path for NDIS status indication
 description: Hyper-V Extensible Switch Control Path for NDIS Status Indications
 ms.assetid: D52FAC95-64EC-4A99-807A-B39DB136D8F9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch Control Path for NDIS Status Indications

@@ -2,7 +2,16 @@
 title: Processing Classify Callouts Asynchronously
 description: Processing Classify Callouts Asynchronously
 ms.assetid: 1026f917-7b21-4b01-8cfd-4d14e92106fe
-keywords: ["asynchronous processing of WFP classify callouts WDK Windows Filtering Platform", "Windows Filtering Platform Callout Drivers WDK , asynchronous processing of classify callouts", "pending WFP classify callouts WDK Windows Filtering Platform", "classify callouts WDK Windows Filtering Platform , asynchronous processing"]
+keywords:
+- asynchronous processing of WFP classify callouts WDK Windows Filtering Platform
+- Windows Filtering Platform Callout Drivers WDK , asynchronous processing of classify callouts
+- pending WFP classify callouts WDK Windows Filtering Platform
+- classify callouts WDK Windows Filtering Platform , asynchronous processing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Classify Callouts Asynchronously

@@ -2,7 +2,14 @@
 title: Graphics DDI Functions for Display Drivers
 description: Graphics DDI Functions for Display Drivers
 ms.assetid: 9edd06bd-7aac-4015-864d-b08f3e3a79fd
-keywords: ["display drivers WDK Windows 2000 , graphics", "graphics DDI functions WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , graphics
+- graphics DDI functions WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Graphics DDI Functions for Display Drivers

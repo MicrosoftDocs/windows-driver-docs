@@ -2,7 +2,17 @@
 title: Static Driver Verifier Error Messages
 description: Static Driver Verifier Error Messages
 ms.assetid: 16fae27c-2495-4b54-9df8-b70ad20d30ab
-keywords: ["Static Driver Verifier WDK , errors", "StaticDV WDK , errors", "SDV WDK , errors", "messages WDK Static Driver Verifier", "errors WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , errors
+- StaticDV WDK , errors
+- SDV WDK , errors
+- messages WDK Static Driver Verifier
+- errors WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier Error Messages

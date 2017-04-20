@@ -2,7 +2,16 @@
 title: Sending Ethernet Frames
 description: Sending Ethernet Frames
 ms.assetid: 9d1037b9-ef5c-4ed8-9204-5729eff2cea3
-keywords: ["Ethernet WDK networking", "frames WDK networking", "TCP/IP transport of Ethernet frames WDK networking", "sending Ethernet frames"]
+keywords:
+- Ethernet WDK networking
+- frames WDK networking
+- TCP/IP transport of Ethernet frames WDK networking
+- sending Ethernet frames
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending Ethernet Frames

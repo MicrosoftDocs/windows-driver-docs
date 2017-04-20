@@ -2,7 +2,21 @@
 title: Public Symbols and Private Symbols
 description: Public Symbols and Private Symbols
 ms.assetid: 83979008-f9ea-4976-8acd-d7efb82947cd
-keywords: ["BinPlace WDK , public symbols", "BinPlace WDK , private symbols", "symbol files WDK BinPlace", "private symbols WDK BinPlace", "public symbols WDK BinPlace", "reducing symbols in symbol files", "full symbol files WDK BinPlace", "stripped symbol files WDK BinPlace", "SymChk tool WDK BinPlace"]
+keywords:
+- BinPlace WDK , public symbols
+- BinPlace WDK , private symbols
+- symbol files WDK BinPlace
+- private symbols WDK BinPlace
+- public symbols WDK BinPlace
+- reducing symbols in symbol files
+- full symbol files WDK BinPlace
+- stripped symbol files WDK BinPlace
+- SymChk tool WDK BinPlace
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Public Symbols and Private Symbols

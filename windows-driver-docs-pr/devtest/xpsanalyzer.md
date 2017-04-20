@@ -2,7 +2,13 @@
 title: XpsAnalyzer
 description: XpsAnalyzer
 ms.assetid: 5d8b2318-303a-4e44-bfd2-aa41a67a9ea5
-keywords: ["XpsAnalyzer WDK"]
+keywords:
+- XpsAnalyzer WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XpsAnalyzer

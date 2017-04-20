@@ -2,7 +2,13 @@
 title: Child I/O Class
 description: Child I/O Class
 ms.assetid: e467ef0c-a969-4cc1-a5b5-2416794051f2
-keywords: ["child I/O class WDK display"]
+keywords:
+- child I/O class WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Child I/O Class

@@ -2,7 +2,16 @@
 title: History of NDIS SGDMA
 description: History of NDIS SGDMA
 ms.assetid: bb2db346-1272-40e0-896a-95e14dd9d2f8
-keywords: ["scatter/gather DMA WDK networking , history", "SGDMA WDK networking , history", "scatter/gather DMA WDK networking , limitations", "SGDMA WDK networking , limitations"]
+keywords:
+- scatter/gather DMA WDK networking , history
+- SGDMA WDK networking , history
+- scatter/gather DMA WDK networking , limitations
+- SGDMA WDK networking , limitations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # History of NDIS SGDMA

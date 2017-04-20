@@ -3,6 +3,11 @@ title: Windows Hello camera driver bring up guide
 author: windows-driver-content
 description: Windows Hello provides you the ability to enable face authentication to log on to a Windows 10 system or device.
 ms.assetid: 5CE619F4-E136-4F8F-8F90-F7F96DE4642E
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Hello camera driver bring up guide

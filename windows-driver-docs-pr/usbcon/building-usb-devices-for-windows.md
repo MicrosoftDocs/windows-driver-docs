@@ -2,6 +2,11 @@
 Description: This section provides links for manufacturers of USB peripheral devices.
 title: Building USB devices for Windows
 author: windows-driver-content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building USB devices for Windows

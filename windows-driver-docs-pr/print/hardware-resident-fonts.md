@@ -3,7 +3,14 @@ title: Hardware-Resident Fonts
 author: windows-driver-content
 description: Hardware-Resident Fonts
 ms.assetid: 359735c2-bfa3-4c32-82a5-1d455c4eacb1
-keywords: ["printer font descriptions WDK Unidrv , hardware-resident fonts", "hardware-resident fonts WDK Unidrv"]
+keywords:
+- printer font descriptions WDK Unidrv , hardware-resident fonts
+- hardware-resident fonts WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware-Resident Fonts

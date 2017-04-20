@@ -2,7 +2,15 @@
 title: Setting the Directory Path of the Text Logs
 description: Setting the Directory Path of the Text Logs
 ms.assetid: d56a8f6c-365b-427d-b965-65616ede3d7e
-keywords: ["text logs WDK SetupAPI , directory path", "directory paths WDK SetupAPI logging", "LogPath"]
+keywords:
+- text logs WDK SetupAPI , directory path
+- directory paths WDK SetupAPI logging
+- LogPath
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the Directory Path of the Text Logs

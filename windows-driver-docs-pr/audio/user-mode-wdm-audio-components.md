@@ -2,7 +2,22 @@
 title: User-Mode WDM Audio Components
 description: User-Mode WDM Audio Components
 ms.assetid: 067944fb-6854-4ae8-81ca-9b8f2eed939e
-keywords: ["user-mode components WDK audio", "WinMM system components WDK audio", "WDMAud system driver WDK audio", "DirectSound system component WDK audio", "DirectMusic system component WDK audio", "Windows Audio Services WDK audio", "waveOut API WDK audio", "audio services WDK", "WDMAud system driver", "WDMAud system driver, user mode (wdmaud.drv)"]
+keywords:
+- user-mode components WDK audio
+- WinMM system components WDK audio
+- WDMAud system driver WDK audio
+- DirectSound system component WDK audio
+- DirectMusic system component WDK audio
+- Windows Audio Services WDK audio
+- waveOut API WDK audio
+- audio services WDK
+- WDMAud system driver
+- WDMAud system driver, user mode (wdmaud.drv)
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User-Mode WDM Audio Components

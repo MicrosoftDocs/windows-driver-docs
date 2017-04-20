@@ -2,7 +2,23 @@
 title: Shading Requirements
 description: Shading Requirements
 ms.assetid: 6c4f3dee-a955-4140-8b64-e9289094f530
-keywords: ["shading WDK Direct3D", "flat shading WDK Direct3D", "Gouraud shading WDK Direct3D", "specular highlighting WDK Direct3D", "alpha blending WDK Direct3D", "dithering WDK Windows 2000 display", "color-key WDK Direct3D", "transparency WDK Direct3D", "blending WDK Direct3D", "highlighting WDK Direct3D", "D3DPRIMCAPS"]
+keywords:
+- shading WDK Direct3D
+- flat shading WDK Direct3D
+- Gouraud shading WDK Direct3D
+- specular highlighting WDK Direct3D
+- alpha blending WDK Direct3D
+- dithering WDK Windows 2000 display
+- color-key WDK Direct3D
+- transparency WDK Direct3D
+- blending WDK Direct3D
+- highlighting WDK Direct3D
+- D3DPRIMCAPS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Shading Requirements

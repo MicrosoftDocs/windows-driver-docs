@@ -2,7 +2,25 @@
 title: Color Fills and Pattern Fills
 description: Color Fills and Pattern Fills
 ms.assetid: 6e597405-e40f-4cb8-b177-896681745e00
-keywords: ["drawing blt WDK DirectDraw , color fills", "DirectDraw blitting WDK Windows 2000 display , color fills", "blitting WDK DirectDraw , color fills", "blt WDK DirectDraw , color fills", "surfaces WDK DirectDraw , blitting", "drawing blt WDK DirectDraw , pattern fills", "DirectDraw blitting WDK Windows 2000 display , pattern fills", "blitting WDK DirectDraw , pattern fills", "blt WDK DirectDraw , pattern fills", "color fills WDK DirectDraw", "pattern fills WDK DirectDraw", "fill colors WDK DirectDraw", "fill patterns WDK DirectDraw"]
+keywords:
+- drawing blt WDK DirectDraw , color fills
+- DirectDraw blitting WDK Windows 2000 display , color fills
+- blitting WDK DirectDraw , color fills
+- blt WDK DirectDraw , color fills
+- surfaces WDK DirectDraw , blitting
+- drawing blt WDK DirectDraw , pattern fills
+- DirectDraw blitting WDK Windows 2000 display , pattern fills
+- blitting WDK DirectDraw , pattern fills
+- blt WDK DirectDraw , pattern fills
+- color fills WDK DirectDraw
+- pattern fills WDK DirectDraw
+- fill colors WDK DirectDraw
+- fill patterns WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Color Fills and Pattern Fills

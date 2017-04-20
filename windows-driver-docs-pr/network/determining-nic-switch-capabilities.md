@@ -2,6 +2,11 @@
 title: Determining NIC Switch Capabilities
 description: Determining NIC Switch Capabilities
 ms.assetid: 5E627E52-2D47-4EA0-80D9-6979891CCE96
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining NIC Switch Capabilities

@@ -2,6 +2,11 @@
 title: Forwarding Extensions
 description: Forwarding Extensions
 ms.assetid: 7ABBB3F3-66F5-4651-8A5A-94940F3FD82D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Forwarding Extensions

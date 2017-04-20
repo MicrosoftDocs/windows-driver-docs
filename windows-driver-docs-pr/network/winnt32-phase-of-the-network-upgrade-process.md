@@ -2,7 +2,15 @@
 title: Winnt32 Phase of the Network Upgrade Process
 description: Winnt32 Phase of the Network Upgrade Process
 ms.assetid: a83edcfb-e075-4763-8a6a-33879ccf2357
-keywords: ["network component upgrades WDK , phases", "upgrading network components WDK , phases", "Winnt32 phase WDK networking"]
+keywords:
+- network component upgrades WDK , phases
+- upgrading network components WDK , phases
+- Winnt32 phase WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winnt32 Phase of the Network Upgrade Process

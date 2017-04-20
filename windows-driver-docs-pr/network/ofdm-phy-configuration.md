@@ -2,7 +2,15 @@
 title: OFDM PHY Configuration
 description: OFDM PHY Configuration
 ms.assetid: 0ec458c2-1427-44d7-a1a4-f70b1d73fbb4
-keywords: ["PHY configuration WDK Native 802.11 , orthogonal frequency division multiplexing", "orthogonal frequency division multiplexing WDK Native 802.11", "OFDM WDK Native 802.11"]
+keywords:
+- PHY configuration WDK Native 802.11 , orthogonal frequency division multiplexing
+- orthogonal frequency division multiplexing WDK Native 802.11
+- OFDM WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # OFDM PHY Configuration

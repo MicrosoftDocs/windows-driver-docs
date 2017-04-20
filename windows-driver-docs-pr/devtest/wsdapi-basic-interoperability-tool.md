@@ -2,7 +2,19 @@
 title: WSDAPI Basic Interoperability Tool
 description: WSDAPI Basic Interoperability Tool
 ms.assetid: c4a610d4-3adf-406d-88d6-0879eb98b54f
-keywords: ["tools WDK , testing drivers", "WSDBIT tool WDK", "WSDAPI Basic Interoperability Tool WDK", "DWPS WDK", "Device Profile for Web Services WDK", "Web Services for Devices API WDK", "WSDAPI WDK"]
+keywords:
+- tools WDK , testing drivers
+- WSDBIT tool WDK
+- WSDAPI Basic Interoperability Tool WDK
+- DWPS WDK
+- Device Profile for Web Services WDK
+- Web Services for Devices API WDK
+- WSDAPI WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WSDAPI Basic Interoperability Tool

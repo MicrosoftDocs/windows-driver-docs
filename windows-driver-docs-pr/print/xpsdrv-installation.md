@@ -3,7 +3,14 @@ title: XPSDrv Installation
 author: windows-driver-content
 description: XPSDrv Installation
 ms.assetid: 0b5ef114-2862-46f9-bd32-ae09fa4e6a92
-keywords: ["XPSDrv printer drivers WDK , installing", "INF files WDK print , XPSDrv printer drivers"]
+keywords:
+- XPSDrv printer drivers WDK , installing
+- INF files WDK print , XPSDrv printer drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPSDrv Installation

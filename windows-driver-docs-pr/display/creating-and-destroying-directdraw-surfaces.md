@@ -2,7 +2,23 @@
 title: Creating and Destroying DirectDraw Surfaces
 description: Creating and Destroying DirectDraw Surfaces
 ms.assetid: d5557897-1810-448e-a2a8-aba96643b19c
-keywords: ["drawing surfaces WDK DirectDraw , creating", "DirectDraw surfaces WDK Windows 2000 display , creating", "surfaces WDK DirectDraw , creating", "drawing surfaces WDK DirectDraw , destroying", "DirectDraw surfaces WDK Windows 2000 display , destroying", "surfaces WDK DirectDraw , destroying", "destroying surfaces WDK DirectDraw", "DdCanCreateSurface", "DdCreateSurface", "D3dCreateSurfaceEx", "DdDestroySurface"]
+keywords:
+- drawing surfaces WDK DirectDraw , creating
+- DirectDraw surfaces WDK Windows 2000 display , creating
+- surfaces WDK DirectDraw , creating
+- drawing surfaces WDK DirectDraw , destroying
+- DirectDraw surfaces WDK Windows 2000 display , destroying
+- surfaces WDK DirectDraw , destroying
+- destroying surfaces WDK DirectDraw
+- DdCanCreateSurface
+- DdCreateSurface
+- D3dCreateSurfaceEx
+- DdDestroySurface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating and Destroying DirectDraw Surfaces

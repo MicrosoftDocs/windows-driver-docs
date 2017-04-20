@@ -3,6 +3,11 @@ title: Device Maintenance
 author: windows-driver-content
 description: A device maintenance feature has been introduced in Windows 8.1 and later versions of Windows.
 ms.assetid: 310E92A9-F751-4346-9B2D-0578A136AD20
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Maintenance

@@ -2,6 +2,11 @@
 title: Browse Reports
 description: Browse Reports
 ms.assetid: 2d8efcbf-b740-4ef4-8791-7791c75b474a
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Browse Reports

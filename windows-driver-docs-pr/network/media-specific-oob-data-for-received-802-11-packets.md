@@ -2,7 +2,14 @@
 title: Media-Specific OOB Data for Received 802.11 Packets
 description: Media-Specific OOB Data for Received 802.11 Packets
 ms.assetid: 0d53a5c9-8572-457f-8aa4-8c2472932722
-keywords: ["OOB data WDK Native 802.11", "media-specific OOB data WDK Native 802.11"]
+keywords:
+- OOB data WDK Native 802.11
+- media-specific OOB data WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Media-Specific OOB Data for Received 802.11 Packets

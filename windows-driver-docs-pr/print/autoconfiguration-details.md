@@ -3,7 +3,14 @@ title: Autoconfiguration Details
 author: windows-driver-content
 description: Autoconfiguration Details
 ms.assetid: ba596ce3-724d-45c4-85ee-2486a31a0c01
-keywords: ["autoconfiguration WDK printer , about printer autoconfiguration", "printer autoconfiguration WDK printer , about printer autoconfiguration"]
+keywords:
+- autoconfiguration WDK printer , about printer autoconfiguration
+- printer autoconfiguration WDK printer , about printer autoconfiguration
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autoconfiguration Details

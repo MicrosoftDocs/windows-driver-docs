@@ -2,6 +2,11 @@
 title: Network Direct Kernel Provider Interface (NDKPI)
 description: In NDIS 6.30 and later (Windows Server 2012 and later), the Network Direct Kernel Provider Interface (NDKPI) enables kernel-mode Windows components, such as SMB server and client, to use remote direct memory access (RDMA) functionality that is provided by independent hardware vendors (IHVs).
 ms.assetid: B7E52112-E049-42E2-9BB3-311EB0D1C577
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Direct Kernel Provider Interface (NDKPI)

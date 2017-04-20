@@ -2,7 +2,13 @@
 title: NDIS 6.20 Updates to NDIS 6.1 Features
 description: NDIS 6.20 Updates to NDIS 6.1 Features
 ms.assetid: b57af71b-2718-4a52-888b-b378b3e6097f
-keywords: ["NDIS 6.20 WDK , updates to NDIS 6.1 features"]
+keywords:
+- NDIS 6.20 WDK , updates to NDIS 6.1 features
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS 6.20 Updates to NDIS 6.1 Features

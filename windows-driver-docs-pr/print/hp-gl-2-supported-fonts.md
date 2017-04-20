@@ -3,7 +3,15 @@ title: HP-GL/2 Supported Fonts
 author: windows-driver-content
 description: HP-GL/2 Supported Fonts
 ms.assetid: e7ddc9d0-3007-4c63-9176-3507909282f7
-keywords: ["HP-GL/2 monochrome WDK Unidrv , fonts", "PCL-5e WDK Unidrv , fonts", "fonts WDK HP-GL/2"]
+keywords:
+- HP-GL/2 monochrome WDK Unidrv , fonts
+- PCL-5e WDK Unidrv , fonts
+- fonts WDK HP-GL/2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HP-GL/2 Supported Fonts

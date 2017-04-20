@@ -2,7 +2,17 @@
 title: Offloading TCP Chimney State
 description: Offloading TCP Chimney State
 ms.assetid: eaf0e355-bd06-4ed3-b4a0-2ce08e9a2b9c
-keywords: ["TCP chimney offload WDK networking , offloading state process", "chimney offload WDK networking , offloading state process", "offload state WDK TCP chimney offload , offloading process", "offloading state process WDK TCP chimney offload", "state offloading process WDK TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , offloading state process
+- chimney offload WDK networking , offloading state process
+- offload state WDK TCP chimney offload , offloading process
+- offloading state process WDK TCP chimney offload
+- state offloading process WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offloading TCP Chimney State

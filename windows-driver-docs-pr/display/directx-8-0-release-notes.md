@@ -2,7 +2,13 @@
 title: DirectX 8.0 Release Notes
 description: DirectX 8.0 Release Notes
 ms.assetid: 8d1b6a86-ca46-432e-886a-95a75dbea3f1
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX 8.0 Release Notes

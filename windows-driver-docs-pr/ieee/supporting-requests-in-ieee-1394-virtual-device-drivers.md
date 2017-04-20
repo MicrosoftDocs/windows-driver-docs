@@ -3,7 +3,21 @@ title: Supporting Requests in IEEE 1394 Virtual Device Drivers
 author: windows-driver-content
 description: Supporting Requests in IEEE 1394 Virtual Device Drivers
 ms.assetid: 17e0c84b-29d9-461f-a5f6-7677ecb7fb6e
-keywords: ["emulation drivers WDK IEEE 1394 bus", "hardware emulation drivers WDK IEEE 1394 bus", "virtual devices WDK IEEE 1394 bus", "REQUEST_ASYNC_READ", "REQUEST_ASYNC_WRITE", "REQUEST_ASYNC_LOCK", "REQUEST_ALLOCATE_ADDRESS_RANGE", "REQUEST_GET_ADDR_FROM_DEVICE_OBJECT", "REQUEST_SET_DEVICE_XMIT_PROPERTIES"]
+keywords:
+- emulation drivers WDK IEEE 1394 bus
+- hardware emulation drivers WDK IEEE 1394 bus
+- virtual devices WDK IEEE 1394 bus
+- REQUEST_ASYNC_READ
+- REQUEST_ASYNC_WRITE
+- REQUEST_ASYNC_LOCK
+- REQUEST_ALLOCATE_ADDRESS_RANGE
+- REQUEST_GET_ADDR_FROM_DEVICE_OBJECT
+- REQUEST_SET_DEVICE_XMIT_PROPERTIES
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Requests in IEEE 1394 Virtual Device Drivers

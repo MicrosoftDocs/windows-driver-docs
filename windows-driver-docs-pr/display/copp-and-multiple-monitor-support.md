@@ -2,7 +2,18 @@
 title: COPP and Multiple-Monitor Support
 description: COPP and Multiple-Monitor Support
 ms.assetid: 96bd24f6-4aba-4605-8fd4-465c86061044
-keywords: ["copy protection WDK COPP , multiple monitors", "video copy protection WDK COPP , multiple monitors", "COPP WDK DirectX VA , multiple monitors", "protected video WDK COPP , multiple monitors", "multiple monitors WDK COPP", "monitors WDK COPP"]
+keywords:
+- copy protection WDK COPP , multiple monitors
+- video copy protection WDK COPP , multiple monitors
+- COPP WDK DirectX VA , multiple monitors
+- protected video WDK COPP , multiple monitors
+- multiple monitors WDK COPP
+- monitors WDK COPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP and Multiple-Monitor Support

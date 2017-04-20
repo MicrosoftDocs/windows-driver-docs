@@ -3,7 +3,20 @@ title: Asynchronous I/O for IEEE 1394 Devices
 author: windows-driver-content
 description: Asynchronous I/O for IEEE 1394 Devices
 ms.assetid: 36ca83d9-83ed-4366-81e7-63c5337f8643
-keywords: ["IEEE 1394 WDK buses , asynchronous I/O", "1394 WDK buses , asynchronous I/O", "asynchronous I/O WDK IEEE 1394 bus", "I/O WDK IEEE 1394 bus", "I/O request packets WDK IEEE 1394 bus", "IRPs WDK IEEE 1394 bus", "transferring data WDK IEEE 1394 bus", "PDOs WDK IEEE 1394 bus"]
+keywords:
+- IEEE 1394 WDK buses , asynchronous I/O
+- 1394 WDK buses , asynchronous I/O
+- asynchronous I/O WDK IEEE 1394 bus
+- I/O WDK IEEE 1394 bus
+- I/O request packets WDK IEEE 1394 bus
+- IRPs WDK IEEE 1394 bus
+- transferring data WDK IEEE 1394 bus
+- PDOs WDK IEEE 1394 bus
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Asynchronous I/O for IEEE 1394 Devices

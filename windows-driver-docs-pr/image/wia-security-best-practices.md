@@ -3,6 +3,11 @@ title: WIA Security Best Practices
 author: windows-driver-content
 description: WIA Security Best Practices
 ms.assetid: 3c8bd0e9-5832-4854-83ab-d422c617c67c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Security Best Practices

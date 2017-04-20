@@ -2,7 +2,16 @@
 title: Handling an MSI Interrupt
 description: Handling an MSI Interrupt
 ms.assetid: c8e2a5a4-17f5-48a3-a2d0-6eca2a0b7f45
-keywords: ["MSI-X WDK networking , handling interrupts", "message-signaled interrupts WDK networking , handling interrupts", "MSIs WDK networking , handling interrupts", "interrupts WDK networking , handling"]
+keywords:
+- MSI-X WDK networking , handling interrupts
+- message-signaled interrupts WDK networking , handling interrupts
+- MSIs WDK networking , handling interrupts
+- interrupts WDK networking , handling
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an MSI Interrupt

@@ -2,7 +2,21 @@
 title: Test-Signing Driver Packages
 description: Test-Signing Driver Packages
 ms.assetid: 84727762-5ba0-48ea-8d5a-7ac54aadbb7e
-keywords: ["driver signing WDK , driver packages", "signing drivers WDK , driver packages", "digital signatures WDK , driver packages", "signatures WDK , driver packages", "driver package digital signatures WDK", "package digital signatures WDK", "test signing drivers WDK , driver packages", "test signing driver packages WDK", "test signing driver packages WDK , about test signing driver packages"]
+keywords:
+- driver signing WDK , driver packages
+- signing drivers WDK , driver packages
+- digital signatures WDK , driver packages
+- signatures WDK , driver packages
+- driver package digital signatures WDK
+- package digital signatures WDK
+- test signing drivers WDK , driver packages
+- test signing driver packages WDK
+- test signing driver packages WDK , about test signing driver packages
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test-Signing Driver Packages

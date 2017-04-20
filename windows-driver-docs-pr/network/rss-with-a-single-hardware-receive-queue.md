@@ -2,7 +2,18 @@
 title: RSS with a Single Hardware Receive Queue
 description: RSS with a Single Hardware Receive Queue
 ms.assetid: 835f5646-4514-4973-978a-9bab0777a66c
-keywords: ["receive-side scaling WDK networking , hardware queuing", "RSS WDK networking , hardware queuing", "hardware queuing WDK RSS", "receive queuing WDK RSS", "single receive queue WDK RSS", "multiple receive queues WDK RSS"]
+keywords:
+- receive-side scaling WDK networking , hardware queuing
+- RSS WDK networking , hardware queuing
+- hardware queuing WDK RSS
+- receive queuing WDK RSS
+- single receive queue WDK RSS
+- multiple receive queues WDK RSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RSS with a Single Hardware Receive Queue

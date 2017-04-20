@@ -2,6 +2,11 @@
 title: REMOTE\_NDIS\_RESET\_CMPLT
 description: REMOTE\_NDIS\_RESET\_CMPLT
 ms.assetid: ae0e2c8a-3fc9-44e5-9f67-c255fdf7dbc4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # REMOTE\_NDIS\_RESET\_CMPLT

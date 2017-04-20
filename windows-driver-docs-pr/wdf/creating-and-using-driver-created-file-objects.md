@@ -3,7 +3,19 @@ title: Creating and Using Driver-Created File Objects
 author: windows-driver-content
 description: Creating and Using Driver-Created File Objects
 ms.assetid: 84b677b4-fddf-4f06-9ea6-e4642c3f1b2d
-keywords: ["driver-created file object WDK UMDF", "driver-created file object WDK UMDF , creating and using", "file object to handle I/O WDK UMDF , driver-created, creating and using", "I/O requests WDK UMDF , file object, creating and using", "User-Mode Driver Framework WDK , file object to handle I/O, creating and using", "UMDF WDK , file object to handle I/O, creating and using", "user-mode drivers WDK UMDF , file object to handle I/O, creating and using"]
+keywords:
+- driver-created file object WDK UMDF
+- driver-created file object WDK UMDF , creating and using
+- file object to handle I/O WDK UMDF , driver-created, creating and using
+- I/O requests WDK UMDF , file object, creating and using
+- User-Mode Driver Framework WDK , file object to handle I/O, creating and using
+- UMDF WDK , file object to handle I/O, creating and using
+- user-mode drivers WDK UMDF , file object to handle I/O, creating and using
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating and Using Driver-Created File Objects

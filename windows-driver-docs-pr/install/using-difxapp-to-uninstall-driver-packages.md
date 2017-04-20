@@ -2,6 +2,11 @@
 title: Using DIFxApp to Uninstall Driver Packages
 description: Using DIFxApp to Uninstall Driver Packages
 ms.assetid: 4bf6ba68-8e81-48aa-87b3-fbeb79f4ec26
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using DIFxApp to Uninstall Driver Packages

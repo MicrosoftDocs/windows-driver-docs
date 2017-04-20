@@ -2,7 +2,17 @@
 title: Derived NET\_BUFFER\_LIST Structures
 description: Derived NET\_BUFFER\_LIST Structures
 ms.assetid: 6660aef5-ba67-4f15-98b6-547fa753bc76
-keywords: ["NET_BUFFER_LIST", "network data WDK , structures", "data WDK networking , structures", "packets WDK networking , data structures", "derived structures WDK networking"]
+keywords:
+- NET_BUFFER_LIST
+- network data WDK , structures
+- data WDK networking , structures
+- packets WDK networking , data structures
+- derived structures WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Derived NET\_BUFFER\_LIST Structures

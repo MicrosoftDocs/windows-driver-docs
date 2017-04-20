@@ -3,7 +3,17 @@ title: Color Management of JPEG and PNG Images
 author: windows-driver-content
 description: Color Management of JPEG and PNG Images
 ms.assetid: ece0578d-bf03-4eee-9568-40ef684ba8a7
-keywords: ["JPEG color management WDK print", "PNG color management WDK print", "CHECKJPEGFORMAT", "CHECKPNGFORMAT", "compressed images WDK print"]
+keywords:
+- JPEG color management WDK print
+- PNG color management WDK print
+- CHECKJPEGFORMAT
+- CHECKPNGFORMAT
+- compressed images WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Color Management of JPEG and PNG Images

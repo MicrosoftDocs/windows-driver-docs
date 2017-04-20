@@ -2,7 +2,14 @@
 title: Operations on VCs
 description: Operations on VCs
 ms.assetid: eba106e2-0c7a-46d2-abc8-9f067ec83218
-keywords: ["connection-oriented NDIS WDK , virtual connections", "CoNDIS WDK networking , virtual connections"]
+keywords:
+- connection-oriented NDIS WDK , virtual connections
+- CoNDIS WDK networking , virtual connections
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Operations on VCs

@@ -2,7 +2,15 @@
 title: Message GUID
 description: Message GUID
 ms.assetid: 3a51d730-61a4-44d9-aaf6-117736412efe
-keywords: ["message GUIDs WDK", "GUIDs WDK software tracing", "identifiers WDK software tracing"]
+keywords:
+- message GUIDs WDK
+- GUIDs WDK software tracing
+- identifiers WDK software tracing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Message GUID

@@ -2,7 +2,27 @@
 title: WDM Audio Terminology
 description: WDM Audio Terminology
 ms.assetid: bb36a66a-84dc-46c2-adcb-761d0acec3a1
-keywords: ["WDM audio drivers WDK , about WDM audio drivers", "audio drivers WDK , about audio drivers", "generic driver architecture WDK audio", "miniport drivers WDK audio , generic vs. WDM audio", "port drivers WDK audio , generic vs. WDM audio", "minidrivers WDK audio", "bus drivers WDK audio", "adapter drivers WDK audio", "class drivers WDK audio", "upper-edge interfaces WDK audio", "lower-edge interfaces WDK audio", "stacks WDK audio", "driver stacks WDK audio", "system bus drivers WDK audio", "subdevices WDK audio"]
+keywords:
+- WDM audio drivers WDK , about WDM audio drivers
+- audio drivers WDK , about audio drivers
+- generic driver architecture WDK audio
+- miniport drivers WDK audio , generic vs. WDM audio
+- port drivers WDK audio , generic vs. WDM audio
+- minidrivers WDK audio
+- bus drivers WDK audio
+- adapter drivers WDK audio
+- class drivers WDK audio
+- upper-edge interfaces WDK audio
+- lower-edge interfaces WDK audio
+- stacks WDK audio
+- driver stacks WDK audio
+- system bus drivers WDK audio
+- subdevices WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Audio Terminology

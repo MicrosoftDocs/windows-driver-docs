@@ -2,7 +2,15 @@
 title: Windows Filtering Platform Callout Drivers
 description: Windows Filtering Platform Callout Drivers
 ms.assetid: 494dd2be-ac1b-432b-8966-278534eca162
-keywords: ["Windows Filtering Platform callout drivers WDK", "callout drivers WDK Windows Filtering Platform", "WFP WDK networking"]
+keywords:
+- Windows Filtering Platform callout drivers WDK
+- callout drivers WDK Windows Filtering Platform
+- WFP WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Filtering Platform Callout Drivers

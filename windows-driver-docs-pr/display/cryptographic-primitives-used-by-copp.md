@@ -2,7 +2,18 @@
 title: Cryptographic Primitives Used by COPP
 description: Cryptographic Primitives Used by COPP
 ms.assetid: a14f6f4c-75fd-41a3-93f8-86c9908a2343
-keywords: ["copy protection WDK COPP , cryptography", "video copy protection WDK COPP , cryptography", "COPP WDK DirectX VA , cryptography", "protected video WDK COPP , cryptography", "cryptography WDK COPP", "encryption WDK COPP"]
+keywords:
+- copy protection WDK COPP , cryptography
+- video copy protection WDK COPP , cryptography
+- COPP WDK DirectX VA , cryptography
+- protected video WDK COPP , cryptography
+- cryptography WDK COPP
+- encryption WDK COPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cryptographic Primitives Used by COPP

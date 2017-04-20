@@ -2,6 +2,11 @@
 Description: This topic discusses static streams capability and explains how a USB client driver can open and close streams in a bulk endpoint of a USB 3.0 device.
 title: How to open and close static streams in a USB bulk endpoint
 author: windows-driver-content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to open and close static streams in a USB bulk endpoint

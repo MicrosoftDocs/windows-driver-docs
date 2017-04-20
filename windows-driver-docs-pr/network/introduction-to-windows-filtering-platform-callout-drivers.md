@@ -2,7 +2,15 @@
 title: Introduction to Windows Filtering Platform Callout Drivers
 description: Introduction to Windows Filtering Platform Callout Drivers
 ms.assetid: d075da82-8dbc-41a5-a081-dd0e2b292371
-keywords: ["Windows Filtering Platform callout drivers WDK , about callout drivers", "callout drivers WDK Windows Filtering Platform , about callout drivers", "callouts WDK Windows Filtering Platform"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , about callout drivers
+- callout drivers WDK Windows Filtering Platform , about callout drivers
+- callouts WDK Windows Filtering Platform
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Windows Filtering Platform Callout Drivers

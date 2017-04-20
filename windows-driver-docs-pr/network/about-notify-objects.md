@@ -2,7 +2,17 @@
 title: About Notify Objects
 description: About Notify Objects
 ms.assetid: 87e4bcb6-dbdc-487d-9e21-0738165bf834
-keywords: ["notify objects WDK networking , about notify objects", "network notify objects WDK , about notify objects", "notifications WDK networking , about notify objects", "network configuration subsystem WDK", "subsystem WDK network configuration"]
+keywords:
+- notify objects WDK networking , about notify objects
+- network notify objects WDK , about notify objects
+- notifications WDK networking , about notify objects
+- network configuration subsystem WDK
+- subsystem WDK network configuration
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About Notify Objects

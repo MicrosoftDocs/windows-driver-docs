@@ -2,7 +2,16 @@
 title: MAC/PHY Reset
 description: MAC/PHY Reset
 ms.assetid: 91f6b669-16bd-452d-ad89-1b0c18c7a6ab
-keywords: ["Native 802.11 miniport drivers WDK networking , reset operations", "miniport drivers WDK Native 802.11 , reset operations", "OID_DOT11_RESET_REQUEST", "MAC/PHY reset WDK Native 802.11"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , reset operations
+- miniport drivers WDK Native 802.11 , reset operations
+- OID_DOT11_RESET_REQUEST
+- MAC/PHY reset WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MAC/PHY Reset

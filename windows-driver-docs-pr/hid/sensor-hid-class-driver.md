@@ -3,7 +3,20 @@ title: Sensor HID class driver
 author: windows-driver-content
 description: Starting with Windows 8, the Windows operating system includes an in-box sensor HID Class driver (SensorsHIDClassDriver.dll), that supports eleven types of sensors that communicate using the HID transport.
 ms.assetid: F43958F0-5AFD-40E9-A583-FAA25F8C1B7D
-keywords: ["HID class driver, sensors", "sensors HID class driver", "HID", "HID protocol", "sensors driver sample", "sensors driver, sample", "Windows 8 sensors driver", "sensors driver, Windows 8"]
+keywords:
+- HID class driver, sensors
+- sensors HID class driver
+- HID
+- HID protocol
+- sensors driver sample
+- sensors driver, sample
+- Windows 8 sensors driver
+- sensors driver, Windows 8
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sensor HID class driver

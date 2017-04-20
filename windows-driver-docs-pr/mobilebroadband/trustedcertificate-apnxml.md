@@ -2,6 +2,11 @@
 title: TrustedCertificate
 description: TrustedCertificate
 ms.assetid: 8b1b09ab-7ab8-4d6d-9ea6-395a109def91
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TrustedCertificate

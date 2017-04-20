@@ -2,7 +2,15 @@
 title: Getting the Current Header-Data Split Configuration
 description: Getting the Current Header-Data Split Configuration
 ms.assetid: 62c5e362-4e19-465d-85a8-a8277cb46f5d
-keywords: ["header-data split WDK , configuration", "current header-data split configuration WDK networking", "status information WDK header-data split"]
+keywords:
+- header-data split WDK , configuration
+- current header-data split configuration WDK networking
+- status information WDK header-data split
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Getting the Current Header-Data Split Configuration

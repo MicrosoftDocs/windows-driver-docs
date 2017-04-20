@@ -2,7 +2,19 @@
 title: VidPN Objects and Interfaces
 description: VidPN Objects and Interfaces
 ms.assetid: 5dedac8c-9a99-4b3a-81be-39819135cd97
-keywords: ["video present networks WDK display , objects", "VidPN WDK display , objects", "objects WDK video present network", "interfaces WDK video present network", "video present networks WDK display , interfaces", "VidPN WDK display , interfaces", "sub-objects WDK video present network"]
+keywords:
+- video present networks WDK display , objects
+- VidPN WDK display , objects
+- objects WDK video present network
+- interfaces WDK video present network
+- video present networks WDK display , interfaces
+- VidPN WDK display , interfaces
+- sub-objects WDK video present network
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VidPN Objects and Interfaces

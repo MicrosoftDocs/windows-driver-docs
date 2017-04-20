@@ -2,7 +2,22 @@
 title: Editing Boot Options in EFI
 description: Editing Boot Options in EFI
 ms.assetid: 0fdd01b3-7475-4959-87d8-5ec8ae65fea0
-keywords: ["NVRAM boot options WDK , editing", "EFI NVRAM boot options WDK , editing", "editing boot options", "Bootcfg tool", "Nvrboot tool", "editors WDK boot options", "viewing boot options", "NVRAM boot options WDK , viewing", "EFI NVRAM boot options WDK , viewing", "boot options WDK , editing"]
+keywords:
+- NVRAM boot options WDK , editing
+- EFI NVRAM boot options WDK , editing
+- editing boot options
+- Bootcfg tool
+- Nvrboot tool
+- editors WDK boot options
+- viewing boot options
+- NVRAM boot options WDK , viewing
+- EFI NVRAM boot options WDK , viewing
+- boot options WDK , editing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Editing Boot Options in EFI

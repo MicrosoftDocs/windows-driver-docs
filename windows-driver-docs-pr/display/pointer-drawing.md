@@ -2,7 +2,17 @@
 title: Pointer Drawing
 description: Pointer Drawing
 ms.assetid: 5eaedf04-cbd9-4591-8cff-0087508aa7a9
-keywords: ["drawing pointers WDK Windows 2000 display", "display drivers WDK Windows 2000 , pointers", "pointers WDK Windows 2000 display", "monochrome pointers WDK Windows 2000 display", "color pointers WDK Windows 2000 display"]
+keywords:
+- drawing pointers WDK Windows 2000 display
+- display drivers WDK Windows 2000 , pointers
+- pointers WDK Windows 2000 display
+- monochrome pointers WDK Windows 2000 display
+- color pointers WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pointer Drawing

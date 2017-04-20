@@ -1,8 +1,13 @@
 ---
 title: SPI tests in MITT
 author: windows-driver-content
-description: SPI test modules that are included in the MITT software package. 
+description: SPI test modules that are included in the MITT software package.
 ms.assetid: 8240841C-FFA0-48EC-AB7E-4E15E262C23D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SPI tests in MITT

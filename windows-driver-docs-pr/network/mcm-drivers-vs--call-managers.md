@@ -2,7 +2,18 @@
 title: MCM Drivers vs. Call Managers
 description: MCM Drivers vs.
 ms.assetid: 374716fb-c192-42fd-bef0-0097d622f791
-keywords: ["connection-oriented NDIS WDK , call managers", "CoNDIS WDK networking , call managers", "connection-oriented NDIS WDK , MCM drivers", "CoNDIS WDK networking , MCM drivers", "MCM drivers WDK networking", "call managers WDK networking , vs. MCM drivers"]
+keywords:
+- connection-oriented NDIS WDK , call managers
+- CoNDIS WDK networking , call managers
+- connection-oriented NDIS WDK , MCM drivers
+- CoNDIS WDK networking , MCM drivers
+- MCM drivers WDK networking
+- call managers WDK networking , vs. MCM drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MCM Drivers vs. Call Managers

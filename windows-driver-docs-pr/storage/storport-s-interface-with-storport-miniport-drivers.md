@@ -3,6 +3,11 @@ title: Storport's Interface with Storport Miniport Drivers
 author: windows-driver-content
 description: Storport's Interface with Storport Miniport Drivers
 ms.assetid: 8e09d6a6-7e4f-44fc-a2b0-5f21b4ac0593
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storport's Interface with Storport Miniport Drivers

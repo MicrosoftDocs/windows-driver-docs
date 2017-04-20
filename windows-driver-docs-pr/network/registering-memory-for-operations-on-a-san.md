@@ -2,7 +2,19 @@
 title: Registering Memory for Operations on a SAN
 description: Registering Memory for Operations on a SAN
 ms.assetid: 5492466e-4765-4d43-b6bc-1d5bc74996ba
-keywords: ["SAN connection setup WDK , registering memory", "registering memory for SANs", "data buffers WDK SANs", "buffers WDK SANs", "registering data buffers", "memory WDK SANs", "registered memory WDK SANs"]
+keywords:
+- SAN connection setup WDK , registering memory
+- registering memory for SANs
+- data buffers WDK SANs
+- buffers WDK SANs
+- registering data buffers
+- memory WDK SANs
+- registered memory WDK SANs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering Memory for Operations on a SAN

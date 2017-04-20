@@ -2,7 +2,17 @@
 title: DxApi Miniport Driver Functions For Windows 2000 and Later
 description: DxApi Miniport Driver Functions For Windows 2000 and Later
 ms.assetid: e9a41e27-930c-49a2-b5e3-0b709b873bb3
-keywords: ["DxApi miniport drivers WDK DirectDraw", "DxApi miniport drivers WDK DirectDraw , about DxApi miniport drivers", "autoflipping WDK DirectDraw", "field skipping WDK DirectDraw", "bus mastering WDK DirectDraw"]
+keywords:
+- DxApi miniport drivers WDK DirectDraw
+- DxApi miniport drivers WDK DirectDraw , about DxApi miniport drivers
+- autoflipping WDK DirectDraw
+- field skipping WDK DirectDraw
+- bus mastering WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DxApi Miniport Driver Functions For Windows 2000 and Later

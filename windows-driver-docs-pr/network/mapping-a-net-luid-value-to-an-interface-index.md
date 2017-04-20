@@ -2,7 +2,19 @@
 title: Mapping a NET\_LUID Value to an Interface Index
 description: Mapping a NET\_LUID Value to an Interface Index
 ms.assetid: a535d886-186e-4abe-9ca0-ebef262614b3
-keywords: ["NDIS network interfaces WDK , NET_LUID", "network interfaces WDK , NET_LUID", "NET_LUID", "mapping NET_LUID value", "interface index WDK networking", "index operations WDK network interface", "locally unique identifier WDK network interface"]
+keywords:
+- NDIS network interfaces WDK , NET_LUID
+- network interfaces WDK , NET_LUID
+- NET_LUID
+- mapping NET_LUID value
+- interface index WDK networking
+- index operations WDK network interface
+- locally unique identifier WDK network interface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping a NET\_LUID Value to an Interface Index

@@ -3,7 +3,16 @@ title: Management of Access Control Lists on IRP\_MJ\_CREATE
 author: windows-driver-content
 description: Management of Access Control Lists on IRP\_MJ\_CREATE
 ms.assetid: 07b35931-8e20-4789-b2ef-14c6195b817f
-keywords: ["IRP_MJ_CREATE", "access control list WDK file systems", "security checks WDK file systems , IRP_MJ_CREATE", "ACL WDK file systems"]
+keywords:
+- IRP_MJ_CREATE
+- access control list WDK file systems
+- security checks WDK file systems , IRP_MJ_CREATE
+- ACL WDK file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Management of Access Control Lists on IRP\_MJ\_CREATE

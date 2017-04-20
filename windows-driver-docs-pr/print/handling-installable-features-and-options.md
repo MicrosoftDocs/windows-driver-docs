@@ -3,7 +3,16 @@ title: Handling Installable Features and Options
 author: windows-driver-content
 description: Handling Installable Features and Options
 ms.assetid: b970808f-55bd-4a3a-9464-c9cd3567fa6f
-keywords: ["Unidrv, installable features and options", "installable features and options WDK Unidrv", "GPD files WDK Unidrv , installable features and options", "Unidrv WDK print"]
+keywords:
+- Unidrv, installable features and options
+- installable features and options WDK Unidrv
+- GPD files WDK Unidrv , installable features and options
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Installable Features and Options

@@ -3,7 +3,16 @@ title: Storage Filter Driver's DriverEntry Routine
 author: windows-driver-content
 description: Storage Filter Driver's DriverEntry Routine
 ms.assetid: 801daf42-259d-45ab-a5c5-88acb2d35bef
-keywords: ["storage filter drivers WDK , DriverEntry", "filter drivers WDK storage , DriverEntry", "SFD WDK storage , DriverEntry", "DriverEntry WDK storage"]
+keywords:
+- storage filter drivers WDK , DriverEntry
+- filter drivers WDK storage , DriverEntry
+- SFD WDK storage , DriverEntry
+- DriverEntry WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Filter Driver's DriverEntry Routine

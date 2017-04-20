@@ -2,7 +2,17 @@
 title: Supporting Transient Multi-Monitor Manager
 description: Supporting Transient Multi-Monitor Manager
 ms.assetid: 5091fe00-76d9-4585-9ef0-4b5b7ab8bc06
-keywords: ["Transient Multi-Monitor Manager WDK display", "TMM WDK display", "clone view WDK display", "mobile devices WDK , TMM support", "monitor configurations WDK display , TMM support"]
+keywords:
+- Transient Multi-Monitor Manager WDK display
+- TMM WDK display
+- clone view WDK display
+- mobile devices WDK , TMM support
+- monitor configurations WDK display , TMM support
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Transient Multi-Monitor Manager

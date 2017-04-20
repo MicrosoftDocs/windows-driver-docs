@@ -2,7 +2,17 @@
 title: Changes from Direct3D 10
 description: Changes from Direct3D 10
 ms.assetid: 014a5e44-f8c4-45c0-96e8-d82f37b8b28d
-keywords: ["Direct3D version 11 WDK Windows 7 display , changes from Direct3D version 10", "Direct3D version 11 WDK Windows Server 2008 R2 display , changes from Direct3D version 10", "Direct3D version 10 WDK Windows 7 display", "Direct3D version 10 WDK Windows 7 display , changes in Direct3D version 11", "Direct3D version 10 WDK Windows Server 2008 R2 display , changes in Direct3D version 11"]
+keywords:
+- Direct3D version 11 WDK Windows 7 display , changes from Direct3D version 10
+- Direct3D version 11 WDK Windows Server 2008 R2 display , changes from Direct3D version 10
+- Direct3D version 10 WDK Windows 7 display
+- Direct3D version 10 WDK Windows 7 display , changes in Direct3D version 11
+- Direct3D version 10 WDK Windows Server 2008 R2 display , changes in Direct3D version 11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changes from Direct3D 10

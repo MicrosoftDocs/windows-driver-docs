@@ -2,7 +2,17 @@
 title: Developing and Debugging DRM Drivers
 description: Developing and Debugging DRM Drivers
 ms.assetid: 3450717a-fd27-4bea-8740-9d47b420ed32
-keywords: ["Digital Rights Management WDK audio , recommendations", "DRM WDK audio , recommendations", "Digital Rights Management WDK audio , debugging", "DRM WDK audio , debugging", "debugging drivers WDK DRM"]
+keywords:
+- Digital Rights Management WDK audio , recommendations
+- DRM WDK audio , recommendations
+- Digital Rights Management WDK audio , debugging
+- DRM WDK audio , debugging
+- debugging drivers WDK DRM
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developing and Debugging DRM Drivers

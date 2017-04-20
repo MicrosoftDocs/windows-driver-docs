@@ -2,7 +2,21 @@
 title: Handling Protection Levels with OPM
 description: Handling Protection Levels with OPM
 ms.assetid: 2d3e5d07-8d6f-44fb-985a-96990538ed29
-keywords: ["protection levels WDK display , types of", "protection levels WDK display , ACP", "protection levels WDK display , Analog Copy Protection", "protection levels WDK display , CGMS-A", "protection levels WDK display , Content Generation Management System Analog", "protection levels WDK display , High-bandwidth Digital Content Protection", "protection levels WDK display , HDCP", "protection levels WDK display , DisplayPort Content Protection", "protection levels WDK display , DPCP"]
+keywords:
+- protection levels WDK display , types of
+- protection levels WDK display , ACP
+- protection levels WDK display , Analog Copy Protection
+- protection levels WDK display , CGMS-A
+- protection levels WDK display , Content Generation Management System Analog
+- protection levels WDK display , High-bandwidth Digital Content Protection
+- protection levels WDK display , HDCP
+- protection levels WDK display , DisplayPort Content Protection
+- protection levels WDK display , DPCP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Protection Levels with OPM

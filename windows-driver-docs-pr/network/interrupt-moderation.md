@@ -2,7 +2,17 @@
 title: Interrupt Moderation
 description: Interrupt Moderation
 ms.assetid: 291f9606-6379-4b78-b388-ba663f84b431
-keywords: ["interrupt moderation WDK networking", "interrupts WDK networking , reducing number of", "OID_GEN_INTERRUPT_MODERATION", "NDIS_INTERRUPT_MODERATION_PARAMETERS", "interrupts WDK networking , moderation"]
+keywords:
+- interrupt moderation WDK networking
+- interrupts WDK networking , reducing number of
+- OID_GEN_INTERRUPT_MODERATION
+- NDIS_INTERRUPT_MODERATION_PARAMETERS
+- interrupts WDK networking , moderation
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interrupt Moderation

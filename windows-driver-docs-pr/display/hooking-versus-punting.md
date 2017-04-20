@@ -2,7 +2,16 @@
 title: Hooking Versus Punting
 description: Hooking Versus Punting
 ms.assetid: 52544915-8392-4eb1-8186-6a7fbad8ed4a
-keywords: ["surface negotiation WDK GDI , hooking", "surface negotiation WDK GDI , punting", "hooking WDK GDI", "punting WDK GDI"]
+keywords:
+- surface negotiation WDK GDI , hooking
+- surface negotiation WDK GDI , punting
+- hooking WDK GDI
+- punting WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hooking Versus Punting

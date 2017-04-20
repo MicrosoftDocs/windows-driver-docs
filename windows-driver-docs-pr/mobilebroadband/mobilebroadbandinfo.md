@@ -2,6 +2,11 @@
 title: MobileBroadbandInfo
 description: MobileBroadbandInfo
 ms.assetid: 02279e23-becd-49ef-8981-6afb8e5aab91
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MobileBroadbandInfo

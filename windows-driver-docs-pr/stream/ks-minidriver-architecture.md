@@ -3,7 +3,15 @@ title: KS Minidriver Architecture
 author: windows-driver-content
 description: KS Minidriver Architecture
 ms.assetid: a9c17040-72a8-4290-831b-7fb46b00f532
-keywords: ["kernel streaming WDK , architecture", "KS WDK , architecture", "filter graphs WDK kernel streaming"]
+keywords:
+- kernel streaming WDK , architecture
+- KS WDK , architecture
+- filter graphs WDK kernel streaming
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Minidriver Architecture

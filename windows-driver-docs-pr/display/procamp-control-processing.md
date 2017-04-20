@@ -2,7 +2,18 @@
 title: ProcAmp Control Processing
 description: ProcAmp Control Processing
 ms.assetid: feb66d91-1b25-415b-83f4-a75361b9dc11
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , ProcAmp", "Video Acceleration WDK DirectX , ProcAmp", "VA WDK DirectX , ProcAmp", "ProcAmp WDK DirectX VA", "ProcAmp WDK DirectX VA , about ProcAmp control processing", "VMR WDK DirectX VA"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , ProcAmp
+- Video Acceleration WDK DirectX , ProcAmp
+- VA WDK DirectX , ProcAmp
+- ProcAmp WDK DirectX VA
+- ProcAmp WDK DirectX VA , about ProcAmp control processing
+- VMR WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ProcAmp Control Processing

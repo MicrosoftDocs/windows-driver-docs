@@ -3,7 +3,15 @@ title: Network Redirector Drivers
 author: windows-driver-content
 description: Network Redirector Drivers
 ms.assetid: 7a224512-53ed-4a7d-9de3-409b42c1c104
-keywords: ["file system drivers WDK , network redirectors", "network redirectors WDK", "redirector drivers WDK"]
+keywords:
+- file system drivers WDK , network redirectors
+- network redirectors WDK
+- redirector drivers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Redirector Drivers

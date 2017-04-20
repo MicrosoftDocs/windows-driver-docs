@@ -3,7 +3,15 @@ title: Processing Changer Device-Control Requests
 author: windows-driver-content
 description: Processing Changer Device-Control Requests
 ms.assetid: 3ee275c7-f2e4-47db-bd4b-db5c0c8ad399
-keywords: ["changer drivers WDK storage , request processing", "storage changer drivers WDK , request processing", "IOCTLs WDK changer"]
+keywords:
+- changer drivers WDK storage , request processing
+- storage changer drivers WDK , request processing
+- IOCTLs WDK changer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Changer Device-Control Requests

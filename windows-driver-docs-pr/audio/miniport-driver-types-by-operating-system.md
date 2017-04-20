@@ -2,6 +2,11 @@
 title: Miniport Driver Types by Operating System
 description: Miniport Driver Types by Operating System
 ms.assetid: 6ab0e4e4-5118-4df5-ba4e-7da66ce5880d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Driver Types by Operating System

@@ -2,7 +2,20 @@
 title: Symbol File Systems
 description: Symbol File Systems
 ms.assetid: 06f536e2-13d8-4727-9d34-a29a63eb01bc
-keywords: ["BinPlace WDK , symbol file systems", "symbol files WDK BinPlace", "current symbol file systems WDK BinPlace", "old symbol file systems WDK", ".pdf files", "pdf symbol files WDK BinPlace", "dbg symbol files WDK BinPlace", ".dbg files"]
+keywords:
+- BinPlace WDK , symbol file systems
+- symbol files WDK BinPlace
+- current symbol file systems WDK BinPlace
+- old symbol file systems WDK
+- .pdf files
+- pdf symbol files WDK BinPlace
+- dbg symbol files WDK BinPlace
+- .dbg files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Symbol File Systems

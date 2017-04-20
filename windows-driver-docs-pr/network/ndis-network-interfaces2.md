@@ -2,7 +2,16 @@
 title: NDIS Network Interfaces
 description: NDIS Network Interfaces
 ms.assetid: a1d062d4-3d4b-4244-b851-667d708810db
-keywords: ["NDIS WDK , network interfaces", "NDIS network interfaces WDK", "network interfaces WDK", "NDISIF WDK networking"]
+keywords:
+- NDIS WDK , network interfaces
+- NDIS network interfaces WDK
+- network interfaces WDK
+- NDISIF WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Network Interfaces

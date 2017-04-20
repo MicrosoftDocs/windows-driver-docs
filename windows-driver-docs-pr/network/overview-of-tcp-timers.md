@@ -2,7 +2,16 @@
 title: Overview of TCP Timers
 description: Overview of TCP Timers
 ms.assetid: d1190d9c-3a43-4373-8a5b-be8f20d41920
-keywords: ["timers WDK TCP chimney offload , about TCP timers", "TCP timers WDK TCP chimney offload , about TCP timers", "timers WDK TCP chimney offload , types", "TCP timers WDK TCP chimney offload , types"]
+keywords:
+- timers WDK TCP chimney offload , about TCP timers
+- TCP timers WDK TCP chimney offload , about TCP timers
+- timers WDK TCP chimney offload , types
+- TCP timers WDK TCP chimney offload , types
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of TCP Timers

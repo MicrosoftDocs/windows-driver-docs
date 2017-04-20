@@ -2,7 +2,20 @@
 title: Managing Display Palettes
 description: Managing Display Palettes
 ms.assetid: a0ff1a9c-82dc-4317-a0ec-c387027a52ba
-keywords: ["display drivers WDK Windows 2000 , palettes", "color lookup tables WDK Windows 2000 display", "palettes WDK Windows 2000 display", "color palettes WDK Windows 2000 display", "color index WDK Windows 2000 display", "settable palettes WDK Windows 2000 display", "indexed palettes WDK Windows 2000 display", "RGB colors WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , palettes
+- color lookup tables WDK Windows 2000 display
+- palettes WDK Windows 2000 display
+- color palettes WDK Windows 2000 display
+- color index WDK Windows 2000 display
+- settable palettes WDK Windows 2000 display
+- indexed palettes WDK Windows 2000 display
+- RGB colors WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Display Palettes

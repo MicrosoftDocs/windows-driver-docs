@@ -2,6 +2,11 @@
 title: Reboot
 description: Reboot
 ms.assetid: 8AB66CAB-9BAA-4911-A143-618627226B78
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reboot

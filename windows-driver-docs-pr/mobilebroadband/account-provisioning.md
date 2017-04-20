@@ -2,6 +2,11 @@
 title: Account provisioning
 description: Account provisioning
 ms.assetid: 3ffcd769-253f-4918-8095-a9206445a201
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Account provisioning

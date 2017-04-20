@@ -2,6 +2,11 @@
 title: Package
 description: Package
 ms.assetid: f15f0ffe-593d-4007-8002-4d593d18dd9a
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Package

@@ -2,7 +2,16 @@
 title: Handling Memory Segments
 description: Handling Memory Segments
 ms.assetid: 5f3ae7cf-f3e7-4b41-880c-22660e261b18
-keywords: ["GPU address space WDK display", "segments WDK display", "memory segments WDK display", "address space WDK display"]
+keywords:
+- GPU address space WDK display
+- segments WDK display
+- memory segments WDK display
+- address space WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Memory Segments

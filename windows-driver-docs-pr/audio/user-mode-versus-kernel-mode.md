@@ -2,7 +2,21 @@
 title: User Mode Versus Kernel Mode
 description: User Mode Versus Kernel Mode
 ms.assetid: ee506167-6b64-4e50-9988-102416bcb056
-keywords: ["software synthesizers WDK audio", "custom synths WDK audio", "DirectMusic WDK audio , user mode vs. kernel mode", "user-mode synths WDK audio , vs. kernel-mode", "kernel-mode synths WDK audio , vs. user-mode", "latency WDK audio , DirectMusic", "hardware synthesizers WDK audio", "time stamps WDK audio", "DirectMusic kernel-mode WDK audio , vs. user mode"]
+keywords:
+- software synthesizers WDK audio
+- custom synths WDK audio
+- DirectMusic WDK audio , user mode vs. kernel mode
+- user-mode synths WDK audio , vs. kernel-mode
+- kernel-mode synths WDK audio , vs. user-mode
+- latency WDK audio , DirectMusic
+- hardware synthesizers WDK audio
+- time stamps WDK audio
+- DirectMusic kernel-mode WDK audio , vs. user mode
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User Mode Versus Kernel Mode

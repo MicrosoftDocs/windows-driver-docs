@@ -3,7 +3,14 @@ title: Event Mechanism and Flow
 author: windows-driver-content
 description: Event Mechanism and Flow
 ms.assetid: 13a6c6fb-3615-44ef-bf01-5003520b3e26
-keywords: ["event operation flow WDK video capture", "terminating scanning WDK video capture"]
+keywords:
+- event operation flow WDK video capture
+- terminating scanning WDK video capture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Event Mechanism and Flow

@@ -2,7 +2,16 @@
 title: Alpha-Blend Combination
 description: Alpha-Blend Combination
 ms.assetid: 567810da-ad8d-4ceb-b914-868632384d09
-keywords: ["alpha-blend combination WDK DirectX VA", "blended pictures WDK DirectX VA", "alpha-blend combination WDK DirectX VA , about alpha-blend combination", "blended pictures WDK DirectX VA , about alpha-blend combination"]
+keywords:
+- alpha-blend combination WDK DirectX VA
+- blended pictures WDK DirectX VA
+- alpha-blend combination WDK DirectX VA , about alpha-blend combination
+- blended pictures WDK DirectX VA , about alpha-blend combination
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Alpha-Blend Combination

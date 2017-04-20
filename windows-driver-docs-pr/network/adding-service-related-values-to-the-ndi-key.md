@@ -2,7 +2,15 @@
 title: Adding Service-Related Values to the Ndi Key
 description: Adding Service-Related Values to the Ndi Key
 ms.assetid: f967396c-6695-458c-a081-ef382ed7c9dd
-keywords: ["add-registry-sections WDK networking , Ndi values and keys", "Nido keys and values WDK networking", "service-related values to Ndi key WDK networking"]
+keywords:
+- add-registry-sections WDK networking , Ndi values and keys
+- Nido keys and values WDK networking
+- service-related values to Ndi key WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Service-Related Values to the Ndi Key

@@ -2,7 +2,17 @@
 title: Writing a Co-installer
 description: Writing a Co-installer
 ms.assetid: d5637321-9cff-4b24-8941-d3ca16b0d8c1
-keywords: ["Device setup WDK device installations , co-installers", "device installations WDK , co-installers", "installing devices WDK , co-installers", "co-installers WDK device installations , about co-installers", "coinstallers WDK"]
+keywords:
+- Device setup WDK device installations , co-installers
+- device installations WDK , co-installers
+- installing devices WDK , co-installers
+- co-installers WDK device installations , about co-installers
+- coinstallers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a Co-installer

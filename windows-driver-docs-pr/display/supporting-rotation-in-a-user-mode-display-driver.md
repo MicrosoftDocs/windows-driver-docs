@@ -2,7 +2,15 @@
 title: Supporting Rotation in a User-Mode Display Driver
 description: Supporting Rotation in a User-Mode Display Driver
 ms.assetid: fb80e875-26d4-4928-9268-2c6b36bb5d20
-keywords: ["user-mode display drivers WDK Windows Vista , rotation", "rotation WDK display", "surface rotation WDK display"]
+keywords:
+- user-mode display drivers WDK Windows Vista , rotation
+- rotation WDK display
+- surface rotation WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Rotation in a User-Mode Display Driver

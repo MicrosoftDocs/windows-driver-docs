@@ -2,7 +2,13 @@
 title: Implementing an NDIS 6.20 Driver
 description: Implementing an NDIS 6.20 Driver
 ms.assetid: 6c6f83ff-2a6f-4e5d-acc0-70835429312d
-keywords: ["NDIS 6.20 WDK , implementing a driver"]
+keywords:
+- NDIS 6.20 WDK , implementing a driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing an NDIS 6.20 Driver

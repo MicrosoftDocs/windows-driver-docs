@@ -2,7 +2,16 @@
 title: Threading Model of User-Mode Display Driver
 description: Threading Model of User-Mode Display Driver
 ms.assetid: 43bb6032-5f34-434b-8404-aef6a424a2ee
-keywords: ["threading WDK display , user-mode drivers", "synchronization WDK display , user-mode drivers", "user-mode display drivers WDK Windows Vista , synchronization", "user-mode display drivers WDK Windows Vista , threading"]
+keywords:
+- threading WDK display , user-mode drivers
+- synchronization WDK display , user-mode drivers
+- user-mode display drivers WDK Windows Vista , synchronization
+- user-mode display drivers WDK Windows Vista , threading
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Threading Model of User-Mode Display Driver

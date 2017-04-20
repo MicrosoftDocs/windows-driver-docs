@@ -3,7 +3,15 @@ title: Handling an IRP that the Framework Does Not Support
 author: windows-driver-content
 description: Handling an IRP that the Framework Does Not Support
 ms.assetid: 0481f335-f63b-4f93-8eb4-523a70082302
-keywords: ["unsupported WDM IRPs WDK KMDF", "IRPs WDK KMDF , unsupported", "WDM IRPs WDK KMDF , unsupported"]
+keywords:
+- unsupported WDM IRPs WDK KMDF
+- IRPs WDK KMDF , unsupported
+- WDM IRPs WDK KMDF , unsupported
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an IRP that the Framework Does Not Support

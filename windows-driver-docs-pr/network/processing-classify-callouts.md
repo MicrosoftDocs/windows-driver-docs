@@ -2,7 +2,17 @@
 title: Processing Classify Callouts
 description: Processing Classify Callouts
 ms.assetid: 284aeda0-8275-440f-abf4-84a0c61cc4f4
-keywords: ["Windows Filtering Platform callout drivers WDK , classify callouts", "callout drivers WDK Windows Filtering Platform , classify callouts", "classifyFn", "classify callouts WDK Windows Filtering Platform", "classify callouts WDK Windows Filtering Platform , about classify callouts"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , classify callouts
+- callout drivers WDK Windows Filtering Platform , classify callouts
+- classifyFn
+- classify callouts WDK Windows Filtering Platform
+- classify callouts WDK Windows Filtering Platform , about classify callouts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Classify Callouts

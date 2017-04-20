@@ -2,7 +2,32 @@
 title: ITU-T H.263
 description: ITU-T H.263
 ms.assetid: 08926037-da17-4ab0-81c5-9fd78cb1133c
-keywords: ["ITU-T H.263 WDK DirectX VA", "H.263 WDK DirectX VA", "OBMC WDK DirectX VA", "INTER4V WDK DirectX VA", "bidirectional prediction WDK DirectX VA", "motion vectors WDK DirectX VA", "rounding control WDK DirectX VA", "picture boundaries WDK DirectX VA", "macroblocks WDK DirectX VA , ITU-T H.263", "PB frames WDK DirectX VA", "deblocking filters WDK DirectX VA", "multiple reference frames WDK DirectX VA", "inverse discrete-cosine transform WDK DirectX VA", "IDCT WDK DirectX VA", "independent segment decoding WDK DirectX VA", "reduced-resolution update WDK DirectX VA", "reference picture resampling WDK DirectX VA", "scalability WDK DirectX VA", "reference picture selection WDK DirectX VA", "prediction blocks WDK DirectX VA"]
+keywords:
+- ITU-T H.263 WDK DirectX VA
+- H.263 WDK DirectX VA
+- OBMC WDK DirectX VA
+- INTER4V WDK DirectX VA
+- bidirectional prediction WDK DirectX VA
+- motion vectors WDK DirectX VA
+- rounding control WDK DirectX VA
+- picture boundaries WDK DirectX VA
+- macroblocks WDK DirectX VA , ITU-T H.263
+- PB frames WDK DirectX VA
+- deblocking filters WDK DirectX VA
+- multiple reference frames WDK DirectX VA
+- inverse discrete-cosine transform WDK DirectX VA
+- IDCT WDK DirectX VA
+- independent segment decoding WDK DirectX VA
+- reduced-resolution update WDK DirectX VA
+- reference picture resampling WDK DirectX VA
+- scalability WDK DirectX VA
+- reference picture selection WDK DirectX VA
+- prediction blocks WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ITU-T H.263

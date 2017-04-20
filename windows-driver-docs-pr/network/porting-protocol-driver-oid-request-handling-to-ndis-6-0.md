@@ -2,7 +2,18 @@
 title: Porting Protocol Driver OID Request Handling to NDIS 6.0
 description: Porting Protocol Driver OID Request Handling to NDIS 6.0
 ms.assetid: fb99f2a9-df4e-436b-9607-f6ae777e1166
-keywords: ["NDIS protocol drivers WDK , OID requests", "protocol drivers WDK networking , OID requests", "OID request porting WDK networking", "OIDs WDK networking , request operation porting", "object identifiers WDK networking", "porting protocol drivers WDK networkin"]
+keywords:
+- NDIS protocol drivers WDK , OID requests
+- protocol drivers WDK networking , OID requests
+- OID request porting WDK networking
+- OIDs WDK networking , request operation porting
+- object identifiers WDK networking
+- porting protocol drivers WDK networkin
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Protocol Driver OID Request Handling to NDIS 6.0

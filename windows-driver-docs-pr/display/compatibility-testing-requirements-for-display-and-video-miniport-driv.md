@@ -2,7 +2,18 @@
 title: Compatibility Testing Requirements for Display and Video Miniport Drivers
 description: Compatibility Testing Requirements for Display and Video Miniport Drivers
 ms.assetid: b63db0ca-2779-4cb3-94a1-a52641f341f4
-keywords: ["display driver model WDK Windows 2000 , compatibility testing", "Windows 2000 display driver model WDK , compatibility testing", "video miniport drivers WDK Windows 2000 , compatibility testing", "display drivers WDK Windows 2000 , compatibility testing", "compatibility testing WDK Windows 2000 display", "testing compatibility WDK Windows 2000 display"]
+keywords:
+- display driver model WDK Windows 2000 , compatibility testing
+- Windows 2000 display driver model WDK , compatibility testing
+- video miniport drivers WDK Windows 2000 , compatibility testing
+- display drivers WDK Windows 2000 , compatibility testing
+- compatibility testing WDK Windows 2000 display
+- testing compatibility WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compatibility Testing Requirements for Display and Video Miniport Drivers

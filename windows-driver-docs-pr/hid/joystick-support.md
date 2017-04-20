@@ -3,7 +3,19 @@ title: Joystick Support
 author: windows-driver-content
 description: Joystick Support
 ms.assetid: 09fcbdf0-4e70-4144-9afc-4b085a2b4ba7
-keywords: ["joysticks WDK HID", "joysticks WDK HID , about joysticks", "minidrivers WDK joysticks", "virtual joystick drivers WDK HID", "VJoyD WDK HID", "virtual joystick drivers WDK HID , about VJoyD", "VJoyD WDK HID , about VJoyD"]
+keywords:
+- joysticks WDK HID
+- joysticks WDK HID , about joysticks
+- minidrivers WDK joysticks
+- virtual joystick drivers WDK HID
+- VJoyD WDK HID
+- virtual joystick drivers WDK HID , about VJoyD
+- VJoyD WDK HID , about VJoyD
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Joystick Support

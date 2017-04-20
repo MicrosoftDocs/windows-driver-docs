@@ -2,7 +2,15 @@
 title: Adding Software Registry Settings
 description: Adding Software Registry Settings
 ms.assetid: 96c7fc9e-885c-43ec-973a-6e6d984fe7d0
-keywords: ["INF files WDK display , software registry settings", "software registry settings WDK display", "registry WDK display"]
+keywords:
+- INF files WDK display , software registry settings
+- software registry settings WDK display
+- registry WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Software Registry Settings

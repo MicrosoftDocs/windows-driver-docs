@@ -2,6 +2,11 @@
 title: Debugging Device Metadata Packages By Using Event Viewer
 description: Debugging Device Metadata Packages By Using Event Viewer
 ms.assetid: 168a9dd1-aab2-4497-a59d-b8fe52d8cde2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Device Metadata Packages By Using Event Viewer

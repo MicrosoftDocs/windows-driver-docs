@@ -2,7 +2,16 @@
 title: Native 802.11 Miniport Driver Halt
 description: Native 802.11 Miniport Driver Halt
 ms.assetid: 74cac3e5-0219-4c5b-b1c0-5aab043ab329
-keywords: ["Native 802.11 miniport drivers WDK networking , halt operations", "miniport drivers WDK Native 802.11 , halt operations", "halting miniport drivers WDK Native 802.11", "stopping Native 802.11 miniport drivers"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , halt operations
+- miniport drivers WDK Native 802.11 , halt operations
+- halting miniport drivers WDK Native 802.11
+- stopping Native 802.11 miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Miniport Driver Halt

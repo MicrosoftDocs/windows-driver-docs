@@ -3,7 +3,13 @@ title: Storage Class Driver's Dispatch Routines
 author: windows-driver-content
 description: Storage Class Driver's Dispatch Routines
 ms.assetid: 99713661-5e99-4110-b369-afc084a2aaef
-keywords: ["dispatch routines WDK storage"]
+keywords:
+- dispatch routines WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Class Driver's Dispatch Routines

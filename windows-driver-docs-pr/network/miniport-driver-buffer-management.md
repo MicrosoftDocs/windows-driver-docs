@@ -2,7 +2,13 @@
 title: Miniport Driver Buffer Management
 description: Miniport Driver Buffer Management
 ms.assetid: 3b8844e0-9b38-4030-9aec-b713643de523
-keywords: ["buffers WDK NDIS miniport"]
+keywords:
+- buffers WDK NDIS miniport
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Driver Buffer Management

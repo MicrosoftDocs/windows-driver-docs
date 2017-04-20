@@ -2,7 +2,18 @@
 title: GDI Information Services
 description: GDI Information Services
 ms.assetid: f3575d68-1d90-4ccd-adb1-5d2a26099397
-keywords: ["GDI WDK Windows 2000 display , information services", "graphics drivers WDK Windows 2000 display , information services", "drawing WDK GDI , information services", "time stamps WDK GDI", "counters WDK GDI", "performance counters WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , information services
+- graphics drivers WDK Windows 2000 display , information services
+- drawing WDK GDI , information services
+- time stamps WDK GDI
+- counters WDK GDI
+- performance counters WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Information Services

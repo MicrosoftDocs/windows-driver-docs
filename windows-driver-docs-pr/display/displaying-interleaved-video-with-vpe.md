@@ -2,7 +2,21 @@
 title: Displaying Interleaved Video with VPE
 description: Displaying Interleaved Video with VPE
 ms.assetid: f78ccefb-77e3-43a4-88ad-d98c69259da9
-keywords: ["DirectX VPE support WDK DirectDraw , displaying interleaved video", "drawing VPEs WDK DirectDraw , displaying interleaved video", "DirectDraw VPEs WDK Windows 2000 display , displaying interleaved video", "video port extensions WDK DirectDraw , displaying interleaved video", "VPEs WDK DirectDraw , displaying interleaved video", "displaying interleaved video", "interleaved video displays WDK video port extensions", "interlaced video WDK video port extensions", "deinterlacing WDK video port extensions"]
+keywords:
+- DirectX VPE support WDK DirectDraw , displaying interleaved video
+- drawing VPEs WDK DirectDraw , displaying interleaved video
+- DirectDraw VPEs WDK Windows 2000 display , displaying interleaved video
+- video port extensions WDK DirectDraw , displaying interleaved video
+- VPEs WDK DirectDraw , displaying interleaved video
+- displaying interleaved video
+- interleaved video displays WDK video port extensions
+- interlaced video WDK video port extensions
+- deinterlacing WDK video port extensions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Displaying Interleaved Video with VPE

@@ -2,7 +2,17 @@
 title: Reporting Hardware Status
 description: Reporting Hardware Status
 ms.assetid: d4572c6f-dc09-41c4-af5b-69482b458bef
-keywords: ["WMI WDK networking , reporting hardware status", "miniport drivers WDK networking , hardware status", "NDIS miniport drivers WDK , hardware status", "hardware status WDK networking", "status information WDK NDIS miniport"]
+keywords:
+- WMI WDK networking , reporting hardware status
+- miniport drivers WDK networking , hardware status
+- NDIS miniport drivers WDK , hardware status
+- hardware status WDK networking
+- status information WDK NDIS miniport
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Hardware Status

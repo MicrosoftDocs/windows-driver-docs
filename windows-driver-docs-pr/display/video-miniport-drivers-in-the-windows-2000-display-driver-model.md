@@ -2,7 +2,15 @@
 title: Video Miniport Drivers in the Windows 2000 Display Driver Model
 description: Video Miniport Drivers in the Windows 2000 Display Driver Model
 ms.assetid: 3a540bfe-f340-4f12-acee-323b97683074
-keywords: ["video miniport drivers WDK Windows 2000", "Windows 2000 display driver model WDK , video miniport drivers", "display drivers WDK Windows 2000 , video miniport drivers"]
+keywords:
+- video miniport drivers WDK Windows 2000
+- Windows 2000 display driver model WDK , video miniport drivers
+- display drivers WDK Windows 2000 , video miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Miniport Drivers in the Windows 2000 Display Driver Model

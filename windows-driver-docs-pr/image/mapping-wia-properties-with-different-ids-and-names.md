@@ -3,6 +3,11 @@ title: Mapping WIA Properties with Different IDs and Names
 author: windows-driver-content
 description: Mapping WIA Properties with Different IDs and Names
 ms.assetid: e3a352fc-c817-466e-bd04-0ec8b029d500
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping WIA Properties with Different IDs and Names

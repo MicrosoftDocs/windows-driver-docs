@@ -2,6 +2,11 @@
 title: Windows Store mobile broadband apps
 description: Windows Store mobile broadband apps
 ms.assetid: bb02397b-0da5-4e09-be1c-8812abec6fd5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Store mobile broadband apps

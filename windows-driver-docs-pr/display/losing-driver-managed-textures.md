@@ -2,7 +2,18 @@
 title: Losing Driver-Managed Textures
 description: Losing Driver-Managed Textures
 ms.assetid: 19f87190-bb3a-40a6-a216-8df9816e2842
-keywords: ["drawing surfaces WDK DirectDraw , lost textures", "DirectDraw surfaces WDK Windows 2000 display , lost textures", "surfaces WDK DirectDraw , lost textures", "suspended textures WDK DirectDraw", "textures WDK DirectDraw , lost", "lost textures WDK DirectDraw"]
+keywords:
+- drawing surfaces WDK DirectDraw , lost textures
+- DirectDraw surfaces WDK Windows 2000 display , lost textures
+- surfaces WDK DirectDraw , lost textures
+- suspended textures WDK DirectDraw
+- textures WDK DirectDraw , lost
+- lost textures WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Losing Driver-Managed Textures

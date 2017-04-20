@@ -2,6 +2,11 @@
 title: Device and Driver Installation Software Components
 description: Device and Driver Installation Software Components
 ms.assetid: 80f64014-ee9b-4adb-83fd-4c5a3122877b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device and Driver Installation Software Components

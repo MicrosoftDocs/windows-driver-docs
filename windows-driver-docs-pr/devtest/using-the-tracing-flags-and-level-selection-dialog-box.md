@@ -2,7 +2,18 @@
 title: Using the Tracing Flags and Level Selection dialog box
 description: Using the Tracing Flags and Level Selection dialog box
 ms.assetid: 175255bb-2cfe-442e-a97e-6d38369103c0
-keywords: ["trace flags WDK", "flags WDK software tracing", "trace levels WDK", "levels WDK software tracing", "displaying trace flags", "displaying trace levels"]
+keywords:
+- trace flags WDK
+- flags WDK software tracing
+- trace levels WDK
+- levels WDK software tracing
+- displaying trace flags
+- displaying trace levels
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Tracing Flags and Level Selection dialog box

@@ -2,7 +2,14 @@
 title: Notifying about DirectX Version
 description: Notifying about DirectX Version
 ms.assetid: 62c030cf-8eb6-4a94-bd15-730b9219291c
-keywords: ["version numbers WDK DirectX 9.0", "notifying DirectX versions WDK DirectX 9.0"]
+keywords:
+- version numbers WDK DirectX 9.0
+- notifying DirectX versions WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notifying about DirectX Version

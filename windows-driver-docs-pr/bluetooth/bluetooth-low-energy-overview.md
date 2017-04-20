@@ -2,6 +2,11 @@
 title: Bluetooth Low Energy Overview
 description: Windows 8 introduces support for the Bluetooth Low Energy technology.developer website.device installation functions such as SetupDiEnumDeviceInfo, and SetupDiGetDeviceProperty.Bluetooth Profile Driver functions, Windows 8 introduces new Bluetooth Low Energy functions which allows for the development of Bluetooth GATT client applications.
 ms.assetid: 8783E31B-99A3-40EB-8A67-647AFAB7D4D3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth Low Energy Overview

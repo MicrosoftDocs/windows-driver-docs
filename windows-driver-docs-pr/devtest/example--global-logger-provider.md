@@ -2,7 +2,15 @@
 title: Example Global Logger Provider
 description: Example Global Logger Provider
 ms.assetid: 06de4d6f-747c-4cf9-a325-2b697b72a1e9
-keywords: ["Global Logger trace session WDK , logging", "boot-time Global Logger trace session WDK , logging", "logs WDK tracing during boot"]
+keywords:
+- Global Logger trace session WDK , logging
+- boot-time Global Logger trace session WDK , logging
+- logs WDK tracing during boot
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example: Global Logger Provider

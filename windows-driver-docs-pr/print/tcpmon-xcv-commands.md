@@ -3,7 +3,26 @@ title: TCPMON Xcv Commands
 author: windows-driver-content
 description: TCPMON Xcv Commands
 ms.assetid: 89aebc89-d81e-4d86-942e-d13b16c55fb3
-keywords: ["print monitors WDK , TCPMON Xcv", "transceive (Xcv) commands WDK print", "Xcv commands WDK print", "TCPMON Xcv commands WDK print", "AddPort", "ConfigPort", "DeletePort", "GetConfigInfo", "HostAddress", "IPAddress", "MonitorUI", "SNMPCommunity", "SNMPDeviceIndex", "SNMPEnabled"]
+keywords:
+- print monitors WDK , TCPMON Xcv
+- transceive (Xcv) commands WDK print
+- Xcv commands WDK print
+- TCPMON Xcv commands WDK print
+- AddPort
+- ConfigPort
+- DeletePort
+- GetConfigInfo
+- HostAddress
+- IPAddress
+- MonitorUI
+- SNMPCommunity
+- SNMPDeviceIndex
+- SNMPEnabled
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCPMON Xcv Commands

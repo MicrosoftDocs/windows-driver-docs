@@ -2,7 +2,16 @@
 title: Porting Miniport Driver Unload Operations to NDIS 6.0
 description: Porting Miniport Driver Unload Operations to NDIS 6.0
 ms.assetid: c51c9d4c-3713-483d-8b07-7ae739d931d4
-keywords: ["miniport drivers WDK networking , unloading", "NDIS miniport drivers WDK , unloading", "porting miniport drivers WDK networking , unload operations", "unloading miniport drivers"]
+keywords:
+- miniport drivers WDK networking , unloading
+- NDIS miniport drivers WDK , unloading
+- porting miniport drivers WDK networking , unload operations
+- unloading miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Miniport Driver Unload Operations to NDIS 6.0

@@ -2,7 +2,13 @@
 title: System-Defined Device Properties
 description: System-Defined Device Properties
 ms.assetid: 9d823a9f-0802-4e92-bf94-abb5b0e7b9ee
-keywords: ["device properties WDK device installations , system-defined"]
+keywords:
+- device properties WDK device installations , system-defined
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System-Defined Device Properties

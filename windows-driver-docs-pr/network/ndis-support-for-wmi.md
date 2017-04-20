@@ -2,7 +2,19 @@
 title: NDIS Support for WMI
 description: NDIS Support for WMI
 ms.assetid: ce35ddb4-bf18-4ba1-bc6f-dbe659f5d781
-keywords: ["Windows Management Instrumentation WDK networking", "miniport drivers WDK networking , WMI support", "NDIS miniport drivers WDK , WMI support", "WMI WDK networking", "protocol drivers WDK networking , WMI support", "NDIS protocol drivers WDK , WMI support", "i"]
+keywords:
+- Windows Management Instrumentation WDK networking
+- miniport drivers WDK networking , WMI support
+- NDIS miniport drivers WDK , WMI support
+- WMI WDK networking
+- protocol drivers WDK networking , WMI support
+- NDIS protocol drivers WDK , WMI support
+- i
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Support for WMI

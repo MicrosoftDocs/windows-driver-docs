@@ -2,7 +2,14 @@
 title: Cases Where Header-Data Split Is Not Used
 description: Cases Where Header-Data Split Is Not Used
 ms.assetid: e5d3071e-a0d1-4a66-b8aa-6823e737f242
-keywords: ["header-data split WDK , when not used", "Ethernet frame splitting WDK networking , when not used"]
+keywords:
+- header-data split WDK , when not used
+- Ethernet frame splitting WDK networking , when not used
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cases Where Header-Data Split Is Not Used

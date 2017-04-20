@@ -2,6 +2,11 @@
 title: Using Direct3D Version 10 Handles
 description: Using Direct3D Version 10 Handles
 ms.assetid: 98cde374-0267-44bc-b285-acf4a6d17ff4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Direct3D Version 10 Handles

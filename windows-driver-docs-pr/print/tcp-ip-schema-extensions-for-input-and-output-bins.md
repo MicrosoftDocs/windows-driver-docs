@@ -3,7 +3,18 @@ title: TCP/IP Schema Extensions for Input and Output Bins
 author: windows-driver-content
 description: TCP/IP Schema Extensions for Input and Output Bins
 ms.assetid: 942325e8-588c-4171-91fa-366db6e2cb16
-keywords: ["TCP/IP schema extensions WDK printer", "schema extensions WDK TCP/IP", "OutputBin construct", "InputBin construct", "output bins WDK printer", "input bins WDK printer"]
+keywords:
+- TCP/IP schema extensions WDK printer
+- schema extensions WDK TCP/IP
+- OutputBin construct
+- InputBin construct
+- output bins WDK printer
+- input bins WDK printer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCP/IP Schema Extensions for Input and Output Bins

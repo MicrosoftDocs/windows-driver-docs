@@ -3,7 +3,18 @@ title: Using Timers
 author: windows-driver-content
 description: Describes how to use the framework's built-in timer support. Applies to both KMDF drivers as well as UMDF drivers starting in version 2.
 ms.assetid: f3bca5bf-fa5f-4b8f-ad28-26d29fc33963
-keywords: ["timers WDK KMDF", "framework objects WDK KMDF , timer objects", "timer objects WDK KMDF", "periodic timers WDK KMDF", "stopping timers WDK KMDF", "starting timers WDK KMDF"]
+keywords:
+- timers WDK KMDF
+- framework objects WDK KMDF , timer objects
+- timer objects WDK KMDF
+- periodic timers WDK KMDF
+- stopping timers WDK KMDF
+- starting timers WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Timers

@@ -3,7 +3,17 @@ title: Tap and Do use cases
 author: windows-driver-content
 description: Tap and Do use cases
 ms.assetid: DCA97F86-3D27-46CD-9D25-A3D156B18B85
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tap and Do use cases

@@ -3,6 +3,11 @@ title: WDF Support Objects
 author: windows-driver-content
 description: The topics in this section describe how a Windows Driver Frameworks (WDF) driver uses memory buffers, timers, string objects, work items, and other support functionality that the framework provides.
 ms.assetid: 2F2FBC8C-31EA-472E-B402-4C9F24A034EA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDF Support Objects

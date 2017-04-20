@@ -2,7 +2,15 @@
 title: Port-Based Network Access
 description: Port-Based Network Access
 ms.assetid: f98f02de-861e-44b4-b7e5-78a5adcd0440
-keywords: ["network operations WDK Native 802.11 , port-based network access", "port-based network access WDK Native 802.11", "ports WDK Native 802.11"]
+keywords:
+- network operations WDK Native 802.11 , port-based network access
+- port-based network access WDK Native 802.11
+- ports WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Port-Based Network Access

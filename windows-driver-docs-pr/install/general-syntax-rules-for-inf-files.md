@@ -2,7 +2,17 @@
 title: General Syntax Rules for INF Files
 description: General Syntax Rules for INF Files
 ms.assetid: ba11a229-d0d3-4217-bcf8-9aada2f159aa
-keywords: ["INF files WDK device installations , general syntax rules", "INF files WDK device installations , sections", "sections WDK INF files", "INF files WDK device installations , directives", "directives WDK INF files"]
+keywords:
+- INF files WDK device installations , general syntax rules
+- INF files WDK device installations , sections
+- sections WDK INF files
+- INF files WDK device installations , directives
+- directives WDK INF files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Syntax Rules for INF Files

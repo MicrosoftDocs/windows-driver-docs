@@ -2,7 +2,16 @@
 title: WEP
 description: WEP
 ms.assetid: 84ab8276-1d6d-4371-b5a5-b113c809820f
-keywords: ["cipher operations WDK Native 802.11 , cipher algorithms", "algorithms WDK Native 802.11 cipher", "Wired Equivalent Privacy WDK Native 802.11", "WEP WDK Native 802.11"]
+keywords:
+- cipher operations WDK Native 802.11 , cipher algorithms
+- algorithms WDK Native 802.11 cipher
+- Wired Equivalent Privacy WDK Native 802.11
+- WEP WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WEP

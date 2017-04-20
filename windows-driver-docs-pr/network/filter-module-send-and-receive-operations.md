@@ -2,7 +2,17 @@
 title: Filter Module Send and Receive Operations
 description: Filter Module Send and Receive Operations
 ms.assetid: 208f9af6-cde4-4801-9355-daa6633d7d0b
-keywords: ["filter modules WDK networking , send operations", "filter modules WDK networking , receive operations", "filter drivers WDK networking , send operations", "NDIS filter drivers WDK , send operations", "filter drivers WDK networking , receive operations"]
+keywords:
+- filter modules WDK networking , send operations
+- filter modules WDK networking , receive operations
+- filter drivers WDK networking , send operations
+- NDIS filter drivers WDK , send operations
+- filter drivers WDK networking , receive operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Module Send and Receive Operations

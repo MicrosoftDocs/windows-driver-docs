@@ -2,6 +2,11 @@
 title: Release-Signing a Driver through an Embedded Signature
 description: Release-Signing a Driver through an Embedded Signature
 ms.assetid: ffea2479-83ee-4d94-a5e6-73ecea9fc17d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Release-Signing a Driver through an Embedded Signature

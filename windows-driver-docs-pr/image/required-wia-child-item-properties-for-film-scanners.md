@@ -3,6 +3,11 @@ title: Required WIA Child Item Properties for Film Scanners
 author: windows-driver-content
 description: Required WIA Child Item Properties for Film Scanners
 ms.assetid: 3b12299a-0b01-492c-a79d-45ddc3c193bb
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required WIA Child Item Properties for Film Scanners

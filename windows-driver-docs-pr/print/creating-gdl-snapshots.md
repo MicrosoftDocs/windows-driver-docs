@@ -3,7 +3,16 @@ title: Creating GDL Snapshots
 author: windows-driver-content
 description: Creating GDL Snapshots
 ms.assetid: 20430458-b1e5-490a-90c8-a0abe3892cfe
-keywords: ["GDL WDK , snapshots", "snapshots WDK GDL", "parser WDK GDL , creating snapshots", "configurations WDK GDL , creating snapshots"]
+keywords:
+- GDL WDK , snapshots
+- snapshots WDK GDL
+- parser WDK GDL , creating snapshots
+- configurations WDK GDL , creating snapshots
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating GDL Snapshots

@@ -2,7 +2,14 @@
 title: Setting Up the Test System
 description: Setting Up the Test System
 ms.assetid: 99c591e0-fe01-4db9-af95-4ce458625bfb
-keywords: ["testing network component upgrades WDK", "upgrade tests WDK networking"]
+keywords:
+- testing network component upgrades WDK
+- upgrade tests WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up the Test System

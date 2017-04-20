@@ -2,7 +2,16 @@
 title: Updating Bus-Specific Configuration Space Access for NDIS 6.0
 description: Updating Bus-Specific Configuration Space Access for NDIS 6.0
 ms.assetid: 1b2c590a-c5b4-43cd-93ee-6c6fd3798761
-keywords: ["bus configuration space WDK networking", "miniport adapters WDK networking , bus configuration space", "adapters WDK networking , bus configuration space", "porting miniport drivers WDK networking , adapters"]
+keywords:
+- bus configuration space WDK networking
+- miniport adapters WDK networking , bus configuration space
+- adapters WDK networking , bus configuration space
+- porting miniport drivers WDK networking , adapters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating Bus-Specific Configuration Space Access for NDIS 6.0

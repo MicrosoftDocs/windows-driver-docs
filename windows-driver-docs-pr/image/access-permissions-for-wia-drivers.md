@@ -3,6 +3,11 @@ title: Access Permissions for WIA Drivers
 author: windows-driver-content
 description: Access Permissions for WIA Drivers
 ms.assetid: 593e9367-5304-4b04-8597-4a7c498b9f47
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Access Permissions for WIA Drivers

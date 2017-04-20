@@ -2,7 +2,20 @@
 title: Pixel Formats for Uncompressed Video
 description: Pixel Formats for Uncompressed Video
 ms.assetid: f7e54642-c712-4af1-b7b7-f0d961167c77
-keywords: ["uncompressed video pixel formats WDK DirectX VA", "pixel formats for uncompressed video WDK DirectX VA", "compressed picture decoding WDK DirectX VA , pixel formats for uncompressed video", "picture decoding WDK DirectX VA , compressed", "video decoding WDK DirectX VA , compressed pictures", "decoding video WDK DirectX VA , compressed pictures", "video decoding WDK DirectX VA , uncompressed video pixel formats", "decoding video WDK DirectX VA , uncompressed video pixel formats"]
+keywords:
+- uncompressed video pixel formats WDK DirectX VA
+- pixel formats for uncompressed video WDK DirectX VA
+- compressed picture decoding WDK DirectX VA , pixel formats for uncompressed video
+- picture decoding WDK DirectX VA , compressed
+- video decoding WDK DirectX VA , compressed pictures
+- decoding video WDK DirectX VA , compressed pictures
+- video decoding WDK DirectX VA , uncompressed video pixel formats
+- decoding video WDK DirectX VA , uncompressed video pixel formats
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pixel Formats for Uncompressed Video

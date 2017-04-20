@@ -2,7 +2,21 @@
 title: Managing and Optimizing Fonts
 description: Managing and Optimizing Fonts
 ms.assetid: 5cfc2174-c605-4399-97a6-62f51df21c16
-keywords: ["fonts WDK graphics , managing and optimizing", "GDI WDK Windows 2000 display , fonts, managing and optimizing", "graphics drivers WDK Windows 2000 display , fonts, managing and optimizing", "producers WDK graphics", "consumers WDK GDI", "glyph information WDK graphics", "GDI WDK Windows 2000 display , text output, managing and optimizing", "graphics drivers WDK Windows 2000 display , text output, managing and optimizing fonts", "drawing WDK GDI , fonts, managing and optimizing"]
+keywords:
+- fonts WDK graphics , managing and optimizing
+- GDI WDK Windows 2000 display , fonts, managing and optimizing
+- graphics drivers WDK Windows 2000 display , fonts, managing and optimizing
+- producers WDK graphics
+- consumers WDK GDI
+- glyph information WDK graphics
+- GDI WDK Windows 2000 display , text output, managing and optimizing
+- graphics drivers WDK Windows 2000 display , text output, managing and optimizing fonts
+- drawing WDK GDI , fonts, managing and optimizing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing and Optimizing Fonts

@@ -3,7 +3,18 @@ title: Network Redirector Design in Windows 2000
 author: windows-driver-content
 description: Network Redirector Design in Windows 2000
 ms.assetid: d5a78712-02ee-48f4-86b9-c294b41245a6
-keywords: ["network redirectors WDK , Windows 2000", "redirector drivers WDK , Windows 2000", "Redirected Drive Buffering Subsystem WDK file systems , Windows 2000", "RDBSS WDK file systems , Windows 2000", "buffering code WDK network redirectors", "kernel network redirectors WDK , Windows 2000"]
+keywords:
+- network redirectors WDK , Windows 2000
+- redirector drivers WDK , Windows 2000
+- Redirected Drive Buffering Subsystem WDK file systems , Windows 2000
+- RDBSS WDK file systems , Windows 2000
+- buffering code WDK network redirectors
+- kernel network redirectors WDK , Windows 2000
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Redirector Design in Windows 2000

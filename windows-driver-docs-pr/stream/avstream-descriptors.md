@@ -3,7 +3,24 @@ title: AVStream Descriptors
 author: windows-driver-content
 description: AVStream Descriptors
 ms.assetid: fd436406-311b-4537-994d-fbd8d92d4673
-keywords: ["AVStream descriptors WDK", "descriptors WDK AVStream", "nested descriptor structures WDK AVStream", "AVStream object hierarchy WDK", "objects WDK AVStream", "hierarchy WDK AVStream", "static descriptor tables WDK AVStream", "KSFILTER_DESCRIPTOR", "device descriptors WDK AVStream", "filter factories WDK AVStream", "filter types WDK AVStream", "pin types WDK AVStream"]
+keywords:
+- AVStream descriptors WDK
+- descriptors WDK AVStream
+- nested descriptor structures WDK AVStream
+- AVStream object hierarchy WDK
+- objects WDK AVStream
+- hierarchy WDK AVStream
+- static descriptor tables WDK AVStream
+- KSFILTER_DESCRIPTOR
+- device descriptors WDK AVStream
+- filter factories WDK AVStream
+- filter types WDK AVStream
+- pin types WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Descriptors

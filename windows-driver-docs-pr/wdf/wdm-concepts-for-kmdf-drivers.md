@@ -3,7 +3,27 @@ title: WDM Concepts for WDF Drivers
 author: windows-driver-content
 description: WDM Concepts for WDF Drivers
 ms.assetid: 164b4882-a5a3-45d3-a2f5-53367b396439
-keywords: ["kernel-mode drivers WDK KMDF , WDM", "KMDF WDK , WDM", "Kernel-Mode Driver Framework WDK , WDM", "framework-based drivers WDK KMDF , WDM", "WDM drivers WDK KMDF", "bus enumeration WDK KMDF", "bus drivers WDK KMDF", "function drivers WDK KMDF", "filter drivers WDK KMDF", "driver stacks WDK KMDF", "stacks WDK KMDF", "device stacks WDK KMDF", "IRPs WDK KMDF", "I/O request packets WDK KMDF", "I/O requests WDK KMDF , IRPs"]
+keywords:
+- kernel-mode drivers WDK KMDF , WDM
+- KMDF WDK , WDM
+- Kernel-Mode Driver Framework WDK , WDM
+- framework-based drivers WDK KMDF , WDM
+- WDM drivers WDK KMDF
+- bus enumeration WDK KMDF
+- bus drivers WDK KMDF
+- function drivers WDK KMDF
+- filter drivers WDK KMDF
+- driver stacks WDK KMDF
+- stacks WDK KMDF
+- device stacks WDK KMDF
+- IRPs WDK KMDF
+- I/O request packets WDK KMDF
+- I/O requests WDK KMDF , IRPs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Concepts for WDF Drivers
