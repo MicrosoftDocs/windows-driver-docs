@@ -3,6 +3,11 @@ title: Providing an IStiUSD Interface
 author: windows-driver-content
 description: Providing an IStiUSD Interface
 ms.assetid: ed15b56b-0b63-4983-a4ff-df379a2b9de9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing an IStiUSD Interface

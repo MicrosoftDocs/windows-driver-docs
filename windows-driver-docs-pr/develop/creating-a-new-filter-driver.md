@@ -3,6 +3,11 @@ ms.assetid: AB4E6021-FDF9-40D0-818C-9602E1AEA564
 title: Creating a New Filter Driver
 description: In this topic we explain how to use Visual Studio to start writing a new filter driver. Filter drivers are different from device function drivers, software drivers, and file system drivers, which we cover in other topics.
 keywords: filter driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a New Filter Driver

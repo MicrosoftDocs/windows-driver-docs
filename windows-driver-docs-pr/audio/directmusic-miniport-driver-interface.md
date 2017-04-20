@@ -2,7 +2,21 @@
 title: DirectMusic Miniport Driver Interface
 description: DirectMusic Miniport Driver Interface
 ms.assetid: a3532993-732a-4a7e-82bc-fc4199ec23dd
-keywords: ["miniport drivers WDK audio , synthesizers", "synthesizers WDK audio , miniport drivers", "wave sinks WDK audio , miniport drivers", "DirectMusic kernel-mode WDK audio , miniport drivers", "kernel-mode synths WDK audio , miniport drivers", "port drivers WDK audio , synthesizers", "hardware acceleration WDK audio", "miniport drivers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , kernel-mode hardware acceleration"]
+keywords:
+- miniport drivers WDK audio , synthesizers
+- synthesizers WDK audio , miniport drivers
+- wave sinks WDK audio , miniport drivers
+- DirectMusic kernel-mode WDK audio , miniport drivers
+- kernel-mode synths WDK audio , miniport drivers
+- port drivers WDK audio , synthesizers
+- hardware acceleration WDK audio
+- miniport drivers WDK audio , kernel-mode hardware acceleration
+- synthesizers WDK audio , kernel-mode hardware acceleration
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectMusic Miniport Driver Interface

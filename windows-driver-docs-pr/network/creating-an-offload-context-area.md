@@ -2,7 +2,15 @@
 title: Creating an Offload Context Area
 description: Creating an Offload Context Area
 ms.assetid: 5509ba04-aaad-4934-bc11-49d5c795db59
-keywords: ["state offloading process WDK TCP chimney offload , context area", "offloading state process WDK TCP chimney offload , context area", "context area WDK TCP chimney offload"]
+keywords:
+- state offloading process WDK TCP chimney offload , context area
+- offloading state process WDK TCP chimney offload , context area
+- context area WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating an Offload Context Area

@@ -3,6 +3,11 @@ title: Installing the radio manager DLL
 author: windows-driver-content
 description: To install the radio manager DLL, you’ll need to follow the steps below.
 ms.assetid: 49D9DF01-2440-49DE-91C3-2DCAF8CA1C64
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing the radio manager DLL

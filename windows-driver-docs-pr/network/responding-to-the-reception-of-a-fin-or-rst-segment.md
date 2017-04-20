@@ -2,7 +2,18 @@
 title: Responding to the Reception of a FIN or RST Segment
 description: Responding to the Reception of a FIN or RST Segment
 ms.assetid: 74807473-2d57-4f5b-bc7d-80165c4e18b9
-keywords: ["connection closing WDK TCP chimney offload", "disconnections WDK TCP chimney offload", "RST segment WDK TCP chimney offload", "FIN segment WDK TCP chimney offload", "abortive disconnects WDK TCP chimney offload", "graceful disconnects WDK TCP chimney offload"]
+keywords:
+- connection closing WDK TCP chimney offload
+- disconnections WDK TCP chimney offload
+- RST segment WDK TCP chimney offload
+- FIN segment WDK TCP chimney offload
+- abortive disconnects WDK TCP chimney offload
+- graceful disconnects WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Responding to the Reception of a FIN or RST Segment

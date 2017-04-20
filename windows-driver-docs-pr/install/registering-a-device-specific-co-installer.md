@@ -2,7 +2,14 @@
 title: Registering a Device-Specific Co-installer
 description: Registering a Device-Specific Co-installer
 ms.assetid: 7a80bc60-e2f0-4447-bd73-4ce12fcfc2e3
-keywords: ["device-specific co-installers WDK device installations", "registering device-specific co-installers"]
+keywords:
+- device-specific co-installers WDK device installations
+- registering device-specific co-installers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering a Device-Specific Co-installer

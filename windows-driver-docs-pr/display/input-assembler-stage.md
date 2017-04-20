@@ -2,6 +2,11 @@
 title: Input Assembler Stage
 description: Input Assembler Stage
 ms.assetid: 8db6a2ab-8354-4690-8141-2cdd91c77d5c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Input Assembler Stage

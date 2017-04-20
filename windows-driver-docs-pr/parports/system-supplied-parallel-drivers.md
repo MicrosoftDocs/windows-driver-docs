@@ -3,7 +3,16 @@ title: System-Supplied Parallel Drivers
 author: windows-driver-content
 description: System-Supplied Parallel Drivers
 ms.assetid: c38d31f9-ad7c-40aa-9464-6cc6ac03c9a5
-keywords: ["parallel ports WDK , system supplied drivers", "system-supplied parallel drivers WDK", "parallel drivers WDK", "parallel devices WDK , system supplied drivers"]
+keywords:
+- parallel ports WDK , system supplied drivers
+- system-supplied parallel drivers WDK
+- parallel drivers WDK
+- parallel devices WDK , system supplied drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System-Supplied Parallel Drivers

@@ -2,7 +2,13 @@
 title: Concepts for all driver developers
 description: In this section
 ms.assetid: 639bba8d-d0de-401b-aeb4-c9ad43760e54
-keywords: ["driver fundamentals"]
+keywords:
+- driver fundamentals
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Concepts for all driver developers

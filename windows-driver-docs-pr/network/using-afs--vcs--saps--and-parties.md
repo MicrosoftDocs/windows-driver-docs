@@ -2,7 +2,14 @@
 title: Using AFs, VCs, SAPs, and Parties
 description: Using AFs, VCs, SAPs, and Parties
 ms.assetid: 4bf736a9-1236-4322-85f0-5d3ab7b8c549
-keywords: ["connection-oriented NDIS WDK , entities created", "CoNDIS WDK networking , entities created"]
+keywords:
+- connection-oriented NDIS WDK , entities created
+- CoNDIS WDK networking , entities created
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using AFs, VCs, SAPs, and Parties

@@ -3,6 +3,11 @@ title: Allocated Altitudes
 author: windows-driver-content
 description: Allocated Altitudes
 ms.assetid: EC1993FB-5219-4C0C-A76A-05937A461C5A
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocated Altitudes

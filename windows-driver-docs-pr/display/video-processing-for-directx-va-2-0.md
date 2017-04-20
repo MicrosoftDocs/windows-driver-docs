@@ -2,7 +2,16 @@
 title: Video Processing for DirectX VA 2.0
 description: Video Processing for DirectX VA 2.0
 ms.assetid: 8b14fe56-54bd-4f27-9713-917a16cc39c7
-keywords: ["DirectX Video Acceleration WDK display , video processing", "Video Acceleration WDK DirectX , video processing", "VA WDK DirectX , video processing", "video processing WDK DirectX VA"]
+keywords:
+- DirectX Video Acceleration WDK display , video processing
+- Video Acceleration WDK DirectX , video processing
+- VA WDK DirectX , video processing
+- video processing WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Processing for DirectX VA 2.0

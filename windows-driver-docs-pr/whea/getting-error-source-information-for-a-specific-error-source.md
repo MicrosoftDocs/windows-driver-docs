@@ -3,7 +3,17 @@ title: Getting Error Source Information for a Specific Error Source
 author: windows-driver-content
 description: Getting Error Source Information for a Specific Error Source
 ms.assetid: 9979d654-8214-4e2d-9c6e-fc29a7f4ab40
-keywords: ["error sources WDK WHEA , getting information", "errors WDK WHEA , error sources", "WHEA WDK , getting error source information", "Windows Hardware Error Architecture WDK , getting error source information", "hardware error sources WDK WHEA , getting information"]
+keywords:
+- error sources WDK WHEA , getting information
+- errors WDK WHEA , error sources
+- WHEA WDK , getting error source information
+- Windows Hardware Error Architecture WDK , getting error source information
+- hardware error sources WDK WHEA , getting information
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Getting Error Source Information for a Specific Error Source

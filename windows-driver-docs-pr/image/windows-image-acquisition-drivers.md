@@ -3,6 +3,11 @@ title: Windows Image Acquisition Drivers
 author: windows-driver-content
 description: Windows Image Acquisition Drivers
 ms.assetid: ac145e5f-82c5-4c44-a0cc-c1ea7726d34e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Image Acquisition Drivers

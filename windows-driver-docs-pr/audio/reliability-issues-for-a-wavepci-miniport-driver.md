@@ -2,7 +2,18 @@
 title: Reliability Issues for a WavePci Miniport Driver
 description: Reliability Issues for a WavePci Miniport Driver
 ms.assetid: 329f28a8-5e99-4c25-8a88-1e634f7eeec8
-keywords: ["WavePci reliability issues WDK audio", "spin locks WDK audio", "canceling IRPs", "deadlocks WDK audio", "interrupt service routines WDK audio", "ISRs WDK audio"]
+keywords:
+- WavePci reliability issues WDK audio
+- spin locks WDK audio
+- canceling IRPs
+- deadlocks WDK audio
+- interrupt service routines WDK audio
+- ISRs WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reliability Issues for a WavePci Miniport Driver

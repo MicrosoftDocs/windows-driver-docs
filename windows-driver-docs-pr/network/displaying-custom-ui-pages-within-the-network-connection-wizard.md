@@ -2,7 +2,14 @@
 title: Displaying Custom UI Pages within the Network Connection Wizard
 description: Displaying Custom UI Pages within the Network Connection Wizard
 ms.assetid: 102f142a-91d1-4b55-a111-15a297c03e23
-keywords: ["custom UI WDK Native 802.11 IHV UI Extensions DLL , Network Connection Wizard", "Network Connection Wizard WDK"]
+keywords:
+- custom UI WDK Native 802.11 IHV UI Extensions DLL , Network Connection Wizard
+- Network Connection Wizard WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Displaying Custom UI Pages within the Network Connection Wizard

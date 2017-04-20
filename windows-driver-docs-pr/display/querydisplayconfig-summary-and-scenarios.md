@@ -2,7 +2,20 @@
 title: QueryDisplayConfig Summary and Scenarios
 description: QueryDisplayConfig Summary and Scenarios
 ms.assetid: a556b3d7-3cac-49b1-99db-7ce8a844a8a8
-keywords: ["connecting displays WDK Windows 7 display , CCD APIs, QueryDisplayConfig", "connecting displays WDK Windows Server 2008 R2 display , CCD APIs, QueryDisplayConfig", "configuring displays WDK Windows 7 display , CCD APIs, QueryDisplayConfig", "configuring displays WDK Windows Server 2008 R2 display , CCD APIs, QueryDisplayConfig", "CCD concepts WDK Windows 7 display , QueryDisplayConfig", "CCD concepts WDK Windows Server 2008 R2 display , QueryDisplayConfig", "QueryDisplayConfig WDK Windows 7 display", "QueryDisplayConfig WDK Windows Server 2008 R2 display"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD APIs, QueryDisplayConfig
+- connecting displays WDK Windows Server 2008 R2 display , CCD APIs, QueryDisplayConfig
+- configuring displays WDK Windows 7 display , CCD APIs, QueryDisplayConfig
+- configuring displays WDK Windows Server 2008 R2 display , CCD APIs, QueryDisplayConfig
+- CCD concepts WDK Windows 7 display , QueryDisplayConfig
+- CCD concepts WDK Windows Server 2008 R2 display , QueryDisplayConfig
+- QueryDisplayConfig WDK Windows 7 display
+- QueryDisplayConfig WDK Windows Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # QueryDisplayConfig Summary and Scenarios

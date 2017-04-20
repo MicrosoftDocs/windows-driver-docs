@@ -2,7 +2,16 @@
 title: Plug and Play for NDIS Miniport Drivers
 description: Plug and Play for NDIS Miniport Drivers
 ms.assetid: 277a5f8b-f6a6-444e-831a-712d8f05e59f
-keywords: ["miniport drivers WDK networking , Plug and Play", "NDIS miniport drivers WDK , Plug and Play", "Plug and Play WDK NDIS miniport , about miniport driver Plug and Play", "Plug and Play WDK NDIS miniport"]
+keywords:
+- miniport drivers WDK networking , Plug and Play
+- NDIS miniport drivers WDK , Plug and Play
+- Plug and Play WDK NDIS miniport , about miniport driver Plug and Play
+- Plug and Play WDK NDIS miniport
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Plug and Play for NDIS Miniport Drivers

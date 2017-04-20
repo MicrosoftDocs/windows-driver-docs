@@ -2,6 +2,11 @@
 title: Administration
 description: Administration
 ms.assetid: 3B3AFF6D-7FBB-41AF-80B1-68CA240DE2B0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Administration

@@ -2,6 +2,11 @@
 title: Establish a new company
 description: Establish a new company
 ms.assetid: 98cdd891-3bb8-4aa1-8418-35c2670ba087
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Establish a new company

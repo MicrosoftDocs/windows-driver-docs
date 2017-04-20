@@ -3,7 +3,19 @@ title: Data Range Intersections in AVStream
 author: windows-driver-content
 description: Data Range Intersections in AVStream
 ms.assetid: 44281574-8258-47a3-857d-fd44bb949f17
-keywords: ["data intersections WDK AVStream", "intersections WDK AVStream", "data formats WDK AVStream", "data ranges WDK AVStream", "ranges WDK AVStream", "formats WDK AVStream", "pin data ranges WDK"]
+keywords:
+- data intersections WDK AVStream
+- intersections WDK AVStream
+- data formats WDK AVStream
+- data ranges WDK AVStream
+- ranges WDK AVStream
+- formats WDK AVStream
+- pin data ranges WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Range Intersections in AVStream

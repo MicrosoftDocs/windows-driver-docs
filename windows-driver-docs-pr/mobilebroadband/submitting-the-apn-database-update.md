@@ -2,6 +2,11 @@
 title: Submitting the COSA/APN database update
 description: Submitting the COSA/APN database update
 ms.assetid: 1ad1be32-74c9-4f84-b680-9124135a3b66
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Submitting the COSA/APN database update

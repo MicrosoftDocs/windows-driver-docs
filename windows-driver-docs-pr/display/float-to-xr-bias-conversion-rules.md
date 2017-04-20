@@ -2,7 +2,17 @@
 title: Float to XR\_BIAS Conversion Rules
 description: Float to XR\_BIAS Conversion Rules
 ms.assetid: 496306d5-7494-4df6-8af7-9acb0e2708f9
-keywords: ["Direct3D version 10.1 WDK Windows 7 display , converting float to XR_BIAS", "extended format WDK Windows 7 display , converting float to XR_BIAS", "converting float to XR_BIAS WDK Windows 7 display", "float WDK Windows 7 display", "float WDK Windows 7 display , conversion to XR_BIAS"]
+keywords:
+- Direct3D version 10.1 WDK Windows 7 display , converting float to XR_BIAS
+- extended format WDK Windows 7 display , converting float to XR_BIAS
+- converting float to XR_BIAS WDK Windows 7 display
+- float WDK Windows 7 display
+- float WDK Windows 7 display , conversion to XR_BIAS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Float to XR\_BIAS Conversion Rules

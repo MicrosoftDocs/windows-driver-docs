@@ -2,6 +2,11 @@
 title: Standardized INF Keywords for SR-IOV
 description: Standardized INF Keywords for SR-IOV
 ms.assetid: 5CA33B4F-E43A-4EB6-BCAB-365CA1FD3EF2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standardized INF Keywords for SR-IOV

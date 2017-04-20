@@ -2,7 +2,16 @@
 title: Allocating and Releasing Memory for a SAN Proxy Driver
 description: Allocating and Releasing Memory for a SAN Proxy Driver
 ms.assetid: c196f202-159c-4296-9888-818eaeaada73
-keywords: ["proxy drivers WDK SANs , memory allocations", "SAN proxy drivers WDK , memory allocations", "memory allocations WDK SANs", "releasing memory for SAN proxy drivers"]
+keywords:
+- proxy drivers WDK SANs , memory allocations
+- SAN proxy drivers WDK , memory allocations
+- memory allocations WDK SANs
+- releasing memory for SAN proxy drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating and Releasing Memory for a SAN Proxy Driver

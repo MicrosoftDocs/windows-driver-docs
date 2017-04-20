@@ -3,7 +3,14 @@ title: Error Handling in SCSI Miniport Drivers
 author: windows-driver-content
 description: Error Handling in SCSI Miniport Drivers
 ms.assetid: 0d9a2d60-c8e5-48f6-9c1f-d593e59095c8
-keywords: ["SCSI miniport drivers WDK storage , errors", "errors WDK SCSI"]
+keywords:
+- SCSI miniport drivers WDK storage , errors
+- errors WDK SCSI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Error Handling in SCSI Miniport Drivers

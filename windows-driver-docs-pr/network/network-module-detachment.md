@@ -2,7 +2,19 @@
 title: Network Module Detachment
 description: Network Module Detachment
 ms.assetid: f41ac030-0bfc-47e2-9840-2c3550bc7d33
-keywords: ["network modules WDK Network Module Registrar , detachment", "provider modules WDK Network Module Registrar , detachment", "detaching network modules", "client modules WDK Network Module Registrar , detachment", "deregistering network modules", "Network Module Registrar WDK , detaching network modules", "NMR WDK , detaching network modules"]
+keywords:
+- network modules WDK Network Module Registrar , detachment
+- provider modules WDK Network Module Registrar , detachment
+- detaching network modules
+- client modules WDK Network Module Registrar , detachment
+- deregistering network modules
+- Network Module Registrar WDK , detaching network modules
+- NMR WDK , detaching network modules
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Module Detachment

@@ -2,7 +2,17 @@
 title: EventingService WSDL
 description: EventingService WSDL
 ms.assetid: 2071f4db-6a5a-4e9f-b53f-f50d4d99772a
-keywords: ["WSDBIT tool WDK , WSDL", "WSDAPI Basic Interoperability Tool WDK , WSDL", "EventingService service WDK WSDBIT", "WSDBIT tool WDK , services", "WSDAPI Basic Interoperability Tool WDK , services"]
+keywords:
+- WSDBIT tool WDK , WSDL
+- WSDAPI Basic Interoperability Tool WDK , WSDL
+- EventingService service WDK WSDBIT
+- WSDBIT tool WDK , services
+- WSDAPI Basic Interoperability Tool WDK , services
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EventingService WSDL

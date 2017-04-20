@@ -2,7 +2,18 @@
 title: Property Page Callback Function
 description: Property Page Callback Function
 ms.assetid: 3f4d7247-2a12-4889-9fc0-a28f58046c7b
-keywords: ["device property pages WDK device installations , callback functions", "property pages WDK device installations , callback functions", "custom property pages WDK device installations , callback functions", "callback functions WDK property page", "PSPCB_CREATE", "PSPCB_RELEASE"]
+keywords:
+- device property pages WDK device installations , callback functions
+- property pages WDK device installations , callback functions
+- custom property pages WDK device installations , callback functions
+- callback functions WDK property page
+- PSPCB_CREATE
+- PSPCB_RELEASE
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property Page Callback Function

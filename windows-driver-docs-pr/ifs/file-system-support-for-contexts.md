@@ -3,7 +3,13 @@ title: File System Support for Contexts
 author: windows-driver-content
 description: File System Support for Contexts
 ms.assetid: 661ee3ff-3171-4d1e-a8fe-8d1852c5e990
-keywords: ["contexts WDK file system minifilter , file system support"]
+keywords:
+- contexts WDK file system minifilter , file system support
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File System Support for Contexts

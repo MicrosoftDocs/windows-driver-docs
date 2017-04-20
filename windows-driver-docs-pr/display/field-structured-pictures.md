@@ -2,7 +2,18 @@
 title: Field-Structured Pictures
 description: Field-Structured Pictures
 ms.assetid: fa058a30-74a2-4e8b-aa65-98ac5aa43e57
-keywords: ["MPEG-2 WDK DirectX VA", "field motion compensation WDK DirectX VA", "field (16x8) motion compensation WDK DirectX VA", "dual-prime motion compensation WDK DirectX VA", "16x8 motion compensation WDK DirectX VA", "prediction blocks WDK DirectX VA"]
+keywords:
+- MPEG-2 WDK DirectX VA
+- field motion compensation WDK DirectX VA
+- field (16x8) motion compensation WDK DirectX VA
+- dual-prime motion compensation WDK DirectX VA
+- 16x8 motion compensation WDK DirectX VA
+- prediction blocks WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Field-Structured Pictures

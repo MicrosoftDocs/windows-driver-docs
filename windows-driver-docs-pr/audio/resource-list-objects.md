@@ -2,7 +2,20 @@
 title: Resource List Objects
 description: Resource List Objects
 ms.assetid: a7f18d28-b78f-4b00-8cbb-9f62f5e88dfd
-keywords: ["helper objects WDK audio , resource list objects", "resource list objects WDK audio", "IResourceList", "configuration resource lists WDK audio", "startup time resource assignments WDK audio", "hardware resource assignments WDK audio", "start up resource assignments WDK audio", "start-device routines WDK audio"]
+keywords:
+- helper objects WDK audio , resource list objects
+- resource list objects WDK audio
+- IResourceList
+- configuration resource lists WDK audio
+- startup time resource assignments WDK audio
+- hardware resource assignments WDK audio
+- start up resource assignments WDK audio
+- start-device routines WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Resource List Objects

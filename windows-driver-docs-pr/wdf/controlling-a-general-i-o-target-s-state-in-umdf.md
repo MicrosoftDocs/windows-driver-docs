@@ -3,7 +3,22 @@ title: Controlling a General I/O Target's State in UMDF
 author: windows-driver-content
 description: Controlling a General I/O Target's State in UMDF
 ms.assetid: 479487b2-5ce5-4522-b195-58ee50d210b6
-keywords: ["general I/O targets WDK UMDF , states", "started I/O target state WDK UMDF", "stopped I/O target state WDK UMDF", "closed for query-remove state WDK UMDF", "closed I/O target state WDK UMDF", "deleted I/O target state WDK UMDF", "local I/O targets WDK UMDF", "remote I/O targets WDK UMDF", "stopping I/O targets", "restarting I/O targets"]
+keywords:
+- general I/O targets WDK UMDF , states
+- started I/O target state WDK UMDF
+- stopped I/O target state WDK UMDF
+- closed for query-remove state WDK UMDF
+- closed I/O target state WDK UMDF
+- deleted I/O target state WDK UMDF
+- local I/O targets WDK UMDF
+- remote I/O targets WDK UMDF
+- stopping I/O targets
+- restarting I/O targets
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling a General I/O Target's State in UMDF

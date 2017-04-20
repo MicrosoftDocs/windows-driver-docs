@@ -2,7 +2,17 @@
 title: Handling an Interface Object Set Request
 description: Handling an Interface Object Set Request
 ms.assetid: aed27b0b-fff5-4e9f-b368-526a8bf79c59
-keywords: ["NDIS network interfaces WDK , set requests", "network interfaces WDK , set requests", "OIDs WDK networking , network interfaces", "OID requests WDK networking", "set requests WDK networking"]
+keywords:
+- NDIS network interfaces WDK , set requests
+- network interfaces WDK , set requests
+- OIDs WDK networking , network interfaces
+- OID requests WDK networking
+- set requests WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an Interface Object Set Request

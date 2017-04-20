@@ -3,6 +3,11 @@ title: Sample Code to Set Custom Properties
 author: windows-driver-content
 description: Sample Code to Set Custom Properties
 ms.assetid: 726315eb-de5c-47b6-a35b-524ec1c97d52
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Code to Set Custom Properties

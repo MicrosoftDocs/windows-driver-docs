@@ -2,6 +2,11 @@
 title: Manage Subscriptions
 description: Manage Subscriptions
 ms.assetid: dc7d53d2-9235-42f4-b52b-ad926f4df155
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manage Subscriptions

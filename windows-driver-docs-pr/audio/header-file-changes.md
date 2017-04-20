@@ -2,7 +2,33 @@
 title: Header File Changes
 description: Header File Changes
 ms.assetid: 9212aa8d-bb11-4ade-a70c-274a7ffe83ef
-keywords: ["data formats WDK audio", "formats WDK audio , data", "audio data formats WDK", "formats WDK audio , multichannel", "multichannel formats WDK audio", "home-theater systems WDK audio", "speakers WDK audio , home-threater systems", "audio drivers WDK , home-theater systems", "WDM audio drivers WDK , home-theater systems", "7.1 home theater speakers WDK audio", "7.1 wide configuration speakers WDK audio", "wide configuration speakers WDK audio", "5.1 surround sound speakers WDK audio", "surround sound speakers WDK audio", "header files WDK audio", "Ksmedia.h", "Dsound.h", "channel masks WDK audio", "positions WDK audio", "WDM audio data formats WDK", "data formats WDK audio , header files"]
+keywords:
+- data formats WDK audio
+- formats WDK audio , data
+- audio data formats WDK
+- formats WDK audio , multichannel
+- multichannel formats WDK audio
+- home-theater systems WDK audio
+- speakers WDK audio , home-threater systems
+- audio drivers WDK , home-theater systems
+- WDM audio drivers WDK , home-theater systems
+- 7.1 home theater speakers WDK audio
+- 7.1 wide configuration speakers WDK audio
+- wide configuration speakers WDK audio
+- 5.1 surround sound speakers WDK audio
+- surround sound speakers WDK audio
+- header files WDK audio
+- Ksmedia.h
+- Dsound.h
+- channel masks WDK audio
+- positions WDK audio
+- WDM audio data formats WDK
+- data formats WDK audio , header files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Header File Changes

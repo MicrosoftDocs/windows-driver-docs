@@ -3,7 +3,17 @@ title: Referencing Locales
 author: windows-driver-content
 description: Referencing Locales
 ms.assetid: 63ea5534-b2e1-43aa-b45b-e4fe8bb69f49
-keywords: ["Unidrv, referencing locales", "GPD files WDK Unidrv , referencing locales", "referencing locales", "locale referencing WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, referencing locales
+- GPD files WDK Unidrv , referencing locales
+- referencing locales
+- locale referencing WDK Unidrv
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Referencing Locales

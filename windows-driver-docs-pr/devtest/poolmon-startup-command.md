@@ -2,13 +2,19 @@
 title: PoolMon Startup Command
 description: To start PoolMon, type a command at the command line using the following syntax and parameters.
 ms.assetid: 2aa0cf09-f016-46b9-af4e-0f3fbc6fbe5b
-keywords: ["PoolMon Startup Command Driver Development Tools"]
+keywords:
+- PoolMon Startup Command Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - PoolMon Startup Command
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PoolMon Startup Command

@@ -2,7 +2,19 @@
 title: Clip Lists
 description: Clip Lists
 ms.assetid: 73383093-ab83-4955-b017-cc370009fd0e
-keywords: ["surfaces WDK DirectDraw , blitting", "drawing blt WDK DirectDraw , clip lists", "DirectDraw blitting WDK Windows 2000 display , clip lists", "blitting WDK DirectDraw , clip lists", "blt WDK DirectDraw , clip lists", "clip lists WDK DirectDraw", "clipped blts WDK DirectDraw"]
+keywords:
+- surfaces WDK DirectDraw , blitting
+- drawing blt WDK DirectDraw , clip lists
+- DirectDraw blitting WDK Windows 2000 display , clip lists
+- blitting WDK DirectDraw , clip lists
+- blt WDK DirectDraw , clip lists
+- clip lists WDK DirectDraw
+- clipped blts WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Clip Lists

@@ -3,7 +3,19 @@ title: Customizing the Printer Details Web Page
 author: windows-driver-content
 description: Customizing the Printer Details Web Page
 ms.assetid: 4853d5de-b855-4698-9178-877455e257c5
-keywords: ["customized print Web pages WDK , creating pages", "ASP files WDK printer", "port monitors WDK print , customized Web pages", "customized print Web pages WDK , details page", "details page WDK printer", "print Web pages WDK , details page", "Web pages WDK printer , details page"]
+keywords:
+- customized print Web pages WDK , creating pages
+- ASP files WDK printer
+- port monitors WDK print , customized Web pages
+- customized print Web pages WDK , details page
+- details page WDK printer
+- print Web pages WDK , details page
+- Web pages WDK printer , details page
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customizing the Printer Details Web Page

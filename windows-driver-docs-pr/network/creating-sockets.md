@@ -2,7 +2,16 @@
 title: Creating Sockets
 description: Creating Sockets
 ms.assetid: 84cd0503-15bd-401f-836c-1fdc8425d073
-keywords: ["Winsock Kernel WDK networking , socket creation", "WSK WDK networking , socket creation", "listening sockets WDK Winsock Kernel", "WskSocket"]
+keywords:
+- Winsock Kernel WDK networking , socket creation
+- WSK WDK networking , socket creation
+- listening sockets WDK Winsock Kernel
+- WskSocket
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Sockets

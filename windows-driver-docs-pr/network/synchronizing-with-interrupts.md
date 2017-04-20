@@ -2,7 +2,15 @@
 title: Synchronizing with Interrupts
 description: Synchronizing with Interrupts
 ms.assetid: f201acfa-98e4-4373-ba63-b6c814810f99
-keywords: ["interrupts WDK networking , synchronizing", "NdisMSynchronizeWithInterruptEx", "synchronization WDK interrupts"]
+keywords:
+- interrupts WDK networking , synchronizing
+- NdisMSynchronizeWithInterruptEx
+- synchronization WDK interrupts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing with Interrupts

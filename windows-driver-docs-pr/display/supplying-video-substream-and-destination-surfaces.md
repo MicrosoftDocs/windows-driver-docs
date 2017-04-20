@@ -2,7 +2,16 @@
 title: Supplying Video Substream and Destination Surfaces
 description: Supplying Video Substream and Destination Surfaces
 ms.assetid: 53528c49-11d1-4e53-b700-f6d8d760bcfe
-keywords: ["DeinterlaceBltEx, destination surfaces", "DeinterlaceBltEx, substream surfaces", "destination surfaces WDK DirectX VA", "substream surfaces WDK DirectX VA"]
+keywords:
+- DeinterlaceBltEx, destination surfaces
+- DeinterlaceBltEx, substream surfaces
+- destination surfaces WDK DirectX VA
+- substream surfaces WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supplying Video Substream and Destination Surfaces

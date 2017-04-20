@@ -3,6 +3,11 @@ title: Improvements in Configuration Formats
 author: windows-driver-content
 description: Configuration formats in v4 printer drivers have been improved to allow control over copy count and punctuation substitutions.
 ms.assetid: 66FC6BAF-26DD-4E18-B8C9-0BF494346917
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Improvements in Configuration Formats

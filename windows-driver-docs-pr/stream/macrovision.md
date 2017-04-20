@@ -3,7 +3,16 @@ title: Macrovision
 author: windows-driver-content
 description: Macrovision
 ms.assetid: 62bd8d8a-3e58-4bca-a32d-ff792180afbe
-keywords: ["DVD decoder minidrivers WDK , copyright protection", "decoder minidrivers WDK DVD , copyright protection", "copyright protection WDK DVD decoder", "Macrovision WDK DVD decoder"]
+keywords:
+- DVD decoder minidrivers WDK , copyright protection
+- decoder minidrivers WDK DVD , copyright protection
+- copyright protection WDK DVD decoder
+- Macrovision WDK DVD decoder
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Macrovision

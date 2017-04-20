@@ -3,7 +3,17 @@ title: GDL Whitespace Characters
 author: windows-driver-content
 description: GDL Whitespace Characters
 ms.assetid: 703c41c0-3e12-465a-823f-c32990a52382
-keywords: ["constructs WDK GDL , whitespace characters", "continuation linebreak WDK GDL", "linebreak sequence WDK GDL", "parser WDK GDL , handling whitespace", "GDL WDK , whitespace characters"]
+keywords:
+- constructs WDK GDL , whitespace characters
+- continuation linebreak WDK GDL
+- linebreak sequence WDK GDL
+- parser WDK GDL , handling whitespace
+- GDL WDK , whitespace characters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Whitespace Characters

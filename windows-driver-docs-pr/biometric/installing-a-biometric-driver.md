@@ -2,7 +2,14 @@
 title: Installing a Biometric Driver
 description: Installing a Biometric Driver
 ms.assetid: f1ae7346-c55b-484e-a94a-b4e22f5fafed
-keywords: ["biometric drivers WDK , installing", "installing biometric drivers WDK biometric"]
+keywords:
+- biometric drivers WDK , installing
+- installing biometric drivers WDK biometric
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Biometric Driver

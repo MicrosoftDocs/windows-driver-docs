@@ -2,7 +2,13 @@
 title: 802.1Q and 802.1p Information Supplied to an Offload Target
 description: 802.1Q and 802.1p Information Supplied to an Offload Target
 ms.assetid: 74c979ce-c7cb-427d-a9c9-ca042cf4c583
-keywords: ["802.1Q and 802.1p information WDK TCP chimney offload , supplied to target"]
+keywords:
+- 802.1Q and 802.1p information WDK TCP chimney offload , supplied to target
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.1Q and 802.1p Information Supplied to an Offload Target

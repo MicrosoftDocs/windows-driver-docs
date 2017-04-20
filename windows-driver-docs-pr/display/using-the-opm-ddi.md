@@ -2,7 +2,20 @@
 title: Using the OPM DDI
 description: Using the OPM DDI
 ms.assetid: cd3c78a4-0241-48ab-9005-c544db199eb5
-keywords: ["OPM WDK display , about DDI", "OPM WDK display , creating protected outputs", "OPM WDK display , destroying protected outputs", "OPM WDK display , getting certificates", "OPM WDK display , configuring protected outputs", "OPM WDK display , getting protected output information", "OPM WDK display , getting graphics adapter information", "protection levels WDK display , changing"]
+keywords:
+- OPM WDK display , about DDI
+- OPM WDK display , creating protected outputs
+- OPM WDK display , destroying protected outputs
+- OPM WDK display , getting certificates
+- OPM WDK display , configuring protected outputs
+- OPM WDK display , getting protected output information
+- OPM WDK display , getting graphics adapter information
+- protection levels WDK display , changing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the OPM DDI

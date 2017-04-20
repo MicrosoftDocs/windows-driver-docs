@@ -2,6 +2,11 @@
 title: DirectX Graphics Infrastructure DDI
 description: DirectX Graphics Infrastructure DDI
 ms.assetid: e4f2bd03-d04b-4f67-94ff-54e023000f35
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX Graphics Infrastructure DDI

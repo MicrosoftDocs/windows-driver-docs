@@ -2,6 +2,11 @@
 title: Verify background events
 description: Verify background events
 ms.assetid: c840f555-2e09-409d-9d4f-4d9e8bd8d5a5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Verify background events

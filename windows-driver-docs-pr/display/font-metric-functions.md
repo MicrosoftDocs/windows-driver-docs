@@ -2,7 +2,25 @@
 title: Font Metric Functions
 description: Font Metric Functions
 ms.assetid: 22d88765-bde5-4f1b-b106-9396868d6fb3
-keywords: ["fonts WDK graphics , metric functions", "GDI WDK Windows 2000 display , fonts, metric functions", "graphics drivers WDK Windows 2000 display , fonts, metric functions", "DrvQueryFontData", "DrvQueryFontTree", "DrvFree", "DrvDestroyFont", "DrvQueryFont", "IFIMETRICS", "raster fonts WDK graphics", "notional space coordinate system WDK graphics", "size WDK fonts", "metric functions WDK fonts"]
+keywords:
+- fonts WDK graphics , metric functions
+- GDI WDK Windows 2000 display , fonts, metric functions
+- graphics drivers WDK Windows 2000 display , fonts, metric functions
+- DrvQueryFontData
+- DrvQueryFontTree
+- DrvFree
+- DrvDestroyFont
+- DrvQueryFont
+- IFIMETRICS
+- raster fonts WDK graphics
+- notional space coordinate system WDK graphics
+- size WDK fonts
+- metric functions WDK fonts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Font Metric Functions

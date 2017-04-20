@@ -2,7 +2,14 @@
 title: Driver Support for Dynamic Subdevices
 description: Driver Support for Dynamic Subdevices
 ms.assetid: ca355dfc-46ad-4df2-ac48-f3a0780dc3d3
-keywords: ["dynamic audio subdevices WDK audio", "dynamic topologies WDK audio"]
+keywords:
+- dynamic audio subdevices WDK audio
+- dynamic topologies WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Support for Dynamic Subdevices

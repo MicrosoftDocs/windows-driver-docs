@@ -3,7 +3,21 @@ title: WHEA Hardware Error Event Processing Applications
 author: windows-driver-content
 description: WHEA Hardware Error Event Processing Applications
 ms.assetid: df1790ec-5a7f-41c2-94df-757621e67ade
-keywords: ["Windows Hardware Error Architecture WDK , event processing applications", "WHEA WDK , event processing applications", "hardware errors WDK WHEA , event processing applications", "errors WDK WHEA , event processing applications", "user-mode applications WDK WHEA , event processing applications", "WHEA WDK , events", "hardware errors WDK WHEA , events", "errors WDK WHEA , events", "events WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , event processing applications
+- WHEA WDK , event processing applications
+- hardware errors WDK WHEA , event processing applications
+- errors WDK WHEA , event processing applications
+- user-mode applications WDK WHEA , event processing applications
+- WHEA WDK , events
+- hardware errors WDK WHEA , events
+- errors WDK WHEA , events
+- events WDK WHEA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WHEA Hardware Error Event Processing Applications

@@ -3,7 +3,13 @@ title: IPrintCoreUI2 COM Interface
 author: windows-driver-content
 description: IPrintCoreUI2 COM Interface
 ms.assetid: 3c9df0ac-d823-4c27-bd34-85765f48b972
-keywords: ["IPrintCoreUI2"]
+keywords:
+- IPrintCoreUI2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IPrintCoreUI2 COM Interface

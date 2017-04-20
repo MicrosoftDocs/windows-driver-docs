@@ -2,7 +2,18 @@
 title: Software Tracing FAQ
 description: Software Tracing FAQ
 ms.assetid: 34d1006c-5ff0-4ea2-b345-104dca1d0be0
-keywords: ["software tracing WDK , FAQs", "custom software tracing WDK", "debugging WDK software tracing", "languages WDK software tracing", "sessions WDK software tracing", "tracing WDK , FAQs"]
+keywords:
+- software tracing WDK , FAQs
+- custom software tracing WDK
+- debugging WDK software tracing
+- languages WDK software tracing
+- sessions WDK software tracing
+- tracing WDK , FAQs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Software Tracing FAQ

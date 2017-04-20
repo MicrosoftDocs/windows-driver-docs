@@ -3,6 +3,11 @@ title: Driver interface methods
 author: windows-driver-content
 ms.assetid: 675F4188-3B9A-421B-98EF-FE063B550231
 description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver interface methods

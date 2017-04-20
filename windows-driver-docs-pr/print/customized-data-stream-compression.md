@@ -3,7 +3,17 @@ title: Customized Data Stream Compression
 author: windows-driver-content
 description: Customized Data Stream Compression
 ms.assetid: 7e42f3c7-c833-49ee-976b-ed32b921af95
-keywords: ["Unidrv, data stream compression", "data stream compression WDK Unidrv", "customized data stream compression WDK Unidrv", "compressed data streams WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, data stream compression
+- data stream compression WDK Unidrv
+- customized data stream compression WDK Unidrv
+- compressed data streams WDK Unidrv
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customized Data Stream Compression

@@ -2,7 +2,16 @@
 title: MSI-X Pre-Registration
 description: MSI-X Pre-Registration
 ms.assetid: 93a09ebd-8a50-4c96-a926-54bb4686a618
-keywords: ["MSI-X WDK networking , resource-requirements filter function", "message-signaled interrupts WDK networking , resource-requirements filter function", "MSIs WDK networking , resource-requirements filter function", "resource-requirements filter function WDK net"]
+keywords:
+- MSI-X WDK networking , resource-requirements filter function
+- message-signaled interrupts WDK networking , resource-requirements filter function
+- MSIs WDK networking , resource-requirements filter function
+- resource-requirements filter function WDK net
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MSI-X Pre-Registration

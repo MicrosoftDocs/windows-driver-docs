@@ -2,7 +2,16 @@
 title: Defining Accelerator Capabilities
 description: Defining Accelerator Capabilities
 ms.assetid: 1f590cfd-74b8-4a08-848d-fcbb2c0c9486
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , accelerator capabilities", "Video Acceleration WDK DirectX , accelerator capabilities", "VA WDK DirectX , accelerator capabilities", "restricted profiles WDK DirectX VA"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , accelerator capabilities
+- Video Acceleration WDK DirectX , accelerator capabilities
+- VA WDK DirectX , accelerator capabilities
+- restricted profiles WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining Accelerator Capabilities

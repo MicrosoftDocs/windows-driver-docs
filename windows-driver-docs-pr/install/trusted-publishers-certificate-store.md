@@ -2,7 +2,15 @@
 title: Trusted Publishers Certificate Store
 description: Trusted Publishers Certificate Store
 ms.assetid: e2fcb0ce-82e3-499a-85b9-76e4e742190e
-keywords: ["driver signing WDK , Trusted Publishers certificate store", "Trusted Publishers certificate store WDK", "certificate stores WDK"]
+keywords:
+- driver signing WDK , Trusted Publishers certificate store
+- Trusted Publishers certificate store WDK
+- certificate stores WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trusted Publishers Certificate Store

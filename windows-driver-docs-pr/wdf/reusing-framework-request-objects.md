@@ -3,7 +3,15 @@ title: Reusing Framework Request Objects
 author: windows-driver-content
 description: Reusing Framework Request Objects
 ms.assetid: 9e3090a9-62d0-48b3-9f3b-7171dc6d2766
-keywords: ["request processing WDK KMDF , reusing request objects", "request objects WDK KMDF , reusing", "reusing request objects WDK KMDF"]
+keywords:
+- request processing WDK KMDF , reusing request objects
+- request objects WDK KMDF , reusing
+- reusing request objects WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reusing Framework Request Objects

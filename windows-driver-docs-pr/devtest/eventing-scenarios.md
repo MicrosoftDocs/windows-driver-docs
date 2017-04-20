@@ -2,7 +2,17 @@
 title: Eventing Scenarios
 description: Eventing Scenarios
 ms.assetid: 6f7832ed-2b0b-4857-b47e-7db492a53855
-keywords: ["WSDBIT tool WDK , test scenarios", "WSDAPI Basic Interoperability Tool WDK , test scenarios", "scenarios WDK WSDBIT", "test scenarios WDK WSDBIT", "Eventing scenario WDK WSDBIT"]
+keywords:
+- WSDBIT tool WDK , test scenarios
+- WSDAPI Basic Interoperability Tool WDK , test scenarios
+- scenarios WDK WSDBIT
+- test scenarios WDK WSDBIT
+- Eventing scenario WDK WSDBIT
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Eventing Scenarios

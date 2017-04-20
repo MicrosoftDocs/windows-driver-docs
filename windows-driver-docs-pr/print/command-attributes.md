@@ -3,7 +3,20 @@ title: Command Attributes
 author: windows-driver-content
 description: Command Attributes
 ms.assetid: 8ce2c668-a130-428e-bf5f-0eab2dcd3fdb
-keywords: ["printer attributes WDK Unidrv , commands", "commands WDK Unidrv", "printer commands WDK Unidrv , attributes", "CallbackID", "Cmd", "NoPageEject", "Order", "Params"]
+keywords:
+- printer attributes WDK Unidrv , commands
+- commands WDK Unidrv
+- printer commands WDK Unidrv , attributes
+- CallbackID
+- Cmd
+- NoPageEject
+- Order
+- Params
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command Attributes

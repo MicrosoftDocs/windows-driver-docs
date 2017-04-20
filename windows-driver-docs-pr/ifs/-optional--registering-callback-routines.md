@@ -1,9 +1,16 @@
 ---
-title: \ Optional\ Registering Callback Routines
+title: '\ Optional\ Registering Callback Routines'
 author: windows-driver-content
-description: \ Optional\ Registering Callback Routines
+description: '\ Optional\ Registering Callback Routines'
 ms.assetid: 59d15b37-e31e-45fc-bdb0-fed6f791839c
-keywords: ["registering callback routines", "callback routines WDK file system"]
+keywords:
+- registering callback routines
+- callback routines WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \[Optional\] Registering Callback Routines

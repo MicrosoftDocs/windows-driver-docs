@@ -2,7 +2,15 @@
 title: Cabinet File Function
 description: Cabinet File Function
 ms.assetid: 0f72c833-6bcb-4b11-aa7e-dc5cc678836f
-keywords: ["SetupAPI functions WDK , cabinet files", ".cab files", "CAB files"]
+keywords:
+- SetupAPI functions WDK , cabinet files
+- .cab files
+- CAB files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cabinet File Function

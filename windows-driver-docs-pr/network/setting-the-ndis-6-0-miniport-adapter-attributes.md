@@ -2,7 +2,15 @@
 title: Setting the NDIS 6.0 Miniport Adapter Attributes
 description: Setting the NDIS 6.0 Miniport Adapter Attributes
 ms.assetid: 76d4bda0-c3e3-4abe-b16b-d2b5392c3db4
-keywords: ["miniport adapters WDK networking , attributes", "adapters WDK networking , attributes", "porting miniport drivers WDK networking , adapters"]
+keywords:
+- miniport adapters WDK networking , attributes
+- adapters WDK networking , attributes
+- porting miniport drivers WDK networking , adapters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the NDIS 6.0 Miniport Adapter Attributes

@@ -2,7 +2,19 @@
 title: DirectX VA Data Flow Management
 description: DirectX VA Data Flow Management
 ms.assetid: ce6c4c2d-c290-4cc1-9f95-43480cd025ab
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , data flow", "Video Acceleration WDK DirectX , data flow", "VA WDK DirectX , data flow", "data flow WDK DirectX VA", "video decoding WDK DirectX VA , data flow", "decoding video WDK DirectX VA , data flow", "picture decoding WDK DirectX VA , data flow"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , data flow
+- Video Acceleration WDK DirectX , data flow
+- VA WDK DirectX , data flow
+- data flow WDK DirectX VA
+- video decoding WDK DirectX VA , data flow
+- decoding video WDK DirectX VA , data flow
+- picture decoding WDK DirectX VA , data flow
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX VA Data Flow Management

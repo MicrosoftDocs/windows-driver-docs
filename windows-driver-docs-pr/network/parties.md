@@ -2,7 +2,16 @@
 title: Parties
 description: Parties
 ms.assetid: ca60ee28-53a4-40ec-956c-d7d3e866f681
-keywords: ["point-to-multipoint connections WDK CoNDIS", "parties WDK CoNDIS", "connection-oriented NDIS WDK , parties", "CoNDIS WDK networking , parties"]
+keywords:
+- point-to-multipoint connections WDK CoNDIS
+- parties WDK CoNDIS
+- connection-oriented NDIS WDK , parties
+- CoNDIS WDK networking , parties
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Parties

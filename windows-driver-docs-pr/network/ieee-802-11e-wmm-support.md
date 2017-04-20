@@ -2,6 +2,11 @@
 title: IEEE 802.11e/WMM Support
 description: IEEE 802.11e/WMM Support
 ms.assetid: 5272d0c7-02a2-49ba-a68e-adae6cec6976
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IEEE 802.11e/WMM Support

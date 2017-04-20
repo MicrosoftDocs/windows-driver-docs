@@ -2,7 +2,17 @@
 title: Supporting Brightness Controls on Integrated Display Panels
 description: Supporting Brightness Controls on Integrated Display Panels
 ms.assetid: d32ee274-569e-4adc-a723-28dc756fb177
-keywords: ["brightness WDK display", "ACPI-based brightness hot-keys WDK display", "notifying brightness hot keys WDK display", "BIOS brightness control WDK display", "automatic brightness WDK display"]
+keywords:
+- brightness WDK display
+- ACPI-based brightness hot-keys WDK display
+- notifying brightness hot keys WDK display
+- BIOS brightness control WDK display
+- automatic brightness WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Brightness Controls on Integrated Display Panels

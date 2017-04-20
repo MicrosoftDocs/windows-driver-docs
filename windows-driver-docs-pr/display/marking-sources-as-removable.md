@@ -2,6 +2,11 @@
 title: Marking Sources as Removable
 description: Marking Sources as Removable
 ms.assetid: 7fe48a4b-25d2-4e2c-9c26-a425928947ce
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Marking Sources as Removable

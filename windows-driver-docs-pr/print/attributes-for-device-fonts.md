@@ -3,7 +3,14 @@ title: Attributes for Device Fonts
 author: windows-driver-content
 description: Attributes for Device Fonts
 ms.assetid: 748faa90-9c31-44c2-8bb3-641a1f95eab1
-keywords: ["device fonts WDK Unidrv", "font attributes WDK Unidrv"]
+keywords:
+- device fonts WDK Unidrv
+- font attributes WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attributes for Device Fonts

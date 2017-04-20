@@ -2,7 +2,17 @@
 title: Modifying Registry Values by Class Installers and Co-installers
 description: Modifying Registry Values by Class Installers and Co-installers
 ms.assetid: 2D4B907A-622B-4b1b-A692-8E858F770F70
-keywords: ["registry WDK device installations , modifying registry values", "registry WDK device installations , modifying registry values, class installers", "registry WDK device installations , modifying registry values, co-installers", "class installers WDK device installations , modifying registry values", "co-installers WDK device installations , modifying registry values"]
+keywords:
+- registry WDK device installations , modifying registry values
+- registry WDK device installations , modifying registry values, class installers
+- registry WDK device installations , modifying registry values, co-installers
+- class installers WDK device installations , modifying registry values
+- co-installers WDK device installations , modifying registry values
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Modifying Registry Values by Class Installers and Co-installers

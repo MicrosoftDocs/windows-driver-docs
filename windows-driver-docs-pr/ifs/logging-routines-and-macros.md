@@ -3,7 +3,16 @@ title: Logging Routines and Macros
 author: windows-driver-content
 description: Logging Routines and Macros
 ms.assetid: 343605bc-7992-4e9c-a9af-f57bb958a38b
-keywords: ["RDBSS WDK file systems , logging", "Redirected Drive Buffering Subsystem WDK file systems , logging", "logging WDK RDBSS", "RDBSSLOG macro"]
+keywords:
+- RDBSS WDK file systems , logging
+- Redirected Drive Buffering Subsystem WDK file systems , logging
+- logging WDK RDBSS
+- RDBSSLOG macro
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Logging Routines and Macros

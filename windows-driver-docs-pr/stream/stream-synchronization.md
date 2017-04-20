@@ -3,7 +3,14 @@ title: Stream Synchronization
 author: windows-driver-content
 description: Stream Synchronization
 ms.assetid: bbf589f1-ca4b-41a2-970d-b31c7761eb1a
-keywords: ["synchronization WDK DVD decoder", "stream synchronization WDK DVD decoder"]
+keywords:
+- synchronization WDK DVD decoder
+- stream synchronization WDK DVD decoder
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Synchronization

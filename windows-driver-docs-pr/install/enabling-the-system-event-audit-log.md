@@ -2,7 +2,15 @@
 title: Enabling the System Event Audit Log
 description: Enabling the System Event Audit Log
 ms.assetid: a4206f06-0c81-407e-80aa-4f6b08cb2a70
-keywords: ["verbose logging WDK driver signing", "security audit policy WDK driver signing", "system audit policy WDK driver signing"]
+keywords:
+- verbose logging WDK driver signing
+- security audit policy WDK driver signing
+- system audit policy WDK driver signing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling the System Event Audit Log

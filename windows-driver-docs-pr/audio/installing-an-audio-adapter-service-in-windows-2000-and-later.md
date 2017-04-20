@@ -2,7 +2,16 @@
 title: Installing an Audio Adapter Service in Windows 2000 and Later
 description: Installing an Audio Adapter Service in Windows 2000 and Later
 ms.assetid: 465005da-bf06-497b-801c-fe5aa19a3974
-keywords: ["audio adapters WDK , service installations", "adapter drivers WDK audio , service installations", "Port Class audio adapters WDK , service installations", "adapter services WDK audio"]
+keywords:
+- audio adapters WDK , service installations
+- adapter drivers WDK audio , service installations
+- Port Class audio adapters WDK , service installations
+- adapter services WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing an Audio Adapter Service in Windows 2000 and Later

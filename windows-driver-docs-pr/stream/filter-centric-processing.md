@@ -3,7 +3,16 @@ title: Filter-Centric Processing
 author: windows-driver-content
 description: Filter-Centric Processing
 ms.assetid: e56c5102-7ea6-4687-ae5e-1550db9500f0
-keywords: ["filter-centric filters WDK AVStream", "AVStream filter-centric filters WDK", "filter types WDK AVStream", "AVStrMiniFilterProcess"]
+keywords:
+- filter-centric filters WDK AVStream
+- AVStream filter-centric filters WDK
+- filter types WDK AVStream
+- AVStrMiniFilterProcess
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter-Centric Processing

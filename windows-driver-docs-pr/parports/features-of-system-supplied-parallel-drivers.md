@@ -3,7 +3,18 @@ title: Features of System-Supplied Parallel Drivers
 author: windows-driver-content
 description: Features of System-Supplied Parallel Drivers
 ms.assetid: 6d579a88-4608-4333-9789-e10c562fc644
-keywords: ["system-supplied parallel drivers WDK , about system-supplied parallel drivers", "Parclass driver", "Parport driver", "functional device objects WDK ports", "FDOs WDK ports", "IEEE 1284 WDK"]
+keywords:
+- system-supplied parallel drivers WDK , about system-supplied parallel drivers
+- Parclass driver
+- Parport driver
+- functional device objects WDK ports
+- FDOs WDK ports
+- IEEE 1284 WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Features of System-Supplied Parallel Drivers

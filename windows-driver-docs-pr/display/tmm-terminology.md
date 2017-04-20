@@ -2,7 +2,18 @@
 title: TMM Terminology
 description: TMM Terminology
 ms.assetid: ab1176b0-66a0-4ac3-96ce-7ca3809d9d0a
-keywords: ["TMM WDK display , terminology", "TMM WDK display , clone view", "TMM WDK display , COM", "TMM WDK display , external only display configuration", "TMM WDK display , single view", "TMM WDK display , topology"]
+keywords:
+- TMM WDK display , terminology
+- TMM WDK display , clone view
+- TMM WDK display , COM
+- TMM WDK display , external only display configuration
+- TMM WDK display , single view
+- TMM WDK display , topology
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TMM Terminology

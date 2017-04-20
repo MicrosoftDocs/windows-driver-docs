@@ -3,7 +3,17 @@ title: Locking and Unlocking a Parallel Port for Use by a Parallel Device
 author: windows-driver-content
 description: Locking and Unlocking a Parallel Port for Use by a Parallel Device
 ms.assetid: dbfa962e-9de8-4a9c-b962-24b53c41f35d
-keywords: ["parallel devices WDK , port locking/unlocking", "locking WDK parallel devices", "unlocking parallel ports", "uninterrupted operations WDK parallel devices", "freeing parallel ports"]
+keywords:
+- parallel devices WDK , port locking/unlocking
+- locking WDK parallel devices
+- unlocking parallel ports
+- uninterrupted operations WDK parallel devices
+- freeing parallel ports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Locking and Unlocking a Parallel Port for Use by a Parallel Device

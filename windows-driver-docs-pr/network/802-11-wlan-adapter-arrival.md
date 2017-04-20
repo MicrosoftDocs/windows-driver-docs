@@ -2,7 +2,14 @@
 title: 802.11 WLAN Adapter Arrival
 description: 802.11 WLAN Adapter Arrival
 ms.assetid: 4d533f32-0f98-4a65-ac1b-7a470e54ad29
-keywords: ["adapters WDK 802.11 WLAN , arrivals", "WLAN adapters WDK , arrivals"]
+keywords:
+- adapters WDK 802.11 WLAN , arrivals
+- WLAN adapters WDK , arrivals
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 WLAN Adapter Arrival

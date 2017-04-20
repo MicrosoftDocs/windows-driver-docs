@@ -2,7 +2,14 @@
 title: Display Driver Testing Tools
 description: Display Driver Testing Tools
 ms.assetid: b351540d-3459-4ef7-8ab9-8aaebc0c15a9
-keywords: ["display drivers WDK Windows 2000 , testing tools", "testing drivers WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , testing tools
+- testing drivers WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Display Driver Testing Tools

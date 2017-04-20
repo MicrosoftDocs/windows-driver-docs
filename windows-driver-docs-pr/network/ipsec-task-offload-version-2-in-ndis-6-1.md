@@ -2,7 +2,14 @@
 title: IPsec Task Offload Version 2 in NDIS 6.1
 description: IPsec Task Offload Version 2 in NDIS 6.1
 ms.assetid: ecd7b1ab-b2e6-4b56-8610-17b5ff5e77cd
-keywords: ["IPsec offload WDK TCP/IP transport , version 2", "IPsecOV2 WDK TCP/IP transport , about IPsecOV2"]
+keywords:
+- IPsec offload WDK TCP/IP transport , version 2
+- IPsecOV2 WDK TCP/IP transport , about IPsecOV2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IPsec Task Offload Version 2 in NDIS 6.1

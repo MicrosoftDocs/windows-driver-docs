@@ -3,7 +3,16 @@ title: Port-Driver-Supplied ConfigInfo for HwScsiFindAdapter
 author: windows-driver-content
 description: Port-Driver-Supplied ConfigInfo for HwScsiFindAdapter
 ms.assetid: 9691f47d-1ea8-4ef6-8e0d-57570ff70a16
-keywords: ["HwScsiFindAdapter", "SCSI miniport drivers WDK storage , HwScsiFindAdapter", "ConfigInfo", "port-driver-supplied ConfigInfo WDK SCSI"]
+keywords:
+- HwScsiFindAdapter
+- SCSI miniport drivers WDK storage , HwScsiFindAdapter
+- ConfigInfo
+- port-driver-supplied ConfigInfo WDK SCSI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Port-Driver-Supplied ConfigInfo for HwScsiFindAdapter

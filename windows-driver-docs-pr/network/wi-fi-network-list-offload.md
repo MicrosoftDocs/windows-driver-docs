@@ -2,6 +2,11 @@
 title: Wi-Fi Network List Offload
 description: Wi-Fi Network List Offload (NLO) is a feature where certain Wi-Fi profile information is offloaded to the NIC firmware to allow the Wi-Fi NIC to perform logic that optimizes the power efficiency and connectivity of a given system.
 ms.assetid: 528838AA-4002-4923-A71B-37ADEE9B8D07
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Network List Offload

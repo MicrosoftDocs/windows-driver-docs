@@ -3,7 +3,13 @@ title: Print ticket and capabilities - Unidrv/Pscript5
 author: windows-driver-content
 description: Print ticket and print capabilities provider interface implemented by Unidrv/Pscript5 plug-ins
 ms.assetid: 00dcbbde-e4e4-4fcc-b69f-9c91051e0e29
-keywords: ["Unidrv WDK print"]
+keywords:
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print ticket and print capabilities provider interface implemented by Unidrv/Pscript5 plug-ins

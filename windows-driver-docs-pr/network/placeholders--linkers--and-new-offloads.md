@@ -2,7 +2,18 @@
 title: Placeholders, Linkers, and New Offloads
 description: Placeholders, Linkers, and New Offloads
 ms.assetid: e3b09deb-7687-4528-b3e9-1f9c0ab77869
-keywords: ["offload state WDK TCP chimney offload , linkers", "offload state WDK TCP chimney offload , placeholders", "offload state WDK TCP chimney offload , new offloads", "offload node WDK TCP chimney offload", "placehoolders WDK TCP chimney offload", "linkers WDK TCP chimney offload"]
+keywords:
+- offload state WDK TCP chimney offload , linkers
+- offload state WDK TCP chimney offload , placeholders
+- offload state WDK TCP chimney offload , new offloads
+- offload node WDK TCP chimney offload
+- placehoolders WDK TCP chimney offload
+- linkers WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Placeholders, Linkers, and New Offloads

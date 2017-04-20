@@ -2,6 +2,11 @@
 title: Static Driver Verifier commands (MSBuild)
 description: You can run Static Driver Verifier (SDV) in a Visual Studio Command Prompt window. Navigate to the directory where the driver's project file or the library's project file is stored. The parameters can appear in any order on the command line.
 ms.assetid: F0663631-AD7B-4BFE-8E07-7BB2FFC72911
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 #  Static Driver Verifier commands (MSBuild)

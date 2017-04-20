@@ -2,7 +2,18 @@
 title: PnP Device Installation Signing Requirements
 description: PnP Device Installation Signing Requirements
 ms.assetid: 92527b24-b29a-4a78-886d-fafd620090d1
-keywords: ["driver signing WDK , PnP device installations", "signing drivers WDK , PnP device installations", "digital signatures WDK , PnP device installations", "signatures WDK , PnP device installations", "PnP WDK driver signing", "Plug and Play WDK driver signing"]
+keywords:
+- driver signing WDK , PnP device installations
+- signing drivers WDK , PnP device installations
+- digital signatures WDK , PnP device installations
+- signatures WDK , PnP device installations
+- PnP WDK driver signing
+- Plug and Play WDK driver signing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP Device Installation Signing Requirements

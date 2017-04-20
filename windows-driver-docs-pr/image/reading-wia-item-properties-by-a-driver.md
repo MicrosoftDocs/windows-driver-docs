@@ -3,6 +3,11 @@ title: Reading WIA Item Properties by a Driver
 author: windows-driver-content
 description: Reading WIA Item Properties by a Driver
 ms.assetid: 4e592c62-e8bf-4b25-9c65-5a0079d3a857
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading WIA Item Properties by a Driver

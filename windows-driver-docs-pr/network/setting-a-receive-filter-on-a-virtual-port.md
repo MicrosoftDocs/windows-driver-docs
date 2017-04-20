@@ -2,6 +2,11 @@
 title: Setting a Receive Filter on a Virtual Port
 description: Setting a Receive Filter on a Virtual Port
 ms.assetid: F0137D59-1701-4DFC-BB30-27E477FC0706
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting a Receive Filter on a Virtual Port

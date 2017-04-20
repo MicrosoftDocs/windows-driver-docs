@@ -2,6 +2,11 @@
 title: How to do printer maintenance in a Windows Store device app
 description: In Windows 8.1, Windows Store device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles.
 ms.assetid: 52141F66-872A-4381-92C8-B04ABDABA7AD
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to do printer maintenance in a Windows Store device app

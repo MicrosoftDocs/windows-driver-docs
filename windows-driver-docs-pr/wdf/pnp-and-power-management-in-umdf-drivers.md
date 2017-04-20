@@ -3,7 +3,17 @@ title: PnP and Power Management in UMDF Drivers
 author: windows-driver-content
 description: PnP and Power Management in UMDF Drivers
 ms.assetid: 1860ee80-0ad8-4f65-80b0-fb628a84a852
-keywords: ["Plug and Play WDK UMDF , power management in UMDF-based drivers", "PnP WDK UMDF , power management in UMDF-based drivers", "power management WDK UMDF", "power management WDK UMDF , PnP", "power management WDK UMDF , Plug and Play"]
+keywords:
+- Plug and Play WDK UMDF , power management in UMDF-based drivers
+- PnP WDK UMDF , power management in UMDF-based drivers
+- power management WDK UMDF
+- power management WDK UMDF , PnP
+- power management WDK UMDF , Plug and Play
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP and Power Management in UMDF Drivers

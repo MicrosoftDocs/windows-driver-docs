@@ -2,7 +2,21 @@
 title: Installing Test-Signed Driver Packages
 description: Installing Test-Signed Driver Packages
 ms.assetid: 6abbe51c-0fdf-465f-b1f2-d48e593a4f0e
-keywords: ["test signing drivers WDK , installing test-signed driver packages", "driver signing WDK , driver packages", "signing drivers WDK , driver packages", "digital signatures WDK , driver packages", "signatures WDK , driver packages", "driver package digital signatures WDK", "package digital signatures WDK", "test signing drivers WDK , driver packages", "installing test-signed driver packages WDK"]
+keywords:
+- test signing drivers WDK , installing test-signed driver packages
+- driver signing WDK , driver packages
+- signing drivers WDK , driver packages
+- digital signatures WDK , driver packages
+- signatures WDK , driver packages
+- driver package digital signatures WDK
+- package digital signatures WDK
+- test signing drivers WDK , driver packages
+- installing test-signed driver packages WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Test-Signed Driver Packages

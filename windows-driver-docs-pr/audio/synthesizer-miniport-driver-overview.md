@@ -2,7 +2,21 @@
 title: Synthesizer Miniport Driver Overview
 description: Synthesizer Miniport Driver Overview
 ms.assetid: dbd6b95e-f8c8-49f1-ad90-b34821772391
-keywords: ["miniport drivers WDK audio , synthesizers", "synthesizers WDK audio , miniport drivers", "wave sinks WDK audio , miniport drivers", "DirectMusic kernel-mode WDK audio , miniport drivers", "kernel-mode synths WDK audio , miniport drivers", "port drivers WDK audio , synthesizers", "hardware acceleration WDK audio", "miniport drivers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , kernel-mode hardware acceleration"]
+keywords:
+- miniport drivers WDK audio , synthesizers
+- synthesizers WDK audio , miniport drivers
+- wave sinks WDK audio , miniport drivers
+- DirectMusic kernel-mode WDK audio , miniport drivers
+- kernel-mode synths WDK audio , miniport drivers
+- port drivers WDK audio , synthesizers
+- hardware acceleration WDK audio
+- miniport drivers WDK audio , kernel-mode hardware acceleration
+- synthesizers WDK audio , kernel-mode hardware acceleration
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synthesizer Miniport Driver Overview

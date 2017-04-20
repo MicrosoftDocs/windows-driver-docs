@@ -3,7 +3,16 @@ title: GDL Quoted Strings
 author: windows-driver-content
 description: GDL Quoted Strings
 ms.assetid: 52d6f1bf-0b8c-4aa7-8cc8-1a18def224be
-keywords: ["constructs WDK GDL , strings", "GDL WDK , strings", "strings WDK GDL , quoted strings", "quoted strings WDK GDL"]
+keywords:
+- constructs WDK GDL , strings
+- GDL WDK , strings
+- strings WDK GDL , quoted strings
+- quoted strings WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Quoted Strings

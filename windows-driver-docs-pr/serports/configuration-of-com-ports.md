@@ -3,7 +3,14 @@ title: Configuration of COM Ports
 author: windows-driver-content
 description: Configuration of COM Ports
 ms.assetid: 519ca9c8-bc67-4a85-87ae-6015c6212dea
-keywords: ["COM ports WDK serial devices", "serial devices WDK , COM ports"]
+keywords:
+- COM ports WDK serial devices
+- serial devices WDK , COM ports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuration of COM Ports

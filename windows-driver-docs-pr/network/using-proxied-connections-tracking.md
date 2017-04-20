@@ -2,6 +2,11 @@
 title: Using Proxied Connections Tracking
 description: Using Proxied Connections Tracking
 ms.assetid: 20A737D7-043D-4D05-A15D-85595E48521B
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Proxied Connections Tracking

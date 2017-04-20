@@ -2,7 +2,13 @@
 title: VC-1
 description: VC-1
 ms.assetid: 673ff680-ecf7-4243-834d-2539479dbd64
-keywords: ["VC-1 video compression WDK DirectX VA"]
+keywords:
+- VC-1 video compression WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VC-1

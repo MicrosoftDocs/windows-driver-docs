@@ -2,6 +2,11 @@
 title: Best Practices for Specifying Model IDs
 description: Best Practices for Specifying Model IDs
 ms.assetid: ed0cdfb4-1de8-4b4f-8bab-7c5e06cf96f6
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Best Practices for Specifying Model IDs

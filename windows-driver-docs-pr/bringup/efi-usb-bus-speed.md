@@ -3,6 +3,11 @@ title: EFI\_USB\_BUS\_SPEED
 author: windows-driver-content
 description: EFI\_USB\_BUS\_SPEED
 ms.assetid: 2888cff6-db12-47ea-866f-de218e2b08e5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USB\_BUS\_SPEED

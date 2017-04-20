@@ -3,7 +3,15 @@ title: Unidrv Renderer
 author: windows-driver-content
 description: Unidrv Renderer
 ms.assetid: 5c19eb9c-149b-4587-a12d-f01164231b51
-keywords: ["Unidrv, renderer", "renderer WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, renderer
+- renderer WDK Unidrv
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unidrv Renderer

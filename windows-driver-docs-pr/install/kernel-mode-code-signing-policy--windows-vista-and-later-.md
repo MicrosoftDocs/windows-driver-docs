@@ -2,7 +2,20 @@
 title: Driver Signing Policy
 description: Driver Signing Policy
 ms.assetid: c3ba672c-5bf2-4885-a85e-fa6d8a47ca54
-keywords: ["driver signing WDK , kernel-mode code signing policy", "signing drivers WDK , kernel-mode code signing policy", "digital signatures WDK , kernel-mode code signing policy", "signatures WDK , kernel-mode code signing policy", "kernel-mode code signing policy WDK", "kernel-mode driver signing WDK", "driver package digital signatures WDK", "package digital signatures WDK"]
+keywords:
+- driver signing WDK , kernel-mode code signing policy
+- signing drivers WDK , kernel-mode code signing policy
+- digital signatures WDK , kernel-mode code signing policy
+- signatures WDK , kernel-mode code signing policy
+- kernel-mode code signing policy WDK
+- kernel-mode driver signing WDK
+- driver package digital signatures WDK
+- package digital signatures WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Signing Policy

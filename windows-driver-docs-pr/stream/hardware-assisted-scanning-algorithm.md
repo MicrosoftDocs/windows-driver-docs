@@ -3,7 +3,13 @@ title: Hardware-Assisted Scanning Algorithm
 author: windows-driver-content
 description: Hardware-Assisted Scanning Algorithm
 ms.assetid: 9a24b985-9667-4424-84e5-b1c728b3c558
-keywords: ["hardware-assisted scanning WDK video capture"]
+keywords:
+- hardware-assisted scanning WDK video capture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware-Assisted Scanning Algorithm

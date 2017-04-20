@@ -3,7 +3,16 @@ title: Restarting Processing in AVStream
 author: windows-driver-content
 description: Restarting Processing in AVStream
 ms.assetid: f60d4dbd-61e6-4ae2-aa43-9edc8f36c3ff
-keywords: ["restarting AVStream processing", "AVStream process restarting WDK", "resume processing WDK AVStream", "pending status WDK AVStream"]
+keywords:
+- restarting AVStream processing
+- AVStream process restarting WDK
+- resume processing WDK AVStream
+- pending status WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Restarting Processing in AVStream

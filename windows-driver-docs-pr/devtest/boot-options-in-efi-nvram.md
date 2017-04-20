@@ -2,7 +2,17 @@
 title: Boot Options in EFI NVRAM
 description: Computers with Extensible Firmware Interface (EFI) firmware, such as Intel Itanium 2 processors, store boot options in NVRAM, a storage medium that can be edited, but retains its state even when you turn off the computer.
 ms.assetid: 99247d03-1723-4a2b-8ef4-c1f39687642f
-keywords: ["NVRAM boot options WDK", "EFI NVRAM boot options WDK", "boot options WDK , EFI NVRAM", "Extensible Firmware Interface WDK boot options", "Itanium processor boot options WDK"]
+keywords:
+- NVRAM boot options WDK
+- EFI NVRAM boot options WDK
+- boot options WDK , EFI NVRAM
+- Extensible Firmware Interface WDK boot options
+- Itanium processor boot options WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boot Options in EFI NVRAM

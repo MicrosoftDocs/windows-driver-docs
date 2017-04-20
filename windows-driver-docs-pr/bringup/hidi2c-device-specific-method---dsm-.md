@@ -3,6 +3,11 @@ title: HIDI2C Device-Specific Method (\_DSM)
 author: windows-driver-content
 description: The \_DSM method is defined in section 9.14.1, \ 0034;\_DSM (Device Specific Method) \ 0034;, in the ACPI 5.0 specification.
 ms.assetid: D78077F4-9995-4DC6-9DF6-89D0F8E0C545
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HIDI2C Device-Specific Method (\_DSM)

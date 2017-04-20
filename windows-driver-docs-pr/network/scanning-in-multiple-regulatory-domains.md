@@ -2,7 +2,15 @@
 title: Scanning in Multiple Regulatory Domains
 description: Scanning in Multiple Regulatory Domains
 ms.assetid: 329ca1df-3368-4dae-a1ce-3a2f3e46ba92
-keywords: ["scan operations WDK Native 802.11 , multiple regulatory domains", "multiple regulatory domains WDK Native 802.11", "regulatory domain WDK Native 802.11"]
+keywords:
+- scan operations WDK Native 802.11 , multiple regulatory domains
+- multiple regulatory domains WDK Native 802.11
+- regulatory domain WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scanning in Multiple Regulatory Domains

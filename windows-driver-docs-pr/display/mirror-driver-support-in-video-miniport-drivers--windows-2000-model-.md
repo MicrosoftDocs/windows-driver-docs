@@ -2,7 +2,14 @@
 title: Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)
 description: Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)
 ms.assetid: ca91e0a6-d619-432a-829e-49012951f27c
-keywords: ["video miniport drivers WDK Windows 2000 , mirror drivers", "mirror drivers WDK Windows 2000 display"]
+keywords:
+- video miniport drivers WDK Windows 2000 , mirror drivers
+- mirror drivers WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)

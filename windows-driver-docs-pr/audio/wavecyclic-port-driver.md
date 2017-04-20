@@ -2,7 +2,16 @@
 title: WaveCyclic Port Driver
 description: WaveCyclic Port Driver
 ms.assetid: c5572ae3-0d91-43a6-a49c-c6c005263f5b
-keywords: ["WaveCyclic port driver WDK audio", "PortCls WDK audio , port drivers", "audio miniport drivers WDK , port drivers", "miniport drivers WDK audio , port drivers"]
+keywords:
+- WaveCyclic port driver WDK audio
+- PortCls WDK audio , port drivers
+- audio miniport drivers WDK , port drivers
+- miniport drivers WDK audio , port drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WaveCyclic Port Driver

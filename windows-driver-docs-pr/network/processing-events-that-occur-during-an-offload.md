@@ -2,7 +2,15 @@
 title: Processing Events That Occur During an Offload
 description: Processing Events That Occur During an Offload
 ms.assetid: 475fa20c-a9c6-4725-b9b4-c5862483cceb
-keywords: ["state offloading process WDK TCP chimney offload , events", "offloading state process WDK TCP chimney offload , events", "events WDK TCP chimney offload"]
+keywords:
+- state offloading process WDK TCP chimney offload , events
+- offloading state process WDK TCP chimney offload , events
+- events WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Events That Occur During an Offload

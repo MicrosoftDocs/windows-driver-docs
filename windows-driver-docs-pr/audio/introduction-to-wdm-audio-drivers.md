@@ -2,7 +2,28 @@
 title: Introduction to WDM Audio Drivers
 description: Introduction to WDM Audio Drivers
 ms.assetid: 376392a8-b3ae-40c3-8bfa-55df6165cefb
-keywords: ["audio filters WDK audio , subset of KS filters", "WDM audio drivers WDK , about WDM audio drivers", "audio drivers WDK , about audio drivers", "KS filters WDK audio , about KS filters", "filters WDK audio , KS", "KS pins WDK audio", "KS pins WDK audio , about KS pins", "pins WDK audio , KS", "audio jacks WDK", "output pins WDK audio", "input pins WDK audio", "filter factories WDK audio", "pin factories WDK audio", "kernel streaming WDK audio", "filter graphs WDK audio", "speakers WDK audio"]
+keywords:
+- audio filters WDK audio , subset of KS filters
+- WDM audio drivers WDK , about WDM audio drivers
+- audio drivers WDK , about audio drivers
+- KS filters WDK audio , about KS filters
+- filters WDK audio , KS
+- KS pins WDK audio
+- KS pins WDK audio , about KS pins
+- pins WDK audio , KS
+- audio jacks WDK
+- output pins WDK audio
+- input pins WDK audio
+- filter factories WDK audio
+- pin factories WDK audio
+- kernel streaming WDK audio
+- filter graphs WDK audio
+- speakers WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to WDM Audio Drivers

@@ -3,7 +3,13 @@ title: Using EnumOptions
 author: windows-driver-content
 description: Using EnumOptions
 ms.assetid: 6ce16d28-eff7-4701-a592-046f364cda44
-keywords: ["EnumOptions"]
+keywords:
+- EnumOptions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using EnumOptions

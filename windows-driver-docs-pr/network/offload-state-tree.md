@@ -2,7 +2,14 @@
 title: Offload State Tree
 description: Offload State Tree
 ms.assetid: c96608bd-5e8f-499b-872a-b6f7f33c9e0c
-keywords: ["offload state WDK TCP chimney offload , trees", "trees WDK TCP chimney offload"]
+keywords:
+- offload state WDK TCP chimney offload , trees
+- trees WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offload State Tree

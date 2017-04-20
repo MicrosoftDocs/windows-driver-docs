@@ -2,7 +2,13 @@
 title: Device Metadata Store
 description: Device Metadata Store
 ms.assetid: 59af6173-28f3-44f5-874e-305bf570d683
-keywords: ["device metadata store WDK"]
+keywords:
+- device metadata store WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Metadata Store

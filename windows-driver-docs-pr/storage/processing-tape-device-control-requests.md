@@ -3,7 +3,21 @@ title: Processing Tape Device Control Requests
 author: windows-driver-content
 description: Processing Tape Device Control Requests
 ms.assetid: de6edfc6-9b4b-4866-8fdb-1047b43163de
-keywords: ["tape drivers WDK storage , mapping status values", "storage tape drivers WDK , mapping status values", "TAPE_STATUS_SEND_SRB_AND_CALLBACK", "TAPE_STATUS_CHECK_TEST_UNIT_READY", "TAPE_STATUS_CALLBACK", "TAPE_STATUS_REQUIRES_CLEANING", "TAPE_STATUS", "mapping TAPE_STATUS values", "status values WDK tape"]
+keywords:
+- tape drivers WDK storage , mapping status values
+- storage tape drivers WDK , mapping status values
+- TAPE_STATUS_SEND_SRB_AND_CALLBACK
+- TAPE_STATUS_CHECK_TEST_UNIT_READY
+- TAPE_STATUS_CALLBACK
+- TAPE_STATUS_REQUIRES_CLEANING
+- TAPE_STATUS
+- mapping TAPE_STATUS values
+- status values WDK tape
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Tape Device Control Requests

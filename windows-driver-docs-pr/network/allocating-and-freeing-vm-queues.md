@@ -2,6 +2,11 @@
 title: Allocating and Freeing VM Queues
 description: Allocating and Freeing VM Queues
 ms.assetid: d5ec928d-46be-49e7-9126-ad7d1a91d14e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating and Freeing VM Queues

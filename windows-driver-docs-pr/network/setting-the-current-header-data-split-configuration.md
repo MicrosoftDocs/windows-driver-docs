@@ -2,7 +2,15 @@
 title: Setting the Current Header-Data Split Configuration
 description: Setting the Current Header-Data Split Configuration
 ms.assetid: b5b20ce8-1522-4729-8d0a-bc2d2c5afff2
-keywords: ["header-data split WDK , configuration", "current header-data split configuration WDK networking", "status information WDK header-data split"]
+keywords:
+- header-data split WDK , configuration
+- current header-data split configuration WDK networking
+- status information WDK header-data split
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the Current Header-Data Split Configuration

@@ -3,7 +3,14 @@ title: Printer Data Files
 author: windows-driver-content
 description: Printer Data Files
 ms.assetid: 971d3c6d-ecbe-42e8-8d13-b44543738bad
-keywords: ["GDI printer drivers WDK , data files", "data files WDK print"]
+keywords:
+- GDI printer drivers WDK , data files
+- data files WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Data Files

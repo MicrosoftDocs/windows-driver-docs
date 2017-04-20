@@ -2,6 +2,11 @@
 title: Example Connectionless (802.3) Initialization Sequence
 description: Example Connectionless (802.3) Initialization Sequence
 ms.assetid: 9625f717-81c3-460b-83e8-c7a86aa85f36
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example Connectionless (802.3) Initialization Sequence

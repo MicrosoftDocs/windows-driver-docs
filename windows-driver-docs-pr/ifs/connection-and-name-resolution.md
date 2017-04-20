@@ -3,7 +3,16 @@ title: Connection and Name Resolution
 author: windows-driver-content
 description: Connection and Name Resolution
 ms.assetid: e61d09f1-7951-4291-93ce-e5ccbe0be576
-keywords: ["mini-redirectors WDK , connections", "mini-redirectors WDK , name resolution", "names WDK file systems", "connections WDK mini-redirectors"]
+keywords:
+- mini-redirectors WDK , connections
+- mini-redirectors WDK , name resolution
+- names WDK file systems
+- connections WDK mini-redirectors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connection and Name Resolution

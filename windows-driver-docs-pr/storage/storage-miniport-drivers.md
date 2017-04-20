@@ -3,7 +3,15 @@ title: Storage Miniport Drivers
 author: windows-driver-content
 description: Storage Miniport Drivers
 ms.assetid: 374d8370-02a9-43ab-ab47-27fa9f4051ea
-keywords: ["storage miniport drivers WDK", "miniport drivers WDK storage", "storage drivers WDK , miniport drivers"]
+keywords:
+- storage miniport drivers WDK
+- miniport drivers WDK storage
+- storage drivers WDK , miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Miniport Drivers

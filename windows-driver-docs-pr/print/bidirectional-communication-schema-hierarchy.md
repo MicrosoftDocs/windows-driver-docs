@@ -3,7 +3,15 @@ title: Bidirectional Communication Schema Hierarchy
 author: windows-driver-content
 description: Bidirectional Communication Schema Hierarchy
 ms.assetid: b3435c17-f72b-4925-8d13-bd3e71b4947e
-keywords: ["bidirectional communication schema WDK print", "bidi communication schema WDK print", "hierarchy WDK bidi communication"]
+keywords:
+- bidirectional communication schema WDK print
+- bidi communication schema WDK print
+- hierarchy WDK bidi communication
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bidirectional Communication Schema Hierarchy

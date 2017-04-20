@@ -3,7 +3,15 @@ title: GDL Macro Arguments
 author: windows-driver-content
 description: GDL Macro Arguments
 ms.assetid: 2aeaf2fd-39e3-4661-85d1-ccb855a73044
-keywords: ["GDL WDK , macros", "macros WDK GDL , arguments", "macros WDK GDL , examples"]
+keywords:
+- GDL WDK , macros
+- macros WDK GDL , arguments
+- macros WDK GDL , examples
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Macro Arguments

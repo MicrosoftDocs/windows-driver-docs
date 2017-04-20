@@ -2,7 +2,18 @@
 title: GDI Support for Surfaces
 description: GDI Support for Surfaces
 ms.assetid: 78c1e09d-8c3e-4c5d-b670-2e4adf77814f
-keywords: ["DrvEnableSurface", "DrvDisableSurface", "GDI WDK Windows 2000 display , surfaces", "graphics drivers WDK Windows 2000 display , surfaces", "drawing WDK GDI , surfaces", "surface enabling and disabling WDK GDI"]
+keywords:
+- DrvEnableSurface
+- DrvDisableSurface
+- GDI WDK Windows 2000 display , surfaces
+- graphics drivers WDK Windows 2000 display , surfaces
+- drawing WDK GDI , surfaces
+- surface enabling and disabling WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Support for Surfaces

@@ -1,6 +1,11 @@
 ---
 Description: This topic summarizes the new features and improvements for Windows Portable Devices (WPD) in Windows 8.
 title: What's New in WPD
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What's New in WPD

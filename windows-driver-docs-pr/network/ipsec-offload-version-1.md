@@ -2,7 +2,14 @@
 title: IPsec Offload Version 1
 description: IPsec Offload Version 1
 ms.assetid: 1cf6306c-bb1d-40f6-a0e3-59c14a60a8ff
-keywords: ["IPsec offload WDK TCP/IP transport , version 1", "IPsecOV1 WDK TCP/IP transport"]
+keywords:
+- IPsec offload WDK TCP/IP transport , version 1
+- IPsecOV1 WDK TCP/IP transport
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IPsec Offload Version 1

@@ -2,6 +2,11 @@
 title: Importing Certificates from a Windows Certificate Store
 description: Importing Certificates from a Windows Certificate Store
 ms.assetid: abdf19c7-2cea-4af3-8a86-37fc4a9e7c3d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Importing Certificates from a Windows Certificate Store

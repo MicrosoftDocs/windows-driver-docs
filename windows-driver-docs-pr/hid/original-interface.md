@@ -3,7 +3,21 @@ title: Original Interface
 author: windows-driver-content
 description: Original Interface
 ms.assetid: 78f1e722-c2bd-4232-96f1-71df7e6ece23
-keywords: ["joysticks WDK HID , interfaces", "virtual joystick drivers WDK HID , interfaces", "VJoyD WDK HID , interfaces", "interfaces WDK joysticks", "joysticks WDK HID , callbacks", "virtual joystick drivers WDK HID , callbacks", "VJoyD WDK HID , callbacks", "callbacks WDK joysticks", "polling WDK joysticks"]
+keywords:
+- joysticks WDK HID , interfaces
+- virtual joystick drivers WDK HID , interfaces
+- VJoyD WDK HID , interfaces
+- interfaces WDK joysticks
+- joysticks WDK HID , callbacks
+- virtual joystick drivers WDK HID , callbacks
+- VJoyD WDK HID , callbacks
+- callbacks WDK joysticks
+- polling WDK joysticks
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 #  Original Interface

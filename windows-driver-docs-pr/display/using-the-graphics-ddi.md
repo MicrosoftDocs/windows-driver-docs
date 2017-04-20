@@ -2,7 +2,20 @@
 title: Using the Graphics DDI
 description: Using the Graphics DDI
 ms.assetid: e48d117b-8c1c-4617-84f8-b0b489b1083a
-keywords: ["drawing WDK GDI , DDI", "GDI WDK Windows 2000 display , DDI", "graphics drivers WDK Windows 2000 display , DDI", "DDI WDK graphics", "GDI WDK Windows 2000 display , functions", "graphics drivers WDK Windows 2000 display , functions", "functions WDK graphics", "drawing WDK GDI , functions"]
+keywords:
+- drawing WDK GDI , DDI
+- GDI WDK Windows 2000 display , DDI
+- graphics drivers WDK Windows 2000 display , DDI
+- DDI WDK graphics
+- GDI WDK Windows 2000 display , functions
+- graphics drivers WDK Windows 2000 display , functions
+- functions WDK graphics
+- drawing WDK GDI , functions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Graphics DDI

@@ -2,7 +2,14 @@
 title: Offloading Checksum Tasks
 description: Offloading Checksum Tasks
 ms.assetid: 5fb2f379-c357-4ec3-b103-bdbe23fcc033
-keywords: ["task offload WDK TCP/IP transport , checksum tasks", "checksum tasks WDK networking"]
+keywords:
+- task offload WDK TCP/IP transport , checksum tasks
+- checksum tasks WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offloading Checksum Tasks

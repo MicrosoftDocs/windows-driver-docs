@@ -3,7 +3,26 @@ title: What Determines When a Driver Is Loaded
 author: windows-driver-content
 description: What Determines When a Driver Is Loaded
 ms.assetid: fe0f27e4-84d4-483e-8b4e-69c39ae332de
-keywords: ["filter drivers WDK file system , driver loading", "file system filter drivers WDK , driver loading", "driver loading WDK file system", "loading drivers WDK file system", "driver start types WDK file system", "start types WDK file system", "load order groups WDK file system", "SERVICE_BOOT_START", "SERVICE_SYSTEM_START", "SERVICE_AUTO_START", "SERVICE_DEMAND_START", "SERVICE_DISABLED", "boot drivers WDK file system", "boot-start drivers WDK file system"]
+keywords:
+- filter drivers WDK file system , driver loading
+- file system filter drivers WDK , driver loading
+- driver loading WDK file system
+- loading drivers WDK file system
+- driver start types WDK file system
+- start types WDK file system
+- load order groups WDK file system
+- SERVICE_BOOT_START
+- SERVICE_SYSTEM_START
+- SERVICE_AUTO_START
+- SERVICE_DEMAND_START
+- SERVICE_DISABLED
+- boot drivers WDK file system
+- boot-start drivers WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What Determines When a Driver Is Loaded

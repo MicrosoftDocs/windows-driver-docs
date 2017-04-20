@@ -2,6 +2,11 @@
 title: Manage App Certifications
 description: Manage App Certifications
 ms.assetid: 87d63f77-f145-4a38-a16d-ed0e9281ab30
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manage App Certifications

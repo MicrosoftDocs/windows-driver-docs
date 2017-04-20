@@ -2,7 +2,17 @@
 title: Changes from Direct3D 10
 description: Changes from Direct3D 10
 ms.assetid: 014a5e44-f8c4-45c0-96e8-d82f37b8b28d
-keywords: ["Direct3D version 11 WDK Windows 7 display , changes from Direct3D version 10", "Direct3D version 11 WDK Windows Server 2008 R2 display , changes from Direct3D version 10", "Direct3D version 10 WDK Windows 7 display", "Direct3D version 10 WDK Windows 7 display , changes in Direct3D version 11", "Direct3D version 10 WDK Windows Server 2008 R2 display , changes in Direct3D version 11"]
+keywords:
+- Direct3D version 11 WDK Windows 7 display , changes from Direct3D version 10
+- Direct3D version 11 WDK Windows Server 2008 R2 display , changes from Direct3D version 10
+- Direct3D version 10 WDK Windows 7 display
+- Direct3D version 10 WDK Windows 7 display , changes in Direct3D version 11
+- Direct3D version 10 WDK Windows Server 2008 R2 display , changes in Direct3D version 11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changes from Direct3D 10
@@ -32,7 +42,7 @@ The device-specific callback functions that the Direct3D version 11 runtime supp
     <span id="pfnRenderCb"></span><span id="pfnrendercb"></span><span id="PFNRENDERCB"></span>[**pfnRenderCb**](https://msdn.microsoft.com/library/windows/hardware/ff568923)  
     The driver must call [*pfnRenderCb*](https://msdn.microsoft.com/library/windows/hardware/ff568923) on the thread that called the driver's [**Flush(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff565961) function. This restriction is quite natural because of the HCONTEXT restrictions.
 
--   The [*pfnDeallocateCb*](https://msdn.microsoft.com/library/windows/hardware/ff568898) callback function deserves special mention because the driver is not required to call *pfnDeallocateCb* before the driver returns from its [**DestroyResource(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552797) function for most resource types. Because DestroyResource(D3D10) is a free-threaded function, the driver must defer destruction of the object until the driver can efficiently ensure that no existing immediate context reference remains (that is, the driver must call [**pfnRenderCb**](https://msdn.microsoft.com/library/windows/hardware/ff568923) before *pfnDeallocateCb*). This restriction applies even to shared resources or to any other callback function that uses HRESOURCE to complement HRESOURCE usage with [**pfnAllocateCb**](https://msdn.microsoft.com/library/windows/hardware/ff568893). However, this restriction does not apply to primaries. For more information about primary exceptions, see [Primary Exceptions](#primary-exceptions). Because some applications might require the appearance of synchronous destruction, the driver must ensure that it calls *pfnDeallocateCb* for any previously destroyed shared resources during a call to its [**Flush(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff565961) function. A driver must also cleanup any previously destroyed objects (only those that will not stall the pipeline) during a call to its Flush(D3D10) function; the driver must do so to ensure that the runtime calls Flush(D3D10) as an official mechanism to cleanup deferred destroyed objects for those few applications that might require such a mechanism. For more information about this mechanism, see [Deferred Destruction and Flush(D3D10)](#deferred-destruction-and-flush-d3d10-). The driver must also ensure that any objects for which destruction was deferred are fully destroyed before the driver's [**DestroyDevice(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552768) function returns during cleanup.
+-   The [*pfnDeallocateCb*](https://msdn.microsoft.com/library/windows/hardware/ff568898) callback function deserves special mention because the driver is not required to call *pfnDeallocateCb* before the driver returns from its [**DestroyResource(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552797) function for most resource types. Because DestroyResource(D3D10) is a free-threaded function, the driver must defer destruction of the object until the driver can efficiently ensure that no existing immediate context reference remains (that is, the driver must call [**pfnRenderCb**](https://msdn.microsoft.com/library/windows/hardware/ff568923) before *pfnDeallocateCb*). This restriction applies even to shared resources or to any other callback function that uses HRESOURCE to complement HRESOURCE usage with [**pfnAllocateCb**](https://msdn.microsoft.com/library/windows/hardware/ff568893). However, this restriction does not apply to primaries. For more information about primary exceptions, see [Primary Exceptions](#primary-exceptions). Because some applications might require the appearance of synchronous destruction, the driver must ensure that it calls *pfnDeallocateCb* for any previously destroyed shared resources during a call to its [**Flush(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff565961) function. A driver must also cleanup any previously destroyed objects (only those that will not stall the pipeline) during a call to its Flush(D3D10) function; the driver must do so to ensure that the runtime calls Flush(D3D10) as an official mechanism to cleanup deferred destroyed objects for those few applications that might require such a mechanism. For more information about this mechanism, see [Deferred Destruction and Flush(D3D10)](#deferred-destruction-and-flush-d3d10). The driver must also ensure that any objects for which destruction was deferred are fully destroyed before the driver's [**DestroyDevice(D3D10)**](https://msdn.microsoft.com/library/windows/hardware/ff552768) function returns during cleanup.
 
 ### Deprecate Ability to Allow Modification of Free-Threaded DDIs
 
@@ -58,7 +68,7 @@ The D3DDDIERR\_APPLICATIONERROR error code is created to allow drivers to partic
 
 Direct3D version 11 retroactively requires driver functions that begin with *pfnCalcPrivate* on Direct3D version 10 DDI functions to be free threaded. This retroactive requirement matches the behavior of the Direct3D version 11 DDI to always require *pfnCalcPrivate\** and [**pfnCalcDeferredContextHandleSize**](https://msdn.microsoft.com/library/windows/hardware/ff538272) functions to be free threaded even if the driver indicates it does not support DDI threading. For more information about this retroactive requirement, see [Retroactively Requiring Free-Threaded CalcPrivate DDIs](retroactively-requiring-free-threaded-calcprivate-ddis.md).
 
-### Deferred Destruction and Flush(D3D10)
+### Deferred Destruction and Flush D3D10
 
 Because all the destroy functions are now free-threaded, the Direct3D runtime cannot flush a command buffer during destruction. Therefore, the destroy functions must defer the actual destruction of an object until the driver can ensure that the thread that manipulates the immediate context is no longer dependent on that object to survive. Each discrete immediate context method cannot efficiently use synchronization to solve this destruction issue; therefore, the driver should use synchronization only when it flushes a command buffer. The Direct3D runtime also uses this same design when it must deal with similar issues.
 

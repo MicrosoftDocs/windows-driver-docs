@@ -2,7 +2,15 @@
 title: Ndi Values and Keys Not Used in Windows 2000 and Later Versions
 description: Ndi Values and Keys Not Used in Windows 2000 and Later Versions
 ms.assetid: 932e1c83-feb6-47a8-bed3-847ee4094b9e
-keywords: ["add-registry-sections WDK networking , Ndi values and keys", "Ndi key WDK networking", "Ndi value WDK networking"]
+keywords:
+- add-registry-sections WDK networking , Ndi values and keys
+- Ndi key WDK networking
+- Ndi value WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Ndi Values and Keys Not Used in Windows 2000 and Later Versions

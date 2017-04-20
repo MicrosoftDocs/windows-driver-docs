@@ -2,7 +2,20 @@
 title: GDI Font and Text Services
 description: GDI Font and Text Services
 ms.assetid: c315f3ec-ddee-42d9-8bfb-7bb2e0d1d4b2
-keywords: ["fonts WDK GDI", "GDI WDK Windows 2000 display , fonts", "graphics drivers WDK Windows 2000 display , fonts", "drawing WDK GDI , fonts", "GDI WDK Windows 2000 display , text output", "graphics drivers WDK Windows 2000 display , text output", "drawing WDK GDI , text output", "text output WDK GDI"]
+keywords:
+- fonts WDK GDI
+- GDI WDK Windows 2000 display , fonts
+- graphics drivers WDK Windows 2000 display , fonts
+- drawing WDK GDI , fonts
+- GDI WDK Windows 2000 display , text output
+- graphics drivers WDK Windows 2000 display , text output
+- drawing WDK GDI , text output
+- text output WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Font and Text Services

@@ -3,7 +3,14 @@ title: Functional Areas
 author: windows-driver-content
 description: Functional Areas
 ms.assetid: 0631c59e-ad30-4684-b254-c1254914fc94
-keywords: ["platform-specific hardware error driver plug-ins WDK WHEA , functional areas", "PSHED plug-ins WDK WHEA , functional areas"]
+keywords:
+- platform-specific hardware error driver plug-ins WDK WHEA , functional areas
+- PSHED plug-ins WDK WHEA , functional areas
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functional Areas

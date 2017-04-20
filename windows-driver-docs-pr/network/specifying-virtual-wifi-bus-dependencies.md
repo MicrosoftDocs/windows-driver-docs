@@ -2,7 +2,13 @@
 title: Specifying Virtual WiFi Bus Dependencies
 description: Specifying Virtual WiFi Bus Dependencies
 ms.assetid: e6768302-b8f0-4346-993c-54358dea9242
-keywords: ["Virtual WiFi in kernel mode WDK networking , INF file dependencies"]
+keywords:
+- Virtual WiFi in kernel mode WDK networking , INF file dependencies
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Virtual WiFi Bus Dependencies

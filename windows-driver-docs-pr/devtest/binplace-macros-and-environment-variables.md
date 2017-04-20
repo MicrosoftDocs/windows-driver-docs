@@ -2,7 +2,14 @@
 title: BinPlace Macros and Environment Variables
 description: BinPlace Macros and Environment Variables
 ms.assetid: f990e132-f6d7-46e1-8c86-6ae3f0483bd5
-keywords: ["BinPlace WDK , environment variables", "environment variables WDK BinPlace"]
+keywords:
+- BinPlace WDK , environment variables
+- environment variables WDK BinPlace
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # BinPlace Macros and Environment Variables

@@ -2,7 +2,18 @@
 title: Writing Battery Miniclass Drivers
 description: Writing Battery Miniclass Drivers
 ms.assetid: 4135af1a-1448-46ad-af6f-26ce8aee6b1d
-keywords: ["battery miniclass drivers WDK", "battery miniclass drivers WDK , about writing battery miniclass drivers", "device-independent battery support WDK", "device-specific battery support WDK", "battery class drivers WDK", "battery class drivers WDK , about battery class drivers"]
+keywords:
+- battery miniclass drivers WDK
+- battery miniclass drivers WDK , about writing battery miniclass drivers
+- device-independent battery support WDK
+- device-specific battery support WDK
+- battery class drivers WDK
+- battery class drivers WDK , about battery class drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing Battery Miniclass Drivers

@@ -2,7 +2,16 @@
 title: NDIS Stack Operations
 description: NDIS Stack Operations
 ms.assetid: 206b9c32-f7a6-4025-8966-415316395ec0
-keywords: ["driver stacks WDK networking , managing", "NDIS WDK , driver stack", "driver stacks WDK networking , operations", "stacks WDK networking"]
+keywords:
+- driver stacks WDK networking , managing
+- NDIS WDK , driver stack
+- driver stacks WDK networking , operations
+- stacks WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Stack Operations

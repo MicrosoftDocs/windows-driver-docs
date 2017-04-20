@@ -2,6 +2,11 @@
 title: For Administrators
 description: For Administrators
 ms.assetid: 0f81d730-73bf-49da-a0d1-1e3387c6587d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # For Administrators

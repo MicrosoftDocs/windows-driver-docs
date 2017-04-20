@@ -2,7 +2,14 @@
 title: Creating a Catalog File for Test-Signing a Driver Package
 description: Creating a Catalog File for Test-Signing a Driver Package
 ms.assetid: 0bbb4dfa-d203-4618-946e-95d2896081ac
-keywords: ["test signing driver packages WDK , catalog files", "catalog files WDK driver signing , creating"]
+keywords:
+- test signing driver packages WDK , catalog files
+- catalog files WDK driver signing , creating
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Catalog File for Test-Signing a Driver Package

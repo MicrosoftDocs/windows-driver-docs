@@ -2,7 +2,16 @@
 title: Portability in Network Drivers
 description: Portability in Network Drivers
 ms.assetid: 2cc74131-a80b-4d21-b969-56b61d1f7269
-keywords: ["network drivers WDK , porting drivers", "portability WDK networking", "porting drivers WDK networking", "NDIS porting drivers WDK"]
+keywords:
+- network drivers WDK , porting drivers
+- portability WDK networking
+- porting drivers WDK networking
+- NDIS porting drivers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Portability in Network Drivers

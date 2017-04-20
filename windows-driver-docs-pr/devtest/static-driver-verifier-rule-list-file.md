@@ -2,7 +2,19 @@
 title: Static Driver Verifier Rule List File
 description: Static Driver Verifier Rule List File
 ms.assetid: 941df64c-b66b-4e7b-b340-9ef6b57d895d
-keywords: ["Static Driver Verifier WDK , input files", "StaticDV WDK , input files", "SDV WDK , input files", "input files WDK Static Driver Verifier", "files WDK Static Driver Verifier", "rules WDK Static Driver Verifier", "rule list files WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , input files
+- StaticDV WDK , input files
+- SDV WDK , input files
+- input files WDK Static Driver Verifier
+- files WDK Static Driver Verifier
+- rules WDK Static Driver Verifier
+- rule list files WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier Rule List File

@@ -2,7 +2,13 @@
 title: Native 802.11 Receive Operations
 description: Native 802.11 Receive Operations
 ms.assetid: bc85e6ba-3058-4fcc-9591-d7709e6343fd
-keywords: ["receive operations WDK Native 802.11"]
+keywords:
+- receive operations WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Receive Operations

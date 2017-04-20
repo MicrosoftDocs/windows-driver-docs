@@ -2,7 +2,16 @@
 title: Standardized INF Keywords for RSS
 description: Standardized INF Keywords for RSS
 ms.assetid: 0ea0d6f7-0dc5-40dd-a706-4712e19dbfdb
-keywords: ["receive-side scaling WDK networking , standardized INF keywords", "RSS WDK networking , standardized INF keywords", "standardized INF keywords WDK RSS", "INF entries WDK RSS"]
+keywords:
+- receive-side scaling WDK networking , standardized INF keywords
+- RSS WDK networking , standardized INF keywords
+- standardized INF keywords WDK RSS
+- INF entries WDK RSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standardized INF Keywords for RSS

@@ -2,13 +2,19 @@
 title: /List Switch
 description: The /List switch of the Enhanced Storage Certificate Management tool lists all the IEEE 1667-compliant USB storage devices that are connected to the computer.
 ms.assetid: ae0e2991-32db-42b3-839d-83b7e2b8b35f
-keywords: ["/List Switch Driver Development Tools"]
+keywords:
+- /List Switch Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - /List
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # /List Switch

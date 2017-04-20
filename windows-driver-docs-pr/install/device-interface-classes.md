@@ -2,6 +2,11 @@
 title: Device Interface Classes
 description: Device Interface Classes
 ms.assetid: 9d72f653-01b9-4f17-a008-1267d1589eb3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Interface Classes

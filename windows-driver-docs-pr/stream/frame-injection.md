@@ -3,7 +3,21 @@ title: Frame Injection
 author: windows-driver-content
 description: Frame Injection
 ms.assetid: cdfb1763-92a8-4a60-8f49-2af34a8beca5
-keywords: ["frames WDK AVStream", "injection mode WDK AVStream frames", "frame injection WDK AVStream", "pin-centric filters WDK AVStream", "filter-centric filters WDK AVStream", "empty frames WDK AVStream", "default frame behavior WDK AVStream", "overriding default frame behavior WDK streaming media", "circuits WDK AVStream"]
+keywords:
+- frames WDK AVStream
+- injection mode WDK AVStream frames
+- frame injection WDK AVStream
+- pin-centric filters WDK AVStream
+- filter-centric filters WDK AVStream
+- empty frames WDK AVStream
+- default frame behavior WDK AVStream
+- overriding default frame behavior WDK streaming media
+- circuits WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Frame Injection

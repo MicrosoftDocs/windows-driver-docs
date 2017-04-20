@@ -2,7 +2,17 @@
 title: Troubleshooting sAPO Load Failures
 description: Troubleshooting sAPO Load Failures
 ms.assetid: 245ff082-7cdc-4ecf-aee6-57fd7c418523
-keywords: ["audio graph WDK", "sAPO WDK", "IsInputFormatSupported WDK", "LockForProcess WDK", "DisableProtectedAudioDG WDK"]
+keywords:
+- audio graph WDK
+- sAPO WDK
+- IsInputFormatSupported WDK
+- LockForProcess WDK
+- DisableProtectedAudioDG WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting sAPO Load Failures

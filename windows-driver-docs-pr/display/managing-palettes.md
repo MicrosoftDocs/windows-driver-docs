@@ -2,7 +2,17 @@
 title: Managing Palettes
 description: Managing Palettes
 ms.assetid: 7917b01f-f57d-4262-80b6-9e11e797e3b5
-keywords: ["GDI WDK Windows 2000 display , colors", "graphics drivers WDK Windows 2000 display , colors", "color management WDK GDI", "palettes WDK Windows 2000 display", "drawing WDK GDI , colors"]
+keywords:
+- GDI WDK Windows 2000 display , colors
+- graphics drivers WDK Windows 2000 display , colors
+- color management WDK GDI
+- palettes WDK Windows 2000 display
+- drawing WDK GDI , colors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Palettes

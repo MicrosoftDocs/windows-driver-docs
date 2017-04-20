@@ -2,6 +2,11 @@
 title: Signing a Catalog File with a Commercial Release Certificate
 description: Signing a Catalog File with a Commercial Release Certificate
 ms.assetid: 362b0c79-50b9-4749-80e2-62601d76e9e3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Signing a Catalog File with a Commercial Release Certificate

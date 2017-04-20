@@ -2,7 +2,17 @@
 title: Porting Protocol Unbinding Operations to NDIS 6.0
 description: Porting Protocol Unbinding Operations to NDIS 6.0
 ms.assetid: 5dee57da-9c45-4e12-bc5e-ae60d4219480
-keywords: ["protocol drivers WDK networking , binding operations", "NDIS protocol drivers WDK , binding operations", "protocol bindings WDK networking", "binding operations WDK networking", "porting protocol drivers WDK networking , unbinding operations"]
+keywords:
+- protocol drivers WDK networking , binding operations
+- NDIS protocol drivers WDK , binding operations
+- protocol bindings WDK networking
+- binding operations WDK networking
+- porting protocol drivers WDK networking , unbinding operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Protocol Unbinding Operations to NDIS 6.0

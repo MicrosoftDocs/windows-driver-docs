@@ -2,7 +2,13 @@
 title: Modifying Vertex Stream Frequency
 description: Modifying Vertex Stream Frequency
 ms.assetid: 81bbced4-7331-4e54-9617-1ef29b02f162
-keywords: ["vertex stream frequency division WDK DirectX 9.0"]
+keywords:
+- vertex stream frequency division WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Modifying Vertex Stream Frequency

@@ -2,6 +2,11 @@
 title: WDF Driver Call Tracer (WdfCallTracer)
 description: WDF Driver Call Tracer (WdfCallTracer)
 ms.assetid: 67ad4b5e-9117-435e-bd81-90069a806d3c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDF Driver Call Tracer (WdfCallTracer)

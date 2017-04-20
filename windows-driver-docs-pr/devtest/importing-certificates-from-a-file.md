@@ -2,6 +2,11 @@
 title: Importing Certificates from a File
 description: Importing Certificates from a File
 ms.assetid: 17596119-6b31-4a69-b83c-cec1dfd55572
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Importing Certificates from a File

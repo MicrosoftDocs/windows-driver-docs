@@ -2,7 +2,17 @@
 title: Video Port Extensions to DirectX
 description: Video Port Extensions to DirectX
 ms.assetid: 42309279-e98a-4091-8f01-5d0d418e9ef2
-keywords: ["DirectX VPE support WDK DirectDraw", "drawing VPEs WDK DirectDraw", "DirectDraw VPEs WDK Windows 2000 display", "video port extensions WDK DirectDraw", "VPEs WDK DirectDraw"]
+keywords:
+- DirectX VPE support WDK DirectDraw
+- drawing VPEs WDK DirectDraw
+- DirectDraw VPEs WDK Windows 2000 display
+- video port extensions WDK DirectDraw
+- VPEs WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Port Extensions to DirectX

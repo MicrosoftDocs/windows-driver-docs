@@ -2,7 +2,16 @@
 title: Wrapping or Replacing Windows Vista sAPOs
 description: Wrapping or Replacing Windows Vista sAPOs
 ms.assetid: 6246aaab-c540-4f86-bf7a-4764cfc10e79
-keywords: ["sAPO WDK", "wrapping Windows Vista sAPOs WDK", "replacing Windows Vista sAPOs WDK", "INF files WDK audio"]
+keywords:
+- sAPO WDK
+- wrapping Windows Vista sAPOs WDK
+- replacing Windows Vista sAPOs WDK
+- INF files WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wrapping or Replacing Windows Vista sAPOs

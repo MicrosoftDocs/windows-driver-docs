@@ -2,7 +2,14 @@
 title: Returning the Completion Status of a Terminate Offload Operation
 description: Returning the Completion Status of a Terminate Offload Operation
 ms.assetid: 2c900a72-47ec-4e26-aeb3-2a67511690c0
-keywords: ["terminating offload state WDK TCP chimney offload , completion status", "completion status of termination WDK TCP chimney offload"]
+keywords:
+- terminating offload state WDK TCP chimney offload , completion status
+- completion status of termination WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning the Completion Status of a Terminate Offload Operation

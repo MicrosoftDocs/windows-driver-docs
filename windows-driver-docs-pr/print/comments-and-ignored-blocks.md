@@ -3,7 +3,16 @@ title: Comments and Ignored Blocks
 author: windows-driver-content
 description: Comments and Ignored Blocks
 ms.assetid: 8b3a0195-b2c8-491d-abcd-bfaebefbc77d
-keywords: ["GPD file entries WDK Unidrv , ignored blocks", "ignored blocks WDK GPD files", "GPD file entries WDK Unidrv , comments", "comments WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , ignored blocks
+- ignored blocks WDK GPD files
+- GPD file entries WDK Unidrv , comments
+- comments WDK GPD files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Comments and Ignored Blocks

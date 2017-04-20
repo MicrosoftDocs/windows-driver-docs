@@ -2,7 +2,16 @@
 title: Processing Flow Delete Callouts
 description: Processing Flow Delete Callouts
 ms.assetid: e947b3b3-27c6-408f-aa02-6b20fa1b9748
-keywords: ["Windows Filtering Platform callout drivers WDK , flow delete callouts", "callout drivers WDK Windows Filtering Platform , flow delete callouts", "flow delete callouts WDK Windows Filtering Platform", "flowDeleteFn"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , flow delete callouts
+- callout drivers WDK Windows Filtering Platform , flow delete callouts
+- flow delete callouts WDK Windows Filtering Platform
+- flowDeleteFn
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Flow Delete Callouts

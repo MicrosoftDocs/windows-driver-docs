@@ -2,7 +2,17 @@
 title: Registering and Deregistering an MSI Interrupt
 description: Registering and Deregistering an MSI Interrupt
 ms.assetid: 61bdcf8c-b56e-4ef9-b9db-407591ff2f95
-keywords: ["MSI-X WDK networking , registering interrupts", "message-signaled interrupts WDK networking , registering interrupts", "MSIs WDK networking , registering interrupts", "interrupts WDK networking , registering", "MSI-X WDK networking , deregistering interrupts"]
+keywords:
+- MSI-X WDK networking , registering interrupts
+- message-signaled interrupts WDK networking , registering interrupts
+- MSIs WDK networking , registering interrupts
+- interrupts WDK networking , registering
+- MSI-X WDK networking , deregistering interrupts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering and Deregistering an MSI Interrupt

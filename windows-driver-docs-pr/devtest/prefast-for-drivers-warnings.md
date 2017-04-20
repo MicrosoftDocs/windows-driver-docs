@@ -2,7 +2,15 @@
 title: Code Analysis for Drivers Warnings
 description: Code Analysis for Drivers Warnings
 ms.assetid: 61dba158-7e1b-42ee-9882-0ba9cef77b3c
-keywords: ["PREfast for Drivers WDK , warnings", "warnings WDK PREfast for Drivers", "errors WDK PREfast for Drivers"]
+keywords:
+- PREfast for Drivers WDK , warnings
+- warnings WDK PREfast for Drivers
+- errors WDK PREfast for Drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Analysis for Drivers Warnings

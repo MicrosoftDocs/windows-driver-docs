@@ -3,7 +3,16 @@ title: Writing a DriverEntry Routine for a Minifilter Driver
 author: windows-driver-content
 description: Writing a DriverEntry Routine for a Minifilter Driver
 ms.assetid: 949b4087-47de-4145-87dd-d618db44a15b
-keywords: ["file system minifilter drivers WDK , DriverEntry routine", "minifilter drivers WDK , DriverEntry routine", "DriverEntry WDK file systems", "global initialization WDK file system minifilter"]
+keywords:
+- file system minifilter drivers WDK , DriverEntry routine
+- minifilter drivers WDK , DriverEntry routine
+- DriverEntry WDK file systems
+- global initialization WDK file system minifilter
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a DriverEntry Routine for a Minifilter Driver

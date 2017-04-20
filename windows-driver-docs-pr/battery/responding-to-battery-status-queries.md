@@ -2,7 +2,18 @@
 title: Responding to Battery Status Queries
 description: Responding to Battery Status Queries
 ms.assetid: 756d7dd3-c4cc-4185-95cf-5a28ce86cacc
-keywords: ["battery status WDK", "low batteries WDK", "discharging batteries WDK", "power states WDK battery", "failed batteries WDK", "battery failures WDK"]
+keywords:
+- battery status WDK
+- low batteries WDK
+- discharging batteries WDK
+- power states WDK battery
+- failed batteries WDK
+- battery failures WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Responding to Battery Status Queries

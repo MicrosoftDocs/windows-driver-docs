@@ -2,6 +2,11 @@
 title: Types of Device Property Page Providers
 description: Types of Device Property Page Providers
 ms.assetid: b467543e-6907-44e5-b407-637cad7f6d78
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Types of Device Property Page Providers

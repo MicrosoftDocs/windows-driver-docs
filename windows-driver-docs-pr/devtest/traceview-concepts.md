@@ -2,7 +2,23 @@
 title: TraceView Concepts
 description: TraceView Concepts
 ms.assetid: 4fab2b23-8f7b-407b-b944-41ac8caf1a75
-keywords: ["TraceView WDK , terminology", "trace sessions WDK , groups", "grouping trace sessions", "workspaces WDK TraceView , about workspaces", "trace sessions WDK , workspaces", "trace providers WDK", "providers WDK software tracing", "trace sessions WDK , providers", "TMF files WDK , search paths", "search paths WDK software tracing", "TMF files WDK , options"]
+keywords:
+- TraceView WDK , terminology
+- trace sessions WDK , groups
+- grouping trace sessions
+- workspaces WDK TraceView , about workspaces
+- trace sessions WDK , workspaces
+- trace providers WDK
+- providers WDK software tracing
+- trace sessions WDK , providers
+- TMF files WDK , search paths
+- search paths WDK software tracing
+- TMF files WDK , options
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TraceView Concepts

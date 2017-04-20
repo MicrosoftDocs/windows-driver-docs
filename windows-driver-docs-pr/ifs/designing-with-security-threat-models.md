@@ -3,7 +3,19 @@ title: Designing with Security Threat Models
 author: windows-driver-content
 description: Designing with Security Threat Models
 ms.assetid: a505df1a-82c0-4e0b-88bb-d96654a098fb
-keywords: ["security WDK file systems , threat models", "threat models WDK file systems", "security threat models WDK file systems", "threat models WDK file systems , about security threat models", "security threat models WDK file systems , about security threat models", "attacks WDK security", "I/O WDK security"]
+keywords:
+- security WDK file systems , threat models
+- threat models WDK file systems
+- security threat models WDK file systems
+- threat models WDK file systems , about security threat models
+- security threat models WDK file systems , about security threat models
+- attacks WDK security
+- I/O WDK security
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Designing with Security Threat Models

@@ -3,7 +3,16 @@ title: Required and Optional Tape Miniclass Routines
 author: windows-driver-content
 description: Required and Optional Tape Miniclass Routines
 ms.assetid: 7a641199-2607-4980-bd8b-ec3856b311ef
-keywords: ["tape drivers WDK storage , optional routines", "storage tape drivers WDK , optional routines", "tape drivers WDK storage , required routines", "storage tape drivers WDK , required routines"]
+keywords:
+- tape drivers WDK storage , optional routines
+- storage tape drivers WDK , optional routines
+- tape drivers WDK storage , required routines
+- storage tape drivers WDK , required routines
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required and Optional Tape Miniclass Routines

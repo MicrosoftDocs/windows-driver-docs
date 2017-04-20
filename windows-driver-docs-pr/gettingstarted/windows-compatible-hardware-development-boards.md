@@ -2,6 +2,11 @@
 title: Windows compatible hardware development boards
 description: Leverage the power of the Windows platform and Visual Studio to create innovative experiences and solutions that are brought to life by interfacing hardware components to Windows devices.
 ms.assetid: 241AC0DF-4DE6-481A-BBDB-13F811686B40
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows compatible hardware development boards

@@ -2,7 +2,17 @@
 title: Device Information Sets
 description: Device Information Sets
 ms.assetid: 20539c63-10b1-408a-8c60-da444f54b64e
-keywords: ["device information elements WDK device installations", "device information sets WDK device installations", "information sets WDK device", "enumerating device information WDK", "SetupDiEnumDeviceInfo"]
+keywords:
+- device information elements WDK device installations
+- device information sets WDK device installations
+- information sets WDK device
+- enumerating device information WDK
+- SetupDiEnumDeviceInfo
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Information Sets

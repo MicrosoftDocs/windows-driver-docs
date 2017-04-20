@@ -2,7 +2,22 @@
 title: Topology Nodes
 description: Topology Nodes
 ms.assetid: 39827413-2b6b-4925-97bb-e0f3e3428b13
-keywords: ["topology nodes WDK audio", "nodes WDK audio , topology", "MIXERCONTROL structure", "tone nodes WDK audio", "translating nodes WDK audio", "supermix nodes WDK audio", "bass property WDK audio", "treble property WDK audio", "bass boost property WDK audio", "mid-frequency property WDK audio"]
+keywords:
+- topology nodes WDK audio
+- nodes WDK audio , topology
+- MIXERCONTROL structure
+- tone nodes WDK audio
+- translating nodes WDK audio
+- supermix nodes WDK audio
+- bass property WDK audio
+- treble property WDK audio
+- bass boost property WDK audio
+- mid-frequency property WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Topology Nodes

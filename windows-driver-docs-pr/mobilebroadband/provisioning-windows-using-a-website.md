@@ -2,6 +2,11 @@
 title: Provisioning Windows using a website
 description: Provisioning Windows using a website
 ms.assetid: ba60fddd-a248-4afb-9390-f9277ef1f094
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Provisioning Windows using a website

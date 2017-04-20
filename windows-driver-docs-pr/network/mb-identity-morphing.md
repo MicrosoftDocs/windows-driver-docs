@@ -2,6 +2,11 @@
 title: MB identity morphing
 description: Describes identity morphing for MB device drivers
 ms.assetid: 7AA14A5E-47AA-4A9A-94A4-769F374EA465
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB Identity Morphing

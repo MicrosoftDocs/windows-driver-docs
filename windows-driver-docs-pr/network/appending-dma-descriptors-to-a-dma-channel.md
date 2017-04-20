@@ -2,7 +2,17 @@
 title: Appending DMA Descriptors to a DMA Channel
 description: Appending DMA Descriptors to a DMA Channel
 ms.assetid: 02b1b617-4021-4a88-8091-6510abb74fbb
-keywords: ["memory-to-memory data transfers WDK NetDMA , appending DMA descriptors", "data transfers WDK NetDMA , appending DMA descriptors", "transferring data WDK NetDMA , appending DMA descriptors", "DMA transfers WDK NetDMA , appending DMA descriptors", "NetDMA WDK n"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , appending DMA descriptors
+- data transfers WDK NetDMA , appending DMA descriptors
+- transferring data WDK NetDMA , appending DMA descriptors
+- DMA transfers WDK NetDMA , appending DMA descriptors
+- NetDMA WDK n
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Appending DMA Descriptors to a DMA Channel

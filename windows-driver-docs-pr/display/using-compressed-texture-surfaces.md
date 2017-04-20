@@ -2,7 +2,19 @@
 title: Using Compressed Texture Surfaces
 description: Using Compressed Texture Surfaces
 ms.assetid: efa7efff-a1ad-49f3-b6e8-f08b520e77ae
-keywords: ["drawing compressed textures WDK DirectDraw , about compressed texture surfaces", "DirectDraw compressed textures WDK Windows 2000 display , about compressed texture surfaces", "compressed texture surfaces WDK DirectDraw , about compressed texture surfaces", "surfaces WDK DirectDraw , compressed textures", "textures WDK DirectDraw , compressed", "reference rasterizers WDK DirectDraw", "rasterizers WDK DirectDraw"]
+keywords:
+- drawing compressed textures WDK DirectDraw , about compressed texture surfaces
+- DirectDraw compressed textures WDK Windows 2000 display , about compressed texture surfaces
+- compressed texture surfaces WDK DirectDraw , about compressed texture surfaces
+- surfaces WDK DirectDraw , compressed textures
+- textures WDK DirectDraw , compressed
+- reference rasterizers WDK DirectDraw
+- rasterizers WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Compressed Texture Surfaces

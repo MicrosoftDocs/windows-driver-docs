@@ -1,6 +1,11 @@
 ---
 Description: The Windows Hardware Certification Kit (HCK) tests can be used for additional testing of Systems, USB host controllers, hubs, and devices. These tests cover basic device functionality, reliability, and compatibility with Windows.
 title: Windows Hardware Certification Kit (HCK) Tests for USB
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Hardware Certification Kit (HCK) Tests for USB

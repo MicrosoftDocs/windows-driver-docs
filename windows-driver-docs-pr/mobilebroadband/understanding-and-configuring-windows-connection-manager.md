@@ -2,6 +2,11 @@
 title: Understanding and configuring Windows Connection Manager
 description: Understanding and configuring Windows Connection Manager
 ms.assetid: 5ef0034f-5b30-4484-a11c-ed19931484a2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Understanding and configuring Windows Connection Manager

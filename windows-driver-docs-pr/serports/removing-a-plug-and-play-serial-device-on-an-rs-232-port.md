@@ -3,7 +3,17 @@ title: Removing a Plug and Play Serial Device on an RS-232 Port
 author: windows-driver-content
 description: Removing a Plug and Play Serial Device on an RS-232 Port
 ms.assetid: a9019445-3013-49b2-94fd-1ab8a85c3d7a
-keywords: ["RS-232 ports WDK serial devices", "Serenum driver WDK , Plug and Play devices", "Plug and Play serial devices WDK", "serial devices WDK , Plug and Play", "removing Plug and Play devices"]
+keywords:
+- RS-232 ports WDK serial devices
+- Serenum driver WDK , Plug and Play devices
+- Plug and Play serial devices WDK
+- serial devices WDK , Plug and Play
+- removing Plug and Play devices
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing a Plug and Play Serial Device on an RS-232 Port

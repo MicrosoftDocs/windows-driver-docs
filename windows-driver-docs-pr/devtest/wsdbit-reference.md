@@ -2,7 +2,16 @@
 title: WSDBIT Reference
 description: WSDBIT Reference
 ms.assetid: 69d9e7db-fceb-4d1b-a22b-fe63756048d7
-keywords: ["WSDBIT tool WDK , sample", "WSDAPI Basic Interoperability Tool WDK , sample", "WSDBIT tool WDK , WSDL", "WSDAPI Basic Interoperability Tool WDK , WSDL"]
+keywords:
+- WSDBIT tool WDK , sample
+- WSDAPI Basic Interoperability Tool WDK , sample
+- WSDBIT tool WDK , WSDL
+- WSDAPI Basic Interoperability Tool WDK , WSDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WSDBIT Reference

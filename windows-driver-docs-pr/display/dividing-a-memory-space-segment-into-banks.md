@@ -2,7 +2,19 @@
 title: Dividing a Memory-Space Segment into Banks
 description: Dividing a Memory-Space Segment into Banks
 ms.assetid: 7fdbe511-ae92-44c2-9651-51b3ead11425
-keywords: ["memory segments WDK display , banks", "banked memory WDK display", "banks WDK display", "linear memory-space segments WDK display", "memory segments WDK display , linear memory-space segments", "dividing linear memory-space segments WDK display", "memory-space segments WDK display"]
+keywords:
+- memory segments WDK display , banks
+- banked memory WDK display
+- banks WDK display
+- linear memory-space segments WDK display
+- memory segments WDK display , linear memory-space segments
+- dividing linear memory-space segments WDK display
+- memory-space segments WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dividing a Memory-Space Segment into Banks

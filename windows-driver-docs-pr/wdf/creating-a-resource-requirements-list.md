@@ -3,7 +3,17 @@ title: Creating a Resource Requirements List
 author: windows-driver-content
 description: Creating a Resource Requirements List
 ms.assetid: 1254aa21-c64b-4c62-93dc-6758cef382f9
-keywords: ["hardware resources WDK KMDF , creating resource requirements lists", "resource requirements lists WDK KMDF", "resource requirements lists WDK KMDF , creating", "resource-requirements-list objects WDK KMDF", "framework resource-requirements-list objects WDK KMDF"]
+keywords:
+- hardware resources WDK KMDF , creating resource requirements lists
+- resource requirements lists WDK KMDF
+- resource requirements lists WDK KMDF , creating
+- resource-requirements-list objects WDK KMDF
+- framework resource-requirements-list objects WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Resource Requirements List

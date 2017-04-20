@@ -3,7 +3,16 @@ title: Stream Changes
 author: windows-driver-content
 description: Stream Changes
 ms.assetid: 3bd6a511-c602-4159-87b4-7e1e55c03b2e
-keywords: ["stream changes WDK DVD decoder", "formats WDK DVD decoder", "headers WDK DVD decoder", "stream formats WDK DVD decoder"]
+keywords:
+- stream changes WDK DVD decoder
+- formats WDK DVD decoder
+- headers WDK DVD decoder
+- stream formats WDK DVD decoder
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Changes

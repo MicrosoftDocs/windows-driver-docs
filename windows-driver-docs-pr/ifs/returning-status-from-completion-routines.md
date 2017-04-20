@@ -3,7 +3,16 @@ title: Returning Status from Completion Routines
 author: windows-driver-content
 description: Returning Status from Completion Routines
 ms.assetid: fb12720b-10fe-43ab-ade7-c1b09d00d922
-keywords: ["IRP completion routines WDK file system , returning status", "status values WDK file system", "success status values WDK file system", "returning status WDK file system"]
+keywords:
+- IRP completion routines WDK file system , returning status
+- status values WDK file system
+- success status values WDK file system
+- returning status WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning Status from Completion Routines

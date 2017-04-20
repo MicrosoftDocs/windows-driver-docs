@@ -2,7 +2,13 @@
 title: Trace Session List Columns
 description: Trace Session List Columns
 ms.assetid: 2e9d7636-3cff-459c-827a-719062bb778c
-keywords: ["Trace Session List WDK"]
+keywords:
+- Trace Session List WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Session List Columns

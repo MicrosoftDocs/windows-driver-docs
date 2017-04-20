@@ -3,7 +3,18 @@ title: GDL Exercise Notes
 author: windows-driver-content
 description: GDL Exercise Notes
 ms.assetid: 39013410-ad8e-4b1a-9db7-2ec541f08989
-keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "GDL WDK , index tree", "parser WDK GDL , index tree"]
+keywords:
+- GDL WDK , examples
+- examples WDK GDL
+- tutorials WDK GDL
+- GDL WDK , tutorials
+- GDL WDK , index tree
+- parser WDK GDL , index tree
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Exercise Notes

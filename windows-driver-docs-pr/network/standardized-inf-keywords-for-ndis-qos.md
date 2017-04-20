@@ -2,6 +2,11 @@
 title: Standardized INF Keywords for NDIS QoS
 description: Standardized INF Keywords for NDIS QoS
 ms.assetid: 7967D633-850F-4707-9577-9262AEB1A597
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standardized INF Keywords for NDIS QoS

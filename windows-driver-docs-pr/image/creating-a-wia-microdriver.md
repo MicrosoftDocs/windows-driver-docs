@@ -3,6 +3,11 @@ title: Creating a WIA Microdriver
 author: windows-driver-content
 description: Creating a WIA Microdriver
 ms.assetid: 4f453569-d768-47fb-9b70-ebb51e303cf0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a WIA Microdriver

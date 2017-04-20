@@ -2,7 +2,23 @@
 title: Pixel Fog
 description: Pixel Fog
 ms.assetid: 40896f51-87f5-44e9-9199-e92f51a1e8f1
-keywords: ["global fog WDK Direct3D", "table fog WDK Direct3D", "pixel fog WDK Direct3D", "fogging WDK Direct3D", "color fog calculations WDK Direct3D", "D3DRENDERSTATE_RANGEFOGENABLE", "D3DRENDERSTATE_FOGCOLOR", "D3DRENDERSTATE_FOGTABLEMODE", "D3DRENDERSTATE_FOGSTART", "RSTATE_FOGEND", "D3DRENDERSTATE_FOGDENSITY"]
+keywords:
+- global fog WDK Direct3D
+- table fog WDK Direct3D
+- pixel fog WDK Direct3D
+- fogging WDK Direct3D
+- color fog calculations WDK Direct3D
+- D3DRENDERSTATE_RANGEFOGENABLE
+- D3DRENDERSTATE_FOGCOLOR
+- D3DRENDERSTATE_FOGTABLEMODE
+- D3DRENDERSTATE_FOGSTART
+- RSTATE_FOGEND
+- D3DRENDERSTATE_FOGDENSITY
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pixel Fog

@@ -2,6 +2,11 @@
 title: File does not exist filename
 description: File does not exist filename
 ms.assetid: 21b754db-3043-410d-b3b2-be23fa6b186f
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File does not exist: &lt;filename&gt;

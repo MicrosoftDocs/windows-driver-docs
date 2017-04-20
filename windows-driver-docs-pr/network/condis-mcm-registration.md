@@ -2,7 +2,15 @@
 title: CoNDIS MCM Registration
 description: CoNDIS MCM Registration
 ms.assetid: 7dfb86c5-e7b6-4b9d-8f29-a6d247500c3e
-keywords: ["MCMs WDK networking , registering CoNDIS miniport call managers", "miniport call managers WDK networking , registering CoNDIS miniport call managers", "registering miniport call managers"]
+keywords:
+- MCMs WDK networking , registering CoNDIS miniport call managers
+- miniport call managers WDK networking , registering CoNDIS miniport call managers
+- registering miniport call managers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CoNDIS MCM Registration

@@ -2,7 +2,15 @@
 title: CoNDIS Miniport Driver Registration
 description: CoNDIS Miniport Driver Registration
 ms.assetid: 2dfd3bdc-b7b1-4491-b05e-2e8e1f5895b8
-keywords: ["miniport drivers WDK networking , CoNDIS", "NDIS miniport drivers WDK , CoNDIS", "registering miniport drivers"]
+keywords:
+- miniport drivers WDK networking , CoNDIS
+- NDIS miniport drivers WDK , CoNDIS
+- registering miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CoNDIS Miniport Driver Registration

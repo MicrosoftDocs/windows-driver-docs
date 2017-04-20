@@ -3,6 +3,11 @@ title: Location driver guidelines for power and performance
 author: windows-driver-content
 description: The following sections describe guidelines to ensure that your location driver conserves power and provides data efficiently.
 ms.assetid: 81B9A3A1-D273-48C8-A808-CDB1533A1B6A
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Location driver guidelines for power and performance

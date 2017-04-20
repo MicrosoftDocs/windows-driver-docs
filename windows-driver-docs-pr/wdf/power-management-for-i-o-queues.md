@@ -3,7 +3,22 @@ title: Power Management for I/O Queues
 author: windows-driver-content
 description: Power Management for I/O Queues
 ms.assetid: 2e1bf9d2-615b-49b0-b677-f41b23c42eda
-keywords: ["power management WDK KMDF , I/O queues", "I/O queues WDK KMDF , power management", "I/O requests WDK KMDF , power management", "power-managed I/O queues WDK KMDF", "working states WDK KMDF", "PowerManaged settings WDK KMDF", "low-power states WDK KMDF", "sleep power management WDK KMDF", "power states WDK KMDF", "device power states WDK KMDF"]
+keywords:
+- power management WDK KMDF , I/O queues
+- I/O queues WDK KMDF , power management
+- I/O requests WDK KMDF , power management
+- power-managed I/O queues WDK KMDF
+- working states WDK KMDF
+- PowerManaged settings WDK KMDF
+- low-power states WDK KMDF
+- sleep power management WDK KMDF
+- power states WDK KMDF
+- device power states WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Management for I/O Queues

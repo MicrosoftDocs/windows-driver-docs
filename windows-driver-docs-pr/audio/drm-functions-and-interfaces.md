@@ -2,7 +2,18 @@
 title: DRM Functions and Interfaces
 description: DRM Functions and Interfaces
 ms.assetid: 62c739da-91e8-428e-b76c-ec9621b12597
-keywords: ["Digital Rights Management WDK audio , functions", "DRM WDK audio , functions", "Digital Rights Management WDK audio , interfaces", "DRM WDK audio , interfaces", "interfaces WDK DRM", "functions WDK DRM"]
+keywords:
+- Digital Rights Management WDK audio , functions
+- DRM WDK audio , functions
+- Digital Rights Management WDK audio , interfaces
+- DRM WDK audio , interfaces
+- interfaces WDK DRM
+- functions WDK DRM
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DRM Functions and Interfaces

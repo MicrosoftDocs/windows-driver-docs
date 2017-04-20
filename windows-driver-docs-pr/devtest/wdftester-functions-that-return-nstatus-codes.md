@@ -2,6 +2,11 @@
 title: KMDF Functions that Return NSTATUS Codes
 description: KMDF Functions that Return NSTATUS Codes
 ms.assetid: 0edd35c0-2357-4502-8c59-36b16cf7f294
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KMDF Functions that Return NSTATUS Codes

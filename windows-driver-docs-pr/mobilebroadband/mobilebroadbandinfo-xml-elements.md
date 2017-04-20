@@ -2,6 +2,11 @@
 title: MobileBroadbandInfo XML elements
 description: MobileBroadbandInfo XML elements
 ms.assetid: 399a0d58-5464-49b2-a6da-8c645016cc1e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MobileBroadbandInfo XML elements

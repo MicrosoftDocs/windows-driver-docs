@@ -3,7 +3,14 @@ title: Impersonation in a File System Filter Driver
 author: windows-driver-content
 description: Impersonation in a File System Filter Driver
 ms.assetid: ee56cd54-01ac-46ad-8ee4-e76131b058f3
-keywords: ["security WDK file systems , impersonation", "impersonation WDK file systems"]
+keywords:
+- security WDK file systems , impersonation
+- impersonation WDK file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Impersonation in a File System Filter Driver

@@ -2,7 +2,18 @@
 title: Responding to a Disconnect Request
 description: Responding to a Disconnect Request
 ms.assetid: f812086e-a281-4738-ad10-42de64fb1ed2
-keywords: ["connection closing WDK TCP chimney offload", "disconnections WDK TCP chimney offload", "RST segment WDK TCP chimney offload", "FIN segment WDK TCP chimney offload", "abortive disconnects WDK TCP chimney offload", "graceful disconnects WDK TCP chimney offload"]
+keywords:
+- connection closing WDK TCP chimney offload
+- disconnections WDK TCP chimney offload
+- RST segment WDK TCP chimney offload
+- FIN segment WDK TCP chimney offload
+- abortive disconnects WDK TCP chimney offload
+- graceful disconnects WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Responding to a Disconnect Request

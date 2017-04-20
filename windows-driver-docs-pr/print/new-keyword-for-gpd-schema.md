@@ -3,7 +3,16 @@ title: New Keyword for GPD Schema
 author: windows-driver-content
 description: New Keyword for GPD Schema
 ms.assetid: 4814d019-0556-4e5a-8c55-c05454bafbd3
-keywords: ["root-level keywords WDK printer autoconfiguration", "GPD files WDK GDL extensions , keywords", "keywords WDK printer autoconfiguration", "in-box autoconfiguration support WDK printer , keywords"]
+keywords:
+- root-level keywords WDK printer autoconfiguration
+- GPD files WDK GDL extensions , keywords
+- keywords WDK printer autoconfiguration
+- in-box autoconfiguration support WDK printer , keywords
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # New Keyword for GPD Schema

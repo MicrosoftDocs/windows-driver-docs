@@ -2,7 +2,17 @@
 title: About DirectDraw
 description: About DirectDraw
 ms.assetid: f2ab4863-8ec8-4eaf-b59f-635570aef470
-keywords: ["drawing WDK DirectDraw , about DirectDraw", "DirectDraw WDK Windows 2000 display , about DirectDraw", "tears WDK DirectDraw", "screen flicker WDK DirectDraw", "GDI WDK DirectDraw"]
+keywords:
+- drawing WDK DirectDraw , about DirectDraw
+- DirectDraw WDK Windows 2000 display , about DirectDraw
+- tears WDK DirectDraw
+- screen flicker WDK DirectDraw
+- GDI WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About DirectDraw

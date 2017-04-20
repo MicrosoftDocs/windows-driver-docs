@@ -3,7 +3,17 @@ title: Adding a Device
 author: windows-driver-content
 description: Adding a Device
 ms.assetid: 233e3315-3044-42d7-867c-0a9e153eb53b
-keywords: ["User-Mode Driver Framework WDK , adding devices", "UMDF WDK , adding devices", "user-mode drivers WDK UMDF , adding devices", "installing devices WDK , UMDF", "adding devices WDK UMDF"]
+keywords:
+- User-Mode Driver Framework WDK , adding devices
+- UMDF WDK , adding devices
+- user-mode drivers WDK UMDF , adding devices
+- installing devices WDK , UMDF
+- adding devices WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding a Device

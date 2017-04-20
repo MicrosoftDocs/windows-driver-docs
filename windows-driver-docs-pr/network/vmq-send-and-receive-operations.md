@@ -2,6 +2,11 @@
 title: VMQ Send and Receive Operations
 description: VMQ Send and Receive Operations
 ms.assetid: 11f07534-f715-4ed5-b312-652fb3c7e8bb
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VMQ Send and Receive Operations

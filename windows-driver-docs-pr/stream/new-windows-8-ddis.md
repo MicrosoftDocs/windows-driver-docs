@@ -2,7 +2,12 @@
 title: New AVStream Interfaces for Windows 8
 author: windows-driver-content
 ms.assetid: B3C223BD-2A00-4B87-9D0E-557C0CA3F2DE
-description: 
+description: Provides information about AVStream streaming media driver interfaces that are new or updated for Windows 8.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # New AVStream Interfaces for Windows 8

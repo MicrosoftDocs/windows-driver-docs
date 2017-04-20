@@ -2,7 +2,17 @@
 title: Conversion from BGR8888 to XR\_BIAS
 description: Conversion from BGR8888 to XR\_BIAS
 ms.assetid: 53145cfe-d344-4242-b124-ddb507d876ad
-keywords: ["Direct3D version 10.1 WDK Windows 7 display , converting BGR8888 to XR_BIAS", "extended format WDK Windows 7 display , converting BGR8888 to XR_BIAS", "converting BGR8888 to XR_BIAS WDK Windows 7 display", "BGR8888 WDK Windows 7 display", "BGR8888 WDK Windows 7 display , conversion to XR_BIAS"]
+keywords:
+- Direct3D version 10.1 WDK Windows 7 display , converting BGR8888 to XR_BIAS
+- extended format WDK Windows 7 display , converting BGR8888 to XR_BIAS
+- converting BGR8888 to XR_BIAS WDK Windows 7 display
+- BGR8888 WDK Windows 7 display
+- BGR8888 WDK Windows 7 display , conversion to XR_BIAS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Conversion from BGR8888 to XR\_BIAS

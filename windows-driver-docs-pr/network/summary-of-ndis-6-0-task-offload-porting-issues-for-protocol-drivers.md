@@ -2,7 +2,17 @@
 title: Summary of NDIS 6.0 Task Offload Porting Issues for Protocol Drivers
 description: Summary of NDIS 6.0 Task Offload Porting Issues for Protocol Drivers
 ms.assetid: 76462948-db97-4d06-8bb0-153db6284593
-keywords: ["task offload porting WDK networking , protocol drivers", "TCP/IP offload service porting WDK networking , protocol drivers", "offload service porting WDK networking , protocol drivers", "porting task offload services WDK networking , protocol drivers", "protoc"]
+keywords:
+- task offload porting WDK networking , protocol drivers
+- TCP/IP offload service porting WDK networking , protocol drivers
+- offload service porting WDK networking , protocol drivers
+- porting task offload services WDK networking , protocol drivers
+- protoc
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Summary of NDIS 6.0 Task Offload Porting Issues for Protocol Drivers

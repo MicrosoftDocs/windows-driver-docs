@@ -2,7 +2,14 @@
 title: Preparing to Use TraceView
 description: Preparing to Use TraceView
 ms.assetid: 724e3c8a-7760-4e53-8d44-1927e5ad1efd
-keywords: ["TraceView WDK , preparing to use", "files WDK TraceView"]
+keywords:
+- TraceView WDK , preparing to use
+- files WDK TraceView
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preparing to Use TraceView

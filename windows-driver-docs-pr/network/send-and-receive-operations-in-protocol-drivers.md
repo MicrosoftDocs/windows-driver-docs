@@ -2,7 +2,18 @@
 title: Send and Receive Operations in Protocol Drivers
 description: Send and Receive Operations in Protocol Drivers
 ms.assetid: 4759725b-ed0b-4345-9cdc-9411ee29ebdb
-keywords: ["protocol drivers WDK networking , receive operations", "NDIS protocol drivers WDK , receive operations", "protocol drivers WDK networking , send operations", "NDIS protocol drivers WDK , send operations", "send operations WDK NDIS protocol", "receive operations WDK NDIS protocol"]
+keywords:
+- protocol drivers WDK networking , receive operations
+- NDIS protocol drivers WDK , receive operations
+- protocol drivers WDK networking , send operations
+- NDIS protocol drivers WDK , send operations
+- send operations WDK NDIS protocol
+- receive operations WDK NDIS protocol
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Send and Receive Operations in Protocol Drivers

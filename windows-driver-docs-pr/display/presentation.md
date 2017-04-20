@@ -2,7 +2,18 @@
 title: Presentation
 description: Presentation
 ms.assetid: 23a01b5b-0654-4c43-ac96-a75810fa20df
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , presentation", "presentation WDK DirectX 8.0", "rendering results visible WDK DirectX 8.0", "visible results WDK DirectX 8.0", "DDLT_PRESENTATION", "DDBLT_LAST_PRESENTATION"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , presentation
+- presentation WDK DirectX 8.0
+- rendering results visible WDK DirectX 8.0
+- visible results WDK DirectX 8.0
+- DDLT_PRESENTATION
+- DDBLT_LAST_PRESENTATION
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Presentation

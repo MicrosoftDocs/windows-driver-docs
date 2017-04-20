@@ -2,6 +2,11 @@
 title: Modified INF for MSVAD Micarray
 description: Modified INF for MSVAD Micarray
 ms.assetid: 0bb57f16-3b32-45c8-aca1-4dc96cb7a744
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Modified INF for MSVAD Micarray

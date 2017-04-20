@@ -2,6 +2,11 @@
 title: Bluetooth Bypass Guidelines for Audio Drivers
 description: The Bluetooth bypass design guidelines presented in this section show audio driver developers how audio data can be rerouted past the Bluetooth host controller interface (HCI) to be processed in system-on-a-chip (SoC) solution.
 ms.assetid: D0690A6F-F44F-465D-9115-DD662074D0E8
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth Bypass Guidelines for Audio Drivers

@@ -2,7 +2,21 @@
 title: Adapter Driver Construction
 description: Adapter Driver Construction
 ms.assetid: e4a151b9-57aa-402f-8a0d-70547eb67917
-keywords: ["audio miniport drivers WDK , adapter drivers", "miniport drivers WDK audio , adapter drivers", "adapter drivers WDK audio , miniport drivers", "kernel-mode driver services WDK audio", "port class drivers WDK audio", "PortCls WDK audio , adapter drivers", "audio adapters WDK", "audio adapters WDK , constructing", "adapter drivers WDK audio , constructing"]
+keywords:
+- audio miniport drivers WDK , adapter drivers
+- miniport drivers WDK audio , adapter drivers
+- adapter drivers WDK audio , miniport drivers
+- kernel-mode driver services WDK audio
+- port class drivers WDK audio
+- PortCls WDK audio , adapter drivers
+- audio adapters WDK
+- audio adapters WDK , constructing
+- adapter drivers WDK audio , constructing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adapter Driver Construction

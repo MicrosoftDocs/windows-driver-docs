@@ -3,6 +3,11 @@ title: Using the SPB I/O Request Interface
 author: windows-driver-content
 description: Starting with Windows 8, the SPB framework extension (SpbCx) is a system-supplied component that supports the SPB I/O request interface.
 ms.assetid: 0A752413-FA0B-4C26-BF6D-19033E07095E
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the SPB I/O Request Interface

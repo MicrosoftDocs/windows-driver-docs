@@ -2,7 +2,16 @@
 title: Pointer Control
 description: Pointer Control
 ms.assetid: 70e80be0-28f8-40a7-9018-fab71d80c8f6
-keywords: ["drawing pointers WDK Windows 2000 display", "display drivers WDK Windows 2000 , pointers", "pointers WDK Windows 2000 display", "passing pointer information WDK Windows 2000 display"]
+keywords:
+- drawing pointers WDK Windows 2000 display
+- display drivers WDK Windows 2000 , pointers
+- pointers WDK Windows 2000 display
+- passing pointer information WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pointer Control

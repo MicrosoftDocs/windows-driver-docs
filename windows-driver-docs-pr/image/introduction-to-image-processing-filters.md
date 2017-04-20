@@ -3,6 +3,11 @@ title: Introduction to Image Processing Filters
 author: windows-driver-content
 description: Introduction to Image Processing Filters
 ms.assetid: 59fc1bc1-c783-43df-9778-ea4306f6dd50
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Image Processing Filters

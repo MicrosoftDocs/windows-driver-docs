@@ -2,7 +2,17 @@
 title: Halting a Virtual Miniport
 description: Halting a Virtual Miniport
 ms.assetid: f53040b1-cbbc-4b13-9bc7-8fae9eb38391
-keywords: ["halting virtual miniports", "virtual miniports WDK networking", "NDIS intermediate drivers WDK , virtual miniports", "intermediate drivers WDK networking , virtual miniports", "stopping virtual miniports"]
+keywords:
+- halting virtual miniports
+- virtual miniports WDK networking
+- NDIS intermediate drivers WDK , virtual miniports
+- intermediate drivers WDK networking , virtual miniports
+- stopping virtual miniports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Halting a Virtual Miniport

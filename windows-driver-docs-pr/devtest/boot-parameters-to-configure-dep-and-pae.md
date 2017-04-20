@@ -2,7 +2,20 @@
 title: Boot Parameters to Configure DEP and PAE
 description: Boot Parameters to Configure DEP and PAE
 ms.assetid: cb8b6298-e679-4ca3-8b94-4f0c6af23a3f
-keywords: ["boot parameters WDK", "boot entry parameters WDK", "DEP WDK boot parameters", "Data Execution Prevention WDK boot parameters", "Physical Address Extention WDK boot parameters", "PAE WDK boot parameters", "hardware-enforced DEP WDK boot parameters", "software-enforced DEP WDK boot parameters"]
+keywords:
+- boot parameters WDK
+- boot entry parameters WDK
+- DEP WDK boot parameters
+- Data Execution Prevention WDK boot parameters
+- Physical Address Extention WDK boot parameters
+- PAE WDK boot parameters
+- hardware-enforced DEP WDK boot parameters
+- software-enforced DEP WDK boot parameters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boot Parameters to Configure DEP and PAE

@@ -2,7 +2,16 @@
 title: Required and Suggested TCP/IP Protocol Support
 description: Required and Suggested TCP/IP Protocol Support
 ms.assetid: ffc0d131-18f1-4a20-ad78-bbfe7c02a052
-keywords: ["RFC compliance WDK TCP chimney offload", "IETF RFC compliance WDK TCP chimney offload", "task-offload engine NIC WDK TCP chimney offload", "TOE NIC WDK TCP chimney offload"]
+keywords:
+- RFC compliance WDK TCP chimney offload
+- IETF RFC compliance WDK TCP chimney offload
+- task-offload engine NIC WDK TCP chimney offload
+- TOE NIC WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required and Suggested TCP/IP Protocol Support

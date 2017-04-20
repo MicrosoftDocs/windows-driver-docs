@@ -3,6 +3,11 @@ title: WS-DSD Scenario Create a Scan Process
 author: windows-driver-content
 description: WS-DSD Scenario Create a Scan Process
 ms.assetid: ba321bf0-26d6-41e0-8d80-91519594eee3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSD Scenario: Create a Scan Process

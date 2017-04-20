@@ -2,7 +2,14 @@
 title: Trace Tree Pane Actions
 description: Trace Tree Pane Actions
 ms.assetid: 60ccca37-d264-43dc-a502-3a7c7fe0caef
-keywords: ["Static Driver Verifier Report WDK , Trace Tree pane", "Trace Tree pane WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier Report WDK , Trace Tree pane
+- Trace Tree pane WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Tree Pane Actions

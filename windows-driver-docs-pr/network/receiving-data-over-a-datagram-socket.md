@@ -2,7 +2,15 @@
 title: Receiving Data over a Datagram Socket
 description: Receiving Data over a Datagram Socket
 ms.assetid: 650b7688-967e-4ce6-80ad-8f7b6e1ec009
-keywords: ["receiving datagrams", "datagram sockets WDK Winsock Kernel", "WskReceiveFrom"]
+keywords:
+- receiving datagrams
+- datagram sockets WDK Winsock Kernel
+- WskReceiveFrom
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving Data over a Datagram Socket

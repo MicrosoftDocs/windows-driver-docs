@@ -3,7 +3,16 @@ title: Host Process Timeouts in UMDF
 author: windows-driver-content
 description: Host Process Timeouts in UMDF
 ms.assetid: b8a0a4cc-9c6d-40e2-a3f1-9807dbcf15d9
-keywords: ["User-Mode Driver Framework WDK , time-outs", "UMDF WDK , time-outs", "user-mode drivers WDK UMDF , time-outs", "time-outs WDK UMDF"]
+keywords:
+- User-Mode Driver Framework WDK , time-outs
+- UMDF WDK , time-outs
+- user-mode drivers WDK UMDF , time-outs
+- time-outs WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Host Process Timeouts in UMDF

@@ -2,7 +2,15 @@
 title: Setting the RSS CPU Configuration
 description: Setting the RSS CPU Configuration
 ms.assetid: 6ca54d1e-ce24-4433-b1c3-1f153b77458d
-keywords: ["receive-side scaling WDK networking , CPU configuration", "RSS WDK networking , CPU configuration", "CPU configuration WDK RSS"]
+keywords:
+- receive-side scaling WDK networking , CPU configuration
+- RSS WDK networking , CPU configuration
+- CPU configuration WDK RSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the RSS CPU Configuration

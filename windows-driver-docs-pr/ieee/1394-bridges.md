@@ -3,7 +3,16 @@ title: 1394 Bridges
 author: windows-driver-content
 description: 1394 Bridges
 ms.assetid: 208cceaa-dd26-46f9-b015-723c5940b02b
-keywords: ["IEEE 1394 WDK buses , bridges", "1394 WDK buses , bridges", "bridges WDK IEEE 1394 bus", "1394 bridges WDK IEEE 1394 bus"]
+keywords:
+- IEEE 1394 WDK buses , bridges
+- 1394 WDK buses , bridges
+- bridges WDK IEEE 1394 bus
+- 1394 bridges WDK IEEE 1394 bus
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 1394 Bridges

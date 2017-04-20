@@ -2,7 +2,16 @@
 title: Conditional Compilation and the Build Environment
 description: Conditional Compilation and the Build Environment
 ms.assetid: 7879b6c6-4985-4817-a8bc-b287397df721
-keywords: ["DBG preprocessor constant", "debugging code WDK , conditional compilation", "debugging code WDK , build environment", "conditional compilation WDK debugging"]
+keywords:
+- DBG preprocessor constant
+- debugging code WDK , conditional compilation
+- debugging code WDK , build environment
+- conditional compilation WDK debugging
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Conditional Compilation and the Build Environment

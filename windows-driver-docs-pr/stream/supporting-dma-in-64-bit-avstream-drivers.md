@@ -3,7 +3,18 @@ title: Supporting DMA in 64-Bit AVStream Drivers
 author: windows-driver-content
 description: Supporting DMA in 64-Bit AVStream Drivers
 ms.assetid: 1173a83f-8d9e-4678-bfb5-f2fb91e827be
-keywords: ["AVStream WDK , hardware", "hardware WDK AVStream", "DMA services WDK AVStream", "Direct Memory Access WDK AVStream", "64-bit WDK AVStream", "32-bit addressable devices WDK AVStream"]
+keywords:
+- AVStream WDK , hardware
+- hardware WDK AVStream
+- DMA services WDK AVStream
+- Direct Memory Access WDK AVStream
+- 64-bit WDK AVStream
+- 32-bit addressable devices WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting DMA in 64-Bit AVStream Drivers

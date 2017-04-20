@@ -2,7 +2,13 @@
 title: Hardware Considerations for Biometric Drivers
 description: Hardware Considerations for Biometric Drivers
 ms.assetid: 07b16cfb-d3aa-4458-b6e3-acb76afe9b19
-keywords: ["biometric drivers WDK , hardware considerations"]
+keywords:
+- biometric drivers WDK , hardware considerations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware Considerations for Biometric Drivers

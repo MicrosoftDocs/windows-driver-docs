@@ -2,7 +2,16 @@
 title: SetupAPI Logging
 description: SetupAPI Logging
 ms.assetid: 25beff4d-742a-4d46-bb91-16b3e14f2d6c
-keywords: ["SetupAPI WDK , logging", "logging WDK SetupAPI", "SetupAPI logging WDK Windows Vista", "SetupAPI logging WDK Windows Vista , about SetupAPI logging"]
+keywords:
+- SetupAPI WDK , logging
+- logging WDK SetupAPI
+- SetupAPI logging WDK Windows Vista
+- SetupAPI logging WDK Windows Vista , about SetupAPI logging
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SetupAPI Logging

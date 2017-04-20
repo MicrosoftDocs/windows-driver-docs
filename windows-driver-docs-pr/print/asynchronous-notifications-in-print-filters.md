@@ -3,7 +3,16 @@ title: Asynchronous Notifications in Print Filters
 author: windows-driver-content
 description: Asynchronous Notifications in Print Filters
 ms.assetid: 52b0790b-4927-4e1b-8ae5-6e2afc7c9df6
-keywords: ["render modules WDK XPSDrv , XPS filters", "XPS filters WDK XPSDrv", "filters WDK XPS", "asynchronous notifications WDK XPS"]
+keywords:
+- render modules WDK XPSDrv , XPS filters
+- XPS filters WDK XPSDrv
+- filters WDK XPS
+- asynchronous notifications WDK XPS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Asynchronous Notifications in Print Filters

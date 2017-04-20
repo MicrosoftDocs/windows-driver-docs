@@ -3,7 +3,17 @@ title: AVStream Object Hierarchy
 author: windows-driver-content
 description: AVStream Object Hierarchy
 ms.assetid: b7d6f06d-6c97-414e-a453-d375e2d7ccf5
-keywords: ["AVStream object hierarchy WDK", "objects WDK AVStream", "hierarchy WDK AVStream", "filter types WDK AVStream", "AVStream WDK , object hierarchy"]
+keywords:
+- AVStream object hierarchy WDK
+- objects WDK AVStream
+- hierarchy WDK AVStream
+- filter types WDK AVStream
+- AVStream WDK , object hierarchy
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Object Hierarchy

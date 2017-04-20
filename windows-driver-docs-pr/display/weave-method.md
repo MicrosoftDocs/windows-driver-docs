@@ -2,7 +2,21 @@
 title: Weave Method
 description: Weave Method
 ms.assetid: d35a08b6-7221-4e1c-895f-446f23096519
-keywords: ["DirectX VPE support WDK DirectDraw , displaying interleaved video", "drawing VPEs WDK DirectDraw , displaying interleaved video", "DirectDraw VPEs WDK Windows 2000 display , displaying interleaved video", "video port extensions WDK DirectDraw , displaying interleaved video", "VPEs WDK DirectDraw , displaying interleaved video", "displaying interleaved video", "interleaved video displays WDK video port extensions", "weave WDK DirectDraw", "deinterlacing WDK video port extensions"]
+keywords:
+- DirectX VPE support WDK DirectDraw , displaying interleaved video
+- drawing VPEs WDK DirectDraw , displaying interleaved video
+- DirectDraw VPEs WDK Windows 2000 display , displaying interleaved video
+- video port extensions WDK DirectDraw , displaying interleaved video
+- VPEs WDK DirectDraw , displaying interleaved video
+- displaying interleaved video
+- interleaved video displays WDK video port extensions
+- weave WDK DirectDraw
+- deinterlacing WDK video port extensions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Weave Method

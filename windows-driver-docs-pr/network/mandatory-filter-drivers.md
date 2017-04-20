@@ -2,7 +2,15 @@
 title: Mandatory Filter Drivers
 description: Mandatory Filter Drivers
 ms.assetid: 7be7cb9d-d0a6-4d4b-9dc1-2fef73b1f10e
-keywords: ["filter drivers WDK networking , mandatory", "NDIS filter drivers WDK , mandatory", "mandatory filter drivers WDK networking"]
+keywords:
+- filter drivers WDK networking , mandatory
+- NDIS filter drivers WDK , mandatory
+- mandatory filter drivers WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mandatory Filter Drivers

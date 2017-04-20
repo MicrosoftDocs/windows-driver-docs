@@ -3,7 +3,18 @@ title: Buffering State Control
 author: windows-driver-content
 description: Buffering State Control
 ms.assetid: 16590332-9d0d-4d8b-8304-a3fa9269c0e2
-keywords: ["RDBSS WDK file systems , buffering state", "Redirected Drive Buffering Subsystem WDK file systems , buffering state", "buffering state WDK RDBSS", "distributed cache coherency WDK RDBSS", "cache WDK RDBSS", "SRV_OPEN structure"]
+keywords:
+- RDBSS WDK file systems , buffering state
+- Redirected Drive Buffering Subsystem WDK file systems , buffering state
+- buffering state WDK RDBSS
+- distributed cache coherency WDK RDBSS
+- cache WDK RDBSS
+- SRV_OPEN structure
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Buffering State Control

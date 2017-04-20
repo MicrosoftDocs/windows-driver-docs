@@ -3,6 +3,11 @@ title: EFI\_USBFN\_IO\_PROTOCOL.StartController
 author: windows-driver-content
 description: EFI\_USBFN\_IO\_PROTOCOL.StartController
 ms.assetid: 431406c3-6b96-4815-a8a0-01100e8a5a5f
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USBFN\_IO\_PROTOCOL.StartController

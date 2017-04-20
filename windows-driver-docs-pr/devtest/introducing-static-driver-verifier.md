@@ -2,7 +2,15 @@
 title: Introducing Static Driver Verifier
 description: Introducing Static Driver Verifier
 ms.assetid: fa6e8b0f-0d0f-4293-87ec-e67decd6acb7
-keywords: ["Static Driver Verifier WDK , about Static Driver Verifier", "StaticDV WDK , about Static Driver Verifier", "SDV WDK , about Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , about Static Driver Verifier
+- StaticDV WDK , about Static Driver Verifier
+- SDV WDK , about Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introducing Static Driver Verifier

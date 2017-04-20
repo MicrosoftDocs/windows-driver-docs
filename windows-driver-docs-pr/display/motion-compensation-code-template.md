@@ -2,7 +2,19 @@
 title: Motion Compensation Code Template
 description: Motion Compensation Code Template
 ms.assetid: 2632f84d-7ebb-4c55-9ba7-996f0cb891bd
-keywords: ["motion-compensation code template WDK DirectX VA", "ProcAmp WDK DirectX VA , motion-compensation code template", "deinterlacing WDK DirectX VA , motion-compensation code template", "COPP WDK DirectX VA , motion-compensation code template", "copy protection WDK COPP , motion-compensation code template", "video copy protection WDK COPP , motion-compensation code template", "protected video WDK COPP , motion-compensation code template"]
+keywords:
+- motion-compensation code template WDK DirectX VA
+- ProcAmp WDK DirectX VA , motion-compensation code template
+- deinterlacing WDK DirectX VA , motion-compensation code template
+- COPP WDK DirectX VA , motion-compensation code template
+- copy protection WDK COPP , motion-compensation code template
+- video copy protection WDK COPP , motion-compensation code template
+- protected video WDK COPP , motion-compensation code template
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Motion Compensation Code Template

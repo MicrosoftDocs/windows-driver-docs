@@ -2,7 +2,18 @@
 title: Porting Miniport Driver OID Request Handling to NDIS 6.0
 description: Porting Miniport Driver OID Request Handling to NDIS 6.0
 ms.assetid: f84ec462-d149-47f6-ab46-c38941843bda
-keywords: ["NDIS miniport drivers WDK networking , OID requests", "miniport drivers WDK networking , OID requests", "OID request porting WDK networking", "OIDs WDK networking , request operation porting", "object identifiers WDK networking", "porting miniport drivers WD"]
+keywords:
+- NDIS miniport drivers WDK networking , OID requests
+- miniport drivers WDK networking , OID requests
+- OID request porting WDK networking
+- OIDs WDK networking , request operation porting
+- object identifiers WDK networking
+- porting miniport drivers WD
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Miniport Driver OID Request Handling to NDIS 6.0

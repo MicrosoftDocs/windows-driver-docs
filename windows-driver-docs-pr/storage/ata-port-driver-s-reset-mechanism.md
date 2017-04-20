@@ -3,7 +3,15 @@ title: ATA Port Driver's Reset Mechanism
 author: windows-driver-content
 description: ATA Port Driver's Reset Mechanism
 ms.assetid: adc27819-d1ae-4b97-8109-5d742c0595d3
-keywords: ["ATA Port drivers WDK , reset mechanism", "reset mechanism WDK ATA Port driver", "LUN resets WDK ATA Port driver"]
+keywords:
+- ATA Port drivers WDK , reset mechanism
+- reset mechanism WDK ATA Port driver
+- LUN resets WDK ATA Port driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ATA Port Driver's Reset Mechanism

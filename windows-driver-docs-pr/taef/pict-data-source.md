@@ -2,6 +2,11 @@
 title: PICT Data Source
 description: PICT Data Source
 ms.assetid: 75D3E086-C277-410d-B474-742A47ABB6AC
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PICT Data Source

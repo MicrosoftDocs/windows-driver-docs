@@ -2,6 +2,11 @@
 title: Setting the Parameters of a Virtual Port
 description: Setting the Parameters of a Virtual Port
 ms.assetid: 92CBE5B2-897D-4B34-9AB9-8207C42A72BF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the Parameters of a Virtual Port

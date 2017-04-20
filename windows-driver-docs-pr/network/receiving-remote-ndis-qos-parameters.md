@@ -2,6 +2,11 @@
 title: Receiving Remote NDIS QoS Parameters
 description: Receiving Remote NDIS QoS Parameters
 ms.assetid: 775FA8D7-ECF7-4F94-8958-C51D74243C3A
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving Remote NDIS QoS Parameters

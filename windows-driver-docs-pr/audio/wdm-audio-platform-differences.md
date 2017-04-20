@@ -2,7 +2,14 @@
 title: WDM Audio Platform Differences
 description: WDM Audio Platform Differences
 ms.assetid: bb5d1aa6-edb3-4859-ab65-9622065608e2
-keywords: ["WDM audio drivers WDK , about WDM audio drivers", "audio drivers WDK , platform differences"]
+keywords:
+- WDM audio drivers WDK , about WDM audio drivers
+- audio drivers WDK , platform differences
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Audio Platform Differences

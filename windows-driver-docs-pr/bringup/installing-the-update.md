@@ -3,6 +3,11 @@ title: Installing the update
 author: windows-driver-content
 description: Firmware update packages can be installed using any tool that installs Windows drivers.
 ms.assetid: 51C50910-8AA3-4ED9-B469-2325BBD2FB31
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing the update

@@ -2,7 +2,14 @@
 title: Displaying Custom UI Pages within a Balloon Notification
 description: Displaying Custom UI Pages within a Balloon Notification
 ms.assetid: 5ed2ba59-88ae-4379-b729-1d741b30a7a0
-keywords: ["custom UI WDK Native 802.11 IHV UI Extensions DLL , balloon notifications", "balloon notifications WDK"]
+keywords:
+- custom UI WDK Native 802.11 IHV UI Extensions DLL , balloon notifications
+- balloon notifications WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Displaying Custom UI Pages within a Balloon Notification

@@ -2,7 +2,14 @@
 title: Offload State Structures
 description: Offload State Structures
 ms.assetid: e4fc3c65-a509-4aa6-88e1-9ca564cefa4b
-keywords: ["offload state WDK TCP chimney offload , structures", "structures WDK TCP chimney offload"]
+keywords:
+- offload state WDK TCP chimney offload , structures
+- structures WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offload State Structures

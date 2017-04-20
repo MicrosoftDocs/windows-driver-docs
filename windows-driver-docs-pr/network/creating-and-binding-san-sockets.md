@@ -2,7 +2,22 @@
 title: Creating and Binding SAN Sockets
 description: Creating and Binding SAN Sockets
 ms.assetid: 0589bd82-40d3-42df-926c-93093fb0617f
-keywords: ["SAN connection setup WDK , socket creation and binding", "SAN sockets WDK SANs", "companion sockets WDK SANs", "failing companion socket calls WDK SANs", "binding companion sockets", "TCP/IP sockets WDK SANs", "SAN service providers WDK , determinations", "raw sockets WDK SANs", "SAN sockets WDK , creating", "SAN sockets WDK , binding"]
+keywords:
+- SAN connection setup WDK , socket creation and binding
+- SAN sockets WDK SANs
+- companion sockets WDK SANs
+- failing companion socket calls WDK SANs
+- binding companion sockets
+- TCP/IP sockets WDK SANs
+- SAN service providers WDK , determinations
+- raw sockets WDK SANs
+- SAN sockets WDK , creating
+- SAN sockets WDK , binding
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating and Binding SAN Sockets
