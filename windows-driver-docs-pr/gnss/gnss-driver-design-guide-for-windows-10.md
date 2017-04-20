@@ -1,14 +1,14 @@
 ---
 title: GNSS driver design guide for Windows 10
 author: windows-driver-content
-description: This guide describes the design requirements and architecture of the Universal Windows driver for GNSS (UMDF 2.0), for the converged Windows Location stack in Windows 10.
+description: Describes design requirements and architecture of the Universal Windows driver for GNSS (UMDF 2.0) for the converged Windows Location stack in Windows 10.
 ms.assetid: FD8503DC-A43F-43B2-A1E9-D80778E326F9
 ---
 
 # GNSS driver design guide for Windows 10
 
 
-This guide describes the design requirements and architecture of the Universal Windows driver for GNSS (UMDF 2.0), for the converged Windows Location stack in Windows 10.
+This guide describes the design and architecture of the Universal Windows driver for GNSS (UMDF 2.0) for the converged Windows Location stack in Windows 10.
 
 ## In this section
 

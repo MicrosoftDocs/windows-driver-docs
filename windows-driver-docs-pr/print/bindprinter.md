@@ -1,7 +1,7 @@
 ---
 title: BindPrinter
 author: windows-driver-content
-description: The IPrintTicketProvider BindPrinter method binds a printer or print queue to a specific version of the Print Ticket schema. This enables the core driver to associate a set of private namespace URIs with a device.
+description: The IPrintTicketProvider BindPrinter method binds a printer or print queue to a specific version of the Print Ticket schema.
 ms.assetid: 81f32a9a-417a-4851-972e-373112590e1c
 keywords: ["BindPrinter"]
 ---
