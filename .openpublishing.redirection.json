@@ -734,10 +734,15 @@
       "source_path": "minidriver-supplied-callbacks.md",
       "redirect_URL": "/windows/hardware/drivers/hid/joystick-support",
       "redirect_document_id": true                                                                                                                                                                 
-    }
+    },
     {
       "source_path": "windows-driver-docs-pr/sensors/architecture-overview",
       "redirect_URL": "/windows/hardware/drivers/sensors/architecture-overview-for-sensor-drivers ",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows-driver-docs-pr/display/performing-copp-operations2",
+      "redirect_URL": "/windows/hardware/drivers/display/performing-copp-operations-example ",
       "redirect_document_id": true
     }
   ]
