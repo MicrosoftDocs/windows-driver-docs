@@ -98,7 +98,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### Technology: Bluetooth Drivers<a name="tech-bluetooth"></a>
+### Technology: Bluetooth Drivers <a name="tech-bluetooth"></a>
 
 <table>
 <colgroup>
