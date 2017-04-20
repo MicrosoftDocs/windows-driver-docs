@@ -1,14 +1,14 @@
 ---
 title: Secure Digital (SD) driver samples
 author: windows-driver-content
-description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
+description: The driver samples in this directory provide a starting point for writing a custom SD driver for your device.
 ms.assetid: F0B407B5-D49A-434F-9A35-D4F62BE36F5F
 ---
 
 # Secure Digital (SD) driver samples
 
 
-The driver samples in this directory provide a starting point for writing a custom driver for your device.
+The driver samples in this directory provide a starting point for writing a custom SD driver for your device.
 
 ## Secure Digital (SD)
 

@@ -1,12 +1,12 @@
 ---
-title: Disallowing a Fast I/O Operation in a Preoperation Callback Routine
+title: Disallow a Fast I/O Operation in a Preoperation Callback Routine
 author: windows-driver-content
-description: Disallowing a Fast I/O Operation in a Preoperation Callback Routine
+description: Disallow a Fast I/O Operation in a Preoperation Callback Routine
 ms.assetid: 20797d8c-ffcf-46df-b870-839d5c02d2d4
 keywords: ["preoperation callback routines WDK file system minifilter , disallowing fast I/O", "disallow fast I/O operations WDK file system minifilter", "fast I/O disallowed WDK file system"]
 ---
 
-# Disallowing a Fast I/O Operation in a Preoperation Callback Routine
+# Disallow a Fast I/O Operation in a Preoperation Callback Routine
 
 
 ## <span id="ddk_disallowing_a_fast_io_operation_in_a_preoperation_callback_routine"></span><span id="DDK_DISALLOWING_A_FAST_IO_OPERATION_IN_A_PREOPERATION_CALLBACK_ROUTINE"></span>

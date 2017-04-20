@@ -1,14 +1,14 @@
 ---
 title: Windows Management Instrumentation (WMI) driver samples
 author: windows-driver-content
-description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
+description: The driver samples in this directory provide a starting point for writing a custom WMI driver for your device.
 ms.assetid: 26466524-2350-433C-B2A5-FF916EF3E152
 ---
 
 # Windows Management Instrumentation (WMI) driver samples
 
 
-The driver samples in this directory provide a starting point for writing a custom driver for your device.
+The driver samples in this directory provide a starting point for writing a custom WMI driver for your device.
 
 ## Windows Management Instrumentation (WMI)
 
