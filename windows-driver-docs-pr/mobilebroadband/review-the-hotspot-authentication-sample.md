@@ -2,6 +2,11 @@
 title: Review the hotspot authentication sample
 description: Review the hotspot authentication sample
 ms.assetid: 8ff2ed49-489e-4865-9eb5-0739c4e7a627
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Review the hotspot authentication sample

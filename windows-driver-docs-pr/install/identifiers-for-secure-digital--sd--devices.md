@@ -2,7 +2,20 @@
 title: Identifiers for Secure Digital (SD) Devices
 description: Identifiers for Secure Digital (SD) Devices
 ms.assetid: d5e112b7-29ed-4950-858c-81fe0d19a902
-keywords: ["device identification strings WDK , SD devices", "identification strings WDK device , SD devices", "identifiers WDK device , SD devices", "SD device IDs WDK device installations", "Secure Digital device IDs WDK device installations", "device IDs WDK device installations", "hardware IDs WDK device installations", "compatible IDs WDK device installations"]
+keywords:
+- device identification strings WDK , SD devices
+- identification strings WDK device , SD devices
+- identifiers WDK device , SD devices
+- SD device IDs WDK device installations
+- Secure Digital device IDs WDK device installations
+- device IDs WDK device installations
+- hardware IDs WDK device installations
+- compatible IDs WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifiers for Secure Digital (SD) Devices

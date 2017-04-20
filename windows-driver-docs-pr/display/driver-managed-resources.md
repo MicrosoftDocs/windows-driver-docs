@@ -2,7 +2,15 @@
 title: Driver-Managed Resources
 description: Driver-Managed Resources
 ms.assetid: f68b622a-247a-4a89-8d4c-c6a306b7fb3e
-keywords: ["texture management WDK Direct3D , driver-managed resources", "driver-managed resources WDK Direct3D", "manageable resources WDK Direct3D"]
+keywords:
+- texture management WDK Direct3D , driver-managed resources
+- driver-managed resources WDK Direct3D
+- manageable resources WDK Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver-Managed Resources

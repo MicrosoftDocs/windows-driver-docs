@@ -2,7 +2,14 @@
 title: Retrieving DirectX VA Devices
 description: Retrieving DirectX VA Devices
 ms.assetid: 7af82243-7cb3-4e66-a6ee-3f4220baa459
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , retrieving devices", "retrieving DirectX VA devices"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , retrieving devices
+- retrieving DirectX VA devices
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieving DirectX VA Devices

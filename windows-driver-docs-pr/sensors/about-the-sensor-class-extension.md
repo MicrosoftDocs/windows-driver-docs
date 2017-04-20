@@ -3,6 +3,11 @@ title: About the Sensor Class Extension
 author: windows-driver-content
 description: About the Sensor Class Extension
 ms.assetid: 4b55e5fe-2947-4511-ba2d-479d5fd83ebe
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About the Sensor Class Extension

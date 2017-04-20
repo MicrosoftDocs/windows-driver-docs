@@ -3,7 +3,18 @@ title: Loading and Unloading
 author: windows-driver-content
 description: Loading and Unloading
 ms.assetid: e7a4e405-5361-4217-a279-2b54a10ebce2
-keywords: ["filter manager WDK file system minifilter , loading/unloading drivers", "minifilter drivers WDK , driver loading", "file system minifilter drivers WDK , driver loading", "driver loading WDK file system", "loading drivers WDK file system", "unloading drivers"]
+keywords:
+- filter manager WDK file system minifilter , loading/unloading drivers
+- minifilter drivers WDK , driver loading
+- file system minifilter drivers WDK , driver loading
+- driver loading WDK file system
+- loading drivers WDK file system
+- unloading drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Loading and Unloading

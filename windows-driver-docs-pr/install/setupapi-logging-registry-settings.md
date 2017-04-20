@@ -2,7 +2,17 @@
 title: SetupAPI Logging Registry Settings
 description: SetupAPI Logging Registry Settings
 ms.assetid: 24694bce-5941-479f-9e2d-f9c7577a4f6a
-keywords: ["SetupAPI logging WDK Windows Vista , registry settings", "registry WDK SetupAPI logging", "event levels WDK SetupAPI logging", "event categories WDK SetupAPI logging", "text logs WDK SetupAPI , registry entries"]
+keywords:
+- SetupAPI logging WDK Windows Vista , registry settings
+- registry WDK SetupAPI logging
+- event levels WDK SetupAPI logging
+- event categories WDK SetupAPI logging
+- text logs WDK SetupAPI , registry entries
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SetupAPI Logging Registry Settings

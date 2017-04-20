@@ -2,7 +2,18 @@
 title: Verifying the Signature of a Test-Signed Catalog File
 description: Verifying the Signature of a Test-Signed Catalog File
 ms.assetid: fa627f5b-977e-49ca-b099-358ed686eef7
-keywords: ["verifying test signatures", "checking test signatures", "catalog files WDK driver signing , verifying signatures", "test signing catalog files WDK", "validating test certificates WDK", "test signing driver packages WDK , catalog files"]
+keywords:
+- verifying test signatures
+- checking test signatures
+- catalog files WDK driver signing , verifying signatures
+- test signing catalog files WDK
+- validating test certificates WDK
+- test signing driver packages WDK , catalog files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Verifying the Signature of a Test-Signed Catalog File

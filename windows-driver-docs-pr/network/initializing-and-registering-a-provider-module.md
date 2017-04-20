@@ -2,7 +2,17 @@
 title: Initializing and Registering a Provider Module
 description: Initializing and Registering a Provider Module
 ms.assetid: 967271ce-e4f5-45ce-9249-746d2fe698c1
-keywords: ["provider modules WDK Network Module Registrar , initializing", "provider modules WDK Network Module Registrar , registering", "registering provider modules", "initializing provider modules", "NmrRegisterProvider"]
+keywords:
+- provider modules WDK Network Module Registrar , initializing
+- provider modules WDK Network Module Registrar , registering
+- registering provider modules
+- initializing provider modules
+- NmrRegisterProvider
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing and Registering a Provider Module

@@ -3,7 +3,16 @@ title: Master Clocks
 author: windows-driver-content
 description: Master Clocks
 ms.assetid: bdd228c1-a15f-4c08-8991-299a3f2e1ee8
-keywords: ["master clocks WDK kernel streaming", "synchronization WDK kernel streaming", "KSPROPERTY_STREAM_MASTERCLOCK", "physical time WDK kernel streaming"]
+keywords:
+- master clocks WDK kernel streaming
+- synchronization WDK kernel streaming
+- KSPROPERTY_STREAM_MASTERCLOCK
+- physical time WDK kernel streaming
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Master Clocks

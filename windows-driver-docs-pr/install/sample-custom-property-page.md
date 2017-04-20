@@ -2,6 +2,11 @@
 title: Sample Custom Property Page
 description: Sample Custom Property Page
 ms.assetid: 96dd5f08-1543-4e13-9344-767cd9e6df78
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Custom Property Page

@@ -2,7 +2,15 @@
 title: Maintaining and Reporting Chimney-Specific Statistics
 description: Maintaining and Reporting Chimney-Specific Statistics
 ms.assetid: b50b70e4-70a7-4c4e-860a-af70dab01d38
-keywords: ["TCP chimney offload WDK networking , statistics", "chimney offload WDK networking , statistics", "statistics WDK TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , statistics
+- chimney offload WDK networking , statistics
+- statistics WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Maintaining and Reporting Chimney-Specific Statistics

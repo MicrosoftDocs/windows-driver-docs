@@ -3,7 +3,14 @@ title: Defining Automation Tables
 author: windows-driver-content
 description: Defining Automation Tables
 ms.assetid: 1c0dace6-b618-4705-bf5d-65457d14c072
-keywords: ["BDA minidrivers WDK AVStream , automation tables", "automation tables WDK AVStream"]
+keywords:
+- BDA minidrivers WDK AVStream , automation tables
+- automation tables WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining Automation Tables

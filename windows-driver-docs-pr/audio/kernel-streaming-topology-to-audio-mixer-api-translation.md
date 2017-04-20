@@ -2,7 +2,24 @@
 title: Kernel Streaming Topology to Audio Mixer API Translation
 description: Kernel Streaming Topology to Audio Mixer API Translation
 ms.assetid: ee89dc67-c9f3-41cd-8a09-0c46d636fe64
-keywords: ["mixer API WDK audio", "kernel streaming WDK audio", "audio mixer lines WDK audio", "source mixer lines WDK audio", "destination mixer lines WDK audio", "translating KS topology to mixer lines WDK audio", "mixer lines WDK audio", "KS stream mixing WDK audio", "KS topology WDK audio", "sink pins WDK audio", "source pins WDK audio", "KS pins WDK audio , translating"]
+keywords:
+- mixer API WDK audio
+- kernel streaming WDK audio
+- audio mixer lines WDK audio
+- source mixer lines WDK audio
+- destination mixer lines WDK audio
+- translating KS topology to mixer lines WDK audio
+- mixer lines WDK audio
+- KS stream mixing WDK audio
+- KS topology WDK audio
+- sink pins WDK audio
+- source pins WDK audio
+- KS pins WDK audio , translating
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel Streaming Topology to Audio Mixer API Translation

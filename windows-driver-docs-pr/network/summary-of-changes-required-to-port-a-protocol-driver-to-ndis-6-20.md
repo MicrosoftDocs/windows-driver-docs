@@ -2,7 +2,16 @@
 title: Summary of changes to port a protocol driver to NDIS 6.20
 description: Summary of Changes Required to Port a Protocol Driver to NDIS 6.20
 ms.assetid: d47b29a5-3385-4023-b94c-5cfbc225f48a
-keywords: ["NDIS 6.20 WDK , porting protocol drivers", "porting protocol drivers to NDIS 6.20 WDK", "protocol drivers WDK", "protocol drivers WDK , porting to NDIS 6.20"]
+keywords:
+- NDIS 6.20 WDK , porting protocol drivers
+- porting protocol drivers to NDIS 6.20 WDK
+- protocol drivers WDK
+- protocol drivers WDK , porting to NDIS 6.20
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Summary of Changes Required to Port a Protocol Driver to NDIS 6.20

@@ -3,7 +3,14 @@ title: Design Miniport Driver Callback Routine to Handle WMI Class with Data Fie
 author: windows-driver-content
 description: Designing a Miniport Driver Callback Routine that Handles WMI Classes with Data Fields
 ms.assetid: 6e08f9c1-e541-4e5f-8c99-f81d5793cc21
-keywords: ["WMI SRBs WDK storage , designing callback routines", "callback routines WDK WMI SRBs"]
+keywords:
+- WMI SRBs WDK storage , designing callback routines
+- callback routines WDK WMI SRBs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Designing a Miniport Driver Callback Routine that Handles WMI Classes with Data Fields

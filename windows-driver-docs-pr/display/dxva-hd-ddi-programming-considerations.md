@@ -2,7 +2,16 @@
 title: DXVA-HD DDI Programming Considerations
 description: DXVA-HD DDI Programming Considerations
 ms.assetid: 84576a8d-67e1-480a-9323-ef34b0900d22
-keywords: ["DXVA-HD DDI WDK Windows 7 display , programming considerations", "DXVA-HD DDI WDK Server 2008 R2 display , programming considerations", "high-definition video WDK Windows 7 display , DXVA-HD DDI, programming considerations", "high-definition video WDK Server 2008 R2 display , DXVA-HD DDI, programming considerations"]
+keywords:
+- DXVA-HD DDI WDK Windows 7 display , programming considerations
+- DXVA-HD DDI WDK Server 2008 R2 display , programming considerations
+- high-definition video WDK Windows 7 display , DXVA-HD DDI, programming considerations
+- high-definition video WDK Server 2008 R2 display , DXVA-HD DDI, programming considerations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DXVA-HD DDI Programming Considerations

@@ -3,7 +3,22 @@ title: Diagnostics and Debugging
 author: windows-driver-content
 description: Diagnostics and Debugging
 ms.assetid: 6c5c1b4a-338d-4550-903d-c6905ce743f9
-keywords: ["RDBSS WDK file systems , diagnostics", "Redirected Drive Buffering Subsystem WDK file systems , diagnostics", "diagnostics WDK RDBSS", "debugging drivers WDK RDBSS", "driver debugging WDK RDBSS", "RDBSS WDK file systems , debugging", "Redirected Drive Buffering Subsystem WDK file systems , debugging", "dereference tracking WDK RDBSS", "reference tracking WDK RDBSS", "assert routine WDK RDBSS"]
+keywords:
+- RDBSS WDK file systems , diagnostics
+- Redirected Drive Buffering Subsystem WDK file systems , diagnostics
+- diagnostics WDK RDBSS
+- debugging drivers WDK RDBSS
+- driver debugging WDK RDBSS
+- RDBSS WDK file systems , debugging
+- Redirected Drive Buffering Subsystem WDK file systems , debugging
+- dereference tracking WDK RDBSS
+- reference tracking WDK RDBSS
+- assert routine WDK RDBSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Diagnostics and Debugging

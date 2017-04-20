@@ -2,7 +2,20 @@
 title: SetupAPI
 description: SetupAPI
 ms.assetid: aa12ec50-2842-4ddd-9fc5-84436d69ea7a
-keywords: ["SetupAPI WDK device installations , functions", "SetupAPI functions WDK , about SetupAPI functions", "SetupAPI functions WDK", "Device setup WDK device installations , SetupAPI", "device installations WDK , SetupAPI", "installing devices WDK , SetupAPI", "functions WDK SetupAPI", "device installations WDK , SetupAPI"]
+keywords:
+- SetupAPI WDK device installations , functions
+- SetupAPI functions WDK , about SetupAPI functions
+- SetupAPI functions WDK
+- Device setup WDK device installations , SetupAPI
+- device installations WDK , SetupAPI
+- installing devices WDK , SetupAPI
+- functions WDK SetupAPI
+- device installations WDK , SetupAPI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SetupAPI

@@ -2,7 +2,15 @@
 title: Controlling Driver Verifier
 description: Controlling Driver Verifier
 ms.assetid: c829023c-725a-4e55-9844-5cdb6ef222e0
-keywords: ["Driver Verifier WDK , controlling", "Driver Verifier Manager", "Verifier utility"]
+keywords:
+- Driver Verifier WDK , controlling
+- Driver Verifier Manager
+- Verifier utility
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Driver Verifier

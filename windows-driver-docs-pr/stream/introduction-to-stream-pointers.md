@@ -3,7 +3,18 @@ title: Introduction to Stream Pointers
 author: windows-driver-content
 description: Introduction to Stream Pointers
 ms.assetid: 2682b145-5148-4301-b382-9811bb5e8fa6
-keywords: ["stream pointers WDK AVStream , about stream pointers", "advancing stream pointers WDK AVStream", "stream pointers WDK AVStream , advancing", "frame reference counts WDK AVStream", "reference counts WDK stream pointers", "counting references WDK stream pointers"]
+keywords:
+- stream pointers WDK AVStream , about stream pointers
+- advancing stream pointers WDK AVStream
+- stream pointers WDK AVStream , advancing
+- frame reference counts WDK AVStream
+- reference counts WDK stream pointers
+- counting references WDK stream pointers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Stream Pointers

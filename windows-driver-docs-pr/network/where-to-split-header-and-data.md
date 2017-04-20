@@ -2,7 +2,14 @@
 title: Where to Split Header and Data
 description: Where to Split Header and Data
 ms.assetid: e302fcc1-5088-4f64-b454-5f20c69c0626
-keywords: ["header-data split WDK , where to split", "Ethernet frame splitting WDK networking , where to split"]
+keywords:
+- header-data split WDK , where to split
+- Ethernet frame splitting WDK networking , where to split
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Where to Split Header and Data

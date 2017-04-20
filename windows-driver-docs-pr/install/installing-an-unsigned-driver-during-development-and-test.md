@@ -2,7 +2,21 @@
 title: Installing an Unsigned Driver during Development and Test
 description: Installing an Unsigned Driver during Development and Test
 ms.assetid: b7b08d5a-40cf-498f-8645-6b02d803f62f
-keywords: ["driver signing WDK , unsigned drivers", "signing drivers WDK , unsigned drivers", "digital signatures WDK , unsigned drivers", "signatures WDK , unsigned drivers", "test signing drivers WDK , unsigned drivers", "unsigned driver installations WDK driver signing", "kernel debuggers WDK driver signing", "kernel-mode driver signing WDK", "F8 key WDK drvier signing"]
+keywords:
+- driver signing WDK , unsigned drivers
+- signing drivers WDK , unsigned drivers
+- digital signatures WDK , unsigned drivers
+- signatures WDK , unsigned drivers
+- test signing drivers WDK , unsigned drivers
+- unsigned driver installations WDK driver signing
+- kernel debuggers WDK driver signing
+- kernel-mode driver signing WDK
+- F8 key WDK drvier signing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing an Unsigned Driver during Development and Test

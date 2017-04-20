@@ -3,7 +3,15 @@ title: Registry Settings for a Plug and Play Serial Device
 author: windows-driver-content
 description: Registry Settings for a Plug and Play Serial Device
 ms.assetid: 57bd090a-20fe-41c6-b730-0479f6ae0982
-keywords: ["Serial driver WDK , Plug and Play devices", "Plug and Play serial devices WDK", "serial devices WDK , Plug and Play"]
+keywords:
+- Serial driver WDK , Plug and Play devices
+- Plug and Play serial devices WDK
+- serial devices WDK , Plug and Play
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Settings for a Plug and Play Serial Device

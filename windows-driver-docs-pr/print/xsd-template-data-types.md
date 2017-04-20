@@ -3,7 +3,21 @@ title: XSD Template Data Types
 author: windows-driver-content
 description: XSD Template Data Types
 ms.assetid: 96d3a75a-fa15-47bb-8331-e3994d25c42d
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "XSD_DEFINED data type WDK GDL", "ArrayLabel directive WDK GDL", "XMLDataType directive WDK GDL", "XSDTypeDefinition directive WDK GDL", "ComplexType directive WDK GDL", "parser WDK GDL , escaping special XML characters", "escaping special XML characters WDK GDL"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , primitive
+- XSD_DEFINED data type WDK GDL
+- ArrayLabel directive WDK GDL
+- XMLDataType directive WDK GDL
+- XSDTypeDefinition directive WDK GDL
+- ComplexType directive WDK GDL
+- parser WDK GDL , escaping special XML characters
+- escaping special XML characters WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XSD Template Data Types

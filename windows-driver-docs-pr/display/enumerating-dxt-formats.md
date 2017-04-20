@@ -2,7 +2,19 @@
 title: Enumerating DXT Formats
 description: Enumerating DXT Formats
 ms.assetid: 77fc961f-1b94-43c1-b238-86f7d8e96835
-keywords: ["drawing compressed textures WDK DirectDraw , enumerating DXT formats", "DirectDraw compressed textures WDK Windows 2000 display , enumerating DXT formats", "compressed texture surfaces WDK DirectDraw , enumerating DXT formats", "surfaces WDK DirectDraw , compressed textures", "textures WDK DirectDraw , compressed", "enumerating DXT formats WDK DirectDraw", "DXT formats WDK DirectDraw"]
+keywords:
+- drawing compressed textures WDK DirectDraw , enumerating DXT formats
+- DirectDraw compressed textures WDK Windows 2000 display , enumerating DXT formats
+- compressed texture surfaces WDK DirectDraw , enumerating DXT formats
+- surfaces WDK DirectDraw , compressed textures
+- textures WDK DirectDraw , compressed
+- enumerating DXT formats WDK DirectDraw
+- DXT formats WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating DXT Formats

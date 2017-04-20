@@ -2,7 +2,25 @@
 title: Progressive Scan Monitors and Interleaved Data
 description: Progressive Scan Monitors and Interleaved Data
 ms.assetid: 324d8b1f-5b7d-46b6-854a-e93b10db24e5
-keywords: ["interlaced video WDK video port extensions", "DirectX VPE support WDK DirectDraw , interlaced video", "drawing VPEs WDK DirectDraw , interlaced video", "DirectDraw VPEs WDK Windows 2000 display , interlaced video", "video port extensions WDK DirectDraw , interlaced video", "VPEs WDK DirectDraw , interlaced video", "DirectX VPE support WDK DirectDraw , proscan monitors", "drawing VPEs WDK DirectDraw , proscan monitors", "DirectDraw VPEs WDK Windows 2000 display , proscan monitors", "video port extensions WDK DirectDraw , proscan monitors", "VPEs WDK DirectDraw , proscan monitors", "proscan monitors WDK video port extensions", "progressive scan monitors WDK video port extensions"]
+keywords:
+- interlaced video WDK video port extensions
+- DirectX VPE support WDK DirectDraw , interlaced video
+- drawing VPEs WDK DirectDraw , interlaced video
+- DirectDraw VPEs WDK Windows 2000 display , interlaced video
+- video port extensions WDK DirectDraw , interlaced video
+- VPEs WDK DirectDraw , interlaced video
+- DirectX VPE support WDK DirectDraw , proscan monitors
+- drawing VPEs WDK DirectDraw , proscan monitors
+- DirectDraw VPEs WDK Windows 2000 display , proscan monitors
+- video port extensions WDK DirectDraw , proscan monitors
+- VPEs WDK DirectDraw , proscan monitors
+- proscan monitors WDK video port extensions
+- progressive scan monitors WDK video port extensions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Progressive Scan Monitors and Interleaved Data

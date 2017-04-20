@@ -2,7 +2,17 @@
 title: Installing a NetDMA Provider Driver
 description: Installing a NetDMA Provider Driver
 ms.assetid: 05ad6b7b-0f15-43a8-aee6-34e021ec35c4
-keywords: ["memory-to-memory data transfers WDK NetDMA , installing provider drivers", "data transfers WDK NetDMA , installing provider drivers", "transferring data WDK NetDMA , installing provider drivers", "NetDMA WDK networking , installing provider drivers", "NetDMA p"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , installing provider drivers
+- data transfers WDK NetDMA , installing provider drivers
+- transferring data WDK NetDMA , installing provider drivers
+- NetDMA WDK networking , installing provider drivers
+- NetDMA p
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a NetDMA Provider Driver

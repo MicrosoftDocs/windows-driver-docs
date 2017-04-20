@@ -2,6 +2,11 @@
 title: Data Out Endpoint Descriptor
 description: Data Out Endpoint Descriptor
 ms.assetid: 59a001c8-3723-4549-80ed-28ea8901dd87
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Out Endpoint Descriptor

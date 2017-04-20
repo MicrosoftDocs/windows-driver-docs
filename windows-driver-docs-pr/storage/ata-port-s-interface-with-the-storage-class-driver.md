@@ -3,7 +3,14 @@ title: ATA Port's Interface with the Storage Class Driver
 author: windows-driver-content
 description: ATA Port's Interface with the Storage Class Driver
 ms.assetid: 6b22bbb1-f14e-48d9-a00c-c7eae79a078f
-keywords: ["ATA Port drivers WDK , storage class drivers", "storage class drivers WDK , ATA Port drivers"]
+keywords:
+- ATA Port drivers WDK , storage class drivers
+- storage class drivers WDK , ATA Port drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ATA Port's Interface with the Storage Class Driver

@@ -2,7 +2,16 @@
 title: Example 1 Basic Start Command
 description: Example 1 Basic Start Command
 ms.assetid: be5abbf0-727d-430b-a427-66cc61f3445c
-keywords: ["trace sessions WDK , starting", "start command", "-start command", "starting trace sessions"]
+keywords:
+- trace sessions WDK , starting
+- start command
+- -start command
+- starting trace sessions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 1: Basic Start Command

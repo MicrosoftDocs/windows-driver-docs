@@ -2,7 +2,19 @@
 title: Using the TraceView Window
 description: Using the TraceView Window
 ms.assetid: 398cdbb7-d540-4348-91b0-59af5f656b6f
-keywords: ["TraceView WDK , window", "trace sessions WDK , displaying", "displaying trace sessions", "trace logs WDK TraceView , displaying", "TraceView WDK , displaying logs", "displaying trace logs", "log files WDK TraceView , displaying"]
+keywords:
+- TraceView WDK , window
+- trace sessions WDK , displaying
+- displaying trace sessions
+- trace logs WDK TraceView , displaying
+- TraceView WDK , displaying logs
+- displaying trace logs
+- log files WDK TraceView , displaying
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the TraceView Window

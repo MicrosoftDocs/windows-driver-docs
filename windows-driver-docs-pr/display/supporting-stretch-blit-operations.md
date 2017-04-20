@@ -2,7 +2,14 @@
 title: Supporting Stretch Blit Operations
 description: Supporting Stretch Blit Operations
 ms.assetid: 1d279e56-41fd-4189-84d2-858e51db281d
-keywords: ["blit stretch operations WDK DirectX 9.0", "stretch blit operations WDK DirectX 9.0"]
+keywords:
+- blit stretch operations WDK DirectX 9.0
+- stretch blit operations WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Stretch Blit Operations

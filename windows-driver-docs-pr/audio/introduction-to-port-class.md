@@ -2,7 +2,24 @@
 title: Introduction to Port Class
 description: Introduction to Port Class
 ms.assetid: 5f986e0c-d021-4dee-85d3-ad69a3708dd8
-keywords: ["audio miniport drivers WDK , Port Class", "miniport drivers WDK audio , Port Class", "port class drivers WDK audio", "PortCls WDK audio , miniport drivers", "port class adapter drivers WDK audio", "adapter drivers WDK audio , miniport drivers", "port drivers WDK audio , miniport drivers", "Port Class library WDK audio", "port drivers WDK audio , Port Class", "Port Class audio adapters WDK", "port drivers WDK audio", "PortCls WDK audio"]
+keywords:
+- audio miniport drivers WDK , Port Class
+- miniport drivers WDK audio , Port Class
+- port class drivers WDK audio
+- PortCls WDK audio , miniport drivers
+- port class adapter drivers WDK audio
+- adapter drivers WDK audio , miniport drivers
+- port drivers WDK audio , miniport drivers
+- Port Class library WDK audio
+- port drivers WDK audio , Port Class
+- Port Class audio adapters WDK
+- port drivers WDK audio
+- PortCls WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Port Class

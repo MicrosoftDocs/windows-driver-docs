@@ -2,6 +2,11 @@
 title: Provisioning for hotspot authentication
 description: Provisioning for hotspot authentication
 ms.assetid: bfb4e1ec-9887-4b25-bfcc-be642b1a0101
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Provisioning for hotspot authentication

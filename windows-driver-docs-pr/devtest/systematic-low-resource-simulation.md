@@ -2,6 +2,11 @@
 title: Systematic low resources simulation
 description: The Systematic low resources simulation option injects resource failures in kernel mode drivers.
 ms.assetid: A8351715-8407-4FEF-9050-2F1F2E7FC2FD
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Systematic low resources simulation

@@ -2,6 +2,11 @@
 title: MB Service Detection and Activation
 description: MB Service Detection and Activation
 ms.assetid: 7c53528b-722d-44a1-9eac-ee1fe89f21f3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB Service Detection and Activation

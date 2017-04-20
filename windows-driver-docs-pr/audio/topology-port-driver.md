@@ -2,7 +2,16 @@
 title: Topology Port Driver
 description: Topology Port Driver
 ms.assetid: f671f557-552e-4575-babf-869c8c0b8f08
-keywords: ["Topology port driver WDK audio", "PortCls WDK audio , port drivers", "audio miniport drivers WDK , port drivers", "miniport drivers WDK audio , port drivers"]
+keywords:
+- Topology port driver WDK audio
+- PortCls WDK audio , port drivers
+- audio miniport drivers WDK , port drivers
+- miniport drivers WDK audio , port drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Topology Port Driver

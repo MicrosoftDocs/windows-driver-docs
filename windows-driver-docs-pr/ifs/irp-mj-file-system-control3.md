@@ -3,7 +3,17 @@ title: IRP_MJ_FILE_SYSTEM_CONTROL
 author: windows-driver-content
 description: IRP_MJ_FILE_SYSTEM_CONTROL
 ms.assetid: 38b88379-c007-4e88-a6d9-5aacd6bdefd3
-keywords: ["IRP_MJ_FILE_SYSTEM_CONTROL", "security WDK file systems , adding security checks", "security checks WDK file systems , IRP_MJ_FILE_SYSTEM_CONTROL", "file system controls WDK security", "set file information processing WDK file systems"]
+keywords:
+- IRP_MJ_FILE_SYSTEM_CONTROL
+- security WDK file systems , adding security checks
+- security checks WDK file systems , IRP_MJ_FILE_SYSTEM_CONTROL
+- file system controls WDK security
+- set file information processing WDK file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IRP_MJ_FILE_SYSTEM_CONTROL

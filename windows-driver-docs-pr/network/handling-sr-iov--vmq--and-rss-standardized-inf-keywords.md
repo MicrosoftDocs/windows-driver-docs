@@ -2,6 +2,11 @@
 title: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
 description: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
 ms.assetid: EF556563-4097-4388-A563-29FC891AC626
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling SR-IOV, VMQ, and RSS Standardized INF Keywords

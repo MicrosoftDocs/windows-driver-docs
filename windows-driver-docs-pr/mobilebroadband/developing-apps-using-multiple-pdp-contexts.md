@@ -2,6 +2,11 @@
 title: Developing apps using multiple PDP contexts
 description: Developing apps using multiple PDP contexts
 ms.assetid: 6a977a69-397d-4922-890d-1810dd54dff4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developing apps using multiple PDP contexts

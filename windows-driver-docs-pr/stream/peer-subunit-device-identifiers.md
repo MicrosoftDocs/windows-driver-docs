@@ -3,7 +3,20 @@ title: Peer Subunit Device Identifiers
 author: windows-driver-content
 description: Peer Subunit Device Identifiers
 ms.assetid: f33c554b-77a7-4879-875e-12210b8a553f
-keywords: ["AV/C WDK , identifiers", "identifiers WDK AV/C", "device IDs WDK AV/C", "Avc.sys function driver WDK , identifiers", "peer subunit device identifiers WDK AV/C", "subunit support WDK AV/C", "hardware IDs WDK AV/C", "compatible IDs WDK AV/C"]
+keywords:
+- AV/C WDK , identifiers
+- identifiers WDK AV/C
+- device IDs WDK AV/C
+- Avc.sys function driver WDK , identifiers
+- peer subunit device identifiers WDK AV/C
+- subunit support WDK AV/C
+- hardware IDs WDK AV/C
+- compatible IDs WDK AV/C
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Peer Subunit Device Identifiers

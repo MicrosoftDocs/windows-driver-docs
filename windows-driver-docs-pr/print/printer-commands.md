@@ -3,7 +3,18 @@ title: Printer Commands
 author: windows-driver-content
 description: Printer Commands
 ms.assetid: 4f47ae57-cfca-4670-823e-526e2f40de82
-keywords: ["Unidrv, commands", "GPD files WDK Unidrv , printer commands", "commands WDK Unidrv", "printer commands WDK Unidrv", "printer commands WDK Unidrv , about printer commands", "Unidrv WDK print"]
+keywords:
+- Unidrv, commands
+- GPD files WDK Unidrv , printer commands
+- commands WDK Unidrv
+- printer commands WDK Unidrv
+- printer commands WDK Unidrv , about printer commands
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Commands

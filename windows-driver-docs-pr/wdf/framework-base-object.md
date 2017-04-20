@@ -3,7 +3,16 @@ title: Framework Base Object
 author: windows-driver-content
 description: Framework Base Object
 ms.assetid: 9d400192-faf0-4d8f-849b-6b955105e21a
-keywords: ["UMDF objects WDK , base objects", "framework objects WDK UMDF , base objects", "base objects WDK UMDF", "IWDFObject"]
+keywords:
+- UMDF objects WDK , base objects
+- framework objects WDK UMDF , base objects
+- base objects WDK UMDF
+- IWDFObject
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework Base Object

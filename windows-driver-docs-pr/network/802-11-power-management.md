@@ -2,7 +2,17 @@
 title: 802.11 Power Management
 description: 802.11 Power Management
 ms.assetid: 4c766f9a-b0cf-46e9-a9ad-2fd2f5680562
-keywords: ["power management WDK Native 802.11 miniport , settings", "power save polling mode WDK Native 802.11 miniport", "PSP mode WDK Native 802.11 miniport", "constantly awake mode WDK Native 802.11 miniport", "CAM mode WDK Native 802.11 miniport"]
+keywords:
+- power management WDK Native 802.11 miniport , settings
+- power save polling mode WDK Native 802.11 miniport
+- PSP mode WDK Native 802.11 miniport
+- constantly awake mode WDK Native 802.11 miniport
+- CAM mode WDK Native 802.11 miniport
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 Power Management

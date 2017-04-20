@@ -2,7 +2,14 @@
 title: Processing Subrectangles
 description: Processing Subrectangles
 ms.assetid: d00803c0-98e2-4101-bcfc-ef11fea07962
-keywords: ["deinterlacing WDK DirectX VA , subrectangular processing", "subrectangular processing WDK DirectX VA"]
+keywords:
+- deinterlacing WDK DirectX VA , subrectangular processing
+- subrectangular processing WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Subrectangles

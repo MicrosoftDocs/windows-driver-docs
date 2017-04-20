@@ -2,7 +2,18 @@
 title: Mapping the Deinterlace DDI to DirectDraw and DirectX VA
 description: Mapping the Deinterlace DDI to DirectDraw and DirectX VA
 ms.assetid: a060265f-e1a2-416c-8533-6971cc9e2156
-keywords: ["deinterlacing WDK DirectX VA , mapping deinterlacing DDI", "mapping deinterlacing DDI", "container methods WDK DirectX VA", "device methods WDK DirectX VA", "motion compensation WDK DirectX VA", "callbacks WDK DirectX VA"]
+keywords:
+- deinterlacing WDK DirectX VA , mapping deinterlacing DDI
+- mapping deinterlacing DDI
+- container methods WDK DirectX VA
+- device methods WDK DirectX VA
+- motion compensation WDK DirectX VA
+- callbacks WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping the Deinterlace DDI to DirectDraw and DirectX VA

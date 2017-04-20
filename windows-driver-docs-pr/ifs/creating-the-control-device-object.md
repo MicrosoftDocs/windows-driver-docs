@@ -3,7 +3,14 @@ title: Creating the Control Device Object
 author: windows-driver-content
 description: Creating the Control Device Object
 ms.assetid: 9f89fd24-59b8-4529-b151-4e91e6334173
-keywords: ["control device objects WDK file system", "CDOs WDK file system"]
+keywords:
+- control device objects WDK file system
+- CDOs WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating the Control Device Object

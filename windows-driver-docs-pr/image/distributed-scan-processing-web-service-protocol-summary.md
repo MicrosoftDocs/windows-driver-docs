@@ -3,6 +3,11 @@ title: Distributed Scan Processing Web Service Protocol Summary
 author: windows-driver-content
 description: Distributed Scan Processing Web Service Protocol Summary
 ms.assetid: c800383b-77d2-42cc-9fc5-c96ea0c0183f
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Distributed Scan Processing Web Service Protocol Summary

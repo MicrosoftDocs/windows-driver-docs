@@ -2,7 +2,14 @@
 title: Native 802.11 IHV Extensions DLL Overview
 description: Native 802.11 IHV Extensions DLL Overview
 ms.assetid: 6a3d3e62-41b3-4ae2-a379-273431a36bb1
-keywords: ["IHV Extensions DLL WDK Native 802.11 , about Native 802.11 IHV Extensions DLL", "Native 802.11 IHV Extensions DLL WDK , about Native 802.11 IHV Extensions DLL"]
+keywords:
+- IHV Extensions DLL WDK Native 802.11 , about Native 802.11 IHV Extensions DLL
+- Native 802.11 IHV Extensions DLL WDK , about Native 802.11 IHV Extensions DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 IHV Extensions DLL Overview

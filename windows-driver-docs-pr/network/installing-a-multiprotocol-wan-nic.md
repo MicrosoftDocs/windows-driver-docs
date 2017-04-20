@@ -2,7 +2,16 @@
 title: Installing a Multiprotocol WAN NIC
 description: Installing a Multiprotocol WAN NIC
 ms.assetid: 7000040c-8a26-496d-ae26-580aace68160
-keywords: ["add-registry-sections WDK networking , multiprotocol WAN NIC", "multiprotocol WAN NIC WDK networking", "WAN NIC WDK networking", "NIC multiprotocol WAN WDK networking"]
+keywords:
+- add-registry-sections WDK networking , multiprotocol WAN NIC
+- multiprotocol WAN NIC WDK networking
+- WAN NIC WDK networking
+- NIC multiprotocol WAN WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Multiprotocol WAN NIC

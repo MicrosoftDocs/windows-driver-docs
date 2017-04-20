@@ -2,6 +2,11 @@
 title: General install section directives
 description: This is a general reminder that all references to out-of-box or production/retail binaries, services, regadd, or delreg sections that are normally part of a retail WHQL driver packages, are not listed in the Windows in-box driver packages.
 ms.assetid: 05B44945-158E-4A87-B7ED-D1DE1179493B
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General install section directives

@@ -2,7 +2,28 @@
 title: Examples of Audio Data Formats and Data Ranges
 description: Examples of Audio Data Formats and Data Ranges
 ms.assetid: f3f5d658-63a5-4420-97fa-e448e3aaea50
-keywords: ["data formats WDK audio", "formats WDK audio , data", "audio data formats WDK", "formats WDK audio , examples", "examples WDK audio", "data ranges WDK audio , examples", "range values WDK audio", "KS data ranges WDK audio", "audio data ranges WDK", "WDM audio data ranges WDK", "WDM audio data formats WDK", "KS data formats WDK audio", "stream formats WDK audio , examples", "KSDATAFORMAT structure", "KSDATARANGE structure", "data formats WDK audio , examples"]
+keywords:
+- data formats WDK audio
+- formats WDK audio , data
+- audio data formats WDK
+- formats WDK audio , examples
+- examples WDK audio
+- data ranges WDK audio , examples
+- range values WDK audio
+- KS data ranges WDK audio
+- audio data ranges WDK
+- WDM audio data ranges WDK
+- WDM audio data formats WDK
+- KS data formats WDK audio
+- stream formats WDK audio , examples
+- KSDATAFORMAT structure
+- KSDATARANGE structure
+- data formats WDK audio , examples
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Examples of Audio Data Formats and Data Ranges

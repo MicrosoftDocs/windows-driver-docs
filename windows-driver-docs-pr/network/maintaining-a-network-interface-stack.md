@@ -2,7 +2,16 @@
 title: Maintaining a Network Interface Stack
 description: Maintaining a Network Interface Stack
 ms.assetid: c51a2e5b-28ad-4e86-8b37-1491f85a17bb
-keywords: ["NDIS network interfaces WDK , stack maintenance", "network interfaces WDK , stack maintenance", "stacks WDK networking", "interface stack table WDK networking"]
+keywords:
+- NDIS network interfaces WDK , stack maintenance
+- network interfaces WDK , stack maintenance
+- stacks WDK networking
+- interface stack table WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Maintaining a Network Interface Stack

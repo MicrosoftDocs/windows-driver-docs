@@ -3,7 +3,16 @@ title: Customized Halftoning
 author: windows-driver-content
 description: Customized Halftoning
 ms.assetid: cc14ff92-743b-42ca-b70f-0df768762f01
-keywords: ["Unidrv, halftoning", "halftoning WDK Unidrv", "customized halftoning WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, halftoning
+- halftoning WDK Unidrv
+- customized halftoning WDK Unidrv
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customized Halftoning

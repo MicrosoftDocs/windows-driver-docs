@@ -2,13 +2,19 @@
 title: INF DelFiles Directive
 description: A DelFiles directive references an INF-writer-defined section elsewhere in the INF file, and causes that list of files to be deleted.
 ms.assetid: e163f88f-e0ab-41e7-97df-49853ec0836f
-keywords: ["INF DelFiles Directive Device and Driver Installation"]
+keywords:
+- INF DelFiles Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DelFiles Directive
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DelFiles Directive

@@ -2,7 +2,15 @@
 title: Propagating an Indication
 description: Propagating an Indication
 ms.assetid: df26503f-e717-41b8-b208-41e0193cd222
-keywords: ["intermediate drivers WDK TCP chimney offload , propagating indication", "indication propagation WDK TCP chimney offload", "propagating offloaded TCP connection indication"]
+keywords:
+- intermediate drivers WDK TCP chimney offload , propagating indication
+- indication propagation WDK TCP chimney offload
+- propagating offloaded TCP connection indication
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Propagating an Indication

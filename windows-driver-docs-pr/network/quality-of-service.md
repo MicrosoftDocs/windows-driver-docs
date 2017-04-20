@@ -2,7 +2,16 @@
 title: Quality of Service
 description: Quality of Service
 ms.assetid: e7a4413c-633b-4634-a647-c84b8c97cbea
-keywords: ["connection-oriented NDIS WDK , quality of service", "CoNDIS WDK networking , quality of service", "quality of service WDK CoNDIS", "QoS WDK CoNDIS"]
+keywords:
+- connection-oriented NDIS WDK , quality of service
+- CoNDIS WDK networking , quality of service
+- quality of service WDK CoNDIS
+- QoS WDK CoNDIS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Quality of Service

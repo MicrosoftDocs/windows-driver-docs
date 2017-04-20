@@ -3,6 +3,11 @@ title: Optional Root Item Properties for WIA Scanners
 author: windows-driver-content
 description: Optional Root Item Properties for WIA Scanners
 ms.assetid: e9e03575-4afc-4635-966a-864240990f68
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Optional Root Item Properties for WIA Scanners

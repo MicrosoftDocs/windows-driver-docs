@@ -3,7 +3,15 @@ title: Create a Stream
 author: windows-driver-content
 description: Create a Stream
 ms.assetid: 9984275f-7ead-4df2-aa98-a3b4e5e85ae0
-keywords: ["Avcstrm.sys streaming filter driver WDK , creating streams", "stream creation WDK AV/C streaming", "contexts WDK AV/C streaming"]
+keywords:
+- Avcstrm.sys streaming filter driver WDK , creating streams
+- stream creation WDK AV/C streaming
+- contexts WDK AV/C streaming
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create a Stream

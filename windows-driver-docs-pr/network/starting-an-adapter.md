@@ -2,7 +2,18 @@
 title: Starting an Adapter
 description: Starting an Adapter
 ms.assetid: ff2c8914-2fc2-4182-b47e-685571508b33
-keywords: ["miniport adapters WDK networking , starting", "adapters WDK networking , starting", "Paused state WDK networking", "Running state WDK networking", "MiniportRestart", "starting miniport adapters"]
+keywords:
+- miniport adapters WDK networking , starting
+- adapters WDK networking , starting
+- Paused state WDK networking
+- Running state WDK networking
+- MiniportRestart
+- starting miniport adapters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting an Adapter

@@ -3,7 +3,19 @@ title: Writing IRP Dispatch Routines
 author: windows-driver-content
 description: Writing IRP Dispatch Routines
 ms.assetid: 8ce88932-cba6-4261-a938-d38133c20355
-keywords: ["filter drivers WDK file system , IRP dispatch routines", "file system filter drivers WDK , IRP dispatch routines", "dispatch routines WDK file system", "IRP dispatch routines WDK file system", "writing IRP dispatch routines", "IRP dispatch routines WDK file system , about writing IRP dispatch routines", "IRPs WDK file system"]
+keywords:
+- filter drivers WDK file system , IRP dispatch routines
+- file system filter drivers WDK , IRP dispatch routines
+- dispatch routines WDK file system
+- IRP dispatch routines WDK file system
+- writing IRP dispatch routines
+- IRP dispatch routines WDK file system , about writing IRP dispatch routines
+- IRPs WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing IRP Dispatch Routines

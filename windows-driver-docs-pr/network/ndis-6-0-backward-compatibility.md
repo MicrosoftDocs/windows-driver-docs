@@ -2,7 +2,18 @@
 title: NDIS 6.0 Backward Compatibility
 description: NDIS 6.0 Backward Compatibility
 ms.assetid: d03fa7b2-06d4-44b1-8b3f-a366c21ddd63
-keywords: ["NDIS WDK , backward compatibility", "backward compatibility WDK networking", "compatibility WDK networking", "NDIS porting drivers WDK , backward compatibility", "porting drivers WDK networking , backward compatibility", "network driver porting WDK , backwar"]
+keywords:
+- NDIS WDK , backward compatibility
+- backward compatibility WDK networking
+- compatibility WDK networking
+- NDIS porting drivers WDK , backward compatibility
+- porting drivers WDK networking , backward compatibility
+- network driver porting WDK , backwar
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS 6.0 Backward Compatibility

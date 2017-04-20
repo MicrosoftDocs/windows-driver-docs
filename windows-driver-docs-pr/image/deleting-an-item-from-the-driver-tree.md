@@ -3,6 +3,11 @@ title: Deleting an Item from the Driver Tree
 author: windows-driver-content
 description: Deleting an Item from the Driver Tree
 ms.assetid: eea7565c-be15-4610-a1b4-16596d1daca2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting an Item from the Driver Tree

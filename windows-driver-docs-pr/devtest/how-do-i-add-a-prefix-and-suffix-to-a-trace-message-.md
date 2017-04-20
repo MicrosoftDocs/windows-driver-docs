@@ -2,6 +2,11 @@
 title: How do I add a prefix and suffix to a trace message
 description: How do I add a prefix and suffix to a trace message
 ms.assetid: d8cd0a90-d020-4b1e-bec1-7d920964169e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How do I add a prefix and suffix to a trace message?

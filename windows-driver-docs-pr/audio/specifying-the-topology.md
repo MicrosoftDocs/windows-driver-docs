@@ -2,7 +2,32 @@
 title: Specifying the Topology
 description: Specifying the Topology
 ms.assetid: 265cbd87-d40f-4ead-ba6e-a1cef51baf95
-keywords: ["WDM audio drivers WDK , topology", "audio drivers WDK , topology", "topology WDK audio", "KS topology WDK audio", "kernel streaming topology WDK audio", "PortCls WDK audio , topology", "port drivers WDK audio , topology", "Topology port driver WDK audio", "audio mixing topology WDK audio", "KS pins WDK audio , topology", "KS filters WDK audio , topology", "filters WDK audio , KS", "pins WDK audio , KS", "audio adapters WDK , topology", "bridge pins WDK audio", "KS properties WDK audio", "property requests WDK audio", "PCM wave output WDK audio", "S/PDIF pass-through WDK audio", "mixing audio WDK"]
+keywords:
+- WDM audio drivers WDK , topology
+- audio drivers WDK , topology
+- topology WDK audio
+- KS topology WDK audio
+- kernel streaming topology WDK audio
+- PortCls WDK audio , topology
+- port drivers WDK audio , topology
+- Topology port driver WDK audio
+- audio mixing topology WDK audio
+- KS pins WDK audio , topology
+- KS filters WDK audio , topology
+- filters WDK audio , KS
+- pins WDK audio , KS
+- audio adapters WDK , topology
+- bridge pins WDK audio
+- KS properties WDK audio
+- property requests WDK audio
+- PCM wave output WDK audio
+- S/PDIF pass-through WDK audio
+- mixing audio WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying the Topology

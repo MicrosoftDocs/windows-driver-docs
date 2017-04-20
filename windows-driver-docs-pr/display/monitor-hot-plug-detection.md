@@ -2,7 +2,24 @@
 title: Monitor Hot Plug Detection
 description: Monitor Hot Plug Detection
 ms.assetid: 170d2d5d-fd46-431d-9672-61fa048f7dd2
-keywords: ["video present networks WDK display , hot plug detection", "VidPN WDK display , hot plug detection", "video output connectors WDK video present networks", "HPD awareness WDK video present networks", "hot plug detection WDK video present networks", "unplugged detection WDK video present networks", "connected monitors WDK video present networks", "not connected monitors WDK video present networks", "unconnected monitors WDK video present networks", "portable computer video output WDK video present networks", "mobile computer video output WDK video present networks", "monitor hot plug detection WDK video present networks"]
+keywords:
+- video present networks WDK display , hot plug detection
+- VidPN WDK display , hot plug detection
+- video output connectors WDK video present networks
+- HPD awareness WDK video present networks
+- hot plug detection WDK video present networks
+- unplugged detection WDK video present networks
+- connected monitors WDK video present networks
+- not connected monitors WDK video present networks
+- unconnected monitors WDK video present networks
+- portable computer video output WDK video present networks
+- mobile computer video output WDK video present networks
+- monitor hot plug detection WDK video present networks
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Monitor Hot Plug Detection

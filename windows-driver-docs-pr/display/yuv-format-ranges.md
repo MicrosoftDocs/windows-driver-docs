@@ -2,7 +2,16 @@
 title: YUV format ranges in Windows 8.1
 ms.assetid: D76FFB8C-CA42-446E-826F-52982B1849E5
 description: 
-keywords: ["full-range YUV WDK display", "extended-range YUV WDK display", "studio luminance range YUV WDK display", "YUV formats and WMF support WDK display"]
+keywords:
+- full-range YUV WDK display
+- extended-range YUV WDK display
+- studio luminance range YUV WDK display
+- YUV formats and WMF support WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # YUV format ranges in Windows 8.1

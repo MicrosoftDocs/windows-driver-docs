@@ -3,7 +3,14 @@ title: Spooler Notification Terminology
 author: windows-driver-content
 description: Spooler Notification Terminology
 ms.assetid: 7d4888b1-cb5f-4095-9e1b-c330c04e4971
-keywords: ["spooler notification WDK print , terminology", "print spooler notification WDK , terminology"]
+keywords:
+- spooler notification WDK print , terminology
+- print spooler notification WDK , terminology
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Spooler Notification Terminology

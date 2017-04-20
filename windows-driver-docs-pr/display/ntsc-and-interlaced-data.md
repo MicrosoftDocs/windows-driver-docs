@@ -2,7 +2,22 @@
 title: NTSC and Interlaced Data
 description: NTSC and Interlaced Data
 ms.assetid: 216b6219-aeb8-4e8a-8ac4-cd4d25a93e13
-keywords: ["interlaced video WDK video port extensions", "DirectX VPE support WDK DirectDraw , interlaced video", "drawing VPEs WDK DirectDraw , interlaced video", "DirectDraw VPEs WDK Windows 2000 display , interlaced video", "video port extensions WDK DirectDraw , interlaced video", "VPEs WDK DirectDraw , interlaced video", "NTSC WDK video port extensions", "scan lines WDK video port extensions", "frames WDK video port extensions", "National Television Systems Committee WDK VPEs"]
+keywords:
+- interlaced video WDK video port extensions
+- DirectX VPE support WDK DirectDraw , interlaced video
+- drawing VPEs WDK DirectDraw , interlaced video
+- DirectDraw VPEs WDK Windows 2000 display , interlaced video
+- video port extensions WDK DirectDraw , interlaced video
+- VPEs WDK DirectDraw , interlaced video
+- NTSC WDK video port extensions
+- scan lines WDK video port extensions
+- frames WDK video port extensions
+- National Television Systems Committee WDK VPEs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NTSC and Interlaced Data

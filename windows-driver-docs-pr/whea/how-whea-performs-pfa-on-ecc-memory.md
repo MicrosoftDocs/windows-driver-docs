@@ -3,7 +3,18 @@ title: How WHEA Performs PFA on ECC Memory
 author: windows-driver-content
 description: How WHEA Performs PFA on ECC Memory
 ms.assetid: def94688-9ca6-4146-8d5b-4c3550d3d272
-keywords: ["predictive failure analysis (PFA) WDK WHEA , Error Correction Code memory", "PFA WDK WHEA , Error Correction Code memory", "Error Correction Code memory WDK WHEA", "Error Correction Code memory WDK WHEA , predictive failure analysis", "low-level hardware error handler WDK WHEA", "LLHEH WDK WHEA"]
+keywords:
+- predictive failure analysis (PFA) WDK WHEA , Error Correction Code memory
+- PFA WDK WHEA , Error Correction Code memory
+- Error Correction Code memory WDK WHEA
+- Error Correction Code memory WDK WHEA , predictive failure analysis
+- low-level hardware error handler WDK WHEA
+- LLHEH WDK WHEA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How WHEA Performs PFA on ECC Memory

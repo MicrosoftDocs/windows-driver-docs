@@ -2,6 +2,11 @@
 title: Present overhead improvements
 ms.assetid: 92B282D6-0D04-4352-AE03-E0A7A43711E7
 description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Present overhead improvements

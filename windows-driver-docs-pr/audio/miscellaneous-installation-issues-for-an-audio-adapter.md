@@ -2,7 +2,15 @@
 title: Miscellaneous Installation Issues for an Audio Adapter
 description: Miscellaneous Installation Issues for an Audio Adapter
 ms.assetid: fcfa9c41-7fad-4b22-9054-a1debb972580
-keywords: ["audio adapters WDK , installing", "adapter drivers WDK audio , installing", "Port Class audio adapters WDK , installing"]
+keywords:
+- audio adapters WDK , installing
+- adapter drivers WDK audio , installing
+- Port Class audio adapters WDK , installing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miscellaneous Installation Issues for an Audio Adapter

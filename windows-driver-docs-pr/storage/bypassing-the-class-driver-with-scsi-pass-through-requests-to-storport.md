@@ -3,6 +3,11 @@ title: Bypassing the Class Driver with SCSI Pass-Through Requests to Storport
 author: windows-driver-content
 description: Bypassing the Class Driver with SCSI Pass-Through Requests to Storport
 ms.assetid: 1162a1e7-a4f8-446f-8106-527f9b916382
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bypassing the Class Driver with SCSI Pass-Through Requests to Storport

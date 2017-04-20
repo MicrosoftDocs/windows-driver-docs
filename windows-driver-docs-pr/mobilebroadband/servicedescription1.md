@@ -2,6 +2,11 @@
 title: ServiceDescription1
 description: ServiceDescription1
 ms.assetid: 4451c429-3b89-47d6-ba21-ab30919e5ff8
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ServiceDescription1

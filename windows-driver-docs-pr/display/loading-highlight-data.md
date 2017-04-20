@@ -2,7 +2,16 @@
 title: Loading Highlight Data
 description: Loading Highlight Data
 ms.assetid: d893fdbe-847d-45a7-b2b2-62da505c8aeb
-keywords: ["alpha-blend data loading WDK DirectX VA", "blended pictures WDK DirectX VA , alpha-blend data loading", "highlighted rectangular area WDK DirectX VA", "rectangular highlighted area WDK DirectX VA"]
+keywords:
+- alpha-blend data loading WDK DirectX VA
+- blended pictures WDK DirectX VA , alpha-blend data loading
+- highlighted rectangular area WDK DirectX VA
+- rectangular highlighted area WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Loading Highlight Data

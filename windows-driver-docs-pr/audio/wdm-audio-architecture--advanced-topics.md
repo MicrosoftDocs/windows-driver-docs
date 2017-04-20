@@ -2,7 +2,16 @@
 title: WDM Audio Architecture Advanced Topics
 description: WDM Audio Architecture Advanced Topics
 ms.assetid: 647bfd8a-aebc-4eb2-9177-7c19114d835c
-keywords: ["WDM audio drivers WDK , architecture", "audio drivers WDK , architecture", "architecture WDK audio", "Windows Driver Model WDK audio"]
+keywords:
+- WDM audio drivers WDK , architecture
+- audio drivers WDK , architecture
+- architecture WDK audio
+- Windows Driver Model WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Audio Architecture: Advanced Topics

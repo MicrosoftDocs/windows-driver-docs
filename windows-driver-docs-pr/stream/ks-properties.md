@@ -3,7 +3,15 @@ title: KS Properties
 author: windows-driver-content
 description: KS Properties
 ms.assetid: a385929e-1934-4d88-aaf9-ff1ddbfd30f7
-keywords: ["kernel streaming WDK , properties", "KS properties WDK kernel streaming", "properties WDK kernel streaming"]
+keywords:
+- kernel streaming WDK , properties
+- KS properties WDK kernel streaming
+- properties WDK kernel streaming
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Properties

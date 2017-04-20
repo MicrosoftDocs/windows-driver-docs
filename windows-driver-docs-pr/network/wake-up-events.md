@@ -2,7 +2,15 @@
 title: Wake-Up Events
 description: Wake-Up Events
 ms.assetid: fd237adf-84fe-4e23-acce-1dfc7ff9c9d0
-keywords: ["wake-up events WDK Native 802.11", "wake-on-wireless LAN WDK Native 802.11 , wake-up events", "wake-up capabilities WDK networking , Native 802.11 wireless LAN"]
+keywords:
+- wake-up events WDK Native 802.11
+- wake-on-wireless LAN WDK Native 802.11 , wake-up events
+- wake-up capabilities WDK networking , Native 802.11 wireless LAN
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wake-Up Events

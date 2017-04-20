@@ -2,7 +2,15 @@
 title: Windows 2000 Video Miniport Driver Responsibilities
 description: Windows 2000 Video Miniport Driver Responsibilities
 ms.assetid: 55301260-af1b-4ef7-8f33-e0acbeb22039
-keywords: ["display driver model WDK Windows 2000 , responsibilities", "Windows 2000 display driver model WDK , responsibilities", "video miniport drivers WDK Windows 2000 , responsibilities"]
+keywords:
+- display driver model WDK Windows 2000 , responsibilities
+- Windows 2000 display driver model WDK , responsibilities
+- video miniport drivers WDK Windows 2000 , responsibilities
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows 2000 Video Miniport Driver Responsibilities

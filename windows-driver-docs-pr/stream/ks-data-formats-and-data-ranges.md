@@ -3,7 +3,24 @@ title: KS Data Formats and Data Ranges
 author: windows-driver-content
 description: KS Data Formats and Data Ranges
 ms.assetid: 44b55a5a-ec58-4c1e-b780-e20829fe3edf
-keywords: ["data formats WDK kernel streaming", "formats WDK kernel streaming", "ranges WDK kernel streaming", "data ranges WDK kernel streaming", "KS data formats WDK kernel streaming", "KS data ranges WDK kernel streaming", "KSDATARANGE", "KSDATAFORMAT", "kernel streaming WDK , data ranges", "KS WDK , data ranges", "kernel streaming WDK , data formats", "KS WDK , data formats"]
+keywords:
+- data formats WDK kernel streaming
+- formats WDK kernel streaming
+- ranges WDK kernel streaming
+- data ranges WDK kernel streaming
+- KS data formats WDK kernel streaming
+- KS data ranges WDK kernel streaming
+- KSDATARANGE
+- KSDATAFORMAT
+- kernel streaming WDK , data ranges
+- KS WDK , data ranges
+- kernel streaming WDK , data formats
+- KS WDK , data formats
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Data Formats and Data Ranges

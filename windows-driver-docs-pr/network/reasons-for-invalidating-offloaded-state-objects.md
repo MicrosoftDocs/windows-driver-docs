@@ -2,7 +2,13 @@
 title: Reasons for Invalidating Offloaded State Objects
 description: Reasons for Invalidating Offloaded State Objects
 ms.assetid: 5abcf094-d361-4724-8bb7-c34dd7b2769d
-keywords: ["invalidating offloaded state WDK TCP chimney offload , about invalidating offloaded state"]
+keywords:
+- invalidating offloaded state WDK TCP chimney offload , about invalidating offloaded state
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reasons for Invalidating Offloaded State Objects

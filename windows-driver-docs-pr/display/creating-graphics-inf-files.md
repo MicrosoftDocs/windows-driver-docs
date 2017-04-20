@@ -2,7 +2,19 @@
 title: Creating Graphics INF Files
 description: Creating Graphics INF Files
 ms.assetid: e56d4881-5ad2-41fc-a6fb-bc72c5106361
-keywords: ["display driver model WDK Windows 2000 , graphics", "Windows 2000 display driver model WDK , graphics", "video miniport drivers WDK Windows 2000 , graphics", "display drivers WDK Windows 2000 , graphics", "INF files WDK Windows 2000 display", "graphics INF files WDK Windows 2000 display", "geninf.exe"]
+keywords:
+- display driver model WDK Windows 2000 , graphics
+- Windows 2000 display driver model WDK , graphics
+- video miniport drivers WDK Windows 2000 , graphics
+- display drivers WDK Windows 2000 , graphics
+- INF files WDK Windows 2000 display
+- graphics INF files WDK Windows 2000 display
+- geninf.exe
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Graphics INF Files

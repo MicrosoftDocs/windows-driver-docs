@@ -2,7 +2,16 @@
 title: Registering for SAN NIC Notifications
 description: Registering for SAN NIC Notifications
 ms.assetid: 6a630e7c-3b1a-4f4a-b808-f6b4e2315a42
-keywords: ["NIC notifications WDK SANs", "proxy drivers WDK SANs , NIC notifications", "SAN proxy drivers WDK , NIC notifications", "registering NIC notifications"]
+keywords:
+- NIC notifications WDK SANs
+- proxy drivers WDK SANs , NIC notifications
+- SAN proxy drivers WDK , NIC notifications
+- registering NIC notifications
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering for SAN NIC Notifications

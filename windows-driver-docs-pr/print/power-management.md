@@ -3,7 +3,17 @@ title: Power Management
 author: windows-driver-content
 description: Power Management
 ms.assetid: b47ed463-2292-419a-af16-196382dbd3f1
-keywords: ["power management WDK printer", "critical shutdowns WDK printer", "shutdown power management WDK printer", "standby tests WDK printer", "hibernate tests WDK printer"]
+keywords:
+- power management WDK printer
+- critical shutdowns WDK printer
+- shutdown power management WDK printer
+- standby tests WDK printer
+- hibernate tests WDK printer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Management

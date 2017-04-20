@@ -2,6 +2,11 @@
 title: Driver Store
 description: Driver Store
 ms.assetid: 17abe3a4-0663-4b8b-8072-2171b4cedbe4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Store

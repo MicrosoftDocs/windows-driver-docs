@@ -2,7 +2,14 @@
 title: Exception Handling When Accessing User-Mode Memory
 description: Exception Handling When Accessing User-Mode Memory
 ms.assetid: 44ed69a0-da0e-4335-9128-a78a83ea80dd
-keywords: ["user-mode memory WDK Windows 2000 display", "user-mode memory WDK Windows 2000 display , exception handling"]
+keywords:
+- user-mode memory WDK Windows 2000 display
+- user-mode memory WDK Windows 2000 display , exception handling
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Exception Handling When Accessing User-Mode Memory

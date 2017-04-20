@@ -3,7 +3,15 @@ title: Differences in Changer Class Driver Versions
 author: windows-driver-content
 description: Differences in Changer Class Driver Versions
 ms.assetid: 4ae4d1b0-cf2f-4c81-b8ae-3a91fd479a89
-keywords: ["changer drivers WDK storage , class drivers", "storage changer drivers WDK , class drivers", "class drivers WDK storage , changer drivers"]
+keywords:
+- changer drivers WDK storage , class drivers
+- storage changer drivers WDK , class drivers
+- class drivers WDK storage , changer drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Differences in Changer Class Driver Versions

@@ -2,7 +2,14 @@
 title: Keywords That Can Be Edited
 description: Keywords That Can Be Edited
 ms.assetid: 88c3a285-941a-4c91-9e61-25c445d07344
-keywords: ["installation keywords WDK networking , editing", "editing installation keywords"]
+keywords:
+- installation keywords WDK networking , editing
+- editing installation keywords
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Keywords That Can Be Edited

@@ -2,6 +2,11 @@
 title: Authoring Tests in AXE
 description: Authoring Tests in AXE
 ms.assetid: B042FE1B-98E4-48ae-BE2C-15C71EC6640A
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Authoring Tests in AXE

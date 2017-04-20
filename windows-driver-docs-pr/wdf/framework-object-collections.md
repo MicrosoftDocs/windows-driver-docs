@@ -3,7 +3,16 @@ title: Framework Object Collections
 author: windows-driver-content
 description: Framework Object Collections
 ms.assetid: e3f29be6-ee4c-487a-8c85-18be8b6a5cdc
-keywords: ["framework objects WDK KMDF , collections", "collections WDK KMDF", "framework collection objects WDK KMDF", "object collections WDK KMDF"]
+keywords:
+- framework objects WDK KMDF , collections
+- collections WDK KMDF
+- framework collection objects WDK KMDF
+- object collections WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework Object Collections

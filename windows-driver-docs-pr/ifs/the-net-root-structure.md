@@ -3,7 +3,24 @@ title: The NET_ROOT Structure
 author: windows-driver-content
 description: The NET_ROOT Structure
 ms.assetid: f7846343-9af6-4b7f-9c8d-190abb524946
-keywords: ["net root structure WDK RDBSS", "network server share connection data WDK RDBSS", "NET_ROOT structure", "server share connection data WDK RDBSS", "root structure WDK RDBSS", "data structures WDK file systems", "RDBSS WDK file systems , connection and file structures", "Redirected Drive Buffering Subsystem WDK file systems , connection and file structures", "connection structures WDK RDBSS", "file structures WDK RDBSS", "structures WDK RDBSS", "connection information WDK RDBSS"]
+keywords:
+- net root structure WDK RDBSS
+- network server share connection data WDK RDBSS
+- NET_ROOT structure
+- server share connection data WDK RDBSS
+- root structure WDK RDBSS
+- data structures WDK file systems
+- RDBSS WDK file systems , connection and file structures
+- Redirected Drive Buffering Subsystem WDK file systems , connection and file structures
+- connection structures WDK RDBSS
+- file structures WDK RDBSS
+- structures WDK RDBSS
+- connection information WDK RDBSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The NET\_ROOT Structure

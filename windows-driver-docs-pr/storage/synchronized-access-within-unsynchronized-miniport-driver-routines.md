@@ -3,6 +3,11 @@ title: Synchronized Access within Unsynchronized Miniport Driver Routines
 author: windows-driver-content
 description: Synchronized Access within Unsynchronized Miniport Driver Routines
 ms.assetid: a1bc3bff-b109-4a52-8466-48a0be7611b7
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronized Access within Unsynchronized Miniport Driver Routines

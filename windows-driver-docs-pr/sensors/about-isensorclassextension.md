@@ -3,6 +3,11 @@ title: About ISensorClassExtension
 author: windows-driver-content
 description: About ISensorClassExtension
 ms.assetid: 1f55f28a-796a-40e5-9995-e6a28761b9a4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About ISensorClassExtension

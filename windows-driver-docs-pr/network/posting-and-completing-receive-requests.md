@@ -2,7 +2,15 @@
 title: Posting and Completing Receive Requests
 description: Posting and Completing Receive Requests
 ms.assetid: e66dd114-5b1a-4a46-a55d-313681866a94
-keywords: ["delivering received data WDK TCP chimney offload , completing requests", "delivering received data WDK TCP chimney offload , posting requests", "posting receive requests WDK TCP chimney offload"]
+keywords:
+- delivering received data WDK TCP chimney offload , completing requests
+- delivering received data WDK TCP chimney offload , posting requests
+- posting receive requests WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Posting and Completing Receive Requests

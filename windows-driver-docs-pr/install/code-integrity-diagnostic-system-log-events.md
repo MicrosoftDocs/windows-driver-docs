@@ -2,7 +2,19 @@
 title: Code Integrity Diagnostic System Log Events
 description: Code Integrity Diagnostic System Log Events
 ms.assetid: 4aa8db3e-033c-4f38-a813-623518e36485
-keywords: ["Code Integrity WDK driver signing", "events WDK driver signing", "status information WDK driver signing", "verbose diagnostic events WDK driver signing", "audit events WDK driver signing", "logs WDK driver signing", "diagnostic log events WDK Code Integrity"]
+keywords:
+- Code Integrity WDK driver signing
+- events WDK driver signing
+- status information WDK driver signing
+- verbose diagnostic events WDK driver signing
+- audit events WDK driver signing
+- logs WDK driver signing
+- diagnostic log events WDK Code Integrity
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Integrity Diagnostic System Log Events

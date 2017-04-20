@@ -2,6 +2,11 @@
 title: Verify Catalog File Signed by Commercial Certificate
 description: Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate
 ms.assetid: 153bb1e7-009d-4ef8-b5d7-a9e6eecf65bf
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate

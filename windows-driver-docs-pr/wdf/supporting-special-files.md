@@ -3,7 +3,16 @@ title: Supporting Special Files
 author: windows-driver-content
 description: Supporting Special Files
 ms.assetid: 350e715f-be36-4999-99a2-6175d9763b3f
-keywords: ["special files WDK KMDF", "paging files WDK KMDF", "dump files WDK KMDF", "hibernation files WDK KMDF"]
+keywords:
+- special files WDK KMDF
+- paging files WDK KMDF
+- dump files WDK KMDF
+- hibernation files WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Special Files

@@ -2,7 +2,18 @@
 title: Disk Prompting and Error Handling Functions
 description: Disk Prompting and Error Handling Functions
 ms.assetid: e1afeeb3-02f0-4570-9910-f948646f07bf
-keywords: ["SetupAPI functions WDK , disk prompting", "SetupAPI functions WDK , error handling", "errors WDK SetupAPI", "disk prompting WDK SetupAPI", "prompting disk insertion WDK SetupAPI", "media prompting WDK SetupAPI"]
+keywords:
+- SetupAPI functions WDK , disk prompting
+- SetupAPI functions WDK , error handling
+- errors WDK SetupAPI
+- disk prompting WDK SetupAPI
+- prompting disk insertion WDK SetupAPI
+- media prompting WDK SetupAPI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Disk Prompting and Error Handling Functions

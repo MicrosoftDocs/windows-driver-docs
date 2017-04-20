@@ -3,6 +3,11 @@ title: Security Considerations for File System Filter Drivers
 author: windows-driver-content
 description: Security Considerations for File System Filter Drivers
 ms.assetid: 59b5fa88-fd7e-4d1c-8e2e-2b2ec4c9a250
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Security Considerations for File System Filter Drivers

@@ -3,7 +3,14 @@ title: Block Macros
 author: windows-driver-content
 description: Block Macros
 ms.assetid: da2f6161-072a-4d3c-94a8-1020520de524
-keywords: ["block macros WDK GPD files", "referencing macros"]
+keywords:
+- block macros WDK GPD files
+- referencing macros
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Block Macros

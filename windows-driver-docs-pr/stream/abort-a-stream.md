@@ -3,7 +3,17 @@ title: Abort a Stream
 author: windows-driver-content
 description: Abort a Stream
 ms.assetid: 46c726b6-8553-4588-9be1-2cf7779efec5
-keywords: ["Avcstrm.sys streaming filter driver WDK , aborting streams", "abort streams WDK AV/C streaming", "stop streaming WDK AV/C streaming", "stream aborts WDK AV/C streaming", "canceling streams"]
+keywords:
+- Avcstrm.sys streaming filter driver WDK , aborting streams
+- abort streams WDK AV/C streaming
+- stop streaming WDK AV/C streaming
+- stream aborts WDK AV/C streaming
+- canceling streams
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Abort a Stream

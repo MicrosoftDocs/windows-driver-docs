@@ -2,7 +2,20 @@
 title: Direct3D DDI
 description: Direct3D DDI
 ms.assetid: 5b6f7c06-7f54-4fc4-9b94-5fb425b5b3c8
-keywords: ["Direct3D WDK Windows 2000 display", "Direct3D WDK Windows 2000 display , about Direct3D", "graphics WDK Windows 2000 display", "DDI WDK Direct3D", "header files WDK Direct3D", "Direct3D WDK Windows 2000 display , header files", "display driver model WDK Windows 2000 , Direct3D", "Windows 2000 display driver model WDK , Direct3D"]
+keywords:
+- Direct3D WDK Windows 2000 display
+- Direct3D WDK Windows 2000 display , about Direct3D
+- graphics WDK Windows 2000 display
+- DDI WDK Direct3D
+- header files WDK Direct3D
+- Direct3D WDK Windows 2000 display , header files
+- display driver model WDK Windows 2000 , Direct3D
+- Windows 2000 display driver model WDK , Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Direct3D DDI

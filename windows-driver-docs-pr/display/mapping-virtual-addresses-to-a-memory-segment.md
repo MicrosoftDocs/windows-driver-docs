@@ -2,7 +2,20 @@
 title: Mapping Virtual Addresses to a Memory Segment
 description: Mapping Virtual Addresses to a Memory Segment
 ms.assetid: 3ff64e33-eceb-4603-a3d9-11cb2f7dac85
-keywords: ["memory segments WDK display , mapping virtual addresses", "mapping virtual addresses", "virtual address mapping WDK display", "CPU virtual address mapping WDK display", "linear aperture-space segments WDK display", "aperture-space segments WDK display", "linear memory-space segments WDK display", "memory-space segments WDK display"]
+keywords:
+- memory segments WDK display , mapping virtual addresses
+- mapping virtual addresses
+- virtual address mapping WDK display
+- CPU virtual address mapping WDK display
+- linear aperture-space segments WDK display
+- aperture-space segments WDK display
+- linear memory-space segments WDK display
+- memory-space segments WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping Virtual Addresses to a Memory Segment

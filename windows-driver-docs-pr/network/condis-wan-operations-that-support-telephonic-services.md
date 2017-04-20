@@ -2,7 +2,19 @@
 title: CoNDIS WAN Operations that Support Telephonic Services
 description: CoNDIS WAN Operations that Support Telephonic Services
 ms.assetid: 698d7667-8620-4f98-aa57-e48195f612e3
-keywords: ["CoNDIS WAN drivers WDK networking , telephonic services", "telephonic services WDK WAN", "NDPROXY WDK networking", "CoNDIS TAPI WDK networking", "telephonic services WDK WAN , about telephonic services", "WAN miniport drivers WDK networking , telephonic services", "TAPI WDK networking"]
+keywords:
+- CoNDIS WAN drivers WDK networking , telephonic services
+- telephonic services WDK WAN
+- NDPROXY WDK networking
+- CoNDIS TAPI WDK networking
+- telephonic services WDK WAN , about telephonic services
+- WAN miniport drivers WDK networking , telephonic services
+- TAPI WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CoNDIS WAN Operations that Support Telephonic Services

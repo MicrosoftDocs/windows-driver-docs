@@ -2,7 +2,15 @@
 title: Evaluating Changes to Network Configuration
 description: Evaluating Changes to Network Configuration
 ms.assetid: 7e73fbb4-8d7d-44fb-96c9-aa748c207553
-keywords: ["notify objects WDK networking , change processing", "network notify objects WDK , change processing", "changes to network configuration WDK"]
+keywords:
+- notify objects WDK networking , change processing
+- network notify objects WDK , change processing
+- changes to network configuration WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Evaluating Changes to Network Configuration

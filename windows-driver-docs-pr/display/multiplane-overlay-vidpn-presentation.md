@@ -2,6 +2,11 @@
 title: Multiplane overlay VidPN presentation
 ms.assetid: BAD7FD48-905D-4547-8C69-133240B39FA3
 description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multiplane overlay VidPN presentation

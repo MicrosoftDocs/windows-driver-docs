@@ -2,6 +2,11 @@
 title: Duplicate Entry Points for a Function Role Type
 description: Duplicate Entry Points for a Function Role Type
 ms.assetid: cf6604da-bd79-4adf-a08f-9b903aa91133
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Duplicate Entry Points for a Function Role Type

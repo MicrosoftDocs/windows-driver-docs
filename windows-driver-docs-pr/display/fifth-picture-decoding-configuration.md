@@ -2,7 +2,14 @@
 title: Fifth Picture Decoding Configuration
 description: Fifth Picture Decoding Configuration
 ms.assetid: 3a561eaf-24b9-43cf-b968-3d568975ef31
-keywords: ["compressed picture decoding set WDK DirectX VA", "picture decoding set WDK DirectX VA"]
+keywords:
+- compressed picture decoding set WDK DirectX VA
+- picture decoding set WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Fifth Picture Decoding Configuration

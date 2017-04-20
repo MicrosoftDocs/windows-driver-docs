@@ -2,7 +2,18 @@
 title: Halting a Miniport Adapter
 description: Halting a Miniport Adapter
 ms.assetid: fd57a2b1-593d-412b-96b5-eabd3ea392e0
-keywords: ["miniport adapters WDK networking , halting", "adapters WDK networking , halting", "Halted state WDK networking", "MiniportHaltEx", "halting adapters", "stopping adapters"]
+keywords:
+- miniport adapters WDK networking , halting
+- adapters WDK networking , halting
+- Halted state WDK networking
+- MiniportHaltEx
+- halting adapters
+- stopping adapters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Halting a Miniport Adapter

@@ -3,7 +3,13 @@ title: ElementType Template Directive
 author: windows-driver-content
 description: ElementType Template Directive
 ms.assetid: fadb6953-543c-4433-a898-6794d345bb91
-keywords: ["ElementType directive WDK GDL"]
+keywords:
+- ElementType directive WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ElementType Template Directive

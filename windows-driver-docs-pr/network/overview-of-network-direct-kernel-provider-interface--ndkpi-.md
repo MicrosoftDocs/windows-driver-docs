@@ -2,6 +2,11 @@
 title: Overview of Network Direct Kernel Provider Interface (NDKPI)
 description: The Network Direct Kernel Provider Interface (NDKPI) is an extension to NDIS that allows IHVs to provide kernel-mode Remote Direct Memory Access (RDMA) support in a network adapter (also called an RNIC).
 ms.assetid: D9667238-FD2E-44DE-920F-FA4CF3365D93
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Network Direct Kernel Provider Interface (NDKPI)

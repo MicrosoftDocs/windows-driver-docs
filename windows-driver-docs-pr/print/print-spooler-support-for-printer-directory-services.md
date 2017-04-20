@@ -3,7 +3,15 @@ title: Print Spooler Support for Printer Directory Services
 author: windows-driver-content
 description: Print Spooler Support for Printer Directory Services
 ms.assetid: 23cd73a5-8628-4471-a6c6-e056536fcc75
-keywords: ["Directory Services WDK printer", "print spooler Directory Services support WDK", "publishing WDK printer"]
+keywords:
+- Directory Services WDK printer
+- print spooler Directory Services support WDK
+- publishing WDK printer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Spooler Support for Printer Directory Services

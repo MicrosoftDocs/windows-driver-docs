@@ -2,6 +2,11 @@
 title: SDV only supports NDIS " version " drivers
 description: SDV only supports NDIS drivers which are NDIS version 6.0, 6.1, 6.20, 6.30, 6.40, or 6.50. This driver is not supported.
 ms.assetid: D0C5817B-DD76-4164-9C5C-9537E4059167
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SDV only supports NDIS "&lt;version&gt;" drivers

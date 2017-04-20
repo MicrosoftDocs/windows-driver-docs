@@ -2,7 +2,16 @@
 title: Starting and Pausing a Miniport Adapter
 description: Starting and Pausing a Miniport Adapter
 ms.assetid: d278b331-90d9-4d19-bf00-732981962522
-keywords: ["miniport adapters WDK networking , starting", "adapters WDK networking , starting", "miniport adapters WDK networking , pausing", "adapters WDK networking , pausing"]
+keywords:
+- miniport adapters WDK networking , starting
+- adapters WDK networking , starting
+- miniport adapters WDK networking , pausing
+- adapters WDK networking , pausing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting and Pausing a Miniport Adapter

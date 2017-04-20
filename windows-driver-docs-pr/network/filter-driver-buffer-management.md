@@ -2,7 +2,15 @@
 title: Filter Driver Buffer Management
 description: Filter Driver Buffer Management
 ms.assetid: 92b38710-056d-4853-b266-ca86cee298b6
-keywords: ["filter drivers WDK networking , buffers", "NDIS filter drivers WDK , buffers", "buffer management WDK NDIS filter"]
+keywords:
+- filter drivers WDK networking , buffers
+- NDIS filter drivers WDK , buffers
+- buffer management WDK NDIS filter
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Driver Buffer Management

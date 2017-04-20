@@ -3,6 +3,11 @@ title: V4 Driver Connectivity Architecture
 author: windows-driver-content
 description: The v4 print driver model provides rich support for bidirectional communications via the Bidirectional Schema, referred to simply as Bidi.
 ms.assetid: ED7C4A2D-449E-4271-9348-86EAC03B6E64
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # V4 Driver Connectivity Architecture

@@ -2,7 +2,17 @@
 title: Managing PDEVs
 description: Managing PDEVs
 ms.assetid: f7badbe8-b24f-438a-8937-95bb98de6310
-keywords: ["PDEV WDK DirectDraw", "drawing WDK DirectDraw , PDEV", "DirectDraw WDK Windows 2000 display , PDEV", "disabled PDEV WDK DirectDraw", "enabled PDEV WDK DirectDraw"]
+keywords:
+- PDEV WDK DirectDraw
+- drawing WDK DirectDraw , PDEV
+- DirectDraw WDK Windows 2000 display , PDEV
+- disabled PDEV WDK DirectDraw
+- enabled PDEV WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing PDEVs

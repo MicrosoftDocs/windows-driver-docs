@@ -2,7 +2,17 @@
 title: Exporting a MiniportDevicePnPEventNotify Function
 description: Exporting a MiniportDevicePnPEventNotify Function
 ms.assetid: 1c6dce4e-c452-48ce-b3c9-a3fb7842f060
-keywords: ["Plug and Play WDK NDIS miniport , event notifications", "MiniportDevicePnPEventNotify", "notifications", "notifications WDK PnP , NDIS miniport drivers", "event notifications WDK networking"]
+keywords:
+- Plug and Play WDK NDIS miniport , event notifications
+- MiniportDevicePnPEventNotify
+- notifications
+- notifications WDK PnP , NDIS miniport drivers
+- event notifications WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Exporting a MiniportDevicePnPEventNotify Function

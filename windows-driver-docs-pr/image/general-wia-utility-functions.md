@@ -3,6 +3,11 @@ title: General WIA Utility Functions
 author: windows-driver-content
 description: General WIA Utility Functions
 ms.assetid: 235c07a1-4903-4df6-b29f-0ecc342782b4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General WIA Utility Functions

@@ -2,7 +2,23 @@
 title: Audio Data Formats
 description: Audio Data Formats
 ms.assetid: e16c10ea-0193-4cf4-91a3-4f8d4a0d5cf6
-keywords: ["data formats WDK audio", "formats WDK audio , data", "audio data formats WDK", "wave streams WDK audio", "digital formats WDK audio", "stream formats WDK audio", "KS data formats WDK audio", "KSDATAFORMAT structure", "WDM audio data formats WDK", "formats WDK audio", "data formats WDK audio , about audio data formats"]
+keywords:
+- data formats WDK audio
+- formats WDK audio , data
+- audio data formats WDK
+- wave streams WDK audio
+- digital formats WDK audio
+- stream formats WDK audio
+- KS data formats WDK audio
+- KSDATAFORMAT structure
+- WDM audio data formats WDK
+- formats WDK audio
+- data formats WDK audio , about audio data formats
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Data Formats

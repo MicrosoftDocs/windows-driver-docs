@@ -3,6 +3,11 @@ title: Porting a Driver from UMDF 1 to UMDF 2
 author: windows-driver-content
 description: This topic describes how to port a User-Mode Driver Framework (UMDF) 1 driver to UMDF 2.
 ms.assetid: 99D20B4C-17C4-42AC-B4D9-F5FD64E10723
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting a Driver from UMDF 1 to UMDF 2

@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch Forwarding Context Data Types
 description: Hyper-V Extensible Switch Forwarding Context Data Types
 ms.assetid: B5377411-C6F0-47BE-BD45-534AC784ED76
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch Forwarding Context Data Types

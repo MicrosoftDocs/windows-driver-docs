@@ -2,7 +2,13 @@
 title: Native 802.11 Send Operations
 description: Native 802.11 Send Operations
 ms.assetid: 8ab93080-7ac1-4f3c-b4ce-01e7a9767151
-keywords: ["send operations WDK Native 802.11"]
+keywords:
+- send operations WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Send Operations

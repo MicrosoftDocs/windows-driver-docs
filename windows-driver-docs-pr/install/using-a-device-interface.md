@@ -2,7 +2,14 @@
 title: Using a Device Interface
 description: Using a Device Interface
 ms.assetid: a41f9ae2-6128-43e2-a6b5-4d0bd45371bd
-keywords: ["interface classes WDK device installations", "device interface classes WDK device installations"]
+keywords:
+- interface classes WDK device installations
+- device interface classes WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using a Device Interface

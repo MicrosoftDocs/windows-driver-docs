@@ -2,7 +2,15 @@
 title: Native 802.11 Miniport Driver Configuration
 description: Native 802.11 Miniport Driver Configuration
 ms.assetid: 6c19a74b-412b-4fac-9efb-403f004730c7
-keywords: ["Native 802.11 miniport drivers WDK networking , configuration", "miniport drivers WDK Native 802.11 , configuration", "configurations WDK Native 802.11"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , configuration
+- miniport drivers WDK Native 802.11 , configuration
+- configurations WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Miniport Driver Configuration

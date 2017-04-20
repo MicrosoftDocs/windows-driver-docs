@@ -2,7 +2,21 @@
 title: Handling Windows Messages for Property Pages
 description: Handling Windows Messages for Property Pages
 ms.assetid: 4920a003-59b5-41dc-a8ee-5e034087006a
-keywords: ["device property pages WDK device installations , Windows messages", "property pages WDK device installations , Windows messages", "custom property pages WDK device installations , Windows messages", "WM_INITDIALOG", "Windows messages WDK property pages", "SendDlgItemMessage", "friendly names WDK property pages", "WM_NOTIFY", "PSN_APPLY"]
+keywords:
+- device property pages WDK device installations , Windows messages
+- property pages WDK device installations , Windows messages
+- custom property pages WDK device installations , Windows messages
+- WM_INITDIALOG
+- Windows messages WDK property pages
+- SendDlgItemMessage
+- friendly names WDK property pages
+- WM_NOTIFY
+- PSN_APPLY
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Windows Messages for Property Pages

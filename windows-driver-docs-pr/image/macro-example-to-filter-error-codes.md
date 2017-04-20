@@ -3,6 +3,11 @@ title: Macro Example to Filter Error Codes
 author: windows-driver-content
 description: Macro Example to Filter Error Codes
 ms.assetid: 68aa0a75-82c7-4dd9-8f8f-eca5de6ea102
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Macro Example to Filter Error Codes

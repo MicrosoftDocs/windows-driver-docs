@@ -2,7 +2,22 @@
 title: Content IDs and Content Rights
 description: Content IDs and Content Rights
 ms.assetid: aee123e4-bc1b-4ba8-9f8d-a9d207297c8d
-keywords: ["content rights WDK audio", "content IDs WDK audio", "Digital Rights Management WDK audio , content IDs", "DRM WDK audio , content IDs", "Digital Rights Management WDK audio , content rights", "DRM WDK audio , content rights", "identifiers WDK audio", "mixed streams WDK audio", "DigitalOutputDisable flag", "CopyProtect flag"]
+keywords:
+- content rights WDK audio
+- content IDs WDK audio
+- Digital Rights Management WDK audio , content IDs
+- DRM WDK audio , content IDs
+- Digital Rights Management WDK audio , content rights
+- DRM WDK audio , content rights
+- identifiers WDK audio
+- mixed streams WDK audio
+- DigitalOutputDisable flag
+- CopyProtect flag
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Content IDs and Content Rights

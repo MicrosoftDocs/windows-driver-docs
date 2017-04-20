@@ -3,6 +3,11 @@ title: INF Files for Still Image Devices
 author: windows-driver-content
 description: INF Files for Still Image Devices
 ms.assetid: f68ba904-9049-4f7e-9903-fdf6f413a1a5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Files for Still Image Devices

@@ -3,7 +3,15 @@ title: Installing a Network Print Provider
 author: windows-driver-content
 description: Installing a Network Print Provider
 ms.assetid: 448101f8-cb26-4a6f-807d-f110978321da
-keywords: ["print providers WDK , installing", "network print providers WDK , installing", "installing print providers WDK"]
+keywords:
+- print providers WDK , installing
+- network print providers WDK , installing
+- installing print providers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Network Print Provider

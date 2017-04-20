@@ -3,7 +3,16 @@ title: Print Spooler Architecture
 author: windows-driver-content
 description: Print Spooler Architecture
 ms.assetid: 712da599-29cb-4df9-9627-49907f0aa500
-keywords: ["spooler architecture WDK print", "print spooler architecture WDK", "jobs WDK print , print spoolers", "print jobs WDK , print spoolers"]
+keywords:
+- spooler architecture WDK print
+- print spooler architecture WDK
+- jobs WDK print , print spoolers
+- print jobs WDK , print spoolers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Spooler Architecture

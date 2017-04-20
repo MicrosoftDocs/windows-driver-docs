@@ -3,6 +3,11 @@ title: Power-Up Sequence for a Bus Driver
 author: windows-driver-content
 description: Power-Up Sequence for a Bus Driver
 ms.assetid: 689746F4-E1A5-40BA-9FC4-29B0702D6E3E
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power-Up Sequence for a Bus Driver

@@ -3,7 +3,19 @@ title: Multiple Personality Template Data Types
 author: windows-driver-content
 description: Multiple Personality Template Data Types
 ms.assetid: ee550416-9185-41fa-b113-6a1d22c3aa96
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , compound", "MULTIPLE_PERSONALITY data type WDK GDL", "ElementType directive WDK GDL", "ElementTags directive WDK GDL", "unions WDK GDL", "GDL WDK , unions"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , compound
+- MULTIPLE_PERSONALITY data type WDK GDL
+- ElementType directive WDK GDL
+- ElementTags directive WDK GDL
+- unions WDK GDL
+- GDL WDK , unions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multiple Personality Template Data Types

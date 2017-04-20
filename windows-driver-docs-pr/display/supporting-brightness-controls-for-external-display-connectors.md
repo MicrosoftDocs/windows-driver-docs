@@ -1,4 +1,4 @@
-﻿---
+---
 title: Supporting Brightness Controls For External Display Connectors
 description: Supporting Brightness Controls For External Display Connectors
 keywords: ["brightness WDK display", "ACPI-based brightness hot-keys WDK display", "notifying brightness hot keys WDK display", "BIOS brightness control WDK display", "automatic brightness WDK display"]

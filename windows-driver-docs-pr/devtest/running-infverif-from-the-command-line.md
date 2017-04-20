@@ -2,6 +2,11 @@
 title: Running InfVerif from the command line
 description: This topic lists the options that are available when you run InfVerif.exe from the command line.
 ms.assetid: CC2DB624-FFEE-4049-ACE7-4A24B330BADB
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Running InfVerif from the command line

@@ -2,13 +2,19 @@
 title: DevCon Disable
 description: Disables devices on the computer.
 ms.assetid: 544b219c-30dd-41d1-ac47-9760c772b07e
-keywords: ["DevCon Disable Driver Development Tools"]
+keywords:
+- DevCon Disable Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon Disable
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon Disable

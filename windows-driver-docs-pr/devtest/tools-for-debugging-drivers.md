@@ -2,7 +2,17 @@
 title: Tools for Debugging Drivers
 description: Tools for Debugging Drivers
 ms.assetid: caaa2608-78fb-4656-9650-417cfa5678d8
-keywords: ["tools WDK , debugging drivers", "driver development tools WDK , debugging drivers", "debugging drivers WDK , tools", "debug_client tool WDK", "debug_host tool WDK"]
+keywords:
+- tools WDK , debugging drivers
+- driver development tools WDK , debugging drivers
+- debugging drivers WDK , tools
+- debug_client tool WDK
+- debug_host tool WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tools for Debugging Drivers

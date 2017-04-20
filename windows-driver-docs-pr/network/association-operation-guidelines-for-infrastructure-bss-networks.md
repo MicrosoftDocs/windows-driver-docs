@@ -2,7 +2,15 @@
 title: Association Operation Guidelines for Infrastructure BSS Networks
 description: Association Operation Guidelines for Infrastructure BSS Networks
 ms.assetid: 73190f22-3aa1-4eee-b452-fd5aaf067988
-keywords: ["association operations WDK Native 802.11", "infrastructure BSS networks WDK Native 802.11", "BSS networks WDK Native 802.11"]
+keywords:
+- association operations WDK Native 802.11
+- infrastructure BSS networks WDK Native 802.11
+- BSS networks WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Association Operation Guidelines for Infrastructure BSS Networks

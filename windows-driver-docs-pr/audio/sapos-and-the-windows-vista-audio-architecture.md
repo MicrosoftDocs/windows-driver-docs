@@ -2,7 +2,19 @@
 title: sAPOs and the Windows Vista Audio Architecture
 description: sAPOs and the Windows Vista Audio Architecture
 ms.assetid: b2effc05-5d5c-4209-b2b3-b91d9f1519e2
-keywords: ["LFX WDK", "GFX WDK", "audio graph WDK", "audio engine WDK", "format negotiations WDK audio", "IsInputFormatSupported WDK", "LockForProcess WDK"]
+keywords:
+- LFX WDK
+- GFX WDK
+- audio graph WDK
+- audio engine WDK
+- format negotiations WDK audio
+- IsInputFormatSupported WDK
+- LockForProcess WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # sAPOs and the Windows Vista Audio Architecture

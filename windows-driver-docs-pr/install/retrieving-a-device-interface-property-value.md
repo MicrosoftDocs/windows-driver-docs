@@ -2,6 +2,11 @@
 title: Retrieving a Device Interface Property Value
 description: Retrieving a Device Interface Property Value
 ms.assetid: 2a845adc-6965-420d-9e0a-20935d20577a
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieving a Device Interface Property Value

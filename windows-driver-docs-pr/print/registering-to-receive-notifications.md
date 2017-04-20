@@ -3,7 +3,19 @@ title: Registering to Receive Notifications
 author: windows-driver-content
 description: Registering to Receive Notifications
 ms.assetid: 2442c204-c9d8-49fa-93ae-02623d08119c
-keywords: ["spooler notification WDK print , registering to receive", "print spooler notification WDK , registering to receive", "receiving spooler notifications", "registering for spooler notifications", "RegisterForPrintAsyncNotifications", "UnRegisterForPrintAsyncNotifications", "unregistering for spooler notifications"]
+keywords:
+- spooler notification WDK print , registering to receive
+- print spooler notification WDK , registering to receive
+- receiving spooler notifications
+- registering for spooler notifications
+- RegisterForPrintAsyncNotifications
+- UnRegisterForPrintAsyncNotifications
+- unregistering for spooler notifications
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering to Receive Notifications

@@ -3,7 +3,17 @@ title: 1394 Samples and Diagnostic Tools
 author: windows-driver-content
 description: 1394 Samples and Diagnostic Tools
 ms.assetid: e3ce71da-8c24-405b-b734-98a8c4f45e6b
-keywords: ["IEEE 1394 WDK buses , samples", "1394 WDK buses , samples", "IEEE 1394 WDK buses , diagnostic tools", "1394 WDK buses , diagnostic tools", "sample drivers WDK IEEE 1394 bus"]
+keywords:
+- IEEE 1394 WDK buses , samples
+- 1394 WDK buses , samples
+- IEEE 1394 WDK buses , diagnostic tools
+- 1394 WDK buses , diagnostic tools
+- sample drivers WDK IEEE 1394 bus
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 1394 Samples and Diagnostic Tools

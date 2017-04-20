@@ -2,6 +2,11 @@
 title: WMI Data Source
 description: WMI Data Source
 ms.assetid: 1C9D0EEC-6542-4249-B7E0-CA3ED63FB120
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMI Data Source

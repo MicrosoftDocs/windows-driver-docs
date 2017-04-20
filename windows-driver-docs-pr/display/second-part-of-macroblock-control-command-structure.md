@@ -2,7 +2,13 @@
 title: Second Part of Macroblock Control Command Structure
 description: Second Part of Macroblock Control Command Structure
 ms.assetid: 94ef61d1-cd7d-4e73-8be8-01f7d23bb91d
-keywords: ["macroblocks WDK DirectX VA , generic command structure"]
+keywords:
+- macroblocks WDK DirectX VA , generic command structure
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Second Part of Macroblock Control Command Structure

@@ -3,7 +3,16 @@ title: Volume Mount Example
 author: windows-driver-content
 description: Volume Mount Example
 ms.assetid: d6645d05-a945-4454-ac7c-122219bbdc50
-keywords: ["filter drivers WDK file system , volume mount process", "file system filter drivers WDK , volume mount process", "mounting volumes WDK file systems", "volumes WDK file system , mounting"]
+keywords:
+- filter drivers WDK file system , volume mount process
+- file system filter drivers WDK , volume mount process
+- mounting volumes WDK file systems
+- volumes WDK file system , mounting
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Volume Mount Example

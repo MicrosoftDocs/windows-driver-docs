@@ -2,7 +2,14 @@
 title: Restarting a Driver Stack
 description: Restarting a Driver Stack
 ms.assetid: 5c9138f8-4a29-4740-b085-efe24d950fba
-keywords: ["driver stacks WDK networking , restarting", "restarting driver stacks WDK networking"]
+keywords:
+- driver stacks WDK networking , restarting
+- restarting driver stacks WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Restarting a Driver Stack

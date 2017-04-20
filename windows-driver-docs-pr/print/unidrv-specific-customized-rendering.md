@@ -3,7 +3,15 @@ title: Unidrv-Specific Customized Rendering
 author: windows-driver-content
 description: Unidrv-Specific Customized Rendering
 ms.assetid: aff39531-ca40-4985-b458-c6217f8a2e5c
-keywords: ["rendering plug-ins WDK print , Unidrv", "Unidrv, customized rendering options", "Unidrv WDK print"]
+keywords:
+- rendering plug-ins WDK print , Unidrv
+- Unidrv, customized rendering options
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unidrv-Specific Customized Rendering

@@ -2,7 +2,16 @@
 title: Windows 2000 Display Driver Model (XDDM) Design Guide
 description: Windows 2000 Display Driver Model (XDDM) Design Guide
 ms.assetid: 24cb232b-e289-45c8-8d55-42614a4dfd54
-keywords: ["display devices WDK", "display driver model WDK Windows 2000", "Windows 2000 display driver model WDK", "display drivers WDK , Windows 2000"]
+keywords:
+- display devices WDK
+- display driver model WDK Windows 2000
+- Windows 2000 display driver model WDK
+- display drivers WDK , Windows 2000
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows 2000 Display Driver Model (XDDM) Design Guide

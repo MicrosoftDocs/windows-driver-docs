@@ -2,7 +2,18 @@
 title: Specifying Parameters for an Incoming Call
 description: Specifying Parameters for an Incoming Call
 ms.assetid: f1436c05-f475-454c-b68f-e387821834d4
-keywords: ["CoNDIS WAN drivers WDK networking , incoming calls", "telephonic services WDK WAN , incoming calls", "CoNDIS TAPI WDK networking , incoming calls", "voice streaming WDK networing , incoming calls", "incoming calls WDK CoNDIS WAN", "calls WDK CoNDIS WAN"]
+keywords:
+- CoNDIS WAN drivers WDK networking , incoming calls
+- telephonic services WDK WAN , incoming calls
+- CoNDIS TAPI WDK networking , incoming calls
+- voice streaming WDK networing , incoming calls
+- incoming calls WDK CoNDIS WAN
+- calls WDK CoNDIS WAN
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Parameters for an Incoming Call

@@ -2,7 +2,15 @@
 title: Connection Operation Guidelines for Independent BSS Networks
 description: Connection Operation Guidelines for Independent BSS Networks
 ms.assetid: 002f92ed-8f89-42a5-b9fc-45d3241e8e30
-keywords: ["independent BSS networks WDK Native 802.11", "BSS networks WDK Native 802.11", "connections WDK Native 802.11 network operations"]
+keywords:
+- independent BSS networks WDK Native 802.11
+- BSS networks WDK Native 802.11
+- connections WDK Native 802.11 network operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connection Operation Guidelines for Independent BSS Networks

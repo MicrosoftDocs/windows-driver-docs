@@ -2,6 +2,11 @@
 Description: The topics in this section point out what's new for USB in different versions of Windows.
 title: New for USB in different versions of Windows
 author: windows-driver-content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # New for USB in different versions of Windows

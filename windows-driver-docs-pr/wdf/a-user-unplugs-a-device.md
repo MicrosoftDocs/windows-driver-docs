@@ -3,7 +3,20 @@ title: A User Unplugs a Device
 author: windows-driver-content
 description: A User Unplugs a Device
 ms.assetid: 85e69401-0128-4641-aa0f-fd7c4f22f395
-keywords: ["PnP WDK KMDF , unplugging devices", "Plug and Play WDK KMDF , unplugging devices", "orderly device removal WDK KMDF", "unplugging devices WDK KMDF", "surprise device removal WDK KMDF", "unexpected device removal WDK KMDF", "removing devices WDK KMDF", "ejecting devices WDK KMDF"]
+keywords:
+- PnP WDK KMDF , unplugging devices
+- Plug and Play WDK KMDF , unplugging devices
+- orderly device removal WDK KMDF
+- unplugging devices WDK KMDF
+- surprise device removal WDK KMDF
+- unexpected device removal WDK KMDF
+- removing devices WDK KMDF
+- ejecting devices WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # A User Unplugs a Device

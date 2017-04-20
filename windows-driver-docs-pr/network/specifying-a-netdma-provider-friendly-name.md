@@ -2,7 +2,15 @@
 title: Specifying a NetDMA Provider Friendly Name
 description: Specifying a NetDMA Provider Friendly Name
 ms.assetid: fe39f3e6-6e01-4342-8845-847846a2c8e5
-keywords: ["NetDMA provider friendly names WDK networking", "friendly names WDK NetDMA", "NetDMA 2.0 WDK networking , friendly names"]
+keywords:
+- NetDMA provider friendly names WDK networking
+- friendly names WDK NetDMA
+- NetDMA 2.0 WDK networking , friendly names
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying a NetDMA Provider Friendly Name

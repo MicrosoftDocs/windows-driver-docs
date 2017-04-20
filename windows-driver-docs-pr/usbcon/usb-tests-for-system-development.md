@@ -2,6 +2,11 @@
 Description: If you are building a new system, the tests in this topic are recommended.
 title: Recommended USB tests for system development
 author: windows-driver-content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Recommended USB tests for system development

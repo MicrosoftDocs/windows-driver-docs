@@ -3,6 +3,11 @@ title: Still Image Device Events
 author: windows-driver-content
 description: Still Image Device Events
 ms.assetid: 5f9be89c-8442-4894-b2f6-a4d3558464bf
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Still Image Device Events

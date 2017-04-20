@@ -2,7 +2,18 @@
 title: Initiating a Connection
 description: Initiating a Connection
 ms.assetid: 5e5ab033-b01a-45e2-acd4-7ea8931a621d
-keywords: ["SAN connection setup WDK , initiating connections", "initiating SAN connections", "destroying SAN sockets WDK SANs", "session negotiations WDK SANs", "SAN connection setup WDK , flow diagram", "SAN sockets WDK , initiating connections"]
+keywords:
+- SAN connection setup WDK , initiating connections
+- initiating SAN connections
+- destroying SAN sockets WDK SANs
+- session negotiations WDK SANs
+- SAN connection setup WDK , flow diagram
+- SAN sockets WDK , initiating connections
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initiating a Connection

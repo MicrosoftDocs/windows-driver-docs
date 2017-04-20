@@ -2,7 +2,16 @@
 title: Using Shared Memory in Network Drivers
 description: Using Shared Memory in Network Drivers
 ms.assetid: f7dfe785-6c1a-4f56-9018-76be9cdec7fc
-keywords: ["network drivers WDK , shared memory", "memory WDK networking", "shared memory WDK networking", "sharing memory address space"]
+keywords:
+- network drivers WDK , shared memory
+- memory WDK networking
+- shared memory WDK networking
+- sharing memory address space
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Shared Memory in Network Drivers

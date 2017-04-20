@@ -2,7 +2,20 @@
 title: WPP Software Tracing
 description: This section describes how to use the Windows software trace preprocessor (WPP) to trace the operation of a software component trace provider.
 ms.assetid: dab776b3-bac9-4157-a530-6e48868ba900
-keywords: ["Windows software trace preprocessor WDK", "WPP software tracing WDK", "software tracing WDK , WPP", "kernel-mode WPP WDK software tracing", "Windows software trace preprocessor WDK , about WPP", "WPP software tracing WDK , about WPP", "default WPP software tracing", "tracing WDK , WPP"]
+keywords:
+- Windows software trace preprocessor WDK
+- WPP software tracing WDK
+- software tracing WDK , WPP
+- kernel-mode WPP WDK software tracing
+- Windows software trace preprocessor WDK , about WPP
+- WPP software tracing WDK , about WPP
+- default WPP software tracing
+- tracing WDK , WPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WPP Software Tracing

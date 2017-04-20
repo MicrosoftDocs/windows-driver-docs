@@ -3,7 +3,13 @@ title: Security Features for File Systems
 author: windows-driver-content
 description: Security Features for File Systems
 ms.assetid: 344083d5-781a-46e3-ab90-b70e57d07dd0
-keywords: ["security WDK file systems , features"]
+keywords:
+- security WDK file systems , features
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Security Features for File Systems

@@ -2,7 +2,15 @@
 title: Displaying 16 9 Video within a 4 3 Destination Surface
 description: Displaying 16 9 Video within a 4 3 Destination Surface
 ms.assetid: 8500ec9c-876d-4b94-a58a-2513942305db
-keywords: ["displaying 16 9 video", "4 3 destination surface displays 16 9 video WDK DirectX VA", "16 9 video on 4 3 destination surface WDK DirectX VA"]
+keywords:
+- displaying 16 9 video
+- 4 3 destination surface displays 16 9 video WDK DirectX VA
+- 16 9 video on 4 3 destination surface WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Displaying 16:9 Video within a 4:3 Destination Surface

@@ -3,6 +3,11 @@ title: Camera Minidriver Sample
 author: windows-driver-content
 description: Camera Minidriver Sample
 ms.assetid: 82ed48e9-2e3e-4386-bb89-03e3c5ff92b0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Camera Minidriver Sample

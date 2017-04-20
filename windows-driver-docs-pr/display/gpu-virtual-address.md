@@ -2,6 +2,11 @@
 title: GPU virtual address
 description: graphics processing unit (GPU) virtual addresses are managed in logical 4KB or 64 KB pages at the device driver interface (DDI) level.
 ms.assetid: 65BD05FC-06FD-4DC2-977A-7F48E72B4858
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GPU virtual address

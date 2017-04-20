@@ -2,6 +2,11 @@
 title: INF DDInstall.HW Section for PF Miniport Drivers
 description: INF DDInstall.HW Section for PF Miniport Drivers
 ms.assetid: 65399462-4AF1-401C-87CB-BF387CA0B053
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DDInstall.HW Section for PF Miniport Drivers

@@ -2,7 +2,14 @@
 title: Boot Options in a Boot.ini File
 description: Boot.ini is a text file located at the root of the system partition, typically c \\Boot.ini. Boot.ini stores boot options for computers with BIOS firmware, traditionally, computers with x86 and x64-based processors.
 ms.assetid: a2593b6d-03df-49d1-ae77-efec4c2ac8be
-keywords: ["Boot.ini files WDK", "boot options WDK , Boot.ini files"]
+keywords:
+- Boot.ini files WDK
+- boot options WDK , Boot.ini files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boot Options in a Boot.ini File

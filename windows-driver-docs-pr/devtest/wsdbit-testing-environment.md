@@ -2,7 +2,24 @@
 title: WSDBIT Testing Environment
 description: WSDBIT Testing Environment
 ms.assetid: 6fa6f6f7-859a-4424-a71d-600f82b23f89
-keywords: ["WSDBIT tool WDK , testing environment", "WSDAPI Basic Interoperability Tool WDK , testing environment", "WSDBIT tool WDK , network topology", "WSDAPI Basic Interoperability Tool WDK , network topology", "testing environment WDK WSDBIT", "WSDBIT tool WDK , services", "WSDAPI Basic Interoperability Tool WDK , services", "SimpleService service WDK WSDBIT", "AttachmentService service WDK WSDBIT", "EventingService service WDK WSDBIT", "WSDBIT tool WDK , devices for testing", "WSDAPI Basic Interoperability Tool WDK , devices for testing"]
+keywords:
+- WSDBIT tool WDK , testing environment
+- WSDAPI Basic Interoperability Tool WDK , testing environment
+- WSDBIT tool WDK , network topology
+- WSDAPI Basic Interoperability Tool WDK , network topology
+- testing environment WDK WSDBIT
+- WSDBIT tool WDK , services
+- WSDAPI Basic Interoperability Tool WDK , services
+- SimpleService service WDK WSDBIT
+- AttachmentService service WDK WSDBIT
+- EventingService service WDK WSDBIT
+- WSDBIT tool WDK , devices for testing
+- WSDAPI Basic Interoperability Tool WDK , devices for testing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WSDBIT Testing Environment

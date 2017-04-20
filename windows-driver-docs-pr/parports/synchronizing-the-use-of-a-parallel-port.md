@@ -3,7 +3,14 @@ title: Synchronizing the Use of a Parallel Port
 author: windows-driver-content
 description: Synchronizing the Use of a Parallel Port
 ms.assetid: ea3a1998-9e31-4047-9193-6b402db222c9
-keywords: ["parallel ports WDK , synchronization", "synchronization WDK parallel ports"]
+keywords:
+- parallel ports WDK , synchronization
+- synchronization WDK parallel ports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing the Use of a Parallel Port

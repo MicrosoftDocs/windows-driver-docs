@@ -2,7 +2,17 @@
 title: Opening an Adapter in an NDIS 6.0 Protocol Driver
 description: Opening an Adapter in an NDIS 6.0 Protocol Driver
 ms.assetid: 15a0cdc2-388d-4122-a456-2aaec5812a2e
-keywords: ["NdisOpenAdapterEx", "NdisOpenAdapter", "opening adapters", "adapters WDK networking", "opening"]
+keywords:
+- NdisOpenAdapterEx
+- NdisOpenAdapter
+- opening adapters
+- adapters WDK networking
+- opening
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening an Adapter in an NDIS 6.0 Protocol Driver

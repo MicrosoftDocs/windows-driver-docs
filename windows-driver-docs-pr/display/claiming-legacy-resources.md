@@ -2,7 +2,17 @@
 title: Claiming Legacy Resources
 description: Claiming Legacy Resources
 ms.assetid: f3e573a1-0e7a-422b-8bed-db3ba7712a2f
-keywords: ["video miniport drivers WDK Windows 2000 , legacy resources", "legacy resources WDK video miniport", "video miniport drivers WDK Windows 2000 , initializing", "initializing video miniport drivers", "VIDEO_HW_INITIALIZATION_DATA"]
+keywords:
+- video miniport drivers WDK Windows 2000 , legacy resources
+- legacy resources WDK video miniport
+- video miniport drivers WDK Windows 2000 , initializing
+- initializing video miniport drivers
+- VIDEO_HW_INITIALIZATION_DATA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Claiming Legacy Resources

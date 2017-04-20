@@ -2,7 +2,14 @@
 title: Specifics for DirectSound Clients
 description: Specifics for DirectSound Clients
 ms.assetid: 95ef53d3-572d-478b-839b-0555e9051129
-keywords: ["DirectSound WDK audio , non-PCM wave formats", "non-PCM audio formats WDK , DirectSound"]
+keywords:
+- DirectSound WDK audio , non-PCM wave formats
+- non-PCM audio formats WDK , DirectSound
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifics for DirectSound Clients

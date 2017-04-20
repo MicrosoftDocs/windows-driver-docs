@@ -3,7 +3,15 @@ title: GDL Primitive Data Types
 author: windows-driver-content
 description: GDL Primitive Data Types
 ms.assetid: e9a0a58b-ae29-46b1-8928-18686a89bd10
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "parser WDK GDL , primitive data types"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , primitive
+- parser WDK GDL , primitive data types
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Primitive Data Types

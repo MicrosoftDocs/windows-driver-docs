@@ -2,6 +2,11 @@
 title: YUV-RGB data range conversions
 ms.assetid: 0A439686-0BAE-4E4D-AA23-06A6EF72C4B3
 description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="display.yuv-rgb_data_range_conversions"></span>YUV-RGB data range conversions

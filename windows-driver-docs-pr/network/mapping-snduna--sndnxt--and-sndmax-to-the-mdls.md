@@ -2,7 +2,20 @@
 title: Mapping SndUna, SndNxt, and SndMax to the MDLs
 description: Mapping SndUna, SndNxt, and SndMax to the MDLs
 ms.assetid: 7c654129-32b7-4f24-a8e2-143e2c4e778b
-keywords: ["state offloading process WDK TCP chimney offload , outstanding send data", "offloading state process WDK TCP chimney offload , outstanding send data", "outstanding send data WDK TCP chimney offload", "send data outstanding WDK TCP chimney offload", "SndUna WDK TCP chimney offload", "SndNxt WDK TCP chimney offload", "SndMax WDK TCP chimney offload", "mapping bytes for TCP chimney offload"]
+keywords:
+- state offloading process WDK TCP chimney offload , outstanding send data
+- offloading state process WDK TCP chimney offload , outstanding send data
+- outstanding send data WDK TCP chimney offload
+- send data outstanding WDK TCP chimney offload
+- SndUna WDK TCP chimney offload
+- SndNxt WDK TCP chimney offload
+- SndMax WDK TCP chimney offload
+- mapping bytes for TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping SndUna, SndNxt, and SndMax to the MDLs

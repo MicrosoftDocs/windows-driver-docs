@@ -3,7 +3,16 @@ title: Supporting an Operation Region
 author: windows-driver-content
 description: Supporting an Operation Region
 ms.assetid: 262a7201-d89e-4639-9630-a51aaa28db34
-keywords: ["ACPI devices WDK , operation regions", "operation regions WDK ACPI", "function drivers WDK ACPI , operation regions", "WDM function drivers WDK ACPI , operation regions"]
+keywords:
+- ACPI devices WDK , operation regions
+- operation regions WDK ACPI
+- function drivers WDK ACPI , operation regions
+- WDM function drivers WDK ACPI , operation regions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting an Operation Region

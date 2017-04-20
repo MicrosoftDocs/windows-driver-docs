@@ -2,7 +2,14 @@
 title: FVF Code Changes
 description: FVF Code Changes
 ms.assetid: d9db4356-570b-4e05-aec9-bf36e26e4570
-keywords: ["FVF WDK Direct3D", "multimatrix vertex blending WDK Direct3D , FVF code changes"]
+keywords:
+- FVF WDK Direct3D
+- multimatrix vertex blending WDK Direct3D , FVF code changes
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # FVF Code Changes

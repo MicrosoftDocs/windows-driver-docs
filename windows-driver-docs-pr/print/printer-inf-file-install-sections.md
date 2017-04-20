@@ -3,7 +3,15 @@ title: Printer INF File Install Sections
 author: windows-driver-content
 description: Printer INF File Install Sections
 ms.assetid: fb544271-1f0f-4bbd-b0a7-88dc89cc8186
-keywords: ["INF files WDK print , install sections", "install sections WDK printer", "sections WDK printer"]
+keywords:
+- INF files WDK print , install sections
+- install sections WDK printer
+- sections WDK printer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer INF File Install Sections

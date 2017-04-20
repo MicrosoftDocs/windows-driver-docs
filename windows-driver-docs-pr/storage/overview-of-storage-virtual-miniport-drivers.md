@@ -3,7 +3,15 @@ title: Overview of Storage Virtual Miniport Drivers
 author: windows-driver-content
 description: Overview of Storage Virtual Miniport Drivers
 ms.assetid: 5aee56e6-610c-4718-8566-9285682049cb
-keywords: ["storage virtual miniport drivers WDK , about", "virtual miniport drivers WDK", "miniport drivers WDK storage , virtual"]
+keywords:
+- storage virtual miniport drivers WDK , about
+- virtual miniport drivers WDK
+- miniport drivers WDK storage , virtual
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Storage Virtual Miniport Drivers

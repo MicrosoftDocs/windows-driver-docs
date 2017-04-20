@@ -2,7 +2,16 @@
 title: Transferring Data on a SAN
 description: Transferring Data on a SAN
 ms.assetid: 0706515b-30ec-4257-9f2b-6048615c3a23
-keywords: ["Windows Sockets Direct WDK , data transfers", "data transfers WDK SANs", "transferring data WDK SANs", "SAN data transfers WDK"]
+keywords:
+- Windows Sockets Direct WDK , data transfers
+- data transfers WDK SANs
+- transferring data WDK SANs
+- SAN data transfers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Transferring Data on a SAN

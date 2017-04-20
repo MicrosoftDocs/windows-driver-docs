@@ -3,7 +3,15 @@ title: Hostfont Registry Entries
 author: windows-driver-content
 description: Hostfont Registry Entries
 ms.assetid: f7ce2591-197a-4094-8b21-5e0cc48506ea
-keywords: ["PostScript Printer Driver WDK print , HostFontXxx registry entries", "Pscript WDK print , HostFontXxx registry entries", "HostFontXxx registry entries WDK Pscript"]
+keywords:
+- PostScript Printer Driver WDK print , HostFontXxx registry entries
+- Pscript WDK print , HostFontXxx registry entries
+- HostFontXxx registry entries WDK Pscript
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hostfont Registry Entries

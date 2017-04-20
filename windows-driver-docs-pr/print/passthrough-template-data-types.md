@@ -3,7 +3,17 @@ title: Passthrough Template Data Types
 author: windows-driver-content
 description: Passthrough Template Data Types
 ms.assetid: 9e5e6a12-5847-45fe-bee5-68944cd546d7
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "PASSTHROUGH data type WDK GDL", "schemas WDK GDL , validating PASSTHROUGH data types", "ArrayLabel directive WDK GDL"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , primitive
+- PASSTHROUGH data type WDK GDL
+- schemas WDK GDL , validating PASSTHROUGH data types
+- ArrayLabel directive WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Passthrough Template Data Types

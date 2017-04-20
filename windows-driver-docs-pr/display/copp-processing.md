@@ -2,7 +2,20 @@
 title: COPP Processing
 description: COPP Processing
 ms.assetid: c9ff0fd3-c063-4450-ae66-54153b3dc53c
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , COPP", "Video Acceleration WDK DirectX , COPP", "VA WDK DirectX , COPP", "Certified Output Protection Protocol WDK DirectX VA", "copy protection WDK COPP", "video copy protection WDK COPP", "COPP WDK DirectX VA", "protected video WDK COPP"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , COPP
+- Video Acceleration WDK DirectX , COPP
+- VA WDK DirectX , COPP
+- Certified Output Protection Protocol WDK DirectX VA
+- copy protection WDK COPP
+- video copy protection WDK COPP
+- COPP WDK DirectX VA
+- protected video WDK COPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP Processing

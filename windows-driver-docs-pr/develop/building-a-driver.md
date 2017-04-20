@@ -2,6 +2,11 @@
 ms.assetid: f5676c9c-b582-47d0-9b7c-02b6443103ad
 title: Building a Driver with the WDK
 description: This topic describes how to build a driver with the Windows Driver Kit \(WDK\).
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building a Driver with Visual Studio and the WDK

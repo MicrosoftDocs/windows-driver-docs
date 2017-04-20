@@ -2,7 +2,15 @@
 title: Attaching the WSK Client to the WSK Subsystem
 description: Attaching the WSK Client to the WSK Subsystem
 ms.assetid: 752d204f-3022-48b0-9237-707b753a7ad3
-keywords: ["Network Module Registrar WDK Winsock Kernel", "NMR WDK Winsock Kernel", "unloading WSK clients"]
+keywords:
+- Network Module Registrar WDK Winsock Kernel
+- NMR WDK Winsock Kernel
+- unloading WSK clients
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attaching the WSK Client to the WSK Subsystem

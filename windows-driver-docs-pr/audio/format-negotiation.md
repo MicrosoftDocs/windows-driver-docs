@@ -2,6 +2,11 @@
 title: Format Negotiation
 description: Format Negotiation
 ms.assetid: 5b6ee5ed-de5a-4832-a581-179966e79dbd
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Format Negotiation

@@ -2,7 +2,15 @@
 title: Post-Association Operations
 description: Post-Association Operations
 ms.assetid: e4c7ea7a-53ad-41b2-bf3f-03c770e58043
-keywords: ["IHV Extensions DLL WDK Native 802.11 , post-association operations", "post-association operations WDK Native 802.11 IHV Extensions DLL", "Native 802.11 IHV Extensions DLL WDK , post-association operations"]
+keywords:
+- IHV Extensions DLL WDK Native 802.11 , post-association operations
+- post-association operations WDK Native 802.11 IHV Extensions DLL
+- Native 802.11 IHV Extensions DLL WDK , post-association operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Post-Association Operations

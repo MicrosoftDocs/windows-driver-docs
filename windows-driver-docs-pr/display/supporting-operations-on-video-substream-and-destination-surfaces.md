@@ -2,7 +2,18 @@
 title: Supporting Operations on Video Substream and Destination Surfaces
 description: Supporting Operations on Video Substream and Destination Surfaces
 ms.assetid: ad0214b9-5d75-455f-8748-ff7c5a3d89db
-keywords: ["DeinterlaceBltEx, destination surfaces", "DeinterlaceBltEx, substream surfaces", "destination surfaces WDK DirectX VA", "substream surfaces WDK DirectX VA", "color filling destination surfaces WDK DirectX VA", "color filling substream surfaces WDK DirectX VA"]
+keywords:
+- DeinterlaceBltEx, destination surfaces
+- DeinterlaceBltEx, substream surfaces
+- destination surfaces WDK DirectX VA
+- substream surfaces WDK DirectX VA
+- color filling destination surfaces WDK DirectX VA
+- color filling substream surfaces WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Operations on Video Substream and Destination Surfaces

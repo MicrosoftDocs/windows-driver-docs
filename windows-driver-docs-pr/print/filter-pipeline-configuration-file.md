@@ -3,7 +3,18 @@ title: Filter Pipeline Configuration File
 author: windows-driver-content
 description: Filter Pipeline Configuration File
 ms.assetid: 586247bd-6d06-4728-a5f0-ee3fe1d09321
-keywords: ["XPSDrv printer drivers WDK , render modules", "render modules WDK XPSDrv , filter pipeline configuration files", "filter pipeline configuration files WDK XPSDrv", "private keywords WDK XPSDrv", "filter pipeline property bags WDK XPSDrv", "property bags WDK filter pipeline"]
+keywords:
+- XPSDrv printer drivers WDK , render modules
+- render modules WDK XPSDrv , filter pipeline configuration files
+- filter pipeline configuration files WDK XPSDrv
+- private keywords WDK XPSDrv
+- filter pipeline property bags WDK XPSDrv
+- property bags WDK filter pipeline
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Pipeline Configuration File

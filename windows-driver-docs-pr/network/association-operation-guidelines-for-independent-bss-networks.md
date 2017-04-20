@@ -2,7 +2,15 @@
 title: Association Operation Guidelines for Independent BSS Networks
 description: Association Operation Guidelines for Independent BSS Networks
 ms.assetid: fc6b3f0a-b14f-4945-9a30-48cdc3c1685a
-keywords: ["association operations WDK Native 802.11", "independent BSS networks WDK Native 802.11", "BSS networks WDK Native 802.11"]
+keywords:
+- association operations WDK Native 802.11
+- independent BSS networks WDK Native 802.11
+- BSS networks WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Association Operation Guidelines for Independent BSS Networks

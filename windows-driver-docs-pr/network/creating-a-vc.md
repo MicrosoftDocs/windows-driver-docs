@@ -2,7 +2,13 @@
 title: Creating a VC
 description: Creating a VC
 ms.assetid: 29d7f2b3-0514-46f8-8b12-02275b404a2a
-keywords: ["virtual connections WDK CoNDIS , creating"]
+keywords:
+- virtual connections WDK CoNDIS , creating
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a VC

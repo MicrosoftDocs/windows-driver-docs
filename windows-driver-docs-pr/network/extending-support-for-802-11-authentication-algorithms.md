@@ -2,7 +2,18 @@
 title: Extending Support for 802.11 Authentication Algorithms
 description: Extending Support for 802.11 Authentication Algorithms
 ms.assetid: f9ea385d-26ae-4c14-870d-1ac23f89267b
-keywords: ["extending functionality WDK Native 802.11", "Extensible Station authentication algorithms WDK Native 802.11", "ExtSTA authentication algorithms WDK Native 802.11", "algorithms WDK Native 802.11 authentication", "authentication WDK Native 802.11 , extending support", "authentication WDK Native 802.11 , algorithms"]
+keywords:
+- extending functionality WDK Native 802.11
+- Extensible Station authentication algorithms WDK Native 802.11
+- ExtSTA authentication algorithms WDK Native 802.11
+- algorithms WDK Native 802.11 authentication
+- authentication WDK Native 802.11 , extending support
+- authentication WDK Native 802.11 , algorithms
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending Support for 802.11 Authentication Algorithms

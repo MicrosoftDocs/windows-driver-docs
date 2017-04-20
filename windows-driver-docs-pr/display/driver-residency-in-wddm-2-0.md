@@ -2,6 +2,11 @@
 title: Driver residency in WDDM 2.0
 description: This section provides details about the driver residency changes for Windows Display Driver Model (WDDM) 2.0. The functionality described is available starting with Windows 10.
 ms.assetid: 9BD0138A-E957-4675-8E08-2750825A5C87
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver residency in WDDM 2.0

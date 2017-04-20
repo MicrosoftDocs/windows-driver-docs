@@ -2,7 +2,14 @@
 title: Offloading the Processing of UDP-Encapsulated ESP Packets
 description: Offloading the Processing of UDP-Encapsulated ESP Packets
 ms.assetid: 67821fbb-3a0e-4186-bf31-83942898e4c9
-keywords: ["IPsecOV1 WDK TCP/IP transport , UDP-encapsulated ESP packets", "UDP-encapsulated ESP packets WDK IPsec offload"]
+keywords:
+- IPsecOV1 WDK TCP/IP transport , UDP-encapsulated ESP packets
+- UDP-encapsulated ESP packets WDK IPsec offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offloading the Processing of UDP-Encapsulated ESP Packets

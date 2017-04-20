@@ -3,7 +3,16 @@ title: Completing a DMA Transaction
 author: windows-driver-content
 description: Completing a DMA Transaction
 ms.assetid: 90531b72-e51d-451e-ae84-a9bbf0245665
-keywords: ["DMA transactions WDK KMDF , completing", "DMA operations WDK KMDF , transactions", "bus-master DMA WDK KMDF , transactions", "completing DMA transactions WDK KMDF"]
+keywords:
+- DMA transactions WDK KMDF , completing
+- DMA operations WDK KMDF , transactions
+- bus-master DMA WDK KMDF , transactions
+- completing DMA transactions WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Completing a DMA Transaction

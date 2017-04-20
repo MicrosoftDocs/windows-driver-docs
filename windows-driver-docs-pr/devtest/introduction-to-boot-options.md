@@ -2,7 +2,15 @@
 title: Introduction to Boot Options
 description: The concept and content of boot options are very similar on all computers that run Microsoft Windows operating systems.
 ms.assetid: e8e835c4-75de-4ce1-965f-d9b822e15044
-keywords: ["boot options WDK , about boot options", "storing boot options", "boot loaders WDK"]
+keywords:
+- boot options WDK , about boot options
+- storing boot options
+- boot loaders WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Boot Options

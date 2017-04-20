@@ -2,7 +2,17 @@
 title: 802.11 Payload Encapsulation
 description: 802.11 Payload Encapsulation
 ms.assetid: 03336b87-22b0-4a2a-aaa9-91c58f329a16
-keywords: ["encapsulation WDK Native 802.11", "payload encapsulation WDK Native 802.11", "EtherType encapsulations WDK Native 802.11", "send operations WDK Native 802.11", "receive operations WDK Native 802.11"]
+keywords:
+- encapsulation WDK Native 802.11
+- payload encapsulation WDK Native 802.11
+- EtherType encapsulations WDK Native 802.11
+- send operations WDK Native 802.11
+- receive operations WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 Payload Encapsulation

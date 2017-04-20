@@ -3,7 +3,22 @@ title: The V\_NET\_ROOT Structure
 author: windows-driver-content
 description: The V\_NET\_ROOT Structure
 ms.assetid: 866eba91-13b6-4b15-93de-4f627a635c92
-keywords: ["share mapping WDK RDBSS", "V_NET_ROOT structure WDK RDBSS", "mapping shares", "data structures WDK file systems", "RDBSS WDK file systems , connection and file structures", "Redirected Drive Buffering Subsystem WDK file systems , connection and file structures", "connection structures WDK RDBSS", "file structures WDK RDBSS", "structures WDK RDBSS", "connection information WDK RDBSS"]
+keywords:
+- share mapping WDK RDBSS
+- V_NET_ROOT structure WDK RDBSS
+- mapping shares
+- data structures WDK file systems
+- RDBSS WDK file systems , connection and file structures
+- Redirected Drive Buffering Subsystem WDK file systems , connection and file structures
+- connection structures WDK RDBSS
+- file structures WDK RDBSS
+- structures WDK RDBSS
+- connection information WDK RDBSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The V\_NET\_ROOT Structure

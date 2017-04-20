@@ -3,6 +3,11 @@ title: Performing Any Other Needed Initialization
 author: windows-driver-content
 description: Performing Any Other Needed Initialization
 ms.assetid: 781f241f-fb12-460e-b093-ffa916aae495
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performing Any Other Needed Initialization

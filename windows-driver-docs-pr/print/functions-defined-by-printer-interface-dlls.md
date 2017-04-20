@@ -3,7 +3,14 @@ title: Functions Defined by Printer Interface DLLs
 author: windows-driver-content
 description: Functions Defined by Printer Interface DLLs
 ms.assetid: 8b0ae796-67cf-4619-a0a7-6cb6aab8c2e4
-keywords: ["printer interface DLL WDK , functions", "functions WDK printer interface DLL"]
+keywords:
+- printer interface DLL WDK , functions
+- functions WDK printer interface DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functions Defined by Printer Interface DLLs

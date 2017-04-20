@@ -2,7 +2,22 @@
 title: Blitting
 description: Blitting
 ms.assetid: d9cbe939-957d-48e0-8427-d2c1ca0a9dd6
-keywords: ["blt WDK DirectDraw", "drawing blt WDK DirectDraw , about blitting", "DirectDraw blitting WDK Windows 2000 display , about blitting", "blitting WDK DirectDraw , about blitting", "surfaces WDK DirectDraw , blitting", "drawing blt WDK DirectDraw", "DirectDraw blitting WDK Windows 2000 display", "blitting WDK DirectDraw", "blt WDK DirectDraw , about blitting", "DdBlt"]
+keywords:
+- blt WDK DirectDraw
+- drawing blt WDK DirectDraw , about blitting
+- DirectDraw blitting WDK Windows 2000 display , about blitting
+- blitting WDK DirectDraw , about blitting
+- surfaces WDK DirectDraw , blitting
+- drawing blt WDK DirectDraw
+- DirectDraw blitting WDK Windows 2000 display
+- blitting WDK DirectDraw
+- blt WDK DirectDraw , about blitting
+- DdBlt
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Blitting

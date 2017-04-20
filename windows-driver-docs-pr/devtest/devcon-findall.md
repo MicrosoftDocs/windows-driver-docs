@@ -2,13 +2,19 @@
 title: DevCon FindAll
 description: Finds all devices on the computer, including devices that were once attached to the computer but have been detached or moved.
 ms.assetid: 63148bb4-dc54-4b82-9e8f-d6967ad86d74
-keywords: ["DevCon FindAll Driver Development Tools"]
+keywords:
+- DevCon FindAll Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon FindAll
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon FindAll

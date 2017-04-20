@@ -2,7 +2,15 @@
 title: Extensible Access Point Operation Mode
 description: Extensible Access Point Operation Mode
 ms.assetid: 38069e18-6a52-4b72-a51a-7a34f71a049a
-keywords: ["extensible access point WDK Native 802.11", "extensible AP WDK Native 802.11", "ExtAP WDK Native 802.11"]
+keywords:
+- extensible access point WDK Native 802.11
+- extensible AP WDK Native 802.11
+- ExtAP WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Access Point Operation Mode

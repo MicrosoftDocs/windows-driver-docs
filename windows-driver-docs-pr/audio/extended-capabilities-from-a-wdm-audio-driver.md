@@ -2,7 +2,18 @@
 title: Extended Capabilities from a WDM Audio Driver
 description: Extended Capabilities from a WDM Audio Driver
 ms.assetid: 8ee081ee-623d-4eaf-953f-20ccfbbe9800
-keywords: ["WDM audio extensions WDK , about legacy support extensions", "WDM audio extensions WDK , device IDs", "device IDs WDK audio", "unique device IDs WDK audio", "identifying audio devices", "hardware-specific information WDK audio"]
+keywords:
+- WDM audio extensions WDK , about legacy support extensions
+- WDM audio extensions WDK , device IDs
+- device IDs WDK audio
+- unique device IDs WDK audio
+- identifying audio devices
+- hardware-specific information WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extended Capabilities from a WDM Audio Driver

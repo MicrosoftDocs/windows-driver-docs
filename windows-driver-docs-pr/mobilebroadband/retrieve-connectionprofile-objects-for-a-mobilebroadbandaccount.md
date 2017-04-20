@@ -2,6 +2,11 @@
 title: Retrieve ConnectionProfile objects for a MobileBroadbandAccount
 description: Retrieve ConnectionProfile objects for a MobileBroadbandAccount
 ms.assetid: 7e612aa5-1627-4ada-971a-a1d04eafeb81
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieve ConnectionProfile objects for a MobileBroadbandAccount

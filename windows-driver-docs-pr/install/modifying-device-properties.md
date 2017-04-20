@@ -2,7 +2,15 @@
 title: Rules for Modifying Device Properties
 description: Rules for Modifying Device Properties
 ms.assetid: EB554B5C-310A-4b2c-A2D5-22A113415400
-keywords: ["device properties WDK device installations , rules for modifying", "device properties WDK device installations , modifying", "modifying device properties WDK device installations"]
+keywords:
+- device properties WDK device installations , rules for modifying
+- device properties WDK device installations , modifying
+- modifying device properties WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rules for Modifying Device Properties

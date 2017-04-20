@@ -2,7 +2,14 @@
 title: Opening a Device's Hardware Key
 description: Opening a Device's Hardware Key
 ms.assetid: FED22F37-D09C-4207-8C2C-FB6484A8D19D
-keywords: ["hardware keys WDK device installations , opening", "opening hardware keys WDK device installations"]
+keywords:
+- hardware keys WDK device installations , opening
+- opening hardware keys WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening a Device's Hardware Key

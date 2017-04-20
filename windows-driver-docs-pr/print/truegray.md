@@ -3,7 +3,19 @@ title: TrueGray
 author: windows-driver-content
 description: TrueGray
 ms.assetid: d6fef790-79d9-4ea7-8e1d-bca8837108de
-keywords: ["minidrivers WDK Pscript , TrueGray feature", "TrueGray feature", "RGB colors WDK printer", "gray color space WDK Pscript", "ADTrueGray", "color checking WDK Pscript", "checking RGB colors"]
+keywords:
+- minidrivers WDK Pscript , TrueGray feature
+- TrueGray feature
+- RGB colors WDK printer
+- gray color space WDK Pscript
+- ADTrueGray
+- color checking WDK Pscript
+- checking RGB colors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TrueGray

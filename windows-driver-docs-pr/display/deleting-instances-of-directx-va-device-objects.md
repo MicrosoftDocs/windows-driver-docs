@@ -2,7 +2,15 @@
 title: Deleting Instances of DirectX VA Device Objects
 description: Deleting Instances of DirectX VA Device Objects
 ms.assetid: fab8c6eb-97fa-427e-9fb2-6da249d8d97d
-keywords: ["deleting instances of DirectX VA device objects", "removing instances of DirectX VA device objects", "DirectX Video Acceleration WDK Windows 2000 display , deleting instances"]
+keywords:
+- deleting instances of DirectX VA device objects
+- removing instances of DirectX VA device objects
+- DirectX Video Acceleration WDK Windows 2000 display , deleting instances
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting Instances of DirectX VA Device Objects

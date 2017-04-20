@@ -2,7 +2,17 @@
 title: Introduction to System Area Networks
 description: Introduction to System Area Networks
 ms.assetid: 28d92bb5-8c3c-4f46-b908-63e3a3efff37
-keywords: ["system area networks WDK , about system area networks", "SAN WDK , about system area networks", "hubs WDK SANs", "nodes WDK SANs", "SAN NIC WDK SANs"]
+keywords:
+- system area networks WDK , about system area networks
+- SAN WDK , about system area networks
+- hubs WDK SANs
+- nodes WDK SANs
+- SAN NIC WDK SANs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to System Area Networks

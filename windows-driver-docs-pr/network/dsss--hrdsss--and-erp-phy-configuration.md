@@ -2,7 +2,21 @@
 title: DSSS, HRDSSS, and ERP PHY Configuration
 description: DSSS, HRDSSS, and ERP PHY Configuration
 ms.assetid: 925da6fc-af14-4af9-bc11-4da8c4cf6a80
-keywords: ["PHY configuration WDK Native 802.11 , direct-sequence spread spectrum", "PHY configuration WDK Native 802.11 , high-rate DSSS", "PHY configuration WDK Native 802.11 , extended rate PHY", "direct-sequence spread spectrum WDK Native 802.11", "DSSS WDK Native 802.11", "high-rate DSSS WDK Native 802.11", "HRDSSS WDK Native 802.11", "extended rate PHY WDK Native 802.11", "ERP WDK Native 802.11"]
+keywords:
+- PHY configuration WDK Native 802.11 , direct-sequence spread spectrum
+- PHY configuration WDK Native 802.11 , high-rate DSSS
+- PHY configuration WDK Native 802.11 , extended rate PHY
+- direct-sequence spread spectrum WDK Native 802.11
+- DSSS WDK Native 802.11
+- high-rate DSSS WDK Native 802.11
+- HRDSSS WDK Native 802.11
+- extended rate PHY WDK Native 802.11
+- ERP WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DSSS, HRDSSS, and ERP PHY Configuration

@@ -2,7 +2,18 @@
 title: Detaching a Provider Module from a Client Module
 description: Detaching a Provider Module from a Client Module
 ms.assetid: 011d0770-6942-480e-95ee-88a2903822b2
-keywords: ["provider modules WDK Network Module Registrar , detaching", "network modules WDK Network Module Registrar , detachment", "deregistering network modules", "Network Module Registrar WDK , detaching network modules", "NMR WDK , detaching network modules", "NmrDeregisterProvider"]
+keywords:
+- provider modules WDK Network Module Registrar , detaching
+- network modules WDK Network Module Registrar , detachment
+- deregistering network modules
+- Network Module Registrar WDK , detaching network modules
+- NMR WDK , detaching network modules
+- NmrDeregisterProvider
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Detaching a Provider Module from a Client Module

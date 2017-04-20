@@ -2,7 +2,14 @@
 title: Indicating Chimney-Related Events
 description: Indicating Chimney-Related Events
 ms.assetid: 4c5192aa-ffba-4c75-aa4d-ad62a087dba4
-keywords: ["TCP chimney offload WDK networking , event indications", "chimney offload WDK networking , event indications"]
+keywords:
+- TCP chimney offload WDK networking , event indications
+- chimney offload WDK networking , event indications
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Indicating Chimney-Related Events

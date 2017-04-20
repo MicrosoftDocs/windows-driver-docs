@@ -2,6 +2,11 @@
 title: Mobile broadband WinRT API overview
 description: Mobile broadband WinRT API overview
 ms.assetid: 82f562bb-ae2d-43cf-a741-cbf97c35c7c3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mobile broadband WinRT API overview
