@@ -3,7 +3,14 @@ title: SCSI Port Driver
 author: windows-driver-content
 description: SCSI Port Driver
 ms.assetid: e97ea5f2-7f20-4d3d-82a2-7d83e1eba30e
-keywords: ["storage port drivers WDK , SCSI Port driver", "SCSI Port drivers WDK storage"]
+keywords:
+- storage port drivers WDK , SCSI Port driver
+- SCSI Port drivers WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SCSI Port Driver

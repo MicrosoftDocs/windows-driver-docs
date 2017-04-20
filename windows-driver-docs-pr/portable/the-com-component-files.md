@@ -1,6 +1,11 @@
 ---
 Description: The COM Component Files
 title: The COM Component Files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The COM Component Files

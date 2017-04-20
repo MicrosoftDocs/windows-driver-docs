@@ -3,7 +3,18 @@ title: Video Processing Amplifier Properties
 author: windows-driver-content
 description: Video Processing Amplifier Properties
 ms.assetid: 1adc4fcc-c9a2-41a8-90db-1030ba7c257f
-keywords: ["video processing amplifier properties WDK video capture", "amplification properties WDK video capture", "saturation WDK video capture", "contrast WDK video capture", "hue WDK video capture", "PROPSETID_VIDCAP_VIDEOPROCAMP"]
+keywords:
+- video processing amplifier properties WDK video capture
+- amplification properties WDK video capture
+- saturation WDK video capture
+- contrast WDK video capture
+- hue WDK video capture
+- PROPSETID_VIDCAP_VIDEOPROCAMP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Processing Amplifier Properties

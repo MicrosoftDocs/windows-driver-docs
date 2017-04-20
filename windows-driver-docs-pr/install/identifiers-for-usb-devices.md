@@ -2,7 +2,16 @@
 title: Identifiers for USB Devices
 description: Identifiers for USB Devices
 ms.assetid: 9597eae3-2aaf-4942-9d03-1b03bd12fcfd
-keywords: ["device identification strings WDK , USB devices", "identification strings WDK device , USB devices", "identifiers WDK device , USB devices", "USB identifiers WDK device installations"]
+keywords:
+- device identification strings WDK , USB devices
+- identification strings WDK device , USB devices
+- identifiers WDK device , USB devices
+- USB identifiers WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifiers for USB Devices

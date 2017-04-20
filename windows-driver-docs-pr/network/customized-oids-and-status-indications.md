@@ -2,7 +2,18 @@
 title: Customized OIDs and Status Indications
 description: Customized OIDs and Status Indications
 ms.assetid: 675aff2c-8e4a-4a02-8d08-0f59b8fcd4a2
-keywords: ["status indications WDK networking , WMI", "WMI WDK networking , status indications", "Windows Management Instrumentation WDK networking , status indications", "custom OIDs WDK networking", "custom status indications WDK networking", "WMI WDK networking , OID"]
+keywords:
+- status indications WDK networking , WMI
+- WMI WDK networking , status indications
+- Windows Management Instrumentation WDK networking , status indications
+- custom OIDs WDK networking
+- custom status indications WDK networking
+- WMI WDK networking , OID
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customized OIDs and Status Indications

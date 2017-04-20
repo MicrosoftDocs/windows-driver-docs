@@ -3,6 +3,11 @@ title: What's New In Sensors
 author: windows-driver-content
 description: This topic summarizes the new features and improvements for Sensors in Windows 10.
 ms.assetid: 37F202DF-C239-4D2E-9728-EA1BD4B1448D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What's New In Sensors

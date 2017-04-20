@@ -2,7 +2,15 @@
 title: Protocol Driver Design Concepts
 description: Protocol Driver Design Concepts
 ms.assetid: e37a1a7d-3bc4-4ce6-99e7-99e86fb4bba6
-keywords: ["protocol drivers WDK networking , designing", "NDIS protocol drivers WDK , designing", "writing NDIS protocol drivers WDK networking"]
+keywords:
+- protocol drivers WDK networking , designing
+- NDIS protocol drivers WDK , designing
+- writing NDIS protocol drivers WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Protocol Driver Design Concepts

@@ -2,7 +2,13 @@
 title: Querying or Setting Information
 description: Querying or Setting Information
 ms.assetid: 39bd9846-7c7e-4b93-8060-4da9c66ac591
-keywords: ["querying connection-oriented information"]
+keywords:
+- querying connection-oriented information
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying or Setting Information

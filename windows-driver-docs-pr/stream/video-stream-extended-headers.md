@@ -3,7 +3,16 @@ title: Video Stream Extended Headers
 author: windows-driver-content
 description: Video Stream Extended Headers
 ms.assetid: 6540026c-a41a-49e2-a41f-fe64106408f5
-keywords: ["video capture WDK AVStream , extended headers", "capturing video WDK AVStream , extended headers", "extended headers WDK video capture", "headers WDK video capture"]
+keywords:
+- video capture WDK AVStream , extended headers
+- capturing video WDK AVStream , extended headers
+- extended headers WDK video capture
+- headers WDK video capture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Stream Extended Headers

@@ -3,7 +3,18 @@ title: Troubleshooting GDL Parsing
 author: windows-driver-content
 description: Troubleshooting GDL Parsing
 ms.assetid: 8c678a2f-b15b-4693-9bed-0edec06b3485
-keywords: ["GDL WDK , parser", "parser WDK GDL , troubleshooting parsing", "parsing GDL data WDK", "troubleshooting GDL parsing WDK", "GDL WDK , parsing errors", "GDL WDK , errors"]
+keywords:
+- GDL WDK , parser
+- parser WDK GDL , troubleshooting parsing
+- parsing GDL data WDK
+- troubleshooting GDL parsing WDK
+- GDL WDK , parsing errors
+- GDL WDK , errors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting GDL Parsing

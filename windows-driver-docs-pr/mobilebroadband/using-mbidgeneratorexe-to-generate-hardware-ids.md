@@ -2,6 +2,11 @@
 title: Using mbidgenerator.exe to generate hardware IDs
 description: Using mbidgenerator.exe to generate hardware IDs
 ms.assetid: 2f2286e2-9300-4ef8-8e13-0851b60cd8eb
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using mbidgenerator.exe to generate hardware IDs

@@ -2,6 +2,11 @@
 title: Accessing Icon Properties of a Device Setup Class
 description: Accessing Icon Properties of a Device Setup Class
 ms.assetid: 082b23ee-8f5c-41ad-9bb1-1437b71aa921
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Icon Properties of a Device Setup Class

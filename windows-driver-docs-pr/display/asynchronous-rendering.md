@@ -2,7 +2,18 @@
 title: Asynchronous Rendering
 description: Asynchronous Rendering
 ms.assetid: f291e416-aaee-4639-9410-6d01b3b02097
-keywords: ["display drivers WDK Windows 2000 , asynchronous rendering", "asynchronous rendering WDK Windows 2000 display", "rendering asynchronously WDK Windows 2000 display", "synchronization WDK Windows 2000 display", "batching DirectDraw drawing calls WDK Windows 2000 display", "DirectDraw WDK Windows 2000 display , call batches"]
+keywords:
+- display drivers WDK Windows 2000 , asynchronous rendering
+- asynchronous rendering WDK Windows 2000 display
+- rendering asynchronously WDK Windows 2000 display
+- synchronization WDK Windows 2000 display
+- batching DirectDraw drawing calls WDK Windows 2000 display
+- DirectDraw WDK Windows 2000 display , call batches
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Asynchronous Rendering

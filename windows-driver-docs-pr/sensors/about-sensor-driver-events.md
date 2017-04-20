@@ -3,6 +3,11 @@ title: About Sensor Driver Events
 author: windows-driver-content
 description: About Sensor Driver Events
 ms.assetid: 1e747743-f701-4854-92be-7b55c39fee08
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About Sensor Driver Events

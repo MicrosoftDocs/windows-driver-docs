@@ -2,7 +2,18 @@
 title: D3dCreateSurfaceEx and Complex Surfaces
 description: D3dCreateSurfaceEx and Complex Surfaces
 ms.assetid: aabe01bd-a7b8-4533-970e-4e1e49ba6596
-keywords: ["context WDK Direct3D , D3dCreateSurfaceEx", "D3dCreateSurfaceEx", "complex surfaces WDK Direct3D", "implicit surface attachments WDK Direct3D", "explicit surface attachments WDK Direct3D", "surface attachments WDK Direct3D"]
+keywords:
+- context WDK Direct3D , D3dCreateSurfaceEx
+- D3dCreateSurfaceEx
+- complex surfaces WDK Direct3D
+- implicit surface attachments WDK Direct3D
+- explicit surface attachments WDK Direct3D
+- surface attachments WDK Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # D3dCreateSurfaceEx and Complex Surfaces

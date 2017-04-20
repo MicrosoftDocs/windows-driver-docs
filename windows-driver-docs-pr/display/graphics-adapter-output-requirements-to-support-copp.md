@@ -2,7 +2,17 @@
 title: Graphics Adapter Output Requirements to Support COPP
 description: Graphics Adapter Output Requirements to Support COPP
 ms.assetid: e557487d-dba5-4185-9c35-da3185c291f6
-keywords: ["copy protection WDK COPP , graphics adapter output requirements", "video copy protection WDK COPP , graphics adapter output requirements", "COPP WDK DirectX VA , graphics adapter output requirements", "protected video WDK COPP , graphics adapter output requirements", "graphics adapter output requirements WDK COPP"]
+keywords:
+- copy protection WDK COPP , graphics adapter output requirements
+- video copy protection WDK COPP , graphics adapter output requirements
+- COPP WDK DirectX VA , graphics adapter output requirements
+- protected video WDK COPP , graphics adapter output requirements
+- graphics adapter output requirements WDK COPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Graphics Adapter Output Requirements to Support COPP

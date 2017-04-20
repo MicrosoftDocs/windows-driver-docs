@@ -2,6 +2,11 @@
 title: SDV environment variable is not set
 description: SDV environment variable is not set
 ms.assetid: 608a103b-333c-4692-b64b-4c1508f37b94
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # %SDV% environment variable is not set

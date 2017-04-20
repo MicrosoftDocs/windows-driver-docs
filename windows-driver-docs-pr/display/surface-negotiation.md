@@ -2,7 +2,26 @@
 title: Surface Negotiation
 description: Surface Negotiation
 ms.assetid: af368be6-ea32-49ea-b49e-7e3c9a30facb
-keywords: ["surface negotiation WDK GDI", "GDI WDK Windows 2000 display , surfaces", "graphics drivers WDK Windows 2000 display , surface negotiation", "drawing WDK GDI , surface negotiation", "negotiation WDK GDI", "surface negotiation WDK GDI , about surface negotiation", "GDI WDK Windows 2000 display , bitmaps", "graphics drivers WDK Windows 2000 display , bitmaps", "drawing WDK GDI , bitmaps", "bitmaps WDK GDI", "secondary surfaces WDK GDI", "off-screen surfaces WDK GDI", "primary surfaces WDK GDI", "on-screen surfaces WDK GDI"]
+keywords:
+- surface negotiation WDK GDI
+- GDI WDK Windows 2000 display , surfaces
+- graphics drivers WDK Windows 2000 display , surface negotiation
+- drawing WDK GDI , surface negotiation
+- negotiation WDK GDI
+- surface negotiation WDK GDI , about surface negotiation
+- GDI WDK Windows 2000 display , bitmaps
+- graphics drivers WDK Windows 2000 display , bitmaps
+- drawing WDK GDI , bitmaps
+- bitmaps WDK GDI
+- secondary surfaces WDK GDI
+- off-screen surfaces WDK GDI
+- primary surfaces WDK GDI
+- on-screen surfaces WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Surface Negotiation

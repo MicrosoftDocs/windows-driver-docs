@@ -2,7 +2,15 @@
 title: Determining if a Debugger is Attached
 description: Determining if a Debugger is Attached
 ms.assetid: b40482c4-7186-4632-b1d9-3c91a415b7c8
-keywords: ["debugging code WDK , attached debuggers", "attached debuggers WDK", "status information WDK debugging"]
+keywords:
+- debugging code WDK , attached debuggers
+- attached debuggers WDK
+- status information WDK debugging
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining if a Debugger is Attached

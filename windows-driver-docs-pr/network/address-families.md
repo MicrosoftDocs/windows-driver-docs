@@ -2,7 +2,16 @@
 title: Address Families
 description: Address Families
 ms.assetid: d40df44e-f88b-4181-84ab-3fbf37172aaf
-keywords: ["connection-oriented NDIS WDK , address families", "CoNDIS WDK networking , address families", "address families WDK networking", "AFs WDK networking"]
+keywords:
+- connection-oriented NDIS WDK , address families
+- CoNDIS WDK networking , address families
+- address families WDK networking
+- AFs WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Address Families

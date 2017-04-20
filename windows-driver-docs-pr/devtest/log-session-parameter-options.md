@@ -2,7 +2,26 @@
 title: Log Session Parameter Options
 description: Log Session Parameter Options
 ms.assetid: 5398dfa7-abeb-443b-ab64-73b6599c8e73
-keywords: ["trace sessions WDK , advanced options", "trace sessions WDK , log session parameter options", "log session parameter options WDK", "trace flags WDK", "flags WDK software tracing", "flush time WDK software tracing", "buffers WDK software tracing", "decay time WDK software tracing", "circular buffers WDK software tracing", "global sequence numbers WDK software tracing", "trace levels WDK", "levels WDK software tracing", "WinDbg WDK software tracing", "virtual files WDK software tracing"]
+keywords:
+- trace sessions WDK , advanced options
+- trace sessions WDK , log session parameter options
+- log session parameter options WDK
+- trace flags WDK
+- flags WDK software tracing
+- flush time WDK software tracing
+- buffers WDK software tracing
+- decay time WDK software tracing
+- circular buffers WDK software tracing
+- global sequence numbers WDK software tracing
+- trace levels WDK
+- levels WDK software tracing
+- WinDbg WDK software tracing
+- virtual files WDK software tracing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Log Session Parameter Options

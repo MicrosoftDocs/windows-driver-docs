@@ -2,7 +2,17 @@
 title: Creating the Compressed Texture Surface
 description: Creating the Compressed Texture Surface
 ms.assetid: 6d1cc079-642c-4662-ae72-c0362d8a5b2a
-keywords: ["drawing compressed textures WDK DirectDraw , creating", "DirectDraw compressed textures WDK Windows 2000 display , creating", "compressed texture surfaces WDK DirectDraw , creating", "surfaces WDK DirectDraw , compressed textures", "textures WDK DirectDraw , compressed"]
+keywords:
+- drawing compressed textures WDK DirectDraw , creating
+- DirectDraw compressed textures WDK Windows 2000 display , creating
+- compressed texture surfaces WDK DirectDraw , creating
+- surfaces WDK DirectDraw , compressed textures
+- textures WDK DirectDraw , compressed
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating the Compressed Texture Surface

@@ -2,7 +2,24 @@
 title: MPEG and Progressive Content
 description: MPEG and Progressive Content
 ms.assetid: 6973011a-dcee-4411-9382-8c0af2bd85b1
-keywords: ["MPEG WDK video port extensions", "progressive content identification WDK video port extensions", "PROGRESSIVE_FRAME", "TOP_FIELD_FIRST", "REPEAT_FIRST_FIELD", "DirectX VPE support WDK DirectDraw , progressive content identification", "drawing VPEs WDK DirectDraw , progressive content identification", "DirectDraw VPEs WDK Windows 2000 display , progressive content identification", "video port extensions WDK DirectDraw , progressive content identification", "VPEs WDK DirectDraw , progressive content identification", "3 2 pulldown WDK video port extensions", "identifying progressive content"]
+keywords:
+- MPEG WDK video port extensions
+- progressive content identification WDK video port extensions
+- PROGRESSIVE_FRAME
+- TOP_FIELD_FIRST
+- REPEAT_FIRST_FIELD
+- DirectX VPE support WDK DirectDraw , progressive content identification
+- drawing VPEs WDK DirectDraw , progressive content identification
+- DirectDraw VPEs WDK Windows 2000 display , progressive content identification
+- video port extensions WDK DirectDraw , progressive content identification
+- VPEs WDK DirectDraw , progressive content identification
+- 3 2 pulldown WDK video port extensions
+- identifying progressive content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MPEG and Progressive Content

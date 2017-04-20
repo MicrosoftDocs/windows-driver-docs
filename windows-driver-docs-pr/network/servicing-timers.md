@@ -2,7 +2,15 @@
 title: Servicing Timers
 description: Servicing Timers
 ms.assetid: 6a80a55b-4c7e-4a48-8903-0a1fb28af153
-keywords: ["timer services WDK NDIS", "NDIS timer services WDK", "canceling NDIS timers"]
+keywords:
+- timer services WDK NDIS
+- NDIS timer services WDK
+- canceling NDIS timers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Servicing Timers

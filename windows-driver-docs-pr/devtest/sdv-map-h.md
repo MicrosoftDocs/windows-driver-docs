@@ -2,7 +2,19 @@
 title: Sdv-map.h
 description: Sdv-map.h
 ms.assetid: c230fb86-fe65-416b-bd3e-a0ab7270576d
-keywords: ["output files WDK Static Driver Verifier", "Sdv-map.h WDK Static Driver Verifier", "header files WDK Static Driver Verifier", "driver entry points WDK Static Driver Verifier", "entry points WDK Static Driver Verifier", "Sdv-map.h WDK Static Driver Verifier , about Sdv-map.h", "scanning DriverEntry routine WDK Static Driver Verifier"]
+keywords:
+- output files WDK Static Driver Verifier
+- Sdv-map.h WDK Static Driver Verifier
+- header files WDK Static Driver Verifier
+- driver entry points WDK Static Driver Verifier
+- entry points WDK Static Driver Verifier
+- Sdv-map.h WDK Static Driver Verifier , about Sdv-map.h
+- scanning DriverEntry routine WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sdv-map.h

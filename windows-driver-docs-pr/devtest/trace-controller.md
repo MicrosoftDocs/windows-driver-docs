@@ -2,7 +2,14 @@
 title: Trace Controller
 description: Trace Controller
 ms.assetid: 4c2e88ba-c07e-4079-a401-20040f558971
-keywords: ["trace controllers WDK", "controllers WDK software tracing"]
+keywords:
+- trace controllers WDK
+- controllers WDK software tracing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Controller

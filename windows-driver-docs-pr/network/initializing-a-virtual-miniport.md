@@ -2,7 +2,16 @@
 title: Initializing a Virtual Miniport
 description: Initializing a Virtual Miniport
 ms.assetid: 5f2e23a9-375b-4b0d-95d2-5a3af1acb3be
-keywords: ["initializing virtual miniports", "virtual miniports WDK networking", "NDIS intermediate drivers WDK , virtual miniports", "intermediate drivers WDK networking , virtual miniports"]
+keywords:
+- initializing virtual miniports
+- virtual miniports WDK networking
+- NDIS intermediate drivers WDK , virtual miniports
+- intermediate drivers WDK networking , virtual miniports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a Virtual Miniport

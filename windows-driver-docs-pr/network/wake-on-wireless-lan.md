@@ -2,7 +2,15 @@
 title: Wake-on-Wireless LAN
 description: Wake-on-Wireless LAN
 ms.assetid: 91f436a2-4bae-4423-a48d-efe845844ec1
-keywords: ["power management WDK networking , Native 802.11 wake-on-wireless LAN", "wake-on-wireless LAN WDK Native 802.11", "WOL wake-on-wireless LAN WDK Native 802.11"]
+keywords:
+- power management WDK networking , Native 802.11 wake-on-wireless LAN
+- wake-on-wireless LAN WDK Native 802.11
+- WOL wake-on-wireless LAN WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wake-on-Wireless LAN

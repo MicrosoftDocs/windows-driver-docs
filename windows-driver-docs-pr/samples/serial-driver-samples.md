@@ -3,6 +3,11 @@ title: Serial driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom serial driver for your device.
 ms.assetid: C4C6ED0B-50EA-4483-A81F-FC3C7F5CCE12
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Serial driver samples

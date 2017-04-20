@@ -2,7 +2,13 @@
 title: General Roaming Operation Guidelines
 description: General Roaming Operation Guidelines
 ms.assetid: c1f052ce-ad83-4801-9829-b0dfebd47239
-keywords: ["roaming operations WDK Native 802.11"]
+keywords:
+- roaming operations WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Roaming Operation Guidelines

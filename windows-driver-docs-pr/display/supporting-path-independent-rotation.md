@@ -2,6 +2,11 @@
 title: Supporting Path-Independent Rotation
 description: Starting with Windows 8.1 Update, the operating system supports cloning portrait-first displays on landscape-first displays with the greatest possible resolution.
 ms.assetid: 136CEDA5-2839-4E6E-A032-1A9222C769C6
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="display.supporting_path-independent_rotation"></span>Supporting Path-Independent Rotation

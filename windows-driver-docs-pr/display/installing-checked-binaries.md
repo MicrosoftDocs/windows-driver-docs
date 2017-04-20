@@ -2,7 +2,15 @@
 title: Installing Checked Binaries
 description: Installing Checked Binaries
 ms.assetid: a289206a-e793-48a6-875c-f0204edfaaf3
-keywords: ["checked binaries WDK display", "binaries WDK display", "free binaries WDK display"]
+keywords:
+- checked binaries WDK display
+- binaries WDK display
+- free binaries WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Checked Binaries

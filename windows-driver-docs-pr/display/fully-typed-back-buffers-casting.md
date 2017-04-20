@@ -2,7 +2,17 @@
 title: Fully-Typed Back Buffers Casting
 description: Fully-Typed Back Buffers Casting
 ms.assetid: d34f95a4-e380-4bfb-9909-0938f63174be
-keywords: ["Direct3D version 10.1 WDK Windows 7 display , casting fully-typed back buffers", "casting fully-typed back buffers WDK Windows 7 display", "back buffers WDK Windows 7 display", "back buffers WDK Windows 7 display , fully typed", "fully-typed back buffers WDK Windows 7 display"]
+keywords:
+- Direct3D version 10.1 WDK Windows 7 display , casting fully-typed back buffers
+- casting fully-typed back buffers WDK Windows 7 display
+- back buffers WDK Windows 7 display
+- back buffers WDK Windows 7 display , fully typed
+- fully-typed back buffers WDK Windows 7 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Fully-Typed Back Buffers Casting

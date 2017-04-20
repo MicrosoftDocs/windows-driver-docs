@@ -2,6 +2,11 @@
 title: DeviceNotificationHandler
 description: DeviceNotificationHandler
 ms.assetid: 04c4edb5-6dd1-4810-b23a-4f7ddc8af338
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DeviceNotificationHandler

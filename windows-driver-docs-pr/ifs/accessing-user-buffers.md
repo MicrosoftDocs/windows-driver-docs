@@ -3,7 +3,15 @@ title: Accessing User Buffers
 author: windows-driver-content
 description: Accessing User Buffers
 ms.assetid: 5ab32074-0949-4cdc-8a95-1bded0085ce1
-keywords: ["filter manager WDK file system minifilter , user buffers", "buffers WDK file system minifilter", "user buffers WDK file system minifilter"]
+keywords:
+- filter manager WDK file system minifilter , user buffers
+- buffers WDK file system minifilter
+- user buffers WDK file system minifilter
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing User Buffers

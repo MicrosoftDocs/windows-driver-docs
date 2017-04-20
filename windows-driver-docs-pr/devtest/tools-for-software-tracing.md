@@ -2,7 +2,19 @@
 title: Tools for Software Tracing
 description: The WDK includes tools that are designed to support Event Tracing for Windows (ETW) and to supplement the tracing tools that are included in Windows.
 ms.assetid: 31056b02-378f-4756-b5a0-3d4cbbc6d3da
-keywords: ["tools WDK , software tracing", "driver development tools WDK , software tracing", "software tracing WDK", "tracing WDK", "tracing WDK , about software tracing", "event tracing WDK", "trace tools WDK"]
+keywords:
+- tools WDK , software tracing
+- driver development tools WDK , software tracing
+- software tracing WDK
+- tracing WDK
+- tracing WDK , about software tracing
+- event tracing WDK
+- trace tools WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tools for Software Tracing

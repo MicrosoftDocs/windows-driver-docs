@@ -2,7 +2,16 @@
 title: Generic Identifiers
 description: Generic Identifiers
 ms.assetid: 75dab2fc-e897-4bce-b719-98ad89817fca
-keywords: ["device identification strings WDK , generic", "identification strings WDK device , generic", "identifiers WDK device , generic", "generic device identifiers WDK device installations"]
+keywords:
+- device identification strings WDK , generic
+- identification strings WDK device , generic
+- identifiers WDK device , generic
+- generic device identifiers WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Generic Identifiers

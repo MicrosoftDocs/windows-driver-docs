@@ -3,7 +3,18 @@ title: Handling Device-Managed Surfaces
 author: windows-driver-content
 description: Handling Device-Managed Surfaces
 ms.assetid: 4403165f-c528-450e-9c96-77a9ce0778aa
-keywords: ["Unidrv, device-managed surfaces", "device-managed surfaces WDK Unidrv", "surface device-managed WDK Unidrv", "hooking graphics DDI functions WDK Unidrv", "DrvTextOut", "Unidrv WDK print"]
+keywords:
+- Unidrv, device-managed surfaces
+- device-managed surfaces WDK Unidrv
+- surface device-managed WDK Unidrv
+- hooking graphics DDI functions WDK Unidrv
+- DrvTextOut
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Device-Managed Surfaces

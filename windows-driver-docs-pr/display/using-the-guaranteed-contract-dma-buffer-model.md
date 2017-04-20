@@ -2,7 +2,15 @@
 title: Using the Guaranteed Contract DMA Buffer Model
 description: Using the Guaranteed Contract DMA Buffer Model
 ms.assetid: fee6f7eb-157b-466d-b482-110a48045283
-keywords: ["DMA buffers WDK display , guaranteed contract mode", "guaranteed contract DMA buffers WDK display", "patch-location lists WDK display"]
+keywords:
+- DMA buffers WDK display , guaranteed contract mode
+- guaranteed contract DMA buffers WDK display
+- patch-location lists WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Guaranteed Contract DMA Buffer Model

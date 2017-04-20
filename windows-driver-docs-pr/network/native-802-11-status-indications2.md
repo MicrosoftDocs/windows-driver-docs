@@ -2,7 +2,15 @@
 title: Native 802.11 Status Indications
 description: Native 802.11 Status Indications
 ms.assetid: 22905775-faef-43b9-ad46-8cfe8f630e31
-keywords: ["Native 802.11 miniport drivers WDK networking , status indications", "miniport drivers WDK Native 802.11 , status indications", "status indications WDK networking , Native 802.11"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , status indications
+- miniport drivers WDK Native 802.11 , status indications
+- status indications WDK networking , Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Status Indications

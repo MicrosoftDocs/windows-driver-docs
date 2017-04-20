@@ -2,6 +2,11 @@
 title: Bass Management
 description: Bass Management
 ms.assetid: b3fb6fcf-cf86-4627-912e-253b5864ab9e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bass Management

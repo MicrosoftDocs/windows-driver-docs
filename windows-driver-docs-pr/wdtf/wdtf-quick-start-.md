@@ -3,6 +3,11 @@ title: WDTF Quick Start
 author: windows-driver-content
 description: The Windows Driver Kit 8.0 provides an integrated solution for writing, deploying, and running tests that use the Windows Driver Test Framework (WDTF).
 ms.assetid: 77402D9A-DD21-4B7F-B052-43DB8C04EA1B
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDTF Quick Start

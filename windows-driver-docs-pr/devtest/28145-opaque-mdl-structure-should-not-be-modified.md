@@ -2,7 +2,14 @@
 title: C28145
 description: Warning C28145 The opaque MDL structure should not be modified by a driver.
 ms.assetid: efbd667b-fb0e-4a4d-bb6a-e8249c113a91
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28145

@@ -3,7 +3,17 @@ title: Deleting a Per-Stream Context
 author: windows-driver-content
 description: Deleting a Per-Stream Context
 ms.assetid: 293a2ba2-af8a-4c1b-bc35-5e37e6e84d57
-keywords: ["filter drivers WDK file system , per-stream context tracking", "file system filter drivers WDK , per-stream context tracking", "per-stream context tracking WDK file system", "tracking per-stream context WDK file system", "deleting per-stream context"]
+keywords:
+- filter drivers WDK file system , per-stream context tracking
+- file system filter drivers WDK , per-stream context tracking
+- per-stream context tracking WDK file system
+- tracking per-stream context WDK file system
+- deleting per-stream context
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting a Per-Stream Context

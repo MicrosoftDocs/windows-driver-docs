@@ -2,7 +2,20 @@
 title: Network Wake-Up Events
 description: Network Wake-Up Events
 ms.assetid: 85195d44-4d79-4feb-af35-c478dc4319c5
-keywords: ["wake-up capabilities WDK networking , types", "NICs WDK networking , wake-up events", "network interface cards WDK networking , wake-up events", "Magic Packet WDK networking", "wake-up capabilities WDK networking , about wake-up capabilities", "network wake-up events WDK networking", "power management WDK NDIS miniport , wake-up capabilities", "wake-up frames WDK networking"]
+keywords:
+- wake-up capabilities WDK networking , types
+- NICs WDK networking , wake-up events
+- network interface cards WDK networking , wake-up events
+- Magic Packet WDK networking
+- wake-up capabilities WDK networking , about wake-up capabilities
+- network wake-up events WDK networking
+- power management WDK NDIS miniport , wake-up capabilities
+- wake-up frames WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Wake-Up Events

@@ -2,7 +2,13 @@
 title: Supporting Kernel-Mode Command Buffers
 description: Supporting Kernel-Mode Command Buffers
 ms.assetid: c61a39b3-6fd6-461f-a68f-450ccd705f6f
-keywords: ["command buffer WDK display"]
+keywords:
+- command buffer WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Kernel-Mode Command Buffers

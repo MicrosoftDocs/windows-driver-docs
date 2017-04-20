@@ -2,7 +2,15 @@
 title: Remove Section in a Network INF File
 description: Remove Section in a Network INF File
 ms.assetid: c9be4e98-fa35-4966-895a-aebe29f16289
-keywords: ["INF files WDK network , Remove section", "network INF files WDK , Remove section", "Remove section WDK networking"]
+keywords:
+- INF files WDK network , Remove section
+- network INF files WDK , Remove section
+- Remove section WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remove Section in a Network INF File

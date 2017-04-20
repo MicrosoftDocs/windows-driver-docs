@@ -2,7 +2,13 @@
 title: Rendering and Capturing Audio Content by Using the USBAudio Driver
 description: Rendering and Capturing Audio Content by Using the USBAudio Driver
 ms.assetid: 92a6ad18-75ba-4382-a6d1-42f28133a158
-keywords: ["USBAudio class system driver WDK audio"]
+keywords:
+- USBAudio class system driver WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rendering and Capturing Audio Content by Using the USBAudio Driver

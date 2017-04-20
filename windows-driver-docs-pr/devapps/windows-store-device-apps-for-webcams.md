@@ -2,6 +2,11 @@
 title: Windows Store device apps for cameras
 description: This section introduces Windows Store device apps for cameras.
 ms.assetid: 6CF13679-BCF3-443C-A864-4BBC54B8DA1C
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Store device apps for cameras

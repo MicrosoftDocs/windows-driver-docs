@@ -2,7 +2,20 @@
 title: Advance Operations
 description: Advance Operations
 ms.assetid: 42554221-201d-4014-900d-435a47b3afa1
-keywords: ["network data WDK , advance operations", "data WDK networking , advance operations", "packets WDK networking , advance operations", "advance operations WDK networking", "sending data WDK networking", "receiving data WDK networking", "freeing MDLs", "reducing use"]
+keywords:
+- network data WDK , advance operations
+- data WDK networking , advance operations
+- packets WDK networking , advance operations
+- advance operations WDK networking
+- sending data WDK networking
+- receiving data WDK networking
+- freeing MDLs
+- reducing use
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Advance Operations

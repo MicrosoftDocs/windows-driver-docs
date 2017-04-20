@@ -2,7 +2,16 @@
 title: Registering a Network Interface
 description: Registering a Network Interface
 ms.assetid: 7e3c3b0f-2013-4133-8b52-fa9e66f963cb
-keywords: ["NDIS network interfaces WDK , registering", "network interfaces WDK , registering", "registering network interfaces", "NdisIfRegisterInterface"]
+keywords:
+- NDIS network interfaces WDK , registering
+- network interfaces WDK , registering
+- registering network interfaces
+- NdisIfRegisterInterface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering a Network Interface

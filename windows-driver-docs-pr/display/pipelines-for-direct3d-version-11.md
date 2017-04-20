@@ -2,7 +2,26 @@
 title: Pipelines for Direct3D Version 11
 description: Pipelines for Direct3D Version 11
 ms.assetid: 7d724751-761e-409c-8398-d1b5d58c057c
-keywords: ["Direct3D version 11 WDK Windows 7 display , pipelines for", "Direct3D version 11 WDK Windows Server 2008 R2 display , pipelines for", "pipelines for Direct3D version 11 WDK Windows 7 display", "pipelines for Direct3D version 11 WDK Windows Server 2008 R2 display", "hull shader WDK Windows 7 display", "hull shader WDK Windows Server 2008 R2 display", "tessellator WDK Windows 7 display", "tessellator WDK Windows Server 2008 R2 display", "domain shader WDK Windows 7 display", "domain shader WDK Windows Server 2008 R2 display", "compute shader WDK Windows 7 display", "compute shader WDK Windows Server 2008 R2 display", "unordered access resource views WDK Windows 7 display", "unordered access resource views WDK Windows Server 2008 R2 display"]
+keywords:
+- Direct3D version 11 WDK Windows 7 display , pipelines for
+- Direct3D version 11 WDK Windows Server 2008 R2 display , pipelines for
+- pipelines for Direct3D version 11 WDK Windows 7 display
+- pipelines for Direct3D version 11 WDK Windows Server 2008 R2 display
+- hull shader WDK Windows 7 display
+- hull shader WDK Windows Server 2008 R2 display
+- tessellator WDK Windows 7 display
+- tessellator WDK Windows Server 2008 R2 display
+- domain shader WDK Windows 7 display
+- domain shader WDK Windows Server 2008 R2 display
+- compute shader WDK Windows 7 display
+- compute shader WDK Windows Server 2008 R2 display
+- unordered access resource views WDK Windows 7 display
+- unordered access resource views WDK Windows Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pipelines for Direct3D Version 11

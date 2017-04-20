@@ -2,7 +2,20 @@
 title: INF Override for Configuring PC Card Interrupts
 description: INF Override for Configuring PC Card Interrupts
 ms.assetid: 90c951c4-0106-426a-b650-aeb93b893206
-keywords: ["IRQ routing WDK PCMCIA bus", "PCMCIA WDK buses , IRQ routing", "PC Cards WDK PCMCIA bus", "interrupts WDK PCMCIA bus", "PCI interrupts WDK PCMCIA bus", "ISA interrupts WDK PCMCIA bus", "INF files WDK PCMCIA bus", "PcmciaExclusiveIrq"]
+keywords:
+- IRQ routing WDK PCMCIA bus
+- PCMCIA WDK buses , IRQ routing
+- PC Cards WDK PCMCIA bus
+- interrupts WDK PCMCIA bus
+- PCI interrupts WDK PCMCIA bus
+- ISA interrupts WDK PCMCIA bus
+- INF files WDK PCMCIA bus
+- PcmciaExclusiveIrq
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Override for Configuring PC Card Interrupts

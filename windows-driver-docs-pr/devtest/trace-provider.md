@@ -2,7 +2,17 @@
 title: Trace Provider
 description: Trace Provider
 ms.assetid: 06fcb37b-6cc3-4e64-8f53-86634836c7bd
-keywords: ["trace providers WDK", "Event Tracing for Windows WDK , providers", "ETW WDK , providers", "providers WDK software tracing", "trace sessions WDK , providers"]
+keywords:
+- trace providers WDK
+- Event Tracing for Windows WDK , providers
+- ETW WDK , providers
+- providers WDK software tracing
+- trace sessions WDK , providers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Provider

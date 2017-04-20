@@ -2,6 +2,11 @@
 title: VMQ Receive Path
 description: VMQ Receive Path
 ms.assetid: e59907fc-94dc-45c4-943d-1628c63961dc
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VMQ Receive Path

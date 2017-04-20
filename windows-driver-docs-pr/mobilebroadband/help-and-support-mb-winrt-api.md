@@ -2,6 +2,11 @@
 title: Help and support
 description: Help and support
 ms.assetid: 0d584fa5-4311-4e42-bf96-b0a83a2bda1b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Help and support

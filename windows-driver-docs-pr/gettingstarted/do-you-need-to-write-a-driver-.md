@@ -2,6 +2,11 @@
 title: Do you need to write a driver
 description: Microsoft Windows contains built-in drivers for many device types. If there is a built-in driver for your device type, you won't need to write your own driver. Your device can use the built-in driver.
 ms.assetid: B08994F9-9E60-4C49-BD5C-F5C128075D33
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Do you need to write a driver?

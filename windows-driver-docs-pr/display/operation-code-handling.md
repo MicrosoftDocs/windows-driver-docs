@@ -2,7 +2,15 @@
 title: Operation Code Handling
 description: Operation Code Handling
 ms.assetid: 97de8370-316e-41df-bf27-1985af47a4e0
-keywords: ["Direct3D WDK Windows 2000 display , operation codes", "operation codes WDK Direct3D", "D3dDrawPrimitives2"]
+keywords:
+- Direct3D WDK Windows 2000 display , operation codes
+- operation codes WDK Direct3D
+- D3dDrawPrimitives2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Operation Code Handling

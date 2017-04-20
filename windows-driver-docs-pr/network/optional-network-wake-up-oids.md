@@ -2,7 +2,13 @@
 title: Optional Network Wake Up OIDs
 description: Optional Network Wake Up OIDs
 ms.assetid: 0e9b4844-1623-4bfd-8e73-ebbd970c7e95
-keywords: ["Optional Network Wakeup OIDs"]
+keywords:
+- Optional Network Wakeup OIDs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Optional Network Wake Up OIDs

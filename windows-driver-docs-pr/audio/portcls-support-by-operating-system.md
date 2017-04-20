@@ -2,7 +2,25 @@
 title: PortCls Support by Operating System
 description: PortCls Support by Operating System
 ms.assetid: 87291410-41fa-49d2-a1e2-6d5d9b90deaf
-keywords: ["audio miniport drivers WDK , Port Class", "miniport drivers WDK audio , Port Class", "Port Class library WDK audio", "PortCls WDK audio , support per operating system", "audio power management interfaces WDK", "audio stream object interfaces WDK", "audio miniport auxillary interfaces WDK", "audio miniport object interfaces WDK", "audio port object interfaces WDK", "audio helper object interfaces WDK", "audio port class interfaces WDK", "interfaces WDK Port Class", "prefetch offset"]
+keywords:
+- audio miniport drivers WDK , Port Class
+- miniport drivers WDK audio , Port Class
+- Port Class library WDK audio
+- PortCls WDK audio , support per operating system
+- audio power management interfaces WDK
+- audio stream object interfaces WDK
+- audio miniport auxillary interfaces WDK
+- audio miniport object interfaces WDK
+- audio port object interfaces WDK
+- audio helper object interfaces WDK
+- audio port class interfaces WDK
+- interfaces WDK Port Class
+- prefetch offset
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PortCls Support by Operating System

@@ -2,7 +2,19 @@
 title: Combining Platform Extensions with Other Section Name Extensions
 description: Combining Platform Extensions with Other Section Name Extensions
 ms.assetid: ca82ba0f-0d65-47ca-826a-4f78435b1442
-keywords: ["INF files WDK device installations , platform extensions", "platform extensions WDK INF files", "extensions WDK INF platform", "combining platform extensions WDK INF files", "install-section-name WDK INF files", "decorated INF WDK", "operating systems WDK"]
+keywords:
+- INF files WDK device installations , platform extensions
+- platform extensions WDK INF files
+- extensions WDK INF platform
+- combining platform extensions WDK INF files
+- install-section-name WDK INF files
+- decorated INF WDK
+- operating systems WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Combining Platform Extensions with Other Section Name Extensions

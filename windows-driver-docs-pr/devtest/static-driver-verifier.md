@@ -2,7 +2,19 @@
 title: Static Driver Verifier
 description: Static Driver Verifier
 ms.assetid: 74feeb16-387c-4796-987a-aff3fb79b556
-keywords: ["verifying drivers WDK , Static Driver Verifier", "driver verification WDK , Static Driver Verifier", "Static Driver Verifier WDK", "StaticDV WDK", "SDV WDK", "paths WDK SDV", "compile-time static verification tool WDK"]
+keywords:
+- verifying drivers WDK , Static Driver Verifier
+- driver verification WDK , Static Driver Verifier
+- Static Driver Verifier WDK
+- StaticDV WDK
+- SDV WDK
+- paths WDK SDV
+- compile-time static verification tool WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier

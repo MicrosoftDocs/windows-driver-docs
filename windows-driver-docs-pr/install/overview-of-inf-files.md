@@ -2,7 +2,18 @@
 title: Overview of INF Files
 description: Overview of INF Files
 ms.assetid: 94682cba-1f68-416f-af74-99ede81eadc7
-keywords: ["INF files WDK device installations", "INF files WDK device installations , creating", "Device setup WDK device installations , INF files", "device installations WDK , INF files", "installing devices WDK , INF files", "Installl a driver by using an INF file"]
+keywords:
+- INF files WDK device installations
+- INF files WDK device installations , creating
+- Device setup WDK device installations , INF files
+- device installations WDK , INF files
+- installing devices WDK , INF files
+- Installl a driver by using an INF file
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of INF Files

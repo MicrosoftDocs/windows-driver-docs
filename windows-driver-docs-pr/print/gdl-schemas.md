@@ -3,7 +3,16 @@ title: GDL Schemas
 author: windows-driver-content
 description: GDL Schemas
 ms.assetid: 1020bec8-3b34-4391-9e75-9ffcd8b07785
-keywords: ["GDL WDK , schemas", "schemas WDK GDL", "schemas WDK GDL , examples", "constructs WDK GDL , examples"]
+keywords:
+- GDL WDK , schemas
+- schemas WDK GDL
+- schemas WDK GDL , examples
+- constructs WDK GDL , examples
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Schemas

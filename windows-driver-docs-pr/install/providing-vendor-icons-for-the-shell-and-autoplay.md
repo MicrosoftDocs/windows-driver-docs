@@ -2,7 +2,21 @@
 title: Providing Vendor Icons for the Shell and AutoPlay
 description: Providing Vendor Icons for the Shell and AutoPlay
 ms.assetid: 2e3afbf6-57f6-4b83-b10a-c33d9b1c1731
-keywords: ["AutoPlay icons WDK", "custom icons WDK device installations", "vendor icons WDK", "icons WDK Shell", "Shell icons WDK", "media-inserted icons WDK", "no-media-inserted icons WDK", "icons WDK AutoPlay", "copying icon files"]
+keywords:
+- AutoPlay icons WDK
+- custom icons WDK device installations
+- vendor icons WDK
+- icons WDK Shell
+- Shell icons WDK
+- media-inserted icons WDK
+- no-media-inserted icons WDK
+- icons WDK AutoPlay
+- copying icon files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing Vendor Icons for the Shell and AutoPlay

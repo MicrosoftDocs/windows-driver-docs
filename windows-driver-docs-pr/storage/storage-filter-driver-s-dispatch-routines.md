@@ -3,7 +3,16 @@ title: Storage Filter Driver's Dispatch Routines
 author: windows-driver-content
 description: Storage Filter Driver's Dispatch Routines
 ms.assetid: 0d1af035-537f-4632-800b-eb344dc5a3c8
-keywords: ["storage filter drivers WDK , dispatch routines", "filter drivers WDK storage , dispatch routines", "SFD WDK storage , dispatch routines", "dispatch routines WDK storage"]
+keywords:
+- storage filter drivers WDK , dispatch routines
+- filter drivers WDK storage , dispatch routines
+- SFD WDK storage , dispatch routines
+- dispatch routines WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Filter Driver's Dispatch Routines

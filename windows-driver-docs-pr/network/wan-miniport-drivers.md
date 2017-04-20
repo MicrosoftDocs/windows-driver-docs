@@ -2,7 +2,16 @@
 title: WAN Miniport Drivers
 description: WAN Miniport Drivers
 ms.assetid: be247ac2-afce-42ce-a840-12f77c921c57
-keywords: ["miniport drivers WDK networking , WAN miniport drivers", "NDIS miniport drivers WDK , WAN miniport drivers", "WAN miniport drivers WDK networking", "wide area network WDK networking . miniport drivers"]
+keywords:
+- miniport drivers WDK networking , WAN miniport drivers
+- NDIS miniport drivers WDK , WAN miniport drivers
+- WAN miniport drivers WDK networking
+- wide area network WDK networking . miniport drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WAN Miniport Drivers

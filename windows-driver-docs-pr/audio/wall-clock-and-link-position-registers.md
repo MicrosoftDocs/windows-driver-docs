@@ -2,7 +2,19 @@
 title: Wall Clock and Link Position Registers
 description: Wall Clock and Link Position Registers
 ms.assetid: 6764affc-a4f0-4568-aa27-7f12e86b818b
-keywords: ["wall clock registers WDK audio", "link position registers WDK audio", "HD Audio, wall clock registers", "High Definition Audio (HD Audio), wall clock registers", "HD Audio, link position registers", "High Definition Audio (HD Audio), link position registers", "clocks WDK audio , HD Audio"]
+keywords:
+- wall clock registers WDK audio
+- link position registers WDK audio
+- HD Audio, wall clock registers
+- High Definition Audio (HD Audio), wall clock registers
+- HD Audio, link position registers
+- High Definition Audio (HD Audio), link position registers
+- clocks WDK audio , HD Audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wall Clock and Link Position Registers

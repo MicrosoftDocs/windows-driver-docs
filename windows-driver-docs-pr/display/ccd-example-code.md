@@ -2,7 +2,18 @@
 title: CCD Example Code
 description: CCD Example Code
 ms.assetid: 8ca2c7c4-8e6f-4e4f-9234-eb3e5dc164cc
-keywords: ["connecting displays WDK Windows 7 display , CCD APIs, example code", "connecting displays WDK Windows Server 2008 R2 display , CCD APIs, example code", "configuring displays WDK Windows 7 display , CCD APIs, example code", "configuring displays WDK Windows Server 2008 R2 display , CCD APIs, example code", "CCD APIs WDK Windows 7 display , example code", "CCD APIs WDK Windows Server 2008 R2 display , example code"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD APIs, example code
+- connecting displays WDK Windows Server 2008 R2 display , CCD APIs, example code
+- configuring displays WDK Windows 7 display , CCD APIs, example code
+- configuring displays WDK Windows Server 2008 R2 display , CCD APIs, example code
+- CCD APIs WDK Windows 7 display , example code
+- CCD APIs WDK Windows Server 2008 R2 display , example code
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CCD Example Code

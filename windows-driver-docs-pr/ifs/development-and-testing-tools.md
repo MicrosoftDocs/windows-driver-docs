@@ -3,7 +3,17 @@ title: Development and Testing Tools
 author: windows-driver-content
 description: Development and Testing Tools
 ms.assetid: 6cc81509-27e1-4d5b-996c-6a7bbfd0ddcf
-keywords: ["filter manager WDK file system minifilter , tools", "Fltmc.exe WDK file system minifilter", "fltkd debugger extension WDK file system minifilter", "Filter Verifier WDK file system minifilter", "Verifier utility"]
+keywords:
+- filter manager WDK file system minifilter , tools
+- Fltmc.exe WDK file system minifilter
+- fltkd debugger extension WDK file system minifilter
+- Filter Verifier WDK file system minifilter
+- Verifier utility
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Development and Testing Tools

@@ -2,6 +2,11 @@
 title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
 ms.assetid: F4B56B3F-792F-4887-AF0F-FFC1F000CB8F
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Universal Windows Drivers for Audio

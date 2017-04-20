@@ -2,7 +2,19 @@
 title: Managing NetDMA Interrupts
 description: Managing NetDMA Interrupts
 ms.assetid: cd518cc2-dc0d-47fd-ac52-aa9c64b7d882
-keywords: ["memory-to-memory data transfers WDK NetDMA , interrupts", "data transfers WDK NetDMA , interrupts", "transferring data WDK NetDMA , interrupts", "DMA transfers WDK NetDMA , interrupts", "NetDMA WDK networking , interrupts", "interrupts WDK NetDMA", "interrupts"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , interrupts
+- data transfers WDK NetDMA , interrupts
+- transferring data WDK NetDMA , interrupts
+- DMA transfers WDK NetDMA , interrupts
+- NetDMA WDK networking , interrupts
+- interrupts WDK NetDMA
+- interrupts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing NetDMA Interrupts

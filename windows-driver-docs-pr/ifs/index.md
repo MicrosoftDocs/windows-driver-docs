@@ -3,6 +3,11 @@ title: Introduction to File System Filters
 author: windows-driver-content
 description: The file systems in Windows are implemented as file system drivers working above the storage system.
 ms.assetid: 62DE75F7-0211-4173-AF45-84B2DDFDC95C
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installable file systems driver design guide

@@ -3,7 +3,16 @@ title: Installing a File System Filter Driver
 author: windows-driver-content
 description: Installing a File System Filter Driver
 ms.assetid: c8a7fd20-8baa-449a-afa6-9692da706df4
-keywords: ["filter drivers WDK file system , installing", "file system filter drivers WDK , installing", "INF files WDK file system", "INF files WDK file system , about file system filter driver installs"]
+keywords:
+- filter drivers WDK file system , installing
+- file system filter drivers WDK , installing
+- INF files WDK file system
+- INF files WDK file system , about file system filter driver installs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a File System Filter Driver

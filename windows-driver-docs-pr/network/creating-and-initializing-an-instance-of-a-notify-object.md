@@ -2,7 +2,16 @@
 title: Creating and Initializing an Instance of a Notify Object
 description: Creating and Initializing an Instance of a Notify Object
 ms.assetid: 933d24cc-d1a0-4768-9bba-4c78150a84da
-keywords: ["notify objects WDK networking , instances of", "network notify objects WDK , instances of", "instance of notify objects WDK networking", "initializing notify object instance"]
+keywords:
+- notify objects WDK networking , instances of
+- network notify objects WDK , instances of
+- instance of notify objects WDK networking
+- initializing notify object instance
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating and Initializing an Instance of a Notify Object

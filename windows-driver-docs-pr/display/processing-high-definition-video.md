@@ -2,7 +2,14 @@
 title: Processing High-Definition Video
 description: Processing High-Definition Video
 ms.assetid: 5fa6ce23-742e-4bd7-aaa4-f0859b52fd7d
-keywords: ["high-definition video WDK Windows 7 display", "high-definition video WDK Windows Server 2008 R2 display"]
+keywords:
+- high-definition video WDK Windows 7 display
+- high-definition video WDK Windows Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing High-Definition Video

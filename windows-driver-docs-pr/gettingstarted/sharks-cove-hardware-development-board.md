@@ -2,6 +2,11 @@
 title: Sharks Cove hardware development board
 description: Sharks Cove is a hardware development board that you can use to develop hardware and drivers for Windows.
 ms.assetid: D86546BB-B613-4CEE-9A76-3FD269137EE9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sharks Cove hardware development board

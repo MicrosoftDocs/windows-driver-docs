@@ -2,7 +2,14 @@
 title: Second Picture Decoding Configuration
 description: Second Picture Decoding Configuration
 ms.assetid: 01208797-2cf9-439b-b250-25f8ca3565d6
-keywords: ["compressed picture decoding set WDK DirectX VA", "picture decoding set WDK DirectX VA"]
+keywords:
+- compressed picture decoding set WDK DirectX VA
+- picture decoding set WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Second Picture Decoding Configuration

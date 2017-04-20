@@ -2,6 +2,11 @@
 title: Getting Started with the Windows Driver Kit
 description: This section describes how to get the WDK and samples and start building Windows drivers.
 ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Getting Started with the Windows Driver Kit

@@ -2,7 +2,19 @@
 title: DRM Requirements
 description: DRM Requirements
 ms.assetid: 312b943b-f280-4b29-a5d4-e78c7088bb22
-keywords: ["WHQL testing WDK audio", "Digital Rights Management WDK audio , compliance testing", "DRM WDK audio , compliance testing", "compliance testing WDK audio", "testing DRM compliance WDK audio", "Designed for Windows XP logo test WDK audio", "logo tests WDK audio"]
+keywords:
+- WHQL testing WDK audio
+- Digital Rights Management WDK audio , compliance testing
+- DRM WDK audio , compliance testing
+- compliance testing WDK audio
+- testing DRM compliance WDK audio
+- Designed for Windows XP logo test WDK audio
+- logo tests WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DRM Requirements

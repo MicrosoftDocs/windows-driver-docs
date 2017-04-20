@@ -2,7 +2,15 @@
 title: Network Profile Management
 description: Network Profile Management
 ms.assetid: 8f430502-e436-40c2-a993-c4f1e737076a
-keywords: ["IHV Extensions DLL WDK Native 802.11 , network profiles", "network profiles WDK Native 802.11 IHV Extensions DLL", "Native 802.11 IHV Extensions DLL WDK , network profiles"]
+keywords:
+- IHV Extensions DLL WDK Native 802.11 , network profiles
+- network profiles WDK Native 802.11 IHV Extensions DLL
+- Native 802.11 IHV Extensions DLL WDK , network profiles
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Profile Management

@@ -2,6 +2,11 @@
 title: Overview of Port Policies
 description: Overview of Port Policies
 ms.assetid: 9FA63E67-F5CC-4508-A36F-7A5956568D0E
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Port Policies

@@ -2,7 +2,14 @@
 title: Setting the Start Type Value
 description: Setting the Start Type Value
 ms.assetid: dcc38a36-4755-472b-94c8-dfed892460ee
-keywords: ["INF files WDK display , start type values", "start type values WDK display"]
+keywords:
+- INF files WDK display , start type values
+- start type values WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the Start Type Value

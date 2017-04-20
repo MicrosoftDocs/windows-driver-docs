@@ -2,7 +2,17 @@
 title: High Definition Audio DDI
 description: High Definition Audio DDI
 ms.assetid: d471777c-0002-4caa-a06e-c58e449b7678
-keywords: ["HD Audio", "High Definition Audio (HD Audio)", "WDM audio drivers WDK , HD Audio", "audio drivers WDK , HD Audio", "Intel High Definition Audio Specification"]
+keywords:
+- HD Audio
+- High Definition Audio (HD Audio)
+- WDM audio drivers WDK , HD Audio
+- audio drivers WDK , HD Audio
+- Intel High Definition Audio Specification
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # High Definition Audio DDI

@@ -2,7 +2,15 @@
 title: D3dCreateSurfaceEx and Backing Surfaces
 description: D3dCreateSurfaceEx and Backing Surfaces
 ms.assetid: aad37654-616f-4cbd-9a9c-07458fb61947
-keywords: ["context WDK Direct3D , D3dCreateSurfaceEx", "D3dCreateSurfaceEx", "backing surfaces WDK Direct3D"]
+keywords:
+- context WDK Direct3D , D3dCreateSurfaceEx
+- D3dCreateSurfaceEx
+- backing surfaces WDK Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # D3dCreateSurfaceEx and Backing Surfaces

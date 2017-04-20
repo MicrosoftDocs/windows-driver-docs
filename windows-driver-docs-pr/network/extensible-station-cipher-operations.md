@@ -2,7 +2,17 @@
 title: Extensible Station Cipher Operations
 description: Extensible Station Cipher Operations
 ms.assetid: a70e4ac1-437c-4305-b165-4faca61825d0
-keywords: ["encryption WDK Native 802.11", "decryption WDK Native 802.11", "cipher operations WDK Native 802.11 , Extensible Station mode", "Extensible Station cipher operations WDK Native 802.11", "ExtSTA cipher operations WDK Native 802.11"]
+keywords:
+- encryption WDK Native 802.11
+- decryption WDK Native 802.11
+- cipher operations WDK Native 802.11 , Extensible Station mode
+- Extensible Station cipher operations WDK Native 802.11
+- ExtSTA cipher operations WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Station Cipher Operations

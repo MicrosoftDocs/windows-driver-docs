@@ -2,7 +2,16 @@
 title: Summary of Changes Required to Port a Filter Driver to NDIS 6.20
 description: Summary of Changes Required to Port a Filter Driver to NDIS 6.20
 ms.assetid: faf83399-b9ac-41b3-a891-0142ded422b3
-keywords: ["NDIS 6.20 WDK , porting filter drivers", "porting filter drivers to NDIS 6.20 WDK", "filter drivers WDK", "filter drivers WDK , porting to NDIS 6.20"]
+keywords:
+- NDIS 6.20 WDK , porting filter drivers
+- porting filter drivers to NDIS 6.20 WDK
+- filter drivers WDK
+- filter drivers WDK , porting to NDIS 6.20
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Summary of Changes Required to Port a Filter Driver to NDIS 6.20

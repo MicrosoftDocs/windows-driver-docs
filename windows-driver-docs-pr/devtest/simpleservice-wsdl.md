@@ -2,7 +2,17 @@
 title: SimpleService WSDL
 description: SimpleService WSDL
 ms.assetid: 4fb5fcb7-9821-47c8-ae0d-3e73f8ee30c5
-keywords: ["WSDBIT tool WDK , WSDL", "WSDAPI Basic Interoperability Tool WDK , WSDL", "SimpleService service WDK WSDBIT", "WSDBIT tool WDK , services", "WSDAPI Basic Interoperability Tool WDK , services"]
+keywords:
+- WSDBIT tool WDK , WSDL
+- WSDAPI Basic Interoperability Tool WDK , WSDL
+- SimpleService service WDK WSDBIT
+- WSDBIT tool WDK , services
+- WSDAPI Basic Interoperability Tool WDK , services
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SimpleService WSDL

@@ -3,7 +3,20 @@ title: User Interface Plug-Ins
 author: windows-driver-content
 description: User Interface Plug-Ins
 ms.assetid: 22ac2af6-37d8-4913-95af-9c3dc8576d40
-keywords: ["printer driver customizing WDK , user interface plug-ins", "customizing printer drivers WDK , user interface plug-ins", "user interface plug-ins WDK print", "plug-ins WDK print , user-interface", "Pscript WDK print , user interface plug-ins", "Unidrv, user interface", "PostScript Printer Driver WDK print , user interface plug-ins", "UI plug-ins WDK print"]
+keywords:
+- printer driver customizing WDK , user interface plug-ins
+- customizing printer drivers WDK , user interface plug-ins
+- user interface plug-ins WDK print
+- plug-ins WDK print , user-interface
+- Pscript WDK print , user interface plug-ins
+- Unidrv, user interface
+- PostScript Printer Driver WDK print , user interface plug-ins
+- UI plug-ins WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User Interface Plug-Ins

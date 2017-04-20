@@ -2,7 +2,13 @@
 title: Initializing the Display Miniport Driver
 description: Initializing the Display Miniport Driver
 ms.assetid: 505dab48-7c00-4bf4-8433-487360f67b26
-keywords: ["miniport drivers WDK display , initializing"]
+keywords:
+- miniport drivers WDK display , initializing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing the Display Miniport Driver

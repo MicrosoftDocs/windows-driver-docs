@@ -2,7 +2,16 @@
 title: Stopping and Removing a Workspace Session
 description: Stopping and Removing a Workspace Session
 ms.assetid: 8e261acb-91a7-4c83-a0f3-42519d4c7f03
-keywords: ["workspaces WDK TraceView , stopping sessions", "workspaces WDK TraceView , removing sessions", "removing workspace sessions", "stopping workspace sessions"]
+keywords:
+- workspaces WDK TraceView , stopping sessions
+- workspaces WDK TraceView , removing sessions
+- removing workspace sessions
+- stopping workspace sessions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stopping and Removing a Workspace Session

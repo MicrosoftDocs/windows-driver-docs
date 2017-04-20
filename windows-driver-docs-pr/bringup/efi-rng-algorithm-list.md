@@ -3,13 +3,20 @@ title: EFI\_RNG\_ALGORITHM\_LIST structure
 author: windows-driver-content
 description: This data structure contains a list of the supported Random Number Generation (RNG) algorithms.
 ms.assetid: 1481330F-78F3-4C18-BD19-3B4984E0138F
-keywords: ["EFI_RNG_ALGORITHM_LIST structure", "PEFI_RNG_ALGORITHM_LIST structure pointer"]
+keywords:
+- EFI_RNG_ALGORITHM_LIST structure
+- PEFI_RNG_ALGORITHM_LIST structure pointer
 topic_type:
 - apiref
 api_name:
 - EFI_RNG_ALGORITHM_LIST
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_RNG\_ALGORITHM\_LIST structure

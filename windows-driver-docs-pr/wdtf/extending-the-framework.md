@@ -3,7 +3,20 @@ title: Extending the Framework
 author: windows-driver-content
 description: Extending the Framework
 ms.assetid: 37a0fd70-0c88-414f-b4e3-afd641f1c667
-keywords: ["Windows Device Testing Framework WDK , extending WDTF", "WDTF WDK , extending WDTF", "Windows Device Testing Framework WDK , action interfaces", "WDTF WDK , action interfaces", "Windows Device Testing Framework WDK , samples", "WDTF WDK , samples", "SimpleIO wizard WDK WDTF", "action interfaces WDK WDTF"]
+keywords:
+- Windows Device Testing Framework WDK , extending WDTF
+- WDTF WDK , extending WDTF
+- Windows Device Testing Framework WDK , action interfaces
+- WDTF WDK , action interfaces
+- Windows Device Testing Framework WDK , samples
+- WDTF WDK , samples
+- SimpleIO wizard WDK WDTF
+- action interfaces WDK WDTF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending the Framework

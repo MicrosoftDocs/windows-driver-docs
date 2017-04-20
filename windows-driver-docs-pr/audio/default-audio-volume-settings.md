@@ -2,7 +2,23 @@
 title: Default Audio Volume Settings
 description: Default Audio Volume Settings
 ms.assetid: 5d694aa2-5a47-44c5-92d5-ec8c4885820f
-keywords: ["audio adapters WDK , volume settings", "adapter drivers WDK audio , volume settings", "Port Class audio adapters WDK , volume settings", "default volume settings", "audio volume settings WDK", "master volume slider WDK audio", "volume sliders WDK audio", "sound level settings WDK audio", "master-volume settings WDK audio", "default master-volume settings", "full-volume sliders WDK audio"]
+keywords:
+- audio adapters WDK , volume settings
+- adapter drivers WDK audio , volume settings
+- Port Class audio adapters WDK , volume settings
+- default volume settings
+- audio volume settings WDK
+- master volume slider WDK audio
+- volume sliders WDK audio
+- sound level settings WDK audio
+- master-volume settings WDK audio
+- default master-volume settings
+- full-volume sliders WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Default Audio Volume Settings

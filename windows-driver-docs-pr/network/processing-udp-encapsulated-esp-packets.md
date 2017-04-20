@@ -2,7 +2,13 @@
 title: Processing UDP-Encapsulated ESP Packets
 description: Processing UDP-Encapsulated ESP Packets
 ms.assetid: b5b10a2c-1080-4c21-a187-1c0aff30b229
-keywords: ["UDP-encapsulated ESP packets WDK IPsec offload , processing"]
+keywords:
+- UDP-encapsulated ESP packets WDK IPsec offload , processing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing UDP-Encapsulated ESP Packets

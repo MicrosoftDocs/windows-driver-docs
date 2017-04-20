@@ -3,6 +3,11 @@ title: Geolocation sample driver file list
 author: windows-driver-content
 description: The source file of the geolocation driver sample includes the following categories of files.
 ms.assetid: 8A9A1102-921B-40FF-94F2-FA9E3C1CE662
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Geolocation sample driver file list

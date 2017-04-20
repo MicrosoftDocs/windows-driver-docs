@@ -3,7 +3,14 @@ title: DeviceID
 author: windows-driver-content
 description: DeviceID
 ms.assetid: 0fb02802-a7b6-4efa-b9b1-6d73059b425f
-keywords: ["WSDMON port monitors WDK , DeviceID command", "DeviceID"]
+keywords:
+- WSDMON port monitors WDK , DeviceID command
+- DeviceID
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DeviceID

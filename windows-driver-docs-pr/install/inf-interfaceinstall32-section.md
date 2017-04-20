@@ -2,13 +2,19 @@
 title: INF InterfaceInstall32 Section
 description: This section creates one or more new device interface classes.
 ms.assetid: 7cd576a7-aa5b-486c-a622-cdcb9e7448b5
-keywords: ["INF InterfaceInstall32 Section Device and Driver Installation"]
+keywords:
+- INF InterfaceInstall32 Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF InterfaceInstall32 Section
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF InterfaceInstall32 Section

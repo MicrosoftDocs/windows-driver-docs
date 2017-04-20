@@ -3,7 +3,15 @@ title: UVC Video Capture Selector Properties
 author: windows-driver-content
 description: UVC Video Capture Selector Properties
 ms.assetid: f3af81a1-5c9b-4af6-a931-5146ef187b36
-keywords: ["UVC video capture selector properties WDK video capture", "selector properties WDK video capture", "PROPSETID_VIDCAP_SELECTOR"]
+keywords:
+- UVC video capture selector properties WDK video capture
+- selector properties WDK video capture
+- PROPSETID_VIDCAP_SELECTOR
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UVC Video Capture Selector Properties

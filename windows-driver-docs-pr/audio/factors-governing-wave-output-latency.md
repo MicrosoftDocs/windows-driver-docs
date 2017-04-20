@@ -2,7 +2,25 @@
 title: Factors Governing Wave-Output Latency
 description: Factors Governing Wave-Output Latency
 ms.assetid: 6342ffd4-b0e8-41a4-ab97-1f658052748b
-keywords: ["WDM audio drivers WDK , latency", "audio drivers WDK , latency", "wave-output latency WDK audio", "latency WDK audio , wave-output streams", "stream latency WDK audio", "output latency WDK audio", "hardware latency WDK audio", "software latency WDK audio", "mixing latency issues WDK audio", "DirectSound WDK audio , latency", "starvation WDK audio", "time WDK audio", "buffers WDK audio"]
+keywords:
+- WDM audio drivers WDK , latency
+- audio drivers WDK , latency
+- wave-output latency WDK audio
+- latency WDK audio , wave-output streams
+- stream latency WDK audio
+- output latency WDK audio
+- hardware latency WDK audio
+- software latency WDK audio
+- mixing latency issues WDK audio
+- DirectSound WDK audio , latency
+- starvation WDK audio
+- time WDK audio
+- buffers WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Factors Governing Wave-Output Latency

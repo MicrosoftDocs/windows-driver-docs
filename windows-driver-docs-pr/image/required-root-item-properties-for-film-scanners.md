@@ -3,6 +3,11 @@ title: Required Root Item Properties for Film Scanners
 author: windows-driver-content
 description: Required Root Item Properties for Film Scanners
 ms.assetid: bd0f2fa6-a7fd-4f05-87fe-bfc4175aacea
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required Root Item Properties for Film Scanners

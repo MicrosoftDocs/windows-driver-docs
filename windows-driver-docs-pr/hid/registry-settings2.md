@@ -3,7 +3,16 @@ title: Registry Settings
 author: windows-driver-content
 description: Registry Settings
 ms.assetid: a2536911-0467-4bd0-a63b-55341f0d7567
-keywords: ["joysticks WDK HID , registry settings", "virtual joystick drivers WDK HID , registry settings", "VJoyD WDK HID , registry settings", "registry WDK joysticks"]
+keywords:
+- joysticks WDK HID , registry settings
+- virtual joystick drivers WDK HID , registry settings
+- VJoyD WDK HID , registry settings
+- registry WDK joysticks
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Settings

@@ -3,6 +3,11 @@ title: Connecting a UMDF Driver to GPIO I/O Pins
 author: windows-driver-content
 description: A GPIO I/O resource is a set of one or more GPIO pins that are configured as data inputs or data outputs.
 ms.assetid: 6869D298-5EB4-4991-A67F-F4398CE2D191
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connecting a UMDF Driver to GPIO I/O Pins

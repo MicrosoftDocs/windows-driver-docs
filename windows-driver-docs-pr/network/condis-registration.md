@@ -2,7 +2,14 @@
 title: CoNDIS Registration
 description: CoNDIS Registration
 ms.assetid: 6db5a4a2-f090-4688-99fa-9d22ca7077ed
-keywords: ["CoNDIS WDK networking , registration", "registering CoNDIS drivers"]
+keywords:
+- CoNDIS WDK networking , registration
+- registering CoNDIS drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CoNDIS Registration

@@ -2,6 +2,11 @@
 title: WDI message structure
 description: This section describes the structure for WDI command messages
 ms.assetid: 09663C5F-A458-479F-B450-A994486A6C18
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI message structure

@@ -2,7 +2,13 @@
 title: Pre-Association Operation Guidelines
 description: Pre-Association Operation Guidelines
 ms.assetid: 35e9b701-6d5d-4c76-80fc-bb146be1ddb1
-keywords: ["pre-association operations WDK Native 802.11 IHV Extensions DLL"]
+keywords:
+- pre-association operations WDK Native 802.11 IHV Extensions DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pre-Association Operation Guidelines

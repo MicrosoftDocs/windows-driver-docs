@@ -3,7 +3,17 @@ title: Clearing the DO\_DEVICE\_INITIALIZING Flag
 author: windows-driver-content
 description: Clearing the DO\_DEVICE\_INITIALIZING Flag
 ms.assetid: 1c1cca60-bb95-4a8d-9e17-4db54983bbb0
-keywords: ["filter drivers WDK file system , attaching filters", "file system filter drivers WDK , attaching filters", "attaching filters to file system or volume", "volumes WDK file system , attaching filters", "DO_DEVICE_INITIALIZING"]
+keywords:
+- filter drivers WDK file system , attaching filters
+- file system filter drivers WDK , attaching filters
+- attaching filters to file system or volume
+- volumes WDK file system , attaching filters
+- DO_DEVICE_INITIALIZING
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Clearing the DO\_DEVICE\_INITIALIZING Flag

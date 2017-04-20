@@ -2,7 +2,20 @@
 title: Macroblock-Oriented Picture Decoding
 description: Macroblock-Oriented Picture Decoding
 ms.assetid: 7a416992-04d3-4307-83b3-9fb94c17d60e
-keywords: ["macroblocks WDK DirectX VA", "compressed picture decoding WDK DirectX VA , macroblock-oriented picture decoding", "picture decoding WDK DirectX VA , compressed", "macroblocks WDK DirectX VA , about macroblock-oriented picture decoding", "video decoding WDK DirectX VA , compressed pictures", "decoding video WDK DirectX VA , compressed pictures", "video decoding WDK DirectX VA , macroblock-oriented picture decoding", "decoding video WDK DirectX VA , macroblock-oriented picture decoding"]
+keywords:
+- macroblocks WDK DirectX VA
+- compressed picture decoding WDK DirectX VA , macroblock-oriented picture decoding
+- picture decoding WDK DirectX VA , compressed
+- macroblocks WDK DirectX VA , about macroblock-oriented picture decoding
+- video decoding WDK DirectX VA , compressed pictures
+- decoding video WDK DirectX VA , compressed pictures
+- video decoding WDK DirectX VA , macroblock-oriented picture decoding
+- decoding video WDK DirectX VA , macroblock-oriented picture decoding
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Macroblock-Oriented Picture Decoding

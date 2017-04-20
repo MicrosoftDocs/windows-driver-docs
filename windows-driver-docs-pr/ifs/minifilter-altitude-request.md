@@ -3,6 +3,11 @@ title: Minifilter Altitude Request
 author: windows-driver-content
 description: Minifilter Altitude Request
 ms.assetid: 4861E5FC-9883-455F-A925-EBAFC890F568
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Minifilter Altitude Request

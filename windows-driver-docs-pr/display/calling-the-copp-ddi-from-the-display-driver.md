@@ -2,7 +2,14 @@
 title: Calling the COPP DDI from the Display Driver
 description: Calling the COPP DDI from the Display Driver
 ms.assetid: d91d8a62-f212-4ae7-be61-b973d6495880
-keywords: ["calling COPP DDI WDK DirectX VA", "COPP WDK DirectX VA , calling from the display driver"]
+keywords:
+- calling COPP DDI WDK DirectX VA
+- COPP WDK DirectX VA , calling from the display driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling the COPP DDI from the Display Driver

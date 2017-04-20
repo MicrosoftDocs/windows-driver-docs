@@ -3,7 +3,17 @@ title: Introduction to Framework Objects
 author: windows-driver-content
 description: Introduction to Framework Objects
 ms.assetid: 1314501a-bff1-4aac-a391-a72acca9cc26
-keywords: ["framework objects WDK KMDF , about framework objects", "reference counts WDK KMDF", "deletion callback functions WDK KMDF", "callback functions WDK KMDF", "parent objects WDK KMDF"]
+keywords:
+- framework objects WDK KMDF , about framework objects
+- reference counts WDK KMDF
+- deletion callback functions WDK KMDF
+- callback functions WDK KMDF
+- parent objects WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Framework Objects

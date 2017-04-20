@@ -2,6 +2,11 @@
 title: Cannot load regression data
 description: Cannot load regression data
 ms.assetid: d2581cb1-6ff2-4d59-ac8f-80d45f128c87
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cannot load regression data

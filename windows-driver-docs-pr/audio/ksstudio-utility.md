@@ -2,7 +2,19 @@
 title: KsStudio Utility
 description: KsStudio Utility
 ms.assetid: c6420768-2852-4269-91d9-cb5e34e565b5
-keywords: ["KsStudio utility WDK audio", "audio filters WDK audio , KsStudio utility", "KS filter graphs WDK audio , KsStudio utility", "filter graphs WDK audio , KsStudio utility", "testing KS filter graphs WDK audio", "audio filter graphs WDK", "graphical representation WDK audio"]
+keywords:
+- KsStudio utility WDK audio
+- audio filters WDK audio , KsStudio utility
+- KS filter graphs WDK audio , KsStudio utility
+- filter graphs WDK audio , KsStudio utility
+- testing KS filter graphs WDK audio
+- audio filter graphs WDK
+- graphical representation WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KsStudio Utility

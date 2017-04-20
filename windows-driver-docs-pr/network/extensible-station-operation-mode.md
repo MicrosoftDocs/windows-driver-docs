@@ -2,7 +2,15 @@
 title: Extensible Station Operation Mode
 description: Extensible Station Operation Mode
 ms.assetid: c38a7b82-7584-4b86-8ca9-b0d86de034c4
-keywords: ["operation modes WDK Native 802.11", "Extensible Station operation modes WDK Native 802.11", "ExtSTA operation modes WDK Native 802.11"]
+keywords:
+- operation modes WDK Native 802.11
+- Extensible Station operation modes WDK Native 802.11
+- ExtSTA operation modes WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Station Operation Mode

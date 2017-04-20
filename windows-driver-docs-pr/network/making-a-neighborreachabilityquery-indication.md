@@ -2,7 +2,18 @@
 title: Making a NeighborReachabilityQuery Indication
 description: Making a NeighborReachabilityQuery Indication
 ms.assetid: 131c30e1-5a1b-464d-ab88-92de35ba94e1
-keywords: ["NeighborReachabilityQuery indication WDK TCP chimney offload", "HostReachability time WDK TCP chimney offload", "NICReachability time WDK TCP chimney offload", "neighbor reachability WDK TCP chimney offload", "neighbor solicitations WDK TCP chimney offload", "events WDK TCP chimney offload"]
+keywords:
+- NeighborReachabilityQuery indication WDK TCP chimney offload
+- HostReachability time WDK TCP chimney offload
+- NICReachability time WDK TCP chimney offload
+- neighbor reachability WDK TCP chimney offload
+- neighbor solicitations WDK TCP chimney offload
+- events WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Making a NeighborReachabilityQuery Indication

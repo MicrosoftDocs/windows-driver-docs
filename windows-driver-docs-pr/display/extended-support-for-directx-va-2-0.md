@@ -2,6 +2,11 @@
 title: Extended Support for DirectX VA 2.0
 description: Extended Support for DirectX VA 2.0
 ms.assetid: ae68e1d6-4e05-41c4-a11e-90b916f9e02c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extended Support for DirectX VA 2.0

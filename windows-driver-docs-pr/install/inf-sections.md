@@ -2,6 +2,11 @@
 title: INF Sections
 description: INF Sections
 ms.assetid: 0eeab13d-9255-4faa-9cf2-de6a8f93d8dc
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Sections

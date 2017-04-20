@@ -2,7 +2,16 @@
 title: Performing COPP Operations
 description: Performing COPP Operations
 ms.assetid: 2cded173-1462-4034-888b-c37d9e1708b5
-keywords: ["copy protection WDK COPP , COPP operations", "video copy protection WDK COPP , COPP operations", "COPP WDK DirectX VA , operations", "protected video WDK COPP , COPP operations"]
+keywords:
+- copy protection WDK COPP , COPP operations
+- video copy protection WDK COPP , COPP operations
+- COPP WDK DirectX VA , operations
+- protected video WDK COPP , COPP operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performing COPP Operations

@@ -2,7 +2,16 @@
 title: Initializing a Miniport-Intermediate Driver
 description: Initializing a Miniport-Intermediate Driver
 ms.assetid: b0beea1f-7374-49e9-9650-0bdb37902469
-keywords: ["NDIS intermediate drivers WDK , initializing", "intermediate drivers WDK networking , initializing", "initializing miniport-intermediate drivers", "miniport-intermediate drivers WDK NDIS"]
+keywords:
+- NDIS intermediate drivers WDK , initializing
+- intermediate drivers WDK networking , initializing
+- initializing miniport-intermediate drivers
+- miniport-intermediate drivers WDK NDIS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a Miniport-Intermediate Driver

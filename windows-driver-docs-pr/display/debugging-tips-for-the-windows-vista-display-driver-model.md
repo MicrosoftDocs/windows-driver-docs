@@ -2,7 +2,17 @@
 title: Debugging Tips for the Windows Display Driver Model (WDDM)
 description: Debugging Tips for the Windows Display Driver Model (WDDM)
 ms.assetid: 24556c71-c047-4d9d-ad2f-319d77299a9b
-keywords: ["display driver model WDK Windows Vista , debugging", "Windows Vista display driver model WDK , debugging", "debugging drivers WDK display", "display driver model WDK Windows Vista , tips", "Windows Vista display driver model WDK , tips"]
+keywords:
+- display driver model WDK Windows Vista , debugging
+- Windows Vista display driver model WDK , debugging
+- debugging drivers WDK display
+- display driver model WDK Windows Vista , tips
+- Windows Vista display driver model WDK , tips
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Tips for the Windows Display Driver Model (WDDM)

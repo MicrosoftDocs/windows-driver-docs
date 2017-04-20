@@ -2,13 +2,19 @@
 title: SignTool
 description: SignTool (Signtool.exe) is a command-line CryptoAPI tool that digitally-signs files, verifies signatures in files, and time stamps files.
 ms.assetid: c1006c07-f204-4fc0-8f99-36e69cbee96d
-keywords: ["SignTool Driver Development Tools"]
+keywords:
+- SignTool Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - SignTool
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SignTool

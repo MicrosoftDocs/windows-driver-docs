@@ -3,6 +3,11 @@ title: Application Item Contexts
 author: windows-driver-content
 description: Application Item Contexts
 ms.assetid: d11b1750-999f-411c-9e83-6d2b20ce65db
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Application Item Contexts

@@ -3,7 +3,19 @@ title: Using the System-Supplied Multifunction Bus Driver
 author: windows-driver-content
 description: Using the System-Supplied Multifunction Bus Driver
 ms.assetid: 75fe659d-5311-4bc6-adfb-fd608e10c718
-keywords: ["multifunction devices WDK , system-supplied bus drivers", "system-supplied multifunction bus drivers WDK", "mf.sys", "functional device objects WDK multifunction devices", "FDOs WDK multifunction devices", "physical device objects WDK multifunction devices", "PDOs WDK multifunction devices"]
+keywords:
+- multifunction devices WDK , system-supplied bus drivers
+- system-supplied multifunction bus drivers WDK
+- mf.sys
+- functional device objects WDK multifunction devices
+- FDOs WDK multifunction devices
+- physical device objects WDK multifunction devices
+- PDOs WDK multifunction devices
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the System-Supplied Multifunction Bus Driver

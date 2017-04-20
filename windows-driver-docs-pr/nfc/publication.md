@@ -3,7 +3,17 @@ title: Publishing NFP messages
 author: windows-driver-content
 description: Publishing NFP messages
 ms.assetid: 45BE3620-ADF4-413D-90B3-586FCEB5F606
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Publishing NFP messages

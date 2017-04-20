@@ -2,7 +2,14 @@
 title: C28260
 description: Warning C28260 A syntax error in the annotations was found while parsing for a property inside a function.
 ms.assetid: fd048e4c-b23c-4ef8-8a0d-e644bfab3ae9
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28260

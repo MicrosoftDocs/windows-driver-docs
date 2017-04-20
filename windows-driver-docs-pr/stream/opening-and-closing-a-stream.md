@@ -3,7 +3,18 @@ title: Opening and Closing a Stream
 author: windows-driver-content
 description: Opening and Closing a Stream
 ms.assetid: a4895e99-ab2e-482e-b89f-04b01177ec03
-keywords: ["video capture WDK AVStream , opening streams", "capturing video WDK AVStream , opening streams", "video capture WDK AVStream , closing streams", "capturing video WDK AVStream , closing streams", "opening streams WDK AVStream", "closing streams WDK AVStream"]
+keywords:
+- video capture WDK AVStream , opening streams
+- capturing video WDK AVStream , opening streams
+- video capture WDK AVStream , closing streams
+- capturing video WDK AVStream , closing streams
+- opening streams WDK AVStream
+- closing streams WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening and Closing a Stream

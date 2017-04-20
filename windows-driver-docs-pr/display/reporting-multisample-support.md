@@ -2,7 +2,15 @@
 title: Reporting Multisample Support
 description: Reporting Multisample Support
 ms.assetid: 05db3a79-08b3-4476-a016-d9a9bfa48504
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, reporting", "multisample rendering WDK DirectX 8.0 , reporting", "rendering multisamples WDK DirectX 8.0 , reporting"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, reporting
+- multisample rendering WDK DirectX 8.0 , reporting
+- rendering multisamples WDK DirectX 8.0 , reporting
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Multisample Support

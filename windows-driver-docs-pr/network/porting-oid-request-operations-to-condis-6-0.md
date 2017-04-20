@@ -2,7 +2,16 @@
 title: Porting OID Request Operations to CoNDIS 6.0
 description: Porting OID Request Operations to CoNDIS 6.0
 ms.assetid: 5e29966a-88e5-4270-b8ed-34cad3c019d1
-keywords: ["CoNDIS WDK networking , OID requests", "connection-oriented drivers WDK networking , OID request porting WDK networking", "OIDs WDK networking , request operation porting", "object identifiers WDK networking"]
+keywords:
+- CoNDIS WDK networking , OID requests
+- connection-oriented drivers WDK networking , OID request porting WDK networking
+- OIDs WDK networking , request operation porting
+- object identifiers WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting OID Request Operations to CoNDIS 6.0

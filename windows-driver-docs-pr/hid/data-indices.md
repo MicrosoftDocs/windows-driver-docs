@@ -3,7 +3,14 @@ title: Data Indices
 author: windows-driver-content
 description: Data Indices
 ms.assetid: 84577544-515a-4fdc-86e5-518182c6c461
-keywords: ["data index WDK HID", "index WDK HID data"]
+keywords:
+- data index WDK HID
+- index WDK HID data
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Indices

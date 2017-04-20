@@ -2,7 +2,16 @@
 title: Completing the Transmission of Send Data
 description: Completing the Transmission of Send Data
 ms.assetid: 63389c7d-8afa-4017-a73a-05f896fd67b2
-keywords: ["state offloading process WDK TCP chimney offload , outstanding send data", "offloading state process WDK TCP chimney offload , outstanding send data", "outstanding send data WDK TCP chimney offload", "send data outstanding WDK TCP chimney offload"]
+keywords:
+- state offloading process WDK TCP chimney offload , outstanding send data
+- offloading state process WDK TCP chimney offload , outstanding send data
+- outstanding send data WDK TCP chimney offload
+- send data outstanding WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Completing the Transmission of Send Data

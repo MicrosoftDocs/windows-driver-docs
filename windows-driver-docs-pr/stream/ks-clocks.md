@@ -3,7 +3,17 @@ title: KS Clocks
 author: windows-driver-content
 description: KS Clocks
 ms.assetid: e3ffc7ca-f3cd-4989-af40-78b6a2438f95
-keywords: ["kernel streaming WDK , clocks", "KS WDK , clocks", "clocks WDK kernel streaming", "time WDK kernel streaming", "time stamps WDK kernel streaming"]
+keywords:
+- kernel streaming WDK , clocks
+- KS WDK , clocks
+- clocks WDK kernel streaming
+- time WDK kernel streaming
+- time stamps WDK kernel streaming
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Clocks

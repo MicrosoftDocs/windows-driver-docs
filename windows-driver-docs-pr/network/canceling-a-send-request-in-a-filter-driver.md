@@ -2,7 +2,13 @@
 title: Canceling a Send Request in a Filter Driver
 description: Canceling a Send Request in a Filter Driver
 ms.assetid: afa9c8d3-b30b-4009-8428-d31719885154
-keywords: ["canceling send operations WDK networking"]
+keywords:
+- canceling send operations WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Canceling a Send Request in a Filter Driver

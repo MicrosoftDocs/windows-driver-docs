@@ -3,7 +3,17 @@ title: Creating and Initializing a DMA Transaction
 author: windows-driver-content
 description: Creating and Initializing a DMA Transaction
 ms.assetid: 1982c3fa-9e4a-4b26-8902-321223d9159f
-keywords: ["DMA transactions WDK KMDF , initializing", "DMA operations WDK KMDF , transactions", "bus-master DMA WDK KMDF , transactions", "DMA transactions WDK KMDF , creating", "initializing DMA transactions WDK KMDF"]
+keywords:
+- DMA transactions WDK KMDF , initializing
+- DMA operations WDK KMDF , transactions
+- bus-master DMA WDK KMDF , transactions
+- DMA transactions WDK KMDF , creating
+- initializing DMA transactions WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating and Initializing a DMA Transaction

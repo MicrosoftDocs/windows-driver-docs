@@ -2,7 +2,22 @@
 title: SysTray and SndVol32
 description: SysTray and SndVol32
 ms.assetid: 53f8c5be-d0a5-4364-8fac-813cf9f8318c
-keywords: ["SysTray WDK audio", "SndVol32 WDK audio", "master volume settings WDK audio", "speakers WDK audio , icon display", "volume settings WDK audio", "icons WDK audio", "displaying speaker icons", "volume sliders WDK audio", "hidden speaker icons WDK audio", "mute control WDK audio"]
+keywords:
+- SysTray WDK audio
+- SndVol32 WDK audio
+- master volume settings WDK audio
+- speakers WDK audio , icon display
+- volume settings WDK audio
+- icons WDK audio
+- displaying speaker icons
+- volume sliders WDK audio
+- hidden speaker icons WDK audio
+- mute control WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SysTray and SndVol32

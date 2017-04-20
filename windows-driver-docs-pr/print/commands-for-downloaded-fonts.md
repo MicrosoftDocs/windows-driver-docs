@@ -3,7 +3,14 @@ title: Commands for Downloaded Fonts
 author: windows-driver-content
 description: Commands for Downloaded Fonts
 ms.assetid: 5cf6b2bd-5378-4e90-8959-ced978dee02f
-keywords: ["downloaded font commands WDK Unidrv", "font commands WDK Unidrv"]
+keywords:
+- downloaded font commands WDK Unidrv
+- font commands WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Commands for Downloaded Fonts

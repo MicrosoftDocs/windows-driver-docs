@@ -2,7 +2,16 @@
 title: Kernel Extended Attributes
 author: windows-driver-content
 description: Filter Manager and Minifilter Driver Architecture
-keywords: ["Extended , File Attributes", "Kernel EA", "Extended Attributes", "$Kernel"]
+keywords:
+- Extended , File Attributes
+- Kernel EA
+- Extended Attributes
+- $Kernel
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 # Kernel Extended Attributes
 Kernel Extended Attributes (Kernel EA's) are a feature added to NTFS in Windows 8 as a way to boost the performance of image file signature validation.  It is an expensive operation to verify an images signature. Therefore, storing information about whether a binary, which has previously been validated, has been changed or not would reduce the number of instances where an image would have to undergo a full signature check.

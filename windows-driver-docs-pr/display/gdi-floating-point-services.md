@@ -2,7 +2,16 @@
 title: GDI Floating-Point Services
 description: GDI Floating-Point Services
 ms.assetid: 7e32c683-ffad-4a95-9c3a-6716f7ce20cb
-keywords: ["GDI WDK Windows 2000 display , floating-point operations", "graphics drivers WDK Windows 2000 display , floating-point operations", "drawing WDK GDI , floating-point operations", "floating-point operations WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , floating-point operations
+- graphics drivers WDK Windows 2000 display , floating-point operations
+- drawing WDK GDI , floating-point operations
+- floating-point operations WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Floating-Point Services

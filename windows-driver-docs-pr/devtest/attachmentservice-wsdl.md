@@ -2,7 +2,17 @@
 title: AttachmentService WSDL
 description: AttachmentService WSDL
 ms.assetid: 1a886bd8-5eb4-4990-9d39-bacbbbbe3d3d
-keywords: ["WSDBIT tool WDK , WSDL", "WSDAPI Basic Interoperability Tool WDK , WSDL", "AttachmentService service WDK WSDBIT", "WSDBIT tool WDK , services", "WSDAPI Basic Interoperability Tool WDK , services"]
+keywords:
+- WSDBIT tool WDK , WSDL
+- WSDAPI Basic Interoperability Tool WDK , WSDL
+- AttachmentService service WDK WSDBIT
+- WSDBIT tool WDK , services
+- WSDAPI Basic Interoperability Tool WDK , services
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AttachmentService WSDL

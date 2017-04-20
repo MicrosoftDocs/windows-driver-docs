@@ -2,7 +2,16 @@
 title: Porting Intermediate Driver Unload Operations to NDIS 6.0
 description: Porting Intermediate Driver Unload Operations to NDIS 6.0
 ms.assetid: 97853aeb-3aab-4012-97ab-7e5f52f03e43
-keywords: ["intermediate drivers WDK networking , unloading", "NDIS intermediate drivers WDK , unloading", "porting intermediate drivers WDK networking , unload operations", "unloading intermediate drivers"]
+keywords:
+- intermediate drivers WDK networking , unloading
+- NDIS intermediate drivers WDK , unloading
+- porting intermediate drivers WDK networking , unload operations
+- unloading intermediate drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Intermediate Driver Unload Operations to NDIS 6.0

@@ -1,6 +1,11 @@
 ---
 Description: In this topic, you'll learn about changing a setting within a USB interface. You'll use the UsbInterfaceSetting object to get the current setting and set a setting in the interface.
 title: How to select a USB interface setting (Windows Store app)
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to select a USB interface setting (Windows Store app)

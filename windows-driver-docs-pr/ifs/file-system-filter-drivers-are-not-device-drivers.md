@@ -3,7 +3,15 @@ title: File System Filter Drivers Are Not Device Drivers
 author: windows-driver-content
 description: File System Filter Drivers Are Not Device Drivers
 ms.assetid: 4a1b2470-0062-4241-952d-ea9351b1a2f9
-keywords: ["filter drivers WDK file system , vs. device drivers", "file system filter drivers WDK , vs. device drivers", "device drivers WDK file system"]
+keywords:
+- filter drivers WDK file system , vs. device drivers
+- file system filter drivers WDK , vs. device drivers
+- device drivers WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File System Filter Drivers Are Not Device Drivers

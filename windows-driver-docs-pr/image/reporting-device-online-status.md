@@ -3,6 +3,11 @@ title: Reporting Device Online Status
 author: windows-driver-content
 description: Reporting Device Online Status
 ms.assetid: 59ce747a-bb5e-4e8c-ab4a-d3f4432f17e6
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Device Online Status

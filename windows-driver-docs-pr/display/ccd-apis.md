@@ -2,7 +2,18 @@
 title: CCD APIs
 description: CCD APIs
 ms.assetid: b71c1582-a91c-49d8-a3a3-d20f7746c354
-keywords: ["connecting displays WDK Windows 7 display , CCD APIs", "connecting displays WDK Windows Server 2008 R2 display , CCD APIs", "configuring displays WDK Windows 7 display , CCD APIs", "configuring displays WDK Windows Server 2008 R2 display , CCD APIs", "CCD APIs WDK Windows 7 display", "CCD APIs WDK Windows Server 2008 R2 display"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD APIs
+- connecting displays WDK Windows Server 2008 R2 display , CCD APIs
+- configuring displays WDK Windows 7 display , CCD APIs
+- configuring displays WDK Windows Server 2008 R2 display , CCD APIs
+- CCD APIs WDK Windows 7 display
+- CCD APIs WDK Windows Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CCD APIs

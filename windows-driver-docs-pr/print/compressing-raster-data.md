@@ -3,7 +3,17 @@ title: Compressing Raster Data
 author: windows-driver-content
 description: Compressing Raster Data
 ms.assetid: 8c74e7f3-5601-4510-9fcd-261f5cd48e9c
-keywords: ["Unidrv, raster data compression", "GPD files WDK Unidrv , raster data compression", "raster data compression WDK Unidrv", "compressing raster data WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, raster data compression
+- GPD files WDK Unidrv , raster data compression
+- raster data compression WDK Unidrv
+- compressing raster data WDK Unidrv
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compressing Raster Data

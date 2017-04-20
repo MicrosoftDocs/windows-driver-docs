@@ -2,6 +2,11 @@
 title: Creating Custom Property Pages
 description: Creating Custom Property Pages
 ms.assetid: 2481450f-ebb2-40e3-8a42-eabaecc1c7e4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Custom Property Pages

@@ -2,7 +2,17 @@
 title: Using GDI 8-Bit-Per-Pixel CMY Mask Modes
 description: Using GDI 8-Bit-Per-Pixel CMY Mask Modes
 ms.assetid: 0631f292-c1f1-4627-b116-0b54a34ea295
-keywords: ["GDI WDK Windows 2000 display , halftoning", "graphics drivers WDK Windows 2000 display , halftoning", "drawing WDK GDI , halftoning", "halftoning WDK GDI", "8-bit-per-pixel CMY mask modes WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , halftoning
+- graphics drivers WDK Windows 2000 display , halftoning
+- drawing WDK GDI , halftoning
+- halftoning WDK GDI
+- 8-bit-per-pixel CMY mask modes WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using GDI 8-Bit-Per-Pixel CMY Mask Modes

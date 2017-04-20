@@ -2,6 +2,11 @@
 title: Developer Guidelines
 description: This topic discusses general guidelines for developers who work with, and/or develop smart card minidrivers - to let you know the expected behavior of the smart card and its associated applications.
 ms.assetid: 48999DF6-3AC2-4DEA-8ABC-C427237B31E8
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developer Guidelines

@@ -2,7 +2,16 @@
 title: D3dCreateSurfaceEx Handles and Flip
 description: D3dCreateSurfaceEx Handles and Flip
 ms.assetid: b87762fd-444d-437a-b076-189f51cc6dd1
-keywords: ["context WDK Direct3D , D3dCreateSurfaceEx", "D3dCreateSurfaceEx", "flipping WDK Direct3D", "DdFlip"]
+keywords:
+- context WDK Direct3D , D3dCreateSurfaceEx
+- D3dCreateSurfaceEx
+- flipping WDK Direct3D
+- DdFlip
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # D3dCreateSurfaceEx Handles and Flip

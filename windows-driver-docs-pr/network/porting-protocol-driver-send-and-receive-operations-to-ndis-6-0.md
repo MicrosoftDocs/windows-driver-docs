@@ -2,7 +2,16 @@
 title: Porting Protocol Driver Send and Receive Operations to NDIS 6.0
 description: Porting Protocol Driver Send and Receive Operations to NDIS 6.0
 ms.assetid: 22cb4ab3-fdd1-4d8c-a0e1-375afe476781
-keywords: ["porting protocol drivers WDK networking , send and receive operations", "send operation porting WDK networking", "receive operation porting WDK networking", "data send/receive operation porting WDK networking"]
+keywords:
+- porting protocol drivers WDK networking , send and receive operations
+- send operation porting WDK networking
+- receive operation porting WDK networking
+- data send/receive operation porting WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Protocol Driver Send and Receive Operations to NDIS 6.0

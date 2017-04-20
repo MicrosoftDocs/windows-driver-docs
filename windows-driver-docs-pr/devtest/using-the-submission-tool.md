@@ -2,7 +2,13 @@
 title: Creating a device metadata submission package in Visual Studio
 description: Creating a device metadata submission package in Visual Studio
 ms.assetid: 17CF8185-C9EE-4B25-BEE7-A1FFB8C92EE0
-keywords: ["Creating a device metadata submission package in Visual Studio"]
+keywords:
+- Creating a device metadata submission package in Visual Studio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a device metadata submission package in Visual Studio

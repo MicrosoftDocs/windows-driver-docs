@@ -2,7 +2,14 @@
 title: Setting the Driver Feature Score
 description: Setting the Driver Feature Score
 ms.assetid: 833e8f29-b90a-4754-9c0a-d8356a731ae4
-keywords: ["INF files WDK display , FeatureScore directive", "FeatureScore directive WDK display"]
+keywords:
+- INF files WDK display , FeatureScore directive
+- FeatureScore directive WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the Driver Feature Score

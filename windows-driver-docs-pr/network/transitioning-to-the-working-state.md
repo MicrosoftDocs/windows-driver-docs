@@ -2,7 +2,19 @@
 title: Transitioning to the Working State
 description: Transitioning to the Working State
 ms.assetid: ad8eb6d7-b542-4208-85f7-fba42c27a9f3
-keywords: ["working power state WDK networking", "network interface cards WDK networking , transitioning power states", "NICs WDK networking , transitioning power states", "power management WDK NDIS miniport , transitioning power states", "device power states WDK networking", "power states WDK networking", "transitioning power states WDK networking"]
+keywords:
+- working power state WDK networking
+- network interface cards WDK networking , transitioning power states
+- NICs WDK networking , transitioning power states
+- power management WDK NDIS miniport , transitioning power states
+- device power states WDK networking
+- power states WDK networking
+- transitioning power states WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Transitioning to the Working State

@@ -2,7 +2,14 @@
 title: Emulating State Blocks
 description: Emulating State Blocks
 ms.assetid: 1ede9f1c-f5bb-4f41-8152-63d8663fd99e
-keywords: ["emulating state blocks WDK display", "state block emulation WDK display"]
+keywords:
+- emulating state blocks WDK display
+- state block emulation WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Emulating State Blocks

@@ -2,7 +2,27 @@
 title: Synthesizers and Wave Sinks
 description: Synthesizers and Wave Sinks
 ms.assetid: ddcb847e-d46e-4860-9be9-4480e5a6b710
-keywords: ["DirectMusic custom rendering WDK audio , synthesizers", "custom rendering in user mode WDK audio , synthesizers", "custom rendering in user mode WDK audio , wave sinks", "wave sinks WDK audio , user-mode", "custom synths WDK audio , DirectMusic architecture", "DirectMusic custom rendering WDK audio , wave sinks", "user-mode synths WDK audio , DirectMusic architecture", "user-mode wave sinks WDK audio", "default wave sinks", "default synthesizers", "custom wave sinks WDK audio", "synthesizers WDK audio , about user-mode synthesizers", "rendering engine WDK audio", "DirectMusic WDK audio , synthesizers", "DMus port drivers WDK audio"]
+keywords:
+- DirectMusic custom rendering WDK audio , synthesizers
+- custom rendering in user mode WDK audio , synthesizers
+- custom rendering in user mode WDK audio , wave sinks
+- wave sinks WDK audio , user-mode
+- custom synths WDK audio , DirectMusic architecture
+- DirectMusic custom rendering WDK audio , wave sinks
+- user-mode synths WDK audio , DirectMusic architecture
+- user-mode wave sinks WDK audio
+- default wave sinks
+- default synthesizers
+- custom wave sinks WDK audio
+- synthesizers WDK audio , about user-mode synthesizers
+- rendering engine WDK audio
+- DirectMusic WDK audio , synthesizers
+- DMus port drivers WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synthesizers and Wave Sinks

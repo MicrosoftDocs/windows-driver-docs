@@ -2,6 +2,11 @@
 title: Summary of changes to port a miniport driver to NDIS 6.30
 description: To update an NDIS 6.x miniport driver to support NDIS 6.30, you must modify it as outlined in the following sections.
 ms.assetid: 1EA926FE-367E-4A63-A197-60137D679AE6
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Summary of Changes Required to Port a Miniport Driver to NDIS 6.30

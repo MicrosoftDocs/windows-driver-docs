@@ -2,7 +2,16 @@
 title: Smart Card Driver Debugging
 description: Smart Card Driver Debugging
 ms.assetid: 701528f6-d8ba-4a73-ad68-cb35497a3474
-keywords: ["smart card drivers WDK , debugging", "debugging drivers WDK smart card", "DebugLevel", "vendor-supplied drivers WDK smart card , debugging"]
+keywords:
+- smart card drivers WDK , debugging
+- debugging drivers WDK smart card
+- DebugLevel
+- vendor-supplied drivers WDK smart card , debugging
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Smart Card Driver Debugging

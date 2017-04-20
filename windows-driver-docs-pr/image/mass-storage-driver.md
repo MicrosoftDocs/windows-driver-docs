@@ -3,6 +3,11 @@ title: Mass Storage Driver
 author: windows-driver-content
 description: Mass Storage Driver
 ms.assetid: 383a8609-633c-42f6-b557-daf68e61ab02
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mass Storage Driver

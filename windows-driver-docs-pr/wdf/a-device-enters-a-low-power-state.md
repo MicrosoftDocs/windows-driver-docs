@@ -3,7 +3,20 @@ title: A Device Enters a Low-Power State
 author: windows-driver-content
 description: A Device Enters a Low-Power State
 ms.assetid: 07d7c460-4316-40a9-b502-f7c1bd1182c2
-keywords: ["power management WDK KMDF , low-power states", "low-power states WDK KMDF", "power states WDK KMDF", "device power states WDK KMDF", "sleep power management WDK KMDF", "idle power-down WDK KMDF", "power management WDK KMDF , idle power-down", "system sleeping states WDK KMDF"]
+keywords:
+- power management WDK KMDF , low-power states
+- low-power states WDK KMDF
+- power states WDK KMDF
+- device power states WDK KMDF
+- sleep power management WDK KMDF
+- idle power-down WDK KMDF
+- power management WDK KMDF , idle power-down
+- system sleeping states WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # A Device Enters a Low-Power State

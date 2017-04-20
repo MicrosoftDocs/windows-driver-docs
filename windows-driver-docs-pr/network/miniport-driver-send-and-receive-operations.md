@@ -2,7 +2,18 @@
 title: Miniport Driver Send and Receive Operations
 description: Miniport Driver Send and Receive Operations
 ms.assetid: f495cf1f-9896-4259-b885-cff4a0112d17
-keywords: ["miniport drivers WDK networking , sending data", "NDIS miniport drivers WDK , sending data", "miniport drivers WDK networking , receiving data", "NDIS miniport drivers WDK , receiving data", "sending data WDK networking", "receiving data WDK networking"]
+keywords:
+- miniport drivers WDK networking , sending data
+- NDIS miniport drivers WDK , sending data
+- miniport drivers WDK networking , receiving data
+- NDIS miniport drivers WDK , receiving data
+- sending data WDK networking
+- receiving data WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Driver Send and Receive Operations

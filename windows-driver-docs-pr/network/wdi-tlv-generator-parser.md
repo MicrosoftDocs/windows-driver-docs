@@ -2,6 +2,11 @@
 title: WDI TLV generator/parser
 description: The TLV generator and parser shared library allows IHV drivers to correctly parse TLVs into strongly typed C/C++ structures, or conversely generate a TLV byte blob from the structures. It also handles the versioning semantics so the IHV does not need to.
 ms.assetid: 7193C30B-B9F0-488E-B1C6-4C5C4F29BA50
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI TLV generator/parser

@@ -3,7 +3,15 @@ title: Control Nodes for Processing IP Data
 author: windows-driver-content
 description: Control Nodes for Processing IP Data
 ms.assetid: 6195ffe9-d20c-4687-8d45-abbfc17ba2fa
-keywords: ["control nodes WDK BDA", "nodes WDK BDA", "IP data processing WDK BDA"]
+keywords:
+- control nodes WDK BDA
+- nodes WDK BDA
+- IP data processing WDK BDA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Control Nodes for Processing IP Data

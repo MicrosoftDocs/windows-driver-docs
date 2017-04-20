@@ -2,6 +2,11 @@
 title: Hardware-First Installation of Device-Specific Applications
 description: Hardware-First Installation of Device-Specific Applications
 ms.assetid: aa6a0533-6053-41fb-8599-5fc29e36c039
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware-First Installation of Device-Specific Applications

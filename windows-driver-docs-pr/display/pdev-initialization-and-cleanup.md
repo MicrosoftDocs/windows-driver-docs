@@ -2,7 +2,19 @@
 title: PDEV Initialization and Cleanup
 description: PDEV Initialization and Cleanup
 ms.assetid: 26651869-861a-4be8-bc6c-df3704ca714e
-keywords: ["drawing WDK GDI , initialization, PDEV initialization", "initializing graphics drivers WDK Windows 2000 display , PDEV", "GDI WDK Windows 2000 display , initialization, PDEV", "graphics drivers WDK Windows 2000 display , initialization, PDEV", "PDEV WDK GDI", "DrvEnablePDEV", "drawing WDK GDI , PDEV cleanup"]
+keywords:
+- drawing WDK GDI , initialization, PDEV initialization
+- initializing graphics drivers WDK Windows 2000 display , PDEV
+- GDI WDK Windows 2000 display , initialization, PDEV
+- graphics drivers WDK Windows 2000 display , initialization, PDEV
+- PDEV WDK GDI
+- DrvEnablePDEV
+- drawing WDK GDI , PDEV cleanup
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PDEV Initialization and Cleanup

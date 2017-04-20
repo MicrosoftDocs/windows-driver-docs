@@ -2,8 +2,18 @@
 title: NFC stack architecture
 author: windows-driver-content
 ms.assetid: 04800C37-99EA-431A-98C5-24984030CEA9
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
-description:
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NFC stack architecture

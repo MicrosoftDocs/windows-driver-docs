@@ -2,7 +2,28 @@
 title: Mode Indicator and Anamorphic Format
 description: Mode Indicator and Anamorphic Format
 ms.assetid: b297c62e-3b7e-47de-95a5-c25e8fc5ad56
-keywords: ["DirectX VPE support WDK DirectDraw , displaying interleaved video", "drawing VPEs WDK DirectDraw , displaying interleaved video", "DirectDraw VPEs WDK Windows 2000 display , displaying interleaved video", "video port extensions WDK DirectDraw , displaying interleaved video", "VPEs WDK DirectDraw , displaying interleaved video", "displaying interleaved video", "interleaved video displays WDK video port extensions", "anamorphic format WDK DirectDraw", "bob WDK DirectDraw", "weave WDK DirectDraw", "edge-adaptive filtering WDK DirectDraw", "mode indicators WDK DirectDraw", "irregular 3 2 pattern WDK DirectDraw", "REPEAT_FIELD", "automatic display changes WDK DirectDraw", "deinterlacing WDK video port extensions"]
+keywords:
+- DirectX VPE support WDK DirectDraw , displaying interleaved video
+- drawing VPEs WDK DirectDraw , displaying interleaved video
+- DirectDraw VPEs WDK Windows 2000 display , displaying interleaved video
+- video port extensions WDK DirectDraw , displaying interleaved video
+- VPEs WDK DirectDraw , displaying interleaved video
+- displaying interleaved video
+- interleaved video displays WDK video port extensions
+- anamorphic format WDK DirectDraw
+- bob WDK DirectDraw
+- weave WDK DirectDraw
+- edge-adaptive filtering WDK DirectDraw
+- mode indicators WDK DirectDraw
+- irregular 3 2 pattern WDK DirectDraw
+- REPEAT_FIELD
+- automatic display changes WDK DirectDraw
+- deinterlacing WDK video port extensions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mode Indicator and Anamorphic Format

@@ -3,7 +3,16 @@ title: Broadcast Receiver Topology
 author: windows-driver-content
 description: Broadcast Receiver Topology
 ms.assetid: d6f7614b-b7ff-4d42-8e04-fbf1b4f0445a
-keywords: ["Broadcast Driver Architecture WDK AVStream , broadcast receiver topology", "BDA WDK AVStream , broadcast receiver topology", "broadcast receiver topology WDK BDA", "receiver topology WDK BDA"]
+keywords:
+- Broadcast Driver Architecture WDK AVStream , broadcast receiver topology
+- BDA WDK AVStream , broadcast receiver topology
+- broadcast receiver topology WDK BDA
+- receiver topology WDK BDA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Broadcast Receiver Topology

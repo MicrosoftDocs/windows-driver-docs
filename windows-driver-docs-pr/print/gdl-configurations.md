@@ -3,7 +3,15 @@ title: GDL Configurations
 author: windows-driver-content
 description: GDL Configurations
 ms.assetid: ce698737-c9d8-4502-8823-e249820a06fa
-keywords: ["GDL WDK , configurations", "configurations WDK GDL", "configurations WDK GDL , examples"]
+keywords:
+- GDL WDK , configurations
+- configurations WDK GDL
+- configurations WDK GDL , examples
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Configurations

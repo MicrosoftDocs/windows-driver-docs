@@ -2,7 +2,13 @@
 title: Display Driver Requirements
 description: Display Driver Requirements
 ms.assetid: 5fe13b16-eab3-4b48-9a14-4fcc4dada2d4
-keywords: ["display drivers WDK Windows 2000 , requirements"]
+keywords:
+- display drivers WDK Windows 2000 , requirements
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Display Driver Requirements

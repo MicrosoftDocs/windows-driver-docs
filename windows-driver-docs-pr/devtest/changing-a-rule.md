@@ -2,7 +2,14 @@
 title: Changing a Rule
 description: Changing a Rule
 ms.assetid: 7415ee62-90b9-4fa0-ae94-438e60c713e4
-keywords: ["filtering trace messages, changing rules WDK", "trace message filters WDK , changing rules"]
+keywords:
+- filtering trace messages, changing rules WDK
+- trace message filters WDK , changing rules
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing a Rule

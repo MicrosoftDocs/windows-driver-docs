@@ -3,7 +3,15 @@ title: Command String Format
 author: windows-driver-content
 description: Command String Format
 ms.assetid: 3b33b261-08c7-4441-94f5-6c9de53ae349
-keywords: ["printer commands WDK Unidrv , strings", "command strings WDK Unidrv", "strings WDK Unidrv"]
+keywords:
+- printer commands WDK Unidrv , strings
+- command strings WDK Unidrv
+- strings WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command String Format

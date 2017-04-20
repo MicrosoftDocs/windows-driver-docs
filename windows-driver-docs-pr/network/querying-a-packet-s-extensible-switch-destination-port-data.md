@@ -2,6 +2,11 @@
 title: Querying a Packet's Extensible Switch Destination Port Data
 description: Querying a Packet's Extensible Switch Destination Port Data
 ms.assetid: 57D82C5E-3758-492C-A1DA-B7BC3DBE2E7A
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying a Packet's Extensible Switch Destination Port Data

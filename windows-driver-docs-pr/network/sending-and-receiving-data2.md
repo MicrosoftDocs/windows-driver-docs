@@ -2,7 +2,13 @@
 title: Sending and Receiving Data
 description: Sending and Receiving Data
 ms.assetid: aad7ccf9-0eaa-4327-b048-268d12593a70
-keywords: ["virtual connections WDK CoNDIS , data transfers"]
+keywords:
+- virtual connections WDK CoNDIS , data transfers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending and Receiving Data

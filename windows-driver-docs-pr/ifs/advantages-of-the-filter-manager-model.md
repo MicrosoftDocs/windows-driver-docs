@@ -3,7 +3,13 @@ title: Advantages of the Filter Manager Model
 author: windows-driver-content
 description: Advantages of the Filter Manager Model
 ms.assetid: 8e3449dc-7c78-4f78-97c4-89b20001e91b
-keywords: ["filter manager WDK file system minifilter , advantages"]
+keywords:
+- filter manager WDK file system minifilter , advantages
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Advantages of the Filter Manager Model

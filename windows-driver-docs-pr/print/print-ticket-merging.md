@@ -3,7 +3,16 @@ title: Print Ticket Merging
 author: windows-driver-content
 description: Print Ticket Merging
 ms.assetid: 2d9cf4d3-5c73-4355-b5e0-effcfb7102cc
-keywords: ["XPSDrv printer drivers WDK , render modules", "render modules WDK XPSDrv , Print Tickets", "Print Tickets WDK , XPSDrv printer drivers", "merging Print Ticket objects"]
+keywords:
+- XPSDrv printer drivers WDK , render modules
+- render modules WDK XPSDrv , Print Tickets
+- Print Tickets WDK , XPSDrv printer drivers
+- merging Print Ticket objects
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Ticket Merging

@@ -2,7 +2,15 @@
 title: Examining the AnswerFile
 description: Examining the AnswerFile
 ms.assetid: 42d58786-e50c-43c2-b673-5f23c9930ee7
-keywords: ["testing network component upgrades WDK", "AnswerFile WDK networking", "upgrade tests WDK networking"]
+keywords:
+- testing network component upgrades WDK
+- AnswerFile WDK networking
+- upgrade tests WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Examining the AnswerFile

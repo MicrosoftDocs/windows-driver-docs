@@ -2,6 +2,11 @@
 ms.assetid: 52505804-4367-43F4-858D-966255CA121D
 title: Troubleshooting the Device Fundamentals tests using the WDK
 description: This topic provides suggestions for fixing problems you might encounter when you use the WDK to run the Device Fundamentals Tests.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting Configuration of Driver Deployment, Testing and Debugging

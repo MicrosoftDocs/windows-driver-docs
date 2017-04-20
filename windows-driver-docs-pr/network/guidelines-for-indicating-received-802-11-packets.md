@@ -2,7 +2,15 @@
 title: Guidelines for Indicating Received 802.11 Packets
 description: Guidelines for Indicating Received 802.11 Packets
 ms.assetid: e5a8106a-7838-4b2a-9100-630e77361b7d
-keywords: ["indicating received packets WDK Native 802.11", "received packet indications WDK Native 802.11", "indications WDK Native 802.11"]
+keywords:
+- indicating received packets WDK Native 802.11
+- received packet indications WDK Native 802.11
+- indications WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Guidelines for Indicating Received 802.11 Packets

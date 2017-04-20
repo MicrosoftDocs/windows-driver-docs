@@ -2,6 +2,11 @@
 title: EnableAutoPlayForRegisteredApps
 description: EnableAutoPlayForRegisteredApps
 ms.assetid: 8f4b1a6a-262a-4ebc-808b-8e998fd78f99
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EnableAutoPlayForRegisteredApps

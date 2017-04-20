@@ -3,7 +3,17 @@ title: NFC design guide
 author: windows-driver-content
 description: Windows exposes a rich set of experiences using NFC technology including the following platforms
 ms.assetid: 26BFE25A-AC46-4634-8330-990DB447E55A
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Near field communications (NFC) design guide

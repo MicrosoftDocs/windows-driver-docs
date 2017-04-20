@@ -2,7 +2,16 @@
 title: Extended Surface Capability Flags
 description: Extended Surface Capability Flags
 ms.assetid: 197d899e-57ab-40f8-9c09-440c2dc6197c
-keywords: ["drawing extended surface capabilities WDK DirectDraw , flags", "DirectDraw extended surface capabilities WDK Windows 2000 display , flags", "extended surface capabilities WDK DirectDraw , flags", "flags WDK DirectDraw extended surface"]
+keywords:
+- drawing extended surface capabilities WDK DirectDraw , flags
+- DirectDraw extended surface capabilities WDK Windows 2000 display , flags
+- extended surface capabilities WDK DirectDraw , flags
+- flags WDK DirectDraw extended surface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extended Surface Capability Flags

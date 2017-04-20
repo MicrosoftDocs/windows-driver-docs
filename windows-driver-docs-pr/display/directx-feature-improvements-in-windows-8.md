@@ -2,6 +2,11 @@
 title: DirectX feature improvements in Windows 8
 description: Windows 8 includes Microsoft DirectX feature improvements that benefit developers, end users and system manufacturers.
 ms.assetid: 0622DA0D-41ED-4B47-B090-8D5B85E10EB3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX feature improvements in Windows 8

@@ -2,7 +2,16 @@
 title: Using the TCP/IP Offload Administrator Interface
 description: Using the TCP/IP Offload Administrator Interface
 ms.assetid: 2418e577-17cd-4db7-adb0-44b705e29d38
-keywords: ["TCP/IP offload WDK networking , administrator interface", "offload WDK TCP/IP transport , administrator interface", "task offload WDK TCP/IP transport , administrator interface", "connection offload WDK TCP/IP transport , administrator interface"]
+keywords:
+- TCP/IP offload WDK networking , administrator interface
+- offload WDK TCP/IP transport , administrator interface
+- task offload WDK TCP/IP transport , administrator interface
+- connection offload WDK TCP/IP transport , administrator interface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the TCP/IP Offload Administrator Interface

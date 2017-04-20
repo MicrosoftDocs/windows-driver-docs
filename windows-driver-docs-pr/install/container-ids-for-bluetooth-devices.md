@@ -2,6 +2,11 @@
 title: Container IDs for Bluetooth Devices
 description: Container IDs for Bluetooth Devices
 ms.assetid: 7e9c40d9-ed19-4ad2-a749-6e3f4aaca2de
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Container IDs for Bluetooth Devices

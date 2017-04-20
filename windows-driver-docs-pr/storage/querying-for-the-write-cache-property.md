@@ -3,7 +3,21 @@ title: Querying for the Write Cache Property
 author: windows-driver-content
 description: Querying for the Write Cache Property
 ms.assetid: 80b7c366-3b54-4dae-8ac7-63caaa1767f9
-keywords: ["storage drivers WDK , write cache", "write cache WDK storage", "write back WDK storage", "write through WDK storage", "sync cache support WDK storage", "battery backup WDK storage", "cache WDK storage", "querying write cache", "write-through requests WDK storage"]
+keywords:
+- storage drivers WDK , write cache
+- write cache WDK storage
+- write back WDK storage
+- write through WDK storage
+- sync cache support WDK storage
+- battery backup WDK storage
+- cache WDK storage
+- querying write cache
+- write-through requests WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying for the Write Cache Property

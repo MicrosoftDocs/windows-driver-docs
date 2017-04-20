@@ -3,7 +3,18 @@ title: Enabling an Error Source
 author: windows-driver-content
 description: Enabling an Error Source
 ms.assetid: a65357fa-e600-47fe-8719-b67c36542711
-keywords: ["error sources WDK WHEA , enabling", "Windows Hardware Error Architecture WDK , enabling error sources", "WHEA WDK , enabling error sources", "errors WDK WHEA , enabling error sources", "hardware error sources WDK WHEA , enabling", "enabling an error source WDK"]
+keywords:
+- error sources WDK WHEA , enabling
+- Windows Hardware Error Architecture WDK , enabling error sources
+- WHEA WDK , enabling error sources
+- errors WDK WHEA , enabling error sources
+- hardware error sources WDK WHEA , enabling
+- enabling an error source WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling an Error Source

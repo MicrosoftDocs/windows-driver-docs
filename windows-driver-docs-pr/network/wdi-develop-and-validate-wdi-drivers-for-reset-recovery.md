@@ -2,6 +2,11 @@
 title: Develop and validate WDI drivers for Reset Recovery
 description: The UE has a built-in hook for stressing reset and recovery by simulating firmware hangs.
 ms.assetid: 5C669F22-2C82-4072-8010-1DDC918C064F
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Develop and validate WDI drivers for Reset Recovery

@@ -2,6 +2,11 @@
 title: Trace Viewer
 description: Trace Viewer
 ms.assetid: 080478d8-6c01-48ae-899d-37025e9dee52
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Viewer

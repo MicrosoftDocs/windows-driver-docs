@@ -2,6 +2,11 @@
 title: Metadata
 description: Metadata
 ms.assetid: bab7803c-df1f-4282-a9d7-5536d30d00dc
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Metadata

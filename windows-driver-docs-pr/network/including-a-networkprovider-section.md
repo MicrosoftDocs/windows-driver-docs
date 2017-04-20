@@ -2,7 +2,15 @@
 title: Including a NetworkProvider Section
 description: Including a NetworkProvider Section
 ms.assetid: 8972f926-c4f5-4a2f-8f2d-f9353fdbd83f
-keywords: ["INF files WDK network , NetworkProvider section", "network INF files WDK , NetworkProvider section", "NetworkProvider section WDK networking"]
+keywords:
+- INF files WDK network , NetworkProvider section
+- network INF files WDK , NetworkProvider section
+- NetworkProvider section WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Including a NetworkProvider Section

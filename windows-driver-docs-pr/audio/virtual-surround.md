@@ -2,6 +2,11 @@
 title: Virtual Surround
 description: Virtual Surround
 ms.assetid: be68a531-6691-4db1-ad85-d56e77ee82e2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Surround

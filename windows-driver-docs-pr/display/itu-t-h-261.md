@@ -2,7 +2,15 @@
 title: ITU-T H.261
 description: ITU-T H.261
 ms.assetid: 00fb9001-2896-4ecd-b6ee-5b36bc6e72cd
-keywords: ["ITU-T H.261 WDK DirectX VA", "H.261 WDK DirectX VA", "prediction blocks WDK DirectX VA"]
+keywords:
+- ITU-T H.261 WDK DirectX VA
+- H.261 WDK DirectX VA
+- prediction blocks WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ITU-T H.261

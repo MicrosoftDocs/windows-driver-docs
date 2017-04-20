@@ -2,7 +2,21 @@
 title: Signing Drivers for Public Release
 description: Signing Drivers for Public Release
 ms.assetid: 29e465b4-42f2-4c41-afa7-3f0adf579b0c
-keywords: ["driver signing WDK , public release", "signing drivers WDK , public release", "digital signatures WDK , public release", "signatures WDK , public release", "public release driver signing WDK", "release signing WDK", "public release driver signing WDK , release signing", "release signing WDK , about release signing", "release signatures WDK"]
+keywords:
+- driver signing WDK , public release
+- signing drivers WDK , public release
+- digital signatures WDK , public release
+- signatures WDK , public release
+- public release driver signing WDK
+- release signing WDK
+- public release driver signing WDK , release signing
+- release signing WDK , about release signing
+- release signatures WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Signing Drivers for Public Release

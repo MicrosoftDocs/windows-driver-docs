@@ -3,7 +3,18 @@ title: Storing Tape Miniclass Context in Optional Extensions
 author: windows-driver-content
 description: Storing Tape Miniclass Context in Optional Extensions
 ms.assetid: 9b259403-2fae-4708-8765-2d998a535620
-keywords: ["tape drivers WDK storage , context storage", "storage tape drivers WDK , context storage", "context WDK storage", "context storage WDK tape", "driver-specific minitape extensions WDK tape", "command-specific command extensions WDK tape"]
+keywords:
+- tape drivers WDK storage , context storage
+- storage tape drivers WDK , context storage
+- context WDK storage
+- context storage WDK tape
+- driver-specific minitape extensions WDK tape
+- command-specific command extensions WDK tape
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storing Tape Miniclass Context in Optional Extensions

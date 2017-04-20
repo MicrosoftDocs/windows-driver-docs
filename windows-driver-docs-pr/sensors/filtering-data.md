@@ -3,7 +3,23 @@ title: Filtering data
 author: windows-driver-content
 description: In order to optimize data throughput, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed.
 ms.assetid: 1895EC5C-08C1-4976-83F2-CD5A2B55338D
-keywords: ["change sensitivity", "sensor change sensitivity", "CS", "current report interval", "sensor current report interval", "CRI", "data update event", "sensor event", "sensor events", "filtering data", "data filtering"]
+keywords:
+- change sensitivity
+- sensor change sensitivity
+- CS
+- current report interval
+- sensor current report interval
+- CRI
+- data update event
+- sensor event
+- sensor events
+- filtering data
+- data filtering
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filtering data

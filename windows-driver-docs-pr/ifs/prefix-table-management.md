@@ -3,7 +3,17 @@ title: Prefix Table Management
 author: windows-driver-content
 description: Prefix Table Management
 ms.assetid: a48ed460-fab9-4a6d-bd2f-454b4932ea61
-keywords: ["RDBSS WDK file systems , prefix tables", "Redirected Drive Buffering Subsystem WDK file systems , prefix tables", "prefix tables WDK network redirectors", "names WDK RDBSS", "version stamps WDK RDBSS"]
+keywords:
+- RDBSS WDK file systems , prefix tables
+- Redirected Drive Buffering Subsystem WDK file systems , prefix tables
+- prefix tables WDK network redirectors
+- names WDK RDBSS
+- version stamps WDK RDBSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Prefix Table Management

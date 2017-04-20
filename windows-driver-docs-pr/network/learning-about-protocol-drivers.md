@@ -2,7 +2,20 @@
 title: Learning About Protocol Drivers
 description: Learning About Protocol Drivers
 ms.assetid: a908f91e-7529-42b5-9a3d-82d2a519d969
-keywords: ["protocol drivers WDK networking , connectionless lower edge", "NDIS protocol drivers WDK , connectionless lower edge", "protocol drivers WDK networking , connection-oriented clients and providers", "NDIS protocol drivers WDK , connection-oriented clients and providers", "protocol drivers WDK networking , Winsock support", "NDIS protocol drivers WDK , Winsock support", "Winsock Kernel WDK networking , protocol driver support for Winsock", "network drivers WDK , types"]
+keywords:
+- protocol drivers WDK networking , connectionless lower edge
+- NDIS protocol drivers WDK , connectionless lower edge
+- protocol drivers WDK networking , connection-oriented clients and providers
+- NDIS protocol drivers WDK , connection-oriented clients and providers
+- protocol drivers WDK networking , Winsock support
+- NDIS protocol drivers WDK , Winsock support
+- Winsock Kernel WDK networking , protocol driver support for Winsock
+- network drivers WDK , types
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Learning About Protocol Drivers

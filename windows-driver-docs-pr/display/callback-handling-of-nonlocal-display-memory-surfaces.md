@@ -2,7 +2,19 @@
 title: Callback Handling Of Nonlocal Display Memory Surfaces
 description: Callback Handling Of Nonlocal Display Memory Surfaces
 ms.assetid: 803c52df-93c4-4124-9e17-6ef6c734a15f
-keywords: ["display memory WDK DirectDraw , callbacks", "nonlocal display memory WDK DirectDraw , callbacks", "AGP WDK DirectDraw , callbacks", "drawing AGP support WDK DirectDraw , callbacks", "DirectDraw AGP support WDK Windows 2000 display , callbacks", "memory WDK DirectDraw AGP , callbacks", "callbacks WDK DirectDraw nonlocal memory"]
+keywords:
+- display memory WDK DirectDraw , callbacks
+- nonlocal display memory WDK DirectDraw , callbacks
+- AGP WDK DirectDraw , callbacks
+- drawing AGP support WDK DirectDraw , callbacks
+- DirectDraw AGP support WDK Windows 2000 display , callbacks
+- memory WDK DirectDraw AGP , callbacks
+- callbacks WDK DirectDraw nonlocal memory
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Callback Handling Of Nonlocal Display Memory Surfaces

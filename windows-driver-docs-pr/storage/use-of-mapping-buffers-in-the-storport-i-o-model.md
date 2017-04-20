@@ -3,6 +3,11 @@ title: Use of Mapping Buffers in the Storport I/O Model
 author: windows-driver-content
 description: Use of Mapping Buffers in the Storport I/O Model
 ms.assetid: cd22ec31-ff4d-42d4-a47d-7b8bd85804be
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Use of Mapping Buffers in the Storport I/O Model

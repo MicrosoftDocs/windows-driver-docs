@@ -2,6 +2,11 @@
 title: Send SMS by using the text-mode interface
 description: Send SMS by using the text-mode interface
 ms.assetid: 418328ef-09ab-40f5-989a-c592377e4b57
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Send SMS by using the text-mode interface

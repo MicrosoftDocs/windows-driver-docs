@@ -3,7 +3,14 @@ title: Point and Print DLLs
 author: windows-driver-content
 description: Point and Print DLLs
 ms.assetid: 7ead940e-8426-4756-890f-f3607dc1f9ca
-keywords: ["Point and Print WDK , DLLs", "DLLs WDK Point and Print"]
+keywords:
+- Point and Print WDK , DLLs
+- DLLs WDK Point and Print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Point and Print DLLs

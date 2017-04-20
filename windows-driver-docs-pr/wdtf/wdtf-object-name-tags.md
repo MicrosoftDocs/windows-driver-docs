@@ -3,6 +3,11 @@ title: WDTF Object Name tags
 author: windows-driver-content
 description: The WDTF OBJECT\_NAME tags are used in WDTF object logging.
 ms.assetid: 25C669DD-12D0-4C78-802F-CB8E26C4FD80
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDTF Object Name tags

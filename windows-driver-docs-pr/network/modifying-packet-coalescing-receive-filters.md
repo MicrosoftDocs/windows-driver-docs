@@ -2,6 +2,11 @@
 title: Modifying Packet Coalescing Receive Filters
 description: Modifying Packet Coalescing Receive Filters
 ms.assetid: 082A969F-2977-482A-B060-ED8D353EC2E9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Modifying Packet Coalescing Receive Filters

@@ -2,7 +2,23 @@
 title: Handling Compressed Texture Surfaces Created In System Memory
 description: Handling Compressed Texture Surfaces Created In System Memory
 ms.assetid: 773962ce-f459-4dc5-8311-c43ae33cfb7c
-keywords: ["drawing compressed textures WDK DirectDraw , system memory considerations", "DirectDraw compressed textures WDK Windows 2000 display , system memory considerations", "compressed texture surfaces WDK DirectDraw , system memory considerations", "surfaces WDK DirectDraw , compressed textures", "textures WDK DirectDraw , compressed", "drawing compressed textures WDK DirectDraw , width", "DirectDraw compressed textures WDK Windows 2000 display , width", "compressed texture surfaces WDK DirectDraw , width", "drawing compressed textures WDK DirectDraw , height", "DirectDraw compressed textures WDK Windows 2000 display , height", "compressed texture surfaces WDK DirectDraw , height"]
+keywords:
+- drawing compressed textures WDK DirectDraw , system memory considerations
+- DirectDraw compressed textures WDK Windows 2000 display , system memory considerations
+- compressed texture surfaces WDK DirectDraw , system memory considerations
+- surfaces WDK DirectDraw , compressed textures
+- textures WDK DirectDraw , compressed
+- drawing compressed textures WDK DirectDraw , width
+- DirectDraw compressed textures WDK Windows 2000 display , width
+- compressed texture surfaces WDK DirectDraw , width
+- drawing compressed textures WDK DirectDraw , height
+- DirectDraw compressed textures WDK Windows 2000 display , height
+- compressed texture surfaces WDK DirectDraw , height
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Compressed Texture Surfaces Created In System Memory

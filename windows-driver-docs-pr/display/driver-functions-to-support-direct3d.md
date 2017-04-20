@@ -2,7 +2,17 @@
 title: Driver Functions to Support Direct3D
 description: Driver Functions to Support Direct3D
 ms.assetid: 949551c3-2172-454c-b398-eba468b90705
-keywords: ["Direct3D WDK Windows 2000 display , functions", "functions WDK Direct3D", "callback functions WDK Direct3D", "LPD3DHAL_MYFUNCTIONDATA", "D3DHAL_MYFUNCTIONDATA"]
+keywords:
+- Direct3D WDK Windows 2000 display , functions
+- functions WDK Direct3D
+- callback functions WDK Direct3D
+- LPD3DHAL_MYFUNCTIONDATA
+- D3DHAL_MYFUNCTIONDATA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Functions to Support Direct3D

@@ -2,7 +2,17 @@
 title: Porting Miniport Driver Status Indications to NDIS 6.0
 description: Porting Miniport Driver Status Indications to NDIS 6.0
 ms.assetid: f502bd7d-adef-44a9-9ac6-8bb9dba1ca33
-keywords: ["NDIS miniport drivers WDK networking , status indications", "miniport drivers WDK networking , status indications", "porting miniport drivers WDK networking , status indications", "status indications WDK networking , porting", "porting status indications WDK"]
+keywords:
+- NDIS miniport drivers WDK networking , status indications
+- miniport drivers WDK networking , status indications
+- porting miniport drivers WDK networking , status indications
+- status indications WDK networking , porting
+- porting status indications WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Miniport Driver Status Indications to NDIS 6.0

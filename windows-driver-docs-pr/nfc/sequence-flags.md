@@ -3,7 +3,12 @@ title: Sequence flags
 author: windows-driver-content
 description: The NFC CX defines the following constants for sequence events.
 ms.assetid: AC6CE286-52F7-4FC9-9F38-CD10C1413A90
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
 topic_type:
 - apiref
 api_name:
@@ -14,6 +19,11 @@ api_name:
 - NFC_CX_SEQUENCE_PRE_SHUTDOWN_FLAG_SKIP_RESET
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sequence flags

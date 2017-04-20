@@ -3,7 +3,15 @@ title: Sample Registry Entry for UVC Extension Units
 author: windows-driver-content
 description: Sample Registry Entry for UVC Extension Units
 ms.assetid: a34e00e2-90f0-4073-8740-7f3e04d68639
-keywords: ["registry WDK USB Video Class", "extension units WDK USB Video Class , samples, registry entry", "sample code WDK USB Video Class , registry entry for UVC extension units"]
+keywords:
+- registry WDK USB Video Class
+- extension units WDK USB Video Class , samples, registry entry
+- sample code WDK USB Video Class , registry entry for UVC extension units
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Registry Entry for UVC Extension Units

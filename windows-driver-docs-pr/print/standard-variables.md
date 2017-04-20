@@ -3,7 +3,15 @@ title: Standard Variables
 author: windows-driver-content
 description: Standard Variables
 ms.assetid: d3f85c0f-7387-4301-8b1e-904471aed4b0
-keywords: ["GPD file entries WDK Unidrv , standard variables", "variables WDK GPD files", "standard variables WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , standard variables
+- variables WDK GPD files
+- standard variables WDK GPD files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standard Variables

@@ -2,6 +2,11 @@
 title: WindowsInfo XML schema
 description: WindowsInfo XML schema
 ms.assetid: a9c440ec-189c-4148-8f76-d6476aa708c0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WindowsInfo XML schema

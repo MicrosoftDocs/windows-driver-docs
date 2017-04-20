@@ -2,7 +2,27 @@
 title: Index of Windows Driver Kit Tools
 description: Index of Windows Driver Kit Tools
 ms.assetid: 26db88c4-8fb8-4308-ab8a-1a1eef5e19d8
-keywords: ["Disabler tool", "DbgCon tool", "Sniffir tool", "Sledge tool", "Call Usage Verifier tool", "CUV tool", "tools WDK , listed", "driver development tools WDK , listed", "Sleep State Chooser", "sleeper", "Acpislp", "Manual Power State Change Test", "GUIDGen WDK", "GUID Generator WDK", "GUIDGen.exe WDK"]
+keywords:
+- Disabler tool
+- DbgCon tool
+- Sniffir tool
+- Sledge tool
+- Call Usage Verifier tool
+- CUV tool
+- tools WDK , listed
+- driver development tools WDK , listed
+- Sleep State Chooser
+- sleeper
+- Acpislp
+- Manual Power State Change Test
+- GUIDGen WDK
+- GUID Generator WDK
+- GUIDGen.exe WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Index of Windows Driver Kit Tools

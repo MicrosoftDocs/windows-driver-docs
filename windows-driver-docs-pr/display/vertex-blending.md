@@ -2,7 +2,15 @@
 title: Vertex Blending
 description: Vertex Blending
 ms.assetid: 58e740fb-01e4-4c8c-8e44-f0c358fd621a
-keywords: ["lending WDK Direct3D", "vertex blending WDK Direct3D", "Direct3D WDK Windows 2000 display , vertex blending"]
+keywords:
+- lending WDK Direct3D
+- vertex blending WDK Direct3D
+- Direct3D WDK Windows 2000 display , vertex blending
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vertex Blending

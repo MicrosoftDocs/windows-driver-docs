@@ -2,6 +2,11 @@
 title: Enumerating Virtual Functions on a Network Adapter
 description: Enumerating Virtual Functions on a Network Adapter
 ms.assetid: 3AAF2D8B-9C7A-4E5B-86B6-264ACA5EA492
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Virtual Functions on a Network Adapter

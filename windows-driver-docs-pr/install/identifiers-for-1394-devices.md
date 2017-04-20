@@ -2,7 +2,19 @@
 title: Identifiers for 1394 Devices
 description: Identifiers for 1394 Devices
 ms.assetid: 6ab2538a-af4c-4c46-bda5-abb431c5bd6b
-keywords: ["device identification strings WDK , 1394 devices", "identification strings WDK device , 1394 devices", "identifiers WDK device , 1394 devices", "1394 device identifiers WDK device installations", "device IDs WDK device installations", "hardware IDs WDK device installations", "compatible IDs WDK device installations"]
+keywords:
+- device identification strings WDK , 1394 devices
+- identification strings WDK device , 1394 devices
+- identifiers WDK device , 1394 devices
+- 1394 device identifiers WDK device installations
+- device IDs WDK device installations
+- hardware IDs WDK device installations
+- compatible IDs WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifiers for 1394 Devices

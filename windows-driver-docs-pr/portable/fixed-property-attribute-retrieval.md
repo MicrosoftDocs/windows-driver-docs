@@ -1,6 +1,11 @@
 ---
 Description: Fixed Property-Attribute Retrieval
 title: Fixed Property-Attribute Retrieval
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Fixed Property-Attribute Retrieval

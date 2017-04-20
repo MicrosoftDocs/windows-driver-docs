@@ -2,7 +2,13 @@
 title: Overview of the Device Metadata System
 description: Overview of the Device Metadata System
 ms.assetid: 1ba0d1d7-da5a-4871-b47d-201f6bd35fac
-keywords: ["device metadata system WDK"]
+keywords:
+- device metadata system WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of the Device Metadata System

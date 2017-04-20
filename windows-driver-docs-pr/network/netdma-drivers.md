@@ -2,7 +2,19 @@
 title: NetDMA
 description: NetDMA
 ms.assetid: 44a76f35-6e7a-4241-b078-ba271cde95c2
-keywords: ["network drivers WDK , NetDMA drivers", "Direct Memory Access WDK networking", "memory-to-memory data transfers WDK NetDMA", "data transfers WDK NetDMA", "transferring data WDK NetDMA", "DMA transfers WDK NetDMA", "NetDMA WDK networking"]
+keywords:
+- network drivers WDK , NetDMA drivers
+- Direct Memory Access WDK networking
+- memory-to-memory data transfers WDK NetDMA
+- data transfers WDK NetDMA
+- transferring data WDK NetDMA
+- DMA transfers WDK NetDMA
+- NetDMA WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NetDMA

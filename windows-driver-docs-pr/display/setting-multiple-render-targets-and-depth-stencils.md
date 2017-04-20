@@ -2,7 +2,15 @@
 title: Setting Multiple Render Targets and Depth Stencils
 description: Setting Multiple Render Targets and Depth Stencils
 ms.assetid: 98acd448-0b65-4a3a-9e95-8e753729a7d7
-keywords: ["render targets WDK DirectX 9.0 , multiple", "multiple render targets WDK DirectX 9.0", "depth stencils WDK DirectX 9.0"]
+keywords:
+- render targets WDK DirectX 9.0 , multiple
+- multiple render targets WDK DirectX 9.0
+- depth stencils WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Multiple Render Targets and Depth Stencils

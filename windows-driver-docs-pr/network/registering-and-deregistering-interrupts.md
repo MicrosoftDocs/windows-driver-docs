@@ -2,7 +2,18 @@
 title: Registering and Deregistering Interrupts
 description: Registering and Deregistering Interrupts
 ms.assetid: 222782f3-092e-417d-ab1b-1988a593caa4
-keywords: ["interrupts WDK networking , registering", "interrupts WDK networking , deregistering", "NdisMRegisterInterruptEx", "NdisMDeregisterInterruptEx", "registering interrupts", "deregistering interrupts"]
+keywords:
+- interrupts WDK networking , registering
+- interrupts WDK networking , deregistering
+- NdisMRegisterInterruptEx
+- NdisMDeregisterInterruptEx
+- registering interrupts
+- deregistering interrupts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering and Deregistering Interrupts

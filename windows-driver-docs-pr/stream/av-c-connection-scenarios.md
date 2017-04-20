@@ -3,7 +3,25 @@ title: AV/C Connection Scenarios
 author: windows-driver-content
 description: AV/C Connection Scenarios
 ms.assetid: 392f996c-47aa-4ceb-adf9-0c8fd114a511
-keywords: ["connections WDK AV/C", "AV/C WDK , connection scenarios", "digital video WDK AV/C", "DV WDK AV/C", "Set-Top Box WDK AV/C", "STB WDK AV/C", "TV WDK AV/C", "television WDK AV/C", "subunit support WDK AV/C", "intra-unit connections WDK AV/C", "inter-unit connections WDK AV/C", "Avc.sys function driver WDK , connections", "external plug connections WDK AV/C"]
+keywords:
+- connections WDK AV/C
+- AV/C WDK , connection scenarios
+- digital video WDK AV/C
+- DV WDK AV/C
+- Set-Top Box WDK AV/C
+- STB WDK AV/C
+- TV WDK AV/C
+- television WDK AV/C
+- subunit support WDK AV/C
+- intra-unit connections WDK AV/C
+- inter-unit connections WDK AV/C
+- Avc.sys function driver WDK , connections
+- external plug connections WDK AV/C
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C Connection Scenarios

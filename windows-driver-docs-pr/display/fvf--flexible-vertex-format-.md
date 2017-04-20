@@ -2,7 +2,16 @@
 title: FVF (Flexible Vertex Format)
 description: FVF (Flexible Vertex Format)
 ms.assetid: 206f4275-bcb8-4e8e-9c11-c6fb5d9c561d
-keywords: ["vertex format WDK Direct3D", "flexible vertex format WDK Direct3D", "FVF WDK Direct3D", "Direct3D WDK Windows 2000 display , flexible vertex format"]
+keywords:
+- vertex format WDK Direct3D
+- flexible vertex format WDK Direct3D
+- FVF WDK Direct3D
+- Direct3D WDK Windows 2000 display , flexible vertex format
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # FVF (Flexible Vertex Format)

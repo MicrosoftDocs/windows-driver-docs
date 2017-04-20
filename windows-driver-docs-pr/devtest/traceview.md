@@ -2,7 +2,21 @@
 title: TraceView
 description: TraceView
 ms.assetid: f64ddf90-56b8-4341-8d59-f4d7e3eeddaf
-keywords: ["software tracing WDK , TraceView", "tracing WDK , TraceView", "TraceView WDK", "displaying trace messages", "trace message displaying WDK", "trace sessions WDK , TraceView", "trace sessions WDK , controlling", "trace consumers WDK", "trace controllers WDK"]
+keywords:
+- software tracing WDK , TraceView
+- tracing WDK , TraceView
+- TraceView WDK
+- displaying trace messages
+- trace message displaying WDK
+- trace sessions WDK , TraceView
+- trace sessions WDK , controlling
+- trace consumers WDK
+- trace controllers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TraceView

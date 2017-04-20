@@ -3,7 +3,16 @@ title: Plug and Play IDs for Printer INF Files
 author: windows-driver-content
 description: Plug and Play IDs for Printer INF Files
 ms.assetid: 4adb9203-1267-466e-89d8-63988ffa56e9
-keywords: ["INF files WDK print , Plug and Play IDs", "PnP ID WDK print", "Plug and Play IDs WDK print", "identifiers WDK printer"]
+keywords:
+- INF files WDK print , Plug and Play IDs
+- PnP ID WDK print
+- Plug and Play IDs WDK print
+- identifiers WDK printer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Plug and Play IDs for Printer INF Files

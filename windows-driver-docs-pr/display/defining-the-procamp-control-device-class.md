@@ -2,7 +2,13 @@
 title: Defining the ProcAmp Control Device Class
 description: Defining the ProcAmp Control Device Class
 ms.assetid: 382f5ecf-ce87-4100-adc7-7006cc7dc5ed
-keywords: ["ProcAmp WDK DirectX VA , defining device class"]
+keywords:
+- ProcAmp WDK DirectX VA , defining device class
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining the ProcAmp Control Device Class

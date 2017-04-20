@@ -3,7 +3,13 @@ title: Storage Class Driver's AddDevice Routine
 author: windows-driver-content
 description: Storage Class Driver's AddDevice Routine
 ms.assetid: ff07ae84-2748-44b4-88c6-e67f1d4c9268
-keywords: ["AddDevice routine WDK storage"]
+keywords:
+- AddDevice routine WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Class Driver's AddDevice Routine

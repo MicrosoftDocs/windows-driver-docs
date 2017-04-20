@@ -3,6 +3,11 @@ title: Session Zero Guidelines for UMDF Drivers
 author: windows-driver-content
 description: Session Zero Guidelines for UMDF Drivers
 ms.assetid: 67EF6762-AA31-4D35-8EB3-04F9CD34C7D1
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Session Zero Guidelines for UMDF Drivers

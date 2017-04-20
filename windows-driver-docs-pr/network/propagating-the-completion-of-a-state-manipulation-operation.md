@@ -2,7 +2,14 @@
 title: Propagating the Completion of a State-Manipulation Operation
 description: Propagating the Completion of a State-Manipulation Operation
 ms.assetid: 249dc6d0-c187-48ab-9525-e80093c8f01d
-keywords: ["propagating TCP chimney state-manipulation operations, completion of operation", "state-manipulation operations WDK TCP chimney offload , completion of operation"]
+keywords:
+- propagating TCP chimney state-manipulation operations, completion of operation
+- state-manipulation operations WDK TCP chimney offload , completion of operation
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Propagating the Completion of a State-Manipulation Operation

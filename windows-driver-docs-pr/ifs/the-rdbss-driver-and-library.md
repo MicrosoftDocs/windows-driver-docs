@@ -3,7 +3,23 @@ title: The RDBSS Driver and Library
 author: windows-driver-content
 description: The RDBSS Driver and Library
 ms.assetid: fb2d1939-7af5-474c-8247-e5d48b4bbed6
-keywords: ["network redirectors WDK , RDBSS", "redirector drivers WDK , RDBSS", "kernel network redirectors WDK , RDBSS", "RDBSS WDK file systems", "file system drivers WDK , RDBSS", "static libraries WDK file systems", "RDBSS WDK file systems , about RDBSS", "Redirected Drive Buffering Subsystem WDK file systems , about RDBSS", "mini-redirectors WDK , RDBSS", "structures WDK RDBSS", "data structures WDK RDBSS"]
+keywords:
+- network redirectors WDK , RDBSS
+- redirector drivers WDK , RDBSS
+- kernel network redirectors WDK , RDBSS
+- RDBSS WDK file systems
+- file system drivers WDK , RDBSS
+- static libraries WDK file systems
+- RDBSS WDK file systems , about RDBSS
+- Redirected Drive Buffering Subsystem WDK file systems , about RDBSS
+- mini-redirectors WDK , RDBSS
+- structures WDK RDBSS
+- data structures WDK RDBSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The RDBSS Driver and Library

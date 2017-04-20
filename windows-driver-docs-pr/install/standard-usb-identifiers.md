@@ -2,7 +2,15 @@
 title: Standard USB Identifiers
 description: Standard USB Identifiers
 ms.assetid: 39acb62b-83f2-4d14-a678-c37817193f01
-keywords: ["USB identifiers WDK device installations", "single-interface devices WDK USB", "multiple-interface devices WDK USB"]
+keywords:
+- USB identifiers WDK device installations
+- single-interface devices WDK USB
+- multiple-interface devices WDK USB
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standard USB Identifiers

@@ -2,6 +2,11 @@
 title: C28616
 description: Warning C28616 Multithreaded AV condition.
 ms.assetid: 77be6a23-18dc-420c-9359-ab91f216c73b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28616

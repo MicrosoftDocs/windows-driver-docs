@@ -3,6 +3,11 @@ title: Problem Description
 author: windows-driver-content
 description: Problem Description
 ms.assetid: 5e811011-9848-43fc-969d-abdf1ad45acf
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Problem Description

@@ -2,6 +2,11 @@
 title: Using Debugging Code in a Driver
 description: Using Debugging Code in a Driver
 ms.assetid: 6ed74bcc-290c-44e3-943e-4169527dfa18
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Debugging Code in a Driver

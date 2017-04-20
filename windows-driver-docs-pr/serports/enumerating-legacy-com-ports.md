@@ -3,7 +3,17 @@ title: Enumerating Legacy COM Ports
 author: windows-driver-content
 description: Enumerating Legacy COM Ports
 ms.assetid: 36a73153-0e3e-4b41-9b3d-08b29b5220fe
-keywords: ["Serial driver WDK , COM ports", "COM ports WDK serial devices", "serial devices WDK , COM ports", "enumerating COM ports WDK serial devices", "legacy COM ports WDK serial devices"]
+keywords:
+- Serial driver WDK , COM ports
+- COM ports WDK serial devices
+- serial devices WDK , COM ports
+- enumerating COM ports WDK serial devices
+- legacy COM ports WDK serial devices
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Legacy COM Ports

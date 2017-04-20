@@ -2,7 +2,17 @@
 title: Boot Parameters to Enable EMS Redirection
 description: Boot Parameters to Enable EMS Redirection
 ms.assetid: b93fd580-0e1d-4b1e-8358-1c6ce7e2eb5e
-keywords: ["boot parameters WDK", "boot entry parameters WDK", "Emergency Management Services WDK boot parameters", "EMS redirection WDK boot parameters", "remote administration WDK boot parameters"]
+keywords:
+- boot parameters WDK
+- boot entry parameters WDK
+- Emergency Management Services WDK boot parameters
+- EMS redirection WDK boot parameters
+- remote administration WDK boot parameters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boot Parameters to Enable EMS Redirection

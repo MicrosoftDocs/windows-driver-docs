@@ -2,7 +2,19 @@
 title: Creating Compressed Buffers and Decode Render Targets
 description: Creating Compressed Buffers and Decode Render Targets
 ms.assetid: 4d386b72-24d9-424b-8d48-7eaf75aab76c
-keywords: ["video decoding WDK DirectX VA , render targets", "decoding video WDK DirectX VA , render targets", "video decoding WDK DirectX VA , compressed buffers", "decoding video WDK DirectX VA , compressed buffers", "compressed buffers WDK DirectX VA", "buffers WDK DirectX VA", "render targets WDK DirectX VA"]
+keywords:
+- video decoding WDK DirectX VA , render targets
+- decoding video WDK DirectX VA , render targets
+- video decoding WDK DirectX VA , compressed buffers
+- decoding video WDK DirectX VA , compressed buffers
+- compressed buffers WDK DirectX VA
+- buffers WDK DirectX VA
+- render targets WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Compressed Buffers and Decode Render Targets

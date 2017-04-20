@@ -2,7 +2,25 @@
 title: Kernel-Mode Video Transport
 description: Kernel-Mode Video Transport
 ms.assetid: 3acaabc7-8d9f-441b-9170-2e5a4e0ce114
-keywords: ["drawing kernel-mode video transport WDK DirectDraw , about kernel-mode video transport", "DirectDraw kernel-mode video transport WDK Windows 2000 display , about kernel-mode video transport", "kernel-mode video transport WDK DirectDraw , about kernel-mode video transport", "video transport kernel-mode WDK DirectDraw , about kernel-mode video transport", "drawing kernel-mode video transport WDK DirectDraw", "DirectDraw kernel-mode video transport WDK Windows 2000 display", "kernel-mode video transport WDK DirectDraw", "video transport kernel-mode WDK DirectDraw", "weave WDK DirectDraw", "video capture WDK video transport kernel-mode", "miniVDD WDK DirectDraw", "bus mastering WDK DirectDraw", "V-sync WDK DirectDraw"]
+keywords:
+- drawing kernel-mode video transport WDK DirectDraw , about kernel-mode video transport
+- DirectDraw kernel-mode video transport WDK Windows 2000 display , about kernel-mode video transport
+- kernel-mode video transport WDK DirectDraw , about kernel-mode video transport
+- video transport kernel-mode WDK DirectDraw , about kernel-mode video transport
+- drawing kernel-mode video transport WDK DirectDraw
+- DirectDraw kernel-mode video transport WDK Windows 2000 display
+- kernel-mode video transport WDK DirectDraw
+- video transport kernel-mode WDK DirectDraw
+- weave WDK DirectDraw
+- video capture WDK video transport kernel-mode
+- miniVDD WDK DirectDraw
+- bus mastering WDK DirectDraw
+- V-sync WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel-Mode Video Transport

@@ -3,7 +3,21 @@ title: Supporting System Wake-Up
 author: windows-driver-content
 description: Supporting System Wake-Up
 ms.assetid: 519dcd1a-9975-48b1-a032-04348b903ac5
-keywords: ["system wake-up WDK KMDF", "power management WDK KMDF , wake-up capabilities", "wake-up capabilities WDK KMDF", "sleep power management WDK KMDF", "low-power states WDK KMDF", "Power Management Event WDK KMDF", "PME WDK KMDF", "Power Management Capabilities WDK KMDF", "PMC WDK KMDF"]
+keywords:
+- system wake-up WDK KMDF
+- power management WDK KMDF , wake-up capabilities
+- wake-up capabilities WDK KMDF
+- sleep power management WDK KMDF
+- low-power states WDK KMDF
+- Power Management Event WDK KMDF
+- PME WDK KMDF
+- Power Management Capabilities WDK KMDF
+- PMC WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting System Wake-Up

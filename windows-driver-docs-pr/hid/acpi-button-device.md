@@ -3,6 +3,11 @@ title: ACPI button device
 author: windows-driver-content
 description: The generic button device is a standard device for reporting button events through hardware interrupts, and mapping those interrupts to specific usages defined in the Human Interface Device (HID) specification.
 ms.assetid: 8FC78CE5-CBE6-479C-9373-1D8189E263B2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ACPI button device

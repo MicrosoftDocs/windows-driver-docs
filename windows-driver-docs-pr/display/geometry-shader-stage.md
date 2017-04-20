@@ -2,6 +2,11 @@
 title: Geometry Shader Stage
 description: Geometry Shader Stage
 ms.assetid: 390eb917-3289-4b6e-be23-8db24cdd2bd7
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Geometry Shader Stage

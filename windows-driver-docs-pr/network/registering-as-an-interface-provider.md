@@ -2,7 +2,16 @@
 title: Registering as an Interface Provider
 description: Registering as an Interface Provider
 ms.assetid: 7eb4b86d-077a-48de-94b6-11906e847569
-keywords: ["NDIS network interfaces WDK , interface providers", "network interfaces WDK , interface providers", "interface providers WDk network interface", "registering interface providers"]
+keywords:
+- NDIS network interfaces WDK , interface providers
+- network interfaces WDK , interface providers
+- interface providers WDk network interface
+- registering interface providers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering as an Interface Provider

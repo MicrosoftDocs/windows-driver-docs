@@ -3,7 +3,17 @@ title: Use Only Supplied Resources in a Plug and Play SCSI Miniport
 author: windows-driver-content
 description: Use Only Supplied Resources in a Plug and Play SCSI Miniport
 ms.assetid: 26c688dc-b6af-4a0c-8401-d53e653d90b3
-keywords: ["SCSI miniport drivers WDK storage , PnP", "PnP WDK SCSI", "Plug and Play WDK SCSI", "converting SCSI miniport drivers", "resource restrictions WDK SCSI"]
+keywords:
+- SCSI miniport drivers WDK storage , PnP
+- PnP WDK SCSI
+- Plug and Play WDK SCSI
+- converting SCSI miniport drivers
+- resource restrictions WDK SCSI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Use Only Supplied Resources in a Plug and Play SCSI Miniport

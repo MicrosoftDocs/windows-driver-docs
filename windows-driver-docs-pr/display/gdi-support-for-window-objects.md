@@ -2,7 +2,16 @@
 title: GDI Support for Window Objects
 description: GDI Support for Window Objects
 ms.assetid: 288120e0-e43c-4733-8bba-0e310ed55aae
-keywords: ["GDI WDK Windows 2000 display , window objects", "graphics drivers WDK Windows 2000 display , window objects", "drawing WDK GDI , window objects", "window objects WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , window objects
+- graphics drivers WDK Windows 2000 display , window objects
+- drawing WDK GDI , window objects
+- window objects WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Support for Window Objects

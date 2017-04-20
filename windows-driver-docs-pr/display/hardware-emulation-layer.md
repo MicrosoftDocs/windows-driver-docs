@@ -2,7 +2,21 @@
 title: Hardware Emulation Layer
 description: Hardware Emulation Layer
 ms.assetid: 79ca4e7f-f335-4e71-8abb-811d98976cc9
-keywords: ["drawing WDK DirectDraw , hardware emulation layer", "DirectDraw WDK Windows 2000 display , hardware emulation layer", "hardware emulation layer WDK DirectDraw", "HEL WDK DirectDraw", "emulation WDK DirectDraw", "transparent blts WDK DirectDraw", "capability bits WDK DirectDraw", "caps bits WDK DirectDraw", "surfaces WDK DirectDraw , capability bits"]
+keywords:
+- drawing WDK DirectDraw , hardware emulation layer
+- DirectDraw WDK Windows 2000 display , hardware emulation layer
+- hardware emulation layer WDK DirectDraw
+- HEL WDK DirectDraw
+- emulation WDK DirectDraw
+- transparent blts WDK DirectDraw
+- capability bits WDK DirectDraw
+- caps bits WDK DirectDraw
+- surfaces WDK DirectDraw , capability bits
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware Emulation Layer

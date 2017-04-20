@@ -3,7 +3,16 @@ title: ATA Port Driver's Queue Management
 author: windows-driver-content
 description: ATA Port Driver's Queue Management
 ms.assetid: feba86a6-2b89-41c9-9b14-b76c2522a332
-keywords: ["ATA Port drivers WDK , queues", "queues WDK ATA Port driver", "device queues WDK ATA Port driver", "LUN queues WDK ATA Port driver"]
+keywords:
+- ATA Port drivers WDK , queues
+- queues WDK ATA Port driver
+- device queues WDK ATA Port driver
+- LUN queues WDK ATA Port driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ATA Port Driver's Queue Management

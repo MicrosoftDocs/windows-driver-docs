@@ -3,7 +3,18 @@ title: Color Commands
 author: windows-driver-content
 description: Color Commands
 ms.assetid: 752a3c1d-05f1-4f5e-9ef2-e51721ef7cc4
-keywords: ["printer commands WDK Unidrv , colors", "color commands WDK Unidrv", "background color options WDK Unidrv", "palettes WDK Unidrv", "patterns WDK Unidrv", "brushes WDK Unidrv"]
+keywords:
+- printer commands WDK Unidrv , colors
+- color commands WDK Unidrv
+- background color options WDK Unidrv
+- palettes WDK Unidrv
+- patterns WDK Unidrv
+- brushes WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Color Commands

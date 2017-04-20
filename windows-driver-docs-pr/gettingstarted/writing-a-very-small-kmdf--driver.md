@@ -2,7 +2,13 @@
 title: Write a universal Hello World driver (KMDF)
 description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 ms.assetid: B4200732-67B5-4BD9-8852-81387912A9A4
-keywords: ["KMDF Hello World"]
+keywords:
+- KMDF Hello World
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Write a universal Hello World driver (KMDF)

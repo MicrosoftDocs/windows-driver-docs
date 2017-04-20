@@ -3,7 +3,21 @@ title: CD-ROM Set Speed
 author: windows-driver-content
 description: CD-ROM Set Speed
 ms.assetid: 25a46b23-f823-4fc7-a370-cab1c9418a94
-keywords: ["CD-ROM drivers WDK storage", "storage CD-ROM drivers WDK", "power management WDK CD-ROM", "speed WDK CD-ROM", "battery power WDK CD-ROM", "playback speed WDK CD-ROM", "spindle speed WDK CD-ROM", "SET CD SPEED", "SET STREAMING"]
+keywords:
+- CD-ROM drivers WDK storage
+- storage CD-ROM drivers WDK
+- power management WDK CD-ROM
+- speed WDK CD-ROM
+- battery power WDK CD-ROM
+- playback speed WDK CD-ROM
+- spindle speed WDK CD-ROM
+- SET CD SPEED
+- SET STREAMING
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CD-ROM Set Speed

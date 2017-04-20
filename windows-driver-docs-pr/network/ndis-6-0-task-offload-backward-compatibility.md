@@ -2,7 +2,16 @@
 title: NDIS 6.0 Task Offload Backward Compatibility
 description: NDIS 6.0 Task Offload Backward Compatibility
 ms.assetid: c87ab12e-b387-4fb5-ae14-b78e050f6b77
-keywords: ["task offload porting WDK networking , backward compatibility", "TCP/IP offload service porting WDK networking , backward compatibility", "offload service porting WDK networking , backward compatibility", "porting task offload services WDK networking , backwa"]
+keywords:
+- task offload porting WDK networking , backward compatibility
+- TCP/IP offload service porting WDK networking , backward compatibility
+- offload service porting WDK networking , backward compatibility
+- porting task offload services WDK networking , backwa
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS 6.0 Task Offload Backward Compatibility

@@ -3,7 +3,13 @@ title: AVStream Overview
 author: windows-driver-content
 description: AVStream Overview
 ms.assetid: 305039fe-0a00-4f3e-ae1a-61c50a2f2fb3
-keywords: ["AVStream WDK , about AVStream minidrivers"]
+keywords:
+- AVStream WDK , about AVStream minidrivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Overview

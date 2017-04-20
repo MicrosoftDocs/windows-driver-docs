@@ -3,6 +3,11 @@ title: PCI Power Management and Device Drivers
 author: windows-driver-content
 description: This article clarifies some confusion that vendors have experienced about how hardware that complies with PCI Power Management (PCI-PM) interacts with device drivers in the operating system and about how PCI-PM integrates with ACPI.
 ms.assetid: BA6792EE-CAD8-4C9E-AAA6-D1D8799F50C3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PCI Power Management and Device Drivers

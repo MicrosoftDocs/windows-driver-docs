@@ -2,6 +2,11 @@
 title: Receiving Hyper-V Extensible Switch config change OID requests
 description: Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes
 ms.assetid: 9149BFF3-59B3-4563-A1A1-34FDD115964E
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes

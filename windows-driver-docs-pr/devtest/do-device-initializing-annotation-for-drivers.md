@@ -2,6 +2,11 @@
 title: DO\_DEVICE\_INITIALIZING Annotation for drivers
 description: .
 ms.assetid: EFC5F0A3-7B20-49A5-9D50-1737DF76DC9E
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DO\_DEVICE\_INITIALIZING Annotation for drivers

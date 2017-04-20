@@ -2,7 +2,13 @@
 title: Side Effects of Using the Checked Build
 description: Side Effects of Using the Checked Build
 ms.assetid: 8c08d4f3-1221-4858-afd4-249d966c14a7
-keywords: ["checked builds WDK , performance impact"]
+keywords:
+- checked builds WDK , performance impact
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Side Effects of Using the Checked Build

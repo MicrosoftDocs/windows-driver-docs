@@ -3,7 +3,14 @@ title: Printer INF File Entries
 author: windows-driver-content
 description: Printer INF File Entries
 ms.assetid: 897072bb-e481-4c8d-a2bf-57b19c69ac0e
-keywords: ["INF files WDK print , entries", "dependent files WDK printer"]
+keywords:
+- INF files WDK print , entries
+- dependent files WDK printer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer INF File Entries

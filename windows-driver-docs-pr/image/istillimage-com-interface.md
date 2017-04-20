@@ -3,6 +3,11 @@ title: IStillImage COM Interface
 author: windows-driver-content
 description: IStillImage COM Interface
 ms.assetid: eb60a3fd-e7e2-4d3c-973e-af8cb3c3c511
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IStillImage COM Interface

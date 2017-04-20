@@ -3,7 +3,14 @@ title: Request Ownership
 author: windows-driver-content
 description: Request Ownership
 ms.assetid: 60494e97-0483-454f-aafc-7a69019c95f2
-keywords: ["request objects WDK KMDF , ownership", "ownership WDK KMDF , I/O requests"]
+keywords:
+- request objects WDK KMDF , ownership
+- ownership WDK KMDF , I/O requests
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Request Ownership

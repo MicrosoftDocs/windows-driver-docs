@@ -2,7 +2,15 @@
 title: 802.11 WLAN Adapter Removal
 description: 802.11 WLAN Adapter Removal
 ms.assetid: 2181d284-7987-48db-b7a4-d1296d8313ed
-keywords: ["adapters WDK 802.11 WLAN , removing", "WLAN adapters WDK , removing", "removing WLAN adapters"]
+keywords:
+- adapters WDK 802.11 WLAN , removing
+- WLAN adapters WDK , removing
+- removing WLAN adapters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 WLAN Adapter Removal

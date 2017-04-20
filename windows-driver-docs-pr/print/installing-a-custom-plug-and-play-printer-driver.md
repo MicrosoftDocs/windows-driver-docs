@@ -3,7 +3,13 @@ title: Installing a Custom Plug and Play Printer Driver
 author: windows-driver-content
 description: Installing a Custom Plug and Play Printer Driver
 ms.assetid: 0269afbe-c7d1-4227-ad77-b921852d6a0c
-keywords: ["customizing printer drivers WDK , Plug and Play"]
+keywords:
+- customizing printer drivers WDK , Plug and Play
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Custom Plug and Play Printer Driver

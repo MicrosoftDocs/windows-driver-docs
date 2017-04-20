@@ -2,6 +2,11 @@
 title: Step 5 Submit the Windows Store device app
 description: This topic describes how to submit your Windows Store device app to the Windows Store dashboard.
 ms.assetid: B25F9953-6EFD-4A08-AFD6-B334C46E910F
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Step 5: Submit the Windows Store device app

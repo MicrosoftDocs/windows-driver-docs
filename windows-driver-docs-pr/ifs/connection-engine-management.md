@@ -3,7 +3,16 @@ title: Connection Engine Management
 author: windows-driver-content
 description: Connection Engine Management
 ms.assetid: 00ac74c5-2a69-493f-ad9b-6fa2f9082ac1
-keywords: ["RDBSS WDK file systems , connection engine management", "Redirected Drive Buffering Subsystem WDK file systems , connection engine management", "connection engine WDK network redirectors", "TDI drivers WDK file systems"]
+keywords:
+- RDBSS WDK file systems , connection engine management
+- Redirected Drive Buffering Subsystem WDK file systems , connection engine management
+- connection engine WDK network redirectors
+- TDI drivers WDK file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connection Engine Management

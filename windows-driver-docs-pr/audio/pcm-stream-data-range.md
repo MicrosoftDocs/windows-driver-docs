@@ -2,7 +2,13 @@
 title: PCM Stream Data Range
 description: PCM Stream Data Range
 ms.assetid: e8a9b681-3bd2-46ed-970f-5217dbfb2e4e
-keywords: ["PCM stream data ranges WDK"]
+keywords:
+- PCM stream data ranges WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PCM Stream Data Range

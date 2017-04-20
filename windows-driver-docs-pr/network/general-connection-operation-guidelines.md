@@ -2,7 +2,13 @@
 title: General Connection Operation Guidelines
 description: General Connection Operation Guidelines
 ms.assetid: 0d09fb82-dbdd-413e-8ea6-387120dbed13
-keywords: ["connections WDK Native 802.11 network operations"]
+keywords:
+- connections WDK Native 802.11 network operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Connection Operation Guidelines

@@ -2,7 +2,18 @@
 title: Supporting Output Protection Manager
 description: Supporting Output Protection Manager
 ms.assetid: 2c138dbd-55ca-4c71-8c8b-b2efd1ca80f2
-keywords: ["COPP WDK DirectX VA , Output Protection Manager", "Output Protection Manager WDK display", "OPM WDK display", "copy protection WDK display", "video copy protection WDK display", "protected video WDK display"]
+keywords:
+- COPP WDK DirectX VA , Output Protection Manager
+- Output Protection Manager WDK display
+- OPM WDK display
+- copy protection WDK display
+- video copy protection WDK display
+- protected video WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Output Protection Manager

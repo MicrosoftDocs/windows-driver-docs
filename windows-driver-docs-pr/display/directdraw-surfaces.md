@@ -2,7 +2,22 @@
 title: DirectDraw Surfaces
 description: DirectDraw Surfaces
 ms.assetid: be99b124-5193-4826-be28-ed6a132b84af
-keywords: ["drawing surfaces WDK DirectDraw , about surfaces", "DirectDraw surfaces WDK Windows 2000 display , about surfaces", "surfaces WDK DirectDraw , about surfaces", "capability bits WDK DirectDraw", "caps bits WDK DirectDraw", "drawing surfaces WDK DirectDraw", "DirectDraw surfaces WDK Windows 2000 display", "surfaces WDK DirectDraw", "surfaces WDK DirectDraw , capability bits", "primary surfaces WDK DirectDraw"]
+keywords:
+- drawing surfaces WDK DirectDraw , about surfaces
+- DirectDraw surfaces WDK Windows 2000 display , about surfaces
+- surfaces WDK DirectDraw , about surfaces
+- capability bits WDK DirectDraw
+- caps bits WDK DirectDraw
+- drawing surfaces WDK DirectDraw
+- DirectDraw surfaces WDK Windows 2000 display
+- surfaces WDK DirectDraw
+- surfaces WDK DirectDraw , capability bits
+- primary surfaces WDK DirectDraw
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectDraw Surfaces

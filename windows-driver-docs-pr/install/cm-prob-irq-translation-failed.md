@@ -2,7 +2,13 @@
 title: CM_PROB_IRQ_TRANSLATION_FAILED
 description: CM_PROB_IRQ_TRANSLATION_FAILED
 ms.assetid: fafd40d5-43bf-4243-907a-df523e1b501e
-keywords: ["CM_PROB_IRQ_TRANSLATION_FAILED"]
+keywords:
+- CM_PROB_IRQ_TRANSLATION_FAILED
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CM_PROB_IRQ_TRANSLATION_FAILED

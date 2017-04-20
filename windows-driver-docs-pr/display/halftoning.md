@@ -2,7 +2,18 @@
 title: Halftoning
 description: Halftoning
 ms.assetid: 94cf0d87-055d-470e-94ca-225d519aeb14
-keywords: ["GDI WDK Windows 2000 display , halftoning", "graphics drivers WDK Windows 2000 display , halftoning", "drawing WDK GDI , halftoning", "halftoning WDK GDI", "fixed-cell spacing WDK GDI", "size WDK GDI halftoning"]
+keywords:
+- GDI WDK Windows 2000 display , halftoning
+- graphics drivers WDK Windows 2000 display , halftoning
+- drawing WDK GDI , halftoning
+- halftoning WDK GDI
+- fixed-cell spacing WDK GDI
+- size WDK GDI halftoning
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Halftoning

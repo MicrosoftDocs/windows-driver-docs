@@ -2,7 +2,16 @@
 title: Extensible Station PHY Statistics
 description: Extensible Station PHY Statistics
 ms.assetid: ee4a9a5c-4b0e-4e1e-a8f2-94edac7610cb
-keywords: ["ExtSTA mode WDK Native 802.11", "Extensible Station PHY statistics WDK Native 802.11", "PHY statistics WDK Native 802.11", "physical layer statistics WDK Native 802.11"]
+keywords:
+- ExtSTA mode WDK Native 802.11
+- Extensible Station PHY statistics WDK Native 802.11
+- PHY statistics WDK Native 802.11
+- physical layer statistics WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Station PHY Statistics

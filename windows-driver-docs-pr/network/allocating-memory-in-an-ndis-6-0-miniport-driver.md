@@ -2,7 +2,17 @@
 title: Allocating Memory in an NDIS 6.0 Miniport Driver
 description: Allocating Memory in an NDIS 6.0 Miniport Driver
 ms.assetid: e3ae6c37-d200-49b4-b4dd-4b2bc4a00647
-keywords: ["allocating memory", "memory WDK networking", "miniport adapters WDK networking , memory", "adapters WDK networking , memory", "porting miniport drivers WDK networking , adapters"]
+keywords:
+- allocating memory
+- memory WDK networking
+- miniport adapters WDK networking , memory
+- adapters WDK networking , memory
+- porting miniport drivers WDK networking , adapters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Memory in an NDIS 6.0 Miniport Driver

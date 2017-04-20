@@ -3,7 +3,15 @@ title: Compound Template Data Type Issues
 author: windows-driver-content
 description: Compound Template Data Type Issues
 ms.assetid: 61f26465-c79d-42e3-94c8-26c2c61ecb98
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , problems with template data types", "data types WDK GDL , compound"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , problems with template data types
+- data types WDK GDL , compound
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compound Template Data Type Issues
