@@ -1,9 +1,9 @@
 ---
-Description: Architecture overview of Windows portable devices
-title: Architecture Overview of Windows portable devices
+Description: Architecture overview of WIndows Portable Devices
+title: Architecture Overview
 ---
 
-# Architecture overview of Windows portable devices
+# Architecture Overview
 
 
 The WPD architecture can be divided into three processes. Within these processes are the three primary components of WPD: the API, the serializer, and the driver. The following illustration depicts these processes and components that constitute the WPD architecture.

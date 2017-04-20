@@ -1,11 +1,11 @@
 ---
-title: Synchronized Access within Unsynchronized Miniport Driver Routines
+title: Synchronized Access within Miniport Driver Routines
 author: windows-driver-content
-description: Synchronized Access within Unsynchronized Miniport Driver Routines
+description: Even when a miniport driver executes in full-duplex mode or has unsynchronized processing of SRBs, it might still require synchronized access.
 ms.assetid: a1bc3bff-b109-4a52-8466-48a0be7611b7
 ---
 
-# Synchronized Access within Unsynchronized Miniport Driver Routines
+# Synchronized Access within Miniport Driver Routines
 
 
 ## <span id="ddk_synchronized_access_within_unsynchronized_miniport_driver_routines"></span><span id="DDK_SYNCHRONIZED_ACCESS_WITHIN_UNSYNCHRONIZED_MINIPORT_DRIVER_ROUTINES"></span>
