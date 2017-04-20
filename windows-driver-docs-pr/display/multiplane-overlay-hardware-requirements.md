@@ -1,7 +1,7 @@
 ---
 title: Multiplane overlay hardware requirements
 ms.assetid: 3BDA8F54-A0D8-4879-A828-89A2E4254179
-description: 
+description: Hardware requirements needed to support multiplane overlays.
 ---
 
 # Multiplane overlay hardware requirements
