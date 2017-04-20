@@ -1,4 +1,3 @@
-# Table of Contents
 # [Design Guide](index.md)
 ## [Windows 10: What's New for Audio](windows-threshold--what-s-new-for-audio.md)
 ## [Windows Audio Architecture](windows-audio-architecture.md)
@@ -360,4 +359,3 @@
 ##### [Preferred Voice-Communications Device ID](preferred-voice-communications-device-id.md)
 ##### [Obtaining a Device Interface Name](obtaining-a-device-interface-name.md)
 ##### [Music Technology GUIDs](music-technology-guids.md)
-
