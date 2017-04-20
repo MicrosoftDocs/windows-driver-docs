@@ -1,6 +1,6 @@
 ---
 title: Building Windows Store device apps
-description: This topic describes the components of a Windows Store device app, the basic steps for building one, and the order in which you must submit your app and device metadata to the Windows Store dashboard and the Windows Dev Center hardware dashboard, respectively.
+description: Device manufacturers can create a Windows Store device app that serves as a companion to their device.
 ms.assetid: DB88876E-3C92-40E9-A2E2-19493F3357B5
 ---
 
