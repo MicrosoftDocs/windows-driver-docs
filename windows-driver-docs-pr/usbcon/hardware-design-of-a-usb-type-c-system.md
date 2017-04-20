@@ -1,6 +1,6 @@
 ---
 Description: Here are some example designs for USB Type-C system.
-title: Hardware design: USB Type-C systems
+title: Hardware design of USB Type-C systems
 ---
 
 # Hardware design: USB Type-C systems

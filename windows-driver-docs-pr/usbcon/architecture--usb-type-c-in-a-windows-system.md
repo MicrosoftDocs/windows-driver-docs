@@ -1,6 +1,6 @@
 ---
 Description: Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.
-title: Architecture: USB Type-C design for a Windows system
+title: Architecture of USB Type-C design for a Windows system
 ---
 
 # Architecture: USB Type-C design for a Windows system

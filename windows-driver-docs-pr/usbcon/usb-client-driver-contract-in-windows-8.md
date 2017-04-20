@@ -1,6 +1,6 @@
 ---
 Description: This topic describes best practices for a client driver for allocating, building, and sending an URB to the USB driver stack included with Windows 8.
-title: Best Practices: Using URBs
+title: Best Practices - Using URBs
 ---
 
 # Best Practices: Using URBs

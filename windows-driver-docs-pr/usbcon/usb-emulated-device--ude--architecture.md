@@ -1,6 +1,6 @@
 ---
 Description: The section describes architecture of USB Device Emulation(UDE) that emulates the behavior of a USB host controller and a connected device.
-title: Architecture: USB Device Emulation (UDE)
+title: Architecture of USB Device Emulation (UDE)
 ---
 
 # Architecture: USB Device Emulation (UDE)
