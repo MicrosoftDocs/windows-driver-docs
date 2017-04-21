@@ -1,6 +1,6 @@
 ---
-title: Filter Drivers
-description: Filter Drivers
+title: Faster filter drivers
+description: Faster filter drivers
 ms.assetid: df708a7d-70e9-4a29-bbd2-4e2b84ed493d
 keywords:
 - filter drivers WDK networking , NDIS
@@ -14,7 +14,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Filter Drivers
+# Faster filter drivers
 
 
 ## <a href="" id="ddk-filter-drivers-ng"></a>

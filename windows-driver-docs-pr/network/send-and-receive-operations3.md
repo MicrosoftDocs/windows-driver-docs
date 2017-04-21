@@ -1,6 +1,6 @@
 ---
-title: Send and Receive Operations
-description: Send and Receive Operations
+title: Native 802.11 IHV extension send and receive operations
+description: Native 802.11 IHV extension send and receive operations
 ms.assetid: 8fcd14bf-2f45-4c1d-87b7-523a0ceb32e0
 keywords:
 - IHV Extensions DLL WDK Native 802.11 , send and receive operations
@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Send and Receive Operations
+# Native 802.11 IHV extension send and receive operations
 
 
 **Important**  The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](wifi-universal-driver-model.md).

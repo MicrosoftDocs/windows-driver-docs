@@ -1,6 +1,6 @@
----
+﻿---
 title: Windows 8 in-box graphics drivers treated as generic drivers
-description: In this scenario, Windows 8 in-box graphics drivers, including the MS Basic Display Driver (MSBDD), are all treated like generic drivers by Windows and Windows Update.
+description: Windows 8 in-box graphics drivers, including the MS Basic Display Driver (MSBDD), are all treated like generic drivers by Windows and Windows Update.
 ms.assetid: 4920450B-8E77-468C-812A-3794E51AE227
 ms.author: windows-driver-content
 ms.date: 04/20/2017

@@ -1,6 +1,6 @@
 ---
-title: Upgrading Network Components
-description: Upgrading Network Components
+title: Process for upgrading network components
+description: Process for upgrading network components
 ms.assetid: ddd1eda0-7bed-44e7-8636-8db3508825f5
 keywords:
 - network component upgrades WDK
@@ -14,7 +14,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Upgrading Network Components
+# Process for upgrading network components
 
 
 ## <a href="" id="ddk-upgrading-network-components-ng"></a>

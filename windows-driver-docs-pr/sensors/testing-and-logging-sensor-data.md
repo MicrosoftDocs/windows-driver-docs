@@ -1,7 +1,7 @@
----
+﻿---
 title: Testing Sensor Property Support
 author: windows-driver-content
-description: Use the Sensor Diagnostic Tool to test whether your driver and firmware support property retrieval. The tool invokes properties in the Sensor API to determine whether you support property retrieval.
+description: Use the Sensor Diagnostic Tool to test whether your driver and firmware support property retrieval.
 ms.assetid: 6E8C2162-F7BD-4544-8869-00FA4E4925E0
 ms.author: windows-driver-content
 ms.date: 04/20/2017

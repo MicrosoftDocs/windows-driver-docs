@@ -1,6 +1,6 @@
----
+﻿---
 title: Support for headless systems
-description: Windows 8 supports booting without any graphics hardware. This is accomplished by using a stub display output if no display devices are found. This stub display is implemented as part of the in-box Microsoft Basic Display Driver (MSBDD).
+description: Windows 8 supports booting without any graphics hardware.
 ms.assetid: 6351F6F9-6666-4040-A82A-3813ACCE8DEA
 ms.author: windows-driver-content
 ms.date: 04/20/2017

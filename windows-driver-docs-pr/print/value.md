@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Value
+# Value (WSD)
 
 
 The WSD `Value` construct allows you to extend the bidi communications schema with queries that retrieve data from a particular schema element in the Web service interface.

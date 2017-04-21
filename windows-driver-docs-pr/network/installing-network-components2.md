@@ -1,6 +1,6 @@
 ---
-title: Installing Network Components
-description: Installing Network Components
+title: Process for installing network components
+description: Process for installing network components
 ms.assetid: 3efcd64c-22bc-44ff-a646-a57390482629
 keywords:
 - network component installations WDK
@@ -11,7 +11,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Installing Network Components
+# Process for installing network components
 
 
 ## <a href="" id="ddk-installing-network-components-ng"></a>

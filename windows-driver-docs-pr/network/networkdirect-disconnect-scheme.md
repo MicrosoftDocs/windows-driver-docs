@@ -1,6 +1,6 @@
 ---
 title: NetworkDirect Disconnect Scheme
-description: .
+description: This section describes the NetworkDirect disconnect scheme
 ms.assetid: A7973588-5AED-494E-92CA-D5EFB2C7950A
 ms.author: windows-driver-content
 ms.date: 04/20/2017
