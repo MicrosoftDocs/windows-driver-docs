@@ -1,6 +1,6 @@
----
+﻿---
 title: Device Metadata Authoring Wizard
-description: .
+description: The Device Metadata Authoring Wizard is a tool that device manufacturers and service operators can use to develop a metadata package for their devices and services.
 ms.assetid: 2e7beadc-66b2-4421-9f4e-1bdd06c70065
 keywords:
 - Device Metadata Authoring Wizard help

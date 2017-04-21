@@ -1,6 +1,12 @@
 ---
-Description: You need to write a driver for the connector if your USB Type-C system does not include an embedded controller, otherwise you can load the Microsoft-provided UCSI driver.TopicDescriptionArchitecture: USB Type-C design for a Windows systemDescribes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.Bring up the function controller on a USB Type-C Windows systemThe driver for the function controller informs the operating system about the charging levels that its USB Type-C connector supports and notifies the battery subsystem when it can begin charging and the maximum amount of current the device can draw.Bring up the dual-role controller for a USB Type-C Windows systemThe USB role-switch drivers (URS) are a set of WDF class extension and its client driver that handles the role-switching capability of a dual-role controller. If your system has a dual role controller, you can switch the role of the system depending on the device that is attached to the partner port of the USB Type-C connector of the system. This allows interesting scenarios such as wired docking.Write a USB Type-C connector driverDescribes the USB connector manager (UCM) that manages a USB Type-C connector and the expected behavior of a connector driver.  Related sectionsWrite a USB role-switch (URS) client driverUSB Dual Role Driver Stack ArchitectureUSB dual-role controller driver programming referenceWrite a USB function client driverDeveloping Windows drivers for USB function controllersUSB function controller programming reference
+Description: You need to write a driver for the connector if your USB Type-C system does not include an embedded controller, otherwise you can load the Microsoft-provided UCSI driver.
 title: Developing Windows drivers for USB Type-C connectors
+author: windows-driver-content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developing Windows drivers for USB Type-C connectors

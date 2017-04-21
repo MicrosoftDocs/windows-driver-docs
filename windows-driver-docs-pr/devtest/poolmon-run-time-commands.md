@@ -1,6 +1,6 @@
----
+﻿---
 title: PoolMon Run-time Commands
-description: To change the display while PoolMon is running, use the run-time commands. Each run-time command consists of a single keyboard character. Press the key to execute the command.
+description: To change the display while PoolMon is running, use the run-time commands.
 ms.assetid: 834f406d-5e5d-416e-90df-b52b61d70ea7
 keywords:
 - PoolMon Run-time Commands Driver Development Tools

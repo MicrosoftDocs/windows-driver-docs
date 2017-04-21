@@ -1,7 +1,7 @@
 ---
 title: Programming Guide
 author: windows-driver-content
-description: This programming guide includes the basics for writing a sensor device driver. The basics include considerations you'll need to make, adding support for events, managing report intervals, and best practices.
+description: This programming guide includes the basics for writing a sensor device driver.
 ms.assetid: 4F36CE11-F13B-4620-9417-67A7EBFF3D41
 ms.author: windows-driver-content
 ms.date: 04/20/2017

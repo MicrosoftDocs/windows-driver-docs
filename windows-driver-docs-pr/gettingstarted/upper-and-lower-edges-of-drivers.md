@@ -1,6 +1,6 @@
----
+﻿---
 title: Upper and lower edges of drivers
-description: The sequence of drivers that participate in an I/O request is called the driver stack for the request. A driver can call into the upper edge of a lower driver in the stack. A driver can also call into the lower edge of a higher driver in the stack.
+description: The sequence of drivers that participate in an I/O request is called the driver stack for the request. 
 ms.assetid: EA1C36F4-B9BD-4A9E-A6D4-6B4EC5455030
 ms.author: windows-driver-content
 ms.date: 04/20/2017
