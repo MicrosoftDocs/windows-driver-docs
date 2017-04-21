@@ -1,7 +1,7 @@
 ---
 title: Guidance for location simulators
 author: windows-driver-content
-description: Microsoft Visual Studio 2012 provides a location simulator that works together with a location simulator driver that you create. This section contains guidance for implementing a location simulator driver.
+description: This section contains guidance for implementing a location simulator driver.
 ms.assetid: 4AA6C3EE-0150-45A8-ACC2-D0267591D33D
 ms.author: windows-driver-content
 ms.date: 04/20/2017

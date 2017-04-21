@@ -1,6 +1,11 @@
 ---
-Description: This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.New Driver Stack for USB 3.0 DevicesFeatures Supported by the New StackClient contract version for USB client driversNew Routines for Allocating and Building URBsNew User Mode I/O Control Requests for USB 3.0 HubsNew Compatible ID for WinUSBNew Visual Studio templates for USB client drivers (\*New for Beta)UASP driverBoot supportEnhanced debugging and diagnostic capabilities New USB-specific failure messages in Device ManagerFor information about new features in USB in general, see New for USB Drivers.
-title: Windows 8: What's new for USB
+Description: This topic summarizes the new features and improvements for Universal Serial Bus (USB) client drivers in Windows 8.
+title: Windows 8 - What's new for USB
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows 8: What's new for USB

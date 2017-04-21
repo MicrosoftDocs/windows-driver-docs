@@ -1,6 +1,6 @@
----
+﻿---
 title: '\ SourceDiskNames\ section directives'
-description: On Windows Vista and later, in-box INFs use the \ SourceDisksXxx\ directives. However, the values of these sections were changed from what had previously typically been noted in an independent hardware vendor (IHV) production driver package.
+description: On Windows Vista and later, in-box INFs use the \ SourceDisksXxx\ directives. 
 ms.assetid: 0AC01548-3E53-41ED-9C7E-E33FC2DD14FD
 ms.author: windows-driver-content
 ms.date: 04/20/2017
