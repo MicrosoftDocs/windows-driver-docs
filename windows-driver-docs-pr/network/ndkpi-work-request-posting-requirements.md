@@ -1,6 +1,6 @@
 ---
 title: NDKPI Work Request Posting Requirements
-description: .
+description: This section describes requirements for NDKPI work request posting
 ms.assetid: 2BF6F253-FCB4-4A61-9A67-81092F3C44E4
 ms.author: windows-driver-content
 ms.date: 04/20/2017

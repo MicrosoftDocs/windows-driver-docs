@@ -1,6 +1,6 @@
 ---
-title: TrustedCertificate
-description: TrustedCertificate
+title: TrustedCertificate (MobileBroadbandInfo)
+description: TrustedCertificate (MobileBroadbandInfo)
 ms.assetid: d22a488d-445e-4011-b881-f2cf49aa4049
 ms.author: windows-driver-content
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# TrustedCertificate
+# TrustedCertificate (MobileBroadbandInfo)
 
 
 The TrustedCertificate element specifies the Subject Name and Issuer name of a trusted certificate.

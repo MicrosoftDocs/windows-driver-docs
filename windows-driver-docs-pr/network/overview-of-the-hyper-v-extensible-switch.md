@@ -1,6 +1,6 @@
 ---
 title: Overview of the Hyper-V Extensible Switch
-description: Windows Server 2012 introduces the Hyper-V Extensible Switch (also called the Hyper-V Virtual Switch), which is a virtual Ethernet switch that runs in the management operating system of the Hyper-V parent partition.
+description: This section provides an overview of the Hyper-V Extensible Switch
 ms.assetid: 78181C72-FBFD-4860-A664-C297997D780F
 ms.author: windows-driver-content
 ms.date: 04/20/2017

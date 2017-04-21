@@ -1,6 +1,6 @@
 ---
-title: Identity
-description: Identity
+title: Identity (SoftwareInfo)
+description: Identity (SoftwareInfo)
 ms.assetid: fcec93ad-54d4-466e-8fac-888377115689
 ms.author: windows-driver-content
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Identity
+# Identity (SoftwareInfo)
 
 
 The Identity element specifies the publisher identity and application manifest name of the app.

@@ -1,6 +1,6 @@
 ---
-title: HardwareIdList
-description: HardwareIdList
+title: HardwareIDList (APN element)
+description: HardwareIDList (APN element)
 ms.assetid: 9a3ca581-0afb-42fa-b13e-d233d9555b7e
 ms.author: windows-driver-content
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# HardwareIdList
+# HardwareIdList (APN element)
 
 
 The HardwareIdList element specifies a list of hardware IDs for the operator.
