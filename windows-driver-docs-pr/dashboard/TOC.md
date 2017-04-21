@@ -5,7 +5,7 @@
 ### [Manage hardware submissions](manage-your-hardware-submissions.md)
 ### [ID definitions](id-definitions.md)
 ### [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md)
-### [How to get a driver signed by Microsoft for multiple versions of Windows](walkthrough--how-to-get-a-driver-signed-by-microsoft-for-multiple-versions-of-windows.md)
+### [How to get a driver signed by Microsoft for multiple versions of Windows](get-drivers signed-by-microsoft-for-multiple-windows-versions.md)
 ## [Manage driver distribution with shipping labels](manage-driver-distribution-by-submission.md)
 ### [Publishing restrictions](publishing-restrictions.md)
 ### [Publish a driver to Windows Update](publish-a-driver-to-windows-update.md)
