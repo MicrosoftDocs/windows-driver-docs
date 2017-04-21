@@ -1,5 +1,5 @@
 ---
-Description: To enable applications to get and set an endpoint pipe's default policy parameters, Winusb.dll exposes the WinUsb\_GetPipePolicy function to retrieve the pipe's default policy.
+Description: Winusb.dll exposes the WinUsb\_GetPipePolicy function to retrieve the pipe's default policy.
 title: WinUSB Functions for Pipe Policy Modification
 author: windows-driver-content
 ms.author: windows-driver-content

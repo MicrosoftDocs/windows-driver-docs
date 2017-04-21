@@ -1,6 +1,6 @@
 ---
-Description: Describes the Device Fundamental tests that you must run for MUTT devices that are attached to available ports, to perform stress and transfer tests and system power tests.These tests perform simple device transfers at the same time that they perform system power events. Note that devfund tests can only be run on Windows 8. You cannot run stress and transfer tests and the system power tests simultaneously. Perform those tests on separate systems. However, you can switch between stress transfer and system power tests. To do so, complete the first set of tests, reboot the machine, and then follow the instructions of the next test.
-title: How to run system power devfund tests in Visual Studio for MUTT devices
+Description: Describes the Device Fundamental tests that you must run for MUTT devices that are attached to available ports.
+title: Run system power devfund tests in Visual Studio for MUTT devices
 author: windows-driver-content
 ms.author: windows-driver-content
 ms.date: 04/20/2017
