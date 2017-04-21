@@ -1,6 +1,6 @@
 ---
-Description: Supporting the Capability Commands
-title: Supporting the Capability Commands
+Description: Support for capability commands (WpdBasicHardwareDriver sample)
+title: Support for capability commands (WpdBasicHardwareDriver sample)
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
