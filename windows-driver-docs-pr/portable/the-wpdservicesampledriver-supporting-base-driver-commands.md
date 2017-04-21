@@ -1,6 +1,6 @@
 ---
-Description: Supporting the Base-Driver Commands
-title: Supporting the Base-Driver Commands
+Description: Support for base-driver commands (WpdServiceSampleDriver)
+title: Support for base-driver commands (WpdServiceSampleDriver)
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
