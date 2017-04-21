@@ -1,7 +1,7 @@
----
+﻿---
 title: SpbAccelerometer driver overview
 author: windows-driver-content
-description: This sample UMDF driver controls an ADXL345 accelerometer that is connected to a simple peripheral bus (SPB).The ADXL345 is a low-power, 3-axis, accelerometer that can measure +/-16g along each axis.
+description: This sample UMDF driver controls an ADXL345 accelerometer that is connected to a simple peripheral bus (SPB).
 ms.assetid: 355C753D-E5E3-4F8B-B16F-45EFA1E741F3
 ms.author: windows-driver-content
 ms.date: 04/20/2017

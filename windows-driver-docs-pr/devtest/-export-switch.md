@@ -1,6 +1,6 @@
----
+﻿---
 title: /Export Switch
-description: The /Export switch of the Enhanced Storage Certificate Management tool exports a specified certificate from the authentication silo certificate (ASC) store in an IEEE 1667-compliant USB storage device to a file.
+description: The /Export switch of the Enhanced Storage Certificate Management tool exports a specified certificate from the authentication silo certificate (ASC) store to a file
 ms.assetid: 00612a63-057a-4ff9-baef-d44de0280cb5
 keywords:
 - /Export Switch Driver Development Tools
