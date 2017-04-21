@@ -8,7 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-description: 
+description: Information about meeting the requirements for NFP devices on connected standby. platforms
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
@@ -37,4 +37,3 @@ To meet these goals, the following are recommended for the NFC client drivers:
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
-

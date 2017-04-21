@@ -8,7 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-description: 
+description: Information about the NFC CX, which provides two modes of operation to support different implementations of NFCEE management.
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
@@ -35,4 +35,3 @@ Most implementations of NFCCs in this configuration report only the HCI network 
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
-
