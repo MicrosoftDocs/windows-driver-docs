@@ -1,7 +1,7 @@
 ---
 title: Sequence handling
 author: windows-driver-content
-description: Information about supporting non-standard NCI extensions by registering specific driver sequences exposed by the NFC CX. 
+description: Information about supporting non-standard NCI extensions by registering specific driver sequences exposed by the NFC CX.
 ms.assetid: D0BE9827-2A15-4AA5-ADB9-80071ED37583
 keywords:
 - NFC
@@ -34,8 +34,8 @@ The following are the requirements for the NFC client driver in implementing any
 -   [Initialization sequence](initialization-sequence.md)
 -   [NFCEE discovery sequence](nfcee-discovery-sequence.md)
 -   [RF discovery sequence](rf-discovery-sequence.md)
--   [Tag RF data exchange sequence](tag-rf-data-exchagne-sequence.md)
--   [P2P RF data exchange sequence](p2p-rf-data-exchagne-sequence.md)
+-   [Tag RF data exchange sequence](tag-rf-data-exchange-sequence.md)
+-   [P2P RF data exchange sequence](p2p-rf-data-exchange-sequence.md)
 -   [Card emulation RF sequence](card-emulation-rf-sequence.md)
 
  

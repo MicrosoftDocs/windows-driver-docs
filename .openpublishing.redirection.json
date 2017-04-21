@@ -756,7 +756,7 @@
       "redirect_document_id": true
     },{
       "source_path": "windows-driver-docs-pr/nfc/tag-rf-data-exchagne-sequence.md",
-      "redirect_URL": "/windows/hardware/drivers/nfc/tag-rf-data-exchange-sequence.md",
+      "redirect_URL": "/windows/hardware/drivers/nfc/tag-rf-data-exchange-sequence",
       "redirect_document_id": true
     }
   ]
