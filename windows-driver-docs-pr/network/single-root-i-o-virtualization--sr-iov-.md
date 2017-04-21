@@ -24,6 +24,10 @@ This section includes the following topics:
 
 [Writing SR-IOV VF Miniport Drivers](writing-sr-iov-vf-miniport-drivers.md)
 
+[SR-IOV PF/VF Backchannel Communication](sr-iov-pf-vf-backchannel-communication.md)
+
+[SR-IOV OIDs](sr-iov-oids.md)
+
 For more information on SR-IOV, refer to the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](http://go.microsoft.com/fwlink/p/?linkid=221742) specification.
 
  
