@@ -1,6 +1,6 @@
 ---
-Description: Supporting the WPD Infrastructure
-title: Supporting the WPD Infrastructure
+Description: Support for WPD infrastructure (WpdBasicHardwareDriverSample)
+title: Support for WPD infrastructure (WpdBasicHardwareDriverSample)
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
