@@ -39,7 +39,7 @@ This section includes:
 
 [Performing Deinterlacing with Substream Compositing Operations](performing-deinterlacing-with-substream-compositing-operations.md)
 
-[Performing COPP Operations](performing-copp-operations2.md)
+[Performing COPP Operations](performing-copp-operations-example.md)
 
 [Deleting Instances of DirectX VA Device Objects](deleting-instances-of-directx-va-device-objects.md)
 
