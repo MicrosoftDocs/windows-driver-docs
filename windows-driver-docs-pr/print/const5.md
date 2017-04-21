@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Const
+# Const (WSD)
 
 
 The Web Services for Devices (WSD) Const construct defines the data type and value that must be returned. Const is used for elements that do not change in value. The Const construct is defined in WsdBidi.xsd.
