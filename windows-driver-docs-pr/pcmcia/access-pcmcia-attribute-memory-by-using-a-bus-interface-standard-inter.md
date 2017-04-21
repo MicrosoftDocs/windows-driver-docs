@@ -1,5 +1,5 @@
 ---
-title: Access PCMCIA Attribute Memory by Using a BUS\_INTERFACE\_STANDARD
+title: Access Memory by Using a BUS\_INTERFACE\_STANDARD
 description: Access PCMCIA Attribute Memory by Using a BUS\_INTERFACE\_STANDARD Interface
 ms.assetid: 2696a9ca-38b5-47f2-9639-029bba1173b5
 keywords:

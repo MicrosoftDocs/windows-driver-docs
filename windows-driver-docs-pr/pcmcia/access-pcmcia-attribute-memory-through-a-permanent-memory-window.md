@@ -1,5 +1,5 @@
 ---
-title: Access PCMCIA Attribute Memory Through a Permanent Memory Window
+title: Access Memory Through a Permanent Memory Window
 description: Access PCMCIA Attribute Memory Through a Permanent Memory Window
 ms.assetid: 866851b9-8e39-4480-9f22-dc2a2eb80ce0
 keywords:
