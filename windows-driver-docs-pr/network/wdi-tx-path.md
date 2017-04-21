@@ -1,6 +1,6 @@
 ---
 title: WDI TX path
-description: .
+description: This section describes the WDI TX path
 ms.assetid: 8DF3E82E-761E-4A90-A789-1CB8EE8F0377
 ms.author: windows-driver-content
 ms.date: 04/20/2017

@@ -1,6 +1,6 @@
 ---
-title: TrustedCertificate
-description: TrustedCertificate
+title: TrustedCertificate (APN element)
+description: TrustedCertificate (APN element)
 ms.assetid: 8b1b09ab-7ab8-4d6d-9ea6-395a109def91
 ms.author: windows-driver-content
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# TrustedCertificate
+# TrustedCertificate (APN element)
 
 
 The TrustedCertificate element specifies a trusted certificate for the specified operator.

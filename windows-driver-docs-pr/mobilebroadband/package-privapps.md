@@ -1,6 +1,6 @@
 ---
-title: Package
-description: Package
+title: Package (SoftwareInfo - priviliged applications)
+description: Package (SoftwareInfo - priviliged applications)
 ms.assetid: c9b22498-a7b6-4e17-9688-536883aa5844
 ms.author: windows-driver-content
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Package
+# Package (SoftwareInfo - priviliged applications)
 
 
 The Package element specifies an app that should have access to the privileged Mobile Broadband interfaces.

@@ -1,6 +1,6 @@
 ---
 title: Indicating Coalesced Segments
-description: A single coalesced unit (SCU) is a sequence of TCP segments that are coalesced into a single TCP segment according to the rules defined in Rules for Coalescing TCP/IP Segments. This section describes how to indicate the resulting coalesced segments.
+description: This section describes how to indicate coalesced segments
 ms.assetid: 79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB
 ms.author: windows-driver-content
 ms.date: 04/20/2017

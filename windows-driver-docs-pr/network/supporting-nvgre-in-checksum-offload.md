@@ -1,6 +1,6 @@
 ---
 title: Supporting NVGRE in Checksum Offload
-description: NDIS 6.30 (Windows Server 2012) introduces Network Virtualization using Generic Routing Encapsulation (NVGRE). NDIS miniport, protocol, and filter drivers and NICs that offload checksum tasks should do so in a way that supports NVGRE.
+description: This section describes supporting NVGRE in checksum offload
 ms.assetid: 933EE18B-917A-40BC-87AA-0F463615A082
 ms.author: windows-driver-content
 ms.date: 04/20/2017

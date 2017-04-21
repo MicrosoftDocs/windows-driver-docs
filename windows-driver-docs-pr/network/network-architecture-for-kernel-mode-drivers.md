@@ -26,7 +26,7 @@ This section includes:
 
 [Windows Network Architecture and the OSI Model](windows-network-architecture-and-the-osi-model.md)
 
-[NDIS Drivers](ndis-drivers.md)
+[NDIS driver types](ndis-drivers.md)
 
 [Network Driver Environments](network-driver-environments.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Package
-description: Package
+title: Package (SoftwareInfo)
+description: Package (SoftwareInfo)
 ms.assetid: f15f0ffe-593d-4007-8002-4d593d18dd9a
 ms.author: windows-driver-content
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Package
+# Package (SoftwareInfo)
 
 
 The Package element specifies the app that will be downloaded when the operator’s mobile broadband hardware is detected on the PC.
