@@ -1,5 +1,5 @@
 ---
-Description: A USB function driver supports runtime idle detection by implementing USB selective suspend. Here is content for driver developers about how to implement selective suspend in USB drivers that are based on the Windows® Driver Foundation (WDF).
+Description: A USB function driver supports runtime idle detection by implementing USB selective suspend. 
 title: Selective suspend in USB drivers (WDF)
 ms.author: windows-driver-content
 ms.date: 04/20/2017

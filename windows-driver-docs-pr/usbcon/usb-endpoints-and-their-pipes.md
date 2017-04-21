@@ -1,5 +1,5 @@
 ---
-Description: A USB device has endpoints that are used to for data transfers. On the host side, endpoints are represented by pipes. This topic differentiates between those two terms.
+Description: A USB device has endpoints that are used to for data transfers. 
 title: USB endpoints and their pipes
 author: windows-driver-content
 ms.author: windows-driver-content
