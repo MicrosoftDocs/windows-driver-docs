@@ -1,5 +1,5 @@
 ---
-title: Installing Serial Devices that Use a 16550 UART-Compatible Interface
+title: Install Serial Devices with a 16550 UART-Compatible Interface
 author: windows-driver-content
 description: Installing Serial Devices that Use a 16550 UART-Compatible Interface
 ms.assetid: d80db651-b890-44dc-98ad-32e72e244d8c
