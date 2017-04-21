@@ -2,7 +2,17 @@
 title: Retrieving Network Configuration Interface Pointers
 description: Retrieving Network Configuration Interface Pointers
 ms.assetid: ac3638a1-d039-478e-baec-c73d4d1b6751
-keywords: ["notify objects WDK networking , interface pointers", "network notify objects WDK , interface pointers", "network configuration interface pointers WDK", "interface pointers WDK networking", "pointers WDK networking"]
+keywords:
+- notify objects WDK networking , interface pointers
+- network notify objects WDK , interface pointers
+- network configuration interface pointers WDK
+- interface pointers WDK networking
+- pointers WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieving Network Configuration Interface Pointers

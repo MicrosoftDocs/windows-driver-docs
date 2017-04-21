@@ -2,7 +2,18 @@
 title: Desktop Layout
 description: Desktop Layout
 ms.assetid: f1c074ec-2fce-4e46-ba0d-62e05ca8a9e7
-keywords: ["connecting displays WDK Windows 7 display , CCD concepts, desktop layout", "connecting displays WDK Windows Server 2008 R2 display , CCD concepts, desktop layout", "configuring displays WDK Windows 7 display , CCD concepts, desktop layout", "configuring displays WDK Windows Server 2008 R2 display , CCD concepts, desktop layout", "CCD concepts WDK Windows 7 display , desktop layout", "CCD concepts WDK Windows Server 2008 R2 display , desktop layout"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD concepts, desktop layout
+- connecting displays WDK Windows Server 2008 R2 display , CCD concepts, desktop layout
+- configuring displays WDK Windows 7 display , CCD concepts, desktop layout
+- configuring displays WDK Windows Server 2008 R2 display , CCD concepts, desktop layout
+- CCD concepts WDK Windows 7 display , desktop layout
+- CCD concepts WDK Windows Server 2008 R2 display , desktop layout
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Desktop Layout

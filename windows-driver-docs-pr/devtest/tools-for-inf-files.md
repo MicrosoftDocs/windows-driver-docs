@@ -2,7 +2,15 @@
 title: Tools for INF Files
 description: Tools for INF Files
 ms.assetid: 739c9a35-bfc1-4ca1-a8fa-b8be013257a2
-keywords: ["tools WDK , INF files", "driver development tools WDK , INF files", "INF files WDK Driver Development Tools"]
+keywords:
+- tools WDK , INF files
+- driver development tools WDK , INF files
+- INF files WDK Driver Development Tools
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tools for INF Files

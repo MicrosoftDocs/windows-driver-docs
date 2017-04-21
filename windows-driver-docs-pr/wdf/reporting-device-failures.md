@@ -3,7 +3,19 @@ title: Reporting Device Failures
 author: windows-driver-content
 description: Reporting Device Failures
 ms.assetid: ca536547-d51a-4450-8a83-19aac67aab92
-keywords: ["PnP WDK KMDF , device failures", "Plug and Play WDK KMDF , device failures", "device failures WDK KMDF", "failed devices WDK KMDF", "WdfDeviceFailedAttemptRestart", "WdfDeviceFailedNoRestart", "reporting device failures WDK KMDF"]
+keywords:
+- PnP WDK KMDF , device failures
+- Plug and Play WDK KMDF , device failures
+- device failures WDK KMDF
+- failed devices WDK KMDF
+- WdfDeviceFailedAttemptRestart
+- WdfDeviceFailedNoRestart
+- reporting device failures WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Device Failures

@@ -2,7 +2,18 @@
 title: Native 802.11 Miniport Drivers
 description: Native 802.11 Miniport Drivers
 ms.assetid: 7eff97b3-ba2b-4c01-96b1-cc599088ffdf
-keywords: ["Native 802.11 WDK networking , miniport drivers", "miniport drivers WDK networking , Native 802.11", "wireless LAN networks WDK , miniport drivers", "WLAN networks WDK , miniport drivers", "Native 802.11 miniport drivers WDK networking", "miniport drivers WDK Native 802.11"]
+keywords:
+- Native 802.11 WDK networking , miniport drivers
+- miniport drivers WDK networking , Native 802.11
+- wireless LAN networks WDK , miniport drivers
+- WLAN networks WDK , miniport drivers
+- Native 802.11 miniport drivers WDK networking
+- miniport drivers WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Miniport Drivers

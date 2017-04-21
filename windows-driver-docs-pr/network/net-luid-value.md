@@ -2,7 +2,17 @@
 title: NET\_LUID Value
 description: NET\_LUID Value
 ms.assetid: 9b9c63c1-f8b4-4e26-afc1-a3e4910609e2
-keywords: ["NDIS network interfaces WDK , NET_LUID", "network interfaces WDK , NET_LUID", "NET_LUID", "index operations WDK network interface", "locally unique identifier WDK network interface"]
+keywords:
+- NDIS network interfaces WDK , NET_LUID
+- network interfaces WDK , NET_LUID
+- NET_LUID
+- index operations WDK network interface
+- locally unique identifier WDK network interface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NET\_LUID Value

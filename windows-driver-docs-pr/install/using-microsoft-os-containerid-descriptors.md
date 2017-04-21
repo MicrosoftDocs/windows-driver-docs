@@ -2,6 +2,11 @@
 title: Using Microsoft OS ContainerID Descriptors
 description: Using Microsoft OS ContainerID Descriptors
 ms.assetid: e51b1bc8-fd9d-40f9-b2ae-9f5886f57c7b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Microsoft OS ContainerID Descriptors

@@ -4,6 +4,11 @@ author: windows-driver-content
 description: This topic summarizes the new features and improvements for Human Interface Devices (HID) in Windows 10.
 Search.SourceType: Video
 ms.assetid: AA8590B4-AAEA-4D41-972F-38149CE328E2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What's New in HID

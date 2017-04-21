@@ -2,7 +2,20 @@
 title: Data Copying and Caching Policy
 description: Data Copying and Caching Policy
 ms.assetid: 1867f2bd-240c-4525-9f02-98b8f1d54b17
-keywords: ["HD Audio, caching", "High Definition Audio (HD Audio), caching", "cache WDK audio", "bus snooping WDK audio", "snooping WDK audio", "memory WDK audio", "copying audio data", "data copying WDK audio"]
+keywords:
+- HD Audio, caching
+- High Definition Audio (HD Audio), caching
+- cache WDK audio
+- bus snooping WDK audio
+- snooping WDK audio
+- memory WDK audio
+- copying audio data
+- data copying WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Copying and Caching Policy

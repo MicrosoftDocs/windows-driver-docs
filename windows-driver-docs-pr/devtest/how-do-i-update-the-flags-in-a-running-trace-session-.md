@@ -2,6 +2,11 @@
 title: How do I update the flags in a running trace session
 description: How do I update the flags in a running trace session
 ms.assetid: 952cc60f-1877-49d5-b87c-493c1b90cfdf
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How do I update the flags in a running trace session?

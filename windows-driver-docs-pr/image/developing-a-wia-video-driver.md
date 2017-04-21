@@ -3,6 +3,11 @@ title: Developing a WIA Video Driver
 author: windows-driver-content
 description: Developing a WIA Video Driver
 ms.assetid: 3cf14fd3-1dfa-480e-a69c-c4d2c196a504
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developing a WIA Video Driver

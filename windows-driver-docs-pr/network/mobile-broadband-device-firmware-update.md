@@ -2,6 +2,11 @@
 title: Mobile Broadband Device Firmware Update
 description: This topic provides guidance to Mobile Broadband (MB) module manufacturers intending to support firmware upgrade devices via Windows Update (WU).
 ms.assetid: EBB95A11-14EF-4BF5-BE90-DB99624554CD
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mobile Broadband Device Firmware Update

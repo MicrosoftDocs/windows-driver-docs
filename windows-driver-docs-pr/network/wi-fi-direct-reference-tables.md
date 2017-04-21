@@ -2,6 +2,11 @@
 title: Wi-Fi Direct Reference Tables
 description: WI-FI DIRECT OIDS.
 ms.assetid: 5111D62E-275B-4B1E-8670-FBE81C37FE46
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Direct Reference Tables

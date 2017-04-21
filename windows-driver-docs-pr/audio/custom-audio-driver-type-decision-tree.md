@@ -2,6 +2,11 @@
 title: Custom Audio Driver Type Decision Tree
 description: Custom Audio Driver Type Decision Tree
 ms.assetid: 7b055baa-1843-4e31-a98e-48b05de94e70
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Custom Audio Driver Type Decision Tree

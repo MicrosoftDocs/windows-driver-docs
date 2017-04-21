@@ -2,6 +2,11 @@
 title: System paging process
 description: Most paging operations occur in a context of the system paging process. The only exception is the page table update from the UpdateGpuVirtualAddress callback, which occurs in a special companion context and occurs synchronous of rendering.
 ms.assetid: B010C7E5-6B67-43D2-92A6-5258B132FB5D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System paging process

@@ -2,6 +2,11 @@
 title: Installation of the Enhanced Storage Certificate Management Tool
 description: Installation of the Enhanced Storage Certificate Management Tool
 ms.assetid: 1494a911-73a4-4a8c-a29d-aecb65c846dd
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installation of the Enhanced Storage Certificate Management Tool

@@ -2,7 +2,17 @@
 title: Receive Side Scaling on an Offloaded TCP Connection
 description: Receive Side Scaling on an Offloaded TCP Connection
 ms.assetid: bc389304-c8e0-463e-adcd-61b866f58292
-keywords: ["data I/O WDK TCP chimney offload , receive side scaling", "I/O WDK TCP chimney offload , receive side scaling", "received data processing WDK TCP chimney offload , receive side scaling", "receive side scaling WDK TCP chimney offload", "RSS WDK TCP chimney offload"]
+keywords:
+- data I/O WDK TCP chimney offload , receive side scaling
+- I/O WDK TCP chimney offload , receive side scaling
+- received data processing WDK TCP chimney offload , receive side scaling
+- receive side scaling WDK TCP chimney offload
+- RSS WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receive Side Scaling on an Offloaded TCP Connection

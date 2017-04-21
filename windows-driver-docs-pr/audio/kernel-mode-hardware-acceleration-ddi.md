@@ -2,7 +2,20 @@
 title: Kernel Mode Hardware Acceleration DDI
 description: Kernel Mode Hardware Acceleration DDI
 ms.assetid: f3af3caa-0d1f-4da5-8756-ce71c66d5fb6
-keywords: ["DirectMusic kernel-mode WDK audio", "kernel-mode synths WDK audio , hardware acceleration", "DirectMusic kernel-mode WDK audio , about kernel-mode", "kernel-mode synths WDK audio , about kernel-mode synths", "DirectMusic WDK audio , hardware acceleration", "hardware acceleration WDK audio", "miniport drivers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , kernel-mode hardware acceleration"]
+keywords:
+- DirectMusic kernel-mode WDK audio
+- kernel-mode synths WDK audio , hardware acceleration
+- DirectMusic kernel-mode WDK audio , about kernel-mode
+- kernel-mode synths WDK audio , about kernel-mode synths
+- DirectMusic WDK audio , hardware acceleration
+- hardware acceleration WDK audio
+- miniport drivers WDK audio , kernel-mode hardware acceleration
+- synthesizers WDK audio , kernel-mode hardware acceleration
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel Mode Hardware Acceleration DDI

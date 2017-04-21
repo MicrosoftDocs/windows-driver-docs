@@ -3,7 +3,13 @@ title: Constraints on Dispatch Routines
 author: windows-driver-content
 description: Constraints on Dispatch Routines
 ms.assetid: 5b2acaea-1f66-4285-9a36-5ab0f440f6b4
-keywords: ["IRP dispatch routines WDK file system , constraints"]
+keywords:
+- IRP dispatch routines WDK file system , constraints
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Constraints on Dispatch Routines

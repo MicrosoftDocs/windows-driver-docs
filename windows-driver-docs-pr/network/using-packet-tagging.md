@@ -2,6 +2,11 @@
 title: Using Packet Tagging
 description: Using Packet Tagging
 ms.assetid: a151256b-d69f-4abb-bf68-644f157dfdd7
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Packet Tagging

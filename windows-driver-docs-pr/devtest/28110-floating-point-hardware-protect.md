@@ -2,7 +2,14 @@
 title: C28110
 description: Warning C28110 Drivers must protect floating-point hardware state. See use of float.
 ms.assetid: 2f6045e3-92b2-4773-a8de-3d0ec09c5d31
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28110

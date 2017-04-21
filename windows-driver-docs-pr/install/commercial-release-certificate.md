@@ -2,7 +2,16 @@
 title: Commercial Release Certificate
 description: Commercial Release Certificate
 ms.assetid: bc3966e6-a7e4-4c5c-8dcf-9b95e61ba9b1
-keywords: ["commercial release certificates WDK", "catalog files WDK driver signing , commercial release certificates", "public release driver signing WDK , commercial release certificates", "release signing WDK , commercial release certificates"]
+keywords:
+- commercial release certificates WDK
+- catalog files WDK driver signing , commercial release certificates
+- public release driver signing WDK , commercial release certificates
+- release signing WDK , commercial release certificates
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Commercial Release Certificate

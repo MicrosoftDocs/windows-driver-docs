@@ -2,7 +2,17 @@
 title: Managing Interrupts
 description: Managing Interrupts
 ms.assetid: 9a2dea43-844d-4c87-9c20-610972d7a3a4
-keywords: ["miniport drivers WDK networking , interrupts", "NDIS miniport drivers WDK , interrupts", "interrupts WDK networking , managing", "NICs WDK networking , interrupts", "network interface cards WDK networking , interrupts"]
+keywords:
+- miniport drivers WDK networking , interrupts
+- NDIS miniport drivers WDK , interrupts
+- interrupts WDK networking , managing
+- NICs WDK networking , interrupts
+- network interface cards WDK networking , interrupts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Interrupts

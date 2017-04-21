@@ -3,7 +3,14 @@ title: Installing IEEE 1394 Device Drivers
 author: windows-driver-content
 description: Installing IEEE 1394 Device Drivers
 ms.assetid: 3f99bec7-e657-4de7-bce4-36a779cc0442
-keywords: ["IEEE 1394 WDK buses , driver installations", "1394 WDK buses , driver installations"]
+keywords:
+- IEEE 1394 WDK buses , driver installations
+- 1394 WDK buses , driver installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing IEEE 1394 Device Drivers

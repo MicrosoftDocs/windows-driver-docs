@@ -2,7 +2,22 @@
 title: Digital Certificates
 description: Digital Certificates
 ms.assetid: 90427be5-7b61-4ed6-ab5d-847b64c7dcf0
-keywords: ["digital certificates WDK", "driver package digital certificates WDK", "package digital certificates WDK", "digital certificates WDK , driver packages", "certificates WDK", "certificates WDK , driver packages", "driver signing WDK , digital certificates", "signing drivers WDK , digital certificates", "device installations WDK , digital certificates", "driver signing WDK"]
+keywords:
+- digital certificates WDK
+- driver package digital certificates WDK
+- package digital certificates WDK
+- digital certificates WDK , driver packages
+- certificates WDK
+- certificates WDK , driver packages
+- driver signing WDK , digital certificates
+- signing drivers WDK , digital certificates
+- device installations WDK , digital certificates
+- driver signing WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Digital Certificates

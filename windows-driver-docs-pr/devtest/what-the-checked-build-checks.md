@@ -2,7 +2,19 @@
 title: What the Checked Build Checks
 description: What the Checked Build Checks
 ms.assetid: c60e3957-fe95-4c47-a674-1ca6ad7d26ac
-keywords: ["checked builds WDK , checks performed", "parameter validation checks WDK", "internal checks WDK", "correctness checks WDK", "consistency checks WDK", "informational checks WDK", "tracing output checks WDK"]
+keywords:
+- checked builds WDK , checks performed
+- parameter validation checks WDK
+- internal checks WDK
+- correctness checks WDK
+- consistency checks WDK
+- informational checks WDK
+- tracing output checks WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What the Checked Build Checks

@@ -3,6 +3,11 @@ title: WIA Driver Fundamentals
 author: windows-driver-content
 description: WIA Driver Fundamentals
 ms.assetid: 374388eb-ca2e-47da-aa0a-d90fdd00c665
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Driver Fundamentals

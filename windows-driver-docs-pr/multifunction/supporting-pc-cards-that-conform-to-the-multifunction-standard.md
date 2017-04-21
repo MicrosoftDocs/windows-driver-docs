@@ -3,7 +3,18 @@ title: Supporting PC Cards That Conform to the Multifunction Standard
 author: windows-driver-content
 description: Supporting PC Cards That Conform to the Multifunction Standard
 ms.assetid: 1ab295b6-42c9-46fc-97e0-2228e189ff37
-keywords: ["PCMCIA buses WDK multifunction devices", "mf.inf", "hardware IDs WDK multifunction devices", "child function hardware IDs WDK multifunction devices", "system-supplied multifunction bus drivers WDK", "mf.sys"]
+keywords:
+- PCMCIA buses WDK multifunction devices
+- mf.inf
+- hardware IDs WDK multifunction devices
+- child function hardware IDs WDK multifunction devices
+- system-supplied multifunction bus drivers WDK
+- mf.sys
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting PC Cards That Conform to the Multifunction Standard

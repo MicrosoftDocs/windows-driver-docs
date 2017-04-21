@@ -1,9 +1,18 @@
 ---
-title: \ Endif Conditional Preprocessor Directive
+title: '\ Endif Conditional Preprocessor Directive'
 author: windows-driver-content
-description: \ Endif Conditional Preprocessor Directive
+description: '\ Endif Conditional Preprocessor Directive'
 ms.assetid: dfbfdb4a-955b-4ccf-b496-c8c5ddc42d2b
-keywords: ["preprocessor directives WDK GDL , conditional directives", "directives WDK GDL , conditional directives", "conditional directives WDK GDL", "Endif directive WDK GDL"]
+keywords:
+- preprocessor directives WDK GDL , conditional directives
+- directives WDK GDL , conditional directives
+- conditional directives WDK GDL
+- Endif directive WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \#Endif Conditional Preprocessor Directive

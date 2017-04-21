@@ -2,7 +2,18 @@
 title: Initializing and Unloading a SAN Proxy Driver
 description: Initializing and Unloading a SAN Proxy Driver
 ms.assetid: 1c602f7d-a1c2-429a-a297-4290a7cbfd9f
-keywords: ["proxy drivers WDK SANs , initializing", "SAN proxy drivers WDK , initializing", "proxy drivers WDK SANs , unloading", "SAN proxy drivers WDK , unloading", "unloading drivers", "initializing SAN proxy drivers"]
+keywords:
+- proxy drivers WDK SANs , initializing
+- SAN proxy drivers WDK , initializing
+- proxy drivers WDK SANs , unloading
+- SAN proxy drivers WDK , unloading
+- unloading drivers
+- initializing SAN proxy drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing and Unloading a SAN Proxy Driver

@@ -3,7 +3,17 @@ title: Changing the Default GDL Configuration
 author: windows-driver-content
 description: Changing the Default GDL Configuration
 ms.assetid: ecc4a6ab-869a-402e-b90e-5ad94e0347c3
-keywords: ["GDL WDK , configurations", "configurations WDK GDL , default configurations", "configurations WDK GDL , changing the default configuration", "default GDL configurations WDK", "DefaultOption directive WDK GDL"]
+keywords:
+- GDL WDK , configurations
+- configurations WDK GDL , default configurations
+- configurations WDK GDL , changing the default configuration
+- default GDL configurations WDK
+- DefaultOption directive WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing the Default GDL Configuration

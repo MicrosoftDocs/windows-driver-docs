@@ -2,7 +2,14 @@
 title: Using WPP Software Tracing in a Trace Provider
 description: Using WPP Software Tracing in a Trace Provider
 ms.assetid: e215a99b-5082-4e81-84b6-184a2fd4e270
-keywords: ["Windows software trace preprocessor WDK , about WPP", "WPP software tracing WDK , about WPP"]
+keywords:
+- Windows software trace preprocessor WDK , about WPP
+- WPP software tracing WDK , about WPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using WPP Software Tracing in a Trace Provider

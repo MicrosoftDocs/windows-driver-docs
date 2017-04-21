@@ -3,7 +3,17 @@ title: Relationship between Microsoft Windows and the System Firmware
 author: windows-driver-content
 description: Relationship between Microsoft Windows and the System Firmware
 ms.assetid: 83a43e49-cb06-4007-88d0-88f024c22825
-keywords: ["Windows Hardware Error Architecture WDK , Windows and firmware", "WHEA WDK , Windows and firmware", "hardware errors WDK WHEA , Windows and firmware", "errors WDK WHEA , Windows and firmware", "firmware WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , Windows and firmware
+- WHEA WDK , Windows and firmware
+- hardware errors WDK WHEA , Windows and firmware
+- errors WDK WHEA , Windows and firmware
+- firmware WDK WHEA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Relationship between Microsoft Windows and the System Firmware

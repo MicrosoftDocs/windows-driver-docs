@@ -3,6 +3,11 @@ title: WIA Data Item
 author: windows-driver-content
 description: WIA Data Item
 ms.assetid: 3ce01393-4a0b-4b70-8087-abe989aa00a9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Data Item

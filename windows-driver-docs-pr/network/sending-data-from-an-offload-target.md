@@ -2,7 +2,17 @@
 title: Sending Data from an Offload Target
 description: Sending Data from an Offload Target
 ms.assetid: 58e0f09f-6e4b-4216-981e-42a4e1df13c1
-keywords: ["data I/O WDK TCP chimney offload , sending data from target", "I/O WDK TCP chimney offload , sending data from target", "send operations from target WDK TCP chimney offload", "fragment ID space WDK TCP chimney offload", "IP IDs WDK TCP chimney offload"]
+keywords:
+- data I/O WDK TCP chimney offload , sending data from target
+- I/O WDK TCP chimney offload , sending data from target
+- send operations from target WDK TCP chimney offload
+- fragment ID space WDK TCP chimney offload
+- IP IDs WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending Data from an Offload Target

@@ -3,7 +3,19 @@ title: Standard GDL Parsing
 author: windows-driver-content
 description: Standard GDL Parsing
 ms.assetid: 089bba58-e29f-428a-ab54-4413edca1d0c
-keywords: ["GDL WDK , parser", "parser WDK GDL , standard parsing", "parsing GDL data WDK", "standard GDL parsing WDK", "default GDL parsing WDK", "standard parser-filter WDK GDL", "SPF WDK GDL"]
+keywords:
+- GDL WDK , parser
+- parser WDK GDL , standard parsing
+- parsing GDL data WDK
+- standard GDL parsing WDK
+- default GDL parsing WDK
+- standard parser-filter WDK GDL
+- SPF WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standard GDL Parsing

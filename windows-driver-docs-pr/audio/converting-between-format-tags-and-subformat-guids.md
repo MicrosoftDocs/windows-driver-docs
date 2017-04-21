@@ -2,7 +2,18 @@
 title: Converting Between Format Tags and Subformat GUIDs
 description: Converting Between Format Tags and Subformat GUIDs
 ms.assetid: 299ad5d3-df62-41cf-a18f-daa83cc60ef3
-keywords: ["non-PCM audio formats WDK , subformat GUID conversions", "subformat GUIDs WDK audio", "converting format tags and subformat GUIDs", "data-intersection handlers WDK audio , non-PCM wave formats", "GUIDs WDK audio", "wave-format tags WDK audio"]
+keywords:
+- non-PCM audio formats WDK , subformat GUID conversions
+- subformat GUIDs WDK audio
+- converting format tags and subformat GUIDs
+- data-intersection handlers WDK audio , non-PCM wave formats
+- GUIDs WDK audio
+- wave-format tags WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Converting Between Format Tags and Subformat GUIDs

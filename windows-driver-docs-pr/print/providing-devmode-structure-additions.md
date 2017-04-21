@@ -3,7 +3,17 @@ title: Providing DEVMODE Structure Additions
 author: windows-driver-content
 description: Providing DEVMODE Structure Additions
 ms.assetid: 7ce698f5-14c7-484d-be3d-b41c690b9576
-keywords: ["user interface plug-ins WDK print , DEVMODEW structure additions", "UI plug-ins WDK print , DEVMODEW structure additions", "DEVMODEW", "private DEVMODE WDK print", "public DEVMODE WDK print"]
+keywords:
+- user interface plug-ins WDK print , DEVMODEW structure additions
+- UI plug-ins WDK print , DEVMODEW structure additions
+- DEVMODEW
+- private DEVMODE WDK print
+- public DEVMODE WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing DEVMODE Structure Additions

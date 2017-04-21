@@ -2,7 +2,17 @@
 title: Device and Service Inspection Scenarios
 description: Device and Service Inspection Scenarios
 ms.assetid: 25e6ed92-e01c-4349-a614-b71bb08d71cd
-keywords: ["WSDBIT tool WDK , test scenarios", "WSDAPI Basic Interoperability Tool WDK , test scenarios", "scenarios WDK WSDBIT", "test scenarios WDK WSDBIT", "Device and Service inspection scenario WDK WSDBIT"]
+keywords:
+- WSDBIT tool WDK , test scenarios
+- WSDAPI Basic Interoperability Tool WDK , test scenarios
+- scenarios WDK WSDBIT
+- test scenarios WDK WSDBIT
+- Device and Service inspection scenario WDK WSDBIT
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device and Service Inspection Scenarios

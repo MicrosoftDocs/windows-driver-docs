@@ -2,6 +2,11 @@
 title: Specifying Hardware IDs for a Bluetooth Device
 description: Specifying Hardware IDs for a Bluetooth Device
 ms.assetid: 7fc8e53a-3fa9-4dad-a507-310329ca88c0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Hardware IDs for a Bluetooth Device

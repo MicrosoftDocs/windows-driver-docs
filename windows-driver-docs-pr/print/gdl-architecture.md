@@ -3,7 +3,19 @@ title: GDL Architecture
 author: windows-driver-content
 description: GDL Architecture
 ms.assetid: 3e796218-ab2a-40a7-a0e3-caeec5c6656e
-keywords: ["GDL WDK , architecture", "creating snapshots WDK GDL", "snapshots WDK GDL , creating snapshots", "parser WDK GDL , accessing parser through IPrintCoreHelperUni", "GDL WDK , schemas", "GDL WDK , snapshots", "architecture WDK GDL"]
+keywords:
+- GDL WDK , architecture
+- creating snapshots WDK GDL
+- snapshots WDK GDL , creating snapshots
+- parser WDK GDL , accessing parser through IPrintCoreHelperUni
+- GDL WDK , schemas
+- GDL WDK , snapshots
+- architecture WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Architecture

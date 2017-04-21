@@ -2,7 +2,18 @@
 title: Integration of Environment Mapping with Standard Diffuse Lighting
 description: Integration of Environment Mapping with Standard Diffuse Lighting
 ms.assetid: 7cdba0db-fdaf-46a4-a5f9-c5e930f68314
-keywords: ["mapping cube environments", "environment mapping WDK Direct3D", "cube environment maps WDK Direct3D", "lighting WDK Direct3D", "diffuse lighting WDK Direct3D", "standard diffuse lighting WDK Direct3D"]
+keywords:
+- mapping cube environments
+- environment mapping WDK Direct3D
+- cube environment maps WDK Direct3D
+- lighting WDK Direct3D
+- diffuse lighting WDK Direct3D
+- standard diffuse lighting WDK Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Integration of Environment Mapping with Standard Diffuse Lighting

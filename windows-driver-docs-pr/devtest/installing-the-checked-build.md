@@ -2,6 +2,11 @@
 title: Installing the Checked Build of Windows
 description: Installing the Checked Build of Windows
 ms.assetid: 88bbd0a2-2b72-4000-87ba-cbdafeb4c609
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing the Checked Build of Windows

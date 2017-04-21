@@ -3,7 +3,17 @@ title: Creating a Framework Device Object
 author: windows-driver-content
 description: Creating a Framework Device Object
 ms.assetid: 25023c19-a153-4bd4-9fb6-3a1bf85860aa
-keywords: ["PnP WDK KMDF , device objects", "Plug and Play WDK KMDF , device objects", "power management WDK KMDF , device objects", "device objects WDK KMDF", "framework objects WDK KMDF , device objects"]
+keywords:
+- PnP WDK KMDF , device objects
+- Plug and Play WDK KMDF , device objects
+- power management WDK KMDF , device objects
+- device objects WDK KMDF
+- framework objects WDK KMDF , device objects
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Framework Device Object

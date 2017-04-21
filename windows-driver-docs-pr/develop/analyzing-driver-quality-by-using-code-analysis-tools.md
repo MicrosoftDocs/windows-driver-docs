@@ -2,6 +2,11 @@
 ms.assetid: 0FEF982B-7FEE-47C8-A906-F881E9D8F3D7
 title: Analyzing a Driver Using Code Analysis and Verification Tools
 description: Code analysis and verification tools can help improve the stability and reliability of your driver by systematically analyzing the source code.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analyzing a Driver Using Code Analysis and Verification Tools

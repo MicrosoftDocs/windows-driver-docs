@@ -3,7 +3,17 @@ title: Modifying a Driver-Supplied Property Sheet Page
 author: windows-driver-content
 description: Modifying a Driver-Supplied Property Sheet Page
 ms.assetid: 98338017-96a0-414c-9b80-bcb98eff61e5
-keywords: ["user interface plug-ins WDK print , property sheet pages", "UI plug-ins WDK print , property sheet pages", "property sheet pages WDK print", "option items WDK UI plug-in", "customized option items WDK UI plug-in"]
+keywords:
+- user interface plug-ins WDK print , property sheet pages
+- UI plug-ins WDK print , property sheet pages
+- property sheet pages WDK print
+- option items WDK UI plug-in
+- customized option items WDK UI plug-in
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Modifying a Driver-Supplied Property Sheet Page

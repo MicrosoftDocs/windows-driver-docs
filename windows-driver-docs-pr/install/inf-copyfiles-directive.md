@@ -2,13 +2,19 @@
 title: INF CopyFiles Directive
 description: A CopyFiles directive can do either of the following
 ms.assetid: 65756b1c-ea61-4bb4-90ac-4d96ceaf9665
-keywords: ["INF CopyFiles Directive Device and Driver Installation"]
+keywords:
+- INF CopyFiles Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF CopyFiles Directive
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF CopyFiles Directive

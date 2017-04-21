@@ -3,7 +3,16 @@ title: Installing a Non-PnP Driver
 author: windows-driver-content
 description: Installing a Non-PnP Driver
 ms.assetid: 99676d85-feb2-482c-a91b-cfc48be5904c
-keywords: ["Kernel-Mode Driver Framework WDK , installing drivers", "framework-based drivers WDK KMDF , installing", "INF files WDK KMDF , non-PnP drivers", "non-PnP drivers WDK KMDF"]
+keywords:
+- Kernel-Mode Driver Framework WDK , installing drivers
+- framework-based drivers WDK KMDF , installing
+- INF files WDK KMDF , non-PnP drivers
+- non-PnP drivers WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Non-PnP Driver

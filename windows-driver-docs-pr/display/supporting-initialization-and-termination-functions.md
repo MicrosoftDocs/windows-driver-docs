@@ -2,7 +2,24 @@
 title: Supporting Initialization and Termination Functions
 description: Supporting Initialization and Termination Functions
 ms.assetid: 306be966-be23-4680-aeda-32e9cb1ac4a9
-keywords: ["drawing WDK GDI , initialization", "drawing WDK GDI , initialization, about", "initializing graphics drivers WDK Windows 2000 display", "initializing graphics drivers WDK Windows 2000 display , about", "GDI WDK Windows 2000 display , initialization", "GDI WDK Windows 2000 display , initialization, about", "graphics drivers WDK Windows 2000 display , initialization", "graphics drivers WDK Windows 2000 display , initialization, about", "GDI WDK Windows 2000 display , termination", "graphics drivers WDK Windows 2000 display , termination", "drawing WDK GDI , termination", "terminating graphics drivers WDK GDI"]
+keywords:
+- drawing WDK GDI , initialization
+- drawing WDK GDI , initialization, about
+- initializing graphics drivers WDK Windows 2000 display
+- initializing graphics drivers WDK Windows 2000 display , about
+- GDI WDK Windows 2000 display , initialization
+- GDI WDK Windows 2000 display , initialization, about
+- graphics drivers WDK Windows 2000 display , initialization
+- graphics drivers WDK Windows 2000 display , initialization, about
+- GDI WDK Windows 2000 display , termination
+- graphics drivers WDK Windows 2000 display , termination
+- drawing WDK GDI , termination
+- terminating graphics drivers WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Initialization and Termination Functions

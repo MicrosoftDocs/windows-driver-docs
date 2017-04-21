@@ -2,7 +2,15 @@
 title: Stretching Subrectangles
 description: Stretching Subrectangles
 ms.assetid: c8642ea4-67e9-4a15-9636-8d7efbfd8c9e
-keywords: ["deinterlacing WDK DirectX VA , subrectangular processing", "subrectangular processing WDK DirectX VA", "stretching WDK Windows 2000 display"]
+keywords:
+- deinterlacing WDK DirectX VA , subrectangular processing
+- subrectangular processing WDK DirectX VA
+- stretching WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stretching Subrectangles

@@ -2,6 +2,11 @@
 title: Internet
 description: Internet
 ms.assetid: 13723c21-0054-4b91-9059-c7c985e83773
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Internet

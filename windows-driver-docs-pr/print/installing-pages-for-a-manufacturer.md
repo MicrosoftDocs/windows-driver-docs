@@ -3,7 +3,15 @@ title: Installing Pages for a Manufacturer
 author: windows-driver-content
 description: Installing Pages for a Manufacturer
 ms.assetid: 637b265f-9138-4696-b52a-ce63cd1f2c01
-keywords: ["installing customized print Web pages WDK", "customized print Web pages WDK , installing", "manufacturer-specific printer installations WDK"]
+keywords:
+- installing customized print Web pages WDK
+- customized print Web pages WDK , installing
+- manufacturer-specific printer installations WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Pages for a Manufacturer

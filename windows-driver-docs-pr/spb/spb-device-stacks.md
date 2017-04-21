@@ -3,6 +3,11 @@ title: SPB Device Stacks
 author: windows-driver-content
 description: Acpi.sys creates the PDO for a peripheral device on an SPB.
 ms.assetid: 21AB67A2-AA3C-4998-A532-78D6F6F76244
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SPB Device Stacks

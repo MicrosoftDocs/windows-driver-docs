@@ -2,6 +2,11 @@
 title: Overview of Virtualized Networking
 description: Overview of Virtualized Networking
 ms.assetid: AD8F8EC3-B7BB-4CAC-A9CE-39EA42DA7602
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Virtualized Networking

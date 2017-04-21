@@ -3,7 +3,18 @@ title: Pool Allocation and Free Routines
 author: windows-driver-content
 description: Pool Allocation and Free Routines
 ms.assetid: 757eebc0-ebd4-49a1-acea-6c27956b4b23
-keywords: ["RDBSS WDK file systems , pool allocations", "Redirected Drive Buffering Subsystem WDK file systems , pool allocations", "pool allocations WDK RDBSS", "RDBSS WDK file systems , free routines", "Redirected Drive Buffering Subsystem WDK file systems , free routines", "free routines WDK RDBSS"]
+keywords:
+- RDBSS WDK file systems , pool allocations
+- Redirected Drive Buffering Subsystem WDK file systems , pool allocations
+- pool allocations WDK RDBSS
+- RDBSS WDK file systems , free routines
+- Redirected Drive Buffering Subsystem WDK file systems , free routines
+- free routines WDK RDBSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pool Allocation and Free Routines

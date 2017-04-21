@@ -2,7 +2,20 @@
 title: SetDisplayConfig Summary and Scenarios
 description: SetDisplayConfig Summary and Scenarios
 ms.assetid: f9bce5d4-b511-475c-8e0a-eb60765a3326
-keywords: ["connecting displays WDK Windows 7 display , CCD APIs, SetDisplayConfig", "connecting displays WDK Windows Server 2008 R2 display , CCD APIs, SetDisplayConfig", "configuring displays WDK Windows 7 display , CCD APIs, SetDisplayConfig", "configuring displays WDK Windows Server 2008 R2 display , CCD APIs, SetDisplayConfig", "CCD concepts WDK Windows 7 display , SetDisplayConfig", "CCD concepts WDK Windows Server 2008 R2 display , SetDisplayConfig", "SetDisplayConfig WDK Windows 7 display", "SetDisplayConfig WDK Windows Server 2008 R2 display"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD APIs, SetDisplayConfig
+- connecting displays WDK Windows Server 2008 R2 display , CCD APIs, SetDisplayConfig
+- configuring displays WDK Windows 7 display , CCD APIs, SetDisplayConfig
+- configuring displays WDK Windows Server 2008 R2 display , CCD APIs, SetDisplayConfig
+- CCD concepts WDK Windows 7 display , SetDisplayConfig
+- CCD concepts WDK Windows Server 2008 R2 display , SetDisplayConfig
+- SetDisplayConfig WDK Windows 7 display
+- SetDisplayConfig WDK Windows Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SetDisplayConfig Summary and Scenarios

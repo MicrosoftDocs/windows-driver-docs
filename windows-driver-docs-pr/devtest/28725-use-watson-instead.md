@@ -2,6 +2,11 @@
 title: C28725
 description: Warning C28725 Use Watson instead of this SetUnhandledExceptionFilter.
 ms.assetid: 826B4BD2-226C-4986-86B3-E9DFD62DB225
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28725

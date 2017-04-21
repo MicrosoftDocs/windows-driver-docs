@@ -3,6 +3,11 @@ title: Code Example for Initializing Device Properties
 author: windows-driver-content
 description: Code Example for Initializing Device Properties
 ms.assetid: ec25fa77-13d8-4cb0-913c-b24010355702
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Example for Initializing Device Properties

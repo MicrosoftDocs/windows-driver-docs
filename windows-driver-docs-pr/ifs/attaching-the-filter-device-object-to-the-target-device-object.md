@@ -3,7 +3,16 @@ title: Attaching the Filter Device Object to the Target Device Object
 author: windows-driver-content
 description: Attaching the Filter Device Object to the Target Device Object
 ms.assetid: 1df293db-417a-4fee-afb8-06ab527331fb
-keywords: ["filter drivers WDK file system , attaching filters", "file system filter drivers WDK , attaching filters", "attaching filters to file system or volume", "volumes WDK file system , attaching filters"]
+keywords:
+- filter drivers WDK file system , attaching filters
+- file system filter drivers WDK , attaching filters
+- attaching filters to file system or volume
+- volumes WDK file system , attaching filters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attaching the Filter Device Object to the Target Device Object

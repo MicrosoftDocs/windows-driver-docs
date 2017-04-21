@@ -2,7 +2,16 @@
 title: Windows Classes vs. Interface Classes
 description: Windows Classes vs.
 ms.assetid: 3df99388-6fcf-44bb-a6c9-99281a8879d7
-keywords: ["device interface classes WDK device installations", "device setup classes WDK device installations", "interface classes WDK device installations", "setup classes WDK device installations"]
+keywords:
+- device interface classes WDK device installations
+- device setup classes WDK device installations
+- interface classes WDK device installations
+- setup classes WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Classes vs. Interface Classes

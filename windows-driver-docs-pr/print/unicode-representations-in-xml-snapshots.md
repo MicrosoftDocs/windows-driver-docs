@@ -3,7 +3,15 @@ title: Unicode Representations in XML Snapshots
 author: windows-driver-content
 description: Unicode Representations in XML Snapshots
 ms.assetid: 6efb7b2d-ab4d-4caf-a7e1-ed3bfab14453
-keywords: ["snapshots WDK GDL , Unicode representations", "Unicode representations WDK GDL", "parser WDK GDL , Unicod representations"]
+keywords:
+- snapshots WDK GDL , Unicode representations
+- Unicode representations WDK GDL
+- parser WDK GDL , Unicod representations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unicode Representations in XML Snapshots

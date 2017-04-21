@@ -2,7 +2,16 @@
 title: Querying Miniport Driver Information
 description: Querying Miniport Driver Information
 ms.assetid: b7bf2baf-3e66-4fc5-bd6a-b321744c1ae9
-keywords: ["WMI WDK networking , querying miniport drivers", "querying miniport drivers", "miniport drivers WDK networking , querying information", "NDIS miniport drivers WDK , querying information"]
+keywords:
+- WMI WDK networking , querying miniport drivers
+- querying miniport drivers
+- miniport drivers WDK networking , querying information
+- NDIS miniport drivers WDK , querying information
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying Miniport Driver Information

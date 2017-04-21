@@ -2,7 +2,15 @@
 title: Installation Requirements for Network Filter Intermediate Drivers
 description: Installation Requirements for Network Filter Intermediate Drivers
 ms.assetid: 17eb9045-1466-4bd2-8805-964d339c4a9f
-keywords: ["network filter intermediate driver installation requirements WDK", "service INF files WDK networking", "device INF files WDK networking"]
+keywords:
+- network filter intermediate driver installation requirements WDK
+- service INF files WDK networking
+- device INF files WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installation Requirements for Network Filter Intermediate Drivers

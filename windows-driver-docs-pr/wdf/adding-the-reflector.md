@@ -3,7 +3,18 @@ title: Specifying the Reflector in an INF File
 author: windows-driver-content
 description: Specifying the Reflector in an INF File
 ms.assetid: 3676c99d-4e13-4385-910a-251232b00d4c
-keywords: ["reflectors WDK UMDF", "AddService", "INF files WDK UMDF , reflectors", "function drivers WDK UMDF", "filter drivers WDK UMDF", "loading reflectors WDK UMDF"]
+keywords:
+- reflectors WDK UMDF
+- AddService
+- INF files WDK UMDF , reflectors
+- function drivers WDK UMDF
+- filter drivers WDK UMDF
+- loading reflectors WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying the Reflector in an INF File

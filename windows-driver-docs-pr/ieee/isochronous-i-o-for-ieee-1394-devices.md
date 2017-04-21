@@ -3,7 +3,22 @@ title: Isochronous I/O for IEEE 1394 Devices
 author: windows-driver-content
 description: Isochronous I/O for IEEE 1394 Devices
 ms.assetid: fc544776-af45-40e2-9699-7dcc50275d1e
-keywords: ["IEEE 1394 WDK buses , isochronous I/O", "1394 WDK buses , isochronous I/O", "I/O WDK IEEE 1394 bus", "I/O request packets WDK IEEE 1394 bus", "IRPs WDK IEEE 1394 bus", "isochronous I/O WDK IEEE 1394 bus", "guaranteed bandwidth WDK IEEE 1394 bus", "bandwidth WDK IEEE 1394 bus", "isochronous I/O WDK IEEE 1394 bus , about isochronous I/O", "transferring data WDK IEEE 1394 bus"]
+keywords:
+- IEEE 1394 WDK buses , isochronous I/O
+- 1394 WDK buses , isochronous I/O
+- I/O WDK IEEE 1394 bus
+- I/O request packets WDK IEEE 1394 bus
+- IRPs WDK IEEE 1394 bus
+- isochronous I/O WDK IEEE 1394 bus
+- guaranteed bandwidth WDK IEEE 1394 bus
+- bandwidth WDK IEEE 1394 bus
+- isochronous I/O WDK IEEE 1394 bus , about isochronous I/O
+- transferring data WDK IEEE 1394 bus
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Isochronous I/O for IEEE 1394 Devices

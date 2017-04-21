@@ -2,7 +2,20 @@
 title: Send Data That Contains Data to Be Retransmitted
 description: Send Data That Contains Data to Be Retransmitted
 ms.assetid: 38039411-1ef8-47a0-9a9a-de9451dc2cc9
-keywords: ["state offloading process WDK TCP chimney offload , outstanding send data", "offloading state process WDK TCP chimney offload , outstanding send data", "outstanding send data WDK TCP chimney offload", "send data outstanding WDK TCP chimney offload", "retransmitted data WDK TCP chimney offload", "SndUna WDK TCP chimney offload", "SndNxt WDK TCP chimney offload", "SndMax WDK TCP chimney offload"]
+keywords:
+- state offloading process WDK TCP chimney offload , outstanding send data
+- offloading state process WDK TCP chimney offload , outstanding send data
+- outstanding send data WDK TCP chimney offload
+- send data outstanding WDK TCP chimney offload
+- retransmitted data WDK TCP chimney offload
+- SndUna WDK TCP chimney offload
+- SndNxt WDK TCP chimney offload
+- SndMax WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Send Data That Contains Data to Be Retransmitted

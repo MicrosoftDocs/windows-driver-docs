@@ -2,7 +2,18 @@
 title: NET\_BUFFER Data Packaging
 description: NET\_BUFFER Data Packaging
 ms.assetid: f0d539ab-c6ed-4cd9-9891-ef4235016d50
-keywords: ["NDIS WDK , sending and receiving data", "data packaging WDK networking", "sending data WDK networking", "receiving data WDK networking", "NDIS_PACKET", "NET_BUFFER data packaging WDK networking"]
+keywords:
+- NDIS WDK , sending and receiving data
+- data packaging WDK networking
+- sending data WDK networking
+- receiving data WDK networking
+- NDIS_PACKET
+- NET_BUFFER data packaging WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NET\_BUFFER Data Packaging

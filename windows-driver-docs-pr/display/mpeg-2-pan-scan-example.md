@@ -2,7 +2,16 @@
 title: MPEG-2 Pan-Scan Example
 description: MPEG-2 Pan-Scan Example
 ms.assetid: 6ce4722c-5406-4b29-9171-ecab049320e7
-keywords: ["alpha-blend combination WDK DirectX VA , MPEG-2 pan-scan example", "blended pictures WDK DirectX VA , MPEG-2 pan-scan example", "PictureSourceRect16thPel", "MPEG-2 pan-scan example WDK DirectX VA"]
+keywords:
+- alpha-blend combination WDK DirectX VA , MPEG-2 pan-scan example
+- blended pictures WDK DirectX VA , MPEG-2 pan-scan example
+- PictureSourceRect16thPel
+- MPEG-2 pan-scan example WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MPEG-2 Pan-Scan Example

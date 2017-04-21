@@ -2,7 +2,13 @@
 title: Initialization and DMA Buffer Creation
 description: Initialization and DMA Buffer Creation
 ms.assetid: d84aed8a-9e22-4172-89c2-807b4e06108f
-keywords: ["DMA buffers WDK display , creating for GDI hardware acceleration"]
+keywords:
+- DMA buffers WDK display , creating for GDI hardware acceleration
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initialization and DMA Buffer Creation

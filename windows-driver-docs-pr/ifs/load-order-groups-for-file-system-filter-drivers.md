@@ -3,7 +3,17 @@ title: Load Order Groups for File System Filter Drivers
 author: windows-driver-content
 description: Load Order Groups for File System Filter Drivers
 ms.assetid: 57c9e4c6-186c-464f-ac83-c0669d46b189
-keywords: ["filter drivers WDK file system , driver loading", "file system filter drivers WDK , driver loading", "driver loading WDK file system", "loading drivers WDK file system", "load order groups WDK file system"]
+keywords:
+- filter drivers WDK file system , driver loading
+- file system filter drivers WDK , driver loading
+- driver loading WDK file system
+- loading drivers WDK file system
+- load order groups WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Load Order Groups for File System Filter Drivers

@@ -3,6 +3,11 @@ title: Coordinating I/O Requests with Component Power State
 author: windows-driver-content
 description: Coordinating I/O Requests with Component Power State
 ms.assetid: CF74B946-BF62-481A-B8AA-DD106DDB94CA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Coordinating I/O Requests with Component Power State

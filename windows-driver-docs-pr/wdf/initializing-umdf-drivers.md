@@ -3,7 +3,19 @@ title: Initializing UMDF Drivers
 author: windows-driver-content
 description: Initializing UMDF Drivers
 ms.assetid: b21ec019-1a80-4219-8aa8-3545ec3383b9
-keywords: ["User-Mode Driver Framework WDK , initializing drivers", "UMDF WDK , initializing drivers", "user-mode drivers WDK UMDF , initializing", "initializing drivers WDK UMDF", "reflectors WDK UMDF", "loading reflectors WDK UMDF", "driver host process WDK UMDF"]
+keywords:
+- User-Mode Driver Framework WDK , initializing drivers
+- UMDF WDK , initializing drivers
+- user-mode drivers WDK UMDF , initializing
+- initializing drivers WDK UMDF
+- reflectors WDK UMDF
+- loading reflectors WDK UMDF
+- driver host process WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing UMDF Drivers

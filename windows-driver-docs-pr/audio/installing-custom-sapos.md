@@ -2,7 +2,17 @@
 title: Installing Custom sAPOs
 description: Installing Custom sAPOs
 ms.assetid: fcf64691-0c75-4ad4-8485-029351a8aa93
-keywords: ["CLSID WDK", "sAPO WDK", "LFX WDK", "GFX WDK", "INF files WDK audio"]
+keywords:
+- CLSID WDK
+- sAPO WDK
+- LFX WDK
+- GFX WDK
+- INF files WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Custom sAPOs

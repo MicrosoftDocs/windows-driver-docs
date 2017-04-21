@@ -3,6 +3,11 @@ title: Using vector types with sensors
 author: windows-driver-content
 description: Using vector types with sensors
 ms.assetid: cadc2cd3-10aa-4a4a-926f-edc01b046f27
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using vector types with sensors

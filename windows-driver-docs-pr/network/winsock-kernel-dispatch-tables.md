@@ -2,7 +2,21 @@
 title: Winsock Kernel Dispatch Tables
 description: Winsock Kernel Dispatch Tables
 ms.assetid: 391c6868-fb85-41ea-ada5-6ba90750300c
-keywords: ["Winsock Kernel WDK networking , dispatch tables", "WSK WDK networking , dispatch tables", "dispatch tables WDK Winsock Kernel", "functions WDK Winsock Kernel", "basic sockets WDK Winsock Kernel", "listening sockets WDK Winsock Kernel", "datagram sockets WDK Winsock Kernel", "connection-oriented sockets WDK Winsock Kernel", "event callback functions WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , dispatch tables
+- WSK WDK networking , dispatch tables
+- dispatch tables WDK Winsock Kernel
+- functions WDK Winsock Kernel
+- basic sockets WDK Winsock Kernel
+- listening sockets WDK Winsock Kernel
+- datagram sockets WDK Winsock Kernel
+- connection-oriented sockets WDK Winsock Kernel
+- event callback functions WDK Winsock Kernel
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winsock Kernel Dispatch Tables

@@ -2,7 +2,14 @@
 title: Connectionless Environment for Network Drivers
 description: Connectionless Environment for Network Drivers
 ms.assetid: 998d4630-ae85-4219-9da1-f4f4c5e93d44
-keywords: ["connectionless environments WDK networking", "connectionless drivers WDK networking"]
+keywords:
+- connectionless environments WDK networking
+- connectionless drivers WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connectionless Environment for Network Drivers

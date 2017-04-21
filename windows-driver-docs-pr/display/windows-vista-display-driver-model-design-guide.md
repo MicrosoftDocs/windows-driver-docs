@@ -2,7 +2,21 @@
 title: Windows Display Driver Model (WDDM) Design Guide
 description: The Windows Display Driver Model (WDDM) is available starting with Windows Vista and is required starting with Windows 8. This section discusses requirements, specifications, and behavior for WDDM drivers.
 ms.assetid: d9dc0d48-aea4-4614-a23b-e2449800469f
-keywords: ["WDDM Design Guide WDK", "display driver model WDK Windows Vista", "Windows Vista display driver model WDK", "display devices WDK", "display drivers WDK , Windows Vista", "display driver model WDK Windows Vista , about display driver model", "Windows Vista display driver model WDK , about display driver model", "miniport drivers WDK display", "display miniport drivers WDK See miniport drivers WDK display"]
+keywords:
+- WDDM Design Guide WDK
+- display driver model WDK Windows Vista
+- Windows Vista display driver model WDK
+- display devices WDK
+- display drivers WDK , Windows Vista
+- display driver model WDK Windows Vista , about display driver model
+- Windows Vista display driver model WDK , about display driver model
+- miniport drivers WDK display
+- display miniport drivers WDK See miniport drivers WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Display Driver Model (WDDM) Design Guide

@@ -2,6 +2,11 @@
 title: Implementing an NDIS 6.30 Driver
 description: Implementing an NDIS 6.30 Driver
 ms.assetid: B1B48ED9-10F1-45F2-AA7C-270B637B5A36
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing an NDIS 6.30 Driver

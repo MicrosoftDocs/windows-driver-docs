@@ -2,7 +2,16 @@
 title: Starting a Protected Video Session
 description: Starting a Protected Video Session
 ms.assetid: c92f2d1a-ac15-49d4-858b-ff207ff4810c
-keywords: ["copy protection WDK COPP , starting protected video session", "video copy protection WDK COPP , starting protected video session", "COPP WDK DirectX VA , starting protected video session", "protected video WDK COPP , starting session"]
+keywords:
+- copy protection WDK COPP , starting protected video session
+- video copy protection WDK COPP , starting protected video session
+- COPP WDK DirectX VA , starting protected video session
+- protected video WDK COPP , starting session
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting a Protected Video Session

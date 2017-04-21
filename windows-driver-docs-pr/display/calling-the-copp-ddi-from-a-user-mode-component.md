@@ -2,7 +2,14 @@
 title: Calling the COPP DDI from a User-Mode Component
 description: Calling the COPP DDI from a User-Mode Component
 ms.assetid: f7ce10d3-bf52-4bfd-9ae8-63213a59d1c9
-keywords: ["calling COPP DDI WDK DirectX VA", "user-mode component calls WDK DirectX VA"]
+keywords:
+- calling COPP DDI WDK DirectX VA
+- user-mode component calls WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling the COPP DDI from a User-Mode Component

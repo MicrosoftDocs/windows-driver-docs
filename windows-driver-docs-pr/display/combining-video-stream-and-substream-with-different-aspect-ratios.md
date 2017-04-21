@@ -2,7 +2,17 @@
 title: Combining Video Stream and Substream with Different Aspect Ratios
 description: Combining Video Stream and Substream with Different Aspect Ratios
 ms.assetid: 3c147829-c76a-4bc7-bb14-bb49609f53d8
-keywords: ["combining stream and substream WDK DirectX VA", "video stream and substream combined WDK DirectX VA", "substream and video stream combined WDK DirectX VA", "aspect ratios WDK DirectX VA", "streams combined WDK DirectX VA"]
+keywords:
+- combining stream and substream WDK DirectX VA
+- video stream and substream combined WDK DirectX VA
+- substream and video stream combined WDK DirectX VA
+- aspect ratios WDK DirectX VA
+- streams combined WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Combining Video Stream and Substream with Different Aspect Ratios

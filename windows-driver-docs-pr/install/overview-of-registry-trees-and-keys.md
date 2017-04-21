@@ -2,7 +2,19 @@
 title: Registry Trees for Devices and Drivers
 description: Registry Trees for Devices and Drivers
 ms.assetid: 74dc1889-26a9-47ba-8c8d-3cd6ed95cb68
-keywords: ["hardware keys WDK device installations", "registry WDK device installations", "software keys WDK device installations", "device installations WDK , registry", "installing devices WDK , registry", "Device setup WDK device installations , registry", "debugging device"]
+keywords:
+- hardware keys WDK device installations
+- registry WDK device installations
+- software keys WDK device installations
+- device installations WDK , registry
+- installing devices WDK , registry
+- Device setup WDK device installations , registry
+- debugging device
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Trees for Devices and Drivers

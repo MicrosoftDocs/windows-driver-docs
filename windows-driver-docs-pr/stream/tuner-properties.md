@@ -3,7 +3,16 @@ title: Tuner Properties
 author: windows-driver-content
 description: Tuner Properties
 ms.assetid: 43a0c018-fb0e-4a45-9c9a-5896f1e728ac
-keywords: ["tuner properties WDK video capture", "PROPSETID_TUNER", "radio tuner properties WDK video capture", "TV tuner properties WDK video capture"]
+keywords:
+- tuner properties WDK video capture
+- PROPSETID_TUNER
+- radio tuner properties WDK video capture
+- TV tuner properties WDK video capture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tuner Properties

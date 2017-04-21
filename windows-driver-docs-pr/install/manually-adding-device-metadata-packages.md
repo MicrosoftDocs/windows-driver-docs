@@ -2,6 +2,11 @@
 title: Manually Adding Device Metadata Packages
 description: Manually Adding Device Metadata Packages
 ms.assetid: 1d0cee1f-8aa7-4fa9-b3c7-797cd09a07f4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manually Adding Device Metadata Packages

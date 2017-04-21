@@ -2,7 +2,15 @@
 title: Creating a Trace Session with a CTL File
 description: Creating a Trace Session with a CTL File
 ms.assetid: aa9aee7b-d0d2-44fe-a124-3594078a8e6c
-keywords: ["control GUIDs WDK", ".ctl files", "ctl files"]
+keywords:
+- control GUIDs WDK
+- .ctl files
+- ctl files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Trace Session with a CTL File

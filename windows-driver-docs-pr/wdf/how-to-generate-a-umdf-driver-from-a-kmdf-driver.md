@@ -3,6 +3,11 @@ title: How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)
 author: windows-driver-content
 description: This topic describes how to convert a Kernel-Mode Driver Framework (KMDF) driver into a User-Mode Driver Framework (UMDF) version 2 driver, and vice-versa.
 ms.assetid: 69B865CF-65D0-4211-951B-6574E27F10BD
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to convert a KMDF driver to a UMDF 2 driver (and vice-versa)

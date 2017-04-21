@@ -2,7 +2,16 @@
 title: State Pane
 description: State Pane
 ms.assetid: 20fb016e-249b-4d28-9fa8-5d2dd837109f
-keywords: ["panes WDK Static Driver Verifier", "Static Driver Verifier Report WDK , State pane", "State pane WDK Static Driver Verifier", "Boolean expressions WDK Static Driver Verifier"]
+keywords:
+- panes WDK Static Driver Verifier
+- Static Driver Verifier Report WDK , State pane
+- State pane WDK Static Driver Verifier
+- Boolean expressions WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # State Pane

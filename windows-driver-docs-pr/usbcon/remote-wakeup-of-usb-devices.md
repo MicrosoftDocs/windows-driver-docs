@@ -2,6 +2,11 @@
 Description: This topic describes best practices about implementing the remote wakeup capability in a client driver.
 title: Remote Wakeup of USB Devices
 author: windows-driver-content
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote Wakeup of USB Devices

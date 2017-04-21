@@ -2,7 +2,17 @@
 title: Bezier Curves
 description: Bezier Curves
 ms.assetid: 322ff79b-e5b8-4247-99eb-1aa3779216ef
-keywords: ["GDI WDK Windows 2000 display , curves, Bezier", "graphics drivers WDK Windows 2000 display , curves, Bezier", "drawing WDK GDI , curves, Bezier", "cubic splines WDK GDI", "Bezier curves WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , curves, Bezier
+- graphics drivers WDK Windows 2000 display , curves, Bezier
+- drawing WDK GDI , curves, Bezier
+- cubic splines WDK GDI
+- Bezier curves WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bezier Curves

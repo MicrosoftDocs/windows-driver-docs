@@ -3,7 +3,15 @@ title: Video Compression Properties
 author: windows-driver-content
 description: Video Compression Properties
 ms.assetid: 2fd69425-7c36-4766-88e6-7f02d5fa6659
-keywords: ["video compression properties WDK video capture", "compression properties WDK video capture", "PROPSETID_VIDCAP_VIDEOCOMPRESSION"]
+keywords:
+- video compression properties WDK video capture
+- compression properties WDK video capture
+- PROPSETID_VIDCAP_VIDEOCOMPRESSION
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Compression Properties

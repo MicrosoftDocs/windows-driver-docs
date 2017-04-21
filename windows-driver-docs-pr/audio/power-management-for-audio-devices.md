@@ -2,7 +2,18 @@
 title: Power Management for Audio Devices
 description: Power Management for Audio Devices
 ms.assetid: 3d3d63af-5790-4760-9099-7116ed5a5446
-keywords: ["audio drivers WDK , power management", "audio miniport drivers WDK , power management", "miniport drivers WDK audio , power management", "power management WDK audio", "port class drivers WDK audio", "PortCls WDK audio , power management"]
+keywords:
+- audio drivers WDK , power management
+- audio miniport drivers WDK , power management
+- miniport drivers WDK audio , power management
+- power management WDK audio
+- port class drivers WDK audio
+- PortCls WDK audio , power management
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Management for Audio Devices

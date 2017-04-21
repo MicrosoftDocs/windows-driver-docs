@@ -3,7 +3,13 @@ title: Introduction to Printer Interface DLLs
 author: windows-driver-content
 description: Introduction to Printer Interface DLLs
 ms.assetid: 1993d818-9761-418e-96c3-e3c46965bef1
-keywords: ["printer interface DLL WDK , about printer interface DLL"]
+keywords:
+- printer interface DLL WDK , about printer interface DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Printer Interface DLLs

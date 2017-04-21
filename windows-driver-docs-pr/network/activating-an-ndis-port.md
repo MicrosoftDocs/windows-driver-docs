@@ -2,7 +2,17 @@
 title: Activating an NDIS Port
 description: Activating an NDIS Port
 ms.assetid: 0f3bfda2-8faa-4a92-a76b-0c0c361bd667
-keywords: ["ports WDK NDIS , activating", "NDIS ports WDK , activating", "activating NDIS ports", "port states WDK NDIS", "activation PnP events WDK NDIS ports"]
+keywords:
+- ports WDK NDIS , activating
+- NDIS ports WDK , activating
+- activating NDIS ports
+- port states WDK NDIS
+- activation PnP events WDK NDIS ports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Activating an NDIS Port

@@ -2,7 +2,16 @@
 title: A Wave Sink for Kernel-Mode Software Synthesizers
 description: A Wave Sink for Kernel-Mode Software Synthesizers
 ms.assetid: 37ba9ad5-8b35-4252-a6fd-46dead924294
-keywords: ["wave sinks WDK audio , kernel-mode software synthesizers", "MIDI transport WDK audio", "wave sinks WDK audio , MIDI transport", "synthesizers WDK audio , MIDI transport"]
+keywords:
+- wave sinks WDK audio , kernel-mode software synthesizers
+- MIDI transport WDK audio
+- wave sinks WDK audio , MIDI transport
+- synthesizers WDK audio , MIDI transport
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # A Wave Sink for Kernel-Mode Software Synthesizers

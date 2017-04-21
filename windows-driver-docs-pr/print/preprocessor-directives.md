@@ -3,7 +3,16 @@ title: Preprocessor Directives
 author: windows-driver-content
 description: Preprocessor Directives
 ms.assetid: 5731b159-c6f9-47a8-8eaa-a1b0b6c12132
-keywords: ["GPD file entries WDK Unidrv , preprocessor directives", "preprocessor directives WDK GPD files", "parsing GPD file sections", "preprocessor symbols WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , preprocessor directives
+- preprocessor directives WDK GPD files
+- parsing GPD file sections
+- preprocessor symbols WDK GPD files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preprocessor Directives

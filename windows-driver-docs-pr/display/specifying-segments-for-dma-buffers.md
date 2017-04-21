@@ -2,7 +2,15 @@
 title: Specifying Segments for DMA Buffers
 description: Specifying Segments for DMA Buffers
 ms.assetid: 7cd51f22-bf9b-4c45-98f0-e9e0d41dab96
-keywords: ["memory segments WDK display , DMA buffers", "DMA buffers WDK display , memory segments", "buffers WDK display"]
+keywords:
+- memory segments WDK display , DMA buffers
+- DMA buffers WDK display , memory segments
+- buffers WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Segments for DMA Buffers

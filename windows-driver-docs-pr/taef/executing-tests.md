@@ -2,6 +2,11 @@
 title: Executing Tests
 description: Executing Tests
 ms.assetid: 421FD558-01D0-484d-B4F6-274A5C1BC62E
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Executing Tests

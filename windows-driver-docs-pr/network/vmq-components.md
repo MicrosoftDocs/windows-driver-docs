@@ -2,6 +2,11 @@
 title: VMQ Components
 description: VMQ Components
 ms.assetid: 74BFE4C1-89C2-400D-A915-88552C215251
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VMQ Components

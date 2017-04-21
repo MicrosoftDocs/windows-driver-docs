@@ -2,7 +2,14 @@
 title: UDP-ESP Encapsulation Types
 description: UDP-ESP Encapsulation Types
 ms.assetid: 126d2fd5-778e-43ff-87f6-5b0b54a83bac
-keywords: ["UDP-encapsulated ESP packets WDK IPsec offload , encapsulation types and subtypes", "encapsulation WDK UDP-ESP"]
+keywords:
+- UDP-encapsulated ESP packets WDK IPsec offload , encapsulation types and subtypes
+- encapsulation WDK UDP-ESP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UDP-ESP Encapsulation Types

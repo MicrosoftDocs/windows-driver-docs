@@ -2,6 +2,11 @@
 title: SoftwareInfo
 description: SoftwareInfo
 ms.assetid: 736040e9-76cd-4f59-b16a-1e8fc3b687fa
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SoftwareInfo

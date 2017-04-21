@@ -2,7 +2,29 @@
 title: Digital Rights Management
 description: Digital Rights Management
 ms.assetid: 7ce19196-5180-421f-b6be-ac4a235a8c16
-keywords: ["WDM audio drivers WDK , Digital Rights Management", "audio drivers WDK , Digital Rights Management", "Digital Rights Management WDK audio", "DRM WDK audio", "security WDK audio", "proprietary data security WDK audio", "usage rules WDK audio", "playback rules WDK audio", "encryption WDK audio", "cryptography WDK audio", "WDM audio drivers WDK , security", "audio drivers WDK , security", "protected content WDK audio", "digital content security WDK audio", "scrambled content WDK audio", "unauthorized copying WDK audio", "copy protection WDK audio"]
+keywords:
+- WDM audio drivers WDK , Digital Rights Management
+- audio drivers WDK , Digital Rights Management
+- Digital Rights Management WDK audio
+- DRM WDK audio
+- security WDK audio
+- proprietary data security WDK audio
+- usage rules WDK audio
+- playback rules WDK audio
+- encryption WDK audio
+- cryptography WDK audio
+- WDM audio drivers WDK , security
+- audio drivers WDK , security
+- protected content WDK audio
+- digital content security WDK audio
+- scrambled content WDK audio
+- unauthorized copying WDK audio
+- copy protection WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Digital Rights Management

@@ -3,6 +3,11 @@ title: Power-Down and Removal Sequence for a Function or Filter Driver
 author: windows-driver-content
 description: Power-Down and Removal Sequence for a Function or Filter Driver
 ms.assetid: E5A22C91-5967-42D6-A991-42B46C72ED82
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power-Down and Removal Sequence for a Function or Filter Driver

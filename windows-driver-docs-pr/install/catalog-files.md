@@ -2,7 +2,21 @@
 title: Catalog Files and Digital Signatures
 description: Catalog Files and Digital Signatures
 ms.assetid: e5504823-1c7e-4cbf-9d42-49e09aeae9d4
-keywords: ["thumbprints WDK driver signing", "signed catalog files WDK driver signing", ".cat files", "CAT files", "driver signing WDK , catalog files", "signing drivers WDK , catalog files", "digital signatures WDK , catalog files", "signatures WDK , catalog files", "catalog files WDK driver signing"]
+keywords:
+- thumbprints WDK driver signing
+- signed catalog files WDK driver signing
+- .cat files
+- CAT files
+- driver signing WDK , catalog files
+- signing drivers WDK , catalog files
+- digital signatures WDK , catalog files
+- signatures WDK , catalog files
+- catalog files WDK driver signing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Catalog Files and Digital Signatures

@@ -2,6 +2,11 @@
 title: WDDM 1.2 driver enforcement
 description: Validation by the Microsoft DirectX graphics kernel subsystem (Dxgkrnl) is enforced starting with Windows 8 to determine whether the mandatory Windows Display Driver Model (WDDM) 1.2 features are supported by the WDDM 1.2 driver.
 ms.assetid: DF0C6F50-CC68-4002-9ED3-F42EA24D24B1
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDDM 1.2 driver enforcement

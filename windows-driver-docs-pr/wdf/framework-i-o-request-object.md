@@ -3,7 +3,16 @@ title: Framework I/O Request Object
 author: windows-driver-content
 description: Framework I/O Request Object
 ms.assetid: e48437ee-597d-45b1-9093-8d5921356af5
-keywords: ["UMDF objects WDK , I/O request objects", "framework objects WDK UMDF , I/O request objects", "I/O request objects WDK UMDF", "IWDFIoRequest"]
+keywords:
+- UMDF objects WDK , I/O request objects
+- framework objects WDK UMDF , I/O request objects
+- I/O request objects WDK UMDF
+- IWDFIoRequest
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework I/O Request Object

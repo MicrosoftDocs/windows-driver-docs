@@ -3,7 +3,15 @@ title: Injecting a Hardware Error
 author: windows-driver-content
 description: Injecting a Hardware Error
 ms.assetid: c27c79d9-c0b2-433b-b3f4-7674c361f1aa
-keywords: ["injecting hardware errors WDK WHEA", "errors WDK WHEA , injecting, WHEA WDK , injecting", "Windows Hardware Error Architecture WDK , injecting"]
+keywords:
+- injecting hardware errors WDK WHEA
+- errors WDK WHEA , injecting, WHEA WDK , injecting
+- Windows Hardware Error Architecture WDK , injecting
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Injecting a Hardware Error

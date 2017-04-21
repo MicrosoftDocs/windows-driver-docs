@@ -3,6 +3,11 @@ title: Definitions and Variables Used in the Examples
 author: windows-driver-content
 description: Definitions and Variables Used in the Examples
 ms.assetid: 55dd0618-2171-406b-a22a-437412c77cbc
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Definitions and Variables Used in the Examples

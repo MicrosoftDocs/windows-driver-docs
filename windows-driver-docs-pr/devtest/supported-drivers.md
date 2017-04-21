@@ -2,7 +2,16 @@
 title: Supported Drivers
 description: Supported Drivers
 ms.assetid: 1d41a9a9-415a-4dba-8b52-138c47ad63fd
-keywords: ["Static Driver Verifier WDK , requirements", "StaticDV WDK , requirements", "SDV WDK , requirements", "function prototypes WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , requirements
+- StaticDV WDK , requirements
+- SDV WDK , requirements
+- function prototypes WDK Static Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supported Drivers

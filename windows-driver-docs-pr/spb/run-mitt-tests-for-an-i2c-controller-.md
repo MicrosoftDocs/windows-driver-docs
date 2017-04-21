@@ -3,6 +3,11 @@ title: I2C controller tests in MITT
 author: windows-driver-content
 description: I²C test modules that are included in the MITT software package can be used to test data transfers for an I²C controller and its driver. The MITT board acts as a client device connected to the I²C bus.
 ms.assetid: E40B9ABB-B119-4EC1-A383-EB96CC350A25
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # I2C controller tests in MITT

@@ -2,7 +2,16 @@
 title: Client Module Operations
 description: Client Module Operations
 ms.assetid: 9462bcdc-f5c2-4bd0-abe4-7e860ada7c43
-keywords: ["Network Module Registrar WDK , client module operations", "NMR WDK , client module operations", "client modules WDK Network Module Registrar , operations", "network modules WDK Network Module Registrar , client module operations"]
+keywords:
+- Network Module Registrar WDK , client module operations
+- NMR WDK , client module operations
+- client modules WDK Network Module Registrar , operations
+- network modules WDK Network Module Registrar , client module operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Client Module Operations

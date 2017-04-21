@@ -2,6 +2,11 @@
 title: PwrTest Timer Scenario
 description: The PwrTest Timer Scenario logs system timer resolution changes as they happen.
 ms.assetid: 842A827F-8046-4A31-938B-B1EA2119421A
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PwrTest Timer Scenario

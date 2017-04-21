@@ -2,6 +2,11 @@
 title: ServiceInfo
 description: ServiceInfo
 ms.assetid: 0dab9e5b-122c-4fe4-9314-97a0531af4aa
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ServiceInfo

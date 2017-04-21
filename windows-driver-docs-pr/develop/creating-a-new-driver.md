@@ -2,6 +2,11 @@
 ms.assetid: A637B75C-C227-495A-AB5B-B42DDF7842B9
 title: Creating a New Device Function Driver
 description: In this topic we explain how to use Visual Studio to start writing a new device function driver.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a New Device Function Driver

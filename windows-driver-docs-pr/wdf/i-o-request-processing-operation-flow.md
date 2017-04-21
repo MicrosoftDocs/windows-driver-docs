@@ -3,7 +3,15 @@ title: I/O Request Processing Operation Flow
 author: windows-driver-content
 description: I/O Request Processing Operation Flow
 ms.assetid: 3a7162d2-0a8c-4748-b320-bfe64ec93c9d
-keywords: ["operation flow WDK UMDF", "I/O requests WDK UMDF , operation flow", "request processing WDK UMDF , operation flow"]
+keywords:
+- operation flow WDK UMDF
+- I/O requests WDK UMDF , operation flow
+- request processing WDK UMDF , operation flow
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # I/O Request Processing Operation Flow

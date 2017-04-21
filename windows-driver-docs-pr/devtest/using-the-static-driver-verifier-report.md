@@ -2,7 +2,30 @@
 title: Using the Static Driver Verifier Report
 description: Using the Static Driver Verifier Report
 ms.assetid: ca6eaa53-cee5-4caf-b1e1-035ea800779b
-keywords: ["Static Driver Verifier WDK , verification results", "StaticDV WDK , verification results", "SDV WDK , verification results", "Static Driver Verifier WDK , locating errors", "StaticDV WDK , locating errors", "SDV WDK , locating errors", "locating errors WDK Static Driver Verifier", "errors WDK Static Driver Verifier", "Defect Viewer WDK Static Driver Verifier", "ABORT routine", "tracing WDK Static Driver Verifier", "rules WDK Static Driver Verifier", "panes WDK Static Driver Verifier", "Static Driver Verifier Report WDK , panes", "Static Driver Verifier Report WDK , about Static Driver Verifier Report", "Static Driver Verifier WDK , Static Driver Verifier Report", "StaticDV WDK , Static Driver Verifier Report", "SDV WDK , Static Driver Verifier Report"]
+keywords:
+- Static Driver Verifier WDK , verification results
+- StaticDV WDK , verification results
+- SDV WDK , verification results
+- Static Driver Verifier WDK , locating errors
+- StaticDV WDK , locating errors
+- SDV WDK , locating errors
+- locating errors WDK Static Driver Verifier
+- errors WDK Static Driver Verifier
+- Defect Viewer WDK Static Driver Verifier
+- ABORT routine
+- tracing WDK Static Driver Verifier
+- rules WDK Static Driver Verifier
+- panes WDK Static Driver Verifier
+- Static Driver Verifier Report WDK , panes
+- Static Driver Verifier Report WDK , about Static Driver Verifier Report
+- Static Driver Verifier WDK , Static Driver Verifier Report
+- StaticDV WDK , Static Driver Verifier Report
+- SDV WDK , Static Driver Verifier Report
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Static Driver Verifier Report

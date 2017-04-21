@@ -2,7 +2,21 @@
 title: Drawing Text
 description: Drawing Text
 ms.assetid: e5bf4673-93c4-4cc5-b74d-e0e3a487ec3d
-keywords: ["GDI WDK Windows 2000 display , text output", "graphics drivers WDK Windows 2000 display , text output", "text output WDK graphics", "DrvTextOut", "DrvGetGlyphMode", "surface text output WDK GDI", "GDI WDK Windows 2000 display , text output, drawing", "graphics drivers WDK Windows 2000 display , text output, drawing", "drawing text WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , text output
+- graphics drivers WDK Windows 2000 display , text output
+- text output WDK graphics
+- DrvTextOut
+- DrvGetGlyphMode
+- surface text output WDK GDI
+- GDI WDK Windows 2000 display , text output, drawing
+- graphics drivers WDK Windows 2000 display , text output, drawing
+- drawing text WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Drawing Text

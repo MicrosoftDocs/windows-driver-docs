@@ -3,7 +3,19 @@ title: SD Card Requests
 author: windows-driver-content
 description: SD Card Requests
 ms.assetid: 3c04573a-5fe7-4332-b899-5aff3234f1ad
-keywords: ["SD WDK buses , request processing", "I/O WDK SD bus", "request processing WDK SD bus", "synchronous requests WDK SD bus", "asynchronous requests WDK SD bus", "SdBusSubmitRequest", "SdBusSubmitRequestAsync"]
+keywords:
+- SD WDK buses , request processing
+- I/O WDK SD bus
+- request processing WDK SD bus
+- synchronous requests WDK SD bus
+- asynchronous requests WDK SD bus
+- SdBusSubmitRequest
+- SdBusSubmitRequestAsync
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SD Card Requests

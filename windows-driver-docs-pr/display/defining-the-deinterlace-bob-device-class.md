@@ -2,7 +2,14 @@
 title: Defining the Deinterlace Bob Device Class
 description: Defining the Deinterlace Bob Device Class
 ms.assetid: 1efe0a08-c3aa-4083-a19f-96e5ba94d517
-keywords: ["deinterlacing WDK DirectX VA , bob", "bob deinterlacing WDK DirectX VA"]
+keywords:
+- deinterlacing WDK DirectX VA , bob
+- bob deinterlacing WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining the Deinterlace Bob Device Class

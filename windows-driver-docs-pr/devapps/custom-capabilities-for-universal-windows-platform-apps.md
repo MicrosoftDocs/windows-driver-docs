@@ -1,8 +1,18 @@
 ---
-title:  Custom Capabilities for Universal Windows Platform Apps
+title: Custom Capabilities for Universal Windows Platform Apps
 author: windows-driver-content
 description: getting custom capabilities for Universal Windows Platform Apps
-keywords: ["Custom , Capabilities", "UWP Apps", "Custom Capabilities", "UWP","Hardware"]
+keywords:
+- Custom , Capabilities
+- UWP Apps
+- Custom Capabilities
+- UWP
+- Hardware
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Custom Capabilities 

@@ -2,7 +2,15 @@
 title: NDIS Interface Provider Operations
 description: NDIS Interface Provider Operations
 ms.assetid: cd5c76b0-6b38-44ea-ac1b-02be5d073203
-keywords: ["NDIS network interfaces WDK , interface providers", "network interfaces WDK , interface providers", "interface providers WDk network interface"]
+keywords:
+- NDIS network interfaces WDK , interface providers
+- network interfaces WDK , interface providers
+- interface providers WDk network interface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Interface Provider Operations

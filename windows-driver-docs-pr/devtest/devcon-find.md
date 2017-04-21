@@ -2,13 +2,19 @@
 title: DevCon Find
 description: Finds all devices that are currently attached to the computer. Displays the device instance ID and device description. Valid on local and remote computers.
 ms.assetid: ecd72b34-4117-4360-95d2-e87702f025a1
-keywords: ["DevCon Find Driver Development Tools"]
+keywords:
+- DevCon Find Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon Find
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon Find

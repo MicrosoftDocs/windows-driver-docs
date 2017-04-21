@@ -2,7 +2,13 @@
 title: DirectMusic Stream Data Range
 description: DirectMusic Stream Data Range
 ms.assetid: e3423901-330e-4a86-a921-6678e1c45a97
-keywords: ["DirectMusic WDK audio , stream data ranges"]
+keywords:
+- DirectMusic WDK audio , stream data ranges
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectMusic Stream Data Range

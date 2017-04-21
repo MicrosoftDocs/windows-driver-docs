@@ -2,7 +2,22 @@
 title: Boot Parameters to Enable Debugging
 description: Boot Parameters to Enable Debugging
 ms.assetid: acbe2fcd-6f8f-49c8-9de6-1617a1723cf5
-keywords: ["boot parameters WDK", "boot entry parameters WDK", "kernel debugging support WDK boot options", "local debugging WDK boot parameters", "single-computer debugging WDK boot parameters", "cable debugging WDK boot parameters", "IEEE 1394 cable WDK boot parameters", "1394 connection WDK boot parameters", "USB 2.0 debugging connection WDK boot parameters", "null-modem cable WDK boot parameters"]
+keywords:
+- boot parameters WDK
+- boot entry parameters WDK
+- kernel debugging support WDK boot options
+- local debugging WDK boot parameters
+- single-computer debugging WDK boot parameters
+- cable debugging WDK boot parameters
+- IEEE 1394 cable WDK boot parameters
+- 1394 connection WDK boot parameters
+- USB 2.0 debugging connection WDK boot parameters
+- null-modem cable WDK boot parameters
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boot Parameters to Enable Debugging

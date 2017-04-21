@@ -3,6 +3,11 @@ title: WS-DSP Scenario Device-Initiated Scan
 author: windows-driver-content
 description: WS-DSP Scenario Device-Initiated Scan
 ms.assetid: aa301f2c-64f6-4b4f-bb48-f3b2a10ea08d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSP Scenario: Device-Initiated Scan

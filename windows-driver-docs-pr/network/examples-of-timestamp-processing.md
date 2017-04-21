@@ -2,7 +2,15 @@
 title: Examples of Timestamp Processing
 description: Examples of Timestamp Processing
 ms.assetid: e889a114-b143-4764-ab54-48888adc2a32
-keywords: ["timestamps WDK TCP chimney offload , examples", "TCP timestamps WDK TCP chimney offload , examples", "drift in clock WDK TCP timestamps"]
+keywords:
+- timestamps WDK TCP chimney offload , examples
+- TCP timestamps WDK TCP chimney offload , examples
+- drift in clock WDK TCP timestamps
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Examples of Timestamp Processing

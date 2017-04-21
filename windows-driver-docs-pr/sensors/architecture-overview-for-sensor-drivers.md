@@ -3,6 +3,11 @@ title: Architecture Overview for Sensor Drivers
 author: windows-driver-content
 description: Architecture Overview for Sensor Drivers
 ms.assetid: 6d1b15ea-ba27-4bde-8000-d31f014ab47d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Architecture Overview for Sensor Drivers

@@ -3,6 +3,11 @@ title: Vendor-Extended Commands
 author: windows-driver-content
 description: Vendor-Extended Commands
 ms.assetid: 3d360a9f-5a65-452b-a8ad-080dc7d8c8f5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vendor-Extended Commands

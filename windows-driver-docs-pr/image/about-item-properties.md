@@ -3,6 +3,11 @@ title: About Item Properties
 author: windows-driver-content
 description: About Item Properties
 ms.assetid: f8d00e29-ce7d-4949-a713-07755f495d6a
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # About Item Properties

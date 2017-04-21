@@ -3,7 +3,18 @@ title: Determining BDA Device Topology
 author: windows-driver-content
 description: Determining BDA Device Topology
 ms.assetid: fdac317e-d4fc-47c9-87d3-bec597f758f5
-keywords: ["method sets WDK BDA , BDA device topology", "property sets WDK BDA , BDA device topology", "KSPROPERTY_BDA_NODE_TYPES", "KSPROPERTY_BDA_PIN_TYPES", "KSPROPERTY_BDA_TEMPLATE_CONNECTIONS", "template filter topology WDK BDA"]
+keywords:
+- method sets WDK BDA , BDA device topology
+- property sets WDK BDA , BDA device topology
+- KSPROPERTY_BDA_NODE_TYPES
+- KSPROPERTY_BDA_PIN_TYPES
+- KSPROPERTY_BDA_TEMPLATE_CONNECTIONS
+- template filter topology WDK BDA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining BDA Device Topology

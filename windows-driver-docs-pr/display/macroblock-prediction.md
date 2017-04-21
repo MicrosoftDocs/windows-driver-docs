@@ -2,7 +2,20 @@
 title: Macroblock Prediction
 description: Macroblock Prediction
 ms.assetid: 95e779ab-b110-4636-9475-6881dba89649
-keywords: ["MCP WDK DirectX VA", "motion compensation WDK DirectX VA", "DirectX Video Acceleration WDK Windows 2000 display , video decoding", "Video Acceleration WDK DirectX , video decoding", "VA WDK DirectX , video decoding", "decoding video WDK DirectX VA , macroblock prediction", "video decoding WDK DirectX VA , macroblock prediction", "macroblocks WDK DirectX VA , prediction"]
+keywords:
+- MCP WDK DirectX VA
+- motion compensation WDK DirectX VA
+- DirectX Video Acceleration WDK Windows 2000 display , video decoding
+- Video Acceleration WDK DirectX , video decoding
+- VA WDK DirectX , video decoding
+- decoding video WDK DirectX VA , macroblock prediction
+- video decoding WDK DirectX VA , macroblock prediction
+- macroblocks WDK DirectX VA , prediction
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Macroblock Prediction

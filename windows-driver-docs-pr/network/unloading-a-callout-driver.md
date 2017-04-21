@@ -2,7 +2,15 @@
 title: Unloading a Callout Driver
 description: Unloading a Callout Driver
 ms.assetid: a8c1bb33-41f8-420c-a761-669864eb9444
-keywords: ["Windows Filtering Platform callout drivers WDK , unloading", "callout drivers WDK Windows Filtering Platform , unloading", "unloading drivers WDK Windows Filtering Platform"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , unloading
+- callout drivers WDK Windows Filtering Platform , unloading
+- unloading drivers WDK Windows Filtering Platform
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unloading a Callout Driver

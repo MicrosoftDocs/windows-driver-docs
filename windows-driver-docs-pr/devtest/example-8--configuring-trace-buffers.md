@@ -2,7 +2,14 @@
 title: Example 8 Configuring Trace Buffers
 description: Example 8 Configuring Trace Buffers
 ms.assetid: 7bcc076c-6feb-4660-88d7-dc4206b53dce
-keywords: ["trace buffers WDK", "buffers WDK software tracing"]
+keywords:
+- trace buffers WDK
+- buffers WDK software tracing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 8: Configuring Trace Buffers

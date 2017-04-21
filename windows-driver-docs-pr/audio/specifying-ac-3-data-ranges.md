@@ -2,7 +2,21 @@
 title: Specifying AC-3 Data Ranges
 description: Specifying AC-3 Data Ranges
 ms.assetid: 87d59554-43fa-4d61-9829-c38691d0a525
-keywords: ["S/PDIF pass-through WDK audio", "AC-3-over-S/PDIF format WDK audio", "audio non-PCM formats WDK", "non-PCM audio formats WDK , S/PDIF", "WMA Pro WDK audio", "AC-3 WDK audio", "Sony/Philips digital interface", "data ranges WDK audio , AC-3", "non-PCM audio formats WDK , AC-3"]
+keywords:
+- S/PDIF pass-through WDK audio
+- AC-3-over-S/PDIF format WDK audio
+- audio non-PCM formats WDK
+- non-PCM audio formats WDK , S/PDIF
+- WMA Pro WDK audio
+- AC-3 WDK audio
+- Sony/Philips digital interface
+- data ranges WDK audio , AC-3
+- non-PCM audio formats WDK , AC-3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying AC-3 Data Ranges

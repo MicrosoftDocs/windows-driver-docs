@@ -3,6 +3,11 @@ title: Locking and Unlocking Best Practices
 author: windows-driver-content
 description: Locking and Unlocking Best Practices
 ms.assetid: cfa45c0d-4e92-4455-a8f6-17d4806f9c36
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Locking and Unlocking Best Practices

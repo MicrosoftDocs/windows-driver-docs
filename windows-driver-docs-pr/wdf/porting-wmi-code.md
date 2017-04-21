@@ -3,6 +3,11 @@ title: Porting WMI
 author: windows-driver-content
 description: Porting WMI
 ms.assetid: 10843A15-3F6F-4DB5-A43B-4D9964DD3312
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting WMI

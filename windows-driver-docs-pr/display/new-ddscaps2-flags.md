@@ -2,7 +2,16 @@
 title: New DDSCAPS2 Flags
 description: New DDSCAPS2 Flags
 ms.assetid: a5171865-7339-422f-8470-154a0aadc496
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , presentation", "presentation WDK DirectX 8.0", "rendering results visible WDK DirectX 8.0", "visible results WDK DirectX 8.0"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , presentation
+- presentation WDK DirectX 8.0
+- rendering results visible WDK DirectX 8.0
+- visible results WDK DirectX 8.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # New DDSCAPS2 Flags

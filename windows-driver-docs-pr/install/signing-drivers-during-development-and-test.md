@@ -2,6 +2,11 @@
 title: Signing Drivers during Development and Test
 description: Signing Drivers during Development and Test
 ms.assetid: c6c20f58-0784-4646-abe1-ea3e64db3c21
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Signing Drivers during Development and Test

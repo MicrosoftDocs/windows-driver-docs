@@ -2,6 +2,11 @@
 title: C28638
 description: Warning C28638 function delayload stub is missing a matching declaration.
 ms.assetid: 25999552-6316-414b-972d-25797f477b15
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28638

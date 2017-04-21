@@ -2,7 +2,13 @@
 title: XpsAnalyzer Rules
 description: XpsAnalyzer Rules
 ms.assetid: 4f617665-4cc4-475d-ae66-abc2f00309fd
-keywords: ["XpsAnalyzer WDK , rules"]
+keywords:
+- XpsAnalyzer WDK , rules
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XpsAnalyzer Rules

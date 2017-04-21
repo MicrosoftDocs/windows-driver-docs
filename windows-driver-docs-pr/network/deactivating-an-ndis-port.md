@@ -2,7 +2,16 @@
 title: Deactivating an NDIS Port
 description: Deactivating an NDIS Port
 ms.assetid: 2a5d288f-b6ea-4b63-91a3-44155aae8064
-keywords: ["ports WDK NDIS , deactivating", "NDIS ports WDK , deactivating", "deactivating NDIS ports WDK NDIS", "deactivation PnP events WDK NDIS ports"]
+keywords:
+- ports WDK NDIS , deactivating
+- NDIS ports WDK , deactivating
+- deactivating NDIS ports WDK NDIS
+- deactivation PnP events WDK NDIS ports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deactivating an NDIS Port

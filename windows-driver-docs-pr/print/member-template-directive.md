@@ -3,7 +3,13 @@ title: Member Template Directive
 author: windows-driver-content
 description: Member Template Directive
 ms.assetid: 3f4bdf3c-30cb-4edc-bd9e-422c4bfbb5b7
-keywords: ["Member directive WDK GDL"]
+keywords:
+- Member directive WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Member Template Directive

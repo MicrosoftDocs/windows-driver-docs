@@ -2,7 +2,17 @@
 title: Drawing and Filling Paths
 description: Drawing and Filling Paths
 ms.assetid: bc31aeba-d1f1-4e38-a8df-19e8d7e178c7
-keywords: ["GDI WDK Windows 2000 display , paths", "graphics drivers WDK Windows 2000 display , paths", "drawing WDK GDI , paths", "filling paths WDK GDI", "paths WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , paths
+- graphics drivers WDK Windows 2000 display , paths
+- drawing WDK GDI , paths
+- filling paths WDK GDI
+- paths WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Drawing and Filling Paths

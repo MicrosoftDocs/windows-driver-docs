@@ -2,6 +2,11 @@
 title: Appendix 4 Driver Signing Issues
 description: Two known driver signing issues are described below.
 ms.assetid: EC244022-A02B-4AAD-93EE-B9AE3E72A674
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Appendix 4: Driver Signing Issues

@@ -2,7 +2,21 @@
 title: Direct Cache Access (DCA)
 description: Direct Cache Access (DCA)
 ms.assetid: d2f46f5f-e9be-4ed8-9107-39cf178ead6a
-keywords: ["direct cache access WDK NetDMA", "DCA WDK NetDMA", "memory-to-memory data transfers WDK NetDMA , direct cache access", "data transfers WDK NetDMA , direct cache access", "transferring data WDK NetDMA , direct cache access", "DMA transfers WDK NetDMA , direct cache access", "NetDMA WDK networking , direct cache access", "CPU affinities WDK NetDMA", "NetDMA 2.0 WDK networking , direct cache access"]
+keywords:
+- direct cache access WDK NetDMA
+- DCA WDK NetDMA
+- memory-to-memory data transfers WDK NetDMA , direct cache access
+- data transfers WDK NetDMA , direct cache access
+- transferring data WDK NetDMA , direct cache access
+- DMA transfers WDK NetDMA , direct cache access
+- NetDMA WDK networking , direct cache access
+- CPU affinities WDK NetDMA
+- NetDMA 2.0 WDK networking , direct cache access
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Direct Cache Access (DCA)

@@ -2,7 +2,15 @@
 title: DirectSound Speaker-Configuration Settings
 description: DirectSound Speaker-Configuration Settings
 ms.assetid: 69233cca-1264-4a1a-bace-59955930d87b
-keywords: ["DirectSound WDK audio , speaker configuration settings", "speaker-configuration settings WDK DirectSound", "speakers WDK audio , DirectSound configuration settings"]
+keywords:
+- DirectSound WDK audio , speaker configuration settings
+- speaker-configuration settings WDK DirectSound
+- speakers WDK audio , DirectSound configuration settings
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectSound Speaker-Configuration Settings

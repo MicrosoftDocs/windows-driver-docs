@@ -2,7 +2,17 @@
 title: Porting intermediate driver status indications to NDIS 6.0
 description: Porting Intermediate Driver Status Indication Handling to NDIS 6.0
 ms.assetid: 823d4f3a-2520-45f5-a23d-3c56c72d43d8
-keywords: ["NDIS intermediate drivers WDK networking , status indications", "intermediate drivers WDK networking , status indications", "status indications WDK networking , porting", "porting intermediate drivers WDK networking , status indications", "porting status indic"]
+keywords:
+- NDIS intermediate drivers WDK networking , status indications
+- intermediate drivers WDK networking , status indications
+- status indications WDK networking , porting
+- porting intermediate drivers WDK networking , status indications
+- porting status indic
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Intermediate Driver Status Indication Handling to NDIS 6.0

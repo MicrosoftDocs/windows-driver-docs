@@ -2,7 +2,21 @@
 title: Supporting Video Capture and Other Child Devices
 description: Supporting Video Capture and Other Child Devices
 ms.assetid: 15575700-7525-459e-a099-158f0c13899c
-keywords: ["video capture WDK display", "capturing video WDK display", "interfaces WDK display", "child video capture drivers WDK display", "MDLs WDK display", "memory descriptor lists WDK display", "capture buffers WDK display", "display driver model WDK Windows Vista , child video capture drivers", "Windows Vista display driver model WDK , child video capture drivers"]
+keywords:
+- video capture WDK display
+- capturing video WDK display
+- interfaces WDK display
+- child video capture drivers WDK display
+- MDLs WDK display
+- memory descriptor lists WDK display
+- capture buffers WDK display
+- display driver model WDK Windows Vista , child video capture drivers
+- Windows Vista display driver model WDK , child video capture drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Video Capture and Other Child Devices

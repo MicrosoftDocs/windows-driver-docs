@@ -2,6 +2,11 @@
 ms.assetid: A1DE1065-9D8F-405F-9807-5F0D3BE6F0AC
 title: Driver Signing Properties
 description: 
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Signing Properties

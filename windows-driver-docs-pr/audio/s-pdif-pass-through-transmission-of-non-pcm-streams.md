@@ -2,7 +2,19 @@
 title: S/PDIF Pass-Through Transmission of Non-PCM Streams
 description: S/PDIF Pass-Through Transmission of Non-PCM Streams
 ms.assetid: c06b880e-20d1-417b-9868-a4fb3b418dbf
-keywords: ["S/PDIF pass-through WDK audio", "AC-3-over-S/PDIF format WDK audio", "audio non-PCM formats WDK", "non-PCM audio formats WDK , S/PDIF", "WMA Pro WDK audio", "AC-3 WDK audio", "Sony/Philips digital interface"]
+keywords:
+- S/PDIF pass-through WDK audio
+- AC-3-over-S/PDIF format WDK audio
+- audio non-PCM formats WDK
+- non-PCM audio formats WDK , S/PDIF
+- WMA Pro WDK audio
+- AC-3 WDK audio
+- Sony/Philips digital interface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # S/PDIF Pass-Through Transmission of Non-PCM Streams

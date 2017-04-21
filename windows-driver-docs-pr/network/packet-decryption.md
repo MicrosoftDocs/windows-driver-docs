@@ -2,7 +2,14 @@
 title: Packet Decryption
 description: Packet Decryption
 ms.assetid: 20d5ce82-d43d-4836-8b60-7e8982213b0f
-keywords: ["decryption WDK Native 802.11", "packet decryptions WDK Native 802.11"]
+keywords:
+- decryption WDK Native 802.11
+- packet decryptions WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Packet Decryption

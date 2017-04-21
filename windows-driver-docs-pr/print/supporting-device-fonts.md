@@ -3,7 +3,16 @@ title: Supporting Device Fonts
 author: windows-driver-content
 description: Supporting Device Fonts
 ms.assetid: 9ca3269d-3f87-4d8a-a897-7305ac172227
-keywords: ["printer graphics DLL WDK , device fonts", "graphics DLL WDK printer , device fonts", "device fonts WDK printer graphics", "fonts WDK printer graphics"]
+keywords:
+- printer graphics DLL WDK , device fonts
+- graphics DLL WDK printer , device fonts
+- device fonts WDK printer graphics
+- fonts WDK printer graphics
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Device Fonts

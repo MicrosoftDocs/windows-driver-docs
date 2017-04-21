@@ -3,6 +3,11 @@ title: Scan Job Setup
 author: windows-driver-content
 description: Scan Job Setup
 ms.assetid: 9fca3b10-8df9-476a-a319-6f0ab7bbd6e8
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scan Job Setup

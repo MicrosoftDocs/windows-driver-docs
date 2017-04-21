@@ -2,7 +2,17 @@
 title: COPP Commands
 description: COPP Commands
 ms.assetid: c745b7d9-be59-45f9-90f5-0a7ecef0a292
-keywords: ["copy protection WDK COPP , commands", "video copy protection WDK COPP , commands", "COPP WDK DirectX VA , commands", "protected video WDK COPP , commands", "commands WDK COPP"]
+keywords:
+- copy protection WDK COPP , commands
+- video copy protection WDK COPP , commands
+- COPP WDK DirectX VA , commands
+- protected video WDK COPP , commands
+- commands WDK COPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP Commands

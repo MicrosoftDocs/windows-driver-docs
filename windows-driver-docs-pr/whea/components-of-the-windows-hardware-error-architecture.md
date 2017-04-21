@@ -3,7 +3,21 @@ title: Components of the Windows Hardware Error Architecture
 author: windows-driver-content
 description: Components of the Windows Hardware Error Architecture
 ms.assetid: d038f2ce-7012-4b8d-bf2b-a722548a32ca
-keywords: ["Windows Hardware Error Architecture WDK , components", "WHEA WDK , components", "hardware errors WDK WHEA , components", "errors WDK WHEA , components", "components WDK WHEA", "low-level hardware error handlers WDK WHEA", "LLHEHs WDK WHEA", "platform-specific hardware error drivers WDK WHEA", "PSHED WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , components
+- WHEA WDK , components
+- hardware errors WDK WHEA , components
+- errors WDK WHEA , components
+- components WDK WHEA
+- low-level hardware error handlers WDK WHEA
+- LLHEHs WDK WHEA
+- platform-specific hardware error drivers WDK WHEA
+- PSHED WDK WHEA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Components of the Windows Hardware Error Architecture

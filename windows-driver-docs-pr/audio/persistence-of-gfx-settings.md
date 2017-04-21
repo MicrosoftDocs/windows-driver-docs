@@ -2,7 +2,16 @@
 title: Persistence of GFX Settings
 description: Persistence of GFX Settings
 ms.assetid: 91423829-7c8f-455b-bdfe-8f57f8656581
-keywords: ["GFX filters WDK audio , settings persistence", "persistence WDK GFX filters", "set-property WDK audio", "get-property WDK audio"]
+keywords:
+- GFX filters WDK audio , settings persistence
+- persistence WDK GFX filters
+- set-property WDK audio
+- get-property WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Persistence of GFX Settings

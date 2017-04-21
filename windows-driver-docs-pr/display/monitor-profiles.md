@@ -2,7 +2,20 @@
 title: Monitor Profiles
 description: Monitor Profiles
 ms.assetid: aede7ada-3826-40a4-8b37-18ae242eea77
-keywords: ["display drivers WDK Windows 2000 , color management", "color management WDK Windows 2000 display", "display drivers WDK Windows 2000 , monitor profiles", "monitor profiles WDK Windows 2000 display", "device profiles WDK Windows 2000 display", "color space WDK Windows 2000 display", "color gamut WDK Windows 2000 display", "device-independent color space WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , color management
+- color management WDK Windows 2000 display
+- display drivers WDK Windows 2000 , monitor profiles
+- monitor profiles WDK Windows 2000 display
+- device profiles WDK Windows 2000 display
+- color space WDK Windows 2000 display
+- color gamut WDK Windows 2000 display
+- device-independent color space WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Monitor Profiles

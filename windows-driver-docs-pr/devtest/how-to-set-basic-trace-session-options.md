@@ -2,7 +2,15 @@
 title: How to Set Basic Trace Session Options
 description: How to Set Basic Trace Session Options
 ms.assetid: e19207df-ff4d-4083-85cf-b5b5b3e62f2c
-keywords: ["trace sessions WDK , basic options", "tracing WDK , basic options", "software tracing WDK , basic options"]
+keywords:
+- trace sessions WDK , basic options
+- tracing WDK , basic options
+- software tracing WDK , basic options
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to Set Basic Trace Session Options

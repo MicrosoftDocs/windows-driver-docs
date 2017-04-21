@@ -2,7 +2,15 @@
 title: Low Resources Simulation
 description: Low Resources Simulation
 ms.assetid: 2710fa23-26cd-493b-abb4-3a0969a98eb1
-keywords: ["Low Resources Simulation option WDK Driver Verifier", "low-memory checks WDK Driver Verifier", "insufficient memory checks WDK Driver Verifier"]
+keywords:
+- Low Resources Simulation option WDK Driver Verifier
+- low-memory checks WDK Driver Verifier
+- insufficient memory checks WDK Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Low Resources Simulation

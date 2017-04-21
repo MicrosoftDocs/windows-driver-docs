@@ -3,7 +3,18 @@ title: Page Event Callbacks
 author: windows-driver-content
 description: Page Event Callbacks
 ms.assetid: 891f62ec-d009-42c8-8143-73bfe737a946
-keywords: ["callback functions WDK CPSUI", "Common Property Sheet User Interface WDK print , callbacks", "CPSUI WDK print , callbacks", "property sheet pages WDK print , callbacks", "page event callbacks WDK CPSUI", "event callbacks WDK CPSUI"]
+keywords:
+- callback functions WDK CPSUI
+- Common Property Sheet User Interface WDK print , callbacks
+- CPSUI WDK print , callbacks
+- property sheet pages WDK print , callbacks
+- page event callbacks WDK CPSUI
+- event callbacks WDK CPSUI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Page Event Callbacks

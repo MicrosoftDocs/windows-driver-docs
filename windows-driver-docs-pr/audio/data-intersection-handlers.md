@@ -2,7 +2,27 @@
 title: Data-Intersection Handlers
 description: Data-Intersection Handlers
 ms.assetid: 7206afdb-8a34-4b5a-8cea-87119f426161
-keywords: ["WDM audio drivers WDK , data-intersection handlers", "audio drivers WDK , data-intersection handlers", "data-intersection handlers WDK audio", "handlers WDK audio", "virtual audio devices WDK", "audio filters WDK audio , data-intersection handlers", "filters WDK audio , data-intersection handlers", "formats WDK audio , data-intersection handlers", "pins WDK audio , data-intersection handlers", "graphs WDK audio", "range intersections WDK audio", "data ranges WDK audio , intersections", "audio data formats WDK", "audio data ranges WDK", "port drivers WDK audio , data-intersection handlers"]
+keywords:
+- WDM audio drivers WDK , data-intersection handlers
+- audio drivers WDK , data-intersection handlers
+- data-intersection handlers WDK audio
+- handlers WDK audio
+- virtual audio devices WDK
+- audio filters WDK audio , data-intersection handlers
+- filters WDK audio , data-intersection handlers
+- formats WDK audio , data-intersection handlers
+- pins WDK audio , data-intersection handlers
+- graphs WDK audio
+- range intersections WDK audio
+- data ranges WDK audio , intersections
+- audio data formats WDK
+- audio data ranges WDK
+- port drivers WDK audio , data-intersection handlers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data-Intersection Handlers

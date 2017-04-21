@@ -3,7 +3,16 @@ title: KS Methods
 author: windows-driver-content
 description: KS Methods
 ms.assetid: 1d7bd6f4-0aaf-4d77-8132-f551fd2ecbd2
-keywords: ["kernel streaming WDK , methods", "KS WDK , methods", "methods WDK kernel streaming", "method sets WDK kernel streaming"]
+keywords:
+- kernel streaming WDK , methods
+- KS WDK , methods
+- methods WDK kernel streaming
+- method sets WDK kernel streaming
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Methods

@@ -3,7 +3,16 @@ title: USB-Specific UMDF 1.x Interfaces
 author: windows-driver-content
 description: USB-Specific UMDF 1.x Interfaces
 ms.assetid: b458d96d-e15e-4a9b-a26e-490620cec38e
-keywords: ["UMDF WDK , UMDF-USB object model", "User-Mode Driver Framework WDK , UMDF-USB object model", "user-mode drivers WDK UMDF , UMDF-USB object model", "UMDF-USB object model WDK UMDF"]
+keywords:
+- UMDF WDK , UMDF-USB object model
+- User-Mode Driver Framework WDK , UMDF-USB object model
+- user-mode drivers WDK UMDF , UMDF-USB object model
+- UMDF-USB object model WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB-Specific UMDF 1.x Interfaces

@@ -2,7 +2,17 @@
 title: Controlling Multisampling
 description: Controlling Multisampling
 ms.assetid: 73cdfda8-f67a-470b-a17e-0bf78a5d1df1
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, controlling", "multisample rendering WDK DirectX 8.0 , controlling", "rendering multisamples WDK DirectX 8.0 , controlling", "D3DRS_MULTISAMPLEANTIALIAS", "D3DRS_MULTISAMPLEMASK"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, controlling
+- multisample rendering WDK DirectX 8.0 , controlling
+- rendering multisamples WDK DirectX 8.0 , controlling
+- D3DRS_MULTISAMPLEANTIALIAS
+- D3DRS_MULTISAMPLEMASK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Multisampling

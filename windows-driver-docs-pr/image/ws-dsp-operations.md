@@ -3,6 +3,11 @@ title: WS-DSP Operations
 author: windows-driver-content
 description: WS-DSP Operations
 ms.assetid: abbf00c2-2448-40c4-a296-9e5c1d0810a5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSP Operations

@@ -3,7 +3,15 @@ title: Handling SRB\_FUNCTION\_IO\_CONTROL
 author: windows-driver-content
 description: Handling SRB\_FUNCTION\_IO\_CONTROL
 ms.assetid: 92d09a49-d8e8-4d97-b334-c42d5b04ee8d
-keywords: ["SCSI miniport drivers WDK storage , HwScsiStartIo", "HwScsiStartIo", "SRB_FUNCTION_IO_CONTROL"]
+keywords:
+- SCSI miniport drivers WDK storage , HwScsiStartIo
+- HwScsiStartIo
+- SRB_FUNCTION_IO_CONTROL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling SRB\_FUNCTION\_IO\_CONTROL

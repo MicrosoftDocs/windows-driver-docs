@@ -3,7 +3,13 @@ title: Print Capabilities Architecture
 author: windows-driver-content
 description: Print Capabilities Architecture
 ms.assetid: d19438ca-8c88-4835-8445-2799387e0912
-keywords: ["Print Capabilities WDK , architecture"]
+keywords:
+- Print Capabilities WDK , architecture
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Capabilities Architecture

@@ -3,7 +3,15 @@ title: Creating Property Sheet Pages for Printers
 author: windows-driver-content
 description: Creating Property Sheet Pages for Printers
 ms.assetid: b9b7aa52-39b7-4809-acdf-e72293da37e1
-keywords: ["printer interface DLL WDK , property sheet pages", "property sheet pages WDK print , creating", "property sheet pages WDK print , printer interface DLL"]
+keywords:
+- printer interface DLL WDK , property sheet pages
+- property sheet pages WDK print , creating
+- property sheet pages WDK print , printer interface DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Property Sheet Pages for Printers

@@ -2,7 +2,16 @@
 title: Performing COPP Operations Example
 description: Performing COPP Operations
 ms.assetid: ba5c98d3-63d1-4e2d-ba11-6054c1623e80
-keywords: ["copy protection WDK COPP , COPP operation example code", "video copy protection WDK COPP , COPP operation example code", "COPP WDK DirectX VA , operation example code", "protected video WDK COPP , COPP operation example code"]
+keywords:
+- copy protection WDK COPP , COPP operation example code
+- video copy protection WDK COPP , COPP operation example code
+- COPP WDK DirectX VA , operation example code
+- protected video WDK COPP , COPP operation example code
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performing COPP Operations Example

@@ -2,6 +2,11 @@
 title: PwrTest Platform Idle Scenario
 description: The PwrTest Platform Idle Scenario (/platidle) polls and attempts to log platform idle transition counts if they are supported by the computer.
 ms.assetid: 71A3AB26-AAC5-46DB-99A3-6693D5AF5AC9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PwrTest Platform Idle Scenario

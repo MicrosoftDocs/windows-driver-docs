@@ -3,7 +3,14 @@ title: Storport I/O Model
 author: windows-driver-content
 description: Storport I/O Model
 ms.assetid: 9220b01e-725f-4a03-87f1-402c0686cccd
-keywords: ["Storport drivers WDK , I/O", "I/O WDK Storport"]
+keywords:
+- Storport drivers WDK , I/O
+- I/O WDK Storport
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storport I/O Model

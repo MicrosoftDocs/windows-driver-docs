@@ -2,7 +2,17 @@
 title: Referenced Namespaces
 description: Referenced Namespaces
 ms.assetid: 4adb0979-1e97-4697-bd85-c808023ce43f
-keywords: ["WSDBIT tool WDK , namespaces", "WSDAPI Basic Interoperability Tool WDK , namespaces", "namespaces WDK WSDBIT", "DWPS WDK", "Device Profile for Web Services WDK"]
+keywords:
+- WSDBIT tool WDK , namespaces
+- WSDAPI Basic Interoperability Tool WDK , namespaces
+- namespaces WDK WSDBIT
+- DWPS WDK
+- Device Profile for Web Services WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Referenced Namespaces

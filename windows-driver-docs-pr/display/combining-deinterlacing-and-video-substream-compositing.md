@@ -2,7 +2,18 @@
 title: Combining Deinterlacing and Video Substream Compositing
 description: Combining Deinterlacing and Video Substream Compositing
 ms.assetid: d62fe460-104d-4aff-a88c-3dc5829321fa
-keywords: ["DeinterlaceBltEx", "deinterlacing WDK DirectX VA , combining substream compositing", "combining substream compositing WDK DirectX VA", "video substream compositing WDK DirectX VA", "substream compositing WDK DirectX VA", "VMR WDK DirectX VA"]
+keywords:
+- DeinterlaceBltEx
+- deinterlacing WDK DirectX VA , combining substream compositing
+- combining substream compositing WDK DirectX VA
+- video substream compositing WDK DirectX VA
+- substream compositing WDK DirectX VA
+- VMR WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Combining Deinterlacing and Video Substream Compositing

@@ -3,6 +3,11 @@ title: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
 author: windows-driver-content
 description: WIA Flatbed Scanner Compatibility for Windows XP and Windows Me
 ms.assetid: fc3424fa-3898-4f6a-a611-f81d97db8b1d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Flatbed Scanner Compatibility for Windows XP and Windows Me

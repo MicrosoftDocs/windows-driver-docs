@@ -2,7 +2,32 @@
 title: Multichannel Formats for Home-Theater Systems
 description: Multichannel Formats for Home-Theater Systems
 ms.assetid: b8bd1dc7-c9a8-4f4f-8014-d31f1ae5361a
-keywords: ["data formats WDK audio", "formats WDK audio , data", "audio data formats WDK", "formats WDK audio , multichannel", "multichannel formats WDK audio", "home-theater systems WDK audio", "speakers WDK audio , home-threater systems", "audio drivers WDK , home-theater systems", "WDM audio drivers WDK , home-theater systems", "7.1 home theater speakers WDK audio", "7.1 wide configuration speakers WDK audio", "wide configuration speakers WDK audio", "5.1 surround sound speakers WDK audio", "surround sound speakers", "Sony Dynamic Digital Sound", "SDDS configuration WDK audio", "stream formats WDK audio , multichannel", "positions WDK audio", "WDM audio data formats WDK", "data formats WDK audio , multichannel"]
+keywords:
+- data formats WDK audio
+- formats WDK audio , data
+- audio data formats WDK
+- formats WDK audio , multichannel
+- multichannel formats WDK audio
+- home-theater systems WDK audio
+- speakers WDK audio , home-threater systems
+- audio drivers WDK , home-theater systems
+- WDM audio drivers WDK , home-theater systems
+- 7.1 home theater speakers WDK audio
+- 7.1 wide configuration speakers WDK audio
+- wide configuration speakers WDK audio
+- 5.1 surround sound speakers WDK audio
+- surround sound speakers
+- Sony Dynamic Digital Sound
+- SDDS configuration WDK audio
+- stream formats WDK audio , multichannel
+- positions WDK audio
+- WDM audio data formats WDK
+- data formats WDK audio , multichannel
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multichannel Formats for Home-Theater Systems

@@ -2,7 +2,14 @@
 title: Example 4 Sequence Numbers
 description: Example 4 Sequence Numbers
 ms.assetid: 5b498267-c495-4a25-abb9-aa83a51559e1
-keywords: ["Tracefmt WDK , sequence numbers", "sequence numbers WDK Tracefmt"]
+keywords:
+- Tracefmt WDK , sequence numbers
+- sequence numbers WDK Tracefmt
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 4: Sequence Numbers

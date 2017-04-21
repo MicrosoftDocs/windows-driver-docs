@@ -3,7 +3,14 @@ title: Option Entry Format
 author: windows-driver-content
 description: Option Entry Format
 ms.assetid: defc035a-d571-4bf1-abeb-c7528ba23b81
-keywords: ["printer options WDK Unidrv , entry format", "formats WDK printer options"]
+keywords:
+- printer options WDK Unidrv , entry format
+- formats WDK printer options
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Entry Format

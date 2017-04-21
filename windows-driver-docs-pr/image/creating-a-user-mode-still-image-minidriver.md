@@ -3,6 +3,11 @@ title: Creating a User-Mode Still Image Minidriver
 author: windows-driver-content
 description: Creating a User-Mode Still Image Minidriver
 ms.assetid: 94fdbeba-5b4a-4b66-b381-ec362b6d38c9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a User-Mode Still Image Minidriver

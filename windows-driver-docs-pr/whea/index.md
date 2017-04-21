@@ -3,7 +3,19 @@ title: Windows Hardware Error Architecture (WHEA) design guide
 author: windows-driver-content
 description: Windows Hardware Error Architecture (WHEA) design guide
 ms.assetid: 7a42bacd-cafe-48e0-8568-402738fd6e7c
-keywords: ["Windows Hardware Error Architecture WDK", "WHEA WDK", "hardware errors WDK WHEA", "errors WDK WHEA", "detecting hardware errors WDK", "reporting hardware errors WDK", "recovering from hardware errors WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK
+- WHEA WDK
+- hardware errors WDK WHEA
+- errors WDK WHEA
+- detecting hardware errors WDK
+- reporting hardware errors WDK
+- recovering from hardware errors WDK WHEA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Hardware Error Architecture (WHEA) design guide

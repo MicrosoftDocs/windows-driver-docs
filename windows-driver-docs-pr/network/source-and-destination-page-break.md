@@ -2,7 +2,21 @@
 title: Source and Destination Page Break
 description: Source and Destination Page Break
 ms.assetid: 11e3c064-96e8-40b8-8824-e32a5ce637e4
-keywords: ["memory-to-memory data transfers WDK NetDMA , page breaks", "data transfers WDK NetDMA , page breaks", "transferring data WDK NetDMA , page breaks", "DMA transfers WDK NetDMA , page breaks", "NetDMA WDK networking , page breaks", "source page breaks WDK NetDMA", "destination page breaks WDK NetDMA", "page breaks WDK NetDMA", "NetDMA 2.0 WDK networking , page breaks"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , page breaks
+- data transfers WDK NetDMA , page breaks
+- transferring data WDK NetDMA , page breaks
+- DMA transfers WDK NetDMA , page breaks
+- NetDMA WDK networking , page breaks
+- source page breaks WDK NetDMA
+- destination page breaks WDK NetDMA
+- page breaks WDK NetDMA
+- NetDMA 2.0 WDK networking , page breaks
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Source and Destination Page Break

@@ -2,7 +2,14 @@
 title: The Lower Binding Interface for Virtual WiFi
 description: The Lower Binding Interface for Virtual WiFi
 ms.assetid: cf01a80e-07d7-496e-b36f-f8a8b29778cf
-keywords: ["Virtual WiFi in kernel mode WDK networking , lower binding interface", "Virtual WiFi in kernel mode WDK networking , vwifi lower binding interface"]
+keywords:
+- Virtual WiFi in kernel mode WDK networking , lower binding interface
+- Virtual WiFi in kernel mode WDK networking , vwifi lower binding interface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Lower Binding Interface for Virtual WiFi

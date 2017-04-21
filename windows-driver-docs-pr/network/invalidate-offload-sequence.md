@@ -2,7 +2,13 @@
 title: Invalidate Offload Sequence
 description: Invalidate Offload Sequence
 ms.assetid: 691bd23c-f006-4f86-9a44-e4a906820c91
-keywords: ["invalidating offloaded state WDK TCP chimney offload , sequence"]
+keywords:
+- invalidating offloaded state WDK TCP chimney offload , sequence
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Invalidate Offload Sequence

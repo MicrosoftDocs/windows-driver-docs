@@ -2,7 +2,16 @@
 title: Handling the Port Activation PnP Event
 description: Handling the Port Activation PnP Event
 ms.assetid: 433018bf-daf5-4ea1-be3f-63349558f6b7
-keywords: ["ports WDK NDIS , PnP event notifications", "NDIS ports WDK , PnP event notifications", "PnP event notifications WDK NDIS ports", "activation PnP events WDK NDIS ports"]
+keywords:
+- ports WDK NDIS , PnP event notifications
+- NDIS ports WDK , PnP event notifications
+- PnP event notifications WDK NDIS ports
+- activation PnP events WDK NDIS ports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the Port Activation PnP Event

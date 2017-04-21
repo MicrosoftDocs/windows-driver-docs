@@ -3,7 +3,14 @@ title: Property Page Plug-in
 author: windows-driver-content
 description: Property Page Plug-in
 ms.assetid: cf5f5861-1670-413c-9c42-c1b6eb6d719a
-keywords: ["Kernel Streaming Proxy WDK AVStream , property page", "property page WDK AVStream"]
+keywords:
+- Kernel Streaming Proxy WDK AVStream , property page
+- property page WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property Page Plug-in

@@ -2,13 +2,19 @@
 title: TraceView -parsepdb
 description: Use a TraceView -parsepdb command to create trace message format files from data in a PDB symbol file.
 ms.assetid: d193aa3c-17ee-4fcf-a4ee-afb50c78ec54
-keywords: ["TraceView -parsepdb Driver Development Tools"]
+keywords:
+- TraceView -parsepdb Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - TraceView -parsepdb
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TraceView -parsepdb

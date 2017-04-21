@@ -3,7 +3,18 @@ title: Determining the State of a UMDF Device
 author: windows-driver-content
 description: This topic describes how you can use debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 or 2 driver to determine what state your UMDF device is in.
 ms.assetid: ed1a4429-4f36-44b9-9564-587aa381342f
-keywords: ["UMDF WDK , UMDF device state", "UMDF WDK , device state", "user-mode debuggers WDK UMDF , determining the UMDF device state", "kernel-mode debuggers WDK UMDF , determining the UMDF device state", "debugging scenarios WDK UMDF , UMDF device state", "UMDF WDK , debugging scenarios, UMDF device state"]
+keywords:
+- UMDF WDK , UMDF device state
+- UMDF WDK , device state
+- user-mode debuggers WDK UMDF , determining the UMDF device state
+- kernel-mode debuggers WDK UMDF , determining the UMDF device state
+- debugging scenarios WDK UMDF , UMDF device state
+- UMDF WDK , debugging scenarios, UMDF device state
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining the State of a UMDF Device

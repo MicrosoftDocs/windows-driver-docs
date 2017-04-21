@@ -3,6 +3,11 @@ title: New sensor features and improvements for Windows 8.1
 author: windows-driver-content
 description: This topic summarizes the new features and improvements for Sensors in WindowsWindows 8.1.
 ms.assetid: F52BC6D1-DF67-4DE7-BEEC-D18C2A90B4CF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # New sensor features and improvements for Windows 8.1

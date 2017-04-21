@@ -3,7 +3,14 @@ title: Semantic Model Checks
 author: windows-driver-content
 description: Semantic Model Checks
 ms.assetid: 7e050067-1f90-4088-a1d9-63d03af81b2d
-keywords: ["semantic model checks WDK file systems", "semantic model checks WDK file systems , about semantic model checks"]
+keywords:
+- semantic model checks WDK file systems
+- semantic model checks WDK file systems , about semantic model checks
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Semantic Model Checks

@@ -2,6 +2,11 @@
 title: Remote NDIS Data Message
 description: Remote NDIS Data Message
 ms.assetid: 04260f0b-b344-4a31-8978-828a4a4661a5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote NDIS Data Message

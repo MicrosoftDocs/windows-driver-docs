@@ -2,7 +2,20 @@
 title: SetupAPI Text Logs
 description: SetupAPI Text Logs
 ms.assetid: db2460f3-b716-4687-9b07-2047f74332d8
-keywords: ["text logs WDK SetupAPI", "device installation text logs WDK", "application installation text logs WDK", "log entries WDK SetupAPI", "text log headers WDK SetupAPI", "text log sections WDK SetupAPI", "SetupAPI logging WDK Windows Vista , text logs", "text logs WDK SetupAPI , about text logs"]
+keywords:
+- text logs WDK SetupAPI
+- device installation text logs WDK
+- application installation text logs WDK
+- log entries WDK SetupAPI
+- text log headers WDK SetupAPI
+- text log sections WDK SetupAPI
+- SetupAPI logging WDK Windows Vista , text logs
+- text logs WDK SetupAPI , about text logs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SetupAPI Text Logs

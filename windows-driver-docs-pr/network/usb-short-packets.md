@@ -2,7 +2,13 @@
 title: USB Short Packets
 description: USB Short Packets
 ms.assetid: e59476cf-754e-4550-849f-3aa645defe09
-keywords: ["USB short packets WDK networking"]
+keywords:
+- USB short packets WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Short Packets

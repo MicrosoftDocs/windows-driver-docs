@@ -3,7 +3,16 @@ title: Differences from Previous Versions of Microsoft Windows
 author: windows-driver-content
 description: Differences from Previous Versions of Microsoft Windows
 ms.assetid: 9c30c5c6-27a7-424e-b5f0-ab625eed4b8a
-keywords: ["Windows Hardware Error Architecture WDK , earlier Windows versions", "WHEA WDK , comparison with earlier Windows versions", "hardware errors WDK WHEA , earlier Windows versions", "errors WDK WHEA , earlier Windows versions"]
+keywords:
+- Windows Hardware Error Architecture WDK , earlier Windows versions
+- WHEA WDK , comparison with earlier Windows versions
+- hardware errors WDK WHEA , earlier Windows versions
+- errors WDK WHEA , earlier Windows versions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Differences from Previous Versions of Microsoft Windows

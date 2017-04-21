@@ -2,7 +2,22 @@
 title: MIDI and DirectMusic Filters
 description: MIDI and DirectMusic Filters
 ms.assetid: 622aa4ae-c855-4088-bc1a-30dff7a24d23
-keywords: ["audio filters WDK audio , MIDI", "audio filters WDK audio , DirectMusic", "DirectMusic WDK audio , filters", "MIDI filters WDK audio", "enumerating audio devices WDK", "system-supplied miniport drivers WDK audio", "system-supplied port drivers WDK audio", "synthesizers WDK audio , filters", "filters WDK audio , MIDI", "filters WDK audio , DirectMusic"]
+keywords:
+- audio filters WDK audio , MIDI
+- audio filters WDK audio , DirectMusic
+- DirectMusic WDK audio , filters
+- MIDI filters WDK audio
+- enumerating audio devices WDK
+- system-supplied miniport drivers WDK audio
+- system-supplied port drivers WDK audio
+- synthesizers WDK audio , filters
+- filters WDK audio , MIDI
+- filters WDK audio , DirectMusic
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MIDI and DirectMusic Filters

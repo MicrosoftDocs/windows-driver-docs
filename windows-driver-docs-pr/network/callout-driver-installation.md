@@ -2,6 +2,11 @@
 title: Callout Driver Installation
 description: Callout Driver Installation
 ms.assetid: 5288918b-316b-46a0-bc68-74cca0c7599c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Callout Driver Installation

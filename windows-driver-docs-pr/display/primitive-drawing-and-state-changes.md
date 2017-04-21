@@ -2,7 +2,17 @@
 title: Primitive Drawing and State Changes
 description: Primitive Drawing and State Changes
 ms.assetid: 01eba14d-234e-48f5-9116-47760dfdae0e
-keywords: ["Direct3D WDK Windows 2000 display , primitive drawing", "Direct3D WDK Windows 2000 display , state changes", "states WDK Direct3D", "primitive drawing WDK Direct3D", "D3dDrawPrimitives2"]
+keywords:
+- Direct3D WDK Windows 2000 display , primitive drawing
+- Direct3D WDK Windows 2000 display , state changes
+- states WDK Direct3D
+- primitive drawing WDK Direct3D
+- D3dDrawPrimitives2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Primitive Drawing and State Changes

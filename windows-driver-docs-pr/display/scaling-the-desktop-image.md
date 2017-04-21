@@ -2,7 +2,20 @@
 title: Scaling the Desktop Image
 description: Scaling the Desktop Image
 ms.assetid: e27c7510-45b0-46e6-878f-b901cdd1cd57
-keywords: ["connecting displays WDK Windows 7 display , CCD concepts, scaling the desktop image", "connecting displays WDK Windows Server 2008 R2 display , CCD concepts, scaling the desktop image", "configuring displays WDK Windows 7 display , CCD concepts, scaling the desktop image", "configuring displays WDK Windows Server 2008 R2 display , CCD concepts, scaling the desktop image", "CCD concepts WDK Windows 7 display , scaling the desktop image", "CCD concepts WDK Windows Server 2008 R2 display , scaling the desktop image", "scaling the desktop image WDK Windows 7 display", "scaling the desktop image WDK Windows Server 2008 R2 display"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD concepts, scaling the desktop image
+- connecting displays WDK Windows Server 2008 R2 display , CCD concepts, scaling the desktop image
+- configuring displays WDK Windows 7 display , CCD concepts, scaling the desktop image
+- configuring displays WDK Windows Server 2008 R2 display , CCD concepts, scaling the desktop image
+- CCD concepts WDK Windows 7 display , scaling the desktop image
+- CCD concepts WDK Windows Server 2008 R2 display , scaling the desktop image
+- scaling the desktop image WDK Windows 7 display
+- scaling the desktop image WDK Windows Server 2008 R2 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scaling the Desktop Image

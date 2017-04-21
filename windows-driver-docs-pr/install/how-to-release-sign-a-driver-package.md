@@ -2,7 +2,21 @@
 title: How to Release-Sign a Driver Package
 description: How to Release-Sign a Driver Package
 ms.assetid: f02c0a50-01f1-456c-b432-c4d9e8cbc566
-keywords: ["release-signing drivers WDK", "driver signing WDK , release-signing packages", "signing drivers WDK , release-signing packages", "digital signatures WDK , release-signing driver packages", "signatures WDK , release-signing driver packages", "release-signing drivers WDK", "release-signing drivers WDK , driver packages", "release-signing driver packages WDK", "release-signing driver packages WDK , about test signing driver packages"]
+keywords:
+- release-signing drivers WDK
+- driver signing WDK , release-signing packages
+- signing drivers WDK , release-signing packages
+- digital signatures WDK , release-signing driver packages
+- signatures WDK , release-signing driver packages
+- release-signing drivers WDK
+- release-signing drivers WDK , driver packages
+- release-signing driver packages WDK
+- release-signing driver packages WDK , about test signing driver packages
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to Release-Sign a Driver Package

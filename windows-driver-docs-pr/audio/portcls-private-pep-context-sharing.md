@@ -2,6 +2,11 @@
 title: PortCls Private PEP Context Sharing
 description: Starting with Windows 8, a miniport driver can use IPortClsRuntimePower, a new interface, for private context sharing with the Windows Power Engine Plug-in (PEP).
 ms.assetid: 27A0DD72-8AD0-4F38-B17C-9BDD63C5E7E1
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PortCls Private PEP Context Sharing

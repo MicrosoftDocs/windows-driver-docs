@@ -2,7 +2,18 @@
 title: Locking Swizzled Allocations
 description: Locking Swizzled Allocations
 ms.assetid: c9be52d9-36b2-4a0f-9629-01b31293af38
-keywords: ["swizzled allocation locking WDK display", "locking swizzled allocations WDK display", "unswizzled allocations WDK display", "memory segments WDK display , locking swizzled allocations", "allocation swizzle locks WDK display", "evicted allocations WDK display"]
+keywords:
+- swizzled allocation locking WDK display
+- locking swizzled allocations WDK display
+- unswizzled allocations WDK display
+- memory segments WDK display , locking swizzled allocations
+- allocation swizzle locks WDK display
+- evicted allocations WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Locking Swizzled Allocations

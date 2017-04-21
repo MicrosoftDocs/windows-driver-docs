@@ -2,6 +2,11 @@
 ms.assetid: 9F1E79FF-D38E-484A-8AEB-FC9A105BF709
 title: How to create a custom driver installation script
 description: If your deployment scenario requires more than installing the driver package on the test computers, you can choose to run your own custom command scripts upon installation.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to create a custom driver installation script

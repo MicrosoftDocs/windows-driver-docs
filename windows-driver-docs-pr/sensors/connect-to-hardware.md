@@ -3,6 +3,11 @@ title: Connect to hardware
 author: windows-driver-content
 description: This topic shows you how the sensor driver determines the assigned hardware resources, then connects to the I2C driver controller so that it can connect to the ADXL345 hardware.
 ms.assetid: 88D9162B-2B99-4608-B31A-48B1810747A9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connect to hardware

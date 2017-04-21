@@ -2,7 +2,16 @@
 title: Enhanced Storage Certificate Management Tool
 description: Enhanced Storage Certificate Management Tool
 ms.assetid: 8a016e26-cd42-483c-b04a-3a9b8b0d909e
-keywords: ["driver testing WDK , Enhanced Storage Certificate Management tool", "testing drivers WDK , Enhanced Storage Certificate Management tool", "EhStorCertMgrCmd.exe", "driver testing tools WDK , EhStorCertMgrCmd.exe"]
+keywords:
+- driver testing WDK , Enhanced Storage Certificate Management tool
+- testing drivers WDK , Enhanced Storage Certificate Management tool
+- EhStorCertMgrCmd.exe
+- driver testing tools WDK , EhStorCertMgrCmd.exe
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enhanced Storage Certificate Management Tool

@@ -2,6 +2,11 @@
 title: Power Management (NDIS 6.30)
 description: Power Management (NDIS 6.30)
 ms.assetid: 2A7F6BD2-6C2F-4B28-92BD-29DC4928624A
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Management (NDIS 6.30)

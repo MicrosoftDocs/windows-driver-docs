@@ -2,7 +2,14 @@
 title: C28135
 description: Warning C28135 If the first argument to KeWaitForSingleObject is a local variable, the Mode parameter must be KernelMode.
 ms.assetid: f42e41d7-240f-4de1-97b7-e50415aee14f
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28135

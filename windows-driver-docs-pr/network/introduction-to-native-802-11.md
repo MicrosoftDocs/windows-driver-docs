@@ -2,7 +2,15 @@
 title: Introduction to Native 802.11
 description: Introduction to Native 802.11
 ms.assetid: 8a8f15fe-af9a-484f-80a1-39a60738215a
-keywords: ["Native 802.11 WDK networking , about Native 802.11", "wireless LAN networks WDK , Native 802.11 overview", "WLAN networks WDK , Native 802.11 overview"]
+keywords:
+- Native 802.11 WDK networking , about Native 802.11
+- wireless LAN networks WDK , Native 802.11 overview
+- WLAN networks WDK , Native 802.11 overview
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Native 802.11

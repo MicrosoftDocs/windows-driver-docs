@@ -3,6 +3,11 @@ title: IStiDeviceControl COM Interface
 author: windows-driver-content
 description: IStiDeviceControl COM Interface
 ms.assetid: 6d98f5d7-c471-4abb-8e69-dbac3d336c2f
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IStiDeviceControl COM Interface

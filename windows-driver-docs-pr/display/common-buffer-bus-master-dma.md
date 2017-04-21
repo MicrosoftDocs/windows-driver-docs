@@ -2,7 +2,15 @@
 title: Common-Buffer Bus-Master DMA
 description: Common-Buffer Bus-Master DMA
 ms.assetid: 4758e084-1d9e-4e17-8627-05edc6b664ba
-keywords: ["bus-master DMA WDK video miniport , common buffer", "DMA bus-master WDK video miniport , common buffer", "common-buffer DMA WDK video miniport , description"]
+keywords:
+- bus-master DMA WDK video miniport , common buffer
+- DMA bus-master WDK video miniport , common buffer
+- common-buffer DMA WDK video miniport , description
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Common-Buffer Bus-Master DMA

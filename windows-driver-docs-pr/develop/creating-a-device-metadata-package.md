@@ -2,6 +2,11 @@
 ms.assetid: 25C21110-8B26-4F2B-A125-CF827EC8CAB9
 title: Creating a Device Metadata Package
 description: .
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Device Metadata Package

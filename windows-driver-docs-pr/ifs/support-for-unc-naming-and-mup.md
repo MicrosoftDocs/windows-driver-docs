@@ -3,7 +3,22 @@ title: Support for UNC Naming and MUP
 author: windows-driver-content
 description: Support for UNC Naming and MUP
 ms.assetid: 07c4a498-10c7-41b2-aaeb-73cab946f392
-keywords: ["kernel network redirectors WDK , UNC naming", "kernel network redirectors WDK , MUP", "MUP WDK network redirectors", "multiple UNC provider WDK network redirectors", "UNC WDK network redirectors", "names WDK file systems", "prefix resolution WDK network redirectors", "prefix cache WDK network redirectors", "serial prefix resolution WDK network redirectors", "parallel prefix resolution WDK network redirectors"]
+keywords:
+- kernel network redirectors WDK , UNC naming
+- kernel network redirectors WDK , MUP
+- MUP WDK network redirectors
+- multiple UNC provider WDK network redirectors
+- UNC WDK network redirectors
+- names WDK file systems
+- prefix resolution WDK network redirectors
+- prefix cache WDK network redirectors
+- serial prefix resolution WDK network redirectors
+- parallel prefix resolution WDK network redirectors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Support for UNC Naming and MUP

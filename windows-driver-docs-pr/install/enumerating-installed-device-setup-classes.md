@@ -2,7 +2,16 @@
 title: Enumerating Installed Device Setup Classes
 description: Enumerating Installed Device Setup Classes
 ms.assetid: 24F7600B-AA61-484a-83E9-E4C3FD2EAF17
-keywords: ["enumerating installed device setup classes WDK", "installed device setup classes WDK", "installed device setup classes WDK , enumerating", "device setup classes WDK device installations , enumerating"]
+keywords:
+- enumerating installed device setup classes WDK
+- installed device setup classes WDK
+- installed device setup classes WDK , enumerating
+- device setup classes WDK device installations , enumerating
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Installed Device Setup Classes

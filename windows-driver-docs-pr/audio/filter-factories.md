@@ -2,7 +2,19 @@
 title: Filter Factories
 description: Filter Factories
 ms.assetid: e836f941-274f-4e27-8069-753ef9ef2a06
-keywords: ["audio filters WDK audio , filter factories", "filter factories WDK audio", "filters WDK audio , factories", "KS filters WDK audio , filter factories", "audio jacks WDK", "speakers WDK audio , filter factories", "instantiating filters WDK audio"]
+keywords:
+- audio filters WDK audio , filter factories
+- filter factories WDK audio
+- filters WDK audio , factories
+- KS filters WDK audio , filter factories
+- audio jacks WDK
+- speakers WDK audio , filter factories
+- instantiating filters WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Factories

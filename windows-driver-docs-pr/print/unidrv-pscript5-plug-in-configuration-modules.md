@@ -3,7 +3,18 @@ title: Unidrv/PScript5 Plug-in Configuration Modules
 author: windows-driver-content
 description: Unidrv/PScript5 Plug-in Configuration Modules
 ms.assetid: 806175ba-18a9-48f3-8f50-06e794d1f304
-keywords: ["Version 3 XPS drivers WDK XPSDrv , Unidrv plug-in", "Version 3 XPS drivers WDK XPSDrv , PScript5 plug-in", "IPrintCoreHelper", "Pscript WDK print , XPSDrv print drivers", "Unidrv, XPSDrv print drivers", "Unidrv WDK print"]
+keywords:
+- Version 3 XPS drivers WDK XPSDrv , Unidrv plug-in
+- Version 3 XPS drivers WDK XPSDrv , PScript5 plug-in
+- IPrintCoreHelper
+- Pscript WDK print , XPSDrv print drivers
+- Unidrv, XPSDrv print drivers
+- Unidrv WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unidrv/PScript5 Plug-in Configuration Modules

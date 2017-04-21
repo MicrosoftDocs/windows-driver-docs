@@ -2,7 +2,19 @@
 title: Identifying Backup Files for Existing Boot Entries
 description: Identifying Backup Files for Existing Boot Entries
 ms.assetid: 8f7e13b4-32f9-4b54-a8ab-db8148434ae8
-keywords: ["NVRAM boot options WDK , backup file searches", "EFI NVRAM boot options WDK , backup file searches", "searches WDK boot options", "locating boot entry backups WDK", "existing boot entry searches WDK", "boot entry backups WDK", "identifying backup files for boot entries"]
+keywords:
+- NVRAM boot options WDK , backup file searches
+- EFI NVRAM boot options WDK , backup file searches
+- searches WDK boot options
+- locating boot entry backups WDK
+- existing boot entry searches WDK
+- boot entry backups WDK
+- identifying backup files for boot entries
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifying Backup Files for Existing Boot Entries

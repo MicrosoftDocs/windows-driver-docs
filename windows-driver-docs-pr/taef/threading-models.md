@@ -2,6 +2,11 @@
 title: Threading Models
 description: Threading Models
 ms.assetid: 3BB0C01B-D82B-45dd-8AC8-EA2E2811CD24
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Threading Models

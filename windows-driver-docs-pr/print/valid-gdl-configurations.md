@@ -3,7 +3,16 @@ title: Valid GDL Configurations
 author: windows-driver-content
 description: Valid GDL Configurations
 ms.assetid: 68dbe7f7-4f6d-46e5-b2f1-27b123c4bedb
-keywords: ["GDL WDK , configurations", "parser WDK GDL , validating configurations", "configurations WDK GDL , valid configurations", "validating GDL configurations WDK"]
+keywords:
+- GDL WDK , configurations
+- parser WDK GDL , validating configurations
+- configurations WDK GDL , valid configurations
+- validating GDL configurations WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Valid GDL Configurations

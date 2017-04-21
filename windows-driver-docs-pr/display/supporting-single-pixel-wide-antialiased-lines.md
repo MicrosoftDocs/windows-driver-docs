@@ -2,7 +2,16 @@
 title: Supporting Single-Pixel-Wide Antialiased Lines
 description: Supporting Single-Pixel-Wide Antialiased Lines
 ms.assetid: f1e0df18-25d8-4ebd-b920-5cfbe5acf096
-keywords: ["single-pixel-wide lines WDK DirectX 9.0", "alias single-pixel-wide lines WDK DirectX 9.0", "antialias single-pixel-wide lines WDK DirectX 9.0", "line antialiasing WDK DirectX 9.0"]
+keywords:
+- single-pixel-wide lines WDK DirectX 9.0
+- alias single-pixel-wide lines WDK DirectX 9.0
+- antialias single-pixel-wide lines WDK DirectX 9.0
+- line antialiasing WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Single-Pixel-Wide Antialiased Lines

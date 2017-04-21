@@ -2,7 +2,15 @@
 title: Cross-Platform INF Files
 description: Cross-Platform INF Files
 ms.assetid: 5f7e80d2-b8b5-4ce9-9e70-cacc51223deb
-keywords: ["cross-platform INF files WDK", "INF files WDK device installations , cross-platform", "operating systems WDK , cross-operating system INF files"]
+keywords:
+- cross-platform INF files WDK
+- INF files WDK device installations , cross-platform
+- operating systems WDK , cross-operating system INF files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cross-Platform INF Files

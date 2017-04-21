@@ -2,6 +2,11 @@
 title: Friendly Names for Audio Endpoint Devices
 description: Friendly Names for Audio Endpoint Devices
 ms.assetid: e0937d20-dd5b-453f-99f6-4e501f0f0e5b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Friendly Names for Audio Endpoint Devices

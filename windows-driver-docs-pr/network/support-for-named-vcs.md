@@ -2,7 +2,18 @@
 title: Support for Named VCs
 description: Support for Named VCs
 ms.assetid: 797f737c-91e7-410b-91d5-5575d5b19e86
-keywords: ["WMI WDK networking , virtual connections", "call managers WDK networking , naming virtual connections", "virtual connections WDK NDIS WMI", "VCs WDK NDIS WMI", "miniport call managers WDK networking , naming virtual connections", "MCMs WDK networking , namin"]
+keywords:
+- WMI WDK networking , virtual connections
+- call managers WDK networking , naming virtual connections
+- virtual connections WDK NDIS WMI
+- VCs WDK NDIS WMI
+- miniport call managers WDK networking , naming virtual connections
+- MCMs WDK networking , namin
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Support for Named VCs

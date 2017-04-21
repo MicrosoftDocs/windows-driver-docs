@@ -2,7 +2,13 @@
 title: Receiving Data in an Intermediate Driver
 description: Receiving Data in an Intermediate Driver
 ms.assetid: 0fe3d8d0-565d-453d-b51e-9383a1dfcf1d
-keywords: ["receive operations WDK NDIS intermediate"]
+keywords:
+- receive operations WDK NDIS intermediate
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving Data in an Intermediate Driver

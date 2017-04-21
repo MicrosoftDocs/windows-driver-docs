@@ -3,7 +3,14 @@ title: System Header Files for Storage Drivers
 author: windows-driver-content
 description: System Header Files for Storage Drivers
 ms.assetid: 2ee83fa4-41df-403e-86b8-b269f5dfbfed
-keywords: ["storage drivers WDK , system header files", "header files WDK storage"]
+keywords:
+- storage drivers WDK , system header files
+- header files WDK storage
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System Header Files for Storage Drivers

@@ -3,6 +3,11 @@ title: Device Experience in Devices and Printers
 author: windows-driver-content
 description: Device Experience in Devices and Printers
 ms.assetid: 95c5ce1d-8a38-4d88-bea2-e6728f83f010
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Experience in Devices and Printers

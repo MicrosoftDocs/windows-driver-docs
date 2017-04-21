@@ -2,6 +2,11 @@
 title: MB Raw IP Packet Processing Support
 description: MB Raw IP Packet Processing Support
 ms.assetid: 1c3327fa-1858-4247-9a18-b49d26e9a095
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB Raw IP Packet Processing Support

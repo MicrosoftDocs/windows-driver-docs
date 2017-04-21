@@ -1,6 +1,11 @@
 ---
 Description: This topics in this section describe the class drivers, generic client driver, and the parent composite driver that are provided by Microsoft.
 title: Microsoft-provided USB drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microsoft-provided USB drivers

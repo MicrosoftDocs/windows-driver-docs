@@ -3,7 +3,13 @@ title: Physical Configuration of Parallel Ports
 author: windows-driver-content
 description: Physical Configuration of Parallel Ports
 ms.assetid: 4009a03b-35c3-41d7-892b-3abda8791d73
-keywords: ["parallel ports WDK , port configurations"]
+keywords:
+- parallel ports WDK , port configurations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Physical Configuration of Parallel Ports

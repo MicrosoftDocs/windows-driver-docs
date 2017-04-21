@@ -2,7 +2,16 @@
 title: Linking to the NDIS Library
 description: Linking to the NDIS Library
 ms.assetid: eac33c9e-ff70-4a6c-b391-833a81faa079
-keywords: ["NDIS.sys WDK networking", "NDIS library WDK networking", "linking NDIS library WDK networking", "library WDK NDIS"]
+keywords:
+- NDIS.sys WDK networking
+- NDIS library WDK networking
+- linking NDIS library WDK networking
+- library WDK NDIS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Linking to the NDIS Library

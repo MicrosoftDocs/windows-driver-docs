@@ -2,7 +2,16 @@
 title: WavePci Port Driver
 description: WavePci Port Driver
 ms.assetid: 3b4a89d0-f07a-40e1-8c67-62d9cfd96ddd
-keywords: ["WavePci port driver WDK audio", "PortCls WDK audio , port drivers", "audio miniport drivers WDK , port drivers", "miniport drivers WDK audio , port drivers"]
+keywords:
+- WavePci port driver WDK audio
+- PortCls WDK audio , port drivers
+- audio miniport drivers WDK , port drivers
+- miniport drivers WDK audio , port drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WavePci Port Driver

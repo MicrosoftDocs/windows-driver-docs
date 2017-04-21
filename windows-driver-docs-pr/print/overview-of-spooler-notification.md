@@ -3,7 +3,17 @@ title: Overview of Spooler Notification
 author: windows-driver-content
 description: Overview of Spooler Notification
 ms.assetid: 1d0c9130-eeb8-4a7b-8be4-5b434413c870
-keywords: ["spooler notification WDK print , about spooler notification", "print spooler notification WDK , about spooler notification", "bidirectional channels WDK spooler notification", "unidirectional channels WDK spooler notification", "data channels WDK spooler notification"]
+keywords:
+- spooler notification WDK print , about spooler notification
+- print spooler notification WDK , about spooler notification
+- bidirectional channels WDK spooler notification
+- unidirectional channels WDK spooler notification
+- data channels WDK spooler notification
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Spooler Notification

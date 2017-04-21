@@ -3,7 +3,14 @@ title: Sample Printer Graphics DLL
 author: windows-driver-content
 description: Sample Printer Graphics DLL
 ms.assetid: d113159a-766e-44c3-a1b1-2975e803d7e2
-keywords: ["printer graphics DLL WDK , samples", "graphics DLL WDK printer , samples"]
+keywords:
+- printer graphics DLL WDK , samples
+- graphics DLL WDK printer , samples
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Printer Graphics DLL

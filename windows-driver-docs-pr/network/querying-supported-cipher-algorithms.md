@@ -2,7 +2,15 @@
 title: Querying Supported Cipher Algorithms
 description: Querying Supported Cipher Algorithms
 ms.assetid: 37f533f1-e3a8-4b61-bee3-f54be3a5a9a8
-keywords: ["cipher operations WDK Native 802.11 , cipher algorithms", "algorithms WDK Native 802.11 cipher", "querying cipher algorithms"]
+keywords:
+- cipher operations WDK Native 802.11 , cipher algorithms
+- algorithms WDK Native 802.11 cipher
+- querying cipher algorithms
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying Supported Cipher Algorithms

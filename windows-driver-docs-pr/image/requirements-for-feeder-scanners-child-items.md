@@ -3,6 +3,11 @@ title: Requirements for Feeder Scanners Child Items
 author: windows-driver-content
 description: Requirements for Feeder Scanners Child Items
 ms.assetid: 069ce228-ac73-42b5-9f1b-528ee6fe6a92
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requirements for Feeder Scanners Child Items

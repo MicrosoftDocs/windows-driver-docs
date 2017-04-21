@@ -2,7 +2,27 @@
 title: Memory Configurations
 description: Memory Configurations
 ms.assetid: e3341854-13ce-4028-ad75-49e8189ac0f7
-keywords: ["stride WDK DirectDraw", "pitch WDK DirectDraw", "offsets WDK DirectDraw", "drawing memory WDK DirectDraw , heaps", "DirectDraw memory WDK Windows 2000 display , heaps", "memory WDK DirectDraw , heaps", "display memory WDK DirectDraw , heaps", "heaps WDK DirectDraw", "allocating memory heaps", "VIDEOMEMORY", "surfaces WDK DirectDraw , memory heap allocation", "drawing memory WDK DirectDraw , configuration options", "DirectDraw memory WDK Windows 2000 display , configuration options", "memory WDK DirectDraw , configuration options", "display memory WDK DirectDraw , configuration options"]
+keywords:
+- stride WDK DirectDraw
+- pitch WDK DirectDraw
+- offsets WDK DirectDraw
+- drawing memory WDK DirectDraw , heaps
+- DirectDraw memory WDK Windows 2000 display , heaps
+- memory WDK DirectDraw , heaps
+- display memory WDK DirectDraw , heaps
+- heaps WDK DirectDraw
+- allocating memory heaps
+- VIDEOMEMORY
+- surfaces WDK DirectDraw , memory heap allocation
+- drawing memory WDK DirectDraw , configuration options
+- DirectDraw memory WDK Windows 2000 display , configuration options
+- memory WDK DirectDraw , configuration options
+- display memory WDK DirectDraw , configuration options
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Memory Configurations

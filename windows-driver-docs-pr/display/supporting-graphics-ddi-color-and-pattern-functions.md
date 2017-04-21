@@ -2,6 +2,11 @@
 title: Supporting Graphics DDI Color and Pattern Functions
 description: Supporting Graphics DDI Color and Pattern Functions
 ms.assetid: fb6f15e0-2111-433d-b7e0-74fdf116c559
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Graphics DDI Color and Pattern Functions

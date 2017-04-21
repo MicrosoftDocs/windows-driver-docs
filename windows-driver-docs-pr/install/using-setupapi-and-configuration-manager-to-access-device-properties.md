@@ -2,6 +2,11 @@
 title: Using SetupAPI and Configuration Manager with Device Properties
 description: Using SetupAPI and Configuration Manager to Access Device Properties
 ms.assetid: ec00d9c0-1355-478b-af48-0b589628e2d5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using SetupAPI and Configuration Manager to Access Device Properties

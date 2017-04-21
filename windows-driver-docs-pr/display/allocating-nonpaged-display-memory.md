@@ -2,7 +2,13 @@
 title: Allocating Nonpaged Display Memory
 description: Allocating Nonpaged Display Memory
 ms.assetid: 6a8523e7-3955-4289-b131-52556ba3e631
-keywords: ["nonpaged display memory WDK DirectX 9.0"]
+keywords:
+- nonpaged display memory WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Nonpaged Display Memory

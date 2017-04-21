@@ -2,7 +2,22 @@
 title: Requirements and Limitations
 description: Requirements and Limitations
 ms.assetid: 94ca8f45-7f04-47b6-ae23-d9217f6dc648
-keywords: ["Perl scripts WDK INF files", "ChkINF", "INF File Syntax Checker", "INF files WDK , syntax checker", "syntax checker WDK INF files", "verifying INF files", "checking INF files", "scripts WDK ChkINF", "ChkINF WDK , requirements", "ChkINF WDK , limitations"]
+keywords:
+- Perl scripts WDK INF files
+- ChkINF
+- INF File Syntax Checker
+- INF files WDK , syntax checker
+- syntax checker WDK INF files
+- verifying INF files
+- checking INF files
+- scripts WDK ChkINF
+- ChkINF WDK , requirements
+- ChkINF WDK , limitations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requirements and Limitations

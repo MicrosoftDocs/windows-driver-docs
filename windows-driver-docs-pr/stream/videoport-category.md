@@ -3,7 +3,16 @@ title: Videoport Category
 author: windows-driver-content
 description: Videoport Category
 ms.assetid: c11a407f-4ff0-4337-b989-e3ec42418ec3
-keywords: ["stream categories WDK video capture , videoport", "videoport category WDK video capture", "video port category WDK video capture", "PINNAME_VIDEO_VIDEOPORT"]
+keywords:
+- stream categories WDK video capture , videoport
+- videoport category WDK video capture
+- video port category WDK video capture
+- PINNAME_VIDEO_VIDEOPORT
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Videoport Category

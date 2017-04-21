@@ -2,7 +2,15 @@
 title: Spin Locks in Video Miniport Drivers
 description: Spin Locks in Video Miniport Drivers
 ms.assetid: 89ec0139-c109-44b1-aadd-a909a19ca1ee
-keywords: ["video miniport drivers WDK Windows 2000 , spin locks", "spin locks WDK video miniport", "locking WDK video miniport"]
+keywords:
+- video miniport drivers WDK Windows 2000 , spin locks
+- spin locks WDK video miniport
+- locking WDK video miniport
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Spin Locks in Video Miniport Drivers

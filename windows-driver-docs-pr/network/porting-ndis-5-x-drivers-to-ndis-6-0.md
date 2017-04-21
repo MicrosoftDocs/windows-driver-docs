@@ -2,7 +2,18 @@
 title: Porting NDIS 5.x Drivers to NDIS 6.0
 description: Porting NDIS 5.x Drivers to NDIS 6.0
 ms.assetid: ecede980-a8e9-45cf-ae70-e416f1f7af5d
-keywords: ["network drivers WDK , NDIS", "network drivers WDK , porting drivers", "NDIS porting drivers WDK , about porting drivers", "porting drivers WDK networking , about porting drivers", "network driver porting WDK , about porting drivers", "driver porting WDK networ"]
+keywords:
+- network drivers WDK , NDIS
+- network drivers WDK , porting drivers
+- NDIS porting drivers WDK , about porting drivers
+- porting drivers WDK networking , about porting drivers
+- network driver porting WDK , about porting drivers
+- driver porting WDK networ
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting NDIS 5.x Drivers to NDIS 6.0

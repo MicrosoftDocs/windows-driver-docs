@@ -3,7 +3,16 @@ title: GDL Arbitrary Value Contexts
 author: windows-driver-content
 description: GDL Arbitrary Value Contexts
 ms.assetid: 6de79b2b-5f0f-4d6c-8a95-d9ef2266c2ef
-keywords: ["GDL WDK , contexts", "contexts WDK GDL , arbitrary value contexts", "arbitrary value contexts WDK GDL", "values WDK GDL , contexts"]
+keywords:
+- GDL WDK , contexts
+- contexts WDK GDL , arbitrary value contexts
+- arbitrary value contexts WDK GDL
+- values WDK GDL , contexts
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Arbitrary Value Contexts

@@ -3,7 +3,16 @@ title: Completing I/O Requests
 author: windows-driver-content
 description: Completing I/O Requests
 ms.assetid: ec5aef7a-110e-430c-902d-669ccc7095ac
-keywords: ["I/O requests WDK KMDF , completing", "completing I/O requests WDK KMDF", "request processing WDK KMDF , completing requests", "status information WDK KMDF , completing I/O requests"]
+keywords:
+- I/O requests WDK KMDF , completing
+- completing I/O requests WDK KMDF
+- request processing WDK KMDF , completing requests
+- status information WDK KMDF , completing I/O requests
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Completing I/O Requests

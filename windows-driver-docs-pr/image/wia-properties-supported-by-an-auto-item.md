@@ -3,6 +3,11 @@ title: WIA Properties Supported by an Auto Item
 author: windows-driver-content
 description: WIA Properties Supported by an Auto Item
 ms.assetid: 71b3a9ea-e402-4be8-9c62-9463e2a10f27
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Properties Supported by an Auto Item

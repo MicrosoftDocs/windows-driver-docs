@@ -2,6 +2,11 @@
 title: PNPCPU Typical Session
 description: PNPCPU Typical Session
 ms.assetid: d0c1b6aa-fe23-4d01-aecf-897aba3672c9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PNPCPU Typical Session

@@ -2,7 +2,14 @@
 title: Windows Sockets Direct Component Operation
 description: Windows Sockets Direct Component Operation
 ms.assetid: 6fa4a89c-f147-48bd-8fdc-562743f81bcd
-keywords: ["Windows Sockets Direct WDK , operations", "SAN service providers WDK"]
+keywords:
+- Windows Sockets Direct WDK , operations
+- SAN service providers WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Sockets Direct Component Operation

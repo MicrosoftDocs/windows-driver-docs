@@ -2,6 +2,11 @@
 title: Stack and Dump Logging
 description: Stack and Dump Logging
 ms.assetid: 5FE6AA76-5299-4d5d-9154-6DB34D93EECB
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stack and Dump Logging

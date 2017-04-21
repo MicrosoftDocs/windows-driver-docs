@@ -3,7 +3,15 @@ title: Handling SRB\_FUNCTION\_ABORT\_COMMAND
 author: windows-driver-content
 description: Handling SRB\_FUNCTION\_ABORT\_COMMAND
 ms.assetid: 74d46df6-2e3e-45d8-bedb-a81a80a0aec1
-keywords: ["SCSI miniport drivers WDK storage , HwScsiStartIo", "HwScsiStartIo", "SRB_FUNCTION_ABORT_COMMAND"]
+keywords:
+- SCSI miniport drivers WDK storage , HwScsiStartIo
+- HwScsiStartIo
+- SRB_FUNCTION_ABORT_COMMAND
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling SRB\_FUNCTION\_ABORT\_COMMAND

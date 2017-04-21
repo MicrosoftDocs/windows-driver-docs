@@ -2,7 +2,17 @@
 title: Registering an Extension Interface
 description: Registering an Extension Interface
 ms.assetid: 33dc32da-9bc1-40b4-8737-ec132ec36708
-keywords: ["Winsock Kernel WDK networking , extension interfaces", "WSK WDK networking , extension interfaces", "extension interfaces WDK Winsock Kernel", "registering Winsock Kernel extension interfaces", "SIO_WSK_REGISTER_EXTENSION"]
+keywords:
+- Winsock Kernel WDK networking , extension interfaces
+- WSK WDK networking , extension interfaces
+- extension interfaces WDK Winsock Kernel
+- registering Winsock Kernel extension interfaces
+- SIO_WSK_REGISTER_EXTENSION
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering an Extension Interface
