@@ -12,7 +12,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Value
+# Value (TCP/IP)
 
 
 The TCP/IP `Value` construct allows you to extend the bidi communications schema with queries that retrieve data from a particular MIB object. The `Value` construct is defined in Tcpbidi.xsd.
