@@ -1,6 +1,6 @@
 ---
-Description: Supporting the Property Commands
-title: Supporting the Property Commands
+Description: Support for property commands (WpdBasicHardwareDriverSample)
+title: Support for property commands (WpdBasicHardwareDriverSample)
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
