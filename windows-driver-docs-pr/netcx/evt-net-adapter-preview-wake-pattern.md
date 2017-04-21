@@ -30,18 +30,16 @@ NTSTATUS EvtNetAdapterPreviewWakePattern(
   _In_ PNDIS_PM_WOL_PATTERN PatternToBeAdded
 )
 { ... }
-
-typedef EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN PFN_NET_ADAPTER_PREVIEW_WAKE_PATTERN;
 ```
 
 Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *ExistingPowerSettings* [in]  
-A handle to the net wake settings object.
+A handle to the net power settings object.
 
 *WakePatternType* [in]  
 An [**NDIS_PM_WOL_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff566766) enumeration value that specifies the type of the WOL packet.
@@ -59,7 +57,7 @@ To reject the pattern, return STATUS_NDIS_PM_WOL_PATTERN_LIST_FULL.
 Remarks
 -------
 
-Register your implementation of this callback function by setting the appropriate member of [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md) during [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
 
 In this callback, the driver typically uses the NETPOWERSETTINGS handle it receives in the *ExistingPowerSettings* parameter to iterate through the enabled wake patterns to determine whether to accept or reject *PatternToBeAdded*.  For an example, see [Configuring Power Management](configuring-power-management.md).
 

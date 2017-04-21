@@ -27,15 +27,13 @@ NTSTATUS EvtNetAdapterSetCapabilities(
   _In_ NETADAPTER Adapter
 )
 { ... }
-
-typedef EVT_NET_ADAPTER_SET_CAPABILITIES PFN_NET_ADAPTER_SET_CAPABILITIES;
 ```
 
 Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 Return value
 ------------
@@ -51,7 +49,7 @@ To register an *EVT_NET_ADAPTER_SET_CAPABILITIES* callback function, the client 
 
 NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* after [*EVT_WDF_DEVICE_PREPARE_HARDWARE*](https://msdn.microsoft.com/library/windows/hardware/ff540880) but before [*EVT_WDF_DEVICE_D0_ENTRY*](https://msdn.microsoft.com/library/windows/hardware/ff540848).
 
-NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* once per device arrival.
+NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* once per device start.
 
 In this function, the client typically sets the adapter's link and MAC capabilities, and optionally specifies power capabilities and current link state.  To do so, it uses the following methods:
 

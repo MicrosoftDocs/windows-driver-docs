@@ -17,6 +17,6 @@ if (!NT_SUCCESS(status)) {
 }
 ```
 
-When a user-mode application sends requests to a handle opened on a device interface with a reference string, your client driver receives I/O requests.  You can use [WDF queue objects](../wdf/framework-queue-objects.md) to handle the incoming I/O requests.
+When an user-mode application sends requests to a handle opened on a device interface with a reference string, your client driver receives the I/O requests.  You can use [WDF queue objects](../wdf/framework-queue-objects.md) to handle the incoming I/O requests. If your device interface does not have a reference string, all the requests will be intercepted by NDIS.
 
 For more info, see [Using WDF Device Interfaces](../wdf/using-device-interfaces.md).

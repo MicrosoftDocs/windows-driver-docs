@@ -7,7 +7,7 @@ title: NET_ADAPTER_LINK_LAYER_CAPABILITIES structure
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Describes the MAC capabilities of the adapter.
+Describes the link layer capabilities of the adapter.
 
 Syntax
 ------
@@ -37,7 +37,7 @@ Indicates the packet filters that the adapter supports. This value is a bitwise 
 The multicast address list size for the adapter.
 
 **PhysicalAddress**  
-A [**NET_ADAPTER_PHYSICAL_ADDRESS**](net-adapter-physical-address.md) structure that specifies the physical (MAC) address of the adapter.
+A [**NET_ADAPTER_PHYSICAL_ADDRESS**](net-adapter-physical-address.md) structure that specifies the physical address of the adapter.
 
 **SupportedStatistics**  
 The statistics that the adapter supports. This value is a bitwise OR of [**NET_ADAPTER_STATISTICS_FLAGS**](net-adapter-statistics-flags.md)-typed flags.

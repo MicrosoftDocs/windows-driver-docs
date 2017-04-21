@@ -39,10 +39,10 @@ A pointer to the driver-allocated [**NET_ADAPTER_PHYSICAL_ADDRESS**](net-adapter
 The number of bytes to copy from each address buffer parameter into the corresponding fields of the structure pointed to by *PhysicalAddress*.  If this value is greater than NDIS_MAX_PHYS_ADDRESS_LENGTH, that value is used instead.
 
 *PermanentAddressBuffer* [in]  
-The permanent MAC address. For example, the [**OID_802_3_PERMANENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569074) OID specifies the permanent MAC address for IEEE 802.3 drivers.
+The permanent physical address. For example, the [**OID_802_3_PERMANENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569074) OID specifies the permanent physical address for IEEE 802.3 drivers.
 
 *CurrentAddressBuffer* [in]  
-The current MAC address. For example, the [**OID_802_3_CURRENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569069) OID specifies the current MAC address for IEEE 802.3 drivers.
+The current physical address. For example, the [**OID_802_3_CURRENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569069) OID specifies the current physical address for IEEE 802.3 drivers.
 
 Return value
 ------------

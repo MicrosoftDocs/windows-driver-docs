@@ -29,18 +29,16 @@ NTSTATUS EvtNetAdapterPreviewProtocolOffload(
   _In_ PNDIS_PM_PROTOCOL_OFFLOAD     ProtocolOffloadToBeAdded
 )
 { ... }
-
-typedef EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD PFN_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD;
 ```
 
 Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *ExistingPowerSettings* [in]  
-A handle to the net wake settings object.
+A handle to the net power settings object.
 
 *ProtocolOffloadType* [in]  
 An [**NDIS_PM_PROTOCOL_OFFLOAD_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff566765) enumeration value that specifies the type of protocol offload.
@@ -59,9 +57,11 @@ To reject the pattern, return STATUS_NDIS_PM_PROTOCOL_OFFLOAD_LIST_FULL.
 Remarks
 -------
 
-Register your implementation of this callback function by setting the appropriate member of [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
+Register your implementation of this callback function by setting the appropriate member of [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md) during [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
 
 In this callback, the driver typically iterates through the *ExistingPowerSettings* to determine whether to accept or reject *ProtocolOffloadToBeAdded*.
+
+The client driver can use the pointer to examine the [**NDIS_PM_PROTOCOL_OFFLOAD**](https://msdn.microsoft.com/library/windows/hardware/ff566760) structure, but should not retain it. NetAdapterCx can release the protocol offload structure without notification to the driver.
 
 For more info, see [Configuring Power Management](configuring-power-management.md).
 

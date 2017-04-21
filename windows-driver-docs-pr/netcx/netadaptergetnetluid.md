@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves the NET_LUID that is assigned to a net adapter.
+Retrieves the NET_LUID that is assigned to a network adapter.
 
 Syntax
 ------
@@ -30,12 +30,12 @@ Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 Return value
 ------------
 
-Returns the NET_LUID for the specified net adapter object.
+Returns the NET_LUID for the specified NETADAPTER object.
 
 Requirements
 ------------

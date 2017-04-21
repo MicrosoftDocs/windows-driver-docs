@@ -11,8 +11,8 @@ For general information about WDF, please review the [WDF Driver Development Gui
 Open your existing driver project in Visual Studio and use the following steps to convert it to a KMDF project.
 
 1. First, navigate to **Configuration Properties->Driver Settings->Driver Model** and verify that **Type of driver** is set to KMDF, and that **KMDF Version Major** and **KMDF Version Minor** are both empty.
-2. In project properties, open **Linker->Input->Additional Dependencies** and add NetAdapterCxStub.lib (located in `Windows Kits\10\Lib\<latest_windows_version>\km\<architecture>\netadaptercx\1.0`).
-    * If your existing driver calls NDIS APIs, link against `ndis.lib`.
+2. In project properties, open **Driver Settings->Network Adapter Driver** and change "Link to the Network Adapter Class Extension" to "Yes".
+    * If your driver still needs to call NDIS APIs, keep linking against `ndis.lib`.
 3. Remove NDIS preprocessor macros, like NDIS650_MINIPORT=1.
 4. Add the following headers to every source file (or to your common/precompiled header):
 ```cpp
@@ -22,14 +22,29 @@ Open your existing driver project in Visual Studio and use the following steps t
 ```
 5. Add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
 
-Finally, add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
-
 ```Inf
 [Yourdriver.Wdf]
 KmdfService = Yourdriverservice, Yourdriver.wdfsect
 
 [Yourdriver.wdfsect]
 KmdfLibraryVersion = <insert here>
+```
+
+6. Add new required networking keywords to the NT section of your INF, *IfConnectorPresent and *HardwareLoopback are booleans, *ConnectionType is [*NET_IF_CONNECTION_TYPE*](https://msdn.microsoft.com/en-us/library/windows/hardware/ff568741(v=vs.85).aspx), *DirectionType is [*NET_IF_DIRECTION_TYPE*](https://msdn.microsoft.com/en-us/library/windows/hardware/ff568742(v=vs.85).aspx) and *AccessType is [*NET_IF_ACCESS_TYPE*](https://msdn.microsoft.com/en-us/library/windows/hardware/ff568739(v=vs.85).aspx).
+
+```cpp
+[Device.NT]
+CopyFiles=Drivers_Dir
+; Existing network keywords
+*IfType             = 6
+*MediaType          = 0
+*PhysicalMediaType  = 14
+; New network keywords
+*IfConnectorPresent = 0
+*ConnectionType     = 1 
+*DirectionType      = 0
+*AccessType         = 2
+*HardwareLoopback   = 0
 ```
 
 ## Driver initialization

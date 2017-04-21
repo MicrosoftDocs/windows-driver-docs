@@ -34,7 +34,7 @@ Parameters
 ----------
 
 *LinkLayerCapabilities* [out]  
-A pointer to the driver-allocated [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure that describes the MAC capabilities of the adapter.
+A pointer to the driver-allocated [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure that describes the link layer capabilities of the adapter.
 
 *SupportedPacketFilters* [in]  
 An enumeration of type [NET_PACKET_FILTER_TYPES_FLAGS](net-packet-filter-types-flags.md) that specifying packet filters the adapter supports.

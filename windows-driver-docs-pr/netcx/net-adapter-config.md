@@ -27,8 +27,8 @@ typedef struct _NET_ADAPTER_CONFIG {
   PFN_NET_ADAPTER_SET_CAPABILITIES          EvtAdapterSetCapabilities;
   PFN_NET_ADAPTER_CREATE_TXQUEUE            EvtAdapterCreateTxQueue;
   PFN_NET_ADAPTER_CREATE_RXQUEUE            EvtAdapterCreateRxQueue;
-  WDF_OBJECT_ATTRIBUTES                     NetRequestObjectAttributes;
-  WDF_OBJECT_ATTRIBUTES                     NetPowerSettingsObjectAttributes;
+  PWDF_OBJECT_ATTRIBUTES                    NetRequestObjectAttributes;
+  PWDF_OBJECT_ATTRIBUTES                    NetPowerSettingsObjectAttributes;
 } NET_ADAPTER_CONFIG, *PNET_ADAPTER_CONFIG;
 ```
 
@@ -51,7 +51,7 @@ A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_TXQUEUE
 A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback.
 
 **NetRequestObjectAttributes**  
-Optional WDF object attributes associated with the NETREQUESTQUEUE object, or NULL.
+Optional WDF object attributes associated with the NETREQUEST objects, or NULL. If not NULL any NETREQUESTs created by the framework will have these attributes.
 
 **NetPowerSettingsObjectAttributes**  
 Optional WDF object attributes associated with the NETPOWERSETTINGS object, or NULL.
