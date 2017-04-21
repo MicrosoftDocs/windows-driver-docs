@@ -8,7 +8,7 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-description: 
+description: Information about reserved ioctl codes for NFC drivers, which must return STATUS_INVALID_DEVICE_STATE.
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
@@ -33,4 +33,3 @@ CTL\_CODE(FILE\_DEVICE\_NFP, 0x0100, \*, \*) through CTL\_CODE(FILE\_DEVICE\_NFP
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
-

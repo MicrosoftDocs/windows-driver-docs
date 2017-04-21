@@ -1,6 +1,6 @@
 ---
 title: Manage hardware submissions
-description: Manage hardware submissions
+description: Manage hardware submissions for the Windows Hardware Dev Center Dashboard
 ms.assetid: C4C3C56F-8E92-4CB1-A57B-942E466ECD3D
 ms.author: windows-driver-content
 ms.date: 04/20/2017
@@ -9,7 +9,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Manage hardware submissions
+# Managing hardware submissions in the Windows Hardware Dev Center dashboard
 
 
 After you submit your product for the Windows Hardware Compatibility Program for Windows 10 (or the certification program for previous Windows versions), you can manage it through the dashboard.
@@ -81,7 +81,7 @@ After you submit your product for the Windows Hardware Compatibility Program for
 
      
 
-## **Update an HCK hardware submission using the Driver Update Acceptable (DUA) process** 
+## **Update an HCK hardware submission using the Driver Update Acceptable (DUA) process**
 
 1.  [Find the hardware submission](#find-a-hardware-submission) that you want to update.
 
