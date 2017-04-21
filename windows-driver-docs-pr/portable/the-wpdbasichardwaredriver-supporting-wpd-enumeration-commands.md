@@ -1,6 +1,6 @@
 ---
-Description: Supporting the Enumeration Commands
-title: Supporting the Enumeration Commands
+Description: Support for enumeration commands (WpdBasicHardwareDriverSample)
+title: Support for enumeration commands (WpdBasicHardwareDriverSample)
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
