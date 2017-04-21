@@ -1127,6 +1127,7 @@
 ### [SR-IOV PF/VF Backchannel Communication](sr-iov-pf-vf-backchannel-communication.md)
 #### [Backchannel Communication from a VF Miniport Driver](backchannel-communication-from-a-vf-miniport-driver.md)
 #### [Backchannel Communication from the PF Miniport Driver](backchannel-communication-from-the-pf-miniport-driver.md)
+### [SR-IOV OIDs](sr-iov-oids.md)
 ## [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md)
 ### [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md)
 #### [Introduction to NDIS Virtual Machine Queue (VMQ)](introduction-to-ndis-virtual-machine-queue--vmq-.md)
