@@ -6,7 +6,7 @@ title: NET_PACKET_LAYOUT structure
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-A [**NET_PACKET**](net-packet.md) structure contains a member of type **NET_PACKET_LAYOUT**.
+A **NET_PACKET_LAYOUT** structure describes the start of each protocol header in a packet.
 
 Syntax
 ------
@@ -29,40 +29,21 @@ Members
 -------
 
 **Layer2Type**  
-A bit field that specifies a flag from **NET_PACKET_LAYER2_TYPE**.
+An enum that specifies a flag from **NET_PACKET_LAYER2_TYPE**.
 
-**Layer3Type**  
-A bit field that specifies a flag from **NET_PACKET_LAYER3_TYPE**.
-
-**Layer4Type**  
-A bit field that specifies a flag from **NET_PACKET_LAYER4_TYPE**.
-
-**Reserved**  
-Reserved for system use.
-
-**Layer2HeaderLength**  
-A UINT16 value specifying the length of the Layer2 header.
-
-**Layer3HeaderLength**  
-A UINT16 value specifying the length of the Layer3 header.
-
-**Layer4HeaderLength**  
-A UINT8 value specifying the length of the Layer4 header.
-
-Remarks
--------
-See more info in the description of the **Layout** member of [**NET_PACKET**](net-packet.md).
-
-The client specifies flag values for this structure using the following enumerations:
-
-```
+```cpp
 typedef enum _NET_PACKET_LAYER2_TYPE
 {
     NET_PACKET_LAYER2_TYPE_UNSPECIFIED                  = 0,
     NET_PACKET_LAYER2_TYPE_NULL                         = 1,
     NET_PACKET_LAYER2_TYPE_ETHERNET                     = 2,
 } NET_PACKET_LAYER2_TYPE;
+```
 
+**Layer3Type**  
+An enum that specifies a flag from **NET_PACKET_LAYER3_TYPE**.
+
+```cpp
 typedef enum _NET_PACKET_LAYER3_TYPE
 {
     NET_PACKET_LAYER3_TYPE_UNSPECIFIED                  = 0,
@@ -73,7 +54,12 @@ typedef enum _NET_PACKET_LAYER3_TYPE
     NET_PACKET_LAYER3_TYPE_IPV6_WITH_EXTENSIONS         = 5,
     NET_PACKET_LAYER3_TYPE_IPV6_NO_EXTENSIONS           = 6,
 } NET_PACKET_LAYER3_TYPE;
+```
 
+**Layer4Type**  
+An enum that specifies a flag from **NET_PACKET_LAYER4_TYPE**.
+
+```cpp
 typedef enum _NET_PACKET_LAYER4_TYPE
 {
     NET_PACKET_LAYER4_TYPE_UNSPECIFIED                  = 0,
@@ -82,8 +68,27 @@ typedef enum _NET_PACKET_LAYER4_TYPE
     NET_PACKET_LAYER4_TYPE_IP_NOT_FRAGMENTED            = 3,
     NET_PACKET_LAYER4_TYPE_IP_FRAGMENT                  = 4,
 } NET_PACKET_LAYER4_TYPE;
-
 ```
+
+**Reserved**  
+Reserved for system use.
+
+**Layer2HeaderLength**  
+The length in bytes of the Layer 2 header, or zero if the Layer 2 length is unknown.
+
+**Layer3HeaderLength**  
+The length in bytes of the Layer 3 header, or zero if the Layer 3 length is unknown.
+
+**Layer4HeaderLength**  
+The length of the Layer 4 header, or zero if the Layer 4 length is unknown.
+
+Remarks
+-------
+See more info in the description of the **Layout** member of [**NET_PACKET**](net-packet.md).
+
+The client specifies flag values for this structure using the following enumerations:
+
+
 
 Requirements
 ------------

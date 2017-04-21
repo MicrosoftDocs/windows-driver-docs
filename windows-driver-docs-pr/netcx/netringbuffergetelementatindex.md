@@ -45,9 +45,11 @@ Returns the location of the specified element.
 Remarks
 -------
 
-**NetRingBufferGetElementAtIndex** uses the ElementStride member of the ring buffer to index into the buffer and returns the location of the specified element.  While you can certainly use this routine with NetAdapterCx, it exists mainly to facilitate external uses of the ring buffer API.
-
+**NetRingBufferGetElementAtIndex** uses the ElementStride member of the ring buffer to index into the buffer and returns the location of the specified element.
 You'll need to cast the returned element to whatever data type your ring buffer elements use.
+**NetRingBufferGetElementAtIndex** is meant for generic use of ring buffers.
+
+Instead of calling this API directly, prefer using [**NetRingBufferGetPacketAtIndex**](netringbuffergetpacketatindex.md), which is more convenient to use.
 
 For more info, see [Handling I/O Requests](handling-i-o-requests.md).
 

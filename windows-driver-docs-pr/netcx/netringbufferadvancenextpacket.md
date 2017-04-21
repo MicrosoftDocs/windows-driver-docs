@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Increments the NextIndex value of the ring buffer and then returns a pointer to the net packet at the new NextIndex value.
+Increments the NextIndex value of the ring buffer and then returns a pointer to the packet at the new NextIndex value.
 
 Syntax
 ------
@@ -36,10 +36,22 @@ A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 Return value
 ------------
 
-Returns NULL if the value of NextIndex equals the value of EndIndex for the specified ring buffer. Otherwise, increments NextIndex and returns a pointer to the NET_PACKET at the new NextIndex value of the ring buffer.
+Returns NULL if there are no more unprocessed packets.
+That is, this routine returns NULL if the ring buffer's NextIndex equals its EndIndex.
+Otherwise, this routine returns a pointer to the NET_PACKET at the new NextIndex value of the ring buffer.
 
 Remarks
 -----
+
+Typically, your driver would use **NetRingBufferAdvanceNextPacket** in a loop to issue packets to hardware.
+For example:
+
+```cpp
+NET_PACKET *nextPacket;
+while (NULL != (nextPacket = NetRingBufferAdvanceNextPacket(ringBuffer))) {
+  ProgramPacketToMyHardware(nextPacket);
+}
+```
 
 For more info, see [Handling I/O Requests](handling-i-o-requests.md).
 

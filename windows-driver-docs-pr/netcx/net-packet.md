@@ -31,9 +31,10 @@ Members
 
 **Data**  
 A structure of type [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) that describes the first fragment of the packet payload.
+The packet may be linked to more fragments; use the `LastFragmentOfFrame` field to determine whether there are more fragments.
 
 **Layout**  
-A structure of type [**NET_PACKET_LAYOUT**](net-packet-layout.md).  
+A structure of type [**NET_PACKET_LAYOUT**](net-packet-layout.md).
 
 * For transmit queues, if the host stack has enabled a task offload that uses a protocol header, specifies a read-only offset to each protocol field.  For example, if TCP checksum offload is enabled, this member specifies the offset to the TCP header.  Otherwise, this member is empty.
 
@@ -50,7 +51,7 @@ A structure of type [**NET_PACKET_CHECKSUM**](net-packet-checksum.md).
 * For receive queues, the client sets this bit to prevent the packet from being indicated to the host.
 For example, if the hardware encountered a DMA error while writing bytes into this the data buffer for this packet, the client can set this bit to drop the partial packet.
 
-* For transmit queues, this bit is read-only and specifies if the client should not transmit the packet.
+* For transmit queues, this bit is read-only and if set, specifies the client should not transmit the packet.
 
 **AdvancedOffloadRequested**  
 Reserved.
@@ -77,8 +78,7 @@ Remarks
 Each [**NET_PACKET**](net-packet.md) structure represents a single network frame.
 
 The **NET_PACKET** structure can be an element in a [**NET_RING_BUFFER**](net-ring-buffer.md) structure.
-
-A single **NET_PACKET** has one or more [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) structures linked into it.
+You can optionally use [`NetRingBufferGetPacketAtIndex`](netringbuffergetpacketatindex.md) or [`NetRingBufferGetNextPacket`](netringbuffergetnextpacket.md) to conveniently obtain a **NET_PACKET** from a ring buffer.
 
 Requirements
 ------------
