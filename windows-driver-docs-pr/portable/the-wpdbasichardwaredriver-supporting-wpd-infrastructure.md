@@ -1,6 +1,6 @@
 ---
-Description: Supporting the WPD Infrastructure
-title: Supporting the WPD Infrastructure
+Description: Support for WPD infrastructure (WpdBasicHardwareDriverSample)
+title: Support for WPD infrastructure (WpdBasicHardwareDriverSample)
 ms.author: windows-driver-content
 ms.date: 04/20/2017
 ms.topic: article
@@ -8,7 +8,7 @@ ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Supporting the WPD Infrastructure
+# Support for WPD infrastructure (WpdBasicHardwareDriverSample)
 
 
 The WPD infrastructure is command driven. When a WPD application calls one of the methods in a given interface, the WPD serializer (an in-process COM server) converts the method call into one or more commands that it sends to the driver. The driver then processes these commands and returns a response. For more information about the infrastructure, see the [Architecture Overview](architecture-overview.md) topic.
