@@ -3,6 +3,11 @@ title: IWiaDrvItem COM Interface
 author: windows-driver-content
 description: IWiaDrvItem COM Interface
 ms.assetid: 1be2265b-7ae8-4935-9559-588b885526d4
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IWiaDrvItem COM Interface

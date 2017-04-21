@@ -3,7 +3,18 @@ title: File System Object I/O Routines
 author: windows-driver-content
 description: File System Object I/O Routines
 ms.assetid: 0514e396-76b9-458b-9a98-e539d7e90274
-keywords: ["mini-redirectors WDK , object I/O routines", "I/O WDK network redirectors", "low-I/O routines WDK network redirectors", "file system object I/O WDK", "file objects WDK mini-redirectors", "objects WDK mini-redirectors"]
+keywords:
+- mini-redirectors WDK , object I/O routines
+- I/O WDK network redirectors
+- low-I/O routines WDK network redirectors
+- file system object I/O WDK
+- file objects WDK mini-redirectors
+- objects WDK mini-redirectors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File System Object I/O Routines

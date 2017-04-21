@@ -2,7 +2,14 @@
 title: Using BinPlace
 description: Using BinPlace
 ms.assetid: 58bef00a-bd0e-4200-8e5e-10a418aea64b
-keywords: ["BinPlace WDK , about BinPlace", "place files WDK BinPlace"]
+keywords:
+- BinPlace WDK , about BinPlace
+- place files WDK BinPlace
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using BinPlace

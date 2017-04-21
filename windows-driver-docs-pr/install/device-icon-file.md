@@ -2,6 +2,11 @@
 title: Device Icon File
 description: Device Icon File
 ms.assetid: bd1272d5-f673-4138-887d-94653cf41829
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Icon File

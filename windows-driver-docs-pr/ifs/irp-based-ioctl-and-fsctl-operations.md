@@ -3,7 +3,15 @@ title: IRP-Based IOCTL and FSCTL Operations
 author: windows-driver-content
 description: IRP-Based IOCTL and FSCTL Operations
 ms.assetid: 08d6cf89-aaba-4aa1-baff-eb6aece2875f
-keywords: ["IOCTLs WDK file systems", "FSCTL WDK file system", "no buffers WDK file system"]
+keywords:
+- IOCTLs WDK file systems
+- FSCTL WDK file system
+- no buffers WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IRP-Based IOCTL and FSCTL Operations

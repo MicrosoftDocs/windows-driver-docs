@@ -2,6 +2,11 @@
 title: Wi-Fi Direct Provision Discovery
 description: The figure below shows the typical OID/Indications and message sequences when performing provision discovery between two PCs.
 ms.assetid: 37D7A642-9EFE-48AD-9F15-D33D094A5FE7
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Direct Provision Discovery

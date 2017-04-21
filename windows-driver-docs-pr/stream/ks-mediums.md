@@ -3,7 +3,16 @@ title: KS Mediums
 author: windows-driver-content
 description: KS Mediums
 ms.assetid: c94c738c-66c6-491b-9157-28cccf95af4d
-keywords: ["mediums WDK kernel streaming", "KSPIN_MEDIUM", "kernel streaming WDK , mediums", "KS WDK , mediums"]
+keywords:
+- mediums WDK kernel streaming
+- KSPIN_MEDIUM
+- kernel streaming WDK , mediums
+- KS WDK , mediums
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Mediums

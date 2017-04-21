@@ -2,7 +2,21 @@
 title: Packet Structures in Network Drivers
 description: Packet Structures in Network Drivers
 ms.assetid: 01989a73-3f68-431a-ab77-b61f03265c22
-keywords: ["packets WDK networking", "network drivers WDK , packets", "network data WDK", "data WDK networking", "network packet structures WDK", "network data buffers WDK", "data buffers WDK networking", "network data WDK , structures", "data WDK networking , structures"]
+keywords:
+- packets WDK networking
+- network drivers WDK , packets
+- network data WDK
+- data WDK networking
+- network packet structures WDK
+- network data buffers WDK
+- data buffers WDK networking
+- network data WDK , structures
+- data WDK networking , structures
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Packet Structures in Network Drivers

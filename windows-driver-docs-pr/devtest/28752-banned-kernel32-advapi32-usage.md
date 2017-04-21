@@ -2,6 +2,11 @@
 title: C28752
 description: Warning C28752 Banned usage of kernel32 or advapi32 API.
 ms.assetid: F887EB9E-FA5A-4139-AF67-7460BB9254B8
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28752

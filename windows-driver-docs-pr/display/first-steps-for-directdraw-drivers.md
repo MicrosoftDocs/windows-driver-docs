@@ -2,7 +2,15 @@
 title: First Steps For DirectDraw Drivers
 description: First Steps For DirectDraw Drivers
 ms.assetid: 0bb00060-7887-447f-a3c9-394ae5ac84db
-keywords: ["drawing WDK DirectDraw , DirectDraw driver", "DirectDraw WDK Windows 2000 display , DirectDraw driver", "DirectDraw driver WDK Windows 2000 display"]
+keywords:
+- drawing WDK DirectDraw , DirectDraw driver
+- DirectDraw WDK Windows 2000 display , DirectDraw driver
+- DirectDraw driver WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # First Steps For DirectDraw Drivers

@@ -3,7 +3,15 @@ title: Setting and Clearing a Communication Mode for a Parallel Device
 author: windows-driver-content
 description: Setting and Clearing a Communication Mode for a Parallel Device
 ms.assetid: 2ff53ed0-dbb7-4c8f-b6e4-5f7d20124a7c
-keywords: ["parallel devices WDK , communication modes", "communication modes WDK parallel devices", "clearing communication modes"]
+keywords:
+- parallel devices WDK , communication modes
+- communication modes WDK parallel devices
+- clearing communication modes
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting and Clearing a Communication Mode for a Parallel Device

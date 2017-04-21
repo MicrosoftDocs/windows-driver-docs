@@ -2,7 +2,17 @@
 title: Porting CoNDIS Client Registration
 description: Porting CoNDIS Client Registration
 ms.assetid: 0e828bda-9474-4c7c-a513-346a313c9901
-keywords: ["registering CoNDIS drivers", "entry points WDK networking", "registration porting WDK CoNDIS", "porting CoNDIS drivers WDK networking , registration", "client registration WDK CoNDIS"]
+keywords:
+- registering CoNDIS drivers
+- entry points WDK networking
+- registration porting WDK CoNDIS
+- porting CoNDIS drivers WDK networking , registration
+- client registration WDK CoNDIS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting CoNDIS Client Registration

@@ -3,7 +3,16 @@ title: DVD Related Clock Functions
 author: windows-driver-content
 description: DVD Related Clock Functions
 ms.assetid: 495f25dc-cd79-4f7f-acbc-b8b271269fb3
-keywords: ["DVD decoder minidrivers WDK , master clock", "decoder minidrivers WDK DVD , master clock", "master clocks WDK DVD decoder", "clocks WDK DVD decoder"]
+keywords:
+- DVD decoder minidrivers WDK , master clock
+- decoder minidrivers WDK DVD , master clock
+- master clocks WDK DVD decoder
+- clocks WDK DVD decoder
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DVD Related Clock Functions

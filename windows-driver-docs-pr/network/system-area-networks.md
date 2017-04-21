@@ -2,7 +2,17 @@
 title: System Area Networks
 description: System Area Networks
 ms.assetid: 6fbcc1d5-151d-4f17-8df9-79a463e3c149
-keywords: ["system area networks WDK", "SAN WDK", "connections WDK SANs", "addresses WDK SANs", "linking computer clusters WDK SANs"]
+keywords:
+- system area networks WDK
+- SAN WDK
+- connections WDK SANs
+- addresses WDK SANs
+- linking computer clusters WDK SANs
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System Area Networks

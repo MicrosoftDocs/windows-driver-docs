@@ -2,7 +2,14 @@
 title: Threading and Synchronization Second Level
 description: Threading and Synchronization Second Level
 ms.assetid: 2b7c1eae-6527-469e-a2fa-74d2a1246bd3
-keywords: ["threading WDK display , second level", "synchronization WDK display , second level"]
+keywords:
+- threading WDK display , second level
+- synchronization WDK display , second level
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Threading and Synchronization Second Level

@@ -3,6 +3,11 @@ title: Introduction to Segmentation Filters
 author: windows-driver-content
 description: Introduction to Segmentation Filters
 ms.assetid: 3f73aa08-c3ef-4e97-9e3e-a1f0325cd599
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Segmentation Filters

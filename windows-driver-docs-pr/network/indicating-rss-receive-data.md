@@ -2,7 +2,15 @@
 title: Indicating RSS Receive Data
 description: Indicating RSS Receive Data
 ms.assetid: 8d040d7d-3a8a-4d81-8508-8de225e000ab
-keywords: ["receive-side scaling WDK networking , indicating receive data", "RSS WDK networking , indicating receive data", "indicating receive data WDK RSS"]
+keywords:
+- receive-side scaling WDK networking , indicating receive data
+- RSS WDK networking , indicating receive data
+- indicating receive data WDK RSS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Indicating RSS Receive Data

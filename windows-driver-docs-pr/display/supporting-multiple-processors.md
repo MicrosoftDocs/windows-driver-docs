@@ -2,7 +2,17 @@
 title: Supporting Multiple Processors
 description: Supporting Multiple Processors
 ms.assetid: 906d6b31-a447-4a94-b1a5-cd3028722db7
-keywords: ["user-mode display drivers WDK Windows Vista , multiple processors", "multiple processor support WDK display", "runtime-handled multiple-processor optimizations WDK display", "driver-handled multiple-processor optimizations WDK display", "multiple-processor optimizations WDK display"]
+keywords:
+- user-mode display drivers WDK Windows Vista , multiple processors
+- multiple processor support WDK display
+- runtime-handled multiple-processor optimizations WDK display
+- driver-handled multiple-processor optimizations WDK display
+- multiple-processor optimizations WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Multiple Processors

@@ -2,6 +2,11 @@
 title: Personal Information Exchange (.pfx) Files
 description: Personal Information Exchange (.pfx) Files
 ms.assetid: 58849ccc-c86f-4c49-b848-8926febb5521
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Personal Information Exchange (.pfx) Files

@@ -2,7 +2,19 @@
 title: Miniport Adapter States and Operations
 description: Miniport Adapter States and Operations
 ms.assetid: b47e2cbe-9da3-4600-9afe-b082e60b87fb
-keywords: ["miniport adapters WDK networking , states", "adapters WDK networking , states", "miniport adapters WDK networking , operations", "adapters WDK networking , operations", "Halted state WDK networking", "Shutdown state WDK networking", "Initializing state WDK ne"]
+keywords:
+- miniport adapters WDK networking , states
+- adapters WDK networking , states
+- miniport adapters WDK networking , operations
+- adapters WDK networking , operations
+- Halted state WDK networking
+- Shutdown state WDK networking
+- Initializing state WDK ne
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Adapter States and Operations

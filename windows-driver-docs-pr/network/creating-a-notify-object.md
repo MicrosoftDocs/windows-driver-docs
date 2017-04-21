@@ -2,7 +2,14 @@
 title: Creating a Notify Object
 description: Creating a Notify Object
 ms.assetid: 120f78ae-3ef3-4d3c-af6a-c2aa3edbc5d5
-keywords: ["notify objects WDK networking , creating", "network notify objects WDK , creating"]
+keywords:
+- notify objects WDK networking , creating
+- network notify objects WDK , creating
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Notify Object

@@ -2,7 +2,14 @@
 title: Requirements for a GFX Filter Factory
 description: Requirements for a GFX Filter Factory
 ms.assetid: 06212686-24d3-4169-ad93-1cd685e22dde
-keywords: ["GFX filters WDK audio , filter factory", "filter factories WDK audio"]
+keywords:
+- GFX filters WDK audio , filter factory
+- filter factories WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requirements for a GFX Filter Factory

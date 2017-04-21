@@ -3,7 +3,16 @@ title: Print Driver Versioning
 author: windows-driver-content
 description: Print Driver Versioning
 ms.assetid: 8ce844a5-44f6-4967-8586-b302823fc862
-keywords: ["installing drivers WDK printer , versioning", "printer driver installations WDK , versioning", "version numbers WDK printer", "printer driver versioning WDK"]
+keywords:
+- installing drivers WDK printer , versioning
+- printer driver installations WDK , versioning
+- version numbers WDK printer
+- printer driver versioning WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Driver Versioning

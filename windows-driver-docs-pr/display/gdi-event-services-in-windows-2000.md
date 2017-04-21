@@ -2,7 +2,14 @@
 title: GDI Event Services in Windows 2000
 description: GDI Event Services in Windows 2000
 ms.assetid: bf7f2127-cd3e-430c-99fd-62c824394a57
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , GDI event services", "GDI WDK Windows 2000 display , events"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , GDI event services
+- GDI WDK Windows 2000 display , events
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Event Services in Windows 2000

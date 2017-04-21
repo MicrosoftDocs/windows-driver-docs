@@ -1,7 +1,12 @@
----
+﻿---
 title: GPU virtual memory in WDDM 2.0
-description: This section provides details about GPU virtual memory, including why the changes were made and how drivers will use it. This functionality is available starting with Windows 10.
+description: This section provides details about GPU virtual memory, including why the changes were made and how drivers will use it.
 ms.assetid: 88A99A31-9B84-4594-8A93-1C2783F7390D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GPU virtual memory in WDDM 2.0

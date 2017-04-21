@@ -3,7 +3,17 @@ title: CD-ROM Exclusive Access Mode
 author: windows-driver-content
 description: CD-ROM Exclusive Access Mode
 ms.assetid: 4432f6d6-e98c-4354-a7ba-b043a624f064
-keywords: ["CD-ROM drivers WDK storage", "storage CD-ROM drivers WDK", "exclusive access mode WDK CD-ROM", "IOCTL_CDROM_EXCLUSIVE_ACCESS", "CDROM_EXCLUSIVE_LOCK"]
+keywords:
+- CD-ROM drivers WDK storage
+- storage CD-ROM drivers WDK
+- exclusive access mode WDK CD-ROM
+- IOCTL_CDROM_EXCLUSIVE_ACCESS
+- CDROM_EXCLUSIVE_LOCK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CD-ROM Exclusive Access Mode

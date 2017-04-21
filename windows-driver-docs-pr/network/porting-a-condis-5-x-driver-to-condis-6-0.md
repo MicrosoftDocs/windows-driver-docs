@@ -2,7 +2,18 @@
 title: Porting a CoNDIS 5.x Driver to CoNDIS 6.0
 description: Porting a CoNDIS 5.x Driver to CoNDIS 6.0
 ms.assetid: 84de2618-a5cc-4fef-b036-66ba5aa71014
-keywords: ["CoNDIS drivers WDK networking , porting", "connection-oriented drivers WDK networking , porting", "NDIS porting drivers WDK , CoNDIS drivers", "porting drivers WDK networking , CoNDIS drivers", "network driver porting WDK , CoNDIS drivers", "porting CoNDIS driv"]
+keywords:
+- CoNDIS drivers WDK networking , porting
+- connection-oriented drivers WDK networking , porting
+- NDIS porting drivers WDK , CoNDIS drivers
+- porting drivers WDK networking , CoNDIS drivers
+- network driver porting WDK , CoNDIS drivers
+- porting CoNDIS driv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting a CoNDIS 5.x Driver to CoNDIS 6.0

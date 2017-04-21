@@ -3,6 +3,11 @@ title: Debugging Printer Drivers and Spooler Components
 author: windows-driver-content
 description: Debugging Printer Drivers and Spooler Components
 ms.assetid: baa793b8-fda5-4ec2-b670-954abf809b4c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Printer Drivers and Spooler Components

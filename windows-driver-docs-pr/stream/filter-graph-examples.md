@@ -3,7 +3,16 @@ title: Filter Graph Examples
 author: windows-driver-content
 description: Filter Graph Examples
 ms.assetid: 7888da79-b21d-4935-ac6c-25ef2f947931
-keywords: ["video capture WDK AVStream , filter graph configurations", "capturing video WDK AVStream , filter graph configurations", "filter graph configurations WDK video capture", "filter graph configurations WDK video capture , listed"]
+keywords:
+- video capture WDK AVStream , filter graph configurations
+- capturing video WDK AVStream , filter graph configurations
+- filter graph configurations WDK video capture
+- filter graph configurations WDK video capture , listed
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Graph Examples

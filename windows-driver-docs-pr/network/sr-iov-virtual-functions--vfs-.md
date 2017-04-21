@@ -2,6 +2,11 @@
 title: SR-IOV Virtual Functions (VFs)
 description: SR-IOV Virtual Functions (VFs)
 ms.assetid: 92EFC8C3-A610-46EB-A1BC-750715378077
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SR-IOV Virtual Functions (VFs)

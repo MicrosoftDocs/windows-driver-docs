@@ -1,7 +1,12 @@
----
+﻿---
 title: UMDF Settings (Test Use Only) Tab
-description: This topic details WDF Verifier's UMDF Settings (Test Use Only) page. On this page, you can change settings that can help test an overall system with one or more User-Mode Driver Framework (UMDF) drivers.
+description: This topic details WDF Verifier's UMDF Settings (Test Use Only) page.
 ms.assetid: cce75c2e-fc93-4c17-9560-aef55451528b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UMDF Settings (Test Use Only) Tab

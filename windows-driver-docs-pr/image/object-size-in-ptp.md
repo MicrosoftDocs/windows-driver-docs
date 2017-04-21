@@ -3,6 +3,11 @@ title: Object Size in PTP
 author: windows-driver-content
 description: Object Size in PTP
 ms.assetid: bc54e057-3c98-457b-859a-79d216b2a34d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Object Size in PTP

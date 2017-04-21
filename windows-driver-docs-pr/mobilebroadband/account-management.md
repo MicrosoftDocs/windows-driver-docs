@@ -2,6 +2,11 @@
 title: Account management
 description: Account management
 ms.assetid: 8201a4ac-1344-4a96-b0d5-d4ba8123c4dd
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Account management

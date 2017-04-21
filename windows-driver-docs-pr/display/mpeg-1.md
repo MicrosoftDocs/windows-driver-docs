@@ -2,7 +2,18 @@
 title: MPEG-1
 description: MPEG-1
 ms.assetid: be4db8ea-98fa-4693-a2ff-888499e97f38
-keywords: ["MPEG-1 WDK DirectX VA", "backward prediction WDK DirectX VA", "bidirectional prediction WDK DirectX VA", "prediction blocks WDK DirectX VA", "backward-predicted prediction blocks WDK DirectX VA", "forward-predicted prediction blocks WDK DirectX VA"]
+keywords:
+- MPEG-1 WDK DirectX VA
+- backward prediction WDK DirectX VA
+- bidirectional prediction WDK DirectX VA
+- prediction blocks WDK DirectX VA
+- backward-predicted prediction blocks WDK DirectX VA
+- forward-predicted prediction blocks WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MPEG-1

@@ -2,7 +2,20 @@
 title: Test Certificates
 description: Test Certificates
 ms.assetid: 1423e4ad-ea72-4720-b5de-163c9c8e4e32
-keywords: ["driver signing WDK , test certificates", "signing drivers WDK , test certificates", "digital signatures WDK , test certificates", "signatures WDK , test certificates", "test certificates WDK", "certificates WDK , test", "Authenticode signatures WDK", "test signing drivers WDK , test certificates"]
+keywords:
+- driver signing WDK , test certificates
+- signing drivers WDK , test certificates
+- digital signatures WDK , test certificates
+- signatures WDK , test certificates
+- test certificates WDK
+- certificates WDK , test
+- Authenticode signatures WDK
+- test signing drivers WDK , test certificates
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test Certificates

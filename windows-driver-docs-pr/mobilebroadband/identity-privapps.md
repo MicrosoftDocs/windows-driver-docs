@@ -2,6 +2,11 @@
 title: Identity
 description: Identity
 ms.assetid: 405ec2ee-ea4a-468b-b75b-365ffce03cdb
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identity

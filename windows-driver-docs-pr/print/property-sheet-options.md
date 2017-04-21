@@ -3,7 +3,17 @@ title: Property Sheet Options
 author: windows-driver-content
 description: Property Sheet Options
 ms.assetid: 572330d6-1a1b-46fd-bfb4-be2b0990bca4
-keywords: ["Common Property Sheet User Interface WDK print , property sheet options", "CPSUI WDK print , property sheet options", "property sheet pages WDK print , property sheet options", "property sheets WDK print", "selectable property sheet page items WDK print"]
+keywords:
+- Common Property Sheet User Interface WDK print , property sheet options
+- CPSUI WDK print , property sheet options
+- property sheet pages WDK print , property sheet options
+- property sheets WDK print
+- selectable property sheet page items WDK print
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property Sheet Options

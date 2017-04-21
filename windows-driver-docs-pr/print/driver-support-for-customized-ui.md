@@ -3,6 +3,11 @@ title: Driver Support for Customized UI
 author: windows-driver-content
 description: The v4 print driver model was developed with built-in support for UI customization using printer extensions or Windows Store device apps for printing.
 ms.assetid: 91B0E824-1EE3-40B0-A24E-5A66C158972E
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Support for Customized UI

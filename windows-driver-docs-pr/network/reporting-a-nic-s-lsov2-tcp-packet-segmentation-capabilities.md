@@ -2,7 +2,16 @@
 title: Reporting a NIC's LSOV2 TCP-Packet-Segmentation Capabilities
 description: Reporting a NIC's LSOV2 TCP-Packet-Segmentation Capabilities
 ms.assetid: 2894c1a8-503f-4b53-8eb3-5c5eaea150db
-keywords: ["LSOV2 WDK networking", "large TCP packet segmentation WDK networking", "segmentation of large TCP packets WDK networking", "task offload WDK TCP/IP transport , LSOV1 and LSOV2"]
+keywords:
+- LSOV2 WDK networking
+- large TCP packet segmentation WDK networking
+- segmentation of large TCP packets WDK networking
+- task offload WDK TCP/IP transport , LSOV1 and LSOV2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting a NIC's LSOV2 TCP-Packet-Segmentation Capabilities

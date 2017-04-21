@@ -3,7 +3,29 @@ title: What Happens to File Systems During System Boot
 author: windows-driver-content
 description: What Happens to File Systems During System Boot
 ms.assetid: f6ed556a-2353-4a0d-8db1-1fb5eac3c1ef
-keywords: ["filter drivers WDK file system , boot process", "file system filter drivers WDK , boot process", "file system drivers WDK , boot process", "File System Recognizer WDK", "FsRec WDK", "filter drivers WDK file system , driver loading", "file system filter drivers WDK , driver loading", "driver loading WDK file system", "loading drivers WDK file system", "load order groups WDK file system", "reinitialization routines WDK file system", "boot drivers WDK file system", "boot-start drivers WDK file system", "global file system queues WDK file system", "file system queues WDK", "queues WDK file system", "FsRec"]
+keywords:
+- filter drivers WDK file system , boot process
+- file system filter drivers WDK , boot process
+- file system drivers WDK , boot process
+- File System Recognizer WDK
+- FsRec WDK
+- filter drivers WDK file system , driver loading
+- file system filter drivers WDK , driver loading
+- driver loading WDK file system
+- loading drivers WDK file system
+- load order groups WDK file system
+- reinitialization routines WDK file system
+- boot drivers WDK file system
+- boot-start drivers WDK file system
+- global file system queues WDK file system
+- file system queues WDK
+- queues WDK file system
+- FsRec
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What Happens to File Systems During System Boot

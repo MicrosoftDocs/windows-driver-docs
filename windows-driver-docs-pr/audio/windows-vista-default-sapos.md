@@ -2,7 +2,15 @@
 title: Windows Vista Default sAPOs
 description: Windows Vista Default sAPOs
 ms.assetid: 713d848c-4b74-4682-a625-eba5f9f24bb7
-keywords: ["sAPO WDK", "Enhancements tab WDK", "default sAPO WDK"]
+keywords:
+- sAPO WDK
+- Enhancements tab WDK
+- default sAPO WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Vista Default sAPOs

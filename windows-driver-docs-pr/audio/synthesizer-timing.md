@@ -2,7 +2,24 @@
 title: Synthesizer Timing
 description: Synthesizer Timing
 ms.assetid: 38aca8b7-f895-4b16-aaac-5a13973cf976
-keywords: ["synthesizers WDK audio , timing", "time WDK audio", "reference clocks WDK audio", "sample clocks WDK audio", "clocks WDK audio , synthesizers", "user-mode synths WDK audio , synthesizer timing", "custom synths WDK audio , synthesizer timing", "DirectMusic custom rendering WDK audio , synthesizer timing", "custom rendering in user mode WDK audio , synthesizer timing", "DirectMusic WDK audio , synthesizers", "timers WDK audio", "clocks WDK audio"]
+keywords:
+- synthesizers WDK audio , timing
+- time WDK audio
+- reference clocks WDK audio
+- sample clocks WDK audio
+- clocks WDK audio , synthesizers
+- user-mode synths WDK audio , synthesizer timing
+- custom synths WDK audio , synthesizer timing
+- DirectMusic custom rendering WDK audio , synthesizer timing
+- custom rendering in user mode WDK audio , synthesizer timing
+- DirectMusic WDK audio , synthesizers
+- timers WDK audio
+- clocks WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synthesizer Timing

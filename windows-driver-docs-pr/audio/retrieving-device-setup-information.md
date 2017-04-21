@@ -2,7 +2,16 @@
 title: Retrieving Device Setup Information
 description: Retrieving Device Setup Information
 ms.assetid: 95e88e4a-5a31-4d82-99ea-c9a4d7766c0f
-keywords: ["audio adapters WDK , retrieving setup information", "adapter drivers WDK audio , retrieving setup information", "Port Class audio adapters WDK , retrieving setup information", "retrieving device setup information"]
+keywords:
+- audio adapters WDK , retrieving setup information
+- adapter drivers WDK audio , retrieving setup information
+- Port Class audio adapters WDK , retrieving setup information
+- retrieving device setup information
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieving Device Setup Information

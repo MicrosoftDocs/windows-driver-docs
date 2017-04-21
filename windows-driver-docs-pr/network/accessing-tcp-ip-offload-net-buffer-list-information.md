@@ -2,7 +2,18 @@
 title: Accessing TCP/IP Offload NET\_BUFFER\_LIST Information
 description: Accessing TCP/IP Offload NET\_BUFFER\_LIST Information
 ms.assetid: 555c9533-ab3f-43f0-9139-b1de33a6b1a7
-keywords: ["TCP/IP offload WDK networking , out-of-band data", "offload WDK TCP/IP transport , out-of-band data WDK TCP/IP offload", "OOB data WDK TCP/IP offload", "NET_BUFFER_LIST", "task offload WDK TCP/IP transport , out-of-band data", "connection offload WDK TCP/IP transport , out-of-band data"]
+keywords:
+- TCP/IP offload WDK networking , out-of-band data
+- offload WDK TCP/IP transport , out-of-band data WDK TCP/IP offload
+- OOB data WDK TCP/IP offload
+- NET_BUFFER_LIST
+- task offload WDK TCP/IP transport , out-of-band data
+- connection offload WDK TCP/IP transport , out-of-band data
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing TCP/IP Offload NET\_BUFFER\_LIST Information

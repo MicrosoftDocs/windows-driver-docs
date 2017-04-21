@@ -2,7 +2,16 @@
 title: Calculating the Timestamp Delta
 description: Calculating the Timestamp Delta
 ms.assetid: ed8daa7b-4804-4fef-9f63-fa06bc9e02ae
-keywords: ["timestamps WDK TCP chimney offload , calculating delta", "TCP timestamps WDK TCP chimney offload , calculating delta", "calculating timestamp delta WDK TCP chimney offload", "delta calculation WDK TCP timestamps"]
+keywords:
+- timestamps WDK TCP chimney offload , calculating delta
+- TCP timestamps WDK TCP chimney offload , calculating delta
+- calculating timestamp delta WDK TCP chimney offload
+- delta calculation WDK TCP timestamps
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calculating the Timestamp Delta

@@ -2,7 +2,17 @@
 title: Stampinf
 description: Stampinf
 ms.assetid: 5cab6adc-1511-42f2-a873-34cd10c638f5
-keywords: ["Stampinf WDK", "KMDF drivers WDK", "INF files, creating", "creating INF files WDK", "INX files WDK UMDF"]
+keywords:
+- Stampinf WDK
+- KMDF drivers WDK
+- INF files, creating
+- creating INF files WDK
+- INX files WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stampinf

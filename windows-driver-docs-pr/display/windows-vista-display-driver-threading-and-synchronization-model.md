@@ -2,7 +2,18 @@
 title: WDDM Threading and Synchronization Model
 description: WDDM Threading and Synchronization Model
 ms.assetid: 7d5397d5-0bce-4a0b-aa10-bac8dbd0b515
-keywords: ["display driver model WDK Windows Vista , threading", "Windows Vista display driver model WDK , threading", "display driver model WDK Windows Vista , synchronization", "Windows Vista display driver model WDK , synchronization", "threading WDK display", "synchronization WDK display"]
+keywords:
+- display driver model WDK Windows Vista , threading
+- Windows Vista display driver model WDK , threading
+- display driver model WDK Windows Vista , synchronization
+- Windows Vista display driver model WDK , synchronization
+- threading WDK display
+- synchronization WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDDM Threading and Synchronization Model

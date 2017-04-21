@@ -3,7 +3,13 @@ title: Details of the IPrintCoreHelper Interface
 author: windows-driver-content
 description: Details of the IPrintCoreHelper Interface
 ms.assetid: df736ca2-425e-4fc8-bdcb-bdbd5caa3e22
-keywords: ["IPrintCoreHelper"]
+keywords:
+- IPrintCoreHelper
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Details of the IPrintCoreHelper Interface

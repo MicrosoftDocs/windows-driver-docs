@@ -2,7 +2,17 @@
 title: Assigning Precedence to Protection Levels
 description: Assigning Precedence to Protection Levels
 ms.assetid: 87a63d30-4aa2-4835-87bc-1acb062bde26
-keywords: ["protection levels WDK display , assigning precedence", "protection levels WDK display , ACP precedence", "protection levels WDK display , CGMS-A precedence", "protection levels WDK display , HDCP precedence", "protection levels WDK display , DPCP precedence"]
+keywords:
+- protection levels WDK display , assigning precedence
+- protection levels WDK display , ACP precedence
+- protection levels WDK display , CGMS-A precedence
+- protection levels WDK display , HDCP precedence
+- protection levels WDK display , DPCP precedence
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Assigning Precedence to Protection Levels

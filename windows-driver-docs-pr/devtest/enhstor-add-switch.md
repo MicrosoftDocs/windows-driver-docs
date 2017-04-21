@@ -1,14 +1,20 @@
----
+﻿---
 title: /Add Switch
-description: The /Add switch of the Enhanced Storage Certificate Management tool adds a certificate to the authentication silo certificate (ASC) store on a specified IEEE 1667-compliant USB storage device.Note  In this topic, the specified IEEE 1667-compliant USB storage device is known as the target device.�
+description: The /Add switch of the Enhanced Storage Certificate Management tool adds a certificate to the authentication silo certificate (ASC) store on a specified USB device.
 ms.assetid: cca064ae-f525-45e4-9778-5fb23efbce88
-keywords: ["/Add Switch Driver Development Tools"]
+keywords:
+- /Add Switch Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - /Add
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # /Add Switch

@@ -2,7 +2,17 @@
 title: Handling Queries in a CoNDIS WAN Miniport Driver
 description: Handling Queries in a CoNDIS WAN Miniport Driver
 ms.assetid: 634618ce-3168-4729-b74a-e69f27b62ef4
-keywords: ["CoNDIS WAN drivers WDK networking , query handling", "OID_WAN_CO_GET_INFO", "OID_WAN_CO_GET_LINK_INFO", "OID_WAN_CO_GET_STATS_INFO", "queries WDK CoNDIS WAN"]
+keywords:
+- CoNDIS WAN drivers WDK networking , query handling
+- OID_WAN_CO_GET_INFO
+- OID_WAN_CO_GET_LINK_INFO
+- OID_WAN_CO_GET_STATS_INFO
+- queries WDK CoNDIS WAN
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Queries in a CoNDIS WAN Miniport Driver

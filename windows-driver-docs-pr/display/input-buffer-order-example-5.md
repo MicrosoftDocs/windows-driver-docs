@@ -2,6 +2,11 @@
 title: Input Buffer Order Example 5
 description: Input Buffer Order Example 5
 ms.assetid: f0ba80bb-ff84-4944-aae5-52eb0848edf5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Input Buffer Order Example 5

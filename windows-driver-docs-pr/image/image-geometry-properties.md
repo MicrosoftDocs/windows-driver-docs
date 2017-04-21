@@ -3,6 +3,11 @@ title: Image Geometry Properties
 author: windows-driver-content
 description: Image Geometry Properties
 ms.assetid: d1343ad4-3a54-414c-bc08-e07e0fb079cd
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Image Geometry Properties

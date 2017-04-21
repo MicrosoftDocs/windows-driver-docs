@@ -2,7 +2,16 @@
 title: Adding Boot Entries
 description: Adding Boot Entries
 ms.assetid: 5027d7ea-6f8b-435a-849f-06727068d18b
-keywords: ["boot options WDK , adding boot entries", "boot entries WDK", "adding boot entries", "Boot.ini files WDK , adding boot entries"]
+keywords:
+- boot options WDK , adding boot entries
+- boot entries WDK
+- adding boot entries
+- Boot.ini files WDK , adding boot entries
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Boot Entries

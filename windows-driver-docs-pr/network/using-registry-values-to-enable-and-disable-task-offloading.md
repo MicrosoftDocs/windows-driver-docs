@@ -2,7 +2,16 @@
 title: Using Registry Values to Enable and Disable Task Offloading
 description: Using Registry Values to Enable and Disable Task Offloading
 ms.assetid: 32efd685-365c-4347-9599-fe429569d35b
-keywords: ["task offload WDK TCP/IP transport , registry values", "registry WDK TCP/IP offload", "task offload WDK TCP/IP transport , enabling services", "task offload WDK TCP/IP transport , disabling services"]
+keywords:
+- task offload WDK TCP/IP transport , registry values
+- registry WDK TCP/IP offload
+- task offload WDK TCP/IP transport , enabling services
+- task offload WDK TCP/IP transport , disabling services
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Registry Values to Enable and Disable Task Offloading

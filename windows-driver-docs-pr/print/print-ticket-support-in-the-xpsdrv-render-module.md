@@ -3,6 +3,11 @@ title: Print Ticket Support in the XPSDrv Render Module
 author: windows-driver-content
 description: Print Ticket Support in the XPSDrv Render Module
 ms.assetid: ea9bb6a1-b878-4402-a865-adc65d480373
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Ticket Support in the XPSDrv Render Module

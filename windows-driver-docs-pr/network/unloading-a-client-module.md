@@ -2,7 +2,15 @@
 title: Unloading a Client Module
 description: Unloading a Client Module
 ms.assetid: 2cca2918-ce0b-4016-b3f2-fbbc06c0b7f7
-keywords: ["client modules WDK Network Module Registrar , unloading", "unloading network modules", "NmrDeregisterClient"]
+keywords:
+- client modules WDK Network Module Registrar , unloading
+- unloading network modules
+- NmrDeregisterClient
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unloading a Client Module

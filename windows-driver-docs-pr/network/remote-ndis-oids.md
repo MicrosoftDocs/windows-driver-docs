@@ -2,6 +2,11 @@
 title: Remote NDIS OIDs
 description: Remote NDIS OIDs
 ms.assetid: c97592e8-f395-475e-8e6c-6366d1605075
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote NDIS OIDs

@@ -2,7 +2,15 @@
 title: Subdevice Creation
 description: Subdevice Creation
 ms.assetid: e4ba1209-adc6-48c3-9633-247e9e3849bc
-keywords: ["audio adapters WDK , subdevices", "adapter drivers WDK audio , subdevices", "subdevices WDK audio"]
+keywords:
+- audio adapters WDK , subdevices
+- adapter drivers WDK audio , subdevices
+- subdevices WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Subdevice Creation

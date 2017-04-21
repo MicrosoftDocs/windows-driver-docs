@@ -2,7 +2,25 @@
 title: KMixer Driver Sample Rate Conversion and Mixing Policy
 description: KMixer Driver Sample Rate Conversion and Mixing Policy
 ms.assetid: 713937da-ccdc-482e-9954-d6d714f33581
-keywords: ["SRC WDK audio", "sample-rate conversion WDK audio", "WDM audio drivers WDK , sample-rate conversions", "audio drivers WDK , sample-rate conversions", "KMixer system driver WDK audio , sample-rate conversion", "KS stream mixing WDK audio", "combining audio streams WDK", "stream mixing WDK audio", "SRC WDK audio , about sample-rate conversion", "sample-rate conversion WDK audio , about sample-rate conversion", "kernel streaming WDK audio", "playback WDK audio", "mixing audio WDK"]
+keywords:
+- SRC WDK audio
+- sample-rate conversion WDK audio
+- WDM audio drivers WDK , sample-rate conversions
+- audio drivers WDK , sample-rate conversions
+- KMixer system driver WDK audio , sample-rate conversion
+- KS stream mixing WDK audio
+- combining audio streams WDK
+- stream mixing WDK audio
+- SRC WDK audio , about sample-rate conversion
+- sample-rate conversion WDK audio , about sample-rate conversion
+- kernel streaming WDK audio
+- playback WDK audio
+- mixing audio WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KMixer Driver Sample Rate Conversion and Mixing Policy

@@ -3,6 +3,11 @@ title: Describing a WIA Device Using WIA Items
 author: windows-driver-content
 description: Describing a WIA Device Using WIA Items
 ms.assetid: d8149f78-e095-48f9-be79-ff115b25f14e
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Describing a WIA Device Using WIA Items

@@ -3,7 +3,21 @@ title: Handling Requests to Stop a Device
 author: windows-driver-content
 description: Handling Requests to Stop a Device
 ms.assetid: 4c8f37b3-7961-4c78-a88b-3eec58155e66
-keywords: ["PnP WDK KMDF , stopping devices", "Plug and Play WDK KMDF , stopping devices", "redistributing resources WDK KMDF", "resource redistribution WDK KMDF", "removing devices WDK KMDF", "device stop requests WDK KMDF", "device stop requests WKD KMDF , PnP", "temporary device stoppage WDK KMDF", "temporary device stoppage WDK KMDF , PnP"]
+keywords:
+- PnP WDK KMDF , stopping devices
+- Plug and Play WDK KMDF , stopping devices
+- redistributing resources WDK KMDF
+- resource redistribution WDK KMDF
+- removing devices WDK KMDF
+- device stop requests WDK KMDF
+- device stop requests WKD KMDF , PnP
+- temporary device stoppage WDK KMDF
+- temporary device stoppage WDK KMDF , PnP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Requests to Stop a Device

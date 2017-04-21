@@ -2,6 +2,11 @@
 title: ProvisioningEngine
 description: ProvisioningEngine
 ms.assetid: b6b10145-d554-43be-8682-1355145b3241
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ProvisioningEngine

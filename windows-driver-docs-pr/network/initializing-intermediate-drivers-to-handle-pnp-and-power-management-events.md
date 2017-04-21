@@ -2,6 +2,11 @@
 title: Handling PnP and Power Management Events in Intermediate Drivers
 description: Initializing Intermediate Drivers to Handle PnP and Power Management Events
 ms.assetid: 7c9f10f1-1094-4b43-990b-fc3b3fee5ed1
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing Intermediate Drivers to Handle PnP and Power Management Events

@@ -2,7 +2,21 @@
 title: MIDI to Wave
 description: MIDI to Wave
 ms.assetid: 0c69ce48-ded0-44b8-9d34-20decb75058e
-keywords: ["synthesizers WDK audio , MIDI-to-wave conversions", "MIDI-to-wave conversions WDK audio", "wave streams WDK audio", "custom synths WDK audio , MIDI-to-wave conversions", "user-mode synths WDK audio , MIDI-to-wave conversions", "converting MIDI to wave", "DirectMusic WDK audio , MIDI-to-wave conversions", "custom rendering in user mode WDK audio , MIDI-to-wave conversions", "DirectMusic custom rendering WDK audio , MIDI-to-wave conversions"]
+keywords:
+- synthesizers WDK audio , MIDI-to-wave conversions
+- MIDI-to-wave conversions WDK audio
+- wave streams WDK audio
+- custom synths WDK audio , MIDI-to-wave conversions
+- user-mode synths WDK audio , MIDI-to-wave conversions
+- converting MIDI to wave
+- DirectMusic WDK audio , MIDI-to-wave conversions
+- custom rendering in user mode WDK audio , MIDI-to-wave conversions
+- DirectMusic custom rendering WDK audio , MIDI-to-wave conversions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MIDI to Wave

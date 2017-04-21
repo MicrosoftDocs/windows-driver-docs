@@ -1,8 +1,16 @@
 ---
 title: Providing seamless state transitions in WDDM 1.2 and later
-description: Starting in Windows 8, several features help to minimize or eliminate screen flashes and flickers during the boot process, during transitions from lower power states, and during transitions back to operating system control in driver upgrades or system bug checks. In addition, system firmware on Windows 8 and later computers must detect native resolution and timing of the integrated display panel at the time of power up and hand off this information to the operating system. Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers must support this behavior.
+description: several features help to minimize screen flashes during the boot process, transitions from lower power states, and transitions back to operating system control.
 ms.assetid: CD2208AA-62B6-4BAD-BE7C-0791B13D1E96
-keywords: ["state transitions WDK display", "resume from hibernation WDK display", "firmware modes in display drivers WDK display"]
+keywords:
+- state transitions WDK display
+- resume from hibernation WDK display
+- firmware modes in display drivers WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing seamless state transitions in WDDM 1.2 and later

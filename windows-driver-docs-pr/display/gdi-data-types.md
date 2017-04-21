@@ -2,7 +2,16 @@
 title: GDI Data Types
 description: GDI Data Types
 ms.assetid: 2054aa16-6d86-4db3-8b16-4570b0374e23
-keywords: ["GDI WDK Windows 2000 display , data types", "graphics drivers WDK Windows 2000 display , data types", "drawing WDK GDI , data types", "data types WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , data types
+- graphics drivers WDK Windows 2000 display , data types
+- drawing WDK GDI , data types
+- data types WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Data Types

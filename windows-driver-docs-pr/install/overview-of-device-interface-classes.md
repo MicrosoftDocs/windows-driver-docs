@@ -2,7 +2,16 @@
 title: Overview of Device Interface Classes
 description: Overview of Device Interface Classes
 ms.assetid: e463e3f0-cbc8-490e-a7c4-4837d43c20e3
-keywords: ["interface classes WDK device installations", "device interfaces WDK device installations", "interfaces WDK device", "device interface classes WDK device installations"]
+keywords:
+- interface classes WDK device installations
+- device interfaces WDK device installations
+- interfaces WDK device
+- device interface classes WDK device installations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Device Interface Classes

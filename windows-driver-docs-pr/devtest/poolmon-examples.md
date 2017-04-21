@@ -2,7 +2,15 @@
 title: PoolMon Examples
 description: PoolMon Examples
 ms.assetid: aff0abdd-7d68-49b8-b9a1-71ab866c8487
-keywords: ["PoolMon WDK , examples", "Memory Pool Monitor WDK , examples", "examples WDK PoolMon"]
+keywords:
+- PoolMon WDK , examples
+- Memory Pool Monitor WDK , examples
+- examples WDK PoolMon
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PoolMon Examples

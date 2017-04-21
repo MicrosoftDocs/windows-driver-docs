@@ -3,6 +3,11 @@ title: Driver Behavior on Upload
 author: windows-driver-content
 description: Driver Behavior on Upload
 ms.assetid: a8edfd88-89b9-4759-b9b3-6f1ff2ae7fc9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Behavior on Upload

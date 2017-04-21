@@ -2,7 +2,16 @@
 title: TCP Chimney Data I/O Operations
 description: TCP Chimney Data I/O Operations
 ms.assetid: 85034edc-d9b5-4b81-b2ac-110372f94156
-keywords: ["TCP chimney offload WDK networking , data I/O operations", "chimney offload WDK networking , data I/O operations", "data I/O WDK TCP chimney offload", "I/O WDK TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , data I/O operations
+- chimney offload WDK networking , data I/O operations
+- data I/O WDK TCP chimney offload
+- I/O WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCP Chimney Data I/O Operations

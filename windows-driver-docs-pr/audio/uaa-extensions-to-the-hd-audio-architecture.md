@@ -2,7 +2,16 @@
 title: UAA Extensions to the HD Audio Architecture
 description: UAA Extensions to the HD Audio Architecture
 ms.assetid: 895dc7b6-f484-4be2-8f43-112254d6ef4b
-keywords: ["HD Audio, Universal Audio Architecture", "High Definition Audio (HD Audio), Universal Audio Architecture", "UAA WDK", "Universal Audio Architecture WDK"]
+keywords:
+- HD Audio, Universal Audio Architecture
+- High Definition Audio (HD Audio), Universal Audio Architecture
+- UAA WDK
+- Universal Audio Architecture WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UAA Extensions to the HD Audio Architecture

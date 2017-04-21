@@ -3,7 +3,16 @@ title: Guaranteeing Forward Progress of I/O Operations
 author: windows-driver-content
 description: Guaranteeing Forward Progress of I/O Operations
 ms.assetid: e230eb3b-54ac-43b1-ac2b-8fa137cee43e
-keywords: ["guaranteed forward progress WDK KMDF", "forward progress, guaranteed WDK KMDF", "low-memory situations WDK KMDF", "I/O queues WDK KMDF , guaranteed forward progress"]
+keywords:
+- guaranteed forward progress WDK KMDF
+- forward progress, guaranteed WDK KMDF
+- low-memory situations WDK KMDF
+- I/O queues WDK KMDF , guaranteed forward progress
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Guaranteeing Forward Progress of I/O Operations

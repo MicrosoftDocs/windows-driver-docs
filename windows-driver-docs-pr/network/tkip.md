@@ -2,7 +2,16 @@
 title: TKIP
 description: TKIP
 ms.assetid: eabc05ea-2e9e-408d-b684-aaa82dc42e2c
-keywords: ["cipher operations WDK Native 802.11 , cipher algorithms", "algorithms WDK Native 802.11 cipher", "TKIP WDK Native 802.11", "Temporal Key Integrity Protocol WDK Native 802.11"]
+keywords:
+- cipher operations WDK Native 802.11 , cipher algorithms
+- algorithms WDK Native 802.11 cipher
+- TKIP WDK Native 802.11
+- Temporal Key Integrity Protocol WDK Native 802.11
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TKIP

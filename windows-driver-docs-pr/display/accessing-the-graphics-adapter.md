@@ -2,7 +2,16 @@
 title: Accessing the Graphics Adapter
 description: Accessing the Graphics Adapter
 ms.assetid: 85c99b4b-690c-49f1-b6ed-4b72b6049026
-keywords: ["display driver model WDK Windows 2000 , graphics", "Windows 2000 display driver model WDK , graphics", "display drivers WDK Windows 2000 , graphics", "graphics card access WDK Windows 2000 display"]
+keywords:
+- display driver model WDK Windows 2000 , graphics
+- Windows 2000 display driver model WDK , graphics
+- display drivers WDK Windows 2000 , graphics
+- graphics card access WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing the Graphics Adapter

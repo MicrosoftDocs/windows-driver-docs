@@ -2,6 +2,11 @@
 title: Handling the NDIS Selective Suspend Idle Notification
 description: Handling the NDIS Selective Suspend Idle Notification
 ms.assetid: 02D13260-5816-4621-8527-E1E79C9AE975
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the NDIS Selective Suspend Idle Notification

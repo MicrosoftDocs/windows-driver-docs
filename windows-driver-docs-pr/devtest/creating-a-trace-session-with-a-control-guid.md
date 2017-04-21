@@ -2,7 +2,15 @@
 title: Creating a Trace Session with a Control GUID
 description: Creating a Trace Session with a Control GUID
 ms.assetid: a651ac6b-9ae0-46b0-8180-59d70ceb57fe
-keywords: ["control GUIDs WDK", "GUIDs WDK software tracing", "identifiers WDK software tracing"]
+keywords:
+- control GUIDs WDK
+- GUIDs WDK software tracing
+- identifiers WDK software tracing
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Trace Session with a Control GUID

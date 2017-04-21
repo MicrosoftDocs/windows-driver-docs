@@ -2,6 +2,11 @@
 title: DesktopAutoplayHandler
 description: DesktopAutoplayHandler
 ms.assetid: e1a07580-36dd-4618-b522-3f7605c9b87b
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DesktopAutoplayHandler

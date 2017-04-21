@@ -2,7 +2,13 @@
 title: CM_PROB_REGISTRY
 description: CM_PROB_REGISTRY
 ms.assetid: 162586c4-f67f-40e8-bbbb-2b5c574732f4
-keywords: ["CM_PROB_REGISTRY"]
+keywords:
+- CM_PROB_REGISTRY
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CM_PROB_REGISTRY

@@ -1,7 +1,12 @@
----
+﻿---
 title: Code Analysis for Drivers
-description: Code Analysis for Drivers is a compile-time static verification tool that detects basic coding errors in C and C++ programs and includes a specialized module that is designed to detect errors in (primarily) kernel-mode driver code.
+description: Code Analysis for Drivers is a compile-time static verification tool that detects basic coding errors in C and C++ programs.
 ms.assetid: 2F3549EF-B50F-455A-BDC7-1F67782B8DCA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Analysis for Drivers

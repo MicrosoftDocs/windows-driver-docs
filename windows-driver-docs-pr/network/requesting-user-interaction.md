@@ -2,7 +2,14 @@
 title: Requesting User Interaction
 description: Requesting User Interaction
 ms.assetid: 888faeb0-1984-4b0f-b955-2772a6bd86f7
-keywords: ["user interaction WDK Native 802.11 IHV Extensions DLL", "requesting user interaction WDK Native 802.11 IHV Extensions DLL"]
+keywords:
+- user interaction WDK Native 802.11 IHV Extensions DLL
+- requesting user interaction WDK Native 802.11 IHV Extensions DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requesting User Interaction

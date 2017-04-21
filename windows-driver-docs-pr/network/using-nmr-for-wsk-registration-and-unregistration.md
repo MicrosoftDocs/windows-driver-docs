@@ -2,7 +2,16 @@
 title: Using NMR for WSK Registration and Unregistration
 description: Using NMR for WSK Registration and Unregistration
 ms.assetid: 942fb4e6-ec2e-47ab-9b40-2bd0b7c72ec0
-keywords: ["Winsock Kernel WDK networking , registering", "registering Winsock Kernel applications", "WSK WDK networking , registering", "unregistering Winsock Kernel applications"]
+keywords:
+- Winsock Kernel WDK networking , registering
+- registering Winsock Kernel applications
+- WSK WDK networking , registering
+- unregistering Winsock Kernel applications
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using NMR for WSK Registration and Unregistration

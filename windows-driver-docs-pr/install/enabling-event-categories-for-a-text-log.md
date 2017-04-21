@@ -2,7 +2,15 @@
 title: Enabling Event Categories for a Text Log
 description: Enabling Event Categories for a Text Log
 ms.assetid: 555f698b-69e2-469b-b958-185cb35eeb5a
-keywords: ["event categories WDK SetupAPI logging", "text logs WDK SetupAPI , event categories", "LogMask"]
+keywords:
+- event categories WDK SetupAPI logging
+- text logs WDK SetupAPI , event categories
+- LogMask
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling Event Categories for a Text Log

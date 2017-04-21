@@ -1,6 +1,11 @@
 ---
 Description: Testing and Debugging the Sample Driver
 title: Testing and Debugging the Sample Driver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing and Debugging the Sample Driver

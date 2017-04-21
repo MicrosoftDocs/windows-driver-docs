@@ -2,6 +2,11 @@
 title: Indirect Display Driver Model Overview
 description: The Indirect Display driver model was designed to provide a simple user mode driver model to support monitors that are not connected to traditional GPU display outputs.
 ms.assetid: E2E64500-5F99-42A7-8945-B496026EA142
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Indirect Display Driver Model Overview

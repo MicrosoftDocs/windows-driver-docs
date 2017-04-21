@@ -2,6 +2,11 @@
 title: Could not write SLAM\_CFILES
 description: Could not write SLAM\_CFILES
 ms.assetid: c347a549-8dd3-431a-aa26-633ba511870c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Could not write SLAM\_CFILES

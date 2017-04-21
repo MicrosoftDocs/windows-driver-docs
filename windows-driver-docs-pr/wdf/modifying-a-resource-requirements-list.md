@@ -3,7 +3,14 @@ title: Modifying a Resource Requirements List
 author: windows-driver-content
 description: Modifying a Resource Requirements List
 ms.assetid: 75391dd2-5ae1-4562-97a0-4de21a08b61c
-keywords: ["hardware resources WDK KMDF , modifying resource requirements lists", "resource requirements lists WDK KMDF , modifying"]
+keywords:
+- hardware resources WDK KMDF , modifying resource requirements lists
+- resource requirements lists WDK KMDF , modifying
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Modifying a Resource Requirements List

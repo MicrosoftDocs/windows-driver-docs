@@ -2,7 +2,19 @@
 title: OPM Terminology
 description: OPM Terminology
 ms.assetid: 9cf9ddd2-53d2-42f6-a4aa-7c0a66a4781b
-keywords: ["OPM WDK display , terminology", "connectors WDK display", "protection types WDK display", "protection levels WDK display", "OPM WDK display , connectors", "OPM WDK display , protection types", "OPM WDK display , protection levels"]
+keywords:
+- OPM WDK display , terminology
+- connectors WDK display
+- protection types WDK display
+- protection levels WDK display
+- OPM WDK display , connectors
+- OPM WDK display , protection types
+- OPM WDK display , protection levels
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # OPM Terminology

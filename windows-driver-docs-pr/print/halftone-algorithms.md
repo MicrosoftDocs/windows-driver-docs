@@ -3,7 +3,15 @@ title: Halftone Algorithms
 author: windows-driver-content
 description: Halftone Algorithms
 ms.assetid: 1831f952-4c83-4dfa-87e7-1c755f143227
-keywords: ["HP-GL/2 monochrome WDK Unidrv , halftone algorithms", "PCL-5e WDK Unidrv , halftone algorithms", "halftoning WDK Unidrv"]
+keywords:
+- HP-GL/2 monochrome WDK Unidrv , halftone algorithms
+- PCL-5e WDK Unidrv , halftone algorithms
+- halftoning WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Halftone Algorithms

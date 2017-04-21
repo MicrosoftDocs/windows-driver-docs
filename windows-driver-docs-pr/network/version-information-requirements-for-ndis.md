@@ -2,6 +2,11 @@
 title: Version Information Requirements for NDIS
 description: Version Information Requirements for NDIS
 ms.assetid: b2850077-271f-4bb6-8710-ae9415ad5eda
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Version Information Requirements for NDIS

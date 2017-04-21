@@ -3,7 +3,19 @@ title: Specifying the KMDF Co-installer in an INF File
 author: windows-driver-content
 description: If you include a co-installer in your driver package, read this topic for information about sections you must provide in your driver's INF file.
 ms.assetid: e4f476ad-1ab5-44e3-9368-7467479bda85
-keywords: ["Kernel-Mode Driver Framework WDK , installing drivers", "framework-based drivers WDK KMDF , installing", "INF files WDK KMDF , coinstallers", "coinstallers WDK KMDF", "CoInstallers section WDK KMDF", "DDInstall section WDK KMDF", "Wdf INF file section WDK KMDF"]
+keywords:
+- Kernel-Mode Driver Framework WDK , installing drivers
+- framework-based drivers WDK KMDF , installing
+- INF files WDK KMDF , coinstallers
+- coinstallers WDK KMDF
+- CoInstallers section WDK KMDF
+- DDInstall section WDK KMDF
+- Wdf INF file section WDK KMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying the KMDF Co-installer in an INF File

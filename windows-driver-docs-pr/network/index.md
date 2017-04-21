@@ -2,7 +2,14 @@
 title: Network Driver Design Guide
 description: Network Driver Design Guide
 ms.assetid: 200517b2-d0a0-40cc-a5cb-9e2067e01028
-keywords: ["network drivers WDK", "networking"]
+keywords:
+- network drivers WDK
+- networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Driver Design Guide

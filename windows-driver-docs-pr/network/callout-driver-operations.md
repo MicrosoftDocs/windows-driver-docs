@@ -2,7 +2,15 @@
 title: Callout Driver Operations
 description: Callout Driver Operations
 ms.assetid: 24940254-c9ed-45f7-8a67-20978a8efd3f
-keywords: ["Windows Filtering Platform callout drivers WDK , operations", "callout drivers WDK Windows Filtering Platform , operations", "callouts WDK Windows Filtering Platform"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , operations
+- callout drivers WDK Windows Filtering Platform , operations
+- callouts WDK Windows Filtering Platform
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Callout Driver Operations

@@ -2,6 +2,11 @@
 title: Enabling mobile operator notifications and system events
 description: Enabling mobile operator notifications and system events
 ms.assetid: 988bafcc-ad8e-446d-9336-85c19cf05577
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling mobile operator notifications and system events

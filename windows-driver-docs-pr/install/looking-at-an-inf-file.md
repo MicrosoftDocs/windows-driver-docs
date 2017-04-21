@@ -2,7 +2,15 @@
 title: Looking at an INF File
 description: Looking at an INF File
 ms.assetid: 4d9d5f28-b643-4369-8bf8-94703e8926d2
-keywords: ["INF files WDK device installations , structure", "INF files WDK device installations , sections", "sections WDK INF files"]
+keywords:
+- INF files WDK device installations , structure
+- INF files WDK device installations , sections
+- sections WDK INF files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Looking at an INF File

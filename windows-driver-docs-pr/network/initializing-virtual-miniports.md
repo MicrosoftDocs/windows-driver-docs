@@ -2,7 +2,16 @@
 title: Initializing Virtual Miniports
 description: Initializing Virtual Miniports
 ms.assetid: b712fe29-fd56-4abd-bab6-e335350a20c2
-keywords: ["underlying adapter opening WDK networking", "opening underlying adapters", "virtual miniports WDK networking", "initializing virtual miniports"]
+keywords:
+- underlying adapter opening WDK networking
+- opening underlying adapters
+- virtual miniports WDK networking
+- initializing virtual miniports
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing Virtual Miniports

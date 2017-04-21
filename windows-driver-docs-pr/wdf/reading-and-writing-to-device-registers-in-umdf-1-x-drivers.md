@@ -3,6 +3,11 @@ title: Reading and Writing to Device Registers in UMDF 1.x Drivers
 author: windows-driver-content
 description: Reading and Writing to Device Registers in UMDF 1.x Drivers
 ms.assetid: A0640E60-B0DF-4CAD-B292-CC1875EF7F7D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading and Writing to Device Registers in UMDF 1.x Drivers

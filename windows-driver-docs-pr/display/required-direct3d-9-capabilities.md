@@ -1,7 +1,12 @@
----
+﻿---
 title: Required Direct3D 9 capabilities
 ms.assetid: AE8ED273-2329-4E53-9FCD-5A8E863AED83
-description: 
+description: Capabilities required for the user-mode driver to access Direct3D 9 features.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required Direct3D 9 capabilities

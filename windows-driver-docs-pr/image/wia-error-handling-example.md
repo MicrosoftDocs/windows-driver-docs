@@ -3,6 +3,11 @@ title: WIA Error Handling Example
 author: windows-driver-content
 description: WIA Error Handling Example
 ms.assetid: 7dc4b15e-40db-4e64-be41-d6bcc44603c6
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Error Handling Example

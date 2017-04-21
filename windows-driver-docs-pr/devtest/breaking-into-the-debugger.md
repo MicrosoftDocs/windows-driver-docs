@@ -2,7 +2,20 @@
 title: Breaking Into the Debugger
 description: Breaking Into the Debugger
 ms.assetid: c52c99a2-5db0-49e8-88a7-db075a32c26b
-keywords: ["debugging drivers WDK , breaking into the debugger", "breaking into the debugger WDK", "user-mode break routines WDK", "kernel-mode break routines WDK", "break routines WDK", "conditional break macros WDK", "break macros WDK", "routines WDK debugging , break"]
+keywords:
+- debugging drivers WDK , breaking into the debugger
+- breaking into the debugger WDK
+- user-mode break routines WDK
+- kernel-mode break routines WDK
+- break routines WDK
+- conditional break macros WDK
+- break macros WDK
+- routines WDK debugging , break
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Breaking Into the Debugger

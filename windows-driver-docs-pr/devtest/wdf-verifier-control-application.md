@@ -1,8 +1,21 @@
----
+﻿---
 title: WDF Verifier Control Application
-description: The Windows Driver Frameworks (WDF) Verifier control application (WdfVerifier.exe) is a tool for debugging Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers.
+description: The Windows Driver Frameworks (WDF) Verifier control application (WdfVerifier.exe) is a tool for debugging KMDF and UMDF drivers.
 ms.assetid: 896b63db-69c6-4fcb-a50f-0c4aed394b0b
-keywords: ["WDF Verifier control application WDK , features", "WDF Verifier WDK", "tools WDK , verifying drivers", "testing drivers WDK WDF", "debugging drivers WDK WDF", "verifying drivers WDK WDF", "verifier WDK KMDF", "verifier WDK UMDF"]
+keywords:
+- WDF Verifier control application WDK , features
+- WDF Verifier WDK
+- tools WDK , verifying drivers
+- testing drivers WDK WDF
+- debugging drivers WDK WDF
+- verifying drivers WDK WDF
+- verifier WDK KMDF
+- verifier WDK UMDF
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDF Verifier Control Application

@@ -2,7 +2,16 @@
 title: Deleting a Security Association from a NIC
 description: Deleting a Security Association from a NIC
 ms.assetid: 739a3fef-f0b4-4d7c-9d92-df52fd27915d
-keywords: ["security associations WDK IPsec offload", "SAs WDK IPsec offload", "ESP-protected packets WDK IPsec offload , security associations", "AH-protected packets WDK IPsec offload , security associations"]
+keywords:
+- security associations WDK IPsec offload
+- SAs WDK IPsec offload
+- ESP-protected packets WDK IPsec offload , security associations
+- AH-protected packets WDK IPsec offload , security associations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deleting a Security Association from a NIC

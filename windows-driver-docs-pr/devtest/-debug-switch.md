@@ -2,13 +2,19 @@
 title: /Debug Switch
 description: The /Debug switch of the Enhanced Storage Certificate Management tool reports on the capabilities and information about the authentication silo certificate (ASC) store in an IEEE 1667-compliant USB storage device.
 ms.assetid: 9a7c8fd0-34a8-4f60-a8cb-d5777645f672
-keywords: ["/Debug Switch Driver Development Tools"]
+keywords:
+- /Debug Switch Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - /Debug
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # /Debug Switch

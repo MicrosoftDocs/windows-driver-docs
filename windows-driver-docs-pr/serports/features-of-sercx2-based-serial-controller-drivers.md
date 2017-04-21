@@ -3,6 +3,11 @@ title: Features of SerCx2-Based Serial Controller Drivers
 author: windows-driver-content
 description: A SerCx2-based serial controller driver is a KMDF driver that uses the methods and callbacks in KMDF to perform generic driver operations, and that communicates with SerCx2 to perform operations that are specific to serial controller drivers.
 ms.assetid: 4A9B80F1-4DE1-4D35-ADDF-90058A4F8388
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Features of SerCx2-Based Serial Controller Drivers

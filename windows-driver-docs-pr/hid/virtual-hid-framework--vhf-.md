@@ -3,6 +3,11 @@ title: Write a HID source driver by using Virtual HID Framework (VHF)
 author: windows-driver-content
 description: Learn about writing a HID source driver that reports HID data to the operating system.
 ms.assetid: 26964963-792F-4529-B4FC-110BF5C65B35
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Write a HID source driver by using Virtual HID Framework (VHF)
@@ -223,7 +228,7 @@ The HID source driver can submit input reports by implementing the buffering pol
     }
     ```
 
-## Delete the virtual HID device
+## <a href="" id="delete-the-virtual-hid-device"></a> Delete the virtual HID device
 
 
 Delete the virtual HID device by calling [**VhfDelete**](https://msdn.microsoft.com/library/windows/hardware/dn925038).

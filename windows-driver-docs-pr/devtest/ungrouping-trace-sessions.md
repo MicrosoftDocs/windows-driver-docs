@@ -2,7 +2,15 @@
 title: Ungrouping Trace Sessions
 description: Ungrouping Trace Sessions
 ms.assetid: 8ff4d692-85c9-4282-8046-a54170fd9dbc
-keywords: ["grouping trace sessions", "trace sessions WDK , groups", "ungrouping trace sessions"]
+keywords:
+- grouping trace sessions
+- trace sessions WDK , groups
+- ungrouping trace sessions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Ungrouping Trace Sessions

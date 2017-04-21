@@ -2,7 +2,18 @@
 title: Determining Whether a Device Is Plugged In
 description: Determining Whether a Device Is Plugged In
 ms.assetid: 26dc3c2b-49a6-4bba-b86b-2c93a1914f87
-keywords: ["reinstalling unplugged devices", "unplugged device reinstallation WDK", "checking plugged in devices", "verifying plugged in devices", "plugged in device checks WDK", "determining plugged in devices WDK"]
+keywords:
+- reinstalling unplugged devices
+- unplugged device reinstallation WDK
+- checking plugged in devices
+- verifying plugged in devices
+- plugged in device checks WDK
+- determining plugged in devices WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining Whether a Device Is Plugged In

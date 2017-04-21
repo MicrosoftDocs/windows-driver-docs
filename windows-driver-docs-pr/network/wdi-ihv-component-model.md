@@ -2,6 +2,11 @@
 title: WDI IHV component model
 description: This section provides an overview of the NDIS interfaces for the WDI miniport driver and the expectations for those interfaces.The IHV component in the WDI model is an NDIS miniport.
 ms.assetid: FF670015-BB70-4703-BBA9-69130213D7D1
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI IHV component model

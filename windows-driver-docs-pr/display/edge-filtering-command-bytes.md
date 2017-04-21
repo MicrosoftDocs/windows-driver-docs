@@ -2,7 +2,16 @@
 title: Edge Filtering Command Bytes
 description: Edge Filtering Command Bytes
 ms.assetid: eefb580a-133d-4c9e-a8d2-2d114107e2ea
-keywords: ["macroblocks WDK DirectX VA , deblocking filter control", "deblocking filter control WDK DirectX VA", "edge filtering WDK DirectX VA", "read-back buffers WDK DirectX VA"]
+keywords:
+- macroblocks WDK DirectX VA , deblocking filter control
+- deblocking filter control WDK DirectX VA
+- edge filtering WDK DirectX VA
+- read-back buffers WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Edge Filtering Command Bytes

@@ -3,6 +3,11 @@ title: Web Services
 author: windows-driver-content
 description: Web Services
 ms.assetid: 5cc44582-c4d1-4140-9bd4-8fb81f452261
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Web Services

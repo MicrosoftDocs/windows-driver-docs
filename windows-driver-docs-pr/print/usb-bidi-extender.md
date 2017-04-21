@@ -1,14 +1,19 @@
 ---
 title: USB Bidi Extender
 author: windows-driver-content
-description: Windows allows manufacturers to support bidirectional communication (Bidi) for USB devices by using a combination of both a Bidi XML file and a Javascript file known as a USB Bidi extender.
+description: Describes Bidi support for USB device using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
 ms.assetid: C4012369-F1C6-4EBC-8DAE-F4E551DE782D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Bidi Extender
 
 
-Windows allows manufacturers to support bidirectional communication (Bidi) for USB devices by using a combination of both a Bidi XML file and a Javascript file known as a USB Bidi extender.
+Windows allows manufacturers to support bidirectional communication (Bidi) for USB devices by using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
 
 The USB Bidi extender allows applications to use Bidi with USB as the transport mechanism. The Javascript implementation does not support any device flow control, or any multiplexing of control information with print jobs during printing.
 

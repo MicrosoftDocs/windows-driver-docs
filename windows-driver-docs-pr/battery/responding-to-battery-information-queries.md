@@ -2,7 +2,13 @@
 title: Responding to Battery Information Queries
 description: Responding to Battery Information Queries
 ms.assetid: 5d215ff8-d41f-471e-bc54-570a94f3c23f
-keywords: ["battery information WDK"]
+keywords:
+- battery information WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Responding to Battery Information Queries

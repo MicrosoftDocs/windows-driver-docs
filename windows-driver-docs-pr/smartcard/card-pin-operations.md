@@ -2,6 +2,11 @@
 title: Card PIN Operations
 description: Card PIN Operations
 ms.assetid: 7993D284-8122-4831-9C00-E53DAEB7965F
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Card PIN Operations

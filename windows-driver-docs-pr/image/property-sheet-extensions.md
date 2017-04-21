@@ -3,6 +3,11 @@ title: Property Sheet Extensions
 author: windows-driver-content
 description: Property Sheet Extensions
 ms.assetid: 36254759-882c-45af-92df-e0769b65ec55
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property Sheet Extensions

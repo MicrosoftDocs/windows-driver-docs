@@ -2,6 +2,11 @@
 title: Send SMS by using custom character sets
 description: Send SMS by using custom character sets
 ms.assetid: c1f19c16-66f5-4bcd-ba28-950eaa6472d2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Send SMS by using custom character sets

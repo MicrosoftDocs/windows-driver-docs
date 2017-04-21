@@ -2,7 +2,23 @@
 title: GDI-Managed Lines and Curves
 description: GDI-Managed Lines and Curves
 ms.assetid: 1a7625ec-6994-488c-a722-cf436a83e213
-keywords: ["GDI WDK Windows 2000 display , rendering engine", "graphics drivers WDK Windows 2000 display , rendering engine", "drawing WDK GDI , rendering engine", "rendering engine WDK GDI", "lines WDK GDI", "GDI WDK Windows 2000 display , lines", "graphics drivers WDK Windows 2000 display , lines", "drawing WDK GDI , lines", "GDI WDK Windows 2000 display , curves", "graphics drivers WDK Windows 2000 display , curves", "drawing WDK GDI , curves"]
+keywords:
+- GDI WDK Windows 2000 display , rendering engine
+- graphics drivers WDK Windows 2000 display , rendering engine
+- drawing WDK GDI , rendering engine
+- rendering engine WDK GDI
+- lines WDK GDI
+- GDI WDK Windows 2000 display , lines
+- graphics drivers WDK Windows 2000 display , lines
+- drawing WDK GDI , lines
+- GDI WDK Windows 2000 display , curves
+- graphics drivers WDK Windows 2000 display , curves
+- drawing WDK GDI , curves
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI-Managed Lines and Curves

@@ -2,7 +2,13 @@
 title: Porting NDIS Miniport Driver Send Data Handling
 description: Porting NDIS Miniport Driver Send Data Handling
 ms.assetid: 0179ca24-f736-4937-b8ab-42e364d2c63b
-keywords: ["send operation porting WDK networking"]
+keywords:
+- send operation porting WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting NDIS Miniport Driver Send Data Handling

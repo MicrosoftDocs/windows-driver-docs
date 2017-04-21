@@ -2,7 +2,19 @@
 title: Probing and Locking of Configurations
 description: Probing and Locking of Configurations
 ms.assetid: 6f68db48-ed4b-487c-b425-43c610651c16
-keywords: ["video decoding WDK DirectX VA , configuration probing and locking", "decoding video WDK DirectX VA , configuration probing and locking", "picture decoding WDK DirectX VA , configuration probing and locking", "minimal interoperability configuration set WDK DirectX VA", "locking configurations WDK DirectX VA", "probing configurations WDK DirectX VA", "configuration probing and locking WDK DirectX VA"]
+keywords:
+- video decoding WDK DirectX VA , configuration probing and locking
+- decoding video WDK DirectX VA , configuration probing and locking
+- picture decoding WDK DirectX VA , configuration probing and locking
+- minimal interoperability configuration set WDK DirectX VA
+- locking configurations WDK DirectX VA
+- probing configurations WDK DirectX VA
+- configuration probing and locking WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Probing and Locking of Configurations

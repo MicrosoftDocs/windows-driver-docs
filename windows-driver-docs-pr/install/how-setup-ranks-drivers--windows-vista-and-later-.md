@@ -2,7 +2,17 @@
 title: How Windows Ranks Drivers
 description: How Windows Ranks Drivers
 ms.assetid: 54b6f40a-e5f6-41dd-8876-c9f0fb36ee00
-keywords: ["ranking drivers WDK device installations", "driver ranking WDK device installations", "driver selections WDK device installations , ranking drivers", "locating drivers for device installation WDK device installations , ranking drivers", "searching for drivers during device installation WDK devi"]
+keywords:
+- ranking drivers WDK device installations
+- driver ranking WDK device installations
+- driver selections WDK device installations , ranking drivers
+- locating drivers for device installation WDK device installations , ranking drivers
+- searching for drivers during device installation WDK devi
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How Windows Ranks Drivers

@@ -2,7 +2,16 @@
 title: Locking a Subvolume of a Volume Texture
 description: Locking a Subvolume of a Volume Texture
 ms.assetid: fff7b9c6-5f83-4691-9e44-99e45897ae3a
-keywords: ["textures WDK DirectX 8.0", "DirectX 8.0 release notes WDK Windows 2000 display , volume textures", "volume textures WDK DirectX 8.0", "subvolume locking WDK DirectX 8.0"]
+keywords:
+- textures WDK DirectX 8.0
+- DirectX 8.0 release notes WDK Windows 2000 display , volume textures
+- volume textures WDK DirectX 8.0
+- subvolume locking WDK DirectX 8.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Locking a Subvolume of a Volume Texture

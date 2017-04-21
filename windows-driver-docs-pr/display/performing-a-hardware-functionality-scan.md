@@ -2,7 +2,14 @@
 title: Performing a Hardware Functionality Scan
 description: Performing a Hardware Functionality Scan
 ms.assetid: 966b30b7-2f08-4611-9f4d-f85b301de414
-keywords: ["OPM WDK display , HFS", "OPM WDK display , hardware functionality scan"]
+keywords:
+- OPM WDK display , HFS
+- OPM WDK display , hardware functionality scan
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performing a Hardware Functionality Scan

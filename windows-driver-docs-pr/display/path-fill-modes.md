@@ -2,7 +2,21 @@
 title: Path Fill Modes
 description: Path Fill Modes
 ms.assetid: fa1fb4b9-5ed6-44a2-8a9e-0c1c82f5ea39
-keywords: ["GDI WDK Windows 2000 display , paths, fill modes", "graphics drivers WDK Windows 2000 display , paths, fill modes", "drawing WDK GDI , paths, fill modes", "filling paths WDK GDI , fill modes", "paths WDK GDI , fill modes", "FP_ALTERNATEMODE", "FP_WINDINGMODE", "alternate fills WDK GDI", "winding fills WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , paths, fill modes
+- graphics drivers WDK Windows 2000 display , paths, fill modes
+- drawing WDK GDI , paths, fill modes
+- filling paths WDK GDI , fill modes
+- paths WDK GDI , fill modes
+- FP_ALTERNATEMODE
+- FP_WINDINGMODE
+- alternate fills WDK GDI
+- winding fills WDK GDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Path Fill Modes

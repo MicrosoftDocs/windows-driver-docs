@@ -2,7 +2,16 @@
 title: DirectX VA Operations
 description: DirectX VA Operations
 ms.assetid: 101bde49-aa6c-4058-bb63-a1ae75e1c6f0
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , operations", "Video Acceleration WDK DirectX , operations", "VA WDK DirectX , operations", "bDXVA_Func variable WDK DirectX VA"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , operations
+- Video Acceleration WDK DirectX , operations
+- VA WDK DirectX , operations
+- bDXVA_Func variable WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX VA Operations

@@ -2,6 +2,11 @@
 title: Device and Driver Installation Advanced Topics
 description: Device and Driver Installation Advanced Topics
 ms.assetid: 8db37a91-72e3-4536-ac31-1be282e2fc48
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device and Driver Installation Advanced Topics

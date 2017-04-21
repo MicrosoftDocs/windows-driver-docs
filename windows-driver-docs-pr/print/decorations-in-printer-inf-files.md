@@ -3,7 +3,16 @@ title: Decorations in Printer INF Files
 author: windows-driver-content
 description: Decorations in Printer INF Files
 ms.assetid: 86ddca11-e2a9-44b8-8c42-313116fc580e
-keywords: ["INF files WDK print , decorations", "additional drivers WDK printer", "decorated INF WDK", "INF Models Section"]
+keywords:
+- INF files WDK print , decorations
+- additional drivers WDK printer
+- decorated INF WDK
+- INF Models Section
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Decorations in Printer INF Files

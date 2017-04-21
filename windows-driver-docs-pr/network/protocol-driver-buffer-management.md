@@ -2,6 +2,11 @@
 title: Protocol Driver Buffer Management
 description: Protocol Driver Buffer Management
 ms.assetid: 1f91b58e-d432-46c8-994e-d95c3aadfe43
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Protocol Driver Buffer Management

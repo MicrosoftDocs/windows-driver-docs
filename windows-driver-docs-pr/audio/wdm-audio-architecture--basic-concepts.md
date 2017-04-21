@@ -2,7 +2,16 @@
 title: WDM Audio Architecture Basic Concepts
 description: WDM Audio Architecture Basic Concepts
 ms.assetid: 9b702ee2-857b-468e-9258-3b87471c2daf
-keywords: ["WDM audio drivers WDK , architecture", "audio drivers WDK , architecture", "architecture WDK audio", "Windows Driver Model WDK audio"]
+keywords:
+- WDM audio drivers WDK , architecture
+- audio drivers WDK , architecture
+- architecture WDK audio
+- Windows Driver Model WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDM Audio Architecture: Basic Concepts

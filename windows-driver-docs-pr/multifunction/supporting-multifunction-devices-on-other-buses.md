@@ -3,7 +3,17 @@ title: Supporting Multifunction Devices On Other Buses
 author: windows-driver-content
 description: Supporting Multifunction Devices On Other Buses
 ms.assetid: 5fc78dc5-0553-4557-b188-a34810305061
-keywords: ["multifunction devices WDK , other buses", "PnP WDK multifunction devices", "ISA WDK multifunction devices", "USB WDK multifunction devices", "IEEE 1394 WDK multifunction devices"]
+keywords:
+- multifunction devices WDK , other buses
+- PnP WDK multifunction devices
+- ISA WDK multifunction devices
+- USB WDK multifunction devices
+- IEEE 1394 WDK multifunction devices
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Multifunction Devices On Other Buses

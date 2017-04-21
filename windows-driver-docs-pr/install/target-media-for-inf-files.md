@@ -2,7 +2,16 @@
 title: Target Media for INF Files
 description: Target Media for INF Files
 ms.assetid: f1aaea38-e500-40a9-89c1-9c4447054fb1
-keywords: ["INF files WDK device installations , target media", "target media WDK INF files", "locations WDK INF files", "media WDK INF files"]
+keywords:
+- INF files WDK device installations , target media
+- target media WDK INF files
+- locations WDK INF files
+- media WDK INF files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Target Media for INF Files

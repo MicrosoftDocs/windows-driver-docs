@@ -2,7 +2,13 @@
 title: Driver Signing
 description: Driver Signing
 ms.assetid: 1f7d5340-c7be-4b6a-a85e-246dcc78b1fa
-keywords: ["driver signing WDK"]
+keywords:
+- driver signing WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Signing

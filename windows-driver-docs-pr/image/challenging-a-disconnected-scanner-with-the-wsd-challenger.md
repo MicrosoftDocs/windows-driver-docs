@@ -3,6 +3,11 @@ title: Challenging a Disconnected Scanner with the WSD Challenger
 author: windows-driver-content
 description: Challenging a Disconnected Scanner with the WSD Challenger
 ms.assetid: f938a235-0360-43f9-9f84-6b9cb6ca9245
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Challenging a Disconnected Scanner with the WSD Challenger

@@ -3,7 +3,16 @@ title: CD-ROM Drivers
 author: windows-driver-content
 description: CD-ROM Drivers
 ms.assetid: 04b0a605-7816-4804-bfa8-39122a03ce16
-keywords: ["CD-ROM drivers WDK storage", "storage CD-ROM drivers WDK", "storage drivers WDK , CD-ROM", "IOCTLs WDK CD-ROM"]
+keywords:
+- CD-ROM drivers WDK storage
+- storage CD-ROM drivers WDK
+- storage drivers WDK , CD-ROM
+- IOCTLs WDK CD-ROM
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CD-ROM Drivers

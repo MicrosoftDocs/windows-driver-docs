@@ -2,8 +2,18 @@
 title: NFC client driver power management requirements
 author: windows-driver-content
 ms.assetid: FBA0821B-859F-4A44-998E-E00162FBD265
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
-description:
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+description: Information about meeting the requirements for NFP devices on connected standby. platforms
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NFC client driver power management requirements
@@ -27,4 +37,3 @@ To meet these goals, the following are recommended for the NFC client drivers:
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
-

@@ -2,7 +2,16 @@
 title: DXVA-HD DDI
 description: DXVA-HD DDI
 ms.assetid: 8b44a5b7-dc86-46eb-83e1-39caa72ffa34
-keywords: ["DXVA-HD DDI WDK Windows 7 display", "DXVA-HD DDI WDK Server 2008 R2 display", "high-definition video WDK Windows 7 display , DXVA-HD DDI", "high-definition video WDK Server 2008 R2 display , DXVA-HD DDI"]
+keywords:
+- DXVA-HD DDI WDK Windows 7 display
+- DXVA-HD DDI WDK Server 2008 R2 display
+- high-definition video WDK Windows 7 display , DXVA-HD DDI
+- high-definition video WDK Server 2008 R2 display , DXVA-HD DDI
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DXVA-HD DDI

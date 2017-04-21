@@ -1,7 +1,12 @@
----
-title: \ String\ section changes for localized strings
-description: This INF requirement ensures that pseudo-localized builds work. The requirement is to delineate localizable versus non-localizable strings within the strings section.
+﻿---
+title: '\ String\ section changes for localized strings'
+description: This INF requirement ensures that pseudo-localized builds work. The requirement is to delineate localizable versus non-localizable strings within the strings section
 ms.assetid: F0A0C309-9FA3-4941-AF35-15CD63DB25E3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \[String\] section changes for localized strings

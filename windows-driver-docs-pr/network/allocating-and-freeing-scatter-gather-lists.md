@@ -2,7 +2,17 @@
 title: Allocating and Freeing Scatter/Gather Lists
 description: Allocating and Freeing Scatter/Gather Lists
 ms.assetid: 95463617-65df-4c02-82f4-e3aba44d42fb
-keywords: ["scatter/gather DMA WDK networking , scatter/gather lists", "SGDMA WDK networking , scatter/gather lists", "NdisMAllocateNetBufferSGList", "NdisMFreeNetBufferSGList", "lists WDK SGDMA"]
+keywords:
+- scatter/gather DMA WDK networking , scatter/gather lists
+- SGDMA WDK networking , scatter/gather lists
+- NdisMAllocateNetBufferSGList
+- NdisMFreeNetBufferSGList
+- lists WDK SGDMA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating and Freeing Scatter/Gather Lists

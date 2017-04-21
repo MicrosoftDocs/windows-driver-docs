@@ -2,6 +2,11 @@
 title: Managing Trace Sessions
 description: Managing Trace Sessions
 ms.assetid: 87604d28-7c4f-4795-9a78-8566efb25e8d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Trace Sessions

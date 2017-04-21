@@ -3,7 +3,19 @@ title: KS Pins
 author: windows-driver-content
 description: KS Pins
 ms.assetid: 04d0d17b-c326-417d-b2e8-58b33420455a
-keywords: ["pins WDK kernel streaming", "KS pins WDK kernel streaming , about KS pins", "KSPIN_DESCRIPTOR", "IRP source pins WDK kernel streaming", "data source pins WDK kernel streaming", "pin connections WDK kernel streaming", "kernel streaming WDK , pins"]
+keywords:
+- pins WDK kernel streaming
+- KS pins WDK kernel streaming , about KS pins
+- KSPIN_DESCRIPTOR
+- IRP source pins WDK kernel streaming
+- data source pins WDK kernel streaming
+- pin connections WDK kernel streaming
+- kernel streaming WDK , pins
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KS Pins

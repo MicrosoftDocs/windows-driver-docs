@@ -2,7 +2,15 @@
 title: Deblocking Filter Control
 description: Deblocking Filter Control
 ms.assetid: b332421e-da15-4c42-aedb-32f4ba24101e
-keywords: ["macroblocks WDK DirectX VA , deblocking filter control", "deblocking filter control WDK DirectX VA", "chrominance prediction blocks WDK DirectX VA"]
+keywords:
+- macroblocks WDK DirectX VA , deblocking filter control
+- deblocking filter control WDK DirectX VA
+- chrominance prediction blocks WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deblocking Filter Control

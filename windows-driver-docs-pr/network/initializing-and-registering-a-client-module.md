@@ -2,7 +2,17 @@
 title: Initializing and Registering a Client Module
 description: Initializing and Registering a Client Module
 ms.assetid: 3d0941d0-5a6f-4c6d-b519-af850a8de341
-keywords: ["client modules WDK Network Module Registrar , initializing", "client modules WDK Network Module Registrar , registering", "registering client modules", "initializing client modules", "NmrRegisterClient"]
+keywords:
+- client modules WDK Network Module Registrar , initializing
+- client modules WDK Network Module Registrar , registering
+- registering client modules
+- initializing client modules
+- NmrRegisterClient
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing and Registering a Client Module

@@ -2,7 +2,20 @@
 title: Mirror Drivers
 description: Mirror Drivers
 ms.assetid: 7231375a-969b-4c55-83d4-96ba5caade20
-keywords: ["display drivers WDK Windows 2000 , mirror drivers", "mirror drivers WDK Windows 2000 display", "virtual desktop WDK Windows 2000 display", "global desktop mirroring WDK Windows 2000 display", "GDI virtual desktop WDK Windows 2000 display", "virtual device mirroring WDK Windows 2000 display", "video miniport drivers WDK Windows 2000 , mirror drivers", "assistive technologies and mirror drivers"]
+keywords:
+- display drivers WDK Windows 2000 , mirror drivers
+- mirror drivers WDK Windows 2000 display
+- virtual desktop WDK Windows 2000 display
+- global desktop mirroring WDK Windows 2000 display
+- GDI virtual desktop WDK Windows 2000 display
+- virtual device mirroring WDK Windows 2000 display
+- video miniport drivers WDK Windows 2000 , mirror drivers
+- assistive technologies and mirror drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mirror Drivers

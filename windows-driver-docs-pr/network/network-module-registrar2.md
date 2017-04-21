@@ -2,7 +2,17 @@
 title: Network Module Registrar
 description: Network Module Registrar
 ms.assetid: 23c15c42-94aa-410b-8551-fafa8b24ad86
-keywords: ["Network Module Registrar WDK", "NMR WDK", "modules WDK Network Module Registrar", "registered network modules WDK Network Module Registrar", "software modules WDK Network Module Registrar"]
+keywords:
+- Network Module Registrar WDK
+- NMR WDK
+- modules WDK Network Module Registrar
+- registered network modules WDK Network Module Registrar
+- software modules WDK Network Module Registrar
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Module Registrar

@@ -2,6 +2,11 @@
 title: Importing Certificates with Enhanced Storage Certificate Management Tool
 description: Importing Certificates by using the Enhanced Storage Certificate Management Tool
 ms.assetid: de1174c2-453c-44ab-8c80-89b40510179c
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Importing Certificates by using the Enhanced Storage Certificate Management Tool

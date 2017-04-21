@@ -3,7 +3,19 @@ title: Changes to Printer Forms in Windows Vista
 author: windows-driver-content
 description: Changes to Printer Forms in Windows Vista
 ms.assetid: 6e970cbd-1c7f-4c48-8d05-a29f922a3f33
-keywords: ["printer forms WDK", "forms WDK printer", "special forms WDK printer", "special paper sizes WDK printer", "paper sizes WDK forms", "custom forms WDK printer", "FORM_INFO_2 data structure WDK printer"]
+keywords:
+- printer forms WDK
+- forms WDK printer
+- special forms WDK printer
+- special paper sizes WDK printer
+- paper sizes WDK forms
+- custom forms WDK printer
+- FORM_INFO_2 data structure WDK printer
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changes to Printer Forms in Windows Vista

@@ -2,7 +2,14 @@
 title: Extending Wireless Connection Properties
 description: Extending Wireless Connection Properties
 ms.assetid: 77efa8f8-0b94-46b7-89d1-ec9c2c180845
-keywords: ["IHV UI Extensions DLL WDK Native 802.11 , wireless connection properties", "wireless connection properties WDK Native 802.11 IHV UI Extensions DLL"]
+keywords:
+- IHV UI Extensions DLL WDK Native 802.11 , wireless connection properties
+- wireless connection properties WDK Native 802.11 IHV UI Extensions DLL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending Wireless Connection Properties

@@ -2,6 +2,11 @@
 title: Managing Hyper-V Extensible Switch Policies
 description: Managing Hyper-V Extensible Switch Policies
 ms.assetid: F58A4BC0-C5C6-440D-BEA3-2224F7051BA5
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Hyper-V Extensible Switch Policies

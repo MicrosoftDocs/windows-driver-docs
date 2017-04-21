@@ -3,7 +3,16 @@ title: Synchronization Examples
 author: windows-driver-content
 description: Synchronization Examples
 ms.assetid: b9290fab-8213-4083-bda5-0e6c2af737a6
-keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , synchronization", "streaming minidrivers WDK Windows 2000 Kernel , synchronization", "minidrivers WDK Windows 2000 Kernel Streaming , synchronization", "synchronization WDK streaming minidriver"]
+keywords:
+- Stream.sys class driver WDK Windows 2000 Kernel , synchronization
+- streaming minidrivers WDK Windows 2000 Kernel , synchronization
+- minidrivers WDK Windows 2000 Kernel Streaming , synchronization
+- synchronization WDK streaming minidriver
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronization Examples

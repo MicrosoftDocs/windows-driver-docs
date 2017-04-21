@@ -2,7 +2,15 @@
 title: Native 802.11 Miniport Driver Shutdown
 description: Native 802.11 Miniport Driver Shutdown
 ms.assetid: f64859aa-6f37-4759-b262-b5cbd0149085
-keywords: ["Native 802.11 miniport drivers WDK networking , shutdown operations", "miniport drivers WDK Native 802.11 , shutdown operations", "shutdown WDK networking"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , shutdown operations
+- miniport drivers WDK Native 802.11 , shutdown operations
+- shutdown WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Miniport Driver Shutdown

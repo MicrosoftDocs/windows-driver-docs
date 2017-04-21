@@ -3,7 +3,15 @@ title: Feature Attributes
 author: windows-driver-content
 description: Feature Attributes
 ms.assetid: ae1a489e-2554-46fc-8f2e-45128b073f91
-keywords: ["printer attributes WDK Unidrv , features", "feature attribues WDK Unidrv", "printer features WDK Unidrv , attributes"]
+keywords:
+- printer attributes WDK Unidrv , features
+- feature attribues WDK Unidrv
+- printer features WDK Unidrv , attributes
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Feature Attributes

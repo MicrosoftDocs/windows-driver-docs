@@ -2,6 +2,11 @@
 ms.assetid: D92A4E42-82F0-4034-B208-66E04F6EAB26
 title: Troubleshooting Driver Deployment, Testing and Debugging
 description: Provides troubleshooting tips for provisioning Visual Studio for driver deployment.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting Configuration of Driver Deployment, Testing and Debugging

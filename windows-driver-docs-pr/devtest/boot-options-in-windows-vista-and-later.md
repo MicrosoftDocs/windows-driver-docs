@@ -1,8 +1,27 @@
----
+﻿---
 title: Overview of Boot Options in Windows Vista and Later
-description: Windows Vista introduced a new boot loader architecture, a new firmware-independent boot configuration and storage system called Boot Configuration Data (BCD), and a new boot option editing tool, BCDEdit (BCDEdit.exe).
+description: Windows Vista introduced a new boot loader architecture, a new firmware-independent boot configuration, and a new boot option editing tool.
 ms.assetid: 1cc5b1cc-8d0e-4b4e-93fe-272772a3e458
-keywords: ["boot options WDK , Windows Vista", "editing boot options", "multiboot systems WDK boot options", "legacy boot entries WDK", "Boot Configuration Data WDK", "BCD WDK", "BCDEdit tool", "boot options WDK , editing", "ntldr tool", "Windows Boot Manager WDK", "Bootmgr tool", "system-specific boot loaders WDK", "boot loaders WDK", "firmware-independent boot options WDK"]
+keywords:
+- boot options WDK , Windows Vista
+- editing boot options
+- multiboot systems WDK boot options
+- legacy boot entries WDK
+- Boot Configuration Data WDK
+- BCD WDK
+- BCDEdit tool
+- boot options WDK , editing
+- ntldr tool
+- Windows Boot Manager WDK
+- Bootmgr tool
+- system-specific boot loaders WDK
+- boot loaders WDK
+- firmware-independent boot options WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Boot Options in Windows Vista and Later

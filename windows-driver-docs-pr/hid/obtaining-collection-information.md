@@ -3,7 +3,14 @@ title: Obtaining Collection Information
 author: windows-driver-content
 description: Obtaining Collection Information
 ms.assetid: 0568993b-ff50-48ac-a875-95ab643d6c28
-keywords: ["collections WDK HID , informatin gathering", "HID collections WDK , information gathering"]
+keywords:
+- collections WDK HID , informatin gathering
+- HID collections WDK , information gathering
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining Collection Information

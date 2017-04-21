@@ -3,7 +3,18 @@ title: PFA Performed by WHEA
 author: windows-driver-content
 description: PFA Performed by WHEA
 ms.assetid: c93b15aa-9b99-4dfa-8c97-b503654e44f2
-keywords: ["predictive failure analysis (PFA) WDK WHEA , Error Correction Code memory", "PFA WDK WHEA , Error Correction Code memory", "Error Correction Code memory WDK WHEA", "Error Correction Code memory WDK WHEA , predictive failure analysis", "low-level hardware error handler WDK WHEA", "LLHEH WDK WHEA"]
+keywords:
+- predictive failure analysis (PFA) WDK WHEA , Error Correction Code memory
+- PFA WDK WHEA , Error Correction Code memory
+- Error Correction Code memory WDK WHEA
+- Error Correction Code memory WDK WHEA , predictive failure analysis
+- low-level hardware error handler WDK WHEA
+- LLHEH WDK WHEA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PFA Performed by WHEA

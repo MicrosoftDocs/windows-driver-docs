@@ -2,7 +2,14 @@
 title: CoNDIS MCM OID Requests
 description: CoNDIS MCM OID Requests
 ms.assetid: efddbcb0-98f1-4cd3-9707-f3ed17c20181
-keywords: ["miniport call managers WDK networking , OID requests", "MCMs WDK networking , OID requests"]
+keywords:
+- miniport call managers WDK networking , OID requests
+- MCMs WDK networking , OID requests
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CoNDIS MCM OID Requests

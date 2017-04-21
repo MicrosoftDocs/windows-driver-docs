@@ -2,7 +2,25 @@
 title: AGP Support
 description: AGP Support
 ms.assetid: 05a2f942-4374-421e-8292-d122f9fe3571
-keywords: ["AGP WDK DirectDraw , about AGP support", "drawing AGP support WDK DirectDraw , about AGP support", "DirectDraw AGP support WDK Windows 2000 display , about AGP support", "memory WDK DirectDraw AGP , about AGP support", "Accelerated Graphics Port WDK DirectDraw", "display memory WDK DirectDraw", "nonlocal display memory WDK DirectDraw", "display memory WDK DirectDraw , about AGP support", "nonlocal display memory WDK DirectDraw , about nonlocal display memory", "AGP WDK DirectDraw", "drawing AGP support WDK DirectDraw", "DirectDraw AGP support WDK Windows 2000 display", "memory WDK DirectDraw AGP"]
+keywords:
+- AGP WDK DirectDraw , about AGP support
+- drawing AGP support WDK DirectDraw , about AGP support
+- DirectDraw AGP support WDK Windows 2000 display , about AGP support
+- memory WDK DirectDraw AGP , about AGP support
+- Accelerated Graphics Port WDK DirectDraw
+- display memory WDK DirectDraw
+- nonlocal display memory WDK DirectDraw
+- display memory WDK DirectDraw , about AGP support
+- nonlocal display memory WDK DirectDraw , about nonlocal display memory
+- AGP WDK DirectDraw
+- drawing AGP support WDK DirectDraw
+- DirectDraw AGP support WDK Windows 2000 display
+- memory WDK DirectDraw AGP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AGP Support

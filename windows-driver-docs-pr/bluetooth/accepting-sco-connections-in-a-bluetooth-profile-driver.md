@@ -2,7 +2,16 @@
 title: Accepting SCO Connections in a Bluetooth Profile Driver
 description: Accepting SCO Connections in a Bluetooth Profile Driver
 ms.assetid: 9736f113-26fb-4e2f-9a58-9874a11f8347
-keywords: ["Synchronous Connection-Oriented WDK Bluetooth", "SCO profile drivers WDK Bluetooth", "incoming SCO connection requests WDK Bluetooth", "remote connection notifications WDK Bluetooth"]
+keywords:
+- Synchronous Connection-Oriented WDK Bluetooth
+- SCO profile drivers WDK Bluetooth
+- incoming SCO connection requests WDK Bluetooth
+- remote connection notifications WDK Bluetooth
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accepting SCO Connections in a Bluetooth Profile Driver

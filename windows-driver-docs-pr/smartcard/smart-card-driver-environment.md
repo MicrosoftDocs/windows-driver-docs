@@ -2,7 +2,13 @@
 title: Smart Card Driver Environment
 description: Smart Card Driver Environment
 ms.assetid: f1b369c6-84a0-4a0a-9e70-40dd3009c59e
-keywords: ["smart card drivers WDK , environment"]
+keywords:
+- smart card drivers WDK , environment
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Smart Card Driver Environment

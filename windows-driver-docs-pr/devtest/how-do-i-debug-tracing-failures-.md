@@ -2,6 +2,11 @@
 title: How do I debug tracing failures
 description: How do I debug tracing failures
 ms.assetid: 9f974482-e19d-4bcc-a884-4425741aa465
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How do I debug tracing failures?

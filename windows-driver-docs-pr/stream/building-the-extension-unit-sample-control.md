@@ -3,7 +3,14 @@ title: Building the Extension Unit Sample Control
 author: windows-driver-content
 description: Building the Extension Unit Sample Control
 ms.assetid: 57dd0bc3-2aab-42a2-b0c5-7f6ecaefd300
-keywords: ["Extension Unit controls WDK USB Video Class", "controls WDK USB Video Class"]
+keywords:
+- Extension Unit controls WDK USB Video Class
+- controls WDK USB Video Class
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building the Extension Unit Sample Control

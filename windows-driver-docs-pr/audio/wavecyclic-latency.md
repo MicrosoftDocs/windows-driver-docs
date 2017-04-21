@@ -2,7 +2,14 @@
 title: WaveCyclic Latency
 description: WaveCyclic Latency
 ms.assetid: 6de639c6-ddd5-4013-8d67-00731c328f47
-keywords: ["WaveCyclic latency WDK audio", "silence intervals WDK audio"]
+keywords:
+- WaveCyclic latency WDK audio
+- silence intervals WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WaveCyclic Latency

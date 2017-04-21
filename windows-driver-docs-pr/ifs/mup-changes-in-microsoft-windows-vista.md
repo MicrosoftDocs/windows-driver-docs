@@ -3,7 +3,21 @@ title: MUP Changes in Microsoft Windows Vista
 author: windows-driver-content
 description: MUP Changes in Microsoft Windows Vista
 ms.assetid: 8ca2f9bc-14f1-45d3-a397-f3e5459cf8ec
-keywords: ["kernel network redirectors WDK , MUP", "MUP WDK network redirectors", "multiple UNC provider WDK network redirectors", "UNC WDK network redirectors", "kernel network redirectors WDK , Windows Vista redirector model", "legacy redirectors WDK file systems", "prefix resolution WDK network redirectors", "prefix cache WDK network redirectors", "double filtering WDK network redirectors"]
+keywords:
+- kernel network redirectors WDK , MUP
+- MUP WDK network redirectors
+- multiple UNC provider WDK network redirectors
+- UNC WDK network redirectors
+- kernel network redirectors WDK , Windows Vista redirector model
+- legacy redirectors WDK file systems
+- prefix resolution WDK network redirectors
+- prefix cache WDK network redirectors
+- double filtering WDK network redirectors
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MUP Changes in Microsoft Windows Vista

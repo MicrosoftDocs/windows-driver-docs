@@ -2,7 +2,14 @@
 title: Tracing Tool Concepts
 description: Tracing Tool Concepts
 ms.assetid: 539c6cd2-ea32-48ec-92da-7a4b78404b93
-keywords: ["tracing WDK , terminology", "software tracing WDK , terminology"]
+keywords:
+- tracing WDK , terminology
+- software tracing WDK , terminology
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracing Tool Concepts

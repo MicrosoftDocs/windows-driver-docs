@@ -3,7 +3,14 @@ title: Feature Conflict Priority
 author: windows-driver-content
 description: Feature Conflict Priority
 ms.assetid: 1185f983-ed04-4610-8b93-684ae3e07e84
-keywords: ["printer features WDK Unidrv , conflict priority", "conflict priority WDK printer features"]
+keywords:
+- printer features WDK Unidrv , conflict priority
+- conflict priority WDK printer features
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Feature Conflict Priority

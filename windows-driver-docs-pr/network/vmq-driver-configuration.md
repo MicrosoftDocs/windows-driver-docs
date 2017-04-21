@@ -2,6 +2,11 @@
 title: VMQ Driver Configuration
 description: VMQ Driver Configuration
 ms.assetid: 69133958-fbc0-4bae-9ca1-56e8152db500
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VMQ Driver Configuration

@@ -1,7 +1,12 @@
 ---
 title: Communication model, synchronization, and abort
-description: At a high level, this documentation defines two types of objects An adapter, which represents the Wi-Fi device.A port, which represents distinct MAC and PHY entities in the adapter.For more information about these objects, see Wi-Fi device model and objects.
+description: This section describes the WDI communication model, synchronization, and abort
 ms.assetid: 575D1314-8726-49C1-AE6C-C171FE1CD2AD
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Communication model, synchronization, and abort

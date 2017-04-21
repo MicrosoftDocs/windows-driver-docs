@@ -2,7 +2,14 @@
 title: Tasks in the Windows Display Driver Model (WDDM)
 description: Tasks in the Windows Display Driver Model (WDDM)
 ms.assetid: a0d853b2-06d3-4d93-ba65-7fa8d5b50a9b
-keywords: ["display driver model WDK Windows Vista , tasks", "Windows Vista display driver model WDK , tasks"]
+keywords:
+- display driver model WDK Windows Vista , tasks
+- Windows Vista display driver model WDK , tasks
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tasks in the Windows Display Driver Model (WDDM)

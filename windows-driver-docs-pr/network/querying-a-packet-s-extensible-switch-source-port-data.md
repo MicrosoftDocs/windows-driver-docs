@@ -2,6 +2,11 @@
 title: Querying a Packet's Extensible Switch Source Port Data
 description: Querying a Packet's Extensible Switch Source Port Data
 ms.assetid: 082AEF58-3FCF-4ABE-90E1-1AC5DAF32B54
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying a Packet's Extensible Switch Source Port Data

@@ -2,13 +2,19 @@
 title: INF DestinationDirs Section
 description: A DestinationDirs section specifies the target destination directory or directories for all copy, delete, and/or rename operations on files referenced by name elsewhere in the INF file.
 ms.assetid: fadebcb9-da4b-4daf-9e84-822447e5cb2a
-keywords: ["INF DestinationDirs Section Device and Driver Installation"]
+keywords:
+- INF DestinationDirs Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DestinationDirs Section
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DestinationDirs Section

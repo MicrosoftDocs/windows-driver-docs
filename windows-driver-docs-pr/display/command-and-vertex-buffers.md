@@ -2,7 +2,15 @@
 title: Command and Vertex Buffers
 description: Command and Vertex Buffers
 ms.assetid: e23013d2-d545-42e5-9787-e4a90921153b
-keywords: ["command buffers WDK Direct3D", "vertex buffers WDK Direct3D", "buffers WDK Direct3D"]
+keywords:
+- command buffers WDK Direct3D
+- vertex buffers WDK Direct3D
+- buffers WDK Direct3D
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command and Vertex Buffers

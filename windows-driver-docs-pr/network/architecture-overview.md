@@ -2,7 +2,15 @@
 title: Architecture overview for the Network Module Registrar
 description: Explains a basic architectural overview for the Network Module Registrar
 ms.assetid: 7e2c51ed-ecec-4b17-8a6f-42a51acedc95
-keywords: ["Network Module Registrar WDK , architecture", "NMR WDK , architecture", "architecture WDK Network Module Registrar"]
+keywords:
+- Network Module Registrar WDK , architecture
+- NMR WDK , architecture
+- architecture WDK Network Module Registrar
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Architecture overview for the Network Module Registrar

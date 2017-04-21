@@ -1,7 +1,12 @@
----
+﻿---
 title: TraceWPP task
-description: The Windows Driver Kit (WDK) provides the TraceWPP task so that you can run the tracewpp.exe tool when you build your driver using MSBuild. The tracewpp.exe tool is used to implement WPP Software Tracing.
+description: The Windows Driver Kit (WDK) provides the TraceWPP task so that you can run the tracewpp.exe tool when you build your driver using MSBuild.
 ms.assetid: 74CE1912-8D1D-417E-8B29-36B2AB0253EE
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TraceWPP task

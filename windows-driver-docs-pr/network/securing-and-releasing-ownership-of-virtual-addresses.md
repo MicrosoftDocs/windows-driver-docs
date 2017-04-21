@@ -2,7 +2,16 @@
 title: Securing and Releasing Ownership of Virtual Addresses
 description: Securing and Releasing Ownership of Virtual Addresses
 ms.assetid: e7b31c8d-fed4-43e2-bcd2-295e3e17719e
-keywords: ["proxy drivers WDK SANs , virtual addresses", "SAN proxy drivers WDK , virtual addresses", "virtual addresses WDK SANs", "ownership WDK virtual addresses"]
+keywords:
+- proxy drivers WDK SANs , virtual addresses
+- SAN proxy drivers WDK , virtual addresses
+- virtual addresses WDK SANs
+- ownership WDK virtual addresses
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Securing and Releasing Ownership of Virtual Addresses

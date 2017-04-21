@@ -1,10 +1,15 @@
 ---
-title: How to get a driver signed by Microsoft for multiple versions of Windows
+title: Get drivers signed by Microsoft for multiple Windows versions
 description: How to get a driver signed by Microsoft for multiple versions of Windows
 ms.assetid: 519384F5-986C-4109-8C91-4352DEFF46F9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# How to get a driver signed by Microsoft for multiple versions of Windows
+# Get drivers signed by Microsoft for multiple Windows versions
 
 
 ## <span id="How_to_submit_to_the_dashboard"></span><span id="how_to_submit_to_the_dashboard"></span><span id="HOW_TO_SUBMIT_TO_THE_DASHBOARD"></span>How to submit to the dashboard
@@ -128,7 +133,3 @@ If the driver had been signed by attestation, then the OID would end with a 1:
  
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20How%20to%20get%20a%20driver%20signed%20by%20Microsoft%20for%20multiple%20versions%20of%20Windows%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-

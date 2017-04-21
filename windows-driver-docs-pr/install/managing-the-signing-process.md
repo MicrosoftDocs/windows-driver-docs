@@ -2,6 +2,11 @@
 title: Managing the Signing Process
 description: Managing the Signing Process
 ms.assetid: 80a1986f-1508-49c1-aec5-7084edff9485
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing the Signing Process

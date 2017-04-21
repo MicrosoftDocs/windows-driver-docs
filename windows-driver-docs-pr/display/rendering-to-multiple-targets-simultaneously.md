@@ -2,7 +2,15 @@
 title: Rendering to Multiple Targets Simultaneously
 description: Rendering to Multiple Targets Simultaneously
 ms.assetid: 72c56ea6-d5da-420a-91f4-c7fa09daf67e
-keywords: ["rendering multiple targets WDK DirectX 9.0", "multiple render targets WDK DirectX 9.0", "simultaneous render targets WDK DirectX 9.0"]
+keywords:
+- rendering multiple targets WDK DirectX 9.0
+- multiple render targets WDK DirectX 9.0
+- simultaneous render targets WDK DirectX 9.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rendering to Multiple Targets Simultaneously

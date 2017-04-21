@@ -2,7 +2,16 @@
 title: Managing an NDIS Port
 description: Managing an NDIS Port
 ms.assetid: 08bb6623-aa9f-483e-a3cd-7dea676f3478
-keywords: ["ports WDK NDIS , managing", "NDIS ports WDK , managing", "port states WDK NDIS", "port numbers WDK NDIS"]
+keywords:
+- ports WDK NDIS , managing
+- NDIS ports WDK , managing
+- port states WDK NDIS
+- port numbers WDK NDIS
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing an NDIS Port

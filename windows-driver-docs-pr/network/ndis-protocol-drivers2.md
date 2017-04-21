@@ -2,7 +2,15 @@
 title: NDIS Protocol Drivers
 description: NDIS Protocol Drivers
 ms.assetid: e144f9a6-97fc-46ac-82f8-4a1745d280c7
-keywords: ["protocol drivers WDK networking , architecture", "NDIS protocol drivers WDK , architecture", "transport protocol drivers WDK networking"]
+keywords:
+- protocol drivers WDK networking , architecture
+- NDIS protocol drivers WDK , architecture
+- transport protocol drivers WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Protocol Drivers

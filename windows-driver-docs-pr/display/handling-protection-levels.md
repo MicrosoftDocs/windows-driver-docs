@@ -2,7 +2,16 @@
 title: Handling Protection Levels
 description: Handling Protection Levels
 ms.assetid: d8237a48-9e1c-4b9e-8f55-70820ff08460
-keywords: ["copy protection WDK COPP , protection levels", "video copy protection WDK COPP , protection levels", "COPP WDK DirectX VA , protection levels", "protected video WDK COPP , protection levels"]
+keywords:
+- copy protection WDK COPP , protection levels
+- video copy protection WDK COPP , protection levels
+- COPP WDK DirectX VA , protection levels
+- protected video WDK COPP , protection levels
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Protection Levels

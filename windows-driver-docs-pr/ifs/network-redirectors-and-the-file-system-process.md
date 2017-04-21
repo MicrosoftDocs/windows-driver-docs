@@ -3,7 +3,18 @@ title: Network Redirectors and the File System Process
 author: windows-driver-content
 description: Network Redirectors and the File System Process
 ms.assetid: 01bdd0d4-d03e-4b3c-ab34-1d5909cde284
-keywords: ["kernel network redirectors WDK , file system process", "asynchronous requests WDK network redirectors", "IRP_MJ_WRITE", "File System Dispatch WDK network redirectors", "FSD WDK network redirectors", "buffers WDK file systems"]
+keywords:
+- kernel network redirectors WDK , file system process
+- asynchronous requests WDK network redirectors
+- IRP_MJ_WRITE
+- File System Dispatch WDK network redirectors
+- FSD WDK network redirectors
+- buffers WDK file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Redirectors and the File System Process

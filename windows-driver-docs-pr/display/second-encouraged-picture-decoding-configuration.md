@@ -2,7 +2,14 @@
 title: Second Encouraged Picture Decoding Configuration
 description: Second Encouraged Picture Decoding Configuration
 ms.assetid: 9e259768-4588-4a5b-b01b-fca0021cd966
-keywords: ["compressed picture decoding set WDK DirectX VA", "picture decoding set WDK DirectX VA"]
+keywords:
+- compressed picture decoding set WDK DirectX VA
+- picture decoding set WDK DirectX VA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Second Encouraged Picture Decoding Configuration

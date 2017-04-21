@@ -2,7 +2,18 @@
 title: Windows Display Driver Model (WDDM) Operation Flow
 description: Windows Display Driver Model (WDDM) Operation Flow
 ms.assetid: 8d2af92c-392a-457d-af9f-796e1050031d
-keywords: ["display driver model WDK Windows Vista , operation flow", "Windows Vista display driver model WDK , operation flow", "rendering devices WDK display", "command buffers WDK display , operation flow", "DMA buffers WDK display , operation flow", "buffers WDK display"]
+keywords:
+- display driver model WDK Windows Vista , operation flow
+- Windows Vista display driver model WDK , operation flow
+- rendering devices WDK display
+- command buffers WDK display , operation flow
+- DMA buffers WDK display , operation flow
+- buffers WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Display Driver Model (WDDM) Operation Flow

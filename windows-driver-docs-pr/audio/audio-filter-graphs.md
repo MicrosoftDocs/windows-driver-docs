@@ -2,7 +2,20 @@
 title: Audio Filter Graphs
 description: Audio Filter Graphs
 ms.assetid: 823de0d5-9368-4ae6-9f11-a8daa0640edd
-keywords: ["audio filters WDK audio , graphs", "filter graphs WDK audio , about filter graphs", "KS filter graphs WDK audio , about KS filter graphs", "sink pins WDK audio", "source pins WDK audio", "bridge pins WDK audio", "pins WDK audio , filter graphs", "KS filter graphs WDK audio"]
+keywords:
+- audio filters WDK audio , graphs
+- filter graphs WDK audio , about filter graphs
+- KS filter graphs WDK audio , about KS filter graphs
+- sink pins WDK audio
+- source pins WDK audio
+- bridge pins WDK audio
+- pins WDK audio , filter graphs
+- KS filter graphs WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Filter Graphs

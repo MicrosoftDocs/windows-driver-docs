@@ -2,7 +2,13 @@
 title: COPP Video Miniport Driver Status Template Code
 description: COPP Video Miniport Driver Status Template Code
 ms.assetid: 4d0d0f95-8a21-4863-9930-ddee7d944c04
-keywords: ["status information WDK COPP"]
+keywords:
+- status information WDK COPP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP Video Miniport Driver Status Template Code

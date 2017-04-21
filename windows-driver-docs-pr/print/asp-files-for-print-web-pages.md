@@ -3,7 +3,16 @@ title: ASP Files for Print Web Pages
 author: windows-driver-content
 description: ASP Files for Print Web Pages
 ms.assetid: 01ca39ed-be16-41fb-b432-1cbd0908358d
-keywords: ["customized print Web pages WDK , ASP files", "ASP files WDK printer", "print Web pages WDK , ASP files", "Web pages WDK printer , ASP files"]
+keywords:
+- customized print Web pages WDK , ASP files
+- ASP files WDK printer
+- print Web pages WDK , ASP files
+- Web pages WDK printer , ASP files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ASP Files for Print Web Pages

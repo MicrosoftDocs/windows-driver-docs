@@ -3,7 +3,14 @@ title: Commands for Simulated Fonts
 author: windows-driver-content
 description: Commands for Simulated Fonts
 ms.assetid: 3bfdcf86-35ac-4b95-9efd-31f79a8b9871
-keywords: ["simulated font commands WDK Unidrv", "font commands WDK Unidrv"]
+keywords:
+- simulated font commands WDK Unidrv
+- font commands WDK Unidrv
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Commands for Simulated Fonts

@@ -2,7 +2,21 @@
 title: Accessing SDP Service Information
 description: Accessing SDP Service Information
 ms.assetid: 0b327fbd-1101-4566-ac2f-3d039eed6835
-keywords: ["Bluetooth WDK , SDP server communication", "SDP WDK Bluetooth", "Service Discovery Protocol WDK Bluetooth", "browsing services WDK Bluetooth", "searching services WDK Bluetooth", "services browsing WDK Bluetooth", "IOCTL_BTH_SDP_CONNECT", "searching SDP records WDK Bluetooth", "IOCTL_BTH_SDP_SERVICE_SEARCH"]
+keywords:
+- Bluetooth WDK , SDP server communication
+- SDP WDK Bluetooth
+- Service Discovery Protocol WDK Bluetooth
+- browsing services WDK Bluetooth
+- searching services WDK Bluetooth
+- services browsing WDK Bluetooth
+- IOCTL_BTH_SDP_CONNECT
+- searching SDP records WDK Bluetooth
+- IOCTL_BTH_SDP_SERVICE_SEARCH
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing SDP Service Information

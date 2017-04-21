@@ -2,6 +2,11 @@
 title: Integrate a mobile broadband app with other Windows components
 description: Integrate a mobile broadband app with other Windows components
 ms.assetid: 70469f6b-70a8-4ebc-b315-08ddeffbdc0f
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Integrate a mobile broadband app with other Windows components

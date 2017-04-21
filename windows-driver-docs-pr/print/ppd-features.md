@@ -3,7 +3,15 @@ title: PPD Features
 author: windows-driver-content
 description: PPD Features
 ms.assetid: ee78031a-2138-4d0c-ac8a-5328aa54d904
-keywords: ["PPD files WDK Pscript", "non-PPD features WDK Pscript", "driver features WDK Pscript"]
+keywords:
+- PPD files WDK Pscript
+- non-PPD features WDK Pscript
+- driver features WDK Pscript
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PPD Features

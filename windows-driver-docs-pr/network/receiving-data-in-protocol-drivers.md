@@ -2,7 +2,13 @@
 title: Receiving Data in Protocol Drivers
 description: Receiving Data in Protocol Drivers
 ms.assetid: 758c6a86-6704-410b-ba13-bf589b1e330f
-keywords: ["receiving data WDK networking"]
+keywords:
+- receiving data WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving Data in Protocol Drivers

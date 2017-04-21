@@ -2,6 +2,11 @@
 title: Queue States and Operations
 description: Queue States and Operations
 ms.assetid: 892f8f19-b94e-4950-af88-334c9a8b8c0d
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Queue States and Operations

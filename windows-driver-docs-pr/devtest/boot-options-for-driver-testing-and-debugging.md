@@ -2,7 +2,21 @@
 title: Tools for Changing Boot Options for Driver Testing and Debugging
 description: Tools for Changing Boot Options for Driver Testing and Debugging
 ms.assetid: 4fd58868-7a43-42e3-adf9-5a82593c1675
-keywords: ["tools WDK , boot options", "driver development tools WDK , boot options", "boot options WDK", "driver testing WDK boot options", "testing drivers WDK boot options", "debugging drivers WDK boot options", "driver debugging WDK boot options", "operating system boot options WDK", "load configurations WDK boot options"]
+keywords:
+- tools WDK , boot options
+- driver development tools WDK , boot options
+- boot options WDK
+- driver testing WDK boot options
+- testing drivers WDK boot options
+- debugging drivers WDK boot options
+- driver debugging WDK boot options
+- operating system boot options WDK
+- load configurations WDK boot options
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tools for Changing Boot Options for Driver Testing and Debugging

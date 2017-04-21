@@ -2,7 +2,16 @@
 title: Enhanced Run-time Reconfiguration Abilities
 description: Enhanced Run-time Reconfiguration Abilities
 ms.assetid: 810d3acb-34ba-4b38-9410-dcdf76f1bb65
-keywords: ["driver stacks WDK networking , pausing", "driver stacks WDK networking , restarting", "pausing driver stacks WDK networking", "restarting driver stacks WDK networking"]
+keywords:
+- driver stacks WDK networking , pausing
+- driver stacks WDK networking , restarting
+- pausing driver stacks WDK networking
+- restarting driver stacks WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enhanced Run-time Reconfiguration Abilities

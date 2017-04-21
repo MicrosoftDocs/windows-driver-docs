@@ -3,6 +3,11 @@ title: PTP Error Codes
 author: windows-driver-content
 description: PTP Error Codes
 ms.assetid: 4d7ad081-fc0b-4a9e-8f17-a0c98fa4fa50
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PTP Error Codes

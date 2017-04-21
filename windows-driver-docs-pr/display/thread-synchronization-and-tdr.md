@@ -2,7 +2,15 @@
 title: Thread Synchronization and TDR
 description: Thread Synchronization and TDR
 ms.assetid: 3690ad06-002a-4939-9b04-b87245678464
-keywords: ["threading WDK display , TDR", "synchronization WDK display , TDR", "TDR (timeout detection and recovery) WDK display , and thread synchronization"]
+keywords:
+- threading WDK display , TDR
+- synchronization WDK display , TDR
+- TDR (timeout detection and recovery) WDK display , and thread synchronization
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Thread Synchronization and TDR

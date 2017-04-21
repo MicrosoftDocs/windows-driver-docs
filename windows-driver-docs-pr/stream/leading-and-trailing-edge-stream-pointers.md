@@ -3,7 +3,15 @@ title: Leading and Trailing Edge Stream Pointers
 author: windows-driver-content
 description: Leading and Trailing Edge Stream Pointers
 ms.assetid: 73ab974f-8034-421f-980a-2393d84ec54c
-keywords: ["stream pointers WDK AVStream , leading and trailing edge", "leading edge stream pointers WDK AVStream", "trailing edge stream pointers WDK AVStream"]
+keywords:
+- stream pointers WDK AVStream , leading and trailing edge
+- leading edge stream pointers WDK AVStream
+- trailing edge stream pointers WDK AVStream
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Leading and Trailing Edge Stream Pointers

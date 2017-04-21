@@ -3,7 +3,19 @@ title: Error Recovery
 author: windows-driver-content
 description: Error Recovery
 ms.assetid: 5710625f-bb65-41d4-a5c9-d61a48178859
-keywords: ["Windows Hardware Error Architecture WDK , error recovery", "WHEA WDK , error recovery", "hardware errors WDK WHEA , error recovery", "errors WDK WHEA , error recovery", "platform-specific hardware error driver plug-ins WDK WHEA , error recovery", "PSHED plug-ins WDK WHEA , error recovery", "error recovery WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , error recovery
+- WHEA WDK , error recovery
+- hardware errors WDK WHEA , error recovery
+- errors WDK WHEA , error recovery
+- platform-specific hardware error driver plug-ins WDK WHEA , error recovery
+- PSHED plug-ins WDK WHEA , error recovery
+- error recovery WDK WHEA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Error Recovery

@@ -2,7 +2,16 @@
 title: Miniport Adapter OID Requests
 description: Miniport Adapter OID Requests
 ms.assetid: c3769b1e-c84a-499d-9f93-17a31441a477
-keywords: ["OIDs WDK networking , miniport adapter requests", "miniport adapters WDK networking , OID requests", "adapters WDK networking , OID requests", "object identifiers WDK networking"]
+keywords:
+- OIDs WDK networking , miniport adapter requests
+- miniport adapters WDK networking , OID requests
+- adapters WDK networking , OID requests
+- object identifiers WDK networking
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Adapter OID Requests

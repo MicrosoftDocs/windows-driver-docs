@@ -2,7 +2,16 @@
 title: Saving or Resaving a Workspace
 description: Saving or Resaving a Workspace
 ms.assetid: d1b21fd8-378b-410a-a7e4-15db2f2b5e35
-keywords: ["workspaces WDK TraceView , saving", "saving workspaces", "resaving workspaces", "updating workspaces"]
+keywords:
+- workspaces WDK TraceView , saving
+- saving workspaces
+- resaving workspaces
+- updating workspaces
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Saving or Resaving a Workspace

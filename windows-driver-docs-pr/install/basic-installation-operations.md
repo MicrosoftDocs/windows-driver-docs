@@ -2,7 +2,16 @@
 title: Basic Installation Operations
 description: Basic Installation Operations
 ms.assetid: 9bf1a3e1-6c2a-4f8c-8694-6e859a73d9a6
-keywords: ["SetupAPI functions WDK , basic installation operations", "device installation functions WDK SetupAPI", "general Setup functions WDK SetupAPI", "SP_DEVINFO_DATA"]
+keywords:
+- SetupAPI functions WDK , basic installation operations
+- device installation functions WDK SetupAPI
+- general Setup functions WDK SetupAPI
+- SP_DEVINFO_DATA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Basic Installation Operations

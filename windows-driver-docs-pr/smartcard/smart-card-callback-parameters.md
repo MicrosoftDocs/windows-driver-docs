@@ -2,7 +2,15 @@
 title: Smart Card Callback Parameters
 description: Smart Card Callback Parameters
 ms.assetid: 6fd1590b-0600-4065-b1cc-71d8aed3f98a
-keywords: ["IOCTLs WDK smart card", "callback parameters WDK smart card", "vendor-supplied drivers WDK smart card , IOCTL request management"]
+keywords:
+- IOCTLs WDK smart card
+- callback parameters WDK smart card
+- vendor-supplied drivers WDK smart card , IOCTL request management
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Smart Card Callback Parameters

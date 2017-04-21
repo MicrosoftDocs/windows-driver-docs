@@ -2,6 +2,11 @@
 title: Additional Encouraged Configuration Set
 description: Additional Encouraged Configuration Set
 ms.assetid: f79e4edc-74c7-4b28-aefe-5ba933ff06c3
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Additional Encouraged Configuration Set

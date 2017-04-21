@@ -2,7 +2,16 @@
 title: Possible Future Requirements for TCP Chimney-Capable NICs
 description: Possible Future Requirements for TCP Chimney-Capable NICs
 ms.assetid: be36286c-1ce8-4898-8c49-a39789d3c52f
-keywords: ["RFC compliance WDK TCP chimney offload", "IETF RFC compliance WDK TCP chimney offload", "task-offload engine NIC WDK TCP chimney offload", "TOE NIC WDK TCP chimney offload"]
+keywords:
+- RFC compliance WDK TCP chimney offload
+- IETF RFC compliance WDK TCP chimney offload
+- task-offload engine NIC WDK TCP chimney offload
+- TOE NIC WDK TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Possible Future Requirements for TCP Chimney-Capable NICs

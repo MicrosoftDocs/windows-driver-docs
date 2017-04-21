@@ -2,8 +2,18 @@
 title: Peer-to-peer
 author: windows-driver-content
 ms.assetid: 0234BA57-477E-408C-94C8-8DD8922FD386
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
-description:
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+description: Information about NFC forum defined peer-to-peer standards and protocols that ensure devices are able to interact using NFC.
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Peer-to-peer
@@ -30,4 +40,3 @@ The Driver MUST support the default SNEP server running over LLCP to exchange ND
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
-

@@ -2,7 +2,17 @@
 title: Tracefmt Output File
 description: Tracefmt Output File
 ms.assetid: 55c8964c-992f-468c-83ea-0316fcb12110
-keywords: ["Tracefmt WDK , output files", "output files WDK Tracefmt", "files WDK Tracefmt", ".out files", "out files"]
+keywords:
+- Tracefmt WDK , output files
+- output files WDK Tracefmt
+- files WDK Tracefmt
+- .out files
+- out files
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracefmt Output File

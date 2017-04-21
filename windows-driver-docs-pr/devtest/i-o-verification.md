@@ -2,7 +2,15 @@
 title: I/O Verification
 description: I/O Verification
 ms.assetid: 41b77bba-fae8-453b-9872-911f5d5be3e6
-keywords: ["I/O Verification feature WDK Driver Verifier", "Level 1 I/O Verification WDK Driver Verifier", "Level 2 I/O Verification WDK Driver Verifier"]
+keywords:
+- I/O Verification feature WDK Driver Verifier
+- Level 1 I/O Verification WDK Driver Verifier
+- Level 2 I/O Verification WDK Driver Verifier
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # I/O Verification

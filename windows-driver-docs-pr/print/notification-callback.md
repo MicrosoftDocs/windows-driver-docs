@@ -3,7 +3,17 @@ title: Notification Callback
 author: windows-driver-content
 description: Notification Callback
 ms.assetid: cf884097-45a4-4ef3-8ebb-64c006838235
-keywords: ["spooler notification WDK print , callback", "print spooler notification WDK , callback", "notification callback WDK print spooler", "IPrintAsyncNotifyCallback", "callbacks WDK spooler notification"]
+keywords:
+- spooler notification WDK print , callback
+- print spooler notification WDK , callback
+- notification callback WDK print spooler
+- IPrintAsyncNotifyCallback
+- callbacks WDK spooler notification
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notification Callback

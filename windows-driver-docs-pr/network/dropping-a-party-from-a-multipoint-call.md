@@ -2,7 +2,16 @@
 title: Dropping a Party from a Multipoint Call
 description: Dropping a Party from a Multipoint Call
 ms.assetid: db23e911-7c70-432e-992a-fdfdf8cb28ae
-keywords: ["parties WDK CoNDIS", "multipoint calls WDK CoNDIS", "dropping party from multipoint calls", "removing party from multipoint calls"]
+keywords:
+- parties WDK CoNDIS
+- multipoint calls WDK CoNDIS
+- dropping party from multipoint calls
+- removing party from multipoint calls
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dropping a Party from a Multipoint Call

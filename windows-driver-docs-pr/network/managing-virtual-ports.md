@@ -2,6 +2,11 @@
 title: Managing Virtual Ports
 description: Managing Virtual Ports
 ms.assetid: BF3DFE01-6583-4FBB-AFFA-2C017A3D9A05
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Virtual Ports

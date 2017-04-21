@@ -3,6 +3,11 @@ title: EFI\_USBFN\_TRANSFER\_RESULT
 author: windows-driver-content
 description: EFI\_USBFN\_TRANSFER\_RESULT
 ms.assetid: d101b061-2a83-4bf8-9502-ccb6e56f5cea
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USBFN\_TRANSFER\_RESULT

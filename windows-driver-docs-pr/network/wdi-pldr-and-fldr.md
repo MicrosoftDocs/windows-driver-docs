@@ -1,7 +1,12 @@
 ---
-title: PLDR
-description: .
+title: WDI PLDR Recovery
+description: This section describes recovery of PLDR for WDI drivers
 ms.assetid: 53C96AB8-721C-4EB9-80E4-9F841B76D4D2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PLDR

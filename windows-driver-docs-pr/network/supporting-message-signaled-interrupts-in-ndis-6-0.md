@@ -2,7 +2,15 @@
 title: Supporting Message Signaled Interrupts in NDIS 6.0
 description: Supporting Message Signaled Interrupts in NDIS 6.0
 ms.assetid: f8beae05-7376-4de7-ba90-90e8aa7da802
-keywords: ["interrupts WDK networking , adding entry points", "message-signaled interrupts WDK networking , adding entry points", "MSIs WDK networking , adding entry points"]
+keywords:
+- interrupts WDK networking , adding entry points
+- message-signaled interrupts WDK networking , adding entry points
+- MSIs WDK networking , adding entry points
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Message Signaled Interrupts in NDIS 6.0

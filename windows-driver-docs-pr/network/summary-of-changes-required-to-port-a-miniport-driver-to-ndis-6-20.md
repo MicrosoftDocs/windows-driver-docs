@@ -2,7 +2,16 @@
 title: Summary of changes to port a miniport driver to NDIS 6.20
 description: Summary of Changes Required to Port a Miniport Driver to NDIS 6.20
 ms.assetid: e52137ac-5333-4b62-8e26-686196d8ca78
-keywords: ["NDIS 6.20 WDK , porting miniport drivers", "porting miniport drivers to NDIS 6.20 WDK", "miniport drivers WDK", "miniport drivers WDK , porting to NDIS 6.20"]
+keywords:
+- NDIS 6.20 WDK , porting miniport drivers
+- porting miniport drivers to NDIS 6.20 WDK
+- miniport drivers WDK
+- miniport drivers WDK , porting to NDIS 6.20
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Summary of Changes Required to Port a Miniport Driver to NDIS 6.20

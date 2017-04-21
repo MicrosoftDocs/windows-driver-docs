@@ -2,7 +2,13 @@
 title: Installing Network Components
 description: Installing Network Components
 ms.assetid: 3efcd64c-22bc-44ff-a646-a57390482629
-keywords: ["network component installations WDK"]
+keywords:
+- network component installations WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Network Components

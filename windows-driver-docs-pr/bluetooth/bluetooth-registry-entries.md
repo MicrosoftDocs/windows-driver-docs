@@ -2,7 +2,15 @@
 title: Bluetooth Registry Entries
 description: Bluetooth Registry Entries
 ms.assetid: a4d2848d-cb3c-4413-b06f-fe4695448f6a
-keywords: ["Bluetooth WDK , registry entries", "registry WDK Bluetooth", "COD_Type subkey"]
+keywords:
+- Bluetooth WDK , registry entries
+- registry WDK Bluetooth
+- COD_Type subkey
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth Registry Entries

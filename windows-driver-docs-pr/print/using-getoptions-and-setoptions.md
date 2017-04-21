@@ -3,7 +3,14 @@ title: Using GetOptions and SetOptions
 author: windows-driver-content
 description: Using GetOptions and SetOptions
 ms.assetid: c8b5c235-0b74-47c8-b6ba-eba810a8467b
-keywords: ["GetOptions", "SetOptions"]
+keywords:
+- GetOptions
+- SetOptions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using GetOptions and SetOptions

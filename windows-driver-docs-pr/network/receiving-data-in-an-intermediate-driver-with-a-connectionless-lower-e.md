@@ -2,7 +2,14 @@
 title: Connectionless lower edge intermediate driver data reception
 description: Receiving Data in an Intermediate Driver with a Connectionless Lower Edge
 ms.assetid: 73143c2f-4127-41fc-b916-eac87521440a
-keywords: ["intermediate drivers WDK networking , receive operations", "NDIS intermediate drivers WDK , receive operations"]
+keywords:
+- intermediate drivers WDK networking , receive operations
+- NDIS intermediate drivers WDK , receive operations
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving Data in an Intermediate Driver with a Connectionless Lower Edge

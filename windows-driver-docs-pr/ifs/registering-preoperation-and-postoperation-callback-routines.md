@@ -3,7 +3,15 @@ title: Registering Preoperation and Postoperation Callback Routines
 author: windows-driver-content
 description: Registering Preoperation and Postoperation Callback Routines
 ms.assetid: 9f89ca46-8a8f-422f-9dbe-2620b944a3ae
-keywords: ["preoperation callback routines WDK file system minifilter , registering", "postoperation callback routines WDK file system minifilter , registering", "registering callback routines"]
+keywords:
+- preoperation callback routines WDK file system minifilter , registering
+- postoperation callback routines WDK file system minifilter , registering
+- registering callback routines
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering Preoperation and Postoperation Callback Routines

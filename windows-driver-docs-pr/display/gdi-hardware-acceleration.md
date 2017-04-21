@@ -2,7 +2,16 @@
 title: GDI Hardware Acceleration
 description: GDI Hardware Acceleration
 ms.assetid: 03db58e6-a6d5-4b6f-ba71-d22a985f9c57
-keywords: ["miniport drivers WDK display", "GDI hardware acceleration WDK display", "Connecting and Configuring Displays (CCD) WDK display", "hardware acceleration with GDI WDK display"]
+keywords:
+- miniport drivers WDK display
+- GDI hardware acceleration WDK display
+- Connecting and Configuring Displays (CCD) WDK display
+- hardware acceleration with GDI WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Hardware Acceleration

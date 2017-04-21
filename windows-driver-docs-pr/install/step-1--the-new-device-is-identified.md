@@ -2,6 +2,11 @@
 title: Step 1 The New Device is Identified
 description: Step 1 The New Device is Identified
 ms.assetid: e0df70ca-cea3-44a1-b5ff-407f72a216f9
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Step 1: The New Device is Identified

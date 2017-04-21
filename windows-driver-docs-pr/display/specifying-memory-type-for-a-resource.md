@@ -2,7 +2,15 @@
 title: Specifying Memory Type for a Resource
 description: Specifying Memory Type for a Resource
 ms.assetid: b4691de0-d3c9-4a6f-a9f4-aafb22ea3e97
-keywords: ["video memory types WDK display", "memory types WDK display", "resource memory types WDK display"]
+keywords:
+- video memory types WDK display
+- memory types WDK display
+- resource memory types WDK display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Memory Type for a Resource

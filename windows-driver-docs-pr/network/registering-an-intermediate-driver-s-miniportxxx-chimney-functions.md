@@ -2,7 +2,14 @@
 title: Registering intermediate driver MiniportXxx chimney functions
 description: Registering an Intermediate Driver's MiniportXxx Chimney Functions
 ms.assetid: d6f610b4-4390-4aa3-9711-b376848ce741
-keywords: ["intermediate drivers WDK TCP chimney offload , function registration", "registering TCP chimney-specific functions"]
+keywords:
+- intermediate drivers WDK TCP chimney offload , function registration
+- registering TCP chimney-specific functions
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering an Intermediate Driver's MiniportXxx Chimney Functions

@@ -2,7 +2,16 @@
 title: Clipping Transformed Vertices
 description: Clipping Transformed Vertices
 ms.assetid: 33b03264-780e-4b05-a108-6d1a017e8c27
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , clipping transformed vertices", "pretransformed vertices WDK DirectX 8.0", "clipping WDK DirectX 8.0", "vertex clipping WDK DirectX 8.0"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , clipping transformed vertices
+- pretransformed vertices WDK DirectX 8.0
+- clipping WDK DirectX 8.0
+- vertex clipping WDK DirectX 8.0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Clipping Transformed Vertices

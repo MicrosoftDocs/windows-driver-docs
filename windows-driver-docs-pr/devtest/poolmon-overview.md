@@ -2,7 +2,14 @@
 title: PoolMon Overview
 description: PoolMon Overview
 ms.assetid: c540e156-f0ce-4ac2-88e3-2e199b513abe
-keywords: ["PoolMon WDK , about PoolMon", "Memory Pool Monitor WDK , about Memory Pool Monitor"]
+keywords:
+- PoolMon WDK , about PoolMon
+- Memory Pool Monitor WDK , about Memory Pool Monitor
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PoolMon Overview

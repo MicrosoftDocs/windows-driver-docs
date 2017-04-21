@@ -3,7 +3,17 @@ title: Setting Error Source Information
 author: windows-driver-content
 description: Setting Error Source Information
 ms.assetid: 87c61c3e-768a-4784-b9ec-1ec85d65ea81
-keywords: ["error sources WDK WHEA , setting information", "errors WDK WHEA , error sources", "WHEA WDK , setting error source information", "Windows Hardware Error Architecture WDK , setting error source information", "hardware error sources WDK WHEA , setting information"]
+keywords:
+- error sources WDK WHEA , setting information
+- errors WDK WHEA , error sources
+- WHEA WDK , setting error source information
+- Windows Hardware Error Architecture WDK , setting error source information
+- hardware error sources WDK WHEA , setting information
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Error Source Information

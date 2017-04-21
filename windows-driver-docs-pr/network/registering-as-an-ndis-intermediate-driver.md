@@ -2,7 +2,15 @@
 title: Registering as an NDIS Intermediate Driver
 description: Registering as an NDIS Intermediate Driver
 ms.assetid: 4a095fa7-0d8f-4d7d-885c-bc43cd34c784
-keywords: ["registering intermediate drivers", "intermediate drivers WDK networking , registering", "NDIS intermediate drivers WDK , registering"]
+keywords:
+- registering intermediate drivers
+- intermediate drivers WDK networking , registering
+- NDIS intermediate drivers WDK , registering
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering as an NDIS Intermediate Driver

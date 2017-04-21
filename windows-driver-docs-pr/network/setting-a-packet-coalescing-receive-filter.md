@@ -2,6 +2,11 @@
 title: Setting a Packet Coalescing Receive Filter
 description: Setting a Packet Coalescing Receive Filter
 ms.assetid: 59BD092F-A530-446F-93E7-02E1F254E9A0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting a Packet Coalescing Receive Filter

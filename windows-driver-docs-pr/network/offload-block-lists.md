@@ -2,7 +2,15 @@
 title: Offload Block Lists
 description: Offload Block Lists
 ms.assetid: 292c2ab5-f623-48e0-8c43-a046aa0fbc39
-keywords: ["offload state WDK TCP chimney offload , block lists", "block lists WDK TCP chimney offload", "NDIS_MINIPORT_OFFLOAD_BLOCK_LIST"]
+keywords:
+- offload state WDK TCP chimney offload , block lists
+- block lists WDK TCP chimney offload
+- NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offload Block Lists

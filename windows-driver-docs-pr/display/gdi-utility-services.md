@@ -2,7 +2,15 @@
 title: GDI Utility Services
 description: GDI Utility Services
 ms.assetid: 4ceec90d-5be2-4b79-87b3-1fdb6b0aea6b
-keywords: ["GDI WDK Windows 2000 display , utility services", "graphics drivers WDK Windows 2000 display , utility services", "drawing WDK GDI , utility services"]
+keywords:
+- GDI WDK Windows 2000 display , utility services
+- graphics drivers WDK Windows 2000 display , utility services
+- drawing WDK GDI , utility services
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Utility Services

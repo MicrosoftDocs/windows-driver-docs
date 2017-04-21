@@ -1,14 +1,20 @@
----
+﻿---
 title: TraceView Control Commands
-description: Use a Traceview control command to manage trace sessions, including starting and stopping the session, enabling and disabling providers, updating the properties of the trace session, and flushing trace buffers.
+description: Use a Traceview control command to manage trace sessions.
 ms.assetid: 3ebfb728-7ca7-473d-b4bb-a62d1704aed6
-keywords: ["TraceView Control Commands Driver Development Tools"]
+keywords:
+- TraceView Control Commands Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - TraceView Control Commands
 api_type:
 - NA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TraceView Control Commands

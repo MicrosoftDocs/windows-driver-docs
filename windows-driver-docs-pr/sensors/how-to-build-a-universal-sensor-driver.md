@@ -1,8 +1,13 @@
----
+﻿---
 title: How to build a universal sensor driver
 author: windows-driver-content
-description: A universal sensor driver is a sensor driver that is developed based on the universal sensor driver model for Windows 10. And the topics in this section show you how to build such a sensor driver.
+description: A universal sensor driver is a sensor driver that is developed based on the universal sensor driver model for Windows 10. 
 ms.assetid: 759E01CA-9838-4CBF-B5D1-2DCD2230A48A
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to build a universal sensor driver

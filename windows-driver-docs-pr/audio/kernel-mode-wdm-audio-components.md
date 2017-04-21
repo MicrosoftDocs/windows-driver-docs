@@ -2,7 +2,30 @@
 title: Kernel-Mode WDM Audio Components
 description: Kernel-Mode WDM Audio Components
 ms.assetid: 827997e2-6f07-4635-ac35-4ad026b82eae
-keywords: ["kernel-mode components WDK audio", "WDMAud system driver WDK audio", "SysAudio system driver WDK audio", "KMixer system driver WDK audio", "Redbook system driver WDK audio", "SBEmul system driver WDK audio", "SWMidi system driver WDK audio", "DMusic system driver WDK audio", "AEC WDK audio", "DRMK system driver WDK audio", "Splitter system driver WDK audio", "port class adapter drivers WDK audio", "USBAudio class system driver WDK audio", "AVCAudio class system driver WDK audio", "1394 WDK audio", "KMixer system driver WDK audio , about KMixer system driver", "IEEE 1394 WDK audio", "WDM audio components WDK"]
+keywords:
+- kernel-mode components WDK audio
+- WDMAud system driver WDK audio
+- SysAudio system driver WDK audio
+- KMixer system driver WDK audio
+- Redbook system driver WDK audio
+- SBEmul system driver WDK audio
+- SWMidi system driver WDK audio
+- DMusic system driver WDK audio
+- AEC WDK audio
+- DRMK system driver WDK audio
+- Splitter system driver WDK audio
+- port class adapter drivers WDK audio
+- USBAudio class system driver WDK audio
+- AVCAudio class system driver WDK audio
+- 1394 WDK audio
+- KMixer system driver WDK audio , about KMixer system driver
+- IEEE 1394 WDK audio
+- WDM audio components WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel-Mode WDM Audio Components

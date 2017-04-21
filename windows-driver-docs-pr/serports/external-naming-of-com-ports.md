@@ -3,7 +3,18 @@ title: External Naming of COM Ports
 author: windows-driver-content
 description: External Naming of COM Ports
 ms.assetid: d517bc73-9687-45f8-a5f8-837ffe868fae
-keywords: ["Serial driver WDK , COM ports", "COM ports WDK serial devices", "serial devices WDK , COM ports", "names WDL serial devices", "external naming WDK serial devices", "symbolic links WDK serial devices"]
+keywords:
+- Serial driver WDK , COM ports
+- COM ports WDK serial devices
+- serial devices WDK , COM ports
+- names WDL serial devices
+- external naming WDK serial devices
+- symbolic links WDK serial devices
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # External Naming of COM Ports

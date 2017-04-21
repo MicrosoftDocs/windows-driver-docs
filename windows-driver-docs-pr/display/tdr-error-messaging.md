@@ -2,6 +2,11 @@
 title: TDR Error Messaging
 description: TDR Error Messaging
 ms.assetid: 0a29c701-2257-478d-bf2d-ca4a7edecfd0
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TDR Error Messaging

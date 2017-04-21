@@ -2,7 +2,18 @@
 title: Pin Data-Range and Intersection Properties
 description: Pin Data-Range and Intersection Properties
 ms.assetid: 55a749b2-1f54-42f8-876c-f391112d7bab
-keywords: ["audio properties WDK , pins", "WDM audio properties WDK , pins", "pins WDK audio , data formats", "data-range formats WDK audio", "formats WDK audio , pins", "intersections WDK audio"]
+keywords:
+- audio properties WDK , pins
+- WDM audio properties WDK , pins
+- pins WDK audio , data formats
+- data-range formats WDK audio
+- formats WDK audio , pins
+- intersections WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pin Data-Range and Intersection Properties

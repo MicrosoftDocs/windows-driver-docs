@@ -2,7 +2,15 @@
 title: Power Management for Offload Targets
 description: Power Management for Offload Targets
 ms.assetid: 3d32d617-cf6d-4fe7-9feb-be2e36fd3006
-keywords: ["TCP chimney offload WDK networking , power management", "chimney offload WDK networking , power management", "power management WDK networking , TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , power management
+- chimney offload WDK networking , power management
+- power management WDK networking , TCP chimney offload
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Management for Offload Targets

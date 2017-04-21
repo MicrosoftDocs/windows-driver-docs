@@ -3,6 +3,11 @@ title: Hello World' Installation File
 author: windows-driver-content
 description: Hello World' Installation File
 ms.assetid: 826f4f99-16bd-4586-9cc1-0afde2fcee65
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 'Hello World' Installation File

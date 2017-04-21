@@ -3,6 +3,11 @@ title: Identifying Device Functions in MFPs
 author: windows-driver-content
 description: Identifying Device Functions in MFPs
 ms.assetid: 14016c43-b93a-4009-848b-1bcf3f1d94b6
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifying Device Functions in MFPs

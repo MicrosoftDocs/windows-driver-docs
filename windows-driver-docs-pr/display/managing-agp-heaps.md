@@ -2,7 +2,20 @@
 title: Managing AGP Heaps
 description: Managing AGP Heaps
 ms.assetid: edeed3bc-c107-4286-9d5a-7fdef89cc4e1
-keywords: ["heaps WDK DirectDraw", "display memory WDK DirectDraw , heaps", "nonlocal display memory WDK DirectDraw , heaps", "AGP WDK DirectDraw , heaps", "drawing AGP support WDK DirectDraw , heaps", "DirectDraw AGP support WDK Windows 2000 display , heaps", "memory WDK DirectDraw AGP , heaps", "GetDriverInfo2"]
+keywords:
+- heaps WDK DirectDraw
+- display memory WDK DirectDraw , heaps
+- nonlocal display memory WDK DirectDraw , heaps
+- AGP WDK DirectDraw , heaps
+- drawing AGP support WDK DirectDraw , heaps
+- DirectDraw AGP support WDK Windows 2000 display , heaps
+- memory WDK DirectDraw AGP , heaps
+- GetDriverInfo2
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing AGP Heaps

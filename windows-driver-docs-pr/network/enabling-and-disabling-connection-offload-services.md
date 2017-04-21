@@ -2,7 +2,14 @@
 title: Enabling and Disabling Connection Offload Services
 description: Enabling and Disabling Connection Offload Services
 ms.assetid: 3d353f87-1cd7-483a-b8eb-d45ec3b8f94e
-keywords: ["connection offload WDK TCP/IP transport , enabling services", "connection offload WDK TCP/IP transport , disabling services"]
+keywords:
+- connection offload WDK TCP/IP transport , enabling services
+- connection offload WDK TCP/IP transport , disabling services
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling and Disabling Connection Offload Services

@@ -2,7 +2,18 @@
 title: Introduction to Wireless LAN Networks
 description: Introduction to Wireless LAN Networks
 ms.assetid: ab733198-b13f-46f2-a57d-a255fe6979eb
-keywords: ["Native 802.11 WDK networking , about wireless LAN networks", "wireless LAN networks WDK", "WLAN networks WDK", "BSS networks WDK", "wireless LAN networks WDK , about wireless LAN networks", "WLAN networks WDK , about wireless LAN networks"]
+keywords:
+- Native 802.11 WDK networking , about wireless LAN networks
+- wireless LAN networks WDK
+- WLAN networks WDK
+- BSS networks WDK
+- wireless LAN networks WDK , about wireless LAN networks
+- WLAN networks WDK , about wireless LAN networks
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Wireless LAN Networks

@@ -3,7 +3,17 @@ title: Wi-Fi direct pairing implementation
 author: windows-driver-content
 description: This section provides design guidelines and requirements for a peripheral device to participate in the Tap and Setup and Tap and Reconnect use cases.
 ms.assetid: 1B729E9F-DF9F-4263-9F0B-5EDCF817D2C3
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi direct pairing implementation

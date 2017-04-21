@@ -2,7 +2,14 @@
 title: Developing IPsec-Compatible Callout Drivers
 description: Developing IPsec-Compatible Callout Drivers
 ms.assetid: 5e4fad4e-a790-4294-b3ac-a796f76265ad
-keywords: ["IPsec WDK Windows Filtering Platform , compatibility with WFP callout drivers", "Windows Filtering Platform callout drivers WDK , IPsec compatibility"]
+keywords:
+- IPsec WDK Windows Filtering Platform , compatibility with WFP callout drivers
+- Windows Filtering Platform callout drivers WDK , IPsec compatibility
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developing IPsec-Compatible Callout Drivers

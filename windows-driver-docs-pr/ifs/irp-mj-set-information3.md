@@ -3,7 +3,18 @@ title: IRP\_MJ\_SET\_INFORMATION
 author: windows-driver-content
 description: IRP\_MJ\_SET\_INFORMATION
 ms.assetid: 2a6c837c-85c9-46d8-85d8-d779f22be54e
-keywords: ["IRP_MJ_SET_INFORMATION", "security WDK file systems , adding security checks", "security checks WDK file systems , IRP_MJ_SET_INFORMATION", "rename operations WDK file systems", "hard link operations WDK file systems", "names WDK file systems"]
+keywords:
+- IRP_MJ_SET_INFORMATION
+- security WDK file systems , adding security checks
+- security checks WDK file systems , IRP_MJ_SET_INFORMATION
+- rename operations WDK file systems
+- hard link operations WDK file systems
+- names WDK file systems
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IRP\_MJ\_SET\_INFORMATION

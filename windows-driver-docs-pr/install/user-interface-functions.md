@@ -2,6 +2,11 @@
 title: User Interface Functions
 description: User Interface Functions
 ms.assetid: 30ec0628-cac7-46ab-a9f2-c81ca3ad7125
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User Interface Functions

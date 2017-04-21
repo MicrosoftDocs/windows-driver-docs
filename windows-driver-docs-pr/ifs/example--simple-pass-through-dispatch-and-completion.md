@@ -3,7 +3,13 @@ title: Example Simple Pass-Through Dispatch and Completion
 author: windows-driver-content
 description: Example Simple Pass-Through Dispatch and Completion
 ms.assetid: dae3a450-37b1-470b-a0f3-4108075e06ac
-keywords: ["IRP completion routines WDK file system , examples"]
+keywords:
+- IRP completion routines WDK file system , examples
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example: Simple Pass-Through Dispatch and Completion

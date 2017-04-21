@@ -3,7 +3,15 @@ title: Pscript Renderer
 author: windows-driver-content
 description: Pscript Renderer
 ms.assetid: b1707a83-c5c9-4578-8603-7c19de4960ed
-keywords: ["PostScript Printer Driver WDK print , renderer", "Pscript WDK print , renderer", "renderer WDK Pscript"]
+keywords:
+- PostScript Printer Driver WDK print , renderer
+- Pscript WDK print , renderer
+- renderer WDK Pscript
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pscript Renderer

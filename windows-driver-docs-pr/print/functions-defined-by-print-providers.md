@@ -3,7 +3,14 @@ title: Functions Defined by Print Providers
 author: windows-driver-content
 description: Functions Defined by Print Providers
 ms.assetid: 4fae4b69-ed4b-47b6-b6e8-41733aed51a5
-keywords: ["print providers WDK , functions", "functions WDK print providers"]
+keywords:
+- print providers WDK , functions
+- functions WDK print providers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functions Defined by Print Providers

@@ -2,7 +2,14 @@
 title: Vertex Buffer Callbacks and Windows 2000
 description: Vertex Buffer Callbacks and Windows 2000
 ms.assetid: d3b92bc9-d4f1-4079-86f1-53c04bcab443
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, callbacks", "vertex buffers WDK DirectX 8.0 , callbacks and Windows 2000"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, callbacks
+- vertex buffers WDK DirectX 8.0 , callbacks and Windows 2000
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vertex Buffer Callbacks and Windows 2000

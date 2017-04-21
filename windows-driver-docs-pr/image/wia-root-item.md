@@ -3,6 +3,11 @@ title: WIA Root Item
 author: windows-driver-content
 description: WIA Root Item
 ms.assetid: cf4d1056-3437-4ba7-8a87-421e91afd02a
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Root Item

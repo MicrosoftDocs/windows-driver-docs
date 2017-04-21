@@ -3,7 +3,14 @@ title: Port Monitor Client DLL Functions
 author: windows-driver-content
 description: Port Monitor Client DLL Functions
 ms.assetid: 41efab1a-0638-4925-90a2-cf68d2306ca6
-keywords: ["port monitors WDK print , functions", "client DLL port monitor functions WDK"]
+keywords:
+- port monitors WDK print , functions
+- client DLL port monitor functions WDK
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Port Monitor Client DLL Functions

@@ -2,7 +2,13 @@
 title: Implementing an intermediate driver ProtocolNetPnPEvent handler
 description: Implementing a ProtocolNetPnPEvent Handler in an Intermediate Driver
 ms.assetid: 1d0475c4-631d-4b8a-ab26-5b8b9425bfe6
-keywords: ["ProtocolNetPnPEvent"]
+keywords:
+- ProtocolNetPnPEvent
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing a ProtocolNetPnPEvent Handler in an Intermediate Driver

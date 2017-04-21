@@ -2,7 +2,15 @@
 title: Handling OID Query and Set Requests in an NDIS Interface Provider
 description: Handling OID Query and Set Requests in an NDIS Interface Provider
 ms.assetid: 9ce51fc8-426f-4d36-8ee7-0a93b7b8439c
-keywords: ["NDIS network interfaces WDK , interface providers", "network interfaces WDK , interface providers", "interface providers WDk network interface"]
+keywords:
+- NDIS network interfaces WDK , interface providers
+- network interfaces WDK , interface providers
+- interface providers WDk network interface
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling OID Query and Set Requests in an NDIS Interface Provider

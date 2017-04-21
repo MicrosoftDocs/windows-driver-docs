@@ -3,7 +3,13 @@ title: Option Attributes for the ColorMode Feature
 author: windows-driver-content
 description: Option Attributes for the ColorMode Feature
 ms.assetid: e6f68a50-f044-406e-b92c-8449d126bceb
-keywords: ["ColorMode Feature"]
+keywords:
+- ColorMode Feature
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Attributes for the ColorMode Feature

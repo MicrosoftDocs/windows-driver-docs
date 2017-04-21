@@ -3,7 +3,16 @@ title: Load Order Groups and Altitudes for Minifilter Drivers
 author: windows-driver-content
 description: Load Order Groups and Altitudes for Minifilter Drivers
 ms.assetid: be8f18fe-c80b-44a3-b0c3-f2f630142180
-keywords: ["altitudes WDK file system minifilter", "load order groups WDK file system", "start types WDK file system", "driver start types WDK file system"]
+keywords:
+- altitudes WDK file system minifilter
+- load order groups WDK file system
+- start types WDK file system
+- driver start types WDK file system
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Load Order Groups and Altitudes for Minifilter Drivers

@@ -1,9 +1,18 @@
 ---
-title: \ EnablePPDirective Preprocessor Directive
+title: '\ EnablePPDirective Preprocessor Directive'
 author: windows-driver-content
-description: \ EnablePPDirective Preprocessor Directive
+description: '\ EnablePPDirective Preprocessor Directive'
 ms.assetid: aebb11ec-b281-461e-b3fd-65e9b2773049
-keywords: ["preprocessor directives WDK GDL , keywords", "keywords WDK GDL", "reserved keywords WDK", "EnablePPDirective directive WDK GDL"]
+keywords:
+- preprocessor directives WDK GDL , keywords
+- keywords WDK GDL
+- reserved keywords WDK
+- EnablePPDirective directive WDK GDL
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \#EnablePPDirective Preprocessor Directive

@@ -3,7 +3,30 @@ title: Using BDA Property and Method Sets
 author: windows-driver-content
 description: Using BDA Property and Method Sets
 ms.assetid: d4e55f32-620b-4978-9935-ebd4c2c3ed39
-keywords: ["Broadcast Driver Architecture WDK AVStream , property sets", "BDA WDK AVStream , property sets", "BDA minidrivers WDK AVStream , property sets", "Broadcast Driver Architecture WDK AVStream , method sets", "BDA WDK AVStream , method sets", "BDA minidrivers WDK AVStream , method sets", "method sets WDK AVStream", "property sets WDK AVStream", "output pins WDK BDA", "input pins WDK BDA", "pin lists in filter topology WDK BDA", "nodes WDK BDA", "pin types WDK AVStream", "filter pins WDK BDA", "topology WDK BDA", "filter topology WDK BDA", "property sets WDK BDA", "method sets WDK BDA"]
+keywords:
+- Broadcast Driver Architecture WDK AVStream , property sets
+- BDA WDK AVStream , property sets
+- BDA minidrivers WDK AVStream , property sets
+- Broadcast Driver Architecture WDK AVStream , method sets
+- BDA WDK AVStream , method sets
+- BDA minidrivers WDK AVStream , method sets
+- method sets WDK AVStream
+- property sets WDK AVStream
+- output pins WDK BDA
+- input pins WDK BDA
+- pin lists in filter topology WDK BDA
+- nodes WDK BDA
+- pin types WDK AVStream
+- filter pins WDK BDA
+- topology WDK BDA
+- filter topology WDK BDA
+- property sets WDK BDA
+- method sets WDK BDA
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using BDA Property and Method Sets

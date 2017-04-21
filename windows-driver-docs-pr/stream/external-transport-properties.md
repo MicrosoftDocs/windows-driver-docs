@@ -3,7 +3,15 @@ title: External Transport Properties
 author: windows-driver-content
 description: External Transport Properties
 ms.assetid: e57e6c13-dfa3-4bec-9136-0e2bb2ffdd56
-keywords: ["external transport properties WDK video capture", "transport properties WDK video capture", "PROPSETID_EXT_TRANSPORT"]
+keywords:
+- external transport properties WDK video capture
+- transport properties WDK video capture
+- PROPSETID_EXT_TRANSPORT
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # External Transport Properties

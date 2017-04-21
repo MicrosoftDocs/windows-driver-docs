@@ -2,7 +2,14 @@
 title: Rendering Wave Content Using DirectSound Software and Hardware Buffers
 description: Rendering Wave Content Using DirectSound Software and Hardware Buffers
 ms.assetid: df92dac3-2580-4910-8a55-bd9e9f82eb1f
-keywords: ["DirectSound WDK audio , content rendering", "wave content rendering WDK audio"]
+keywords:
+- DirectSound WDK audio , content rendering
+- wave content rendering WDK audio
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rendering Wave Content Using DirectSound Software and Hardware Buffers

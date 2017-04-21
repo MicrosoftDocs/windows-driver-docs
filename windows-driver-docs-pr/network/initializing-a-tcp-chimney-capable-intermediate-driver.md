@@ -2,7 +2,14 @@
 title: Initializing a TCP Chimney-Capable Intermediate Driver
 description: Initializing a TCP Chimney-Capable Intermediate Driver
 ms.assetid: dbe6226b-fa0f-4365-9044-488deedd27b6
-keywords: ["intermediate drivers WDK TCP chimney offload , initializing", "initializing TCP chimney-capable intermediate drivers"]
+keywords:
+- intermediate drivers WDK TCP chimney offload , initializing
+- initializing TCP chimney-capable intermediate drivers
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a TCP Chimney-Capable Intermediate Driver

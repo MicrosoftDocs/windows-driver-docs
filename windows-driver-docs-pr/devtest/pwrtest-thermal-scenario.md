@@ -1,7 +1,12 @@
----
+﻿---
 title: PwrTest Thermal Scenario
-description: The PwrTest Thermal Scenario monitors ACPI thermal zone information and statistics. This scenario is only supported on systems that report thermal zones and temperature changes.
+description: The PwrTest Thermal Scenario monitors ACPI thermal zone information and statistics.
 ms.assetid: C6941A50-EA0F-4C46-A290-8CAAD292E156
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PwrTest Thermal Scenario

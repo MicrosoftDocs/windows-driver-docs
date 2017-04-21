@@ -2,6 +2,11 @@
 title: Input Buffer Order Example 4
 description: Input Buffer Order Example 4
 ms.assetid: 56370370-4786-44e4-9447-3937e4595e27
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Input Buffer Order Example 4

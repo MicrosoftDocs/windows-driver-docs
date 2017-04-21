@@ -2,7 +2,20 @@
 title: Tracking Window Changes
 description: Tracking Window Changes
 ms.assetid: 76539ee8-439a-4c6a-b16a-3998e341f954
-keywords: ["display drivers WDK Windows 2000 , window changes", "window change tracking WDK Windows 2000 display", "WNDOBJ", "client region changes WDK Windows 2000 display", "visible client regions WDK Windows 2000 display", "size WDK Windows 2000 display", "positions WDK Windows 2000 display", "tracking window changes WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , window changes
+- window change tracking WDK Windows 2000 display
+- WNDOBJ
+- client region changes WDK Windows 2000 display
+- visible client regions WDK Windows 2000 display
+- size WDK Windows 2000 display
+- positions WDK Windows 2000 display
+- tracking window changes WDK Windows 2000 display
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracking Window Changes

@@ -1,9 +1,17 @@
 ---
-title: Connections: Subunit plugs and unit plugs - one AV/C unit
+title: Connections between subunit plugs and unit plugs within one AV/C unit
 author: windows-driver-content
-description: Connections between subunit plugs and unit plugs within one AV/C unit
+description: Provides information about connections between subunit plugs and unit plugs within one AV/C unit
 ms.assetid: 12132a0c-9657-4cff-a582-8404a103c46a
-keywords: ["connections WDK AV/C", "AV/C WDK , connection scenarios", "AVCCONNECTINFO"]
+keywords:
+- connections WDK AV/C
+- AV/C WDK , connection scenarios
+- AVCCONNECTINFO
+ms.author: windows-driver-content
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connections between subunit plugs and unit plugs within one AV/C unit
