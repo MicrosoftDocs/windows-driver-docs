@@ -54,7 +54,7 @@
 ##### [Initialization sequence](initialization-sequence.md)
 ##### [NFCEE discovery sequence](nfcee-discovery-sequence.md)
 ##### [RF discovery sequence](rf-discovery-sequence.md)
-##### [Tag RF data exchange sequence](tag-rf-data-exchagne-sequence.md)
+##### [Tag RF data exchange sequence](tag-rf-data-exchange-sequence.md)
 ##### [P2P RF data exchange sequence](p2p-rf-data-exchange-sequence.md)
 ##### [Card emulation RF sequence](card-emulation-rf-sequence.md)
 #### [NCI packet handling](packet-handling.md)
