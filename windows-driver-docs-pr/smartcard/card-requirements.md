@@ -2,7 +2,7 @@
 title: Card Requirements
 description: Card Requirements
 ms.assetid: 3BE887F9-4B35-4A83-9E98-DD7555DF2953
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

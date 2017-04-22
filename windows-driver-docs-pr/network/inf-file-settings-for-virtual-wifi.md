@@ -4,7 +4,7 @@ description: INF File Settings for Virtual WiFi
 ms.assetid: 1288034d-6d6c-4b6f-9b00-8ad3ef791bf1
 keywords:
 - Virtual WiFi in kernel mode WDK networking , INF file settings
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

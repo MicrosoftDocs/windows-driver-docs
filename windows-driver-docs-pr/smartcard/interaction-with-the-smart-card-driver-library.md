@@ -5,7 +5,7 @@ ms.assetid: 44cf41f4-bbff-4193-afad-6d4106ce50c3
 keywords:
 - IOCTLs WDK smart card
 - vendor-supplied drivers WDK smart card , IOCTL request management
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

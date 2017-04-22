@@ -9,7 +9,7 @@ keywords:
 - user-mode drivers WDK UMDF , adding devices
 - installing devices WDK , UMDF
 - adding devices WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

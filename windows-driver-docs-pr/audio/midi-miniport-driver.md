@@ -6,7 +6,7 @@ keywords:
 - audio miniport drivers WDK , MIDI
 - miniport drivers WDK audio , MIDI
 - MIDI miniport drivers WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 094e339c-b5a7-4894-9a3d-145231311647
 keywords:
 - virtual connections WDK CoNDIS , deactivating
 - deactivating virtual connections
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

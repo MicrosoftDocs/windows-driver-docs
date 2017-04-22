@@ -5,7 +5,7 @@ ms.assetid: 4989d5a4-158c-41db-ab2d-fc995b67a822
 keywords:
 - wake-up capabilities WDK networking , handling wake-up events
 - bus-specific wake-up lines WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

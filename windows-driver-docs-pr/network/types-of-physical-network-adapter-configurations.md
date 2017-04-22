@@ -2,7 +2,7 @@
 title: Types of Physical Network Adapter Configurations
 description: Types of Physical Network Adapter Configurations
 ms.assetid: 83F71AF7-A807-4F81-A0B3-1777135AAE39
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

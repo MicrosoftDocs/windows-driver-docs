@@ -7,7 +7,7 @@ keywords:
 - printer commands WDK Unidrv , strings
 - command strings WDK Unidrv
 - strings WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

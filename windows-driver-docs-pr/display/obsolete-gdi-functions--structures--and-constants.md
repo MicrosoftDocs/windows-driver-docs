@@ -6,7 +6,7 @@ keywords:
 - GDI WDK Windows 2000 display , obsolete reference
 - graphics drivers WDK Windows 2000 display , obsolete reference
 - drawing WDK GDI , obsolete reference
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

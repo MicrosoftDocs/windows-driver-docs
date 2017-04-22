@@ -11,7 +11,7 @@ keywords:
 - frame buffer organization WDK DirectX VA
 - buffers WDK DirectX VA
 - prediction blocks WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Step 4 Test the device metadata for your Windows Store device app
 description: This topic describes how you can test device metadata for your Windows Store device app locally before you submit it to the Windows Dev Center Dashboard.
 ms.assetid: C1DA36DE-DB89-4A2A-8B9F-DF2A279D3EDD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

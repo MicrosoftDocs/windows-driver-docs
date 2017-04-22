@@ -9,7 +9,7 @@ keywords:
 - IEEE 1394 WDK buses , diagnostic tools
 - 1394 WDK buses , diagnostic tools
 - sample drivers WDK IEEE 1394 bus
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

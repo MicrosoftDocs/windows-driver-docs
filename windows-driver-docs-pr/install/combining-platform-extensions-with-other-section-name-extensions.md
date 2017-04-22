@@ -10,7 +10,7 @@ keywords:
 - install-section-name WDK INF files
 - decorated INF WDK
 - operating systems WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

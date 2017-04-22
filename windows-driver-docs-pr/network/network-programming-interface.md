@@ -8,7 +8,7 @@ keywords:
 - provider characteristics structure WDK Network Module Registrar
 - client dispatch tables WDK Network Module Registrar
 - dispatch tables WDK Network Module Registrar
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

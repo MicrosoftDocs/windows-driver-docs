@@ -12,7 +12,7 @@ keywords:
 - NetDMA WDK networking , direct cache access
 - CPU affinities WDK NetDMA
 - NetDMA 2.0 WDK networking , direct cache access
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

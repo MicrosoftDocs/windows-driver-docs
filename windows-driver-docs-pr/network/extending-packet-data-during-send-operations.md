@@ -4,7 +4,7 @@ description: Extending Packet Data During Send Operations
 ms.assetid: fc45b9e7-f598-4082-8ab2-6f65a2c2bb9f
 keywords:
 - extending packet data during send WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

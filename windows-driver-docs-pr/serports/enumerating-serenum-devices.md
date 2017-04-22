@@ -6,7 +6,7 @@ ms.assetid: c850c52b-82d7-48c2-a6c4-bfd071756632
 keywords:
 - Serenum driver WDK , device enumeration
 - enumerating Serenum devices WDK serial devices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - SAN sockets WDK , options
 - retrieving SAN socket options
 - SAN service providers WDK , status information
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 463a2434-7f3e-4960-a595-8ca2ccc21504
 keywords:
 - macroblocks WDK DirectX VA , motion vectors
 - motion vectors WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

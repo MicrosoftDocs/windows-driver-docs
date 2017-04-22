@@ -8,7 +8,7 @@ keywords:
 - device objects WDK storage
 - IEEE 1394 controller example WDK storage
 - PCI IEEE 1394 controller example WDK storage
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

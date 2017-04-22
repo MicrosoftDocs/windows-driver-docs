@@ -5,7 +5,7 @@ ms.assetid: 1534dbf9-3ee0-490a-9633-55827ffbcb1a
 keywords:
 - call parameter changes WDK CoNDIS
 - client-initiated call parameter changes WDK CoNDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

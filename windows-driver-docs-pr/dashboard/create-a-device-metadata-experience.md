@@ -2,7 +2,7 @@
 title: Create a Device Metadata Experience
 description: Create a Device Metadata Experience
 ms.assetid: 964ad06e-0f29-441d-b184-61f80a614914
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

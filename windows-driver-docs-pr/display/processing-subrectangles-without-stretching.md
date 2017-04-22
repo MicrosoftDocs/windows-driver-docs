@@ -5,7 +5,7 @@ ms.assetid: ee59b06c-a3fb-41ac-875e-754d20a5eaa6
 keywords:
 - deinterlacing WDK DirectX VA , subrectangular processing
 - subrectangular processing WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

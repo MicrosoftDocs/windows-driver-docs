@@ -15,7 +15,7 @@ keywords:
 - process services WDK GDI
 - file services WDK GDI
 - modules WDK GDI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

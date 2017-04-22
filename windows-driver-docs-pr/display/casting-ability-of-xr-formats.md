@@ -8,7 +8,7 @@ keywords:
 - XR format casting ability WDK Windows 7 display
 - casting ability WDK Windows 7 display
 - casting ability WDK Windows 7 display , XR formats
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

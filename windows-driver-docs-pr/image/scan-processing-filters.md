@@ -3,7 +3,7 @@ title: Scan Processing Filters
 author: windows-driver-content
 description: Scan Processing Filters
 ms.assetid: 9c654af4-9492-4aca-95fb-4301084eefa7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

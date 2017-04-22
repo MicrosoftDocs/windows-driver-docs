@@ -6,7 +6,7 @@ ms.assetid: 3fa897f5-2de8-484b-becb-c2de23fb5e8c
 keywords:
 - general I/O targets WDK KMDF , sending I/O requests to
 - sending I/O requests WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

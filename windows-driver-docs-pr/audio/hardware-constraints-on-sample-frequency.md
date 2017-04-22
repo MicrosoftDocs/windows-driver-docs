@@ -8,7 +8,7 @@ keywords:
 - hardware constraints WDK audio
 - frequency constraints WDK audio
 - data-intersection handlers WDK audio , sample frequency constraints
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

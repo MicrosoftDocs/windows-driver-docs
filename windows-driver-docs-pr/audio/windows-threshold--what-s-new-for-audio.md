@@ -2,7 +2,7 @@
 title: Windows 10 What's New for Audio Drivers
 description: This topic provides a high level summary of what's new in audio for Windows 10.
 ms.assetid: 9005966A-CCC2-478C-9221-56007B7FADFB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: TrustedCertificateList
 description: TrustedCertificateList
 ms.assetid: 116ee448-b0a8-4441-845c-945fc5ae0ddd
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

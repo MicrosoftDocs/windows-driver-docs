@@ -4,7 +4,7 @@ description: COPP Video Miniport Driver Get Certificate Template Code
 ms.assetid: 13810013-389a-458d-be9d-e81a0b248dec
 keywords:
 - certificates WDK COPP
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

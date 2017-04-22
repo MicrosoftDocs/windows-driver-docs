@@ -2,7 +2,7 @@
 title: C30030
 description: Warning C30030 Calling a memory allocating function and passing a parameter that indicates executable memory.
 ms.assetid: D1C8B316-DC04-4B18-A0EB-40833D50B843
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

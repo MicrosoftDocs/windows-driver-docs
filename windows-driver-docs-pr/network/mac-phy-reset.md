@@ -7,7 +7,7 @@ keywords:
 - miniport drivers WDK Native 802.11 , reset operations
 - OID_DOT11_RESET_REQUEST
 - MAC/PHY reset WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

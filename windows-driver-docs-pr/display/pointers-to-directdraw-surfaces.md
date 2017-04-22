@@ -6,7 +6,7 @@ keywords:
 - context WDK Direct3D , DirectDraw surface pointers
 - DirectDraw surface pointers WDK Direct3D
 - surface pointers for DirectDraw WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

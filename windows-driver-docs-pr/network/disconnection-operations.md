@@ -5,7 +5,7 @@ ms.assetid: f0ccdd41-3470-4602-a26b-af166e7eac82
 keywords:
 - network operations WDK Native 802.11 , disconnection operations
 - disconnections WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

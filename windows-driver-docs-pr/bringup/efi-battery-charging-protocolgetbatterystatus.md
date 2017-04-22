@@ -3,7 +3,7 @@ title: EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryStatus
 author: windows-driver-content
 description: EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryStatus
 ms.assetid: dc2b647b-b3b6-4d85-9faf-9e401fa67571
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

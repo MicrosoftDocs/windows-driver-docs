@@ -2,7 +2,7 @@
 title: Packet Coalescing Receive Filters
 description: Packet Coalescing Receive Filters
 ms.assetid: B5C17A9D-A495-4A3D-B53E-B10F53C732D4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

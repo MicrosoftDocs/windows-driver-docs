@@ -5,7 +5,7 @@ description: Supporting Standard Paper Sizes
 ms.assetid: 04f8fbdb-88f8-4595-b5d2-74315c02bb41
 keywords:
 - standard paper sizes WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

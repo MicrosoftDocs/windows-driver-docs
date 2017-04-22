@@ -8,7 +8,7 @@ keywords:
 - debugging drivers WDK UMDF , software tracing
 - tracing WDK , framework-based drivers
 - WPP software tracing WDK , framework-based driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

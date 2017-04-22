@@ -3,7 +3,7 @@ title: Common WIA Security Problems
 author: windows-driver-content
 description: Common WIA Security Problems
 ms.assetid: d3f7d6e9-1ac4-4209-92bb-d08e4e13a4ad
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

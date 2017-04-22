@@ -2,7 +2,7 @@
 title: '\_Kernel\_IoGetDmaAdapter\_ Annotation for drivers'
 description: Use the \_Kernel\_IoGetDmaAdapter\_ annotation to direct the code analysis tools to look for misuse of DMA pointers.
 ms.assetid: 51F71815-D899-48F5-8F81-92B139FC6B8E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

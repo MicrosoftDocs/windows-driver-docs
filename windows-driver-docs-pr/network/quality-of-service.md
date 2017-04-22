@@ -7,7 +7,7 @@ keywords:
 - CoNDIS WDK networking , quality of service
 - quality of service WDK CoNDIS
 - QoS WDK CoNDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

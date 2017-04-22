@@ -7,7 +7,7 @@ keywords:
 - user interface plug-ins WDK print , COM interfaces
 - UI plug-ins WDK print , COM interfaces
 - COM interfaces WDK print , user interface plug-ins
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

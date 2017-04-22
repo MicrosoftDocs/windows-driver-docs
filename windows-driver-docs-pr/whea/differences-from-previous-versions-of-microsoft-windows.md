@@ -8,7 +8,7 @@ keywords:
 - WHEA WDK , comparison with earlier Windows versions
 - hardware errors WDK WHEA , earlier Windows versions
 - errors WDK WHEA , earlier Windows versions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

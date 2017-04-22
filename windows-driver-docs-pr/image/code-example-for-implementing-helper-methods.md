@@ -3,7 +3,7 @@ title: Code Example for Implementing Helper Methods
 author: windows-driver-content
 description: Code Example for Implementing Helper Methods
 ms.assetid: 4f9710c2-3741-4048-9b6c-b21241b72c91
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

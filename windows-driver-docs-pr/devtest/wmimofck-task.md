@@ -2,7 +2,7 @@
 title: Wmimofck task
 description: The Windows Driver Kit (WDK) provides the Wmimofck task so you can run the wmimofck.exe tool when you build a driver using MSBuild.
 ms.assetid: 33C5C079-510F-4BD3-AEF1-F152E88E45C2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

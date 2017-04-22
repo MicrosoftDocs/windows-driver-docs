@@ -6,7 +6,7 @@ ms.assetid: 1968270b-ce57-4a8c-8b7a-bbd4a972435d
 keywords:
 - power management scenarios WDK UMDF , plugging in a device
 - plugging in a device scenario WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

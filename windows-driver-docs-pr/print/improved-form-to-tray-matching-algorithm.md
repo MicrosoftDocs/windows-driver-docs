@@ -6,7 +6,7 @@ ms.assetid: ce58501d-a2f6-4106-9a99-ad44ff4bf658
 keywords:
 - matching algorithm WDK forms
 - form-to-tray matching algorithm WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

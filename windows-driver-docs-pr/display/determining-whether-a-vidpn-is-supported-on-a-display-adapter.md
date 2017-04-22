@@ -7,7 +7,7 @@ keywords:
 - VidPN WDK display , determining if supported
 - functional VidPN WDK display
 - determining VidPN supported WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

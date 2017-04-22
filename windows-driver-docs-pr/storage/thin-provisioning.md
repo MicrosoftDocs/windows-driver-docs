@@ -3,7 +3,7 @@ title: Thin Provisioning
 author: windows-driver-content
 description: Thin Provisioning
 ms.assetid: 0D65DDCC-D207-4EA8-B5D6-56DF57221EE3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

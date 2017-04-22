@@ -2,7 +2,7 @@
 title: Creating a Virtual Port
 description: Creating a Virtual Port
 ms.assetid: 6102576D-3236-4FDD-8963-83A9E90FF7F0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

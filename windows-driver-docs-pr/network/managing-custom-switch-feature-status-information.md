@@ -2,7 +2,7 @@
 title: Managing Custom Switch Feature Status Information
 description: Managing Custom Switch Feature Status Information
 ms.assetid: A1D561CC-22D8-47B6-9D95-6294B2998F3E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

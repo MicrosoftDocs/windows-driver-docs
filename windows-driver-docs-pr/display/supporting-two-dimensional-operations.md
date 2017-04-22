@@ -5,7 +5,7 @@ ms.assetid: 09611bba-5b36-4b7d-8d93-a99590eb5bbe
 keywords:
 - two-dimensional operations WDK DirectX 9.0
 - 2D operations WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - plug-in DLL WDK USB Video Class
 - extension units WDK USB Video Class , samples, plug-in DLL
 - sample code WDK USB Video Class , extension unit plug-in DLL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

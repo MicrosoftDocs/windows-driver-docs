@@ -4,7 +4,7 @@ description: Port Deletion
 ms.assetid: a6c5d14f-3b4c-4332-a89d-33e374e1463f
 keywords:
 - port-based network access WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

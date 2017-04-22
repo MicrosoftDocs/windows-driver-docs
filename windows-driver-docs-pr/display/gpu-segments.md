@@ -2,7 +2,7 @@
 title: GPU segments
 description: graphics processing unit (GPU) access to physical memory is abstracted in the device driver interface (DDI) by a segmentation model.
 ms.assetid: E6CAD808-73C0-48AB-BF95-76911D5C104A
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

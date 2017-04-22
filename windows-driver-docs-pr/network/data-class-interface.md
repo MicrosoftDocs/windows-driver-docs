@@ -2,7 +2,7 @@
 title: Data Class Interface
 description: Data Class Interface
 ms.assetid: d7bf9ec3-8bf3-45a9-84a2-c507953d1ad4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 6feaf2c4-63b2-4ab2-9d4d-7259406be652
 keywords:
 - ATA Port drivers WDK , I/O
 - I/O WDK ATA Port drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Determining Connection Offload Capabilities
 ms.assetid: 9a7c40dd-7151-462f-b30b-0444a4177ff9
 keywords:
 - connection offload WDK TCP/IP transport , capabilities
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

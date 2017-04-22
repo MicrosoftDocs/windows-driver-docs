@@ -2,7 +2,7 @@
 title: Minidriver Version 6.02 Features
 description: Minidriver Version 6.02 Features
 ms.assetid: 8BF4B63B-B723-4899-BCAF-7826FAFF2155
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

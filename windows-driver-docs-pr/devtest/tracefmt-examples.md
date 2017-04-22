@@ -5,7 +5,7 @@ ms.assetid: 2a7a24d1-8619-45fc-b624-096d95971c57
 keywords:
 - Tracefmt WDK , examples
 - examples WDK Tracefmt
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: ALE Endpoint Lifetime Management
 description: ALE Endpoint Lifetime Management
 ms.assetid: cbf54062-4ced-4cf6-babf-e9e4e1ddf302
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

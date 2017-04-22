@@ -2,7 +2,7 @@
 title: Create a partner settings app
 description: Create a partner settings app
 ms.assetid: 3b549c11-f8b2-46e8-9d22-4edc787743ee
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

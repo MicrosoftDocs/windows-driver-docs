@@ -5,7 +5,7 @@ ms.assetid: c666f0cc-5a8a-4df8-9c65-08e3b044a08f
 keywords:
 - helper objects WDK audio , registry key objects
 - registry key objects WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

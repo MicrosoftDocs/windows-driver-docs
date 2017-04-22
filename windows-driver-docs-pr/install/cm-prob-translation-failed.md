@@ -4,7 +4,7 @@ description: CM_PROB_TRANSLATION_FAILED
 ms.assetid: b131327a-93ff-476b-8257-09a3dfc424be
 keywords:
 - CM_PROB_TRANSLATION_FAILED
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

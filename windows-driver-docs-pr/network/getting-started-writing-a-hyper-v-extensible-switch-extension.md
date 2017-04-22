@@ -2,7 +2,7 @@
 title: Getting started writing a Hyper-V Extensible Switch extension
 description: This section describes how to start writing a Hyper-V Extensible Switch extension
 ms.assetid: 91C6ED75-1057-4520-8E8E-28817D8F3C81
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

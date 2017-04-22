@@ -7,7 +7,7 @@ keywords:
 - Print Capabilities WDK , GDI-based monolithic print drivers
 - GDI-based monolithic print drivers WDK
 - monolithic print drivers WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ keywords:
 - NDIS 6.20 WDK , mobile broadband (MB) interfacing
 - mobile broadband (MB) WDK
 - mobile broadband (MB) WDK , NDIS 6.20 interfacing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

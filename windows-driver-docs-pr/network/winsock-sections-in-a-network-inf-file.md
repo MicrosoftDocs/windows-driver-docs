@@ -6,7 +6,7 @@ keywords:
 - INF files WDK network , Winsock sections
 - network INF files WDK , Winsock sections
 - Winsock sections WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

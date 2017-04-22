@@ -2,7 +2,7 @@
 title: WdfFiTester Overview
 description: WdfFiTester Overview
 ms.assetid: 87acefcd-8db3-4b1e-972a-13fba629d52d
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

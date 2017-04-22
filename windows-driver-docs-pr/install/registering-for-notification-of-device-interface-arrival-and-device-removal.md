@@ -2,7 +2,7 @@
 title: Register for Notification of Device Interface Arrival and Removal
 description: This topic describes how a user-mode application or driver registers for notification of device interface arrival and device removal.
 ms.assetid: 665E7881-F49C-4FC1-971C-1762B7D0C26E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

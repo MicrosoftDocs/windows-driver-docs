@@ -3,7 +3,7 @@ title: IPrintOemCommon COM Interface
 author: windows-driver-content
 description: IPrintOemCommon COM Interface
 ms.assetid: 1d4b2f77-6682-4a4b-8d7f-34acd03523e1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - WMV9_A restricted profile WDK DirectX VA
 - WMV9_B restricted profile WDK DirectX VA
 - WMV9_C restricted profile WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

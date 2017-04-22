@@ -4,7 +4,7 @@ description: Sample Biometric Driver
 ms.assetid: 9f7392db-020c-4832-9950-5db80ac33810
 keywords:
 - biometric drivers WDK , sample drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

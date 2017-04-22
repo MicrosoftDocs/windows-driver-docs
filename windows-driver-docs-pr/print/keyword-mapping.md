@@ -3,7 +3,7 @@ title: Keyword Mapping
 author: windows-driver-content
 description: Keyword Mapping
 ms.assetid: eb2cbe3c-b516-4db3-92ad-5eafd7181624
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

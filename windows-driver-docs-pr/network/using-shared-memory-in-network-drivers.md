@@ -7,7 +7,7 @@ keywords:
 - memory WDK networking
 - shared memory WDK networking
 - sharing memory address space
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

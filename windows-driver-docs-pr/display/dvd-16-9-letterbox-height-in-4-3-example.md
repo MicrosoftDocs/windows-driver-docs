@@ -7,7 +7,7 @@ keywords:
 - blended pictures WDK DirectX VA , DVD 16 9 letterbox height example
 - DVD 16 9 letterbox height example WDK DirectX VA
 - 16 9 letterbox height example WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

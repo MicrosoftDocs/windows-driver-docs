@@ -9,7 +9,7 @@ keywords:
 - XPSDrv printer drivers WDK , about XPSDrv printer drivers
 - configuration modules WDK XPSDrv
 - render modules WDK XPSDrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

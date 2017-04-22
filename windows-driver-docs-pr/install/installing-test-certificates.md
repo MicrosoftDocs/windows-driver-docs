@@ -2,7 +2,7 @@
 title: Installing Test Certificates
 description: Installing Test Certificates
 ms.assetid: 4c306390-32cc-4c7a-9f61-48e8af385a6d
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

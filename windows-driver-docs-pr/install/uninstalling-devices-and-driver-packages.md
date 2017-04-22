@@ -2,7 +2,7 @@
 title: Uninstalling Devices and Driver Packages
 description: Uninstalling Devices and Driver Packages
 ms.assetid: 4381ee42-778b-402d-b242-892ec921c28f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Submit a Multiple-locale device manifest package
 description: Submit a Multiple-locale device manifest package
 ms.assetid: b6748bff-d730-434e-9316-dc7b7222b727
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

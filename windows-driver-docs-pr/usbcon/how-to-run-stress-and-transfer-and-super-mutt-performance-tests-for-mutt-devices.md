@@ -1,8 +1,8 @@
 ---
-Description: Read how to run stress and transfer and Super MUTT performance tests.Stress and transfer tests are geared towards saturating the bus protocol and the host controller software.
+Description: How to run stress and transfer and Super MUTT performance tests.
 title: How to run stress and transfer performance tests for MUTT devices
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

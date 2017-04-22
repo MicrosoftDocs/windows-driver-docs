@@ -2,7 +2,7 @@
 title: Updating the IP headers for coalesced segments
 description: This section describes how to update the IP headers for coalesced segments
 ms.assetid: 18F2944A-D5A7-41BB-885F-EC183A00F7CE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

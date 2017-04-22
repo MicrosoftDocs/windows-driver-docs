@@ -8,7 +8,7 @@ keywords:
 - print Web pages WDK , customizing
 - Web pages WDK printer , customizing
 - customized print Web pages WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

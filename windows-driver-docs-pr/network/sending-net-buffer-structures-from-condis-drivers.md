@@ -2,7 +2,7 @@
 title: Sending NET\_BUFFER Structures from CoNDIS Drivers
 description: Sending NET\_BUFFER Structures from CoNDIS Drivers
 ms.assetid: 63bca3f0-b598-4006-bfd0-6df32ab2cbe7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

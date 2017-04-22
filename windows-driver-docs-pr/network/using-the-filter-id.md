@@ -2,7 +2,7 @@
 title: Using the Filter ID
 description: Using the Filter ID
 ms.assetid: 005AD1CF-37EB-44E8-BFA0-676ACCF69D47
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - clocks WDK kernel streaming
 - time WDK kernel streaming
 - time stamps WDK kernel streaming
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

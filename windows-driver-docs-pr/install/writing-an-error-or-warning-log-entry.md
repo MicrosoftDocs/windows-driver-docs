@@ -2,7 +2,7 @@
 title: Writing an Error or Warning Log Entry
 description: Writing an Error or Warning Log Entry
 ms.assetid: 80393368-7430-46ca-a53e-c94b7e8acfa0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

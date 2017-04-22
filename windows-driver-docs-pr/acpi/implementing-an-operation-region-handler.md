@@ -8,7 +8,7 @@ keywords:
 - operation regions WDK ACPI
 - function drivers WDK ACPI , operation regions
 - WDM function drivers WDK ACPI , operation regions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

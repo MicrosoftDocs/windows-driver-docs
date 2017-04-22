@@ -9,7 +9,7 @@ keywords:
 - DMA transfers WDK NetDMA , completing
 - NetDMA WDK networking , completing transfers
 - completing DMA transfers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

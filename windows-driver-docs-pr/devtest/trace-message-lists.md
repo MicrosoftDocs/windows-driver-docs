@@ -5,7 +5,7 @@ ms.assetid: 32dcd09d-1046-4785-91bc-ccdd79452c7d
 keywords:
 - TraceView WDK , window
 - Trace Message Lists WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

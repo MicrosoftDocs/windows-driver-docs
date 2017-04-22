@@ -7,7 +7,7 @@ keywords:
 - video copy protection WDK COPP , sample functions
 - COPP WDK DirectX VA , sample functions
 - protected video WDK COPP , sample functions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

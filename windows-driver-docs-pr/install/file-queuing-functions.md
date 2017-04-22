@@ -6,7 +6,7 @@ keywords:
 - SetupAPI functions WDK , file queuing
 - file queuing WDK SetupAPI
 - queue files WDK SetupAPI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

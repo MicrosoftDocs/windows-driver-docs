@@ -9,7 +9,7 @@ keywords:
 - mapping on deferred contexts WDK Windows Server 2008 R2 display , excluding DDI functions
 - deferred contexts WDK Windows 7 display , mapping
 - deferred contexts WDK Windows Server 2008 R2 display , mapping
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 3a75c5b2-2d94-428e-9b2a-d760e14df552
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , parsing capabilities
 - parsing capabilities WDK IPsec offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

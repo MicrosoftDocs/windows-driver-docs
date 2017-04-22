@@ -1,9 +1,9 @@
 ---
 title: Connecting a KMDF Driver to GPIO I/O Pins
 author: windows-driver-content
-description: A GPIO I/O resource is a set of one or more GPIO pins that are configured as data inputs or data outputs.
+description: How a kernel-mode driver framework (KMDF) driver for a peripheral device can obtain a description of the GPIO I/O resource. 
 ms.assetid: 02F6431C-7B55-4DFB-9792-4A72F0268C76
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

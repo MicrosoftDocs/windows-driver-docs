@@ -2,7 +2,7 @@
 title: SR-IOV Data Paths
 description: SR-IOV Data Paths
 ms.assetid: 04D85D46-DF0B-416F-95E8-F6E8B32E44A6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

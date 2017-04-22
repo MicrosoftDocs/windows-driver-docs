@@ -2,7 +2,7 @@
 title: Stream Output Stage
 description: Stream Output Stage
 ms.assetid: e3f4685f-a214-4934-a36f-92591ef99db8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

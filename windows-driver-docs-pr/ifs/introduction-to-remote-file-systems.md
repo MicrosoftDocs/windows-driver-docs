@@ -8,7 +8,7 @@ keywords:
 - redirector drivers WDK , remote file systems
 - remote file systems WDK
 - file system drivers WDK , remote file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

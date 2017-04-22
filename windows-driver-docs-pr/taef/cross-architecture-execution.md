@@ -2,7 +2,7 @@
 title: Cross Architecture Execution
 description: Cross Architecture Execution
 ms.assetid: 6E7F53A0-7C6A-4063-8300-31E1853EDD04
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

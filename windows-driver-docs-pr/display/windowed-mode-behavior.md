@@ -4,7 +4,7 @@ description: Windowed-Mode Behavior
 ms.assetid: a852b1d7-5722-4092-a5ff-338dbb2f77b3
 keywords:
 - windowed-mode rotation WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

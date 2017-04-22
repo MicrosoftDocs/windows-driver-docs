@@ -7,7 +7,7 @@ keywords:
 - printer font descriptions WDK Unidrv , cartridges
 - font cartridges WDK Unidrv
 - cartridge fonts WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

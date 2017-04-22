@@ -5,7 +5,7 @@ ms.assetid: 0497acff-1e7f-45b9-b5ec-f1783ea7e900
 keywords:
 - hardware acceleration WDK DirectSound , 64-bit systems
 - 64-bit WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

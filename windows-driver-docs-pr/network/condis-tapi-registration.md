@@ -7,7 +7,7 @@ keywords:
 - telephonic services WDK WAN , registering
 - CoNDIS TAPI WDK networking , registering
 - registering CoNDIS TAPI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

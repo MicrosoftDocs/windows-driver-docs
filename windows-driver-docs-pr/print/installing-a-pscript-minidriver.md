@@ -6,7 +6,7 @@ ms.assetid: 9c48b2b0-c293-4606-bbaa-3fcaca01c300
 keywords:
 - minidrivers WDK Pscript , installing
 - INF files WDK print , Pscript
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

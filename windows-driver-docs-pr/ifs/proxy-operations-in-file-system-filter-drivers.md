@@ -6,7 +6,7 @@ ms.assetid: 01cc7a48-8b27-4de7-8968-8958e9512989
 keywords:
 - security WDK file systems , proxy operations
 - proxy operations WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

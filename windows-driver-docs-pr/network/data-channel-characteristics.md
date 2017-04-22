@@ -4,7 +4,7 @@ description: Data Channel Characteristics
 ms.assetid: 3e178d82-32de-468c-8175-4b0c2684be76
 keywords:
 - bulk WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: How do I enable debugging without starting an ETW trace session
 description: How do I enable debugging without starting an ETW trace session
 ms.assetid: d0487973-c66a-4ede-bc94-2e7e2060ab54
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

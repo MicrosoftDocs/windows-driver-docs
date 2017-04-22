@@ -3,7 +3,7 @@ title: V4 Printer Driver
 author: windows-driver-content
 description: The v4 printer driver model was designed to address known issues with the version 3 driver model, and thus improve the quality of the experience that users have with their printers.
 ms.assetid: CB333340-FBA0-4CB4-BAD6-4673B4AC0DF2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

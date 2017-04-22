@@ -11,7 +11,7 @@ keywords:
 - OPM WDK display , getting protected output information
 - OPM WDK display , getting graphics adapter information
 - protection levels WDK display , changing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

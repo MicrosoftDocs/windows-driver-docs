@@ -5,7 +5,7 @@ ms.assetid: 934272e9-867c-4eb4-8bc1-e65e5b3f2aeb
 keywords:
 - Global Flags utility
 - Driver Verifier WDK , Global Flags utility
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

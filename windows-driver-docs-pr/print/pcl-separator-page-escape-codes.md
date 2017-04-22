@@ -7,7 +7,7 @@ keywords:
 - PCL separator page escape codes WDK PCL XL
 - PCL XL vector graphics WDK Unidrv , separator page escape codes
 - escape codes WDK PCL XL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

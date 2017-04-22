@@ -7,7 +7,7 @@ keywords:
 - ranges WDK video miniport
 - logical range addresses WDK video miniport
 - adapter access ranges WDK video miniport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

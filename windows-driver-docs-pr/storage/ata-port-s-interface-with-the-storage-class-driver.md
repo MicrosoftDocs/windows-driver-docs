@@ -6,7 +6,7 @@ ms.assetid: 6b22bbb1-f14e-48d9-a00c-c7eae79a078f
 keywords:
 - ATA Port drivers WDK , storage class drivers
 - storage class drivers WDK , ATA Port drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

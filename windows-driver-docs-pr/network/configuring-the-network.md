@@ -7,7 +7,7 @@ keywords:
 - network notify objects WDK , network configuration
 - notifications WDK networking , network configuration
 - network configuration WDK notify ofbject
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

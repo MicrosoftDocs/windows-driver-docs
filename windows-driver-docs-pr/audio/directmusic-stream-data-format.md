@@ -4,7 +4,7 @@ description: DirectMusic Stream Data Format
 ms.assetid: f3aae6c0-6b9d-43fa-9ef1-d6702017f55d
 keywords:
 - DirectMusic WDK audio , stream data formats
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

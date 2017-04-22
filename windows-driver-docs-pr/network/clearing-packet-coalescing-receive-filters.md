@@ -2,7 +2,7 @@
 title: Clearing Packet Coalescing Receive Filters
 description: Clearing Packet Coalescing Receive Filters
 ms.assetid: 0924A494-AA4E-45FA-AFE6-65E0D105E0F2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 5c5237a1-f4ff-42f9-8992-753743fd5e15
 keywords:
 - IPrintTicketProvider
 - IPrintOemPrintTicketProvider
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

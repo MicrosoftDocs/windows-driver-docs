@@ -6,7 +6,7 @@ keywords:
 - Synchronous Connection-Oriented WDK Bluetooth
 - SCO profile drivers WDK Bluetooth
 - initiating SCO connections
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

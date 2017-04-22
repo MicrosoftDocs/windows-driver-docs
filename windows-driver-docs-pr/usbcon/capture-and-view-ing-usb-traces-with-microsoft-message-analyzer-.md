@@ -3,7 +3,7 @@ Description: You can use Microsoft Message Analyzer (MMA) to capture and view li
 Search.SourceType: Video
 title: Capture and view USB traces with Microsoft Message Analyzer
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 10f8c3a1-ad60-4c99-a425-fa8c9a3be0e1
 keywords:
 - HID reports WDK , interpreting
 - reports WDK HID , interpreting
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

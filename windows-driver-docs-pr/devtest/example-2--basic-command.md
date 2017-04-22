@@ -5,7 +5,7 @@ ms.assetid: 5e66b7f4-5cf6-4bfc-b432-d531ac6ac53c
 keywords:
 - Tracefmt WDK , commands
 - commands WDK Tracefmt
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

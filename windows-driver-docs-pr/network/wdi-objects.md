@@ -2,7 +2,7 @@
 title: Wi-Fi device model and objects
 description: The Wi-Fi device is used by the host in the context of two types of objects adapter and port.
 ms.assetid: 0F375ED7-CB20-4F32-8ECE-4822D7787327
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

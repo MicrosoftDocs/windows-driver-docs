@@ -2,7 +2,7 @@
 title: Creating a Private Build of an Inbox Driver
 description: Creating a Private Build of an Inbox Driver
 ms.assetid: aed3c175-3e95-4bfb-a514-a663dd9e3f57
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

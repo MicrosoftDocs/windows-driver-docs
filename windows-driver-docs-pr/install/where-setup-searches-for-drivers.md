@@ -6,7 +6,7 @@ keywords:
 - driver selections WDK device installations , where Device setupsearches
 - locating drivers for device installation WDK device installations , where Device setupsearches
 - searching for drivers during device installation WDK device installations , where Device setupsearches
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

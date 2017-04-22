@@ -4,7 +4,7 @@ description: Differences in Initialization
 ms.assetid: 1b19e30d-3c10-4b97-9bb4-3233f7f2a195
 keywords:
 - initializing connection-oriented protocols
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

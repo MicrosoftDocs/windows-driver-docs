@@ -2,7 +2,7 @@
 title: Printer extension library overview for Windows Store device apps
 description: This topic introduces the printer extension library, a library that helps device manufacturers write Windows Store device apps for their printer.
 ms.assetid: A47B17CE-BF5A-4C02-807C-890F315A13E0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 9c8bd66f-aa25-49e2-a442-9046a4d46466
 keywords:
 - dropped frame properties WDK video capture
 - PROPSETID_VIDCAP_DROPPEDFRAMES
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

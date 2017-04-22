@@ -5,7 +5,7 @@ ms.assetid: dc45f0fb-f462-4d20-967a-0665e18019e4
 keywords:
 - hardware acceleration WDK DirectSound , custom audio property sets
 - custom audio property sets WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

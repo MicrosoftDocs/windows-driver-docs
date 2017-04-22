@@ -13,7 +13,7 @@ keywords:
 - ComplexType directive WDK GDL
 - parser WDK GDL , escaping special XML characters
 - escaping special XML characters WDK GDL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

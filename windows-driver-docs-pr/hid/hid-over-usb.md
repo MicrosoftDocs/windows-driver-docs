@@ -10,7 +10,7 @@ keywords:
 - USB 2.0
 - USB 3.0
 - USB, HID
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

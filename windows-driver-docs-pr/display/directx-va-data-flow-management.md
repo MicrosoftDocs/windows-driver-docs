@@ -10,7 +10,7 @@ keywords:
 - video decoding WDK DirectX VA , data flow
 - decoding video WDK DirectX VA , data flow
 - picture decoding WDK DirectX VA , data flow
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

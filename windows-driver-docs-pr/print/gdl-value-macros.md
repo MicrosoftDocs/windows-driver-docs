@@ -10,7 +10,7 @@ keywords:
 - values WDK GDL , value macros
 - Macros directive WDK GDL
 - macros WDK GDL , examples
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

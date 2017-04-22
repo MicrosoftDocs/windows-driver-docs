@@ -1,8 +1,8 @@
 ---
 title: Implementing Hardware Offloaded APO Effects
-description: In Windows 10, version 1511 and later, offloading of audio processing objects (APOs) is supported. In addition to possible performance enhancements, there are significant possible power savings available when using hardware offloaded APOs.
+description: Hardware offloading of audio processing objects (APOs) provides possible performance enhancements, as well as power savings.
 ms.assetid: 159DFFD2-2434-4EDC-A83C-455BA80F74C6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

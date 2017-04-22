@@ -3,7 +3,7 @@ title: Writing a WDTF SimpleIO plug-in for your device
 author: windows-driver-content
 description: To get the most benefit from the Device Fundamental tests, your device should have a Simple I/O plug-in that can perform simple I/O to your device.
 ms.assetid: FAC4D538-4C2B-46C1-B971-63FF66C2922B
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

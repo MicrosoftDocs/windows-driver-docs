@@ -2,7 +2,7 @@
 title: Create a new WLK device certification submission
 description: Create a new WLK device certification submission
 ms.assetid: e812eee1-768d-42d6-918e-c716b5c29ea2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

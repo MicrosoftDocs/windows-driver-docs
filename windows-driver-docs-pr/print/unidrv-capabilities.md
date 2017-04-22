@@ -6,7 +6,7 @@ ms.assetid: e715e6c7-32cf-4db1-a6d2-3577824249c1
 keywords:
 - Unidrv, capabilities
 - Unidrv WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

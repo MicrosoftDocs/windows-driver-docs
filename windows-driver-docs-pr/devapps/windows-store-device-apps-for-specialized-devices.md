@@ -2,7 +2,7 @@
 title: Windows Store device apps for internal devices
 description: This topic introduces the ways that Windows Store device apps can access internal devices.
 ms.assetid: 864EDABF-C734-425D-A532-A01E545E4E51
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

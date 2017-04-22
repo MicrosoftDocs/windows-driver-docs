@@ -1,18 +1,18 @@
 ---
-title: Installed
+title: Installed (TCP/IP)
 author: windows-driver-content
-description: Installed
+description: The TCP/IP Installed construct contains the object ID (OID) of the MIB table's row and a list of lookup values.
 ms.assetid: 4e14d8c1-7c66-4035-845d-f3f92dad8c4f
 keywords:
 - Installed construct
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Installed
+# Installed (TCP/IP)
 
 
 The TCP/IP Installed construct contains the object ID (OID) of the MIB table's row and a list of lookup values. If any of the lookup values exists in the row, this algorithm returns **TRUE**. Most queries related to configuration of the printer should determine whether there is a particular value stored in the printer's MIB and then return a Boolean result. The Installed construct is defined in Tcpbidi.xsd.

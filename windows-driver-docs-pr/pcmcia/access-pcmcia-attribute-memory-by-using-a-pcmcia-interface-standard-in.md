@@ -1,11 +1,11 @@
 ---
-title: Access PCMCIA Attribute Memory Using PCMCIA_INTERFACE_STANDARD
+title: Access Memory by Using PCMCIA_INTERFACE_STANDARD
 description: Access PCMCIA Attribute Memory by Using a PCMCIA\_INTERFACE\_STANDARD Interface
 ms.assetid: cd73a8da-1441-4e95-a955-97235ad091ce
 keywords:
 - PCMCIA_INTERFACE_STANDARD
 - attribute memory WDK PCMCIA bus , PCMCIA_INTERFACE_STANDARD interface
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

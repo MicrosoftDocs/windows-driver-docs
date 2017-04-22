@@ -3,7 +3,7 @@ title: WIA Driver Event Support
 author: windows-driver-content
 description: WIA Driver Event Support
 ms.assetid: 544c756b-4222-4d59-8393-924d3691e0f8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

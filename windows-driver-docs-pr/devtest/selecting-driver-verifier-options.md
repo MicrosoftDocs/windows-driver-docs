@@ -4,7 +4,7 @@ description: Selecting Driver Verifier Options
 ms.assetid: 02ef5dd6-7532-4979-b45c-a9ee81582788
 keywords:
 - Driver Verifier WDK , option selections
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: DSM Schemas
 author: windows-driver-content
 description: DSM Schemas
 ms.assetid: 54466df0-72e8-4ed0-adff-3d54cdf628bf
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

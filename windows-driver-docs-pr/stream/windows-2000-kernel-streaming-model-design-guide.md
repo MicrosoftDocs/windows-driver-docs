@@ -9,7 +9,7 @@ keywords:
 - Windows 2000 Kernel Streaming Model WDK
 - Streaming Model WDK Windows 2000 Kernel
 - Kernel Streaming Model WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

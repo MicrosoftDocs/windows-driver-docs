@@ -5,7 +5,7 @@ ms.assetid: 3ef92943-6462-4fe7-bd9b-8235083e8e16
 keywords:
 - INF files WDK device installations , copying
 - copying INF files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

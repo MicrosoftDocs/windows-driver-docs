@@ -7,7 +7,7 @@ keywords:
 - battery miniclass drivers WDK , notifications
 - notifications WDK battery
 - battery class drivers WDK , notifications
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

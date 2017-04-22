@@ -6,7 +6,7 @@ keywords:
 - bus-master DMA WDK video miniport , common buffer
 - DMA bus-master WDK video miniport , common buffer
 - common-buffer DMA WDK video miniport , description
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

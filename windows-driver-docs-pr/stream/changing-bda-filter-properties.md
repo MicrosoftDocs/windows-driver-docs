@@ -7,7 +7,7 @@ keywords:
 - property sets WDK BDA , filter property changes
 - filter property changes WDK BDA
 - method sets WDK BDA , filter property changes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

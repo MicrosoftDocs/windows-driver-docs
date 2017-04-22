@@ -2,7 +2,7 @@
 title: Invariant MDL Checking for Stack
 description: The Invariant MDL Checking for Stack option monitors how the driver handles invariant MDL buffers across the driver stack.
 ms.assetid: AB27803A-6B3A-40FA-B962-79B0DA2F5FA9
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: Controlling Color Management
 ms.assetid: cb210b8d-fee1-4904-8c50-f03d2445085e
 keywords:
 - color management WDK print , controlling
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - programming with GDL WDK
 - printer drivers WDK , programming with GDL
 - GDL WDK , features of
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

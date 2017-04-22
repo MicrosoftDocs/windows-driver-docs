@@ -5,7 +5,7 @@ ms.assetid: 4f23dae8-8b1b-4970-a175-0abb3bee71c7
 keywords:
 - logs WDK driver signing
 - SetupAPI logging WDK driver signing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
 - default domain policies for test certificates
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

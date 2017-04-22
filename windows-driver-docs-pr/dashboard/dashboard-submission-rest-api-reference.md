@@ -2,7 +2,7 @@
 title: Dashboard submission REST API reference
 description: Dashboard submission REST API reference
 ms.assetid: 6a01d44b-1bd4-4992-98ee-e8d6813522be
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

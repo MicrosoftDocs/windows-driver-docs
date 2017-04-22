@@ -7,7 +7,7 @@ keywords:
 - video capture WDK AVStream , tuners
 - capturing video WDK AVStream , tuners
 - tuners WDK video capture
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

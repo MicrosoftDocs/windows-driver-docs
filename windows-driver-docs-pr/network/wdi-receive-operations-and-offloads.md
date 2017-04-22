@@ -2,7 +2,7 @@
 title: WDI receive operations and offloads
 description: These main categories of operation offloads are configurable.MSDU-level receive operationsFrame forwarding (forwarding decision and actuation)Protocol/Task offloads.
 ms.assetid: 7D2648BC-05F2-4F75-BA01-E0385C83E0E8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Simple Data Driven Test Example
 description: Simple Data Driven Test Example
 ms.assetid: 59A897C3-C9CD-4e1c-B4BA-F81B3B3E4532
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

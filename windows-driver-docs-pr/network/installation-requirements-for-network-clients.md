@@ -5,7 +5,7 @@ ms.assetid: 175f9006-d77b-41ff-875e-c64842ff5cb9
 keywords:
 - network client installation requirements WDK
 - client installation requirements WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

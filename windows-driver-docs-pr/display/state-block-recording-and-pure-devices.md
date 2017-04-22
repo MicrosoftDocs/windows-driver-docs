@@ -7,7 +7,7 @@ keywords:
 - pure devices WDK DirectX 8.0 , state block handling
 - state block handling WDK DirectX 8.0
 - state block handling WDK DirectX 8.0 , pure devices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

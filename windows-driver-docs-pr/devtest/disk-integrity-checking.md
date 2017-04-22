@@ -6,7 +6,7 @@ keywords:
 - Disk Integrity Checking feature WDK Driver Verifier
 - disk storage accuracy WDK Driver Verifier
 - storage accuracy WDK Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

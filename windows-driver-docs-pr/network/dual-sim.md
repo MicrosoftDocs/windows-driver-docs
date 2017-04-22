@@ -2,7 +2,7 @@
 title: Dual SIM
 description: Dual SIM
 ms.assetid: 18521fec-c9fb-48d0-9de2-d0482e4807d6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

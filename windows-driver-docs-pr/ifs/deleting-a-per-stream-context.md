@@ -9,7 +9,7 @@ keywords:
 - per-stream context tracking WDK file system
 - tracking per-stream context WDK file system
 - deleting per-stream context
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

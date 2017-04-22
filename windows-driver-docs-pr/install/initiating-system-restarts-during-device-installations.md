@@ -2,7 +2,7 @@
 title: Initiating System Restarts During Device Installations
 description: Initiating System Restarts During Device Installations
 ms.assetid: 52db2894-e759-4382-97de-5db7f268ff59
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

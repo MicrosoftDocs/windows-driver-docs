@@ -2,7 +2,7 @@
 title: Device Installation Application Not Included in Driver Package
 description: Device Installation Application Not Included in the Driver Package
 ms.assetid: 3c8fd504-50c9-4a61-9cca-cd8cee4e2bd7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

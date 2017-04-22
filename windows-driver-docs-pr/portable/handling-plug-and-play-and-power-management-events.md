@@ -1,7 +1,7 @@
 ---
 Description: Handling Plug and Play and Power Management Events
 title: Handling Plug and Play and Power Management Events
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

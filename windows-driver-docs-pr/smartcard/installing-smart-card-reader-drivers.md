@@ -5,7 +5,7 @@ ms.assetid: 6e641718-d6d0-4f09-8935-6b381ad0c085
 keywords:
 - smart card drivers WDK , installing
 - vendor-supplied drivers WDK smart card , installing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

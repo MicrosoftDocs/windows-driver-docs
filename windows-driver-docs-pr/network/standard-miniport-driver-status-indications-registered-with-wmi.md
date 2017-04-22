@@ -6,7 +6,7 @@ keywords:
 - status indications WDK networking , WMI
 - WMI WDK networking , status indications
 - Windows Management Instrumentation WDK networking , status indications
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

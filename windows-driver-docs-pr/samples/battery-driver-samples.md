@@ -1,9 +1,9 @@
 ---
 title: Battery driver samples
 author: windows-driver-content
-description: The driver sample in this directory provides a starting point for writing a custom driver for your device.
+description: The battery driver sample in this directory provides a starting point for writing a custom driver for your device.
 ms.assetid: 0C73DBE1-6214-4E7F-A3EE-AEC87F8BE99C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

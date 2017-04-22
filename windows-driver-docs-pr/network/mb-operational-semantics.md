@@ -2,7 +2,7 @@
 title: MB Operational Semantics
 description: MB Operational Semantics
 ms.assetid: 5f04b7fd-3df3-4efa-bb26-c7f4cd3c9ebd
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

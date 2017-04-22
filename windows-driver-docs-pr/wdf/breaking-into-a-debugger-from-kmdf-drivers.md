@@ -6,7 +6,7 @@ ms.assetid: b18e210c-cc9b-436c-b762-6346b946357c
 keywords:
 - debugging drivers WDK KMDF , breaking into the debugger
 - breaking into the debugger WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

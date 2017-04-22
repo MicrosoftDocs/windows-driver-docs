@@ -16,7 +16,7 @@ keywords:
 - printing Asian languages WDK
 - languages WDK print
 - right to left reading languages WDk print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

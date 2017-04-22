@@ -5,7 +5,7 @@ ms.assetid: 6e49fb69-0b22-4f52-9b6d-661e818c1758
 keywords:
 - virtual connections WDK CoNDIS , deleting
 - deleting virtual connections
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

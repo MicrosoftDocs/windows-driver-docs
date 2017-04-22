@@ -8,7 +8,7 @@ keywords:
 - sections WDK SetupAPI logging
 - identifying text log sections
 - SetupAPI logging WDK Windows Vista , log tokens
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

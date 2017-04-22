@@ -8,7 +8,7 @@ keywords:
 - new file security WDK file systems
 - security checks WDK file systems , IRP_MJ_CREATE
 - security descriptors WDK file systems , new files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

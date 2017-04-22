@@ -4,7 +4,7 @@ description: Example 1 No Parameters
 ms.assetid: 6c37367e-88d5-43a3-bb80-57d53bb17326
 keywords:
 - Tracefmt WDK , parameters
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

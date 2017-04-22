@@ -5,7 +5,7 @@ ms.assetid: f990e132-f6d7-46e1-8c86-6ae3f0483bd5
 keywords:
 - BinPlace WDK , environment variables
 - environment variables WDK BinPlace
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

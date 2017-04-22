@@ -9,7 +9,7 @@ keywords:
 - porting drivers WDK networking , miniport drivers
 - network driver porting WDK , miniport drivers
 - porting miniport drivers WD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

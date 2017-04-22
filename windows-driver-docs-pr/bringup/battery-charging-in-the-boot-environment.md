@@ -3,7 +3,7 @@ title: Battery charging in the boot environment for Windows 10 Mobile
 author: windows-driver-content
 description: Battery charging in the boot environment for Windows 10 Mobile
 ms.assetid: 5aa1ef68-6939-4896-aabd-d499ba23f89f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

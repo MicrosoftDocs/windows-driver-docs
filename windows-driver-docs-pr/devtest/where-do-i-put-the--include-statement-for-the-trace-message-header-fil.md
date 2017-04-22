@@ -2,7 +2,7 @@
 title: Where do I put the \ include statement for the trace message header file
 description: Where do I put the \ include statement for the trace message header file
 ms.assetid: 5d8a2bb7-efe1-4cf2-9424-b63d4f17805e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

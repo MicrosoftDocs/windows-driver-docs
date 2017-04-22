@@ -7,7 +7,7 @@ keywords:
 - fast I/O buffers WDK file system
 - Flags member WDK file system
 - device object flags WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

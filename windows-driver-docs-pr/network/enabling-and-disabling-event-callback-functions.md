@@ -9,7 +9,7 @@ keywords:
 - event callback functions WDK Winsock Kernel
 - SO_WSK_EVENT_CALLBACK
 - WSK_SET_STATIC_EVENT_CALLBACKS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

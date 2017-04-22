@@ -4,7 +4,7 @@ description: Control Panel Requirements
 ms.assetid: ad700594-b58c-4f6c-b594-e880612923b7
 keywords:
 - Control Panel WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

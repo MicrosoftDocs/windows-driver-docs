@@ -5,7 +5,7 @@ ms.assetid: 3e9ae945-4241-4c66-bdb1-b9e3466167be
 keywords:
 - Plug and Play WDK NDIS miniport , IRP processing for NIC
 - IRP processing for NIC WDK NDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

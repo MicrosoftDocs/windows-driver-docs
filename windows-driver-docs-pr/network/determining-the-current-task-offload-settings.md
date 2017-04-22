@@ -5,7 +5,7 @@ ms.assetid: cd2f9b9f-f455-405d-8775-9a437e628476
 keywords:
 - task offload WDK TCP/IP transport , current settings
 - current task load settings WDK TCP/IP offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

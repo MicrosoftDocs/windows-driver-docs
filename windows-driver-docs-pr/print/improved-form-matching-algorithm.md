@@ -6,7 +6,7 @@ ms.assetid: 6b4f5ce5-c206-42ee-a707-3205f08e0ee0
 keywords:
 - matching algorithm WDK forms
 - form matching algorithm WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

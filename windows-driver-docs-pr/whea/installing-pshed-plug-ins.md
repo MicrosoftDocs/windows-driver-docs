@@ -7,7 +7,7 @@ keywords:
 - PSHED plug-ins WDK WHEA , installing
 - platform-specific hardware error driver plug-ins WDK WHEA , installing
 - WHEA WDK , installing PSHED plug-ins
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

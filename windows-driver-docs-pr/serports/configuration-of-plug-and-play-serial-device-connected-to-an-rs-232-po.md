@@ -7,7 +7,7 @@ keywords:
 - Plug and Play serial devices WDK
 - serial devices WDK , Plug and Play
 - RS-232 ports WDK serial devices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

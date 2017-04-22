@@ -5,7 +5,7 @@ ms.assetid: 0ad63f01-4fcf-4eca-b8d6-b0b65f384455
 keywords:
 - PCM high-bitdepth stream data formats WDK
 - high-bitdepth stream data formats WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - task offload porting WDK networking , segmentation of large TCP packets
 - TCP/IP offload service porting WDK networking , segmentation of large TCP packets
 - offload servi
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

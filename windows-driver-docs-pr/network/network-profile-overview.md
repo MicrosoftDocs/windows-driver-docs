@@ -5,7 +5,7 @@ ms.assetid: b7d902db-4918-4e9f-a7e0-3bb6c5ed1dfb
 keywords:
 - network profiles WDK Native 802.11 IHV Extensions DLL , about network profiles
 - XML fragments WDK Native 802.11 IHV Extensions DLL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

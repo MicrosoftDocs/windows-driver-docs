@@ -5,7 +5,7 @@ ms.assetid: 20d5ce82-d43d-4836-8b60-7e8982213b0f
 keywords:
 - decryption WDK Native 802.11
 - packet decryptions WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

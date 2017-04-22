@@ -9,7 +9,7 @@ keywords:
 - in-box autoconfiguration support WDK printer , autodetecting hard drive
 - detecting printer hard drive
 - hard drive autodetection WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

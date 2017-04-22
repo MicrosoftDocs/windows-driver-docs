@@ -7,7 +7,7 @@ keywords:
 - Windows 2000 display driver model WDK , strategies
 - video miniport drivers WDK Windows 2000 , strategies
 - display drivers WDK Windows 2000 , strategies
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

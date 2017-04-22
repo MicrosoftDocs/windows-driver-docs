@@ -7,7 +7,7 @@ keywords:
 - TCP timestamps WDK TCP chimney offload , calculating delta
 - calculating timestamp delta WDK TCP chimney offload
 - delta calculation WDK TCP timestamps
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

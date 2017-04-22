@@ -4,7 +4,7 @@ description: Pixel Shaders
 ms.assetid: a44c5ee8-e9a7-4f9a-9547-e0c5ae49b82c
 keywords:
 - pixel shaders WDK DirectX 8.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

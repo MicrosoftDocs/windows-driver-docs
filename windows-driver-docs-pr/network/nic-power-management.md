@@ -5,7 +5,7 @@ ms.assetid: 2da7c9ee-22f9-42aa-ab0f-f3eb4aafdd60
 keywords:
 - power management WDK Native 802.11 , NIC
 - NICs WDK networking , power states
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

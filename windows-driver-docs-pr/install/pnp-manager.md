@@ -2,7 +2,7 @@
 title: Plug and Play Manager
 description: Plug and Play Manager
 ms.assetid: b1890b3c-fc7b-4a2e-b48a-8266f237c9b6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

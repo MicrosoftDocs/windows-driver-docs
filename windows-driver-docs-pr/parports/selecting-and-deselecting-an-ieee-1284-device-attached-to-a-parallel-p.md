@@ -6,7 +6,7 @@ ms.assetid: 1a3ac1b1-9180-4b71-8740-70c6fbe9a885
 keywords:
 - IEEE 1284 WDK
 - parallel ports WDK , IEEE 1284 devices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

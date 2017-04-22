@@ -8,7 +8,7 @@ keywords:
 - offload service porting WDK networking , protocol drivers
 - porting task offload services WDK networking , protocol drivers
 - protoc
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

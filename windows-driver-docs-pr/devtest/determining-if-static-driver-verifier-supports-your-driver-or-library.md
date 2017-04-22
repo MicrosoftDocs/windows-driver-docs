@@ -2,7 +2,7 @@
 title: Determining if Static Driver Verifier supports your driver or library
 description: Static Driver Verifier (SDV) can support WDM, KMDF, NDIS, and Storport drivers and libraries. To determine if your driver or library is supported and configured correctly, read over requirements described in this section.
 ms.assetid: 29E93E9E-7F87-4706-97AD-DB9A32EDD388
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

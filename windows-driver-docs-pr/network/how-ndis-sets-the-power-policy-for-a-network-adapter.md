@@ -12,7 +12,7 @@ keywords:
 - power management WDK NDIS miniport , power policy
 - user input WDK power management
 - power management WDK NDIS miniport , user input
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

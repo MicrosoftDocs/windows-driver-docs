@@ -3,7 +3,7 @@ title: Plug and Play and Power Management
 author: windows-driver-content
 description: Plug and Play and Power Management
 ms.assetid: 9e5d545d-ec24-42ac-a9e5-290502548fc0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

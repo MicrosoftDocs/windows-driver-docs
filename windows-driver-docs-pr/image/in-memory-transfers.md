@@ -3,7 +3,7 @@ title: In-Memory Transfers
 author: windows-driver-content
 description: In-Memory Transfers
 ms.assetid: 90238354-e47c-41c7-bb6b-6337f39f63f0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

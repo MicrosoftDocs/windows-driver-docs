@@ -2,7 +2,7 @@
 title: Setting the Feature Score for Windows 7 Display Drivers
 description: Setting the Feature Score for Windows 7 Display Drivers
 ms.assetid: 7b2cf25d-a88d-48e1-8d62-8c245c289566
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

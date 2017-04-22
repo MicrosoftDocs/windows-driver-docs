@@ -2,7 +2,7 @@
 title: MB Provider Operations
 description: MB Provider Operations
 ms.assetid: dac7d162-9cf2-458f-9311-766816fe393e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

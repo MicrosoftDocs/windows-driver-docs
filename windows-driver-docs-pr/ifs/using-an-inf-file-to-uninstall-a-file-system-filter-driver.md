@@ -6,7 +6,7 @@ ms.assetid: e41deb65-7977-479c-ac42-c550aa6a3f1b
 keywords:
 - INF files WDK file system , uninstalling filter drivers
 - uninstalling filter drivers WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

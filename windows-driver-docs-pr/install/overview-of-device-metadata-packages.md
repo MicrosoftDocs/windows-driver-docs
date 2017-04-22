@@ -4,7 +4,7 @@ description: Overview of Device Metadata Packages
 ms.assetid: 1b17bdab-44e4-498b-ab80-f28fa94d9821
 keywords:
 - device metadata packages WDK , about
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

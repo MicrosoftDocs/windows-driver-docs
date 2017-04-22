@@ -6,7 +6,7 @@ ms.assetid: 70d98c31-2da6-455b-91d8-59bed306b574
 keywords:
 - AVStream WDK , AV/C
 - AV/C WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

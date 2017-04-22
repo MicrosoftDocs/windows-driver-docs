@@ -6,7 +6,7 @@ ms.assetid: 29fddcac-abc9-4aa4-8485-56120805ae34
 keywords:
 - Storport drivers WDK , queue management
 - queues WDK Storport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

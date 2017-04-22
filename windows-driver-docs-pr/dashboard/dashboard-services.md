@@ -2,7 +2,7 @@
 title: Legacy Dashboard
 description: Legacy Dashboard
 ms.assetid: c71750f4-885f-425a-a3ad-29740a1cb0bb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

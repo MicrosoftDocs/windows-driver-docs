@@ -2,7 +2,7 @@
 title: Setting Device-Specific Parameters
 description: Setting Device-Specific Parameters
 ms.assetid: 5df72c11-e8d4-4e06-8f34-c9b85ad779f6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

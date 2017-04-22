@@ -6,7 +6,7 @@ ms.assetid: e84cc7fc-8b17-4119-84f9-12ac888c68aa
 keywords:
 - INF files WDK non-HID keyboard/mouse
 - PS2_Inst.NoInterruptInit section
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

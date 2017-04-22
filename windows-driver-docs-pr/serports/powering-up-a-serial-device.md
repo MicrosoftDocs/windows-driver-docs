@@ -8,7 +8,7 @@ keywords:
 - powering up serial devices WDK
 - turning on serial devices WDK
 - serial devices WDK , powering up
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

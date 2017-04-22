@@ -5,7 +5,7 @@ ms.assetid: 575499a9-e572-4ccc-bcee-8f2843310b05
 keywords:
 - wave rendering WDK audio
 - wave capturing WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

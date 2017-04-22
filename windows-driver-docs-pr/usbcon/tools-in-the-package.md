@@ -2,7 +2,7 @@
 Description: The goal of device testing is to test device usage against various hub scenarios and systems power states.
 title: USB device testing with MUTT devices
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

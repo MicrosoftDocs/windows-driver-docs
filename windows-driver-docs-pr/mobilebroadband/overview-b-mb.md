@@ -2,7 +2,7 @@
 title: Overview for mobile broadband technologies
 description: Overview for mobile broadband technologies
 ms.assetid: b9b79b7d-35b3-4058-ad6d-1dbead76c4fb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: c33e9382-331d-4c68-8a5d-0ef3205ed925
 keywords:
 - TCP chimney offload WDK networking , connection closing
 - chimney offload WDK networking , connection closing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

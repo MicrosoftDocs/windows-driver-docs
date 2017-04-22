@@ -5,7 +5,7 @@ ms.assetid: 67de6453-969e-4b4d-a72e-de132b20b022
 keywords:
 - driver model
 - driver design
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

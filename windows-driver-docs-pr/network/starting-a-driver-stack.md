@@ -5,7 +5,7 @@ ms.assetid: 316de69e-38e8-4ac6-83c5-5d13090ee6d5
 keywords:
 - driver stacks WDK networking , starting
 - starting driver stacks WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

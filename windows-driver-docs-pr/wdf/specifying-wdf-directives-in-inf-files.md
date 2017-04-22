@@ -19,7 +19,7 @@ keywords:
 - UMDF-service-install section WDK
 - INF files WDK UMDF , directives
 - UmdfDispatcher INF directive WDK UMDF , syntax
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

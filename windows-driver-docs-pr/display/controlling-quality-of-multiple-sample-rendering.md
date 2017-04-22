@@ -5,7 +5,7 @@ ms.assetid: 5a2f2d36-ab0d-4267-a921-c42621fa5d47
 keywords:
 - multiple-sample rendering WDK DirectX 9.0 , controlling quality
 - rendering multisamples WDK DirectX 9.0 , controlling quality
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

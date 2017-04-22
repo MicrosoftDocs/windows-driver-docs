@@ -8,7 +8,7 @@ keywords:
 - registering CoNDIS drivers WDK networking
 - miniport drivers WDK networking , CoNDIS registration
 - NDIS miniport driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

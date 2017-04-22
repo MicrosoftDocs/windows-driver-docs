@@ -7,7 +7,7 @@ keywords:
 - IEEE 1394 WDK buses
 - buses WDK , IEEE 1394
 - 1394 WDK buses
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

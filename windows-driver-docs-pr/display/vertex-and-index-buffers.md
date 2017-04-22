@@ -2,7 +2,7 @@
 title: Vertex and Index Buffers
 description: Vertex and Index Buffers
 ms.assetid: 7be64ee3-4a39-43b9-84f6-efb3361ec7fe
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

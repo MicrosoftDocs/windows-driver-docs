@@ -5,7 +5,7 @@ ms.assetid: bf4dab5e-5800-4888-af96-68a152ac5e39
 keywords:
 - data copying WDK audio
 - copying audio data
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Can I tell if my trace provider is enabled for tracing
 description: Can I tell if my trace provider is enabled for tracing
 ms.assetid: 8cc4e364-a0bc-4ef3-af3c-c08f3183b548
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: WSD Schema Extensions
 ms.assetid: 79a07c2f-2efa-44b1-9ee9-1a75f96ab207
 keywords:
 - in-box autoconfiguration support WDK printer , WSD schema extensions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

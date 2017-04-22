@@ -3,7 +3,7 @@ title: Connecting and Disconnecting a WIA Application
 author: windows-driver-content
 description: Connecting and Disconnecting a WIA Application
 ms.assetid: 3360b707-2167-4c51-af86-4edece3b557f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: Writing a FilterUnloadCallback Routine
 ms.assetid: 2f680770-38af-4dcb-93b8-7f770e0378b2
 keywords:
 - FilterUnloadCallback
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

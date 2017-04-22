@@ -13,7 +13,7 @@ keywords:
 - 1394 connection WDK boot parameters
 - USB 2.0 debugging connection WDK boot parameters
 - null-modem cable WDK boot parameters
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

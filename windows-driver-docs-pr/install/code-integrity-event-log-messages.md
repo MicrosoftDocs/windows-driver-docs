@@ -2,7 +2,7 @@
 title: Code Integrity Event Log Messages
 description: Code Integrity Event Log Messages
 ms.assetid: 1b47e802-ed1c-4402-86f6-5ef0608b1445
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

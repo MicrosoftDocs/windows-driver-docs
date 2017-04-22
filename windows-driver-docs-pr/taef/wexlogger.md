@@ -2,7 +2,7 @@
 title: WexLogger
 description: WexLogger
 ms.assetid: D9F4AD08-19EA-4a6c-AD25-886FBEA334B8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

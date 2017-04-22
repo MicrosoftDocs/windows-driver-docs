@@ -13,7 +13,7 @@ keywords:
 - resource-range-list objects WDK KMDF
 - resource-requirements-list objects WDK KMDF
 - hardware resources WDK KMDF , specifying
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

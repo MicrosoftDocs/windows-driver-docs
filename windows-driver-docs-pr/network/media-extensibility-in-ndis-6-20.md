@@ -5,7 +5,7 @@ ms.assetid: abc240da-be6e-4a7a-a9d1-186633c5bfd3
 keywords:
 - NDIS 6.20 WDK , media extensibility
 - media extensibility WDK NDIS 6.20
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

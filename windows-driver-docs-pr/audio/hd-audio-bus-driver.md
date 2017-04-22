@@ -10,7 +10,7 @@ keywords:
 - bus drivers WDK audio
 - HD Audio, bus driver
 - High Definition Audio (HD Audio), bus driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

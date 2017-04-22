@@ -3,7 +3,7 @@ title: Pscript5 Keywords
 author: windows-driver-content
 description: Pscript5 Keywords
 ms.assetid: a5f4384a-8d78-4dc6-969b-f7a1fa6cb5e7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

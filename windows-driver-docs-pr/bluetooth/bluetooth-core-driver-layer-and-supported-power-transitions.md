@@ -2,7 +2,7 @@
 title: Bluetooth Core Driver Layer and Supported Power Transitions
 description: The following table summarizes device and system power states that the Bluetooth core driver supports.
 ms.assetid: 25A3598E-51A7-4B16-92F7-9D2F39177946
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

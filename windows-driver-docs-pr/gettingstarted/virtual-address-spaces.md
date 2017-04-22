@@ -2,7 +2,7 @@
 title: Virtual address spaces
 description: Virtual address spaces
 ms.assetid: 5A3E1918-E5A4-4129-B0C2-45B6EEB7EFB3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

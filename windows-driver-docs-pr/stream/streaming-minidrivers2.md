@@ -13,7 +13,7 @@ keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel ,
 - streaming minidrivers WDK Windows 2000 Kernel ,
 - minidrivers WDK Windows 2000 Kernel Streaming ,
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

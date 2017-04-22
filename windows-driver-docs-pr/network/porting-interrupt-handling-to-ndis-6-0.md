@@ -9,7 +9,7 @@ keywords:
 - RSS WDK networking , porting interrupt handling
 - interrupts WDK networking , receive-side scaling
 - message-signaled inter
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

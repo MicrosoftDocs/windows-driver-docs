@@ -5,7 +5,7 @@ ms.assetid: ffac0c1a-2c92-4beb-9622-26d10e1a06aa
 keywords:
 - deinterlacing WDK DirectX VA , 64-bit
 - 64-bit WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

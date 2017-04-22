@@ -2,7 +2,7 @@
 title: Container IDs for PnP-X Devices
 description: Container IDs for PnP-X Devices
 ms.assetid: 6a1ea4e9-e672-4f37-ab26-932591fe4da4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

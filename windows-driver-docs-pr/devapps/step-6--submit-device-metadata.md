@@ -2,7 +2,7 @@
 title: Step 6 Submit device metadata for your Windows Store device app
 description: This topic describes how to submit device metadata for your Windows Store device app to the Windows Dev Center hardware dashboard.
 ms.assetid: 5A4A371E-42A2-43C8-A496-CC3C38C17182
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

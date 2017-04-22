@@ -6,7 +6,7 @@ ms.assetid: bec1e9cc-a846-43e5-bc9e-e43a151ef6c4
 keywords:
 - printer graphics DLL WDK , building
 - graphics DLL WDK printer , building
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Supporting Dynamic Resources
 ms.assetid: d0da60d4-fce6-45b7-bf4f-3cf049dd5f29
 keywords:
 - dynamic resources WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

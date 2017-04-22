@@ -2,7 +2,7 @@
 title: Enhanced Sound for Laptop Computers
 description: Enhanced Sound for Laptop Computers
 ms.assetid: fdf6217c-4947-4ba3-ab62-282587c21146
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

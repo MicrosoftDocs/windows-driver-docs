@@ -5,7 +5,7 @@ ms.assetid: a7b088d6-a6cd-479d-b256-04def1de1736
 keywords:
 - releasing COPP DirectX VA device objects
 - closing COPP DirectX VA device objects
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

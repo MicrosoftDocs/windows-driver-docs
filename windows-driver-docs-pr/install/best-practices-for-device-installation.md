@@ -5,7 +5,7 @@ ms.assetid: fca32a7f-5af1-42cf-880c-0312022a3266
 keywords:
 - device installations WDK , best practices
 - driver installations WDK , best practices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

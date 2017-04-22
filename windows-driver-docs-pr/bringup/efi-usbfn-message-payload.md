@@ -3,7 +3,7 @@ title: EFI\_USBFN\_MESSAGE\_PAYLOAD
 author: windows-driver-content
 description: EFI\_USBFN\_MESSAGE\_PAYLOAD
 ms.assetid: 88d32ce1-460d-4c0f-b42a-426f42e2f969
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

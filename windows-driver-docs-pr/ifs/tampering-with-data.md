@@ -10,7 +10,7 @@ keywords:
 - tampering with data WDK file systems
 - buffers WDK file systems
 - IOCTLs WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

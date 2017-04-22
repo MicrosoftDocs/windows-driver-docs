@@ -6,7 +6,7 @@ keywords:
 - PHY configuration WDK Native 802.11 , orthogonal frequency division multiplexing
 - orthogonal frequency division multiplexing WDK Native 802.11
 - OFDM WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - intermediate drivers WDK TCP chimney offload
 - intermediate drivers WDK TCP chimney offload , about chimney offload for intermediate drivers
 - intermediate drivers WDK networking , TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

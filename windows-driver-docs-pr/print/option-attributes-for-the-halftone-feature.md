@@ -5,7 +5,7 @@ description: Option Attributes for the Halftone Feature
 ms.assetid: a188908a-ddf7-4b4d-a46d-e3550ffb0418
 keywords:
 - Halftone Feature
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

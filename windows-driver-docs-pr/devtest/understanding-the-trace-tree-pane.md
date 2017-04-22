@@ -5,7 +5,7 @@ ms.assetid: 98640d7e-29fc-4397-ac6b-47f4e17f88a1
 keywords:
 - Static Driver Verifier Report WDK , Trace Tree pane
 - Trace Tree pane WDK Static Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
