@@ -1,9 +1,9 @@
-ï»¿---
+---
 title: Testing Location Functionality
 author: windows-driver-content
 description: The Sensor Diagnostic Tool includes a separate Location tab that logs properties that are specific to location.
 ms.assetid: A96AF9C7-69FA-492C-941E-4E296488875C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -15,9 +15,9 @@ ms.technology: windows-devices
 
 The Sensor Diagnostic Tool includes a separate Location tab that logs properties that are specific to location. These properties include Latitude, Longitude, and Civic Address.
 
-**Note**Â Â The Sensor Diagnostic Tool is acceptable for testing on WindowsÂ 8.1 and earlier operating systems. The tool is now deprecated for WindowsÂ 10, so for sensor driver testing and diagnostics on WindowsÂ 10 and later operating systems, please use the SensorInfo App from the Windows Store.
+**Note**  The Sensor Diagnostic Tool is acceptable for testing on Windows 8.1 and earlier operating systems. The tool is now deprecated for Windows 10, so for sensor driver testing and diagnostics on Windows 10 and later operating systems, please use the SensorInfo App from the Windows Store.
 
-Â 
+ 
 
 ## Configuring the Sensor Diagnostic Tool to Capture Location Data
 

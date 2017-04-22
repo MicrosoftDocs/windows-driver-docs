@@ -5,7 +5,7 @@ ms.assetid: 92258ae0-5535-4f90-aa80-573ee543a0d6
 keywords:
 - Write a driver
 - get started with drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

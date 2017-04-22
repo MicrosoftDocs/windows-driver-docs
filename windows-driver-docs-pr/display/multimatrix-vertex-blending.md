@@ -13,7 +13,7 @@ keywords:
 - geometry blending WDK Direct3D
 - joint blending WDK Direct3D
 - matrix vertex blending WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

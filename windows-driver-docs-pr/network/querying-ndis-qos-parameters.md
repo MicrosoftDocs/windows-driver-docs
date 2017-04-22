@@ -2,7 +2,7 @@
 title: Querying NDIS QoS Parameters
 description: Querying NDIS QoS Parameters
 ms.assetid: 875D39BA-D70D-4450-9F64-D08EAB54BDC2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

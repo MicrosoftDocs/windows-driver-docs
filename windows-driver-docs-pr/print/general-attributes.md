@@ -7,7 +7,7 @@ keywords:
 - printer attributes WDK Unidrv , general
 - general printer attributes WDK Unidrv
 - general printer attributes WDK Unidrv , about general printer attributes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

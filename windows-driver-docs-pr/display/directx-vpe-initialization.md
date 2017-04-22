@@ -9,7 +9,7 @@ keywords:
 - video port extensions WDK DirectDraw , initialization
 - VPEs WDK DirectDraw , initialization
 - initializing DirectX VPE functionality
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

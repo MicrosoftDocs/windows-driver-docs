@@ -2,7 +2,7 @@
 title: Initialization of a CDMA Packet Device with a Provisioned Context
 description: Initialization of a CDMA Packet Device with a Provisioned Context
 ms.assetid: 07b4881c-b8df-4831-b0d3-521d187e4232
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

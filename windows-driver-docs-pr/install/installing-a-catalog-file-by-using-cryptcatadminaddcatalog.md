@@ -2,7 +2,7 @@
 title: Installing a Catalog File by using CryptCATAdminAddCatalog
 description: Installing a Catalog File by using CryptCATAdminAddCatalog
 ms.assetid: 2ab71f74-5a94-4f07-bd08-d3f5f6b6a785
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

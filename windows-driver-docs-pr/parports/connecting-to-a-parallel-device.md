@@ -5,7 +5,7 @@ description: Connecting to a Parallel Device
 ms.assetid: c05a1a1e-308a-4b9f-af43-761c4c14d6af
 keywords:
 - parallel devices WDK , connections
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

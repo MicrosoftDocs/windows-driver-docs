@@ -6,7 +6,7 @@ keywords:
 - IP Helper WDK networking
 - IP Helper WDK networking , about
 - network drivers WDK , IP Helper
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

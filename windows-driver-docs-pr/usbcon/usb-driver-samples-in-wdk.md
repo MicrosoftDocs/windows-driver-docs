@@ -2,7 +2,7 @@
 Description: The topic contains basic information about the USB samples that are available for download from the Windows driver samples repository on GitHub.
 title: USB driver samples
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

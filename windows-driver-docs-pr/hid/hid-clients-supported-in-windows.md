@@ -3,7 +3,7 @@ title: HID Clients Supported in Windows
 author: windows-driver-content
 ms.assetid: E6584286-6BF1-40C7-83C1-D07077B13F3E
 description: 
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

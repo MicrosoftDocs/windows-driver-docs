@@ -5,7 +5,7 @@ ms.assetid: dba63137-ff92-480a-bca4-ab651a6bda85
 keywords:
 - SCSI Verification feature WDK Driver Verifier
 - miniport drivers WDK Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 676e9220-4990-4581-8f23-79083afc311c
 keywords:
 - printer attributes WDK Unidrv , formats
 - formats WDK printer attributes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

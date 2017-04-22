@@ -9,7 +9,7 @@ keywords:
 - data WDK networking , retreat operations
 - packets WDK networking , advance operations
 - packets WDK networking , retreat operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: cd81f622-d11c-4b40-ac78-9324716e0a2c
 keywords:
 - Kernel Streaming Proxy WDK AVStream , interface handler
 - interface handler WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

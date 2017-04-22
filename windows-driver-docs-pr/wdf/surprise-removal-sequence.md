@@ -3,7 +3,7 @@ title: Surprise-Removal Sequence
 author: windows-driver-content
 description: Surprise-Removal Sequence
 ms.assetid: 5A89BEDA-BAC3-476F-99B3-4E6E6DDDE5F5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

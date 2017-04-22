@@ -3,7 +3,7 @@ title: WIA Driver Item Tree
 author: windows-driver-content
 description: WIA Driver Item Tree
 ms.assetid: 67232179-4b9b-49a0-b8b0-5ed0914d4156
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

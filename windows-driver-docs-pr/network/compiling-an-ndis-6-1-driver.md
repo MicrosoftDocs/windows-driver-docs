@@ -5,7 +5,7 @@ ms.assetid: 9606a91c-c1cb-4d93-b648-3829d1b51954
 keywords:
 - NDIS WDK , compile flags
 - compile flags WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

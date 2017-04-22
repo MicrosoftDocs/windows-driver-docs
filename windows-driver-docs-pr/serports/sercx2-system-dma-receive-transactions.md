@@ -3,7 +3,7 @@ title: SerCx2 System-DMA-Receive Transactions
 author: windows-driver-content
 description: Some serial controller drivers implement support for receive transactions that use the system DMA controller.
 ms.assetid: 0374D1BE-96ED-43D6-8661-5E9676B82C0D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

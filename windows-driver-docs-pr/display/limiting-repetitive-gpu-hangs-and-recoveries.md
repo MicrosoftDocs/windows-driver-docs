@@ -2,7 +2,7 @@
 title: Limiting Repetitive GPU Hangs and Recoveries
 description: Limiting Repetitive GPU Hangs and Recoveries
 ms.assetid: e8ad0add-ecb2-4982-82bc-50f5ffbe4b0f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

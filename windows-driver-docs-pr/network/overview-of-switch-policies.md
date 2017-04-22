@@ -2,7 +2,7 @@
 title: Overview of Switch Policies
 description: Overview of Switch Policies
 ms.assetid: DB9368CE-96D4-48C9-AE18-601EE4A09001
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

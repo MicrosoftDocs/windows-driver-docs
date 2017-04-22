@@ -11,7 +11,7 @@ keywords:
 - outlining WDK Direct3D
 - shadowing WDK Direct3D
 - decals WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

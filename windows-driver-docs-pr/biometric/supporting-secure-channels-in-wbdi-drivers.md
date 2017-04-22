@@ -5,7 +5,7 @@ ms.assetid: 1b4532f4-18ee-4c65-9373-2ca635d2f40d
 keywords:
 - biometric drivers WDK , secure channels
 - secure channels WDK biometric
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

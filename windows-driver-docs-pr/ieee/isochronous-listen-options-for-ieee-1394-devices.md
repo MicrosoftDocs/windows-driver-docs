@@ -12,7 +12,7 @@ keywords:
 - packet DMA WDK IEEE 1394 bus
 - stripping packet headers
 - headers WDK IEEE 1394 bus
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

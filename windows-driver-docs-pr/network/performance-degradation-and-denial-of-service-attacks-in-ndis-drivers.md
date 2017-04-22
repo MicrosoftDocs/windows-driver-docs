@@ -2,7 +2,7 @@
 title: Performance degradation and DoS attacks in NDIS drivers
 description: Performance Degradation and Denial of Service Attacks in NDIS Drivers
 ms.assetid: 0e80c6e2-3e6d-4189-b2df-bdd9a4a40dd6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

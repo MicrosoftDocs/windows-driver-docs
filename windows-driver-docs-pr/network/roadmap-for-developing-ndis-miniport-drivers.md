@@ -2,7 +2,7 @@
 title: Roadmap for Developing NDIS Miniport Drivers
 description: Roadmap for Developing NDIS Miniport Drivers
 ms.assetid: 7cb56c08-3578-49d7-a0aa-a89dc6b139ca
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

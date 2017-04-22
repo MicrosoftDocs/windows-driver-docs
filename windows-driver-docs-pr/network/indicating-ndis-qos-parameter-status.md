@@ -2,7 +2,7 @@
 title: Indicating NDIS QoS Parameter Status
 description: Indicating NDIS QoS Parameter Status
 ms.assetid: 7E896BC3-839F-4119-BF79-A7BB4CA61CDA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

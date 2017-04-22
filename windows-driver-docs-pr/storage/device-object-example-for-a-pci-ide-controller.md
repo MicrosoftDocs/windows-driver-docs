@@ -8,7 +8,7 @@ keywords:
 - device objects WDK storage
 - PCI IDE controller example WDK storage
 - IDE controllers WDK storage
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

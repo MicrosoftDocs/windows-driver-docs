@@ -8,7 +8,7 @@ keywords:
 - Redirected Drive Buffering Subsystem WDK file systems , connection engine management
 - connection engine WDK network redirectors
 - TDI drivers WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

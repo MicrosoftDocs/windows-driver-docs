@@ -2,7 +2,7 @@
 title: Container IDs for UPnP Devices
 description: Container IDs for UPnP Devices
 ms.assetid: 29d2ed0e-e746-4f0a-88f3-bd07d5750485
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

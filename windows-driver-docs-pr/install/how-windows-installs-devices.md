@@ -2,7 +2,7 @@
 title: How Windows Installs Devices
 description: How Windows Installs Devices
 ms.assetid: 8d8af8bc-1368-4532-913f-11d3d65e1b20
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

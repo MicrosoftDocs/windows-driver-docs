@@ -12,7 +12,7 @@ keywords:
 - data capture to VRAM WDK AVStream
 - display minidrivers WDK VRAM capture
 - minidrivers WDK VRAM capture
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

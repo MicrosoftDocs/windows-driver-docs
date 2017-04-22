@@ -5,7 +5,7 @@ ms.assetid: 724e3c8a-7760-4e53-8d44-1927e5ad1efd
 keywords:
 - TraceView WDK , preparing to use
 - files WDK TraceView
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

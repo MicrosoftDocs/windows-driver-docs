@@ -2,7 +2,7 @@
 title: Supporting System Area Networks
 description: Supporting System Area Networks
 ms.assetid: 04b58db0-6f8d-41e1-b38f-fcd3de00a161
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

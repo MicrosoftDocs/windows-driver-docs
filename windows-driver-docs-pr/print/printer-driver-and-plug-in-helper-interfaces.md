@@ -3,7 +3,7 @@ title: Printer Driver and Plug-in Helper Interfaces
 author: windows-driver-content
 description: Printer Driver and Plug-in Helper Interfaces
 ms.assetid: 21e5ae44-01e8-4f80-8d67-18e4d9c190c5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

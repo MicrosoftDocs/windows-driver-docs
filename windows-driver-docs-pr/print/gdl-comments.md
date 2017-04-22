@@ -8,7 +8,7 @@ keywords:
 - comments WDK GDL
 - contexts WDK GDL , comments
 - GDL WDK , comments
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

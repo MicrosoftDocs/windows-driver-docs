@@ -8,7 +8,7 @@ keywords:
 - CPSUI WDK print , window controls
 - property sheet pages WDK print , window controls
 - window controls WDK CPSUI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

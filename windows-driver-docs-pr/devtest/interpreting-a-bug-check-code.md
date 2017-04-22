@@ -5,7 +5,7 @@ ms.assetid: b5c8e18e-c2d3-47d9-b2bd-38aaaedcfde9
 keywords:
 - tools WDK , bug check codes
 - driver development tools WDK , bug check codes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

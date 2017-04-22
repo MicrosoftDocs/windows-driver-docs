@@ -10,7 +10,7 @@ keywords:
 - current boot entry WDK
 - NVRAM boot options WDK , default boot entries
 - EFI NVRAM boot options WDK , default boot entries
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

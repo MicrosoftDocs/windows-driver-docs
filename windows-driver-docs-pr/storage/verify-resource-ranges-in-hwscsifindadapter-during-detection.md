@@ -10,7 +10,7 @@ keywords:
 - converting SCSI miniport drivers
 - resource ranges WDK SCSI
 - HwScsiFindAdapter
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

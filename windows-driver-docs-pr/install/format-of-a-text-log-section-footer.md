@@ -6,7 +6,7 @@ keywords:
 - section footer WDK SetupAPI
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , section footer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

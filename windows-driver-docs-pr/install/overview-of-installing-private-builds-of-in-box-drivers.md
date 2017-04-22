@@ -2,7 +2,7 @@
 title: Overview of Installing Private Builds of Inbox Drivers
 description: Overview of Installing Private Builds of Inbox Drivers
 ms.assetid: eec9474c-5aad-4b81-b7df-5e89cbfe92ab
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Excluding Packet Delivery to Extensible Switch Destination Ports
 description: Excluding Packet Delivery to Extensible Switch Destination Ports
 ms.assetid: 04BF02A6-360F-482E-A86B-31232AFCB778
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

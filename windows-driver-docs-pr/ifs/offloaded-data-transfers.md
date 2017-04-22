@@ -3,7 +3,7 @@ title: Offloaded Data Transfers
 author: windows-driver-content
 description: Transferring data between computers or within the same computer is a frequent file system activity.
 ms.assetid: 66006CC0-8902-47CD-8E7C-187FE5BA71EF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: c7e702aa-494f-4b27-a7c3-d42ef8f42a6e
 keywords:
 - miniport drivers WDK networking , scatter/gather DMA
 - NDIS miniport drivers WDK , scatter/gather DMA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

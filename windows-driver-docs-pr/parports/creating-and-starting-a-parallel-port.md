@@ -6,7 +6,7 @@ ms.assetid: 75c82353-6490-47e9-9278-ec0981af9ae9
 keywords:
 - parallel ports WDK , creating
 - parallel ports WDK , starting
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

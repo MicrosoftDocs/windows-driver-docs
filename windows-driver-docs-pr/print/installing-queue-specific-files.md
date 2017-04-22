@@ -8,7 +8,7 @@ keywords:
 - queue-specific files WDK printer
 - print queues WDK , Point and Print
 - queues WDK printer , Point and Print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

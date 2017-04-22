@@ -4,7 +4,7 @@ description: Alpha-Blend Combination Set
 ms.assetid: e7a11459-4f81-4b6d-a30f-04f4260d0df9
 keywords:
 - alpha-blend combination set WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: ca58b1c3-9ecf-4ebe-8f08-a2f78ae17921
 keywords:
 - parallel devices WDK , opening
 - parallel devices WDK , sharing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

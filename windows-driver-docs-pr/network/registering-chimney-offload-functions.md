@@ -6,7 +6,7 @@ keywords:
 - TCP chimney offload WDK networking , function registration
 - chimney offload WDK networking , function registration
 - registering chimney offload functions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

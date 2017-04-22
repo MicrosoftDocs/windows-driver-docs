@@ -12,7 +12,7 @@ keywords:
 - memory WDK DirectDraw AGP , heaps
 - linear heaps WDK DirectDraw
 - physical heaps WDK DirectDraw
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

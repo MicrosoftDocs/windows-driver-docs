@@ -8,7 +8,7 @@ keywords:
 - preprocessor directives WDK GPD files
 - parsing GPD file sections
 - preprocessor symbols WDK GPD files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

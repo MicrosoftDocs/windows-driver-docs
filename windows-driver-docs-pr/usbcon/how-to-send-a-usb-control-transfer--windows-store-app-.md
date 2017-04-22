@@ -1,7 +1,7 @@
 ---
 Description: An app that communicates with a USB device usually sends several control transfers requests.
 title: How to send a USB control transfer (Windows Store app)
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 0b4cbb98-506e-443f-bac2-59dbdbcb1798
 keywords:
 - audio drivers WDK , 64-bit
 - 64-bit WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

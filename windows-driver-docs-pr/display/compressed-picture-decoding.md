@@ -8,7 +8,7 @@ keywords:
 - video decoding WDK DirectX VA , compressed pictures
 - decoding video WDK DirectX VA , compressed pictures
 - compressed picture decoding WDK DirectX VA , about compressed picture decoding
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

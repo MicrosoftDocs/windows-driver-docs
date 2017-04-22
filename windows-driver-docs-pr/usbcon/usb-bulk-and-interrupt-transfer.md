@@ -1,8 +1,8 @@
 ---
-Description: This topic provides a brief overview about USB bulk transfers. It also provides step-by-step instructions about how a client driver can send and receive bulk data from the device.
+Description: This topic provides a brief overview about USB bulk transfers. 
 title: How to send USB bulk transfer requests
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

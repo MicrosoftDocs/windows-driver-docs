@@ -6,7 +6,7 @@ keywords:
 - indicating received packets WDK Native 802.11
 - received packet indications WDK Native 802.11
 - indications WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

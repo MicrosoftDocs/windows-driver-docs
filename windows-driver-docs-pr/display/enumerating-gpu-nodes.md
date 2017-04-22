@@ -4,7 +4,7 @@ description: Starting in Windows 8.1, a display miniport driver must implement 
 ms.assetid: 822FEB3E-A39D-4B33-BD9D-F3166EF99AF8
 keywords:
 - GPU nodes, enumerating WDK Display Drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

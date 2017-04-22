@@ -2,7 +2,7 @@
 title: Static Driver Verifier Error Codes
 description: The following table lists the error codes that Static Driver Verifier could return, and where possible, suggests methods for resolving them.
 ms.assetid: AB644106-EB4A-448F-9DA3-D208A38B31F5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

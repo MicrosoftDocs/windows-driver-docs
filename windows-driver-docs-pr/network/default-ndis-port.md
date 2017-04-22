@@ -5,7 +5,7 @@ ms.assetid: a9edf83f-9226-4c75-a04e-1879a05df24c
 keywords:
 - ports WDK NDIS , default
 - NDIS ports WDK , default NDIS ports
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - network interface cards WDK networking , types
 - bus-master DMA NICs WDK networking
 - non-bus-master DMA NICs WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

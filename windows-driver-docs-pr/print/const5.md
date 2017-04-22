@@ -5,7 +5,7 @@ description: The Web Services for Devices (WSD) Const construct defines the data
 ms.assetid: e9bcf007-0117-48a9-9873-a9bbc5702e29
 keywords:
 - Const construct
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

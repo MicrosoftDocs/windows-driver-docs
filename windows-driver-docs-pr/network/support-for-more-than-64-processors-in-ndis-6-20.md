@@ -4,7 +4,7 @@ description: Support for More than 64 Processors in NDIS 6.20
 ms.assetid: 3fb2a09c-e2dd-48b8-a631-3793bd023ef0
 keywords:
 - NDIS 6.20 WDK , support for more than 64 processors
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

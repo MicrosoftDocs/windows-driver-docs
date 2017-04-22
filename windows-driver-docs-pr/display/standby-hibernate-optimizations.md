@@ -2,7 +2,7 @@
 title: Standby hibernate optimizations
 description: Windows 8 offers optimizations to the graphics stack that your driver can optionally take advantage of to improve system performance on sleep and resume.
 ms.assetid: 1E71BFDF-3C67-41F6-968A-8AE54B54CCCB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

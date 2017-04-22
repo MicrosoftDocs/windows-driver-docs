@@ -6,7 +6,7 @@ ms.assetid: 931441c8-9521-43c9-86f1-dbf75d36e190
 keywords:
 - DVD decoder minidrivers WDK
 - regionalization WDK DVD decoder
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

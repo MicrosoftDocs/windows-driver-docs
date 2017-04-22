@@ -6,7 +6,7 @@ keywords:
 - PoolMon WDK , examples
 - Memory Pool Monitor WDK , examples
 - examples WDK PoolMon
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

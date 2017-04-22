@@ -4,7 +4,7 @@ description: Sending Notifications
 ms.assetid: 55e0f41c-e042-4170-bedd-160b6c457365
 keywords:
 - notifications WDK Native 802.11 IHV Extensions DLL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

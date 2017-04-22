@@ -4,7 +4,7 @@ description: Design guide for developing drivers for smart card reader devices.
 ms.assetid: e0827569-6c76-42a1-b94f-29235646519f
 keywords:
 - smart card drivers WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

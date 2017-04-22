@@ -10,7 +10,7 @@ keywords:
 - HP-GL/2 monochrome WDK Unidrv , about HP-GL/2 monochrome
 - monochrome vector graphics WDK Unidrv
 - PCL-5e WDK Unidrv , about PCL-5e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

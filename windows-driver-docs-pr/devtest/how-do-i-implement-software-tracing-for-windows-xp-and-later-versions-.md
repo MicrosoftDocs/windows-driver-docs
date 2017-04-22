@@ -2,7 +2,7 @@
 title: Implementing software tracing for Windows
 description: How do I implement software tracing for Windows XP and later versions of Windows
 ms.assetid: b9122faa-9a5f-4d65-8056-64e7799b77ec
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Enabling Hyper-V Extensible Switch Extensions
 description: Enabling Hyper-V Extensible Switch Extensions
 ms.assetid: 13FD68CB-8F50-4BE3-8822-03464D8C118C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

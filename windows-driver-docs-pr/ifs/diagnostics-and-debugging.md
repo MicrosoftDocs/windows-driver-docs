@@ -14,7 +14,7 @@ keywords:
 - dereference tracking WDK RDBSS
 - reference tracking WDK RDBSS
 - assert routine WDK RDBSS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

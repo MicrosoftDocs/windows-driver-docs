@@ -7,7 +7,7 @@ keywords:
 - network redirectors WDK , Windows NT
 - redirector drivers WDK , Windows NT
 - kernel network redirectors WDK , Windows NT
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

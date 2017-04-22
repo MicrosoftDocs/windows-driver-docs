@@ -9,7 +9,7 @@ keywords:
 - KMDF WDK , security
 - Kernel-Mode Driver Framework WDK , security
 - framework-based drivers WDK KMDF , security
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

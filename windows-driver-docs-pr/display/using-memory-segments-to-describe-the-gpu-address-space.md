@@ -6,7 +6,7 @@ keywords:
 - memory segments WDK display , about memory segments
 - hidden video memory WDK display
 - video memory manager WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

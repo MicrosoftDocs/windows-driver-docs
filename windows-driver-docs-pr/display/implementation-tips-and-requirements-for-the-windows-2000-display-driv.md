@@ -2,7 +2,7 @@
 title: Implementation Tips and Requirements for the Windows 2000 Display Driver Model
 description: Implementation Tips and Requirements for the Windows 2000 Display Driver Model
 ms.assetid: 8474a8bd-621c-421c-b3d5-4fc1b6c91354
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

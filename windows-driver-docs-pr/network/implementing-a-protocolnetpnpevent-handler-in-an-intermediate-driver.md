@@ -4,7 +4,7 @@ description: Implementing a ProtocolNetPnPEvent Handler in an Intermediate Drive
 ms.assetid: 1d0475c4-631d-4b8a-ab26-5b8b9425bfe6
 keywords:
 - ProtocolNetPnPEvent
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

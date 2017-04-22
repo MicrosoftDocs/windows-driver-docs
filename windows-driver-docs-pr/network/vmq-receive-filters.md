@@ -2,7 +2,7 @@
 title: VMQ Receive Filters
 description: VMQ Receive Filters
 ms.assetid: b5dbd716-1d92-400c-b612-a70de690baef
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Writing Hyper-V Extensible Switch Extensions
 description: Writing Hyper-V Extensible Switch Extensions
 ms.assetid: 282CEE4D-0818-4091-A327-68FDD7B0D12F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

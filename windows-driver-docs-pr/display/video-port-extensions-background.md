@@ -8,7 +8,7 @@ keywords:
 - DirectDraw VPEs WDK Windows 2000 display , about video port extensions
 - video port extensions WDK DirectDraw , about video port extensions
 - VPEs WDK DirectDraw , about video port extensions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -10,7 +10,7 @@ keywords:
 - volumes WDK file system , attaching filters
 - FILE_DEVICE_SECURE_OPEN
 - propagating FILE_DEVICE_SECURE_OPEN flag
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

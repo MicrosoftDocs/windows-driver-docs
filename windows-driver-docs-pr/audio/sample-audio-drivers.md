@@ -14,7 +14,7 @@ keywords:
 - Msvad sample audio driver WDK audio
 - Sb16 sample audio driver WDK audio
 - Stdunk sample audio driver WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

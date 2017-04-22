@@ -8,7 +8,7 @@ keywords:
 - print spooler notification WDK , errors
 - notification errors WDK print spooler
 - errors WDK spooler notification
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: HFP Device Startup
 description: The HFP Device startup topic discusses what happens when a Bluetooth hands-free profile (HFP) device arrives in the audio system.
 ms.assetid: C478BCBA-2A17-4604-AE2B-99B3445C741B
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: b7316027-a66c-4630-88d4-fa3c66f735f8
 keywords:
 - ESP-protected packets WDK IPsec offload , background reading
 - AH-protected packets WDK IPsec offload , background reading
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

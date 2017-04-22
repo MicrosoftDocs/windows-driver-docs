@@ -4,7 +4,7 @@ description: Specify applications in the Mobile Broadband Metadata Authoring Wiz
 ms.assetid: 58E95326-94C4-444F-BFE2-0E7DC8112119
 keywords:
 - Specify applications in the Mobile Broadband Metadata Authoring Wizard
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

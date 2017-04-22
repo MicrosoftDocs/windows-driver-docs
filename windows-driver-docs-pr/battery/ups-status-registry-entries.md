@@ -2,7 +2,7 @@
 title: UPS\Status Registry Entries
 description: UPS\Status Registry Entries
 ms.assetid: c24ef185-ba8d-4cfd-9d33-b70682905f00
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 11c717b9-5154-43dd-b357-ff093cabec4b
 keywords:
 - Storport drivers WDK , errors
 - errors WDK Storport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

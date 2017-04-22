@@ -5,7 +5,7 @@ description: IPrintOemDriverUI COM Interface
 ms.assetid: ed11789f-750d-4f29-b5e0-ab299a1388db
 keywords:
 - IPrintOemDriverUI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

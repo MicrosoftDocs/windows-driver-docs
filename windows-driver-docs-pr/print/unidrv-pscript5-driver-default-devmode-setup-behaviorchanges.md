@@ -3,7 +3,7 @@ title: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
 author: windows-driver-content
 description: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
 ms.assetid: 9760d527-0205-477b-bc16-d6aa65b1eaf7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

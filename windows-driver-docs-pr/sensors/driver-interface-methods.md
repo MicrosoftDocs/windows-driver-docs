@@ -3,7 +3,7 @@ title: Driver interface methods
 author: windows-driver-content
 ms.assetid: 675F4188-3B9A-421B-98EF-FE063B550231
 description: Interface methods supported by the sensor driver.
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

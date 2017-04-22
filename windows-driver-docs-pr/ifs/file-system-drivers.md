@@ -6,7 +6,7 @@ ms.assetid: a64d83c6-d4cd-432d-bc1a-a3ff4656527c
 keywords:
 - drivers WDK file system
 - file system drivers WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

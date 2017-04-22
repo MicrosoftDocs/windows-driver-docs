@@ -10,7 +10,7 @@ keywords:
 - errors WDK WHEA , disabling error sources
 - hardware error sources WDK WHEA , disabling
 - disabling an error sourc
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

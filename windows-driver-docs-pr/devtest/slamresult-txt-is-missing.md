@@ -2,7 +2,7 @@
 title: Slamresult.txt is missing
 description: Slamresult.txt is missing
 ms.assetid: 41f168a1-c213-46ed-b83f-8f7eff92b4f5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

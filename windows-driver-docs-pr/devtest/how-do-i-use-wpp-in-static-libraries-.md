@@ -2,7 +2,7 @@
 title: How do I use WPP in static libraries
 description: How do I use WPP in static libraries
 ms.assetid: 02e13837-f8c7-4824-a4db-5e8b49fdcb59
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Page Size and Orientation
 author: windows-driver-content
 description: Page Size and Orientation
 ms.assetid: f744a00c-8614-4488-9a29-d193a0c4268f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

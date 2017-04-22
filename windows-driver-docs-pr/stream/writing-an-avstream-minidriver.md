@@ -6,7 +6,7 @@ ms.assetid: 6187fb33-cb61-493b-89f9-32ed76d933b3
 keywords:
 - AVStream WDK , writing minidrivers
 - minidrivers WDK AVStream , writing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

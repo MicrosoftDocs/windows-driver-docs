@@ -2,7 +2,7 @@
 title: YUV-RGB data range conversions
 ms.assetid: 0A439686-0BAE-4E4D-AA23-06A6EF72C4B3
 description: Effect of input data range on expected video conversion behavior
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

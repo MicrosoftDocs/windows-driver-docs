@@ -3,7 +3,7 @@ title: WIA-TWAIN Compatibility
 author: windows-driver-content
 description: WIA-TWAIN Compatibility
 ms.assetid: f4fe85cc-a201-4cf7-a0f9-74d7514f1447
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

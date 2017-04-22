@@ -8,7 +8,7 @@ keywords:
 - blended pictures WDK DirectX VA , alpha-blend data loading
 - DPXD alpha-blending surface WDK DirectX VA
 - decoded PXD alpha-blending surface WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

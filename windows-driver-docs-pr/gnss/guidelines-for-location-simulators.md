@@ -3,7 +3,7 @@ title: Guidance for location simulators
 author: windows-driver-content
 description: This section contains guidance for implementing a location simulator driver.
 ms.assetid: 4AA6C3EE-0150-45A8-ACC2-D0267591D33D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

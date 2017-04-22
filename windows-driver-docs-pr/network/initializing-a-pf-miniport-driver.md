@@ -2,7 +2,7 @@
 title: Initializing a PF Miniport Driver
 description: Initializing a PF Miniport Driver
 ms.assetid: 8673966D-DE84-4667-A426-CBDE85F42198
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

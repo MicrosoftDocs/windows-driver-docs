@@ -8,7 +8,7 @@ keywords:
 - storage tape drivers WDK , optional routines
 - tape drivers WDK storage , required routines
 - storage tape drivers WDK , required routines
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

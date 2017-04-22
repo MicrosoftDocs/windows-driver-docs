@@ -5,7 +5,7 @@ ms.assetid: ef599874-64c5-480e-a7bc-666ababd4d08
 keywords:
 - TMM WDK display , IViewHelper requirements
 - monitor configurations WDK display , IViewHelper requirements
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Writing drivers for different versions of Windows
 description: Writing drivers for different versions of Windows
 ms.assetid: 7519235c-46c5-49aa-8b11-9e9ac5a51026
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

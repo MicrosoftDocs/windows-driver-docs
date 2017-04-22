@@ -2,7 +2,7 @@
 title: LocationPath Registry Subkey
 description: LocationPath Registry Subkey
 ms.assetid: 3b6f3501-5969-453c-a04b-5559761c3222
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

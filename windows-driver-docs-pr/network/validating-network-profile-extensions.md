@@ -5,7 +5,7 @@ ms.assetid: d29805a3-7ecb-4587-99c5-b1f8ad9f1503
 keywords:
 - network profiles WDK Native 802.11 IHV Extensions DLL , validating extensions
 - validating network profile extensions WDK Native 802.11 IHV Extensions DLL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ keywords:
 - ExtSTA status indications WDK Native 802.11
 - Extensible Station status indications WDK Native 802.11
 - IHV-specific indications WDK Native 802.11 miniport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

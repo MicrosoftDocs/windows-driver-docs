@@ -2,7 +2,7 @@
 title: Verifying the Implementation of Container IDs
 description: Verifying the Implementation of Container IDs
 ms.assetid: 961f3c69-8010-4bf5-9bdf-cc01ff40546a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

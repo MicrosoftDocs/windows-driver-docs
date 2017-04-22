@@ -3,7 +3,7 @@ title: What Is Device Stage
 author: windows-driver-content
 description: What Is Device Stage
 ms.assetid: 57b402c5-31ad-4096-be70-a1dbbee86b83
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

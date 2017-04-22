@@ -2,7 +2,7 @@
 title: WDI transmit operations and offloads
 description: WDI operates in one of two Tx modes Port queuing and PeerTID queuing.
 ms.assetid: 9ADBDAD5-4AFA-4AFA-A829-96EB28CEBAA1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

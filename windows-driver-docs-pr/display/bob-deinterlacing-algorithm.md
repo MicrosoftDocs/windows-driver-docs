@@ -5,7 +5,7 @@ ms.assetid: ef3220bd-841d-4187-bc86-11b999eae2bd
 keywords:
 - bob deinterlacing WDK DirectX VA , algorithm
 - deinterlacing WDK DirectX VA , bob, algorithm
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

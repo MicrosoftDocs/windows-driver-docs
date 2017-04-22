@@ -15,7 +15,7 @@ keywords:
 - EventingService service WDK WSDBIT
 - WSDBIT tool WDK , devices for testing
 - WSDAPI Basic Interoperability Tool WDK , devices for testing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - IHV port monitor autoconfiguration WDK printer
 - autoconfiguration WDK printer , IHV port monitors
 - printer autoconfiguration WDK printer , IHV port monitors
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

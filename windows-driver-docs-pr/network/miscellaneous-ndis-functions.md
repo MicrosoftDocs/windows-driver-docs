@@ -4,7 +4,7 @@ description: Miscellaneous NDIS Functions
 ms.assetid: c0c1f292-2425-4d09-8143-498c756b3943
 keywords:
 - functions WDK NDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

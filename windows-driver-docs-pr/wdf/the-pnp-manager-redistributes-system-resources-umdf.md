@@ -6,7 +6,7 @@ ms.assetid: c8e6277b-b1e5-449f-b5a0-f5a46b46e56e
 keywords:
 - power management scenarios WDK UMDF , PnP manager redistributes system resources
 - redistribution of system resources scenario WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

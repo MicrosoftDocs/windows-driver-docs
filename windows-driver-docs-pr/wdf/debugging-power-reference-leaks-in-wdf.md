@@ -3,7 +3,7 @@ title: Debugging Power Reference Leaks in WDF
 author: windows-driver-content
 description: When a Windows Driver Frameworks (WDF) driver calls WdfDeviceStopIdle, the framework increments the device's power reference count.
 ms.assetid: 25F4EEBB-4733-498C-8704-8E015F81FE06
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

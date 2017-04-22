@@ -5,7 +5,7 @@ ms.assetid: 5668fd27-a6f6-4183-9272-03365dd5305e
 keywords:
 - scatter/gather DMA WDK networking , benefits
 - SGDMA WDK networking , benefits
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

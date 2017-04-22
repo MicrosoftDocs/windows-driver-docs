@@ -5,7 +5,7 @@ ms.assetid: 1a24dec6-f16a-45f5-857b-c6e0df4ce261
 keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

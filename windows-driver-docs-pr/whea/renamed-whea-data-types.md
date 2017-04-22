@@ -8,7 +8,7 @@ keywords:
 - WHEA WDK , renamed data types
 - hardware errors WDK WHEA , renamed data types
 - renamed data types WDK WHEA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

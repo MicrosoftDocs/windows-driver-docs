@@ -2,7 +2,7 @@
 title: How do I initialize WPP software tracing in a user-mode application
 description: How do I initialize WPP software tracing in a user-mode application
 ms.assetid: 1f1ab873-a1c3-4915-af31-ab74c1898fcb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

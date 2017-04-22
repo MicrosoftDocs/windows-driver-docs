@@ -7,7 +7,7 @@ keywords:
 - prefix WDK Tracefmt
 - trace message prefix WDK Tracefmt
 - custom trace message prefix WDK Tracefmt
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

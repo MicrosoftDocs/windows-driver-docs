@@ -2,7 +2,7 @@
 title: Initializing a Callout Driver
 description: Initializing a Callout Driver
 ms.assetid: c9fbc3d9-fcb9-4087-a3d9-d97c64711305
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

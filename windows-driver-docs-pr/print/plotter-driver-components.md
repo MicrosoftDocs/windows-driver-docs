@@ -6,7 +6,7 @@ ms.assetid: 6a976956-c188-4d31-b176-e97e09e8cc0b
 keywords:
 - Plotter Driver WDK print , components
 - MSPlot WDK print , components
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

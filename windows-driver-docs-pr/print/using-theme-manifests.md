@@ -3,7 +3,7 @@ title: Using Theme Manifests
 author: windows-driver-content
 description: Using Theme Manifests
 ms.assetid: 8b3feb56-501b-4f35-937e-0be99338ae01
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

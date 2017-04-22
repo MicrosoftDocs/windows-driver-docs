@@ -5,7 +5,7 @@ description: Installing TCP/IP Printers
 ms.assetid: 15339cce-69aa-480d-bfee-11ea509ff5d4
 keywords:
 - TCP/IP WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

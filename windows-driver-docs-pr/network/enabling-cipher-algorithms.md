@@ -5,7 +5,7 @@ ms.assetid: 5e949b8b-1262-4dbf-8e72-c0b6d7d93d33
 keywords:
 - cipher operations WDK Native 802.11 , cipher algorithms
 - algorithms WDK Native 802.11 cipher
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

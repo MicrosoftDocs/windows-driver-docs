@@ -11,7 +11,7 @@ keywords:
 - printer features WDK Unidrv , printer options
 - printer options WDK Unidrv , about printer options
 - Unidrv WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -12,7 +12,7 @@ keywords:
 - device installation applications WDK
 - applications WDK device installation
 - device installations WDK , applications
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

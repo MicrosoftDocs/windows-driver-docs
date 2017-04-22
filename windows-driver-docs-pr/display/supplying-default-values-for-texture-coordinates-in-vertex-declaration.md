@@ -5,7 +5,7 @@ ms.assetid: 5e346e7e-7460-41d9-aee1-dcc72fc642c1
 keywords:
 - vertex declarations WDK DirectX 9.0
 - texture coordinates WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

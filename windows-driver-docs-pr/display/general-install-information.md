@@ -7,7 +7,7 @@ keywords:
 - out-of-box display drivers WDK Windows Vista
 - production display drivers WDK Windows Vista
 - retail display drivers WDK Windows Vista
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

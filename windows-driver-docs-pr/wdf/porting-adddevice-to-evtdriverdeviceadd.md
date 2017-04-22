@@ -3,7 +3,7 @@ title: Porting AddDevice to EvtDriverDeviceAdd
 author: windows-driver-content
 description: Porting AddDevice to EvtDriverDeviceAdd
 ms.assetid: 8FCFDA98-621E-415E-83D7-0371F55DD8A8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

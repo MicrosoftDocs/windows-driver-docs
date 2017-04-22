@@ -4,7 +4,7 @@ description: Installing Device Metadata Packages
 ms.assetid: 5f1eda5c-d04e-4ec2-badd-f718bfa70cac
 keywords:
 - device metadata packages WDK , installing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

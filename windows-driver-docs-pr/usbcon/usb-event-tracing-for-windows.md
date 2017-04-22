@@ -2,7 +2,7 @@
 Description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
 title: USB Event Tracing for Windows
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

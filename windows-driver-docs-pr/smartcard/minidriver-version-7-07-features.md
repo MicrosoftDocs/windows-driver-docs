@@ -2,7 +2,7 @@
 title: Minidriver Version 7.07 Features
 description: Minidriver Version 7.07 Features
 ms.assetid: F23211BB-798D-45C4-9729-D8D7CB4D3A1D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

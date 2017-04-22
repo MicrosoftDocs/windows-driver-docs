@@ -4,7 +4,7 @@ description: Setting Information for a Connection-Oriented Miniport Driver
 ms.assetid: e31d2054-5982-4ba5-a9e9-133c0d4ed875
 keywords:
 - connection-oriented drivers WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

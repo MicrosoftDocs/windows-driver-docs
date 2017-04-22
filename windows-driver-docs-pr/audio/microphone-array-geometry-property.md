@@ -6,7 +6,7 @@ keywords:
 - mic array WDK audio
 - geometry descriptor WDK audio
 - microphone array WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Sample Storport Miniport Driver for an LSI\_U3 Device
 author: windows-driver-content
 description: Sample Storport Miniport Driver for an LSI\_U3 Device
 ms.assetid: 1ac63d07-f85c-492b-9886-f40a19d7c0b2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

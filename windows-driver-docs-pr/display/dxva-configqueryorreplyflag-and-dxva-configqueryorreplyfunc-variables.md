@@ -17,7 +17,7 @@ keywords:
 - locking configurations WDK DirectX VA
 - probing configurations WDK DirectX VA
 - configuration probing and locking WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: CGMS-A Standards
 description: CGMS-A Standards
 ms.assetid: e41de08f-4dfa-42fc-8ddb-f27385c5780a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

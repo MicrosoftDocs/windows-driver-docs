@@ -8,7 +8,7 @@ keywords:
 - interrupt service routines WDK software tracing
 - ISRs WDK software tracing
 - time WDK software tracing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

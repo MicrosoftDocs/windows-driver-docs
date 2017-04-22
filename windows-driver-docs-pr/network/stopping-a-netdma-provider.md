@@ -5,7 +5,7 @@ ms.assetid: efa83c49-bdec-438d-a2de-e7f13f2466b9
 keywords:
 - NetDMA provider drivers WDK networking , stopping
 - stopping NetDMA provider drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

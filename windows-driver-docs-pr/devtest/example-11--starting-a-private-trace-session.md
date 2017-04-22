@@ -5,7 +5,7 @@ ms.assetid: e1826811-cb1c-400f-a3e1-aaa6ae83ef42
 keywords:
 - trace sessions WDK , private
 - private trace sessions WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

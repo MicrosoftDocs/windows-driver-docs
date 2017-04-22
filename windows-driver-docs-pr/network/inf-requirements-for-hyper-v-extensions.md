@@ -2,7 +2,7 @@
 title: INF Requirements for Hyper-V Extensible Switch Extensions
 description: INF Requirements for Hyper-V Extensible Switch Extensions
 ms.assetid: 378F619A-C799-4330-A388-9955A67251F8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

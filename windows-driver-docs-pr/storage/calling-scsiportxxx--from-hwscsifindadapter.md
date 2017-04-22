@@ -8,7 +8,7 @@ keywords:
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter
 - calling ScsiPortXxx routines WDK storage
 - ScsiPortXxx calls
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

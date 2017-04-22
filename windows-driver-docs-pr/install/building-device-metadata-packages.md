@@ -4,7 +4,7 @@ description: Building Device Metadata Packages
 ms.assetid: 8b95a88e-430c-4250-959f-43536fdc1824
 keywords:
 - device metadata packages WDK , building
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

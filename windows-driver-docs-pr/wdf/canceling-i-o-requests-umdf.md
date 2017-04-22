@@ -10,7 +10,7 @@ keywords:
 - in-flight requests WDK UMDF
 - I/O requests WDK UMDF , states
 - request processing WDK UMDF , states
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

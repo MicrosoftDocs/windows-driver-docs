@@ -2,7 +2,7 @@
 title: Implementing an NDIS 6.40 Driver
 description: An NDIS 6.40 driver must follow the requirements that are defined in Implementing an NDIS 6.30 Driver.
 ms.assetid: 860DFD3E-F324-417A-A625-3C2935752DA2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

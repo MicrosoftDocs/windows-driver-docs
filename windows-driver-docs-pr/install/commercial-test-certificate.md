@@ -4,7 +4,7 @@ description: Commercial Test Certificate
 ms.assetid: cedceb0c-d39e-45e2-aa42-62cd7b8bed1c
 keywords:
 - commercial test certificates WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

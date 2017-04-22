@@ -2,7 +2,7 @@
 title: Loudness Equalization DSP
 description: Loudness Equalization DSP
 ms.assetid: 14b3d8c9-1bfc-4c44-8eba-0bad9e485a19
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

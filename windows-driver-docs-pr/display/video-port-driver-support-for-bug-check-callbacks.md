@@ -5,7 +5,7 @@ ms.assetid: 181fd4f2-feed-4759-80a7-aec97b9094b3
 keywords:
 - video miniport drivers WDK Windows 2000 , bug check callbacks
 - bug check callbacks WDK video miniport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

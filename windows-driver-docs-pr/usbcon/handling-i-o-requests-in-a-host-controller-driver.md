@@ -1,7 +1,7 @@
 ---
 Description: Best practices for a host controller driver for handling I/O requests sent by UCX.
 title: Handle I/O requests in a USB host controller driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

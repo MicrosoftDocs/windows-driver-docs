@@ -3,7 +3,7 @@ title: Device Experience Scenarios for Document Devices
 author: windows-driver-content
 description: Device Experience Scenarios for Document Devices
 ms.assetid: 8e01e9d7-5017-4e0a-90b8-4a025e25a60b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Handling the OID\_SWITCH\_NIC\_SAVE Request
 description: Handling the OID\_SWITCH\_NIC\_SAVE Request
 ms.assetid: 42D66822-6F7E-4772-A280-7823BC29FD71
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

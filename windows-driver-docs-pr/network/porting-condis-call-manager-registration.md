@@ -9,7 +9,7 @@ keywords:
 - porting CoNDIS drivers WDK networking , registration
 - call managers WDK networking , registering
 - CoNDIS call managers WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

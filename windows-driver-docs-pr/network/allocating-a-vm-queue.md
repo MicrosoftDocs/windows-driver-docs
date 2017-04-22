@@ -2,7 +2,7 @@
 title: Allocating a VM Queue
 description: Allocating a VM Queue
 ms.assetid: 2645a6e5-3824-469c-84d5-8e49fa01f494
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

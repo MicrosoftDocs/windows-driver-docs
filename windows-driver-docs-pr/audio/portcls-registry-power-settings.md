@@ -2,7 +2,7 @@
 title: PortCls Registry Power Settings
 description: This topic explains the PortCls registry power settings for Windows 8.
 ms.assetid: 148D044E-B736-4526-BDC5-2C180A590C21
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

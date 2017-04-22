@@ -6,7 +6,7 @@ keywords:
 - Direct3D version 10.1 WDK Windows 7 display , XR layout
 - extended format WDK Windows 7 display , XR layout
 - XR layout WDK Windows 7 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

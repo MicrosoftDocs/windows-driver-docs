@@ -6,7 +6,7 @@ ms.assetid: 2ca5a2fe-4c37-4b7f-bd9b-d41240f8843f
 keywords:
 - HP-GL/2 monochrome WDK Unidrv , enabling support
 - PCL-5e WDK Unidrv , enabling support
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

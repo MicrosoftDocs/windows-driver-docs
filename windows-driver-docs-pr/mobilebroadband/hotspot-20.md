@@ -2,7 +2,7 @@
 title: Hotspot 2.0
 description: Hotspot 2.0
 ms.assetid: 4dbd242d-8745-4ab2-b1dc-9f9dd9a73b42
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

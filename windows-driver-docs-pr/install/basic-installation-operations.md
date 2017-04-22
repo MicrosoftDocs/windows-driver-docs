@@ -7,7 +7,7 @@ keywords:
 - device installation functions WDK SetupAPI
 - general Setup functions WDK SetupAPI
 - SP_DEVINFO_DATA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

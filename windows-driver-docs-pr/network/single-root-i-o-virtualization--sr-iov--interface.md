@@ -2,7 +2,7 @@
 title: Single Root I/O Virtualization (SR-IOV) Interface
 description: Single Root I/O Virtualization (SR-IOV) Interface
 ms.assetid: B65160F9-DB7E-427E-999C-09BD00173076
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

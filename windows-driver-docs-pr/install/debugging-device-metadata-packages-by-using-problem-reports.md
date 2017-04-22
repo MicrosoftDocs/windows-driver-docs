@@ -2,7 +2,7 @@
 title: Debugging Device Metadata Packages by Using Problem Reports
 description: Debugging Device Metadata Packages by Using Problem Reports
 ms.assetid: 303d1b08-1f1c-48ca-89a9-9087516fcd48
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

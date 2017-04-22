@@ -3,7 +3,7 @@ title: WIA Item Categories
 author: windows-driver-content
 description: WIA Item Categories
 ms.assetid: b201e365-60d8-4c3b-a9cf-4bbaa318337f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 Description: This section provides information about choosing the correct mechanism for the selective suspend feature.
 title: USB Selective Suspend
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

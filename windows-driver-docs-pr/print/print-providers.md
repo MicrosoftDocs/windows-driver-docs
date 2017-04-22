@@ -7,7 +7,7 @@ keywords:
 - print providers WDK
 - spooler print providers WDK print
 - providers WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

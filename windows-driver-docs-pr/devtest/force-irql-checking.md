@@ -6,7 +6,7 @@ keywords:
 - Force IRQL Checking feature WDK Driver Verifier
 - IRQL monitoring WDK Driver Verifier
 - spin locks WDK Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Supported Scanner Paper Sizes
 author: windows-driver-content
 description: Supported Scanner Paper Sizes
 ms.assetid: c4437c38-b43a-433c-913a-d3de9bf74284
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

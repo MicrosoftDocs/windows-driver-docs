@@ -6,7 +6,7 @@ keywords:
 - remote access service WDK networking
 - RAS WDK networking
 - architecture WDK WAN , RAS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 Description: The topics in this section examine the ways in which the WDM power model interacts with the power management properties of USB devices.
 title: Implementing power management in USB client drivers
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

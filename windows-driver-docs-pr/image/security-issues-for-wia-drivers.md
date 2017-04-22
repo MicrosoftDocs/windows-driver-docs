@@ -3,7 +3,7 @@ title: Security Issues for WIA Drivers
 author: windows-driver-content
 description: Security Issues for WIA Drivers
 ms.assetid: 5d8fc015-cbf5-43a3-8f65-3ebb17754417
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

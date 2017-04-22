@@ -6,7 +6,7 @@ keywords:
 - IHV Extensions DLL WDK Native 802.11 , network profiles
 - network profiles WDK Native 802.11 IHV Extensions DLL
 - Native 802.11 IHV Extensions DLL WDK , network profiles
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

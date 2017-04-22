@@ -6,7 +6,7 @@ keywords:
 - delivering received data WDK TCP chimney offload , completing requests
 - delivering received data WDK TCP chimney offload , posting requests
 - posting receive requests WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

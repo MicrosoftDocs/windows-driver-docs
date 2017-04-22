@@ -5,7 +5,7 @@ ms.assetid: 757AAF33-B57B-4ab8-A034-23B8AC0C5CB3
 keywords:
 - SetupAPI functions WDK , calling
 - calling SetupAPI functions WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 9231badb-7b42-46d1-95f6-34c0ec7ab3cb
 keywords:
 - DMA buffers WDK display , preparing
 - GPU starvation WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

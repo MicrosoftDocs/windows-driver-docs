@@ -5,7 +5,7 @@ ms.assetid: 9f20c6fa-c515-43b8-a947-f6290d15bd35
 keywords:
 - macroblocks WDK DirectX VA , deblocking filter commands
 - deblocking filter commands WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

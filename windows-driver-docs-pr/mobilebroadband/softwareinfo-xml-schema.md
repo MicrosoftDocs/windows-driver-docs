@@ -2,7 +2,7 @@
 title: SoftwareInfo XML schema
 description: SoftwareInfo XML schema
 ms.assetid: 6e2e2b5a-c04e-4dfd-adbd-158b391aea3e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

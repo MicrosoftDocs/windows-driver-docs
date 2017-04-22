@@ -3,7 +3,7 @@ title: File System Access for WIA Drivers
 author: windows-driver-content
 description: File System Access for WIA Drivers
 ms.assetid: 7bdd116e-d58f-4c2e-a5ec-c9a8196cfd62
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

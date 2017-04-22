@@ -9,7 +9,7 @@ keywords:
 - submitting data buffers WDK AV/C streaming
 - buffers WDK AV/C streaming
 - pending streams WDK AV/C streaming
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

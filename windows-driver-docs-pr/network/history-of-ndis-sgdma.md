@@ -7,7 +7,7 @@ keywords:
 - SGDMA WDK networking , history
 - scatter/gather DMA WDK networking , limitations
 - SGDMA WDK networking , limitations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

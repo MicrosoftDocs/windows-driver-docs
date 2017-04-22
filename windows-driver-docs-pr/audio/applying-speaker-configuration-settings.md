@@ -4,7 +4,7 @@ description: Applying Speaker-Configuration Settings
 ms.assetid: 98fe96cc-8436-4400-9b39-86d188e085c9
 keywords:
 - failed speaker-configuration requests WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

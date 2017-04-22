@@ -5,7 +5,7 @@ ms.assetid: 4912cd15-bd56-43b6-9419-66917bf3f72c
 keywords:
 - gamma correction WDK DirectX 9.0 , swap chains
 - swap chains WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

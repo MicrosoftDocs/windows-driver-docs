@@ -5,7 +5,7 @@ description: Storage Class Driver's DriverEntry Routine
 ms.assetid: 45e929ff-b4e2-4855-8498-15ec4c30f497
 keywords:
 - DriverEntry WDK storage
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

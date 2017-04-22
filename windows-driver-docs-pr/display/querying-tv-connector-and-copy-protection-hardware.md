@@ -5,7 +5,7 @@ ms.assetid: 7812a3ba-42f1-4872-bfe8-08933802f0c1
 keywords:
 - TV connector WDK video miniport
 - copy protection WDK video miniport , querying
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

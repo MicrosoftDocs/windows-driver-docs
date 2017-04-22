@@ -4,7 +4,7 @@ description: NDIS Driver Stack
 ms.assetid: 38302f1e-9b5a-4fc5-8e69-888929e5a892
 keywords:
 - driver stacks WDK networking , NDIS basic configuration
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

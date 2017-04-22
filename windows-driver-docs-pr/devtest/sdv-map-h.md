@@ -10,7 +10,7 @@ keywords:
 - entry points WDK Static Driver Verifier
 - Sdv-map.h WDK Static Driver Verifier , about Sdv-map.h
 - scanning DriverEntry routine WDK Static Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

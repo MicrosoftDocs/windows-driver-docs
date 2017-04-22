@@ -4,7 +4,7 @@ description: Introduction to Test-Signing
 ms.assetid: 63d4627d-b92c-489d-accf-16cfb5ac1410
 keywords:
 - test signing driver packages WDK , about test signing driver packages
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

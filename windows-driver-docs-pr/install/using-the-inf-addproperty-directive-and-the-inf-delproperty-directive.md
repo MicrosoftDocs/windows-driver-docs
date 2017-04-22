@@ -2,7 +2,7 @@
 title: Using the INF AddProperty Directive and INF DelProperty Directive
 description: Using the INF AddProperty Directive and the INF DelProperty Directive
 ms.assetid: e5ae8d66-b2dc-409e-bdac-9034a9e24672
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

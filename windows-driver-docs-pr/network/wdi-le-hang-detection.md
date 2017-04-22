@@ -1,8 +1,8 @@
 ---
 title: LE hang detection
-description: Some firmware have a watchdog timer that can detect firmware hangs. Some IHV drivers (LE) have logic to detect if the firmware is not making forward progress. The UE allows the LE to indicate such conditions.
+description: This section describes LE hang detection in WDI
 ms.assetid: 9C0BB4B8-184A-4C1A-8B47-C30C8318AEEB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

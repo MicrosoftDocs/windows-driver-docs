@@ -2,7 +2,7 @@
 title: Quality of Service (QoS) Support in NDIS 6.30
 description: Quality of Service (QoS) Support in NDIS 6.30
 ms.assetid: B425C05C-0F65-4F94-AECD-0BAD35DA441F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

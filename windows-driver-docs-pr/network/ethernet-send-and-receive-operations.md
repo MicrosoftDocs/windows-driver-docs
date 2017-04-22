@@ -11,7 +11,7 @@ keywords:
 - packets WDK networking , receiving
 - network data WDK , Ethernet driver requirements
 - data WD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

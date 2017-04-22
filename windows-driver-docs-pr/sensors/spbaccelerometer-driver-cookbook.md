@@ -3,7 +3,7 @@ title: SpbAccelerometer driver cookbook
 author: windows-driver-content
 description: SpbAccelerometer driver cookbook
 ms.assetid: 3E7875E1-0810-4698-A5E1-7A4C6C366967
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

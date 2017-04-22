@@ -6,7 +6,7 @@ keywords:
 - state transitions WDK display
 - resume from hibernation WDK display
 - firmware modes in display drivers WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

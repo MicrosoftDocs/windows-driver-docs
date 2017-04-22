@@ -5,7 +5,7 @@ description: Getting Started with Hardware Codec Support in AVStream
 ms.assetid: f8335285-e74f-4600-aee9-7e2881cb0764
 keywords:
 - hardware codec support WDK AVStream , using
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

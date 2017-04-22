@@ -4,7 +4,7 @@ description: Conditionally Required Display Driver Functions
 ms.assetid: c2de7e48-2ce6-466f-947e-bdac1d4fe422
 keywords:
 - graphics DDI functions WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Implementing a UI for Configuring APO Effects
 description: This topic describes how to implement a user interface (UI) that allows a user to configure the effects. 
 ms.assetid: C8D1CB20-2E77-430A-9933-4BDFFB997158
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

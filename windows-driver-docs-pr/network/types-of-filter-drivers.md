@@ -7,7 +7,7 @@ keywords:
 - NDIS filter drivers WDK , types
 - modifying filter drivers WDK networking
 - monitoring filter drivers WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

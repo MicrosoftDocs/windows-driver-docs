@@ -8,7 +8,7 @@ keywords:
 - miniport adapters WDK networking , reading registry
 - adapters WDK networking , reading registry
 - porting miniport drivers WDK networking , adapters
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

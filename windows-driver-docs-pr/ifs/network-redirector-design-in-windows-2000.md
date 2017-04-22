@@ -10,7 +10,7 @@ keywords:
 - RDBSS WDK file systems , Windows 2000
 - buffering code WDK network redirectors
 - kernel network redirectors WDK , Windows 2000
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

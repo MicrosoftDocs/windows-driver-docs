@@ -2,7 +2,7 @@
 title: Specifying Hardware IDs for a Computer
 description: Specifying Hardware IDs for a Computer
 ms.assetid: af0dbfc4-747c-4e16-a3ed-678df0e07757
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

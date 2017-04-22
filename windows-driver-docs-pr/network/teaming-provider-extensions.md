@@ -2,7 +2,7 @@
 title: Teaming Provider Extensions
 description: Teaming Provider Extensions
 ms.assetid: 94F73ECD-54D0-4218-B3C4-33DC3BD57ED0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

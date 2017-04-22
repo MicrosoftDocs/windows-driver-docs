@@ -4,7 +4,7 @@ description: CM_PROB_HALTED
 ms.assetid: 06838356-5dc9-4396-b2a5-0003d4098859
 keywords:
 - CM_PROB_HALTED
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

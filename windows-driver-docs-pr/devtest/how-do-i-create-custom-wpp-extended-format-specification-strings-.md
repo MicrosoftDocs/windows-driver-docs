@@ -2,7 +2,7 @@
 title: How do I create custom WPP extended format specification strings
 description: How do I create custom WPP extended format specification strings
 ms.assetid: 6c4c47c6-71b2-48a0-bab3-8498029b8244
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

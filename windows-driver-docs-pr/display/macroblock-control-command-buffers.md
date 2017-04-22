@@ -5,7 +5,7 @@ ms.assetid: ed6905f6-7e7c-47d2-8f6e-95cfa03e21cb
 keywords:
 - macroblocks WDK DirectX VA , command buffers
 - command buffers WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

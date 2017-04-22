@@ -4,7 +4,7 @@ description: Receiving 802.1Q-Marked and 802.1p-Marked Packets on an Offloaded T
 ms.assetid: a9bbf43a-016f-4aa9-a5a2-118a8613f03b
 keywords:
 - 802.1Q and 802.1p information WDK TCP chimney offload , receiving marked packets
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

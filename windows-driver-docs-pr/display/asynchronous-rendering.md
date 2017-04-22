@@ -9,7 +9,7 @@ keywords:
 - synchronization WDK Windows 2000 display
 - batching DirectDraw drawing calls WDK Windows 2000 display
 - DirectDraw WDK Windows 2000 display , call batches
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

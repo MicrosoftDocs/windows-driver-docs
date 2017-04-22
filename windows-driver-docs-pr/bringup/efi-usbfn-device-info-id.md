@@ -3,7 +3,7 @@ title: EFI\_USBFN\_DEVICE\_INFO\_ID
 author: windows-driver-content
 description: EFI\_USBFN\_DEVICE\_INFO\_ID
 ms.assetid: bc0391b4-876a-4c3c-920c-a16a781a84b0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

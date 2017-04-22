@@ -5,7 +5,7 @@ ms.assetid: a649114f-39d9-4cb1-9190-985dc7967268
 keywords:
 - network operations WDK Native 802.11 , link quality operations
 - link quality operations WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: XPSDrv Driver Options
 ms.assetid: 51db3cce-a95a-4084-9927-542c2d06312a
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , options
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

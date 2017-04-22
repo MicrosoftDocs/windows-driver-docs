@@ -3,7 +3,7 @@ title: Installing Scanning Functionality in an MFP with a Single PDO
 author: windows-driver-content
 description: Installing Scanning Functionality in an MFP with a Single PDO
 ms.assetid: 002ff319-42f9-4034-9bdd-c1e771ed2ba9
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

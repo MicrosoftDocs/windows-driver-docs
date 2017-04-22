@@ -3,7 +3,7 @@ title: Support for TWAIN-Compatible Applications
 author: windows-driver-content
 description: Support for TWAIN-Compatible Applications
 ms.assetid: 8135178f-a432-4200-81c3-8e12112637f4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

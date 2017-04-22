@@ -3,7 +3,7 @@ title: Simple Peripheral Bus (SPB) Driver Design Guide
 author: windows-driver-content
 description: This section describes how to write a driver for a simple peripheral bus (SPB) controller device or for a peripheral device that is connected to an SPB.
 ms.assetid: 7E9F688B-F473-4343-A1E0-525273391935
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

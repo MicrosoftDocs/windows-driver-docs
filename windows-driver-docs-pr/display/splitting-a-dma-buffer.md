@@ -9,7 +9,7 @@ keywords:
 - patch-location lists WDK display
 - preempting DMA buffers WDK display
 - DMA buffers WDK display , preemption
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Required DXGI formats
 description: This topic presents the requirements that Microsoft Direct3D feature levels place on the user-mode display driver.
 ms.assetid: 1CB419B9-DD5E-492F-AAAC-CFFFDE247F7F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

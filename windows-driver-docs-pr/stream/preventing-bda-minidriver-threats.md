@@ -7,7 +7,7 @@ keywords:
 - Broadcast Driver Architecture WDK AVStream , security
 - BDA WDK AVStream , security
 - security WDK BDA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

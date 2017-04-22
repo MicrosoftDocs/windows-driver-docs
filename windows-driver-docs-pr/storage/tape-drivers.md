@@ -9,7 +9,7 @@ keywords:
 - storage drivers WDK , tape drivers
 - tape drivers WDK storage , about tape drivers
 - storage tape drivers WDK , about tape drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

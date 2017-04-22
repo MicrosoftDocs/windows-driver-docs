@@ -15,7 +15,7 @@ keywords:
 - synthesizers WDK audio , interfaces
 - custom synths WDK audio , interfaces
 - DirectMusic custom rendering WDK audio , synthesizers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

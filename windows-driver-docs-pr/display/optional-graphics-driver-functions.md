@@ -10,7 +10,7 @@ keywords:
 - GDI WDK Windows 2000 display , DDI, optional functions
 - graphics drivers WDK Windows 2000 display , DDI, optional functions
 - DDI WDK graphics , optional functions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

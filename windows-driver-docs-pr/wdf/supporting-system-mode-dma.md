@@ -3,7 +3,7 @@ title: Supporting System-Mode DMA
 author: windows-driver-content
 description: Describes the code that a KMDF driver provides in its event callback functions to handle I/O requests for a system-mode DMA device.
 ms.assetid: CCC77C15-69CA-44CB-8DEB-29F3EAEA44F6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

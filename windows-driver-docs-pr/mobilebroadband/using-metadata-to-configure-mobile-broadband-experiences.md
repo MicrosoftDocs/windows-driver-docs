@@ -2,7 +2,7 @@
 title: Using metadata to configure mobile broadband experiences
 description: Using metadata to configure mobile broadband experiences
 ms.assetid: d3ceab6e-550f-4852-8ee0-4a261c238434
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

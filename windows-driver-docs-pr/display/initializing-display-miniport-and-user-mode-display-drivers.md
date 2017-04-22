@@ -6,7 +6,7 @@ keywords:
 - display driver model WDK Windows Vista , initialization
 - Windows Vista display driver model WDK , initialization
 - initializing Windows Vista display drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

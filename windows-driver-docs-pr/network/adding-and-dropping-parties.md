@@ -5,7 +5,7 @@ ms.assetid: ec4c10a4-6a8f-4c1c-858e-954b98922e84
 keywords:
 - connection-oriented NDIS WDK , parties
 - CoNDIS WDK networking , parties
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

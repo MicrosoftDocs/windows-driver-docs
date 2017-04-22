@@ -2,7 +2,7 @@
 title: Installing Just the Checked Operating System and HAL
 description: Installing Just the Checked Operating System and HAL (For Windows Vista and Later)
 ms.assetid: 1203b7cd-50b9-4174-8bec-112019444fac
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

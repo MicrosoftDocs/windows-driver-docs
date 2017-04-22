@@ -8,7 +8,7 @@ keywords:
 - capturing video WDK AVStream , registering Stream class interface
 - registering Stream class interface WDK AVStream
 - initializing stream data WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

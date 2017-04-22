@@ -2,7 +2,7 @@
 title: IoSpy
 description: IoSpy is a filter driver that records data about IOCTL and WMI requests made to the kernel-mode driver of a device.
 ms.assetid: 5fe52fe6-97b4-477a-9450-727c5bf9bd72
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

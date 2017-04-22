@@ -9,7 +9,7 @@ keywords:
 - offload service porting WDK networking , IPsec
 - porting task offload services WDK networking , IPsec
 - Internet protocol security
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

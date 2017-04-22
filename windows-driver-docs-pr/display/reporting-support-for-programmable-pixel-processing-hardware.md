@@ -5,7 +5,7 @@ ms.assetid: e6456c2a-d40f-4082-9122-fab9299808f7
 keywords:
 - pixel shaders WDK DirectX 8.0 , programmable hardware
 - programmable pixel processing hardware WDK DirectX 8.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

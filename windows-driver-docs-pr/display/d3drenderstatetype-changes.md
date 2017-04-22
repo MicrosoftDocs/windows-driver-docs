@@ -5,7 +5,7 @@ ms.assetid: b62bc1f9-b9f1-40f1-aed1-752285adb3c4
 keywords:
 - multimatrix vertex blending WDK Direct3D , D3DRENDERSTATETYPE
 - D3DRENDERSTATETYPE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

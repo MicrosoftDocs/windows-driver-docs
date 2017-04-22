@@ -10,7 +10,7 @@ keywords:
 - testing DRM compliance WDK audio
 - Designed for Windows XP logo test WDK audio
 - logo tests WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - fogging WDK Direct3D
 - D3DPRASTERCAPS_FOGRANGE
 - D3DRENDERSTATE_RANGEFOGENABLE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

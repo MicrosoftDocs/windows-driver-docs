@@ -5,7 +5,7 @@ description: The IPrintTicketProvider QueryDeviceNamespace routine provides the 
 ms.assetid: 5f940cdc-42c3-4521-91c5-cc8e340ce34a
 keywords:
 - QueryDeviceNamespace
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

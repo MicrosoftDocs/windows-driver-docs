@@ -6,7 +6,7 @@ keywords:
 - asynchronous query operations WDK DirectX 9.0 , verifying support of query types
 - query operations WDK DirectX 9.0 , verifying support of query types
 - query types WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

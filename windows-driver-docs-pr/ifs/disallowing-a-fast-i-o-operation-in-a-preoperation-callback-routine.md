@@ -7,7 +7,7 @@ keywords:
 - preoperation callback routines WDK file system minifilter , disallowing fast I/O
 - disallow fast I/O operations WDK file system minifilter
 - fast I/O disallowed WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

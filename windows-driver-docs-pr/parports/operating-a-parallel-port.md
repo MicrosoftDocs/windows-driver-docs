@@ -7,7 +7,7 @@ keywords:
 - vendor-supplied parallel drivers WDK , parallel port operation
 - system-supplied function drivers WDK parallel ports
 - function drivers WDK parallel ports
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

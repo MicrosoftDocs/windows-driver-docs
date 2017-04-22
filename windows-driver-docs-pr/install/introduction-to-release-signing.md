@@ -2,7 +2,7 @@
 title: Introduction to Release-Signing
 description: Introduction to Release-Signing
 ms.assetid: 87583d0a-f7c9-49f0-953a-f51891260d75
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 3bfdcf86-35ac-4b95-9efd-31f79a8b9871
 keywords:
 - simulated font commands WDK Unidrv
 - font commands WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

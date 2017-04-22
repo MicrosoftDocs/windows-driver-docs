@@ -9,7 +9,7 @@ keywords:
 - WHEA WDK , getting error source information
 - Windows Hardware Error Architecture WDK , getting error source information
 - hardware error sources WDK WHEA , getting informati
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: fdcf3459-0fd4-4cf6-a9f5-13337fbd604b
 keywords:
 - DMRC WDK
 - Device Metadata Retrieval Client WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

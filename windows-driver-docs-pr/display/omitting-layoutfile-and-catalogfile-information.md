@@ -7,7 +7,7 @@ keywords:
 - INF files WDK display , CatalogFile directive
 - CatalogFile directive WDK display
 - LayoutFile directive WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

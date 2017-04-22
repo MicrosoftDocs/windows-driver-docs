@@ -5,7 +5,7 @@ ms.assetid: a1fed4d6-60ae-42f2-9be0-98b667953606
 keywords:
 - memory segments WDK display , configuring
 - memory segments WDK display , types
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

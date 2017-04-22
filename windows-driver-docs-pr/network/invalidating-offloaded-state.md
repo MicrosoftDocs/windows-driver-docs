@@ -7,7 +7,7 @@ keywords:
 - chimney offload WDK networking , invalidating offloaded state
 - offload state WDK TCP chimney offload , invalidating offloaded state
 - invalidating offloaded state WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

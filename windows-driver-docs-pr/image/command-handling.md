@@ -3,7 +3,7 @@ title: Command Handling
 author: windows-driver-content
 description: Command Handling
 ms.assetid: 1b940585-8228-4857-92bf-c77c789f6ad5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

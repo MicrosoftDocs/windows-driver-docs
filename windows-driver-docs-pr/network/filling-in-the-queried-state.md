@@ -5,7 +5,7 @@ ms.assetid: 33289a37-cbbb-4c73-8849-05d206d7d24d
 keywords:
 - querying offloaded TCP chimney state, queried state referencing
 - queried TCP chimney state referencing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

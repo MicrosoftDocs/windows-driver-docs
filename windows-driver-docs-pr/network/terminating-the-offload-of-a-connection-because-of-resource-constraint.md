@@ -6,7 +6,7 @@ keywords:
 - state offloading process WDK TCP chimney offload , resource contraints
 - offloading state process WDK TCP chimney offload , resource contraints
 - resource contraints WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

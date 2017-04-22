@@ -8,7 +8,7 @@ keywords:
 - Print Tickets WDK ,Win32 applications
 - Print Tickets WDK , XPSDrv
 - Print Tickets WDK , GDI-based print drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

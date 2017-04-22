@@ -10,7 +10,7 @@ keywords:
 - UMDF WDK , reusing I/O request objects
 - user-mode drivers WDK UMDF , reusing I/O request objects
 - reusing I/O request objects WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

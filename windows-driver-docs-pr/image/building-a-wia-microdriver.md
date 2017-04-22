@@ -3,7 +3,7 @@ title: Building a WIA Microdriver
 author: windows-driver-content
 description: Building a WIA Microdriver
 ms.assetid: dcec3079-2844-4d87-b2e4-0c1850118192
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

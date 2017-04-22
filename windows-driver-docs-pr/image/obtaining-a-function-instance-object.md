@@ -3,7 +3,7 @@ title: Obtaining a Function Instance Object
 author: windows-driver-content
 description: Obtaining a Function Instance Object
 ms.assetid: 2c750281-031b-4b9f-9012-3b341ebe1cd9
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

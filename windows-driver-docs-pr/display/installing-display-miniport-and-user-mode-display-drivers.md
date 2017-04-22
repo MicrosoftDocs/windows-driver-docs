@@ -11,7 +11,7 @@ keywords:
 - graphics device display miniport drivers WDK Windows Vista
 - INF files WDK display , about driver installations
 - miniport drivers WDK display , installing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

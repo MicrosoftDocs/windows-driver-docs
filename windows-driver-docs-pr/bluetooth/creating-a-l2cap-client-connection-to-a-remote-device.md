@@ -10,7 +10,7 @@ keywords:
 - L2CAP profile drivers WDK Bluetooth
 - Logical Link Controller and Adaptation Protocol WDK Bluetooth
 - connections WDK Bluetooth
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

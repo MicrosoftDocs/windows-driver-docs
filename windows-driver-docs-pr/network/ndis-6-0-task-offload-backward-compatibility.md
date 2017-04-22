@@ -7,7 +7,7 @@ keywords:
 - TCP/IP offload service porting WDK networking , backward compatibility
 - offload service porting WDK networking , backward compatibility
 - porting task offload services WDK networking , backwa
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

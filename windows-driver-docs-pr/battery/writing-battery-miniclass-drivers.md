@@ -9,7 +9,7 @@ keywords:
 - device-specific battery support WDK
 - battery class drivers WDK
 - battery class drivers WDK , about battery class drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

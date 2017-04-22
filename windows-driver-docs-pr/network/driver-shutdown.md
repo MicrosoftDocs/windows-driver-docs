@@ -6,7 +6,7 @@ keywords:
 - Native 802.11 miniport drivers WDK networking , shutdown operations
 - miniport drivers WDK Native 802.11 , shutdown operations
 - shutdown WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ keywords:
 - NDIS 6.20 WDK , receive-side throttle
 - receive-side throttle (RST) WDK NDIS 6.20
 - RST WDK NDIS 6.20
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

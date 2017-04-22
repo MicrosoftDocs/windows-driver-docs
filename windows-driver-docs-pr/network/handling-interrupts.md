@@ -5,7 +5,7 @@ ms.assetid: 75dc3676-f88f-4d86-8c77-02f48083de71
 keywords:
 - interrupts WDK networking , handling
 - MiniportInterrupt
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

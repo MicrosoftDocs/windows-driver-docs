@@ -8,7 +8,7 @@ keywords:
 - KMDF WDK , development steps
 - Kernel-Mode Driver Framework WDK , development steps
 - framework-based drivers WDK KMDF , development steps
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
