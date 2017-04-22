@@ -4,7 +4,7 @@ description: Setting Basic Trace Session Options
 ms.assetid: f6b2740b-b401-4d9f-99fd-3b8e2e57e4e8
 keywords:
 - trace sessions WDK , options
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

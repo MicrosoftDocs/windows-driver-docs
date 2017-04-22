@@ -2,7 +2,7 @@
 title: How to Perform Fuzz Tests with IoSpy and IoAttack
 description: This topic describes how to perform fuzz tests by using the IoSpy and IoAttack tools
 ms.assetid: f800e962-2a0f-4039-a479-395a62428b06
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

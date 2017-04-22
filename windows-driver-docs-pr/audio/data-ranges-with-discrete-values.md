@@ -6,7 +6,7 @@ keywords:
 - data-intersection handlers WDK audio , discrete value data ranges
 - discrete value data ranges WDK audio
 - data ranges WDK audio , discrete values
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

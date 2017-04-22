@@ -17,7 +17,7 @@ keywords:
 - inter-unit connections WDK AV/C
 - Avc.sys function driver WDK , connections
 - external plug connections WDK AV/C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: Requirements for Vendor-Supplied Parallel Drivers
 ms.assetid: 2194ad1a-3548-4b67-9268-4245389cf264
 keywords:
 - vendor-supplied parallel drivers WDK , about vendor-supplied parallel drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

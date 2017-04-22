@@ -7,7 +7,7 @@ keywords:
 - blended pictures WDK DirectX VA , DVD 352-wide example
 - DVD 352-wide example WDK DirectX VA
 - 352-wide example WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

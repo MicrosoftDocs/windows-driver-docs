@@ -3,7 +3,7 @@ title: USB Bidi Extender
 author: windows-driver-content
 description: Describes Bidi support for USB device using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
 ms.assetid: C4012369-F1C6-4EBC-8DAE-F4E551DE782D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

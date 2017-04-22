@@ -5,7 +5,7 @@ ms.assetid: d8c093fa-da5c-497c-9eb8-4f689eb96cbf
 keywords:
 - command buffers WDK Direct3D
 - buffers WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

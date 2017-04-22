@@ -6,7 +6,7 @@ keywords:
 - miniport drivers WDK networking , architecture
 - NDIS miniport drivers WDK , architecture
 - connectionless drivers WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 5ed2ba59-88ae-4379-b729-1d741b30a7a0
 keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , balloon notifications
 - balloon notifications WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

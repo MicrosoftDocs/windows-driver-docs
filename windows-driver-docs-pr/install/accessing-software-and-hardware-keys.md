@@ -2,7 +2,7 @@
 title: Accessing Software and Hardware Keys
 description: Accessing Software and Hardware Keys
 ms.assetid: A26F5DAD-57F4-4c0a-968B-ED91D51C8758
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

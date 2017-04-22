@@ -2,7 +2,7 @@
 title: Hardware Resource Management
 description: Hardware Resource Management
 ms.assetid: 8c4db391-380b-4644-8d46-372f82acffae
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

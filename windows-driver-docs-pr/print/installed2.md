@@ -5,7 +5,7 @@ description: The TCP/IP Installed construct contains the object ID (OID) of the 
 ms.assetid: 4e14d8c1-7c66-4035-845d-f3f92dad8c4f
 keywords:
 - Installed construct
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

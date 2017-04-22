@@ -4,7 +4,7 @@ description: Co-installer Functionality
 ms.assetid: ce8a5ab4-d5ce-4255-a959-9619ff736e37
 keywords:
 - co-installers WDK device installations , functionality
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

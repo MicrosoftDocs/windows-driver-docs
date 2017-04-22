@@ -2,7 +2,7 @@
 title: Vendor-Provided DCB Components
 description: Vendor-Provided DCB Components
 ms.assetid: 864BB701-352A-4F61-934C-3E4E8EEE02C5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

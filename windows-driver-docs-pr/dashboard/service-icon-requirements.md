@@ -2,7 +2,7 @@
 title: Service icon requirements
 description: Service icon requirements
 ms.assetid: ce018a26-f5ce-4fbb-8339-b3207ca5ed68
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

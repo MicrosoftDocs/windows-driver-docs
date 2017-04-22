@@ -5,7 +5,7 @@ ms.assetid: 60405ea7-91d5-4deb-9161-8890faa7e897
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , presentation
 - presentation WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

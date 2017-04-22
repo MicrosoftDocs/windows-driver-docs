@@ -5,7 +5,7 @@ ms.assetid: 9d0c6d6f-c12f-4921-b08a-b23b7d96ccd9
 keywords:
 - MUX intermediate drivers WDK
 - NDIS MUX intermediate drivers WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

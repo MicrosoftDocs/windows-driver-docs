@@ -2,7 +2,7 @@
 title: Prepare for Remote Debugging
 description: Prepare for Remote Debugging
 ms.assetid: 744c9ff6-77a8-4bb0-ada8-502f22aa6558
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

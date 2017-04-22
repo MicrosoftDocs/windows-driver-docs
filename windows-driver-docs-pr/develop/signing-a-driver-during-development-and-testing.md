@@ -2,7 +2,7 @@
 ms.assetid: 1EBE8D0C-5F27-4FBE-8B0C-8AAD40F6FBC6
 title: Signing a Driver During Development and Testing
 description: Only signed driver packages can be installed on 64-bit Windows.  For testing purposes, you can test sign the driver package.
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

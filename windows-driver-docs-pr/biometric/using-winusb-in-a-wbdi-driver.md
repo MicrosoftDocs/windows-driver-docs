@@ -4,7 +4,7 @@ description: Using WinUSB in a WBDI Driver
 ms.assetid: a2f109cd-cb61-4c63-8e93-111f62a2c02d
 keywords:
 - biometric drivers WDK , WinUSB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Retrieving COPP-Compatible Information about a Protected Output
 ms.assetid: 9114f232-4123-47a8-b43d-62d14b9f6b08
 keywords:
 - OPM WDK display , retrieving COPP-compatible information
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

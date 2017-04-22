@@ -5,7 +5,7 @@ ms.assetid: 93bac975-3c9c-424b-a815-b1589b703fb5
 keywords:
 - virtual connections WDK CoNDIS , activating
 - activating virtual connections
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

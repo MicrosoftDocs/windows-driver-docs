@@ -4,7 +4,7 @@ description: Using the Mobile Broadband Metadata Authoring Wizard
 ms.assetid: CBEF0B73-9C1D-4ACF-9EB2-52020FBC2625
 keywords:
 - Using the Mobile Broadband Metadata Authoring Wizard
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

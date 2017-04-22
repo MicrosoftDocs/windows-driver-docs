@@ -5,7 +5,7 @@ ms.assetid: c016d6dd-f760-4340-8d56-9bd69e4fe84e
 keywords:
 - ESP-protected packets WDK IPsec offload , requirements
 - AH-protected packets WDK IPsec offload , requirements
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

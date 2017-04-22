@@ -14,7 +14,7 @@ keywords:
 - prefix cache WDK network redirectors
 - serial prefix resolution WDK network redirectors
 - parallel prefix resolution WDK network redirectors
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: The WSD Value construct allows you to extend the bidi communication
 ms.assetid: 8930e012-88ee-44ff-9abc-a15367f04ca3
 keywords:
 - Value construct
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

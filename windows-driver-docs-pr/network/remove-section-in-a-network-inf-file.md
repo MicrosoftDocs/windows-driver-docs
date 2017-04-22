@@ -6,7 +6,7 @@ keywords:
 - INF files WDK network , Remove section
 - network INF files WDK , Remove section
 - Remove section WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

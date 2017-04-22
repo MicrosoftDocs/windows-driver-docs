@@ -2,7 +2,7 @@
 title: General Requirements for Device Property Page Providers
 description: General Requirements for Device Property Page Providers
 ms.assetid: 91e93679-8c0c-43e7-a7d9-72bd0a464406
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

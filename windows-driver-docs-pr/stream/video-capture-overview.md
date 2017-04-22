@@ -7,7 +7,7 @@ keywords:
 - video capture WDK AVStream , about video capture
 - capturing video WDK AVStream , about video capture
 - video capture WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

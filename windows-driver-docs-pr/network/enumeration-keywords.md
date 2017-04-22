@@ -5,7 +5,7 @@ ms.assetid: ac1fb871-7720-4497-b9f7-8f592fe19bd0
 keywords:
 - installation keywords WDK networking , enumeration keywords
 - enumeration keywords WDK NDIS miniport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

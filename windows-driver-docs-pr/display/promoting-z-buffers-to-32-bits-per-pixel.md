@@ -6,7 +6,7 @@ keywords:
 - z buffers WDK DirectX 9.0
 - color buffers WDK DirectX 9.0
 - D3DFORMAT_OP_ZSTENCIL_WITH_ARBITRARY_COLOR_DEPTH
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

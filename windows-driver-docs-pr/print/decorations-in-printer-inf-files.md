@@ -8,7 +8,7 @@ keywords:
 - additional drivers WDK printer
 - decorated INF WDK
 - INF Models Section
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -17,7 +17,7 @@ keywords:
 - video output codecs WDK video present network
 - codecs WDK video present network
 - CRTC WDK video present network
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

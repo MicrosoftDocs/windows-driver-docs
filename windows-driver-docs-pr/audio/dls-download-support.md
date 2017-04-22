@@ -13,7 +13,7 @@ keywords:
 - user-mode synths WDK audio , downloadable sounds
 - custom synths WDK audio , downloadable sounds
 - synthesizers WDK audio , downloadable sounds
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

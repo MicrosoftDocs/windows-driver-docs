@@ -7,7 +7,7 @@ keywords:
 - target rectangle WDK DirectX VA
 - background color options WDK DirectX VA
 - deinterlacing WDK DirectX VA , target rectangle
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: DSM Model Scenarios
 author: windows-driver-content
 description: DSM Model Scenarios
 ms.assetid: 326fb0b5-77a6-4c2b-9670-aceb2eacc911
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

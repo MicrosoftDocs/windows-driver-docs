@@ -7,7 +7,7 @@ keywords:
 - flexible vertex format WDK Direct3D
 - FVF WDK Direct3D
 - Direct3D WDK Windows 2000 display , flexible vertex format
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

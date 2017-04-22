@@ -6,7 +6,7 @@ ms.assetid: 00cf7530-30e6-4ff2-8a26-1c5143413b56
 keywords:
 - ACPI control methods WDK , evaluating
 - ACPI devices WDK , evaluating control methods
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

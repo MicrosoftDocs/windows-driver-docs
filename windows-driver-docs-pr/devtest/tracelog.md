@@ -8,7 +8,7 @@ keywords:
 - tracing WDK , Tracelog
 - event tracing controller WDK Tracelog
 - trace session management WDK Tracelog
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

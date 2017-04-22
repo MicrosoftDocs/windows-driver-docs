@@ -2,7 +2,7 @@
 title: Tools for Signing Drivers
 description: Tools for Signing Drivers
 ms.assetid: 2654388d-b39e-4009-bcba-56b318fd5119
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

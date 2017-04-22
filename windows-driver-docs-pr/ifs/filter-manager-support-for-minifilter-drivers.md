@@ -5,7 +5,7 @@ description: Filter Manager Support for Minifilter Drivers
 ms.assetid: 27d606a9-f928-43d1-9faf-03df9919b3a6
 keywords:
 - I/O WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

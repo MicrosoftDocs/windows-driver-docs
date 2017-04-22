@@ -6,7 +6,7 @@ ms.assetid: a9448908-f712-43f7-99c0-e02abc1678ed
 keywords:
 - status values WDK file system
 - returning status WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

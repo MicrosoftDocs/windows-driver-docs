@@ -3,7 +3,7 @@ title: Using Custom Properties
 author: windows-driver-content
 description: Using Custom Properties
 ms.assetid: cf4e728f-7900-4849-ab1c-135f9fec9713
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

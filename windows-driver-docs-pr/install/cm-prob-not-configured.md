@@ -4,7 +4,7 @@ description: CM_PROB_NOT_CONFIGURED
 ms.assetid: 8bdc741c-6e1e-46ab-ab2d-fafe87bbd99f
 keywords:
 - CM_PROB_NOT_CONFIGURED
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

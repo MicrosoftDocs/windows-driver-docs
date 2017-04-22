@@ -7,7 +7,7 @@ keywords:
 - stream pointers WDK AVStream , leading and trailing edge
 - leading edge stream pointers WDK AVStream
 - trailing edge stream pointers WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

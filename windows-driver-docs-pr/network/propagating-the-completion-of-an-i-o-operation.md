@@ -5,7 +5,7 @@ ms.assetid: 39e4aa45-4764-49ff-a0a7-24385adc341a
 keywords:
 - propagating TCP chimney I/O operation
 - I/O WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

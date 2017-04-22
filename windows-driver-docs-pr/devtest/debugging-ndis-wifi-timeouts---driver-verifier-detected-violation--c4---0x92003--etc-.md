@@ -2,7 +2,7 @@
 title: Debugging DRIVER_VERIFIER_DETECTED_VIOLATION (C4)
 description: Driver Verifier detects that the driver violates one of the NDIS/WiFi time-out rule.
 ms.assetid: 73D4B6DF-E667-4C71-B985-FCDC05837908
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 10116077-89d2-4d07-9807-46b6281e9851
 keywords:
 - Ethernet frame splitting WDK networking , UDP payload
 - UDP payload WDK header-data split
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

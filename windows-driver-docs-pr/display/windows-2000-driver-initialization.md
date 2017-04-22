@@ -5,7 +5,7 @@ ms.assetid: 82222357-1e5a-4aec-879a-68f19f3faa4f
 keywords:
 - DirectDraw driver initialization WDK Windows 2000 display , Windows 2000
 - Windows 2000 display driver model WDK , DirectDraw
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

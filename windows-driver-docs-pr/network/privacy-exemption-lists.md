@@ -5,7 +5,7 @@ ms.assetid: 0a9c5eea-1559-4ba9-86cd-8c7692502b40
 keywords:
 - privacy exemptions WDK Native 802.11
 - exemptions WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

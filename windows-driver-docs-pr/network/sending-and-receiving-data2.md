@@ -4,7 +4,7 @@ description: Sending and receiving data in CoNDIS
 ms.assetid: aad7ccf9-0eaa-4327-b048-268d12593a70
 keywords:
 - virtual connections WDK CoNDIS , data transfers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

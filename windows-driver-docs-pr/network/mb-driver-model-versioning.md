@@ -2,7 +2,7 @@
 title: MB Driver Model Versioning
 description: MB Driver Model Versioning
 ms.assetid: f5778b36-4f84-4cfe-965c-36af225ac0dc
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

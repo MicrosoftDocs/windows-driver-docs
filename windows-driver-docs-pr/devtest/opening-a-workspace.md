@@ -5,7 +5,7 @@ ms.assetid: 9b0c68da-030c-4b9f-8e3a-7af34c6e9c83
 keywords:
 - workspaces WDK TraceView , opening
 - opening workspaces
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

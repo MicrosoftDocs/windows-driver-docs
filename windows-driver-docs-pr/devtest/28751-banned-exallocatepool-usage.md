@@ -2,7 +2,7 @@
 title: C28751
 description: Warning C28751 Banned usage of ExAllocatePool and its variants.
 ms.assetid: A2FBEDA8-FA5D-42A5-B298-FF0A32B1662C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

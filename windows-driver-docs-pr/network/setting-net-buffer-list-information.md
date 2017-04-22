@@ -6,7 +6,7 @@ keywords:
 - NET_BUFFER_LIST
 - header-data split WDK , NET_BUFFER_LIST
 - flags WDK header-data split
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

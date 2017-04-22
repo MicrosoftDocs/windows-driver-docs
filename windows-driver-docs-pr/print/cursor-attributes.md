@@ -6,7 +6,7 @@ ms.assetid: 43646e2a-bc40-430e-ac7e-6fe4cb353309
 keywords:
 - cursor attributes WDK Unidrv
 - general printer attributes WDK Unidrv , cursor
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

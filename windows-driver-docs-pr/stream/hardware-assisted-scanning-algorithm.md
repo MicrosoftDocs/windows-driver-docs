@@ -5,7 +5,7 @@ description: Hardware-Assisted Scanning Algorithm
 ms.assetid: 9a24b985-9667-4424-84e5-b1c728b3c558
 keywords:
 - hardware-assisted scanning WDK video capture
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

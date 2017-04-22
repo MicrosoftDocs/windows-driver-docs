@@ -5,7 +5,7 @@ ms.assetid: a6301358-0ad0-45d4-a54b-3bbc47b5c8e4
 keywords:
 - non-standard packets and messages WDK TCP chimney offload , SYN segments
 - SYN segments WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

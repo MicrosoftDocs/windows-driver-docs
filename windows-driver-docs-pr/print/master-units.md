@@ -6,7 +6,7 @@ ms.assetid: 6c3abf16-1206-4b90-a7e9-c8a581191502
 keywords:
 - GPD files WDK Unidrv , master units
 - master units WDK GPD files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

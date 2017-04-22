@@ -8,7 +8,7 @@ keywords:
 - host computers WDK checked builds
 - target computers WDK checked builds
 - null modem cables WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

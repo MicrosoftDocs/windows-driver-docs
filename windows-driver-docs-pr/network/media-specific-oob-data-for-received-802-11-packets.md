@@ -5,7 +5,7 @@ ms.assetid: 0d53a5c9-8572-457f-8aa4-8c2472932722
 keywords:
 - OOB data WDK Native 802.11
 - media-specific OOB data WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

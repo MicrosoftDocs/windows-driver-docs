@@ -2,7 +2,7 @@
 title: Assembly Config Files
 description: Assembly Config Files
 ms.assetid: 53BAC457-BB6A-44a8-AD8D-3B621F41A245
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

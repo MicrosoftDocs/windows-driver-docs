@@ -2,7 +2,7 @@
 title: Replacing System-supplied sAPOs
 description: Replacing System-supplied sAPOs
 ms.assetid: 9d87b28a-a79f-4e40-b999-e8f4901e3b3d
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

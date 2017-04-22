@@ -6,7 +6,7 @@ ms.assetid: 335413d0-cf0a-4dd9-b1a4-345945c63395
 keywords:
 - downloaded font attributes WDK Unidrv
 - font attributes WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

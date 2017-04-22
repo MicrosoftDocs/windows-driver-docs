@@ -5,7 +5,7 @@ ms.assetid: 04400213-9bd4-4dbe-b302-24917450829f
 keywords:
 - network drivers WDK , security
 - security WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

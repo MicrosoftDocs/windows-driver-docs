@@ -6,7 +6,7 @@ ms.assetid: 4fc92d20-5570-4680-bc7b-f6e84524a672
 keywords:
 - storage class drivers WDK , functionality
 - class drivers WDK storage , functionality
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

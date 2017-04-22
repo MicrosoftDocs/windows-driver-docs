@@ -5,7 +5,7 @@ ms.assetid: c77dae52-ed7c-4385-b085-df3e16e53c5e
 keywords:
 - vertex shaders WDK DirectX 8.0 , programmable hardware
 - programmable vertex processing hardware WDK DirectX 8.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: Printer Driver Overview
 ms.assetid: d6bfa85a-2094-4ff8-b32b-e8d7204bb452
 keywords:
 - printer drivers WDK , disign options
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

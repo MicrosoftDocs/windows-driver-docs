@@ -2,7 +2,7 @@
 title: Clearing a Receive Filter on a Virtual Port
 description: Clearing a Receive Filter on a Virtual Port
 ms.assetid: 8431322B-2BF0-4F82-AAAE-0E0396BBC857
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

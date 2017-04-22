@@ -5,7 +5,7 @@ ms.assetid: e43f9ccb-308d-435f-b99b-bb7dcbacfcac
 keywords:
 - network services installation requirements WDK
 - service installation requirements WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Modify the sample to support another sensor
 author: windows-driver-content
 description: Modify the sample to support another sensor
 ms.assetid: E759E022-C1E6-4403-B3DC-82A269E04B93
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Video Miniport Drivers on Multiple Windows Versions (Windows 2000 M
 ms.assetid: fbaf3345-544e-4ba0-98c9-720941422bd2
 keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - deletion callback functions WDK KMDF
 - callback functions WDK KMDF
 - parent objects WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , child devices
 - child devices WDK video miniport , using I2C to communicate
 - video miniport drivers WDK Windows 2000 , I2C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

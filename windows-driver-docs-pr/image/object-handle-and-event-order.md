@@ -3,7 +3,7 @@ title: Object Handle and Event Order
 author: windows-driver-content
 description: Object Handle and Event Order
 ms.assetid: 5abbcda2-66cc-4460-99b6-e7796e65af68
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

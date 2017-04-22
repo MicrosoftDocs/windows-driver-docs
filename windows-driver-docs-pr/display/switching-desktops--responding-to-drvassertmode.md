@@ -7,7 +7,7 @@ keywords:
 - desktop management WDK Windows 2000 display
 - switching desktops WDK Windows 2000 display
 - DrvAssertMode
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

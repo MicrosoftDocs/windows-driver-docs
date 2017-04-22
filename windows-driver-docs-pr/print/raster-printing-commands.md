@@ -6,7 +6,7 @@ ms.assetid: e46d85b8-e3fa-437e-8b39-26525cea02d3
 keywords:
 - raster printing commands WDK Unidrv
 - printer commands WDK Unidrv , raster
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

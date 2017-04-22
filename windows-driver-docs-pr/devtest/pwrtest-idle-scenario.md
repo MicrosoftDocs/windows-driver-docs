@@ -2,7 +2,7 @@
 title: PwrTest Idle Scenario
 description: The PwrTest Idle Scenario monitors user and CPU idle statistics displays idle statistics gathered by kernel every 15 seconds.
 ms.assetid: 7E40DD91-D236-41B3-BC3A-DEB6DDD76139
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

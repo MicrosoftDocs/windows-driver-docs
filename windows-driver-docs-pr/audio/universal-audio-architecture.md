@@ -13,7 +13,7 @@ keywords:
 - WDM audio drivers WDK , Universal Audio Architecture
 - audio drivers WDK , Universal Audio Architecture
 - 1394 WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

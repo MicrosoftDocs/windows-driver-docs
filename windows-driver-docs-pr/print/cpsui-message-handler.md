@@ -6,7 +6,7 @@ ms.assetid: 4a6434e9-d65e-4ddd-836e-d6101532bbb8
 keywords:
 - page event callbacks WDK CPSUI
 - event callbacks WDK CPSUI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Join a Remote Debugging Session
 description: Join a Remote Debugging Session
 ms.assetid: 7be4b7b3-ecbb-435a-8256-0e4ba9919ff7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Manage Hardware Submissions
 description: Manage Hardware Submissions for the sysdev dashboard
 ms.assetid: 732c601f-6bd6-4a6a-b82c-5ed913bc7e62
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

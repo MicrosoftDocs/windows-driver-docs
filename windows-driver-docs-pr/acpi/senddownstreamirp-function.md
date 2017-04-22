@@ -3,7 +3,7 @@ title: SendDownStreamIrp Function
 author: windows-driver-content
 description: SendDownStreamIrp Function
 ms.assetid: 09a06041-5b26-4796-b9b8-d7d27321d955
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

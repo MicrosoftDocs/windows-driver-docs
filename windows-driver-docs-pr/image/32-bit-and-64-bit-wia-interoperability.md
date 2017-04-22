@@ -3,7 +3,7 @@ title: 32-Bit and 64-Bit WIA Interoperability
 author: windows-driver-content
 description: 32-Bit and 64-Bit WIA Interoperability
 ms.assetid: f7f7a42a-590e-4f81-b325-ba9f9ffa9664
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

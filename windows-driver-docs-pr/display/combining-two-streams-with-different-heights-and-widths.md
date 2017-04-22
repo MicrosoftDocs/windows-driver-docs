@@ -6,7 +6,7 @@ keywords:
 - combining streams WDK DirectX VA
 - video streams combined WDK DirectX VA
 - streams combined WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

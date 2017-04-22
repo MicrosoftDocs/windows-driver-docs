@@ -5,7 +5,7 @@ description: Printer Driver Support for Printer Directory Services
 ms.assetid: 6b0b3cda-a9e5-458d-b5e2-89667059bde4
 keywords:
 - Directory Services WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

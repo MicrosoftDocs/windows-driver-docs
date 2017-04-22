@@ -7,7 +7,7 @@ keywords:
 - preoperation callback routines WDK file system minifilter , registering
 - postoperation callback routines WDK file system minifilter , registering
 - registering callback routines
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

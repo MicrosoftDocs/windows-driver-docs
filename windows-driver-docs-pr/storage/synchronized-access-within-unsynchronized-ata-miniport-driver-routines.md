@@ -7,7 +7,7 @@ keywords:
 - ATA Port drivers WDK , synchronization
 - synchronization WDK ATA Port driver
 - unsynchronized processing WDK ATA Port driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

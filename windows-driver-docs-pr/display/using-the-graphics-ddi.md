@@ -11,7 +11,7 @@ keywords:
 - graphics drivers WDK Windows 2000 display , functions
 - functions WDK graphics
 - drawing WDK GDI , functions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

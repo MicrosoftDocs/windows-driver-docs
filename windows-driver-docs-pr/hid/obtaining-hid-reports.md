@@ -9,7 +9,7 @@ keywords:
 - IRP_MJ_READ requests WDK HID
 - IOCTL_HID_GET_Xxx requests WDK HID
 - HID reports WDK , obtaining
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

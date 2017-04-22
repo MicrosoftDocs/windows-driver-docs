@@ -9,7 +9,7 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , SRBs
 - SRBs WDK streaming minidriver
 - stream request blocks See SRB or SRBs
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

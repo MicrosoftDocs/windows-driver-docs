@@ -8,7 +8,7 @@ keywords:
 - printer interface DLL WDK , Print Capabilities support
 - Print Capabilities WDK , printer interface DLL
 - Print Tickets WDK , printer interface DLL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

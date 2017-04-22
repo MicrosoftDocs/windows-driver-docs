@@ -2,7 +2,7 @@
 title: Handling OID\_NIC\_SWITCH\_ALLOCATE\_VF Requests
 description: Handling OID\_NIC\_SWITCH\_ALLOCATE\_VF Requests
 ms.assetid: B48A19D5-A768-4614-961D-1BD00762B6D0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

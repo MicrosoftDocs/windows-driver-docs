@@ -6,7 +6,7 @@ ms.assetid: 666d6efb-93ec-43f3-87c5-ea1a3983bfd0
 keywords:
 - AVStream WDK , initializing minidrivers
 - minidrivers WDK AVStream , initializing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

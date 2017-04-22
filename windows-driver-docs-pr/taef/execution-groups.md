@@ -2,7 +2,7 @@
 title: Execution Groups
 description: Execution Groups
 ms.assetid: CC196843-A225-4193-9386-EE024B5D0B68
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

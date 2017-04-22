@@ -5,7 +5,7 @@ ms.assetid: 596ec8b5-0a8e-488c-a2d3-162cc440d45f
 keywords:
 - offload state WDK TCP chimney offload , context area
 - context area WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

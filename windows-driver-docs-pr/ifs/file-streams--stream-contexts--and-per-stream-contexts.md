@@ -12,7 +12,7 @@ keywords:
 - stream control blocks WDK file system
 - SCB WDK file system
 - stream context WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

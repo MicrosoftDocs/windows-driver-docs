@@ -5,7 +5,7 @@ ms.assetid: c97bf9e8-583c-41ca-9c50-ac2af3dd5dc0
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

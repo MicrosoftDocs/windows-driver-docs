@@ -2,7 +2,7 @@
 title: Installing a New Bus Driver
 description: Installing a New Bus Driver
 ms.assetid: 449c0c08-c995-4e23-a770-a567bd48966c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

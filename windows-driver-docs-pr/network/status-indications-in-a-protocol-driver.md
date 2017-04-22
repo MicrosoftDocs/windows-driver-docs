@@ -6,7 +6,7 @@ keywords:
 - protocol drivers WDK networking , status indications
 - NDIS protocol drivers WDK , status indications
 - status indications WDK networking , protocol drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

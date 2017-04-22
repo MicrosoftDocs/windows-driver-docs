@@ -10,7 +10,7 @@ keywords:
 - platform-specific hardware error driver (PSHED) WDK WHEA , predictive failure analysis
 - PSHED plug-in WDK WHEA
 - PSHED plug-in WDK WHEA , predictive failure analysis
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

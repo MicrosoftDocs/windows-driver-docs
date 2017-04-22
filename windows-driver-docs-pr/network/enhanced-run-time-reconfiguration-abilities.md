@@ -7,7 +7,7 @@ keywords:
 - driver stacks WDK networking , restarting
 - pausing driver stacks WDK networking
 - restarting driver stacks WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

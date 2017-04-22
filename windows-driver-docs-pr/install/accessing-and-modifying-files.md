@@ -2,7 +2,7 @@
 title: Accessing and Modifying Files
 description: Accessing and Modifying Files
 ms.assetid: DD5A527F-5F8D-4892-A2D5-C0279913B6A3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - security threat models WDK file systems , elevation-of-privilege
 - elevation-of-privilege WDK file systems
 - buffers WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

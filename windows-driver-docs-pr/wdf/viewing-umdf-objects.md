@@ -7,7 +7,7 @@ keywords:
 - debugging scenarios WDK UMDF , viewing UMDF objects
 - UMDF WDK , debugging scenarios, viewing UMDF objects
 - UMDF WDK , viewing UMDF objects
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

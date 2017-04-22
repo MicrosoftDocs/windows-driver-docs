@@ -5,7 +5,7 @@ ms.assetid: 91488b88-bbdc-40e9-9095-2ea3fb7d69ad
 keywords:
 - Power Metering and Budgeting WDK , ACPI 4.0 power metering objects
 - ACPI 4.0 Power Metering objects WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

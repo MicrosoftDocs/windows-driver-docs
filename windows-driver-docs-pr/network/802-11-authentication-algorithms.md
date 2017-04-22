@@ -5,7 +5,7 @@ ms.assetid: 564393cc-27d5-4efc-b6a7-6e979ac183f8
 keywords:
 - authentication WDK Native 802.11 , algorithms
 - algorithms WDK Native 802.11 authentication
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: NDIS Selective Suspend Idle Notifications
 description: NDIS Selective Suspend Idle Notifications
 ms.assetid: 958A2588-A847-4699-9906-95FB47CA1CDC
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

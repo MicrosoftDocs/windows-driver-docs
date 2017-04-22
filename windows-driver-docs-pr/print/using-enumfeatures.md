@@ -5,7 +5,7 @@ description: Using EnumFeatures
 ms.assetid: 4a87cedf-066a-445b-ad3e-71699c9d3e07
 keywords:
 - EnumFeatures
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

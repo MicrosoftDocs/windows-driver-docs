@@ -7,7 +7,7 @@ keywords:
 - I/O requests WDK UMDF , completing
 - request processing WDK UMDF , completing requests
 - completing I/O requests WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

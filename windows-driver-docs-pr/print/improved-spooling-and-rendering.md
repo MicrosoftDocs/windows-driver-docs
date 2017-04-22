@@ -9,7 +9,7 @@ keywords:
 - XPS spool files WDK XPSDrv
 - spool files WDK print
 - rendering plug-ins WDK print , XPSDrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

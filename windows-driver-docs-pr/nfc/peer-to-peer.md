@@ -9,7 +9,7 @@ keywords:
 - near field proximity
 - NFP
 description: Information about NFC forum defined peer-to-peer standards and protocols that ensure devices are able to interact using NFC.
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Setting the Number of Line Pattern Repetitions
 ms.assetid: 090b823a-59d0-40e1-8feb-0b03b7f08fee
 keywords:
 - line pattern repetitions WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: c14b4e8a-cfa2-4771-83b2-aa20fda79d39
 keywords:
 - intermediate drivers WDK networking , receive operations
 - NDIS intermediate drivers WDK , receive operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

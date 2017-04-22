@@ -3,7 +3,7 @@ title: Specifying a sensor icon
 author: windows-driver-content
 description: Specifying a sensor icon
 ms.assetid: fe4a204f-befb-45d4-ad95-03b9e788e375
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

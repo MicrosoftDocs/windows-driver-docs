@@ -3,7 +3,7 @@ title: Storage driver samples
 author: windows-driver-content
 description: The storage driver samples in this directory provide a starting point for writing a custom driver for your device.
 ms.assetid: 4FEB911D-78D5-403E-91AB-8A064E31F4FA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - receive queuing WDK RSS
 - single receive queue WDK RSS
 - multiple receive queues WDK RSS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

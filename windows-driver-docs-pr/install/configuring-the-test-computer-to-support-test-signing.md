@@ -2,7 +2,7 @@
 title: Configuring the Test Computer to Support Test-Signing
 description: Configuring the Test Computer to Support Test-Signing
 ms.assetid: 5aa2bb34-73aa-4640-bbfe-4df180f3b61f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

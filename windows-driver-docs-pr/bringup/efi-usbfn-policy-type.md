@@ -3,7 +3,7 @@ title: EFI\_USBFN\_POLICY\_TYPE
 author: windows-driver-content
 description: EFI\_USBFN\_POLICY\_TYPE
 ms.assetid: 51f615d4-a226-45d5-b5e9-fea4859640a9
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

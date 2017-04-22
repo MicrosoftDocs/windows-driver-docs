@@ -8,7 +8,7 @@ keywords:
 - hardware-first installations WDK device installations
 - distribution medium WDK device installations , hardware-first installations
 - device installations WDK , types
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

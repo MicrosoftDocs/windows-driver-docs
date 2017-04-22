@@ -11,7 +11,7 @@ keywords:
 - GenerateInkLevels
 - INKLEVELS
 - translating 8-bit-per-pixel halftone indexes WDK GDI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

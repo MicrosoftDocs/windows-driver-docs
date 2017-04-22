@@ -3,7 +3,7 @@ title: Requests That KMDF Does Not Support
 author: windows-driver-content
 description: Requests That KMDF Does Not Support
 ms.assetid: 1C23BD32-FD55-4D35-B23D-0B320E3DEDF3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

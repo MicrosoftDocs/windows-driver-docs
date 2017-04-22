@@ -3,7 +3,7 @@ title: I/O Transfer Sequences
 author: windows-driver-content
 description: The SPB framework extension (SpbCx) supports I/O transfer sequences.
 ms.assetid: 7415DB28-5E93-4F47-B169-7C652969D4C7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

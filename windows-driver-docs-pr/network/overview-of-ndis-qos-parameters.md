@@ -2,7 +2,7 @@
 title: Overview of NDIS QoS Parameters
 description: Overview of NDIS QoS Parameters
 ms.assetid: E9321805-2930-410A-81BC-F7978517E89E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

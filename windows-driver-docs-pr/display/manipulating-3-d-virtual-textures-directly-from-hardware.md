@@ -8,7 +8,7 @@ keywords:
 - 3-D textures WDK display
 - manipulating 3-D textures directly WDK display
 - hardware 3-D texture manipulation WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

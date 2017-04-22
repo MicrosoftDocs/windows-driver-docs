@@ -3,7 +3,7 @@ title: I2C transport
 author: windows-driver-content
 description: I2C transport
 ms.assetid: A483FAA6-9FA6-4C91-B8D4-021DDBB9B869
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 2baf91e8-fafb-40e2-a24c-cbf04fe45274
 keywords:
 - threading WDK display , zero level
 - synchronization WDK display , zero level
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

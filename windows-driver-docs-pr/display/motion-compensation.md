@@ -10,7 +10,7 @@ keywords:
 - video decoding WDK DirectDraw
 - decoding WDK DirectDraw
 - digital video decoding WDK DirectDraw
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

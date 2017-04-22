@@ -2,7 +2,7 @@
 title: Getting Started with Software Tracing
 description: Getting Started with Software Tracing
 ms.assetid: 45f27e86-23ff-4604-8501-3a3091110fc1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 9220b01e-725f-4a03-87f1-402c0686cccd
 keywords:
 - Storport drivers WDK , I/O
 - I/O WDK Storport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

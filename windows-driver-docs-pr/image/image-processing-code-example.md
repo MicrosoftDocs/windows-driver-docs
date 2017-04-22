@@ -3,7 +3,7 @@ title: Image Processing Code Example
 author: windows-driver-content
 description: Image Processing Code Example
 ms.assetid: fe5ac3db-46e0-4162-9add-c3b0ae736926
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

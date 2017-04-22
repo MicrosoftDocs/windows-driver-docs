@@ -2,7 +2,7 @@
 title: Overview of the Hyper-V Extensible Switch Data Path
 description: Overview of the Hyper-V Extensible Switch Data Path
 ms.assetid: CF3C30BB-95B3-40B8-9F7F-F204D93B1670
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

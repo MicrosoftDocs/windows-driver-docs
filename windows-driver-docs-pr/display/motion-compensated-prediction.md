@@ -10,7 +10,7 @@ keywords:
 - VA WDK DirectX , video decoding
 - decoding video WDK DirectX VA , motion compensation prediction
 - video decoding WDK DirectX VA , motion compensation prediction
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

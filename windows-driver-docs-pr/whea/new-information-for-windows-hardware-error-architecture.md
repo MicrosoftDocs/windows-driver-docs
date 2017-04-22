@@ -9,7 +9,7 @@ keywords:
 - hardware errors WDK WHEA , new information
 - errors WDK WHEA , new information about WHEA
 - source information WDK WHEA , new
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

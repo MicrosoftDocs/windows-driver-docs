@@ -5,7 +5,7 @@ ms.assetid: 2b839e7f-770f-4bf4-96e1-98524768f4f0
 keywords:
 - Static Driver Verifier Report WDK , Defect Viewer
 - Defect Viewer WDK Static Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

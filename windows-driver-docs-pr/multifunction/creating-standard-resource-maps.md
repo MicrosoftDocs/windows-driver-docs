@@ -5,7 +5,7 @@ description: Creating Standard Resource Maps
 ms.assetid: 97d95481-5290-41d3-a6e6-7cc142d4c2e8
 keywords:
 - standard resource maps WDK multifunction devices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

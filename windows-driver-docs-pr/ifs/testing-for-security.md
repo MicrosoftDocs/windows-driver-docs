@@ -6,7 +6,7 @@ ms.assetid: d9d98f18-a7fc-479c-8627-0aea53ff0bae
 keywords:
 - security WDK file systems , testing
 - testing security WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

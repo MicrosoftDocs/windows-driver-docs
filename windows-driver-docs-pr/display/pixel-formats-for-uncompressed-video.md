@@ -11,7 +11,7 @@ keywords:
 - decoding video WDK DirectX VA , compressed pictures
 - video decoding WDK DirectX VA , uncompressed video pixel formats
 - decoding video WDK DirectX VA , uncompressed video pixel formats
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

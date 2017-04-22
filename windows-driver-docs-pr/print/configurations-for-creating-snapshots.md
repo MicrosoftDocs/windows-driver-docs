@@ -8,7 +8,7 @@ keywords:
 - snapshots WDK GDL , configurations for snapshots
 - parser WDK GDL , configurations for snapshots
 - configurations WDK GDL , creating snapshots
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

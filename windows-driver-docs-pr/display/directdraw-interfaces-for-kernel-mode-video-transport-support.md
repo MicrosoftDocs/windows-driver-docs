@@ -9,7 +9,7 @@ keywords:
 - DirectDraw VPEs WDK Windows 2000 display , kernel-mode video transport
 - video port extensions WDK DirectDraw , kernel-mode video transport
 - VPEs WDK DirectDraw , kernel-mode video transport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

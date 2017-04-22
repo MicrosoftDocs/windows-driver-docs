@@ -5,7 +5,7 @@ ms.assetid: c13db4a1-e345-4368-9bcd-afbd2fd8db7a
 keywords:
 - processors WDK RSS
 - CPU configuration WDK RSS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

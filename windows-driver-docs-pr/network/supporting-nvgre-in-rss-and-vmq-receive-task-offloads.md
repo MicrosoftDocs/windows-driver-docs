@@ -2,7 +2,7 @@
 title: Supporting NVGRE in RSS and VMQ Receive Task Offloads
 description: This section describes supporting NVGRE in RSS and VMQ receive task offloads
 ms.assetid: 42660D55-31C0-4101-9EA1-159EBB76B019
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

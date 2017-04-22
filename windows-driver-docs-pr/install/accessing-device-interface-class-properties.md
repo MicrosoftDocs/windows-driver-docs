@@ -2,7 +2,7 @@
 title: Accessing Device Interface Class Properties
 description: Accessing Device Interface Class Properties
 ms.assetid: c9efe273-dc66-4585-8ab5-3842df1c95df
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

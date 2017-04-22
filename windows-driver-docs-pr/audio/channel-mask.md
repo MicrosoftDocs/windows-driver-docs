@@ -24,7 +24,7 @@ keywords:
 - PCM formats WDK audio
 - positions WDK audio
 - data formats WDK audio , channel masks
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

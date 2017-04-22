@@ -2,7 +2,7 @@
 title: The TESTSIGNING Boot Configuration Option
 description: The TESTSIGNING Boot Configuration Option
 ms.assetid: 4898595e-20c9-4607-aad7-792f7d1074e4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,8 +1,8 @@
 ---
-Description: The Windows.Devices.Usb namespace provides a way for a Windows store app to communicate with an external USB device that uses WinUSB (Winusb.sys) as the device driver.
+Description: The Windows.Devices.Usb namespace provides APIs to communicate with an external USB device.
 title: Windows Store app for a USB device
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

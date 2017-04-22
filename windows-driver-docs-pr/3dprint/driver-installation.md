@@ -3,7 +3,7 @@ title: Driver installation
 author: windows-driver-content
 description: The print driver provided in this SDK is an experimental 3D printer device driver still under development.
 ms.assetid: 8A13CD6F-DF82-4353-ADE9-06989F83BC87
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

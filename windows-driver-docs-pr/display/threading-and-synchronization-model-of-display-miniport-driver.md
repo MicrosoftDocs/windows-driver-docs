@@ -7,7 +7,7 @@ keywords:
 - synchronization WDK display , miniport drivers
 - miniport drivers WDK display , synchronization
 - miniport drivers WDK display , threading
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

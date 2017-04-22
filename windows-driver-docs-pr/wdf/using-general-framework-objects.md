@@ -6,7 +6,7 @@ ms.assetid: d3356d3f-8110-44dd-b4a2-36265f5a1714
 keywords:
 - framework objects WDK KMDF , general
 - general framework objects WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

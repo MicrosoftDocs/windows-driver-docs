@@ -2,7 +2,7 @@
 title: MiniportAddDevice Guidelines for PF Miniport Drivers
 description: MiniportAddDevice Guidelines for PF Miniport Drivers
 ms.assetid: D67FDBA0-C020-4557-9199-B9FF6F91DE6B
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 6fd1f7af-e8ba-4679-bd8c-f757b57821b0
 keywords:
 - SCSI miniport drivers WDK storage , required routines
 - SCSI miniport drivers WDK storage , optional routines
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

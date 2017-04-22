@@ -4,7 +4,7 @@ description: Handling a NetDMA Interrupt
 ms.assetid: 239eb7e3-9935-4281-9215-5b0b987f7d33
 keywords:
 - interrupts WDK NetDMA , generating
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

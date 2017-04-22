@@ -9,7 +9,7 @@ keywords:
 - device objects WDK Windows Filtering Platform
 - WDM-based callout drivers WDK Windows Filtering Platform
 - WDF-based callout drivers WDK Windows Filtering Platform
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

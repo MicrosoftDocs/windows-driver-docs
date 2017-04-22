@@ -7,7 +7,7 @@ keywords:
 - locating drivers for device installation WDK device installations , AllSignersEqual group policy
 - searching for drivers during device installation WDK device installations , AllSignersEqual group policy
 - AllSignersEq
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

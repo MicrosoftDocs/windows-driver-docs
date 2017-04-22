@@ -5,7 +5,7 @@ ms.assetid: 37baad27-539b-46ab-b300-175bc0c2b992
 keywords:
 - property item requests WDK DirectMusic
 - miniport drivers WDK audio , property item requests
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Storport Event Log Extensions
 author: windows-driver-content
 description: Storport Event Log Extensions
 ms.assetid: 03b0bdef-cefa-4ad8-b9bf-a5f6b5f64cc6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

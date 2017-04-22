@@ -5,7 +5,7 @@ ms.assetid: 5ca79c91-5d19-4393-aa5e-be3d47e62967
 keywords:
 - options files WDK Static Driver Verifier
 - fields WDK Static Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

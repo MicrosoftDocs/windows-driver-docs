@@ -7,7 +7,7 @@ keywords:
 - states WDK Direct3D
 - internal states WDK Direct3D
 - public states WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

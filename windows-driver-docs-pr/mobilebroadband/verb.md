@@ -2,7 +2,7 @@
 title: Verb
 description: Verb
 ms.assetid: 38edbb37-5fd4-4301-adc0-4a66a7e8a564
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

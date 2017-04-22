@@ -6,7 +6,7 @@ ms.assetid: 797763a6-cd13-4d76-8ddb-75d812a8dde3
 keywords:
 - streaming media samples WDK
 - samples WDK streaming media
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

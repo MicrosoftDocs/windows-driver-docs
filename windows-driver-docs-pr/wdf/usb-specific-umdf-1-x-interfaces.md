@@ -8,7 +8,7 @@ keywords:
 - User-Mode Driver Framework WDK , UMDF-USB object model
 - user-mode drivers WDK UMDF , UMDF-USB object model
 - UMDF-USB object model WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

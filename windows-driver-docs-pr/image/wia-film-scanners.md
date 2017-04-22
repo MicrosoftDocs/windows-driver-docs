@@ -3,7 +3,7 @@ title: WIA Film Scanners
 author: windows-driver-content
 description: WIA Film Scanners
 ms.assetid: 2f754ae6-42e1-4398-9220-cddf090810f8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

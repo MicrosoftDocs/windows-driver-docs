@@ -2,7 +2,7 @@
 title: Installing a Catalog File by using SignTool
 description: Installing a Catalog File by using SignTool
 ms.assetid: b3d151af-d49b-468f-a34a-04e5ab875a07
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

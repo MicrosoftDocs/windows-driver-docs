@@ -6,7 +6,7 @@ ms.assetid: 265b2d35-5e91-4c47-a145-1e9f8c497c2c
 keywords:
 - value macros WDK GPD files
 - referencing macros
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

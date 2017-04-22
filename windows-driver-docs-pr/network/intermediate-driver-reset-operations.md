@@ -6,7 +6,7 @@ keywords:
 - intermediate drivers WDK networking , reset operations
 - NDIS intermediate drivers WDK , reset operations
 - resetting intermediate drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

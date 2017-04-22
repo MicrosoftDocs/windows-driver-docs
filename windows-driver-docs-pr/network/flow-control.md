@@ -2,7 +2,7 @@
 title: Flow Control
 description: Flow Control
 ms.assetid: e7a0846e-0999-4e40-83e0-f4877871f1e1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

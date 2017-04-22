@@ -8,7 +8,7 @@ keywords:
 - renaming boot entries WDK
 - Boot.ini files WDK , friendly names
 - boot options WDK , friendly names
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

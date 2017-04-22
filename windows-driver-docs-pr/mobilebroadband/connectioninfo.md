@@ -2,7 +2,7 @@
 title: ConnectionInfo
 description: ConnectionInfo
 ms.assetid: bbdba286-4d28-46b6-bafa-83cbddd883ae
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - semantic model checks WDK file systems , neither I/O operations
 - I/O WDK file systems
 - neither I/O operations WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

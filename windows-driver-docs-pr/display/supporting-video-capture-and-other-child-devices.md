@@ -12,7 +12,7 @@ keywords:
 - capture buffers WDK display
 - display driver model WDK Windows Vista , child video capture drivers
 - Windows Vista display driver model WDK , child video capture drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

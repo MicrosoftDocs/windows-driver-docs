@@ -2,7 +2,7 @@
 title: Standardized INF Keywords for VMQ
 description: Standardized INF Keywords for VMQ
 ms.assetid: 5DA92019-D2E0-41D9-9C31-94E464B824BA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

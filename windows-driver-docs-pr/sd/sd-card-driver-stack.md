@@ -13,7 +13,7 @@ keywords:
 - host controllers WDK SD bus
 - hardware WDK SD bus
 - software WDK SD bus
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

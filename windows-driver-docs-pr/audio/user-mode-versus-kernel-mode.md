@@ -12,7 +12,7 @@ keywords:
 - hardware synthesizers WDK audio
 - time stamps WDK audio
 - DirectMusic kernel-mode WDK audio , vs. user mode
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

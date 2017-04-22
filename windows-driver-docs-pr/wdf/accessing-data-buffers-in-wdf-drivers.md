@@ -13,7 +13,7 @@ keywords:
 - direct I/O WDK KMDF
 - neither buffered nor direct I/O WDK KMDF
 - I/O requests WDK KMDF , data buffers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

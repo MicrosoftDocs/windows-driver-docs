@@ -2,7 +2,7 @@
 title: Hardware dashboard FAQ
 description: This article provides answers to frequently asked questions about the Windows Hardware Dev Center dashboard.
 ms.assetid: AA3D1147-7015-4D21-84A6-D127F57DDC97
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

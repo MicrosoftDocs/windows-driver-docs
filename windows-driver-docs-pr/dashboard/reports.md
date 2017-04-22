@@ -2,7 +2,7 @@
 title: Reports
 description: Reports
 ms.assetid: 3498fb9d-399b-47da-96e6-9af1247a355e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

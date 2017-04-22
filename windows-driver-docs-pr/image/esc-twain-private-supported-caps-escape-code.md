@@ -3,7 +3,7 @@ title: ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS Escape Code
 author: windows-driver-content
 description: ESC\_TWAIN\_PRIVATE\_SUPPORTED\_CAPS Escape Code
 ms.assetid: 99b9f180-018b-47c4-ab8d-dc037e3f637a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

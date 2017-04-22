@@ -5,7 +5,7 @@ ms.assetid: 49224987-ed46-4631-a47b-70cd855cfa40
 keywords:
 - SAN sockets WDK , closing
 - closing SAN sockets
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

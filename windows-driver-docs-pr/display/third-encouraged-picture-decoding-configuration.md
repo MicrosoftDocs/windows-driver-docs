@@ -5,7 +5,7 @@ ms.assetid: 9f905030-9fc9-4a5f-8cf5-a36c7861be52
 keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

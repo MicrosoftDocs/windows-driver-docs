@@ -6,7 +6,7 @@ keywords:
 - drawing extended surface capabilities WDK DirectDraw , description structure
 - DirectDraw extended surface capabilities WDK Windows 2000 display , description structure
 - extended surface capabilities WDK DirectDraw , description structure
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

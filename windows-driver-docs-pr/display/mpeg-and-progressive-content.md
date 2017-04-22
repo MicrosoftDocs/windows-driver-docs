@@ -15,7 +15,7 @@ keywords:
 - VPEs WDK DirectDraw , progressive content identification
 - 3 2 pulldown WDK video port extensions
 - identifying progressive content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

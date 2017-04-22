@@ -7,7 +7,7 @@ keywords:
 - UMDF WDK , application request not completing
 - debugging scenarios WDK UMDF , application request not completing
 - UMDF WDK , debugging scenarios, application request not completing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

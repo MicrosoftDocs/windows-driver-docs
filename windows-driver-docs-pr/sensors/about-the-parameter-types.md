@@ -3,7 +3,7 @@ title: About the Parameter Types
 author: windows-driver-content
 description: About the Parameter Types
 ms.assetid: 392ea7b9-df6f-4d47-9367-a167c0656dd4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

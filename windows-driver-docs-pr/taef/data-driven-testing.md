@@ -2,7 +2,7 @@
 title: Data Driven Testing
 description: Data Driven Testing
 ms.assetid: 409CC5FD-1632-4120-95C6-60574C9BAD32
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

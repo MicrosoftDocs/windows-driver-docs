@@ -2,7 +2,7 @@
 title: Packet Data Service Handoffs
 description: Packet Data Service Handoffs
 ms.assetid: 33cb68ac-42db-4bb0-8855-a8575e6e6331
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

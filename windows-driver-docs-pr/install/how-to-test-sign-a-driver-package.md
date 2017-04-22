@@ -2,7 +2,7 @@
 title: How to Test-Sign a Driver Package
 description: How to Test-Sign a Driver Package
 ms.assetid: 992f0974-0b0e-4c96-ad16-c5894067896c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

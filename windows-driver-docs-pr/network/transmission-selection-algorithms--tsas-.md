@@ -2,7 +2,7 @@
 title: Transmission Selection Algorithms (TSAs)
 description: Transmission Selection Algorithms (TSAs)
 ms.assetid: D977C1AA-088A-4E3E-A856-A9AA22DE4BBD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

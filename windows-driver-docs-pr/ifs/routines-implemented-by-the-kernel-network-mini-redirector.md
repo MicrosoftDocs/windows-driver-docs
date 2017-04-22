@@ -5,7 +5,7 @@ description: Routines Implemented by the Kernel Network Mini-Redirector
 ms.assetid: bd1a8989-100d-4b7b-9a61-521af6433b00
 keywords:
 - mini-redirectors WDK , routines implemented
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Subscriber and Device Information API
 description: Subscriber and Device Information API
 ms.assetid: 45d6c053-b64b-4768-8e79-a090dcdf346e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

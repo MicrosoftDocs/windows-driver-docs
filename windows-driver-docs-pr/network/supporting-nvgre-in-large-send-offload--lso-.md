@@ -2,7 +2,7 @@
 title: Supporting NVGRE in Large Send Offload (LSO)
 description: This section describes supporting NVGRE in Large Send Offload (LSO)
 ms.assetid: 1EB1B8C2-85C1-4256-BE96-C8B9F1D222B6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

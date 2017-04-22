@@ -9,7 +9,7 @@ keywords: Examples of sequences of IOCTLs in the Smart Card resource manager, in
 - near field proximity
 - NFP
 description:
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

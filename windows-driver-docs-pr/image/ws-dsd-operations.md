@@ -3,7 +3,7 @@ title: WS-DSD Operations
 author: windows-driver-content
 description: WS-DSD Operations
 ms.assetid: aaf8d20c-99e3-4046-89b0-af5251b26577
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Prepare your sensor test board
 author: windows-driver-content
 description: This topic shows you how to prepare your sensor test board for connection to the Sharks Cove board.
 ms.assetid: 121A6B05-9D5D-447C-B7C6-B2B86C24114B
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: HKLM\\SYSTEM\\CurrentControlSet\\Control Registry Tree
 description: HKLM\\SYSTEM\\CurrentControlSet\\Control Registry Tree
 ms.assetid: 58eacd32-425d-4224-8d37-21e2caf124cf
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - allocating network interface index
 - index operations WDK network interface
 - locally unique identifier WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

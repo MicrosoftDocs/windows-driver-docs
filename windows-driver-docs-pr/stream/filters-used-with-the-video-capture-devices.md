@@ -6,7 +6,7 @@ ms.assetid: 797f855d-5c6f-45bc-8b4a-f03543fa196d
 keywords:
 - filter graph configurations WDK video capture , DirectShow
 - DirectShow WDK video capture
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

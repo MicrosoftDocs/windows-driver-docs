@@ -12,7 +12,7 @@ keywords:
 - protection levels WDK display , HDCP
 - protection levels WDK display , DisplayPort Content Protection
 - protection levels WDK display , DPCP
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

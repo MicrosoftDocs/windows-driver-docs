@@ -9,7 +9,7 @@ keywords:
 - local I/O targets WDK UMDF
 - remote I/O targets WDK UMDF
 - general I/O targets WDK UMDF , about general I/O targets
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

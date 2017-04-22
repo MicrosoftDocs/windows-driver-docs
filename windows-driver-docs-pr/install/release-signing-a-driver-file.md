@@ -5,7 +5,7 @@ ms.assetid: 3da0377d-57cf-4bd4-b3ce-6ba4ebbc3ceb
 keywords:
 - public release driver signing WDK , driver files
 - driver file release signing WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

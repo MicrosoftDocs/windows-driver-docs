@@ -5,7 +5,7 @@ ms.assetid: 6c43ac27-afcf-4324-9e20-181eeb3850be
 keywords:
 - operation modes WDK Native 802.11
 - Network Monitor WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

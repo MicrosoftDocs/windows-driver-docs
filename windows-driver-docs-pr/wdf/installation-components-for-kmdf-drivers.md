@@ -7,7 +7,7 @@ keywords:
 - framework-based drivers WDK KMDF , installing
 - INF files WDK KMDF , about installing KMDF drivers
 - installation components for drivers WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

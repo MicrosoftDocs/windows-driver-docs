@@ -6,7 +6,7 @@ keywords:
 - data I/O WDK TCP chimney offload , forwarding data to target
 - I/O WDK TCP chimney offload , forwarding data to target
 - forward operations to target WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

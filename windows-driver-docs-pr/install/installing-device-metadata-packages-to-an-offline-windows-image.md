@@ -2,7 +2,7 @@
 title: Installing Device Metadata Packages to an Offline Windows Image
 description: Installing Device Metadata Packages to an Offline Windows Image
 ms.assetid: 53480324-951f-4c51-9b5b-051ce1a3b709
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Remote NDIS Communication
 ms.assetid: c9fd6e3b-bdcc-48f7-8b5a-d571d20917df
 keywords:
 - Remote NDIS WDK networking , communication
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

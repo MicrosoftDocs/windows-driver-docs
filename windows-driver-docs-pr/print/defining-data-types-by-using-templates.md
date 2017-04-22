@@ -8,7 +8,7 @@ keywords:
 - data types WDK GDL , defining data types by using templates
 - defining data types WDK GDL
 - data type template WDK GDL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

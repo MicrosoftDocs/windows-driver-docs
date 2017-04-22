@@ -3,7 +3,7 @@ title: Windows sensor driver features
 author: windows-driver-content
 description: This section provides information about the features that have been developed for sensor drivers for Windows 10 and later operating systems.
 ms.assetid: 6272DC75-7412-4D74-B009-D1DDF343B44B
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

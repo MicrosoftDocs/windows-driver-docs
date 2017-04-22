@@ -2,7 +2,7 @@
 title: Accessing Device Interface Properties
 description: Accessing Device Interface Properties
 ms.assetid: 8a46816b-56c5-49e9-8250-9ede037ae2b5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

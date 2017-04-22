@@ -2,7 +2,7 @@
 title: Wi-Fi Direct Protocol Implementation
 description: Wi-Fi Direct Action FramesWindows uses OIDs to request the miniport driver to send certain Wi-Fi Direct related action frames.
 ms.assetid: F893DFD7-E333-494C-9066-82B51D412104
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: PCM Stream Data Format
 ms.assetid: 86599e55-e771-4d6e-ad59-6dc905c53cd8
 keywords:
 - PCM stream data formats WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

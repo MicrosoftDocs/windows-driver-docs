@@ -6,7 +6,7 @@ ms.assetid: 9a501ca1-58c9-4458-b202-9581f8ce5e5f
 keywords:
 - request processing WDK KMDF , priority boosts
 - priority boosts WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

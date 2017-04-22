@@ -5,7 +5,7 @@ ms.assetid: 4c2e88ba-c07e-4079-a401-20040f558971
 keywords:
 - trace controllers WDK
 - controllers WDK software tracing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

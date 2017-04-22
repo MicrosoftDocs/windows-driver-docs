@@ -2,7 +2,7 @@
 title: Custom Switch Feature Status
 description: Custom Switch Feature Status
 ms.assetid: 2362EE05-9CC9-451D-80D1-C18CC9274BAB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

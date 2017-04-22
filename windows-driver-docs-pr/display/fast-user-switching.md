@@ -10,7 +10,7 @@ keywords:
 - multiple virtual display drivers WDK Windows 2000 display
 - virtual display drivers WDK Windows 2000 display
 - display drivers WDK Windows 2000 , Fast User Switching
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

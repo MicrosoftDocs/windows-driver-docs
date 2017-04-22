@@ -3,7 +3,7 @@ title: Video driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom video driver for your device.
 ms.assetid: CF8789E0-790E-4110-A40B-ED9F43CD4DA2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

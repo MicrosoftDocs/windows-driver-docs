@@ -4,7 +4,7 @@ description: Overview of the Driver Coverage Toolkit
 ms.assetid: eead0c9a-fc26-4777-b19a-e97b898e28a2
 keywords:
 - Driver Coverage Toolkit WDK , about the Driver Coverage Toolkit
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - storage IDE controller minidrivers WDK
 - storage miniport drivers WDK , IDE controller minidrivers
 - miniport drivers WDK storage , IDE controller minidrivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

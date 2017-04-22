@@ -4,7 +4,7 @@ description: Simplified Driver Model
 ms.assetid: e121b26f-26dc-480b-b25c-b4c4953f0968
 keywords:
 - NDIS WDK , driver development
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

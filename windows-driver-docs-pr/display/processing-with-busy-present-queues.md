@@ -5,7 +5,7 @@ ms.assetid: 5fce137b-001c-49f6-85ad-94c9eead9aa0
 keywords:
 - busy present queues WDK DirectX 9.0
 - present queues WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

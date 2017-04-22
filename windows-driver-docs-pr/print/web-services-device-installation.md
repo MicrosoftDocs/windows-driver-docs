@@ -5,7 +5,7 @@ description: Installing printers that support Web Services for Devices
 ms.assetid: fb5f043b-bae5-4cb6-95c0-e4e6b9e9d187
 keywords:
 - Web Services Device Monitor WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: WIA Security and Security Descriptors
 author: windows-driver-content
 description: WIA Security and Security Descriptors
 ms.assetid: 2919f3fc-1eb5-4801-a589-ae3000320763
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

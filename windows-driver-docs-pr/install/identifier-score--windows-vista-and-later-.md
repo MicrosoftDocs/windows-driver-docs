@@ -7,7 +7,7 @@ keywords:
 - device identification strings WDK , identifier score driver ranking
 - identifier-match-type score WDK device installations
 - identifier-list-position score WDK device installations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

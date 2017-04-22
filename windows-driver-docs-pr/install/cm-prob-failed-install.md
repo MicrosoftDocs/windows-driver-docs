@@ -4,7 +4,7 @@ description: CM_PROB_FAILED_INSTALL
 ms.assetid: d65f1f14-e455-4902-8168-38d8ae51f81f
 keywords:
 - CM_PROB_FAILED_INSTALL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

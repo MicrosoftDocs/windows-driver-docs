@@ -5,7 +5,7 @@ ms.assetid: bb5d1aa6-edb3-4859-ab65-9622065608e2
 keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - audio drivers WDK , platform differences
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

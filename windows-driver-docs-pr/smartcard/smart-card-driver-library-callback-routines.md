@@ -8,7 +8,7 @@ keywords:
 - callback routines WDK smart card
 - ReaderFunction
 - vendor-supplied drivers WDK smart card , IOCTL request management
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Adding New Digital Formats to Control Panel
 description: Adding New Digital Formats to Control Panel
 ms.assetid: ce36738c-6471-4b68-82ad-80b8509c052b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

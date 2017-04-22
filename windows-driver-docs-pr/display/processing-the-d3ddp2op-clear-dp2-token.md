@@ -6,7 +6,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , pure devices, D3DDP2OP_CLEAR DP2 token processing
 - pure devices WDK DirectX 8.0 , D3DDP2OP_CLEAR DP2 token processing
 - D3DDP2OP_CLEAR WDK DirectX 8.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

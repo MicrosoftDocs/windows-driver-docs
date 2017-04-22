@@ -2,7 +2,7 @@
 title: Multiple DataSources
 description: Multiple DataSources
 ms.assetid: FD0B252F-1D70-4840-986F-94FF80D42246
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

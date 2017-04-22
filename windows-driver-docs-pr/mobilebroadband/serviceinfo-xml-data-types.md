@@ -2,7 +2,7 @@
 title: ServiceInfo XML Data Types
 description: ServiceInfo XML Data Types
 ms.assetid: 273ae051-047a-4e77-8566-7fa999a2695d
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Select locales and package type in the Mobile Broadband Metadata Au
 ms.assetid: B2C9AEE8-6278-4870-A977-15FE1B59C9FD
 keywords:
 - Select locales and package type in the Mobile Broadband Metadata Authoring Wizard
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Locale
 description: Locale
 ms.assetid: 1cf8d075-a1b3-4554-83d5-71fd5059c1c4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

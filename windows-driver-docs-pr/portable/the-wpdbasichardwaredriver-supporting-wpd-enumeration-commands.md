@@ -1,14 +1,14 @@
 ---
-Description: Supporting the Enumeration Commands
-title: Supporting the Enumeration Commands
-ms.author: windows-driver-content
+Description: Support for enumeration commands (WpdBasicHardwareDriverSample)
+title: Support for enumeration commands (WpdBasicHardwareDriverSample)
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Supporting the Enumeration Commands
+# Support for enumeration commands (WpdBasicHardwareDriverSample)
 
 
 The sample driver supports three enumeration commands. These commands are processed initially by the **WpdObjectEnumerator::DispatchMessage** method that, in turn, invokes a corresponding command handler. The **DispatchMessage** method and the individual handlers are all found in the *WpdObjectEnum.cpp* file.

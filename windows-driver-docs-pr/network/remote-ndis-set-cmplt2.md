@@ -2,7 +2,7 @@
 title: REMOTE\_NDIS\_SET\_CMPLT
 description: REMOTE\_NDIS\_SET\_CMPLT
 ms.assetid: 6ad576d0-07e7-433c-a193-944e03887754
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

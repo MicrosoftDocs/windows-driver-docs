@@ -4,7 +4,7 @@ description: How to Collect IRP Coverage Data
 ms.assetid: f65422fe-f524-41c1-a532-a2c615d65f72
 keywords:
 - Driver Coverage Toolkit WDK , collecting data
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

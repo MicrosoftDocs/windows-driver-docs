@@ -5,7 +5,7 @@ description: The TCP/IP Const construct defines the data type and value that mus
 ms.assetid: a0ede11d-ada4-4dc4-87a4-68c96635c0fd
 keywords:
 - Const construct
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

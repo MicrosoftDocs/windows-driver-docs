@@ -2,7 +2,7 @@
 title: Wi-Fi Auto Power Save Mode
 description: This section describes Native 802.11 Wi-Fi Power Save Mode detection
 ms.assetid: F8292C7E-4AEE-44E8-88BA-BF0D52654192
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

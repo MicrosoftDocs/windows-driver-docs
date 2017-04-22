@@ -20,7 +20,7 @@ keywords:
 - Remote NDIS WDK networking , resetting communication channels
 - communication channels WDK networking
 - Remote NDIS WDK networking , message encapsulation
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

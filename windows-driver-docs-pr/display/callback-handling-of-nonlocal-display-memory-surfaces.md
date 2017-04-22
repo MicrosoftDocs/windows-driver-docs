@@ -10,7 +10,7 @@ keywords:
 - DirectDraw AGP support WDK Windows 2000 display , callbacks
 - memory WDK DirectDraw AGP , callbacks
 - callbacks WDK DirectDraw nonlocal memory
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: IEEE 1394 Sample
 author: windows-driver-content
 description: IEEE 1394 Sample
 ms.assetid: CD2370F5-424C-405E-8A41-42C168023608
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

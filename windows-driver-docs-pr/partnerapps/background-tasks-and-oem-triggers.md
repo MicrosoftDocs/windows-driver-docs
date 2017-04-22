@@ -2,7 +2,7 @@
 title: Background tasks and custom triggers
 description: Background tasks and custom triggers
 ms.assetid: 672d3501-da84-495b-b70e-f07de32aff53
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

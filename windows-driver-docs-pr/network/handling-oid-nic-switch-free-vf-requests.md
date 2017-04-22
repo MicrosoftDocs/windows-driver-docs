@@ -2,7 +2,7 @@
 title: Handling OID\_NIC\_SWITCH\_FREE\_VF Requests
 description: Handling OID\_NIC\_SWITCH\_FREE\_VF Requests
 ms.assetid: 56134421-6D3C-4A40-B7EE-FDB729D46DEB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

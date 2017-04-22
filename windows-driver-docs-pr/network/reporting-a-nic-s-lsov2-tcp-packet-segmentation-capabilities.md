@@ -7,7 +7,7 @@ keywords:
 - large TCP packet segmentation WDK networking
 - segmentation of large TCP packets WDK networking
 - task offload WDK TCP/IP transport , LSOV1 and LSOV2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

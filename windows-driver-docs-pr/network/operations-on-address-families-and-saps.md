@@ -7,7 +7,7 @@ keywords:
 - CoNDIS WDK networking , address families
 - connection-oriented NDIS WDK , service access points
 - CoNDIS WDK networking , service access points
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

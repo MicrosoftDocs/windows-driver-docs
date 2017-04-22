@@ -5,7 +5,7 @@ description: Explicit Bin Extensions
 ms.assetid: a9f7f290-1af8-4312-b348-c1c98a3fc4a6
 keywords:
 - explicit bin extensions WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

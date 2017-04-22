@@ -4,7 +4,7 @@ description: Control Channel Characteristics
 ms.assetid: b289f21c-a53e-424c-be31-b7a869e335c4
 keywords:
 - Control Channel Characteristics
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

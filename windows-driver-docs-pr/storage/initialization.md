@@ -3,7 +3,7 @@ title: Initialization
 author: windows-driver-content
 description: Initialization
 ms.assetid: 7d5ee1c7-df6c-4394-9ba7-819ee7e9397b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

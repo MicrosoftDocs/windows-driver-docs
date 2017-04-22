@@ -8,7 +8,7 @@ keywords:
 - CoNDIS call managers WDK networking
 - porting CoNDIS drivers WDK networking , address families
 - closing address families
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

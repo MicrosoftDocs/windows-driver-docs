@@ -5,7 +5,7 @@ description: The Web Services for Devices (WSD) Installed construct indicates wh
 ms.assetid: f05add2a-d37e-4eb5-8408-dd5eeef4b13c
 keywords:
 - Installed construct
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

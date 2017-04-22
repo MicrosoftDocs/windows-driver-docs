@@ -2,7 +2,7 @@
 title: Overview of Hyper-V Extensible Switch Network Adapters
 description: Overview of Hyper-V Extensible Switch Network Adapters
 ms.assetid: 61403FDE-90BF-4D0A-83E1-5AF8ADBD37A5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: Unidrv-based or PScript5-based XPSDrv Driver Changes
 ms.assetid: 47398d3a-5e50-40ee-b3d7-7fc559368981
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , changes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - runtime-handled multiple-processor optimizations WDK display
 - driver-handled multiple-processor optimizations WDK display
 - multiple-processor optimizations WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

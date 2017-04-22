@@ -5,7 +5,7 @@ ms.assetid: 5b9dbfb2-6463-4a1f-ae36-355e88e06afc
 keywords:
 - Network Module Registrar WDK , terminology
 - NMR WDK , terminology
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

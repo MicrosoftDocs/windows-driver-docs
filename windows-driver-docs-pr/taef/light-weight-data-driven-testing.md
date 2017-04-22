@@ -2,7 +2,7 @@
 title: Light-weight Data-driven Testing
 description: Light-weight Data-driven Testing
 ms.assetid: A7070E38-A545-4156-B441-C0E6ACE569F5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

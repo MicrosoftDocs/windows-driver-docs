@@ -6,7 +6,7 @@ ms.assetid: e2b87662-c1bd-45a7-82a3-29817f7692fc
 keywords:
 - contexts WDK file system minifilter , freeing
 - freeing contexts
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

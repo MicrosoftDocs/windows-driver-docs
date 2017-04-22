@@ -10,7 +10,7 @@ keywords:
 - frame reference counts WDK AVStream
 - reference counts WDK stream pointers
 - counting references WDK stream pointers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

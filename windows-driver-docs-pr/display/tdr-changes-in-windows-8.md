@@ -4,7 +4,7 @@ description: Starting with Windows 8, GPU timeout detection and recovery (TDR) 
 ms.assetid: 5BC4F94C-2B45-44E2-8BBF-B455BB864A29
 keywords:
 - TDR (timeout detection and recovery) WDK display , changes in Windows 8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
