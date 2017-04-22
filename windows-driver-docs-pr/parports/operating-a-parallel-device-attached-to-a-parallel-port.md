@@ -8,7 +8,7 @@ keywords:
 - parallel devices WDK
 - vendor-supplied parallel drivers WDK , parallel device operation
 - parallel devices WDK , client operation
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

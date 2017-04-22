@@ -8,7 +8,7 @@ keywords:
 - filter drivers WDK networking , send operations
 - NDIS filter drivers WDK , send operations
 - filter drivers WDK networking , receive operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

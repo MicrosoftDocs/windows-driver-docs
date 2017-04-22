@@ -2,7 +2,7 @@
 title: Wi-Fi Direct Group Owner operation
 description: This section describes Wi-Fi Direct Group owner operation
 ms.assetid: C58718A7-3C28-4087-9A73-6FC9CAD7575F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

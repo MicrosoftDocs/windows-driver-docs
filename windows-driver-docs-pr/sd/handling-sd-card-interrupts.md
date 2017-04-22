@@ -9,7 +9,7 @@ keywords:
 - IRQLs WDK SD bus
 - hardware interrupts WDK SD bus
 - interrupt notifications WDK SD bus
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

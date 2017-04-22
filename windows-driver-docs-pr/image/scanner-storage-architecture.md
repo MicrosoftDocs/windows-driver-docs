@@ -3,7 +3,7 @@ title: Scanner Storage Architecture
 author: windows-driver-content
 description: Scanner Storage Architecture
 ms.assetid: 90b2367f-c611-47c6-bd60-4125bd7ca709
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

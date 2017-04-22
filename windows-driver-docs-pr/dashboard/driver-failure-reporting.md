@@ -2,7 +2,7 @@
 title: Driver failure reporting
 description: The Driver failure report in the Windows Hardware Dev Center dashboard lets you get performance data related to your driver, including crashes and other events.
 ms.assetid: F98F61EF-6C4A-400A-BA01-B79C72A7993A
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

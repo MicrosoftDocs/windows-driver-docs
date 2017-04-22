@@ -10,7 +10,7 @@ keywords:
 - file system object I/O WDK
 - file objects WDK mini-redirectors
 - objects WDK mini-redirectors
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

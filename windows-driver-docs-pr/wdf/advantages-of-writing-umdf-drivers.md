@@ -7,7 +7,7 @@ keywords:
 - User-Mode Driver Framework WDK , advantages
 - UMDF WDK , advantages
 - user-mode drivers WDK UMDF , advantages
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

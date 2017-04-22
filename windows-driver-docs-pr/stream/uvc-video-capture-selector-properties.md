@@ -7,7 +7,7 @@ keywords:
 - UVC video capture selector properties WDK video capture
 - selector properties WDK video capture
 - PROPSETID_VIDCAP_SELECTOR
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

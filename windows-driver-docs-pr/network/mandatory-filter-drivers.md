@@ -6,7 +6,7 @@ keywords:
 - filter drivers WDK networking , mandatory
 - NDIS filter drivers WDK , mandatory
 - mandatory filter drivers WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

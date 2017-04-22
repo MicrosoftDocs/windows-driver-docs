@@ -5,7 +5,7 @@ ms.assetid: 718d6231-31f3-4730-bc12-275b8f3c7900
 keywords:
 - MAC configuration WDK Native 802.11
 - configurations WDK Native 802.11 , MAC configuration
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Bluetooth version and profile support in Windows 10
 description: Provides information about Bluetooth version and profile support in Windows 10
 ms.assetid: F43DA802-37D0-4527-AA51-DA3C0AEF6914
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

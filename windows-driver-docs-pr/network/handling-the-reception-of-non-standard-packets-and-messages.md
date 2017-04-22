@@ -7,7 +7,7 @@ keywords:
 - I/O WDK TCP chimney offload , non-standard packets and messages
 - non-standard packets and messages WDK TCP chimney offload
 - received data processing WDK TCP chimney offload , non-standard packets and messages
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Tutorials
 author: windows-driver-content
 description: Tutorials
 ms.assetid: 095e41c4-71ba-425a-8c63-243799852f57
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

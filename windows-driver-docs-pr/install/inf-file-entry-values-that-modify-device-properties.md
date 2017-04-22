@@ -4,7 +4,7 @@ description: INF File Entry Values That Modify Device Properties before Windows 
 ms.assetid: b2a1f265-fc9b-47fb-83af-b4f66d79da83
 keywords:
 - device properties WDK device installations , modifying
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

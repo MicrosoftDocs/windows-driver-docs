@@ -7,7 +7,7 @@ keywords:
 - LPT enumerator WDK printer
 - parallel ports WDK , printer connections
 - parallel enumerators WDk printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

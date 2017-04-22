@@ -8,7 +8,7 @@ keywords:
 - notifications WDK networking , about notify objects
 - network configuration subsystem WDK
 - subsystem WDK network configuration
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Offloaded Data Transfer
 author: windows-driver-content
 description: Offloaded Data Transfer
 ms.assetid: EDFA6AFB-7D14-44F8-A105-E74182D26398
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

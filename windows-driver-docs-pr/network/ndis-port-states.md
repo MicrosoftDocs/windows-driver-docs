@@ -9,7 +9,7 @@ keywords:
 - authentication states WDK NDIS ports
 - link states WDK NDIS ports
 - initialization states WDK NDIS ports
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ keywords:
 - input buffers WDK DirectX VA
 - deinterlacing WDK DirectX VA , input buffer order
 - buffers WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

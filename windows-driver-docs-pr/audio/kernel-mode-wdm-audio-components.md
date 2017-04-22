@@ -21,7 +21,7 @@ keywords:
 - KMixer system driver WDK audio , about KMixer system driver
 - IEEE 1394 WDK audio
 - WDM audio components WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

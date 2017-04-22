@@ -5,7 +5,7 @@ ms.assetid: 2696a9ca-38b5-47f2-9639-029bba1173b5
 keywords:
 - attribute memory WDK PCMCIA bus , BUS_INTERFACE_STANDARD interface
 - BUS_INTERFACE_STANDARD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

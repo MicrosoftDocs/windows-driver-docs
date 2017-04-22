@@ -7,7 +7,7 @@ keywords:
 - peripherals WDK storage , power requests
 - storage peripherals WDK , power requests
 - power requests WDK storage
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

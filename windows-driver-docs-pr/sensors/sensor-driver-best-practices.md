@@ -3,7 +3,7 @@ title: Sensor driver best practices
 author: windows-driver-content
 description: Sensor driver best practices
 ms.assetid: adb20558-aa94-41a9-9d26-9d757bdb0999
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

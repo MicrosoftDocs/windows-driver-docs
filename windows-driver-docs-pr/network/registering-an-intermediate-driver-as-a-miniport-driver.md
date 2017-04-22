@@ -6,7 +6,7 @@ keywords:
 - registering intermediate drivers
 - intermediate drivers WDK networking , registering
 - NDIS intermediate drivers WDK , registering
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Accessing the PCI Configuration Space of a Virtual Function
 description: Accessing the PCI Configuration Space of a Virtual Function
 ms.assetid: 727E6FC5-F61F-4CB0-B6EB-9B372F2C59E1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

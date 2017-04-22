@@ -9,7 +9,7 @@ keywords:
 - programmatically invoke device properties dialog box WDK
 - pDeviceProperties function pointer WDK
 - machin
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

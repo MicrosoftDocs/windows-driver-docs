@@ -5,7 +5,7 @@ ms.assetid: 663cbedb-6637-4d7c-86d0-70d962459856
 keywords:
 - video miniport drivers WDK Windows 2000 , graphics
 - architecture WDK video miniport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

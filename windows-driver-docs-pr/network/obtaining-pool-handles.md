@@ -9,7 +9,7 @@ keywords:
 - miniport drivers WDK networking , pool handles
 - NDIS miniport drivers WDK , pool handles
 - intermediate drivers WDK networking , po
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

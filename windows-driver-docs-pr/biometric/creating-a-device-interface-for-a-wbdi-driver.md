@@ -5,7 +5,7 @@ ms.assetid: 8595092c-9105-4638-814a-74cdfa372638
 keywords:
 - biometric drivers WDK , device interfaces
 - device interfaces WDK biometric
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

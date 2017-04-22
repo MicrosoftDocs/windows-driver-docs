@@ -6,7 +6,7 @@ ms.assetid: 94883a51-a3a6-492e-9597-6a2f913d40bc
 keywords:
 - Additive directive WDK GDL
 - templates WDK GDL , order of definitions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

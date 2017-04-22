@@ -7,7 +7,7 @@ keywords:
 - NICs WDK networking , surprise removals
 - network interface cards WDK networking , surprise removals
 - Plug and Play WDK NDIS miniport , surprise NIC removal
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

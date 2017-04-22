@@ -2,7 +2,7 @@
 title: Obtaining and Updating VM Queue Parameters
 description: Obtaining and Updating VM Queue Parameters
 ms.assetid: 42beceec-95ae-48e3-985f-b6ee8a84d68b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

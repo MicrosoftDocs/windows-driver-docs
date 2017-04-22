@@ -2,7 +2,7 @@
 title: Driver Install Tests (Device Fundamentals)
 description: The Driver Install test category includes tests that uninstall and reinstall a driver several times to test install functionality.
 ms.assetid: 3FC00D4B-6520-45F1-805C-A5F8B6AACAC8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

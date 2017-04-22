@@ -2,7 +2,7 @@
 title: Direct3D Version 10 Runtime and Driver Handles
 description: Direct3D Version 10 Runtime and Driver Handles
 ms.assetid: 1e50afe1-7103-45c4-8f58-a08d51423b22
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

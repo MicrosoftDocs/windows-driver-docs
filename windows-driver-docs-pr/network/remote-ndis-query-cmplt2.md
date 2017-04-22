@@ -2,7 +2,7 @@
 title: REMOTE\_NDIS\_QUERY\_CMPLT
 description: REMOTE\_NDIS\_QUERY\_CMPLT
 ms.assetid: a6c04c62-b241-49d8-98ca-3877eb378247
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

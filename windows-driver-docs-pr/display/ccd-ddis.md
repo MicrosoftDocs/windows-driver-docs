@@ -6,7 +6,7 @@ keywords:
 - miniport drivers WDK display , Connecting and Configuring Displays (CCD)
 - Connecting and Configuring Displays (CCD) WDK display
 - CCD (Connecting and Configuring Displays) WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

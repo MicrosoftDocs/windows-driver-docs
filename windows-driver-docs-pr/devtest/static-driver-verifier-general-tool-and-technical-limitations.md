@@ -6,7 +6,7 @@ keywords:
 - Static Driver Verifier WDK , limitations
 - StaticDV WDK , limitations
 - SDV WDK , limitations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -11,7 +11,7 @@ keywords:
 - Switch/Case directive WDK GDL
 - Feature/Option directive WDK GDL
 - constructs WDK GDL , default construct
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

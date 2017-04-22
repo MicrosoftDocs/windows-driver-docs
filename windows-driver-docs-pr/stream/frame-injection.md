@@ -13,7 +13,7 @@ keywords:
 - default frame behavior WDK AVStream
 - overriding default frame behavior WDK streaming media
 - circuits WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: b0487ee0-9b4a-4083-9416-ad22b97ed94b
 keywords:
 - XPSDrv printer drivers WDK , color printing
 - color printing WDK XPSDrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

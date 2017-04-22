@@ -2,7 +2,7 @@
 title: Room Correction
 description: Room Correction
 ms.assetid: da7a8a88-d1d9-498f-896f-9d9c2b31b807
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

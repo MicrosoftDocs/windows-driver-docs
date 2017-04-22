@@ -2,7 +2,7 @@
 title: Providing Solutions to Reported Errors
 description: Providing Solutions to Reported Errors
 ms.assetid: dfff5afb-3ff7-4681-be63-160993e855ec
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

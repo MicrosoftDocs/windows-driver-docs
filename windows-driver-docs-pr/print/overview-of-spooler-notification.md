@@ -9,7 +9,7 @@ keywords:
 - bidirectional channels WDK spooler notification
 - unidirectional channels WDK spooler notification
 - data channels WDK spooler notification
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

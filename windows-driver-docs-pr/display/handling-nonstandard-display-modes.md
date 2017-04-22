@@ -4,7 +4,7 @@ description: Handling Nonstandard Display Modes
 ms.assetid: 4a3b0064-46d4-40bb-b49b-ac172012a7b7
 keywords:
 - nonstandard display modes WDK DirectX 9.0 , handling
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

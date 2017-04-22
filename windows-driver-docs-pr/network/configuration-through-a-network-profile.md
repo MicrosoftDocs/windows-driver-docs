@@ -5,7 +5,7 @@ ms.assetid: 205808fa-a9ec-4b6f-ae3e-b9b4c4ead01c
 keywords:
 - configurations WDK Native 802.11 , network profiles
 - network profiles WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

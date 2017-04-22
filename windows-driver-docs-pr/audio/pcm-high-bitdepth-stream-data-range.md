@@ -5,7 +5,7 @@ ms.assetid: 4f3d48ff-e01d-4c80-b493-253afdba6fd7
 keywords:
 - PCM high-bitdepth stream data ranges WDK
 - high-bitdepth stream data ranges WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

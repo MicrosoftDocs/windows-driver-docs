@@ -12,7 +12,7 @@ keywords:
 - Device setup WDK device installations , device identification strings
 - device installations WDK , device identification strings
 - installing devices WDK , device identification strings
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

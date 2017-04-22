@@ -2,7 +2,7 @@
 title: Trace Managed Object Format (MOF) File
 description: Trace Managed Object Format (MOF) File
 ms.assetid: e0ef452b-042d-42d0-be0f-b36e7bf47285
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

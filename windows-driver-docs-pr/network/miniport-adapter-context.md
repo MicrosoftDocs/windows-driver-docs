@@ -6,7 +6,7 @@ keywords:
 - logical adapters WDK networking
 - context WDK miniport adapter
 - miniport adapters WDK networking , context
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

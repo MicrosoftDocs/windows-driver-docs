@@ -2,7 +2,7 @@
 title: Integrating Windows with wireless hotspots
 description: Integrating Windows with wireless hotspots
 ms.assetid: 948660a2-7ecf-4860-9092-1cfb332cfd04
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

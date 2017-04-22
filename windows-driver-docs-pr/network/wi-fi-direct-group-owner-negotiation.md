@@ -2,7 +2,7 @@
 title: Wi-Fi Direct Group Owner Negotiation
 description: This section describes Native 802.11 Wireless LAN Group Owner Negotiation
 ms.assetid: 111F8D6F-DEA7-459E-8BAF-F67A6873A87F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

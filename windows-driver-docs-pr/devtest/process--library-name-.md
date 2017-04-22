@@ -2,7 +2,7 @@
 title: Process library name
 description: Process library name
 ms.assetid: 4c075256-1e2a-498f-b738-890580392156
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

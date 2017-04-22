@@ -3,7 +3,7 @@ title: Providing a COM Interface
 author: windows-driver-content
 description: Providing a COM Interface
 ms.assetid: c3e1578e-26f1-4fe3-b56d-a2baacb8e4c0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

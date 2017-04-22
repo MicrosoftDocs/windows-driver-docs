@@ -5,7 +5,7 @@ description: Registry Settings for the Serial Service
 ms.assetid: 5c4a28ab-e2e5-45b4-8179-6f5d40e9c98c
 keywords:
 - Serial service WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

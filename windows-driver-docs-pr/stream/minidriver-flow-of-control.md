@@ -9,7 +9,7 @@ keywords:
 - minidrivers WDK Windows 2000 Kernel Streaming , flow of control
 - uninitialized streaming minidrivers WDK streaming minidriver
 - initializing streaming minidrivers WDK Windows 2000 Kernel
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

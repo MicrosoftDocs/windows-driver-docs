@@ -2,7 +2,7 @@
 title: Virtualized networking enhancements in NDIS 6.30
 description: This section describes virtualized networking enhancements in NDIS 6.30
 ms.assetid: AA1EC2E2-2903-453A-B214-947CA3C4C931
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

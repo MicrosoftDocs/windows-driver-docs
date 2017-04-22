@@ -4,7 +4,7 @@ description: Using Multiple Multiple-Head Adapters
 ms.assetid: 632652f9-8d21-4a2f-91a6-03e3ba47d632
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , adapters
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

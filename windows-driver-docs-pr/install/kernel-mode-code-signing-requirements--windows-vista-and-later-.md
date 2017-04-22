@@ -9,7 +9,7 @@ keywords:
 - signatures WDK , kernel-mode code signing requirements
 - kernel-mode code signing requirements WDK
 - kernel-mode driver signing WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

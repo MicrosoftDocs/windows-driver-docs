@@ -11,7 +11,7 @@ keywords:
 - decoding WDK DirectDraw
 - callback functions WDK DirectDraw motion compensation
 - digital video decoding WDK DirectDraw
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

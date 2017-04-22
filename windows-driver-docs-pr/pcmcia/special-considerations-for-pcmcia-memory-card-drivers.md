@@ -4,7 +4,7 @@ description: Special Considerations for PCMCIA Memory Card Drivers
 ms.assetid: de6de14a-d8de-45fa-9bb9-93307f61114e
 keywords:
 - PCMCIA_INTERFACE_STANDARD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

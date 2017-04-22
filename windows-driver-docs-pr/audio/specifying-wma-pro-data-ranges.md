@@ -11,7 +11,7 @@ keywords:
 - Sony/Philips digital interface
 - data ranges WDK audio , WMA Pro
 - non-PCM audio formats WDK , WMA Pro
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

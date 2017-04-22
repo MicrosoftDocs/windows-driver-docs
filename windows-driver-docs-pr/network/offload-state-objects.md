@@ -11,7 +11,7 @@ keywords:
 - cached variables WDK TCP chimney offload
 - delegated variables WDK TCP chimney offload
 - variables WDK TCP chimney offload state
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

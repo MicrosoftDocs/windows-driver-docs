@@ -5,7 +5,7 @@ description: Describes IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode
 ms.assetid: dd77d79e-e274-47c3-9bfd-95054bc9f23d
 keywords:
 - ConvertPrintTicketToDevMode
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

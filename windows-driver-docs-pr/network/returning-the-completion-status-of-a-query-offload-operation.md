@@ -5,7 +5,7 @@ ms.assetid: 9583279e-1f18-4753-a7fa-08947339553f
 keywords:
 - querying offloaded TCP chimney state, completion status
 - completion status of querying WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -17,7 +17,7 @@ keywords:
 - miniport drivers WDK networking , scalable networking support
 - NDIS miniport drivers WDK , scalable networking support
 - network drivers WDK , types
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

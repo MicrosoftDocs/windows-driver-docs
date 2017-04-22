@@ -5,7 +5,7 @@ ms.assetid: 425cd2dc-99b0-4bed-8f7b-c291769c420a
 keywords:
 - data structures WDK networking
 - NDIS WDK , structures
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

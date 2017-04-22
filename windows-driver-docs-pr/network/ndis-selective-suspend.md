@@ -2,7 +2,7 @@
 title: NDIS Selective Suspend
 description: NDIS Selective Suspend
 ms.assetid: B0D44AE3-5197-4264-9838-83FB5EFEB0B0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

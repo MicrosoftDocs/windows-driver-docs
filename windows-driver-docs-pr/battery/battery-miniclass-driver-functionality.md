@@ -4,7 +4,7 @@ description: Battery Miniclass Driver Functionality
 ms.assetid: f8da63fd-0bf9-4085-88c2-022c4ddc7caa
 keywords:
 - battery miniclass drivers WDK , functionality
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

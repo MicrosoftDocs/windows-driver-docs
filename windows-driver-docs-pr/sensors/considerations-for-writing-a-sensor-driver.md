@@ -3,7 +3,7 @@ title: Considerations for writing a sensor driver
 author: windows-driver-content
 description: Considerations for writing a sensor driver
 ms.assetid: fec3cfe8-43ad-481a-833a-6f38d04bfdef
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

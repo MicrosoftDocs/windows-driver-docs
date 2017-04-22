@@ -11,7 +11,7 @@ keywords:
 - User-Mode Driver Framework WDK , file object to handle I/O, creating and using
 - UMDF WDK , file object to handle I/O, creating and using
 - user-mode drivers WDK UMDF , file object to handle I/O, creating and using
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

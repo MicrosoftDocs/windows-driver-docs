@@ -7,7 +7,7 @@ keywords:
 - miniport adapters WDK networking , OID requests
 - adapters WDK networking , OID requests
 - object identifiers WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

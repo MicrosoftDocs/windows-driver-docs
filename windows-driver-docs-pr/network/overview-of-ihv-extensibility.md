@@ -5,7 +5,7 @@ ms.assetid: 446d91e9-3497-4b45-82a6-7f36dd136e08
 keywords:
 - IHV extensions WDK Native 802.11 , about IHV extensibility
 - Native 802.11 IHV Extensions WDK , about IHV extensibility
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - filter manager WDK file system minifilter , user-mode library
 - user-mode library WDK file system minifilter
 - Fltlib.dll
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

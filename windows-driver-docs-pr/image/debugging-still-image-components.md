@@ -3,7 +3,7 @@ title: Debugging Still Image Components
 author: windows-driver-content
 description: Debugging Still Image Components
 ms.assetid: 587b8db7-7fca-4b70-8901-3adbde07718f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

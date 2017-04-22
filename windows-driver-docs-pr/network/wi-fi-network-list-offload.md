@@ -2,7 +2,7 @@
 title: Wi-Fi Network List Offload
 description: This section describes Native 802.11 WLAN Wi-Fi Network List Offload (NLO)
 ms.assetid: 528838AA-4002-4923-A71B-37ADEE9B8D07
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

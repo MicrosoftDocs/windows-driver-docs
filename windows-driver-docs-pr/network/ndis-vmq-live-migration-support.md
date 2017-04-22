@@ -2,7 +2,7 @@
 title: NDIS VMQ Live Migration Support
 description: NDIS VMQ Live Migration Support
 ms.assetid: 6872594a-35f8-4fbf-b764-22b286fb940c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

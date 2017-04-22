@@ -6,7 +6,7 @@ keywords:
 - Direct3D WDK Windows 2000 display , guard band clipping
 - guard band clipping WDK Direct3D
 - clipping WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

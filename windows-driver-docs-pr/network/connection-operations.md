@@ -5,7 +5,7 @@ ms.assetid: 55bd72d6-6667-48e1-9907-c5ff516b4664
 keywords:
 - network operations WDK Native 802.11 , connection operations
 - connections WDK Native 802.11 network operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Generic Form of Macroblock Control Command Structures
 ms.assetid: 44009238-0a8e-4018-9b50-06729640f5e4
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

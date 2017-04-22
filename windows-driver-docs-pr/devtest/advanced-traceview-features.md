@@ -2,7 +2,7 @@
 title: Advanced TraceView Features
 description: Advanced TraceView Features
 ms.assetid: 43af7569-f108-4687-84df-1913f2b5f46e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

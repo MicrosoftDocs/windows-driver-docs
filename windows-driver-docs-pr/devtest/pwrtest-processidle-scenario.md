@@ -2,7 +2,7 @@
 title: PwrTest ProcessIdle Scenario
 description: The PwrTest ProcessIdle Scenario forces background maintenance tasks to run (now rather than at their scheduled time) and monitors their progress.
 ms.assetid: 14932191-C956-4623-AF62-5A6650D72164
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

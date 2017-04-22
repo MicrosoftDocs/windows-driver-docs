@@ -7,7 +7,7 @@ keywords:
 - Common Property Sheet User Interface WDK print , samples
 - CPSUI WDK print , samples
 - property sheet pages WDK print , samples
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

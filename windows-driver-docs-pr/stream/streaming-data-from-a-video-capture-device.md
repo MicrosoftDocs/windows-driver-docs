@@ -6,7 +6,7 @@ ms.assetid: c83aae8e-70a7-4d65-a888-00a7c21eebdd
 keywords:
 - video capture WDK AVStream , streaming data from
 - capturing video WDK AVStream , streaming data from
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: RunAs
 description: RunAs
 ms.assetid: 47183A50-513C-4bc5-8DC4-33065323F584
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

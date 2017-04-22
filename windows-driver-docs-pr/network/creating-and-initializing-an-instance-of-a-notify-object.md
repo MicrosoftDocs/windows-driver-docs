@@ -7,7 +7,7 @@ keywords:
 - network notify objects WDK , instances of
 - instance of notify objects WDK networking
 - initializing notify object instance
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

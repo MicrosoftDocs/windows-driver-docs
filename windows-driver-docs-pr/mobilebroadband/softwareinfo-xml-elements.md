@@ -2,7 +2,7 @@
 title: SoftwareInfo XML Elements
 description: SoftwareInfo XML Elements
 ms.assetid: a8e8401d-456a-4c0a-976c-3802061a2bf6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

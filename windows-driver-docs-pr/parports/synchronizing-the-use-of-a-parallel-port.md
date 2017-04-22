@@ -6,7 +6,7 @@ ms.assetid: ea3a1998-9e31-4047-9193-6b402db222c9
 keywords:
 - parallel ports WDK , synchronization
 - synchronization WDK parallel ports
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

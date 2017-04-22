@@ -2,7 +2,7 @@
 title: Device Metadata
 description: Device Metadata
 ms.assetid: b3546d53-d51f-46d2-9dfb-ec63da4809e2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

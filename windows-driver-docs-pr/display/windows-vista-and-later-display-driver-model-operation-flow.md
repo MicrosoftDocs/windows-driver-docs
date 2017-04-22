@@ -9,7 +9,7 @@ keywords:
 - command buffers WDK display , operation flow
 - DMA buffers WDK display , operation flow
 - buffers WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

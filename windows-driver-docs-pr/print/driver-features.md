@@ -3,7 +3,7 @@ title: Driver Features
 author: windows-driver-content
 description: Driver Features
 ms.assetid: 56efebda-970f-4885-9c5f-1eac97aecfdd
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

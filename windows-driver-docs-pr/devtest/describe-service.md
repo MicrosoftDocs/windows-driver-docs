@@ -4,7 +4,7 @@ description: Describe your service in the Mobile Broadband Metadata Authoring Wi
 ms.assetid: 0FA4945C-3CD9-4106-BC47-F89CEF168FDC
 keywords:
 - Describe your service in the Mobile Broadband Metadata Authoring Wizard
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Using KMDF Verifier
 author: windows-driver-content
 description: Using KMDF Verifier
 ms.assetid: ab6a0149-9341-435b-b7e7-9c5d6520ebd8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

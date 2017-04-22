@@ -4,7 +4,7 @@ description: Filtering Layer
 ms.assetid: db2fd1dc-c080-4f12-8138-7e66c74adacd
 keywords:
 - filtering layer WDK Windows Filtering Platform
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

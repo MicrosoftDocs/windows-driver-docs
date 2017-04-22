@@ -2,7 +2,7 @@
 Description: The USBLPM tool monitors the U0/U1/U2/U3 power states of USB 3.0 ports. 
 title: USBLPM
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

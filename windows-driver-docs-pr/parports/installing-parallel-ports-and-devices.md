@@ -6,7 +6,7 @@ ms.assetid: 24bf2718-d369-48f1-9013-c8ca89269ca7
 keywords:
 - parallel devices WDK , installing
 - parallel ports WDK , installing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

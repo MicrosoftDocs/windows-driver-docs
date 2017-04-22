@@ -2,7 +2,7 @@
 title: Installing Device Metadata Packages through an Application
 description: Installing Device Metadata Packages through an Application
 ms.assetid: 3fec5938-b81b-4efe-8bcd-b2ef4b1c4b8b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

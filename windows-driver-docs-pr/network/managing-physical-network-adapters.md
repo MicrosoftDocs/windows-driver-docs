@@ -2,7 +2,7 @@
 title: Managing Physical Network Adapters
 description: Managing Physical Network Adapters
 ms.assetid: 564841F2-997C-44F5-8EC9-264FC9128483
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

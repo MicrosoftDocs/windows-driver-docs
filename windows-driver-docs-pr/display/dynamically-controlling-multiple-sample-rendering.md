@@ -5,7 +5,7 @@ ms.assetid: cd0bea22-29e8-40f7-987b-5c36765e5677
 keywords:
 - multiple-sample rendering WDK DirectX 9.0 , dynamic control
 - rendering multisamples WDK DirectX 9.0 , dynamic control
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

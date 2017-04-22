@@ -4,7 +4,7 @@ description: Extensible Access Point Operating States
 ms.assetid: 4a5436ed-0de9-4e93-8453-aea2d5bb7afd
 keywords:
 - extensible access point WDK Native 802.11 , operating states
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

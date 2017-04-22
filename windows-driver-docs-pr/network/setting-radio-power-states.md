@@ -4,7 +4,7 @@ description: Setting Radio Power States
 ms.assetid: 6a159c4a-855c-476e-8a0a-db203dd4d06f
 keywords:
 - radio power management WDK Native 802.11 miniport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

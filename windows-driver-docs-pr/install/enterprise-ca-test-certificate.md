@@ -4,7 +4,7 @@ description: Enterprise CA Test Certificate
 ms.assetid: c2b075c9-cb85-446d-ac07-65aad5507e62
 keywords:
 - Enterprise CA test certificates WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 08f51612-2e2b-439a-8318-43884086828c
 keywords:
 - SAN service providers WDK , extensions
 - extensions WDK SANs
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

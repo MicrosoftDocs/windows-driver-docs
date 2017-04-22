@@ -5,7 +5,7 @@ ms.assetid: 6da26a8f-553b-4995-9dda-66a7fd6d478b
 keywords:
 - vertex shader declarations WDK DirectX 9.0 , separating declarations and code
 - shader declarations WDK DirectX 9.0 , separating declarations and code
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - architecture WDK Windows Filtering Platform
 - filter engine WDK Windows Filtering Platform
 - callout drivers WDK Windows Filtering Platform , platform architecture
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

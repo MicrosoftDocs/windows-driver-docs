@@ -7,7 +7,7 @@ keywords:
 - video copy protection WDK COPP , starting protected video session
 - COPP WDK DirectX VA , starting protected video session
 - protected video WDK COPP , starting session
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

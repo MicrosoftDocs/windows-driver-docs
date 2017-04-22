@@ -7,7 +7,7 @@ keywords:
 - digital signatures WDK WHEA), PSHED plug-ins
 - PSHED plug-ins WDK WHEA , qualifying
 - PSHED plug-ins WDK WHEA , distributing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

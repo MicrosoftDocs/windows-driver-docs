@@ -8,7 +8,7 @@ keywords:
 - NET_LUID
 - miniport adapters WDK networking , NET_LUID value
 - filter modules WDK networking , NET_LUID value
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

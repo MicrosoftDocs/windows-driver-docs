@@ -6,7 +6,7 @@ ms.assetid: 126e13fb-51f6-4dcc-aa13-850921b3c752
 keywords:
 - postoperation callback routines WDK file system minifilter , pending operations
 - pending I/O operations in callback routines WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

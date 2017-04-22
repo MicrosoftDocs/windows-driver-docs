@@ -8,7 +8,7 @@ keywords:
 - contexts WDK GDL , arbitrary value contexts
 - arbitrary value contexts WDK GDL
 - values WDK GDL , contexts
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

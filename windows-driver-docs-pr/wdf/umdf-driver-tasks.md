@@ -7,7 +7,7 @@ keywords:
 - User-Mode Driver Framework WDK , tasks
 - UMDF WDK , tasks
 - user-mode drivers WDK UMDF , tasks
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

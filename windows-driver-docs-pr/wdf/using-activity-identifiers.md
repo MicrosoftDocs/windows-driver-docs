@@ -3,7 +3,7 @@ title: Using Activity Identifiers
 author: windows-driver-content
 description: Using Activity Identifiers
 ms.assetid: 2B70953F-5192-4654-9506-6A84373D20B4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

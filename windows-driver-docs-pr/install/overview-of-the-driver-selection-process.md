@@ -2,7 +2,7 @@
 title: Overview of the Driver Selection Process
 description: Overview of the Driver Selection Process
 ms.assetid: 120ab9f9-6ac5-4b76-bee1-2e975d0c38f2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

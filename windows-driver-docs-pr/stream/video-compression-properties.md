@@ -7,7 +7,7 @@ keywords:
 - video compression properties WDK video capture
 - compression properties WDK video capture
 - PROPSETID_VIDCAP_VIDEOCOMPRESSION
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

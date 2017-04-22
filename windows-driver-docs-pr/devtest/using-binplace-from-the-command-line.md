@@ -2,7 +2,7 @@
 title: Using BinPlace from the Command Line
 description: Using BinPlace from the Command Line
 ms.assetid: ed92fee5-d45c-437a-8c3f-de51b910c2ae
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

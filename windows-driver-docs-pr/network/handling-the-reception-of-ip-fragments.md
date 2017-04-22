@@ -5,7 +5,7 @@ ms.assetid: bcda8057-db0f-420a-b7d1-c1ec5fe37882
 keywords:
 - non-standard packets and messages WDK TCP chimney offload , IP fragments
 - IP fragments WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

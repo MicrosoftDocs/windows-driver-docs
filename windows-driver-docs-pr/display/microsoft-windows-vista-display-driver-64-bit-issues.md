@@ -6,7 +6,7 @@ keywords:
 - 64-bit WDK display
 - display driver model WDK Windows Vista , 64-bit
 - Windows Vista display driver model WDK , 64-bit
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

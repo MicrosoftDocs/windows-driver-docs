@@ -6,7 +6,7 @@ ms.assetid: 6e08f9c1-e541-4e5f-8c99-f81d5793cc21
 keywords:
 - WMI SRBs WDK storage , designing callback routines
 - callback routines WDK WMI SRBs
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

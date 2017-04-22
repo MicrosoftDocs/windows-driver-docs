@@ -3,7 +3,7 @@ title: WIA Minidriver Interfaces
 author: windows-driver-content
 description: WIA Minidriver Interfaces
 ms.assetid: 6d069584-f9e1-4312-b8f2-1ef3d518faeb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

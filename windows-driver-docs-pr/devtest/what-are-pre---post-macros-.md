@@ -2,7 +2,7 @@
 title: What are PRE / POST macros
 description: What are PRE / POST macros
 ms.assetid: f5acb047-def3-443a-b220-77543f9a71e3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

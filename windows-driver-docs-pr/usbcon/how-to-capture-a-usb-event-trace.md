@@ -2,7 +2,7 @@
 Description: This topic provides information about using the Logman tool to capture a USB ETW event trace. 
 title: How to capture a USB event trace with Logman
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

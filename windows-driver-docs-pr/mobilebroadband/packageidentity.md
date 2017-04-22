@@ -2,7 +2,7 @@
 title: PackageIdentity
 description: PackageIdentity
 ms.assetid: b5533962-ea42-416e-bbd8-ce9dce1a9a40
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - session variables WDK printer
 - print Web pages WDK , ASP variables
 - Web pages WDK printer , ASP variables
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

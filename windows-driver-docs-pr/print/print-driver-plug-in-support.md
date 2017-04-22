@@ -6,7 +6,7 @@ ms.assetid: fa072fc9-66da-46c2-a270-6f604860aaff
 keywords:
 - Print Capabilities WDK , plug-ins
 - IPrintOemPrintTicketProvider
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

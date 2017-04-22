@@ -2,7 +2,7 @@
 title: LE hang detection
 description: This section describes LE hang detection in WDI
 ms.assetid: 9C0BB4B8-184A-4C1A-8B47-C30C8318AEEB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

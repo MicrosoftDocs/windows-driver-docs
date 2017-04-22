@@ -2,7 +2,7 @@
 title: Initializing a VF Miniport Driver
 description: Initializing a VF Miniport Driver
 ms.assetid: 23EB2086-E882-4CB6-A910-D8E99E0212E5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

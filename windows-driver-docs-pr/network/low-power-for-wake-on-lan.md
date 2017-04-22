@@ -2,7 +2,7 @@
 title: Low Power for Wake on LAN
 description: Low Power for Wake on LAN
 ms.assetid: 9ab8fa19-e75a-4266-accf-4e8b2964f82e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

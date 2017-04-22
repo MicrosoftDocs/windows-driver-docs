@@ -5,7 +5,7 @@ description: Sample Printer INF Files
 ms.assetid: e57f11fe-b114-46e4-a4ae-b48f04613da7
 keywords:
 - INF files WDK print , samples
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

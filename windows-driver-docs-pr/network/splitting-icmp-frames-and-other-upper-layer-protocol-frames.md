@@ -4,7 +4,7 @@ description: Splitting ICMP Frames and Other Upper-Layer-Protocol Frames
 ms.assetid: 693c0b23-f9b5-4a1e-a6c7-5f658a9a636c
 keywords:
 - ICMP frame splitting WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

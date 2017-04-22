@@ -6,7 +6,7 @@ keywords:
 - clamping fog intensity per pixel WDK DirectX 9.0
 - fog intensity per pixel WDK DirectX 9.0
 - pixel fog intensity clamping WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

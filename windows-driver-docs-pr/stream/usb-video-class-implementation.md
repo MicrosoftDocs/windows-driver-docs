@@ -7,7 +7,7 @@ keywords:
 - USB Video Class drivers WDK AVStream , implementing
 - Video Class drivers WDK USB , implementing
 - UVC drivers WDK AVStream , implementing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

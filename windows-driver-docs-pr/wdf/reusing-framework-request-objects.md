@@ -7,7 +7,7 @@ keywords:
 - request processing WDK KMDF , reusing request objects
 - request objects WDK KMDF , reusing
 - reusing request objects WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

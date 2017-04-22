@@ -2,7 +2,7 @@
 title: How do I use WPP when building in Visual Studio
 description: How do I use WPP when building in Visual Studio
 ms.assetid: 54c0d582-ff49-497e-b5c0-1ea33474ecb0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

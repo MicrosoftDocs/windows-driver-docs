@@ -3,7 +3,7 @@ title: Canceling Pending I/O Operations
 author: windows-driver-content
 description: Canceling Pending I/O Operations
 ms.assetid: 58383836-5922-4499-a73d-d17d26dd2f76
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

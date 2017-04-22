@@ -6,7 +6,7 @@ ms.assetid: 0915167a-f8ac-4222-bece-76d7fc8a3823
 keywords:
 - security WDK file systems , memory mapped files
 - memory mapped files WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

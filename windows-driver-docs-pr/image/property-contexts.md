@@ -3,7 +3,7 @@ title: Property Contexts
 author: windows-driver-content
 description: Property Contexts
 ms.assetid: da33848c-a9bc-40c7-ab1b-0ca056f3e06d
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

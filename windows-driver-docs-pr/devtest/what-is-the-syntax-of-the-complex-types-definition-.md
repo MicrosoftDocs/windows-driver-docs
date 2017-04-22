@@ -2,7 +2,7 @@
 title: What is the syntax of the complex types definition
 description: What is the syntax of the complex types definition
 ms.assetid: c378839a-3714-4b4e-94a6-d3e1dcf8a610
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

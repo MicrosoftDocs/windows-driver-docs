@@ -13,7 +13,7 @@ keywords:
 - miniport drivers WDK KMDF
 - specialized I/O targets WDK KMDF
 - I/O targets WDK KMDF , types
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

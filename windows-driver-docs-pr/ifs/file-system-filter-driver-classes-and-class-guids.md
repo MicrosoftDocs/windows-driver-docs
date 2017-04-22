@@ -9,7 +9,7 @@ keywords:
 - classes WDK file system
 - filter drivers WDK file system , classes
 - file system filter drivers WDK , classes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

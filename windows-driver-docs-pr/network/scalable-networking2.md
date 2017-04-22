@@ -5,7 +5,7 @@ ms.assetid: 9b8219bd-c544-4ffb-90c3-db7248f7b75e
 keywords:
 - network drivers WDK , scalable networking
 - scalable networking WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

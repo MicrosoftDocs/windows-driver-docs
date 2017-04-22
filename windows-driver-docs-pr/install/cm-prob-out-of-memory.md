@@ -4,7 +4,7 @@ description: CM_PROB_OUT_OF_MEMORY
 ms.assetid: 60b94407-2d06-43d9-b7e1-1ae74c28a216
 keywords:
 - CM_PROB_OUT_OF_MEMORY
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

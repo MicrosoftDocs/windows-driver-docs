@@ -2,7 +2,7 @@
 title: One Cannot detect Environment type
 description: One Cannot detect Environment type
 ms.assetid: d71ed95d-f070-4787-bcac-ca544ba34aa9
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

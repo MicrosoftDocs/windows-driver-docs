@@ -5,7 +5,7 @@ ms.assetid: 08227a84-3e61-409d-b08a-e2a9cf02be44
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , 802.1X security settings
 - 802.1X security settings WDK Native 802.11 IHV UI Extensions DLL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

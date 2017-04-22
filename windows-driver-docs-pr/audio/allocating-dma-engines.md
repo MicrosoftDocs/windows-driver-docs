@@ -9,7 +9,7 @@ keywords:
 - DMA engine allocation WDK audio
 - render DMA engines WDK audio
 - capture DMA engines WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

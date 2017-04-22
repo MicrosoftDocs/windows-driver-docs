@@ -5,7 +5,7 @@ ms.assetid: d0ff9508-cc34-43eb-975f-7f5ce3c0acf6
 keywords:
 - trace sessions WDK , updating
 - updating trace sessions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

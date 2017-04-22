@@ -5,7 +5,7 @@ ms.assetid: b5f7a057-28bc-4df9-99da-58d39b81fb60
 keywords:
 - network profiles WDK Native 802.11 IHV Extensions DLL , creating extensions
 - scan operation WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

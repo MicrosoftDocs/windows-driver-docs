@@ -7,7 +7,7 @@ keywords:
 - Driver Verifier WDK , counters
 - statistics WDK Driver Verifier
 - counters WDK Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

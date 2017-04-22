@@ -5,7 +5,7 @@ ms.assetid: 40329177-b8d5-49a2-a1d3-6730a26b6e78
 keywords:
 - hardware acceleration WDK DirectSound , SRC sliders
 - sliders WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

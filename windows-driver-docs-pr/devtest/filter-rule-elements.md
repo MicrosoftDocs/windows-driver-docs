@@ -5,7 +5,7 @@ ms.assetid: 448da1f1-5eea-4159-ba19-cda14ebebae6
 keywords:
 - filtering trace messages, changeable elements WDK
 - trace message filters WDK , changeable elements
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

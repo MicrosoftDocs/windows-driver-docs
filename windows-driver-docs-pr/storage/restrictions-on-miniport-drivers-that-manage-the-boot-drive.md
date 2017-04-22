@@ -9,7 +9,7 @@ keywords:
 - boot drives WDK storage
 - disk dump drivers WDK storage
 - dump mode WDK storage
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 92da9324-5bc2-4a19-9c27-811cd7ad4572
 keywords:
 - interrupts WDK NetDMA , DPC
 - DPCs WDK NetDMA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - AVStream filter-centric filters WDK
 - filter types WDK AVStream
 - AVStrMiniFilterProcess
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

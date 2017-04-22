@@ -6,7 +6,7 @@ keywords:
 - surface memory WDK display
 - listing surfaces WDK display
 - resource object surface memory WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

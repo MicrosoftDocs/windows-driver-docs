@@ -9,7 +9,7 @@ keywords:
 - DXVA WDK DirectX 9.0 , 2D operations
 - DirectX Video Acceleration WDK DirectX 9.0
 - DirectX Video Acceleration WDK DirectX 9.0 , 2D operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

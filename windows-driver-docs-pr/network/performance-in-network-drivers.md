@@ -2,7 +2,7 @@
 title: Performance in network drivers
 description: This section describes techniques to improve performance in network drivers
 ms.assetid: 7EA23AA6-7673-4D88-91CA-BDDD8FBB2A4F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

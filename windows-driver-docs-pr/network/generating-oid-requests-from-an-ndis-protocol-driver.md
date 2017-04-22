@@ -2,7 +2,7 @@
 title: Generating OID Requests from an NDIS Protocol Driver
 description: Generating OID Requests from an NDIS Protocol Driver
 ms.assetid: a27d1c9c-fc7e-414f-8cad-595e8d8fe8f8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

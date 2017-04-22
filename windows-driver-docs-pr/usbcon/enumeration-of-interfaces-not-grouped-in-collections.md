@@ -2,7 +2,7 @@
 Description: Interfaces on a composite USB device can be grouped in collections or represent one USB function individually.
 title: Enumeration of Interfaces on USB Composite Devices
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

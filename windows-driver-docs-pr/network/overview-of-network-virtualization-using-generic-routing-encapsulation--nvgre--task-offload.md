@@ -2,7 +2,7 @@
 title: Overview of NVGRE Task Offload
 description: Describes an overview of Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
 ms.assetid: 5890AF7E-93E1-4E19-B483-C75657D749EB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

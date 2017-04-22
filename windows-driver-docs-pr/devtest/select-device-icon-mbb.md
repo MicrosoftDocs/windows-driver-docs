@@ -4,7 +4,7 @@ description: Select service icon in the Mobile Broadband Metadata Authoring Wiza
 ms.assetid: 6BD0A5A1-E954-42A8-B216-721AE888157F
 keywords:
 - Select service icon in the Mobile Broadband Metadata Authoring Wizard
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

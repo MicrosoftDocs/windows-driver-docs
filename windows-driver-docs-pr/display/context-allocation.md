@@ -2,7 +2,7 @@
 title: Context allocation
 description: To allocate memory for the context save area of a context, the kernel mode driver can use context allocations via DxgkCbCreateContextAllocation.
 ms.assetid: DAD08E7F-13F9-4648-A24C-DD9FBA6D490F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

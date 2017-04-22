@@ -3,7 +3,7 @@ title: WIA Driver Error Recovery for Windows Vista
 author: windows-driver-content
 description: WIA Driver Error Recovery for Windows Vista
 ms.assetid: 7347cc02-e00e-418e-9ac4-8bfda7d02857
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - reference counts WDK audio
 - input parameter reference counting WDK audio
 - output parameter reference counting WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

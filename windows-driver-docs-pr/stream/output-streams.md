@@ -5,7 +5,7 @@ description: Output Streams
 ms.assetid: 91be637c-f195-4713-bfb0-b41c0346e390
 keywords:
 - output streams WDK DVD decoder
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

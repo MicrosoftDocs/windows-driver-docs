@@ -3,7 +3,7 @@ title: Film Scanner Architecture
 author: windows-driver-content
 description: Film Scanner Architecture
 ms.assetid: fe3a2c23-a520-4701-8178-02f50ac08767
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

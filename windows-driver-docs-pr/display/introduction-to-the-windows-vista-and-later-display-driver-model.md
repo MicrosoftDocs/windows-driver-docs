@@ -2,7 +2,7 @@
 title: Introduction to the Windows Display Driver Model (WDDM)
 description: Introduction to the Windows Display Driver Model (WDDM)
 ms.assetid: 0c6d324a-fd6f-462b-b8cd-1de4588e5c8c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

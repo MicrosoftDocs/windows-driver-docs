@@ -2,7 +2,7 @@
 title: Managing NDIS Status Indications from Physical Network Adapters
 description: Managing NDIS Status Indications from Physical Network Adapters
 ms.assetid: ECA336FD-3E07-47D8-9006-6FE9CC1BEC2F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

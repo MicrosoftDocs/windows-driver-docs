@@ -7,7 +7,7 @@ keywords:
 - printer graphics DLL WDK , return printer-specific information
 - graphics DLL WDK printer , return printer-specific information
 - returning printer-specific information WDK printer graphics
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: Supporting Point and Print
 ms.assetid: a41bed5e-a006-4b9e-aa71-d2bcd154fae2
 keywords:
 - Point and Print WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

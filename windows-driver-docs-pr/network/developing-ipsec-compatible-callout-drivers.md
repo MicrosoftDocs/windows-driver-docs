@@ -5,7 +5,7 @@ ms.assetid: 5e4fad4e-a790-4294-b3ac-a796f76265ad
 keywords:
 - IPsec WDK Windows Filtering Platform , compatibility with WFP callout drivers
 - Windows Filtering Platform callout drivers WDK , IPsec compatibility
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

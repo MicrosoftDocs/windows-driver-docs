@@ -4,7 +4,7 @@ description: Understanding the Sdv-map.h File
 ms.assetid: 2ad3d94d-3991-414b-ae1c-27a07c10839f
 keywords:
 - Sdv-map.h WDK Static Driver Verifier , about Sdv-map.h
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

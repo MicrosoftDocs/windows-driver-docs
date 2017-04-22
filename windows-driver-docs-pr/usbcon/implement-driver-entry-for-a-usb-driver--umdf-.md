@@ -1,7 +1,7 @@
 ---
 Description: Use the USB User-Mode Driver template provided with Microsoft Visual Studio to write a UMDF client driver.
 title: How to write your first USB client driver (UMDF)
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

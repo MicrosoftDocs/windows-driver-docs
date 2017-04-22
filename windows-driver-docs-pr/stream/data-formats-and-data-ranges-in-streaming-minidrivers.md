@@ -11,7 +11,7 @@ keywords:
 - data ranges WDK streaming minidriver
 - ranges WDK streaming minidriver
 - formats WDK streaming minidriver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

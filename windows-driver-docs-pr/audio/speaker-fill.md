@@ -2,7 +2,7 @@
 title: Speaker Fill
 description: Speaker Fill
 ms.assetid: 22e25de6-e21d-4fec-8438-5a44f0109e9c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

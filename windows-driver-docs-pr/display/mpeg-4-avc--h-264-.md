@@ -7,7 +7,7 @@ keywords:
 - Advanced Video Coding (AVC) WDK DirectX VA
 - ITU-T H.264 video compression WDK DirectX VA
 - H.264 video compression WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

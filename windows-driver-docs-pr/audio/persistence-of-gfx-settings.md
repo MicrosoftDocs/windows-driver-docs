@@ -7,7 +7,7 @@ keywords:
 - persistence WDK GFX filters
 - set-property WDK audio
 - get-property WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

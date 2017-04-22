@@ -8,7 +8,7 @@ keywords:
 - virtual subunit drivers WDK AV/C
 - external devices WDK AV/C
 - IOCTL_AVC_CLASS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

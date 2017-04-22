@@ -2,7 +2,7 @@
 title: Application (WindowsInfo)
 description: Application (WindowsInfo)
 ms.assetid: e76ede51-e494-47b4-b30a-e354799f66e7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

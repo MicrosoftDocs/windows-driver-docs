@@ -2,7 +2,7 @@
 title: Installing an in-box Bluetooth driver on new hardware
 description: This appendix describes the procedure for installing an in-box Bluetooth driver on new hardware in Windows Vista
 ms.assetid: 399514FD-2BD8-4DC2-8446-F5EEB4120876
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

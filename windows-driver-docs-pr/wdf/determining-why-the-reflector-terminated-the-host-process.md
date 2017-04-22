@@ -7,7 +7,7 @@ keywords:
 - debugging scenarios WDK UMDF , reflector terminates the host process
 - UMDF WDK , debugging scenarios, reflector terminates the host process
 - UMDF WDK , reflector terminates the host process
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

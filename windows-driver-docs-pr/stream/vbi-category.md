@@ -8,7 +8,7 @@ keywords:
 - VBI WDK video capture
 - vertical blanking interval WDK video capture
 - PINNAME_VIDEO_VBI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

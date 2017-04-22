@@ -5,7 +5,7 @@ ms.assetid: 11574df3-817e-4bf3-a849-dd5ac723fb1d
 keywords:
 - trace sessions WDK , Global Logger
 - Global Logger trace session WDK , examples
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

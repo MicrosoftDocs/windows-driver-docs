@@ -2,7 +2,7 @@
 title: How do I change the prefix output on every trace line
 description: How do I change the prefix output on every trace line
 ms.assetid: be2b6207-79f5-4d71-a6a2-075f3078a873
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

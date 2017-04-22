@@ -3,7 +3,7 @@ title: EFI\_USB\_ENDPOINT\_TYPE
 author: windows-driver-content
 description: EFI\_USB\_ENDPOINT\_TYPE
 ms.assetid: 5cdb0efc-2355-42e2-929b-df19257e35c1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

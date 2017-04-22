@@ -5,7 +5,7 @@ ms.assetid: 59260c68-f4d3-46bf-9aba-e6f369747069
 keywords:
 - miniport drivers WDK networking , about miniport drivers
 - NDIS miniport drivers WDK , about miniport drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

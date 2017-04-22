@@ -8,7 +8,7 @@ keywords:
 - USB Video Class drivers WDK AVStream , differences between UVC 1.0 and UVC 1.1
 - Video Class drivers WDK USB , differences between UVC 1.0 and UVC 1.1
 - UVC drivers WDK AVStream , differences between UVC 1.0 and UVC 1.1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 Description: This topic describes the steps for issuing a select-interface request to activate an alternate setting in a USB interface.
 title: How to select an alternate setting in a USB interface
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

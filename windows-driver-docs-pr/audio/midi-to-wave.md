@@ -12,7 +12,7 @@ keywords:
 - DirectMusic WDK audio , MIDI-to-wave conversions
 - custom rendering in user mode WDK audio , MIDI-to-wave conversions
 - DirectMusic custom rendering WDK audio , MIDI-to-wave conversions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -10,7 +10,7 @@ keywords:
 - UMDF WDK , debugging scenarios, UMDF device fails to start
 - UMDF WDK , driver not loading scenario
 - UMDF WDK , device not starting scenario
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 16fb8c2a-60d8-4c0a-879d-447a1cda5415
 keywords:
 - Driver Verifier WDK , volatile settings
 - volatile settings WDK Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

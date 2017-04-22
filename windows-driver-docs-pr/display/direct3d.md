@@ -11,7 +11,7 @@ keywords:
 - Direct3D WDK Windows 2000 display , header files
 - display driver model WDK Windows 2000 , Direct3D
 - Windows 2000 display driver model WDK , Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

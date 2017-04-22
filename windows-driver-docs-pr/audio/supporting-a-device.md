@@ -9,7 +9,7 @@ keywords:
 - PortCls WDK audio , device support
 - port drivers WDK audio , miniport drivers
 - port drivers WDK audio , Port Class
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

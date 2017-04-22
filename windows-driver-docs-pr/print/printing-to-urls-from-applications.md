@@ -10,7 +10,7 @@ keywords:
 - printing to URLs WDK
 - print Web pages WDK , printing to URLs
 - Web pages WDK printer , printing to URLs
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

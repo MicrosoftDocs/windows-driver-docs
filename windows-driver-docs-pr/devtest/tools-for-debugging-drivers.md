@@ -8,7 +8,7 @@ keywords:
 - debugging drivers WDK , tools
 - debug_client tool WDK
 - debug_host tool WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

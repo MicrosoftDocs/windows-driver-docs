@@ -14,7 +14,7 @@ keywords:
 - master clocks WDK audio , synchronization
 - phase-locked loops WDK audio
 - synchronization WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

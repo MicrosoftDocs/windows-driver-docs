@@ -3,7 +3,7 @@ title: EFI\_RNG\_PROTOCOL.GetRNG
 author: windows-driver-content
 description: EFI\_RNG\_PROTOCOL.GetRNG
 ms.assetid: 5C2E0C8F-FF3A-4F57-BC28-3BC540852CB0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

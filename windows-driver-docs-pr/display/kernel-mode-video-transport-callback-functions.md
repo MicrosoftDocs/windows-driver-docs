@@ -6,7 +6,7 @@ keywords:
 - DxApi miniport drivers WDK DirectDraw , kernel-mode video transport callback functions
 - kernel-mode video transport WDK DirectDraw , callback functions
 - callback functions WDK kernel-mode video transport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

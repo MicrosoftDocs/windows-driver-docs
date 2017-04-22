@@ -2,7 +2,7 @@
 title: Indicating Coalesced Segments
 description: This section describes how to indicate coalesced segments
 ms.assetid: 79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

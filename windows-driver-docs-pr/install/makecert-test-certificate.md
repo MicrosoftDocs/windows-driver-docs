@@ -5,7 +5,7 @@ ms.assetid: 17f63c42-a563-4a57-a3be-ac3b2e97ee3b
 keywords:
 - MakeCert test certificates WDK
 - digital certificates WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

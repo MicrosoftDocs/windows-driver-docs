@@ -5,7 +5,7 @@ description: The TCP/IP Value construct allows you to extend the bidi communicat
 ms.assetid: 46b24830-10a1-405b-9c12-b5804f76d668
 keywords:
 - Value construct
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

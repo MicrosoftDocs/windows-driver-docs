@@ -5,7 +5,7 @@ description: Constraints on Completion Routines
 ms.assetid: 3873fd27-cfa8-414d-9437-c0789b20ff27
 keywords:
 - IRP completion routines WDK file system , constraints
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

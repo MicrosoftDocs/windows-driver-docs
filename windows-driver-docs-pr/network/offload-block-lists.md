@@ -6,7 +6,7 @@ keywords:
 - offload state WDK TCP chimney offload , block lists
 - block lists WDK TCP chimney offload
 - NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

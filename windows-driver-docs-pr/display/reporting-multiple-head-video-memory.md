@@ -4,7 +4,7 @@ description: Reporting Multiple-Head Video Memory
 ms.assetid: 664b60f5-9e19-4dfc-8bd7-73ceccf6cbea
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , memory reporting
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

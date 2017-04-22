@@ -7,7 +7,7 @@ keywords:
 - debugging scenarios WDK UMDF , UMDF driver consumes excessive memory
 - UMDF WDK , debugging scenarios, UMDF driver consumes excessive memory
 - UMDF WDK , UMDF driver consumes excessive memory
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

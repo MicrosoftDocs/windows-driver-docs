@@ -7,7 +7,7 @@ keywords:
 - RDBSS WDK file systems , routines
 - Redirected Drive Buffering Subsystem WDK file systems , routines
 - routines WDK RDBSS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

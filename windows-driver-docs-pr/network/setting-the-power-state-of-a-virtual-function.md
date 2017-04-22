@@ -2,7 +2,7 @@
 title: Setting the Power State of a Virtual Function
 description: Setting the Power State of a Virtual Function
 ms.assetid: 7504677D-9B3A-47A2-9990-7BBF50A832EA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

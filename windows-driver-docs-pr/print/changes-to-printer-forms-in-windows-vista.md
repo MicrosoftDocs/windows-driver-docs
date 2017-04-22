@@ -11,7 +11,7 @@ keywords:
 - paper sizes WDK forms
 - custom forms WDK printer
 - FORM_INFO_2 data structure WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

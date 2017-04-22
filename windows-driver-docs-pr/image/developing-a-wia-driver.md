@@ -3,7 +3,7 @@ title: Developing a WIA Driver
 author: windows-driver-content
 description: Developing a WIA Driver
 ms.assetid: 0497e93a-e7c5-4d89-bfa9-b2f277e471a0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

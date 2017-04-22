@@ -4,7 +4,7 @@ description: CM_PROB_BIOS_TABLE
 ms.assetid: 99c6b674-82a0-4b2d-a89b-ea8888a997e8
 keywords:
 - CM_PROB_BIOS_TABLE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

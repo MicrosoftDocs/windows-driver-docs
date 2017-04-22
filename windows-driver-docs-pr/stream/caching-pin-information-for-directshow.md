@@ -10,7 +10,7 @@ keywords:
 - updating pin data cache WDK AVStream
 - Broadcast Driver Architecture WDK AVStream , pin data cache
 - BDA WDK AVStream , pin data cache
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

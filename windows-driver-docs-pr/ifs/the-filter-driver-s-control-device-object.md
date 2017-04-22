@@ -6,7 +6,7 @@ ms.assetid: ac49b5d0-110d-4e47-814b-05f59791de41
 keywords:
 - control device objects WDK file system
 - CDOs WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

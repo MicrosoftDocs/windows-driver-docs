@@ -7,7 +7,7 @@ keywords:
 - hardware codec support WDK AVStream , data type negotiation
 - data type negotiation WDK AVStream
 - AVStream hardware codec support WDK , handling data type negotiation
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

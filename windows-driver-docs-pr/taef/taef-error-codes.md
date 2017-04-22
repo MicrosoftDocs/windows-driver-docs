@@ -2,7 +2,7 @@
 title: TAEF Error Codes
 description: TAEF Error Codes
 ms.assetid: E42AF880-12DA-42b7-AB6D-90011BD7E548
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

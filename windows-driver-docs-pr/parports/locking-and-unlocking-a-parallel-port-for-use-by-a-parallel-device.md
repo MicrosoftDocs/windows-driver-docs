@@ -9,7 +9,7 @@ keywords:
 - unlocking parallel ports
 - uninterrupted operations WDK parallel devices
 - freeing parallel ports
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - bridge pins WDK audio
 - mixer API WDK audio
 - KS filters WDK audio , non-PCM wave formats
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

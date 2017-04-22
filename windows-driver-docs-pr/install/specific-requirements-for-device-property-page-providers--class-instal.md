@@ -7,7 +7,7 @@ keywords:
 - property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
 - custom property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
 - DIF_ADDPROPERTYPAGE_ADVANCED
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ keywords:
 - synchronization WDK SANs
 - SAN synchronizations WDK
 - Windows Sockets Direct WDK , SAN synchronizations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - friendly string names WDK display
 - graphics adapters string names WDK display
 - appending to graphics adapters string names WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

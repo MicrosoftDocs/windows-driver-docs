@@ -7,7 +7,7 @@ keywords:
 - blended pictures WDK DirectX VA , MPEG-2 pan-scan example
 - PictureSourceRect16thPel
 - MPEG-2 pan-scan example WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

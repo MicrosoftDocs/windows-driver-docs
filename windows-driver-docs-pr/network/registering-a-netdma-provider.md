@@ -5,7 +5,7 @@ ms.assetid: 63f60ed9-4a35-4c70-89f5-9bdfb7b9e732
 keywords:
 - NetDMA provider drivers WDK networking , registering
 - registering NetDMA provider drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 6ad3412c-fd80-41c0-9abc-117aacc5ddae
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , pure devices
 - pure devices WDK DirectX 8.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

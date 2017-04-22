@@ -5,7 +5,7 @@ ms.assetid: fd1d309e-b325-4ba5-ba1b-54ba7d2beb8f
 keywords:
 - resetting Native 802.11 miniport drivers
 - reset operations WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

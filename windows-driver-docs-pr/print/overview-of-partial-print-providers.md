@@ -7,7 +7,7 @@ keywords:
 - print providers WDK , partial print providers
 - network print providers WDK , partial print providers
 - partial print providers WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

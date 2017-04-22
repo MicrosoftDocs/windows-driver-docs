@@ -6,7 +6,7 @@ keywords:
 - Power Metering and Budgeting WDK , ACPI IPMI operation region
 - ACPI IPMI operation region WDK Power Meter
 - IPMI WDK Power Meter
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

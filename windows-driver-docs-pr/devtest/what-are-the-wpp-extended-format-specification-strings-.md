@@ -2,7 +2,7 @@
 title: What are the WPP extended format specification strings
 description: What are the WPP extended format specification strings
 ms.assetid: f05117c0-cb4b-483a-a141-08423555170a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

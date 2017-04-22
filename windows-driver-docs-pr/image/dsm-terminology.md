@@ -3,7 +3,7 @@ title: DSM Terminology
 author: windows-driver-content
 description: DSM Terminology
 ms.assetid: 72a62672-b4bb-42f4-a80f-9aa4d60951ca
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Specifying a Packet Coalescing Receive Filter
 description: Specifying a Packet Coalescing Receive Filter
 ms.assetid: 0369A63D-4CDE-448A-8472-EEEB7B859B8D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

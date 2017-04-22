@@ -8,7 +8,7 @@ keywords:
 - Native 802.11 miniport drivers WDK networking , receive operations
 - miniport drivers WDK Native 802.11 , receive operations
 - packets WDK networking , Native 802.11 send and receive
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

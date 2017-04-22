@@ -7,7 +7,7 @@ keywords:
 - GDI hardware acceleration WDK display
 - Connecting and Configuring Displays (CCD) WDK display
 - hardware acceleration with GDI WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

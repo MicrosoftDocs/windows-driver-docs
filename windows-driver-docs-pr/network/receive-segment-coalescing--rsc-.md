@@ -2,7 +2,7 @@
 title: Receive Segment Coalescing (RSC)
 description: This section includes topics describing Receive Segment Coalescing (RSC) in NDIS 6.30 and later
 ms.assetid: 9CB2AB1C-924C-4A19-B1E7-70C8C5C05B46
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

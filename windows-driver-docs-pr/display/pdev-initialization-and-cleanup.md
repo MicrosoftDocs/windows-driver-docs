@@ -10,7 +10,7 @@ keywords:
 - PDEV WDK GDI
 - DrvEnablePDEV
 - drawing WDK GDI , PDEV cleanup
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

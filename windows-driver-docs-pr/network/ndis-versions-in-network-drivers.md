@@ -7,7 +7,7 @@ keywords:
 - NDIS WDK , versions in network drivers
 - backward compatibility WDK networking
 - compatibility WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

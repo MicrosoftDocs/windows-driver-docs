@@ -8,7 +8,7 @@ keywords:
 - bidi communication schema WDK print
 - extensions WDK bidi communication
 - bidi extension files WDK bidi communication schema
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

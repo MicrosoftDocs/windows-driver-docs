@@ -5,7 +5,7 @@ ms.assetid: 9973b28f-f0ef-4a22-a29f-91f3e771f1c4
 keywords:
 - low-power activities WDK Native 802.11
 - wake-on-wireless LAN WDK Native 802.11 , low-power activities
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

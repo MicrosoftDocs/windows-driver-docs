@@ -2,7 +2,7 @@
 title: Installing Device Metadata Packages through a Driver Package
 description: Installing Device Metadata Packages through a Driver Package
 ms.assetid: fd140583-d4f9-4817-8edc-5bc3c6a2a1d7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

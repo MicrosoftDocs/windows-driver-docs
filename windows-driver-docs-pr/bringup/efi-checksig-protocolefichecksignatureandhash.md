@@ -3,7 +3,7 @@ title: EFI\_CHECKSIG\_PROTOCOL.EfiCheckSignatureAndHash
 author: windows-driver-content
 description: EFI\_CHECKSIG\_PROTOCOL.EfiCheckSignatureAndHash
 ms.assetid: 7c6d1756-a3db-4754-9edb-af6ba1ecf65b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

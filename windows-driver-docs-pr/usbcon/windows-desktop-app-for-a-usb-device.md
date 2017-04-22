@@ -2,7 +2,7 @@
 Description: Learn about how an application can call WinUSB Functions to communicate with a USB device.
 title: Windows desktop app for a USB device
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

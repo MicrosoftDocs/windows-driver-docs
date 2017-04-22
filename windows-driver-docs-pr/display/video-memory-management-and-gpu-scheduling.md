@@ -13,7 +13,7 @@ keywords:
 - miniport drivers WDK display , video memory management
 - user-mode display drivers WDK Windows Vista , GPU scheduling
 - miniport drivers WDK display , GPU scheduling
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

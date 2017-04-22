@@ -2,7 +2,7 @@
 title: Wrapping System-supplied sAPOs
 description: Wrapping System-supplied sAPOs
 ms.assetid: fcde6de0-921c-4c73-8e4d-941a447d35af
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - porting protocol drivers to NDIS 6.20 WDK
 - protocol drivers WDK
 - protocol drivers WDK , porting to NDIS 6.20
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

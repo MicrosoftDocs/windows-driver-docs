@@ -5,7 +5,7 @@ ms.assetid: 81203790-66CB-42ee-82F8-2F0FFF04DF10
 keywords:
 - registry WDK device installations , accessing registry keys safely
 - accessing registry keys safely WDK device installations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

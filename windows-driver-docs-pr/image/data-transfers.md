@@ -3,7 +3,7 @@ title: Data Transfers
 author: windows-driver-content
 description: Data Transfers
 ms.assetid: 55ef8125-40d3-44f3-8520-cc3a0912c3d2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

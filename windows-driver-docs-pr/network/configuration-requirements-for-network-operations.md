@@ -5,7 +5,7 @@ ms.assetid: 6f3fd054-4a4c-40bd-8e0b-0329df78c95c
 keywords:
 - network operations WDK Native 802.11 , configuration requirements
 - BSS networks WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

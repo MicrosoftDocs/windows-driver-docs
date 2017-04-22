@@ -3,7 +3,7 @@ title: Image Processing
 author: windows-driver-content
 description: Image Processing
 ms.assetid: 84e10fcc-3998-434c-922a-65b42dccbdaf
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

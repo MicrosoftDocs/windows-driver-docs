@@ -12,7 +12,7 @@ keywords:
 - datagram sockets WDK Winsock Kernel
 - connection-oriented sockets WDK Winsock Kernel
 - event callback functions WDK Winsock Kernel
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

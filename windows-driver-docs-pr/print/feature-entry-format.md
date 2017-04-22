@@ -6,7 +6,7 @@ ms.assetid: f4e91611-aa68-4426-82ef-9ad3f09d62f2
 keywords:
 - printer features WDK Unidrv , entry format
 - formats WDK printer features
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

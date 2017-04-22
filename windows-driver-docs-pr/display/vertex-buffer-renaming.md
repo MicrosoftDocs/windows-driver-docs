@@ -5,7 +5,7 @@ ms.assetid: b76552b4-77a9-43f4-984b-10de92dffa83
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, renaming
 - vertex buffers WDK DirectX 8.0 , renaming
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

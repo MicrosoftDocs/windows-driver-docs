@@ -6,7 +6,7 @@ ms.assetid: 358eed9e-05e3-4670-b6b1-d5413c46edf0
 keywords:
 - Unidrv, components
 - Unidrv WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

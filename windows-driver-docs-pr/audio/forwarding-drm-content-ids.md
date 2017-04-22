@@ -13,7 +13,7 @@ keywords:
 - DRM WDK audio , content IDs
 - converting digital to analog
 - authenticating DRM content IDs WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

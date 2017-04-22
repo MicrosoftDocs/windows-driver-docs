@@ -12,7 +12,7 @@ keywords:
 - GFX filters WDK audio , about GFX filters
 - USB WDK audio
 - audio proces
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

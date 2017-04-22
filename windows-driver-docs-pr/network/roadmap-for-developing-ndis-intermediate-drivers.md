@@ -2,7 +2,7 @@
 title: Roadmap for Developing NDIS Intermediate Drivers
 description: Roadmap for Developing NDIS Intermediate Drivers
 ms.assetid: d3bd26ff-846f-4bd2-929c-1c15dd61a122
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

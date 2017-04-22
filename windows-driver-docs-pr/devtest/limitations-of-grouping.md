@@ -5,7 +5,7 @@ ms.assetid: 2cc49522-a504-43d7-b36b-297cd6c3f307
 keywords:
 - grouping trace sessions
 - trace sessions WDK , groups
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

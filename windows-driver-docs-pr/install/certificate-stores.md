@@ -4,7 +4,7 @@ description: Certificate Stores
 ms.assetid: 7c29bf08-c5d2-40c3-b849-0b8c2f8d67f2
 keywords:
 - certificate stores WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

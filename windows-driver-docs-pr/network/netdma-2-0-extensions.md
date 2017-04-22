@@ -10,7 +10,7 @@ keywords:
 - NetDMA WDK networking , extensions
 - NetDMA 2.0 WDK , extensions
 - NetDMA 2.0 WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

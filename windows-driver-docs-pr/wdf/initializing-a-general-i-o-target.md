@@ -6,7 +6,7 @@ ms.assetid: c5d5b589-09a3-4f58-83bf-2876b37b0937
 keywords:
 - general I/O targets WDK KMDF , initializing
 - initializing general I/O targets WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Porting NDIS Miniport Driver Receive Data Handling
 ms.assetid: d4c5ab42-049d-45ad-96d0-4563234410b5
 keywords:
 - receive operation porting WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

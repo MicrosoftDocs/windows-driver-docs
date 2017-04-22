@@ -6,7 +6,7 @@ keywords:
 - rendering multiple targets WDK DirectX 9.0
 - multiple render targets WDK DirectX 9.0
 - simultaneous render targets WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

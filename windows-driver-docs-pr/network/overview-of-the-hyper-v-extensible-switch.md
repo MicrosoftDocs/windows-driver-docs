@@ -2,7 +2,7 @@
 title: Overview of the Hyper-V Extensible Switch
 description: This section provides an overview of the Hyper-V Extensible Switch
 ms.assetid: 78181C72-FBFD-4860-A664-C297997D780F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

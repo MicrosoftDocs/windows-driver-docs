@@ -2,7 +2,7 @@
 title: Bluetooth host radio support
 ms.assetid: 7AA53797-F8DC-4FA6-9A19-E20289AF50CA
 description: Provides a list of questions and answers about Bluetooth host radio support in Windows
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

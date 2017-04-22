@@ -2,7 +2,7 @@
 title: Operator
 description: Operator
 ms.assetid: 770ad50d-d42d-49ad-a302-e839a0ca1fb4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

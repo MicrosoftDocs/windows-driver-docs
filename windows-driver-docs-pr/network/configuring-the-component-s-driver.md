@@ -6,7 +6,7 @@ keywords:
 - notify objects WDK networking , driver configuration
 - network notify objects WDK , driver configuration
 - driver configuration WDK network component
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

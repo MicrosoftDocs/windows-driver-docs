@@ -7,7 +7,7 @@ keywords:
 - installing drivers WDK printer , manifests
 - printer driver installations WDK , manifests
 - manifests WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

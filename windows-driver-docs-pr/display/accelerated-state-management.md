@@ -5,7 +5,7 @@ ms.assetid: 276d3cdb-34bf-49e8-aae5-94315746c5ff
 keywords:
 - accelerated state management WDK Direct3D
 - states WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

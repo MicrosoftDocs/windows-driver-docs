@@ -3,7 +3,7 @@ title: Error Record Persistence Mechanism
 author: windows-driver-content
 description: Error Record Persistence Mechanism
 ms.assetid: f361c966-7ed4-4676-afa9-75268196c0e4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

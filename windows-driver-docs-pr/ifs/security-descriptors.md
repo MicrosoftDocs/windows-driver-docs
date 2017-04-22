@@ -11,7 +11,7 @@ keywords:
 - descriptors WDK file systems , about security descriptors
 - storage WDK file systems
 - offline security descriptor storage WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

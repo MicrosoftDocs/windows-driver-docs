@@ -2,7 +2,7 @@
 title: TraceLogging for kernel-mode drivers and components
 description: This topic describes how to use the TraceLogging API from within kernel-mode drivers and components.
 ms.assetid: 6AF8DD2C-400F-4E9D-A6DF-40A847BCBD76
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

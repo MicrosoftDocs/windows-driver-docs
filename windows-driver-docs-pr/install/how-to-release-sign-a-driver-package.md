@@ -12,7 +12,7 @@ keywords:
 - release-signing drivers WDK , driver packages
 - release-signing driver packages WDK
 - release-signing driver packages WDK , about test signing driver packages
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

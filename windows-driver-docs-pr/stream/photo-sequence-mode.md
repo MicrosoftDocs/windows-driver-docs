@@ -3,7 +3,7 @@ title: Photo Sequence Mode
 author: windows-driver-content
 description: Photo sequence mode enables capturing a sequence of photos in response to a single photo click of the camera.
 ms.assetid: 15F19FE1-6D09-4406-B096-E96D12BAF030
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

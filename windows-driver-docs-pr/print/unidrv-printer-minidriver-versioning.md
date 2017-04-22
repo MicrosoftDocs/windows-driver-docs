@@ -6,7 +6,7 @@ ms.assetid: 4f7701f4-79c4-4cdd-8562-fe4f70ad5cfe
 keywords:
 - minidrivers WDK Unidrv
 - version numbers WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

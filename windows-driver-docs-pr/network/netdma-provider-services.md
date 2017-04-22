@@ -8,7 +8,7 @@ keywords:
 - memory-to-memory data transfers WDK NetDMA , provider services
 - data transfers WDK NetDMA , provider services
 - transferring data WDK NetDMA , provider service
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

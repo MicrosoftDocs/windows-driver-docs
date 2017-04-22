@@ -4,7 +4,7 @@ description: CM_PROB_HARDWARE_DISABLED
 ms.assetid: 84abe2e1-add9-4bb9-9bc3-83cf0bfb48af
 keywords:
 - CM_PROB_HARDWARE_DISABLED
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

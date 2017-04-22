@@ -2,7 +2,7 @@
 title: NDKPI listeners, connectors, and endpoints
 description: This section describes NDKPI listeners, connectors, and endpoints, and reference counting for connectors and endpoints
 ms.assetid: 956D3550-11C8-48D0-BCF4-9027515C7C0E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

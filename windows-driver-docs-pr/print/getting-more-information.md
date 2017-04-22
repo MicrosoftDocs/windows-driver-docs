@@ -3,7 +3,7 @@ title: Getting More Information
 author: windows-driver-content
 description: Getting More Information
 ms.assetid: 9fb5fd18-160c-4684-a0c1-54a20a253285
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

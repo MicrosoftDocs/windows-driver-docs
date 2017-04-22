@@ -3,7 +3,7 @@ title: Option Attributes for All Features
 author: windows-driver-content
 description: Option Attributes for All Features
 ms.assetid: 0d269fdf-f4a1-431a-9f07-044289b9f0fa
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

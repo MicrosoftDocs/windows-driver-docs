@@ -9,7 +9,7 @@ keywords:
 - data transfers WDK TCP chimney offload
 - transferring data WDK TCP chimney offload
 - connections WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

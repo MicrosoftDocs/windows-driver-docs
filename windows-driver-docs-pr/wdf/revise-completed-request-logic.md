@@ -3,7 +3,7 @@ title: Revise Code That Handles Completed Requests
 author: windows-driver-content
 description: Revise Code That Handles Completed Requests
 ms.assetid: 0DD48424-A728-4887-9F26-46B7004CB12C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

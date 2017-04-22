@@ -6,7 +6,7 @@ keywords:
 - header-data split WDK , buffer allocation
 - maximum header size WDK header-data split
 - buffer allocations WDK header-data split
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

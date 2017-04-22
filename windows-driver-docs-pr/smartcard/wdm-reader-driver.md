@@ -5,7 +5,7 @@ ms.assetid: ead76f5f-1d28-4343-99c0-e7974fa4c3da
 keywords:
 - vendor-supplied drivers WDK smart card , required routines
 - WDM WDK smart card
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

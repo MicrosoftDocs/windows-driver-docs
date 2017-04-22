@@ -5,7 +5,7 @@ ms.assetid: 7D3F3164-E530-49fb-BCCD-9C024543FA95
 keywords:
 - device properties WDK device installations , accessing
 - accessing device properties WDK device installations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

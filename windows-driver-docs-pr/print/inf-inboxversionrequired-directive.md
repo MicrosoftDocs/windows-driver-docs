@@ -3,7 +3,7 @@ title: INF InboxVersionRequired Directive
 author: windows-driver-content
 description: INF InboxVersionRequired Directive
 ms.assetid: 75a07ca7-d279-4815-b644-10b58753f885
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

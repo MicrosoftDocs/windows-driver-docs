@@ -4,7 +4,7 @@ description: Other Benefits of CoNDIS WAN
 ms.assetid: 5b937ae4-1486-4563-a863-5c02ba57c7df
 keywords:
 - CoNDIS WAN drivers WDK networking , benefits
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: External Network Adapters
 description: External Network Adapters
 ms.assetid: 4029437C-97EA-4F21-A3F0-3B29DC650233
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

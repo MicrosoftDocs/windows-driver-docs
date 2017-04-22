@@ -4,7 +4,7 @@ description: This topic describes how to write a Universal Windows driver using 
 ms.assetid: 03A3E389-8350-4E4B-9345-E50DD425374D
 keywords:
 - Write a UMDF driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

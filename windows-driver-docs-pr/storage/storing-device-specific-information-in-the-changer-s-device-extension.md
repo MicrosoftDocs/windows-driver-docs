@@ -7,7 +7,7 @@ keywords:
 - changer drivers WDK storage , device-specific data storage
 - storage changer drivers WDK , device-specific data storage
 - device-specific data storage WDK changer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

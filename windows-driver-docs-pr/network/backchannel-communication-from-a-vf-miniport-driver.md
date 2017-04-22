@@ -2,7 +2,7 @@
 title: Backchannel Communication from a VF Miniport Driver
 description: Backchannel Communication from a VF Miniport Driver
 ms.assetid: B7208199-1308-4EF1-A03B-237A283563C4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

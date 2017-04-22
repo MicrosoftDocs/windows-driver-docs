@@ -4,7 +4,7 @@ description: Device Property Representations (Windows Server 2003, Windows XP, a
 ms.assetid: 124172d7-52a4-423c-a1fd-eec554f328d6
 keywords:
 - device properties WDK device installations , representations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

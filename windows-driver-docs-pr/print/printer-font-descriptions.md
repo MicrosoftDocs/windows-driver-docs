@@ -9,7 +9,7 @@ keywords:
 - printer font descriptions WDK Unidrv
 - font descriptions WDK Unidrv
 - printer font descriptions WDK Unidrv , about printer font descriptions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

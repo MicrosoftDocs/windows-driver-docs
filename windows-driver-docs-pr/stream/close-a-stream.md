@@ -7,7 +7,7 @@ keywords:
 - Avcstrm.sys streaming filter driver WDK , closing streams
 - stream closing WDK AV/C streaming
 - closing streams
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

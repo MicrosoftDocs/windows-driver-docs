@@ -6,7 +6,7 @@ ms.assetid: 4940e38d-107b-45c4-aa71-6e8543330f39
 keywords:
 - postoperation callback routines WDK file system minifilter , writing
 - writing callback routines
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

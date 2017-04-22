@@ -5,7 +5,7 @@ ms.assetid: 49ef3eae-88e6-4424-8c3b-19e8c3bb734f
 keywords:
 - add-registry-sections WDK networking , binding interfaces
 - binding interfaces WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: DirectX 7.0 Release Notes
 ms.assetid: 14a464c3-62be-458d-b7c9-c90ff6677d08
 keywords:
 - DirectX 7.0 release notes WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

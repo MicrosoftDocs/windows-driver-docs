@@ -9,7 +9,7 @@ keywords:
 - porting drivers WDK networking , CoNDIS drivers
 - network driver porting WDK , CoNDIS drivers
 - porting CoNDIS driv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ keywords:
 - wake-up events WDK Native 802.11
 - wake-on-wireless LAN WDK Native 802.11 , wake-up events
 - wake-up capabilities WDK networking , Native 802.11 wireless LAN
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

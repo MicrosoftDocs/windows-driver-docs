@@ -7,7 +7,7 @@ keywords:
 - IDE controller minidrivers WDK storage , vendor-supplied
 - storage IDE controller minidrivers WDK , vendor-supplied
 - vendor-supplied IDE controller minidrivers WDK storage
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

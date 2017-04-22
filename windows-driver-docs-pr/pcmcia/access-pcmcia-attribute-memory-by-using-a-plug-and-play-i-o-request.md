@@ -6,7 +6,7 @@ keywords:
 - attribute memory WDK PCMCIA bus , Plug and Play I/O requests
 - Plug and Play WDK PCMCIA bus
 - PnP WDK PCMCIA bus
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

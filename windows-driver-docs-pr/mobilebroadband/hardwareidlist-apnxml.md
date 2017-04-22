@@ -2,7 +2,7 @@
 title: HardwareIDList (APN element)
 description: HardwareIDList (APN element)
 ms.assetid: 9a3ca581-0afb-42fa-b13e-d233d9555b7e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

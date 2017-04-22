@@ -5,7 +5,7 @@ ms.assetid: 1d592ed3-44d2-4d12-9d31-19b07e6962ea
 keywords:
 - trace message format files WDK
 - TMF files WDK , displaying trace logs
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

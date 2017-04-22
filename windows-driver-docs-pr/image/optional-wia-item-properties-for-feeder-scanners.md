@@ -3,7 +3,7 @@ title: Optional WIA Item Properties for Feeder Scanners
 author: windows-driver-content
 description: Optional WIA Item Properties for Feeder Scanners
 ms.assetid: 2af138ea-c06d-4009-90e2-8a5c7d6242bb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

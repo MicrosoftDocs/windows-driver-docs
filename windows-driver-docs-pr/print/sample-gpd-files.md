@@ -7,7 +7,7 @@ keywords:
 - Unidrv, GPD files
 - GPD files WDK Unidrv , samples
 - Unidrv WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

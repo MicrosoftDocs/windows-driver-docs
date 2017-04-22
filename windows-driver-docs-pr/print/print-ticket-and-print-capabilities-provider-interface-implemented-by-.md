@@ -5,7 +5,7 @@ description: Print ticket and print capabilities provider interface implemented 
 ms.assetid: 00dcbbde-e4e4-4fcc-b69f-9c91051e0e29
 keywords:
 - Unidrv WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

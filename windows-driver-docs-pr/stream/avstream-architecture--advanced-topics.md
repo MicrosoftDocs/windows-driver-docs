@@ -5,7 +5,7 @@ description: AVStream Architecture Advanced Topics
 ms.assetid: 05e330f0-df6a-49bf-8033-a16388bf0f9e
 keywords:
 - AVStream WDK , architecture
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

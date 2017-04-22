@@ -5,7 +5,7 @@ ms.assetid: 224ebc3f-dace-4b41-bfc8-6fd81c8b309d
 keywords:
 - TMM WDK display , two monitor configurations
 - monitor configurations WDK display , two monitors
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

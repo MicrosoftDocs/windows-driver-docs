@@ -8,7 +8,7 @@ keywords:
 - drawing WDK GDI , rendering engine
 - rendering engine WDK GDI
 - PDEV WDK GDI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 Description: How to run stress and transfer and Super MUTT performance tests.
 title: How to run stress and transfer performance tests for MUTT devices
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

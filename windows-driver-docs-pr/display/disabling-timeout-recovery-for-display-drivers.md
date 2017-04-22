@@ -5,7 +5,7 @@ ms.assetid: 71fa0273-be21-4603-8491-09078a38cdf2
 keywords:
 - display drivers WDK Windows 2000 , timeout recovery
 - timeout recovery WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

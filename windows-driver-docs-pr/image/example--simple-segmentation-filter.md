@@ -3,7 +3,7 @@ title: Example Simple Segmentation Filter
 author: windows-driver-content
 description: Example Simple Segmentation Filter
 ms.assetid: 9c77fea4-61d9-4bec-8d8d-35436d00c1ed
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

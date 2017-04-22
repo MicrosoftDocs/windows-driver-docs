@@ -2,7 +2,7 @@
 title: WDF DDI Fault Injection Tester (WdfFiTester)
 description: WDF DDI Fault Injection Tester (WdfFiTester)
 ms.assetid: 0da52fad-a724-44f2-ba40-ad1c0359b012
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

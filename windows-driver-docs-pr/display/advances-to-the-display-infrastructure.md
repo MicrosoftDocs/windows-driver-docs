@@ -2,7 +2,7 @@
 title: Advances to the display Infrastructure
 description: Windows 8 provides enhancements and optimizations to the display infrastructure to further improve the user experience.
 ms.assetid: 312F39D8-5D95-4E3D-AB66-627E074115CD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

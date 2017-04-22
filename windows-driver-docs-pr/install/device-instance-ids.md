@@ -2,7 +2,7 @@
 title: Device Instance ID
 description: A device instance ID is a system-supplied device identification string that uniquely identifies a device in the system.
 ms.assetid: 578973f4-463f-4707-8dc3-dff27b3d3052
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
