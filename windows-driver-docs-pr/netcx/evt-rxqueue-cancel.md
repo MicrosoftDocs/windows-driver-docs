@@ -21,9 +21,9 @@ Syntax
 ------
 
 ```cpp
-EVT_RXQUEUE_CANCEL EvtRxqueueCancel;
+EVT_RXQUEUE_CANCEL EvtRxQueueCancel;
 
-void EvtRxqueueCancel(
+void EvtRxQueueCancel(
   _In_ NETRXQUEUE RxQueue
 )
 { ... }
@@ -31,13 +31,13 @@ void EvtRxqueueCancel(
 typedef EVT_RXQUEUE_CANCEL PFN_RXQUEUE_CANCEL;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md) and then calling [**NetRxQueueCreate**](netrxqueuecreate.md).
+Register this callback function in [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) before calling [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 Parameters
 ----------
 
 *RxQueue* [in]  
-A NETRXQUEUE object.
+A handle to a net receive queue.
 
 Return value
 ------------
@@ -47,9 +47,9 @@ This callback function does not return a value.
 Example
 -----
 
-Consider a simple example in which we have not provided buffers to any hardware.  In this case, it's safe to immediately return all the buffers to the host in the cancellation handler.
+EvtRxQueueCancel is called to request that the adapter terminate any outstanding receive operations. Unlike for EvtTxQueueCancel, the receive queue *must* use this opportunity to return any outstanding buffers to the OS. For more information on operating the ring buffer, see [**EvtRxQueueAdvance**](evt-rxqueue-advance.md).
 
-The fastest way to do that is to adjust the [*NET_RING_BUFFER*](net-ring-buffer.md) pointers like this:
+Typically, this involves advancing `BeginIndex` and `NextIndex` to `EndIndex`. If the receive queue does not return all packets in Cancel, this can result in a stuck queue.
 
 ```cpp
 VOID
@@ -64,9 +64,7 @@ EvtRxQueueCancel(NETRXQUEUE RxQueue)
 Remarks
 -------
 
-NetAdapterCx calls this event callback function when the queue is being deleted. *EVT_RXQUEUE_CANCEL* is the final **EVT_RXQUEUE_*Xxx*** callback that NetAdapterCx calls before deleting the queue.
-
-In this callback, the client typically completes pending packets and cleans up client specific context data associated with this NETRXQUEUE object.
+`EvtRxQueueCancel` is called by the framework to wind down the receive queue. Use the cancel callback to return all packets to the OS so the OS can destroy the queue.
 
 Requirements
 ------------

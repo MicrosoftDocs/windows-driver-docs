@@ -36,7 +36,7 @@ Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The NetAdapter object that was created by [**NetAdapterCreate**](netadaptercreate.md).
 
 *RxQueueInit* [in, out]  
 A pointer to a NetAdapterCx-allocated **NETRXQUEUE_INIT** structure. For more information, see the Remarks section.
@@ -54,6 +54,10 @@ To register an *EVT_NET_ADAPTER_CREATE_RXQUEUE* callback function, the client dr
 The **NETRXQUEUE_INIT** structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to [WDFDEVICE_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951).
 
 In this callback, the client driver might call [**NetRxQueueInitGetQueueId**](netrxqueueinitgetqueueid.md) to retrieve the identifier of the receive queue to set up.
+
+The NetRxQueue's ring buffer is allocated in NetRxQueueCreate, so it can be retrieved via [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) after queue creation. You can use this as an opportunity to allocate any per-packet resources.
+
+If AllocationSize is specified, the receive buffers are not allocated until after this function returns.
 
 Example
 -----
@@ -88,7 +92,7 @@ EvtAdapterCreateRxQueue(
         &rxConfig,
         &adapter->RxQueue);
 
-    // Specify that the OS use a WDFDMAENABLER to allocate the needed buffers
+    // Specify that the OS use a WDFDMAENABLER to allocate the receive buffers
 
     status = NetRxQueueConfigureDmaAllocator(
         adapter->RxQueue,
@@ -121,7 +125,7 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
-<td align="left">Netadapter.h</td>
+<td align="left">NetAdapter.h</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>IRQL</p></td>

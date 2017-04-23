@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Implemented by the client driver to perform client-specific processing when there are new packets received in the specified queue.
+Implemented by the client driver to enable device's receive queue notification.
 
 Syntax
 ------
@@ -32,32 +32,57 @@ NTSTATUS EvtRxqueueSetNotificationEnabled(
 typedef EVT_RXQUEUE_SET_NOTIFICATION_ENABLED PFN_RXQUEUE_SET_NOTIFICATION_ENABLED;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md) and then calling [**NetRxQueueCreate**](netrxqueuecreate.md).
+Register this callback function in [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) before calling [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 Parameters
 ----------
 
 *RxQueue* [in]  
-A handle to a net receive queue object.
+A handle to a net receive queue.
 
 *NotificationEnabled* [in]  
-A Boolean value which, if TRUE, indicates that the driver's EVT_RXQUEUE_ADVANCE callback will not be called until either a higher level application finishes processing previously indicated data, or the driver calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md).  See Remarks for more info.
+`TRUE` requests that the client enable its receive queue's notification. `FALSE` requests the client disable its receive queue's notification.
 
 Return value
 ------------
 
-If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return `STATUS_SUCCESS`, or another status value for which `NT_SUCCESS(status)` is true. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 Remarks
 -------
 
-If *NotificationEnabled* is TRUE, NetAdapterCx waits to call [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) until after the client driver has called [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md).
+If *NotificationEnabled* is `TRUE`, the client should enable its receive queue's notification. If *NotificationEnabled* is `FALSE`, the client should disable its receive queue's notification.
 
-In this callback, a client driver for a PCI device typically enables the hardware’s receive interrupt. Then from its interrupt handler, the client driver calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md).
+For a PCI NIC this typically means to enable the receive queue's hardware interrupt. When the hardware interrupt fires, it should call [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md) from its DPC.
 
-For a USB device, the client driver might track a flag, for example on the queue context. When a message is available in the continuous reader of the USB bus, the client driver calls [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md). The following example shows how you might do this.
+For example:
+```cpp
+NTSTATUS
+EvtRxQueueSetNotificationEnabled(
+    _In_ NETRXQUEUE rxQueue,
+    _In_ BOOLEAN notificationEnabled)
+{
+    // optional: retrieve queue's WDF context
+    MY_RX_QUEUE_CONTEXT *rxContext = GetRxQueueContext(RxQueue);
 
+    // Enable receive queue's hardware interrupt
+    ...
+}
+
+void
+EvtInterruptDpc(
+    _In_ WDFINTERRUPT interrupt,
+    _In_ WDFOBJECT associatedObject)
+{
+    MY_INTERRUPT_CONTEXT *interruptContext = GetInterruptContext(interrupt);
+
+    NetRxQueueNotifyMoreReceivedPacketsAvailable(interruptContext->RxQueue);
+}
 ```
+
+For a USB device, or any other queue with a software receive completion mechanism, the client driver should track in its own context whether the queue's notification is enabled. When the completion routine is executed (e.g. a message becomes available in USB continuous reader), call [**NetRxQueueNotifyMoreReceivedPacketsAvailable**](netrxqueuenotifymorereceivedpacketsavailable.md) if the notification is enabled. The following example shows how you might do this.
+
+```cpp
 VOID
 UsbEvtReaderCompletionRoutine(
     _In_ WDFUSBPIPE pipe,
