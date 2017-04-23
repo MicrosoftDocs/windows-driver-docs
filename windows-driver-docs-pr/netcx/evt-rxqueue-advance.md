@@ -96,7 +96,7 @@ EvtRxQueueAdvance(NETRXQUEUE RxQueue)
 
 4.  Indicate received packets to the OS by advancing `BeginIndex` past each descriptor that the hardware indicates has received packets. If the driver completes packets asynchronously in software (e.g. a USB bus completes receive requests asynchronously), then use the `Completed` flag on the packet's [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to track completion.
 
-```
+```cpp
     while (ringBuffer->BeginIndex != ringBuffer->NextIndex)
     {
         NET_PACKET *netPacket =
@@ -114,6 +114,8 @@ EvtRxQueueAdvance(NETRXQUEUE RxQueue)
             NetRingBufferIncrementIndex(RingBuffer, RingBuffer->BeginIndex);
     }
 ```
+
+`EvtRxQueueAdvance` is serialized with the queue's [**EvtRxQueueCancel**](evt-rxqueue-cancel.md) and [**EvtRxQueueSetNotificationEnabled**](evt-rxqueue-set-notification-enabled.md) callbacks.
 
 Requirements
 ------------

@@ -23,7 +23,7 @@ Syntax
 ```cpp
 EVT_TXQUEUE_CANCEL EvtTxqueueCancel;
 
-void EvtTxqueueCancel(
+void EvtTxQueueCancel(
   _In_ NETTXQUEUE TxQueue
 )
 { ... }
@@ -31,13 +31,13 @@ void EvtTxqueueCancel(
 typedef EVT_TXQUEUE_CANCEL PFN_TXQUEUE_CANCEL;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET_TXQUEUE_CONFIG**](net-txqueue-config.md) and then calling [**NetTxQueueCreate**](nettxqueuecreate.md).
+Register this callback function in [**NET_TXQUEUE_CONFIG_INIT**](net-txqueue-config-init.md) before calling [**NetTxQueueCreate**](nettxqueuecreate.md).
 
 Parameters
 ----------
 
 *TxQueue* [in]  
-A NETTXQUEUE object.
+A handle to a net transmit queue.
 
 Return value
 ------------
@@ -47,9 +47,11 @@ This callback function does not return a value.
 Remarks
 -------
 
-NetAdapterCx calls this event callback function when the queue is being deleted. *EVT_TXQUEUE_CANCEL* is the final **EVT_TXQUEUE_*Xxx*** callback that NetAdapterCx calls.
+EvtTxQueueCancel is called to request that the adapter terminate any outstanding transmit operations. The device driver should attempt to stop any outstanding transmit operations, but it is not required since the OS can drain the remaining transmits via the queue's `EvtTxQueueAdvance` like usual. For more information on operating the ring buffer in general, see [**EvtTxQueueAdvance**](evt-txqueue-advance.md).
 
-In this callback, the client typically completes pending packets and cleans up client specific context data associated with this NETTXQUEUE object.
+If the hardware supports cancelling in-flight transmits, the adapter should advance BeginIndex past all cancelled packets, as well. If the hardware does not support cancellation, this callback can be a no-op.
+
+`EvtTxQueueCancel` is serialized with the queue's [**EvtTxQueueAdvance**](evt-txqueue-advance.md) and [**EvtTxQueueSetNotificationEnabled**](evt-txqueue-set-notification-enabled.md) callbacks.
 
 Requirements
 ------------
@@ -74,7 +76,7 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
-<td align="left">Nettxqueue.h</td>
+<td align="left">NetTxQueue.h</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>IRQL</p></td>

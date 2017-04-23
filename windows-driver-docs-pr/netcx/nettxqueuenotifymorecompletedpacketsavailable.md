@@ -30,7 +30,7 @@ Parameters
 ----------
 
 *TxQueue* [in]  
-A handle to a net transmit queue object.
+A handle to a net transmit queue.
 
 Return value
 ------------

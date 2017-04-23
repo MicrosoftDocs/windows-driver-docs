@@ -113,6 +113,8 @@ UsbEvtReaderCompletionRoutine(
 }
 ```
 
+`EvtRxQueueSetNotificationEnabled` is serialized with the queue's [**EvtRxQueueAdvance**](evt-rxqueue-advance.md) and [**EvtRxQueueCancel**](evt-rxqueue-cancel.md) callbacks.
+
 Requirements
 ------------
 
