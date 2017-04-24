@@ -2,7 +2,7 @@
 title: Developing SMS apps
 description: Developing SMS apps
 ms.assetid: 052eb3cc-4a39-4667-8678-b18650f3b5c9
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

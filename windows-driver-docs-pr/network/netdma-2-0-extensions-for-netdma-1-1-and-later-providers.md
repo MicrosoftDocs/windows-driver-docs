@@ -4,7 +4,7 @@ description: NetDMA 2.0 Extensions for NetDMA 1.1 and Later Providers
 ms.assetid: 2fc3de6d-56d9-47df-b420-f1ccc5f28c5e
 keywords:
 - extensions WDK NetDMA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

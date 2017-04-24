@@ -5,7 +5,7 @@ description: Creating Callback Objects Example
 ms.assetid: 4476c2f0-12ba-4678-b20e-bde7e81df01d
 keywords:
 - callback objects WDK UMDF , example of creating
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

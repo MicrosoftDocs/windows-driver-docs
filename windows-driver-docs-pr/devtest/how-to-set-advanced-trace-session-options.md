@@ -4,7 +4,7 @@ description: How to set advanced trace session options
 ms.assetid: a0dc0e15-3fcd-4640-ab9d-4c5b005bc4c1
 keywords:
 - trace sessions WDK , advanced options
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

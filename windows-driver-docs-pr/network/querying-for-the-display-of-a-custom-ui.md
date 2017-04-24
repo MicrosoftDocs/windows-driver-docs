@@ -5,7 +5,7 @@ ms.assetid: 89f39281-db97-4cbe-8753-43ab30d840c8
 keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , querying
 - querying custom UI display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

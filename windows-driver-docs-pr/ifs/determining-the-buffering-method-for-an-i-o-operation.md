@@ -12,7 +12,7 @@ keywords:
 - neither buffered nor direct I/O WDK file system
 - data buffers WDK file system minifilter
 - I/O WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

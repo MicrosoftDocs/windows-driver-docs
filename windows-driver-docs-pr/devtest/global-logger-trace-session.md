@@ -6,7 +6,7 @@ keywords:
 - trace sessions WDK , Global Logger
 - Global Logger trace session WDK , about Global Logger sessions
 - Global Logger trace session WDK , registry entries
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

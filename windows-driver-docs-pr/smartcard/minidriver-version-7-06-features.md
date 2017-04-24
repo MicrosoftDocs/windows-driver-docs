@@ -2,7 +2,7 @@
 title: Minidriver Version 7.06 Features
 description: Minidriver Version 7.06 Features
 ms.assetid: 6066C6F9-DF03-4886-A5AE-FFE50B2B34D8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

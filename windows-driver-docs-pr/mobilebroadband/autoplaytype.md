@@ -2,7 +2,7 @@
 title: AutoplayType
 description: AutoplayType
 ms.assetid: 06097d2a-7883-416e-a81d-3a8abccc620b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

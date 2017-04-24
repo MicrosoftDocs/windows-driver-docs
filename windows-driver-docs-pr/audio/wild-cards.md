@@ -6,7 +6,7 @@ keywords:
 - data-intersection handlers WDK audio , wild cards
 - wild cards WDK audio
 - data ranges WDK audio , wild cards
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

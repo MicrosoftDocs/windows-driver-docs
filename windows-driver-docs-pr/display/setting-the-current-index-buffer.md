@@ -5,7 +5,7 @@ ms.assetid: 4d190ce1-56a0-4445-9a68-6a24f3a9aee4
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , index buffers
 - index buffers WDK Directx 8.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

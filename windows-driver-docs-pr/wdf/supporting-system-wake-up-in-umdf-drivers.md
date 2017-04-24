@@ -6,7 +6,7 @@ ms.assetid: 945b1751-f3a1-4a29-8fb7-6690f91af7d9
 keywords:
 - power management WDK UMDF , system wake-up
 - system wake-up WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

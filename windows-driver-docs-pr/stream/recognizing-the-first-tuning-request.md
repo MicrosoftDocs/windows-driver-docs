@@ -7,7 +7,7 @@ keywords:
 - first tuning requests WDK video capture
 - recognizing first tuning requests WDK video capture
 - radio tuners WDK video capture
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

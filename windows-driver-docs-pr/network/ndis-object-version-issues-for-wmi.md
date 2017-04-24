@@ -4,7 +4,7 @@ description: NDIS Object Version Issues for WMI
 ms.assetid: 09440de8-125b-4155-9f28-c9f6893071b2
 keywords:
 - NDIS version information WDK , WMI support
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

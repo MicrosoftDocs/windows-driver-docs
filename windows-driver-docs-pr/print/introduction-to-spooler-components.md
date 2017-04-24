@@ -6,7 +6,7 @@ ms.assetid: 4eb6e84a-f75f-4ec2-af4f-0007678d120b
 keywords:
 - spooler component diagram WDK print
 - print spooler component diagram WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

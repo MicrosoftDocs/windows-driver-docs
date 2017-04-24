@@ -5,7 +5,7 @@ description: Option Attributes for the PaperSize Feature
 ms.assetid: cfd82bc5-b89b-41c2-b542-28cb5905e37a
 keywords:
 - PaperSize Feature
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

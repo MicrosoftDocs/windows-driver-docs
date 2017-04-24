@@ -2,7 +2,7 @@
 title: Best practices for handling account arrival and removal events
 description: Best practices for handling account arrival and removal events
 ms.assetid: e299a920-a27e-4832-b81d-1562f86f37e2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

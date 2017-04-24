@@ -5,7 +5,7 @@ ms.assetid: 3f56f7c1-89d6-40d0-9540-b6280379ddc5
 keywords:
 - multiple textures WDK Direct3D , validation
 - texture management WDK Direct3D , validation
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -29,7 +29,7 @@
 #### [Introduction to the Sensor and Location Platform in Windows](introduction-to-the-sensor-and-location-platform-in-windows.md)
 #### [For More Information](for-more-information.md)
 ### [Sensor Driver Overview](sensor-driver-overview.md)
-#### [Architecture Overview](architecture-overview.md)
+#### [Architecture Overview](architecture-overview-for-sensor-drivers.md)
 #### [About the Sensor Class Extension](about-the-sensor-class-extension.md)
 #### [About the Interfaces](about-the-interfaces.md)
 ##### [About ISensorClassExtension](about-isensorclassextension.md)

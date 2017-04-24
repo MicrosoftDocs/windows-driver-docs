@@ -5,7 +5,7 @@ description: Print Provider Capabilities
 ms.assetid: 1b01aac5-673a-4593-a52e-6017d9683c42
 keywords:
 - print providers WDK , capabilities
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

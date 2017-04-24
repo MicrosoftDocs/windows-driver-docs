@@ -6,7 +6,7 @@ keywords:
 - trace sessions WDK , stopping
 - stopping trace sessions
 - TraceView WDK , stopping trace
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

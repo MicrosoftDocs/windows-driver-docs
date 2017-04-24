@@ -5,7 +5,7 @@ ms.assetid: c0b0885b-deec-4e55-b6ff-2c6925974b86
 keywords:
 - miniport drivers WDK networking , NIC support
 - NDIS miniport drivers WDK , NIC support
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

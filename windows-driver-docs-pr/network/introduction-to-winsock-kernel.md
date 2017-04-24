@@ -5,7 +5,7 @@ ms.assetid: 52c65b9f-e3b3-4b0d-8334-7db1abb2c971
 keywords:
 - Winsock Kernel WDK networking , about Winsock Kernel
 - WSK WDK networking , about Winsock Kernel
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

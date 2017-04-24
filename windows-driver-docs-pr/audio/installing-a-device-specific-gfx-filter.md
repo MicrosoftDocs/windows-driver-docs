@@ -4,7 +4,7 @@ description: Installing a Device-Specific GFX Filter
 ms.assetid: f917bb0d-eff8-4f1f-b7ad-3d135495e6e8
 keywords:
 - GFX filters WDK audio , installing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

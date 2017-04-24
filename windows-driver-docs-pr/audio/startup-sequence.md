@@ -6,7 +6,7 @@ keywords:
 - adapter drivers WDK audio , startup sequences
 - startup sequences WDK audio
 - audio adapters WDK , startup sequences
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

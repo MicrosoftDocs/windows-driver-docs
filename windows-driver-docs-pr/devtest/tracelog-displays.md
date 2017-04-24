@@ -4,7 +4,7 @@ description: Tracelog Displays
 ms.assetid: 663af703-dacb-44ca-8b45-f324fa54ab6c
 keywords:
 - Tracelog WDK , displays
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

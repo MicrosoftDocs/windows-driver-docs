@@ -2,7 +2,7 @@
 title: Tracing and Diagnosability for WDF Drivers
 description: This paper discusses how to implement event tracing using the Windows software trace preprocessor (WPP) in a Windows Driver Foundation (WDF) driver.
 ms.assetid: C89A218F-3E73-4D3E-8F53-5D52E97711EF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

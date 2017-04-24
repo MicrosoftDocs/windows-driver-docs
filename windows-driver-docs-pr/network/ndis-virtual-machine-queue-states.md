@@ -2,7 +2,7 @@
 title: NDIS Virtual Machine Queue States
 description: NDIS Virtual Machine Queue States
 ms.assetid: 69a301ac-71f4-4591-80ff-356c32187aa8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

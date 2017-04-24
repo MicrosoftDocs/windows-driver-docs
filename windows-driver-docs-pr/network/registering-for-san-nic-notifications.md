@@ -7,7 +7,7 @@ keywords:
 - proxy drivers WDK SANs , NIC notifications
 - SAN proxy drivers WDK , NIC notifications
 - registering NIC notifications
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

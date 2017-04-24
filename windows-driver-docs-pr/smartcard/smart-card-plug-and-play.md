@@ -2,7 +2,7 @@
 title: Smart Card Plug and Play
 description: Smart Card Plug and Play
 ms.assetid: AE65A450-62A4-4774-A935-B7CB4301CCF4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

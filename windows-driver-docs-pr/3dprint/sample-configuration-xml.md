@@ -2,7 +2,7 @@
 title: Sample configuration XML
 author: windows-driver-content
 description: Use the sample configuration XML in this topic to develop configuration files for your device.
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

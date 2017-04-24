@@ -2,7 +2,7 @@
 title: About Kernel Mode Performance Counters
 description: About Kernel Mode Performance Counters
 ms.assetid: 57655e65-6db4-487d-8831-282e8d30d84e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

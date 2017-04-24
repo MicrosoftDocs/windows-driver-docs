@@ -5,7 +5,7 @@ ms.assetid: f83ed82a-2aa8-4ec6-92c1-4f694ca0f2af
 keywords:
 - configurations WDK Native 802.11 , querying and setting attributes
 - querying Native 802.11 configuration attributes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

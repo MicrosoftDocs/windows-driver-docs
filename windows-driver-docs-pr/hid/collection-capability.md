@@ -6,7 +6,7 @@ ms.assetid: 228fab4f-ff90-43c5-bc68-26b29e8a7dd6
 keywords:
 - capabilities WDK HID collections
 - summary capabilities WDK HID
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

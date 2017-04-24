@@ -2,7 +2,7 @@
 title: Cloning Packet Traffic
 description: Cloning Packet Traffic
 ms.assetid: 6BAE348D-B5BA-4B74-8D9B-79B146427D8C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

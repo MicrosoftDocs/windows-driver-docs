@@ -3,7 +3,7 @@ title: LDAP and Active Directory Queries
 author: windows-driver-content
 description: LDAP and Active Directory Queries
 ms.assetid: 866c603e-6265-47a2-b78a-c64a8cb1e553
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

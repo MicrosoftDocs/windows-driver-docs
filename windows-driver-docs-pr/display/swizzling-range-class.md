@@ -4,7 +4,7 @@ description: Swizzling Range Class
 ms.assetid: 2f5d5b91-ebd8-4242-8719-8a21bc3e9888
 keywords:
 - swizzling range class WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

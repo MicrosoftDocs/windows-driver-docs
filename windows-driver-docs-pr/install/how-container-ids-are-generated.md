@@ -2,7 +2,7 @@
 title: How Container IDs are Generated
 description: How Container IDs are Generated
 ms.assetid: baa3c045-05ee-4012-97a3-c6e575c897be
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

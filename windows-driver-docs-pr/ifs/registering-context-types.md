@@ -7,7 +7,7 @@ keywords:
 - contexts WDK file system minifilter , registering types
 - registering context types
 - FLT_CONTEXT_REGISTRATION
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

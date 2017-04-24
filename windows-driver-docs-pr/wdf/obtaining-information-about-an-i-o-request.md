@@ -8,7 +8,7 @@ keywords:
 - I/O requests WDK KMDF , obtaining information about
 - status information WDK KMDF
 - status information WDK KMDF , I/O requests
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

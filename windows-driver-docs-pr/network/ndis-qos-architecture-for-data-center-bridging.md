@@ -2,7 +2,7 @@
 title: NDIS QoS Architecture for Data Center Bridging
 description: NDIS QoS Architecture for Data Center Bridging
 ms.assetid: ECB156D8-ECD5-49DE-BC75-6562B90F6056
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

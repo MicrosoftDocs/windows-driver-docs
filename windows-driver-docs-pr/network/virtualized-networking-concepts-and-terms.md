@@ -2,7 +2,7 @@
 title: Virtualized Networking Concepts and Terms
 description: Virtualized Networking Concepts and Terms
 ms.assetid: 467996B2-9319-47F9-BAEB-5AC1F20B6E01
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

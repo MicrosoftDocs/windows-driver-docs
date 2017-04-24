@@ -2,7 +2,7 @@
 title: Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface
 description: Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface
 ms.assetid: 475bf66a-5b6e-4a06-95f7-b7280dd7276d
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -10,7 +10,7 @@ keywords:
 - MIDI stream data formats WDK audio
 - DirectMusic WDK audio , stream data formats
 - DMus stream data formats WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

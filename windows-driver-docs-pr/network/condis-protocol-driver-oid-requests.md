@@ -5,7 +5,7 @@ ms.assetid: 1338d199-2cd8-430a-a0a5-95aaea04c384
 keywords:
 - protocol drivers WDK networking , CoNDIS
 - NDIS protocol drivers WDK , CoNDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

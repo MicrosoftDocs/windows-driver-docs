@@ -3,7 +3,7 @@ title: Requirements for Using Storport with an Adapter
 author: windows-driver-content
 description: Requirements for Using Storport with an Adapter
 ms.assetid: 85adf2f9-e9eb-40d8-9177-adda150a8ea4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

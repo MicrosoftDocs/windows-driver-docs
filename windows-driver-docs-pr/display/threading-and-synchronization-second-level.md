@@ -5,7 +5,7 @@ ms.assetid: 2b7c1eae-6527-469e-a2fa-74d2a1246bd3
 keywords:
 - threading WDK display , second level
 - synchronization WDK display , second level
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

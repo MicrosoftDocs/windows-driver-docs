@@ -11,7 +11,7 @@ keywords:
 - VJoyD WDK HID
 - virtual joystick drivers WDK HID , about VJoyD
 - VJoyD WDK HID , about VJoyD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

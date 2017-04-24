@@ -15,7 +15,7 @@ keywords:
 - Build utility WDK , KMDF
 - KMDF drivers WDK KMDF , building
 - KMDF drivers WDK KMDF , loading
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

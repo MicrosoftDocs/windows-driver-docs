@@ -9,7 +9,7 @@ keywords:
 - drawing WDK GDI , lines, geometric wide
 - geometric wide lines WDK GDI
 - geometric lines WDK GDI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

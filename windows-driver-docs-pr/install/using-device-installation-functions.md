@@ -5,7 +5,7 @@ ms.assetid: a7cfa359-a45c-45fa-a854-ee70de66b12e
 keywords:
 - SetupAPI functions WDK , device installation functions
 - device installation functions WDK SetupAPI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

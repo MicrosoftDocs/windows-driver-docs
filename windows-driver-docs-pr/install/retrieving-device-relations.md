@@ -2,7 +2,7 @@
 title: Retrieving Device Relations
 description: Retrieving Device Relations
 ms.assetid: 2b0ead69-1fda-4024-a7c2-d6350060b5fb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

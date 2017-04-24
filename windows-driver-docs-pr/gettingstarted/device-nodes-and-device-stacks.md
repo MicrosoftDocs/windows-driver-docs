@@ -5,7 +5,7 @@ ms.assetid: 7bf38b3b-72ba-461c-b9e2-68b697359b37
 keywords:
 - device node
 - device stack
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

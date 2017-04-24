@@ -10,7 +10,7 @@ keywords:
 - periodic timers WDK KMDF
 - stopping timers WDK KMDF
 - starting timers WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

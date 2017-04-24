@@ -8,7 +8,7 @@ keywords:
 - network component removal WDK
 - removing network components
 - notifications WDK networking , removing network components
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

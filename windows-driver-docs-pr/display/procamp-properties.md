@@ -4,7 +4,7 @@ description: ProcAmp Properties
 ms.assetid: 412c9144-dd52-4b36-bea1-b17c9c2c95b3
 keywords:
 - ProcAmp WDK DirectX VA , properties
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

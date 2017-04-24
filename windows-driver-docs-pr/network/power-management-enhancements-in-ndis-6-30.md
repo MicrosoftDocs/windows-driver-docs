@@ -2,7 +2,7 @@
 title: Power management enhancements in NDIS 6.30
 ms.assetid: A3B64252-DD6C-4715-8D4B-8D8176BC585B
 description: Introduces NDIS 6.30 power management enhancements to reduce computer power consumption
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

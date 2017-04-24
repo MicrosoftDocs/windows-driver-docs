@@ -5,7 +5,7 @@ ms.assetid: eb1270c3-0eaa-47a4-8fc6-53aea981b597
 keywords:
 - Direct3D WDK Windows 2000 display , w-buffering
 - w-buffering WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

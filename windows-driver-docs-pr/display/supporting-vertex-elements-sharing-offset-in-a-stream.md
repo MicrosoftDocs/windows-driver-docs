@@ -9,7 +9,7 @@ keywords:
 - vertex stream offsets WDK DirectX 9.0 , vertex shader declarations
 - stream offsets WDK DirectX 9.0
 - stream offsets WDK DirectX 9.0 , vertex shader declarations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

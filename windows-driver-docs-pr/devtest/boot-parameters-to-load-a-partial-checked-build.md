@@ -7,7 +7,7 @@ keywords:
 - boot parameters WDK
 - boot entry parameters WDK
 - loading partial checked builds WDK boot options
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

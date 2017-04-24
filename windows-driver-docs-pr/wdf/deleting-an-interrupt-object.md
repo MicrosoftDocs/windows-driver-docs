@@ -3,7 +3,7 @@ title: Deleting an Interrupt Object
 author: windows-driver-content
 description: Deleting an Interrupt Object
 ms.assetid: B72DA452-B22F-47CD-8C5D-E741F09F556E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

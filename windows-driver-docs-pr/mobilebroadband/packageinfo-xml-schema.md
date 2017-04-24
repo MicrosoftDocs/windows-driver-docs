@@ -2,7 +2,7 @@
 title: PackageInfo XML schema
 description: PackageInfo XML schema
 ms.assetid: 5873604e-564e-4c8e-bfc7-526aac5767fa
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

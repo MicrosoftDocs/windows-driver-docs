@@ -7,7 +7,7 @@ keywords:
 - AH-protected packets WDK IPsec offload , routing interface changed
 - ESP-protected packets WDK IPsec offload , NIC removed and
 - AH-protected packets WDK IPsec offload , NIC removed and
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

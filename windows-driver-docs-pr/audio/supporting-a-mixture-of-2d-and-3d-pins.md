@@ -8,7 +8,7 @@ keywords:
 - 2D mixing WDK audio
 - pins WDK audio , 2D
 - pins WDK audio , 3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

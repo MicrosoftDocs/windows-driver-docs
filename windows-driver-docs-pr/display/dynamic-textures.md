@@ -5,7 +5,7 @@ ms.assetid: 5e96b33c-a07c-4f58-a016-14d8d925285e
 keywords:
 - textures WDK DirectX 9.0
 - dynamic textures WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

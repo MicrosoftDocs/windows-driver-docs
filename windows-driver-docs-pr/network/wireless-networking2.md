@@ -6,7 +6,7 @@ keywords:
 - network drivers WDK , wireless networking
 - NDIS WDK , wireless networking
 - wireless networking WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: da38268f-ebdf-468c-95fe-500ba747047a
 keywords:
 - TraceView WDK , command-line interface
 - commands WDK TraceView
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

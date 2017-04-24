@@ -2,7 +2,7 @@
 title: Minidriver Version 5.07 Features
 description: Minidriver Version 5.07 Features
 ms.assetid: BFB38805-D2D3-40D2-B336-127B3B84141D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

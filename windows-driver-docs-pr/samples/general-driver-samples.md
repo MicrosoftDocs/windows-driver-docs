@@ -1,9 +1,9 @@
 ---
 title: General driver samples
 author: windows-driver-content
-description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
+description: The samples in this directory provide a starting point for writing a custom driver for your device.
 ms.assetid: C5DC72F1-D093-47D0-9AC3-680878C5A868
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # General driver samples
 
 
-The driver samples in this directory provide a starting point for writing a custom driver for your device.
+The samples in this directory provide a starting point for writing a custom driver for your device.
 
 ## General samples
 

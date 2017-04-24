@@ -10,7 +10,7 @@ keywords:
 - WPP software tracing WDK , invoking preprocessor
 - Windows software trace preprocessor WDK , build process
 - WPP software tracing WDK , build process
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - Direct3D version 10 WDK Windows 7 display
 - Direct3D version 10 WDK Windows 7 display , changes in Direct3D version 11
 - Direct3D version 10 WDK Windows Server 2008 R2 display , changes in Direct3D version 11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

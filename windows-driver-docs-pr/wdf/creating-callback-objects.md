@@ -10,7 +10,7 @@ keywords:
 - user-mode drivers WDK UMDF , objects
 - UMDF objects WDK , callback objects
 - framework objects WDK UMDF , callback objects
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

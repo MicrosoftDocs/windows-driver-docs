@@ -1,7 +1,7 @@
 ---
 Description: In Windows 8.1, you can write a Windows Store app that interacts with a USB device.
 title: How to connect to a USB device (Windows Store app)
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

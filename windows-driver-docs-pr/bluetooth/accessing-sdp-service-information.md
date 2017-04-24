@@ -12,7 +12,7 @@ keywords:
 - IOCTL_BTH_SDP_CONNECT
 - searching SDP records WDK Bluetooth
 - IOCTL_BTH_SDP_SERVICE_SEARCH
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

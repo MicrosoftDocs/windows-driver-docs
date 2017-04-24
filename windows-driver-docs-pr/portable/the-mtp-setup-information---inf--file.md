@@ -1,7 +1,7 @@
 ---
 Description: The MTP Setup Information (.inf) File
 title: The MTP Setup Information (.inf) File
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

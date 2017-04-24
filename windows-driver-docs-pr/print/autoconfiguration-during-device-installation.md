@@ -6,7 +6,7 @@ ms.assetid: 04b53767-4b5e-450d-96ab-b029cdf62b36
 keywords:
 - autoconfiguration WDK printer , during device installations
 - printer autoconfiguration WDK printer , during device installations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

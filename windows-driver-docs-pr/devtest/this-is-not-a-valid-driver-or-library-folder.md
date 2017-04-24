@@ -2,7 +2,7 @@
 title: This is not a valid driver or library folder
 description: This is not a valid driver or library folder
 ms.assetid: df87e248-3a15-4588-a50b-800998c4b7e7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Common Distributed Scan Processing Web Service Operation Error Codes
 author: windows-driver-content
 description: Common Distributed Scan Processing Web Service Operation Error Codes
 ms.assetid: d31898d2-3536-4cc2-8480-c78e952fcdbb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

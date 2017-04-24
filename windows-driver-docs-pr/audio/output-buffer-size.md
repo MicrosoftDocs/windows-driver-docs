@@ -6,7 +6,7 @@ keywords:
 - data-intersection handlers WDK audio , output buffer size
 - output buffers WDK audio
 - buffer size WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

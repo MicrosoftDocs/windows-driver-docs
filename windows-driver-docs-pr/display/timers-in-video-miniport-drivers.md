@@ -6,7 +6,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , timers
 - timers WDK video miniport
 - HwVidTimer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

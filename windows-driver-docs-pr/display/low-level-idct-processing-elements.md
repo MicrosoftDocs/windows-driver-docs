@@ -9,7 +9,7 @@ keywords:
 - host-based IDCT WDK DirectX VA
 - inverse discrete-cosine transform WDK DirectX VA
 - IDCT WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

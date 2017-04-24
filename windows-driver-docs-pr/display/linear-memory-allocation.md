@@ -4,7 +4,7 @@ description: Linear Memory Allocation
 ms.assetid: f39c6752-c771-43d4-b89e-77f3d542d1fd
 keywords:
 - linear memory allocation WDK DirectDraw
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

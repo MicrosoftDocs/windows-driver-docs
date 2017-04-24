@@ -8,7 +8,7 @@ keywords:
 - Redirected Drive Buffering Subsystem WDK file systems , low I/O routines
 - low I/O routines WDK RDBSS
 - I/O WDK RDBSS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

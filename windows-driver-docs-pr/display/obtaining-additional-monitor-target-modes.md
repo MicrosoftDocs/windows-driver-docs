@@ -4,7 +4,7 @@ description: Obtaining Additional Monitor Target Modes
 ms.assetid: fc0e2d43-8fc2-4757-ba77-f72a01e04343
 keywords:
 - monitor target modes WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

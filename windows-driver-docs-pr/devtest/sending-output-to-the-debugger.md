@@ -9,7 +9,7 @@ keywords:
 - user-mode output routines WDK
 - kernel-mode output routines WDK
 - routines WDK debugging , output
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

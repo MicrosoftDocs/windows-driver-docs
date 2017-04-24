@@ -5,7 +5,7 @@ ms.assetid: 57b4dac8-c694-47ec-b5f9-19247b4de433
 keywords:
 - unused channel defaults WDK DirectX 9.0
 - channel defaults WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

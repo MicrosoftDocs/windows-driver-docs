@@ -3,7 +3,7 @@ title: PrintTicket document example
 author: windows-driver-content
 description: The keywords in this example are for illustration only, although they reflect the Print Schema keywords for 3D manufacturing.
 ms.assetid: 139CF759-0A94-44A5-97BD-4EFD072220EF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

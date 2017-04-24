@@ -8,7 +8,7 @@ keywords:
 - CPSUI WDK print , functions
 - property sheet pages WDK print , functions
 - functions WDK CPSUI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

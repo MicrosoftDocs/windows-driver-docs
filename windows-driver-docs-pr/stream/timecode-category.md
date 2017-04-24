@@ -7,7 +7,7 @@ keywords:
 - stream categories WDK video capture , imecode
 - Timecode category WDK video capture
 - PINNAME_VIDEO_TIMECODE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

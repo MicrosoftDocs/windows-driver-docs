@@ -6,7 +6,7 @@ keywords:
 - multiple-head hardware WDK DirectX 9.0
 - hardware multiple-head support WDK DirectX 9.0
 - multiple-head hardware WDK DirectX 9.0 , about multiple-head hardware
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

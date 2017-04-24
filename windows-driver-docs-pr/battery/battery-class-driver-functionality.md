@@ -4,7 +4,7 @@ description: Battery Class Driver Functionality
 ms.assetid: cd7536d9-bcf1-4674-8ebf-af2b888a0f0a
 keywords:
 - battery class drivers WDK , functionality
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

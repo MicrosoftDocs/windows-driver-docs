@@ -6,7 +6,7 @@ ms.assetid: 15af499a-c541-4d61-ace3-5a211574674c
 keywords:
 - minidriver-supplied halftoning WDK Unidrv
 - customized halftoning WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

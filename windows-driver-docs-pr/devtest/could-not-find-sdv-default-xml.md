@@ -2,7 +2,7 @@
 title: Could not find Sdv-default.xml
 description: Could not find Sdv-default.xml
 ms.assetid: b8d928b0-8e6b-48de-98e2-554eb67c9a0b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

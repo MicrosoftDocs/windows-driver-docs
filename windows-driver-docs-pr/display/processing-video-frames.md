@@ -6,7 +6,7 @@ keywords:
 - video processing WDK DirectX VA , video frame processing
 - video frame processing WDK DirectX VA
 - frames WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

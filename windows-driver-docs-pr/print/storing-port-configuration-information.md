@@ -9,7 +9,7 @@ keywords:
 - print spooler registry information WDK print monitor
 - storing print port configuration information
 - spooler registry information WDK print monitor
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

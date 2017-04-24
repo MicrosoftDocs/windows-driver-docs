@@ -10,7 +10,7 @@ keywords:
 - collections WDK HID , opening
 - HID collections WDK , opening
 - opening HID collections
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

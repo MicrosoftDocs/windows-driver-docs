@@ -5,7 +5,7 @@ description: Using Hardware Mediums in AVStream Codecs
 ms.assetid: 07c25875-c549-4d47-ac0d-605f2aa9daa4
 keywords:
 - AVStream hardware codec support WDK , using hardware mediums
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

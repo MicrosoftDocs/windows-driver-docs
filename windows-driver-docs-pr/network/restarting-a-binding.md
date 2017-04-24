@@ -8,7 +8,7 @@ keywords:
 - binding restarts WDK networking
 - binding states WDK networking
 - restarting binding for protocol driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

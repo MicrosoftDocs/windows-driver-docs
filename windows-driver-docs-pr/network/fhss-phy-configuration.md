@@ -6,7 +6,7 @@ keywords:
 - PHY configuration WDK Native 802.11 , frequency-hopping spread spectrum
 - frequency-hopping spread spectrum WDK Native 802.11
 - FHSS WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

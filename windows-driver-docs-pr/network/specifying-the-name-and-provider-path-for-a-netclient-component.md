@@ -5,7 +5,7 @@ ms.assetid: 4c9c2162-8e7e-44dc-a97c-81074071664b
 keywords:
 - add-registry-sections WDK networking , NetClient component name and path
 - NetClient component name and path WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

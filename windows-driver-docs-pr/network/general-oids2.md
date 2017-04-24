@@ -2,7 +2,7 @@
 title: General OIDs
 description: General OIDs
 ms.assetid: fcd0e7fe-d1ab-4ec3-9c47-0bfb0ce63572
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

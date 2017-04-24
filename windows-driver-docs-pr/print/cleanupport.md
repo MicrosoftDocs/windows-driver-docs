@@ -6,7 +6,7 @@ ms.assetid: c24a9f09-3fac-4fe7-a4d2-aeb9f818fa54
 keywords:
 - WSDMON port monitors WDK , CleanupPort command
 - CleanupPort
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Blocking legacy file system filter drivers
 author: windows-driver-content
 description: Starting in Windows 10, version 1607, administrators and driver developers can use a registry setting to block legacy file system filter drivers.
 ms.assetid: 90A562FB-D616-4D38-8D4F-7EFCDF9E617F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

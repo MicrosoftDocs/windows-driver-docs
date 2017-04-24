@@ -8,7 +8,7 @@ keywords:
 - virtual joystick drivers WDK HID , axes
 - VJoyD WDK HID , axes
 - axes WDK joysticks
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

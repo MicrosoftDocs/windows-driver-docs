@@ -3,7 +3,7 @@ title: Servicing an Interrupt
 author: windows-driver-content
 description: Servicing an Interrupt
 ms.assetid: 79BA75B3-E10F-4AC1-A2C5-A502BF821188
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

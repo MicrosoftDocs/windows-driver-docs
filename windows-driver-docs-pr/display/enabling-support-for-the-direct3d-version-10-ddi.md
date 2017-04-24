@@ -2,7 +2,7 @@
 title: Enabling Support for the Direct3D Version 10 DDI
 description: Enabling Support for the Direct3D Version 10 DDI
 ms.assetid: ccbfecd2-8609-4e59-ac43-911f57af7980
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

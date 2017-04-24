@@ -2,7 +2,7 @@
 title: Guidelines for Native 802.11 Send Operations
 description: Guidelines for Native 802.11 Send Operations
 ms.assetid: 1526f484-2bd6-4fa4-b3e6-a07b25d0bf28
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

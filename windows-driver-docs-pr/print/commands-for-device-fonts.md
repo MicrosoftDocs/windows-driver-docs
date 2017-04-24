@@ -6,7 +6,7 @@ ms.assetid: c74ed63c-819a-4451-bc18-816713689d3e
 keywords:
 - device fonts WDK Unidrv
 - font commands WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

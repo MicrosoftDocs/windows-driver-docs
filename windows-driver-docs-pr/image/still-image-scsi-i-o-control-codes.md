@@ -3,7 +3,7 @@ title: Still Image SCSI I/O Control Codes
 author: windows-driver-content
 description: Still Image SCSI I/O Control Codes
 ms.assetid: 8db15071-61ac-4bb3-9193-da854a15f376
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

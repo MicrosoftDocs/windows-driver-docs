@@ -6,7 +6,7 @@ ms.assetid: 2afd5a1f-385a-4370-b751-e6f5d28d1d4e
 keywords:
 - AVStream headers WDK
 - headers WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

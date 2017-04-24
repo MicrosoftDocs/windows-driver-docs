@@ -6,7 +6,7 @@ keywords:
 - memory leaks WDK DirectX 9.0
 - context WDK Direct3D , DirectX 9.0
 - destroying objects associated with context WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

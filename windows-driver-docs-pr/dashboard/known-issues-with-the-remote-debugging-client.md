@@ -2,7 +2,7 @@
 title: Known Issues with the Remote Debugging Client
 description: Known Issues with the Remote Debugging Client
 ms.assetid: 1f98fd22-ca21-49ea-a241-c1fa5450ee5b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

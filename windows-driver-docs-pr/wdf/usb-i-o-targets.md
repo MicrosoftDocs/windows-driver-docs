@@ -9,7 +9,7 @@ keywords:
 - USB request blocks WDK KMDF
 - URBs WDK KMDF
 - USB I/O targets WDK KMDF , about USB I/O targets
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

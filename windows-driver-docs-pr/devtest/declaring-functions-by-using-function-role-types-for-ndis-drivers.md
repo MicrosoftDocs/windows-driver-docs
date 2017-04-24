@@ -2,7 +2,7 @@
 title: Declaring Functions by Using Function Role Types for NDIS Drivers
 description: Declaring Functions by Using Function Role Types for NDIS Drivers
 ms.assetid: 232c4272-0bf0-4a4e-9560-3bceeca8a3e3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

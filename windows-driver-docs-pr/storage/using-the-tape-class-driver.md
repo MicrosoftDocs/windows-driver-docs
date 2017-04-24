@@ -6,7 +6,7 @@ ms.assetid: 72ed3fd9-d46f-400e-9816-f9f48b5a85c0
 keywords:
 - tape drivers WDK storage , about tape drivers
 - storage tape drivers WDK , about tape drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 4d8cd9c2-6f78-4c70-83bd-f36fffbf1c35
 keywords:
 - NDIS network interfaces WDK , information about
 - network interfaces WDK , information about
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - sections WDK INF files
 - INF files WDK device installations , directives
 - directives WDK INF files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

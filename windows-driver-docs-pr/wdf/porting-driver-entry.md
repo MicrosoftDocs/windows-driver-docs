@@ -3,7 +3,7 @@ title: Porting DriverEntry
 author: windows-driver-content
 description: Porting DriverEntry
 ms.assetid: E880A45A-136C-480E-BE66-B61558F98227
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

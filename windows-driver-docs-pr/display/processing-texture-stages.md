@@ -8,7 +8,7 @@ keywords:
 - D3DDP2OP_TEXTURESTAGESTATE
 - D3DHAL_DP2TEXTURESTAGESTATE
 - texture management WDK Direct3D , stages
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

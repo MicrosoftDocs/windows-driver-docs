@@ -9,7 +9,7 @@ keywords:
 - power management WDK UMDF
 - power management WDK UMDF , PnP
 - power management WDK UMDF , Plug and Play
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

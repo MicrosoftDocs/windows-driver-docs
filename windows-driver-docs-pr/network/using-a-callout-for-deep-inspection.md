@@ -5,7 +5,7 @@ ms.assetid: 464c74ae-5e37-41f1-b305-ef57039b28ba
 keywords:
 - classify callouts WDK Windows Filtering Platform , deep inspection
 - deep inspection WDK Windows Filtering Platform
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

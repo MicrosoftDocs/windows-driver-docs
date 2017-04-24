@@ -5,7 +5,7 @@ ms.assetid: a2fc9d0c-d85c-484e-8cf2-09b2a84801f8
 keywords:
 - OPM WDK display , features
 - OPM WDK display , COPP and OPM comparison
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

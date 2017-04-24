@@ -6,7 +6,7 @@ ms.assetid: 4fae4b69-ed4b-47b6-b6e8-41733aed51a5
 keywords:
 - print providers WDK , functions
 - functions WDK print providers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

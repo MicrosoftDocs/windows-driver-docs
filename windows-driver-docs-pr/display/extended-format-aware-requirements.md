@@ -10,7 +10,7 @@ keywords:
 - XR_BIAS WDK Windows 7 display , BltDXGI
 - PresentDXGI and XR_BIAS WDK Windows 7 display
 - BltDXGI and XR_BIAS WDK Windows 7 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

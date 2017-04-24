@@ -6,7 +6,7 @@ ms.assetid: 8c3d22e8-5bf3-4e4d-aae4-88716b59682a
 keywords:
 - Print Tickets WDK , Unidrv
 - Print Tickets WDK , PScript5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

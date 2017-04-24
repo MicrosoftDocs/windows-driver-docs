@@ -2,7 +2,7 @@
 title: Test Modes
 description: Test Modes
 ms.assetid: 1E9C0198-8C74-4966-A401-329723B5A933
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

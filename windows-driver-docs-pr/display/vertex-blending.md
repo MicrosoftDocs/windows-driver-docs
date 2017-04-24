@@ -6,7 +6,7 @@ keywords:
 - lending WDK Direct3D
 - vertex blending WDK Direct3D
 - Direct3D WDK Windows 2000 display , vertex blending
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

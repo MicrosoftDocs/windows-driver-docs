@@ -7,7 +7,7 @@ keywords:
 - boot entries WDK
 - adding boot entries
 - Boot.ini files WDK , adding boot entries
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

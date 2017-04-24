@@ -5,7 +5,7 @@ ms.assetid: cb353a56-6a60-4fab-bbfe-4d9102ff6238
 keywords:
 - encryption WDK Native 802.11
 - decryption WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Installing a PTP Camera
 author: windows-driver-content
 description: Installing a PTP Camera
 ms.assetid: bf18a245-1344-47f1-83bc-3c369627bcdf
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

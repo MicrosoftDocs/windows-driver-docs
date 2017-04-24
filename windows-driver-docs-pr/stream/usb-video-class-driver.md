@@ -14,7 +14,7 @@ keywords:
 - video streaming devices WDK AVStream
 - UVC drivers WDK AVStream
 - pins WDK USB Video Class
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

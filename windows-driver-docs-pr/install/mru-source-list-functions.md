@@ -7,7 +7,7 @@ keywords:
 - most recently used source lists WDK SetupAPI
 - MRU source lists WDK SetupAPI
 - source lists WDK MRU
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

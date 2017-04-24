@@ -2,7 +2,7 @@
 title: MobileBroadbandProfiles
 description: MobileBroadbandProfiles
 ms.assetid: 251ece1e-67ec-48d3-977a-f033f1bff8c4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

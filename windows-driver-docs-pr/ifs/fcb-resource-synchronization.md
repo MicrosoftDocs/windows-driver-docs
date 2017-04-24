@@ -10,7 +10,7 @@ keywords:
 - paging I/O WDK RDBSS
 - synchronization WDK RDBSS
 - file control block structure WDK RDBSS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

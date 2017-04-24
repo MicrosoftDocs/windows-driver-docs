@@ -7,7 +7,7 @@ keywords:
 - I/O requests WDK KMDF , requeuing
 - requeuing I/O requests WDK KMDF
 - request processing WDK KMDF , requeuing I/O requests
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

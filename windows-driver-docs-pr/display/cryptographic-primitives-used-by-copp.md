@@ -9,7 +9,7 @@ keywords:
 - protected video WDK COPP , cryptography
 - cryptography WDK COPP
 - encryption WDK COPP
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

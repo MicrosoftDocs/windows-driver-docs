@@ -3,7 +3,7 @@ title: V4 Printer Driver Rendering Architecture
 author: windows-driver-content
 description: The rendering architecture for the v4 printer driver model is the same as the XPSDrv architecture.
 ms.assetid: 132BB5D5-426C-4449-8562-B5E43E331858
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

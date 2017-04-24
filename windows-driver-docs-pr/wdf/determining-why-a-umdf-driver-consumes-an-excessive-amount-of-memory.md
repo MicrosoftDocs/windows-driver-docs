@@ -1,5 +1,5 @@
 ---
-title: Determining Why a UMDF Driver Consumes an Excessive Amount of Memory
+title: Why a UMDF Driver Consumes Excessive Memory
 author: windows-driver-content
 description: Describes how to use Wudfext.dll to determine why a UMDF version 1 driver consumes an excessive amount of memory.
 ms.assetid: 01316c4e-24e8-467c-af52-900b3fe042db
@@ -7,7 +7,7 @@ keywords:
 - debugging scenarios WDK UMDF , UMDF driver consumes excessive memory
 - UMDF WDK , debugging scenarios, UMDF driver consumes excessive memory
 - UMDF WDK , UMDF driver consumes excessive memory
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

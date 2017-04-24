@@ -12,7 +12,7 @@ keywords:
 - child devices WDK KMDF
 - dynamic enumeration WDK KMDF
 - static enumeration WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

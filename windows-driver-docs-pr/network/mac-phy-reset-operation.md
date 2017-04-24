@@ -4,7 +4,7 @@ description: MAC/PHY Reset Operation
 ms.assetid: f7d7c382-3c91-4609-a9e7-dabe25840c87
 keywords:
 - MAC/PHY reset WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

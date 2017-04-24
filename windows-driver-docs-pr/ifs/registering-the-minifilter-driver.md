@@ -5,7 +5,7 @@ description: Registering the Minifilter Driver
 ms.assetid: 943082c9-dcff-478f-80ba-2a2e72f6ead2
 keywords:
 - registering minifilter drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

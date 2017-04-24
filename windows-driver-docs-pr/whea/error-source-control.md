@@ -11,7 +11,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error source control
 - PSHED plug-ins WDK WHEA , error source control
 - error source control WDK WHEA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

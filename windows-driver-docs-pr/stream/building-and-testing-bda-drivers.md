@@ -3,7 +3,7 @@ title: Building and Testing BDA Drivers
 author: windows-driver-content
 description: Building and Testing BDA Drivers
 ms.assetid: 219fb12e-635b-406d-a680-a63ef02dc308
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 7af82243-7cb3-4e66-a6ee-3f4220baa459
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , retrieving devices
 - retrieving DirectX VA devices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

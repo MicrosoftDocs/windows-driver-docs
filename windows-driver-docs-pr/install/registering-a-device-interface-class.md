@@ -6,7 +6,7 @@ keywords:
 - interface classes WDK device installations
 - registering device interface classes
 - device interface classes WDK device installations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

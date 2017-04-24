@@ -10,7 +10,7 @@ keywords:
 - drawing AGP support WDK DirectDraw , DMA-style AGP
 - DirectDraw AGP support WDK Windows 2000 display , DMA-style AGP
 - memory WDK DirectDraw AGP , DMA-style AGP
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

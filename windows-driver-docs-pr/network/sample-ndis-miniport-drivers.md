@@ -6,7 +6,7 @@ keywords:
 - miniport drivers WDK networking , samples
 - NDIS miniport drivers WDK networking , samples
 - sample drivers WDK NDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

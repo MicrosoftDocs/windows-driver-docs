@@ -6,7 +6,7 @@ ms.assetid: 42d1ca77-f8af-4212-a5a7-fb147d86b689
 keywords:
 - Unidrv, halftoning
 - halftoning WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

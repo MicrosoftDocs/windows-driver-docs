@@ -5,7 +5,7 @@ ms.assetid: f4642717-223c-425a-8389-cbbc75567ae3
 keywords:
 - IP Helper WDK networking , including header files
 - header files WDK IP Helper
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

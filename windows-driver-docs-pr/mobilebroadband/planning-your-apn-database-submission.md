@@ -2,7 +2,7 @@
 title: Planning your COSA/APN database submission
 description: Planning your COSA/APN database submission
 ms.assetid: 7e974914-c3e5-409e-b0bf-28d6885585b3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

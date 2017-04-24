@@ -4,7 +4,7 @@ description: Porting CoNDIS Protocol Driver Receive Data Handling
 ms.assetid: da180754-673a-428f-b6a1-eb66faa4e8d7
 keywords:
 - porting protocol drivers WDK networking , send and receive operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Retrieving A Device Instance Property Value
 description: Retrieving A Device Instance Property Value
 ms.assetid: 4cec9132-5a28-492d-bbb1-39e388413ad0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Setting Properties and Registry Values
 description: The Setting Properties and Registry Values topic describes how a Port Class audio driver can set properties and registry values for a PnP device interface.
 ms.assetid: EB6E9673-4A87-45D9-A334-8C2AE33A7581
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

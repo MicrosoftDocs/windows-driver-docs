@@ -2,7 +2,7 @@
 title: Freeing a VM Queue
 description: Freeing a VM Queue
 ms.assetid: 32679638-eeef-4e11-bf56-c96f047e4de7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Required Flatbed Item Properties
 author: windows-driver-content
 description: Required Flatbed Item Properties
 ms.assetid: 5af295de-b5ad-47c7-b1db-9d5685ed8d19
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

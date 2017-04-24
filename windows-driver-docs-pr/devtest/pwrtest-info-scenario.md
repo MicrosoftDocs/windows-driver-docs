@@ -2,7 +2,7 @@
 title: PwrTest Info Scenario
 description: The PwrTest Info Scenario captures and logs the current system power information from various categories.
 ms.assetid: 1d13d1dd-eb8d-434a-b994-e747a86f3457
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

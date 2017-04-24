@@ -3,7 +3,7 @@ title: PTP Driver
 author: windows-driver-content
 description: PTP Driver
 ms.assetid: c8bfdea9-0778-498f-a87d-d2766c9c02cc
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

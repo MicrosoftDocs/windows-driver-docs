@@ -9,7 +9,7 @@ keywords:
 - exclusive access mode WDK CD-ROM
 - IOCTL_CDROM_EXCLUSIVE_ACCESS
 - CDROM_EXCLUSIVE_LOCK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

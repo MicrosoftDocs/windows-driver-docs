@@ -7,7 +7,7 @@ keywords:
 - WSK WDK networking , socket creation
 - listening sockets WDK Winsock Kernel
 - WskSocket
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

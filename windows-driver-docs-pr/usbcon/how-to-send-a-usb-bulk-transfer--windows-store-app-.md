@@ -1,7 +1,7 @@
 ---
-Description: In this topic, you'll learn about a USB bulk transfer and how to initiate a transfer request from your Windows Store app that communicates with a USB device.
+Description: Learn about a USB bulk transfer and how to initiate a transfer request from your Windows Store app that communicates with a USB device.
 title: How to send a USB bulk transfer request (Windows Store app)
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

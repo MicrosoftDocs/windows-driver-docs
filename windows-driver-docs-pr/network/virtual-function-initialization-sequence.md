@@ -2,7 +2,7 @@
 title: Virtual Function Initialization Sequence
 description: Virtual Function Initialization Sequence
 ms.assetid: 352E12EC-FAF0-4566-8632-B6DA97ACCAD9
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

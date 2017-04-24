@@ -5,7 +5,7 @@ ms.assetid: 2578ce79-d9d0-4707-901e-302b7486aa29
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , WLAN adapter advanced properties
 - WLAN adapters WDK , advanced properties extended
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

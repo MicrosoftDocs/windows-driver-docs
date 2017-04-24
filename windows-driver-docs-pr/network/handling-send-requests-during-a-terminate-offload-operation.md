@@ -4,7 +4,7 @@ description: Handling Send Requests During a Terminate Offload Operation
 ms.assetid: 7629c47d-c95c-4362-a4a4-7945a9beee6a
 keywords:
 - terminating offload state WDK TCP chimney offload , send requests during
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Performing Explicit Scan Operations
 ms.assetid: b86acf15-5321-4fa3-bcf8-5ccd87c3db71
 keywords:
 - explicit scan operations WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

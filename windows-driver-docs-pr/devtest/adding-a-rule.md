@@ -5,7 +5,7 @@ ms.assetid: 42898075-7ddd-4dd2-bf12-e7f5e0008c37
 keywords:
 - filtering trace messages, adding rules WDK
 - trace message filters WDK , adding rules
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

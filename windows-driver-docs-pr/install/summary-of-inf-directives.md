@@ -5,7 +5,7 @@ ms.assetid: 6212502c-183c-4abb-9e56-59dba15fc685
 keywords:
 - INF files WDK device installations , directives
 - directives WDK INF files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

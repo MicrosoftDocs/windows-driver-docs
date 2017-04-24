@@ -5,7 +5,7 @@ ms.assetid: ca2b92d9-7f3d-45b9-8841-43915dd4237d
 keywords:
 - ProcAmp WDK DirectX VA , mapping ProcAmp control DDI
 - mapping ProcAmp control DDI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - RSS WDK networking , hardware queuing
 - hardware queuing WDK RSS
 - receive queuing WDK RSS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

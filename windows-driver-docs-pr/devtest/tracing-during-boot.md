@@ -8,7 +8,7 @@ keywords:
 - boot-time tracing WDK
 - kernel-mode software tracing WDK
 - boot-time tracing WDK , about boot-time tracing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

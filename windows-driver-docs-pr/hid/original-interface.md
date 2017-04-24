@@ -13,7 +13,7 @@ keywords:
 - VJoyD WDK HID , callbacks
 - callbacks WDK joysticks
 - polling WDK joysticks
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

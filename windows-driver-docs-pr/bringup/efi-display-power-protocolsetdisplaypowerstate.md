@@ -3,7 +3,7 @@ title: EFI\_DISPLAY\_POWER\_PROTOCOL.SetDisplayPowerState
 author: windows-driver-content
 description: EFI\_DISPLAY\_POWER\_PROTOCOL.SetDisplayPowerState
 ms.assetid: ee638d05-4d0e-45b0-a733-73923a7c045a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

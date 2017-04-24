@@ -3,7 +3,7 @@ title: WIA Driver Versioning
 author: windows-driver-content
 description: WIA Driver Versioning
 ms.assetid: 9ebd79ac-d742-4524-9573-5873f7a8ec37
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: ffbcaaaa-7f9d-4b29-b939-189e10174074
 keywords:
 - port monitors WDK print , functions
 - server DLL port monitor functions WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

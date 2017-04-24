@@ -5,7 +5,7 @@ ms.assetid: a7a02522-de13-419f-8dc5-065943fd4645
 keywords:
 - video present networks WDK display , terminology
 - VidPN WDK display , terminology
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

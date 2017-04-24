@@ -5,7 +5,7 @@ description: Accessing User Buffers in a Postoperation Callback Routine
 ms.assetid: a980f302-6fde-461e-8b11-313530aff350
 keywords:
 - postoperation callback routines WDK file system minifilter , buffers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Required Root Item Properties for Feeder Scanners
 author: windows-driver-content
 description: Required Root Item Properties for Feeder Scanners
 ms.assetid: 51dfdc28-675f-4ee1-a36c-850327b3c3b0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

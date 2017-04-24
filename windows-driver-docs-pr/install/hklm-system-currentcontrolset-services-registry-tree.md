@@ -2,7 +2,7 @@
 title: HKLM\\SYSTEM\\CurrentControlSet\\Services Registry Tree
 description: HKLM\\SYSTEM\\CurrentControlSet\\Services Registry Tree
 ms.assetid: c966b029-8171-4db7-9fbb-3a4222ff184b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

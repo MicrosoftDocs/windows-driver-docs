@@ -2,7 +2,7 @@
 title: VMQ Receive Queues
 description: VMQ Receive Queues
 ms.assetid: 9c34b437-97f7-49fa-afcd-16f1c238828a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

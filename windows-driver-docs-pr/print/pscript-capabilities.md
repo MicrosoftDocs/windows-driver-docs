@@ -6,7 +6,7 @@ ms.assetid: 1530cb64-a1b1-4ff5-a6bf-b3634e83a225
 keywords:
 - PostScript Printer Driver WDK print , capabilities
 - Pscript WDK print , capabilities
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: NDKPI Object Lifetime Requirements
 description: This section describes NDKPI object lifetime requirements
 ms.assetid: 94993523-D0D7-441E-B95C-417800840BAC
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

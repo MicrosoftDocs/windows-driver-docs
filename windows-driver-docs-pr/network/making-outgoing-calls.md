@@ -8,7 +8,7 @@ keywords:
 - CoNDIS TAPI WDK networking , outgoing calls
 - outgoing calls WDK CoNDIS WAN
 - calls WDK CoNDIS WAN
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

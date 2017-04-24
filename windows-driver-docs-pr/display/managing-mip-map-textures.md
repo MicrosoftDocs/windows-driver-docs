@@ -4,7 +4,7 @@ description: Managing MIP Map Textures
 ms.assetid: 5add9ded-f5e2-4929-90db-71bcd2466a73
 keywords:
 - MIP map textures WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

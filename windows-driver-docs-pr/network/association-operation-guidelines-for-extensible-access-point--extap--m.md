@@ -2,7 +2,7 @@
 title: Association Operation Guidelines for Extensible Access Point (ExtAP) Mode
 description: Association Operation Guidelines for Extensible Access Point (ExtAP) Mode
 ms.assetid: 6fd31cb7-dbef-4885-9ee2-131f65b6f8f7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

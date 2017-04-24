@@ -1,3 +1,14 @@
+---
+title: FAQ on custom capabilities
+author: windows-driver-content
+description: Describes custom capabilities for Hardware Support Apps (HSA) and how they differ from other capabilities.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
+---
+
 # FAQ on custom capabilities
 
 ## How are custom capabilities different from other capabilities?

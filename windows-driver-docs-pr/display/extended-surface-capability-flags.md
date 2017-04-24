@@ -7,7 +7,7 @@ keywords:
 - DirectDraw extended surface capabilities WDK Windows 2000 display , flags
 - extended surface capabilities WDK DirectDraw , flags
 - flags WDK DirectDraw extended surface
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - Video Acceleration WDK DirectX , video processing
 - VA WDK DirectX , video processing
 - video processing WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

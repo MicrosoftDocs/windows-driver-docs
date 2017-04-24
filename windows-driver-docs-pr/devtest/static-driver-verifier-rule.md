@@ -13,7 +13,7 @@ keywords:
 - conditional expressions WDK Static Driver Verifier
 - assignment statements WDK Static Driver Verifier
 - abort statements WDK Static Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: d72bcb9a-62d7-4deb-9d6c-7431e67be77c
 keywords:
 - Plotter Driver WDK print , samples
 - MSPlot WDK print , samples
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

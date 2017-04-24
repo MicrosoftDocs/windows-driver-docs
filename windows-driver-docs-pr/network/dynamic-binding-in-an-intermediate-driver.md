@@ -7,7 +7,7 @@ keywords:
 - NDIS intermediate drivers WDK , binding
 - dynamic binding WDK networking
 - binding operations WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

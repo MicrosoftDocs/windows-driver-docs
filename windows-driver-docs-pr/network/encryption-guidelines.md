@@ -5,7 +5,7 @@ ms.assetid: 35ca791e-cbd8-4e87-a101-b091a0a3d57a
 keywords:
 - cipher operations WDK Native 802.11 , encryption
 - encryption WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

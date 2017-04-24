@@ -13,7 +13,7 @@ keywords:
 - device stop requests WKD KMDF , PnP
 - temporary device stoppage WDK KMDF
 - temporary device stoppage WDK KMDF , PnP
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

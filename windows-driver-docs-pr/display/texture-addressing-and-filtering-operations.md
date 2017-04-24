@@ -10,7 +10,7 @@ keywords:
 - texture management WDK Direct3D , addressing
 - texture management WDK Direct3D , filtering
 - texture management WDK Direct3D , blending
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

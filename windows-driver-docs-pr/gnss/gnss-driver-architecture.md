@@ -3,7 +3,7 @@ title: GNSS driver architecture
 author: windows-driver-content
 description: Provides an overview of GNSS UMDF 2.0 driver architecture, I/O considerations, and discusses several types of tracking and fix sessions.
 ms.assetid: 11B54F92-DC84-4D74-9BBE-C85047AD2167
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

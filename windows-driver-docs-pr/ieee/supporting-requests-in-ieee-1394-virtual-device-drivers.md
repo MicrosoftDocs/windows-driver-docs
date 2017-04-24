@@ -13,7 +13,7 @@ keywords:
 - REQUEST_ALLOCATE_ADDRESS_RANGE
 - REQUEST_GET_ADDR_FROM_DEVICE_OBJECT
 - REQUEST_SET_DEVICE_XMIT_PROPERTIES
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

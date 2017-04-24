@@ -2,7 +2,7 @@
 title: ServiceName
 description: ServiceName
 ms.assetid: 50a3c985-c798-4287-87c6-ffa9a3c2058a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Hyper-V Extensible Switch Ports
 description: Hyper-V Extensible Switch Ports
 ms.assetid: A9A07C71-BA64-4223-8402-254D87810167
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

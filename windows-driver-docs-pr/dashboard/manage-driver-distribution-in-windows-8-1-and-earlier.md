@@ -2,7 +2,7 @@
 title: Manage Driver Distribution in Windows 8.1 and earlier
 description: Manage Driver Distribution in Windows 8.1 and earlier
 ms.assetid: 402880AC-67B1-420A-A77D-949D6DD32DE5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

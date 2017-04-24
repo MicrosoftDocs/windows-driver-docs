@@ -8,7 +8,7 @@ keywords:
 - Port Class audio adapters WDK , multimedia support
 - multimedia WDK audio
 - Windows multimedia support WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

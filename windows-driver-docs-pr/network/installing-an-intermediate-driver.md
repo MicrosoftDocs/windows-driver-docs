@@ -6,7 +6,7 @@ keywords:
 - intermediate drivers WDK networking , installation
 - NDIS intermediate drivers WDK , installation
 - installing NDIS intermediate drivers WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

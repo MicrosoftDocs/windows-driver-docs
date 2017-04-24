@@ -3,7 +3,7 @@ title: Storport's Interface with the Storage Class Driver
 author: windows-driver-content
 description: Storport's Interface with the Storage Class Driver
 ms.assetid: d0a98abe-14ba-416e-b507-77f77730f1c5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

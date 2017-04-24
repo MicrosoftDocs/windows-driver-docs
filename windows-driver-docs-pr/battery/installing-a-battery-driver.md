@@ -5,7 +5,7 @@ ms.assetid: 09db4d88-0cac-4171-8d05-d15a2cf4dab4
 keywords:
 - battery miniclass drivers WDK , installing
 - battery class drivers WDK , installing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

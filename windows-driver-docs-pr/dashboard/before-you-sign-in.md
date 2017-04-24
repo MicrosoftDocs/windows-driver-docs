@@ -2,7 +2,7 @@
 title: Before You Sign In
 description: Before You Sign In
 ms.assetid: 5eeb8457-e63c-419b-ac68-11c1fde82e8c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

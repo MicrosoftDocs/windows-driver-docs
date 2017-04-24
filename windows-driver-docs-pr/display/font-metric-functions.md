@@ -16,7 +16,7 @@ keywords:
 - notional space coordinate system WDK graphics
 - size WDK fonts
 - metric functions WDK fonts
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

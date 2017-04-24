@@ -6,7 +6,7 @@ ms.assetid: e11c1857-f12f-44c0-be35-eba93b4b87eb
 keywords:
 - data types WDK GDL , problems with template data types
 - CodePage directive WDK GDL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

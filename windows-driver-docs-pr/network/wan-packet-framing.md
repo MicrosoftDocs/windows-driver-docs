@@ -10,7 +10,7 @@ keywords:
 - WAN packet framing WDK networking
 - packet framing WDK WAN , about WAN packet framing
 - WAN packet framing WDK networking , about WAN packet framing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

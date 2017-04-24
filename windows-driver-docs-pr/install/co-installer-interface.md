@@ -5,7 +5,7 @@ ms.assetid: affcf2a5-5dbb-49bd-916c-bc99302b5bd8
 keywords:
 - co-installers WDK device installations , interface
 - interface WDK co-installer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

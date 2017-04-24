@@ -7,7 +7,7 @@ keywords:
 - GDL WDK , directives
 - directives WDK GDL
 - parser WDK GDL , directives
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

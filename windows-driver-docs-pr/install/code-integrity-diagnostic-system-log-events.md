@@ -10,7 +10,7 @@ keywords:
 - audit events WDK driver signing
 - logs WDK driver signing
 - diagnostic log events WDK Code Integrity
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

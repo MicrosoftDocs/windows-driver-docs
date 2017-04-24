@@ -6,7 +6,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering
 - multisample rendering WDK DirectX 8.0
 - rendering multisamples WDK DirectX 8.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

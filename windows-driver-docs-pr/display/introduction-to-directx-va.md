@@ -6,7 +6,7 @@ keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , about DirectX Video Acceleration
 - Video Acceleration WDK DirectX , about DirectX Video Acceleration
 - VA WDK DirectX , about DirectX Video Acceleration
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

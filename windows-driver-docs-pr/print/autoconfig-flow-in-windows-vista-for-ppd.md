@@ -6,7 +6,7 @@ ms.assetid: 60675cd3-fe98-4772-aa1b-a73529480d8a
 keywords:
 - PPD files WDK autoconfiguration , sequence of steps
 - in-box autoconfiguration support WDK printer , sequence of steps
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

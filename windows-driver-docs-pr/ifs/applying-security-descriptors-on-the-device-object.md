@@ -5,7 +5,7 @@ description: Applying Security Descriptors on the Device Object
 ms.assetid: c0697021-cf78-4b85-b959-342179da5621
 keywords:
 - security descriptors WDK file systems , applying on device object
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 8e494bd2-c499-48bf-8574-7e8df05be4c8
 keywords:
 - WAN miniport drivers WDK networking , building
 - CoNDIS WAN drivers WDK networking , building
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

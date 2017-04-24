@@ -5,7 +5,7 @@ ms.assetid: 9363e0f9-4a58-4473-969f-eb54d0678632
 keywords:
 - Direct3D WDK Windows 2000 display , cross platform development
 - cross-platform development WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

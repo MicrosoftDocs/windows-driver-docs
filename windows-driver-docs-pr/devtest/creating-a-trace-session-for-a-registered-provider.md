@@ -4,7 +4,7 @@ description: Creating a Trace Session for a Registered Provider
 ms.assetid: 3013b5fa-5390-4d46-b138-4ddcda468ddf
 keywords:
 - registered providers WDK software tracing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

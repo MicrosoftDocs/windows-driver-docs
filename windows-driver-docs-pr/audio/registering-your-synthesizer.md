@@ -9,7 +9,7 @@ keywords:
 - registering synthesizers
 - user-mode synths WDK audio , synthesizer registration
 - custom synths WDK audio , synthesizer registration
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

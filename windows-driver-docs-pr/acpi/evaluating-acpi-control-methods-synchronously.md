@@ -7,7 +7,7 @@ keywords:
 - ACPI control methods WDK , evaluating synchronously
 - ACPI control methods WDK , input buffer structures
 - ACPI control methods WDK , SendDownStreamIrp code sample
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

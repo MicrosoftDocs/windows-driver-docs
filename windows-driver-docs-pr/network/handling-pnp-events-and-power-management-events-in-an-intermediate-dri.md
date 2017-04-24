@@ -7,7 +7,7 @@ keywords:
 - NDIS intermediate drivers WDK , events
 - Plug and Play WDK networking , intermediate drivers
 - power management WDK networking , intermediate drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

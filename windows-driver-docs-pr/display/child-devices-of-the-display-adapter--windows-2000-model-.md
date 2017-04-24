@@ -2,7 +2,7 @@
 title: Child Devices of the Display Adapter (Windows 2000 Model)
 description: Child Devices of the Display Adapter (Windows 2000 Model)
 ms.assetid: 953e0e2d-214e-456e-8f5f-8e927887cab3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

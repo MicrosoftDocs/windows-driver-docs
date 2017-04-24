@@ -6,7 +6,7 @@ keywords:
 - display driver model WDK Windows 2000 , responsibilities
 - Windows 2000 display driver model WDK , responsibilities
 - display drivers WDK Windows 2000 , about display drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

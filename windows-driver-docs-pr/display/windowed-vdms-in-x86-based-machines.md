@@ -7,7 +7,7 @@ keywords:
 - VGA WDK video miniport , windowed VDMs in x86-based machines
 - windowed VDMs in x86-based machines WDK video miniport
 - x86-based machines WDK VGA-compatible video miniport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

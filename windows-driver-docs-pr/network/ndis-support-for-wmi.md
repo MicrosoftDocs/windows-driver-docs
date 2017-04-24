@@ -10,7 +10,7 @@ keywords:
 - protocol drivers WDK networking , WMI support
 - NDIS protocol drivers WDK , WMI support
 - i
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

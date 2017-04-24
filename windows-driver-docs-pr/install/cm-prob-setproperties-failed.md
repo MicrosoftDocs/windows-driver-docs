@@ -4,7 +4,7 @@ description: CM_PROB_SETPROPERTIES_FAILED
 ms.assetid: fbbff0ed-ffe0-4166-b2e2-76d857cf06cb
 keywords:
 - CM_PROB_SETPROPERTIES_FAILED
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

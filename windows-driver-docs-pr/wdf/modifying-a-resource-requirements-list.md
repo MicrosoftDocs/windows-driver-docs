@@ -6,7 +6,7 @@ ms.assetid: 75391dd2-5ae1-4562-97a0-4de21a08b61c
 keywords:
 - hardware resources WDK KMDF , modifying resource requirements lists
 - resource requirements lists WDK KMDF , modifying
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

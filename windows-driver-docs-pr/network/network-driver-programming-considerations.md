@@ -4,7 +4,7 @@ description: Network Driver Programming Considerations
 ms.assetid: 43e97f33-8470-440c-b4f4-78752def2dcf
 keywords:
 - network drivers WDK , programming considerations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

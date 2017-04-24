@@ -2,7 +2,7 @@
 title: Validation Ports
 description: Validation Ports
 ms.assetid: 67556275-EF02-4996-A3A2-E9D5D6FCD1AF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

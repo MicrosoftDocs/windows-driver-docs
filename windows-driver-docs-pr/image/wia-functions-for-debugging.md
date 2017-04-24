@@ -3,7 +3,7 @@ title: WIA Functions for Debugging
 author: windows-driver-content
 description: WIA Functions for Debugging
 ms.assetid: 164eeab3-1e4a-46de-99db-28b8f63593a4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

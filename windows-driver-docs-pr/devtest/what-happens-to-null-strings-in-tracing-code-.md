@@ -2,7 +2,7 @@
 title: What happens to NULL strings in tracing code
 description: What happens to NULL strings in tracing code
 ms.assetid: a2226cbd-28cf-48eb-b129-5c4d12eb2564
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

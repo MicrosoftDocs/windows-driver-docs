@@ -4,7 +4,7 @@ description: Porting Protocol Driver Status Indication Handling to CoNDIS 6.0
 ms.assetid: a5cfcbd4-a5ce-431c-8e07-10f7f4682d0c
 keywords:
 - porting status indications WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

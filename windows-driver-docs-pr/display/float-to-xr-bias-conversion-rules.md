@@ -8,7 +8,7 @@ keywords:
 - converting float to XR_BIAS WDK Windows 7 display
 - float WDK Windows 7 display
 - float WDK Windows 7 display , conversion to XR_BIAS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

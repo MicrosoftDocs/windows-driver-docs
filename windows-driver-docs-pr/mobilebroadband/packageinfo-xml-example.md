@@ -2,7 +2,7 @@
 title: PackageInfo XML Example
 description: PackageInfo XML Example
 ms.assetid: 4e514e79-d450-4cae-a40d-16ce86f95e43
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

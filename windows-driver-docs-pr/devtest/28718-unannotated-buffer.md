@@ -2,7 +2,7 @@
 title: C28718
 description: Warning C28718 Unannotated buffer.
 ms.assetid: 8417AB73-B645-451D-A359-9A66A793A78D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

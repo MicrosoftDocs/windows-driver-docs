@@ -6,7 +6,7 @@ ms.assetid: A99E62D1-31A2-46B5-841B-F3969854E39A
 keywords:
 - logging WDK WDTF
 - tracing WDK WDTF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

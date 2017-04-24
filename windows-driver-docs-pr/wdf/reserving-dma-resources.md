@@ -3,7 +3,7 @@ title: Reserving DMA Resources
 author: windows-driver-content
 description: Reserving DMA Resources
 ms.assetid: 8C5FF779-8D54-47D9-8EC6-7D4921F8F697
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

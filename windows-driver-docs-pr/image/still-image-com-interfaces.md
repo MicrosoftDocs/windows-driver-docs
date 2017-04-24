@@ -3,7 +3,7 @@ title: Still Image COM Interfaces
 author: windows-driver-content
 description: Still Image COM Interfaces
 ms.assetid: 2fd0e340-fbb2-4871-aee8-60008880423f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

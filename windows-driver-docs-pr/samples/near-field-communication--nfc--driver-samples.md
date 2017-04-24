@@ -1,9 +1,9 @@
 ---
 title: Near field communication (NFC) driver samples
 author: windows-driver-content
-description: The driver sample in this directory provides a starting point for writing a custom driver for your device.
+description: The NFC driver sample in this directory provides a starting point for writing a custom driver for your device.
 ms.assetid: 89DC24ED-ADA8-4703-8619-A2B7E000C044
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

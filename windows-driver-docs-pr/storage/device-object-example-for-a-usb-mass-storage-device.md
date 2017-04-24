@@ -7,7 +7,7 @@ keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage
 - USB mass storage device example WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

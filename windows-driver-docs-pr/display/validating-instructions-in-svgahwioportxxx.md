@@ -6,7 +6,7 @@ keywords:
 - video miniport drivers WDK Windows 2000 , VGA, SvgaHwIoPortXxx functions
 - VGA WDK video miniport , SvgaHwIoPortXxx functions
 - SvgaHwIoPortXxx functions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

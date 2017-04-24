@@ -4,7 +4,7 @@ description: Provider Module
 ms.assetid: 193282f7-e808-467d-a2d0-5ba1ee24ddb3
 keywords:
 - provider modules WDK Network Module Registrar , defined
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

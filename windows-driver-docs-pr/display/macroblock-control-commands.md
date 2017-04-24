@@ -8,7 +8,7 @@ keywords:
 - DXVA_MBctrl_I_OffHostIDCT_1
 - DXVA_MBctrl_P_HostResidDiff_1
 - DXVA_MBctrl_P_OffHostIDCT_1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

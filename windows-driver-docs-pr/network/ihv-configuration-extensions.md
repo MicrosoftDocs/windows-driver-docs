@@ -5,7 +5,7 @@ ms.assetid: f6a05241-4064-426e-a5f5-be3232e38118
 keywords:
 - configurations WDK Native 802.11 , IHV extensions
 - IHV configuration extensions WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

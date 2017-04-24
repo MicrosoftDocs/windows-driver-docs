@@ -2,7 +2,7 @@
 Description: This topic explains the structure of a control transfer and how a client driver should send a control request to the device.
 title: How to send a USB control transfer
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

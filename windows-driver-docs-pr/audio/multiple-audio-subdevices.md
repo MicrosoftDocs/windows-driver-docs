@@ -5,7 +5,7 @@ ms.assetid: 1654a2b3-7bec-4438-8cb5-b3136c8e66cc
 keywords:
 - multifunction audio devices WDK , subdevices
 - multiple subdevices WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

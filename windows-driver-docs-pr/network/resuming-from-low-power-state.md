@@ -2,7 +2,7 @@
 title: Resuming from Low Power State
 description: Resuming from Low Power State
 ms.assetid: 97f05dc9-df6f-4721-858e-9cf027af2cff
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

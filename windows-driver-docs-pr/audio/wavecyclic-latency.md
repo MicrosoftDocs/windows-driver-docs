@@ -5,7 +5,7 @@ ms.assetid: 6de639c6-ddd5-4013-8d67-00731c328f47
 keywords:
 - WaveCyclic latency WDK audio
 - silence intervals WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

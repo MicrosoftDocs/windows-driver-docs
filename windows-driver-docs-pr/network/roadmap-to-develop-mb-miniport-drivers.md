@@ -2,7 +2,7 @@
 title: Roadmap to Develop MB Miniport Drivers
 description: Roadmap to Develop MB Miniport Drivers
 ms.assetid: 3ef6e899-22dc-4293-80cc-d786b03c6b29
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

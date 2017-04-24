@@ -2,7 +2,7 @@
 title: Accessing Custom Device Properties
 description: Accessing Custom Device Properties
 ms.assetid: 81170fd5-f1fb-4a06-a651-4651fc894070
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

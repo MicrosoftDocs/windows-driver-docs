@@ -841,7 +841,7 @@
 ##### [Creating Instances of DirectX VA Device Objects](creating-instances-of-directx-va-device-objects.md)
 ##### [Performing ProcAmp Control and Deinterlacing Operations](performing-procamp-control-and-deinterlacing-operations.md)
 ##### [Performing Deinterlacing with Substream Compositing Operations](performing-deinterlacing-with-substream-compositing-operations.md)
-##### [Performing COPP Operations](performing-copp-operations2.md)
+##### [Performing COPP Operations Example](performing-copp-operations-example.md)
 ##### [Deleting Instances of DirectX VA Device Objects](deleting-instances-of-directx-va-device-objects.md)
 #### [COPP Video Miniport Driver Template](copp-video-miniport-driver-template.md)
 ##### [COPP Device Definition Template Code](copp-device-definition-template-code.md)

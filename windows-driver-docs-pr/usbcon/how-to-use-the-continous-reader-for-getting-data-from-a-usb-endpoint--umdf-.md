@@ -2,7 +2,7 @@
 Description: This topic describes the WDF-provided continuous reader object. The procedures in this topic provide step-by-step instructions about how to configure the object and use it to read data from a USB pipe.
 title: How to use the continuous reader for reading data from a USB pipe
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: WIA Scanner Item Tree for Windows Me and Windows XP
 author: windows-driver-content
 description: WIA Scanner Item Tree for Windows Me and Windows XP
 ms.assetid: a9da4725-995b-4745-aa0e-c1372bd5d445
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

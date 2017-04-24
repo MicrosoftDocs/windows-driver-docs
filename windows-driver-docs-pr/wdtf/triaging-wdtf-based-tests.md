@@ -3,7 +3,7 @@ title: Triaging WDTF-based tests
 author: windows-driver-content
 description: To help you better understand what is going on in your WDTF-based tests, you can use the built-in support for WDTF Object Logging and WPP Software Tracing.
 ms.assetid: C2F7AA74-7A74-4EA4-AD2D-8143252380C8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

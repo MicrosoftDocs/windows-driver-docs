@@ -5,7 +5,7 @@ ms.assetid: be6af188-fa60-4ac8-a699-97a3baaec6be
 keywords:
 - IHV UI Extensions DLL WDK Native 802.11 , security properties
 - security properties WDK Native 802.11 IHV UI Extensions DLL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

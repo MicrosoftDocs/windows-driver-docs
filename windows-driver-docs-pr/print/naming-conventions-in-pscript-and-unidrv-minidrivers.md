@@ -6,7 +6,7 @@ ms.assetid: d15c72e9-781d-4c71-bcf5-b3d08ec603ca
 keywords:
 - in-box autoconfiguration support WDK printer , naming conventions
 - names WDK printer autoconfig
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -10,7 +10,7 @@ keywords:
 - WDM function drivers WDK ACPI , operation regions
 - registering operation region handlers
 - deregistering operation region handlers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

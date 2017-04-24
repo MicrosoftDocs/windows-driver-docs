@@ -2,7 +2,7 @@
 title: Windows Vista Support for WDM Audio
 description: Windows Vista Support for WDM Audio
 ms.assetid: a9cf1660-3757-4f8d-82c7-de654bddfb49
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

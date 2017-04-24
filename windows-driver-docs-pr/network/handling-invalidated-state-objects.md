@@ -4,7 +4,7 @@ description: Handling Invalidated State Objects
 ms.assetid: 83104164-e5f2-4aa4-aea2-1a1c1e6abe9c
 keywords:
 - invalidating offloaded state WDK TCP chimney offload , offload target response
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

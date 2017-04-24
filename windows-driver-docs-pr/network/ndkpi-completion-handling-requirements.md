@@ -2,7 +2,7 @@
 title: NDKPI Completion Handling Requirements
 description: NDK consumers and NDK providers must follow these requirements for NDKPI completion handling.
 ms.assetid: 87150E2F-64F2-4EAB-A8B3-8E77622BE36C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

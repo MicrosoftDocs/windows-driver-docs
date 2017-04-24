@@ -2,7 +2,7 @@
 title: Platform Toolset
 description: The Windows Driver Kit (WDK) takes advantage of the MSBuild platform toolset feature to provide tools and libraries that are specific to driver development.
 ms.assetid: 9F585CA3-B863-408A-B785-2456460D6626
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

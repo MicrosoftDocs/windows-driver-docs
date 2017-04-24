@@ -6,7 +6,7 @@ ms.assetid: d13526f5-85e1-4036-98fb-aea2c6d5a1e3
 keywords:
 - rendering plug-ins WDK print , accessing driver settings
 - status information WDK print plug-ins
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

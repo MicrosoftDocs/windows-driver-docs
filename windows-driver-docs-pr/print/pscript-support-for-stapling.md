@@ -6,7 +6,7 @@ ms.assetid: 75fc11e1-5cd9-4e95-b062-989fe493fdb5
 keywords:
 - minidrivers WDK Pscript , stapling
 - stapling WDK Pscript
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

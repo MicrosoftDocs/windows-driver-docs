@@ -2,7 +2,7 @@
 title: Managing Packet Coalescing Receive Filters
 description: Managing Packet Coalescing Receive Filters
 ms.assetid: 20EA71E0-B880-4891-A12E-76F4C9AB16E6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

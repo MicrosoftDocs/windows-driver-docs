@@ -8,7 +8,7 @@ keywords:
 - parallel ports WDK , device configurations
 - daisy chain devices WDK
 - parallel devices WDK , physical configurations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - status values WDK file system
 - success status values WDK file system
 - returning status WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

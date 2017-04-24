@@ -5,7 +5,7 @@ ms.assetid: cc803af4-d4ed-4b51-9e0e-77443e0eb023
 keywords:
 - task offload WDK TCP/IP transport , enabling services
 - task offload WDK TCP/IP transport , disabling services
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

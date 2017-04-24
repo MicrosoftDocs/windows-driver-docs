@@ -5,7 +5,7 @@ description: Defining Callback Objects Example
 ms.assetid: d987bb95-cbee-46aa-beaf-167572ca4a80
 keywords:
 - callback objects WDK UMDF , example of defining
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

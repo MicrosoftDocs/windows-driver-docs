@@ -4,7 +4,7 @@ description: Porting NDIS Protocol Driver Receive Data Handling
 ms.assetid: e9b7e8ca-db64-4bce-ab34-5ba658111121
 keywords:
 - receive operation porting WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

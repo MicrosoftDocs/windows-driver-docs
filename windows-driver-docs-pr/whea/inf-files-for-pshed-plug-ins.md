@@ -7,7 +7,7 @@ keywords:
 - PSHED plug-ins WDK WHEA , INF files
 - platform-specific hardware error driver plug-ins WDK WHEA , INF files
 - INF files WDK WHEA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

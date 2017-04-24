@@ -11,7 +11,7 @@ keywords:
 - color space WDK Windows 2000 display
 - color gamut WDK Windows 2000 display
 - device-independent color space WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

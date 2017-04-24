@@ -4,7 +4,7 @@ author: windows-driver-content
 description: This topic contains a series of videos by Abhishek Ram that demonstrate how to debug User-Mode Driver Framework (UMDF) drivers.
 Search.SourceType: Video
 ms.assetid: 969FD292-5D92-4257-8E15-F2129B832E22
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

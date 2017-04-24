@@ -3,7 +3,7 @@ title: Querying SCSI Port for Hardware Information
 author: windows-driver-content
 description: Querying SCSI Port for Hardware Information
 ms.assetid: 2f3adc40-6e5a-4a70-8298-60359b77f04f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

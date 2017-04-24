@@ -5,7 +5,7 @@ ms.assetid: cafb6597-64a2-4d0f-bf7b-ab37f9a53bdc
 keywords:
 - aspect ratio scaling WDK display
 - custom scaling WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

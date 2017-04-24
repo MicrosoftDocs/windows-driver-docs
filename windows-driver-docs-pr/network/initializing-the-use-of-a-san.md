@@ -2,7 +2,7 @@
 title: Initializing the Use of a SAN
 description: Initializing the Use of a SAN
 ms.assetid: 199971a5-72ec-410c-834a-1e7b93ca1487
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

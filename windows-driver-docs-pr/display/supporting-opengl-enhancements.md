@@ -4,7 +4,7 @@ description: Supporting OpenGL Enhancements
 ms.assetid: 5f8b7d96-7941-44ce-bd32-546ec0f32883
 keywords:
 - OpenGL enhancements WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

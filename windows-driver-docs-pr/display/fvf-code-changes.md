@@ -5,7 +5,7 @@ ms.assetid: d9db4356-570b-4e05-aec9-bf36e26e4570
 keywords:
 - FVF WDK Direct3D
 - multimatrix vertex blending WDK Direct3D , FVF code changes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - IPrintCoreUI2
 - PPD files WDK Pscript
 - PPD-specific interface WDK Pscript
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

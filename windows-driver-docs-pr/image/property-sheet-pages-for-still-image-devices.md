@@ -3,7 +3,7 @@ title: Property Sheet Pages for Still Image Devices
 author: windows-driver-content
 description: Property Sheet Pages for Still Image Devices
 ms.assetid: ef77e57d-f791-4afa-8d51-67e78b60cf57
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

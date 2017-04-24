@@ -2,7 +2,7 @@
 title: SIM toolkit commands
 description: SIM toolkit commands
 ms.assetid: 7c13c27a-7a2d-4eae-a64e-1133aa533343
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

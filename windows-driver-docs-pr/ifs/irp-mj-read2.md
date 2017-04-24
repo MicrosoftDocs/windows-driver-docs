@@ -3,7 +3,7 @@ title: Checking the Oplock State of an IRP_MJ_READ operation
 author: windows-driver-content
 description: Checking the Oplock State of an IRP_MJ_READ operation
 ms.assetid: 9b4d1ba9-0838-44f1-8328-f60bfb3910ee
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

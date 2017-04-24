@@ -2,7 +2,7 @@
 title: WFP Changes for Windows 7
 description: WFP Changes for Windows 7
 ms.assetid: c7b15182-592a-4cdb-98aa-5283ed2f51a0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

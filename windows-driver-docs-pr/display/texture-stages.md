@@ -6,7 +6,7 @@ keywords:
 - multiple textures WDK Direct3D , texture stages
 - texture stages WDK Direct3D
 - texture management WDK Direct3D , stages
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

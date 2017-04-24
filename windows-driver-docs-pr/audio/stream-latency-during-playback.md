@@ -2,7 +2,7 @@
 title: Stream Latency During Playback
 description: Stream Latency During Playback
 ms.assetid: 70b41245-f463-4225-b79c-0ee65d8a0132
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: WIA Compatibility Layer Data Transfers Overview
 author: windows-driver-content
 description: WIA Compatibility Layer Data Transfers Overview
 ms.assetid: 4c88474e-f776-4876-a15f-c9d6fb0d20e5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
