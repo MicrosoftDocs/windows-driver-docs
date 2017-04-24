@@ -51,7 +51,7 @@ The client can call **NetRingBufferReturnCompletedPacketsThroughIndex** from [*E
 
 NetAdapterCx updates the packet's **BeginIndex** field to the index of the first non-completed packet or to **EndIndex**, whichever comes first. **EndIndex** should indicate the last [**NET_PACKET**](net-packet.md) that the client has programmed to transmit or receive data.
 
-For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

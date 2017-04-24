@@ -41,7 +41,7 @@ Returns NULL if the value of NextIndex equals the value of EndIndex for the spec
 Remarks
 -----
 
-For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

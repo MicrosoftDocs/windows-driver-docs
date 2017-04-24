@@ -1,8 +1,10 @@
 ---
-title: Handling I/O Requests
+title: Transferring Network Data
 ---
 
-# Handling I/O Requests
+# Transferring Network Data
+
+To watch a video that introduces the data path model in NetAdapterCx, see [Network Adapter Class Extension: Data Path](https://aka.ms/netadapter/video3).
 
 In the NetAdapterCx model, network data requests are stored in WDF queues.  Each queue is associated with a ring buffer, which contains a group of packets and pointers to indicate where in the ring to read and write next.
 
@@ -70,6 +72,8 @@ NetAdapterCx adds elements to the ring buffer by incrementing **EndIndex**.
 A client driver returns ownership of the elements by incrementing **BeginIndex**.
 
 The client driver may optionally set **NextIndex** to the index of the next packet that it will submit to the hardware.
+
+![Using the ring buffer](images/using-the-ring-buffer.gif)
 
 In this model, the client has submitted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware.  Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been sent to hardware.  If the value of **BeginIndex** is equal to the value of **NextIndex**, the client has not programmed any packets to hardware.
 
