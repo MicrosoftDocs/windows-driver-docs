@@ -81,12 +81,12 @@ Frequently asked questions for OEMs who want to build Windows systems with USB T
 
     Peripheral devices can connect to a mobile system with USB Type-C connectors, changing the traditional role of a mobile system from function to host. When the same system is connected to a PC, the system resumes the role of a function and PC becomes the host.
 
-## Does the operating system have any input into which alternate mode needs to be negotiated? For instance, DP 2-lane vs. DP 4-lane?
+## <a href="" id="does-the-operating-system-have-any-input-into-which-alternate-mode-needs-to-be-negotiated--for-instance--dp-2-lane-vs--dp-4-lane-"></a>Does the operating system have any input into which alternate mode needs to be negotiated? For instance, DP 2-lane vs. DP 4-lane?
 
 
 No. The operating system (or any Microsoft-provided software component) plays no part in selecting an alternate mode. The decision is made by the driver for the connector, specifically the USB connector manager (UCM) client driver. The driver does so by communicating with the connector's firmware by using hardware interfaces.
 
-## How does pre-OS charging with Type-C and PD work?
+## <a href="" id="how-does-pre-os-charging-with-type-c-and-pd-work-"></a>How does pre-OS charging with Type-C and PD work?
 
 
 Enabling pre-OS charging is owned by the OEM. You can choose to not implement [USB Power Delivery](http://go.microsoft.com/fwlink/p/?LinkID=623310), and charge at USB Type-C power levels until you boot into the operating system.
@@ -112,7 +112,7 @@ Yes, if you connect the phone to a device that supports a USB Billboard, as per 
 
 No. USB Type-C is not supported on versions of Windows prior to Windows 10.
 
-## Is UCSI supported on Windows 8.1, Windows 8, Windows 7?
+## <a href="" id="is-ucsi-supported-on-windows-8-1--windows-8--windows-7-"></a>Is UCSI supported on Windows 8.1, Windows 8, Windows 7?
 
 
 No. UCSI is not supported on versions of Windows prior to Windows 10.
@@ -122,7 +122,7 @@ No. UCSI is not supported on versions of Windows prior to Windows 10.
 
 To test your implementation, follow the guidelines given in [USB Type-C manual interoperability test procedures](type.md). We recommend running USB tests in Windows Hardware Lab Kit (HLK) for Windows 10. These tests are listed in [Windows Hardware Certification Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md).
 
-## What is the exact condition and UI for the different errors?
+## <a href="" id="what-is-the-exact-condition-and-ui-for-the-different-errors-"></a>What is the exact condition and UI for the different errors?
 
 
 Windows 10 can show a set of USB Type-C error messages to help educate users about the limitations with different combinations of USB Type-C hardware and software. For example, the user might get "Device is charging slowly" message if the charger connected to the USB Type-C connector is not powerful enough, not compatible with the system, or is connected to a non-charging port. For more information, see [Troubleshoot messages for a USB Type-C Windows system](introduction-to-usb-type-c-connectors.md).
@@ -152,7 +152,7 @@ Windows 10 for desktop editions supports MTP in the initiator role; Windows 10
 
 UCM is its own device stack (see [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)). Windows 10 support for USB Type-C includes the required plumbing to make sure that the different class drivers know how to communicate with the different USB Type-C connectors. In order to get Windows 10 support for USB Type-C, you must plug into the UCM device stack.
 
-## Do I need a USB Type-C MUTT for HLK tests?
+## <a href="" id="do-i-need-a-usb-type-c-mutt-for-hlk-tests-"></a>Do I need a USB Type-C MUTT for HLK tests?
 
 
 The Windows HLK for Windows 10 contains tests for USB host and function controllers. To test your system, use a USB C-A adapter. These tests are listed in [Windows Hardware Certification Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md).
@@ -179,7 +179,7 @@ On software-assisted charging platforms, UcmCx communicates with PMIC and the ba
 
 In Windows HLK for Windows 10, there are no USB Type-C specific tests. We recommend running USB tests in Windows HLK for Windows 10. These tests are listed in [Windows Hardware Certification Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md).
 
-## What is UCSI?
+## <a href="" id="what-is-ucsi-"></a>What is UCSI?
 
 
 USB Type-C Connector System Software Interface (UCSI) Specification describes the capabilities of the USB Type-C Connector System software Interface (UCSI), and explains the registers and data structures, for hardware component designers, system builders, and device driver developers. Get the specification from [this site](http://go.microsoft.com/fwlink/p/?LinkId=703713).
