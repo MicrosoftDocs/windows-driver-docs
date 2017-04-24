@@ -27,7 +27,7 @@ This topic summarizes the new features and improvements for Universal Serial Bus
 
 For information about new features in USB in general, see [New for USB Drivers](https://msdn.microsoft.com/library/windows/hardware/hh451212).
 
-## New Driver Stack for USB 3.0 Devices
+## <a href="" id="new-driver-stack-for-usb-3-0-devices"></a>New Driver Stack for USB 3.0 Devices
 
 
 Windows 8 provides a new USB driver stack to support USB 3.0 devices. The new stack includes drivers that are loaded by Windows when a USB 3.0 device is attached to an xHCI host controller. The new drivers are based on [Kernel Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff557405) (KMDF) and implement features defined in the USB 3.0 specification. The new drivers are as follows:
@@ -90,7 +90,7 @@ In addition to the routines in the preceding list, there are new KMDF-specific m
 -   The [**WdfUsbTargetDeviceCreateUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439423) method (instead of [**USBD\_UrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406250)) to allocate an URB.
 -   The [**WdfUsbTargetDeviceCreateIsochUrb**](https://msdn.microsoft.com/library/windows/hardware/hh439420) method (instead of [**USBD\_IsochUrbAllocate**](https://msdn.microsoft.com/library/windows/hardware/hh406231))to allocate an URB for an isochronous transfer. Those calls allocate a variable-sized URB that is based on the number of isochronous packets required for the transfer. For more information about isochronous transfers, see [How to Transfer Data to USB Isochronous Endpoints](transfer-data-to-isochronous-endpoints.md).
 
-## New User Mode I/O Control Requests for USB 3.0 Hubs
+## <a href="" id="new-user-mode-i-o-control-requests-for-usb-3-0-hubs"></a>New User Mode I/O Control Requests for USB 3.0 Hubs
 
 
 Windows 8 provides the new IOCTLs that applications can use to retrieve information about USB 3.0 hubs and their ports. The new IOCTLs are as follows:

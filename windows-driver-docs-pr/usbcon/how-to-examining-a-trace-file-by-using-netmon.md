@@ -42,7 +42,7 @@ Observe that the events are listed in the **Frame Summary** pane. The preceding 
 Select an event in the **Frame Summary** pane. Netmon displays the details for the event in the **Frame Details** and **Hex Details** panes. In the **Frame Details** pane, expand the items to examine the details of the event.
 For an example of using Netmon to examine a USB trace file, see [Case Study: Troubleshooting an Unknown USB Device by Using ETW and Netmon](case-study--troubleshooting-an-unknown-usb-device-by-using-etw-and-netmon.md).
 
-## New columns the USB ETW parser for USB 3.0 driver stack
+## <a href="" id="new-columns-the-usb-etw-parser-for-usb-3-0-driver-stack"></a>New columns the USB ETW parser for USB 3.0 driver stack
 
 
 Important types of events from the USB 2.0 driver stack are also defined in the USB 3.0 driver stack. However, there are subtle differences between those types. For example, consider the USB control transfer completion event type (**Description** : USBPort:Complete URB\_FUNCTION\_CONTROL\_TRANSFER\_EX with Data):

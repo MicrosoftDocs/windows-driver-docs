@@ -26,10 +26,10 @@ The most common approach has been to implement a device driver, (termed as a *US
 
 Writing a driver that is customized to the device's requirements is the most flexible way to provide access to a USB device. However, implementing a driver requires a lot of work. The driver must perform complex tasks, such as driver initialization when new devices are detected, power management, I/O operations, surprise removal, state management, and cleanup when the device is removed. Before you choose to write a driver, ask the following questions:
 
--   [Can you use a Microsoft-provided driver?](#can-you-use-a-microsoft-provided-driver-)
+-   [Can you use a Microsoft-provided driver?](#can-you-use-a-microsoft-provided-driver)
 -   [If you write a USB client driver, which driver model is best?](#if-you--write-a-usb-client-driver--which-driver-model-is-best-)
 
-## Can you use a Microsoft-provided driver?
+## <a href="" id="can-you-use-a-microsoft-provided-driver"></a>Can you use a Microsoft-provided driver?
 
 
 You might *not* need to write a driver if:
