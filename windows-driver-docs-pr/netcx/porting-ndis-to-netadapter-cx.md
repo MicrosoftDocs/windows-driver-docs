@@ -126,7 +126,7 @@ The data path programming model has changed significantly. Here are some key dif
 * Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces a ring buffer that is comprised of net packets, which map to NDIS as follows:
     * A [**NET_PACKET**](net-packet.md) is similar to a NET_BUFFER_LIST + NET_BUFFER.
     * A [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](net-packet.md) has one or more of these.
-    * For details on the replacement structures and how to use them, see [Handling I/O Requests](handling-i-o-requests.md).
+    * For details on the replacement structures and how to use them, see [Transferring Network Data](transferring-network-data.md).
 * In NDIS 6.x, the miniport needs to handle start and pause semantics.  In the NetAdapterCx model, this is no longer the case.
 * The [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback is similar to [**MINIPORT_RETURN_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559437) in NDIS 6.x.
 * The [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.

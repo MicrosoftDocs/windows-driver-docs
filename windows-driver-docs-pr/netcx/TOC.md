@@ -5,7 +5,7 @@
 ## [Accessing Configuration Information](accessing-configuration-information.md)
 ## [Handling Control Requests](handling-control-requests.md)
 ## [Debugging NetAdapterCx Client Drivers](debugging-netadaptercx-client-drivers.md)
-## [Handling I/O Requests](handling-i-o-requests.md)
+## [Transferring Network Data](transferring-network-data.md)
 ## [Configuring Power Management](configuring-power-management.md)
 ## [NDIS-WDF Function Equivalents](ndis-wdf-function-equivalents.md)
 ## [Summary of Objects](summary-of-objects.md)

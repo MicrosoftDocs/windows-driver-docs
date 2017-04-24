@@ -49,7 +49,7 @@ Remarks
 
 You'll need to cast the returned element to whatever data type your ring buffer elements use.
 
-For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------
