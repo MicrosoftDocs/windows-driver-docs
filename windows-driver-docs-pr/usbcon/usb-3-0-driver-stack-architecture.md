@@ -20,22 +20,22 @@ Windows loads the USB 2.0 driver stack for devices that are attached to eHCI, oH
 ![architectural block diagram for usb 2.0 and 3.0 driver stacks](images/usb-driver-stack-3.png)
 
 -   [USB 3.0 driver stack](#usb-3-0-driver-stack)
-    -   [USB 3.0 host controller driver (Usbxhci.sys)](#usb-3-0-host-controller-driver--usbxhci-sys-)
-    -   [USB host controller extension (Ucx01000.sys)](#-usb-host-controller-extension--ucx01000-sys--)
-    -   [USB hub driver (Usbhub3.sys)](#usb-hub-driver--usbhub3-sys-)
+    -   [USB 3.0 host controller driver (Usbxhci.sys)](#usb-3-0-host-controller-driver--usbxhci-sys)
+    -   [USB host controller extension (Ucx01000.sys)](#usb-host-controller-extension--ucx01000-sys)
+    -   [USB hub driver (Usbhub3.sys)](#usb-hub-driver-usbhub3-sys)
 -   [USB 2.0 driver stack](#usb-2-0-driver-stack)
 -   [USB common class generic parent driver (Usbccgp.sys)](#usb-common-class-generic-parent-driver--usbccgp-sys--)
--   [WinUSB (Winusb.sys)](#winusb--winusb-sys-)
+-   [WinUSB (Winusb.sys)](#winusb-winusb-sys)
 -   [USB client driver](#usb-client-driver)
 -   [Helper libraries for client drivers](#helper-libraries-for-client-drivers)
 -   [Related topics](#related-topics)
 
-## USB 3.0 driver stack
+## <a href="" id="usb-3-0-driver-stack"></a>USB 3.0 driver stack
 
 
 The USB 3.0 stack is new in Windows 8. Microsoft created the new drivers by using Kernel Mode Driver Framework (KMDF) interfaces. The KMDF driver model reduces complexity and improves stability.
 
-### USB 3.0 host controller driver (Usbxhci.sys)
+### <a href="" id="usb-3-0-host-controller-driver--usbxhci-sys"></a>USB 3.0 host controller driver (Usbxhci.sys)
 
 The xHCI driver is the USB 3.0 host controller driver. The responsibilities of the xHCI driver include initializing MMIO registers and host memory-based data structures for xHCI controller hardware, mapping transfer requests from upper layer drivers to Transfer Request Blocks, and submitting the requests to the hardware. After completing a transfer, the driver handles transfer completion events from the hardware and propagates the events up the driver stack. It also controls the xHCI controller device slots and endpoint contexts.
 
@@ -50,7 +50,7 @@ The USB host controller extension driver (an extension to KMDF) is the new exten
 -   Manages and control the operations of the root hub associated with the host controller.
 -   Implements features that are configurable by the client driver, like chained MDLs, streams, and so on.
 
-### USB hub driver (Usbhub3.sys)
+### <a href="" id="usb-hub-driver-usbhub3-sys"></a>USB hub driver (Usbhub3.sys)
 
 The new hub driver, in the USB driver stack for 3.0 devices, uses the KMDF driver model. The hub driver primarily performs these tasks:
 
@@ -60,7 +60,7 @@ The new hub driver, in the USB driver stack for 3.0 devices, uses the KMDF drive
 
 Windows loads the hub driver as the FDO in the hub device stack. Device enumeration and hub management in the new driver are implemented through a set of state machines. The hub driver relies on KMDF for power management and PnP functions. In addition to hub management, the hub driver also performs preliminary checks and processing of certain requests sent by the USB client driver layer. For instance, the hub driver parses a select-configuration request to determine which endpoints will be configured by the request. After parsing the information, the hub driver submits the request to the USB host controller extension or further processing.
 
-## USB 2.0 driver stack
+## <a href="" id="usb-2-0-driver-stack"></a>USB 2.0 driver stack
 
 
 Windows loads the USB 2.0 driver stack for devices that are attached to eHCI, oHCI, or uHCI controllers. The drivers in the USB 2.0 driver stack ship in Windows XP with SP1 and later versions of the Windows operating system. The USB 2.0 driver stack is designed to facilitate high-speed USB devices as defined in the USB 2.0 specification.
@@ -84,7 +84,7 @@ Usbccgp.sys is included with Windows XP with SP1 and later versions of the Wind
 
 For more information, see [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md).
 
-## WinUSB (Winusb.sys)
+## <a href="" id="#winusb-winusb-sys"></a>WinUSB (Winusb.sys)
 
 
 Windows USB (WinUSB) is a Microsoft-provided generic driver for USB devices. WinUSB architecture consists of a kernel-mode driver (Winusb.sys) and a user-mode dynamic link library (Winusb.dll). For devices that don't require a custom function driver, Winusb.sys can be installed in the device's kernel-mode stack as the function driver. User-mode processes can then communicate with Winusb.sys by using a set of device I/O control requests or by calling **WinUsb\_Xxx** functions. For more information, see [WinUSB](winusb.md).
