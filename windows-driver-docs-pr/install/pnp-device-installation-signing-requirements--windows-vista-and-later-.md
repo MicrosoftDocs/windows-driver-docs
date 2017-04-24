@@ -35,7 +35,7 @@ For more information about release-signing, see [Signing Drivers for Public Rele
 
 ### <a href="" id="pnp-signing-requirements-for-development-and-test-of-a-driver"></a> PnP Signing Requirements for Development and Test of a Driver
 
-In 64-bit versions of Windows Vista and later versions of Windows, a driver must have a [WHQL test signature](whql-test-signature-program.md) or must be signed by a [test certificate](test-certificates.md). For more information about test-signing drivers, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test--windows-vista-and-later-.md).
+In 64-bit versions of Windows Vista and later versions of Windows, a driver must have a [WHQL test signature](whql-test-signature-program.md) or must be signed by a [test certificate](test-certificates.md). For more information about test-signing drivers, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
 
  
 
