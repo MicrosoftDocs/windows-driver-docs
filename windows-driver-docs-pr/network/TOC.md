@@ -1257,6 +1257,7 @@
 ##### [Enabling Hyper-V Extensible Switch Extensions](enabling-hyper-v-extensibility-switch-extensions.md)
 ##### [Disabling Hyper-V Extensible Switch Extensions](disabling-hyper-v-extensibility-switch-extensions.md)
 ##### [Reordering Hyper-V Extensible Switch Extensions](reordering-hyper-v-extensibility-switch-extensions.md)
+### [Hyper-V Extensible Switch OIDs](hyper-v-extensible-switch-oids.md)
 # [Wireless Networking](wireless-networking2.md)
 ## [WLAN Universal Windows driver model](wifi-universal-driver-model.md)
 ## [Cellular architecture and implementation](cellular-architecture-and-driver-model.md)
