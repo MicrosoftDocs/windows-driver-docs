@@ -3,6 +3,11 @@ title: WIA Minidriver Best Practices
 author: windows-driver-content
 description: WIA Minidriver Best Practices
 ms.assetid: 0be38135-6911-44eb-8ba7-439c7a038216
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Minidriver Best Practices

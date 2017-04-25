@@ -1,6 +1,11 @@
 ---
 Description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write Windows Store apps that gives users access to their peripheral USB device.
 title: Talking to USB devices, start to finish (Windows Store app)
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Talking to USB devices, start to finish (Windows Store app)

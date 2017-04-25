@@ -2,7 +2,16 @@
 title: Reusing an NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST Structure
 description: Reusing an NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST Structure
 ms.assetid: da8c1d8e-87cc-46b0-a322-759abb162808
-keywords: ["propagating TCP chimney state-manipulation operations, block list types", "state-manipulation operations WDK TCP chimney offload , block list types", "block list types WDK TCP chimney offload", "NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST"]
+keywords:
+- propagating TCP chimney state-manipulation operations, block list types
+- state-manipulation operations WDK TCP chimney offload , block list types
+- block list types WDK TCP chimney offload
+- NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reusing an NDIS\_PROTOCOL\_OFFLOAD\_BLOCK\_LIST Structure

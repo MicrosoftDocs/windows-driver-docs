@@ -2,6 +2,11 @@
 title: GUIDType (PackageInfo)
 description: GUIDType (PackageInfo)
 ms.assetid: 3f88df5a-2a17-4006-ad3b-aab9a12cbcb9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GUIDType (PackageInfo)

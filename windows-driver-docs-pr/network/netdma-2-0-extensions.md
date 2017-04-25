@@ -2,7 +2,19 @@
 title: NetDMA 2.0 Extensions
 description: NetDMA 2.0 Extensions
 ms.assetid: 92f6fe46-b377-41ee-94fd-626ad9074622
-keywords: ["memory-to-memory data transfers WDK NetDMA , extensions", "data transfers WDK NetDMA , extensions", "transferring data WDK NetDMA , extensions", "DMA transfers WDK NetDMA , extensions", "NetDMA WDK networking , extensions", "NetDMA 2.0 WDK , extensions", "NetDMA 2.0 WDK networking"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , extensions
+- data transfers WDK NetDMA , extensions
+- transferring data WDK NetDMA , extensions
+- DMA transfers WDK NetDMA , extensions
+- NetDMA WDK networking , extensions
+- NetDMA 2.0 WDK , extensions
+- NetDMA 2.0 WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NetDMA 2.0 Extensions

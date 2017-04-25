@@ -2,7 +2,15 @@
 title: Reporting Capabilities for Shader Versions
 description: Reporting Capabilities for Shader Versions
 ms.assetid: a82ac539-1386-417a-a64f-0a7ddc6d28d9
-keywords: ["shaders WDK DirectX 9.0", "vertex shaders WDK DirectX 9.0", "pixel shaders WDK DirectX 9.0"]
+keywords:
+- shaders WDK DirectX 9.0
+- vertex shaders WDK DirectX 9.0
+- pixel shaders WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Capabilities for Shader Versions

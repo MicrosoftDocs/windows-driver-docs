@@ -2,7 +2,16 @@
 title: Data Bypass Mode
 description: Data Bypass Mode
 ms.assetid: 98061803-22de-4fa2-8582-2d382f84dd75
-keywords: ["filter drivers WDK networking , data bypass mode", "NDIS filter drivers WDK , data bypass mode", "data bypass mode WDK networking", "bypass mode WDK networking"]
+keywords:
+- filter drivers WDK networking , data bypass mode
+- NDIS filter drivers WDK , data bypass mode
+- data bypass mode WDK networking
+- bypass mode WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Bypass Mode

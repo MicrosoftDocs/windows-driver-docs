@@ -2,6 +2,11 @@
 title: Step 3 Add an experience ID to the Windows Store device app
 description: This topic describes how to add the experience ID to your Windows Store device app.
 ms.assetid: D114C916-EADE-4C08-BF7E-628D2FA5AACC
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Step 3: Add an experience ID to the Windows Store device app

@@ -2,6 +2,11 @@
 title: COSA/APN database submission
 description: COSA/APN database submission
 ms.assetid: a6a11b36-2848-45d0-93e5-1a5fedc0cfc9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COSA/APN database submission

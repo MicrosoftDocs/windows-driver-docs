@@ -2,7 +2,18 @@
 title: PnP Device Installation Signing Requirements
 description: PnP Device Installation Signing Requirements
 ms.assetid: 92527b24-b29a-4a78-886d-fafd620090d1
-keywords: ["driver signing WDK , PnP device installations", "signing drivers WDK , PnP device installations", "digital signatures WDK , PnP device installations", "signatures WDK , PnP device installations", "PnP WDK driver signing", "Plug and Play WDK driver signing"]
+keywords:
+- driver signing WDK , PnP device installations
+- signing drivers WDK , PnP device installations
+- digital signatures WDK , PnP device installations
+- signatures WDK , PnP device installations
+- PnP WDK driver signing
+- Plug and Play WDK driver signing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP Device Installation Signing Requirements
@@ -24,7 +35,7 @@ For more information about release-signing, see [Signing Drivers for Public Rele
 
 ### <a href="" id="pnp-signing-requirements-for-development-and-test-of-a-driver"></a> PnP Signing Requirements for Development and Test of a Driver
 
-In 64-bit versions of Windows Vista and later versions of Windows, a driver must have a [WHQL test signature](whql-test-signature-program.md) or must be signed by a [test certificate](test-certificates.md). For more information about test-signing drivers, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test--windows-vista-and-later-.md).
+In 64-bit versions of Windows Vista and later versions of Windows, a driver must have a [WHQL test signature](whql-test-signature-program.md) or must be signed by a [test certificate](test-certificates.md). For more information about test-signing drivers, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
 
  
 

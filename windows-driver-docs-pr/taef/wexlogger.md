@@ -2,6 +2,11 @@
 title: WexLogger
 description: WexLogger
 ms.assetid: D9F4AD08-19EA-4a6c-AD25-886FBEA334B8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WexLogger
@@ -53,7 +58,7 @@ log.Comment("Render succeeded");
 
 The majority of the time, logging initialization and completion will be performed by TAEF, so the WexLogger will be ready to use for the duration of the test case as stated above, and will finish properly. However, if a client would like to use the WexLogger outside TAEF, they will be responsible for manually calling **LogController::InitializeLogging()** and **LogController::FinalizeLogging()**. This requirement exists for native and managed code only; scripts do not have this additional requirement. See the Static LogController Methods table below for more information on the LogController API.
 
-Refer to the [Generating WTT Logs](#generatingwttlogs-wex) section for information on how to generate WTT Logs outside TAEF.
+Refer to the [Generating WTT Logs](#generating-wtt-logs) section for information on how to generate WTT Logs outside TAEF.
 
 ## WexLogger API
 
@@ -119,8 +124,8 @@ Here are the possible valid values for the native C++ **TestResults::Result** en
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static HRESULT InitializeLogging()                                                                     | Initialize logging functionality.                                                                                                                                                                                                                                                                               |
 | static HRESULT InitializeLogging(WexLoggerErrorCallback pfnErrorCallback)                              | Initialize logging functionality, and specify the WexLoggerErrorCallback function you would like to use to be notified of internal logger errors.                                                                                                                                                               |
-| static HRESULT InitializeLogging(const wchar\_t\* pszLogName)                                          | Initialize logging functionality, and specify the name of the log file you would like to use. **Note:** The log name is only taken into account if [WttLogging is enabled](#generatingwttlogs-wex).                                                                                                             |
-| static HRESULT InitializeLogging(const wchar\_t\* pszLogName, WexLoggerErrorCallback pfnErrorCallback) | Initialize logging functionality, specify the name of the log file you would like to use, and specify the WexLoggerErrorCallback function you would like to use to be notified of internal logger errors. **Note:** The log name is only taken into account if [WttLogging is enabled](#generatingwttlogs-wex). |
+| static HRESULT InitializeLogging(const wchar\_t\* pszLogName)                                          | Initialize logging functionality, and specify the name of the log file you would like to use. **Note:** The log name is only taken into account if [WttLogging is enabled](#generating-wtt-logs).                                                                                                             |
+| static HRESULT InitializeLogging(const wchar\_t\* pszLogName, WexLoggerErrorCallback pfnErrorCallback) | Initialize logging functionality, specify the name of the log file you would like to use, and specify the WexLoggerErrorCallback function you would like to use to be notified of internal logger errors. **Note:** The log name is only taken into account if [WttLogging is enabled](#generating-wtt-logs). |
 | static bool IsInitialized()                                                                            | Returns whether or not the LogController has been initialized for this process.                                                                                                                                                                                                                                 |
 | static const unsigned short\* GetLogName()                                                             | Returns the name that was specified for the log in the InitializeLogging call (if any).                                                                                                                                                                                                                         |
 | static HRESULT FinalizeLogging()                                                                       | Finish logging functionality.                                                                                                                                                                                                                                                                                   |
@@ -143,7 +148,7 @@ Here are the possible valid values for the native C++ **TestResults::Result** en
 
  
 
-**Note:** See the [Remote Logging From Child Processes](#remotelogging-wex) section below for more information on remote logging.
+**Note:** See the [Remote Logging From Child Processes](#remote-logging-from-child-processes) section below for more information on remote logging.
 
 Here is the list of managed Log methods available.
 
@@ -200,7 +205,7 @@ Here is the list of managed Log methods available.
 | Managed LogController Methods                 | Functionality                                                                                                                                                                                       |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static void InitializeLogging()               | Initialize logging functionality.                                                                                                                                                                   |
-| static void InitializeLogging(String logName) | Initialize logging functionality, and specify the name of the log file you would like to use. **Note:** The log name is only taken into account if [WttLogging is enabled](#generatingwttlogs-wex). |
+| static void InitializeLogging(String logName) | Initialize logging functionality, and specify the name of the log file you would like to use. **Note:** The log name is only taken into account if [WttLogging is enabled](#generating-wtt-logs). |
 | static bool IsInitialized()                   | Returns whether or not the LogController has been initialized for this process.                                                                                                                     |
 | static String GetLogName()                    | Returns the name that was specified for the log in the InitializeLogging call (if any).                                                                                                             |
 | static void FinalizeLogging()                 | Finish logging functionality.                                                                                                                                                                       |
@@ -223,7 +228,7 @@ Here is the list of managed Log methods available.
 
  
 
-**Note:** See the [Remote Logging From Child Processes](#remotelogging-wex) section below for more information on remote logging.
+**Note:** See the [Remote Logging From Child Processes](#remote-logging-from-child-processes) section below for more information on remote logging.
 
 ## Remote Logging From Child Processes
 

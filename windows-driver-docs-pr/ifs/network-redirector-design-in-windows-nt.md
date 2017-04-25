@@ -3,7 +3,15 @@ title: Network Redirector Design in Windows NT
 author: windows-driver-content
 description: Network Redirector Design in Windows NT
 ms.assetid: 1feb43a3-ee65-4446-b38b-8b3f9188f43d
-keywords: ["network redirectors WDK , Windows NT", "redirector drivers WDK , Windows NT", "kernel network redirectors WDK , Windows NT"]
+keywords:
+- network redirectors WDK , Windows NT
+- redirector drivers WDK , Windows NT
+- kernel network redirectors WDK , Windows NT
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Redirector Design in Windows NT

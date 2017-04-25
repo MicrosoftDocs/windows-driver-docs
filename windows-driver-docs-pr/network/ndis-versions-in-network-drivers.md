@@ -2,7 +2,16 @@
 title: NDIS Versions in Network Drivers
 description: NDIS Versions in Network Drivers
 ms.assetid: 6ecd4040-2831-4238-8080-97edc6a7c3ba
-keywords: ["network drivers WDK , NDIS versions", "NDIS WDK , versions in network drivers", "backward compatibility WDK networking", "compatibility WDK networking"]
+keywords:
+- network drivers WDK , NDIS versions
+- NDIS WDK , versions in network drivers
+- backward compatibility WDK networking
+- compatibility WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Versions in Network Drivers

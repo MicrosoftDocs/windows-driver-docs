@@ -2,7 +2,14 @@
 title: Automatic MAC Configuration
 description: Automatic MAC Configuration
 ms.assetid: 633636d7-28d6-489c-adc5-7ebf6a4b21b9
-keywords: ["MAC configuration WDK Native 802.11", "automatic MAC configuration WDK Native 802.11"]
+keywords:
+- MAC configuration WDK Native 802.11
+- automatic MAC configuration WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Automatic MAC Configuration

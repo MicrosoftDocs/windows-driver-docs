@@ -3,7 +3,14 @@ title: Pscript Capabilities
 author: windows-driver-content
 description: Pscript Capabilities
 ms.assetid: 1530cb64-a1b1-4ff5-a6bf-b3634e83a225
-keywords: ["PostScript Printer Driver WDK print , capabilities", "Pscript WDK print , capabilities"]
+keywords:
+- PostScript Printer Driver WDK print , capabilities
+- Pscript WDK print , capabilities
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pscript Capabilities

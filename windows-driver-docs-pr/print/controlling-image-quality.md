@@ -3,7 +3,21 @@ title: Controlling Image Quality
 author: windows-driver-content
 description: Controlling Image Quality
 ms.assetid: b6d25178-6726-4ce0-ab34-efeedc618044
-keywords: ["Unidrv, image quality", "image quality options WDK Unidrv", "draft image quality WDK Unidrv", "better image quality WDK Unidrv", "best image quality WDK Unidrv", "quality setting entries WDK Unidrv", "print jobs WDK , image quality", "formats WDK image quality", "Unidrv WDK print"]
+keywords:
+- Unidrv, image quality
+- image quality options WDK Unidrv
+- draft image quality WDK Unidrv
+- better image quality WDK Unidrv
+- best image quality WDK Unidrv
+- quality setting entries WDK Unidrv
+- print jobs WDK , image quality
+- formats WDK image quality
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Image Quality

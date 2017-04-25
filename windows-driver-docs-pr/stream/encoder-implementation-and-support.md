@@ -3,7 +3,22 @@ title: Encoder Implementation and Support
 author: windows-driver-content
 description: Encoder Implementation and Support
 ms.assetid: 6ba97ff8-815b-490f-920b-6ede4f730e98
-keywords: ["encoder devices WDK AVStream", "AVStream WDK , encoder devices", "uncompressed data streams WDK AVStream", "encoded streams WDK AVStream", "audio encoder devices WDK AVStream", "video encoder devices WDK AVStream", "property sets WDK encoder", "ENCAPIPARAM_BITRATE_MODE", "ENCAPIPARAM_BITRATE", "ENCAPIPARAM_PEAK_BITRATE"]
+keywords:
+- encoder devices WDK AVStream
+- AVStream WDK , encoder devices
+- uncompressed data streams WDK AVStream
+- encoded streams WDK AVStream
+- audio encoder devices WDK AVStream
+- video encoder devices WDK AVStream
+- property sets WDK encoder
+- ENCAPIPARAM_BITRATE_MODE
+- ENCAPIPARAM_BITRATE
+- ENCAPIPARAM_PEAK_BITRATE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Encoder Implementation and Support

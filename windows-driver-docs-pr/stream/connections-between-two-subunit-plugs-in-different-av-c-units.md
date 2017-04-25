@@ -3,7 +3,15 @@ title: Connections Between Two Subunit Plugs in Different AV/C Units
 author: windows-driver-content
 description: Connections Between Two Subunit Plugs in Different AV/C Units
 ms.assetid: 20d209b3-2516-4913-9f31-b14afddb78fb
-keywords: ["connections WDK AV/C", "AV/C WDK , connection scenarios", "AVCCONNECTINFO"]
+keywords:
+- connections WDK AV/C
+- AV/C WDK , connection scenarios
+- AVCCONNECTINFO
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connections Between Two Subunit Plugs in Different AV/C Units

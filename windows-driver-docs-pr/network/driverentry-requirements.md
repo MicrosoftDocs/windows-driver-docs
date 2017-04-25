@@ -2,7 +2,15 @@
 title: Native 802.11 DriverEntry Requirements
 description: Native 802.11 DriverEntry Requirements
 ms.assetid: 94638ca5-a4ca-480f-afee-7573877c7db9
-keywords: ["DriverEntry WDK Native 802.11", "initializing Native 802.11 miniport drivers", "initializing miniport drivers"]
+keywords:
+- DriverEntry WDK Native 802.11
+- initializing Native 802.11 miniport drivers
+- initializing miniport drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 DriverEntry Requirements

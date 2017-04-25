@@ -3,7 +3,15 @@ title: EMF Data Type
 author: windows-driver-content
 description: EMF Data Type
 ms.assetid: d5a05778-3637-4dba-b036-5f0fc236d52d
-keywords: ["print processors WDK , data types", "data types WDK print processor", "EMF data type WDK print processor"]
+keywords:
+- print processors WDK , data types
+- data types WDK print processor
+- EMF data type WDK print processor
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EMF Data Type

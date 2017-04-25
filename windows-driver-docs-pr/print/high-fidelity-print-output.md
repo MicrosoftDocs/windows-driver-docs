@@ -3,7 +3,16 @@ title: High-Fidelity Print Output
 author: windows-driver-content
 description: High-Fidelity Print Output
 ms.assetid: 37ff186e-d078-40f4-b7dc-9bf75e0b2847
-keywords: ["color fidelity WDK XPSDrv", "print fidelity WDK XPSDrv", "high-fidelity print output WDK XPSDrv", "XPSDrv printer drivers WDK , high-fidelity print output"]
+keywords:
+- color fidelity WDK XPSDrv
+- print fidelity WDK XPSDrv
+- high-fidelity print output WDK XPSDrv
+- XPSDrv printer drivers WDK , high-fidelity print output
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # High-Fidelity Print Output

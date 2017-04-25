@@ -2,7 +2,16 @@
 title: NET\_BUFFER\_LIST Structure
 description: NET\_BUFFER\_LIST Structure
 ms.assetid: f7f19e48-cb63-458d-b175-6f99080e4cdf
-keywords: ["NET_BUFFER_LIST", "network data WDK , structures", "data WDK networking , structures", "packets WDK networking , data structures"]
+keywords:
+- NET_BUFFER_LIST
+- network data WDK , structures
+- data WDK networking , structures
+- packets WDK networking , data structures
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NET\_BUFFER\_LIST Structure

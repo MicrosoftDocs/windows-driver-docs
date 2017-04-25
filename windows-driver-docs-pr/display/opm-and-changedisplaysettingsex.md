@@ -2,6 +2,11 @@
 title: OPM and ChangeDisplaySettingsEx
 description: OPM and ChangeDisplaySettingsEx
 ms.assetid: 973a8481-4d9a-4272-9138-666c6e41ad89
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # OPM and ChangeDisplaySettingsEx

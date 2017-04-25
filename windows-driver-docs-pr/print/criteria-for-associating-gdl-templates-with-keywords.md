@@ -3,7 +3,14 @@ title: Criteria for Associating GDL Templates with Keywords
 author: windows-driver-content
 description: Criteria for Associating GDL Templates with Keywords
 ms.assetid: 22b58881-277b-4e1d-ab6a-363432830772
-keywords: ["templates WDK GDL , associating templates with keywords", "keywords WDK GDL , associating templates with keywords"]
+keywords:
+- templates WDK GDL , associating templates with keywords
+- keywords WDK GDL , associating templates with keywords
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Criteria for Associating GDL Templates with Keywords

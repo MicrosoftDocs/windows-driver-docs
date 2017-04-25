@@ -2,7 +2,18 @@
 title: Writing NDIS Miniport Drivers
 description: Writing NDIS Miniport Drivers
 ms.assetid: ebcc06a1-bc3a-454b-9437-8c38bf9b4434
-keywords: ["miniport drivers WDK networking , writing miniport drivers", "network drivers WDK , miniport drivers", "NDIS WDK , miniport drivers", "NDIS miniport drivers WDK , writing miniport drivers", "writing NDIS miniport drivers WDK networking", "NDIS miniport drivers"]
+keywords:
+- miniport drivers WDK networking , writing miniport drivers
+- network drivers WDK , miniport drivers
+- NDIS WDK , miniport drivers
+- NDIS miniport drivers WDK , writing miniport drivers
+- writing NDIS miniport drivers WDK networking
+- NDIS miniport drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing NDIS Miniport Drivers

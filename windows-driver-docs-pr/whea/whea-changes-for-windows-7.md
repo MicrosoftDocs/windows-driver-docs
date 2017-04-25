@@ -3,7 +3,16 @@ title: WHEA Changes for Windows 7
 author: windows-driver-content
 description: WHEA Changes for Windows 7
 ms.assetid: d92c2be0-732b-4fcd-b517-5cb9eccf962b
-keywords: ["Windows Hardware Error Architecture WDK , Windows 7 changes", "WHEA WDK , Windows 7 changes", "Windows 7 WDK WHEA", "Windows 7 WDK WHEA , WHEA changes"]
+keywords:
+- Windows Hardware Error Architecture WDK , Windows 7 changes
+- WHEA WDK , Windows 7 changes
+- Windows 7 WDK WHEA
+- Windows 7 WDK WHEA , WHEA changes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WHEA Changes for Windows 7

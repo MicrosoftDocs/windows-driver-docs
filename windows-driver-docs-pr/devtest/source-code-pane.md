@@ -2,7 +2,13 @@
 title: Source Code Pane
 description: Source Code Pane
 ms.assetid: 2d4ee4da-1340-473b-83dc-018e1d6910eb
-keywords: ["panes WDK Static Driver Verifier"]
+keywords:
+- panes WDK Static Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Source Code Pane

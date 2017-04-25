@@ -3,6 +3,11 @@ title: Output keywords
 author: windows-driver-content
 description: These keywords are used to describe the actual output processes for a given 3D manufacturing job.
 ms.assetid: FBCE5E9C-8411-46C1-899E-A6C8FE27D947
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Output keywords

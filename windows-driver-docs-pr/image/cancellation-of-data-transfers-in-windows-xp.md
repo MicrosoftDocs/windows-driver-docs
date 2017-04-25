@@ -3,6 +3,11 @@ title: Cancellation of Data Transfers in Windows XP
 author: windows-driver-content
 description: Cancellation of Data Transfers in Windows XP
 ms.assetid: 971979a5-950b-49d4-9adb-cd4589a00426
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cancellation of Data Transfers in Windows XP

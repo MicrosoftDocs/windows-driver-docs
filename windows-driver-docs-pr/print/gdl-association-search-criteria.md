@@ -3,7 +3,19 @@ title: GDL Association Search Criteria
 author: windows-driver-content
 description: GDL Association Search Criteria
 ms.assetid: f591e944-a6dc-406a-a15e-7af0cc70d7f5
-keywords: ["templates WDK GDL , associating templates with keywords", "keywords WDK GDL , associating templates with keywords", "templates WDK GDL , association search criteria", "association search criteria WDK GDL", "GDL WDK , searching for entries", "GDL WDK , entries", "unidentified entries WDK GDL"]
+keywords:
+- templates WDK GDL , associating templates with keywords
+- keywords WDK GDL , associating templates with keywords
+- templates WDK GDL , association search criteria
+- association search criteria WDK GDL
+- GDL WDK , searching for entries
+- GDL WDK , entries
+- unidentified entries WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Association Search Criteria

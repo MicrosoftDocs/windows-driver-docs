@@ -2,7 +2,15 @@
 title: Initializing a Protocol Driver
 description: Initializing a Protocol Driver
 ms.assetid: 1479d59b-7c8b-495b-86c7-72f1b7e334e4
-keywords: ["protocol drivers WDK networking , initializing", "NDIS protocol drivers WDK , initializing", "initializing protocol drivers"]
+keywords:
+- protocol drivers WDK networking , initializing
+- NDIS protocol drivers WDK , initializing
+- initializing protocol drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a Protocol Driver

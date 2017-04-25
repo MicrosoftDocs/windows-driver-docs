@@ -3,7 +3,15 @@ title: Registering Context Types
 author: windows-driver-content
 description: Registering Context Types
 ms.assetid: ddf03426-5c49-4621-b81d-59d1cb002ae9
-keywords: ["contexts WDK file system minifilter , registering types", "registering context types", "FLT_CONTEXT_REGISTRATION"]
+keywords:
+- contexts WDK file system minifilter , registering types
+- registering context types
+- FLT_CONTEXT_REGISTRATION
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering Context Types

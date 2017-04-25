@@ -2,7 +2,17 @@
 title: Porting Miniport Adapter Halt Operations to NDIS 6.0
 description: Porting Miniport Adapter Halt Operations to NDIS 6.0
 ms.assetid: 0d107941-5f70-41d3-a4ab-c3f496c31087
-keywords: ["miniport adapters WDK networking , halt operations", "adapters WDK networking , halt operations", "porting miniport drivers WDK networking , adapters", "halting adapters", "stopping adapters"]
+keywords:
+- miniport adapters WDK networking , halt operations
+- adapters WDK networking , halt operations
+- porting miniport drivers WDK networking , adapters
+- halting adapters
+- stopping adapters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Miniport Adapter Halt Operations to NDIS 6.0

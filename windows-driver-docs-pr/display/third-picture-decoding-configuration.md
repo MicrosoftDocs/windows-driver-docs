@@ -2,7 +2,14 @@
 title: Third Picture Decoding Configuration
 description: Third Picture Decoding Configuration
 ms.assetid: c9f9afcf-f7dd-4850-9c7c-4a98474964f9
-keywords: ["compressed picture decoding set WDK DirectX VA", "picture decoding set WDK DirectX VA"]
+keywords:
+- compressed picture decoding set WDK DirectX VA
+- picture decoding set WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Third Picture Decoding Configuration

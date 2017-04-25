@@ -3,7 +3,18 @@ title: Printer Attributes
 author: windows-driver-content
 description: Printer Attributes
 ms.assetid: 46254c16-ecd3-47a4-ab2e-5a6687cde1ee
-keywords: ["Unidrv, printer attributes", "GPD file entries WDK Unidrv , printer attributes", "printer attributes WDK Unidrv", "attributes WDK Unidrv", "printer attributes WDK Unidrv , about printer attributes", "Unidrv WDK print"]
+keywords:
+- Unidrv, printer attributes
+- GPD file entries WDK Unidrv , printer attributes
+- printer attributes WDK Unidrv
+- attributes WDK Unidrv
+- printer attributes WDK Unidrv , about printer attributes
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Attributes

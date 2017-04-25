@@ -3,7 +3,17 @@ title: State Transitions
 author: windows-driver-content
 description: State Transitions
 ms.assetid: c71fd395-28aa-4421-9443-b5b0a1f3ac7e
-keywords: ["video capture WDK AVStream , stream states", "capturing video WDK AVStream , stream states", "stream states WDK video capture", "states WDK video capture", "state transitions WDK video capture"]
+keywords:
+- video capture WDK AVStream , stream states
+- capturing video WDK AVStream , stream states
+- stream states WDK video capture
+- states WDK video capture
+- state transitions WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # State Transitions

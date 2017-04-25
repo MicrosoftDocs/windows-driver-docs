@@ -2,7 +2,20 @@
 title: Enabling Debug Output for the Video Memory Manager
 description: Enabling Debug Output for the Video Memory Manager
 ms.assetid: c17648dc-56c2-4751-80e6-262b222ccfb7
-keywords: ["debug output enabled WDK display", "video memory manager debug output WDK display", "messages WDK display", "errors WDK display", "warnings WDK display", "low-resource messages WDK display", "trace messages WDK display", "events WDK display"]
+keywords:
+- debug output enabled WDK display
+- video memory manager debug output WDK display
+- messages WDK display
+- errors WDK display
+- warnings WDK display
+- low-resource messages WDK display
+- trace messages WDK display
+- events WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling Debug Output for the Video Memory Manager

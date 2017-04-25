@@ -2,7 +2,17 @@
 title: Supporting NDIS 6.0 Protocol Binding Pause and Restart Operations
 description: Supporting NDIS 6.0 Protocol Binding Pause and Restart Operations
 ms.assetid: ba328a35-49af-4398-adb1-30d855520be0
-keywords: ["protocol drivers WDK networking , binding operations", "NDIS protocol drivers WDK , binding operations", "protocol bindings WDK networking", "binding operations WDK networking", "porting protocol drivers WDK networking , binding operations"]
+keywords:
+- protocol drivers WDK networking , binding operations
+- NDIS protocol drivers WDK , binding operations
+- protocol bindings WDK networking
+- binding operations WDK networking
+- porting protocol drivers WDK networking , binding operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting NDIS 6.0 Protocol Binding Pause and Restart Operations

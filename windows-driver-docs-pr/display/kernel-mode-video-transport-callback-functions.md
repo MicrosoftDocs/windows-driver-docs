@@ -2,7 +2,15 @@
 title: Kernel-Mode Video Transport Callback Functions
 description: Kernel-Mode Video Transport Callback Functions
 ms.assetid: 1edd5b68-91da-4846-87bd-6fcabb9e5abf
-keywords: ["DxApi miniport drivers WDK DirectDraw , kernel-mode video transport callback functions", "kernel-mode video transport WDK DirectDraw , callback functions", "callback functions WDK kernel-mode video transport"]
+keywords:
+- DxApi miniport drivers WDK DirectDraw , kernel-mode video transport callback functions
+- kernel-mode video transport WDK DirectDraw , callback functions
+- callback functions WDK kernel-mode video transport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel-Mode Video Transport Callback Functions

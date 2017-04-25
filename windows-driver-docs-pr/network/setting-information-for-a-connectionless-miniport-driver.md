@@ -2,7 +2,13 @@
 title: Setting Information for a Connectionless Miniport Driver
 description: Setting Information for a Connectionless Miniport Driver
 ms.assetid: 406d844a-cc83-4cd6-a2d2-78e614aab900
-keywords: ["connectionless drivers WDK networking"]
+keywords:
+- connectionless drivers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Information for a Connectionless Miniport Driver

@@ -2,6 +2,11 @@
 title: How Devices and Driver Packages are Uninstalled
 description: How Devices and Driver Packages are Uninstalled
 ms.assetid: 0f4f0bbf-ca8f-47ef-b70b-d023bba9b842
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How Devices and Driver Packages are Uninstalled

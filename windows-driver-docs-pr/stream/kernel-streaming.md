@@ -3,7 +3,20 @@ title: Kernel Streaming
 author: windows-driver-content
 description: Kernel Streaming
 ms.assetid: dcd28218-b3bf-4e5d-b1a7-6910103afb96
-keywords: ["Windows 2000 Kernel Streaming Model WDK , kernel streaming", "Streaming Model WDK Windows 2000 Kernel , kernel streaming", "Kernel Streaming Model WDK , kernel streaming", "kernel streaming WDK", "kernel streaming WDK , about kernel streaming", "KS WDK", "KS WDK , about kernel streaming", "minidrivers WDK kernel streaming"]
+keywords:
+- Windows 2000 Kernel Streaming Model WDK , kernel streaming
+- Streaming Model WDK Windows 2000 Kernel , kernel streaming
+- Kernel Streaming Model WDK , kernel streaming
+- kernel streaming WDK
+- kernel streaming WDK , about kernel streaming
+- KS WDK
+- KS WDK , about kernel streaming
+- minidrivers WDK kernel streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel Streaming

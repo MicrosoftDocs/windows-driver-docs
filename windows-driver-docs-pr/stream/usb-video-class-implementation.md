@@ -3,7 +3,15 @@ title: USB Video Class Implementation
 author: windows-driver-content
 description: USB Video Class Implementation
 ms.assetid: b390d741-9ddc-4bac-bca2-73e32461c5ed
-keywords: ["USB Video Class drivers WDK AVStream , implementing", "Video Class drivers WDK USB , implementing", "UVC drivers WDK AVStream , implementing"]
+keywords:
+- USB Video Class drivers WDK AVStream , implementing
+- Video Class drivers WDK USB , implementing
+- UVC drivers WDK AVStream , implementing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Video Class Implementation

@@ -2,7 +2,13 @@
 title: Handling Removable Child Devices
 description: Handling Removable Child Devices
 ms.assetid: 0edc0331-7178-4986-b818-9f1ee8f12995
-keywords: ["removable child devices WDK Windows 2000 display"]
+keywords:
+- removable child devices WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Removable Child Devices

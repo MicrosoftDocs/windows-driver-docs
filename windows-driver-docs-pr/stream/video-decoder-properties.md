@@ -3,7 +3,15 @@ title: Video Decoder Properties
 author: windows-driver-content
 description: Video Decoder Properties
 ms.assetid: 671a310b-52a6-49f0-8848-e586a37c25ff
-keywords: ["video decoder properties WDK video capture", "decoder properties WDK video capture", "PROPSETID_VIDCAP_VIDEODECODER"]
+keywords:
+- video decoder properties WDK video capture
+- decoder properties WDK video capture
+- PROPSETID_VIDCAP_VIDEODECODER
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Decoder Properties

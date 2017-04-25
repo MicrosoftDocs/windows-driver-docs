@@ -2,7 +2,13 @@
 title: Troubleshooting the Implementation of Container IDs
 description: Troubleshooting the Implementation of Container IDs
 ms.assetid: 9c992f5a-73b6-4567-977f-1cd92862bf60
-keywords: ["container IDs WDK , troubleshooting"]
+keywords:
+- container IDs WDK , troubleshooting
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting the Implementation of Container IDs

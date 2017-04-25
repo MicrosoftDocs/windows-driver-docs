@@ -2,7 +2,15 @@
 title: Extensible Station Operating States
 description: Extensible Station Operating States
 ms.assetid: 1fc407a7-aebc-4cb9-9a2e-d0b3337fce28
-keywords: ["operating states WDK Native 802.11", "Extensible Station operating states WDK Native 802.11", "ExtSTA operating states WDK Native 802.11"]
+keywords:
+- operating states WDK Native 802.11
+- Extensible Station operating states WDK Native 802.11
+- ExtSTA operating states WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Station Operating States

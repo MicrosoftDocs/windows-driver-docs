@@ -3,6 +3,11 @@ title: EFI\_USBFN\_PORT\_TYPE
 author: windows-driver-content
 description: EFI\_USBFN\_PORT\_TYPE
 ms.assetid: 2596dd4f-26bd-454b-9550-a89c7e1f790b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USBFN\_PORT\_TYPE

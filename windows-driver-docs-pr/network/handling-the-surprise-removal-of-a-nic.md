@@ -2,7 +2,16 @@
 title: Handling the Surprise Removal of a NIC
 description: Handling the Surprise Removal of a NIC
 ms.assetid: afd94749-8f2a-4cce-a646-1f616a845a0e
-keywords: ["surprise removals WDK networking", "NICs WDK networking , surprise removals", "network interface cards WDK networking , surprise removals", "Plug and Play WDK NDIS miniport , surprise NIC removal"]
+keywords:
+- surprise removals WDK networking
+- NICs WDK networking , surprise removals
+- network interface cards WDK networking , surprise removals
+- Plug and Play WDK NDIS miniport , surprise NIC removal
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the Surprise Removal of a NIC

@@ -2,7 +2,14 @@
 title: Overview of DeinterlaceBltEx
 description: Overview of DeinterlaceBltEx
 ms.assetid: ff487508-eb04-4d4d-9057-ed2d9ea273e0
-keywords: ["DeinterlaceBltEx, about DeinterlaceBltEx", "VMR WDK DirectX VA"]
+keywords:
+- DeinterlaceBltEx, about DeinterlaceBltEx
+- VMR WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of DeinterlaceBltEx

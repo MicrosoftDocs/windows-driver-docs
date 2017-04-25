@@ -3,7 +3,17 @@ title: Customized Data Stream Filtering
 author: windows-driver-content
 description: Customized Data Stream Filtering
 ms.assetid: 768d4b95-4d8d-4460-9a8c-c80785f7f799
-keywords: ["Unidrv, data stream filtering", "data stream filtering WDK Unidrv", "customized data stream filtering WDK Unidrv", "filtering WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, data stream filtering
+- data stream filtering WDK Unidrv
+- customized data stream filtering WDK Unidrv
+- filtering WDK Unidrv
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customized Data Stream Filtering

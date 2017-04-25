@@ -2,6 +2,11 @@
 title: Get assets for a submission
 description: Get assets for a submission
 ms.assetid: 5afb71e0-e44f-42f5-a0da-fed0519faa51
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get assets for a submission

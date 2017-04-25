@@ -2,6 +2,11 @@
 title: C28740
 description: Warning C28740 Unannotated unsigned buffer.
 ms.assetid: 849BA4E4-89E7-4E8C-B73C-CA303487A5E3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28740

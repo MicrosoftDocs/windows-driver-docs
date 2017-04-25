@@ -3,7 +3,15 @@ title: Redistributable Framework Components
 author: windows-driver-content
 description: This topic describes the Microsoft-supplied redistributable framework updates that are included as part of the Windows Driver Kit (WDK) for Windows 8.1, and how to determine which ones to add to your driver package.
 ms.assetid: 63fbe66e-fa1b-4a70-a8ea-df4f3df9bad4
-keywords: ["framework-based drivers WDK KMDF , installing", "INF files WDK KMDF , about installing KMDF drivers", "installation components for drivers WDK KMDF"]
+keywords:
+- framework-based drivers WDK KMDF , installing
+- INF files WDK KMDF , about installing KMDF drivers
+- installation components for drivers WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Redistributable Framework Components

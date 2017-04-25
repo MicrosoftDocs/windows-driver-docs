@@ -3,6 +3,11 @@ title: Creating Push-Model Aware Applications
 author: windows-driver-content
 description: Creating Push-Model Aware Applications
 ms.assetid: 0f554b2c-0217-4109-8ef6-99c5400dfed6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Push-Model Aware Applications

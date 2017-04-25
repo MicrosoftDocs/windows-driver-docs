@@ -2,7 +2,15 @@
 title: Performing Floating-point Operations in DirectDraw
 description: Performing Floating-point Operations in DirectDraw
 ms.assetid: 2ce638e8-2d32-4692-8093-adb413bfbe52
-keywords: ["floating-point operations WDK DirectDraw", "drawing WDK DirectDraw , floating-point operations", "DirectDraw WDK Windows 2000 display , floating-point operations"]
+keywords:
+- floating-point operations WDK DirectDraw
+- drawing WDK DirectDraw , floating-point operations
+- DirectDraw WDK Windows 2000 display , floating-point operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Performing Floating-point Operations in DirectDraw

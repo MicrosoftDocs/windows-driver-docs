@@ -2,6 +2,11 @@
 title: Implementation Tips and Requirements for OPM
 description: Implementation Tips and Requirements for OPM
 ms.assetid: 8270db83-a352-4da8-86fc-b5ac952bd6e2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementation Tips and Requirements for OPM

@@ -3,7 +3,17 @@ title: General I/O Targets in UMDF
 author: windows-driver-content
 description: General I/O Targets in UMDF
 ms.assetid: 46fac165-3afd-4481-b68d-8d3474e0ff52
-keywords: ["general I/O targets WDK UMDF", "I/O targets WDK UMDF , general", "local I/O targets WDK UMDF", "remote I/O targets WDK UMDF", "general I/O targets WDK UMDF , about general I/O targets"]
+keywords:
+- general I/O targets WDK UMDF
+- I/O targets WDK UMDF , general
+- local I/O targets WDK UMDF
+- remote I/O targets WDK UMDF
+- general I/O targets WDK UMDF , about general I/O targets
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General I/O Targets in UMDF

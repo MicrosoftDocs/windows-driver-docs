@@ -2,7 +2,14 @@
 title: Determining Whether to Fail an Offload Request Because of 802.1Q Information
 description: Determining Whether to Fail an Offload Request Because of 802.1Q Information
 ms.assetid: 19eb2328-0ffa-4c40-bfab-6a5a3a3b4b7b
-keywords: ["802.1Q and 802.1p information WDK TCP chimney offload , failing requests", "failing requests for 802.1Q information WDK TCP chimney offload"]
+keywords:
+- 802.1Q and 802.1p information WDK TCP chimney offload , failing requests
+- failing requests for 802.1Q information WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining Whether to Fail an Offload Request Because of 802.1Q Information

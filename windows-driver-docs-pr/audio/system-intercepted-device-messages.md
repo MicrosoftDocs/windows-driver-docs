@@ -2,7 +2,17 @@
 title: System-Intercepted Device Messages
 description: System-Intercepted Device Messages
 ms.assetid: 5cf1c9a6-e56f-4358-933f-e8aa2ad1b1da
-keywords: ["device messages to legacy devices WDK audio", "WDM audio extensions WDK , system-intercepted device messages", "system-intercepted device messages WDK audio", "messages WDK audio", "intercepted device messages WDK audio"]
+keywords:
+- device messages to legacy devices WDK audio
+- WDM audio extensions WDK , system-intercepted device messages
+- system-intercepted device messages WDK audio
+- messages WDK audio
+- intercepted device messages WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System-Intercepted Device Messages

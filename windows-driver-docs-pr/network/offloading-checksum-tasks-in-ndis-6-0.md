@@ -2,7 +2,17 @@
 title: Offloading Checksum Tasks in NDIS 6.0
 description: Offloading Checksum Tasks in NDIS 6.0
 ms.assetid: 00a73fbd-6e5a-483e-b638-982f0bf07f35
-keywords: ["checksum tasks WDK networking", "task offload porting WDK networking , checksum tasks", "TCP/IP offload service porting WDK networking , checksum tasks", "offload service porting WDK networking , checksum tasks", "porting task offload services WDK networking"]
+keywords:
+- checksum tasks WDK networking
+- task offload porting WDK networking , checksum tasks
+- TCP/IP offload service porting WDK networking , checksum tasks
+- offload service porting WDK networking , checksum tasks
+- porting task offload services WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offloading Checksum Tasks in NDIS 6.0

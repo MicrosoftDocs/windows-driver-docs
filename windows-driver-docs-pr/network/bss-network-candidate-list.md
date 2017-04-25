@@ -2,7 +2,15 @@
 title: BSS Network Candidate List
 description: BSS Network Candidate List
 ms.assetid: a2190195-48aa-4414-8985-c19c245e6bd8
-keywords: ["network operations WDK Native 802.11 , BSS network candidate list", "BSS network candidate list WDK Native 802.11", "network candidate list WDK Native 802.11"]
+keywords:
+- network operations WDK Native 802.11 , BSS network candidate list
+- BSS network candidate list WDK Native 802.11
+- network candidate list WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # BSS Network Candidate List

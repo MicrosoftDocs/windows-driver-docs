@@ -2,6 +2,11 @@
 title: C28637
 description: Warning C28637 Calling the function in a global initializer is unsafe.
 ms.assetid: 9b392995-9583-4847-aded-f32e1daf28ed
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28637

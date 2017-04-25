@@ -2,7 +2,15 @@
 title: Code Analysis for Drivers Warnings
 description: Code Analysis for Drivers Warnings
 ms.assetid: 61dba158-7e1b-42ee-9882-0ba9cef77b3c
-keywords: ["PREfast for Drivers WDK , warnings", "warnings WDK PREfast for Drivers", "errors WDK PREfast for Drivers"]
+keywords:
+- PREfast for Drivers WDK , warnings
+- warnings WDK PREfast for Drivers
+- errors WDK PREfast for Drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Analysis for Drivers Warnings
@@ -339,11 +347,11 @@ Code Analysis for Drivers reports the following types of warnings:
 <td align="left"><p>warning C28718: Unannotated buffer</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[C28719](28719-banned-api-usage-use-updated function-replacement.md)</p></td>
+<td align="left"><p>[C28719](28719-banned-api-usage-use-updated-function-replacement.md)</p></td>
 <td align="left"><p>warning C28719: Banned API Usage</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[C28720](28720-banned-api-usage-use-updated function-replacement.md)</p></td>
+<td align="left"><p>[C28720](28720-banned-api-usage-use-updated-function-replacement.md)</p></td>
 <td align="left"><p>warning C28720: Banned API Usage</p></td>
 </tr>
 <tr class="even">
@@ -363,15 +371,15 @@ Code Analysis for Drivers reports the following types of warnings:
 <td align="left"><p>warning C28725: Use Watson instead of this SetUnhandledExceptionFilter</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[C28726](28726-banned-api-usage-use-updated function-replacement.md)</p></td>
+<td align="left"><p>[C28726](28726-banned-api-usage-use-updated-function-replacement.md)</p></td>
 <td align="left"><p>warning C28726: Banned API Usage</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[C28727](28727-banned-api-usage-use-updated function-replacement.md)</p></td>
+<td align="left"><p>[C28727](28727-banned-api-usage-use-updated-function-replacement.md)</p></td>
 <td align="left"><p>warning C28727: Banned API Usage</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[C28728](28728-banned-api-usage-use-updated function-replacement.md)</p></td>
+<td align="left"><p>[C28728](28728-banned-api-usage-use-updated-function-replacement.md)</p></td>
 <td align="left"><p>warning C28728: Banned API Usage</p></td>
 </tr>
 <tr class="odd">

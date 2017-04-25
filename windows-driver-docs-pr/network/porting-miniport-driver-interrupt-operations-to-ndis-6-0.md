@@ -2,7 +2,18 @@
 title: Porting Miniport Driver Interrupt Operations to NDIS 6.0
 description: Porting Miniport Driver Interrupt Operations to NDIS 6.0
 ms.assetid: bfd62833-8c7e-4b59-a6e4-4e91a4bb6c53
-keywords: ["interrupts WDK networking , porting operations", "miniport drivers WDK networking , interrupts", "NDIS miniport drivers WDK , interrupts", "message-signaled interrupts WDK networking , porting", "MSIs WDK networking , porting operations", "porting miniport driv"]
+keywords:
+- interrupts WDK networking , porting operations
+- miniport drivers WDK networking , interrupts
+- NDIS miniport drivers WDK , interrupts
+- message-signaled interrupts WDK networking , porting
+- MSIs WDK networking , porting operations
+- porting miniport driv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Miniport Driver Interrupt Operations to NDIS 6.0

@@ -3,6 +3,11 @@ title: WIA Item Tree Architecture
 author: windows-driver-content
 description: WIA Item Tree Architecture
 ms.assetid: 7e0f2b65-7150-4f8a-9780-abdaf93e44d6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Item Tree Architecture

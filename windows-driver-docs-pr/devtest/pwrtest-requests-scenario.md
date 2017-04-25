@@ -2,6 +2,11 @@
 title: PwrTest Requests Scenario
 description: The PwrTest Requests Scenario logs power requests from processes and services running in the system as they happen.
 ms.assetid: 4B082680-5C43-45F6-9A0E-0C23E9B1F282
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PwrTest Requests Scenario

@@ -2,7 +2,17 @@
 title: Porting Send and Receive Operations to CoNDIS 6.0
 description: Porting Send and Receive Operations to CoNDIS 6.0
 ms.assetid: 63cfdaac-fd38-46b9-ac6a-7aec93709eb1
-keywords: ["CoNDIS drivers WDK networking , send and receive operations", "connection-oriented drivers WDK networking , send and receive operations", "porting CoNDIS drivers WDK networking , send and receive operations", "send operation porting WDK networking", "receive"]
+keywords:
+- CoNDIS drivers WDK networking , send and receive operations
+- connection-oriented drivers WDK networking , send and receive operations
+- porting CoNDIS drivers WDK networking , send and receive operations
+- send operation porting WDK networking
+- receive
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Send and Receive Operations to CoNDIS 6.0

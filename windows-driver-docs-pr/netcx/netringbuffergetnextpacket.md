@@ -41,7 +41,7 @@ A pointer to a [**NET_PACKET**](net-packet.md) at the **NextIndex** value of the
 Remarks
 -----
 
-For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

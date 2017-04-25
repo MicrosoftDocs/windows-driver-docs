@@ -2,13 +2,19 @@
 title: ChkINF Command Syntax
 description: The ChkINF scripts are located in the WindowSdkDir \\Tools\\x86\\Chkinf subdirectory.
 ms.assetid: 62919c28-73f1-4401-95de-59ac45e4a8e7
-keywords: ["ChkINF Command Syntax Driver Development Tools"]
+keywords:
+- ChkINF Command Syntax Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - ChkINF Command Syntax
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ChkINF Command Syntax

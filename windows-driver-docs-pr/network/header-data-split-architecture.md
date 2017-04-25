@@ -2,7 +2,14 @@
 title: Header-Data Split Architecture
 description: Header-Data Split Architecture
 ms.assetid: a2594360-cbac-4f77-840a-2572a2381646
-keywords: ["header-data split WDK , architecture", "header-data split providers WDK"]
+keywords:
+- header-data split WDK , architecture
+- header-data split providers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Header-Data Split Architecture

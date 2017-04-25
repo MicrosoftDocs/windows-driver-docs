@@ -3,7 +3,15 @@ title: PnP and Power Management Scenarios
 author: windows-driver-content
 description: PnP and Power Management Scenarios
 ms.assetid: 9175ce95-196d-44bd-b31c-88386fa0d3d3
-keywords: ["PnP WDK KMDF , scenarios", "Plug and Play WDK KMDF , scenarios", "power management WDK KMDF , scenarios"]
+keywords:
+- PnP WDK KMDF , scenarios
+- Plug and Play WDK KMDF , scenarios
+- power management WDK KMDF , scenarios
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnP and Power Management Scenarios

@@ -2,7 +2,14 @@
 title: Guidelines for Writing Device Installation Applications
 description: Guidelines for Writing Device Installation Applications
 ms.assetid: 7f364b95-98ca-479a-8cdb-5e5e77c70cfa
-keywords: ["installation applications WDK , guidelines", "device installation applications WDK , guidelines"]
+keywords:
+- installation applications WDK , guidelines
+- device installation applications WDK , guidelines
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Guidelines for Writing Device Installation Applications

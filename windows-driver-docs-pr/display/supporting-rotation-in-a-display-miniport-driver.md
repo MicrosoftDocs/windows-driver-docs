@@ -2,7 +2,16 @@
 title: Supporting Rotation in a Display Miniport Driver
 description: Supporting Rotation in a Display Miniport Driver
 ms.assetid: 0c9bdd42-aeaf-4cc8-a979-9ed8eeda3811
-keywords: ["miniport drivers WDK display , rotation", "rotation WDK display", "clone mode WDK video present network", "surface rotation WDK display"]
+keywords:
+- miniport drivers WDK display , rotation
+- rotation WDK display
+- clone mode WDK video present network
+- surface rotation WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Rotation in a Display Miniport Driver

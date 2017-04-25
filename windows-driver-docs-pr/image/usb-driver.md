@@ -3,6 +3,11 @@ title: USB Driver
 author: windows-driver-content
 description: USB Driver
 ms.assetid: c20bd393-98d0-498e-a3e8-bbd1958ed774
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Driver

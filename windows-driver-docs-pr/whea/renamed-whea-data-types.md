@@ -3,7 +3,16 @@ title: Renamed WHEA Data Types
 author: windows-driver-content
 description: Renamed WHEA Data Types
 ms.assetid: e2c511a2-fd6e-4c7a-a47f-eb9b9f917bb4
-keywords: ["Windows Hardware Error Architecture WDK , renamed data types", "WHEA WDK , renamed data types", "hardware errors WDK WHEA , renamed data types", "renamed data types WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , renamed data types
+- WHEA WDK , renamed data types
+- hardware errors WDK WHEA , renamed data types
+- renamed data types WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Renamed WHEA Data Types

@@ -2,6 +2,11 @@
 title: Mobile Broadband (MB) Design Guide
 description: Mobile Broadband (MB) Design Guide
 ms.assetid: d5db6b69-c5a9-41d5-88c9-7c4d1e7c9c03
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mobile Broadband (MB) Design Guide

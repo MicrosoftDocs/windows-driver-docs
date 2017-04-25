@@ -2,7 +2,15 @@
 title: Writing NDIS Filter Drivers
 description: Writing NDIS Filter Drivers
 ms.assetid: c98c4bc5-e2fe-45b6-b0fa-7f594ad42041
-keywords: ["filter drivers WDK networking , writing", "NDIS filter drivers WDK , writing", "writing NDIS filter drivers WDK networking"]
+keywords:
+- filter drivers WDK networking , writing
+- NDIS filter drivers WDK , writing
+- writing NDIS filter drivers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing NDIS Filter Drivers

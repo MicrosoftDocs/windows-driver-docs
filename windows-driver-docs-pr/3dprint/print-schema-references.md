@@ -3,6 +3,11 @@ title: Print schema references
 author: windows-driver-content
 description: The following list provides references and links to industry standards, specifications, and technical articles.
 ms.assetid: D25FB8AF-D227-4940-8740-D1AFF9BE3AC3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print schema references

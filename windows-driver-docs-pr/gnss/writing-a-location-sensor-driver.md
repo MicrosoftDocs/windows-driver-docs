@@ -3,6 +3,11 @@ title: Writing a location sensor driver for Windows 8.1
 author: windows-driver-content
 description: Writing a location sensor driver for Windows 8.1
 ms.assetid: 18852282-6529-4934-a448-b699e01987de
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a location sensor driver for Windows 8.1

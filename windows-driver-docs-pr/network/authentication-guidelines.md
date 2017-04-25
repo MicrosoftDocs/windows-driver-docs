@@ -2,7 +2,18 @@
 title: Authentication Guidelines
 description: Authentication Guidelines
 ms.assetid: 0ede519c-c06d-4711-9e36-84c9e43d7bd4
-keywords: ["algorithms WDK Native 802.11 authentication", "authentication WDK Native 802.11 , guidelines", "Robust Security Network Association WDK Native 802.11", "RSNA WDK Native 802.11", "Wi-Fi Protected Access WDK Native 802.11", "WPA WDK Native 802.11"]
+keywords:
+- algorithms WDK Native 802.11 authentication
+- authentication WDK Native 802.11 , guidelines
+- Robust Security Network Association WDK Native 802.11
+- RSNA WDK Native 802.11
+- Wi-Fi Protected Access WDK Native 802.11
+- WPA WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Authentication Guidelines

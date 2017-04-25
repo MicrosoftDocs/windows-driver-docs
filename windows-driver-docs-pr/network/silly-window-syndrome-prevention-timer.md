@@ -2,7 +2,16 @@
 title: Silly Window Syndrome Prevention Timer
 description: Silly Window Syndrome Prevention Timer
 ms.assetid: 1d6053cd-e6ef-42f5-bfee-cef423667c32
-keywords: ["timers WDK TCP chimney offload , SWS prevention timers", "TCP timers WDK TCP chimney offload , SWS prevention timers", "SWS prevention timers WDK TCP chimney offload", "Silly Window Syndrome prevention timers WDK TCP chimney offload"]
+keywords:
+- timers WDK TCP chimney offload , SWS prevention timers
+- TCP timers WDK TCP chimney offload , SWS prevention timers
+- SWS prevention timers WDK TCP chimney offload
+- Silly Window Syndrome prevention timers WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Silly Window Syndrome Prevention Timer

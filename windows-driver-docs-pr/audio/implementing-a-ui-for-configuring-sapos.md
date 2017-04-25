@@ -2,6 +2,11 @@
 title: Implementing a UI for Configuring sAPOs
 description: Implementing a UI for Configuring sAPOs
 ms.assetid: 52ce61fd-e5cf-4c84-885e-e46c7bfdad4a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing a UI for Configuring sAPOs

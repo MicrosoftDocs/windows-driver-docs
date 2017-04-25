@@ -3,7 +3,16 @@ title: Introduction to Printer Graphics DLLs
 author: windows-driver-content
 description: Introduction to Printer Graphics DLLs
 ms.assetid: 3f7ce476-6bef-4a80-ae2a-2a63e891dda1
-keywords: ["printer graphics DLL WDK , about printer graphics DLL", "graphics DLL WDK printer , about printer graphics DLL", "graphics DLL WDK printer", "printer graphics DLL WDK"]
+keywords:
+- printer graphics DLL WDK , about printer graphics DLL
+- graphics DLL WDK printer , about printer graphics DLL
+- graphics DLL WDK printer
+- printer graphics DLL WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Printer Graphics DLLs

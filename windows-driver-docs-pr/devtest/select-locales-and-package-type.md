@@ -2,7 +2,13 @@
 title: Select locales and package type in the Device Metadata Authoring Wizard
 description: Select locales and package type in the Device Metadata Authoring Wizard
 ms.assetid: 02227FAB-A37F-4B20-AD52-E071C19E8743
-keywords: ["Select locales and package type in the Device Metadata Authoring Wizard"]
+keywords:
+- Select locales and package type in the Device Metadata Authoring Wizard
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Select locales and package type in the Device Metadata Authoring Wizard

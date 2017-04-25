@@ -3,7 +3,17 @@ title: Using Invalid GDL Configurations
 author: windows-driver-content
 description: Using Invalid GDL Configurations
 ms.assetid: a61232dd-ab64-4ca4-9eb9-68fe5c7249e4
-keywords: ["GDL WDK , configurations", "configurations WDK GDL , invalid configurations", "invalid GDL configurations WDK", "configurations WDK GDL , examples", "InvalidCombination directive WDK GDL"]
+keywords:
+- GDL WDK , configurations
+- configurations WDK GDL , invalid configurations
+- invalid GDL configurations WDK
+- configurations WDK GDL , examples
+- InvalidCombination directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Invalid GDL Configurations

@@ -1,9 +1,19 @@
 ---
 title: Tag RF data exchange sequence
 author: windows-driver-content
-description: The following figures illustrate the state sequences for StateRfDiscovered and StateRfDataXchg for various reader-writer protocols such as T1T, T2T, T3T, and ISO-DEP.
+description: The following figures illustrate state sequences for StateRfDiscovered and StateRfDataXchg for various reader-writer protocols such as T1T, T2T, T3T, and ISO-DEP.
 ms.assetid: F5911609-4531-44B3-9629-CD0A27D40324
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tag RF data exchange sequence
@@ -41,4 +51,3 @@ The NFC CX performs a presence check in StateRfDataXchg when there is no data to
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
-

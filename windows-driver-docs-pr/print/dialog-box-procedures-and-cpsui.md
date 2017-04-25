@@ -3,7 +3,18 @@ title: Dialog Box Procedures and CPSUI
 author: windows-driver-content
 description: Dialog Box Procedures and CPSUI
 ms.assetid: fad65a34-9580-41a5-ad58-91ea7ffcd3d5
-keywords: ["page event callbacks WDK CPSUI", "event callbacks WDK CPSUI", "message handlers WDK CPSUI", "CPSUI WDK print , message handlers", "dialog box procedures WDK CPSUI", "window messages WDK CPSUI"]
+keywords:
+- page event callbacks WDK CPSUI
+- event callbacks WDK CPSUI
+- message handlers WDK CPSUI
+- CPSUI WDK print , message handlers
+- dialog box procedures WDK CPSUI
+- window messages WDK CPSUI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dialog Box Procedures and CPSUI

@@ -3,7 +3,20 @@ title: WHEA Changes for Windows Server 2008 and Windows Vista SP1
 author: windows-driver-content
 description: WHEA Changes for Windows Server 2008 and Windows Vista SP1
 ms.assetid: fd66ee01-e262-45c2-bced-549192b0eca3
-keywords: ["Windows Hardware Error Architecture WDK , Windows Server 2008 changes", "Windows Hardware Error Architecture WDK , Windows Vista SP1 changes", "WHEA WDK , Windows Server 2008 changes", "WHEA WDK , Windows Vista SP1 changes", "Windows Server 2008 WDK WHEA", "Windows Server 2008 WDK WHEA , WHEA changes", "Windows Vista SP1 WDK WHEA", "Windows Vista SP1 WDK WHEA , WHEA changes"]
+keywords:
+- Windows Hardware Error Architecture WDK , Windows Server 2008 changes
+- Windows Hardware Error Architecture WDK , Windows Vista SP1 changes
+- WHEA WDK , Windows Server 2008 changes
+- WHEA WDK , Windows Vista SP1 changes
+- Windows Server 2008 WDK WHEA
+- Windows Server 2008 WDK WHEA , WHEA changes
+- Windows Vista SP1 WDK WHEA
+- Windows Vista SP1 WDK WHEA , WHEA changes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WHEA Changes for Windows Server 2008 and Windows Vista SP1

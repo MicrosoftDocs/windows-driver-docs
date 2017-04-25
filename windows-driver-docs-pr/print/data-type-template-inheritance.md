@@ -3,7 +3,16 @@ title: Data Type Template Inheritance
 author: windows-driver-content
 description: Data Type Template Inheritance
 ms.assetid: c2ecc091-8fdc-4666-9cdf-629903f13f6f
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , template inheritance", "templates WDK GDL , inheritance", "inheritance WDK GDL"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , template inheritance
+- templates WDK GDL , inheritance
+- inheritance WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Type Template Inheritance

@@ -3,6 +3,11 @@ title: V4 Driver Setup Concepts
 author: windows-driver-content
 description: The v4 print driver model uses a new setup model to improve the user experience and reduce support costs.
 ms.assetid: C1DF5496-14CF-4BF4-B85C-AF1A691C7AF2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # V4 Driver Setup Concepts

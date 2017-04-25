@@ -3,7 +3,14 @@ title: Command Execution Order
 author: windows-driver-content
 description: Command Execution Order
 ms.assetid: 2bf7438c-bfb0-407f-9c80-be3b8a9322f9
-keywords: ["printer commands WDK Unidrv , execution order", "sequence numbers WDK Unidrv"]
+keywords:
+- printer commands WDK Unidrv , execution order
+- sequence numbers WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command Execution Order

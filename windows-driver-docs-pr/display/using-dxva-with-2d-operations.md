@@ -2,7 +2,18 @@
 title: Using DXVA with 2D Operations
 description: Using DXVA with 2D Operations
 ms.assetid: a864941d-69ac-48a4-85a2-7e05cd3c9617
-keywords: ["two-dimensional operations WDK DirectX 9.0 , DXVA", "2D operations WDK DirectX 9.0 , DXVA", "DXVA WDK DirectX 9.0", "DXVA WDK DirectX 9.0 , 2D operations", "DirectX Video Acceleration WDK DirectX 9.0", "DirectX Video Acceleration WDK DirectX 9.0 , 2D operations"]
+keywords:
+- two-dimensional operations WDK DirectX 9.0 , DXVA
+- 2D operations WDK DirectX 9.0 , DXVA
+- DXVA WDK DirectX 9.0
+- DXVA WDK DirectX 9.0 , 2D operations
+- DirectX Video Acceleration WDK DirectX 9.0
+- DirectX Video Acceleration WDK DirectX 9.0 , 2D operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using DXVA with 2D Operations

@@ -3,7 +3,16 @@ title: Point and Print with Packages
 author: windows-driver-content
 description: Point and Print with Packages
 ms.assetid: ea160ffc-fca3-49e4-894d-67bdc65cda38
-keywords: ["Point and Print WDK , security", "User Account Control WDK printer", "UAC WDK printer", "driver store WDK printer"]
+keywords:
+- Point and Print WDK , security
+- User Account Control WDK printer
+- UAC WDK printer
+- driver store WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Point and Print with Packages

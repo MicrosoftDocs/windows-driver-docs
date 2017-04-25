@@ -2,7 +2,16 @@
 title: Extensible Station MAC Statistics
 description: Extensible Station MAC Statistics
 ms.assetid: 5810caf4-112f-465d-9326-b71a3439b6c5
-keywords: ["ExtSTA mode WDK Native 802.11", "Extensible Station MAC statistics WDK Native 802.11", "MAC statistics WDK Native 802.11", "media access control statistics WDK Native 802.11"]
+keywords:
+- ExtSTA mode WDK Native 802.11
+- Extensible Station MAC statistics WDK Native 802.11
+- MAC statistics WDK Native 802.11
+- media access control statistics WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Station MAC Statistics

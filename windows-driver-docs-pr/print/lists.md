@@ -3,7 +3,15 @@ title: Lists
 author: windows-driver-content
 description: Lists
 ms.assetid: 69b928fa-8348-437a-ac4d-677f272615dd
-keywords: ["GPD file entries WDK Unidrv , lists", "listing attributes WDK GPD files", "LIST keyword"]
+keywords:
+- GPD file entries WDK Unidrv , lists
+- listing attributes WDK GPD files
+- LIST keyword
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Lists

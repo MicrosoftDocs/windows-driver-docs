@@ -3,7 +3,14 @@ title: Constants
 author: windows-driver-content
 description: Constants
 ms.assetid: f35a8032-bbee-493d-8a16-17518cdf5b39
-keywords: ["GPD file entries WDK Unidrv , constants", "constants WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , constants
+- constants WDK GPD files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Constants

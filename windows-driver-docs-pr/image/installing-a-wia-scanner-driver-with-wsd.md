@@ -3,6 +3,11 @@ title: Installing a WIA Scanner Driver with WSD
 author: windows-driver-content
 description: Installing a WIA Scanner Driver with WSD
 ms.assetid: 7dc125cb-0f20-4d3d-8124-df556a9644d7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a WIA Scanner Driver with WSD

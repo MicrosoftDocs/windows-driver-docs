@@ -3,6 +3,11 @@ title: Using Work Items
 author: windows-driver-content
 description: Using Work Items
 ms.assetid: 4617A33F-9026-45FF-9CC2-7215423E6D35
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Work Items

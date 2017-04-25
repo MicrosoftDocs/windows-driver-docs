@@ -3,7 +3,17 @@ title: GDL Schema Root Element
 author: windows-driver-content
 description: GDL Schema Root Element
 ms.assetid: 6148f026-52fa-452d-aa81-564d6ee5288d
-keywords: ["GDL WDK , elements", "GDL WDK , schemas", "SnapshotRoot element WDK GDL", "root element WDK GDL", "snapshots WDK GDL , structure"]
+keywords:
+- GDL WDK , elements
+- GDL WDK , schemas
+- SnapshotRoot element WDK GDL
+- root element WDK GDL
+- snapshots WDK GDL , structure
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Schema Root Element

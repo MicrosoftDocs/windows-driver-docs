@@ -3,7 +3,15 @@ title: COM Interface Design Skills
 author: windows-driver-content
 description: COM Interface Design Skills
 ms.assetid: 3a3adbc2-af6f-4495-8993-fd25d56ffad6
-keywords: ["Windows Device Testing Framework WDK , action interfaces", "WDTF WDK , action interfaces", "action interfaces WDK WDTF"]
+keywords:
+- Windows Device Testing Framework WDK , action interfaces
+- WDTF WDK , action interfaces
+- action interfaces WDK WDTF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COM Interface Design Skills

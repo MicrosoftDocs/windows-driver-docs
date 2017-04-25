@@ -3,6 +3,11 @@ title: Writing Core Drivers
 author: windows-driver-content
 description: Writing Core Drivers
 ms.assetid: 3a41a91b-3cc3-462a-8836-448203ccb4c2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing Core Drivers

@@ -2,6 +2,11 @@
 title: PackageStructure
 description: PackageStructure
 ms.assetid: 44be9d7d-79b0-49b6-b427-e729efadb88c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PackageStructure

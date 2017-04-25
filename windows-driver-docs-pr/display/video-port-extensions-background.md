@@ -2,7 +2,17 @@
 title: Video Port Extensions Background
 description: Video Port Extensions Background
 ms.assetid: 77bed8d3-4fe5-4159-88e9-d6565aea9117
-keywords: ["DirectX VPE support WDK DirectDraw , about video port extensions", "drawing VPEs WDK DirectDraw , about video port extensions", "DirectDraw VPEs WDK Windows 2000 display , about video port extensions", "video port extensions WDK DirectDraw , about video port extensions", "VPEs WDK DirectDraw , about video port extensions"]
+keywords:
+- DirectX VPE support WDK DirectDraw , about video port extensions
+- drawing VPEs WDK DirectDraw , about video port extensions
+- DirectDraw VPEs WDK Windows 2000 display , about video port extensions
+- video port extensions WDK DirectDraw , about video port extensions
+- VPEs WDK DirectDraw , about video port extensions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Port Extensions Background

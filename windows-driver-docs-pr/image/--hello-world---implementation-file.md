@@ -3,6 +3,11 @@ title: Hello World' Implementation File
 author: windows-driver-content
 description: Hello World' Implementation File
 ms.assetid: f81df130-44de-48c5-bfd1-d7e7084e91de
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 'Hello World' Implementation File

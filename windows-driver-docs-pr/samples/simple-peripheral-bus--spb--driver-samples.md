@@ -1,14 +1,19 @@
 ---
 title: Simple peripheral bus (SPB) driver samples
 author: windows-driver-content
-description: The driver samples in this directory provide a starting point for writing a custom driver for your device.
+description: The driver samples in this directory provide a starting point for writing a custom SPB driver for your device.
 ms.assetid: E9A667EA-3AE5-4A0E-BC3F-CD442141886B
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Simple peripheral bus (SPB) driver samples
 
 
-The driver samples in this directory provide a starting point for writing a custom driver for your device.
+The driver samples in this directory provide a starting point for writing a custom SPB driver for your device.
 
 ## Simple peripheral bus (SPB)
 

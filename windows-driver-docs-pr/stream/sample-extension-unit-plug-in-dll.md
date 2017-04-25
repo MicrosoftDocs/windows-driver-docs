@@ -3,7 +3,15 @@ title: Sample Extension Unit Plug-in DLL
 author: windows-driver-content
 description: Sample Extension Unit Plug-in DLL
 ms.assetid: bd9ea70d-7bd0-494d-8d67-7a36a41d005b
-keywords: ["plug-in DLL WDK USB Video Class", "extension units WDK USB Video Class , samples, plug-in DLL", "sample code WDK USB Video Class , extension unit plug-in DLL"]
+keywords:
+- plug-in DLL WDK USB Video Class
+- extension units WDK USB Video Class , samples, plug-in DLL
+- sample code WDK USB Video Class , extension unit plug-in DLL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Extension Unit Plug-in DLL

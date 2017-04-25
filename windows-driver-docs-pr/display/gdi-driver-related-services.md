@@ -2,7 +2,15 @@
 title: GDI Driver-Related Services
 description: GDI Driver-Related Services
 ms.assetid: bb46ae7a-9ade-4e23-b9fe-489f83445ff3
-keywords: ["GDI WDK Windows 2000 display , driver-related services", "graphics drivers WDK Windows 2000 display , driver-related services", "drawing WDK GDI , driver-related services"]
+keywords:
+- GDI WDK Windows 2000 display , driver-related services
+- graphics drivers WDK Windows 2000 display , driver-related services
+- drawing WDK GDI , driver-related services
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Driver-Related Services

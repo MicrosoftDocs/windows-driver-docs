@@ -3,7 +3,25 @@ title: Controlling Targets
 author: windows-driver-content
 description: Controlling Targets
 ms.assetid: b329e9a2-7d24-4612-9aa1-9d7955a61473
-keywords: ["Windows Device Testing Framework WDK , action interfaces", "WDTF WDK , action interfaces", "Windows Device Testing Framework WDK , manageable tests", "WDTF WDK , manageable tests", "manageable tests WDK WDTF", "action interfaces WDK WDTF", "COM interfaces WDK WDTF", "interfaces WDK WDTF", "code modules WDK WDTF", "scripts WDK WDTF", "synchronous tests WDK WDTF", "asynchronous tests WDK WDTF", "test scripts WDK WDTF"]
+keywords:
+- Windows Device Testing Framework WDK , action interfaces
+- WDTF WDK , action interfaces
+- Windows Device Testing Framework WDK , manageable tests
+- WDTF WDK , manageable tests
+- manageable tests WDK WDTF
+- action interfaces WDK WDTF
+- COM interfaces WDK WDTF
+- interfaces WDK WDTF
+- code modules WDK WDTF
+- scripts WDK WDTF
+- synchronous tests WDK WDTF
+- asynchronous tests WDK WDTF
+- test scripts WDK WDTF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling Targets

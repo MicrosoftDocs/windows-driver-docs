@@ -2,6 +2,11 @@
 title: Calling SetupWriteTextLogError
 description: Calling SetupWriteTextLogError
 ms.assetid: 55edc72a-2d53-4084-a1e4-e7e6515a4990
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling SetupWriteTextLogError

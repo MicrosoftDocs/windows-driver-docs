@@ -2,7 +2,16 @@
 title: NewDisp Dynamic Reload of a Display Driver
 description: NewDisp Dynamic Reload of a Display Driver
 ms.assetid: 0f8ac27c-8a42-4032-9974-89a7463dccbb
-keywords: ["newdisp.exe", "dyanmic driver reloads WDK Windows 2000 display", "reload driver dynamically WDK Windows 2000 display", "reboot prevention with dynamic reload WDK Windows 2000 display"]
+keywords:
+- newdisp.exe
+- dyanmic driver reloads WDK Windows 2000 display
+- reload driver dynamically WDK Windows 2000 display
+- reboot prevention with dynamic reload WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NewDisp: Dynamic Reload of a Display Driver

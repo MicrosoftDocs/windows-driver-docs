@@ -2,6 +2,11 @@
 title: Using Kernel Mode Performance Counters
 description: Using Kernel Mode Performance Counters
 ms.assetid: b740dd92-ad75-4dea-98d4-dce04b273d2f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Kernel Mode Performance Counters

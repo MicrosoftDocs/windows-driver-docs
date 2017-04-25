@@ -3,7 +3,14 @@ title: Local Print Provider
 author: windows-driver-content
 description: Local Print Provider
 ms.assetid: c6f9ba42-5f0f-4919-bfac-e4cd1045de4d
-keywords: ["print providers WDK , local print providers", "local print providers WDK"]
+keywords:
+- print providers WDK , local print providers
+- local print providers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Local Print Provider

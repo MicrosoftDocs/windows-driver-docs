@@ -2,7 +2,17 @@
 title: Restarting a Binding
 description: Restarting a Binding
 ms.assetid: 5abec927-cb73-4b02-b977-c4f45bd37c42
-keywords: ["protocol drivers WDK networking , binding restarts", "NDIS protocol drivers WDK , binding restarts", "binding restarts WDK networking", "binding states WDK networking", "restarting binding for protocol driver"]
+keywords:
+- protocol drivers WDK networking , binding restarts
+- NDIS protocol drivers WDK , binding restarts
+- binding restarts WDK networking
+- binding states WDK networking
+- restarting binding for protocol driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Restarting a Binding

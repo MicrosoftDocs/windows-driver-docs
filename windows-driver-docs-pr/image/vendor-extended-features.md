@@ -3,6 +3,11 @@ title: Vendor-Extended Features
 author: windows-driver-content
 description: Vendor-Extended Features
 ms.assetid: 8063622e-efc4-4940-893f-2916bf297d12
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vendor-Extended Features

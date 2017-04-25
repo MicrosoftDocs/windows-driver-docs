@@ -3,7 +3,17 @@ title: Filter Control Mutex in AVStream
 author: windows-driver-content
 description: Filter Control Mutex in AVStream
 ms.assetid: 402795a0-e567-4e7e-a7d8-b2ce29ffb8fd
-keywords: ["filter control mutex WDK AVStream", "AVStream mutexes WDK", "mutexes WDK AVStream", "synchronization WDK AVStream", "state transitions WDK AVStream"]
+keywords:
+- filter control mutex WDK AVStream
+- AVStream mutexes WDK
+- mutexes WDK AVStream
+- synchronization WDK AVStream
+- state transitions WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Control Mutex in AVStream

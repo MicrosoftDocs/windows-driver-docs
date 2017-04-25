@@ -2,7 +2,19 @@
 title: Displaying a Trace Log
 description: Displaying a Trace Log
 ms.assetid: c60c801a-6128-43d6-a435-4537c597177f
-keywords: ["trace logs WDK TraceView , displaying", "TraceView WDK , displaying logs", "displaying trace logs", "log files WDK TraceView , displaying", "event trace logs WDK", ".etl files", "etl files"]
+keywords:
+- trace logs WDK TraceView , displaying
+- TraceView WDK , displaying logs
+- displaying trace logs
+- log files WDK TraceView , displaying
+- event trace logs WDK
+- .etl files
+- etl files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Displaying a Trace Log

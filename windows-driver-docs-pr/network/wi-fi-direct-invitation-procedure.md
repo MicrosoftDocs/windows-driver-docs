@@ -1,7 +1,12 @@
 ---
-title: Wi-Fi Direct Invitation Procedure
-description: The figure below shows the typical OID/Indications and message sequences when performing Invitation procedure between two PCs. This flow assumes that the information to respond to the Invitation Request is already available on the responding PC.
+title: Wi-Fi Direct invitation procedure
+description: This section shows the procedure for Wi-Fi Direct invitation
 ms.assetid: 36B8C2A7-1880-4AE3-AA4E-604400420AFB
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Direct Invitation Procedure

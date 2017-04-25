@@ -2,7 +2,16 @@
 title: Filter Module Status Indications
 description: Filter Module Status Indications
 ms.assetid: b39c6cda-dac7-4538-8ea6-513a52601b1f
-keywords: ["filter modules WDK networking , status indications", "filter drivers WDK networking , status indications", "NDIS filter drivers WDK , status indications", "status indications WDK networking , filter drivers"]
+keywords:
+- filter modules WDK networking , status indications
+- filter drivers WDK networking , status indications
+- NDIS filter drivers WDK , status indications
+- status indications WDK networking , filter drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Module Status Indications

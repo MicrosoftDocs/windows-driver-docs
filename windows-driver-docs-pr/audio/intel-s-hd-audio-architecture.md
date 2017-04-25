@@ -2,7 +2,18 @@
 title: Intel's HD Audio Architecture
 description: Intel's HD Audio Architecture
 ms.assetid: 86cba795-847c-4f54-93f8-e34ae73dc708
-keywords: ["HD Audio, architecture", "High Definition Audio (HD Audio), architecture", "architecture WDK audio", "Intel High Definition Audio Specification", "UAA WDK", "Universal Audio Architecture WDK"]
+keywords:
+- HD Audio, architecture
+- High Definition Audio (HD Audio), architecture
+- architecture WDK audio
+- Intel High Definition Audio Specification
+- UAA WDK
+- Universal Audio Architecture WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Intel's HD Audio Architecture

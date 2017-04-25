@@ -2,7 +2,15 @@
 title: UPS Registry Entries
 description: UPS Registry Entries
 ms.assetid: d0d4ef8f-9df1-48a3-b0fc-cea4eb3cdf40
-keywords: ["UPS minidrivers WDK , registry entries", "UPS registry entries WDK", "registry WDK UPS"]
+keywords:
+- UPS minidrivers WDK , registry entries
+- UPS registry entries WDK
+- registry WDK UPS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UPS Registry Entries

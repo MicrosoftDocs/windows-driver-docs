@@ -2,7 +2,16 @@
 title: NDIS Port OID Requests
 description: NDIS Port OID Requests
 ms.assetid: 361f9adf-2bf6-4aa8-b66b-fe9304b14550
-keywords: ["ports WDK NDIS , OID requests", "NDIS ports WDK , OID requests", "OID requests WDK NDIS ports", "associating OID requests WDK NDIS ports"]
+keywords:
+- ports WDK NDIS , OID requests
+- NDIS ports WDK , OID requests
+- OID requests WDK NDIS ports
+- associating OID requests WDK NDIS ports
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Port OID Requests

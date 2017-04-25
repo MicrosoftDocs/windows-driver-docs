@@ -3,7 +3,14 @@ title: Raster Data Compression Commands
 author: windows-driver-content
 description: Raster Data Compression Commands
 ms.assetid: fd88d009-7612-49cc-810a-b0d09b4b75b3
-keywords: ["data compression raster printing commands WDK Unidrv", "compression raster printing commands WDK Unidrv"]
+keywords:
+- data compression raster printing commands WDK Unidrv
+- compression raster printing commands WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Raster Data Compression Commands

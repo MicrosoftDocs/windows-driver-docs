@@ -2,6 +2,11 @@
 title: Can I use enumerations in my tracing code
 description: Can I use enumerations in my tracing code
 ms.assetid: c42ab1ad-6b8f-458f-ba29-e3553095c853
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Can I use enumerations in my tracing code?

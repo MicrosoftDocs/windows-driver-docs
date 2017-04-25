@@ -2,7 +2,15 @@
 title: Control GUID
 description: Control GUID
 ms.assetid: a85a5e1a-c4c1-40d4-a0ef-d8e552590f03
-keywords: ["control GUIDs WDK", "GUIDs WDK software tracing", "identifiers WDK software tracing"]
+keywords:
+- control GUIDs WDK
+- GUIDs WDK software tracing
+- identifiers WDK software tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Control GUID

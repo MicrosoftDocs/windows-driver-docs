@@ -2,7 +2,23 @@
 title: Service Sink and Service Group Objects
 description: Service Sink and Service Group Objects
 ms.assetid: 00e17e01-8889-4fae-a0ff-e110d7a9b21e
-keywords: ["helper objects WDK audio , service sink objects", "helper objects WDK audio , service group objects", "service sink objects WDK audio", "service group objects WDK audio", "IServiceSink interface", "IServiceGroup interface", "distributing interrupt notifications WDK audio", "notifications WDK audio", "interrupt notifications WDK audio", "interrupt service routines WDK audio", "ISRs WDK audio"]
+keywords:
+- helper objects WDK audio , service sink objects
+- helper objects WDK audio , service group objects
+- service sink objects WDK audio
+- service group objects WDK audio
+- IServiceSink interface
+- IServiceGroup interface
+- distributing interrupt notifications WDK audio
+- notifications WDK audio
+- interrupt notifications WDK audio
+- interrupt service routines WDK audio
+- ISRs WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Service Sink and Service Group Objects

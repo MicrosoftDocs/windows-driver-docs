@@ -3,7 +3,17 @@ title: The IEEE 1394 Driver Stack
 author: windows-driver-content
 description: The IEEE 1394 Driver Stack
 ms.assetid: 3c8c218e-d814-451c-9a39-fe7fe5fb7aaf
-keywords: ["IEEE 1394 WDK buses , driver stacks", "1394 WDK buses , driver stacks", "driver stacks WDK IEEE 1394 bus", "stacks WDK IEEE 1394 bus", "device stacks WDK IEEE 1394 bus"]
+keywords:
+- IEEE 1394 WDK buses , driver stacks
+- 1394 WDK buses , driver stacks
+- driver stacks WDK IEEE 1394 bus
+- stacks WDK IEEE 1394 bus
+- device stacks WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The IEEE 1394 Driver Stack

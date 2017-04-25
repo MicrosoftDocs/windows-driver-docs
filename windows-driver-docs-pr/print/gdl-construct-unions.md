@@ -3,7 +3,20 @@ title: GDL Construct Unions
 author: windows-driver-content
 description: GDL Construct Unions
 ms.assetid: 0ca237fe-7f47-4b9c-8963-676a2afd1140
-keywords: ["constructs WDK GDL , unions", "logical constructs WDK GDL", "constructs WDK GDL , logical constructs", "constructs WDK GDL , examples", "sibling constructs WDK GDL", "unions WDK GDL", "parser WDK GDL , handling unions", "GDL WDK , unions"]
+keywords:
+- constructs WDK GDL , unions
+- logical constructs WDK GDL
+- constructs WDK GDL , logical constructs
+- constructs WDK GDL , examples
+- sibling constructs WDK GDL
+- unions WDK GDL
+- parser WDK GDL , handling unions
+- GDL WDK , unions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Construct Unions

@@ -2,7 +2,15 @@
 title: Miscellaneous Checks
 description: Miscellaneous Checks
 ms.assetid: 4d7b14ae-5a3a-49b4-9678-6527cbacc4d4
-keywords: ["Miscellaneous Checks option WDK Driver Verifier", "lookasides WDK Driver Verifier", "freed memory WDK Driver Verifier"]
+keywords:
+- Miscellaneous Checks option WDK Driver Verifier
+- lookasides WDK Driver Verifier
+- freed memory WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miscellaneous Checks

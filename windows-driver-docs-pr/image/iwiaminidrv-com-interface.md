@@ -2,7 +2,12 @@
 title: IWiaMiniDrv COM Interface
 author: windows-driver-content
 ms.assetid: a4bd0dee-fb40-42d4-a235-9dab3bc84017
-description: 
+description: This topic provides detailed guidance on using the IWiaMiniDrv COM interface
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IWiaMiniDrv COM Interface

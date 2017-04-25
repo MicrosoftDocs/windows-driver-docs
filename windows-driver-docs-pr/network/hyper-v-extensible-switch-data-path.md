@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch Data Path
 description: Hyper-V Extensible Switch Data Path
 ms.assetid: 5E7F135B-3086-415F-8D39-98CDBED8EBB4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch Data Path

@@ -2,6 +2,11 @@
 title: Can I add software tracing to programs written in C++ managed code
 description: Can I add software tracing to programs written in C++ managed code
 ms.assetid: f016c710-9b27-4b62-9573-0e66857b0fb0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Can I add software tracing to programs written in C++ managed code?

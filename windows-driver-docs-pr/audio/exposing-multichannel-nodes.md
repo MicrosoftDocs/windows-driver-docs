@@ -2,7 +2,25 @@
 title: Exposing Multichannel Nodes
 description: Exposing Multichannel Nodes
 ms.assetid: 48ee3b33-fb97-4e71-bf6f-5dbdb76aa7f8
-keywords: ["audio properties WDK , multichannel nodes", "WDM audio properties WDK , multichannel nodes", "exposing multichannel nodes", "multichannel nodes WDK audio", "nodes WDK audio , multichannel", "minimum volume levels WDK audio", "maximum volume levels WDK audio", "basic-support queries WDK audio", "range values WDK audio", "SndVol32 WDK audio", "multiple channel support WDK audio", "speakers WDK audio , multichannel nodes", "channel multichannel support WDK audio"]
+keywords:
+- audio properties WDK , multichannel nodes
+- WDM audio properties WDK , multichannel nodes
+- exposing multichannel nodes
+- multichannel nodes WDK audio
+- nodes WDK audio , multichannel
+- minimum volume levels WDK audio
+- maximum volume levels WDK audio
+- basic-support queries WDK audio
+- range values WDK audio
+- SndVol32 WDK audio
+- multiple channel support WDK audio
+- speakers WDK audio , multichannel nodes
+- channel multichannel support WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Exposing Multichannel Nodes

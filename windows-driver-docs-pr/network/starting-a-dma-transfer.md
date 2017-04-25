@@ -2,7 +2,18 @@
 title: Starting a DMA Transfer
 description: Starting a DMA Transfer
 ms.assetid: 27c8a212-5727-48e5-a0bb-8978fd79f240
-keywords: ["memory-to-memory data transfers WDK NetDMA , starting", "data transfers WDK NetDMA , starting", "transferring data WDK NetDMA , starting", "DMA transfers WDK NetDMA , starting", "NetDMA WDK networking , starting transfers", "starting DMA transfers"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , starting
+- data transfers WDK NetDMA , starting
+- transferring data WDK NetDMA , starting
+- DMA transfers WDK NetDMA , starting
+- NetDMA WDK networking , starting transfers
+- starting DMA transfers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting a DMA Transfer

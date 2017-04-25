@@ -2,7 +2,15 @@
 title: Traversing a State Tree
 description: Traversing a State Tree
 ms.assetid: 6940f9e1-01f8-4736-9550-dddba49e4e3c
-keywords: ["offloading state process WDK TCP chimney offload , state tree transversing", "transversing state tree WDK TCP chimney offload", "state offloading process WDK TCP chimney offload , state tree traversing"]
+keywords:
+- offloading state process WDK TCP chimney offload , state tree transversing
+- transversing state tree WDK TCP chimney offload
+- state offloading process WDK TCP chimney offload , state tree traversing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Traversing a State Tree

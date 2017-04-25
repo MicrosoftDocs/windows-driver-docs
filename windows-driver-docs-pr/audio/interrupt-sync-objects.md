@@ -2,7 +2,19 @@
 title: Interrupt Sync Objects
 description: Interrupt Sync Objects
 ms.assetid: c9e228e0-6178-442d-a82a-6b14ed67c9d2
-keywords: ["helper objects WDK audio , interrupt sync objects", "interrupt sync objects WDK audio", "IInterruptSync interface", "synchronization WDK audio", "interrupt service routines WDK audio", "ISRs WDK audio", "non-interrupt routines WDK audio"]
+keywords:
+- helper objects WDK audio , interrupt sync objects
+- interrupt sync objects WDK audio
+- IInterruptSync interface
+- synchronization WDK audio
+- interrupt service routines WDK audio
+- ISRs WDK audio
+- non-interrupt routines WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interrupt Sync Objects

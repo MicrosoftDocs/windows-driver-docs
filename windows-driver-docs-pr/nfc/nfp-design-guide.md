@@ -3,7 +3,17 @@ title: Near field proximity design guide
 author: windows-driver-content
 description: Near field proximity design guide
 ms.assetid: D039E7DE-BE10-4C40-A52C-696BC80DC2F9
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Near field proximity design guide

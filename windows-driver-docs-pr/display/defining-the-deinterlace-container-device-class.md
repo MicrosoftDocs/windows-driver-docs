@@ -2,7 +2,14 @@
 title: Defining the Deinterlace Container Device Class
 description: Defining the Deinterlace Container Device Class
 ms.assetid: 683c8d89-33d5-4b2a-b24a-4e316c3fa64b
-keywords: ["deinterlace container device WDK DirectX VA", "container device WDK DirectX VA"]
+keywords:
+- deinterlace container device WDK DirectX VA
+- container device WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining the Deinterlace Container Device Class

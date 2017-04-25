@@ -3,6 +3,11 @@ title: Overview of Windows support for ACPI 5.0
 author: windows-driver-content
 description: The ACPI 5.0 specification enables support of SoC-based mobile platforms that run Windows 8 and later, but continues to support many useful features that were introduced in earlier versions Windows.
 ms.assetid: BAFBA051-FEDA-469B-9B67-C74D252C84F9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Windows support for ACPI 5.0

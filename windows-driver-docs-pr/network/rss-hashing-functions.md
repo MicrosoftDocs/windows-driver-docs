@@ -2,7 +2,15 @@
 title: RSS Hashing Functions
 description: RSS Hashing Functions
 ms.assetid: e7698573-c3d1-4ac6-a985-93cf7fc6e585
-keywords: ["receive-side scaling WDK networking , hash", "RSS WDK networking , hash", "hash WDK RSS"]
+keywords:
+- receive-side scaling WDK networking , hash
+- RSS WDK networking , hash
+- hash WDK RSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RSS Hashing Functions

@@ -2,7 +2,17 @@
 title: Porting Protocol Binding Operations to NDIS 6.0
 description: Porting Protocol Binding Operations to NDIS 6.0
 ms.assetid: 25e2d209-3256-4451-867f-a3c6c4ca7092
-keywords: ["protocol drivers WDK networking , binding operations", "NDIS protocol drivers WDK , binding operations", "protocol bindings WDK networking", "binding operations WDK networking", "porting protocol drivers WDK networking , binding operations"]
+keywords:
+- protocol drivers WDK networking , binding operations
+- NDIS protocol drivers WDK , binding operations
+- protocol bindings WDK networking
+- binding operations WDK networking
+- porting protocol drivers WDK networking , binding operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Protocol Binding Operations to NDIS 6.0

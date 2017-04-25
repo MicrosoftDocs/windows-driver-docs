@@ -2,7 +2,18 @@
 title: Per-Station Default Keys
 description: Per-Station Default Keys
 ms.assetid: a68799cb-1422-4d0b-8dca-7f9bacb9f133
-keywords: ["cipher operations WDK Native 802.11 , cipher keys", "cipher keys WDK Native 802.11", "per-station default keys WDK Native 802.11", "STA default keys WDK Native 802.11", "Robust Security Network Association WDK Native 802.11", "RSNA WDK Native 802.11"]
+keywords:
+- cipher operations WDK Native 802.11 , cipher keys
+- cipher keys WDK Native 802.11
+- per-station default keys WDK Native 802.11
+- STA default keys WDK Native 802.11
+- Robust Security Network Association WDK Native 802.11
+- RSNA WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Per-Station Default Keys

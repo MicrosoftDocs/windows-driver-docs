@@ -3,7 +3,24 @@ title: Functional Topology
 author: windows-driver-content
 description: Functional Topology
 ms.assetid: f25b3581-5561-4668-8549-65506b03815d
-keywords: ["functional topology WDK BDA", "control nodes WDK BDA", "template topology WDK BDA", "pin types WDK AVStream", "nodes WDK AVStream", "node description GUIDs WDK BDA", "actual topologies WDK BDA", "GUIDs WDK BDA", "demodulator control nodes WDK BDA", "tuner control nodes WDK BDA", "Broadcast Driver Architecture WDK AVStream , control nodes", "BDA WDK AVStream , control nodes"]
+keywords:
+- functional topology WDK BDA
+- control nodes WDK BDA
+- template topology WDK BDA
+- pin types WDK AVStream
+- nodes WDK AVStream
+- node description GUIDs WDK BDA
+- actual topologies WDK BDA
+- GUIDs WDK BDA
+- demodulator control nodes WDK BDA
+- tuner control nodes WDK BDA
+- Broadcast Driver Architecture WDK AVStream , control nodes
+- BDA WDK AVStream , control nodes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functional Topology

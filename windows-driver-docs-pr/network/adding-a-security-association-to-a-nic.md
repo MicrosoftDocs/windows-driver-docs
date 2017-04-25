@@ -2,7 +2,16 @@
 title: Adding a Security Association to a NIC
 description: Adding a Security Association to a NIC
 ms.assetid: 524cc9f8-fe02-4192-85af-83813ae83d08
-keywords: ["security associations WDK IPsec offload", "SAs WDK IPsec offload", "ESP-protected packets WDK IPsec offload , security associations", "AH-protected packets WDK IPsec offload , security associations"]
+keywords:
+- security associations WDK IPsec offload
+- SAs WDK IPsec offload
+- ESP-protected packets WDK IPsec offload , security associations
+- AH-protected packets WDK IPsec offload , security associations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding a Security Association to a NIC

@@ -3,7 +3,17 @@ title: Printer Dirids
 author: windows-driver-content
 description: Printer Dirids
 ms.assetid: 104af180-c739-4733-b21b-448cfe15ab71
-keywords: ["INF files WDK print , dirids", "dirids WDK", "directory identifiers WDK printer", "printer dirids WDK", "identifiers WDK printer"]
+keywords:
+- INF files WDK print , dirids
+- dirids WDK
+- directory identifiers WDK printer
+- printer dirids WDK
+- identifiers WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Dirids

@@ -2,7 +2,17 @@
 title: Miniport Adapter Device PnP Event Notifications
 description: Miniport Adapter Device PnP Event Notifications
 ms.assetid: b9417d5d-1f99-480e-8021-e5dd02f28c36
-keywords: ["Plug and Play WDK networking , handling PnP event notifications", "miniport adapters WDK networking , Plug and Play event notifications", "adapters WDK networking , Plug and Play event notifications", "MiniportDevicePnPEventNotify", "events WDK networking"]
+keywords:
+- Plug and Play WDK networking , handling PnP event notifications
+- miniport adapters WDK networking , Plug and Play event notifications
+- adapters WDK networking , Plug and Play event notifications
+- MiniportDevicePnPEventNotify
+- events WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Adapter Device PnP Event Notifications

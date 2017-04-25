@@ -2,7 +2,18 @@
 title: Support for DirectMusic Properties
 description: Support for DirectMusic Properties
 ms.assetid: f44cf9a9-bdfc-4794-b064-4d1126fb83aa
-keywords: ["hardware acceleration WDK audio", "miniport drivers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , property support", "IKsControl interface", "property-set GUIDs WDK audio"]
+keywords:
+- hardware acceleration WDK audio
+- miniport drivers WDK audio , kernel-mode hardware acceleration
+- synthesizers WDK audio , kernel-mode hardware acceleration
+- synthesizers WDK audio , property support
+- IKsControl interface
+- property-set GUIDs WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Support for DirectMusic Properties

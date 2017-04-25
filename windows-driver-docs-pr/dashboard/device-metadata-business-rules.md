@@ -2,6 +2,11 @@
 title: Device Metadata Business Rules
 description: Device Metadata Business Rules
 ms.assetid: 19a0ced7-bb31-4899-abb4-2de803f179a6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Metadata Business Rules

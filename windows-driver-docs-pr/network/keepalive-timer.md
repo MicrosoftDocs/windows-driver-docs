@@ -2,7 +2,15 @@
 title: Keepalive Timer
 description: Keepalive Timer
 ms.assetid: 32c27ab0-b28b-47f6-a3cd-8c55b50f810b
-keywords: ["timers WDK TCP chimney offload , keepalive timers", "TCP timers WDK TCP chimney offload , keepalive timers", "keepalive timers WDK TCP chimney offload"]
+keywords:
+- timers WDK TCP chimney offload , keepalive timers
+- TCP timers WDK TCP chimney offload , keepalive timers
+- keepalive timers WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Keepalive Timer

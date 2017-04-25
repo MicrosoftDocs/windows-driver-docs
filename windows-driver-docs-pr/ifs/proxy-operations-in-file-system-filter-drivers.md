@@ -3,7 +3,14 @@ title: Proxy Operations in File System Filter Drivers
 author: windows-driver-content
 description: Proxy Operations in File System Filter Drivers
 ms.assetid: 01cc7a48-8b27-4de7-8968-8958e9512989
-keywords: ["security WDK file systems , proxy operations", "proxy operations WDK file systems"]
+keywords:
+- security WDK file systems , proxy operations
+- proxy operations WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Proxy Operations in File System Filter Drivers

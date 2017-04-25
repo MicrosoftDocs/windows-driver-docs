@@ -2,7 +2,17 @@
 title: Porting Interrupt Registration to NDIS 6.0
 description: Porting Interrupt Registration to NDIS 6.0
 ms.assetid: 824c8b48-e0d8-45a2-abf9-9713a0f51efe
-keywords: ["interrupts WDK networking , registration", "message-signaled interrupts WDK networking , registration", "MSIs WDK networking , registration", "registering interrupts", "unregistering interrupts"]
+keywords:
+- interrupts WDK networking , registration
+- message-signaled interrupts WDK networking , registration
+- MSIs WDK networking , registration
+- registering interrupts
+- unregistering interrupts
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Interrupt Registration to NDIS 6.0

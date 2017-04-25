@@ -2,7 +2,15 @@
 title: Handling Resource Creation and Destruction
 description: Handling Resource Creation and Destruction
 ms.assetid: d443bdc3-1c5a-4372-9e6a-b8a4d21499b9
-keywords: ["resource creation WDK display", "resource destruction WDK display", "destroying resources WDK display"]
+keywords:
+- resource creation WDK display
+- resource destruction WDK display
+- destroying resources WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Resource Creation and Destruction

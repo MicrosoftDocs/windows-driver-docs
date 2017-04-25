@@ -3,7 +3,15 @@ title: Sample Drivers That Use Framework DMA
 author: windows-driver-content
 description: Sample Drivers That Use Framework DMA
 ms.assetid: 4d04a517-97b5-441e-b5f5-ca839c3acf1a
-keywords: ["DMA operations WDK KMDF , sample drivers", "bus-master DMA WDK KMDF , sample drivers", "sample drivers WDK KMDF"]
+keywords:
+- DMA operations WDK KMDF , sample drivers
+- bus-master DMA WDK KMDF , sample drivers
+- sample drivers WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Drivers That Use Framework DMA

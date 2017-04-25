@@ -2,7 +2,24 @@
 title: Vertex Fog
 description: Vertex Fog
 ms.assetid: 55083ccb-b93e-4506-baf2-358f90e2c6a6
-keywords: ["vertex fog WDK Direct3D", "iterated fog WDK Direct3D", "local fog WDK Direct3D", "fogging WDK Direct3D", "D3DRENDERSTATE_FOGENABLE", "perspective-correct fog WDK Direct3D", "layered atmosphere model WDK Direct3D", "color fog calculations WDK Direct3D", "D3DPRASTERCAPS_FOGVERTEX", "D3DRENDERSTATE_FOGDENSITY", "D3DRENDERSTATE_FOGCOLOR", "D3DRENDERSTATE_SHADEMODE"]
+keywords:
+- vertex fog WDK Direct3D
+- iterated fog WDK Direct3D
+- local fog WDK Direct3D
+- fogging WDK Direct3D
+- D3DRENDERSTATE_FOGENABLE
+- perspective-correct fog WDK Direct3D
+- layered atmosphere model WDK Direct3D
+- color fog calculations WDK Direct3D
+- D3DPRASTERCAPS_FOGVERTEX
+- D3DRENDERSTATE_FOGDENSITY
+- D3DRENDERSTATE_FOGCOLOR
+- D3DRENDERSTATE_SHADEMODE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vertex Fog

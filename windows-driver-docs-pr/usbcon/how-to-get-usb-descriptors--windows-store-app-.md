@@ -1,6 +1,11 @@
 ---
 Description: One of the main tasks of interacting with a USB device is to get information about it.
 title: How to get USB descriptors (Windows Store app)
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to get USB descriptors (Windows Store app)

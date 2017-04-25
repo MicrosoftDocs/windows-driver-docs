@@ -3,6 +3,11 @@ title: Sample Code to Create Custom Properties
 author: windows-driver-content
 description: Sample Code to Create Custom Properties
 ms.assetid: cf3e5e5b-8853-43a3-857f-87945cea2aa7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Code to Create Custom Properties

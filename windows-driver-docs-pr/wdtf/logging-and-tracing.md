@@ -3,7 +3,14 @@ title: WDTF Object Logging
 author: windows-driver-content
 description: WDTF Object Logging
 ms.assetid: A99E62D1-31A2-46B5-841B-F3969854E39A
-keywords: ["logging WDK WDTF", "tracing WDK WDTF"]
+keywords:
+- logging WDK WDTF
+- tracing WDK WDTF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDTF Object Logging

@@ -2,7 +2,14 @@
 title: 802.11 Cipher Key Types
 description: 802.11 Cipher Key Types
 ms.assetid: 1de1a420-e2ec-4716-8a03-73c9278eb33b
-keywords: ["encryption WDK Native 802.11", "decryption WDK Native 802.11"]
+keywords:
+- encryption WDK Native 802.11
+- decryption WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 Cipher Key Types

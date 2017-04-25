@@ -3,7 +3,18 @@ title: AV/C Streaming Driver Stack
 author: windows-driver-content
 description: AV/C Streaming Driver Stack
 ms.assetid: 2584c74c-ddd6-43cc-9a8c-cd7f43802c4c
-keywords: ["AV/C WDK , Stream filter driver", "Stream filter driver WDK AV/C", "Avcstrm.sys streaming filter driver WDK , driver stacks", "driver stacks WDK AV/C streaming", "stacks WDK AV/C streaming", "peer driver stacks WDK AV/C streaming"]
+keywords:
+- AV/C WDK , Stream filter driver
+- Stream filter driver WDK AV/C
+- Avcstrm.sys streaming filter driver WDK , driver stacks
+- driver stacks WDK AV/C streaming
+- stacks WDK AV/C streaming
+- peer driver stacks WDK AV/C streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C Streaming Driver Stack

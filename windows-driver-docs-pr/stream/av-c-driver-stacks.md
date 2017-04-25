@@ -3,7 +3,16 @@ title: AV/C Driver Stacks
 author: windows-driver-content
 description: AV/C Driver Stacks
 ms.assetid: 7745c466-d16e-4af3-be09-7af01777b033
-keywords: ["AV/C WDK , driver stacks", "driver stacks WDK AV/C", "stacks WDK AV/C", "Avc.sys function driver WDK , driver stacks"]
+keywords:
+- AV/C WDK , driver stacks
+- driver stacks WDK AV/C
+- stacks WDK AV/C
+- Avc.sys function driver WDK , driver stacks
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C Driver Stacks

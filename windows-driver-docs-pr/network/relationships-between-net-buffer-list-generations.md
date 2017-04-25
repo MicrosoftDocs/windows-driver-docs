@@ -2,7 +2,16 @@
 title: Relationships Between NET\_BUFFER\_LIST Generations
 description: Relationships Between NET\_BUFFER\_LIST Generations
 ms.assetid: 37b3b08d-4656-47bc-b656-a03f208e4311
-keywords: ["NET_BUFFER_LIST", "parent/child NET_BUFFER_LIST relationships WDK networking", "child/parent NET_BUFFER_LIST relationships WDK networking", "relationships WDK NET_BUFFER_LIST"]
+keywords:
+- NET_BUFFER_LIST
+- parent/child NET_BUFFER_LIST relationships WDK networking
+- child/parent NET_BUFFER_LIST relationships WDK networking
+- relationships WDK NET_BUFFER_LIST
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Relationships Between NET\_BUFFER\_LIST Generations

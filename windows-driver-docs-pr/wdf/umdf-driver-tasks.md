@@ -3,7 +3,15 @@ title: UMDF Driver Tasks
 author: windows-driver-content
 description: UMDF Driver Tasks
 ms.assetid: 7868aedd-35b6-4de5-a513-067895b647b4
-keywords: ["User-Mode Driver Framework WDK , tasks", "UMDF WDK , tasks", "user-mode drivers WDK UMDF , tasks"]
+keywords:
+- User-Mode Driver Framework WDK , tasks
+- UMDF WDK , tasks
+- user-mode drivers WDK UMDF , tasks
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UMDF Driver Tasks

@@ -1,7 +1,12 @@
 ---
-title: Compiling an NDIS 6.40 Driver
-description: The WDK for Windows 8.1 supports header versioning. Header versioning makes sure that NDIS 6.40 drivers use the appropriate NDIS 6.40 data structures at compile time.
+title: Compiling an NDIS 6.40 driver
+description: This section explains how to compile an NDIS 6.40 driver
 ms.assetid: AF027939-06C7-435C-90D9-82272CED6A84
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compiling an NDIS 6.40 Driver

@@ -2,7 +2,15 @@
 title: Combining Two Streams with Different Heights and Widths
 description: Combining Two Streams with Different Heights and Widths
 ms.assetid: a4b0e32d-17f0-4373-bed2-ce9248b3ceb2
-keywords: ["combining streams WDK DirectX VA", "video streams combined WDK DirectX VA", "streams combined WDK DirectX VA"]
+keywords:
+- combining streams WDK DirectX VA
+- video streams combined WDK DirectX VA
+- streams combined WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Combining Two Streams with Different Heights and Widths

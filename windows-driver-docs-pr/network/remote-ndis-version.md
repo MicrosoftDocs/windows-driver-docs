@@ -2,6 +2,11 @@
 title: Remote NDIS Version
 description: Remote NDIS Version
 ms.assetid: d7f1b3b7-fdfc-45d6-bb62-19b475d466c6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote NDIS Version

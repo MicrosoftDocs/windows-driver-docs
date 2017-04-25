@@ -2,7 +2,15 @@
 title: Implementing IPowerNotify
 description: Implementing IPowerNotify
 ms.assetid: 8bd8b4c8-1961-41ea-ba98-41e3a732ed37
-keywords: ["IPowerNotify interface", "notifications WDK audio", "power-state change notifications WDK audio"]
+keywords:
+- IPowerNotify interface
+- notifications WDK audio
+- power-state change notifications WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing IPowerNotify

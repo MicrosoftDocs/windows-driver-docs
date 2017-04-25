@@ -3,7 +3,23 @@ title: GDL Template Structure
 author: windows-driver-content
 description: GDL Template Structure
 ms.assetid: 68c03c8a-f0d5-43db-a44a-5b0c344fa934
-keywords: ["GDL WDK , templates", "templates WDK GDL", "templates WDK GDL , structure", "parser WDK GDL , template-based parsing", "template-based parsing WDK GDL", "validating GDL entries WDK GDL", "GDL WDK , validating entries", "attributes WDK GDL , in templates", "constructs WDK GDL , in templates", "inheritance WDK GDL", "schemas WDK GDL , inheritance-based schemas"]
+keywords:
+- GDL WDK , templates
+- templates WDK GDL
+- templates WDK GDL , structure
+- parser WDK GDL , template-based parsing
+- template-based parsing WDK GDL
+- validating GDL entries WDK GDL
+- GDL WDK , validating entries
+- attributes WDK GDL , in templates
+- constructs WDK GDL , in templates
+- inheritance WDK GDL
+- schemas WDK GDL , inheritance-based schemas
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Template Structure

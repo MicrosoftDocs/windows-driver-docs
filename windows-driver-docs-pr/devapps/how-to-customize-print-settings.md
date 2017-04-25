@@ -2,6 +2,11 @@
 title: How to customize print settings (Windows Store device apps)
 description: This topic introduces the advanced print settings flyout, and shows how the C\ version of the Print settings and print notifications sample replaces the default flyout with a custom flyout.
 ms.assetid: 099BD9B2-1AA6-49A5-AB84-0AF6FA0EFB26
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to customize print settings (Windows Store device apps)

@@ -2,6 +2,11 @@
 ms.assetid: CED4C82B-726D-4BF8-B047-624450F6132E
 title: How to read the driver test results log
 description: From the Driver Test Group Explorer, you can display the results from driver tests, save the test results to a folder, or load the results from a folder.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to read the driver test results log

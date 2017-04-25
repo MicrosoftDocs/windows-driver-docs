@@ -2,6 +2,11 @@
 ms.assetid: 602bf657-7ae4-4610-b4c0-9d7260c42063
 title: Distributing a driver package
 description: Distributing a driver package
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Distributing a driver package

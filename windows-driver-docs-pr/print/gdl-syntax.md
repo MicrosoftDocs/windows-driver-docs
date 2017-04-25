@@ -3,7 +3,21 @@ title: GDL Syntax
 author: windows-driver-content
 description: GDL Syntax
 ms.assetid: 31f0c2f6-2a6b-4a3c-9da1-6fd586b8ae2a
-keywords: ["GDL WDK , syntax", "parsing GDL data WDK", "parser WDK GDL , parsing data", "GDL WDK , attributes", "GDL WDK , constructs", "attributes WDK GDL", "constructs WDK GDL", "constructs WDK GDL , delimiters", "GDL WDK"]
+keywords:
+- GDL WDK , syntax
+- parsing GDL data WDK
+- parser WDK GDL , parsing data
+- GDL WDK , attributes
+- GDL WDK , constructs
+- attributes WDK GDL
+- constructs WDK GDL
+- constructs WDK GDL , delimiters
+- GDL WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Syntax

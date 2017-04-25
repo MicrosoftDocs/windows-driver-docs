@@ -2,7 +2,14 @@
 title: Enhanced I/O Verification
 description: Enhanced I/O Verification
 ms.assetid: ce8a0b22-fa27-45e5-b013-b3accf604ed4
-keywords: ["Enhanced I/O Verification feature WDK Driver Verifier", "I/O Verification feature WDK Driver Verifier"]
+keywords:
+- Enhanced I/O Verification feature WDK Driver Verifier
+- I/O Verification feature WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enhanced I/O Verification

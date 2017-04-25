@@ -2,6 +2,11 @@
 title: Static Driver Verifier KMDF Function Declarations
 description: Static Driver Verifier KMDF Function Declarations
 ms.assetid: 1623f3a4-e318-41b3-bbcf-d443202f31e6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier KMDF Function Declarations

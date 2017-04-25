@@ -3,7 +3,14 @@ title: PnPXID
 author: windows-driver-content
 description: PnPXID
 ms.assetid: 42590d47-edb0-4435-8f7c-6b9c19d7f324
-keywords: ["WSDMON port monitors WDK , PnPXID command", "PnPXID"]
+keywords:
+- WSDMON port monitors WDK , PnPXID command
+- PnPXID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnPXID

@@ -3,6 +3,11 @@ title: Control Panel Wizard Replacement
 author: windows-driver-content
 description: Control Panel Wizard Replacement
 ms.assetid: d4a418b6-a9f9-41c4-99a9-20992abe80e9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Control Panel Wizard Replacement

@@ -2,7 +2,17 @@
 title: Enumerating Child Devices of a Display Adapter
 description: Enumerating Child Devices of a Display Adapter
 ms.assetid: 3bec2117-aef4-41fc-b88a-0081c7c9fe3d
-keywords: ["video present networks WDK display , display adapter child devices", "VidPN WDK display , display adapter child devices", "child devices WDK video present network", "display adapter child devices WDK video present network", "enumerating child devices WDK video present network"]
+keywords:
+- video present networks WDK display , display adapter child devices
+- VidPN WDK display , display adapter child devices
+- child devices WDK video present network
+- display adapter child devices WDK video present network
+- enumerating child devices WDK video present network
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Child Devices of a Display Adapter

@@ -3,6 +3,11 @@ title: Barcode scanner driver sample
 author: windows-driver-content
 description: The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver.
 ms.assetid: 29374910-AF1A-40E4-8A5D-B48D7D2FD5D8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Barcode scanner driver sample

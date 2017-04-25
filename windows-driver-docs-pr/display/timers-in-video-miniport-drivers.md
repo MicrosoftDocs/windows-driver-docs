@@ -2,7 +2,15 @@
 title: Timers in Video Miniport Drivers
 description: Timers in Video Miniport Drivers
 ms.assetid: 257ea76e-7be6-4895-8e83-0f50c96e5969
-keywords: ["video miniport drivers WDK Windows 2000 , timers", "timers WDK video miniport", "HwVidTimer"]
+keywords:
+- video miniport drivers WDK Windows 2000 , timers
+- timers WDK video miniport
+- HwVidTimer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Timers in Video Miniport Drivers

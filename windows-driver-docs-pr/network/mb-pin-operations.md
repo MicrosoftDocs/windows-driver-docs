@@ -2,6 +2,11 @@
 title: MB PIN Operations
 description: MB PIN Operations
 ms.assetid: ca9e1537-29e8-4849-a634-5c2177886321
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB PIN Operations

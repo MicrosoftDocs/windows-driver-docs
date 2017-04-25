@@ -3,7 +3,18 @@ title: Virtual Subunit Device Identifiers
 author: windows-driver-content
 description: Virtual Subunit Device Identifiers
 ms.assetid: c2018560-f9f4-4aaa-b2b2-8ac5195b892f
-keywords: ["AV/C WDK , identifiers", "identifiers WDK AV/C", "device IDs WDK AV/C", "Avc.sys function driver WDK , identifiers", "virtual subunit device identifiers WDK AV/C", "subunit support WDK AV/C"]
+keywords:
+- AV/C WDK , identifiers
+- identifiers WDK AV/C
+- device IDs WDK AV/C
+- Avc.sys function driver WDK , identifiers
+- virtual subunit device identifiers WDK AV/C
+- subunit support WDK AV/C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Subunit Device Identifiers

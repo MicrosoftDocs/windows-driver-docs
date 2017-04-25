@@ -2,6 +2,11 @@
 title: Test Isolation
 description: Test Isolation
 ms.assetid: AC2A0060-45B9-45ff-87ED-69842F9A567D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test Isolation

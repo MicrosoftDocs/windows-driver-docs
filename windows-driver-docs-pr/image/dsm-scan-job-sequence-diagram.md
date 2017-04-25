@@ -3,6 +3,11 @@ title: DSM Scan Job Sequence Diagram
 author: windows-driver-content
 description: DSM Scan Job Sequence Diagram
 ms.assetid: 127139cc-49c3-424b-b22e-36467f92df13
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DSM Scan Job Sequence Diagram

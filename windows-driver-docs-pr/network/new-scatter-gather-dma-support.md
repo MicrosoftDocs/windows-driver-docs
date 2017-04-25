@@ -2,7 +2,15 @@
 title: New Scatter/Gather DMA Support
 description: New Scatter/Gather DMA Support
 ms.assetid: ac7cd98b-1211-4538-a54b-7362fa1d81b0
-keywords: ["scatter/gather DMA WDK networking", "miniport drivers WDK networking , scatter/gather DMA", "NDIS miniport drivers WDK , scatter/gather DMA"]
+keywords:
+- scatter/gather DMA WDK networking
+- miniport drivers WDK networking , scatter/gather DMA
+- NDIS miniport drivers WDK , scatter/gather DMA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # New Scatter/Gather DMA Support

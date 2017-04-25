@@ -3,7 +3,17 @@ title: Stream Categories
 author: windows-driver-content
 description: Stream Categories
 ms.assetid: dc2af282-4976-42d8-b07b-13b2a6dfb7d5
-keywords: ["video capture WDK AVStream , stream categories", "capturing video WDK AVStream , stream categories", "identifying pin primary purpose", "stream categories WDK video capture , about stream categories", "GUIDs WDK video capture"]
+keywords:
+- video capture WDK AVStream , stream categories
+- capturing video WDK AVStream , stream categories
+- identifying pin primary purpose
+- stream categories WDK video capture , about stream categories
+- GUIDs WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Categories

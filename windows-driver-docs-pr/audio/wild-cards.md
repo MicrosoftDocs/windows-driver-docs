@@ -2,7 +2,15 @@
 title: Wild Cards
 description: Wild Cards
 ms.assetid: fc42fb2d-8df9-47d6-9034-c0588ee81c95
-keywords: ["data-intersection handlers WDK audio , wild cards", "wild cards WDK audio", "data ranges WDK audio , wild cards"]
+keywords:
+- data-intersection handlers WDK audio , wild cards
+- wild cards WDK audio
+- data ranges WDK audio , wild cards
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wild Cards

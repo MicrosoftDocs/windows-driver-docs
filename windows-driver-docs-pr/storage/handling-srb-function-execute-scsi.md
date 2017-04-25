@@ -3,7 +3,15 @@ title: Handling SRB\_FUNCTION\_EXECUTE\_SCSI
 author: windows-driver-content
 description: Handling SRB\_FUNCTION\_EXECUTE\_SCSI
 ms.assetid: 221e1070-12d8-4870-a23c-426ed4a25b84
-keywords: ["SCSI miniport drivers WDK storage , HwScsiStartIo", "HwScsiStartIo", "SRB_FUNCTION_EXECUTE_SCSI"]
+keywords:
+- SCSI miniport drivers WDK storage , HwScsiStartIo
+- HwScsiStartIo
+- SRB_FUNCTION_EXECUTE_SCSI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling SRB\_FUNCTION\_EXECUTE\_SCSI

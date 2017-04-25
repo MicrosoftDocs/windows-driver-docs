@@ -2,6 +2,11 @@
 title: Porting NDIS 6.x Drivers to NDIS 6.30
 description: This section describes the requirements to port NDIS 6.x drivers to NDIS 6.30.
 ms.assetid: 3120C82A-94FF-48F0-8191-CF0C63535113
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting NDIS 6.x Drivers to NDIS 6.30

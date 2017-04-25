@@ -2,7 +2,21 @@
 title: Timing a Flip
 description: Timing a Flip
 ms.assetid: abd3188e-0f75-401a-88e3-e2a9c5788ad5
-keywords: ["drawing page flips WDK DirectDraw , timing", "DirectDraw flipping WDK Windows 2000 display , timing", "page flipping WDK DirectDraw , timing", "flipping WDK DirectDraw , timing", "timing flips WDK DirectDraw", "display duration WDK DirectDraw", "tears WDK DirectDraw", "scan lines WDK DirectDraw", "surfaces WDK DirectDraw , flipping"]
+keywords:
+- drawing page flips WDK DirectDraw , timing
+- DirectDraw flipping WDK Windows 2000 display , timing
+- page flipping WDK DirectDraw , timing
+- flipping WDK DirectDraw , timing
+- timing flips WDK DirectDraw
+- display duration WDK DirectDraw
+- tears WDK DirectDraw
+- scan lines WDK DirectDraw
+- surfaces WDK DirectDraw , flipping
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Timing a Flip

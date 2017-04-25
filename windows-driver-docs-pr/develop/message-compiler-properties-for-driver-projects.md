@@ -2,6 +2,11 @@
 ms.assetid: 388C0D27-F3B9-4EF0-A03C-B58F38F2EFD6
 title: Message Compiler Properties for Driver Projects
 description: Sets the properties for the Message Compiler \(MC.exe\) tool.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Message Compiler Properties for Driver Projects

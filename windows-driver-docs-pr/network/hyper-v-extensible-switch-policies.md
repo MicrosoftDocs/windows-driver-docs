@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch Policies
 description: Hyper-V Extensible Switch Policies
 ms.assetid: 8AB85E48-EF37-4D42-873B-34D4835AF22E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch Policies

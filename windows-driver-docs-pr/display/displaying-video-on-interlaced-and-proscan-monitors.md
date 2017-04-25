@@ -2,7 +2,26 @@
 title: Displaying Video on Interlaced and Proscan Monitors
 description: Displaying Video on Interlaced and Proscan Monitors
 ms.assetid: 26438a11-7627-45c1-956a-c48409102784
-keywords: ["DirectX VPE support WDK DirectDraw , proscan monitors", "drawing VPEs WDK DirectDraw , proscan monitors", "DirectDraw VPEs WDK Windows 2000 display , proscan monitors", "video port extensions WDK DirectDraw , proscan monitors", "VPEs WDK DirectDraw , proscan monitors", "proscan monitors WDK video port extensions", "progressive scan monitors WDK video port extensions", "interlaced video WDK video port extensions", "DirectX VPE support WDK DirectDraw , interlaced video", "drawing VPEs WDK DirectDraw , interlaced video", "DirectDraw VPEs WDK Windows 2000 display , interlaced video", "video port extensions WDK DirectDraw , interlaced video", "VPEs WDK DirectDraw , interlaced video", "NTSC/PAL WDK video port extensions"]
+keywords:
+- DirectX VPE support WDK DirectDraw , proscan monitors
+- drawing VPEs WDK DirectDraw , proscan monitors
+- DirectDraw VPEs WDK Windows 2000 display , proscan monitors
+- video port extensions WDK DirectDraw , proscan monitors
+- VPEs WDK DirectDraw , proscan monitors
+- proscan monitors WDK video port extensions
+- progressive scan monitors WDK video port extensions
+- interlaced video WDK video port extensions
+- DirectX VPE support WDK DirectDraw , interlaced video
+- drawing VPEs WDK DirectDraw , interlaced video
+- DirectDraw VPEs WDK Windows 2000 display , interlaced video
+- video port extensions WDK DirectDraw , interlaced video
+- VPEs WDK DirectDraw , interlaced video
+- NTSC/PAL WDK video port extensions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Displaying Video on Interlaced and Proscan Monitors

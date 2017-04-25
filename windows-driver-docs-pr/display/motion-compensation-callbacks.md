@@ -2,7 +2,20 @@
 title: Motion Compensation Callbacks
 description: Motion Compensation Callbacks
 ms.assetid: a1f748e4-0d62-4543-a409-bb9ec02a7d77
-keywords: ["drawing WDK DirectDraw , motion compensation", "DirectDraw WDK Windows 2000 display , motion compensation", "motion compensation WDK", "compressed video decoding WDK DirectDraw", "video decoding WDK DirectDraw", "decoding WDK DirectDraw", "callback functions WDK DirectDraw motion compensation", "digital video decoding WDK DirectDraw"]
+keywords:
+- drawing WDK DirectDraw , motion compensation
+- DirectDraw WDK Windows 2000 display , motion compensation
+- motion compensation WDK
+- compressed video decoding WDK DirectDraw
+- video decoding WDK DirectDraw
+- decoding WDK DirectDraw
+- callback functions WDK DirectDraw motion compensation
+- digital video decoding WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Motion Compensation Callbacks

@@ -2,6 +2,11 @@
 title: Rendering Pipeline
 description: Rendering Pipeline
 ms.assetid: 63672d6e-5c5d-4873-a104-991e0b17d128
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rendering Pipeline

@@ -2,7 +2,22 @@
 title: Notification of Actual Heap Base Addresses
 description: Notification of Actual Heap Base Addresses
 ms.assetid: b2fe29c7-7c97-41c2-a6be-2c0ef25c5b58
-keywords: ["heaps WDK DirectDraw", "display memory WDK DirectDraw , heaps", "nonlocal display memory WDK DirectDraw , heaps", "AGP WDK DirectDraw , heaps", "drawing AGP support WDK DirectDraw , heaps", "DirectDraw AGP support WDK Windows 2000 display , heaps", "memory WDK DirectDraw AGP , heaps", "notifications WDK DirectDraw heap addresses", "linear heaps WDK DirectDraw", "physical heaps WDK DirectDraw"]
+keywords:
+- heaps WDK DirectDraw
+- display memory WDK DirectDraw , heaps
+- nonlocal display memory WDK DirectDraw , heaps
+- AGP WDK DirectDraw , heaps
+- drawing AGP support WDK DirectDraw , heaps
+- DirectDraw AGP support WDK Windows 2000 display , heaps
+- memory WDK DirectDraw AGP , heaps
+- notifications WDK DirectDraw heap addresses
+- linear heaps WDK DirectDraw
+- physical heaps WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notification of Actual Heap Base Addresses

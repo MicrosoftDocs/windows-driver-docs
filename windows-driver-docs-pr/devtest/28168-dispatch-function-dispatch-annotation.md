@@ -2,6 +2,11 @@
 title: C28168
 description: Warning C28168 The dispatch function does not have a \_Dispatch\_type\_ annotation matching this dispatch table entry.
 ms.assetid: 5e5acc54-acb3-4366-a625-eb79865e932e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28168

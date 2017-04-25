@@ -2,7 +2,18 @@
 title: Bypassing Boot Options
 description: Bypassing Boot Options
 ms.assetid: 7991fed3-943e-4d43-acba-e2462f7e9d03
-keywords: ["boot options WDK , bypassing", "F8 key (bypassing boot options) WDK", "bypassing boot options", "kernel debugging support WDK boot options", "Debugging Mode WDK boot options", "skipping boot options"]
+keywords:
+- boot options WDK , bypassing
+- F8 key (bypassing boot options) WDK
+- bypassing boot options
+- kernel debugging support WDK boot options
+- Debugging Mode WDK boot options
+- skipping boot options
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bypassing Boot Options

@@ -3,6 +3,11 @@ title: EFI\_USB\_SUPERSPEED\_CONFIG\_INFO
 author: windows-driver-content
 description: EFI\_USB\_SUPERSPEED\_CONFIG\_INFO
 ms.assetid: 9827B0A9-AC69-43FA-922F-384E3AE140F7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USB\_SUPERSPEED\_CONFIG\_INFO

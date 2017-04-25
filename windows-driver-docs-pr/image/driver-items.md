@@ -3,6 +3,11 @@ title: Driver Items
 author: windows-driver-content
 description: Driver Items
 ms.assetid: 7b557c92-400e-45e5-bee6-328489d20cae
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Items

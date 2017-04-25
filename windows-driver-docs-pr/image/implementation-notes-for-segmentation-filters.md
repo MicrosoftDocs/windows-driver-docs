@@ -3,6 +3,11 @@ title: Implementation Notes for Segmentation Filters
 author: windows-driver-content
 description: Implementation Notes for Segmentation Filters
 ms.assetid: c4caf8dd-8108-4bc7-b02f-1e180fedb95f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementation Notes for Segmentation Filters

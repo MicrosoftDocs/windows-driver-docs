@@ -2,7 +2,14 @@
 title: Minimum Requirements for Supporting Header-Data Split
 description: Minimum Requirements for Supporting Header-Data Split
 ms.assetid: 32ca214a-5103-4472-bbdb-1338188750d9
-keywords: ["header-data split WDK , requirements", "Ethernet frame splitting WDK networking , requirements"]
+keywords:
+- header-data split WDK , requirements
+- Ethernet frame splitting WDK networking , requirements
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Minimum Requirements for Supporting Header-Data Split

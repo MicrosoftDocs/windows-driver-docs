@@ -3,6 +3,11 @@ title: Introduction to Microsoft STI
 author: windows-driver-content
 description: Introduction to Microsoft STI
 ms.assetid: b329dbbc-28c5-47df-9ced-33180415b7c6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Microsoft STI

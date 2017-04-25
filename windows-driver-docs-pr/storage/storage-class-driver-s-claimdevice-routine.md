@@ -3,7 +3,16 @@ title: Storage Class Driver's ClaimDevice Routine
 author: windows-driver-content
 description: Storage Class Driver's ClaimDevice Routine
 ms.assetid: 175b9be6-34a5-4d20-970c-aa9a6880c242
-keywords: ["ClaimDevice", "claiming storage devices", "query-property requests WDK storage", "configuration information WDk storage"]
+keywords:
+- ClaimDevice
+- claiming storage devices
+- query-property requests WDK storage
+- configuration information WDk storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Class Driver's ClaimDevice Routine

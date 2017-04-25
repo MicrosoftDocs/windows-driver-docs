@@ -2,6 +2,11 @@
 title: Sys\_error("slam.bp Permission denied") Exception
 description: Sys\_error( \ 0034;slam.bp Permission denied \ 0034;) Exception
 ms.assetid: d7b2da9c-792f-4cdc-9945-2877f48f775f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sys\_error("slam.bp: Permission denied") Exception

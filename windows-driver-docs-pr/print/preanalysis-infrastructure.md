@@ -3,7 +3,20 @@ title: Preanalysis Infrastructure
 author: windows-driver-content
 description: Preanalysis Infrastructure
 ms.assetid: 4c07145a-9a08-4507-8bab-769617e73d77
-keywords: ["banding WDK Unidrv", "preanalysis infrastructure WDK Unidrv", "black bands WDK Unidrv", "DrvStretchBlt", "OEMStretchBlt", "DrvStartBanding", "DrvNextBand", "DrvQueryPerBandInfo"]
+keywords:
+- banding WDK Unidrv
+- preanalysis infrastructure WDK Unidrv
+- black bands WDK Unidrv
+- DrvStretchBlt
+- OEMStretchBlt
+- DrvStartBanding
+- DrvNextBand
+- DrvQueryPerBandInfo
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preanalysis Infrastructure

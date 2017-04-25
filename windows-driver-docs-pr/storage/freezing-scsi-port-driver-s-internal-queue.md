@@ -3,6 +3,11 @@ title: Freezing SCSI Port Driver's Internal Queue
 author: windows-driver-content
 description: Freezing SCSI Port Driver's Internal Queue
 ms.assetid: 8e93b7d4-8429-43ec-a439-75cfeaa95887
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Freezing SCSI Port Driver's Internal Queue

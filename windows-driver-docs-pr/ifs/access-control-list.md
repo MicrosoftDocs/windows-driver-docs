@@ -3,7 +3,23 @@ title: Access Control List
 author: windows-driver-content
 description: Access Control List
 ms.assetid: e682c2cc-ddd7-482b-b4f2-3e163d914752
-keywords: ["security descriptors WDK file systems , access control list", "descriptors WDK file systems , access control list", "access control list WDK file systems", "ACL WDK file systems", "discretionary ACL WDK file systems", "system ACL WDK file systems", "mandatory controls WDK file systems", "protected objects WDK file systems", "object security WDK file systems", "access control entry WDK file systems", "ACE WDK file systems"]
+keywords:
+- security descriptors WDK file systems , access control list
+- descriptors WDK file systems , access control list
+- access control list WDK file systems
+- ACL WDK file systems
+- discretionary ACL WDK file systems
+- system ACL WDK file systems
+- mandatory controls WDK file systems
+- protected objects WDK file systems
+- object security WDK file systems
+- access control entry WDK file systems
+- ACE WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Access Control List

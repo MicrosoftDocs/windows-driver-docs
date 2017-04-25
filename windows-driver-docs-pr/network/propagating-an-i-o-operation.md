@@ -2,7 +2,14 @@
 title: Propagating an I/O Operation
 description: Propagating an I/O Operation
 ms.assetid: 566243b3-a272-4de5-aab1-d358d5c3a5e7
-keywords: ["propagating TCP chimney I/O operation", "I/O WDK TCP chimney offload"]
+keywords:
+- propagating TCP chimney I/O operation
+- I/O WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Propagating an I/O Operation

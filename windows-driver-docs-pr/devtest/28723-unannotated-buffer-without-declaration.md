@@ -2,6 +2,11 @@
 title: C28723
 description: Warning C28723 Unannotated buffer in function definition that has no corresponding declaration.
 ms.assetid: FE481A48-F4C1-4C25-8CE6-3802D57B8F68
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28723

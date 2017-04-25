@@ -2,7 +2,19 @@
 title: VPE Callback Functions
 description: VPE Callback Functions
 ms.assetid: c36e99a5-0657-4945-b5e8-21d875e9d1ec
-keywords: ["DirectX VPE support WDK DirectDraw , initialization", "drawing VPEs WDK DirectDraw , initialization", "DirectDraw VPEs WDK Windows 2000 display , initialization", "video port extensions WDK DirectDraw , initialization", "VPEs WDK DirectDraw , initialization", "initializing DirectX VPE functionality", "callback functions WDK video port extensions"]
+keywords:
+- DirectX VPE support WDK DirectDraw , initialization
+- drawing VPEs WDK DirectDraw , initialization
+- DirectDraw VPEs WDK Windows 2000 display , initialization
+- video port extensions WDK DirectDraw , initialization
+- VPEs WDK DirectDraw , initialization
+- initializing DirectX VPE functionality
+- callback functions WDK video port extensions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VPE Callback Functions

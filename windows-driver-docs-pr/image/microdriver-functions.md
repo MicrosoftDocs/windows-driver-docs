@@ -3,6 +3,11 @@ title: Microdriver Functions
 author: windows-driver-content
 description: Microdriver Functions
 ms.assetid: 491b954a-8ffa-4899-8c7d-0aee409f4742
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microdriver Functions

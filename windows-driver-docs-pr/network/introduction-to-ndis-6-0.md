@@ -2,7 +2,15 @@
 title: Introduction to NDIS 6.0
 description: Introduction to NDIS 6.0
 ms.assetid: cb5040be-ddd0-46c9-a3e4-f3ca88cd4c95
-keywords: ["network drivers WDK , NDIS", "NDIS WDK , about NDIS", "Network Driver Interface Specification WDK"]
+keywords:
+- network drivers WDK , NDIS
+- NDIS WDK , about NDIS
+- Network Driver Interface Specification WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to NDIS 6.0

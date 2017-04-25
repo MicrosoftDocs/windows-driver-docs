@@ -3,7 +3,14 @@ title: Standard Options
 author: windows-driver-content
 description: Standard Options
 ms.assetid: db4578c1-0954-4c51-a11a-923ab7df2b5b
-keywords: ["printer options WDK Unidrv , standard", "standard options WDK Unidrv"]
+keywords:
+- printer options WDK Unidrv , standard
+- standard options WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standard Options

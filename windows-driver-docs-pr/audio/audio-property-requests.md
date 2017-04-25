@@ -2,7 +2,22 @@
 title: Audio Property Requests
 description: Audio Property Requests
 ms.assetid: dcfd139c-fca3-4068-8324-aa2c952dbc1f
-keywords: ["audio properties WDK , requests", "WDM audio properties WDK , requests", "filters WDK audio , property requests", "nodes WDK audio , property requests", "pins WDK audio , property requests", "KS filters WDK audio , property requests", "overspecified requests WDK audio", "underspecified requests WDK audio", "filters WDK audio , descriptors", "property requests WDK audio"]
+keywords:
+- audio properties WDK , requests
+- WDM audio properties WDK , requests
+- filters WDK audio , property requests
+- nodes WDK audio , property requests
+- pins WDK audio , property requests
+- KS filters WDK audio , property requests
+- overspecified requests WDK audio
+- underspecified requests WDK audio
+- filters WDK audio , descriptors
+- property requests WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Property Requests

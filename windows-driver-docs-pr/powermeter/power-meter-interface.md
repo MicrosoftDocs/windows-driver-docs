@@ -2,7 +2,15 @@
 title: Power Meter Interface
 description: Power Meter Interface
 ms.assetid: be3ffb33-f1da-403d-b888-378ffd5cac8a
-keywords: ["Power Metering and Budgeting WDK , interface", "Power Meter Interface WDK", "PMI WDK Power Meter"]
+keywords:
+- Power Metering and Budgeting WDK , interface
+- Power Meter Interface WDK
+- PMI WDK Power Meter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Meter Interface

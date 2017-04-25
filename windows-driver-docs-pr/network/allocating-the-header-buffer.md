@@ -2,7 +2,15 @@
 title: Allocating the Header Buffer
 description: Allocating the Header Buffer
 ms.assetid: 7a6e87ce-a0b8-45ce-961e-f09d5ca919cb
-keywords: ["header-data split WDK , buffer allocation", "maximum header size WDK header-data split", "buffer allocations WDK header-data split"]
+keywords:
+- header-data split WDK , buffer allocation
+- maximum header size WDK header-data split
+- buffer allocations WDK header-data split
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating the Header Buffer

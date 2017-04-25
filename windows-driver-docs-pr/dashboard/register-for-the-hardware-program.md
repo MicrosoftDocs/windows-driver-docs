@@ -2,6 +2,11 @@
 title: Register for the Hardware Program
 description: Register for the Hardware Program
 ms.assetid: 8E947636-7F0E-4C31-9149-D6BF60D84226
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Register for the Hardware Program

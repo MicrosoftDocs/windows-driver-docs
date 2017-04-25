@@ -3,7 +3,17 @@ title: GDL Exercise 6 Creating Specialized Versions
 author: windows-driver-content
 description: GDL Exercise 6 Creating Specialized Versions
 ms.assetid: d9e60958-58b6-4ffe-a955-bc1b13b6a649
-keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "constructs WDK GDL , creating specialized versions"]
+keywords:
+- GDL WDK , examples
+- examples WDK GDL
+- tutorials WDK GDL
+- GDL WDK , tutorials
+- constructs WDK GDL , creating specialized versions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Exercise 6: Creating Specialized Versions

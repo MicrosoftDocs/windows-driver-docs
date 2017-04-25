@@ -3,6 +3,11 @@ title: Secure boot and device encryption overview
 author: windows-driver-content
 description: Secure boot and device encryption overview
 ms.assetid: 4e206bd2-7bb4-48c2-9e01-8da041e798ef
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Secure boot and device encryption overview

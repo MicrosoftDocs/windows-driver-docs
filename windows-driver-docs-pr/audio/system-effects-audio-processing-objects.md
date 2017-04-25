@@ -2,7 +2,13 @@
 title: System Effects Audio Processing Objects
 description: System Effects Audio Processing Objects
 ms.assetid: 54ac63b4-9846-44ce-8afb-ded52ae2cd71
-keywords: ["sAPO WDK"]
+keywords:
+- sAPO WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System Effects Audio Processing Objects

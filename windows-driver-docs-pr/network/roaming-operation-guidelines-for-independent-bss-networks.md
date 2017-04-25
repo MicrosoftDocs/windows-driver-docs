@@ -2,7 +2,15 @@
 title: Roaming Operation Guidelines for Independent BSS Networks
 description: Roaming Operation Guidelines for Independent BSS Networks
 ms.assetid: 121532c3-a167-4601-81a2-0a2c3b77af51
-keywords: ["roaming operations WDK Native 802.11", "independent BSS networks WDK Native 802.11", "BSS networks WDK Native 802.11"]
+keywords:
+- roaming operations WDK Native 802.11
+- independent BSS networks WDK Native 802.11
+- BSS networks WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Roaming Operation Guidelines for Independent BSS Networks

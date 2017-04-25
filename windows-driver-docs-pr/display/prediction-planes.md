@@ -2,7 +2,16 @@
 title: Prediction Planes
 description: Prediction Planes
 ms.assetid: 967d52d1-c4e1-4a81-a1ad-40a09040c3a8
-keywords: ["decoding video WDK DirectX VA , macroblock prediction", "video decoding WDK DirectX VA , macroblock prediction", "prediction planes WDK DirectX VA", "macroblocks WDK DirectX VA , prediction"]
+keywords:
+- decoding video WDK DirectX VA , macroblock prediction
+- video decoding WDK DirectX VA , macroblock prediction
+- prediction planes WDK DirectX VA
+- macroblocks WDK DirectX VA , prediction
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Prediction Planes

@@ -3,7 +3,16 @@ title: Reusing DMA Transaction Objects
 author: windows-driver-content
 description: Reusing DMA Transaction Objects
 ms.assetid: 4adb8653-48b6-4e22-aba3-b909c95b8d15
-keywords: ["DMA transactions WDK KMDF , reusing transaction objects", "DMA operations WDK KMDF , transactions", "bus-master DMA WDK KMDF , transactions", "reusing DMA transaction objects WDK KMDF"]
+keywords:
+- DMA transactions WDK KMDF , reusing transaction objects
+- DMA operations WDK KMDF , transactions
+- bus-master DMA WDK KMDF , transactions
+- reusing DMA transaction objects WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reusing DMA Transaction Objects

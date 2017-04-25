@@ -2,7 +2,25 @@
 title: Audio Position Property
 description: Audio Position Property
 ms.assetid: 893fea84-9136-4107-96d2-8a4e2ab7bd2a
-keywords: ["play position WDK audio", "record position WDK audio", "audio properties WDK , position in stream", "WDM audio properties WDK , position in stream", "read position WDK audio", "write position WDK audio", "looped client buffers WDK audio", "nonlooped client buffers WDK audio", "client buffers WDK audio", "stream positions WDK audio", "position properties WDK audio", "capture stream position WDK audio", "port drivers WDK audio , position properties"]
+keywords:
+- play position WDK audio
+- record position WDK audio
+- audio properties WDK , position in stream
+- WDM audio properties WDK , position in stream
+- read position WDK audio
+- write position WDK audio
+- looped client buffers WDK audio
+- nonlooped client buffers WDK audio
+- client buffers WDK audio
+- stream positions WDK audio
+- position properties WDK audio
+- capture stream position WDK audio
+- port drivers WDK audio , position properties
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Position Property

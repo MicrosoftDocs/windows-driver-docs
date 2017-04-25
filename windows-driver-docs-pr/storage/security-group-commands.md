@@ -3,6 +3,11 @@ title: Security Group Commands
 author: windows-driver-content
 description: The following sections describe special requirements for sending certain security commands.
 ms.assetid: 956C26D7-A434-4055-892B-E6E2D5B70CFA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Security Group Commands

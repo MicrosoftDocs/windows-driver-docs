@@ -3,6 +3,11 @@ title: LDAP Bind
 author: windows-driver-content
 description: LDAP Bind
 ms.assetid: c45a3273-d571-4e56-987e-929fb12159a6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # LDAP Bind

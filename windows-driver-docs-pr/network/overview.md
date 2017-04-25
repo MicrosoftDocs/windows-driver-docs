@@ -2,6 +2,11 @@
 title: USB Remote NDIS overview
 description: USB Remote NDIS overview
 ms.assetid: 05714f49-38bc-4a36-83db-2eeb16c6add6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Remote NDIS overview

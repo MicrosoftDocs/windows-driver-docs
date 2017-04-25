@@ -3,6 +3,11 @@ title: SerCx2 Handling of Read and Write Requests
 author: windows-driver-content
 description: A peripheral driver sends write (IRP\_MJ\_WRITE) and read (IRP\_MJ\_READ) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port.
 ms.assetid: 98100680-7D27-42B7-A445-C539B2DF95AD
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SerCx2 Handling of Read and Write Requests

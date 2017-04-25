@@ -2,7 +2,20 @@
 title: Display Memory
 description: Display Memory
 ms.assetid: 92092bf2-dc31-4781-82c6-3365df77af99
-keywords: ["display memory WDK DirectDraw , about display memory", "drawing memory WDK DirectDraw , about display memory", "DirectDraw memory WDK Windows 2000 display , about memory", "memory WDK DirectDraw , about memory", "drawing memory WDK DirectDraw", "DirectDraw memory WDK Windows 2000 display", "memory WDK DirectDraw", "display memory WDK DirectDraw"]
+keywords:
+- display memory WDK DirectDraw , about display memory
+- drawing memory WDK DirectDraw , about display memory
+- DirectDraw memory WDK Windows 2000 display , about memory
+- memory WDK DirectDraw , about memory
+- drawing memory WDK DirectDraw
+- DirectDraw memory WDK Windows 2000 display
+- memory WDK DirectDraw
+- display memory WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Display Memory

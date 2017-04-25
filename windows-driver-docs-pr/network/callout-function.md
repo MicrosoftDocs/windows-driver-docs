@@ -2,7 +2,13 @@
 title: Callout Function
 description: Callout Function
 ms.assetid: cf7b8e69-e6b2-41ac-9906-f0e3c090eb7a
-keywords: ["callout functions WDK Windows Filtering Platform"]
+keywords:
+- callout functions WDK Windows Filtering Platform
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Callout Function

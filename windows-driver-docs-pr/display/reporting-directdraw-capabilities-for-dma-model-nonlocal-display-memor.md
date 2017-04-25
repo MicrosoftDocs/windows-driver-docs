@@ -2,7 +2,20 @@
 title: Reporting DirectDraw Capabilities for DMA Model Nonlocal Display Memory
 description: Reporting DirectDraw Capabilities for DMA Model Nonlocal Display Memory
 ms.assetid: e503fc8b-db27-486a-8616-a1b88ea77218
-keywords: ["DMA-style AGP WDK DirectDraw", "display memory WDK DirectDraw , DMA-style AGP", "nonlocal display memory WDK DirectDraw , DMA-style AGP", "AGP WDK DirectDraw , DMA-style AGP", "drawing AGP support WDK DirectDraw , DMA-style AGP", "DirectDraw AGP support WDK Windows 2000 display , DMA-style AGP", "memory WDK DirectDraw AGP , DMA-style AGP", "reporting DirectDraw capabilities"]
+keywords:
+- DMA-style AGP WDK DirectDraw
+- display memory WDK DirectDraw , DMA-style AGP
+- nonlocal display memory WDK DirectDraw , DMA-style AGP
+- AGP WDK DirectDraw , DMA-style AGP
+- drawing AGP support WDK DirectDraw , DMA-style AGP
+- DirectDraw AGP support WDK Windows 2000 display , DMA-style AGP
+- memory WDK DirectDraw AGP , DMA-style AGP
+- reporting DirectDraw capabilities
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting DirectDraw Capabilities for DMA Model Nonlocal Display Memory

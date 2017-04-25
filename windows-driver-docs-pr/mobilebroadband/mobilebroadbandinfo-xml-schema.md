@@ -2,6 +2,11 @@
 title: MobileBroadbandInfo XML schema
 description: MobileBroadbandInfo XML schema
 ms.assetid: fdbc340c-8fed-4a25-96c4-ec185af04de9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MobileBroadbandInfo XML schema

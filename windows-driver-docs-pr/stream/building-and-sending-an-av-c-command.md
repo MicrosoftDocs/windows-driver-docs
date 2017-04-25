@@ -3,7 +3,18 @@ title: Building and Sending an AV/C Command
 author: windows-driver-content
 description: Building and Sending an AV/C Command
 ms.assetid: 0f5bb205-7ffe-4007-bb66-a77889af2eed
-keywords: ["Avc.sys function driver WDK , command building and sending", "command building WDK AV/C", "command sending WDK AV/C", "AV/C WDK , commands", "IRPs WDK AV/C", "I/O WDK AV/C"]
+keywords:
+- Avc.sys function driver WDK , command building and sending
+- command building WDK AV/C
+- command sending WDK AV/C
+- AV/C WDK , commands
+- IRPs WDK AV/C
+- I/O WDK AV/C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Building and Sending an AV/C Command

@@ -3,7 +3,18 @@ title: Information Disclosure
 author: windows-driver-content
 description: Information Disclosure
 ms.assetid: e5794acb-44f7-4775-854b-69884f60658a
-keywords: ["threat models WDK file systems , information disclosure", "security threat models WDK file systems , information disclosure", "information disclosure WDK file systems", "I/O WDK file systems", "buffers WDK file systems", "disclosure WDK file systems"]
+keywords:
+- threat models WDK file systems , information disclosure
+- security threat models WDK file systems , information disclosure
+- information disclosure WDK file systems
+- I/O WDK file systems
+- buffers WDK file systems
+- disclosure WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Information Disclosure

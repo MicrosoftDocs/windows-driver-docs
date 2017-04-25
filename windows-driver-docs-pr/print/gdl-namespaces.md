@@ -3,7 +3,16 @@ title: GDL Namespaces
 author: windows-driver-content
 description: GDL Namespaces
 ms.assetid: 111bc393-a44a-4c42-98ef-36f6f225b8a0
-keywords: ["GDL WDK , namespaces", "namespaces WDK GDL", "namespaces WDK GDL , examples", "unnamed namespaces WDK GDL"]
+keywords:
+- GDL WDK , namespaces
+- namespaces WDK GDL
+- namespaces WDK GDL , examples
+- unnamed namespaces WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Namespaces

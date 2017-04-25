@@ -3,7 +3,14 @@ title: Root-Level-Only Attributes
 author: windows-driver-content
 description: Root-Level-Only Attributes
 ms.assetid: 1b3d74b9-4cf4-4303-92ae-b93b3f9b7f7c
-keywords: ["root-level-only attributes WDK Unidrv", "general printer attributes WDK Unidrv , root-level-only"]
+keywords:
+- root-level-only attributes WDK Unidrv
+- general printer attributes WDK Unidrv , root-level-only
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Root-Level-Only Attributes

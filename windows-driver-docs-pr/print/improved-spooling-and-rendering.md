@@ -3,7 +3,17 @@ title: Improved Spooling and Rendering
 author: windows-driver-content
 description: Improved Spooling and Rendering
 ms.assetid: 0e385282-fbc8-4c4b-9070-19ee8290ddd6
-keywords: ["XPSDrv printer drivers WDK , spooling", "XPSDrv printer drivers WDK , rendering", "XPS spool files WDK XPSDrv", "spool files WDK print", "rendering plug-ins WDK print , XPSDrv"]
+keywords:
+- XPSDrv printer drivers WDK , spooling
+- XPSDrv printer drivers WDK , rendering
+- XPS spool files WDK XPSDrv
+- spool files WDK print
+- rendering plug-ins WDK print , XPSDrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Improved Spooling and Rendering

@@ -2,7 +2,20 @@
 title: NDIS MSI-X
 description: NDIS MSI-X
 ms.assetid: 5bb374c8-9354-42d3-9754-42e8ff42bdb9
-keywords: ["miniport drivers WDK networking , MSI-X", "NDIS miniport drivers WDK , MSI-X", "MSI-X WDK networking", "message-signaled interrupts WDK networking", "MSIs WDK networking", "interrupts WDK networking", "interrupt affinity WDK networking", "interrupts WDK net"]
+keywords:
+- miniport drivers WDK networking , MSI-X
+- NDIS miniport drivers WDK , MSI-X
+- MSI-X WDK networking
+- message-signaled interrupts WDK networking
+- MSIs WDK networking
+- interrupts WDK networking
+- interrupt affinity WDK networking
+- interrupts WDK net
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS MSI-X

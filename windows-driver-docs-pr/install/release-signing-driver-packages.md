@@ -2,7 +2,21 @@
 title: Release-Signing Driver Packages
 description: Release-Signing Driver Packages
 ms.assetid: 57125c3b-55f0-4b60-b4d9-1408e26faccb
-keywords: ["driver signing WDK , driver packages", "signing drivers WDK , driver packages", "digital signatures WDK , driver packages", "signatures WDK , driver packages", "CAT files", ".cat files", "catalog files WDK driver signing , release signing", "public release driver signing WDK , about release signing", "release signing WDK , about release signing"]
+keywords:
+- driver signing WDK , driver packages
+- signing drivers WDK , driver packages
+- digital signatures WDK , driver packages
+- signatures WDK , driver packages
+- CAT files
+- .cat files
+- catalog files WDK driver signing , release signing
+- public release driver signing WDK , about release signing
+- release signing WDK , about release signing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Release-Signing Driver Packages

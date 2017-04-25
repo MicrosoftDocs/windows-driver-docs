@@ -2,6 +2,11 @@
 title: What's new in driver development
 description: This section describes new features for driver development in Windows 10.
 ms.assetid: 5502AAF9-2400-4338-A646-C746B29F9A44
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What's new in driver development

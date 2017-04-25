@@ -3,7 +3,14 @@ title: AVStream Headers
 author: windows-driver-content
 description: AVStream Headers
 ms.assetid: 2afd5a1f-385a-4370-b751-e6f5d28d1d4e
-keywords: ["AVStream headers WDK", "headers WDK AVStream"]
+keywords:
+- AVStream headers WDK
+- headers WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Headers

@@ -3,6 +3,11 @@ title: Adding Document Feeder Support for Windows Me and Windows XP
 author: windows-driver-content
 description: Adding Document Feeder Support for Windows Me and Windows XP
 ms.assetid: f3be94fa-6fb7-45de-a3ce-f3d173e802cf
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Document Feeder Support for Windows Me and Windows XP

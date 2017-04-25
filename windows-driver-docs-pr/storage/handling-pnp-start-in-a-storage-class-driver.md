@@ -3,7 +3,16 @@ title: Handling PnP Start in a Storage Class Driver
 author: windows-driver-content
 description: Handling PnP Start in a Storage Class Driver
 ms.assetid: 8d4ccd09-c5d2-4c9b-b94d-e22c916f0043
-keywords: ["storage class drivers WDK , PnP", "class drivers WDK storage , PnP", "PnP WDK storage", "Plug and Play WDK storage"]
+keywords:
+- storage class drivers WDK , PnP
+- class drivers WDK storage , PnP
+- PnP WDK storage
+- Plug and Play WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling PnP Start in a Storage Class Driver

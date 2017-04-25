@@ -2,7 +2,21 @@
 title: Communicating with SDP Servers
 description: Communicating with SDP Servers
 ms.assetid: 833f2eea-d7e6-4f19-979e-3bb4db47fa43
-keywords: ["Bluetooth WDK , SDP server communication", "SDP WDK Bluetooth", "Service Discovery Protocol WDK Bluetooth", "profile drivers WDK Bluetooth", "browsing services WDK Bluetooth", "searching services WDK Bluetooth", "services browsing WDK Bluetooth", "advertising services WDK Bluetooth", "services advertising WDK Bluetooth"]
+keywords:
+- Bluetooth WDK , SDP server communication
+- SDP WDK Bluetooth
+- Service Discovery Protocol WDK Bluetooth
+- profile drivers WDK Bluetooth
+- browsing services WDK Bluetooth
+- searching services WDK Bluetooth
+- services browsing WDK Bluetooth
+- advertising services WDK Bluetooth
+- services advertising WDK Bluetooth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Communicating with SDP Servers

@@ -3,6 +3,11 @@ title: Power-Down and Removal Sequence for a Bus Driver
 author: windows-driver-content
 description: Power-Down and Removal Sequence for a Bus Driver
 ms.assetid: 71397945-D9DB-43E2-AE06-548684F72B63
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power-Down and Removal Sequence for a Bus Driver

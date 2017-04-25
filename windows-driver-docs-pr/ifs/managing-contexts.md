@@ -3,7 +3,16 @@ title: Managing Contexts
 author: windows-driver-content
 description: Managing Contexts
 ms.assetid: 1ad33c6c-a5dd-4b65-bfcc-a40453d3a6b5
-keywords: ["filter manager WDK file system minifilter , contexts", "file system minifilter drivers WDK , contexts", "minifilter drivers WDK , context", "contexts WDK file system minifilter"]
+keywords:
+- filter manager WDK file system minifilter , contexts
+- file system minifilter drivers WDK , contexts
+- minifilter drivers WDK , context
+- contexts WDK file system minifilter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Contexts

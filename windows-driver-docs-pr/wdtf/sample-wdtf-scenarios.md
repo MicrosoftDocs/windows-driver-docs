@@ -3,7 +3,17 @@ title: Sample WDTF Scenarios
 author: windows-driver-content
 description: Sample WDTF Scenarios
 ms.assetid: 6b894dc8-417b-4d2f-ad3b-c75a844953b2
-keywords: ["Windows Device Testing Framework WDK , samples", "WDTF WDK , samples", "sample scripts WDK WDTF", "scripts WDK WDTF", "test scripts WDK WDTF"]
+keywords:
+- Windows Device Testing Framework WDK , samples
+- WDTF WDK , samples
+- sample scripts WDK WDTF
+- scripts WDK WDTF
+- test scripts WDK WDTF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample WDTF Scenarios

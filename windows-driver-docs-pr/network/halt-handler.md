@@ -2,7 +2,15 @@
 title: Miniport Driver Halt Handler
 description: Miniport Driver Halt Handler
 ms.assetid: 63b0b25e-f52f-4486-a57d-448985207fc8
-keywords: ["MiniportHaltEx", "halt handler WDK NDIS", "unloading miniport drivers"]
+keywords:
+- MiniportHaltEx
+- halt handler WDK NDIS
+- unloading miniport drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Driver Halt Handler

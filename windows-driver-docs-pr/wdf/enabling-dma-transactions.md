@@ -3,7 +3,15 @@ title: Enabling DMA Transactions
 author: windows-driver-content
 description: Enabling DMA Transactions
 ms.assetid: 87735776-c371-425b-bc53-0c68375c9562
-keywords: ["DMA transactions WDK KMDF , enabling", "DMA operations WDK KMDF , transactions", "bus-master DMA WDK KMDF , transactions"]
+keywords:
+- DMA transactions WDK KMDF , enabling
+- DMA operations WDK KMDF , transactions
+- bus-master DMA WDK KMDF , transactions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling DMA Transactions

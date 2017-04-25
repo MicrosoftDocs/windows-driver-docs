@@ -3,7 +3,15 @@ title: Video Capture Events
 author: windows-driver-content
 description: Video Capture Events
 ms.assetid: 9d40b9f7-41c1-4410-afc7-9b4ff1c2fe7e
-keywords: ["events WDK video capture", "KSEVENTSETID_VIDCAPNotify", "video capture events WDK AVStream"]
+keywords:
+- events WDK video capture
+- KSEVENTSETID_VIDCAPNotify
+- video capture events WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Capture Events

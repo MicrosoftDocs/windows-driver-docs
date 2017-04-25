@@ -2,7 +2,15 @@
 title: Installing in Windows 2000 and Later
 description: Installing in Windows 2000 and Later
 ms.assetid: 790caffd-ebb0-4ba1-b31c-b03d3c83bc59
-keywords: ["audio adapters WDK , system components", "adapter drivers WDK audio , system components", "Port Class audio adapters WDK , system components"]
+keywords:
+- audio adapters WDK , system components
+- adapter drivers WDK audio , system components
+- Port Class audio adapters WDK , system components
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing in Windows 2000 and Later

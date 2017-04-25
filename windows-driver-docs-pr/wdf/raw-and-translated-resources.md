@@ -3,7 +3,17 @@ title: Raw and Translated Resources
 author: windows-driver-content
 description: Raw and Translated Resources
 ms.assetid: dfc1376d-7a1a-421c-82ae-e183cac77ec8
-keywords: ["hardware resources WDK KMDF , raw resources", "resource lists WDK KMDF", "hardware resources WDK KMDF , translated resources", "translated resources WDK KMDF", "raw resources WDK KMDF"]
+keywords:
+- hardware resources WDK KMDF , raw resources
+- resource lists WDK KMDF
+- hardware resources WDK KMDF , translated resources
+- translated resources WDK KMDF
+- raw resources WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Raw and Translated Resources

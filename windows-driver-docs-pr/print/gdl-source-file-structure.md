@@ -3,7 +3,22 @@ title: GDL Source File Structure
 author: windows-driver-content
 description: GDL Source File Structure
 ms.assetid: e6f7bc9a-08ee-44e9-ae46-2a0097e017ff
-keywords: ["GDL WDK , source files", "source files WDK GDL", "GDL WDK , attributes", "attributes WDK GDL", "GDL WDK , constructs", "constructs WDK GDL", "GDL WDK , keywords", "keywords WDK GDL", "GDL WDK , values", "values WDK GDL"]
+keywords:
+- GDL WDK , source files
+- source files WDK GDL
+- GDL WDK , attributes
+- attributes WDK GDL
+- GDL WDK , constructs
+- constructs WDK GDL
+- GDL WDK , keywords
+- keywords WDK GDL
+- GDL WDK , values
+- values WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Source File Structure

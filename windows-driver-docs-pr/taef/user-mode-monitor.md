@@ -2,6 +2,11 @@
 title: User Mode Monitor
 description: User Mode Monitor
 ms.assetid: CE6CEC2C-5E8E-40aa-A5D3-0062D6F82EFE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User Mode Monitor

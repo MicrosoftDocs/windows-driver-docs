@@ -3,7 +3,19 @@ title: Error Information Retrieval
 author: windows-driver-content
 description: Error Information Retrieval
 ms.assetid: 4af06727-9660-4bbc-8c9e-a50c8f2d566d
-keywords: ["Windows Hardware Error Architecture WDK , error information retrieval", "WHEA WDK , error information retrieval", "hardware errors WDK WHEA , error information retrieval", "errors WDK WHEA , error information retrieval", "platform-specific hardware error driver plug-ins WDK WHEA , error information retrieval", "PSHED plug-ins WDK WHEA , error information retrieval", "error information retrieval WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , error information retrieval
+- WHEA WDK , error information retrieval
+- hardware errors WDK WHEA , error information retrieval
+- errors WDK WHEA , error information retrieval
+- platform-specific hardware error driver plug-ins WDK WHEA , error information retrieval
+- PSHED plug-ins WDK WHEA , error information retrieval
+- error information retrieval WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Error Information Retrieval

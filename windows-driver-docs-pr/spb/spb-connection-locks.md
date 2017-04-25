@@ -3,6 +3,11 @@ title: SPB Connection Locks
 author: windows-driver-content
 description: Connection locks are useful for enabling two clients to share access to a target peripheral device on a simple peripheral bus (SPB).
 ms.assetid: 073D9854-0F51-4518-A22B-0A0546694E30
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SPB Connection Locks

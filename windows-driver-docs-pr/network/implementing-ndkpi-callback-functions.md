@@ -2,6 +2,11 @@
 title: Implementing NDKPI Functions
 description: An NDK-capable miniport driver must register entry points for all NDK\_FN\_XXX callback functions. All of the NDKPI provider callback functions are mandatory; none are optional.
 ms.assetid: 9A7D5F77-C26A-47B6-9F8E-ECB80D4FF384
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing NDKPI Functions

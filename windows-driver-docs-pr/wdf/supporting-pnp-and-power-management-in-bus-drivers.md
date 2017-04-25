@@ -3,7 +3,18 @@ title: Supporting PnP and Power Management in Bus Drivers
 author: windows-driver-content
 description: Supporting PnP and Power Management in Bus Drivers
 ms.assetid: 35a3d734-7d7e-46ee-aba6-fc6a579d4394
-keywords: ["PnP WDK KMDF , bus drivers", "Plug and Play WDK KMDF , bus drivers", "power management WDK KMDF , bus drivers", "bus drivers WDK KMDF", "child devices WDK KMDF", "bus enumeration WDK KMDF"]
+keywords:
+- PnP WDK KMDF , bus drivers
+- Plug and Play WDK KMDF , bus drivers
+- power management WDK KMDF , bus drivers
+- bus drivers WDK KMDF
+- child devices WDK KMDF
+- bus enumeration WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting PnP and Power Management in Bus Drivers

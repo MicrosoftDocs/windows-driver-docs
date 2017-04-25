@@ -2,7 +2,16 @@
 title: Return Codes for Direct3D Driver Callbacks
 description: Return Codes for Direct3D Driver Callbacks
 ms.assetid: 033beb6e-5872-4cb3-8f39-459e2fff82cd
-keywords: ["Direct3D WDK Windows 2000 display , return codes", "return codes WDK Direct3D", "callbacks WDK Direct3D", "callback functions WDK Direct3D"]
+keywords:
+- Direct3D WDK Windows 2000 display , return codes
+- return codes WDK Direct3D
+- callbacks WDK Direct3D
+- callback functions WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Return Codes for Direct3D Driver Callbacks

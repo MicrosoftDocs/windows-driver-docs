@@ -1,8 +1,16 @@
 ---
-title: Power Management Enhancements in NDIS 6.20
-description: Power Management Enhancements in NDIS 6.20
+title: Power management enhancements in NDIS 6.20
+description: Introduces NDIS 6.20 power management enhancements to reduce computer power consumption
 ms.assetid: 99900def-66f8-4ba1-a7c1-3a5e9f456ca1
-keywords: ["NDIS 6.20 WDK , power management enhancements", "power management WDK networking , NDIS 6.20 enhancements", "power management enhancements WDK NDIS 6.20"]
+keywords:
+- NDIS 6.20 WDK , power management enhancements
+- power management WDK networking , NDIS 6.20 enhancements
+- power management enhancements WDK NDIS 6.20
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Management Enhancements in NDIS 6.20

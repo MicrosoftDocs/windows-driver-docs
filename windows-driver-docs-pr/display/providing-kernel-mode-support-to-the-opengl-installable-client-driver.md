@@ -2,7 +2,16 @@
 title: Providing Kernel-Mode Support to the OpenGL Installable Client Driver
 description: Providing Kernel-Mode Support to the OpenGL Installable Client Driver
 ms.assetid: 1871594a-ca4d-4a3c-bf12-bbf80fecefe9
-keywords: ["OpenGL ICD WDK display", "kernel-mode OpenGL ICD WDK display", "ICD WDK display", "installable client driver WDK display"]
+keywords:
+- OpenGL ICD WDK display
+- kernel-mode OpenGL ICD WDK display
+- ICD WDK display
+- installable client driver WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing Kernel-Mode Support to the OpenGL Installable Client Driver

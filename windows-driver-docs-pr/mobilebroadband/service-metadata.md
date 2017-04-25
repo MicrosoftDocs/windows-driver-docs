@@ -2,6 +2,11 @@
 title: Service metadata
 description: Service metadata
 ms.assetid: daf5db05-cf39-4ff2-a2f1-0ffd718c638e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Service metadata

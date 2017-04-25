@@ -2,6 +2,11 @@
 Description: This topic provides guidelines for deciding whether you should write a Windows Store app or a Windows desktop app to communicate with a USB device.
 title: Developing Windows applications for USB devices
 author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Developing Windows applications for USB devices

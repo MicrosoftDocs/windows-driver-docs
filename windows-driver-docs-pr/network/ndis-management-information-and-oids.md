@@ -2,7 +2,21 @@
 title: NDIS Management Information and OIDs
 description: NDIS Management Information and OIDs
 ms.assetid: 5737634e-ee80-44d4-9dc8-c2ef97670809
-keywords: ["WMI WDK networking , management information base", "management information base WDK networking", "dynamic configuration information WDK networking", "statistics WDK networking", "management information base WDK networking , objects", "MIBs WDK networking", "object identifiers WDK networking", "OIDs WDK networking , management information base", "operational characteristics WDK networking"]
+keywords:
+- WMI WDK networking , management information base
+- management information base WDK networking
+- dynamic configuration information WDK networking
+- statistics WDK networking
+- management information base WDK networking , objects
+- MIBs WDK networking
+- object identifiers WDK networking
+- OIDs WDK networking , management information base
+- operational characteristics WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Management Information and OIDs

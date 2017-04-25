@@ -1,8 +1,19 @@
 ---
-title: Troubleshooting Install and Load Problems with Signed Driver Packages
+title: Troubleshooting Problems with Signed Driver Packages
 description: Troubleshooting Install and Load Problems with Signed Driver Packages
 ms.assetid: c1e33cf1-e423-422e-95fa-8617bea30430
-keywords: ["driver signing WDK , troubleshooting", "signing drivers WDK , troubleshooting", "digital signatures WDK , troubleshooting", "signatures WDK , troubleshooting", "troubleshooting driver signing WDK", "kernel-mode driver signing WDK"]
+keywords:
+- driver signing WDK , troubleshooting
+- signing drivers WDK , troubleshooting
+- digital signatures WDK , troubleshooting
+- signatures WDK , troubleshooting
+- troubleshooting driver signing WDK
+- kernel-mode driver signing WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting Install and Load Problems with Signed Driver Packages

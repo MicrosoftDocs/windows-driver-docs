@@ -2,7 +2,19 @@
 title: DirectX Video Acceleration
 description: DirectX Video Acceleration
 ms.assetid: e25407a3-be5c-4509-a3e7-d9688958e3d4
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display", "Video Acceleration WDK DirectX", "motion compensation WDK", "VA WDK DirectX", "accelerators WDK DirectX", "display driver model WDK Windows 2000 , DirectX Video Acceleration", "Windows 2000 display driver model WDK , DirectX Video Acceleration"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display
+- Video Acceleration WDK DirectX
+- motion compensation WDK
+- VA WDK DirectX
+- accelerators WDK DirectX
+- display driver model WDK Windows 2000 , DirectX Video Acceleration
+- Windows 2000 display driver model WDK , DirectX Video Acceleration
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX Video Acceleration

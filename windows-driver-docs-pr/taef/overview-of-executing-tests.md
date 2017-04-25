@@ -2,6 +2,11 @@
 title: Overview of Executing Tests
 description: Overview of Executing Tests
 ms.assetid: 3D58D074-DC06-4b01-9EB5-7A17E69D6935
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Executing Tests

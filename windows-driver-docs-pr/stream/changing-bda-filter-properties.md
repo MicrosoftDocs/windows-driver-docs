@@ -3,7 +3,15 @@ title: Changing BDA Filter Properties
 author: windows-driver-content
 description: Changing BDA Filter Properties
 ms.assetid: 1833864a-5759-437c-ba60-0b38602d9e41
-keywords: ["property sets WDK BDA , filter property changes", "filter property changes WDK BDA", "method sets WDK BDA , filter property changes"]
+keywords:
+- property sets WDK BDA , filter property changes
+- filter property changes WDK BDA
+- method sets WDK BDA , filter property changes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing BDA Filter Properties

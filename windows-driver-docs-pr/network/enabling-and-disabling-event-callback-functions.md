@@ -2,7 +2,18 @@
 title: Enabling and Disabling Event Callback Functions
 description: Enabling and Disabling Event Callback Functions
 ms.assetid: 52654788-31e2-47c1-8154-f40c42168708
-keywords: ["WSK WDK networking , events", "events WDK Winsock Kernel", "functions WDK Winsock Kernel", "event callback functions WDK Winsock Kernel", "SO_WSK_EVENT_CALLBACK", "WSK_SET_STATIC_EVENT_CALLBACKS"]
+keywords:
+- WSK WDK networking , events
+- events WDK Winsock Kernel
+- functions WDK Winsock Kernel
+- event callback functions WDK Winsock Kernel
+- SO_WSK_EVENT_CALLBACK
+- WSK_SET_STATIC_EVENT_CALLBACKS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling and Disabling Event Callback Functions

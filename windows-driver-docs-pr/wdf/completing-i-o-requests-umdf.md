@@ -1,12 +1,20 @@
 ---
-title: Completing I/O Requests
+title: Completing I/O Requests in UMDF
 author: windows-driver-content
-description: Completing I/O Requests
+description: Completing I/O Requests in UMDF
 ms.assetid: 3f8c7030-7c5d-4f65-8001-592af0b1d2de
-keywords: ["I/O requests WDK UMDF , completing", "request processing WDK UMDF , completing requests", "completing I/O requests WDK UMDF"]
+keywords:
+- I/O requests WDK UMDF , completing
+- request processing WDK UMDF , completing requests
+- completing I/O requests WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Completing I/O Requests
+# Completing I/O Requests in UMDF
 
 
 \[This topic applies to UMDF 1.*x*.\]

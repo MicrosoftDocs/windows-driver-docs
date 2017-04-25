@@ -2,6 +2,11 @@
 title: Implementation Tips and Requirements for COPP
 description: Implementation Tips and Requirements for COPP
 ms.assetid: 45294a46-de37-4a6b-addf-5485f61041f2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementation Tips and Requirements for COPP

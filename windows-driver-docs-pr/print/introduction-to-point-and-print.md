@@ -3,7 +3,13 @@ title: Introduction to Point and Print
 author: windows-driver-content
 description: Introduction to Point and Print
 ms.assetid: 03902c64-29d7-4b59-a604-e282e4a2c7ae
-keywords: ["Point and Print WDK , about Point and Print"]
+keywords:
+- Point and Print WDK , about Point and Print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Point and Print

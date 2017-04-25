@@ -3,7 +3,17 @@ title: Preventing an Imbalance of Create and Close Notifications to a Driver
 author: windows-driver-content
 description: Preventing an Imbalance of Create and Close Notifications to a Driver
 ms.assetid: e6678226-44d3-4b1d-a296-2017bc9c7c37
-keywords: ["create-file notifications WDK UMDF", "cleanup-file notifications WDK UMDF", "close-file notifications WDK UMDF", "notifications WDK UMDF", "notifications WDK UMDF , preventing create and close imbalance"]
+keywords:
+- create-file notifications WDK UMDF
+- cleanup-file notifications WDK UMDF
+- close-file notifications WDK UMDF
+- notifications WDK UMDF
+- notifications WDK UMDF , preventing create and close imbalance
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preventing an Imbalance of Create and Close Notifications to a Driver

@@ -2,7 +2,18 @@
 title: Supporting Non-PCM Wave Formats
 description: Supporting Non-PCM Wave Formats
 ms.assetid: 76455e1f-4b00-49c4-a4e4-3cb4abe8f445
-keywords: ["non-PCM audio formats WDK", "WDM audio drivers WDK , non-PCM wave formats", "audio drivers WDK , non-PCM wave formats", "formats WDK audio , non-PCM", "PCM formats WDK audio", "audio non-PCM formats WDK"]
+keywords:
+- non-PCM audio formats WDK
+- WDM audio drivers WDK , non-PCM wave formats
+- audio drivers WDK , non-PCM wave formats
+- formats WDK audio , non-PCM
+- PCM formats WDK audio
+- audio non-PCM formats WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Non-PCM Wave Formats

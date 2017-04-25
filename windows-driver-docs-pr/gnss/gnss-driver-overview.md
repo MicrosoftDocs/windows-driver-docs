@@ -1,8 +1,13 @@
 ---
 title: GNSS driver overview
 author: windows-driver-content
-description: Use the GNSS driver design guide to learn how to implement the DeviceIoControl APIs with the GNSS driver so that a high level operating system component (HLOS) like the GNSS adapter can access the desired GNSS functionality.
+description: Use this guide to learn how to implement the DeviceIoControl APIs with the GNSS driver so that a HLOS like the GNSS adapter can access GNSS functionality.
 ms.assetid: 1887097A-C495-4295-9904-B2964F46A81D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GNSS driver overview

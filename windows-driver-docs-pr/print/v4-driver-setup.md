@@ -2,7 +2,12 @@
 title: V4 Printer Driver Setup
 author: windows-driver-content
 ms.assetid: A72A36B8-4C3E-49C6-B85A-6D0DD1CBD66C
-description: 
+description: Provides details on the v4 print driver setup model including setup concepts, INF file details, and the driver manifest
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # V4 Printer Driver Setup

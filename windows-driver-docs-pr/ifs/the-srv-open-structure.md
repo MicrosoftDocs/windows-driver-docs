@@ -3,7 +3,22 @@ title: The SRV\_OPEN Structure
 author: windows-driver-content
 description: The SRV\_OPEN Structure
 ms.assetid: 6cf4c6f6-a21f-4919-92b5-2403b650d8d0
-keywords: ["server open WDK RDBSS", "open servers WDK RDBSS", "SRV_OPEN structure", "data structures WDK file systems", "RDBSS WDK file systems , connection and file structures", "Redirected Drive Buffering Subsystem WDK file systems , connection and file structures", "connection structures WDK RDBSS", "file structures WDK RDBSS", "structures WDK RDBSS", "connection information WDK RDBSS"]
+keywords:
+- server open WDK RDBSS
+- open servers WDK RDBSS
+- SRV_OPEN structure
+- data structures WDK file systems
+- RDBSS WDK file systems , connection and file structures
+- Redirected Drive Buffering Subsystem WDK file systems , connection and file structures
+- connection structures WDK RDBSS
+- file structures WDK RDBSS
+- structures WDK RDBSS
+- connection information WDK RDBSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The SRV\_OPEN Structure

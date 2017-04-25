@@ -3,7 +3,19 @@ title: Participating in Error Injection
 author: windows-driver-content
 description: Participating in Error Injection
 ms.assetid: 0bd9efbd-e98d-457a-a28f-e09dcb5ae24d
-keywords: ["Windows Hardware Error Architecture WDK , error injection", "WHEA WDK , error injection", "hardware errors WDK WHEA , error injection", "errors WDK WHEA , error injection", "platform-specific hardware error driver plug-ins WDK WHEA , error injection", "PSHED plug-ins WDK WHEA , error injection", "error injection WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , error injection
+- WHEA WDK , error injection
+- hardware errors WDK WHEA , error injection
+- errors WDK WHEA , error injection
+- platform-specific hardware error driver plug-ins WDK WHEA , error injection
+- PSHED plug-ins WDK WHEA , error injection
+- error injection WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Participating in Error Injection

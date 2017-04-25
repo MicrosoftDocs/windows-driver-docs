@@ -2,7 +2,26 @@
 title: Wave Filters
 description: Wave Filters
 ms.assetid: 9e364c8f-55c3-4ec9-a9ce-9ee0f6a0746b
-keywords: ["audio filters WDK audio , wave", "wave filters WDK audio", "filters WDK audio , wave", "wave-rendering filters WDK audio", "wave-capture filters WDK audio", "rendering wave audio WDK audio", "capturing wave audio WDK audio", "WaveRT filters WDK audio", "WavePci filters WDK audio", "WaveCyclic filters WDK audio", "WaveRT, filter", "WavePci, filter", "audio devices, WaveCyclic", "WaveCyclic, filter"]
+keywords:
+- audio filters WDK audio , wave
+- wave filters WDK audio
+- filters WDK audio , wave
+- wave-rendering filters WDK audio
+- wave-capture filters WDK audio
+- rendering wave audio WDK audio
+- capturing wave audio WDK audio
+- WaveRT filters WDK audio
+- WavePci filters WDK audio
+- WaveCyclic filters WDK audio
+- WaveRT, filter
+- WavePci, filter
+- audio devices, WaveCyclic
+- WaveCyclic, filter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wave Filters

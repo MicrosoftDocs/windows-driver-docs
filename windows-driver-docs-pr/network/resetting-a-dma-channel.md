@@ -2,7 +2,17 @@
 title: Resetting a DMA Channel
 description: Resetting a DMA Channel
 ms.assetid: 40dfbe7c-fda6-4c6b-a3aa-265937538100
-keywords: ["memory-to-memory data transfers WDK NetDMA , resetting channels", "data transfers WDK NetDMA , resetting channels", "transferring data WDK NetDMA , resetting channels", "DMA transfers WDK NetDMA , resetting channels", "NetDMA WDK networking , resetting channe"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , resetting channels
+- data transfers WDK NetDMA , resetting channels
+- transferring data WDK NetDMA , resetting channels
+- DMA transfers WDK NetDMA , resetting channels
+- NetDMA WDK networking , resetting channe
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Resetting a DMA Channel

@@ -3,7 +3,16 @@ title: Creating Dispatch Tables
 author: windows-driver-content
 description: Creating Dispatch Tables
 ms.assetid: 0771aeac-68b2-4dec-8887-a0b313899ce8
-keywords: ["BDA minidrivers WDK AVStream , dispatch tables", "dispatch tables WDK AVStream", "filter dispatch tables WDK BDA", "pin dispatch tables WDK BDA"]
+keywords:
+- BDA minidrivers WDK AVStream , dispatch tables
+- dispatch tables WDK AVStream
+- filter dispatch tables WDK BDA
+- pin dispatch tables WDK BDA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Dispatch Tables

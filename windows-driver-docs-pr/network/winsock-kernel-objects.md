@@ -2,7 +2,17 @@
 title: Winsock Kernel Objects
 description: Winsock Kernel Objects
 ms.assetid: 1ce9bd19-9159-4a73-96f6-6e2adac886b9
-keywords: ["Winsock Kernel WDK networking , objects", "WSK WDK networking , objects", "objects WDK Winsock Kernel", "socket objects WDK Winsock Kernel", "client objects WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , objects
+- WSK WDK networking , objects
+- objects WDK Winsock Kernel
+- socket objects WDK Winsock Kernel
+- client objects WDK Winsock Kernel
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winsock Kernel Objects

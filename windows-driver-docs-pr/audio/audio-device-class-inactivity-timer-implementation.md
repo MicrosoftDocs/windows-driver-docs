@@ -2,7 +2,21 @@
 title: Audio Device Class Inactivity Timer Implementation
 description: Audio Device Class Inactivity Timer Implementation
 ms.assetid: e7e431ec-626d-4fdb-8705-fc5420c43f17
-keywords: ["inactivity timers WDK audio", "timers WDK audio", "power-idle detection WDK audio", "idle power states WDK audio", "idle time-outs WDK audio", "time-out intervals WDK audio", "power-conservation mode WDK audio", "conservation power mode WDK audio", "performance power mode WDK audio"]
+keywords:
+- inactivity timers WDK audio
+- timers WDK audio
+- power-idle detection WDK audio
+- idle power states WDK audio
+- idle time-outs WDK audio
+- time-out intervals WDK audio
+- power-conservation mode WDK audio
+- conservation power mode WDK audio
+- performance power mode WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Device Class Inactivity Timer Implementation

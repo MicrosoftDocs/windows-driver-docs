@@ -2,7 +2,15 @@
 title: Extensible Station Operational Configuration
 description: Extensible Station Operational Configuration
 ms.assetid: a06b7cbc-5ee3-4557-bbf8-048b2823bd84
-keywords: ["configurations WDK Native 802.11 , Extensible Station mode", "Extensible Station operational configuration WDK Native 802.11", "ExtSTA operational configuration WDK Native 802.11"]
+keywords:
+- configurations WDK Native 802.11 , Extensible Station mode
+- Extensible Station operational configuration WDK Native 802.11
+- ExtSTA operational configuration WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Station Operational Configuration

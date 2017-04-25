@@ -3,7 +3,16 @@ title: Registry Settings for a Legacy COM Port
 author: windows-driver-content
 description: Registry Settings for a Legacy COM Port
 ms.assetid: 043ac1f5-eeb1-4828-8417-b3c6d76b4322
-keywords: ["Serial driver WDK , COM ports", "COM ports WDK serial devices", "serial devices WDK , COM ports", "legacy COM ports WDK serial devices"]
+keywords:
+- Serial driver WDK , COM ports
+- COM ports WDK serial devices
+- serial devices WDK , COM ports
+- legacy COM ports WDK serial devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Settings for a Legacy COM Port

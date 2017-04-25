@@ -2,7 +2,13 @@
 title: Timeout Detection and Recovery (TDR)
 description: Timeout Detection and Recovery (TDR)
 ms.assetid: f410eec7-026f-41e0-8c60-72f651659ead
-keywords: ["TDR (timeout detection and recovery) WDK display , described"]
+keywords:
+- TDR (timeout detection and recovery) WDK display , described
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Timeout Detection and Recovery (TDR)

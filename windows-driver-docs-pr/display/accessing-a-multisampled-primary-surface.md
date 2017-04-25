@@ -2,7 +2,15 @@
 title: Accessing a Multisampled Primary Surface
 description: Accessing a Multisampled Primary Surface
 ms.assetid: 5d83699c-45ae-46d1-8804-1a18bfbc203f
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, accessing a primary surface", "multisample rendering WDK DirectX 8.0 , accessing a primary surface", "rendering multisamples WDK DirectX 8.0 , accessing a primary surface"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, accessing a primary surface
+- multisample rendering WDK DirectX 8.0 , accessing a primary surface
+- rendering multisamples WDK DirectX 8.0 , accessing a primary surface
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing a Multisampled Primary Surface

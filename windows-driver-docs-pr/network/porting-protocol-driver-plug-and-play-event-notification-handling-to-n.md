@@ -2,7 +2,17 @@
 title: Porting Protocol Driver Plug and Play Event Notification Handling to NDIS 6.0
 description: Porting Protocol Driver Plug and Play Event Notification Handling to NDIS 6.0
 ms.assetid: a1ee9d58-ae64-40d3-bcfc-19ea9ecca10a
-keywords: ["NDIS protocol drivers WDK , Plug and Play", "protocol drivers WDK networking , Plug and Play", "porting protocol drivers WDK networking , Plug and Play event notifications", "Plug and Play WDK networking , porting event notifications", "event notifications WD"]
+keywords:
+- NDIS protocol drivers WDK , Plug and Play
+- protocol drivers WDK networking , Plug and Play
+- porting protocol drivers WDK networking , Plug and Play event notifications
+- Plug and Play WDK networking , porting event notifications
+- event notifications WD
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Protocol Driver Plug and Play Event Notification Handling to NDIS 6.0

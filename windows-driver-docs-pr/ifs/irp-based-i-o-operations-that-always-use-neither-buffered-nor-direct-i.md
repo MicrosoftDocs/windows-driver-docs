@@ -1,9 +1,15 @@
 ---
-title: IRP-Based I/O Operations That Always Use Neither Buffered Nor Direct I/O
+title: IRP-Based I/O Operations That use Neither Buffered Nor Direct I/O
 author: windows-driver-content
 description: IRP-Based I/O Operations That Always Use Neither Buffered Nor Direct I/O
 ms.assetid: 2d757904-e46c-476d-896c-77beacfe4b7c
-keywords: ["neither buffered nor direct I/O WDK file system"]
+keywords:
+- neither buffered nor direct I/O WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IRP-Based I/O Operations That Always Use Neither Buffered Nor Direct I/O

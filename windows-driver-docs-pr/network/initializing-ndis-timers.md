@@ -2,7 +2,15 @@
 title: Initializing NDIS Timers
 description: Initializing NDIS Timers
 ms.assetid: 2f304f5c-fa70-441e-853e-a48ad70d61a0
-keywords: ["timer services WDK NDIS", "NDIS timer services WDK", "initializing NDIS timers"]
+keywords:
+- timer services WDK NDIS
+- NDIS timer services WDK
+- initializing NDIS timers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing NDIS Timers

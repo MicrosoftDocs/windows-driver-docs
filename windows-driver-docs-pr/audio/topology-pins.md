@@ -2,7 +2,24 @@
 title: Topology Pins
 description: Topology Pins
 ms.assetid: b434e2a7-4acc-4ef1-9db9-8f1b82f68de3
-keywords: ["topology pins WDK audio", "pins WDK audio , topology", "S/PDIF pin translations WDK audio", "pins WDK audio , translating", "KS pins WDK audio , translating", "pins WDK audio , descriptors", "mixer-line descriptors WDK audio", "source mixer lines WDK audio", "destination mixer lines WDK audio", "translating pins WDK audio", "pin factories WDK audio", "PCPIN_DESCRIPTOR structure"]
+keywords:
+- topology pins WDK audio
+- pins WDK audio , topology
+- S/PDIF pin translations WDK audio
+- pins WDK audio , translating
+- KS pins WDK audio , translating
+- pins WDK audio , descriptors
+- mixer-line descriptors WDK audio
+- source mixer lines WDK audio
+- destination mixer lines WDK audio
+- translating pins WDK audio
+- pin factories WDK audio
+- PCPIN_DESCRIPTOR structure
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Topology Pins

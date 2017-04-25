@@ -2,7 +2,15 @@
 title: GDI from the Driver's Perspective
 description: GDI from the Driver's Perspective
 ms.assetid: 2a6769ea-c6ae-4397-a5e4-f38964d2d8d1
-keywords: ["GDI WDK Windows 2000 display , driver communication", "graphics drivers WDK Windows 2000 display , driver communication", "drawing WDK GDI , driver communication"]
+keywords:
+- GDI WDK Windows 2000 display , driver communication
+- graphics drivers WDK Windows 2000 display , driver communication
+- drawing WDK GDI , driver communication
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI from the Driver's Perspective

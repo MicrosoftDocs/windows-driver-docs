@@ -1,6 +1,11 @@
 ---
 title: MB SAR Platform Support
 description: MB SAR Platform Support
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB SAR Platform Support

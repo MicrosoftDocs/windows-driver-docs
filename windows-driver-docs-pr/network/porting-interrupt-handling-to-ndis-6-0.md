@@ -2,7 +2,18 @@
 title: Porting Interrupt Handling to NDIS 6.0
 description: Porting Interrupt Handling to NDIS 6.0
 ms.assetid: 528fa358-c174-49a8-b067-6f1351fff30c
-keywords: ["DPCs WDK networking", "deferred procedure calls WDK networking", "receive-side scaling WDK networking , porting interrupt handling", "RSS WDK networking , porting interrupt handling", "interrupts WDK networking , receive-side scaling", "message-signaled inter"]
+keywords:
+- DPCs WDK networking
+- deferred procedure calls WDK networking
+- receive-side scaling WDK networking , porting interrupt handling
+- RSS WDK networking , porting interrupt handling
+- interrupts WDK networking , receive-side scaling
+- message-signaled inter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Interrupt Handling to NDIS 6.0

@@ -2,7 +2,18 @@
 title: DualView Advanced Implementation Details
 description: DualView Advanced Implementation Details
 ms.assetid: 07fb7640-d723-4dc0-9403-9f70a75518f1
-keywords: ["DualView WDK video miniport", "SingleView WDK video miniport", "logical child relations WDK video miniport", "physical child relations WDK video miniport", "child devices WDK video miniport", "memory WDK DualView"]
+keywords:
+- DualView WDK video miniport
+- SingleView WDK video miniport
+- logical child relations WDK video miniport
+- physical child relations WDK video miniport
+- child devices WDK video miniport
+- memory WDK DualView
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DualView Advanced Implementation Details

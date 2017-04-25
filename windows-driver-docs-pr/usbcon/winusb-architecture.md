@@ -1,7 +1,12 @@
 ---
-Description: WinUSB consists of two primary components:Winusb.sys is a kernel-mode driver that can be installed as either a filter or function driver, above the protocol drivers in a USB device's kernel-mode device stack.Winusb.dll is a user-mode DLL that exposes WinUSB functions. Applications can use these functions to communicate with Winusb.sys when it is installed as a device's function driver.
+Description: WinUSB consists of two primary components - Winusb.sys, a kernel-mode driver and Winusb.dll - user-mode DLL.
 title: WinUSB Architecture and Modules
 author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WinUSB Architecture and Modules
@@ -24,7 +29,7 @@ The preceding figure shows an example WinUSB configuration that implements three
 -   Instance 2 of Winusb.sys registers Device Interface B, which supports a user-mode driver for a scanner (Usbscan.exe) that communicates with Winusb.dll by using a system service (SVCHOST).
 -   Instance 3 of Winusb.sys registers Device Interface C, which supports a firmware update utility (Usbfw.exe).
 
-There is exactly one loaded instance of Winusb.sys. A PDO can represent a non-composite device (for example, instance 1 in the diagram) or it can represent an interface or interface collection on a composite device (for example, instances 2 and 3). For USB wireless mobile communication device class (WMCDC) devices, a PDO can even represent several interface collections. (For more information about PDOs for WMCDC devices, see [Enumerating Interface Collections on Wireless Mobile Communication Devices](enumerating-interface-collections-on-wireless-mobile-communication-dev.md).)
+There is exactly one loaded instance of Winusb.sys. A PDO can represent a non-composite device (for example, instance 1 in the diagram) or it can represent an interface or interface collection on a composite device (for example, instances 2 and 3). For USB wireless mobile communication device class (WMCDC) devices, a PDO can even represent several interface collections. (For more information about PDOs for WMCDC devices, see [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md).)
 
 Any user-mode application can communicate with the USB stack by loading the WinUSB dynamic link library (Winusb.dll) and calling the WinUSB functions that are exposed by this module.
 

@@ -2,7 +2,17 @@
 title: Floating-Point Operations in Graphics Driver Functions
 description: Floating-Point Operations in Graphics Driver Functions
 ms.assetid: 5f85dc0b-27c1-4fee-9a0a-cb52d5f2dae7
-keywords: ["GDI WDK Windows 2000 display , floating-point operations", "graphics drivers WDK Windows 2000 display , floating-point operations", "drawing WDK GDI , floating-point operations", "floating-point operations WDK GDI", "FPU WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , floating-point operations
+- graphics drivers WDK Windows 2000 display , floating-point operations
+- drawing WDK GDI , floating-point operations
+- floating-point operations WDK GDI
+- FPU WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Floating-Point Operations in Graphics Driver Functions

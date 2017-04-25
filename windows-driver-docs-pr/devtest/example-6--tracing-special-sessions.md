@@ -2,7 +2,13 @@
 title: Example 6 Tracing Special Sessions
 description: Example 6 Tracing Special Sessions
 ms.assetid: 5e528086-812c-478b-a2d1-69d54781cbb2
-keywords: ["Tracefmt WDK , special sessions"]
+keywords:
+- Tracefmt WDK , special sessions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 6: Tracing Special Sessions

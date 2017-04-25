@@ -3,7 +3,18 @@ title: Creating Callback Objects
 author: windows-driver-content
 description: Creating Callback Objects
 ms.assetid: bbae1458-911f-4a48-8bf2-0997e8f98826
-keywords: ["callback objects WDK UMDF", "callback objects WDK UMDF , creating", "User-Mode Driver Framework WDK , objects", "user-mode drivers WDK UMDF , objects", "UMDF objects WDK , callback objects", "framework objects WDK UMDF , callback objects"]
+keywords:
+- callback objects WDK UMDF
+- callback objects WDK UMDF , creating
+- User-Mode Driver Framework WDK , objects
+- user-mode drivers WDK UMDF , objects
+- UMDF objects WDK , callback objects
+- framework objects WDK UMDF , callback objects
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Callback Objects

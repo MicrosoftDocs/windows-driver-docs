@@ -2,7 +2,22 @@
 title: Monitor Class Function Driver
 description: Monitor Class Function Driver
 ms.assetid: d16c3dcc-2fbf-4579-8962-1b89e6e7b347
-keywords: ["multiple monitors WDK", "Monitor class function drivers WDK", "function drivers WDK monitors", "monitor device stacks WDK", "device stacks WDK monitors", "physical device objects WDK monitors", "functional device objects WDK monitors", "PDOs WDK monitors", "FDOs WDK monitors", "filter DOs WDK monitors"]
+keywords:
+- multiple monitors WDK
+- Monitor class function drivers WDK
+- function drivers WDK monitors
+- monitor device stacks WDK
+- device stacks WDK monitors
+- physical device objects WDK monitors
+- functional device objects WDK monitors
+- PDOs WDK monitors
+- FDOs WDK monitors
+- filter DOs WDK monitors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Monitor Class Function Driver

@@ -3,7 +3,16 @@ title: Button Capability Arrays
 author: windows-driver-content
 description: Button Capability Arrays
 ms.assetid: 139324e5-4d46-4d00-9f5a-fd0313fc109a
-keywords: ["button capability arrays WDK HID", "arrays WDK HID", "capabilities WDK HID collections", "button usages WDK HID"]
+keywords:
+- button capability arrays WDK HID
+- arrays WDK HID
+- capabilities WDK HID collections
+- button usages WDK HID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Button Capability Arrays

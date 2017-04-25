@@ -3,7 +3,18 @@ title: Disabling an Error Source
 author: windows-driver-content
 description: Disabling an Error Source
 ms.assetid: a481ac98-0ff1-4583-a81a-1d2e4f968111
-keywords: ["error sources WDK WHEA , disabling", "Windows Hardware Error Architecture WDK , disabling error sources", "WHEA WDK , disabling error sources", "errors WDK WHEA , disabling error sources", "hardware error sources WDK WHEA , disabling", "disabling an error sourc"]
+keywords:
+- error sources WDK WHEA , disabling
+- Windows Hardware Error Architecture WDK , disabling error sources
+- WHEA WDK , disabling error sources
+- errors WDK WHEA , disabling error sources
+- hardware error sources WDK WHEA , disabling
+- disabling an error sourc
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Disabling an Error Source

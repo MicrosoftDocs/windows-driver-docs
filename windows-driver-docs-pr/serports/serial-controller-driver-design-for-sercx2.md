@@ -3,6 +3,11 @@ title: Serial Controller Driver Design for SerCx2
 author: windows-driver-content
 description: To manage your serial controller, you write a serial controller driver that performs hardware-specific tasks and communicates with SerCx2.
 ms.assetid: 67045E19-4EE1-4C31-A842-858E9A90233E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Serial Controller Driver Design for SerCx2

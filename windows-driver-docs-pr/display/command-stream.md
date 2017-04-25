@@ -2,7 +2,15 @@
 title: Command Stream
 description: Command Stream
 ms.assetid: 125e2072-42d6-4d4b-aec9-94b40a9d493c
-keywords: ["Direct3D WDK Windows 2000 display , operation codes", "operation codes WDK Direct3D", "command stream WDK Direct3D"]
+keywords:
+- Direct3D WDK Windows 2000 display , operation codes
+- operation codes WDK Direct3D
+- command stream WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command Stream

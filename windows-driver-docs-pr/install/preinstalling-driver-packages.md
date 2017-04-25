@@ -2,7 +2,15 @@
 title: Preinstalling Driver Packages
 description: Preinstalling Driver Packages
 ms.assetid: aba794ac-ab24-486a-9f5a-7e8435056bb7
-keywords: ["installation applications WDK , preinstall driver packages", "device installation applications WDK , preinstall driver packages", "preinstalled drivers WDK device installations"]
+keywords:
+- installation applications WDK , preinstall driver packages
+- device installation applications WDK , preinstall driver packages
+- preinstalled drivers WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Preinstalling Driver Packages

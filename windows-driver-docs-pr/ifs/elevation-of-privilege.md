@@ -3,7 +3,16 @@ title: Elevation of Privilege
 author: windows-driver-content
 description: Elevation of Privilege
 ms.assetid: 08e20c51-fbc1-4e38-b12d-f123e4a2ba10
-keywords: ["threat models WDK file systems , elevation-of-privilege", "security threat models WDK file systems , elevation-of-privilege", "elevation-of-privilege WDK file systems", "buffers WDK file systems"]
+keywords:
+- threat models WDK file systems , elevation-of-privilege
+- security threat models WDK file systems , elevation-of-privilege
+- elevation-of-privilege WDK file systems
+- buffers WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Elevation of Privilege

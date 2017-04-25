@@ -2,7 +2,18 @@
 title: Accepting Incoming Calls
 description: Accepting Incoming Calls
 ms.assetid: bca837dc-b3de-4aca-9fc2-aed2faab1377
-keywords: ["CoNDIS WAN drivers WDK networking , incoming calls", "telephonic services WDK WAN , incoming calls", "CoNDIS TAPI WDK networking , incoming calls", "NDPROXY WDK networking , incoming calls", "incoming calls WDK CoNDIS WAN", "calls WDK CoNDIS WAN"]
+keywords:
+- CoNDIS WAN drivers WDK networking , incoming calls
+- telephonic services WDK WAN , incoming calls
+- CoNDIS TAPI WDK networking , incoming calls
+- NDPROXY WDK networking , incoming calls
+- incoming calls WDK CoNDIS WAN
+- calls WDK CoNDIS WAN
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accepting Incoming Calls

@@ -2,6 +2,11 @@
 title: C28735
 description: Warning C28735 Banned Crimson API Usage.
 ms.assetid: c6cffd10-f647-4499-8f67-dfa88510d717
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28735

@@ -3,7 +3,18 @@ title: Features of Serial and Serenum
 author: windows-driver-content
 description: Features of Serial and Serenum
 ms.assetid: 47202203-935a-4e1a-9b05-5555f7cbcfa8
-keywords: ["serial devices WDK , Serial driver", "serial devices WDK , Serenum driver", "Serial driver WDK , about Serial driver", "Serenum driver WDK , about Serenum driver", "Serial service WDK", "serial drivers WDK"]
+keywords:
+- serial devices WDK , Serial driver
+- serial devices WDK , Serenum driver
+- Serial driver WDK , about Serial driver
+- Serenum driver WDK , about Serenum driver
+- Serial service WDK
+- serial drivers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Features of Serial and Serenum

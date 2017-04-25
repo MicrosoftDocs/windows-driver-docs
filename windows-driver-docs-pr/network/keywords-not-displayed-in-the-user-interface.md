@@ -2,7 +2,15 @@
 title: Keywords Not Displayed in the User Interface
 description: Keywords Not Displayed in the User Interface
 ms.assetid: 0d2aeaa3-4e47-413b-907f-5e70b34f0725
-keywords: ["installation keywords WDK networking , non-visible", "non-visible keywords WDK DNIS miniport", "hidden keywords WDK DNIS miniport"]
+keywords:
+- installation keywords WDK networking , non-visible
+- non-visible keywords WDK DNIS miniport
+- hidden keywords WDK DNIS miniport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Keywords Not Displayed in the User Interface

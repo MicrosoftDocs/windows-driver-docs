@@ -2,7 +2,15 @@
 title: Multiple Vertex Streams
 description: Multiple Vertex Streams
 ms.assetid: aaaea27b-79e0-4c48-9102-898b42a1487f
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , multiple vertex streams", "multiple vertex streams WDK DirectX 8.0", "vertex multiple streams WDK DirectX 8.0"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , multiple vertex streams
+- multiple vertex streams WDK DirectX 8.0
+- vertex multiple streams WDK DirectX 8.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multiple Vertex Streams

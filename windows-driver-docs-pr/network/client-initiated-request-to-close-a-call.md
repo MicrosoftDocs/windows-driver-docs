@@ -2,7 +2,13 @@
 title: Client-Initiated Request to Close a Call
 description: Client-Initiated Request to Close a Call
 ms.assetid: 1eb9c898-086a-463f-a4ae-d5a8727f7d73
-keywords: ["client-initiated close call requests WDK CoNDIS"]
+keywords:
+- client-initiated close call requests WDK CoNDIS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Client-Initiated Request to Close a Call

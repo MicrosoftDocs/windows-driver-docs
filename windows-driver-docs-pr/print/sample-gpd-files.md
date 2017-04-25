@@ -3,7 +3,15 @@ title: Sample GPD Files
 author: windows-driver-content
 description: Sample GPD Files
 ms.assetid: 68b4ffa1-8c94-4cda-bc96-887e196cf534
-keywords: ["Unidrv, GPD files", "GPD files WDK Unidrv , samples", "Unidrv WDK print"]
+keywords:
+- Unidrv, GPD files
+- GPD files WDK Unidrv , samples
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample GPD Files

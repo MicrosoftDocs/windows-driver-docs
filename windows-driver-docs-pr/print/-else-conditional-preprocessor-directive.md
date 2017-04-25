@@ -1,9 +1,18 @@
 ---
-title: \ Else Conditional Preprocessor Directive
+title: '\ Else Conditional Preprocessor Directive'
 author: windows-driver-content
-description: \ Else Conditional Preprocessor Directive
+description: '\ Else Conditional Preprocessor Directive'
 ms.assetid: 3a8ddc60-1db9-4db0-9e55-405c88b84849
-keywords: ["preprocessor directives WDK GDL , conditional directives", "directives WDK GDL , conditional directives", "conditional directives WDK GDL", "Else directive WDK GDL"]
+keywords:
+- preprocessor directives WDK GDL , conditional directives
+- directives WDK GDL , conditional directives
+- conditional directives WDK GDL
+- Else directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # \#Else Conditional Preprocessor Directive

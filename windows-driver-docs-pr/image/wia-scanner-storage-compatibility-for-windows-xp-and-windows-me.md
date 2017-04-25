@@ -3,6 +3,11 @@ title: WIA Scanner Storage Compatibility for Windows XP and Windows Me
 author: windows-driver-content
 description: WIA Scanner Storage Compatibility for Windows XP and Windows Me
 ms.assetid: 10f3d212-7e63-40ef-99b5-eba6bb13e3e8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Scanner Storage Compatibility for Windows XP and Windows Me

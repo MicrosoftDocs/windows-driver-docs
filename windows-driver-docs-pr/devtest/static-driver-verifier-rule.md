@@ -2,7 +2,22 @@
 title: Static Driver Verifier Rule
 description: Static Driver Verifier Rule
 ms.assetid: cbfd84c8-9a62-47ff-83a3-8f0d598faac0
-keywords: ["Static Driver Verifier WDK , rules", "StaticDV WDK , rules", "SDV WDK , rules", "rules WDK Static Driver Verifier", "Specification Language for Interface Checking", "SLIC", "driver actions WDK Static Driver Verifier", "conditional expressions WDK Static Driver Verifier", "assignment statements WDK Static Driver Verifier", "abort statements WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , rules
+- StaticDV WDK , rules
+- SDV WDK , rules
+- rules WDK Static Driver Verifier
+- Specification Language for Interface Checking
+- SLIC
+- driver actions WDK Static Driver Verifier
+- conditional expressions WDK Static Driver Verifier
+- assignment statements WDK Static Driver Verifier
+- abort statements WDK Static Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier Rule

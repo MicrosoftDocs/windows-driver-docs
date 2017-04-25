@@ -2,6 +2,11 @@
 title: Determining Which Properties are Set for a Device Interface
 description: Determining Which Properties are Set for a Device Interface
 ms.assetid: ef261c1d-0715-4501-b2db-fab270cee010
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining Which Properties are Set for a Device Interface

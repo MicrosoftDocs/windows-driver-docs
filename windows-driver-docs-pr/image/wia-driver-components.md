@@ -3,6 +3,11 @@ title: WIA Driver Components
 author: windows-driver-content
 description: WIA Driver Components
 ms.assetid: 2c854945-2eda-4f4c-9cf6-5525e6e237ed
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Driver Components

@@ -3,7 +3,16 @@ title: Registering IRP Dispatch Routines
 author: windows-driver-content
 description: Registering IRP Dispatch Routines
 ms.assetid: 096f4bb7-2326-4e6c-b3db-a2d95ca4982b
-keywords: ["registering IRP dispatch routines", "dispatch routines WDK file system", "IRP dispatch routines WDK file system , registering", "IRPs WDK file system"]
+keywords:
+- registering IRP dispatch routines
+- dispatch routines WDK file system
+- IRP dispatch routines WDK file system , registering
+- IRPs WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering IRP Dispatch Routines

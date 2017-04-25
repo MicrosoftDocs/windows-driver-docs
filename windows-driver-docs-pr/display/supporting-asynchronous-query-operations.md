@@ -2,7 +2,14 @@
 title: Supporting Asynchronous Query Operations
 description: Supporting Asynchronous Query Operations
 ms.assetid: fe7dff3b-8941-4ab1-9539-0be9b59af5e6
-keywords: ["asynchronous query operations WDK DirectX 9.0", "query operations WDK DirectX 9.0"]
+keywords:
+- asynchronous query operations WDK DirectX 9.0
+- query operations WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Asynchronous Query Operations

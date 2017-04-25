@@ -2,7 +2,17 @@
 title: Registered Provider
 description: Registered Provider
 ms.assetid: d16e91d7-40ce-4a35-b3a7-f46f26a810bb
-keywords: ["registered providers WDK software tracing", "trace providers WDK", "Event Tracing for Windows WDK , providers", "ETW WDK , providers", "providers WDK ETW"]
+keywords:
+- registered providers WDK software tracing
+- trace providers WDK
+- Event Tracing for Windows WDK , providers
+- ETW WDK , providers
+- providers WDK ETW
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registered Provider

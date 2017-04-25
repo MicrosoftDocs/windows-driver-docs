@@ -3,6 +3,11 @@ title: Device Driver Interface (DDI) Changes in Windows 7
 author: windows-driver-content
 description: This topic summarizes the general DDI changes that support the new 1394 bus driver.
 ms.assetid: 5473C6AC-284C-41B1-AA67-75696BE96C24
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Driver Interface (DDI) Changes in Windows 7

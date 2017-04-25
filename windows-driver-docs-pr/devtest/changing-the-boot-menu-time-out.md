@@ -2,7 +2,17 @@
 title: Changing the Boot Menu Time-out
 description: Changing the Boot Menu Time-out
 ms.assetid: 447fe656-4bb5-454e-bc89-bab58c8ffaea
-keywords: ["Boot.ini files WDK , menu time-outs", "boot options WDK , menu time-outs", "menu time-outs WDK boot options", "time-outs WDK boot options", "boot menu time-outs WDK"]
+keywords:
+- Boot.ini files WDK , menu time-outs
+- boot options WDK , menu time-outs
+- menu time-outs WDK boot options
+- time-outs WDK boot options
+- boot menu time-outs WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing the Boot Menu Time-out

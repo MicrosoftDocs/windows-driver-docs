@@ -2,7 +2,13 @@
 title: Review and save package in the Mobile Broadband Metadata Authoring Wizard
 description: Review and save package in the Mobile Broadband Metadata Authoring Wizard
 ms.assetid: D719BB8A-9629-4B67-B2A2-4324D0318117
-keywords: ["Review and save package in the Mobile Broadband Metadata Authoring Wizard"]
+keywords:
+- Review and save package in the Mobile Broadband Metadata Authoring Wizard
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Review and save package in the Mobile Broadband Metadata Authoring Wizard

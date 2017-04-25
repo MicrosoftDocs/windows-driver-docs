@@ -2,6 +2,11 @@
 Description: This topic lists the &\#0034;How to&\#0034; topics in this documentation set. Each how-to topic presents a set of tasks as a sequence of steps with code examples.
 title: Common tasks for USB client drivers
 author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Common tasks for USB client drivers

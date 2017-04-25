@@ -2,7 +2,17 @@
 title: UDP-ESP SAs and Parser Entries
 description: UDP-ESP SAs and Parser Entries
 ms.assetid: 1682b077-07ba-4b2e-9c01-fd7662f3f189
-keywords: ["UDP-encapsulated ESP packets WDK IPsec offload , parser entries", "parser entries WDK IPsec offload", "UDP-encapsulated ESP packets WDK IPsec offload , security associations", "security associations WDK IPsec offload", "SAs WDK IPsec offload"]
+keywords:
+- UDP-encapsulated ESP packets WDK IPsec offload , parser entries
+- parser entries WDK IPsec offload
+- UDP-encapsulated ESP packets WDK IPsec offload , security associations
+- security associations WDK IPsec offload
+- SAs WDK IPsec offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UDP-ESP SAs and Parser Entries

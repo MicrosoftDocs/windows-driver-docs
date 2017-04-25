@@ -2,13 +2,19 @@
 title: TraceView -process
 description: Use a TraceView -process command to format the binary trace messages in a trace log or from a real-time trace seesion. The TraceView -process command creates a text file of a trace messages and a summary file that describes the input and output files.
 ms.assetid: a0da5004-7a9f-4229-92c1-6264fcbf9b0d
-keywords: ["TraceView -process Driver Development Tools"]
+keywords:
+- TraceView -process Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - TraceView -process
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TraceView -process

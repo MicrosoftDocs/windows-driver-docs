@@ -2,7 +2,16 @@
 title: Requesting to Rename an Allocation
 description: Requesting to Rename an Allocation
 ms.assetid: f22e19ba-9ff3-4aa1-a3f0-103f67ea7c60
-keywords: ["command buffers WDK display , allocation renaming", "DMA buffers WDK display , allocation renaming", "allocation renaming WDK display", "renaming allocations WDK display"]
+keywords:
+- command buffers WDK display , allocation renaming
+- DMA buffers WDK display , allocation renaming
+- allocation renaming WDK display
+- renaming allocations WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requesting to Rename an Allocation

@@ -3,7 +3,17 @@ title: Configure PnP Serial Devices for 16550 UART Interface
 author: windows-driver-content
 description: Configuration of Plug and Play Serial Device that Requires a 16550 UART-Compatible Interface
 ms.assetid: b99259bd-7573-4f71-9ab5-b263eed41288
-keywords: ["Plug and Play serial devices WDK", "serial devices WDK , Plug and Play", "universal asynchronous receiver-transmitters WDK serial devices", "UART WDK serial devices", "16550 UART-compatible interfaces WDK serial devices"]
+keywords:
+- Plug and Play serial devices WDK
+- serial devices WDK , Plug and Play
+- universal asynchronous receiver-transmitters WDK serial devices
+- UART WDK serial devices
+- 16550 UART-compatible interfaces WDK serial devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuration of Plug and Play Serial Device that Requires a 16550 UART-Compatible Interface

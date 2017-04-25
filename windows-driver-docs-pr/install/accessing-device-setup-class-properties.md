@@ -2,6 +2,11 @@
 title: Accessing Device Setup Class Properties
 description: Accessing Device Setup Class Properties
 ms.assetid: cea33f31-1aaf-445e-9175-def58ea26588
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Device Setup Class Properties

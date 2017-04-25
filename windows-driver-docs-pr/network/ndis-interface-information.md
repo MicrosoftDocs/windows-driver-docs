@@ -2,7 +2,15 @@
 title: NDIS Interface Information
 description: NDIS Interface Information
 ms.assetid: 35187fda-a239-4801-b0be-53fcbee7d24e
-keywords: ["management information base WDK networking", "MIBs WDK networking", "NDIS WDK , interfaces"]
+keywords:
+- management information base WDK networking
+- MIBs WDK networking
+- NDIS WDK , interfaces
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Interface Information

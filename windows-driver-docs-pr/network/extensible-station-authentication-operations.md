@@ -2,7 +2,15 @@
 title: Extensible Station Authentication Operations
 description: Extensible Station Authentication Operations
 ms.assetid: 67518582-57bb-48b4-b5c3-4e78e2613c87
-keywords: ["authentication WDK Native 802.11 , Extensible Station mode", "Extensible Station authentication operations WDK Native 802.11", "ExtSTA authentication operations WDK Native 802.11"]
+keywords:
+- authentication WDK Native 802.11 , Extensible Station mode
+- Extensible Station authentication operations WDK Native 802.11
+- ExtSTA authentication operations WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extensible Station Authentication Operations

@@ -3,7 +3,15 @@ title: Driver Start, Stop, and Device Control
 author: windows-driver-content
 description: Driver Start, Stop, and Device Control
 ms.assetid: d3608a5f-3bf4-43b1-8c32-55a6fcd4fbe8
-keywords: ["mini-redirectors WDK , starting", "mini-redirectors WDK , stopping", "mini-redirectors WDK , device controls"]
+keywords:
+- mini-redirectors WDK , starting
+- mini-redirectors WDK , stopping
+- mini-redirectors WDK , device controls
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Start, Stop, and Device Control

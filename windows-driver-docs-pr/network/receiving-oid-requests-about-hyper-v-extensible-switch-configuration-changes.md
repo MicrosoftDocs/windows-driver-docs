@@ -1,11 +1,15 @@
 ---
-title: Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes
+title: Receiving Hyper-V Extensible Switch config change OID requests
 description: Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes
 ms.assetid: 9149BFF3-59B3-4563-A1A1-34FDD115964E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes
-
 
 The extensible switch interface notifies underlying extensions about changes to the extensible switch component configuration and policy parameters by issuing extensible switch object identifier (OID) set requests. These requests are issued by the protocol edge of the extensible switch to notify underlying extensions about changes to the extensible switch component configuration and policy parameters. These OID requests move through the extensible switch driver stack to the underlying miniport edge of the extensible switch.
 
@@ -17,9 +21,7 @@ The following figure shows the extensible switch control path for OID requests f
 
 ![diagram of the vswitch oid control path for ndis 6.30](images/vswitch-oid-controlpath.png)
 
-**Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
-
- 
+**Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. 
 
 The protocol edge of the extensible switch issues OID set requests for the following types of notifications:
 

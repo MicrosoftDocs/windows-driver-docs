@@ -2,6 +2,11 @@
 title: Invoking a Device Properties Dialog Box
 description: Invoking a Device Properties Dialog Box
 ms.assetid: 43164b2a-282e-4cef-8c89-b9695ab30539
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Invoking a Device Properties Dialog Box

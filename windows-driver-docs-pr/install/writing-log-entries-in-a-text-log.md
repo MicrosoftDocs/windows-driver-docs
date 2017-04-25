@@ -2,7 +2,19 @@
 title: Writing Log Entries in a Text Log
 description: Writing Log Entries in a Text Log
 ms.assetid: e969f8dd-ad19-42d5-8218-3df0633cc304
-keywords: ["text logs WDK SetupAPI , writing entries", "sections WDK SetupAPI logging", "text logs WDK SetupAPI , sections", "writing text log entries", "SetupAPI logging WDK Windows Vista , text log sections", "SetupAPI logging WDK Windows Vista , writing text log entries", "SetupWriteTextLog"]
+keywords:
+- text logs WDK SetupAPI , writing entries
+- sections WDK SetupAPI logging
+- text logs WDK SetupAPI , sections
+- writing text log entries
+- SetupAPI logging WDK Windows Vista , text log sections
+- SetupAPI logging WDK Windows Vista , writing text log entries
+- SetupWriteTextLog
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing Log Entries in a Text Log

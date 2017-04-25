@@ -2,6 +2,11 @@
 title: WDI IHV extensible types
 description: The WDI model allows the IHV to support custom PHY type, authentication algorithms, and cipher algorithms.
 ms.assetid: 710667D1-6C02-48F7-90FA-513AA9EF6DAF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI IHV extensible types

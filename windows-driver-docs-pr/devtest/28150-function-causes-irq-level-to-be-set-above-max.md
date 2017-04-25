@@ -2,7 +2,14 @@
 title: C28150
 description: Warning C28150 The function causes the IRQ Level to be set above the maximum acceptable for the function being analyzed.
 ms.assetid: 7ad53801-fa7f-49c1-a1f0-715c9f4951d1
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28150

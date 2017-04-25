@@ -2,6 +2,11 @@
 title: DeviceOverrides Registry Key
 description: DeviceOverrides Registry Key
 ms.assetid: 18f95848-71fe-4884-bcbe-d3cae90fc262
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DeviceOverrides Registry Key

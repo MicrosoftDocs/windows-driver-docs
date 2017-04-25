@@ -3,6 +3,11 @@ title: Print Ticket and Print Capabilities Support
 author: windows-driver-content
 description: Print Ticket and Print Capabilities Support
 ms.assetid: 052901d1-455a-4a09-8e18-6eaa0d6ca524
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Ticket and Print Capabilities Support

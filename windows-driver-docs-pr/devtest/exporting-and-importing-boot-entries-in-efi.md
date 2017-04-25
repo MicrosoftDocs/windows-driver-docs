@@ -2,7 +2,21 @@
 title: Exporting and Importing Boot Entries in EFI
 description: Exporting and Importing Boot Entries in EFI
 ms.assetid: bd019064-cb8c-434c-b471-192168564540
-keywords: ["NVRAM boot options WDK , exporting", "EFI NVRAM boot options WDK , exporting", "NVRAM boot options WDK , importing", "EFI NVRAM boot options WDK , importing", "exporting boot entries WDK", "importing boot entries", "boot entry IDs WDK", "EFI boot entry IDs WDK", "identifiers WDK boot options"]
+keywords:
+- NVRAM boot options WDK , exporting
+- EFI NVRAM boot options WDK , exporting
+- NVRAM boot options WDK , importing
+- EFI NVRAM boot options WDK , importing
+- exporting boot entries WDK
+- importing boot entries
+- boot entry IDs WDK
+- EFI boot entry IDs WDK
+- identifiers WDK boot options
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Exporting and Importing Boot Entries in EFI

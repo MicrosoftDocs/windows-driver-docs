@@ -1,8 +1,13 @@
 ---
 title: Keyboard and mouse class drivers
 author: windows-driver-content
-description: Non-HID keyboards and mice can connect over multiple legacy buses but still use the same class driver. This section contains details on the class drivers themselves. The following sections goes into details on the controllers.
+description: Non-HID keyboards and mice can connect over multiple legacy buses but still use the same class driver. 
 ms.assetid: 0771D802-4F1D-4612-8376-ED3113DCC652
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Keyboard and mouse class drivers

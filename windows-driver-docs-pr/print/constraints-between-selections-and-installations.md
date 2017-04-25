@@ -3,7 +3,14 @@ title: Constraints between Selections and Installations
 author: windows-driver-content
 description: Constraints between Selections and Installations
 ms.assetid: abb6004f-daae-4f28-b36c-102d0b8c9f55
-keywords: ["installation constraints WDK Unidrv", "selection constraints WDK Unidrv"]
+keywords:
+- installation constraints WDK Unidrv
+- selection constraints WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Constraints between Selections and Installations

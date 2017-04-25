@@ -3,7 +3,18 @@ title: Supporting Autoupdate Events with Extension Units
 author: windows-driver-content
 description: Supporting Autoupdate Events with Extension Units
 ms.assetid: 3dc75f48-adc7-4443-8090-2e61b3306798
-keywords: ["autoupdate events WDK USB Video Class", "autoupdate events WDK USB Video Class , extension units", "events WDK USB Video Class", "events WDK USB Video Class , autoupdate with extension units", "extension units WDK USB Video Class , samples", "sample code WDK USB Video Class , autoupdate events"]
+keywords:
+- autoupdate events WDK USB Video Class
+- autoupdate events WDK USB Video Class , extension units
+- events WDK USB Video Class
+- events WDK USB Video Class , autoupdate with extension units
+- extension units WDK USB Video Class , samples
+- sample code WDK USB Video Class , autoupdate events
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Autoupdate Events with Extension Units

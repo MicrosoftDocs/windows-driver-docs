@@ -2,6 +2,11 @@
 title: Managing the Local DCBX Willing State
 description: Managing the Local DCBX Willing State
 ms.assetid: B37CA18B-FCCD-414D-95AB-0C54B9F1F421
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing the Local DCBX Willing State

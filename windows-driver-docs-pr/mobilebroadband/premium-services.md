@@ -2,6 +2,11 @@
 title: Premium services
 description: Premium services
 ms.assetid: 23c68c28-686c-4396-ac07-21d3c2bcca1c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Premium services

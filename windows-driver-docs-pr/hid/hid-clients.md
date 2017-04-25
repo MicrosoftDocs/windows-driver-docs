@@ -3,7 +3,17 @@ title: HID Clients
 author: windows-driver-content
 description: The HID Clients are drivers, services or applications that communicate using the HID API and often represent a specific type of device (for example a sensor, a keyboard, or a mouse).
 ms.assetid: C97E1F63-0CA5-42F3-A139-48E830F2E2B7
-keywords: ["HID clients", "drivers", "services", "HID API", "HID Collection"]
+keywords:
+- HID clients
+- drivers
+- services
+- HID API
+- HID Collection
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HID Clients

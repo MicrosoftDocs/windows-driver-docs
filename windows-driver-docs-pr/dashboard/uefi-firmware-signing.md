@@ -2,6 +2,11 @@
 title: UEFI Firmware Signing
 description: UEFI Firmware Signing
 ms.assetid: a39f65c3-9b0b-43ca-9831-ec420fb4cdca
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UEFI Firmware Signing

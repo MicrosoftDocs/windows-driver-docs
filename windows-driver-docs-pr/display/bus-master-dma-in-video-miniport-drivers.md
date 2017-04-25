@@ -2,7 +2,19 @@
 title: Bus-Master DMA in Video Miniport Drivers
 description: Bus-Master DMA in Video Miniport Drivers
 ms.assetid: fe6c2e16-d222-4948-b1df-34ed8d57d9d8
-keywords: ["video miniport drivers WDK Windows 2000 , bus-master DMA", "bus-master DMA WDK video miniport", "DMA bus-master WDK video miniport", "common-buffer DMA WDK video miniport", "common-buffer DMA WDK video miniport , overview", "packet-based DMA WDK video miniport", "packet-based DMA WDK video miniport , overview"]
+keywords:
+- video miniport drivers WDK Windows 2000 , bus-master DMA
+- bus-master DMA WDK video miniport
+- DMA bus-master WDK video miniport
+- common-buffer DMA WDK video miniport
+- common-buffer DMA WDK video miniport , overview
+- packet-based DMA WDK video miniport
+- packet-based DMA WDK video miniport , overview
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bus-Master DMA in Video Miniport Drivers

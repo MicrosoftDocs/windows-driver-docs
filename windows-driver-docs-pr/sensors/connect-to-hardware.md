@@ -1,8 +1,13 @@
 ---
 title: Connect to hardware
 author: windows-driver-content
-description: This topic shows you how the sensor driver determines the assigned hardware resources, then connects to the I2C driver controller so that it can connect to the ADXL345 hardware.
+description: This topic shows you how the sensor driver determines the assigned hardware resources and connects to the I2C driver controller.
 ms.assetid: 88D9162B-2B99-4608-B31A-48B1810747A9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connect to hardware
@@ -113,7 +118,7 @@ WdfWaitLockAcquire(pAccDevice->m_I2CWaitLock, NULL);
    Status = I2CSensorWriteRegister(pAccDevice->m_I2CIoTarget, RegisterSetting.Register, &amp;RegisterSetting.Value, sizeof(RegisterSetting.Value));
 ```
 
-In the preceding code, the I2C connection is used to set the accelerometer to ‚Äúmeasure mode‚Äù to make it ready for reading sensor values. See the *adxl345.h* header file for the definitions of ADXL345\_POWER\_CTL, ADXL345\_POWER\_CTL\_MEASURE and some other constants used in the sample sensor driver.
+In the preceding code, the I2C connection is used to set the accelerometer to ìmeasure modeî to make it ready for reading sensor values. See the *adxl345.h* header file for the definitions of ADXL345\_POWER\_CTL, ADXL345\_POWER\_CTL\_MEASURE and some other constants used in the sample sensor driver.
 
 4. Find the following code:
 ```ManagedCPlusPlus
@@ -173,9 +178,9 @@ The preceding code is used to delete the wait lock on the device object.
 ```
 
 3. Close the *client.cpp* file.
-¬†
+†
 
-¬†
+†
 
 
 --------------------

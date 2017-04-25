@@ -2,7 +2,16 @@
 title: Connection-Oriented NDIS
 description: Connection-Oriented NDIS
 ms.assetid: c74f8e60-c041-48e9-8aa1-98a9cb9eb869
-keywords: ["connection-oriented NDIS WDK", "CoNDIS WDK networking", "network drivers WDK , CoNDIS", "NDIS WDK , CoNDIS"]
+keywords:
+- connection-oriented NDIS WDK
+- CoNDIS WDK networking
+- network drivers WDK , CoNDIS
+- NDIS WDK , CoNDIS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connection-Oriented NDIS

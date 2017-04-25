@@ -2,7 +2,17 @@
 title: Supporting High-Order Patched Surfaces
 description: Supporting High-Order Patched Surfaces
 ms.assetid: 020fb91c-c8cd-43e8-a180-bbb2ef606be8
-keywords: ["high-order patched surfaces WDK DirectX 9.0", "displacement mapping WDK DirectX 9.0", "adaptive-tessellation render states WDK DirectX 9.0", "tessellation mapping WDK DirectX 9.0", "patched surfaces WDK DirectX 9.0"]
+keywords:
+- high-order patched surfaces WDK DirectX 9.0
+- displacement mapping WDK DirectX 9.0
+- adaptive-tessellation render states WDK DirectX 9.0
+- tessellation mapping WDK DirectX 9.0
+- patched surfaces WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting High-Order Patched Surfaces

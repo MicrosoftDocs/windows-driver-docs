@@ -2,7 +2,14 @@
 title: Initializing Communication with the Direct3D Version 11 DDI
 description: Initializing Communication with the Direct3D Version 11 DDI
 ms.assetid: 3b383f78-da88-4979-b55f-8e234f230df7
-keywords: ["Direct3D version 11 WDK Windows 7 display , initializing DDI communication", "Direct3D version 11 WDK Windows Server 2008 R2 display , initializing DDI communication"]
+keywords:
+- Direct3D version 11 WDK Windows 7 display , initializing DDI communication
+- Direct3D version 11 WDK Windows Server 2008 R2 display , initializing DDI communication
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing Communication with the Direct3D Version 11 DDI

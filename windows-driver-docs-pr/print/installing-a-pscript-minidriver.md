@@ -3,7 +3,14 @@ title: Installing a Pscript Minidriver
 author: windows-driver-content
 description: Installing a Pscript Minidriver
 ms.assetid: 9c48b2b0-c293-4606-bbaa-3fcaca01c300
-keywords: ["minidrivers WDK Pscript , installing", "INF files WDK print , Pscript"]
+keywords:
+- minidrivers WDK Pscript , installing
+- INF files WDK print , Pscript
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Pscript Minidriver

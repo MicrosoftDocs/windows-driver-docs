@@ -2,7 +2,16 @@
 title: Example 7 Customizing the Trace Message Prefix
 description: Example 7 Customizing the Trace Message Prefix
 ms.assetid: 75beccef-fd0b-4a4f-9ea2-11940b5baddf
-keywords: ["Tracefmt WDK , prefix", "prefix WDK Tracefmt", "trace message prefix WDK Tracefmt", "custom trace message prefix WDK Tracefmt"]
+keywords:
+- Tracefmt WDK , prefix
+- prefix WDK Tracefmt
+- trace message prefix WDK Tracefmt
+- custom trace message prefix WDK Tracefmt
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 7: Customizing the Trace Message Prefix

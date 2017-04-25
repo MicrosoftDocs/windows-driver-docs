@@ -2,7 +2,23 @@
 title: Off-Host VLD Bitstream Decoding Operation
 description: Off-Host VLD Bitstream Decoding Operation
 ms.assetid: fd339d5f-2d63-4b2f-a5dc-7ab7a6799a6d
-keywords: ["off-host VLD bitstream processing WDK DirectX VA", "bitstream VLD processing WDK DirectX VA", "inverse-quantization matrix buffers WDK DirectX VA", "slice-control buffers WDK DirectX VA", "bitstream buffers WDK DirectX VA", "compressed picture decoding WDK DirectX VA , macroblock-oriented picture decoding", "picture decoding WDK DirectX VA , compressed", "video decoding WDK DirectX VA , compressed pictures", "decoding video WDK DirectX VA , compressed pictures", "video decoding WDK DirectX VA , off-host VLD bitstream processing", "decoding video WDK DirectX VA , off-host VLD bitstream processing"]
+keywords:
+- off-host VLD bitstream processing WDK DirectX VA
+- bitstream VLD processing WDK DirectX VA
+- inverse-quantization matrix buffers WDK DirectX VA
+- slice-control buffers WDK DirectX VA
+- bitstream buffers WDK DirectX VA
+- compressed picture decoding WDK DirectX VA , macroblock-oriented picture decoding
+- picture decoding WDK DirectX VA , compressed
+- video decoding WDK DirectX VA , compressed pictures
+- decoding video WDK DirectX VA , compressed pictures
+- video decoding WDK DirectX VA , off-host VLD bitstream processing
+- decoding video WDK DirectX VA , off-host VLD bitstream processing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Off-Host VLD Bitstream Decoding Operation

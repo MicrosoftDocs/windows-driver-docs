@@ -2,7 +2,16 @@
 title: Disabling EA Recovery
 description: Disabling EA Recovery
 ms.assetid: a414f1b0-acfc-4617-bf68-202bdef829ce
-keywords: ["display drivers WDK Windows 2000 , debugging", "debugging drivers WDK Windows 2000 display", "EA recovery WDK Windows 2000 display", "disabled EA recovery WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , debugging
+- debugging drivers WDK Windows 2000 display
+- EA recovery WDK Windows 2000 display
+- disabled EA recovery WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Disabling EA Recovery

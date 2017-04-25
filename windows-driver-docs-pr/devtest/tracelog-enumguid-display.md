@@ -2,7 +2,17 @@
 title: Tracelog Enumguid Display
 description: Tracelog Enumguid Display
 ms.assetid: 9bb93238-98f7-4422-8434-b4dc105ec008
-keywords: ["Tracelog WDK , providers", "providers WDK software tracing", "tracing WDK , providers", "-enumguid command", "enumguid command"]
+keywords:
+- Tracelog WDK , providers
+- providers WDK software tracing
+- tracing WDK , providers
+- -enumguid command
+- enumguid command
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracelog Enumguid Display

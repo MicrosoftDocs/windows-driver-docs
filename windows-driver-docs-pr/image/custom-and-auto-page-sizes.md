@@ -3,6 +3,11 @@ title: Custom and Auto Page Sizes
 author: windows-driver-content
 description: Custom and Auto Page Sizes
 ms.assetid: a1f5f78d-fc05-4a7e-9d19-c7f40302b85f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Custom and Auto Page Sizes

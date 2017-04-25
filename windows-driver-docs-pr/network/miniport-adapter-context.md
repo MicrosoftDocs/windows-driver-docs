@@ -2,7 +2,15 @@
 title: Miniport Adapter Context
 description: Miniport Adapter Context
 ms.assetid: cb43d02d-cf52-46a4-b56d-aa3afcbd0ca5
-keywords: ["logical adapters WDK networking", "context WDK miniport adapter", "miniport adapters WDK networking , context"]
+keywords:
+- logical adapters WDK networking
+- context WDK miniport adapter
+- miniport adapters WDK networking , context
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Adapter Context

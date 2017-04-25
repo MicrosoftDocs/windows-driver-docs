@@ -3,7 +3,14 @@ title: Using Multiple GPD Files in a Minidriver
 author: windows-driver-content
 description: Using Multiple GPD Files in a Minidriver
 ms.assetid: 2ec08b46-a286-4af8-a5d4-e0306f731b3f
-keywords: ["GPD files WDK Unidrv , multiple", "multiple GPD files WDK Unidrv"]
+keywords:
+- GPD files WDK Unidrv , multiple
+- multiple GPD files WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Multiple GPD Files in a Minidriver

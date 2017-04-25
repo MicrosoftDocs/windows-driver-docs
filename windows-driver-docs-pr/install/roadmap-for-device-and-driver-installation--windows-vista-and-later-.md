@@ -2,6 +2,11 @@
 title: Roadmap for Device and Driver Installation
 description: Roadmap for Device and Driver Installation
 ms.assetid: d6cb6d8c-226f-4b6f-989a-36184236f826
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Roadmap for Device and Driver Installation
@@ -41,7 +46,7 @@ To install a device and driver in Windows 7 and later versions of Windows, foll
 
     Test-signing refers to using a test certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on test computers. In particular, this allows developers to sign driver packages by using self-signed certificates, such as those the [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309) tool generates. This capability allows developers to install and test driver packages in Windows with driver signature verification enabled.
 
-    For more information, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test--windows-vista-and-later-.md).
+    For more information, see [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md).
 
 -   Step 6: Release-sign your driver package for distribution.
 

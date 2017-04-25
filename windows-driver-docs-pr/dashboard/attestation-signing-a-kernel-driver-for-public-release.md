@@ -2,6 +2,11 @@
 title: Attestation signing a kernel driver for public release
 description: This topic describes how to sign a driver using attestation signing.
 ms.assetid: A292B15D-37FD-407E-998C-728D9423E712
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attestation signing a kernel driver for public release

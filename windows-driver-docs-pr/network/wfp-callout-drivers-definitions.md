@@ -2,7 +2,14 @@
 title: Windows Filtering Platform Callout Drivers Definitions
 description: Windows Filtering Platform Callout Drivers Definitions
 ms.assetid: 096f21b4-401e-478c-9543-03cc963309bf
-keywords: ["Windows Filtering Platform callout drivers WDK , terminology", "callout drivers WDK Windows Filtering Platform , terminology"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , terminology
+- callout drivers WDK Windows Filtering Platform , terminology
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Filtering Platform Callout Drivers Definitions

@@ -3,6 +3,11 @@ title: OS Driver installation
 author: windows-driver-content
 description: Class-specific INF file entries that a vendor can use to control how the Microsoft-supplied keyboard and mouse class installers install devices .
 ms.assetid: A934B1F3-01FA-4B70-92B8-9CB3EB096C89
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # OS Driver installation

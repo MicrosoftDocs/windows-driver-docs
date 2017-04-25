@@ -3,7 +3,18 @@ title: Using I/O Targets in UMDF
 author: windows-driver-content
 description: Using I/O Targets in UMDF
 ms.assetid: 5633242c-ffab-4af5-9650-7449395deb6b
-keywords: ["user-mode drivers WDK UMDF , I/O targets", "UMDF WDK , I/O targets", "User-Mode Driver Framework WDK , I/O targets", "framework-based drivers WDK UMDF , I/O targets", "I/O targets WDK UMDF", "targets WDK UMDF"]
+keywords:
+- user-mode drivers WDK UMDF , I/O targets
+- UMDF WDK , I/O targets
+- User-Mode Driver Framework WDK , I/O targets
+- framework-based drivers WDK UMDF , I/O targets
+- I/O targets WDK UMDF
+- targets WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using I/O Targets in UMDF

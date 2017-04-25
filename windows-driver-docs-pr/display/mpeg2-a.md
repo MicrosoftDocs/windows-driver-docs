@@ -2,7 +2,13 @@
 title: MPEG2\_A
 description: MPEG2\_A
 ms.assetid: 4f9e2aad-4072-4a49-87df-dfc6b4bf5f56
-keywords: ["MPEG2_A restricted profile WDK DirectX VA"]
+keywords:
+- MPEG2_A restricted profile WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MPEG2\_A

@@ -2,7 +2,15 @@
 title: Driver Rank Ranges
 description: Driver Rank Ranges
 ms.assetid: ea822171-c1f3-49b4-ae63-3300728666f0
-keywords: ["driver rank ranges WDK device installations", "rank ranges WDK device installations", "range ranking WDK device installations"]
+keywords:
+- driver rank ranges WDK device installations
+- rank ranges WDK device installations
+- range ranking WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Rank Ranges

@@ -2,7 +2,17 @@
 title: Synthesizer Latency
 description: Synthesizer Latency
 ms.assetid: a3134024-77b9-463b-959b-3c910f83014d
-keywords: ["synthesizers WDK audio , latency", "latency WDK audio , synthesizers", "MIDI message latency WDK audio", "IReferenceClock object", "wave sinks WDK audio , latency time"]
+keywords:
+- synthesizers WDK audio , latency
+- latency WDK audio , synthesizers
+- MIDI message latency WDK audio
+- IReferenceClock object
+- wave sinks WDK audio , latency time
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synthesizer Latency

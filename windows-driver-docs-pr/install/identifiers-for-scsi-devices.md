@@ -2,7 +2,19 @@
 title: Identifiers for SCSI Devices
 description: Identifiers for SCSI Devices
 ms.assetid: 8bc68813-5096-40b2-bbd1-0aebb5a3326d
-keywords: ["device identification strings WDK , SCSI devices", "identification strings WDK device , SCSI devices", "identifiers WDK device , SCSI devices", "SCSI device identifiers WDK device installations", "device IDs WDK device installations", "hardware IDs WDK device installations", "compatible IDs WDK device installations"]
+keywords:
+- device identification strings WDK , SCSI devices
+- identification strings WDK device , SCSI devices
+- identifiers WDK device , SCSI devices
+- SCSI device identifiers WDK device installations
+- device IDs WDK device installations
+- hardware IDs WDK device installations
+- compatible IDs WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifiers for SCSI Devices

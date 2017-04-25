@@ -42,7 +42,7 @@ Remarks
 -----
 This method updates the **BeginIndex** of the ring buffer to the first element that is not yet completed.
 
-For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

@@ -2,7 +2,15 @@
 title: Push Timer
 description: Push Timer
 ms.assetid: f06fdc3c-70d3-4445-80a5-747237c07295
-keywords: ["timers WDK TCP chimney offload , push timers", "TCP timers WDK TCP chimney offload , push timers", "push timers WDK TCP chimney offload"]
+keywords:
+- timers WDK TCP chimney offload , push timers
+- TCP timers WDK TCP chimney offload , push timers
+- push timers WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Push Timer

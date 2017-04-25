@@ -2,6 +2,11 @@
 title: 802.3 Statistic OIDs
 description: 802.3 Statistic OIDs
 ms.assetid: bd9b3cff-d71b-4afc-b806-41229ef98e34
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.3 Statistic OIDs

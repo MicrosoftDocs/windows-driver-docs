@@ -3,7 +3,17 @@ title: Providing a Vendor-Defined ACPI Device Interface
 author: windows-driver-content
 description: Providing a Vendor-Defined ACPI Device Interface
 ms.assetid: 5a7fd03b-6d4f-481b-8e4e-0e1deaf88583
-keywords: ["ACPI devices WDK , device interfaces", "vendor-defined device interfaces WDK ACPI", "device interfaces WDK ACPI", "function drivers WDK ACPI , vendor-defined device interfaces", "WDM function drivers WDK ACPI , vendor-defined device interfaces"]
+keywords:
+- ACPI devices WDK , device interfaces
+- vendor-defined device interfaces WDK ACPI
+- device interfaces WDK ACPI
+- function drivers WDK ACPI , vendor-defined device interfaces
+- WDM function drivers WDK ACPI , vendor-defined device interfaces
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing a Vendor-Defined ACPI Device Interface

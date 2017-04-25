@@ -3,7 +3,17 @@ title: NFP device identifiers
 author: windows-driver-content
 description: NFP device identifiers
 ms.assetid: B387D3F8-A9A7-47F0-B5E3-8437581947E4
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NFP device identifiers

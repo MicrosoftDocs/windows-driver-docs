@@ -1,14 +1,20 @@
 ---
 title: /Replace Switch
-description: The /Replace switch of the Enhanced Storage Certificate Management tool replaces a specified certificate from the authentication silo certificate (ASC) store in an IEEE 1667-compliant USB storage device.Note  In this topic, the specified IEEE 1667-compliant USB storage device is referred to as the target device.�
+description: The /Replace switch of the Enhanced Storage Certificate Management tool replaces a certificate from the authentication silo certificate (ASC) store in a device.
 ms.assetid: 8fbdeb88-ec38-4ffc-a669-83fd612819ed
-keywords: ["/Replace Switch Driver Development Tools"]
+keywords:
+- /Replace Switch Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - /Replace
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # /Replace Switch

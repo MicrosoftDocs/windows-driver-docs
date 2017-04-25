@@ -2,7 +2,19 @@
 title: TCP Timers Maintained by an Offload Target
 description: TCP Timers Maintained by an Offload Target
 ms.assetid: e8d93578-9a57-4585-963d-44dc4727c91f
-keywords: ["TCP chimney offload WDK networking , timers", "chimney offload WDK networking , timers", "timers WDK TCP chimney offload", "target maintained TCP timers WDK TCP chimney offload", "TCP timers WDK TCP chimney offload", "clocks WDK TCP chimney offload", "connection timers WDK TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , timers
+- chimney offload WDK networking , timers
+- timers WDK TCP chimney offload
+- target maintained TCP timers WDK TCP chimney offload
+- TCP timers WDK TCP chimney offload
+- clocks WDK TCP chimney offload
+- connection timers WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCP Timers Maintained by an Offload Target

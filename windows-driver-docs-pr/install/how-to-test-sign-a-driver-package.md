@@ -2,12 +2,23 @@
 title: How to Test-Sign a Driver Package
 description: How to Test-Sign a Driver Package
 ms.assetid: 992f0974-0b0e-4c96-ad16-c5894067896c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to Test-Sign a Driver Package
 
 
-This section provides information about the basic steps that you have to follow when you test-sign a [driver package](driver-packages.md). This section includes topics that describe these steps and provide examples, such as the following
+This section provides information about the basic steps that you have to follow when you test-sign a [driver package](driver-packages.md). 
+
+Test-signing refers to using a test certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on test computers. In particular, this allows developers to sign kernel-mode binaries by using self-signed certificates, such as those the [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309) tool generates. This capability allows developers to test kernel-mode binaries on Windows with driver signature verification enabled.
+
+Windows supports test-signed drivers only for development and testing purposes. Test-signed drivers must not be used for production purposes or released to customers.
+
+This section includes topics that describe these steps and provide examples, such as the following:
 
 -   Creating a test certificate that is used to sign a driver package. In this section, steps are described to create and use a self-signed test certificate named *Contoso.com(Test)*. This certificate is used in many examples that are discussed in this section.
 

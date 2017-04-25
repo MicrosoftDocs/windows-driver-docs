@@ -2,7 +2,13 @@
 title: WavePci Latency
 description: WavePci Latency
 ms.assetid: 6d83c015-cf8f-40b4-bf28-de865a5bfe2d
-keywords: ["WavePci latency WDK audio"]
+keywords:
+- WavePci latency WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WavePci Latency

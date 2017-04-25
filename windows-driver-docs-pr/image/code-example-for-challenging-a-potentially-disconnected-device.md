@@ -3,6 +3,11 @@ title: Code Example for Challenging a Potentially Disconnected Device
 author: windows-driver-content
 description: Code Example for Challenging a Potentially Disconnected Device
 ms.assetid: 74633481-229f-4074-a84e-cc515eaaacd0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Example for Challenging a Potentially Disconnected Device

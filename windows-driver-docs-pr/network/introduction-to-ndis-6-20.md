@@ -2,7 +2,15 @@
 title: Introduction to NDIS 6.20
 description: Introduction to NDIS 6.20
 ms.assetid: a0a25173-5f57-4317-b963-20ba9bb3f95b
-keywords: ["NDIS 6.20 WDK", "NDIS 6.20 WDK , about", "Network Driver Interface Specification (NDIS) 6.20 WDK"]
+keywords:
+- NDIS 6.20 WDK
+- NDIS 6.20 WDK , about
+- Network Driver Interface Specification (NDIS) 6.20 WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to NDIS 6.20

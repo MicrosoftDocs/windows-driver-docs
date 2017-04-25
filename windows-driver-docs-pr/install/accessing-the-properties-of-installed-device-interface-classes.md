@@ -2,7 +2,13 @@
 title: Accessing the Properties of Installed Device Interfaces
 description: Accessing the Properties of Installed Device Interfaces
 ms.assetid: 4079DD59-878E-4b71-9815-543BA838C56D
-keywords: ["device interfaces WDK device installations , accessing properties"]
+keywords:
+- device interfaces WDK device installations , accessing properties
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing the Properties of Installed Device Interfaces

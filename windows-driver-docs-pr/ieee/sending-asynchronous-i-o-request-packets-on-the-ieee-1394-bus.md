@@ -3,7 +3,24 @@ title: Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus
 author: windows-driver-content
 description: Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus
 ms.assetid: 93ad0cdf-5ac2-4916-b90e-1e64ca4494b6
-keywords: ["sending asynchronous I/O requests", "raw-mode addressing WDK IEEE 1394 bus", "virtual-mode addressing WDK IEEE 1394 bus", "normal-mode addressing WDK IEEE 1394 bus", "addresses WDK IEEE 1394 bus", "data blocks WDK IEEE 1394 bus", "contiguous data blocks WDK IEEE 1394 bus", "non-incrementing data blocks WDK IEEE 1394 bus", "buffers WDK IEEE 1394 bus", "bus reset generation WDK IEEE 1394 bus", "reset generation WDK IEEE 1394 bus", "locking WDK IEEE 1394 bus"]
+keywords:
+- sending asynchronous I/O requests
+- raw-mode addressing WDK IEEE 1394 bus
+- virtual-mode addressing WDK IEEE 1394 bus
+- normal-mode addressing WDK IEEE 1394 bus
+- addresses WDK IEEE 1394 bus
+- data blocks WDK IEEE 1394 bus
+- contiguous data blocks WDK IEEE 1394 bus
+- non-incrementing data blocks WDK IEEE 1394 bus
+- buffers WDK IEEE 1394 bus
+- bus reset generation WDK IEEE 1394 bus
+- reset generation WDK IEEE 1394 bus
+- locking WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending Asynchronous I/O Request Packets on the IEEE 1394 Bus

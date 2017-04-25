@@ -2,7 +2,15 @@
 title: User-Mode Power Service
 description: User-Mode Power Service
 ms.assetid: 57f3affd-18cc-440c-ba18-9ba89fd3c84f
-keywords: ["Power Metering and Budgeting WDK , User-Mode Power Service", "User-Mode Power Service WDK Power Meter", "UMPS WDK Power Meter"]
+keywords:
+- Power Metering and Budgeting WDK , User-Mode Power Service
+- User-Mode Power Service WDK Power Meter
+- UMPS WDK Power Meter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User-Mode Power Service

@@ -3,7 +3,14 @@ title: Initializing a BDA Minidriver
 author: windows-driver-content
 description: Initializing a BDA Minidriver
 ms.assetid: 4df2efc6-e666-48d5-9a7b-cbf724c027f0
-keywords: ["BDA minidrivers WDK AVStream , initializing", "initializing BDA minidrivers WDK AVStream"]
+keywords:
+- BDA minidrivers WDK AVStream , initializing
+- initializing BDA minidrivers WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a BDA Minidriver

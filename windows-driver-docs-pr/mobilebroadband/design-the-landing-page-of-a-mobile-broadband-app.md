@@ -2,6 +2,11 @@
 title: Design the landing page of a mobile broadband app
 description: Design the landing page of a mobile broadband app
 ms.assetid: 3a42886f-8a32-4576-af31-65443bb718ca
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Design the landing page of a mobile broadband app

@@ -3,7 +3,15 @@ title: Joystick Driver Model
 author: windows-driver-content
 description: Joystick Driver Model
 ms.assetid: 5bd41377-37ae-4ca7-8a6d-93311511ef4e
-keywords: ["joysticks WDK HID , driver model", "virtual joystick drivers WDK HID , driver model", "VJoyD WDK HID , driver model"]
+keywords:
+- joysticks WDK HID , driver model
+- virtual joystick drivers WDK HID , driver model
+- VJoyD WDK HID , driver model
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Joystick Driver Model

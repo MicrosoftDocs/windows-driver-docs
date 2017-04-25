@@ -2,7 +2,14 @@
 title: Enumerating Installed Devices
 description: Enumerating Installed Devices
 ms.assetid: 98EF9A16-6415-4778-BB5D-C0B7160C1509
-keywords: ["enumerating installed devices WDK", "installed devices WDK , enumerating"]
+keywords:
+- enumerating installed devices WDK
+- installed devices WDK , enumerating
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Installed Devices

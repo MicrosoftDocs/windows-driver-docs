@@ -2,6 +2,11 @@
 title: PwrTest Sleep Scenario
 description: The PwrTest Sleep Scenario facilitates automated testing of sleep and resume transitions.
 ms.assetid: 2003ff3e-bc29-4741-a0a6-371948982679
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PwrTest Sleep Scenario

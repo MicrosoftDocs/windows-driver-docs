@@ -3,7 +3,21 @@ title: The FCB Structure
 author: windows-driver-content
 description: The FCB Structure
 ms.assetid: feb38b24-c028-4c8d-be45-11d9a4659f8d
-keywords: ["file control block structure WDK RDBSS", "FCB WDK RDBSS", "data structures WDK file systems", "RDBSS WDK file systems , connection and file structures", "Redirected Drive Buffering Subsystem WDK file systems , connection and file structures", "connection structures WDK RDBSS", "file structures WDK RDBSS", "structures WDK RDBSS", "connection information WDK RDBSS"]
+keywords:
+- file control block structure WDK RDBSS
+- FCB WDK RDBSS
+- data structures WDK file systems
+- RDBSS WDK file systems , connection and file structures
+- Redirected Drive Buffering Subsystem WDK file systems , connection and file structures
+- connection structures WDK RDBSS
+- file structures WDK RDBSS
+- structures WDK RDBSS
+- connection information WDK RDBSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The FCB Structure

@@ -3,7 +3,16 @@ title: Accessing PCI Device Configuration Space
 author: windows-driver-content
 description: Accessing PCI Device Configuration Space
 ms.assetid: 05e0ada9-d465-4787-abc5-469a75352ee0
-keywords: ["PCI configuration space WDK buses", "configuration space WDK buses", "IRP_MN_READ_CONFIG", "IRP_MN_WRITE_CONFIG"]
+keywords:
+- PCI configuration space WDK buses
+- configuration space WDK buses
+- IRP_MN_READ_CONFIG
+- IRP_MN_WRITE_CONFIG
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing PCI Device Configuration Space

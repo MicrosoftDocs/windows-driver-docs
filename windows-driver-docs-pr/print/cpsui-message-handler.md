@@ -3,7 +3,14 @@ title: CPSUI Message Handler
 author: windows-driver-content
 description: CPSUI Message Handler
 ms.assetid: 4a6434e9-d65e-4ddd-836e-d6101532bbb8
-keywords: ["page event callbacks WDK CPSUI", "event callbacks WDK CPSUI"]
+keywords:
+- page event callbacks WDK CPSUI
+- event callbacks WDK CPSUI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CPSUI Message Handler

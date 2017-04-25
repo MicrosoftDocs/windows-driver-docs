@@ -2,6 +2,11 @@
 title: Best Practices for Developing Device Metadata Packages
 description: Best Practices for Developing Device Metadata Packages
 ms.assetid: e563006b-790c-44d2-a457-56ba3db1973f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Best Practices for Developing Device Metadata Packages

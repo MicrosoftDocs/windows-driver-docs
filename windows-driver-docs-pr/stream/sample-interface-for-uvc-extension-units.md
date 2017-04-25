@@ -3,7 +3,15 @@ title: Sample Interface for UVC Extension Units
 author: windows-driver-content
 description: Sample Interface for UVC Extension Units
 ms.assetid: 898fdaf7-c3e1-4ef5-be4e-a5f9849ee905
-keywords: ["interfaces WDK USB Video Class", "extension units WDK USB Video Class , samples, interface", "sample code WDK USB Video Class , interface for UVC extension units"]
+keywords:
+- interfaces WDK USB Video Class
+- extension units WDK USB Video Class , samples, interface
+- sample code WDK USB Video Class , interface for UVC extension units
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Interface for UVC Extension Units

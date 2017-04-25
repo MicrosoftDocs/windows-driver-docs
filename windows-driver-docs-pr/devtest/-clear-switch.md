@@ -2,13 +2,19 @@
 title: /Clear Switch
 description: The /Clear switch of the Enhanced Storage Certificate Management tool removes most of the certificates from the authentication silo certificate (ASC) store on a specified IEEE 1667-compliant USB storage device.Note  In this topic, the specified IEEE 1667-compliant USB storage device is referred to as the target device.�
 ms.assetid: b8002d0c-450a-4c4c-bee6-83e382984b34
-keywords: ["/Clear Switch Driver Development Tools"]
+keywords:
+- /Clear Switch Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - /Clear
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # /Clear Switch

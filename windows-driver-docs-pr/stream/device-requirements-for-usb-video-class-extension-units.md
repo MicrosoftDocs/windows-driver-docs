@@ -3,7 +3,17 @@ title: Device Requirements for USB Video Class Extension Units
 author: windows-driver-content
 description: Device Requirements for USB Video Class Extension Units
 ms.assetid: 4678c3a4-9ca7-4518-afe8-99a9e61f3dcd
-keywords: ["extension units WDK USB Video Class , device requirements", "Extension Unit descriptor WDK USB Video Class", "descriptors WDK USB Video Class", "Extension Unit controls WDK USB Video Class", "controls WDK USB Video Class"]
+keywords:
+- extension units WDK USB Video Class , device requirements
+- Extension Unit descriptor WDK USB Video Class
+- descriptors WDK USB Video Class
+- Extension Unit controls WDK USB Video Class
+- controls WDK USB Video Class
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Requirements for USB Video Class Extension Units

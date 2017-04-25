@@ -3,7 +3,16 @@ title: Public Interfaces
 author: windows-driver-content
 description: Public Interfaces
 ms.assetid: 3913c921-dda2-404c-b608-add9d74df21d
-keywords: ["spooler notification WDK print , public interfaces", "print spooler notification WDK , public interfaces", "public interfaces WDK spooler notification", "interfaces WDK spooler notification"]
+keywords:
+- spooler notification WDK print , public interfaces
+- print spooler notification WDK , public interfaces
+- public interfaces WDK spooler notification
+- interfaces WDK spooler notification
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Public Interfaces

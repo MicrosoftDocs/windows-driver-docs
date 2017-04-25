@@ -2,7 +2,15 @@
 title: Including a PrintProvider Section
 description: Including a PrintProvider Section
 ms.assetid: 2cbf1b56-e603-4a21-a1d7-d51634c91456
-keywords: ["INF files WDK network , PrintProvider section", "network INF files WDK , PrintProvider section", "PrintProvider section WDK networking"]
+keywords:
+- INF files WDK network , PrintProvider section
+- network INF files WDK , PrintProvider section
+- PrintProvider section WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Including a PrintProvider Section

@@ -2,7 +2,13 @@
 title: Additional Requirements for Windows 98
 description: Additional Requirements for Windows 98
 ms.assetid: 8fcdc565-9d8a-45d9-9dc2-0420cbffc4f5
-keywords: ["non-PCM audio formats WDK , Windows 98"]
+keywords:
+- non-PCM audio formats WDK , Windows 98
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Additional Requirements for Windows 98

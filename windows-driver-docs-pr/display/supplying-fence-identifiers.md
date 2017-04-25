@@ -2,7 +2,13 @@
 title: Supplying Fence Identifiers
 description: Supplying Fence Identifiers
 ms.assetid: 0ec8a4eb-c441-47ae-b5de-d86e6065ffd4
-keywords: ["fence identifiers WDK display"]
+keywords:
+- fence identifiers WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supplying Fence Identifiers

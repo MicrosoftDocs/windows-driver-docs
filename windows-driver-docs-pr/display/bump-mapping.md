@@ -2,7 +2,21 @@
 title: Bump Mapping
 description: Bump Mapping
 ms.assetid: 38c7da06-cfe6-4285-8958-3d1eb22b1bcd
-keywords: ["Direct3D WDK Windows 2000 display , bump mapping", "bump mapping WDK Direct3D", "surface wrinkles WDK Direct3D", "surface dimples WDK Direct3D", "wrinkles WDK Direct3D", "dimples WDK Direct3D", "texture management WDK Direct3D , bump mapping", "per-pixel texturing WDK Direct3D", "emulation WDK Direct3D"]
+keywords:
+- Direct3D WDK Windows 2000 display , bump mapping
+- bump mapping WDK Direct3D
+- surface wrinkles WDK Direct3D
+- surface dimples WDK Direct3D
+- wrinkles WDK Direct3D
+- dimples WDK Direct3D
+- texture management WDK Direct3D , bump mapping
+- per-pixel texturing WDK Direct3D
+- emulation WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bump Mapping

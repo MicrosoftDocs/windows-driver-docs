@@ -2,7 +2,18 @@
 title: Multiple Monitors and Video Present Networks
 description: Multiple Monitors and Video Present Networks
 ms.assetid: 27687fa4-1266-4341-b68a-83374c24ef73
-keywords: ["display driver model WDK Windows Vista , video present networks", "Windows Vista display driver model WDK , video present networks", "video present networks WDK display", "VidPN WDK display", "multiple monitors WDK video present networks", "monitors WDK video present networks"]
+keywords:
+- display driver model WDK Windows Vista , video present networks
+- Windows Vista display driver model WDK , video present networks
+- video present networks WDK display
+- VidPN WDK display
+- multiple monitors WDK video present networks
+- monitors WDK video present networks
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multiple Monitors and Video Present Networks

@@ -3,7 +3,14 @@ title: Multi-Tier Reset in Storport
 author: windows-driver-content
 description: Multi-Tier Reset in Storport
 ms.assetid: 11c717b9-5154-43dd-b357-ff093cabec4b
-keywords: ["Storport drivers WDK , errors", "errors WDK Storport"]
+keywords:
+- Storport drivers WDK , errors
+- errors WDK Storport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multi-Tier Reset in Storport

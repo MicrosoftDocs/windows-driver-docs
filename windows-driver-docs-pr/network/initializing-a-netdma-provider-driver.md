@@ -2,7 +2,14 @@
 title: Initializing a NetDMA Provider Driver
 description: Initializing a NetDMA Provider Driver
 ms.assetid: d267b450-0e96-44d5-b034-455bdc4c9f8c
-keywords: ["NetDMA provider drivers WDK networking , initializing", "initializing NetDMA provider drivers"]
+keywords:
+- NetDMA provider drivers WDK networking , initializing
+- initializing NetDMA provider drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a NetDMA Provider Driver

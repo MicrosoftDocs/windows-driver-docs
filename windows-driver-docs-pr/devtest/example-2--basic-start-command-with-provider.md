@@ -2,7 +2,18 @@
 title: Example 2 Basic Start Command with Provider
 description: Example 2 Basic Start Command with Provider
 ms.assetid: 86730943-107e-441a-a860-4df540bc0426
-keywords: ["trace sessions WDK , starting", "start command", "-start command", "guid parameter", "-guid parameter", "starting trace sessions"]
+keywords:
+- trace sessions WDK , starting
+- start command
+- -start command
+- guid parameter
+- -guid parameter
+- starting trace sessions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 2: Basic Start Command with Provider

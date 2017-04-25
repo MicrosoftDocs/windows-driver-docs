@@ -2,7 +2,22 @@
 title: Managing Resources for Multiple GPU Scenarios
 description: Managing Resources for Multiple GPU Scenarios
 ms.assetid: f3dc10b1-76e9-4f31-b253-149b6300611d
-keywords: ["GPU WDK Windows 7 display", "GPU WDK Windows 7 display , multiple", "GPU WDK Windows 7 display , multiple, managing resources for", "multiple GPUs WDK Windows 7 display", "multiple GPUs WDK Windows 7 display , managing resources for", "GPU WDK Windows 2008 Resource R2 display", "GPU WDK Windows 2008 Resource R2 display , multiple", "GPU WDK Windows 2008 Resource R2 display , multiple, managing resources for", "multiple GPUs WDK Windows 2008 Resource R2 display", "multiple GPUs WDK Windows 2008 Resource R2 display , managing resources for"]
+keywords:
+- GPU WDK Windows 7 display
+- GPU WDK Windows 7 display , multiple
+- GPU WDK Windows 7 display , multiple, managing resources for
+- multiple GPUs WDK Windows 7 display
+- multiple GPUs WDK Windows 7 display , managing resources for
+- GPU WDK Windows 2008 Resource R2 display
+- GPU WDK Windows 2008 Resource R2 display , multiple
+- GPU WDK Windows 2008 Resource R2 display , multiple, managing resources for
+- multiple GPUs WDK Windows 2008 Resource R2 display
+- multiple GPUs WDK Windows 2008 Resource R2 display , managing resources for
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Resources for Multiple GPU Scenarios

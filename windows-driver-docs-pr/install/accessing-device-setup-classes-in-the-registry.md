@@ -2,6 +2,11 @@
 title: Accessing Device Setup Classes in the Registry
 description: Accessing Device Setup Classes in the Registry
 ms.assetid: 4532FE45-B08E-45f8-9A4A-3B32AE1424FA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Device Setup Classes in the Registry

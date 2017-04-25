@@ -3,6 +3,11 @@ title: PTP Events
 author: windows-driver-content
 description: PTP Events
 ms.assetid: 69bbe1e1-46e7-4615-93ff-ecd640e7d56b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PTP Events

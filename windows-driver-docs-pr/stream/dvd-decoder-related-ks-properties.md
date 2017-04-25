@@ -3,7 +3,16 @@ title: DVD Decoder Related KS Properties
 author: windows-driver-content
 description: DVD Decoder Related KS Properties
 ms.assetid: 97ce831e-429b-4097-a9f4-625315fe1247
-keywords: ["DVD decoder minidrivers WDK , KS properties", "decoder minidrivers WDK DVD , KS properties", "KS properties WDK DVD decoder", "property sets WDK DVD decoder"]
+keywords:
+- DVD decoder minidrivers WDK , KS properties
+- decoder minidrivers WDK DVD , KS properties
+- KS properties WDK DVD decoder
+- property sets WDK DVD decoder
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DVD Decoder Related KS Properties

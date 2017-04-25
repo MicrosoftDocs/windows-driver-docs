@@ -2,6 +2,11 @@
 title: SR-IOV PF/VF Backchannel Communication
 description: SR-IOV PF/VF Backchannel Communication
 ms.assetid: 66D40452-1286-449E-BD6B-AFAD466E03A1
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SR-IOV PF/VF Backchannel Communication

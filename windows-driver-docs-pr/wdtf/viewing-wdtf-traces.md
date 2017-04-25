@@ -3,7 +3,15 @@ title: Enabling and Viewing WDTF Traces
 author: windows-driver-content
 description: Enabling and Viewing WDTF Traces
 ms.assetid: 9bed6042-3691-4a5e-a143-51acf746b1ae
-keywords: ["Windows Device Testing Framework WDK , tracing events", "WDTF WDK , tracing events", "tracing WDK WDTF"]
+keywords:
+- Windows Device Testing Framework WDK , tracing events
+- WDTF WDK , tracing events
+- tracing WDK WDTF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling and Viewing WDTF Traces

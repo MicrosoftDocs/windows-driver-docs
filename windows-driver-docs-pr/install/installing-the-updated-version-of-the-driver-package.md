@@ -2,6 +2,11 @@
 title: Installing the Updated Version of the Driver Package
 description: Installing the Updated Version of the Driver Package
 ms.assetid: c2138956-a036-410d-b34e-b7b6efbcbace
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing the Updated Version of the Driver Package

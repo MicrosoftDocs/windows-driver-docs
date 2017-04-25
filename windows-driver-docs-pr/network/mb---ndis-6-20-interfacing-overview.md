@@ -2,7 +2,15 @@
 title: MB / NDIS 6.20 Interfacing Overview
 description: MB / NDIS 6.20 Interfacing Overview
 ms.assetid: 6abde9b4-8ac2-4757-8db3-4f563fc5ed24
-keywords: ["NDIS 6.20 WDK , mobile broadband (MB) interfacing", "mobile broadband (MB) WDK", "mobile broadband (MB) WDK , NDIS 6.20 interfacing"]
+keywords:
+- NDIS 6.20 WDK , mobile broadband (MB) interfacing
+- mobile broadband (MB) WDK
+- mobile broadband (MB) WDK , NDIS 6.20 interfacing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB / NDIS 6.20 Interfacing Overview

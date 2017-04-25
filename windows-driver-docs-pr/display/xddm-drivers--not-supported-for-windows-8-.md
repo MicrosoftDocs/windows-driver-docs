@@ -2,6 +2,11 @@
 title: XDDM drivers not supported for Windows 8
 description: XDDM drivers are not supported for Windows 8 and will not install or run on Windows 8.
 ms.assetid: 2D527787-55AF-4D44-BBA2-8052FB594902
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XDDM drivers not supported for Windows 8

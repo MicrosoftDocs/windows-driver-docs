@@ -3,7 +3,17 @@ title: Processing I/O Operations
 author: windows-driver-content
 description: Processing I/O Operations
 ms.assetid: 750fa89b-dbdf-45ff-bfa5-83c717d2d7bb
-keywords: ["filter manager WDK file system minifilter , processing I/O operations", "preoperation callback routines WDK file system minifilter , filter manager", "postoperation callback routines WDK file system minifilter , filter manager", "opportunistic lock WDK file system minifilter", "locking WDK file system minifilter"]
+keywords:
+- filter manager WDK file system minifilter , processing I/O operations
+- preoperation callback routines WDK file system minifilter , filter manager
+- postoperation callback routines WDK file system minifilter , filter manager
+- opportunistic lock WDK file system minifilter
+- locking WDK file system minifilter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing I/O Operations

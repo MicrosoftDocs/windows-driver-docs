@@ -3,7 +3,18 @@ title: Installing a Print Processor
 author: windows-driver-content
 description: Installing a Print Processor
 ms.assetid: 4e9e1148-16a3-42f6-a262-1eef014636d0
-keywords: ["print processors WDK , installing", "installing print processors WDK", "print queues WDK , print processor installations", "associating print processor with print queue WDK", "print processors WDK , associating with print queue", "print queues WDK"]
+keywords:
+- print processors WDK , installing
+- installing print processors WDK
+- print queues WDK , print processor installations
+- associating print processor with print queue WDK
+- print processors WDK , associating with print queue
+- print queues WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Print Processor

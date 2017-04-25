@@ -3,7 +3,16 @@ title: SD Bus Driver Design Guide
 author: windows-driver-content
 description: SD Bus Driver Design Guide
 ms.assetid: c082d86c-8f81-41ef-afac-bd9fd76696fd
-keywords: ["SD WDK buses", "buses WDK , SD", "Secure Digital WDK buses", "memory cards WDK SD bus"]
+keywords:
+- SD WDK buses
+- buses WDK , SD
+- Secure Digital WDK buses
+- memory cards WDK SD bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SD Bus Driver Design Guide

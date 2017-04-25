@@ -3,6 +3,11 @@ title: WIA Item Flags for Scanner Storage
 author: windows-driver-content
 description: WIA Item Flags for Scanner Storage
 ms.assetid: 493b7c4f-d36a-4447-92a3-34b42ef58397
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Item Flags for Scanner Storage

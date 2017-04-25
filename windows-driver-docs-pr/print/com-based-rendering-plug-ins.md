@@ -3,7 +3,14 @@ title: COM-Based Rendering Plug-Ins
 author: windows-driver-content
 description: COM-Based Rendering Plug-Ins
 ms.assetid: c80d6c2b-ba4d-4bd1-bd3a-8c1b0bf29884
-keywords: ["COM-based rendering plug-ins WDK print", "rendering plug-ins WDK print , COM-based"]
+keywords:
+- COM-based rendering plug-ins WDK print
+- rendering plug-ins WDK print , COM-based
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COM-Based Rendering Plug-Ins

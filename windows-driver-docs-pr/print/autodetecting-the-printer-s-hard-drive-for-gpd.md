@@ -3,7 +3,17 @@ title: Autodetecting the Printer's Hard Drive for GPD
 author: windows-driver-content
 description: Autodetecting the Printer's Hard Drive for GPD
 ms.assetid: c3bc415e-fa4d-42d0-9686-3105a588a7ea
-keywords: ["autodetecting printer hard drive WDK printer autoconfiguration", "GPD files WDK GDL extensions , autodetecting hard drive", "in-box autoconfiguration support WDK printer , autodetecting hard drive", "detecting printer hard drive", "hard drive autodetection WDK printer"]
+keywords:
+- autodetecting printer hard drive WDK printer autoconfiguration
+- GPD files WDK GDL extensions , autodetecting hard drive
+- in-box autoconfiguration support WDK printer , autodetecting hard drive
+- detecting printer hard drive
+- hard drive autodetection WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autodetecting the Printer's Hard Drive for GPD

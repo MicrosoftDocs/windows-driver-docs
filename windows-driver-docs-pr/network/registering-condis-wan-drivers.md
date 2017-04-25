@@ -2,7 +2,15 @@
 title: Registering CoNDIS WAN Drivers
 description: Registering CoNDIS WAN Drivers
 ms.assetid: e699d1b0-9dbd-4845-b8e3-e83da20e997c
-keywords: ["CoNDIS WAN drivers WDK networking , registering", "NdisMRegisterMiniportDriver", "registering CoNDIS WAN drivers"]
+keywords:
+- CoNDIS WAN drivers WDK networking , registering
+- NdisMRegisterMiniportDriver
+- registering CoNDIS WAN drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering CoNDIS WAN Drivers

@@ -2,6 +2,11 @@
 title: Container IDs for DPWS Devices
 description: Container IDs for DPWS Devices
 ms.assetid: b613a25e-bedf-481c-8c86-9486af01b2ba
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Container IDs for DPWS Devices

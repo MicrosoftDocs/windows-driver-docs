@@ -2,7 +2,13 @@
 title: Specify account information in the Mobile Broadband Metadata Authoring Wizard
 description: Specify account information in the Mobile Broadband Metadata Authoring Wizard
 ms.assetid: FFE19760-360F-482C-BBD8-7068D2DD34E5
-keywords: ["Specify account information in the Mobile Broadband Metadata Authoring Wizard"]
+keywords:
+- Specify account information in the Mobile Broadband Metadata Authoring Wizard
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specify account information in the Mobile Broadband Metadata Authoring Wizard

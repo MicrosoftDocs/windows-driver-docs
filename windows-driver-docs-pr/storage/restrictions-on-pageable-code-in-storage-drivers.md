@@ -3,7 +3,16 @@ title: Restrictions on Pageable Code in Storage Drivers
 author: windows-driver-content
 description: Restrictions on Pageable Code in Storage Drivers
 ms.assetid: 1958f22f-5563-41e9-9c3f-dec8a4ac80c0
-keywords: ["storage drivers WDK , pageable code restrictions", "pageable code restrictions WDK storage", "deadlocks WDK storage", "paging path WDK storage"]
+keywords:
+- storage drivers WDK , pageable code restrictions
+- pageable code restrictions WDK storage
+- deadlocks WDK storage
+- paging path WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Restrictions on Pageable Code in Storage Drivers

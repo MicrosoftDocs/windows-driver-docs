@@ -2,6 +2,11 @@
 title: Know when network connectivity changes
 description: Know when network connectivity changes
 ms.assetid: 2937ba62-16ad-4a81-92e8-62a8bb40d608
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Know when network connectivity changes

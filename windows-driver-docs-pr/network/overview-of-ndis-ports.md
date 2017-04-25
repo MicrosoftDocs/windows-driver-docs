@@ -2,7 +2,14 @@
 title: Overview of NDIS Ports
 description: Overview of NDIS Ports
 ms.assetid: 324f06c9-d482-4acd-a7a6-050721197c89
-keywords: ["ports WDK NDIS , about NDIS ports", "NDIS ports WDK , about NDIS ports"]
+keywords:
+- ports WDK NDIS , about NDIS ports
+- NDIS ports WDK , about NDIS ports
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of NDIS Ports

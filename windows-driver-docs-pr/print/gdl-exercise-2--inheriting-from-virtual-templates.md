@@ -3,7 +3,21 @@ title: GDL Exercise 2 Inheriting from Virtual Templates
 author: windows-driver-content
 description: GDL Exercise 2 Inheriting from Virtual Templates
 ms.assetid: 89878438-bea4-4d6f-bf3b-88d5bef0e6ab
-keywords: ["GDL WDK , examples", "examples WDK GDL", "tutorials WDK GDL", "GDL WDK , tutorials", "schemas WDK GDL , implementing GDL schemas", "templates WDK GDL , inheritance", "templates WDK GDL , examples", "inheritance WDK GDL", "virtual templates WDK GDL"]
+keywords:
+- GDL WDK , examples
+- examples WDK GDL
+- tutorials WDK GDL
+- GDL WDK , tutorials
+- schemas WDK GDL , implementing GDL schemas
+- templates WDK GDL , inheritance
+- templates WDK GDL , examples
+- inheritance WDK GDL
+- virtual templates WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Exercise 2: Inheriting from Virtual Templates

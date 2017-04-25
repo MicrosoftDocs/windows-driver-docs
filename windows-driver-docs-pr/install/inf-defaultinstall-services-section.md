@@ -2,13 +2,19 @@
 title: INF DefaultInstall.Services Section
 description: A DefaultInstall.Services section contains one or more AddService directives referencing additional INF-writer-defined sections in an INF file.
 ms.assetid: 2b066cf9-b6b7-42d0-b147-9b1849ff04db
-keywords: ["INF DefaultInstall.Services Section Device and Driver Installation"]
+keywords:
+- INF DefaultInstall.Services Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DefaultInstall.Services Section
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DefaultInstall.Services Section

@@ -2,7 +2,14 @@
 title: Recognizing Unusable Boot Entry Backup Files
 description: Recognizing Unusable Boot Entry Backup Files
 ms.assetid: ff61c8e9-ad6b-4f3f-9c4b-72c24c27eda6
-keywords: ["NVRAM boot options WDK ,", "EFI NVRAM boot options WDK ,"]
+keywords:
+- NVRAM boot options WDK ,
+- EFI NVRAM boot options WDK ,
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Recognizing Unusable Boot Entry Backup Files

@@ -3,7 +3,23 @@ title: Capturing Still Frames from a USB Camera
 author: windows-driver-content
 description: Capturing Still Frames from a USB Camera
 ms.assetid: 762021ea-753c-4cd2-9eec-1403ee918d4e
-keywords: ["Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library", "Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library", "Kernel Streaming Model WDK , USBCAMD2 minidriver library", "USBCAMD2 minidriver library WDK Windows 2000 Kernel Streaming", "USB-based streaming cameras WDK USBCAMD2", "cameras WDK USBCAMD2", "capturing still frames WDK USBCAMD2", "still frame captures WDK USBCAMD2", "bulk pipe WDK USBCAMD2", "push model WDK USBCAMD2", "pull model WDK USBCAMD2"]
+keywords:
+- Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
+- Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library
+- Kernel Streaming Model WDK , USBCAMD2 minidriver library
+- USBCAMD2 minidriver library WDK Windows 2000 Kernel Streaming
+- USB-based streaming cameras WDK USBCAMD2
+- cameras WDK USBCAMD2
+- capturing still frames WDK USBCAMD2
+- still frame captures WDK USBCAMD2
+- bulk pipe WDK USBCAMD2
+- push model WDK USBCAMD2
+- pull model WDK USBCAMD2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Capturing Still Frames from a USB Camera

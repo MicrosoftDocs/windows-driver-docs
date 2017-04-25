@@ -2,7 +2,22 @@
 title: Flagging Support for DMA Model Nonlocal Display Memory
 description: Flagging Support for DMA Model Nonlocal Display Memory
 ms.assetid: 7310bf92-a1bb-4a72-8e1a-bae7e656a499
-keywords: ["DMA-style AGP WDK DirectDraw", "display memory WDK DirectDraw , DMA-style AGP", "nonlocal display memory WDK DirectDraw , DMA-style AGP", "AGP WDK DirectDraw , DMA-style AGP", "drawing AGP support WDK DirectDraw , DMA-style AGP", "DirectDraw AGP support WDK Windows 2000 display , DMA-style AGP", "memory WDK DirectDraw AGP , DMA-style AGP", "flags WDK DirectDraw nonlocal memory", "DDCAPS2_NONLOCALVIDMEM", "DDCAPS2_NONLOCALVIDMEMCAPS"]
+keywords:
+- DMA-style AGP WDK DirectDraw
+- display memory WDK DirectDraw , DMA-style AGP
+- nonlocal display memory WDK DirectDraw , DMA-style AGP
+- AGP WDK DirectDraw , DMA-style AGP
+- drawing AGP support WDK DirectDraw , DMA-style AGP
+- DirectDraw AGP support WDK Windows 2000 display , DMA-style AGP
+- memory WDK DirectDraw AGP , DMA-style AGP
+- flags WDK DirectDraw nonlocal memory
+- DDCAPS2_NONLOCALVIDMEM
+- DDCAPS2_NONLOCALVIDMEMCAPS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flagging Support for DMA Model Nonlocal Display Memory

@@ -3,6 +3,11 @@ title: How to Locate an Active Directory Domain Controller
 author: windows-driver-content
 description: How to Locate an Active Directory Domain Controller
 ms.assetid: e4570259-63dd-4b8a-9ab9-7846dc057896
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to Locate an Active Directory Domain Controller

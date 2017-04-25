@@ -3,7 +3,16 @@ title: IRP\_MJ\_DIRECTORY\_CONTROL
 author: windows-driver-content
 description: IRP\_MJ\_DIRECTORY\_CONTROL
 ms.assetid: 27c2de1c-5550-4211-97cc-4c66f18d3b99
-keywords: ["IRP_MJ_DIRECTORY_CONTROL", "security WDK file systems , adding security checks", "security checks WDK file systems , IRP_MJ_DIRECTORY_CONTROL", "directory controls WDK file systems"]
+keywords:
+- IRP_MJ_DIRECTORY_CONTROL
+- security WDK file systems , adding security checks
+- security checks WDK file systems , IRP_MJ_DIRECTORY_CONTROL
+- directory controls WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IRP\_MJ\_DIRECTORY\_CONTROL

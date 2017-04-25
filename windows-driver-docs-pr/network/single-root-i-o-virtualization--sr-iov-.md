@@ -2,6 +2,11 @@
 title: Single Root I/O Virtualization (SR-IOV)
 description: Single Root I/O Virtualization (SR-IOV)
 ms.assetid: E64DD4F0-D5F8-4FFF-931B-C04C5C42D000
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Single Root I/O Virtualization (SR-IOV)
@@ -18,6 +23,10 @@ This section includes the following topics:
 [Writing SR-IOV PF Miniport Drivers](writing-sr-iov-pf-miniport-drivers.md)
 
 [Writing SR-IOV VF Miniport Drivers](writing-sr-iov-vf-miniport-drivers.md)
+
+[SR-IOV PF/VF Backchannel Communication](sr-iov-pf-vf-backchannel-communication.md)
+
+[SR-IOV OIDs](sr-iov-oids.md)
 
 For more information on SR-IOV, refer to the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](http://go.microsoft.com/fwlink/p/?linkid=221742) specification.
 

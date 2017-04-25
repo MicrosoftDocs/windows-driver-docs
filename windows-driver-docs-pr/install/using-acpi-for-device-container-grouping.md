@@ -2,6 +2,11 @@
 title: Using ACPI for Device Container Grouping
 description: Using ACPI for Device Container Grouping
 ms.assetid: c49949cd-59e0-4ad2-a067-bc4e048f26c5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using ACPI for Device Container Grouping

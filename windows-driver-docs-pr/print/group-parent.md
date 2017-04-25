@@ -3,7 +3,17 @@ title: Group Parent
 author: windows-driver-content
 description: Group Parent
 ms.assetid: b4c40c15-df16-4af0-81c8-9e70d26ba598
-keywords: ["group parents WDK print", "Common Property Sheet User Interface WDK print , group parents", "CPSUI WDK print , group parents", "property sheet pages WDK print , group parents", "grouping property sheet pages"]
+keywords:
+- group parents WDK print
+- Common Property Sheet User Interface WDK print , group parents
+- CPSUI WDK print , group parents
+- property sheet pages WDK print , group parents
+- grouping property sheet pages
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Group Parent

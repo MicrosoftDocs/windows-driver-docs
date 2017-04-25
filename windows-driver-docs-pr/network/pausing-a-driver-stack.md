@@ -2,7 +2,14 @@
 title: Pausing a Driver Stack
 description: Pausing a Driver Stack
 ms.assetid: 6c6300e9-aea6-4da3-a91a-73db6ba8ff1f
-keywords: ["driver stacks WDK networking , pausing", "pausing driver stacks WDK networking"]
+keywords:
+- driver stacks WDK networking , pausing
+- pausing driver stacks WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pausing a Driver Stack

@@ -2,7 +2,16 @@
 title: Allocating Buffer Pools
 description: Allocating Buffer Pools
 ms.assetid: 9bbf2636-9cfb-40ea-b67c-c4315a3fbc7a
-keywords: ["TCP chimney offload WDK networking , buffer pools", "chimney offload WDK networking , buffer pools", "buffer pools WDK TCP chimney offload", "allocating buffer pools"]
+keywords:
+- TCP chimney offload WDK networking , buffer pools
+- chimney offload WDK networking , buffer pools
+- buffer pools WDK TCP chimney offload
+- allocating buffer pools
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Buffer Pools

@@ -2,6 +2,11 @@
 title: Unlock a device
 description: Unlock a device
 ms.assetid: 4e6ed725-2384-429b-be1e-027b7784e95b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unlock a device

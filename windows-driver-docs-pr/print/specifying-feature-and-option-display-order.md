@@ -3,7 +3,16 @@ title: Specifying Feature and Option Display Order
 author: windows-driver-content
 description: Specifying Feature and Option Display Order
 ms.assetid: 51e18121-540b-40f0-85f8-eb2755a583f7
-keywords: ["Unidrv, feature and option display order", "display order of features/options WDK Unidrv", "property sheet pages WDK print , feature and option display order", "Unidrv WDK print"]
+keywords:
+- Unidrv, feature and option display order
+- display order of features/options WDK Unidrv
+- property sheet pages WDK print , feature and option display order
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Feature and Option Display Order

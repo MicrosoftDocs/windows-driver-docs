@@ -2,7 +2,14 @@
 title: Bob Deinterlacing
 description: Bob Deinterlacing
 ms.assetid: 90add8a2-7182-457d-bcde-f1a2540cc31c
-keywords: ["bob deinterlacing WDK DirectX VA", "deinterlacing WDK DirectX VA , bob"]
+keywords:
+- bob deinterlacing WDK DirectX VA
+- deinterlacing WDK DirectX VA , bob
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bob Deinterlacing

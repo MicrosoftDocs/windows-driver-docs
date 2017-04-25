@@ -3,7 +3,24 @@ title: Providing Support for Asian Layout
 author: windows-driver-content
 description: Providing Support for Asian Layout
 ms.assetid: 38c7dfca-ce30-4967-84a4-e2f40bba8c57
-keywords: ["print processors WDK , Asian languages", "Asian languages WDK print", "booklets WDK print", "N-up printing WDK", "reverse orientation WDK print", "Arabic print support WDK", "Japanese print support WDK", "Urdu print support WDK", "international considerations WDK", "printing Asian languages WDK", "languages WDK print", "right to left reading languages WDk print"]
+keywords:
+- print processors WDK , Asian languages
+- Asian languages WDK print
+- booklets WDK print
+- N-up printing WDK
+- reverse orientation WDK print
+- Arabic print support WDK
+- Japanese print support WDK
+- Urdu print support WDK
+- international considerations WDK
+- printing Asian languages WDK
+- languages WDK print
+- right to left reading languages WDk print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing Support for Asian Layout

@@ -3,7 +3,14 @@ title: Writing Preoperation Callback Routines
 author: windows-driver-content
 description: Writing Preoperation Callback Routines
 ms.assetid: 3f863c44-152e-43c9-8ef5-ec426986a3fe
-keywords: ["preoperation callback routines WDK file system minifilter , writing", "writing callback routines"]
+keywords:
+- preoperation callback routines WDK file system minifilter , writing
+- writing callback routines
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing Preoperation Callback Routines

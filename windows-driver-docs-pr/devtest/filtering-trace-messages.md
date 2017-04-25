@@ -2,7 +2,18 @@
 title: Filtering Trace Messages
 description: Filtering Trace Messages
 ms.assetid: 6e4be7ea-1a3f-4fb2-900d-b857cd635fde
-keywords: ["TraceView WDK , filtering messages", "filtering trace messages WDK", "filtering trace messages, about filtering trace messages", "trace message filters WDK", "trace message filters WDK , about trace message filters", "rules WDK software tracing"]
+keywords:
+- TraceView WDK , filtering messages
+- filtering trace messages WDK
+- filtering trace messages, about filtering trace messages
+- trace message filters WDK
+- trace message filters WDK , about trace message filters
+- rules WDK software tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filtering Trace Messages

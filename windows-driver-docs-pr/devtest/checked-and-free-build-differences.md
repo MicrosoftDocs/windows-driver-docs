@@ -2,7 +2,15 @@
 title: Checked and Free Build Differences
 description: There are two distinct builds of the NT-based operating systems that are available free (retail) and checked (debug). There is a third option, called a partial checked build, that combines the elements of the two.
 ms.assetid: 43aebfdb-2605-485c-a3a4-93e03b33aeca
-keywords: ["checked builds WDK , vs. free builds", "free builds WDK", "retail builds WDK"]
+keywords:
+- checked builds WDK , vs. free builds
+- free builds WDK
+- retail builds WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Checked and Free Build Differences
@@ -10,7 +18,7 @@ keywords: ["checked builds WDK , vs. free builds", "free builds WDK", "retail bu
 
 There are two distinct builds of the NT-based operating systems that are available: free (retail) and checked (debug). There is a third option, *called a partial checked build*, that combines the elements of the two.
 
-- [Differences between the checked and free builds](#differences-between-checked-and-free-builds)
+- [Differences between the checked and free builds](#differences-between-the-checked-and-free-builds)
 - [Where to find a checked build of Windows](#where-to-find-a-checked-build-of-windows)
 - [When to use the checked build or partial checked build](#when-to-use-the-checked-build-or-partial-checked-build)
 
@@ -47,7 +55,7 @@ The partial checked build differs from the free and full checked builds in the f
 ## Where to find a checked build of Windows
 
 
-The downloads and distribution media that contain the checked build are clearly labeled as "Debug/Checked Build." The checked build downloads contain the checked version of the operating system, plus the checked versions of HALs, drivers, file systems, and even many user-mode components. For information about obtaining the checked and partial checked builds, see [Downloading a Checked Build of Windows](obtaining-the-checked-build.md). For convenience, the checked versions of the kernel and HAL are provided in the /debug directory of the Windows Driver Kit (starting with WDK for Windows Vista).
+The downloads and distribution media that contain the checked build are clearly labeled as "Debug/Checked Build." The checked build downloads contain the checked version of the operating system, plus the checked versions of HALs, drivers, file systems, and even many user-mode components. For information about obtaining the checked and partial checked builds, see [Installing the Checked Build](installing-the-checked-build.md). For convenience, the checked versions of the kernel and HAL are provided in the /debug directory of the Windows Driver Kit (starting with WDK for Windows Vista).
 
 ## When to use the checked build or partial checked build
 

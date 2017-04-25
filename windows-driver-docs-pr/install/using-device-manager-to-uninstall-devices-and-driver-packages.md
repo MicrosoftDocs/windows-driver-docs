@@ -2,6 +2,11 @@
 title: Using Device Manager to Uninstall Devices and Driver Packages
 description: Using Device Manager to Uninstall Devices and Driver Packages
 ms.assetid: 6e798b87-a35d-414a-8116-ee1523c782ae
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Device Manager to Uninstall Devices and Driver Packages

@@ -3,7 +3,18 @@ title: Using the Framework's Event Logger
 author: windows-driver-content
 description: Using the Framework's Event Logger
 ms.assetid: aa0a83c8-cd13-41d0-a619-d8793b2e2e80
-keywords: ["debugging drivers WDK KMDF , event loggers", "event loggers WDK KMDF", "In-flight Recorder WDK KMDF", "IFR WDK KMDF", "events WDK KMDF , logging", "errors WDK KMDF"]
+keywords:
+- debugging drivers WDK KMDF , event loggers
+- event loggers WDK KMDF
+- In-flight Recorder WDK KMDF
+- IFR WDK KMDF
+- events WDK KMDF , logging
+- errors WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Framework's Event Logger

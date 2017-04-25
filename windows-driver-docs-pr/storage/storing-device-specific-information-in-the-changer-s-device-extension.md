@@ -3,7 +3,15 @@ title: Storing Device-Specific Information in the Changer's Device Extension
 author: windows-driver-content
 description: Storing Device-Specific Information in the Changer's Device Extension
 ms.assetid: 72048d84-1c2d-4f3c-b5e8-f55a812ad567
-keywords: ["changer drivers WDK storage , device-specific data storage", "storage changer drivers WDK , device-specific data storage", "device-specific data storage WDK changer"]
+keywords:
+- changer drivers WDK storage , device-specific data storage
+- storage changer drivers WDK , device-specific data storage
+- device-specific data storage WDK changer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storing Device-Specific Information in the Changer's Device Extension

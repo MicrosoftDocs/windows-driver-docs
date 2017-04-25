@@ -3,7 +3,13 @@ title: Obtaining Information about a Parallel Device
 author: windows-driver-content
 description: Obtaining Information about a Parallel Device
 ms.assetid: a891718a-9e2c-4823-a0b9-5cbe770c3f85
-keywords: ["parallel devices WDK , obtaining information"]
+keywords:
+- parallel devices WDK , obtaining information
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining Information about a Parallel Device

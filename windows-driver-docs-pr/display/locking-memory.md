@@ -2,7 +2,15 @@
 title: Locking Memory
 description: Locking Memory
 ms.assetid: bf14e0f7-13cc-4e55-bbb1-a6b6f6b6271f
-keywords: ["locking memory WDK display", "GPU stall prevention WDK display", "memory locking WDK display"]
+keywords:
+- locking memory WDK display
+- GPU stall prevention WDK display
+- memory locking WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Locking Memory

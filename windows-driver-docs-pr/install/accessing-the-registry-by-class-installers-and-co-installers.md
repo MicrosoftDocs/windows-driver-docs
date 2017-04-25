@@ -2,7 +2,13 @@
 title: Accessing the Registry by Class Installers and Co-installers
 description: Accessing the Registry by Class Installers and Co-installers
 ms.assetid: 40034E3C-4248-4783-A9D8-3E968F7A7F79
-keywords: ["registry WDK device installations , accessing"]
+keywords:
+- registry WDK device installations , accessing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing the Registry by Class Installers and Co-installers

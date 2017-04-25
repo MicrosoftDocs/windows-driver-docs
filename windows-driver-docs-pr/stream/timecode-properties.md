@@ -3,7 +3,15 @@ title: Timecode Properties
 author: windows-driver-content
 description: Timecode Properties
 ms.assetid: e8359778-8cc6-4f19-b869-f9597dae0502
-keywords: ["timecode properties WDK video capture", "PROPSETID_TIMECODE_READER", "tape timecode properties WDK video capture"]
+keywords:
+- timecode properties WDK video capture
+- PROPSETID_TIMECODE_READER
+- tape timecode properties WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Timecode Properties

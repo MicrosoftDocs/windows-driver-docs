@@ -2,7 +2,20 @@
 title: Surface Types
 description: Surface Types
 ms.assetid: 7374b783-ef09-4238-a17a-fafcd9d87b3f
-keywords: ["DIB WDK GDI", "device-managed surfaces WDK GDI", "engine-managed surfaces WDK GDI", "surface negotiation WDK GDI , surface types", "surface types WDK GDI", "device-dependent bitmaps WDK GDI", "DDB WDK GDI", "device-independent bitmaps WDK GDI"]
+keywords:
+- DIB WDK GDI
+- device-managed surfaces WDK GDI
+- engine-managed surfaces WDK GDI
+- surface negotiation WDK GDI , surface types
+- surface types WDK GDI
+- device-dependent bitmaps WDK GDI
+- DDB WDK GDI
+- device-independent bitmaps WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Surface Types

@@ -2,7 +2,15 @@
 title: Static Driver Verifier Reference
 description: Static Driver Verifier Reference
 ms.assetid: 94cdf0b8-d3e0-4720-a003-73e63367c38a
-keywords: ["Static Driver Verifier WDK , reference", "StaticDV WDK , reference", "SDV WDK , reference"]
+keywords:
+- Static Driver Verifier WDK , reference
+- StaticDV WDK , reference
+- SDV WDK , reference
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier Reference

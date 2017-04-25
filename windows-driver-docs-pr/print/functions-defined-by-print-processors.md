@@ -3,7 +3,14 @@ title: Functions Defined by Print Processors
 author: windows-driver-content
 description: Functions Defined by Print Processors
 ms.assetid: ada376f0-515e-4995-b612-4da9523b6fcf
-keywords: ["print processors WDK , functions", "functions WDK print"]
+keywords:
+- print processors WDK , functions
+- functions WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functions Defined by Print Processors

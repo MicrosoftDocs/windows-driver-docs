@@ -2,6 +2,11 @@
 title: Errors and Solutions When Submitting Device Metadata Experiences
 description: Errors and Solutions When Submitting Device Metadata Experiences
 ms.assetid: 793b4c92-96e8-4b3e-a7de-d00e953c983a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Errors and Solutions When Submitting Device Metadata Experiences

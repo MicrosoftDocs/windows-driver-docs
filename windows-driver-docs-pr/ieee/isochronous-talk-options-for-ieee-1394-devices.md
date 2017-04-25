@@ -3,7 +3,19 @@ title: Isochronous Talk Options for IEEE 1394 Devices
 author: windows-driver-content
 description: Isochronous Talk Options for IEEE 1394 Devices
 ms.assetid: b3df5dd5-9903-48b4-9cb2-17b8d3a08f8f
-keywords: ["isochronous I/O WDK IEEE 1394 bus , talk options", "talk options WDK IEEE 1394 bus", "headers WDK IEEE 1394 bus", "fixed-size data packets WDK IEEE 1394 bus", "variable-size data packets WDK IEEE 1394 bus", "header elements WDK IEEE 1394 bus", "buffers WDK IEEE 1394 bus"]
+keywords:
+- isochronous I/O WDK IEEE 1394 bus , talk options
+- talk options WDK IEEE 1394 bus
+- headers WDK IEEE 1394 bus
+- fixed-size data packets WDK IEEE 1394 bus
+- variable-size data packets WDK IEEE 1394 bus
+- header elements WDK IEEE 1394 bus
+- buffers WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Isochronous Talk Options for IEEE 1394 Devices

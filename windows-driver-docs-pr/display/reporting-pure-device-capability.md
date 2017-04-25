@@ -2,7 +2,14 @@
 title: Reporting Pure Device Capability
 description: Reporting Pure Device Capability
 ms.assetid: 6bf97e93-2ebf-400f-8321-08268c21f89f
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , pure devices, reporting capability", "pure devices WDK DirectX 8.0 , reporting capability"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , pure devices, reporting capability
+- pure devices WDK DirectX 8.0 , reporting capability
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Pure Device Capability

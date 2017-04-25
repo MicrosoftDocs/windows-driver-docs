@@ -2,6 +2,11 @@
 title: Reporting Graphics Memory
 description: Reporting Graphics Memory
 ms.assetid: a8a3dc08-1863-47ac-b41e-58ef38739c42
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Graphics Memory

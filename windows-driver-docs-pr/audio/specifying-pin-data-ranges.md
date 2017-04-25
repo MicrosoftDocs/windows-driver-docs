@@ -2,7 +2,19 @@
 title: Specifying Pin Data Ranges
 description: Specifying Pin Data Ranges
 ms.assetid: bef74cd1-d2be-402d-be7f-acc7d8cbf392
-keywords: ["pins WDK audio , data ranges", "WDM audio drivers WDK , pin data ranges", "audio drivers WDK , pin data ranges", "data ranges WDK audio , pins", "configurable pins WDK audio drivers", "formats WDK audio , pin data ranges", "intersections WDK audio drivers"]
+keywords:
+- pins WDK audio , data ranges
+- WDM audio drivers WDK , pin data ranges
+- audio drivers WDK , pin data ranges
+- data ranges WDK audio , pins
+- configurable pins WDK audio drivers
+- formats WDK audio , pin data ranges
+- intersections WDK audio drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Pin Data Ranges

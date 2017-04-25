@@ -2,6 +2,11 @@
 title: Using MakeCat to Create a Catalog File
 description: Using MakeCat to Create a Catalog File
 ms.assetid: c9f9360b-2b1d-4060-af4d-8d281319e181
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using MakeCat to Create a Catalog File

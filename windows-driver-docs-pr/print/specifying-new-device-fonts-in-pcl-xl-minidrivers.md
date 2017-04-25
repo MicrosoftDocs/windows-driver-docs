@@ -3,7 +3,15 @@ title: Specifying New Device Fonts in PCL XL Minidrivers
 author: windows-driver-content
 description: Specifying New Device Fonts in PCL XL Minidrivers
 ms.assetid: 395b9200-4514-4b05-b417-15d4896914f4
-keywords: ["PCL XL vector graphics WDK Unidrv , device fonts", "device fonts WDK PCL XL", "fonts WDK PCL XL"]
+keywords:
+- PCL XL vector graphics WDK Unidrv , device fonts
+- device fonts WDK PCL XL
+- fonts WDK PCL XL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying New Device Fonts in PCL XL Minidrivers

@@ -2,7 +2,18 @@
 title: Styled Cosmetic Lines
 description: Styled Cosmetic Lines
 ms.assetid: 07e72190-7c8e-471e-9851-ccc037312c5c
-keywords: ["lines WDK GDI , styled cosmetic", "GDI WDK Windows 2000 display , lines, styled cosmetic", "graphics drivers WDK Windows 2000 display , lines, styled cosmetic", "drawing WDK GDI , lines, styled cosmetic", "styled cosmetic lines WDK GDI", "cosmetic lines WDK GDI , styled"]
+keywords:
+- lines WDK GDI , styled cosmetic
+- GDI WDK Windows 2000 display , lines, styled cosmetic
+- graphics drivers WDK Windows 2000 display , lines, styled cosmetic
+- drawing WDK GDI , lines, styled cosmetic
+- styled cosmetic lines WDK GDI
+- cosmetic lines WDK GDI , styled
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Styled Cosmetic Lines

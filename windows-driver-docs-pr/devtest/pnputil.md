@@ -2,6 +2,11 @@
 title: PnPUtil
 description: PnPUtil
 ms.assetid: 3678fd41-c3ee-4538-b783-6f099ac104a6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PnPUtil

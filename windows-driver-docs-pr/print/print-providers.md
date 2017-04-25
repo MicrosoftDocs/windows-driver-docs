@@ -3,7 +3,15 @@ title: Print Providers
 author: windows-driver-content
 description: Print Providers
 ms.assetid: dfc951fc-602f-49c2-a91b-0cd979587a9a
-keywords: ["print providers WDK", "spooler print providers WDK print", "providers WDK print"]
+keywords:
+- print providers WDK
+- spooler print providers WDK print
+- providers WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Providers

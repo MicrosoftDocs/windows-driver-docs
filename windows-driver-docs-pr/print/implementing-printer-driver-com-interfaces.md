@@ -3,7 +3,16 @@ title: Implementing Printer Driver COM Interfaces
 author: windows-driver-content
 description: Implementing Printer Driver COM Interfaces
 ms.assetid: 39f873e9-7f72-420c-b6d6-dce31840aa16
-keywords: ["printer driver customizing WDK , COM interfaces", "customizing printer drivers WDK , COM interfaces", "COM interfaces WDK print", "plug-ins WDK print"]
+keywords:
+- printer driver customizing WDK , COM interfaces
+- customizing printer drivers WDK , COM interfaces
+- COM interfaces WDK print
+- plug-ins WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing Printer Driver COM Interfaces

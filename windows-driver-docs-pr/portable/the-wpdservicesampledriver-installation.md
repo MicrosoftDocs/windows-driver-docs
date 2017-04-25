@@ -1,6 +1,11 @@
 ---
 Description: Installing the WpdServiceSampleDriver Sample
 title: Installing the WpdServiceSampleDriver Sample
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing the WpdServiceSampleDriver Sample

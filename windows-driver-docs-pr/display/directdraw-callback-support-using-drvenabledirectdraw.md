@@ -2,7 +2,16 @@
 title: DirectDraw Callback Support Using DrvEnableDirectDraw
 description: DirectDraw Callback Support Using DrvEnableDirectDraw
 ms.assetid: 74caab2b-6976-411a-97af-7c94b0c12fa0
-keywords: ["DirectDraw driver initialization WDK Windows 2000 display , Windows 2000", "callback functions WDK DirectDraw", "DrvEnableDirectDraw", "DirectDraw driver initialization WDK Windows 2000 display , callback functions"]
+keywords:
+- DirectDraw driver initialization WDK Windows 2000 display , Windows 2000
+- callback functions WDK DirectDraw
+- DrvEnableDirectDraw
+- DirectDraw driver initialization WDK Windows 2000 display , callback functions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectDraw Callback Support Using DrvEnableDirectDraw

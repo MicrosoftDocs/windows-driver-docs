@@ -2,7 +2,15 @@
 title: Trace Message Prefix
 description: Trace Message Prefix
 ms.assetid: ab400174-cc2a-4cb8-9b7b-390af6464a2e
-keywords: ["Tracefmt WDK , trace message prefix", "prefix WDK Tracefmt", "trace message prefix WDK Tracefmt"]
+keywords:
+- Tracefmt WDK , trace message prefix
+- prefix WDK Tracefmt
+- trace message prefix WDK Tracefmt
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Message Prefix

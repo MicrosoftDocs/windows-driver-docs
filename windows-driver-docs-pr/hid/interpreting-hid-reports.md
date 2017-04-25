@@ -3,7 +3,14 @@ title: Interpreting HID Reports
 author: windows-driver-content
 description: Interpreting HID Reports
 ms.assetid: 10f8c3a1-ad60-4c99-a425-fa8c9a3be0e1
-keywords: ["HID reports WDK , interpreting", "reports WDK HID , interpreting"]
+keywords:
+- HID reports WDK , interpreting
+- reports WDK HID , interpreting
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interpreting HID Reports

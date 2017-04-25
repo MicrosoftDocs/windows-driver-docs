@@ -2,6 +2,11 @@
 title: Customizing Software Tracing
 description: Customizing Software Tracing
 ms.assetid: ae547a51-b8a5-4e61-8da4-24aa247a360d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customizing Software Tracing

@@ -3,7 +3,17 @@ title: Adding Bidirectional Communication
 author: windows-driver-content
 description: Adding Bidirectional Communication
 ms.assetid: 30767eda-e456-4928-afac-40edd2ab48fc
-keywords: ["print spooler customizing WDK , bidirectional communication", "spooler customizing WDK print , bidirectional communication", "customizing print spooler components WDK , bidirectional communication", "bidirectional communication WDK print", "bidi communication WDK print"]
+keywords:
+- print spooler customizing WDK , bidirectional communication
+- spooler customizing WDK print , bidirectional communication
+- customizing print spooler components WDK , bidirectional communication
+- bidirectional communication WDK print
+- bidi communication WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Bidirectional Communication

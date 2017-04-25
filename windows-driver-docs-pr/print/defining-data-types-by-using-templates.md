@@ -3,7 +3,16 @@ title: Defining Data Types by Using Templates
 author: windows-driver-content
 description: Defining Data Types by Using Templates
 ms.assetid: 9768f0da-b6cb-4f92-9ab4-2c95fedcb44c
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , defining data types by using templates", "defining data types WDK GDL", "data type template WDK GDL"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , defining data types by using templates
+- defining data types WDK GDL
+- data type template WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 #  Defining Data Types by Using Templates

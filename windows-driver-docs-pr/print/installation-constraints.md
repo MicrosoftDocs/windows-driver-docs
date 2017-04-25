@@ -3,7 +3,13 @@ title: Installation Constraints
 author: windows-driver-content
 description: Installation Constraints
 ms.assetid: 0adf5a6a-e9de-4bb0-bf1c-fe7eef565840
-keywords: ["installation constraints WDK Unidrv"]
+keywords:
+- installation constraints WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installation Constraints

@@ -2,7 +2,13 @@
 title: Callout
 description: Callout
 ms.assetid: 770915ea-9739-4bc7-8305-de770ce36da5
-keywords: ["callouts WDK Windows Filtering Platform"]
+keywords:
+- callouts WDK Windows Filtering Platform
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Callout

@@ -2,7 +2,14 @@
 title: Querying for the Display of a Custom UI
 description: Querying for the Display of a Custom UI
 ms.assetid: 89f39281-db97-4cbe-8753-43ab30d840c8
-keywords: ["custom UI WDK Native 802.11 IHV UI Extensions DLL , querying", "querying custom UI display"]
+keywords:
+- custom UI WDK Native 802.11 IHV UI Extensions DLL , querying
+- querying custom UI display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying for the Display of a Custom UI

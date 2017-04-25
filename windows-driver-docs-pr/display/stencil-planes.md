@@ -2,7 +2,20 @@
 title: Stencil Planes
 description: Stencil Planes
 ms.assetid: a2abe78b-7755-45fc-ba02-f2809db5da3e
-keywords: ["Direct3D WDK Windows 2000 display , stencil planes", "stencil planes WDK Direct3D", "per-pixel drawing WDK Direct3D", "special effects WDK Direct3D", "geometry rendering WDK Direct3D", "outlining WDK Direct3D", "shadowing WDK Direct3D", "decals WDK Direct3D"]
+keywords:
+- Direct3D WDK Windows 2000 display , stencil planes
+- stencil planes WDK Direct3D
+- per-pixel drawing WDK Direct3D
+- special effects WDK Direct3D
+- geometry rendering WDK Direct3D
+- outlining WDK Direct3D
+- shadowing WDK Direct3D
+- decals WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stencil Planes

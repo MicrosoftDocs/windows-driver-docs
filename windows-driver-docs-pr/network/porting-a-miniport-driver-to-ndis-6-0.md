@@ -2,7 +2,18 @@
 title: Porting a Miniport Driver to NDIS 6.0
 description: Porting a Miniport Driver to NDIS 6.0
 ms.assetid: 1e4eea3a-dabe-4d4f-b65f-d9b968c4c58a
-keywords: ["miniport drivers WDK networking , porting", "NDIS miniport drivers WDK , porting", "NDIS porting drivers WDK , miniport drivers", "porting drivers WDK networking , miniport drivers", "network driver porting WDK , miniport drivers", "porting miniport drivers WD"]
+keywords:
+- miniport drivers WDK networking , porting
+- NDIS miniport drivers WDK , porting
+- NDIS porting drivers WDK , miniport drivers
+- porting drivers WDK networking , miniport drivers
+- network driver porting WDK , miniport drivers
+- porting miniport drivers WD
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting a Miniport Driver to NDIS 6.0

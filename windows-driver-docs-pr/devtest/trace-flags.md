@@ -2,7 +2,14 @@
 title: Trace Flags
 description: Trace Flags
 ms.assetid: a94159ab-ce21-4604-beb8-ee01e333505e
-keywords: ["trace flags WDK", "flags WDK software tracing"]
+keywords:
+- trace flags WDK
+- flags WDK software tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Flags

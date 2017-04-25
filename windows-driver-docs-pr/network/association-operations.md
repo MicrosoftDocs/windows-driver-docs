@@ -2,7 +2,14 @@
 title: Association Operations
 description: Association Operations
 ms.assetid: 04e97ea1-fe4b-471e-a7be-b5aa3ee88edc
-keywords: ["network operations WDK Native 802.11 , association operations", "association operations WDK Native 802.11"]
+keywords:
+- network operations WDK Native 802.11 , association operations
+- association operations WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Association Operations

@@ -3,7 +3,18 @@ title: Supporting Multifunction PC Card Devices
 author: windows-driver-content
 description: Supporting Multifunction PC Card Devices
 ms.assetid: 4da3b99c-0731-41b5-9f67-29c7e181342f
-keywords: ["multifunction devices WDK , PC Card", "PC Card multifunction standard WDK", "resource maps WDK multifunction devices", "16-bit PC Card multifunction devices WDK", "configuration registers WDK multifunction devices", "registers WDK multifunction devices"]
+keywords:
+- multifunction devices WDK , PC Card
+- PC Card multifunction standard WDK
+- resource maps WDK multifunction devices
+- 16-bit PC Card multifunction devices WDK
+- configuration registers WDK multifunction devices
+- registers WDK multifunction devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Multifunction PC Card Devices

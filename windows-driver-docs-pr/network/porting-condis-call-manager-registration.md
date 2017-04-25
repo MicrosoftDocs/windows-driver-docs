@@ -2,7 +2,18 @@
 title: Porting CoNDIS Call Manager Registration
 description: Porting CoNDIS Call Manager Registration
 ms.assetid: 5e88b0d7-e0e0-4d64-87d8-51439366effc
-keywords: ["registering CoNDIS drivers", "entry points WDK networking", "registration porting WDK CoNDIS", "porting CoNDIS drivers WDK networking , registration", "call managers WDK networking , registering", "CoNDIS call managers WDK networking"]
+keywords:
+- registering CoNDIS drivers
+- entry points WDK networking
+- registration porting WDK CoNDIS
+- porting CoNDIS drivers WDK networking , registration
+- call managers WDK networking , registering
+- CoNDIS call managers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting CoNDIS Call Manager Registration

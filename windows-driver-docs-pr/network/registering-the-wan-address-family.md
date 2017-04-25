@@ -2,7 +2,18 @@
 title: Registering the WAN Address Family
 description: Registering the WAN Address Family
 ms.assetid: 31443e99-24d8-4276-8345-004b0eeb05d7
-keywords: ["CoNDIS WAN drivers WDK networking , TAPI address family", "NdisCmRegisterAddressFamilyEx", "TAPI WDK networking", "registering WAN address family", "WAN address family WDK networking", "address families WDK networking"]
+keywords:
+- CoNDIS WAN drivers WDK networking , TAPI address family
+- NdisCmRegisterAddressFamilyEx
+- TAPI WDK networking
+- registering WAN address family
+- WAN address family WDK networking
+- address families WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering the WAN Address Family

@@ -2,6 +2,11 @@
 title: Code Integrity Event Logging and System Auditing
 description: Code Integrity Event Logging and System Auditing
 ms.assetid: d33cfce3-b096-4674-a2b1-6c55cbf63ca3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Integrity Event Logging and System Auditing

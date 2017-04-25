@@ -3,6 +3,11 @@ title: Windows 98 Core Components
 author: windows-driver-content
 description: Windows 98 Core Components
 ms.assetid: 59e2c077-c6f5-4965-891b-4601623ca47b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows 98 Core Components

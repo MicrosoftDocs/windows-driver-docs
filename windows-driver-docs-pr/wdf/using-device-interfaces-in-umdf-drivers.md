@@ -3,7 +3,16 @@ title: Using Device Interfaces in UMDF Drivers
 author: windows-driver-content
 description: Using Device Interfaces in UMDF Drivers
 ms.assetid: acb6da80-bd04-48f0-b42a-96463f091b0a
-keywords: ["user-mode drivers WDK UMDF , device interfaces", "UMDF WDK , device interfaces", "User-Mode Driver Framework WDK , device interfaces", "device interfaces WDK UMDF"]
+keywords:
+- user-mode drivers WDK UMDF , device interfaces
+- UMDF WDK , device interfaces
+- User-Mode Driver Framework WDK , device interfaces
+- device interfaces WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Device Interfaces in UMDF Drivers

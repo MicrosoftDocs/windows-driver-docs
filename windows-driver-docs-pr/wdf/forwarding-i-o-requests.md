@@ -3,7 +3,15 @@ title: Forwarding I/O Requests
 author: windows-driver-content
 description: Forwarding I/O Requests
 ms.assetid: 75e007e3-1b97-44db-ac86-56aab78222a6
-keywords: ["forwarding I/O requests WDK KMDF", "I/O requests WDK KMDF , forwarding", "request processing WDK KMDF , forwarding I/O requests"]
+keywords:
+- forwarding I/O requests WDK KMDF
+- I/O requests WDK KMDF , forwarding
+- request processing WDK KMDF , forwarding I/O requests
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Forwarding I/O Requests

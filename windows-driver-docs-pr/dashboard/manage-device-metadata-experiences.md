@@ -2,6 +2,11 @@
 title: Manage Device Metadata Experiences
 description: Manage Device Metadata Experiences
 ms.assetid: aede9597-4b67-4c1a-8ae4-924d39c88b53
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manage Device Metadata Experiences

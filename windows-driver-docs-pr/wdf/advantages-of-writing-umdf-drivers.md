@@ -3,7 +3,15 @@ title: Advantages of Writing UMDF Drivers
 author: windows-driver-content
 description: This topic describes the advantages of writing a User-Mode Driver Framework (UMDF) driver instead of a kernel-mode driver.
 ms.assetid: 28db2121-a5d4-4375-8081-52709416efb0
-keywords: ["User-Mode Driver Framework WDK , advantages", "UMDF WDK , advantages", "user-mode drivers WDK UMDF , advantages"]
+keywords:
+- User-Mode Driver Framework WDK , advantages
+- UMDF WDK , advantages
+- user-mode drivers WDK UMDF , advantages
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Advantages of Writing UMDF Drivers

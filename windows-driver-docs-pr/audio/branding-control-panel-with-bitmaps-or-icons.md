@@ -2,7 +2,23 @@
 title: Branding Control Panel with Bitmaps or Icons
 description: Branding Control Panel with Bitmaps or Icons
 ms.assetid: 1520cf9e-6813-41aa-aa88-39a1a6c27f74
-keywords: ["audio adapters WDK , control-panel branding", "adapter drivers WDK audio , control-panel branding", "Port Class audio adapters WDK , control-panel branding", "control-panel branding WDK audio", "branding device controls WDK audio", "thrid-party branding WDK audio", "vendor branding WDK audio", "logo branding WDK audio", "icons WDK audio", "bitmap branding WDK audio", "image branding WDK audio"]
+keywords:
+- audio adapters WDK , control-panel branding
+- adapter drivers WDK audio , control-panel branding
+- Port Class audio adapters WDK , control-panel branding
+- control-panel branding WDK audio
+- branding device controls WDK audio
+- thrid-party branding WDK audio
+- vendor branding WDK audio
+- logo branding WDK audio
+- icons WDK audio
+- bitmap branding WDK audio
+- image branding WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Branding Control Panel with Bitmaps or Icons

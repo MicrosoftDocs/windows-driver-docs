@@ -3,7 +3,14 @@ title: Accessing Plug-In Interfaces from Printer Drivers
 author: windows-driver-content
 description: Accessing Plug-In Interfaces from Printer Drivers
 ms.assetid: 639734c9-1aac-428c-bd5b-803607f1cf66
-keywords: ["COM interfaces WDK print , accessing plug-in interfaces", "plug-ins WDK print , accessing interfaces"]
+keywords:
+- COM interfaces WDK print , accessing plug-in interfaces
+- plug-ins WDK print , accessing interfaces
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accessing Plug-In Interfaces from Printer Drivers

@@ -1,6 +1,11 @@
 ---
 Description: Defining the Service Properties
 title: Defining the Service Properties
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining the Service Properties

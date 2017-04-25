@@ -2,7 +2,18 @@
 title: Responding to an OID\_CO\_TAPI\_LINE\_CAPS Query
 description: Responding to an OID\_CO\_TAPI\_LINE\_CAPS Query
 ms.assetid: b1ca65c6-ecce-4d2c-b7ca-03b6a334f97b
-keywords: ["voice streaming WDK networking , support specification", "OID_CO_TAPI_LINE_CAPS", "ulMediaModes", "ulAddressTypes", "UlGenerateDigitModes", "UlMonitorDigitModes"]
+keywords:
+- voice streaming WDK networking , support specification
+- OID_CO_TAPI_LINE_CAPS
+- ulMediaModes
+- ulAddressTypes
+- UlGenerateDigitModes
+- UlMonitorDigitModes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Responding to an OID\_CO\_TAPI\_LINE\_CAPS Query

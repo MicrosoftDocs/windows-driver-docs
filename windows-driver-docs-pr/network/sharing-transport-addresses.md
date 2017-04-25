@@ -2,7 +2,16 @@
 title: Sharing Transport Addresses
 description: Sharing Transport Addresses
 ms.assetid: 1f5bc91a-75eb-466c-ad7d-cfbe0e83dc17
-keywords: ["sharing transport addresses", "binding sockets WDK Winsock Kernel", "local transport address bindings WDK Winsock Kernel", "transport addresses WDK Winsock Kernel"]
+keywords:
+- sharing transport addresses
+- binding sockets WDK Winsock Kernel
+- local transport address bindings WDK Winsock Kernel
+- transport addresses WDK Winsock Kernel
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sharing Transport Addresses

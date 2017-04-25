@@ -2,7 +2,16 @@
 title: DVD 16 9 Letterbox Height in 4 3 Example
 description: DVD 16 9 Letterbox Height in 4 3 Example
 ms.assetid: 67e5e50e-5102-4392-9430-feddc9609f2e
-keywords: ["alpha-blend combination WDK DirectX VA , DVD 16 9 letterbox height example", "blended pictures WDK DirectX VA , DVD 16 9 letterbox height example", "DVD 16 9 letterbox height example WDK DirectX VA", "16 9 letterbox height example WDK DirectX VA"]
+keywords:
+- alpha-blend combination WDK DirectX VA , DVD 16 9 letterbox height example
+- blended pictures WDK DirectX VA , DVD 16 9 letterbox height example
+- DVD 16 9 letterbox height example WDK DirectX VA
+- 16 9 letterbox height example WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DVD 16:9 Letterbox Height in 4:3 Example

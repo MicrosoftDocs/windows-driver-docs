@@ -2,7 +2,21 @@
 title: Driver Support for Legacy Audio Interfaces
 description: Driver Support for Legacy Audio Interfaces
 ms.assetid: c1b81c58-de05-45e7-94ab-5d174d51dfd6
-keywords: ["WDM audio drivers WDK , legacy interfaces", "audio drivers WDK , legacy interfaces", "legacy audio interfaces WDK audio", "interfaces WDK audio", "audio miniport drivers WDK , legacy interfaces", "miniport drivers WDK audio , legacy interfaces", "Windows multimedia support WDK audio", "multimedia WDK audio", "miniport interfaces WDK audio"]
+keywords:
+- WDM audio drivers WDK , legacy interfaces
+- audio drivers WDK , legacy interfaces
+- legacy audio interfaces WDK audio
+- interfaces WDK audio
+- audio miniport drivers WDK , legacy interfaces
+- miniport drivers WDK audio , legacy interfaces
+- Windows multimedia support WDK audio
+- multimedia WDK audio
+- miniport interfaces WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Support for Legacy Audio Interfaces

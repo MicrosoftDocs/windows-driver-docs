@@ -3,6 +3,11 @@ title: Porting from ScsiPort to StorPort
 author: windows-driver-content
 description: Porting from ScsiPort to StorPort
 ms.assetid: 2a14051d-dc23-4420-a3e5-0827b16b1e42
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting from ScsiPort to StorPort

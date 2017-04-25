@@ -3,7 +3,16 @@ title: XPS Driver Document Events
 author: windows-driver-content
 description: XPS Driver Document Events
 ms.assetid: 240e14d1-d8ee-403c-b728-b14941775634
-keywords: ["Version 3 XPS drivers WDK XPSDrv , events", "events WDK XPSDrv", "notifications WDK XPSDrv", "DrvDocumentEvent"]
+keywords:
+- Version 3 XPS drivers WDK XPSDrv , events
+- events WDK XPSDrv
+- notifications WDK XPSDrv
+- DrvDocumentEvent
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPS Driver Document Events

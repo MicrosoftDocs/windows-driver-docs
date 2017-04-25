@@ -2,7 +2,14 @@
 title: Surface Coordinates
 description: Surface Coordinates
 ms.assetid: 1f59f135-530a-475a-92b6-f3995aa0c1bb
-keywords: ["surface negotiation WDK GDI , surface coordinates", "surface coordinates WDK GDI"]
+keywords:
+- surface negotiation WDK GDI , surface coordinates
+- surface coordinates WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Surface Coordinates

@@ -2,7 +2,17 @@
 title: TCP/IP Task Offload
 description: TCP/IP Task Offload
 ms.assetid: e73cc4e8-574b-438b-acd2-f0aaf5c20589
-keywords: ["TCP/IP offload WDK networking , task offload", "offload WDK TCP/IP transport , task offload", "task offload WDK TCP/IP transport", "task offload WDK TCP/IP transport , about task offload", "capabilities WDK TCP/IP offload"]
+keywords:
+- TCP/IP offload WDK networking , task offload
+- offload WDK TCP/IP transport , task offload
+- task offload WDK TCP/IP transport
+- task offload WDK TCP/IP transport , about task offload
+- capabilities WDK TCP/IP offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCP/IP Task Offload

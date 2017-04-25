@@ -2,7 +2,14 @@
 title: C28123
 description: Warning C28123 The function is not permitted to be called at a high IRQ level. Prior function calls are inconsistent with this constraint.
 ms.assetid: 6b40a485-f4f7-4c68-8575-960faa8cb87b
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28123

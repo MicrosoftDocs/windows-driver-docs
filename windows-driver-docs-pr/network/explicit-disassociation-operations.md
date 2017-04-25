@@ -2,7 +2,14 @@
 title: Explicit Disassociation Operations
 description: Explicit Disassociation Operations
 ms.assetid: 006946b6-39ee-4e71-9d4e-72ef64e74e86
-keywords: ["disassociation operations WDK Native 802.11", "explicit disassociation operations WDK Native 802.11"]
+keywords:
+- disassociation operations WDK Native 802.11
+- explicit disassociation operations WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Explicit Disassociation Operations

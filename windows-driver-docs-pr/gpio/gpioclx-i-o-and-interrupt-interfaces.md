@@ -3,6 +3,11 @@ title: GpioClx I/O and Interrupt Interfaces
 author: windows-driver-content
 description: Typically, the clients of a GPIO controller are drivers for peripheral devices that connect to GPIO pins.
 ms.assetid: F75E9B21-9DA4-4DD9-BB44-59E19EDFC099
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GpioClx I/O and Interrupt Interfaces

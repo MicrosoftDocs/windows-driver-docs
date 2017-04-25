@@ -2,7 +2,20 @@
 title: How KMixer Handles Set-Format Requests
 description: How KMixer Handles Set-Format Requests
 ms.assetid: cf1c5434-db0d-48c6-9bcb-b242e68fab86
-keywords: ["KMixer system driver WDK audio , set-format requests", "format negotiations WDK audio", "set-format requests WDK audio", "SRC WDK audio , set-format requests", "sample-rate conversion WDK audio , set-format requests", "sample-rate changes WDK audio", "requesting sample-rate changes WDK audio", "downstream filter format negotiations WDK audio"]
+keywords:
+- KMixer system driver WDK audio , set-format requests
+- format negotiations WDK audio
+- set-format requests WDK audio
+- SRC WDK audio , set-format requests
+- sample-rate conversion WDK audio , set-format requests
+- sample-rate changes WDK audio
+- requesting sample-rate changes WDK audio
+- downstream filter format negotiations WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How KMixer Handles Set-Format Requests

@@ -3,6 +3,11 @@ title: Windows Hardware Error Architecture Overview
 author: windows-driver-content
 description: Windows Hardware Error Architecture Overview
 ms.assetid: 859caa70-371c-4191-baf9-52a38411164a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Hardware Error Architecture Overview

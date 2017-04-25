@@ -2,13 +2,19 @@
 title: INF DefaultInstall Section
 description: An INF file's DefaultInstall section is accessed if a user selects the \ 0034;Install \ 0034; menu item after right-clicking on the INF file name.
 ms.assetid: 41412124-38d9-43c0-9954-d34b242a3922
-keywords: ["INF DefaultInstall Section Device and Driver Installation"]
+keywords:
+- INF DefaultInstall Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DefaultInstall Section
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DefaultInstall Section

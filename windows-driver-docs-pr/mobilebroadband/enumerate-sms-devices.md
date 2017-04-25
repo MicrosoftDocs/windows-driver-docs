@@ -2,6 +2,11 @@
 title: Enumerate SMS devices
 description: Enumerate SMS devices
 ms.assetid: d0d57a4f-df83-4f3b-b7b4-417ad4e11350
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerate SMS devices

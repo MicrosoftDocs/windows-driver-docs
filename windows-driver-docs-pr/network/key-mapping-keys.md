@@ -2,7 +2,15 @@
 title: Key-Mapping Keys
 description: Key-Mapping Keys
 ms.assetid: eed9effd-5c63-44ac-ab02-446f767feaea
-keywords: ["cipher operations WDK Native 802.11 , cipher keys", "cipher keys WDK Native 802.11", "key-mapping keys WDK Native 802.11"]
+keywords:
+- cipher operations WDK Native 802.11 , cipher keys
+- cipher keys WDK Native 802.11
+- key-mapping keys WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Key-Mapping Keys

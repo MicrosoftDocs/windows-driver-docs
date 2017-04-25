@@ -1,9 +1,14 @@
 ---
-Description: Supporting the Base-Driver Commands
-title: Supporting the Base-Driver Commands
+Description: Support for base-driver commands (WpdServiceSampleDriver)
+title: Support for base-driver commands (WpdServiceSampleDriver)
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Supporting the Base-Driver Commands
+# Support for base-driver commands (WpdServiceSampleDriver)
 
 
 The base driver module (*WpdBaseDriver.cpp*) for the sample processes two commands: WPD\_COMMAND\_COMMON\_GET\_OBJECT\_IDS\_FROM\_ PERSISTENT\_UNIQUE\_IDS and WPD\_COMMAND\_COMMON\_SAVE\_CLIENT\_INFORMATION.

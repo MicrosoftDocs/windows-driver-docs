@@ -2,6 +2,11 @@
 title: What's new for Windows 7 display drivers (WDDM 1.1)
 description: What's new for Windows 7 display drivers (WDDM 1.1)
 ms.assetid: 516A9C56-7ABC-49F4-8E92-3B6C3DB78CF6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What's new for Windows 7 display drivers (WDDM 1.1)

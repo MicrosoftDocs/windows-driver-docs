@@ -3,7 +3,18 @@ title: Using IRP Completion Routines
 author: windows-driver-content
 description: Using IRP Completion Routines
 ms.assetid: 82b9ba2b-17db-40e5-be3f-fd77cd986781
-keywords: ["filter drivers WDK file system , IRP completion routines", "file system filter drivers WDK , IRP completion routines", "IRP completion routines WDK file system", "IRPs WDK file system", "completing I/O requests WDK file system", "IRP completion routines WDK file system , about IRP completion routines"]
+keywords:
+- filter drivers WDK file system , IRP completion routines
+- file system filter drivers WDK , IRP completion routines
+- IRP completion routines WDK file system
+- IRPs WDK file system
+- completing I/O requests WDK file system
+- IRP completion routines WDK file system , about IRP completion routines
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using IRP Completion Routines

@@ -1,8 +1,18 @@
 ---
-title:  Hardware access for Universal Windows Platform apps
+title: Hardware access for Universal Windows Platform apps
 author: windows-driver-content
 description: Writing apps with custom capabilities
-keywords: ["Custom , Capabilities", "UWP Apps", "Custom Capabilities", "UWP","Hardware"]
+keywords:
+- Custom , Capabilities
+- UWP Apps
+- Custom Capabilities
+- UWP
+- Hardware
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware access for Universal Windows Platform apps

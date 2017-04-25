@@ -2,7 +2,21 @@
 title: SetupAPI Functions that Simplify Driver Installation
 description: SetupAPI Functions that Simplify Driver Installation
 ms.assetid: 7201b260-6239-4c76-8d48-7e2df9c662cd
-keywords: ["SetupAPI functions WDK , simplifying driver installations", "DiInstallDevice", "DiInstallDriver", "DiRollbackDriver", "DiShowUpdateDevice", "InstallSelectedDriver", "UpdateDriverForPlugAndPlayDevices", "PnP WDK device installations , SetupAPI", "Plug and Play WDK device installations , SetupAPI"]
+keywords:
+- SetupAPI functions WDK , simplifying driver installations
+- DiInstallDevice
+- DiInstallDriver
+- DiRollbackDriver
+- DiShowUpdateDevice
+- InstallSelectedDriver
+- UpdateDriverForPlugAndPlayDevices
+- PnP WDK device installations , SetupAPI
+- Plug and Play WDK device installations , SetupAPI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SetupAPI Functions that Simplify Driver Installation

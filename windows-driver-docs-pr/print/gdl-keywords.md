@@ -3,7 +3,15 @@ title: GDL Keywords
 author: windows-driver-content
 description: GDL Keywords
 ms.assetid: 3baf187b-b108-49f7-8f8a-bce93eba15c7
-keywords: ["GDL WDK , keywords", "keywords WDK GDL , about GDL keywords", "keywords WDK GDL , characters"]
+keywords:
+- GDL WDK , keywords
+- keywords WDK GDL , about GDL keywords
+- keywords WDK GDL , characters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Keywords

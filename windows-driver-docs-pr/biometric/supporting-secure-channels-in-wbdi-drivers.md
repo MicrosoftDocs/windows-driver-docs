@@ -2,7 +2,14 @@
 title: Supporting Secure Channels in WBDI Drivers
 description: Supporting Secure Channels in WBDI Drivers
 ms.assetid: 1b4532f4-18ee-4c65-9373-2ca635d2f40d
-keywords: ["biometric drivers WDK , secure channels", "secure channels WDK biometric"]
+keywords:
+- biometric drivers WDK , secure channels
+- secure channels WDK biometric
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Secure Channels in WBDI Drivers

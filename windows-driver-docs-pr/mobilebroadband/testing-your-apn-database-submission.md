@@ -2,6 +2,11 @@
 title: Testing your COSA/APN database submission
 description: Testing your COSA/APN database submission
 ms.assetid: 8f45dbf0-4f96-4d11-b2a2-41b9e75b5e9b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing your COSA/APN database submission

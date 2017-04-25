@@ -3,7 +3,15 @@ title: Other SRB\_FUNCTION\_XXX Requests
 author: windows-driver-content
 description: Other SRB\_FUNCTION\_XXX Requests
 ms.assetid: b0430d8e-e5cd-4f17-b77f-ec608b1469da
-keywords: ["SCSI miniport drivers WDK storage , HwScsiStartIo", "HwScsiStartIo", "SRB_FUNCTION_XXX future use"]
+keywords:
+- SCSI miniport drivers WDK storage , HwScsiStartIo
+- HwScsiStartIo
+- SRB_FUNCTION_XXX future use
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Other SRB\_FUNCTION\_XXX Requests

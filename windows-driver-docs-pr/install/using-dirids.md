@@ -2,7 +2,16 @@
 title: Using Dirids
 description: Using Dirids
 ms.assetid: 231bc313-b5c3-48ef-b2e2-c4e287517679
-keywords: ["dirids WDK", "INF files WDK device installations , directory identifiers", "directory identifiers WDK INF files", "directories WDK INF files"]
+keywords:
+- dirids WDK
+- INF files WDK device installations , directory identifiers
+- directory identifiers WDK INF files
+- directories WDK INF files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Dirids

@@ -2,7 +2,13 @@
 title: Using SetupAPI to Access Device Properties
 description: Using SetupAPI to Access Device Properties
 ms.assetid: 27dcbff1-e739-4369-aec0-3bc6e8794059
-keywords: ["device properties WDK device installations , accessing"]
+keywords:
+- device properties WDK device installations , accessing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using SetupAPI to Access Device Properties

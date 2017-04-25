@@ -2,7 +2,16 @@
 title: Opening and Closing an INF File
 description: Opening and Closing an INF File
 ms.assetid: da270688-4b8b-43b3-afdb-8f31d15ef50c
-keywords: ["INF files WDK device installations , opening", "INF files WDK device installations , closing", "opening INF files", "closing INF files"]
+keywords:
+- INF files WDK device installations , opening
+- INF files WDK device installations , closing
+- opening INF files
+- closing INF files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Opening and Closing an INF File

@@ -3,7 +3,17 @@ title: Repudiation
 author: windows-driver-content
 description: Repudiation
 ms.assetid: ccb50b6c-9e7d-4a90-a049-6c62b1b57376
-keywords: ["threat models WDK file systems , repudiation", "security threat models WDK file systems , repudiation", "repudiation WDK file systems", "ownership WDK file systems", "denying performed operation WDK file systems"]
+keywords:
+- threat models WDK file systems , repudiation
+- security threat models WDK file systems , repudiation
+- repudiation WDK file systems
+- ownership WDK file systems
+- denying performed operation WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Repudiation

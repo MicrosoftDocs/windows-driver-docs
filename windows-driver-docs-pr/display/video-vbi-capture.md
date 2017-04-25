@@ -2,7 +2,17 @@
 title: Video VBI Capture
 description: Video VBI Capture
 ms.assetid: 40544838-8678-4832-8e6f-e96202f987ad
-keywords: ["video VBI capture WDK DirectDraw", "vertical blanking interval WDK DirectDraw", "VBI WDK DirectDraw", "DxTransfer", "DxApi miniport drivers WDK DirectDraw , VBI capture"]
+keywords:
+- video VBI capture WDK DirectDraw
+- vertical blanking interval WDK DirectDraw
+- VBI WDK DirectDraw
+- DxTransfer
+- DxApi miniport drivers WDK DirectDraw , VBI capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video VBI Capture

@@ -3,6 +3,11 @@ title: Canceling a Data Transfer
 author: windows-driver-content
 description: Canceling a Data Transfer
 ms.assetid: a7900968-df57-41d9-abb1-4d2c97517362
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Canceling a Data Transfer

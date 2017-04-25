@@ -2,7 +2,17 @@
 title: Writing a NetDMA Provider Driver
 description: Writing a NetDMA Provider Driver
 ms.assetid: a4fcecdf-284d-4cae-b930-4a02492e4eec
-keywords: ["memory-to-memory data transfers WDK NetDMA , writing provider drivers", "data transfers WDK NetDMA , writing provider drivers", "transferring data WDK NetDMA , writing provider drivers", "NetDMA WDK networking , writing provider drivers", "DMA transfers WDK N"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , writing provider drivers
+- data transfers WDK NetDMA , writing provider drivers
+- transferring data WDK NetDMA , writing provider drivers
+- NetDMA WDK networking , writing provider drivers
+- DMA transfers WDK N
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a NetDMA Provider Driver

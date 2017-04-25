@@ -2,6 +2,11 @@
 title: Implementing a MiniportCancelIdleNotification Handler Function
 description: Implementing a MiniportCancelIdleNotification Handler Function
 ms.assetid: 51C25573-5723-44F9-B498-EBEF6756F3B0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing a MiniportCancelIdleNotification Handler Function

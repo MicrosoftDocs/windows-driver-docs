@@ -3,7 +3,14 @@ title: Sample UI Plug-In
 author: windows-driver-content
 description: Sample UI Plug-In
 ms.assetid: a97b7769-c820-413e-96de-a1a2358c6979
-keywords: ["user interface plug-ins WDK print ,", "UI plug-ins WDK print ,"]
+keywords:
+- user interface plug-ins WDK print ,
+- UI plug-ins WDK print ,
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample UI Plug-In

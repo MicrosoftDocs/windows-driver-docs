@@ -2,7 +2,14 @@
 title: Exposing Your Synthesizer as a Legacy Device
 description: Exposing Your Synthesizer as a Legacy Device
 ms.assetid: 25e5e14f-1db5-45dc-9048-674420d79824
-keywords: ["synthesizers WDK audio , legacy devices", "legacy device support WDK DirectMusic"]
+keywords:
+- synthesizers WDK audio , legacy devices
+- legacy device support WDK DirectMusic
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Exposing Your Synthesizer as a Legacy Device

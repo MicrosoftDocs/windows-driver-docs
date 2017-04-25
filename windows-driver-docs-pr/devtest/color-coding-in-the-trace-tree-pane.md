@@ -2,7 +2,15 @@
 title: Color Coding in the Trace Tree Pane
 description: Color Coding in the Trace Tree Pane
 ms.assetid: b9230d0c-7fd7-4f8c-ae1a-ae48f755fbbe
-keywords: ["Static Driver Verifier Report WDK , Trace Tree pane", "Trace Tree pane WDK Static Driver Verifier", "color coding WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier Report WDK , Trace Tree pane
+- Trace Tree pane WDK Static Driver Verifier
+- color coding WDK Static Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Color Coding in the Trace Tree Pane

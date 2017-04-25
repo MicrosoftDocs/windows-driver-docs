@@ -2,6 +2,11 @@
 title: MB Miniport driver Error Logging
 description: MB Miniport driver Error Logging
 ms.assetid: 57f83d03-29e5-4a20-8c0c-2d00954e7ccb
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB Miniport driver Error Logging

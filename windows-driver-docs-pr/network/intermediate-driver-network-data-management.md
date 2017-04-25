@@ -2,7 +2,15 @@
 title: Intermediate Driver Network Data Management
 description: Intermediate Driver Network Data Management
 ms.assetid: 12f708b9-32f2-470c-bc4d-7c1b0c1012b1
-keywords: ["intermediate drivers WDK networking , network data management", "NDIS intermediate drivers WDK , network data management", "network data management WDK NDIS intermediate"]
+keywords:
+- intermediate drivers WDK networking , network data management
+- NDIS intermediate drivers WDK , network data management
+- network data management WDK NDIS intermediate
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Intermediate Driver Network Data Management

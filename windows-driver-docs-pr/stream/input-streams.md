@@ -3,7 +3,20 @@ title: Input Streams
 author: windows-driver-content
 description: Input Streams
 ms.assetid: 0aa378d8-e7e2-4555-b541-dd1ed77b4a12
-keywords: ["input streams WDK DVD decoder", "DVD PACKs WDK DVD decoder", "subpicture streams WDK DVD decoder", "SDDS audio input streams WDK DVD decoder", "DTS audio input streams WDK DVD decoder", "LPCM audio input streams WDK DVD decoder", "AC-3 WDK DVD decoder", "MPEG2 video input streams WDK DVD decoder"]
+keywords:
+- input streams WDK DVD decoder
+- DVD PACKs WDK DVD decoder
+- subpicture streams WDK DVD decoder
+- SDDS audio input streams WDK DVD decoder
+- DTS audio input streams WDK DVD decoder
+- LPCM audio input streams WDK DVD decoder
+- AC-3 WDK DVD decoder
+- MPEG2 video input streams WDK DVD decoder
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Input Streams

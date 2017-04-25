@@ -2,6 +2,11 @@
 title: Using a Universal INF File
 description: If you are building a universal or mobile driver package, you must use a universal INF file.
 ms.assetid: 2CBEB814-974D-4E8B-A44A-2CFAA8D4C94E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using a Universal INF File
@@ -63,6 +68,7 @@ The following directives are valid with some caveats:
     -   12 (corresponds to %WINDIR%\\System32\\Drivers)
     -   13 (corresponds to the directory under %WINDIR%\\System32\\DriverStore\\FileRepository where the driver is stored)  
         **Note:** This location may not be valid on all SKUs
+    -   10,SysWOW64 (corresponds to %WINDIR%\\SysWOW64)
 
 ## Related topics
 

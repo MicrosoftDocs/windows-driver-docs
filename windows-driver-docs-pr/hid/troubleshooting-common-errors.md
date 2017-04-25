@@ -3,6 +3,11 @@ title: Troubleshooting common errors
 author: windows-driver-content
 description: This section covers common issues that hardware vendors and driver developers may encounter when debugging their I²C firmware or driver software.
 ms.assetid: F53BD17C-ABBC-495F-895A-99BFC7E29B71
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting common errors

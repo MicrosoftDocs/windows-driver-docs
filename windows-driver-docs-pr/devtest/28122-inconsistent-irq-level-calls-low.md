@@ -2,7 +2,14 @@
 title: C28122
 description: Warning C28122 The function is not permitted to be called at a low IRQ level. Prior function calls are inconsistent with this constraint.
 ms.assetid: 4bc2f85e-055c-4821-9260-a223be787daf
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28122

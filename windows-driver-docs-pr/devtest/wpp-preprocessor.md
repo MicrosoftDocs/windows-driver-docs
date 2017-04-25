@@ -2,7 +2,19 @@
 title: WPP Preprocessor
 description: WPP Preprocessor
 ms.assetid: 92bcb2c4-f6de-4704-8f5c-9a2e5901616a
-keywords: ["Windows software trace preprocessor WDK , options", "WPP software tracing WDK , options", "WPP preprocessor WDK", "Windows software trace preprocessor WDK , invoking preprocessor", "WPP software tracing WDK , invoking preprocessor", "Windows software trace preprocessor WDK , build process", "WPP software tracing WDK , build process"]
+keywords:
+- Windows software trace preprocessor WDK , options
+- WPP software tracing WDK , options
+- WPP preprocessor WDK
+- Windows software trace preprocessor WDK , invoking preprocessor
+- WPP software tracing WDK , invoking preprocessor
+- Windows software trace preprocessor WDK , build process
+- WPP software tracing WDK , build process
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WPP Preprocessor

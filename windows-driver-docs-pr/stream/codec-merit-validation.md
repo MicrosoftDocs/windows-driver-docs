@@ -3,7 +3,17 @@ title: Codec Merit Validation
 author: windows-driver-content
 description: Codec Merit Validation
 ms.assetid: 595a21ea-bae2-410e-874a-7f3429ac02a1
-keywords: ["hardware codecs WDK AVStream , validating merit", "codecs WDK AVStream", "codecs WDK AVStream , merit validation", "codecs WDK AVStream , hardware", "codecs WDK AVStream , hardware, merit validation"]
+keywords:
+- hardware codecs WDK AVStream , validating merit
+- codecs WDK AVStream
+- codecs WDK AVStream , merit validation
+- codecs WDK AVStream , hardware
+- codecs WDK AVStream , hardware, merit validation
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Codec Merit Validation

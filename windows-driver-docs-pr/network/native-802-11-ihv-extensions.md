@@ -2,7 +2,19 @@
 title: Native 802.11 IHV Extensions
 description: Native 802.11 IHV Extensions
 ms.assetid: 14eb9f2b-4f6f-42cc-b367-ac139a446dc4
-keywords: ["independent hardware vendor extensions WDK Native 802.11", "IHV extensions WDK Native 802.11", "Native 802.11 WDK networking , IHV extensions", "wireless LAN networks WDK , IHV extensions", "WLAN networks WDK , IHV extensions", "IHV extensions WDK Native 802.11 , adding functionality", "Native 802.11 IHV Extensions WDK , adding functionality"]
+keywords:
+- independent hardware vendor extensions WDK Native 802.11
+- IHV extensions WDK Native 802.11
+- Native 802.11 WDK networking , IHV extensions
+- wireless LAN networks WDK , IHV extensions
+- WLAN networks WDK , IHV extensions
+- IHV extensions WDK Native 802.11 , adding functionality
+- Native 802.11 IHV Extensions WDK , adding functionality
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 IHV Extensions

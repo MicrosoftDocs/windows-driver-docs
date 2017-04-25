@@ -2,6 +2,11 @@
 title: Device and Driver Installation Fundamental Topics
 description: Device and Driver Installation Fundamental Topics
 ms.assetid: 0215f185-6d30-4ce5-b30f-3132f75afba3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device and Driver Installation Fundamental Topics

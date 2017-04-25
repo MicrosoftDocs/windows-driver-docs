@@ -3,6 +3,11 @@ title: Primary and Secondary Interrupts
 author: windows-driver-content
 description: GPIO interrupt handling is inherently a two-stage process.
 ms.assetid: 731B0E36-4480-4B69-931E-1F7B40B18911
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Primary and Secondary Interrupts

@@ -2,7 +2,17 @@
 title: Allocating a NetDMA Channel
 description: Allocating a NetDMA Channel
 ms.assetid: f65c63a3-baf3-453e-a9f9-846a09afd10c
-keywords: ["memory-to-memory data transfers WDK NetDMA , allocating channels", "data transfers WDK NetDMA , allocating channels", "transferring data WDK NetDMA , allocating channels", "DMA transfers WDK NetDMA , allocating channels", "NetDMA WDK networking , allocating c"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , allocating channels
+- data transfers WDK NetDMA , allocating channels
+- transferring data WDK NetDMA , allocating channels
+- DMA transfers WDK NetDMA , allocating channels
+- NetDMA WDK networking , allocating c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating a NetDMA Channel

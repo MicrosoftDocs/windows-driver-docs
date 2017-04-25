@@ -2,6 +2,11 @@
 title: Device and Driver Installation Software Tools
 description: Device and Driver Installation Software Tools
 ms.assetid: 05528866-1b9e-487c-a3f0-adf4f2214f81
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device and Driver Installation Software Tools

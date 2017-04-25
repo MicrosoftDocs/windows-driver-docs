@@ -2,6 +2,11 @@
 title: Audio Endpoint Builder Algorithm
 description: Audio Endpoint Builder Algorithm
 ms.assetid: 2338bca7-5743-42c3-9baf-ac4a54cf0393
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Endpoint Builder Algorithm

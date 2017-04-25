@@ -2,6 +2,11 @@
 title: NDIS QoS Requirements for Data Center Bridging
 description: NDIS QoS Requirements for Data Center Bridging
 ms.assetid: 09BEFF6C-6887-42BA-A44B-5BFE65DBD69E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS QoS Requirements for Data Center Bridging

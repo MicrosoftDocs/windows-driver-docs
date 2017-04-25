@@ -3,7 +3,19 @@ title: Operation of Serenum and Serial
 author: windows-driver-content
 description: Operation of Serenum and Serial
 ms.assetid: d14b6655-c031-42dd-921e-b6a09afde86d
-keywords: ["Serial driver WDK , operating", "Serenum driver WDK , operating", "Serial driver WDK", "Serenum driver WDK", "serial drivers WDK", "serial devices WDK , Serial driver", "serial devices WDK , Serenum driver"]
+keywords:
+- Serial driver WDK , operating
+- Serenum driver WDK , operating
+- Serial driver WDK
+- Serenum driver WDK
+- serial drivers WDK
+- serial devices WDK , Serial driver
+- serial devices WDK , Serenum driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Operation of Serenum and Serial

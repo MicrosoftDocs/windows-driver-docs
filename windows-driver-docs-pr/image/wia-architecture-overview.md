@@ -3,6 +3,11 @@ title: WIA Architecture Overview
 author: windows-driver-content
 description: WIA Architecture Overview
 ms.assetid: 47f44042-f22b-4ee0-88c5-fc977bf13791
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Architecture Overview

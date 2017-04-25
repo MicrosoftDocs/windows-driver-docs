@@ -3,7 +3,14 @@ title: Introduction to User Interface Plug-Ins
 author: windows-driver-content
 description: Introduction to User Interface Plug-Ins
 ms.assetid: 7f01bd14-bcc5-4c26-a9b8-a12aa1ffe242
-keywords: ["user interface plug-ins WDK print , about user interface plug-ins", "UI plug-ins WDK print , about user interface plug-ins"]
+keywords:
+- user interface plug-ins WDK print , about user interface plug-ins
+- UI plug-ins WDK print , about user interface plug-ins
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to User Interface Plug-Ins

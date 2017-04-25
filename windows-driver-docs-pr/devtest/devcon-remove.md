@@ -2,13 +2,19 @@
 title: DevCon Remove
 description: Removes the device from the device tree and deletes the device stack for the device.
 ms.assetid: 02236d0d-4628-4b5b-9a15-331905f07358
-keywords: ["DevCon Remove Driver Development Tools"]
+keywords:
+- DevCon Remove Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon Remove
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon Remove

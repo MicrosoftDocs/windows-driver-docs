@@ -2,7 +2,16 @@
 title: Synchronizing Two or More Streams
 description: Synchronizing Two or More Streams
 ms.assetid: c25f4ca2-8a9f-43bc-a1bf-b71826b446ff
-keywords: ["HD Audio, synchronizing streams", "High Definition Audio (HD Audio), synchronizing streams", "synchronizing streams WDK audio", "stream synchronization WDK audio"]
+keywords:
+- HD Audio, synchronizing streams
+- High Definition Audio (HD Audio), synchronizing streams
+- synchronizing streams WDK audio
+- stream synchronization WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing Two or More Streams

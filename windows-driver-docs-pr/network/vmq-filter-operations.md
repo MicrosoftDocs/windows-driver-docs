@@ -2,6 +2,11 @@
 title: VMQ Filter Operations
 description: VMQ Filter Operations
 ms.assetid: e8a977e8-2622-461b-9ca0-4834d33d76c0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VMQ Filter Operations

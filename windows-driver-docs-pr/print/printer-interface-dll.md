@@ -3,7 +3,17 @@ title: Printer Interface DLL
 author: windows-driver-content
 description: Printer Interface DLL
 ms.assetid: 2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac
-keywords: ["GDI printer drivers WDK , printer interface DLL", "printer interface DLL WDK", "DLLs WDK print", "user interface WDK printer interface DLL", "configuration options user interface WDK print"]
+keywords:
+- GDI printer drivers WDK , printer interface DLL
+- printer interface DLL WDK
+- DLLs WDK print
+- user interface WDK printer interface DLL
+- configuration options user interface WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Interface DLL

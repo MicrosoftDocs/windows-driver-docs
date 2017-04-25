@@ -1,11 +1,16 @@
 ---
-title: Checking the Oplock State of an IRP_MJ_FILE_SYSTEM_CONTROL operation
+title: Checking the Oplock State of IRP_MJ_FILE_SYSTEM_CONTROL
 author: windows-driver-content
 description: Checking the Oplock State of an IRP_MJ_FILE_SYSTEM_CONTROL operation
 ms.assetid: 3651d9ed-6b6f-4b60-9dfa-1c5c0c78b1a1
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Checking the Oplock State of an IRP_MJ_FILE_SYSTEM_CONTROL operation
+# Checking the Oplock State of IRP_MJ_FILE_SYSTEM_CONTROL
 
 Certain IRP_MJ_FILE_SYSTEM_CONTROL operations check oplock state. The following operation(s) perform this check:
 - **FSCTL_SET_ZERO_DATA**

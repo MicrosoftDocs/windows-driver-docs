@@ -1,8 +1,17 @@
 ---
-title: Offloading the Processing of ESP-Protected and AH-Protected Packets
+title: Offloading the processing of ESP- and AH-protected packets
 description: Offloading the Processing of ESP-Protected and AH-Protected Packets
 ms.assetid: c73d68e2-2d70-49ce-afa5-8e22626f1b11
-keywords: ["IPsecOV1 WDK TCP/IP transport , ESP-protected", "IPsecOV1 WDK TCP/IP transport , AH-protected packets", "ESP-protected packets WDK IPsec offload", "AH-protected packets WDK IPsec offload"]
+keywords:
+- IPsecOV1 WDK TCP/IP transport , ESP-protected
+- IPsecOV1 WDK TCP/IP transport , AH-protected packets
+- ESP-protected packets WDK IPsec offload
+- AH-protected packets WDK IPsec offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offloading the Processing of ESP-Protected and AH-Protected Packets
@@ -10,7 +19,6 @@ keywords: ["IPsecOV1 WDK TCP/IP transport , ESP-protected", "IPsecOV1 WDK TCP/IP
 \[The IPsec Task Offload feature is deprecated and should not be used.\]
 
 ## <a href="" id="ddk-offloading-the-processing-of-esp-protected-and-ah-protected-packet"></a>
-
 
 This section describes the offload processing of ESP-protected and AH-protected packets.
 

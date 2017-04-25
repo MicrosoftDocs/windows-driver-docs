@@ -3,7 +3,17 @@ title: GDL Preprocessor Conditional Directives
 author: windows-driver-content
 description: GDL Preprocessor Conditional Directives
 ms.assetid: 5eb4bcbf-3f5e-44cc-b4e5-716a15e43b15
-keywords: ["directives WDK GDL , source file preprocessor directives", "source files WDK GDL , preprocessor directives", "preprocessor directives WDK GDL , conditional directives", "directives WDK GDL , conditional directives", "conditional directives WDK GDL"]
+keywords:
+- directives WDK GDL , source file preprocessor directives
+- source files WDK GDL , preprocessor directives
+- preprocessor directives WDK GDL , conditional directives
+- directives WDK GDL , conditional directives
+- conditional directives WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Preprocessor Conditional Directives

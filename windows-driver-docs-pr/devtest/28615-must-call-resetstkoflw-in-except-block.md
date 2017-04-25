@@ -2,6 +2,11 @@
 title: C28615
 description: Warning C28615 Must call \_resetstkoflw in the \_\_except() block when calling \_alloca in the \_\_try block. Don't call \_resetstkoflw from inside a catch() block.
 ms.assetid: bccfc846-58b9-4c20-bbe7-383ecf836165
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28615

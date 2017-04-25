@@ -2,7 +2,15 @@
 title: Tracelog Properties Display
 description: Tracelog Properties Display
 ms.assetid: 9adfb4d5-5a0b-4e79-9aa8-ae81e2e1df3e
-keywords: ["Tracelog WDK , properties", "tracing WDK , properties", "properties WDK tracing"]
+keywords:
+- Tracelog WDK , properties
+- tracing WDK , properties
+- properties WDK tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracelog Properties Display

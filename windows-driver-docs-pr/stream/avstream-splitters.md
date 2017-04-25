@@ -3,7 +3,22 @@ title: AVStream Splitters
 author: windows-driver-content
 description: AVStream Splitters
 ms.assetid: c2cfc183-0f4c-4104-a580-234e0483eee4
-keywords: ["splitters WDK AVStream", "AVStream splitters WDK", "splitting data streams WDK AVStream", "KSPIN_FLAG_SPLITTER", "automatic splitting WDK AVStream", "input pin splitting WDK AVStream", "output pin splitter processing WDK AVStream", "pin splitting WDK AVStream", "process pins WDK AVStream", "frames WDK AVStream"]
+keywords:
+- splitters WDK AVStream
+- AVStream splitters WDK
+- splitting data streams WDK AVStream
+- KSPIN_FLAG_SPLITTER
+- automatic splitting WDK AVStream
+- input pin splitting WDK AVStream
+- output pin splitter processing WDK AVStream
+- pin splitting WDK AVStream
+- process pins WDK AVStream
+- frames WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Splitters

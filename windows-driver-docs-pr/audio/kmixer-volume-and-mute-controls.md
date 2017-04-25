@@ -2,7 +2,22 @@
 title: KMixer Volume and Mute Controls
 description: KMixer Volume and Mute Controls
 ms.assetid: 4e6b9e84-42da-4614-b729-f8f2efb0ece2
-keywords: ["KMixer system driver WDK audio , volume controls", "SRC WDK audio , volume controls", "sample-rate conversion WDK audio , volume controls", "KMixer system driver WDK audio , mute controls", "SRC WDK audio , mute controls", "sample-rate conversion WDK audio , mute controls", "volume control mixing WDK audio", "mute control WDK audio", "mixing volume changes WDK audio", "mixing mute changes WDK audio"]
+keywords:
+- KMixer system driver WDK audio , volume controls
+- SRC WDK audio , volume controls
+- sample-rate conversion WDK audio , volume controls
+- KMixer system driver WDK audio , mute controls
+- SRC WDK audio , mute controls
+- sample-rate conversion WDK audio , mute controls
+- volume control mixing WDK audio
+- mute control WDK audio
+- mixing volume changes WDK audio
+- mixing mute changes WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # KMixer Volume and Mute Controls

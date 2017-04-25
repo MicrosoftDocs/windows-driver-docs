@@ -2,6 +2,11 @@
 title: Application
 description: Application
 ms.assetid: 8dd55438-8097-4177-a4ad-94b0ee8d3616
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Application

@@ -2,6 +2,11 @@
 title: ShowDeviceInDisconnectedState
 description: ShowDeviceInDisconnectedState
 ms.assetid: f2f517dd-68e5-4013-83ee-777579562db3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ShowDeviceInDisconnectedState

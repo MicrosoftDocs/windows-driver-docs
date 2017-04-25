@@ -3,7 +3,13 @@ title: Attribute Types
 author: windows-driver-content
 description: Attribute Types
 ms.assetid: 6ca5d3d0-fec1-49b6-af5f-ead57371e0d0
-keywords: ["printer attributes WDK Unidrv , types"]
+keywords:
+- printer attributes WDK Unidrv , types
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attribute Types

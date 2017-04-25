@@ -3,6 +3,11 @@ title: Material keywords
 author: windows-driver-content
 description: These keywords describe the raw material in the device used to create 3D objects.
 ms.assetid: B2264CA8-64F9-4A20-AC55-46A0C48EDF3C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Material keywords

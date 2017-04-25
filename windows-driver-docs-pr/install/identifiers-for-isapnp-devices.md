@@ -2,7 +2,17 @@
 title: Identifiers for ISAPNP Devices
 description: Identifiers for ISAPNP Devices
 ms.assetid: 67337bd6-3b5f-41a7-b50d-bf3587f243e8
-keywords: ["device identification strings WDK , ISAPNP devices", "identification strings WDK device , ISAPNP devices", "identifiers WDK device , ISAPNP devices", "ISAPNP device identifiers WDK device installations", "hardware IDs WDK device installations"]
+keywords:
+- device identification strings WDK , ISAPNP devices
+- identification strings WDK device , ISAPNP devices
+- identifiers WDK device , ISAPNP devices
+- ISAPNP device identifiers WDK device installations
+- hardware IDs WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifiers for ISAPNP Devices

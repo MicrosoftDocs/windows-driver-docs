@@ -2,6 +2,11 @@
 title: ComputerHardwareIds Output
 description: ComputerHardwareIds Output
 ms.assetid: 38a08dda-92db-4389-9c2c-91fe17a88051
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ComputerHardwareIds Output

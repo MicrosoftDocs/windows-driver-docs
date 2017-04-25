@@ -3,7 +3,18 @@ title: Unidrv Minidrivers
 author: windows-driver-content
 description: Unidrv Minidrivers
 ms.assetid: ebf12f61-6194-4033-92a2-2bbccc40a6fd
-keywords: ["Unidrv, minidrivers", "minidrivers WDK Unidrv", "text-based printer descriptions WDK Unidrv", "printer descriptions WDK Unidrv", "GPD files WDK Unidrv , Unidrv capabilities", "Unidrv WDK print"]
+keywords:
+- Unidrv, minidrivers
+- minidrivers WDK Unidrv
+- text-based printer descriptions WDK Unidrv
+- printer descriptions WDK Unidrv
+- GPD files WDK Unidrv , Unidrv capabilities
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unidrv Minidrivers

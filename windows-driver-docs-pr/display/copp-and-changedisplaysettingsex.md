@@ -2,7 +2,19 @@
 title: COPP and ChangeDisplaySettingsEx
 description: COPP and ChangeDisplaySettingsEx
 ms.assetid: 5c729bfd-0758-4de5-9e81-a3279f8aab56
-keywords: ["copy protection WDK COPP , ChangeDisplaySettingsEx", "video copy protection WDK COPP , ChangeDisplaySettingsEx", "COPP WDK DirectX VA , ChangeDisplaySettingsEx", "protected video WDK COPP , ChangeDisplaySettingsEx", "ChangeDisplaySettingsEx", "analog content protection WDK COPP", "ACP protection type WDK COPP"]
+keywords:
+- copy protection WDK COPP , ChangeDisplaySettingsEx
+- video copy protection WDK COPP , ChangeDisplaySettingsEx
+- COPP WDK DirectX VA , ChangeDisplaySettingsEx
+- protected video WDK COPP , ChangeDisplaySettingsEx
+- ChangeDisplaySettingsEx
+- analog content protection WDK COPP
+- ACP protection type WDK COPP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP and ChangeDisplaySettingsEx

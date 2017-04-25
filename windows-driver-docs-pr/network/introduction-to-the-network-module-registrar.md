@@ -2,7 +2,14 @@
 title: Introduction to the Network Module Registrar
 description: Introduction to the Network Module Registrar
 ms.assetid: affa7979-bc43-4e34-a528-5484982d940d
-keywords: ["Network Module Registrar WDK , about Network Module Registrar", "NMR WDK , about Network Module Registrar"]
+keywords:
+- Network Module Registrar WDK , about Network Module Registrar
+- NMR WDK , about Network Module Registrar
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to the Network Module Registrar

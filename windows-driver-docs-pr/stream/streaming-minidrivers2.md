@@ -3,7 +3,21 @@ title: Streaming Minidrivers
 author: windows-driver-content
 description: Streaming Minidrivers
 ms.assetid: 9f669a1a-50fd-482f-a5af-28e5685dc68c
-keywords: ["Windows 2000 Kernel Streaming Model WDK , streaming minidrivers", "Streaming Model WDK Windows 2000 Kernel , streaming minidrivers", "Kernel Streaming Model WDK , streaming minidrivers", "Stream.sys class driver WDK Windows 2000 Kernel", "streaming minidrivers WDK Windows 2000 Kernel", "minidrivers WDK Windows 2000 Kernel Streaming", "Stream.sys class driver WDK Windows 2000 Kernel ,", "streaming minidrivers WDK Windows 2000 Kernel ,", "minidrivers WDK Windows 2000 Kernel Streaming ,"]
+keywords:
+- Windows 2000 Kernel Streaming Model WDK , streaming minidrivers
+- Streaming Model WDK Windows 2000 Kernel , streaming minidrivers
+- Kernel Streaming Model WDK , streaming minidrivers
+- Stream.sys class driver WDK Windows 2000 Kernel
+- streaming minidrivers WDK Windows 2000 Kernel
+- minidrivers WDK Windows 2000 Kernel Streaming
+- Stream.sys class driver WDK Windows 2000 Kernel ,
+- streaming minidrivers WDK Windows 2000 Kernel ,
+- minidrivers WDK Windows 2000 Kernel Streaming ,
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Streaming Minidrivers

@@ -3,7 +3,13 @@ title: XPS Support in Earlier Versions of Windows
 author: windows-driver-content
 description: XPS Support in Earlier Versions of Windows
 ms.assetid: e13b43f5-e926-404d-9f76-c2dfef6e0637
-keywords: ["XPSDrv printer drivers WDK , earlier Windows versions"]
+keywords:
+- XPSDrv printer drivers WDK , earlier Windows versions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPS Support in Earlier Versions of Windows

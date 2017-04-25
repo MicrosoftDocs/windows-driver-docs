@@ -2,6 +2,11 @@
 title: Issuing OID\_NIC\_SWITCH\_ALLOCATE\_VF Requests
 description: Issuing OID\_NIC\_SWITCH\_ALLOCATE\_VF Requests
 ms.assetid: 72285E72-DEC7-4578-9B6C-E616FECD6F41
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Issuing OID\_NIC\_SWITCH\_ALLOCATE\_VF Requests

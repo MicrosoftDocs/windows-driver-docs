@@ -2,7 +2,16 @@
 title: Installing a Bluetooth Device
 description: Installing a Bluetooth Device
 ms.assetid: 2bf2b2df-260c-42a5-9ee9-6db91f304036
-keywords: ["Bluetooth WDK , installations", "client-side profile drivers WDK Bluetooth", "server-side profile drivers WDK Bluetooth", "INF files WDK Bluetooth"]
+keywords:
+- Bluetooth WDK , installations
+- client-side profile drivers WDK Bluetooth
+- server-side profile drivers WDK Bluetooth
+- INF files WDK Bluetooth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a Bluetooth Device

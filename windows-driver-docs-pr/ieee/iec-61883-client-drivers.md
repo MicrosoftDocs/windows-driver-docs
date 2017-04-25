@@ -3,7 +3,17 @@ title: IEC-61883 Client Drivers
 author: windows-driver-content
 description: IEC-61883 Client Drivers
 ms.assetid: 2a3f62d0-c1f2-4978-8f89-3ed800d697f4
-keywords: ["IEC-61883 client drivers WDK IEEE 1394 bus", "61883 WDK IEEE 1394 bus", "IEEE 1394 WDK buses , IEC-61883 client drivers", "1394 WDK buses , IEC-61883 client drivers", "protocols WDK buses"]
+keywords:
+- IEC-61883 client drivers WDK IEEE 1394 bus
+- 61883 WDK IEEE 1394 bus
+- IEEE 1394 WDK buses , IEC-61883 client drivers
+- 1394 WDK buses , IEC-61883 client drivers
+- protocols WDK buses
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IEC-61883 Client Drivers

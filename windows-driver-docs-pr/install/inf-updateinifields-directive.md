@@ -2,13 +2,19 @@
 title: INF UpdateIniFields Directive
 description: An UpdateIniFields directive references one or more named sections in which fine-grained modifications within the lines of an INI file can be specified.
 ms.assetid: fda645c9-9ecb-46fe-9d21-1c042d56acd3
-keywords: ["INF UpdateIniFields Directive Device and Driver Installation"]
+keywords:
+- INF UpdateIniFields Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF UpdateIniFields Directive
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF UpdateIniFields Directive

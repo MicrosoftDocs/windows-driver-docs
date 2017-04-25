@@ -2,7 +2,18 @@
 title: Reference-Counting Conventions for COM Objects
 description: Reference-Counting Conventions for COM Objects
 ms.assetid: e6b19110-37e2-4d23-a528-6393c12ab650
-keywords: ["COM object references WDK audio", "object references WDK audio", "counting references WDK audio", "reference counts WDK audio", "input parameter reference counting WDK audio", "output parameter reference counting WDK audio"]
+keywords:
+- COM object references WDK audio
+- object references WDK audio
+- counting references WDK audio
+- reference counts WDK audio
+- input parameter reference counting WDK audio
+- output parameter reference counting WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reference-Counting Conventions for COM Objects

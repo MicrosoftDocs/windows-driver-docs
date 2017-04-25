@@ -3,7 +3,20 @@ title: Rendering Plug-Ins
 author: windows-driver-content
 description: Rendering Plug-Ins
 ms.assetid: e55ca083-2790-4929-9e5b-6fce49eb0404
-keywords: ["printer driver customizing WDK , rendering plug-ins", "customizing printer drivers WDK , rendering plug-ins", "rendering plug-ins WDK print", "plug-ins WDK print , rendering", "customizing printer rendering WDK", "printer rendering options WDK", "Pscript WDK print", "plug-ins WDK print , customized rendering"]
+keywords:
+- printer driver customizing WDK , rendering plug-ins
+- customizing printer drivers WDK , rendering plug-ins
+- rendering plug-ins WDK print
+- plug-ins WDK print , rendering
+- customizing printer rendering WDK
+- printer rendering options WDK
+- Pscript WDK print
+- plug-ins WDK print , customized rendering
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Rendering Plug-Ins

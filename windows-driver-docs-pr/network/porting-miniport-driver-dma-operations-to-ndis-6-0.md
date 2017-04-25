@@ -2,7 +2,16 @@
 title: Porting Miniport Driver DMA Operations to NDIS 6.0
 description: Porting Miniport Driver DMA Operations to NDIS 6.0
 ms.assetid: cc0e5e1d-9e7a-4725-9db7-beb9fa1c1895
-keywords: ["SGDMA WDK networking , porting DMA operations", "DMA operations WDK networking , porting DMA operations", "scatter/gather DMA WDK networking , porting DMA operations", "porting miniport drivers WDK networking , DMA operations"]
+keywords:
+- SGDMA WDK networking , porting DMA operations
+- DMA operations WDK networking , porting DMA operations
+- scatter/gather DMA WDK networking , porting DMA operations
+- porting miniport drivers WDK networking , DMA operations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Miniport Driver DMA Operations to NDIS 6.0

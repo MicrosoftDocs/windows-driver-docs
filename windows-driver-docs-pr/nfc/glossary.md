@@ -4,7 +4,17 @@ author: windows-driver-content
 description: This topic provides a glossary of NFC class extension (CX) terms.
 Robots: noindex, nofollow
 ms.assetid: F8674D9B-AD43-452A-A146-473ABE65A298
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NFC glossary

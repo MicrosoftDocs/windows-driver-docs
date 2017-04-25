@@ -3,7 +3,16 @@ title: Minidriver Synchronization
 author: windows-driver-content
 description: Minidriver Synchronization
 ms.assetid: 2f560e7a-4717-4b3f-9513-e34fcb2b5e6c
-keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , synchronization", "streaming minidrivers WDK Windows 2000 Kernel , synchronization", "minidrivers WDK Windows 2000 Kernel Streaming , synchronization", "synchronization WDK streaming minidriver"]
+keywords:
+- Stream.sys class driver WDK Windows 2000 Kernel , synchronization
+- streaming minidrivers WDK Windows 2000 Kernel , synchronization
+- minidrivers WDK Windows 2000 Kernel Streaming , synchronization
+- synchronization WDK streaming minidriver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Minidriver Synchronization

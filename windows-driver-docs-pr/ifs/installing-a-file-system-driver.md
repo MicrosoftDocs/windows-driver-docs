@@ -3,7 +3,16 @@ title: Installing a File System Driver
 author: windows-driver-content
 description: Installing a File System Driver
 ms.assetid: 1297b565-ac85-4248-927a-ab91b6cb3ab0
-keywords: ["drivers WDK file system , installing", "file system drivers WDK , installing", "INF files WDK file system", "INF files WDK file system , about file system driver installation"]
+keywords:
+- drivers WDK file system , installing
+- file system drivers WDK , installing
+- INF files WDK file system
+- INF files WDK file system , about file system driver installation
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing a File System Driver

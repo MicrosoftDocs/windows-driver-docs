@@ -2,6 +2,11 @@
 title: WindowsInfo XML Schema Definition
 description: WindowsInfo XML Schema Definition
 ms.assetid: d14e0537-0b95-4986-a11c-67645bd88b26
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WindowsInfo XML Schema Definition

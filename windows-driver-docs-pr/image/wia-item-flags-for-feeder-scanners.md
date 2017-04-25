@@ -3,6 +3,11 @@ title: WIA Item Flags for Feeder Scanners
 author: windows-driver-content
 description: WIA Item Flags for Feeder Scanners
 ms.assetid: b1256646-be6c-436c-86da-9dff43ef9867
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Item Flags for Feeder Scanners

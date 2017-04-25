@@ -2,7 +2,15 @@
 title: Microphone Array Geometry Property
 description: Microphone Array Geometry Property
 ms.assetid: 7f280677-f86d-4687-b992-e2580046bd57
-keywords: ["mic array WDK audio", "geometry descriptor WDK audio", "microphone array WDK audio"]
+keywords:
+- mic array WDK audio
+- geometry descriptor WDK audio
+- microphone array WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microphone Array Geometry Property

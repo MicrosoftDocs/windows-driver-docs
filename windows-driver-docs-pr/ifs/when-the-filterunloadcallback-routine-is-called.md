@@ -3,7 +3,15 @@ title: When the FilterUnloadCallback Routine Is Called
 author: windows-driver-content
 description: When the FilterUnloadCallback Routine Is Called
 ms.assetid: 22a3a73e-28be-4483-a7a6-73525e74503d
-keywords: ["FilterUnloadCallback", "non-mandatory unload WDK file system minifilter", "mandatory unload WDK file system minifilter"]
+keywords:
+- FilterUnloadCallback
+- non-mandatory unload WDK file system minifilter
+- mandatory unload WDK file system minifilter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # When the FilterUnloadCallback Routine Is Called

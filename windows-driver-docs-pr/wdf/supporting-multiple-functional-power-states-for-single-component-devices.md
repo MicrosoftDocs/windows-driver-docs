@@ -1,8 +1,13 @@
 ---
-title: KMDF Single-Component Devices with Single or Multiple Functional Power States
+title: Single-Component Device, one or more Functional Power States
 author: windows-driver-content
-description: A KMDF driver for a single-component device can define one or more functional power states for the component and register callback functions that the power management framework (PoFx) calls when the Fx state of the component changes or its active/idle condition changes. Starting in UMDF version 2.0, a UMDF driver for a single-component device can define a single functional power state (F0).
+description: Describes how to implement Fx state support for a single-component device in a KMDF driver.
 ms.assetid: C7EFD71F-E101-4160-9703-E1DBD507698C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Single-Component Devices with Single or Multiple Functional Power States

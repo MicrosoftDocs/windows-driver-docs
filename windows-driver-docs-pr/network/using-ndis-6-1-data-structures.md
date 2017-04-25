@@ -2,7 +2,14 @@
 title: Using NDIS 6.1 Data Structures
 description: Using NDIS 6.1 Data Structures
 ms.assetid: 425cd2dc-99b0-4bed-8f7b-c291769c420a
-keywords: ["data structures WDK networking", "NDIS WDK , structures"]
+keywords:
+- data structures WDK networking
+- NDIS WDK , structures
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using NDIS 6.1 Data Structures

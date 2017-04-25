@@ -2,7 +2,19 @@
 title: Creating a L2CAP Client Connection to a Remote Device
 description: Creating a L2CAP Client Connection to a Remote Device
 ms.assetid: b279db4b-3a4e-407e-ae9b-7330af1905b4
-keywords: ["SDP WDK Bluetooth", "Service Discovery Protocol WDK Bluetooth", "Asynchronous Connection-Less WDK Bluetooth", "ACL WDK Bluetooth", "L2CAP profile drivers WDK Bluetooth", "Logical Link Controller and Adaptation Protocol WDK Bluetooth", "connections WDK Bluetooth"]
+keywords:
+- SDP WDK Bluetooth
+- Service Discovery Protocol WDK Bluetooth
+- Asynchronous Connection-Less WDK Bluetooth
+- ACL WDK Bluetooth
+- L2CAP profile drivers WDK Bluetooth
+- Logical Link Controller and Adaptation Protocol WDK Bluetooth
+- connections WDK Bluetooth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a L2CAP Client Connection to a Remote Device

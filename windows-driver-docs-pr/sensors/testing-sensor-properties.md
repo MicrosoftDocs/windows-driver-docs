@@ -3,6 +3,11 @@ title: Testing Sensor Data Retrieval
 author: windows-driver-content
 description: The Sensor Diagnostic Tool lets you test your driver and firmware support for data retrieval by invoking properties in the Sensor API.
 ms.assetid: A4473253-D4AC-4374-9C5D-919B597FE2F0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing Sensor Data Retrieval

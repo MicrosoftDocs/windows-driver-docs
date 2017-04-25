@@ -3,7 +3,14 @@ title: Non-COM-Based Rendering Plug-Ins
 author: windows-driver-content
 description: Non-COM-Based Rendering Plug-Ins
 ms.assetid: 435f9754-50be-4a4b-a5b4-b2bc8d66f034
-keywords: ["non-COM-based rendering plug-ins WDK print", "rendering plug-ins WDK print , non-COM-based"]
+keywords:
+- non-COM-based rendering plug-ins WDK print
+- rendering plug-ins WDK print , non-COM-based
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Non-COM-Based Rendering Plug-Ins

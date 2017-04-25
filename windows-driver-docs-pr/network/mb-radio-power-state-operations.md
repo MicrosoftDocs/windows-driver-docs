@@ -2,6 +2,11 @@
 title: MB Radio Power State Operations
 description: MB Radio Power State Operations
 ms.assetid: 9b745ff3-c00b-4a43-9bf3-52f9bf61e062
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB Radio Power State Operations

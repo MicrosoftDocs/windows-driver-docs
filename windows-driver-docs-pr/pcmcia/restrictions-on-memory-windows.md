@@ -2,7 +2,14 @@
 title: Restrictions on Memory Windows
 description: Restrictions on Memory Windows
 ms.assetid: 664320e6-b155-470b-9b86-8b463663961f
-keywords: ["PCMCIA WDK buses , memory windows", "memory windows WDK PCMCIA bus"]
+keywords:
+- PCMCIA WDK buses , memory windows
+- memory windows WDK PCMCIA bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Restrictions on Memory Windows

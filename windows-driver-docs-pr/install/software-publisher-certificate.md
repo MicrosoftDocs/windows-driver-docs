@@ -2,7 +2,18 @@
 title: Software Publisher Certificate
 description: Software Publisher Certificate
 ms.assetid: eb06c630-9a3d-4f53-b00b-b1254c8bbaec
-keywords: ["catalog files WDK driver signing , SPC", "Software Publisher Certificate WDK driver signing", "SPC WDK driver signing", "public release driver signing WDK , SPC", "release signing WDK , SPC", "cross-certificate WDK"]
+keywords:
+- catalog files WDK driver signing , SPC
+- Software Publisher Certificate WDK driver signing
+- SPC WDK driver signing
+- public release driver signing WDK , SPC
+- release signing WDK , SPC
+- cross-certificate WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Software Publisher Certificate

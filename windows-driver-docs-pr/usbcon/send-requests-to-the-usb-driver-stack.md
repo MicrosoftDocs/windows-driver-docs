@@ -2,6 +2,11 @@
 Description: This topic describes the steps that are required to submit an initialized URB to the USB driver stack to process a particular request.
 title: How to Submit an URB
 author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to Submit an URB

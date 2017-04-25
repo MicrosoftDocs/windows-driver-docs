@@ -3,7 +3,15 @@ title: Font Cartridges
 author: windows-driver-content
 description: Font Cartridges
 ms.assetid: bc92e2eb-ea75-4f0f-85b7-1433d57401f3
-keywords: ["printer font descriptions WDK Unidrv , cartridges", "font cartridges WDK Unidrv", "cartridge fonts WDK Unidrv"]
+keywords:
+- printer font descriptions WDK Unidrv , cartridges
+- font cartridges WDK Unidrv
+- cartridge fonts WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Font Cartridges

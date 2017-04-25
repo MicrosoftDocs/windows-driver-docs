@@ -2,7 +2,18 @@
 title: Point, Line, and Triangle Filling Requirements
 description: Point, Line, and Triangle Filling Requirements
 ms.assetid: 1a0a8160-01e2-4fb7-b1a2-6b61f1021fb9
-keywords: ["point fill rule WDK Direct3D", "line fill rule WDK Direct3D", "triangle fill rules WDK Direct3D", "filling lines WDK Direct3D", "filling points WDK Direct3D", "filling triangles WDK Direct3D"]
+keywords:
+- point fill rule WDK Direct3D
+- line fill rule WDK Direct3D
+- triangle fill rules WDK Direct3D
+- filling lines WDK Direct3D
+- filling points WDK Direct3D
+- filling triangles WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Point, Line, and Triangle Filling Requirements

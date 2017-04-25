@@ -3,7 +3,16 @@ title: Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
 author: windows-driver-content
 description: The computer itself is a node on the IEEE 1394 bus, and therefore can receive asynchronous I/O requests.
 ms.assetid: 7b8eaf40-7fdc-4c25-86a7-8377d2d51877
-keywords: ["receiving asynchronous I/O requests", "allocating address ranges", "addresses WDK IEEE 1394 bus", "backing store WDK IEEE 1394 bus"]
+keywords:
+- receiving asynchronous I/O requests
+- allocating address ranges
+- addresses WDK IEEE 1394 bus
+- backing store WDK IEEE 1394 bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus

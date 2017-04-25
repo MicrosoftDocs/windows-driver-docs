@@ -2,7 +2,21 @@
 title: Components of a Driver Package
 description: Components of a Driver Package
 ms.assetid: 3e09b17f-9a62-43fd-be00-29fe2e6140c5
-keywords: ["components WDK", "driver packages WDK , components", "packages WDK , components", "files WDK driver packages", "co-installers WDK device installations , driver packages", "installation files WDK", ".sys files", "SYS files", ".cat files"]
+keywords:
+- components WDK
+- driver packages WDK , components
+- packages WDK , components
+- files WDK driver packages
+- co-installers WDK device installations , driver packages
+- installation files WDK
+- .sys files
+- SYS files
+- .cat files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Components of a Driver Package

@@ -2,7 +2,16 @@
 title: Tracelog Examples
 description: Tracelog Examples
 ms.assetid: 71c31672-1832-442e-b0b8-b64fcc4a5c6f
-keywords: ["Tracelog WDK , examples", "examples WDK Tracelog", "Tracelog WDK , commands", "commands WDK Tracelog"]
+keywords:
+- Tracelog WDK , examples
+- examples WDK Tracelog
+- Tracelog WDK , commands
+- commands WDK Tracelog
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracelog Examples

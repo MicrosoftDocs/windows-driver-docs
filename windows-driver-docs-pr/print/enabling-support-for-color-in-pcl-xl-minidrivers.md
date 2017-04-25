@@ -3,7 +3,13 @@ title: Enabling Support for Color in PCL XL Minidrivers
 author: windows-driver-content
 description: Enabling Support for Color in PCL XL Minidrivers
 ms.assetid: 3287b070-76e3-4a28-a516-aa58905af224
-keywords: ["PCL XL vector graphics WDK Unidrv , enabling color support"]
+keywords:
+- PCL XL vector graphics WDK Unidrv , enabling color support
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 #  Enabling Support for Color in PCL XL Minidrivers

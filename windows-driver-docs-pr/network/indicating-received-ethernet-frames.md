@@ -2,7 +2,15 @@
 title: Indicating Received Ethernet Frames
 description: Indicating Received Ethernet Frames
 ms.assetid: 39f35a54-1d80-4a14-b48c-2dbbfde9c86f
-keywords: ["Ethernet WDK networking", "frames WDK networking", "TCP/IP transport of Ethernet frames WDK networking"]
+keywords:
+- Ethernet WDK networking
+- frames WDK networking
+- TCP/IP transport of Ethernet frames WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Indicating Received Ethernet Frames

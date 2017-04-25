@@ -1,11 +1,16 @@
 ---
-title: Architecture Overview
+title: Architecture Overview for Sensor Drivers
 author: windows-driver-content
-description: Architecture Overview
+description: Sensor device drivers are COM objects that are implemented by using the Windows User Mode Driver Framework (UMDF)
 ms.assetid: 6d1b15ea-ba27-4bde-8000-d31f014ab47d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Architecture Overview
+# Architecture Overview for Sensor Drivers
 
 
 Sensor device drivers are COM objects that are implemented by using the Windows User Mode Driver Framework (UMDF). Sensor drivers use Windows Portable Devices (WPD) interfaces and other types as helper objects. Both UMDF and WPD are documented in the Windows Driver Kit documentation. For more information about UMDF drivers, see [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff561365). For more information about WPD types, see [Portable Devices](https://msdn.microsoft.com/library/windows/hardware/ff597901).
@@ -16,13 +21,13 @@ A sensor driver uses a special **class extension** object. The sensor class exte
 
 For more information about the class extension object, see [About the Sensor Class Extension](about-the-sensor-class-extension.md).
 
-**Important**Â Â Sensor drivers must be free threaded and thread safe.
+**Important**  Sensor drivers must be free threaded and thread safe.
 
-Â 
+ 
 
-Â 
+ 
 
-Â 
+ 
 
 
 --------------------

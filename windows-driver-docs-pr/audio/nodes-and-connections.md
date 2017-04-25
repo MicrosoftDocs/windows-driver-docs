@@ -2,7 +2,17 @@
 title: Nodes and Connections
 description: Nodes and Connections
 ms.assetid: 829b1067-8246-49fc-94f1-4988e61defac
-keywords: ["audio filters WDK audio , nodes", "audio filters WDK audio , connections", "audio topology nodes WDK", "topology nodes WDK audio", "connections WDK audio"]
+keywords:
+- audio filters WDK audio , nodes
+- audio filters WDK audio , connections
+- audio topology nodes WDK
+- topology nodes WDK audio
+- connections WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Nodes and Connections

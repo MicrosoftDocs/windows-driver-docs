@@ -2,6 +2,11 @@
 title: Bandwidth Allocation
 description: Bandwidth Allocation
 ms.assetid: 775B4085-6028-441F-9D52-341077FF1647
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bandwidth Allocation

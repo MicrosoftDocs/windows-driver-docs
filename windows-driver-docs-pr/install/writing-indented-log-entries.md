@@ -2,7 +2,16 @@
 title: Writing Indented Log Entries
 description: Writing Indented Log Entries
 ms.assetid: 8ce6b433-a004-43f6-9481-9c23c5e7e8da
-keywords: ["indented log entries WDK SetupAPI", "formats WDK SetupAPI logging", "text logs WDK SetupAPI , indented log entries", "SetupWriteTextLog"]
+keywords:
+- indented log entries WDK SetupAPI
+- formats WDK SetupAPI logging
+- text logs WDK SetupAPI , indented log entries
+- SetupWriteTextLog
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing Indented Log Entries

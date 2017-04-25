@@ -2,7 +2,14 @@
 title: Deinterlace Container Device for Deinterlacing
 description: Deinterlace Container Device for Deinterlacing
 ms.assetid: e14db243-46e5-4ab3-b134-8aadfa99e614
-keywords: ["deinterlace container device WDK DirectX VA", "container device WDK DirectX VA"]
+keywords:
+- deinterlace container device WDK DirectX VA
+- container device WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deinterlace Container Device for Deinterlacing

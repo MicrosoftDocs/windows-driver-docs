@@ -2,6 +2,11 @@
 title: Low Frequency Protection
 description: Low Frequency Protection
 ms.assetid: e4910b7b-f0c2-4ba8-a883-eff5d12485cd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Low Frequency Protection

@@ -2,7 +2,19 @@
 title: Handling an OID\_PNP\_QUERY\_POWER OID
 description: Handling an OID\_PNP\_QUERY\_POWER OID
 ms.assetid: aec9393a-debb-41eb-a8a0-b3d1936d707b
-keywords: ["OID_PNP_QUERY_POWER", "network interface cards WDK networking , transitioning power states", "NICs WDK networking , transitioning power states", "power management WDK NDIS miniport , transitioning power states", "device power states WDK networking", "power states WDK networking", "transitioning power states WDK networking"]
+keywords:
+- OID_PNP_QUERY_POWER
+- network interface cards WDK networking , transitioning power states
+- NICs WDK networking , transitioning power states
+- power management WDK NDIS miniport , transitioning power states
+- device power states WDK networking
+- power states WDK networking
+- transitioning power states WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an OID\_PNP\_QUERY\_POWER OID

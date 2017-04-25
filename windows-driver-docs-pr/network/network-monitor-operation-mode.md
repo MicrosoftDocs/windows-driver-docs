@@ -2,7 +2,14 @@
 title: Network Monitor Operation Mode
 description: Network Monitor Operation Mode
 ms.assetid: 6c43ac27-afcf-4324-9e20-181eeb3850be
-keywords: ["operation modes WDK Native 802.11", "Network Monitor WDK Native 802.11"]
+keywords:
+- operation modes WDK Native 802.11
+- Network Monitor WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Monitor Operation Mode

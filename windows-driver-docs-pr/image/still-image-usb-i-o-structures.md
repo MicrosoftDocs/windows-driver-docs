@@ -3,6 +3,11 @@ title: Still Image USB I/O Structures
 author: windows-driver-content
 description: Still Image USB I/O Structures
 ms.assetid: d70c5c11-c8f2-4196-a7f5-d97ceef10ca2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Still Image USB I/O Structures

@@ -2,7 +2,17 @@
 title: Tracing During Boot
 description: Tracing During Boot
 ms.assetid: 79594c33-5755-4484-aaf5-ac409b05ddcc
-keywords: ["software tracing WDK , during boot", "tracing WDK , during boot", "boot-time tracing WDK", "kernel-mode software tracing WDK", "boot-time tracing WDK , about boot-time tracing"]
+keywords:
+- software tracing WDK , during boot
+- tracing WDK , during boot
+- boot-time tracing WDK
+- kernel-mode software tracing WDK
+- boot-time tracing WDK , about boot-time tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracing During Boot

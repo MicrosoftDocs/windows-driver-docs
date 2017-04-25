@@ -1,6 +1,11 @@
 ---
 Description: Supported Format-Property Retrieval
 title: Supported Format-Property Retrieval
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supported Format-Property Retrieval

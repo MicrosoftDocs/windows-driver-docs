@@ -2,6 +2,11 @@
 title: Tile resources
 description: For tile resources, the asynchronous video memory manager services running on the device paging queue arenâ€™t sufficient.
 ms.assetid: D48D2046-64A6-4B0E-9235-84DD2A83DB39
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tile resources

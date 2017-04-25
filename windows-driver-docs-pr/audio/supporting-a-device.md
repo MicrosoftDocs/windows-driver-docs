@@ -2,7 +2,18 @@
 title: Supporting a Device
 description: Supporting a Device
 ms.assetid: 5f60d3aa-6061-40f7-8108-d752534b88ed
-keywords: ["audio miniport drivers WDK , device support", "miniport drivers WDK audio , device support", "port class drivers WDK audio", "PortCls WDK audio , device support", "port drivers WDK audio , miniport drivers", "port drivers WDK audio , Port Class"]
+keywords:
+- audio miniport drivers WDK , device support
+- miniport drivers WDK audio , device support
+- port class drivers WDK audio
+- PortCls WDK audio , device support
+- port drivers WDK audio , miniport drivers
+- port drivers WDK audio , Port Class
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting a Device

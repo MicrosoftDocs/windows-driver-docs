@@ -2,7 +2,15 @@
 title: Adding User-Mode Display Driver Names to the Registry
 description: Adding User-Mode Display Driver Names to the Registry
 ms.assetid: 52f98ce5-4458-4058-9134-f57e4b56377f
-keywords: ["INF files WDK display , user-mode driver names", "user-mode display drivers WDK Windows Vista , names added to registry", "registry WDK display"]
+keywords:
+- INF files WDK display , user-mode driver names
+- user-mode display drivers WDK Windows Vista , names added to registry
+- registry WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding User-Mode Display Driver Names to the Registry

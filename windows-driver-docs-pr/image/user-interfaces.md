@@ -3,6 +3,11 @@ title: User Interfaces
 author: windows-driver-content
 description: User Interfaces
 ms.assetid: aecd7156-91f9-4142-b991-4d6f4bdd6be7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User Interfaces

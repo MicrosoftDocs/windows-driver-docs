@@ -3,6 +3,11 @@ title: UEFI in Windows
 author: windows-driver-content
 description: UEFI in Windows
 ms.assetid: 14b54fe3-49f7-4ad8-b9b6-ecc747dff137
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UEFI in Windows

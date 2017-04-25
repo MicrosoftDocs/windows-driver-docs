@@ -2,7 +2,13 @@
 title: Alpha-Blend Data Loading Set
 description: Alpha-Blend Data Loading Set
 ms.assetid: 87f33411-be5d-4148-986b-8b7136ed5351
-keywords: ["alpha-blend data loading set WDK DirectX VA"]
+keywords:
+- alpha-blend data loading set WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Alpha-Blend Data Loading Set

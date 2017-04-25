@@ -2,6 +2,11 @@
 title: Communicating Verbs with the HD Audio Codec
 description: Communicating Verbs with the HD Audio Codec
 ms.assetid: d93013fa-5b09-4616-bc71-5d3838337717
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Communicating Verbs with the HD Audio Codec

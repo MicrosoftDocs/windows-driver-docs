@@ -2,7 +2,15 @@
 title: Setting Miniport Driver Information
 description: Setting Miniport Driver Information
 ms.assetid: 366d6012-c16c-457d-aa88-d395b95f4aa3
-keywords: ["WMI WDK networking , setting miniport driver information", "miniport drivers WDK networking , setting information", "NDIS miniport drivers WDK , setting information"]
+keywords:
+- WMI WDK networking , setting miniport driver information
+- miniport drivers WDK networking , setting information
+- NDIS miniport drivers WDK , setting information
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Miniport Driver Information

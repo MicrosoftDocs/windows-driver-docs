@@ -2,7 +2,16 @@
 title: Threading and Synchronization Model of Display Miniport Driver
 description: Threading and Synchronization Model of Display Miniport Driver
 ms.assetid: 4e5cf498-a2d1-44d5-b7a3-427f48b5da50
-keywords: ["threading WDK display , miniport drivers", "synchronization WDK display , miniport drivers", "miniport drivers WDK display , synchronization", "miniport drivers WDK display , threading"]
+keywords:
+- threading WDK display , miniport drivers
+- synchronization WDK display , miniport drivers
+- miniport drivers WDK display , synchronization
+- miniport drivers WDK display , threading
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Threading and Synchronization Model of Display Miniport Driver

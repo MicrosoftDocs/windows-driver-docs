@@ -2,7 +2,18 @@
 title: Bluetooth Profile Drivers
 description: Bluetooth Profile Drivers
 ms.assetid: 6fdd760b-6b6c-43d4-9ce2-515718eb46d9
-keywords: ["Bluetooth WDK", "profile drivers WDK Bluetooth", "wireless connectivity WDK Bluetooth", "connections WDK Bluetooth", "protocols WDK Bluetooth", "custom drivers WDK Bluetooth"]
+keywords:
+- Bluetooth WDK
+- profile drivers WDK Bluetooth
+- wireless connectivity WDK Bluetooth
+- connections WDK Bluetooth
+- protocols WDK Bluetooth
+- custom drivers WDK Bluetooth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth Profile Drivers

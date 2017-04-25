@@ -2,7 +2,19 @@
 title: Joining a Trace Session
 description: Joining a Trace Session
 ms.assetid: 0fd065e4-004f-426a-bdb1-4b2e7d219e20
-keywords: ["trace sessions WDK , joining", "tracing WDK , in-progress sessions", "in-progress tracing sessions WDK", "software tracing WDK , in-progress sessions", "stopping trace sessions", "canceling trace sessions", "restarting trace sessions"]
+keywords:
+- trace sessions WDK , joining
+- tracing WDK , in-progress sessions
+- in-progress tracing sessions WDK
+- software tracing WDK , in-progress sessions
+- stopping trace sessions
+- canceling trace sessions
+- restarting trace sessions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Joining a Trace Session

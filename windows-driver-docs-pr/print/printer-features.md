@@ -3,7 +3,17 @@ title: Printer Features
 author: windows-driver-content
 description: Printer Features
 ms.assetid: eabbb833-2c0a-4a55-bfa4-a3dc0619c22c
-keywords: ["Unidrv, printer features", "GPD files WDK Unidrv , printer features", "printer features WDK Unidrv", "printer features WDK Unidrv , about printer features", "Unidrv WDK print"]
+keywords:
+- Unidrv, printer features
+- GPD files WDK Unidrv , printer features
+- printer features WDK Unidrv
+- printer features WDK Unidrv , about printer features
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Features

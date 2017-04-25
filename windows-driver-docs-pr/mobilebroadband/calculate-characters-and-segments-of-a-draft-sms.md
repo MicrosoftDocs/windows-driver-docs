@@ -2,6 +2,11 @@
 title: Calculate characters and segments of a draft SMS
 description: Calculate characters and segments of a draft SMS
 ms.assetid: abbec0b0-dfa8-43e9-8b48-e99680d56b42
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calculate characters and segments of a draft SMS

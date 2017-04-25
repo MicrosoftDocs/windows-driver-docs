@@ -2,7 +2,17 @@
 title: DirectDraw Architecture
 description: DirectDraw Architecture
 ms.assetid: 3bdde4f0-7502-4ca0-80bd-c4d3d93b85fd
-keywords: ["GDI WDK DirectDraw", "drawing WDK DirectDraw , architecture", "DirectDraw WDK Windows 2000 display , architecture", "user-mode DirectDraw WDK Windows 2000 display", "kernel-mode DirectDraw WDK Windows 2000 display"]
+keywords:
+- GDI WDK DirectDraw
+- drawing WDK DirectDraw , architecture
+- DirectDraw WDK Windows 2000 display , architecture
+- user-mode DirectDraw WDK Windows 2000 display
+- kernel-mode DirectDraw WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectDraw Architecture

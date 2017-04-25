@@ -3,7 +3,13 @@ title: Details of the IPrintCoreHelperUni Interface
 author: windows-driver-content
 description: Details of the IPrintCoreHelperUni Interface
 ms.assetid: fd9a2024-2960-4546-a5a1-cd0d9739194f
-keywords: ["IPrintCoreHelperUni"]
+keywords:
+- IPrintCoreHelperUni
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Details of the IPrintCoreHelperUni Interface

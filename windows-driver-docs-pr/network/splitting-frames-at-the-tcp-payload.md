@@ -2,7 +2,14 @@
 title: Splitting Frames at the TCP Payload
 description: Splitting Frames at the TCP Payload
 ms.assetid: 3d7c6f75-4523-4ad3-b15d-53f9d4ee1074
-keywords: ["Ethernet frame splitting WDK networking , TCP payload", "TCP payload WDK header-data split"]
+keywords:
+- Ethernet frame splitting WDK networking , TCP payload
+- TCP payload WDK header-data split
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Splitting Frames at the TCP Payload

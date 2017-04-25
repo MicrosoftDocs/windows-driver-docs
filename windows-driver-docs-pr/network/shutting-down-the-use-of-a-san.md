@@ -2,7 +2,17 @@
 title: Shutting Down the Use of a SAN
 description: Shutting Down the Use of a SAN
 ms.assetid: 751104ae-5eb6-45a2-a4bd-e5eb9209eea2
-keywords: ["SAN shut downs WDK", "shutting down SAN connections WDK networking", "disconnections WDK SANs", "SAN service providers WDK , shutting down SAN", "Windows Sockets Direct WDK , shutting down SAN use"]
+keywords:
+- SAN shut downs WDK
+- shutting down SAN connections WDK networking
+- disconnections WDK SANs
+- SAN service providers WDK , shutting down SAN
+- Windows Sockets Direct WDK , shutting down SAN use
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Shutting Down the Use of a SAN

@@ -3,7 +3,17 @@ title: Storage Class Driver's BuildRequest Routine
 author: windows-driver-content
 description: Storage Class Driver's BuildRequest Routine
 ms.assetid: 2ba26628-4862-440c-b8f1-dd983cf9923b
-keywords: ["BuildRequest", "I/O stack locations WDK storage", "retrying requests WDK storage", "SCSI request sense WDK storage", "request sense WDK storage"]
+keywords:
+- BuildRequest
+- I/O stack locations WDK storage
+- retrying requests WDK storage
+- SCSI request sense WDK storage
+- request sense WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Class Driver's BuildRequest Routine

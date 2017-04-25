@@ -2,6 +2,11 @@
 title: Video memory offer and reclaim
 description: Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers must use the memory offer and reclaim feature, available starting with Windows 8, to reduce memory overhead needed for temporary surfaces in local and system memory.
 ms.assetid: 8BB6A7A3-E102-4069-BFC2-9605DDE9F020
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video memory offer and reclaim

@@ -3,7 +3,14 @@ title: Dropped Frame Properties
 author: windows-driver-content
 description: Dropped Frame Properties
 ms.assetid: 9c8bd66f-aa25-49e2-a442-9046a4d46466
-keywords: ["dropped frame properties WDK video capture", "PROPSETID_VIDCAP_DROPPEDFRAMES"]
+keywords:
+- dropped frame properties WDK video capture
+- PROPSETID_VIDCAP_DROPPEDFRAMES
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dropped Frame Properties

@@ -3,7 +3,14 @@ title: Font Substitution
 author: windows-driver-content
 description: Font Substitution
 ms.assetid: a67f42cd-1c10-46b7-8d24-0cb26339bc92
-keywords: ["printer font descriptions WDK Unidrv , substitutions", "substitution font table WDK Unidrv"]
+keywords:
+- printer font descriptions WDK Unidrv , substitutions
+- substitution font table WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Font Substitution

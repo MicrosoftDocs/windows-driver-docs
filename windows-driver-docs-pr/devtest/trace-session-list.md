@@ -2,7 +2,14 @@
 title: Trace Session List
 description: Trace Session List
 ms.assetid: 96709994-6b69-4e39-9da7-1144d6cea28c
-keywords: ["TraceView WDK , window", "Trace Session List WDK"]
+keywords:
+- TraceView WDK , window
+- Trace Session List WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Session List

@@ -3,7 +3,16 @@ title: Default Allocators
 author: windows-driver-content
 description: Default Allocators
 ms.assetid: ef61a33d-eabf-4449-8d11-cfd97aa2e403
-keywords: ["default allocators WDK kernel streaming", "system memory allocators WDK kernel streaming", "memory allocators WDK kernel streaming", "multiple destination sinks WDK kernel streaming"]
+keywords:
+- default allocators WDK kernel streaming
+- system memory allocators WDK kernel streaming
+- memory allocators WDK kernel streaming
+- multiple destination sinks WDK kernel streaming
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Default Allocators

@@ -2,7 +2,15 @@
 title: Windows Display Driver Model (WDDM) 64-Bit Issues
 description: Windows Display Driver Model (WDDM) 64-Bit Issues
 ms.assetid: ab391fca-bc98-4e98-9531-7a1d24ee173d
-keywords: ["64-bit WDK display", "display driver model WDK Windows Vista , 64-bit", "Windows Vista display driver model WDK , 64-bit"]
+keywords:
+- 64-bit WDK display
+- display driver model WDK Windows Vista , 64-bit
+- Windows Vista display driver model WDK , 64-bit
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Display Driver Model (WDDM) 64-Bit Issues

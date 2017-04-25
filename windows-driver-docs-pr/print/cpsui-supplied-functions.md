@@ -3,7 +3,18 @@ title: CPSUI-Supplied Functions
 author: windows-driver-content
 description: CPSUI-Supplied Functions
 ms.assetid: 49da252a-fb51-43f3-b2e8-27253470b4b5
-keywords: ["Common Property Sheet User Interface WDK print , functions", "CPSUI WDK print , functions", "property sheet pages WDK print , functions", "functions WDK CPSUI", "CommonPropertySheetUI", "ComPropSheet"]
+keywords:
+- Common Property Sheet User Interface WDK print , functions
+- CPSUI WDK print , functions
+- property sheet pages WDK print , functions
+- functions WDK CPSUI
+- CommonPropertySheetUI
+- ComPropSheet
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CPSUI-Supplied Functions

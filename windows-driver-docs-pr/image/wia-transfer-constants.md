@@ -3,6 +3,11 @@ title: WIA Transfer Constants
 author: windows-driver-content
 description: WIA Transfer Constants
 ms.assetid: 69f76919-5bbb-4968-997c-2d51f19aab6b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Transfer Constants

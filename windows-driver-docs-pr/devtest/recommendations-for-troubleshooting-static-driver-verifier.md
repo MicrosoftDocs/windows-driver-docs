@@ -2,6 +2,11 @@
 title: Recommendations for Troubleshooting Static Driver Verifier
 description: Recommendations for Troubleshooting Static Driver Verifier
 ms.assetid: 14c39437-12ca-4938-93bb-79bbcb192de2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Recommendations for Troubleshooting Static Driver Verifier

@@ -2,7 +2,13 @@
 title: DirectX Runtime Behavior
 description: DirectX Runtime Behavior
 ms.assetid: 98cfb09c-74ed-4329-b663-5f813a84debe
-keywords: ["DirectX runtime rotation WDK display"]
+keywords:
+- DirectX runtime rotation WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX Runtime Behavior

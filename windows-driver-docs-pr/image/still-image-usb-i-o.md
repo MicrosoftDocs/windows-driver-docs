@@ -3,6 +3,11 @@ title: Still Image USB I/O
 author: windows-driver-content
 description: Still Image USB I/O
 ms.assetid: 93b320b3-1a3f-4ed9-8692-d0d94a3b69bd
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Still Image USB I/O

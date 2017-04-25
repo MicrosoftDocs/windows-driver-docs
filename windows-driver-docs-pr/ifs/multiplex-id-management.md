@@ -3,7 +3,19 @@ title: Multiplex ID Management
 author: windows-driver-content
 description: Multiplex ID Management
 ms.assetid: feffc421-bd51-4174-80a4-1f9a36355667
-keywords: ["RDBSS WDK file systems , multiplex ID", "Redirected Drive Buffering Subsystem WDK file systems , multiplex ID", "multiplex ID WDK network redirectors", "MID WDK network redirectors", "mapping MID", "MID_ATLAS structure", "MID_MAP structure"]
+keywords:
+- RDBSS WDK file systems , multiplex ID
+- Redirected Drive Buffering Subsystem WDK file systems , multiplex ID
+- multiplex ID WDK network redirectors
+- MID WDK network redirectors
+- mapping MID
+- MID_ATLAS structure
+- MID_MAP structure
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multiplex ID Management

@@ -2,7 +2,18 @@
 title: Registering and Deregistering DMA Channels
 description: Registering and Deregistering DMA Channels
 ms.assetid: b24e0a56-1864-4f70-a646-c35e8eccd9e3
-keywords: ["scatter/gather DMA WDK networking , DMA channels", "SGDMA WDK networking , DMA channels", "NdisMRegisterScatterGatherDma", "NdisMDeregisterScatterGatherDma", "DMA channels WDK networking", "channels WDK SGDMA"]
+keywords:
+- scatter/gather DMA WDK networking , DMA channels
+- SGDMA WDK networking , DMA channels
+- NdisMRegisterScatterGatherDma
+- NdisMDeregisterScatterGatherDma
+- DMA channels WDK networking
+- channels WDK SGDMA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering and Deregistering DMA Channels

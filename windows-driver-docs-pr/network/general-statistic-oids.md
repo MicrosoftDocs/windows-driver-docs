@@ -2,6 +2,11 @@
 title: General Statistic OIDs
 description: General Statistic OIDs
 ms.assetid: ebdd5723-d913-4c1a-8b1f-f70e4b0080ad
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Statistic OIDs

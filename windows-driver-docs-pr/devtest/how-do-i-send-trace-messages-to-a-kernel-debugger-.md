@@ -2,6 +2,11 @@
 title: How do I send trace messages to a kernel debugger
 description: How do I send trace messages to a kernel debugger
 ms.assetid: 867791a7-30a5-4539-be85-61f1716c279a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How do I send trace messages to a kernel debugger?

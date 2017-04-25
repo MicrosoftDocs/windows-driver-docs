@@ -2,7 +2,15 @@
 title: Registering a SAP
 description: Registering a SAP
 ms.assetid: 2b318bf0-4f0e-4db7-850b-510a9f2c7cf0
-keywords: ["service access points WDK CoNDIS", "SAPs WDK CoNDIS", "registering SAPs"]
+keywords:
+- service access points WDK CoNDIS
+- SAPs WDK CoNDIS
+- registering SAPs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering a SAP

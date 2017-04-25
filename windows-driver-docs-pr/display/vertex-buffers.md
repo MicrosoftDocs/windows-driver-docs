@@ -2,7 +2,14 @@
 title: Vertex Buffers
 description: Vertex Buffers
 ms.assetid: 8b62a1bb-8f89-4bb2-8f26-ae9de40bad10
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers", "vertex buffers WDK DirectX 8.0"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers
+- vertex buffers WDK DirectX 8.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Vertex Buffers

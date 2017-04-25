@@ -2,7 +2,17 @@
 title: UAA Class Drivers
 description: UAA Class Drivers
 ms.assetid: 57f8f6fe-53a9-4ef1-b4f6-715232e88fdf
-keywords: ["HD Audio, Universal Audio Architecture", "High Definition Audio (HD Audio), Universal Audio Architecture", "UAA WDK", "Universal Audio Architecture WDK", "class drivers WDK audio"]
+keywords:
+- HD Audio, Universal Audio Architecture
+- High Definition Audio (HD Audio), Universal Audio Architecture
+- UAA WDK
+- Universal Audio Architecture WDK
+- class drivers WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UAA Class Drivers

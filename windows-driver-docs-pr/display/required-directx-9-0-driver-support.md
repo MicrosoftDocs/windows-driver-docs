@@ -2,7 +2,14 @@
 title: Required DirectX 9.0 Driver Support
 description: Required DirectX 9.0 Driver Support
 ms.assetid: 9bc68101-c1be-470c-9eb7-9a689a2dd47c
-keywords: ["required driver support WDK DirectX 9.0", "DirectX 9.0 driver support WDK"]
+keywords:
+- required driver support WDK DirectX 9.0
+- DirectX 9.0 driver support WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Required DirectX 9.0 Driver Support

@@ -3,6 +3,11 @@ title: DISTRIBUTED SCAN DEVICE WEB SERVICE PROTOCOL SUMMARY
 author: windows-driver-content
 description: DISTRIBUTED SCAN DEVICE WEB SERVICE PROTOCOL SUMMARY
 ms.assetid: de9925b1-be55-4d22-8255-0f0b8744ee75
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DISTRIBUTED SCAN DEVICE WEB SERVICE PROTOCOL SUMMARY

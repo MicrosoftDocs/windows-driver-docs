@@ -1,7 +1,12 @@
 ---
-title: Initialization of a Non-SIM-Locked GPRS Device
+title: Initializing a non-SIM-locked GPRS device (provisioned context)
 description: Initialization of a Non-SIM-Locked GPRS Device with a Provisioned Context
 ms.assetid: 0bbd4842-72ad-445b-9f28-b28e8740f263
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initialization of a Non-SIM-Locked GPRS Device with a Provisioned Context

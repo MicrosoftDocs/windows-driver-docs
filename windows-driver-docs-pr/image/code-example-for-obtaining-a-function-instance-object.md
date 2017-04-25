@@ -3,6 +3,11 @@ title: Code Example for Obtaining a Function Instance Object
 author: windows-driver-content
 description: Code Example for Obtaining a Function Instance Object
 ms.assetid: d4e3c5e0-d904-4049-9bc2-6c21d2a6f905
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Example for Obtaining a Function Instance Object

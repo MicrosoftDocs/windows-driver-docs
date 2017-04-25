@@ -3,7 +3,20 @@ title: Basic Architecture of a Network Redirector
 author: windows-driver-content
 description: Basic Architecture of a Network Redirector
 ms.assetid: 60a7c79d-b89f-4c8b-9619-bd48c9e1efac
-keywords: ["network redirectors WDK , architecture", "redirector drivers WDK , architecture", "TDI drivers WDK file systems", "Transport Driver Interface WDK file systems", "DLLs WDK file systems", "SYS WDK file systems", "kernel-mode file system drivers WDK file systems", "user-mode DLLs WDK file systems"]
+keywords:
+- network redirectors WDK , architecture
+- redirector drivers WDK , architecture
+- TDI drivers WDK file systems
+- Transport Driver Interface WDK file systems
+- DLLs WDK file systems
+- SYS WDK file systems
+- kernel-mode file system drivers WDK file systems
+- user-mode DLLs WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Basic Architecture of a Network Redirector

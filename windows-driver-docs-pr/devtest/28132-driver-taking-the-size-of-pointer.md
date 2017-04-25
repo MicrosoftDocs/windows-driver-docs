@@ -2,7 +2,14 @@
 title: C28132
 description: Warning C28132 Taking the size of pointer.
 ms.assetid: 9047cfb5-220f-42ad-ba1d-3c1bd43a3423
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28132

@@ -2,7 +2,15 @@
 title: Protocol Driver Reset Operations
 description: Protocol Driver Reset Operations
 ms.assetid: 862029e5-8c46-4889-80f5-15c463f228a3
-keywords: ["protocol drivers WDK networking , reset operations", "NDIS protocol drivers WDK , reset operations", "reset operations WDK NDIS protocol"]
+keywords:
+- protocol drivers WDK networking , reset operations
+- NDIS protocol drivers WDK , reset operations
+- reset operations WDK NDIS protocol
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Protocol Driver Reset Operations

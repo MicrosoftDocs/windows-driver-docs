@@ -3,6 +3,11 @@ title: Properties for All WIA Minidrivers
 author: windows-driver-content
 description: Properties for All WIA Minidrivers
 ms.assetid: ba85dbbd-2333-4f4f-b12a-84985773eef6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Properties for All WIA Minidrivers

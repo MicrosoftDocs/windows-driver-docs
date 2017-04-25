@@ -3,7 +3,23 @@ title: Notification Filtering and Communication Styles
 author: windows-driver-content
 description: Notification Filtering and Communication Styles
 ms.assetid: 66d019c2-0760-440d-acc4-85a7c073929a
-keywords: ["spooler notification WDK print , filtering", "print spooler notification WDK , filtering", "notification filtering WDK print spooler", "filtering WDK spooler notification", "CreatePrintAsyncNotifyChannel", "RegisterForPrintAsyncNotifications", "notification data types WDK print spooler", "data types WDK spooler notification", "communication WDK spooler notification", "all listener notifications WDK print spooler", "per-user listener filtering WDK spooler notification"]
+keywords:
+- spooler notification WDK print , filtering
+- print spooler notification WDK , filtering
+- notification filtering WDK print spooler
+- filtering WDK spooler notification
+- CreatePrintAsyncNotifyChannel
+- RegisterForPrintAsyncNotifications
+- notification data types WDK print spooler
+- data types WDK spooler notification
+- communication WDK spooler notification
+- all listener notifications WDK print spooler
+- per-user listener filtering WDK spooler notification
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notification Filtering and Communication Styles

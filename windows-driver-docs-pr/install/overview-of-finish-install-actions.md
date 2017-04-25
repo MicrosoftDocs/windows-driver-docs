@@ -2,6 +2,11 @@
 title: Overview of Finish-Install Actions
 description: Overview of Finish-Install Actions
 ms.assetid: 986ac884-2970-4eda-a800-88fd30b95562
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Finish-Install Actions

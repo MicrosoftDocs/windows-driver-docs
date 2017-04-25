@@ -2,7 +2,19 @@
 title: Audio Filters, Pins, and Nodes
 description: Audio Filters, Pins, and Nodes
 ms.assetid: 5f30703c-bf33-49bb-bce2-990ad5b54a9c
-keywords: ["WDM audio drivers WDK , filters", "audio drivers WDK , filters", "WDM audio drivers WDK , pins", "audio drivers WDK , pins", "WDM audio drivers WDK , nodes", "audio drivers WDK , nodes", "filters WDK audio"]
+keywords:
+- WDM audio drivers WDK , filters
+- audio drivers WDK , filters
+- WDM audio drivers WDK , pins
+- audio drivers WDK , pins
+- WDM audio drivers WDK , nodes
+- audio drivers WDK , nodes
+- filters WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Filters, Pins, and Nodes

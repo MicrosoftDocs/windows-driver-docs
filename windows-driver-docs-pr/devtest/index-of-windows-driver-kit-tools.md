@@ -2,7 +2,27 @@
 title: Index of Windows Driver Kit Tools
 description: Index of Windows Driver Kit Tools
 ms.assetid: 26db88c4-8fb8-4308-ab8a-1a1eef5e19d8
-keywords: ["Disabler tool", "DbgCon tool", "Sniffir tool", "Sledge tool", "Call Usage Verifier tool", "CUV tool", "tools WDK , listed", "driver development tools WDK , listed", "Sleep State Chooser", "sleeper", "Acpislp", "Manual Power State Change Test", "GUIDGen WDK", "GUID Generator WDK", "GUIDGen.exe WDK"]
+keywords:
+- Disabler tool
+- DbgCon tool
+- Sniffir tool
+- Sledge tool
+- Call Usage Verifier tool
+- CUV tool
+- tools WDK , listed
+- driver development tools WDK , listed
+- Sleep State Chooser
+- sleeper
+- Acpislp
+- Manual Power State Change Test
+- GUIDGen WDK
+- GUID Generator WDK
+- GUIDGen.exe WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Index of Windows Driver Kit Tools
@@ -26,7 +46,7 @@ The information in the following tables describes the tools that are useful for 
 
 -   [Audio/Video Drivers](#tech-audio-video)
 -   [Bluetooth Drivers](#tech-bluetooth)
--   [Windows Image Acquisition (WIA) Drivers](#tech-wia)
+-   [Windows Image Acquisition (WIA) Drivers](#tech_wia)
 -   [Windows Portable Devices (WPD) Drivers](#tech-wpd)
 -   [Printer Drivers](#tech-printer)
 -   [Sensors](#tech-sensors)
@@ -98,7 +118,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### Technology: Bluetooth Drivers<a name="tech-bluetooth"></a>
+### Technology: Bluetooth Drivers <a name="tech-bluetooth"></a>
 
 <table>
 <colgroup>
@@ -128,7 +148,7 @@ The information in the following tables describes the tools that are useful for 
 
  
 
-### Technology: Windows Image Acquisition (WIA) Drivers <a name="tech-wia></a>
+### Technology: Windows Image Acquisition (WIA) Drivers<a name="tech_wia"></a>
 
 <table>
 <colgroup>

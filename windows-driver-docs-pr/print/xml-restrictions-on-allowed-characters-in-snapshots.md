@@ -3,7 +3,17 @@ title: XML Restrictions on Allowed Characters in Snapshots
 author: windows-driver-content
 description: XML Restrictions on Allowed Characters in Snapshots
 ms.assetid: e90fb0f2-28f7-4264-bd8c-cd5994717bad
-keywords: ["snapshots WDK GDL , allowed characters", "GDL WDK , source files", "GDL WDK , strings", "source files WDK GDL", "strings WDK GDL , allowed characters"]
+keywords:
+- snapshots WDK GDL , allowed characters
+- GDL WDK , source files
+- GDL WDK , strings
+- source files WDK GDL
+- strings WDK GDL , allowed characters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XML Restrictions on Allowed Characters in Snapshots

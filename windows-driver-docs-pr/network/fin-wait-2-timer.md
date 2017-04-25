@@ -2,7 +2,15 @@
 title: FIN\_WAIT\_2 Timer
 description: FIN\_WAIT\_2 Timer
 ms.assetid: 912d30a7-5bd4-4460-8136-466f5ad84536
-keywords: ["timers WDK TCP chimney offload , FIN_WAIT_2 timers", "TCP timers WDK TCP chimney offload , FIN_WAIT_2 timers", "FIN_WAIT_2 timers WDK TCP chimney offload"]
+keywords:
+- timers WDK TCP chimney offload , FIN_WAIT_2 timers
+- TCP timers WDK TCP chimney offload , FIN_WAIT_2 timers
+- FIN_WAIT_2 timers WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # FIN\_WAIT\_2 Timer

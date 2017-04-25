@@ -2,7 +2,17 @@
 title: Finish-Install Actions
 description: Finish-Install Actions
 ms.assetid: 52c7f166-ee74-46b6-815b-5d360d829b4c
-keywords: ["finish-install actions WDK device installations", "installer finish-install actions WDK device installations", "finish-install wizard pages WDK device installations", "class installers WDK device installations , finish-install actions", "co-installers WDK"]
+keywords:
+- finish-install actions WDK device installations
+- installer finish-install actions WDK device installations
+- finish-install wizard pages WDK device installations
+- class installers WDK device installations , finish-install actions
+- co-installers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Finish-Install Actions

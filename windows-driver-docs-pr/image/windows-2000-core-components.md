@@ -3,6 +3,11 @@ title: Windows 2000 Core Components
 author: windows-driver-content
 description: Windows 2000 Core Components
 ms.assetid: e3c560e8-ad75-4187-84c2-f918a201d10e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows 2000 Core Components

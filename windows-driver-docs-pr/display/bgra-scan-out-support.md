@@ -2,7 +2,15 @@
 title: BGRA Scan-Out Support
 description: BGRA Scan-Out Support
 ms.assetid: 88ef5de7-59cc-4a8a-aaf7-74489a7ac0ab
-keywords: ["Direct3D version 10.1 WDK Windows 7 display , BGRA scan-out support", "BGRA scan-out support WDK Windows 7 display", "scan-out support WDK Windows 7 display"]
+keywords:
+- Direct3D version 10.1 WDK Windows 7 display , BGRA scan-out support
+- BGRA scan-out support WDK Windows 7 display
+- scan-out support WDK Windows 7 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # BGRA Scan-Out Support

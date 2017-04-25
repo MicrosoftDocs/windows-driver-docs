@@ -2,6 +2,11 @@
 title: Hardware submissions
 description: Hardware submissions
 ms.assetid: 7EFA9617-CF1D-4259-B0C4-A9DDCF5C3A1F
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware submissions

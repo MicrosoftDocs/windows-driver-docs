@@ -2,7 +2,17 @@
 title: Handling an Interface Object Query Request
 description: Handling an Interface Object Query Request
 ms.assetid: c4dc4d9e-52ea-477f-9bc8-cf04ccaa73b2
-keywords: ["NDIS network interfaces WDK , query requests", "network interfaces WDK , query requests", "OIDs WDK networking , network interfaces", "OID requests WDK networking", "query requests WDK networking"]
+keywords:
+- NDIS network interfaces WDK , query requests
+- network interfaces WDK , query requests
+- OIDs WDK networking , network interfaces
+- OID requests WDK networking
+- query requests WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling an Interface Object Query Request

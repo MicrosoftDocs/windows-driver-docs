@@ -3,6 +3,11 @@ title: Implementing Image Color Management
 author: windows-driver-content
 description: Implementing Image Color Management
 ms.assetid: b3184a8b-4f32-4cb0-8f68-777d85110142
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing Image Color Management

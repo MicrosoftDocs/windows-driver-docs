@@ -3,7 +3,17 @@ title: Medium GUIDs
 author: windows-driver-content
 description: Medium GUIDs
 ms.assetid: 4209952c-0ba5-4359-b612-91529a0a46f1
-keywords: ["video capture WDK AVStream , mediums", "capturing video WDK AVStream , mediums", "mediums WDK video capture", "pin connections WDK video capture", "GUIDs WDK video capture"]
+keywords:
+- video capture WDK AVStream , mediums
+- capturing video WDK AVStream , mediums
+- mediums WDK video capture
+- pin connections WDK video capture
+- GUIDs WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Medium GUIDs

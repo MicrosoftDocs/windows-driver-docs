@@ -2,7 +2,16 @@
 title: Invalidating Offloaded State
 description: Invalidating Offloaded State
 ms.assetid: b8cc004a-0630-4ee5-94a1-c5437c911131
-keywords: ["TCP chimney offload WDK networking , invalidating offloaded state", "chimney offload WDK networking , invalidating offloaded state", "offload state WDK TCP chimney offload , invalidating offloaded state", "invalidating offloaded state WDK TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , invalidating offloaded state
+- chimney offload WDK networking , invalidating offloaded state
+- offload state WDK TCP chimney offload , invalidating offloaded state
+- invalidating offloaded state WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Invalidating Offloaded State

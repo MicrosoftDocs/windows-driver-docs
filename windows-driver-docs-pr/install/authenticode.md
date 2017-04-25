@@ -2,7 +2,17 @@
 title: Authenticode Digital Signatures
 description: Authenticode Digital Signatures
 ms.assetid: b4cddf64-dc1a-47b7-803d-afb1e175c9d5
-keywords: ["Authenticode WDK driver signing", "driver signing WDK , Authenticode", "signing drivers WDK , Authenticode", "digital signatures WDK , Authenticode", "signatures WDK , Authenticode"]
+keywords:
+- Authenticode WDK driver signing
+- driver signing WDK , Authenticode
+- signing drivers WDK , Authenticode
+- digital signatures WDK , Authenticode
+- signatures WDK , Authenticode
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Authenticode Digital Signatures

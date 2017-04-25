@@ -3,7 +3,17 @@ title: NFC power management
 author: windows-driver-content
 description: NFC power management
 ms.assetid: 7B45730F-A49D-45E0-B314-0464141E3C8B
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NFC power management

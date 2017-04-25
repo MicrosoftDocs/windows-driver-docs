@@ -3,7 +3,18 @@ title: Synchronizing Cancellation of Sent Requests
 author: windows-driver-content
 description: Synchronizing Cancellation of Sent Requests
 ms.assetid: e7ec65c9-bc7b-46ea-853d-3e23b1763666
-keywords: ["request processing WDK KMDF , canceling requests", "I/O requests WDK KMDF , canceling", "synchronization WDK KMDF", "request processing WDK KMDF , synchronization", "I/O requests WDK KMDF , synchronization", "sent request cancellations WDK KMDF"]
+keywords:
+- request processing WDK KMDF , canceling requests
+- I/O requests WDK KMDF , canceling
+- synchronization WDK KMDF
+- request processing WDK KMDF , synchronization
+- I/O requests WDK KMDF , synchronization
+- sent request cancellations WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing Cancellation of Sent Requests

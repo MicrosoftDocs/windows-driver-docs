@@ -2,7 +2,17 @@
 title: Processing in the 8-bit YUV Color Space
 description: Processing in the 8-bit YUV Color Space
 ms.assetid: fbf62dc6-b5bf-43f6-baa8-c6d1cee80f9b
-keywords: ["ProcAmp WDK DirectX VA , YUV color space", "YUV formats WDK DirectX VA", "Y processing WDK DirectX VA", "UV processing WDK DirectX VA", "color space conversions WDK DirectX VA"]
+keywords:
+- ProcAmp WDK DirectX VA , YUV color space
+- YUV formats WDK DirectX VA
+- Y processing WDK DirectX VA
+- UV processing WDK DirectX VA
+- color space conversions WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing in the 8-bit YUV Color Space

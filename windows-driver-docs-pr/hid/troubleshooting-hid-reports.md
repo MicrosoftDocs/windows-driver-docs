@@ -3,7 +3,17 @@ title: Troubleshooting HID Reports
 author: windows-driver-content
 description: Troubleshooting HID Reports
 ms.assetid: 8fbf641b-461b-44c2-9cc5-c1547abc75d6
-keywords: ["HID reports WDK , troubleshooting", "reports WDK HID , troubleshooting", "troubleshooting reports WDK HID", "dropped HID reports WDK", "errors WDK HID reports"]
+keywords:
+- HID reports WDK , troubleshooting
+- reports WDK HID , troubleshooting
+- troubleshooting reports WDK HID
+- dropped HID reports WDK
+- errors WDK HID reports
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting HID Reports

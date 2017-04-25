@@ -3,6 +3,11 @@ title: Registry Access for WIA Drivers
 author: windows-driver-content
 description: Registry Access for WIA Drivers
 ms.assetid: 0e0b7493-858b-4add-9e1d-fd71bae21b6e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Access for WIA Drivers

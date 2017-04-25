@@ -2,7 +2,22 @@
 title: Connecting and Configuring Displays
 description: Connecting and Configuring Displays
 ms.assetid: 8c16f99e-c7fd-46e2-b102-f5f0a297fbec
-keywords: ["displays WDK Windows 7 display", "displays WDK Windows Server 2008 R2 display", "displays WDK Windows 7 display , connecting", "displays WDK Windows Server 2008 R2 display , connecting", "displays WDK Windows 7 display , configuring", "displays WDK Windows Server 2008 R2 display , configuring", "connecting displays WDK Windows 7 display", "connecting displays WDK Windows Server 2008 R2 display", "configuring displays WDK Windows 7 display", "configuring displays WDK Windows Server 2008 R2 display"]
+keywords:
+- displays WDK Windows 7 display
+- displays WDK Windows Server 2008 R2 display
+- displays WDK Windows 7 display , connecting
+- displays WDK Windows Server 2008 R2 display , connecting
+- displays WDK Windows 7 display , configuring
+- displays WDK Windows Server 2008 R2 display , configuring
+- connecting displays WDK Windows 7 display
+- connecting displays WDK Windows Server 2008 R2 display
+- configuring displays WDK Windows 7 display
+- configuring displays WDK Windows Server 2008 R2 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connecting and Configuring Displays

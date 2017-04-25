@@ -1,9 +1,18 @@
 ---
 title: USB Video Class Properties
 author: windows-driver-content
-description: .
+description: Clients of the USB Video Class can use the following video capture property sets described in this topic.
 ms.assetid: 6295926b-4ec5-42f5-98ca-a375d36f917b
-keywords: ["USB Video Class drivers WDK AVStream , properties", "Video Class drivers WDK USB , properties", "UVC drivers WDK AVStream , properties", "property sets WDK USB Video Class"]
+keywords:
+- USB Video Class drivers WDK AVStream , properties
+- Video Class drivers WDK USB , properties
+- UVC drivers WDK AVStream , properties
+- property sets WDK USB Video Class
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Video Class Properties

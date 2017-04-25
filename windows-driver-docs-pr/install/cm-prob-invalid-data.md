@@ -2,7 +2,13 @@
 title: CM_PROB_INVALID_DATA
 description: CM_PROB_INVALID_DATA
 ms.assetid: c9a43ace-e8e6-4cf4-8d71-aa27fb2f09a4
-keywords: ["CM_PROB_INVALID_DATA"]
+keywords:
+- CM_PROB_INVALID_DATA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CM_PROB_INVALID_DATA

@@ -2,6 +2,11 @@
 title: Stream Latency During Recording
 description: Stream Latency During Recording
 ms.assetid: b9391b34-acd8-4434-b00c-48bbbc0b6647
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Latency During Recording

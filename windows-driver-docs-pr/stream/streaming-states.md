@@ -3,7 +3,20 @@ title: Streaming States
 author: windows-driver-content
 description: Streaming States
 ms.assetid: 1030e5cd-441b-4f6a-8f6a-21ce11aaca96
-keywords: ["video capture WDK AVStream , stream states", "capturing video WDK AVStream , stream states", "stream states WDK video capture", "states WDK video capture", "STOP state WDK video capture", "ACQUIRE state WDK video capture", "PAUSE state WDK video capture", "RUN state WDK video capture"]
+keywords:
+- video capture WDK AVStream , stream states
+- capturing video WDK AVStream , stream states
+- stream states WDK video capture
+- states WDK video capture
+- STOP state WDK video capture
+- ACQUIRE state WDK video capture
+- PAUSE state WDK video capture
+- RUN state WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Streaming States

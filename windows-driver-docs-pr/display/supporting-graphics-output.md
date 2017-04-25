@@ -2,7 +2,15 @@
 title: Supporting Graphics Output
 description: Supporting Graphics Output
 ms.assetid: 2ac9b01d-9dca-44b4-9645-9c5eefb2ef1b
-keywords: ["GDI WDK Windows 2000 display , graphics output", "graphics drivers WDK Windows 2000 display , output", "drawing WDK GDI , graphics output"]
+keywords:
+- GDI WDK Windows 2000 display , graphics output
+- graphics drivers WDK Windows 2000 display , output
+- drawing WDK GDI , graphics output
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Graphics Output

@@ -2,7 +2,17 @@
 title: Creating Components for Using a SAN
 description: Creating Components for Using a SAN
 ms.assetid: b7405eda-734e-43f0-b0fe-747a06766291
-keywords: ["system area networks WDK , creating components", "SAN WDK , creating components", "transport drivers WDK SANs", "data transfers WDK SANs", "transferring data WDK SANs"]
+keywords:
+- system area networks WDK , creating components
+- SAN WDK , creating components
+- transport drivers WDK SANs
+- data transfers WDK SANs
+- transferring data WDK SANs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Components for Using a SAN

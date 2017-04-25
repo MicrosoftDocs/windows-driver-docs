@@ -2,13 +2,19 @@
 title: Inf2Cat
 description: Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a driver package's INF file can be digitally-signed for a specified list of Windows versions.
 ms.assetid: 5d85058e-4051-4321-a4c1-b1a71d232b7f
-keywords: ["Inf2Cat Driver Development Tools"]
+keywords:
+- Inf2Cat Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - Inf2Cat
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Inf2Cat

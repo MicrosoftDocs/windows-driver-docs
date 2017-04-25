@@ -3,6 +3,11 @@ title: Breaking Oplocks
 author: windows-driver-content
 description: Breaking Oplocks
 ms.assetid: 1f3c4a99-5ad2-4597-a1c9-a21f80c40291
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Breaking Oplocks

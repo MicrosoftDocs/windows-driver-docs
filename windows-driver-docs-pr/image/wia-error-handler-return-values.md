@@ -3,6 +3,11 @@ title: WIA Error Handler Return Values
 author: windows-driver-content
 description: WIA Error Handler Return Values
 ms.assetid: 9b8efcd7-e767-4344-b3a1-96b1898e102f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Error Handler Return Values

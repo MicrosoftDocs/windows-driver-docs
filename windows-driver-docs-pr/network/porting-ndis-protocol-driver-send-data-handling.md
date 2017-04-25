@@ -2,7 +2,13 @@
 title: Porting NDIS Protocol Driver Send Data Handling
 description: Porting NDIS Protocol Driver Send Data Handling
 ms.assetid: 0d0a071d-5d4c-46c1-8b4f-b8bff9e3d465
-keywords: ["send operation porting WDK networking"]
+keywords:
+- send operation porting WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting NDIS Protocol Driver Send Data Handling
