@@ -1534,6 +1534,7 @@
 #### [Native 802.11 Extensible AP OIDs](native-802-11-extensible-ap-oids.md)
 ##### [Native 802.11 Extensible AP MIB objects](native-802-11-extensible-ap-mib-objects.md)
 #### [Native 802.11 Extensible Station OIDs](native-802-11-extensible-station-oids.md)
+##### [Native 802.11 Extensible Station MIB objects](native-802-11-extensible-station-mib-objects.md)
 #### [Native 802.11 Network Monitor OIDs](native-802-11-network-monitor-oids.md)
 #### [Native 802.11 Operational OIDs](native-802-11-operational-oids.md)
 #### [Native 802.11 MIB OIDs](native-802-11-mib-oids.md)
