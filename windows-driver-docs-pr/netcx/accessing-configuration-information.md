@@ -18,7 +18,7 @@ if (! NT_SUCCESS(status)) {
     return status;
 }
 
-status = NetConfigurationQueryUlong(configuration, 0, &SomeValue, &myvalue);
+status = NetConfigurationQueryUlong(configuration, NET_CONFIGURATION_QUERY_ULONG_NO_FLAGS, &SomeValue, &myvalue);
 
 NetConfigurationClose(configuration);
 ```
