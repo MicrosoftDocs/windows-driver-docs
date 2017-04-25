@@ -1,0 +1,160 @@
+---
+title: Using Debugger Commands
+description: Using Debugger Commands
+ms.assetid: 64dcc364-53b5-41d3-9266-abcfe4b328f4
+keywords: ["commands", "commands, using", "debugger commands", "debugger commands, See "commands"", "meta-commands ("." commands)", "meta-commands ("." commands), using", ". commands", ". commands, See "meta-commands"", "macros"]
+---
+
+# Using Debugger Commands
+
+
+## <span id="ddk_using_debugger_commands_dbg"></span><span id="DDK_USING_DEBUGGER_COMMANDS_DBG"></span>
+
+
+For KD or CDB, "Debugger Command window" refers to the whole window. You enter commands at the prompt at the bottom of the window. If the commands have any output, the window displays the output and then displays the prompt again.
+
+For Visual Studio, "Debugger Command window" refers to a window that is labeled "Debugger Immediate Window" in the title bar. This window has two panes:
+
+-   In the small, bottom pane, you enter commands.
+
+-   In the large, upper pane, you view command output.
+
+For WinDbg, "Debugger Command window" refers to the window that is labeled "Command" in the title bar. This window contains two panes:
+
+-   In the small, bottom pane, you enter commands.
+
+-   In the large, upper pane, you view command output.
+
+This window is always open at the beginning of a debugging session. You can reopen or switch to this window by clicking **Command** on the **View** menu, pressing ALT+1, or clicking the **Command (Alt+1)** button (![screen shot of the debugger command window button](images/tbcmd.png)) on the toolbar.
+
+You can use the UP ARROW and DOWN ARROW keys to scroll through the command history. When a previous command appears, you can edit it and then press ENTER to execute the previous command (or the edited version of the previous command). The cursor does not have to be at the end of the line for this procedure to work correctly.
+
+### <span id="debugger_command_window_prompt"></span><span id="DEBUGGER_COMMAND_WINDOW_PROMPT"></span>Debugger Command Window Prompt
+
+When you are performing user-mode debugging, the prompt in the Debugger Command window looks like the following example.
+
+``` syntax
+2:005>
+```
+
+In the preceding example, 2 is the current process number, and 005 is the current thread number.
+
+If you attach the debugger to more than one computer, the system number is included before the process and thread number, as in the following example.
+
+``` syntax
+3:2:005>
+```
+
+In this example, 3 is the current system number, 2 is the current process number, and 005 is the current thread number.
+
+When you are performing kernel-mode debugging on a target computer that has only one processor, the prompt looks like the following example.
+
+``` syntax
+kd>
+```
+
+However, if the target computer has multiple processors, the number of the current processor appears before the prompt, as in the following example.
+
+``` syntax
+0: kd> 
+```
+
+If the debugger is busy processing a previously issued command, new commands will temporarily not be processed, although they can be added to the command buffer. In addition, you can still use [control keys](https://msdn.microsoft.com/library/windows/hardware/ff539306) in KD and CDB, and you can still use menu commands and [shortcut keys](https://msdn.microsoft.com/library/windows/hardware/ff551913) in WinDbg. When KD or CDB is in this busy state, no prompt is displayed. When WinDbg is in this busy state, the following indicator will appear in place of the prompt:
+
+``` syntax
+*BUSY* 
+```
+
+You can use the [**.pcmd (Set Prompt Command)**](https://msdn.microsoft.com/library/windows/hardware/ff564660) command to add text to this prompt.
+
+### <span id="kinds_of_commands"></span><span id="KINDS_OF_COMMANDS"></span>Kinds of Commands
+
+WinDbg, KD, and CDB support a variety of commands. Some commands are shared between the debuggers, and some are available only on one or two of the debuggers.
+
+Some commands are available only in live debugging, and other commands are available only when you debug a dump file.
+
+Some commands are available only during user-mode debugging, and other commands are available only during kernel-mode debugging.
+
+Some commands are available only when the target is running on certain processors. For more information about all of the commands and their restrictions, see [Debugger Commands](https://msdn.microsoft.com/library/windows/hardware/ff540507).
+
+### <span id="editing__repeating__and_canceling_commands"></span><span id="EDITING__REPEATING__AND_CANCELING_COMMANDS"></span>Editing, Repeating, and Canceling Commands
+
+You can use standard editing keys when you enter a command:
+
+-   Use the UP ARROW and DOWN ARROW keys to find previous commands.
+
+-   Edit the current command with the BACKSPACE, DELETE, INSERT, and LEFT ARROW and RIGHT ARROW keys.
+
+-   Press the ESC key to clear the current line.
+
+You can press the TAB key to automatically complete your text entry. In any of the debuggers, press the TAB key after you enter at least one character to automatically complete a command. Press the TAB key repeatedly to cycle through text completion options, and hold down the SHIFT key and press TAB to cycle backward. You can also use wildcard characters in the text and press TAB to expand to the full set of text completion options. For example, if you type **fo\*!ba** and then press TAB, the debugger expands to the set of all symbols that start with "ba", in all modules with module names that start with "fo". As another example, you can complete all extension commands that have "prcb" in them by typing **!\*prcb** and then pressing TAB.
+
+When you use the TAB key to perform text completion, if your text fragment begins with a period (.), the text is matched to a dot command. If your text fragment begins with an exclamation point (!), the text is matched to an extension command. Otherwise, the text is matched with a symbol. When you usee the TAB key to enter symbols, pressing the TAB key completes code and type symbols and module names. If no module name is apparent, local symbols and module names are completed. If a module or module pattern is given, symbol completion completes code and type symbols from all matches.
+
+You can right-click in the Debugger Command window to automatically paste the contents of the clipboard into the command that you are typing.
+
+The maximum command length is 4096 characters. However, if you are [controlling the user-mode debugger from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md), the maximum line length is 512 characters.
+
+In CDB and KD, press the ENTER key by itself to repeat the previous command. In WinDbg, you can enable or disable this behavior. For more information about this behavior, see [**ENTER (Repeat Last Command)**](https://msdn.microsoft.com/library/windows/hardware/ff543037).
+
+If the last command that you issued presents a long display and you want to cut it off, use the [**CTRL+C**](https://msdn.microsoft.com/library/windows/hardware/ff540312) key in CDB or KD. In WinDbg, use [Debug | Break](https://msdn.microsoft.com/library/windows/hardware/ff541727) or press CTRL+BREAK.
+
+In kernel-mode debugging, you can cancel commands from the keyboard of the target computer by pressing [**CTRL+C**](https://msdn.microsoft.com/library/windows/hardware/ff540312).
+
+You can use the [**.cls (Clear Screen)**](https://msdn.microsoft.com/library/windows/hardware/ff562246) command to clear all of the text from the [Debugger Command window](debugger-command-window.md). This command clears the whole command history. In WinDbg, you can clear the command history by using the [Edit | Clear Command Output](https://msdn.microsoft.com/library/windows/hardware/ff542812) command or by clicking **Clear command output** on the shortcut menu of the Debugger Command window.
+
+### <span id="expression_syntax"></span><span id="EXPRESSION_SYNTAX"></span>Expression Syntax
+
+Many commands and extension commands accept *expressions* as their arguments. The debugger evaluates these expressions before executing the command. For more information about expressions, see [Evaluating Expressions](evaluating-expressions.md).
+
+### <span id="aliases"></span><span id="ALIASES"></span>Aliases
+
+*Aliases* are text macros that you can use to avoid having to retype complex phrases. There are two kinds of aliases. For more information about aliases, see [Using Aliases](using-aliases.md).
+
+### <span id="self_repeating_commands"></span><span id="SELF_REPEATING_COMMANDS"></span>Self-Repeating Commands
+
+You can use the following commands to repeat an action or conditionally execute other commands:
+
+-   The [**j (Execute If-Else)**](https://msdn.microsoft.com/library/windows/hardware/ff551820) conditional command
+
+-   The [**z (Execute While)**](https://msdn.microsoft.com/library/windows/hardware/ff561507) conditional command
+
+-   The [**~e (Thread-Specific Command)**](https://msdn.microsoft.com/library/windows/hardware/ff563050) command qualifier
+
+-   (Windows XP and later versions of Windows) The [**!list**](https://msdn.microsoft.com/library/windows/hardware/ff563954) extension command
+
+For more information about each command, see the individual command topics.
+
+### <span id="controlling_scrolling"></span><span id="CONTROLLING_SCROLLING"></span>Controlling Scrolling
+
+You can use the scrollbar to view your previous commands and their output.
+
+When you are using CDB or KD, any keyboard entry automatically scrolls down the Debugger Command window back to the bottom.
+
+In WinDbg, the display automatically scrolls down to the bottom whenever a command produces output or you press the ENTER key. If you want to disable this automatic scrolling, click the [Options](https://msdn.microsoft.com/library/windows/hardware/ff560299) on the **View** menu and then clear the **Automatically scroll** check box.
+
+### <span id="windbg_text_features"></span><span id="WINDBG_TEXT_FEATURES"></span>WinDbg Text Features
+
+In WinDbg, you can use several additional features to change how text is displayed in the [Debugger Command window](debugger-command-window.md). You can access some of these features in the WinDbg window, some in the shortcut menu in the Debugger Command window, and some by clicking on the appropriate menu icon.
+
+-   The **Word wrap** command on the shortcut menu turns on and off the word wrap status. This command affects the whole window, not only commands that you use after this state is changed. Because many commands and extensions produce formatted displays, we typically do not recommend word wrap.
+
+-   The [Edit | Add to Command Output](https://msdn.microsoft.com/library/windows/hardware/ff542804) menu command adds a comment in the Debugger Command window. The **Add to command output** command on the shortcut menu has the same effect.
+
+-   You can customize the colors that are used for the text and the background of the Debugger Command window. You can specify different colors for different kinds of text. For example, you can display the automatic register output in one color, error messages in another color, and **DbgPrint** messages in a third color. For more information about this customization, see [View | Options](https://msdn.microsoft.com/library/windows/hardware/ff560299).
+
+-   You can use all of the features common to WinDbg's debugging information windows, such as customizing the fonts and using special editing commands. For more information about these features, see [Using Debugging Information Windows](using-debugging-information-windows.md).
+
+### <span id="remote_debugging"></span><span id="REMOTE_DEBUGGING"></span>Remote Debugging
+
+When you are performing remote debugging through the debugger, the debugging client can access a limited number of commands. To change the number of commands that the client can access, use the **-clines** [command-line option](https://msdn.microsoft.com/library/windows/hardware/ff539174) or the \_NT\_DEBUG\_HISTORY\_SIZE [environment variable](https://msdn.microsoft.com/library/windows/hardware/ff543043).
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20Debugger%20Commands%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+

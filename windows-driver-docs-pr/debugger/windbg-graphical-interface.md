@@ -1,0 +1,32 @@
+---
+title: Using the WinDbg Graphical Interface
+description: Using the WinDbg Graphical Interface
+ms.assetid: 15276b1e-e424-4c2a-a33f-3e1e13fda74e
+keywords: ["WinDbg, graphical interface", "GUI", "graphical interface", "graphical interface, overview", "GUI, See "graphical interface""]
+---
+
+# Using the WinDbg Graphical Interface
+
+
+## <span id="ddk_the_windbg_graphical_interface_dbg"></span><span id="DDK_THE_WINDBG_GRAPHICAL_INTERFACE_DBG"></span>
+
+
+This section includes the following topics:
+
+[Using Debugging Information Windows](using-debugging-information-windows.md)
+
+[Using Workspaces](using-workspaces.md)
+
+[Using the Toolbar and Status Bar](using-the-toolbar-and-status-bar.md)
+
+[Using the Help Documentation](using-the-help-documentation.md)
+
+ 
+
+ 
+
+[Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[debugger\debugger]:%20Using%20the%20WinDbg%20Graphical%20Interface%20%20RELEASE:%20%284/24/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
+
+
+
+
