@@ -11,18 +11,18 @@ Typically, the client driver reads configuration info from its [*EVT_WDF_DRIVER_
 Start by calling [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) to get a handle to a configuration object.  You can then query it:
 
 ```cpp
-NETCONFIGURATION config = NULL;
+NETCONFIGURATION configuration;
 
-status = NetAdapterOpenConfiguration(NetAdapter, WDF_NO_OBJECT_ATTRIBUTES, &config);
-if (!NT_SUCCESS(status)) {
+status = NetAdapterOpenConfiguration(NetAdapter, WDF_NO_OBJECT_ATTRIBUTES, &configuration);
+if (! NT_SUCCESS(status)) {
     return status;
 }
 
-status = NetConfigurationQueryUlong(config, 0, &SomeValue, &myvalue);
+status = NetConfigurationQueryUlong(configuration, 0, &SomeValue, &myvalue);
 
 NetConfigurationClose(configuration);
 ```
-There are `NetConfiguration*` functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and MAC addresses:
+There are `NetConfiguration*` functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and MAC-like addresses:
 
 * [NetConfigurationAssignBinary method](netconfigurationassignbinary.md)
 * [NetConfigurationAssignMultiString method](netconfigurationassignmultistring.md)
