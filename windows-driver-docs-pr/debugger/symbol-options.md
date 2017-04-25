@@ -164,7 +164,7 @@ The following table lists these symbol options:
 
  
 
-### <span id="changing_the_symbol_option_settings"></span><span id="CHANGING_THE_SYMBOL_OPTION_SETTINGS"></span>Changing the Symbol Option Settings
+### Changing the Symbol Option Settings
 
 The [**.symopt (Set Symbol Options)**](https://msdn.microsoft.com/library/windows/hardware/ff565404) command can be used to change or display the symbol option settings. In addition, a number of command-line parameters and commands are available to change these settings; these are listed in the individual SYMOPT\_*XXX* sections.
 
@@ -172,7 +172,7 @@ You can also control all the settings at once with the **-sflags**[command-line 
 
 The default value for the total flag bits is 0x30237 in WinDbg, 0xB0227 in CDB and KD, and 0x10C13 in [the DBH tool](dbh.md), when these programs are launched without any symbol-related command line options.
 
-### <span id="symopt_case_insensitive"></span><span id="SYMOPT_CASE_INSENSITIVE"></span>SYMOPT\_CASE\_INSENSITIVE
+### SYMOPT\_CASE\_INSENSITIVE
 
 This symbol option causes all searches for symbol names to be case-insensitive.
 
@@ -180,7 +180,7 @@ This option is on by default in all debuggers. Once the debugger is running, it 
 
 This option is on by default in DBH. Once DBH is running, it can be turned on or off by using symopt +1 or symopt -1, respectively.
 
-### <span id="symopt_undname"></span><span id="SYMOPT_UNDNAME"></span>SYMOPT\_UNDNAME
+### SYMOPT\_UNDNAME
 
 This symbol option causes public symbol names to be undecorated when they are displayed, and causes searches for symbol names to ignore symbol decorations. Private symbol names are never decorated, regardless of whether this option is active. For information on symbol name decorations, see [Public and Private Symbols](public-and-private-symbols.md).
 
@@ -188,7 +188,7 @@ This option is on by default in all debuggers. Once the debugger is running, it 
 
 This option is on by default in DBH. It is turned off if the -d command-line option is used. Once DBH is running, it can be turned on or off by using symopt +2 or symopt -2, respectively.
 
-### <span id="symopt_deferred_loads"></span><span id="SYMOPT_DEFERRED_LOADS"></span>SYMOPT\_DEFERRED\_LOADS
+### SYMOPT \_DEFERRED\_LOADS
 
 This symbol option is called *deferred symbol loading* or *lazy symbol loading*. When it is active, symbols are not actually loaded when the target modules are loaded. Instead, symbols are loaded by the debugger as they are needed. See [Deferred Symbol Loading](deferred-symbol-loading.md) for details.
 
@@ -196,7 +196,7 @@ This option is on by default in all debuggers. In CDB and KD, the -s command-lin
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +4 or symopt -4, respectively.
 
-### <span id="symopt_no_cpp"></span><span id="SYMOPT_NO_CPP"></span>SYMOPT\_NO\_CPP
+### SYMOPT \_NO\_CPP
 
 This symbol option turns off C++ translation. When this symbol option is set, **::** is replaced by **\_\_** in all symbols.
 
@@ -204,7 +204,7 @@ This option is off by default in all debuggers. It can be activated by using the
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +8 or symopt -8, respectively.
 
-### <span id="symopt_load_lines"></span><span id="SYMOPT_LOAD_LINES"></span>SYMOPT\_LOAD\_LINES
+### SYMOPT\_LOAD\_LINES
 
 This symbol option allows line number information to be read from source files. This option must be on for source debugging to work correctly.
 
@@ -212,7 +212,7 @@ In KD and CDB, this option is off by default; in WinDbg, this option is on by de
 
 This option is on by default in DBH. Once DBH is running, it can be turned on or off by using symopt +10 or symopt -10, respectively.
 
-### <span id="symopt_omap_find_nearest"></span><span id="SYMOPT_OMAP_FIND_NEAREST"></span>SYMOPT\_OMAP\_FIND\_NEAREST
+### SYMOPT\_OMAP\_FIND\_NEAREST
 
 When code has been optimized and there is no symbol at the expected location, this option causes the nearest symbol to be used instead.
 
@@ -220,7 +220,7 @@ This option is on by default in all debuggers. Once the debugger is running, it 
 
 This option is on by default in DBH. Once DBH is running, it can be turned on or off by using symopt +20 or symopt -20, respectively.
 
-### <span id="symopt_load_anything"></span><span id="SYMOPT_LOAD_ANYTHING"></span>SYMOPT\_LOAD\_ANYTHING
+### SYMOPT\_LOAD\_ANYTHING
 
 This symbol option reduces the pickiness of the symbol handler when it is attempting to match symbols.
 
@@ -228,7 +228,7 @@ This option is off by default in all debuggers. Once the debugger is running, it
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +40 or symopt -40, respectively.
 
-### <span id="symopt_ignore_cvrec"></span><span id="SYMOPT_IGNORE_CVREC"></span>SYMOPT\_IGNORE\_CVREC
+### SYMOPT\_IGNORE\_CVREC
 
 This symbol option causes the symbol handler to ignore the CV record in the loaded image header when searching for symbols.
 
@@ -236,7 +236,7 @@ This option is off by default in all debuggers. It can be activated by using the
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +80 or symopt -80, respectively.
 
-### <span id="symopt_no_unqualified_loads"></span><span id="SYMOPT_NO_UNQUALIFIED_LOADS"></span>SYMOPT\_NO\_UNQUALIFIED\_LOADS
+### SYMOPT\_NO\_UNQUALIFIED\_LOADS
 
 This symbol option disables the symbol handler's automatic loading of modules. When this option is set and the debugger attempts to match a symbol, it will only search modules which have already been loaded.
 
@@ -246,7 +246,7 @@ This option is off by default in all debuggers. It can be activated by using the
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +100 or symopt -100, respectively.
 
-### <span id="symopt_fail_critical_errors"></span><span id="SYMOPT_FAIL_CRITICAL_ERRORS"></span>SYMOPT\_FAIL\_CRITICAL\_ERRORS
+### SYMOPT\_FAIL\_CRITICAL\_ERRORS
 
 This symbol option causes file access error dialog boxes to be suppressed.
 
@@ -256,7 +256,7 @@ This option is on by default in all debuggers. It can be deactivated by using th
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +200 or symopt -200, respectively.
 
-### <span id="symopt_exact_symbols"></span><span id="SYMOPT_EXACT_SYMBOLS"></span>SYMOPT\_EXACT\_SYMBOLS
+### SYMOPT\_EXACT\_SYMBOLS
 
 This symbol option causes the debugger to perform a strict evaluation of all symbol files.
 
@@ -268,7 +268,7 @@ The -failinc command-line option also turns on SYMOPT\_EXACT\_SYMBOLS. In additi
 
 This option is on by default in DBH. Once DBH is running, it can be turned on or off by using symopt +400 or symopt -400, respectively.
 
-### <span id="symopt_allow_absolute_symbols"></span><span id="SYMOPT_ALLOW_ABSOLUTE_SYMBOLS"></span>SYMOPT\_ALLOW\_ABSOLUTE\_SYMBOLS
+### SYMOPT\_ALLOW\_ABSOLUTE\_SYMBOLS
 
 This symbol option allows DbgHelp to read symbols that are stored at an absolute address in memory. This option is not needed in the vast majority of cases.
 
@@ -276,7 +276,7 @@ This option is off by default in all debuggers. Once the debugger is running, it
 
 This option is on by default in DBH. Once DBH is running, it can be turned on or off by using symopt +800 or symopt -800, respectively.
 
-### <span id="symopt_ignore_nt_sympath"></span><span id="SYMOPT_IGNORE_NT_SYMPATH"></span>SYMOPT\_IGNORE\_NT\_SYMPATH
+### SYMOPT\_IGNORE\_NT\_SYMPATH
 
 This symbol option causes the debugger to ignore the environment variable settings for the symbol path and the executable image path.
 
@@ -284,7 +284,7 @@ This option is off by default in all debuggers. It can be activated by using the
 
 This option is off by default in DBH, and is ignored by DBH in all cases.
 
-### <span id="symopt_publics_only"></span><span id="SYMOPT_PUBLICS_ONLY"></span>SYMOPT\_PUBLICS\_ONLY
+### SYMOPT\_PUBLICS\_ONLY
 
 This symbol option causes DbgHelp to ignore private symbol data, and search only the public symbol table for symbol information. This emulates the behavior of DbgHelp before support for these types was added. see [Public and Private Symbols](public-and-private-symbols.md).
 
@@ -292,7 +292,7 @@ This option is off by default in all debuggers. Once the debugger is running, it
 
 This option is off by default in DBH. It is turned on if the -d command-line option is used. Once DBH is running, it can be turned on or off by using symopt +4000 or symopt -4000, respectively.
 
-### <span id="symopt_no_publics"></span><span id="SYMOPT_NO_PUBLICS"></span>SYMOPT\_NO\_PUBLICS
+### SYMOPT\_NO\_PUBLICS
 
 This symbol option prevents DbgHelp from searching the public symbol table. This can make symbol enumeration and symbol searches much faster. If you are concerned solely with search speed, the SYMOPT\_AUTO\_PUBLICS option is generally preferable to this one. For information on the public symbol table, see [Public and Private Symbols](public-and-private-symbols.md).
 
@@ -300,7 +300,7 @@ This option is off by default in all debuggers. Once the debugger is running, it
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +8000 or symopt -8000, respectively.
 
-### <span id="symopt_auto_publics"></span><span id="SYMOPT_AUTO_PUBLICS"></span>SYMOPT\_AUTO\_PUBLICS
+### SYMOPT\_AUTO\_PUBLICS
 
 This symbol option causes DbgHelp to search the public symbol table in a .pdb file only as a last resort. If any matches are found when searching the private symbol data, the public symbols will not be searched. This improves symbol search speed.
 
@@ -308,7 +308,7 @@ This option is on by default in all debuggers. It can be deactivated by using th
 
 This option is on by default in DBH. It is turned off if the -d command-line option is used. Once DBH is running, it can be turned on or off by using symopt +10000 or symopt -10000, respectively.
 
-### <span id="symopt_no_image_search"></span><span id="SYMOPT_NO_IMAGE_SEARCH"></span>SYMOPT\_NO\_IMAGE\_SEARCH
+### SYMOPT\_NO\_IMAGE\_SEARCH
 
 This symbol option prevents DbgHelp from searching the disk for a copy of the image when symbols are loaded.
 
@@ -316,7 +316,7 @@ This option is on by default in all debuggers. Once the debugger is running, it 
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +20000 or symopt -20000, respectively.
 
-### <span id="symopt_secure"></span><span id="SYMOPT_SECURE"></span>SYMOPT\_SECURE
+### SYMOPT\_SECURE
 
 (Kernel mode only) This symbol option indicates whether [Secure Mode](secure-mode.md) is active.
 
@@ -326,7 +326,7 @@ This option is off by default in DBH. Once DBH is running, it can be turned on o
 
 Secure mode can never be turned off once it has been activated.
 
-### <span id="symopt_no_prompts"></span><span id="SYMOPT_NO_PROMPTS"></span>SYMOPT\_NO\_PROMPTS
+### SYMOPT\_NO\_PROMPTS
 
 This symbol option suppresses authentication dialog boxes from the proxy server. This may result in SymSrv being unable to access a symbol store on the internet.
 
@@ -336,11 +336,11 @@ In KD and CDB, this option is on by default; in WinDbg, this option is off by de
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +80000 or symopt -80000, respectively.
 
-### <span id="symopt_disable_fast_symbols"></span><span id="SYMOPT_DISABLE_FAST_SYMBOLS"></span>
+### SYMOPT\_DISABLE_FAST_SYMBOLS
 
-### <span id="symopt_disable_symsrv_timeout"></span><span id="SYMOPT_DISABLE_SYMSRV_TIMEOUT"></span>
+### SYMOPT_\DISABLE_SYMSRV_TIMEOUT
 
-### <span id="symopt_debug"></span><span id="SYMOPT_DEBUG"></span>SYMOPT\_DEBUG
+### SYMOPT\_DEBUG
 
 This symbol option turns on *noisy symbol loading*. This instructs the debugger to display information about its search for symbols.
 

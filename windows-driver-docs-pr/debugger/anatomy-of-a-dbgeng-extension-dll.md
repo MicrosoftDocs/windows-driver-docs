@@ -7,17 +7,13 @@ keywords: ["DbgEng Extensions, DLL anatomy"]
 
 # Anatomy of a DbgEng Extension DLL
 
-
-## <span id="ddk_anatomy_of_a_dbgeng_extension_dll_dbx"></span><span id="DDK_ANATOMY_OF_A_DBGENG_EXTENSION_DLL_DBX"></span>
-
-
 A DbgEng extension DLL exports a number of callback functions, some of which may be implementations of extension commands.
 
 These extension DLLs are loaded by the [debugger engine](introduction.md#debugger-engine) and can provide extra functionality or automation of tasks while performing user-mode or kernel-mode debugging on Microsoft Windows.
 
 If you performed a full install of Debugging Tools for Windows, a sample DbgEng extension called "exts" can be found in the sdk\\samples\\exts subdirectory of the installation directory.
 
-### <span id="extension_commands"></span><span id="EXTENSION_COMMANDS"></span>Extension Commands
+## Extension Commands
 
 An extension DLL may export any number of functions that are used to execute extension commands. Each function is explicitly declared as an export in the .def file, and its name must consist entirely of lowercase letters.
 
@@ -27,7 +23,7 @@ These functions are named according to the standard C++ convention, except that 
 
 If myextension.dll is not already loaded, or if there may be other extension commands with the same name in other extension DLLs, you can type **!myextension.stack** into the Debugger Command window to indicate the extension DLL and the extension command in that DLL.
 
-### <span id="other_exported_functions"></span><span id="OTHER_EXPORTED_FUNCTIONS"></span>Other Exported Functions
+## Other Exported Functions
 
 A DbgEng extension DLL must export [*DebugExtensionInitialize*](https://msdn.microsoft.com/library/windows/hardware/ff540476). This will be called when the DLL is loaded, to initialize the DLL. It may be used by the DLL to initialize global variables.
 
@@ -37,7 +33,7 @@ An extension DLL may export [*DebugExtensionNotify*](https://msdn.microsoft.com/
 
 An extension DLL may export [*KnownStructOutput*](https://msdn.microsoft.com/library/windows/hardware/ff551934). If this is exported, it will be called when the DLL is loaded. This function returns a list of structures that the DLL knows how to print on a single line. It may be called later to format instances of these structures for printing.
 
-### <span id="engine_procedure_for_loading_a_dbgeng_extension_dll"></span><span id="ENGINE_PROCEDURE_FOR_LOADING_A_DBGENG_EXTENSION_DLL"></span>Engine Procedure for Loading a DbgEng Extension DLL
+## Engine Procedure for Loading a DbgEng Extension DLL
 
 When an extension DLL is loaded, the callback functions are called by the engine in the following order:
 

@@ -58,13 +58,13 @@ In other words, the public symbol data can be thought of as a subset of the priv
 
 There is one other difference between the private symbol data and the public symbol table. Many of the items in the public symbol table have names that are *decorated* with a prefix, a suffix, or both. These decorations are added by the C compiler, the C++ compiler, and the MASM assembler. Typical prefixes include a series of underscores or the string **\_\_imp\_** (designating an imported function). Typical suffixes include one or more at signs ( **@** ) followed by addresses or other identifying strings. These decorations are used by the linker to disambiguate the symbol, since it is possible that function names or global variable names could be repeated across different modules. These decorations are an exception to the general rule that the public symbol table is a subset of the private symbol data.
 
-### <span id="full_symbol_files_and_stripped_symbol_files"></span><span id="FULL_SYMBOL_FILES_AND_STRIPPED_SYMBOL_FILES"></span>Full Symbol Files and Stripped Symbol Files
+### Full Symbol Files and Stripped Symbol Files
 
 A *full symbol file* contains both the private symbol data and the public symbol table. This kind of file is sometimes referred to as a *private symbol file*, but this name is misleading, for such a file contains both private and public symbols.
 
 A *stripped symbol file* is a smaller file that contains only the public symbol table - or, in some cases, only a subset of the public symbol table. This file is sometimes referred to as a *public symbol file*.
 
-### <span id="creating_full_and_stripped_symbol_files"></span><span id="CREATING_FULL_AND_STRIPPED_SYMBOL_FILES"></span>Creating Full and Stripped Symbol Files
+### Creating Full and Stripped Symbol Files
 
 If you build your binaries with Visual Studio, you can create either full or stripped symbol files. When building a "debug build" of a binary, Visual Studio typically will create full symbol files. When building a "retail build", Visual Studio typically creates no symbol files, but a full or stripped symbol file will be created if the proper options are set.
 
@@ -76,7 +76,7 @@ Using the PDBCopy tool, you can create a stripped symbol file from a full symbol
 
 Using the SymChk tool, you can determine whether a symbol file contains private symbols. For details, see [SymChk](symchk.md).
 
-### <span id="viewing_public_and_private_symbols_in_the_debugger"></span><span id="VIEWING_PUBLIC_AND_PRIVATE_SYMBOLS_IN_THE_DEBUGGER"></span>Viewing Public and Private Symbols in the Debugger
+### Viewing Public and Private Symbols in the Debugger
 
 You can use WinDbg, KD, or CDB to view symbols. When one of these debuggers has access to a full symbol file, it has both the information listed in the private symbol data and the information listed in the public symbol table. The private symbol data is more detailed, while the public symbol data contains symbol decorations.
 
@@ -111,7 +111,7 @@ Here is an example in which the command [**x (Examine Symbols)**](https://msdn.m
 00434420 <NoType> TimeTest!_typingString = <no type information> 
 ```
 
-### <span id="viewing_public_and_private_symbols_with_the_dbh_tool"></span><span id="VIEWING_PUBLIC_AND_PRIVATE_SYMBOLS_WITH_THE_DBH_TOOL"></span>Viewing Public and Private Symbols with the DBH Tool
+### Viewing Public and Private Symbols with the DBH Tool
 
 Another way to view symbols is by using the [the DBH tool](dbh.md). DBH uses the same symbol options as the debugger. Like the debugger, DBH leaves [SYMOPT\_PUBLICS\_ONLY](symbol-options.md#symopt-publics-only) and [SYMOPT\_NO\_PUBLICS](symbol-options.md#symopt-no-publics) off by default, and turns [SYMOPT\_UNDNAME](symbol-options.md#symopt-undname) and [SYMOPT\_AUTO\_PUBLICS](symbol-options.md#symopt-auto-publics) on by default. These defaults can be overridden by a command-line option or by a DBH command.
 
