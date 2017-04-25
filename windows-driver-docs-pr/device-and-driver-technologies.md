@@ -52,7 +52,7 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Storage Devices](https://msdn.microsoft.com/library/windows/hardware/ff563893)
 -   [Streaming Media Devices](https://msdn.microsoft.com/library/windows/hardware/ff567782)
 -   [System Technologies](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557564)
--   [Universal Serial Bus (USB)] https://msdn.microsoft.com/en-us/library/windows/hardware/mt807557)
+-   [Universal Serial Bus (USB)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt807557)
 -   [Windows Portable Devices](https://msdn.microsoft.com/library/windows/hardware/ff597729)
 -   [Windows SideShow Devices](https://msdn.microsoft.com/library/windows/hardware/ff548077)
 
