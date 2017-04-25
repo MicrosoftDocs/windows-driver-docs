@@ -10,7 +10,7 @@ A NetAdapterCx driver registers its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.m
 
 In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), a NetAdapterCx client driver should do the following:
 
-1. Call [**NetAdapterDeviceInitConfig**](netadapterdeviceinitconfig.md) in the beginning of *EVT_WDF_DRIVER_DEVICE_ADD*.
+1. Call [**NetAdapterDeviceInitConfig**](netadapterdeviceinitconfig.md), this has to be done before WdfDeviceCreate.
 
     ```cpp
     status = NetAdapterDeviceInitConfig(DeviceInit);

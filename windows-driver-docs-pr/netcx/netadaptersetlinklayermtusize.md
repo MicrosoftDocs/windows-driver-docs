@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Sets the maximum transfer unit (MTU) size of the adapter.
+Sets the link layer maximum transfer unit size of the adapter.
 
 Syntax
 ------
@@ -47,7 +47,7 @@ Remarks
 
 The client driver first sets MTU size by calling NetAdapterSetLinkLayerMtuSize from its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) implementation.
 
-The client driver can change the MTU size after returning from [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) by calling the same API. Doing so causes all of the adapter's Tx and Rx queues to be recreated.
+The client driver can change the MTU size after returning from [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) by calling the same API again. Doing so causes all of the adapter's Tx and Rx queues to be recreated.
 
 Requirements
 ------------

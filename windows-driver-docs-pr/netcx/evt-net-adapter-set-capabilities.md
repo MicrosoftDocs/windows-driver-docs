@@ -51,14 +51,18 @@ NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* after [*EVT_WDF_DEVICE_PRE
 
 NetAdapterCx calls *EVT_NET_ADAPTER_SET_CAPABILITIES* once per device start.
 
-In this function, the client typically sets the adapter's link and MAC capabilities, and optionally specifies power capabilities and current link state.  To do so, it uses the following methods:
+In this function, the client typically sets the adapter's link and MAC capabilities, power capabilities and MTU size.  To do so, it uses the following methods:
 
-* [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md)
-* [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md)
+* [**NetAdapterSetLinkLayerMtuSize**](netadaptersetlinklayermtusize.md) 
 * [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md)
 * [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md)
 
-To set an attribute that does not have equivalent NetAdapter functionality, for example to report offload capabilities, call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
+Optionaly the client can also call:
+
+* [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md)
+* [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md)
+
+To set an attribute that does not have equivalent NetAdapter functionality, for example to report offload capabilities, call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md). Use  [**NetAdapterWdmGetNdisHandle**](netadapterwdmgetndishandle.md) to get the NDIS handle.
 
 Requirements
 ------------

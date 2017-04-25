@@ -76,9 +76,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
-See Also
------
-[**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
-
-

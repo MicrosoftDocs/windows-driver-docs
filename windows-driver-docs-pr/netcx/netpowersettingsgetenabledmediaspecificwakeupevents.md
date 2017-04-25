@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves flags that specify the enabled media-specific wake-up events that a network adapter supports.
+Retrieves flags that specify which media-specific wake-up events that a network adapter supports are currently enabled.
 
 Syntax
 ------

@@ -30,7 +30,7 @@ KmdfService = Yourdriverservice, Yourdriver.wdfsect
 KmdfLibraryVersion = <insert here>
 ```
 
-6. Add new required networking keywords to the NT section of your INF, *IfConnectorPresent and *HardwareLoopback are booleans, *ConnectionType is [*NET_IF_CONNECTION_TYPE*](https://msdn.microsoft.com/en-us/library/windows/hardware/ff568741(v=vs.85).aspx), *DirectionType is [*NET_IF_DIRECTION_TYPE*](https://msdn.microsoft.com/en-us/library/windows/hardware/ff568742(v=vs.85).aspx) and *AccessType is [*NET_IF_ACCESS_TYPE*](https://msdn.microsoft.com/en-us/library/windows/hardware/ff568739(v=vs.85).aspx).
+6. Add new required networking keywords to the NT section of your INF.
 
 ```cpp
 [Device.NT]
@@ -40,11 +40,11 @@ CopyFiles=Drivers_Dir
 *MediaType          = 0
 *PhysicalMediaType  = 14
 ; New network keywords
-*IfConnectorPresent = 0
-*ConnectionType     = 1 
-*DirectionType      = 0
-*AccessType         = 2
-*HardwareLoopback   = 0
+*IfConnectorPresent = 0 ; BOOLEAN
+*ConnectionType     = 1 ; NET_IF_CONNECTION_TYPE
+*DirectionType      = 0 ; NET_IF_DIRECTION_TYPE
+*AccessType         = 2 ; NET_IF_ACCESS_TYPE
+*HardwareLoopback   = 0 ; BOOLEAN
 ```
 
 ## Driver initialization
