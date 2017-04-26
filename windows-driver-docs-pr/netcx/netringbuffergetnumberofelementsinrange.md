@@ -49,11 +49,11 @@ The number of elements in the given range.
 Remarks
 -------
 
-For example, consider a net ring buffer containing a total of 8 elements. Index values for the elements are zero through 7. The number of elements in the range [1, 4] is 3. This is because the EndIndex value is not included, so the range includes elements at index values 1, 2, and 3.
+For example, consider a net ring buffer containing a total of 8 elements. Index values for the elements are zero through 7. The number of elements in the range [1, 4) is 3. This is because the EndIndex value is not included, so the range includes elements at index values 1, 2, and 3.
 
-Similarly, the range [4, 1] includes elements at index values 4, 5, 6, 7, and 0 (looping back to the beginning of the ring), for a total of 5.
+Similarly, the range [4, 1) includes elements at index values 4, 5, 6, 7, and 0 (looping back to the beginning of the ring), for a total of 5 elements.
 
-Finally, the range [7, 7] returns zero elements.
+Finally, note that an empty range like [2, 2) returns zero elements.
 
 Requirements
 ------------

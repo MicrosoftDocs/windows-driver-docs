@@ -15,13 +15,12 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Sets the BeginIndex value of the specified ring buffer to the first packet that is not completed.
+Returns all packets that have the **Completed** flag set, up to a specified range.
 
 Syntax
 ------
 
 ```cpp
-__inline
 void NetRingBufferReturnCompletedPacketsThroughIndex(
   _In_ NET_RING_BUFFER *RingBuffer,
   _In_ UINT32          EndIndex
@@ -35,7 +34,8 @@ Parameters
 A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 *EndIndex* [in]  
-The index of the last [**NET_PACKET**](net-packet.md) in the client's ring buffer window that is programmed for transmission or receive.
+The index of the last [**NET_PACKET**](net-packet.md) to be considered for completion.
+This index is exclusive of the range, so the packet at this index value will not be completed.
 
 Return value
 ------------
@@ -45,11 +45,22 @@ This method does not return a value.
 Remarks
 -------
 
-When the device driver completes transmission or reception of a [**NET_PACKET**](net-packet.md), it marks the packet as completed by setting the **Completed** flag in the starting fragment of the packet.
+The NetAdapter data path requires packets to be completed in the order in which they are given to your driver.
+If your driver can complete some packets out of order, you can use **NetRingBufferReturnCompletedPacketsThroughIndex** to simplify your completion path.
 
-The client can call **NetRingBufferReturnCompletedPacketsThroughIndex** from [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) or [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) to transfer ownership of completed packets in the ring buffer back to NetAdapterCx.
+To use this convenience function, first set the **Completed** flag on the first fragment of all packets with which your driver is finished, whether the packets were processed successfully or not.
+Then, call **NetRingBufferReturnCompletedPacketsThroughIndex** to batch the completion of all consecutive packets  for which the first fragment has the **Completed** flag set.
 
-NetAdapterCx updates the packet's **BeginIndex** field to the index of the first non-completed packet or to **EndIndex**, whichever comes first. **EndIndex** should indicate the last [**NET_PACKET**](net-packet.md) that the client has programmed to transmit or receive data.
+**NetRingBufferReturnCompletedPacketsThroughIndex** completes packets by writing a new value to the **BeginIndex** of the ring buffer.
+
+If you always complete packets in order, it is more efficient to write to **BeginIndex** directly, rather than using the **Completed** flag with **NetRingBufferReturnCompletedPacketsThroughIndex**.
+
+Typically you would call **NetRingBufferReturnCompletedPacketsThroughIndex** once just before returning from [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) or [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md).
+There's no advantage to calling **NetRingBufferReturnCompletedPacketsThroughIndex** more than once per Advance call; the API is designed for batching.
+
+The [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) routine is similar, but examines all packets owned by your driver.
+**NetRingBufferReturnCompletedPacketsThroughIndex** allows you to limit the search to a specific range of packets owned by your driver.
+If you don't need to control the exact range of packets that are completed, you can use the simpler method [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) instead of **NetRingBufferReturnCompletedPacketsThroughIndex**.
 
 For more info, see [Transferring Network Data](transferring-network-data.md).
 
