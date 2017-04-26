@@ -4,7 +4,7 @@ description: Changing the Behavior of the GPU Scheduler for Debugging
 ms.assetid: 72eef7bf-b775-4e02-acc6-b745a41c616a
 keywords:
 - GPU scheduler changes WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

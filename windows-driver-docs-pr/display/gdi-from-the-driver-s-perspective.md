@@ -6,7 +6,7 @@ keywords:
 - GDI WDK Windows 2000 display , driver communication
 - graphics drivers WDK Windows 2000 display , driver communication
 - drawing WDK GDI , driver communication
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

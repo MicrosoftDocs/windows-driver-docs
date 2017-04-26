@@ -3,7 +3,7 @@ title: Out-of-Process COM Objects for WIA Drivers
 author: windows-driver-content
 description: Out-of-Process COM Objects for WIA Drivers
 ms.assetid: 0b08652e-36ae-46f8-8915-7f2bb45df05c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

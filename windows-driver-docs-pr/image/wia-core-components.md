@@ -3,7 +3,7 @@ title: WIA Core Components
 author: windows-driver-content
 description: WIA Core Components
 ms.assetid: 59c02fa2-9116-4b57-a8fa-b977a4d6c714
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

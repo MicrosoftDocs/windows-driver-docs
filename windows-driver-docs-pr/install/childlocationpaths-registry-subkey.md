@@ -2,7 +2,7 @@
 title: ChildLocationPaths Registry Subkey
 description: ChildLocationPaths Registry Subkey
 ms.assetid: 9c485981-e9f8-420d-9a87-d298b55356c4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Roadmap for Developing WDM Audio Drivers
 description: Roadmap for Developing WDM Audio Drivers
 ms.assetid: fa75ff65-32fe-4002-89fd-bf345502a9ac
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

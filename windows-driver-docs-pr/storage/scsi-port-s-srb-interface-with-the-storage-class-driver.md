@@ -3,7 +3,7 @@ title: SCSI Port's SRB Interface with the Storage Class Driver
 author: windows-driver-content
 description: SCSI Port's SRB Interface with the Storage Class Driver
 ms.assetid: ca30bf9b-6d76-4160-8a4e-54c681dfc843
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

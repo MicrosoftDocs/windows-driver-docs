@@ -6,7 +6,7 @@ ms.assetid: 627d05f6-1499-4645-ad9a-b1a09f41b0c9
 keywords:
 - printer drivers WDK , terminal servers
 - terminal server printing WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

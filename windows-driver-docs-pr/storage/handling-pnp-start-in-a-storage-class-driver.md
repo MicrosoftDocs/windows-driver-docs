@@ -8,7 +8,7 @@ keywords:
 - class drivers WDK storage , PnP
 - PnP WDK storage
 - Plug and Play WDK storage
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: b9401126-4173-4187-960a-dc5ce69d3522
 keywords:
 - rectangular area fill commands WDK Unidrv
 - filling rectangular areas WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

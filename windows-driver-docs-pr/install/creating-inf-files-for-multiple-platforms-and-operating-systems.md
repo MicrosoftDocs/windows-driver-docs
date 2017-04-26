@@ -7,7 +7,7 @@ keywords:
 - multiple operating systems WDK , INF files
 - cross-platform INF files WDK
 - operating systems WDK , cross-operating system INF files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

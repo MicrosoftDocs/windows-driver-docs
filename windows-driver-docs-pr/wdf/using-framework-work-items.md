@@ -6,7 +6,7 @@ ms.assetid: d7e6d187-bed4-4071-a50b-90f32c4f0d5a
 keywords:
 - work items WDK KMDF
 - queues WDK KMDF , framework work items
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

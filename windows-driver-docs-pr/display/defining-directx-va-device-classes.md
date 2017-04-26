@@ -5,7 +5,7 @@ ms.assetid: a4b2ee88-747a-48c3-ba1d-2d605c46db58
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , defining device classes
 - device classes WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

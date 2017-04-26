@@ -7,7 +7,7 @@ keywords:
 - inking path state objects WDK TCP chimney offload
 - reinking path state objects WDK TCP chimney offload
 - path state object relinking WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

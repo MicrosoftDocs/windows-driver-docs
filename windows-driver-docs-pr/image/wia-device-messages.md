@@ -3,7 +3,7 @@ title: WIA Device Messages
 author: windows-driver-content
 description: WIA Device Messages
 ms.assetid: b498a75d-1252-4f13-ae62-9a53491c2bde
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

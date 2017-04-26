@@ -31,7 +31,7 @@ Parameters
 ----------
 
 *NetPowerSettings* [in]  
-A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
+A handle to the NETPOWERSETTINGS object associated with the NETADAPTER. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
 Return value
 ------------

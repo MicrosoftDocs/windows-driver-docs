@@ -6,7 +6,7 @@ keywords:
 - calling ProcAmp control DDI WDK DirectX VA
 - user-mode component calls WDK DirectX VA
 - ProcAmp WDK DirectX VA , calling from a user-mode component
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

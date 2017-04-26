@@ -7,7 +7,7 @@ keywords:
 - DeinterlaceBltEx, substream surfaces
 - destination surfaces WDK DirectX VA
 - substream surfaces WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

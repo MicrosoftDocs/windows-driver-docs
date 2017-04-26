@@ -5,7 +5,7 @@ ms.assetid: f18b348d-837a-4e1b-b91a-40593661bd56
 keywords:
 - video processing WDK DirectX VA , render target surfaces
 - render target surfaces WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

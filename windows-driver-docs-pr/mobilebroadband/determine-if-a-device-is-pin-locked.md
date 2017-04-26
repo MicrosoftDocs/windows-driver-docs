@@ -2,7 +2,7 @@
 title: Determine if a device is PIN-locked
 description: Determine if a device is PIN-locked
 ms.assetid: 7889c049-e8a2-4d69-9e5b-4b4756dcf1b4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

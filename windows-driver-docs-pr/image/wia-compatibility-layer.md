@@ -3,7 +3,7 @@ title: WIA Compatibility Layer
 author: windows-driver-content
 description: WIA Compatibility Layer
 ms.assetid: 9c53fef9-0eef-4821-be59-6ecadf7f17c6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

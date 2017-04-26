@@ -8,7 +8,7 @@ keywords:
 - offload service porting WDK networking , filter drivers
 - porting task offload services WDK networking , filter drivers
 - filter drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - presentation WDK DirectX 8.0
 - rendering results visible WDK DirectX 8.0
 - visible results WDK DirectX 8.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

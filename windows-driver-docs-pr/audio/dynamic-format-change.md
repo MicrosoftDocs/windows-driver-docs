@@ -2,7 +2,7 @@
 title: Dynamic Format Change
 description: Dynamic Format Change
 ms.assetid: 41e6ec8c-3a96-4103-a991-3b9ba6acad6c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

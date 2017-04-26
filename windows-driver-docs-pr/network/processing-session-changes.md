@@ -5,7 +5,7 @@ ms.assetid: 6684b27e-d2ba-4305-bbd2-27543c9ec0cf
 keywords:
 - user interaction WDK Native 802.11 IHV Extensions DLL
 - session changes WDK Native 802.11 IHV Extensions DLL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

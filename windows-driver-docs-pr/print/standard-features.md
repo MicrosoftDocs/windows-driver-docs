@@ -6,7 +6,7 @@ ms.assetid: 5cd90992-5ab8-4cb3-89b0-19e58e55b652
 keywords:
 - printer features WDK Unidrv , standard
 - standard features WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

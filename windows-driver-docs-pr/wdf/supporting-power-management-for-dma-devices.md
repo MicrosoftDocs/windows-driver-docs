@@ -9,7 +9,7 @@ keywords:
 - power management WDK KMDF , DMA devices
 - DMA enabler objects WDK KMDF
 - enabler objects WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

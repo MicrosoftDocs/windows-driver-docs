@@ -2,7 +2,7 @@
 title: Updates for Earlier DirectX DDK Versions
 description: Updates for Earlier DirectX DDK Versions
 ms.assetid: dd05c0ca-faf4-4591-b699-afdab2085108
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

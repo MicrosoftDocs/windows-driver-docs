@@ -2,7 +2,7 @@
 title: Debugging OCA minidump files
 description: Debugging OCA minidump files
 ms.assetid: 37c60d16-7f4a-4119-8953-68c6fd136735
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

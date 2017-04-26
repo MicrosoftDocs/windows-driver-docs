@@ -2,7 +2,7 @@
 title: Adding and Deleting Low Power Protocol Offloads
 description: Adding and Deleting Low Power Protocol Offloads
 ms.assetid: f00f13b4-9204-4480-884a-407684a4b2d4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

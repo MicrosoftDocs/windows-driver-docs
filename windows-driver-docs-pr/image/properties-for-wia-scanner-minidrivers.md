@@ -3,7 +3,7 @@ title: Properties for WIA Scanner Minidrivers
 author: windows-driver-content
 description: Properties for WIA Scanner Minidrivers
 ms.assetid: 9de8694a-0d19-4945-b0c1-a3c4bc71dad3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

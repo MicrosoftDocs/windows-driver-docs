@@ -5,7 +5,7 @@ ms.assetid: c2c7567e-dfb4-49d3-acc9-034f6544633e
 keywords:
 - formats WDK SetupAPI logging
 - text logs WDK SetupAPI , entries not part of section
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

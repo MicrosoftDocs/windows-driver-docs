@@ -5,7 +5,7 @@ ms.assetid: e4fc3c65-a509-4aa6-88e1-9ca564cefa4b
 keywords:
 - offload state WDK TCP chimney offload , structures
 - structures WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

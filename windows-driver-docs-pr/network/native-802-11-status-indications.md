@@ -2,7 +2,7 @@
 title: Native 802.11 Status Indications
 description: Native 802.11 Status Indications
 ms.assetid: f230a5a9-787a-4bcc-81ad-c001f065cf2e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

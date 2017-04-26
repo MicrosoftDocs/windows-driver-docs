@@ -3,7 +3,7 @@ title: Bluetooth driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom Bluetooth driver for your device.
 ms.assetid: 7ED22CAF-51DC-4EE4-BBF6-9D56554368BF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

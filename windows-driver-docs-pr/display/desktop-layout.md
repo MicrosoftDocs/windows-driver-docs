@@ -9,7 +9,7 @@ keywords:
 - configuring displays WDK Windows Server 2008 R2 display , CCD concepts, desktop layout
 - CCD concepts WDK Windows 7 display , desktop layout
 - CCD concepts WDK Windows Server 2008 R2 display , desktop layout
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Multipacket Messages
 description: Multipacket Messages
 ms.assetid: 58979799-4618-43b9-a6dc-0635f6ade9b3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

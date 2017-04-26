@@ -6,7 +6,7 @@ keywords:
 - notify objects WDK networking , processing notifications
 - network notify objects WDK , processing notifications
 - notifications WDK networking , processing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

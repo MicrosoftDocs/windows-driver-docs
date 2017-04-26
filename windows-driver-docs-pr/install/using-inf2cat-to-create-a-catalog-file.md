@@ -2,7 +2,7 @@
 title: Using Inf2Cat to Create a Catalog File
 description: Using Inf2Cat to Create a Catalog File
 ms.assetid: 93dea980-eb66-40f0-ac6b-0adaf8376154
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

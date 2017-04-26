@@ -8,7 +8,7 @@ keywords:
 - modules WDK Network Module Registrar
 - registered network modules WDK Network Module Registrar
 - software modules WDK Network Module Registrar
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

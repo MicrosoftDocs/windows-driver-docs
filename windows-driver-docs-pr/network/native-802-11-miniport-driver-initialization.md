@@ -5,7 +5,7 @@ ms.assetid: 579eb487-04ef-41bc-b77b-30217098240b
 keywords:
 - Native 802.11 miniport drivers WDK networking , initializing
 - miniport drivers WDK Native 802.11 , initializing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

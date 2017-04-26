@@ -4,7 +4,7 @@ description: MPEG2\_D
 ms.assetid: f5cb5e49-c64c-46d2-92bb-68db1d9c5d18
 keywords:
 - MPEG2_D restricted profile WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

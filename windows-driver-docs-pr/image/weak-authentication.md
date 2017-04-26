@@ -3,7 +3,7 @@ title: Weak Authentication
 author: windows-driver-content
 description: Weak Authentication
 ms.assetid: ff220633-31cb-4405-a0a5-c6d9e7e51f76
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

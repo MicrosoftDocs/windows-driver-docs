@@ -7,7 +7,7 @@ keywords:
 - intermediate drivers WDK networking , initializing
 - initializing miniport-intermediate drivers
 - miniport-intermediate drivers WDK NDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

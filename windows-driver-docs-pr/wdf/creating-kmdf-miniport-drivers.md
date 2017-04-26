@@ -5,7 +5,7 @@ description: Creating KMDF Miniport Drivers
 ms.assetid: 3e01827b-fe1e-49ce-8072-9fc6c751fc01
 keywords:
 - miniport drivers WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

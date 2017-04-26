@@ -12,7 +12,7 @@ keywords:
 - printer rendering options WDK
 - Pscript WDK print
 - plug-ins WDK print , customized rendering
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

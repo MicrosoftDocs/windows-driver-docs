@@ -5,7 +5,7 @@ ms.assetid: 08cc06c7-822d-4d1b-b4a3-e43f424425e8
 keywords:
 - Extensible Station receive operations WDK Native 802.11
 - ExtSTA receive operations WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

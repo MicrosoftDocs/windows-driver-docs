@@ -3,7 +3,7 @@ title: Introduction to WIA
 author: windows-driver-content
 description: Introduction to WIA
 ms.assetid: 51674b06-f9d5-4e35-a2ec-9d6cc0a09ef3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

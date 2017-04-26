@@ -2,7 +2,7 @@
 title: VMQ Transmit Path
 description: VMQ Transmit Path
 ms.assetid: a34f0708-e477-4acc-b854-f00f752be423
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

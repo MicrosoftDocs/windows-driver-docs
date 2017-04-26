@@ -10,7 +10,7 @@ keywords:
 - surfaces WDK DirectDraw , attachments
 - drawing surfaces WDK DirectDraw , attachments
 - DirectDraw surfaces WDK Windows 2000 display , attachments
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

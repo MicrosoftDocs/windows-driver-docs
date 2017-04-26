@@ -2,7 +2,7 @@
 title: Occasions for Setting Miniport Driver Information
 description: Occasions for Setting Miniport Driver Information
 ms.assetid: 46834d76-e1b9-440c-af18-a4b564d1a76e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

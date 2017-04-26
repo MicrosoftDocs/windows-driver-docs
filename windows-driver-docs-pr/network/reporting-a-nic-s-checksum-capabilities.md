@@ -5,7 +5,7 @@ ms.assetid: a90f8d01-8318-44de-acf0-7903ef7e85e0
 keywords:
 - task offload WDK TCP/IP transport , checksum tasks
 - checksum tasks WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

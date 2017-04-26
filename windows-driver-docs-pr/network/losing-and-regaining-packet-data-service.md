@@ -2,7 +2,7 @@
 title: Losing and Regaining Packet Data Service
 description: Losing and Regaining Packet Data Service
 ms.assetid: 1e9d6c34-f7fc-47e9-aa52-409b9e9ff4f4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,8 +1,8 @@
 ---
 title: Related Design Guidelines
-description: The topics in the Related Design Guidelines section show how a port class audio driver and the audio driver for a Bluetooth Hands-free device can set device-related values and register audio processing objects.
+description: This topic describes how a port class audio driver and the driver for a Bluetooth Hands-free device can set device-related values and register APOs.
 ms.assetid: CB187198-9C95-43C2-9AB6-F8C131ACA9F8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

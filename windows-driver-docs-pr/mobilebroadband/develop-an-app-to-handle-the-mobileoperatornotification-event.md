@@ -2,7 +2,7 @@
 title: Develop an app to handle the MobileOperatorNotification event
 description: Develop an app to handle the MobileOperatorNotification event
 ms.assetid: 3c483888-8ec4-4270-af3e-ef1efc995171
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

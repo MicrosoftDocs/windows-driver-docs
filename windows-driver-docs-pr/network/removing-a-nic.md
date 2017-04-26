@@ -7,7 +7,7 @@ keywords:
 - network interface cards WDK networking , removing
 - Plug and Play WDK NDIS miniport , removing NIC
 - removing NICs WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

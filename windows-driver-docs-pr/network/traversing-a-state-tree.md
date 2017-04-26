@@ -6,7 +6,7 @@ keywords:
 - offloading state process WDK TCP chimney offload , state tree transversing
 - transversing state tree WDK TCP chimney offload
 - state offloading process WDK TCP chimney offload , state tree traversing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

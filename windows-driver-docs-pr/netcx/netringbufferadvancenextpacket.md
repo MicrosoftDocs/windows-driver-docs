@@ -53,7 +53,7 @@ while (NULL != (nextPacket = NetRingBufferAdvanceNextPacket(ringBuffer))) {
 }
 ```
 
-For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

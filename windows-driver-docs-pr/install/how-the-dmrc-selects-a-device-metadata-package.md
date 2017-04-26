@@ -2,7 +2,7 @@
 title: How the DMRC Selects a Device Metadata Package
 description: How the DMRC Selects a Device Metadata Package
 ms.assetid: dbedc995-520a-4b54-8613-d5a7810ab99c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

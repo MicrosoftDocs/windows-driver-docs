@@ -6,7 +6,7 @@ keywords:
 - coordinate transformations WDK Direct3D
 - texture transforms WDK Direct3D
 - transforms WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

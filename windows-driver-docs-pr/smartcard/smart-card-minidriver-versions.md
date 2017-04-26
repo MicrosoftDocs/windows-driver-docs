@@ -2,7 +2,7 @@
 title: Smart Card Minidriver Versions
 description: Smart Card Minidrivers are written to conform to a specific version. New features and capabilities are introduced in each version.
 ms.assetid: F33CF662-601C-41F1-82B1-67B680036668
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

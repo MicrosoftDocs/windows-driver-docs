@@ -4,7 +4,7 @@ description: If you're writing your first driver, use these exercises to get sta
 ms.assetid: d8493589-cdaf-4f20-9416-5810da51aa6a
 keywords:
 - Hello World driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

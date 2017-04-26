@@ -5,7 +5,7 @@ ms.assetid: 0255fc5c-0e75-4108-ba29-f1a61ce9b0dd
 keywords:
 - Force Pending I/O Requests option WDK Driver Verifier
 - STATUS_PENDING WDK Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

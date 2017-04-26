@@ -2,7 +2,7 @@
 title: Enabling MB experiences using portable hotspot devices
 description: Enabling mobile broadband (MB) experiences using portable hotspot devices
 ms.assetid: bfd53d0d-d9cb-4b6a-bbad-549139c5a1ae
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

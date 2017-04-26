@@ -5,7 +5,7 @@ ms.assetid: a94159ab-ce21-4604-beb8-ee01e333505e
 keywords:
 - trace flags WDK
 - flags WDK software tracing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

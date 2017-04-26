@@ -6,7 +6,7 @@ ms.assetid: cdcdffb0-4210-4bf0-984e-b0c3234df129
 keywords:
 - IRP completion routines WDK file system , PendingReturned flag
 - PendingReturned flag
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: a03a7cbc-95be-4251-8e3a-bef4a093f03d
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , reporting capabilities
 - D3DCAPS8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

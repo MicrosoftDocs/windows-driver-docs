@@ -2,7 +2,7 @@
 title: Authoring Tests
 description: Authoring Tests
 ms.assetid: 728821AC-9C90-4dae-8A42-2C8E712174DF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

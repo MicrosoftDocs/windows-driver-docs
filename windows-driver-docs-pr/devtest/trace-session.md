@@ -13,7 +13,7 @@ keywords:
 - user-mode trace sessions WDK
 - process trace sessions WDK
 - reserved trace sessions WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

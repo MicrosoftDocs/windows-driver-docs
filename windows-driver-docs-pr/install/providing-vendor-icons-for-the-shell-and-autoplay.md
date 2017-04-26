@@ -12,7 +12,7 @@ keywords:
 - no-media-inserted icons WDK
 - icons WDK AutoPlay
 - copying icon files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

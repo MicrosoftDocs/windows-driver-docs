@@ -2,7 +2,7 @@
 title: OperatorList
 description: OperatorList
 ms.assetid: 28006331-aa65-4b33-ae94-a027c8a60d48
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

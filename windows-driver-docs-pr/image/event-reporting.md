@@ -3,7 +3,7 @@ title: Event Reporting
 author: windows-driver-content
 description: Event Reporting
 ms.assetid: 4c3ffa7e-d0b3-483c-9f6b-3fe8ae997cf0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

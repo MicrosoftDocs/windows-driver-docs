@@ -5,7 +5,7 @@ ms.assetid: a585bb06-d65f-4e14-a205-dc0d6523363e
 keywords:
 - co-installers WDK device installations , registering
 - registering co-installers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

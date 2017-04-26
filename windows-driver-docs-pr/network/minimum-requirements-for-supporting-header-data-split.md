@@ -5,7 +5,7 @@ ms.assetid: 32ca214a-5103-4472-bbdb-1338188750d9
 keywords:
 - header-data split WDK , requirements
 - Ethernet frame splitting WDK networking , requirements
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

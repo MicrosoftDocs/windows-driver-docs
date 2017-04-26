@@ -2,7 +2,7 @@
 title: Using NDIS 6.40 Data Structures
 description: The following structures and enumerations were updated for NDIS 6.40.
 ms.assetid: 99E71C21-023A-4E17-B689-89FB2C3A404E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

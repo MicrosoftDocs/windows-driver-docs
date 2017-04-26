@@ -9,7 +9,7 @@ keywords:
 - configuring displays WDK Windows Server 2008 R2 display , CCD APIs, example code
 - CCD APIs WDK Windows 7 display , example code
 - CCD APIs WDK Windows Server 2008 R2 display , example code
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

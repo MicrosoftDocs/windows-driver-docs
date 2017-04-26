@@ -10,7 +10,7 @@ keywords:
 - CPSUI WDK print , message handlers
 - dialog box procedures WDK CPSUI
 - window messages WDK CPSUI
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

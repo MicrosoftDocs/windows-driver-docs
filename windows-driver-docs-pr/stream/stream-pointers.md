@@ -10,7 +10,7 @@ keywords:
 - frames WDK AVStream
 - queues WDK AVStream
 - SRBs WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

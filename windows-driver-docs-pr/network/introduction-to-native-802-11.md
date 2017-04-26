@@ -6,7 +6,7 @@ keywords:
 - Native 802.11 WDK networking , about Native 802.11
 - wireless LAN networks WDK , Native 802.11 overview
 - WLAN networks WDK , Native 802.11 overview
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

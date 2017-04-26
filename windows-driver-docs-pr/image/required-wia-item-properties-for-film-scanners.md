@@ -3,7 +3,7 @@ title: Required WIA Item Properties for Film Scanners
 author: windows-driver-content
 description: Required WIA Item Properties for Film Scanners
 ms.assetid: f87e1bfc-6d85-4aba-a2ad-e491f997a3ae
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

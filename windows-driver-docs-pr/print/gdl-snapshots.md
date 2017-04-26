@@ -8,7 +8,7 @@ keywords:
 - snapshots WDK GDL
 - parser WDK GDL , creating snapshots
 - schemas WDK GDL , creating snapshots without GDL schemas
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

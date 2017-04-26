@@ -2,7 +2,7 @@
 title: UPS\ServiceProviders Registry Entries
 description: UPS\ServiceProviders Registry Entries
 ms.assetid: fa206f16-e136-4bfe-9823-7c324d62e1fb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

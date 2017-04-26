@@ -7,7 +7,7 @@ keywords:
 - device setup classes WDK device installations
 - interface classes WDK device installations
 - setup classes WDK device installations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

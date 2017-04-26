@@ -3,7 +3,7 @@ title: Half-Duplex Mode Not Appropriate for Shipped Products
 author: windows-driver-content
 description: Half-Duplex Mode Not Appropriate for Shipped Products
 ms.assetid: a586f340-5577-40ba-aa3e-11599f506223
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

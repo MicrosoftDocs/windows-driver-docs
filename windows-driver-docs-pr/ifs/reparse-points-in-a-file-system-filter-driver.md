@@ -6,7 +6,7 @@ ms.assetid: 6aae70d9-c934-4759-bb26-728b0ac025d1
 keywords:
 - security WDK file systems , reparse points
 - reparse points WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

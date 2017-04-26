@@ -4,7 +4,7 @@ description: CM_PROB_REINSTALL
 ms.assetid: 6af20659-a39e-44bc-874d-34078da1ba13
 keywords:
 - CM_PROB_REINSTALL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

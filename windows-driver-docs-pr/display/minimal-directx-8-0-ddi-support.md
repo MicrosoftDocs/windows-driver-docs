@@ -4,7 +4,7 @@ description: Minimal DirectX 8.0 DDI Support
 ms.assetid: 8758e25e-e54f-42e5-a23d-354af634bce9
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , minimal support
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

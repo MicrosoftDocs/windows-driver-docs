@@ -2,7 +2,7 @@
 title: PwrTest Monitor Scenario
 description: The PwrTest Monitor Scenario logs user idle statistics related to monitor or display auto-dimming and blanking.
 ms.assetid: 8B45C85A-01E8-4256-82F3-097871CB9021
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

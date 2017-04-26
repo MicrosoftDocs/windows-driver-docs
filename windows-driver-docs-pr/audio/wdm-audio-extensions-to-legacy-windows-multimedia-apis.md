@@ -6,7 +6,7 @@ keywords:
 - WDM audio extensions WDK
 - extended audio capabilities WDK audio
 - WDM audio drivers WDK , extensions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

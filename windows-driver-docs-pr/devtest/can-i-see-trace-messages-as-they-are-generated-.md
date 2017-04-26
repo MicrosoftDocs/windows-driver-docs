@@ -2,7 +2,7 @@
 title: Can I see trace messages as they are generated
 description: Can I see trace messages as they are generated
 ms.assetid: 21d8606b-5693-4f50-81f9-c5c3a65c0550
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

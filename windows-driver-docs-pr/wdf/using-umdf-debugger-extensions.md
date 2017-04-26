@@ -7,7 +7,7 @@ keywords:
 - UMDF debugger extensions WDK
 - debugger extensions WDK UMDF
 - extensions WDK debuggers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

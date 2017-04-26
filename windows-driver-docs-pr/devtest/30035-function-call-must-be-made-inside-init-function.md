@@ -2,7 +2,7 @@
 title: C30035
 description: Warning C30035 A call was made to a function that must be made from inside the initialization function (for example, DriverEntry() or DllInitialize()). PREfast was unable to determine if the call was made from the initialization function.
 ms.assetid: 1A5F97EA-7DDC-4D3A-8058-B9C0C2211DA9
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

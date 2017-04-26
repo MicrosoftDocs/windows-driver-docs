@@ -4,7 +4,7 @@ description: Obtaining the NDIS Version
 ms.assetid: f7bbd11c-b6ec-4adb-8c42-ec438d518ed8
 keywords:
 - NDIS version information WDK , versus operating system version
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

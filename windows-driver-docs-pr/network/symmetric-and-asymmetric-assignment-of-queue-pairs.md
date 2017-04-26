@@ -2,7 +2,7 @@
 title: Symmetric and Asymmetric Assignment of Queue Pairs
 description: Symmetric and Asymmetric Assignment of Queue Pairs
 ms.assetid: B4BA1567-D536-4E7D-924C-7476FB82DAEB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

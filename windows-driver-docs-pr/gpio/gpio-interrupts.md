@@ -3,7 +3,7 @@ title: GPIO Interrupts
 author: windows-driver-content
 description: Some general-purpose I/O (GPIO) controller devices can configure their GPIO pins to function as interrupt request inputs.
 ms.assetid: 0F56AD4C-E0BF-49F1-AB67-0107D08DEF9F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

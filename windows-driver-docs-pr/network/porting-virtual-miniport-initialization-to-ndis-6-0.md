@@ -8,7 +8,7 @@ keywords:
 - virtual miniports WDK networking
 - porting intermediate drivers WDK networking , virtual miniports
 - initializing virtual miniports
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

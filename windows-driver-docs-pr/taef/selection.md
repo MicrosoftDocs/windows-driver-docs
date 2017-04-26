@@ -2,7 +2,7 @@
 title: Selection
 description: Selection
 ms.assetid: 5DFE5B52-4D58-491c-9363-95E4A2FD680C
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Bluetooth Version and Profile Support in Previous Windows Versions
 description: Bluetooth Version and Profile Support in Previous Windows Versions
 ms.assetid: 5209DE94-241D-4EFA-BA00-884EC74C8C1B
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

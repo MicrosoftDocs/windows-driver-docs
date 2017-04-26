@@ -8,7 +8,7 @@ keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , security associations
 - security associations WDK IPsec offload
 - SAs WDK IPsec offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

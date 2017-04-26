@@ -2,7 +2,7 @@
 title: Best Practices for Testing Download of Device Metadata Packages
 description: Best Practices for Testing the Download of Device Metadata Packages
 ms.assetid: 4470fa63-527a-4e92-916f-a84421259f57
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

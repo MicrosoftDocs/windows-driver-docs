@@ -1,6 +1,11 @@
 ---
 Description: This topic describes best practices for a client driver for allocating, building, and sending an URB to the USB driver stack included with Windows 8.
-title: Best Practices: Using URBs
+title: Best Practices - Using URBs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Best Practices: Using URBs
@@ -24,7 +29,7 @@ For a USBD\_CLIENT\_CONTRACT\_VERSION\_602 version client driver, the USB driver
 
 The USB driver stack performs validations on the received requests and handles the violations whenever possible. Failure to do so might lead to an undefined behavior.
 
-## Do not send I/O requests by using stale or invalid pipe handles
+## <a href="" id="do-not-send-i-o-requests-by-using-stale-or-invalid-pipe-handles"></a>Do not send I/O requests by using stale or invalid pipe handles
 
 
 The client driver must *not* use stale pipe handles to send I/O requests to the USB driver stack. A *stale pipe handle* refers to a pipe handle that was obtained in a request to select a configuration, an interface, or an alternate setting that is no longer selected in the device. To avoid stale pipe handles, every time the client driver selects a configuration or an interface, the driver must refresh its cache of pipe handles (usually stored in the device context). Certain race conditions can also result in stale pipe handles. For instance, the client driver sends an I/O request by using a pipe handle on the selected interface. Before the request completes, the client driver selects an alternate setting that does not use the same endpoint associated with the pipe handle in use. Both of those pending requests might cause a race condition making the pipe handle invalid.

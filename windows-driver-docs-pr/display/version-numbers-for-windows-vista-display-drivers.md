@@ -6,7 +6,7 @@ keywords:
 - display driver model WDK Windows Vista , version numbers
 - Windows Vista display driver model WDK , version numbers
 - version numbers WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

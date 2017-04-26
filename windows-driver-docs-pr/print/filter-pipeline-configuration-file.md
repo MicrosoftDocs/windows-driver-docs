@@ -10,7 +10,7 @@ keywords:
 - private keywords WDK XPSDrv
 - filter pipeline property bags WDK XPSDrv
 - property bags WDK filter pipeline
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

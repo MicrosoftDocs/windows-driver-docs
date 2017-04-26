@@ -4,7 +4,7 @@ description: Disassociation Operations
 ms.assetid: 3589a694-a69a-481f-8479-ea918287736d
 keywords:
 - network operations WDK Native 802.11 , disassociation operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - registry WDK smart card
 - logs WDK smart card
 - events WDK smart card
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

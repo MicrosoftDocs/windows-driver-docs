@@ -6,7 +6,7 @@ ms.assetid: 359735c2-bfa3-4c32-82a5-1d455c4eacb1
 keywords:
 - printer font descriptions WDK Unidrv , hardware-resident fonts
 - hardware-resident fonts WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

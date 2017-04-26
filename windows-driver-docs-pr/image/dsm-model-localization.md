@@ -3,7 +3,7 @@ title: DSM Model Localization
 author: windows-driver-content
 description: DSM Model Localization
 ms.assetid: 9c5e5c47-d363-45d8-abe0-e265b7aa9c7a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

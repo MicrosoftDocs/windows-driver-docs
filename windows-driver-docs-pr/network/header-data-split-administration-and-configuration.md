@@ -2,7 +2,7 @@
 title: Header-Data Split Administration and Configuration
 description: Header-Data Split Administration and Configuration
 ms.assetid: 7615ae38-6597-4ce2-a861-049aafc17af8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

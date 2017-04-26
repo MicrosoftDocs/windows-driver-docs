@@ -12,7 +12,7 @@ keywords:
 - Windows Server 2008 WDK WHEA , WHEA changes
 - Windows Vista SP1 WDK WHEA
 - Windows Vista SP1 WDK WHEA , WHEA changes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - bidi communication schema WDK print
 - property WDK bidi communication
 - value WDK bidi communication
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

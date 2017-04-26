@@ -2,7 +2,7 @@
 title: Obtaining the Current Settings of WOL Patterns
 description: Obtaining the Current Settings of WOL Patterns
 ms.assetid: 113ea75a-83d8-41aa-b61c-711ef90bccca
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

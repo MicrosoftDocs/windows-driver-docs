@@ -2,7 +2,7 @@
 title: Switch Policies
 description: Switch Policies
 ms.assetid: 26070BFB-AFD8-4D4B-AEC2-865DEFEA9CF7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

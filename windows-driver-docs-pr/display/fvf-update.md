@@ -4,7 +4,7 @@ description: FVF Update
 ms.assetid: 2bbcb1fd-b29f-41f4-93eb-5bd1cde9cb20
 keywords:
 - FVF WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

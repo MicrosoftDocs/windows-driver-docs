@@ -7,7 +7,7 @@ keywords:
 - I/O queues WDK KMDF , creating
 - I/O queues WDK KMDF , request handlers
 - request handlers WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

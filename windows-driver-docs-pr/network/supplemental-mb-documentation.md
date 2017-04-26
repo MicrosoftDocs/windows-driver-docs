@@ -2,7 +2,7 @@
 title: Supplemental MB Documentation
 description: The following sections provide supplemental information for developers of MB devices.
 ms.assetid: 0C812829-D91A-44FC-8BE6-F8264B13F6C7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

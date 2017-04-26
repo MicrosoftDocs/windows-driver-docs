@@ -2,7 +2,7 @@
 title: MB Miniport Driver Performance Requirements
 description: MB Miniport Driver Performance Requirements
 ms.assetid: 16986208-7572-412d-8839-71f1a66b074f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Architecture
 author: windows-driver-content
 description: Architecture
 ms.assetid: af6a338a-feb2-47a4-a8ed-eedbc4c11797
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

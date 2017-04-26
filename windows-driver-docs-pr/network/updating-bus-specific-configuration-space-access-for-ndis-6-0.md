@@ -7,7 +7,7 @@ keywords:
 - miniport adapters WDK networking , bus configuration space
 - adapters WDK networking , bus configuration space
 - porting miniport drivers WDK networking , adapters
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

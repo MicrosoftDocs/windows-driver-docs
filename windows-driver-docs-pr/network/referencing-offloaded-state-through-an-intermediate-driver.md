@@ -5,7 +5,7 @@ ms.assetid: ea721b1e-1b75-4982-bcc5-f1359191cc72
 keywords:
 - intermediate drivers WDK TCP chimney offload , referencing offloaded state
 - referencing offloaded state via intermediate driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

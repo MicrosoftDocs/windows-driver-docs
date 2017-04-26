@@ -2,7 +2,7 @@
 title: LaunchDeviceStageOnDeviceConnect
 description: LaunchDeviceStageOnDeviceConnect
 ms.assetid: 6c3ac8f9-373f-4b70-85c6-a4bd3d81a534
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

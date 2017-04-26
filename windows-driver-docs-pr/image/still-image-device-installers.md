@@ -3,7 +3,7 @@ title: Still Image Device Installers
 author: windows-driver-content
 description: Still Image Device Installers
 ms.assetid: e0ea31de-063a-49a4-922f-62edb774ac76
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

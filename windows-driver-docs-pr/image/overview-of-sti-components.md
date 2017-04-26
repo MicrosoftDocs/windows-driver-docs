@@ -3,7 +3,7 @@ title: Overview of STI Components
 author: windows-driver-content
 description: Overview of STI Components
 ms.assetid: 30aaa622-fb86-42dc-a417-df61e0093db3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

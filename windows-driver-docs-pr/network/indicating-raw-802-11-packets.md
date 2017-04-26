@@ -4,7 +4,7 @@ description: Indicating Raw 802.11 Packets
 ms.assetid: df2295f3-13d6-41d7-9959-c34f19af33ea
 keywords:
 - raw packets WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

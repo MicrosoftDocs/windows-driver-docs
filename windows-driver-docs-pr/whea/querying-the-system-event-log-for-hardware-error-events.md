@@ -10,7 +10,7 @@ keywords:
 - WHEA WDK , querying system event log
 - Windows Hardware Error Architecture WDK , querying system event log
 - event log WDK WHEA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

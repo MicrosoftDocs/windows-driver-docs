@@ -8,7 +8,7 @@ keywords:
 - connections WDK SANs
 - addresses WDK SANs
 - linking computer clusters WDK SANs
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

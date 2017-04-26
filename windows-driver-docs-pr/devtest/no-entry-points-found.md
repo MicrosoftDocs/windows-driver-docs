@@ -2,7 +2,7 @@
 title: No Entry Points Found
 description: No Entry Points Found
 ms.assetid: bb355c8a-66a9-4cb5-aea5-906111710a91
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

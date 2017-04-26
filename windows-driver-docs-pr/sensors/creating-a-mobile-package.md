@@ -3,7 +3,7 @@ title: Creating a mobile package
 author: windows-driver-content
 description: This topic provides information about creating a package for installing the sample driver on a mobile device.
 ms.assetid: E929D80D-17BF-4079-8CF9-972020306358
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

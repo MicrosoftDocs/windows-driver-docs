@@ -5,7 +5,7 @@ ms.assetid: 8f591bc1-272c-4e53-8e49-3350c6a3a33e
 keywords:
 - classify callouts WDK Windows Filtering Platform , stream data changes
 - stream data changes WDK Windows Filtering Platform
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

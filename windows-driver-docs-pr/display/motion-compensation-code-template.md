@@ -10,7 +10,7 @@ keywords:
 - copy protection WDK COPP , motion-compensation code template
 - video copy protection WDK COPP , motion-compensation code template
 - protected video WDK COPP , motion-compensation code template
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -39,7 +39,7 @@ This section includes:
 
 [Performing Deinterlacing with Substream Compositing Operations](performing-deinterlacing-with-substream-compositing-operations.md)
 
-[Performing COPP Operations](performing-copp-operations2.md)
+[Performing COPP Operations](performing-copp-operations-example.md)
 
 [Deleting Instances of DirectX VA Device Objects](deleting-instances-of-directx-va-device-objects.md)
 

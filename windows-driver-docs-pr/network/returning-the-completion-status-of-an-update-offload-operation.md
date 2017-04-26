@@ -5,7 +5,7 @@ ms.assetid: ca305816-8723-4643-9f23-0b2e939e4b78
 keywords:
 - updating offloaded TCP chimney state, completion status
 - completion status of updates WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

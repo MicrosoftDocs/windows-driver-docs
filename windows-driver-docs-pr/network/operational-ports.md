@@ -2,7 +2,7 @@
 title: Operational Ports
 description: Operational Ports
 ms.assetid: 647EBDFD-A100-46A7-B387-BF11004415EC
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

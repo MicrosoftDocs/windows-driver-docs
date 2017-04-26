@@ -2,7 +2,7 @@
 title: Avoid Restarts during Device Installations and Driver Updates
 description: Avoiding System Restarts during Device Installations and Driver Updates
 ms.assetid: b30c9e5f-85af-4e7f-81aa-67fe2df8a178
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

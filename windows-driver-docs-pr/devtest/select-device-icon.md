@@ -4,7 +4,7 @@ description: Select device icon in the Device Metadata Authoring Wizard
 ms.assetid: D66A6141-87DA-49E6-9634-705D279C5E97
 keywords:
 - Select device icon in the Device Metadata Authoring Wizard
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

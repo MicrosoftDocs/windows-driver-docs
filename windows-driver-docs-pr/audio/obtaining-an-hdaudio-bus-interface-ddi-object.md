@@ -4,7 +4,7 @@ description: Obtaining an HDAUDIO\_BUS\_INTERFACE DDI Object
 ms.assetid: 78667254-62a6-41fe-af36-43dbdea63aa8
 keywords:
 - HDAUDIO_BUS_INTERFACE structure
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

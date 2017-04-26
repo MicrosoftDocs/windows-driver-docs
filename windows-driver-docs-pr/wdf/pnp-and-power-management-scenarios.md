@@ -7,7 +7,7 @@ keywords:
 - PnP WDK KMDF , scenarios
 - Plug and Play WDK KMDF , scenarios
 - power management WDK KMDF , scenarios
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

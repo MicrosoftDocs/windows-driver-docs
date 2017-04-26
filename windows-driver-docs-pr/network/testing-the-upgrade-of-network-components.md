@@ -5,7 +5,7 @@ ms.assetid: 1e71e376-2c35-49d8-b1bc-6278679ab46f
 keywords:
 - network component upgrades WDK , testing
 - upgrading network components WDK , testing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

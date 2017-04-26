@@ -7,7 +7,7 @@ keywords:
 - message-signaled interrupts WDK networking , handling interrupts
 - MSIs WDK networking , handling interrupts
 - interrupts WDK networking , handling
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

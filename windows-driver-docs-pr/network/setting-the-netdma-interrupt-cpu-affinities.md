@@ -5,7 +5,7 @@ ms.assetid: 61804166-1888-4cdb-bf6f-c9d84e302698
 keywords:
 - interrupts WDK NetDMA , CPU affinities
 - CPU affinities WDK NetDMA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

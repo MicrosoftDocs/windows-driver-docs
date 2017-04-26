@@ -15,7 +15,7 @@ keywords:
 - crypto session WDK Windows Server 2008 R2 display
 - crypto session WDK Windows 7 display , associating with a DXVA 2.0 decoder
 - crypto session WDK Windows Server 2008 R2 display , associating with a DXVA 2.0 decoder
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

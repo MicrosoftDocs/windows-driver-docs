@@ -5,7 +5,7 @@ description: Option Attributes for the Resolution Feature
 ms.assetid: f04cd119-38c7-465c-b4fd-d657aa5bfacd
 keywords:
 - Resolution Feature
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

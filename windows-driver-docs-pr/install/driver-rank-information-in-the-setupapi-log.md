@@ -5,7 +5,7 @@ ms.assetid: 169a1963-3fb3-4254-9634-78034cda2924
 keywords:
 - SetupAPI logging WDK Windows Vista , driver rank information
 - signature indicators WDK device installations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

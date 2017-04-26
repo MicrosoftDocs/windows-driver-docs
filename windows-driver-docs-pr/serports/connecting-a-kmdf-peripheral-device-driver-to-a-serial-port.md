@@ -3,7 +3,7 @@ title: Connecting a KMDF Peripheral Driver to a Serial Port
 author: windows-driver-content
 description: The KMDF driver for a peripheral device on a SerCx2-managed serial port requires certain hardware resources to operate the device. Included in these resources is the information that the driver needs to open a logical connection to the serial port.
 ms.assetid: EDE62C5E-3563-42EE-884E-DF473CD724A5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

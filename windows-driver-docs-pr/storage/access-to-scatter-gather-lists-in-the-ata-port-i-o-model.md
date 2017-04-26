@@ -6,7 +6,7 @@ ms.assetid: 56221602-9588-47f2-acd9-a11bd5ce02d9
 keywords:
 - ATA Port drivers WDK , scatter/gather list
 - scatter/gather list WDK ATA Port driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

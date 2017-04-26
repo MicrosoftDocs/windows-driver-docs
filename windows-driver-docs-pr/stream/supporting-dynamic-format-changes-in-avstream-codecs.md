@@ -8,7 +8,7 @@ keywords:
 - supporting dynamic format change WDK AVStream
 - dynamic format change WDK AVStream
 - AVStream hardware codec support WDK , supporting dynamic format change
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

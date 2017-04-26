@@ -6,7 +6,7 @@ keywords:
 - network filter intermediate driver installation requirements WDK
 - service INF files WDK networking
 - device INF files WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

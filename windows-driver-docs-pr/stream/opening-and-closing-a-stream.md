@@ -10,7 +10,7 @@ keywords:
 - capturing video WDK AVStream , closing streams
 - opening streams WDK AVStream
 - closing streams WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

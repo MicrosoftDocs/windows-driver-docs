@@ -4,7 +4,7 @@ description: Review and save package in the Device Metadata Authoring Wizard
 ms.assetid: 8CF9B9D9-6F7B-4792-8960-D2CA811349F2
 keywords:
 - Review and save package in the Device Metadata Authoring Wizard
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

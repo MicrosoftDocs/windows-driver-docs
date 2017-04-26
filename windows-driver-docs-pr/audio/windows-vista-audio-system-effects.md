@@ -2,7 +2,7 @@
 title: Windows Vista Audio System Effects
 description: This section describes the different technologies that are used to provide digital audio system effects on legacy Microsoft Windows operating systems.
 ms.assetid: 773E7B58-F1B8-474C-992F-4060F9D88D4E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

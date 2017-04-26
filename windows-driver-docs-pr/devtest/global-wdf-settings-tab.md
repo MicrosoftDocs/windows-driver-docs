@@ -5,7 +5,7 @@ ms.assetid: 9b976a59-329f-41a7-9eff-8f18d75cdb42
 keywords:
 - WDF Verifier WDK , managing UMDF settings
 - UMDF Verifier settings WDK WDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

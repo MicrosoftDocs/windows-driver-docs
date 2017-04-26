@@ -7,7 +7,7 @@ keywords:
 - errors WDK Device Manager
 - yellow exclamation point WDK Device Manager
 - messages WDK Device Manager
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

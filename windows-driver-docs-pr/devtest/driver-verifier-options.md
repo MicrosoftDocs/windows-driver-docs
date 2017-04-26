@@ -5,7 +5,7 @@ ms.assetid: f251fe07-e68e-4d93-9aa5-9a0bc818756d
 keywords:
 - Driver Verifier WDK , options listed
 - errors WDK Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

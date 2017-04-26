@@ -6,7 +6,7 @@ ms.assetid: 581f3000-4e66-4ba0-979d-b187115a30b2
 keywords:
 - filter specific allocators WDK kernel streaming
 - filter allocators WDK kernel streaming
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

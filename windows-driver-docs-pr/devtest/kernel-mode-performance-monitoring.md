@@ -2,7 +2,7 @@
 title: Kernel Mode Performance Monitoring
 description: Kernel Mode Performance Monitoring
 ms.assetid: 317d2f9d-db50-4513-8bbd-28f429236877
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

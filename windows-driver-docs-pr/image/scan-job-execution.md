@@ -3,7 +3,7 @@ title: Scan Job Execution
 author: windows-driver-content
 description: Scan Job Execution
 ms.assetid: cefc6aee-725d-4dc4-bbdc-3d152c97b203
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

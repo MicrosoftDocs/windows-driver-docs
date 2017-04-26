@@ -5,7 +5,7 @@ ms.assetid: 5c9138f8-4a29-4740-b085-efe24d950fba
 keywords:
 - driver stacks WDK networking , restarting
 - restarting driver stacks WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

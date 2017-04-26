@@ -2,7 +2,7 @@
 title: C28639
 description: Warning C28639 Calling close handle with string.
 ms.assetid: 346b9798-3719-4b8e-8edd-f8ee3b751cef
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 9f9ad20e-d8cf-485d-adad-c04eeb40b705
 keywords:
 - video miniport drivers WDK Windows 2000 , IOCTLs
 - IOCTLs WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

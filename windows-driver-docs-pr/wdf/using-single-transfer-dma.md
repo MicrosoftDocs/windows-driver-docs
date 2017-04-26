@@ -3,7 +3,7 @@ title: Using Single Transfer DMA
 author: windows-driver-content
 description: This topic describes how a KMDF driver requests single transfer DMA.
 ms.assetid: 57bf9988-6eed-42ca-a961-a6d16c5c19c1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

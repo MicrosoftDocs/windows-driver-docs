@@ -7,7 +7,7 @@ keywords:
 - filter drivers WDK networking , status indications
 - NDIS filter drivers WDK , status indications
 - status indications WDK networking , filter drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 7ad3f6ee-61a4-4a0e-ab76-d839ae97a2b3
 keywords:
 - trace levels WDK
 - levels WDK software tracing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: '\ Registry Subkey'
 description: '\ Registry Subkey'
 ms.assetid: 19b72c64-5a64-4655-b922-4a4bca162b32
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

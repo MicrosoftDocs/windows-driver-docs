@@ -3,7 +3,7 @@ title: Evaluating a Control Method Without Input Arguments
 author: windows-driver-content
 description: Evaluating a Control Method Without Input Arguments
 ms.assetid: dd989b4d-46db-4fe3-aa7b-8dbfe37057cb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - WDM audio drivers WDK , HD Audio
 - audio drivers WDK , HD Audio
 - Intel High Definition Audio Specification
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

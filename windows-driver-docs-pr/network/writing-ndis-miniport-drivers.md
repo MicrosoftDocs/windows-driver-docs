@@ -9,7 +9,7 @@ keywords:
 - NDIS miniport drivers WDK , writing miniport drivers
 - writing NDIS miniport drivers WDK networking
 - NDIS miniport drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

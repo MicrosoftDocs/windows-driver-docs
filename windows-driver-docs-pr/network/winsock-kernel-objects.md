@@ -8,7 +8,7 @@ keywords:
 - objects WDK Winsock Kernel
 - socket objects WDK Winsock Kernel
 - client objects WDK Winsock Kernel
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

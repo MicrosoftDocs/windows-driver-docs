@@ -6,7 +6,7 @@ ms.assetid: b81fa498-62a5-4839-ae4a-1330d8a03d03
 keywords:
 - vector printing commands WDK Unidrv
 - printer commands WDK Unidrv , vector
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

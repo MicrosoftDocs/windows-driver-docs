@@ -5,7 +5,7 @@ ms.assetid: a2a5f689-152d-44d5-a7a6-34e8853a6cae
 keywords:
 - PHY configuration WDK Native 802.11 , automatic
 - automatic PHY configuration WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

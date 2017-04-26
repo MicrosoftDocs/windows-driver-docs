@@ -2,7 +2,7 @@
 title: NDIS Packet Coalescing
 description: NDIS Packet Coalescing
 ms.assetid: 500FBF0F-54D9-4675-8E2D-447387DA8798
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

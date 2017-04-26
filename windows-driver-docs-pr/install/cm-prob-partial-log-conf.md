@@ -4,7 +4,7 @@ description: CM_PROB_PARTIAL_LOG_CONF
 ms.assetid: 1e8b10e8-c2c6-4a71-9af5-575206098148
 keywords:
 - CM_PROB_PARTIAL_LOG_CONF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Flatbed Child Item Properties
 author: windows-driver-content
 description: Flatbed Child Item Properties
 ms.assetid: ad13e4a2-0c5c-43a5-ab83-fc2ef65b4467
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

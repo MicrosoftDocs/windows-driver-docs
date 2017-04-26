@@ -2,7 +2,7 @@
 title: Managing NDIS QoS Parameters
 description: Managing NDIS QoS Parameters
 ms.assetid: 67213EEA-B3D1-42BB-86F8-11E785D6CBA1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

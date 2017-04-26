@@ -9,7 +9,7 @@ keywords:
 - vector graphics WDK Unidrv , about vector graphics
 - graphics printers WDK Unidrv
 - Unidrv WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Basic Software Tracing
 description: Basic Software Tracing
 ms.assetid: 52b95ffe-2b99-4dcc-a668-ecb55b02838e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

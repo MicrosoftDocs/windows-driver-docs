@@ -6,7 +6,7 @@ keywords:
 - notify objects WDK networking , change processing
 - network notify objects WDK , change processing
 - changes to network configuration WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

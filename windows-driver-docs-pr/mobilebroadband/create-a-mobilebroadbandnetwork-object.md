@@ -2,7 +2,7 @@
 title: Create a MobileBroadbandNetwork object
 description: Create a MobileBroadbandNetwork object
 ms.assetid: b69c72dc-56cd-4358-9eae-3859705488ea
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

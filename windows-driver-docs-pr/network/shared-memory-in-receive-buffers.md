@@ -2,7 +2,7 @@
 title: Shared Memory in Receive Buffers
 description: Shared Memory in Receive Buffers
 ms.assetid: 3e4d0534-3cbd-40df-b7c1-4f2c15bcd757
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: WIA Item Properties for Scanner Storage
 author: windows-driver-content
 description: WIA Item Properties for Scanner Storage
 ms.assetid: 338772b3-cae8-4f48-b95f-fc2c79fd1035
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

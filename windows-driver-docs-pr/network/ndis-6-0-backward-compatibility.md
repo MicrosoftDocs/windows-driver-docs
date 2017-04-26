@@ -9,7 +9,7 @@ keywords:
 - NDIS porting drivers WDK , backward compatibility
 - porting drivers WDK networking , backward compatibility
 - network driver porting WDK , backwar
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

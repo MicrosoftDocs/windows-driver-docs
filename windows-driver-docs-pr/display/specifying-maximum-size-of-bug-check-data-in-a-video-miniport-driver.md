@@ -6,7 +6,7 @@ keywords:
 - BugcheckDataSize
 - video miniport driver bug-check data WDK DirectX 9.0
 - bug-check data size WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

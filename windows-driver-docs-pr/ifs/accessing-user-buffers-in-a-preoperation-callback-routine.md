@@ -5,7 +5,7 @@ description: Accessing User Buffers in a Preoperation Callback Routine
 ms.assetid: 16e6a9e0-3a92-471f-98e6-9a4e8eb7d4a6
 keywords:
 - preoperation callback routines WDK file system minifilter , buffers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

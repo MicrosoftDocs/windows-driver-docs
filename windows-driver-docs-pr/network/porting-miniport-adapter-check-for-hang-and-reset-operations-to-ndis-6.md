@@ -6,7 +6,7 @@ keywords:
 - adapters WDK networking , hang and reset operations
 - hang and reset operations WDK networking
 - porting miniport drivers WDK networking , hang and reset operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

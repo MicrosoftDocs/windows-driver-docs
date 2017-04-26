@@ -8,7 +8,7 @@ keywords:
 - Windows Hardware and Error Architecture WDK , management applications
 - applications WDK WHEA , management
 - management applications WDK WHEA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

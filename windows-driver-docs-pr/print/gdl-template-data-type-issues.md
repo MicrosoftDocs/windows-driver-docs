@@ -6,7 +6,7 @@ ms.assetid: 119466d2-bd4a-40b7-9660-cbb649bb1ddd
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , problems with template data types
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

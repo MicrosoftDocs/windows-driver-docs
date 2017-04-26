@@ -6,7 +6,7 @@ ms.assetid: a22cdeef-4ae7-49f8-b0b5-a4d68feb4235
 keywords:
 - parallel ports WDK , communication modes
 - communication modes WDK parallel ports
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

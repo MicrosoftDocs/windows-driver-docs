@@ -7,7 +7,7 @@ keywords:
 - shaders WDK DirectX 9.0
 - pixel shaders WDK DirectX 9.0
 - vertex shaders WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Using \_\_sdv\_save\_adapter\_context to Track Adapter Context Fields
 description: Using \_\_sdv\_save\_adapter\_context to Track Adapter Context Fields
 ms.assetid: b43d7ef5-0464-4e07-a5ec-9d7d8a55479e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Video Miniport Driver and Display Driver Requirements (Windows 2000 Model)
 description: Video Miniport Driver and Display Driver Requirements (Windows 2000 Model)
 ms.assetid: 83293877-aa18-4346-9769-8cae14fc2f05
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

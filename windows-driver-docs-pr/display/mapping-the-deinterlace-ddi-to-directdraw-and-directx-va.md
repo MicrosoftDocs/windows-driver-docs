@@ -9,7 +9,7 @@ keywords:
 - device methods WDK DirectX VA
 - motion compensation WDK DirectX VA
 - callbacks WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

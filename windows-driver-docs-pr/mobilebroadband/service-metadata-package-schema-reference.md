@@ -2,7 +2,7 @@
 title: Service metadata package schema reference
 description: Service metadata package schema reference
 ms.assetid: 15e82a90-3f1a-4244-92dc-35ee8b90ec80
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

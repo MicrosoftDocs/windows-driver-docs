@@ -15,7 +15,7 @@ keywords:
 - traverse right privileges WDK file systems
 - backup privileges WDK file systems
 - restore privileges WDK file systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

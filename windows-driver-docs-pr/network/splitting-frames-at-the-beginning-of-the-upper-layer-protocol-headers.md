@@ -5,7 +5,7 @@ ms.assetid: 2559ac20-46dc-4116-9d12-b2cd634e501b
 keywords:
 - Ethernet frame splitting WDK networking , beginning of upper-layer protocol
 - upper-layer protocols WDK header-data split
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -1,9 +1,9 @@
 ---
 title: Security driver samples
 author: windows-driver-content
-description: The driver sample in this directory provides a starting point for writing a custom driver for your device.
+description: The early launch anti-malware driver sample in this directory provides a starting point for writing a custom driver for your device.
 ms.assetid: 335446EF-0DEA-4C5E-9DE5-B08F07F6BA09
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

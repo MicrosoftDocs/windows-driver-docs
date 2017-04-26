@@ -2,7 +2,7 @@
 title: Using DPInst to Uninstall Driver Packages
 description: Using DPInst to Uninstall Driver Packages
 ms.assetid: 08e4a19c-453f-4ce1-9117-ce290e5f6ef2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

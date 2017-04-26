@@ -5,7 +5,7 @@ ms.assetid: 88bb8318-f19c-4d98-bb06-6120e6adb51d
 keywords:
 - OIDs WDK networking , filter drivers
 - filtering OID requests in filter driver
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

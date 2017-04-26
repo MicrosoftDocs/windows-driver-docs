@@ -7,7 +7,7 @@ keywords:
 - network OIDs WDK
 - object identifiers WDK networking
 - OIDs WDK networking , about OIDs
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

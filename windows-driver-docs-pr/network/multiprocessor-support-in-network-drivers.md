@@ -6,7 +6,7 @@ keywords:
 - network drivers WDK , processor support
 - multiple processor support WDK networking
 - processors WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

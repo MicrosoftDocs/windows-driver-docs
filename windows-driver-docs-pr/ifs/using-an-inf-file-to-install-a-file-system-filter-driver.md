@@ -5,7 +5,7 @@ description: Using an INF File to Install a File System Filter Driver
 ms.assetid: 0bc70cdb-d115-4329-9fcc-a085a57c5f78
 keywords:
 - INF files WDK file system , installation steps
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: The ConvertDevModeToPrintTicket method is called for each print dri
 ms.assetid: 71387d8b-60ce-4deb-a20b-9d7b0b7be230
 keywords:
 - ConvertDevModeToPrintTicket
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

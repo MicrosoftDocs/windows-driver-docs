@@ -8,7 +8,7 @@ keywords:
 - COPP WDK DirectX VA , graphics adapter output requirements
 - protected video WDK COPP , graphics adapter output requirements
 - graphics adapter output requirements WDK COPP
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

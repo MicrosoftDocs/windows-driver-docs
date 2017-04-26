@@ -8,7 +8,7 @@ keywords:
 - line continuations WDK GPD files
 - continued lines WDK GPD files
 - continuation character WDK GPD files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

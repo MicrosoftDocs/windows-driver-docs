@@ -5,7 +5,7 @@ description: GetIdlePollingState
 ms.assetid: e2c96291-e86c-49a1-a9ce-73e00eddc22a
 keywords:
 - GetIdlePollingState
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

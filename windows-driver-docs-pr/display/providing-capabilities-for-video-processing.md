@@ -13,7 +13,7 @@ keywords:
 - D3DDDICAPS_GETVIDEOPROCESSORRTSUBSTREAMFORMATCOUNT
 - D3DDDICAPS_GETVIDEOPROCESSORRTSUBSTREAMFORMATS
 - D3DDDICAPS_FILTERPROPERTYRANGE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

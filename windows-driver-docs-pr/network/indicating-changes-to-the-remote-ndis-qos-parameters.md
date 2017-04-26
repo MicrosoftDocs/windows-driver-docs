@@ -2,7 +2,7 @@
 title: Indicating Changes to the Remote NDIS QoS Parameters
 description: Indicating Changes to the Remote NDIS QoS Parameters
 ms.assetid: E09EBF25-96B6-417F-9538-D0BEBE5B9E19
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

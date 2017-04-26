@@ -5,7 +5,7 @@ ms.assetid: 06144cf4-bb6f-4b5b-ac0d-f4fae89a04a9
 keywords:
 - WDF Verifier WDK , managing KMDF settings
 - KMDF verifier settings WDK WDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

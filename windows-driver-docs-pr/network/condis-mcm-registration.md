@@ -6,7 +6,7 @@ keywords:
 - MCMs WDK networking , registering CoNDIS miniport call managers
 - miniport call managers WDK networking , registering CoNDIS miniport call managers
 - registering miniport call managers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

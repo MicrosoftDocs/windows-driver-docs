@@ -62,7 +62,7 @@ The [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpacket
 **NetRingBufferReturnCompletedPacketsThroughIndex** allows you to limit the search to a specific range of packets owned by your driver.
 If you don't need to control the exact range of packets that are completed, you can use the simpler method **NetRingBufferReturnCompletedPackets** instead of **NetRingBufferReturnCompletedPacketsThroughIndex**.
 
-For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

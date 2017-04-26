@@ -2,7 +2,7 @@
 title: Querying the Hyper-V Extensible Switch Configuration
 description: Querying the Hyper-V Extensible Switch Configuration
 ms.assetid: AF646860-01AB-4F4B-84F8-B570054B10FC
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

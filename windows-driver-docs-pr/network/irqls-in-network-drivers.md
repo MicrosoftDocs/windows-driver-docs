@@ -5,7 +5,7 @@ ms.assetid: d8720084-460e-4b62-90de-abfd96cd6364
 keywords:
 - network drivers WDK , IRQLs
 - IRQLs WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

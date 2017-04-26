@@ -5,7 +5,7 @@ ms.assetid: 249dc6d0-c187-48ab-9525-e80093c8f01d
 keywords:
 - propagating TCP chimney state-manipulation operations, completion of operation
 - state-manipulation operations WDK TCP chimney offload , completion of operation
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -7,7 +7,7 @@ keywords:
 - SAs WDK IPsec offload
 - ESP-protected packets WDK IPsec offload , security associations
 - AH-protected packets WDK IPsec offload , security associations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

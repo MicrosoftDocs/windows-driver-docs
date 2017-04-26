@@ -10,7 +10,7 @@ keywords:
 - KSDATARANGE structure
 - WDM audio data ranges WDK
 - data ranges WDK audio , about audio data ranges
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

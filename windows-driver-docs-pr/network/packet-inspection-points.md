@@ -4,7 +4,7 @@ description: Packet Inspection Points
 ms.assetid: 9ad1c660-6811-4659-94ad-201a102a9ded
 keywords:
 - packet inspection points WDK Windows Filtering Platform
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

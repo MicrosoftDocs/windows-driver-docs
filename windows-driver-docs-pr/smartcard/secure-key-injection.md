@@ -2,7 +2,7 @@
 title: Secure Key Injection
 description: Secure Key Injection
 ms.assetid: 21F8ED59-B04C-40D3-AEED-015890798215
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -10,7 +10,7 @@ keywords:
 - sleep power management WDK KMDF
 - low-power states WDK KMDF
 - system sleeping states WDK KMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

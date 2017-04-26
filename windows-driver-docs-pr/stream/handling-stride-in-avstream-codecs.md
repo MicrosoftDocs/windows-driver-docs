@@ -5,7 +5,7 @@ description: Handling Stride in AVStream Codecs
 ms.assetid: 816a0ddc-8ab8-4259-9842-76f5e4dadee0
 keywords:
 - AVStream hardware codec support WDK , handling stride
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

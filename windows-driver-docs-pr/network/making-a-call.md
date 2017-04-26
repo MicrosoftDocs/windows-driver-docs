@@ -5,7 +5,7 @@ ms.assetid: b5273df1-b99f-415c-a099-16a51f3329ee
 keywords:
 - call setup WDK CoNDIS
 - making calls WDK CoNDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

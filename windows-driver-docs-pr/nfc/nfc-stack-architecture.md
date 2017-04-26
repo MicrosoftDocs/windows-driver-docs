@@ -8,8 +8,8 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-description: 
-ms.author: windows-driver-content
+description: A diagram of the near field communication (NFC) stack architecture and design.
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -29,4 +29,3 @@ The following diagram illustrates the NFC stack architecture:
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
-

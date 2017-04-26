@@ -15,7 +15,7 @@ keywords:
 - translating pins WDK audio
 - pin factories WDK audio
 - PCPIN_DESCRIPTOR structure
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

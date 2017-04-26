@@ -12,7 +12,7 @@ keywords:
 - root bus drivers WDK ACPI
 - function drivers WDK ACPI , device stacks
 - WDM function drivers WDK ACPI , device stacks
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

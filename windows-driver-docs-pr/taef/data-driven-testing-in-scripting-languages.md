@@ -2,7 +2,7 @@
 title: Data-driven Testing in Scripting Languages
 description: Data-driven Testing in Scripting Languages
 ms.assetid: CF60C594-8877-4f09-AF82-9F4CA27123C7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

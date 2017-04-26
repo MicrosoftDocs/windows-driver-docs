@@ -10,7 +10,7 @@ keywords:
 - Device Profile for Web Services WDK
 - Web Services for Devices API WDK
 - WSDAPI WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

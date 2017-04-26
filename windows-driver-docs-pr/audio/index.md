@@ -1,7 +1,7 @@
 ---
 Description: Audio Devices Design Guide
 title: Audio Devices Design Guide
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

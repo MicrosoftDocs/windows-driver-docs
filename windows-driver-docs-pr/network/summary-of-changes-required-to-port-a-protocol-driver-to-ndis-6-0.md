@@ -4,7 +4,7 @@ description: Summary of Changes Required to Port a Protocol Driver to NDIS 6.0
 ms.assetid: a2d17b63-81fc-44c9-a437-cd7c9f04be5b
 keywords:
 - porting protocol drivers WDK networking , required changes
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

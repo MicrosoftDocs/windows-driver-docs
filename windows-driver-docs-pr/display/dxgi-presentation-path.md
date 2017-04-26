@@ -2,7 +2,7 @@
 title: DXGI Presentation Path
 description: DXGI Presentation Path
 ms.assetid: 3519172d-261c-4b33-b1e7-c4abf33b15f3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

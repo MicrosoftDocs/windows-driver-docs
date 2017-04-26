@@ -3,7 +3,7 @@ title: WDM IRPs and WDF Event Callback Functions
 author: windows-driver-content
 description: WDM IRPs and WDF Event Callback Functions
 ms.assetid: 9B9A01FD-AA15-4C30-B19D-2F6451014EAD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

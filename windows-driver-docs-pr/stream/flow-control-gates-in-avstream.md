@@ -11,7 +11,7 @@ keywords:
 - KSGATE
 - flow control gates WDK AVStream
 - processing control gates WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

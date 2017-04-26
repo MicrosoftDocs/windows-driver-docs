@@ -2,8 +2,8 @@
 title: Driver initialization methods
 author: windows-driver-content
 ms.assetid: CA8F6308-501D-47BC-902E-3259949A1D57
-description: 
-ms.author: windows-driver-content
+description: Methods supported by the sensor driver to initialize a device.
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

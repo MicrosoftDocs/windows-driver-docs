@@ -5,7 +5,7 @@ ms.assetid: 614be46f-8c44-43da-b4ec-7fd7195e2c08
 keywords:
 - Tracefmt WDK , about Tracefmt
 - TMF files WDK , Tracefmt
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

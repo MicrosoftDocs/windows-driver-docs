@@ -8,7 +8,7 @@ keywords:
 - MSIs WDK networking , MSI-X table entry CPU affinity
 - interrupts WDK networking , MSI-X table entry CPU affinity
 - CPU af
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

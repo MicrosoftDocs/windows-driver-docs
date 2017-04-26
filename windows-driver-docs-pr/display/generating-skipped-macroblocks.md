@@ -5,7 +5,7 @@ ms.assetid: 98ea004b-347d-4299-a23c-da0a9d0e844f
 keywords:
 - macroblocks WDK DirectX VA , skipped macroblocks
 - skipped macroblocks WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - CoNDIS TAPI WDK networking , closing operations
 - shutdown WDK networking
 - closing CoNDIS TAPI operations calls WDK CoNDIS WAN
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

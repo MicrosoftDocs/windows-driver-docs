@@ -2,7 +2,7 @@
 title: Dashboard FAQ
 description: This article provides answers to frequently asked questions sent in to the alias, Sysdev Microsoft.com, about the Dashboard or Windows Hardware Certification program.
 ms.assetid: 1459D6EF-5DCB-445E-A2A1-0C5FFD96F504
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

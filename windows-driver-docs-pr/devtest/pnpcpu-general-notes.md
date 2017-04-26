@@ -2,7 +2,7 @@
 title: PNPCPU General Notes
 description: PNPCPU General Notes
 ms.assetid: 7b74ac26-8aeb-495d-af8a-1a3b33eec1fa
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

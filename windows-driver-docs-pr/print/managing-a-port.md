@@ -7,7 +7,7 @@ keywords:
 - print monitors WDK , port management
 - port management WDK print
 - port management WDK print , about port management
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

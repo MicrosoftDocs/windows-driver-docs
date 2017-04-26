@@ -2,7 +2,7 @@
 title: File Signing Services
 description: File Signing Services
 ms.assetid: 3e042e7b-d724-4748-8e7e-f42ac8d94b72
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - filter drivers WDK storage , IoCompletion
 - SFD WDK storage , IoCompletion
 - IoCompletion
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

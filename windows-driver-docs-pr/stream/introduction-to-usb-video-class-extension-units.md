@@ -9,7 +9,7 @@ keywords:
 - Video Class drivers WDK USB , extension units, about
 - UVC drivers WDK AVStream , extension units, about
 - extension units WDK USB Video Class , about
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

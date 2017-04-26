@@ -4,7 +4,7 @@ description: DirectX 9.0 Release Notes
 ms.assetid: b5a35a59-762e-42df-9599-fa1175928810
 keywords:
 - DirectX 9.0 release notes WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

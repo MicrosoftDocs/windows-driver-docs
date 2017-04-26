@@ -11,7 +11,7 @@ keywords:
 - interactive input devices WDK , reports
 - input devices WDK , reports
 - HID reports WDK , operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

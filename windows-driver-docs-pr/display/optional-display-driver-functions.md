@@ -4,7 +4,7 @@ description: Optional Display Driver Functions
 ms.assetid: 7c1489c9-40de-4b44-95b7-af227c7d8205
 keywords:
 - graphics DDI functions WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

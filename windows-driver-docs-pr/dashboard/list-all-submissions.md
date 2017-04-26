@@ -2,7 +2,7 @@
 title: List all submissions
 description: List all submissions
 ms.assetid: 5e7a803d-7764-41fe-a503-a66e7069005d
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

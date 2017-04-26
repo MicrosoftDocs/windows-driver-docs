@@ -1,6 +1,11 @@
 ---
 Description: Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
-title: Windows 8.1: What's new for USB
+title: Windows 8.1 - What's new for USB
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows 8.1: What's new for USB
@@ -12,7 +17,7 @@ Here are the new features and improvements for Universal Serial Bus (USB) in Win
 -   [Microsoft OS 2.0 descriptors for improved device enumeration](#microsoft-os-2-0-descriptors-for-improved-device-enumeration)
 -   [Isochronous support for WinUSB](#usb-wdk)
 -   [USB driver stack improvements](#usb-driver-stack-improvements)
--   [USB tests in the Hardware Certification Kit (HCK)](#usb-tests-in-the-hardware-certification-kit--hck-)
+-   [USB tests in the Hardware Certification Kit (HCK)](#usb-tests-in-the-hardware-certification-kit-hck)
 -   [Improved USB diagnostic tools and debugger extensions](#improved-usb-diagnostic-tools-and-debugger-extensions-)
 -   [Related topics](#related-topics)
 
@@ -61,11 +66,8 @@ These samples demonstrate the use of the [**Windows.Devices.Usb**](https://msdn.
 </tbody>
 </table>
 
- 
-
-## Microsoft OS 2.0 descriptors for improved device enumeration
-
-
+## <a href="" id="microsoft-os-2-0-descriptors-for-improved-device-enumeration"></a>Microsoft OS 2.0 descriptors for improved device enumerations 
+ 
 Microsoft OS 2.0 descriptors improve device identification and driver installation experience.
 
 MS OS 2.0 descriptors specification provides these improvements:
@@ -104,8 +106,7 @@ In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver 
 -   Devices can now recover faster than the default 10 millisecond specified in the USB 2.0 specification. Also, the host controller driver asserts resume signaling for less than the 20 milliseconds required in the USB 2.0 specification.
 -   USB 3.0 driver stack is now more reliable when performing control, bulk, and isochronous data transfers.
 
-## USB tests in the Hardware Certification Kit (HCK)
-
+## <a href="" id= "usb-tests-in-the-hardware-certification-kit-hck"></a>USB tests in the Hardware Certification Kit (HCK)
 
 -   These USB tests in the Hardware Certification Kit (HCK) have been improved. The device enumeration tests now have a new parameter that reduces manual intervention during testing using simplified topologies. The suspend tests have been improved logging capabilities.
 

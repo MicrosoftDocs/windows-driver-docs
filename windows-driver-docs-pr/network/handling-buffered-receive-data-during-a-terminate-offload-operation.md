@@ -5,7 +5,7 @@ ms.assetid: 14746a36-0126-4924-85ad-ecca01779937
 keywords:
 - terminating offload state WDK TCP chimney offload , buffered receive data
 - buffered receive data WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

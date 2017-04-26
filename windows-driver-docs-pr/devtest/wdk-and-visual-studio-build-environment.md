@@ -2,7 +2,7 @@
 title: WDK and Visual Studio build environment
 description: The Windows Driver Kit (WDK) 8.1 and WDK 8 introduced a major change to the environment that you use to build a driver.
 ms.assetid: B964CF3F-ACDB-41ED-8962-B7DDB957D7D3
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

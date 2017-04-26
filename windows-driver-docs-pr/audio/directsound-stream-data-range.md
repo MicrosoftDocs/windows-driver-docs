@@ -4,7 +4,7 @@ description: DirectSound Stream Data Range
 ms.assetid: cc31eb2d-7421-4748-b14c-f4d3d15f9884
 keywords:
 - DirectSound WDK audio , stream data ranges
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

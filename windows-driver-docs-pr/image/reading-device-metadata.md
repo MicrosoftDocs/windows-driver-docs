@@ -3,7 +3,7 @@ title: Reading Device Metadata
 author: windows-driver-content
 description: Reading Device Metadata
 ms.assetid: 402de9de-8bfe-4cc2-9b8e-06e0ad925eb1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Forwarding OID Requests from a Hyper-V Child Partition
 description: Forwarding OID Requests from a Hyper-V Child Partition
 ms.assetid: 35EA9964-4CD0-4636-9573-65F37393B7E2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 4ffcdb49-db38-4d11-82e7-04674c2ed92a
 keywords:
 - biometric drivers WDK , testing
 - testing biometric drivers WDK biometric
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

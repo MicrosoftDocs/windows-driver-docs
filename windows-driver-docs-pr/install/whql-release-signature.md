@@ -10,7 +10,7 @@ keywords:
 - WHQL digital signatures WDK
 - public release driver signing WDK , WHQL
 - release signing WDK , WHQL
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

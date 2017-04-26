@@ -2,7 +2,7 @@
 title: C28726
 description: Warning C28726 Banned API Usage.
 ms.assetid: 37b30183-6eda-4a12-83e5-e74832ddef8a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

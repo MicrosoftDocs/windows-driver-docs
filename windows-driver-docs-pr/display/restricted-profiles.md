@@ -7,7 +7,7 @@ keywords:
 - Video Acceleration WDK DirectX , restricted profiles
 - VA WDK DirectX , restricted profiles
 - restricted profiles WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

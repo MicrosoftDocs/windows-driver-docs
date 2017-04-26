@@ -2,7 +2,7 @@
 title: Roadmap for Developing NDIS Protocol Drivers
 description: Roadmap for Developing NDIS Protocol Drivers
 ms.assetid: b9b8d790-7755-4c52-8a76-70257aa78212
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

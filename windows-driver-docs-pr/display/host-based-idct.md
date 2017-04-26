@@ -10,7 +10,7 @@ keywords:
 - IDCT WDK DirectX VA
 - 16-bit host-based IDCT WDK DirectX VA
 - 8-8 overflow host-based IDCT WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Custom UI Design Information
 description: Custom UI Design Information
 ms.assetid: ec1da6d4-a357-4e23-a476-885fbf6441b7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

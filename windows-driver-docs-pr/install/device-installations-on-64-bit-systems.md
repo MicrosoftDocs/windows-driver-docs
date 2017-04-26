@@ -5,7 +5,7 @@ ms.assetid: 76d9bff7-6429-4d20-9790-a41ed2cb1bdd
 keywords:
 - 64-bit WDK device installations
 - device installations WDK , 64-bit systems
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

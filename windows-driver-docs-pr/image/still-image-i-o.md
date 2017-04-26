@@ -3,7 +3,7 @@ title: Still Image I/O
 author: windows-driver-content
 description: Still Image I/O
 ms.assetid: 1dd23545-e13a-4a69-b9bc-e2305e4c2163
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

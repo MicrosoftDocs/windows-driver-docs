@@ -8,7 +8,7 @@ keywords:
 - bus-master DMA WDK KMDF , I/O requests
 - I/O requests WDK KMDF , DMA devices
 - request processing WDK KMDF , DMA devices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

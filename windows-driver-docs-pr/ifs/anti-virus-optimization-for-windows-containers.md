@@ -3,7 +3,7 @@ title: Anti-virus optimization for Windows Containers
 author: windows-driver-content
 description: This topic describes optimizations that anti-virus products can utilize when running within Windows Containers.
 ms.assetid: 101BC08B-EE63-4468-8B12-C8C8B0E99FC5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

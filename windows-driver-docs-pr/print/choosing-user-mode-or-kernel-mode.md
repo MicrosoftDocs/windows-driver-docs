@@ -8,7 +8,7 @@ keywords:
 - graphics DLL WDK printer , user-mode vs. kernel-mode
 - user-mode execution WDK printer graphics
 - kernel-mode execution WDK printer graphics
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

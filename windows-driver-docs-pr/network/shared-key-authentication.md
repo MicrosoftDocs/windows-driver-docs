@@ -5,7 +5,7 @@ ms.assetid: 7db377df-aff3-4a4a-8d31-4faff642820f
 keywords:
 - authentication WDK Native 802.11 , shared key
 - shared key authentication WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

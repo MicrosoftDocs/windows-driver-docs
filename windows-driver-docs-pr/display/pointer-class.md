@@ -4,7 +4,7 @@ description: Pointer Class
 ms.assetid: c988535a-d218-48de-bdc2-56a620bbe4a2
 keywords:
 - pointer class WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

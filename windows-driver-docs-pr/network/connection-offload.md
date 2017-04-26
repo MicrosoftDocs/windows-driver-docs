@@ -8,7 +8,7 @@ keywords:
 - offload WDK TCP/IP transport , connection offload
 - connection offload WDK TCP/IP transport , about connection offload
 - capabilities WDK TCP/IP offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

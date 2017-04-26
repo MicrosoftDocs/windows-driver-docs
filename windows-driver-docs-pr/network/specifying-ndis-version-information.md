@@ -5,7 +5,7 @@ ms.assetid: 9d007046-01c5-4bf8-adda-b88b596945d6
 keywords:
 - NDIS version information WDK
 - versioning WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

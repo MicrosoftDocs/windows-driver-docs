@@ -16,7 +16,7 @@ keywords:
 - KS WDK , data ranges
 - kernel streaming WDK , data formats
 - KS WDK , data formats
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

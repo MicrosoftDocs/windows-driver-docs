@@ -7,7 +7,7 @@ keywords:
 - reader states WDK smart card
 - states WDK smart card
 - vendor-supplied drivers WDK smart card , reader states
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

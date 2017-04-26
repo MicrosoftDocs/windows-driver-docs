@@ -2,7 +2,7 @@
 title: WDK Build Output
 description: By default, the WDK uses the intermediate directory $(IntDir) macro to specify the default build output directory.
 ms.assetid: CD083755-9C9C-458A-9115-E63336C413B5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

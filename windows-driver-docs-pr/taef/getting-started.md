@@ -2,7 +2,7 @@
 title: Getting Started with TAEF
 description: Getting Started with Test Authoring and Execution Framework (TAEF)
 ms.assetid: 7F57C5EF-141A-4303-9B9F-2EC118324BF8
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

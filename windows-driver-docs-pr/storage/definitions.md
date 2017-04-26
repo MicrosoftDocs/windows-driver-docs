@@ -3,7 +3,7 @@ title: Definitions
 author: windows-driver-content
 description: Definitions
 ms.assetid: 904b7dd3-472d-4286-81c1-2af1109e2139
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

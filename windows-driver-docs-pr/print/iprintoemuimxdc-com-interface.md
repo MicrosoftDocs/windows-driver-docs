@@ -5,7 +5,7 @@ description: IPrintOemUIMXDC COM Interface
 ms.assetid: db6d575e-31d0-4a26-8cf9-5188935610e5
 keywords:
 - IPrintOemUIMXDC
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

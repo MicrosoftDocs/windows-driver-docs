@@ -9,7 +9,7 @@ keywords:
 - legacy driver stacks WDK biometric
 - non-PnP devices WDK biometric
 - proprietary stacks WDK biometric
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

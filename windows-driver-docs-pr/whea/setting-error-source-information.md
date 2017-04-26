@@ -9,7 +9,7 @@ keywords:
 - WHEA WDK , setting error source information
 - Windows Hardware Error Architecture WDK , setting error source information
 - hardware error sources WDK WHEA , setting information
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Attaching a Debugger to the Print Filter Pipeline Service
 author: windows-driver-content
 description: Attaching a Debugger to the Print Filter Pipeline Service
 ms.assetid: d2e032f8-bdce-415a-8cf4-d9816b7c9de5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

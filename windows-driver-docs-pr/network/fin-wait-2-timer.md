@@ -6,7 +6,7 @@ keywords:
 - timers WDK TCP chimney offload , FIN_WAIT_2 timers
 - TCP timers WDK TCP chimney offload , FIN_WAIT_2 timers
 - FIN_WAIT_2 timers WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

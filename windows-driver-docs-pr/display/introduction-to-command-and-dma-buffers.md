@@ -5,7 +5,7 @@ ms.assetid: e9fa38a2-3243-4578-83c3-4559ec3480a7
 keywords:
 - command buffers WDK display , about command buffers
 - DMA buffers WDK display , about DMA buffers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -11,7 +11,7 @@ keywords:
 - SndNxt WDK TCP chimney offload
 - SndMax WDK TCP chimney offload
 - mapping bytes for TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

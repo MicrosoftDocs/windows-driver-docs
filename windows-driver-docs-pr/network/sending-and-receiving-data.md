@@ -1,20 +1,20 @@
 ---
-title: Sending and Receiving Data
-description: Sending and Receiving Data
+title: Sending and receiving data over WSK sockets
+description: Sending and receiving data over WSK sockets
 ms.assetid: f9c9e9c0-6d49-412d-be53-5f92bf55d328
 keywords:
 - Winsock Kernel WDK networking , sending and receiving data
 - WSK WDK networking , sending and receiving data
 - sending data WDK networking
 - receiving data WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Sending and Receiving Data
+# Sending and receiving data over WSK sockets
 
 
 This section discusses sending and receiving data over Winsock Kernel (WSK) sockets and includes the following sections:

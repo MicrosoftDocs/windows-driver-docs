@@ -5,7 +5,7 @@ ms.assetid: 096f21b4-401e-478c-9543-03cc963309bf
 keywords:
 - Windows Filtering Platform callout drivers WDK , terminology
 - callout drivers WDK Windows Filtering Platform , terminology
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

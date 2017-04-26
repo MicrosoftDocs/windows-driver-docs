@@ -2,7 +2,7 @@
 title: Software Volume Control Support
 description: Software Volume Control Support
 ms.assetid: 2bdc7d01-9e47-4deb-b551-13e9cbc9c844
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

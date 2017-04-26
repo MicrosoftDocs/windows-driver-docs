@@ -5,7 +5,7 @@ description: Best Practices for Client-Side Rendering
 ms.assetid: d05086c1-4e0b-4767-bb1d-7b6d73b1b210
 keywords:
 - client-side rendering WDK print , best practices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

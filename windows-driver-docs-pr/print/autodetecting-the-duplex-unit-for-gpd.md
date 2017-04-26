@@ -9,7 +9,7 @@ keywords:
 - in-box autoconfiguration support WDK printer , autodetecting duplex unit
 - detecting duplex unit
 - duplex unit WDK printer autoconfiguration
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

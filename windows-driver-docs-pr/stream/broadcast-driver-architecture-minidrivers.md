@@ -9,7 +9,7 @@ keywords:
 - minidrivers WDK BDA
 - BDA minidrivers WDK AVStream
 - BDA minidrivers WDK AVStream , about BDA minidrivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

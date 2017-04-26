@@ -3,7 +3,7 @@ title: Code Example for Opening a Property Store
 author: windows-driver-content
 description: Code Example for Opening a Property Store
 ms.assetid: 4d63ea52-f3f5-4af7-ad6f-0bbd57b76c52
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

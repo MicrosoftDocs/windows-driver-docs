@@ -2,7 +2,7 @@
 title: Create a production device submission
 description: Create a production device submission
 ms.assetid: bf7a4e6b-852a-49a9-beb7-9818aea9cae4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

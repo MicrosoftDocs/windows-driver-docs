@@ -5,7 +5,7 @@ description: The IPrintTicketProvider GetSupportedVersions method returns the ma
 ms.assetid: 0b648cc3-4d61-401c-b626-34db2b026b2a
 keywords:
 - GetSupportedVersions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

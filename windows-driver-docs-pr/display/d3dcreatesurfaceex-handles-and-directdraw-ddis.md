@@ -5,7 +5,7 @@ ms.assetid: 626b04a2-3c50-425a-bbdf-3fb24fc95215
 keywords:
 - context WDK Direct3D , D3dCreateSurfaceEx
 - D3dCreateSurfaceEx
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
