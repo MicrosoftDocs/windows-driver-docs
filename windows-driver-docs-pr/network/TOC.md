@@ -1541,7 +1541,6 @@
 #### [Native 802.11 MIB OIDs](native-802-11-mib-oids.md)
 ##### [Native 802.11 IEEE MIB objects](native-802-11-ieee-mib-objects.md)
 #### [Native 802.11 Virtual WiFi OIDs](native-802-11-virtual-wifi-oids.md)
-#### [Native 802.11 WFD OIDs](native-802-11-wfd-oids.md)
 ### [Wi-Fi Auto Power Save Mode](wi-fi-auto-power-save-mode.md)
 ### [Wi-Fi Direct Miniport Initialization and Configuration](wi-fi-direct-miniport-initialization-and-configuration.md)
 ### [Wi-Fi Direct Protocol Implementation](wi-fi-direct-protocol-implementation.md)

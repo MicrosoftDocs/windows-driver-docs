@@ -33,7 +33,6 @@ The Native 802.11 OIDs are described in the following sections:
 - [Native 802.11 Operational OIDs](native-802-11-operational-oids.md)
 - [Native 802.11 MIB OIDs](native-802-11-mib-oids.md)
 - [Native 802.11 Virtual WiFi OIDs](native-802-11-virtual-wifi-oids.md)
-- [Native 802.11 WFD OIDs](native-802-11-wfd-oids.md)
 
 For an overview of the terms and naming conventions used throughout this section, see [Native 802.11 OID terminology](native-802-11-oid-terminology.md).
 
