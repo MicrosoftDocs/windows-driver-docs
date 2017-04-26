@@ -43,7 +43,7 @@ A pointer to a caller-allocated [**WDF_OBJECT_ATTRIBUTES**](https://msdn.microso
 A pointer to a caller-allocated [**NET_ADAPTER_CONFIG**](net-adapter-config.md) structure. For info, see [**NET_ADAPTER_CONFIG_INIT**](net-adapter-config-init.md).
 
 *Adapter* [out]  
-A pointer to a location that receives a handle to the new NET adapter object.
+A pointer to a location that receives a handle to the new NETADAPTER object.
 
 Return value
 ------------

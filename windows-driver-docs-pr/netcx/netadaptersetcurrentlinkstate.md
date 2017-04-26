@@ -31,7 +31,7 @@ Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *CurrentLinkState* [in]  
 A pointer to an allocated and initialized [**NET_ADAPTER_LINK_STATE**](net-adapter-link-state.md) structure that describes the current link state of the adapter.
@@ -44,7 +44,7 @@ This method does not return a value.
 Remarks
 -------
 
-The client driver calls **NetAdapterSetCurrentLinkState** from its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) implementation, or from a callback function that NetAdapterCx calls after *EVT_NET_ADAPTER_SET_CAPABILITIES*.
+The client driver calls **NetAdapterSetCurrentLinkState** from its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) implementation, or later when it needs to change the current link state.
 
 Requirements
 ------------

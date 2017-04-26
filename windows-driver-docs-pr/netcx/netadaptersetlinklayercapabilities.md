@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Sets the link capabilities of the network adapter.
+Sets the link layer capabilities of the network adapter.
 
 Syntax
 ------
@@ -31,7 +31,7 @@ Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *LinkCapabilities* [in]  
 A pointer to an allocated and initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure.

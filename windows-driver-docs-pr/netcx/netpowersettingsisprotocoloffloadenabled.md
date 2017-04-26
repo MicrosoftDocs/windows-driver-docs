@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Determines if a protocol offload structure is enabled.
+Determines if a protocol offload is enabled.
 
 Syntax
 ------
