@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Returns a pointer to the packet in a ring buffer at the ring buffer's NextIndex slot.
+Returns a pointer to the packet in a ring buffer at the ring buffer's **NextIndex** index value.
 
 Syntax
 ------
@@ -35,9 +35,8 @@ A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 Return value
 ------------
 
-Returns NULL if there are no more unprocessed packets.
-That is, this routine returns NULL if the ring buffer's NextIndex equals its EndIndex.
-Otherwise, this routine returns a pointer to the NET_PACKET at the new NextIndex value of the ring buffer.
+Returns **NULL** if the ring buffer's **NextIndex** equals its **EndIndex**, meaning there are no more unprocessed packets.
+Otherwise, this routine returns a pointer to the [**NET_PACKET**](net-packet.md) at the new **NextIndex** value of the ring buffer.
 
 Remarks
 -----
@@ -46,7 +45,7 @@ This routine is similar to [**NetRingBufferAdvanceNextPacket**](netringbufferadv
 The difference is that this routine does not modify the ring buffer's **NextIndex** field; the ring buffer is not modified.
 
 Typically, your driver would use **NetRingBufferGetNextPacket** to get the next packet to program into hardware.
-Because **NetRingBufferGetNextPacket** does not increment NextIndex, you'll also eventually need to increment the index.
+Because **NetRingBufferGetNextPacket** does not increment **NextIndex**, you'll also eventually need to increment the index.
 For example:
 
 ```cpp

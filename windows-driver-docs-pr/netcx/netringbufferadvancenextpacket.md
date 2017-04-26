@@ -36,14 +36,14 @@ A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 Return value
 ------------
 
-Returns NULL if there are no more unprocessed packets.
-That is, this routine returns NULL if the ring buffer's NextIndex equals its EndIndex.
-Otherwise, this routine returns a pointer to the NET_PACKET at the new NextIndex value of the ring buffer.
+Returns **NULL** if the ring buffer's **NextIndex** equals its **EndIndex**, meaning there are no more unprocessed packets.
+Otherwise, this routine returns a pointer to the [**NET_PACKET**](net-packet.md) at the new **NextIndex** value of the ring buffer.
 
 Remarks
 -----
 
 Typically, your driver would use **NetRingBufferAdvanceNextPacket** in a loop to issue packets to hardware.
+
 For example:
 
 ```cpp

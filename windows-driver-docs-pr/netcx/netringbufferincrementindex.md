@@ -46,7 +46,7 @@ Remarks
 
 This routine is equivalent to `Index++`, except it accounts for the wraparound of a ring buffer.
 
-For example, you can use this routine to return a packet to the operating system, by incrementing BeginIndex.
+For example, you can use this routine to return a packet to the operating system by incrementing **BeginIndex**:
 
 ```cpp
 NET_RING_BUFFER *ringBuffer = . . .;

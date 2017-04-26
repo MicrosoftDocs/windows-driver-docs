@@ -17,7 +17,6 @@ api_type:
 
 Returns all packets that have the **Completed** flag set.
 
-
 Syntax
 ------
 
@@ -41,23 +40,24 @@ This method does not return a value.
 Remarks
 -----
 
-The NetAdapter datapath requires packets to be completed in the order that they are given to your driver.
-If your driver can complete some packets out-of-order, then you may use **NetRingBufferReturnCompletedPackets** to simplify your completion path.
+The NetAdapter data path requires packets to be completed in the order that they are given to your driver.
+If your driver can complete some packets out of order, you can use **NetRingBufferReturnCompletedPackets** to simplify your completion path.
 
-To use this convenience function, first set the **Completed** flag on all packets that your driver is done with, whether they were processed successfully or not.
-Then, call **NetRingBufferReturnCompletedPackets** to batch the completion of all consecutive packets that have the **Completed** flag.
+To use this convenience function, first set the **Completed** flag on the first fragment of all packets with which your driver is finished, whether the packets were processed successfully or not.
+Then, call **NetRingBufferReturnCompletedPackets** to batch the completion of all consecutive packets for which the first fragment has the **Completed** flag set.
 
 **NetRingBufferReturnCompletedPackets** completes packets by writing a new value to the **BeginIndex** of the ring buffer.
 
-If you always complete packets in order, it is more efficient to just write to **BeginIndex** directly, rather than to use the **Completed** flag with **NetRingBufferReturnCompletedPackets**.
+If you always complete packets in order, it is more efficient to write to **BeginIndex** directly, rather than using the **Completed** flag with **NetRingBufferReturnCompletedPackets**.
 
-When you use **NetRingBufferReturnCompletedPackets**, it is most efficient to batch it.
+When you use **NetRingBufferReturnCompletedPackets**, it is most efficient to flag all finished packets and call the routine just once.
 
 Example
 -------
 
-This example shows how a simple datapath can complete packets, if the hardware completes IOs in the same order that they were issued.
-Note that this datapath just writes to **BeginIndex** directly.
+This example shows how a simple data path can complete packets if the hardware completes I/O requests in the order in which they were issued.
+Note that this data path just writes to **BeginIndex** directly.
+
 ```cpp
 for (UINT i = ringBuffer->BeginIndex; 
      i != ringBuffer->EndIndex; 
@@ -72,11 +72,11 @@ for (UINT i = ringBuffer->BeginIndex;
 }
 ```
 
-But suppose that your hardware or lower edge completes packets out-of-order.
-Now you cannot just assign the index of the most recently-completed packet to **BeginIndex**.
-Instead, you can use use the **Completed** flag with **NetRingBufferReturnCompletedPackets** to safely return packets.
+But suppose that your hardware or lower edge completes packets out of order.
+Now you cannot just assign the index of the most recently completed packet to **BeginIndex**.
+Instead, use the **Completed** flag with **NetRingBufferReturnCompletedPackets** to return packets safely.
 
-In this example, the lower edge returns a linked list of IO completion blocks, and the list is not sorted in the order that the IOs were issued.
+In this example, the lower edge returns a linked list of I/O completion blocks, and the list is not sorted in the order in which the I/O requests were issued.
 
 ```cpp
 void MyPacketCompletionCallback(MY_IO_REQUEST *io)

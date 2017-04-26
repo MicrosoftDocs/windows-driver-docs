@@ -14,7 +14,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Specifies the packet filters that select which types of packets the NIC indicates on its receive path.
+Specifies packet filters that control the types of packets the NIC indicates on its receive path.
 
 Syntax
 ------

@@ -29,7 +29,7 @@ Members
 -------
 
 **Layer2Type**  
-An enum that specifies a flag from **NET_PACKET_LAYER2_TYPE**.
+An enumeration that specifies a flag from **NET_PACKET_LAYER2_TYPE**.
 
 ```cpp
 typedef enum _NET_PACKET_LAYER2_TYPE
@@ -41,7 +41,7 @@ typedef enum _NET_PACKET_LAYER2_TYPE
 ```
 
 **Layer3Type**  
-An enum that specifies a flag from **NET_PACKET_LAYER3_TYPE**.
+An enumeration that specifies a flag from **NET_PACKET_LAYER3_TYPE**.
 
 ```cpp
 typedef enum _NET_PACKET_LAYER3_TYPE
@@ -57,7 +57,7 @@ typedef enum _NET_PACKET_LAYER3_TYPE
 ```
 
 **Layer4Type**  
-An enum that specifies a flag from **NET_PACKET_LAYER4_TYPE**.
+An enumeration that specifies a flag from **NET_PACKET_LAYER4_TYPE**.
 
 ```cpp
 typedef enum _NET_PACKET_LAYER4_TYPE
@@ -85,10 +85,6 @@ The length of the Layer 4 header, or zero if the Layer 4 length is unknown.
 Remarks
 -------
 See more info in the description of the **Layout** member of [**NET_PACKET**](net-packet.md).
-
-The client specifies flag values for this structure using the following enumerations:
-
-
 
 Requirements
 ------------

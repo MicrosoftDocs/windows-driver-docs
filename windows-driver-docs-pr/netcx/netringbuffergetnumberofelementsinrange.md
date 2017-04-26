@@ -53,7 +53,7 @@ For example, consider a net ring buffer containing a total of 8 elements. Index 
 
 Similarly, the range [4, 1) includes elements at index values 4, 5, 6, 7, and 0 (looping back to the beginning of the ring), for a total of 5 elements.
 
-Finally, note an empty range like [2, 2) returns 0 elements.
+Finally, note that an empty range like [2, 2) returns zero elements.
 
 Requirements
 ------------
