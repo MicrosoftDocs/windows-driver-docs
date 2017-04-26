@@ -22,6 +22,10 @@
     "master": [
         "Publish",
         "Pdf"
+    ],
+    "live": [
+        "Publish",
+        "Pdf"
     ]
   },
   "Targets": {
