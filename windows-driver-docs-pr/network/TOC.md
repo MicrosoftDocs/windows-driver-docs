@@ -1539,6 +1539,7 @@
 #### [Native 802.11 Operational OIDs](native-802-11-operational-oids.md)
 ##### [Native 802.11 Operational MIB objects](native-802-11-operational-mib-objects.md)
 #### [Native 802.11 MIB OIDs](native-802-11-mib-oids.md)
+##### [Native 802.11 IEEE MIB objects](native-802-11-ieee-mib-objects.md)
 #### [Native 802.11 Virtual WiFi OIDs](native-802-11-virtual-wifi-oids.md)
 #### [Native 802.11 WFD OIDs](native-802-11-wfd-oids.md)
 ### [Wi-Fi Auto Power Save Mode](wi-fi-auto-power-save-mode.md)
