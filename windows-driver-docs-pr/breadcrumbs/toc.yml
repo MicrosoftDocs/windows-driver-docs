@@ -7,8 +7,8 @@
     topicHref: "https://docs.microsoft.com/en-us/windows/#pivot=hardware-dev"
     items:
     - name: Windows Drivers
-      tocHref: /windows-hardware/drivers
-      topicHref: /windows-hardware/drivers/index/
+      tocHref: /windows-hardware/drivers/
+      topicHref: /windows-hardware/drivers/index
       items:
       - name: Bring up guide
         tocHref: /windows-hardware/drivers/bringup/
