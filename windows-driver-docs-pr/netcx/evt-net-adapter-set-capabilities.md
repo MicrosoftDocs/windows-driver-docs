@@ -57,12 +57,12 @@ In this function, the client typically sets the adapter's link and MAC capabilit
 * [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md)
 * [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md)
 
-Optionaly the client can also call:
+Optionally the client can also call:
 
 * [**NetAdapterSetCurrentLinkState**](netadaptersetcurrentlinkstate.md)
 * [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md)
 
-To set an attribute that does not have equivalent NetAdapter functionality, for example to report offload capabilities, call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md). Use  [**NetAdapterWdmGetNdisHandle**](netadapterwdmgetndishandle.md) to get the NDIS handle.
+To set an attribute that does not have equivalent NetAdapter functionality, for example to report offload capabilities, call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).  Use [**NetAdapterWdmGetNdisHandle**](netadapterwdmgetndishandle.md) to get the NDIS handle.
 
 Requirements
 ------------

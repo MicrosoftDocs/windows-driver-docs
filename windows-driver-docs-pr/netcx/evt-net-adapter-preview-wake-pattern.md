@@ -57,13 +57,13 @@ To reject the pattern, return STATUS_NDIS_PM_WOL_PATTERN_LIST_FULL.
 Remarks
 -------
 
-Drivers are not required to implement EvtNetAdapterPreviewWakePattern, as NetAdapter already blocks wake patterns that are not compatible with the driver's NET_ADAPTER_POWER_CAPABILITIES. However, if your hardware has additional limitations that cannot be expressed in the NET_ADAPTER_POWER_CAPABILITIES structure, then you can use EvtNetAdapterPreviewWakePattern to enforce those additional limitations.
+Drivers are not required to implement EvtNetAdapterPreviewWakePattern, as NetAdapter already blocks wake patterns that are not compatible with the driver's [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md). However, if your hardware has additional limitations that cannot be expressed in the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure, you can provide EvtNetAdapterPreviewWakePattern to enforce those additional limitations.
 
 Register your implementation of this callback function by setting the appropriate member of [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md) during [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
 
 In this callback, the driver typically uses the NETPOWERSETTINGS handle it receives in the *ExistingPowerSettings* parameter to iterate through the enabled wake patterns to determine whether to accept or reject *PatternToBeAdded*.  For an example, see [Configuring Power Management](configuring-power-management.md).
 
-The client driver can use the pointer to examine the [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure, but should not retain it. NetAdapterCx will destroy the wake pattern structure once the driver's EvtNetAdapterPreviewWakePattern returns.
+The client driver can use the pointer to examine the [**NDIS_PM_WOL_PATTERN**](https://msdn.microsoft.com/library/windows/hardware/ff566768) structure, but should not retain it.  NetAdapterCx will destroy the wake pattern structure once the driver's EvtNetAdapterPreviewWakePattern returns.
 
 In its [*EvtDeviceArmWakeFromS0*](https://msdn.microsoft.com/library/windows/hardware/ff540843) and [*EvtDeviceArmWakeFromSx*](https://msdn.microsoft.com/library/windows/hardware/ff540844) callback functions, the driver can iterate through the enabled wake patterns and protocol offloads to program them into the hardware.
 

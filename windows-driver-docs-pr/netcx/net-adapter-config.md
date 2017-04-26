@@ -51,7 +51,7 @@ A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_TXQUEUE
 A pointer to the client's implementation of the [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md) event callback.
 
 **NetRequestObjectAttributes**  
-Optional WDF object attributes associated with the NETREQUEST objects, or NULL. If not NULL any NETREQUESTs created by the framework will have these attributes.
+Optional WDF object attributes associated with the NETREQUEST objects, or NULL.  If non-NULL, all NETREQUESTs created by the framework will have these attributes.
 
 **NetPowerSettingsObjectAttributes**  
 Optional WDF object attributes associated with the NETPOWERSETTINGS object, or NULL.

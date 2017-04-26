@@ -45,9 +45,9 @@ This method does not return a value.
 Remarks
 -------
 
-The client driver first sets MTU size by calling NetAdapterSetLinkLayerMtuSize from its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) implementation.
+The client driver first sets MTU size by calling **NetAdapterSetLinkLayerMtuSize** from its [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) implementation.
 
-The client driver can change the MTU size after returning from [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) by calling this API again. Doing so causes all of the adapter's Tx and Rx queues to be recreated.
+The client driver can change the MTU size after returning from [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md) by calling this method again.  Doing so causes all of the adapter's transmit (Tx) and receive (Rx) queues to be recreated.
 
 Requirements
 ------------

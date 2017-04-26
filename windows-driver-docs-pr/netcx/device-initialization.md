@@ -8,9 +8,9 @@ A NetAdapterCx driver registers its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.m
 
 ## EVT_WDF_DRIVER_DEVICE_ADD
 
-In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), a NetAdapterCx client driver should do the following:
+In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693), a NetAdapterCx client driver should do the following in order:
 
-1. Call [**NetAdapterDeviceInitConfig**](netadapterdeviceinitconfig.md), this has to be done before WdfDeviceCreate.
+1. Call [**NetAdapterDeviceInitConfig**](netadapterdeviceinitconfig.md).
 
     ```cpp
     status = NetAdapterDeviceInitConfig(DeviceInit);
@@ -35,7 +35,7 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hard
     status = NetAdapterCreate(device, &attribs, &config, &adapter);
     ```
 
-    Currently you can have only one NETADAPTER per WDFDEVICE, with the WDFDEVICE being the parent object of the NETADAPTER.  You can find the object hierarchy in [Summary of Objects](summary-of-objects.md).
+You can have only one NETADAPTER per WDFDEVICE, with the WDFDEVICE being the parent object of the NETADAPTER.  You can find the object hierarchy in [Summary of Objects](summary-of-objects.md).
 
 Optionally, you can add context space to the NETADAPTER object. Since you can set a context on any WDF object, you could add separate context space for the WDFDEVICE and the NETADAPTER objects. In the example in step 4, the client adds `MYDRIVER_ADAPTER_CONTEXT` to the NETADAPTER object. For more info, see [Framework Object Context Space](../wdf/framework-object-context-space.md).
 

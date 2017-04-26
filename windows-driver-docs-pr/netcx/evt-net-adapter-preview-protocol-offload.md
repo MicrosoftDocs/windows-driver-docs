@@ -57,7 +57,7 @@ To reject the pattern, return STATUS_NDIS_PM_PROTOCOL_OFFLOAD_LIST_FULL.
 Remarks
 -------
 
-Drivers are not required to implement EvtNetAdapterPreviewProtocolOffload, as NetAdapter already blocks protocol offloads that are not compatible with the driver's NET_ADAPTER_POWER_CAPABILITIES. However, if your hardware has additional limitations that cannot be expressed in the NET_ADAPTER_POWER_CAPABILITIES structure, then you can use EvtNetAdapterPreviewProtocolOffload to enforce those additional limitations.
+Drivers are not required to implement EvtNetAdapterPreviewProtocolOffload, as NetAdapter already blocks protocol offloads that are not compatible with the driver's [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md). However, if your hardware has additional limitations that cannot be expressed in the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure, you can provide EvtNetAdapterPreviewProtocolOffload to enforce those additional limitations.
 
 Register your implementation of this callback function by setting the appropriate member of [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) and then calling [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md) during [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
 

@@ -8,11 +8,11 @@ For general information about WDF, please review the [WDF Driver Development Gui
 
 ## Compilation settings
 
-Open your existing driver project in Visual Studio and use the following steps to convert it to a KMDF project.
+Open your existing NDIS miniport driver project in Visual Studio and use the following steps to convert it to a KMDF project.
 
 1. First, navigate to **Configuration Properties->Driver Settings->Driver Model** and verify that **Type of driver** is set to KMDF, and that **KMDF Version Major** and **KMDF Version Minor** are both empty.
-2. In project properties, open **Driver Settings->Network Adapter Driver** and change "Link to the Network Adapter Class Extension" to "Yes".
-    * If your driver still needs to call NDIS APIs, keep linking against `ndis.lib`.
+2. In project properties, open **Driver Settings->Network Adapter Driver** and set **Link to the Network Adapter Class Extension** to **Yes**.
+    * If your converted driver will still call NDIS APIs, continue to link against `ndis.lib`.
 3. Remove NDIS preprocessor macros, like NDIS650_MINIPORT=1.
 4. Add the following headers to every source file (or to your common/precompiled header):
 ```cpp

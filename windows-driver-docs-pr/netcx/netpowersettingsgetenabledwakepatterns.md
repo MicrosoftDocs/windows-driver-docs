@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves flags representing which types of wake patterns that a network adapter supports are currently enabled.
+Retrieves flags representing currently enabled wake pattern types that a network adapter supports.
 
 Syntax
 ------

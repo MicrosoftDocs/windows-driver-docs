@@ -8,7 +8,7 @@ You can use [Windows Driver Framework Extensions (Wdfkd.dll)](https://msdn.micro
 
 Also, you can use the `!ndiskd.netrb` debugger extension with the address of a [**NET_RING_BUFFER**](net-ring-buffer.md) structure to examine packets and fragments in a ring buffer.  This command gives you additional information, such as the number of elements in the ring buffer, along with the number of packets owned by the OS and the number of packets owned by the client.
 
-The full list of !ndiskd commands related to NetAdapterCx:
+You can use the following !ndiskd commands with a NetAdapterCx client driver:
 
 - !ndiskd.cxadapter: Given a NETADAPTER handle, show information about a NETADAPTER object
 - !ndiskd.netqueue: Given a NETTXQUEUE or NETRXQUEUE handle, show information about a data path queue.
