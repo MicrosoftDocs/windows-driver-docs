@@ -14,7 +14,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Specifies packet filters that control the types of packets the NIC indicates on its receive path.
+Specifies packet filters that control the types of packets the NIC completes on its receive path.
 
 Syntax
 ------
@@ -52,6 +52,8 @@ Remarks
 The **NET_PACKET_FILTER_TYPES_FLAGS** enumeration is used to specify supported packet filters in the [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure.
 
 The client driver passes an initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](net-adapter-link-layer-capabilities.md) structure as an input parameter value to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
+
+For info about the data path, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------
