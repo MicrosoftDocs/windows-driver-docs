@@ -514,6 +514,7 @@
 ## [Early Launch AntiMalware](early-launch-antimalware.md)
 ### [ELAM Prerequisites](elam-prerequisites.md)
 ### [ELAM Driver Requirements](elam-driver-requirements.md)
+### [ELAM Driver Submission](elam-driver-submission.md)
 ## [INF File Sections and Directives](inf-file-sections-and-directives.md)
 ### [INF Sections](inf-sections.md)
 #### [INF ClassInstall32 Section](inf-classinstall32-section.md)
@@ -563,4 +564,3 @@
 #### [INF UnregisterDlls Directive](inf-unregisterdlls-directive.md)
 #### [INF UpdateIniFields Directive](inf-updateinifields-directive.md)
 #### [INF UpdateInis Directive](inf-updateinis-directive.md)
-
