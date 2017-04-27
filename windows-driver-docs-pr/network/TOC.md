@@ -1494,6 +1494,8 @@
 #### [Installing Native 802.11 IHV Extensions](installing-native-802-11-ihv-extensions.md)
 #### [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-dll4.md)
 ##### [Native 802.11 IHV Extensions DLL Overview](native-802-11-ihv-extensions-dll-overview.md)
+##### [Native 802.11 IHV Extensibility Functions](native-802-11-ihv-extensibility-functions.md)
+##### [Native 802.11 IHV Handler Functions](native-802-11-ihv-handler-functions.md)
 ##### [Native 802.11 IHV Extensions DLL Implementation Guidelines](native-802-11-ihv-extensions-dll-implementation-guidelines.md)
 ##### [DLL Start/Stop Operations](dll-start-stop-operations.md)
 ###### [DLL Start Operations](dll-start-operations.md)
