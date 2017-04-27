@@ -143,7 +143,7 @@ The transfer buffer or the transfer buffer MDL contains the data to send or rece
 
 The client driver does not need to release this memory. The memory is associated with the parent request object and is released when the parent is released.
 
-### Step 2: Format and send a framework request object to the USB driver stack.
+### <a href="" id="step-2--format-and-send-a-framework-request-object-to-the-usb-driver-stack-"></a>Step 2: Format and send a framework request object to the USB driver stack.
 
 You can send the transfer request asynchronously or synchronously.
 
@@ -160,7 +160,7 @@ If you send the request synchronously, call these methods:
 -   [**WdfUsbTargetPipeWriteSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff551163)
 
 For code examples, see the Examples section of the reference topics for those methods.
-### Step 3: Implement a completion routine for the request.
+### <a href="" id="step-3--implement-a-completion-routine-for-the-request-"></a>Step 3: Implement a completion routine for the request.
 
 If the request is sent asynchronously, you must implement a completion routine to get notified when the USB driver stack completes the request. Upon completion, the framework invokes the driver's completion routine. The framework passes these parameters:
 

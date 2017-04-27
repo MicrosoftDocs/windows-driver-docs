@@ -23,9 +23,9 @@ If you ***are*** a Microsoft employee, you can work in either the public repo or
 
 We've tried to make editing an existing file as simple as possible. 
 - If you're already in the repo, just navigate to the file and click the **Edit** button.  
-- Alternatively, if you're viewing an MSDN page in your browser, click the **Contribute** button on the top right of the page. You will be redirected to the correct Markdown source file in the repo, where you can click the **Edit** button. 
+- Alternatively, if you're viewing a Docs.microsoft.com page in your browser, click the **Edit** button on the top right of the page. You will be redirected to the correct Markdown source file in the repo, where you can click the **Edit** button. 
 
-> **Note** We're actively moving docs into the repo, so the one you want might not be there yet.  If you don't see a **Contribute** button for a page you'd like to change, please open an issue in the repo and be sure to provide the URL of the page in question.
+> **Note** We're actively moving docs into the repo, so the one you want might not be there yet.  If you don't see an **Edit** button for a page you'd like to change, please open an issue in the repo and be sure to provide the URL of the page in question.
  
 If you're using the GitHub-based public repo, GitHub automatically forks the official repo into your personal GitHub account, where you can make your changes. 
 
@@ -33,7 +33,7 @@ If you're using the VSO-based private repo, use the drop-down arrow next to the 
 
 Either way, when you're done, submit a pull request back to the staging branch (if using GitHub) or master branch (if using VSO) of the official repository. 
 After you create the pull request, a member of the Windows Driver Documentation team will review your changes. 
-If your request is accepted, updates are published to https://msdn.microsoft.com/windows/hardware/drivers.
+If your request is accepted, updates are published to https://docs.microsoft.com/windows-hardware/drivers.
 
 ## Making more substantial changes
 

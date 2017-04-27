@@ -28,8 +28,6 @@ Event traces from the USB 3.0 driver stack are similar to the USB 2.0 driver sta
 Instructions
 ------------
 
-### []()
-
 **To collect USB trace events**
 
 1.  Open a command-prompt window that has administrative privileges. To do so, click Start, type **cmd** in the search box, right-click cmd.exe, and then select **Run as administrator**.
