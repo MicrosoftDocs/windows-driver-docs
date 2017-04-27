@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
+# ELAM driver submission Process
 
 The following steps can be used to submit an Early Launch Antimalware (ELAM) driver:
 
