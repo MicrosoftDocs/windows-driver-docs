@@ -16,83 +16,22 @@ ms.technology: windows-devices
 # Standard Options
 
 
-## <a href="" id="ddk-standard-options-gg"></a>
-
-
 Standard options are those that are associated with [standard features](standard-features.md). They are identified by predefined names that the GPD language recognizes. Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit \[WDK\]. (This resource may not be available in some languages and countries.)
 
 The following table lists the standard option names that are permitted for each standard feature. Use these names as arguments to \*Option entries. The features that include Print Schema option keywords are option names that are automatically mapped to Print Schema option keywords. You can also map GPD options to Print Schema keywords manually by using the PrintSchemaKeywordMap attribute. The Print Schema is documented in the Microsoft Windows SDK.
 
-Feature name
-Standard option names
-Default Print Schema option keywords
-Customized options allowed?
-**Collate**
-OFF
-ON
-Uncollated
-Collated
-No
-**ColorMode**
-No standard options.
-Yes. Also see [Handling Color Formats](handling-color-formats.md) and [Controlling Image Quality](controlling-image-quality.md).
-**Duplex**
-HORIZONTAL
-VERTICAL
-NONE
-TwoSidedShortEdge
-TwoSidedLongEdge
-OneSided
-No
-**Halftone**
-HT\_PATSIZE\_2x2
-HT\_PATSIZE\_2x2\_M
-HT\_PATSIZE\_4x4
-HT\_PATSIZE\_4x4\_M
-HT\_PATSIZE\_6x6
-HT\_PATSIZE\_6x6\_M
-HT\_PATSIZE\_8x8
-HT\_PATSIZE\_8x8\_M
-HT\_PATSIZE\_10x10
-HT\_PATSIZE\_10x10\_M
-HT\_PATSIZE\_12x12
-HT\_PATSIZE\_12x12\_M
-HT\_PATSIZE\_14x14
-HT\_PATSIZE\_14x14\_M
-HT\_PATSIZE\_16x16
-HT\_PATSIZE\_16x16\_M
-HT\_PATSIZE\_SUPERCELL
-HT\_PATSIZE\_SUPERCELL\_M
-HT\_PATSIZE\_AUTO
-Yes. Also see [Halftoning with Unidrv](halftoning-with-unidrv.md).
-**InputBin**
-AUTO
-CASSETTE
-ENVFEED
-ENVMANUAL
-Cassette
-Yes
-FORMSOURCE
-AutoSelect
-LARGECAPACITY
-LARGEFMT
-LOWER
-High
-MANUAL
-MIDDLE
-SMALLFMT
-Manual
-TRACTOR
-UPPER
-Tractor
-**MediaType**
-GLOSSY
-STANDARD
-TRANSPARENCY
-PhotographicGlossy
-Plain
-Transparency
-Yes. Also see [Controlling Image Quality](controlling-image-quality.md).
+| Feature name | Standard option names | Default Print Schema option keywords | Customized options allowed? |
+|---|---|---|---|
+| **Collate** | OFF <br> ON | Uncollated<br>Collated | No |
+| **ColorMode** <td colspan=2>No standard options. | Yes. Also see [Handling Color Formats](handling-color-formats.md) and [Controlling Image Quality](controlling-image-quality.md). |
+| **Duplex** | HORIZONTAL<br>VERTICAL<br>NONE | TwoSidedShortEdge<br>TwoSidedLongEdge<br>OneSided | No |
+| **Halftone** <td colspan=2> HT\_PATSIZE\_2x2<br>HT\_PATSIZE\_2x2\_M<br>HT\_PATSIZE\_4x4<br>HT\_PATSIZE\_4x4\_M<br>HT\_PATSIZE\_6x6<br>HT\_PATSIZE\_6x6\_M<br>HT\_PATSIZE\_8x8<br>HT\_PATSIZE\_8x8\_M<br>HT\_PATSIZE\_10x10<br>HT\_PATSIZE\_10x10\_M<br>HT\_PATSIZE\_12x12<br>HT\_PATSIZE\_12x12\_M<br>HT\_PATSIZE\_14x14<br>HT\_PATSIZE\_14x14\_M<br>HT\_PATSIZE\_16x16<br>HT\_PATSIZE\_16x16\_M<br>HT\_PATSIZE\_SUPERCELL<br>HT\_PATSIZE\_SUPERCELL\_M<br>HT\_PATSIZE\_AUTO<br> | Yes. Also see [Halftoning with Unidrv](halftoning-with-unidrv.md). |
+<td rowspan=5>**InputBin** | AUTO<br>CASSETTE<br>ENVFEED<br>ENVMANUAL | Cassette <td rowspan=5>Yes | FORMSOURCE | AutoSelect | LARGECAPACITY<br>LARGEFMT<br>LOWER | High | MANUAL<br>MIDDLE<br>SMALLFMT | Manual | TRACTOR<br>UPPER | Tractor | **MediaType** | GLOSSY<br>STANDARD<br>TRANSPARENCY | PhotographicGlossy<br>Plain<br>Transparency | Yes. Also see [Controlling Image Quality](controlling-image-quality.md). |
+
+
+### TEST END
+
+
 **Memory**
 No standard options.
 Yes
