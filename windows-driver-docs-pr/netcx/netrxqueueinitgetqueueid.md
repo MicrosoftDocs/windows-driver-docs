@@ -40,7 +40,7 @@ Remarks
 ---
 The client driver receives a pointer to a NETRXQUEUE_INIT structure in its [EVT_NET_ADAPTER_CREATE_RXQUEUE](evt-net-adapter-create-rxqueue.md) callback function.
 
-Starting with zero, NetAdapterCx assigns an unique identifier value for each receive queue that it creates.  The client driver specifies the number of receive queues that the network adapter supports in the **NumRxQueues** member of the [NET_ADAPTER_DATAPATH_CAPABILITIES](net-adapter-datapath-capabilities.md) structure.  The client driver passes this structure to [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md).  Identifier values range from zero to the value of **NumRxQueues** minus one.
+Starting with zero, NetAdapterCx assigns an unique identifier value for each queue that it creates.  The client driver specifies the number of receive queues that the network adapter supports in the **NumRxQueues** member of the [NET_ADAPTER_DATAPATH_CAPABILITIES](net-adapter-datapath-capabilities.md) structure.  The client driver passes this structure to [**NetAdapterSetDataPathCapabilities**](netadaptersetdatapathcapabilities.md).  Identifier values range from zero to the value of **NumRxQueues** minus one.
 
 Requirements
 ------------
