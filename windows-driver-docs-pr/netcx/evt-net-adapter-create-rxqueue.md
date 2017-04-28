@@ -36,7 +36,7 @@ Parameters
 ----------
 
 *Adapter* [in]  
-The NetAdapter object that was created by [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *RxQueueInit* [in, out]  
 A pointer to a NetAdapterCx-allocated **NETRXQUEUE_INIT** structure. For more information, see the Remarks section.
@@ -55,7 +55,7 @@ The **NETRXQUEUE_INIT** structure is an opaque structure that is defined and all
 
 In this callback, the client driver might call [**NetRxQueueInitGetQueueId**](netrxqueueinitgetqueueid.md) to retrieve the identifier of the receive queue to set up.
 
-The NetRxQueue's ring buffer is allocated in NetRxQueueCreate, so it can be retrieved via [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) after queue creation. You can use this as an opportunity to allocate any per-packet resources.
+The driver should attempt to allocate a queue by calling [**NetRxQueueCreate**](netrxqueuecreate.md). If the driver is unable to allocate a queue, it should return a failure NTSTATUS code. After the queue is created, its ring buffer can be retrieved via [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
 
 If AllocationSize is specified, the receive buffers are not allocated until after this function returns.
 

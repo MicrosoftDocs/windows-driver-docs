@@ -48,7 +48,7 @@ Remarks
 -------
 In this callback, the client retrieves packets from the queue, programs the hardware to send the data, and returns any completed packets.
 
-To return packets, the client can either update the ring buffer's **BeginIndex** manually, or it can call helper macros such as [**NetRingBufferReturnCompletedPackets method**](netringbufferreturncompletedpackets.md).
+To return packets, the client can either update the ring buffer's **BeginIndex** using [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md), or it can call helper macros such as [**NetRingBufferReturnCompletedPackets method**](netringbufferreturncompletedpackets.md).
 
 The following example retrieves incoming transmit packets from the queue and then immediately completes them.
 
@@ -77,7 +77,7 @@ EvtTxQueueAdvance(NETTXQUEUE TxQueue)
 }
 ```
 
-`EvtTxQueueAdvance` is serialized with the queue's [**EvtTxQueueCancel**](evt-txqueue-cancel.md) and [**EvtTxQueueSetNotificationEnabled**](evt-txqueue-set-notification-enabled.md) callbacks.
+`EvtTxQueueAdvance` is serialized by NetAdapter with the queue's [**EvtTxQueueCancel**](evt-txqueue-cancel.md) and [**EvtTxQueueSetNotificationEnabled**](evt-txqueue-set-notification-enabled.md) callbacks.
 
 Requirements
 ------------

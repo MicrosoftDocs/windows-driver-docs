@@ -49,10 +49,9 @@ Remarks
 
 In this callback function, the client driver typically performs the following steps:
 
-1.  Retrieve the receive queue's WDF context.
-2.  Call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) to retrieve the ring buffer handle associated with the *RxQueue* handle.
-3.  Program packets returned by the OS to hardware. The returned packet window is all packets between NextIndex and EndIndex.
-    1.  Iterate until NextIndex matches EndIndex, or the hardware will not accept any new packets.
+1.  Call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) to retrieve the ring buffer handle associated with the *RxQueue* handle.
+2.  Program packets returned by the OS to hardware. The returned packet window is all packets between NextIndex and EndIndex.
+    1.  Iterate until NextIndex matches EndIndex, or the hardware stops accepting new descriptors.
     2.  Call [**NetRingBufferGetPacketAtIndex**](netringbuffergetpacketatindex.md) to retrieve the packet at NextIndex.
     3.  Free any resources associated with the packet that may have been allocated the last time the descriptor was handed to the OS.
     4.  Program the packet to the associated hardware receive queue.
@@ -105,8 +104,15 @@ EvtRxQueueAdvance(NETRXQUEUE RxQueue)
         // optional: retrieve queue's packet context
         MY_RX_PACKET_CONTEXT *packetContext = GetRxPacketContext(netPacket);
 
-        // Optional: For asynchronous completions, use the Completed flag to 
-        // detect completion of the packet.
+        // Optional: When an asynchronous send operation completes, update the
+        // Completed flag on the packet. In the Advance callback, return each
+        // packet starting at BeginIndex until a packet not marked as Completed
+        // is reached, or EndIndex is reached. Packets must be returned
+        // sequentially, so indication must stop as soon as the first
+        // non-Completed packet is reached.
+        //
+        // The Completed flag is not used by the OS, so the device is free to
+        // use this flag is it sees fit.
         if (!netPacket->Data.Completed)
             break;
 
@@ -115,7 +121,7 @@ EvtRxQueueAdvance(NETRXQUEUE RxQueue)
     }
 ```
 
-`EvtRxQueueAdvance` is serialized with the queue's [**EvtRxQueueCancel**](evt-rxqueue-cancel.md) and [**EvtRxQueueSetNotificationEnabled**](evt-rxqueue-set-notification-enabled.md) callbacks.
+`EvtRxQueueAdvance` is serialized by NetAdapter with the queue's [**EvtRxQueueCancel**](evt-rxqueue-cancel.md) and [**EvtRxQueueSetNotificationEnabled**](evt-rxqueue-set-notification-enabled.md) callbacks.
 
 Requirements
 ------------

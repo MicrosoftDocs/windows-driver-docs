@@ -51,7 +51,7 @@ EvtTxQueueCancel is called to request that the adapter terminate any outstanding
 
 If the hardware supports cancelling in-flight transmits, the adapter should advance BeginIndex past all cancelled packets, as well. If the hardware does not support cancellation, this callback can be a no-op.
 
-`EvtTxQueueCancel` is serialized with the queue's [**EvtTxQueueAdvance**](evt-txqueue-advance.md) and [**EvtTxQueueSetNotificationEnabled**](evt-txqueue-set-notification-enabled.md) callbacks.
+`EvtTxQueueCancel` is serialized by NetAdapter with the queue's [**EvtTxQueueAdvance**](evt-txqueue-advance.md) and [**EvtTxQueueSetNotificationEnabled**](evt-txqueue-set-notification-enabled.md) callbacks.
 
 Requirements
 ------------

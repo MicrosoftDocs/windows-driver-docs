@@ -46,7 +46,7 @@ A handle to a net transmit queue.
 Return value
 ------------
 
-If the operation is successful, the callback function must return `STATUS_SUCCESS`, or another status value for which `NT_SUCCESS(status)` is true. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return `STATUS_SUCCESS`. Otherwise, it should return an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 Remarks
 -------
@@ -54,6 +54,8 @@ Remarks
 If *NotificationEnabled* is `TRUE`, the client should enable its transmit queue's notification. If *NotificationEnabled* is `FALSE`, the client should disable its transmit queue's notification.
 
 For a PCI NIC this typically means to enable the transmit queue's hardware interrupt. When the hardware interrupt fires, it should call [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) from its DPC.
+
+The queue should only be notified at most *once* per request to enable its notification. After the queue is notified, the notification should be disabled. If the notification is disabled via *NotificationEnabled* set to `FALSE`, the queue must not be notified until the notification is re-enabled.
 
 For example:
 ```cpp
@@ -80,7 +82,7 @@ EvtInterruptDpc(
 }
 ```
 
-`EvtTxQueueSetNotificationEnabled` is serialized with the queue's [**EvtTxQueueAdvance**](evt-txqueue-advance.md) and [**EvtTxQueueCancel**](evt-txqueue-cancel.md) callbacks.
+`EvtTxQueueSetNotificationEnabled` is serialized by NetAdapter with the queue's [**EvtTxQueueAdvance**](evt-txqueue-advance.md) and [**EvtTxQueueCancel**](evt-txqueue-cancel.md) callbacks.
 
 Requirements
 ------------

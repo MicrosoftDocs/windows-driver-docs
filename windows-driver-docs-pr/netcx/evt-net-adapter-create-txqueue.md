@@ -36,7 +36,7 @@ Parameters
 ----------
 
 *Adapter* [in]  
-The NetAdapter object that was created by [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *TxQueueInit* [in, out]  
 A pointer to a NetAdapterCx-allocated **NETTXQUEUE_INIT** structure. For more information, see the Remarks section.
@@ -55,7 +55,7 @@ The **NETTXQUEUE_INIT** structure is an opaque structure that is defined and all
 
 In this callback, the client driver typically calls [**NetTxQueueInitGetQueueId**](nettxqueueinitgetqueueid.md) with *NetTxQueueInit* to retrieve the identifier of the transmit queue to set up.
 
-The NetTxQueue's ring buffer is allocated in NetTxQueueCreate, so it can be retrieved via [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md) after queue creation. You can use this as an opportunity to allocate any per-packet resources.
+The driver should attempt to allocate a queue by calling [**NetTxQueueCreate**](nettxqueuecreate.md). If the driver is unable to allocate a queue, it should return a failure NTSTATUS code. After the queue is created, its ring buffer can be retrieved via [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md).
 
 Requirements
 ------------

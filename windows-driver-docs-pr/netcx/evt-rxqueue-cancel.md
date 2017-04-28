@@ -64,9 +64,9 @@ EvtRxQueueCancel(NETRXQUEUE RxQueue)
 Remarks
 -------
 
-`EvtRxQueueCancel` is called by the framework to wind down the receive queue. Use the cancel callback to return all packets to the OS so the OS can destroy the queue.
+`EvtRxQueueCancel` is called to wind down the receive queue. Use the cancel callback to return all packets to the OS so the OS can destroy the queue.
 
-`EvtRxQueueCencel` is serialized with the queue's [**EvtRxQueueAdvance**](evt-rxqueue-advance.md) and [**EvtRxQueueSetNotificationEnabled**](evt-rxqueue-set-notification-enabled.md) callbacks.
+`EvtRxQueueCencel` is serialized by NetAdapter with the queue's [**EvtRxQueueAdvance**](evt-rxqueue-advance.md) and [**EvtRxQueueSetNotificationEnabled**](evt-rxqueue-set-notification-enabled.md) callbacks.
 
 Requirements
 ------------

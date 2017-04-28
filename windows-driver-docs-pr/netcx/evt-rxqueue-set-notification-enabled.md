@@ -46,7 +46,7 @@ A handle to a net receive queue.
 Return value
 ------------
 
-If the operation is successful, the callback function must return `STATUS_SUCCESS`, or another status value for which `NT_SUCCESS(status)` is true. Otherwise, an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return `STATUS_SUCCESS`. Otherwise, it should return an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 Remarks
 -------
@@ -113,7 +113,7 @@ UsbEvtReaderCompletionRoutine(
 }
 ```
 
-`EvtRxQueueSetNotificationEnabled` is serialized with the queue's [**EvtRxQueueAdvance**](evt-rxqueue-advance.md) and [**EvtRxQueueCancel**](evt-rxqueue-cancel.md) callbacks.
+`EvtRxQueueSetNotificationEnabled` is serialized by NetAdapter with the queue's [**EvtRxQueueAdvance**](evt-rxqueue-advance.md) and [**EvtRxQueueCancel**](evt-rxqueue-cancel.md) callbacks.
 
 Requirements
 ------------
