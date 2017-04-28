@@ -21,9 +21,9 @@ Syntax
 
 ```cpp
 typedef enum _NET_REQUEST_QUEUE_TYPE { 
-  NetRequestQueueTypeInvalid        = ,
-  NetRequestQueueDefaultSequential  = ,
-  NetRequestQueueDefaultParallel    = 
+  NetRequestQueueTypeInvalid,
+  NetRequestQueueDefaultSequential,
+  NetRequestQueueDefaultParallel
 } NET_REQUEST_QUEUE_TYPE;
 ```
 
@@ -34,10 +34,10 @@ Constants
 Not supported.
 
 **NetRequestQueueDefaultSequential**  
-Specifies that the queue supports sequential delivery (regular OIDs).
+Specifies that the queue supports sequential delivery (normal requests(OIDs)).
 
 **NetRequestQueueDefaultParallel**  
-Specifies that the queue supports parallel dispatching (direct OIDs).
+Specifies that the queue supports parallel dispatching (direct requests(OIDs)).
 
 
 Remarks

@@ -56,9 +56,9 @@ This callback function does not return a value.
 
 Remarks
 ---
-Your client driver can provide one or more specialized handlers for specific OID query data requests, or it can provide a single generic EVT_NET_REQUEST_DEFAULT_SET_DATA callback function.
+Your client driver can provide one or more specialized handlers for specific OID query data requests. Along with them, it can also provide a single generic EVT_NET_REQUEST_DEFAULT_SET_DATA callback function.
 
-To register an *EVT_NET_REQUEST_DEFAULT_SET_DATA* callback function, the client driver calls **NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER** or[**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_SET_DATA_HANDLER**](net-request-queue-config-add-initialized-set-data-handler.md), and then calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
+To register an *EVT_NET_REQUEST_DEFAULT_SET_DATA* callback function, the client driver calls **NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER** or [**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_SET_DATA_HANDLER**](net-request-queue-config-add-initialized-set-data-handler.md), and then calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
 Requirements
 ------------

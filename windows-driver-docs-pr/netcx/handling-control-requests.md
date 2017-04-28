@@ -12,7 +12,11 @@ To see all the default parent child relationships for NetAdapterCx, see [Summary
 
 ## Creating queue objects
 
-In the NetAdapterCx model, the client uses a sequential queue for serial OIDs, and a parallel queue for direct OIDs.  Call these methods to create queues:
+In the NetAdapterCx model, the client can use two types of queues for handling requests (OIDs):
+*  a sequential queue for normal requests (OIDs). Requests received from upper layers in this queue are always dispatched to client driver by NetAdapterCx in serialized fashion.
+*  a parallel queue for direct requests (OIDs). Requests received from upper layers may be dispatched to client driver by NetAdapterCx in a parallel fashion.
+
+Call these methods to create queues:
 
 *  [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL**](net-request-queue-config-init-default-sequential.md)
 *  [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL**](net-request-queue-config-init-default-parallel.md)
@@ -43,6 +47,13 @@ For requests of type other than query data, set data, and method, the client dri
 
 For example, if the protocol driver issues an OID request with `NDIS_REQUEST_TYPE = NdisRequestGeneric1`, NetAdapterCx calls [*EVT_NET_REQUEST_DEFAULT*](evt-net-request-default.md).  NetAdapterCx fails the request if the client driver has not provided such a handler.
 
+A detailed flow digram is shown as follow:
+
+
+<img src="images/netcx-adapter-request-handling-flow.png" alt="Drawing" style="width: 800px;"/>
+
+A client driver shall use the following code snippet to setup its default handlers.
+
 ```cpp
 NTSTATUS status;
 NET_REQUEST_QUEUE_CONFIG config;
@@ -62,7 +73,7 @@ To add an OID-specific handlers, use these methods:
 * [**NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER**](net-request-queue-config-add-set-data-handler.md)
 * [**NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER**](net-request-queue-config-add-method-handler.md)
 
-The following example calls [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md) with a pointer to the client's [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function:
+The following example calls [**NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER**](net-request-queue-config-add-query-data-handler.md) with a pointer to the client's [*EVT_NET_REQUEST_QUERY_DATA*](evt-net-request-query-data.md) event callback function to register a handler for a specific OID (OID_GEN_VENDOR_DESCRIPTION):
 
 ```cpp
 NET_REQUEST_QUEUE_CONFIG_ADD_QUERY_DATA_HANDLER(
@@ -87,7 +98,7 @@ NetAdapterCx can call the client driver's control request handlers as soon as [*
 
 ## Completing Requests
 
-The client driver must complete each NETREQUEST that it receives.  Otherwise, the control request is left in a pending state.
+The client driver must complete each NETREQUEST that it receives.  Otherwise, the control request is left in a pending state. If the request can not be handled synchronously, the client driver must later complete the pending NETREQUEST. Forget to complete a pending request will cause the client driver to hang during its unbinding process.
 
 If the original request did not contain a large enough buffer, call [**NetRequestSetBytesNeeded**](netrequestsetbytesneeded.md), and then one of the following.
 
@@ -97,7 +108,9 @@ If the original request did not contain a large enough buffer, call [**NetReques
             NetRequestCompleteWithoutInformation(Request, NDIS_STATUS_INVALID_DATA);
     ```
 
-* To complete a control request and specify data read or written, call one of the following:
+If the original request did contain a large enough buffer for read/write, the client driver shall call [**NetRequestRetrieveInputOutputBuffer**](NetRequestRetrieveInputOutputBuffer.md) to retrieve the input/output buffer. Then perform neccessary memory transfer and complete the request using:
+
+* To complete a control request and specify data read or written, call one of the following based on the request type:
 
     * [**NetRequestMethodComplete**](netrequestmethodcomplete.md)
     * [**NetRequestQueryDataComplete**](netrequestquerydatacomplete.md)
