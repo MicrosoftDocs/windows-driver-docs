@@ -40,9 +40,9 @@ This method does not return a value.
 Remarks
 -------
 
-After NetAdapterCx calls a client driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine, the client must call **NetTxQueueNotifyMoreCompletedPacketsAvailable** to resume queue operations. Typically, the client does this in its [*EVT_WDF_INTERRUPT_DPC*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function, after it transmits a pending [**NET_PACKET**](net-packet.md) in the transmit queue’s [**NET_RING_BUFFER**](net-ring-buffer.md).
+After NetAdapterCx enables a transmit queue's notification via its [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine, the client may call **NetTxQueueNotifyMoreCompletedPacketsAvailable** when the queue's notification fires. Typically, the client does this in its [*EVT_WDF_INTERRUPT_DPC*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function, after it completes a pending [**NET_PACKET**](net-packet.md) in the transmit queue’s [**NET_RING_BUFFER**](net-ring-buffer.md).
 
-Then NetAdapterCx reclaims the [**NET_PACKET**](net-packet.md) previously used for transmit and calls the client’s [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback function.
+The client may notify the queue no more than once per enabling of the notification. If the notification is disabled, the client must not call **NetTxQueueNotifyMoreCompletedPacketsAvailable**.
 
 Requirements
 ------------
