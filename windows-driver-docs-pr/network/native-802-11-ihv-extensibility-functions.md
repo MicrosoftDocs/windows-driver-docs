@@ -45,86 +45,35 @@ The IHV Extensibility function can only be called after the [Dot11ExtIhvPerformP
 The IHV Extensibility function requires a handle, which identifies the security session with the BSS network connection. When *Dot11ExtIhvPerformPostAssociate* is called, the IHV Extensions DLL is passed this handle through the *hSecuritySessionID* parameter.  
 The Extensions DLL cannot call the IHV Extensibility function after the [Dot11ExtIhvDeinitAdapter](https://msdn.microsoft.com/library/windows/hardware/ff547452) or [Dot11ExtIhvAdapterReset](https://msdn.microsoft.com/library/windows/hardware/ff547434) IHV Handler functions have been called.
 
-Function Called after service initialization Called after adapter initialization Called after pre-association Called after post-association 
-Dot11ExtAllocateBuffer
- X
-    
-Dot11ExtFreeBuffer
- X
-    
-Dot11ExtGetProfileCustomUserData
-   X
-  
-Dot11ExtNicSpecificExtension
-  X
-   
-Dot11ExtStartOneX
-    X
- 
-Dot11ExtStopOneX
-    X
- 
-Dot11ExtPostAssociateCompletion
-    X
- 
-Dot11ExtPreAssociateCompletion
-   X
-  
-Dot11ExtProcessOneXPacket
-    X
- 
-Dot11ExtQueryVirtualStationProperties
-  X
-   
-Dot11ExtReleaseVirtualStation
-  X
-   
-Dot11ExtRequestVirtualStation
-  X
-   
-Dot11ExtSendNotification
-  X
-   
-Dot11ExtSendUIRequest
-  X
-   
-Dot11ExtSetAuthAlgorithm
-  X
-   
-Dot11ExtSetCurrentProfile
-   X
-  
-Dot11ExtSetDefaultKey
-  X
-   
-Dot11ExtSetDefaultKeyId
-  X
-   
-Dot11ExtSetEtherTypeHandling
-  X
-   
-Dot11ExtSetExcludeUnencrypted
-  X
-   
-Dot11ExtSetKeyMappingKey
-  X
-   
-Dot11ExtSetMulticastCipherAlgorithm
-  X
-   
-Dot11ExtSetProfileCustomUserData
-  X
-   
-Dot11ExtSetUnicastCipherAlgorithm
-  X
-   
-Dot11ExtSetVirtualStationAPProperties
-   X
-  
+| Function | Called after service initialization | Called after adapter initialization | Called after pre-association | Called after post-association |
+| --- | --- | --- | --- | --- |
+| [Dot11ExtAllocateBuffer](https://msdn.microsoft.com/library/windows/hardware/ff547419) | X |   |   |   |
+| [Dot11ExtFreeBuffer](https://msdn.microsoft.com/library/windows/hardware/ff547422) | X |   |   |   |
+| [Dot11ExtGetProfileCustomUserData](https://msdn.microsoft.com/library/windows/hardware/ff547430) |   |   | X |   | 
+| [Dot11ExtNicSpecificExtension](https://msdn.microsoft.com/library/windows/hardware/ff547526) |   | X |   |   |
+| [Dot11ExtStartOneX](https://msdn.microsoft.com/library/windows/hardware/ff547610) |   |   |   | X |
+| [Dot11ExtStopOneX](https://msdn.microsoft.com/library/windows/hardware/ff547614) |   |   |   | X |
+| [Dot11ExtPostAssociateCompletion](https://msdn.microsoft.com/library/windows/hardware/ff547530) |   |   |   | X |
+| [Dot11ExtPreAssociateCompletion](https://msdn.microsoft.com/library/windows/hardware/ff547538) |   |   | X |   |
+| [Dot11ExtProcessOneXPacket](https://msdn.microsoft.com/library/windows/hardware/ff547541) |   |   |   | X |
+| [Dot11ExtQueryVirtualStationProperties](https://msdn.microsoft.com/library/windows/hardware/ff547544) |   | X |   |   |
+| [Dot11ExtReleaseVirtualStation](https://msdn.microsoft.com/library/windows/hardware/ff547549) |   | X |   |   |
+| [Dot11ExtRequestVirtualStation](https://msdn.microsoft.com/library/windows/hardware/ff547556) |   | X |   |   |
+| [Dot11ExtSendNotification](https://msdn.microsoft.com/library/windows/hardware/ff547560) |   | X |   |   |
+| [Dot11ExtSendUIRequest](https://msdn.microsoft.com/library/windows/hardware/ff547567) |   | X |   |   |
+| [Dot11ExtSetAuthAlgorithm](https://msdn.microsoft.com/library/windows/hardware/ff547571) |   | X |   |   |
+| [Dot11ExtSetCurrentProfile](https://msdn.microsoft.com/library/windows/hardware/ff547574) |   |   | X |   |
+| [Dot11ExtSetDefaultKey](https://msdn.microsoft.com/library/windows/hardware/ff547578) |   | X |   |   |
+| [Dot11ExtSetDefaultKeyId](https://msdn.microsoft.com/library/windows/hardware/ff547584)|   | X |   |   |
+| [Dot11ExtSetEtherTypeHandling](https://msdn.microsoft.com/library/windows/hardware/ff547587) |   | X |   |   |
+| [Dot11ExtSetExcludeUnencrypted](https://msdn.microsoft.com/library/windows/hardware/ff547589) |   | X |   |   |
+| [Dot11ExtSetKeyMappingKey](https://msdn.microsoft.com/library/windows/hardware/ff547597) |   | X |   |   |
+| [Dot11ExtSetMulticastCipherAlgorithm](https://msdn.microsoft.com/library/windows/hardware/ff547599) |   | X |   |   |
+| [Dot11ExtSetProfileCustomUserData](https://msdn.microsoft.com/library/windows/hardware/ff547603) |   | X |   |   |
+| [Dot11ExtSetUnicastCipherAlgorithm](https://msdn.microsoft.com/library/windows/hardware/ff547606) |   | X |   |   |
+| [Dot11ExtSetVirtualStationAPProperties](https://msdn.microsoft.com/library/windows/hardware/ff547609) |   |   | X |   | 
 
- 
-
-For more information about IHV Handler functions, see Native 802.11 IHV Handler Functions.
+For more information about IHV Handler functions, see [Native 802.11 IHV Handler Functions](native-802-11-ihv-handler-functions.md).
 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bp_mb\p_mb%5D:%20Planning%20your%20APN%20database%20submission%20%20RELEASE:%20%281/18/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
