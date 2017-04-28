@@ -40,7 +40,7 @@ EvtAdapterCreateTxQueue(NETADAPTER Adapter, PNETTXQUEUE_INIT NetTxQueueInit)
 
 To create a receive queue from [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md), use the same pattern to call [**NetRxQueueCreate**](netrxqueuecreate.md).  For an example, see [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](evt-net-adapter-create-rxqueue.md).
 
-Because the NETRXQUEUE and NETTXQUEUE objects are parented to the NETADAPTER, WDF automatically deletes the queues when the adapter is deleted.
+Transmit and receive queues are managed by the OS. They will always be torn down before an adapter starts a low power transition and will always be destroyed before the adapter is destroyed.
 
 ## Implementing queue callbacks
 
@@ -73,31 +73,46 @@ The client driver may optionally set **NextIndex** to the index of the next pack
 
 In this model, the client has submitted packets with index values between **BeginIndex** and **NextIndex - 1** inclusive to hardware.  Packets with index values between **NextIndex** and **EndIndex - 1** are owned by the client but have not yet been sent to hardware.  If the value of **BeginIndex** is equal to the value of **NextIndex**, the client has not programmed any packets to hardware.
 
-After the hardware transmits or receives data, the client calls [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to return ownership of the completed packets to the class extension, which advances the **BeginIndex** accordingly.  Because the ring buffer is circular, eventually the index values wrap around the end of the buffer and come back to the beginning.
+After the hardware transmits or receives data, the client advances **BeginIndex** to give the packets to the class extension. If the client tracks packet completion using the **Completed** flag on **NET_PACKET_FRAGMENT**, the client can call [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md) to advance **BeginIndex** automatically through each completed packet.
 
-Although a client driver can manipulate the **NET_RING_BUFFER** directly, a client driver typically uses higher level helper routines like:
+Because the ring buffer is circular, eventually the index values wrap-around the end of the buffer and come back to the beginning. Therefore care must be taken when when incrementing through the ring buffer to perform wrap-around correctly.  To handle wrap around when incrementing ring buffer indices, call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md).
+
+## Polling model
+
+The NetAdapter data path is a polling model. This polling model is implemented by calling the client drivers' queue advance callbacks. For code examples of this, see [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) and [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
+
+### PCI Device Drivers
+
+Drivers for devices that use ring buffers at the hardware level (e.g. typical PCI NICs) will usually manipulate the [**NET_RING_BUFFER**] indices directly.
+
+Here is a typical sequence for a PCI device driver:
+
+1. Get ring buffer.
+2. Program packets to hardware by looping until the ring buffer's **NextIndex** equals **EndIndex**:
+    1. Call [**NetRingBufferGetPacketAtIndex**](NetRingBufferGetPacketAtIndex.md) on **NextIndex**
+    2. Translate the **NET_PACKET** descriptor into the associated hardware packet descriptors.
+    3. Increment **NextIndex** using [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md)
+3. Complete packets by looping until **BeginIndex** equals **NextIndex** or until an incomplete packet is reached:
+    1. Call [**NetRingBufferGetPacketAtIndex**](NetRingBufferGetPacketAtIndex.md) on **BeginIndex**
+    2. Detect if the associated hardware descriptors indicate completion. If not, terminate.
+    3. Translate the hardware descriptor to the **NET_PACKET**
+    4. Increment **BeginIndex** using [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md)
+
+### Device Drivers with Asynchronous I/O
+
+While client drivers that target devices with asynchronous I/O models (e.g. USB) can also use the **NET_RING_BUFFER** indices directly, it's recommended that they use higher level routines to manage out of order completions:
 
 * [NetRingBufferAdvanceNextPacket method](netringbufferadvancenextpacket.md)
 * [NetRingBufferGetNextPacket method](netringbuffergetnextpacket.md)
 * [NetRingBufferReturnCompletedPackets method](netringbufferreturncompletedpackets.md)
 
-Here is a typical sequence:
+Here is a typical sequence for a device driver with asynchronous I/O:
 
 1. Get ring buffer.
 2. Iterate on the packets in the ring buffer.  Typically, do the following in a loop:
     1. Call [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md).
-    2. Program hardware to receive or transmit.
+    2. Program hardware to receive or transmit. This initiates the asynchronous I/O
     3. Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md).
 3. Call [NetRingBufferReturnCompletedPackets method](netringbufferreturncompletedpackets.md).
 
-For code examples of this sequence, see [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) and [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
-
-If the client manipulates the ring buffer indices directly, these additional routines may be useful:
-
-* [NetRingBufferGetPacketAtIndex method](netringbuffergetpacketatindex.md)
-* [NetRingBufferReturnCompletedPacketsThroughIndex method](netringbufferreturncompletedpacketsthroughindex.md)
-
-Finally, you can use the [**NET_RING_BUFFER**](net-ring-buffer.md) as a general purpose ring buffer API, outside of its use in the NetAdapterCx model.  To do so, use the following:
-
-* [**NetRingBufferGetElementAtIndex**](netringbuffergetelementatindex.md)
-* [**NetRingBufferGetNumberOfElementsInRange**](netringbuffergetnumberofelementsinrange.md)
+As asynchronous I/O completions come in, the associated [**NET_PACKET_FRAGMENT**](net-packet-fragment.md)'s **Completed** flag should be set to **TRUE**. This enables [**NetRingBufferReturnCompletedPackets**](NetRingBufferReturnCompletedPackets.md) to complete packets.
