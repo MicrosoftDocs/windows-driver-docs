@@ -44,8 +44,6 @@ After NetAdapterCx enables a receive queue's notification via its [*EVT_RXQUEUE_
 
 The client may notify the queue no more than once per enabling of the notification. If the notification is disabled, the client must not call **NetRxQueueNotifyMoreReceivedPacketsAvailable**.
 
-When the client driver calls **NetRxQueueNotifyMoreReceivedPacketsAvailable**, NetAdapterCx reclaims the [**NET_PACKET**](net-packet.md) previously used for receive and may subsequently call the client’s [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback function.
-
 Requirements
 ------------
 
