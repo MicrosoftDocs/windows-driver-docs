@@ -1,7 +1,6 @@
 ---
 title: Standard Options
-author: windows-driver-content
-description: Standard Options
+description: Standard options are associated with standard features and are identified by predefined names that the GPD language recognizes. 
 ms.assetid: db4578c1-0954-4c51-a11a-923ab7df2b5b
 keywords:
 - printer options WDK Unidrv , standard
@@ -16,29 +15,220 @@ ms.technology: windows-devices
 # Standard Options
 
 
-Standard options are those that are associated with [standard features](standard-features.md). They are identified by predefined names that the GPD language recognizes. Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit \[WDK\]. (This resource may not be available in some languages and countries.)
+Standard options are those that are associated with [standard features](standard-features.md). They are identified by predefined names that the GPD language recognizes. Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit (WDK). 
 
-The following table lists the standard option names that are permitted for each standard feature. Use these names as arguments to \*Option entries. The features that include Print Schema option keywords are option names that are automatically mapped to Print Schema option keywords. You can also map GPD options to Print Schema keywords manually by using the PrintSchemaKeywordMap attribute. The Print Schema is documented in the Microsoft Windows SDK.
+**Note** This resource may not be available in some languages and countries.
 
-| Feature name | Standard option names | Default Print Schema option keywords | Customized options allowed? |
-|---|---|---|---|
-| **Collate** | OFF <br> ON | Uncollated<br>Collated | No |
-| **ColorMode** <td colspan=2>No standard options. | Yes. Also see [Handling Color Formats](handling-color-formats.md) and [Controlling Image Quality](controlling-image-quality.md). |
-| **Duplex** | HORIZONTAL<br>VERTICAL<br>NONE | TwoSidedShortEdge<br>TwoSidedLongEdge<br>OneSided | No |
-| **Halftone** <td colspan=2> HT\_PATSIZE\_2x2<br>HT\_PATSIZE\_2x2\_M<br>HT\_PATSIZE\_4x4<br>HT\_PATSIZE\_4x4\_M<br>HT\_PATSIZE\_6x6<br>HT\_PATSIZE\_6x6\_M<br>HT\_PATSIZE\_8x8<br>HT\_PATSIZE\_8x8\_M<br>HT\_PATSIZE\_10x10<br>HT\_PATSIZE\_10x10\_M<br>HT\_PATSIZE\_12x12<br>HT\_PATSIZE\_12x12\_M<br>HT\_PATSIZE\_14x14<br>HT\_PATSIZE\_14x14\_M<br>HT\_PATSIZE\_16x16<br>HT\_PATSIZE\_16x16\_M<br>HT\_PATSIZE\_SUPERCELL<br>HT\_PATSIZE\_SUPERCELL\_M<br>HT\_PATSIZE\_AUTO<br> | Yes. Also see [Halftoning with Unidrv](halftoning-with-unidrv.md). |
-<td rowspan=5>**InputBin** | AUTO<br>CASSETTE<br>ENVFEED<br>ENVMANUAL | Cassette <td rowspan=5>Yes | FORMSOURCE | AutoSelect | LARGECAPACITY<br>LARGEFMT<br>LOWER | High | MANUAL<br>MIDDLE<br>SMALLFMT | Manual | TRACTOR<br>UPPER | Tractor | **MediaType** | GLOSSY<br>STANDARD<br>TRANSPARENCY | PhotographicGlossy<br>Plain<br>Transparency | Yes. Also see [Controlling Image Quality](controlling-image-quality.md). |
+The following table lists the standard option names that are permitted for each standard feature. Use these names as arguments to **\*Option** entries. The features that include Print Schema option keywords are option names that are automatically mapped to Print Schema option keywords. You can also map GPD options to Print Schema keywords manually by using the **PrintSchemaKeywordMap** attribute. The Print Schema is documented in the Microsoft Windows SDK.
+
+<table>
+	<tbody>
+		<tr>
+			<td><b>Feature name</b></td>
+			<td><b>Standard option names</b></td>
+			<td><b>Default Print Schema option keywords</b></td>
+			<td><b>Customized options allowed?</b></td>
+		</tr>
+        <tr>
+			<td><b>Collate</b></td>
+			<td>OFF<br>ON</td>
+			<td>Uncollated<br>Collated</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><b>ColorMode</b></td>
+			<td colspan="2">No standard options</td>
+			<td>Yes<br>Also see [Handling Color Formats](handling-color-formats.md)<br>and [Controlling Image Quality](controlling-image-quality.md).</td>
+		</tr>
+		<tr>
+			<td><b>Duplex</b></td>
+			<td>HORIZONTAL<br>VERTICAL<br>NONE</td>
+			<td>TwoSidedShortEdge<br>TwoSidedLongEdge<br>OneSided</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><b>Halftone</b></td>
+			<td colspan="2">HT_PATSIZE_2x2<br>HT_PATSIZE_2x2_M<br>HT_PATSIZE_4x4<br>HT_PATSIZE_4x4_M<br>HT_PATSIZE_6x6<br>HT_PATSIZE_6x6_M<br>HT_PATSIZE_8x8<br>HT_PATSIZE_8x8_M<br>HT_PATSIZE_10x10<br>HT_PATSIZE_10x10_M<br>HT_PATSIZE_12x12<br>HT_PATSIZE_12x12_M<br>HT_PATSIZE_14x14<br>HT_PATSIZE_14x14_M<br>HT_PATSIZE_16x16<br>HT_PATSIZE_16x16_M<br>HT_PATSIZE_SUPERCELL<br>HT_PATSIZE_SUPERCELL_M<br>HT_PATSIZE_AUTO</td>
+			<td>Yes<br>Also see [Halftoning with Unidrv].</td>
+		</tr>
+		<tr>
+			<td rowspan="5"><b>InputBin</b></td>
+			<td>AUTO<br>CASSETTE<br>ENVFEED<br>ENVMANUAL</td>
+			<td>Cassette</td>
+			<td rowspan="5">Yes</td>
+		</tr>
+		<tr>
+			<td>FORMSOURCE</td>
+			<td>AutoSelect</td>
+		</tr>
+		<tr>
+			<td>LARGECAPACITY<br>LARGEFMT<br>LOWER</td>
+			<td>High</td>
+		</tr>
+		<tr>
+			<td>MANUAL<br>MIDDLE<br>SMALLFMT</td>
+			<td>Manual</td>
+		</tr>
+		<tr>
+			<td>TRACTOR<br>UPPER</td>
+			<td>Tractor</td>
+		</tr>
+		<tr>
+			<td><b>MediaType</b></td>
+			<td>GLOSSY<br>STANDARD<br>TRANSPARENCY</td>
+			<td>PhotographicGlossy<br>Plain<br>Transparency</td>
+			<td>Yes<br>Also see [Controlling Image Quality](controlling-image-quality.md).</td>
+		</tr>
+		<tr>
+			<td><b>Memory</b></td>
+			<td colspan="2">No standard options</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><b>Orientation</b></td>
+			<td>PORTRAIT<br>LANDSCAPE_CC90<br>LANDSCAPE_CC270<br>For more information about the latter two options, see [Specifying Paper Orientation](specifying-paper-orientation.md).</td>
+			<td>Portrait<br>Landscape<br>ReverseLandscape</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><b>PageProtect</b></td>
+			<td colspan="2">ON<br>OFF</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td rowspan="29"><b>PaperSize</b></td>
+			<td>10X11<br>10X14<br>11X17</td>
+			<td>NorthAmerica10x11<br>NorthAmerica10x14<br>NorthAmerica11x17</td>
+			<td rowspan="29">Yes<br>Customized names must not exceed the length specified by <b>CCHFORMNAME</b> in <b>wingdi.h</b>.</td>
+		</tr>
+		<tr>
+			<td colspan="2">12X11<br>15X11</td>
+		</tr>
+		<tr>
+			<td>9X11<br>A_PLUS</td>
+			<td>NorthAmerica9x11<br>NorthAmericaSuperA</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td><b>Resolution</b></td>
+			<td colspan="2">No standard options</td>
+			<td>Yes</td>
+		</tr>
+	</tbody>
+</table>
 
 
 ### TEST END
 
 
-**Memory**
-No standard options.
-Yes
+
 **Orientation**
 PORTRAIT
-LANDSCAPE\_CC90
-LANDSCAPE\_CC270
+LANDSCAPE_CC90
+LANDSCAPE_CC270
 (For more information about the latter two options, see [Specifying Paper Orientation](specifying-paper-orientation.md).)
 Portrait
 Landscape
@@ -58,43 +248,43 @@ NorthAmerica11x17
 15X11
 Yes. Customized names must not exceed the length specified by CCHFORMNAME in *wingdi.h*.
 9X11
-A\_PLUS
+A_PLUS
 NorthAmerica9x11
 NorthAmericaSuperA
 A2
 A3
 ISOA2
 ISOA3
-A3\_EXTRA
-A3\_EXTRA\_TRANSVERSE
+A3_EXTRA
+A3_EXTRA_TRANSVERSE
 ISOA3Extra
-A3\_ROTATED
-A3\_TRANSVERSE
+A3_ROTATED
+A3_TRANSVERSE
 ISOA3Rotated
 A4
-A4\_EXTRA
-A4\_PLUS
+A4_EXTRA
+A4_PLUS
 ISOA4
 ISOA4Extra
 OtherMetricA4Plus
-A4\_ROTATED
-A4\_TRANSVERSE
+A4_ROTATED
+A4_TRANSVERSE
 ISOA4Rotated
 A4SMALL
 A5
-A5\_EXTRA
+A5_EXTRA
 ISOA5
 ISOA5Extra
-A5\_ROTATED
-A5\_TRANSVERSE
+A5_ROTATED
+A5_TRANSVERSE
 ISOA5Rotated
 A6
-A6\_ROTATED
-B\_PLUS
+A6_ROTATED
+B_PLUS
 B4
-B4\_JIS\_ROTATED
+B4_JIS_ROTATED
 B5
-B5\_EXTRA
+B5_EXTRA
 ISOA6
 ISOA6Rotated
 NorthAmericaSuperB
@@ -102,26 +292,26 @@ JISB4
 JISB4Rotated
 JISB5
 ISOB5Extra
-B5\_JIS\_ROTATED
-B5\_TRANSVERSE
+B5_JIS_ROTATED
+B5_TRANSVERSE
 JISB5Rotated
-B6\_JIS
-B6\_JIS\_ROTATED
+B6_JIS
+B6_JIS_ROTATED
 JISB6
 JISB6Rotated
 CSHEET
 CUSTOMSIZE
 NorthAmericaCSheet
-DBL\_JAPANESE\_POSTCARD
-DBL\_JAPANESE\_POSTCARD\_ROTATED
+DBL_JAPANESE_POSTCARD
+DBL_JAPANESE_POSTCARD_ROTATED
 DSHEET
-ENV\_10
-ENV\_11
-ENV\_12
-ENV\_14
-ENV\_9
-ENV\_B4
-ENV\_B5
+ENV_10
+ENV_11
+ENV_12
+ENV_14
+ENV_9
+ENV_B4
+ENV_B5
 JapanDoubleHagakiPostcard
 JapanDoubleHagakiPostcardRotated
 NorthAmericaDSheet
@@ -132,20 +322,20 @@ NorthAmericaNumber14Envelope
 NorthAmericaNumber9Envelope
 ISOB4Envelope
 ISOB5Envelope
-ENV\_B6
-ENV\_C3
-ENV\_C4
-ENV\_C5
-ENV\_C6
-ENV\_C65
-ENV\_DL
-ENV\_INVITE
-ENV\_ITALY
-ENV\_MONARCH
-ENV\_PERSONAL
+ENV_B6
+ENV_C3
+ENV_C4
+ENV_C5
+ENV_C6
+ENV_C65
+ENV_DL
+ENV_INVITE
+ENV_ITALY
+ENV_MONARCH
+ENV_PERSONAL
 ESHEET
 EXECUTIVE
-FANFOLD\_LGL\_GERMAN
+FANFOLD_LGL_GERMAN
 ISOC3Envelope
 ISOC4Envelope
 ISOC5Envelope
@@ -159,23 +349,23 @@ NorthAmericaPersonalEnvelope
 NorthAmericaESheet
 NorthAmericaExecutive
 NorthAmericaGermanLegalFanfold
-FANFOLD\_STD\_GERMAN
-FANFOLD\_US
+FANFOLD_STD_GERMAN
+FANFOLD_US
 NorthAmericaGermanStandardFanfold
 FOLIO
-ISO\_B4
-JAPANESE\_POSTCARD
-JAPANESE\_POSTCARD\_ROTATED
-JENV\_CHOU3
-JENV\_CHOU3\_ROTATED
-JENV\_CHOU4
-JENV\_CHOU4\_ROTATED
-JENV\_KAKU2
-JENV\_KAKU2\_ROTATED
-JENV\_KAKU3
-JENV\_KAKU3\_ROTATED
-JENV\_YOU4
-JENV\_YOU4\_ROTATED
+ISO_B4
+JAPANESE_POSTCARD
+JAPANESE_POSTCARD_ROTATED
+JENV_CHOU3
+JENV_CHOU3_ROTATED
+JENV_CHOU4
+JENV_CHOU4_ROTATED
+JENV_KAKU2
+JENV_KAKU2_ROTATED
+JENV_KAKU3
+JENV_KAKU3_ROTATED
+JENV_YOU4
+JENV_YOU4_ROTATED
 OtherMetricFolio
 ISOB4
 JapanHagakiPostcard
@@ -192,57 +382,57 @@ JapanYou4Envelope
 JapanYou4EnvelopeRotated
 LEDGER
 LEGAL
-LEGAL\_EXTRA
+LEGAL_EXTRA
 LETTER
 NorthAmericaLegal
 NorthAmericaLegalExtra
 NorthAmericaLetter
-LETTER\_EXTRA
-LETTER\_EXTRA\_TRANSVERSE
+LETTER_EXTRA
+LETTER_EXTRA_TRANSVERSE
 NorthAmericaLetterExtra
-LETTER\_PLUS
+LETTER_PLUS
 NorthAmericaLetterPlus
-LETTER\_ROTATED
-LETTER\_TRANSVERSE
+LETTER_ROTATED
+LETTER_TRANSVERSE
 NorthAmericaLetterRotated
 LETTERSMALL
 NOTE
 P16K
-P16K\_ROTATED
+P16K_ROTATED
 P32K
-P32K\_ROTATED
+P32K_ROTATED
 NorthAmericaNote
 PRC16K
 PRC16KRotated
 PRC32K
 PRC32KRotated
 P32KBIG
-P32KBIG\_ROTATED
+P32KBIG_ROTATED
 PRC32KBig
-PENV\_1
-PENV\_1\_ROTATED
-PENV\_10
-PENV\_10\_ROTATED
-PENV\_2
-PENV\_2\_ROTATED
-PENV\_3
-PENV\_3\_ROTATED
-PENV\_4
-PENV\_4\_ROTATED
-PENV\_5
-PENV\_5\_ROTATED
-PENV\_6
-PENV\_6\_ROTATED
-PENV\_7
-PENV\_7\_ROTATED
-PENV\_8
-PENV\_8\_ROTATED
-PENV\_9
-PENV\_9\_ROTATED
+PENV_1
+PENV_1_ROTATED
+PENV_10
+PENV_10_ROTATED
+PENV_2
+PENV_2_ROTATED
+PENV_3
+PENV_3_ROTATED
+PENV_4
+PENV_4_ROTATED
+PENV_5
+PENV_5_ROTATED
+PENV_6
+PENV_6_ROTATED
+PENV_7
+PENV_7_ROTATED
+PENV_8
+PENV_8_ROTATED
+PENV_9
+PENV_9_ROTATED
 QUARTO
 STATEMENT
 TABLOID
-TABLOID\_EXTRA
+TABLOID_EXTRA
 PRC1Envelope
 PRC1EnvelopeRotated
 PRC10Envelope
@@ -267,16 +457,14 @@ NorthAmericaQuarto
 NorthAmericaStatement
 NorthAmericaTabloid
 NorthAmericaTabloidExtra
-**Resolution**
-No standard options.
-Yes.
+
  
 
 ## Related topics
 [Controlling Image Quality](controlling-image-quality.md)  
 [Halftoning with Unidrv](halftoning-with-unidrv.md)  
 [Specifying Paper Orientation](specifying-paper-orientation.md)  
-[standard features](standard-features.md)  
+[Standard features](standard-features.md)  
 
 --------------------
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bprint\print%5D:%20Standard%20Options%20%20RELEASE:%20%289/1/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
