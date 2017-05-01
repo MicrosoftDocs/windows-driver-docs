@@ -5,7 +5,7 @@ ms.assetid: c548643c-ae0c-47e7-af0a-0d89ed78f281
 keywords:
 - trace message displaying WDK
 - displaying trace messages
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

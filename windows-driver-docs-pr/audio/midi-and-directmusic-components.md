@@ -13,7 +13,7 @@ keywords:
 - time-stamped MIDI WDK audio
 - note-on events WDK audio
 - note-off events WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

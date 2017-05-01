@@ -6,7 +6,7 @@ ms.assetid: d18d3ead-2cec-4ea6-ac4c-b809ba985f23
 keywords:
 - IRP dispatch routines WDK file system , passing IRP down
 - passing IRPs down device stack WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

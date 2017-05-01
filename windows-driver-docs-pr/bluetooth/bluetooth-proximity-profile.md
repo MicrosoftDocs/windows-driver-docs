@@ -2,7 +2,7 @@
 title: Bluetooth Proximity Profile
 description: The Proximity Profile defines two roles intended to allow devices to detect their proximity.
 ms.assetid: 6BA67CA4-AAE4-4D01-97A4-65970704E7ED
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

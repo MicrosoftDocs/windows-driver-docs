@@ -6,7 +6,7 @@ ms.assetid: c4f24646-57ea-4467-ad48-a3e6044658e3
 keywords:
 - extension units WDK USB Video Class , samples
 - sample code WDK USB Video Class
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

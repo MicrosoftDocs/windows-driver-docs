@@ -3,7 +3,7 @@ title: Privacy and Security in the Sensor and Location Platform
 author: windows-driver-content
 description: Privacy and Security in the Sensor and Location Platform
 ms.assetid: 9defb163-4de6-46cc-b817-d3e6291137be
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

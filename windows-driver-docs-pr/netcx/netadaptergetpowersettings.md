@@ -31,7 +31,7 @@ Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 Return value
 ------------
@@ -69,7 +69,7 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>IRQL</p></td>
-<td align="left"><p>DISPATCH_LEVEL</p></td>
+<td align="left"><p><= DISPATCH_LEVEL</p></td>
 </tr>
 </tbody>
 </table>

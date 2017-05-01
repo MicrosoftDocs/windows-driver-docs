@@ -6,7 +6,7 @@ keywords:
 - task offload WDK TCP/IP transport , IPsec tasks
 - IPsec offload WDK TCP/IP transport , capabilities
 - IPsec offload WDK TCP/IP transport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

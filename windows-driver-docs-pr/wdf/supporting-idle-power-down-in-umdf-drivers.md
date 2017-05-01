@@ -6,7 +6,7 @@ ms.assetid: 128f009e-1847-493e-90e3-2fe8c141b158
 keywords:
 - power management WDK UMDF , idle power-down
 - idle power-down WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

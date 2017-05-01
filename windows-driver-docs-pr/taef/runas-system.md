@@ -2,7 +2,7 @@
 title: RunAs System
 description: TAEF runs the test as Local System.
 ms.assetid: E1138F36-D043-458A-8424-C649854CB7EE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

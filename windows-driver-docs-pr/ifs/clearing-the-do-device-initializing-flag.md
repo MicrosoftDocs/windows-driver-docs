@@ -9,7 +9,7 @@ keywords:
 - attaching filters to file system or volume
 - volumes WDK file system , attaching filters
 - DO_DEVICE_INITIALIZING
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

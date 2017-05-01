@@ -2,7 +2,7 @@
 title: Enumerating Hyper-V Extensible Switch Instances
 description: Enumerating Hyper-V Extensible Switch Instances
 ms.assetid: 1C4FE71E-689C-4BE8-BDA8-FFC318E37A26
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

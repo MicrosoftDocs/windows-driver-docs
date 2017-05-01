@@ -3,7 +3,7 @@ title: Negotiating Claim and Release Device Requests with Storport
 author: windows-driver-content
 description: Negotiating Claim and Release Device Requests with Storport
 ms.assetid: 9212f2b0-6319-47a6-8c61-02002ad81178
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: NIC Switches
 description: NIC Switches
 ms.assetid: 7681DBB2-6645-4B06-9D95-64E7FD379029
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

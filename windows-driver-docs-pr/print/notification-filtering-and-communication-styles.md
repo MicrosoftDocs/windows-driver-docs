@@ -15,7 +15,7 @@ keywords:
 - communication WDK spooler notification
 - all listener notifications WDK print spooler
 - per-user listener filtering WDK spooler notification
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

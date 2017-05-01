@@ -11,7 +11,7 @@ keywords:
 - data source pins WDK kernel streaming
 - pin connections WDK kernel streaming
 - kernel streaming WDK , pins
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Creating a 'Hello World' WIA Minidriver
 author: windows-driver-content
 description: Creating a 'Hello World' WIA Minidriver
 ms.assetid: 074da2ff-bc60-48a9-b2ff-83f070bd5351
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

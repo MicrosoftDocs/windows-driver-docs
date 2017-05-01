@@ -6,7 +6,7 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , multiple vertex streams
 - multiple vertex streams WDK DirectX 8.0
 - vertex multiple streams WDK DirectX 8.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

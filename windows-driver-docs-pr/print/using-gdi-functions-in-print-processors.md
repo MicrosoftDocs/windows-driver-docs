@@ -7,7 +7,7 @@ keywords:
 - EMF record playback WDK print processor
 - GDI functions WDK print processor
 - NT EMF WDK print processor
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

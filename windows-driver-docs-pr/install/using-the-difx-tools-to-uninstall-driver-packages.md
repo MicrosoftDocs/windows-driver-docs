@@ -2,7 +2,7 @@
 title: Using the DIFx Tools to Uninstall Driver Packages
 description: Using the DIFx Tools to Uninstall Driver Packages
 ms.assetid: 85f15e3b-f53c-45ff-ab51-104e9b110ad1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

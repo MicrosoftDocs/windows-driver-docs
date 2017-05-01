@@ -6,7 +6,7 @@ keywords:
 - intermediate drivers WDK networking , network data management
 - NDIS intermediate drivers WDK , network data management
 - network data management WDK NDIS intermediate
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

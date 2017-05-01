@@ -2,7 +2,7 @@
 title: MB Device Readiness
 description: MB Device Readiness
 ms.assetid: 67a67ff7-dcff-4aec-bea9-7b1be9593649
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Writing SR-IOV VF Miniport Drivers
 description: Writing SR-IOV VF Miniport Drivers
 ms.assetid: 15CA65DD-AAAB-4EDA-8743-8A3E63E50190
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

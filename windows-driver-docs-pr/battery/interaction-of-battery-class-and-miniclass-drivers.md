@@ -5,7 +5,7 @@ ms.assetid: bf35a034-1bb9-4106-aafe-7692d0ff92d0
 keywords:
 - battery miniclass drivers WDK , battery class driver interaction
 - battery class drivers WDK , battery miniclass driver interaction
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: TDR Registry Keys
 description: TDR Registry Keys
 ms.assetid: 77b8b2aa-0821-4297-a1e4-57894bd4181f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

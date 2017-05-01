@@ -8,7 +8,7 @@ keywords:
 - WDM audio drivers WDK , components
 - audio drivers WDK , components
 - components WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

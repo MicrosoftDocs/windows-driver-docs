@@ -6,7 +6,7 @@ ms.assetid: 3ef09c7e-0e88-4236-a4c9-d89eb7ec61cb
 keywords:
 - printer commands WDK Unidrv , cursors
 - cursor commands WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

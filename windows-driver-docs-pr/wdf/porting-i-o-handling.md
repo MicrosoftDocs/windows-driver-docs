@@ -3,7 +3,7 @@ title: Porting I/O
 author: windows-driver-content
 description: Porting I/O
 ms.assetid: D65B85C4-401F-4143-9626-5C16E24925A0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

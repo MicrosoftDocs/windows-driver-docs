@@ -3,7 +3,7 @@ title: Mapping for a Vista Application and Legacy Driver
 author: windows-driver-content
 description: Mapping for a Vista Application and Legacy Driver
 ms.assetid: 176157b0-cc30-467b-95ec-2d25a40c43ab
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

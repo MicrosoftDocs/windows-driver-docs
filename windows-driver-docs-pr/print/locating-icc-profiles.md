@@ -6,7 +6,7 @@ ms.assetid: 828b53cd-452a-4c4d-bfbb-45ea674ef49a
 keywords:
 - color management WDK print , locating ICC profiles
 - ICC profiles WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

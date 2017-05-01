@@ -6,7 +6,7 @@ keywords:
 - MIP map surfaces WDK Direct3D
 - context WDK Direct3D , D3dCreateSurfaceEx
 - D3dCreateSurfaceEx
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: Framework Object Methods
 ms.assetid: f82275c5-15f9-43f5-91bb-b83446526c28
 keywords:
 - framework objects WDK KMDF , methods
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

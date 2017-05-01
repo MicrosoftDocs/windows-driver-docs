@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi Hotspot Offloading Guide
 description: Wi-Fi Hotspot Offloading Guide
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

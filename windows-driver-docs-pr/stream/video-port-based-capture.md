@@ -9,7 +9,7 @@ keywords:
 - video port pins WDK video capture
 - VPEs WDK video capture
 - video port extensions WDK video capture
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

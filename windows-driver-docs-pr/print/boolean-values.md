@@ -6,7 +6,7 @@ ms.assetid: 74ada705-1965-464a-9610-5d71b068eb1e
 keywords:
 - GPD file entries WDK Unidrv , Boolean values
 - Boolean values WDK GPD files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - User-Mode Driver Framework WDK , USB pipes
 - user-mode drivers WDK UMDF , USB pipes
 - USB pipes WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

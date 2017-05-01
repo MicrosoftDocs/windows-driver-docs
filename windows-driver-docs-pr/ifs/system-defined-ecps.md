@@ -3,7 +3,7 @@ title: System-Defined ECPs
 author: windows-driver-content
 description: System-Defined ECPs
 ms.assetid: 6acb4be4-a7aa-431d-b2d8-3ef6d41cb4ef
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

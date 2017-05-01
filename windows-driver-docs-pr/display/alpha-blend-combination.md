@@ -7,7 +7,7 @@ keywords:
 - blended pictures WDK DirectX VA
 - alpha-blend combination WDK DirectX VA , about alpha-blend combination
 - blended pictures WDK DirectX VA , about alpha-blend combination
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

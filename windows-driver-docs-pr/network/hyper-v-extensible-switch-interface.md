@@ -2,7 +2,7 @@
 title: Hyper-V Extensible Switch Interface
 description: Hyper-V Extensible Switch Interface
 ms.assetid: 268AEA25-39D6-4494-B778-49C0B209E62E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

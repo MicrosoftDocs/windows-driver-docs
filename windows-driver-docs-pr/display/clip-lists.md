@@ -10,7 +10,7 @@ keywords:
 - blt WDK DirectDraw , clip lists
 - clip lists WDK DirectDraw
 - clipped blts WDK DirectDraw
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

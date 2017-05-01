@@ -3,7 +3,7 @@ title: ACPI-defined devices
 author: windows-driver-content
 description: The ACPI 5.0 specification defines a number of device types to represent and control typical platform features.
 ms.assetid: 10BD17C9-E8FE-41E0-BD8C-E622B60E6BB6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

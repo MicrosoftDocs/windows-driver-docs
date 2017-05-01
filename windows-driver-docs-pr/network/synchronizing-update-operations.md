@@ -5,7 +5,7 @@ ms.assetid: 175ca97a-99b9-46ff-aa6a-51eb531310cd
 keywords:
 - updating offloaded TCP chimney state, synchronizing operations
 - synchronization WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

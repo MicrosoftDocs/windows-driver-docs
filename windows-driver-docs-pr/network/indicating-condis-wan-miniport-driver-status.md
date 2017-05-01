@@ -8,7 +8,7 @@ keywords:
 - NDIS_STATUS_WAN_CO_LINKPARAMS
 - NDIS_STATUS_WAN_CO_FRAGMENT
 - indications WDK CoNDIS WAN
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

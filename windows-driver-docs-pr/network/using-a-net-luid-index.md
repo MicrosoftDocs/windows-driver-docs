@@ -8,7 +8,7 @@ keywords:
 - NET_LUID
 - index operations WDK network interface
 - locally unique identifier WDK network interface
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

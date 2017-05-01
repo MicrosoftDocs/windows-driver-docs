@@ -4,7 +4,7 @@ description: Required Display Driver Functions
 ms.assetid: 483aa13b-a14d-49f3-8265-013f7bb64d40
 keywords:
 - graphics DDI functions WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: CM_PROB_SYSTEM_SHUTDOWN
 ms.assetid: e469db17-c519-4e05-a6bd-a53190ca33ed
 keywords:
 - CM_PROB_SYSTEM_SHUTDOWN
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

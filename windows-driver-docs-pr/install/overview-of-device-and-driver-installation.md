@@ -6,7 +6,7 @@ keywords:
 - Device setup WDK device installations , about device installations
 - device installations WDK , about device installations
 - installing devices WDK , about device installations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

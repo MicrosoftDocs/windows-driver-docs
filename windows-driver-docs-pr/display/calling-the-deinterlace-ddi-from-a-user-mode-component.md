@@ -5,7 +5,7 @@ ms.assetid: 3ec18c7e-02dc-4607-b280-3ca1bc5d2839
 keywords:
 - calling deinterlace DDI WDK DirectX VA
 - user-mode component calls WDK DirectX VA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

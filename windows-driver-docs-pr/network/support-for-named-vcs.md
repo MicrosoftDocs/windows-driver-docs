@@ -9,7 +9,7 @@ keywords:
 - VCs WDK NDIS WMI
 - miniport call managers WDK networking , naming virtual connections
 - MCMs WDK networking , namin
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

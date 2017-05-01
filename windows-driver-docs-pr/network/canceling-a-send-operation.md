@@ -10,7 +10,7 @@ keywords:
 - NDIS_SET_NET_BUFFER_LIST_CANCEL_ID
 - canceling send operations WDK networking
 - cancellation IDs WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

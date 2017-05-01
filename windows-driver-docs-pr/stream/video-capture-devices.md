@@ -5,7 +5,7 @@ description: Video Capture Devices
 ms.assetid: ed02e6c8-fd82-488b-a0dc-8e83a842bcc4
 keywords:
 - capturing video WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

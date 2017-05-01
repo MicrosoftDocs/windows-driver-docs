@@ -7,7 +7,7 @@ keywords:
 - non-PCM audio formats WDK , waveOut
 - waveOut non-PCM support WDK audio
 - DirectSound WDK audio , non-PCM support
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

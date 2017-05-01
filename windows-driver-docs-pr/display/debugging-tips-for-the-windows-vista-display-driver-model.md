@@ -8,7 +8,7 @@ keywords:
 - debugging drivers WDK display
 - display driver model WDK Windows Vista , tips
 - Windows Vista display driver model WDK , tips
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

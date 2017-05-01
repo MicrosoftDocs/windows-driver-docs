@@ -3,7 +3,7 @@ title: SpbCx Interfaces
 author: windows-driver-content
 description: The SPB framework extension (SpbCx) has two interfaces.
 ms.assetid: 2449BB88-1912-43F9-97E6-B56158D92E55
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

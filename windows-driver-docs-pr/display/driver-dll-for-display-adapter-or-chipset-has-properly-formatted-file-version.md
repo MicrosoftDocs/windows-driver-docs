@@ -2,7 +2,7 @@
 title: Driver DLL for display adapter or chipset has properly formatted file version
 description: This topic describes the proper formatting for display driver DLLs.
 ms.assetid: E39B2A48-D3F8-4EA5-BCF3-23B1053E8D96
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

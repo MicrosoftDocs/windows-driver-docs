@@ -6,7 +6,7 @@ ms.assetid: ed5102e7-1651-4188-8042-f0d544a54a1d
 keywords:
 - printer commands WDK Unidrv , configuration
 - configuration commands WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

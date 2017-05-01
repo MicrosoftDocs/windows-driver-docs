@@ -5,7 +5,7 @@ ms.assetid: e6873ddd-8554-4fd0-97d8-4eccac9bf7a2
 keywords:
 - TraceView WDK , window
 - trace sessions WDK , displaying
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

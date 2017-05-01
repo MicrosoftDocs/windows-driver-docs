@@ -3,7 +3,7 @@ title: Single Driver for Windows Vista and Windows XP
 author: windows-driver-content
 description: Single Driver for Windows Vista and Windows XP
 ms.assetid: 3fa9c044-ab9d-4bed-b5fc-89396e1269ce
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

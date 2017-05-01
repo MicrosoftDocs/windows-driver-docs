@@ -10,7 +10,7 @@ keywords:
 - kernel-mode debuggers WDK UMDF , determining the UMDF device state
 - debugging scenarios WDK UMDF , UMDF device state
 - UMDF WDK , debugging scenarios, UMDF device state
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

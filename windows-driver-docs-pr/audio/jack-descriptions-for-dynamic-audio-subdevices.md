@@ -2,7 +2,7 @@
 title: Jack Descriptions for Dynamic Audio Subdevices
 description: Jack Descriptions for Dynamic Audio Subdevices
 ms.assetid: e04f4000-3b93-4f4b-afec-007e5821f125
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

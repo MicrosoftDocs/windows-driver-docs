@@ -7,7 +7,7 @@ keywords:
 - Plotter Driver WDK print , user interface
 - MSPlot WDK print , user interface
 - user interface WDK MSPlot
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

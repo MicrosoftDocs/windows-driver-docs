@@ -4,7 +4,7 @@ description: Virtual WiFi Initialization
 ms.assetid: f7ff1c74-1d5d-4987-bb66-10f1bf1d0ccd
 keywords:
 - Virtual WiFi in kernel mode WDK networking , initialization
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ description: Sample Printer Interface DLL
 ms.assetid: bf33c353-a565-436a-9bd6-c92f5df85d65
 keywords:
 - printer interface DLL WDK , samples
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

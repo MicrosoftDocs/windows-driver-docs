@@ -4,7 +4,7 @@ description: Update Offload Sequence
 ms.assetid: 1cf73af7-3a2e-4687-880a-60f53a5cf8f7
 keywords:
 - updating offloaded TCP chimney state, sequence
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

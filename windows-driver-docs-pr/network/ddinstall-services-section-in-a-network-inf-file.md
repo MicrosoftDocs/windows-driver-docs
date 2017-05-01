@@ -6,7 +6,7 @@ keywords:
 - INF files WDK network , DDInstall.Services section
 - network INF files WDK , DDInstall.Services section
 - DDInstall.Services section WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

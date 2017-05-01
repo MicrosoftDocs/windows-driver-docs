@@ -6,7 +6,7 @@ ms.assetid: 76454b0c-0e02-4372-97ed-2401a785cef8
 keywords:
 - bidi extension files WDK printer autoconfig
 - in-box autoconfiguration support WDK printer , bidi extension files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -9,7 +9,7 @@ keywords:
 - CPSUI WDK print , group parents
 - property sheet pages WDK print , group parents
 - grouping property sheet pages
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

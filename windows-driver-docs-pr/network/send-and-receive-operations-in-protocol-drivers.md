@@ -9,7 +9,7 @@ keywords:
 - NDIS protocol drivers WDK , send operations
 - send operations WDK NDIS protocol
 - receive operations WDK NDIS protocol
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -15,7 +15,7 @@ keywords:
 - lower-level device filter drivers WDK serial devices
 - higher-level device filter drivers WDK serial devices
 - filter drivers WDK serial devices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

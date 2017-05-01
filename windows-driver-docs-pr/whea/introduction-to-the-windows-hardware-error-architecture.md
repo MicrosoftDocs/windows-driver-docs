@@ -9,7 +9,7 @@ keywords:
 - hardware errors WDK WHEA , about Windows Hardware Error Architecture
 - errors WDK WHEA , about Windows Hardware Error Architecture
 - source information WDK WHEA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

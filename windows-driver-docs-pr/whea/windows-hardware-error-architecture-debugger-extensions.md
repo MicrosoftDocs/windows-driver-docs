@@ -7,7 +7,7 @@ keywords:
 - WHEA WDK , debugger extensions
 - Windows Hardware Error Architecture WDK , debugger extensions
 - debugger extensions WDK WHEA , whea debugger extension WDK WHEA , errpkt debugger extension WDK WHEA , errrec debugger extension WDK WHEA
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Transfer Contexts
 author: windows-driver-content
 description: Transfer Contexts
 ms.assetid: b4eadccd-afb6-4cb5-bf52-704f64d45e40
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

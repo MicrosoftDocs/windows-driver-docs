@@ -2,7 +2,7 @@
 title: REMOTE\_NDIS\_KEEPALIVE\_MSG
 description: REMOTE\_NDIS\_KEEPALIVE\_MSG
 ms.assetid: 2da0be7e-db6d-4bc6-ad7a-20c74ed4604d
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

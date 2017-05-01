@@ -3,7 +3,7 @@ title: Code Example for Reading Device Properties
 author: windows-driver-content
 description: Code Example for Reading Device Properties
 ms.assetid: 9ff3f30d-fd1c-4241-a068-1af2160e9296
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

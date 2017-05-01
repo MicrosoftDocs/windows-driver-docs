@@ -32,17 +32,17 @@ Members
 -------
 
 **Length**  
-The MAC address length, in bytes. The MAC address length is specific to the type of media.
+The physical address length, in bytes. The physical address length is specific to the type of media.
 
 **PermanentAddress**  
-The permanent MAC address. For example, the [**OID_802_3_PERMANENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569074) OID specifies the permanent MAC address for IEEE 802.3 drivers.
+The permanent physical address. For example, the [**OID_802_3_PERMANENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569074) OID specifies the permanent physical address for IEEE 802.3 drivers.
 
 **CurrentAddress**  
-The current MAC address. For example, the [**OID_802_3_CURRENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569069) OID specifies the current MAC address for IEEE 802.3 drivers.
+The current physical address. For example, the [**OID_802_3_CURRENT_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff569069) OID specifies the current physical address for IEEE 802.3 drivers.
 
 Remarks
 -----
-The driver supplies a member of type [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md) when it allocates a [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure to pass as an input parameter to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
+The driver supplies a member of type [NET_ADAPTER_PHYSICAL_ADDRESS](net-adapter-physical-address.md) when it initializes a [NET_ADAPTER_LINK_LAYER_CAPABILITIES](net-adapter-link-layer-capabilities.md) structure to pass as an input parameter to [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md).
 
 Requirements
 ------------

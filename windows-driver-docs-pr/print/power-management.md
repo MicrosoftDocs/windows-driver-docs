@@ -9,7 +9,7 @@ keywords:
 - shutdown power management WDK printer
 - standby tests WDK printer
 - hibernate tests WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

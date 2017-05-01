@@ -13,7 +13,7 @@ keywords:
 - scan lines WDK video port extensions
 - frames WDK video port extensions
 - National Television Systems Committee WDK VPEs
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

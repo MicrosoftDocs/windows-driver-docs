@@ -5,7 +5,7 @@ description: Supporting Point and Print During Printer Connections
 ms.assetid: 941c815f-03c7-4ede-b45f-70d6aeb06442
 keywords:
 - Point and Print WDK , during printer connections
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

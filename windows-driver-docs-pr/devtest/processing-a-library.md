@@ -4,7 +4,7 @@ description: Processing a Library
 ms.assetid: 8ae9ae3b-885d-4eb5-b55b-415edcfc041a
 keywords:
 - library WDK Static Driver Verifier , processing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

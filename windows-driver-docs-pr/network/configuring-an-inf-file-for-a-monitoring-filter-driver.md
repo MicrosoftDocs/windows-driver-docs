@@ -5,7 +5,7 @@ ms.assetid: b45c6f40-7254-4cc1-a007-d40eaa74a290
 keywords:
 - INF files WDK network , filter drivers
 - monitoring filter drivers WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

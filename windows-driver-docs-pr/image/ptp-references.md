@@ -3,7 +3,7 @@ title: PTP References
 author: windows-driver-content
 description: PTP References
 ms.assetid: 4d044986-9c82-423f-8702-fc2a7ede5c51
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

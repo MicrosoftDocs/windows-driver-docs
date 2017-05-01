@@ -2,7 +2,7 @@
 title: Managing OID Requests to Physical Network Adapters
 description: Managing OID Requests to Physical Network Adapters
 ms.assetid: 7E828FA8-DE99-4C30-ABB6-8AF05F9EC3B7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

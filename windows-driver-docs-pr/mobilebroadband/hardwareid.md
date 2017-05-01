@@ -1,15 +1,15 @@
 ---
-title: HardwareID
-description: HardwareID
+title: HardwareId (PackageInfo)
+description: HardwareId (PackageInfo)
 ms.assetid: edd05106-1bbc-45da-80cc-792d7fcce192
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# HardwareID
+# HardwareId (PackageInfo)
 
 
 For service metadata packages, the HardwareID values represent the mobile network operator in the form of the following:

@@ -70,7 +70,7 @@ If this flag is set, the MB network adapter can generate a wake-up event when th
 
 Remarks
 -----
-The **NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS** enumeration is used to specify protocol offloads in the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
+The **NET_ADAPTER_MEDIA_SPECIFIC_WAKEUP_EVENTS_FLAGS** enumeration is used to specify supported media-specific wake-up events in the [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
 
 The [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure is used as input to [**NetAdapterSetPowerCapabilities**](netadaptersetpowercapabilities.md).
 

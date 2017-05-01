@@ -2,7 +2,7 @@
 title: REMOTE\_NDIS\_INDICATE\_STATUS\_MSG
 description: REMOTE\_NDIS\_INDICATE\_STATUS\_MSG
 ms.assetid: 1858ac41-30d2-4ae0-86ba-ebdf6dc90d5a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

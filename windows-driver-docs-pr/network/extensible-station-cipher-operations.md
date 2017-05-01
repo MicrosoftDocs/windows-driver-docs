@@ -8,7 +8,7 @@ keywords:
 - cipher operations WDK Native 802.11 , Extensible Station mode
 - Extensible Station cipher operations WDK Native 802.11
 - ExtSTA cipher operations WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

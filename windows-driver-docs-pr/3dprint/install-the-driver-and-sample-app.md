@@ -3,7 +3,7 @@ title: Install the driver and sample app
 author: windows-driver-content
 description: This section provides information on installing the driver and the WSD sample app.
 ms.assetid: BF89F0D0-2ED3-4900-996F-BB7B9C8C9B80
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

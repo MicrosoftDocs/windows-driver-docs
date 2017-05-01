@@ -8,7 +8,7 @@ keywords:
 - decoder minidrivers WDK DVD , KS events
 - KS events WDK DVD decoder
 - events WDK DVD decoder
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

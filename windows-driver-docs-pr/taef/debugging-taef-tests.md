@@ -2,7 +2,7 @@
 title: Debugging TAEF Tests
 description: Debugging TAEF Tests
 ms.assetid: 0239547F-EF29-45e0-BACF-ED0F6C07DB99
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

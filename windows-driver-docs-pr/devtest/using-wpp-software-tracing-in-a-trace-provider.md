@@ -5,7 +5,7 @@ ms.assetid: e215a99b-5082-4e81-84b6-184a2fd4e270
 keywords:
 - Windows software trace preprocessor WDK , about WPP
 - WPP software tracing WDK , about WPP
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

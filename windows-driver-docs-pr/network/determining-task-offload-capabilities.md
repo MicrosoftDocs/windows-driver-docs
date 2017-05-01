@@ -4,7 +4,7 @@ description: Determining Task Offload Capabilities
 ms.assetid: 9348a595-7bc0-467e-aeaf-e23100c99524
 keywords:
 - task offload WDK TCP/IP transport , capabilities
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

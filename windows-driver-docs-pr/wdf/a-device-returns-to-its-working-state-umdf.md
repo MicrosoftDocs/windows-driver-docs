@@ -6,7 +6,7 @@ ms.assetid: 2b192eea-f731-4d61-be19-95724bf7b04a
 keywords:
 - power management scenarios WDK UMDF , device returning to its working state
 - device returning to working state scenario WDK UMDF
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

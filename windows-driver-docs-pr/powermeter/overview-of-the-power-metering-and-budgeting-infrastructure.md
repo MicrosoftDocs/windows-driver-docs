@@ -4,7 +4,7 @@ description: Overview of the Power Metering and Budgeting Infrastructure
 ms.assetid: eda1c829-eb5e-404b-bf6b-1b0807ee02c7
 keywords:
 - Power Metering and Budgeting WDK , overview
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

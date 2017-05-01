@@ -7,7 +7,7 @@ keywords:
 - testing device functionality WDK printer
 - device functionality testing WDK printer
 - functionality testing WDK printer
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

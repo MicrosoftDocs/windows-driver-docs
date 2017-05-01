@@ -8,7 +8,7 @@ keywords:
 - COPP WDK DirectX VA , commands
 - protected video WDK COPP , commands
 - commands WDK COPP
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

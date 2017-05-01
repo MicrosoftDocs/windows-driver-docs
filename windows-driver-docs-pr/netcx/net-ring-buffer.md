@@ -78,7 +78,7 @@ Remarks
 The **NET_RING_BUFFER** is a generic ring buffer, optimized for efficient access from a single thread.
 A **NET_RING_BUFFER** contains elements of type [**NET_PACKET**](net-packet.md).
 
-For more info about the ring buffer, see [Handling I/O Requests](handling-i-o-requests.md#using-the-ring-buffer).
+For more info about the ring buffer, see [Transferring Network Data](transferring-network-data.md#using-the-ring-buffer).
 
 Requirements
 ------------

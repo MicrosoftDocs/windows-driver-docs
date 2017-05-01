@@ -2,7 +2,7 @@
 title: Summary of Connection-Oriented Operations
 description: Summary of Connection-Oriented Operations
 ms.assetid: fa8490f0-1460-4b13-86ee-4617d3e87abc
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

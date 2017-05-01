@@ -3,7 +3,7 @@ title: Extended Camera Control Properties
 author: windows-driver-content
 ms.assetid: 27D94D73-D190-4C01-B082-7798CA71EDB4
 description: The extended camera control interface is used to control camera features during image capture.
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

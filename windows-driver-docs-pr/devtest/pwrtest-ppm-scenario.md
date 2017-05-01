@@ -2,7 +2,7 @@
 title: PwrTest PPM Scenario
 description: The PwrTest PPM Scenario logs processor power management (PPM) information and periodic statistics totals.
 ms.assetid: 735834dc-7351-44d1-a63f-9cb541184fde
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

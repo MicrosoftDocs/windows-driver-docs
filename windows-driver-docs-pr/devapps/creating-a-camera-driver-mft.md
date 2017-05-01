@@ -2,7 +2,7 @@
 title: Creating a camera driver MFT for a Windows Store device app
 description: In Windows 8.1, Windows Store device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform).
 ms.assetid: 079CB01E-D16C-4597-8F08-BD75F1D02427
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

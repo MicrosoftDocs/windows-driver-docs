@@ -2,7 +2,7 @@
 title: Windows Audio Architecture
 description: This topic provided a high level summary of the Windows 10 audio architecture.
 ms.assetid: 1FC95504-18AA-4F3B-8E96-005276699694
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

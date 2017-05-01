@@ -2,7 +2,7 @@
 title: How WER collects and classifies error reports
 description: How WER collects and classifies error reports
 ms.assetid: f6af24c7-90f7-42cf-93f3-8e3ba26b793a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: 1b9e2b8d-04b8-4288-9d63-e7d84d75a9c6
 keywords:
 - Sdv-map.h WDK Static Driver Verifier , formats
 - formats WDK Static Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

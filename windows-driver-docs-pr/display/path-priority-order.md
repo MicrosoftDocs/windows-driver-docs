@@ -11,7 +11,7 @@ keywords:
 - CCD concepts WDK Windows Server 2008 R2 display , path priority order
 - path priority order WDK Windows 7 display
 - path priority order WDK Windows Server 2008 R2 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

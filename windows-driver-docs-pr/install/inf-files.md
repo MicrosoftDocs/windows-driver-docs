@@ -2,7 +2,7 @@
 title: INF Files
 description: INF Files
 ms.assetid: 8557a072-1b08-41f9-8c35-976a96ff639c
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

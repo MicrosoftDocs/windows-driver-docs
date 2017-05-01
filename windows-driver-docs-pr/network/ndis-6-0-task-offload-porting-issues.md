@@ -7,7 +7,7 @@ keywords:
 - TCP/IP offload service porting WDK networking , about porting task offload services
 - offload service porting WDK networking , about porting task offload services
 - porting task of
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

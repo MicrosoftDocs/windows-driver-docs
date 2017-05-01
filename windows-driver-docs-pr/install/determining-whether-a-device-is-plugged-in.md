@@ -9,7 +9,7 @@ keywords:
 - verifying plugged in devices
 - plugged in device checks WDK
 - determining plugged in devices WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Incoming Request to Close a Call
 ms.assetid: ecdcb74d-6151-4e2b-8fe7-95f455f4deb4
 keywords:
 - incoming close call requests WDK CoNDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: MB Registration Operations
 description: MB Registration Operations
 ms.assetid: b894dab6-5e38-43f9-adbd-376a25346029
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: cefede2e-3e82-4de3-ae49-4982578fd2fe
 keywords:
 - context WDK Direct3D , surface handles
 - surface handles WDK Direct3D
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

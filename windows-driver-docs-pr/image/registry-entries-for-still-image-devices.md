@@ -3,7 +3,7 @@ title: Registry Entries for Still Image Devices
 author: windows-driver-content
 description: Registry Entries for Still Image Devices
 ms.assetid: cedc8afc-54c4-485e-989c-481fe30d899b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

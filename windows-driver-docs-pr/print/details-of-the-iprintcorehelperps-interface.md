@@ -5,7 +5,7 @@ description: Details of the IPrintCoreHelperPS Interface
 ms.assetid: 0e00012c-6ced-4369-b367-675465e29d93
 keywords:
 - IPrintCoreHelperPS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

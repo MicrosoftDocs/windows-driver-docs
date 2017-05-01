@@ -3,7 +3,7 @@ title: WDM Equivalents for WDF Buffer Pointers
 author: windows-driver-content
 description: WDM Equivalents for WDF Buffer Pointers
 ms.assetid: 7923A3CA-479A-4C7D-B428-F57C9701906E
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

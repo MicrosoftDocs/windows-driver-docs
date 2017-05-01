@@ -2,7 +2,7 @@
 title: Managing Hyper-V Extensible Switch Destination Port Data
 description: Managing Hyper-V Extensible Switch Destination Port Data
 ms.assetid: 2781E64A-61D6-49A9-AD9B-F6B348560E30
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

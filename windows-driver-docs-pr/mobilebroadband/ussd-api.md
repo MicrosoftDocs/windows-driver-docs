@@ -2,7 +2,7 @@
 title: USSD API
 description: USSD API
 ms.assetid: c5700791-6978-4626-ab69-aa4391247542
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

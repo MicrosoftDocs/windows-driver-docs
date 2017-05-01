@@ -6,7 +6,7 @@ keywords:
 - memory segments WDK display , AGP-type aperture-space segments
 - AGP-type aperture-space segments WDK display
 - aperture-space segments WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

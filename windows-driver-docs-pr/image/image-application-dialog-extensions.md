@@ -3,7 +3,7 @@ title: Image Application Dialog Extensions
 author: windows-driver-content
 description: Image Application Dialog Extensions
 ms.assetid: 4bb7d2f9-58c3-4cfa-aa6b-a4bd9335d2ac
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

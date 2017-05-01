@@ -5,7 +5,7 @@ ms.assetid: 437f8d2a-74c6-4a00-aa32-f790d39c0629
 keywords:
 - underlying adapter opening WDK networking
 - opening underlying adapters
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ keywords:
 - DirectSound WDK audio , speaker configuration settings
 - speaker-configuration settings WDK DirectSound
 - speakers WDK audio , DirectSound configuration settings
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: c1b41f89-150d-47e9-9bed-04f5796f69bd
 keywords:
 - IDE controller minidrivers WDK storage , installing
 - storage IDE controller minidrivers WDK , installing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

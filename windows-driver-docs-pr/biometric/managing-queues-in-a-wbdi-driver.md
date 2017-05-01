@@ -5,7 +5,7 @@ ms.assetid: f0434581-8492-42e1-ae50-4114e7b8b202
 keywords:
 - biometric drivers WDK , managing queues
 - managing queues WDK biometric
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

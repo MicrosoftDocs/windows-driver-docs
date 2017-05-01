@@ -7,7 +7,7 @@ keywords:
 - Windows Filtering Platform Callout Drivers WDK , asynchronous processing of classify callouts
 - pending WFP classify callouts WDK Windows Filtering Platform
 - classify callouts WDK Windows Filtering Platform , asynchronous processing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: Example DetectSubregions
 author: windows-driver-content
 description: Example DetectSubregions
 ms.assetid: 8fd5271a-587a-4b29-82a4-b84f70f5478f
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

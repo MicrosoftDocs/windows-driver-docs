@@ -2,7 +2,7 @@
 title: Process residency budgets
 description: In Windows Display Driver Model (WDDM) v2, processes will be assigned budgets for how much memory they can keep resident.
 ms.assetid: 9A93E110-4D3F-4D08-8379-222A2D7DEFBB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

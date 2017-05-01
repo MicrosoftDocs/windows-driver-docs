@@ -3,7 +3,7 @@ title: Checking the Oplock State of an IRP_MJ_CREATE operation
 author: windows-driver-content
 description: Checking the Oplock State of an IRP_MJ_CREATE operation
 ms.assetid: 30684025-9da0-4f4c-a850-ab0390bef091
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

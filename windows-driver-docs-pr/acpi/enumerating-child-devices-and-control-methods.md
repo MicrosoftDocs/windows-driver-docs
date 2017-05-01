@@ -8,7 +8,7 @@ keywords:
 - ACPI devices WDK , enumerating control methods
 - ACPI namespaces WDK
 - ACPI control methods WDK , enumerating
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Guidelines for 802.11 Promiscuous Receive Operations
 ms.assetid: 4d7b9178-3e3f-49d9-88ff-3194bf5b14c7
 keywords:
 - promiscuous receive operations WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

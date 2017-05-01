@@ -6,7 +6,7 @@ ms.assetid: 89868b4d-e2c1-4f38-b81e-a96b8cff3e4f
 keywords:
 - I/O requests WDK UMDF , lower drivers
 - request processing WDK UMDF , lower drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: How NDIS Detects Idle Network Adapters
 description: How NDIS Detects Idle Network Adapters
 ms.assetid: 1FF01B0B-9826-4467-8071-D26CA5E5EF4F
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -5,7 +5,7 @@ ms.assetid: f2631f39-02bb-4bbc-b63b-6a0200d47bc8
 keywords:
 - filtering trace messages, special actions WDK
 - trace message filters WDK , special actions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

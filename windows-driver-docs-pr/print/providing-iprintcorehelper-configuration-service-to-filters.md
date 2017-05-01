@@ -3,7 +3,7 @@ title: Providing IPrintCoreHelper Configuration Service to Filters
 author: windows-driver-content
 description: Providing IPrintCoreHelper Configuration Service to Filters
 ms.assetid: 78f12957-fc05-4183-a79b-4c637afe25b2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

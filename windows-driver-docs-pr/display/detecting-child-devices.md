@@ -7,7 +7,7 @@ keywords:
 - child devices WDK video miniport , detecting
 - detecting child devices WDK video miniport
 - HwVidGetVideoChildDescriptor
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

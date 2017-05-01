@@ -45,7 +45,7 @@ Returns a pointer to the net packet at the specified index value of the ring buf
 Remarks
 -----
 
-For more info, see [Handling I/O Requests](handling-i-o-requests.md).
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

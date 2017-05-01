@@ -6,7 +6,7 @@ ms.assetid: 633b24c7-a1da-4748-aaa2-864a01a3fd98
 keywords:
 - external device properties WDK video capture
 - PROPSETID_EXT_DEVICE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

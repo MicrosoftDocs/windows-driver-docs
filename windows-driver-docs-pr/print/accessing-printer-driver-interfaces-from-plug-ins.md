@@ -6,7 +6,7 @@ ms.assetid: 021ba789-99bd-4ab5-98fb-0d24ffd0ce25
 keywords:
 - COM interfaces WDK print , accessing printer driver interfaces
 - plug-ins WDK print , accessing interfaces
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

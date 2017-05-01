@@ -6,7 +6,7 @@ ms.assetid: 2d17ebef-9474-4825-be09-c924ebd60c44
 keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , guidelines
 - PSHED plug-ins WDK WHEA , guidelines
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - Port Class audio adapters WDK , media-specific INF file keywords
 - media-specific INF file keywords WDK audio
 - INF file media keywords WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

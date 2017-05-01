@@ -7,7 +7,7 @@ keywords:
 - NDIS miniport drivers WDK , WAN miniport drivers
 - WAN miniport drivers WDK networking
 - wide area network WDK networking . miniport drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

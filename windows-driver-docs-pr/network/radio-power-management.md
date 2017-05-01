@@ -5,7 +5,7 @@ ms.assetid: 2e788ea6-2d4a-455a-b462-d21a69a8f235
 keywords:
 - power management WDK Native 802.11 miniport , radio
 - radio power management WDK Native 802.11 miniport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

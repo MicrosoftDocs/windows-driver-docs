@@ -3,7 +3,7 @@ title: Namespaces for WIA Drivers
 author: windows-driver-content
 description: Namespaces for WIA Drivers
 ms.assetid: 67260a25-6233-4738-a08f-26223cc8e563
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

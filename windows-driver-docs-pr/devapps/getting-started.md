@@ -2,7 +2,7 @@
 title: Getting started with Windows Store device apps
 description: Start here to begin building Windows Store device apps.
 ms.assetid: 6280E9CC-422B-4100-8B38-07BADD6A578A
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

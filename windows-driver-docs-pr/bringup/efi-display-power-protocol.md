@@ -3,7 +3,7 @@ title: EFI\_DISPLAY\_POWER\_PROTOCOL
 author: windows-driver-content
 description: EFI\_DISPLAY\_POWER\_PROTOCOL
 ms.assetid: 61ccf856-7e0b-4f1b-9be9-7b8a31339a6b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

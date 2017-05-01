@@ -10,7 +10,7 @@ keywords:
 - child function hardware IDs WDK multifunction devices
 - system-supplied multifunction bus drivers WDK
 - mf.sys
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

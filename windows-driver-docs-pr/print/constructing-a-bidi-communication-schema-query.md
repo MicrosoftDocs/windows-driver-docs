@@ -6,7 +6,7 @@ ms.assetid: b18fc69a-652c-4e36-83b3-fc4715b03c0f
 keywords:
 - bidirectional communication schema WDK print
 - bidi communication schema WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

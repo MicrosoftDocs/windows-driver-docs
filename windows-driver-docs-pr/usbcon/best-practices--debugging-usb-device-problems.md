@@ -2,7 +2,7 @@
 Description: This topic provides tips for debugging USB device problems by using ETW events.
 title: Debugging USB device issues by using ETW events
 author: windows-driver-content
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

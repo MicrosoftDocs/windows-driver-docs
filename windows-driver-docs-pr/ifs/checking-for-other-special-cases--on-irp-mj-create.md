@@ -6,7 +6,7 @@ ms.assetid: e6af44c2-fd39-469b-8530-cf88edb329f7
 keywords:
 - IRP_MJ_CREATE
 - security checks WDK file systems , IRP_MJ_CREATE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

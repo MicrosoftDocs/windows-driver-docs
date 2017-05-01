@@ -10,7 +10,7 @@ keywords:
 - print spooler print-job rendering WDK
 - spooler print-job rendering WDK print
 - jobs WDK print , client-side rendering
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

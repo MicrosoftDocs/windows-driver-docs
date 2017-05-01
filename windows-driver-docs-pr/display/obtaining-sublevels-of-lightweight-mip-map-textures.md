@@ -5,7 +5,7 @@ ms.assetid: a2781c9a-b4bb-42a9-8ed5-9f62c1d2ee64
 keywords:
 - MIP map textures WDK DirectX 9.0 , obtaining sublevels
 - lightweight MIP-map textures WDK DirectX 9.0 , obtaining sublevels
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

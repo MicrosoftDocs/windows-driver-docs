@@ -3,7 +3,7 @@ title: WIA Diagnostic Log Macros
 author: windows-driver-content
 description: WIA Diagnostic Log Macros
 ms.assetid: 8b544045-e9d7-422b-825c-f1a5531e0e11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

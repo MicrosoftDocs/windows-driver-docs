@@ -6,7 +6,7 @@ keywords:
 - shaders WDK DirectX 9.0 , shader 3.0 support
 - vertex shaders WDK DirectX 9.0 , shader 3.0 support
 - pixel shaders WDK DirectX 9.0 , shader 3.0 support
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

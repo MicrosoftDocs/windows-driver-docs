@@ -2,7 +2,7 @@
 title: Smart Card Minidriver Overview
 description: Smart Card Minidriver Overview
 ms.assetid: B5047C79-F74E-44FA-ADE5-8716ABC9EB79
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

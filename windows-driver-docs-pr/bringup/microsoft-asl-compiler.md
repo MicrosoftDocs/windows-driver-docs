@@ -3,7 +3,7 @@ title: Microsoft ASL compiler
 author: windows-driver-content
 description: Version 5.0 of the Microsoft ASL compiler supports the features in the ACPI 5.0 specification.
 ms.assetid: E6EC168F-DB4B-461A-874A-F5278E8F9200
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

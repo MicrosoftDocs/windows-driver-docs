@@ -6,7 +6,7 @@ ms.assetid: 3174b36c-feb5-497c-a6e4-0d070c658899
 keywords:
 - IRP dispatch routines WDK file system , completing IRPs
 - completing I/O requests WDK file system
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

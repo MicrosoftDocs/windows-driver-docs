@@ -9,7 +9,7 @@ keywords:
 - driver stacks WDK IEEE 1394 bus
 - stacks WDK IEEE 1394 bus
 - device stacks WDK IEEE 1394 bus
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

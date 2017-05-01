@@ -5,7 +5,7 @@ description: Best Practices
 ms.assetid: c01b3fd9-7f4e-4d1a-a726-b31b0eebf094
 keywords:
 - contexts WDK file system minifilter , best practices
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

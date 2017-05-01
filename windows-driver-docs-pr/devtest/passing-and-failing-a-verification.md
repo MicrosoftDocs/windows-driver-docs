@@ -10,7 +10,7 @@ keywords:
 - passed verification WDK Static Driver Verifier
 - failed verification WDK Static Driver Verifier
 - inconclusive verification WDK Static Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

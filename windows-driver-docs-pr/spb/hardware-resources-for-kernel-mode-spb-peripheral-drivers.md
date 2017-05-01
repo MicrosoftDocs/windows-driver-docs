@@ -3,7 +3,7 @@ title: Hardware Resources for Kernel-Mode SPB Peripheral Drivers
 author: windows-driver-content
 description: Code examples for a KMDF driver for a peripheral device on an SPB, and obtains the hardware resources.
 ms.assetid: ABFFCBEC-16AB-44AF-BEF6-34AEE612EAF7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

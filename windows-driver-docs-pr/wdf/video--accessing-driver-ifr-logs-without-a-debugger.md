@@ -4,7 +4,7 @@ author: windows-driver-content
 description: This topic contains a video tutorial that shows how a driver can access IFR logs without a debugger attached.
 Search.SourceType: Video
 ms.assetid: 1cda1d84-e3e3-42ab-9e45-ae5a465e5bf7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

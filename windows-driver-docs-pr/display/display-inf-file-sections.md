@@ -9,7 +9,7 @@ keywords:
 - CapabilityOverride
 - INF files WDK Windows 2000 display
 - display INF file sections WDK Windows 2000 display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

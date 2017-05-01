@@ -7,7 +7,7 @@ keywords:
 - DXVA_VideoProcess_SubStreamsExtended
 - DXVA_VideoProcess_YUV2RGBExtended
 - DXVA_VideoProcess_AlphaBlendExtended
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

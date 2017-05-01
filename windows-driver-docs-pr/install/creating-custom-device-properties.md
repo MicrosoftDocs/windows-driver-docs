@@ -4,7 +4,7 @@ description: Creating Custom Device Properties
 ms.assetid: e18fcbe8-6083-451e-b1be-5a543b61c627
 keywords:
 - device properties WDK device installations , creating custom
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

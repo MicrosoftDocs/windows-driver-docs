@@ -17,7 +17,7 @@ keywords:
 - scaling support flags WDK video present networks
 - rotation support flags WDK video present networks
 - enumeration pivot WDK video present networks
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

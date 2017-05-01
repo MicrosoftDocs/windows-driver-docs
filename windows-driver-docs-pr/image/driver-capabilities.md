@@ -3,7 +3,7 @@ title: Driver Capabilities
 author: windows-driver-content
 description: Driver Capabilities
 ms.assetid: 639eff56-655d-4b6a-95f0-daa1daf62fae
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

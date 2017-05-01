@@ -6,7 +6,7 @@ ms.assetid: 3e30eb53-2f62-469d-a27c-dc256df37126
 keywords:
 - Print Tickets WDK , organization
 - hierarchy WDK Print Ticket
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ keywords:
 - message GUIDs WDK
 - GUIDs WDK software tracing
 - identifiers WDK software tracing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

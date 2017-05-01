@@ -8,8 +8,8 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-description: 
-ms.author: windows-driver-content
+description: NFC logging for functions/methods, NCI packets/protocols, and other verbose logging.
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -36,18 +36,7 @@ This will generate an ETL file named MySession.etl in the C:\\Data folder. You c
 The NFC CX does not include any debugging extensions.
 
 ## Related topics
-
-
-
-
-
-
- 
-
- 
-## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
 [Event Tracing for Windows (Windows Drivers)](https://msdn.microsoft.com/library/windows/hardware/ff552961)  
 [Tools for Software Tracing](https://msdn.microsoft.com/library/windows/hardware/ff556204)  
-

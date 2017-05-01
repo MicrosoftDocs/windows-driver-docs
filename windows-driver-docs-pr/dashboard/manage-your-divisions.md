@@ -2,7 +2,7 @@
 title: Manage your divisions
 description: Manage your divisions
 ms.assetid: 0b6fda43-70f3-465c-8975-187b0a37d1cd
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

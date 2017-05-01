@@ -3,7 +3,7 @@ title: 64-Bit and WIA
 author: windows-driver-content
 description: 64-Bit and WIA
 ms.assetid: 392e60c7-2ad6-4a71-83de-5e5ac550dc8b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

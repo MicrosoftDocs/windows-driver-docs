@@ -4,7 +4,7 @@ description: Third Part of Macroblock Control Command Structure
 ms.assetid: 4e378d2f-dbb2-42b6-984e-b231bb806a7c
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

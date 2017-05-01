@@ -5,7 +5,7 @@ ms.assetid: 1f464393-539f-4a5f-8293-3e08f3ada5ab
 keywords:
 - connection-oriented NDIS WDK , operations
 - CoNDIS WDK networking , operations
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

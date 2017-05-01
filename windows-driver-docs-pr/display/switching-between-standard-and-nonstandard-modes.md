@@ -5,7 +5,7 @@ ms.assetid: 15939910-b325-47ff-b4ed-bbaeec4149bd
 keywords:
 - nonstandard display modes WDK DirectX 9.0 , switching between standard and nonstandard modes
 - switching between standard and nonstandard modes WDK DirectX 9.0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: Version Information Requirements for NDIS Drivers
 ms.assetid: a05e7dde-d1f9-458d-8d7b-ead9bb9af7af
 keywords:
 - NDIS version information WDK , NDIS responsibilities
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

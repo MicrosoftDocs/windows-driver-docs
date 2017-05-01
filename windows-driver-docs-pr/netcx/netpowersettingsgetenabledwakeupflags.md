@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves flags that specify the media-independent wake-up events that a network adapter supports.
+Retrieves flags that specify currently enabled media-independent wake-up events that a network adapter supports.
 
 Syntax
 ------
@@ -31,7 +31,7 @@ Parameters
 ----------
 
 *NetPowerSettings* [in]  
-A handle to the NETPOWERSETTINGS object associated with the net adapter. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
+A handle to the NETPOWERSETTINGS object associated with the NETADAPTER. To retrieve the handle, call [**NetAdapterGetPowerSettings**](netadaptergetpowersettings.md).
 
 Return value
 ------------

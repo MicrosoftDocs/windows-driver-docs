@@ -4,7 +4,7 @@ description: NDIS Timer Services
 ms.assetid: 10e2a26d-91c8-4d10-a4e8-082bf10324fc
 keywords:
 - timers WDK NDIS
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Meet Windows Store device apps
 description: This topic provides an overview of the features and capabilities that make a Windows Store device app uniquely different from a regular Windows Store app.
 ms.assetid: 395745E6-7A97-4B26-A82C-0729E7B999C6
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

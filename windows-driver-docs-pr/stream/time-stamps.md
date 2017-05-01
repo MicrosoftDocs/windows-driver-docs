@@ -8,7 +8,7 @@ keywords:
 - capturing video WDK AVStream , time stamps
 - time stamps WDK video capture
 - clocks WDK video capture
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

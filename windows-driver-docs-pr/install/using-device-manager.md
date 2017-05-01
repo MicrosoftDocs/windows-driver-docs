@@ -5,7 +5,7 @@ ms.assetid: 3c229347-b36f-43e7-9e9c-3ba6ec1e6108
 keywords:
 - Device Manager WDK
 - Device Manager WDK , about Device Manager
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

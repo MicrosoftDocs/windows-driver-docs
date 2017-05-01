@@ -2,7 +2,7 @@
 title: Dashboard submission objects
 description: Dashboard submission objects
 ms.assetid: 1ce17c11-901b-4f8d-8e79-8bf490a94ba7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

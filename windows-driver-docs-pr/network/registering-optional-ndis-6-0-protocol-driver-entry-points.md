@@ -5,7 +5,7 @@ ms.assetid: bb26cf47-1183-470c-84f1-5cb20999a0fc
 keywords:
 - registering entry points
 - optional entry points WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

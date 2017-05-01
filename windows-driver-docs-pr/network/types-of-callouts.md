@@ -5,7 +5,7 @@ ms.assetid: d9539403-7657-4e95-8791-309673d1207d
 keywords:
 - pending packets WDK Windows Filtering Platform
 - callout types WDK Windows Filtering Platform
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

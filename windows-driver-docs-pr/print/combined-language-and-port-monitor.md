@@ -9,7 +9,7 @@ keywords:
 - language monitors WDK print , port monitor interaction
 - port monitors WDK print , language monitor interaction
 - combined language and port monitors WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

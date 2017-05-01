@@ -7,7 +7,7 @@ keywords:
 - device extensions WDK video miniport
 - extensions WDK video miniport
 - adapter states WDK video miniport
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

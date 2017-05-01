@@ -7,7 +7,7 @@ keywords:
 - NDIS miniport drivers WDK , unloading
 - porting miniport drivers WDK networking , unload operations
 - unloading miniport drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

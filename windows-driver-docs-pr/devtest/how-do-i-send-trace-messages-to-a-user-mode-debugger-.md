@@ -2,7 +2,7 @@
 title: How do I send trace messages to a user-mode debugger
 description: How do I send trace messages to a user-mode debugger
 ms.assetid: d1a9df10-3339-4518-a42a-abd1123d5e21
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

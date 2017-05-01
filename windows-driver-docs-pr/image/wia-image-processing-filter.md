@@ -3,7 +3,7 @@ title: WIA Image Processing Filter
 author: windows-driver-content
 description: WIA Image Processing Filter
 ms.assetid: 80bc7f50-45dc-4c18-b826-113dd6465ced
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

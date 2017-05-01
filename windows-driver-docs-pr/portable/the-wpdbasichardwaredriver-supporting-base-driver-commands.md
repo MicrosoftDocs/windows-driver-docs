@@ -1,14 +1,14 @@
 ---
-Description: Supporting the Base-Driver Commands
-title: Supporting the Base-Driver Commands
-ms.author: windows-driver-content
+Description: Support for base-driver commands (WpdBasicHardwareDriverSample)
+title: Support for base-driver commands (WpdBasicHardwareDriverSample)
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ---
 
-# Supporting the Base-Driver Commands
+# Support for base-driver commands (WpdBasicHardwareDriverSample)
 
 
 The base driver module for the sample (*WpdBaseDriver.cpp*) processes a single command (WPD\_COMMAND\_COMMON\_GET\_OBJECT\_IDS\_FROM\_ PERSISTENT\_UNIQUE\_IDS). However, this module is also the starting point for all command processing in the sample driver. This means that all commands are first processed by the **WpdBaseDriver::DispatchMessage** method. This method examines the category of a given command and then forwards it to the enumeration-, property-, or capability-command handler.

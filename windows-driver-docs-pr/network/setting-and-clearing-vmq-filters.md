@@ -2,7 +2,7 @@
 title: Setting and Clearing VMQ Filters
 description: Setting and Clearing VMQ Filters
 ms.assetid: bfee8a3c-d2be-4718-beb4-067b66756a41
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

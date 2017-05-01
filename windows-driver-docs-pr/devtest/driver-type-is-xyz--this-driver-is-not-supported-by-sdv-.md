@@ -2,7 +2,7 @@
 title: Driver type is " xyz ". This driver is not supported by SDV
 description: Static Driver Verifier must be able to interpret the driver code, specifically, the driver's entry points and the code in functions and routines that support required driver functionality.
 ms.assetid: A8126F46-3CC8-45A8-A16B-884B07C59688
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

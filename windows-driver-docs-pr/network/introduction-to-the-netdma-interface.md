@@ -8,7 +8,7 @@ keywords:
 - transferring data WDK NetDMA , about NetDMA interface
 - NetDMA WDK networking , about NetDMA interface
 - copying data with low CPU pr
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

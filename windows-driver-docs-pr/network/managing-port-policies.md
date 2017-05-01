@@ -2,7 +2,7 @@
 title: Managing Port Policies
 description: Managing Port Policies
 ms.assetid: 46394916-6558-4BDA-8920-E3C5378823BE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

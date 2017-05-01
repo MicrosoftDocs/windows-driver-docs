@@ -8,7 +8,7 @@ keywords:
 - graphics drivers WDK Windows 2000 display , fonts, driver functions
 - DrvLoadFontFile
 - DrvUnloadFontFile
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

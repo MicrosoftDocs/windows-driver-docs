@@ -8,7 +8,7 @@ keywords:
 - DEVMODEW structure WDK Windows 2000 display
 - Unicode WDK graphics
 - drawing WDK GDI , DEVMODEW structure
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

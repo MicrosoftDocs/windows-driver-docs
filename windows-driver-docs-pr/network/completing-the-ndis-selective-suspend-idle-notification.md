@@ -2,7 +2,7 @@
 title: Completing the NDIS Selective Suspend Idle Notification
 description: Completing the NDIS Selective Suspend Idle Notification
 ms.assetid: 2330A8EE-DC8B-4244-935C-DEF20A6EB5E7
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -12,7 +12,7 @@ keywords:
 - DMA transfers WDK KMDF
 - DMA transactions WDK KMDF , about DMA transactions
 - DMA transfers WDK KMDF , about DMA transfers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

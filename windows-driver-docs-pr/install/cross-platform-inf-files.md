@@ -6,7 +6,7 @@ keywords:
 - cross-platform INF files WDK
 - INF files WDK device installations , cross-platform
 - operating systems WDK , cross-operating system INF files
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

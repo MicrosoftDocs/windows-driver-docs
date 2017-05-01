@@ -2,7 +2,7 @@
 title: Using the State-Refresh Callback Functions
 description: Using the State-Refresh Callback Functions
 ms.assetid: fadd2edb-776b-4ef1-b663-cc004522f8ae
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

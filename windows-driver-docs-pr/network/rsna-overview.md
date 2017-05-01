@@ -5,7 +5,7 @@ ms.assetid: c14abe5c-d8fd-4f02-9ff4-2291f419230c
 keywords:
 - Robust Security Network Association WDK Native 802.11
 - RSNA WDK Native 802.11
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -12,7 +12,7 @@ keywords:
 - battery GUI WDK
 - UPS WDK battery
 - system battery management WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

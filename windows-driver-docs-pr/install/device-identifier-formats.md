@@ -2,7 +2,7 @@
 title: Device Identifier Formats
 description: Device Identifier Formats
 ms.assetid: 66bb8c0d-114e-4eea-98f0-d606ba4e7148
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

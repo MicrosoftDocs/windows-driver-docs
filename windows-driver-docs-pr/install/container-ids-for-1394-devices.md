@@ -2,7 +2,7 @@
 title: Container IDs for 1394 Devices
 description: Container IDs for 1394 Devices
 ms.assetid: 667df2c6-bbbd-41da-b626-da493e316016
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

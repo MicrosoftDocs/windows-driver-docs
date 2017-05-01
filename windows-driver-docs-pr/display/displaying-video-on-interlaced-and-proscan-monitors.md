@@ -17,7 +17,7 @@ keywords:
 - video port extensions WDK DirectDraw , interlaced video
 - VPEs WDK DirectDraw , interlaced video
 - NTSC/PAL WDK video port extensions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

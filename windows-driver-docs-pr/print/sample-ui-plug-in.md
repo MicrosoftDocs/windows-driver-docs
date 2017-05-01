@@ -6,7 +6,7 @@ ms.assetid: a97b7769-c820-413e-96de-a1a2358c6979
 keywords:
 - user interface plug-ins WDK print ,
 - UI plug-ins WDK print ,
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

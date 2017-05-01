@@ -2,7 +2,7 @@
 title: Plan purchase
 description: Plan purchase
 ms.assetid: e4713e66-a26d-4408-885e-877259e4450b
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

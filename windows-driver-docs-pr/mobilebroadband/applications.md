@@ -2,7 +2,7 @@
 title: Applications
 description: Applications
 ms.assetid: 40d73650-556e-4221-a679-0b8e9ead4df5
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

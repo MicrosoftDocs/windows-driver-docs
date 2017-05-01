@@ -3,7 +3,7 @@ title: History of Storport
 author: windows-driver-content
 description: History of Storport
 ms.assetid: 1ddf45e1-06bb-42c6-9409-0f54143bb350
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - Video Class drivers WDK USB , properties
 - UVC drivers WDK AVStream , properties
 - property sets WDK USB Video Class
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: WS-DSP Scenarios
 author: windows-driver-content
 description: WS-DSP Scenarios
 ms.assetid: 1d68fc40-f585-43d4-a5a3-5e5052c52c3e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,7 +8,7 @@ keywords:
 - segments received during termination WDK TCP chimney offload
 - TCP SACK WDK TCP chimney offload
 - selective acknowledgment for out-of-order segments WDK TCP chimney offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

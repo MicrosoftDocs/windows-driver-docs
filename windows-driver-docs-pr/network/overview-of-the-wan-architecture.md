@@ -5,7 +5,7 @@ ms.assetid: 96dff98f-32fa-4996-bc29-9e6c36deff05
 keywords:
 - WAN miniport drivers WDK networking , architecture
 - architecture WDK WAN
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

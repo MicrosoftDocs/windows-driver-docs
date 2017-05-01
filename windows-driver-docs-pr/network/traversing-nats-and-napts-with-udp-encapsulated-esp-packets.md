@@ -6,7 +6,7 @@ keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , transversing NATs and NAPTs
 - network address translators WDK IPsec offload
 - network address port translators WDK IPsec offload
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

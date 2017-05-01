@@ -5,7 +5,7 @@ description: Getting Contexts
 ms.assetid: e0e659e5-6f95-4378-8764-63d96c7d07d4
 keywords:
 - contexts WDK file system minifilter , getting
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

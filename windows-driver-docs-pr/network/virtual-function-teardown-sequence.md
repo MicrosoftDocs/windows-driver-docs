@@ -2,7 +2,7 @@
 title: Virtual Function Teardown Sequence
 description: Virtual Function Teardown Sequence
 ms.assetid: 8C59A4F7-FC5D-4680-8CDD-751422588601
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

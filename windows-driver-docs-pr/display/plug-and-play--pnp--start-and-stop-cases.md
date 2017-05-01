@@ -1,10 +1,10 @@
 ---
 title: Plug and Play (PnP) in WDDM 1.2 and later
-description: All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers must support the following behavior in response to start and stop requests by the Plug and Play (PnP) infrastructure.
+description: All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers must support the following behavior in response to start and stop requests.
 ms.assetid: A95DCFEA-BC1B-4A13-9850-13814725D53E
 keywords:
 - Plug and Play in display drivers WDK display
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -31,7 +31,7 @@ All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers m
 <td align="left">8</td>
 </tr>
 <tr class="odd">
-<td align="left">Driver implementationâ€”Full graphics and Display only</td>
+<td align="left">Driver implementation—Full graphics and Display only</td>
 <td align="left">Mandatory</td>
 </tr>
 <tr class="even">
@@ -41,12 +41,12 @@ All Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers m
 </tbody>
 </table>
 
-Â 
+ 
 
 ## <span id="Display_miniport_driver_PnP_DDI"></span><span id="display_miniport_driver_pnp_ddi"></span><span id="DISPLAY_MINIPORT_DRIVER_PNP_DDI"></span>Display miniport driver PnP DDI
 
 
-Starting in WindowsÂ 8, the Microsoft DirectX graphics kernel subsystem provides this function that a driver can call if the display device is started or resumed from hibernation:
+Starting in Windows 8, the Microsoft DirectX graphics kernel subsystem provides this function that a driver can call if the display device is started or resumed from hibernation:
 
 -   [**DxgkCbAcquirePostDisplayOwnership**](https://msdn.microsoft.com/library/windows/hardware/hh451339)
 
@@ -82,7 +82,7 @@ These are the return codes that the driver should return after a PnP start proce
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Success"></span><span id="success"></span><span id="SUCCESS"></span>Success</p></td>
-<td align="left"><p>Behavior is the same as in WindowsÂ 7.</p>
+<td align="left"><p>Behavior is the same as in Windows 7.</p>
 <p>For a BIOS-based system, if the driver starts successfully, the frame buffer is still active and the driver must be ready to set to a valid mode.</p></td>
 </tr>
 <tr class="even">
@@ -93,7 +93,7 @@ These are the return codes that the driver should return after a PnP start proce
 </tbody>
 </table>
 
-Â 
+ 
 
 ## <span id="PnP_stop_operation"></span><span id="pnp_stop_operation"></span><span id="PNP_STOP_OPERATION"></span>PnP stop operation
 
@@ -130,14 +130,14 @@ These are the return codes that the driver should return after a PnP stop proces
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Failure"></span><span id="failure"></span><span id="FAILURE"></span>Failure</p></td>
-<td align="left"><p>The operating system calls the WindowsÂ 7-style PnP stop driver interface through the [<em>DxgkDdiStopDevice</em>](https://msdn.microsoft.com/library/windows/hardware/ff560781) function.</p>
+<td align="left"><p>The operating system calls the Windows 7-style PnP stop driver interface through the [<em>DxgkDdiStopDevice</em>](https://msdn.microsoft.com/library/windows/hardware/ff560781) function.</p>
 <p>For a BIOS-based system, the driver must set the display into a BIOS-compatible mode.</p>
 <p>For a UEFI-based system, the basic display driver runs in headless mode on the graphics adapter.</p></td>
 </tr>
 </tbody>
 </table>
 
-Â 
+ 
 
 For further requirements on PnP and other state transitions, see [Providing seamless state transitions in WDDM 1.2 and later](seamless-state-transitions-in-wddm-1-2-and-later.md).
 
@@ -146,11 +146,11 @@ For further requirements on PnP and other state transitions, see [Providing seam
 
 For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation]( http://go.microsoft.com/fwlink/p/?linkid=258342) on **Device.Graphics.WDDM12.Display.PnpStopStartSupport**.
 
-See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with WindowsÂ 8.
+See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
-Â 
+ 
 
-Â 
+ 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[display\display]:%20Plug%20and%20Play%20%28PnP%29%20in%20WDDM%201.2%20and%20later%20%20RELEASE:%20%282/10/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

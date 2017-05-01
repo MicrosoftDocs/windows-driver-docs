@@ -2,7 +2,7 @@
 title: Can I customize DoTraceMessage
 description: Can I customize DoTraceMessage
 ms.assetid: 4c5c4990-6095-4ab8-a20b-7597b3169f52
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

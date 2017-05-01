@@ -3,7 +3,7 @@ title: Dedicated Film Scanners
 author: windows-driver-content
 description: Dedicated Film Scanners
 ms.assetid: 1f8b73eb-a81a-4db3-b5be-b0a01a12696a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

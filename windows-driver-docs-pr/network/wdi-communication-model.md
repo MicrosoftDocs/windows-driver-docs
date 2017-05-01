@@ -2,7 +2,7 @@
 title: Communication model, synchronization, and abort
 description: This section describes the WDI communication model, synchronization, and abort
 ms.assetid: 575D1314-8726-49C1-AE6C-C171FE1CD2AD
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

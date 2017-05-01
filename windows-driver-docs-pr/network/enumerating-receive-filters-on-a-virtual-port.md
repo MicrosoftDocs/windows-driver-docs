@@ -2,7 +2,7 @@
 title: Enumerating Receive Filters on a Virtual Port
 description: Enumerating Receive Filters on a Virtual Port
 ms.assetid: E809B7A3-256B-4351-8A60-D80D4A86EFDB
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 4e52c855-f2c6-49b5-ac79-96dcac785579
 keywords:
 - COM interfaces WDK print , creating plug-ins
 - plug-ins WDK print , creating
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

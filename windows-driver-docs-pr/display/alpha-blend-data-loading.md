@@ -5,7 +5,7 @@ ms.assetid: d61fbb07-a6b0-4623-bb5b-1c1218f570ae
 keywords:
 - alpha-blend data loading WDK DirectX VA
 - blended pictures WDK DirectX VA , alpha-blend data loading
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ ms.assetid: 718682a5-4f64-47f3-9b92-88f89c1f7516
 keywords:
 - functions WDK print
 - print monitors WDK , functions
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

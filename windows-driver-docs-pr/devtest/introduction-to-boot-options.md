@@ -6,7 +6,7 @@ keywords:
 - boot options WDK , about boot options
 - storing boot options
 - boot loaders WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

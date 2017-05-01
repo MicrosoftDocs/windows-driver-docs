@@ -5,7 +5,7 @@ description: The IPrintTicketProvider GetPrintCapabilities routine must return a
 ms.assetid: 9c9bd387-5ea2-4758-a967-190a711cd8c3
 keywords:
 - GetPrintCapabilities
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -11,7 +11,7 @@ keywords:
 - interfaces WDK audio
 - built-in port drivers WDK audio
 - stream interfaces WDK audio
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

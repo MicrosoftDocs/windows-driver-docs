@@ -2,7 +2,7 @@
 title: Standardized INF Keywords for Power Management
 description: Standardized INF Keywords for Power Management
 ms.assetid: bec8dd96-f64a-40eb-ade9-73c9a66a756e
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

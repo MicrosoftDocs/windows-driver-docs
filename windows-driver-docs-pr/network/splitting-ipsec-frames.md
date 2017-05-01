@@ -5,7 +5,7 @@ ms.assetid: 2d6841f2-6eb6-4c59-80fb-5c777fa2bf56
 keywords:
 - Ethernet frame splitting WDK networking , IPsec frames
 - IPsec frame splitting WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

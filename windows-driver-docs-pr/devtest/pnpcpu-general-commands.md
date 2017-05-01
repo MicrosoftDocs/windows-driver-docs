@@ -4,7 +4,7 @@ description: PNPCPU General Commands
 ms.assetid: 8b98149c-6c5a-4c1f-b988-dce86bdc3e29
 keywords:
 - PNPCPU WDK , commands
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

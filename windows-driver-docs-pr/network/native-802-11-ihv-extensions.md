@@ -10,7 +10,7 @@ keywords:
 - WLAN networks WDK , IHV extensions
 - IHV extensions WDK Native 802.11 , adding functionality
 - Native 802.11 IHV Extensions WDK , adding functionality
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

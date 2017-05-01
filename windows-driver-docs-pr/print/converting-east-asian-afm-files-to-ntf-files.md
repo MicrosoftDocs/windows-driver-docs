@@ -17,7 +17,7 @@ keywords:
 - Chinese Traditional font support WDK print
 - Japanese font support WDK
 - Korean font support WDK print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

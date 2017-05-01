@@ -6,7 +6,7 @@ ms.assetid: 1c0dace6-b618-4705-bf5d-65457d14c072
 keywords:
 - BDA minidrivers WDK AVStream , automation tables
 - automation tables WDK AVStream
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -6,7 +6,7 @@ keywords:
 - filter drivers WDK networking , unloading
 - NDIS filter drivers WDK , unloading
 - unloading filter drivers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

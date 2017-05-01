@@ -3,7 +3,7 @@ title: Pre- and Post-Processing of CDBs and Sense Codes
 author: windows-driver-content
 description: Pre- and Post-Processing of CDBs and Sense Codes
 ms.assetid: c2af23b6-5807-4701-956e-5a2781d2082d
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

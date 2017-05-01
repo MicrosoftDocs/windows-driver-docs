@@ -5,7 +5,7 @@ ms.assetid: 2c588276-88c3-42e4-9f73-50a05e31c451
 keywords:
 - input buffers WDK DirectX VA
 - deinterlacing WDK DirectX VA , input buffer order
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

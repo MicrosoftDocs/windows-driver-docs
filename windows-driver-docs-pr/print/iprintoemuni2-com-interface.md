@@ -5,7 +5,7 @@ description: IPrintOemUni2 COM Interface
 ms.assetid: 7dabc133-a77c-43af-9171-1195fcaf3162
 keywords:
 - IPrintOemUni2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: TraceLogging API
 description: TraceLogging API
 ms.assetid: AE93DD45-05D7-4E7A-B086-B40A6FA0904B
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

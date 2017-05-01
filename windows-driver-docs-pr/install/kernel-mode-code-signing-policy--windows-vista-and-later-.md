@@ -11,7 +11,7 @@ keywords:
 - kernel-mode driver signing WDK
 - driver package digital signatures WDK
 - package digital signatures WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -96,7 +96,7 @@ In addition to driver code signing, you also need to meet the PnP device install
 
 * [Installing an Unsigned Driver Package during Development and Test](installing-an-unsigned-driver-during-development-and-test.md)
 * [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md)
-* [Signing Drivers during Development and Test](signing-drivers-during-development-and-test--windows-vista-and-later-.md)
+* [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md)
 * [Digital Signatures for Kernel Modules on Windows](http://go.microsoft.com/fwlink/p/?linkid=184997)
 * [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md)
 

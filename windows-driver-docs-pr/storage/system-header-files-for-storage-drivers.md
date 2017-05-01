@@ -6,7 +6,7 @@ ms.assetid: 2ee83fa4-41df-403e-86b8-b269f5dfbfed
 keywords:
 - storage drivers WDK , system header files
 - header files WDK storage
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

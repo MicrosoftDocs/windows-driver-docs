@@ -10,7 +10,7 @@ keywords:
 - audio drivers WDK , version numbers
 - driver version numbers WDK audio
 - INF DriverVer Directive
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -2,7 +2,7 @@
 title: Static Creation of a NIC Switch
 description: Static Creation of a NIC Switch
 ms.assetid: F325B1F8-7655-4044-AF04-32B434574082
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

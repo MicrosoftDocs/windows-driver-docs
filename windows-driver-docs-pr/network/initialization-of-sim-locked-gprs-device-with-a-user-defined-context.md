@@ -2,7 +2,7 @@
 title: Initializing a SIM-locked GPRS device (user-defined context)
 description: Initialization of SIM-Locked GPRS Device with a User-Defined Context
 ms.assetid: 655b7789-ffea-459c-9489-5c2f565b77ee
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

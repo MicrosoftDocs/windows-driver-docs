@@ -4,7 +4,7 @@ description: CM_PROB_FAILED_DRIVER_ENTRY
 ms.assetid: e1345892-69db-4135-be5b-1d182a2a1d66
 keywords:
 - CM_PROB_FAILED_DRIVER_ENTRY
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

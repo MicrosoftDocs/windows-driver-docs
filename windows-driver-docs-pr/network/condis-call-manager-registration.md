@@ -5,7 +5,7 @@ ms.assetid: 63cde3d1-122c-4411-91b6-97e97bdd2df3
 keywords:
 - call managers WDK networking , CoNDIS
 - registering call managers
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

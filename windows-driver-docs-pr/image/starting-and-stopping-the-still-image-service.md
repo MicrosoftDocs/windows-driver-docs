@@ -3,7 +3,7 @@ title: Starting and Stopping the Still Image Service
 author: windows-driver-content
 description: Starting and Stopping the Still Image Service
 ms.assetid: 52770566-1d03-4ae8-9925-240fffcc5f57
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

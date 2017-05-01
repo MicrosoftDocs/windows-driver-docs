@@ -2,7 +2,7 @@
 title: Driver Distribution
 description: Driver Distribution
 ms.assetid: 39cb27bc-9c31-4943-85ae-e2a5c96815d1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

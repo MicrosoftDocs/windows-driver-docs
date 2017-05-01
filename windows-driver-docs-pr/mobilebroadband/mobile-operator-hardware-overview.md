@@ -2,7 +2,7 @@
 title: Mobile operator hardware overview
 description: Mobile operator hardware overview
 ms.assetid: b2322972-16be-443f-b46a-7834b4d7ead0
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

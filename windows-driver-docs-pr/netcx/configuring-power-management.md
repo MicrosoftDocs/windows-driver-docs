@@ -37,7 +37,7 @@ powerCaps.EvtAdapterPreviewProtocolOffload = EvtAdapterPreviewProtocolOffload;
 NetAdapterSetPowerCapabilities(NetAdapter, &powerCaps);
 ```
 
-The client can register [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) and [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback functions to accept or reject incoming protocol offloads and wake patterns.
+The client can register [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) and [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) callback functions to accept or reject incoming protocol offloads and wake patterns. If you would like to register either of these optional callbacks, you must do so within  [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md).
 
 ## Programming Protocol Offload and Wake Patterns
 
@@ -80,4 +80,4 @@ EvtDeviceArmWakeFromS0(
 }
 ```
 
-The client uses the same mechanism to iterate through protocol offloads.
+The client uses the same mechanism to iterate through protocol offloads, using [**NetPowerSettingsGetProtocolOffloadCount**](netpowersettingsgetprotocoloffloadcount.md), [**NetPowerSettingsGetProtocolOffload**](netpowersettingsgetprotocoloffload.md) and [**NetPowerSettingsIsProtocolOffloadEnabled**](netpowersettingsisprotocoloffloadenabled.md).

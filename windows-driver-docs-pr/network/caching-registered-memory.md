@@ -10,7 +10,7 @@ keywords:
 - local access registered memory caching WDK SANs
 - remote access registered memory caching WDK SANs
 - memory WDK SANs
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

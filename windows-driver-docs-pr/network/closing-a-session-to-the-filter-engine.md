@@ -7,7 +7,7 @@ keywords:
 - callout drivers WDK Windows Filtering Platform , closing sessions
 - filter engine WDK Windows Filtering Platform
 - closing filter engine sessions WDK Windows Filtering Platform
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

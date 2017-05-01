@@ -6,7 +6,7 @@ ms.assetid: 9ac3aedb-e057-4e19-9de5-709311072b09
 keywords:
 - contexts WDK file system minifilter , referencing
 - referencing contexts
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -8,11 +8,11 @@ For general information about WDF, please review the [WDF Driver Development Gui
 
 ## Compilation settings
 
-Open your existing driver project in Visual Studio and use the following steps to convert it to a KMDF project.
+Open your existing NDIS miniport driver project in Visual Studio and use the following steps to convert it to a KMDF project.
 
 1. First, navigate to **Configuration Properties->Driver Settings->Driver Model** and verify that **Type of driver** is set to KMDF, and that **KMDF Version Major** and **KMDF Version Minor** are both empty.
-2. In project properties, open **Linker->Input->Additional Dependencies** and add NetAdapterCxStub.lib (located in `Windows Kits\10\Lib\<latest_windows_version>\km\<architecture>\netadaptercx\1.0`).
-    * If your existing driver calls NDIS APIs, link against `ndis.lib`.
+2. In project properties, open **Driver Settings->Network Adapter Driver** and set **Link to the Network Adapter Class Extension** to **Yes**.
+    * If your converted driver will still call NDIS APIs, continue to link against `ndis.lib`.
 3. Remove NDIS preprocessor macros, like NDIS650_MINIPORT=1.
 4. Add the following headers to every source file (or to your common/precompiled header):
 ```cpp
@@ -22,14 +22,29 @@ Open your existing driver project in Visual Studio and use the following steps t
 ```
 5. Add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
 
-Finally, add [standard WDF decorations](../wdf/specifying-wdf-directives-in-inf-files.md) to your INF:
-
 ```Inf
 [Yourdriver.Wdf]
 KmdfService = Yourdriverservice, Yourdriver.wdfsect
 
 [Yourdriver.wdfsect]
 KmdfLibraryVersion = <insert here>
+```
+
+6. Add new required networking keywords to the NT section of your INF.
+
+```cpp
+[Device.NT]
+CopyFiles=Drivers_Dir
+; Existing network keywords
+*IfType             = 6
+*MediaType          = 0
+*PhysicalMediaType  = 14
+; New network keywords
+*IfConnectorPresent = 0 ; BOOLEAN
+*ConnectionType     = 1 ; NET_IF_CONNECTION_TYPE
+*DirectionType      = 0 ; NET_IF_DIRECTION_TYPE
+*AccessType         = 2 ; NET_IF_ACCESS_TYPE
+*HardwareLoopback   = 0 ; BOOLEAN
 ```
 
 ## Driver initialization
@@ -126,7 +141,7 @@ The data path programming model has changed significantly. Here are some key dif
 * Instead of NET_BUFFER_LIST and NET_BUFFER pools, NetAdapterCx introduces a ring buffer that is comprised of net packets, which map to NDIS as follows:
     * A [**NET_PACKET**](net-packet.md) is similar to a NET_BUFFER_LIST + NET_BUFFER.
     * A [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) is similar to a memory descriptor list (MDL). Each [**NET_PACKET**](net-packet.md) has one or more of these.
-    * For details on the replacement structures and how to use them, see [Handling I/O Requests](handling-i-o-requests.md).
+    * For details on the replacement structures and how to use them, see [Transferring Network Data](transferring-network-data.md).
 * In NDIS 6.x, the miniport needs to handle start and pause semantics.  In the NetAdapterCx model, this is no longer the case.
 * The [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) callback is similar to [**MINIPORT_RETURN_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559437) in NDIS 6.x.
 * The [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) callback is similar to [**MINIPORT_SEND_NET_BUFFER_LISTS**](https://msdn.microsoft.com/library/windows/hardware/ff559440) in NDIS 6.x.

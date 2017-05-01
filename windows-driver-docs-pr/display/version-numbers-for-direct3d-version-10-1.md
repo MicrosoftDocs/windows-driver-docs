@@ -6,7 +6,7 @@ keywords:
 - Direct3D version 10.1 WDK display , version numbers
 - version numbers WDK display
 - version numbers WDK display , Direct3D version 10.1
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

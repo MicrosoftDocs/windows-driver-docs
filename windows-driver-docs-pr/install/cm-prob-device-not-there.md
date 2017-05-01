@@ -4,7 +4,7 @@ description: CM_PROB_DEVICE_NOT_THERE
 ms.assetid: 843afcc0-30ca-42f8-8c9b-3c4a56ec019d
 keywords:
 - CM_PROB_DEVICE_NOT_THERE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

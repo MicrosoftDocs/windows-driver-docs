@@ -5,7 +5,7 @@ ms.assetid: 5e2dd363-9e72-4674-940e-8b4f06f6eb14
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , GetDriverInfo2
 - GetDriverInfo2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

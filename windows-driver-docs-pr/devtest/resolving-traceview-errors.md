@@ -5,7 +5,7 @@ ms.assetid: 4849e0b6-5dc9-4666-b1ca-ec89cb94bed0
 keywords:
 - TraceView WDK , errors
 - errors WDK TraceView
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -3,7 +3,7 @@ title: LDAP Search for PSPs
 author: windows-driver-content
 description: LDAP Search for PSPs
 ms.assetid: c93b0c0f-eb46-4740-a5af-6a1ccaa6ccf9
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -12,7 +12,7 @@ keywords:
 - advertising services WDK Bluetooth
 - services advertising WDK Bluetooth
 - SdpCreateNodeTree
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

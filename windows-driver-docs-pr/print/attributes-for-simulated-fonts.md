@@ -6,7 +6,7 @@ ms.assetid: 000f3c30-2e8a-41b7-ac06-6f2da550ac70
 keywords:
 - simulated font attributes WDK Unidrv
 - font attributes WDK Unidrv
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

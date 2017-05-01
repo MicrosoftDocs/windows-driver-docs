@@ -2,7 +2,7 @@
 title: Update the hotspot authentication sample
 description: Update the hotspot authentication sample
 ms.assetid: 68ebcdee-7b21-4177-b032-ba725ad2aee4
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

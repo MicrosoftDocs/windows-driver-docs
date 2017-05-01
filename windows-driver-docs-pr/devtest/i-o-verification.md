@@ -6,7 +6,7 @@ keywords:
 - I/O Verification feature WDK Driver Verifier
 - Level 1 I/O Verification WDK Driver Verifier
 - Level 2 I/O Verification WDK Driver Verifier
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

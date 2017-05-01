@@ -8,7 +8,7 @@ keywords:
 - adapters WDK networking , Plug and Play event notifications
 - MiniportDevicePnPEventNotify
 - events WDK networking
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

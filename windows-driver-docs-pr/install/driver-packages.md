@@ -2,7 +2,7 @@
 title: Driver Packages
 description: Driver Packages
 ms.assetid: e602c0c9-28eb-48bc-8a62-02f33b0c393a
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

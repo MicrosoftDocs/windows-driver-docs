@@ -5,7 +5,7 @@ ms.assetid: d36e041f-efa5-450f-b4de-c84c4880e44d
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

@@ -4,7 +4,7 @@ description: First Part of Macroblock Control Command Structure
 ms.assetid: b282adac-3bf3-4477-a817-371d37b174a5
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

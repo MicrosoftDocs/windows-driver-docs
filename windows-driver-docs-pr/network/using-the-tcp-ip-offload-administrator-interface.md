@@ -7,7 +7,7 @@ keywords:
 - offload WDK TCP/IP transport , administrator interface
 - task offload WDK TCP/IP transport , administrator interface
 - connection offload WDK TCP/IP transport , administrator interface
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

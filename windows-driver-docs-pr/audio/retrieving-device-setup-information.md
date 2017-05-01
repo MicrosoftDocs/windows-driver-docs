@@ -7,7 +7,7 @@ keywords:
 - adapter drivers WDK audio , retrieving setup information
 - Port Class audio adapters WDK , retrieving setup information
 - retrieving device setup information
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

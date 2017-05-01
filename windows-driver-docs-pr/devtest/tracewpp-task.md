@@ -1,8 +1,8 @@
 ---
 title: TraceWPP task
-description: The Windows Driver Kit (WDK) provides the TraceWPP task so that you can run the tracewpp.exe tool when you build your driver using MSBuild. The tracewpp.exe tool is used to implement WPP Software Tracing.
+description: The Windows Driver Kit (WDK) provides the TraceWPP task so that you can run the tracewpp.exe tool when you build your driver using MSBuild.
 ms.assetid: 74CE1912-8D1D-417E-8B29-36B2AB0253EE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
@@ -18,9 +18,9 @@ WppEnabled is a new metadata for the ClCompile item that enables tracing for sou
 
 The WppEnabled metadata was added to the ClCompile Item because the WPP task runs on the same type of input files as the CL task, in this case .c, .cpp, and .h files.
 
-**Note**Â Â You access the Item metadata for tracewpp by using the ClCompile item in project files. MSBuild uses the TraceWpp item internally inside the target to pass it to the task.
+**Note**  You access the Item metadata for tracewpp by using the ClCompile item in project files. MSBuild uses the TraceWpp item internally inside the target to pass it to the task.
 
-Â 
+ 
 
 The following example shows how to edit the metadata in the .vcxproj file.
 
@@ -44,8 +44,8 @@ The following example shows how to edit the metadata in the .vcxproj file.
 The command-line invocation would be:
 
 ``` syntax
-tracewpp.exe â€“km /Ic:\test\b.c
-tracewpp.exe â€“dll test2.c
+tracewpp.exe –km /Ic:\test\b.c
+tracewpp.exe –dll test2.c
 ```
 
 The example above shows that MSBuild invokes **tracewpp.exe** only on b.c and test2.c because the **WppEnabled** metadata is set to **TRUE** for these inputs. Also note that the metadata for these two inputs are different. Therefore, the switches will also be different for these inputs. In other words, you can call each input with its own set of metadata.
@@ -211,7 +211,7 @@ The example above shows that MSBuild invokes **tracewpp.exe** only on b.c and te
 </tbody>
 </table>
 
-Â 
+ 
 
 ## <span id="related_topics"></span>Related topics
 
@@ -220,9 +220,9 @@ The example above shows that MSBuild invokes **tracewpp.exe** only on b.c and te
 
 [WPP Software Tracing](wpp-software-tracing.md)
 
-Â 
+ 
 
-Â 
+ 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20TraceWPP%20task%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

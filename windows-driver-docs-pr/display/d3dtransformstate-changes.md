@@ -5,7 +5,7 @@ ms.assetid: 30d895d5-c9c3-4994-a77b-ee9eeec6d8d8
 keywords:
 - multimatrix vertex blending WDK Direct3D , D3DTRANSFORMSTATE
 - D3DTRANSFORMSTATE
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

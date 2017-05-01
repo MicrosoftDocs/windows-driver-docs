@@ -2,7 +2,7 @@
 title: Test-Sign Your Driver (Legacy)
 description: Test-Sign Your Driver (Legacy)
 ms.assetid: 2abe618d-ef4d-4c8b-8a5d-4100f44f8798
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

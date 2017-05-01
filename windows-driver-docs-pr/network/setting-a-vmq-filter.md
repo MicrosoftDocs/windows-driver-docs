@@ -2,7 +2,7 @@
 title: Setting a VMQ Filter
 description: Setting a VMQ Filter
 ms.assetid: d40b6806-6ba8-4073-b802-57cb886ffcfb
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

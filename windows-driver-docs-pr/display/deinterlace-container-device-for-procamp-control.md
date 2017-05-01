@@ -6,7 +6,7 @@ keywords:
 - container device WDK DirectX VA
 - deinterlacing WDK DirectX VA , ProcAmp control
 - ProcAmp WDK DirectX VA , deinterlace container device
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

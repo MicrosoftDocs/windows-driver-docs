@@ -13,7 +13,7 @@ keywords:
 - NVRAM boot options WDK , viewing
 - EFI NVRAM boot options WDK , viewing
 - boot options WDK , editing
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

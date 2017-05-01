@@ -2,7 +2,7 @@
 title: Array Support Data Driven Test Example
 description: Array Support Data Driven Test Example
 ms.assetid: ECCDE395-C887-4485-8C8F-312EFCFD16A2
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

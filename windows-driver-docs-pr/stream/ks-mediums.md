@@ -8,7 +8,7 @@ keywords:
 - KSPIN_MEDIUM
 - kernel streaming WDK , mediums
 - KS WDK , mediums
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware

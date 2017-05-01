@@ -6,7 +6,7 @@ ms.assetid: 7ead940e-8426-4756-890f-f3607dc1f9ca
 keywords:
 - Point and Print WDK , DLLs
 - DLLs WDK Point and Print
-ms.author: windows-driver-content
+ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
