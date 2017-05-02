@@ -95,31 +95,31 @@ In this callback function, the client driver typically performs the following st
 
 3.  Return completed packets to the OS by incrementing **BeginIndex**. If the driver completes packets asynchronously in software (e.g. a USB bus completes receive requests asynchronously), use the **Completed** flag on the packet's [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to track completion.
 
-```cpp
-    while (ringBuffer->BeginIndex != ringBuffer->NextIndex)
-    {
-        NET_PACKET *netPacket =
-            NetRingBufferGetPacketAtIndex(ringBuffer, ringBuffer->BeginIndex);
-        
-        // optional: retrieve queue's packet context
-        MY_RX_PACKET_CONTEXT *packetContext = GetRxPacketContext(netPacket);
+    ```cpp
+        while (ringBuffer->BeginIndex != ringBuffer->NextIndex)
+        {
+            NET_PACKET *netPacket =
+                NetRingBufferGetPacketAtIndex(ringBuffer, ringBuffer->BeginIndex);
+            
+            // optional: retrieve queue's packet context
+            MY_RX_PACKET_CONTEXT *packetContext = GetRxPacketContext(netPacket);
 
-        // Optional: When an asynchronous send operation completes, update the
-        // Completed flag on the packet. In the Advance callback, return each
-        // packet starting at BeginIndex until a packet not marked as Completed
-        // is reached, or EndIndex is reached. Packets must be returned
-        // sequentially, so indication must stop as soon as the first
-        // non-Completed packet is reached.
-        //
-        // The Completed flag is not used by the OS, so the device is free to
-        // use this flag.
-        if (!netPacket->Data.Completed)
-            break;
+            // Optional: When an asynchronous send operation completes, update the
+            // Completed flag on the packet. In the Advance callback, return each
+            // packet starting at BeginIndex until a packet not marked as Completed
+            // is reached, or EndIndex is reached. Packets must be returned
+            // sequentially, so indication must stop as soon as the first
+            // non-Completed packet is reached.
+            //
+            // The Completed flag is not used by the OS, so the device is free to
+            // use this flag.
+            if (!netPacket->Data.Completed)
+                break;
 
-        RingBuffer->BeginIndex =
-            NetRingBufferIncrementIndex(RingBuffer, RingBuffer->BeginIndex);
-    }
-```
+            RingBuffer->BeginIndex =
+                NetRingBufferIncrementIndex(RingBuffer, RingBuffer->BeginIndex);
+        }
+    ```
 
 NetAdapterCx serializes this callback function along with the receive queue's [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md) and [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) callback functions.
 
