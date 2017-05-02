@@ -106,9 +106,9 @@ Here is a typical sequence for a PCI device driver:
 
 While a client driver that targets a device with an asynchronous I/O model such as USB can also modify the [**NET_RING_BUFFER**](net-ring-buffer.md) indices directly, we recommend instead using  higher level routines to manage out of order completions:
 
-* [NetRingBufferAdvanceNextPacket method](netringbufferadvancenextpacket.md)
-* [NetRingBufferGetNextPacket method](netringbuffergetnextpacket.md)
-* [NetRingBufferReturnCompletedPackets method](netringbufferreturncompletedpackets.md)
+* [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md)
+* [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md)
+* [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md)
 
 Here is a typical sequence for a device driver with asynchronous I/O:
 
@@ -117,6 +117,6 @@ Here is a typical sequence for a device driver with asynchronous I/O:
     1. Call [**NetRingBufferGetNextPacket**](netringbuffergetnextpacket.md).
     2. Program hardware to receive or transmit.  This initiates the asynchronous I/O.
     3. Call [**NetRingBufferAdvanceNextPacket**](netringbufferadvancenextpacket.md).
-3. Call [NetRingBufferReturnCompletedPackets method](netringbufferreturncompletedpackets.md).
+3. Call [**NetRingBufferReturnCompletedPackets**](netringbufferreturncompletedpackets.md).
 
 As asynchronous I/O completions come in, the client sets the **Completed** flag of the associated [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to **TRUE**.  This enables [**NetRingBufferReturnCompletedPackets**](NetRingBufferReturnCompletedPackets.md) to complete packets.
