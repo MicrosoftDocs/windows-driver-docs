@@ -12,7 +12,6 @@ api_type:
 
 # EVT_TXQUEUE_CANCEL callback function
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Implemented by the client driver to handle operations that must be performed before a transmit queue is deleted.
@@ -23,7 +22,7 @@ Syntax
 ```cpp
 EVT_TXQUEUE_CANCEL EvtTxqueueCancel;
 
-void EvtTxqueueCancel(
+void EvtTxQueueCancel(
   _In_ NETTXQUEUE TxQueue
 )
 { ... }
@@ -31,13 +30,13 @@ void EvtTxqueueCancel(
 typedef EVT_TXQUEUE_CANCEL PFN_TXQUEUE_CANCEL;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET_TXQUEUE_CONFIG**](net-txqueue-config.md) and then calling [**NetTxQueueCreate**](nettxqueuecreate.md).
+Register this callback function in [**NET_TXQUEUE_CONFIG_INIT**](net-txqueue-config-init.md) before calling [**NetTxQueueCreate**](nettxqueuecreate.md).
 
 Parameters
 ----------
 
 *TxQueue* [in]  
-A NETTXQUEUE object.
+A handle to a net transmit queue.
 
 Return value
 ------------
@@ -47,9 +46,13 @@ This callback function does not return a value.
 Remarks
 -------
 
-NetAdapterCx calls this event callback function when the queue is being deleted. *EVT_TXQUEUE_CANCEL* is the final **EVT_TXQUEUE_*Xxx*** callback that NetAdapterCx calls.
+In its *EVT_TXQUEUE_CANCEL* callback function, the client has an opportunity to complete any outstanding transmit packets.  Unlike with [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md), the client is not required to do so.  If the client leaves outstanding packets, NetAdapterCx calls the client's [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md), where the client processes them as part of its regular operation.
 
-In this callback, the client typically completes pending packets and cleans up client specific context data associated with this NETTXQUEUE object.
+If the hardware supports cancelling in-flight transmits, the client should also advance the ring buffer's **BeginIndex** past all cancelled packets.  If the hardware does not support cancellation, this callback can return without taking action.
+
+NetAdapterCx serializes this callback function along with the receive queue's [*EVT_TXQUEUE_ADVANCE*](evt-rxqueue-advance.md) and [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) callback functions.
+
+For more info about ring buffer usage, see [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) and [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------
@@ -74,7 +77,7 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
-<td align="left">Nettxqueue.h</td>
+<td align="left">NetTxQueue.h</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>IRQL</p></td>

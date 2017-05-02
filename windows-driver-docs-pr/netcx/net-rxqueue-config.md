@@ -12,7 +12,6 @@ api_type:
 
 # NET_RXQUEUE_CONFIG structure
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Describes the configuration options for a NetAdapterCx client driver's receive queue.
@@ -51,10 +50,10 @@ A pointer to the client driver's [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md)
 A pointer to a [**WDF_OBJECT_CONTEXT_TYPE_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552407) structure.
 
 **AllocationSize**  
-Size of the DMA common buffer. If the driver provides a non-zero value, it must subsequently call [**NetRxQueueConfigureDmaAllocator**](netrxqueueconfiguredmaallocator.md). If this value is zero, the client must update the NET_PACKET.Data.DmaLogicalAddress field manually to point to the memory it allocated.
+Size of each receive buffer.  If non-zero, NetAdapterCx allocates receive buffers for each packet in the queue's ring buffer.  If the client called [**NetRxQueueConfigureDmaAllocator**](netrxqueueconfiguredmaallocator.md), the receive buffers are pre-mapped for the device.  If zero, the client provides a receive buffer for each receive fragment.
 
 **AlignmentRequirement**  
-The alignment requirement for a data buffer. This value must be one less than the alignment boundary. For example, you can specify 15 for a 16-byte alignment boundary and 31 for a 32-byte alignment boundary. You can also use one of the FILE_Xxxx_ALIGNMENT constants that are defined in Wdm.h.
+The alignment requirement, in bytes, for each receive buffer.  This value must be one less than the alignment boundary.  For example, specify 15 for a 16-byte alignment boundary.  You can also use one of the FILE_Xxxx_ALIGNMENT constants that are defined in Wdm.h.  If unspecified, **AlignmentRequirement** defaults to the value returned by [**WdfDeviceGetAlignmentRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff545953) for the adapter's associated device object.
 
 Remarks
 -------

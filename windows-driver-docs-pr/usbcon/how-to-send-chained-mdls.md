@@ -31,8 +31,6 @@ You can query for the chained MDL capability in the client driver's [**IRP\_MN\_
 Instructions
 ------------
 
-### []()
-
 1.  Call the [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) routine to determine whether the USB driver stack supports the chained MDLs capability. To query for that capability, specify UsbCapabilityChainedMdls as the GUID. Set the *OutputBuffer* parameter to NULL and *OutputBufferSize* parameter to 0.
 2.  Check the NTSTATUS value returned by [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) and evaluate the result. If the routine completes successfully, the chained MDLs capability is supported. Any other value indicates that the capability is not supported.
 3.  Create the chain of MDLs. Each [**MDL**](https://msdn.microsoft.com/library/windows/hardware/ff554414) has a **Next** pointer that points to another **MDL**.

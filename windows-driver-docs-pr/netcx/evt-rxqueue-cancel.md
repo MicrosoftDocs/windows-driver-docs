@@ -21,9 +21,9 @@ Syntax
 ------
 
 ```cpp
-EVT_RXQUEUE_CANCEL EvtRxqueueCancel;
+EVT_RXQUEUE_CANCEL EvtRxQueueCancel;
 
-void EvtRxqueueCancel(
+void EvtRxQueueCancel(
   _In_ NETRXQUEUE RxQueue
 )
 { ... }
@@ -31,13 +31,13 @@ void EvtRxqueueCancel(
 typedef EVT_RXQUEUE_CANCEL PFN_RXQUEUE_CANCEL;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md) and then calling [**NetRxQueueCreate**](netrxqueuecreate.md).
+Register this callback function in [**NET_RXQUEUE_CONFIG_INIT**](net-rxqueue-config-init.md) before calling [**NetRxQueueCreate**](netrxqueuecreate.md).
 
 Parameters
 ----------
 
 *RxQueue* [in]  
-A NETRXQUEUE object.
+A handle to a net receive queue.
 
 Return value
 ------------
@@ -47,9 +47,7 @@ This callback function does not return a value.
 Example
 -----
 
-Consider a simple example in which we have not provided buffers to any hardware.  In this case, it's safe to immediately return all the buffers to the host in the cancellation handler.
-
-The fastest way to do that is to adjust the [*NET_RING_BUFFER*](net-ring-buffer.md) pointers like this:
+In its *EVT_RXQUEUE_CANCEL* callback function, the client must complete any outstanding receive packets.  If the client does not return all packets, the operating system might be delayed deleting the queue.  To do so, the client advances the ring buffer's **BeginIndex** and **NextIndex** indices to **EndIndex**.
 
 ```cpp
 VOID
@@ -61,12 +59,12 @@ EvtRxQueueCancel(NETRXQUEUE RxQueue)
 }
 ```
 
+For additional example code demonstrating ring buffer usage, see [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
+
 Remarks
 -------
 
-NetAdapterCx calls this event callback function when the queue is being deleted. *EVT_RXQUEUE_CANCEL* is the final **EVT_RXQUEUE_*Xxx*** callback that NetAdapterCx calls before deleting the queue.
-
-In this callback, the client typically completes pending packets and cleans up client specific context data associated with this NETRXQUEUE object.
+NetAdapterCx serializes this callback function along with the receive queue's [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) and [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) callback functions.
 
 Requirements
 ------------
@@ -99,12 +97,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-
