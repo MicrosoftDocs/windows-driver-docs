@@ -81,15 +81,12 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
     ![screenshot that shows targeting section and pnps](images/publish-targeting-windows-update.png)
 
-7.  If you want to add Computer Hardware IDs (CHIDs), enter each CHID into the text box and select **Add CHID(s)**. To bulk add multiple CHIDs, ensure that each CHID is separated by a newline, select **Add multiple CHIDs**, and paste your CHIDs into the text box. You can view all added CHIDs in the list below the text box.
+7.  If you want to add Computer Hardware IDs (CHIDs), enter each CHID into the text box and select **Add CHID(s)**. To bulk add multiple CHIDs, ensure that each CHID is separated by a newline, select **Add multiple CHIDs**, and paste your CHIDs into the text box. You can view all added CHIDs in the list below the text box. To remove a CHID from the list, select **Remove**
 
-    To remove a CHID from the list, select **Remove**
-
-    > [!NOTE]
-    > If you are publishing for Windows 10 S, you must select both check boxes acknowledging that your driver is compatible with Windows 10 S systems, and follows the policies outlined in the Windows 10 S Engineering Guide.
+8. If you are publishing for Windows 10 S, you must select both check boxes acknowledging that your driver is compatible with Windows 10 S systems, and follows the policies outlined in the Windows 10 S Engineering Guide.
     ![A screenshot of the two checkboxes you must select when submitting a driver for Windows 10 S](images/win-cloud-checkboxes.png)
 
-8.  Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
+9.  Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
 
  
 
