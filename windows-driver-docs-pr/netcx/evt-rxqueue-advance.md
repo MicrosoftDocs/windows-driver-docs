@@ -49,51 +49,51 @@ Remarks
 
 In this callback function, the client driver typically performs the following steps:
 
-1.  Call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) to retrieve the ring buffer handle associated with the *RxQueue* handle.
-2.  Program packets returned by the OS to hardware. The returned packet window is all packets between NextIndex and EndIndex.
-    1.  Iterate until NextIndex matches EndIndex, or the hardware stops accepting new descriptors.
-    2.  Call [**NetRingBufferGetPacketAtIndex**](netringbuffergetpacketatindex.md) to retrieve the packet at NextIndex.
+1.  Call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md) to retrieve the ring buffer handle associated with the receive queue.
+2.  Program packets returned by the OS to hardware. The window includes packets starting from **NextIndex** up until **EndIndex**.
+    1.  Iterate until **NextIndex** matches **EndIndex**, or the hardware stops accepting new descriptors.
+    2.  Call [**NetRingBufferGetPacketAtIndex**](netringbuffergetpacketatindex.md) to retrieve the packet at **NextIndex**.
     3.  Free any resources associated with the packet that may have been allocated the last time the descriptor was handed to the OS.
     4.  Program the packet to the associated hardware receive queue.
-    5.  Advance NextIndex by calling [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md). `NetRingBufferIncrementIndex` will handle ring buffer wrap around.
-
-```cpp
-VOID
-EvtRxQueueAdvance(NETRXQUEUE RxQueue)
-{
-    // optional: retrieve queue's WDF context
-    MY_RX_QUEUE_CONTEXT *rxContext = GetRxQueueContext(RxQueue);
-
-    // tip: store a reference to RingBuffer in the receive context to reduce
-    // calls out of driver.
-    NET_RING_BUFFER *ringBuffer = NetRxQueueGetRingBuffer(RxQueue);
-
-    // move returned packet descriptors back to the hardware queue
-    while (ringBuffer->NextIndex != ringBuffer->EndIndex)
+    5.  Call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md) to advance **NextIndex**.  This routine handles ring buffer wrap around.
+  
+    ```cpp
+    VOID
+    EvtRxQueueAdvance(NETRXQUEUE RxQueue)
     {
-        NET_PACKET *netPacket =
-            NetRingBufferGetPacketAtIndex(ringBuffer, ringBuffer->NextIndex);
+        // optional: retrieve queue's WDF context
+        MY_RX_QUEUE_CONTEXT *rxContext = GetRxQueueContext(RxQueue);
 
-        // optional: retrieve queue's packet context
-        MY_RX_PACKET_CONTEXT *packetContext = GetRxPacketContext(netPacket);
+        // tip: store a reference to RingBuffer in the receive context to reduce
+        // calls out of driver.
+        NET_RING_BUFFER *ringBuffer = NetRxQueueGetRingBuffer(RxQueue);
 
-        // free resources associated with the packet
+        // move returned packet descriptors back to the hardware queue
+        while (ringBuffer->NextIndex != ringBuffer->EndIndex)
+        {
+            NET_PACKET *netPacket =
+                NetRingBufferGetPacketAtIndex(ringBuffer, ringBuffer->NextIndex);
+
+            // optional: retrieve queue's packet context
+            MY_RX_PACKET_CONTEXT *packetContext = GetRxPacketContext(netPacket);
+
+            // free resources associated with the packet
+            ...
+
+            // program netPacket to hardware
+            ...
+
+            // return the packet to the available descriptor queue
+            RingBuffer->NextIndex =
+                NetRingBufferIncrementIndex(ringBuffer, ringBuffer->NextIndex);
+        }
+
+        // Indicate received packets (see below)
         ...
-
-        // program netPacket to hardware
-        ...
-
-        // return the packet to the available descriptor queue
-        RingBuffer->NextIndex =
-            NetRingBufferIncrementIndex(ringBuffer, ringBuffer->NextIndex);
     }
+    ```
 
-    // Indicate received packets (see below)
-    ...
-}
-```
-
-4.  Indicate received packets to the OS by advancing `BeginIndex` past each descriptor that the hardware indicates has received packets. If the driver completes packets asynchronously in software (e.g. a USB bus completes receive requests asynchronously), then use the `Completed` flag on the packet's [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to track completion.
+3.  Return completed packets to the OS by incrementing **BeginIndex**. If the driver completes packets asynchronously in software (e.g. a USB bus completes receive requests asynchronously), use the **Completed** flag on the packet's [**NET_PACKET_FRAGMENT**](net-packet-fragment.md) to track completion.
 
 ```cpp
     while (ringBuffer->BeginIndex != ringBuffer->NextIndex)
@@ -112,7 +112,7 @@ EvtRxQueueAdvance(NETRXQUEUE RxQueue)
         // non-Completed packet is reached.
         //
         // The Completed flag is not used by the OS, so the device is free to
-        // use this flag is it sees fit.
+        // use this flag.
         if (!netPacket->Data.Completed)
             break;
 
@@ -121,7 +121,9 @@ EvtRxQueueAdvance(NETRXQUEUE RxQueue)
     }
 ```
 
-`EvtRxQueueAdvance` is serialized by NetAdapter with the queue's [**EvtRxQueueCancel**](evt-rxqueue-cancel.md) and [**EvtRxQueueSetNotificationEnabled**](evt-rxqueue-set-notification-enabled.md) callbacks.
+NetAdapterCx serializes this callback function along with the receive queue's [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md) and [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) callback functions.
+
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

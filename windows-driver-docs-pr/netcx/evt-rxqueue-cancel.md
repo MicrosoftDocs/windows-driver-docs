@@ -47,9 +47,7 @@ This callback function does not return a value.
 Example
 -----
 
-EvtRxQueueCancel is called to request that the adapter terminate any outstanding receive operations. Unlike for EvtTxQueueCancel, the receive queue *must* use this opportunity to return any outstanding buffers to the OS. For more information on operating the ring buffer, see [**EvtRxQueueAdvance**](evt-rxqueue-advance.md).
-
-Typically, this involves advancing `BeginIndex` and `NextIndex` to `EndIndex`. If the receive queue does not return all packets in Cancel, this can result in a stuck queue.
+In its *EVT_RXQUEUE_CANCEL* callback function, the client must complete any outstanding receive packets.  If the client does not return all packets, the operating system might be delayed deleting the queue.  To do so, the client advances the ring buffer's **BeginIndex** and **NextIndex** indices to **EndIndex**.
 
 ```cpp
 VOID
@@ -61,12 +59,12 @@ EvtRxQueueCancel(NETRXQUEUE RxQueue)
 }
 ```
 
+For additional example code demonstrating ring buffer usage, see [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
+
 Remarks
 -------
 
-`EvtRxQueueCancel` is called to wind down the receive queue. Use the cancel callback to return all packets to the OS so the OS can destroy the queue.
-
-`EvtRxQueueCencel` is serialized by NetAdapter with the queue's [**EvtRxQueueAdvance**](evt-rxqueue-advance.md) and [**EvtRxQueueSetNotificationEnabled**](evt-rxqueue-set-notification-enabled.md) callbacks.
+NetAdapterCx serializes this callback function along with the receive queue's [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) and [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) callback functions.
 
 Requirements
 ------------
@@ -99,12 +97,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-

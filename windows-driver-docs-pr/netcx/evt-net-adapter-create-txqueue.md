@@ -55,7 +55,9 @@ The **NETTXQUEUE_INIT** structure is an opaque structure that is defined and all
 
 In this callback, the client driver typically calls [**NetTxQueueInitGetQueueId**](nettxqueueinitgetqueueid.md) with *NetTxQueueInit* to retrieve the identifier of the transmit queue to set up.
 
-The driver should attempt to allocate a queue by calling [**NetTxQueueCreate**](nettxqueuecreate.md). If the driver is unable to allocate a queue, it should return a failure NTSTATUS code. After the queue is created, its ring buffer can be retrieved via [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md).
+Next, the client calls [**NetTxQueueCreate**](nettxqueuecreate.md) to allocate a queue.  If [**NetTxQueueCreate**](nettxqueuecreate.md) fails, the *EVT_NET_ADAPTER_CREATE_TXQUEUE* callback function should return an error code.
+
+To retrieve the ring buffer associated with a given queue, call [**NetTxQueueGetRingBuffer**](nettxqueuegetringbuffer.md).
 
 Requirements
 ------------

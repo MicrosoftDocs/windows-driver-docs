@@ -41,33 +41,31 @@ Parameters
 A handle to a net transmit queue.
 
 *NotificationEnabled* [in]  
-`TRUE` requests that the client enable its transmit queue's notification. `FALSE` requests the client disable its transmit queue's notification.
+A value of **TRUE** requests that the client enable transmit queue notification.  A value of **FALSE** requests that the client disable transmit queue notification.
 
 Return value
 ------------
 
-If the operation is successful, the callback function must return `STATUS_SUCCESS`. Otherwise, it should return an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
+If the operation is successful, the callback function must return STATUS_SUCCESS. Otherwise, it should return an appropriate [NTSTATUS](https://msdn.microsoft.com/library/windows/hardware/ff557697) error code.
 
 Remarks
 -------
 
-If *NotificationEnabled* is `TRUE`, the client should enable its transmit queue's notification. If *NotificationEnabled* is `FALSE`, the client should disable its transmit queue's notification.
+For a PCI NIC, enabling transmit queue notification typically means enabling the transmit queue's hardware interrupt.  When the hardware interrupt fires, the client calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) from its DPC.
 
-For a PCI NIC this typically means to enable the transmit queue's hardware interrupt. When the hardware interrupt fires, it should call [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) from its DPC.
-
-The queue should only be notified at most *once* per request to enable its notification. After the queue is notified, the notification should be disabled. If the notification is disabled via *NotificationEnabled* set to `FALSE`, the queue must not be notified until the notification is re-enabled.
+NetAdapterCx calls *EVT_TXQUEUE_SET_NOTIFICATION_ENABLED* once with *NotificationEnabled* set to **TRUE**.  After the client calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md), it should turn off whatever flag it uses to track the notification status.  If NetAdapterCx calls *EVT_TXQUEUE_SET_NOTIFICATION_ENABLED* with *NotificationEnabled* set to **FALSE**, the client must not call [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) until NetAdapterCx re-enables the notification.
 
 For example:
 ```cpp
 NTSTATUS
 EvtTxQueueSetNotificationEnabled(
-    _In_ NETRXQUEUE rxQueue,
+    _In_ NETTXQUEUE rxQueue,
     _In_ BOOLEAN notificationEnabled)
 {
     // optional: retrieve queue's WDF context
-    MY_TX_QUEUE_CONTEXT *rxContext = GetTxQueueContext(RxQueue);
+    MY_TX_QUEUE_CONTEXT *txContext = GetTxQueueContext(TxQueue);
 
-    // Enable transmit queue's hardware interrupt
+    // If notificationEnabled is TRUE, enable transmit queue's hardware interrupt
     ...
 }
 
@@ -82,7 +80,7 @@ EvtInterruptDpc(
 }
 ```
 
-`EvtTxQueueSetNotificationEnabled` is serialized by NetAdapter with the queue's [**EvtTxQueueAdvance**](evt-txqueue-advance.md) and [**EvtTxQueueCancel**](evt-txqueue-cancel.md) callbacks.
+NetAdapterCx serializes this callback function along with the receive queue's [*EVT_TXQUEUE_ADVANCE*](evt-rxqueue-advance.md) and [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md) callback functions.
 
 Requirements
 ------------

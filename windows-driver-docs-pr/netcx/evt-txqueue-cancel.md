@@ -12,7 +12,6 @@ api_type:
 
 # EVT_TXQUEUE_CANCEL callback function
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Implemented by the client driver to handle operations that must be performed before a transmit queue is deleted.
@@ -47,11 +46,13 @@ This callback function does not return a value.
 Remarks
 -------
 
-EvtTxQueueCancel is called to request that the adapter terminate any outstanding transmit operations. The device driver should attempt to stop any outstanding transmit operations, but it is not required since the OS can drain the remaining transmits via the queue's `EvtTxQueueAdvance` like usual. For more information on operating the ring buffer in general, see [**EvtTxQueueAdvance**](evt-txqueue-advance.md).
+In its *EVT_TXQUEUE_CANCEL* callback function, the client has an opportunity to complete any outstanding transmit packets.  Unlike with [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md), the client is not required to do so.  If the client leaves outstanding packets, NetAdapterCx calls the client's [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md), where the client processes them as part of its regular operation.
 
-If the hardware supports cancelling in-flight transmits, the adapter should advance BeginIndex past all cancelled packets, as well. If the hardware does not support cancellation, this callback can be a no-op.
+If the hardware supports cancelling in-flight transmits, the client should also advance the ring buffer's **BeginIndex** past all cancelled packets.  If the hardware does not support cancellation, this callback can return without taking action.
 
-`EvtTxQueueCancel` is serialized by NetAdapter with the queue's [**EvtTxQueueAdvance**](evt-txqueue-advance.md) and [**EvtTxQueueSetNotificationEnabled**](evt-txqueue-set-notification-enabled.md) callbacks.
+NetAdapterCx serializes this callback function along with the receive queue's [*EVT_TXQUEUE_ADVANCE*](evt-rxqueue-advance.md) and [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) callback functions.
+
+For more info about ring buffer usage, see [*EVT_TXQUEUE_ADVANCE*](evt-txqueue-advance.md) and [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

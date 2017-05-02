@@ -55,9 +55,9 @@ The **NETRXQUEUE_INIT** structure is an opaque structure that is defined and all
 
 In this callback, the client driver might call [**NetRxQueueInitGetQueueId**](netrxqueueinitgetqueueid.md) to retrieve the identifier of the receive queue to set up.
 
-The driver should attempt to allocate a queue by calling [**NetRxQueueCreate**](netrxqueuecreate.md). If the driver is unable to allocate a queue, it should return a failure NTSTATUS code. After the queue is created, its ring buffer can be retrieved via [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
+Next, the client calls [**NetRxQueueCreate**](netrxqueuecreate.md) to allocate a queue.  If the client provides a non-zero value in the **AllocationSize** member of the [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md) structure, [**NetRxQueueCreate**](netrxqueuecreate.md) allocates the receive buffers.  The client should not use the buffers until after [**NetRxQueueCreate**](netrxqueuecreate.md) has returned.  If [**NetRxQueueCreate**](netrxqueuecreate.md) fails, the *EVT_NET_ADAPTER_CREATE_RXQUEUE* callback function should return an error code.
 
-If AllocationSize is specified, the receive buffers are not allocated until after this function returns.
+To retrieve the ring buffer associated with a given queue, call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
 
 Example
 -----
