@@ -12,7 +12,6 @@ api_type:
 
 # NetTxQueueNotifyMoreCompletedPacketsAvailable method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 The client driver calls **NetTxQueueNotifyMoreCompletedPacketsAvailable** to resume queue operations after NetAdapterCx calls the client's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine.
@@ -40,9 +39,9 @@ This method does not return a value.
 Remarks
 -------
 
-After NetAdapterCx enables a transmit queue's notification via its [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine, the client may call **NetTxQueueNotifyMoreCompletedPacketsAvailable** when the queue's notification fires. Typically, the client does this in its [*EVT_WDF_INTERRUPT_DPC*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function, after it completes a pending [**NET_PACKET**](net-packet.md) in the transmit queue’s [**NET_RING_BUFFER**](net-ring-buffer.md).
+After NetAdapterCx calls a client driver's [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) event callback routine with *NotificationEnabled* set to **TRUE**, the client enables the queue's hardware interrupt.  When the device generates a hardware interrupt, the client typically calls **NetTxQueueNotifyMoreCompletedPacketsAvailable** from its [*EVT_WDF_INTERRUPT_DPC*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function, after it completes a pending [**NET_PACKET**](net-packet.md) in the transmit queue's [**NET_RING_BUFFER**](net-ring-buffer.md).
 
-The client may notify the queue no more than once per enabling of the notification. If the notification is disabled, the client must not call **NetTxQueueNotifyMoreCompletedPacketsAvailable**.
+The client should only call **NetTxQueueNotifyMoreCompletedPacketsAvailable** once per enabling of the notification.  Do not call **NetTxQueueNotifyMoreCompletedPacketsAvailable** if NetAdapterCx calls [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) with *NotificationEnabled* set to **FALSE**.
 
 Requirements
 ------------

@@ -12,7 +12,6 @@ api_type:
 
 # NET_RXQUEUE_CONFIG structure
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Describes the configuration options for a NetAdapterCx client driver's receive queue.
@@ -51,10 +50,10 @@ A pointer to the client driver's [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md)
 A pointer to a [**WDF_OBJECT_CONTEXT_TYPE_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff552407) structure.
 
 **AllocationSize**  
-Size of each receive buffer. If the driver provides a non-zero value, receive buffers will be allocated on behalf of the client for each packet in the queue's ring buffer. If the queue provides a DMA enabler via [**NetRxQueueConfigureDmaAllocator**](netrxqueueconfiguredmaallocator.md), these receive buffers will be pre-mapped for the device. If **AllocationSize** is zero, the client must fill out each receive fragment with its own receive buffer.
+Size of each receive buffer.  If non-zero, NetAdapterCx allocates receive buffers for each packet in the queue's ring buffer.  If the client called [**NetRxQueueConfigureDmaAllocator**](netrxqueueconfiguredmaallocator.md), the receive buffers are pre-mapped for the device.  If zero, the client provides a receive buffer for each receive fragment.
 
 **AlignmentRequirement**  
-The alignment requirement for each receive buffer. This value must be one less than the alignment boundary. For example, 15 should be specified for a 16-byte alignment boundary and 31 for a 32-byte alignment boundary. You can also use one of the FILE_Xxxx_ALIGNMENT constants that are defined in Wdm.h. If unspecified, AlignmentRequirement defaults to the value returned by [**WdfDeviceGetAlignmentRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff545953) for the adapter's associated device object.
+The alignment requirement, in bytes, for each receive buffer.  This value must be one less than the alignment boundary.  For example, specify 15 for a 16-byte alignment boundary.  You can also use one of the FILE_Xxxx_ALIGNMENT constants that are defined in Wdm.h.  If unspecified, **AlignmentRequirement** defaults to the value returned by [**WdfDeviceGetAlignmentRequirement**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff545953) for the adapter's associated device object.
 
 Remarks
 -------

@@ -12,7 +12,6 @@ api_type:
 
 # EVT_RXQUEUE_SET_NOTIFICATION_ENABLED callback function
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Implemented by the client driver to enable receive queue notification for the associated device.
@@ -63,7 +62,7 @@ EvtRxQueueSetNotificationEnabled(
     // optional: retrieve queue's WDF context
     MY_RX_QUEUE_CONTEXT *rxContext = GetRxQueueContext(RxQueue);
 
-    // Enable receive queue's hardware interrupt
+    // If notificationEnabled is TRUE, enable receive queue's hardware interrupt
     ...
 }
 

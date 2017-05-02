@@ -12,7 +12,6 @@ api_type:
 
 # NetRingBufferReturnCompletedPackets method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Returns all packets that have the **Completed** flag set.

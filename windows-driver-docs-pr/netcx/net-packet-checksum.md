@@ -25,13 +25,13 @@ Members
 -------
 
 **Layer2**  
-A bit field that specifies a flag from either **NET_PACKET_TX_CHECKSUM_ACTION** or **NET_PACKET_RX_CHECKSUM_EVALUATION**. Targets the checksum field in the packet's layer 2 header.
+A bit field that specifies a flag from either **NET_PACKET_TX_CHECKSUM_ACTION** or **NET_PACKET_RX_CHECKSUM_EVALUATION**.  Targets the checksum field in the packet's layer 2 header.
 
 **Layer3**  
-A bit field that specifies a flag from either **NET_PACKET_TX_CHECKSUM_ACTION** or **NET_PACKET_RX_CHECKSUM_EVALUATION**. Targets the checksum field in the packet's layer 3 header.
+A bit field that specifies a flag from either **NET_PACKET_TX_CHECKSUM_ACTION** or **NET_PACKET_RX_CHECKSUM_EVALUATION**.  Targets the checksum field in the packet's layer 3 header.
 
 **Layer4**  
-A bit field that specifies a flag from either **NET_PACKET_TX_CHECKSUM_ACTION** or **NET_PACKET_RX_CHECKSUM_EVALUATION**. Targets the checksum field in the packet's layer 4 header.
+A bit field that specifies a flag from either **NET_PACKET_TX_CHECKSUM_ACTION** or **NET_PACKET_RX_CHECKSUM_EVALUATION**.  Targets the checksum field in the packet's layer 4 header.
 
 **Reserved**  
 Reserved for system use.
@@ -61,11 +61,11 @@ typedef enum _NET_PACKET_RX_CHECKSUM_EVALUATION
 } NET_PACKET_RX_CHECKSUM_EVALUATION;
 ```
 
-In a transmit queue, the client cross-references the **Checksum** member with the [**Layout**](net-packet-layout.md) member of [**NET_PACKET**](net-packet.md) in order to determine which hardware transmit checksum offloads need to be enabled. A **NET_PACKET_TX_CHECKSUM_ACTION** value of **NET_PACKET_TX_CHECKSUM_REQUIRED** indicates the network stack expects the client to perform the checksum calculation for this layer.
+In a transmit queue, the client cross-references the **Checksum** member with the [**Layout**](net-packet-layout.md) member of [**NET_PACKET**](net-packet.md) in order to determine which hardware transmit checksum offloads need to be enabled.  A **NET_PACKET_TX_CHECKSUM_ACTION** value of **NET_PACKET_TX_CHECKSUM_REQUIRED** means that the client should perform the checksum calculation for this layer.
 
-In a receive queue, the client converts its hardware packet descriptors' receive checksum offload fields into **NET_PACKET_RX_CHECKSUM_EVALUATION** values for each layer. **NET_PACKET_RX_CHECKSUM_VALID** indicates the hardware determined the checksum value is correct, while **NET_PACKET_RX_CHECKSUM_INVALID** indicates that it is incorrect. The default value is **NET_PACKET_RX_CHECKSUM_NOT_CHECKED**, which means the checksum will be validated in software further up in the networking stack. The client should also fill out the [**Layout**](net-packet-layout.md) member to the best of its knowledge.
+In a receive queue, the client converts its hardware packet descriptors' receive checksum offload fields into **NET_PACKET_RX_CHECKSUM_EVALUATION** values for each layer.  **NET_PACKET_RX_CHECKSUM_VALID** indicates that the hardware determined that the checksum value is correct, while **NET_PACKET_RX_CHECKSUM_INVALID** means that it is incorrect. The default value is **NET_PACKET_RX_CHECKSUM_NOT_CHECKED**, which means that the checksum will be validated in software further up in the networking stack.  The client should also fill out the [**Layout**](net-packet-layout.md) member of the [**NET_PACKET**](net-packet.md) structure.
 
-An NDIS escape must be used for enabling checksum offloads. For more information about enabling checksum offload in your driver, see [**NDIS_TCP_IP_CHECKSUM_OFFLOAD**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff567878).
+The client driver must use NDIS functionality to enable checksum offloads.  For more information, see [**NDIS_TCP_IP_CHECKSUM_OFFLOAD**](https://msdn.microsoft.com/en-us/library/windows/hardware/ff567878).
 
 Requirements
 ------------
