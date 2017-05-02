@@ -86,7 +86,7 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
     To remove a CHID from the list, select **Remove**
 
     > [!NOTE]
-    > If you are publishing for Windows 10 S, you must select the check boxes acknowledging that your driver is compatible with Windows 10 S systems, and follows the policies outlined in the Windows 10 S Engineering Guide.
+    > If you are publishing for Windows 10 S, you must select both check boxes acknowledging that your driver is compatible with Windows 10 S systems, and follows the policies outlined in the Windows 10 S Engineering Guide.
 
 8.  Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
 
