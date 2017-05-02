@@ -15,7 +15,7 @@ With the NetAdapterCx model, conversely, you write a real WDF driver for your NI
 
 <img src="images/architecture.png" alt="Drawing" style="width: 400px;"/>
 
-To watch a video that discusses the benefits of using NetAdapterCx, see [Network Adapter Class Extension: Overview](https://aka.ms/netadapter/video1)
+To watch a video that discusses the benefits of using NetAdapterCx, see [Network Adapter Class Extension: Overview](https://aka.ms/netadapter/video1).
 
 To learn how to port an NDIS 6.x miniport driver into a Windows Driver Framework (WDF) networking client driver, see [Porting NDIS Miniport Drivers to NetAdapter Class Extension](porting-ndis-to-netadapter-cx.md).
 
