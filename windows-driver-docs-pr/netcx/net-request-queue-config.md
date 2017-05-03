@@ -79,10 +79,10 @@ A ULONG that specifies the size of the MethodHandlers member.
 Pointer to the first [**NET_REQUEST_QUEUE_SET_DATA_HANDLER**](net-request-queue-set-data-handler.md) structure of the custom set handler list.
 
 **QueryDataHandlers**  
-Pointer to a [**NET_REQUEST_QUEUE_QUERY_DATA_HANDLER**](net-request-queue-query-data-handler.md) structure of the custom query handler list.
+Pointer to the first [**NET_REQUEST_QUEUE_QUERY_DATA_HANDLER**](net-request-queue-query-data-handler.md) structure of the custom query handler list.
 
 **MethodHandlers**  
-Pointer to a [**NET_REQUEST_QUEUE_METHOD_HANDLER**](net-request-queue-method-handler.md) structure of the custom method handler list.
+Pointer to the first [**NET_REQUEST_QUEUE_METHOD_HANDLER**](net-request-queue-method-handler.md) structure of the custom method handler list.
 
 Remarks
 -----

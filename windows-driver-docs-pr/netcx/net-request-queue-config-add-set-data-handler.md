@@ -56,6 +56,11 @@ When the client driver has finished adding custom handlers, it registers them wi
 
 If the memory allocation for this method fails, the subsequent call to [**NetRequestQueueCreate**](netrequestqueuecreate.md) returns a failure code.
 
+This function has the same effect as the following call sequence:
+
+1.  [**NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT**](net-request-queue-set-data-handler-init.md)
+2.  [**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_SET_DATA_HANDLER**](net-request-queue-config-add-initialized-set-data-handler.md)
+
 Requirements
 ------------
 
