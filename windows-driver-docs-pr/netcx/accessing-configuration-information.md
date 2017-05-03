@@ -11,28 +11,27 @@ Typically, the client driver reads configuration info from its [*EVT_WDF_DRIVER_
 Start by calling [**NetAdapterOpenConfiguration**](netadapteropenconfiguration.md) to get a handle to a configuration object.  You can then query it:
 
 ```cpp
-NETCONFIGURATION config = NULL;
+NETCONFIGURATION configuration;
 
-status = NetAdapterOpenConfiguration(NetAdapter, WDF_NO_OBJECT_ATTRIBUTES, &config);
-if (!NT_SUCCESS(status)) {
+status = NetAdapterOpenConfiguration(NetAdapter, WDF_NO_OBJECT_ATTRIBUTES, &configuration);
+if (! NT_SUCCESS(status)) {
     return status;
 }
 
-status = NetConfigurationQueryUlong(config, 0, &SomeValue, &myvalue);
+status = NetConfigurationQueryUlong(configuration, NET_CONFIGURATION_QUERY_ULONG_NO_FLAGS, &SomeValue, &myvalue);
 
 NetConfigurationClose(configuration);
 ```
-There are `NetConfiguration*` functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and MAC addresses:
+There are `NetConfiguration*` functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and software-configurable network addresses:
 
-* [NetConfigurationAssignBinary method](netconfigurationassignbinary.md)
-* [NetConfigurationAssignMultiString method](netconfigurationassignmultistring.md)
-* [NetConfigurationAssignUlong method](netconfigurationassignulong.md)
-* [NetConfigurationAssignUnicodeString method](netconfigurationassignunicodestring.md)
-* [NetConfigurationClose method](netconfigurationclose.md)
-* [NetConfigurationOpenSubConfiguration method](netconfigurationopensubconfiguration.md)
-* [NetConfigurationQueryBinary method](netconfigurationquerybinary.md)
-* [NetConfigurationQueryMultiString method](netconfigurationquerymultistring.md)
-* [NetConfigurationQueryNetworkAddress method](netconfigurationquerynetworkaddress.md)
-* [NetConfigurationQueryString method](netconfigurationquerystring.md)
-* [NetConfigurationQueryUlong method](netconfigurationqueryulong.md)
-
+* [**NetConfigurationAssignBinary**](netconfigurationassignbinary.md)
+* [**NetConfigurationAssignMultiString**](netconfigurationassignmultistring.md)
+* [**NetConfigurationAssignUlong**](netconfigurationassignulong.md)
+* [**NetConfigurationAssignUnicodeString**](netconfigurationassignunicodestring.md)
+* [**NetConfigurationClose**](netconfigurationclose.md)
+* [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md)
+* [**NetConfigurationQueryBinary**](netconfigurationquerybinary.md)
+* [**NetConfigurationQueryMultiString**](netconfigurationquerymultistring.md)
+* [**NetConfigurationQueryNetworkAddress**](netconfigurationquerynetworkaddress.md)
+* [**NetConfigurationQueryString**](netconfigurationquerystring.md)
+* [**NetConfigurationQueryUlong**](netconfigurationqueryulong.md)
