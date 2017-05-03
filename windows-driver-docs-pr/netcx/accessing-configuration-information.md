@@ -22,17 +22,16 @@ status = NetConfigurationQueryUlong(configuration, NET_CONFIGURATION_QUERY_ULONG
 
 NetConfigurationClose(configuration);
 ```
-There are `NetConfiguration*` functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and MAC-like addresses:
+There are `NetConfiguration*` functions for querying ULONG data, strings, multi-strings (similar to REG_MULTI_SZ), binary blobs, and software-configurable network addresses:
 
-* [NetConfigurationAssignBinary method](netconfigurationassignbinary.md)
-* [NetConfigurationAssignMultiString method](netconfigurationassignmultistring.md)
-* [NetConfigurationAssignUlong method](netconfigurationassignulong.md)
-* [NetConfigurationAssignUnicodeString method](netconfigurationassignunicodestring.md)
-* [NetConfigurationClose method](netconfigurationclose.md)
-* [NetConfigurationOpenSubConfiguration method](netconfigurationopensubconfiguration.md)
-* [NetConfigurationQueryBinary method](netconfigurationquerybinary.md)
-* [NetConfigurationQueryMultiString method](netconfigurationquerymultistring.md)
-* [NetConfigurationQueryNetworkAddress method](netconfigurationquerynetworkaddress.md)
-* [NetConfigurationQueryString method](netconfigurationquerystring.md)
-* [NetConfigurationQueryUlong method](netconfigurationqueryulong.md)
-
+* [**NetConfigurationAssignBinary**](netconfigurationassignbinary.md)
+* [**NetConfigurationAssignMultiString**](netconfigurationassignmultistring.md)
+* [**NetConfigurationAssignUlong**](netconfigurationassignulong.md)
+* [**NetConfigurationAssignUnicodeString**](netconfigurationassignunicodestring.md)
+* [**NetConfigurationClose**](netconfigurationclose.md)
+* [**NetConfigurationOpenSubConfiguration**](netconfigurationopensubconfiguration.md)
+* [**NetConfigurationQueryBinary**](netconfigurationquerybinary.md)
+* [**NetConfigurationQueryMultiString**](netconfigurationquerymultistring.md)
+* [**NetConfigurationQueryNetworkAddress**](netconfigurationquerynetworkaddress.md)
+* [**NetConfigurationQueryString**](netconfigurationquerystring.md)
+* [**NetConfigurationQueryUlong**](netconfigurationqueryulong.md)
