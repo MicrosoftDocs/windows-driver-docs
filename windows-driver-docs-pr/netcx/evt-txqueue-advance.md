@@ -12,7 +12,6 @@ api_type:
 
 # EVT_TXQUEUE_ADVANCE callback function
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Implemented by the client driver to process transmit packets provided by NetAdapterCx.
@@ -21,9 +20,9 @@ Syntax
 ------
 
 ```cpp
-EVT_TXQUEUE_ADVANCE EvtTxqueueAdvance;
+EVT_TXQUEUE_ADVANCE EvtTxQueueAdvance;
 
-void EvtTxqueueAdvance(
+void EvtTxQueueAdvance(
   _In_ NETTXQUEUE TxQueue
 )
 { ... }
@@ -31,13 +30,13 @@ void EvtTxqueueAdvance(
 typedef EVT_TXQUEUE_ADVANCE PFN_TXQUEUE_ADVANCE;
 ```
 
-Register your implementation of this callback function by setting the appropriate member of [**NET_TXQUEUE_CONFIG**](net-txqueue-config.md) and then calling [**NetTxQueueCreate**](nettxqueuecreate.md).
+Register this callback function in [**NET_TXQUEUE_CONFIG_INIT**](net-txqueue-config-init.md) before calling [**NetTxQueueCreate**](nettxqueuecreate.md).
 
 Parameters
 ----------
 
 *TxQueue* [in]  
-A handle to a net transmit queue object.
+A handle to a net transmit queue.
 
 Return value
 ------------
@@ -46,11 +45,11 @@ This callback function does not return a value.
 
 Remarks
 -------
-In this callback, the client retrieves packets from the queue, programs the hardware to send the data, and then completes the packets.
+In this callback, the client retrieves packets from the queue, programs the hardware to send the data, and returns any completed packets.
 
-To retrieve packets, the client can either update the ring buffer's **BeginIndex** manually, or it can call helper macros such as [**NetRingBufferReturnCompletedPackets method**](netringbufferreturncompletedpackets.md).
+To return packets, call [**NetRingBufferIncrementIndex**](NetRingBufferIncrementIndex.md), or use a helper macro such as [**NetRingBufferReturnCompletedPackets method**](netringbufferreturncompletedpackets.md).
 
-The following example retrieves incoming transmit packets from the queue and then immediately completes them.
+The following example retrieves incoming transmit packets from the queue and immediately completes them.
 
 ```cpp
 VOID
@@ -77,7 +76,7 @@ EvtTxQueueAdvance(NETTXQUEUE TxQueue)
 }
 ```
 
-For more info, see [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md).
+NetAdapterCx serializes this callback function along with the queue's [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md) and [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) callback functions.
 
 Requirements
 ------------
@@ -102,11 +101,11 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
-<td align="left">Nettxqueue.h</td>
+<td align="left">NetTxQueue.h</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>IRQL</p></td>
-<td align="left"><p>DISPATCH_LEVEL</p></td>
+<td align="left"><p>&lt;=DISPATCH_LEVEL</p></td>
 </tr>
 </tbody>
 </table>

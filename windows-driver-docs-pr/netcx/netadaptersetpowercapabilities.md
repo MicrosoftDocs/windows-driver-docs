@@ -31,7 +31,7 @@ Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *PowerCapabilities* [in]  
 A pointer to an allocated and initialized [**NET_ADAPTER_POWER_CAPABILITIES**](net-adapter-power-capabilities.md) structure.
@@ -50,7 +50,7 @@ The client driver sets capabilities by calling the following methods from its [*
 -   [**NetAdapterSetLinkLayerCapabilities**](netadaptersetlinklayercapabilities.md)
 -   **NetAdapterSetPowerCapabilities**
 
-Alternatively, the client can call **NetAdapterSetPowerCapabilities** from a callback that NetAdapterCx calls after [*EVT_NET_ADAPTER_SET_CAPABILITIES*](evt-net-adapter-set-capabilities.md). If it does, it must not change the [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) event callback function.
+Alternatively, the client can call **NetAdapterSetPowerCapabilities** at a later time, but it must not change the [*EVT_NET_ADAPTER_PREVIEW_WAKE_PATTERN*](evt-net-adapter-preview-wake-pattern.md) and [*EVT_NET_ADAPTER_PREVIEW_PROTOCOL_OFFLOAD*](evt-net-adapter-preview-protocol-offload.md) event callback functions.
 
 Requirements
 ------------

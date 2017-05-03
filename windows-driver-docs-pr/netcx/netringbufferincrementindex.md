@@ -21,7 +21,6 @@ Syntax
 ------
 
 ```cpp
-__inline
 UINT32 NetRingBufferIncrementIndex(
   _In_ NET_RING_BUFFER *RingBuffer,
   _In_ UINT32          Index
@@ -35,12 +34,24 @@ Parameters
 A pointer to a [**NET_RING_BUFFER**](net-ring-buffer.md).
 
 *Index* [in]  
-The starting index to increment.
+An index value to increment.
 
 Return value
 ------------
 
 Returns the next index value after the specified index value, wrapping around to the beginning of the ring buffer if necessary.
+
+Remarks
+-------
+
+This routine is equivalent to `Index++`, except it accounts for the wraparound of a ring buffer.
+
+For example, you can use this routine to return a packet to the operating system by incrementing **BeginIndex**:
+
+```cpp
+NET_RING_BUFFER *ringBuffer = . . .;
+ringBuffer->BeginIndex = NetRingBufferIncrementIndex(ringBuffer, ringBuffer->BeginIndex);
+```
 
 Requirements
 ------------
@@ -69,7 +80,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td align="left"><p>IRQL</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
+<td align="left"><p>&lt;=DISPATCH_LEVEL</p></td>
 </tr>
 </tbody>
 </table>

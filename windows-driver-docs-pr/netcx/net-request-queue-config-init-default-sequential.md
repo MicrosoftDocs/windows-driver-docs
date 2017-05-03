@@ -12,16 +12,15 @@ api_type:
 
 # NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes the caller-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to create a default request queue.
+Initializes the caller-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to create a default sequential request queue for normal control requests (OIDs).
 
 Syntax
 ------
 
 ```cpp
-FORCEINLINE VOID NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER(
+FORCEINLINE VOID NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL(
   _Out_ PNET_REQUEST_QUEUE_CONFIG NetRequestQueueConfig,
   _In_  NETADAPTER                Adapter
 );

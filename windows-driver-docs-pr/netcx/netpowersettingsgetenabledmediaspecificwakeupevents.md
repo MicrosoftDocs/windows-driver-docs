@@ -16,7 +16,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Retrieves flags that specify the media-specific wake-up events that a network adapter supports.
+Retrieves flags that specify currently enabled media-specific wake-up events that a network adapter supports.
 
 Syntax
 ------
@@ -76,7 +76,7 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>IRQL</p></td>
-<td align="left"><p>DISPATCH_LEVEL</p></td>
+<td align="left"><p>&lt;=DISPATCH_LEVEL</p></td>
 </tr>
 </tbody>
 </table>

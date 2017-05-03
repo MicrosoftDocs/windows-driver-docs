@@ -23,8 +23,6 @@ Before sending a request to the Universal Serial Bus (USB) driver stack, the cli
 Instructions
 ------------
 
-### []()
-
 1.  Allocate an IRP for the URB by calling the [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257) routine. You must provide the stack size of the device object that receives the IRP. You received a pointer to that device object in a previous call to the [**IoAttachDeviceToDeviceStack**](https://msdn.microsoft.com/library/windows/hardware/ff548300) routine. The stack size is stored in the **StackSize** member of the [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure.
 2.  Get a pointer to the IRP's first stack location ([**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)) by calling [**IoGetNextIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549266).
 3.  Set the **MajorFunction** member of the [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) structure to [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766).

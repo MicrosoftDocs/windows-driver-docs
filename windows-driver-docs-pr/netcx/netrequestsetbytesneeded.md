@@ -81,7 +81,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td align="left"><p>IRQL</p></td>
-<td align="left"><p>DISPATCH_LEVEL</p></td>
+<td align="left"><p>&lt;=DISPATCH_LEVEL</p></td>
 </tr>
 </tbody>
 </table>
