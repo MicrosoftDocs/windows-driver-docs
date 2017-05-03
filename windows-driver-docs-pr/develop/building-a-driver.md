@@ -122,7 +122,7 @@ You can set properties for an individual driver or for an entire driver package.
 </tr>
 <tr class="even">
 <td align="left">[WPP Preprocessor (WPP Tracing)](https://msdn.microsoft.com/en-us/Library/Windows/Hardware/Ff556201)</td>
-<td align="left"><p>[Inf2Cat Properties for Driver Package Projects](inf2cat-properties-for-driver-package-projects.md) (see the [<strong>Inf2Cat</strong>](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/inf2cat) tool)</p></td>
+<td align="left"><p>[Inf2Cat Properties for Driver Package Projects](inf2cat-properties-for-driver-package-projects.md) (see the [<strong>Inf2Cat</strong>](../devtest/inf2cat.md) tool)</p></td>
 </tr>
 </tbody>
 </table>
