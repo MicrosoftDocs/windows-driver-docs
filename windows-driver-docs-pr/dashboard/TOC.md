@@ -23,7 +23,6 @@
 ## [Legacy Dashboard](dashboard-services.md)
 ### [Get Started](get-started.md)
 ### [Dashboard FAQ](dashboard-faq.md)
-### [Hardware Certification Submissions](hardware-certification-submissions.md)
 #### [Create a new WLK device certification submission](create-a-new-hardware-logo-submission.md)
 ##### [Winqual Submission Tool (winqual.exe)](winqual-submission-tool--winqualexe-.md)
 #### [Manage Hardware Submissions](manage-hardware-submissions.md)
