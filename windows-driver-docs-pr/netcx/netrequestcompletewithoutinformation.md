@@ -43,7 +43,7 @@ An NTSTATUS value that represents the completion status of the request.  Valid s
 
 Remarks
 -----
-Typically, the client driver calls **NetRequestCompleteWithoutInformation** from one of its control request handler routines.  For more info, see [Handling Control Requests](handling-control-requests.md#completing-requests).
+Typically, the client driver calls **NetRequestCompleteWithoutInformation** from one of its control request handler routines.  Call this function when completing a request that does not require additional memory transfer.  For more info, see [Handling Control Requests](handling-control-requests.md#completing-requests).
 
 After this method returns, the request handle is no longer valid.  NetAdapterCx removes it from the NETQUEUE and deletes the NETREQUEST object.
 

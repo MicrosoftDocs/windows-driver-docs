@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Adds a caller-provided custom request handler to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
+Adds a caller-provided, pre-initialized custom request handler to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
 Syntax
 ------
@@ -34,7 +34,7 @@ Parameters
 A pointer to a driver-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to which the custom handler is being added.
 
 *SetDataHandler* [in]  
-A pointer to a driver-allocated and initialized custom handler structure.
+A pointer to a driver-allocated and initialized [**NET_REQUEST_QUEUE_SET_DATA_HANDLER**](net-request-queue-set-data-handler.md) structure.  The client driver must call [**NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT**](net-request-queue-set-data-handler-init.md) method to initialize the custom handler before calling this function.
 
 Return value
 ------------

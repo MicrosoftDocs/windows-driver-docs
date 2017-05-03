@@ -8,6 +8,7 @@
 # [Device and Driver Technologies](device-and-driver-technologies.md)
 ## [3D print devices](3dprint/index.md)
 ## [ACPI](acpi/index.md)
+## [Audio](audio/index.md)
 ## [Battery Drivers](battery/index.md)
 ## [Biometric Drivers](biometric/index.md)
 ## [Bluetooth Drivers](bluetooth/index.md)

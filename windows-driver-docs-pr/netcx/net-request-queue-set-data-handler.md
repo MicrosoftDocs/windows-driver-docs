@@ -12,7 +12,6 @@ api_type:
 
 # NET_REQUEST_QUEUE_SET_DATA_HANDLER structure
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Call [NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT](net-request-queue-set-data-handler-init.md) to initialize this structure.
@@ -38,7 +37,7 @@ Members
 A pointer to the next custom handler.
 
 **Memory**  
-A handle to a WDFMEMORY object.
+A handle to a WDFMEMORY object backing this memory.
 
 **Oid**  
 Specifies the object identifier of the requested operation. The value is an OID_XXX code. 
@@ -54,7 +53,7 @@ Minimum output length needed by the client for this request.
 
 Remarks
 -------
-Call [**NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT**](net-request-queue-set-data-handler-init.md) to initialize this structure.
+The client driver must call [**NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT**](net-request-queue-set-data-handler-init.md) to initialize this structure.
 
 Call [**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_SET_DATA_HANDLER**](net-request-queue-config-add-initialized-set-data-handler.md) to add a caller-provided custom request handler to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 

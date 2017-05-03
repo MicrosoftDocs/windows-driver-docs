@@ -36,7 +36,7 @@ Parameters
 ----------
 
 *Adapter* [in]  
-The NDIS adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
+The network adapter object that the client created in a prior call to [**NetAdapterCreate**](netadaptercreate.md).
 
 *RxQueueInit* [in, out]  
 A pointer to a NetAdapterCx-allocated **NETRXQUEUE_INIT** structure. For more information, see the Remarks section.
@@ -54,6 +54,10 @@ To register an *EVT_NET_ADAPTER_CREATE_RXQUEUE* callback function, the client dr
 The **NETRXQUEUE_INIT** structure is an opaque structure that is defined and allocated by NetAdapterCx, similar to [WDFDEVICE_INIT](https://msdn.microsoft.com/library/windows/hardware/ff546951).
 
 In this callback, the client driver might call [**NetRxQueueInitGetQueueId**](netrxqueueinitgetqueueid.md) to retrieve the identifier of the receive queue to set up.
+
+Next, the client calls [**NetRxQueueCreate**](netrxqueuecreate.md) to allocate a queue.  If the client provides a non-zero value in the **AllocationSize** member of the [**NET_RXQUEUE_CONFIG**](net-rxqueue-config.md) structure, [**NetRxQueueCreate**](netrxqueuecreate.md) allocates the receive buffers.  The client should not use the buffers until after [**NetRxQueueCreate**](netrxqueuecreate.md) has returned.  If [**NetRxQueueCreate**](netrxqueuecreate.md) fails, the *EVT_NET_ADAPTER_CREATE_RXQUEUE* callback function should return an error code.
+
+To retrieve the ring buffer associated with a given queue, call [**NetRxQueueGetRingBuffer**](netrxqueuegetringbuffer.md).
 
 Example
 -----
@@ -88,7 +92,7 @@ EvtAdapterCreateRxQueue(
         &rxConfig,
         &adapter->RxQueue);
 
-    // Specify that the OS use a WDFDMAENABLER to allocate the needed buffers
+    // Specify that the OS use a WDFDMAENABLER to allocate the receive buffers
 
     status = NetRxQueueConfigureDmaAllocator(
         adapter->RxQueue,
@@ -121,7 +125,7 @@ Requirements
 </tr>
 <tr class="even">
 <td align="left"><p>Header</p></td>
-<td align="left">Netadapter.h</td>
+<td align="left">NetAdapter.h</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>IRQL</p></td>
