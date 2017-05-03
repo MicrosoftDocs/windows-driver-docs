@@ -112,6 +112,8 @@ UsbEvtReaderCompletionRoutine(
 
 NetAdapterCx serializes this callback function along with the receive queue's [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) and [*EVT_RXQUEUE_CANCEL*](evt-rxqueue-cancel.md) callback functions.
 
+For more info, see [Transferring Network Data](transferring-network-data.md).
+
 Requirements
 ------------
 

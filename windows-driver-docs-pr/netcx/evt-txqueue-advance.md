@@ -78,6 +78,8 @@ EvtTxQueueAdvance(NETTXQUEUE TxQueue)
 
 NetAdapterCx serializes this callback function along with the queue's [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md) and [*EVT_TXQUEUE_SET_NOTIFICATION_ENABLED*](evt-txqueue-set-notification-enabled.md) callback functions.
 
+For more info, see [Transferring Network Data](transferring-network-data.md).
+
 Requirements
 ------------
 

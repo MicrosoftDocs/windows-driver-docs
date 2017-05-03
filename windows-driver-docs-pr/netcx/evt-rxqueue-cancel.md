@@ -47,7 +47,7 @@ This callback function does not return a value.
 Example
 -----
 
-In its *EVT_RXQUEUE_CANCEL* callback function, the client must complete any outstanding receive packets.  If the client does not return all packets, the operating system might be delayed deleting the queue.  To do so, the client advances the ring buffer's **BeginIndex** and **NextIndex** indices to **EndIndex**.
+In its *EVT_RXQUEUE_CANCEL* callback function, the client must complete any outstanding receive packets.  If the client does not return all packets, the operating system does not delete the queue, and NetAdapterCx stops calling the client's callbacks for the queue.  To return packets, the client advances the ring buffer's **BeginIndex** and **NextIndex** indices to **EndIndex**.
 
 ```cpp
 VOID
@@ -65,6 +65,8 @@ Remarks
 -------
 
 NetAdapterCx serializes this callback function along with the receive queue's [*EVT_RXQUEUE_ADVANCE*](evt-rxqueue-advance.md) and [*EVT_RXQUEUE_SET_NOTIFICATION_ENABLED*](evt-rxqueue-set-notification-enabled.md) callback functions.
+
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------

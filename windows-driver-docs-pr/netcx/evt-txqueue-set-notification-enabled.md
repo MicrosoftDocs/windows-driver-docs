@@ -53,9 +53,14 @@ Remarks
 
 For a PCI NIC, enabling transmit queue notification typically means enabling the transmit queue's hardware interrupt.  When the hardware interrupt fires, the client calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) from its DPC.
 
-NetAdapterCx calls *EVT_TXQUEUE_SET_NOTIFICATION_ENABLED* once with *NotificationEnabled* set to **TRUE**.  After the client calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md), it should turn off whatever flag it uses to track the notification status.  If NetAdapterCx calls *EVT_TXQUEUE_SET_NOTIFICATION_ENABLED* with *NotificationEnabled* set to **FALSE**, the client must not call [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) until NetAdapterCx re-enables the notification.
+Similarly, for a PCI NIC, disabling queue notification means disabling the interrupt associated with the queue.
+
+For a device that has an asynchronous I/O model, the client typically uses an internal flag to track the enabled state.  When an asynchronous operation completes, the completion handler checks this flag and calls [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) if it is set.
+
+If NetAdapterCx calls *EVT_TXQUEUE_SET_NOTIFICATION_ENABLED* with *NotificationEnabled* set to **FALSE**, the client must not call [**NetTxQueueNotifyMoreCompletedPacketsAvailable**](nettxqueuenotifymorecompletedpacketsavailable.md) until NetAdapterCx next calls this callback function with *NotificationEnabled* set to **TRUE**.
 
 For example:
+
 ```cpp
 NTSTATUS
 EvtTxQueueSetNotificationEnabled(
@@ -81,6 +86,8 @@ EvtInterruptDpc(
 ```
 
 NetAdapterCx serializes this callback function along with the receive queue's [*EVT_TXQUEUE_ADVANCE*](evt-rxqueue-advance.md) and [*EVT_TXQUEUE_CANCEL*](evt-txqueue-cancel.md) callback functions.
+
+For more info, see [Transferring Network Data](transferring-network-data.md).
 
 Requirements
 ------------
