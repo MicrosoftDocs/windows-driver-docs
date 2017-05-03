@@ -12,7 +12,6 @@ api_type:
 
 # NET_REQUEST_QUEUE_SET_DATA_HANDLER structure
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Call [NET_REQUEST_QUEUE_SET_DATA_HANDLER_INIT](net-request-queue-set-data-handler-init.md) to initialize this structure.

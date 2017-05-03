@@ -12,7 +12,6 @@ api_type:
 
 # NET_REQUEST_QUEUE_METHOD_HANDLER structure
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Call [NET_REQUEST_QUEUE_METHOD_HANDLER_INIT](net-request-queue-method-handler-init.md) to initialize this structure.

@@ -12,10 +12,9 @@ api_type:
 
 # NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Initializes the caller-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to create a default direct request queue for direct requests (OIDs).
+Initializes the caller-allocated [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure to create a default direct request queue for direct control requests (OIDs).
 
 Syntax
 ------

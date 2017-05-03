@@ -72,7 +72,7 @@ Typically, the client creates a queue for regular (sequential) OIDs, and may opt
     config.EvtRequestDefaultMethod = EvtNetRequestMethod;
 
     //
-    // Add a custom request handler as needed
+    // Add custom request handlers as needed
     //
     
 
@@ -132,13 +132,3 @@ Requirements
 [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_PARALLEL**](net-request-queue-config-init-default-parallel.md)
 
 [**NET_REQUEST_QUEUE_CONFIG_INIT_DEFAULT_SEQUENTIAL**](net-request-queue-config-init-default-sequential.md)
-
- 
-
- 
-
-
-
-
-
-

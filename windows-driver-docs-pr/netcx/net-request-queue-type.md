@@ -34,10 +34,10 @@ Constants
 Not supported.
 
 **NetRequestQueueDefaultSequential**  
-Specifies that the queue supports sequential delivery (normal requests(OIDs)).
+Specifies that the queue supports sequential delivery (normal control requests, or OIDs).
 
 **NetRequestQueueDefaultParallel**  
-Specifies that the queue supports parallel dispatching (direct requests(OIDs)).
+Specifies that the queue supports parallel dispatching (direct control requests, or OIDs).
 
 
 Remarks

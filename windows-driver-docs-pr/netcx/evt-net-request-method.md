@@ -59,7 +59,7 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 Remarks
 ---
-Your client driver can provide one or more specialized handlers for specific OID method requests. ALong with them, it can also provide a single generic EVT_NET_REQUEST_DEFAULT_METHOD callback function.
+Your client driver can provide one or more specialized handlers for specific OID method requests.  In addition, it can also provide a generic *EVT_NET_REQUEST_DEFAULT_METHOD* callback function.
 
 To register an *EVT_NET_REQUEST_DEFAULT_METHOD* callback function, the client driver calls **NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER** or [**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER**](net-request-queue-config-add-initialized-method-handler.md), and then calls [**NetRequestQueueCreate**](netrequestqueuecreate.md).
 
