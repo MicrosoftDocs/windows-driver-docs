@@ -24,6 +24,10 @@ This section discusses the IHV Extensions DLL and has the following topics:
 
 [Native 802.11 IHV Extensions DLL Overview](native-802-11-ihv-extensions-dll-overview.md)
 
+[Native 802.11 IHV Extensibility functions](native-802-11-ihv-extensibility-functions.md)
+
+[Native 802.11 IHV Handler functions](native-802-11-ihv-handler-functions.md)
+
 [Native 802.11 IHV Extensions DLL Implementation Guidelines](native-802-11-ihv-extensions-dll-implementation-guidelines.md)
 
 [DLL Start/Stop Operations](dll-start-stop-operations.md)

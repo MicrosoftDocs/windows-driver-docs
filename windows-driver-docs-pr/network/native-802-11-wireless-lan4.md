@@ -35,6 +35,8 @@ This section includes the following topics:
 
 [Native 802.11 IHV Extensions](native-802-11-ihv-extensions.md)
 
+[Native 802.11 OIDs](native-802-11-oids.md)
+
 [Wi-Fi Direct Miniport Initialization and Configuration](wi-fi-direct-miniport-initialization-and-configuration.md)
 
 [Wi-Fi Direct Protocol Implementation](wi-fi-direct-protocol-implementation.md)
