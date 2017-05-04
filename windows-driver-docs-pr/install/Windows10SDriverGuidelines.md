@@ -1,6 +1,5 @@
----
 # Windows 10 S Driver Guidelines
----
+
 
 This section provides an overview of the code integrity policy, which hardware
 and software drivers are subject to when installed on Windows 10 S. This section
@@ -78,7 +77,7 @@ For drivers to install and run successfully on Windows 10 S, the following must
 be met.
 
 -   All driver packages and binaries must be digitally signed by Microsoft
-    through Dev Center - aka.ms/DevCenterPortal
+    through Dev Center - [aka.ms/DevCenterPortal](aka.ms/DevCenterPortal)
 
 -   Driver packages may not contain any archives that extract nested binaries
     which are not signed.
