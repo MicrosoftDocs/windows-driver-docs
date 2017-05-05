@@ -2,7 +2,17 @@
 title: Winsock Kernel Architecture
 description: Winsock Kernel Architecture
 ms.assetid: 3a43c200-4180-4d1b-8ca6-ee82a84b9194
-keywords: ["Winsock Kernel WDK networking , architecture", "WSK WDK networking , architecture", "architecture WDK Winsock Kernel", "network modules WDK Winsock Kernel", "subsystem WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , architecture
+- WSK WDK networking , architecture
+- architecture WDK Winsock Kernel
+- network modules WDK Winsock Kernel
+- subsystem WDK Winsock Kernel
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winsock Kernel Architecture

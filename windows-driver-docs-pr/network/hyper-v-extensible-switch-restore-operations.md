@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch Restore Operations
 description: Hyper-V Extensible Switch Restore Operations
 ms.assetid: 283D9E43-79F2-47B1-8D29-39A8E7CBE2C7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch Restore Operations

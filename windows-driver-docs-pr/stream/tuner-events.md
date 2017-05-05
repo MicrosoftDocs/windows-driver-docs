@@ -3,7 +3,15 @@ title: Tuner Events
 author: windows-driver-content
 description: Tuner Events
 ms.assetid: eb5e0698-2641-4d47-9fa3-d1969a03c795
-keywords: ["tuner events WDK video capture", "events WDK video capture", "EVENTSETID_TUNER"]
+keywords:
+- tuner events WDK video capture
+- events WDK video capture
+- EVENTSETID_TUNER
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tuner Events

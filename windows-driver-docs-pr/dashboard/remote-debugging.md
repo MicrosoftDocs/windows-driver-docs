@@ -2,6 +2,11 @@
 title: Remote Debugging
 description: Remote Debugging
 ms.assetid: 070c68e3-eb15-4c03-89f1-2601ddab901e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Remote Debugging

@@ -2,7 +2,17 @@
 title: DirectX VA COPP Device
 description: DirectX VA COPP Device
 ms.assetid: f9268b38-3317-4c4f-b9c1-e0ad3c88f92e
-keywords: ["COPP device WDK DirectX VA", "copy protection WDK COPP , COPP device", "video copy protection WDK COPP , COPP device", "COPP WDK DirectX VA , COPP device", "protected video WDK COPP , COPP device"]
+keywords:
+- COPP device WDK DirectX VA
+- copy protection WDK COPP , COPP device
+- video copy protection WDK COPP , COPP device
+- COPP WDK DirectX VA , COPP device
+- protected video WDK COPP , COPP device
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectX VA COPP Device

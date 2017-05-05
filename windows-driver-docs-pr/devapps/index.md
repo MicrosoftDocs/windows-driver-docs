@@ -1,7 +1,12 @@
 ---
 title: Windows Store device apps
-description: .
+description: Windows Store device apps are device companions, have capabilities beyond regular Windows Store apps, and perform privileged operations, such as firmware updates
 ms.assetid: fb64bad6-aa3d-4718-b62e-68da59a07ced
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Store device apps

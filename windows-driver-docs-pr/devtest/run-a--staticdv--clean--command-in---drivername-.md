@@ -2,6 +2,11 @@
 title: Run a "staticdv /clean" command in drivername
 description: Run a \ 0034;staticdv /clean \ 0034; command in drivername
 ms.assetid: 179ade54-625f-427e-b680-f9814c41808f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Run a "staticdv /clean" command in :&lt;drivername&gt;

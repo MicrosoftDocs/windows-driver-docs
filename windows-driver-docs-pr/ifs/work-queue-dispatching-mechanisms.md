@@ -3,7 +3,24 @@ title: Work Queue Dispatching Mechanisms
 author: windows-driver-content
 description: Work Queue Dispatching Mechanisms
 ms.assetid: d4ce929f-2d84-4194-9afa-e00629594c36
-keywords: ["RDBSS WDK file systems , work queue dispatching", "Redirected Drive Buffering Subsystem WDK file systems , work queue dispatching", "work queue dispatching WDK RDBSS", "dispatching work queue WDK RDBSS", "memory allocations WDK RDBSS", "Critical work queue WDK RDBSS", "Delayed work queue WDK RDBSS", "HyperCritical work queue WDK RDBSS", "bookkeeping WDK RDBSS", "statistics WDK RDBSS", "queues WDK RDBSS", "states WDK RDBSS"]
+keywords:
+- RDBSS WDK file systems , work queue dispatching
+- Redirected Drive Buffering Subsystem WDK file systems , work queue dispatching
+- work queue dispatching WDK RDBSS
+- dispatching work queue WDK RDBSS
+- memory allocations WDK RDBSS
+- Critical work queue WDK RDBSS
+- Delayed work queue WDK RDBSS
+- HyperCritical work queue WDK RDBSS
+- bookkeeping WDK RDBSS
+- statistics WDK RDBSS
+- queues WDK RDBSS
+- states WDK RDBSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Work Queue Dispatching Mechanisms

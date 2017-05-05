@@ -3,7 +3,20 @@ title: Resolving GDL Configuration Conflicts
 author: windows-driver-content
 description: Resolving GDL Configuration Conflicts
 ms.assetid: 02a2da63-0b7f-4aa9-b3c3-72784f409d94
-keywords: ["GDL WDK , configurations", "configurations WDK GDL , invalid configurations", "configurations WDK GDL , conflicts", "invalid GDL configurations WDK", "configurations WDK GDL , resolving conflicts", "resolving GDL configuration conflicts WDK GDL", "ConflictPriority directive WDK GDL", "FeatureType directive WDK GDL"]
+keywords:
+- GDL WDK , configurations
+- configurations WDK GDL , invalid configurations
+- configurations WDK GDL , conflicts
+- invalid GDL configurations WDK
+- configurations WDK GDL , resolving conflicts
+- resolving GDL configuration conflicts WDK GDL
+- ConflictPriority directive WDK GDL
+- FeatureType directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Resolving GDL Configuration Conflicts

@@ -3,7 +3,16 @@ title: Line Continuation
 author: windows-driver-content
 description: Line Continuation
 ms.assetid: ee4dbb3d-ba9d-45bb-82dd-ecee4682ae63
-keywords: ["GPD file entries WDK Unidrv , line continuations", "line continuations WDK GPD files", "continued lines WDK GPD files", "continuation character WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , line continuations
+- line continuations WDK GPD files
+- continued lines WDK GPD files
+- continuation character WDK GPD files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Line Continuation

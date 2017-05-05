@@ -2,7 +2,16 @@
 title: Delivering Received Data From an Offload Target
 description: Delivering Received Data From an Offload Target
 ms.assetid: b4f8cb27-f0d8-401c-98ef-f1dfc62648a8
-keywords: ["data I/O WDK TCP chimney offload , delivering data", "I/O WDK TCP chimney offload , delivering data", "delivering received data WDK TCP chimney offload", "received data processing WDK TCP chimney offload , delivering data"]
+keywords:
+- data I/O WDK TCP chimney offload , delivering data
+- I/O WDK TCP chimney offload , delivering data
+- delivering received data WDK TCP chimney offload
+- received data processing WDK TCP chimney offload , delivering data
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Delivering Received Data From an Offload Target

@@ -2,6 +2,11 @@
 title: Get a specific asset within a submission
 description: Get a specific asset within a submission
 ms.assetid: 9e0c15cc-a551-4c9e-9679-3201f28b2936
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get a specific asset within a submission

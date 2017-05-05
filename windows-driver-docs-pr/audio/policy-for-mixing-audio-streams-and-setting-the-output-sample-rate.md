@@ -2,7 +2,19 @@
 title: Policy for Mixing Audio Streams and Setting the Output Sample Rate
 description: Policy for Mixing Audio Streams and Setting the Output Sample Rate
 ms.assetid: b05875a8-ed6e-4e48-99ac-33fa22b7bc69
-keywords: ["SRC WDK audio , output sample rate", "sample-rate conversion WDK audio , output sample rate", "output sample rate WDK audio", "connecting audio streams WDK", "KMixer system driver WDK audio , mixing policy", "mixing policy WDK audio", "input stream rate WDK audio"]
+keywords:
+- SRC WDK audio , output sample rate
+- sample-rate conversion WDK audio , output sample rate
+- output sample rate WDK audio
+- connecting audio streams WDK
+- KMixer system driver WDK audio , mixing policy
+- mixing policy WDK audio
+- input stream rate WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Policy for Mixing Audio Streams and Setting the Output Sample Rate

@@ -2,7 +2,13 @@
 title: Querying a Connectionless Miniport Driver
 description: Querying a Connectionless Miniport Driver
 ms.assetid: a556d7ba-52ea-443b-994b-4c517e80ac55
-keywords: ["connectionless drivers WDK networking"]
+keywords:
+- connectionless drivers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying a Connectionless Miniport Driver

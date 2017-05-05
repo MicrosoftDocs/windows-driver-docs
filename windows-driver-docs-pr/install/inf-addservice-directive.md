@@ -2,13 +2,19 @@
 title: INF AddService Directive
 description: An AddService directive is used within an INF DDInstall.Services section or INF DefaultInstall.Services section.
 ms.assetid: 3314da8b-3fde-462a-a64d-a0514710663a
-keywords: ["INF AddService Directive Device and Driver Installation"]
+keywords:
+- INF AddService Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF AddService Directive
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF AddService Directive

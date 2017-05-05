@@ -3,7 +3,18 @@ title: Use the HwContext Pointer to HwScsiFindAdapter Correctly
 author: windows-driver-content
 description: Use the HwContext Pointer to HwScsiFindAdapter Correctly
 ms.assetid: 9f287989-423b-4084-bf18-8df8676f7123
-keywords: ["SCSI miniport drivers WDK storage , PnP", "PnP WDK SCSI", "Plug and Play WDK SCSI", "converting SCSI miniport drivers", "HwContext pointer", "HwScsiFindAdapter"]
+keywords:
+- SCSI miniport drivers WDK storage , PnP
+- PnP WDK SCSI
+- Plug and Play WDK SCSI
+- converting SCSI miniport drivers
+- HwContext pointer
+- HwScsiFindAdapter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Use the HwContext Pointer to HwScsiFindAdapter Correctly

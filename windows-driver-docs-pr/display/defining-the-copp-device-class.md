@@ -2,7 +2,17 @@
 title: Defining the COPP Device Class
 description: Defining the COPP Device Class
 ms.assetid: eb5e7269-fe4c-44d1-9024-f5b1a180e10b
-keywords: ["copy protection WDK COPP , COPP device", "video copy protection WDK COPP , COPP device", "COPP WDK DirectX VA , COPP device", "protected video WDK COPP , COPP device", "COPP device WDK DirectX VA"]
+keywords:
+- copy protection WDK COPP , COPP device
+- video copy protection WDK COPP , COPP device
+- COPP WDK DirectX VA , COPP device
+- protected video WDK COPP , COPP device
+- COPP device WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining the COPP Device Class

@@ -3,7 +3,15 @@ title: Microsoft PostScript Printer Driver
 author: windows-driver-content
 description: Microsoft PostScript Printer Driver
 ms.assetid: 1c67d20c-ada6-42fd-a882-61e12b72611f
-keywords: ["printer drivers WDK , PostScript Printer Driver", "PostScript Printer Driver WDK print", "Pscript WDK print"]
+keywords:
+- printer drivers WDK , PostScript Printer Driver
+- PostScript Printer Driver WDK print
+- Pscript WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microsoft PostScript Printer Driver

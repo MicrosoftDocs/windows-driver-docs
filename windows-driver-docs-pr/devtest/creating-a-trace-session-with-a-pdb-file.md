@@ -2,7 +2,15 @@
 title: Creating a Trace Session with a PDB File
 description: Creating a Trace Session with a PDB File
 ms.assetid: dae78674-3563-4fd5-869b-abd4c13aa202
-keywords: ["program database symbol files WDK", "PDB symbol files WDK", "symbol files WDK software tracing"]
+keywords:
+- program database symbol files WDK
+- PDB symbol files WDK
+- symbol files WDK software tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Trace Session with a PDB File

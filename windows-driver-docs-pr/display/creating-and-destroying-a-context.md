@@ -2,7 +2,17 @@
 title: Creating and Destroying a Context
 description: Creating and Destroying a Context
 ms.assetid: 31462b0a-ed06-4138-ab91-7ec98bc5ff14
-keywords: ["context WDK Direct3D , creating", "context WDK Direct3D , destroying", "D3dContextCreate", "D3dContextDestroy", "destroying context WDK Direct3D"]
+keywords:
+- context WDK Direct3D , creating
+- context WDK Direct3D , destroying
+- D3dContextCreate
+- D3dContextDestroy
+- destroying context WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating and Destroying a Context

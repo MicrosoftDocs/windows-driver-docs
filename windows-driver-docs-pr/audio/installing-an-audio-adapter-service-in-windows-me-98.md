@@ -2,7 +2,16 @@
 title: Installing an Audio Adapter Service in Windows Me/98
 description: Installing an Audio Adapter Service in Windows Me/98
 ms.assetid: d10051c3-bf07-4df5-95d7-c83e75c15250
-keywords: ["audio adapters WDK , service installations", "adapter drivers WDK audio , service installations", "Port Class audio adapters WDK , service installations", "adapter services WDK audio"]
+keywords:
+- audio adapters WDK , service installations
+- adapter drivers WDK audio , service installations
+- Port Class audio adapters WDK , service installations
+- adapter services WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing an Audio Adapter Service in Windows Me/98

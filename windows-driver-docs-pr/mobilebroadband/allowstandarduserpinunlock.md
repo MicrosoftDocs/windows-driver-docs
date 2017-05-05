@@ -2,6 +2,11 @@
 title: AllowStandardUserPinUnlock
 description: AllowStandardUserPinUnlock
 ms.assetid: 3fb6de78-662b-46d0-bf0c-9efde15b0861
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AllowStandardUserPinUnlock

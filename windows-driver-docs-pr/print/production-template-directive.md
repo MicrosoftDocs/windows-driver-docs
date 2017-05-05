@@ -3,7 +3,15 @@ title: Production Template Directive
 author: windows-driver-content
 description: Production Template Directive
 ms.assetid: 5deae299-389a-4de4-8f2f-7c247f045ada
-keywords: ["Production directive WDK GDL", "constructs WDK GDL , valid combinations", "templates WDK GDL , host template"]
+keywords:
+- Production directive WDK GDL
+- constructs WDK GDL , valid combinations
+- templates WDK GDL , host template
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Production Template Directive

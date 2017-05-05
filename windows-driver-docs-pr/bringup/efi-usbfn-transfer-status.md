@@ -3,6 +3,11 @@ title: EFI\_USBFN\_TRANSFER\_STATUS
 author: windows-driver-content
 description: EFI\_USBFN\_TRANSFER\_STATUS
 ms.assetid: 60631dad-a617-4ed4-a975-5e480cf324e3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USBFN\_TRANSFER\_STATUS

@@ -2,7 +2,20 @@
 title: Setting Up DirectX VA Decoding
 description: Setting Up DirectX VA Decoding
 ms.assetid: 8841c366-df00-4e88-9f50-85345ba77e03
-keywords: ["video decoding WDK DirectX VA , setting up", "decoding video WDK DirectX VA , setting up", "picture decoding WDK DirectX VA , setting up", "video decoding WDK DirectX VA , formats", "decoding video WDK DirectX VA , formats", "picture decoding WDK DirectX VA , formats", "formats WDK DirectX VA", "picture decoding WDK DirectX VA"]
+keywords:
+- video decoding WDK DirectX VA , setting up
+- decoding video WDK DirectX VA , setting up
+- picture decoding WDK DirectX VA , setting up
+- video decoding WDK DirectX VA , formats
+- decoding video WDK DirectX VA , formats
+- picture decoding WDK DirectX VA , formats
+- formats WDK DirectX VA
+- picture decoding WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Up DirectX VA Decoding

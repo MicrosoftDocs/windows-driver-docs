@@ -2,6 +2,11 @@
 title: Security Checks
 description: Security Checks
 ms.assetid: fca92bad-7bb8-4a30-b303-48fd54c20c42
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Security Checks

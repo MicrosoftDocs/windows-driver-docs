@@ -2,7 +2,18 @@
 title: Deregistering a Network Interface
 description: Deregistering a Network Interface
 ms.assetid: 8d290a6a-008d-434b-bcbf-c4efade3d017
-keywords: ["NDIS network interfaces WDK , deregistering", "network interfaces WDK , deregistering", "deregistering network interfaces", "removing network interfaces", "unregistering network interfaces", "NdisIfDeregisterInterface"]
+keywords:
+- NDIS network interfaces WDK , deregistering
+- network interfaces WDK , deregistering
+- deregistering network interfaces
+- removing network interfaces
+- unregistering network interfaces
+- NdisIfDeregisterInterface
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Deregistering a Network Interface

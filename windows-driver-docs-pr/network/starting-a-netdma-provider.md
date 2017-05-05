@@ -2,7 +2,14 @@
 title: Starting a NetDMA Provider
 description: Starting a NetDMA Provider
 ms.assetid: c6f91535-25d6-4e3c-9daf-53f07d4c7c67
-keywords: ["starting NetDMA provider drivers", "NetDMA provider drivers WDK networking , starting"]
+keywords:
+- starting NetDMA provider drivers
+- NetDMA provider drivers WDK networking , starting
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting a NetDMA Provider

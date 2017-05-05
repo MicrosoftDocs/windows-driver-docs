@@ -3,6 +3,11 @@ title: Property Validation for RAW Format Transfers
 author: windows-driver-content
 description: Property Validation for RAW Format Transfers
 ms.assetid: ad58f94e-d59e-4d04-be27-cc87f89f3d76
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Property Validation for RAW Format Transfers

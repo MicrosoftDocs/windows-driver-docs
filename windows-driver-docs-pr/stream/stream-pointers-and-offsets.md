@@ -3,7 +3,19 @@ title: Stream Pointers and Offsets
 author: windows-driver-content
 description: Stream Pointers and Offsets
 ms.assetid: ef9dc015-f0ee-49a6-8774-cfb0223c8b12
-keywords: ["stream pointers WDK AVStream , offsets", "offsets WDK AVStream", "stream positions WDK AVStream", "input positions WDK AVStream", "output positions WDK AVStream", "AVStream pointers WDK", "AVStream offsets WDK"]
+keywords:
+- stream pointers WDK AVStream , offsets
+- offsets WDK AVStream
+- stream positions WDK AVStream
+- input positions WDK AVStream
+- output positions WDK AVStream
+- AVStream pointers WDK
+- AVStream offsets WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stream Pointers and Offsets

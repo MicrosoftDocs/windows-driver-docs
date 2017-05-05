@@ -2,7 +2,24 @@
 title: Using Crypto Session with DirectX Video Accelerator 2.0 Decoder
 description: Using Crypto Session with DirectX Video Accelerator 2.0 Decoder
 ms.assetid: 2a3577f5-bc44-4e0d-a5fa-217dc6c6f5f3
-keywords: ["DXVA 2.0 decoder WDK Windows 7 display", "DXVA 2.0 decoder WDK Windows Server 2008 R2 display", "DXVA 2.0 decoder WDK Windows 7 display , associating with a crypto session", "DXVA 2.0 decoder WDK Windows Server 2008 R2 display , associating with a crypto session", "DirectX Video Accelerator 2.0 decoder WDK Windows 7 display", "DirectX Video Accelerator 2.0 decoder WDK Windows Server 2008 R2 display", "DirectX Video Accelerator 2.0 decoder WDK Windows 7 display , associating with a crypto session", "DirectX Video Accelerator 2.0 decoder WDK Windows Server 2008 R2 display , associating with a crypto session", "crypto session WDK Windows 7 display", "crypto session WDK Windows Server 2008 R2 display", "crypto session WDK Windows 7 display , associating with a DXVA 2.0 decoder", "crypto session WDK Windows Server 2008 R2 display , associating with a DXVA 2.0 decoder"]
+keywords:
+- DXVA 2.0 decoder WDK Windows 7 display
+- DXVA 2.0 decoder WDK Windows Server 2008 R2 display
+- DXVA 2.0 decoder WDK Windows 7 display , associating with a crypto session
+- DXVA 2.0 decoder WDK Windows Server 2008 R2 display , associating with a crypto session
+- DirectX Video Accelerator 2.0 decoder WDK Windows 7 display
+- DirectX Video Accelerator 2.0 decoder WDK Windows Server 2008 R2 display
+- DirectX Video Accelerator 2.0 decoder WDK Windows 7 display , associating with a crypto session
+- DirectX Video Accelerator 2.0 decoder WDK Windows Server 2008 R2 display , associating with a crypto session
+- crypto session WDK Windows 7 display
+- crypto session WDK Windows Server 2008 R2 display
+- crypto session WDK Windows 7 display , associating with a DXVA 2.0 decoder
+- crypto session WDK Windows Server 2008 R2 display , associating with a DXVA 2.0 decoder
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Crypto Session with DirectX Video Accelerator 2.0 Decoder

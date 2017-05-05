@@ -2,7 +2,15 @@
 title: Receive Side Throttle in NDIS 6.20
 description: Receive Side Throttle in NDIS 6.20
 ms.assetid: dc8d0f32-37ee-4383-864d-7d814d37c3c8
-keywords: ["NDIS 6.20 WDK , receive-side throttle", "receive-side throttle (RST) WDK NDIS 6.20", "RST WDK NDIS 6.20"]
+keywords:
+- NDIS 6.20 WDK , receive-side throttle
+- receive-side throttle (RST) WDK NDIS 6.20
+- RST WDK NDIS 6.20
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receive Side Throttle in NDIS 6.20

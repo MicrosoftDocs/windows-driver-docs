@@ -3,7 +3,22 @@ title: COM Port Database
 author: windows-driver-content
 description: COM Port Database
 ms.assetid: c9baf147-6e33-4ed2-b682-c141938eb0da
-keywords: ["COM ports WDK serial devices", "serial devices WDK , COM ports", "COM port databases WDK serial devices", "COM port numbers WDK serial devices", "port numbers WDK serial devices", "releasing port numbers", "current port number usage WDK serial devices", "size WDK COM port databases", "resizing COM port databases", "databases WDK COM port databases"]
+keywords:
+- COM ports WDK serial devices
+- serial devices WDK , COM ports
+- COM port databases WDK serial devices
+- COM port numbers WDK serial devices
+- port numbers WDK serial devices
+- releasing port numbers
+- current port number usage WDK serial devices
+- size WDK COM port databases
+- resizing COM port databases
+- databases WDK COM port databases
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COM Port Database

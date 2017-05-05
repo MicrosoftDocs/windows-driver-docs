@@ -2,7 +2,16 @@
 title: Determining Whether a VidPN is Supported on a Display Adapter
 description: Determining Whether a VidPN is Supported on a Display Adapter
 ms.assetid: ebf001fb-e445-4534-8e89-60e1b06b2d6e
-keywords: ["video present networks WDK display , determining if supported", "VidPN WDK display , determining if supported", "functional VidPN WDK display", "determining VidPN supported WDK display"]
+keywords:
+- video present networks WDK display , determining if supported
+- VidPN WDK display , determining if supported
+- functional VidPN WDK display
+- determining VidPN supported WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining Whether a VidPN is Supported on a Display Adapter

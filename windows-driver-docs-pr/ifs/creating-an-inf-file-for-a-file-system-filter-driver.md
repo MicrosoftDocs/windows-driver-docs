@@ -3,7 +3,21 @@ title: Creating an INF File for a File System Filter Driver
 author: windows-driver-content
 description: Creating an INF File for a File System Filter Driver
 ms.assetid: 1e8d0e59-eabd-4bdb-9675-e693a0b364ca
-keywords: ["INF files WDK file system , creating", "SetupAPI WDK file system", "Strings section WDK file system", "DefaultUninstall section WDK file system", "ServiceInstall section WDK file system", "DefaultInstall section WDK file system", "SourceDisksNames section WDK file system", "DestinationDirs section WDK file system", "Version section WDK file system"]
+keywords:
+- INF files WDK file system , creating
+- SetupAPI WDK file system
+- Strings section WDK file system
+- DefaultUninstall section WDK file system
+- ServiceInstall section WDK file system
+- DefaultInstall section WDK file system
+- SourceDisksNames section WDK file system
+- DestinationDirs section WDK file system
+- Version section WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating an INF File for a File System Filter Driver

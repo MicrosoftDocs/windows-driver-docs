@@ -2,7 +2,15 @@
 title: DispatchDeviceControl Routine of a Battery Miniclass Driver
 description: DispatchDeviceControl Routine of a Battery Miniclass Driver
 ms.assetid: 26313dcc-9f37-4c5e-a21e-c4d8a50ff564
-keywords: ["battery miniclass drivers WDK , routines", "DispatchDeviceControl routine", "IOCTLs WDK battery"]
+keywords:
+- battery miniclass drivers WDK , routines
+- DispatchDeviceControl routine
+- IOCTLs WDK battery
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchDeviceControl Routine of a Battery Miniclass Driver

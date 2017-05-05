@@ -2,6 +2,11 @@
 title: Sample INF Models Sections for Target Operating Systems
 description: Sample INF Models Sections for One or More Target Operating Systems
 ms.assetid: bc1d9a5f-573f-4773-8716-8ac53478d0ee
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample INF Models Sections for One or More Target Operating Systems

@@ -1,8 +1,16 @@
 ---
-title: Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request
+title: Access Memory by Using a PnP I/O Request
 description: Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request
 ms.assetid: ee2f9d9f-9e2b-4ecf-ba6d-4baad3653301
-keywords: ["attribute memory WDK PCMCIA bus , Plug and Play I/O requests", "Plug and Play WDK PCMCIA bus", "PnP WDK PCMCIA bus"]
+keywords:
+- attribute memory WDK PCMCIA bus , Plug and Play I/O requests
+- Plug and Play WDK PCMCIA bus
+- PnP WDK PCMCIA bus
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request

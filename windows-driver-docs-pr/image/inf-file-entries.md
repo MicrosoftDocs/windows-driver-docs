@@ -3,6 +3,11 @@ title: INF File Entries
 author: windows-driver-content
 description: INF File Entries
 ms.assetid: 8af2cbe7-f249-4e2f-940f-b50bc451cabe
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF File Entries

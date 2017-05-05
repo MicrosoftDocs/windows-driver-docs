@@ -2,7 +2,16 @@
 title: Implementing Finish-Install Actions
 description: Implementing Finish-Install Actions
 ms.assetid: accdf2f5-f324-41dc-afc1-18e03b422fcc
-keywords: ["finish-install actions WDK device installations", "actions WDK finish-install", "DI_FLAGSEX_FINISHINSTALL_ACTION", "DIF_FINISHINSTALL_ACTION"]
+keywords:
+- finish-install actions WDK device installations
+- actions WDK finish-install
+- DI_FLAGSEX_FINISHINSTALL_ACTION
+- DIF_FINISHINSTALL_ACTION
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementing Finish-Install Actions

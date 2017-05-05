@@ -2,7 +2,15 @@
 title: Supplying Required Battery Miniclass Driver Functionality
 description: Supplying Required Battery Miniclass Driver Functionality
 ms.assetid: d33d3c8c-f867-40dc-901c-6b0dd5d57dac
-keywords: ["battery miniclass drivers WDK , routines", "routines WDK battery", "battery miniclass drivers WDK , functionality"]
+keywords:
+- battery miniclass drivers WDK , routines
+- routines WDK battery
+- battery miniclass drivers WDK , functionality
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supplying Required Battery Miniclass Driver Functionality

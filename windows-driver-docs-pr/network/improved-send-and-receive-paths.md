@@ -2,7 +2,15 @@
 title: Improved Send and Receive Paths
 description: Improved Send and Receive Paths
 ms.assetid: 7edecb49-576f-4058-92e8-39f14268a130
-keywords: ["NDIS WDK , sending and receiving data", "sending data WDK networking", "receiving data WDK networking"]
+keywords:
+- NDIS WDK , sending and receiving data
+- sending data WDK networking
+- receiving data WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Improved Send and Receive Paths

@@ -2,7 +2,21 @@
 title: Writing a Device Installation Application
 description: Writing a Device Installation Application
 ms.assetid: 9927e2e0-6c8e-437f-98ce-595bd304ec72
-keywords: ["installation applications WDK , about writing installation applications", "device installation applications WDK , about writing installation applications", "Device setup WDK device installations , writing installation applications", "installing devices WDK , writing installation applications", "writing device installation applications", "installation applications WDK", "device installation applications WDK", "applications WDK device installation", "device installations WDK , applications"]
+keywords:
+- installation applications WDK , about writing installation applications
+- device installation applications WDK , about writing installation applications
+- Device setup WDK device installations , writing installation applications
+- installing devices WDK , writing installation applications
+- writing device installation applications
+- installation applications WDK
+- device installation applications WDK
+- applications WDK device installation
+- device installations WDK , applications
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing a Device Installation Application

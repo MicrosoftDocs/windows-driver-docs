@@ -2,7 +2,15 @@
 title: Creating NDIS Interfaces for NDIS Ports
 description: Creating NDIS Interfaces for NDIS Ports
 ms.assetid: 3a856e4d-e32a-4c8a-8fa0-9976966bdf87
-keywords: ["ports WDK NDIS , creating NDIS interfaces", "NDIS ports WDK , creating NDIS interfaces", "registering NDIS interface providers"]
+keywords:
+- ports WDK NDIS , creating NDIS interfaces
+- NDIS ports WDK , creating NDIS interfaces
+- registering NDIS interface providers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating NDIS Interfaces for NDIS Ports

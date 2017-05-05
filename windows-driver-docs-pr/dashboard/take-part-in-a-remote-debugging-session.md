@@ -2,6 +2,11 @@
 title: Take Part in a Remote Debugging Session
 description: Take Part in a Remote Debugging Session
 ms.assetid: d2f298a4-71f8-49d5-a45b-79e3b094e7cb
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Take Part in a Remote Debugging Session

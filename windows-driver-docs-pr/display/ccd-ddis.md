@@ -2,7 +2,15 @@
 title: CCD DDIs
 description: CCD DDIs
 ms.assetid: dde0e0b0-d6d0-4ca7-ae7e-427a650c080f
-keywords: ["miniport drivers WDK display , Connecting and Configuring Displays (CCD)", "Connecting and Configuring Displays (CCD) WDK display", "CCD (Connecting and Configuring Displays) WDK display"]
+keywords:
+- miniport drivers WDK display , Connecting and Configuring Displays (CCD)
+- Connecting and Configuring Displays (CCD) WDK display
+- CCD (Connecting and Configuring Displays) WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CCD DDIs

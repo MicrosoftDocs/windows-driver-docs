@@ -2,6 +2,11 @@
 title: Update a code signing certificate
 description: Update a code signing certificate
 ms.assetid: 120AA970-D981-4E7D-A9BD-68125D90A0EE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Update a code signing certificate

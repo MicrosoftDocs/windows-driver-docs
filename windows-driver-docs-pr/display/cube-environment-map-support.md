@@ -2,7 +2,21 @@
 title: Cube Environment Map Support
 description: Cube Environment Map Support
 ms.assetid: 41666b17-39b0-4022-925f-538455e41f3a
-keywords: ["mapping cube environments", "environment mapping WDK Direct3D", "cube environment maps WDK Direct3D", "lighting WDK Direct3D", "reflections WDK Direct3D", "360-degree environments WDK Direct3D", "real-time environment mapping WDK Direct3D", "circular maps WDK Direct3D", "spherical maps WDK Direct3D"]
+keywords:
+- mapping cube environments
+- environment mapping WDK Direct3D
+- cube environment maps WDK Direct3D
+- lighting WDK Direct3D
+- reflections WDK Direct3D
+- 360-degree environments WDK Direct3D
+- real-time environment mapping WDK Direct3D
+- circular maps WDK Direct3D
+- spherical maps WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cube Environment Map Support

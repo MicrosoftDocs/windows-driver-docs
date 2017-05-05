@@ -2,7 +2,13 @@
 title: PNPCPU Limitations
 description: PNPCPU Limitations
 ms.assetid: e25a54e7-cf6f-4723-9bf3-3b68cce8ec7e
-keywords: ["PNPCPU WDK , limitations"]
+keywords:
+- PNPCPU WDK , limitations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PNPCPU Limitations

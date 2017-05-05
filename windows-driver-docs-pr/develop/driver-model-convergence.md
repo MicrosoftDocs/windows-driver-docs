@@ -2,6 +2,11 @@
 ms.assetid: ACD6E5C3-5CE5-4C3F-BA44-1C87C39EF3C4
 title: Driver convergence model for Windows 10
 description: To make your device work on Windows and Windows Phone releases before Windows 10, you probably needed to write two separate drivers, for example one for Windows 8.1 and one for Windows Phone 8.1.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver convergence model for Windows 10

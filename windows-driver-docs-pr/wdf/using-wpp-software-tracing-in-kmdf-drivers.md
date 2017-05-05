@@ -3,7 +3,16 @@ title: Using WPP Software Tracing in KMDF Drivers
 author: windows-driver-content
 description: Using WPP Software Tracing in KMDF Drivers
 ms.assetid: dad7aa8d-4ced-47b3-80d2-ec9cfb355783
-keywords: ["software tracing WDK , framework-based drivers", "debugging drivers WDK KMDF , software tracing", "tracing WDK , framework-based drivers", "WPP software tracing WDK , framework-based drivers"]
+keywords:
+- software tracing WDK , framework-based drivers
+- debugging drivers WDK KMDF , software tracing
+- tracing WDK , framework-based drivers
+- WPP software tracing WDK , framework-based drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using WPP Software Tracing in KMDF Drivers

@@ -2,6 +2,11 @@
 title: Overview of NDIS QoS for Data Center Bridging
 description: Overview of NDIS QoS for Data Center Bridging
 ms.assetid: 282F8E23-BC56-4F66-B4DC-F241C1FE2AD1
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of NDIS QoS for Data Center Bridging

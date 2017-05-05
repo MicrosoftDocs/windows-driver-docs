@@ -2,13 +2,19 @@
 title: INF DDInstall.FactDef Section
 description: This section should be used in an INF for any manually installed non-PnP device that an end-user might install.
 ms.assetid: df2d46da-4e69-4e3c-b208-1ae0a0f771c9
-keywords: ["INF DDInstall.FactDef Section Device and Driver Installation"]
+keywords:
+- INF DDInstall.FactDef Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DDInstall.FactDef Section
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DDInstall.FactDef Section

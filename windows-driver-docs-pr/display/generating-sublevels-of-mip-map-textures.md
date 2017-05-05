@@ -2,7 +2,14 @@
 title: Generating Sublevels of MIP Map Textures
 description: Generating Sublevels of MIP Map Textures
 ms.assetid: fbfb0d1b-468d-4e7f-865e-bdc7d19f5516
-keywords: ["MIP map textures WDK DirectX 9.0 , generating sublevels", "sublevels of MIP-map textures WDK DirectX 9.0"]
+keywords:
+- MIP map textures WDK DirectX 9.0 , generating sublevels
+- sublevels of MIP-map textures WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Generating Sublevels of MIP Map Textures

@@ -2,7 +2,15 @@
 title: Handling Existing Monitor Configurations
 description: Handling Existing Monitor Configurations
 ms.assetid: b2da12ea-cbcd-4754-a65f-e54ed305f5d7
-keywords: ["monitor configurations WDK display , restore previous", "monitor configurations WDK display , existing monitors", "TMM WDK display , existing monitor configurations"]
+keywords:
+- monitor configurations WDK display , restore previous
+- monitor configurations WDK display , existing monitors
+- TMM WDK display , existing monitor configurations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Existing Monitor Configurations

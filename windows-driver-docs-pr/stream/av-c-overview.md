@@ -3,7 +3,17 @@ title: AV/C Overview
 author: windows-driver-content
 description: AV/C Overview
 ms.assetid: ff9e6dfc-7ab4-4b56-8b47-d3ea46b579e0
-keywords: ["AV/C WDK , about AV/C", "Avc.sys function driver WDK", "peer Avc.sys mode WDK AV/C", "virtual Avc.sys mode WDK AV/C", "Avc.sys function driver WDK , about Avc.sys function driver"]
+keywords:
+- AV/C WDK , about AV/C
+- Avc.sys function driver WDK
+- peer Avc.sys mode WDK AV/C
+- virtual Avc.sys mode WDK AV/C
+- Avc.sys function driver WDK , about Avc.sys function driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C Overview

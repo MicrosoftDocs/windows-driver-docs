@@ -2,7 +2,19 @@
 title: Miniport Adapter Shutdown
 description: Miniport Adapter Shutdown
 ms.assetid: 57d964f1-03c7-4b54-9d04-1d187c96e052
-keywords: ["miniport adapters WDK networking , shutdown", "adapters WDK networking , shutdown", "MiniportShutdownEx", "miniport drivers WDK networking , system shutdown", "NDIS miniport drivers WDK , system shutdown", "shutdown WDK networking", "system shutdown WDK network"]
+keywords:
+- miniport adapters WDK networking , shutdown
+- adapters WDK networking , shutdown
+- MiniportShutdownEx
+- miniport drivers WDK networking , system shutdown
+- NDIS miniport drivers WDK , system shutdown
+- shutdown WDK networking
+- system shutdown WDK network
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Adapter Shutdown

@@ -1,6 +1,11 @@
 ---
-Description: This section describes a USB Request Block (URB) and provides information about how a USB client driver can use Windows Driver Model (WDM) routines to allocate, build, and submit URBs to the USB driver stack.
+Description: Information about how a USB client driver can allocate, build, and submit URBs to the USB driver stack.
 title: USB Request Blocks (URBs)
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Request Blocks (URBs)

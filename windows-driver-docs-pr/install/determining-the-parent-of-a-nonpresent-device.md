@@ -2,7 +2,21 @@
 title: Determining the Parent of a Nonpresent Device
 description: Determining the Parent of a Nonpresent Device
 ms.assetid: 2d5948db-5844-4f78-b3a6-2f9f88ee1b24
-keywords: ["SetupAPI functions WDK , determining parents", "nonpresent devices WDK", "parent device determining WDK SetupAPI", "device parents WDK", "parent-child relationships WDK", "saving parent-child relationships", "retrieving parent-child relationships", "connected sequence of ancestors WDK", "ancestors WDK"]
+keywords:
+- SetupAPI functions WDK , determining parents
+- nonpresent devices WDK
+- parent device determining WDK SetupAPI
+- device parents WDK
+- parent-child relationships WDK
+- saving parent-child relationships
+- retrieving parent-child relationships
+- connected sequence of ancestors WDK
+- ancestors WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Determining the Parent of a Nonpresent Device

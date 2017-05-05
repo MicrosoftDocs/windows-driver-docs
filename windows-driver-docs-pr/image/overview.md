@@ -3,6 +3,11 @@ title: Distributed Scan Management (DSM) overview
 author: windows-driver-content
 description: Distributed Scan Management (DSM) enables IT administrators to manage scanning services for organizations with many users.
 ms.assetid: e9a45ae0-0ec8-4d6c-8486-ae88bdaa1f8c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Distributed Scan Management (DSM) overview

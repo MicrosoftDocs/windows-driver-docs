@@ -2,7 +2,18 @@
 title: Identifiers for PCI Devices
 description: Identifiers for PCI Devices
 ms.assetid: 58d52af8-9afd-441f-9ed9-92f9e2775226
-keywords: ["device identification strings WDK , PCI devices", "identification strings WDK device , PCI devices", "identifiers WDK device , PCI devices", "PCI device identifiers WDK device installations", "hardware IDs WDK device installations", "compatible IDs WDK device installations"]
+keywords:
+- device identification strings WDK , PCI devices
+- identification strings WDK device , PCI devices
+- identifiers WDK device , PCI devices
+- PCI device identifiers WDK device installations
+- hardware IDs WDK device installations
+- compatible IDs WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifiers for PCI Devices

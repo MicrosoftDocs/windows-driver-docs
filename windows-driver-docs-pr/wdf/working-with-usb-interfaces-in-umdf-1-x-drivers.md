@@ -3,7 +3,16 @@ title: Working with USB Interfaces in UMDF 1.x Drivers
 author: windows-driver-content
 description: Working with USB Interfaces in UMDF 1.x Drivers
 ms.assetid: fc25e3b2-1631-445e-9340-a8cc92c68733
-keywords: ["UMDF WDK , USB interfaces", "User-Mode Driver Framework WDK , USB interfaces", "user-mode drivers WDK UMDF , USB interfaces", "USB interfaces WDK UMDF"]
+keywords:
+- UMDF WDK , USB interfaces
+- User-Mode Driver Framework WDK , USB interfaces
+- user-mode drivers WDK UMDF , USB interfaces
+- USB interfaces WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Working with USB Interfaces in UMDF 1.x Drivers

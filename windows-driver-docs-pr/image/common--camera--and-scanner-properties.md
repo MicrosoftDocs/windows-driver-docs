@@ -3,6 +3,11 @@ title: Common, Camera, and Scanner Properties
 author: windows-driver-content
 description: Common, Camera, and Scanner Properties
 ms.assetid: 7d988a1b-4c2f-43f7-be09-a250d9ede35c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Common, Camera, and Scanner Properties

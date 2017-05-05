@@ -3,7 +3,17 @@ title: Methods for Specifying Pages
 author: windows-driver-content
 description: Methods for Specifying Pages
 ms.assetid: 76006a2b-37b9-4490-913e-dcfc01812d43
-keywords: ["Common Property Sheet User Interface WDK print , specifying pages", "CPSUI WDK print , specifying pages", "property sheet pages WDK print , specifying", "COMPROPSHEETUI", "PROPSHEETPAGE"]
+keywords:
+- Common Property Sheet User Interface WDK print , specifying pages
+- CPSUI WDK print , specifying pages
+- property sheet pages WDK print , specifying
+- COMPROPSHEETUI
+- PROPSHEETPAGE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Methods for Specifying Pages

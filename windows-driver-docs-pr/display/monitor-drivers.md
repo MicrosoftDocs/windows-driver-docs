@@ -2,7 +2,15 @@
 title: Monitor Drivers
 description: Monitor Drivers
 ms.assetid: 6352c3fd-1a5f-4137-b76e-35c5b82a56c7
-keywords: ["display devices WDK", "monitor drivers WDK", "display drivers WDK , monitor drivers"]
+keywords:
+- display devices WDK
+- monitor drivers WDK
+- display drivers WDK , monitor drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Monitor Drivers

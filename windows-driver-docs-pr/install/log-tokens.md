@@ -2,7 +2,17 @@
 title: Log Tokens
 description: Log Tokens
 ms.assetid: f666d457-eb0a-4482-a8ac-e2921ab8c5a9
-keywords: ["log tokens WDK SetupAPI", "text logs WDK SetupAPI , log tokens", "sections WDK SetupAPI logging", "identifying text log sections", "SetupAPI logging WDK Windows Vista , log tokens"]
+keywords:
+- log tokens WDK SetupAPI
+- text logs WDK SetupAPI , log tokens
+- sections WDK SetupAPI logging
+- identifying text log sections
+- SetupAPI logging WDK Windows Vista , log tokens
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Log Tokens

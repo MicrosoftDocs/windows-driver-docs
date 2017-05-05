@@ -2,7 +2,14 @@
 title: Stopping a NetDMA Provider
 description: Stopping a NetDMA Provider
 ms.assetid: efa83c49-bdec-438d-a2de-e7f13f2466b9
-keywords: ["NetDMA provider drivers WDK networking , stopping", "stopping NetDMA provider drivers"]
+keywords:
+- NetDMA provider drivers WDK networking , stopping
+- stopping NetDMA provider drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Stopping a NetDMA Provider

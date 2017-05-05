@@ -2,7 +2,16 @@
 title: Types of Filter Drivers
 description: Types of Filter Drivers
 ms.assetid: d3a92f10-5f5c-4640-ae03-1bf4e17c45ac
-keywords: ["filter drivers WDK networking , types", "NDIS filter drivers WDK , types", "modifying filter drivers WDK networking", "monitoring filter drivers WDK networking"]
+keywords:
+- filter drivers WDK networking , types
+- NDIS filter drivers WDK , types
+- modifying filter drivers WDK networking
+- monitoring filter drivers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Types of Filter Drivers

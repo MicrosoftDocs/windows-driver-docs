@@ -2,6 +2,11 @@
 title: MB interface terms
 ms.assetid: 627F7C95-96E5-43C4-B8AB-DDA5A4392B38
 description: Provides a list of mobile broadband terminology used in the MB interface
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MB Interface Terms

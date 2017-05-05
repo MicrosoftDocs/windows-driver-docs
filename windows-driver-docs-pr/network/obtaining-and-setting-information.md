@@ -2,7 +2,14 @@
 title: Obtaining and Setting Information
 description: Obtaining and Setting Information
 ms.assetid: 48de3b16-0aaf-4703-ac19-03d7808b687a
-keywords: ["connection-oriented NDIS WDK , information gathering", "CoNDIS WDK networking , information gathering"]
+keywords:
+- connection-oriented NDIS WDK , information gathering
+- CoNDIS WDK networking , information gathering
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining and Setting Information

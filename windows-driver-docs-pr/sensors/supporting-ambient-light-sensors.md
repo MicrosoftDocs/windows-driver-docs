@@ -3,6 +3,11 @@ title: Supporting ambient light sensors
 author: windows-driver-content
 description: Supporting ambient light sensors
 ms.assetid: a0875084-c093-4659-91b9-375450f65234
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting ambient light sensors

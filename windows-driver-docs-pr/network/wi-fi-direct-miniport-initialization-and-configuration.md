@@ -2,6 +2,11 @@
 title: Wi-Fi Direct Miniport Initialization and Configuration
 description: OverviewWi-Fi Direct functionality is enabled by Windows through additional NDIS ports and operation modes.
 ms.assetid: 05FA8B27-F8BB-4B6E-A2AB-60C114A3A51C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Wi-Fi Direct Miniport Initialization and Configuration

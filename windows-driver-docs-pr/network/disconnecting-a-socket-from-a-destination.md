@@ -2,7 +2,18 @@
 title: Disconnecting a Socket from a Destination
 description: Disconnecting a Socket from a Destination
 ms.assetid: 83755eb4-a24e-4fef-858d-d58318227dc0
-keywords: ["Winsock Kernel WDK networking , disconnecting", "WSK WDK networking , disconnecting", "established socket connections WDK Winsock Kernel", "connections WDK Winsock Kernel", "disconnections WDK Winsock Kernel", "destination connections WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , disconnecting
+- WSK WDK networking , disconnecting
+- established socket connections WDK Winsock Kernel
+- connections WDK Winsock Kernel
+- disconnections WDK Winsock Kernel
+- destination connections WDK Winsock Kernel
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Disconnecting a Socket from a Destination

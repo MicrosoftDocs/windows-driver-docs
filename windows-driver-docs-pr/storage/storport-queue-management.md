@@ -3,7 +3,14 @@ title: Storport Queue Management
 author: windows-driver-content
 description: Storport Queue Management
 ms.assetid: 29fddcac-abc9-4aa4-8485-56120805ae34
-keywords: ["Storport drivers WDK , queue management", "queues WDK Storport"]
+keywords:
+- Storport drivers WDK , queue management
+- queues WDK Storport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storport Queue Management

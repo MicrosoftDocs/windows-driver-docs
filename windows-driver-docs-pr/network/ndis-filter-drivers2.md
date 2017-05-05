@@ -2,7 +2,16 @@
 title: NDIS Filter Drivers
 description: NDIS Filter Drivers
 ms.assetid: 055737d1-8e0e-46e9-a92e-2ab99e7d3595
-keywords: ["filter drivers WDK networking", "network drivers WDK , filter drivers", "NDIS WDK , filter drivers", "NDIS filter drivers WDK"]
+keywords:
+- filter drivers WDK networking
+- network drivers WDK , filter drivers
+- NDIS WDK , filter drivers
+- NDIS filter drivers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Filter Drivers

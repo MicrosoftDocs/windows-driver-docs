@@ -2,6 +2,11 @@
 title: Obtaining and Updating Power Management Parameters
 description: Obtaining and Updating Power Management Parameters
 ms.assetid: 46c4d2ab-e6d9-4d23-bf40-0037b80b01af
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining and Updating Power Management Parameters

@@ -2,6 +2,11 @@
 title: C28648
 description: Warning C28648 PulseEvent is an unreliable function.
 ms.assetid: 6132e35c-f1ae-44cc-9a6c-b61d6e7f8c57
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28648

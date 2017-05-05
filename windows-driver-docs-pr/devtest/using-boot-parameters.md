@@ -2,7 +2,21 @@
 title: Using Boot Parameters
 description: Using Boot Parameters
 ms.assetid: f249f312-cfc5-41b2-ad67-75497a929e35
-keywords: ["boot entries WDK", "boot options WDK , boot parameters", "driver testing WDK boot options", "testing drivers WDK boot options", "debugging drivers WDK boot options", "driver debugging WDK boot options", "NVRAM boot options WDK , boot parameters", "EFI NVRAM boot options WDK , boot parameters", "Boot.ini files WDK , boot parameters"]
+keywords:
+- boot entries WDK
+- boot options WDK , boot parameters
+- driver testing WDK boot options
+- testing drivers WDK boot options
+- debugging drivers WDK boot options
+- driver debugging WDK boot options
+- NVRAM boot options WDK , boot parameters
+- EFI NVRAM boot options WDK , boot parameters
+- Boot.ini files WDK , boot parameters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Boot Parameters

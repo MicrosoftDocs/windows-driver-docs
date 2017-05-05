@@ -2,7 +2,18 @@
 title: Kernel-Mode Code Signing Requirements
 description: Kernel-Mode Code Signing Requirements
 ms.assetid: da02fcb3-d073-42cd-8247-71e2e9e93f65
-keywords: ["driver signing WDK , kernel-mode code signing requirements", "signing drivers WDK , kernel-mode code signing requirements", "digital signatures WDK , kernel-mode code signing requirements", "signatures WDK , kernel-mode code signing requirements", "kernel-mode code signing requirements WDK", "kernel-mode driver signing WDK"]
+keywords:
+- driver signing WDK , kernel-mode code signing requirements
+- signing drivers WDK , kernel-mode code signing requirements
+- digital signatures WDK , kernel-mode code signing requirements
+- signatures WDK , kernel-mode code signing requirements
+- kernel-mode code signing requirements WDK
+- kernel-mode driver signing WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Kernel-Mode Code Signing Requirements

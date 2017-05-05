@@ -3,7 +3,20 @@ title: I/O Queue States
 author: windows-driver-content
 description: I/O Queue States
 ms.assetid: 99519d1c-20e5-4a32-8462-19ec9f907506
-keywords: ["I/O queues WDK KMDF , states", "states WDK I/O queue", "current I/O queue state WDK KMDF", "idle I/O queue state WDK KMDF", "ready I/O queue state WDK KMDF", "stopped I/O queue state WDK KMDF", "drained I/O queue state WDK KMDF", "purged I/O queue state WDK KMDF"]
+keywords:
+- I/O queues WDK KMDF , states
+- states WDK I/O queue
+- current I/O queue state WDK KMDF
+- idle I/O queue state WDK KMDF
+- ready I/O queue state WDK KMDF
+- stopped I/O queue state WDK KMDF
+- drained I/O queue state WDK KMDF
+- purged I/O queue state WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # I/O Queue States

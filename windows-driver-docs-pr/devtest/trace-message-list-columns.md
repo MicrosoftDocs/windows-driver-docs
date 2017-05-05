@@ -2,7 +2,13 @@
 title: Trace Message List Columns
 description: Trace Message List Columns
 ms.assetid: d0f5873e-9b01-4a74-8448-90194545da1f
-keywords: ["Trace Message Lists WDK"]
+keywords:
+- Trace Message Lists WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Message List Columns

@@ -3,7 +3,16 @@ title: WHEA Policy Settings
 author: windows-driver-content
 description: WHEA Policy Settings
 ms.assetid: 65ef70b7-a517-4428-9e6d-09c6da84e798
-keywords: ["predictive failure analysis (PFA) WDK WHEA , registry settings", "registry settings WDK WHEA", "registry settings WDK WHEA , predictive failure analysis (PFA)", "policy settings WDK WHEA"]
+keywords:
+- predictive failure analysis (PFA) WDK WHEA , registry settings
+- registry settings WDK WHEA
+- registry settings WDK WHEA , predictive failure analysis (PFA)
+- policy settings WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WHEA Policy Settings

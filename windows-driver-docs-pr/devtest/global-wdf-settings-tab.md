@@ -2,7 +2,14 @@
 title: Global WDF Settings Tab
 description: This topic provides detailed information about WDF Verifier's Global WDF Settings page. This page presents global (system-wide) WDF verification options, and shows UMDF host processes with hosted drivers.
 ms.assetid: 9b976a59-329f-41a7-9eff-8f18d75cdb42
-keywords: ["WDF Verifier WDK , managing UMDF settings", "UMDF Verifier settings WDK WDF"]
+keywords:
+- WDF Verifier WDK , managing UMDF settings
+- UMDF Verifier settings WDK WDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Global WDF Settings Tab

@@ -2,7 +2,14 @@
 title: Cleaning up a Process for a SAN
 description: Cleaning up a Process for a SAN
 ms.assetid: a6ae5882-4cde-43cf-8814-ea7ef5acee58
-keywords: ["SAN process cleanups WDK", "cleaning up SAN process WDK"]
+keywords:
+- SAN process cleanups WDK
+- cleaning up SAN process WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cleaning up a Process for a SAN

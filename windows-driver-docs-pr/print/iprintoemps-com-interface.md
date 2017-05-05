@@ -3,7 +3,13 @@ title: IPrintOemPS COM Interface
 author: windows-driver-content
 description: IPrintOemPS COM Interface
 ms.assetid: 504db6ab-291e-4fba-995d-49a22a3a7c7f
-keywords: ["IPrintOemPS"]
+keywords:
+- IPrintOemPS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IPrintOemPS COM Interface

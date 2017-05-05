@@ -2,7 +2,15 @@
 title: Global Logger Trace Session
 description: Global Logger Trace Session
 ms.assetid: d78ce5d8-a9f3-47d6-be7a-eeaeacd7b872
-keywords: ["trace sessions WDK , Global Logger", "Global Logger trace session WDK , about Global Logger sessions", "Global Logger trace session WDK , registry entries"]
+keywords:
+- trace sessions WDK , Global Logger
+- Global Logger trace session WDK , about Global Logger sessions
+- Global Logger trace session WDK , registry entries
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Global Logger Trace Session

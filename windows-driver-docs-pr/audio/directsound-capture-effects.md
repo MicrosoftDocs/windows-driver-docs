@@ -2,7 +2,18 @@
 title: DirectSound Capture Effects
 description: DirectSound Capture Effects
 ms.assetid: 5dcadcea-0b6a-447d-828d-a7f256f97088
-keywords: ["DirectSound WDK audio , capture effects", "acoustic echo cancellation WDK audio", "noise suppression WDK audio", "AEC WDK audio", "capture effects WDK audio", "full-duplex applications WDK audio"]
+keywords:
+- DirectSound WDK audio , capture effects
+- acoustic echo cancellation WDK audio
+- noise suppression WDK audio
+- AEC WDK audio
+- capture effects WDK audio
+- full-duplex applications WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectSound Capture Effects

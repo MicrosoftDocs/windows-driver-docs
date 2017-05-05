@@ -2,7 +2,17 @@
 title: NET\_BUFFER Structure
 description: NET\_BUFFER Structure
 ms.assetid: 6ba44aef-d4e6-4f18-8ae3-aebd8045791f
-keywords: ["NET_BUFFER", "network data WDK , structures", "data WDK networking , structures", "packets WDK networking , data structures", "NDIS_PACKET"]
+keywords:
+- NET_BUFFER
+- network data WDK , structures
+- data WDK networking , structures
+- packets WDK networking , data structures
+- NDIS_PACKET
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NET\_BUFFER Structure

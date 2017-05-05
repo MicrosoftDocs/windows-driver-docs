@@ -3,6 +3,11 @@ title: Named Kernel Objects for WIA Drivers
 author: windows-driver-content
 description: Named Kernel Objects for WIA Drivers
 ms.assetid: 1a8311b7-12c7-4009-a3c8-dcee30b0a442
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Named Kernel Objects for WIA Drivers

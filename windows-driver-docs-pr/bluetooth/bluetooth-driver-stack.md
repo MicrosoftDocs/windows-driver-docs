@@ -2,7 +2,15 @@
 title: Bluetooth Driver Stack
 description: Bluetooth Driver Stack
 ms.assetid: fb13c300-f8ed-4d82-8625-79db4d7feac5
-keywords: ["Bluetooth WDK , driver stack", "driver stacks WDK Bluetooth", "stacks WDK Bluetooth"]
+keywords:
+- Bluetooth WDK , driver stack
+- driver stacks WDK Bluetooth
+- stacks WDK Bluetooth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth Driver Stack

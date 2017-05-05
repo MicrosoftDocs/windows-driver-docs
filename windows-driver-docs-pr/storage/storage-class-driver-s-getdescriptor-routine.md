@@ -3,7 +3,13 @@ title: Storage Class Driver's GetDescriptor Routine
 author: windows-driver-content
 description: Storage Class Driver's GetDescriptor Routine
 ms.assetid: d1ddcfe8-f276-4e45-82b7-0f07f0526c71
-keywords: ["GetDescriptor"]
+keywords:
+- GetDescriptor
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Class Driver's GetDescriptor Routine

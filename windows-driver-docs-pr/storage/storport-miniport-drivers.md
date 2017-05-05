@@ -3,7 +3,16 @@ title: Storport Miniport Drivers
 author: windows-driver-content
 description: Storport Miniport Drivers
 ms.assetid: 17ab5a07-b7c3-4fed-acf7-3e2491b7bd56
-keywords: ["Storport miniport drivers WDK", "Storport miniport drivers WDK , routines listed", "storage miniport drivers WDK , Storport miniport drivers", "miniport drivers WDK storage , Storport miniport drivers"]
+keywords:
+- Storport miniport drivers WDK
+- Storport miniport drivers WDK , routines listed
+- storage miniport drivers WDK , Storport miniport drivers
+- miniport drivers WDK storage , Storport miniport drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storport Miniport Drivers

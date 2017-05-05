@@ -3,7 +3,16 @@ title: Removing IEEE 1394 Virtual Devices
 author: windows-driver-content
 description: Removing IEEE 1394 Virtual Devices
 ms.assetid: ea2d4b9e-7774-42dc-98dd-d95298012d72
-keywords: ["emulation drivers WDK IEEE 1394 bus", "hardware emulation drivers WDK IEEE 1394 bus", "virtual devices WDK IEEE 1394 bus", "removing virtual devices"]
+keywords:
+- emulation drivers WDK IEEE 1394 bus
+- hardware emulation drivers WDK IEEE 1394 bus
+- virtual devices WDK IEEE 1394 bus
+- removing virtual devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing IEEE 1394 Virtual Devices

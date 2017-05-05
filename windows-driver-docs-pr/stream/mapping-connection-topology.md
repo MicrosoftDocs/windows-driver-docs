@@ -3,7 +3,18 @@ title: Mapping Connection Topology
 author: windows-driver-content
 description: Mapping Connection Topology
 ms.assetid: f11ffc48-a117-4b75-bc19-7a3762e6ba19
-keywords: ["method sets WDK BDA , mapping connection topology", "property sets WDK BDA , mapping connection topology", "topology WDK BDA", "mapping connection topology", "connection topology mapping WDK BDA", "BDA_TEMPLATE_CONNECTION"]
+keywords:
+- method sets WDK BDA , mapping connection topology
+- property sets WDK BDA , mapping connection topology
+- topology WDK BDA
+- mapping connection topology
+- connection topology mapping WDK BDA
+- BDA_TEMPLATE_CONNECTION
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping Connection Topology

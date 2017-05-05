@@ -2,7 +2,13 @@
 title: Selecting Drivers to be Verified
 description: Selecting Drivers to be Verified
 ms.assetid: a752dea1-f49c-4e58-9e56-6b54701c760e
-keywords: ["Driver Verifier WDK , driver selections"]
+keywords:
+- Driver Verifier WDK , driver selections
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Selecting Drivers to be Verified

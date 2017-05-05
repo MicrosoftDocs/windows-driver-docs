@@ -2,6 +2,11 @@
 title: AutoplayHandler
 description: AutoplayHandler
 ms.assetid: 0ee7ac9b-7c1a-4267-b718-ba110ef5b12d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AutoplayHandler

@@ -2,7 +2,21 @@
 title: Specifying Nonlocal Display Memory Heaps
 description: Specifying Nonlocal Display Memory Heaps
 ms.assetid: 4320b6e7-81ef-4bb4-bda8-680467b6421f
-keywords: ["heaps WDK DirectDraw", "display memory WDK DirectDraw , heaps", "nonlocal display memory WDK DirectDraw , heaps", "AGP WDK DirectDraw , heaps", "drawing AGP support WDK DirectDraw , heaps", "DirectDraw AGP support WDK Windows 2000 display , heaps", "memory WDK DirectDraw AGP , heaps", "linear heaps WDK DirectDraw", "physical heaps WDK DirectDraw"]
+keywords:
+- heaps WDK DirectDraw
+- display memory WDK DirectDraw , heaps
+- nonlocal display memory WDK DirectDraw , heaps
+- AGP WDK DirectDraw , heaps
+- drawing AGP support WDK DirectDraw , heaps
+- DirectDraw AGP support WDK Windows 2000 display , heaps
+- memory WDK DirectDraw AGP , heaps
+- linear heaps WDK DirectDraw
+- physical heaps WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Nonlocal Display Memory Heaps

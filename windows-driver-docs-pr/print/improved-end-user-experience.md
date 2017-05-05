@@ -3,7 +3,15 @@ title: Improved End-User Experience
 author: windows-driver-content
 description: Improved End-User Experience
 ms.assetid: d87062f2-2832-4443-b9f0-97e34f79c47f
-keywords: ["Print Tickets WDK , XPSDrv", "XPSDrv printer drivers WDK , end-user improvements", "Print Capabilities WDK , XPSDrv"]
+keywords:
+- Print Tickets WDK , XPSDrv
+- XPSDrv printer drivers WDK , end-user improvements
+- Print Capabilities WDK , XPSDrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Improved End-User Experience

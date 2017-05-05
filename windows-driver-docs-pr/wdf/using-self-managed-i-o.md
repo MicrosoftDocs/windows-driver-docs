@@ -3,7 +3,19 @@ title: Using Self-Managed I/O
 author: windows-driver-content
 description: Using Self-Managed I/O
 ms.assetid: 539b3618-44bb-41fd-a9f2-ed6a377c94e2
-keywords: ["PnP WDK KMDF , self-managed I/O", "Plug and Play WDK KMDF , self-managed I/O", "power management WDK KMDF , self-managed I/O", "self-managed I/O WDK KMDF", "I/O self management WDK KMDF", "surprise device removal WDK KMDF", "unexpected device removal WDK KMDF"]
+keywords:
+- PnP WDK KMDF , self-managed I/O
+- Plug and Play WDK KMDF , self-managed I/O
+- power management WDK KMDF , self-managed I/O
+- self-managed I/O WDK KMDF
+- I/O self management WDK KMDF
+- surprise device removal WDK KMDF
+- unexpected device removal WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Self-Managed I/O

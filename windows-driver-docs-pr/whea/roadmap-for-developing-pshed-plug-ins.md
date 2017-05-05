@@ -3,6 +3,11 @@ title: Roadmap for Developing PSHED Plug-Ins
 author: windows-driver-content
 description: Roadmap for Developing PSHED Plug-Ins
 ms.assetid: 3e1eb744-e480-4478-9705-94da8029c382
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Roadmap for Developing PSHED Plug-Ins

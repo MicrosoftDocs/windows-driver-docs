@@ -2,6 +2,11 @@
 title: System Calls to Recommend VidPN Topology
 description: System Calls to Recommend VidPN Topology
 ms.assetid: cc23be93-be31-4069-960c-268a8b151063
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System Calls to Recommend VidPN Topology

@@ -2,7 +2,18 @@
 title: Using SetupAPI To Verify Driver Authenticode Signatures
 description: Using SetupAPI To Verify Driver Authenticode Signatures
 ms.assetid: 2019d77d-2d98-4bae-8d9d-aa41e47f3811
-keywords: ["SetupAPI functions WDK , verifying signatures", "Authenticode signatures WDK", "signatures WDK , Authenticode", "digital signatures WDK , Authenticode", "verifying Authenticode signatures", "checking Authenticode signatures"]
+keywords:
+- SetupAPI functions WDK , verifying signatures
+- Authenticode signatures WDK
+- signatures WDK , Authenticode
+- digital signatures WDK , Authenticode
+- verifying Authenticode signatures
+- checking Authenticode signatures
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using SetupAPI To Verify Driver Authenticode Signatures

@@ -2,6 +2,11 @@
 title: ServiceIconFile
 description: ServiceIconFile
 ms.assetid: a35a121d-66a8-485e-ac12-adc653db3572
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ServiceIconFile

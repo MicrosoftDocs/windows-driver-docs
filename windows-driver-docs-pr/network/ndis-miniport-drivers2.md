@@ -1,15 +1,19 @@
 ---
-title: NDIS Miniport Drivers
-description: NDIS Miniport Drivers
+title: Miniport drivers
+description: Miniport drivers
 ms.assetid: d0b8f143-2966-4338-9d2f-96e7e9216b3a
-keywords: ["miniport drivers WDK networking , architecture", "NDIS miniport drivers WDK , architecture", "connectionless drivers WDK networking"]
+keywords:
+- miniport drivers WDK networking , architecture
+- NDIS miniport drivers WDK , architecture
+- connectionless drivers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# NDIS Miniport Drivers
-
-
-## <a href="" id="ddk-ndis-miniport-drivers-ng1"></a>
-
+# Miniport drivers
 
 An *NDIS miniport driver* has two basic functions:
 
@@ -25,7 +29,7 @@ The following send and receive operations illustrate the interaction of miniport
 
 -   When a NIC receives a packet addressed to itself, it can post a hardware interrupt that is handled by NDIS or the NIC's miniport driver. NDIS notifies the NIC's miniport driver by calling the appropriate *MiniportXxx* function. The miniport driver sets up the transfer of data from the NIC and then indicates the presence of the received packet to bound higher-level drivers by calling the appropriate **Ndis*Xxx*** function.
 
-### Connectionless and Connection-Oriented Miniport Drivers
+## Connectionless and Connection-Oriented Miniport Drivers
 
 NDIS supports miniport drivers for both connectionless environments and connection-oriented environments.
 

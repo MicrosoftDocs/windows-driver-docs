@@ -2,7 +2,13 @@
 title: Compressed Video Decoding
 description: Compressed Video Decoding
 ms.assetid: 79341948-7fc5-4373-9d46-cfaa027b229a
-keywords: ["decoding WDK DirectDraw"]
+keywords:
+- decoding WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compressed Video Decoding

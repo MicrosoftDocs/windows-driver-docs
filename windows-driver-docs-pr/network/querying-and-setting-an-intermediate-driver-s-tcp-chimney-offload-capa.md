@@ -2,7 +2,15 @@
 title: Querying and setting TCP chimney offload for intermediate drivers
 description: Querying and Setting an Intermediate Driver's TCP Chimney Offload Capabilities
 ms.assetid: afa7fadf-81cf-4efb-8c66-5bd7af3c95b9
-keywords: ["intermediate drivers WDK TCP chimney offload , capabilities", "capabilities WDK TCP chimney offload", "querying TCP chimney offload capabilities"]
+keywords:
+- intermediate drivers WDK TCP chimney offload , capabilities
+- capabilities WDK TCP chimney offload
+- querying TCP chimney offload capabilities
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying and Setting an Intermediate Driver's TCP Chimney Offload Capabilities

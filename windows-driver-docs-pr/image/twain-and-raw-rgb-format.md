@@ -3,6 +3,11 @@ title: TWAIN and Raw RGB Format
 author: windows-driver-content
 description: TWAIN and Raw RGB Format
 ms.assetid: 0de4a547-6c8e-4fbf-a7a3-7af440bf72f3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TWAIN and Raw RGB Format

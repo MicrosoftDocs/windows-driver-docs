@@ -3,6 +3,11 @@ title: Adding Attachments to Images
 author: windows-driver-content
 description: Adding Attachments to Images
 ms.assetid: 704f541b-b98c-44a8-bb19-5d5d0d1eab78
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Attachments to Images

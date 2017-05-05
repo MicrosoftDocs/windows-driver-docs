@@ -3,6 +3,11 @@ title: User Interface Extension Registry Entries
 author: windows-driver-content
 description: User Interface Extension Registry Entries
 ms.assetid: 1ddf12a1-50e9-4f6e-9394-5bb1afb67798
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User Interface Extension Registry Entries

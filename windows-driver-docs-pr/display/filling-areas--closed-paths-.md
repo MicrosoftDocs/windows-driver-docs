@@ -2,7 +2,18 @@
 title: Filling Areas (Closed Paths)
 description: Filling Areas (Closed Paths)
 ms.assetid: 9dda1f0f-90e7-480b-aaeb-cb7781a1fe6c
-keywords: ["GDI WDK Windows 2000 display , paths, closed", "graphics drivers WDK Windows 2000 display , paths, closed", "drawing WDK GDI , paths, closed", "filling paths WDK GDI , closed", "paths WDK GDI , closed", "closed paths WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , paths, closed
+- graphics drivers WDK Windows 2000 display , paths, closed
+- drawing WDK GDI , paths, closed
+- filling paths WDK GDI , closed
+- paths WDK GDI , closed
+- closed paths WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filling Areas (Closed Paths)

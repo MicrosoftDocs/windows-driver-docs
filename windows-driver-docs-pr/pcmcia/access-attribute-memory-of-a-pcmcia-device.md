@@ -2,7 +2,15 @@
 title: Access Attribute Memory of a PCMCIA Device
 description: Access Attribute Memory of a PCMCIA Device
 ms.assetid: 270b8821-6322-4694-83eb-de319197dd6a
-keywords: ["PCMCIA WDK buses , attribute memory", "attribute memory WDK PCMCIA bus", "attribute memory WDK PCMCIA bus , about attribute memory"]
+keywords:
+- PCMCIA WDK buses , attribute memory
+- attribute memory WDK PCMCIA bus
+- attribute memory WDK PCMCIA bus , about attribute memory
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Access Attribute Memory of a PCMCIA Device

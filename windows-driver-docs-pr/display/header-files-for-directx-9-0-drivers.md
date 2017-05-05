@@ -2,7 +2,13 @@
 title: Header Files for DirectX 9.0 Drivers
 description: Header Files for DirectX 9.0 Drivers
 ms.assetid: b8628c92-0983-4f3a-af64-ef54201ee689
-keywords: ["header files WDK DirectX 9.0"]
+keywords:
+- header files WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Header Files for DirectX 9.0 Drivers

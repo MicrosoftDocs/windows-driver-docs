@@ -2,7 +2,15 @@
 title: Overview of Scan Operations
 description: Overview of Scan Operations
 ms.assetid: 2cdd4f98-eaf9-40c2-a199-1d392fa288cb
-keywords: ["scan operations WDK Native 802.11 , about scan operations", "passive scans WDK Native 802.11", "active scans WDK Native 802.11"]
+keywords:
+- scan operations WDK Native 802.11 , about scan operations
+- passive scans WDK Native 802.11
+- active scans WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of Scan Operations

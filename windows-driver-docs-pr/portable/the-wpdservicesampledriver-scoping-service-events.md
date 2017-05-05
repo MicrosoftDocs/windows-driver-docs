@@ -1,6 +1,11 @@
 ---
 Description: Scoping Service Events
 title: Scoping Service Events
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Scoping Service Events

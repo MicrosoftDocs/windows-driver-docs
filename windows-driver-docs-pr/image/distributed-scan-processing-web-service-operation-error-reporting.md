@@ -3,6 +3,11 @@ title: Distributed Scan Processing Web Service Operation Error Reporting
 author: windows-driver-content
 description: Distributed Scan Processing Web Service Operation Error Reporting
 ms.assetid: d0d8f543-466e-4270-99cd-624db44bd250
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Distributed Scan Processing Web Service Operation Error Reporting

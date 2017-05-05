@@ -3,7 +3,23 @@ title: Initializing a Subunit Driver and Establishing Pin Connections
 author: windows-driver-content
 description: Initializing a Subunit Driver and Establishing Pin Connections
 ms.assetid: 08c7a604-3aa5-4ee0-be55-b58bea0e6df1
-keywords: ["Avc.sys function driver WDK , initializing subunit drivers", "Avc.sys function driver WDK , pin connections", "pin connections WDK AV/C", "connections WDK AV/C", "initializing AV/C subunit drivers", "pin counts WDK AV/C", "formats WDK AV/C", "data formats WDK AVStream", "AVCCONNECTINFO", "external plug connections WDK AV/C", "KSPIN_DESCRIPTOR"]
+keywords:
+- Avc.sys function driver WDK , initializing subunit drivers
+- Avc.sys function driver WDK , pin connections
+- pin connections WDK AV/C
+- connections WDK AV/C
+- initializing AV/C subunit drivers
+- pin counts WDK AV/C
+- formats WDK AV/C
+- data formats WDK AVStream
+- AVCCONNECTINFO
+- external plug connections WDK AV/C
+- KSPIN_DESCRIPTOR
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing a Subunit Driver and Establishing Pin Connections

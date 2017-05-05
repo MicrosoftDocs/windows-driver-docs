@@ -3,7 +3,23 @@ title: Common Control Nodes and Filters
 author: windows-driver-content
 description: Common Control Nodes and Filters
 ms.assetid: 33e0605b-0fd1-4506-a48b-427976e94dfc
-keywords: ["control nodes WDK BDA", "nodes WDK BDA", "network provider filters WDK BDA", "tuner control nodes WDK BDA", "demodulator control nodes WDK BDA", "capture filters WDK BDA", "PID Filter control node WDK BDA", "IPSink WDK BDA", "NDISIP WDK BDA", "Broadcast Driver Architecture WDK AVStream , control nodes", "BDA WDK AVStream , control nodes"]
+keywords:
+- control nodes WDK BDA
+- nodes WDK BDA
+- network provider filters WDK BDA
+- tuner control nodes WDK BDA
+- demodulator control nodes WDK BDA
+- capture filters WDK BDA
+- PID Filter control node WDK BDA
+- IPSink WDK BDA
+- NDISIP WDK BDA
+- Broadcast Driver Architecture WDK AVStream , control nodes
+- BDA WDK AVStream , control nodes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Common Control Nodes and Filters

@@ -2,6 +2,11 @@
 title: Get Started
 description: Get Started
 ms.assetid: 3a0d38b9-13e2-40e5-87cb-4d057975930d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get Started

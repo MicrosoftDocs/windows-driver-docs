@@ -2,6 +2,11 @@
 title: LanguageNeutralIdentifier
 description: LanguageNeutralIdentifier
 ms.assetid: 38713565-464c-4b12-9076-331ae43e01e8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # LanguageNeutralIdentifier

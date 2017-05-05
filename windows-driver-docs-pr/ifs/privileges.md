@@ -3,7 +3,23 @@ title: Privileges
 author: windows-driver-content
 description: Privileges
 ms.assetid: a8df1a44-6fb7-4c16-a29d-785d06dd50e4
-keywords: ["security WDK file systems , privileges", "privileges WDK file systems", "operation privileges WDK file systems", "SeBackupPrivilege", "SeRestorePrivilege", "SeChangeNotifyPrivilege", "SeManageVolumePrivilege", "volume-level management privileges WDK file systems", "traverse right privileges WDK file systems", "backup privileges WDK file systems", "restore privileges WDK file systems"]
+keywords:
+- security WDK file systems , privileges
+- privileges WDK file systems
+- operation privileges WDK file systems
+- SeBackupPrivilege
+- SeRestorePrivilege
+- SeChangeNotifyPrivilege
+- SeManageVolumePrivilege
+- volume-level management privileges WDK file systems
+- traverse right privileges WDK file systems
+- backup privileges WDK file systems
+- restore privileges WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Privileges

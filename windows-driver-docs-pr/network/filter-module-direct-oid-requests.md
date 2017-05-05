@@ -2,7 +2,14 @@
 title: Filter Module Direct OID Requests
 description: Filter Module Direct OID Requests
 ms.assetid: 0ab7079b-6578-4932-a276-40a961b55efe
-keywords: ["direct OID request interface WDK networking", "direct OID request path WDK networking"]
+keywords:
+- direct OID request interface WDK networking
+- direct OID request path WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Module Direct OID Requests

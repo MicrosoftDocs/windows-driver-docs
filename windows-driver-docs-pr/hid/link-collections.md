@@ -3,7 +3,18 @@ title: Link Collections
 author: windows-driver-content
 description: Link Collections
 ms.assetid: 3f934661-c33c-4c08-82ac-ee2e0f519c8e
-keywords: ["link collections WDK HID", "nested collections WDK HID", "link collection arrays WDK HID", "aliased collections WDK HID", "link collection nodes WDK HID", "arrays WDK HID"]
+keywords:
+- link collections WDK HID
+- nested collections WDK HID
+- link collection arrays WDK HID
+- aliased collections WDK HID
+- link collection nodes WDK HID
+- arrays WDK HID
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Link Collections

@@ -3,7 +3,13 @@ title: Package-Aware Print Drivers that Do Not Share Files
 author: windows-driver-content
 description: Package-Aware Print Drivers that Do Not Share Files
 ms.assetid: cd114766-37f4-43b5-8e2a-d85f95c973ab
-keywords: ["package-aware print drivers WDK"]
+keywords:
+- package-aware print drivers WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Package-Aware Print Drivers that Do Not Share Files

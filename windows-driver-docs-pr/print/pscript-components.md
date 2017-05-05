@@ -3,7 +3,14 @@ title: Pscript Components
 author: windows-driver-content
 description: Pscript Components
 ms.assetid: 9f3bd004-e62c-42b6-99da-045c12e088a3
-keywords: ["PostScript Printer Driver WDK print , components", "Pscript WDK print , components"]
+keywords:
+- PostScript Printer Driver WDK print , components
+- Pscript WDK print , components
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pscript Components

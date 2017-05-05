@@ -2,7 +2,14 @@
 title: Media-Specific OOB Data for Native 802.11 Send Operations
 description: Media-Specific OOB Data for Native 802.11 Send Operations
 ms.assetid: c6bdd0b7-6f33-48bd-a736-9e1588ab91a7
-keywords: ["OOB data WDK Native 802.11", "media-specific OOB data WDK Native 802.11"]
+keywords:
+- OOB data WDK Native 802.11
+- media-specific OOB data WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Media-Specific OOB Data for Native 802.11 Send Operations

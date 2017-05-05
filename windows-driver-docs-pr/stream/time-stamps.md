@@ -3,7 +3,16 @@ title: Time Stamps
 author: windows-driver-content
 description: Time Stamps
 ms.assetid: a97a57df-294a-4cbb-85d3-56d33ece65c9
-keywords: ["video capture WDK AVStream , time stamps", "capturing video WDK AVStream , time stamps", "time stamps WDK video capture", "clocks WDK video capture"]
+keywords:
+- video capture WDK AVStream , time stamps
+- capturing video WDK AVStream , time stamps
+- time stamps WDK video capture
+- clocks WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Time Stamps

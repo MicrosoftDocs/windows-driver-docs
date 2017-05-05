@@ -2,7 +2,19 @@
 title: Identifiers for PCMCIA Devices
 description: Identifiers for PCMCIA Devices
 ms.assetid: 7eaf6372-a9cc-4714-8955-52653ec57141
-keywords: ["device identification strings WDK , PCMCIA devices", "identification strings WDK device , PCMCIA devices", "identifiers WDK device , PCMCIA devices", "PCMCIA device identifiers WDK device installations", "device IDs WDK device installations", "hardware IDs WDK device installations", "compatible IDs WDK device installations"]
+keywords:
+- device identification strings WDK , PCMCIA devices
+- identification strings WDK device , PCMCIA devices
+- identifiers WDK device , PCMCIA devices
+- PCMCIA device identifiers WDK device installations
+- device IDs WDK device installations
+- hardware IDs WDK device installations
+- compatible IDs WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifiers for PCMCIA Devices

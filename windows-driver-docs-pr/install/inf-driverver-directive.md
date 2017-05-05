@@ -2,13 +2,19 @@
 title: INF DriverVer Directive
 description: A DriverVer directive specifies version information for drivers installed by this INF.
 ms.assetid: b8c17839-a027-4fb6-b017-8e9a3fd0d694
-keywords: ["INF DriverVer Directive Device and Driver Installation"]
+keywords:
+- INF DriverVer Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DriverVer Directive
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DriverVer Directive

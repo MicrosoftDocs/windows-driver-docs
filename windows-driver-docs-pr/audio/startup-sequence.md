@@ -2,7 +2,15 @@
 title: Startup Sequence
 description: Startup Sequence
 ms.assetid: bf88b9de-f4c4-4f9c-9355-603789b9ad3d
-keywords: ["adapter drivers WDK audio , startup sequences", "startup sequences WDK audio", "audio adapters WDK , startup sequences"]
+keywords:
+- adapter drivers WDK audio , startup sequences
+- startup sequences WDK audio
+- audio adapters WDK , startup sequences
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Startup Sequence

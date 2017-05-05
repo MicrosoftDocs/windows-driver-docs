@@ -2,7 +2,15 @@
 title: Imposing Requirements on the D3dDrawPrimitives2 DDI
 description: Imposing Requirements on the D3dDrawPrimitives2 DDI
 ms.assetid: a016c127-14ad-42ba-aae5-97c6c97b01f6
-keywords: ["asynchronous query operations WDK DirectX 9.0 , D3dDrawPrimitives2", "query operations WDK DirectX 9.0 , D3dDrawPrimitives2", "D3dDrawPrimitives2"]
+keywords:
+- asynchronous query operations WDK DirectX 9.0 , D3dDrawPrimitives2
+- query operations WDK DirectX 9.0 , D3dDrawPrimitives2
+- D3dDrawPrimitives2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Imposing Requirements on the D3dDrawPrimitives2 DDI

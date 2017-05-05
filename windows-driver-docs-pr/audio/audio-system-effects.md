@@ -2,7 +2,15 @@
 title: Audio System Effects
 description: Audio System Effects
 ms.assetid: 4cbb3efb-fcfe-475b-8e15-b5c6a6b0fa1e
-keywords: ["sAPO WDK", "LFX WDK", "GFX WDK"]
+keywords:
+- sAPO WDK
+- LFX WDK
+- GFX WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio System Effects

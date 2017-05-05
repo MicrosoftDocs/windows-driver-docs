@@ -2,6 +2,11 @@
 title: What is the Defaultwpp.ini file
 description: What is the Defaultwpp.ini file
 ms.assetid: 7e2673a3-5a01-498a-a2af-e5d8ff3e088b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # What is the Defaultwpp.ini file?

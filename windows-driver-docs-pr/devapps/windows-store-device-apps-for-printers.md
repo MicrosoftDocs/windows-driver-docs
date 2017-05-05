@@ -2,6 +2,11 @@
 title: Windows Store device apps for printers
 description: This section introduces Windows Store device apps for printers.
 ms.assetid: 3325B492-2A70-4EB7-99B0-3FE3E24CE398
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows Store device apps for printers

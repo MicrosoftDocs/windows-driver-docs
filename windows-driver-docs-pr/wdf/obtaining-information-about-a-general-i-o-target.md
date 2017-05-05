@@ -3,7 +3,14 @@ title: Obtaining Information About a General I/O Target
 author: windows-driver-content
 description: Obtaining Information About a General I/O Target
 ms.assetid: 70ae920e-de2d-4014-bae4-74058b26e7c0
-keywords: ["general I/O targets WDK KMDF , information about", "status information WDK KMDF , general I/O targets"]
+keywords:
+- general I/O targets WDK KMDF , information about
+- status information WDK KMDF , general I/O targets
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining Information About a General I/O Target

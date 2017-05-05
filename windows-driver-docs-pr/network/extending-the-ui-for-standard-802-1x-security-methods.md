@@ -2,7 +2,13 @@
 title: Extending the UI for Standard 802.1X Security Methods
 description: Extending the UI for Standard 802.1X Security Methods
 ms.assetid: e80e82e9-3ad3-48d0-a569-169de356ebba
-keywords: ["standard 802.1X security WDK IHV UI Extensions DLL"]
+keywords:
+- standard 802.1X security WDK IHV UI Extensions DLL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending the UI for Standard 802.1X Security Methods

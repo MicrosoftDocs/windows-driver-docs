@@ -2,7 +2,16 @@
 title: Operations on Address Families and SAPs
 description: Operations on Address Families and SAPs
 ms.assetid: 0fc821bb-49a2-4631-8735-ef5217073ba9
-keywords: ["connection-oriented NDIS WDK , address families", "CoNDIS WDK networking , address families", "connection-oriented NDIS WDK , service access points", "CoNDIS WDK networking , service access points"]
+keywords:
+- connection-oriented NDIS WDK , address families
+- CoNDIS WDK networking , address families
+- connection-oriented NDIS WDK , service access points
+- CoNDIS WDK networking , service access points
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Operations on Address Families and SAPs

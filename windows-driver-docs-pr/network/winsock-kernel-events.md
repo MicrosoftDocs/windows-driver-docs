@@ -2,7 +2,21 @@
 title: Winsock Kernel Events
 description: Winsock Kernel Events
 ms.assetid: 84f7b547-cfbf-468b-b80e-1441c8aa3cf3
-keywords: ["Winsock Kernel WDK networking , events", "WSK WDK networking , events", "events WDK Winsock Kernel", "basic sockets WDK Winsock Kernel", "listening sockets WDK Winsock Kernel", "datagram sockets WDK Winsock Kernel", "connection-oriented sockets WDK Winsock Kernel", "event notifications WDK Winsock Kernel", "notifications WDK Winsock Kernel"]
+keywords:
+- Winsock Kernel WDK networking , events
+- WSK WDK networking , events
+- events WDK Winsock Kernel
+- basic sockets WDK Winsock Kernel
+- listening sockets WDK Winsock Kernel
+- datagram sockets WDK Winsock Kernel
+- connection-oriented sockets WDK Winsock Kernel
+- event notifications WDK Winsock Kernel
+- notifications WDK Winsock Kernel
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winsock Kernel Events

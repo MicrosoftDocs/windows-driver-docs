@@ -3,7 +3,15 @@ title: Supporting Video Capture Devices with Tuners
 author: windows-driver-content
 description: Supporting Video Capture Devices with Tuners
 ms.assetid: 3dc71bf7-fee2-4390-bb01-2877b5bd4298
-keywords: ["video capture WDK AVStream , tuners", "capturing video WDK AVStream , tuners", "tuners WDK video capture"]
+keywords:
+- video capture WDK AVStream , tuners
+- capturing video WDK AVStream , tuners
+- tuners WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Video Capture Devices with Tuners

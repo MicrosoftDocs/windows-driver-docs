@@ -2,7 +2,19 @@
 title: Flagging Support for Nonlocal Display Memory
 description: Flagging Support for Nonlocal Display Memory
 ms.assetid: 5e5187e8-ff93-48e0-997d-71d65d35757f
-keywords: ["display memory WDK DirectDraw , compatibility", "nonlocal display memory WDK DirectDraw , compatibility", "AGP WDK DirectDraw , compatibility", "drawing AGP support WDK DirectDraw , compatibility", "DirectDraw AGP support WDK Windows 2000 display , compatibility", "memory WDK DirectDraw AGP , compatibility", "compatibility WDK DirectDraw"]
+keywords:
+- display memory WDK DirectDraw , compatibility
+- nonlocal display memory WDK DirectDraw , compatibility
+- AGP WDK DirectDraw , compatibility
+- drawing AGP support WDK DirectDraw , compatibility
+- DirectDraw AGP support WDK Windows 2000 display , compatibility
+- memory WDK DirectDraw AGP , compatibility
+- compatibility WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flagging Support for Nonlocal Display Memory

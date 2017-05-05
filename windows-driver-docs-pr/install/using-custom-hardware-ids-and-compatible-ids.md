@@ -2,6 +2,11 @@
 title: Using Custom Hardware IDs and Compatible IDs
 description: Using Custom Hardware IDs and Compatible IDs
 ms.assetid: 4f0ae082-b601-4322-add8-63941c2bdad3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Custom Hardware IDs and Compatible IDs

@@ -2,7 +2,17 @@
 title: Sample Device Installation Files
 description: Sample Device Installation Files
 ms.assetid: bdb463a0-81f9-4e44-a17b-564fd68e9457
-keywords: ["Device setup WDK device installations , files", "device installations WDK , files", "installing devices WDK , files", "files WDK device installations", "sample files WDK device installations"]
+keywords:
+- Device setup WDK device installations , files
+- device installations WDK , files
+- installing devices WDK , files
+- files WDK device installations
+- sample files WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Device Installation Files

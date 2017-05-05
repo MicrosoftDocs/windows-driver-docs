@@ -2,7 +2,14 @@
 title: C28266
 description: A syntax error in the annotations was found for the property in the function.
 ms.assetid: c7667a78-1d19-4d2f-a03d-a51678a9a617
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28266

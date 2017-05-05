@@ -2,6 +2,11 @@
 title: Device Metadata Error Codes
 description: Device Metadata Error Codes
 ms.assetid: 7ca3b9d3-8e7d-4421-affa-bddea2d4c262
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Metadata Error Codes

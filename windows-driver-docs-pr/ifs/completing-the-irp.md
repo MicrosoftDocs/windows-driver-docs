@@ -3,7 +3,14 @@ title: Completing the IRP
 author: windows-driver-content
 description: Completing the IRP
 ms.assetid: 3174b36c-feb5-497c-a6e4-0d070c658899
-keywords: ["IRP dispatch routines WDK file system , completing IRPs", "completing I/O requests WDK file system"]
+keywords:
+- IRP dispatch routines WDK file system , completing IRPs
+- completing I/O requests WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Completing the IRP

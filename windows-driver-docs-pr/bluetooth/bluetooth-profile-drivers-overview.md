@@ -2,7 +2,15 @@
 title: Bluetooth Profile Drivers Overview
 description: Bluetooth Profile Drivers Overview
 ms.assetid: 86806113-28b6-470c-883c-506ac1205f85
-keywords: ["Bluetooth WDK , about Bluetooth", "remote connections WDK Bluetooth", "connections WDK Bluetooth"]
+keywords:
+- Bluetooth WDK , about Bluetooth
+- remote connections WDK Bluetooth
+- connections WDK Bluetooth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth Profile Drivers Overview

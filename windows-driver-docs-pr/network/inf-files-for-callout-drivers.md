@@ -2,7 +2,16 @@
 title: INF Files for Callout Drivers
 description: INF Files for Callout Drivers
 ms.assetid: 2cdaf6a4-3297-4081-a64e-7ab5dc74e7e8
-keywords: ["Windows Filtering Platform callout drivers WDK , installing", "callout drivers WDK Windows Filtering Platform , installing", "installing callout drivers WDK Windows Filtering Platform", "INF files WDK Windows Filtering Platform"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , installing
+- callout drivers WDK Windows Filtering Platform , installing
+- installing callout drivers WDK Windows Filtering Platform
+- INF files WDK Windows Filtering Platform
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF Files for Callout Drivers

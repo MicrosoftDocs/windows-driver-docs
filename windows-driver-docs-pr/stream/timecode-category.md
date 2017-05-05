@@ -3,7 +3,15 @@ title: Timecode Category
 author: windows-driver-content
 description: Timecode Category
 ms.assetid: 273e0233-357e-4e13-bf8e-77ca36834ee7
-keywords: ["stream categories WDK video capture , imecode", "Timecode category WDK video capture", "PINNAME_VIDEO_TIMECODE"]
+keywords:
+- stream categories WDK video capture , imecode
+- Timecode category WDK video capture
+- PINNAME_VIDEO_TIMECODE
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Timecode Category

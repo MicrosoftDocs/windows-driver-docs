@@ -2,7 +2,17 @@
 title: Sections in a Network INF File
 description: Sections in a Network INF File
 ms.assetid: 6d78fd1e-b53c-493c-a8cd-889242fd6589
-keywords: ["INF files WDK network , sections", "network INF files WDK , sections", "installing network components WDK , INF files", "network component installations WDK , INF files", "sections WDK network INF files"]
+keywords:
+- INF files WDK network , sections
+- network INF files WDK , sections
+- installing network components WDK , INF files
+- network component installations WDK , INF files
+- sections WDK network INF files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sections in a Network INF File

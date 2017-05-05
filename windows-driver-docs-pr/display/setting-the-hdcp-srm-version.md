@@ -2,6 +2,11 @@
 title: Setting the HDCP SRM Version
 description: Setting the HDCP SRM Version
 ms.assetid: 23f99f8f-7d13-4868-84fb-49245a81958b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the HDCP SRM Version

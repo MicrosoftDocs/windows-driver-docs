@@ -3,7 +3,16 @@ title: Providing a UVC INF File
 author: windows-driver-content
 description: Providing a UVC INF File
 ms.assetid: 44311eb8-1035-466c-878b-a5d964b34490
-keywords: ["INF files WDK USB Video Class", "UVC INF files WDK USB Video Class", "UVC INF files WDK USB Video Class , sample code", "sample code WDK USB Video Class , UVC INF files"]
+keywords:
+- INF files WDK USB Video Class
+- UVC INF files WDK USB Video Class
+- UVC INF files WDK USB Video Class , sample code
+- sample code WDK USB Video Class , UVC INF files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing a UVC INF File

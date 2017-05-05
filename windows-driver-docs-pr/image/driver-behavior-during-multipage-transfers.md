@@ -3,6 +3,11 @@ title: Driver Behavior During Multipage Transfers
 author: windows-driver-content
 description: Driver Behavior During Multipage Transfers
 ms.assetid: ecf0428b-c11c-49ff-9aa3-322e55dbca07
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Behavior During Multipage Transfers

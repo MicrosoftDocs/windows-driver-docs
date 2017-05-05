@@ -2,7 +2,25 @@
 title: Reading and Filtering Debugging Messages
 description: Reading and Filtering Debugging Messages
 ms.assetid: 2ad320f6-596d-4b4c-bfad-d570c856bcc7
-keywords: ["debugging code WDK , reading messages", "debugging code WDK , filtering messages", "reading debugging messages", "filtering debugging messages WDK", "routines WDK debugging , message filtering", "filter masks WDK debugging", "component names WDK debugging", "importance bitfield WDK debugging", "levels WDK debugging", "Level parameter", "displaying debugging messages", "prioritizing debugging messages WDK", "DbgPrint buffer"]
+keywords:
+- debugging code WDK , reading messages
+- debugging code WDK , filtering messages
+- reading debugging messages
+- filtering debugging messages WDK
+- routines WDK debugging , message filtering
+- filter masks WDK debugging
+- component names WDK debugging
+- importance bitfield WDK debugging
+- levels WDK debugging
+- Level parameter
+- displaying debugging messages
+- prioritizing debugging messages WDK
+- DbgPrint buffer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading and Filtering Debugging Messages

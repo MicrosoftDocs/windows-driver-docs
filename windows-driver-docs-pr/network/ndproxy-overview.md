@@ -2,7 +2,15 @@
 title: NDPROXY Overview
 description: NDPROXY Overview
 ms.assetid: 98d01249-8a6d-42b3-a91c-811352c8b638
-keywords: ["NDPROXY WDK networking", "NDISWAN WDK networking", "architecture WDK WAN , NDPROXY"]
+keywords:
+- NDPROXY WDK networking
+- NDISWAN WDK networking
+- architecture WDK WAN , NDPROXY
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDPROXY Overview

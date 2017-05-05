@@ -2,7 +2,22 @@
 title: Decoder Stages
 description: Decoder Stages
 ms.assetid: 34562b2a-9568-440d-b6ec-dbd1e5004d56
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , video decoding", "Video Acceleration WDK DirectX , video decoding", "VA WDK DirectX , video decoding", "decoding video WDK DirectX VA , decoder stages", "video decoding WDK DirectX VA , decoder stages", "decoder stages WDK DirectX VA", "inverse discrete-cosine transform WDK DirectX VA", "IDCT WDK DirectX VA", "MCP WDK DirectX VA", "motion compensation WDK DirectX VA"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , video decoding
+- Video Acceleration WDK DirectX , video decoding
+- VA WDK DirectX , video decoding
+- decoding video WDK DirectX VA , decoder stages
+- video decoding WDK DirectX VA , decoder stages
+- decoder stages WDK DirectX VA
+- inverse discrete-cosine transform WDK DirectX VA
+- IDCT WDK DirectX VA
+- MCP WDK DirectX VA
+- motion compensation WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Decoder Stages

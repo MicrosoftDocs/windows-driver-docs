@@ -2,6 +2,11 @@
 title: C28602
 description: Warning C28602 Avoid calling SendMessageTimeout with HWND\_BROADCAST.
 ms.assetid: 511df04e-97dc-43a2-9c48-ea1ffe62b813
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28602

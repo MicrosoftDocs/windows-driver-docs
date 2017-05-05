@@ -2,6 +2,11 @@
 title: WDI general datapath interfaces
 description: This section describes general WDI datapath interfaces
 ms.assetid: 5B40171C-4E5F-4C35-A6E7-1EA5181C02E8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI general datapath interfaces

@@ -2,7 +2,17 @@
 title: Instructing How to Protect the Signal
 description: Instructing How to Protect the Signal
 ms.assetid: d55a3660-5b7c-43e9-b1c5-b61f8b997a1a
-keywords: ["copy protection WDK COPP , signal protection", "video copy protection WDK COPP , signal protection", "COPP WDK DirectX VA , signal protection", "protected video WDK COPP , signal protection", "signal protection WDK COPP"]
+keywords:
+- copy protection WDK COPP , signal protection
+- video copy protection WDK COPP , signal protection
+- COPP WDK DirectX VA , signal protection
+- protected video WDK COPP , signal protection
+- signal protection WDK COPP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Instructing How to Protect the Signal

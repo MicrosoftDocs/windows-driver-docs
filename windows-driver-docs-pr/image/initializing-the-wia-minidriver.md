@@ -3,6 +3,11 @@ title: Initializing the WIA Minidriver
 author: windows-driver-content
 description: Initializing the WIA Minidriver
 ms.assetid: 9ccb136b-41f7-438a-9e07-1fd7c8971417
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing the WIA Minidriver

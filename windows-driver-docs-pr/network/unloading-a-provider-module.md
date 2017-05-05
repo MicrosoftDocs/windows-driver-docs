@@ -2,7 +2,15 @@
 title: Unloading a Provider Module
 description: Unloading a Provider Module
 ms.assetid: c6dd6552-2923-4091-9bf1-5833c049aa23
-keywords: ["provider modules WDK Network Module Registrar , unloading", "unloading network modules", "NmrDeregisterProvider"]
+keywords:
+- provider modules WDK Network Module Registrar , unloading
+- unloading network modules
+- NmrDeregisterProvider
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Unloading a Provider Module

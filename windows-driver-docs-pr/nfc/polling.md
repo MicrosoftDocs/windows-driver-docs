@@ -3,7 +3,17 @@ title: NFC polling
 author: windows-driver-content
 description: NFC polling
 ms.assetid: C6C531EC-59AA-4AF5-903E-A726C0E79E47
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NFC polling

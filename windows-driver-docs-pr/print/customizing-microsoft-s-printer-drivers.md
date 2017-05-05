@@ -3,7 +3,16 @@ title: Customizing Microsoft's Printer Drivers
 author: windows-driver-content
 description: Customizing Microsoft's Printer Drivers
 ms.assetid: b7761209-1f6f-4288-af47-4ed855c2e629
-keywords: ["printer driver customizing WDK", "customizing printer drivers WDK", "printer driver customizing WDK , about customizing printer drivers", "customizing printer drivers WDK , about customizing printer drivers"]
+keywords:
+- printer driver customizing WDK
+- customizing printer drivers WDK
+- printer driver customizing WDK , about customizing printer drivers
+- customizing printer drivers WDK , about customizing printer drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customizing Microsoft's Printer Drivers

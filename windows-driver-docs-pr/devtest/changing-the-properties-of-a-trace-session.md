@@ -2,7 +2,16 @@
 title: Changing the Properties of a Trace Session
 description: Changing the Properties of a Trace Session
 ms.assetid: 6a3522c5-d59b-423b-8d8d-5df9ac3be7cc
-keywords: ["trace sessions WDK , properties", "properties WDK TraceView", "changeable properties WDK TraceView", "displaying trace session properties"]
+keywords:
+- trace sessions WDK , properties
+- properties WDK TraceView
+- changeable properties WDK TraceView
+- displaying trace session properties
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing the Properties of a Trace Session

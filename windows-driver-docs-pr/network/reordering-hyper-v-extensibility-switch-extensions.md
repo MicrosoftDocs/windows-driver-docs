@@ -2,6 +2,11 @@
 title: Reordering Hyper-V Extensible Switch Extensions
 description: Reordering Hyper-V Extensible Switch Extensions
 ms.assetid: DAB7FAE0-1632-4FD1-8697-48553A51BD20
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reordering Hyper-V Extensible Switch Extensions

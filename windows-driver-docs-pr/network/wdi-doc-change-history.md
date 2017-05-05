@@ -1,7 +1,12 @@
 ---
 title: WDI doc change history
-description: .
+description: This section lists documentation change history for WDI documentation pages
 ms.assetid: 29268059-9C33-4768-8F80-195CB28B4663
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDI doc change history

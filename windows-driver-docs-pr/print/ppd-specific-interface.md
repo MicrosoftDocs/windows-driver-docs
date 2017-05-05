@@ -3,7 +3,17 @@ title: PPD-Specific Interface
 author: windows-driver-content
 description: PPD-Specific Interface
 ms.assetid: 12d5baa2-4fd4-4eca-84c7-1ee168ee8259
-keywords: ["PostScript Printer Driver WDK print , PPD-specific interface", "Pscript WDK print , PPD-specific interface", "IPrintCoreUI2", "PPD files WDK Pscript", "PPD-specific interface WDK Pscript"]
+keywords:
+- PostScript Printer Driver WDK print , PPD-specific interface
+- Pscript WDK print , PPD-specific interface
+- IPrintCoreUI2
+- PPD files WDK Pscript
+- PPD-specific interface WDK Pscript
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PPD-Specific Interface

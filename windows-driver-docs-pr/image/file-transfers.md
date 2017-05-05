@@ -3,6 +3,11 @@ title: File Transfers
 author: windows-driver-content
 description: File Transfers
 ms.assetid: 1c776dc5-982a-4652-bc03-f334fda30055
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File Transfers

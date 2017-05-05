@@ -3,7 +3,16 @@ title: Extending the Bidi Communication Schema
 author: windows-driver-content
 description: Extending the Bidi Communication Schema
 ms.assetid: b216a238-184e-4ebd-b9ef-227ff6bf4dbe
-keywords: ["bidirectional communication schema WDK print", "bidi communication schema WDK print", "extensions WDK bidi communication", "bidi extension files WDK bidi communication schema"]
+keywords:
+- bidirectional communication schema WDK print
+- bidi communication schema WDK print
+- extensions WDK bidi communication
+- bidi extension files WDK bidi communication schema
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extending the Bidi Communication Schema

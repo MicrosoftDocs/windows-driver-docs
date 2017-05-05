@@ -3,7 +3,16 @@ title: PSCRIPT1 Data Type
 author: windows-driver-content
 description: PSCRIPT1 Data Type
 ms.assetid: 0f39419e-fbb5-423f-8bcb-79a5207a29fd
-keywords: ["print processors WDK , data types", "data types WDK print processor", "PSCRIPT1 data type WDK print processor", "Postscript data WDK print processor"]
+keywords:
+- print processors WDK , data types
+- data types WDK print processor
+- PSCRIPT1 data type WDK print processor
+- Postscript data WDK print processor
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PSCRIPT1 Data Type

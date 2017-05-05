@@ -3,7 +3,15 @@ title: PCL Separator Page Escape Codes
 author: windows-driver-content
 description: PCL Separator Page Escape Codes
 ms.assetid: 8e571fcd-f6ee-4a56-8d8a-20bf3a5c333c
-keywords: ["PCL separator page escape codes WDK PCL XL", "PCL XL vector graphics WDK Unidrv , separator page escape codes", "escape codes WDK PCL XL"]
+keywords:
+- PCL separator page escape codes WDK PCL XL
+- PCL XL vector graphics WDK Unidrv , separator page escape codes
+- escape codes WDK PCL XL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PCL Separator Page Escape Codes

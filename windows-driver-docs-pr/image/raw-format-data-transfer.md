@@ -3,6 +3,11 @@ title: RAW Format Data Transfer
 author: windows-driver-content
 description: RAW Format Data Transfer
 ms.assetid: 8541b5ce-fd55-47b0-9687-162fb2b4e6aa
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RAW Format Data Transfer

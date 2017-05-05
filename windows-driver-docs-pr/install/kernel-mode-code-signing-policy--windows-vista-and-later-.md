@@ -2,7 +2,20 @@
 title: Driver Signing Policy
 description: Driver Signing Policy
 ms.assetid: c3ba672c-5bf2-4885-a85e-fa6d8a47ca54
-keywords: ["driver signing WDK , kernel-mode code signing policy", "signing drivers WDK , kernel-mode code signing policy", "digital signatures WDK , kernel-mode code signing policy", "signatures WDK , kernel-mode code signing policy", "kernel-mode code signing policy WDK", "kernel-mode driver signing WDK", "driver package digital signatures WDK", "package digital signatures WDK"]
+keywords:
+- driver signing WDK , kernel-mode code signing policy
+- signing drivers WDK , kernel-mode code signing policy
+- digital signatures WDK , kernel-mode code signing policy
+- signatures WDK , kernel-mode code signing policy
+- kernel-mode code signing policy WDK
+- kernel-mode driver signing WDK
+- driver package digital signatures WDK
+- package digital signatures WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Signing Policy
@@ -83,7 +96,7 @@ In addition to driver code signing, you also need to meet the PnP device install
 
 * [Installing an Unsigned Driver Package during Development and Test](installing-an-unsigned-driver-during-development-and-test.md)
 * [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md)
-* [Signing Drivers during Development and Test](signing-drivers-during-development-and-test--windows-vista-and-later-.md)
+* [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md)
 * [Digital Signatures for Kernel Modules on Windows](http://go.microsoft.com/fwlink/p/?linkid=184997)
 * [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md)
 

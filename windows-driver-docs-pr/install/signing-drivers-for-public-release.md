@@ -2,6 +2,11 @@
 title: Signing Drivers for Public Release
 description: Signing Drivers for Public Release
 ms.assetid: e5fa85ef-0b93-4c4d-919c-1c732b438e7e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Signing Drivers for Public Release

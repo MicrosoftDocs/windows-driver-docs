@@ -2,7 +2,15 @@
 title: Linear Memory-Space Segments
 description: Linear Memory-Space Segments
 ms.assetid: c937eb39-b9ec-454e-98c5-7f5274328226
-keywords: ["memory segments WDK display , linear memory-space segments", "linear memory-space segments WDK display", "memory-space segments WDK display"]
+keywords:
+- memory segments WDK display , linear memory-space segments
+- linear memory-space segments WDK display
+- memory-space segments WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Linear Memory-Space Segments

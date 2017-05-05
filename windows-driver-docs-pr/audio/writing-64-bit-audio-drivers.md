@@ -2,7 +2,14 @@
 title: Writing 64-Bit Audio Drivers
 description: Writing 64-Bit Audio Drivers
 ms.assetid: 0b4cbb98-506e-443f-bac2-59dbdbcb1798
-keywords: ["audio drivers WDK , 64-bit", "64-bit WDK audio"]
+keywords:
+- audio drivers WDK , 64-bit
+- 64-bit WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing 64-Bit Audio Drivers

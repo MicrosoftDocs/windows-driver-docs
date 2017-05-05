@@ -3,7 +3,15 @@ title: PC cards with incomplete configuration register addresses
 author: windows-driver-content
 description: Information on supporting PC cards with incomplete configuration register addresses
 ms.assetid: 2a708ca5-a119-4ef5-81ee-d9e40e7a5255
-keywords: ["incomplete configuration registers WDK multifunction devices", "system-supplied multifunction bus drivers WDK", "mf.sys"]
+keywords:
+- incomplete configuration registers WDK multifunction devices
+- system-supplied multifunction bus drivers WDK
+- mf.sys
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PC cards with incomplete configuration register addresses

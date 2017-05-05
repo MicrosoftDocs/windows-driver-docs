@@ -2,7 +2,18 @@
 title: Troubleshooting Device and Driver Installations
 description: Troubleshooting Device and Driver Installations
 ms.assetid: 1ffad62b-140d-4a0a-9174-245e0344e605
-keywords: ["Device setup WDK device installations , troubleshooting", "device installations WDK , troubleshooting", "installing devices WDK , troubleshooting", "troubleshooting device installations WDK", "Device setup WDK device installations , SetupAPI", "installing devices WDK , SetupAPI"]
+keywords:
+- Device setup WDK device installations , troubleshooting
+- device installations WDK , troubleshooting
+- installing devices WDK , troubleshooting
+- troubleshooting device installations WDK
+- Device setup WDK device installations , SetupAPI
+- installing devices WDK , SetupAPI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Troubleshooting Device and Driver Installations

@@ -2,7 +2,14 @@
 title: Types of NDIS Ports
 description: Types of NDIS Ports
 ms.assetid: a77ceb1b-d4b9-4a42-aa5b-685295722fa3
-keywords: ["ports WDK NDIS , types", "NDIS ports WDK , types"]
+keywords:
+- ports WDK NDIS , types
+- NDIS ports WDK , types
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Types of NDIS Ports

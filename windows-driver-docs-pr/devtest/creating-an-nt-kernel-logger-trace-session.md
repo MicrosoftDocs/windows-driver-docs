@@ -2,7 +2,15 @@
 title: Creating an NT Kernel Logger Trace Session
 description: Creating an NT Kernel Logger Trace Session
 ms.assetid: 606156b9-8ad9-4510-9929-4f0e3b7a3134
-keywords: ["trace sessions WDK , NT Kernel Logger", "NT Kernel Logger trace sessions WDK", "Windows Kernel Trace provider WDK"]
+keywords:
+- trace sessions WDK , NT Kernel Logger
+- NT Kernel Logger trace sessions WDK
+- Windows Kernel Trace provider WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating an NT Kernel Logger Trace Session

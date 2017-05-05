@@ -2,7 +2,17 @@
 title: Incoming Request to Drop a Party from a Multipoint Call
 description: Incoming Request to Drop a Party from a Multipoint Call
 ms.assetid: 3345f6f6-339f-4349-97fd-9ca9d5b2d241
-keywords: ["parties WDK CoNDIS", "multipoint calls WDK CoNDIS", "dropping party from multipoint calls", "removing party from multipoint calls", "incoming drop party requests WDK CoNDIS"]
+keywords:
+- parties WDK CoNDIS
+- multipoint calls WDK CoNDIS
+- dropping party from multipoint calls
+- removing party from multipoint calls
+- incoming drop party requests WDK CoNDIS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Incoming Request to Drop a Party from a Multipoint Call

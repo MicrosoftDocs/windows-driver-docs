@@ -3,6 +3,11 @@ title: Device-specific methods (\_DSM)
 author: windows-driver-content
 description: To support increased functionality and extension to select technology stacks, Windows define Device-Specific Methods (\_DSM) for the device.
 ms.assetid: E49BE897-28A5-42FE-875C-A8EB56EABF8B
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device-specific methods (\_DSM)

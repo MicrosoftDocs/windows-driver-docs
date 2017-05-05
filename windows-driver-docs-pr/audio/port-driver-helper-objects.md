@@ -2,7 +2,20 @@
 title: Port Driver Helper Objects
 description: Port Driver Helper Objects
 ms.assetid: 98a30662-d784-4e66-90bc-9d2042b2c8f8
-keywords: ["audio miniport drivers WDK , helper objects", "miniport drivers WDK audio , helper objects", "helper objects WDK audio", "port class drivers WDK audio", "PortCls WDK audio , helper objects", "object helpers WDK audio", "helper objects WDK audio , about port driver helper objects", "port drivers WDK audio , helper objects"]
+keywords:
+- audio miniport drivers WDK , helper objects
+- miniport drivers WDK audio , helper objects
+- helper objects WDK audio
+- port class drivers WDK audio
+- PortCls WDK audio , helper objects
+- object helpers WDK audio
+- helper objects WDK audio , about port driver helper objects
+- port drivers WDK audio , helper objects
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Port Driver Helper Objects

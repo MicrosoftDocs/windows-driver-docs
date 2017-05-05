@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch Extensions
 description: Hyper-V Extensible Switch Extensions
 ms.assetid: 949BF170-99B3-412F-9DC2-ECE10D480F00
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch Extensions

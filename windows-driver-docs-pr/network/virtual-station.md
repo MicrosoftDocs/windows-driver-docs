@@ -2,7 +2,13 @@
 title: Virtual Station
 description: Virtual Station
 ms.assetid: 6228439c-4c01-4fa9-8b45-b46ed90fa661
-keywords: ["Virtual Station WDK networking"]
+keywords:
+- Virtual Station WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Station

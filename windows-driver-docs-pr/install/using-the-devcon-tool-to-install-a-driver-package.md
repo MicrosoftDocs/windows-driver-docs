@@ -2,6 +2,11 @@
 title: Using the DevCon Tool to Install a Driver Package
 description: Using the DevCon Tool to Install a Driver Package
 ms.assetid: d77573e0-7866-46a5-88bc-c911bbd2a165
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the DevCon Tool to Install a Driver Package

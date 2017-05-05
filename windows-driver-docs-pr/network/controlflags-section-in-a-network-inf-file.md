@@ -2,7 +2,15 @@
 title: ControlFlags Section in a Network INF File
 description: ControlFlags Section in a Network INF File
 ms.assetid: 384e56e3-8a64-4b47-ae9c-e9973733c7e7
-keywords: ["INF files WDK network , ControlFlags section", "network INF files WDK , ControlFlags section", "ControlFlags section WDK networking"]
+keywords:
+- INF files WDK network , ControlFlags section
+- network INF files WDK , ControlFlags section
+- ControlFlags section WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ControlFlags Section in a Network INF File

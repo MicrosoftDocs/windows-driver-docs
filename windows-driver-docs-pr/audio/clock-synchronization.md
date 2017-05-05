@@ -2,7 +2,23 @@
 title: Clock Synchronization
 description: Clock Synchronization
 ms.assetid: dc0071b0-a22c-4bb5-90ea-a69e5dcdba6f
-keywords: ["synthesizers WDK audio , clock synchronization", "clocks WDK audio , synchronization", "latency WDK audio , clocks", "time WDK audio", "reference clocks WDK audio", "sample clocks WDK audio", "wave sinks WDK audio , clock synchronization", "offset time WDK audio", "master clocks WDK audio , synchronization", "phase-locked loops WDK audio", "synchronization WDK audio"]
+keywords:
+- synthesizers WDK audio , clock synchronization
+- clocks WDK audio , synchronization
+- latency WDK audio , clocks
+- time WDK audio
+- reference clocks WDK audio
+- sample clocks WDK audio
+- wave sinks WDK audio , clock synchronization
+- offset time WDK audio
+- master clocks WDK audio , synchronization
+- phase-locked loops WDK audio
+- synchronization WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Clock Synchronization

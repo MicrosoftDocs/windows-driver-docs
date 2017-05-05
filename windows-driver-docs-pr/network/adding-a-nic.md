@@ -2,7 +2,16 @@
 title: Adding a NIC
 description: Adding a NIC
 ms.assetid: 3da89acc-5504-4362-b148-e8228795721f
-keywords: ["NICs WDK networking , adding", "network interface cards WDK networking , adding", "Plug and Play WDK NDIS miniport , adding NIC", "adding NICs WDK networking"]
+keywords:
+- NICs WDK networking , adding
+- network interface cards WDK networking , adding
+- Plug and Play WDK NDIS miniport , adding NIC
+- adding NICs WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding a NIC

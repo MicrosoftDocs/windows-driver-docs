@@ -2,7 +2,20 @@
 title: Path Priority Order
 description: Path Priority Order
 ms.assetid: 93f8f932-fc7b-4420-8b3e-27194937bed5
-keywords: ["connecting displays WDK Windows 7 display , CCD concepts, path priority order", "connecting displays WDK Windows Server 2008 R2 display , CCD concepts, path priority order", "configuring displays WDK Windows 7 display , CCD concepts, path priority order", "configuring displays WDK Windows Server 2008 R2 display , CCD concepts, path priority order", "CCD concepts WDK Windows 7 display , path priority order", "CCD concepts WDK Windows Server 2008 R2 display , path priority order", "path priority order WDK Windows 7 display", "path priority order WDK Windows Server 2008 R2 display"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD concepts, path priority order
+- connecting displays WDK Windows Server 2008 R2 display , CCD concepts, path priority order
+- configuring displays WDK Windows 7 display , CCD concepts, path priority order
+- configuring displays WDK Windows Server 2008 R2 display , CCD concepts, path priority order
+- CCD concepts WDK Windows 7 display , path priority order
+- CCD concepts WDK Windows Server 2008 R2 display , path priority order
+- path priority order WDK Windows 7 display
+- path priority order WDK Windows Server 2008 R2 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Path Priority Order

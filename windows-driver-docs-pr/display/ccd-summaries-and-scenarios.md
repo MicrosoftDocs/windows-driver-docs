@@ -2,7 +2,18 @@
 title: CCD Summaries and Scenarios
 description: CCD Summaries and Scenarios
 ms.assetid: 79d7a312-d498-493d-b0b6-416a10b84827
-keywords: ["connecting displays WDK Windows 7 display , CCD APIs, summaries and scenarios", "connecting displays WDK Windows Server 2008 R2 display , CCD APIs, summaries and scenarios", "configuring displays WDK Windows 7 display , CCD APIs, summaries and scenarios", "configuring displays WDK Windows Server 2008 R2 display , CCD APIs, summaries and scenarios", "CCD APIs WDK Windows 7 display , summaries and scenarios", "CCD APIs WDK Windows Server 2008 R2 display , summaries and scenarios"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD APIs, summaries and scenarios
+- connecting displays WDK Windows Server 2008 R2 display , CCD APIs, summaries and scenarios
+- configuring displays WDK Windows 7 display , CCD APIs, summaries and scenarios
+- configuring displays WDK Windows Server 2008 R2 display , CCD APIs, summaries and scenarios
+- CCD APIs WDK Windows 7 display , summaries and scenarios
+- CCD APIs WDK Windows Server 2008 R2 display , summaries and scenarios
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CCD Summaries and Scenarios

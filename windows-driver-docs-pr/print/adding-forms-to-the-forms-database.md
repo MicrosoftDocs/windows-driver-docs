@@ -3,7 +3,23 @@ title: Adding Forms to the Forms Database
 author: windows-driver-content
 description: Adding Forms to the Forms Database
 ms.assetid: ac306f05-6150-4e47-9272-e81e658a1ea6
-keywords: ["additional forms WDK Unidrv", "adding forms to Unidrv printer driver", "Unidrv, forms added to database", "GPD files WDK Unidrv , forms added to database", "printer forms WDK", "forms WDK printer", "special forms WDK printer", "special paper sizes WDK printer", "paper sizes WDK forms", "custom forms WDK printer", "Unidrv WDK print"]
+keywords:
+- additional forms WDK Unidrv
+- adding forms to Unidrv printer driver
+- Unidrv, forms added to database
+- GPD files WDK Unidrv , forms added to database
+- printer forms WDK
+- forms WDK printer
+- special forms WDK printer
+- special paper sizes WDK printer
+- paper sizes WDK forms
+- custom forms WDK printer
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Forms to the Forms Database

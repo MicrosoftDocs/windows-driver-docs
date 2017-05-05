@@ -2,6 +2,11 @@
 title: IEEE 802.1p Priority Levels
 description: IEEE 802.1p Priority Levels
 ms.assetid: C7EB3D85-544E-4898-A456-843621F6488D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IEEE 802.1p Priority Levels

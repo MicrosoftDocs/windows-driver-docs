@@ -3,7 +3,20 @@ title: Dispatching Methods for I/O Requests
 author: windows-driver-content
 description: Dispatching Methods for I/O Requests
 ms.assetid: 3e91aa7c-bccf-4eeb-8b68-b1277a690f8c
-keywords: ["I/O queues WDK KMDF , creating", "I/O queues WDK KMDF , dispatching methods", "dispatching methods WDK KMDF", "sequential dispatching WDK KMDF", "synchronous dispatching WDK KMDF", "parallel dispatching WDK KMDF", "asynchronous dispatching WDK KMDF", "manual dispatching WDK KMDF"]
+keywords:
+- I/O queues WDK KMDF , creating
+- I/O queues WDK KMDF , dispatching methods
+- dispatching methods WDK KMDF
+- sequential dispatching WDK KMDF
+- synchronous dispatching WDK KMDF
+- parallel dispatching WDK KMDF
+- asynchronous dispatching WDK KMDF
+- manual dispatching WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dispatching Methods for I/O Requests

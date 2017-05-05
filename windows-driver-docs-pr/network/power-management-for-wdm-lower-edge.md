@@ -2,7 +2,16 @@
 title: Power Management for WDM Lower Edge
 description: Power Management for WDM Lower Edge
 ms.assetid: e4504206-b303-4623-bb10-a19acbcede03
-keywords: ["NDIS-WDM miniport drivers WDK networking , power management", "lower edge of NDIS miniport drivers WDK networking , power management", "WDM lower edge WDK networking , power management", "power management WDK networking , NDIS-WDM miniport drivers"]
+keywords:
+- NDIS-WDM miniport drivers WDK networking , power management
+- lower edge of NDIS miniport drivers WDK networking , power management
+- WDM lower edge WDK networking , power management
+- power management WDK networking , NDIS-WDM miniport drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Management for WDM Lower Edge

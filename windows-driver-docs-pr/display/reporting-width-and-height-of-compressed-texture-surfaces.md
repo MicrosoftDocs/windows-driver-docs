@@ -2,7 +2,20 @@
 title: Reporting Width and Height of Compressed Texture Surfaces
 description: Reporting Width and Height of Compressed Texture Surfaces
 ms.assetid: 262262b6-9fef-4f28-beec-373f78a10f8f
-keywords: ["surfaces WDK DirectDraw , compressed textures", "textures WDK DirectDraw , compressed", "drawing compressed textures WDK DirectDraw , width", "DirectDraw compressed textures WDK Windows 2000 display , width", "compressed texture surfaces WDK DirectDraw , width", "drawing compressed textures WDK DirectDraw , height", "DirectDraw compressed textures WDK Windows 2000 display , height", "compressed texture surfaces WDK DirectDraw , height"]
+keywords:
+- surfaces WDK DirectDraw , compressed textures
+- textures WDK DirectDraw , compressed
+- drawing compressed textures WDK DirectDraw , width
+- DirectDraw compressed textures WDK Windows 2000 display , width
+- compressed texture surfaces WDK DirectDraw , width
+- drawing compressed textures WDK DirectDraw , height
+- DirectDraw compressed textures WDK Windows 2000 display , height
+- compressed texture surfaces WDK DirectDraw , height
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Width and Height of Compressed Texture Surfaces

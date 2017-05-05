@@ -3,7 +3,15 @@ title: Storage Class Driver's RetryRequest Routine
 author: windows-driver-content
 description: Storage Class Driver's RetryRequest Routine
 ms.assetid: de1eea7d-88db-444c-a9f7-462ad4a5df27
-keywords: ["RetryRequest", "retrying requests WDK storage", "errors WDK storage"]
+keywords:
+- RetryRequest
+- retrying requests WDK storage
+- errors WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Class Driver's RetryRequest Routine

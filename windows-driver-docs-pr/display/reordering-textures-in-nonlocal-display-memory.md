@@ -2,7 +2,21 @@
 title: Reordering Textures In Nonlocal Display Memory
 description: Reordering Textures In Nonlocal Display Memory
 ms.assetid: b4b4c478-7034-4ff9-8cb2-f86baffd89f7
-keywords: ["display memory WDK DirectDraw , reordering textures", "nonlocal display memory WDK DirectDraw , reordering textures", "AGP WDK DirectDraw , reordering textures", "drawing AGP support WDK DirectDraw , reordering textures", "DirectDraw AGP support WDK Windows 2000 display , reordering textures", "memory WDK DirectDraw AGP , reordering textures", "reordering textures WDK DirectDraw", "DDCAPS2_SYSTONONLOCAL_AS_SYSTOLOCAL", "textures WDK DirectDraw , reordering"]
+keywords:
+- display memory WDK DirectDraw , reordering textures
+- nonlocal display memory WDK DirectDraw , reordering textures
+- AGP WDK DirectDraw , reordering textures
+- drawing AGP support WDK DirectDraw , reordering textures
+- DirectDraw AGP support WDK Windows 2000 display , reordering textures
+- memory WDK DirectDraw AGP , reordering textures
+- reordering textures WDK DirectDraw
+- DDCAPS2_SYSTONONLOCAL_AS_SYSTOLOCAL
+- textures WDK DirectDraw , reordering
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reordering Textures In Nonlocal Display Memory

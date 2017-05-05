@@ -2,7 +2,15 @@
 title: Closing an Address Family
 description: Closing an Address Family
 ms.assetid: 0533bc31-dd4c-42c4-8170-8201e32e1026
-keywords: ["address families WDK networking", "AFs WDK networking", "closing address families"]
+keywords:
+- address families WDK networking
+- AFs WDK networking
+- closing address families
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Closing an Address Family

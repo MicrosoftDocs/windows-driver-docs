@@ -2,7 +2,16 @@
 title: Initializing the Video Miniport for Communication with Display Driver
 description: Initializing the Video Miniport for Communication with Display Driver
 ms.assetid: 73ba423c-7ebc-4a07-aed0-d2e33f11b878
-keywords: ["video miniport drivers WDK Windows 2000 , initializing", "initializing video miniport drivers", "HwVidInitialize", "one-time initialization WDK video miniport"]
+keywords:
+- video miniport drivers WDK Windows 2000 , initializing
+- initializing video miniport drivers
+- HwVidInitialize
+- one-time initialization WDK video miniport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing the Video Miniport for Communication with Display Driver

@@ -3,7 +3,18 @@ title: XPS Filters
 author: windows-driver-content
 description: XPS Filters
 ms.assetid: dd8044a6-6558-488e-9508-a83718fabb7d
-keywords: ["XPSDrv printer drivers WDK , render modules", "render modules WDK XPSDrv , XPS filters", "XPS filters WDK XPSDrv", "DllGetClassObject", "filters WDK XPS", "IPrintPipelineFilter"]
+keywords:
+- XPSDrv printer drivers WDK , render modules
+- render modules WDK XPSDrv , XPS filters
+- XPS filters WDK XPSDrv
+- DllGetClassObject
+- filters WDK XPS
+- IPrintPipelineFilter
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XPS Filters

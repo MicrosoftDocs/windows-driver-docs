@@ -2,6 +2,11 @@
 title: Architectural Overview
 description: This topic provides an overview of the audio architecture that was introduced in Windows 8, to provide support for a combined hardware/software audio engine.
 ms.assetid: B8D71C86-E2FF-48F1-8DC1-F232399F324D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Architectural Overview

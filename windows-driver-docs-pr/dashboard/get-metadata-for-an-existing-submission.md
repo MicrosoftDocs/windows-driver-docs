@@ -2,6 +2,11 @@
 title: Get metadata for an existing submission
 description: Get metadata for an existing submission
 ms.assetid: a9191173-9c99-44c6-99f7-f0bab61c269c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get metadata for an existing submission

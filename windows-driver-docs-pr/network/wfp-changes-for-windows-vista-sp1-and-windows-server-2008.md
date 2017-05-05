@@ -2,6 +2,11 @@
 title: WFP Changes for Windows Vista SP1 and Windows Server 2008
 description: WFP Changes for Windows Vista SP1 and Windows Server 2008
 ms.assetid: c901dbed-639d-473b-aaf0-8470e9c04009
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WFP Changes for Windows Vista SP1 and Windows Server 2008

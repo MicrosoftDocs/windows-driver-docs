@@ -2,6 +2,11 @@
 title: Design Considerations for sAPO Development
 description: Design Considerations for sAPO Development
 ms.assetid: ebcef929-af7b-4fce-a3a0-890c13bbd41f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Design Considerations for sAPO Development

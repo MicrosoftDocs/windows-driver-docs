@@ -2,7 +2,14 @@
 title: Setting Scissor Rectangle
 description: Setting Scissor Rectangle
 ms.assetid: e85b4987-26b7-4005-b8eb-81ca36a9a777
-keywords: ["scissor rectangle WDK DirectX 9.0", "rectangular clipping region WDK DirectX 9.0"]
+keywords:
+- scissor rectangle WDK DirectX 9.0
+- rectangular clipping region WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Scissor Rectangle

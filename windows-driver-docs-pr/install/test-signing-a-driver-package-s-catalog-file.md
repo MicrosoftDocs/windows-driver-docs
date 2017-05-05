@@ -2,6 +2,11 @@
 title: Test-Signing a Driver Package's Catalog File
 description: Test-Signing a Driver Package's Catalog File
 ms.assetid: 8cc54f57-bac3-45a1-b780-48626943b446
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test-Signing a Driver Package's Catalog File

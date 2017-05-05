@@ -2,6 +2,11 @@
 title: Managing the Hyper-V Extensible Switch Forwarding Context
 description: Managing the Hyper-V Extensible Switch Forwarding Context
 ms.assetid: 63FBEBFA-BD57-4350-89C3-9F0FAAA18973
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing the Hyper-V Extensible Switch Forwarding Context

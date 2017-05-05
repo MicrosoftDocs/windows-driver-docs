@@ -2,7 +2,20 @@
 title: NDIS Ports
 description: NDIS Ports
 ms.assetid: e65f4af5-c527-4d6d-a38c-56da006b1ef7
-keywords: ["ports WDK NDIS", "NDIS ports WDK", "interfaces WDK NDIS ports", "subinterface access WDK NDIS", "NDIS miniport drivers WDK , subinterface access", "NDIS protocol drivers WDK , subinterface access", "protocol drivers WDK networking , subinterface access", "min"]
+keywords:
+- ports WDK NDIS
+- NDIS ports WDK
+- interfaces WDK NDIS ports
+- subinterface access WDK NDIS
+- NDIS miniport drivers WDK , subinterface access
+- NDIS protocol drivers WDK , subinterface access
+- protocol drivers WDK networking , subinterface access
+- min
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Ports

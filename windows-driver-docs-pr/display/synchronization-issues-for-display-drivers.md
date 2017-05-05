@@ -2,7 +2,14 @@
 title: Synchronization Issues for Display Drivers
 description: Synchronization Issues for Display Drivers
 ms.assetid: 7d87e963-02c3-4da2-9dbd-ca14bde2867b
-keywords: ["display drivers WDK Windows 2000 , synchronization", "synchronization WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , synchronization
+- synchronization WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronization Issues for Display Drivers

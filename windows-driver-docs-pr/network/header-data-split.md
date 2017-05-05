@@ -2,7 +2,20 @@
 title: Header-Data Split
 description: Header-Data Split
 ms.assetid: ecbf4b08-8be4-42ca-8a65-1cb8124bee33
-keywords: ["header-data split WDK", "splitting header and data to separate buffers", "buffers WDK header-data split", "receiving data WDK networking", "frames WDK header-data split", "split frames WDK header-data split", "storage WDK header-data split", "space managemen"]
+keywords:
+- header-data split WDK
+- splitting header and data to separate buffers
+- buffers WDK header-data split
+- receiving data WDK networking
+- frames WDK header-data split
+- split frames WDK header-data split
+- storage WDK header-data split
+- space managemen
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Header-Data Split

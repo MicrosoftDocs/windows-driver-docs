@@ -2,6 +2,11 @@
 Description: This topic describes how a client driver can build a USB Request Block (URB) to transfer data to and from isochronous endpoints in a USB device.
 title: How to transfer data to USB isochronous endpoints
 author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to transfer data to USB isochronous endpoints

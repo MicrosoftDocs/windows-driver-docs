@@ -2,7 +2,18 @@
 title: Trace Log
 description: Trace Log
 ms.assetid: c15fcfec-b584-4cb8-bc48-9ff122f5a8fc
-keywords: ["event trace logs WDK", "log files WDK tracing", ".etl files", "etl files", "trace logs WDK", "storing trace messages"]
+keywords:
+- event trace logs WDK
+- log files WDK tracing
+- .etl files
+- etl files
+- trace logs WDK
+- storing trace messages
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Log

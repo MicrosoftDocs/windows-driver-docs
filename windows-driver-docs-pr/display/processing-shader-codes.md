@@ -2,7 +2,20 @@
 title: Processing Shader Codes
 description: Processing Shader Codes
 ms.assetid: c858766c-b414-4971-b4d9-23ec94aca8ea
-keywords: ["user-mode display drivers WDK Windows Vista , shader codes", "shader codes WDK display", "pixel shader codes WDK display", "vertex shader codes WDK display", "vertex declarations WDK display", "tokens WDK display", "end tokens WDK display", "declarations WDK display"]
+keywords:
+- user-mode display drivers WDK Windows Vista , shader codes
+- shader codes WDK display
+- pixel shader codes WDK display
+- vertex shader codes WDK display
+- vertex declarations WDK display
+- tokens WDK display
+- end tokens WDK display
+- declarations WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Shader Codes

@@ -2,7 +2,15 @@
 title: Intermediate Driver Design Concepts
 description: Intermediate Driver Design Concepts
 ms.assetid: cee13268-5df0-4d71-a115-3168c56be06c
-keywords: ["intermediate drivers WDK networking , writing", "NDIS intermediate drivers WDK , writing", "writing NDIS intermediate drivers WDK networking"]
+keywords:
+- intermediate drivers WDK networking , writing
+- NDIS intermediate drivers WDK , writing
+- writing NDIS intermediate drivers WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Intermediate Driver Design Concepts

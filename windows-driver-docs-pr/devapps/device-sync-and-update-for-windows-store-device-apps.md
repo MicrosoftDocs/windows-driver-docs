@@ -2,6 +2,11 @@
 title: Device sync and update for Store device apps in Windows 8.1
 description: In Windows 8.1, your Windows Store app can use a device background task to synchronize data on your peripheral device.
 ms.assetid: AA6E0760-F048-4BDC-8429-D119A531CED6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device sync and update for Store device apps in Windows 8.1

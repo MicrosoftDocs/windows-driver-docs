@@ -2,7 +2,16 @@
 title: IMXF Interfaces
 description: IMXF Interfaces
 ms.assetid: 3782f812-bb95-4735-9635-e721ccda92b5
-keywords: ["IMXF", "MIDI transport WDK audio", "wave sinks WDK audio , MIDI transport", "synthesizers WDK audio , MIDI transport"]
+keywords:
+- IMXF
+- MIDI transport WDK audio
+- wave sinks WDK audio , MIDI transport
+- synthesizers WDK audio , MIDI transport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IMXF Interfaces

@@ -3,7 +3,26 @@ title: AVStream Testing and Debugging
 author: windows-driver-content
 description: AVStream Testing and Debugging
 ms.assetid: 7a3eeeb5-1ff4-4110-9168-c716cd7776b8
-keywords: ["testing AVStream WDK streaming media", "AVStream WDK , testing", "debugging WDK AVStream", "AVStream WDK , debugging", "AMCap2", "GraphEdt", "KsStudio utility", "MCStream", "UVCView", "Active Movie Capture WDK AVStream", "AVStream WDK , tools", "Kernel Streaming Development Studio WDK AVStream", "MultiChannel Streaming Tool WDK AVStream", "USB Video Class descriptor viewer WDK AVStream"]
+keywords:
+- testing AVStream WDK streaming media
+- AVStream WDK , testing
+- debugging WDK AVStream
+- AVStream WDK , debugging
+- AMCap2
+- GraphEdt
+- KsStudio utility
+- MCStream
+- UVCView
+- Active Movie Capture WDK AVStream
+- AVStream WDK , tools
+- Kernel Streaming Development Studio WDK AVStream
+- MultiChannel Streaming Tool WDK AVStream
+- USB Video Class descriptor viewer WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AVStream Testing and Debugging

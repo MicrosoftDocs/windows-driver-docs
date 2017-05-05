@@ -2,7 +2,18 @@
 title: CCD Concepts
 description: CCD Concepts
 ms.assetid: edc11b8d-64cb-49b0-9257-81c1ecf06a84
-keywords: ["connecting displays WDK Windows 7 display , CCD concepts", "connecting displays WDK Windows Server 2008 R2 display , CCD concepts", "configuring displays WDK Windows 7 display , CCD concepts", "configuring displays WDK Windows Server 2008 R2 display , CCD concepts", "CCD concepts WDK Windows 7 display", "CCD concepts WDK Windows Server 2008 R2 display"]
+keywords:
+- connecting displays WDK Windows 7 display , CCD concepts
+- connecting displays WDK Windows Server 2008 R2 display , CCD concepts
+- configuring displays WDK Windows 7 display , CCD concepts
+- configuring displays WDK Windows Server 2008 R2 display , CCD concepts
+- CCD concepts WDK Windows 7 display
+- CCD concepts WDK Windows Server 2008 R2 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CCD Concepts

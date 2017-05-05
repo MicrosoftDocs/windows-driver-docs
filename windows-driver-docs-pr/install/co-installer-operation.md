@@ -2,7 +2,18 @@
 title: Co-installer Operation
 description: Co-installer Operation
 ms.assetid: a7f52125-b435-4963-85dc-712700ba9fe9
-keywords: ["co-installers WDK device installations , how it works", "co-installers WDK device installations , examples", "SetupDiCallClassInstaller", "class co-installers WDK", "DIF request co-installer example WDK", "device-specific co-installers WDK device installations"]
+keywords:
+- co-installers WDK device installations , how it works
+- co-installers WDK device installations , examples
+- SetupDiCallClassInstaller
+- class co-installers WDK
+- DIF request co-installer example WDK
+- device-specific co-installers WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Co-installer Operation

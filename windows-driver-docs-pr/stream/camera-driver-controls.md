@@ -3,6 +3,11 @@ title: New camera driver controls for Windows 10
 author: windows-driver-content
 description: The following camera driver controls are new for Windows 10.
 ms.assetid: E2995039-E8FD-4EC2-9B2F-9BFB767AEE16
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # New camera driver controls for Windows 10

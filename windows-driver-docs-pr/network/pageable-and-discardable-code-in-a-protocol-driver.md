@@ -2,7 +2,15 @@
 title: Pageable and Discardable Code in a Protocol Driver
 description: Pageable and Discardable Code in a Protocol Driver
 ms.assetid: acc27690-cdc3-433c-85c4-489501ea3d26
-keywords: ["protocol drivers WDK networking , pageable and discardable code", "NDIS protocol drivers WDK , pageable and discardable code", "pageable and discardable code WDK NDIS protocol"]
+keywords:
+- protocol drivers WDK networking , pageable and discardable code
+- NDIS protocol drivers WDK , pageable and discardable code
+- pageable and discardable code WDK NDIS protocol
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pageable and Discardable Code in a Protocol Driver

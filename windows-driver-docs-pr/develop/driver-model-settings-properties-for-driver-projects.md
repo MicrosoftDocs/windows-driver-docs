@@ -2,6 +2,11 @@
 ms.assetid: 3D0CB4E7-D1BC-44AA-93D9-5CCDE98C9691
 title: Driver Model Settings Properties for Driver Projects
 description: Sets the basic properties for a kernel-mode or user-mode driver, including the WDF library version and preprocessor definitions.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Model Settings Properties for Driver Projects

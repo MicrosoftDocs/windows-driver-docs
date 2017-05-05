@@ -2,7 +2,14 @@
 title: Propagating a State-Manipulation Operation
 description: Propagating a State-Manipulation Operation
 ms.assetid: 7926bb89-bed8-412e-885a-f5a58fc27ab8
-keywords: ["propagating TCP chimney state-manipulation operations, about propagation process", "state-manipulation operations WDK TCP chimney offload , about propagation process"]
+keywords:
+- propagating TCP chimney state-manipulation operations, about propagation process
+- state-manipulation operations WDK TCP chimney offload , about propagation process
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Propagating a State-Manipulation Operation

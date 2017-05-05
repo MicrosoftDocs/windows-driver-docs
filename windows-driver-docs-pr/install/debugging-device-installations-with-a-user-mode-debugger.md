@@ -2,6 +2,11 @@
 title: Debugging Device Installations with a User-mode Debugger
 description: Debugging Device Installations with a User-mode Debugger
 ms.assetid: 34427afb-3303-44ec-a3a7-72f247c5506d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Device Installations with a User-mode Debugger

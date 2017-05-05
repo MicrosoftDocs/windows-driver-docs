@@ -3,6 +3,11 @@ title: Peripheral Drivers for Devices on SerCx2-Managed Serial Ports
 author: windows-driver-content
 description: Typically, a serial port managed by SerCx2 is permanently connected to a peripheral device.
 ms.assetid: 06412F66-3192-4D25-BDBA-FAB2211519DA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Peripheral Drivers for Devices on SerCx2-Managed Serial Ports

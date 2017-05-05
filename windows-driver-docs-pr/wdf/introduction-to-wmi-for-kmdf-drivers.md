@@ -3,7 +3,15 @@ title: Introduction to WMI for KMDF Drivers
 author: windows-driver-content
 description: Introduction to WMI for KMDF Drivers
 ms.assetid: e919f6c9-a4c5-4972-91e7-f4fa609455fe
-keywords: ["WMI WDK KMDF", "WMI WDK KMDF , about WMI for framework-based drivers", "callback functions WDK KMDF"]
+keywords:
+- WMI WDK KMDF
+- WMI WDK KMDF , about WMI for framework-based drivers
+- callback functions WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to WMI for KMDF Drivers

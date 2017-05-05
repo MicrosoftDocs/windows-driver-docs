@@ -2,6 +2,11 @@
 title: Mobile operator notification event technical details
 description: Mobile operator notification event technical details
 ms.assetid: 639f238a-4bb4-4ac0-9b59-92a761dbc351
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mobile operator notification event technical details

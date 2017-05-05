@@ -2,13 +2,19 @@
 title: INF DDInstall.CoInstallers Section
 description: The CoInstallers section registers one or more device-specific co-installers to supplement the operations of existing device class installers.
 ms.assetid: 2deb16e1-632a-4169-b718-7e3501e64562
-keywords: ["INF DDInstall.CoInstallers Section Device and Driver Installation"]
+keywords:
+- INF DDInstall.CoInstallers Section Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DDInstall.CoInstallers Section
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DDInstall.CoInstallers Section

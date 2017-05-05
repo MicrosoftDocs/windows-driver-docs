@@ -2,6 +2,11 @@
 title: How are Trace-If expressions used
 description: How are Trace-If expressions used
 ms.assetid: 05fc8225-ba4e-4718-a5e1-c9e49ec931b7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How are Trace-If expressions used?

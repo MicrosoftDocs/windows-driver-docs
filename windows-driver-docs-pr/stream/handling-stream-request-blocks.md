@@ -3,7 +3,17 @@ title: Handling Stream Request Blocks
 author: windows-driver-content
 description: Handling Stream Request Blocks
 ms.assetid: fb4fda0d-54e9-4f1b-a78c-276e770189d5
-keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , SRBs", "streaming minidrivers WDK Windows 2000 Kernel , SRBs", "minidrivers WDK Windows 2000 Kernel Streaming , SRBs", "SRBs WDK streaming minidriver", "stream request blocks See SRB or SRBs"]
+keywords:
+- Stream.sys class driver WDK Windows 2000 Kernel , SRBs
+- streaming minidrivers WDK Windows 2000 Kernel , SRBs
+- minidrivers WDK Windows 2000 Kernel Streaming , SRBs
+- SRBs WDK streaming minidriver
+- stream request blocks See SRB or SRBs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Stream Request Blocks

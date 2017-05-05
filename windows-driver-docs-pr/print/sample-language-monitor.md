@@ -3,7 +3,13 @@ title: Sample Language Monitor
 author: windows-driver-content
 description: Sample Language Monitor
 ms.assetid: fd1ef790-c17b-4735-87fc-6b7b8597ac4d
-keywords: ["language monitors WDK print , samples"]
+keywords:
+- language monitors WDK print , samples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Language Monitor

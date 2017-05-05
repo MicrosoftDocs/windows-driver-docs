@@ -2,7 +2,15 @@
 title: Loading DCCMD Data
 description: Loading DCCMD Data
 ms.assetid: 2fceaaa6-5604-4130-ae33-8567561fcccb
-keywords: ["alpha-blend data loading WDK DirectX VA", "blended pictures WDK DirectX VA , alpha-blend data loading", "DCCMD WDK DirectX VA"]
+keywords:
+- alpha-blend data loading WDK DirectX VA
+- blended pictures WDK DirectX VA , alpha-blend data loading
+- DCCMD WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Loading DCCMD Data

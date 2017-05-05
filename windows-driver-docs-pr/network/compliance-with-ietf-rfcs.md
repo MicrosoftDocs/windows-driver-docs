@@ -2,7 +2,18 @@
 title: Compliance with IETF RFCs
 description: Compliance with IETF RFCs
 ms.assetid: 059ebe88-d00e-4319-89f2-c1404c5042c2
-keywords: ["TCP chimney offload WDK networking , RFC compliance", "chimney offload WDK networking , RFC compliance", "RFC compliance WDK TCP chimney offload", "IETF RFC compliance WDK TCP chimney offload", "task-offload engine NIC WDK TCP chimney offload", "TOE NIC WDK TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , RFC compliance
+- chimney offload WDK networking , RFC compliance
+- RFC compliance WDK TCP chimney offload
+- IETF RFC compliance WDK TCP chimney offload
+- task-offload engine NIC WDK TCP chimney offload
+- TOE NIC WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compliance with IETF RFCs

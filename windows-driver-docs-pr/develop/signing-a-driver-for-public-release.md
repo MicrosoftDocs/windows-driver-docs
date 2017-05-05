@@ -2,6 +2,11 @@
 ms.assetid: E61BCCF7-4FC3-4F1F-9DDE-8D09F25F3EA1
 title: Signing a Driver for Public Release
 description: Before you release a driver package to the public, we recommend that you submit the package for certification.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Signing a Driver for Public Release

@@ -3,7 +3,19 @@ title: Enumerator Template Data Type
 author: windows-driver-content
 description: Enumerator Template Data Type
 ms.assetid: deb95ca1-05a5-47f4-8e2a-1d1aa1ae2261
-keywords: ["templates WDK GDL , data types", "data types WDK GDL , primitive", "ENUMERATOR data type WDK GDL", "ArrayLabel directive WDK GDL", "XMLDataType directive WDK GDL", "EnumeratorList directive WDK GDL", "ElementTags directive WDK GDL"]
+keywords:
+- templates WDK GDL , data types
+- data types WDK GDL , primitive
+- ENUMERATOR data type WDK GDL
+- ArrayLabel directive WDK GDL
+- XMLDataType directive WDK GDL
+- EnumeratorList directive WDK GDL
+- ElementTags directive WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerator Template Data Type

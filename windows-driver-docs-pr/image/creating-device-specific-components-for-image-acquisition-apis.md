@@ -3,6 +3,11 @@ title: Creating Device-Specific Components for Image Acquisition APIs
 author: windows-driver-content
 description: Creating Device-Specific Components for Image Acquisition APIs
 ms.assetid: c4906dec-6d34-47f5-abde-0513c4499a66
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Device-Specific Components for Image Acquisition APIs

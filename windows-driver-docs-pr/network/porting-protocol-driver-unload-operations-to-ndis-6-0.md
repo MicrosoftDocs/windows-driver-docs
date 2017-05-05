@@ -2,7 +2,16 @@
 title: Porting Protocol Driver Unload Operations to NDIS 6.0
 description: Porting Protocol Driver Unload Operations to NDIS 6.0
 ms.assetid: 0726ee66-dabc-49d6-b17a-ec6651855b44
-keywords: ["protocol drivers WDK networking , unloading", "NDIS protocol drivers WDK , unloading", "porting protocol drivers WDK networking , unload operations", "unloading protocol drivers"]
+keywords:
+- protocol drivers WDK networking , unloading
+- NDIS protocol drivers WDK , unloading
+- porting protocol drivers WDK networking , unload operations
+- unloading protocol drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Protocol Driver Unload Operations to NDIS 6.0

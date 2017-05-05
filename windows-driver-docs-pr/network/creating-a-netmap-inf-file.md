@@ -2,7 +2,16 @@
 title: Creating a Netmap.inf File
 description: Creating a Netmap.inf File
 ms.assetid: 0f9b4f57-717c-4f11-b0c6-d117a949ab38
-keywords: ["network component upgrades WDK , netmap.inf files", "upgrading network components WDK , netmap.inf files", "netmap.inf files WDK", "vendor-supplied files WDK netmap.inf file"]
+keywords:
+- network component upgrades WDK , netmap.inf files
+- upgrading network components WDK , netmap.inf files
+- netmap.inf files WDK
+- vendor-supplied files WDK netmap.inf file
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Netmap.inf File

@@ -2,7 +2,17 @@
 title: COPP Status
 description: COPP Status
 ms.assetid: bec8f6b6-17d0-4797-9898-add0629cba4d
-keywords: ["copy protection WDK COPP , status", "video copy protection WDK COPP , status", "COPP WDK DirectX VA , status", "protected video WDK COPP , status", "status information WDK COPP"]
+keywords:
+- copy protection WDK COPP , status
+- video copy protection WDK COPP , status
+- COPP WDK DirectX VA , status
+- protected video WDK COPP , status
+- status information WDK COPP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COPP Status

@@ -2,7 +2,24 @@
 title: System-Wide Unique Device IDs
 description: System-Wide Unique Device IDs
 ms.assetid: 628577b6-05fe-4b63-929f-6d63e93c9266
-keywords: ["audio adapters WDK , unique device IDs", "adapter drivers WDK audio , unique device IDs", "Port Class audio adapters WDK , unique device IDs", "MF bus drivers WDK audio", "system-supplied multifunction devices WDK audio", "multifunction audio devices WDK , audio adapters", "unique device IDs WDK audio", "device IDs WDK audio", "identifying device IDs", "subdevices WDK audio", "proprietary bus drivers WDK audio", "device-ID strings WDK audio"]
+keywords:
+- audio adapters WDK , unique device IDs
+- adapter drivers WDK audio , unique device IDs
+- Port Class audio adapters WDK , unique device IDs
+- MF bus drivers WDK audio
+- system-supplied multifunction devices WDK audio
+- multifunction audio devices WDK , audio adapters
+- unique device IDs WDK audio
+- device IDs WDK audio
+- identifying device IDs
+- subdevices WDK audio
+- proprietary bus drivers WDK audio
+- device-ID strings WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # System-Wide Unique Device IDs

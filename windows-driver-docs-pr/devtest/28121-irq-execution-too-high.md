@@ -2,7 +2,14 @@
 title: C28121
 description: Warning C28121 The function is not permitted to be called at the current IRQ level. The current level is too high.
 ms.assetid: f0ab65ee-e160-4118-b001-7a8ba83d9671
-keywords: ["warnings listed WDK PREfast for Drivers", "errors listed WDK PREfast for Drivers"]
+keywords:
+- warnings listed WDK PREfast for Drivers
+- errors listed WDK PREfast for Drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28121

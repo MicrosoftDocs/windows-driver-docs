@@ -2,6 +2,11 @@
 title: Inspecting Packet and Stream Data
 description: Inspecting Packet and Stream Data
 ms.assetid: 8bc5dc92-98aa-4457-a2a9-1a62a8ba0d9c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Inspecting Packet and Stream Data

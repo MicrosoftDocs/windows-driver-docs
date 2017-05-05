@@ -2,7 +2,16 @@
 title: Porting Protocol Driver Initialization to NDIS 6.0
 description: Porting Protocol Driver Initialization to NDIS 6.0
 ms.assetid: 3dfa1698-47bd-4203-8e16-8e4cc31ab72e
-keywords: ["protocol drivers WDK networking , initialization", "NDIS protocol drivers WDK , initialization", "initializing protocol drivers", "porting protocol drivers WDK networking , initialization"]
+keywords:
+- protocol drivers WDK networking , initialization
+- NDIS protocol drivers WDK , initialization
+- initializing protocol drivers
+- porting protocol drivers WDK networking , initialization
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Protocol Driver Initialization to NDIS 6.0

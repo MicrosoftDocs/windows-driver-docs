@@ -2,7 +2,18 @@
 title: Allocating an Interface Index
 description: Allocating an Interface Index
 ms.assetid: f1315da2-16da-4320-9d0d-1270396af38b
-keywords: ["NDIS network interfaces WDK , interface index allocation", "network interfaces WDK , interface index allocation", "interface index WDK networking", "allocating network interface index", "index operations WDK network interface", "locally unique identifier WDK"]
+keywords:
+- NDIS network interfaces WDK , interface index allocation
+- network interfaces WDK , interface index allocation
+- interface index WDK networking
+- allocating network interface index
+- index operations WDK network interface
+- locally unique identifier WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating an Interface Index

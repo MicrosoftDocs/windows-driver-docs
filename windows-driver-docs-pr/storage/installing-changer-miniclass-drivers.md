@@ -3,7 +3,15 @@ title: Installing Changer Miniclass Drivers
 author: windows-driver-content
 description: Installing Changer Miniclass Drivers
 ms.assetid: 923e1128-bacc-450b-b250-bc666951965d
-keywords: ["changer drivers WDK storage , miniclass drivers", "storage changer drivers WDK , miniclass drivers", "miniclass drivers WDK changer"]
+keywords:
+- changer drivers WDK storage , miniclass drivers
+- storage changer drivers WDK , miniclass drivers
+- miniclass drivers WDK changer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Changer Miniclass Drivers

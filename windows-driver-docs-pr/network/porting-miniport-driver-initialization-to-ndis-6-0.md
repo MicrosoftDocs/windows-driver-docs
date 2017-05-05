@@ -2,7 +2,16 @@
 title: Porting Miniport Driver Initialization to NDIS 6.0
 description: Porting Miniport Driver Initialization to NDIS 6.0
 ms.assetid: b4363a35-9a16-47bb-bae0-5ad41e5d334d
-keywords: ["porting miniport drivers WDK networking , initialization", "miniport drivers WDK networking , initializing", "NDIS miniport drivers WDK , initializing", "initializing miniport drivers"]
+keywords:
+- porting miniport drivers WDK networking , initialization
+- miniport drivers WDK networking , initializing
+- NDIS miniport drivers WDK , initializing
+- initializing miniport drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Miniport Driver Initialization to NDIS 6.0

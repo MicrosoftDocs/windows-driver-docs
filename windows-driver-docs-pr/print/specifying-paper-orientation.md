@@ -3,7 +3,20 @@ title: Specifying Paper Orientation
 author: windows-driver-content
 description: Specifying Paper Orientation
 ms.assetid: 2d62e1ff-965b-4fd7-922c-319ec1bc39a5
-keywords: ["Unidrv, paper orientation", "paper orientation WDK Unidrv", "PORTRAIT orientation WDK Unidrv", "LANDSCAPE_CC90 orientation WDK Unidrv", "LANDSCAPE_CC270 orientation WDK Unidrv", "landscape mode WDK Unidrv", "portrait mode WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, paper orientation
+- paper orientation WDK Unidrv
+- PORTRAIT orientation WDK Unidrv
+- LANDSCAPE_CC90 orientation WDK Unidrv
+- LANDSCAPE_CC270 orientation WDK Unidrv
+- landscape mode WDK Unidrv
+- portrait mode WDK Unidrv
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Paper Orientation

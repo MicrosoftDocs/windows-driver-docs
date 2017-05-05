@@ -3,7 +3,13 @@ title: Supporting Point and Print During Printer Installations
 author: windows-driver-content
 description: Supporting Point and Print During Printer Installations
 ms.assetid: 70e65c7b-bba2-4da1-ac80-9719f8005c50
-keywords: ["Point and Print WDK , during printer installations"]
+keywords:
+- Point and Print WDK , during printer installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Point and Print During Printer Installations

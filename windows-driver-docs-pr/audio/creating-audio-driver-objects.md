@@ -2,7 +2,15 @@
 title: Creating Audio Driver Objects
 description: Creating Audio Driver Objects
 ms.assetid: c5d1b1b6-fc47-4227-bcca-1119488dce3b
-keywords: ["audio driver objects WDK", "COM object creation WDK audio", "objects WDK audio"]
+keywords:
+- audio driver objects WDK
+- COM object creation WDK audio
+- objects WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Audio Driver Objects

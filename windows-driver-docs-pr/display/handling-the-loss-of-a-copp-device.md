@@ -2,7 +2,17 @@
 title: Handling the Loss of a COPP Device
 description: Handling the Loss of a COPP Device
 ms.assetid: 7e74b249-34be-44cc-a022-ba6574f2f841
-keywords: ["copy protection WDK COPP , loss of device", "video copy protection WDK COPP , loss of device", "COPP WDK DirectX VA , loss of device", "protected video WDK COPP , loss of device", "lost COPP devices WDK DirectX VA"]
+keywords:
+- copy protection WDK COPP , loss of device
+- video copy protection WDK COPP , loss of device
+- COPP WDK DirectX VA , loss of device
+- protected video WDK COPP , loss of device
+- lost COPP devices WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the Loss of a COPP Device

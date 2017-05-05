@@ -2,6 +2,11 @@
 title: Delivering experiences for MVNOs
 description: Delivering experiences for MVNOs
 ms.assetid: fcb2a3d4-bc19-4fa5-b81d-b0df287404a8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Delivering experiences for MVNOs

@@ -3,7 +3,18 @@ title: Restricting the Loading Location of UMDF Drivers
 author: windows-driver-content
 description: Restricting the Loading Location of UMDF Drivers
 ms.assetid: eac19fa8-2889-4cc3-9f4b-d11d7d3ed684
-keywords: ["locations WDK UMDF", "binaries WDK UMDF", "directories WDK UMDF", "UMDriverCopy", "loading locations WDK UMDF", "INF files WDK UMDF , loading locations"]
+keywords:
+- locations WDK UMDF
+- binaries WDK UMDF
+- directories WDK UMDF
+- UMDriverCopy
+- loading locations WDK UMDF
+- INF files WDK UMDF , loading locations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Restricting the Loading Location of UMDF Drivers

@@ -2,6 +2,11 @@
 title: File a New Bug
 description: File a New Bug
 ms.assetid: f05df7f1-ab0c-46a8-ac75-16b68359c761
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File a New Bug

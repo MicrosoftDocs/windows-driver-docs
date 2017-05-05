@@ -3,7 +3,14 @@ title: Creating and Starting a Parallel Port
 author: windows-driver-content
 description: Creating and Starting a Parallel Port
 ms.assetid: 75c82353-6490-47e9-9278-ec0981af9ae9
-keywords: ["parallel ports WDK , creating", "parallel ports WDK , starting"]
+keywords:
+- parallel ports WDK , creating
+- parallel ports WDK , starting
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating and Starting a Parallel Port

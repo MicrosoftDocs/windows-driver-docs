@@ -2,6 +2,11 @@
 title: Test Authoring and Execution Framework (TAEF)
 description: Test Authoring and Execution Framework (TAEF)
 ms.assetid: D96976DD-5126-4526-A52D-89A6A5660033
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test Authoring and Execution Framework (TAEF)

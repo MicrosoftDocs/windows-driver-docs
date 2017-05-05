@@ -2,13 +2,19 @@
 title: INF DelProperty Directive
 description: DelProperty references INF file sections that delete device properties for a device instance, a device setup class, a device interface class, or a device interface.
 ms.assetid: fff227de-1664-4c9b-8709-1a8e1966bd79
-keywords: ["INF DelProperty Directive Device and Driver Installation"]
+keywords:
+- INF DelProperty Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF DelProperty Directive
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF DelProperty Directive

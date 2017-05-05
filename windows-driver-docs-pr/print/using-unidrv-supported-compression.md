@@ -3,7 +3,14 @@ title: Using Unidrv-Supported Compression
 author: windows-driver-content
 description: Using Unidrv-Supported Compression
 ms.assetid: feda6898-da2c-403f-a159-1423891f3dd5
-keywords: ["raster data compression WDK Unidrv", "compressing raster data WDK Unidrv"]
+keywords:
+- raster data compression WDK Unidrv
+- compressing raster data WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Unidrv-Supported Compression

@@ -2,7 +2,22 @@
 title: Static Driver Verifier Report
 description: Static Driver Verifier Report
 ms.assetid: ba174e8e-683e-44b2-88c2-f55fbccae4d3
-keywords: ["Static Driver Verifier WDK , Static Driver Verifier Report", "StaticDV WDK , Static Driver Verifier Report", "SDV WDK , Static Driver Verifier Report", "Static Driver Verifier WDK , locating errors", "StaticDV WDK , locating errors", "SDV WDK , locating errors", "locating errors WDK Static Driver Verifier", "errors WDK Static Driver Verifier", "panes WDK Static Driver Verifier", "Static Driver Verifier Report WDK"]
+keywords:
+- Static Driver Verifier WDK , Static Driver Verifier Report
+- StaticDV WDK , Static Driver Verifier Report
+- SDV WDK , Static Driver Verifier Report
+- Static Driver Verifier WDK , locating errors
+- StaticDV WDK , locating errors
+- SDV WDK , locating errors
+- locating errors WDK Static Driver Verifier
+- errors WDK Static Driver Verifier
+- panes WDK Static Driver Verifier
+- Static Driver Verifier Report WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Static Driver Verifier Report

@@ -2,6 +2,11 @@
 title: XpsAnalyzer Output
 description: XpsAnalyzer Output
 ms.assetid: eb9c024a-05fd-4dc8-a1bf-6164ee94f853
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XpsAnalyzer Output

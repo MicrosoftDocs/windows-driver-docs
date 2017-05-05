@@ -3,7 +3,18 @@ title: Maintaining an Operation Region Memory Buffer
 author: windows-driver-content
 description: Maintaining an Operation Region Memory Buffer
 ms.assetid: 4abe82ec-d8c4-43c1-a72f-5114ba07160e
-keywords: ["ACPI devices WDK , operation regions", "operation regions WDK ACPI", "function drivers WDK ACPI , operation regions", "WDM function drivers WDK ACPI , operation regions", "operation region memory buffer WDK ACPI", "memory buffers WDK ACPI"]
+keywords:
+- ACPI devices WDK , operation regions
+- operation regions WDK ACPI
+- function drivers WDK ACPI , operation regions
+- WDM function drivers WDK ACPI , operation regions
+- operation region memory buffer WDK ACPI
+- memory buffers WDK ACPI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Maintaining an Operation Region Memory Buffer

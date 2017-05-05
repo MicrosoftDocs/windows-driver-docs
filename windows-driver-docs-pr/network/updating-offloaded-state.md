@@ -2,7 +2,16 @@
 title: Updating Offloaded State
 description: Updating Offloaded State
 ms.assetid: ffcb8f76-aebe-4df4-b420-d40774cbbd00
-keywords: ["TCP chimney offload WDK networking , updating offloaded state", "chimney offload WDK networking , updating offloaded state", "offload state WDK TCP chimney offload , updating offloaded state", "updating offloaded TCP chimney state"]
+keywords:
+- TCP chimney offload WDK networking , updating offloaded state
+- chimney offload WDK networking , updating offloaded state
+- offload state WDK TCP chimney offload , updating offloaded state
+- updating offloaded TCP chimney state
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating Offloaded State

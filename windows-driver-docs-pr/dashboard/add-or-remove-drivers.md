@@ -2,6 +2,11 @@
 title: Add or Remove Drivers
 description: Add or Remove Drivers
 ms.assetid: d55c98d9-4536-4004-8bee-e95f665cb4ce
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Add or Remove Drivers

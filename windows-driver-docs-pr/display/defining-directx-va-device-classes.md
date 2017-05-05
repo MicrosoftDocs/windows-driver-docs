@@ -2,7 +2,14 @@
 title: Defining DirectX VA Device Classes
 description: Defining DirectX VA Device Classes
 ms.assetid: a4b2ee88-747a-48c3-ba1d-2d605c46db58
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , defining device classes", "device classes WDK DirectX VA"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , defining device classes
+- device classes WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Defining DirectX VA Device Classes

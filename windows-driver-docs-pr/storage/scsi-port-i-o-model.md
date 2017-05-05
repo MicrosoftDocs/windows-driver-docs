@@ -3,6 +3,11 @@ title: SCSI Port I/O Model
 author: windows-driver-content
 description: SCSI Port I/O Model
 ms.assetid: c79fdc99-30ae-4c4a-a130-2b8743bbff7f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SCSI Port I/O Model

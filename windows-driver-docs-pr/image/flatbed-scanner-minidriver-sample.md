@@ -3,6 +3,11 @@ title: Flatbed Scanner Minidriver Sample
 author: windows-driver-content
 description: Flatbed Scanner Minidriver Sample
 ms.assetid: 8c1ad90a-cff9-45a0-b2d9-e2605436f128
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flatbed Scanner Minidriver Sample

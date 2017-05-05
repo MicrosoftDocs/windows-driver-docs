@@ -2,7 +2,18 @@
 title: Creating a Device Object
 description: Creating a Device Object
 ms.assetid: 9474e080-b2c3-4c1b-af19-bf269d1c94d4
-keywords: ["Windows Filtering Platform callout drivers WDK , initializing", "callout drivers WDK Windows Filtering Platform , initializing", "initializing callout drivers WDK Windows Filtering Platform", "device objects WDK Windows Filtering Platform", "WDM-based callout drivers WDK Windows Filtering Platform", "WDF-based callout drivers WDK Windows Filtering Platform"]
+keywords:
+- Windows Filtering Platform callout drivers WDK , initializing
+- callout drivers WDK Windows Filtering Platform , initializing
+- initializing callout drivers WDK Windows Filtering Platform
+- device objects WDK Windows Filtering Platform
+- WDM-based callout drivers WDK Windows Filtering Platform
+- WDF-based callout drivers WDK Windows Filtering Platform
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Device Object

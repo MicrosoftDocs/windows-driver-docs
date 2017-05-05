@@ -2,7 +2,15 @@
 title: Starting and Exiting TraceView
 description: Starting and Exiting TraceView
 ms.assetid: ebadf441-c28a-4d8e-ae83-444c8a68f62b
-keywords: ["TraceView WDK , starting", "TraceView WDK , exiting", "TraceView WDK , command-line interface"]
+keywords:
+- TraceView WDK , starting
+- TraceView WDK , exiting
+- TraceView WDK , command-line interface
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting and Exiting TraceView

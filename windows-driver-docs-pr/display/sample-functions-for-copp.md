@@ -2,7 +2,16 @@
 title: Sample Functions for COPP
 description: Sample Functions for COPP
 ms.assetid: 73c9cf1c-c20d-456c-8029-5316fd8979d5
-keywords: ["copy protection WDK COPP , sample functions", "video copy protection WDK COPP , sample functions", "COPP WDK DirectX VA , sample functions", "protected video WDK COPP , sample functions"]
+keywords:
+- copy protection WDK COPP , sample functions
+- video copy protection WDK COPP , sample functions
+- COPP WDK DirectX VA , sample functions
+- protected video WDK COPP , sample functions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Functions for COPP

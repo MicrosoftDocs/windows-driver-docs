@@ -2,6 +2,11 @@
 title: Create and Manage Your Profile
 description: Create and Manage Your Profile
 ms.assetid: 1b5ba1f9-bfd8-4e98-a5cb-9861af0dd07b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create and Manage Your Profile

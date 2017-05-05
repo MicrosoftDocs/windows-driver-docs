@@ -3,7 +3,16 @@ title: Spoofing Identity
 author: windows-driver-content
 description: Spoofing Identity
 ms.assetid: adc0b986-a8c2-45ce-a4d5-9d4d867603b5
-keywords: ["threat models WDK file systems , spoofing identity", "security threat models WDK file systems , spoofing identity", "spoofing identity WDK file systems", "identity spoofing WDK file systems"]
+keywords:
+- threat models WDK file systems , spoofing identity
+- security threat models WDK file systems , spoofing identity
+- spoofing identity WDK file systems
+- identity spoofing WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Spoofing Identity

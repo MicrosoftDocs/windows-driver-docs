@@ -3,7 +3,19 @@ title: File System Stacks
 author: windows-driver-content
 description: File System Stacks
 ms.assetid: 67839ffb-fe38-42c2-8f33-89d01d796d8a
-keywords: ["filter drivers WDK file system , file system stacks", "file system filter drivers WDK , file system stacks", "file system stacks WDK", "volumes WDK file system , device objects", "VDOs WDK file system", "control device objects WDK file system", "CDOs WDK file system"]
+keywords:
+- filter drivers WDK file system , file system stacks
+- file system filter drivers WDK , file system stacks
+- file system stacks WDK
+- volumes WDK file system , device objects
+- VDOs WDK file system
+- control device objects WDK file system
+- CDOs WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File System Stacks

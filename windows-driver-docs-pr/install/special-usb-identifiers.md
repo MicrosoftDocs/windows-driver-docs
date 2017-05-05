@@ -2,7 +2,13 @@
 title: Special USB Identifiers
 description: Special USB Identifiers
 ms.assetid: b69ea1c8-7ba5-42de-afe8-9b1efd275972
-keywords: ["USB identifiers WDK device installations"]
+keywords:
+- USB identifiers WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Special USB Identifiers

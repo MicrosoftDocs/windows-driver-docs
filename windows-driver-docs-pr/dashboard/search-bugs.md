@@ -2,6 +2,11 @@
 title: Search Bugs
 description: Search Bugs
 ms.assetid: 873a59b2-beaf-47dc-ab17-d7498d692209
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Search Bugs

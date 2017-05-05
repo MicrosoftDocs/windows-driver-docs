@@ -2,6 +2,11 @@
 title: Hyper-V Extensible Switch Control Path
 description: Hyper-V Extensible Switch Control Path
 ms.assetid: 15F651F2-4C46-44CE-89CE-3B86AE48A851
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hyper-V Extensible Switch Control Path

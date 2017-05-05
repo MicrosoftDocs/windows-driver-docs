@@ -3,7 +3,16 @@ title: Working with USB Pipes in UMDF 1.x Drivers
 author: windows-driver-content
 description: Working with USB Pipes in UMDF 1.x Drivers
 ms.assetid: face26da-fa79-4d32-8ad1-9e8022bb23b3
-keywords: ["UMDF WDK , USB pipes", "User-Mode Driver Framework WDK , USB pipes", "user-mode drivers WDK UMDF , USB pipes", "USB pipes WDK UMDF"]
+keywords:
+- UMDF WDK , USB pipes
+- User-Mode Driver Framework WDK , USB pipes
+- user-mode drivers WDK UMDF , USB pipes
+- USB pipes WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Working with USB Pipes in UMDF 1.x Drivers

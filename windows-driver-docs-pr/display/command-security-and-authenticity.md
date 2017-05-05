@@ -2,7 +2,14 @@
 title: Command Security and Authenticity
 description: Command Security and Authenticity
 ms.assetid: 2a70f974-c34c-4462-a772-d8253f842ed8
-keywords: ["commands WDK COPP", "command exchange WDK COPP"]
+keywords:
+- commands WDK COPP
+- command exchange WDK COPP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command Security and Authenticity

@@ -2,7 +2,14 @@
 title: The Checked Build and Driver Verifier
 description: The Checked Build and Driver Verifier
 ms.assetid: 311a9588-5094-432c-b696-339ff3ff8c35
-keywords: ["checked builds WDK , Driver Verifier", "Driver Verifier WDK checked builds"]
+keywords:
+- checked builds WDK , Driver Verifier
+- Driver Verifier WDK checked builds
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Checked Build and Driver Verifier

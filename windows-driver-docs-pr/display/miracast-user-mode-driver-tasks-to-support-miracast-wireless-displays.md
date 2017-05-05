@@ -2,6 +2,11 @@
 title: Miracast user-mode driver tasks to support Miracast wireless displays
 description: To enable Miracast wireless displays, you need to create a standalone, unique DLL that implements a Miracast user-mode driver.
 ms.assetid: FF5D7760-2407-487A-8363-7AC3B6385F6C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="display.miracast_user-mode_driver_tasks_to_support_miracast_wireless_displays"></span>Miracast user-mode driver tasks to support Miracast wireless displays

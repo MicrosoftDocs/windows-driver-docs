@@ -2,6 +2,11 @@
 title: Reporting Wake Reason Status Indication Capabilities
 description: Reporting Wake Reason Status Indication Capabilities
 ms.assetid: A72D04F7-EB09-4B1B-9AF5-7FEBC2514CE9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Wake Reason Status Indication Capabilities

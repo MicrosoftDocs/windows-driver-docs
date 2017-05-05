@@ -3,7 +3,15 @@ title: Autoconfiguration in an IHV Port Monitor
 author: windows-driver-content
 description: Autoconfiguration in an IHV Port Monitor
 ms.assetid: c41c8502-902a-448c-8f96-fb196e68ee6e
-keywords: ["IHV port monitor autoconfiguration WDK printer", "autoconfiguration WDK printer , IHV port monitors", "printer autoconfiguration WDK printer , IHV port monitors"]
+keywords:
+- IHV port monitor autoconfiguration WDK printer
+- autoconfiguration WDK printer , IHV port monitors
+- printer autoconfiguration WDK printer , IHV port monitors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Autoconfiguration in an IHV Port Monitor

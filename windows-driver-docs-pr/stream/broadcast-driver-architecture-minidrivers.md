@@ -3,7 +3,17 @@ title: Broadcast Driver Architecture Minidrivers
 author: windows-driver-content
 description: Broadcast Driver Architecture Minidrivers
 ms.assetid: 0ad56dbd-6f79-439f-8dfc-8d118d114ddd
-keywords: ["Broadcast Driver Architecture WDK AVStream , minidrivers", "BDA WDK AVStream , minidrivers", "minidrivers WDK BDA", "BDA minidrivers WDK AVStream", "BDA minidrivers WDK AVStream , about BDA minidrivers"]
+keywords:
+- Broadcast Driver Architecture WDK AVStream , minidrivers
+- BDA WDK AVStream , minidrivers
+- minidrivers WDK BDA
+- BDA minidrivers WDK AVStream
+- BDA minidrivers WDK AVStream , about BDA minidrivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Broadcast Driver Architecture Minidrivers

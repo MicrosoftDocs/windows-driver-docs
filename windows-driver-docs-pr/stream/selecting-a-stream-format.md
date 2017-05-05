@@ -3,7 +3,19 @@ title: Selecting a Stream Format
 author: windows-driver-content
 description: Selecting a Stream Format
 ms.assetid: 876eca52-4d5e-45bd-90df-ff4b6405078d
-keywords: ["video capture WDK AVStream , stream formats", "capturing video WDK AVStream , stream formats", "stream formats WDK video capture", "formats WDK video capture", "performing data intersections WDK video capture", "data intersections WDK video capture", "intersections WDK video capture"]
+keywords:
+- video capture WDK AVStream , stream formats
+- capturing video WDK AVStream , stream formats
+- stream formats WDK video capture
+- formats WDK video capture
+- performing data intersections WDK video capture
+- data intersections WDK video capture
+- intersections WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Selecting a Stream Format

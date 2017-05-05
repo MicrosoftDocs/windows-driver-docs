@@ -2,6 +2,11 @@
 title: USB Audio Class System Driver (Usbaudio.sys)
 description: The USB Audio class system driver (Usbaudio.sys) is an AVStream minidriver that provides driver support for audio devices that comply with the Universal Serial Bus (USB) Device Class Definition for Audio Devices.
 ms.assetid: 7ECE8006-3181-451C-B047-A3D767A7B98A
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Audio Class System Driver (Usbaudio.sys)

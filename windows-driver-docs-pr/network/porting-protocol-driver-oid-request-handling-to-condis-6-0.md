@@ -2,7 +2,13 @@
 title: Porting Protocol Driver OID Request Handling to CoNDIS 6.0
 description: Porting Protocol Driver OID Request Handling to CoNDIS 6.0
 ms.assetid: d5f0b700-775d-4eb5-ac7a-01385be71a0d
-keywords: ["porting OID requests WDK networking"]
+keywords:
+- porting OID requests WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Protocol Driver OID Request Handling to CoNDIS 6.0

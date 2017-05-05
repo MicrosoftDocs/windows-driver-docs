@@ -2,13 +2,19 @@
 title: DevCon ListClass
 description: Lists all devices in the specified device setup classes. Valid on local and remote computers.
 ms.assetid: b642ca5e-5ef1-499f-b8c5-96583a4bd411
-keywords: ["DevCon ListClass Driver Development Tools"]
+keywords:
+- DevCon ListClass Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon ListClass
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon ListClass

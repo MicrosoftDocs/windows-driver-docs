@@ -3,7 +3,15 @@ title: Registering FsFilter Callback Routines
 author: windows-driver-content
 description: Registering FsFilter Callback Routines
 ms.assetid: d040e61c-514e-446b-9e72-934fd4322d3b
-keywords: ["registering callback routines", "callback routines WDK file system", "FsFilter notification callback routines WDK file system"]
+keywords:
+- registering callback routines
+- callback routines WDK file system
+- FsFilter notification callback routines WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering FsFilter Callback Routines

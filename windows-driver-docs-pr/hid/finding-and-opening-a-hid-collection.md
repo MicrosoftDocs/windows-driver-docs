@@ -3,7 +3,18 @@ title: Finding and Opening a HID Collection
 author: windows-driver-content
 description: Finding and Opening a HID Collection
 ms.assetid: b46fdb06-e6ae-4376-994f-69bf6539f2ce
-keywords: ["collections WDK HID , finding", "HID collections WDK , finding", "finding HID collections", "collections WDK HID , opening", "HID collections WDK , opening", "opening HID collections"]
+keywords:
+- collections WDK HID , finding
+- HID collections WDK , finding
+- finding HID collections
+- collections WDK HID , opening
+- HID collections WDK , opening
+- opening HID collections
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Finding and Opening a HID Collection

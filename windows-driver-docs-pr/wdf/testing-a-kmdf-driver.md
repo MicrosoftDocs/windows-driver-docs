@@ -3,7 +3,18 @@ title: Testing a WDF Driver (KMDF or UMDF)
 author: windows-driver-content
 description: This topic describes recommendations for testing a Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) version 2 driver.
 ms.assetid: 05545488-0114-49f5-bf8a-006a868911e8
-keywords: ["kernel-mode drivers WDK KMDF , testing", "KMDF WDK , testing drivers", "Kernel-Mode Driver Framework WDK , testing drivers", "framework-based drivers WDK KMDF , testing", "testing drivers WDK , framework-based drivers", "VerifierOn registry value WDK KMDF"]
+keywords:
+- kernel-mode drivers WDK KMDF , testing
+- KMDF WDK , testing drivers
+- Kernel-Mode Driver Framework WDK , testing drivers
+- framework-based drivers WDK KMDF , testing
+- testing drivers WDK , framework-based drivers
+- VerifierOn registry value WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing a WDF Driver (KMDF or UMDF)

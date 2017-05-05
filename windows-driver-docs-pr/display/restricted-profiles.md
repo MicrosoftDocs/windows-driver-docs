@@ -2,7 +2,16 @@
 title: Restricted Profiles
 description: Restricted Profiles
 ms.assetid: 043d5867-d761-47eb-99de-5022a9ee6e7f
-keywords: ["DirectX Video Acceleration WDK Windows 2000 display , restricted profiles", "Video Acceleration WDK DirectX , restricted profiles", "VA WDK DirectX , restricted profiles", "restricted profiles WDK DirectX VA"]
+keywords:
+- DirectX Video Acceleration WDK Windows 2000 display , restricted profiles
+- Video Acceleration WDK DirectX , restricted profiles
+- VA WDK DirectX , restricted profiles
+- restricted profiles WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Restricted Profiles

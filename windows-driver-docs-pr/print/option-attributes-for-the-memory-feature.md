@@ -3,7 +3,13 @@ title: Option Attributes for the Memory Feature
 author: windows-driver-content
 description: Option Attributes for the Memory Feature
 ms.assetid: 17646f6e-b234-4a17-ba24-4bc7f6f85ace
-keywords: ["Memory Feature WDK print"]
+keywords:
+- Memory Feature WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Option Attributes for the Memory Feature

@@ -2,7 +2,16 @@
 title: Bluetooth IOCTLs
 description: Bluetooth IOCTLs
 ms.assetid: 384ea4bb-863c-4da7-bf81-85d2de734ef7
-keywords: ["Bluetooth WDK , IOCTLs", "IOCTLs WDK Bluetooth", "local Bluetooth WDK", "remote Bluetooth WDK"]
+keywords:
+- Bluetooth WDK , IOCTLs
+- IOCTLs WDK Bluetooth
+- local Bluetooth WDK
+- remote Bluetooth WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Bluetooth IOCTLs

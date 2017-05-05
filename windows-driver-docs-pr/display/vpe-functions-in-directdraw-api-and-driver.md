@@ -2,7 +2,18 @@
 title: VPE Functions in DirectDraw API and Driver
 description: VPE Functions in DirectDraw API and Driver
 ms.assetid: 7e899f20-4082-4438-b7f2-198d1a4ad344
-keywords: ["DirectX VPE support WDK DirectDraw , functions", "drawing VPEs WDK DirectDraw , functions", "DirectDraw VPEs WDK Windows 2000 display , functions", "video port extensions WDK DirectDraw , functions", "VPEs WDK DirectDraw , functions", "functions WDK video port extensions"]
+keywords:
+- DirectX VPE support WDK DirectDraw , functions
+- drawing VPEs WDK DirectDraw , functions
+- DirectDraw VPEs WDK Windows 2000 display , functions
+- video port extensions WDK DirectDraw , functions
+- VPEs WDK DirectDraw , functions
+- functions WDK video port extensions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VPE Functions in DirectDraw API and Driver

@@ -2,7 +2,16 @@
 title: Device Manager Error Messages
 description: Device Manager Error Messages
 ms.assetid: 38958790-6b60-48ff-a341-fc39a16602ab
-keywords: ["Device Manager WDK , errors", "errors WDK Device Manager", "yellow exclamation point WDK Device Manager", "messages WDK Device Manager"]
+keywords:
+- Device Manager WDK , errors
+- errors WDK Device Manager
+- yellow exclamation point WDK Device Manager
+- messages WDK Device Manager
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Manager Error Messages

@@ -2,6 +2,11 @@
 title: NDIS QoS Traffic Classes
 description: NDIS QoS Traffic Classes
 ms.assetid: 0DE61F97-7173-4D91-90F3-20EAFB810251
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS QoS Traffic Classes

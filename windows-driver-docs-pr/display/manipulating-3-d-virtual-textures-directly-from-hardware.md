@@ -2,7 +2,17 @@
 title: Manipulating 3-D Virtual Textures Directly from Hardware
 description: Manipulating 3-D Virtual Textures Directly from Hardware
 ms.assetid: 5390f62d-3359-4f19-ab6c-07239e598b20
-keywords: ["three-dimensional textures WDK display", "textures WDK display", "3-D textures WDK display", "manipulating 3-D textures directly WDK display", "hardware 3-D texture manipulation WDK display"]
+keywords:
+- three-dimensional textures WDK display
+- textures WDK display
+- 3-D textures WDK display
+- manipulating 3-D textures directly WDK display
+- hardware 3-D texture manipulation WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Manipulating 3-D Virtual Textures Directly from Hardware

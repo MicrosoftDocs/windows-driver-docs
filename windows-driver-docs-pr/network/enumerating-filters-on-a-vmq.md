@@ -2,6 +2,11 @@
 title: Enumerating Filters on a VMQ
 description: Enumerating Filters on a VMQ
 ms.assetid: 6d5d8cb6-7bdf-488b-8fcd-7c6e78c4fb24
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enumerating Filters on a VMQ

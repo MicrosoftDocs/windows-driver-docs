@@ -2,6 +2,11 @@
 title: Installing Just the Checked Operating System and HAL
 description: Installing Just the Checked Operating System and HAL (For Windows Vista and Later)
 ms.assetid: 1203b7cd-50b9-4174-8bec-112019444fac
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Just the Checked Operating System and HAL (For Windows Vista and Later)
@@ -13,7 +18,7 @@ Instead of installing the complete checked build on your computer, you can insta
 
 Before you install a partial checked build, you must determine the version of the operating system image and HAL files that were used to install the free build on your system.
 
-**Tip**   For 64-bit versions of Windows Vista and later, this process is easy. If you have the [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573), you can use the operating system image and HAL files from the Debug\\ directory of the WDK. See [Downloading a Checked Build of Windows](obtaining-the-checked-build.md). There is only one version of each for amd64 or ia64. The names of the files are ntkrnlmp.exe and Hal.dll. If you have the WDK for the version of Windows you are using, you can skip ahead to [Step 2: Copying the Checked Files](#step-2---copying-the-checked-files).
+**Tip**   For 64-bit versions of Windows Vista and later, this process is easy. If you have the [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573), you can use the operating system image and HAL files from the Debug\\ directory of the WDK. See [Installing the Checked Build](installing-the-checked-build.md). There is only one version of each for amd64 or ia64. The names of the files are ntkrnlmp.exe and Hal.dll. If you have the WDK for the version of Windows you are using, you can skip ahead to [Step 2: Copying the Checked Files](#step-2---copying-the-checked-files).
 
  
 

@@ -3,6 +3,11 @@ title: Control Method Input Buffer Structures
 author: windows-driver-content
 description: Control Method Input Buffer Structures
 ms.assetid: 41d4c53f-9dc7-4723-9707-ae48ff07f5f4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Control Method Input Buffer Structures

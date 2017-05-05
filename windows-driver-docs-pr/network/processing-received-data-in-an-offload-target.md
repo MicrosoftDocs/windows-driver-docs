@@ -2,7 +2,15 @@
 title: Processing Received Data in an Offload Target
 description: Processing Received Data in an Offload Target
 ms.assetid: 97ae2f5d-000c-460a-ab3e-99c326a494d2
-keywords: ["data I/O WDK TCP chimney offload , received data processing", "I/O WDK TCP chimney offload , received data processing", "received data processing WDK TCP chimney offload"]
+keywords:
+- data I/O WDK TCP chimney offload , received data processing
+- I/O WDK TCP chimney offload , received data processing
+- received data processing WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Processing Received Data in an Offload Target

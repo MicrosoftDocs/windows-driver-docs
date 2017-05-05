@@ -2,6 +2,11 @@
 title: App Certification Submissions
 description: App Certification Submissions
 ms.assetid: 3356ee84-fb45-45cc-a7a4-c069238b7600
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # App Certification Submissions

@@ -3,7 +3,16 @@ title: Storage Filter Driver's Device-Type-Specific Functionality
 author: windows-driver-content
 description: Storage Filter Driver's Device-Type-Specific Functionality
 ms.assetid: ecc0d938-e931-46bd-a1e1-0e6da8e149a4
-keywords: ["storage filter drivers WDK , device-type-specific functionality", "filter drivers WDK storage , device-type-specific functionality", "SFD WDK storage , device-type-specific functionality", "device-type-specific functionality WDK storage"]
+keywords:
+- storage filter drivers WDK , device-type-specific functionality
+- filter drivers WDK storage , device-type-specific functionality
+- SFD WDK storage , device-type-specific functionality
+- device-type-specific functionality WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Filter Driver's Device-Type-Specific Functionality

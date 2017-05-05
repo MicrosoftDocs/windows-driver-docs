@@ -3,6 +3,11 @@ title: IPM Configuration and Usage
 author: windows-driver-content
 description: IPM Configuration and Usage
 ms.assetid: 95057785-e5b5-40ae-86e4-50bbf0014cef
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IPM Configuration and Usage

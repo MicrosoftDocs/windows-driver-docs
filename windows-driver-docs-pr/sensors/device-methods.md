@@ -3,6 +3,11 @@ title: Device methods
 author: windows-driver-content
 description: The sensor firmware supports several helper methods that perform tasks like supporting events and managing power.
 ms.assetid: 4F1463B0-A307-4C70-A660-18AD876B3363
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device methods

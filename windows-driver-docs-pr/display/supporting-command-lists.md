@@ -2,7 +2,18 @@
 title: Supporting Command Lists
 description: Supporting Command Lists
 ms.assetid: 7bede247-680d-4fd3-a10b-6ef63f0a88ec
-keywords: ["Direct3D version 11 WDK Windows 7 display , command lists", "Direct3D version 11 WDK Windows Server 2008 R2 display , command lists", "command lists support WDK Windows 7 display", "command lists support WDK Windows 7 display , Direct3D version 11", "command lists support WDK Windows 2008 R2 display", "command lists support WDK Windows 2008 R2 display , Direct3D version 11"]
+keywords:
+- Direct3D version 11 WDK Windows 7 display , command lists
+- Direct3D version 11 WDK Windows Server 2008 R2 display , command lists
+- command lists support WDK Windows 7 display
+- command lists support WDK Windows 7 display , Direct3D version 11
+- command lists support WDK Windows 2008 R2 display
+- command lists support WDK Windows 2008 R2 display , Direct3D version 11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Command Lists

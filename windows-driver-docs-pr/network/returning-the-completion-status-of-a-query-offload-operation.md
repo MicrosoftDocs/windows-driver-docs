@@ -2,7 +2,14 @@
 title: Returning the Completion Status of a Query Offload Operation
 description: Returning the Completion Status of a Query Offload Operation
 ms.assetid: 9583279e-1f18-4753-a7fa-08947339553f
-keywords: ["querying offloaded TCP chimney state, completion status", "completion status of querying WDK TCP chimney offload"]
+keywords:
+- querying offloaded TCP chimney state, completion status
+- completion status of querying WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Returning the Completion Status of a Query Offload Operation

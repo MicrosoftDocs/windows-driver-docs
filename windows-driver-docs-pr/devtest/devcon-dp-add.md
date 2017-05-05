@@ -2,13 +2,19 @@
 title: DevCon Dp\_add
 description: Adds a third-party (OEM) driver package to the driver store on the local computer.
 ms.assetid: 929bb59b-f227-47c5-9351-270ffbe4d745
-keywords: ["DevCon Dp_add Driver Development Tools"]
+keywords:
+- DevCon Dp_add Driver Development Tools
 topic_type:
 - apiref
 api_name:
 - DevCon Dp_add
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DevCon Dp\_add

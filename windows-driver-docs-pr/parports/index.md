@@ -3,7 +3,13 @@ title: Parallel Device Driver Design Guide
 author: windows-driver-content
 description: Parallel Device Driver Design Guide
 ms.assetid: ef52c450-6073-4836-b3c8-bc0050328f97
-keywords: ["ports WDK"]
+keywords:
+- ports WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Parallel Device Driver Design Guide

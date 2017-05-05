@@ -2,7 +2,17 @@
 title: Notify Object Diagram
 description: Notify Object Diagram
 ms.assetid: d7c177c0-2dc6-47ed-97fb-5c87cbbc8d6f
-keywords: ["notify objects WDK networking , diagram", "network notify objects WDK , diagram", "network configuration subsystem WDK", "subsystem WDK network configuration", "notifications WDK networking , notifyo object diagram"]
+keywords:
+- notify objects WDK networking , diagram
+- network notify objects WDK , diagram
+- network configuration subsystem WDK
+- subsystem WDK network configuration
+- notifications WDK networking , notifyo object diagram
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notify Object Diagram

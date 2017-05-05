@@ -2,7 +2,18 @@
 title: Module States of a Filter Driver
 description: Module States of a Filter Driver
 ms.assetid: 139679d6-d3dc-433b-a35a-eb1e5ed3cb33
-keywords: ["filter drivers WDK networking , module states", "NDIS filter drivers WDK , module states", "module states WDK networking", "filter modules WDK networking , states of filter drivers", "filter drivers WDK networking , filter modules", "NDIS filter drivers WDK ,"]
+keywords:
+- filter drivers WDK networking , module states
+- NDIS filter drivers WDK , module states
+- module states WDK networking
+- filter modules WDK networking , states of filter drivers
+- filter drivers WDK networking , filter modules
+- NDIS filter drivers WDK ,
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Module States of a Filter Driver

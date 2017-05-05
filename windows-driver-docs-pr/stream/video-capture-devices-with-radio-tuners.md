@@ -3,7 +3,17 @@ title: Video Capture Devices with Radio Tuners
 author: windows-driver-content
 description: Video Capture Devices with Radio Tuners
 ms.assetid: 36e3ca98-cb1b-46cc-809a-8c9ad08a53c8
-keywords: ["radio tuners WDK video capture", "PLL offsets WDK video capture", "signal strength WDK video capture", "manual radio tuning WDK video capture", "FM tuners WDK video capture"]
+keywords:
+- radio tuners WDK video capture
+- PLL offsets WDK video capture
+- signal strength WDK video capture
+- manual radio tuning WDK video capture
+- FM tuners WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Capture Devices with Radio Tuners

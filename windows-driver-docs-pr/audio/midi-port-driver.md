@@ -2,7 +2,16 @@
 title: MIDI Port Driver
 description: MIDI Port Driver
 ms.assetid: 4b403569-75c8-4cf4-bda1-efa9e004b529
-keywords: ["MIDI port driver WDK audio", "PortCls WDK audio , port drivers", "audio miniport drivers WDK , port drivers", "miniport drivers WDK audio , port drivers"]
+keywords:
+- MIDI port driver WDK audio
+- PortCls WDK audio , port drivers
+- audio miniport drivers WDK , port drivers
+- miniport drivers WDK audio , port drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # MIDI Port Driver

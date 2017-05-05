@@ -2,7 +2,22 @@
 title: Providing Capabilities for Video Decoding
 description: Providing Capabilities for Video Decoding
 ms.assetid: bffcc0da-7b1a-4f70-98f5-4841c8df9f12
-keywords: ["video decoding WDK DirectX VA , capabilities provided per request type", "decoding video WDK DirectX VA , capabilities provided per request type", "D3DDDICAPS_GETDECODEGUIDCOUNT", "D3DDDICAPS_GETDECODEGUIDS", "D3DDDICAPS_GETDECODERTFORMATCOUNT", "D3DDDICAPS_GETDECODERTFORMATS", "D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFOCOUNT", "D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO", "D3DDDICAPS_GETDECODECONFIGURATIONCOUNT", "D3DDDICAPS_GETDECODECONFIGURATIONS"]
+keywords:
+- video decoding WDK DirectX VA , capabilities provided per request type
+- decoding video WDK DirectX VA , capabilities provided per request type
+- D3DDDICAPS_GETDECODEGUIDCOUNT
+- D3DDDICAPS_GETDECODEGUIDS
+- D3DDDICAPS_GETDECODERTFORMATCOUNT
+- D3DDDICAPS_GETDECODERTFORMATS
+- D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFOCOUNT
+- D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO
+- D3DDDICAPS_GETDECODECONFIGURATIONCOUNT
+- D3DDDICAPS_GETDECODECONFIGURATIONS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Providing Capabilities for Video Decoding

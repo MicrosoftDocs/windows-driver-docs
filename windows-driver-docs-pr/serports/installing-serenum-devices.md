@@ -3,7 +3,13 @@ title: Installing Serenum Devices
 author: windows-driver-content
 description: Installing Serenum Devices
 ms.assetid: abb58ce0-7afb-43eb-81e0-1942d451355a
-keywords: ["Serenum driver WDK , device installations"]
+keywords:
+- Serenum driver WDK , device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Serenum Devices

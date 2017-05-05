@@ -3,7 +3,16 @@ title: Supporting PnP and Power Management in Your Driver
 author: windows-driver-content
 description: Supporting PnP and Power Management in Your Driver
 ms.assetid: d9cf987f-d994-4ea9-a467-4b1b8bcdc456
-keywords: ["PnP WDK KMDF , about PnP in framework-based drivers", "Plug and Play WDK KMDF , about PnP in framework-based drivers", "power management WDK KMDF , about power management", "device objects WDK KMDF"]
+keywords:
+- PnP WDK KMDF , about PnP in framework-based drivers
+- Plug and Play WDK KMDF , about PnP in framework-based drivers
+- power management WDK KMDF , about power management
+- device objects WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting PnP and Power Management in Your Driver

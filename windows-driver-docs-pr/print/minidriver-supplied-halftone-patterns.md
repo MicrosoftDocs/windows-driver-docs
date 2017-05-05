@@ -3,7 +3,14 @@ title: Minidriver-Supplied Halftone Patterns
 author: windows-driver-content
 description: Minidriver-Supplied Halftone Patterns
 ms.assetid: db2e1c5c-f337-4875-980d-a75a54a4cece
-keywords: ["GDI-supplied halftoning WDK Unidrv", "minidriver-supplied halftoning WDK Unidrv"]
+keywords:
+- GDI-supplied halftoning WDK Unidrv
+- minidriver-supplied halftoning WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Minidriver-Supplied Halftone Patterns

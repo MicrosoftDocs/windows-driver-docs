@@ -2,7 +2,19 @@
 title: Complex Surfaces and Attachments
 description: Complex Surfaces and Attachments
 ms.assetid: fb75c534-b1ff-44d3-a8dc-dcf0f221b6ad
-keywords: ["drawing surfaces WDK DirectDraw , complex", "DirectDraw surfaces WDK Windows 2000 display , complex", "surfaces WDK DirectDraw , complex", "complex surfaces WDK DirectDraw", "surfaces WDK DirectDraw , attachments", "drawing surfaces WDK DirectDraw , attachments", "DirectDraw surfaces WDK Windows 2000 display , attachments"]
+keywords:
+- drawing surfaces WDK DirectDraw , complex
+- DirectDraw surfaces WDK Windows 2000 display , complex
+- surfaces WDK DirectDraw , complex
+- complex surfaces WDK DirectDraw
+- surfaces WDK DirectDraw , attachments
+- drawing surfaces WDK DirectDraw , attachments
+- DirectDraw surfaces WDK Windows 2000 display , attachments
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Complex Surfaces and Attachments

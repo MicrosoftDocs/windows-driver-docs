@@ -2,6 +2,11 @@
 title: Get a code signing certificate
 description: Get a code signing certificate
 ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get a code signing certificate

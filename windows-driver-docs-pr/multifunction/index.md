@@ -3,7 +3,21 @@ title: Multifunction device driver design guide
 author: windows-driver-content
 description: Multifunction device driver design guide
 ms.assetid: 110c0b9b-4870-4853-8fbf-a9faf0c5f2ca
-keywords: ["multifunction devices WDK", "multifunction devices WDK , about multifunction devices", "combined function devices WDK", "multiple function devices WDK", "printer multiple functions WDK", "DVD/CD-ROM multiple functions WDK", "multifunction devices WDK , installing", "parent buses WDK multifunction devices", "INF files WDK multifunction devices"]
+keywords:
+- multifunction devices WDK
+- multifunction devices WDK , about multifunction devices
+- combined function devices WDK
+- multiple function devices WDK
+- printer multiple functions WDK
+- DVD/CD-ROM multiple functions WDK
+- multifunction devices WDK , installing
+- parent buses WDK multifunction devices
+- INF files WDK multifunction devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multifunction device driver design guide

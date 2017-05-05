@@ -2,7 +2,13 @@
 title: Reporting Support of UBYTE4 Vertex Element
 description: Reporting Support of UBYTE4 Vertex Element
 ms.assetid: d5091ceb-71de-4310-95d9-c52361772ebc
-keywords: ["UBYTE4 vertex element WDK DirectX 9.0"]
+keywords:
+- UBYTE4 vertex element WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Support of UBYTE4 Vertex Element

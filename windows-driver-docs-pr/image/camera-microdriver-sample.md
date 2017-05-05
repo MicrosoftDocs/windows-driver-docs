@@ -3,6 +3,11 @@ title: Camera Microdriver Sample
 author: windows-driver-content
 description: Camera Microdriver Sample
 ms.assetid: a3aa0cf1-9954-4556-8dae-512a12864dfe
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Camera Microdriver Sample

@@ -2,6 +2,11 @@
 title: How to run Code Analysis for drivers
 description: Code Analysis for Drivers provides information about possible defects in the source code. You can run code analysis manually, and you can also run code analysis automatically with each build.
 ms.assetid: BDD4EC2C-FB23-44BE-9A52-F98774AC7268
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to run Code Analysis for drivers

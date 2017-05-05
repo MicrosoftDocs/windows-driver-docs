@@ -2,7 +2,15 @@
 title: Power Management (NDIS 6.20)
 description: Power Management (NDIS 6.20)
 ms.assetid: 7C4A4A48-8427-490C-B695-D806A7825FD8
-keywords: ["NDIS 6.20 WDK , power management", "power management WDK networking , NDIS 6.20", "power management WDK NDIS 6.20"]
+keywords:
+- NDIS 6.20 WDK , power management
+- power management WDK networking , NDIS 6.20
+- power management WDK NDIS 6.20
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power Management (NDIS 6.20)

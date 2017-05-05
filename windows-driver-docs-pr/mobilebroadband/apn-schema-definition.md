@@ -2,6 +2,11 @@
 title: APN schema definition
 description: APN schema definition
 ms.assetid: ae552bb5-702e-443f-8a97-c143859b127d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # APN schema definition

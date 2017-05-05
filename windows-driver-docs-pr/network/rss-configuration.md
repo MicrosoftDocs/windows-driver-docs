@@ -2,7 +2,17 @@
 title: RSS Configuration
 description: RSS Configuration
 ms.assetid: 84a00163-6908-439a-a980-c13f0ec8e3c1
-keywords: ["receive-side scaling WDK networking , ndirection table example", "RSS WDK networking , indirection table example", "receive-side scaling WDK networking , configuration", "RSS WDK networking , configuration", "ndirection table example WDK RSS"]
+keywords:
+- receive-side scaling WDK networking , ndirection table example
+- RSS WDK networking , indirection table example
+- receive-side scaling WDK networking , configuration
+- RSS WDK networking , configuration
+- ndirection table example WDK RSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RSS Configuration

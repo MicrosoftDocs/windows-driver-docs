@@ -3,7 +3,19 @@ title: Denial of Service
 author: windows-driver-content
 description: Denial of Service
 ms.assetid: b8b28d42-b680-482a-a7a1-6b2f5614ebfb
-keywords: ["threat models WDK file systems , denial of service", "security threat models WDK file systems , denial of service", "denial-of-service attacks WDK file systems", "buffers WDK file systems", "bandwidth WDK file systems", "disk space attacks WDK file systems", "malicious applications WDK file systems"]
+keywords:
+- threat models WDK file systems , denial of service
+- security threat models WDK file systems , denial of service
+- denial-of-service attacks WDK file systems
+- buffers WDK file systems
+- bandwidth WDK file systems
+- disk space attacks WDK file systems
+- malicious applications WDK file systems
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Denial of Service

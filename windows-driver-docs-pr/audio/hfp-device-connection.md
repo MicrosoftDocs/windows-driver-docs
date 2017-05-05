@@ -2,6 +2,11 @@
 title: HFP Device Connection
 description: The HFP Device connection topic discusses how the audio system determines and handles connection status information for a Bluetooth hands-free profile (HFP) device.
 ms.assetid: 29B33A3F-63BB-4E1E-B245-E90372A7812F
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HFP Device Connection

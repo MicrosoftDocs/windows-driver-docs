@@ -3,7 +3,16 @@ title: Operation of an ACPI Device Function Driver
 author: windows-driver-content
 description: Operation of an ACPI Device Function Driver
 ms.assetid: 56c63373-5094-4ae5-a7b0-56d61e3fa9b1
-keywords: ["ACPI devices WDK , function driver operation", "vendor-supplied function drivers WDK ACPI", "function drivers WDK ACPI , operation", "WDM function drivers WDK ACPI , operation"]
+keywords:
+- ACPI devices WDK , function driver operation
+- vendor-supplied function drivers WDK ACPI
+- function drivers WDK ACPI , operation
+- WDM function drivers WDK ACPI , operation
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Operation of an ACPI Device Function Driver

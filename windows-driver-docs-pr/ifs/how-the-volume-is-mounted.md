@@ -3,7 +3,16 @@ title: How the Volume Is Mounted
 author: windows-driver-content
 description: How the Volume Is Mounted
 ms.assetid: e8f39b06-9904-40e8-af52-eae310d11fa7
-keywords: ["filter drivers WDK file system , volume mount process", "file system filter drivers WDK , volume mount process", "mounting volumes WDK file systems", "volumes WDK file system , mounting"]
+keywords:
+- filter drivers WDK file system , volume mount process
+- file system filter drivers WDK , volume mount process
+- mounting volumes WDK file systems
+- volumes WDK file system , mounting
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How the Volume Is Mounted

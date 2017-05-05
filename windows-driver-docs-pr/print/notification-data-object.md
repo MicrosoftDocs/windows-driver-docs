@@ -3,7 +3,17 @@ title: Notification Data Object
 author: windows-driver-content
 description: Notification Data Object
 ms.assetid: 6ba8840d-a693-485c-81da-81205e511120
-keywords: ["spooler notification WDK print , data object", "print spooler notification WDK , data object", "notification data object WDK print spooler", "IPrintAsyncNotifyDataObject", "data object WDK spooler notification"]
+keywords:
+- spooler notification WDK print , data object
+- print spooler notification WDK , data object
+- notification data object WDK print spooler
+- IPrintAsyncNotifyDataObject
+- data object WDK spooler notification
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notification Data Object

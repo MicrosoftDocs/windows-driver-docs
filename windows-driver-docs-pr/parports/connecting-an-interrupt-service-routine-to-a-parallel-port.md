@@ -3,7 +3,15 @@ title: Connecting an Interrupt Service Routine to a Parallel Port
 author: windows-driver-content
 description: Connecting an Interrupt Service Routine to a Parallel Port
 ms.assetid: 62d3a388-6de6-4019-ab95-56b5e96d0891
-keywords: ["parallel ports WDK , interrupt service routines", "interrupt service routines WDK parallel ports", "deferred port check routines WDK parallel ports"]
+keywords:
+- parallel ports WDK , interrupt service routines
+- interrupt service routines WDK parallel ports
+- deferred port check routines WDK parallel ports
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connecting an Interrupt Service Routine to a Parallel Port

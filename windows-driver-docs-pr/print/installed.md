@@ -1,12 +1,18 @@
 ---
-title: Installed
+title: Installed (WSD)
 author: windows-driver-content
-description: Installed
+description: The Web Services for Devices (WSD) Installed construct indicates whether a printer feature that matches a given set of criteria has been installed.
 ms.assetid: f05add2a-d37e-4eb5-8408-dd5eeef4b13c
-keywords: ["Installed construct"]
+keywords:
+- Installed construct
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# Installed
+# Installed (WSD)
 
 
 The Web Services for Devices (WSD) Installed construct indicates whether a printer feature that matches a given set of criteria has been installed. If an XPath filter obtains a valid XML result when applied to the given criteria, this algorithm returns **TRUE**. The Installed construct is defined in WsdBidi.xsd.

@@ -2,6 +2,11 @@
 title: I/O request packets
 description: I/O request packets
 ms.assetid: 72288D9A-86F7-4145-8470-FFA1AC26E9BF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # I/O request packets

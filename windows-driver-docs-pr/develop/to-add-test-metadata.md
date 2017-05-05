@@ -2,6 +2,11 @@
 ms.assetid: 8BADC31C-6446-41FA-82F3-F46D66954481
 title: How to add test metadata
 description: For Windows 8, the Windows Driver Kit \(WDK\) uses the Test Authoring and Execution Framework \(TAEF\) for creating test content.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to add test metadata

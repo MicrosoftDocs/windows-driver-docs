@@ -2,7 +2,21 @@
 title: Viewing Hidden Devices
 description: Viewing Hidden Devices
 ms.assetid: 5dd02478-9937-4364-bd33-b64ac89c32eb
-keywords: ["nonpresent devices WDK", "Device Manager WDK , hidden devices", "hidden devices WDK", "DN_NO_SHOW_IN_DM", "showing hidden devices", "viewing hidden devices", "viewing nonpresent devices", "showing nonpresent devices", "displaying nonpresent devices"]
+keywords:
+- nonpresent devices WDK
+- Device Manager WDK , hidden devices
+- hidden devices WDK
+- DN_NO_SHOW_IN_DM
+- showing hidden devices
+- viewing hidden devices
+- viewing nonpresent devices
+- showing nonpresent devices
+- displaying nonpresent devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Viewing Hidden Devices

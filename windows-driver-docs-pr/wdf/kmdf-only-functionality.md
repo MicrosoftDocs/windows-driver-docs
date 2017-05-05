@@ -3,6 +3,11 @@ title: Additional Topics for KMDF Drivers
 author: windows-driver-content
 description: This section contains information that applies only to Kernel-Mode Driver Framework (KMDF).
 ms.assetid: 6607ABFF-43EB-47FA-BA87-BDD417F1BBB8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Additional Topics for KMDF Drivers

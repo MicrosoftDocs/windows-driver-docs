@@ -2,7 +2,19 @@
 title: Extended Format Aware Requirements
 description: Extended Format Aware Requirements
 ms.assetid: eab9c254-fca7-449d-a6cf-1b20d2e7173c
-keywords: ["Direct3D version 10.1 WDK Windows 7 display , extended format aware requirements", "extended format aware requirements WDK Windows 7 display", "XR_BIAS WDK Windows 7 display", "XR_BIAS WDK Windows 7 display , PresentDXGI", "XR_BIAS WDK Windows 7 display , BltDXGI", "PresentDXGI and XR_BIAS WDK Windows 7 display", "BltDXGI and XR_BIAS WDK Windows 7 display"]
+keywords:
+- Direct3D version 10.1 WDK Windows 7 display , extended format aware requirements
+- extended format aware requirements WDK Windows 7 display
+- XR_BIAS WDK Windows 7 display
+- XR_BIAS WDK Windows 7 display , PresentDXGI
+- XR_BIAS WDK Windows 7 display , BltDXGI
+- PresentDXGI and XR_BIAS WDK Windows 7 display
+- BltDXGI and XR_BIAS WDK Windows 7 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extended Format Aware Requirements

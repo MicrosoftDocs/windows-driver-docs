@@ -2,7 +2,16 @@
 title: Specifying config parameters for the Advanced Properties page
 description: Specifying Configuration Parameters for the Advanced Properties Page
 ms.assetid: 9c243edb-f667-4244-8de2-8335fac43220
-keywords: ["add-registry-sections WDK networking , Advanced properties page configuration", "Advanced properties page configuration WDK networking", "parameters WDK networking", "configuration parameters WDK networking"]
+keywords:
+- add-registry-sections WDK networking , Advanced properties page configuration
+- Advanced properties page configuration WDK networking
+- parameters WDK networking
+- configuration parameters WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying Configuration Parameters for the Advanced Properties Page

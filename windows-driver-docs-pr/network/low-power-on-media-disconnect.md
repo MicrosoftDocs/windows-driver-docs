@@ -2,6 +2,11 @@
 title: Low Power on Media Disconnect
 description: Low Power on Media Disconnect
 ms.assetid: 592f3835-47ec-443a-9ab5-e700fed2f7f4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Low Power on Media Disconnect

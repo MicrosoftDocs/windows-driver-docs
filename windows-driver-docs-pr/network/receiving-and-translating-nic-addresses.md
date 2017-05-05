@@ -2,7 +2,21 @@
 title: Receiving and Translating NIC Addresses
 description: Receiving and Translating NIC Addresses
 ms.assetid: c7171a4d-cc77-427e-8d23-8811f650e543
-keywords: ["Windows Sockets Direct WDK , initializing SAN usage", "initializing SAN usage", "NIC address translations WDK SANs", "translating NIC address WDK SANs", "receiving NIC addresses for SANs", "addresses WDK SANs", "delete-address notifications WDK SANs", "add-address notifications WDK SANs", "notifications WDK SANs"]
+keywords:
+- Windows Sockets Direct WDK , initializing SAN usage
+- initializing SAN usage
+- NIC address translations WDK SANs
+- translating NIC address WDK SANs
+- receiving NIC addresses for SANs
+- addresses WDK SANs
+- delete-address notifications WDK SANs
+- add-address notifications WDK SANs
+- notifications WDK SANs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receiving and Translating NIC Addresses

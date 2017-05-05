@@ -3,7 +3,15 @@ title: Printer Connected to an LPT Port
 author: windows-driver-content
 description: Printer Connected to an LPT Port
 ms.assetid: fbc71ae8-9b63-4667-b9d6-fdff9100d70b
-keywords: ["LPT enumerator WDK printer", "parallel ports WDK , printer connections", "parallel enumerators WDk printer"]
+keywords:
+- LPT enumerator WDK printer
+- parallel ports WDK , printer connections
+- parallel enumerators WDk printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Connected to an LPT Port

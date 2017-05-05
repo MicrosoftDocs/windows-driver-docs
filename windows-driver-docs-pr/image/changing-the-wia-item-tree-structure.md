@@ -3,6 +3,11 @@ title: Changing the WIA Item Tree Structure
 author: windows-driver-content
 description: Changing the WIA Item Tree Structure
 ms.assetid: fa6c9d25-4435-43ee-a262-9e267b9a0a69
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Changing the WIA Item Tree Structure

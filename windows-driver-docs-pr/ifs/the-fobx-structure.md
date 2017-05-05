@@ -3,7 +3,24 @@ title: The FOBX Structure
 author: windows-driver-content
 description: The FOBX Structure
 ms.assetid: 95177b38-4ca5-49ed-9f9d-bafedd156044
-keywords: ["reference counts WDK RDBSS", "FOBX structure", "FILE_OBJECT structure", "counting references WDK RDBSS", "backpointers WDK RDBSS", "data structures WDK file systems", "RDBSS WDK file systems , connection and file structures", "Redirected Drive Buffering Subsystem WDK file systems , connection and file structures", "connection structures WDK RDBSS", "file structures WDK RDBSS", "structures WDK RDBSS", "connection information WDK RDBSS"]
+keywords:
+- reference counts WDK RDBSS
+- FOBX structure
+- FILE_OBJECT structure
+- counting references WDK RDBSS
+- backpointers WDK RDBSS
+- data structures WDK file systems
+- RDBSS WDK file systems , connection and file structures
+- Redirected Drive Buffering Subsystem WDK file systems , connection and file structures
+- connection structures WDK RDBSS
+- file structures WDK RDBSS
+- structures WDK RDBSS
+- connection information WDK RDBSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The FOBX Structure

@@ -2,7 +2,15 @@
 title: DispatchSystemControl Routine of a Battery Miniclass Driver
 description: DispatchSystemControl Routine of a Battery Miniclass Driver
 ms.assetid: bb9bb04e-4284-4e9c-85ea-60f99a01d7d9
-keywords: ["battery miniclass drivers WDK , routines", "DispatchSystemControl routine", "WMI WDK battery"]
+keywords:
+- battery miniclass drivers WDK , routines
+- DispatchSystemControl routine
+- WMI WDK battery
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DispatchSystemControl Routine of a Battery Miniclass Driver

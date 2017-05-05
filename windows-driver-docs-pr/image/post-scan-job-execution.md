@@ -3,6 +3,11 @@ title: Post-Scan Job Execution
 author: windows-driver-content
 description: Post-Scan Job Execution
 ms.assetid: 3ce8eee6-0aaa-43da-b3ca-d12063c01d7d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Post-Scan Job Execution

@@ -3,7 +3,15 @@ title: Testing Device Functionality
 author: windows-driver-content
 description: Testing Device Functionality
 ms.assetid: 51b3e55d-b071-4dbe-b687-5e3ed25aed20
-keywords: ["testing device functionality WDK printer", "device functionality testing WDK printer", "functionality testing WDK printer"]
+keywords:
+- testing device functionality WDK printer
+- device functionality testing WDK printer
+- functionality testing WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Testing Device Functionality

@@ -3,7 +3,13 @@ title: Routines Not Used by RDBSS
 author: windows-driver-content
 description: Routines Not Used by RDBSS
 ms.assetid: bf3e2936-05c9-4012-a55b-40022844f5db
-keywords: ["mini-redirectors WDK , RDBSS"]
+keywords:
+- mini-redirectors WDK , RDBSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Routines Not Used by RDBSS

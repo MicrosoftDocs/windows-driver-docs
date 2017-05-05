@@ -2,6 +2,11 @@
 title: List of mobile broadband Windows Runtime APIs
 description: List of mobile broadband Windows Runtime APIs
 ms.assetid: 45ec97c4-1a58-48a8-ad50-1cd8fcc4763f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # List of mobile broadband Windows Runtime APIs

@@ -3,6 +3,11 @@ title: Mapping WIA Properties with the Same IDs and Names
 author: windows-driver-content
 description: Mapping WIA Properties with the Same IDs and Names
 ms.assetid: 40a1094d-50fa-42b6-9976-ec6b05fdc384
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping WIA Properties with the Same IDs and Names

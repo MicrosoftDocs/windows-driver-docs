@@ -3,7 +3,18 @@ title: DirectInput
 author: windows-driver-content
 description: DirectInput
 ms.assetid: 4a69905b-017b-46d7-8b15-c9089a77e795
-keywords: ["Human Interface Devices WDK , DirectInput", "HID WDK , DirectInput", "DirectInput WDK", "DirectX input components WDK HID", "pointing devices WDK , DirectInput", "input devices WDK , DirectInput"]
+keywords:
+- Human Interface Devices WDK , DirectInput
+- HID WDK , DirectInput
+- DirectInput WDK
+- DirectX input components WDK HID
+- pointing devices WDK , DirectInput
+- input devices WDK , DirectInput
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectInput

@@ -3,6 +3,11 @@ title: The driver I/O model
 author: windows-driver-content
 description: The sample driver and the accelerometer communicate over the simple peripheral bus, the system GPIO pins, and the resource hub.
 ms.assetid: 69368837-0599-497F-883C-608DFE014C7E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The driver I/O model

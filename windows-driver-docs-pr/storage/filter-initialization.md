@@ -3,6 +3,11 @@ title: Filter Initialization
 author: windows-driver-content
 description: Filter Initialization
 ms.assetid: c39dc5a6-f529-40a2-87d4-bac325b4fa1a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Initialization

@@ -2,7 +2,17 @@
 title: VPE and Kernel-Mode Video Transport Architecture
 description: VPE and Kernel-Mode Video Transport Architecture
 ms.assetid: 7264932a-7fe9-4ffe-bd25-b5cd605739fa
-keywords: ["drawing kernel-mode video transport WDK DirectDraw , architecture", "DirectDraw kernel-mode video transport WDK Windows 2000 display , architecture", "kernel-mode video transport WDK DirectDraw , architecture", "video transport kernel-mode WDK DirectDraw , architecture", "video capture WDK video transport kernel-mode"]
+keywords:
+- drawing kernel-mode video transport WDK DirectDraw , architecture
+- DirectDraw kernel-mode video transport WDK Windows 2000 display , architecture
+- kernel-mode video transport WDK DirectDraw , architecture
+- video transport kernel-mode WDK DirectDraw , architecture
+- video capture WDK video transport kernel-mode
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VPE and Kernel-Mode Video Transport Architecture

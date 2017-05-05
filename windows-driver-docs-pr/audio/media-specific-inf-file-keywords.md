@@ -2,7 +2,17 @@
 title: Media-Specific INF File Keywords
 description: Media-Specific INF File Keywords
 ms.assetid: abd85943-87b7-4501-b7c5-63a808f39bf0
-keywords: ["audio adapters WDK , media-specific INF file keywords", "adapter drivers WDK audio , media-specific INF file keywords", "Port Class audio adapters WDK , media-specific INF file keywords", "media-specific INF file keywords WDK audio", "INF file media keywords WDK audio"]
+keywords:
+- audio adapters WDK , media-specific INF file keywords
+- adapter drivers WDK audio , media-specific INF file keywords
+- Port Class audio adapters WDK , media-specific INF file keywords
+- media-specific INF file keywords WDK audio
+- INF file media keywords WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Media-Specific INF File Keywords

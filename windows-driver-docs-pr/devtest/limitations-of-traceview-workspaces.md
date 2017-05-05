@@ -2,7 +2,13 @@
 title: Limitations of TraceView Workspaces
 description: Limitations of TraceView Workspaces
 ms.assetid: 9c8cad66-251c-473e-b723-aae744b6737a
-keywords: ["workspaces WDK TraceView , limitations"]
+keywords:
+- workspaces WDK TraceView , limitations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Limitations of TraceView Workspaces

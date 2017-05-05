@@ -2,7 +2,17 @@
 title: Classes of Offload State Variables
 description: Classes of Offload State Variables
 ms.assetid: f4580eea-354c-4e24-861a-400a76e289f5
-keywords: ["offload state WDK TCP chimney offload , variable classes", "constant variables WDK TCP chimney offload", "cached variables WDK TCP chimney offload", "delegated variables WDK TCP chimney offload", "variables WDK TCP chimney offload state"]
+keywords:
+- offload state WDK TCP chimney offload , variable classes
+- constant variables WDK TCP chimney offload
+- cached variables WDK TCP chimney offload
+- delegated variables WDK TCP chimney offload
+- variables WDK TCP chimney offload state
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Classes of Offload State Variables

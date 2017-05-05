@@ -2,6 +2,11 @@
 title: CompatibleID Registry Subkey
 description: CompatibleID Registry Subkey
 ms.assetid: 0111b013-d559-47bb-9cc8-d3930661a0a3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CompatibleID Registry Subkey

@@ -2,7 +2,15 @@
 title: Sample Functions for ProcAmp Control
 description: Sample Functions for ProcAmp Control
 ms.assetid: d158216e-9a34-48a4-adca-e3c20b5e4487
-keywords: ["ProcAmp WDK DirectX VA , sample functions", "ranges WDK ProcAmp", "properties WDK ProcAmp"]
+keywords:
+- ProcAmp WDK DirectX VA , sample functions
+- ranges WDK ProcAmp
+- properties WDK ProcAmp
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Functions for ProcAmp Control

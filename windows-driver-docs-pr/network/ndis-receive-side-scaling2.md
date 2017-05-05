@@ -2,7 +2,16 @@
 title: Receive Side Scaling
 description: Receive Side Scaling
 ms.assetid: 380feb24-1f5e-4faa-9c98-1b3c8fdc27cb
-keywords: ["network drivers WDK , receive-side scaling", "receive-side scaling WDK networking , NDIS 6.0", "RSS WDK networking , NDIS 6.0", "network receive processing WDK RSS"]
+keywords:
+- network drivers WDK , receive-side scaling
+- receive-side scaling WDK networking , NDIS 6.0
+- RSS WDK networking , NDIS 6.0
+- network receive processing WDK RSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Receive Side Scaling

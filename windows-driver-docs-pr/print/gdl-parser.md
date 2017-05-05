@@ -3,7 +3,20 @@ title: GDL Parser
 author: windows-driver-content
 description: GDL Parser
 ms.assetid: abb0e9b7-db98-4f8c-af15-83cd1841e5c2
-keywords: ["GDL WDK , parser", "parser WDK GDL , about", "printer drivers WDK , converting data into XML", "converting data into XML WDK GDL", "transforming data into XML WDK GDL", "parsing GDL data WDK", "snapshots WDK GDL , GDL parser", "parser WDK GDL"]
+keywords:
+- GDL WDK , parser
+- parser WDK GDL , about
+- printer drivers WDK , converting data into XML
+- converting data into XML WDK GDL
+- transforming data into XML WDK GDL
+- parsing GDL data WDK
+- snapshots WDK GDL , GDL parser
+- parser WDK GDL
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Parser

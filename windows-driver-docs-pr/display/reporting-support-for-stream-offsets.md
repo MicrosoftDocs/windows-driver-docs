@@ -2,7 +2,14 @@
 title: Reporting Support for Stream Offsets
 description: Reporting Support for Stream Offsets
 ms.assetid: 5f485b61-ddc7-4433-bd2c-9ba0aec9e243
-keywords: ["stream offsets WDK DirectX 9.0 , reporting support", "vertex stream offsets WDK DirectX 9.0 , reporting support"]
+keywords:
+- stream offsets WDK DirectX 9.0 , reporting support
+- vertex stream offsets WDK DirectX 9.0 , reporting support
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Support for Stream Offsets

@@ -3,7 +3,20 @@ title: Registry Entries for SCSI Miniport Drivers
 author: windows-driver-content
 description: Registry Entries for SCSI Miniport Drivers
 ms.assetid: bff5c004-7115-4436-b233-9d1d89643b23
-keywords: ["SCSI miniport drivers WDK storage , registry entries", "registry WDK SCSI", "TimeoutValue", "TotalSenseDataBytes", "MaximumSGList", "BusType", "CreateInitiatorLU", "pseudo-LUNs WDK SCSI"]
+keywords:
+- SCSI miniport drivers WDK storage , registry entries
+- registry WDK SCSI
+- TimeoutValue
+- TotalSenseDataBytes
+- MaximumSGList
+- BusType
+- CreateInitiatorLU
+- pseudo-LUNs WDK SCSI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registry Entries for SCSI Miniport Drivers

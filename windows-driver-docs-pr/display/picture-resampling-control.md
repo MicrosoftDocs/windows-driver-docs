@@ -2,7 +2,16 @@
 title: Picture Resampling Control
 description: Picture Resampling Control
 ms.assetid: 08d74812-3393-4461-91c4-644ecc5ad428
-keywords: ["picture resampling WDK DirectX VA", "spatial scalable video coding WDK DirectX VA", "reference picture resampling WDK DirectX VA", "resampling pictures WDK DirectX VA"]
+keywords:
+- picture resampling WDK DirectX VA
+- spatial scalable video coding WDK DirectX VA
+- reference picture resampling WDK DirectX VA
+- resampling pictures WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Picture Resampling Control

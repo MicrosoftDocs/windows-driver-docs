@@ -2,7 +2,15 @@
 title: Direct3D Context Management
 description: Direct3D Context Management
 ms.assetid: 143f5150-9ac4-43f7-985f-0baa32871af2
-keywords: ["context WDK Direct3D", "Direct3D WDK Windows 2000 display , context management", "context WDK Direct3D , about context management"]
+keywords:
+- context WDK Direct3D
+- Direct3D WDK Windows 2000 display , context management
+- context WDK Direct3D , about context management
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Direct3D Context Management

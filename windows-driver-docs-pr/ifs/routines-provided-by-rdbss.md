@@ -3,7 +3,15 @@ title: Routines Provided by RDBSS
 author: windows-driver-content
 description: Routines Provided by RDBSS
 ms.assetid: 37631760-ac89-4ef0-ad7c-ed3e68aa1ceb
-keywords: ["RDBSS WDK file systems , routines", "Redirected Drive Buffering Subsystem WDK file systems , routines", "routines WDK RDBSS"]
+keywords:
+- RDBSS WDK file systems , routines
+- Redirected Drive Buffering Subsystem WDK file systems , routines
+- routines WDK RDBSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Routines Provided by RDBSS

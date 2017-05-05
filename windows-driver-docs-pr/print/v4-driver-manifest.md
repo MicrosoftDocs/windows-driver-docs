@@ -3,6 +3,11 @@ title: V4 Driver Manifest
 author: windows-driver-content
 description: The v4 print driver manifest contains printer-specific setup directives and is used in conjunction with an INF file.
 ms.assetid: 187A10B7-2AAC-46D9-998C-C8724D8E3862
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # V4 Driver Manifest

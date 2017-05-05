@@ -2,7 +2,16 @@
 title: Implementation Issues for WavePci Devices
 description: Implementation Issues for WavePci Devices
 ms.assetid: c286d745-6e76-4540-98e6-a46ce1dd0f5d
-keywords: ["WDM audio drivers WDK , WavePci", "audio drivers WDK , WavePci", "WavePci design guidelines WDK audio", "scatter/gather DMA WDK audio"]
+keywords:
+- WDM audio drivers WDK , WavePci
+- audio drivers WDK , WavePci
+- WavePci design guidelines WDK audio
+- scatter/gather DMA WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Implementation Issues for WavePci Devices

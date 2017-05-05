@@ -3,7 +3,16 @@ title: Adding Print Ticket Support to Print Drivers
 author: windows-driver-content
 description: Adding Print Ticket Support to Print Drivers
 ms.assetid: ef4db930-2b4c-40b9-b1f4-85767b7f6855
-keywords: ["printer driver customizing WDK , Print Tickets", "customizing printer drivers WDK , Print Tickets", "Print Tickets WDK , adding support for", "IPrintTicketProvider"]
+keywords:
+- printer driver customizing WDK , Print Tickets
+- customizing printer drivers WDK , Print Tickets
+- Print Tickets WDK , adding support for
+- IPrintTicketProvider
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Adding Print Ticket Support to Print Drivers

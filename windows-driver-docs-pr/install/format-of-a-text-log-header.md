@@ -2,7 +2,15 @@
 title: Format of a Text Log Header
 description: Format of a Text Log Header
 ms.assetid: d4a50905-215f-4156-b5cf-f160c757bb90
-keywords: ["headers WDK SetupAPI logging", "formats WDK SetupAPI logging", "text logs WDK SetupAPI , headers"]
+keywords:
+- headers WDK SetupAPI logging
+- formats WDK SetupAPI logging
+- text logs WDK SetupAPI , headers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Format of a Text Log Header

@@ -3,7 +3,17 @@ title: Introduction to Printing
 author: windows-driver-content
 description: Introduction to Printing
 ms.assetid: 8a2e0151-6d40-493d-9757-42350a9e6220
-keywords: ["printing WDK", "rendering component WDK print", "configuration component WDK print", "components WDK printing", "architecture WDK print"]
+keywords:
+- printing WDK
+- rendering component WDK print
+- configuration component WDK print
+- components WDK printing
+- architecture WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to Printing

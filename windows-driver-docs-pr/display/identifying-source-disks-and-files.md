@@ -2,7 +2,16 @@
 title: Identifying Source Disks and Files
 description: Identifying Source Disks and Files
 ms.assetid: 0eb8fe7f-1e44-4f3d-8567-31a2cd659805
-keywords: ["INF files WDK display , identifying source disks or files", "source disks WDK display", "source files WDK display", "identifying display source disks or files"]
+keywords:
+- INF files WDK display , identifying source disks or files
+- source disks WDK display
+- source files WDK display
+- identifying display source disks or files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Identifying Source Disks and Files

@@ -2,7 +2,14 @@
 title: Introduction to NDIS Filter Drivers
 description: Introduction to NDIS Filter Drivers
 ms.assetid: dcf9b992-4812-43d7-9170-1a565d8db8fb
-keywords: ["filter drivers WDK networking , about filter drivers", "NDIS filter drivers WDK , about filter drivers"]
+keywords:
+- filter drivers WDK networking , about filter drivers
+- NDIS filter drivers WDK , about filter drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to NDIS Filter Drivers

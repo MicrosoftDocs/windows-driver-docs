@@ -2,7 +2,17 @@
 title: Native 802.11 Send and Receive Operations
 description: Native 802.11 Send and Receive Operations
 ms.assetid: 1e1947ec-f606-4418-95d3-8d4143d5068e
-keywords: ["Native 802.11 miniport drivers WDK networking , send operations", "miniport drivers WDK Native 802.11 , send operations", "Native 802.11 miniport drivers WDK networking , receive operations", "miniport drivers WDK Native 802.11 , receive operations", "packets WDK networking , Native 802.11 send and receive"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , send operations
+- miniport drivers WDK Native 802.11 , send operations
+- Native 802.11 miniport drivers WDK networking , receive operations
+- miniport drivers WDK Native 802.11 , receive operations
+- packets WDK networking , Native 802.11 send and receive
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Send and Receive Operations

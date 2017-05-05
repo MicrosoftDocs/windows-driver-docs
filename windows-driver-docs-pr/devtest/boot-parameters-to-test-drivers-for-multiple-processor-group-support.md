@@ -2,6 +2,11 @@
 title: Boot Parameters to Test Drivers for Multiple Processor Group Support
 description: Boot Parameters to Test Drivers for Multiple Processor Group Support
 ms.assetid: 8ce311d6-a182-4d04-a453-81f6abe2043b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boot Parameters to Test Drivers for Multiple Processor Group Support

@@ -2,7 +2,17 @@
 title: Reading the Registry in an NDIS 6.0 Miniport Driver
 description: Reading the Registry in an NDIS 6.0 Miniport Driver
 ms.assetid: e6b61d7e-ef69-4f18-aaa0-5792f7516fb4
-keywords: ["reading registry WDK networking", "registry WDK networking", "miniport adapters WDK networking , reading registry", "adapters WDK networking , reading registry", "porting miniport drivers WDK networking , adapters"]
+keywords:
+- reading registry WDK networking
+- registry WDK networking
+- miniport adapters WDK networking , reading registry
+- adapters WDK networking , reading registry
+- porting miniport drivers WDK networking , adapters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reading the Registry in an NDIS 6.0 Miniport Driver

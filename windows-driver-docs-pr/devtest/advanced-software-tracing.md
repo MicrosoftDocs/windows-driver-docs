@@ -2,6 +2,11 @@
 title: Advanced Software Tracing
 description: Advanced Software Tracing
 ms.assetid: 07df682d-27d3-40d7-b890-426bc98d1432
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Advanced Software Tracing

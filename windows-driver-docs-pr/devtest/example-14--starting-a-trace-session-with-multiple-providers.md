@@ -2,7 +2,16 @@
 title: Example 14 Starting a Trace Session with Multiple Providers
 description: Example 14 Starting a Trace Session with Multiple Providers
 ms.assetid: fda63107-608c-4278-abf8-1447c8f8302a
-keywords: ["Tracelog WDK , providers", "providers WDK software tracing", "tracing WDK , providers", "multiple providers WDK software tracing"]
+keywords:
+- Tracelog WDK , providers
+- providers WDK software tracing
+- tracing WDK , providers
+- multiple providers WDK software tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 14: Starting a Trace Session with Multiple Providers

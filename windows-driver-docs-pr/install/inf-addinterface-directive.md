@@ -2,13 +2,19 @@
 title: INF AddInterface Directive
 description: One or more AddInterface directives can be specified within an INF DDInstall.Interfaces section.
 ms.assetid: 9bd3e051-51f9-4624-802b-b841b25d6616
-keywords: ["INF AddInterface Directive Device and Driver Installation"]
+keywords:
+- INF AddInterface Directive Device and Driver Installation
 topic_type:
 - apiref
 api_name:
 - INF AddInterface Directive
 api_type:
 - NA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF AddInterface Directive

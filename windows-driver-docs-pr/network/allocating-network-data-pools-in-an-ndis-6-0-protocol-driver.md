@@ -2,7 +2,16 @@
 title: Allocating Network Data Pools in an NDIS 6.0 Protocol Driver
 description: Allocating Network Data Pools in an NDIS 6.0 Protocol Driver
 ms.assetid: 50ab57ef-f07e-473e-a55f-fd8bbd26730e
-keywords: ["pools WDK networking", "data pools WDK networking", "network data pools WDK networking", "allocating data pools"]
+keywords:
+- pools WDK networking
+- data pools WDK networking
+- network data pools WDK networking
+- allocating data pools
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Network Data Pools in an NDIS 6.0 Protocol Driver

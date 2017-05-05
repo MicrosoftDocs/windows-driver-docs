@@ -3,7 +3,14 @@ title: A User Unplugs a Device
 author: windows-driver-content
 description: A User Unplugs a Device
 ms.assetid: d0c8fd6d-b356-4048-aa97-ebe331d23361
-keywords: ["power management scenarios WDK UMDF , unplugging a device", "unplugging a device scenario WDK UMDF"]
+keywords:
+- power management scenarios WDK UMDF , unplugging a device
+- unplugging a device scenario WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # A User Unplugs a Device

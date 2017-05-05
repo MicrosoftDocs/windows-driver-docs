@@ -3,7 +3,15 @@ title: Text Strings
 author: windows-driver-content
 description: Text Strings
 ms.assetid: 773c977b-aac4-4c7c-8bab-aa2c69b2a89a
-keywords: ["GPD file entries WDK Unidrv , text strings", "text strings WDK GPD files", "strings WDK GPD files"]
+keywords:
+- GPD file entries WDK Unidrv , text strings
+- text strings WDK GPD files
+- strings WDK GPD files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Text Strings

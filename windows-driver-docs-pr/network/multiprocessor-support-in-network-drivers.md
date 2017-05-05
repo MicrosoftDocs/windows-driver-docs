@@ -2,7 +2,15 @@
 title: Multiprocessor Support in Network Drivers
 description: Multiprocessor Support in Network Drivers
 ms.assetid: df01d8b0-0740-45b6-abe0-a7a7bf6b9334
-keywords: ["network drivers WDK , processor support", "multiple processor support WDK networking", "processors WDK networking"]
+keywords:
+- network drivers WDK , processor support
+- multiple processor support WDK networking
+- processors WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multiprocessor Support in Network Drivers

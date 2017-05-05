@@ -3,6 +3,11 @@ title: Writing WIA Item Properties by an Application
 author: windows-driver-content
 description: Writing WIA Item Properties by an Application
 ms.assetid: 728f3f73-4815-4d79-ac02-227de7ae9bb7
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing WIA Item Properties by an Application

@@ -3,7 +3,14 @@ title: Raster Data Emission Commands
 author: windows-driver-content
 description: Raster Data Emission Commands
 ms.assetid: 31a25de3-f66b-4cf0-90ea-988d75838f68
-keywords: ["data emission raster printing commands WDK Unidrv", "emission raster printing commands WDK Unidrv"]
+keywords:
+- data emission raster printing commands WDK Unidrv
+- emission raster printing commands WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Raster Data Emission Commands

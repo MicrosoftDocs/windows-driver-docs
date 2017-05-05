@@ -2,6 +2,11 @@
 title: INF File Entry Values That Modify Device Properties
 description: INF File Entry Values That Modify Device Properties
 ms.assetid: 5ce0875f-2687-42d9-b980-ed184b552a62
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # INF File Entry Values That Modify Device Properties

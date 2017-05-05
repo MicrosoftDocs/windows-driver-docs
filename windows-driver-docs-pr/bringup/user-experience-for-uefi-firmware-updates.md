@@ -3,6 +3,11 @@ title: User experience for UEFI firmware updates
 author: windows-driver-content
 description: This section describes how to implement a basic user experience during UEFI firmware updates.
 ms.assetid: 178F37B2-5CED-4AAF-8434-1C7532B36510
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # User experience for UEFI firmware updates

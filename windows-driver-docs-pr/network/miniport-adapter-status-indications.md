@@ -2,7 +2,17 @@
 title: Miniport Adapter Status Indications
 description: Miniport Adapter Status Indications
 ms.assetid: feb5259f-ce9b-40eb-85d2-0064bce692fc
-keywords: ["status indications WDK networking , miniport adapters", "miniport adapters WDK networking , status indications", "adapters WDK networking , status indications", "NdisMIndicateStatusEx", "NDIS_STATUS_INDICATION"]
+keywords:
+- status indications WDK networking , miniport adapters
+- miniport adapters WDK networking , status indications
+- adapters WDK networking , status indications
+- NdisMIndicateStatusEx
+- NDIS_STATUS_INDICATION
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport Adapter Status Indications

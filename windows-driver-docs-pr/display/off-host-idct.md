@@ -2,7 +2,17 @@
 title: Off-Host IDCT
 description: Off-Host IDCT
 ms.assetid: 31797487-0c4e-4b8c-801e-f545bd60cc6d
-keywords: ["macroblocks WDK DirectX VA , IDCT", "low-level IDCT WDK DirectX VA", "off-host IDCT WDK DirectX VA", "inverse discrete-cosine transform WDK DirectX VA", "IDCT WDK DirectX VA"]
+keywords:
+- macroblocks WDK DirectX VA , IDCT
+- low-level IDCT WDK DirectX VA
+- off-host IDCT WDK DirectX VA
+- inverse discrete-cosine transform WDK DirectX VA
+- IDCT WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Off-Host IDCT

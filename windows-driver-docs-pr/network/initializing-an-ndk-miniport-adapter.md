@@ -1,7 +1,12 @@
 ---
 title: Initializing an NDK Miniport Adapter
-description: A Network Direct kernel (NDK) miniport adapter is initialized in the same way as other miniport adapters NDIS calls the miniport adapter's MiniportInitializeEx function as described in Initializing a Miniport Adapter.
+description: This section describes how to initialize an NDK miniport adapter
 ms.assetid: 0A920057-3C12-4770-BA08-6C3BB24072EB
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing an NDK Miniport Adapter

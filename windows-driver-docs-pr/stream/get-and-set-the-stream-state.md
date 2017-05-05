@@ -3,7 +3,19 @@ title: Get and Set the Stream State
 author: windows-driver-content
 description: Get and Set the Stream State
 ms.assetid: e2fde528-d0cf-4ffe-945a-8672b76db61f
-keywords: ["Avcstrm.sys streaming filter driver WDK , stream states", "stream states WDK AV/C streaming", "states WDK AV/C streaming", "KSSTATE_STOP", "KSSTATE_ACQUIRE", "KSSTATE_PAUSE", "KSSTATE_RUN"]
+keywords:
+- Avcstrm.sys streaming filter driver WDK , stream states
+- stream states WDK AV/C streaming
+- states WDK AV/C streaming
+- KSSTATE_STOP
+- KSSTATE_ACQUIRE
+- KSSTATE_PAUSE
+- KSSTATE_RUN
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Get and Set the Stream State

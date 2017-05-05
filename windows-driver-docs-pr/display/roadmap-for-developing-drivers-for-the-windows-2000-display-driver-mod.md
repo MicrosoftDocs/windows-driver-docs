@@ -2,6 +2,11 @@
 title: Roadmap for Windows 2000 Display Driver Model (XDDM)
 description: Roadmap for Developing Drivers for the Windows 2000 Display Driver Model (XDDM)
 ms.assetid: 5f34d0ad-ab31-4361-9a42-83930aef267b
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Roadmap for Developing Drivers for the Windows 2000 Display Driver Model (XDDM)

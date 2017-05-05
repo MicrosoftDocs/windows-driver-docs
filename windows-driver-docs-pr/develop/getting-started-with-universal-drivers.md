@@ -1,7 +1,12 @@
 ---
 ms.assetid: E109BD80-F9CB-4F1F-A6FD-1142E27EC6AD
 title: Getting Started with Universal Windows drivers
-description: Universal Windows drivers allow developers to create one driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs.
+description: Universal Windows drivers allow you to create one driver that runs on multiple device types, from embedded systems to tablets and PCs.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Getting Started with Universal Windows drivers

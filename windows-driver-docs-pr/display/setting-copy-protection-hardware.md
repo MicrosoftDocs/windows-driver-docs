@@ -2,7 +2,13 @@
 title: Setting Copy Protection Hardware
 description: Setting Copy Protection Hardware
 ms.assetid: c9733d74-faa8-44af-8de7-9530ebcfe949
-keywords: ["copy protection WDK video miniport , setting"]
+keywords:
+- copy protection WDK video miniport , setting
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Copy Protection Hardware

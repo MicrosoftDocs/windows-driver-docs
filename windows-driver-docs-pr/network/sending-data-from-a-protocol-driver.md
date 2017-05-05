@@ -2,7 +2,13 @@
 title: Sending Data from a Protocol Driver
 description: Sending Data from a Protocol Driver
 ms.assetid: f4fa1814-1d8f-49d3-90fb-766b5b17ef28
-keywords: ["sending data WDK networking"]
+keywords:
+- sending data WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sending Data from a Protocol Driver

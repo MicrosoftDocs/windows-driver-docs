@@ -2,6 +2,11 @@
 title: TraceLogging Examples
 description: The source code in this topic demonstrates how to use TraceLogging.
 ms.assetid: 0FD7D517-D46A-4D76-A5E1-3267DBB09A29
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TraceLogging Examples

@@ -3,6 +3,11 @@ title: Test your universal sensor driver
 author: windows-driver-content
 description: This topic provides suggestions for how to test your universal sensor driver.
 ms.assetid: 46F50544-B130-4690-8047-6FBB6DD4749F
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test your universal sensor driver

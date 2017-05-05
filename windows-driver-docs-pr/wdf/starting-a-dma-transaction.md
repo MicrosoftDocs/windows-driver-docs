@@ -3,7 +3,17 @@ title: Starting a DMA Transaction
 author: windows-driver-content
 description: Starting a DMA Transaction
 ms.assetid: fa26ef08-01c0-4502-9cb3-865000242e4a
-keywords: ["DMA transactions WDK KMDF , starting", "DMA operations WDK KMDF , transactions", "bus-master DMA WDK KMDF , transactions", "starting DMA transactions WDK KMDF", "scatter/gather DMA WDK KMDF"]
+keywords:
+- DMA transactions WDK KMDF , starting
+- DMA operations WDK KMDF , transactions
+- bus-master DMA WDK KMDF , transactions
+- starting DMA transactions WDK KMDF
+- scatter/gather DMA WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Starting a DMA Transaction

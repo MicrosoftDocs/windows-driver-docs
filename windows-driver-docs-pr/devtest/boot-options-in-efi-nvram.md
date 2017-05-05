@@ -1,8 +1,18 @@
 ---
 title: Boot Options in EFI NVRAM
-description: Computers with Extensible Firmware Interface (EFI) firmware, such as Intel Itanium 2 processors, store boot options in NVRAM, a storage medium that can be edited, but retains its state even when you turn off the computer.
+description: Computers with Extensible Firmware Interface (EFI) firmware store boot options in NVRAM, but retains its state even when you turn off the computer.
 ms.assetid: 99247d03-1723-4a2b-8ef4-c1f39687642f
-keywords: ["NVRAM boot options WDK", "EFI NVRAM boot options WDK", "boot options WDK , EFI NVRAM", "Extensible Firmware Interface WDK boot options", "Itanium processor boot options WDK"]
+keywords:
+- NVRAM boot options WDK
+- EFI NVRAM boot options WDK
+- boot options WDK , EFI NVRAM
+- Extensible Firmware Interface WDK boot options
+- Itanium processor boot options WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Boot Options in EFI NVRAM
@@ -31,9 +41,9 @@ This section includes:
 
 [Backing up Boot Options in EFI](backing-up-boot-options-in-efi.md)
 
-Â 
+ 
 
-Â 
+ 
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20[devtest\devtest]:%20Boot%20Options%20in%20EFI%20NVRAM%20%20RELEASE:%20%2811/17/2016%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
 

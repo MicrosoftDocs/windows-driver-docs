@@ -2,6 +2,11 @@
 title: Direct3D software requirements in Windows 8
 description: This topic describes software requirements to support Microsoft Direct3D in Windows 8.
 ms.assetid: EB9AB15A-4E47-48AE-AE39-6051F8FC39A8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Direct3D software requirements in Windows 8

@@ -2,6 +2,11 @@
 ms.assetid: EDA6357A-D18D-439D-A0DD-050BA51E1A79
 title: Creating a log file for Static Driver Verifier
 description: The Windows Server 2012&\#32;Hardware Certification Program requires a Driver Verification Log \(DVL\) for all applicable driver submissions.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a log file for Static Driver Verifier

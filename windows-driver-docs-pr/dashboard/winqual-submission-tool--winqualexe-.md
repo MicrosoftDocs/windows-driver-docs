@@ -2,6 +2,11 @@
 title: Winqual Submission Tool (winqual.exe)
 description: Winqual Submission Tool (winqual.exe)
 ms.assetid: f7a34ee3-0532-465b-acb0-1ff80e2d4cb8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Winqual Submission Tool (winqual.exe)

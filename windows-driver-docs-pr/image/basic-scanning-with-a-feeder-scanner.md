@@ -3,6 +3,11 @@ title: Basic Scanning with a Feeder Scanner
 author: windows-driver-content
 description: Basic Scanning with a Feeder Scanner
 ms.assetid: 29b0752e-88f7-482b-a618-4d7730eceaad
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Basic Scanning with a Feeder Scanner

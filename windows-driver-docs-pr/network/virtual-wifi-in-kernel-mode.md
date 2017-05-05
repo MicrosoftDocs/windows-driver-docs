@@ -2,7 +2,13 @@
 title: Virtual WiFi in Kernel Mode
 description: Virtual WiFi in Kernel Mode
 ms.assetid: 6e1dca89-782e-46f9-acd2-5e7cf505be70
-keywords: ["Virtual WiFi in kernel mode WDK networking"]
+keywords:
+- Virtual WiFi in kernel mode WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual WiFi in Kernel Mode

@@ -3,7 +3,19 @@ title: Virtual Subunit Driver Stack
 author: windows-driver-content
 description: Virtual Subunit Driver Stack
 ms.assetid: 5aa1804f-b871-4577-8e8a-ce4ad5150ee0
-keywords: ["virtual subunit driver stack WDK AV/C", "driver stacks WDK AV/C", "stacks WDK AV/C", "subunit support WDK AV/C", "AV/C WDK , driver stacks", "Avc.sys function driver WDK , driver stacks", "compatible IDs WDK AV/C"]
+keywords:
+- virtual subunit driver stack WDK AV/C
+- driver stacks WDK AV/C
+- stacks WDK AV/C
+- subunit support WDK AV/C
+- AV/C WDK , driver stacks
+- Avc.sys function driver WDK , driver stacks
+- compatible IDs WDK AV/C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Subunit Driver Stack

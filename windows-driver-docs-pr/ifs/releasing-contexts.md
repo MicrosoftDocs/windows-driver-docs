@@ -3,7 +3,14 @@ title: Releasing Contexts
 author: windows-driver-content
 description: Releasing Contexts
 ms.assetid: 29d855cd-cca6-486b-86d9-f74810ae12c1
-keywords: ["contexts WDK file system minifilter , releasing", "releasing contexts"]
+keywords:
+- contexts WDK file system minifilter , releasing
+- releasing contexts
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Releasing Contexts

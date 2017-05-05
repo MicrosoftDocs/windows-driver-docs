@@ -2,7 +2,16 @@
 title: Roadmap for Developing NDIS Drivers
 description: Roadmap for Developing NDIS Drivers
 ms.assetid: 4adc5438-d2ea-4b05-bbf3-e86cc5f3105a
-keywords: ["NDIS WDK , drivers", "NDIS WDK , drivers, developing", "developing NDIS drivers WDK", "Network Driver Interface Specification (NDIS) WDK"]
+keywords:
+- NDIS WDK , drivers
+- NDIS WDK , drivers, developing
+- developing NDIS drivers WDK
+- Network Driver Interface Specification (NDIS) WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Roadmap for Developing NDIS Drivers

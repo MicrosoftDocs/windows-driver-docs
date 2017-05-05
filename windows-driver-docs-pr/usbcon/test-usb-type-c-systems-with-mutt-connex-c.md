@@ -1,6 +1,11 @@
 ---
-Description: 'The MUTT Connection Exerciser Type-C (MUTT ConnEx-C) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.'
-title: 'Test USB Type-C systems with MUTT ConnEx-C'
+Description: The MUTT Connection Exerciser Type-C (MUTT ConnEx-C) hardware board is a custom shield for the Arduino board. 
+title: Test USB Type-C systems with MUTT ConnEx-C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Test USB Type-C systems with MUTT ConnEx-C

@@ -2,7 +2,16 @@
 title: Copying Vertex and Index Buffers in the DP2 Stream
 description: Copying Vertex and Index Buffers in the DP2 Stream
 ms.assetid: 5181e299-4beb-448c-bf11-be9bb5575af1
-keywords: ["DirectX 8.0 release notes WDK Windows 2000 display , DP2 drawing tokens", "DP2 drawing tokens WDK DirectX 8.0", "drawing tokens WDK DirectX 8.0", "tokens WDK DirectX 8.0"]
+keywords:
+- DirectX 8.0 release notes WDK Windows 2000 display , DP2 drawing tokens
+- DP2 drawing tokens WDK DirectX 8.0
+- drawing tokens WDK DirectX 8.0
+- tokens WDK DirectX 8.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Copying Vertex and Index Buffers in the DP2 Stream

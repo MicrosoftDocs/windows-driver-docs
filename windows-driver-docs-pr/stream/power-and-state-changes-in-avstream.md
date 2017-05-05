@@ -3,7 +3,15 @@ title: Power and State Changes in AVStream
 author: windows-driver-content
 description: Power and State Changes in AVStream
 ms.assetid: f62f4306-97c0-40fe-89ec-d08eb18988c9
-keywords: ["AVStream WDK , power and state changes", "power changes WDK , AVStream", "state changes WDK , AVStream"]
+keywords:
+- AVStream WDK , power and state changes
+- power changes WDK , AVStream
+- state changes WDK , AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Power and State Changes in AVStream

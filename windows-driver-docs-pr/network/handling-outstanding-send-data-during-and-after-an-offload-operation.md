@@ -2,7 +2,16 @@
 title: Handling outstanding send data during and after offload operation
 description: Handling Outstanding Send Data During and After an Offload Operation
 ms.assetid: 5dc8bf17-c4f5-4626-b879-4cd83b0243c0
-keywords: ["state offloading process WDK TCP chimney offload , outstanding send data", "offloading state process WDK TCP chimney offload , outstanding send data", "outstanding send data WDK TCP chimney offload", "send data outstanding WDK TCP chimney offload"]
+keywords:
+- state offloading process WDK TCP chimney offload , outstanding send data
+- offloading state process WDK TCP chimney offload , outstanding send data
+- outstanding send data WDK TCP chimney offload
+- send data outstanding WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Outstanding Send Data During and After an Offload Operation

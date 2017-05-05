@@ -2,7 +2,16 @@
 title: Supporting pause and restart in an NDIS 6.0 intermediate driver
 description: Supporting Pause and Restart Operations in an NDIS 6.0 Intermediate Driver
 ms.assetid: 6620eecd-ae08-4fdd-a9bf-d40ab6d2d29b
-keywords: ["intermediate drivers WDK networking , pause and restart operations", "porting intermediate drivers WDK networking , pause and restart operations", "pausing intermediate drivers", "restarting intermediate drivers"]
+keywords:
+- intermediate drivers WDK networking , pause and restart operations
+- porting intermediate drivers WDK networking , pause and restart operations
+- pausing intermediate drivers
+- restarting intermediate drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Pause and Restart Operations in an NDIS 6.0 Intermediate Driver

@@ -1,9 +1,19 @@
 ---
 title: Sequence handling
 author: windows-driver-content
-description: Most non-standard NCI features and extensions implemented by the NFCC firmware from different vendors relate to chipset configuration, firmware download, and hardware tuning.
+description: Information about supporting non-standard NCI extensions by registering specific driver sequences exposed by the NFC CX.
 ms.assetid: D0BE9827-2A15-4AA5-ADB9-80071ED37583
-keywords: ["NFC", "near field communications", "proximity", "near field proximity", "NFP"]
+keywords:
+- NFC
+- near field communications
+- proximity
+- near field proximity
+- NFP
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sequence handling
@@ -24,8 +34,8 @@ The following are the requirements for the NFC client driver in implementing any
 -   [Initialization sequence](initialization-sequence.md)
 -   [NFCEE discovery sequence](nfcee-discovery-sequence.md)
 -   [RF discovery sequence](rf-discovery-sequence.md)
--   [Tag RF data exchange sequence](tag-rf-data-exchagne-sequence.md)
--   [P2P RF data exchange sequence](p2p-rf-data-exchagne-sequence.md)
+-   [Tag RF data exchange sequence](tag-rf-data-exchange-sequence.md)
+-   [P2P RF data exchange sequence](p2p-rf-data-exchange-sequence.md)
 -   [Card emulation RF sequence](card-emulation-rf-sequence.md)
 
  
@@ -34,4 +44,3 @@ The following are the requirements for the NFC client driver in implementing any
 ## Related topics
 [NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
 [NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
-

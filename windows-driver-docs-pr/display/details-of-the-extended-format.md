@@ -2,7 +2,14 @@
 title: Details of the Extended Format
 description: Details of the Extended Format
 ms.assetid: e9cd2bc7-99c1-4aca-91b0-9faefa4a856d
-keywords: ["Direct3D version 10.1 WDK Windows 7 display , extended format", "extended format WDK Windows 7 display"]
+keywords:
+- Direct3D version 10.1 WDK Windows 7 display , extended format
+- extended format WDK Windows 7 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Details of the Extended Format

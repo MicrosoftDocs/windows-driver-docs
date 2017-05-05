@@ -3,6 +3,11 @@ title: Writing WIA Properties by a Driver
 author: windows-driver-content
 description: Writing WIA Properties by a Driver
 ms.assetid: 6d2164ac-0fbc-4ecb-b3bf-a46efbe07f51
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing WIA Properties by a Driver

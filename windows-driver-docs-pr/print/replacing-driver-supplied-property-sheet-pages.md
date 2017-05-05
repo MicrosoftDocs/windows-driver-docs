@@ -3,7 +3,21 @@ title: Replacing Driver-Supplied Property Sheet Pages
 author: windows-driver-content
 description: Replacing Driver-Supplied Property Sheet Pages
 ms.assetid: b7f79841-f82c-4a60-9c2f-58772a65a5eb
-keywords: ["user interface plug-ins WDK print , property sheet pages", "UI plug-ins WDK print , property sheet pages", "property sheet pages WDK print", "replacing property sheet pages", "IPrintCoreUI2", "document-sticky properties WDK print", "printer-sticky properties WDK print", "device-sticky properties WDK print", "sticky properties WDK print"]
+keywords:
+- user interface plug-ins WDK print , property sheet pages
+- UI plug-ins WDK print , property sheet pages
+- property sheet pages WDK print
+- replacing property sheet pages
+- IPrintCoreUI2
+- document-sticky properties WDK print
+- printer-sticky properties WDK print
+- device-sticky properties WDK print
+- sticky properties WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Replacing Driver-Supplied Property Sheet Pages

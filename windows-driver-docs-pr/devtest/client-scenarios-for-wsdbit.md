@@ -2,7 +2,16 @@
 title: Client Scenarios for WSDBIT
 description: Client Scenarios for WSDBIT
 ms.assetid: fb692c83-b384-492d-84fb-10e00db9f30f
-keywords: ["WSDBIT tool WDK , test scenarios", "WSDAPI Basic Interoperability Tool WDK , test scenarios", "scenarios WDK WSDBIT", "test scenarios WDK WSDBIT"]
+keywords:
+- WSDBIT tool WDK , test scenarios
+- WSDAPI Basic Interoperability Tool WDK , test scenarios
+- scenarios WDK WSDBIT
+- test scenarios WDK WSDBIT
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Client Scenarios for WSDBIT

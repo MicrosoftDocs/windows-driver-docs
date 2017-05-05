@@ -2,7 +2,18 @@
 title: Porting CoNDIS Driver Registration to CoNDIS 6.0
 description: Porting CoNDIS Driver Registration to CoNDIS 6.0
 ms.assetid: 2dea71a8-b48b-440e-a5de-9177865e7188
-keywords: ["CoNDIS drivers WDK networking , registering CoNDIS drivers", "connection-oriented drivers WDK networking , registering", "registering CoNDIS drivers", "entry points WDK networking", "registration porting WDK CoNDIS", "porting CoNDIS drivers WDK networking , r"]
+keywords:
+- CoNDIS drivers WDK networking , registering CoNDIS drivers
+- connection-oriented drivers WDK networking , registering
+- registering CoNDIS drivers
+- entry points WDK networking
+- registration porting WDK CoNDIS
+- porting CoNDIS drivers WDK networking , r
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting CoNDIS Driver Registration to CoNDIS 6.0

@@ -2,7 +2,17 @@
 title: PNPCPU
 description: PNPCPU
 ms.assetid: 397283e6-0691-4e55-9507-483bb311b524
-keywords: ["driver testing WDK , PNPCPU", "testing drivers WDK , PNPCPU", "testing drivers WDK , logical processors", "testing drivers WDK , ONECPU", "logical processors WDK"]
+keywords:
+- driver testing WDK , PNPCPU
+- testing drivers WDK , PNPCPU
+- testing drivers WDK , logical processors
+- testing drivers WDK , ONECPU
+- logical processors WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PNPCPU

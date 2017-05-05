@@ -2,7 +2,17 @@
 title: Smart Card Driver Library Callback Routines
 description: Smart Card Driver Library Callback Routines
 ms.assetid: e536d539-4871-4b1d-bb5a-92a310dfa1e7
-keywords: ["IOCTLs WDK smart card", "library callback routines WDK smart card", "callback routines WDK smart card", "ReaderFunction", "vendor-supplied drivers WDK smart card , IOCTL request management"]
+keywords:
+- IOCTLs WDK smart card
+- library callback routines WDK smart card
+- callback routines WDK smart card
+- ReaderFunction
+- vendor-supplied drivers WDK smart card , IOCTL request management
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Smart Card Driver Library Callback Routines

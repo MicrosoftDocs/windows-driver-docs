@@ -2,7 +2,14 @@
 title: Code Example Finish-Install Actions in a Co-installer
 description: Code Example Finish-Install Actions in a Co-installer
 ms.assetid: 57d41fec-cedb-436e-858e-c010a8bd6506
-keywords: ["finish-install actions WDK device installations", "co-installers WDK device installations , finish-install actions"]
+keywords:
+- finish-install actions WDK device installations
+- co-installers WDK device installations , finish-install actions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Code Example: Finish-Install Actions in a Co-installer

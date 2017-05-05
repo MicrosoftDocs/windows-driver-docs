@@ -2,7 +2,19 @@
 title: WAN Driver Bindings and Connections
 description: WAN Driver Bindings and Connections
 ms.assetid: e91bbdaf-9826-4031-a877-73f3e099a1e4
-keywords: ["NDISWAN WDK networking", "WAN miniport drivers WDK networking , connections", "bindings WDK WAN", "connections WDK WAN", "architecture WDK WAN , bindings", "architecture WDK WAN , connections", "WAN miniport drivers WDK networking , bindings"]
+keywords:
+- NDISWAN WDK networking
+- WAN miniport drivers WDK networking , connections
+- bindings WDK WAN
+- connections WDK WAN
+- architecture WDK WAN , bindings
+- architecture WDK WAN , connections
+- WAN miniport drivers WDK networking , bindings
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WAN Driver Bindings and Connections

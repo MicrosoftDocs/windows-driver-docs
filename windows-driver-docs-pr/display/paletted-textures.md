@@ -2,7 +2,14 @@
 title: Paletted Textures
 description: Paletted Textures
 ms.assetid: eac46256-db08-4a9b-aaaf-2bc8a9f30e98
-keywords: ["texture management WDK Direct3D , paletted textures", "paletted textures WDK Direct3D"]
+keywords:
+- texture management WDK Direct3D , paletted textures
+- paletted textures WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Paletted Textures

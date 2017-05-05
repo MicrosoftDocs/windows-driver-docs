@@ -3,7 +3,15 @@ title: Separating Nodes in Individual Filters
 author: windows-driver-content
 description: Separating Nodes in Individual Filters
 ms.assetid: 9ae5c72a-a97b-48aa-80c1-bb8767701497
-keywords: ["control nodes WDK BDA", "nodes WDK BDA", "separating nodes in filters"]
+keywords:
+- control nodes WDK BDA
+- nodes WDK BDA
+- separating nodes in filters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Separating Nodes in Individual Filters

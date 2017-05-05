@@ -2,7 +2,14 @@
 title: Updating Cached Variables
 description: Updating Cached Variables
 ms.assetid: 1263c6de-8c96-4c87-a5cc-dd874de3dd8f
-keywords: ["updating offloaded TCP chimney state, cached variables", "cached variables WDK TCP chimney offload"]
+keywords:
+- updating offloaded TCP chimney state, cached variables
+- cached variables WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating Cached Variables

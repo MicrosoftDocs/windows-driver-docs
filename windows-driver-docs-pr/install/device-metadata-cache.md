@@ -2,7 +2,13 @@
 title: Device Metadata Cache
 description: Device Metadata Cache
 ms.assetid: 0b20e1e0-9137-4572-8a5b-6bde63c34ce4
-keywords: ["device metadata cache WDK"]
+keywords:
+- device metadata cache WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Metadata Cache

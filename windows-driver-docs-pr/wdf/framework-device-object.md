@@ -3,7 +3,16 @@ title: Framework Device Object
 author: windows-driver-content
 description: Framework Device Object
 ms.assetid: 6be47eac-d6e4-43d1-bf2d-d49dcb2273c0
-keywords: ["UMDF objects WDK , device objects", "framework objects WDK UMDF , device objects", "device objects WDK UMDF", "IWDFDevice"]
+keywords:
+- UMDF objects WDK , device objects
+- framework objects WDK UMDF , device objects
+- device objects WDK UMDF
+- IWDFDevice
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework Device Object

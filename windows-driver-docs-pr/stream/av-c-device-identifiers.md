@@ -3,7 +3,16 @@ title: AV/C Device Identifiers
 author: windows-driver-content
 description: AV/C Device Identifiers
 ms.assetid: c2d108c7-5ea9-42c1-92d7-5ba90f2f4232
-keywords: ["AV/C WDK , identifiers", "identifiers WDK AV/C", "device IDs WDK AV/C", "Avc.sys function driver WDK , identifiers"]
+keywords:
+- AV/C WDK , identifiers
+- identifiers WDK AV/C
+- device IDs WDK AV/C
+- Avc.sys function driver WDK , identifiers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C Device Identifiers

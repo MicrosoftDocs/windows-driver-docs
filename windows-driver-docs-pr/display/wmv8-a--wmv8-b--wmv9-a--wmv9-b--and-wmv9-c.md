@@ -2,7 +2,17 @@
 title: WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C
 description: WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C
 ms.assetid: ffc203e9-fca4-48d3-842b-d9f75ad7caa0
-keywords: ["WMV8_A restricted profile WDK DirectX VA", "WMV8_B restricted profile WDK DirectX VA", "WMV9_A restricted profile WDK DirectX VA", "WMV9_B restricted profile WDK DirectX VA", "WMV9_C restricted profile WDK DirectX VA"]
+keywords:
+- WMV8_A restricted profile WDK DirectX VA
+- WMV8_B restricted profile WDK DirectX VA
+- WMV9_A restricted profile WDK DirectX VA
+- WMV9_B restricted profile WDK DirectX VA
+- WMV9_C restricted profile WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WMV8\_A, WMV8\_B, WMV9\_A, WMV9\_B, and WMV9\_C

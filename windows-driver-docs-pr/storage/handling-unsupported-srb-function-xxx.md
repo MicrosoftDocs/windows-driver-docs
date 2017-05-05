@@ -3,7 +3,16 @@ title: Handling Unsupported SRB\_FUNCTION\_XXX
 author: windows-driver-content
 description: Handling Unsupported SRB\_FUNCTION\_XXX
 ms.assetid: 95b9288c-290f-4908-9de3-11d68ed624e2
-keywords: ["SCSI miniport drivers WDK storage , HwScsiStartIo", "HwScsiStartIo", "unsupported SRB_FUNCTION_XXX", "SRB_FUNCTION_XXX unsupported"]
+keywords:
+- SCSI miniport drivers WDK storage , HwScsiStartIo
+- HwScsiStartIo
+- unsupported SRB_FUNCTION_XXX
+- SRB_FUNCTION_XXX unsupported
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Unsupported SRB\_FUNCTION\_XXX

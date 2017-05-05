@@ -3,6 +3,11 @@ title: Microsoft Printer Drivers
 author: windows-driver-content
 description: Microsoft Printer Drivers
 ms.assetid: 6aa4b31c-8e1c-4506-b5ab-9e8440823319
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Microsoft Printer Drivers

@@ -3,7 +3,16 @@ title: Detecting Tuner Standards
 author: windows-driver-content
 description: Detecting Tuner Standards
 ms.assetid: 02923d8f-d8a2-427d-8957-2ffb0273b84a
-keywords: ["formats WDK video capture", "TV signal formats WDK video capture", "KSPROPERTY_TUNER_STANDARD_MODE", "detecting tuner standards WDK video capture"]
+keywords:
+- formats WDK video capture
+- TV signal formats WDK video capture
+- KSPROPERTY_TUNER_STANDARD_MODE
+- detecting tuner standards WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Detecting Tuner Standards

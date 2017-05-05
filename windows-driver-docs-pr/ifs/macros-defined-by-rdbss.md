@@ -3,7 +3,15 @@ title: Macros Defined by RDBSS
 author: windows-driver-content
 description: Macros Defined by RDBSS
 ms.assetid: 11add885-ecd9-4b43-be42-ef060e847183
-keywords: ["RDBSS WDK file systems , macros", "Redirected Drive Buffering Subsystem WDK file systems , macros", "macros WDK RDBSS"]
+keywords:
+- RDBSS WDK file systems , macros
+- Redirected Drive Buffering Subsystem WDK file systems , macros
+- macros WDK RDBSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Macros Defined by RDBSS

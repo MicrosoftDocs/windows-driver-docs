@@ -3,6 +3,11 @@ title: IDE Port Driver
 author: windows-driver-content
 description: IDE Port Driver
 ms.assetid: 8e292680-6fa7-4f6b-b4ec-6f0f0d795d03
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IDE Port Driver

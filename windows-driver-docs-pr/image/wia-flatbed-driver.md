@@ -3,6 +3,11 @@ title: WIA Flatbed Driver
 author: windows-driver-content
 description: WIA Flatbed Driver
 ms.assetid: 83c35b1f-10e0-47e1-97cc-5a7a79fb8088
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA Flatbed Driver

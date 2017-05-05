@@ -3,7 +3,13 @@ title: Enabling Color Management
 author: windows-driver-content
 description: Enabling Color Management
 ms.assetid: 750d1e44-6d1c-4f18-94cb-20f1f846c0d1
-keywords: ["color management WDK print , enabling"]
+keywords:
+- color management WDK print , enabling
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling Color Management

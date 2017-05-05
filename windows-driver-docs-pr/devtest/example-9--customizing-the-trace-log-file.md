@@ -2,7 +2,16 @@
 title: Example 9 Customizing the Trace Log File
 description: Example 9 Customizing the Trace Log File
 ms.assetid: b65b4d15-f058-425a-b2b2-b040265d48ac
-keywords: ["trace logs WDK", "logs WDK tracing", "custom trace logs WDK", "event trace logs WDK"]
+keywords:
+- trace logs WDK
+- logs WDK tracing
+- custom trace logs WDK
+- event trace logs WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 9: Customizing the Trace Log File

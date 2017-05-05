@@ -3,6 +3,11 @@ title: WS-DSP Events
 author: windows-driver-content
 description: WS-DSP Events
 ms.assetid: 660d3110-c695-405e-8bab-c0a9c65fcc8f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSP Events

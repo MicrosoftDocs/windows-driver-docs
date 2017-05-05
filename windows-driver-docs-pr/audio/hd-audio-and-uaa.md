@@ -2,7 +2,16 @@
 title: HD Audio and UAA
 description: HD Audio and UAA
 ms.assetid: cefb0b81-64d5-499d-adea-26b6bc7cf454
-keywords: ["High Definition Audio (HD Audio), Universal Audio Architecture", "HD Audio, Universal Audio Architecture", "UAA WDK", "Universal Audio Architecture WDK"]
+keywords:
+- High Definition Audio (HD Audio), Universal Audio Architecture
+- HD Audio, Universal Audio Architecture
+- UAA WDK
+- Universal Audio Architecture WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # HD Audio and UAA

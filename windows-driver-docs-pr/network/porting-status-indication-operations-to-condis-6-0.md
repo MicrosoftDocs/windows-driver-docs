@@ -2,7 +2,15 @@
 title: Porting Status Indication Operations to CoNDIS 6.0
 description: Porting Status Indication Operations to CoNDIS 6.0
 ms.assetid: b9e65117-095d-41c0-9b67-5b17ef09de42
-keywords: ["CoNDIS drivers WDK networking , status indications", "connection-oriented drivers WDK networking , status indications", "status indications WDK networking , porting"]
+keywords:
+- CoNDIS drivers WDK networking , status indications
+- connection-oriented drivers WDK networking , status indications
+- status indications WDK networking , porting
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Status Indication Operations to CoNDIS 6.0

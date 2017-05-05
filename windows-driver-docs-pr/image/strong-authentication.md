@@ -3,6 +3,11 @@ title: Strong Authentication
 author: windows-driver-content
 description: Strong Authentication
 ms.assetid: 75670d86-fb4d-4aa6-87fd-0320cb7c2a34
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Strong Authentication

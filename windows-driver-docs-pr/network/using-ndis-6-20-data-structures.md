@@ -2,7 +2,14 @@
 title: Using NDIS 6.20 Data Structures
 description: Using NDIS 6.20 Data Structures
 ms.assetid: 19810a7c-91c1-4014-a364-2819d743627d
-keywords: ["NDIS 6.20 WDK , data structures", "data structures WDK NDIS 6.20"]
+keywords:
+- NDIS 6.20 WDK , data structures
+- data structures WDK NDIS 6.20
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using NDIS 6.20 Data Structures

@@ -2,7 +2,15 @@
 title: Handling Buffered Receive Data During and After an Offload Operation
 description: Handling Buffered Receive Data During and After an Offload Operation
 ms.assetid: ff260798-2bcd-4240-b5bf-36cfd4302084
-keywords: ["state offloading process WDK TCP chimney offload , buffered receive data", "offloading state process WDK TCP chimney offload , buffered receive data", "buffered receive data WDK TCP chimney offload"]
+keywords:
+- state offloading process WDK TCP chimney offload , buffered receive data
+- offloading state process WDK TCP chimney offload , buffered receive data
+- buffered receive data WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Buffered Receive Data During and After an Offload Operation

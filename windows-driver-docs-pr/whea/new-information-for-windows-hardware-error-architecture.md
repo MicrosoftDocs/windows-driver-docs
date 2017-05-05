@@ -3,7 +3,17 @@ title: New Information for Windows Hardware Error Architecture
 author: windows-driver-content
 description: New Information for Windows Hardware Error Architecture
 ms.assetid: 258dca19-3988-4fab-bc9f-a93035cbbd0e
-keywords: ["Windows Hardware Error Architecture WDK , new information", "WHEA WDK , new information", "hardware errors WDK WHEA , new information", "errors WDK WHEA , new information about WHEA", "source information WDK WHEA , new"]
+keywords:
+- Windows Hardware Error Architecture WDK , new information
+- WHEA WDK , new information
+- hardware errors WDK WHEA , new information
+- errors WDK WHEA , new information about WHEA
+- source information WDK WHEA , new
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # New Information for Windows Hardware Error Architecture

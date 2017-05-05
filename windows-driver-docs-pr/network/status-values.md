@@ -2,6 +2,11 @@
 title: Status Values
 description: Status Values
 ms.assetid: 1d5cce4a-9830-4e2e-af90-fc1fecfb0fc9
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Status Values

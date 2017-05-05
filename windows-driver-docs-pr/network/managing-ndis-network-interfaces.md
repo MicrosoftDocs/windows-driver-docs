@@ -2,7 +2,14 @@
 title: Managing NDIS Network Interfaces
 description: Managing NDIS Network Interfaces
 ms.assetid: b4c61b8a-a3ef-449d-9bce-853d91911dc4
-keywords: ["NDIS network interfaces WDK , managing", "network interfaces WDK , managing"]
+keywords:
+- NDIS network interfaces WDK , managing
+- network interfaces WDK , managing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing NDIS Network Interfaces

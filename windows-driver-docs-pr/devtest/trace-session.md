@@ -2,7 +2,22 @@
 title: Trace Session
 description: Trace Session
 ms.assetid: 50a8cc64-5127-4abe-a6a8-514ca5db63ab
-keywords: ["trace sessions WDK", "trace sessions WDK , about trace sessions", "sessions WDK software tracing", "private trace sessions WDK", "buffered trace sessions WDK", "real-time trace sessions WDK", "trace log sessions WDK", "user-mode trace sessions WDK", "process trace sessions WDK", "reserved trace sessions WDK"]
+keywords:
+- trace sessions WDK
+- trace sessions WDK , about trace sessions
+- sessions WDK software tracing
+- private trace sessions WDK
+- buffered trace sessions WDK
+- real-time trace sessions WDK
+- trace log sessions WDK
+- user-mode trace sessions WDK
+- process trace sessions WDK
+- reserved trace sessions WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Session

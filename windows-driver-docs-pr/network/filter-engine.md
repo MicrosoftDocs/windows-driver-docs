@@ -2,7 +2,13 @@
 title: Filter Engine
 description: Filter Engine
 ms.assetid: 87bf23c7-4086-4016-b712-a083d3d69bbe
-keywords: ["filter engine WDK Windows Filtering Platform"]
+keywords:
+- filter engine WDK Windows Filtering Platform
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Filter Engine

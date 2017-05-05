@@ -2,7 +2,20 @@
 title: Specifying the Upgrade DLL in a Netmap.inf File
 description: Specifying the Upgrade DLL in a Netmap.inf File
 ms.assetid: 01735a7d-ee33-427d-befa-7429fd64353b
-keywords: ["network component upgrades WDK , netmap.inf files", "upgrading network components WDK , netmap.inf files", "netmap.inf files WDK", "upgrade DLL WDK netmap.inf", "device IDs WDK netmap.inf", "network-migration-DLL WDK netmap.inf", "DLLs WDK network upgrades", "vendor-supplied files WDK netmap.inf file"]
+keywords:
+- network component upgrades WDK , netmap.inf files
+- upgrading network components WDK , netmap.inf files
+- netmap.inf files WDK
+- upgrade DLL WDK netmap.inf
+- device IDs WDK netmap.inf
+- network-migration-DLL WDK netmap.inf
+- DLLs WDK network upgrades
+- vendor-supplied files WDK netmap.inf file
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Specifying the Upgrade DLL in a Netmap.inf File

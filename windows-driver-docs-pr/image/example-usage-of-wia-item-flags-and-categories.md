@@ -3,6 +3,11 @@ title: Example Usage of WIA Item Flags and Categories
 author: windows-driver-content
 description: Example Usage of WIA Item Flags and Categories
 ms.assetid: 8c9f7d85-6c84-4df9-9db3-6554d7eddf93
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example Usage of WIA Item Flags and Categories

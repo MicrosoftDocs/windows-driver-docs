@@ -3,7 +3,24 @@ title: Simple Data Evaluation Language Overview
 author: windows-driver-content
 description: WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships.
 ms.assetid: 84c2a1d6-6bec-4aeb-b858-c29f50d74390
-keywords: ["Windows Device Testing Framework WDK , SDEL", "WDTF WDK , SDEL", "Simple Data Evaluation Language WDK WDTF", "SDEL WDK WDTF", "query languages WDK WDTF", "target objects WDK WDTF", "namespaces WDK WDTF", "relationship-based testing WDK WDTF", "relation specifiers WDK WDTF", "named queries WDK WDTF", "attributes WDK WDTF", "Boolean logic WDK WDTF"]
+keywords:
+- Windows Device Testing Framework WDK , SDEL
+- WDTF WDK , SDEL
+- Simple Data Evaluation Language WDK WDTF
+- SDEL WDK WDTF
+- query languages WDK WDTF
+- target objects WDK WDTF
+- namespaces WDK WDTF
+- relationship-based testing WDK WDTF
+- relation specifiers WDK WDTF
+- named queries WDK WDTF
+- attributes WDK WDTF
+- Boolean logic WDK WDTF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Simple Data Evaluation Language Overview

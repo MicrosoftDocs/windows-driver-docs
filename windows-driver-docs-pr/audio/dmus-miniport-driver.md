@@ -2,7 +2,16 @@
 title: DMus Miniport Driver
 description: DMus Miniport Driver
 ms.assetid: a0ce6545-2050-49fb-88b5-a75dcd4c7ebc
-keywords: ["audio miniport drivers WDK , DMus", "miniport drivers WDK audio , DMus", "DirectMusic WDK audio , miniport drivers", "DMus miniport drivers WDK audio"]
+keywords:
+- audio miniport drivers WDK , DMus
+- miniport drivers WDK audio , DMus
+- DirectMusic WDK audio , miniport drivers
+- DMus miniport drivers WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DMus Miniport Driver

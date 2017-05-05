@@ -2,7 +2,19 @@
 title: Music Technology GUIDs
 description: Music Technology GUIDs
 ms.assetid: 3b7c2907-e67f-458e-809d-080dcc30be1a
-keywords: ["WDM audio extensions WDK , music technology GUIDs", "music technology GUIDs WDK audio", "KSDATARANGE_MUSIC structure", "synthesizers WDK audio , technology GUIDs", "MIDI stream data formats WDK audio", "DirectMusic WDK audio , stream data formats", "DMus stream data formats WDK"]
+keywords:
+- WDM audio extensions WDK , music technology GUIDs
+- music technology GUIDs WDK audio
+- KSDATARANGE_MUSIC structure
+- synthesizers WDK audio , technology GUIDs
+- MIDI stream data formats WDK audio
+- DirectMusic WDK audio , stream data formats
+- DMus stream data formats WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Music Technology GUIDs

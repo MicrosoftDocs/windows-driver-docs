@@ -3,7 +3,14 @@ title: Raster Data Emission Attributes
 author: windows-driver-content
 description: Raster Data Emission Attributes
 ms.assetid: 98366b64-f96b-4275-ba25-8483abf705aa
-keywords: ["data emission raster printing attributes WDK Unidrv", "emission raster printing attributes WDK Unidrv"]
+keywords:
+- data emission raster printing attributes WDK Unidrv
+- emission raster printing attributes WDK Unidrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Raster Data Emission Attributes

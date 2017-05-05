@@ -2,7 +2,17 @@
 title: Standard Miniport Driver OIDs Registered with WMI
 description: Standard Miniport Driver OIDs Registered with WMI
 ms.assetid: 87529f7f-8d62-4067-b008-7c4a04d7a7c6
-keywords: ["miniport adapters WDK networking , WMI", "adapters WDK networking , WMI", "WMI WDK networking , OIDs", "OIDs WDK networking , WMI", "Windows Management Instrumentation WDK networking , OIDs"]
+keywords:
+- miniport adapters WDK networking , WMI
+- adapters WDK networking , WMI
+- WMI WDK networking , OIDs
+- OIDs WDK networking , WMI
+- Windows Management Instrumentation WDK networking , OIDs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standard Miniport Driver OIDs Registered with WMI

@@ -2,7 +2,22 @@
 title: VMR Video Processing
 description: VMR Video Processing
 ms.assetid: 149f881d-1a6e-46b7-9a37-971c7bb7b79d
-keywords: ["ProcAmp WDK DirectX VA , VMR", "VMR WDK DirectX VA", "progressive video WDK DirectX VA", "mixers WDK VRM", "color space conversions WDK DirectX VA", "pipelines WDK VRM", "horizontal resizing WDK VRM", "hardware WDK VRM", "resizing video image horizontally", "converting color space"]
+keywords:
+- ProcAmp WDK DirectX VA , VMR
+- VMR WDK DirectX VA
+- progressive video WDK DirectX VA
+- mixers WDK VRM
+- color space conversions WDK DirectX VA
+- pipelines WDK VRM
+- horizontal resizing WDK VRM
+- hardware WDK VRM
+- resizing video image horizontally
+- converting color space
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VMR Video Processing

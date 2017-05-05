@@ -2,7 +2,14 @@
 title: Display Driver Initialization
 description: Display Driver Initialization
 ms.assetid: a4cc7780-b6fb-486a-b54b-96c90d4fe1f5
-keywords: ["display drivers WDK Windows 2000 , initializing", "initializing display drivers"]
+keywords:
+- display drivers WDK Windows 2000 , initializing
+- initializing display drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Display Driver Initialization

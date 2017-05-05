@@ -3,7 +3,17 @@ title: Using Unidrv Vector Graphics Capabilities
 author: windows-driver-content
 description: Using Unidrv Vector Graphics Capabilities
 ms.assetid: 1b956d7f-4dd5-4486-897a-d4885fee5887
-keywords: ["Unidrv, vector graphics", "vector graphics WDK Unidrv", "vector graphics WDK Unidrv , about vector graphics", "graphics printers WDK Unidrv", "Unidrv WDK print"]
+keywords:
+- Unidrv, vector graphics
+- vector graphics WDK Unidrv
+- vector graphics WDK Unidrv , about vector graphics
+- graphics printers WDK Unidrv
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Unidrv Vector Graphics Capabilities

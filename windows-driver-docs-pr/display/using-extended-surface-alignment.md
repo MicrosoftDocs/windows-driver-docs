@@ -2,7 +2,16 @@
 title: Using Extended Surface Alignment
 description: Using Extended Surface Alignment
 ms.assetid: ae4a6820-b9be-4dd2-95d8-6030b3b63826
-keywords: ["drawing extended surface alignment WDK DirectDraw", "DirectDraw extended surface alignment WDK Windows 2000 display", "surfaces WDK DirectDraw , extended alignment", "extended surface alignment WDK DirectDraw"]
+keywords:
+- drawing extended surface alignment WDK DirectDraw
+- DirectDraw extended surface alignment WDK Windows 2000 display
+- surfaces WDK DirectDraw , extended alignment
+- extended surface alignment WDK DirectDraw
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Extended Surface Alignment

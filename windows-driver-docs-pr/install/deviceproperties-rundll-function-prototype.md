@@ -2,7 +2,17 @@
 title: DeviceProperties\_RunDLL Function Prototype
 description: DeviceProperties\_RunDLL Function Prototype
 ms.assetid: 15c93f6d-56e7-4872-a94b-0c948e2cd76f
-keywords: ["device properties dialog box WDK device installations", "invoking device properties dialog box", "DeviceProperties_RunDLL WDK device installations", "machine-name-parameter field WDK device installations", "device-instance-ID-parameter field WDK device inst"]
+keywords:
+- device properties dialog box WDK device installations
+- invoking device properties dialog box
+- DeviceProperties_RunDLL WDK device installations
+- machine-name-parameter field WDK device installations
+- device-instance-ID-parameter field WDK device inst
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DeviceProperties\_RunDLL Function Prototype

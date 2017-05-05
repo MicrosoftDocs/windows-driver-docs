@@ -2,7 +2,13 @@
 title: Overlay Class
 description: Overlay Class
 ms.assetid: 698eb8af-ff9a-4c11-b764-6e5773886aaa
-keywords: ["overlay class WDK display"]
+keywords:
+- overlay class WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overlay Class

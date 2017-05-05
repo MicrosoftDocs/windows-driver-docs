@@ -2,7 +2,15 @@
 title: Updating the NDIS 6.0 Miniport Driver Characteristics Structure
 description: Updating the NDIS 6.0 Miniport Driver Characteristics Structure
 ms.assetid: d57f6474-e497-43e8-ae27-e989de8213ae
-keywords: ["NDIS_MINIPORT_DRIVER_CHARACTERISTICS", "updating protocol driver characteristics structure", "characteristics structure WDK networking"]
+keywords:
+- NDIS_MINIPORT_DRIVER_CHARACTERISTICS
+- updating protocol driver characteristics structure
+- characteristics structure WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating the NDIS 6.0 Miniport Driver Characteristics Structure

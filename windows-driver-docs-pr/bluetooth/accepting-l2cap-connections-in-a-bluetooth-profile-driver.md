@@ -2,7 +2,18 @@
 title: Accepting L2CAP Connections in a Bluetooth Profile Driver
 description: Accepting L2CAP Connections in a Bluetooth Profile Driver
 ms.assetid: 26a8238d-717a-438f-84d0-047ce9618928
-keywords: ["L2CAP profile drivers WDK Bluetooth", "Logical Link Controller and Adaptation Protocol WDK Bluetooth", "incoming L2CAP connection requests WDK Bluetooth", "connections WDK Bluetooth", "remote connection notifications WDK Bluetooth", "notifications WDK Bluetooth"]
+keywords:
+- L2CAP profile drivers WDK Bluetooth
+- Logical Link Controller and Adaptation Protocol WDK Bluetooth
+- incoming L2CAP connection requests WDK Bluetooth
+- connections WDK Bluetooth
+- remote connection notifications WDK Bluetooth
+- notifications WDK Bluetooth
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Accepting L2CAP Connections in a Bluetooth Profile Driver

@@ -3,6 +3,11 @@ title: Informing an Application of Item Tree Changes
 author: windows-driver-content
 description: Informing an Application of Item Tree Changes
 ms.assetid: 6b3cb1d0-ab9f-4895-8c3f-f66c398960bb
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Informing an Application of Item Tree Changes

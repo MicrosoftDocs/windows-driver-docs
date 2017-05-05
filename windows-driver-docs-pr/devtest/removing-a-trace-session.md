@@ -2,7 +2,15 @@
 title: Removing a Trace Session
 description: Removing a Trace Session
 ms.assetid: cc40ed01-2f1b-48b3-80da-b0711036dc77
-keywords: ["trace sessions WDK , removing", "removing trace sessions", "TraceView WDK , removing trace"]
+keywords:
+- trace sessions WDK , removing
+- removing trace sessions
+- TraceView WDK , removing trace
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Removing a Trace Session

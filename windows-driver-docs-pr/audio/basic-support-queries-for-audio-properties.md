@@ -2,7 +2,18 @@
 title: Basic Support Queries for Audio Properties
 description: Basic Support Queries for Audio Properties
 ms.assetid: d08b6f86-e4fd-4b2c-bfaa-191bcbac3ff8
-keywords: ["audio properties WDK , basic-support queries", "WDM audio properties WDK , basic-support queries", "basic-support queries WDK audio", "set-property WDK audio", "valid ranges WDK audio", "range values WDK audio"]
+keywords:
+- audio properties WDK , basic-support queries
+- WDM audio properties WDK , basic-support queries
+- basic-support queries WDK audio
+- set-property WDK audio
+- valid ranges WDK audio
+- range values WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Basic Support Queries for Audio Properties

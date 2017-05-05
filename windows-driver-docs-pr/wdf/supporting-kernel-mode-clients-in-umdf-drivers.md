@@ -3,6 +3,11 @@ title: Supporting Kernel-Mode Clients in UMDF Drivers
 author: windows-driver-content
 description: This topic describes how a User-Mode Driver Framework (UMDF) driver supports kernel-mode clients, starting in UMDF version 2.
 ms.assetid: 5C0180BF-F0C7-4225-8388-C3315C282516
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Kernel-Mode Clients in UMDF Drivers

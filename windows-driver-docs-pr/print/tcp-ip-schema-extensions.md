@@ -3,7 +3,13 @@ title: TCP/IP Schema Extensions
 author: windows-driver-content
 description: TCP/IP Schema Extensions
 ms.assetid: fe0f12ee-3e91-40a2-b4fa-f0d4a62460a3
-keywords: ["in-box autoconfiguration support WDK printer , TCP/IP schema extensions"]
+keywords:
+- in-box autoconfiguration support WDK printer , TCP/IP schema extensions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCP/IP Schema Extensions

@@ -2,6 +2,11 @@
 title: Cellular architecture and implementation
 description: The cellular architecture for Windows 10 contains elements from both Windows 8.1 and Windows Phone 8.1.
 ms.assetid: A6F23D12-BCF0-496A-B881-C1F6B35EDA4D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cellular architecture and implementation

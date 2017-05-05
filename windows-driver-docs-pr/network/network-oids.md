@@ -2,7 +2,16 @@
 title: Network OIDs
 description: Network OIDs
 ms.assetid: a897ba37-7984-455f-9428-a74850f7e3b6
-keywords: ["OIDs WDK networking", "network OIDs WDK", "object identifiers WDK networking", "OIDs WDK networking , about OIDs"]
+keywords:
+- OIDs WDK networking
+- network OIDs WDK
+- object identifiers WDK networking
+- OIDs WDK networking , about OIDs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network OIDs

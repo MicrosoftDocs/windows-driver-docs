@@ -2,7 +2,15 @@
 title: TKIP Countermeasures
 description: TKIP Countermeasures
 ms.assetid: 9ed848eb-54b3-4bb3-a8bd-ff249c6bac29
-keywords: ["decryption WDK Native 802.11", "TKIP countermeasures WDK Native 802.11", "countermeasures WDK Native 802.11"]
+keywords:
+- decryption WDK Native 802.11
+- TKIP countermeasures WDK Native 802.11
+- countermeasures WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TKIP Countermeasures

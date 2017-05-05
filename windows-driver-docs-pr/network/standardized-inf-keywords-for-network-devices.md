@@ -2,6 +2,11 @@
 title: Standardized INF Keywords for Network Devices
 description: Standardized INF Keywords for Network Devices
 ms.assetid: F79AFB63-D404-4A5C-9515-82FFEB667048
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standardized INF Keywords for Network Devices

@@ -2,7 +2,15 @@
 title: Basic Trace Session Options
 description: Basic Trace Session Options
 ms.assetid: c997310f-79dc-4c94-945e-13a0a7786928
-keywords: ["trace sessions WDK , basic options", "tracing WDK , basic options", "software tracing WDK , basic options"]
+keywords:
+- trace sessions WDK , basic options
+- tracing WDK , basic options
+- software tracing WDK , basic options
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Basic Trace Session Options

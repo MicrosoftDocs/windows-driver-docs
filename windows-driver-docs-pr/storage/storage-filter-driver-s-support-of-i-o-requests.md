@@ -3,7 +3,16 @@ title: Storage Filter Driver's Support of I/O Requests
 author: windows-driver-content
 description: Storage Filter Driver's Support of I/O Requests
 ms.assetid: 2899bf91-584f-47fe-9d5c-3feb07b8707e
-keywords: ["storage filter drivers WDK , I/O request support", "filter drivers WDK storage , I/O request support", "SFD WDK storage , I/O request support", "IRPs WDK storage"]
+keywords:
+- storage filter drivers WDK , I/O request support
+- filter drivers WDK storage , I/O request support
+- SFD WDK storage , I/O request support
+- IRPs WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Filter Driver's Support of I/O Requests

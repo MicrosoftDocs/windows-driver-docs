@@ -2,6 +2,11 @@
 title: Configuring Protection for the Video Signal
 description: Configuring Protection for the Video Signal
 ms.assetid: 557fc95b-1cf5-4b6d-b256-fe2db29ec0fa
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuring Protection for the Video Signal

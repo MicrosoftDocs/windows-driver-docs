@@ -2,7 +2,17 @@
 title: Making Outgoing Calls
 description: Making Outgoing Calls
 ms.assetid: 295b3f6d-d53b-4030-b7e9-35ab7524d9aa
-keywords: ["CoNDIS WAN drivers WDK networking , outgoing calls", "telephonic services WDK WAN , outgoing calls", "CoNDIS TAPI WDK networking , outgoing calls", "outgoing calls WDK CoNDIS WAN", "calls WDK CoNDIS WAN"]
+keywords:
+- CoNDIS WAN drivers WDK networking , outgoing calls
+- telephonic services WDK WAN , outgoing calls
+- CoNDIS TAPI WDK networking , outgoing calls
+- outgoing calls WDK CoNDIS WAN
+- calls WDK CoNDIS WAN
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Making Outgoing Calls

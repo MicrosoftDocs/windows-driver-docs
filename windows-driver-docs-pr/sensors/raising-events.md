@@ -3,7 +3,18 @@ title: Raising sensor events
 author: windows-driver-content
 description: Raising sensor events
 ms.assetid: a6e428f8-1613-4e8d-813d-5a54824dab82
-keywords: ["sensor events", "event handler", "data update event", "sensor data update event", "state change event", "sensor state change event"]
+keywords:
+- sensor events
+- event handler
+- data update event
+- sensor data update event
+- state change event
+- sensor state change event
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Raising sensor events

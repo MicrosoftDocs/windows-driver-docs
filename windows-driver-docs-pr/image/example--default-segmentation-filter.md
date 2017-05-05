@@ -3,6 +3,11 @@ title: Example Default Segmentation Filter
 author: windows-driver-content
 description: Example Default Segmentation Filter
 ms.assetid: 96c74ca6-0162-4991-b3f9-86c17c92ffc3
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example: Default Segmentation Filter

@@ -3,6 +3,11 @@ title: Storing and Transferring Thumbnail Data
 author: windows-driver-content
 description: Storing and Transferring Thumbnail Data
 ms.assetid: 4c27f93f-859e-42e3-95ea-9bfd8d0329d6
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storing and Transferring Thumbnail Data

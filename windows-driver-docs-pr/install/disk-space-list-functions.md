@@ -2,7 +2,18 @@
 title: Disk-Space List Functions
 description: Disk-Space List Functions
 ms.assetid: 850e9f41-b534-49f3-891d-c12c1126e52f
-keywords: ["SetupAPI functions WDK , disk-space lists", "disk-space lists WDK SetupAPI", "calculating disk space WDK SetupAPI", "space calculations WDK SetupAPI", "disk space calculations WDK SetupAPI", "total disk space calculations WDK SetupAPI"]
+keywords:
+- SetupAPI functions WDK , disk-space lists
+- disk-space lists WDK SetupAPI
+- calculating disk space WDK SetupAPI
+- space calculations WDK SetupAPI
+- disk space calculations WDK SetupAPI
+- total disk space calculations WDK SetupAPI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Disk-Space List Functions

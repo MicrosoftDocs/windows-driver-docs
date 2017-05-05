@@ -2,7 +2,21 @@
 title: Creating Secure Device Installations
 description: Creating Secure Device Installations
 ms.assetid: e92488c4-1383-4493-b229-61c646546c82
-keywords: ["Device setup WDK device installations , security", "device installations WDK , security", "installing devices WDK , security", "security WDK device installations", "security descriptors WDK device installations", "INF files WDK device installations", "testing security settings WDK device installations", "registry WDK device installations", "WMI security WDK device installations"]
+keywords:
+- Device setup WDK device installations , security
+- device installations WDK , security
+- installing devices WDK , security
+- security WDK device installations
+- security descriptors WDK device installations
+- INF files WDK device installations
+- testing security settings WDK device installations
+- registry WDK device installations
+- WMI security WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating Secure Device Installations

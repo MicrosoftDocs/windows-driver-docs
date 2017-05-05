@@ -2,7 +2,17 @@
 title: Introduction to the NetDMA Interface
 description: Introduction to the NetDMA Interface
 ms.assetid: 6af70eb1-db6e-4593-bc72-82dcc3013d1e
-keywords: ["memory-to-memory data transfers WDK NetDMA , about NetDMA interface", "data transfers WDK NetDMA , about NetDMA interface", "transferring data WDK NetDMA , about NetDMA interface", "NetDMA WDK networking , about NetDMA interface", "copying data with low CPU pr"]
+keywords:
+- memory-to-memory data transfers WDK NetDMA , about NetDMA interface
+- data transfers WDK NetDMA , about NetDMA interface
+- transferring data WDK NetDMA , about NetDMA interface
+- NetDMA WDK networking , about NetDMA interface
+- copying data with low CPU pr
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to the NetDMA Interface

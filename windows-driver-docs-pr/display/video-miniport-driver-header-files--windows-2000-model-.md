@@ -2,7 +2,14 @@
 title: Video Miniport Driver Header Files (Windows 2000 Model)
 description: Video Miniport Driver Header Files (Windows 2000 Model)
 ms.assetid: 7ce0df41-ce1e-4d76-b7e8-6d0a3576a58d
-keywords: ["video miniport drivers WDK Windows 2000 , header files", "header files WDK video miniport"]
+keywords:
+- video miniport drivers WDK Windows 2000 , header files
+- header files WDK video miniport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Video Miniport Driver Header Files (Windows 2000 Model)

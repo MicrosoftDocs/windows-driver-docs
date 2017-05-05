@@ -2,7 +2,18 @@
 title: Mapping on Deferred Contexts
 description: Mapping on Deferred Contexts
 ms.assetid: 29c44639-ea5e-4255-8e8c-f6d5e3af0dfb
-keywords: ["Direct3D version 11 WDK Windows 7 display , deferred contexts, mapping", "Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts, mapping", "mapping on deferred contexts WDK Windows 7 display", "mapping on deferred contexts WDK Windows Server 2008 R2 display , excluding DDI functions", "deferred contexts WDK Windows 7 display , mapping", "deferred contexts WDK Windows Server 2008 R2 display , mapping"]
+keywords:
+- Direct3D version 11 WDK Windows 7 display , deferred contexts, mapping
+- Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts, mapping
+- mapping on deferred contexts WDK Windows 7 display
+- mapping on deferred contexts WDK Windows Server 2008 R2 display , excluding DDI functions
+- deferred contexts WDK Windows 7 display , mapping
+- deferred contexts WDK Windows Server 2008 R2 display , mapping
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Mapping on Deferred Contexts

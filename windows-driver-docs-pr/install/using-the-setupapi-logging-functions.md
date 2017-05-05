@@ -2,7 +2,15 @@
 title: Using the SetupAPI Logging Functions
 description: Using the SetupAPI Logging Functions
 ms.assetid: a2ba0da4-b891-4ff9-827b-0d64a7a02c0d
-keywords: ["SetupAPI logging WDK Windows Vista , functions", "functions WDK SetupAPI", "text logs WDK SetupAPI , functions"]
+keywords:
+- SetupAPI logging WDK Windows Vista , functions
+- functions WDK SetupAPI
+- text logs WDK SetupAPI , functions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the SetupAPI Logging Functions

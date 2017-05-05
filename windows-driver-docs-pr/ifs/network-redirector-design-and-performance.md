@@ -3,7 +3,17 @@ title: Network Redirector Design and Performance
 author: windows-driver-content
 description: Network Redirector Design and Performance
 ms.assetid: 60ee4548-f81c-4d10-91ef-0e31e2837268
-keywords: ["network redirectors WDK , performance", "redirector drivers WDK , performance", "performance WDK network redirectors", "run-to-the-wire approach WDK network redirectors", "bandwidth WDK network redirectors"]
+keywords:
+- network redirectors WDK , performance
+- redirector drivers WDK , performance
+- performance WDK network redirectors
+- run-to-the-wire approach WDK network redirectors
+- bandwidth WDK network redirectors
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Redirector Design and Performance

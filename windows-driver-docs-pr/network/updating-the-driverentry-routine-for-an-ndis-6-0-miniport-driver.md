@@ -2,7 +2,13 @@
 title: Updating the DriverEntry Routine for an NDIS 6.0 Miniport Driver
 description: Updating the DriverEntry Routine for an NDIS 6.0 Miniport Driver
 ms.assetid: 72a0a702-06f1-499a-8fff-7dcfa04aab32
-keywords: ["DriverEntry WDK networking"]
+keywords:
+- DriverEntry WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Updating the DriverEntry Routine for an NDIS 6.0 Miniport Driver

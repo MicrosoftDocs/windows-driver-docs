@@ -2,7 +2,23 @@
 title: Flipping
 description: Flipping
 ms.assetid: e577b73f-7664-4c87-8d43-c3cf04705081
-keywords: ["tears WDK DirectDraw", "drawing page flips WDK DirectDraw , about flipping", "DirectDraw flipping WDK Windows 2000 display , about flipping", "page flipping WDK DirectDraw , about flipping", "flipping WDK DirectDraw , about flipping", "drawing page flips WDK DirectDraw", "DirectDraw flipping WDK Windows 2000 display", "page flipping WDK DirectDraw", "flipping WDK DirectDraw", "primary surfaces WDK DirectDraw", "surfaces WDK DirectDraw , flipping"]
+keywords:
+- tears WDK DirectDraw
+- drawing page flips WDK DirectDraw , about flipping
+- DirectDraw flipping WDK Windows 2000 display , about flipping
+- page flipping WDK DirectDraw , about flipping
+- flipping WDK DirectDraw , about flipping
+- drawing page flips WDK DirectDraw
+- DirectDraw flipping WDK Windows 2000 display
+- page flipping WDK DirectDraw
+- flipping WDK DirectDraw
+- primary surfaces WDK DirectDraw
+- surfaces WDK DirectDraw , flipping
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flipping

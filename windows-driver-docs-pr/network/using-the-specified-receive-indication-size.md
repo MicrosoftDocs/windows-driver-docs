@@ -2,7 +2,14 @@
 title: Using the Specified Receive Indication Size
 description: Using the Specified Receive Indication Size
 ms.assetid: b6a53683-36da-4184-8154-c3d77b6daf8e
-keywords: ["delivering received data WDK TCP chimney offload , indication size", "indication size WDK TCP chimney offload"]
+keywords:
+- delivering received data WDK TCP chimney offload , indication size
+- indication size WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Specified Receive Indication Size

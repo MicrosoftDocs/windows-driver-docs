@@ -2,6 +2,11 @@
 title: Device and Driver Technologies
 description: This section contains information about each of the supported Windows driver technologies.
 ms.assetid: 1ef3e216-1322-42c3-b070-94cddfb2133c
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device and Driver Technologies
@@ -47,7 +52,7 @@ Windows 10 Mobile is optimized for the unique needs of mobile devices. Instead 
 -   [Storage Devices](https://msdn.microsoft.com/library/windows/hardware/ff563893)
 -   [Streaming Media Devices](https://msdn.microsoft.com/library/windows/hardware/ff567782)
 -   [System Technologies](https://msdn.microsoft.com/en-us/library/windows/hardware/ff557564)
--   [Universal Serial Bus (USB)] https://msdn.microsoft.com/en-us/library/windows/hardware/mt807557)
+-   [Universal Serial Bus (USB)](https://msdn.microsoft.com/en-us/library/windows/hardware/mt807557)
 -   [Windows Portable Devices](https://msdn.microsoft.com/library/windows/hardware/ff597729)
 -   [Windows SideShow Devices](https://msdn.microsoft.com/library/windows/hardware/ff548077)
 

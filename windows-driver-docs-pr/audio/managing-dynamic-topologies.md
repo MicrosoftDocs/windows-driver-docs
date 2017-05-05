@@ -2,7 +2,16 @@
 title: Managing Dynamic Topologies
 description: Managing Dynamic Topologies
 ms.assetid: 324c372b-c8d6-4eed-b4ea-071b3d5412b1
-keywords: ["dynamic topologies WDK audio", "jack-presence detection WDK audio", "registering subdevices", "dynamic subdevices WDK audio"]
+keywords:
+- dynamic topologies WDK audio
+- jack-presence detection WDK audio
+- registering subdevices
+- dynamic subdevices WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Dynamic Topologies

@@ -2,7 +2,14 @@
 title: Example 9 Creating a TMF file
 description: Example 9 Creating a TMF file
 ms.assetid: bf66431b-7937-4a98-96cf-e06d28793401
-keywords: ["Tracefmt WDK , TMF files", "TMF files WDK , Tracefmt"]
+keywords:
+- Tracefmt WDK , TMF files
+- TMF files WDK , Tracefmt
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 9: Creating a TMF file

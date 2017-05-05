@@ -2,7 +2,19 @@
 title: Network Module Attachment
 description: Network Module Attachment
 ms.assetid: 4b3602dd-a9cf-4cb6-bfeb-d2d74d2f391d
-keywords: ["network modules WDK Network Module Registrar , attachment", "provider modules WDK Network Module Registrar , attachment", "client modules WDK Network Module Registrar , attachment", "attaching network modules", "registering network modules", "Network Module Registrar WDK , attaching network modules", "NMR WDK , attaching network modules"]
+keywords:
+- network modules WDK Network Module Registrar , attachment
+- provider modules WDK Network Module Registrar , attachment
+- client modules WDK Network Module Registrar , attachment
+- attaching network modules
+- registering network modules
+- Network Module Registrar WDK , attaching network modules
+- NMR WDK , attaching network modules
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Module Attachment

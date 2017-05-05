@@ -3,6 +3,11 @@ title: EFI\_USB\_INTERFACE\_INFO
 author: windows-driver-content
 description: EFI\_USB\_INTERFACE\_INFO
 ms.assetid: d20b78bd-8369-4f50-b161-e8ad0bb4c52f
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # EFI\_USB\_INTERFACE\_INFO

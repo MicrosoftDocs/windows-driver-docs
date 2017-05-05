@@ -3,7 +3,15 @@ title: Customizing Other Printer Interface Operations
 author: windows-driver-content
 description: Customizing Other Printer Interface Operations
 ms.assetid: ae59d2e7-9049-432d-b519-9e7c88af8d48
-keywords: ["user interface plug-ins WDK print , customization methods", "UI plug-ins WDK print , customization methods", "IPrintOemUI"]
+keywords:
+- user interface plug-ins WDK print , customization methods
+- UI plug-ins WDK print , customization methods
+- IPrintOemUI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customizing Other Printer Interface Operations

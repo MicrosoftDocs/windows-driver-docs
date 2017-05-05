@@ -3,6 +3,11 @@ title: Device-Specific Contexts
 author: windows-driver-content
 description: Device-Specific Contexts
 ms.assetid: 29e0d451-57fb-4943-9508-022adffa4650
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device-Specific Contexts

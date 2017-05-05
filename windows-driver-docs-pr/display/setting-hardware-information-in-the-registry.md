@@ -2,7 +2,16 @@
 title: Setting Hardware Information in the Registry
 description: Setting Hardware Information in the Registry
 ms.assetid: 82f5d399-58c3-4bed-a3f2-3501f21fa3e8
-keywords: ["hardware WDK video miniport", "registry WDK video miniport", "VideoPortSetRegistryParameters", "VideoPortGetRegistryParameters"]
+keywords:
+- hardware WDK video miniport
+- registry WDK video miniport
+- VideoPortSetRegistryParameters
+- VideoPortGetRegistryParameters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting Hardware Information in the Registry

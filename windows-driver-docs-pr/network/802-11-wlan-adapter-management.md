@@ -2,7 +2,16 @@
 title: 802.11 WLAN Adapter Management
 description: 802.11 WLAN Adapter Management
 ms.assetid: 8959ed34-b507-4895-925e-329a9e5b32cd
-keywords: ["IHV Extensions DLL WDK Native 802.11 , adapter management", "adapters WDK 802.11 WLAN", "WLAN adapters WDK", "Native 802.11 IHV Extensions DLL WDK , adapter management"]
+keywords:
+- IHV Extensions DLL WDK Native 802.11 , adapter management
+- adapters WDK 802.11 WLAN
+- WLAN adapters WDK
+- Native 802.11 IHV Extensions DLL WDK , adapter management
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 WLAN Adapter Management

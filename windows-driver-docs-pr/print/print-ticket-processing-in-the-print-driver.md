@@ -3,7 +3,15 @@ title: Print Ticket Processing in the Print Driver
 author: windows-driver-content
 description: Print Ticket Processing in the Print Driver
 ms.assetid: a7295632-0133-4133-b62e-5526dcc12c7d
-keywords: ["Print Tickets WDK , print driver processing", "Print Tickets WDK , XPSDrv", "Print Tickets WDK , GDI-based print drivers"]
+keywords:
+- Print Tickets WDK , print driver processing
+- Print Tickets WDK , XPSDrv
+- Print Tickets WDK , GDI-based print drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Ticket Processing in the Print Driver

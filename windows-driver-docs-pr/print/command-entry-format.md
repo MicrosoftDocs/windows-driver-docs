@@ -3,7 +3,14 @@ title: Command Entry Format
 author: windows-driver-content
 description: Command Entry Format
 ms.assetid: f2b14c12-3c34-45b2-9ead-8cd57d657e9e
-keywords: ["printer commands WDK Unidrv , entry format", "formats WDK printer commands"]
+keywords:
+- printer commands WDK Unidrv , entry format
+- formats WDK printer commands
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command Entry Format

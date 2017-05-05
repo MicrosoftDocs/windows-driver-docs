@@ -3,6 +3,11 @@ title: Calling Order for Minidriver Functions
 author: windows-driver-content
 description: Calling Order for Minidriver Functions
 ms.assetid: 0e51d29c-964d-44d5-86be-095601286f94
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calling Order for Minidriver Functions

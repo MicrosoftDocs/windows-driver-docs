@@ -1,6 +1,11 @@
 ---
 Description: Functional-Object Retrieval
 title: Functional-Object Retrieval
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Functional-Object Retrieval

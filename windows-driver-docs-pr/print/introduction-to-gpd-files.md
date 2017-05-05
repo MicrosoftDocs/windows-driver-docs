@@ -3,7 +3,17 @@ title: Introduction to GPD Files
 author: windows-driver-content
 description: Introduction to GPD Files
 ms.assetid: f29415cf-d8ca-42a2-bbae-2be53e3621a6
-keywords: ["generic printer description WDK Unidrv", "GPD files WDK Unidrv", "Unidrv, GPD files", "GPD files WDK Unidrv , about GPD files", "Unidrv WDK print"]
+keywords:
+- generic printer description WDK Unidrv
+- GPD files WDK Unidrv
+- Unidrv, GPD files
+- GPD files WDK Unidrv , about GPD files
+- Unidrv WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to GPD Files

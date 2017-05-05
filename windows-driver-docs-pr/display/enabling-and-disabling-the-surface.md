@@ -2,7 +2,18 @@
 title: Enabling and Disabling the Surface
 description: Enabling and Disabling the Surface
 ms.assetid: 34a1d1a5-b139-4d59-8754-b77d71bc75ad
-keywords: ["drawing WDK GDI , initialization, enabling and disabling a surface", "initializing graphics drivers WDK Windows 2000 display , enabling and disabling a surface", "GDI WDK Windows 2000 display , initialization, enabling and disabling a surface", "graphics drivers WDK Windows 2000 display , initialization, enabling and disabling a surface", "surface initialization WDK GDI", "surface disabling WDK GDI"]
+keywords:
+- drawing WDK GDI , initialization, enabling and disabling a surface
+- initializing graphics drivers WDK Windows 2000 display , enabling and disabling a surface
+- GDI WDK Windows 2000 display , initialization, enabling and disabling a surface
+- graphics drivers WDK Windows 2000 display , initialization, enabling and disabling a surface
+- surface initialization WDK GDI
+- surface disabling WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling and Disabling the Surface

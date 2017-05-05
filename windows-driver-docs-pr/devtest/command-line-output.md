@@ -2,7 +2,14 @@
 title: Command-Line Output
 description: Command-Line Output
 ms.assetid: 21225785-e8b8-4488-b0a0-fe4cea50d1ff
-keywords: ["output files WDK Static Driver Verifier", "command-line output WDK Static Driver Verifier"]
+keywords:
+- output files WDK Static Driver Verifier
+- command-line output WDK Static Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Command-Line Output

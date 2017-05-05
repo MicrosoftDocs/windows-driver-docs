@@ -2,7 +2,26 @@
 title: PoolMon
 description: PoolMon
 ms.assetid: 3cda6297-0e6f-48d5-b9d9-670ccf102c86
-keywords: ["PoolMon WDK", "Pool Monitor WDK", "pool tags WDK PoolMon", "Memory Pool Monitor WDK", "driver testing WDK , PoolMon", "testing drivers WDK , PoolMon", "allocation pool tags WDK PoolMon", "memory allocations WDK PoolMon", "displaying memory allocation data", "memory WDK PoolMon", "Terminal Services sessions WDK PoolMon", "tag files WDK PoolMon", "statistics WDK PoolMon", "status information WDK PoolMon"]
+keywords:
+- PoolMon WDK
+- Pool Monitor WDK
+- pool tags WDK PoolMon
+- Memory Pool Monitor WDK
+- driver testing WDK , PoolMon
+- testing drivers WDK , PoolMon
+- allocation pool tags WDK PoolMon
+- memory allocations WDK PoolMon
+- displaying memory allocation data
+- memory WDK PoolMon
+- Terminal Services sessions WDK PoolMon
+- tag files WDK PoolMon
+- statistics WDK PoolMon
+- status information WDK PoolMon
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # PoolMon

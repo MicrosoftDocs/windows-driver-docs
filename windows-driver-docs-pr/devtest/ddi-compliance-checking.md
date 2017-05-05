@@ -2,6 +2,11 @@
 title: DDI compliance checking
 description: The DDI compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
 ms.assetid: 1E536DE0-071B-4529-B228-DB5DAE71099C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DDI compliance checking

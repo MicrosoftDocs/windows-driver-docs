@@ -2,7 +2,19 @@
 title: Caching Registered Memory
 description: Caching Registered Memory
 ms.assetid: e1040f6a-6e65-462a-a79a-5d05d36787b0
-keywords: ["SAN connection setup WDK , caching registered memory", "RDMA buffer caching WDK SANs", "cache RDMA buffers WDK SANs", "registered memory WDK SANs", "local access registered memory caching WDK SANs", "remote access registered memory caching WDK SANs", "memory WDK SANs"]
+keywords:
+- SAN connection setup WDK , caching registered memory
+- RDMA buffer caching WDK SANs
+- cache RDMA buffers WDK SANs
+- registered memory WDK SANs
+- local access registered memory caching WDK SANs
+- remote access registered memory caching WDK SANs
+- memory WDK SANs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Caching Registered Memory

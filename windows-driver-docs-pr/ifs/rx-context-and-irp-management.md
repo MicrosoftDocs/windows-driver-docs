@@ -3,7 +3,25 @@ title: RX\_CONTEXT and IRP Management
 author: windows-driver-content
 description: RX\_CONTEXT and IRP Management
 ms.assetid: 74ca681d-2599-442c-aebe-3556d6354f7f
-keywords: ["RDBSS WDK file systems , IRPs", "Redirected Drive Buffering Subsystem WDK file systems , IRPs", "RX_CONTEXT structure", "data structures WDK file systems", "RDBSS WDK file systems , connection and file structures", "Redirected Drive Buffering Subsystem WDK file systems , connection and file structures", "connection structures WDK RDBSS", "file structures WDK RDBSS", "structures WDK RDBSS", "connection information WDK RDBSS", "IRPs WDK RDBSS", "I/O request packets WDK RDBSS", "context WDK RDBSS"]
+keywords:
+- RDBSS WDK file systems , IRPs
+- Redirected Drive Buffering Subsystem WDK file systems , IRPs
+- RX_CONTEXT structure
+- data structures WDK file systems
+- RDBSS WDK file systems , connection and file structures
+- Redirected Drive Buffering Subsystem WDK file systems , connection and file structures
+- connection structures WDK RDBSS
+- file structures WDK RDBSS
+- structures WDK RDBSS
+- connection information WDK RDBSS
+- IRPs WDK RDBSS
+- I/O request packets WDK RDBSS
+- context WDK RDBSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RX\_CONTEXT and IRP Management

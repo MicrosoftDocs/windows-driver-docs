@@ -2,7 +2,13 @@
 title: Analog Audio Stream Data Range
 description: Analog Audio Stream Data Range
 ms.assetid: e4503ace-1e96-401e-b410-18ee6b07a37b
-keywords: ["analog audio WDK audio"]
+keywords:
+- analog audio WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Analog Audio Stream Data Range

@@ -2,7 +2,14 @@
 title: Handling Color Values for Pixel Formats
 description: Handling Color Values for Pixel Formats
 ms.assetid: 53ce6be1-14e1-4ee8-ba29-f198dcdacdaa
-keywords: ["color values for pixel formats WDK DirectX 9.0", "pixel format color values WDK DirectX 9.0"]
+keywords:
+- color values for pixel formats WDK DirectX 9.0
+- pixel format color values WDK DirectX 9.0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling Color Values for Pixel Formats

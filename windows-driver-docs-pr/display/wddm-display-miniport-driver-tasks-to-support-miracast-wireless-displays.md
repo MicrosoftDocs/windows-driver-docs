@@ -2,6 +2,11 @@
 title: WDDM display miniport driver tasks to support Miracast wireless displays
 description: To support Miracast wireless displays, Windows Display Driver Model (WDDM) display miniport drivers that run in kernel mode need to do the following tasks.
 ms.assetid: D67CAC4F-0409-4E8D-A31A-78C3EB473556
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WDDM display miniport driver tasks to support Miracast wireless displays

@@ -2,6 +2,11 @@
 title: Writing SR-IOV PF Miniport Drivers
 description: Writing SR-IOV PF Miniport Drivers
 ms.assetid: 1F91FD25-8C49-4D5E-AA03-AA6F51E31B54
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Writing SR-IOV PF Miniport Drivers

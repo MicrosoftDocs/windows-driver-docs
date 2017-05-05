@@ -3,7 +3,19 @@ title: Data Formats and Data Ranges in Streaming Minidrivers
 author: windows-driver-content
 description: Data Formats and Data Ranges in Streaming Minidrivers
 ms.assetid: ea3aa4af-0c8c-429e-b399-0a196eadc5ef
-keywords: ["Stream.sys class driver WDK Windows 2000 Kernel , data formats and ranges", "streaming minidrivers WDK Windows 2000 Kernel , data formats and ranges", "minidrivers WDK Windows 2000 Kernel Streaming , data formats and ranges", "data formats WDK streaming minidriver", "data ranges WDK streaming minidriver", "ranges WDK streaming minidriver", "formats WDK streaming minidriver"]
+keywords:
+- Stream.sys class driver WDK Windows 2000 Kernel , data formats and ranges
+- streaming minidrivers WDK Windows 2000 Kernel , data formats and ranges
+- minidrivers WDK Windows 2000 Kernel Streaming , data formats and ranges
+- data formats WDK streaming minidriver
+- data ranges WDK streaming minidriver
+- ranges WDK streaming minidriver
+- formats WDK streaming minidriver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Formats and Data Ranges in Streaming Minidrivers

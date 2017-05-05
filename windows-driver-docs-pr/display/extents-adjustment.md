@@ -2,7 +2,14 @@
 title: Extents Adjustment
 description: Extents Adjustment
 ms.assetid: b3562744-375a-4d6f-be09-e28314282faa
-keywords: ["Direct3D WDK Windows 2000 display , extents adjustment", "extents adjustment WDK Direct3D"]
+keywords:
+- Direct3D WDK Windows 2000 display , extents adjustment
+- extents adjustment WDK Direct3D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Extents Adjustment

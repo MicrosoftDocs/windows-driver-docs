@@ -3,7 +3,18 @@ title: Synchronizing Cancel and Completion Code
 author: windows-driver-content
 description: Synchronizing Cancel and Completion Code
 ms.assetid: 4c302fc5-cb14-46e5-80c8-8dbf62486905
-keywords: ["request processing WDK KMDF , canceling requests", "I/O requests WDK KMDF , canceling", "synchronization WDK KMDF", "completing I/O requests WDK KMDF", "request processing WDK KMDF , synchronization", "I/O requests WDK KMDF , synchronization"]
+keywords:
+- request processing WDK KMDF , canceling requests
+- I/O requests WDK KMDF , canceling
+- synchronization WDK KMDF
+- completing I/O requests WDK KMDF
+- request processing WDK KMDF , synchronization
+- I/O requests WDK KMDF , synchronization
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Synchronizing Cancel and Completion Code

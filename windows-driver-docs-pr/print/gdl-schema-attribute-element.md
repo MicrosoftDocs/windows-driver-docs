@@ -3,7 +3,19 @@ title: GDL Schema Attribute Element
 author: windows-driver-content
 description: GDL Schema Attribute Element
 ms.assetid: b46c0c6c-28af-4121-9182-65dc23b0ce7d
-keywords: ["GDL WDK , elements", "GDL WDK , schemas", "attribute element WDK GDL", "GDL_ATTRIBUTE WDK GDL", "GDL_UntypedAtt WDK GDL", "untyped attribute WDK GDL", "snapshots WDK GDL , structure"]
+keywords:
+- GDL WDK , elements
+- GDL WDK , schemas
+- attribute element WDK GDL
+- GDL_ATTRIBUTE WDK GDL
+- GDL_UntypedAtt WDK GDL
+- untyped attribute WDK GDL
+- snapshots WDK GDL , structure
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Schema Attribute Element

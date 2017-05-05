@@ -3,7 +3,13 @@ title: Sample Port Monitor
 author: windows-driver-content
 description: Sample Port Monitor
 ms.assetid: dac754bf-f39d-439c-974b-889436211ef3
-keywords: ["port monitors WDK print , samples"]
+keywords:
+- port monitors WDK print , samples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sample Port Monitor

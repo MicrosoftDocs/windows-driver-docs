@@ -2,6 +2,11 @@
 title: ComputerHardwareIds
 description: ComputerHardwareIds
 ms.assetid: ee2c53d3-680d-4988-8eb9-a3713ea47ca4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # ComputerHardwareIds

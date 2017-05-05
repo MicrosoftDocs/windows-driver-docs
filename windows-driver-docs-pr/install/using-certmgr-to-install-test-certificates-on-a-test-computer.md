@@ -2,7 +2,14 @@
 title: Using CertMgr to Install Test Certificates on a Test Computer
 description: Using CertMgr to Install Test Certificates on a Test Computer
 ms.assetid: 5928c810-65e8-412e-9723-7b371574006c
-keywords: ["Certmgr Tool", "Certificate Manager tool WDK"]
+keywords:
+- Certmgr Tool
+- Certificate Manager tool WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using CertMgr to Install Test Certificates on a Test Computer

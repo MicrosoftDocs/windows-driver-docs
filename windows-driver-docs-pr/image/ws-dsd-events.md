@@ -3,6 +3,11 @@ title: WS-DSD Events
 author: windows-driver-content
 description: WS-DSD Events
 ms.assetid: f690cb96-5b51-4909-b50e-77313d00a8de
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WS-DSD Events

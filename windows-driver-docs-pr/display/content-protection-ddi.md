@@ -2,7 +2,19 @@
 title: Content Protection DDI
 description: Content Protection DDI
 ms.assetid: 770e0fce-d3b5-4599-8165-eadf3f23f9dc
-keywords: ["protecting video content WDK Windows 7 display , Content Protection DDI", "protecting video content WDK Windows Server 2008 R2 display , Content Protection DDI", "video content WDK Windows 7 display , Content Protection DDI", "video content WDK Windows Server 2008 R2 display , Content Protection DDI", "video content WDK Windows Server 2008 R2 display , protecting", "Content Protection DDI WDK Windows 7 display", "Content Protection DDI WDK Windows Server 2008 R2 display"]
+keywords:
+- protecting video content WDK Windows 7 display , Content Protection DDI
+- protecting video content WDK Windows Server 2008 R2 display , Content Protection DDI
+- video content WDK Windows 7 display , Content Protection DDI
+- video content WDK Windows Server 2008 R2 display , Content Protection DDI
+- video content WDK Windows Server 2008 R2 display , protecting
+- Content Protection DDI WDK Windows 7 display
+- Content Protection DDI WDK Windows Server 2008 R2 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Content Protection DDI

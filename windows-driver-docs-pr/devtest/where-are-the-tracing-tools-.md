@@ -2,6 +2,11 @@
 title: Where are the tracing tools
 description: Where are the tracing tools
 ms.assetid: fceb5c8b-bc0a-4708-b925-e6fb76328f7e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Where are the tracing tools?

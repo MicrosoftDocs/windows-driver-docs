@@ -2,7 +2,17 @@
 title: Output File Options
 description: Output File Options
 ms.assetid: f53785d8-2a91-47da-945c-8c52d6345ae9
-keywords: ["trace sessions WDK , advanced options", "summary message files WDK TraceView", "listing files WDK", "output files WDK TraceView", "files WDK TraceView"]
+keywords:
+- trace sessions WDK , advanced options
+- summary message files WDK TraceView
+- listing files WDK
+- output files WDK TraceView
+- files WDK TraceView
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Output File Options

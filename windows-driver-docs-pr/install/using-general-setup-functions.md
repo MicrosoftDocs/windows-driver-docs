@@ -2,7 +2,14 @@
 title: Using General Setup Functions
 description: Using General Setup Functions
 ms.assetid: 08a7b585-7930-47a3-9fa0-a36625242e5d
-keywords: ["SetupAPI functions WDK , general Setup functions", "general Setup functions WDK SetupAPI"]
+keywords:
+- SetupAPI functions WDK , general Setup functions
+- general Setup functions WDK SetupAPI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using General Setup Functions

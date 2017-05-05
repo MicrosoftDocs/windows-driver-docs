@@ -3,7 +3,17 @@ title: Plotter Driver Minidrivers
 author: windows-driver-content
 description: Plotter Driver Minidrivers
 ms.assetid: f7223a0a-df02-4a4f-a3d6-7910aed926eb
-keywords: ["Plotter Driver WDK print , minidrivers", "MSPlot WDK print , minidrivers", "minidrivers WDK MSPlot", "PCD files WDK MSPlot", ".pcd files"]
+keywords:
+- Plotter Driver WDK print , minidrivers
+- MSPlot WDK print , minidrivers
+- minidrivers WDK MSPlot
+- PCD files WDK MSPlot
+- .pcd files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Plotter Driver Minidrivers

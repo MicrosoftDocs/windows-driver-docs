@@ -2,6 +2,11 @@
 title: No Valid Drivers found after Scan Stage
 description: No Valid Drivers found after Scan Stage
 ms.assetid: aaf4f39b-82ab-40c3-ac49-5a20c8796051
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # No Valid Drivers found after Scan Stage

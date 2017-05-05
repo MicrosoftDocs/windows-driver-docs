@@ -2,7 +2,16 @@
 title: Display Drivers (Windows 2000 Model)
 description: Display Drivers (Windows 2000 Model)
 ms.assetid: 9d49f4e7-5153-417e-8f15-42b3dcdf3fa6
-keywords: ["display driver model WDK Windows 2000 , display drivers", "Windows 2000 display driver model WDK , display drivers", "display drivers WDK Windows 2000", "display drivers WDK Windows 2000 , about display drivers"]
+keywords:
+- display driver model WDK Windows 2000 , display drivers
+- Windows 2000 display driver model WDK , display drivers
+- display drivers WDK Windows 2000
+- display drivers WDK Windows 2000 , about display drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Display Drivers (Windows 2000 Model)

@@ -2,7 +2,14 @@
 title: Network Monitor Operating States
 description: Network Monitor Operating States
 ms.assetid: 1f9c73ed-6514-4d2d-97ca-5019b602b8d1
-keywords: ["operating states WDK Native 802.11", "Network Monitor WDK Native 802.11"]
+keywords:
+- operating states WDK Native 802.11
+- Network Monitor WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Monitor Operating States

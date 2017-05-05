@@ -2,7 +2,13 @@
 title: General Association Operation Guidelines
 description: General Association Operation Guidelines
 ms.assetid: 1b5cc8ef-6273-4442-b19c-6718e7929dfb
-keywords: ["association operations WDK Native 802.11"]
+keywords:
+- association operations WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # General Association Operation Guidelines

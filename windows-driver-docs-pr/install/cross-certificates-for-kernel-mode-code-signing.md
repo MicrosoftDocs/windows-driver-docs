@@ -2,6 +2,11 @@
 title: Cross-Certificates for Kernel Mode Code Signing
 description: This information describes how to obtain and use cross-certificates for code-signing kernel-mode binary files for Microsoft Windows.
 ms.assetid: 0A1364BF-04DA-4F1C-803A-18FE2A5EF390
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Cross-Certificates for Kernel Mode Code Signing

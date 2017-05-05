@@ -2,6 +2,11 @@
 title: Data-driven Class
 description: Data-driven Class
 ms.assetid: 2998D5BB-A873-4df9-86B2-88937736862F
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="taef.data-driven_class"></span>Data-driven Class

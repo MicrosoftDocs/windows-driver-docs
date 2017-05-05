@@ -2,7 +2,26 @@
 title: DXVA\_ConfigQueryOrReplyFlag and DXVA\_ConfigQueryorReplyFunc Variables
 description: DXVA\_ConfigQueryOrReplyFlag and DXVA\_ConfigQueryorReplyFunc Variables
 ms.assetid: bfb1a98e-b9f0-4baa-b486-b2ff33a8bac5
-keywords: ["video decoding WDK DirectX VA , formats", "decoding video WDK DirectX VA , formats", "picture decoding WDK DirectX VA , formats", "formats WDK DirectX VA", "bDXVA_Func variable WDK DirectX VA", "DXVA_ConfigQueryOrReplyFlag", "DXVA_ConfigQueryorReplyFunc", "video decoding WDK DirectX VA , configuration probing and locking", "decoding video WDK DirectX VA , configuration probing and locking", "picture decoding WDK DirectX VA , configuration probing and locking", "minimal interoperability configuration set WDK DirectX VA", "locking configurations WDK DirectX VA", "probing configurations WDK DirectX VA", "configuration probing and locking WDK DirectX VA"]
+keywords:
+- video decoding WDK DirectX VA , formats
+- decoding video WDK DirectX VA , formats
+- picture decoding WDK DirectX VA , formats
+- formats WDK DirectX VA
+- bDXVA_Func variable WDK DirectX VA
+- DXVA_ConfigQueryOrReplyFlag
+- DXVA_ConfigQueryorReplyFunc
+- video decoding WDK DirectX VA , configuration probing and locking
+- decoding video WDK DirectX VA , configuration probing and locking
+- picture decoding WDK DirectX VA , configuration probing and locking
+- minimal interoperability configuration set WDK DirectX VA
+- locking configurations WDK DirectX VA
+- probing configurations WDK DirectX VA
+- configuration probing and locking WDK DirectX VA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DXVA\_ConfigQueryOrReplyFlag and DXVA\_ConfigQueryorReplyFunc Variables

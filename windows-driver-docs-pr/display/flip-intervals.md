@@ -2,7 +2,32 @@
 title: Flip Intervals
 description: Flip Intervals
 ms.assetid: 9372d63c-e2a7-4f70-a4f0-c50df9183f75
-keywords: ["drawing page flips WDK DirectDraw , intervals", "DirectDraw flipping WDK Windows 2000 display , intervals", "page flipping WDK DirectDraw , intervals", "flipping WDK DirectDraw , intervals", "posted flips WDK DirectDraw", "retired flips WDK DirectDraw", "DDCAPS2_FLIPNOVSYNC", "DDCAPS2_FLIPINTERVAL", "DDFLIP_NOVSYNC", "DDFLIP_INTERVAL2", "DDFLIP_INTERVAL3", "DDFLIP_INTERVAL4", "DDERR_WASSTILLDRAWING", "pending flips WDK DirectDraw", "drawing page flips WDK DirectDraw , timing", "DirectDraw flipping WDK Windows 2000 display , timing", "page flipping WDK DirectDraw , timing", "flipping WDK DirectDraw , timing", "timing flips WDK DirectDraw", "surfaces WDK DirectDraw , flipping"]
+keywords:
+- drawing page flips WDK DirectDraw , intervals
+- DirectDraw flipping WDK Windows 2000 display , intervals
+- page flipping WDK DirectDraw , intervals
+- flipping WDK DirectDraw , intervals
+- posted flips WDK DirectDraw
+- retired flips WDK DirectDraw
+- DDCAPS2_FLIPNOVSYNC
+- DDCAPS2_FLIPINTERVAL
+- DDFLIP_NOVSYNC
+- DDFLIP_INTERVAL2
+- DDFLIP_INTERVAL3
+- DDFLIP_INTERVAL4
+- DDERR_WASSTILLDRAWING
+- pending flips WDK DirectDraw
+- drawing page flips WDK DirectDraw , timing
+- DirectDraw flipping WDK Windows 2000 display , timing
+- page flipping WDK DirectDraw , timing
+- flipping WDK DirectDraw , timing
+- timing flips WDK DirectDraw
+- surfaces WDK DirectDraw , flipping
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Flip Intervals

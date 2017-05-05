@@ -1,6 +1,11 @@
 ---
 Description: The WPD Driver Samples
 title: The WPD Driver Samples
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The WPD Driver Samples

@@ -2,7 +2,17 @@
 title: Introduction to WSDBIT
 description: Introduction to WSDBIT
 ms.assetid: 8a8ee9de-95b2-43df-ba96-3b09fcd5751c
-keywords: ["WSDBIT tool WDK , about", "WSDAPI Basic Interoperability Tool WDK , about", "Web Services for Devices API WDK , about", "WSDAPI WDK , about", "interoperability testing WDK WSDBIT"]
+keywords:
+- WSDBIT tool WDK , about
+- WSDAPI Basic Interoperability Tool WDK , about
+- Web Services for Devices API WDK , about
+- WSDAPI WDK , about
+- interoperability testing WDK WSDBIT
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to WSDBIT

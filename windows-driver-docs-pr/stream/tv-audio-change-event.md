@@ -3,7 +3,16 @@ title: TV Audio Change Event
 author: windows-driver-content
 description: TV Audio Change Event
 ms.assetid: 85ba81f0-9443-42c7-9886-15b6b702f287
-keywords: ["TV audio changed event WDK video capture", "events WDK video capture", "KSEVENTSETID_VIDCAP_TVAUDIO", "audio changed event WDK video capture"]
+keywords:
+- TV audio changed event WDK video capture
+- events WDK video capture
+- KSEVENTSETID_VIDCAP_TVAUDIO
+- audio changed event WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TV Audio Change Event

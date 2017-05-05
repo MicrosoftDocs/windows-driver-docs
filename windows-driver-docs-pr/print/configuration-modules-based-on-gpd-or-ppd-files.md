@@ -3,7 +3,16 @@ title: Configuration Modules Based on GPD or PPD Files
 author: windows-driver-content
 description: Configuration Modules Based on GPD or PPD Files
 ms.assetid: b0aeea58-1c58-475e-8d4a-597778e42a7c
-keywords: ["Version 3 XPS drivers WDK XPSDrv , GPD files", "Version 3 XPS drivers WDK XPSDrv , PPD files", "GPD files WDK XPSDrv", "PPD files WDK XPSDrv"]
+keywords:
+- Version 3 XPS drivers WDK XPSDrv , GPD files
+- Version 3 XPS drivers WDK XPSDrv , PPD files
+- GPD files WDK XPSDrv
+- PPD files WDK XPSDrv
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Configuration Modules Based on GPD or PPD Files

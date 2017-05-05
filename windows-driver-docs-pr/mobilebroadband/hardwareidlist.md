@@ -1,10 +1,15 @@
 ---
-title: HardwareIDList
-description: HardwareIDList
+title: HardwareIdList (PackageInfo)
+description: HardwareIdList (PackageInfo)
 ms.assetid: 32bd11f8-767f-4082-b753-efa9debf23cc
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
-# HardwareIDList
+# HardwareIdList (PackageInfo)
 
 
 The HardwareIDList element specifies one or more hardware identification strings for the service metadata package. Each string is specified by a [HardwareID](hardwareid.md) element.

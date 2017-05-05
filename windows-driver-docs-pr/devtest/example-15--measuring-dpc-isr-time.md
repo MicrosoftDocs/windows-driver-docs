@@ -2,7 +2,17 @@
 title: Example 15 Measuring DPC/ISR Time
 description: Example 15 Measuring DPC/ISR Time
 ms.assetid: 47936b8b-fd04-44dc-9cd9-77e9d89b4499
-keywords: ["deferred procedure calls WDK software tracing", "DPCs WDK software tracing", "interrupt service routines WDK software tracing", "ISRs WDK software tracing", "time WDK software tracing"]
+keywords:
+- deferred procedure calls WDK software tracing
+- DPCs WDK software tracing
+- interrupt service routines WDK software tracing
+- ISRs WDK software tracing
+- time WDK software tracing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 15: Measuring DPC/ISR Time

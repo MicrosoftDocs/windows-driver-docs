@@ -2,6 +2,11 @@
 title: Porting TDI Drivers to Winsock Kernel
 description: To port your TDI driver to Winsock Kernel (WSK), you'll need to convert TDI tasks to their WSK equivalents as shown in the following table.
 ms.assetid: 23662BF1-92EC-4C07-9A8D-F8F1D7D51692
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting TDI Drivers to Winsock Kernel

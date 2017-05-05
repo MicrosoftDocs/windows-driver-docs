@@ -2,6 +2,11 @@
 title: WindowsInfo
 description: WindowsInfo
 ms.assetid: 62b3a7d3-503e-4815-aadb-8c67318c54e0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WindowsInfo

@@ -3,7 +3,16 @@ title: Directory Services for Printers
 author: windows-driver-content
 description: Directory Services for Printers
 ms.assetid: 4b368602-67d9-4d26-a82b-8d14d8da2625
-keywords: ["Directory Services WDK printer", "printer Directory Services support WDK", "print queues WDK , Directory Services", "queues WDK printer , Directory Services"]
+keywords:
+- Directory Services WDK printer
+- printer Directory Services support WDK
+- print queues WDK , Directory Services
+- queues WDK printer , Directory Services
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Directory Services for Printers

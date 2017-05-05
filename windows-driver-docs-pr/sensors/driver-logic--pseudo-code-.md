@@ -3,6 +3,11 @@ title: Sensor driver logic
 author: windows-driver-content
 description: This section describes key driver logic, or tasks, as pseudocode.
 ms.assetid: 4B14C515-1B79-4B67-BA9A-365B2D6C0F07
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Sensor driver logic

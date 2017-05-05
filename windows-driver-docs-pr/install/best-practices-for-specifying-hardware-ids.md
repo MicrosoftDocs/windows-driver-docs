@@ -2,6 +2,11 @@
 title: Best Practices for Specifying Hardware IDs
 description: Best Practices for Specifying Hardware IDs
 ms.assetid: 95dcf1b1-b2cd-473f-9660-a91fda20ffc2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Best Practices for Specifying Hardware IDs

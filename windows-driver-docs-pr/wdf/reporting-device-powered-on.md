@@ -3,6 +3,11 @@ title: Reporting Device Powered On When System Returns to S0
 author: windows-driver-content
 description: Reporting Device Powered On When System Returns to S0
 ms.assetid: 35A48B37-8000-45DC-8E39-4B58ABE7DE68
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Device Powered On When System Returns to S0

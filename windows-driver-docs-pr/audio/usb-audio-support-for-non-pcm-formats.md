@@ -2,7 +2,18 @@
 title: USB Audio Support for Non-PCM Formats
 description: USB Audio Support for Non-PCM Formats
 ms.assetid: e4479a67-ec45-45f1-9c42-f050cb0f2eb2
-keywords: ["USBAudio class system driver WDK audio", "non-PCM audio formats WDK , USBAudio", "raw AC-3 WDK audio", "AC-3 WDK audio", "non-PCM audio formats WDK , AC-3", "USB Audio"]
+keywords:
+- USBAudio class system driver WDK audio
+- non-PCM audio formats WDK , USBAudio
+- raw AC-3 WDK audio
+- AC-3 WDK audio
+- non-PCM audio formats WDK , AC-3
+- USB Audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Audio Support for Non-PCM Formats

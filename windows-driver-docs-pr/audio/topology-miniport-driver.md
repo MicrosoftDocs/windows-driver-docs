@@ -2,7 +2,21 @@
 title: Topology Miniport Driver
 description: Topology Miniport Driver
 ms.assetid: 3e0b797e-2fa5-499b-a465-0f51f5433177
-keywords: ["audio miniport drivers WDK , Topology", "miniport drivers WDK audio , Topology", "Topology miniport drivers WDK audio", "Topology miniport interface WDK audio", "connection descriptors WDK audio", "from-node WDK audio", "in-node WDK audio", "distinguished node identifiers WDK audio", "mixing audio WDK"]
+keywords:
+- audio miniport drivers WDK , Topology
+- miniport drivers WDK audio , Topology
+- Topology miniport drivers WDK audio
+- Topology miniport interface WDK audio
+- connection descriptors WDK audio
+- from-node WDK audio
+- in-node WDK audio
+- distinguished node identifiers WDK audio
+- mixing audio WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Topology Miniport Driver

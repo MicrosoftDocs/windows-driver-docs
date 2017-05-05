@@ -2,7 +2,15 @@
 title: Retrieving Information from an INF File
 description: Retrieving Information from an INF File
 ms.assetid: 4174357f-bca3-43b8-8ad6-331b9accd905
-keywords: ["INF files WDK device installations , retrieving information", "retrieving INF file information", "status information WDK INF files"]
+keywords:
+- INF files WDK device installations , retrieving information
+- retrieving INF file information
+- status information WDK INF files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieving Information from an INF File

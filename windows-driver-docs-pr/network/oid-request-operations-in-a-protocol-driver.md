@@ -2,7 +2,16 @@
 title: OID Request Operations in a Protocol Driver
 description: OID Request Operations in a Protocol Driver
 ms.assetid: 767252a2-98de-4df2-89dc-ee48b2c7ca9d
-keywords: ["protocol drivers WDK networking , OID requests", "NDIS protocol drivers WDK , OID requests", "OID requests WDK networking", "OIDs WDK networking , protocol drivers"]
+keywords:
+- protocol drivers WDK networking , OID requests
+- NDIS protocol drivers WDK , OID requests
+- OID requests WDK networking
+- OIDs WDK networking , protocol drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # OID Request Operations in a Protocol Driver

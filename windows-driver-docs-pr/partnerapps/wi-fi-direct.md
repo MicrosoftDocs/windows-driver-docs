@@ -2,6 +2,11 @@
 title: Wi-Fi Direct
 description: Wi-Fi Direct
 ms.assetid: 52D09B1D-5832-48C9-B200-46B8DDC14BE5
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # <span id="p_phpartappdev.wi-fi_direct"></span>Wi-Fi Direct

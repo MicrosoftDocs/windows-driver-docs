@@ -2,7 +2,16 @@
 title: Release Certificates
 description: Release Certificates
 ms.assetid: 61bd5002-b3b6-4f11-b0c2-80eeaf2fec39
-keywords: ["public release driver signing WDK , release certificates", "release signing WDK , release certificates", "release certificates WDK", "certificates WDK , release"]
+keywords:
+- public release driver signing WDK , release certificates
+- release signing WDK , release certificates
+- release certificates WDK
+- certificates WDK , release
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Release Certificates

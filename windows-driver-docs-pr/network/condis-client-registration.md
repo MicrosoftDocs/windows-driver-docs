@@ -2,7 +2,15 @@
 title: CoNDIS Client Registration
 description: CoNDIS Client Registration
 ms.assetid: 335dd117-f6c8-4416-8527-ff64c1a5f3ee
-keywords: ["client registration WDK CoNDIS", "registering entry points", "entry points WDK networking"]
+keywords:
+- client registration WDK CoNDIS
+- registering entry points
+- entry points WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # CoNDIS Client Registration

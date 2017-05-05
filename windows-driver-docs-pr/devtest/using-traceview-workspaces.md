@@ -2,7 +2,17 @@
 title: Using TraceView Workspaces
 description: Using TraceView Workspaces
 ms.assetid: 253eff74-efc0-4c17-a14a-0b7974462560
-keywords: ["TraceView WDK , workspaces", "workspaces WDK TraceView", "workspaces WDK TraceView , about workspaces", "trace sessions WDK , workspaces", "trace logs WDK TraceView , workspaces"]
+keywords:
+- TraceView WDK , workspaces
+- workspaces WDK TraceView
+- workspaces WDK TraceView , about workspaces
+- trace sessions WDK , workspaces
+- trace logs WDK TraceView , workspaces
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using TraceView Workspaces

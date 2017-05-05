@@ -3,7 +3,19 @@ title: USB-Based Camera with a Capture Button
 author: windows-driver-content
 description: USB-Based Camera with a Capture Button
 ms.assetid: abbd824c-1ade-4dbc-8807-e558c444a3ea
-keywords: ["filter graph configurations WDK video capture , USB-based cameras with capture button", "still pins WDK video capture", "capture buttons WDK AVStream", "USB-based cameras with capture button WDK video capture", "capturing still images WDK video capture", "still image capturing WDK video capture", "cameras WDK video capture"]
+keywords:
+- filter graph configurations WDK video capture , USB-based cameras with capture button
+- still pins WDK video capture
+- capture buttons WDK AVStream
+- USB-based cameras with capture button WDK video capture
+- capturing still images WDK video capture
+- still image capturing WDK video capture
+- cameras WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB-Based Camera with a Capture Button

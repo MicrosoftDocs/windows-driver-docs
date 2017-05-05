@@ -2,7 +2,16 @@
 title: RSS with Hardware Queuing
 description: RSS with Hardware Queuing
 ms.assetid: f37caef9-6d22-4d17-8628-0c3f93de470e
-keywords: ["receive-side scaling WDK networking , hardware queuing", "RSS WDK networking , hardware queuing", "hardware queuing WDK RSS", "receive queuing WDK RSS"]
+keywords:
+- receive-side scaling WDK networking , hardware queuing
+- RSS WDK networking , hardware queuing
+- hardware queuing WDK RSS
+- receive queuing WDK RSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RSS with Hardware Queuing

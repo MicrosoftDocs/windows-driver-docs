@@ -2,7 +2,18 @@
 title: Offloading Internet Protocol Security Tasks in NDIS 6.0
 description: Offloading Internet Protocol Security Tasks in NDIS 6.0
 ms.assetid: 3c8461a5-63fe-429a-b133-3d3dd144f9e3
-keywords: ["IPsec WDK networking", "task offload porting WDK networking , IPsec", "TCP/IP offload service porting WDK networking , IPsec", "offload service porting WDK networking , IPsec", "porting task offload services WDK networking , IPsec", "Internet protocol security"]
+keywords:
+- IPsec WDK networking
+- task offload porting WDK networking , IPsec
+- TCP/IP offload service porting WDK networking , IPsec
+- offload service porting WDK networking , IPsec
+- porting task offload services WDK networking , IPsec
+- Internet protocol security
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Offloading Internet Protocol Security Tasks in NDIS 6.0

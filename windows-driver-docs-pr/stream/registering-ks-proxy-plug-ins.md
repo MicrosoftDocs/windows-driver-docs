@@ -3,7 +3,14 @@ title: Registering KS Proxy Plug-ins
 author: windows-driver-content
 description: Registering KS Proxy Plug-ins
 ms.assetid: 1f8691cb-5371-4039-a081-7c422dcac5a8
-keywords: ["Kernel Streaming Proxy WDK AVStream , registering plug-ins", "registering Kernel Streaming Proxy plug-ins WDK AVStream"]
+keywords:
+- Kernel Streaming Proxy WDK AVStream , registering plug-ins
+- registering Kernel Streaming Proxy plug-ins WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Registering KS Proxy Plug-ins

@@ -2,7 +2,20 @@
 title: Creating a Trace Session
 description: Creating a Trace Session
 ms.assetid: 26f75b02-d830-4e3c-bbc9-03144d194e05
-keywords: ["real-time trace sessions WDK", "trace log sessions WDK", "TraceView WDK , creating sessions", "trace sessions WDK , creating", "sessions WDK software tracing", "software tracing WDK , session creation", "tracing WDK , session creation", "trace logs WDK TraceView , sessions"]
+keywords:
+- real-time trace sessions WDK
+- trace log sessions WDK
+- TraceView WDK , creating sessions
+- trace sessions WDK , creating
+- sessions WDK software tracing
+- software tracing WDK , session creation
+- tracing WDK , session creation
+- trace logs WDK TraceView , sessions
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Trace Session

@@ -2,7 +2,15 @@
 title: Standardized INF Keywords for Header-Data Split
 description: Standardized INF Keywords for Header-Data Split
 ms.assetid: 4c341940-9d9d-4c58-8d15-d54680eef50e
-keywords: ["header-data split WDK , configuration", "standardized keywords WDK header-data split", "INF entries WDK header-data split"]
+keywords:
+- header-data split WDK , configuration
+- standardized keywords WDK header-data split
+- INF entries WDK header-data split
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Standardized INF Keywords for Header-Data Split

@@ -2,7 +2,13 @@
 title: Retrieving Information About a Protected Output
 description: Retrieving Information About a Protected Output
 ms.assetid: 20e268b8-fea0-48dd-a3cd-3cbb4233ef99
-keywords: ["OPM WDK display , retrieving protected output information"]
+keywords:
+- OPM WDK display , retrieving protected output information
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieving Information About a Protected Output

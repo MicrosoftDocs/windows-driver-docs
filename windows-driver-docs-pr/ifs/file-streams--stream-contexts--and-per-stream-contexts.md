@@ -3,7 +3,20 @@ title: File Streams, Stream Contexts, and Per-Stream Contexts
 author: windows-driver-content
 description: File Streams, Stream Contexts, and Per-Stream Contexts
 ms.assetid: baea4967-f0d6-4096-aac4-fd38c117b4c6
-keywords: ["filter drivers WDK file system , per-stream context tracking", "file system filter drivers WDK , per-stream context tracking", "per-stream context tracking WDK file system", "tracking per-stream context WDK file system", "file streams WDK", "stream control blocks WDK file system", "SCB WDK file system", "stream context WDK file system"]
+keywords:
+- filter drivers WDK file system , per-stream context tracking
+- file system filter drivers WDK , per-stream context tracking
+- per-stream context tracking WDK file system
+- tracking per-stream context WDK file system
+- file streams WDK
+- stream control blocks WDK file system
+- SCB WDK file system
+- stream context WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # File Streams, Stream Contexts, and Per-Stream Contexts

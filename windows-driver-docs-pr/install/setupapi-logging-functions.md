@@ -2,6 +2,11 @@
 title: SetupAPI Logging Functions
 description: SetupAPI Logging Functions
 ms.assetid: d27bd44c-41c1-4546-b463-11ed3f5c7d84
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # SetupAPI Logging Functions

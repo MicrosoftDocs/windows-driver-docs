@@ -2,7 +2,18 @@
 title: Allocating Link Bandwidth
 description: Allocating Link Bandwidth
 ms.assetid: 7a5d5364-d869-4f6a-a7c3-9326ec347150
-keywords: ["HD Audio, bandwidth", "High Definition Audio (HD Audio), bandwidth", "bus bandwidth WDK audio", "bandwidth WDK audio", "allocating bandwidth", "link bandwidth WDK audio"]
+keywords:
+- HD Audio, bandwidth
+- High Definition Audio (HD Audio), bandwidth
+- bus bandwidth WDK audio
+- bandwidth WDK audio
+- allocating bandwidth
+- link bandwidth WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Allocating Link Bandwidth

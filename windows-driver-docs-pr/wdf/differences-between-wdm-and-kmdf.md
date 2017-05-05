@@ -3,6 +3,11 @@ title: Differences Between WDM and WDF
 author: windows-driver-content
 description: The WDM model is closely tied to the operating system.
 ms.assetid: 4D35F0AB-44CE-49CA-8AB7-3922871567B0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Differences Between WDM and WDF

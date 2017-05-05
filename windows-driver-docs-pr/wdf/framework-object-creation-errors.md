@@ -3,7 +3,15 @@ title: Framework Object Creation Errors
 author: windows-driver-content
 description: Framework Object Creation Errors
 ms.assetid: f5345c88-1c3a-4b32-9c93-c252713f7641
-keywords: ["framework objects WDK KMDF , creation errors", "errors WDK KMDF", "errors WDK KMDF , framework object creation"]
+keywords:
+- framework objects WDK KMDF , creation errors
+- errors WDK KMDF
+- errors WDK KMDF , framework object creation
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Framework Object Creation Errors

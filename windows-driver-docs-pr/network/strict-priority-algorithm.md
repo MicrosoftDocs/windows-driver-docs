@@ -2,6 +2,11 @@
 title: Strict Priority Algorithm
 description: Strict Priority Algorithm
 ms.assetid: 7C7A34CA-673C-4EFC-970D-08458AA83EAD
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Strict Priority Algorithm

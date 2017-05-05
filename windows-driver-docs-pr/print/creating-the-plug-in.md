@@ -3,7 +3,14 @@ title: Creating the Plug-In
 author: windows-driver-content
 description: Creating the Plug-In
 ms.assetid: 4e52c855-f2c6-49b5-ac79-96dcac785579
-keywords: ["COM interfaces WDK print , creating plug-ins", "plug-ins WDK print , creating"]
+keywords:
+- COM interfaces WDK print , creating plug-ins
+- plug-ins WDK print , creating
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating the Plug-In

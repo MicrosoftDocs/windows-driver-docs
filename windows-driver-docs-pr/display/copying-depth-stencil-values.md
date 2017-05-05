@@ -2,7 +2,16 @@
 title: Copying Depth-Stencil Values
 description: Copying Depth-Stencil Values
 ms.assetid: b83d4e6d-5645-49ab-bbb0-c694f1410cba
-keywords: ["user-mode display drivers WDK Windows Vista , copying depth-stencil values", "copying depth-stencil values", "depth-stencil values WDK display", "stencil values WDK display"]
+keywords:
+- user-mode display drivers WDK Windows Vista , copying depth-stencil values
+- copying depth-stencil values
+- depth-stencil values WDK display
+- stencil values WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Copying Depth-Stencil Values

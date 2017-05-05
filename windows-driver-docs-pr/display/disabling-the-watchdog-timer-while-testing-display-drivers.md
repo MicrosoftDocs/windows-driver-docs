@@ -2,7 +2,19 @@
 title: Disabling the Watchdog Timer While Testing Display Drivers
 description: Disabling the Watchdog Timer While Testing Display Drivers
 ms.assetid: dc0c9e64-044b-4b2c-8011-9bdbf121307c
-keywords: ["display drivers WDK Windows 2000 , debugging", "debugging drivers WDK Windows 2000 display", "watchdog timers WDK Windows 2000 display", "timers WDK Windows 2000 display", "VGA WDK Windows 2000 display", "switching to VGA mode WDK Windows 2000 display", "thread watchdog timers WDK Windows 2000 display"]
+keywords:
+- display drivers WDK Windows 2000 , debugging
+- debugging drivers WDK Windows 2000 display
+- watchdog timers WDK Windows 2000 display
+- timers WDK Windows 2000 display
+- VGA WDK Windows 2000 display
+- switching to VGA mode WDK Windows 2000 display
+- thread watchdog timers WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Disabling the Watchdog Timer While Testing Display Drivers

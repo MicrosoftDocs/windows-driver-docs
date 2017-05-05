@@ -1,6 +1,11 @@
 ---
 Description: The WpdServiceSampleDriver Sample
 title: The WpdServiceSampleDriver Sample
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The WpdServiceSampleDriver Sample

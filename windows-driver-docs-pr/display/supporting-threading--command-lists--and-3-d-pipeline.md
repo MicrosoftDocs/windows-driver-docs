@@ -2,7 +2,24 @@
 title: Supporting Threading, Command Lists, and 3-D Pipeline
 description: Supporting Threading, Command Lists, and 3-D Pipeline
 ms.assetid: 2c5adc7d-b8ac-48d2-9777-b3d9fbba829a
-keywords: ["Direct3D version 11 WDK Windows 7 display , threading support", "Direct3D version 11 WDK Windows Server 2008 R2 display , threading support", "Direct3D version 11 WDK Windows 7 display , command lists support", "Direct3D version 11 WDK Windows Server 2008 R2 display , command lists support", "Direct3D version 11 WDK Windows 7 display , 3-D pipeline support", "Direct3D version 11 WDK Windows Server 2008 R2 display , 3-D pipeline support", "threading support for Direct3D version 11 WDK Windows 7 display", "threading support for Direct3D version 11 WDK Windows Server 2008 R2 display", "command lists support for Direct3D version 11 WDK Windows 7 display", "tcommand lists support for Direct3D version 11 WDK Windows Server 2008 R2 display", "pipeline support for Direct3D version 11 WDK Windows 7 display", "pipeline support for Direct3D version 11 WDK Windows Server 2008 R2 display"]
+keywords:
+- Direct3D version 11 WDK Windows 7 display , threading support
+- Direct3D version 11 WDK Windows Server 2008 R2 display , threading support
+- Direct3D version 11 WDK Windows 7 display , command lists support
+- Direct3D version 11 WDK Windows Server 2008 R2 display , command lists support
+- Direct3D version 11 WDK Windows 7 display , 3-D pipeline support
+- Direct3D version 11 WDK Windows Server 2008 R2 display , 3-D pipeline support
+- threading support for Direct3D version 11 WDK Windows 7 display
+- threading support for Direct3D version 11 WDK Windows Server 2008 R2 display
+- command lists support for Direct3D version 11 WDK Windows 7 display
+- tcommand lists support for Direct3D version 11 WDK Windows Server 2008 R2 display
+- pipeline support for Direct3D version 11 WDK Windows 7 display
+- pipeline support for Direct3D version 11 WDK Windows Server 2008 R2 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting Threading, Command Lists, and 3-D Pipeline

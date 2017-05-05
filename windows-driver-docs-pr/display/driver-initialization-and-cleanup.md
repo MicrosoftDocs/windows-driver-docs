@@ -2,7 +2,18 @@
 title: Driver Initialization and Cleanup
 description: Driver Initialization and Cleanup
 ms.assetid: 57f22818-a298-4f9a-87a6-5ca4d97bf32b
-keywords: ["drawing WDK GDI , initialization, description", "initializing graphics drivers WDK Windows 2000 display , description", "GDI WDK Windows 2000 display , initialization, description", "graphics drivers WDK Windows 2000 display , initialization, description", "DrvEnableDriver", "drawing WDK GDI , cleanup"]
+keywords:
+- drawing WDK GDI , initialization, description
+- initializing graphics drivers WDK Windows 2000 display , description
+- GDI WDK Windows 2000 display , initialization, description
+- graphics drivers WDK Windows 2000 display , initialization, description
+- DrvEnableDriver
+- drawing WDK GDI , cleanup
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Initialization and Cleanup

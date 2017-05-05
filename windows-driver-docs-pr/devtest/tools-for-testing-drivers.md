@@ -2,7 +2,19 @@
 title: Tools for Testing Drivers
 description: Tools for Testing Drivers
 ms.assetid: d6c43942-fa6a-4afb-806b-b7930fe2e40d
-keywords: ["Disabler tool", "tools WDK , testing drivers", "driver development tools WDK , testing drivers", "driver testing WDK , tools", "testing drivers WDK , tools", "system crash testing WDK", "crash testing WDK"]
+keywords:
+- Disabler tool
+- tools WDK , testing drivers
+- driver development tools WDK , testing drivers
+- driver testing WDK , tools
+- testing drivers WDK , tools
+- system crash testing WDK
+- crash testing WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tools for Testing Drivers

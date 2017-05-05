@@ -2,6 +2,11 @@
 title: IoSpy and IoAttack
 description: IoSpy and IoAttack
 ms.assetid: 4cc5bf5c-f9e4-43d4-8532-dd7813b6f2a0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IoSpy and IoAttack

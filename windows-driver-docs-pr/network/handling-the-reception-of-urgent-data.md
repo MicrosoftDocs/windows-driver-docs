@@ -2,7 +2,14 @@
 title: Handling the Reception of Urgent Data
 description: Handling the Reception of Urgent Data
 ms.assetid: 2a2e4209-6d11-433a-90df-bdbb7a60503b
-keywords: ["non-standard packets and messages WDK TCP chimney offload , urgent data", "urgent data WDK TCP chimney offload"]
+keywords:
+- non-standard packets and messages WDK TCP chimney offload , urgent data
+- urgent data WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling the Reception of Urgent Data

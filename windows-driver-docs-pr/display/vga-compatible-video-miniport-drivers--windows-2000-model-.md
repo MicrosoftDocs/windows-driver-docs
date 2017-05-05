@@ -2,7 +2,15 @@
 title: VGA-Compatible Video Miniport Drivers (Windows 2000 Model)
 description: VGA-Compatible Video Miniport Drivers (Windows 2000 Model)
 ms.assetid: c3a7bcbc-d9e9-488c-9e97-34ab85489ab9
-keywords: ["video miniport drivers WDK Windows 2000 , VGA", "VGA WDK video miniport", "VGA WDK video miniport , about VGA-compatible drivers"]
+keywords:
+- video miniport drivers WDK Windows 2000 , VGA
+- VGA WDK video miniport
+- VGA WDK video miniport , about VGA-compatible drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # VGA-Compatible Video Miniport Drivers (Windows 2000 Model)

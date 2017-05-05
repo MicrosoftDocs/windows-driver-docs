@@ -3,7 +3,18 @@ title: Dispatch Routine IRQL and Thread Context
 author: windows-driver-content
 description: Dispatch Routine IRQL and Thread Context
 ms.assetid: 95f3a976-c97a-4c8a-979b-14a0ddd823a2
-keywords: ["IRP dispatch routines WDK file system , IRQL", "IRP dispatch routines WDK file system , thread context", "nonarbitrary thread context WDK file system", "thread context WDK file system", "arbitrary thread context WDK file system", "IRQLs WDK file system"]
+keywords:
+- IRP dispatch routines WDK file system , IRQL
+- IRP dispatch routines WDK file system , thread context
+- nonarbitrary thread context WDK file system
+- thread context WDK file system
+- arbitrary thread context WDK file system
+- IRQLs WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dispatch Routine IRQL and Thread Context

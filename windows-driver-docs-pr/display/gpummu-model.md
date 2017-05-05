@@ -2,6 +2,11 @@
 title: GpuMmu model
 description: In the GpuMmu model, the graphics processing unit (GPU) has its own memory management unit (MMU) which translates per-process GPU virtual addresses to physical addresses.
 ms.assetid: FFDFD647-2F00-4AC3-A41A-4224562A51ED
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GpuMmu model

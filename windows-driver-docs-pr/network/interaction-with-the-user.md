@@ -2,7 +2,15 @@
 title: Interaction with the User
 description: Interaction with the User
 ms.assetid: a6235d14-5e54-42c3-8694-9129c187fbfb
-keywords: ["IHV Extensions DLL WDK Native 802.11 , user interaction", "user interaction WDK Native 802.11 IHV Extensions DLL", "Native 802.11 IHV Extensions DLL WDK , user interaction"]
+keywords:
+- IHV Extensions DLL WDK Native 802.11 , user interaction
+- user interaction WDK Native 802.11 IHV Extensions DLL
+- Native 802.11 IHV Extensions DLL WDK , user interaction
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Interaction with the User

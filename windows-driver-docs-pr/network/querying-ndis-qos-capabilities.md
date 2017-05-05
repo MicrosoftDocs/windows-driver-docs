@@ -2,6 +2,11 @@
 title: Querying NDIS QoS Capabilities
 description: Querying NDIS QoS Capabilities
 ms.assetid: 00A2EFCD-CD90-446C-B588-EC66E3E730B2
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Querying NDIS QoS Capabilities

@@ -2,7 +2,20 @@
 title: Driver Support for DirectMusic
 description: Driver Support for DirectMusic
 ms.assetid: 48f6245e-0911-46b6-9cf9-ea4db8875021
-keywords: ["DirectMusic WDK audio", "audio drivers WDK , DirectMusic", "synthesizers WDK audio", "wave sinks WDK audio", "WDM audio drivers WDK , DirectMusic", "DMus WDK audio", "synth sink WDK audio", "render sink WDK audio"]
+keywords:
+- DirectMusic WDK audio
+- audio drivers WDK , DirectMusic
+- synthesizers WDK audio
+- wave sinks WDK audio
+- WDM audio drivers WDK , DirectMusic
+- DMus WDK audio
+- synth sink WDK audio
+- render sink WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Support for DirectMusic

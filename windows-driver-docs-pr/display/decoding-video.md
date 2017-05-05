@@ -2,7 +2,14 @@
 title: Decoding Video
 description: Decoding Video
 ms.assetid: d434469f-1279-47c4-b824-61daeb25b214
-keywords: ["video decoding WDK DirectX VA , about decoding video", "decoding video WDK DirectX VA , about decoding video"]
+keywords:
+- video decoding WDK DirectX VA , about decoding video
+- decoding video WDK DirectX VA , about decoding video
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Decoding Video

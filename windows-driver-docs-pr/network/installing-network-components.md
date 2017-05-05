@@ -2,7 +2,17 @@
 title: Installing Network Components
 description: Installing Network Components
 ms.assetid: b4e5d73a-4943-498d-bf59-a08e3732baa8
-keywords: ["notify objects WDK networking , installing network components", "network notify objects WDK , installing network components", "installing network components WDK , steps", "network component installations WDK , steps", "notifications WDK networking , installing network components"]
+keywords:
+- notify objects WDK networking , installing network components
+- network notify objects WDK , installing network components
+- installing network components WDK , steps
+- network component installations WDK , steps
+- notifications WDK networking , installing network components
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Network Components

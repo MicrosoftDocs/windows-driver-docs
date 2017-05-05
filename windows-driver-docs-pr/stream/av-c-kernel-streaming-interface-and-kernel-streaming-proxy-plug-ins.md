@@ -3,7 +3,19 @@ title: AV/C kernel interface and streaming proxy plug-ins
 author: windows-driver-content
 description: Provides information about AV/C kernel-streaming interface and kernel-streaming proxy plug-ins
 ms.assetid: 0831d917-5afc-4c0c-832a-c2b2669b8c22
-keywords: ["kernel-streaming interface WDK AV/C", "kernel-streaming proxy plug-ins WDK AV/C", "AV/C WDK , kernel-streaming proxy plug-ins", "AV/C WDK , kernel-streaming interface", "proxy plug-ins WDK AV/C", "Kernel Streaming Proxy WDK AVStream", "KS proxy WDK AVStream"]
+keywords:
+- kernel-streaming interface WDK AV/C
+- kernel-streaming proxy plug-ins WDK AV/C
+- AV/C WDK , kernel-streaming proxy plug-ins
+- AV/C WDK , kernel-streaming interface
+- proxy plug-ins WDK AV/C
+- Kernel Streaming Proxy WDK AVStream
+- KS proxy WDK AVStream
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # AV/C kernel-streaming interface and kernel-streaming proxy plug-ins

@@ -2,7 +2,15 @@
 title: Native 802.11 Scan Operations
 description: Native 802.11 Scan Operations
 ms.assetid: f670ea71-be96-44f1-b827-a026e91640bd
-keywords: ["Native 802.11 miniport drivers WDK networking , scan operations", "miniport drivers WDK Native 802.11 , scan operations", "scan operations WDK Native 802.11"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , scan operations
+- miniport drivers WDK Native 802.11 , scan operations
+- scan operations WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Scan Operations

@@ -2,7 +2,15 @@
 title: Supporting NDIS 6.0 Miniport Adapter Pause and Restart Operations
 description: Supporting NDIS 6.0 Miniport Adapter Pause and Restart Operations
 ms.assetid: 88b9fe8f-2bdd-44e0-bcb9-58c815a68cce
-keywords: ["miniport adapters WDK networking , pause and restart operations", "adapters WDK networking , pause and restart operations", "porting miniport drivers WDK networking , adapters"]
+keywords:
+- miniport adapters WDK networking , pause and restart operations
+- adapters WDK networking , pause and restart operations
+- porting miniport drivers WDK networking , adapters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supporting NDIS 6.0 Miniport Adapter Pause and Restart Operations

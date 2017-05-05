@@ -2,7 +2,17 @@
 title: Device Control Scenarios
 description: Device Control Scenarios
 ms.assetid: 9effc192-77ef-40fd-9ab6-564637019576
-keywords: ["WSDBIT tool WDK , test scenarios", "WSDAPI Basic Interoperability Tool WDK , test scenarios", "scenarios WDK WSDBIT", "test scenarios WDK WSDBIT", "Device Control scenario WDK WSDBIT"]
+keywords:
+- WSDBIT tool WDK , test scenarios
+- WSDAPI Basic Interoperability Tool WDK , test scenarios
+- scenarios WDK WSDBIT
+- test scenarios WDK WSDBIT
+- Device Control scenario WDK WSDBIT
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Device Control Scenarios

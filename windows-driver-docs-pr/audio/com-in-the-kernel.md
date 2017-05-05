@@ -2,7 +2,18 @@
 title: COM in the Kernel
 description: COM in the Kernel
 ms.assetid: 2ce13ef1-9868-4f6d-9c42-b71f9e3d5615
-keywords: ["audio miniport drivers WDK , COM", "miniport drivers WDK audio , COM", "COM interfaces WDK audio", "IUnknown interface", "port class drivers WDK audio", "PortCls WDK audio , COM"]
+keywords:
+- audio miniport drivers WDK , COM
+- miniport drivers WDK audio , COM
+- COM interfaces WDK audio
+- IUnknown interface
+- port class drivers WDK audio
+- PortCls WDK audio , COM
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # COM in the Kernel

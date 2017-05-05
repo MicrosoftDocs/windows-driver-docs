@@ -3,7 +3,16 @@ title: USB Video Class Driver Overview
 author: windows-driver-content
 description: USB Video Class Driver Overview
 ms.assetid: 890d448e-bfee-462d-8cce-a2cca42f2f6d
-keywords: ["USB Video Class drivers WDK AVStream , about USB Video Class drivers", "Video Class drivers WDK USB , about USB Video Class drivers", "UVC drivers WDK AVStream , about USB Video Class drivers", "user-mode clients WDK USB Video Class"]
+keywords:
+- USB Video Class drivers WDK AVStream , about USB Video Class drivers
+- Video Class drivers WDK USB , about USB Video Class drivers
+- UVC drivers WDK AVStream , about USB Video Class drivers
+- user-mode clients WDK USB Video Class
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB Video Class Driver Overview

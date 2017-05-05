@@ -3,6 +3,11 @@ title: IStiUSD COM Interface
 author: windows-driver-content
 description: IStiUSD COM Interface
 ms.assetid: 2f805955-8c66-4c9e-839e-c8a98c6637a8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # IStiUSD COM Interface

@@ -2,6 +2,11 @@
 title: Step 2 A Driver for the Device is Selected
 description: Step 2 A Driver for the Device is Selected
 ms.assetid: 2134cab6-58ea-4258-9a45-09bf54156e0a
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Step 2: A Driver for the Device is Selected

@@ -2,7 +2,20 @@
 title: Tracefmt
 description: Tracefmt
 ms.assetid: abf23d76-423d-4d1e-afde-83739015bbfd
-keywords: ["Tracefmt WDK", "software tracing WDK , Tracefmt", "displaying trace messages", "formatting trace messages WDK Tracefmt", "trace message formatting WDK Tracefmt", "software tracing WDK , formatting messages", "tracing WDK , Tracefmt", "trace message format files WDK"]
+keywords:
+- Tracefmt WDK
+- software tracing WDK , Tracefmt
+- displaying trace messages
+- formatting trace messages WDK Tracefmt
+- trace message formatting WDK Tracefmt
+- software tracing WDK , formatting messages
+- tracing WDK , Tracefmt
+- trace message format files WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Tracefmt

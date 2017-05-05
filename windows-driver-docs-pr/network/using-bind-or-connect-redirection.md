@@ -2,6 +2,11 @@
 title: Using Bind or Connect Redirection
 description: Using Bind or Connect Redirection
 ms.assetid: 6b27a9ad-53e9-4e80-bf03-79665f8a82a0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Bind or Connect Redirection

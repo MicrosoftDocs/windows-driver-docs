@@ -3,7 +3,16 @@ title: Print Capabilities
 author: windows-driver-content
 description: Print Capabilities
 ms.assetid: 8ccbdab3-5be4-4ee1-9798-3b90e8b5b4d4
-keywords: ["Print Capabilities WDK , about Print Capabilities", "XML PrintCapabilities WDK print", "PrintCapabilities document WDK print", "IPrintTicketProvider"]
+keywords:
+- Print Capabilities WDK , about Print Capabilities
+- XML PrintCapabilities WDK print
+- PrintCapabilities document WDK print
+- IPrintTicketProvider
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Capabilities

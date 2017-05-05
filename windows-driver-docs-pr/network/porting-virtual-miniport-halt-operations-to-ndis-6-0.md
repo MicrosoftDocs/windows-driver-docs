@@ -2,7 +2,18 @@
 title: Porting Virtual Miniport Halt Operations to NDIS 6.0
 description: Porting Virtual Miniport Halt Operations to NDIS 6.0
 ms.assetid: 2188eb52-9baa-4b7c-9d58-67a0bd7e27be
-keywords: ["intermediate drivers WDK networking , virtual miniports", "NDIS intermediate drivers WDK , virtual miniports", "virtual miniports WDK networking", "porting intermediate drivers WDK networking , virtual miniports", "halting virtual miniports", "stopping virtual"]
+keywords:
+- intermediate drivers WDK networking , virtual miniports
+- NDIS intermediate drivers WDK , virtual miniports
+- virtual miniports WDK networking
+- porting intermediate drivers WDK networking , virtual miniports
+- halting virtual miniports
+- stopping virtual
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Virtual Miniport Halt Operations to NDIS 6.0

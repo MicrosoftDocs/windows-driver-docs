@@ -2,7 +2,16 @@
 title: Linking Path State Objects to a New Neighbor State Object
 description: Linking Path State Objects to a New Neighbor State Object
 ms.assetid: 2e4096d9-59b7-438e-82c0-83fccefca450
-keywords: ["updating offloaded TCP chimney state, relinking path state objects", "inking path state objects WDK TCP chimney offload", "reinking path state objects WDK TCP chimney offload", "path state object relinking WDK TCP chimney offload"]
+keywords:
+- updating offloaded TCP chimney state, relinking path state objects
+- inking path state objects WDK TCP chimney offload
+- reinking path state objects WDK TCP chimney offload
+- path state object relinking WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Linking Path State Objects to a New Neighbor State Object

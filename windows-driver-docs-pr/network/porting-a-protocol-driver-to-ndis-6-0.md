@@ -2,7 +2,18 @@
 title: Porting a Protocol Driver to NDIS 6.0
 description: Porting a Protocol Driver to NDIS 6.0
 ms.assetid: c580c39d-a103-4351-b7db-935c5fdf207d
-keywords: ["protocol drivers WDK networking , porting", "NDIS protocol drivers WDK , porting", "NDIS porting drivers WDK , protocol drivers", "porting drivers WDK networking , protocol drivers", "network driver porting WDK , protocol drivers", "porting protocol drivers WD"]
+keywords:
+- protocol drivers WDK networking , porting
+- NDIS protocol drivers WDK , porting
+- NDIS porting drivers WDK , protocol drivers
+- porting drivers WDK networking , protocol drivers
+- network driver porting WDK , protocol drivers
+- porting protocol drivers WD
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting a Protocol Driver to NDIS 6.0

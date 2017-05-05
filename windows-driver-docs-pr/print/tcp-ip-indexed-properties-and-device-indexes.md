@@ -3,7 +3,15 @@ title: TCP/IP Indexed Properties and Device Indexes
 author: windows-driver-content
 description: TCP/IP Indexed Properties and Device Indexes
 ms.assetid: b26b0c18-1787-43e0-8461-acfbd9fb38f9
-keywords: ["TCP/IP indexed properties WDK printer", "indexed properties WDK printer", "device indexes WDK printer"]
+keywords:
+- TCP/IP indexed properties WDK printer
+- indexed properties WDK printer
+- device indexes WDK printer
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # TCP/IP Indexed Properties and Device Indexes

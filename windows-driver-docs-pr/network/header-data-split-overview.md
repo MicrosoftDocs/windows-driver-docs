@@ -2,7 +2,13 @@
 title: Header-Data Split Overview
 description: Header-Data Split Overview
 ms.assetid: cb964cec-3fb3-4e3c-8d63-3053818f60ad
-keywords: ["header-data split WDK , about header-data split"]
+keywords:
+- header-data split WDK , about header-data split
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Header-Data Split Overview

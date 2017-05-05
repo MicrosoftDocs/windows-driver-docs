@@ -2,7 +2,16 @@
 title: Porting Intermediate Driver Initialization to NDIS 6.0
 description: Porting Intermediate Driver Initialization to NDIS 6.0
 ms.assetid: b1029d31-242b-4097-9f2f-e073ac474358
-keywords: ["intermediate drivers WDK networking , initializing", "NDIS intermediate drivers WDK , initializing", "porting intermediate drivers WDK networking , initialization", "initializing intermediate drivers"]
+keywords:
+- intermediate drivers WDK networking , initializing
+- NDIS intermediate drivers WDK , initializing
+- porting intermediate drivers WDK networking , initialization
+- initializing intermediate drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Intermediate Driver Initialization to NDIS 6.0

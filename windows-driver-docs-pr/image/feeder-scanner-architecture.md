@@ -3,6 +3,11 @@ title: Feeder Scanner Architecture
 author: windows-driver-content
 description: Feeder Scanner Architecture
 ms.assetid: 02157a88-fccd-4a23-a4ee-174755c8d3aa
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Feeder Scanner Architecture

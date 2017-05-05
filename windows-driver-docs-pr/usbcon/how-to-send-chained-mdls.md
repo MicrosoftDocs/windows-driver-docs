@@ -2,6 +2,11 @@
 Description: In this topic, you will learn about the chained MDLs capability in the USB driver stack, and how a client driver can send a transfer buffer as a chain of MDL structure.
 title: How to send chained MDLs
 author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to send chained MDLs
@@ -25,8 +30,6 @@ You can query for the chained MDL capability in the client driver's [**IRP\_MN\_
 
 Instructions
 ------------
-
-### []()
 
 1.  Call the [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) routine to determine whether the USB driver stack supports the chained MDLs capability. To query for that capability, specify UsbCapabilityChainedMdls as the GUID. Set the *OutputBuffer* parameter to NULL and *OutputBufferSize* parameter to 0.
 2.  Check the NTSTATUS value returned by [**USBD\_QueryUsbCapability**](https://msdn.microsoft.com/library/windows/hardware/hh406230) and evaluate the result. If the routine completes successfully, the chained MDLs capability is supported. Any other value indicates that the capability is not supported.

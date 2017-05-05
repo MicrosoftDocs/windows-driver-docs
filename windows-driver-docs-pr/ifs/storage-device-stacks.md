@@ -3,7 +3,18 @@ title: Storage Device Stacks
 author: windows-driver-content
 description: Storage Device Stacks
 ms.assetid: dc2c532d-4ec6-4c97-bb94-429dd06f7b7c
-keywords: ["filter drivers WDK file system , storage device stacks", "file system filter drivers WDK , storage device stacks", "storage device stacks WDK file system", "device stacks WDK file system", "device trees WDK file system", "PnP device trees WDK file system"]
+keywords:
+- filter drivers WDK file system , storage device stacks
+- file system filter drivers WDK , storage device stacks
+- storage device stacks WDK file system
+- device stacks WDK file system
+- device trees WDK file system
+- PnP device trees WDK file system
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Storage Device Stacks

@@ -1,7 +1,12 @@
 ---
-Description: This topic provides information about using the Logman tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file.
+Description: This topic provides information about using the Logman tool to capture a USB ETW event trace. 
 title: How to capture a USB event trace with Logman
 author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How to capture a USB event trace with Logman
@@ -22,8 +27,6 @@ Event traces from the USB 3.0 driver stack are similar to the USB 2.0 driver sta
 
 Instructions
 ------------
-
-### []()
 
 **To collect USB trace events**
 

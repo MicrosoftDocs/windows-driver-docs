@@ -2,7 +2,16 @@
 title: Windowed VDMs in x86-Based Machines
 description: Windowed VDMs in x86-Based Machines
 ms.assetid: 01250cef-1ddb-4b32-a155-0170e1e4517a
-keywords: ["video miniport drivers WDK Windows 2000 , VGA, windowed VDMs in x86-based machines", "VGA WDK video miniport , windowed VDMs in x86-based machines", "windowed VDMs in x86-based machines WDK video miniport", "x86-based machines WDK VGA-compatible video miniport"]
+keywords:
+- video miniport drivers WDK Windows 2000 , VGA, windowed VDMs in x86-based machines
+- VGA WDK video miniport , windowed VDMs in x86-based machines
+- windowed VDMs in x86-based machines WDK video miniport
+- x86-based machines WDK VGA-compatible video miniport
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windowed VDMs in x86-Based Machines

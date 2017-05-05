@@ -2,6 +2,11 @@
 title: Compiling an NDIS 6.30 driver
 description: This section explains how to compile an NDIS 6.30 driver
 ms.assetid: 6CBAFAA2-7DA3-4184-B82B-AEFF61F7072C
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Compiling an NDIS 6.30 Driver

@@ -2,7 +2,17 @@
 title: Driver Development Tools
 description: Driver Development Tools
 ms.assetid: 1d384d73-d1d2-445f-8077-40eed1f99a8c
-keywords: ["tools WDK", "driver development tools WDK", "WsdCodeGen tool WDK", "tools WDK , developing drivers", "Web Services for Devices WDK WIA , tools"]
+keywords:
+- tools WDK
+- driver development tools WDK
+- WsdCodeGen tool WDK
+- tools WDK , developing drivers
+- Web Services for Devices WDK WIA , tools
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Development Tools

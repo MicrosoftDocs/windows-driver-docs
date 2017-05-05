@@ -3,7 +3,13 @@ title: Installing Legacy COM Ports
 author: windows-driver-content
 description: Installing Legacy COM Ports
 ms.assetid: 9cf2a22c-fb4e-4f15-8410-021d2b4f2ce1
-keywords: ["legacy COM ports WDK serial devices"]
+keywords:
+- legacy COM ports WDK serial devices
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Installing Legacy COM Ports

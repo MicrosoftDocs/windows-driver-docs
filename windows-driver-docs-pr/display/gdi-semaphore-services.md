@@ -2,7 +2,16 @@
 title: GDI Semaphore Services
 description: GDI Semaphore Services
 ms.assetid: b91211a7-19c3-4974-9222-f8eb64c29cc8
-keywords: ["GDI WDK Windows 2000 display , semaphore services", "graphics drivers WDK Windows 2000 display , semaphore services", "drawing WDK GDI , semaphore services", "semaphore services WDK GDI"]
+keywords:
+- GDI WDK Windows 2000 display , semaphore services
+- graphics drivers WDK Windows 2000 display , semaphore services
+- drawing WDK GDI , semaphore services
+- semaphore services WDK GDI
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDI Semaphore Services

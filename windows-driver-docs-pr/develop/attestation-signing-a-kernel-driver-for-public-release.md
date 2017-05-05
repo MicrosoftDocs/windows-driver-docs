@@ -2,6 +2,11 @@
 title: Attestation Signing a Kernel Driver for Public Release
 author: DOMARS
 redirect_url: https://msdn.microsoft.com/library/windows/hardware/mt786448
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Attestation Signing a Kernel Driver for Public Release

@@ -2,6 +2,11 @@
 title: C28742
 description: Warning C28742 Unannotated buffer in the function.
 ms.assetid: 04B2D637-360F-4347-8533-FEDC81FCE40D
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28742

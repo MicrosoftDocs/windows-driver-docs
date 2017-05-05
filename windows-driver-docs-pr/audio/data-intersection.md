@@ -2,7 +2,18 @@
 title: Data Intersection
 description: Data Intersection
 ms.assetid: a1588ce0-a091-4bfd-98a9-4d78e2fc847f
-keywords: ["data-intersection handlers WDK audio , about data intersection", "data intersections WDK audio", "intersections WDK audio", "data-range intersections WDK audio", "sink pins WDK audio", "source pins WDK audio"]
+keywords:
+- data-intersection handlers WDK audio , about data intersection
+- data intersections WDK audio
+- intersections WDK audio
+- data-range intersections WDK audio
+- sink pins WDK audio
+- source pins WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Data Intersection

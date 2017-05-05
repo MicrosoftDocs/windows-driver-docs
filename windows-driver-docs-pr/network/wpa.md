@@ -2,7 +2,15 @@
 title: WPA
 description: WPA
 ms.assetid: 21d44181-3a95-40bc-b132-ef92bbc468ec
-keywords: ["Wi-Fi Protected Access WDK Native 802.11", "WPA WDK Native 802.11", "authentication WDK Native 802.11 , WPA"]
+keywords:
+- Wi-Fi Protected Access WDK Native 802.11
+- WPA WDK Native 802.11
+- authentication WDK Native 802.11 , WPA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WPA

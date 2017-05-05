@@ -2,7 +2,16 @@
 title: Setting a Copy-File Flag to Support PnP Stop
 description: Setting a Copy-File Flag to Support PnP Stop
 ms.assetid: 9f716ac0-c181-489f-8bc4-ccca8c141b06
-keywords: ["INF files WDK display , copy-file flags", "copy-file flags WDK display", "PnP stop WDK display", "Plug and Play stop WDK display"]
+keywords:
+- INF files WDK display , copy-file flags
+- copy-file flags WDK display
+- PnP stop WDK display
+- Plug and Play stop WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting a Copy-File Flag to Support PnP Stop

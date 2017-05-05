@@ -2,6 +2,11 @@
 title: Windows automatically selects optimal character encoding
 description: Windows automatically selects optimal character encoding
 ms.assetid: 3fde6e89-c9ea-43d2-a999-506686b223f4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Windows automatically selects optimal character encoding

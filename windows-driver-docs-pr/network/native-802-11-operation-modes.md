@@ -2,7 +2,15 @@
 title: Native 802.11 Operation Modes
 description: Native 802.11 Operation Modes
 ms.assetid: 68b188c1-740f-426c-8ee5-5a605dc77565
-keywords: ["Native 802.11 miniport drivers WDK networking , operation modes", "miniport drivers WDK Native 802.11 , operation modes", "operation modes WDK Native 802.11"]
+keywords:
+- Native 802.11 miniport drivers WDK networking , operation modes
+- miniport drivers WDK Native 802.11 , operation modes
+- operation modes WDK Native 802.11
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Native 802.11 Operation Modes

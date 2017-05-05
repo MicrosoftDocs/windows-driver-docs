@@ -2,6 +2,11 @@
 title: How are flag values assigned
 description: How are flag values assigned
 ms.assetid: de74e2d9-0ebf-4125-9dbb-42f7755010f4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How are flag values assigned?

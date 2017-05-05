@@ -3,6 +3,11 @@ title: Working with the Driver Store
 author: windows-driver-content
 description: V4 print drivers execute directly from the Driver Store, and enhanced Point and Print doesn't download the entire driver package to client machines, so it is important to be aware of the best practices in this section.
 ms.assetid: 71199500-ECAD-46A8-8A9B-533DDB9783B4
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Working with the Driver Store

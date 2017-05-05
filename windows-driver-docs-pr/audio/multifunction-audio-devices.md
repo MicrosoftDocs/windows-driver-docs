@@ -2,7 +2,18 @@
 title: Multifunction Audio Devices
 description: Multifunction Audio Devices
 ms.assetid: 6ef54b12-d0ea-4e55-afee-61f834375b92
-keywords: ["WDM audio drivers WDK , multifunction devices", "audio drivers WDK , multifunction devices", "multifunction audio devices WDK", "subdevices WDK audio", "multifunction audio devices WDK , about multifunction audio devices", "multiple function audio devices WDK audio"]
+keywords:
+- WDM audio drivers WDK , multifunction devices
+- audio drivers WDK , multifunction devices
+- multifunction audio devices WDK
+- subdevices WDK audio
+- multifunction audio devices WDK , about multifunction audio devices
+- multiple function audio devices WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Multifunction Audio Devices

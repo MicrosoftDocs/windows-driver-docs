@@ -2,6 +2,11 @@
 title: Setting the Protection Level for a Protected Output
 description: Setting the Protection Level for a Protected Output
 ms.assetid: 2f041190-8001-4e79-8398-8b642884f751
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Setting the Protection Level for a Protected Output

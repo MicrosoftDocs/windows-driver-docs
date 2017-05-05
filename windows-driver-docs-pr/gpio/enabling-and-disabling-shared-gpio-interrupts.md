@@ -3,6 +3,11 @@ title: Enabling and Disabling Shared GPIO Interrupts
 author: windows-driver-content
 description: In some cases, interrupt request lines from two or more peripheral devices might connect to the same physical general-purpose I/O (GPIO) pin. The GPIO pin for a shared interrupt line is typically configured for level-triggered interrupts.
 ms.assetid: F3C8F2B1-54BC-46A1-8AC2-50006E1156FF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Enabling and Disabling Shared GPIO Interrupts

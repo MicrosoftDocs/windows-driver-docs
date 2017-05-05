@@ -2,7 +2,24 @@
 title: Components and Files Used for Network Component Installation
 description: Components and Files Used for Network Component Installation
 ms.assetid: be056ff1-0b92-4e81-a506-7750012aad4e
-keywords: ["installing network components WDK , components and files used", "network component installations WDK , components and files used", "components WDK network installations", "class installers WDK networking", "co-installers WDK networking", "network migration DLL WDK", "text-mode setup WDK networking", "driver image files WDK networking", "driver library files WDK networking", "migration DLL WDK networking", "vendor-supplied installation files WDK networking", "files WDK network component installs"]
+keywords:
+- installing network components WDK , components and files used
+- network component installations WDK , components and files used
+- components WDK network installations
+- class installers WDK networking
+- co-installers WDK networking
+- network migration DLL WDK
+- text-mode setup WDK networking
+- driver image files WDK networking
+- driver library files WDK networking
+- migration DLL WDK networking
+- vendor-supplied installation files WDK networking
+- files WDK network component installs
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Components and Files Used for Network Component Installation

@@ -3,6 +3,11 @@ title: Transferring Data to a WIA Application
 author: windows-driver-content
 description: Transferring Data to a WIA Application
 ms.assetid: 3ad906c9-968f-43d7-ae17-fc570440883d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Transferring Data to a WIA Application

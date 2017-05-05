@@ -3,7 +3,13 @@ title: List
 author: windows-driver-content
 description: List
 ms.assetid: 4cf1c1ea-f890-4f9d-96ea-b79790f6bc60
-keywords: ["List construct"]
+keywords:
+- List construct
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # List

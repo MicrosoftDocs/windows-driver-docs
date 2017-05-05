@@ -3,6 +3,11 @@ title: Point of service (POS) driver samples
 author: windows-driver-content
 description: The driver samples in this directory provide a starting point for writing a custom POS driver for your device.
 ms.assetid: 5147739F-2BC7-4AAC-959A-19702F6DB73E
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Point of service (POS) driver samples

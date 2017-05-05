@@ -3,6 +3,11 @@ title: WIA\_IPS\_DESKEW\_X and WIA\_IPS\_DESKEW\_Y Properties
 author: windows-driver-content
 description: WIA\_IPS\_DESKEW\_X and WIA\_IPS\_DESKEW\_Y Properties
 ms.assetid: 748b08f7-e838-4df8-abcb-4ff1cdd20f7e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WIA\_IPS\_DESKEW\_X and WIA\_IPS\_DESKEW\_Y Properties

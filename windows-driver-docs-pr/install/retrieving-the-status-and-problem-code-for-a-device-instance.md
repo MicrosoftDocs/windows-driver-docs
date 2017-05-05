@@ -2,6 +2,11 @@
 title: Retrieving the Status and Problem Code for a Device Instance
 description: Retrieving the Status and Problem Code for a Device Instance
 ms.assetid: 22ca9ac2-fe67-427d-a6e4-f1d9cbbede52
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Retrieving the Status and Problem Code for a Device Instance

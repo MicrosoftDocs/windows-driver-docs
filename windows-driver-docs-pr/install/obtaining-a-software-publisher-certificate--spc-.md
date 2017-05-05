@@ -2,6 +2,11 @@
 title: Obtaining a Software Publisher Certificate (SPC)
 description: Obtaining a Software Publisher Certificate (SPC)
 ms.assetid: 50546234-e98d-40ed-b9c6-7d78cf0419ca
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Obtaining a Software Publisher Certificate (SPC)

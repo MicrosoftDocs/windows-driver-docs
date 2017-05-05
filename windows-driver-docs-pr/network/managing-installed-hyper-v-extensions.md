@@ -2,6 +2,11 @@
 title: Managing Installed Hyper-V Extensible Switch Extensions
 description: Managing Installed Hyper-V Extensible Switch Extensions
 ms.assetid: DEB1A3B4-3986-485F-AFA3-A77E0A7146AC
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Managing Installed Hyper-V Extensible Switch Extensions

@@ -2,7 +2,21 @@
 title: Supplying an INF File
 description: Supplying an INF File
 ms.assetid: 208726d9-6f62-46a4-84a1-6fab3895bbe3
-keywords: ["driver packages WDK , INF files", "packages WDK , INF files", "INF files WDK , about INF files", "information files WDK", ".inf files", "device installations WDK , INF files", "installing devices WDK , INF files", "device installations WDK , INF files", "INF files"]
+keywords:
+- driver packages WDK , INF files
+- packages WDK , INF files
+- INF files WDK , about INF files
+- information files WDK
+- .inf files
+- device installations WDK , INF files
+- installing devices WDK , INF files
+- device installations WDK , INF files
+- INF files
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Supplying an INF File

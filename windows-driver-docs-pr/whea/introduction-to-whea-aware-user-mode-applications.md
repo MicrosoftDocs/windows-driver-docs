@@ -3,7 +3,23 @@ title: Introduction to WHEA-Aware User-Mode Applications
 author: windows-driver-content
 description: Introduction to WHEA-Aware User-Mode Applications
 ms.assetid: cf2de8fa-191b-4dae-aaac-5d6d74f94ca7
-keywords: ["Windows Hardware Error Architecture WDK , user-mode applications", "WHEA WDK , user-mode applications", "hardware errors WDK WHEA , user-mode applications", "errors WDK WHEA , user-mode applications", "user-mode applications WDK WHEA", "events WDK WHEA", "events WDK WHEA , categories", "Windows Hardware Error Architecture WDK , events", "WHEA WDK , events", "hardware errors WDK WHEA , events", "errors WDK WHEA , events"]
+keywords:
+- Windows Hardware Error Architecture WDK , user-mode applications
+- WHEA WDK , user-mode applications
+- hardware errors WDK WHEA , user-mode applications
+- errors WDK WHEA , user-mode applications
+- user-mode applications WDK WHEA
+- events WDK WHEA
+- events WDK WHEA , categories
+- Windows Hardware Error Architecture WDK , events
+- WHEA WDK , events
+- hardware errors WDK WHEA , events
+- errors WDK WHEA , events
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Introduction to WHEA-Aware User-Mode Applications

@@ -2,7 +2,15 @@
 title: Debugging Code Overview
 description: Debugging Code Overview
 ms.assetid: 2c76e569-61cd-44b0-b8e5-032ab2c48fdb
-keywords: ["debugging drivers WDK , debugging code", "debugging code WDK", "debugging code WDK , about debugging code"]
+keywords:
+- debugging drivers WDK , debugging code
+- debugging code WDK
+- debugging code WDK , about debugging code
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Code Overview

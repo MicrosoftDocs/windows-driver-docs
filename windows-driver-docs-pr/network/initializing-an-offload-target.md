@@ -2,7 +2,16 @@
 title: Initializing an Offload Target
 description: Initializing an Offload Target
 ms.assetid: c5558ee2-a116-4f40-9fbf-3ca444cce556
-keywords: ["TCP chimney offload WDK networking , initializing targets", "chimney offload WDK networking , initializing targets", "initializing offload targets WDK TCP chimney offload", "target initialization WDK TCP chimney offload"]
+keywords:
+- TCP chimney offload WDK networking , initializing targets
+- chimney offload WDK networking , initializing targets
+- initializing offload targets WDK TCP chimney offload
+- target initialization WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing an Offload Target

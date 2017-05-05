@@ -3,6 +3,11 @@ title: Auto-Configured Scanning
 author: windows-driver-content
 description: Auto-Configured Scanning
 ms.assetid: 6904e216-3eb7-419f-a6ca-198defaeebe0
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Auto-Configured Scanning

@@ -3,7 +3,16 @@ title: XML Schema Linebreak Translations
 author: windows-driver-content
 description: XML Schema Linebreak Translations
 ms.assetid: c277984f-8e7a-4d17-98ab-66c3f6f80473
-keywords: ["linebreak sequence WDK GDL", "GDL WDK , schemas", "schemas WDK GDL", "snapshots WDK GDL , linebreaks"]
+keywords:
+- linebreak sequence WDK GDL
+- GDL WDK , schemas
+- schemas WDK GDL
+- snapshots WDK GDL , linebreaks
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # XML Schema Linebreak Translations

@@ -2,7 +2,15 @@
 title: Requesting and Using Surface Memory
 description: Requesting and Using Surface Memory
 ms.assetid: 7913acc6-ff30-4f2a-8389-37a79940ae8b
-keywords: ["surface memory WDK display", "listing surfaces WDK display", "resource object surface memory WDK display"]
+keywords:
+- surface memory WDK display
+- listing surfaces WDK display
+- resource object surface memory WDK display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Requesting and Using Surface Memory

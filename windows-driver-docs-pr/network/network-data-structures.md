@@ -2,7 +2,18 @@
 title: Network Data Structures
 description: Network Data Structures
 ms.assetid: c29aaae6-6f68-404a-90dc-bae005ac9b6e
-keywords: ["NET_BUFFER", "NET_BUFFER_LIST", "NET_BUFFER_LIST_CONTEXT", "network data WDK , structures", "data WDK networking , structures", "packets WDK networking , data structures"]
+keywords:
+- NET_BUFFER
+- NET_BUFFER_LIST
+- NET_BUFFER_LIST_CONTEXT
+- network data WDK , structures
+- data WDK networking , structures
+- packets WDK networking , data structures
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Network Data Structures

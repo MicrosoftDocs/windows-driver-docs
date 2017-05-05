@@ -3,7 +3,16 @@ title: Using Avcstrm.sys
 author: windows-driver-content
 description: Using Avcstrm.sys
 ms.assetid: 53430526-ee24-4081-b220-4089d60aec94
-keywords: ["filter drivers WDK AV/C streaming", "AV/C WDK , Stream filter driver", "Stream filter driver WDK AV/C", "Avcstrm.sys streaming filter driver WDK , about Avcstrm.sys streaming filter driver"]
+keywords:
+- filter drivers WDK AV/C streaming
+- AV/C WDK , Stream filter driver
+- Stream filter driver WDK AV/C
+- Avcstrm.sys streaming filter driver WDK , about Avcstrm.sys streaming filter driver
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using Avcstrm.sys

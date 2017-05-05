@@ -2,7 +2,19 @@
 title: Passing and Failing a Verification
 description: Passing and Failing a Verification
 ms.assetid: 2639358b-eb6a-49b7-b23a-877a452917dc
-keywords: ["Static Driver Verifier WDK , verification results", "StaticDV WDK , verification results", "SDV WDK , verification results", "results WDK Static Driver Verifier", "passed verification WDK Static Driver Verifier", "failed verification WDK Static Driver Verifier", "inconclusive verification WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier WDK , verification results
+- StaticDV WDK , verification results
+- SDV WDK , verification results
+- results WDK Static Driver Verifier
+- passed verification WDK Static Driver Verifier
+- failed verification WDK Static Driver Verifier
+- inconclusive verification WDK Static Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Passing and Failing a Verification

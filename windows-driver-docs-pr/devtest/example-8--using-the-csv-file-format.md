@@ -2,7 +2,14 @@
 title: Example 8 Using the CSV File Format
 description: Example 8 Using the CSV File Format
 ms.assetid: 225365dd-57f8-4d35-a859-b881a104201f
-keywords: ["Tracefmt WDK , CSV format", "CSV format WDK Tracefmt"]
+keywords:
+- Tracefmt WDK , CSV format
+- CSV format WDK Tracefmt
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Example 8: Using the CSV File Format

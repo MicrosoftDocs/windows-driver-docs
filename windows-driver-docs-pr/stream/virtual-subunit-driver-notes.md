@@ -3,7 +3,16 @@ title: Virtual Subunit Driver Notes
 author: windows-driver-content
 description: Virtual Subunit Driver Notes
 ms.assetid: e484f815-73a8-46f1-956e-ee16b1856bd0
-keywords: ["Avc.sys function driver WDK , virtual subunit drivers", "virtual subunit drivers WDK AV/C", "external devices WDK AV/C", "IOCTL_AVC_CLASS"]
+keywords:
+- Avc.sys function driver WDK , virtual subunit drivers
+- virtual subunit drivers WDK AV/C
+- external devices WDK AV/C
+- IOCTL_AVC_CLASS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Virtual Subunit Driver Notes

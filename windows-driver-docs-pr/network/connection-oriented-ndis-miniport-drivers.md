@@ -2,7 +2,15 @@
 title: Connection-Oriented NDIS Miniport Drivers
 description: Connection-Oriented NDIS Miniport Drivers
 ms.assetid: 58f9bed1-274c-4f60-87cd-f0b44871eb60
-keywords: ["miniport drivers WDK networking , types", "NDIS miniport drivers WDK , types", "connection-oriented drivers WDK networking , miniport drivers"]
+keywords:
+- miniport drivers WDK networking , types
+- NDIS miniport drivers WDK , types
+- connection-oriented drivers WDK networking , miniport drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Connection-Oriented NDIS Miniport Drivers

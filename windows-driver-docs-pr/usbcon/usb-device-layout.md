@@ -1,7 +1,12 @@
 ---
-Description: A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints. This topic provides a high-level overview of those concepts.
+Description: A USB device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints. 
 title: USB device layout
 author: windows-driver-content
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB device layout

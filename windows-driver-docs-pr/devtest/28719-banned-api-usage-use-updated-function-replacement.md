@@ -2,6 +2,11 @@
 title: C28719
 description: Warning C28719 Banned API Usage.
 ms.assetid: 6520148d-3756-47f5-9a1d-c005496681ba
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # C28719

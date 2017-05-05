@@ -2,7 +2,14 @@
 title: Trace Consumer
 description: Trace Consumer
 ms.assetid: b0bc9ed9-7dc8-4881-843e-34113c1df521
-keywords: ["trace consumers WDK", "receiving trace messages"]
+keywords:
+- trace consumers WDK
+- receiving trace messages
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Trace Consumer

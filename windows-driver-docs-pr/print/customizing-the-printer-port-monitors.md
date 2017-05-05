@@ -3,7 +3,20 @@ title: Customizing the Printer Port Monitors
 author: windows-driver-content
 description: Customizing the Printer Port Monitors
 ms.assetid: e5d4166a-2593-43fd-b476-c54642e2d099
-keywords: ["in-box autoconfiguration support WDK printer , customizing printer port monitors", "bidi extension files WDK printer autoconfig", "in-box autoconfiguration support WDK printer , bidi extension files", "customizing printer port monitors WDK", "port monitors WDK print , customizing", "WinSNMP conversion to Bidi data type WDK printer", "bidirectional communication WDK print", "bidi communication WDK print"]
+keywords:
+- in-box autoconfiguration support WDK printer , customizing printer port monitors
+- bidi extension files WDK printer autoconfig
+- in-box autoconfiguration support WDK printer , bidi extension files
+- customizing printer port monitors WDK
+- port monitors WDK print , customizing
+- WinSNMP conversion to Bidi data type WDK printer
+- bidirectional communication WDK print
+- bidi communication WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Customizing the Printer Port Monitors

@@ -2,7 +2,19 @@
 title: Voice Allocation
 description: Voice Allocation
 ms.assetid: fb1e6c36-02b4-41a6-b9c4-09f393d389db
-keywords: ["DirectMusic kernel-mode WDK audio , voice allocation", "kernel-mode synths WDK audio , voice allocation", "voice allocation WDK audio", "hardware acceleration WDK audio", "miniport drivers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , kernel-mode hardware acceleration", "synthesizers WDK audio , voice allocations"]
+keywords:
+- DirectMusic kernel-mode WDK audio , voice allocation
+- kernel-mode synths WDK audio , voice allocation
+- voice allocation WDK audio
+- hardware acceleration WDK audio
+- miniport drivers WDK audio , kernel-mode hardware acceleration
+- synthesizers WDK audio , kernel-mode hardware acceleration
+- synthesizers WDK audio , voice allocations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Voice Allocation

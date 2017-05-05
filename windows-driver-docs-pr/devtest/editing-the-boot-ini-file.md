@@ -2,7 +2,29 @@
 title: Editing the Boot.ini File
 description: Prior to Windows Vista, BIOS-based computers running Windows store boot options in a Boot.ini text file.
 ms.assetid: 9edbbd5e-36b5-4a80-925d-a007a4469984
-keywords: ["Bootcfg tool", "Boot.ini files WDK , editing", "editing boot options", "Notepad WDK boot options", "text editors WDK boot options", "manual editing WDK boot options", "boot entry parameters WDK", "boot parameters WDK", "indefinite boot time-out values WDK", "boot time-out values WDK", "time-outs WDK boot options", "Boot.ini files WDK , attribute removal", "removing Boot.ini attributes", "viewing boot options", "Boot.ini files WDK , viewing", "editors WDK boot options", "boot options WDK , editing"]
+keywords:
+- Bootcfg tool
+- Boot.ini files WDK , editing
+- editing boot options
+- Notepad WDK boot options
+- text editors WDK boot options
+- manual editing WDK boot options
+- boot entry parameters WDK
+- boot parameters WDK
+- indefinite boot time-out values WDK
+- boot time-out values WDK
+- time-outs WDK boot options
+- Boot.ini files WDK , attribute removal
+- removing Boot.ini attributes
+- viewing boot options
+- Boot.ini files WDK , viewing
+- editors WDK boot options
+- boot options WDK , editing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Editing the Boot.ini File

@@ -2,7 +2,17 @@
 title: RSS with Message Signaled Interrupts
 description: RSS with Message Signaled Interrupts
 ms.assetid: 3c1776cf-f870-4910-88b2-9b5a9544cdf8
-keywords: ["receive-side scaling WDK networking , message signaled interrupts", "RSS WDK networking , message signaled interrupts", "message-signaled interrupts WDK networking , RSS", "MSIs WDK networking , RSS", "MSI-X WDK networking , RSS"]
+keywords:
+- receive-side scaling WDK networking , message signaled interrupts
+- RSS WDK networking , message signaled interrupts
+- message-signaled interrupts WDK networking , RSS
+- MSIs WDK networking , RSS
+- MSI-X WDK networking , RSS
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RSS with Message Signaled Interrupts

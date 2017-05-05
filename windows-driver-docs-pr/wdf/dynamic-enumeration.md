@@ -3,7 +3,18 @@ title: Dynamic Enumeration
 author: windows-driver-content
 description: Dynamic Enumeration
 ms.assetid: 6e46b456-7d2d-4c6e-8692-7f310366387d
-keywords: ["dynamic enumeration WDK KMDF", "child descriptions WDK KMDF", "address descriptions WDK KMDF", "identification descriptions WDK KMDF", "dynamic child lists WDK KMDF", "traversing dynamic child lists WDK KMDF"]
+keywords:
+- dynamic enumeration WDK KMDF
+- child descriptions WDK KMDF
+- address descriptions WDK KMDF
+- identification descriptions WDK KMDF
+- dynamic child lists WDK KMDF
+- traversing dynamic child lists WDK KMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Dynamic Enumeration

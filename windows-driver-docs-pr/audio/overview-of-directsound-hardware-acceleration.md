@@ -2,7 +2,13 @@
 title: Overview of DirectSound Hardware Acceleration
 description: Overview of DirectSound Hardware Acceleration
 ms.assetid: 1f18f88a-2dd6-4b7a-b083-f43ab58571b3
-keywords: ["hardware acceleration WDK DirectSound , about DirectSound hardware acceleration"]
+keywords:
+- hardware acceleration WDK DirectSound , about DirectSound hardware acceleration
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Overview of DirectSound Hardware Acceleration

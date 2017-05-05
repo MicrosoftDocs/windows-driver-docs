@@ -2,7 +2,23 @@
 title: Audio Property Handlers
 description: Audio Property Handlers
 ms.assetid: 4bf176ae-b3fd-47e6-9802-a92ef5e9904f
-keywords: ["audio properties WDK , handlers", "WDM audio properties WDK , handlers", "handlers WDK audio", "property handlers WDK audio", "set-property WDK audio", "get-property WDK audio", "basic-support queries WDK audio", "automation tables WDK audio", "filters WDK audio , property handlers", "pins WDK audio , property handlers", "nodes WDK audio , property handlers"]
+keywords:
+- audio properties WDK , handlers
+- WDM audio properties WDK , handlers
+- handlers WDK audio
+- property handlers WDK audio
+- set-property WDK audio
+- get-property WDK audio
+- basic-support queries WDK audio
+- automation tables WDK audio
+- filters WDK audio , property handlers
+- pins WDK audio , property handlers
+- nodes WDK audio , property handlers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Audio Property Handlers

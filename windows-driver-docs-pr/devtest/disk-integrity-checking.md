@@ -2,7 +2,15 @@
 title: Disk Integrity Checking
 description: Disk Integrity Checking
 ms.assetid: bb838594-637c-4fc4-b2ec-964b69faabcf
-keywords: ["Disk Integrity Checking feature WDK Driver Verifier", "disk storage accuracy WDK Driver Verifier", "storage accuracy WDK Driver Verifier"]
+keywords:
+- Disk Integrity Checking feature WDK Driver Verifier
+- disk storage accuracy WDK Driver Verifier
+- storage accuracy WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Disk Integrity Checking

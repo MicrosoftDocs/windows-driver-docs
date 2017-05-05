@@ -3,7 +3,16 @@ title: Print Ticket Compatibility with Win 32 Applications
 author: windows-driver-content
 description: Print Ticket Compatibility with Win 32 Applications
 ms.assetid: 3e358f8a-e950-4da0-b8ef-4e350ea28091
-keywords: ["Win32 applications WDK print", "Print Tickets WDK ,Win32 applications", "Print Tickets WDK , XPSDrv", "Print Tickets WDK , GDI-based print drivers"]
+keywords:
+- Win32 applications WDK print
+- Print Tickets WDK ,Win32 applications
+- Print Tickets WDK , XPSDrv
+- Print Tickets WDK , GDI-based print drivers
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Print Ticket Compatibility with Win 32 Applications

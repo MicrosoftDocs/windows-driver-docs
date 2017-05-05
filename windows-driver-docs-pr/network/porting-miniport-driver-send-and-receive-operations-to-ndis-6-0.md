@@ -2,7 +2,16 @@
 title: Porting Miniport Driver Send and Receive Operations to NDIS 6.0
 description: Porting Miniport Driver Send and Receive Operations to NDIS 6.0
 ms.assetid: 9c50b01e-600a-48ac-ba1b-88156c3b235a
-keywords: ["porting miniport drivers WDK networking , send and receive operations", "send operation porting WDK networking", "receive operation porting WDK networking", "data send/receive operation porting WDK networking"]
+keywords:
+- porting miniport drivers WDK networking , send and receive operations
+- send operation porting WDK networking
+- receive operation porting WDK networking
+- data send/receive operation porting WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Porting Miniport Driver Send and Receive Operations to NDIS 6.0

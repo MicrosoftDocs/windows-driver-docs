@@ -2,7 +2,20 @@
 title: Hardware Events
 description: Hardware Events
 ms.assetid: b91e02dd-0de4-4de3-ade6-778339ce47a8
-keywords: ["audio events WDK , hardware", "WDM audio events WDK", "hardware events WDK audio", "events WDK audio", "manual control events WDK audio", "volume-control events WDK audio", "mute switch events WDK audio", "port drivers WDK audio , events"]
+keywords:
+- audio events WDK , hardware
+- WDM audio events WDK
+- hardware events WDK audio
+- events WDK audio
+- manual control events WDK audio
+- volume-control events WDK audio
+- mute switch events WDK audio
+- port drivers WDK audio , events
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware Events

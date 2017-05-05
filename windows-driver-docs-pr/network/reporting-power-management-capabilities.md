@@ -2,6 +2,11 @@
 title: Reporting Power Management Capabilities
 description: Reporting Power Management Capabilities
 ms.assetid: cfacd885-e18a-44a5-939d-88e62b573ace
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reporting Power Management Capabilities

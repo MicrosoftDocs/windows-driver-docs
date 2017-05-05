@@ -3,7 +3,16 @@ title: Handling PnP Paging Requests
 author: windows-driver-content
 description: Handling PnP Paging Requests
 ms.assetid: c30c70d9-69c6-42d7-ae69-9c2421ba1d53
-keywords: ["storage filter drivers WDK , PnP", "filter drivers WDK storage , PnP", "SFD WDK storage , PnP", "PnP WDK storage"]
+keywords:
+- storage filter drivers WDK , PnP
+- filter drivers WDK storage , PnP
+- SFD WDK storage , PnP
+- PnP WDK storage
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Handling PnP Paging Requests

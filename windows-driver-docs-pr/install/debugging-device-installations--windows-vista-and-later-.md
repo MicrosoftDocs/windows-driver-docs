@@ -2,6 +2,11 @@
 title: Debugging Device Installations
 description: Debugging Device Installations
 ms.assetid: bc7105f6-8ba7-49da-8c02-ceda69066daa
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Debugging Device Installations

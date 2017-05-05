@@ -2,7 +2,18 @@
 title: Controlling the Pointer DrvSetPointerShape
 description: Controlling the Pointer DrvSetPointerShape
 ms.assetid: 14d782de-5da8-40e9-a3e3-91d2588146e0
-keywords: ["drawing pointers WDK Windows 2000 display", "display drivers WDK Windows 2000 , pointers", "pointers WDK Windows 2000 display", "DrvSetPointerShape", "shape of pointer WDK Windows 2000 display", "reshaping pointer WDK Windows 2000 display"]
+keywords:
+- drawing pointers WDK Windows 2000 display
+- display drivers WDK Windows 2000 , pointers
+- pointers WDK Windows 2000 display
+- DrvSetPointerShape
+- shape of pointer WDK Windows 2000 display
+- reshaping pointer WDK Windows 2000 display
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Controlling the Pointer: DrvSetPointerShape

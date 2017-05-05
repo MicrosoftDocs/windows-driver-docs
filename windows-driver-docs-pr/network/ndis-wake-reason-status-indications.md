@@ -2,6 +2,11 @@
 title: NDIS Wake Reason Status Indications
 description: NDIS Wake Reason Status Indications
 ms.assetid: 0229A4F3-8CC1-4A81-9AF4-33BAEBDAE954
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # NDIS Wake Reason Status Indications

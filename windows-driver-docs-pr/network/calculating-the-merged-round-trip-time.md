@@ -2,7 +2,17 @@
 title: Calculating the Merged Round-Trip Time
 description: Calculating the Merged Round-Trip Time
 ms.assetid: 40aae723-144c-4cd5-84ed-5470284ecf26
-keywords: ["timestamps WDK TCP chimney offload , Merged Round-Trip Time", "TCP timestamps WDK TCP chimney offload , Merged Round-Trip Time", "Merged Round-Trip Time WDK TCP chimney offload", "MRTT WDK TCP chimney offload", "round-trip time WDK TCP chimney offload"]
+keywords:
+- timestamps WDK TCP chimney offload , Merged Round-Trip Time
+- TCP timestamps WDK TCP chimney offload , Merged Round-Trip Time
+- Merged Round-Trip Time WDK TCP chimney offload
+- MRTT WDK TCP chimney offload
+- round-trip time WDK TCP chimney offload
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Calculating the Merged Round-Trip Time

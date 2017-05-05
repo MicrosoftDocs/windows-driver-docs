@@ -2,6 +2,11 @@
 title: WaveRT Miniport Driver
 description: WaveRT Miniport Driver
 ms.assetid: 154dc921-424f-4021-8f17-5482ceef99a8
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # WaveRT Miniport Driver

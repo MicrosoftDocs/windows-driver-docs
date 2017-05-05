@@ -2,6 +2,11 @@
 title: Create the LocaleInfo.xml Submission File
 description: Create the LocaleInfo.xml Submission File
 ms.assetid: 2b16b045-4d34-418c-8f68-7f688adf8e7e
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create the LocaleInfo.xml Submission File

@@ -2,7 +2,17 @@
 title: Reassembled NET\_BUFFER\_LIST Structures
 description: Reassembled NET\_BUFFER\_LIST Structures
 ms.assetid: 0bfbfef3-c3ac-4add-b3b8-a4c3a96c8baa
-keywords: ["NET_BUFFER_LIST", "reassembled structures WDK networking", "parent/child NET_BUFFER_LIST relationships WDK networking", "child/parent NET_BUFFER_LIST relationships WDK networking", "relationships WDK NET_BUFFER_LIST"]
+keywords:
+- NET_BUFFER_LIST
+- reassembled structures WDK networking
+- parent/child NET_BUFFER_LIST relationships WDK networking
+- child/parent NET_BUFFER_LIST relationships WDK networking
+- relationships WDK NET_BUFFER_LIST
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Reassembled NET\_BUFFER\_LIST Structures

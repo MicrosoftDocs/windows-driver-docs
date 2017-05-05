@@ -3,7 +3,26 @@ title: Hardware Errors and Error Sources
 author: windows-driver-content
 description: Hardware Errors and Error Sources
 ms.assetid: 047e5d6d-a7c6-4c20-bfb2-c1d686ec0b7b
-keywords: ["Windows Hardware Error Architecture WDK , hardware errors", "WHEA WDK , hardware errors", "hardware errors WDK WHEA , about hardware errors", "errors WDK WHEA , hardware errors", "Windows Hardware Error Architecture WDK , error sources", "WHEA WDK , error sources", "hardware errors WDK WHEA , error sources", "errors WDK WHEA , error sources", "corrected errors WDK WHEA", "uncorrected errors WDK WHEA", "error sources WDK WHEA", "fatal hardware errors WDK WHEA", "non-fatal hardware errors WDK WHEA", "hardware error sources WDK WHEA"]
+keywords:
+- Windows Hardware Error Architecture WDK , hardware errors
+- WHEA WDK , hardware errors
+- hardware errors WDK WHEA , about hardware errors
+- errors WDK WHEA , hardware errors
+- Windows Hardware Error Architecture WDK , error sources
+- WHEA WDK , error sources
+- hardware errors WDK WHEA , error sources
+- errors WDK WHEA , error sources
+- corrected errors WDK WHEA
+- uncorrected errors WDK WHEA
+- error sources WDK WHEA
+- fatal hardware errors WDK WHEA
+- non-fatal hardware errors WDK WHEA
+- hardware error sources WDK WHEA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Hardware Errors and Error Sources

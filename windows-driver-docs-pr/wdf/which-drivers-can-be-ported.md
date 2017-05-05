@@ -3,6 +3,11 @@ title: Which Drivers Can Be Ported and Where
 author: windows-driver-content
 description: This topic describes which WDM drivers can be ported to Windows Driver Frameworks (WDF), and how to decide whether to port to Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF).
 ms.assetid: 53E34B9C-8C0A-4F15-951B-7AB133DE0C5A
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Which Drivers Can Be Ported and Where

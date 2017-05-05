@@ -2,7 +2,14 @@
 title: Using the Source Code Pane
 description: Using the Source Code Pane
 ms.assetid: da8d16cd-583f-42b0-857f-64e5103aa379
-keywords: ["Static Driver Verifier Report WDK , Source Code pane", "Source Code pane WDK Static Driver Verifier"]
+keywords:
+- Static Driver Verifier Report WDK , Source Code pane
+- Source Code pane WDK Static Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Using the Source Code Pane

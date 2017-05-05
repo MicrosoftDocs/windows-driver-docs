@@ -2,7 +2,21 @@
 title: How Windows Selects Drivers
 description: How Windows Selects Drivers
 ms.assetid: 738f7188-aedb-4a1a-9d3e-49ee31dfb35f
-keywords: ["Device setup WDK device installations , driver selections", "device installations WDK , driver selections", "installing devices WDK , driver selections", "PnP WDK device installations , driver selections", "Plug and Play WDK device installations , driver selections", "driver nodes WDK device installations", "driver selections WDK device installations", "locating drivers for device installation WDK device installations", "searching for drivers during device installation WDK device installations"]
+keywords:
+- Device setup WDK device installations , driver selections
+- device installations WDK , driver selections
+- installing devices WDK , driver selections
+- PnP WDK device installations , driver selections
+- Plug and Play WDK device installations , driver selections
+- driver nodes WDK device installations
+- driver selections WDK device installations
+- locating drivers for device installation WDK device installations
+- searching for drivers during device installation WDK device installations
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # How Windows Selects Drivers

@@ -2,7 +2,20 @@
 title: Types of Sample Rate Conversion
 description: Types of Sample Rate Conversion
 ms.assetid: eaea0714-8167-4fbb-b630-0dce5e908cc2
-keywords: ["SRC WDK audio , types", "sample-rate conversion WDK audio , types", "linear interpolation WDK audio", "multipoint interpolation WDK audio", "high-end multipoint interpolation WDK audio", "Add/Drop SRC WDK audio", "truncation SRC WDK audio", "nearest neighbor SRC WDK audio"]
+keywords:
+- SRC WDK audio , types
+- sample-rate conversion WDK audio , types
+- linear interpolation WDK audio
+- multipoint interpolation WDK audio
+- high-end multipoint interpolation WDK audio
+- Add/Drop SRC WDK audio
+- truncation SRC WDK audio
+- nearest neighbor SRC WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Types of Sample Rate Conversion

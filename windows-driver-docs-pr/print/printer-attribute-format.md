@@ -3,7 +3,14 @@ title: Printer Attribute Format
 author: windows-driver-content
 description: Printer Attribute Format
 ms.assetid: 676e9220-4990-4581-8f23-79083afc311c
-keywords: ["printer attributes WDK Unidrv , formats", "formats WDK printer attributes"]
+keywords:
+- printer attributes WDK Unidrv , formats
+- formats WDK printer attributes
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Printer Attribute Format

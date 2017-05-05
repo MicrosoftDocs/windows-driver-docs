@@ -2,7 +2,17 @@
 title: Logging to the Global Logger Session
 description: Logging to the Global Logger Session
 ms.assetid: 48dfe101-b083-4d70-b85f-2e115f7e1dfa
-keywords: ["tracing during boot WDK , Global Logger trace session", "boot-time tracing WDK , Global Logger trace session", "Global Logger trace session WDK , logging", "boot-time Global Logger trace session WDK , logging", "logs WDK tracing during boot"]
+keywords:
+- tracing during boot WDK , Global Logger trace session
+- boot-time tracing WDK , Global Logger trace session
+- Global Logger trace session WDK , logging
+- boot-time Global Logger trace session WDK , logging
+- logs WDK tracing during boot
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Logging to the Global Logger Session

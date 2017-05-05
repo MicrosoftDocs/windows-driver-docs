@@ -2,7 +2,14 @@
 title: Threading and Synchronization Third Level
 description: Threading and Synchronization Third Level
 ms.assetid: 780d37d9-40c6-4737-9042-473810868227
-keywords: ["threading WDK display , third level", "synchronization WDK display , third level"]
+keywords:
+- threading WDK display , third level
+- synchronization WDK display , third level
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Threading and Synchronization Third Level

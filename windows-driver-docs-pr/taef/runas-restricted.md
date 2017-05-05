@@ -2,6 +2,11 @@
 title: RunAs Restricted
 description: TAEF ensures that the test is run in a restricted process.
 ms.assetid: 1565344E-2CF9-4E08-9BA2-23FE1D677ABA
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # RunAs Restricted

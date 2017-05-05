@@ -3,7 +3,15 @@ title: GDL Directives
 author: windows-driver-content
 description: GDL Directives
 ms.assetid: 7b7ba94f-9494-4477-b4f0-dd9fcfd1fccf
-keywords: ["GDL WDK , directives", "directives WDK GDL", "parser WDK GDL , directives"]
+keywords:
+- GDL WDK , directives
+- directives WDK GDL
+- parser WDK GDL , directives
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # GDL Directives

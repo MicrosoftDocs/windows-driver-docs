@@ -2,6 +2,11 @@
 ms.assetid: 5EB802D0-1894-4D64-ACB0-77B848B7E644
 title: Creating a Driver Verification Log
 description: The Windows Server 2012&\#32;Hardware Certification Program requires a Driver Verification Log \(DVL\) for all applicable driver submissions.
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Creating a Driver Verification Log

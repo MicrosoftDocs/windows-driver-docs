@@ -3,7 +3,18 @@ title: UMDF Objects and Interfaces
 author: windows-driver-content
 description: UMDF Objects and Interfaces
 ms.assetid: da816fef-a24f-4456-9d4a-36f291afe8b5
-keywords: ["User-Mode Driver Framework WDK , objects", "user-mode drivers WDK UMDF , objects", "objects WDK UMDF", "UMDF objects WDK", "interfaces WDK UMDF", "framework objects WDK UMDF"]
+keywords:
+- User-Mode Driver Framework WDK , objects
+- user-mode drivers WDK UMDF , objects
+- objects WDK UMDF
+- UMDF objects WDK
+- interfaces WDK UMDF
+- framework objects WDK UMDF
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # UMDF Objects and Interfaces

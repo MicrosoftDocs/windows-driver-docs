@@ -2,6 +2,11 @@
 title: Step 1 Create a Windows Store device app
 description: This topic describes the basic process for creating a Windows Store device app by using Microsoft Visual Studio 2013. Learn about the tasks that are common to all Windows Store device apps.
 ms.assetid: 4D8240AD-F589-4623-BC6E-47E304831250
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Step 1: Create a Windows Store device app

@@ -1,7 +1,17 @@
 ---
 title: Miniport adapter OID request serialization
 description: Miniport adapter OID request serialization
-keywords: ["OIDs WDK networking , miniport adapter requests", "miniport adapters WDK networking , OID requests", "adapters WDK networking , OID requests", "object identifiers WDK networking", "OID serialization"]
+keywords:
+- OIDs WDK networking , miniport adapter requests
+- miniport adapters WDK networking , OID requests
+- adapters WDK networking , OID requests
+- object identifiers WDK networking
+- OID serialization
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Miniport adapter OID request serialization

@@ -2,7 +2,15 @@
 title: Canceling a Send Request in a Miniport Driver
 description: Canceling a Send Request in a Miniport Driver
 ms.assetid: 9339e661-b91a-49e1-9924-66c85cc80ee8
-keywords: ["NdisCancelSendNetBufferLists", "MiniportCancelSend", "canceling send requests WDK networking"]
+keywords:
+- NdisCancelSendNetBufferLists
+- MiniportCancelSend
+- canceling send requests WDK networking
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Canceling a Send Request in a Miniport Driver

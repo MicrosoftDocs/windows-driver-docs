@@ -2,6 +2,11 @@
 title: Notifications
 description: Notifications
 ms.assetid: 55292cae-9255-4dae-9f60-93ce22253e60
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Notifications

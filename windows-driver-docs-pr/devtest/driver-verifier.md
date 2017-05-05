@@ -2,7 +2,18 @@
 title: Driver Verifier
 description: Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to detect illegal function calls or actions that might corrupt the system.
 ms.assetid: a8a78dde-930f-4d0b-be46-f7d07b0bf21b
-keywords: ["verifying drivers WDK , Driver Verifier", "driver verification WDK , Driver Verifier", "Driver Verifier WDK", "Driver Verifier WDK , about Driver Verifier", "illegal function calls WDK Driver Verifier", "stress testing WDK Driver Verifier"]
+keywords:
+- verifying drivers WDK , Driver Verifier
+- driver verification WDK , Driver Verifier
+- Driver Verifier WDK
+- Driver Verifier WDK , about Driver Verifier
+- illegal function calls WDK Driver Verifier
+- stress testing WDK Driver Verifier
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Driver Verifier

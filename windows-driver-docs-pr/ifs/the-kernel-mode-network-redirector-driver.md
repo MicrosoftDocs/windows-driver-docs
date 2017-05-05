@@ -3,7 +3,15 @@ title: The Kernel-Mode Network Redirector Driver
 author: windows-driver-content
 description: The Kernel-Mode Network Redirector Driver
 ms.assetid: 706daaf4-6ad3-4548-86b4-a32e5bb0abe1
-keywords: ["network redirectors WDK , kernel", "redirector drivers WDK , kernel", "kernel network redirectors WDK"]
+keywords:
+- network redirectors WDK , kernel
+- redirector drivers WDK , kernel
+- kernel network redirectors WDK
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # The Kernel-Mode Network Redirector Driver

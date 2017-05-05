@@ -2,7 +2,15 @@
 title: 802.11 WLAN Adapter Reset
 description: 802.11 WLAN Adapter Reset
 ms.assetid: 1f993977-b4a1-42ec-8de3-2f4855db93a7
-keywords: ["adapters WDK 802.11 WLAN , resetting", "WLAN adapters WDK , resetting", "resetting WLAN adapters"]
+keywords:
+- adapters WDK 802.11 WLAN , resetting
+- WLAN adapters WDK , resetting
+- resetting WLAN adapters
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # 802.11 WLAN Adapter Reset

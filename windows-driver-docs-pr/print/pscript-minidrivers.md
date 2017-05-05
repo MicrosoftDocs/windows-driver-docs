@@ -3,7 +3,22 @@ title: Pscript Minidrivers
 author: windows-driver-content
 description: Pscript Minidrivers
 ms.assetid: b1108a6b-e0cc-413c-b3ea-53a1aa3156c0
-keywords: ["PostScript Printer Driver WDK print , minidrivers", "Pscript WDK print , minidrivers", "minidrivers WDK Pscript", "minidrivers WDK Pscript , about Pscript minidrivers", "PPD files WDK print", ".ppd files", "NTF files", ".ntf files", "East Asian fonts WDK print", "Asian fonts WDK print"]
+keywords:
+- PostScript Printer Driver WDK print , minidrivers
+- Pscript WDK print , minidrivers
+- minidrivers WDK Pscript
+- minidrivers WDK Pscript , about Pscript minidrivers
+- PPD files WDK print
+- .ppd files
+- NTF files
+- .ntf files
+- East Asian fonts WDK print
+- Asian fonts WDK print
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Pscript Minidrivers

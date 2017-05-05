@@ -2,7 +2,20 @@
 title: DirectSound Node-Ordering Requirements
 description: DirectSound Node-Ordering Requirements
 ms.assetid: baca55f5-c669-4bd2-82b5-3985030864f2
-keywords: ["hardware acceleration WDK DirectSound , node-ordering requirements", "node-ordering requirements WDK DirectSound", "node chains WDK DirectSound", "SUM nodes WDK DirectSound", "3D mixing WDK audio", "2D mixing WDK audio", "software-emulated 3D processing WDK audio", "supermixer nodes WDK audio"]
+keywords:
+- hardware acceleration WDK DirectSound , node-ordering requirements
+- node-ordering requirements WDK DirectSound
+- node chains WDK DirectSound
+- SUM nodes WDK DirectSound
+- 3D mixing WDK audio
+- 2D mixing WDK audio
+- software-emulated 3D processing WDK audio
+- supermixer nodes WDK audio
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # DirectSound Node-Ordering Requirements

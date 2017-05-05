@@ -2,6 +2,11 @@
 title: Version
 description: Version
 ms.assetid: 1a476586-bef9-41ec-8e8a-f4343361dc92
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Version

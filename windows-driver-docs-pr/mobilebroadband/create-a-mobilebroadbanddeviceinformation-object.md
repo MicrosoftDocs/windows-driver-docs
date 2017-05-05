@@ -2,6 +2,11 @@
 title: Create a MobileBroadbandDeviceInformation object
 description: Create a MobileBroadbandDeviceInformation object
 ms.assetid: d7f89045-acb5-4b7c-9154-c05e4169490d
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Create a MobileBroadbandDeviceInformation object

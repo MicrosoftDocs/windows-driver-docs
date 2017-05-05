@@ -3,7 +3,14 @@ title: Initializing an AVStream Minidriver
 author: windows-driver-content
 description: Initializing an AVStream Minidriver
 ms.assetid: 666d6efb-93ec-43f3-87c5-ea1a3983bfd0
-keywords: ["AVStream WDK , initializing minidrivers", "minidrivers WDK AVStream , initializing"]
+keywords:
+- AVStream WDK , initializing minidrivers
+- minidrivers WDK AVStream , initializing
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # Initializing an AVStream Minidriver

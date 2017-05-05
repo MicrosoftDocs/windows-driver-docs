@@ -3,7 +3,18 @@ title: USB or 1394-Based Conferencing Camera
 author: windows-driver-content
 description: USB or 1394-Based Conferencing Camera
 ms.assetid: 06097803-a124-4c9b-bdb4-cfd8648bc81d
-keywords: ["filter graph configurations WDK video capture , USB-based video conferencing cameras", "filter graph configurations WDK video capture , 1394-based video conferencing cameras", "USB-based video conferencing cameras WDK video capture", "1394-based video conferencing cameras WDK video capture", "video conferencing cameras WDK video capture", "cameras WDK video capture"]
+keywords:
+- filter graph configurations WDK video capture , USB-based video conferencing cameras
+- filter graph configurations WDK video capture , 1394-based video conferencing cameras
+- USB-based video conferencing cameras WDK video capture
+- 1394-based video conferencing cameras WDK video capture
+- video conferencing cameras WDK video capture
+- cameras WDK video capture
+ms.author: windowsdriverdev
+ms.date: 04/20/2017
+ms.topic: article
+ms.prod: windows-hardware
+ms.technology: windows-devices
 ---
 
 # USB or 1394-Based Conferencing Camera
