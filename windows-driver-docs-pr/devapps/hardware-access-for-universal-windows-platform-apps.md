@@ -58,6 +58,8 @@ apps](https://developer.microsoft.com/en-us/windows/apps/develop)**.**
 
 -   [Custom Capability Sample App](http://go.microsoft.com/fwlink/p/?LinkId=846904)
 
+-   [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
+
 -   [Sideload apps in Windows 10](https://technet.microsoft.com/library/mt269549.aspx)
 
 -   [FAQ on custom capabilities](FAQ-on-custom-capabilities.md)
