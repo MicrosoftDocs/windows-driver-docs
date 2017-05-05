@@ -27,7 +27,7 @@ To install on Windows 10 S, driver packages must meet the following requirements
     *  [Centennial Apps](https://developer.microsoft.com/windows/bridges/desktop)
 -   Driver and firmware servicing uses Windows Update and not an updater app.
 
-Finally, we recommend using a Universal Windows Driver where possible.  For more info, see:
+Finally, we recommend using a Universal Windows driver where possible.  For more info, see:
 
 -   [Getting Started with Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 -   [Validating Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-driver)
