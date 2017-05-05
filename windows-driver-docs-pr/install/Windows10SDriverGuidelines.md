@@ -15,8 +15,8 @@ This section describes driver installation requirements and blocked components o
 
 To install on Windows 10 S, driver packages must meet the following requirements:
 
--   Driver packages and companion software must be digitally signed with a **Windows, WHQL, ELAM, or Store** certificate from the [Windows Hardware Developer Center Dashboard](aka.ms/DevCenterPortal).
--   Includes only trusted apps from the Windows Store.
+-   Driver packages must be digitally signed with a **Windows, WHQL, ELAM, or Store** certificate from the [Windows Hardware Developer Center Dashboard](https://aka.ms/DevCenterPortal).
+-   Companion software must be signed with a [Windows Store Certificate](https://docs.microsoft.com/windows/uwp/publish/the-app-certification-process).
 -   Does not include an \*.exe, \*.zip, \*.msi or \*.cab in the driver package that extracts unsigned binaries.
 -   Driver installs using only INF directives.
 -   Co-installers are used only to install or register signed binaries, and do not contain user interface components.
@@ -27,7 +27,7 @@ To install on Windows 10 S, driver packages must meet the following requirements
     *  [Centennial Apps](https://developer.microsoft.com/windows/bridges/desktop)
 -   Driver and firmware servicing uses Windows Update and not an updater app.
 
-Finally, we recommend using a Universal Windows Driver where possible.  For more info, see:
+Finally, we recommend using a Universal Windows driver where possible.  For more info, see:
 
 -   [Getting Started with Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)
 -   [Validating Universal Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-universal-driver)
