@@ -23,6 +23,7 @@ This section includes the following topics that describe the Hyper-V extensible 
 -   [Hyper-V Extensible Switch Architecture](hyper-v-extensible-switch-architecture.md)
 -   [Writing Hyper-V Extensible Switch Extensions](writing-hyper-v-extensible-switch-extensions.md)
 -   [Installing Hyper-V Extensible Switch Extensions](installing-hyper-v-extensible-switch-extensions.md)
+-   [Hyper-V Extensible Switch OIDs](hyper-v-extensible-switch-oids.md)
 
  
 

@@ -43,6 +43,8 @@ This section includes:
 
 [Installing and Upgrading Network Components](installing-and-upgrading-network-components.md)
 
+[NDIS core functionality OIDs](ndis-core-functionality-oids.md)
+
  
 
  
