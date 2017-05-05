@@ -62,6 +62,7 @@
 #### [Providing Vendor Icons for the Shell and AutoPlay](providing-vendor-icons-for-the-shell-and-autoplay.md)
 ### [Driver Signing](driver-signing.md)
 #### [Overview of Digital Signatures for Driver Installation](overview-of-digital-signatures-for-driver-installation.md)
+#### [Windows 10 S Driver Guidelines](Windows10SDriverGuidelines.md)
 ##### [Digital Signatures](digital-signatures.md)
 ###### [Authenticode Digital Signatures](authenticode.md)
 ###### [Catalog Files and Digital Signatures](catalog-files.md)
