@@ -11,9 +11,19 @@ ms.technology: windows-devices
 # Firmware Windows Engineering Guide (WEG)
 
 The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow through in implementing system firmware-related best practices.
- 
 
-### UEFI Security 
+
+## In this section
+
+[UEFI security](uefi-security.md)
+[Firmware update](firmware-update.md)
+[SMBIOS](smbios.md)
+[HTTPS boot support](https-boot-support.md)
+
+
+
+
+### UEFI security 
 
 
 Windows operating systems depend on the integrity and configuration of the firmware and hardware components in order to provide a secure work environment.
@@ -22,12 +32,10 @@ This document is intended as a guide to provide the reader with pointers to the 
 
 The following sections describe components of the firmware used to enable a more secure firmware, and a more secure operating system. In the following sections, we’re going to go over highlights of the components and provide pointers and links to existing online resources where available.
 
-For reference links are provided at the end of each section below.
-
-### Unified Extensible firmware interface (UEFI) 
+### Unified extensible firmware interface (UEFI) 
 
 
-While Microsoft currently requires UEFI Specification version 2.3.1c, this will eventually be changing in the future to accommodate updates in the more recently updated UEFI specification. At the time of this document revision, UEFI 2.7 has not yet been ratified.
+While Microsoft currently requires UEFI Specification version 2.3.1c, this will change in the future to accommodate updates in the more recently updated UEFI specification. At this time, UEFI 2.7 has not yet been ratified.
 
 Open source GitHub/Tianocore (EDK2) source code is awaiting important bug fixes from upcoming UEFI and TCG specifications. The specification is describing the potential of the UEFI firmware and how the code should be implemented. When implementing UEFI code, please ensure that your source branch is built using the latest bits from the main branch and built using the guidance from the latest UEFI Specification document.
 
@@ -47,7 +55,7 @@ As of Revision 1.1, the latest updates to the UEFI Specification regarding Secur
 |------------------------------------------------------------------------------------------------------------|
 | [UEFI Specification 2.6 Document](http://www.uefi.org/sites/default/files/resources/UEFI%20Spec%202_6.pdf) |
 
-### Device Guard & Credential Guard
+### Device Guard and Credential Guard
 
 
 Device Guard is one of Windows security features, that is a combination of enterprise-related hardware, firmware and software security features. When configured together, will lock a device down so that it can only run trusted applications.
@@ -175,7 +183,7 @@ This ability has been available as early as Windows 8, however, Microsoft is now
 
 **Having a model unique {UNIQUE ID} in the ESRT is critical**. The purpose of the UNIQUE ID+CHID is so the firmware provider will be able to create a firmware update package/BIOS that will be deployed via Windows Update(WU) to all the systems that match the UNIQUE ID +CHID. Microsoft does not have a mechanism to validate the firmware package, and is dependent on the firmware provider (creator of package) to verify the payload has not been tampered with. It should be cryptographically verified; Checksum or other CRCs are not validation. If payload fails validation it should fail and record status in ESRT as described in [ESRT table definition](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/esrt-table-definition)
 
-**Note:** If OEM/ODM or person tasked with populating the ESRT {UNIQUE ID} were to discover that the ESRT was pre-populated with a {Unique ID}, do not assume that this is unique. Populate the ESRT with your {UNIQUE ID} and record this for later use. Microsoft has guidance on how to create a UNIQUE ID, for these scenarios. This guidance is in the downloadable document for [Driver Publishing Workflow for Windows 10](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
+**Note** If OEM/ODM or person tasked with populating the ESRT {UNIQUE ID} were to discover that the ESRT was pre-populated with a {Unique ID}, do not assume that this is unique. Populate the ESRT with your {UNIQUE ID} and record this for later use. Microsoft has guidance on how to create a UNIQUE ID, for these scenarios. This guidance is in the downloadable document for [Driver Publishing Workflow for Windows 10](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
 
 Documentation is referenced at the end of this section as well.
 
@@ -204,13 +212,13 @@ On non-ARM systems,
 
 -   UEFI Secure Boot can then automatically be leveraged to verify the integrity of the capsule.
 
-**Note:**  Windows does not allow OEM Verisign-signed firmware update packages, even in test environments, must be testsigned by MS through portal. 
+**Note**  Windows does not allow OEM Verisign-signed firmware update packages, even in test environments, must be testsigned by MS through portal. 
 
 Update the firmware on your SUT device by installing the firmware update package.
 
 Install the Windows Hardware Lab Kit (HLK) on the test system with the PTP and run all the tests applicable to the firmware device.Submit the *HLK logs and the driver package* to the Windows Dev Center Hardware Dashboard for signature.
 
-**Note:** While submitting the firmware update driver package, make sure to select Windows 8 or later as the applicable OS. If any down-level OS is chosen, then the Windows Dev Center Hardware Dashboard will sign the catalog in the driver package with SHA1 algorithm. Starting in Windows 8, ***all firmware update driver packages must be SHA256 signed***.
+**Note** While submitting the firmware update driver package, make sure to select Windows 8 or later as the applicable OS. If any down-level OS is chosen, then the Windows Dev Center Hardware Dashboard will sign the catalog in the driver package with SHA1 algorithm. Starting in Windows 8, ***all firmware update driver packages must be SHA256 signed***.
 
 Though not recommended, it is possible to submit a package to Microsoft without first generating HLK test logs (or including HLK test logs when submitting). Use "Create driver signing submission" for driver signing without the HLK pass test log or for validation testing.
 
@@ -466,36 +474,35 @@ Upgrade paths
 ### General overview for switching Legacy BIOS boot+CSM to UEFI+GPT
 
 
-Switching between the firmware boot options; Legacy BIOS and UEFI (labeling may be different between firmware), is not required for upgrade. It is important to note that with making changes to firmware and/or files systems, it is possible to introduce complications. The recommended scenario is to upgrade the system "as is".
+Switching between the firmware boot options; Legacy BIOS and UEFI (labeling may be different between firmware), is not required for upgrade. It is important to note that with making changes to firmware and files systems, it is possible to introduce complications. The recommended scenario is to upgrade the system "as is".
 
 ### New Method Post Windows 10 Creators Update
 
 
 Recently Microsoft started including a new tool to convert Legacy MBR disk to GPT disk in a non-destructive conversion. . This tool is [Mbr2gpt.exe](https://technet.microsoft.com/en-us/itpro/windows/deploy/mbr-to-gpt) and is to facilitate migrating from Legacy BIOS configuration to full UEFI on qualified systems in a non-destructive fashion.
 
-The process described in section 8.2 is considered a destructive conversion as the technician, application or process must wipe the disk before converting the disk to a GPT disk.
+The process described in section 8.2 is considered a destructive conversion as the technician, application, or process must wipe the disk before converting the disk to a GPT disk.
 
 ### MBR2GPT Tool – Test Guidance
 
 
-> **MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt but can also be run from the full Windows 10 operating system (OS).
->
-> For detailed description about the tool, including usage information and troubleshooting guidance, please review the documentation at the Technet article for [MBR2GPT](https://technet.microsoft.com/en-us/itpro/windows/deploy/mbr-to-gpt).
+**MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt but can also be run from the full Windows 10 operating system (OS).
 
-### Sample checklist when verifying conversion from BIOS/MBR to UEFI/GPT:
+For detailed description about the tool, including usage information and troubleshooting guidance, please review the documentation at the Technet article for [MBR2GPT](https://technet.microsoft.com/en-us/itpro/windows/deploy/mbr-to-gpt).
 
-| Prior to running MBR2GPT                                                                                                                                                |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Run msinfo32 to verify the Machine is currently booted in BIOS mode                                                                                                     |
-| Run msinfo32 to verify the Windows 64-bit OS is installed                                                                                                               |
-| Make that the system disk has at most 3 primary partitions in MBR and at least one of the partitions is marked as Active.                                               |
-| Make sure that the device’s firmware supports UEFI boot by looking for the relevant setting(s) in the firmware menu, or by checking with the PC/firmware manufacturer   |
-| After running MBR2GPT, but before booting into Windows 10 in UEFI mode                                                                                                  |
-| In the firmware menu, make sure that the boot mode setting is set to "UEFI Only" (or equivalent)                                                                        |
-| In the firmware menu, make sure that the Compatibility Support Module (CSM) is disabled and Secure Boot is enabled                                                      |
-| After booting into Windows 10 in UEFI mode                                                                                                                              |
-| Run msinfo32 to verify the device is booted in UEFI mode and Secure Boot is enabled                                                                                     |
-| Verify that your line of business (LOB) applications are still functioning correctly                                                                                    |
+### Sample checklist when verifying conversion from BIOS/MBR to UEFI/GPT
+
+- Prior to running MBR2GPT                                                                                                               
+    - Run msinfo32 to verify the Machine is currently booted in BIOS mode                                                                                                     
+    - Run msinfo32 to verify the Windows 64-bit OS is installed                                                                                                               
+    - Make that the system disk has at most 3 primary partitions in MBR and at least one of the partitions is marked as Active.                                               
+    - Make sure that the device’s firmware supports UEFI boot by looking for the relevant setting(s) in the firmware menu, or by checking with the PC/firmware manufacturer   
+- After running MBR2GPT, but before booting into Windows 10 in UEFI mode                                                                                                  
+    - In the firmware menu, make sure that the boot mode setting is set to "UEFI Only" (or equivalent)                                                                        
+    - In the firmware menu, make sure that the Compatibility Support Module (CSM) is disabled and Secure Boot is enabled                                                      
+- After booting into Windows 10 in UEFI mode                                                                                                                              
+    - Run msinfo32 to verify the device is booted in UEFI mode and Secure Boot is enabled                                                                                     
+    - Verify that your line of business (LOB) applications are still functioning correctly                                                                                    
 
 **Note** System firmware can vary by manufacturer and by device. Contact the device manufacturer for assistance if you have questions or concerns.
 
@@ -557,7 +564,7 @@ The process described in section 8.2 is considered a destructive conversion as t
 
 7.  Boot to Windows 10, version 1703 in UEFI mode using a gen 2 VM.
 
-**NOTE** For any of the workflows above, you can convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
+**Note** For any of the workflows above, you can convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
 
 ### Troubleshooting
 
@@ -570,7 +577,7 @@ Please refer to the MBR2GPT.EXE [Troubleshooting](https://docs.microsoft.com/en-
 ### Old Method Pre-Windows 10 Creators Update
 
 
-In an upgrade scenario (Win7 to Win10); a technician needs to change OS and firmware from Win7SPn Legacy boot+CSM to Win10 UEFI-CSM (minus CSM) and has Win7 SPn x64 installation media. This process may look something like this (more details below).
+In an upgrade scenario (Windows 7 to Windows 10); a technician needs to change OS and firmware from Win7SPn Legacy boot+CSM to Win10 UEFI-CSM (minus CSM) and has Win7 SPn x64 installation media. This process may look something like this (more details below).
 
 1.  Consult with Original Equipment Manufacturer (OEM) on security options available to this firmware / motherboard. Not all security options will be available on some firmware / motherboard.
 
@@ -582,25 +589,27 @@ In an upgrade scenario (Win7 to Win10); a technician needs to change OS and firm
 
 4.  Reboot to Firmware User Interface(UI) and switch settings to boot to UEFI (if you need to boot back into Win7, you will need CSM enabled for now)
 
-5.  Boot to WinPE on USB/CD/DVD device (‘Secure Boot’ must be disabled to boot to alternative boot device
+5.  Boot to WinPE on USB/CD/DVD device (**Secure Boot** must be disabled to boot to the alternative boot device).
 
-6.  Use Diskpart.exe to wipe clean primary boot disk. NOTE If more than one disk present, verify that disk 0 is the primary boot device before ‘cleaning’ disk as this will wipe all data on disk.
+6.  Use Diskpart.exe to wipe clean primary boot disk. 
+
+**Note** If more than one disk is present, verify that disk 0 is the primary boot device before cleaning the disk, as this will wipe all data on the disk.
 
 7.  There are several options at this point, and the IT Person may need to contact System OEM for specific instructions/configuration options.
 
     1.  Pop in clean installation media and run setup.exe. There is a chance that installation process will detect CSM and re-install in Legacy boot/BIOS mode.
 
-    2.  From step\#5, still within Diskpart.exe with primary boot disk selected run "Convert GPT"
+    2.  From step 5, still within Diskpart.exe with primary boot disk selected, run "Convert GPT"
 
-        1.  Now pop in installation media, reboot and go through setup. If you encounter an error message with similar text to "cannot install to selected device" or "disk format not supported" then boot device is detecting CSM and attempting to boot to Legacy boot MBR method.
+        1.  Insert the installation media, reboot, and go through setup. If you encounter an error message with similar text to "cannot install to selected device" or "disk format not supported" then boot device is detecting CSM and attempting to boot to Legacy boot MBR method.
 
-        2.  Alternatively, follow steps to manually configure GPT disk for UEFI Boot method. Looking at "[Recommended UEFI-Based Disk-Partition Configurations](https://technet.microsoft.com/en-us/library/dd744301(v=ws.10).aspx)" then run through setup.exe targeting 3<sup>rd</sup> partition.
+        2.  Alternatively, follow steps to manually configure GPT disk for UEFI Boot method. Looking at [Recommended UEFI-Based Disk-Partition Configurations](https://technet.microsoft.com/en-us/library/dd744301(v=ws.10).aspx) then run through setup.exe targeting 3rd partition.
 
-8.  Once Windows 7 is installed on System and up and running (you may need to patch to latest version(s)) then upgrade to Win10
+8.  Once Windows 7 is installed on System and up and running (you may need to patch to latest version(s)) then upgrade to Windows 10
 
 9.  Once Windows 10 is installed and patched, test with disabling CSM and work with manufacture to enable security options available on this system.
 
-    **NOTE** In some scenarios, firmware has UEFI specific boot options. For example, select; a) boot option or b) UEFI boot option.
+    **Note** In some scenarios, firmware has UEFI specific boot options. For example, select; a) boot option or b) UEFI boot option.
 
 ### Related Resources
 
@@ -618,7 +627,7 @@ The following steps are intended for when the ITPro is in a situation where they
 
 3.  The security features that you are interested in (Secure boot, Device Guard, and/or Credential Guard) has all the correct components already configured on the system.
 
-NOTE: Currently Microsoft does not have a mechanism to convert Legacy MBR boot disks over to GPT disks without first wiping/cleaning the existing file system and creating the new file system with the clean disk.
+**Note** Currently Microsoft does not have a mechanism to convert Legacy MBR boot disks over to GPT disks without first wiping/cleaning the existing file system and creating the new file system with the clean disk.
 
 For example; you will need to use Diskpart.exe to ‘clean’ the existing partition before they can run the ‘convert GPT’ command on that disk. This ‘clean’ command will wipe the entire disk.
 
@@ -703,7 +712,7 @@ On Windows 7 and later systems
 
 2.  Run "BCDedit /enum {current}".
 
-    **NOTE**: If booted from WinPE, use the "/store" switch in BCDedit.exe.
+    **Note**: If booted from WinPE, use the "/store" switch in BCDedit.exe.
 
     1.  If you have UEFI, the path will show Winload.efi. If you have CSM, the path will show Winload.exe as listed in sample output.
 
@@ -743,7 +752,7 @@ Through NOTEPAD and SETUPACT.LOG
 
 You may need to consult with the Original Equipment Manufacturer (OEM) for configuration details on your specific system.
 
-**NOTE:** using diskpart.exe or Setup to ‘clean’ or ‘wipe’ the hard disk drive partition information will destroy data on disk. Consult PC manufacturer concerning factory image recovery methods or data backup options prior to making any of these changes.  
+**Note** using diskpart.exe or Setup to ‘clean’ or ‘wipe’ the hard disk drive partition information will destroy data on disk. Consult PC manufacturer concerning factory image recovery methods or data backup options prior to making any of these changes.  
 
 ### Related Resources
 
@@ -825,7 +834,7 @@ The following Q&A came about due to the number of machines still using Windows 7
 >
 > Consult with the original equipment manufacturer (OEM) prior to making any changes to ensure your system supports secure boot.
 
-**NOTE:** Cleaning the disk will destroy any data that is on that disk even if in other partitions.
+**Note** Cleaning the disk will destroy any data that is on that disk even if in other partitions.
 
 **Q:** Any dependency on BitLocker and Non-Microsoft disk encryption tools?
 
@@ -884,9 +893,9 @@ To setup a modern system for installation of a downlevel operating system (such 
 
 9.  Device configured for UEFI Boot
 
-**Note:** These requirements are based on both Windows 7 requirements, such as CSM enabled for UEFI boot. As well as for Windows 10 requirements, such as ESRT and UpdateCapsule() being enabled.
+**Note** These requirements are based on both Windows 7 requirements, such as CSM enabled for UEFI boot. As well as for Windows 10 requirements, such as ESRT and UpdateCapsule() being enabled.
 
-### Sample PowerShell Script to query SMBIOS Locally
+### Sample PowerShell script to query SMBIOS locally
 
 
 List of ChassisTypes copied from DMTF\\SMIOS latest Specification document
