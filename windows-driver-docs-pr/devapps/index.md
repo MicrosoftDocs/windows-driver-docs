@@ -67,6 +67,11 @@ If you're looking for info about Windows Store mobile broadband apps, see [Mobil
 <td align="left"><p>[Automatic installation for Windows Store device apps](auto-install-for-windows-store-device-apps.md)</p></td>
 <td align="left"><p>This topic describes how automatic installation works and how the app, metadata, and drivers can be updated and uninstalled.</p></td>
 </tr>
+</tr>
+<tr class="even">
+<td align="left"><p>[Hardware access for Universal Windows Platform apps](hardware-access-for-universal-windows-platform-apps.md)</p></td>
+<td align="left"><p>This topic introduces getting Hardware access for Universal Windows Platform apps.</p></td>
+</tr>
 </tbody>
 </table>
 
