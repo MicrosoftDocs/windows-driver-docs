@@ -7,7 +7,7 @@ There's also an [introductory video](https://channel9.msdn.com/Blogs/WinHEC/Cont
 
 ## Sign a CLA
 
-All contributors who are ***not*** a Microsoft employee must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before contributing to any Microsoft repositories. 
+If you want to contribute more than a couple lines and you're not a Microsoft employee, you need to [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/). 
 If you've already contributed to Microsoft repositories in the past, congratulations! 
 You've already completed this step.
 
