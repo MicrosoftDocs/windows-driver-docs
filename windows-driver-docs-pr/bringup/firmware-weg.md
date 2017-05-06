@@ -18,10 +18,12 @@ The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow throug
 [UEFI security](uefi-security.md)
 [Firmware update](firmware-update.md)
 [SMBIOS](smbios.md)
-[HTTPS boot support](https-boot-support.md)
-
-
-
+[HTTPS](https-boot-support.md)
+[Wi-Fi support in firmware]
+[Switch from legacy MBR disk to GPT disk with Windows 10]
+[Frequently asked questions]
+[Configure system firmware for Windows 7 and later update to Windows 10]
+[Sample PowerShell script to query SMBIOS locally]
 
 ### UEFI security 
 
@@ -49,7 +51,7 @@ There are features that are updated in the UEFI Specification documents that per
 
 As of Revision 1.1, the latest updates to the UEFI Specification regarding Secure Boot modes are not fully supported by Windows. Support for new Secure Boot Modes is being investigated for a future Windows release.
 
-### Related Resources
+## Related resources
 
 | [UEFI Specification Documents](http://www.uefi.org/specifications)                                         |
 |------------------------------------------------------------------------------------------------------------|
@@ -64,7 +66,7 @@ Credential Guard uses virtualization-based security to isolate secrets so that o
 
 Device Guard and Credential Guard are optional features, that when implemented and enabled, reduce the available attack surface by requiring additional protectors.
 
-### Related Resources
+## Related resources
 
 | [Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)                                                                   |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -95,7 +97,7 @@ Support for the WSMT is included in the following versions of Windows:
 
 -   Windows 10 Creators Update
 
-### Related Resources
+## Related resources
 
 | [Windows SMM Security Mitigations Table (WSMT)](http://www.microsoft.com/whdc/system/platform/virtual) |
 |--------------------------------------------------------------------------------------------------------|
@@ -115,12 +117,12 @@ Support for HSTI is included in the following versions of Windows:
 
 -   Windows 10, version 1703
 
-### Related Resources
+## Related resources
 
 | [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx) |
 |---------------------------------------------------------------------------------------------------------------------------------|
 
-Memory Overwrite Request Control (MOR) LOCK version 2
+### Memory Overwrite Request Control (MOR) LOCK version 2
 
 
 Windows flagship security feature Device Guard changed the threat model for secrets in memory – hypervisor secrets must now be protected from malicious OS kernels. This required extending the TCG "Platform Reset Attack Mitigations" to protect secrets in RAM from malicious administrators and kernel. Version 1 defined a UEFI variable which, when set, locks the original MOR byte, preventing it from being changed by unauthorized agents such as the OS kernel. When Device Guard is enabled, the original MOR byte is set to 0x11, indicating that the platform must wipe memory across all resets – auto-detection is prohibited. This introduced a performance penalty on Device Guard enabled platforms.
@@ -135,7 +137,7 @@ Support for MOR Lock V2 is included in the following versions of Windows:
 
 -   Windows 10, version 1703
 
-### Related Resources
+## Related resources
 
 | [TCG Platform Reset Attack Mitigation Specification](https://www.trustedcomputinggroup.org/wp-content/uploads/Platform-Reset-Attack-Mitigation-Specification.pdf) |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -152,7 +154,7 @@ Secure Boot is required for Windows operating systems; Windows 8, 8.1, and 10, a
 
 For more information regarding Windows requirements for Secure boot, look at "**System.Fundamentals.Firmware.UEFISecureBoot**" in the "Hardware Compatibility" link below.
 
-### Related Resources
+## Related resources
 
 | [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx)                                               |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -167,7 +169,7 @@ New devices with TPM2.0 should use SHA256 for use with all PCR banks. This may n
 
 TPM 2.0 is **not** usable in legacy boot mode (with CSM enabled) for anything besides BitLocker.  There is no legacy BIOS interface to TPM 2.0. If installing Win7 on current hardware, you should install in x64 UEFI mode so that you can receive some benefit from the TPM 2.0 (BitLocker only). After you upgrade to later operating system (Win8 and later), depending on the firmware installed on the system, you may have the ability to enable Secure Boot. If you install Windows operating system in legacy BIOS mode on existing hardware, you cannot receive the full benefits of TPM 2.0 or Secure Boot.
 
-### Related Resources
+## Related resources
 
 | [TPM recommendations](https://technet.microsoft.com/itpro/windows/keep-secure/tpm-recommendations)                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -235,7 +237,7 @@ Driver.sys
 
 If you follow this format, then the submission should pass. To confirm the parent folder made it into the cab, open the cab in Windows Explorer and switch View to "Details". There will be a "Path" column which should not be empty.
 
-### Related Resources
+## Related resources
 
 | [Authoring a firmware update package](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/authoring-a-firmware-update-package)                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -266,7 +268,7 @@ The OEM/ODM would need to make sure all the appropriate SMBIOS fields are popula
 
 Microsoft is now requiring that a Firmware Update Package include Computer Hardware ID (CHID) Targeting in addition to the unique ID listed for ‘system’ in the EFI System Resource Table (ESRT). The reference to the "Driver Publishing Workflow for Windows 10" contains a detailed description of CHIDs used in distribution targeting and installation targeting.
 
-### Related Resources
+## Related resources
 
 | [Manage Driver Distribution by submissions](https://msdn.microsoft.com/library/windows/hardware/mt181351.aspx)                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -286,7 +288,7 @@ A firmware update to a system can be important to the continued use of that mach
 
 The Links directly below will be updated with the most recent information pertinent to Firmware UX guidance.
 
-### Related Resources
+## Related resources
 
 | [Windows UEFI firmware update platform](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/windows-uefi-firmware-update-platform)                                                               |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -298,9 +300,9 @@ The Links directly below will be updated with the most recent information pertin
 
 ### Firmware Update Validation testing
 
-Windows provides a mechanism to verify firmware update support going through device manager. Refer to the Related Resources for more information.
+Windows provides a mechanism to verify firmware update support going through device manager. Refer to the Related resources for more information.
 
-### Related Resources
+## Related resources
 
 | [Validating Windows UEFI Firmware Update Platform Functionality](https://msdn.microsoft.com/en-us/library/windows/hardware/dn972665(v=vs.85).aspx) |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -405,7 +407,7 @@ SMBIOS fields starting with BIOS \* may be considered optional or recommended. T
 
 
 
-### Related Resources
+## Related resources
 
 | [Download Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -420,12 +422,12 @@ For reference, there is currently no support in Windows, send email to <SAUEFI@M
 
 See bullet\# 38 under section "System.Fundamentals.Firmware.UEFISecureBoot" in related link.
 
-### Related Reference 
+## Related resources 
 
 | [Hardware Compatibility Specification for Systems for Windows 10, version 1607](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/compatibility/systems) |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-### Wi-Fi support in Firmware 
+### Wi-Fi support in firmware 
 
 
 Wi-Fi support has been initially defined in UEFI Specification 2.5, with clarification in UEFI Spec 2.6.
@@ -463,7 +465,7 @@ Upgrade paths
 
 *Legacy MBR boot* is not able to recognize GUID Partition Table (GPT) disks. It requires an active partition and supporting BIOS to facilitate access to disk. OLD and limited on HDD size and number of partitions. On UEFI firmware systems, requires CSM enabled and loaded into memory to facilitate active partition booting.
 
-### Related Resources
+## Related resources
 
 
 | [Windows 10 Specification](https://www.microsoft.com/en-us/windows/Windows-10-specifications) |
@@ -506,9 +508,9 @@ For detailed description about the tool, including usage information and trouble
 
 **Note** System firmware can vary by manufacturer and by device. Contact the device manufacturer for assistance if you have questions or concerns.
 
-### Test Scenarios:
+### Test scenarios
 
-### Conversion after in-place upgrade:
+### Conversion after in-place upgrade
 
 1.  Start with a device running Windows 7, 8, or 8.1 in BIOS mode.
 
@@ -570,7 +572,7 @@ For detailed description about the tool, including usage information and trouble
 
 Please refer to the MBR2GPT.EXE [Troubleshooting](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt#troubleshooting) documentation for information about log file locations and additional help. If you are automating the use of this tool via scripting or SCCM/MDT task sequences, you can script handlers for the returned codes that are discussed in the documentation.
 
-### Related Resources
+## Related resources
 
 [MBR2GPT.EXE](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt) 
 
@@ -611,7 +613,7 @@ In an upgrade scenario (Windows 7 to Windows 10); a technician needs to change O
 
     **Note** In some scenarios, firmware has UEFI specific boot options. For example, select; a) boot option or b) UEFI boot option.
 
-### Related Resources
+## Related resources
 
 | [Recommended UEFI-Based Disk-Partition Configurations](https://technet.microsoft.com/en-us/library/dd744301(v=ws.10).aspx) |
 |----------------------------------------------------------------------------------------------------------------------------|
@@ -754,7 +756,7 @@ You may need to consult with the Original Equipment Manufacturer (OEM) for confi
 
 **Note** using diskpart.exe or Setup to ‘clean’ or ‘wipe’ the hard disk drive partition information will destroy data on disk. Consult PC manufacturer concerning factory image recovery methods or data backup options prior to making any of these changes.  
 
-### Related Resources
+## Related resources
 
 | [Recommended UEFI-Based Disk-Partition Configurations](https://technet.microsoft.com/en-us/library/dd744301(v=ws.10).aspx)                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -862,7 +864,7 @@ The following Q&A came about due to the number of machines still using Windows 7
 
 > **A:** No. Using Microsoft tools such as diskpart.exe will result in data loss. MBR boot and GPT boot are two different booting mechanisms that require a change to the disk that will remove all data from the disk in order to implement this change. Backup any data prior to attempting to make this change.
 
-### Related Resources
+## Related resources
 
 | [UEFI Firmware](https://technet.microsoft.com/en-us/library/hh824898.aspx)                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------|
