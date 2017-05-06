@@ -62,7 +62,6 @@
 #### [Providing Vendor Icons for the Shell and AutoPlay](providing-vendor-icons-for-the-shell-and-autoplay.md)
 ### [Driver Signing](driver-signing.md)
 #### [Overview of Digital Signatures for Driver Installation](overview-of-digital-signatures-for-driver-installation.md)
-#### [Windows 10 S Driver Guidelines](Windows10SDriverGuidelines.md)
 ##### [Digital Signatures](digital-signatures.md)
 ###### [Authenticode Digital Signatures](authenticode.md)
 ###### [Catalog Files and Digital Signatures](catalog-files.md)
@@ -75,6 +74,7 @@
 ####### [Trusted Root Certification Authorities Certificate Store](trusted-root-certification-authorities-certificate-store.md)
 ####### [Trusted Publishers Certificate Store](trusted-publishers-certificate-store.md)
 ##### [Kernel-Mode Code Signing Policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md)
+#### [Windows 10 S Driver Guidelines](Windows10SDriverGuidelines.md)
 #### [Managing the Signing Process](managing-the-signing-process.md)
 ##### [Selecting the Appropriate Signature Type](selecting-the-appropriate-signature-type.md)
 ###### [Kernel-Mode Code Signing Requirements](kernel-mode-code-signing-requirements--windows-vista-and-later-.md)
@@ -515,6 +515,7 @@
 ## [Early Launch AntiMalware](early-launch-antimalware.md)
 ### [ELAM Prerequisites](elam-prerequisites.md)
 ### [ELAM Driver Requirements](elam-driver-requirements.md)
+### [ELAM Driver Submission](elam-driver-submission.md)
 ## [INF File Sections and Directives](inf-file-sections-and-directives.md)
 ### [INF Sections](inf-sections.md)
 #### [INF ClassInstall32 Section](inf-classinstall32-section.md)
@@ -564,4 +565,3 @@
 #### [INF UnregisterDlls Directive](inf-unregisterdlls-directive.md)
 #### [INF UpdateIniFields Directive](inf-updateinifields-directive.md)
 #### [INF UpdateInis Directive](inf-updateinis-directive.md)
-
