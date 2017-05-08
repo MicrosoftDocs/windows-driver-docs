@@ -11,6 +11,9 @@ ms.technology: windows-devices
 
 # Service metadata
 
+>[!IMPORTANT]
+> Starting in Windows 10, Version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before Version 1703 will continue to use the APN database while Windows 10, Version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA FAQ](cosa---faq.md).
+> In Windows 10, Version 1709 (version TBD) and later, service metadata packages are no longer supported. They have been superceded by COSA branding. If you are targeting Windows 8, Windows 8.1, or versions of Windows 10 before 1709 (version TBD), you will still need to create a service metadata package as described in this section.
 
 You can create and submit a service metadata package to create an experience that is deeply integrated with Windows. When Windows detects mobile broadband hardware that matches the operator’s service metadata package, it automatically downloads the service metadata and the specified mobile broadband app.
 
