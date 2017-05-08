@@ -12,7 +12,6 @@ api_type:
 
 # NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER method
 
-
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
 Adds a caller-provided handler for a specific OID method request to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
