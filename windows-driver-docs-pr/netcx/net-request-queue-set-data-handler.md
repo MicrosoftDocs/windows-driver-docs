@@ -14,7 +14,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call [**NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER**](net-request-queue-config-add-set-data-handler.md) to initialize this structure.
+Reserved for internal use.  Call [**NET_REQUEST_QUEUE_CONFIG_ADD_SET_DATA_HANDLER**](net-request-queue-config-add-set-data-handler.md) to add a caller-provided handler for a specific OID set data request.
 
 Syntax
 ------
