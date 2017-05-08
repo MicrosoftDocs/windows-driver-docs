@@ -129,7 +129,7 @@
 #### [USBStress](usbstress.md)
 #### [USBTCD](usbtcd.md)
 #### [USB XHCIWMI](usb-xhciwmi.md)
-### [Test USB Type-C systems with MUTT ConnEx-C](test-usb-type-c-systems-with-mutt-connex-c.md)
+### [Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)
 ### [USB Type-C manual interoperability test procedures](type.md)
 ### [How to prepare the test system to run MUTT test tools](mutt-testing-options.md)
 ### [How to run stress and transfer performance tests for MUTT devices](how-to-run-stress-and-transfer-and-super-mutt-performance-tests-for-mutt-devices.md)

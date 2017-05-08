@@ -41,7 +41,7 @@ To communicate with MUTT devices, you need the MUTT software package. This packa
 <a href="" id="dr-mutt"></a>DR MUTT  
 [JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287)
 
-<a href="" id="mutt-connex-c"></a>MUTT ConnEx-C  
+<a href="" id="mutt-connex-c"></a>USB Type-C ConnEx
 [MCCI](http://go.microsoft.com/fwlink/p/?LinkId=733488)
 
 [JJG Technologies]( http://go.microsoft.com/fwlink/p/?linkid=618287)
@@ -124,12 +124,12 @@ The SuperMUTT Pack is two devices in one. It is a USB 3.0 hub with a Cypress FX2
 
 The DR MUTT acts like a SuperMutt when testing host mode of the device under test, but it can also switch to host mode to test the function mode of the device under test.
 
-## MUTT ConnEx-C
+## USB Type-C ConnEx
 
 
-The MUTT Connection Exerciser for USB Type-C (MUTT ConnEx-C) is a custom shield that has a four-to-one switch to automate USB Type-C interoperability scenarios. The shield has been designed to work with Arduino as the microcontroller. For more information, see [Test USB Type-C systems with MUTT ConnEx-C](test-usb-type-c-systems-with-mutt-connex-c.md).
+The MUTT Connection Exerciser for USB Type-C (USB Type-C ConnEx) is a custom shield that has a four-to-one switch to automate USB Type-C interoperability scenarios. The shield has been designed to work with Arduino as the microcontroller. For more information, see [Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md).
 
-![mutt connex-c](images/connexc-side.jpg)
+![USB Type-C ConnEx](images/connexc-side.jpg)
 
 ## Related topics
 [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
