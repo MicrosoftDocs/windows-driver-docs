@@ -11,6 +11,8 @@ ms.technology: windows-devices
 
 # ServiceIconFile
 
+> [!IMPORTANT]
+> In Windows 10, Version 1709 (version TBD) and later, this field has been replaced by branding through COSA. Fields in COSA for branding are described on [Planning your COSA/APN database submission](planning-your-apn-database-submission.md). If you are targeting versions of Windows before Windows 10, Version 1709 (version TBD), you will still create a metadata package as described in this section. For more information about COSA, see [COSA FAQ](cosa---faq.md). 
 
 The ServiceIconFile element specifies the name of the service icon file in the service metadata package. The service icon file is used to display the logo of the mobile network operator (MNO) or mobile virtual network operator (MVNO) in Windows Connection Manager.
 
