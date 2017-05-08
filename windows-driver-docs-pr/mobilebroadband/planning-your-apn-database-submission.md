@@ -15,7 +15,7 @@ ms.technology: windows-devices
 Use the sections in this topic when you are planning to add a new APN to the baseline COSA/APN database that ships with WIndows, or update an existing one.
 
 > [!IMPORTANT] 
-> Starting in Windows 10 Version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before Version 1703 will continue to use the APN database while Windows 10 Version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA FAQ](cosa---faq.md).
+> Starting in Windows 10 Version 1703, the APN database is replaced by a new format called COSA. Windows 8, Windows 8.1, and versions of Windows 10 before Version 1703 will continue to use the APN database while Windows 10, Version 1703 and later use COSA. For a list of frequently asked questions about COSA, see [COSA FAQ](cosa---faq.md).
 
 ## The APN update process
 
@@ -42,7 +42,7 @@ Use the following link to download the latest APN update spreadsheet: <http://go
 The following table explains each entry in the spreadsheet. 
 
 > [!NOTE] 
-> In the Applicable Profile column of this table, "APN database only" means this entry will be used if targeting Windows 8, Windows 8.1, or versions of Windows 10 before 1703, and "COSA only" means this entry will be used if targeting Windows 10 Version 1703 or later. "APN database & COSA" means this entry is used in both situations. MOs should send all information to target all devices to Microsoft when submitting an APN update, if applicable.
+> In the Applicable Profile column of this table, "APN database only" means this entry will be used if targeting Windows 8, Windows 8.1, or versions of Windows 10 before 1703, and "COSA only" means this entry will be used if targeting Windows 10, Version 1703 or later. "APN database & COSA" means this entry is used in both situations. MOs should send all information to target all devices to Microsoft when submitting an APN update, if applicable.
 
 | Applicable profile | Column name | Description | Optional or Required | Notes |
 | --- | --- | --- | --- | --- |
@@ -78,6 +78,9 @@ The following table explains each entry in the spreadsheet.
 | APN database only | Connection Information – Auto-Connect Order | Windows tries connections to the APNs provided by the operator and marked as “auto-connect” in the APN database until it successfully connects to the mobile network. If all auto-connect attempts fail, Windows will show a prompt allowing the user to pick an APN or enter a custom APN. | Optional | If you have more than one access string for an operator, this column must start with 1. This is needed for Windows to try several APN entries that share either an IMSI range, ICCID range, CDMA provider ID, or CDMA provider name when the user tries to connect. |
 | APN database & COSA | Auth Protocol | Specifies the authentication protocol to be used for activating a Packet Data Protocol (PDP) context. Possible values: <ul><li>**NONE** – No authentication protocol is required</li><li>**PAP** – PAP authentication is required.</li><li>**CHAP** – CHAP authentication is required.</li><li>**MsCHAPV2** –MSCHAPv2 is authentication is required.</li></ul> | Optional | This entry is only supported on Windows 8.1 and Windows 10. |
 | APN database & COSA | Compression | Specifies if compression will be used at the data link for header and data transfer. | Possible values: <ul><li>**ENABLE** – Compression is enabled</li><li>**DISABLE** – Compression is not enabled</li></ul> | Optional | This entry is only supported on Windows 8.1 and Windows 10. |
+| COSA only | Branding Name | The mobile broadband device typically provides the operator name, which Windows shows in the Windows Connection Manager. You can override this name by specifying a custom name in metadata. | Optional | If left blank, defaults to empty string and does nothing. |
+| COSA only | Branding Icon | A custom logo that appears in the Windows Connection Manager next to your network entry. | Optional | Icons must have transparent backgrounds and smooth edges. They must also meet the following format and size requirements: <ul><li>256 x 256: 32-bit + Alpha</li><li>48 x 48: 32-bit + Alpha</li><li>48 x 48: 8-bit 256 color</li><li>48 x 48: 4-bit 16 color</li><li>32 x 32: 32-bit + Alpha</li><li>32 x 32: 8-bit 256 color</li><li>32 x 32: 4-bit 16 color</li><li>24 x 24: 32-bit + Alpha</li><li>24 x 24: 8-bit 256 color</li><li>24 x 24: 4-bit 16 color</li><li>16 x 16: 32-bit + Alpha</li><li>16 x 16: 8-bit 256 color</li><li>16 x 16: 4-bit 16 color</li></ul> |
+| COSA only | Use Branding On Roaming | Determines if the branding should be displayed during roaming or not roaming. | Optional | Possible values: <ul><li>**0** - Use only when connected to home network</li><li>**1** - Use when connected to home network and domestic roaming</li><li>**2** - Use when connected to home network, domestic roaming, and international roaming</li></ul><p> If left blank, defaults to 0.</p> |
  
 
 ### Considerations when completing the spreadsheet
