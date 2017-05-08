@@ -15,7 +15,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call [NET_REQUEST_QUEUE_CONFIG_INIT](net-request-queue-config-init.md) to initialize this structure.
+The client driver must call [NET_REQUEST_QUEUE_CONFIG_INIT](net-request-queue-config-init.md) to initialize this structure.
 
 Syntax
 ------

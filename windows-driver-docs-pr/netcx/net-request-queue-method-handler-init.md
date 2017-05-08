@@ -35,7 +35,7 @@ Parameters
 ----------
 
 *MethodHandler* [out]  
-A pointer to the driver-allocated NET_REQUEST_QUEUE_METHOD_HANDLER structure.
+A pointer to the driver-allocated [**NET_REQUEST_QUEUE_METHOD_HANDLER**](net-request-queue-method-handler.md) structure.
 
 *Oid* [in]  
 The NDIS_OID identifier for the request.

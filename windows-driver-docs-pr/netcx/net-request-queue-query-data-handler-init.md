@@ -34,7 +34,7 @@ Parameters
 ----------
 
 *QueryDataHandler* [out]  
-A pointer to the driver-allocated NET_REQUEST_QUEUE_QUERY_DATA_HANDLER structure.
+A pointer to the driver-allocated [**NET_REQUEST_QUEUE_QUERY_DATA_HANDLER**](net-request-queue-query-data-handler.md) structure.
 
 *Oid* [in]  
 The NDIS_OID identifier for the request.

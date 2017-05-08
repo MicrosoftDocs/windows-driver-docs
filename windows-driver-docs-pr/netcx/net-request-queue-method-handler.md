@@ -14,7 +14,7 @@ api_type:
 
 [!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
 
-Call [NET_REQUEST_QUEUE_METHOD_HANDLER_INIT](net-request-queue-method-handler-init.md) to initialize this structure.
+Call [**NET_REQUEST_QUEUE_CONFIG_ADD_METHOD_HANDLER**](net-request-queue-config-add-method-handler.md) to initialize this structure.
 
 Syntax
 ------
@@ -37,7 +37,7 @@ Members
 A pointer to the next custom handler.
 
 **Memory**  
-A handle to a WDFMEMORY object backing this memory.
+Reserved for internal use.
 
 **Oid**  
 Specifies the object identifier of the requested operation. The value is an OID_XXX code. 
@@ -50,12 +50,6 @@ Minimum input length needed by the client for this request.
 
 **MinimumOutputLength**  
 Minimum output length needed by the client for this request.
-
-Remarks
--------
-The client driver must call [**NET_REQUEST_QUEUE_METHOD_HANDLER_INIT**](net-request-queue-method-handler-init.md) to initialize this structure.
-
-Call [**NET_REQUEST_QUEUE_CONFIG_ADD_INITIALIZED_METHOD_HANDLER**](net-request-queue-config-add-initialized-method-handler.md) to add a caller-provided custom request handler to a [**NET_REQUEST_QUEUE_CONFIG**](net-request-queue-config.md) structure.
 
 Requirements
 ------------
