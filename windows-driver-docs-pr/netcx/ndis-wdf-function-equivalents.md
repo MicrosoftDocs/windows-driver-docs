@@ -4,6 +4,8 @@ title: NDIS-WDF Function Equivalents
 
 # NDIS-WDF Function Equivalents
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 The following table lists NDIS functions and their WDF equivalents:
 
 |NDIS API Family|WDF Equivalent|

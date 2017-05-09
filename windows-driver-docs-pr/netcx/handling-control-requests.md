@@ -4,6 +4,8 @@ title: Handling Control Requests
 
 # Handling Control Requests
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 In the NetAdapterCx model, the client driver receives most control requests as NETREQUEST objects, each of which represents an OID (object identifier) request.  The client driver typically sets up one or two WDF queues (called NETREQUESTQUEUEs) to manage control requests.
 
 The NETREQUESTQUEUE object is the parent of each NETREQUEST that it manages.  Because the queue is a child of the NETADAPTER object, WDF automatically deletes each queue and any associated requests when the adapter is deleted.

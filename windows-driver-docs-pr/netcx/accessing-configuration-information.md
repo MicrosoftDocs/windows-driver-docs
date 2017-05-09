@@ -4,6 +4,8 @@ title: Accessing Configuration Information
 
 # Accessing Configuration Information
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 The NetAdapterCx class extension supports a set of functions that provide access to client driver registry parameters.
 
 Typically, the client driver reads configuration info from its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function.

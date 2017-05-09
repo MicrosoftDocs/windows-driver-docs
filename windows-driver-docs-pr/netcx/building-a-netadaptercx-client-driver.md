@@ -4,6 +4,8 @@ title: Building a NetAdapterCx Client Driver
 
 # Building a NetAdapterCx Client Driver
 
+[!include[NetAdapterCx Beta Prerelease](../netcx-beta-prerelease.md)]
+
 To obtain the latest version of Visual Studio and the Windows Driver Kit (WDK), please visit the [Hardware Dev Center](https://developer.microsoft.com/windows/hardware/windows-driver-kit).
 
 Use the following steps to create a new NetAdapter client driver in Visual Studio:
