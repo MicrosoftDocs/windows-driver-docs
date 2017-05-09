@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Reading and Writing to Device Registers in UMDF 1.x Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 Starting in UMDF version 1.11, the framework provides a set of routines to access registers in memory space and I/O port space. The [UMDF register/port access routines](https://msdn.microsoft.com/library/windows/hardware/hh463975) are very similar to the HAL routines used by kernel-mode drivers. After a driver has mapped registers as described in [Finding and Mapping Hardware Resources in a UMDF Driver](https://msdn.microsoft.com/library/windows/hardware/hh439594), the driver uses the READ/WRITE\_REGISTER\_Xxx routines to read and write to individual registers. For I/O ports, the driver calls the READ/WRITE\_PORT\_Xxx routines.
 

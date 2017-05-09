@@ -12,6 +12,7 @@ ms.technology: windows-devices
 
 # UMDF 1.x Design Guide
 
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 This section contains information that applies only to User-Mode Driver Framework (UMDF) versions 1.11 and earlier.
 

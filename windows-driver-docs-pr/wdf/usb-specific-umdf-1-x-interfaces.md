@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # USB-Specific UMDF 1.x Interfaces
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A USB device can have one or more configurations. Each configuration can have one or more interfaces. Each interface is associated with one or more alternate settings, and each alternate setting defines one or more endpoints. An endpoint represents a buffer on the device hardware.
 

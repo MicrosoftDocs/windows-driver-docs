@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Obtaining Information About a General I/O Target in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 To obtain information about an I/O target, a UMDF driver can call the following methods that the I/O target object defines:
 

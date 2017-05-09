@@ -16,6 +16,7 @@ ms.technology: windows-devices
 
 # Viewing UMDF Objects
 
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 This topic describes how you can use the Wudfext.dll debugger extensions to view information about objects used by a User-Mode Driver Framework (UMDF) version 1 driver.
 

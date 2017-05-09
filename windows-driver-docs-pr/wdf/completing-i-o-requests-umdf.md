@@ -17,7 +17,7 @@ ms.technology: windows-devices
 # Completing I/O Requests in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 Every I/O request must eventually be completed by a UMDF driver. To complete a request, the driver must call either the [**IWDFIoRequest::Complete**](https://msdn.microsoft.com/library/windows/hardware/ff559070) or [**IWDFIoRequest::CompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff559074) method. When the driver completes the request, it indicates one of the following scenarios:
 
