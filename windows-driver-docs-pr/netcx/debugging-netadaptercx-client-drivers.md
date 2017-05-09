@@ -12,8 +12,13 @@ Also, you can use the `!ndiskd.netrb` debugger extension with the address of a [
 
 You can use the following !ndiskd commands with a NetAdapterCx client driver:
 
-- !ndiskd.cxadapter: Given a NETADAPTER handle, show information about a NETADAPTER object
-- !ndiskd.netqueue: Given a NETTXQUEUE or NETRXQUEUE handle, show information about a data path queue.
-- !ndiskd.netrb: Shows NET_RING_BUFFER information.
-- !ndiskd.netpacket: Shows information about a NET_PACKET.
-- !ndiskd.netpacketfragment: Shows information about a NET_PACKET_FRAGMENT
+*  [**!ndiskd.cxadapter**](https://msdn.microsoft.com/library/windows/hardware/mt808786)
+    *  Given a NETADAPTER handle, show information about a NETADAPTER object.
+*  [**!ndiskd.netqueue**](https://msdn.microsoft.com/library/windows/hardware/mt808789)
+    *  Given a NETTXQUEUE or NETRXQUEUE handle, show information about a data path queue.
+*  [**!ndiskd.netrb**](https://msdn.microsoft.com/library/windows/hardware/mt808790)
+    *  Shows [**NET_RING_BUFFER**](net-ring-buffer.md) information.
+*  [**!ndiskd.netpacket**](https://msdn.microsoft.com/library/windows/hardware/mt808787)
+    *  Shows information about a [**NET_PACKET**](net-packet.md).
+*  [**!ndiskd.netpacketfragment**](https://msdn.microsoft.com/library/windows/hardware/mt808788)
+    *  Shows information about a [**NET_PACKET_FRAGMENT**](net-packet-fragment.md).
