@@ -9,21 +9,29 @@ ms.technology: windows-devices
 ---
 
 
-# TBD
+
+# Device Guard and Credential Guard
 
 
+Device Guard is one of Windows security features, that is a combination of enterprise-related hardware, firmware and software security features. When configured together, will lock a device down so that it can only run trusted applications.
 
+Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 
+Device Guard and Credential Guard are optional features, that when implemented and enabled, reduce the available attack surface by requiring additional protectors.
 
+## Related resources
 
-
-## In this section
-
-
-
-
-
-
+| [Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)                                                                   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Device Guard certification and compliance](https://technet.microsoft.com/en-us/library/mt219733(v=vs.85).aspx)                                                                          |
+| [Device Guard overview (with links to firmware requirements](https://technet.microsoft.com/itpro/windows/whats-new/device-guard-overview))                                               |
+| [Device.DevFund.Device Guard ](https://msdn.microsoft.com/en-us/library/windows/hardware/mt589731(v=vs.85).aspx)                                                                         |
+| [Driver compatibility requirements](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)                    |
+| [Filter.Driver.DeviceGuard ](https://msdn.microsoft.com/en-us/library/windows/hardware/mt589732(v=vs.85).aspx)                                                                           |
+| [What's new in Credential Guard?](https://technet.microsoft.com/en-us/itpro/windows/whats-new/credential-guard)                                                                          |
+| [Hypervisor Code Integrity Readiness Test](https://msdn.microsoft.com/en-us/library/windows/hardware/dn955152(v=vs.85).aspx)                                                             |
+| [Driver compatibility with Device Guard in Windows 10](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/) |
+| [Filter.Driver.DeviceGuard.DriverCompatibility](https://msdn.microsoft.com/windows/hardware/commercialize/design/compatibility/filter#filterdriverdeviceguarddrivercompatibility)  
 
 
 

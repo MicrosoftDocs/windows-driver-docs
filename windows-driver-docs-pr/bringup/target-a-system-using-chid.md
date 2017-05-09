@@ -9,22 +9,23 @@ ms.technology: windows-devices
 ---
 
 
-# TBD
+# Target a system using CHID targeting
 
 
+Computer Hardware IDs (CHID)s are created by the OEM/ODM running either a Windows Developer Kit(WDK) tool (ComputerHardwareIDs.exe) or the Audit tool available to OEMs through the [Microsoft OEM download site](https://www.microsoftoem.com/Login.aspx) (login required).
 
+The CHIDs are Computer Hardware IDs and Windows makes use of these IDs in varying levels of specificity for targeting purposes. Once the correct driver is delivered to the system, then normal PNP ranking takes over as described in the "[How Windows Ranks Drivers](https://msdn.microsoft.com/en-us/windows/hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-)" page, and the vendor can build a strategy around this that makes sense for their product line.
 
+The OEM/ODM would need to make sure all the appropriate SMBIOS fields are populated with data, based on [SMBIOS Guidance](#_SMBIOS) below and following [DMTF SMBIOS Spec document](http://www.dmtf.org/standards/smbios) to ensure CHIDs are individual and unique.
 
+Microsoft is now requiring that a Firmware Update Package include Computer Hardware ID (CHID) Targeting in addition to the unique ID listed for ‘system’ in the EFI System Resource Table (ESRT). The reference to the "Driver Publishing Workflow for Windows 10" contains a detailed description of CHIDs used in distribution targeting and installation targeting.
 
+## Related resources
 
-## In this section
-
-
-
-
-
-
-
+| [Manage Driver Distribution by submissions](https://msdn.microsoft.com/library/windows/hardware/mt181351.aspx)                                                                    |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Specifying Hardware IDs for a Computer](https://msdn.microsoft.com/en-us/library/windows/hardware/ff552325(v=vs.85).aspx)                                                        |
+| [Download Driver Publishing Workflow for Windows 10](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) |
 
 
 --------------------

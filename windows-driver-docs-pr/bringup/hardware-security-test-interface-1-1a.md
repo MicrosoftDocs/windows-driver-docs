@@ -9,20 +9,25 @@ ms.technology: windows-devices
 ---
 
 
-# TBD
+# Hardware Security Test Interface (HSTI) 1.1a
 
 
+HSTI specifies a standard test interface for proprietary platform security technologies that enforce the Secure Boot promise (e.g. SPI flash or eMMC partition locking, proper SMM configuration, Intel Boot Guard properly configured, …). The silicon and BIOS vendors specify and implement the necessary test cases which are shipped in release firmware as a built-in self-test.
 
+The presence of the test gives the customer the ability to verify the presence of security features and if they are correctly implemented.
 
+Support for HSTI is included in the following versions of Windows:
 
+-   Windows Server Technical Preview 2016
 
+-   Windows 10, version 1607
 
-## In this section
+-   Windows 10, version 1703
 
+## Related resources
 
-
-
-
+| [Hardware Security Testability Specification](https://msdn.microsoft.com/en-us/library/windows/hardware/mt712332(v=vs.85).aspx) |
+|---------------------------------------------------------------------------------------------------------------------------------|
 
 
 
