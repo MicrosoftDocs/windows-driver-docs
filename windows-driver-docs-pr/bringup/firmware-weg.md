@@ -18,12 +18,12 @@ The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow throug
 [UEFI security](uefi-security.md)
 [Firmware update](firmware-update.md)
 [SMBIOS](smbios.md)
-[HTTPS](https-boot-support.md)
-[Wi-Fi support in firmware]
-[Switch from legacy MBR disk to GPT disk with Windows 10]
-[Frequently asked questions]
-[Configure system firmware for Windows 7 and later update to Windows 10]
-[Sample PowerShell script to query SMBIOS locally]
+[HTTPS](https-boot.md)
+[Wi-Fi support in firmware](wi-fi-support-in-firmware.md)
+[Switch from legacy MBR disk to GPT disk with Windows 10](switch-from-legacy-mbr-disk-to-gpt-disk-with-windows-10.md)
+[Frequently asked questions](frequently-asked-questions.md)
+[Configure system firmware for Windows 7 and later update for Windows 10](configure-system-firmware-for-windows-7-and-later-update-for-windows-10.md)
+[Sample PowerShell script to query SMBIOS locally](sample-powershell-script-to-query-smbios-locally.md)
 
 ### UEFI security 
 
