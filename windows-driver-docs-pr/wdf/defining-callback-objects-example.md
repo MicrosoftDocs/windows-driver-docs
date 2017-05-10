@@ -15,7 +15,7 @@ ms.technology: windows-devices
 # Defining Callback Objects Example
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The following code example shows how a driver inherits from the [IPnpCallbackHardware](https://msdn.microsoft.com/library/windows/hardware/ff556764) interface to define a device callback object.
 

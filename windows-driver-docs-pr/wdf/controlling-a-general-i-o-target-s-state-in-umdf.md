@@ -24,7 +24,7 @@ ms.technology: windows-devices
 # Controlling a General I/O Target's State in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework defines the following states for general I/O targets:
 

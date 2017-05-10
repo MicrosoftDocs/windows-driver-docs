@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Supporting Idle Power-Down in UMDF Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 Some devices can enter a sleeping state while the system remains in its working state. For such devices, the framework initiates lowering the device's power after the device has been idle (not used) for a predetermined (and settable) amount of time.
 

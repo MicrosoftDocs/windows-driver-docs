@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # A Device Returns to Its Working State
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A device that is in a low-power state returns to its working state if one of the following occurs:
 

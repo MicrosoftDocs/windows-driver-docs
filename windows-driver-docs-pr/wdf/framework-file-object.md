@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Framework File Object
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework file object is exposed to drivers by the [IWDFFile](https://msdn.microsoft.com/library/windows/hardware/ff558912) interface. It is the framework representation of the opened device. When an application opens the device through the Microsoft Win32 [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858) function, the framework creates a file object to represent the opened device instance. Therefore, the framework file object is conceptually equivalent to the Win32 handle that is returned from the application's call to **CreateFile**. The framework can create multiple file objects associated with a single device. Each file object is created for each successful call to **CreateFile**. All I/O operations, like reads and writes, are targeted to a specific file-object instance.
 
