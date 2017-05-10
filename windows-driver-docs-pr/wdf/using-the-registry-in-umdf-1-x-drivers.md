@@ -21,7 +21,7 @@ ms.technology: windows-devices
 # Using the Registry in UMDF 1.x Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 UMDF-based drivers can read and write values in the registry by using interfaces of the property store object.
 

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Synchronizing Interrupt Code
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 All driver code that accesses the interrupt data buffer must be synchronized so that only one routine accesses the data at a time.
 

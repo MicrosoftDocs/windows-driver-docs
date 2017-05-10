@@ -18,6 +18,7 @@ ms.technology: windows-devices
 
 # Supporting Kernel-Mode Clients in UMDF 1.x Drivers
 
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 UMDF versions 1.9 and later allow UMDF drivers to support *kernel-mode clients*. A kernel-mode client can be either of the following:
 

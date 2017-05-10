@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # PnP and Power Management in UMDF Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 ## In this section
 

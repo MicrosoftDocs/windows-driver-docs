@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Enabling and Disabling Interrupts
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 If your driver handles device interrupts, it must provide [*OnInterruptEnable*](https://msdn.microsoft.com/library/windows/hardware/hh463899) and [*OnInterruptDisable*](https://msdn.microsoft.com/library/windows/hardware/hh463895) callback functions that enable and disable the interrupts. These callback functions must do whatever is necessary to enable and disable a device's interrupt mechanism.
 

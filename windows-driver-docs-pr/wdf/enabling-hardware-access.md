@@ -12,6 +12,7 @@ ms.technology: windows-devices
 
 # Enabling Hardware Access
 
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 To enable hardware access, a UMDF driver must set the **UmdfDirectHardwareAccess** INF directive to **AllowDirectHardwareAccess**.
 

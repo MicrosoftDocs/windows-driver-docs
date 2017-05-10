@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Framework Interrupt Object
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework interrupt object is exposed to drivers by the [**IWDFInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh451283) interface. It represents a hardware interrupt. Interrupt objects are children of [UMDF device objects](framework-device-object.md). A driver can call the [**IWDFDevice3::CreateInterrupt**](https://msdn.microsoft.com/library/windows/hardware/hh451208) method to create an interrupt object.
 
