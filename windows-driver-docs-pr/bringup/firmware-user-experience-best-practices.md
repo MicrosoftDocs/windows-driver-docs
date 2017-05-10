@@ -9,20 +9,28 @@ ms.technology: windows-devices
 ---
 
 
-# TBD
+# Firmware User Experience (UX) best practices
 
 
+A firmware update to a system can be important to the continued use of that machine. Microsoft wants to ensure that Firmware updates are safely delivered, and installation is uninterrupted. To do this, we have recommended the following guidelines that are described in greater detail in the related resources section.
 
+1.  Progress bar / indicator that the system is installing an update.
 
+2.  Windows Boot loader with UpdateCapsule will provide bitmap containing message for user.
 
+3.  UEFI check for AC Power, or sufficient battery life (RSOC) or fail out with error codes recorded in ESRT
 
+The Links directly below will be updated with the most recent information pertinent to Firmware UX guidance.
 
-## In this section
+## Related resources
 
-
-
-
-
+| [Windows UEFI firmware update platform](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/windows-uefi-firmware-update-platform)                                                               |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Seamless crisis prevention and recovery ](https://msdn.microsoft.com/en-us/library/windows/hardware/dn917851(v=vs.85).aspx)                                                                                   |
+| [User experience for UEFI firmware updates](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/user-experience-for-uefi-firmware-updates)                                                       |
+| [Boot screen components](https://msdn.microsoft.com/en-us/windows/hardware/drivers/bringup/boot-screen-components)                                                                                             |
+| [ESRT table definition](https://msdn.microsoft.com/windows/hardware/drivers/bringup/esrt-table-definition)                                                                                                     |
+| [Validating Windows UEFI Firmware Update Platform Functionality](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/validating-windows-uefi-firmware-update-platform-functionality) |
 
 
 

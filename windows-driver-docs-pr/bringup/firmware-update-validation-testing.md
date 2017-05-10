@@ -9,18 +9,18 @@ ms.technology: windows-devices
 ---
 
 
-# TBD
 
+# Firmware Update validation testing
 
+Windows provides a mechanism to verify firmware update support going through device manager. Refer to the Related resources for more information.
 
+## Related resources
 
-
-
-
-## In this section
-
-
-
+| [Validating Windows UEFI Firmware Update Platform Functionality](https://msdn.microsoft.com/en-us/library/windows/hardware/dn972665(v=vs.85).aspx) |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Firmware Update test](https://msdn.microsoft.com/en-us/library/windows/hardware/jj124838(v=vs.85).aspx)                                           |
+| [How to verify firmware update support](https://msdn.microsoft.com/en-us/library/windows/hardware/mt188596(v=vs.85).aspx)                          |
+| [Test Distribution Drivers](https://msdn.microsoft.com/en-us/library/windows/hardware/mt149093(v=vs.85).aspx)                                      |
 
 
 

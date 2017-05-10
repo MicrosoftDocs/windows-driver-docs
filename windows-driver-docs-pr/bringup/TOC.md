@@ -22,7 +22,7 @@
 #### [New method: Windows 10, version 1703 and later](new-method--windows-10--version-1703-and-later.md)
 #### [MBR2GPT tool test guidance](mbr2gpt-tool-test-guidance.md)
 #### [Old method: method: Windows 10, version 1607 and earlier](old-method--windows-10--version-1607-and-earlier.md)
-#### [How to convert an installed x64 Windows 7](how-to-convert-an-installed-x64-windows-7.md)
+#### [How to convert an installed x64 Windows 7 system](how-to-convert-an-installed-x64-windows-7.md)
 ### [Frequently asked questions](frequently-asked-questions.md)
 ### [Configure system firmware for Windows 7 and later update for Windows 10](configure-system-firmware-for-windows-7-and-later-update-for-windows-10.md)
 ### [Sample PowerShell script to query SMBIOS locally](sample-powershell-script-to-query-smbios-locally.md)

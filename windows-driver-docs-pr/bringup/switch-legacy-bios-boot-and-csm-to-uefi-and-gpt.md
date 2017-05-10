@@ -9,20 +9,10 @@ ms.technology: windows-devices
 ---
 
 
-# TBD
+### Switching Legacy BIOS boot and CSM to UEFI and GPT
 
 
-
-
-
-
-
-## In this section
-
-
-
-
-
+Switching between the firmware boot options; Legacy BIOS and UEFI (labeling may be different between firmware), is not required for upgrade. It is important to note that with making changes to firmware and files systems, it is possible to introduce complications. The recommended scenario is to upgrade the system "as is".
 
 
 

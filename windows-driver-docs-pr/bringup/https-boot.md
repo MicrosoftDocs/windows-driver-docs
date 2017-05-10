@@ -9,22 +9,19 @@ ms.technology: windows-devices
 ---
 
 
-# TBD
+# HTTPS
 
 
+HTTP boot is a potential security risk, if implemented, vendors must use HTTPS.
 
+For reference, there is currently no support in Windows, send email to <SAUEFI@Microsoft.com> if questions/concerns or if your company has a vested interested in this feature.
 
+See bullet\# 38 under section "System.Fundamentals.Firmware.UEFISecureBoot" in related link.
 
+## Related resources 
 
-
-## In this section
-
-
-
-
-
-
-
+| [Hardware Compatibility Specification for Systems for Windows 10, version 1607](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/design/compatibility/systems) |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
 --------------------

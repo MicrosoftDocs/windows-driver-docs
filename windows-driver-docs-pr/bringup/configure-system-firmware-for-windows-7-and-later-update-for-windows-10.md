@@ -9,19 +9,30 @@ ms.technology: windows-devices
 ---
 
 
-# TBD
+# Configure system firmware for Windows 7 and enable for Windows 10
 
 
+To setup a modern system for installation of a downlevel operating system (such as Windows 7) here is the list of requirements to satisfy both Windows 7 and Windows 10.
 
+1.  UEFI 2.3.1 Errata C; This is based on a requirement for Win8.1, in anticipation of future upgrade to Win10.
 
+2.  Secure Boot components for Win10 should be installed (certificates etc.) (see [Secure Boot](#_INTELs_No_eXecute) section above for more information)
 
+3.  TPM2.0 used (see [*KB2920188*](https://support.microsoft.com/en-us/kb/2920188) for TPM2.0 support in Win7).
 
+4.  EFI System Resource Table(ESRT) should be populated with a model specific Unique ID for System and Devices that can update firmware
 
-## In this section
+5.  UpdateCapsule() & QueryCapsuleCapabilitiesenabled() in UEFI
 
+6.  SMBIOS configured and populated per [SMBIOS guidance](#_Table_of_recommended) above (even if using downlevel SMBIOS, within reason)
 
+7.  CSM is enabled, this is needed for Windows 7 and will disable Secure Boot
 
+8.  Configure hard drive as GPT disk
 
+9.  Device configured for UEFI Boot
+
+**Note** These requirements are based on both Windows 7 requirements, such as CSM enabled for UEFI boot. As well as for Windows 10 requirements, such as ESRT and UpdateCapsule() being enabled.
 
 
 

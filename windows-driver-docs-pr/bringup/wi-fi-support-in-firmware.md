@@ -9,19 +9,14 @@ ms.technology: windows-devices
 ---
 
 
-# TBD
+# Wi-Fi support in firmware 
 
 
+Wi-Fi support has been initially defined in UEFI Specification 2.5, with clarification in UEFI Spec 2.6.
 
+Windows Operating System and Windows Pre-installation Environment (WinPE) do not currently have support to fully leverage these features of UEFI. 
 
-
-
-
-## In this section
-
-
-
-
+Send email to <SAUEFI@Microsoft.com> if you have questions or concerns, or if your company has a vested interested in this feature.
 
 
 
