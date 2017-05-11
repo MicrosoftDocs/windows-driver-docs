@@ -1,6 +1,6 @@
 ---
-title: TBD
-description: TBD
+title: SMBIOS
+description: The SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system.
 ms.author: windowsdriverdev
 ms.date: 05/05/2017
 ms.topic: article
@@ -9,8 +9,7 @@ ms.technology: windows-devices
 ---
 
 
-### SMBIOS
-
+# SMBIOS
 
 SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system. By using the latest SMBIOS Specification, we keep up with the latest changes defined in the specification. There is a table below describing the recommended SMBIOS settings along with guidance on what type of information should be in these fields. Having these fields populated with data pertaining to each individual system allows system administrators the ability to remotely identify and manage these systems. Computer Hardware IDs (CHIDs) are generated using the values from this table, and care and thought should be given to setting these.
 
@@ -18,35 +17,139 @@ To add uniformity to SMBIOS to better identify device information, Microsoft rec
 
 Though this table is similarly listed in the "Windows 10 Driver Publishing Workflow" document on MSDN, this document prescribes level of detail that should also go into some of the fields helping to increase the level of specificity.
 
-### Table of recommended settings when moving to SMBIOS 3.0
+## Recommended settings when moving to SMBIOS 3.0
+
+<table>
+    <tbody>
+        <tr>
+            <td>Field Name</b></td>
+            <td><b>Structure Name and Type</b></td>
+            <td><b>Value</b></td>
+            <td><b>Offset</b></td>
+            <td><b>Length</b></td>
+            <td><b>Example Scenario</b></td>
+            <td><b>Example</b></td>
+        </tr>
+        <tr>
+            <td>"Manufacturer"</td>
+            <td>System Information (Type 1)</td>
+            <td>String</td>
+            <td>04h</td>
+            <td>32</td>
+            <td rowspan="8">Contoso, Inc. manufactures 2 product lines: 1) "A" series, and 2) "B" series. The "A" series of devices include the Contoso "A11" and "A13" device sub-brands, each of which have different screen sizes and both support physically detachable keyboards (though the keyboards are sold as an option). The "A11" has three models: 1) the base model (the a110001) 2) a midsize model with a premium audio package (the a110002) and 3) a high-end model with a higher resolution touch panel (the a110003). Each model has gone through several generations of baseboard revisions, which are identified internally with codes bb01 through bb04. Each of the "A11" models can be further customized with different storage and memory configurations. To separate different production runs on their manufacturing floor, Contoso uses an internal identification system that combines the Family, Product Name, market region, and production run number.</td>
+            <td>"Contoso"</td>
+        </tr>
+        <tr>
+            <td>"Family"</td>
+            <td>System Information (Type 1)</td>
+            <td>String</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>"Product Name"</td>
+            <td>System Information (Type 1)</td>
+            <td>String</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>"Baseboard Product"</td>
+            <td>Baseboard Information (Type 2)</td>
+            <td>String</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>"SKU Number"</td>
+            <td>System Information (Type 1)</td>
+            <td>String</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>"Serial Number"</td>
+            <td>System Information (Type 1)</td>
+            <td>String</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>"UUID"</td>
+            <td>System Information (Type 1)</td>
+            <td>Varies</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>"Enclosure Type"</td>
+            <td>System Enclosure (Type 3) </td>
+            <td>Byte</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>BIOS Vendor</td>
+            <td>BIOS Information (Type 0)</td>
+            <td>Byte</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>BIOS Version </td>
+            <td>BIOS Information (Type 0)</td>
+            <td>Byte</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>BIOS Major Release</td>
+            <td>BIOS Information (Type 0)</td>
+            <td>Byte</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>BIOS Minor Release</td>
+            <td>BIOS Information (Type 0)</td>
+            <td>Byte</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+            <td>TBD</td>
+        </tr>
+    </tbody>
+</table>
 
 
-| **Field Name**      | **Structure Named & Type**     | **Value** | **Offset** | **Length** | **Example Scenario**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | **Example**                                                                                                              |
-|---------------------|--------------------------------|-----------|------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| "Manufacturer"      | System Information (Type 1)    | String    | 04h        | 32         | Contoso, Inc. manufactures 2 product lines: 1) "A" series, and 2) "B" series. The "A" series of devices include the Contoso "A11" and "A13" device sub-brands, each of which have different screen sizes and both support physically detachable keyboards (though the keyboards are sold as an option). The "A11" has three models: 1) the base model (the a110001) 2) a midsize model with a premium audio package (the a110002) and 3) a high-end model with a higher resolution touch panel (the a110003). Each model has gone through several generations of baseboard revisions, which are identified internally with codes bb01 through bb04. Each of the "A11" models can be further customized with different storage and memory configurations. To separate different production runs on their manufacturing floor, Contoso uses an internal identification system that combines the Family, Product Name, market region, and production run number. | "Contoso"                                                                                                                |
-| "Family"            | System Information (Type 1)    | String    | 1Ah        | 64         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | "A11"                                                                                                                    |
-| "Product Name"      | System Information (Type 1)    | String    | 05h        | 64         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | "A11 a110001"                                                                                                            |
-| "Baseboard Product" | Baseboard Information (Type 2) | String    | 05h        | 32         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | "bb03"                                                                                                                   |
-| "SKU Number"        | System Information (Type 1)    | String    | 19h        | 32         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | "A11a11001-EU-04"                                                                                                        |
-| "Serial Number"     | System Information (Type 1)    | String    | 07h        |            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | "A1B2C3456789ABC"                                                                                                        |
-| "UUID"              | System Information (Type 1)    | Varies    | 08h        | 16 bytes   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Universal unique ID number; see section 7.2.1. in [DMTF SMBIOS Spec](http://www.dmtf.org/standards/smbios) 3.1 or later. 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              "{00112233-4455-6677-8899-AABBCCDDEEFF}"                                                                                  |
-| "Enclosure Type"    | System Enclosure               
-                                                       
-                       (Type 3)                        | Byte      | 05h        | n/a        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | "detachable"                                                                                                             |
-| BIOS Vendor         | BIOS information               
-                                                       
-                       (Type 0)                        | Byte      | 04h        | String     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                          |
-| BIOS Version        | BIOS Information               
-                                                       
-                       (Type 0)                        | Byte      | 05h        | String     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                          |
-| BIOS Major Release  | BIOS Information               
-                                                       
-                       (Type 0)                        | Byte      | 14h        | Varies     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                          |
-| BIOS Minor Release  | BIOS Information               
-                                                       
-                       (Type 0)                        | Byte      | 15h        | Varies     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                          |
+| "Manufacturer"      | System Information (Type 1)    | String    | 04h        | 32         |  | "Contoso"                                                                                                                |
+| "Family"            | System Information (Type 1)    | String    | 1Ah        | 64         |  | "A11"                                                                                                                    |
+| "Product Name"      | System Information (Type 1)    | String    | 05h        | 64         |  | "A11 a110001"                                                                                                            |
+| "Baseboard Product" | Baseboard Information (Type 2) | String    | 05h        | 32         |  | "bb03"                                                                                                                   |
+| "SKU Number"        | System Information (Type 1)    | String    | 19h        | 32         |  | "A11a11001-EU-04"                                                                                                        |
+| "Serial Number"     | System Information (Type 1)    | String    | 07h        |            |  | "A1B2C3456789ABC"                                                                                                        |
+| "UUID"              | System Information (Type 1)    | Varies    | 08h        | 16 bytes   |  | Universal unique ID number; see section 7.2.1. in [DMTF SMBIOS Spec](http://www.dmtf.org/standards/smbios) 3.1 or later. "{00112233-4455-6677-8899-AABBCCDDEEFF}"                                                                                  |
+| "Enclosure Type"    | System Enclosure (Type 3)                        | Byte      | 05h        | n/a        |  | "detachable"                                                                                                             |
+| BIOS Vendor         | BIOS information (Type 0)                        | Byte      | 04h        | String     |                                                                                                                        
+| BIOS Version        | BIOS Information  (Type 0)                        | Byte      | 05h        | String     | 
+| BIOS Major Release  | BIOS Information (Type 0)                        | Byte      | 14h        | Varies     |                                                                             |
+| BIOS Minor Release  | BIOS Information (Type 0)                        | Byte      | 15h        | Varies     |
+
+
+
 
 SMBIOS fields starting with BIOS \* may be considered optional or recommended. These are used to build Computer Hardware ID (CHID) and ensure additional levels of uniqueness in resulting CHID.
 
@@ -108,9 +211,9 @@ SMBIOS fields starting with BIOS \* may be considered optional or recommended. T
 
 ## Related resources
 
-| [Download Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [System Management BIOS DMTF Specifications page](http://www.dmtf.org/standards/smbios)                                                 
+[Download Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) 
+
+[System Management BIOS DMTF Specifications page](http://www.dmtf.org/standards/smbios)                                                 
 
 
 
