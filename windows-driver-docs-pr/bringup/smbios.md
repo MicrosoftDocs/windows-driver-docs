@@ -2,7 +2,7 @@
 title: SMBIOS
 description: The SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system.
 ms.author: windowsdriverdev
-ms.date: 05/05/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -11,7 +11,7 @@ ms.technology: windows-devices
 
 # SMBIOS
 
-SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system. By using the latest SMBIOS Specification, we keep up with the latest changes defined in the specification. There is a table below describing the recommended SMBIOS settings along with guidance on what type of information should be in these fields. Having these fields populated with data pertaining to each individual system allows system administrators the ability to remotely identify and manage these systems. Computer Hardware IDs (CHIDs) are generated using the values from this table, and care and thought should be given to setting these.
+SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system. By using the latest SMBIOS specification, we keep up with the latest changes defined in the specification. The table below describe the recommended SMBIOS settings along with guidance on what type of information should be in these fields. Having these fields populated with data pertaining to each individual system allows system administrators the ability to remotely identify and manage these systems. Computer Hardware IDs (CHIDs) are generated using the values from this table, and care and thought should be given to setting these.
 
 To add uniformity to SMBIOS to better identify device information, Microsoft recommends the following as guidance when populating SMBIOS fields. The below SMBIOS data is also collected and/or used in various capacities. The data going into these fields should be planned in detail before populating using tools provided by BIOS/Firmware vendors. The hash generated for CHID targeting is based off data populating these fields.
 
@@ -43,97 +43,101 @@ Though this table is similarly listed in the "Windows 10 Driver Publishing Workf
             <td>"Family"</td>
             <td>System Information (Type 1)</td>
             <td>String</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>1Ah</td>
+            <td>64</td>
+            <td>"A11"</td>
         </tr>
         <tr>
             <td>"Product Name"</td>
             <td>System Information (Type 1)</td>
             <td>String</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>05h</td>
+            <td>64</td>
+            <td>"A11 a110001"</td>
         </tr>
         <tr>
             <td>"Baseboard Product"</td>
             <td>Baseboard Information (Type 2)</td>
             <td>String</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>05h</td>
+            <td>32</td>
+            <td>"bb03"</td>
         </tr>
         <tr>
             <td>"SKU Number"</td>
             <td>System Information (Type 1)</td>
             <td>String</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>19h</td>
+            <td>32</td>
+            <td>"A11a11001-EU-04"</td>
         </tr>
         <tr>
             <td>"Serial Number"</td>
             <td>System Information (Type 1)</td>
             <td>String</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>07h</td>
+            <td></td>
+            <td>"A1B2C3456789ABC"</td>
         </tr>
         <tr>
             <td>"UUID"</td>
             <td>System Information (Type 1)</td>
             <td>Varies</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>08h</td>
+            <td>16</td>
+            <td>Universal unique ID number(br>See section 7.2.1. in <a href="http://www.dmtf.org/standards/smbios">DMTF SMBIOS Specification 3.1</a> or later.</td>
         </tr>
         <tr>
             <td>"Enclosure Type"</td>
             <td>System Enclosure (Type 3) </td>
             <td>Byte</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>05h</td>
+            <td>N/A</td>
+            <td>"detachable"</td>
         </tr>
         <tr>
             <td>BIOS Vendor</td>
             <td>BIOS Information (Type 0)</td>
             <td>Byte</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>04h</td>
+            <td>String</td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td>BIOS Version </td>
             <td>BIOS Information (Type 0)</td>
             <td>Byte</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>05h</td>
+            <td>String</td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td>BIOS Major Release</td>
             <td>BIOS Information (Type 0)</td>
             <td>Byte</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>14h</td>
+            <td>Varies</td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td>BIOS Minor Release</td>
             <td>BIOS Information (Type 0)</td>
             <td>Byte</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td>15h</td>
+            <td>Varies</td>
+            <td></td>
+            <td></td>
         </tr>
     </tbody>
 </table>
 
+
+
+
+## Test section
 
 | "Manufacturer"      | System Information (Type 1)    | String    | 04h        | 32         |  | "Contoso"                                                                                                                |
 | "Family"            | System Information (Type 1)    | String    | 1Ah        | 64         |  | "A11"                                                                                                                    |
@@ -142,11 +146,11 @@ Though this table is similarly listed in the "Windows 10 Driver Publishing Workf
 | "SKU Number"        | System Information (Type 1)    | String    | 19h        | 32         |  | "A11a11001-EU-04"                                                                                                        |
 | "Serial Number"     | System Information (Type 1)    | String    | 07h        |            |  | "A1B2C3456789ABC"                                                                                                        |
 | "UUID"              | System Information (Type 1)    | Varies    | 08h        | 16 bytes   |  | Universal unique ID number; see section 7.2.1. in [DMTF SMBIOS Spec](http://www.dmtf.org/standards/smbios) 3.1 or later. "{00112233-4455-6677-8899-AABBCCDDEEFF}"                                                                                  |
-| "Enclosure Type"    | System Enclosure (Type 3)                        | Byte      | 05h        | n/a        |  | "detachable"                                                                                                             |
-| BIOS Vendor         | BIOS information (Type 0)                        | Byte      | 04h        | String     |                                                                                                                        
-| BIOS Version        | BIOS Information  (Type 0)                        | Byte      | 05h        | String     | 
-| BIOS Major Release  | BIOS Information (Type 0)                        | Byte      | 14h        | Varies     |                                                                             |
-| BIOS Minor Release  | BIOS Information (Type 0)                        | Byte      | 15h        | Varies     |
+| "Enclosure Type"    | System Enclosure (Type 3)      | Byte      | 05h        | n/a        |  | "detachable"                                                                                                             |
+| BIOS Vendor         | BIOS information (Type 0)      | Byte      | 04h        | String     |                                                                                                                        
+| BIOS Version        | BIOS Information (Type 0)      | Byte      | 05h        | String     | 
+| BIOS Major Release  | BIOS Information (Type 0)      | Byte      | 14h        | Varies     |  
+| BIOS Minor Release  | BIOS Information (Type 0)      | Byte      | 15h        | Varies     |
 
 
 
