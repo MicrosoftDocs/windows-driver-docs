@@ -115,12 +115,30 @@ You can create a new bug online, and then submit it to be filed with Microsoft.
     </tbody>
     </table>
 
-     
+5. Click **Browse** below the Attachments label to attach a file to the bug. (Recommended)
 
-5.  Click **Browse** below the Attachments label to attach a file to the bug. (Optional)
+  Providing data at the time of bug submission helps Microsoft efficiently manage the bug process. Please use the appropriate data collection process for the specific issue being reported:
 
-    Please include all files as appropriate so that Microsoft can analyze the issue quickly. For Windows deployment/setup issues, please attach the following files in zip format to speed up the diagnosis:
+  **For Windows Phone and IoT(ARM) devices**:
+    1. download the [FieldMedic tool](http://www.windowsphone.com/en-us/store/app/field-medic/73c58570-d5a7-46f8-b1b2-2a90024fc29c) and run it on the devices that reproduce the issue you are reporting.
+    > [!NOTE]
+    > Be sure that all providers associated with the problem you are reporting are enabled. This can be done by going to the **Advanced** menu within Field Medic, and selecting **Choose which ETW Providers ...**.
 
+  **For Windows x86 and x64 devices**: We recommend using the  [UCSLogTool](https://www.microsoft.com/en-us/download/details.aspx?id=54322) log collection tool. This tool will gather logs and traces pertinent to the specific feature area selected. When using this tool, follow the below steps:
+    1. Download and install UCSLogTool on the problem device. When the installation completes, launch the tool using its desktop short-cut.
+    2. After UCSLogTool launches you will be presented with a user interface within the Command Prompt. Locate the scenario or feature that is closest to the problem you are reporting, enter the corresponding number, and press enter.
+    3. After you have selected the scenario to be traced, a list of relevant features will be displayed. You can view additional features by entering “Y”, or continue by entering “N”.
+    4. By default, any feature you select will include the "general log collection" feature. Once you have selected the correct traces, follow the prompts to either add additional features or to continue with the current selection.
+    5. You will be prompted to keep the temporary folder containing a copy of the trace data. Follow the prompt, and press enter.
+    6. After the tool has completed collecting the traces, the collected trace data and logs will be compressed into a single zip file on the desktop. For example: `GeneralDataCollection_15063.rs2_release.170317-1834.zip`
+    7. Attach this .zip file to the bug
+    > [!IMPORTANT]
+    > Do not rename the file as there are automated processes that check these files for validity
+
+    > [!NOTE]
+    > Please note the following:
+
+    > * If you are unable to execute the USCLogTool due to the system state, please add the following files in a .zip format, and attach it to the bug.
     ``` syntax
     %windir%\Panther\*.*
     %windir%\inf\setupap.dev.log
@@ -132,21 +150,17 @@ You can create a new bug online, and then submit it to be filed with Microsoft.
     %windir%\*.dmp (if BSOD issue)
     ```
 
-    For Display/GPU-related issues please include:
-
+    > * For Display/GPU-related issues please include:
     ``` syntax
     dxdiag log [start - dxdiag.exe - save all info]
     dispdiag log [run dispdiag.exe from command-prompt and send the .DAT file]
     ```
 
-6.  When all information is complete, click **Save** at the top of the form.
+    > * The Windows installation and upgrade process might place the temporary setup files on a different drive than the one you are installing to. You may need to check all drives on the system to find the logs and setup files.
 
- 
+    > * We recommend submitting a memory dump file when the problem system is in a non-responsive state. This file will help Microsoft investigate the issue you are encountering.
 
- 
+6. When all information is complete, click **Save** at the top of the form.
+
 
 [Send comments about this topic to Microsoft](mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback%20%5Bhw_dashboard\hw_dashboard%5D:%20File%20a%20New%20Bug%20%20RELEASE:%20%281/3/2017%29&body=%0A%0APRIVACY%20STATEMENT%0A%0AWe%20use%20your%20feedback%20to%20improve%20the%20documentation.%20We%20don't%20use%20your%20email%20address%20for%20any%20other%20purpose,%20and%20we'll%20remove%20your%20email%20address%20from%20our%20system%20after%20the%20issue%20that%20you're%20reporting%20is%20fixed.%20While%20we're%20working%20to%20fix%20this%20issue,%20we%20might%20send%20you%20an%20email%20message%20to%20ask%20for%20more%20info.%20Later,%20we%20might%20also%20send%20you%20an%20email%20message%20to%20let%20you%20know%20that%20we've%20addressed%20your%20feedback.%0A%0AFor%20more%20info%20about%20Microsoft's%20privacy%20policy,%20see%20http://privacy.microsoft.com/default.aspx. "Send comments about this topic to Microsoft")
-
-
-
-
