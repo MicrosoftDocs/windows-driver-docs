@@ -19,10 +19,14 @@
     }
   ],
   "branch_target_mapping": {
+     "duncan_mos_rs3_pdf": [
+        "Publish",
+        "Pdf"
+    ],
     "live": [
         "Publish",
         "Pdf"
-    ]
+    ]   
   },
   "Targets": {
     "Pdf": {
