@@ -125,17 +125,24 @@ You can create a new bug online, and then submit it to be filed with Microsoft.
     > Be sure that all providers associated with the problem you are reporting are enabled. This can be done by going to the **Advanced** menu within Field Medic, and selecting **Choose which ETW Providers ...**.
 
   **For Windows x86 and x64 devices**: We recommend using the  [UCSLogTool](https://www.microsoft.com/en-us/download/details.aspx?id=54322) log collection tool. This tool will gather logs and traces pertinent to the specific feature area selected. When using this tool, follow the below steps:
+
     1. Download and install UCSLogTool on the problem device. When the installation completes, launch the tool using its desktop short-cut.
+
     2. After UCSLogTool launches you will be presented with a user interface within the Command Prompt. Locate the scenario or feature that is closest to the problem you are reporting, enter the corresponding number, and press enter.
+
     3. After you have selected the scenario to be traced, a list of relevant features will be displayed. You can view additional features by entering “Y”, or continue by entering “N”.
+    
     4. By default, any feature you select will include the "general log collection" feature. Once you have selected the correct traces, follow the prompts to either add additional features or to continue with the current selection.
+
     5. You will be prompted to keep the temporary folder containing a copy of the trace data. Follow the prompt, and press enter.
+
     6. After the tool has completed collecting the traces, the collected trace data and logs will be compressed into a single zip file on the desktop. For example: `GeneralDataCollection_15063.rs2_release.170317-1834.zip`
+
     > [!IMPORTANT]
     > Do not rename the file as there are automated processes that check these files for validity
 
     7. Attach this .zip file to the bug
-    
+
     > [!NOTE]
     > Please note the following:
 
