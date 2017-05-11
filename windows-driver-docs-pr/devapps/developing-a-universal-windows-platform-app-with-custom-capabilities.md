@@ -37,8 +37,8 @@ reserve a name for your app once you've created a store profile.
 To create a Windows Store account, go to the [Windows Store apps sign up
 page](http://go.microsoft.com/fwlink/p/?LinkId=302197) and click Sign up
 now. For more information on how to Create a Windows Store developer
-account, see[ Opening a developer
-account](accounthttps://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account).
+account, see [Opening a developer
+account](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account).
 
 ## Contacting the Custom Capability Owner
 
