@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Finding and Mapping Hardware Resources in UMDF 1.x Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 If you are using UMDF version 2.0 or later, see [Finding and Mapping Hardware Resources](finding-and-mapping-hardware-resources.md).
 

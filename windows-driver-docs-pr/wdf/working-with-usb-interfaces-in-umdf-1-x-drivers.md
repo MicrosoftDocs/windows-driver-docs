@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Working with USB Interfaces in UMDF 1.x Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework represents each USB interface as a framework USB interface object. When a UMDF driver creates a framework USB device object, the framework creates a framework USB interface object for each USB interface that the device supports.
 

@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Servicing an Interrupt
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 Servicing an interrupt consists of two steps:
 

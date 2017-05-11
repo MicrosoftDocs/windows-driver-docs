@@ -16,6 +16,7 @@ ms.technology: windows-devices
 
 # UMDF Driver Tasks
 
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 ## In this section
 
