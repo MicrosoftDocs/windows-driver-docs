@@ -131,10 +131,11 @@ You can create a new bug online, and then submit it to be filed with Microsoft.
     4. By default, any feature you select will include the "general log collection" feature. Once you have selected the correct traces, follow the prompts to either add additional features or to continue with the current selection.
     5. You will be prompted to keep the temporary folder containing a copy of the trace data. Follow the prompt, and press enter.
     6. After the tool has completed collecting the traces, the collected trace data and logs will be compressed into a single zip file on the desktop. For example: `GeneralDataCollection_15063.rs2_release.170317-1834.zip`
-    7. Attach this .zip file to the bug
     > [!IMPORTANT]
     > Do not rename the file as there are automated processes that check these files for validity
 
+    7. Attach this .zip file to the bug
+    
     > [!NOTE]
     > Please note the following:
 
