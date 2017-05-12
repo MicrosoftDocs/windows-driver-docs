@@ -19,7 +19,6 @@ Use the sections in this topic when you are planning to add a new APN to the bas
 
 ## The APN update process
 
-
 To connect to a mobile broadband network, the user is typically required to provide the following information:
 
 -   On GSM networks, an Access Point Name (APN) such as "data.contoso.com" is required.
