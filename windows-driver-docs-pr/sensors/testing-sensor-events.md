@@ -22,7 +22,7 @@ The Sensor Diagnostic Tool lets you test support for events in your driver and f
 The following procedure describes how to configure the diagnostic tool to capture events for an accelerometer.
 
 1.  Expand the node for the accelerometer in the left Sensors pane and make sure both the **CONNECTED** and **SUBSCRIBED** boxes are checked.
-2.  In the **Events** menu make sure **Show Events** is checked.
+2.  In the **Events** menu, verify that **Show Events** is checked.
 3.  Select the Accelerometer node in the left pane.
 4.  Rotate the device and view the event data in the right pane.
 
@@ -48,7 +48,8 @@ Your data will be logged to the file that you specified in step 3. XML logging i
 
 In addition to logging sensor data as XML, you can also log it in CSV files. If this is necessary, follow these steps. 
 
-*Note:* You may need to run the program as an administrator for this to work properly.
+> [!NOTE]
+> You may need to run the program as an administrator for this to work properly.
 
 1.  Configure the Sensor Diagnostic Tool to capture event data (See the first section in this topic.)
 2.  In the **Sensors** menu, choose the **Enable CSV Logging** menu option.

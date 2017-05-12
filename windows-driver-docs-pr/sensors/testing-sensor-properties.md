@@ -21,7 +21,7 @@ The Sensor Diagnostic Tool lets you test your driver and firmware support for da
 
 The following procedure describes how to configure the diagnostic tool to retrieve an accelerometer reading.
 
-1.  Expand the node for the accelerometer in the left Sensors pane; check the **CONNECTED** box, and uncheck the **SUBSCRIBED** box.
+1.  Expand the node for the accelerometer in the left Sensors pane. Check the **CONNECTED** box and uncheck the **SUBSCRIBED** box.
 2.  Rotate the accelerometer and hold in place.
 3.  Click the **Refresh Data/Execute** button and view the retrieved data in the Data section of the right pane.
 
@@ -30,7 +30,7 @@ The Data section of the right pane contains the updated data for your sensor. Th
 ## Configuring the Sensor Diagnostic Tool for synchronous polling
 
 
-The following procedure describes how to configure the diagnostic tool to conduct synchronous polling of the accelerometer. In other words, this allows you to get a data reading from the sensor at a regular interval. =
+The following procedure describes how to configure the diagnostic tool to conduct synchronous polling of the accelerometer. In other words, this allows you to get a data reading from the sensor at a regular interval.
 
 1.  Expand the node for the accelerometer in the left Sensors pane; check the **CONNECTED** box and uncheck the **SUBSCRIBED** box.
 2.  In the **Automatic Data Request** textbox, enter your desired polling interval in milliseconds. (Note that an interval of zero disables synchronous polling.)

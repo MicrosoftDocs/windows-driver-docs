@@ -42,7 +42,7 @@ For example, if your driver development computer is an x64-based machine, and yo
 *C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\sensordiagnostictool.exe*
 Once your sensor or location driver is installed and your hardware is attached to your PC, the tool immediately recognizes and records your device in the list of available sensors.
 
-The following image shows the Sensor Diagnostic Tool startup screen when several sensors are connected to a PC. The sensors available on the PC are shown in the left window
+The following image shows the Sensor Diagnostic Tool startup screen when several sensors are connected to a PC. The sensors available on the PC are shown in the left pane.
 
 ![sensor diagnostic tool: startup](images/sdt-startup.png)
 
