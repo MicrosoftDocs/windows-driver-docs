@@ -7,17 +7,13 @@ keywords: ["assembly debugging", "assembly mode", "assembly debugging, overview"
 
 # Debugging in Assembly Mode
 
-
-## <span id="ddk_debugging_in_assembly_mode_dbg"></span><span id="DDK_DEBUGGING_IN_ASSEMBLY_MODE_DBG"></span>
-
-
 If you have C or C++ source files for your application, you can use the debugger much more powerfully if you [debug in source mode](debugging-in-source-mode.md).
 
 However, there are many times you cannot perform source debugging. You might not have the source files for your application. You might be debugging someone else's code. You might not have built your executable files with full .pdb symbols. And even if you can do source debugging on your application, you might have to trace Microsoft Windows routines that your application calls or that are used to load your application.
 
 In these situations, you have to debug in assembly mode. Moreover, assembly mode has many useful features that are not present in source debugging. The debugger automatically displays the contents of memory locations and registers as they are accessed and displays the address of the program counter. This display makes assembly debugging a valuable tool that you can use together with source debugging.
 
-### <span id="disassembly_code"></span><span id="DISASSEMBLY_CODE"></span>Disassembly Code
+### Disassembly Code
 
 The debugger primarily analyzes binary executable code. Instead of displaying this code in raw format, the debugger *disassembles* this code. That is, the debugger converts the code from machine language to assembly language.
 
@@ -33,7 +29,7 @@ You can display the resulting code (known as *disassembly code*) in several diff
 
 -   The [**ux (Unassemble x86 BIOS)**](https://msdn.microsoft.com/library/windows/hardware/ff560234) command disassembles and displays the x86-based BIOS code instruction set at a specified address.
 
--   (WinDbg only) The [disassembly window](debugger-view---disassembly) disassembles and displays a specified section of machine language. this window is automatically active if you select the **automatically open disassembly** command on the **window** menu. you can also open this window by clicking **disassembly** on the **view** menu, pressing alt+7, or pressing the **disassembly (alt+7)** button (![screen shot of the disassembly button](images/tbdisasm2.png)) on the WinDbg toolbar.
+-   (WinDbg only) The disassembly window disassembles and displays a specified section of machine language. this window is automatically active if you select the **automatically open disassembly** command on the **window** menu. you can also open this window by clicking **disassembly** on the **view** menu, pressing alt+7, or pressing the **disassembly (alt+7)** button (![screen shot of the disassembly button](images/tbdisasm2.png)) on the WinDbg toolbar.
 
 The disassembly display appears in four columns: address offset, binary code, assembly language mnemonic, and assembly language details. The following example shows this display.
 
@@ -55,7 +51,7 @@ You can also use the following commands to manipulate assembly code:
 
 -   The [**a (Assemble)**](https://msdn.microsoft.com/library/windows/hardware/ff538153) command can take assembly instructions and translate them into binary machine code.
 
-### <span id="assembly_mode_and_source_mode"></span><span id="ASSEMBLY_MODE_AND_SOURCE_MODE"></span>Assembly Mode and Source Mode
+### Assembly Mode and Source Mode
 
 The debugger has two different operating modes: *assembly mode* and *source mode*.
 
@@ -75,7 +71,7 @@ In WinDbg, when you are in assembly mode, **ASM** appears visible on the status 
 
 The shortcut menu in WinDbg's Disassembly window includes the **Highlight instructions from the current source line** command. This command highlights all of the instructions that correspond to the current source line. Frequently, a single source line corresponds to multiple assembly instructions. If code has been optimized, these assembly instructions might not be consecutive. The **Highlight instructions from the current source line** command enables you to find all of the instructions that were assembled from the current source line.
 
-### <span id="assembly_language_source_files"></span><span id="ASSEMBLY_LANGUAGE_SOURCE_FILES"></span>Assembly Language Source Files
+### Assembly Language Source Files
 
 If your application was written in assembly language, the disassembly that the debugger produces might not exactly match your original code. In particular, NO-OPs and comments will not be present.
 

@@ -46,7 +46,7 @@ If the application throws an exception, it breaks into the debugger. Source info
 
 After you have reached a thread that you have source files for, you can use the Debugger Command window to execute source debugging commands. If you are using WinDbg, the [Source window](source-window.md) appears. If you have already opened a Source window by clicking **Open Source File** on the **File** menu, WinDbg typically create a new window for the source. You can close the previous window without affecting the debugging process.
 
-### <span id="source_debugging_in_the_windbg_gui"></span><span id="SOURCE_DEBUGGING_IN_THE_WINDBG_GUI"></span>Source Debugging in the WinDbg GUI
+### Source Debugging in the WinDbg GUI
 
 If you are using WinDbg, a Source window appears as soon as the program counter is in code that the debugger has source information for.
 
@@ -58,13 +58,13 @@ If you are in source mode, the appropriate Source window moves to the foreground
 
 As you move through the application, WinDbg highlights your location in the Source window and the Disassembly window. Lines at which breakpoints are set are also highlighted. The source code is colored according to the parsing of the language. If the Source window has been selected, you can hover over a symbol with the mouse to evaluate it. For more information about these features and how to control them, see [Source Windows](source-window.md).
 
-To activate source mode in WinDbg, use the [**l+t**](debugger-l---l---set-source-options-) command, click **source mode** on the **debug** menu, or click the **source mode on** button (![screen shot of the source mode on button](images/tbsrc.png)) on the toolbar.
+To activate source mode in WinDbg, use the **l+t** command, click **source mode** on the **debug** menu, or click the **source mode on** button (![screen shot of the source mode on button](images/tbsrc.png)) on the toolbar.
 
 When source mode is active, the **ASM** indicator appears unavailable on the status bar.
 
 You can view or alter the values of any local variables as you step through a function in source mode. For more information, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-### <span id="source_debugging_in_the_debugger_command_window"></span><span id="SOURCE_DEBUGGING_IN_THE_DEBUGGER_COMMAND_WINDOW"></span>Source Debugging in the Debugger Command Window
+### Source Debugging in the Debugger Command Window
 
 If you are using CDB, you do not have a separate Source window. However, you can still view your progress as you step through the source.
 
@@ -100,7 +100,7 @@ If you have to view each assembly instruction to determine offsets or memory inf
 
 All of these commands are available in WinDbg and in CDB. You can use the commands to view source line information from WinDbg's [Debugger Command window](debugger-command-window.md) instead of from the Source window.
 
-### <span id="source_lines_and_offsets"></span><span id="SOURCE_LINES_AND_OFFSETS"></span>Source Lines and Offsets
+### Source Lines and Offsets
 
 You can also perform source debugging by using the expression evaluator to determine the offset that corresponds to a specific source line.
 
@@ -124,7 +124,7 @@ bp `source.c:31`
 
 For more information, see [Source Line Syntax](https://msdn.microsoft.com/library/windows/hardware/ff556902) and [Using Breakpoints](using-breakpoints.md).
 
-### <span id="stepping_and_tracing_in_source_mode"></span><span id="STEPPING_AND_TRACING_IN_SOURCE_MODE"></span>Stepping and Tracing in Source Mode
+### Stepping and Tracing in Source Mode
 
 When you are debugging in source mode, there can be multiple function calls on a single source line. You cannot use the **p** and **t** commands to separate these function calls.
 

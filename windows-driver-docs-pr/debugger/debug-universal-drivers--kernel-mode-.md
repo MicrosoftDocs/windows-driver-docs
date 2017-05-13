@@ -4,7 +4,7 @@ description: This lab provides hands-on exercises that demonstrate how to debug 
 ms.assetid: 4A31451C-FC7E-4C5F-B4EB-FBBAC8DADF9E
 ---
 
-# <span id="debugger.debug_universal_drivers__kernel-mode_"></span>Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)
+# Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)
 
 
 This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel mode device driver.
@@ -13,7 +13,7 @@ Microsoft Windows Debugger (WinDbg) is a powerful Windows-based debugging tool t
 
 WinDbg can step through source code, set breakpoints, view variables (including C++ objects), stack traces, and memory. Its Debugger Command window allows the user to issue a wide variety of commands.
 
-## <span id="Lab_setup"></span><span id="lab_setup"></span><span id="LAB_SETUP"></span>Lab setup
+## Lab setup
 
 
 You will need the following hardware to be able to complete the lab.
@@ -32,17 +32,17 @@ You will need the following software to be able to complete the lab.
 
 For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://developer.microsoft.com/windows/hardware/windows-driver-kit)
 
-## <span id="Sysvad_debugging_walkthrough_overview"></span><span id="sysvad_debugging_walkthrough_overview"></span><span id="SYSVAD_DEBUGGING_WALKTHROUGH_OVERVIEW"></span>Sysvad debugging walkthrough overview
+## >Sysvad debugging walkthrough overview
 
 
 This topic will walk through the process to debug a kernel mode driver. The exercises use the sysvad virtual audio driver sample. Because the sysvad audio driver doesn't interact with actual audio hardware it can be used on most devices. The walkthrough will cover the following tasks:
 
--   [Section 1: Connect to a kernel mode WinDbg session](#connectto)
--   [Section 2: Kernel mode debugging commands and techniques](#kernelmodedebuggingcommandsandtechniques)
--   [Section 3: Download and build the Sysvad audio driver](#section3-download-build)
--   [Section 4: Install the Sysvad audio driver on the target system](#section4-install)
--   [Section 5: Use WinDbg to display information about the driver](#usewindbgtodisplayinformation)
--   [Section 6: Display plug and play device tree information](#displayingtheplugandplaydevicetree)
+-   [Section 1: Connect to a kernel mode WinDbg session](#section-1)
+-   [Section 2: Kernel mode debugging commands and techniques](#secetion-2)
+-   [Section 3: Download and build the Sysvad audio driver](#section-3)
+-   [Section 4: Install the Sysvad audio driver on the target system](#section-4)
+-   [Section 5: Use WinDbg to display information about the driver](#section5)
+-   [Section 6: Display plug and play device tree information](#section6)
 -   [Section 7: Work with breakpoints and source code](#workingwithbreakpoints)
 -   [Section 8: Look at variables](#lookingatvariables)
 -   [Section 9: View call stacks](#viewingcallstacks)
@@ -52,12 +52,12 @@ This topic will walk through the process to debug a kernel mode driver. The exer
 -   [Section 13: Ending the WinDbg session](#endingthesession)
 -   [Section 14: Windows debugging resources](#windowsdebuggingresources)
 
-## <span id="Echo_Driver_Lab"></span><span id="echo_driver_lab"></span><span id="ECHO_DRIVER_LAB"></span>Echo Driver Lab
+## Echo Driver Lab
 
 
 The Echo driver is a simpler driver then the Sysvad audio driver. If you are new to WinDbg, you may want to consider first completing the [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). This lab reuses the setup directions from that lab, so if you have completed that lab you will be able to skip section 1 and 2.
 
-## <span id="connectto"></span><span id="CONNECTTO"></span>Section 1: Connect to a kernel mode WinDbg session
+## Section 1: Connect to a kernel mode WinDbg session
 
 
 *In Section 1, you will configure network debugging on the host and target system.*
@@ -74,7 +74,7 @@ The steps in the lab assume that you are using a cross over network cable, but t
 
 To work with kernel mode applications and using Windbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://msdn.microsoft.com/windows-drivers/develop/preparing_a_computer_for_manual_driver_deployment) and [Setting Up Kernel-Mode Debugging over a Network Cable Manually](setting-up-a-network-debugging-connection.md).
 
-### <span id="Configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="configure__kernel_mode_debugging_using_a_crossover_ethernet_cable"></span><span id="CONFIGURE__KERNEL_MODE_DEBUGGING_USING_A_CROSSOVER_ETHERNET_CABLE"></span>Configure kernel–mode debugging using a crossover ethernet cable
+### Configure kernel–mode debugging using a crossover ethernet cable
 
 Follow the next steps to enable kernel mode debugging on the target system.
 
@@ -200,8 +200,7 @@ The Debugger Command window is split into two panes. You type commands in the sm
 
 In the command entry pane, use the up arrow and down arrow keys to scroll through the command history. When a command appears, you can edit it or press **ENTER** to run the command.
 
-## <span id="KernelModeDebuggingCommandsAndTechniques"></span><span id="kernelmodedebuggingcommandsandtechniques"></span><span id="KERNELMODEDEBUGGINGCOMMANDSANDTECHNIQUES"></span>Section 2: Kernel mode debugging commands and techniques
-
+## Section 2: Kernel mode debugging commands and techniques
 
 *In Section 2, you will use debug commands to display information about the target system.*
 
@@ -270,7 +269,7 @@ fffff801`094d9000 fffff801`09561000   CI         (export symbols)       CI.dll
 
 Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
 
-## <span id="Section3_Download_Build"></span><span id="section3_download_build"></span><span id="SECTION3_DOWNLOAD_BUILD"></span>Section 3: Download and build the Sysvad audio driver
+## Section 3: Download and build the Sysvad audio driver
 
 
 *In Section 3, you will download and build the Sysvad audio driver.*
@@ -354,8 +353,7 @@ To download and build the Sysvad sample audio driver, complete the following ste
 
 In the next section, you will copy the code to the target system, and install and test the driver.
 
-## <span id="Section4_Install"></span><span id="section4_install"></span><span id="SECTION4_INSTALL"></span>Section 4: Install the Sysvad audio driver sample on the target system
-
+## Section 4: Install the Sysvad audio driver sample on the target system
 
 *In Section 4, you will use devcon to install the Sysvad audio driver.*
 
@@ -1123,7 +1121,7 @@ Tip: You may want to keep a copy of the Sysvad driver with out the breakpoint ad
     77b3b770 defe     __debugbreak
     ```
 
-## <span id="LookingAtVariables"></span><span id="lookingatvariables"></span><span id="LOOKINGATVARIABLES"></span>Section 8: Display variables
+## Section 8: Display variables
 
 
 *In Section 8, you will use debugger commands to display variables.*
@@ -1354,7 +1352,7 @@ It can be useful to examine variables as the code executes to confirm that the c
                   stream = 0x00000000`00000000
     ```
 
-## <span id="ViewingCallStacks"></span><span id="viewingcallstacks"></span><span id="VIEWINGCALLSTACKS"></span>Section 9: View call stacks
+## Section 9: View call stacks
 
 
 *In Section 9, you will view call stacks to examine caller/calle code.*
@@ -1431,7 +1429,7 @@ ffffd001`c3098210 long ntStatus = 0n0
 ffffd001`c3098218 class CMiniportWaveRTStream * stream = 0x00000000`00000000
 ```
 
-## <span id="DisplayingProcessesAndThreads"></span><span id="displayingprocessesandthreads"></span><span id="DISPLAYINGPROCESSESANDTHREADS"></span>Section 10: Display processes and threads
+## Section 10: Display processes and threads
 
 
 *In Section 10, you will use debugger commands to display processes and threads.*
@@ -1758,10 +1756,10 @@ For more information about threads and processes, see the following references o
 
  
 
-## <span id="IRQLRegistersMemory"></span><span id="irqlregistersmemory"></span><span id="IRQLREGISTERSMEMORY"></span>Section 11: IRQL, registers and disassembly
+## Section 11: IRQL, registers and disassembly
 
 
-### <span id="View_the_saved_IRQL"></span><span id="view_the_saved_irql"></span><span id="VIEW_THE_SAVED_IRQL"></span>View the saved IRQL
+### View the saved IRQL
 
 *In Section 11, you will display the IRQL, and the contents of the regsisters.*
 
@@ -1774,7 +1772,7 @@ The interrupt request level (IRQL) is used to manage the priority of interrupt s
 Debugger saved IRQL for processor 0x0 -- 2 (DISPATCH_LEVEL)
 ```
 
-### <span id="ViewingTheRegisters"></span><span id="viewingtheregisters"></span><span id="VIEWINGTHEREGISTERS"></span>View the registers and disassembly
+### View the registers and disassembly
 
 **View the registers**
 
@@ -1810,7 +1808,7 @@ You can disassemble the code that is under execution to view the assembly langua
 
 For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 Disassembly](annotated-x64-disassembly.md).
 
-## <span id="WorkingWithMemory"></span><span id="workingwithmemory"></span><span id="WORKINGWITHMEMORY"></span>Section 12: Work with memory
+## Section 12: Work with memory
 
 
 *In Section 12, you will use debugger commands to display the contents of memory.*
@@ -2079,9 +2077,6 @@ The following example shows how to overwrite memory.
     ffffb780`b7eee6d4  00 00 00 00 28 00 00 00-00 00 00 00 02 00 00 00  ....(...........
     ```
 
-**Note**  
-
- 
 
 Alternatively, you can modify the contents of the memory in a watch or locals window. For the watch window, you may see variables that are out of context of the current frame. Modifying them is not relevant if they are not in context.
 
@@ -2100,7 +2095,7 @@ Be sure and use the **g** command to let the target computer run code, so that i
 
 For more information, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) in the debugging reference documentation.
 
-## <span id="WindowsDebuggingResources"></span><span id="windowsdebuggingresources"></span><span id="WINDOWSDEBUGGINGRESOURCES"></span>Section 14: Debugging Resources
+## Section 14: Debugging Resources
 
 
 Additional information is available on Windows debugging. Note that some of these books will use older versions of Windows such as Windows Vista in their examples, but the concepts discussed are applicable to most versions of Windows.
