@@ -13,7 +13,7 @@ ms.technology: windows-devices
 # Using Work Items
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A work item is a task that a driver performs in an [*OnWorkItem*](https://msdn.microsoft.com/library/windows/hardware/hh463909) event callback function. These functions run asynchronously.
 

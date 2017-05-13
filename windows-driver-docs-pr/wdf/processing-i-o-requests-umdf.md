@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Processing I/O Requests
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 ## In this section
 

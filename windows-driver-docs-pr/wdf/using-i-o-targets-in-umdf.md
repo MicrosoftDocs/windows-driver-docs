@@ -20,7 +20,7 @@ ms.technology: windows-devices
 # Using I/O Targets in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 When a driver receives an I/O request, the driver might be able to process the request by itself, or it might require the assistance of other drivers. If the driver requires assistance, it can forward the request to another driver, or it can create one or more new requests and send them to another driver.
 

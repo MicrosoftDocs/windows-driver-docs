@@ -19,7 +19,7 @@ ms.technology: windows-devices
 # Adding a Device Overview
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The following figure shows an overview of how the framework adds a new device:
 

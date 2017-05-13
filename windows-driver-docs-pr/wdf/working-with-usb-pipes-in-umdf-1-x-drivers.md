@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Working with USB Pipes in UMDF 1.x Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework represents each pipe in a USB interface as a framework USB pipe object. When a driver configures a USB device, the framework creates a framework USB pipe object for each pipe in each selected interface. Pipe object methods enable a driver to:
 

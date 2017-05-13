@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Framework Objects
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The following table provides basic information about each framework object, links to the object's interface, and links to more information about the core framework objects.
 

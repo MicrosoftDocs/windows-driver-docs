@@ -18,7 +18,7 @@ ms.technology: windows-devices
 # Working with USB Devices in UMDF 1.x Drivers
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 The framework represents each USB device as a framework USB device object. A UMDF driver must create a framework USB device object before the driver can access the framework's support for USB I/O targets. UMDF provides USB device object methods that enable a UMDF driver to:
 

@@ -91,7 +91,7 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 <td><img src="images/test-c1.png" alt="Test" /></td>
 <td><ul>
 <li><p>Perform various functional and stress tests on systems and devices that expose a USB Type-C connector.</p>
-<p>[Test USB Type-C systems with MUTT ConnEx-C](test-usb-type-c-systems-with-mutt-connex-c.md)</p></li>
+<p>[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)</p></li>
 <li>Run USB tests included in the Windows Hardware Lab Kit (HLK) for Windows 10.
 <div class="alert">
 <strong>Note</strong>  Run USB function HLK tests with a C-to-A cable (searc for <strong>&quot;Windows USB Device&quot;</strong> in the HLK search box.

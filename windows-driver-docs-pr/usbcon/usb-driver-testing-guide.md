@@ -38,8 +38,8 @@ This section describes tools that you can use to test your USB hardware or softw
 <td><p>Describes various tools you can use to test USB devices and drivers.</p></td>
 </tr>
 <tr class="odd">
-<td><p>[Test USB Type-C systems with MUTT ConnEx-C](test-usb-type-c-systems-with-mutt-connex-c.md)</p></td>
-<td><p>The MUTT Connection Exerciser Type-C (MUTT ConnEx-C) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.</p></td>
+<td><p>[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)</p></td>
+<td><p>The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.</p></td>
 </tr>
 <tr class="even">
 <td><p>[USB Type-C manual interoperability test procedures](type.md)</p></td>

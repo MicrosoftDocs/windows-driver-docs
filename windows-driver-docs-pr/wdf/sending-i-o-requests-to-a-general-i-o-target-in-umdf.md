@@ -16,7 +16,7 @@ ms.technology: windows-devices
 # Sending I/O Requests to a General I/O Target in UMDF
 
 
-\[This topic applies to UMDF 1.*x*.\]
+[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
 
 A UMDF driver can send I/O requests to general I/O targets either synchronously or asynchronously.
 
