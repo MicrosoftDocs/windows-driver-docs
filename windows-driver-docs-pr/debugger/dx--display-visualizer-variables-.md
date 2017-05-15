@@ -687,7 +687,7 @@ This section illustrates how the built in debugger objects used with LINQ querie
 
 **View all devices**
 
-Use *Flatten* on the device tree to view all devices. This is similar to the [**!devinst**](debugger-_devinst) command.
+Use *Flatten* on the device tree to view all devices. 
 
 ```
  1: kd> dx @$cursession.Devices.DeviceTree.Flatten(n => n.Children)

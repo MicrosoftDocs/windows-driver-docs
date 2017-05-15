@@ -300,7 +300,7 @@ This option is off by default in all debuggers. Once the debugger is running, it
 
 This option is off by default in DBH. Once DBH is running, it can be turned on or off by using symopt +8000 or symopt -8000, respectively.
 
-### <span id="symopt_auto_publics"></span><span id="SYMOPT_AUTO_PUBLICS"></span>SYMOPT\_AUTO\_PUBLICS
+### <span id="symopt-auto-publics"></span><span id="SYMOPT-AUTO-PUBLICS"></span>SYMOPT\_AUTO\_PUBLICS
 
 This symbol option causes DbgHelp to search the public symbol table in a .pdb file only as a last resort. If any matches are found when searching the private symbol data, the public symbols will not be searched. This improves symbol search speed.
 

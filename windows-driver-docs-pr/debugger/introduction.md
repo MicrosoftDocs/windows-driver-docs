@@ -6,13 +6,9 @@ ms.assetid: fa52a1f0-9397-48a5-acbd-ce5347c0baef
 
 # Debugger Engine Introduction
 
-
-## <span id="ddk_introduction_dbx"></span><span id="DDK_INTRODUCTION_DBX"></span>
-
-
 This documentation describes how to use the debugger engine and how to write extensions that will run in WinDbg, KD, CDB, and NTSD. These debugger extensions can be used when performing user-mode or kernel-mode debugging on Microsoft Windows.
 
-### <span id="debugger_engine"></span><span id="DEBUGGER_ENGINE"></span>Debugger Engine
+### <span id="debugger-engine"></span>Debugger Engine
 
 The debugger engine provides an interface for examining and manipulating debugging targets in user-mode and kernel-mode on Microsoft Windows.
 
@@ -22,7 +18,7 @@ You can use the debugger engine to write both debugger extension libraries and s
 
 The debugger engine API is specified by the prototypes in the header file dbgeng.h.
 
-### <span id="incomplete_documentation"></span><span id="INCOMPLETE_DOCUMENTATION"></span>Incomplete Documentation
+### Incomplete Documentation
 
 This is a preliminary document and is currently incomplete.
 
