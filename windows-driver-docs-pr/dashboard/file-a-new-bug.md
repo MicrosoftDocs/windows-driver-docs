@@ -131,7 +131,7 @@ You can create a new bug online, and then submit it to be filed with Microsoft.
     2. After UCSLogTool launches you will be presented with a user interface within the Command Prompt. Locate the scenario or feature that is closest to the problem you are reporting, enter the corresponding number, and press enter.
 
     3. After you have selected the scenario to be traced, a list of relevant features will be displayed. You can view additional features by entering “Y”, or continue by entering “N”.
-    
+
     4. By default, any feature you select will include the "general log collection" feature. Once you have selected the correct traces, follow the prompts to either add additional features or to continue with the current selection.
 
     5. You will be prompted to keep the temporary folder containing a copy of the trace data. Follow the prompt, and press enter.
@@ -144,30 +144,17 @@ You can create a new bug online, and then submit it to be filed with Microsoft.
     7. Attach this .zip file to the bug
 
     > [!NOTE]
-    > Please note the following:
+    > If you are unable to execute the USCLogTool due to the system state, run the script manually by following the below steps:
+      1. Download and install the UCL Log Tool on a working system.
+      2. Copy the "UCSLogTool" directory (typically C:\Program Files\UCSLogTool) and its contents onto a USB Flash Drive.
+      3. Connect the flash drive to the problem system when booted to OOBE / WinPE.
+      4. Press Shift+F10 on the keyboard to get to a command prompt.
+      5. Change directory to the location on the USB Flash Drive where the UCSLogTool was copied to.
+      6. Run the following script manually to collect the “General Windows log collection”. UCSLogTool\WINDOWS_LOG\GetLogs.cmd
+      7. Once it completes copy the data onto the flash drive and attach to the bug in a .zip format.
 
-    > * If you are unable to execute the USCLogTool due to the system state, please add the following files in a .zip format, and attach it to the bug.
-    ``` syntax
-    %windir%\Panther\*.*
-    %windir%\inf\setupap.dev.log
-    %windir%\winsxs\popexec.log
-    %windir%\inf\setupapi.dev.log
-    %windir%\logs\cbs\cbs.log
-    %windir%\windowsupdate.log
-    %windir%\winsxs\pending*.xml
-    %windir%\*.dmp (if BSOD issue)
-    ```
-
-    > * For Display/GPU-related issues please include:
-    ``` syntax
-    dxdiag log [start - dxdiag.exe - save all info]
-    dispdiag log [run dispdiag.exe from command-prompt and send the .DAT file]
-    ```
-
-    > * The Windows installation and upgrade process might place the temporary setup files on a different drive than the one you are installing to. You may need to check all drives on the system to find the logs and setup files.
-
-    > * We recommend submitting a memory dump file when the problem system is in a non-responsive state. This file will help Microsoft investigate the issue you are encountering.
-
+      We recommend submitting a memory dump file when the problem system is in a non-responsive state. This file will help Microsoft investigate the issue you are encountering.
+      
 6. When all information is complete, click **Save** at the top of the form.
 
 
