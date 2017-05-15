@@ -1,6 +1,7 @@
 ---
 title: SMBIOS
 description: The SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system.
+author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 05/15/2017
 ms.topic: article
@@ -13,9 +14,9 @@ ms.technology: windows-devices
 
 SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system. By using the latest SMBIOS specification, we keep up with the latest changes defined in the specification. The table below describe the recommended SMBIOS settings along with guidance on what type of information should be in these fields. Having these fields populated with data pertaining to each individual system allows system administrators the ability to remotely identify and manage these systems. Computer Hardware IDs (CHIDs) are generated using the values from this table, and care and thought should be given to setting these.
 
-To add uniformity to SMBIOS to better identify device information, Microsoft recommends the following as guidance when populating SMBIOS fields. The below SMBIOS data is also collected and/or used in various capacities. The data going into these fields should be planned in detail before populating using tools provided by BIOS/Firmware vendors. The hash generated for CHID targeting is based off data populating these fields.
+To add uniformity to SMBIOS to better identify device information, we recommend the following as guidance when populating SMBIOS fields. The SMBIOS data below is also collected and used in various capacities. The data going into these fields should be planned in detail before populating using tools provided by BIOS/Firmware vendors. The hash generated for CHID targeting is based off of data populating these fields.
 
-Though this table is similarly listed in the "Windows 10 Driver Publishing Workflow" document on MSDN, this document prescribes level of detail that should also go into some of the fields helping to increase the level of specificity.
+Although this information is similar to that listed in the [Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx), the following tables prescribe additional levels of detail for some fields, helping to increase the level of specificity.
 
 ## Recommended settings when moving to SMBIOS 3.0
 
@@ -85,7 +86,7 @@ Though this table is similarly listed in the "Windows 10 Driver Publishing Workf
             <td>Varies</td>
             <td>08h</td>
             <td>16</td>
-            <td>Universal unique ID number(br>See section 7.2.1. in <a href="http://www.dmtf.org/standards/smbios">DMTF SMBIOS Specification 3.1</a> or later.</td>
+            <td>Universal unique ID number<br>See section 7.2.1. in <a href="http://www.dmtf.org/standards/smbios">DMTF SMBIOS Specification 3.1</a> or later.</td>
         </tr>
         <tr>
             <td>"Enclosure Type"</td>
@@ -136,88 +137,167 @@ Though this table is similarly listed in the "Windows 10 Driver Publishing Workf
 
 
 
-
-## Test section
-
-| "Manufacturer"      | System Information (Type 1)    | String    | 04h        | 32         |  | "Contoso"                                                                                                                |
-| "Family"            | System Information (Type 1)    | String    | 1Ah        | 64         |  | "A11"                                                                                                                    |
-| "Product Name"      | System Information (Type 1)    | String    | 05h        | 64         |  | "A11 a110001"                                                                                                            |
-| "Baseboard Product" | Baseboard Information (Type 2) | String    | 05h        | 32         |  | "bb03"                                                                                                                   |
-| "SKU Number"        | System Information (Type 1)    | String    | 19h        | 32         |  | "A11a11001-EU-04"                                                                                                        |
-| "Serial Number"     | System Information (Type 1)    | String    | 07h        |            |  | "A1B2C3456789ABC"                                                                                                        |
-| "UUID"              | System Information (Type 1)    | Varies    | 08h        | 16 bytes   |  | Universal unique ID number; see section 7.2.1. in [DMTF SMBIOS Spec](http://www.dmtf.org/standards/smbios) 3.1 or later. "{00112233-4455-6677-8899-AABBCCDDEEFF}"                                                                                  |
-| "Enclosure Type"    | System Enclosure (Type 3)      | Byte      | 05h        | n/a        |  | "detachable"                                                                                                             |
-| BIOS Vendor         | BIOS information (Type 0)      | Byte      | 04h        | String     |                                                                                                                        
-| BIOS Version        | BIOS Information (Type 0)      | Byte      | 05h        | String     | 
-| BIOS Major Release  | BIOS Information (Type 0)      | Byte      | 14h        | Varies     |  
-| BIOS Minor Release  | BIOS Information (Type 0)      | Byte      | 15h        | Varies     |
+**Note** SMBIOS fields starting with BIOS \* may be considered optional or recommended.<br>These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in resulting CHID.
 
 
+## TBD A
+
+<table>
+	<tbody>
+		<tr>
+			<td><b>Field name</b></td>
+			<td><b>DTMF.org description</b></td>
+			<td><b>Microsoft description</b></td>
+			<td><b>Field format</b></td>
+			<td><b>Hierarchy</b></td>
+		</tr>
+		<tr>
+			<td>Manufacturer</td>
+			<td>Number of null-terminated string.</td>
+			<td>The value in the "manufacturer" field identifies the company brand name under which the device is marketed to the end user. (for example, a brand name or logo imprinted on the device)</td>
+			<td>The format of the "manufacturer" field string is to match what end users identify as the company brand.</td>
+			<td>The “manufacturer” field is the first-level indicator to end users, representing the grouping of all devices sold by the company. This field should rarely, if ever, change.</td>
+		</tr>
+		<tr>
+			<td>Family</td>
+			<td>Number of null-terminated string.</td>>
+			<td>The value in the familyf field identifies the company sub-brand name, specific to a grouping of similar devices know as a product line, under which the device is marketed to end users. The "family" value excludes variance by components, device generation, manufactured year, SKU, or other factors. The "family" value is generally not specific enough to indicate an actual device, but rather product line marketed to end users.</td>
+			<td>The format of the “family” field string is to match what End Users identify as Company’s sub-brand name, specific to a product line. The “family” field string should not contain the “manufacturer” name.</td>
+			<td>The “family” field is the second-level indicator to End Users, representing a grouping of similar devices know as a product line. This field should remain consistent for the life of the product line.</td>
+		</tr>
+		<tr>
+			<td>Product Name</td>
+			<td>Number of null-terminated string.</td>
+			<td>The value in the “product name” field identifies Company’s specific model of device, without enumerating configuration variance. (for example, processor, memory, and storage variance) There are often several “product names” that are specific to model in a specific “family”, although generally no more than a dozen or so.</td>
+			<td>The format of the “product name” field string is to match what End Users see as the device model name or identifier value. The recommendation is to include the full value of the Family field followed by a single space and then the model name/identifier value.</td>
+			<td>The “product name” field is the third-level indicator to End Users, representing the specific model of device. A “product name” may last for the lifetime of the “family”, through multiple revisions or generations of the hardware where hardware revisions are not marketed as a new product to End Users.</td>
+		</tr>
+		<tr>
+			<td>Baseboard Product</td>
+			<td>Number of null-terminated string.</td>
+			<td>The value in the “baseboard product” field identifies the baseboard and should accurately reflect variances in baseboards across different devices in the same “family” and “product name”. This value must change when the baseboard in the device model changes and it may be used as an asset identifier for servicing.</td>
+			<td>The format of the “baseboard product” field string can be set by Company, and it does not need to align to end user marketing information.</td>
+			<td>The “baseboard product” field is the fourth-level indicator of devices to the company and is not marketed to end users. </td>
+		</tr>
+		<tr>
+			<td>Serial Number</td>
+			<td>Number of null-terminated string.</td>
+			<td>The information in this structure defines attributes of the overall system and is intended to be associated with the Component ID group of the system’s MIF. An SMBIOS implementation is associated with a single system instance and contains one and only one System Information (Type 1) structure.</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>UUID</td>
+			<td>A UUID is an identifier that is designed be unique across to both time and space. It requires no central registration process. The UUID is 128 bits in length. The format is described in RFC4122.</td>
+			<td>The value in this structure is a universally unique value as defined in the specification documents. This value is intended to be associated with this specific machine.</td>
+			<td>The field format follows the latest DTMF.org SMBIOS specification document to meet universal uniqueness.</td>
+			<td>The UUID field is not marketed to end users and is considered the seventh-level indicator of this device.</td>
+		</tr>
+		<tr>
+			<td>SKU Number</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>Enclosure Type</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>N/A</td>
+			<td>N/a</td>
+		</tr>
+		<tr>
+			<td>BIOS Vendor</td>
+			<td>String number of the BIOS vendor’s name</td>
+			<td>Defined in the DMTF SMBIOS specification 3.1 or later</td>
+			<td></td>
+			<td></td>
+		</tr>
+        <tr>
+			<td>BIOS Version</td>
+			<td>TBD</td>
+			<td>Defined in the DMTF SMBIOS specification 3.1 or later</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>BIOS Major Release</td>
+			<td>TBD</td>
+			<td>Defined in the DMTF SMBIOS specification 3.1 or later</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>BIOS Minor Release</td>
+			<td>Identifies the minor release of the System BIOS; for example, the value is 16h for revision 10.22 and 01h for revision 2.1.</td>
+			<td>Defined in the DMTF SMBIOS specification 3.1 or later</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
 
 
-SMBIOS fields starting with BIOS \* may be considered optional or recommended. These are used to build Computer Hardware ID (CHID) and ensure additional levels of uniqueness in resulting CHID.
 
-| **Field Name**      | **DTMF.org Description**                                                                                                                                                                                                                                                                                                                                                                      | **MS Field Description**                                                                                                                                                                                                                                                                                                                                                                                                                  | **Field Format**                                                                                                                                                                                                                                                    | **Hierarchy**                                                                                                                                                                                                                                                                                                 |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Manufacturer"      | Number of null-terminated string.                                                                                                                                                                                                                                                                                                                                                             | The value in the "manufacturer" field identifies Company’s brand name under which the device is marketed to the End User. (e.g. Brand name/logo imprinted on the device)                                                                                                                                                                                                                                                                  | The format of the "manufacturer" field string is to match what End Users identify as Company’s brand.                                                                                                                                                               | The "manufacturer" field is the first-level indicator to End Users, representing the grouping of all devices sold by Company. This field should rarely, if ever, change.                                                                                                                                      |
-| "Family"            | Number of null-terminated string.                                                                                                                                                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       This text string identifies the family to which a computer belongs. A family refers to a set of computers that are similar but not identical from a hardware or software point of view. Typically, a family is composed of different computer models, which have different configurations and pricing points. Computers in the same family often have similar branding and cosmetic features.  | The value in the "family" field identifies Company’s sub-brand name, specific to a grouping of similar devices know as a product line, under which the device is marketed to End Users. The "family" value excludes variance by components, device generation, manufactured year, SKU, or other factors. The "family" value is generally not specific enough to indicate an actual device, but rather product line marketed to End Users. | The format of the "family" field string is to match what End Users identify as Company’s sub-brand name, specific to a product line. The "family" field string should not contain the "manufacturer" name.                                                          | The "family" field is the second-level indicator to End Users, representing a grouping of similar devices know as a product line. This field should remain consistent for the life of the product line.                                                                                                       |
-| "Product Name"      | Number of null-terminated string.                                                                                                                                                                                                                                                                                                                                                             | The value in the "product name" field identifies Company’s specific model of device, without enumerating configuration variance. (e.g. processor, memory, & storage variance) There are often several "product names" that are specific to model in a specific "family", although generally no more than a dozen or so.                                                                                                                   | The format of the "product name" field string is to match what End Users see as the device model name or identifier value. The recommendation is to include the full value of the Family field followed by a single space and then the model name/identifier value. | The "product name" field is the third-level indicator to End Users, representing the specific model of device. A "product name" may last for the lifetime of the "family", through multiple revisions or generations of the hardware where hardware revisions are not marketed as a new product to End Users. |
-| "Baseboard Product" | Number of null-terminated string.                                                                                                                                                                                                                                                                                                                                                             | The value in the "baseboard product" field identifies the baseboard and should accurately reflect variances in baseboards across different devices in the same "family" and "product name". This value must change when the baseboard in the device model changes and it may be used as an asset identifier for servicing.                                                                                                                | The format of the "baseboard product" field string can be set by Company, and it does not need to align to End User marketing information.                                                                                                                          | The "baseboard product" field is the fourth-level indicator of devices to Company and is not marketed to End Users.                                                                                                                                                                                           |
-| "Serial Number"     | Number of null-terminated string                                                                                                                                                                                                                                                                                                                                                              | The information in this structure defines attributes of the overall system and is intended to be associated with the Component ID group of the system’s MIF. An SMBIOS implementation is associated with a single system instance and contains one and only one System Information (Type 1) structure.                                                                                                                                    | The format of the "Serial Number" field string is to match the Serial Number on the exterior of the device.                                                                                                                                                         | The "Serial Number" field is indicator of the Serial Number assigned from Company and is accessible on exterior of device. The "Serial Number" field is the Sixth-level indicator of devices                                                                                                                  |
-| "UUID"              | A UUID is an identifier that is designed to be unique across both time and space. It requires no central registration process. The UUID is 128 bits long. Its format is described in [RFC4122](https://www.ietf.org/rfc/rfc4122.txt).                                                                                                                                                         | The value in this structure is a universally unique value as defined in specification documents. This value is intended to be associated with this specific machine                                                                                                                                                                                                                                                                       | Field format follows DMTF.org latest SMBIOS Specification document to meet Universal Uniqueness.                                                                                                                                                                    | The "UUID" field is not marketed to End Users and is considered the Seventh-level indicator of this device                                                                                                                                                                                                    |
-| "SKU Number"        | Number of null-terminated string.                                                                                                                                                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       This text string identifies a particular computer configuration for sale. It is sometimes also called a product ID or purchase order number. This number is frequently found in existing fields, but there is no standard format. Typically for a given system board from a given OEM, there are tens of unique processor, memory, hard drive, and optical drive configurations.               | The value in the "SKU number" field identifies the device in a format that can be determined by Company. This field may include variations of the device determined by production run, shipment region, retailer, configuration variances. (e.g. processor, memory, & storage variance) This value can be used as an asset identifier for servicing and if it is not used by Company, it may be left blank.                               | The format of the "SKU number" field string can be set by Company, and it does not need to align to End User marketing information.                                                                                                                                 | The "SKU number" field is the fifth-level indicator of devices to Company and is not marketed to End Users.                                                                                                                                                                                                   |
-| "Enclosure Type"    | n/a                                                                                                                                                                                                                                                                                                                                                                                           | Defined in "Table 2" below                                                                                                                                                                                                                                                                                                                                                                                                                | n/a                                                                                                                                                                                                                                                                 | n/a                                                                                                                                                                                                                                                                                                           |
-| BIOS Vendor         | String number of the BIOS Vendor’s Name.                                                                                                                                                                                                                                                                                                                                                      | Defined in DMTF SMBIOS Spec 3.1 or later                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                               |
-| BIOS Version        | String number of the BIOS Version. This                                                                                                                                                                                                                                                                                                                                                       
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       value is a free-form string that may contain                                                                                                                                                                                                                                                                                                                                                   
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       Core and OEM version information.                                                                                                                                                                                                                                                                                                                                                              | Defined in DMTF SMBIOS Spec 3.1 or later                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                               |
-| BIOS Major Release  | Identifies the major release of the System                                                                                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       BIOS; for example, the value is 0Ah for                                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       revision 10.22 and 02h for revision 2.1.                                                                                                                                                                                                                                                                                                                                                       
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       This field or the System BIOS Minor                                                                                                                                                                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       Release field or both are updated each time                                                                                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       a System BIOS update for a given system is                                                                                                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       released.                                                                                                                                                                                                                                                                                                                                                                                      
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       If the system does not support the use of                                                                                                                                                                                                                                                                                                                                                      
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       this field, the value is 0FFh for both this field                                                                                                                                                                                                                                                                                                                                              
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       and the System BIOS Minor Release field.                                                                                                                                                                                                                                                                                                                                                       | Defined in DMTF SMBIOS Spec 3.1 or later                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                               |
-| BIOS Minor Release  | Identifies the minor release of the System                                                                                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       BIOS; for example, the value is 16h for                                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                      
-                       revision 10.22 and 01h for revision 2.1.                                                                                                                                                                                                                                                                                                                                                       | Defined in DMTF SMBIOS Spec 3.1 or later                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                               |
 
-| **"Enclosure Type"** | **Byte Value** | **OHR FFC/FFSC**     | **MS Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------|----------------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Desktop"            | 03h            | Desktop/Standard     | "Desktop" means a Customer System in a tower case and is not a portable Customer System. It does not include an integrated display and inputs.                                                                                                                                                                                                                                                                                                                                                                                 |
-| "Notebook"           | 0Ah            | Notebook/Standard    | "Notebook" means a Customer System with a clamshell form factor and has a non-detachable keyboard. Portable (08h) or Laptop (09h) are not to be used when identifying a "Notebook".                                                                                                                                                                                                                                                                                                                                            |
-| "All-in-One"         | 0Dh            | Desktop/AiO          | "All-in-One" means a Customer System that integrates a touch screen with other hardware components in a single chassis.                                                                                                                                                                                                                                                                                                                                                                                                        |
-| "Tablet"             | 1Eh            | Tablet/Standard      | "Tablet" means a Customer System that combines a display, rechargeable power source, and other components into a single chassis, and utilizes touch as its primary means of input. It does not include a physically attached keyboard. In the case where the Customer System’s form factor does not allow for a keyboard to be physically connected to the chassis, but a Bluetooth or other wireless keyboard is sold as an optional accessory to the End User, the "enclosure type" field is to be identified as a "Tablet". |
-| "Convertible"        | 1Fh            | Notebook/Convertible | "Convertible" means a Customer System that combines a display, rechargeable power source, and point device into a single chassis with an adjustable (any motion: flips, swivels, turns) display to be facing forward or facing away from the attached keyboard.                                                                                                                                                                                                                                                                |
-| "Detachable"         | 20h            | Tablet/Standard      | "Detachable" means a Customer System that combines a display, rechargeable power source, and pointing device into a single chassis together with a detachable keyboard. In the case where the Customer System’s form factor allows for a keyboard, not including Bluetooth or other wireless keyboards, to be physically connected to the chassis but the physical keyboard is sold as an optional accessory to the End User, the "enclosure type" field is to be identified as a "Detachable".                                |
+### TBD B
+
+<table>
+	<tbody>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+			<td>TBD</td>
+		</tr>
+	</tbody>
+</table>
+<p>TBD</p>
 
 
 
 ## Related resources
 
-[Download Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) 
+[Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) 
 
-[System Management BIOS DMTF Specifications page](http://www.dmtf.org/standards/smbios)                                                 
+[SMBIOS DMTF Specifications](http://www.dmtf.org/standards/smbios)                                                 
 
 
 
