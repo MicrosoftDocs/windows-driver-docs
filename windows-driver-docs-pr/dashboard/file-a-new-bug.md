@@ -146,12 +146,19 @@ You can create a new bug online, and then submit it to be filed with Microsoft.
     > [!NOTE]
     > If you are unable to execute the USCLogTool due to the system state, run the script manually by following the below steps:
       1. Download and install the UCS Log Tool on a working system.
+
       2. Copy the "UCSLogTool" directory (typically located in C:\Program Files\UCSLogTool) and its contents onto a USB Flash Drive.
+
       3. Boot the problem system to [Out-Of-Box Experience (OOBE)](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/boot-windows-to-audit-mode-or-oobe) or [Windows PE](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/manufacture/desktop/winpe-intro) and connect the flash drive.
+
       4. Press Shift+F10 on the keyboard to launch the command prompt.
+
       5. Change the working directory to the location of UCSLogTool on the USB flash drive.
+
       6. Run the following script manually to collect the “General Windows log collection”. `UCSLogTool\WINDOWS_LOG\GetLogs.cmd`
+
       7. Once the script finishes, copy the data onto the flash drive and compress it into a .zip file.
+      
       8. attach the .zip to the bug.
 
       We recommend submitting a memory dump file when the problem system is in a non-responsive state. This file will help Microsoft investigate the issue you are encountering.
