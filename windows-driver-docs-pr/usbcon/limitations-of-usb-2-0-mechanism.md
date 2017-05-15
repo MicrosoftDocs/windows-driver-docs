@@ -1,6 +1,7 @@
 ---
 Description: Describes the limitations of the Universal Serial Bus (USB) 2.0 Selective Suspend mechanism.
 title: Limitations of USB 2.0 mechanism
+author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article

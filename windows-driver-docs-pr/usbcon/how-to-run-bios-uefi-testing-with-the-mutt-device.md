@@ -1,6 +1,7 @@
 ---
 Description: BIOS/UEFI testing validates USB boot and handoff of the controller to the operating system.
 title: BIOS/UEFI testing with the MUTT devices
+author: windows-driver-content
 ms.author: windowsdriverdev
 ms.date: 04/20/2017
 ms.topic: article
