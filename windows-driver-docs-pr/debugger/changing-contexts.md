@@ -8,7 +8,7 @@ keywords: ["context", "logon session, context", "context, session context", "ses
 # Changing Contexts
 
 
-## <span id="ddk_changing_contexts_dbg"></span><span id="DDK_CHANGING_CONTEXTS_DBG"></span>
+## <span id="ddk-changing-contexts_dbg"></span><span id="DDK_CHANGING_CONTEXTS_DBG"></span>
 
 
 In kernel-mode debugging, there are many processes, threads, and sometimes user sessions that are executing at the same time. Therfore, phrases such as "virtual address 0x80002000" or "the **eax** register" are ambiguous. You must specify the *context* in which such phrases can be understood.
@@ -25,7 +25,7 @@ The debugger has five different contexts that you can set while you are debuggin
 
 5.  The local context determines how the debugger interprets local variables. This context is also known as the *scope*.
 
-### <span id="session_context"></span><span id="SESSION_CONTEXT"></span>Session Context
+### <span id="session-context"></span><span id="SESSION_CONTEXT"></span>Session Context
 
 In Windows XP and later versions of Windows, multiple logon sessions can run at the same time. Each logon session has its own processes.
 
@@ -35,7 +35,7 @@ The session context is used by the [**!sprocess**](-sprocess.md) and [**!spoolus
 
 When the session context is changed, the process context is automatically changed to the active process for that session.
 
-### <span id="process_context"></span><span id="PROCESS_CONTEXT"></span>Process Context
+### <span id="process-context"></span><span id="PROCESS_CONTEXT"></span>Process Context
 
 Each process has its own page directory that records how virtual addresses are mapped to physical addresses. When any thread within a process is executing, the Windows operating system uses this page directory to interpret virtual addresses.
 
@@ -49,7 +49,7 @@ The *user-mode address context* is part of the process context. Typically, you d
 
 When you set the process context during kernel-mode debugging, that process context is retained until another **.process** command changes the context. The user-mode address context is also retained until a **.process** or **.context** command changes it. These contexts are not changed when the target computer executes, and they are not affected by changes to the register context or the local context.
 
-### <span id="register_context"></span><span id="REGISTER_CONTEXT"></span>Register Context
+### <span id="register-context"></span><span id="REGISTER_CONTEXT"></span>Register Context
 
 Each thread has its own register values. These values are stored in the CPU registers when the thread is executing and are stored in memory when another thread is executing.
 

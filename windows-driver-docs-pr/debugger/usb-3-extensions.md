@@ -11,7 +11,7 @@ This section describes the USB 3.0 debugger extension commands. These commands d
 
 The USB 3.0 debugger extension commands are implemented in Usb3kd.dll. To load the Usb3kd commands, enter **.load usb3kd.dll** in the debugger.
 
-## <span id="usb_3_tree"></span><span id="USB_3_TREE"></span>USB 3.0 Tree
+## <span id="usb-3-tree"></span><span id="USB_3_TREE"></span>USB 3.0 Tree
 
 
 The USB 3.0 tree contains all USB 3.0 host controllers and all hubs and devices that are connected to USB 3.0 host controllers. The following diagram shows an example of a USB 3.0 tree.
@@ -22,12 +22,12 @@ The tree shown in the diagram has two USB 3.0 host controllers. Notice that not 
 
 You can think of the diagram as two trees, one for each host controller. However, when we use the term *USB 3.0 tree*, we are referring to the set of all USB 3.0 host controllers along with their connected hubs and devices.
 
-## <span id="getting_started_with_usb_3.0_debugging"></span><span id="GETTING_STARTED_WITH_USB_3.0_DEBUGGING"></span>Getting started with USB 3.0 debugging
+## <span id="getting-started-with-usb-3.0-debugging"></span><span id="GETTING_STARTED_WITH_USB_3.0_DEBUGGING"></span>Getting started with USB 3.0 debugging
 
 
 To start debugging a USB 3.0 issue, enter the [**!usb\_tree**](-usb3kd-usb-tree.md) command. The **!usb\_tree** command displays a list of commands and addresses that you can use to investigate host controllers, hubs, ports, devices, endpoints, and other elements of the USB 3.0 tree.
 
-## <span id="Hub_commands"></span><span id="hub_commands"></span><span id="HUB_COMMANDS"></span>Hub commands
+## <span id="hub-commands"></span><span id="hub_commands"></span><span id="HUB_COMMANDS"></span>Hub commands
 
 
 The following extension commands display information about USB 3.0 hubs, devices, and ports. The displayed information is based on data structures maintained by the USB 3.0 hub driver.
