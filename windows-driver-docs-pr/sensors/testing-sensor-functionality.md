@@ -25,17 +25,14 @@ ms.technology: windows-devices
 
 
 You can use the Sensor Diagnostic Tool to test your sensor's functionality. Use the tool to ensure that your driver and firmware correctly forwards data from the device, and correctly responds to requests from applications. In addition, you can use the tool to verify that your driver correctly supports changes to the current report interval and change sensitivity.
-
-**Note**  The Sensor Diagnostic Tool is acceptable for testing on Windows 8.1 and earlier operating systems. The tool is now deprecated for Windows 10, so for sensor driver testing and diagnostics on Windows 10 and later operating systems, please use the SensorInfo App from the Windows Store.
-
  
 
 The Sensor platform (API and DDI) supports both event notifications and property retrieval.
 
--   An application can register to receive events (or notifications) from a device. The driver fires these events when a specified report interval occurs, or when a certain change-sensitivity value is exceeded. For example, a game application can register to receive accelerometer event notifications twenty times a second, or whenever the sensor detects movement in excess of 0.2 g.
+-   A user can register to receive events (or notifications) from a device. The driver fires these events to all subscribers at the most restrictive subscriber's rate. Data can also be manually requested. For example, a game application can request to receive accelerometer event notifications twenty times a second, or subscribe to get updates whenever the driver fires events.
 -   There are instances where an application retrieves sensor data by using a property rather than an event. For example, an application that controls brightness of a display may choose to only retrieve the current light level, after a human-presence sensor has detected the user's presence.
 
-For a more complete description of events, report intervals, and change sensitivity (and their interrelationship), see the [Filtering data](filtering-data.md) topic. For information about using the Sensor Diagnostic Tool to test event handling, see the [Testing Sensor Events](testing-sensor-events.md) topic.
+For a more complete description of events, change sensitivity (and their interrelationship), see the [Filtering data](filtering-data.md) topic. For information about using the Sensor Diagnostic Tool to test event handling, see the [Testing Sensor Events](testing-sensor-events.md) topic.
 
 For information about using the Sensor Diagnostic tool to test property retrieval, see the [Testing Sensor Properties](testing-sensor-properties.md) topic.
 
